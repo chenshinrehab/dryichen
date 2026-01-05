@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /404
+Disallow: /_not-found
+
+# Host
+Host: https://chenshinrehab.github.io/dr-lin-rehab
+
+# Sitemaps
+Sitemap: https://chenshinrehab.github.io/dr-lin-rehab/sitemap.xml
