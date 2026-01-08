@@ -1,16 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export', 
-  // basePath: '/dryichen',  <-- 這行一定要刪掉或加雙斜線註解掉！
   images: {
     unoptimized: true,
   },
+  // 如果未來有其他設定，加在這裡
 };
 
 module.exports = nextConfig;
-
-
