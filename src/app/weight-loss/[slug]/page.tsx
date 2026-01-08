@@ -8,7 +8,7 @@ import JsonLd from '@/components/JsonLd'
 import { getWeightLossProgramBySlug, weightLossPrograms } from '@/data/weightLoss'
 
 // ✨ 1. 設定你的正式網域 (用於生成 Canonical Tag)
-const SITE_URL = 'https://www.chenshin-rehab.com' // 請換成你購買的正式網域
+const SITE_URL = 'https://www.dryichen.com' // 請換成你購買的正式網域
 
 interface PageProps {
   params: {
