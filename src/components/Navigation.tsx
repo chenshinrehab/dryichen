@@ -19,7 +19,7 @@ export default function Navigation() {
   const navItems = [
     { name: '關於我們', path: '/' }, // 對應原本的 switchTab('about')
     { name: '治療方式', path: '/treatments' },
-    { name: '減重與骨齡', path: '/weight-bone' },
+    { name: '減重與骨齡', path: '/weight-loss' },
     { name: '疾病衛教', path: '/diseases' },
   ]
 
