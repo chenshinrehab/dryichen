@@ -7,14 +7,18 @@ export const metadata: Metadata = {
   title: '新竹宸新復健科診所 - 林羿辰醫師 | 專業復健治療、PRP注射、震波治療',
   description: '新竹宸新復健科診所，由台大醫師林羿辰院長提供專業復健治療服務，包括PRP注射、震波治療、一對一運動治療、減重門診、兒童骨齡評估等。',
   keywords: ['新竹復健科', 'PRP注射', '震波治療', '復健科診所', '林羿辰醫師', '新竹復健'],
-  openGraph: {
-    title: '新竹宸新復健科診所 - 林羿辰醫師',
-    description: '專業復健治療服務，包括PRP注射、震波治療、一對一運動治療等',
-    type: 'website',
-     <img src="/images/logo.png" /> alt="宸新復健科診所" />
-
-  },
-}
+// 請將這一段取代原本錯誤的 openGraph 設定
+openGraph: {
+  description: '專業復健治療服務，包括PRP注射、震波治療、一對一運動治療等',
+  type: 'website',
+  // 修正：這裡要用 images 陣列，不能放 <img /> 標籤
+  images: [
+    {
+      url: '/images/logo.png',
+      alt: '宸新復健科診所',
+    },
+  ],
+},
 
 const medicalClinicSchema = {
   '@context': 'https://schema.org',
@@ -31,8 +35,10 @@ const medicalClinicSchema = {
     addressCountry: 'TW',
   },
   telephone: '+886-3-564-7999',
-  url: 'https://chenshinrehab.github.io/dr-lin-rehab',
-  image: <img src="/images/clinic.png" /> alt="宸新復健科診所" />
+  // 建議將網址改為您目前的新網址 (若之後有買網域再改)
+  url: 'https://dryichen-4ze1.vercel.app/',
+  // 修正：這裡不能放 <img /> 標籤，要直接給圖片路徑字串
+  image: '/images/clinic.png',
   medicalSpecialty: ['Physical Medicine and Rehabilitation', '復健醫學'],
   physician: {
     '@type': 'Physician',
