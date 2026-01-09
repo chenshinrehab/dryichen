@@ -8,16 +8,12 @@ export const metadata: Metadata = {
   description: '新竹宸新復健科診所，由台大醫師林羿辰院長提供專業復健治療服務，包括PRP注射、震波治療、一對一運動治療、減重門診、兒童骨齡評估等。',
   keywords: ['新竹復健科', 'PRP注射', '震波治療', '復健科診所', '林羿辰醫師', '新竹復健'],
   openGraph: {
+    title: '新竹宸新復健科診所 - 林羿辰醫師',
     description: '專業復健治療服務，包括PRP注射、震波治療、一對一運動治療等',
     type: 'website',
-    images: [
-      {
-        url: '/images/logo.png',
-        alt: '宸新復健科診所',
-      },
-    ],
+    images: ['/images/clinic/logo.png'],
   },
-}; // <--- ⚠️ 修正點：這裡補上了 }; 代表 metadata 結束
+}
 
 const medicalClinicSchema = {
   '@context': 'https://schema.org',
@@ -38,10 +34,8 @@ const medicalClinicSchema = {
   url: 'https://dryichen-4ze1.vercel.app/',
   
   // 修正點 1：這裡改成逗號，不要用 }; 結束
-  image: '/images/clinic.png', 
-
+  image: '/images/clinic.png',
   medicalSpecialty: ['Physical Medicine and Rehabilitation', '復健醫學'],
-  
   physician: {
     '@type': 'Physician',
     name: '林羿辰',
@@ -56,12 +50,11 @@ const medicalClinicSchema = {
       'ACE-CPT 美國運動學會國際私人教練認證',
     ],
   },
-  
   areaServed: {
     '@type': 'City',
     name: '新竹市',
   },
-}; // 修正點 2：真正的結束在這裡！(包含分號)
+}
 
 export default function Home() {
   return (
@@ -69,43 +62,30 @@ export default function Home() {
       <JsonLd data={medicalClinicSchema} />
       <div className="min-h-screen flex flex-col">
         <main className="flex-grow">
-        
-        {/* Hero Section 開始 */}
+        {/* Hero Section */}
         <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            {/* --- 修改處：加入 Flex 容器來做左右排版 --- */}
-            <div className="flex flex-col lg:flex-row items-center gap-10">
-            
-              {/* 左邊：文字內容區域 (flex-1 代表佔據剩餘空間) */}
-              <div className="flex-1 w-full">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">運動教練醫師-林羿辰</h1>
-                <p className="text-xl md:text-2xl mb-8">宸新復健科診所院長</p>
-                
-                {/* 學歷與經歷的格子 */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                    <h2 className="text-2xl font-bold mb-4">學歷與資格</h2>
-                    <ul className="space-y-2">
-                      <li>▹ 國立台灣大學醫學系</li>
-                      <li>▹ 雙專科醫師 (復健專科 + 骨鬆專科)</li>
-                      <li>▹ ACE-CPT 美國運動學會國際私人教練認證</li>
-                    </ul>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                    <h2 className="text-2xl font-bold mb-4">經歷</h2>
-                    <ul className="space-y-2">
-                      <li>▹ 馬偕紀念醫院 主治醫師</li>
-                      <li>▹ 台灣復健醫學會 會員</li>
-                      <li>▹ 台灣增生療法醫學會 會員</li>
-                      <li>▹ 台灣大學網球校隊</li>
-                    </ul>
-                  </div>
-                </div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">運動教練醫師-林羿辰</h1>
+            <p className="text-xl md:text-2xl mb-8">宸新復健科診所院長</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                <h2 className="text-2xl font-bold mb-4">學歷與資格</h2>
+                <ul className="space-y-2">
+                  <li>▹ 國立台灣大學醫學系</li>
+                  <li>▹ 雙專科醫師 (復健專科 + 骨鬆專科)</li>
+                  <li>▹ ACE-CPT 美國運動學會國際私人教練認證</li>
+                </ul>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                <h2 className="text-2xl font-bold mb-4">經歷</h2>
+                <ul className="space-y-2">
+                  <li>▹ 馬偕紀念醫院 主治醫師</li>
+                  <li>▹ 台灣復健醫學會 會員</li>
+                  <li>▹ 台灣增生療法醫學會 會員</li>
+                  <li>▹ 台灣大學網球校隊</li>
+                </ul>
               </div>
 
-              {/* 右邊：圖片區域 (加入您指定的圖片) */}
-              {/* lg:block 確保在大螢幕顯示在右邊，手機版會依據 flex-col 往下排 */}
               <div className="flex-shrink-0 mt-8 lg:mt-0">
                 <img 
                   src="/images/logo.png" 
@@ -113,20 +93,11 @@ export default function Home() {
                   className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-xl shadow-2xl border-4 border-white/20 bg-white"
                 />
               </div>
-
+              
             </div>
-            {/* --- Flex 容器結束 --- */}
-
           </div>
         </section>
-        {/* Hero Section 結束 */}
 
-        {/* 這裡下面應該還有您原本其他的 section ... */}
-        </main>
-      </div>
-    </>
-  )
-}
         {/* Main Sections */}
         <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
