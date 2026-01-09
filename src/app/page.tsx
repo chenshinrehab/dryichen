@@ -1,7 +1,7 @@
 // src/app/page.tsx
 import { Metadata } from 'next'
 import Link from 'next/link'
-import Navigation from '@/components/Navigation'
+// 移除 Navigation 的引入，避免與 layout.tsx 重複
 import Footer from '@/components/Footer'
 import JsonLd from '@/components/JsonLd'
 
@@ -55,13 +55,10 @@ export default function Home() {
     <>
       <JsonLd data={medicalClinicSchema} />
       
-      {/* 全頁背景設定：深色主題 
-        這裡包含了導覽列、主內容、頁尾，確保整體風格一致
-      */}
+      {/* 全頁背景設定：深色主題 */}
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300 font-sans antialiased selection:bg-cyan-500/30">
         
-        {/* 引入導覽列元件 (這裡已經包含了 Logo、社群按鈕與選單) */}
-        <Navigation />
+        {/* Navigation 已經在 layout.tsx 引入，這裡不需要 */}
 
         <main className="flex-grow relative">
           
@@ -219,57 +216,21 @@ export default function Home() {
              </div>
           </section>
 
-          {/* =========================================
-              Section 3: 快速導覽 (Visual Navigation)
-             ========================================= */}
-          <section className="border-t border-slate-800 bg-slate-900/50 py-16">
-            <div className="container mx-auto px-4">
-                <h2 className="text-2xl font-bold font-sans text-white text-center mb-8 tracking-wide">
-                    <span className="text-cyan-400">快速</span>導覽
-                </h2>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-2 max-w-6xl mx-auto">
-                    
-                    {/* 卡片 1: 治療方式 */}
-                    <Link href="/treatments" className="group rounded-xl relative h-40 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
-                        <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=800" alt="治療方式" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-4">
-                            <span className="text-white font-bold group-hover:text-cyan-400 transition-colors">治療方式</span>
-                        </div>
-                    </Link>
-
-                    {/* 卡片 2: 減重與骨齡 */}
-                    <Link href="/weight-bone" className="group rounded-xl relative h-40 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
-                        <img src="https://duk.tw/R97hvw.jpg" alt="減重與骨齡" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-4">
-                            <span className="text-white font-bold group-hover:text-cyan-400 transition-colors">減重與骨齡</span>
-                        </div>
-                    </Link>
-
-                     {/* 卡片 3: 預約看診 (使用 icon) */}
-                     <Link href="/booking" className="group rounded-xl relative h-40 overflow-hidden shadow-lg border border-slate-700 hover:border-pink-500 hover:shadow-[0_0_15px_rgba(236,72,153,0.3)] transition-all">
-                        <div className="absolute inset-0 bg-slate-800 flex items-center justify-center">
-                            <i className="fa-solid fa-calendar-check text-4xl text-slate-600 group-hover:text-pink-500 transition-colors duration-300"></i>
-                        </div>
-                        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-4">
-                            <span className="text-white font-bold group-hover:text-pink-400 transition-colors">馬上預約</span>
-                        </div>
-                    </Link>
-
-                    {/* 卡片 4: 疾病衛教 (使用 icon) */}
-                    <Link href="/diseases" className="group rounded-xl relative h-40 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
-                        <div className="absolute inset-0 bg-slate-800 flex items-center justify-center">
-                            <i className="fa-solid fa-book-medical text-4xl text-slate-600 group-hover:text-cyan-500 transition-colors duration-300"></i>
-                        </div>
-                        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-4">
-                            <span className="text-white font-bold group-hover:text-cyan-400 transition-colors">疾病衛教</span>
-                        </div>
-                    </Link>
-                </div>
-            </div>
-          </section>
+           {/* 注意：Section 3 快速導覽 已經移除，
+              因為它現在位於 Footer 裡面，會自動顯示在每一頁的最下方。
+           */}
 
         </main>
-
+        
+        {/* Footer 裡面現在已經包含快速導覽了，這裡不用動 */}
+        {/* 注意：這裡的 Footer 是從 page.tsx 引入的，但如果 layout.tsx 也有引入 Footer，
+            請確保不要重複。依照您提供的結構，您是希望在 page.tsx 裡也使用 Footer
+            (通常建議只在 layout.tsx 放 Footer，不過如果您暫時想保持這樣也可以，
+             只要 layout.tsx 那邊沒有 Footer 即可)。
+             
+             *如果您之前的設定是 layout.tsx 有 Footer，那請刪除下面這一行。
+             *如果您之前的設定是 layout.tsx 沒有 Footer (只有 Navigation)，那下面這一行要保留。
+        */}
         <Footer />
         
       </div>
