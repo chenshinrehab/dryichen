@@ -55,10 +55,12 @@ export default function Home() {
     <>
       <JsonLd data={medicalClinicSchema} />
       
-      {/* 全頁背景設定：深色主題 */}
+      {/* 全頁背景設定：深色主題 
+        這裡包含了導覽列、主內容、頁尾，確保整體風格一致
+      */}
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300 font-sans antialiased selection:bg-cyan-500/30">
         
-        {/* 導覽列 (引入元件) */}
+        {/* 引入導覽列元件 (這裡已經包含了 Logo、社群按鈕與選單) */}
         <Navigation />
 
         <main className="flex-grow relative">
