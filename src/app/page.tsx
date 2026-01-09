@@ -7,18 +7,17 @@ export const metadata: Metadata = {
   title: '新竹宸新復健科診所 - 林羿辰醫師 | 專業復健治療、PRP注射、震波治療',
   description: '新竹宸新復健科診所，由台大醫師林羿辰院長提供專業復健治療服務，包括PRP注射、震波治療、一對一運動治療、減重門診、兒童骨齡評估等。',
   keywords: ['新竹復健科', 'PRP注射', '震波治療', '復健科診所', '林羿辰醫師', '新竹復健'],
-// 請將這一段取代原本錯誤的 openGraph 設定
-openGraph: {
-  description: '專業復健治療服務，包括PRP注射、震波治療、一對一運動治療等',
-  type: 'website',
-  // 修正：這裡要用 images 陣列，不能放 <img /> 標籤
-  images: [
-    {
-      url: '/images/logo.png',
-      alt: '宸新復健科診所',
-    },
-  ],
-},
+  openGraph: {
+    description: '專業復健治療服務，包括PRP注射、震波治療、一對一運動治療等',
+    type: 'website',
+    images: [
+      {
+        url: '/images/logo.png',
+        alt: '宸新復健科診所',
+      },
+    ],
+  },
+}; // <--- ⚠️ 修正點：這裡補上了 }; 代表 metadata 結束
 
 const medicalClinicSchema = {
   '@context': 'https://schema.org',
@@ -39,6 +38,7 @@ const medicalClinicSchema = {
   url: 'https://dryichen-4ze1.vercel.app/',
   // 修正：這裡不能放 <img /> 標籤，要直接給圖片路徑字串
   image: '/images/clinic.png',
+}; // <--- 記得 Schema 這裡也要有關閉符號喔！
   medicalSpecialty: ['Physical Medicine and Rehabilitation', '復健醫學'],
   physician: {
     '@type': 'Physician',
