@@ -2,7 +2,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 // 移除 Navigation 的引入，避免與 layout.tsx 重複
-import Footer from '@/components/Footer'
 import JsonLd from '@/components/JsonLd'
 
 export const metadata: Metadata = {
@@ -222,16 +221,6 @@ export default function Home() {
 
         </main>
         
-        {/* Footer 裡面現在已經包含快速導覽了，這裡不用動 */}
-        {/* 注意：這裡的 Footer 是從 page.tsx 引入的，但如果 layout.tsx 也有引入 Footer，
-            請確保不要重複。依照您提供的結構，您是希望在 page.tsx 裡也使用 Footer
-            (通常建議只在 layout.tsx 放 Footer，不過如果您暫時想保持這樣也可以，
-             只要 layout.tsx 那邊沒有 Footer 即可)。
-             
-             *如果您之前的設定是 layout.tsx 有 Footer，那請刪除下面這一行。
-             *如果您之前的設定是 layout.tsx 沒有 Footer (只有 Navigation)，那下面這一行要保留。
-        */}
-        <Footer />
         
       </div>
     </>
