@@ -36,10 +36,12 @@ const medicalClinicSchema = {
   telephone: '+886-3-564-7999',
   // 建議將網址改為您目前的新網址 (若之後有買網域再改)
   url: 'https://dryichen-4ze1.vercel.app/',
-  // 修正：這裡不能放 <img /> 標籤，要直接給圖片路徑字串
-  image: '/images/clinic.png',
-}; // <--- 記得 Schema 這裡也要有關閉符號喔！
+  
+  // 修正點 1：這裡改成逗號，不要用 }; 結束
+  image: '/images/clinic.png', 
+
   medicalSpecialty: ['Physical Medicine and Rehabilitation', '復健醫學'],
+  
   physician: {
     '@type': 'Physician',
     name: '林羿辰',
@@ -54,11 +56,12 @@ const medicalClinicSchema = {
       'ACE-CPT 美國運動學會國際私人教練認證',
     ],
   },
+  
   areaServed: {
     '@type': 'City',
     name: '新竹市',
   },
-}
+}; // 修正點 2：真正的結束在這裡！(包含分號)
 
 export default function Home() {
   return (
