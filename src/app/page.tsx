@@ -11,7 +11,8 @@ export const metadata: Metadata = {
     title: '新竹宸新復健科診所 - 林羿辰醫師',
     description: '專業復健治療服務，包括PRP注射、震波治療、一對一運動治療等',
     type: 'website',
-    images: ['/images/clinic/logo.png'],
+     <img src="/images/logo.png" /> alt="宸新復健科診所" />
+
   },
 }
 
@@ -31,7 +32,7 @@ const medicalClinicSchema = {
   },
   telephone: '+886-3-564-7999',
   url: 'https://chenshinrehab.github.io/dr-lin-rehab',
-  image: 'https://chenshinrehab.github.io/dr-lin-rehab/images/clinic/logo.png',
+  image: <img src="/images/clinic.png" /> alt="宸新復健科診所" />
   medicalSpecialty: ['Physical Medicine and Rehabilitation', '復健醫學'],
   physician: {
     '@type': 'Physician',
