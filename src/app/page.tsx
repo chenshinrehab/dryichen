@@ -1,17 +1,18 @@
+// app/page.tsx
 import { Metadata } from 'next'
-import Link from 'next/link'
-import Footer from '@/components/Footer'
-import JsonLd from '@/components/JsonLd'
+import JsonLd from '@/components/JsonLd' // 假設你已經有這個組件
+import ClinicHome from '@/components/ClinicHome' // 引入剛剛建立的客戶端組件
 
+// 這裡保留你原本的 SEO 設定，這對網路爬蟲非常重要
 export const metadata: Metadata = {
   title: '新竹宸新復健科診所 - 林羿辰醫師 | 專業復健治療、PRP注射、震波治療',
   description: '新竹宸新復健科診所，由台大醫師林羿辰院長提供專業復健治療服務，包括PRP注射、震波治療、一對一運動治療、減重門診、兒童骨齡評估等。',
-  keywords: ['新竹復健科', 'PRP注射', '震波治療', '復健科診所', '林羿辰醫師', '新竹復健'],
+  keywords: ['新竹復健科', 'PRP注射', '震波治療', '復健科診所', '林羿辰醫師', '新竹復健', '兒童骨齡', '增生療法'],
   openGraph: {
     title: '新竹宸新復健科診所 - 林羿辰醫師',
     description: '專業復健治療服務，包括PRP注射、震波治療、一對一運動治療等',
     type: 'website',
-    images: ['/images/clinic/logo.png'],
+    images: ['/images/clinic/logo.png'], // 記得確認圖片路徑
   },
 }
 
@@ -30,11 +31,8 @@ const medicalClinicSchema = {
     addressCountry: 'TW',
   },
   telephone: '+886-3-564-7999',
-  // 建議將網址改為您目前的新網址 (若之後有買網域再改)
   url: 'https://dryichen-4ze1.vercel.app/',
-  
-  // 修正點 1：這裡改成逗號，不要用 }; 結束
-  image: '/images/clinic.png',
+  image: '/images/clinic.png', // 記得確認圖片路徑
   medicalSpecialty: ['Physical Medicine and Rehabilitation', '復健醫學'],
   physician: {
     '@type': 'Physician',
@@ -93,7 +91,7 @@ export default function Home() {
                   className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-xl shadow-2xl border-4 border-white/20 bg-white"
                 />
               </div>
-              
+
             </div>
           </div>
         </section>
