@@ -1,4 +1,5 @@
 // app/page.tsx
+import Link from 'next/link'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd' // 假設你已經有這個組件
 import ClinicHome from '@/components/ClinicHome' // 引入剛剛建立的客戶端組件
