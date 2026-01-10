@@ -1,7 +1,18 @@
 import { TreatmentItem } from '@/types/content'
 
-export interface Treatment extends Omit<TreatmentItem, 'id'> {
-  slug: string;  // 使用 slug 而不是 id
+// 1. 定義資料結構 (這裡就是 TypeScript 檢查的地方，必須要把新欄位補上)
+export interface Treatment {
+  slug: string;
+  title: string;
+  subtitle?: string;        // 新增：副標題
+  description: string;
+  contentHtml?: string;     // 新增：HTML 內容
+  whyChooseUs?: string[];   // 新增：為什麼選擇我們
+  treatmentFocus?: string[];// 新增：治療重點
+  images?: { src: string; alt: string }[]; // 新增：圖片陣列
+  qrCode?: string;          // 新增：QR Code (修正您的錯誤)
+  applicableConditions?: string[]; // 保留：適用症狀
+  features?: string[];      // 保留：特色
 }
 
 export const treatments: Treatment[] = [

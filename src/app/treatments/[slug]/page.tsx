@@ -35,14 +35,29 @@ export default function TreatmentDetailPage({ params }: PageProps) {
     notFound()
   }
 
+  // ==========================================
+  // ✨ 新增：自動生成 QR Code 邏輯
+  // ==========================================
+  
+  // 1. 設定您的網站主網域
+  const siteUrl = 'https://dryichen-4ze1.vercel.app'
+  
+  // 2. 組合成當前頁面的完整網址
+  const currentPageUrl = `${siteUrl}/treatments/${params.slug}`
+  
+  // 3. 使用 API 生成 QR Code 圖片連結
+  const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(currentPageUrl)}`
+
+  // ==========================================
+
   // 3. 強化型 SEO 資料構造 (包含麵包屑 + 醫療程序資訊)
   const jsonLdBreadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '首頁', item: 'https://dryichen-4ze1.vercel.app/' },
-      { '@type': 'ListItem', position: 2, name: '治療方式', item: 'https://dryichen-4ze1.vercel.app/treatments' },
-      { '@type': 'ListItem', position: 3, name: treatment.title, item: `https://dryichen-4ze1.vercel.app/treatments/${treatment.slug}` },
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: '治療方式', item: `${siteUrl}/treatments` },
+      { '@type': 'ListItem', position: 3, name: treatment.title, item: currentPageUrl },
     ],
   }
 
@@ -79,17 +94,22 @@ export default function TreatmentDetailPage({ params }: PageProps) {
                   
                   {/* Header: 標題與 QR Code */}
                   <div className="mb-8 border-l-4 border-cyan-500 pl-4 bg-gradient-to-r from-slate-900/50 to-transparent py-4 rounded-r-xl flex items-center gap-6">
-                      {/* 如果有 QR Code 才顯示 */}
-                      {treatment.qrCode && (
-                        <div className="hidden md:block bg-white p-1 rounded-lg shrink-0">
-                            <img 
-                              className="w-20 h-20 object-contain" 
-                              src={treatment.qrCode} 
-                              alt={`掃描預約 ${treatment.title}`}
-                              // 為了避免圖片讀取失敗，這裡保留您的 onerror 邏輯，但建議使用 React 的 onError 事件處理
-                            />
-                        </div>
-                      )}
+                      
+                      {/* ✨✨✨ QR Code 區塊 ✨✨✨ 
+                         hidden: 手機版預設隱藏
+                         md:block: 電腦版(768px以上)顯示
+                      */}
+                      <div className="hidden md:block bg-white p-1 rounded-lg shrink-0 group relative">
+                          <img 
+                            className="w-20 h-20 object-contain" 
+                            src={qrCodeApiUrl} 
+                            alt={`掃描預約 ${treatment.title}`}
+                          />
+                          {/* 滑鼠移過去顯示提示文字 */}
+                          <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-max bg-slate-900 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                            掃描此頁面
+                          </div>
+                      </div>
                       
                       <div>
                           <h1 className="text-3xl md:text-4xl font-bold font-sans text-white mb-2">
