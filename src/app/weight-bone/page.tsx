@@ -2,29 +2,29 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
-// 確保上面的檔案已經建立，這裡才抓得到資料
-import { weightLossPrograms } from '@/data/weightLoss'
+// ✨ 這裡改成引入新的檔案，使用相對路徑確保一定找得到
+import { weightLossPrograms } from '../../data/weightbone'
 
 export const metadata: Metadata = {
   title: '減重與骨齡 - 專業減重門診與兒童骨齡評估 | 宸新復健科診所',
-  description: '專業減重門診服務，包括週纖達、猛健樂等減重項目，以及兒童骨齡評估服務，協助您達成健康減重目標。',
-}
-
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: '首頁', item: 'https://dryichen-4ze1.vercel.app/' },
-    { '@type': 'ListItem', position: 2, name: '減重與骨齡', item: 'https://dryichen-4ze1.vercel.app/weight-bone' },
-  ],
+  description: '專業減重門診服務，包括週纖達、猛健樂等減重項目，以及兒童骨齡評估服務。',
 }
 
 export default function WeightBonePage() {
+  const jsonLdData = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
+    name: '減重與骨齡',
+    description: '專業減重門診服務與兒童骨齡評估',
+  }
+
   return (
     <>
-      <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={jsonLdData} />
 
+      {/* 黑色背景，無 Footer (layout已包含)，無 Breadcrumbs */}
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
+        
         <main className="flex-grow py-12 md:py-16 fade-in">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
@@ -32,7 +32,7 @@ export default function WeightBonePage() {
             <div className="mb-12 border-l-4 border-cyan-500 pl-6">
                 <h1 className="text-4xl font-bold text-white mb-4">減重與骨齡</h1>
                 <p className="text-xl text-slate-400">
-                專業減重門診服務，協助您達成健康減重目標，並提供兒童骨齡評估服務
+                  專業減重門診服務，協助您達成健康減重目標，並提供兒童骨齡評估服務
                 </p>
             </div>
             
@@ -41,6 +41,7 @@ export default function WeightBonePage() {
               {weightLossPrograms.map((program) => (
                 <Link
                   key={program.slug}
+                  // ✨ 連結指向目前的資料夾路徑
                   href={`/weight-bone/${program.slug}`} 
                   className="group bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col"
                 >
@@ -54,6 +55,7 @@ export default function WeightBonePage() {
                      <p className="text-slate-400 mb-4 line-clamp-2">{program.description}</p>
                   </div>
 
+                  {/* 特色標籤 */}
                   {program.features && program.features.length > 0 && (
                     <div className="mt-auto bg-slate-900/50 rounded-lg p-4 border border-slate-700/50">
                       <h3 className="font-semibold mb-2 text-cyan-500 text-sm">特色重點：</h3>
@@ -66,6 +68,12 @@ export default function WeightBonePage() {
                       </ul>
                     </div>
                   )}
+                  
+                  <div className="mt-6 text-center">
+                    <span className="text-cyan-400 font-semibold text-sm group-hover:underline decoration-cyan-400/50 underline-offset-4">
+                        了解更多詳細內容
+                    </span>
+                  </div>
                 </Link>
               ))}
             </div>

@@ -3,7 +3,8 @@ import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
-import { getWeightLossProgramBySlug, getAllWeightLossProgramSlugs } from '@/data/weightLoss'
+// ✨ 這裡改成引入新的檔案
+import { getWeightLossProgramBySlug, getAllWeightLossProgramSlugs } from '../../data/weightbone'
 
 interface PageProps {
   params: {
@@ -46,7 +47,7 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
     <>
       <JsonLd data={jsonLdData} />
       
-      {/* 黑色背景 */}
+      {/* 黑色背景，無 Footer，無 Breadcrumbs */}
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
         <main className="flex-grow py-12 md:py-16 fade-in">
