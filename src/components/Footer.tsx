@@ -35,7 +35,7 @@ export default function Footer() {
                 
                 {/* 1. 關於我們 */}
                 <Link href="/" className="group rounded-xl relative h-40 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
-                <img src="/images/icon/a.jpg"  alt="宸新復健科 林羿辰醫師" 
+                <img src="/images/icons/a.jpg"  alt="宸新復健科 林羿辰醫師" 
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-4">
                         <span className="text-white font-bold group-hover:text-cyan-400 transition-colors">關於我們</span>
@@ -44,7 +44,7 @@ export default function Footer() {
 
                 {/* 2. 治療方式 */}
                 <Link href="/treatments" className="group rounded-xl relative h-40 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
-                 <img src="/images/icon/b.jpg"  alt="宸新復健科 林羿辰醫師" 
+                 <img src="/images/icons/b.jpg"  alt="宸新復健科 林羿辰醫師" 
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-4">
                         <span className="text-white font-bold group-hover:text-cyan-400 transition-colors">治療方式</span>
@@ -53,7 +53,7 @@ export default function Footer() {
 
                 {/* 3. 減重與骨齡 */}
                 <Link href="/weight-bone" className="group rounded-xl relative h-40 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
-                <img src="/images/icon/c.jpg"  alt="宸新復健科 林羿辰醫師" 
+                <img src="/images/icons/c.jpg"  alt="宸新復健科 林羿辰醫師" 
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-4">
                         <span className="text-white font-bold group-hover:text-cyan-400 transition-colors">減重與骨齡</span>
@@ -62,7 +62,7 @@ export default function Footer() {
 
                 {/* 4. 疾病衛教 */}
                 <Link href="/diseases" className="group rounded-xl relative h-40 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
-                <img src="/images/icon/d.jpg"  alt="宸新復健科 林羿辰醫師" 
+                <img src="/images/icons/d.jpg"  alt="宸新復健科 林羿辰醫師" 
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-4">
                         <span className="text-white font-bold group-hover:text-cyan-400 transition-colors">疾病衛教</span>
