@@ -5,7 +5,7 @@ import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 
 // ✨ 修正路徑：因為 [slug] 多了一層，所以要用三個 ../ 才能找到 data
-import { getWeightLossProgramBySlug, getAllWeightLossProgramSlugs } from '@/data/weightLoss'
+import { getWeightLossProgramBySlug, getAllWeightLossProgramSlugs } from '../../../data/weightLoss'
 
 interface PageProps {
   params: {
