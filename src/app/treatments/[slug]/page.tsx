@@ -99,22 +99,25 @@ export default function TreatmentDetailPage({ params }: PageProps) {
                      ======================================================== */}
                   {treatment.youtubeVideoId && (
                     <div className="mb-12 text-center">
-                        {/* 標題 (可選) */}
-                        <h3 className="text-xl font-bold text-white mb-4 border-b border-slate-600 pb-2 inline-block">
-                            <i className="fa-brands fa-youtube text-red-500 mr-2"></i>
-                            相關影片介紹
-                        </h3>
                         
                         <div className="w-full md:w-3/4 mx-auto">
                              {/* 您提供的響應式 iframe 容器 */}
                              <div className="relative w-full pb-[56.25%] rounded-xl overflow-hidden shadow-2xl border border-slate-700">
-                                <iframe 
+                             <iframe 
                                     src={`https://www.youtube.com/embed/${treatment.youtubeVideoId}`} 
-                                    title="YouTube video" 
+                                    
+                                    // ✨ SEO 重點 1：動態標題
+                                    // 告訴 Google 這部影片是關於什麼的，例如 "增生療法 / PRP 治療介紹影片"
+                                    title={`${treatment.title} 治療介紹影片`}
+                                    
                                     className="absolute top-0 left-0 w-full h-full" 
                                     frameBorder="0" 
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                     allowFullScreen
+                                    
+                                    // ✨ SEO 重點 2：延遲載入
+                                    // 讓網頁載入速度變快，對 Google 排名有幫助
+                                    loading="lazy"
                                 ></iframe>
                              </div>
                         </div>
