@@ -182,7 +182,7 @@ export default function TreatmentDetailPage({ params }: PageProps) {
                                className="w-full h-auto transform group-hover:scale-[1.02] transition-transform duration-500" 
                              />
                            </div>
-                           <p className="text-sm text-slate-500 mt-2">{img.alt}</p>
+                      
                         </div>
                       ))}
                     </div>

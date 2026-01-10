@@ -41,6 +41,10 @@ export const treatments: Treatment[] = [
     ],
     // 您的 PRP 圖片
     images: [
+
+      images: [
+        // 注意：不需要寫 public，直接寫 /images 開頭
+      { src: '/images/treatments/prp/principle.jpg', alt: 'PRP高濃度血小板原理' },
       { src: 'https://duk.tw/BFGxk6.jpg', alt: 'PRP高濃度血小板原理' },
       { src: 'https://duk.tw/MHjcjG.jpg', alt: 'PRP高濃度血小板注射流程圖' },
       { src: 'https://duk.tw/MWdlee.jpg', alt: 'PRP高濃度血小板注射後注意事項' },
