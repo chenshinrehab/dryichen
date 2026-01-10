@@ -2,7 +2,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
-// 確保您有這個資料檔，如果沒有請建立 (參考下方說明)
+// 確保您有這個資料檔
 import { treatments } from '@/data/treatments'
 
 export const metadata: Metadata = {
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   keywords: ['復健治療', 'PRP注射', '震波治療', '運動治療', '新竹復健'],
 }
 
-// 定義麵包屑的結構化資料 (SEO用，畫面不顯示)
+// 定義 SEO 用的麵包屑資料 (這段是給 Google 看的，畫面上不會有東西)
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -24,6 +24,7 @@ const breadcrumbSchema = {
 export default function TreatmentsPage() {
   return (
     <>
+      {/* 這裡只有 SEO 資料，沒有畫面 */}
       <JsonLd data={breadcrumbSchema} />
 
       {/* 深色背景設定 */}
@@ -32,6 +33,8 @@ export default function TreatmentsPage() {
         <main className="flex-grow py-12 md:py-16 fade-in">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
+            {/* ⚠️ 注意：原本這裡的 <Breadcrumbs /> 已經被我刪除了，所以不會再顯示 */}
+
             {/* 標題區 */}
             <div className="mb-12 border-l-4 border-cyan-500 pl-6">
                 <h1 className="text-4xl font-bold text-white mb-4">治療方式</h1>
@@ -59,7 +62,7 @@ export default function TreatmentsPage() {
                      <p className="text-slate-400 mb-4 line-clamp-2">{treatment.description}</p>
                   </div>
 
-                  {/* 適用症狀 (原有邏輯保留) */}
+                  {/* 適用症狀 */}
                   {treatment.applicableConditions && treatment.applicableConditions.length > 0 && (
                     <div className="mb-4 bg-slate-900/30 rounded-lg p-3 border border-slate-700/30">
                       <h3 className="font-semibold mb-2 text-pink-400 text-sm">適用症狀：</h3>
@@ -73,7 +76,7 @@ export default function TreatmentsPage() {
                     </div>
                   )}
 
-                  {/* 特色 (原有邏輯保留) */}
+                  {/* 特色 */}
                   {treatment.features && treatment.features.length > 0 && (
                     <div className="mt-auto bg-slate-900/50 rounded-lg p-4 border border-slate-700/50">
                       <h3 className="font-semibold mb-2 text-cyan-500 text-sm">特色重點：</h3>
