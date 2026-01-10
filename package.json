@@ -8,6 +8,7 @@
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
+    "go": "git add . && git commit -m \"Update: 快速更新npm run go內容\" && git push",
     "export": "next build"
   },
   "dependencies": {
