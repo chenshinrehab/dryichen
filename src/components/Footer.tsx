@@ -35,10 +35,8 @@ export default function Footer() {
                 
                 {/* 1. 關於我們 */}
                 <Link href="/" className="group rounded-xl relative h-40 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
-                    <div className="absolute inset-0 bg-slate-800 flex items-center justify-center">
-                        <i className="fa-solid fa-user-doctor text-4xl text-slate-600 group-hover:text-cyan-500 transition-colors duration-300"></i>
-                    </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-4">
+                <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=800" alt="治療方式" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-4">
                         <span className="text-white font-bold group-hover:text-cyan-400 transition-colors">關於我們</span>
                     </div>
                 </Link>
@@ -61,10 +59,8 @@ export default function Footer() {
 
                 {/* 4. 疾病衛教 */}
                 <Link href="/diseases" className="group rounded-xl relative h-40 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
-                    <div className="absolute inset-0 bg-slate-800 flex items-center justify-center">
-                        <i className="fa-solid fa-book-medical text-4xl text-slate-600 group-hover:text-cyan-500 transition-colors duration-300"></i>
-                    </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-4">
+                <img src="https://duk.tw/R97hvw.jpg" alt="減重與骨齡" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-4">
                         <span className="text-white font-bold group-hover:text-cyan-400 transition-colors">疾病衛教</span>
                     </div>
                 </Link>

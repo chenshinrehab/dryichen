@@ -86,7 +86,7 @@ export const weightLossPrograms: WeightLossProgram[] = [
     description: '透過左手X光片判讀骨骼成熟度，預測成年身高，掌握黃金生長發育期。',
     features: ['性早熟', '生長遲緩', '想了解身高潛力的兒童'],
     contentHtml: `
-    '擔心孩子長不高嗎？想知道是否有性早熟或生長遲緩的問題？
+    擔心孩子長不高嗎？想知道是否有性早熟或生長遲緩的問題？
     <br><br>
     新竹宸新復健科提供兒童骨齡檢查，不需要預約、掛號或等待 ⏰，僅需一秒鐘拍攝左手 X 光片，安全低輻射 👍。
     <br><br>
