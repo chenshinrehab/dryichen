@@ -43,13 +43,12 @@ export const treatments: Treatment[] = [
   images: [
         // 注意：不需要寫 public，直接寫 /images 開頭
       { src: '/images/treatments/prp/principle.jpg', alt: 'PRP高濃度血小板原理' },
-      { src: 'https://duk.tw/BFGxk6.jpg', alt: 'PRP高濃度血小板原理' },
-      { src: 'https://duk.tw/MHjcjG.jpg', alt: 'PRP高濃度血小板注射流程圖' },
-      { src: 'https://duk.tw/MWdlee.jpg', alt: 'PRP高濃度血小板注射後注意事項' },
-      { src: 'https://duk.tw/mAcbCS.jpg', alt: 'PRP高濃度血小板適應症' },
-      { src: 'https://duk.tw/sjGf4w.jpg', alt: 'PRP高濃度血小板超音波導引' },
-      { src: 'https://duk.tw/sYHtfN.jpg', alt: 'PRP高濃度血小板與高濃度葡萄糖比較' },
-      { src: 'https://duk.tw/zU7oHa.jpg', alt: '增生注射與類固醇' }
+      { src: '/images/treatments/prp/a.jpg', alt: 'PRP高濃度血小板注射流程圖' },
+      { src: '/images/treatments/prp/b.jpg', alt: 'PRP高濃度血小板注射後注意事項' },
+      { src: '/images/treatments/prp/c.jpg', alt: 'PRP高濃度血小板適應症' },
+      { src: '/images/treatments/prp/d.jpg', alt: 'PRP高濃度血小板超音波導引' },
+      { src: '/images/treatments/prp/e.jpg', alt: 'PRP高濃度血小板與高濃度葡萄糖比較' },
+      { src: '/images/treatments/prp/f.jpg', alt: '增生注射與類固醇' }
     ],
     applicableConditions: ['旋轉肌撕裂', '網球肘', '軟骨損傷', '退化性關節炎'],
     features: ['啟動修復', '免開刀', '精準導引']
