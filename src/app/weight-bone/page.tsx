@@ -28,7 +28,7 @@ export default function WeightLossPage() {
             {weightLossPrograms.map((program) => (
               <Link
                 key={program.slug}
-                href={`/weight-loss/${program.slug}`}
+                href={`/weight-bone/${program.slug}`}
                 className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow"
               >
                 <h2 className="text-2xl font-bold mb-4 text-gray-800">{program.title}</h2>

@@ -59,7 +59,7 @@ export default function WeightLossDetailPage({ params }: PageProps) {
       <div className="min-h-screen flex flex-col">
       <Breadcrumbs items={[
         { label: '首頁', href: '/' },
-        { label: '減重與骨齡', href: '/weight-loss' },
+        { label: '減重與骨齡', href: '/weight-bone' },
         { label: program.title },
       ]} />
       <main className="flex-grow py-12">
