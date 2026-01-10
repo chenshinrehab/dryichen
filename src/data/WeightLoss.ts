@@ -1,11 +1,15 @@
+// src/data/weightLoss.ts
+
+// 1. 定義資料結構
 export interface WeightLossProgram {
   slug: string;
   title: string;
   description: string;
-  features?: string[];
   content?: string;
+  features?: string[]; // [修復] 新增這個欄位，解決 'features' does not exist 錯誤
 }
 
+// 2. 定義完整資料陣列
 export const weightLossPrograms: WeightLossProgram[] = [
   {
     slug: 'mounjaro',
@@ -39,8 +43,24 @@ export const weightLossPrograms: WeightLossProgram[] = [
     ],
     content: '透過拍攝左手X光片，專業醫師可以判讀骨骼的成熟度，評估兒童的生長發育狀況，預測成年後的身高潛力。特別適用於性早熟、生長遲緩，或想了解身高潛力的兒童。'
   }
+
 ];
 
-export function getWeightLossProgramBySlug(slug: string): WeightLossProgram | undefined {
-  return weightLossPrograms.find(p => p.slug === slug);
+// 3. 為了相容之前的變數名稱
+export const weightLossItems = weightLossPrograms.map(item => ({
+    id: item.slug,
+    title: item.title,
+    description: item.description
+}));
+
+// 4. 根據 slug 取得對應的療程資料
+export function getWeightLossProgramBySlug(slug: string) {
+  return weightLossPrograms.find((program) => program.slug === slug);
+}
+
+// 5. 取得所有 slug
+export function getAllWeightLossProgramSlugs() {
+  return weightLossPrograms.map((program) => ({
+    slug: program.slug,
+  }));
 }
