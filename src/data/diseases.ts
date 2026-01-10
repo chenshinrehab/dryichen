@@ -20,7 +20,16 @@ export interface DiseaseCategory {
   description: string
   imageUrl?: string       // 類別封面圖
   diseases: DiseaseItem[]
+// 新增這兩個欄位 (加上 ? 代表可選，這樣舊資料沒填也不會馬上報錯)
+seoKeywords?: string[]
+seoDescription?: string
 }
+
+// =======================================================
+// 如果您希望分類頁也有完美的 SEO，建議順便在下方的資料中補上內容
+// (這一步是選項，不改也不會報錯，但改了 SEO 比較好)
+// =======================================================
+
 
 // 2. 完整資料內容
 export const diseaseCategories: DiseaseCategory[] = [
