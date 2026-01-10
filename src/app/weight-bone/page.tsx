@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 // 確保上面的檔案已經建立，這裡才抓得到資料
-import { weightLossPrograms } from '../../data/weightLoss'
+import { weightLossPrograms } from '@/data/weightLoss'
 
 export const metadata: Metadata = {
   title: '減重與骨齡 - 專業減重門診與兒童骨齡評估 | 宸新復健科診所',
