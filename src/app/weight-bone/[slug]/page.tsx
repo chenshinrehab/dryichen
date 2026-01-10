@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 // 引入剛剛修改好的資料檔
-import { getWeightLossProgramBySlug, getAllWeightLossProgramSlugs } from '@/data/weightbone'
+import { getWeightLossProgramBySlug, getAllWeightLossProgramSlugs } from '@/data/weightLoss'
 
 interface PageProps {
   params: {

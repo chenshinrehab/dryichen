@@ -12,6 +12,7 @@ export interface Treatment {
   images: { src: string; alt: string }[]; // 圖片陣列 (必填，但可以是空陣列)
   applicableConditions: string[]; // 適用症狀
   features: string[];      // 特色
+  youtubeVideoId?: string;
 }
 
 export const treatments: Treatment[] = [
@@ -62,6 +63,7 @@ export const treatments: Treatment[] = [
     title: '聚焦式 / 發散式體外震波',
     subtitle: '瑞士頂級設備、超音波定位複合式治療',
     description: '瑞士進口頂級設備，針對慢性肌腱炎、鈣化性肌腱炎效果顯著。',
+    youtubeVideoId: '3OK5zeUBeGc',
     contentHtml: `
      ✨新竹宸新復健科，聚焦式及發散式複合式治療<br>
       體外震波治療 (ESWT) 是一種先進的非侵入性復健技術，廣泛應用於骨科與運動醫學。其原理是利用高能量聲波穿透皮膚，精準聚焦於受損的深層軟組織。
