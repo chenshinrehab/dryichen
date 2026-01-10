@@ -44,3 +44,9 @@ export const weightLossPrograms: WeightLossProgram[] = [
 export function getWeightLossProgramBySlug(slug: string): WeightLossProgram | undefined {
   return weightLossPrograms.find(p => p.slug === slug);
 }
+
+export function getAllWeightLossProgramSlugs() {
+  return weightLossPrograms.map((program) => ({
+    slug: program.slug,
+  }));
+}
