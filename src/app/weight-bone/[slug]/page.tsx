@@ -144,9 +144,15 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                         {program.programBenefits && (
                           <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-700 h-full">
                               <h4 className="text-xl font-bold text-white mb-4 border-b border-slate-600 pb-2 flex items-center">
-                                <i className="fa-solid fa-thumbs-up text-pink-500 mr-2 text-base"></i>
-                                療程優點
+                                {/* 邏輯：如果有設定 benefitsIconClass 就用設定的，否則用預設的粉紅色讚 
+                                */}
+                                <i className={`${program.benefitsIconClass || 'fa-solid fa-thumbs-up text-pink-500'} mr-2 text-base`}></i>
+                                
+                                {/* 邏輯：如果有設定 benefitsTitle 就用設定的，否則顯示 "療程優點" 
+                                */}
+                                {program.benefitsTitle || '療程優點'}
                               </h4>
+                              
                               <ul className="space-y-3 text-slate-300 list-disc list-inside">
                                   {program.programBenefits.map((item, idx) => (
                                     <li key={idx}>{item}</li>
