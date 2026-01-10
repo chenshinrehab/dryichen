@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   keywords: ['復健治療', 'PRP注射', '震波治療', '運動治療', '新竹復健'],
 }
 
-// 定義 SEO 用的麵包屑資料 (這段是給 Google 看的，畫面上不會有東西)
+// SEO 用的麵包屑資料 (畫面不顯示)
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -24,7 +24,6 @@ const breadcrumbSchema = {
 export default function TreatmentsPage() {
   return (
     <>
-      {/* 這裡只有 SEO 資料，沒有畫面 */}
       <JsonLd data={breadcrumbSchema} />
 
       {/* 深色背景設定 */}
@@ -33,71 +32,49 @@ export default function TreatmentsPage() {
         <main className="flex-grow py-12 md:py-16 fade-in">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            {/* ⚠️ 注意：原本這裡的 <Breadcrumbs /> 已經被我刪除了，所以不會再顯示 */}
-
-            {/* 標題區 */}
-            <div className="mb-12 border-l-4 border-cyan-500 pl-6">
-                <h1 className="text-4xl font-bold text-white mb-4">治療方式</h1>
-                <p className="text-xl text-slate-400">
-                  專業的復健治療服務，結合醫學與運動科學，提供個人化的治療方案
-                </p>
+            {/* 標題區 (依照您的參考設計加上 icon 裝飾) */}
+            <div className="flex items-center gap-3 mb-8 pl-2">
+                <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
+                    <i className="fa-solid fa-notes-medical text-xl"></i>
+                </span>
+                <h1 className="text-3xl font-bold font-sans text-white">
+                    治療方式 <span className="text-slate-500 text-lg font-normal ml-2">Treatments</span>
+                </h1>
             </div>
             
             {/* 卡片列表 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {treatments.map((treatment) => (
                 <Link
                   key={treatment.slug}
                   href={`/treatments/${treatment.slug}`}
-                  className="group bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col"
+                  // ✨ 這裡套用您指定的全新樣式：半透明背景 + 霓虹邊框 + 懸浮上移效果
+                  className="bg-slate-800/50 backdrop-blur border border-slate-700 p-6 rounded-xl hover:border-cyan-500/50 transition-all hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] group hover:-translate-y-1 cursor-pointer flex flex-col"
                 >
-                  <div className="mb-4">
-                     {/* 標題與箭頭 */}
-                     <div className="flex justify-between items-start mb-2">
-                        <h2 className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
-                            {treatment.title}
-                        </h2>
-                        <i className="fa-solid fa-arrow-right text-slate-500 group-hover:text-cyan-400 transform group-hover:translate-x-1 transition-all"></i>
-                     </div>
-                     <p className="text-slate-400 mb-4 line-clamp-2">{treatment.description}</p>
-                  </div>
+                  {/* 標題 */}
+                  <h2 className="text-xl font-bold text-cyan-400 mb-3 group-hover:text-cyan-300 transition-colors">
+                    {treatment.title}
+                  </h2>
 
-                  {/* 適用症狀 */}
+                  {/* 描述 */}
+                  <p className="text-slate-400 text-sm mb-4 leading-relaxed flex-grow">
+                    {treatment.description}
+                  </p>
+
+                  {/* 適用症狀區塊 (綠色左邊框風格) */}
                   {treatment.applicableConditions && treatment.applicableConditions.length > 0 && (
-                    <div className="mb-4 bg-slate-900/30 rounded-lg p-3 border border-slate-700/30">
-                      <h3 className="font-semibold mb-2 text-pink-400 text-sm">適用症狀：</h3>
-                      <ul className="flex flex-wrap gap-2">
-                        {treatment.applicableConditions.slice(0, 4).map((condition, index) => (
-                          <li key={index} className="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-600">
-                             {condition}
-                          </li>
-                        ))}
-                      </ul>
+                    <div className="bg-slate-900/50 p-3 rounded border-l-2 border-green-500 mt-auto">
+                        <h4 className="font-semibold text-slate-200 mb-1 text-sm">適用症狀</h4>
+                        <p className="text-slate-400 text-sm">
+                            {/* 將陣列轉為用頓號分隔的字串 */}
+                            {treatment.applicableConditions.join('、')}
+                        </p>
                     </div>
                   )}
-
-                  {/* 特色 */}
-                  {treatment.features && treatment.features.length > 0 && (
-                    <div className="mt-auto bg-slate-900/50 rounded-lg p-4 border border-slate-700/50">
-                      <h3 className="font-semibold mb-2 text-cyan-500 text-sm">特色重點：</h3>
-                      <ul className="space-y-1.5">
-                        {treatment.features.slice(0, 3).map((feature, index) => (
-                          <li key={index} className="text-sm text-slate-300 flex items-start">
-                             <span className="text-cyan-500/70 mr-2">▹</span> {feature}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                  
-                  <div className="mt-6 text-center">
-                    <span className="text-cyan-400 font-semibold text-sm group-hover:underline decoration-cyan-400/50 underline-offset-4">
-                        了解更多詳細內容
-                    </span>
-                  </div>
                 </Link>
               ))}
             </div>
+
           </div>
         </main>
       </div>
