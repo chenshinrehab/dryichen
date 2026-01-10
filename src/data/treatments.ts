@@ -40,9 +40,7 @@ export const treatments: Treatment[] = [
       '運動傷害後持續疼痛。'
     ],
     // 您的 PRP 圖片
-    images: [
-
-      images: [
+  images: [
         // 注意：不需要寫 public，直接寫 /images 開頭
       { src: '/images/treatments/prp/principle.jpg', alt: 'PRP高濃度血小板原理' },
       { src: 'https://duk.tw/BFGxk6.jpg', alt: 'PRP高濃度血小板原理' },
