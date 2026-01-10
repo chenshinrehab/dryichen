@@ -129,7 +129,7 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                         {program.whyChooseUs && (
                           <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-700 h-full">
                               <h4 className="text-xl font-bold text-white mb-4 border-b border-slate-600 pb-2 flex items-center">
-                                <i className="fa-solid fa-star text-cyan-500 mr-2 text-base"></i>
+                                <i className="fa-solid fa-star text-yellow-500"></i>
                                 我們的特色
                               </h4>
                               <ul className="space-y-3 text-slate-300 list-disc list-inside">

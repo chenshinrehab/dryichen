@@ -64,10 +64,13 @@ export const weightLossPrograms: WeightLossProgram[] = [
     subtitle: 'GLP-1 受體促效劑',
     description: '協助控制體重的注射藥物，幫助您減少飢餓感，輕鬆達成減重目標。',
     features: ['穩定血糖', '減少體脂肪堆積'],
-    contentHtml: '新竹週纖達推薦，提供完整服務<br>
-    <span class="text-cyan-400 font-bold">✨ 1mg ：$9000 (約等於猛健樂 5mg)<br>
-    <span class="text-cyan-400 font-bold">✨ 1.7mg ：$12000 (約等於猛健樂 10mg)<br>
-    透過模擬腸道荷爾蒙的作用，增加飽足感、延緩胃部排空，進而減少熱量攝取，是現代人體重管理的得力助手，注重CP值朋友的首選。',
+    contentHtml: `
+    新竹週纖達推薦，提供完整服務。<br>
+    週纖達是一種 GLP-1 受體促效劑，原本用於糖尿病治療，後來發現具有顯著的減重效果。<br><br>
+    <span class="text-cyan-400 font-bold">✨ 1mg ：$9000 (約等於猛健樂 5mg)</span><br>
+    <span class="text-cyan-400 font-bold">✨ 1.7mg ：$12000 (約等於猛健樂 10mg)</span><br><br>
+    透過模擬腸道荷爾蒙的作用，增加飽足感、延緩胃部排空，進而減少熱量攝取，是現代人體重管理的得力助手，注重CP值朋友的首選。
+  `,
     whyChooseUs: ['詳細問診及衛教施打', '甲狀腺超音波檢查及抽血檢查', '療程含高階inbody及運動課程'], // 範例資料
     programBenefits: ['一週一次好簡單，更高CP值', '適用於12-18歲青少年減重', '有效控制三高及脂肪肝，心臟保護'],      // 範例資料
     images: [      { src: '/images/weight-loss/ozem/a.jpg', alt: '週纖達與猛健樂比較' },] // 圖片待補
@@ -82,11 +85,13 @@ export const weightLossPrograms: WeightLossProgram[] = [
     subtitle: '掌握黃金生長發育期',
     description: '透過左手X光片判讀骨骼成熟度，預測成年身高，掌握黃金生長發育期。',
     features: ['性早熟', '生長遲緩', '想了解身高潛力的兒童'],
-    contentHtml: '擔心孩子長不高嗎？想知道是否有性早熟或生長遲緩的問題？
+    contentHtml: `
+    '擔心孩子長不高嗎？想知道是否有性早熟或生長遲緩的問題？
     <br><br>
     新竹宸新復健科提供兒童骨齡檢查，不需要預約、掛號或等待 ⏰，僅需一秒鐘拍攝左手 X 光片，安全低輻射 👍。
     <br><br>
-    我們結合專業醫師與AI大數據判讀，經由骨齡及父母身高，精準預測成年身高! 破百名兒童已經參與，並高度好評肯定 💯，立即掌握孩子的黃金成長期！',
+    我們結合專業醫師與AI大數據判讀，經由骨齡及父母身高，精準預測成年身高! 破百名兒童已經參與，並高度好評肯定 💯，立即掌握孩子的黃金成長期！
+    `,
     whyChooseUs: ['免預約：門診時間來馬上照，不用候診掛號。', '精準判讀：使用 TW3 法判讀及二代 AI 輔助。', '彈性收費：依照需求階段性選擇付費。'],    // 範例資料
     programBenefits: ['準確度高，適合評估生長遲緩。', '更能反映真實的身高潛力。', '模板更符合亞洲兒童生長曲線。'], // 範例資料
     benefitsTitle: '為什麼選擇 TW3 法？',
