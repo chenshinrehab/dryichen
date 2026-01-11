@@ -6,66 +6,61 @@ import Link from 'next/link'
 import FooterSearch from '@/components/FooterSearch'
 
 export default function Footer() {
-  // 模擬瀏覽人次的狀態
   const [visitCount, setVisitCount] = useState<string>('---,---')
 
   useEffect(() => {
-    // 這裡是一個模擬的邏輯：
-    // 每次載入時，生成一個 85000 ~ 85999 之間的隨機數字，看起來像真的有人在瀏覽
     const baseCount = 85000
     const randomIncrement = Math.floor(Math.random() * 999)
     const total = baseCount + randomIncrement
-    
-    // 格式化數字 (加上逗號)
     setVisitCount(total.toLocaleString())
   }, [])
 
   return (
-    <footer className="bg-slate-900 border-t border-slate-800 pt-12 pb-8 mt-auto">
+    <footer className="bg-slate-900 border-t border-slate-800 pt-10 pb-6 mt-auto">
       <div className="container mx-auto px-4">
 
         {/* =========================================
             Part 1: 快速導覽 (圖片區)
            ========================================= */}
-        <div className="mb-10">
-            <h2 className="text-2xl font-bold font-sans text-white text-center mb-8 tracking-wide">
+        <div className="mb-8">
+            <h2 className="text-2xl font-bold font-sans text-white text-center mb-6 tracking-wide">
                 <span className="text-cyan-400">快速</span>導覽
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-2 max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 px-2 max-w-6xl mx-auto">
                 
                 {/* 1. 關於我們 */}
-                <Link href="/about" className="group rounded-xl relative h-32 md:h-40 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
+                <Link href="/about" className="group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
                   <img src="/images/icons/a.jpg"  alt="關於我們" 
                     className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-4">
-                      <span className="text-white font-bold group-hover:text-cyan-400 transition-colors">關於我們</span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-3">
+                      <span className="text-white font-bold text-sm md:text-base group-hover:text-cyan-400 transition-colors">關於我們</span>
                   </div>
                 </Link>
 
                 {/* 2. 治療方式 */}
-                <Link href="/treatments" className="group rounded-xl relative h-32 md:h-40 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
+                <Link href="/treatments" className="group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
                   <img src="/images/icons/b.jpg"  alt="治療方式" 
                     className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-4">
-                        <span className="text-white font-bold group-hover:text-cyan-400 transition-colors">治療方式</span>
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-3">
+                        <span className="text-white font-bold text-sm md:text-base group-hover:text-cyan-400 transition-colors">治療方式</span>
                     </div>
                 </Link>
 
                 {/* 3. 減重與骨齡 */}
-                <Link href="/weight-bone" className="group rounded-xl relative h-32 md:h-40 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
+                <Link href="/weight-bone" className="group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
                   <img src="/images/icons/c.jpg"  alt="減重與骨齡" 
                     className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-4">
-                        <span className="text-white font-bold group-hover:text-cyan-400 transition-colors">減重與骨齡</span>
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-3">
+                        <span className="text-white font-bold text-sm md:text-base group-hover:text-cyan-400 transition-colors">減重與骨齡</span>
                     </div>
                 </Link>
 
                 {/* 4. 疾病衛教 */}
-                <Link href="/diseases" className="group rounded-xl relative h-32 md:h-40 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
+                <Link href="/diseases" className="group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
                   <img src="/images/icons/d.jpg"  alt="疾病衛教" 
                     className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-4">
-                        <span className="text-white font-bold group-hover:text-cyan-400 transition-colors">疾病衛教</span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-3">
+                        <span className="text-white font-bold text-sm md:text-base group-hover:text-cyan-400 transition-colors">疾病衛教</span>
                     </div>
                 </Link>
             </div>
@@ -73,51 +68,52 @@ export default function Footer() {
 
         {/* =========================================
             Part 2: 站內搜尋 (獨立一排，置中)
+            ✨ 修改重點：將 mb-12 pb-12 改為 mb-6 pb-6，大幅縮小間距
            ========================================= */}
-        <div className="max-w-3xl mx-auto mb-12 border-b border-slate-800 pb-12">
+        <div className="max-w-3xl mx-auto mb-6 border-b border-slate-800 pb-6">
             <FooterSearch />
         </div>
 
         {/* =========================================
             Part 3: 社群、計數器、聯絡資訊
            ========================================= */}
-        <div className="flex flex-col lg:flex-row justify-between items-end gap-8 mb-8">
+        <div className="flex flex-col lg:flex-row justify-between items-end gap-6 mb-6">
           
           {/* 1. 左側：追蹤我們 + 社群按鈕 + 預約按鈕 */}
           <div className="w-full lg:w-auto">
-            <h3 className="text-lg font-bold text-white mb-4 flex items-center h-[28px]">
+            <h3 className="text-lg font-bold text-white mb-3 flex items-center h-[28px]">
                 追蹤我們
             </h3>
             
             <div className="flex gap-3 items-center flex-wrap">
-                <a href="https://www.facebook.com/DrYiChen" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#1877F2] text-white flex items-center justify-center text-lg hover:scale-110 transition-transform shadow-lg shadow-blue-500/30" title="Facebook"><i className="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/dryichen/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white flex items-center justify-center text-lg hover:scale-110 transition-transform shadow-lg shadow-pink-500/30" title="Instagram"><i className="fa-brands fa-instagram"></i></a>
-                <a href="https://www.threads.net/@dryichen" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center text-lg hover:scale-110 transition-transform shadow-lg shadow-white/30" title="Threads"><i className="fa-brands fa-threads"></i></a>
-                <a href="https://youtube.com/@dryichen" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#FF0000] text-white flex items-center justify-center text-lg hover:scale-110 transition-transform shadow-lg shadow-red-500/30" title="YouTube"><i className="fa-brands fa-youtube"></i></a>
+                <a href="https://www.facebook.com/DrYiChen" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-[#1877F2] text-white flex items-center justify-center text-base hover:scale-110 transition-transform shadow-lg shadow-blue-500/30" title="Facebook"><i className="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/dryichen/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white flex items-center justify-center text-base hover:scale-110 transition-transform shadow-lg shadow-pink-500/30" title="Instagram"><i className="fa-brands fa-instagram"></i></a>
+                <a href="https://www.threads.net/@dryichen" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white text-black flex items-center justify-center text-base hover:scale-110 transition-transform shadow-lg shadow-white/30" title="Threads"><i className="fa-brands fa-threads"></i></a>
+                <a href="https://youtube.com/@dryichen" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-[#FF0000] text-white flex items-center justify-center text-base hover:scale-110 transition-transform shadow-lg shadow-red-500/30" title="YouTube"><i className="fa-brands fa-youtube"></i></a>
                 
                 {/* 獨立的預約按鈕 */}
-                <Link href="/booking" className="px-4 py-2 rounded-full text-sm font-medium text-white bg-gradient-to-r from-pink-500 to-rose-500 hover:shadow-[0_0_10px_rgba(236,72,153,0.5)] transition-all flex items-center gap-1.5 ml-1">
+                <Link href="/booking" className="px-4 py-1.5 rounded-full text-sm font-medium text-white bg-gradient-to-r from-pink-500 to-rose-500 hover:shadow-[0_0_10px_rgba(236,72,153,0.5)] transition-all flex items-center gap-1.5 ml-1">
                     <i className="fa-solid fa-calendar-check"></i> 馬上預約
                 </Link>
             </div>
           </div>
 
           {/* 2. 中間：累計瀏覽 */}
-          <div className="flex flex-col items-center justify-center w-full lg:w-auto">
-             <div className="bg-slate-800/80 px-4 py-2 rounded-lg border border-slate-700/50 flex items-center gap-2 shadow-inner">
+          <div className="flex flex-col items-center justify-center w-full lg:w-auto my-4 lg:my-0">
+             <div className="bg-slate-800/80 px-4 py-1.5 rounded-lg border border-slate-700/50 flex items-center gap-2 shadow-inner">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                 </span>
                 <span className="text-xs text-slate-400">累計瀏覽:</span>
-                <span className="font-mono text-cyan-400 font-bold tracking-widest text-lg">
+                <span className="font-mono text-cyan-400 font-bold tracking-widest text-base">
                     {visitCount}
                 </span>
              </div>
           </div>
 
           {/* 3. 右側：診所資訊 */}
-          <div className="text-center lg:text-right text-slate-300 space-y-2 w-full lg:w-auto">
+          <div className="text-center lg:text-right text-slate-300 space-y-1.5 w-full lg:w-auto text-sm">
             <p className="flex items-center justify-center lg:justify-end gap-2 group cursor-pointer">
               <i className="fa-solid fa-phone text-cyan-400 group-hover:animate-pulse"></i> 
               <span className="font-mono tracking-wide">(03) 564-7999</span>
@@ -129,7 +125,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-slate-800 my-6"></div>
+        <div className="border-t border-slate-800 my-4"></div>
 
         <div className="text-center">
           <p className="text-slate-500 text-xs leading-relaxed">
