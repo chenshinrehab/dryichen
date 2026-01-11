@@ -64,7 +64,7 @@ export default function Home() {
           {/* ============================================================
             ✨ 新增：最新內容速報欄位 (放在醫師介紹上方)
            ============================================================ */}
-        <section className="container mx-auto px-4 mb-2 relative z-20">
+        <section className="container mx-auto px-4 mb-4 relative z-20">
           <div className="max-w-4xl mx-auto bg-slate-800/80 backdrop-blur border-l-4 border-pink-500 rounded-r-lg shadow-lg p-4 flex flex-col md:flex-row items-start md:items-center gap-4">
              
              {/* 標題標籤 */}
@@ -91,7 +91,7 @@ export default function Home() {
           {/* =========================================
               Section 1: 醫師介紹 (Hero Section) 
              ========================================= */}
-          <section className="container mx-auto px-4 pt-4 pb-12 md:py-16 fade-in">
+          <section className="container mx-auto px-4 pt-8 pb-12 md:py-16 fade-in">
              <div className="max-w-5xl mx-auto">
                 <div className="bg-slate-800/60 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden shadow-2xl relative">
                    {/* 裝飾用的背景光暈 */}
