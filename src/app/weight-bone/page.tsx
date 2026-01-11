@@ -5,7 +5,7 @@ import JsonLd from '@/components/JsonLd'
 import { weightLossPrograms } from '@/data/weightLoss'
 
 // ==========================================
-// 1. Meta 設定 (符合要求 3)
+// 1. Meta 設定
 // ==========================================
 export const metadata: Metadata = {
   title: '新竹減重與骨齡門診 - 猛健樂/瘦瘦針/生長遲緩/性早熟評估 | 宸新復健科',
@@ -14,13 +14,11 @@ export const metadata: Metadata = {
 }
 
 // ==========================================
-// 2. Schema 結構化資料 (符合要求 1 & 4)
-//    包含：麵包屑 + 醫療網頁特殊標記
+// 2. Schema 結構化資料
 // ==========================================
 const weightBoneSchema = {
   '@context': 'https://schema.org',
   '@graph': [
-    // 麵包屑 (隱藏式)
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
@@ -28,7 +26,6 @@ const weightBoneSchema = {
         { '@type': 'ListItem', position: 2, name: '減重與骨齡', item: 'https://dryichen-4ze1.vercel.app/weight-bone' },
       ],
     },
-    // 醫療網頁標記 (告訴 Google 這裡是醫療服務)
     {
       '@type': 'MedicalWebPage',
       'name': '減重與骨齡門診',
@@ -67,13 +64,35 @@ export default function WeightLossPage() {
                 </h1>
             </div>
 
-            {/* SEO 導言區 (關鍵字自然置入，取代隱藏文字) */}
+            {/* SEO 導言區 (修改為：摘要 + 展開詳情) */}
             <div className="mb-10 pl-2 max-w-4xl">
-                <p className="text-lg text-slate-400 border-l-4 border-cyan-500 pl-4 leading-relaxed">
-                    宸新復健科位於<strong className="text-cyan-400 font-normal">新竹科學園區</strong>附近，由林羿辰醫師親自主持。我們提供科學化的<strong className="text-cyan-400 font-normal">新竹減重</strong>療程，引進雙重腸泌素<strong className="text-cyan-400 font-normal">猛健樂 (Mounjaro)</strong> 與常見的<strong className="text-cyan-400 font-normal">瘦瘦針</strong> (週纖達)，協助您有效控制體重。
-                    <br className="my-2"/>
-                    針對兒童發育，我們提供專業的<strong className="text-cyan-400 font-normal">新竹照骨齡</strong> X光檢查，精準評估<strong className="text-cyan-400 font-normal">生長遲緩</strong>與<strong className="text-cyan-400 font-normal">性早熟</strong>風險，把握孩子黃金成長期。
+                {/* 1. 精簡摘要 (永遠顯示) */}
+                <p className="text-lg text-slate-400 border-l-4 border-cyan-500 pl-4 leading-relaxed mb-4">
+                    位於<strong className="text-cyan-400 font-normal">新竹科學園區</strong>附近，由林羿辰醫師主持。提供先進的雙重腸泌素減重療程與兒童骨齡精準評估，為您與孩子把握健康黃金期。
                 </p>
+
+                {/* 2. 互動展開區 (使用原生 details 標籤，不需 JS 即可運作) */}
+                <details className="group">
+                    {/* 按鈕 */}
+                    <summary className="inline-flex items-center text-cyan-500 hover:text-cyan-400 cursor-pointer list-none select-none transition-colors">
+                        <span className="font-semibold text-sm tracking-wide group-open:hidden">
+                           了解更多 <i className="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                        </span>
+                        <span className="font-semibold text-sm tracking-wide hidden group-open:inline-flex items-center">
+                           收起內容 <i className="fa-solid fa-chevron-up ml-1 text-xs"></i>
+                        </span>
+                    </summary>
+                    
+                    {/* 隱藏的詳細內容 (原本的長文字) */}
+                    <div className="mt-4 p-5 bg-slate-800/50 rounded-xl border border-slate-700/50 text-slate-400 leading-relaxed shadow-inner">
+                        <p className="mb-4">
+                            宸新復健科位於新竹科學園區附近，由林羿辰醫師親自主持。我們提供科學化的<strong className="text-cyan-400 font-normal">新竹減重</strong>療程，引進雙重腸泌素<strong className="text-cyan-400 font-normal">猛健樂 (Mounjaro)</strong> 與常見的<strong className="text-cyan-400 font-normal">瘦瘦針</strong> (週纖達)，協助您有效控制體重。
+                        </p>
+                        <p>
+                            針對兒童發育，我們提供專業的<strong className="text-cyan-400 font-normal">新竹照骨齡</strong> X光檢查，精準評估<strong className="text-cyan-400 font-normal">生長遲緩</strong>與<strong className="text-cyan-400 font-normal">性早熟</strong>風險，把握孩子黃金成長期。
+                        </p>
+                    </div>
+                </details>
             </div>
             
             {/* 卡片列表 */}
@@ -111,16 +130,12 @@ export default function WeightLossPage() {
               ))}
             </div>
 
-            {/* ==========================================
-                3. 醫師的話 / 治療理念 (符合要求 2 & E-E-A-T)
-                使用不同底色區隔，增加信任感
-               ========================================== */}
+            {/* 3. 醫師的話 / 治療理念 */}
             <div className="bg-slate-800/80 rounded-2xl p-8 border border-slate-700 relative overflow-hidden">
                 {/* 裝飾背景 */}
                 <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>
                 
                 <div className="relative z-10 flex flex-col md:flex-row gap-8 items-start">
-                    {/* 醫師頭像/圖標 (如果沒有頭像可用圖標代替) */}
                     <div className="flex-shrink-0">
                         <div className="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center border-2 border-cyan-500/50">
                              <i className="fa-solid fa-user-doctor text-3xl text-cyan-400"></i>
