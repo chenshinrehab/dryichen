@@ -128,7 +128,7 @@ export default function BookingPage() {
             {/* Line Block */}
             <div className="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl p-8 text-center hover:border-green-400/50 hover:shadow-[0_0_20px_rgba(74,222,128,0.2)] transition-all duration-300 group flex flex-col items-center relative overflow-hidden">
               
-              {/* ✨ 修改處：已移除右上角的「最推薦」紅色標籤 */}
+              {/* ✨ 修改處：已移除右上角的 「最推薦」紅色標籤 */}
 
               <div className="w-20 h-20 bg-green-400/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <i className="fa-brands fa-line text-4xl text-green-400"></i>
