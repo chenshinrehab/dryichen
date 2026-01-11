@@ -37,37 +37,42 @@ export default function Navigation() {
               </div>
           </Link>
 
-          {/* 社群區塊 (修改重點：按鈕加大) */}
+          {/* 社群區塊 */}
           <div className="flex items-center gap-2 ml-auto z-20">
              <div className="hidden sm:flex items-center gap-3">
                 
+                {/* ✨ 修改 2: 按鈕大小微調
+                    原本 w-12 h-12 太大，改成 w-10 h-10 (40px)
+                    文字大小改成 text-lg
+                */}
+
                 {/* 回首頁 */}
                 <Link href="/" title="回到首頁" 
-                  className="w-12 h-12 rounded-full bg-slate-800 text-cyan-400 border border-cyan-400 flex items-center justify-center text-xl hover:bg-slate-700 transition-colors shadow-md">
+                  className="w-10 h-10 rounded-full bg-slate-800 text-cyan-400 border border-cyan-400 flex items-center justify-center text-lg hover:bg-slate-700 transition-colors shadow-md">
                   <i className="fa-solid fa-house"></i>
                 </Link>
 
                 {/* Facebook */}
                 <a href="https://www.facebook.com/DrYiChen" target="_blank" rel="noopener noreferrer" 
-                   className="w-12 h-12 rounded-full bg-[#1877F2] border border-[#1877F2] text-white flex items-center justify-center text-xl hover:scale-110 transition-transform shadow-md">
+                   className="w-10 h-10 rounded-full bg-[#1877F2] border border-[#1877F2] text-white flex items-center justify-center text-lg hover:scale-110 transition-transform shadow-md">
                    <i className="fa-brands fa-facebook-f"></i>
                 </a>
 
                 {/* Instagram */}
                 <a href="https://www.instagram.com/dryichen/" target="_blank" rel="noopener noreferrer" 
-                   className="w-12 h-12 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white flex items-center justify-center text-xl border-none hover:scale-110 transition-transform shadow-md">
+                   className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white flex items-center justify-center text-lg border-none hover:scale-110 transition-transform shadow-md">
                    <i className="fa-brands fa-instagram"></i>
                 </a>
 
                 {/* Threads */}
                 <a href="https://www.threads.net/@dryichen" target="_blank" rel="noopener noreferrer" 
-                   className="w-12 h-12 rounded-full bg-white text-black flex items-center justify-center text-xl border-none hover:scale-110 transition-transform shadow-md">
+                   className="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center text-lg border-none hover:scale-110 transition-transform shadow-md">
                    <i className="fa-brands fa-threads"></i>
                 </a>
 
                 {/* YouTube */}
                 <a href="https://youtube.com/@dryichen" target="_blank" rel="noopener noreferrer" 
-                   className="w-12 h-12 rounded-full bg-[#FF0000] border border-[#FF0000] text-white flex items-center justify-center text-xl border-none hover:scale-110 transition-transform shadow-md">
+                   className="w-10 h-10 rounded-full bg-[#FF0000] border border-[#FF0000] text-white flex items-center justify-center text-lg border-none hover:scale-110 transition-transform shadow-md">
                    <i className="fa-brands fa-youtube"></i>
                 </a>
              </div>
@@ -81,8 +86,12 @@ export default function Navigation() {
                 <li key={item.path}>
                    <Link 
                      href={item.path} 
+                     /* ✨ 修改 1: 字體放大
+                        text-sm 改為 text-base (16px)
+                        同時維持 padding，確保好按
+                     */
                      className={`
-                       px-3.5 py-1.5 md:px-3 md:py-2 rounded-full text-sm font-medium transition-all block
+                       px-3.5 py-1.5 md:px-4 md:py-2 rounded-full text-base font-medium transition-all block
                        ${isActive(item.path) 
                          ? 'text-cyan-400 bg-slate-800 border-b-2 border-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.3)]' 
                          : 'text-slate-300 hover:text-white hover:bg-slate-700 border-b-2 border-transparent'}
@@ -95,8 +104,9 @@ export default function Navigation() {
               <li>
                  <Link 
                    href="/booking" 
+                   /* 預約按鈕同步放大字體 */
                    className={`
-                     px-3.5 py-1.5 md:px-3 md:py-2 rounded-full text-sm font-medium transition-all ml-1 block
+                     px-3.5 py-1.5 md:px-4 md:py-2 rounded-full text-base font-medium transition-all ml-1 block
                      ${isActive('/booking') 
                        ? 'text-white bg-gradient-to-r from-pink-600 to-rose-600 shadow-[0_0_10px_rgba(236,72,153,0.5)]' 
                        : 'text-white bg-gradient-to-r from-pink-500 to-rose-500 hover:shadow-[0_0_10px_rgba(236,72,153,0.5)]'}
