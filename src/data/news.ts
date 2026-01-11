@@ -1,52 +1,58 @@
 // src/data/news.ts
-export interface NewsItem {
-  id: string
-  title: string
-  date: string
-  category: string
-  summary: string // 列表顯示的摘要
-  contentHtml: string // 詳細內容 (HTML)
-  coverImage: string
-  keywords?: string[]
+
+export interface NewsPost {
+  id: string;
+  title: string;
+  category: '門診公告' | '衛教文章' | '醫學新知' | '診所活動';
+  date: string;
+  summary: string;      // 列表頁顯示的短摘要
+  coverImage: string;   // 封面圖
+  contentHtml: string;  // 內文 (支援 HTML)
+  
+  // ✨ SEO 專用欄位 (預留給未來發文用)
+  seoTitle?: string;
+  seoDescription?: string;
+  keywords?: string[];
 }
 
-export const newsData: NewsItem[] = [
+export const newsData: NewsPost[] = [
   {
-    id: 'outpatient-adjustment',
-    title: '【門診異動】本週六早診正常看診公告',
-    date: '2025-06-20',
+    id: '2024-opening-notice',
+    title: '【公告】宸新復健科 2024 春節門診時間異動',
     category: '門診公告',
-    summary: '因應連續假期調整，本週六上午林羿辰醫師正常看診，歡迎多加利用預約系統。',
-    keywords: ['新竹復健科', '門診時間', '林羿辰醫師', '看診公告'], // ✨ 填寫關鍵字
+    date: '2024-01-10',
+    summary: '農曆春節期間門診時間調整公告，請有復健需求的民眾提早安排預約。',
+    coverImage: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=800',
     contentHtml: `
-      <p>親愛的病患朋友大家好：</p>
-      <p>本診所配合人事行政局行事曆調整，本週六 (6/22) 上午 <strong>09:00 - 12:00</strong> 正常看診。</p>
-      <p>林羿辰醫師將提供完整的復健門診與增生治療評估，若有需要的民眾請提早預約。</p>
-      <p>祝大家假期愉快，身體健康！</p>
+      <p>親愛的鄉親朋友們，農曆春節將至，宸新復健科預祝大家龍年行大運，身體健康！</p>
+      <p>本院春節期間門診異動如下：...</p>
+      <ul>
+        <li>2/8 (小年夜)：正常看診</li>
+        <li>2/9 - 2/13 (除夕至初四)：全面休診</li>
+        <li>2/14 (初五)：恢復正常門診</li>
+      </ul>
     `,
-    coverImage: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800'
+    seoTitle: '2024春節門診公告 - 新竹宸新復健科',
+    keywords: ['門診公告', '春節休診', '新竹復健科']
   },
   {
     id: 'prp-knowledge',
-    title: '【醫學新知】PRP 增生治療真的有效嗎？',
-    date: '2025-06-15',
+    title: '膝蓋痛一定要開刀嗎？PRP 增生療法新選擇',
     category: '衛教文章',
-    summary: '深入淺出解析 PRP 原理，為什麼許多運動員受傷都選擇打 PRP？一篇文看懂治療關鍵。',
-    keywords: ['PRP', '增生療法', '膝蓋痛', '網球肘', '運動傷害'], // ✨ 填寫關鍵字
+    date: '2024-01-05',
+    summary: '退化性關節炎不一定要換人工關節。透過 PRP 自體血小板注射，啟動關節修復力。',
+    coverImage: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800',
     contentHtml: `
-      <p>許多人聽到 PRP (高濃度血小板血漿) 都會好奇：它真的有這麼神奇嗎？</p>
-      <p>其實 PRP 的原理很簡單，就是利用我們自己血液中富含的生長因子，濃縮後注射回受傷的部位，就像是給身體的修復工班打了強心針，加速組織修復的過程。</p>
-      <h3>PRP 適合哪些人？</h3>
-      <ul>
-        <li>長期肌腱炎久治不癒</li>
-        <li>退化性關節炎初期</li>
-        <li>韌帶撕裂傷希望加速癒合</li>
-      </ul>
+      <p>許多長輩聽到膝蓋退化，就很擔心要開刀換人工關節。其實在退化初期或中期，<strong>PRP 增生療法</strong>是一個非常有效的保守治療選擇。</p>
+      <h3>什麼是 PRP？</h3>
+      <p>PRP 是利用自己的血液，分離出高濃度的血小板...</p>
     `,
-    coverImage: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=800'
+    seoTitle: '膝蓋退化免開刀？新竹PRP治療推薦 - 宸新復健科',
+    seoDescription: '新竹PRP注射推薦。膝蓋退化性關節炎不一定要開刀，透過超音波導引PRP增生療法，精準修復軟骨與韌帶。',
+    keywords: ['新竹PRP', '膝蓋痛', '退化性關節炎', '免開刀']
   }
 ];
 
 export function getNewsById(id: string) {
-  return newsData.find(item => item.id === id);
+  return newsData.find((post) => post.id === id);
 }

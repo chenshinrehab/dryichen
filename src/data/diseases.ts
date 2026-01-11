@@ -4,7 +4,7 @@
 export interface DiseaseItem {
   id: string
   title: string
-  description: string     // 列表頁用的簡短描述
+  description: string      // 列表頁用的簡短描述
   content?: string        // 舊版純文字 (為了相容性保留)
   contentHtml: string     // 詳細頁用的 HTML 內容 (支援排版)
   symptoms: string[]      // 常見症狀列表
@@ -20,43 +20,40 @@ export interface DiseaseCategory {
   description: string
   imageUrl?: string       // 類別封面圖
   diseases: DiseaseItem[]
-// 新增這兩個欄位 (加上 ? 代表可選，這樣舊資料沒填也不會馬上報錯)
-seoKeywords?: string[]
-seoDescription?: string
+  
+  // SEO 欄位
+  seoKeywords?: string[]
+  seoDescription?: string
 }
-
-// =======================================================
-// 如果您希望分類頁也有完美的 SEO，建議順便在下方的資料中補上內容
-// (這一步是選項，不改也不會報錯，但改了 SEO 比較好)
-// =======================================================
-
 
 // 2. 完整資料內容
 export const diseaseCategories: DiseaseCategory[] = [
   // =======================================================
-  // 1. 脊椎髖臀
+  // 1. 脊椎髖臀 (關鍵字：坐骨神經痛、椎間盤突出、長骨刺)
   // =======================================================
   {
     slug: 'spine-hip',
     title: '脊椎髖臀',
     description: '脊椎、髖關節與臀部相關疾病',
     imageUrl: 'https://images.unsplash.com/photo-1544367563-12123d8965cd?auto=format&fit=crop&q=80&w=800',
+    seoKeywords: ['新竹脊椎側彎', '坐骨神經痛治療', '新竹整脊', '骨刺', '梨狀肌症候群'],
+    seoDescription: '新竹脊椎權威復健。專治腰椎椎間盤突出、坐骨神經痛與長骨刺。提供免開刀的PRP注射與徒手物理治療，精準改善下背痛與腳麻問題。',
     diseases: [
       {
         id: 'lumbar-disc-herniation',
         title: '腰椎椎間盤突出',
         description: '椎間盤髓核擠出壓迫神經，造成腰痛或下肢麻痛。',
         contentHtml: `
-          腰椎椎間盤突出是現代人常見的文明病。當脊椎間的軟骨（椎間盤）因長期受力不均、姿勢不良或外力撞擊，導致內部的髓核突出，壓迫到後方的脊神經根。<br><br>
-          這會導致劇烈的下背痛，並沿著坐骨神經延伸至臀部、大腿後側甚至小腿與腳底，產生<strong>麻、痛、無力</strong>的現象。嚴重時甚至會影響大小便功能（馬尾症候群）。<br><br>
-          <span class="text-cyan-400 font-bold">✨ 治療關鍵：</span> 80%的患者可透過非手術治療痊癒，如PRP注射修復受損組織。
+          <p>腰椎椎間盤突出是現代人常見的文明病，更是造成<strong>坐骨神經痛</strong>的主因。當脊椎間的軟骨（椎間盤）因長期受力不均、姿勢不良或外力撞擊，導致內部的髓核突出，壓迫到後方的脊神經根。</p>
+          <p>這會導致劇烈的下背痛，並沿著坐骨神經延伸至臀部、大腿後側甚至小腿與腳底，產生<strong>麻、痛、無力</strong>的現象。嚴重時甚至會影響大小便功能（馬尾症候群）。</p>
+          <p class="mt-4"><span class="text-cyan-400 font-bold">✨ 治療關鍵：</span> 80%的患者可透過非手術治療痊癒。除了急性期的止痛，<strong>PRP 增生療法</strong>能修復受損的纖維環，搭配<strong>核心肌群訓練</strong>穩固脊椎，是避免復發的不二法門。</p>
         `,
         symptoms: ['下背劇痛', '坐骨神經痛 (腿麻)', '彎腰時疼痛加劇', '下肢無力'],
-        treatments: ['物理治療 (牽引、熱敷)', 'PRP 增生療法', '硬脊膜外注射', '核心肌群訓練'],
-        seoKeywords: ['腰椎椎間盤突出', '坐骨神經痛', '下背痛', '復健'],
-        seoDescription: '腰椎椎間盤突出造成嚴重腰痛與腿麻。宸新復健科提供免開刀的PRP注射與物理治療方案。',
+        treatments: ['<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>', '硬脊膜外注射', '核心肌群訓練', '物理治療 (牽引)'],
+        seoKeywords: ['腰椎椎間盤突出', '坐骨神經痛', '下背痛', '椎間盤突出免開刀', '腳麻'],
+        seoDescription: '腰椎椎間盤突出造成嚴重腰痛與腿麻。宸新復健科提供免開刀的PRP注射與物理治療方案，有效改善坐骨神經痛。',
         images: [
-           { src: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=800', alt: '脊椎構造示意圖' }
+           { src: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=800', alt: '脊椎椎間盤突出構造圖' }
         ]
       },
       {
@@ -64,12 +61,12 @@ export const diseaseCategories: DiseaseCategory[] = [
         title: '頸椎椎間盤退化',
         description: '低頭用電腦導致的頸椎問題，俗稱「烏龜頸」。',
         contentHtml: `
-          現代人長時間低頭滑手機、使用電腦，頸椎承受的壓力是正常的數倍，容易導致頸椎椎間盤提早退化、長骨刺。<br><br>
-          初期症狀為肩頸僵硬、痠痛，若壓迫到神經，則會造成<strong>手臂麻痛、手部無力</strong>。嚴重時甚至會壓迫脊髓，影響行走平衡。治療重點在於改善姿勢並修復受損組織。
+          <p>現代人長時間低頭滑手機、使用電腦，頸椎承受的壓力是正常的數倍，容易導致頸椎椎間盤提早退化、長骨刺。</p>
+          <p>初期症狀為肩頸僵硬、痠痛，若壓迫到神經，則會造成<strong>手臂麻痛、手部無力</strong>。嚴重時甚至會壓迫脊髓，影響行走平衡。</p>
         `,
         symptoms: ['頸部疼痛僵硬', '膏肓痛', '手臂麻木刺痛', '頭痛 (頸因性頭痛)'],
         treatments: ['姿勢矯正 (收下巴)', '頸椎牽引', '神經解離注射', '增生療法'],
-        seoKeywords: ['頸椎椎間盤退化', '頸部疼痛', '手麻', '骨刺'],
+        seoKeywords: ['頸椎椎間盤退化', '頸部疼痛', '手麻', '骨刺', '烏龜頸'],
         seoDescription: '長期低頭導致頸椎椎間盤退化與骨刺，造成手麻與頸痛。了解治療與矯正方式。',
         images: [
            { src: 'https://images.unsplash.com/photo-1531956531700-cd299634842e?auto=format&fit=crop&q=80&w=800', alt: '頸部疼痛示意圖' }
@@ -80,8 +77,8 @@ export const diseaseCategories: DiseaseCategory[] = [
         title: '坐骨神經痛',
         description: '疼痛從下背部放射至臀部、大腿後側甚至腳底。',
         contentHtml: `
-          坐骨神經痛並非單一疾病，而是一種<strong>症狀</strong>。通常是因為腰椎退化、骨刺、椎間盤突出，或是臀部的<strong>梨狀肌症候群</strong>壓迫到人體最大的坐骨神經所引起。<br><br>
-          典型症狀是電流般的抽痛，從腰部一路往下竄。治療必須先找出「壓迫點」在哪裡，才能對症下藥。
+          <p>坐骨神經痛並非單一疾病，而是一種<strong>症狀</strong>。通常是因為腰椎退化、骨刺、椎間盤突出，或是臀部的<strong>梨狀肌症候群</strong>壓迫到人體最大的坐骨神經所引起。</p>
+          <p>典型症狀是電流般的抽痛，從腰部一路往下竄。治療必須先找出「壓迫點」在哪裡，才能對症下藥。</p>
         `,
         symptoms: ['電流般的放射痛', '腿部感覺異常 (像螞蟻爬)', '久坐起身困難', '走路跛行'],
         treatments: ['神經解離術', '物理治療', '梨狀肌伸展', '藥物治療'],
@@ -96,8 +93,8 @@ export const diseaseCategories: DiseaseCategory[] = [
         title: '脊椎狹窄症',
         description: '老化導致骨刺與韌帶肥厚，典型症狀為「間歇性跛行」。',
         contentHtml: `
-          脊椎狹窄症多發生於長輩，是因為脊椎老化、長骨刺、黃韌帶肥厚，導致脊髓腔變窄，壓迫神經。<br><br>
-          最典型的症狀是<strong>間歇性跛行</strong>：走沒多久（約5-10分鐘）就會覺得雙腿痠麻無力，必須坐下來彎腰休息才能繼續走。這與椎間盤突出「坐著比較痛」的症狀相反。
+          <p>脊椎狹窄症多發生於長輩，是因為脊椎老化、長骨刺、黃韌帶肥厚，導致脊髓腔變窄，壓迫神經。</p>
+          <p>最典型的症狀是<strong>間歇性跛行</strong>：走沒多久（約5-10分鐘）就會覺得雙腿痠麻無力，必須坐下來彎腰休息才能繼續走。這與椎間盤突出「坐著比較痛」的症狀相反。</p>
         `,
         symptoms: ['間歇性跛行', '走不遠需坐下休息', '雙腿痠麻無力', '腰部後仰疼痛'],
         treatments: ['保守治療 (復健)', '硬脊膜外注射', '神經阻斷術', '嚴重時需手術減壓'],
@@ -112,8 +109,8 @@ export const diseaseCategories: DiseaseCategory[] = [
         title: '退化性髖關節炎',
         description: '軟骨磨損導致鼠蹊部疼痛，影響行走與穿襪等日常動作。',
         contentHtml: `
-          退化性髖關節炎是由於髖關節軟骨磨損、骨頭摩擦所致。疼痛位置通常在<strong>鼠蹊部 (該邊)</strong>、臀部外側或大腿前側。<br><br>
-          患者常感到關節僵硬，早上起床或久坐後特別明顯。嚴重時會影響走路姿勢（鴨子走路），甚至無法自行剪腳指甲、穿襪子。
+          <p>退化性髖關節炎是由於髖關節軟骨磨損、骨頭摩擦所致。疼痛位置通常在<strong>鼠蹊部 (該邊)</strong>、臀部外側或大腿前側。</p>
+          <p>患者常感到關節僵硬，早上起床或久坐後特別明顯。嚴重時會影響走路姿勢（鴨子走路），甚至無法自行剪腳指甲、穿襪子。</p>
         `,
         symptoms: ['鼠蹊部疼痛', '走路跛行', '關節活動受限 (穿襪困難)', '腹股溝壓痛'],
         treatments: ['體重控制', '肌力訓練 (臀中肌)', 'PRP 關節注射', '人工關節置換'],
@@ -128,8 +125,8 @@ export const diseaseCategories: DiseaseCategory[] = [
         title: '梨狀肌症候群',
         description: '梨狀肌緊繃壓迫坐骨神經，造成深層臀部疼痛。',
         contentHtml: `
-          梨狀肌是臀部深層的一條肌肉，當它因為久坐、過度運動或外傷而緊繃腫脹時，會壓迫到下方的坐骨神經，引發類似椎間盤突出的症狀。<br><br>
-          特徵是<strong>深層臀部疼痛</strong>，且在變換姿勢、翹腳或久坐時加劇。透過超音波導引注射放鬆肌肉，效果顯著。
+          <p>梨狀肌是臀部深層的一條肌肉，當它因為久坐、過度運動或外傷而緊繃腫脹時，會壓迫到下方的坐骨神經，引發類似椎間盤突出的症狀。</p>
+          <p>特徵是<strong>深層臀部疼痛</strong>，且在變換姿勢、翹腳或久坐時加劇。透過超音波導引注射放鬆肌肉，效果顯著。</p>
         `,
         symptoms: ['深層臀部痠痛', '久坐疼痛加劇', '無法翹二郎腿', '大腿後側麻痛'],
         treatments: ['梨狀肌伸展', '物理治療', '超音波導引注射', '震波治療'],
@@ -143,25 +140,26 @@ export const diseaseCategories: DiseaseCategory[] = [
   },
 
   // =======================================================
-  // 2. 肩膀
+  // 2. 肩膀 (關鍵字：五十肩、肩膀痛、手舉不起來)
   // =======================================================
   {
     slug: 'shoulder',
     title: '肩膀',
     description: '肩膀相關疾病',
     imageUrl: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&q=80&w=800',
+    seoKeywords: ['新竹五十肩治療', '肩膀痛', '旋轉肌破裂', '鈣化性肌腱炎', '新竹物理治療'],
+    seoDescription: '肩膀痛手舉不起來？新竹五十肩與旋轉肌撕裂治療推薦。免開刀肩關節擴張術與PRP修復，解決夜間痛醒與活動受限問題。',
     diseases: [
       {
         id: 'rotator-cuff-tear',
         title: '旋轉肌撕裂',
         description: '肩膀旋轉肌群受傷或撕裂，造成肩膀疼痛與活動受限。',
         contentHtml: `
-          旋轉肌袖是包覆肩關節的四條重要肌腱，負責肩膀的旋轉與抬舉。當因老化、長期過度使用（如投擲運動、油漆工）或外傷導致肌腱磨損撕裂，就會引起疼痛。<br><br>
-          患者常在<strong>手臂上舉 60-120 度</strong>時感到劇痛（疼痛弧），且夜間側睡壓到患側會痛醒。部分撕裂可透過 PRP 修復，完全斷裂則建議手術。
+          <p>旋轉肌袖是包覆肩關節的四條重要肌腱，負責肩膀的旋轉與抬舉。當因老化、長期過度使用（如投擲運動、油漆工）或外傷導致肌腱磨損撕裂，就會引起疼痛。</p>
+          <p>患者常在<strong>手臂上舉 60-120 度</strong>時感到劇痛（疼痛弧），且夜間側睡壓到患側會痛醒。部分撕裂可透過 PRP 修復，完全斷裂則建議手術。</p>
         `,
         symptoms: ['舉手疼痛無力', '夜間疼痛 (痛醒)', '特定角度疼痛 (Painful Arc)', '肩膀卡卡聲'],
-        treatments: ['<a href="/treatments/prp" class="text-cyan-400 font-bold hover:text-cyan-200 border-b border-cyan-500 hover:border-cyan-200 transition-colors group-hover/link:text-white">PRP 增生療法 <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i></a>', 
-                     '聚焦式震波', '肌力訓練', '手術修補'],
+        treatments: ['<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>', '聚焦式震波', '肌力訓練', '手術修補'],
         seoKeywords: ['旋轉肌撕裂', '肩膀疼痛', 'PRP', '震波'],
         seoDescription: '旋轉肌撕裂造成肩膀疼痛與活動受限。了解症狀、治療方式與復健方法。',
         images: [
@@ -173,8 +171,8 @@ export const diseaseCategories: DiseaseCategory[] = [
         title: '五十肩 (冰凍肩)',
         description: '肩膀關節囊發炎導致關節僵硬，活動範圍受限。',
         contentHtml: `
-          五十肩的正式名稱為「沾黏性肩關節囊炎」。關節囊因為發炎而變厚、纖維化，導致肩膀像是結冰一樣動彈不得。<br><br>
-          病程分為三期：<strong>發炎期</strong>（不動也痛）、<strong>冰凍期</strong>（角度嚴重受限，無法梳頭、扣內衣）、<strong>解凍期</strong>。若不及早介入復健與擴張術，病程可能長達 1-2 年。
+          <p>五十肩的正式名稱為「沾黏性肩關節囊炎」。關節囊因為發炎而變厚、纖維化，導致肩膀像是結冰一樣動彈不得。</p>
+          <p>病程分為三期：<strong>發炎期</strong>（不動也痛）、<strong>冰凍期</strong>（角度嚴重受限，無法梳頭、扣內衣）、<strong>解凍期</strong>。若不及早介入復健與擴張術，病程可能長達 1-2 年。</p>
         `,
         symptoms: ['肩膀僵硬動彈不得', '無法扣內衣/梳頭/抓背', '夜間睡覺痛醒', '關節沾黏'],
         treatments: ['肩關節擴張術', '徒手治療 (鬆動術)', '震波治療', '居家伸展運動'],
@@ -188,24 +186,26 @@ export const diseaseCategories: DiseaseCategory[] = [
   },
 
   // =======================================================
-  // 3. 手肘
+  // 3. 手肘 (關鍵字：網球肘、高爾夫球肘、震波)
   // =======================================================
   {
     slug: 'elbow',
     title: '手肘',
     description: '手肘相關疾病',
     imageUrl: 'https://images.unsplash.com/photo-1563854583162-4414f553b6c2?auto=format&fit=crop&q=80&w=800',
+    seoKeywords: ['網球肘治療', '高爾夫球肘', '手肘痛', '新竹震波推薦'],
+    seoDescription: '手肘外側痛擰毛巾沒力？專治網球肘與高爾夫球肘。引進瑞士聚焦式震波治療，有效修復肌腱發炎，恢復手臂力量。',
     diseases: [
       {
         id: 'tennis-elbow',
         title: '網球肘',
         description: '手肘外側肌腱發炎，造成手肘外側疼痛，擰毛巾無力。',
         contentHtml: `
-          網球肘（肱骨外上髁炎）並非打網球者的專利，更是家庭主婦、廚師、電腦族的常見病。主因是手腕伸肌群過度使用，導致肌腱附著點發炎。<br><br>
-          患者常在<strong>擰毛巾、提重物、轉門把</strong>時感到手肘外側劇痛，甚至有無力感。震波治療對此症狀有極佳療效。
+          <p>網球肘（肱骨外上髁炎）並非打網球者的專利，更是家庭主婦、廚師、電腦族的常見病。主因是手腕伸肌群過度使用，導致肌腱附著點發炎。</p>
+          <p>患者常在<strong>擰毛巾、提重物、轉門把</strong>時感到手肘外側劇痛，甚至有無力感。震波治療對此症狀有極佳療效。</p>
         `,
         symptoms: ['手肘外側壓痛', '擰毛巾/提重物無力', '手腕伸直抗阻力疼痛', '握力下降'],
-        treatments: ['休息與護具使用', '聚焦式震波治療', 'PRP 注射', '肌腱伸展運動'],
+        treatments: ['<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式震波治療</a>', '護具使用', 'PRP 注射', '肌腱伸展運動'],
         seoKeywords: ['網球肘', '手肘疼痛', 'PRP', '震波治療'],
         seoDescription: '網球肘是手肘外側肌腱發炎，造成手肘外側疼痛。了解症狀與治療方式。',
         images: [
@@ -217,8 +217,8 @@ export const diseaseCategories: DiseaseCategory[] = [
         title: '高爾夫球肘',
         description: '手肘內側肌腱發炎，造成手肘內側疼痛。',
         contentHtml: `
-          高爾夫球肘（肱骨內上髁炎）發生在手肘內側，主要是手腕屈肌群過度使用造成。常見於高爾夫球友、搬運工或長時間抱小孩的家長。<br><br>
-          症狀為手肘內側骨頭凸起處有壓痛點，彎曲手腕或握拳用力時疼痛加劇。治療方式與網球肘類似。
+          <p>高爾夫球肘（肱骨內上髁炎）發生在手肘內側，主要是手腕屈肌群過度使用造成。常見於高爾夫球友、搬運工或長時間抱小孩的家長。</p>
+          <p>症狀為手肘內側骨頭凸起處有壓痛點，彎曲手腕或握拳用力時疼痛加劇。治療方式與網球肘類似。</p>
         `,
         symptoms: ['手肘內側疼痛', '握力下降', '手腕彎曲用力時疼痛'],
         treatments: ['休息', 'PRP 注射', '震波治療', '貼紮保護'],
@@ -232,21 +232,23 @@ export const diseaseCategories: DiseaseCategory[] = [
   },
 
   // =======================================================
-  // 4. 手部
+  // 4. 手部 (關鍵字：板機指、媽媽手、腕隧道)
   // =======================================================
   {
     slug: 'hand',
     title: '手部',
     description: '手部相關疾病',
     imageUrl: 'https://images.unsplash.com/photo-1599447292180-45fd84092ef0?auto=format&fit=crop&q=80&w=800',
+    seoKeywords: ['板機指微創手術', '媽媽手治療', '腕隧道症候群', '手麻', '新竹手外科'],
+    seoDescription: '手指卡住或手麻刺痛？專治板機指、媽媽手與腕隧道症候群。提供超音波導引注射與微創手術諮詢，快速緩解手部疼痛。',
     diseases: [
       {
         id: 'trigger-finger',
         title: '板機指',
         description: '手指屈肌腱發炎，造成手指彎曲後無法伸直，卡住像扣板機。',
         contentHtml: `
-          板機指是因為手指屈肌腱與滑車（腱鞘）之間發炎腫脹，導致肌腱滑動不順，甚至卡住。<br><br>
-          患者早晨起床時手指最僵硬，彎曲後會「卡」住伸不直，需要用另一隻手幫忙扳開，並伴隨明顯的彈響聲與疼痛。初期可注射類固醇或震波治療，嚴重時需微創手術鬆解滑車。
+          <p>板機指是因為手指屈肌腱與滑車（腱鞘）之間發炎腫脹，導致肌腱滑動不順，甚至卡住。</p>
+          <p>患者早晨起床時手指最僵硬，彎曲後會「卡」住伸不直，需要用另一隻手幫忙扳開，並伴隨明顯的彈響聲與疼痛。初期可注射類固醇或震波治療，嚴重時需微創手術鬆解滑車。</p>
         `,
         symptoms: ['手指彎曲後無法伸直', '掌指關節處有硬塊壓痛', '手指活動有彈響聲 (Click)', '早晨僵硬明顯'],
         treatments: ['熱敷、按摩伸展', '局部注射 (類固醇/葡萄糖)', '震波治療', '微創針挑手術'],
@@ -261,8 +263,8 @@ export const diseaseCategories: DiseaseCategory[] = [
         title: '腕隧道症候群',
         description: '正中神經在手腕處受壓迫，造成大拇指、食指與中指麻木刺痛。',
         contentHtml: `
-          腕隧道症候群是正中神經在經過手腕的「腕隧道」時受到壓迫。常見於電腦族、廚師或懷孕婦女。<br><br>
-          典型症狀是大拇指、食指、中指及無名指一半出現<strong>麻木、刺痛或灼熱感</strong>，尤其在夜間或騎機車時加劇。甩手後症狀會暫時緩解。若不治療，可能導致大魚際肌（手掌肌肉）萎縮無力。
+          <p>腕隧道症候群是正中神經在經過手腕的「腕隧道」時受到壓迫。常見於電腦族、廚師或懷孕婦女。</p>
+          <p>典型症狀是大拇指、食指、中指及無名指一半出現<strong>麻木、刺痛或灼熱感</strong>，尤其在夜間或騎機車時加劇。甩手後症狀會暫時緩解。若不治療，可能導致大魚際肌（手掌肌肉）萎縮無力。</p>
         `,
         symptoms: ['前三指麻木刺痛', '夜間麻醒', '甩手後改善', '大魚際肌萎縮無力'],
         treatments: ['夜間配戴副木固定', '神經解離注射 (Hydrodissection)', '維生素B12', '手術減壓'],
@@ -276,24 +278,26 @@ export const diseaseCategories: DiseaseCategory[] = [
   },
 
   // =======================================================
-  // 5. 膝蓋
+  // 5. 膝蓋 (關鍵字：退化性關節炎、膝蓋痛、半月板)
   // =======================================================
   {
     slug: 'knee',
     title: '膝蓋',
     description: '膝蓋相關疾病',
     imageUrl: 'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=800',
+    seoKeywords: ['退化性關節炎治療', '膝蓋痛打針', 'PRP膝蓋', '半月板破裂', '新竹骨科膝蓋'],
+    seoDescription: '膝蓋退化上下樓梯痛？新竹退化性膝關節炎治療首選。提供玻尿酸潤滑與PRP軟骨修復療程。免開刀改善半月板受損與十字韌帶損傷。',
     diseases: [
       {
         id: 'knee-osteoarthritis',
         title: '退化性膝關節炎',
         description: '關節軟骨磨損，導致上下樓梯無力、蹲下站不起來。',
         contentHtml: `
-          退化性膝關節炎是隨著年齡增長、軟骨磨損導致的疾病，但也可能因肥胖或過度使用而提早發生。<br><br>
-          患者初期會覺得膝蓋卡卡、上下樓梯無力痠痛。嚴重時關節會腫脹積水（發炎），甚至變形（O型腿），連平路都走不遠。<strong>減重</strong>與<strong>股四頭肌訓練</strong>是治療的基礎，搭配玻尿酸或PRP注射可延緩退化。
+          <p>退化性膝關節炎是隨著年齡增長、軟骨磨損導致的疾病，但也可能因肥胖或過度使用而提早發生。</p>
+          <p>患者初期會覺得膝蓋卡卡、上下樓梯無力痠痛。嚴重時關節會腫脹積水（發炎），甚至變形（O型腿），連平路都走不遠。<strong>減重</strong>與<strong>股四頭肌訓練</strong>是治療的基礎，搭配玻尿酸或PRP注射可延緩退化。</p>
         `,
         symptoms: ['上下樓梯痛', '膝蓋僵硬、活動有喀喀聲', '嚴重時關節積水腫脹', 'O型腿變形'],
-        treatments: ['減重是首要任務', '股四頭肌肌力訓練', '玻尿酸潤滑', 'PRP 修復治療'],
+        treatments: ['減重是首要任務', '股四頭肌肌力訓練', '玻尿酸潤滑', '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 修復治療</a>'],
         seoKeywords: ['退化性膝關節炎', '膝蓋疼痛', 'PRP', '玻尿酸'],
         seoDescription: '退化性膝關節炎造成上下樓梯無力、蹲下站不起來。了解症狀、治療方式與預防方法。',
         images: [
@@ -305,8 +309,8 @@ export const diseaseCategories: DiseaseCategory[] = [
         title: '半月板破裂',
         description: '膝蓋內的緩衝墊破裂，導致膝蓋腫脹、卡住 (Locking)。',
         contentHtml: `
-          半月板是位於膝關節內的兩塊軟骨墊片，負責避震與緩衝。年輕人常因運動旋轉膝蓋導致撕裂，老年人則多為退化性磨損。<br><br>
-          受傷後膝蓋常會腫脹，且因為破損的軟骨卡在關節中，會出現<strong>「膝蓋卡住」(Locking)</strong> 無法完全伸直的現象，並伴隨關節縫隙的疼痛。
+          <p>半月板是位於膝關節內的兩塊軟骨墊片，負責避震與緩衝。年輕人常因運動旋轉膝蓋導致撕裂，老年人則多為退化性磨損。</p>
+          <p>受傷後膝蓋常會腫脹，且因為破損的軟骨卡在關節中，會出現<strong>「膝蓋卡住」(Locking)</strong> 無法完全伸直的現象，並伴隨關節縫隙的疼痛。</p>
         `,
         symptoms: ['膝蓋關節縫隙壓痛', '膝蓋卡住 (Locking) 無法伸直', '活動時有彈響聲', '膝蓋腫脹'],
         treatments: ['急性期冰敷休息', 'PRP 注射修復', '物理治療', '嚴重卡住需關節鏡手術'],
@@ -321,8 +325,8 @@ export const diseaseCategories: DiseaseCategory[] = [
         title: '前十字韌帶斷裂',
         description: '常見於急停轉身的運動傷害，受傷當下常聽到「啪」一聲。',
         contentHtml: `
-          前十字韌帶 (ACL) 是維持膝蓋穩定最重要的韌帶。常見於籃球、足球等需要急停、轉身的運動。<br><br>
-          斷裂當下常會聽到<strong>「啪」</strong>的一聲，隨後膝蓋迅速腫脹積血。消腫後，患者會覺得膝蓋<strong>鬆鬆的、不穩</strong>，走路有軟腳的感覺 (Giving way)。若需重回高強度運動，通常建議手術重建。
+          <p>前十字韌帶 (ACL) 是維持膝蓋穩定最重要的韌帶。常見於籃球、足球等需要急停、轉身的運動。</p>
+          <p>斷裂當下常會聽到<strong>「啪」</strong>的一聲，隨後膝蓋迅速腫脹積血。消腫後，患者會覺得膝蓋<strong>鬆鬆的、不穩</strong>，走路有軟腳的感覺 (Giving way)。若需重回高強度運動，通常建議手術重建。</p>
         `,
         symptoms: ['受傷時聽到斷裂聲 (Pop)', '膝蓋迅速腫脹積血', '膝蓋鬆動不穩 (Giving way)', '無法劇烈運動'],
         treatments: ['消腫止痛 (RICE)', '肌力訓練 (強化腿後肌)', '護具保護', '韌帶重建手術'],
@@ -336,24 +340,26 @@ export const diseaseCategories: DiseaseCategory[] = [
   },
 
   // =======================================================
-  // 6. 足踝
+  // 6. 足踝 (關鍵字：足底筋膜炎、腳踝扭傷、阿基里斯腱)
   // =======================================================
   {
     slug: 'ankle',
     title: '足踝',
     description: '足踝相關疾病',
     imageUrl: 'https://images.unsplash.com/photo-1516585102717-5730d1e5927c?auto=format&fit=crop&q=80&w=800',
+    seoKeywords: ['足底筋膜炎治療', '腳踝扭傷復健', '阿基里斯腱發炎', '腳跟痛', '扁平足'],
+    seoDescription: '足底筋膜炎下床好痛？新竹震波治療推薦。專治腳踝扭傷後遺症與阿基里斯腱發炎。提供客製化足弓鞋墊與復健運動指導，徹底解決足部疼痛。',
     diseases: [
       {
         id: 'plantar-fasciitis',
         title: '足底筋膜炎',
         description: '典型症狀是「早上起床踩地第一步最痛」。',
         contentHtml: `
-          足底筋膜是一層網狀的結締組織，負責支撐足弓。當因久站、體重過重或鞋子不合適導致過度拉扯，就會發炎。<br><br>
-          最典型的症狀是<strong>「下床第一步腳跟劇痛」</strong>，走一走會稍微緩解，但久站久走後疼痛又會回來。震波治療對於慢性足底筋膜炎效果非常顯著，能刺激組織再生。
+          <p>足底筋膜是一層網狀的結締組織，負責支撐足弓。當因久站、體重過重或鞋子不合適導致過度拉扯，就會發炎。</p>
+          <p>最典型的症狀是<strong>「下床第一步腳跟劇痛」</strong>，走一走會稍微緩解，但久站久走後疼痛又會回來。震波治療對於慢性足底筋膜炎效果非常顯著，能刺激組織再生。</p>
         `,
         symptoms: ['下床第一步腳跟劇痛', '行走一段時間後緩解', '久站久走後疼痛加劇', '足跟壓痛'],
-        treatments: ['足底筋膜伸展', '小腿拉筋', '穿著足弓支撐鞋墊', '聚焦式震波治療'],
+        treatments: ['足底筋膜伸展', '小腿拉筋', '穿著足弓支撐鞋墊', '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式震波治療</a>'],
         seoKeywords: ['足底筋膜炎', '腳跟痛', '震波', '足弓鞋墊'],
         seoDescription: '足底筋膜炎典型症狀是早上起床踩地第一步最痛。了解症狀與治療方式。',
         images: [
@@ -365,8 +371,8 @@ export const diseaseCategories: DiseaseCategory[] = [
         title: '踝關節扭傷',
         description: '俗稱「翻船」，造成外踝腫脹瘀血。',
         contentHtml: `
-          踝關節扭傷是最常見的運動傷害，通常是腳底朝內翻轉（Inversion），導致外側的韌帶（前距腓韌帶）拉傷或撕裂。<br><br>
-          急性期需遵循 <strong>RICE 原則</strong>（休息、冰敷、壓迫、抬高）。待消腫後，務必進行<strong>本體感覺訓練</strong>（如單腳站立），否則韌帶鬆弛容易導致慣性扭傷。
+          <p>踝關節扭傷是最常見的運動傷害，通常是腳底朝內翻轉（Inversion），導致外側的韌帶（前距腓韌帶）拉傷或撕裂。</p>
+          <p>急性期需遵循 <strong>RICE 原則</strong>（休息、冰敷、壓迫、抬高）。待消腫後，務必進行<strong>本體感覺訓練</strong>（如單腳站立），否則韌帶鬆弛容易導致慣性扭傷。</p>
         `,
         symptoms: ['外側腳踝腫脹瘀血', '觸摸外側韌帶處有壓痛', '行走疼痛困難', '關節不穩'],
         treatments: ['急性期：RICE原則', '護踝保護', '慢性期：增生療法修復韌帶', '本體感覺訓練'],
@@ -381,8 +387,8 @@ export const diseaseCategories: DiseaseCategory[] = [
         title: '阿基里斯腱發炎',
         description: '連接小腿肌肉與腳跟的粗大肌腱發炎，墊腳尖時疼痛。',
         contentHtml: `
-          阿基里斯腱是人體最粗壯的肌腱，負責跳躍與跑步。常見於跑步愛好者或突然增加運動量的人。<br><br>
-          症狀為腳跟後上方腫脹、僵硬，按壓會痛，且<strong>墊腳尖</strong>或上樓梯時疼痛加劇。若不理會，長期發炎可能導致肌腱鈣化甚至斷裂。
+          <p>阿基里斯腱是人體最粗壯的肌腱，負責跳躍與跑步。常見於跑步愛好者或突然增加運動量的人。</p>
+          <p>症狀為腳跟後上方腫脹、僵硬，按壓會痛，且<strong>墊腳尖</strong>或上樓梯時疼痛加劇。若不理會，長期發炎可能導致肌腱鈣化甚至斷裂。</p>
         `,
         symptoms: ['腳跟上方腫脹僵硬', '按壓痛', '墊腳尖時疼痛加劇', '早晨起步時僵硬'],
         treatments: ['休息與減少跑跳', '小腿拉筋 (離心收縮)', '震波治療', 'PRP 注射'],
@@ -400,24 +406,20 @@ export const diseaseCategories: DiseaseCategory[] = [
 // Helper Functions (確保頁面能抓到資料)
 // ==========================================
 
-// 1. 根據 category slug 取得分類
 export function getCategoryBySlug(slug: string): DiseaseCategory | undefined {
   return diseaseCategories.find(c => c.slug === slug)
 }
 
-// 2. 根據 category slug 和 disease id 取得單一疾病
 export function getDiseaseBySlug(categorySlug: string, diseaseId: string): DiseaseItem | undefined {
   const category = getCategoryBySlug(categorySlug)
   if (!category) return undefined
   return category.diseases.find(d => d.id === diseaseId)
 }
 
-// 3. 取得所有疾病 (扁平化陣列)
 export function getAllDiseases(): DiseaseItem[] {
   return diseaseCategories.flatMap(category => category.diseases)
 }
 
-// 4. 生成所有靜態路徑參數 (給 generateStaticParams 用)
 export function generateAllDiseaseParams(): Array<{ category: string; slug: string }> {
   const params: Array<{ category: string; slug: string }> = []
   
@@ -425,7 +427,7 @@ export function generateAllDiseaseParams(): Array<{ category: string; slug: stri
     category.diseases.forEach((disease) => {
       params.push({
         category: category.slug,
-        slug: disease.id, // 使用 id 作為 slug
+        slug: disease.id,
       })
     })
   })
@@ -433,7 +435,6 @@ export function generateAllDiseaseParams(): Array<{ category: string; slug: stri
   return params
 }
 
-// 5. 生成所有分類路徑參數
 export function generateAllCategoryParams(): Array<{ category: string }> {
   return diseaseCategories.map((category) => ({
     category: category.slug,

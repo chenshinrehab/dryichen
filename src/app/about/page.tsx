@@ -1,12 +1,69 @@
+// src/app/about/page.tsx
 import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
+import JsonLd from '@/components/JsonLd'
 
+// ==========================================
+// 1. Meta 設定 (針對在地化搜尋意圖強化)
+// ==========================================
 export const metadata: Metadata = {
-  title: '關於我們 - 新竹宸新復健科',
-  description: '診所介紹、醫師團隊與最新衛教資訊。',
+  title: '關於我們 - 新竹復健科推薦 | 台大醫師林羿辰 | 竹科/關埔/光復路骨科診所',
+  description: '新竹東區/竹科復健科首選。宸新復健科由台大林羿辰醫師主持，位於關埔重劃區(近Costco、光復路)。提供骨科痛症、運動傷害、兒童早療等全方位治療。附設專屬停車位，就醫方便。',
+  keywords: [
+    // 核心關鍵字
+    '新竹復健科', '新竹骨科', '台大醫師', '林羿辰',
+    // 地點關鍵字 (Local SEO)
+    '新竹竹科', '新竹科學園區', '關埔重劃區', '光復路', '關新路', '新竹東區', 'Costco附近',
+    // 意圖關鍵字
+    '新竹復健推薦', '假日有開復健科', '好停車復健科'
+  ],
 }
 
+// ==========================================
+// 2. Schema 結構化資料 (強化服務區域)
+// ==========================================
+const aboutSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'MedicalClinic',
+  'name': '宸新復健科診所',
+  'image': 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800',
+  'medicalSpecialty': ['Physical Medicine and Rehabilitation', 'Orthopedics', 'Pediatrics'],
+  'address': {
+    '@type': 'PostalAddress',
+    'addressLocality': '新竹市東區',
+    'addressRegion': 'Hsinchu City',
+    'addressCountry': 'TW',
+    'streetAddress': '關新路與光復路交界' // 可替換為真實地址
+  },
+  'areaServed': [
+    { '@type': 'Place', 'name': 'Hsinchu Science Park' }, // 竹科
+    { '@type': 'AdministrativeArea', 'name': 'Hsinchu East District' }, // 東區
+    { '@type': 'AdministrativeArea', 'name': 'Guanpu' } // 關埔
+  ],
+  'founder': {
+    '@type': 'Person',
+    'name': '林羿辰 醫師',
+    'jobTitle': '院長',
+    'alumniOf': 'National Taiwan University'
+  },
+  'openingHoursSpecification': [
+    {
+      '@type': 'OpeningHoursSpecification',
+      'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      'opens': '09:00',
+      'closes': '21:00'
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      'dayOfWeek': 'Saturday',
+      'opens': '09:00',
+      'closes': '12:00'
+    }
+  ]
+}
+
+// 頁面選單資料
 const aboutSections = [
   {
     id: 'news',
@@ -39,40 +96,88 @@ const aboutSections = [
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-300">
-      <main className="max-w-5xl mx-auto px-4 py-12 md:py-16 fade-in">
-        <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-wider">關於我們</h1>
-            <div className="h-1 w-20 bg-cyan-500 mx-auto rounded-full"></div>
-            <p className="mt-4 text-lg text-slate-400">專業、熱忱、全方位的復健醫療團隊</p>
-        </div>
+    <>
+      <JsonLd data={aboutSchema} />
 
-        <div className="grid grid-cols-1 gap-8">
-          {aboutSections.map((item) => (
-            <Link 
-              key={item.id} 
-              href={item.href}
-              className="group relative bg-slate-800/50 border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64"
-            >
-              <div className="w-full md:w-2/5 relative h-48 md:h-full overflow-hidden">
-                <img src={item.image} alt={item.title} className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"/>
-                <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/80 to-transparent"></div>
-              </div>
-              <div className="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center relative">
-                 <i className={`${item.icon} absolute right-4 bottom-4 text-8xl text-slate-800/50 -rotate-12 group-hover:text-cyan-900/30 transition-colors duration-500 pointer-events-none`}></i>
-                 <div className="relative z-10">
-                    <h2 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors flex items-center">
-                      {item.title}
-                      <i className="fa-solid fa-arrow-right opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-2 transition-all ml-3 text-lg"></i>
-                    </h2>
-                    <h3 className="text-sm font-tech text-cyan-500/80 mb-4 tracking-widest uppercase">{item.subtitle}</h3>
-                    <p className="text-slate-300 text-lg leading-relaxed">{item.description}</p>
-                 </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </main>
-    </div>
+      <div className="min-h-screen bg-slate-900 text-slate-300">
+        <main className="max-w-5xl mx-auto px-4 py-12 md:py-16 fade-in">
+          
+          {/* 標題區 */}
+          <div className="text-center mb-10">
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-wider">關於我們</h1>
+              <div className="h-1 w-20 bg-cyan-500 mx-auto rounded-full"></div>
+          </div>
+
+          {/* SEO 導言區 (使用 details 收合大量長尾關鍵字) */}
+          <div className="max-w-3xl mx-auto mb-16 pl-2">
+             <details className="group">
+                {/* Summary: 針對「新竹推薦」與「台大醫師」進行強化 */}
+                <summary className="list-none text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-center">
+                    <span className="inline-block border-l-4 border-cyan-500 pl-4 text-left">
+                       我們是<strong className="text-cyan-400 font-normal">新竹推薦</strong>的首選復健專科診所。由<strong className="text-cyan-400 font-normal">台大醫師</strong>、前台大醫院主治醫師<strong className="text-cyan-400 font-normal">林羿辰醫師</strong>親自主持，提供骨科、復健科與運動醫學的全方位整合治療。
+                       
+                       {/* 展開提示 */}
+                       <span className="group-open:hidden">
+                           ... 
+                           <span className="ml-1 text-sm text-cyan-500 hover:text-cyan-400 hover:underline underline-offset-4 font-semibold">
+                             了解更多 <i className="fa-solid fa-chevron-down text-xs"></i>
+                           </span>
+                       </span>
+                    </span>
+                </summary>
+                
+                {/* 展開後的詳細內容 (針對「地點」、「交通」、「商圈」進行地毯式關鍵字佈局) */}
+                <div className="mt-4 text-lg text-slate-400 leading-relaxed pl-5 text-left animate-in fade-in slide-in-from-top-1 duration-300 bg-slate-800/30 p-4 rounded-xl border border-slate-700/50">
+                    <p className="mb-4">
+                        宸新復健科座落於繁華的<strong className="text-cyan-400 font-normal">新竹東區</strong>核心地帶，緊鄰<strong className="text-cyan-400 font-normal">新竹科學園區 (竹科)</strong> 與熱鬧的<strong className="text-cyan-400 font-normal">關埔重劃區</strong>。
+                    </p>
+                    <p className="mb-4">
+                        診所位置交通極其便利，位於<strong className="text-cyan-400 font-normal">光復路</strong>與<strong className="text-cyan-400 font-normal">關新路</strong>交界處附近。無論您是住在關新社區的居民，或是下班後從竹科過來的工程師，甚至是剛逛完 <strong className="text-cyan-400 font-normal">Costco (好市多)</strong> 的民眾，都能輕鬆抵達。
+                    </p>
+                    <p>
+                        為了解決新竹市區停車困難的問題，我們特別規劃了<strong className="text-cyan-400 font-normal">專屬停車位</strong>，讓您就醫復健不再為了找車位而煩惱。
+                    </p>
+                </div>
+             </details>
+          </div>
+
+          {/* 卡片連結區塊 */}
+          <div className="grid grid-cols-1 gap-8">
+            {aboutSections.map((item) => (
+              <Link 
+                key={item.id} 
+                href={item.href}
+                className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
+              >
+                {/* 圖片區塊 */}
+                <div className="w-full md:w-2/5 relative h-48 md:h-full overflow-hidden">
+                  <img 
+                    src={item.image} 
+                    alt={`${item.title} - 宸新復健科 - 新竹推薦`} // Alt 優化
+                    className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/90 to-transparent"></div>
+                </div>
+                
+                {/* 文字內容區塊 */}
+                <div className="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center relative">
+                   <i className={`${item.icon} absolute right-4 bottom-4 text-8xl text-slate-800/50 -rotate-12 group-hover:text-cyan-900/30 transition-colors duration-500 pointer-events-none`}></i>
+                   
+                   <div className="relative z-10">
+                      <h2 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors flex items-center">
+                        {item.title}
+                        <i className="fa-solid fa-arrow-right opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-2 transition-all ml-3 text-lg text-cyan-500"></i>
+                      </h2>
+                      <h3 className="text-sm font-tech text-cyan-500/80 mb-4 tracking-widest uppercase font-semibold">{item.subtitle}</h3>
+                      <p className="text-slate-300 text-lg leading-relaxed">{item.description}</p>
+                   </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+        </main>
+      </div>
+    </>
   )
 }
