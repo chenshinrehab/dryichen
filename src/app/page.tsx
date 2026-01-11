@@ -154,7 +154,7 @@ export default function Home() {
           </section>
 
           {/* =========================================
-              Section 2: 診所資訊  (Clinic Info)
+              Section 2: 診所 資訊  (Clinic Info)
              ========================================= */}
           <section className="container mx-auto px-4 pb-16">
              <div className="max-w-6xl mx-auto w-full">
