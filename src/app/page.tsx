@@ -61,6 +61,33 @@ export default function Home() {
 
         <main className="flex-grow relative">
           
+          {/* ============================================================
+            ✨ 新增：最新內容速報欄位 (放在醫師介紹上方)
+           ============================================================ */}
+        <section className="container mx-auto px-4 mb-8 relative z-20">
+          <div className="max-w-4xl mx-auto bg-slate-800/80 backdrop-blur border-l-4 border-pink-500 rounded-r-lg shadow-lg p-4 flex flex-col md:flex-row items-start md:items-center gap-4">
+             
+             {/* 標題標籤 */}
+             <div className="bg-pink-500/10 text-pink-400 px-3 py-1 rounded-full text-sm font-bold flex items-center shrink-0">
+                <i className="fa-solid fa-bell mr-2 animate-swing"></i>
+                最新消息
+             </div>
+
+             {/* 內容輪播 (這裡先放一則範例，之後可以改成輪播) */}
+             <div className="flex-grow">
+                <Link href="/about/news" className="text-slate-200 hover:text-cyan-400 transition-colors line-clamp-1">
+                   📢 門診異動公告：本週六早診正常看診，歡迎預約 PRP 增生治療評估。
+                </Link>
+             </div>
+
+             {/* 更多按鈕 */}
+             <Link href="/about/news" className="text-sm text-slate-400 hover:text-white shrink-0 hidden md:block">
+                查看更多 <i className="fa-solid fa-chevron-right text-xs ml-1"></i>
+             </Link>
+          </div>
+        </section>
+
+
           {/* =========================================
               Section 1: 醫師介紹 (Hero Section) 
              ========================================= */}
