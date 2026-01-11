@@ -24,15 +24,18 @@ export default function Navigation() {
     <header className="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-700 shadow-lg shadow-cyan-900/20">
       <div className="container mx-auto px-3">
         
-        {/* Logo 區塊 (保持不變) */}
-        <div className="relative flex items-center justify-between py-2 md:py-3 border-b border-slate-800/50 min-h-[52px] md:min-h-[60px]">
-          <Link href="/" className="flex items-center gap-2.5 group cursor-pointer md:absolute md:left-1/2 md:-translate-x-1/2 z-10">
-             <img src="https://duk.tw/iHBaCj.png" alt="新竹宸新復健科診所 Logo" className="w-10 h-10 md:w-14 md:h-14 rounded-full object-cover border-2 border-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.5)] group-hover:shadow-[0_0_15px_rgba(34,211,238,0.8)] transition-all duration-300"/>
-             <div className="text-left">
-               <h1 className="text-base md:text-2xl font-bold font-sans text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 leading-tight">運動教練醫師-林羿辰</h1>
-               <p className="text-[10px] md:text-xs text-slate-400 tracking-wider leading-none mt-0.5">宸新復健科診所院長</p>
-             </div>
-          </Link>
+{/* Logo 區塊 */}
+<div className="relative flex items-center justify-between py-2 md:py-3 border-b border-slate-800/50 min-h-[52px] md:min-h-[60px]">
+  <Link href="/" className="flex items-center gap-2.5 group cursor-pointer md:absolute md:left-1/2 md:-translate-x-1/2 z-10">
+      <img src="https://duk.tw/iHBaCj.png" alt="新竹宸新復健科診所 Logo" className="w-10 h-10 md:w-14 md:h-14 rounded-full object-cover border-2 border-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.5)] group-hover:shadow-[0_0_15px_rgba(34,211,238,0.8)] transition-all duration-300"/>
+      <div className="text-left">
+        {/* H1 改為 div，SEO 問題解決 */}
+        <div className="text-base md:text-2xl font-bold font-sans text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 leading-tight">
+          運動教練醫師-林羿辰
+        </div>
+        <p className="text-[10px] md:text-xs text-slate-400 tracking-wider leading-none mt-0.5">宸新復健科診所院長</p>
+      </div>
+  </Link>
 
           {/* 社群區塊 (保持不變) */}
           <div className="flex items-center gap-2 ml-auto z-20">
