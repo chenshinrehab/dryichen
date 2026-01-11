@@ -53,7 +53,7 @@ export const treatments: Treatment[] = [
       { src: '/images/treatments/prp/f.jpg', alt: '增生注射與類固醇' }
     ],
     applicableConditions: ['旋轉肌撕裂', '網球肘', '軟骨損傷', '退化性關節炎'],
-    features: ['啟動修復', '免開刀', '精準導引']
+    features: ['啟動修復', '免開刀', '精準導引'],
 
     qaList: [
       {
@@ -106,7 +106,7 @@ export const treatments: Treatment[] = [
       { src: '/images/treatments/prp/c.jpg', alt: 'ESWT體外震波聚焦式及發散式比較' },
     ], 
     applicableConditions: ['足底筋膜炎', '鈣化性肌腱炎', '網球肘', '長期肌肉緊繃'],
-    features: ['非侵入性', '免打針', '恢復期短']
+    features: ['非侵入性', '免打針', '恢復期短'],
 
     qaList: [
       {
@@ -149,7 +149,7 @@ export const treatments: Treatment[] = [
     // ⚠️ 圖片欄位：我先留空，您之後有圖片網址再填入即可
     images: [], 
     applicableConditions: ['肩頸痠痛', '脊椎側彎', '骨盆歪斜', '術後沾黏'],
-    features: ['一對一治療', '筋膜放鬆', '骨骼調整']
+    features: ['一對一治療', '筋膜放鬆', '骨骼調整'],
     qaList: [
       {
         question: '徒手治療跟一般的按摩有什麼不一樣？',
