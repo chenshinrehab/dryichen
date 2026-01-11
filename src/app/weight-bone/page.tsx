@@ -66,7 +66,7 @@ export default function WeightLossPage() {
 
             {/* SEO 導言區 (修改為：摘要 + 展開詳情) */}
             <div className="mb-10 pl-2 max-w-4xl">
-                {/* 1. 精簡摘要 (永遠顯示) */}
+                {/* 1. 精簡摘要 (永遠顯示a) */}
                 <p className="text-lg text-slate-400 border-l-4 border-cyan-500 pl-4 leading-relaxed mb-4">
                     位於<strong className="text-cyan-400 font-normal">新竹科學園區</strong>附近，由林羿辰醫師主持。提供先進的雙重腸泌素減重療程與兒童骨齡精準評估，為您與孩子把握健康黃金期。
                 </p>
