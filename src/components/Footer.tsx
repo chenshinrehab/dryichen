@@ -3,6 +3,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import FooterSearch from '@/components/FooterSearch'
 
 export default function Footer() {
   // 模擬瀏覽人次的狀態
