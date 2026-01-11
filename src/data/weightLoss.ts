@@ -92,7 +92,7 @@ qaList: [
   `,
     whyChooseUs: ['詳細問診及衛教施打', '甲狀腺超音波檢查及抽血檢查', '療程含高階inbody及運動課程'], // 範例資料
     programBenefits: ['一週一次好簡單，更高CP值', '適用於12-18歲青少年減重', '有效控制三高及脂肪肝，心臟保護'],      // 範例資料
-    images: [      { src: '/images/weight-loss/ozem/a.jpg', alt: '週纖達與猛健樂比較' }], // 圖片待補
+    images: [      { src: '/images/weight-loss/ozempic/a.png', alt: '週纖達與猛健樂比較' }], // 圖片待補
 
     qaList: [
       {

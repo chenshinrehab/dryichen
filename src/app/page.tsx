@@ -243,7 +243,7 @@ export default function Home() {
           </section>
 
            {/* 注意：Section 3 快速導覽 已經移除，
-              因為它現在位於 Footer 裡面，會自動顯示在每一頁的最下方。
+             因為它現在位於 Footer 裡面，會自動顯示在每一頁的最下方。
            */}
 
         </main>
