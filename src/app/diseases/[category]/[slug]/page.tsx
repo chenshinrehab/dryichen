@@ -126,7 +126,12 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                           </h4>
                           <ul className="space-y-3 text-slate-300 list-disc list-inside">
                               {disease.treatments.map((item, idx) => (
-                                <li key={idx}>{item}</li>
+                                /* ✨ 修改這裡：改用 dangerouslySetInnerHTML */
+                                <li 
+                                  key={idx} 
+                                  dangerouslySetInnerHTML={{ __html: item }}
+                                  className="leading-relaxed" // 增加行高讓連結更好點
+                                ></li>
                               ))}
                           </ul>
                       </div>

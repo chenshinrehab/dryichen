@@ -160,7 +160,8 @@ export const diseaseCategories: DiseaseCategory[] = [
           患者常在<strong>手臂上舉 60-120 度</strong>時感到劇痛（疼痛弧），且夜間側睡壓到患側會痛醒。部分撕裂可透過 PRP 修復，完全斷裂則建議手術。
         `,
         symptoms: ['舉手疼痛無力', '夜間疼痛 (痛醒)', '特定角度疼痛 (Painful Arc)', '肩膀卡卡聲'],
-        treatments: ['PRP 增生療法', '聚焦式震波', '肌力訓練', '手術修補'],
+        treatments: ['<a href="/treatments/prp" class="text-cyan-400 font-bold hover:text-cyan-200 border-b border-cyan-500 hover:border-cyan-200 transition-colors group-hover/link:text-white">PRP 增生療法 <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i></a>', 
+                     '聚焦式震波', '肌力訓練', '手術修補'],
         seoKeywords: ['旋轉肌撕裂', '肩膀疼痛', 'PRP', '震波'],
         seoDescription: '旋轉肌撕裂造成肩膀疼痛與活動受限。了解症狀、治療方式與復健方法。',
         images: [
