@@ -9,6 +9,7 @@ export default function Footer() {
   const [visitCount, setVisitCount] = useState<string>('---,---')
 
   useEffect(() => {
+    // 這裡維持您原本的邏輯
     const baseCount = 85000
     const randomIncrement = Math.floor(Math.random() * 999)
     const total = baseCount + randomIncrement
@@ -21,11 +22,12 @@ export default function Footer() {
 
         {/* =========================================
             Part 1: 快速導覽 (圖片區)
+            ✨ SEO 修改：將 h2 改為 h4，避免干擾頁面主要標題結構
            ========================================= */}
         <div className="mb-8">
-            <h2 className="text-2xl font-bold font-sans text-white text-center mb-6 tracking-wide">
+            <h4 className="text-2xl font-bold font-sans text-white text-center mb-6 tracking-wide">
                 <span className="text-cyan-400">快速</span>導覽
-            </h2>
+            </h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 px-2 max-w-6xl mx-auto">
                 
                 {/* 1. 關於我們 */}
@@ -67,8 +69,7 @@ export default function Footer() {
         </div>
 
         {/* =========================================
-            Part 2: 站內搜尋 (獨立一排，置中)
-            ✨ 修改重點：將 mb-12 pb-12 改為 mb-6 pb-6，大幅縮小間距
+            Part 2: 站內搜尋
            ========================================= */}
         <div className="max-w-3xl mx-auto mb-6 border-b border-slate-800 pb-6">
             <FooterSearch />
@@ -112,13 +113,15 @@ export default function Footer() {
              </div>
           </div>
 
-          {/* 3. 右側：診所資訊 */}
+          {/* 3. 右側：診所資訊 
+              ✨ SEO 修改：加入真實的 Google Maps 連結
+          */}
           <div className="text-center lg:text-right text-slate-300 space-y-1.5 w-full lg:w-auto text-sm">
             <p className="flex items-center justify-center lg:justify-end gap-2 group cursor-pointer">
               <i className="fa-solid fa-phone text-cyan-400 group-hover:animate-pulse"></i> 
               <span className="font-mono tracking-wide">(03) 564-7999</span>
             </p>
-            <a href="https://goo.gl/maps/placeholder" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center lg:justify-end gap-2 hover:text-cyan-400 transition-colors">
+            <a href="https://www.google.com/maps/search/?api=1&query=宸新復健科診所+新竹市東區光復路一段371號B1" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center lg:justify-end gap-2 hover:text-cyan-400 transition-colors">
               <i className="fa-solid fa-location-dot text-cyan-400"></i>
               <span>300新竹市東區光復路一段371號B1</span>
             </a>

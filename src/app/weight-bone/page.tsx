@@ -2,73 +2,94 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
-// 引入我們之前建立好的資料檔
 import { weightLossPrograms } from '@/data/weightLoss'
 
+// ==========================================
+// 1. Meta 設定 (符合要求 3)
+// ==========================================
 export const metadata: Metadata = {
-  title: '減重與骨齡 - 專業減重門診與兒童骨齡評估 | 宸新復健科診所',
-  description: '專業減重門診服務，包括週纖達、猛健樂等減重項目，以及兒童骨齡評估服務，協助您達成健康減重目標。',
-  keywords: ['減重', '骨齡評估', '週纖達', '猛健樂', '新竹減重'],
+  title: '新竹減重與骨齡門診 - 猛健樂/瘦瘦針/生長遲緩/性早熟評估 | 宸新復健科',
+  description: '新竹宸新復健科提供專業體重管理與兒童生長發育評估。林羿辰醫師親自規劃猛健樂(Mounjaro)、週纖達(Ozempic)等瘦瘦針療程，並提供兒童骨齡X光檢查，針對性早熟與生長遲緩問題提供專業建議。',
+  keywords: ['新竹減重', '新竹猛健樂', '瘦瘦針', '新竹照骨齡', '生長遲緩', '性早熟', '週纖達', '兒童長高'],
 }
 
-// 1. 定義 SEO 用的麵包屑資料 (畫面不顯示，Google 看得到)
-const breadcrumbSchema = {
+// ==========================================
+// 2. Schema 結構化資料 (符合要求 1 & 4)
+//    包含：麵包屑 + 醫療網頁特殊標記
+// ==========================================
+const weightBoneSchema = {
   '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: '首頁', item: 'https://dryichen-4ze1.vercel.app/' },
-    { '@type': 'ListItem', position: 2, name: '減重與骨齡', item: 'https://dryichen-4ze1.vercel.app/weight-bone' },
-  ],
+  '@graph': [
+    // 麵包屑 (隱藏式)
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: '首頁', item: 'https://dryichen-4ze1.vercel.app/' },
+        { '@type': 'ListItem', position: 2, name: '減重與骨齡', item: 'https://dryichen-4ze1.vercel.app/weight-bone' },
+      ],
+    },
+    // 醫療網頁標記 (告訴 Google 這裡是醫療服務)
+    {
+      '@type': 'MedicalWebPage',
+      'name': '減重與骨齡門診',
+      'description': '提供新竹地區專業減重、瘦瘦針治療與兒童骨齡評估服務。',
+      'lastReviewed': '2026-01-11',
+      'reviewedBy': {
+        '@type': 'Physician',
+        'name': '林羿辰 醫師',
+        'url': 'https://dryichen-4ze1.vercel.app/about'
+      },
+      'specialty': [
+        { '@type': 'MedicalSpecialty', 'name': 'Weight Loss Management' },
+        { '@type': 'MedicalSpecialty', 'name': 'Pediatric Growth Assessment' }
+      ]
+    }
+  ]
 }
 
 export default function WeightLossPage() {
   return (
     <>
-      <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={weightBoneSchema} />
 
-      {/* 深色背景設定 */}
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
         <main className="flex-grow py-12 md:py-16 fade-in">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             {/* 標題區 */}
-            <div className="flex items-center gap-3 mb-8 pl-2">
+            <div className="flex items-center gap-3 mb-6 pl-2">
                 <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
                     <i className="fa-solid fa-weight-scale text-xl"></i>
                 </span>
                 <h1 className="text-3xl font-bold font-sans text-white">
-                    減重與骨齡 <span className="text-slate-500 text-lg font-normal ml-2">Weight & Bone</span>
+                    減重與骨齡門診 <span className="text-slate-500 text-lg font-normal ml-2">Weight & Bone</span>
                 </h1>
             </div>
 
-            {/* 描述文字 */}
-            <div className="mb-10 pl-2">
-                <p className="text-xl text-slate-400 border-l-4 border-cyan-500 pl-4">
-                    專業減重門診服務，協助您達成健康減重目標，並提供兒童骨齡評估服務
+            {/* SEO 導言區 (關鍵字自然置入，取代隱藏文字) */}
+            <div className="mb-10 pl-2 max-w-4xl">
+                <p className="text-lg text-slate-400 border-l-4 border-cyan-500 pl-4 leading-relaxed">
+                    宸新復健科位於<strong className="text-cyan-400 font-normal">新竹科學園區</strong>附近，由林羿辰醫師親自主持。我們提供科學化的<strong className="text-cyan-400 font-normal">新竹減重</strong>療程，引進雙重腸泌素<strong className="text-cyan-400 font-normal">猛健樂 (Mounjaro)</strong> 與常見的<strong className="text-cyan-400 font-normal">瘦瘦針</strong> (週纖達)，協助您有效控制體重。
+                    <br className="my-2"/>
+                    針對兒童發育，我們提供專業的<strong className="text-cyan-400 font-normal">新竹照骨齡</strong> X光檢查，精準評估<strong className="text-cyan-400 font-normal">生長遲緩</strong>與<strong className="text-cyan-400 font-normal">性早熟</strong>風險，把握孩子黃金成長期。
                 </p>
             </div>
             
             {/* 卡片列表 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
               {weightLossPrograms.map((program) => (
                 <Link
                   key={program.slug}
                   href={`/weight-bone/${program.slug}`}
-                  // 2. 套用新風格：深色半透明 + 霓虹邊框 + 懸浮效果
                   className="bg-slate-800/50 backdrop-blur border border-slate-700 p-6 rounded-xl hover:border-cyan-500/50 transition-all hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] group hover:-translate-y-1 cursor-pointer flex flex-col"
                 >
-                  {/* 標題 */}
                   <h2 className="text-xl font-bold text-cyan-400 mb-3 group-hover:text-cyan-300 transition-colors">
                     {program.title}
                   </h2>
-                  
-                  {/* 描述 */}
                   <p className="text-slate-400 text-sm mb-4 leading-relaxed flex-grow">
                     {program.description}
                   </p>
-                  
-                  {/* 特色區塊 (綠色左邊框風格) */}
                   {program.features && program.features.length > 0 && (
                     <div className="bg-slate-900/50 p-3 rounded border-l-2 border-green-500 mt-auto">
                       <h3 className="font-semibold text-slate-200 mb-1 text-sm">特色：</h3>
@@ -81,20 +102,56 @@ export default function WeightLossPage() {
                       </ul>
                     </div>
                   )}
-
-                  {/* 底部了解更多 (選擇性顯示，或保留卡片整體點擊感) */}
                   <div className="mt-4 text-right">
-                     <span className="text-xs text-cyan-500 group-hover:underline decoration-cyan-500/50 underline-offset-4">
+                      <span className="text-xs text-cyan-500 group-hover:underline decoration-cyan-500/50 underline-offset-4">
                         了解更多 →
-                     </span>
+                      </span>
                   </div>
                 </Link>
               ))}
             </div>
+
+            {/* ==========================================
+                3. 醫師的話 / 治療理念 (符合要求 2 & E-E-A-T)
+                使用不同底色區隔，增加信任感
+               ========================================== */}
+            <div className="bg-slate-800/80 rounded-2xl p-8 border border-slate-700 relative overflow-hidden">
+                {/* 裝飾背景 */}
+                <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>
+                
+                <div className="relative z-10 flex flex-col md:flex-row gap-8 items-start">
+                    {/* 醫師頭像/圖標 (如果沒有頭像可用圖標代替) */}
+                    <div className="flex-shrink-0">
+                        <div className="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center border-2 border-cyan-500/50">
+                             <i className="fa-solid fa-user-doctor text-3xl text-cyan-400"></i>
+                        </div>
+                    </div>
+                    
+                    <div className="flex-grow">
+                        <h3 className="text-2xl font-bold text-white mb-4">
+                            醫師治療理念與叮嚀
+                        </h3>
+                        <div className="space-y-4 text-slate-300 leading-relaxed">
+                            <p>
+                                體重控制不僅僅是為了外觀，更是為了長遠的健康。市面上的減重藥物（如<span className="text-cyan-400">瘦瘦針、猛健樂</span>）雖然效果顯著，但它們屬於<strong>醫療處方藥品</strong>，必須在專業醫師的評估下使用，以避免副作用並確保療效。
+                            </p>
+                            <p>
+                                同樣地，兒童的生長發育只有一次。透過<span className="text-cyan-400">骨齡檢測</span>，我們能客觀判斷孩子的生長潛力。無論是性早熟的治療或生長遲緩的介入，都需要精準的醫療判斷，而非盲目補充營養品。
+                            </p>
+                        </div>
+                        
+                        <div className="mt-6 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-lg flex gap-3">
+                            <i className="fa-solid fa-triangle-exclamation text-yellow-500 mt-1"></i>
+                            <p className="text-sm text-yellow-200/80">
+                                <strong>特別提醒：</strong>所有醫療行為皆有個別差異，治療效果因人而異。請務必親自蒞臨診所，由醫師進行完整評估與診斷。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
           </div>
         </main>
-        
-        {/* Footer 已移除，layout.tsx 會自動處理 */}
       </div>
     </>
   )
