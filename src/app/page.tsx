@@ -1,7 +1,6 @@
 // src/app/page.tsx
 import { Metadata } from 'next'
 import Link from 'next/link'
-// 移除 Navigation 的引入，避免與 layout.tsx 重複
 import JsonLd from '@/components/JsonLd'
 
 export const metadata: Metadata = {
@@ -57,25 +56,26 @@ export default function Home() {
       {/* 全頁背景設定：深色主題 */}
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300 font-sans antialiased selection:bg-cyan-500/30">
         
-        {/* Navigation 已經在 layout.tsx 引入，這裡不需要 */}
-
         <main className="flex-grow relative">
           
           {/* ============================================================
-            ✨ 新增：最新內容速報欄位 (放在醫師介紹上方)
+            ✨ 新增：最新內容速報欄位
+            修改 1: md:mb-0 (電腦版下方間距歸零，讓下面更靠近)
            ============================================================ */}
-        <section className="container mx-auto px-4 mb-4 relative z-20">
-          <div className="max-w-4xl mx-auto bg-slate-800/80 backdrop-blur border-l-4 border-pink-500 rounded-r-lg shadow-lg p-4 flex flex-col md:flex-row items-start md:items-center gap-4">
+        <section className="container mx-auto px-4 mb-4 md:mb-0 relative z-20">
+          <div className="max-w-4xl mx-auto bg-slate-800/80 backdrop-blur border-l-4 border-pink-500 rounded-r-lg shadow-lg p-3 md:p-4 flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4">
              
-             {/* 標題標籤 */}
-             <div className="bg-pink-500/10 text-pink-400 px-3 py-1 rounded-full text-sm font-bold flex items-center shrink-0">
+             {/* 標題標籤 
+                 修改 2: hidden md:flex (手機版隱藏，電腦版顯示) 
+             */}
+             <div className="bg-pink-500/10 text-pink-400 px-3 py-1 rounded-full text-sm font-bold hidden md:flex items-center shrink-0">
                 <i className="fa-solid fa-bell mr-2 animate-swing"></i>
                 最新消息
              </div>
 
-             {/* 內容輪播 (這裡先放一則範例，之後可以改成輪播) */}
+             {/* 內容輪播 */}
              <div className="flex-grow">
-                <Link href="/about/news" className="text-slate-200 hover:text-cyan-400 transition-colors line-clamp-1">
+                <Link href="/about/news" className="text-slate-200 hover:text-cyan-400 transition-colors line-clamp-1 text-sm md:text-base">
                    📢 門診異動公告：本週六早診正常看診，歡迎預約 PRP 增生治療評估。
                 </Link>
              </div>
@@ -90,8 +90,9 @@ export default function Home() {
 
           {/* =========================================
               Section 1: 醫師介紹 (Hero Section) 
+              修改 3: md:pt-2 (電腦版上方間距極小化，拉近與最新消息的距離)
              ========================================= */}
-          <section className="container mx-auto px-4 pt-8 pb-12 md:py-16 fade-in">
+          <section className="container mx-auto px-4 pt-8 pb-12 md:pt-2 md:pb-16 fade-in">
              <div className="max-w-5xl mx-auto">
                 <div className="bg-slate-800/60 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden shadow-2xl relative">
                    {/* 裝飾用的背景光暈 */}
@@ -242,13 +243,7 @@ export default function Home() {
              </div>
           </section>
 
-           {/* 注意：Section 3 快速導覽 已經移除，
-             因為它現在位於 Footer 裡面，會自動顯示在每一頁的最下方。
-           */}
-
         </main>
-        
-        
       </div>
     </>
   )
