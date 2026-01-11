@@ -4,26 +4,56 @@ import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 
 // ==========================================
-// 1. Meta 設定 (首頁是用戶與搜尋引擎的第一印象)
+// 1. Meta 設定 (嚴格 SEO 優化版)
 // ==========================================
+
+// 設定網站的基礎 URL，解決 OG Image 抓不到的問題
+// 注意：等您買了網域後，請將此處改為 https://www.您的新網域.com.tw
+const siteUrl = 'https://dryichen-4ze1.vercel.app'; 
+
 export const metadata: Metadata = {
-  title: '新竹宸新復健科診所 - 竹科/關埔骨科復健推薦 | 台大林羿辰醫師院長',
-  description: '新竹復健科首選。由台大醫院林羿辰醫師主持，提供高解析超音波導引PRP注射、聚焦式震波、徒手治療、兒童早療與減重門診。位於新竹科學園區(竹科)光復路，附設X光與專屬停車位，解決您的痠痛問題。',
+  metadataBase: new URL(siteUrl), // 關鍵修正：設定基礎網域
+  title: {
+    default: '新竹宸新復健科診所 - 竹科/關埔骨科復健推薦 | 台大林羿辰醫師院長',
+    template: '%s | 宸新復健科'
+  },
+  description: '新竹復健科首選。由台大醫院林羿辰醫師主持，提供高解析超音波導引PRP注射、聚焦式震波、徒手治療、兒童早療與減重門診。位於新竹科學園區(竹科)光復路，附設X光與專屬停車位。',
   keywords: [
-    // 核心服務
-    '新竹復健科', '新竹骨科', 'PRP注射', '震波治療', '徒手治療', '兒童早療', '減重門診',
-    // 醫師品牌
+    '新竹復健科', '新竹骨科', 'PRP注射', '震波治療', '徒手治療', '兒童早療', '減重門診', '兒童骨齡',
     '林羿辰醫師', '台大醫師',
-    // 地點關鍵字 (Local SEO)
     '竹科復健', '新竹科學園區', '關埔重劃區', '光復路診所', 'Costco附近', '新竹東區'
   ],
+  // 關鍵修正：Canonical Tag (標準網址)，防止重複內容扣分
+  alternates: {
+    canonical: '/',
+  },
+  // 關鍵修正：明確告訴爬蟲要索引
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
     title: '新竹宸新復健科診所 - 專業骨科復健醫療團隊',
     description: '台大醫師親自診療，提供PRP增生療法、震波治療與兒童骨齡評估。',
     type: 'website',
-    images: ['/images/clinic.png'], // 建議確保此路徑有圖片
-    locale: 'zh_TW',
+    url: '/',
     siteName: '宸新復健科',
+    images: [
+      {
+        url: '/images/clinic.png', // 確保 public 資料夾有這張圖
+        width: 1200,
+        height: 630,
+        alt: '新竹宸新復健科診所',
+      },
+    ],
+    locale: 'zh_TW',
   },
 }
 
@@ -37,8 +67,8 @@ const medicalClinicSchema = {
   alternateName: '新竹宸新復健科',
   description: '新竹市專業復健科診所，提供PRP注射、震波治療、一對一運動治療等服務。',
   image: 'https://duk.tw/PLVLuz.png',
-  logo: 'https://dryichen-4ze1.vercel.app/images/logo.png', // 建議補上 logo
-  url: 'https://dryichen-4ze1.vercel.app/',
+  logo: 'https://dryichen-4ze1.vercel.app/images/logo.png',
+  url: siteUrl,
   telephone: '+886-3-564-7999',
   priceRange: '$$',
   address: {
@@ -51,7 +81,7 @@ const medicalClinicSchema = {
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: '24.783935', // 建議填入精確座標
+    latitude: '24.783935', 
     longitude: '121.015243'
   },
   openingHoursSpecification: [
@@ -89,7 +119,6 @@ export default function Home() {
           
           {/* ============================================================
              ✨ 最新內容速報欄位 (News Ticker)
-             SEO 目的：增加內部連結，讓最新文章更快被索引
             ============================================================ */}
           <section className="container mx-auto px-4 mb-4 md:mb-0 relative z-20 mt-4 md:mt-6">
              <div className="max-w-5xl mx-auto bg-slate-800/80 backdrop-blur border-l-4 border-pink-500 rounded-r-lg shadow-lg p-3 md:p-4 flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4 hover:bg-slate-800 transition-colors">
@@ -100,7 +129,7 @@ export default function Home() {
                   最新消息
                </div>
 
-               {/* 內容連結 (指向最新消息列表) */}
+               {/* 內容連結 */}
                <div className="flex-grow">
                   <Link href="/about/news" className="text-slate-200 hover:text-cyan-400 transition-colors line-clamp-1 text-sm md:text-base font-medium">
                      📢 <span className="text-yellow-400 font-bold mr-1">HOT!</span> 門診異動公告：本週六早診正常看診，歡迎預約 PRP 增生治療評估。
@@ -116,8 +145,8 @@ export default function Home() {
 
 
           {/* =========================================
-              Section 1: 醫師介紹 (Hero Section) 
-              SEO 目的：建立 E-E-A-T (醫師權威性)
+             Section 1: 醫師介紹 (Hero Section) 
+             SEO 目的：建立 E-E-A-T (醫師權威性)
              ========================================= */}
           <section className="container mx-auto px-4 pt-8 pb-12 md:pt-6 md:pb-16 fade-in">
              <div className="max-w-5xl mx-auto">
@@ -129,9 +158,12 @@ export default function Home() {
                       {/* 左側：醫師照片 (Alt 屬性強化 SEO) */}
                       <div className="md:w-2/5 relative">
                          <div className="h-full w-full min-h-[400px] md:min-h-[500px] relative overflow-hidden">
+                            {/* 修正：加入 width/height 防止 CLS (累積版面位移)，雖然 CSS 有設，但 HTML 屬性對 Google 很重要 */}
                             <img 
                               src="https://duk.tw/UXXvK3.jpg" 
                               alt="新竹復健科推薦-林羿辰醫師-台大雙專科院長" 
+                              width="800"
+                              height="1000"
                               className="absolute inset-0 w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" 
                             />
                             {/* 照片底部的漸層遮罩 */}
@@ -141,9 +173,7 @@ export default function Home() {
 
                       {/* 右側：醫師文字介紹 */}
                       <div className="md:w-3/5 p-8 md:p-12 flex flex-col justify-center relative z-10">
-                         {/* ✨ 修改重點：H1 與 H2 對調 */}
-                         
-                         {/* H1：診所品牌 (最重要的關鍵字) */}
+                         {/* H1：診所品牌 (最重要的關鍵字) - 維持您的正確設定 */}
                          <h1 className="text-4xl md:text-5xl font-bold font-sans text-white mb-3 tracking-wide">
                            宸新復健科診所
                          </h1>
@@ -197,8 +227,8 @@ export default function Home() {
           </section>
 
           {/* =========================================
-              Section 2: 診所資訊 (Clinic Info)
-              SEO 目的：在地化關鍵字佈局 (地址、特色、地圖)
+             Section 2: 診所資訊 (Clinic Info)
+             SEO 目的：在地化關鍵字佈局 (地址、特色、地圖)
              ========================================= */}
           <section className="container mx-auto px-4 pb-16">
              <div className="max-w-6xl mx-auto w-full">
@@ -215,39 +245,42 @@ export default function Home() {
                 {/* 內容卡片 */}
                 <div className="bg-slate-800/60 border border-slate-700 rounded-xl p-6 md:p-8 mb-12 shadow-lg backdrop-blur-sm hover:border-cyan-500/30 transition-colors">
                    <div className="flex flex-col lg:flex-row gap-8 items-stretch">
-                      
-                      {/* 左側：診所環境照片 */}
-                      <div className="lg:w-5/12 flex-shrink-0">
-                         <div className="h-full w-full min-h-[300px] rounded-lg overflow-hidden border border-slate-600 shadow-md relative group">
-                            <img 
-                              src="https://duk.tw/PLVLuz.png" 
-                              alt="新竹宸新復健科診所外觀 - 位於光復路近竹科與Costco" 
-                              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
-                            
-                            {/* 圖片上的標籤 */}
-                            <div className="absolute bottom-4 left-4 flex gap-2">
-                                <span className="text-xs bg-black/60 text-white px-2 py-1 rounded backdrop-blur">
-                                    <i className="fa-solid fa-square-parking mr-1 text-yellow-400"></i>專屬停車位
-                                </span>
-                                <span className="text-xs bg-black/60 text-white px-2 py-1 rounded backdrop-blur">
-                                    <i className="fa-solid fa-wheelchair mr-1 text-blue-400"></i>無障礙空間
-                                </span>
-                            </div>
-                         </div>
-                      </div>
+                     
+                     {/* 左側：診所環境照片 */}
+                     <div className="lg:w-5/12 flex-shrink-0">
+                        <div className="h-full w-full min-h-[300px] rounded-lg overflow-hidden border border-slate-600 shadow-md relative group">
+                           {/* 修正：加入 width/height 防止 CLS */}
+                           <img 
+                             src="https://duk.tw/PLVLuz.png" 
+                             alt="新竹宸新復健科診所外觀 - 位於光復路近竹科與Costco" 
+                             width="800"
+                             height="600"
+                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                           />
+                           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+                           
+                           {/* 圖片上的標籤 */}
+                           <div className="absolute bottom-4 left-4 flex gap-2">
+                               <span className="text-xs bg-black/60 text-white px-2 py-1 rounded backdrop-blur">
+                                   <i className="fa-solid fa-square-parking mr-1 text-yellow-400"></i>專屬停車位
+                               </span>
+                               <span className="text-xs bg-black/60 text-white px-2 py-1 rounded backdrop-blur">
+                                   <i className="fa-solid fa-wheelchair mr-1 text-blue-400"></i>無障礙空間
+                               </span>
+                           </div>
+                        </div>
+                     </div>
 
-                      {/* 右側：特色列表與聯絡資訊 */}
-                      <div className="lg:w-7/12 flex flex-col">
-                         <h3 className="text-3xl font-bold text-white mb-6 border-b border-slate-700 pb-4 flex items-center justify-between">
-                            新竹市宸新復健科
-                            <Link href="/about/clinic" className="text-sm text-cyan-500 font-normal hover:underline decoration-cyan-500/50 underline-offset-4">
-                                查看設備介紹 <i className="fa-solid fa-arrow-right text-xs"></i>
-                            </Link>
-                         </h3>
+                     {/* 右側：特色列表與聯絡資訊 */}
+                     <div className="lg:w-7/12 flex flex-col">
+                        <h3 className="text-3xl font-bold text-white mb-6 border-b border-slate-700 pb-4 flex items-center justify-between">
+                           新竹市宸新復健科
+                           <Link href="/about/clinic" className="text-sm text-cyan-500 font-normal hover:underline decoration-cyan-500/50 underline-offset-4">
+                               查看設備介紹 <i className="fa-solid fa-arrow-right text-xs"></i>
+                           </Link>
+                        </h3>
 
-                         <div className="grid md:grid-cols-2 gap-6 mb-8">
+                        <div className="grid md:grid-cols-2 gap-6 mb-8">
                            {/* 特色項目 */}
                            <div>
                               <h4 className="text-lg font-bold text-cyan-400 mb-3 font-sans border-l-4 border-cyan-500 pl-3">診所特色項目</h4>
@@ -268,35 +301,36 @@ export default function Home() {
                                  <li className="flex items-start"><span className="text-pink-500 mr-2">▹</span>增生療法注射</li>
                               </ul>
                            </div>
-                         </div>
+                        </div>
 
-                         {/* 底部聯絡區塊 */}
-                         <div className="mt-auto bg-slate-900/40 p-5 rounded-lg border border-slate-700/50 hover:border-slate-600 transition-colors">
-                            <div className="flex flex-col gap-4">
-                               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                                  <div className="space-y-2">
-                                     <div className="flex items-start gap-3 text-slate-200 font-medium">
-                                        <i className="fa-solid fa-location-dot mt-1 text-cyan-400"></i>
-                                        <p>300新竹市東區光復路一段371號B1 (近竹科/關新路)</p>
-                                     </div>
-                                     <div className="flex items-center gap-3 text-slate-200 font-medium">
-                                        <i className="fa-solid fa-phone text-cyan-400"></i>
-                                        <p>(03) 564-7999</p>
-                                     </div>
-                                  </div>
-                                  
-                                  <a 
-                                    href="https://www.google.com/maps/search/?api=1&query=宸新復健科診所" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    className="flex-shrink-0 w-full sm:w-auto text-center px-5 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg hover:shadow-lg hover:shadow-cyan-500/20 transition-all font-medium text-sm whitespace-nowrap group"
-                                  >
-                                     <i className="fa-solid fa-map-location-dot mr-1 group-hover:scale-110 transition-transform"></i> 開啟 Google 地圖
-                                  </a>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
+                        {/* 底部聯絡區塊 */}
+                        <div className="mt-auto bg-slate-900/40 p-5 rounded-lg border border-slate-700/50 hover:border-slate-600 transition-colors">
+                           <div className="flex flex-col gap-4">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                                 <div className="space-y-2">
+                                    <div className="flex items-start gap-3 text-slate-200 font-medium">
+                                       <i className="fa-solid fa-location-dot mt-1 text-cyan-400"></i>
+                                       <p>300新竹市東區光復路一段371號B1 (近竹科/關新路)</p>
+                                    </div>
+                                    <div className="flex items-center gap-3 text-slate-200 font-medium">
+                                       <i className="fa-solid fa-phone text-cyan-400"></i>
+                                       <p>(03) 564-7999</p>
+                                    </div>
+                                 </div>
+                                 
+                                 {/* 修正：將 Google Map 連結改為查詢參數，確保能正確導航 */}
+                                 <a 
+                                   href="https://www.google.com/maps/search/?api=1&query=新竹市東區光復路一段371號B1" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   className="flex-shrink-0 w-full sm:w-auto text-center px-5 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg hover:shadow-lg hover:shadow-cyan-500/20 transition-all font-medium text-sm whitespace-nowrap group"
+                                 >
+                                    <i className="fa-solid fa-map-location-dot mr-1 group-hover:scale-110 transition-transform"></i> 開啟 Google 地圖
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                    </div>
                 </div>
              </div>
