@@ -141,11 +141,20 @@ export default function Home() {
 
                       {/* 右側：醫師文字介紹 */}
                       <div className="md:w-3/5 p-8 md:p-12 flex flex-col justify-center relative z-10">
+                         {/* ✨ 修改重點：H1 與 H2 對調 */}
+                         
+                         {/* H1：診所品牌 (最重要的關鍵字) */}
                          <h1 className="text-4xl md:text-5xl font-bold font-sans text-white mb-3 tracking-wide">
-                           林羿辰 <span className="text-2xl text-cyan-400 font-medium ml-2">醫師</span>
+                           宸新復健科診所
                          </h1>
-                         <p className="text-lg text-slate-300 mb-8 border-l-4 border-cyan-500 pl-4">
-                           宸新復健科診所院長 | 運動教練醫師
+                         
+                         {/* H2：醫師姓名 (次要關鍵字) */}
+                         <h2 className="text-2xl md:text-3xl text-cyan-400 font-medium mb-6 border-l-4 border-cyan-500 pl-4">
+                           院長 林羿辰 醫師
+                         </h2>
+                         
+                         <p className="text-lg text-slate-300 mb-8">
+                           運動教練醫師 | 骨科復健專家
                          </p>
                          
                          <div className="space-y-8">
