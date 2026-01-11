@@ -17,6 +17,7 @@ export interface WeightLossProgram {
   qrCode?: string;          // 雖然頁面自動生成，但保留欄位定義
   benefitsTitle?: string;      // 自訂右側欄位標題 (預設是 "療程優點")
   benefitsIconClass?: string;  // 自訂右側欄位 Icon (預設是粉紅色讚)
+  qaList?: { question: string; answer: string }[];
 }
 
 export const weightLossPrograms: WeightLossProgram[] = [
@@ -53,6 +54,24 @@ export const weightLossPrograms: WeightLossProgram[] = [
       { src: '/images/weight-loss/mounjaro/c.jpg', alt: '猛健樂適合對象' },
       { src: '/images/weight-loss/mounjaro/d.jpg', alt: '猛健樂懶人包' }
     ]
+
+// ✨ 新增 QA
+qaList: [
+  {
+    question: '猛健樂會有什麼副作用嗎？',
+    answer: '常見的副作用多為腸胃道症狀，如噁心、腹脹或便秘。這些反應通常是輕微且暫時的，透過調整飲食（少量多餐、避開油膩）及醫師調整劑量，大多能順利適應。'
+  },
+  {
+    question: '停藥後會復胖嗎？',
+    answer: '減重藥物是輔助工具，幫助您建立良好的飲食與生活習慣。若停藥後能維持健康的飲食與運動習慣，就能有效維持體重。我們提供專業的衛教與追蹤，協助您長期維持成果。'
+  },
+  {
+    question: '施打猛健樂會痛嗎？',
+    answer: '猛健樂使用的是極細的專利針頭，施打於皮下脂肪層（如腹部或大腿），大部分患者僅感覺像被蚊子叮一下，幾乎沒有疼痛感，非常方便操作。'
+  }
+]
+
+
   },
 
   // =======================================================
@@ -74,6 +93,23 @@ export const weightLossPrograms: WeightLossProgram[] = [
     whyChooseUs: ['詳細問診及衛教施打', '甲狀腺超音波檢查及抽血檢查', '療程含高階inbody及運動課程'], // 範例資料
     programBenefits: ['一週一次好簡單，更高CP值', '適用於12-18歲青少年減重', '有效控制三高及脂肪肝，心臟保護'],      // 範例資料
     images: [      { src: '/images/weight-loss/ozem/a.jpg', alt: '週纖達與猛健樂比較' },] // 圖片待補
+
+    qaList: [
+      {
+        question: '週纖達跟猛健樂有什麼不一樣？',
+        answer: '兩者都是腸泌素藥物。週纖達是單重機轉 (GLP-1)，上市時間較久，安全性資料多且CP值高；猛健樂是雙重機轉 (GIP/GLP-1)，減重效果通常更顯著，適合體重基數較大者。醫師會依您的狀況建議適合的藥物。'
+      },
+      {
+        question: '我有糖尿病可以使用嗎？',
+        answer: '可以的。週纖達本身即為治療第二型糖尿病的藥物，能有效穩定血糖。但若您已在使用其他降血糖藥物，請務必告知醫師，以免發生低血糖風險。'
+      },
+      {
+        question: '需要每天打針嗎？',
+        answer: '不需要。週纖達是長效型藥物，一週只需要皮下注射一次，非常方便，不用擔心每天忘記吃藥的問題。'
+      }
+    ]
+
+
   },
 
   // =======================================================
@@ -98,6 +134,22 @@ export const weightLossPrograms: WeightLossProgram[] = [
     benefitsIconClass: 'fa-solid fa-check-circle text-green-500',
     images: [      { src: '/images/weight-loss/boneage/a.jpg', alt: '兒童照骨齡流程' },
                   { src: '/images/weight-loss/boneage/b.jpg', alt: 'GP法及TW3法比較' }                   ] // 圖片待補
+
+                  qaList: [
+                    {
+                      question: '照骨齡會有輻射影響嗎？',
+                      answer: '請家長放心。拍攝左手掌骨的X光輻射劑量極低（約 0.001 毫西弗），相當於搭飛機飛行 10 分鐘所接收的背景輻射量，對兒童身體幾乎沒有影響。'
+                    },
+                    {
+                      question: '幾歲適合做骨齡檢查？',
+                      answer: '一般建議 5 歲以上即可進行評估。若發現孩子身高百分位低於 3%、一年長高不到 4 公分，或是出現性早熟徵兆（如女生胸部發育、男生睪丸變大），應儘早檢查。'
+                    },
+                    {
+                      question: '如果骨齡超前或落後怎麼辦？',
+                      answer: '骨齡超前可能代表性早熟，雖然現在長得高，但生長板可能提早閉合導致成人身高矮小；骨齡落後則可能與營養或內分泌有關。醫師會根據個別狀況，提供飲食、運動、睡眠或轉介藥物治療的建議。'
+                    }
+                  ]
+
   }
 ];
 

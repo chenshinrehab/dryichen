@@ -13,6 +13,7 @@ export interface Treatment {
   applicableConditions: string[]; // 適用症狀
   features: string[];      // 特色
   youtubeVideoId?: string;
+  qaList?: { question: string; answer: string }[];
 }
 
 export const treatments: Treatment[] = [
@@ -53,6 +54,22 @@ export const treatments: Treatment[] = [
     ],
     applicableConditions: ['旋轉肌撕裂', '網球肘', '軟骨損傷', '退化性關節炎'],
     features: ['啟動修復', '免開刀', '精準導引']
+
+    qaList: [
+      {
+        question: 'PRP 注射需要打幾次？',
+        answer: '一般建議的完整療程為 3 次，每次間隔約 2-4 週。但因每個人受傷程度與身體修復能力不同，醫師會在第一次治療後，根據超音波追蹤修復狀況來調整後續次數。'
+      },
+      {
+        question: '打完 PRP 會很痛嗎？可以走路嗎？',
+        answer: '注射後 2-3 天患部會有腫脹痠痛感（因為正在啟動修復發炎反應），這是正常的。一般行走與日常生活皆不受影響，但建議一週內避免劇烈運動，並多休息。'
+      },
+      {
+        question: 'PRP 和打類固醇有什麼不同？',
+        answer: '類固醇是強力的「消炎藥」，能迅速止痛但長期使用可能導致肌腱脆化；PRP 則是提供「生長因子」，目的是「修復」受損組織。簡單來說，類固醇是滅火，PRP 是重建房子。'
+      }
+    ]
+
   },
 
   // =======================================================
@@ -87,10 +104,24 @@ export const treatments: Treatment[] = [
       { src: '/images/treatments/prp/a.jpg', alt: 'ESWT體外震波原理' },
       { src: '/images/treatments/prp/b.jpg', alt: 'ESWT體外震波適應症' },
       { src: '/images/treatments/prp/c.jpg', alt: 'ESWT體外震波聚焦式及發散式比較' },
-
     ], 
     applicableConditions: ['足底筋膜炎', '鈣化性肌腱炎', '網球肘', '長期肌肉緊繃'],
     features: ['非侵入性', '免打針', '恢復期短']
+
+    qaList: [
+      {
+        question: '震波治療過程會痛嗎？',
+        answer: '治療過程中會有痠痛感，這是因為震波正在尋找並治療受傷的組織（阿是穴）。這種痠痛感通常是可以忍受的，醫師會隨時依照您的感受調整能量強度。'
+      },
+      {
+        question: '需要做幾次震波治療？',
+        answer: '一個療程通常建議為 3-5 次，每週一次。對於鈣化性肌腱炎等較頑固的病灶，可能需要更多次數的治療才能完全瓦解鈣化點。'
+      },
+      {
+        question: '震波治療後需要休息嗎？',
+        answer: '治療後建議多喝水以促進代謝。當天患部可能會有些許紅腫或痠痛，這是組織修復的正常反應，通常 1-2 天內會緩解。這段期間請避免劇烈運動，讓組織好好修復。'
+      }
+    ]
   },
 
   // =======================================================
@@ -119,6 +150,21 @@ export const treatments: Treatment[] = [
     images: [], 
     applicableConditions: ['肩頸痠痛', '脊椎側彎', '骨盆歪斜', '術後沾黏'],
     features: ['一對一治療', '筋膜放鬆', '骨骼調整']
+    qaList: [
+      {
+        question: '徒手治療跟一般的按摩有什麼不一樣？',
+        answer: '一般按摩主要針對淺層肌肉放鬆，效果較短暫。徒手治療則是由物理治療師進行，會先進行詳細評估（如骨盆是否歪斜、關節是否卡住），再透過專業手法處理深層筋膜、關節與神經問題，是具有醫療目的的治療。'
+      },
+      {
+        question: '一次治療需要多久？',
+        answer: '每次徒手治療時間約為 30-50 分鐘，包含評估、治療以及居家運動指導。'
+      },
+      {
+        question: '健保可以做徒手治療嗎？',
+        answer: '健保給付的物理治療主要為儀器治療（如電療、熱敷、牽引）。一對一的徒手治療因需治療師全程操作，屬於自費項目，能提供更精緻且針對性的療效。'
+      }
+    ]
+
   }
 ];
 

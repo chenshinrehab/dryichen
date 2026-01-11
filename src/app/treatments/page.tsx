@@ -6,7 +6,7 @@ import JsonLd from '@/components/JsonLd'
 import { treatments } from '@/data/treatments'
 
 export const metadata: Metadata = {
-  title: '治療方式 - 專業復健治療服務 | 宸新復健科診所',
+  title: 'PRP增生療法、震波治療、猛健樂 | 新竹復健推薦',
   description: '專業的復健治療服務，包括PRP注射、震波治療、一對一運動治療等，結合醫學與運動科學，提供個人化的治療方案。',
   keywords: ['復健治療', 'PRP注射', '震波治療', '運動治療', '新竹復健'],
 }

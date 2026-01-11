@@ -29,12 +29,10 @@ export default function TreatmentDetailPage({ params }: PageProps) {
   const treatment = getTreatmentBySlug(params.slug)
   if (!treatment) notFound()
 
-  // 自動生成 QR Code 邏輯
   const siteUrl = 'https://dryichen-4ze1.vercel.app'
   const currentPageUrl = `${siteUrl}/treatments/${params.slug}`
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(currentPageUrl)}`
 
-  // SEO 資料
   const jsonLdBreadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -93,37 +91,24 @@ export default function TreatmentDetailPage({ params }: PageProps) {
                     <p className="text-slate-300 leading-relaxed text-lg mb-8 border-b border-slate-700 pb-6">{treatment.description}</p>
                   )}
 
-                  {/* ========================================================
-                      ✨ 新增：YouTube 影片區塊
-                      只有當 treatment.youtubeVideoId 有值的時候才會顯示
-                     ======================================================== */}
+                  {/* YouTube 影片區塊 */}
                   {treatment.youtubeVideoId && (
                     <div className="mb-12 text-center">
-                        
                         <div className="w-full md:w-3/4 mx-auto">
-                             {/* 您提供的響應式 iframe 容器 */}
                              <div className="relative w-full pb-[56.25%] rounded-xl overflow-hidden shadow-2xl border border-slate-700">
-                             <iframe 
+                                <iframe 
                                     src={`https://www.youtube.com/embed/${treatment.youtubeVideoId}`} 
-                                    
-                                    // ✨ SEO 重點 1：動態標題
-                                    // 告訴 Google 這部影片是關於什麼的，例如 "增生療法 / PRP 治療介紹影片"
                                     title={`${treatment.title} 治療介紹影片`}
-                                    
                                     className="absolute top-0 left-0 w-full h-full" 
                                     frameBorder="0" 
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                     allowFullScreen
-                                    
-                                    // ✨ SEO 重點 2：延遲載入
-                                    // 讓網頁載入速度變快，對 Google 排名有幫助
                                     loading="lazy"
                                 ></iframe>
                              </div>
                         </div>
                     </div>
                   )}
-                  {/* ======================================================== */}
 
                   {/* 兩欄資訊區 */}
                   {(treatment.whyChooseUs || treatment.treatmentFocus) && (
@@ -160,7 +145,7 @@ export default function TreatmentDetailPage({ params }: PageProps) {
 
                   {/* 圖片展示區 */}
                   {treatment.images && treatment.images.length > 0 && (
-                    <div className="space-y-8">
+                    <div className="space-y-8 mb-12">
                       {treatment.images.map((img, idx) => (
                         <div key={idx} className="text-center group">
                            <div className="relative overflow-hidden rounded-lg shadow-lg inline-block w-full md:w-3/4">
@@ -168,6 +153,32 @@ export default function TreatmentDetailPage({ params }: PageProps) {
                            </div>
                         </div>
                       ))}
+                    </div>
+                  )}
+
+                  {/* ========================================================
+                      ✨ 新增：常見問答 (Q&A) 區塊
+                      白底黑字設計，位於圖片下方
+                     ======================================================== */}
+                  {treatment.qaList && treatment.qaList.length > 0 && (
+                    <div className="mt-8">
+                       <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
+                          <i className="fa-regular fa-circle-question text-cyan-400 mr-3"></i>
+                          常見問答
+                       </h3>
+                       <div className="grid gap-6">
+                          {treatment.qaList.map((qa, idx) => (
+                             <div key={idx} className="bg-white rounded-xl p-6 shadow-lg text-slate-900">
+                                <h4 className="font-bold text-xl mb-3 flex items-start">
+                                   <span className="text-cyan-600 mr-2 font-black">Q.</span>
+                                   {qa.question}
+                                </h4>
+                                <div className="text-slate-700 leading-relaxed pl-6 border-l-4 border-slate-200">
+                                   {qa.answer}
+                                </div>
+                             </div>
+                          ))}
+                       </div>
                     </div>
                   )}
 
