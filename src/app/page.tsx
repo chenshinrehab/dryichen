@@ -228,7 +228,7 @@ export default function Home() {
                                   </div>
                                   
                                   <a 
-                                    href="https://goo.gl/maps/placeholder" 
+                                    href="https://maps.app.goo.gl/dSe9zVPgnNV7m3jo9" 
                                     target="_blank" 
                                     className="flex-shrink-0 w-full sm:w-auto text-center px-5 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg hover:shadow-lg hover:shadow-cyan-500/20 transition-all font-medium text-sm whitespace-nowrap"
                                   >

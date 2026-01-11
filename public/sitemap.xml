@@ -1,37 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/</loc><lastmod>2026-01-05T14:56:02.415Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/ankle/achilles-tendinitis/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/ankle/ankle-sprain/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/ankle/plantar-fasciitis/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/elbow/golfer-elbow/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/elbow/tennis-elbow/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/hand/carpal-tunnel/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/hand/trigger-finger/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/knee/acl-tear/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/knee/knee-osteoarthritis/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/knee/meniscus-tear/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/shoulder/frozen-shoulder/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/shoulder/rotator-cuff-tear/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/spine-hip/cervical-disc-degeneration/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/spine-hip/hip-osteoarthritis/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/spine-hip/lumbar-disc-herniation/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/spine-hip/piriformis-syndrome/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/spine-hip/sciatica/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/spine-hip/spinal-stenosis/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/treatments/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/weight-loss/bone-age/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/weight-loss/mounjaro/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/weight-loss/ozempic/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/weight-loss/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/ankle/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/elbow/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/hand/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/knee/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/shoulder/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/diseases/spine-hip/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/treatments/exercise-therapy/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/treatments/prp/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/treatments/shockwave/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chenshinrehab.github.io/dr-lin-rehab/</loc><lastmod>2026-01-05T14:56:02.416Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-</urlset>
+import { MetadataRoute } from 'next'
+import { getAllTreatmentSlugs } from '@/data/treatments'
+import { getAllWeightLossProgramSlugs } from '@/data/weightLoss'
+import { newsData } from '@/data/news'
+import { facilitiesData } from '@/data/facilities'
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://dryichen-4ze1.vercel.app' // ⚠️ 請確認這是您的正確網址
+
+  // 1. 靜態頁面
+  const routes = [
+    '',
+    '/about',
+    '/treatments',
+    '/weight-bone',
+    '/diseases',
+    '/about/doctors',
+    '/about/news',
+    '/about/clinic',
+    '/booking',
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: route === '' ? 1 : 0.8,
+  }))
+
+  // 2. 動態頁面：治療項目
+  const treatmentRoutes = getAllTreatmentSlugs().map((item) => ({
+    url: `${baseUrl}/treatments/${item.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
+  // 3. 動態頁面：減重與骨齡
+  const weightRoutes = getAllWeightLossProgramSlugs().map((item) => ({
+    url: `${baseUrl}/weight-bone/${item.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
+  // 4. 動態頁面：最新消息
+  const newsRoutes = newsData.map((item) => ({
+    url: `${baseUrl}/about/news/${item.id}`,
+    lastModified: new Date(item.date),
+    changeFrequency: 'daily' as const,
+    priority: 0.6,
+  }))
+  
+  // 5. 動態頁面：診所設備
+  const facilitiesRoutes = facilitiesData.map((item) => ({
+    url: `${baseUrl}/about/clinic/${item.id}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }))
+
+  return [...routes, ...treatmentRoutes, ...weightRoutes, ...newsRoutes, ...facilitiesRoutes]
+}

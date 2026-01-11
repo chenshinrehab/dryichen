@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://dryichen-4ze1.vercel.app/sitemap.xml
