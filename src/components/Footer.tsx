@@ -34,7 +34,7 @@ export default function Footer() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-2 max-w-6xl mx-auto">
                 
                 {/* 1. 關於我們 */}
-                <Link href="/" className="group rounded-xl relative h-40 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
+                <Link href="/about" className="group rounded-xl relative h-40 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
                 <img src="/images/icons/a.jpg"  alt="宸新復健科 林羿辰醫師" 
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-4">
@@ -70,6 +70,12 @@ export default function Footer() {
                 </Link>
             </div>
         </div>
+
+        {/* ✨ 3. 新增：站內搜尋 (放在中間) */}
+          <div>
+             <FooterSearch />
+          </div>
+
 
         {/* =========================================
             Part 2: 社群、計數器、聯絡資訊

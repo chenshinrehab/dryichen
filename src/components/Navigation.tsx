@@ -14,7 +14,7 @@ export default function Navigation() {
   }
 
   const navItems = [
-    { name: '關於我們', path: '/' },
+    { name: '關於我們', path: '/about' },
     { name: '治療方式', path: '/treatments' },
     { name: '減重與骨齡', path: '/weight-bone' },
     { name: '疾病衛教', path: '/diseases' },
