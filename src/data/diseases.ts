@@ -3,6 +3,7 @@
 // 1. 定義資料介面
 export interface DiseaseItem {
   id: string
+  slug: string      // ✨ 關鍵：必須有這個欄位
   title: string
   description: string      // 列表頁用的簡短描述
   content?: string        // 舊版純文字 (為了相容性保留)
