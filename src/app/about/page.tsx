@@ -60,7 +60,7 @@ const aboutSchema = {
   ]
 }
 
-// 頁面選單資料 (已調整順序：最新內容 -> 診所介紹 -> 醫師介紹)
+// 頁面選單資料
 const aboutSections = [
   {
     id: 'news',
@@ -99,40 +99,56 @@ export default function AboutPage() {
       <div className="min-h-screen bg-slate-900 text-slate-300">
         <main className="max-w-5xl mx-auto px-4 py-12 md:py-16 fade-in">
           
-          {/* 標題區 */}
-          <div className="text-center mb-10">
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-wider">關於我們</h1>
-              <div className="h-1 w-20 bg-cyan-500 mx-auto rounded-full"></div>
+          {/* ============================================================
+              ✨ 標題區塊 (置中版)
+             ============================================================ */}
+          <div className="flex items-center justify-center gap-3 mb-10">
+              <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
+                  <i className="fa-solid fa-address-card text-xl"></i>
+              </span>
+              <h1 className="text-3xl font-bold font-sans text-white">
+                  關於我們 <span className="text-slate-500 text-lg font-normal ml-2">About Us</span>
+              </h1>
           </div>
 
-          {/* SEO 導言區 */}
-          <div className="max-w-3xl mx-auto mb-16 pl-2">
-             <details className="group">
-                <summary className="list-none text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-center">
-                    <span className="inline-block border-l-4 border-cyan-500 pl-4 text-left">
-                       我們是<strong className="text-cyan-400 font-normal">新竹推薦</strong>的首選復健專科診所。由<strong className="text-cyan-400 font-normal">台大醫師</strong>、前台大醫院主治醫師<strong className="text-cyan-400 font-normal">林羿辰醫師</strong>親自主持，提供骨科、復健科與運動醫學的全方位整合治療。
-                       
-                       <span className="group-open:hidden">
-                           ... 
-                           <span className="ml-1 text-sm text-cyan-500 hover:text-cyan-400 hover:underline underline-offset-4 font-semibold">
-                             了解更多 <i className="fa-solid fa-chevron-down text-xs"></i>
-                           </span>
-                       </span>
-                    </span>
-                </summary>
-                
-                <div className="mt-4 text-lg text-slate-400 leading-relaxed pl-5 text-left animate-in fade-in slide-in-from-top-1 duration-300 bg-slate-800/30 p-4 rounded-xl border border-slate-700/50">
-                    <p className="mb-4">
-                        宸新復健科座落於繁華的<strong className="text-cyan-400 font-normal">新竹東區</strong>核心地帶，緊鄰<strong className="text-cyan-400 font-normal">新竹科學園區 (竹科)</strong> 與熱鬧的<strong className="text-cyan-400 font-normal">關埔重劃區</strong>。
-                    </p>
-                    <p className="mb-4">
-                        診所位置交通極其便利，位於<strong className="text-cyan-400 font-normal">光復路</strong>與<strong className="text-cyan-400 font-normal">關新路</strong>交界處附近。無論您是住在關新社區的居民，或是下班後從竹科過來的工程師，甚至是剛逛完 <strong className="text-cyan-400 font-normal">Costco (好市多)</strong> 的民眾，都能輕鬆抵達。
-                    </p>
-                    <p>
-                        為了解決新竹市區停車困難的問題，我們特別規劃了<strong className="text-cyan-400 font-normal">專屬停車位</strong>，讓您就醫復健不再為了找車位而煩惱。
-                    </p>
-                </div>
-             </details>
+          {/* ============================================================
+              ✨ SEO 導言區
+              修正重點：
+              1. 外層 div 維持 mx-auto (區塊置中)
+              2. 內部 span 加回 border-l-4 (藍色線條)
+              3. 內部文字改回 text-left (靠左對齊)
+             ============================================================ */}
+          <div className="mb-12 max-w-4xl mx-auto">
+                <details className="group">
+                    {/* Summary: 永遠顯示的第一段 */}
+                    <summary className="list-none text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none">
+                        {/* 這裡加回 border-l-4 和 text-left */}
+                        <span className="inline-block border-l-4 border-cyan-500 pl-4 h-full text-left">
+                            我們是<strong className="text-cyan-400 font-normal">新竹推薦</strong>的首選復健專科診所。由<strong className="text-cyan-400 font-normal">台大醫師</strong>、前台大醫院主治醫師<strong className="text-cyan-400 font-normal">林羿辰醫師</strong>親自主持。
+                            
+                            {/* 展開提示文字 */}
+                            <span className="group-open:hidden">
+                                ... 
+                                <span className="ml-1 text-sm text-cyan-500 hover:text-cyan-400 hover:underline underline-offset-4 font-semibold">
+                                    了解更多 <i className="fa-solid fa-chevron-down text-xs"></i>
+                                </span>
+                            </span>
+                        </span>
+                    </summary>
+                    
+                    {/* 展開後的詳細內容 (SEO 關鍵字寶庫) - 靠左對齊並縮排 */}
+                    <div className="mt-4 text-lg text-slate-400 leading-relaxed text-left pl-5 animate-in fade-in slide-in-from-top-1 duration-300">
+                        <p className="mb-4">
+                            宸新復健科座落於繁華的<strong className="text-cyan-400 font-normal">新竹東區</strong>核心地帶，緊鄰<strong className="text-cyan-400 font-normal">新竹科學園區 (竹科)</strong> 與熱鬧的<strong className="text-cyan-400 font-normal">關埔重劃區</strong>。
+                        </p>
+                        <p className="mb-4">
+                            診所位置交通極其便利，位於<strong className="text-cyan-400 font-normal">光復路</strong>與<strong className="text-cyan-400 font-normal">關新路</strong>交界處附近。無論您是住在關新社區的居民，或是下班後從竹科過來的工程師，甚至是剛逛完 <strong className="text-cyan-400 font-normal">Costco (好市多)</strong> 的民眾，都能輕鬆抵達。
+                        </p>
+                        <p>
+                            為了解決新竹市區停車困難的問題，我們特別規劃了<strong className="text-cyan-400 font-normal">專屬停車位</strong>，讓您就醫復健不再為了找車位而煩惱。我們提供骨科痛症、運動傷害、兒童早療等全方位治療。
+                        </p>
+                    </div>
+                </details>
           </div>
 
           {/* 卡片連結區塊 */}

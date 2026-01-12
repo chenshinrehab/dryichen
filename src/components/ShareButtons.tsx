@@ -13,7 +13,7 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
   const [shareUrl, setShareUrl] = useState('')
 
   // ⚠️ 請在此設定您的正式網址 (結尾不要加斜線)
-  const SITE_DOMAIN = 'https://dryichen-4ze1.vercel.app'
+  const SITE_DOMAIN = 'https://dryichen.vercel.app'
 
   useEffect(() => {
     // 確保只在客戶端執行
