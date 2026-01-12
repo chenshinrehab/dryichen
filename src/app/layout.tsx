@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   title: '新竹宸新復健科診所 - 林羿辰醫師',
   description: '新竹推薦復健科，提供PRP注射、震波治療、徒手治療、兒童骨齡評估。',
 }
+// ✨ 新增這一行：告訴 Google 您的主網域在哪裡
+metadataBase: new URL('https://www.dryichen.com.tw'),
 
 export default function RootLayout({
   children,

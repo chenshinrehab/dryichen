@@ -49,14 +49,14 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
     '@type': 'MedicalWebPage',
     name: category.title,
     description: category.description,
-    url: `https://dryichen-4ze1.vercel.app/diseases/${category.slug}`,
+    url: `https://www.dryichen.com.tw/diseases/${category.slug}`,
     mainEntity: {
         '@type': 'ItemList',
         itemListElement: category.diseases.map((disease, index) => ({
             '@type': 'ListItem',
             position: index + 1,
             name: disease.title,
-            url: `https://dryichen-4ze1.vercel.app/diseases/${category.slug}/${disease.slug}`
+            url: `https://www.dryichen.com.tw/diseases/${category.slug}/${disease.slug}`
         }))
     }
   }

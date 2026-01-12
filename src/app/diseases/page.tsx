@@ -22,8 +22,8 @@ const diseasesSchema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: '首頁', item: 'https://dryichen-4ze1.vercel.app/' },
-        { '@type': 'ListItem', position: 2, name: '疾病衛教', item: 'https://dryichen-4ze1.vercel.app/diseases' },
+        { '@type': 'ListItem', position: 1, name: '首頁', item: 'https://www.dryichen.com.tw' },
+        { '@type': 'ListItem', position: 2, name: '疾病衛教', item: 'https://www.dryichen.com.tw/diseases' },
       ],
     },
     {
@@ -34,7 +34,7 @@ const diseasesSchema = {
       'reviewedBy': {
         '@type': 'Physician',
         'name': '林羿辰 醫師',
-        'url': 'https://dryichen-4ze1.vercel.app/about/doctors'
+        'url': 'https://www.dryichen.com.tw/about/doctors'
       },
       'specialty': [
         { '@type': 'MedicalSpecialty', 'name': 'Orthopedics' },

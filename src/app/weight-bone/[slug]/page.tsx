@@ -32,7 +32,7 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
   const program = getWeightLossProgramBySlug(params.slug)
   if (!program) notFound()
 
-  const siteUrl = 'https://dryichen-4ze1.vercel.app'
+  const siteUrl = 'https://www.dryichen.com.tw'
   const currentPageUrl = `${siteUrl}/weight-bone/${params.slug}`
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(currentPageUrl)}`
 

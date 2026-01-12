@@ -20,7 +20,7 @@ export default function NewsListPage() {
     '@type': 'CollectionPage',
     name: '宸新復健科最新消息',
     description: '門診公告與衛教文章彙整',
-    url: 'https://dryichen-4ze1.vercel.app/about/news'
+    url: 'https://www.dryichen.com.tw/about/news'
   }
 
   return (

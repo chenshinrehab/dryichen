@@ -28,7 +28,7 @@ export default function NewsDetailPage({ params }: PageProps) {
   const post = getNewsById(params.id)
   if (!post) notFound()
 
-  const siteUrl = 'https://dryichen-4ze1.vercel.app'
+  const siteUrl = 'https://www.dryichen.com.tw'
   const currentUrl = `${siteUrl}/about/news/${params.id}`
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(currentUrl)}`
 

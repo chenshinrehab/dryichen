@@ -21,7 +21,7 @@ export default function DoctorsPage() {
     jobTitle: '院長',
     image: 'https://duk.tw/UXXvK3.jpg',
     telephone: '03-1234567', 
-    url: 'https://dryichen-4ze1.vercel.app/about/doctors',
+    url: 'https://www.dryichen.com.tw/about/doctors',
     address: { 
         '@type': 'PostalAddress', 
         addressLocality: '新竹市', 

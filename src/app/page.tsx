@@ -7,7 +7,7 @@ import JsonLd from '@/components/JsonLd'
 // 1. Meta 設定 (個人醫師品牌優化版)
 // ==========================================
 
-const siteUrl = 'https://dryichen-4ze1.vercel.app'; 
+const siteUrl = 'https://www.dryichen.com.tw'; 
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

@@ -22,8 +22,8 @@ const weightBoneSchema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: '首頁', item: 'https://dryichen-4ze1.vercel.app/' },
-        { '@type': 'ListItem', position: 2, name: '減重與骨齡', item: 'https://dryichen-4ze1.vercel.app/weight-bone' },
+        { '@type': 'ListItem', position: 1, name: '首頁', item: 'https://www.dryichen.com.tw/' },
+        { '@type': 'ListItem', position: 2, name: '減重與骨齡', item: 'https://www.dryichen.com.tw/weight-bone' },
       ],
     },
     {
@@ -34,7 +34,7 @@ const weightBoneSchema = {
       'reviewedBy': {
         '@type': 'Physician',
         'name': '林羿辰 醫師',
-        'url': 'https://dryichen-4ze1.vercel.app/about/doctors'
+        'url': 'https://www.dryichen.com.tw/about/doctors'
       },
       'specialty': [
         { '@type': 'MedicalSpecialty', 'name': 'Weight Loss Management' },

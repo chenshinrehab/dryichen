@@ -33,7 +33,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
   const disease = getDiseaseBySlug(params.category, params.slug)
   if (!disease) notFound()
 
-  const siteUrl = 'https://dryichen-4ze1.vercel.app'
+  const siteUrl = 'https://www.dryichen.com.tw'
   const currentPageUrl = `${siteUrl}/diseases/${params.category}/${params.slug}`
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(currentPageUrl)}`
 

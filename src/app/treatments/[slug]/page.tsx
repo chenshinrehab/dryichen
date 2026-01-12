@@ -31,7 +31,7 @@ export default function TreatmentDetailPage({ params }: PageProps) {
   const treatment = getTreatmentBySlug(params.slug)
   if (!treatment) notFound()
 
-  const siteUrl = 'https://dryichen-4ze1.vercel.app'
+  const siteUrl = 'https://www.dryichen.com.tw'
   const currentPageUrl = `${siteUrl}/treatments/${params.slug}`
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(currentPageUrl)}`
 

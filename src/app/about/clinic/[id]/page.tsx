@@ -26,7 +26,7 @@ export default function FacilityDetailPage({ params }: PageProps) {
   const item = getFacilityById(params.id)
   if (!item) notFound()
 
-  const siteUrl = 'https://dryichen-4ze1.vercel.app'
+  const siteUrl = 'https://www.dryichen.com.tw'
   const currentUrl = `${siteUrl}/about/clinic/${params.id}`
 
   const jsonLdProduct = {
