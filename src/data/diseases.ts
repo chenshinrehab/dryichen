@@ -1,6 +1,8 @@
 // src/data/diseases.ts
 
+// ==========================================
 // 1. 定義資料介面
+// ==========================================
 export interface DiseaseItem {
   id: string
   slug: string      // ✨ 關鍵：必須有這個欄位
@@ -27,7 +29,9 @@ export interface DiseaseCategory {
   seoDescription?: string
 }
 
+// ==========================================
 // 2. 完整資料內容
+// ==========================================
 export const diseaseCategories: DiseaseCategory[] = [
   // =======================================================
   // 1. 脊椎髖臀 (關鍵字：坐骨神經痛、椎間盤突出、長骨刺)
@@ -42,6 +46,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     diseases: [
       {
         id: 'lumbar-disc-herniation',
+        slug: 'lumbar-disc-herniation',
         title: '腰椎椎間盤突出',
         description: '椎間盤髓核擠出壓迫神經，造成腰痛或下肢麻痛。',
         contentHtml: `
@@ -59,6 +64,7 @@ export const diseaseCategories: DiseaseCategory[] = [
       },
       {
         id: 'cervical-disc-degeneration',
+        slug: 'cervical-disc-degeneration',
         title: '頸椎椎間盤退化',
         description: '低頭用電腦導致的頸椎問題，俗稱「烏龜頸」。',
         contentHtml: `
@@ -75,6 +81,7 @@ export const diseaseCategories: DiseaseCategory[] = [
       },
       {
         id: 'sciatica',
+        slug: 'sciatica',
         title: '坐骨神經痛',
         description: '疼痛從下背部放射至臀部、大腿後側甚至腳底。',
         contentHtml: `
@@ -91,6 +98,7 @@ export const diseaseCategories: DiseaseCategory[] = [
       },
       {
         id: 'spinal-stenosis',
+        slug: 'spinal-stenosis',
         title: '脊椎狹窄症',
         description: '老化導致骨刺與韌帶肥厚，典型症狀為「間歇性跛行」。',
         contentHtml: `
@@ -107,6 +115,7 @@ export const diseaseCategories: DiseaseCategory[] = [
       },
       {
         id: 'hip-osteoarthritis',
+        slug: 'hip-osteoarthritis',
         title: '退化性髖關節炎',
         description: '軟骨磨損導致鼠蹊部疼痛，影響行走與穿襪等日常動作。',
         contentHtml: `
@@ -123,6 +132,7 @@ export const diseaseCategories: DiseaseCategory[] = [
       },
       {
         id: 'piriformis-syndrome',
+        slug: 'piriformis-syndrome',
         title: '梨狀肌症候群',
         description: '梨狀肌緊繃壓迫坐骨神經，造成深層臀部疼痛。',
         contentHtml: `
@@ -153,6 +163,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     diseases: [
       {
         id: 'rotator-cuff-tear',
+        slug: 'rotator-cuff-tear',
         title: '旋轉肌撕裂',
         description: '肩膀旋轉肌群受傷或撕裂，造成肩膀疼痛與活動受限。',
         contentHtml: `
@@ -169,6 +180,7 @@ export const diseaseCategories: DiseaseCategory[] = [
       },
       {
         id: 'frozen-shoulder',
+        slug: 'frozen-shoulder',
         title: '五十肩 (冰凍肩)',
         description: '肩膀關節囊發炎導致關節僵硬，活動範圍受限。',
         contentHtml: `
@@ -199,6 +211,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     diseases: [
       {
         id: 'tennis-elbow',
+        slug: 'tennis-elbow',
         title: '網球肘',
         description: '手肘外側肌腱發炎，造成手肘外側疼痛，擰毛巾無力。',
         contentHtml: `
@@ -215,6 +228,7 @@ export const diseaseCategories: DiseaseCategory[] = [
       },
       {
         id: 'golfer-elbow',
+        slug: 'golfer-elbow',
         title: '高爾夫球肘',
         description: '手肘內側肌腱發炎，造成手肘內側疼痛。',
         contentHtml: `
@@ -245,6 +259,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     diseases: [
       {
         id: 'trigger-finger',
+        slug: 'trigger-finger',
         title: '板機指',
         description: '手指屈肌腱發炎，造成手指彎曲後無法伸直，卡住像扣板機。',
         contentHtml: `
@@ -261,6 +276,7 @@ export const diseaseCategories: DiseaseCategory[] = [
       },
       {
         id: 'carpal-tunnel',
+        slug: 'carpal-tunnel',
         title: '腕隧道症候群',
         description: '正中神經在手腕處受壓迫，造成大拇指、食指與中指麻木刺痛。',
         contentHtml: `
@@ -291,6 +307,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     diseases: [
       {
         id: 'knee-osteoarthritis',
+        slug: 'knee-osteoarthritis',
         title: '退化性膝關節炎',
         description: '關節軟骨磨損，導致上下樓梯無力、蹲下站不起來。',
         contentHtml: `
@@ -307,6 +324,7 @@ export const diseaseCategories: DiseaseCategory[] = [
       },
       {
         id: 'meniscus-tear',
+        slug: 'meniscus-tear',
         title: '半月板破裂',
         description: '膝蓋內的緩衝墊破裂，導致膝蓋腫脹、卡住 (Locking)。',
         contentHtml: `
@@ -323,6 +341,7 @@ export const diseaseCategories: DiseaseCategory[] = [
       },
       {
         id: 'acl-tear',
+        slug: 'acl-tear',
         title: '前十字韌帶斷裂',
         description: '常見於急停轉身的運動傷害，受傷當下常聽到「啪」一聲。',
         contentHtml: `
@@ -353,6 +372,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     diseases: [
       {
         id: 'plantar-fasciitis',
+        slug: 'plantar-fasciitis',
         title: '足底筋膜炎',
         description: '典型症狀是「早上起床踩地第一步最痛」。',
         contentHtml: `
@@ -369,6 +389,7 @@ export const diseaseCategories: DiseaseCategory[] = [
       },
       {
         id: 'ankle-sprain',
+        slug: 'ankle-sprain',
         title: '踝關節扭傷',
         description: '俗稱「翻船」，造成外踝腫脹瘀血。',
         contentHtml: `
@@ -385,6 +406,7 @@ export const diseaseCategories: DiseaseCategory[] = [
       },
       {
         id: 'achilles-tendinitis',
+        slug: 'achilles-tendinitis',
         title: '阿基里斯腱發炎',
         description: '連接小腿肌肉與腳跟的粗大肌腱發炎，墊腳尖時疼痛。',
         contentHtml: `
@@ -414,7 +436,8 @@ export function getCategoryBySlug(slug: string): DiseaseCategory | undefined {
 export function getDiseaseBySlug(categorySlug: string, diseaseId: string): DiseaseItem | undefined {
   const category = getCategoryBySlug(categorySlug)
   if (!category) return undefined
-  return category.diseases.find(d => d.id === diseaseId)
+  // 因為路由使用的是 id (或 slug)，這裡使用 id 來查找
+  return category.diseases.find(d => d.id === diseaseId || d.slug === diseaseId)
 }
 
 export function getAllDiseases(): DiseaseItem[] {
@@ -428,7 +451,7 @@ export function generateAllDiseaseParams(): Array<{ category: string; slug: stri
     category.diseases.forEach((disease) => {
       params.push({
         category: category.slug,
-        slug: disease.id,
+        slug: disease.slug, // 使用 slug 作為網址參數
       })
     })
   })
