@@ -10,7 +10,7 @@ const SITE_URL = 'https://www.dryichen.com.tw'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   
-  // 1. 固定頁面
+  // 1. 固定 頁面
   const staticRoutes = [
     '',
     '/about',
