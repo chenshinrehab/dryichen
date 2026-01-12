@@ -5,6 +5,7 @@ export interface Treatment {
   title: string;
   subtitle?: string;
   description: string;
+  image: string
   contentHtml: string;
   whyChooseUs: string[];
   treatmentFocus: string[];

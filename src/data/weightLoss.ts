@@ -6,6 +6,7 @@ export interface WeightLossProgram {
   title: string;
   subtitle?: string;
   description: string;
+  image: string
   contentHtml?: string;
   features?: string[];
   whyChooseUs?: string[];
