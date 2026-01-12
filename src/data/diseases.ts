@@ -35,7 +35,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     slug: 'spine-hip',
     title: '脊椎髖臀',
     description: '脊椎、髖關節與臀部相關疾病',
-    imageUrl: 'https://images.unsplash.com/photo-1544367563-12123d8965cd?auto=format&fit=crop&q=80&w=800',
+    image: '/images/diseases/a.jpg',
     seoKeywords: ['新竹脊椎側彎', '坐骨神經痛治療', '新竹整脊', '骨刺', '梨狀肌症候群'],
     seoDescription: '新竹脊椎權威復健。專治腰椎椎間盤突出、坐骨神經痛與長骨刺。提供免開刀的PRP注射與徒手物理治療，精準改善下背痛與腳麻問題。',
     diseases: [
@@ -146,7 +146,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     slug: 'shoulder',
     title: '肩膀',
     description: '肩膀相關疾病',
-    imageUrl: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&q=80&w=800',
+    image: '/images/diseases/b.jpg',
     seoKeywords: ['新竹五十肩治療', '肩膀痛', '旋轉肌破裂', '鈣化性肌腱炎', '新竹物理治療'],
     seoDescription: '肩膀痛手舉不起來？新竹五十肩與旋轉肌撕裂治療推薦。免開刀肩關節擴張術與PRP修復，解決夜間痛醒與活動受限問題。',
     diseases: [
@@ -192,7 +192,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     slug: 'elbow',
     title: '手肘',
     description: '手肘相關疾病',
-    imageUrl: 'https://images.unsplash.com/photo-1563854583162-4414f553b6c2?auto=format&fit=crop&q=80&w=800',
+    image: '/images/diseases/c.jpg',
     seoKeywords: ['網球肘治療', '高爾夫球肘', '手肘痛', '新竹震波推薦'],
     seoDescription: '手肘外側痛擰毛巾沒力？專治網球肘與高爾夫球肘。引進瑞士聚焦式震波治療，有效修復肌腱發炎，恢復手臂力量。',
     diseases: [
@@ -238,7 +238,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     slug: 'hand',
     title: '手部',
     description: '手部相關疾病',
-    imageUrl: 'https://images.unsplash.com/photo-1599447292180-45fd84092ef0?auto=format&fit=crop&q=80&w=800',
+    image: '/images/diseases/d.jpg',
     seoKeywords: ['板機指微創手術', '媽媽手治療', '腕隧道症候群', '手麻', '新竹手外科'],
     seoDescription: '手指卡住或手麻刺痛？專治板機指、媽媽手與腕隧道症候群。提供超音波導引注射與微創手術諮詢，快速緩解手部疼痛。',
     diseases: [
@@ -284,7 +284,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     slug: 'knee',
     title: '膝蓋',
     description: '膝蓋相關疾病',
-    imageUrl: 'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=800',
+    image: '/images/diseases/e.jpg',
     seoKeywords: ['退化性關節炎治療', '膝蓋痛打針', 'PRP膝蓋', '半月板破裂', '新竹骨科膝蓋'],
     seoDescription: '膝蓋退化上下樓梯痛？新竹退化性膝關節炎治療首選。提供玻尿酸潤滑與PRP軟骨修復療程。免開刀改善半月板受損與十字韌帶損傷。',
     diseases: [
@@ -346,7 +346,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     slug: 'ankle',
     title: '足踝',
     description: '足踝相關疾病',
-    imageUrl: 'https://images.unsplash.com/photo-1516585102717-5730d1e5927c?auto=format&fit=crop&q=80&w=800',
+    image: '/images/diseases/f.jpg',
     seoKeywords: ['足底筋膜炎治療', '腳踝扭傷復健', '阿基里斯腱發炎', '腳跟痛', '扁平足'],
     seoDescription: '足底筋膜炎下床好痛？新竹震波治療推薦。專治腳踝扭傷後遺症與阿基里斯腱發炎。提供客製化足弓鞋墊與復健運動指導，徹底解決足部疼痛。',
     diseases: [

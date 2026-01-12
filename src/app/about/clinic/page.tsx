@@ -19,10 +19,10 @@ export default function ClinicPage() {
     '@context': 'https://schema.org',
     '@type': 'MedicalClinic',
     name: '宸新復健科診所',
-    image: 'https://dryichen-4ze1.vercel.app/images/clinic-cover.jpg', // 建議補一張診所外觀圖
+    image: 'https://dryichen-4ze1.vercel.app/images/clinic-cover.jpg',
     description: '提供全方位骨科復健與兒童發展評估的專業診所。',
     address: { '@type': 'PostalAddress', addressLocality: '新竹市' },
-    amenityFeature: facilitiesData.map(f => ({
+     amenityFeature: facilitiesData.map(f => ({
        '@type': 'LocationFeatureSpecification',
        name: f.title,
        value: true
@@ -34,7 +34,9 @@ export default function ClinicPage() {
       <JsonLd data={jsonLdClinic} />
 
       <div className="min-h-screen bg-slate-900 text-slate-300 py-12 md:py-16 fade-in">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* ✨ 修正重點：改為 max-w-7xl (與疾病頁面統一寬度) */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <Link href="/about" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group">
              <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回關於我們
@@ -48,14 +50,16 @@ export default function ClinicPage() {
               </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* ✨ 修正重點：grid-cols-1 md:grid-cols-2 lg:grid-cols-3 (確保與疾病頁面完全一致的 RWD 切分) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {facilitiesData.map((item) => (
               <Link 
                 key={item.id} 
                 href={`/about/clinic/${item.id}`} 
                 className="group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col"
               >
-                 <div className="h-56 overflow-hidden relative">
+                 {/* ✨ 修正重點：h-48 (統一高度) */}
+                 <div className="h-48 overflow-hidden relative bg-slate-800">
                     <img 
                       src={item.imageUrl} 
                       alt={item.title} 
@@ -65,16 +69,18 @@ export default function ClinicPage() {
                  </div>
                  
                  <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors flex items-center justify-between">
+                    <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors flex items-center justify-between">
                        {item.title}
-                       <i className="fa-solid fa-angle-right opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-sm"></i>
+                       <i className="fa-solid fa-angle-right opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all text-sm"></i>
                     </h3>
-                    <p className="text-slate-400 line-clamp-3 mb-4 flex-grow text-sm leading-relaxed">
+                    
+                    <p className="text-slate-400 line-clamp-2 mb-4 flex-grow text-sm leading-relaxed">
                        {item.description}
                     </p>
+                    
                     <div className="text-right mt-auto">
-                       <span className="text-cyan-500 text-sm font-bold group-hover:underline decoration-cyan-500/50 underline-offset-4">
-                         了解更多
+                       <span className="text-cyan-400 font-semibold text-sm group-hover:underline decoration-cyan-400/50 underline-offset-4">
+                         了解更多 <i className="fa-solid fa-arrow-right ml-1 text-xs"></i>
                        </span>
                     </div>
                  </div>

@@ -77,7 +77,7 @@ const aboutSections = [
     subtitle: 'Clinic Information',
     description: '舒適寬敞的復健空間，配備醫學中心等級的檢查與治療設備，提供高品質的醫療服務。',
     href: '/about/clinic',
-    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800',
+    image: '/images/about/b.jpg',
     icon: 'fa-solid fa-hospital'
   },
   {
@@ -86,7 +86,7 @@ const aboutSections = [
     subtitle: 'Our Physicians',
     description: '由台大訓練醫師團隊親自看診，結合骨科與復健科專業，提供全方位的疼痛治療方案。',
     href: '/about/doctors',
-    image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800',
+    image: '/images/about/a.jpg',
     icon: 'fa-solid fa-user-doctor'
   }
 ]
@@ -112,19 +112,18 @@ export default function AboutPage() {
           </div>
 
           {/* ============================================================
-              ✨ SEO 導言區
-              修正重點：
-              1. 外層 div 維持 mx-auto (區塊置中)
-              2. 內部 span 加回 border-l-4 (藍色線條)
-              3. 內部文字改回 text-left (靠左對齊)
+              ✨ SEO 導言區 (修正版)
+              1. max-w-3xl + mx-auto: 設定固定寬度並置中，這是避免內容跳動的關鍵。
+              2. border-l-4 在 details 上: 確保線條會隨內容延伸。
+              3. text-left: 確保文字緊貼左側藍線。
              ============================================================ */}
-          <div className="mb-12 max-w-4xl mx-auto">
-                <details className="group">
+          <div className="mb-12 max-w-3xl mx-auto">
+                <details className="group border-l-4 border-cyan-500 pl-4">
                     {/* Summary: 永遠顯示的第一段 */}
-                    <summary className="list-none text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none">
-                        {/* 這裡加回 border-l-4 和 text-left */}
-                        <span className="inline-block border-l-4 border-cyan-500 pl-4 h-full text-left">
-                            我們是<strong className="text-cyan-400 font-normal">新竹推薦</strong>的首選復健專科診所。由<strong className="text-cyan-400 font-normal">台大醫師</strong>、前台大醫院主治醫師<strong className="text-cyan-400 font-normal">林羿辰醫師</strong>親自主持。
+                    {/* list-none 與 [&::-webkit-details-marker]:hidden 用來隱藏原生三角形，避免移位 */}
+                    <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left">
+                        <span className="inline-block h-full">
+                            我們是<strong className="text-cyan-400 font-normal">新竹推薦</strong>的首選復健專科診所。由<strong className="text-cyan-400 font-normal">台大醫師</strong>、前馬偕醫院主治醫師<strong className="text-cyan-400 font-normal">林羿辰醫師</strong>親自主持。
                             
                             {/* 展開提示文字 */}
                             <span className="group-open:hidden">
@@ -136,8 +135,8 @@ export default function AboutPage() {
                         </span>
                     </summary>
                     
-                    {/* 展開後的詳細內容 (SEO 關鍵字寶庫) - 靠左對齊並縮排 */}
-                    <div className="mt-4 text-lg text-slate-400 leading-relaxed text-left pl-5 animate-in fade-in slide-in-from-top-1 duration-300">
+                    {/* 展開後的詳細內容 */}
+                    <div className="mt-4 text-lg text-slate-400 leading-relaxed text-left animate-in fade-in slide-in-from-top-1 duration-300">
                         <p className="mb-4">
                             宸新復健科座落於繁華的<strong className="text-cyan-400 font-normal">新竹東區</strong>核心地帶，緊鄰<strong className="text-cyan-400 font-normal">新竹科學園區 (竹科)</strong> 與熱鬧的<strong className="text-cyan-400 font-normal">關埔重劃區</strong>。
                         </p>
@@ -145,7 +144,7 @@ export default function AboutPage() {
                             診所位置交通極其便利，位於<strong className="text-cyan-400 font-normal">光復路</strong>與<strong className="text-cyan-400 font-normal">關新路</strong>交界處附近。無論您是住在關新社區的居民，或是下班後從竹科過來的工程師，甚至是剛逛完 <strong className="text-cyan-400 font-normal">Costco (好市多)</strong> 的民眾，都能輕鬆抵達。
                         </p>
                         <p>
-                            為了解決新竹市區停車困難的問題，我們特別規劃了<strong className="text-cyan-400 font-normal">專屬停車位</strong>，讓您就醫復健不再為了找車位而煩惱。我們提供骨科痛症、運動傷害、兒童早療等全方位治療。
+                            為了解決新竹市區停車困難的問題，我們特別規劃了<strong className="text-cyan-400 font-normal">專屬停車位</strong>，讓您就醫復健不再為了找車位而煩惱。我們提供骨科疼痛、運動傷害、增生注射、高階儀器、兒童早療等全方位治療。
                         </p>
                     </div>
                 </details>

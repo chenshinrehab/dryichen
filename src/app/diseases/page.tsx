@@ -2,11 +2,10 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
-// 確保您有這個資料檔
 import { diseaseCategories } from '@/data/diseases'
 
 // ==========================================
-// 1. Meta 設定 (針對指定關鍵字優化)
+// 1. Meta 設定
 // ==========================================
 export const metadata: Metadata = {
   title: '新竹骨科/復健科推薦 - 椎間盤突出/五十肩/關節炎/痠麻痛治療 | 宸新復健科',
@@ -27,7 +26,6 @@ const diseasesSchema = {
         { '@type': 'ListItem', position: 2, name: '疾病衛教', item: 'https://dryichen-4ze1.vercel.app/diseases' },
       ],
     },
-    // 醫療網頁標記 (明確定義為醫療知識頁面)
     {
       '@type': 'MedicalWebPage',
       'name': '骨科復健疾病衛教',
@@ -56,8 +54,10 @@ export default function DiseasesPage() {
         <main className="flex-grow py-12 md:py-16 fade-in">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            {/* 標題區 */}
-            <div className="flex items-center gap-3 mb-6 pl-2">
+            {/* ============================================================
+                ✨ 標題區塊 (置中)
+               ============================================================ */}
+            <div className="flex items-center justify-center gap-3 mb-10">
                 <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
                     <i className="fa-solid fa-book-medical text-xl"></i>
                 </span>
@@ -66,26 +66,25 @@ export default function DiseasesPage() {
                 </h1>
             </div>
 
-            {/* SEO 導言區 (原生 Details 收合設計 - 埋入大量關鍵字) */}
-            <div className="mb-10 pl-2 max-w-4xl">
-                <details className="group">
-                    {/* Summary: 永遠顯示的第一段 */}
-                    <summary className="list-none text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none">
-                        <span className="inline-block border-l-4 border-cyan-500 pl-4 h-full">
-                           身體的疼痛不能只靠止痛藥。作為專業的<strong className="text-cyan-400 font-normal">新竹骨科</strong>與<strong className="text-cyan-400 font-normal">新竹復健科</strong>診所，我們重視精確的鑑別診斷。
-                           
-                           {/* 展開提示文字 */}
-                           <span className="group-open:hidden">
-                               ... 
-                               <span className="ml-1 text-sm text-cyan-500 hover:text-cyan-400 hover:underline underline-offset-4 font-semibold">
-                                 了解更多 <i className="fa-solid fa-chevron-down text-xs"></i>
-                               </span>
-                           </span>
+            {/* ============================================================
+                ✨ SEO 導言區 (置中 + 左側藍線)
+               ============================================================ */}
+            <div className="mb-12 max-w-3xl mx-auto">
+                <details className="group border-l-4 border-cyan-500 pl-4">
+                    <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left">
+                        <span className="inline-block h-full">
+                            身體的疼痛不能只靠止痛藥。作為專業的<strong className="text-cyan-400 font-normal">新竹復健科骨科</strong>診所，我們重視精確的鑑別診斷。
+                            
+                            <span className="group-open:hidden">
+                                ... 
+                                <span className="ml-1 text-sm text-cyan-500 hover:text-cyan-400 hover:underline underline-offset-4 font-semibold">
+                                    了解更多 <i className="fa-solid fa-chevron-down text-xs"></i>
+                                </span>
+                            </span>
                         </span>
                     </summary>
                     
-                    {/* 展開後的詳細內容 (SEO 關鍵字寶庫) */}
-                    <div className="mt-2 text-lg text-slate-400 leading-relaxed pl-5 animate-in fade-in slide-in-from-top-1 duration-300">
+                    <div className="mt-4 text-lg text-slate-400 leading-relaxed text-left animate-in fade-in slide-in-from-top-1 duration-300">
                         <p className="mb-4">
                             無論是現代文明病造成的<strong className="text-cyan-400 font-normal">肩頸痠痛</strong>與<strong className="text-cyan-400 font-normal">背痛</strong>，或是困擾中老年人的<strong className="text-cyan-400 font-normal">五十肩</strong>與膝蓋<strong className="text-cyan-400 font-normal">退化性關節炎</strong>，我們都能提供完整的治療計畫。
                         </p>
@@ -96,52 +95,72 @@ export default function DiseasesPage() {
                 </details>
             </div>
             
-            {/* 卡片列表 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            {/* ============================================================
+                ✨ 卡片列表 (3欄 + 直式設計)
+                1. lg:grid-cols-3: 電腦版一排3個
+                2. h-48: 圖片高度固定
+                3. flex-col: 直式排列
+               ============================================================ */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
               {diseaseCategories.map((category) => (
                 <Link
                   key={category.slug}
                   href={`/diseases/${category.slug}`}
-                  // 套用統一的卡片樣式：半透明背景 + 霓虹邊框 + 懸浮上移
-                  className="bg-slate-800/50 backdrop-blur border border-slate-700 p-6 rounded-xl hover:border-cyan-500/50 transition-all hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] group hover:-translate-y-1 cursor-pointer flex flex-col"
+                  className="group bg-slate-800/50 border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col"
                 >
-                  <h2 className="text-xl font-bold text-cyan-400 mb-3 group-hover:text-cyan-300 transition-colors flex items-center justify-between">
-                    {category.title}
-                    <i className="fa-solid fa-angle-right opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all text-sm"></i>
-                  </h2>
-                  
-                  <p className="text-slate-400 text-sm mb-6 leading-relaxed flex-grow">
-                    {category.description}
-                  </p>
+                  {/* 1. 圖片區塊 (上) */}
+                  <div className="h-48 overflow-hidden relative bg-slate-800">
+                     <img 
+                       src={category.image} 
+                       alt={`${category.title} - 新竹骨科復健`} 
+                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" 
+                     />
+                     {/* 遮罩 */}
+                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
+                  </div>
 
-                  {/* 底部收錄項目預覽 (綠色左邊框風格) */}
-                  <div className="bg-slate-900/50 p-3 rounded border-l-2 border-green-500 mt-auto">
-                      <div className="flex justify-between items-center mb-2">
-                        <h4 className="font-semibold text-slate-200 text-sm">收錄項目</h4>
-                        <span className="text-xs bg-slate-800 text-green-400 px-2 py-0.5 rounded-full border border-green-900/50">
-                            共 {category.diseases.length} 項
-                        </span>
-                      </div>
-                      
-                      {/* 用 tag 形式列出前幾個疾病，增加點擊慾望並提供爬蟲關鍵字 */}
-                      <div className="flex flex-wrap gap-1">
-                          {category.diseases.slice(0, 3).map((d, idx) => (
-                              <span key={idx} className="text-xs text-slate-400 bg-slate-800 px-2 py-1 rounded border border-slate-700">
-                                  {d.title}
-                              </span>
-                          ))}
-                          {category.diseases.length > 3 && (
-                              <span className="text-xs text-slate-500 px-1 self-center">...</span>
-                          )}
-                      </div>
+                  {/* 2. 文字內容區塊 (下) */}
+                  <div className="p-6 flex flex-col flex-grow">
+                    <div className="flex justify-between items-start mb-3">
+                        <h2 className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                            {category.title}
+                        </h2>
+                    </div>
+                    
+                    {/* 描述 (限制2行) */}
+                    <p className="text-slate-400 mb-4 line-clamp-2 flex-grow text-sm leading-relaxed">
+                      {category.description}
+                    </p>
+
+                    {/* 收錄項目 (標籤樣式 - 顯示前3個) */}
+                    {category.diseases && category.diseases.length > 0 && (
+                        <div className="flex flex-wrap gap-2 mb-4">
+                            {category.diseases.slice(0, 3).map((d, idx) => (
+                                <span key={idx} className="text-xs bg-slate-900 text-slate-300 px-2 py-1 rounded border border-slate-700">
+                                    {d.title}
+                                </span>
+                            ))}
+                            {category.diseases.length > 3 && (
+                                <span className="text-xs text-slate-500 px-1 self-center">...</span>
+                            )}
+                        </div>
+                    )}
+                    
+                    {/* 底部連結文字 */}
+                    <div className="mt-auto text-right">
+                         <span className="text-cyan-400 font-semibold text-sm group-hover:underline decoration-cyan-400/50 underline-offset-4">
+                           了解更多及治療建議 <i className="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                         </span>
+                    </div>
                   </div>
                 </Link>
               ))}
             </div>
 
-            {/* 3. 專業信任區塊 (E-E-A-T 強化 - 診斷的重要性) */}
+            {/* ============================================================
+                ✨ 專業信任區塊 (保持不變)
+               ============================================================ */}
             <div className="bg-slate-800/80 rounded-2xl p-8 border border-slate-700 relative overflow-hidden">
-                {/* 裝飾背景 */}
                 <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>
                 
                 <div className="relative z-10 flex flex-col md:flex-row gap-8 items-start">

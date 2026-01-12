@@ -29,7 +29,8 @@ export const treatments: Treatment[] = [
     title: '增生療法 / PRP',
     subtitle: '超音波導引、高濃度血小板注射',
     description: '透過注射高濃度血小板血漿 (PRP) 或高濃度葡萄糖，精準修復受損關節與韌帶。',
-    
+    // 圖片：注射/實驗室示意
+    image: '/images/treatments/a.jpg',
     // SEO 設定
     seoTitle: '新竹PRP注射推薦 - 膝蓋退化/旋轉肌破裂/網球肘 | 宸新復健科',
     seoDescription: '新竹PRP增生療法首選。林羿辰醫師親自執行高解析超音波導引注射，將高濃度血小板精準送達病灶。免開刀治療退化性關節炎、半月軟骨受損與韌帶撕裂，啟動身體修復力。',
@@ -98,6 +99,8 @@ export const treatments: Treatment[] = [
     title: '聚焦式 / 發散式體外震波',
     subtitle: '瑞士頂級設備、擊碎鈣化與骨刺',
     description: '引進瑞士頂級震波設備，免開刀擊碎鈣化點，專治足底筋膜炎與頑固疼痛。',
+    // 圖片：醫療儀器/物理治療
+    image: '/images/treatments/b.jpg',
     youtubeVideoId: '3OK5zeUBeGc',
     
     // SEO 設定
@@ -161,7 +164,8 @@ export const treatments: Treatment[] = [
     title: '徒手治療',
     subtitle: '物理治療師一對一、骨骼筋膜調整',
     description: '專業物理治療師一對一評估，調整骨盆歪斜、脊椎側彎與筋膜放鬆。',
-    
+    // 圖片：兒童積木/學習
+    image: '/images/treatments/c.jpg',
     // SEO 設定
     seoTitle: '新竹徒手治療推薦 - 脊椎側彎矯正/骨盆歪斜/筋膜放鬆 | 宸新復健科',
     seoDescription: '新竹專業物理治療師一對一徒手治療。針對脊椎側彎、骨盆前傾/歪斜、產後喬骨盆、長短腳及術後關節沾黏，提供客製化的骨骼調整與筋膜放鬆療程，從根本改善體態與疼痛。',

@@ -5,7 +5,7 @@ import JsonLd from '@/components/JsonLd'
 import { treatments } from '@/data/treatments'
 
 // ==========================================
-// 1. Meta 設定 (針對指定關鍵字優化)
+// 1. Meta 設定
 // ==========================================
 export const metadata: Metadata = {
   title: '新竹PRP/增生注射/震波/徒手治療 - 超音波導引骨科復健 | 宸新復健科',
@@ -30,7 +30,6 @@ const treatmentsSchema = {
         { '@type': 'ListItem', position: 2, name: '治療項目', item: 'https://dryichen-4ze1.vercel.app/treatments' },
       ],
     },
-    // 醫療網頁標記 (明確標示為醫療服務總覽)
     {
       '@type': 'MedicalWebPage',
       'name': '復健治療項目總覽',
@@ -39,7 +38,7 @@ const treatmentsSchema = {
       'reviewedBy': {
         '@type': 'Physician',
         'name': '林羿辰 醫師',
-        'url': 'https://dryichen-4ze1.vercel.app/about/doctors'
+        'url': 'https://dryichen.vercel.app/about/doctors'
       },
       'specialty': [
         { '@type': 'MedicalSpecialty', 'name': 'Orthopedics' },
@@ -58,10 +57,13 @@ export default function TreatmentsPage() {
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
         <main className="flex-grow py-12 md:py-16 fade-in">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* 容器改為 max-w-5xl 以符合統一寬度 */}
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            {/* 標題區 */}
-            <div className="flex items-center gap-3 mb-6 pl-2">
+            {/* ============================================================
+                ✨ 標題區塊 (統一置中樣式)
+               ============================================================ */}
+            <div className="flex items-center justify-center gap-3 mb-10">
                 <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
                     <i className="fa-solid fa-notes-medical text-xl"></i>
                 </span>
@@ -70,81 +72,100 @@ export default function TreatmentsPage() {
                 </h1>
             </div>
 
-            {/* SEO 導言區 (原生 Details 收合設計) */}
-            <div className="mb-10 pl-2 max-w-4xl">
-                <details className="group">
-                    {/* Summary: 永遠顯示的第一段 (包含核心地點與服務) */}
-                    <summary className="list-none text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none">
-                        <span className="inline-block border-l-4 border-cyan-500 pl-4 h-full">
-                           宸新復健科致力於提供最先進的<strong className="text-cyan-400 font-normal">新竹骨科</strong>復健治療，結合醫學影像與運動科學，為您解決長期疼痛。
-                           
-                           {/* 展開提示文字 */}
-                           <span className="group-open:hidden">
-                               ... 
-                               <span className="ml-1 text-sm text-cyan-500 hover:text-cyan-400 hover:underline underline-offset-4 font-semibold">
-                                 了解更多 <i className="fa-solid fa-chevron-down text-xs"></i>
-                               </span>
-                           </span>
+            {/* ============================================================
+                ✨ SEO 導言區 (統一置中樣式)
+               ============================================================ */}
+            <div className="mb-12 max-w-3xl mx-auto">
+                <details className="group border-l-4 border-cyan-500 pl-4">
+                    {/* Summary */}
+                    <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left">
+                        <span className="inline-block h-full">
+                            宸新復健科致力於提供最先進的<strong className="text-cyan-400 font-normal">新竹骨科</strong>復健治療，結合醫學影像與運動科學，為您解決長期疼痛。
+                            
+                            <span className="group-open:hidden">
+                                ... 
+                                <span className="ml-1 text-sm text-cyan-500 hover:text-cyan-400 hover:underline underline-offset-4 font-semibold">
+                                    了解更多 <i className="fa-solid fa-chevron-down text-xs"></i>
+                                </span>
+                            </span>
                         </span>
                     </summary>
                     
-                    {/* 展開後的詳細內容 (包含豐富的長尾關鍵字：適應症、治療技術) */}
-                    <div className="mt-2 text-lg text-slate-400 leading-relaxed pl-5 animate-in fade-in slide-in-from-top-1 duration-300">
+                    {/* Content */}
+                    <div className="mt-4 text-lg text-slate-400 leading-relaxed text-left animate-in fade-in slide-in-from-top-1 duration-300">
                         <p className="mb-4">
-                            我們特別引進高解析度<strong className="text-cyan-400 font-normal">超音波導引注射</strong>技術，讓<strong className="text-cyan-400 font-normal">新竹PRP</strong> (高濃度血小板) 與<strong className="text-cyan-400 font-normal">新竹增生注射</strong>治療能精準修復受損組織，大幅提升<strong>退化性關節炎</strong>與<strong>肌腱撕裂</strong>的療效。
+                            我們特別引進高解析度<strong className="text-cyan-400 font-normal">超音波導引注射</strong>技術，讓<strong className="text-cyan-400 font-normal">PRP</strong> (高濃度血小板) 與<strong className="text-cyan-400 font-normal">增生注射</strong>治療能精準修復受損組織，大幅提升<strong>退化性關節炎</strong>與<strong>肌腱撕裂</strong>的療效。
                         </p>
                         <p>
-                            針對慢性疼痛與術後恢復，我們配備高能量<strong className="text-cyan-400 font-normal">新竹體外震波</strong>儀器，專治<strong>足底筋膜炎</strong>與<strong>鈣化性肌腱炎</strong>。並由資深治療師提供一對一的<strong className="text-cyan-400 font-normal">新竹徒手治療</strong>與運動指導，全方位解決您的疼痛困擾。
+                            針對慢性疼痛與術後恢復，我們配備高能量<strong className="text-cyan-400 font-normal">體外震波</strong>儀器，專治<strong>足底筋膜炎</strong>與<strong>鈣化性肌腱炎</strong>。並由資深治療師提供一對一的<strong className="text-cyan-400 font-normal">徒手治療</strong>與運動指導，全方位解決您的疼痛困擾。
                         </p>
                     </div>
                 </details>
             </div>
             
-            {/* 卡片列表 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            {/* ============================================================
+                ✨ 卡片列表 (長條橫式)
+               ============================================================ */}
+            <div className="grid grid-cols-1 gap-8 mb-16">
               {treatments.map((treatment) => (
                 <Link
                   key={treatment.slug}
                   href={`/treatments/${treatment.slug}`}
-                  // 統一的高質感卡片樣式：半透明 + 霓虹邊框 + 懸浮效果
-                  className="bg-slate-800/50 backdrop-blur border border-slate-700 p-6 rounded-xl hover:border-cyan-500/50 transition-all hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] group hover:-translate-y-1 cursor-pointer flex flex-col"
+                  // 統一的高質感卡片樣式：半透明 + 霓虹邊框 + 懸浮效果 + 橫式排列
+                  className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
                 >
-                  <h2 className="text-xl font-bold text-cyan-400 mb-3 group-hover:text-cyan-300 transition-colors">
-                    {treatment.title}
-                  </h2>
-                  <p className="text-slate-400 text-sm mb-4 leading-relaxed flex-grow">
-                    {treatment.description}
-                  </p>
-                  
-                  {/* 適用症狀區塊 (增加內連權重) */}
-                  {treatment.applicableConditions && treatment.applicableConditions.length > 0 && (
-                    <div className="bg-slate-900/50 p-3 rounded border-l-2 border-green-500 mt-auto">
-                        <h4 className="font-semibold text-slate-200 mb-1 text-sm">適用症狀：</h4>
-                        <div className="flex flex-wrap gap-1">
-                            {treatment.applicableConditions.slice(0, 4).map((condition, idx) => (
-                                <span key={idx} className="text-xs text-slate-400 bg-slate-800 px-2 py-1 rounded border border-slate-700">
-                                    {condition}
-                                </span>
-                            ))}
-                            {treatment.applicableConditions.length > 4 && (
-                                <span className="text-xs text-slate-500 px-1 self-center">...</span>
-                            )}
-                        </div>
-                    </div>
-                  )}
+                  {/* 左側：圖片區塊 (2/5) */}
+                  <div className="w-full md:w-2/5 relative h-48 md:h-full overflow-hidden">
+                    <img 
+                      src={treatment.image} 
+                      alt={`${treatment.title} - 新竹推薦`}
+                      className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/90 to-transparent"></div>
+                  </div>
 
-                  <div className="mt-4 text-right">
-                      <span className="text-xs text-cyan-500 group-hover:underline decoration-cyan-500/50 underline-offset-4">
-                        了解更多 →
-                      </span>
+                  {/* 右側：文字內容區塊 (3/5) */}
+                  <div className="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center relative">
+                    {/* 裝飾 Icon */}
+                    <i className="fa-solid fa-file-medical absolute right-4 bottom-4 text-8xl text-slate-800/50 -rotate-12 group-hover:text-cyan-900/30 transition-colors duration-500 pointer-events-none"></i>
+                    
+                    <div className="relative z-10 h-full flex flex-col justify-center">
+                        {/* 標題 */}
+                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors flex items-center">
+                            {treatment.title}
+                            <i className="fa-solid fa-arrow-right opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-2 transition-all ml-3 text-lg text-cyan-500"></i>
+                        </h2>
+                        
+                        {/* 描述 (限制 2 行) */}
+                        <p className="text-slate-300 text-lg mb-4 line-clamp-2">
+                            {treatment.description}
+                        </p>
+                        
+                        {/* 適用症狀 (從下方移上來，限制高度以符合卡片) */}
+                        {treatment.applicableConditions && treatment.applicableConditions.length > 0 && (
+                            <div className="mt-auto">
+                                <div className="flex flex-wrap gap-2">
+                                    {treatment.applicableConditions.slice(0, 4).map((condition, idx) => (
+                                        <span key={idx} className="text-sm bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded border border-cyan-500/20">
+                                            <i className="fa-solid fa-check mr-1 text-xs"></i>{condition}
+                                        </span>
+                                    ))}
+                                    {treatment.applicableConditions.length > 4 && (
+                                        <span className="text-sm text-slate-500 px-2 py-1">...</span>
+                                    )}
+                                </div>
+                            </div>
+                        )}
+                    </div>
                   </div>
                 </Link>
               ))}
             </div>
 
-            {/* 3. 專業理念區塊 (E-E-A-T 強化) */}
+            {/* ============================================================
+                ✨ 專業理念區塊 (保持不變)
+               ============================================================ */}
             <div className="bg-slate-800/80 rounded-2xl p-8 border border-slate-700 relative overflow-hidden">
-                {/* 裝飾背景 */}
                 <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>
                 
                 <div className="relative z-10 flex flex-col md:flex-row gap-8 items-start">

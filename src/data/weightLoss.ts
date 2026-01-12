@@ -31,6 +31,8 @@ export const weightLossPrograms: WeightLossProgram[] = [
     title: '猛健樂 (Mounjaro)',
     subtitle: '新一代雙重腸泌素受體促效劑',
     description: '新一代雙重腸泌素(GIP/GLP-1)受體促效劑，提供更卓越的體重控制效果。',
+    // ✨ 新增圖片：醫師諮詢/藥物示意
+    image: '/images/weight-loss/a.jpg',
     features: ['一週一次', '抑制食慾', '延緩胃排空'],
     
     // ✨ SEO 強力優化
@@ -94,6 +96,7 @@ export const weightLossPrograms: WeightLossProgram[] = [
     title: '週纖達 (Ozempic)',
     subtitle: 'GLP-1 受體促效劑',
     description: '協助控制體重的注射藥物，幫助您減少飢餓感，輕鬆達成減重目標。',
+    image: '/images/weight-loss/b.jpg',
     features: ['穩定血糖', '減少體脂肪堆積'],
     
     // ✨ SEO 強力優化
@@ -151,6 +154,8 @@ export const weightLossPrograms: WeightLossProgram[] = [
     title: '兒童骨齡評估',
     subtitle: '掌握黃金生長發育期',
     description: '透過左手X光片判讀骨骼成熟度，預測成年身高，掌握黃金生長發育期。',
+    // ✨ 新增圖片：兒童測量身高
+    image: '/images/weight-loss/c.jpg',
     features: ['性早熟', '生長遲緩', '想了解身高潛力的兒童'],
     
     // ✨ SEO 強力優化
