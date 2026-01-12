@@ -18,7 +18,7 @@ export interface DiseaseCategory {
   slug: string
   title: string
   description: string
-  imageUrl?: string       // 類別封面圖
+  image: string
   diseases: DiseaseItem[]
   
   // SEO 欄位
