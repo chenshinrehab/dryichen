@@ -4,3 +4,15 @@ http://localhost:3000/weight-bone
 
 
 npm run dev
+
+當您去購買網域（例如 chenshin-rehab.com.tw）並綁定 Vercel 後，請務必記得做這最後一件事：
+
+回到您的程式碼：
+
+src/app/page.tsx (Metadata): 修改 metadataBase 為新網域。
+
+src/app/robots.ts: 修改 baseUrl 為新網域。
+
+src/app/sitemap.ts: 修改 baseUrl 為新網域。
+
+為什麼？ 如果您不改，Google 收錄的 Sitemap 連結會一直

@@ -160,7 +160,7 @@ export default function Home() {
                          <div className="h-full w-full min-h-[400px] md:min-h-[500px] relative overflow-hidden">
                             {/* 修正：加入 width/height 防止 CLS (累積版面位移)，雖然 CSS 有設，但 HTML 屬性對 Google 很重要 */}
                             <img 
-                              src="https://duk.tw/UXXvK3.jpg" 
+                              src="/images/main/a.jpg"
                               alt="新竹復健科推薦-林羿辰醫師-台大雙專科院長" 
                               width="800"
                               height="1000"
@@ -251,7 +251,7 @@ export default function Home() {
                         <div className="h-full w-full min-h-[300px] rounded-lg overflow-hidden border border-slate-600 shadow-md relative group">
                            {/* 修正：加入 width/height 防止 CLS */}
                            <img 
-                             src="https://duk.tw/PLVLuz.png" 
+                             src="/images/main/b.jpg"
                              alt="新竹宸新復健科診所外觀 - 位於光復路近竹科與Costco" 
                              width="800"
                              height="600"
@@ -320,7 +320,7 @@ export default function Home() {
                                  
                                  {/* 修正：將 Google Map 連結改為查詢參數，確保能正確導航 */}
                                  <a 
-                                   href="https://www.google.com/maps/search/?api=1&query=新竹市東區光復路一段371號B1" 
+                                   href="https://maps.app.goo.gl/dSe9zVPgnNV7m3jo9" 
                                    target="_blank" 
                                    rel="noopener noreferrer"
                                    className="flex-shrink-0 w-full sm:w-auto text-center px-5 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg hover:shadow-lg hover:shadow-cyan-500/20 transition-all font-medium text-sm whitespace-nowrap group"

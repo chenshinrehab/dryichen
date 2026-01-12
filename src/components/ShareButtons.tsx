@@ -1,7 +1,7 @@
 // src/components/ShareButtons.tsx
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 interface ShareButtonsProps {
   url: string
@@ -10,11 +10,28 @@ interface ShareButtonsProps {
 
 export default function ShareButtons({ url, title }: ShareButtonsProps) {
   const [isCopied, setIsCopied] = useState(false)
+  
+  // ✨ 關鍵修正：確保網址是完整的 (包含 https://...)
+  // 如果傳進來的 url 是 "/about"，我們會自動把它變成 "https://dryichen-4ze1.vercel.app/about"
+  const getFullUrl = () => {
+    // 您的正式網域
+    const domain = 'https://dryichen-4ze1.vercel.app' 
+
+    // 如果 url 已經包含 http，就直接用；否則補上 domain
+    if (url.startsWith('http')) {
+      return url
+    }
+    // 確保路徑開頭有斜線
+    const path = url.startsWith('/') ? url : `/${url}`
+    return `${domain}${path}`
+  }
+
+  const shareUrl = getFullUrl()
 
   // 1. 分享到 LINE (電腦手機皆可)
   const handleLineShare = () => {
     window.open(
-      `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(url)}`,
+      `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(shareUrl)}`,
       '_blank'
     )
   }
@@ -22,7 +39,7 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
   // 2. 分享到 Facebook (電腦手機皆可)
   const handleFBShare = () => {
     window.open(
-      `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
+      `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
       '_blank'
     )
   }
@@ -30,7 +47,7 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
   // 3. 複製網址的共用函式
   const copyLinkToClipboard = async () => {
     try {
-      await navigator.clipboard.writeText(url)
+      await navigator.clipboard.writeText(shareUrl)
       setIsCopied(true)
       setTimeout(() => setIsCopied(false), 2000)
     } catch (err) {
@@ -40,17 +57,17 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
 
   // 4. 分享到 Messenger (智慧判斷)
   const handleMessengerShare = () => {
-    // 檢查是否為行動裝置 (手機/平板)
+    // 檢查是否為行動裝置
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
     )
 
     if (isMobile) {
-      // 手機版：直接喚醒 Messenger App
-      window.location.href = `fb-messenger://share/?link=${encodeURIComponent(url)}`
+      // 手機版：嘗試喚醒 Messenger App
+      // 注意：Messenger App 有時對連結格式很嚴格，使用 encodeURIComponent 是必要的
+      window.location.href = `fb-messenger://share/?link=${encodeURIComponent(shareUrl)}`
     } else {
-      // 電腦版：因為 Meta 限制電腦版分享需 App ID，
-      // 這裡改為「自動複製連結」並提示使用者貼上，體驗會比較順暢。
+      // 電腦版：改為複製連結並提示
       copyLinkToClipboard()
       alert('Messenger 分享功能主要支援手機 App。\n\n已為您複製文章連結，您可以直接貼上對話框傳送給朋友！')
     }
@@ -68,7 +85,7 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
         分享到 LINE
       </button>
 
-      {/* Messenger 分享 (藍色漸層) */}
+      {/* Messenger 分享 */}
       <button
         onClick={handleMessengerShare}
         className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-[#00B2FF] to-[#006AFF] hover:from-[#0099FF] hover:to-[#0055EE] text-white rounded-full transition-all font-bold shadow-lg hover:shadow-[#0099FF]/30 flex items-center justify-center gap-2 transform hover:-translate-y-1"
