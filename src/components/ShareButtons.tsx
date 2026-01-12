@@ -4,7 +4,6 @@
 import { useState, useEffect } from 'react'
 
 interface ShareButtonsProps {
-  // 這裡把 url 變成可選的，因為我們會自動抓取
   url?: string 
   title: string
 }
@@ -13,23 +12,41 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
   const [isCopied, setIsCopied] = useState(false)
   const [shareUrl, setShareUrl] = useState('')
 
-  // ✨ 關鍵修正：自動抓取瀏覽器當下的完整網址
+  // ⚠️ 請在此設定您的正式網址 (結尾不要加斜線)
+  const SITE_DOMAIN = 'https://dryichen-4ze1.vercel.app'
+
   useEffect(() => {
+    // 確保只在客戶端執行
     if (typeof window !== 'undefined') {
-      // 如果有傳入 url 就用傳入的 (需包含 https)，否則就自動抓取當前網址
-      // 這樣可以保證網址絕對正確，不會少路徑
-      if (url && url.startsWith('http')) {
-        setShareUrl(url)
-      } else {
-        setShareUrl(window.location.href)
+      
+      let path = ''
+
+      // 1. 如果父元件有傳入 url (例如 /treatments/prp)
+      if (url) {
+        // 如果傳入的是完整網址 (http開頭)，直接用
+        if (url.startsWith('http')) {
+          setShareUrl(url)
+          return
+        }
+        // 如果是相對路徑，把它存起來
+        path = url.startsWith('/') ? url : `/${url}`
+      } 
+      // 2. 如果沒傳入，自動抓取當前頁面的「路徑」 (pathname)
+      else {
+        path = window.location.pathname // 這裡只抓路徑，例如 /about，不抓 domain
       }
+
+      // 3. 組合：正式網域 + 路徑
+      // 這樣就算您在 localhost:3000 測試，分享出去的也會是 https://dryichen...
+      setShareUrl(`${SITE_DOMAIN}${path}`)
     }
   }, [url])
 
-  // 如果還沒抓到網址，先不要渲染按鈕，避免錯誤
+  // 防止空網址渲染
   if (!shareUrl) return null
 
-  // 1. 分享到 LINE
+  // --- 分享功能實作 ---
+
   const handleLineShare = () => {
     window.open(
       `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(shareUrl)}`,
@@ -37,7 +54,6 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
     )
   }
 
-  // 2. 分享到 Facebook
   const handleFBShare = () => {
     window.open(
       `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
@@ -45,7 +61,6 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
     )
   }
 
-  // 3. 複製網址
   const copyLinkToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(shareUrl)
@@ -56,7 +71,6 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
     }
   }
 
-  // 4. 分享到 Messenger
   const handleMessengerShare = () => {
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
