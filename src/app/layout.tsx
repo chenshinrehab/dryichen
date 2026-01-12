@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   // ✨ 修正位置：這行必須放在 metadata 物件的大括號裡面
   // 這行是用來解決 "metadata.metadataBase is missing" 的警告，並幫助 SEO 抓圖片
-  metadataBase: new URL('https://dryichen-4ze1.vercel.app'), 
+  metadataBase: new URL('https://www.dryichen.com.tw'), 
 
   title: '新竹宸新復健科診所 - 林羿辰醫師',
   description: '新竹推薦復健科，提供PRP注射、震波治療、徒手治療、兒童骨齡評估。',
