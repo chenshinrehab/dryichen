@@ -22,7 +22,7 @@ export default function Footer() {
     // 3. 設定一個固定的「錨點時間」
     // 設定為 2024-01-01，這樣現在看到的數字會累積到一個合理的量 (約 15~16萬)
     // 且因為時間只會前進，數字永遠只會增加，不會減少
-    const ANCHOR_DATE = new Date('2024-01-01T00:00:00').getTime();
+    const ANCHOR_DATE = new Date('2026-01-10T00:00:00').getTime();
 
     const calculateViews = () => {
       const now = Date.now();

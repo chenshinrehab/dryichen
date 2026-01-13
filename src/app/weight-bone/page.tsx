@@ -51,7 +51,7 @@ export default function WeightLossPage() {
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
-        <main className="flex-grow py-12 md:py-16 fade-in">
+      <main className="max-w-5xl mx-auto px-4 pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
             {/* ============================================================

@@ -97,7 +97,7 @@ export default function AboutPage() {
       <JsonLd data={aboutSchema} />
 
       <div className="min-h-screen bg-slate-900 text-slate-300">
-        <main className="max-w-5xl mx-auto px-4 py-12 md:py-16 fade-in">
+      <main className="max-w-5xl mx-auto px-4 pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
           
           {/* ============================================================
               ✨ 標題區塊 (置中版)
