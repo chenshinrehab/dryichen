@@ -71,7 +71,11 @@ export default function NewsDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLdArticle} />
       <JsonLd data={jsonLdBreadcrumb} />
 
-      <div className="min-h-screen bg-slate-900 text-slate-300 py-12 fade-in">
+      {/* ✨ 修改重點：
+          原為 py-12 (上下 48px)
+          改為 pt-4 (上 16px) pb-12 (下 48px)
+      */}
+      <div className="min-h-screen bg-slate-900 text-slate-300 pt-4 pb-12 fade-in">
         <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* 麵包屑導航 */}
@@ -101,11 +105,11 @@ export default function NewsDetailPage({ params }: PageProps) {
                             <span className="text-slate-400 flex items-center bg-slate-900/50 px-3 py-1 rounded-full border border-slate-700">
                                 <i className="fa-regular fa-calendar mr-2"></i>{post.date}
                             </span>
-                         </div>
-                         <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">{post.title}</h1>
-                         <p className="text-lg text-slate-400 border-l-4 border-cyan-500 pl-4 italic">
+                          </div>
+                          <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">{post.title}</h1>
+                          <p className="text-lg text-slate-400 border-l-4 border-cyan-500 pl-4 italic">
                             {post.summary}
-                         </p>
+                          </p>
                       </div>
 
                       {/* QR Code */}
@@ -126,7 +130,7 @@ export default function NewsDetailPage({ params }: PageProps) {
 
               {/* 文章內容 */}
               <div className="p-6 md:p-10">
-                 <div 
+                  <div 
                     className="prose prose-invert prose-lg max-w-none 
                                prose-headings:text-cyan-50 prose-headings:font-bold
                                prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-4 prose-h2:border-b prose-h2:border-slate-700 prose-h2:pb-2
@@ -136,8 +140,8 @@ export default function NewsDetailPage({ params }: PageProps) {
                                prose-strong:text-white prose-strong:font-bold
                                prose-ul:list-disc prose-ul:pl-6 prose-li:text-slate-300 prose-li:mb-2
                                "
-                    dangerouslySetInnerHTML={{ __html: post.contentHtml }} 
-                 />
+                     dangerouslySetInnerHTML={{ __html: post.contentHtml }} 
+                  />
               </div>
 
               {/* 底部 CTA 與分享 */}
@@ -148,15 +152,15 @@ export default function NewsDetailPage({ params }: PageProps) {
                   {/* 分享按鈕組件 */}
                   <ShareButtons url={currentUrl} title={post.title} />
 
-                  {/* ✨ 優化後的「看更多文章」按鈕 */}
+                  {/* 看更多文章按鈕 */}
                   <div className="mt-12 pt-8 border-t border-slate-700/50">
-                     <Link 
+                      <Link 
                         href="/about/news" 
                         className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-cyan-400 border-2 border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] transition-all duration-300 group"
-                     >
-                          看更多衛教文章 
-                          <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
-                     </Link>
+                      >
+                           看更多衛教文章 
+                           <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+                      </Link>
                   </div>
               </div>
 

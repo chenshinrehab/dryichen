@@ -76,6 +76,61 @@ export default function BookingPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             
+
+{/* Line Block */}
+<div className="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl p-8 text-center hover:border-green-400/50 hover:shadow-[0_0_20px_rgba(74,222,128,0.2)] transition-all duration-300 group flex flex-col items-center relative overflow-hidden">
+              
+              <div className="w-20 h-20 bg-green-400/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <i className="fa-brands fa-line text-4xl text-green-400"></i>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Line 官方帳號</h3>
+              <p className="text-slate-400 text-sm mb-6">加入好友，一鍵預約</p>
+              
+              <div className="relative p-2 bg-white rounded-xl mb-6 shadow-lg group-hover:-translate-y-1 transition-transform">
+                  <img 
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://lin.ee/FHj3mIs" 
+                    alt="Line 官方帳號 QR Code" 
+                    className="w-32 h-32 object-contain" 
+                  />
+              </div>
+              
+              <a 
+                href="https://lin.ee/FHj3mIs" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-full py-3 bg-green-500 hover:bg-green-400 text-white rounded-xl transition-colors font-bold shadow-lg"
+              >
+                <i className="fa-solid fa-user-plus mr-2"></i> 加入好友
+              </a>
+            </div>
+
+           {/* iOS Block */}
+           <div className="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl p-8 text-center hover:border-blue-500/50 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)] transition-all duration-300 group flex flex-col items-center">
+              <div className="w-20 h-20 bg-blue-500/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <i className="fa-brands fa-apple text-4xl text-blue-500"></i>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">iOS App</h3>
+              <p className="text-slate-400 text-sm mb-6">iPhone 用戶專用</p>
+              
+              <div className="relative p-2 bg-white rounded-xl mb-6 shadow-lg group-hover:-translate-y-1 transition-transform">
+                  <img 
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://apple.co/2vZfRsH" 
+                    alt="iOS App 下載 QR Code" 
+                    className="w-32 h-32 object-contain" 
+                  />
+              </div>
+              
+              <a 
+                href="https://apple.co/2vZfRsH" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-full py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-xl transition-colors font-bold shadow-lg"
+              >
+                <i className="fa-solid fa-download mr-2"></i> 點擊下載
+              </a>
+            </div>
+
+
             {/* Android Block */}
             <div className="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl p-8 text-center hover:border-green-500/50 hover:shadow-[0_0_20px_rgba(34,197,94,0.2)] transition-all duration-300 group flex flex-col items-center">
               <div className="w-20 h-20 bg-green-500/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -102,58 +157,7 @@ export default function BookingPage() {
               </a>
             </div>
 
-            {/* iOS Block */}
-            <div className="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl p-8 text-center hover:border-blue-500/50 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)] transition-all duration-300 group flex flex-col items-center">
-              <div className="w-20 h-20 bg-blue-500/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <i className="fa-brands fa-apple text-4xl text-blue-500"></i>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">iOS App</h3>
-              <p className="text-slate-400 text-sm mb-6">iPhone 用戶專用</p>
-              
-              <div className="relative p-2 bg-white rounded-xl mb-6 shadow-lg group-hover:-translate-y-1 transition-transform">
-                  <img 
-                    src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://apple.co/2vZfRsH" 
-                    alt="iOS App 下載 QR Code" 
-                    className="w-32 h-32 object-contain" 
-                  />
-              </div>
-              
-              <a 
-                href="https://apple.co/2vZfRsH" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-full py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-xl transition-colors font-bold shadow-lg"
-              >
-                <i className="fa-solid fa-download mr-2"></i> 點擊下載
-              </a>
-            </div>
 
-            {/* Line Block */}
-            <div className="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl p-8 text-center hover:border-green-400/50 hover:shadow-[0_0_20px_rgba(74,222,128,0.2)] transition-all duration-300 group flex flex-col items-center relative overflow-hidden">
-              
-              <div className="w-20 h-20 bg-green-400/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <i className="fa-brands fa-line text-4xl text-green-400"></i>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Line 官方帳號</h3>
-              <p className="text-slate-400 text-sm mb-6">加入好友，一鍵預約</p>
-              
-              <div className="relative p-2 bg-white rounded-xl mb-6 shadow-lg group-hover:-translate-y-1 transition-transform">
-                  <img 
-                    src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://lin.ee/FHj3mIs" 
-                    alt="Line 官方帳號 QR Code" 
-                    className="w-32 h-32 object-contain" 
-                  />
-              </div>
-              
-              <a 
-                href="https://lin.ee/FHj3mIs" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-full py-3 bg-green-500 hover:bg-green-400 text-white rounded-xl transition-colors font-bold shadow-lg"
-              >
-                <i className="fa-solid fa-user-plus mr-2"></i> 加入好友
-              </a>
-            </div>
 
           </div>
         </section>

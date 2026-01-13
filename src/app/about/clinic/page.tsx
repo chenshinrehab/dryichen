@@ -33,9 +33,12 @@ export default function ClinicPage() {
     <>
       <JsonLd data={jsonLdClinic} />
 
-      <div className="min-h-screen bg-slate-900 text-slate-300 py-12 md:py-16 fade-in">
+      {/* ✨ 修改重點：
+          原為 py-12 (上下 48px)
+          改為 pt-4 (上 16px) pb-12 (下 48px) md:pt-8 (電腦版上 32px)
+      */}
+      <div className="min-h-screen bg-slate-900 text-slate-300 pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
         
-        {/* ✨ 修正重點：改為 max-w-7xl (與疾病頁面統一寬度) */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <Link href="/about" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group">
@@ -50,7 +53,6 @@ export default function ClinicPage() {
               </p>
           </div>
 
-          {/* ✨ 修正重點：grid-cols-1 md:grid-cols-2 lg:grid-cols-3 (確保與疾病頁面完全一致的 RWD 切分) */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {facilitiesData.map((item) => (
               <Link 
@@ -58,7 +60,6 @@ export default function ClinicPage() {
                 href={`/about/clinic/${item.id}`} 
                 className="group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col"
               >
-                 {/* ✨ 修正重點：h-48 (統一高度) */}
                  <div className="h-48 overflow-hidden relative bg-slate-800">
                     <img 
                       src={item.imageUrl} 

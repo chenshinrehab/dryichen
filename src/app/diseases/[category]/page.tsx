@@ -67,17 +67,22 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
-        <main className="flex-grow py-12 md:py-16 fade-in">
+        {/* ✨ 修改重點：
+            原為 py-12 (上下 48px)
+            改為 pt-4 (上 16px) pb-12 (下 48px) md:pt-8 (電腦版上 32px)
+        */}
+        <main className="flex-grow pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            {/* 麵包屑導航 */}
-            <div className="mb-8 flex items-center gap-2 text-sm text-slate-400">
+            {/* 麵包屑導航 (已隱藏) */}
+            {/* <div className="mb-8 flex items-center gap-2 text-sm text-slate-400">
                <Link href="/" className="hover:text-cyan-400 transition-colors">首頁</Link>
                <i className="fa-solid fa-chevron-right text-xs"></i>
                <Link href="/diseases" className="hover:text-cyan-400 transition-colors">疾病衛教</Link>
                <i className="fa-solid fa-chevron-right text-xs"></i>
                <span className="text-cyan-500 font-medium">{category.title}</span>
-            </div>
+            </div> 
+            */}
 
             {/* 標題區塊 */}
             <div className="text-center mb-12">
@@ -110,7 +115,6 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                           className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                         />
                     ) : (
-                        // ✨ 這裡修復了錯誤：改用 category.image (且有 fallback 機制)
                         <img 
                           src={category.image} 
                           alt={category.title}
@@ -147,9 +151,9 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                     
                     {/* 底部連結 */}
                     <div className="mt-auto text-right">
-                         <span className="text-cyan-400 font-semibold text-sm group-hover:underline decoration-cyan-400/50 underline-offset-4">
+                          <span className="text-cyan-400 font-semibold text-sm group-hover:underline decoration-cyan-400/50 underline-offset-4">
                            了解詳細治療 <i className="fa-solid fa-arrow-right ml-1 text-xs"></i>
-                         </span>
+                          </span>
                     </div>
                   </div>
                 </Link>

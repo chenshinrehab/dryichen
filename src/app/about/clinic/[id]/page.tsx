@@ -53,7 +53,11 @@ export default function FacilityDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLdProduct} />
       <JsonLd data={jsonLdBreadcrumb} />
 
-      <div className="min-h-screen bg-slate-900 text-slate-300 py-12 md:py-16 fade-in">
+      {/* ✨ 修改重點：
+          原為 py-12 (上下 48px)
+          改為 pt-4 (上 16px) pb-12 (下 48px) md:pt-8 (電腦版上 32px)
+      */}
+      <div className="min-h-screen bg-slate-900 text-slate-300 pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <nav className="text-sm text-slate-500 mb-8 font-sans">
@@ -67,7 +71,7 @@ export default function FacilityDetailPage({ params }: PageProps) {
           </Link>
 
           <div className="bg-slate-800/80 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden shadow-2xl">
-             
+              
              <div className="relative h-64 md:h-96 w-full group">
                 <img src={item.imageUrl} alt={item.title} className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
@@ -86,26 +90,25 @@ export default function FacilityDetailPage({ params }: PageProps) {
 
              <div className="p-8 md:p-12">
                  <div 
-                    className="prose prose-invert prose-lg max-w-none 
-                               text-slate-300 leading-relaxed 
-                               prose-strong:text-white prose-strong:font-bold
-                               prose-p:mb-6"
+                   className="prose prose-invert prose-lg max-w-none 
+                              text-slate-300 leading-relaxed 
+                              prose-strong:text-white prose-strong:font-bold
+                              prose-p:mb-6"
                  >
                     <div dangerouslySetInnerHTML={{ __html: item.contentHtml }} />
                  </div>
 
-                 {/* ✨ 底部區塊：包含圖片預留位 + 導引按鈕 */}
                  <div className="mt-12 pt-10 border-t border-slate-700/50 w-full flex flex-col items-center gap-8">
                      
-                     {/* 1. 圖片預留位子 (您之後可以在這裡放圖片) */}
+                     {/* 1. 圖片預留位子 */}
                      <div className="w-full">
                         {/* <img src="/images/your-future-image.jpg" className="w-full rounded-xl shadow-lg" alt="補充圖片" /> */}
                      </div>
 
-                     {/* 2. 按鈕 (樣式同衛教文章) */}
+                     {/* 2. 按鈕 */}
                      <Link 
-                        href="/about/clinic" 
-                        className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-cyan-400 border-2 border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] transition-all duration-300 group"
+                       href="/about/clinic" 
+                       className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-cyan-400 border-2 border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] transition-all duration-300 group"
                      >
                           了解更多診所資訊 
                           <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>

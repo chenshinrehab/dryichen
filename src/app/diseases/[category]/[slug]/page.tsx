@@ -71,7 +71,11 @@ export default function DiseaseDetailPage({ params }: PageProps) {
       
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
-        <main className="flex-grow py-8 md:py-12 fade-in relative z-10">
+        {/* ✨ 修改重點：
+            原為 py-8 md:py-12 (上下 32px / 48px)
+            改為 pt-4 (上 16px) pb-12 (下 48px) md:py-12 (電腦版維持)
+        */}
+        <main className="flex-grow pt-4 pb-12 md:py-12 fade-in relative z-10">
            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
               {/* 返回按鈕：回到該分類頁面 */}

@@ -51,7 +51,7 @@ export default function WeightLossPage() {
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
-      <main className="max-w-5xl mx-auto px-4 pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
+        <main className="flex-grow pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
             {/* ============================================================
@@ -96,7 +96,7 @@ export default function WeightLossPage() {
             </div>
             
             {/* ============================================================
-                ✨ 卡片列表 (長條橫式)
+                ✨ 卡片列表 (修正排版)
                ============================================================ */}
             <div className="grid grid-cols-1 gap-8 mb-16">
               {weightLossPrograms.map((program) => (
@@ -105,7 +105,7 @@ export default function WeightLossPage() {
                   href={`/weight-bone/${program.slug}`}
                   className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
                 >
-                  {/* 左側：圖片區塊 (改為讀取 data 中的 image) */}
+                  {/* 左側：圖片區塊 */}
                   <div className="w-full md:w-2/5 relative h-48 md:h-full overflow-hidden">
                     <img 
                       src={program.image} 
@@ -115,15 +115,15 @@ export default function WeightLossPage() {
                     <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/90 to-transparent"></div>
                   </div>
 
-                  {/* 右側：文字內容區塊 */}
-                  <div className="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center relative">
-                    {/* 裝飾 Icon */}
+                  {/* 右側：文字內容區塊 (縮小 padding，讓文字更靠左) */}
+                  <div className="w-full md:w-3/5 p-5 md:p-6 flex flex-col justify-center relative">
                     <i className="fa-solid fa-file-medical absolute right-4 bottom-4 text-8xl text-slate-800/50 -rotate-12 group-hover:text-cyan-900/30 transition-colors duration-500 pointer-events-none"></i>
                     
                     <div className="relative z-10 h-full flex flex-col justify-center">
-                      <h2 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors flex items-center">
+                      {/* ✨ 修改處：移除 flex，讓文字自然折行，Icon 用 inline-block */}
+                      <h2 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
                         {program.title}
-                        <i className="fa-solid fa-arrow-right opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-2 transition-all ml-3 text-lg text-cyan-500"></i>
+                        <i className="fa-solid fa-arrow-right inline-block opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all ml-3 text-lg text-cyan-500"></i>
                       </h2>
 
                       <p className="text-slate-300 text-lg mb-4 line-clamp-2">
@@ -151,7 +151,7 @@ export default function WeightLossPage() {
             </div>
 
             {/* ============================================================
-                ✨ 醫師的話
+                ✨ 醫師治療理念與叮嚀
                ============================================================ */}
             <div className="bg-slate-800/80 rounded-2xl p-8 border border-slate-700 relative overflow-hidden">
                 <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>

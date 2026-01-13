@@ -56,7 +56,11 @@ export default function TreatmentsPage() {
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
-       <main className="max-w-5xl mx-auto px-4 pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
+        {/* ✨ 修改重點：
+            將手機版上方間距由 pt-4 改為 pt-1，減少頂部留白。
+            md:pt-8 維持電腦版的舒適間距。
+        */}
+        <main className="max-w-5xl mx-auto px-4 pt-1 pb-12 md:pt-8 md:pb-16 fade-in">
           {/* 容器改為 max-w-5xl 以符合統一寬度 */}
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
