@@ -1,4 +1,3 @@
-// src/app/about/news/page.tsx
 import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
@@ -27,10 +26,11 @@ export default function NewsListPage() {
     <>
       <JsonLd data={jsonLdCollection} />
 
-      {/* ✨ 修改重點 1：手機版上方留白減少
-          原為 pt-4，改為 pt-1 以符合你的需求
+      {/* ✨ 修改重點：上方留白再減少
+          1. pt-1 -> pt-0 (手機版上方完全無內距)
+          2. md:pt-8 -> md:pt-4 (電腦版上方內距減半)
       */}
-      <div className="min-h-screen bg-slate-900 text-slate-300 pt-1 pb-12 md:pt-8 md:pb-16 fade-in">
+      <div className="min-h-screen bg-slate-900 text-slate-300 pt-0 pb-12 md:pt-4 md:pb-16 fade-in">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
            
           {/* 返回按鈕 */}
@@ -38,18 +38,16 @@ export default function NewsListPage() {
              <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回關於我們
           </Link>
 
-          {/* ✨ 修改重點 2：標題距離調整
-              mb-10 改為 mb-6，拉近與下方文字的距離
-          */}
+          {/* 標題區塊 */}
           <div className="text-center mb-6">
               <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-wider">最新內容</h1>
               <div className="h-1 w-20 bg-cyan-500 mx-auto rounded-full"></div>
           </div>
 
-          {/* ✨ 修改重點 3：SEO 導言區 (套用指定樣式) */}
+          {/* SEO 導言區 */}
           <div className="mb-12 max-w-3xl mx-auto">
               <details className="group border-l-4 border-cyan-500 pl-4">
-                  {/* Summary: 顯示第一段 + 展開按鈕 */}
+                  {/* Summary */}
                   <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left">
                       <span className="inline-block h-full">
                           掌握<strong className="text-cyan-400 font-normal">新竹宸新復健科</strong>的第一手消息。我們定期更新門診異動、國定假日休診公告。
@@ -63,7 +61,7 @@ export default function NewsListPage() {
                       </span>
                   </summary>
                   
-                  {/* Content: 展開後的內容 */}
+                  {/* Content */}
                   <div className="mt-4 text-lg text-slate-400 leading-relaxed text-left animate-in fade-in slide-in-from-top-1 duration-300">
                       <p className="mb-4">
                           除了行政公告外，林羿辰醫師團隊也會在此分享最新的復健醫學新知。內容涵蓋<strong className="text-cyan-400 font-normal">PRP增生療法</strong>的成功案例、<strong className="text-cyan-400 font-normal">兒童骨齡</strong>的生長評估知識，以及居家復健運動教學。
@@ -98,7 +96,7 @@ export default function NewsListPage() {
                   <div className="md:w-2/3 p-6 md:p-8 flex flex-col justify-center">
                       <div className="flex items-center gap-3 mb-3 text-sm">
                          <span className={`px-2 py-1 rounded border ${
-                             item.category === '門診公告' ? 'bg-pink-500/10 text-pink-400 border-pink-500/30' : 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30'
+                            item.category === '門診公告' ? 'bg-pink-500/10 text-pink-400 border-pink-500/30' : 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30'
                          }`}>
                              {item.category}
                          </span>
