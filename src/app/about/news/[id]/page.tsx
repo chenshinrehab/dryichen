@@ -12,7 +12,6 @@ export async function generateStaticParams() {
   return newsData.map((post) => ({ id: post.id }))
 }
 
-// 1. 動態 Meta
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const post = getNewsById(params.id)
   if (!post) return { title: '文章不存在' }
@@ -32,7 +31,6 @@ export default function NewsDetailPage({ params }: PageProps) {
   const currentUrl = `${siteUrl}/about/news/${params.id}`
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(currentUrl)}`
 
-  // 2. Schema
   const jsonLdArticle = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -72,23 +70,21 @@ export default function NewsDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLdBreadcrumb} />
 
       <div className="min-h-screen bg-slate-900 text-slate-300 pt-4 pb-12 fade-in">
-        <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* ✨ 修改 1：手機版 padding 縮小至 px-3 (為了讓文字行更寬) */}
+        <article className="max-w-4xl mx-auto px-3 sm:px-6 lg:px-8">
           
-          {/* 麵包屑導航 */}
-          <nav className="text-sm text-slate-500 mb-8 font-sans">
+          <nav className="text-sm text-slate-500 mb-8 font-sans px-1">
               <Link href="/about/news" className="hover:text-cyan-400 transition-colors">最新內容</Link>
               <span className="mx-2">/</span>
               <span className="text-cyan-500 truncate">{post.title}</span>
           </nav>
 
-          <Link href="/about/news" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group">
+          <Link href="/about/news" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group px-1">
               <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回列表
           </Link>
 
-          {/* 文章主體卡片 */}
           <div className="bg-slate-800/80 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden shadow-2xl">
               
-              {/* Header 區塊 */}
               <header className="p-6 md:p-10 border-b border-slate-700 bg-gradient-to-b from-slate-800 to-slate-900/50">
                   <div className="flex flex-col-reverse md:flex-row gap-6 justify-between items-start">
                       <div className="flex-grow">
@@ -108,7 +104,6 @@ export default function NewsDetailPage({ params }: PageProps) {
                           </p>
                       </div>
 
-                      {/* QR Code */}
                       <div className="hidden md:block bg-white p-2 rounded-lg shrink-0 shadow-lg group relative cursor-pointer">
                           <img src={qrCodeApiUrl} alt="掃描分享文章" className="w-24 h-24 object-contain" />
                           <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-max bg-slate-900 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
@@ -118,56 +113,52 @@ export default function NewsDetailPage({ params }: PageProps) {
                   </div>
               </header>
 
-              {/* 封面圖 */}
               <div className="w-full h-64 md:h-96 relative">
                   <img src={post.coverImage} alt={post.title} className="absolute inset-0 w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-30"></div>
               </div>
 
-              {/* 文章內容 (Typography 優化重點) */}
-              <div className="p-6 md:p-10">
+              {/* ✨ 內文樣式核心修改區 
+              */}
+              <div className="p-5 md:p-10">
                   <div 
                     className="prose prose-invert max-w-none 
                                
-                               /* 手機版 (Default) 設定：字大、行高適中 */
-                               prose-p:text-[19px] 
-                               prose-p:leading-[1.8] 
-                               prose-p:mb-8 
-                               prose-p:tracking-wide
+                               /* 手機版 (Default) 設定： */
+                               prose-p:text-[19px]        /* 維持大字體 */
+                               prose-p:leading-[1.7]      /* 行高稍微收一點點，讓文字緊湊一點點但仍好讀 */
+                               prose-p:mb-6               /* 段落間距 */
+                               prose-p:tracking-normal    /* ✨ 改為 normal (原本 wide)，這能讓一行多塞 1-2 個字 */
                                
-                               /* 電腦版 (md) 設定：字稍小、行高寬鬆 */
-                               md:prose-p:text-[17px] 
-                               md:prose-p:leading-relaxed 
-                               md:prose-p:mb-8
+                               /* 電腦版 (md) 設定： */
+                               md:prose-p:text-[20px]     /* ✨ 加大：改為 20px (參考 SEO 引言大小) */
+                               md:prose-p:leading-[1.9]   /* 因為字變大，行距要拉得更開才顯得大器 */
+                               md:prose-p:mb-10           /* 段落分明 */
+                               md:prose-p:tracking-wide   /* 電腦版空間夠，維持寬字距增加質感 */
 
                                /* 標題設定 */
-                               prose-headings:text-cyan-50 prose-headings:font-bold prose-headings:tracking-wide
+                               prose-headings:text-cyan-50 prose-headings:font-bold 
                                prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:border-l-4 prose-h2:border-cyan-500 prose-h2:pl-4
-                               prose-h3:text-xl prose-h3:text-cyan-400 prose-h3:mt-8 prose-h3:mb-4
+                               prose-h3:text-xl prose-h3:text-cyan-400 prose-h3:mt-10 prose-h3:mb-4
                                
-                               /* 連結與強調 */
+                               /* 連結與列表 */
                                prose-a:text-cyan-400 prose-a:no-underline hover:prose-a:underline prose-a:font-bold
                                prose-strong:text-white prose-strong:font-bold
-                               
-                               /* 列表設定 */
-                               prose-ul:list-disc prose-ul:pl-6 prose-li:text-slate-300 prose-li:mb-3 prose-li:text-[18px] md:prose-li:text-[17px]
+                               prose-ul:list-disc prose-ul:pl-5 prose-li:text-slate-300 prose-li:mb-2 prose-li:text-[18px] md:prose-li:text-[19px]
                                
                                /* 圖片設定 */
-                               prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-slate-700
+                               prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-slate-700 prose-img:w-full prose-img:my-8
                                "
                       dangerouslySetInnerHTML={{ __html: post.contentHtml }} 
                   />
               </div>
 
-              {/* 底部 CTA 與分享 */}
               <div className="bg-slate-900/50 p-8 md:p-12 border-t border-slate-700 text-center">
                   <h3 className="text-white font-bold text-2xl mb-3">覺得這篇文章有幫助嗎？</h3>
                   <p className="text-slate-400 mb-6 text-lg">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
                   
-                  {/* 分享按鈕組件 */}
                   <ShareButtons url={currentUrl} title={post.title} />
 
-                  {/* 看更多文章按鈕 */}
                   <div className="mt-12 pt-8 border-t border-slate-700/50">
                       <Link 
                         href="/about/news" 

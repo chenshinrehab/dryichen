@@ -10,6 +10,8 @@
     "go": "git add . && git commit -m \"Update: Remove next-sitemap\" && git push"
   },
   "dependencies": {
+    "@keystatic/core": "^0.5.48",
+    "@keystatic/next": "^5.0.4",
     "next": "^14.2.0",
     "react": "^18.3.0",
     "react-dom": "^18.3.0"
