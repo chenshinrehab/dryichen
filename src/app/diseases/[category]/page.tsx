@@ -69,24 +69,20 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
         <main className="flex-grow pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            {/* --- 修改重點 3: 左上角返回按鈕 --- */}
-            <div className="mb-4">
-               <Link 
-                 href="/diseases" 
-                 className="inline-flex items-center text-slate-400 hover:text-cyan-400 transition-colors duration-200 group"
-               >
-                 <div className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center mr-2 border border-slate-700 group-hover:border-cyan-500 group-hover:bg-slate-700 transition-all">
-                    <i className="fa-solid fa-chevron-left text-sm group-hover:-translate-x-0.5 transition-transform"></i>
-                 </div>
-                 <span className="font-medium">返回部位列表</span>
-               </Link>
+            {/* --- 修改重點：更新返回按鈕樣式 --- */}
+            {/* 這裡 href 指向 /diseases (總覽)，因為本頁面已經是分類頁了 */}
+            <div>
+              <Link 
+                href="/diseases" 
+                className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group"
+              >
+                 <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 
+                 返回部位列表
+              </Link>
             </div>
 
-            {/* --- 修改重點 1: 標題區塊 (緊湊版) --- */}
-            <div className="text-center mb-8"> {/* 原 mb-12 改為 mb-8 */}
-                
-                {/* 移除原本的大圖示區塊以節省空間 */}
-
+            {/* 標題區塊 */}
+            <div className="text-center mb-8">
                 <h1 className="text-3xl md:text-4xl font-bold font-sans text-white mb-3 tracking-wider">
                     {category.title}
                 </h1>
@@ -94,14 +90,13 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                 {/* 裝飾線 */}
                 <div className="h-1 w-20 bg-cyan-500 mx-auto rounded-full mb-2"></div>
 
-                {/* 隱藏 SEO 導言 (hidden)，但保留在 DOM 中 */}
+                {/* 隱藏 SEO 導言 */}
                 <p className="hidden text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
                    {category.description}
                 </p>
             </div>
 
             {/* 疾病卡片列表 */}
-            {/* --- 修改重點 2: 圖片來源邏輯維持不變，只要 data 提供正確的 image path 即可 --- */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
               {category.diseases.map((disease) => (
                 <Link
@@ -109,7 +104,7 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                   href={`/diseases/${category.slug}/${disease.slug}`}
                   className="group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col"
                 >
-                  {/* 1. 圖片區塊 (上) */}
+                  {/* 1. 圖片區塊 */}
                   <div className="h-48 overflow-hidden relative bg-slate-800">
                     {disease.images && disease.images.length > 0 ? (
                         <img 
@@ -118,18 +113,16 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                           className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                         />
                     ) : (
-                        // 如果沒有特定疾病圖，顯示分類圖或預設圖
                         <img 
                           src={category.image} 
                           alt={category.title}
                           className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 opacity-60 grayscale group-hover:grayscale-0"
                         />
                     )}
-                    {/* 遮罩 */}
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
                   </div>
 
-                  {/* 2. 文字內容區塊 (下) */}
+                  {/* 2. 文字區塊 */}
                   <div className="p-6 flex flex-col flex-grow">
                     <div className="flex justify-between items-start mb-3">
                         <h2 className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
@@ -137,7 +130,6 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                         </h2>
                     </div>
                     
-                    {/* 描述 */}
                     <p className="text-slate-400 mb-4 line-clamp-2 flex-grow text-sm leading-relaxed">
                       {disease.description}
                     </p>
@@ -153,7 +145,6 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                         </div>
                     )}
                     
-                    {/* 底部連結 */}
                     <div className="mt-auto text-right">
                           <span className="text-cyan-400 font-semibold text-sm group-hover:underline decoration-cyan-400/50 underline-offset-4">
                            了解詳細治療 <i className="fa-solid fa-arrow-right ml-1 text-xs"></i>
@@ -164,7 +155,7 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
               ))}
             </div>
 
-            {/* 底部按鈕 - 保留作為頁尾導航 */}
+            {/* 底部按鈕 - 保留作為頁尾輔助導航 */}
             <div className="text-center">
                 <Link href="/diseases" className="inline-flex items-center px-6 py-3 border border-slate-600 rounded-full text-slate-300 hover:text-white hover:border-cyan-500 hover:bg-slate-800 transition-all group">
                     <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i>
