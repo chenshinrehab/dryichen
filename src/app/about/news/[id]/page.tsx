@@ -69,7 +69,9 @@ export default function NewsDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLdArticle} />
       <JsonLd data={jsonLdBreadcrumb} />
 
-      {/* ✨ CSS 樣式修正：加入 color: #ffffff !important; */}
+      {/* ✨ 核彈級修正：直接注入原生 CSS 樣式 
+         這段樣式會強制覆蓋所有預設值，保證生效
+      */}
       <style dangerouslySetInnerHTML={{__html: `
         /* 手機版預設 */
         .article-content p, .article-content li {
@@ -77,31 +79,31 @@ export default function NewsDetailPage({ params }: PageProps) {
             line-height: 1.7 !important;
             margin-bottom: 1.5rem !important;
             letter-spacing: 0px !important;
-            color: #ffffff !important; /* ✨ 強制設定為純白色 */
+            color: #cbd5e1 !important; /* Slate-300 */
         }
         
         /* 電腦版 (寬度大於 768px) */
         @media (min-width: 768px) {
             .article-content p, .article-content li {
-                font-size: 22px !important;
+                font-size: 22px !important; 
                 line-height: 1.8 !important;
                 margin-bottom: 2.5rem !important;
                 letter-spacing: 0.025em !important;
-                color: #ffffff !important; /* ✨ 強制設定為純白色 */
+                color: #cbd5e1 !important;
             }
             .article-content h2 {
-                font-size: 1.875rem !important; 
+                font-size: 1.875rem !important;
                 margin-top: 3rem !important;
                 margin-bottom: 1.5rem !important;
-                color: #ffffff !important; /* 標題也設為白色 */
+                color: #ffffff !important;
             }
             .article-content h3 {
                 font-size: 1.5rem !important;
                 margin-top: 2.5rem !important;
-                color: #22d3ee !important; /* H3 維持亮青色 (Cyan-400) */
+                color: #22d3ee !important;
             }
             .article-content strong {
-                color: #ffffff !important; /* 粗體字維持白色 */
+                color: #22d3ee !important; /* ✨ 重點文字改為青色 (Cyan-400) */
             }
         }
       `}} />
@@ -154,15 +156,20 @@ export default function NewsDetailPage({ params }: PageProps) {
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-30"></div>
               </div>
 
+              {/* ✨ 這裡加入了 article-content class
+                 這會對應到上方 style tag 中的設定
+              */}
               <div className="p-5 md:p-10">
                   <div 
                     className="article-content prose prose-invert max-w-none 
-                               prose-headings:font-bold 
+                               prose-headings:text-cyan-50 prose-headings:font-bold 
                                prose-h2:border-l-4 prose-h2:border-cyan-500 prose-h2:pl-4
                                
                                /* 連結與列表 */
                                prose-a:text-cyan-400 prose-a:no-underline hover:prose-a:underline prose-a:font-bold
+                               prose-strong:text-white prose-strong:font-bold
                                prose-ul:list-disc prose-ul:pl-5 
+                               prose-li:text-slate-300 
                                
                                /* 圖片設定 */
                                prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-slate-700 prose-img:w-full prose-img:my-10

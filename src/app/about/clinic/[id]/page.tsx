@@ -53,10 +53,46 @@ export default function FacilityDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLdProduct} />
       <JsonLd data={jsonLdBreadcrumb} />
 
-      {/* ✨ 修改重點：
-          原為 py-12 (上下 48px)
-          改為 pt-4 (上 16px) pb-12 (下 48px) md:pt-8 (電腦版上 32px)
+      {/* ✨ 樣式設定：
+          1. 字體大小同步 (19px / 22px)
+          2. 重點顏色 (strong) 改為青色 (#22d3ee)
       */}
+      <style dangerouslySetInnerHTML={{__html: `
+        /* 手機版預設 */
+        .facility-content p, .facility-content li {
+            font-size: 19px !important;
+            line-height: 1.7 !important;
+            margin-bottom: 1.5rem !important;
+            letter-spacing: 0px !important;
+            color: #cbd5e1 !important; /* Slate-300 */
+        }
+        
+        /* 電腦版 (寬度大於 768px) */
+        @media (min-width: 768px) {
+            .facility-content p, .facility-content li {
+                font-size: 22px !important;
+                line-height: 1.8 !important;
+                margin-bottom: 2.5rem !important;
+                letter-spacing: 0.025em !important;
+                color: #cbd5e1 !important;
+            }
+            .facility-content h2 {
+                font-size: 1.875rem !important; 
+                margin-top: 3rem !important;
+                margin-bottom: 1.5rem !important;
+                color: #ffffff !important;
+            }
+            .facility-content h3 {
+                font-size: 1.5rem !important;
+                margin-top: 2.5rem !important;
+                color: #22d3ee !important; /* H3 標題用青色 */
+            }
+            .facility-content strong {
+                color: #22d3ee !important; /* ✨ 重點文字改為青色 (Cyan-400) */
+            }
+        }
+      `}} />
+
       <div className="min-h-screen bg-slate-900 text-slate-300 pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           
@@ -89,29 +125,30 @@ export default function FacilityDetailPage({ params }: PageProps) {
              </div>
 
              <div className="p-8 md:p-12">
+                 {/* ✨ 加上 facility-content class 以啟用樣式覆蓋 */}
                  <div 
-                   className="prose prose-invert prose-lg max-w-none 
-                              text-slate-300 leading-relaxed 
-                              prose-strong:text-white prose-strong:font-bold
-                              prose-p:mb-6"
+                   className="facility-content prose prose-invert max-w-none 
+                              /* 這裡只設定圖片樣式，文字大小交給上方 CSS */
+                              prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-slate-700 prose-img:w-full prose-img:my-8
+                              prose-headings:font-bold 
+                              prose-h2:border-l-4 prose-h2:border-cyan-500 prose-h2:pl-4
+                              "
                  >
+                    {/* 如何增加圖片？
+                       請直接在 src/data/facilities.ts 的 contentHtml 欄位中，
+                       插入 <img src="/images/您的圖片.jpg" alt="描述" /> 即可。
+                    */}
                     <div dangerouslySetInnerHTML={{ __html: item.contentHtml }} />
                  </div>
 
                  <div className="mt-12 pt-10 border-t border-slate-700/50 w-full flex flex-col items-center gap-8">
                      
-                     {/* 1. 圖片預留位子 */}
-                     <div className="w-full">
-                        {/* <img src="/images/your-future-image.jpg" className="w-full rounded-xl shadow-lg" alt="補充圖片" /> */}
-                     </div>
-
-                     {/* 2. 按鈕 */}
                      <Link 
                        href="/about/clinic" 
                        className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-cyan-400 border-2 border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] transition-all duration-300 group"
                      >
-                          了解更多診所資訊 
-                          <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+                           了解更多診所資訊 
+                           <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
                      </Link>
                  </div>
 
