@@ -70,7 +70,6 @@ export default function NewsDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLdBreadcrumb} />
 
       <div className="min-h-screen bg-slate-900 text-slate-300 pt-4 pb-12 fade-in">
-        {/* ✨ 修改 1：手機版 padding 縮小至 px-3 (為了讓文字行更寬) */}
         <article className="max-w-4xl mx-auto px-3 sm:px-6 lg:px-8">
           
           <nav className="text-sm text-slate-500 mb-8 font-sans px-1">
@@ -118,36 +117,37 @@ export default function NewsDetailPage({ params }: PageProps) {
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-30"></div>
               </div>
 
-              {/* ✨ 內文樣式核心修改區 
-              */}
+              {/* ✨ 內文樣式核心修改區 (強制覆蓋版) */}
               <div className="p-5 md:p-10">
                   <div 
                     className="prose prose-invert max-w-none 
                                
                                /* 手機版 (Default) 設定： */
-                               prose-p:text-[19px]        /* 維持大字體 */
-                               prose-p:leading-[1.7]      /* 行高稍微收一點點，讓文字緊湊一點點但仍好讀 */
-                               prose-p:mb-6               /* 段落間距 */
-                               prose-p:tracking-normal    /* ✨ 改為 normal (原本 wide)，這能讓一行多塞 1-2 個字 */
+                               prose-p:!text-[19px]           /* 使用 ! 強制覆蓋 */
+                               prose-p:!leading-[1.7]
+                               prose-p:mb-6 
+                               prose-p:tracking-normal
                                
                                /* 電腦版 (md) 設定： */
-                               md:prose-p:text-[20px]     /* ✨ 加大：改為 20px (參考 SEO 引言大小) */
-                               md:prose-p:leading-[1.9]   /* 因為字變大，行距要拉得更開才顯得大器 */
-                               md:prose-p:mb-10           /* 段落分明 */
-                               md:prose-p:tracking-wide   /* 電腦版空間夠，維持寬字距增加質感 */
+                               md:prose-p:!text-[22px]        /* ✨ 加大到 22px 並且用 !important 強制執行 */
+                               md:prose-p:!leading-[1.8]      /* 配合大字體的行高 */
+                               md:prose-p:mb-10 
+                               md:prose-p:tracking-wide
 
                                /* 標題設定 */
                                prose-headings:text-cyan-50 prose-headings:font-bold 
-                               prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:border-l-4 prose-h2:border-cyan-500 prose-h2:pl-4
-                               prose-h3:text-xl prose-h3:text-cyan-400 prose-h3:mt-10 prose-h3:mb-4
+                               prose-h2:text-3xl prose-h2:mt-14 prose-h2:mb-8 prose-h2:border-l-4 prose-h2:border-cyan-500 prose-h2:pl-4
+                               prose-h3:text-2xl prose-h3:text-cyan-400 prose-h3:mt-12 prose-h3:mb-6
                                
                                /* 連結與列表 */
                                prose-a:text-cyan-400 prose-a:no-underline hover:prose-a:underline prose-a:font-bold
                                prose-strong:text-white prose-strong:font-bold
-                               prose-ul:list-disc prose-ul:pl-5 prose-li:text-slate-300 prose-li:mb-2 prose-li:text-[18px] md:prose-li:text-[19px]
+                               prose-ul:list-disc prose-ul:pl-5 
+                               prose-li:text-slate-300 prose-li:mb-2 
+                               prose-li:!text-[19px] md:prose-li:!text-[22px] /* 列表字體也同步加大 */
                                
                                /* 圖片設定 */
-                               prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-slate-700 prose-img:w-full prose-img:my-8
+                               prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-slate-700 prose-img:w-full prose-img:my-10
                                "
                       dangerouslySetInnerHTML={{ __html: post.contentHtml }} 
                   />
