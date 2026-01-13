@@ -1,58 +1,129 @@
-// src/data/news.ts
+import React from 'react'
+import Link from 'next/link'
+import { Metadata } from 'next'
+import JsonLd from '@/components/JsonLd'
+import { newsData } from '@/data/news'
 
-export interface NewsPost {
-  id: string;
-  title: string;
-  category: '門診公告' | '衛教文章' | '醫學新知' | '診所活動';
-  date: string;
-  summary: string;      // 列表頁顯示的短摘要
-  coverImage: string;   // 封面圖
-  contentHtml: string;  // 內文 (支援 HTML)
-  
-  // ✨ SEO 專用欄位 (預留給未來發文用)
-  seoTitle?: string;
-  seoDescription?: string;
-  keywords?: string[];
+// 1. Meta 設定
+export const metadata: Metadata = { 
+  title: '最新內容 - 門診公告與復健衛教 | 新竹宸新復健科',
+  description: '提供新竹宸新復健科最新的門診異動公告、休診通知，以及專業醫師撰寫的骨科復健、PRP注射、兒童骨齡等衛教文章。',
+  keywords: ['新竹復健科公告', '門診時間', '復健衛教', '醫療新知']
 }
 
-export const newsData: NewsPost[] = [
-  {
-    id: '2024-opening-notice',
-    title: '【公告】宸新復健科 2024 春節門診時間異動',
-    category: '門診公告',
-    date: '2024-01-10',
-    summary: '農曆春節期間門診時間調整公告，請有復健需求的民眾提早安排預約。',
-    coverImage: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=800',
-    contentHtml: `
-      <p>親愛的鄉親朋友們，農曆春節將至，宸新復健科預祝大家龍年行大運，身體健康！</p>
-      <p>本院春節期間門診異動如下：...</p>
-      <ul>
-        <li>2/8 (小年夜)：正常看診</li>
-        <li>2/9 - 2/13 (除夕至初四)：全面休診</li>
-        <li>2/14 (初五)：恢復正常門診</li>
-      </ul>
-    `,
-    seoTitle: '2024春節門診公告 - 新竹宸新復健科',
-    keywords: ['門診公告', '春節休診', '新竹復健科']
-  },
-  {
-    id: 'prp-knowledge',
-    title: '膝蓋痛一定要開刀嗎？PRP 增生療法新選擇',
-    category: '衛教文章',
-    date: '2024-01-05',
-    summary: '退化性關節炎不一定要換人工關節。透過 PRP 自體血小板注射，啟動關節修復力。',
-    coverImage: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800',
-    contentHtml: `
-      <p>許多長輩聽到膝蓋退化，就很擔心要開刀換人工關節。其實在退化初期或中期，<strong>PRP 增生療法</strong>是一個非常有效的保守治療選擇。</p>
-      <h3>什麼是 PRP？</h3>
-      <p>PRP 是利用自己的血液，分離出高濃度的血小板...</p>
-    `,
-    seoTitle: '膝蓋退化免開刀？新竹PRP治療推薦 - 宸新復健科',
-    seoDescription: '新竹PRP注射推薦。膝蓋退化性關節炎不一定要開刀，透過超音波導引PRP增生療法，精準修復軟骨與韌帶。',
-    keywords: ['新竹PRP', '膝蓋痛', '退化性關節炎', '免開刀']
+export default function NewsListPage() {
+  
+  // 2. Schema: CollectionPage
+  const jsonLdCollection = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: '宸新復健科最新消息',
+    description: '門診公告與衛教文章彙整',
+    url: 'https://www.dryichen.com.tw/about/news'
   }
-];
 
-export function getNewsById(id: string) {
-  return newsData.find((post) => post.id === id);
+  return (
+    <>
+      <JsonLd data={jsonLdCollection} />
+
+      {/* ✨ 修改重點：上方留白再減少
+          1. pt-1 -> pt-0 (手機版上方完全無內距)
+          2. md:pt-8 -> md:pt-4 (電腦版上方內距減半)
+      */}
+      <div className="min-h-screen bg-slate-900 text-slate-300 pt-0 pb-12 md:pt-4 md:pb-16 fade-in">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+           
+          {/* 返回按鈕 */}
+          <Link href="/about" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group">
+             <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回關於我們
+          </Link>
+
+          {/* 標題區塊 */}
+          <div className="text-center mb-6">
+              <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-wider">最新內容</h1>
+              <div className="h-1 w-20 bg-cyan-500 mx-auto rounded-full"></div>
+          </div>
+
+          {/* SEO 導言區 */}
+          <div className="mb-12 max-w-3xl mx-auto">
+              <details className="group border-l-4 border-cyan-500 pl-4">
+                  {/* Summary */}
+                  <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left">
+                      <span className="inline-block h-full">
+                          掌握<strong className="text-cyan-400 font-normal">新竹宸新復健科</strong>的第一手消息。我們定期更新門診異動、國定假日休診公告。
+                          
+                          <span className="group-open:hidden">
+                              ... 
+                              <span className="ml-1 text-sm text-cyan-500 hover:text-cyan-400 hover:underline underline-offset-4 font-semibold">
+                                  了解更多 <i className="fa-solid fa-chevron-down text-xs"></i>
+                              </span>
+                          </span>
+                      </span>
+                  </summary>
+                  
+                  {/* Content */}
+                  <div className="mt-4 text-lg text-slate-400 leading-relaxed text-left animate-in fade-in slide-in-from-top-1 duration-300">
+                      <p className="mb-4">
+                          除了行政公告外，林羿辰醫師團隊也會在此分享最新的復健醫學新知。內容涵蓋<strong className="text-cyan-400 font-normal">PRP增生療法</strong>的成功案例、<strong className="text-cyan-400 font-normal">兒童骨齡</strong>的生長評估知識，以及居家復健運動教學。
+                      </p>
+                      <p>
+                          希望透過淺顯易懂的衛教文章，幫助新竹民眾建立正確的疼痛管理觀念，遠離痠痛困擾。
+                      </p>
+                  </div>
+              </details>
+          </div>
+
+          {/* 文章列表 */}
+          <div className="space-y-8">
+            {newsData.map((item) => (
+              <Link 
+                key={item.id} 
+                href={`/about/news/${item.id}`} 
+                className="block group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300"
+              >
+                <div className="flex flex-col md:flex-row h-full">
+                  {/* 圖片區 */}
+                  <div className="md:w-1/3 h-56 md:h-auto relative overflow-hidden">
+                    <img 
+                      src={item.coverImage} 
+                      alt={item.title} 
+                      className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent md:bg-transparent"></div>
+                  </div>
+                  
+                  {/* 文字區 */}
+                  <div className="md:w-2/3 p-6 md:p-8 flex flex-col justify-center">
+                      <div className="flex items-center gap-3 mb-3 text-sm">
+                         <span className={`px-2 py-1 rounded border ${
+                            item.category === '門診公告' ? 'bg-pink-500/10 text-pink-400 border-pink-500/30' : 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30'
+                         }`}>
+                             {item.category}
+                         </span>
+                         <span className="text-slate-500 flex items-center">
+                             <i className="fa-regular fa-calendar mr-2"></i>{item.date}
+                         </span>
+                      </div>
+                      
+                      <h2 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors leading-tight">
+                         {item.title}
+                      </h2>
+                      
+                      <p className="text-slate-400 line-clamp-2 mb-4 leading-relaxed">
+                         {item.summary}
+                      </p>
+                      
+                      <div className="mt-auto text-cyan-500 text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center">
+                         閱讀更多 <i className="fa-solid fa-arrow-right ml-2"></i>
+                      </div>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+        </div>
+      </div>
+    </>
+  )
 }

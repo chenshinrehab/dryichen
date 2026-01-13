@@ -1,4 +1,3 @@
-// src/app/diseases/page.tsx
 import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
@@ -51,8 +50,12 @@ export default function DiseasesPage() {
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
-      <main className="max-w-5xl mx-auto px-4 pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* --- 修改重點：容器寬度調整 --- 
+            原為 max-w-5xl，改為 max-w-7xl 以增加寬度，
+            讓 Grid 卡片有更多空間伸展，看起來更寬。
+        */}
+        <main className="max-w-7xl mx-auto px-4 pt-4 pb-12 md:pt-8 md:pb-16 fade-in w-full">
+          <div className="px-4 sm:px-6 lg:px-8"> {/* 移除內層多餘的 max-w-7xl，直接用 padding 即可 */}
             
             {/* ============================================================
                 ✨ 標題區塊 (置中)
@@ -96,10 +99,9 @@ export default function DiseasesPage() {
             </div>
             
             {/* ============================================================
-                ✨ 卡片列表 (3欄 + 直式設計)
-                1. lg:grid-cols-3: 電腦版一排3個
-                2. h-48: 圖片高度固定
-                3. flex-col: 直式排列
+                ✨ 卡片列表 
+                保持 lg:grid-cols-3，但因為容器變寬 (max-w-7xl)，
+                卡片寬度會自然拉伸變寬。
                ============================================================ */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
               {diseaseCategories.map((category) => (
@@ -110,13 +112,13 @@ export default function DiseasesPage() {
                 >
                   {/* 1. 圖片區塊 (上) */}
                   <div className="h-48 overflow-hidden relative bg-slate-800">
-                     <img 
-                       src={category.image} 
-                       alt={`${category.title} - 新竹骨科復健`} 
-                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" 
-                     />
-                     {/* 遮罩 */}
-                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
+                      <img 
+                        src={category.image} 
+                        alt={`${category.title} - 新竹骨科復健`} 
+                        className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" 
+                      />
+                      {/* 遮罩 */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
                   </div>
 
                   {/* 2. 文字內容區塊 (下) */}
@@ -148,9 +150,9 @@ export default function DiseasesPage() {
                     
                     {/* 底部連結文字 */}
                     <div className="mt-auto text-right">
-                         <span className="text-cyan-400 font-semibold text-sm group-hover:underline decoration-cyan-400/50 underline-offset-4">
+                          <span className="text-cyan-400 font-semibold text-sm group-hover:underline decoration-cyan-400/50 underline-offset-4">
                            了解更多及治療建議 <i className="fa-solid fa-arrow-right ml-1 text-xs"></i>
-                         </span>
+                          </span>
                     </div>
                   </div>
                 </Link>
