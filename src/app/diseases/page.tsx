@@ -50,12 +50,16 @@ export default function DiseasesPage() {
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
-        {/* --- 修改重點：容器寬度調整 --- 
-            原為 max-w-5xl，改為 max-w-7xl 以增加寬度，
-            讓 Grid 卡片有更多空間伸展，看起來更寬。
-        */}
+        {/* 外層容器：保留 max-w-7xl 與 px-4 (手機版基礎邊距) */}
         <main className="max-w-7xl mx-auto px-4 pt-4 pb-12 md:pt-8 md:pb-16 fade-in w-full">
-          <div className="px-4 sm:px-6 lg:px-8"> {/* 移除內層多餘的 max-w-7xl，直接用 padding 即可 */}
+          
+          {/* === 修改重點 === 
+            移除手機版的 px-4，只保留 sm 以上的 padding。
+            原本是: className="px-4 sm:px-6 lg:px-8"
+            修改為: className="sm:px-6 lg:px-8"
+            這樣手機版卡片就會依照外層 main 的 px-4 設定，左右空間變少，卡片變寬。
+          */}
+          <div className="sm:px-6 lg:px-8"> 
             
             {/* ============================================================
                 ✨ 標題區塊 (置中)
@@ -100,15 +104,14 @@ export default function DiseasesPage() {
             
             {/* ============================================================
                 ✨ 卡片列表 
-                保持 lg:grid-cols-3，但因為容器變寬 (max-w-7xl)，
-                卡片寬度會自然拉伸變寬。
+                grid-cols-1 確保手機版是單欄 (最寬)
                ============================================================ */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
               {diseaseCategories.map((category) => (
                 <Link
                   key={category.slug}
                   href={`/diseases/${category.slug}`}
-                  className="group bg-slate-800/50 border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col"
+                  className="group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col"
                 >
                   {/* 1. 圖片區塊 (上) */}
                   <div className="h-48 overflow-hidden relative bg-slate-800">
