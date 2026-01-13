@@ -71,10 +71,6 @@ export default function NewsDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLdArticle} />
       <JsonLd data={jsonLdBreadcrumb} />
 
-      {/* ✨ 修改重點：
-          原為 py-12 (上下 48px)
-          改為 pt-4 (上 16px) pb-12 (下 48px)
-      */}
       <div className="min-h-screen bg-slate-900 text-slate-300 pt-4 pb-12 fade-in">
         <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           
@@ -128,19 +124,38 @@ export default function NewsDetailPage({ params }: PageProps) {
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-30"></div>
               </div>
 
-              {/* 文章內容 */}
+              {/* 文章內容 (Typography 優化重點) */}
               <div className="p-6 md:p-10">
                   <div 
-                    className="prose prose-invert prose-lg max-w-none 
-                               prose-headings:text-cyan-50 prose-headings:font-bold
-                               prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-4 prose-h2:border-b prose-h2:border-slate-700 prose-h2:pb-2
-                               prose-h3:text-xl prose-h3:text-cyan-400
-                               prose-p:text-slate-300 prose-p:leading-relaxed prose-p:mb-6
-                               prose-a:text-cyan-400 prose-a:no-underline hover:prose-a:underline
+                    className="prose prose-invert max-w-none 
+                               
+                               /* 手機版 (Default) 設定：字大、行高適中 */
+                               prose-p:text-[19px] 
+                               prose-p:leading-[1.8] 
+                               prose-p:mb-8 
+                               prose-p:tracking-wide
+                               
+                               /* 電腦版 (md) 設定：字稍小、行高寬鬆 */
+                               md:prose-p:text-[17px] 
+                               md:prose-p:leading-relaxed 
+                               md:prose-p:mb-8
+
+                               /* 標題設定 */
+                               prose-headings:text-cyan-50 prose-headings:font-bold prose-headings:tracking-wide
+                               prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:border-l-4 prose-h2:border-cyan-500 prose-h2:pl-4
+                               prose-h3:text-xl prose-h3:text-cyan-400 prose-h3:mt-8 prose-h3:mb-4
+                               
+                               /* 連結與強調 */
+                               prose-a:text-cyan-400 prose-a:no-underline hover:prose-a:underline prose-a:font-bold
                                prose-strong:text-white prose-strong:font-bold
-                               prose-ul:list-disc prose-ul:pl-6 prose-li:text-slate-300 prose-li:mb-2
+                               
+                               /* 列表設定 */
+                               prose-ul:list-disc prose-ul:pl-6 prose-li:text-slate-300 prose-li:mb-3 prose-li:text-[18px] md:prose-li:text-[17px]
+                               
+                               /* 圖片設定 */
+                               prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-slate-700
                                "
-                     dangerouslySetInnerHTML={{ __html: post.contentHtml }} 
+                      dangerouslySetInnerHTML={{ __html: post.contentHtml }} 
                   />
               </div>
 
@@ -158,8 +173,8 @@ export default function NewsDetailPage({ params }: PageProps) {
                         href="/about/news" 
                         className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-cyan-400 border-2 border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] transition-all duration-300 group"
                       >
-                           看更多衛教文章 
-                           <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+                            看更多衛教文章 
+                            <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
                       </Link>
                   </div>
               </div>
