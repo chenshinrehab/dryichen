@@ -27,47 +27,51 @@ export default function NewsListPage() {
     <>
       <JsonLd data={jsonLdCollection} />
 
-      {/* ✨ 修改重點：
-          原為 py-12 (上下 48px)
-          改為 pt-4 (上 16px) pb-12 (下 48px) md:pt-8 (電腦版上 32px)
+      {/* ✨ 修改重點 1：手機版上方留白減少
+          原為 pt-4，改為 pt-1 以符合你的需求
       */}
-      <div className="min-h-screen bg-slate-900 text-slate-300 pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
+      <div className="min-h-screen bg-slate-900 text-slate-300 pt-1 pb-12 md:pt-8 md:pb-16 fade-in">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+           
           {/* 返回按鈕 */}
           <Link href="/about" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group">
              <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回關於我們
           </Link>
 
-          {/* 標題區 */}
-          <div className="text-center mb-10">
+          {/* ✨ 修改重點 2：標題距離調整
+              mb-10 改為 mb-6，拉近與下方文字的距離
+          */}
+          <div className="text-center mb-6">
               <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-wider">最新內容</h1>
               <div className="h-1 w-20 bg-cyan-500 mx-auto rounded-full"></div>
           </div>
 
-          {/* SEO 導言區 (使用 details 收合) */}
-          <div className="max-w-3xl mx-auto mb-12 pl-2">
-              <details className="group">
-                 <summary className="list-none text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-center">
-                     <span className="inline-block border-l-4 border-cyan-500 pl-4 text-left">
-                        掌握<strong className="text-cyan-400 font-normal">新竹宸新復健科</strong>的第一手消息。我們定期更新門診異動、國定假日休診公告。
-                        <span className="group-open:hidden">
-                            ... 
-                            <span className="ml-1 text-sm text-cyan-500 hover:text-cyan-400 hover:underline underline-offset-4 font-semibold">
-                              了解更多 <i className="fa-solid fa-chevron-down text-xs"></i>
-                            </span>
-                        </span>
-                     </span>
-                 </summary>
-                 
-                 <div className="mt-4 text-lg text-slate-400 leading-relaxed pl-5 text-left animate-in fade-in slide-in-from-top-1 duration-300 bg-slate-800/30 p-4 rounded-xl border border-slate-700/50">
-                     <p className="mb-4">
-                         除了行政公告外，林羿辰醫師團隊也會在此分享最新的復健醫學新知。內容涵蓋<strong className="text-cyan-400 font-normal">PRP增生療法</strong>的成功案例、<strong className="text-cyan-400 font-normal">兒童骨齡</strong>的生長評估知識，以及居家復健運動教學。
-                     </p>
-                     <p>
-                         希望透過淺顯易懂的衛教文章，幫助新竹民眾建立正確的疼痛管理觀念，遠離痠痛困擾。
-                     </p>
-                 </div>
+          {/* ✨ 修改重點 3：SEO 導言區 (套用指定樣式) */}
+          <div className="mb-12 max-w-3xl mx-auto">
+              <details className="group border-l-4 border-cyan-500 pl-4">
+                  {/* Summary: 顯示第一段 + 展開按鈕 */}
+                  <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left">
+                      <span className="inline-block h-full">
+                          掌握<strong className="text-cyan-400 font-normal">新竹宸新復健科</strong>的第一手消息。我們定期更新門診異動、國定假日休診公告。
+                          
+                          <span className="group-open:hidden">
+                              ... 
+                              <span className="ml-1 text-sm text-cyan-500 hover:text-cyan-400 hover:underline underline-offset-4 font-semibold">
+                                  了解更多 <i className="fa-solid fa-chevron-down text-xs"></i>
+                              </span>
+                          </span>
+                      </span>
+                  </summary>
+                  
+                  {/* Content: 展開後的內容 */}
+                  <div className="mt-4 text-lg text-slate-400 leading-relaxed text-left animate-in fade-in slide-in-from-top-1 duration-300">
+                      <p className="mb-4">
+                          除了行政公告外，林羿辰醫師團隊也會在此分享最新的復健醫學新知。內容涵蓋<strong className="text-cyan-400 font-normal">PRP增生療法</strong>的成功案例、<strong className="text-cyan-400 font-normal">兒童骨齡</strong>的生長評估知識，以及居家復健運動教學。
+                      </p>
+                      <p>
+                          希望透過淺顯易懂的衛教文章，幫助新竹民眾建立正確的疼痛管理觀念，遠離痠痛困擾。
+                      </p>
+                  </div>
               </details>
           </div>
 
