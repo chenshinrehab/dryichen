@@ -123,7 +123,7 @@ export default function AboutPage() {
                     {/* list-none 與 [&::-webkit-details-marker]:hidden 用來隱藏原生三角形，避免移位 */}
                     <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left">
                         <span className="inline-block h-full">
-                            我們是<strong className="text-cyan-400 font-normal">新竹推薦</strong>的首選復健專科診所。由<strong className="text-cyan-400 font-normal">台大醫師</strong>、前馬偕醫院主治醫師<strong className="text-cyan-400 font-normal">林羿辰醫師</strong>親自主持。
+                            我們是<strong className="text-cyan-400 font-normal">新竹推薦</strong>的首選復健專科診所。擁有<strong className="text-cyan-400 font-normal">醫學中心等級</strong>的醫療設備及醫療人員。
                             
                             {/* 展開提示文字 */}
                             <span className="group-open:hidden">

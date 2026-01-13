@@ -9,11 +9,40 @@ export default function Footer() {
   const [visitCount, setVisitCount] = useState<string>('---,---')
 
   useEffect(() => {
-    // 這裡維持您原本的邏輯
-    const baseCount = 85000
-    const randomIncrement = Math.floor(Math.random() * 999)
-    const total = baseCount + randomIncrement
-    setVisitCount(total.toLocaleString())
+    // =================================================================
+    // 🔢 瀏覽人數計算邏輯 (時間基礎演算法)
+    // =================================================================
+    
+    // 1. 設定起始值 (依照您的要求)
+    const BASE_VIEWS = 125; 
+    
+    // 2. 設定每小時增加的人數 (依照您的要求)
+    const VIEWS_PER_HOUR = 9;
+
+    // 3. 設定一個固定的「錨點時間」
+    // 設定為 2024-01-01，這樣現在看到的數字會累積到一個合理的量 (約 15~16萬)
+    // 且因為時間只會前進，數字永遠只會增加，不會減少
+    const ANCHOR_DATE = new Date('2024-01-01T00:00:00').getTime();
+
+    const calculateViews = () => {
+      const now = Date.now();
+      const timeDiff = now - ANCHOR_DATE;
+      // 將毫秒換算成「小時」
+      const hoursPassed = timeDiff / (1000 * 60 * 60);
+      
+      // 公式：起始值 125 + (經過小時數 * 9)
+      const currentViews = Math.floor(BASE_VIEWS + (hoursPassed * VIEWS_PER_HOUR));
+      
+      setVisitCount(currentViews.toLocaleString());
+    };
+
+    // 初始化執行
+    calculateViews();
+
+    // 每 10 秒更新一次 (雖然每小時才加9，但保持動態更新可以避免長時間停留數值不變)
+    const intervalId = setInterval(calculateViews, 10000);
+
+    return () => clearInterval(intervalId);
   }, [])
 
   return (

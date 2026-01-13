@@ -73,7 +73,7 @@ export default function WeightLossPage() {
                   <details className="group border-l-4 border-cyan-500 pl-4">
                       <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left">
                           <span className="inline-block h-full">
-                              宸新復健科位於<strong className="text-cyan-400 font-normal">新竹科學園區</strong>附近，由林羿辰醫師親自主持。
+                              宸新復健科提供<strong className="text-cyan-400 font-normal">全方位的服務</strong>，在<strong className="text-cyan-400 font-normal">減重及兒童發展</strong>也提供完整優良的服務。
                               
                               <span className="group-open:hidden">
                                   ... 

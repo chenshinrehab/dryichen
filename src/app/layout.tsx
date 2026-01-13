@@ -37,7 +37,7 @@ export default function RootLayout({
         
         {/* 2. 頁面內容 */}
         {/* ✨ 加入 main 並設定 flex-grow，確保內容少時 Footer 也會被推到底部 */}
-        <main className="flex-grow pt-16">
+        <main className="flex-grow pt-10 md:pt-16">
            {children}
         </main>
         
