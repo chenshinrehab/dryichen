@@ -69,6 +69,43 @@ export default function NewsDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLdArticle} />
       <JsonLd data={jsonLdBreadcrumb} />
 
+      {/* ✨ CSS 樣式修正：加入 color: #ffffff !important; */}
+      <style dangerouslySetInnerHTML={{__html: `
+        /* 手機版預設 */
+        .article-content p, .article-content li {
+            font-size: 19px !important;
+            line-height: 1.7 !important;
+            margin-bottom: 1.5rem !important;
+            letter-spacing: 0px !important;
+            color: #ffffff !important; /* ✨ 強制設定為純白色 */
+        }
+        
+        /* 電腦版 (寬度大於 768px) */
+        @media (min-width: 768px) {
+            .article-content p, .article-content li {
+                font-size: 22px !important;
+                line-height: 1.8 !important;
+                margin-bottom: 2.5rem !important;
+                letter-spacing: 0.025em !important;
+                color: #ffffff !important; /* ✨ 強制設定為純白色 */
+            }
+            .article-content h2 {
+                font-size: 1.875rem !important; 
+                margin-top: 3rem !important;
+                margin-bottom: 1.5rem !important;
+                color: #ffffff !important; /* 標題也設為白色 */
+            }
+            .article-content h3 {
+                font-size: 1.5rem !important;
+                margin-top: 2.5rem !important;
+                color: #22d3ee !important; /* H3 維持亮青色 (Cyan-400) */
+            }
+            .article-content strong {
+                color: #ffffff !important; /* 粗體字維持白色 */
+            }
+        }
+      `}} />
+
       <div className="min-h-screen bg-slate-900 text-slate-300 pt-4 pb-12 fade-in">
         <article className="max-w-4xl mx-auto px-3 sm:px-6 lg:px-8">
           
@@ -117,34 +154,15 @@ export default function NewsDetailPage({ params }: PageProps) {
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-30"></div>
               </div>
 
-              {/* ✨ 內文樣式核心修改區 (強制覆蓋版) */}
               <div className="p-5 md:p-10">
                   <div 
-                    className="prose prose-invert max-w-none 
-                               
-                               /* 手機版 (Default) 設定： */
-                               prose-p:!text-[19px]           /* 使用 ! 強制覆蓋 */
-                               prose-p:!leading-[1.7]
-                               prose-p:mb-6 
-                               prose-p:tracking-normal
-                               
-                               /* 電腦版 (md) 設定： */
-                               md:prose-p:!text-[22px]        /* ✨ 加大到 22px 並且用 !important 強制執行 */
-                               md:prose-p:!leading-[1.8]      /* 配合大字體的行高 */
-                               md:prose-p:mb-10 
-                               md:prose-p:tracking-wide
-
-                               /* 標題設定 */
-                               prose-headings:text-cyan-50 prose-headings:font-bold 
-                               prose-h2:text-3xl prose-h2:mt-14 prose-h2:mb-8 prose-h2:border-l-4 prose-h2:border-cyan-500 prose-h2:pl-4
-                               prose-h3:text-2xl prose-h3:text-cyan-400 prose-h3:mt-12 prose-h3:mb-6
+                    className="article-content prose prose-invert max-w-none 
+                               prose-headings:font-bold 
+                               prose-h2:border-l-4 prose-h2:border-cyan-500 prose-h2:pl-4
                                
                                /* 連結與列表 */
                                prose-a:text-cyan-400 prose-a:no-underline hover:prose-a:underline prose-a:font-bold
-                               prose-strong:text-white prose-strong:font-bold
                                prose-ul:list-disc prose-ul:pl-5 
-                               prose-li:text-slate-300 prose-li:mb-2 
-                               prose-li:!text-[19px] md:prose-li:!text-[22px] /* 列表字體也同步加大 */
                                
                                /* 圖片設定 */
                                prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-slate-700 prose-img:w-full prose-img:my-10
