@@ -59,13 +59,15 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p class="mt-4"><span class="text-cyan-400 font-bold">✨ 治療關鍵：</span> 80%的患者可透過非手術治療痊癒，如復健拉腰及止痛藥物。更有效的治療有<strong>PRP 增生療法</strong>能修復受損的纖維環，搭配<strong>徒手運動訓練核心肌群</strong>穩固脊椎，是避免復發的不二法門。</p>
           <p>若症狀惡化或太嚴重，甚至需要手術治療，核磁共振檢查，可以更清楚的看到椎間盤及神經結構。</p>
           <img src="/images/diseases/spine-hip/HIVD/d.jpg" alt="ˊ椎間盤突出MRI" />
+          <p>正確的坐姿示意圖。</p>
+          <img src="/images/diseases/spine-hip/HIVD/f.jpg" alt="ˊ正確的坐姿示意圖" />
           `,
         symptoms: ['下背劇痛', '坐骨神經痛 (腿麻)', '彎腰時疼痛加劇', '下肢無力'],
         treatments: [ '服用止痛藥物', '物理治療 (牽引)', '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>','<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>'],
         seoKeywords: ['腰椎椎間盤突出', '坐骨神經痛', '下背痛', '椎間盤突出免開刀', '腳麻'],
         seoDescription: '腰椎椎間盤突出造成嚴重腰痛與腿麻。宸新復健科提供免開刀的PRP注射與物理治療方案，有效改善坐骨神經痛。',
         images: [
-           { src: '/images/diseases/spine-hip/HIVD/a.jpg', alt: '脊椎椎間盤突出構造圖' }
+           { src: '/images/diseases/spine-hip/HIVD/e.jpg', alt: '脊椎椎間盤突出構造圖' }
         ]
       },
       {
@@ -81,8 +83,10 @@ export const diseaseCategories: DiseaseCategory[] = [
           <img src="/images/diseases/spine-hip/CHIVD/b.jpg" alt="頸部神經壓迫疼痛地圖" />
           <p>診所內備有X光設備，可以馬上檢查有沒有長骨刺、椎間盤狹窄或是滑脫的情況，<strong>骨頭中間的縫隙消失</strong>，或是<strong>骨頭排列歪斜</strong>。</p>
           <img src="/images/diseases/spine-hip/CHIVD/c.jpg" alt="ˊ椎間盤突出X光" />
-          <p class="mt-4"><span class="text-cyan-400 font-bold">✨ 治療關鍵：</span> 80%的患者可透過非手術治療痊癒，如復健拉脖子及止痛藥物。更有效的治療有<strong>PRP 增生療法</strong>能修復受損的纖維環，搭配<strong>徒手運動放鬆頸部肌肉</strong>搭配<strong>肌力訓練改善烏龜脖</strong>，是避免復發的不二法門。</p>
+          <p class="mt-4"><span class="text-cyan-400 font-bold">✨ 治療關鍵：</span> 80%的患者可透過非手術治療痊癒，如復健拉脖子及止痛藥物。更有效的治療有<strong>PRP 增生療法</strong>能修復受損的纖維環，搭配<strong>徒手治療放鬆頸部肌肉</strong>搭配<strong>肌力訓練改善烏龜脖</strong>，是避免復發的不二法門。</p>
           <p>若症狀惡化或太嚴重，甚至需要手術治療，核磁共振檢查，可以更清楚的看到椎間盤及神經結構。</p>
+           <p>正確的坐姿示意圖。</p>
+          <img src="/images/diseases/spine-hip/CHIVD/d.jpg" alt="ˊ正確的坐姿示意圖" />
         
                   `,
         symptoms: ['頸部疼痛僵硬', '膏肓痛', '手臂麻木刺痛', '頭痛 (頸因性頭痛)'],
@@ -94,73 +98,53 @@ export const diseaseCategories: DiseaseCategory[] = [
         ]
       },
       {
-        id: 'sciatica',
-        slug: 'sciatica',
-        title: '坐骨神經痛',
-        description: '疼痛從下背部放射至臀部、大腿後側甚至腳底。',
+        id: 'piriformis-syndrome',
+        slug: 'piriformis-syndrome',
+        title: '梨狀肌症候群',
+        description: '梨狀肌緊繃壓迫坐骨神經，造成深層臀部疼痛或腳麻。',
         contentHtml: `
-          <p>坐骨神經痛並非單一疾病，而是一種<strong>症狀</strong>。通常是因為腰椎退化、骨刺、椎間盤突出，或是臀部的<strong>梨狀肌症候群</strong>壓迫到人體最大的坐骨神經所引起。</p>
-          <p>典型症狀是電流般的抽痛，從腰部一路往下竄。治療必須先找出「壓迫點」在哪裡，才能對症下藥。</p>
+          <p>梨狀肌是臀部深層的一條肌肉，當它因為<strong>久坐、過度運動或外傷</strong>而緊繃腫脹時，會覺得屁股深層很痛很緊，剛好在屁股肉最多的地方，有時候痛會往兩旁延伸，特徵是<strong>深層臀部疼痛</strong>，且在變換姿勢、翹腳或久坐時加劇。</p>
+          <img src="/images/diseases/spine-hip/piri/b.jpg" alt="梨狀肌疼痛" />
+          <p>肌肉腫脹嚴重時會壓迫到下方的<strong>坐骨神經</strong>，引發類似椎間盤突出的症狀，造成疼痛或是麻感延伸到整隻腳。</p>
+          <img src="/images/diseases/spine-hip/piri/c.jpg" alt="梨狀肌疼痛" />     
+          <p class="mt-4"><span class="text-cyan-400 font-bold">✨ 治療關鍵：</span> 90%的患者可透過非手術治療痊癒，如復健及止痛藥物。更有效的治療有<strong>神經減壓注射</strong>，搭配<strong>徒手治療放鬆梨狀肌</strong>搭配<strong>肌力訓練改善臀部肌肉</strong>，是避免復發的不二法門。</p>
+          <p>平常久坐可經由下面方式伸展梨狀肌，盤腿壓膝蓋的方式來伸展放鬆約30秒，建議一個小時做一次，可有效改善</p>
+          <img src="/images/diseases/spine-hip/piri/d.jpg" alt="梨狀肌伸展" />
+          <p>建議也可搭配橋式來訓練臀部及下背肌肉，撐起5~10秒，早晚五次，避免復發</p>
+          <img src="/images/diseases/spine-hip/piri/e.jpg" alt="橋式訓練" />
         `,
-        symptoms: ['電流般的放射痛', '腿部感覺異常 (像螞蟻爬)', '久坐起身困難', '走路跛行'],
-        treatments: ['神經解離術', '物理治療', '梨狀肌伸展', '藥物治療'],
-        seoKeywords: ['坐骨神經痛', '下背痛', '臀部疼痛', '神經壓迫'],
-        seoDescription: '坐骨神經痛疼痛從下背部放射至臀部、大腿後側。了解症狀與免開刀治療方式。',
+        symptoms: ['深層臀部痠痛', '久坐疼痛加劇', '無法翹二郎腿', '大腿後側麻痛'],
+        treatments: ['梨狀肌伸展', '物理治療', '神經減壓注射', '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>'],
+        seoKeywords: ['梨狀肌症候群', '臀部疼痛', '坐骨神經', '深層臀痛'],
+        seoDescription: '梨狀肌症候群造成深層臀部疼痛，常誤診為椎間盤突出。了解症狀與精準治療方式。',
         images: [
-           { src: 'https://images.unsplash.com/photo-1544367563-12123d8965cd?auto=format&fit=crop&q=80&w=800', alt: '坐骨神經痛位置' }
+           { src: '/images/diseases/spine-hip/piri/a.jpg', alt: '梨狀肌疼痛示意圖' }
         ]
       },
-      {
-        id: 'spinal-stenosis',
-        slug: 'spinal-stenosis',
-        title: '脊椎狹窄症',
-        description: '老化導致骨刺與韌帶肥厚，典型症狀為「間歇性跛行」。',
-        contentHtml: `
-          <p>脊椎狹窄症多發生於長輩，是因為脊椎老化、長骨刺、黃韌帶肥厚，導致脊髓腔變窄，壓迫神經。</p>
-          <p>最典型的症狀是<strong>間歇性跛行</strong>：走沒多久（約5-10分鐘）就會覺得雙腿痠麻無力，必須坐下來彎腰休息才能繼續走。這與椎間盤突出「坐著比較痛」的症狀相反。</p>
-        `,
-        symptoms: ['間歇性跛行', '走不遠需坐下休息', '雙腿痠麻無力', '腰部後仰疼痛'],
-        treatments: ['保守治療 (復健)', '硬脊膜外注射', '神經阻斷術', '嚴重時需手術減壓'],
-        seoKeywords: ['脊椎狹窄症', '間歇性跛行', '長輩腰痛', '骨刺'],
-        seoDescription: '脊椎狹窄症是老化導致的疾病，典型症狀為間歇性跛行。了解症狀與治療方式。',
-        images: [
-           { src: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800', alt: '老年人背痛' }
-        ]
-      },
+      
+  
       {
         id: 'hip-osteoarthritis',
         slug: 'hip-osteoarthritis',
         title: '退化性髖關節炎',
         description: '軟骨磨損導致鼠蹊部疼痛，影響行走與穿襪等日常動作。',
         contentHtml: `
-          <p>退化性髖關節炎是由於髖關節軟骨磨損、骨頭摩擦所致。疼痛位置通常在<strong>鼠蹊部 (該邊)</strong>、臀部外側或大腿前側。</p>
-          <p>患者常感到關節僵硬，早上起床或久坐後特別明顯。嚴重時會影響走路姿勢（鴨子走路），甚至無法自行剪腳指甲、穿襪子。</p>
+        <p><strong>退化性髖關節炎</strong>是因長期負重與磨損，導致關節軟骨磨損的疾病，常見於中老年族群。典型症狀並非只在臀部，更多時候是<strong>鼠蹊部（該邊）</strong>感到疼痛或僵硬，且早晨或久坐後特別明顯，嚴重時甚至會導致跛行與活動受限。</p>
+        <br>
+        <p>保養的關鍵在於<strong>減重</strong>與<strong>適度運動</strong>。控制體重能大幅降低關節壓力，搭配<strong>徒手運動治療</strong>穩定關節及<strong>PRP注射</strong>使軟骨增生可改善疼痛。別讓疼痛限制了您的行動力！</p>
+        <br>
+        <p>嚴重的關節磨損，箭頭處軟骨消失。</p>
+        <img src="/images/diseases/spine-hip/OA/b.jpg" alt="髖關節退化X光" />
         `,
         symptoms: ['鼠蹊部疼痛', '走路跛行', '關節活動受限 (穿襪困難)', '腹股溝壓痛'],
-        treatments: ['體重控制', '肌力訓練 (臀中肌)', 'PRP 關節注射', '人工關節置換'],
+        treatments: ['復健藥物治療', '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>', '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>', '人工關節置換'],
         seoKeywords: ['退化性髖關節炎', '髖關節疼痛', 'PRP', '鼠蹊部痛'],
         seoDescription: '退化性髖關節炎造成鼠蹊部疼痛，影響行走。了解症狀、治療方式與預防方法。',
         images: [
-           { src: 'https://images.unsplash.com/photo-1591114251676-47408713175c?auto=format&fit=crop&q=80&w=800', alt: '髖關節X光檢查' }
-        ]
-      },
-      {
-        id: 'piriformis-syndrome',
-        slug: 'piriformis-syndrome',
-        title: '梨狀肌症候群',
-        description: '梨狀肌緊繃壓迫坐骨神經，造成深層臀部疼痛。',
-        contentHtml: `
-          <p>梨狀肌是臀部深層的一條肌肉，當它因為久坐、過度運動或外傷而緊繃腫脹時，會壓迫到下方的坐骨神經，引發類似椎間盤突出的症狀。</p>
-          <p>特徵是<strong>深層臀部疼痛</strong>，且在變換姿勢、翹腳或久坐時加劇。透過超音波導引注射放鬆肌肉，效果顯著。</p>
-        `,
-        symptoms: ['深層臀部痠痛', '久坐疼痛加劇', '無法翹二郎腿', '大腿後側麻痛'],
-        treatments: ['梨狀肌伸展', '物理治療', '超音波導引注射', '震波治療'],
-        seoKeywords: ['梨狀肌症候群', '臀部疼痛', '坐骨神經', '深層臀痛'],
-        seoDescription: '梨狀肌症候群造成深層臀部疼痛，常誤診為椎間盤突出。了解症狀與精準治療方式。',
-        images: [
-           { src: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&q=80&w=800', alt: '健身房伸展臀部' }
+           { src: '/images/diseases/spine-hip/OA/a.jpg', alt: '髖關節退化' }
         ]
       }
+      
     ]
   },
 
