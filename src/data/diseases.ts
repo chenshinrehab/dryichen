@@ -48,18 +48,24 @@ export const diseaseCategories: DiseaseCategory[] = [
         id: 'lumbar-disc-herniation',
         slug: 'lumbar-disc-herniation',
         title: '腰椎椎間盤突出',
-        description: '椎間盤髓核擠出壓迫神經，造成腰痛或下肢麻痛。',
+        description: '椎間盤擠出壓迫神經，造成腰痛或下肢麻痛。',
         contentHtml: `
-          <p>腰椎椎間盤突出是現代人常見的文明病，更是造成<strong>坐骨神經痛</strong>的主因。當脊椎間的軟骨（椎間盤）因長期受力不均、姿勢不良或外力撞擊，導致內部的髓核突出，壓迫到後方的脊神經根。</p>
-          <p>這會導致劇烈的下背痛，並沿著坐骨神經延伸至臀部、大腿後側甚至小腿與腳底，產生<strong>麻、痛、無力</strong>的現象。嚴重時甚至會影響大小便功能（馬尾症候群）。</p>
-          <p class="mt-4"><span class="text-cyan-400 font-bold">✨ 治療關鍵：</span> 80%的患者可透過非手術治療痊癒。除了急性期的止痛，<strong>PRP 增生療法</strong>能修復受損的纖維環，搭配<strong>核心肌群訓練</strong>穩固脊椎，是避免復發的不二法門。</p>
-        `,
+          <p>腰椎椎間盤突出是現代人常見久坐的文明病，更是造成<strong>坐骨神經痛</strong>的主因。當脊椎間的椎間盤因長期受力不均、姿勢不良或外力撞擊，導致內部的髓核突出，想是果凍被擠出，壓迫到後方的神經根。</p>
+          <img src="/images/diseases/spine-hip/HIVD/a.jpg" alt="脊椎椎間盤突出構造圖" />
+          <p>導致劇烈的下背痛，並沿著坐骨神經延伸至臀部、大腿後側甚至小腿與腳底，產生<strong>麻、痛、無力</strong>的現象。嚴重時甚至會影響大小便功能（馬尾症候群）。</p>
+          <img src="/images/diseases/spine-hip/HIVD/b.jpg" alt="坐骨神經痛" />
+          <p>診所內備有X光設備，可以馬上檢查有沒有椎間盤狹窄或是滑脫的情況，<strong>骨頭中間的縫隙消失</strong>，或是<strong>骨頭排列歪斜</strong>。</p>
+          <img src="/images/diseases/spine-hip/HIVD/c.jpg" alt="ˊ椎間盤突出X光" />
+          <p class="mt-4"><span class="text-cyan-400 font-bold">✨ 治療關鍵：</span> 80%的患者可透過非手術治療痊癒，如復健拉腰及止痛藥物。更有效的治療有<strong>PRP 增生療法</strong>能修復受損的纖維環，搭配<strong>徒手運動訓練核心肌群</strong>穩固脊椎，是避免復發的不二法門。</p>
+          <p>若症狀惡化或太嚴重，甚至需要手術治療，核磁共振檢查，可以更清楚的看到椎間盤及神經結構。</p>
+          <img src="/images/diseases/spine-hip/HIVD/d.jpg" alt="ˊ椎間盤突出MRI" />
+          `,
         symptoms: ['下背劇痛', '坐骨神經痛 (腿麻)', '彎腰時疼痛加劇', '下肢無力'],
-        treatments: ['<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>', '硬脊膜外注射', '核心肌群訓練', '物理治療 (牽引)'],
+        treatments: ['<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>', '服用止痛藥物', '物理治療 (牽引)', '核心肌群訓練'],
         seoKeywords: ['腰椎椎間盤突出', '坐骨神經痛', '下背痛', '椎間盤突出免開刀', '腳麻'],
         seoDescription: '腰椎椎間盤突出造成嚴重腰痛與腿麻。宸新復健科提供免開刀的PRP注射與物理治療方案，有效改善坐骨神經痛。',
         images: [
-           { src: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=800', alt: '脊椎椎間盤突出構造圖' }
+           { src: '/images/diseases/spine-hip/HIVD/a.jpg', alt: '脊椎椎間盤突出構造圖' }
         ]
       },
       {

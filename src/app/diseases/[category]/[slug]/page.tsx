@@ -69,7 +69,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLdBreadcrumb} />
       <JsonLd data={jsonLdCondition} />
       
-      {/* ✨ CSS 注入：包含字體大小、重點色、以及新增的超連結樣式 */}
+      {/* ✨ CSS 注入：包含文字樣式、連結樣式、以及圖片寬度限制 */}
       <style dangerouslySetInnerHTML={{__html: `
         /* 重點文字 (strong) - 青色 */
         .article-content strong {
@@ -77,34 +77,50 @@ export default function DiseaseDetailPage({ params }: PageProps) {
             font-weight: 700;
         }
 
-        /* ✨ 新增：超連結 (a) - 桃紅色 + 跳轉圖示 */
+        /* 超連結 (a) - 桃紅色 + 跳轉圖示 */
         .article-content a {
-            color: #ec4899 !important; /* 桃紅色 (Pink-500) */
+            color: #ec4899 !important; /* Pink-500 */
             font-weight: 600;
             text-decoration: none;
-            border-bottom: 1px dashed #ec4899; /* 虛線底線增加層次 */
+            border-bottom: 1px dashed #ec4899;
             transition: all 0.2s ease;
-            display: inline-flex; /* 讓圖示對齊文字 */
+            display: inline-flex;
             align-items: center;
             gap: 2px;
         }
 
-        /* 超連結 Hover 效果 */
         .article-content a:hover {
-            color: #db2777 !important; /* 深一點的桃紅 (Pink-600) */
+            color: #db2777 !important; /* Pink-600 */
             border-bottom-style: solid;
-            background-color: rgba(236, 72, 153, 0.15); /* 淡淡的桃紅背景 */
+            background-color: rgba(236, 72, 153, 0.15);
             padding: 0 4px;
             margin: 0 -4px;
             border-radius: 4px;
         }
 
-        /* ✨ 新增：自動在連結後方加入小箭頭圖示 */
         .article-content a::after {
-            content: "↗"; /* 右上箭頭 unicode */
+            content: "↗";
             font-size: 0.85em;
             font-weight: bold;
-            margin-bottom: 2px; /* 微調位置 */
+            margin-bottom: 2px;
+        }
+
+        /* ✨ 圖片寬度限制 (針對 article-content 內的圖片) */
+        .article-content img {
+            max-width: 100%; /* 手機版滿版 */
+            height: auto;
+            border-radius: 0.75rem; /* rounded-xl */
+            margin: 2rem auto; /* 上下留白，左右置中 */
+            display: block; /* 讓 margin auto 生效 */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+            border: 1px solid #334155; /* border-slate-700 */
+        }
+
+        /* 電腦版圖片寬度限制為 2/3 (66%) */
+        @media (min-width: 768px) {
+            .article-content img {
+                max-width: 66%; 
+            }
         }
       `}} />
 
@@ -139,16 +155,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                       </div>
                   </div>
 
-                  {/* 內容說明區 */}
-                  <div className="article-content text-slate-300 leading-relaxed text-lg mb-8 border-b border-slate-700 pb-6">
-                    {disease.contentHtml ? (
-                      <div dangerouslySetInnerHTML={{ __html: disease.contentHtml }} />
-                    ) : (
-                      <p>{disease.content || disease.description}</p>
-                    )}
-                  </div>
-
-                  {/* 症狀與治療 - 雙欄呈現 */}
+                  {/* ✨ 移動位置：症狀與治療 (雙欄呈現) 移到主文上方 */}
                   <div className="grid md:grid-cols-2 gap-8 mb-12">
                       {/* 症狀 */}
                       <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-700 h-full hover:border-pink-500/30 transition-colors">
@@ -156,6 +163,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                             <i className="fa-solid fa-triangle-exclamation text-pink-500 mr-2"></i>
                             常見症狀
                           </h4>
+                          {/* 症狀列表同樣加上 article-content 確保如果這裡有粗體也會變色 */}
                           <ul className="article-content space-y-3 text-slate-300 list-disc list-inside">
                               {disease.symptoms.map((item, idx) => (
                                 <li key={idx} className="leading-relaxed">{item}</li>
@@ -181,22 +189,17 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                       </div>
                   </div>
 
-                  {/* 圖片展示區 */}
-                  {disease.images && disease.images.length > 0 && (
-                    <div className="space-y-8">
-                      {disease.images.map((img, idx) => (
-                        <div key={idx} className="text-center group">
-                           <div className="relative overflow-hidden rounded-lg shadow-lg inline-block w-full md:w-3/4 border border-slate-700">
-                             <img 
-                               src={img.src} 
-                               alt={img.alt} 
-                               className="w-full h-auto transform group-hover:scale-[1.02] transition-transform duration-500" 
-                             />
-                           </div>
-                        </div>
-                      ))}
-                    </div>
-                  )}
+                  {/* 內容說明區 (主文) */}
+                  {/* ✨ 移除下方的 border-b，因為已經是最後一個區塊了 */}
+                  <div className="article-content text-slate-300 leading-relaxed text-lg pb-6">
+                    {disease.contentHtml ? (
+                      <div dangerouslySetInnerHTML={{ __html: disease.contentHtml }} />
+                    ) : (
+                      <p>{disease.content || disease.description}</p>
+                    )}
+                  </div>
+
+                  {/* ✨ 已移除底部的圖片展示區塊 (disease.images) */}
 
               </div>
            </div>
