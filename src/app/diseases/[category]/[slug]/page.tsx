@@ -69,12 +69,47 @@ export default function DiseaseDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLdBreadcrumb} />
       <JsonLd data={jsonLdCondition} />
       
+      {/* ✨ CSS 注入：包含字體大小、重點色、以及新增的超連結樣式 */}
+      <style dangerouslySetInnerHTML={{__html: `
+        /* 重點文字 (strong) - 青色 */
+        .article-content strong {
+            color: #22d3ee !important; /* Cyan-400 */
+            font-weight: 700;
+        }
+
+        /* ✨ 新增：超連結 (a) - 桃紅色 + 跳轉圖示 */
+        .article-content a {
+            color: #ec4899 !important; /* 桃紅色 (Pink-500) */
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px dashed #ec4899; /* 虛線底線增加層次 */
+            transition: all 0.2s ease;
+            display: inline-flex; /* 讓圖示對齊文字 */
+            align-items: center;
+            gap: 2px;
+        }
+
+        /* 超連結 Hover 效果 */
+        .article-content a:hover {
+            color: #db2777 !important; /* 深一點的桃紅 (Pink-600) */
+            border-bottom-style: solid;
+            background-color: rgba(236, 72, 153, 0.15); /* 淡淡的桃紅背景 */
+            padding: 0 4px;
+            margin: 0 -4px;
+            border-radius: 4px;
+        }
+
+        /* ✨ 新增：自動在連結後方加入小箭頭圖示 */
+        .article-content a::after {
+            content: "↗"; /* 右上箭頭 unicode */
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-bottom: 2px; /* 微調位置 */
+        }
+      `}} />
+
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
-        {/* ✨ 修改重點：
-            原為 py-8 md:py-12 (上下 32px / 48px)
-            改為 pt-4 (上 16px) pb-12 (下 48px) md:py-12 (電腦版維持)
-        */}
         <main className="flex-grow pt-4 pb-12 md:py-12 fade-in relative z-10">
            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -105,7 +140,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                   </div>
 
                   {/* 內容說明區 */}
-                  <div className="text-slate-300 leading-relaxed text-lg mb-8 border-b border-slate-700 pb-6 article-content">
+                  <div className="article-content text-slate-300 leading-relaxed text-lg mb-8 border-b border-slate-700 pb-6">
                     {disease.contentHtml ? (
                       <div dangerouslySetInnerHTML={{ __html: disease.contentHtml }} />
                     ) : (
@@ -121,7 +156,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                             <i className="fa-solid fa-triangle-exclamation text-pink-500 mr-2"></i>
                             常見症狀
                           </h4>
-                          <ul className="space-y-3 text-slate-300 list-disc list-inside">
+                          <ul className="article-content space-y-3 text-slate-300 list-disc list-inside">
                               {disease.symptoms.map((item, idx) => (
                                 <li key={idx} className="leading-relaxed">{item}</li>
                               ))}
@@ -134,7 +169,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                             <i className="fa-solid fa-user-doctor text-cyan-500 mr-2"></i>
                             治療建議
                           </h4>
-                          <ul className="space-y-3 text-slate-300 list-disc list-inside">
+                          <ul className="article-content space-y-3 text-slate-300 list-disc list-inside">
                               {disease.treatments.map((item, idx) => (
                                 <li 
                                   key={idx} 

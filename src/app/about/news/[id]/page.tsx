@@ -69,14 +69,12 @@ export default function NewsDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLdArticle} />
       <JsonLd data={jsonLdBreadcrumb} />
 
-      {/* ✨ 核彈級修正：直接注入原生 CSS 樣式 
-         這段樣式會強制覆蓋所有預設值，保證生效
-      */}
+      {/* ✨ CSS 樣式修正：電腦版字體 18px，重點色青色 */}
       <style dangerouslySetInnerHTML={{__html: `
-        /* 手機版預設 */
+        /* 手機版設定 */
         .article-content p, .article-content li {
-            font-size: 19px !important;
-            line-height: 1.7 !important;
+            font-size: 18px !important; 
+            line-height: 1.625 !important;
             margin-bottom: 1.5rem !important;
             letter-spacing: 0px !important;
             color: #cbd5e1 !important; /* Slate-300 */
@@ -85,25 +83,25 @@ export default function NewsDetailPage({ params }: PageProps) {
         /* 電腦版 (寬度大於 768px) */
         @media (min-width: 768px) {
             .article-content p, .article-content li {
-                font-size: 22px !important; 
-                line-height: 1.8 !important;
-                margin-bottom: 2.5rem !important;
+                font-size: 18px !important; /* 18px (text-lg) */
+                line-height: 1.625 !important; /* relaxed */
+                margin-bottom: 2rem !important;
                 letter-spacing: 0.025em !important;
                 color: #cbd5e1 !important;
             }
             .article-content h2 {
-                font-size: 1.875rem !important;
+                font-size: 1.875rem !important; /* 30px */
                 margin-top: 3rem !important;
                 margin-bottom: 1.5rem !important;
                 color: #ffffff !important;
             }
             .article-content h3 {
-                font-size: 1.5rem !important;
+                font-size: 1.5rem !important; /* 24px */
                 margin-top: 2.5rem !important;
                 color: #22d3ee !important;
             }
             .article-content strong {
-                color: #22d3ee !important; /* ✨ 重點文字改為青色 (Cyan-400) */
+                color: #22d3ee !important; /* Cyan-400 */
             }
         }
       `}} />
@@ -111,13 +109,15 @@ export default function NewsDetailPage({ params }: PageProps) {
       <div className="min-h-screen bg-slate-900 text-slate-300 pt-4 pb-12 fade-in">
         <article className="max-w-4xl mx-auto px-3 sm:px-6 lg:px-8">
           
-          <nav className="text-sm text-slate-500 mb-8 font-sans px-1">
+          {/* ✨ 修改 1：加入 hidden class 隱藏麵包屑 */}
+          <nav className="hidden text-sm text-slate-500 mb-8 font-sans px-1">
               <Link href="/about/news" className="hover:text-cyan-400 transition-colors">最新內容</Link>
               <span className="mx-2">/</span>
               <span className="text-cyan-500 truncate">{post.title}</span>
           </nav>
 
-          <Link href="/about/news" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group px-1">
+          {/* ✨ 修改 2：將 mb-8 改為 mb-4，縮小與下方卡片的間距 */}
+          <Link href="/about/news" className="inline-flex items-center text-cyan-400 mb-4 hover:text-cyan-300 transition-colors group px-1">
               <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回列表
           </Link>
 
@@ -156,20 +156,18 @@ export default function NewsDetailPage({ params }: PageProps) {
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-30"></div>
               </div>
 
-              {/* ✨ 這裡加入了 article-content class
-                 這會對應到上方 style tag 中的設定
-              */}
+              {/* 文章內容區塊 */}
               <div className="p-5 md:p-10">
                   <div 
                     className="article-content prose prose-invert max-w-none 
+                               
+                               /* 標題設定 */
                                prose-headings:text-cyan-50 prose-headings:font-bold 
                                prose-h2:border-l-4 prose-h2:border-cyan-500 prose-h2:pl-4
                                
                                /* 連結與列表 */
                                prose-a:text-cyan-400 prose-a:no-underline hover:prose-a:underline prose-a:font-bold
-                               prose-strong:text-white prose-strong:font-bold
                                prose-ul:list-disc prose-ul:pl-5 
-                               prose-li:text-slate-300 
                                
                                /* 圖片設定 */
                                prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-slate-700 prose-img:w-full prose-img:my-10

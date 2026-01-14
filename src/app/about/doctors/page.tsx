@@ -61,7 +61,7 @@ export default function DoctorsPage() {
                       
                       <div className="lg:w-2/5 relative min-h-[400px] lg:min-h-full">
                          <img 
-                           src="https://duk.tw/UXXvK3.jpg" 
+                           src="/images/main/a.jpg"
                            alt="新竹復健科推薦-林羿辰醫師-台大雙專科" 
                            className="absolute inset-0 w-full h-full object-cover object-top lg:object-center opacity-90 hover:opacity-100 transition-opacity duration-700" 
                          />
