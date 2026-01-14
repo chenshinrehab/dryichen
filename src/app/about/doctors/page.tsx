@@ -80,7 +80,7 @@ export default function DoctorsPage() {
                              <div className="flex flex-wrap gap-2 mt-3">
                                 <span className="text-xs bg-cyan-900/50 text-cyan-300 px-2 py-1 rounded border border-cyan-700/50">台大醫學系</span>
                                 <span className="text-xs bg-cyan-900/50 text-cyan-300 px-2 py-1 rounded border border-cyan-700/50">雙專科醫師</span>
-                                <span className="text-xs bg-pink-900/30 text-pink-300 px-2 py-1 rounded border border-pink-700/50">教練醫師</span>
+                                <span className="text-xs bg-pink-900/30 text-cyan-300 px-2 py-1 rounded border border-pink-700/50">教練醫師</span>
                              </div>
                           </div>
 

@@ -61,7 +61,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <img src="/images/diseases/spine-hip/HIVD/d.jpg" alt="ˊ椎間盤突出MRI" />
           `,
         symptoms: ['下背劇痛', '坐骨神經痛 (腿麻)', '彎腰時疼痛加劇', '下肢無力'],
-        treatments: ['<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>', '服用止痛藥物', '物理治療 (牽引)', '核心肌群訓練'],
+        treatments: [ '服用止痛藥物', '物理治療 (牽引)', '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>','<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>'],
         seoKeywords: ['腰椎椎間盤突出', '坐骨神經痛', '下背痛', '椎間盤突出免開刀', '腳麻'],
         seoDescription: '腰椎椎間盤突出造成嚴重腰痛與腿麻。宸新復健科提供免開刀的PRP注射與物理治療方案，有效改善坐骨神經痛。',
         images: [
@@ -72,17 +72,25 @@ export const diseaseCategories: DiseaseCategory[] = [
         id: 'cervical-disc-degeneration',
         slug: 'cervical-disc-degeneration',
         title: '頸椎椎間盤退化',
-        description: '低頭用電腦導致的頸椎問題，俗稱「烏龜頸」。',
+        description: '低頭用電腦導致的頸椎問題，椎間盤壓迫神經，造成肩頸痛或上肢麻痛。',
         contentHtml: `
           <p>現代人長時間低頭滑手機、使用電腦，頸椎承受的壓力是正常的數倍，容易導致頸椎椎間盤提早退化、長骨刺。</p>
-          <p>初期症狀為肩頸僵硬、痠痛，若壓迫到神經，則會造成<strong>手臂麻痛、手部無力</strong>。嚴重時甚至會壓迫脊髓，影響行走平衡。</p>
-        `,
+          <p>初期症狀為肩頸僵硬、痠痛，當椎間盤因長期受力不均、姿勢不良或外力撞擊，導致內部的髓核突出，想是果凍被擠出，壓迫到後方的神經根。若壓迫到神經，則會造成<strong>手臂麻痛、手部無力</strong>。嚴重時甚至會壓迫脊髓，影響行走平衡。</p>
+          <img src="/images/diseases/spine-hip/CHIVD/a.jpg" alt="頸部疼痛示意圖" />
+          <p>根據壓迫的位子不同，會有不同部位的手麻及酸痛。</p>
+          <img src="/images/diseases/spine-hip/CHIVD/b.jpg" alt="頸部神經壓迫疼痛地圖" />
+          <p>診所內備有X光設備，可以馬上檢查有沒有長骨刺、椎間盤狹窄或是滑脫的情況，<strong>骨頭中間的縫隙消失</strong>，或是<strong>骨頭排列歪斜</strong>。</p>
+          <img src="/images/diseases/spine-hip/CHIVD/c.jpg" alt="ˊ椎間盤突出X光" />
+          <p class="mt-4"><span class="text-cyan-400 font-bold">✨ 治療關鍵：</span> 80%的患者可透過非手術治療痊癒，如復健拉脖子及止痛藥物。更有效的治療有<strong>PRP 增生療法</strong>能修復受損的纖維環，搭配<strong>徒手運動放鬆頸部肌肉</strong>搭配<strong>肌力訓練改善烏龜脖</strong>，是避免復發的不二法門。</p>
+          <p>若症狀惡化或太嚴重，甚至需要手術治療，核磁共振檢查，可以更清楚的看到椎間盤及神經結構。</p>
+        
+                  `,
         symptoms: ['頸部疼痛僵硬', '膏肓痛', '手臂麻木刺痛', '頭痛 (頸因性頭痛)'],
-        treatments: ['姿勢矯正 (收下巴)', '頸椎牽引', '神經解離注射', '增生療法'],
+        treatments: ['姿勢矯正 (收下巴)', '頸椎牽引', '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>', '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>'],
         seoKeywords: ['頸椎椎間盤退化', '頸部疼痛', '手麻', '骨刺', '烏龜頸'],
         seoDescription: '長期低頭導致頸椎椎間盤退化與骨刺，造成手麻與頸痛。了解治療與矯正方式。',
         images: [
-           { src: 'https://images.unsplash.com/photo-1531956531700-cd299634842e?auto=format&fit=crop&q=80&w=800', alt: '頸部疼痛示意圖' }
+           { src: '/images/diseases/spine-hip/CHIVD/a.jpg', alt: '頸部疼痛示意圖' }
         ]
       },
       {

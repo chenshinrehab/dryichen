@@ -83,7 +83,7 @@ const aboutSections = [
   {
     id: 'doctors',
     title: '醫師介紹',
-    subtitle: 'Our Physicians',
+    subtitle: 'Our Physician',
     description: '由台大訓練醫師團隊親自看診，結合骨科與復健科專業，提供全方位的疼痛治療方案。',
     href: '/about/doctors',
     image: '/images/about/a.jpg',
