@@ -4,6 +4,8 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { getDiseaseBySlug, generateAllDiseaseParams } from '@/data/diseases'
+// ✨ 1. 新增引入 ShareButtons
+import ShareButtons from '@/components/ShareButtons'
 
 interface PageProps {
   params: {
@@ -69,7 +71,6 @@ export default function DiseaseDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLdBreadcrumb} />
       <JsonLd data={jsonLdCondition} />
       
-      {/* ✨ CSS 注入：包含文字樣式、連結樣式、以及圖片寬度限制 */}
       <style dangerouslySetInnerHTML={{__html: `
         /* 重點文字 (strong) - 青色 */
         .article-content strong {
@@ -105,7 +106,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
             margin-bottom: 2px;
         }
 
-        /* ✨ 圖片寬度限制 (針對 article-content 內的圖片) */
+        /* 圖片寬度限制 (針對 article-content 內的圖片) */
         .article-content img {
             max-width: 100%; /* 手機版滿版 */
             height: auto;
@@ -135,71 +136,90 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                  返回分類列表
               </Link>
               
-              <div className="bg-slate-800/80 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden shadow-2xl p-4 md:p-8">
+              {/* ✨ 修改 2：移除這裡的 p-4 md:p-8，改到下方的內層 div，這樣底部的分享區塊才能滿版 */}
+              <div className="bg-slate-800/80 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden shadow-2xl">
                   
-                  {/* Header: 標題與 QR Code */}
-                  <div className="mb-8 border-l-4 border-cyan-500 pl-4 bg-gradient-to-r from-slate-900/50 to-transparent py-4 rounded-r-xl flex items-center gap-6">
-                      <div className="hidden md:block bg-white p-1 rounded-lg shrink-0 group relative shadow-lg">
-                          <img className="w-20 h-20 object-contain" src={qrCodeApiUrl} alt={`掃描閱讀 ${disease.title}`} />
-                          <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-max bg-slate-900 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                            掃描此頁面
+                  {/* ✨ 新增內層容器：包裹 Header, Grid, 和主內容，給予 padding */}
+                  <div className="p-4 md:p-10">
+                  
+                      {/* Header: 標題與 QR Code */}
+                      <div className="mb-8 border-l-4 border-cyan-500 pl-4 bg-gradient-to-r from-slate-900/50 to-transparent py-4 rounded-r-xl flex items-center gap-6">
+                          <div className="hidden md:block bg-white p-1 rounded-lg shrink-0 group relative shadow-lg">
+                              <img className="w-20 h-20 object-contain" src={qrCodeApiUrl} alt={`掃描閱讀 ${disease.title}`} />
+                              <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-max bg-slate-900 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                                掃描此頁面
+                              </div>
+                          </div>
+                          <div>
+                              <h1 className="text-3xl md:text-4xl font-bold font-sans text-white mb-2 tracking-wide">{disease.title}</h1>
+                              <div className="flex flex-wrap gap-2 mt-2">
+                                {disease.seoKeywords?.slice(0,4).map((kw, i) => (
+                                  <span key={i} className="text-xs bg-slate-700 text-cyan-400 px-2 py-1 rounded-full border border-slate-600">#{kw}</span>
+                                ))}
+                              </div>
                           </div>
                       </div>
-                      <div>
-                          <h1 className="text-3xl md:text-4xl font-bold font-sans text-white mb-2 tracking-wide">{disease.title}</h1>
-                          <div className="flex flex-wrap gap-2 mt-2">
-                             {disease.seoKeywords?.slice(0,4).map((kw, i) => (
-                               <span key={i} className="text-xs bg-slate-700 text-cyan-400 px-2 py-1 rounded-full border border-slate-600">#{kw}</span>
-                             ))}
+
+                      <div className="grid md:grid-cols-2 gap-8 mb-12">
+                          {/* 症狀 */}
+                          <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-700 h-full hover:border-pink-500/30 transition-colors">
+                              <h4 className="text-xl font-bold text-white mb-4 border-b border-slate-600 pb-2 flex items-center">
+                                <i className="fa-solid fa-triangle-exclamation text-pink-500 mr-2"></i>
+                                常見症狀
+                              </h4>
+                              <ul className="article-content space-y-3 text-slate-300 list-disc list-inside">
+                                  {disease.symptoms.map((item, idx) => (
+                                    <li key={idx} className="leading-relaxed">{item}</li>
+                                  ))}
+                              </ul>
+                          </div>
+
+                          {/* 治療建議 */}
+                          <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-700 h-full hover:border-cyan-500/30 transition-colors">
+                              <h4 className="text-xl font-bold text-white mb-4 border-b border-slate-600 pb-2 flex items-center">
+                                <i className="fa-solid fa-user-doctor text-cyan-500 mr-2"></i>
+                                治療建議
+                              </h4>
+                              <ul className="article-content space-y-3 text-slate-300 list-disc list-inside">
+                                  {disease.treatments.map((item, idx) => (
+                                    <li 
+                                      key={idx} 
+                                      dangerouslySetInnerHTML={{ __html: item }}
+                                      className="leading-relaxed"
+                                    ></li>
+                                  ))}
+                              </ul>
                           </div>
                       </div>
-                  </div>
 
-                  {/* ✨ 移動位置：症狀與治療 (雙欄呈現) 移到主文上方 */}
-                  <div className="grid md:grid-cols-2 gap-8 mb-12">
-                      {/* 症狀 */}
-                      <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-700 h-full hover:border-pink-500/30 transition-colors">
-                          <h4 className="text-xl font-bold text-white mb-4 border-b border-slate-600 pb-2 flex items-center">
-                            <i className="fa-solid fa-triangle-exclamation text-pink-500 mr-2"></i>
-                            常見症狀
-                          </h4>
-                          {/* 症狀列表同樣加上 article-content 確保如果這裡有粗體也會變色 */}
-                          <ul className="article-content space-y-3 text-slate-300 list-disc list-inside">
-                              {disease.symptoms.map((item, idx) => (
-                                <li key={idx} className="leading-relaxed">{item}</li>
-                              ))}
-                          </ul>
+                      {/* 內容說明區 (主文) */}
+                      <div className="article-content text-slate-300 leading-relaxed text-lg pb-6">
+                        {disease.contentHtml ? (
+                          <div dangerouslySetInnerHTML={{ __html: disease.contentHtml }} />
+                        ) : (
+                          <p>{disease.content || disease.description}</p>
+                        )}
                       </div>
 
-                      {/* 治療建議 */}
-                      <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-700 h-full hover:border-cyan-500/30 transition-colors">
-                          <h4 className="text-xl font-bold text-white mb-4 border-b border-slate-600 pb-2 flex items-center">
-                            <i className="fa-solid fa-user-doctor text-cyan-500 mr-2"></i>
-                            治療建議
-                          </h4>
-                          <ul className="article-content space-y-3 text-slate-300 list-disc list-inside">
-                              {disease.treatments.map((item, idx) => (
-                                <li 
-                                  key={idx} 
-                                  dangerouslySetInnerHTML={{ __html: item }}
-                                  className="leading-relaxed"
-                                ></li>
-                              ))}
-                          </ul>
+                  </div> {/* End of padding wrapper */}
+
+                  {/* ✨ 3. 新增底部分享與導覽區塊 (滿版) */}
+                  <div className="bg-slate-900/50 p-8 md:p-12 border-t border-slate-700 text-center">
+                      <h3 className="text-white font-bold text-2xl mb-3">覺得這篇文章有幫助嗎？</h3>
+                      <p className="text-slate-400 mb-6 text-lg">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
+                      
+                      <ShareButtons url={currentPageUrl} title={disease.title} />
+
+                      <div className="mt-12 pt-8 border-t border-slate-700/50">
+                          <Link 
+                            href="/diseases" 
+                            className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-cyan-400 border-2 border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] transition-all duration-300 group"
+                          >
+                                看更多疾病衛教 
+                                <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+                          </Link>
                       </div>
                   </div>
-
-                  {/* 內容說明區 (主文) */}
-                  {/* ✨ 移除下方的 border-b，因為已經是最後一個區塊了 */}
-                  <div className="article-content text-slate-300 leading-relaxed text-lg pb-6">
-                    {disease.contentHtml ? (
-                      <div dangerouslySetInnerHTML={{ __html: disease.contentHtml }} />
-                    ) : (
-                      <p>{disease.content || disease.description}</p>
-                    )}
-                  </div>
-
-                  {/* ✨ 已移除底部的圖片展示區塊 (disease.images) */}
 
               </div>
            </div>

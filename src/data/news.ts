@@ -21,13 +21,12 @@ export const newsData: NewsPost[] = [
     title: '宸新復健科門診公告',
     category: '門診公告',
     date: '2026-01-15',
-    summary: '宸新復健科1/12~1/17門診時間公告',
+    summary: '宸新復健科2026年門診時間公告',
     coverImage: '/images/about/c.jpg',
     contentHtml: `
 <p><strong>01/12-01/17 門診表</strong></p>
  <img src="/images/news/a.jpg" alt="門診時間表" />
-<p><strong>✦貼心小叮嚀✦</strong><br>
-(江家維醫師、黃彥傑醫師不看兒童早療，請要掛號的家長注意)</p>
+<p><strong>✦貼心小叮嚀✦</strong><br></p>
 
 <ul>
   <li>本診所無電話掛號，請下載 APP 預約，造成不便，敬請見諒。</li>
@@ -63,16 +62,43 @@ export const newsData: NewsPost[] = [
     keywords: ['門診公告', '林羿辰醫師', '新竹宸新復健科']
   },
   {
-    id: 'prp-knowledge',
-    title: '膝蓋痛一定要開刀嗎？PRP 增生療法新選擇',
+    id: 'kneeclick',
+    title: '膝蓋為何會喀喀響，是膝蓋退化了嗎?',
     category: '衛教文章',
-    date: '2024-01-05',
-    summary: '退化性關節炎不一定要換人工關節。透過 PRP 自體血小板注射，啟動關節修復力。',
-    coverImage: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800',
+    date: '2026-01-14',
+    summary: '門診很常碰到病患來看診，詢問膝蓋為何會喀喀響，擔心膝蓋是不是退化了!',
+    coverImage: '/images/about/d.jpg',
     contentHtml: `
-      <p>許多長輩聽到膝蓋退化，就很擔心要開刀換人工關節。其實在退化初期或中期，<strong>PRP 增生療法</strong>是一個非常有效的保守治療選擇。</p>
-      <h3>什麼是 PRP？</h3>
-      <p>PRP 是利用自己的血液，分離出高濃度的血小板...</p>
+<p>門診很常碰到病患來看診，詢問膝蓋為何會喀喀響，擔心膝蓋是不是退化了！</p>
+
+<h3>✅ 這種聲音免驚！(生理性聲響)</h3>
+<p>如果膝蓋有聲音，但是 <strong>「完全不痛、不腫、有力氣」</strong>，通常是正常的生理現象：</p>
+<ul>
+  <li><strong>氣泡聲：</strong> 像折手指一樣，關節內的氣泡破掉（啵一聲）。</li>
+  <li><strong>筋骨滑動：</strong> 就像撥吉他弦，筋稍微掃過骨頭的聲音。</li>
+</ul>
+<p><strong>👉 醫師說：</strong> 只要不痛，通常不需要治療，也不是關節炎的前兆喔！</p>
+
+<h3>🚨 出現這 4 種狀況，請看醫生！</h3>
+<p>如果聲音伴隨著不舒服，這才是膝蓋在求救：</p>
+<ul>
+  <li><strong>會痛：</strong> 最直接的警訊，內部組織受傷。</li>
+  <li><strong>會腫：</strong> 膝蓋看起來腫腫的，摸起來熱熱的。</li>
+  <li><strong>會卡：</strong> 膝蓋彎到一半突然「卡死」動不了。</li>
+  <li><strong>會軟：</strong> 走路突然沒力氣，稍微軟腳。</li>
+</ul>
+<p><strong>👉 醫師說：</strong> 這可能代表半月板、軟骨或是韌帶受傷了，請盡快檢查。</p>
+
+<h3>💪 膝蓋有聲音，該怎麼保養？</h3>
+<ul>
+  <li><strong>練壯股四頭肌：</strong> 大腿肌肉有力，就能抓穩膝蓋骨，減少磨損。<br>(方法：坐在椅子上，把腳伸直抬高停留 5-10 秒，或背靠牆壁半蹲)</li>
+  <li><strong>運動後放鬆大腿前外側</strong></li>
+  <li><strong>避開危險動作：</strong> 少做蹲跪、盤腿坐，避免深蹲超過 90 度。</li>
+</ul>
+
+<h3>💡 最後記住這句口訣：</h3>
+<p><strong>「有聲無痛」多觀察，「有聲有痛」快就醫！</strong></p>
+<img src="/images/news/article/knee.jpg" alt="膝蓋為何會喀喀響" />
     `,
     seoTitle: '膝蓋退化免開刀？新竹PRP治療推薦 - 宸新復健科',
     seoDescription: '新竹PRP注射推薦。膝蓋退化性關節炎不一定要開刀，透過超音波導引PRP增生療法，精準修復軟骨與韌帶。',
