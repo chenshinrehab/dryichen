@@ -4,56 +4,96 @@ import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 
 // ==========================================
-// 1. Meta 設定 (強化預約意圖)
+// 1. Meta 設定
 // ==========================================
 export const metadata: Metadata = {
-  title: '馬上預約 - 新竹網路掛號/APP預約/Line掛號 | 宸新復健科',
+  title: '馬上預約 - 新竹網路掛號/APP預約/Line掛號 | 新竹宸新復健科',
   description: '新竹宸新復健科提供便利的數位掛號服務。支援 Android/iOS App 下載預約，或加入 Line 官方帳號線上掛號。免排隊、即時查詢看診進度，就醫更輕鬆。',
   keywords: ['新竹掛號', '網路預約', '診所APP', 'Line掛號', '看診進度查詢', '新竹復健科預約', '宸新掛號', '林羿辰醫師掛號'],
 }
 
 export default function BookingPage() {
   
+  const siteUrl = 'https://www.dryichen.com.tw'
+  const currentUrl = `${siteUrl}/booking`
+
   // ==========================================
-  // 2. Schema 結構化資料 (行動應用程式 + 預約動作)
+  // 2. Schema: 麵包屑
+  // ==========================================
+  const jsonLdBreadcrumb = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: '馬上預約', item: currentUrl },
+    ],
+  }
+
+  // ==========================================
+  // 3. Schema: MedicalWebPage + ReserveAction + App
   // ==========================================
   const jsonLdBooking = {
     '@context': 'https://schema.org',
     '@graph': [
+      // 定義這是一個醫療預約頁面
       {
-        '@type': 'WebPage',
-        'name': '預約掛號頁面',
-        'description': '提供多種數位預約管道。',
+        '@type': 'MedicalWebPage',
+        '@id': `${currentUrl}#webpage`,
+        'url': currentUrl,
+        'name': '宸新復健科預約掛號',
+        'description': '提供 Line 線上掛號與手機 App 預約看診服務。',
+        'author': {
+            '@type': 'MedicalOrganization',
+            'name': '新竹宸新復健科',
+            'url': siteUrl
+        },
+        // 定義潛在動作：預約
         'potentialAction': {
           '@type': 'ReserveAction',
-          'target': 'https://lin.ee/FHj3mIs',
-          'name': 'Line 線上預約'
+          'target': {
+            '@type': 'EntryPoint',
+            'urlTemplate': 'https://lin.ee/FHj3mIs', // 以 Line 為主要預約入口
+            'actionPlatform': [
+              'http://schema.org/DesktopWebPlatform',
+              'http://schema.org/MobileWebPlatform'
+            ]
+          },
+          'result': {
+            '@type': 'MedicalAppointment',
+            'name': '門診預約'
+          }
         }
       },
+      // App 資訊 (Android)
       {
         '@type': 'MobileApplication',
         'name': '宸新復健科 App (Android)',
         'operatingSystem': 'Android',
         'applicationCategory': 'MedicalApplication',
-        'installUrl': 'http://bit.ly/2Q8FdeK'
+        'installUrl': 'http://bit.ly/2Q8FdeK',
+        'author': { '@type': 'Organization', 'name': '宸新復健科' }
       },
+      // App 資訊 (iOS)
       {
         '@type': 'MobileApplication',
         'name': '宸新復健科 App (iOS)',
         'operatingSystem': 'iOS',
         'applicationCategory': 'MedicalApplication',
-        'installUrl': 'https://apple.co/2vZfRsH'
+        'installUrl': 'https://apple.co/2vZfRsH',
+        'author': { '@type': 'Organization', 'name': '宸新復健科' }
       }
     ]
   }
 
   return (
     <>
+      <JsonLd data={jsonLdBreadcrumb} />
       <JsonLd data={jsonLdBooking} />
 
-      {/* ✨ 修改重點：
-          原為 py-16 (上下 64px)
-          改為 pt-4 (上 16px) pb-16 (下 64px) md:pt-8 (電腦版上 32px)
+      {/* UI 樣式保留您的設定：
+          pt-4 (上 16px) 
+          pb-16 (下 64px) 
+          md:pt-8 (電腦版上 32px)
       */}
       <div className="flex-grow pt-4 pb-16 md:pt-8 px-4 bg-slate-900 min-h-screen">
         <section id="booking" className="fade-in max-w-5xl mx-auto">
@@ -76,9 +116,8 @@ export default function BookingPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             
-
-{/* Line Block */}
-<div className="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl p-8 text-center hover:border-green-400/50 hover:shadow-[0_0_20px_rgba(74,222,128,0.2)] transition-all duration-300 group flex flex-col items-center relative overflow-hidden">
+            {/* Line Block */}
+            <div className="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl p-8 text-center hover:border-green-400/50 hover:shadow-[0_0_20px_rgba(74,222,128,0.2)] transition-all duration-300 group flex flex-col items-center relative overflow-hidden">
               
               <div className="w-20 h-20 bg-green-400/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <i className="fa-brands fa-line text-4xl text-green-400"></i>
@@ -104,8 +143,8 @@ export default function BookingPage() {
               </a>
             </div>
 
-           {/* iOS Block */}
-           <div className="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl p-8 text-center hover:border-blue-500/50 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)] transition-all duration-300 group flex flex-col items-center">
+            {/* iOS Block */}
+            <div className="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl p-8 text-center hover:border-blue-500/50 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)] transition-all duration-300 group flex flex-col items-center">
               <div className="w-20 h-20 bg-blue-500/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <i className="fa-brands fa-apple text-4xl text-blue-500"></i>
               </div>
@@ -156,8 +195,6 @@ export default function BookingPage() {
                 <i className="fa-solid fa-download mr-2"></i> 點擊下載
               </a>
             </div>
-
-
 
           </div>
         </section>

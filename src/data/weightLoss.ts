@@ -42,19 +42,83 @@ export const weightLossPrograms: WeightLossProgram[] = [
     keywords: ['新竹猛健樂', 'Mounjaro價格', '新竹瘦瘦針', '新竹減重門診', '雙重腸泌素', '減肥針推薦', '胰島素阻抗'],
 
     contentHtml: `
-      <p>宸新復健科提供完整的新竹<strong>猛健樂 (Mounjaro)</strong> 減重療程。這是目前最新的雙重腸泌素 (GIP/GLP-1) 受體促效劑，能同時活化 GIP 與 GLP-1 兩種受體。</p>
-      
-      <p>臨床研究顯示，猛健樂能提供比傳統單一機轉藥物（如善纖達、週纖達）更卓越的<strong>體重控制</strong>與<strong>血糖管理</strong>效果，是目前對抗頑固型肥胖、代謝症候群與多囊性卵巢的新利器。</p>
+<p>宸新復健科提供完整的<strong>猛健樂 (Mounjaro)</strong> 減重療程。這是目前最新的雙重腸泌素 (GIP/GLP-1) 受體促效劑，能同時活化 GIP 與 GLP-1 兩種受體。</p>
 
-      <div class="my-6 p-4 bg-slate-800/50 border-l-4 border-cyan-500 rounded-r-lg">
-        <h4 class="text-white font-bold mb-2">宸新復健科猛健樂價格方案：</h4>
+<div style="background-color: rgba(34, 211, 238, 0.1); border-left: 4px solid #22d3ee; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0 0.5rem 0.5rem 0;">
+    <h3 style="margin-top: 0; color: #0e7490;">📢 猛健樂本月專屬方案與價格說明</h3>
+    <p style="margin-bottom: 0;">
+                <h4 class="text-white font-bold mb-2">宸新復健科猛健樂價格方案：</h4>
         <ul class="space-y-2 text-slate-300">
            <li><span class="text-cyan-400 font-bold">✨ 2.5mg：</span>$10,500</li>
            <li><span class="text-cyan-400 font-bold">✨ 5mg ：</span>$11,500</li>
            <li><span class="text-cyan-400 font-bold">✨ 7.5mg：</span>$13,000</li>
            <li><span class="text-cyan-400 font-bold">✨ 10mg ：</span>$15,000</li>
         </ul>
-        <p class="text-sm text-slate-500 mt-2">* 實際劑量需經醫師評估後開立</p>
+    </p>
+</div>
+
+<h3>🏥 宸新復健科的減重治療流程</h3>
+<p>我們堅持「安全第一，效果第二」。在宸新，減重不只是打針，而是一個完整的醫療計畫。我們結合了<strong>InBody 身體組成分析</strong>、<strong>血液檢查</strong>以及<strong>醫師一對一諮詢</strong>，確保您在減脂的過程中，肌肉流失降到最低，健康指數持續提升。</p>
+
+<p><img src="/images/weight-loss/mounjaro/a.jpg" alt="猛健樂減重治療流程圖"></p>
+
+<ol>
+  <li><strong>初診評估：</strong> 醫師問診，了解飲食習慣、用藥史及減重目標。</li>
+  <li><strong>數據檢測：</strong> 測量體重、體脂率、骨骼肌重及必要的血液生化檢查。</li>
+  <li><strong>療程規劃：</strong> 根據數據制定個人化的猛健樂劑量計畫，並搭配飲食與運動建議。</li>
+  <li><strong>定期回診：</strong> 每週或每月回診追蹤，適時調整劑量，處理副作用，確保療程順利。</li>
+</ol>
+
+<h3>🔬 什麼是猛健樂？為什麼被稱為「雙重」腸泌素？</h3>
+<p>要了解猛健樂為何強大，我們必須先認識兩個關鍵的荷爾蒙：<strong>GLP-1 (類升糖素胜肽-1)</strong> 與 <strong>GIP (葡萄糖依賴性胰島素刺激胜肽)</strong>。</p>
+<p>傳統的減重針劑通常只含有 GLP-1 促效劑，它的作用是大腦的飽食中樞，告訴大腦「我飽了」，並延緩胃部排空。而<strong>猛健樂 (Mounjaro)</strong> 是全球首款<strong>同時結合 GIP 與 GLP-1</strong> 的雙效激動劑。GIP 不僅能協同 GLP-1 增強抑制食慾的效果，更重要的是，研究顯示 GIP 能直接作用於脂肪組織，改善脂肪代謝並提升胰島素敏感度。</p>
+<p>簡單來說，如果第一代藥物是「抑制食慾的專家」，那麼猛健樂就是「食慾控制＋代謝燃脂」的雙重指揮官。這種協同作用（Synergy）讓患者在面對頑固脂肪時，擁有更強大的武器。</p>
+
+
+
+<h3>🌟 猛健樂 (Mounjaro) 的五大核心特點</h3>
+<p>在宸新復健科的臨床經驗與國際大型研究（SURMOUNT-1）中，猛健樂展現了以下五大優勢：</p>
+<ul>
+  <li><strong>1. 突破性的減重幅度：</strong> 根據臨床數據，在高劑量使用下，受試者平均可減去約 <strong>20%~25%</strong> 的體重，這是一個非常驚人的數字，效果甚至逼近縮胃手術。</li>
+  <li><strong>2. 雙重機制，更強的飽足感：</strong> 同時活化 GIP 與 GLP-1 受體，能更有效地降低飢餓感，減少對高熱量食物的渴望（Cravings），讓飲食控制變得不再痛苦。</li>
+  <li><strong>3. 改善代謝症候群：</strong> 除了體重下降，猛健樂對於降低血糖（糖化血色素）、改善血脂異常以及降低血壓都有顯著的正面影響。</li>
+  <li><strong>4. 針對頑固內臟脂肪：</strong> 對於中心型肥胖（大肚腩）特別有效，能顯著減少堆積在肝臟與內臟周圍的脂肪，降低脂肪肝風險。</li>
+  <li><strong>5. 一週一次，便利性高：</strong> 與需要每天施打的舊型藥物不同，猛健樂採用長效劑型，每週僅需施打一次，大幅提升了生活品質與用藥順從性。</li>
+</ul>
+<p><img src="/images/weight-loss/mounjaro/b.jpg" alt="猛健樂雙重腸泌素特點說明"></p>
+
+<h3>🎯 誰適合使用猛健樂？</h3>
+<p>減重藥物並非萬能，也不是每個人都適合。在宸新復健科，林羿辰醫師會根據您的身體狀況、骨骼肌肉量以及代謝數據進行評估。一般而言，以下族群是猛健樂的適用對象：</p>
+<ul>
+  <li><strong>BMI ≧ 30</strong> 的肥胖患者。</li>
+  <li><strong>BMI ≧ 27</strong> 且伴隨至少一項體重相關併發症（如高血壓、第二型糖尿病、高血脂、脂肪肝或睡眠呼吸中止症）。</li>
+  <li>曾經嘗試飲食控制與運動，但體重<strong>停滯不前</strong>或反覆復胖者。</li>
+  <li>希望透過醫療輔助，建立長期健康生活型態者。</li>
+</ul>
+<p><strong>特別注意：</strong>如果您有甲狀腺髓質癌病史、多發性內分泌腫瘤症候群第二型 (MEN 2) 家族史，或是第一型糖尿病患者，則不適合使用此藥物。請務必誠實告知醫師您的病史。</p>
+
+<p><img src="/images/weight-loss/mounjaro/c.jpg" alt="猛健樂適合施打對象"></p>
+
+<h3>📝 猛健樂使用懶人包：副作用與應對</h3>
+<p>開始使用猛健樂後，身體需要時間適應腸胃道的改變。為了讓您的減重旅程更順暢，我們整理了以下重點懶人包：</p>
+<ul>
+  <li><strong>施打方式：</strong> 皮下注射（通常是腹部、大腿或手臂），每週固定同一天施打一次，與用餐時間無關。</li>
+  <li><strong>劑量遞增原則：</strong> 為了減少副作用，我們通常會從<strong>低劑量 (2.5mg)</strong> 開始，每 4 週視情況評估是否往上增加劑量 (5mg, 7.5mg 等)。切勿自行加量。</li>
+  <li><strong>常見副作用：</strong> 初期可能會出現噁心、腹脹、便秘或腹瀉。這些症狀通常是暫時的，隨著身體適應會逐漸緩解。</li>
+  <li><strong>如何緩解不適？</strong>
+    <ul>
+      <li><strong>細嚼慢嚥：</strong> 吃太快容易導致噁心。</li>
+      <li><strong>吃七分飽：</strong> 感覺不餓就停下來，不要硬塞。</li>
+      <li><strong>避免油膩：</strong> 高油高糖食物會加重噁心感。</li>
+      <li><strong>多喝水：</strong> 預防便秘與脫水。</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="/images/weight-loss/mounjaro/d.jpg" alt="新竹猛健樂懶人包"></p>
+
+<h3>💡 醫師的最後叮嚀</h3>
+<p>猛健樂是一個強大的工具，但它不是魔法。<strong>「藥物＋飲食調整＋肌力訓練」</strong>才是通往不復胖體質的黃金三角。在藥物幫助您控制食慾的同時，請務必配合宸新復健科團隊的運動建議，鍛鍊核心肌群與大腿肌肉，這將有助於維持基礎代謝率，讓您瘦得健康、瘦得有線條！</p>
       </div>
     `,
     whyChooseUs: [
@@ -68,10 +132,6 @@ export const weightLossPrograms: WeightLossProgram[] = [
       '有效控制三高、改善脂肪肝與心血管健康'
     ],
     images: [
-      { src: '/images/weight-loss/mounjaro/a.jpg', alt: '猛健樂減重治療流程圖' },
-      { src: '/images/weight-loss/mounjaro/b.jpg', alt: '猛健樂雙重腸泌素特點說明' },
-      { src: '/images/weight-loss/mounjaro/c.jpg', alt: '猛健樂適合施打對象' },
-      { src: '/images/weight-loss/mounjaro/d.jpg', alt: '新竹猛健樂懶人包' }
     ],
     qaList: [
       {

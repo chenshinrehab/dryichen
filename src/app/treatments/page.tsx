@@ -1,11 +1,13 @@
-// src/app/treatments/page.tsx
 import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { treatments } from '@/data/treatments'
 
+// 定義常數
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+
 // ==========================================
-// 1. Meta 設定
+// 1. Meta 設定 (保留 SEO 優化：加入 Open Graph)
 // ==========================================
 export const metadata: Metadata = {
   title: '新竹PRP/增生注射/震波/徒手治療 - 超音波導引骨科復健 | 宸新復健科',
@@ -15,10 +17,16 @@ export const metadata: Metadata = {
     '體外震波', '新竹體外震波', '徒手治療', '新竹徒手治療', 
     '復健科推薦', '膝蓋退化免開刀', '足底筋膜炎治療'
   ],
+  openGraph: {
+    title: '新竹PRP/增生注射/震波/徒手治療 - 宸新復健科',
+    description: '提供PRP增生療法、體外震波、徒手治療等專業骨科復健服務。',
+    url: `${SITE_URL}/treatments`,
+    type: 'website',
+  },
 }
 
 // ==========================================
-// 2. Schema 結構化資料
+// 2. Schema 結構化資料 (保留 SEO 優化：加入 ItemList)
 // ==========================================
 const treatmentsSchema = {
   '@context': 'https://schema.org',
@@ -26,25 +34,36 @@ const treatmentsSchema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: '首頁', item: 'https://www.dryichen.com.tw/' },
-        { '@type': 'ListItem', position: 2, name: '治療項目', item: 'https://www.dryichen.com.tw/treatments' },
+        { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
+        { '@type': 'ListItem', position: 2, name: '治療項目', item: `${SITE_URL}/treatments` },
       ],
     },
     {
       '@type': 'MedicalWebPage',
+      '@id': `${SITE_URL}/treatments/#webpage`,
       'name': '復健治療項目總覽',
       'description': '提供PRP增生療法、體外震波、徒手治療等專業骨科復健服務。',
-      'lastReviewed': '2026-01-11',
+      'lastReviewed': new Date().toISOString().split('T')[0],
       'reviewedBy': {
         '@type': 'Physician',
         'name': '林羿辰 醫師',
-        'url': 'https://www.dryichen.com.tw/about/doctors'
+        'url': `${SITE_URL}/about/doctors`
       },
       'specialty': [
         { '@type': 'MedicalSpecialty', 'name': 'Orthopedics' },
         { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation' },
         { '@type': 'MedicalSpecialty', 'name': 'Sports Medicine' }
-      ]
+      ],
+      // 告訴 Google 這裡有一份服務清單
+      'mainEntity': {
+        '@type': 'ItemList',
+        'itemListElement': treatments.map((item, index) => ({
+            '@type': 'ListItem',
+            'position': index + 1,
+            'url': `${SITE_URL}/treatments/${item.slug}`,
+            'name': item.title
+        }))
+      }
     }
   ]
 }
@@ -56,13 +75,12 @@ export default function TreatmentsPage() {
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
-      <main className="max-w-5xl mx-auto px-4 pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
+        <main className="max-w-5xl mx-auto px-4 pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            
             {/* ============================================================
-                ✨ 標題區塊 (統一置中樣式)
-               ============================================================ */}
+                ✨ 標題區塊 (回復您原本的樣式)
+                ============================================================ */}
             <div className="flex items-center justify-center gap-3 mb-10">
                 <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
                     <i className="fa-solid fa-notes-medical text-xl"></i>
@@ -73,11 +91,10 @@ export default function TreatmentsPage() {
             </div>
 
             {/* ============================================================
-                ✨ SEO 導言區 (統一置中樣式)
-               ============================================================ */}
+                ✨ SEO 導言區 (回復您原本的樣式)
+                ============================================================ */}
             <div className="mb-12 max-w-3xl mx-auto">
                 <details className="group border-l-4 border-cyan-500 pl-4">
-                    {/* Summary */}
                     <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left">
                         <span className="inline-block h-full">
                             宸新復健科致力於提供最先進的<strong className="text-cyan-400 font-normal">新竹骨科</strong>復健治療，結合醫學影像與運動科學，為您解決長期疼痛。
@@ -91,25 +108,24 @@ export default function TreatmentsPage() {
                         </span>
                     </summary>
                     
-                    {/* Content */}
                     <div className="mt-4 text-lg text-slate-400 leading-relaxed text-left animate-in fade-in slide-in-from-top-1 duration-300">
                         <p className="mb-4">
                             我們特別引進高解析度<strong className="text-cyan-400 font-normal">超音波導引注射</strong>技術，讓<strong className="text-cyan-400 font-normal">PRP</strong> (高濃度血小板) 與<strong className="text-cyan-400 font-normal">增生注射</strong>治療能精準修復受損組織，大幅提升<strong>退化性關節炎</strong>與<strong>肌腱撕裂</strong>的療效。
                         </p>
                         <p className="mb-4">
-    針對慢性疼痛與術後恢復，我們配備高能量<strong className="text-cyan-400 font-normal">體外震波</strong>儀器，專治<strong>足底筋膜炎</strong>與<strong>鈣化性肌腱炎</strong>。
-</p>
-
-<p> 
-    並由資深治療師提供一對一的<strong className="text-cyan-400 font-normal">徒手治療</strong>與運動指導，全方位解決您的疼痛困擾。
-</p>
+                            針對慢性疼痛與術後恢復，我們配備高能量<strong className="text-cyan-400 font-normal">體外震波</strong>儀器，專治<strong>足底筋膜炎</strong>與<strong>鈣化性肌腱炎</strong>。
+                        </p>
+                        <p> 
+                            並由資深治療師提供一對一的<strong className="text-cyan-400 font-normal">徒手治療</strong>與運動指導，全方位解決您的疼痛困擾。
+                        </p>
                     </div>
                 </details>
             </div>
             
             {/* ============================================================
-                ✨ 卡片列表 (長條橫式)
-               ============================================================ */}
+                ✨ 卡片列表 (完全回復您原本的樣式與結構)
+                grid-cols-1, gap-8, h-64, w-2/5:w-3/5
+                ============================================================ */}
             <div className="grid grid-cols-1 gap-8 mb-16">
               {treatments.map((treatment) => (
                 <Link
@@ -145,7 +161,7 @@ export default function TreatmentsPage() {
                             {treatment.description}
                         </p>
                         
-                        {/* 適用症狀 (從下方移上來，限制高度以符合卡片) */}
+                        {/* 適用症狀 */}
                         {treatment.applicableConditions && treatment.applicableConditions.length > 0 && (
                             <div className="mt-auto">
                                 <div className="flex flex-wrap gap-2">
@@ -168,7 +184,7 @@ export default function TreatmentsPage() {
 
             {/* ============================================================
                 ✨ 專業理念區塊 (保持不變)
-               ============================================================ */}
+                ============================================================ */}
             <div className="bg-slate-800/80 rounded-2xl p-8 border border-slate-700 relative overflow-hidden">
                 <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>
                 

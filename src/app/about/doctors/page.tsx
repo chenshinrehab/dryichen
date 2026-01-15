@@ -3,7 +3,6 @@ import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
-// ✨ 1. 引入剛剛建立的彈出視窗組件
 import ClinicHoursModal from '@/components/ClinicHoursModal'
 
 export const metadata: Metadata = { 
@@ -14,38 +13,71 @@ export const metadata: Metadata = {
 
 export default function DoctorsPage() {
   
-  const jsonLdPhysician = {
+  const siteUrl = 'https://www.dryichen.com.tw'
+  const currentUrl = `${siteUrl}/about/doctors`
+
+  // 1. Schema: 麵包屑導航
+  const jsonLdBreadcrumb = {
     '@context': 'https://schema.org',
-    '@type': 'Physician',
-    name: '林羿辰',
-    jobTitle: '院長',
-    image: 'https://duk.tw/UXXvK3.jpg',
-    telephone: '03-1234567', 
-    url: 'https://www.dryichen.com.tw/about/doctors',
-    address: { 
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: '關於我們', item: `${siteUrl}/about` },
+      { '@type': 'ListItem', position: 3, name: '醫師團隊', item: currentUrl },
+    ],
+  }
+
+  // 2. Schema: MedicalWebPage + Physician
+  const jsonLdPhysicianPage = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
+    '@id': `${currentUrl}#webpage`,
+    name: '林羿辰醫師介紹',
+    description: '台大雙專科院長林羿辰醫師詳細資歷與專長介紹。',
+    url: currentUrl,
+    author: {
+        '@type': 'MedicalOrganization',
+        name: '新竹宸新復健科',
+        url: siteUrl
+    },
+    // ✨ 重點：主要實體是「醫師」
+    mainEntity: {
+      '@type': 'Physician',
+      name: '林羿辰',
+      jobTitle: '院長',
+      // 建議：這裡的圖片最好跟網頁上顯示的一樣，或是使用絕對路徑
+      image: `${siteUrl}/images/main/a.jpg`, 
+      telephone: '03-1234567', // 請確認這裡是否要放真實電話
+      url: currentUrl,
+      // ✨ 關鍵：告訴 Google 這位醫師在哪裡工作
+      worksFor: {
+        '@type': 'MedicalClinic',
+        name: '宸新復健科診所',
+        url: siteUrl
+      },
+      address: { 
         '@type': 'PostalAddress', 
         addressLocality: '新竹市', 
         addressRegion: 'Hsinchu City', 
         addressCountry: 'TW' 
-    },
-    alumni: { '@type': 'CollegeOrUniversity', name: '國立台灣大學醫學系' },
-    medicalSpecialty: [
-        'Physical Medicine and Rehabilitation', 
-        'Sports Medicine',
-        'Orthopedics',
-        'Pain Management'
-    ],
-    description: '台大醫學系畢業，雙專科醫師(復健+骨鬆)。專長為超音波導引注射、PRP增生療法。'
+      },
+      alumni: { '@type': 'CollegeOrUniversity', name: '國立台灣大學醫學系' },
+      medicalSpecialty: [
+        { '@type': 'MedicalSpecialty', name: '復健科 (Physical Medicine and Rehabilitation)' },
+        { '@type': 'MedicalSpecialty', name: '骨科復健 (Orthopedics)' },
+        { '@type': 'MedicalSpecialty', name: '運動醫學 (Sports Medicine)' },
+        { '@type': 'MedicalSpecialty', name: '疼痛治療 (Pain Management)' }
+      ],
+      description: '台大醫學系畢業，雙專科醫師(復健+骨鬆)。專長為超音波導引注射、PRP增生療法。'
+    }
   }
 
   return (
     <>
-      <JsonLd data={jsonLdPhysician} />
+      <JsonLd data={jsonLdBreadcrumb} />
+      <JsonLd data={jsonLdPhysicianPage} />
       
-      {/* ✨ 修改重點：
-          原為 py-12 (上下 48px)
-          改為 pt-4 (上 16px) pb-12 (下 48px) md:pt-8 (電腦版上 32px)
-      */}
+      {/* UI 樣式維持原樣 */}
       <div className="min-h-screen bg-slate-900 text-slate-300 pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
         <div className="container mx-auto px-4 max-w-6xl">
           
@@ -152,7 +184,6 @@ export default function DoctorsPage() {
                                   查看治療項目
                               </Link>
                               
-                              {/* ✨ 2. 替換為新的彈出視窗組件 */}
                               <ClinicHoursModal />
                               
                           </div>

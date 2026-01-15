@@ -1,20 +1,29 @@
-// src/app/weight-bone/page.tsx
 import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { weightLossPrograms } from '@/data/weightLoss'
 
+// 定義常數，確保網址一致
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+
 // ==========================================
-// 1. Meta 設定
+// 1. Meta 設定 (新增 Open Graph)
 // ==========================================
 export const metadata: Metadata = {
   title: '新竹減重與骨齡門診 - 猛健樂/瘦瘦針/生長遲緩/性早熟評估 | 宸新復健科',
   description: '新竹宸新復健科提供專業體重管理與兒童生長發育評估。林羿辰醫師親自規劃猛健樂(Mounjaro)、週纖達(Ozempic)等瘦瘦針療程，並提供兒童骨齡X光檢查，針對性早熟與生長遲緩問題提供專業建議。',
   keywords: ['新竹減重', '新竹猛健樂', '瘦瘦針', '新竹照骨齡', '生長遲緩', '性早熟', '週纖達', '兒童長高'],
+  // ✨ 新增 Open Graph，讓分享連結時顯示正確標題與縮圖
+  openGraph: {
+    title: '新竹減重與骨齡門診 - 猛健樂/瘦瘦針/生長遲緩/性早熟評估',
+    description: '提供新竹地區專業減重、瘦瘦針治療與兒童骨齡評估服務。',
+    url: `${SITE_URL}/weight-bone`,
+    type: 'website',
+  },
 }
 
 // ==========================================
-// 2. Schema 結構化資料
+// 2. Schema 結構化資料 (新增 ItemList)
 // ==========================================
 const weightBoneSchema = {
   '@context': 'https://schema.org',
@@ -22,24 +31,35 @@ const weightBoneSchema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: '首頁', item: 'https://www.dryichen.com.tw/' },
-        { '@type': 'ListItem', position: 2, name: '減重與骨齡', item: 'https://www.dryichen.com.tw/weight-bone' },
+        { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
+        { '@type': 'ListItem', position: 2, name: '減重與骨齡', item: `${SITE_URL}/weight-bone` },
       ],
     },
     {
       '@type': 'MedicalWebPage',
+      '@id': `${SITE_URL}/weight-bone/#webpage`,
       'name': '減重與骨齡門診',
       'description': '提供新竹地區專業減重、瘦瘦針治療與兒童骨齡評估服務。',
-      'lastReviewed': '2026-01-11',
+      'lastReviewed': new Date().toISOString().split('T')[0],
       'reviewedBy': {
         '@type': 'Physician',
         'name': '林羿辰 醫師',
-        'url': 'https://www.dryichen.com.tw/about/doctors'
+        'url': `${SITE_URL}/about/doctors`
       },
       'specialty': [
         { '@type': 'MedicalSpecialty', 'name': 'Weight Loss Management' },
         { '@type': 'MedicalSpecialty', 'name': 'Pediatric Growth Assessment' }
-      ]
+      ],
+      // ✨ 新增 ItemList：告訴 Google 這頁面列出了哪些具體服務
+      'mainEntity': {
+        '@type': 'ItemList',
+        'itemListElement': weightLossPrograms.map((program, index) => ({
+            '@type': 'ListItem',
+            'position': index + 1,
+            'url': `${SITE_URL}/weight-bone/${program.slug}`,
+            'name': program.title
+        }))
+      }
     }
   ]
 }
@@ -56,7 +76,7 @@ export default function WeightLossPage() {
             
             {/* ============================================================
                 ✨ 標題區塊
-               ============================================================ */}
+                ============================================================ */}
             <div className="flex items-center justify-center gap-3 mb-10">
                 <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
                     <i className="fa-solid fa-weight-scale text-xl"></i>
@@ -68,7 +88,7 @@ export default function WeightLossPage() {
 
             {/* ============================================================
                 ✨ SEO 導言區
-               ============================================================ */}
+                ============================================================ */}
             <div className="mb-12 max-w-3xl mx-auto">
                   <details className="group border-l-4 border-cyan-500 pl-4">
                       <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left">
@@ -96,8 +116,8 @@ export default function WeightLossPage() {
             </div>
             
             {/* ============================================================
-                ✨ 卡片列表 (修正排版)
-               ============================================================ */}
+                ✨ 卡片列表
+                ============================================================ */}
             <div className="grid grid-cols-1 gap-8 mb-16">
               {weightLossPrograms.map((program) => (
                 <Link
@@ -115,12 +135,11 @@ export default function WeightLossPage() {
                     <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/90 to-transparent"></div>
                   </div>
 
-                  {/* 右側：文字內容區塊 (縮小 padding，讓文字更靠左) */}
+                  {/* 右側：文字內容區塊 */}
                   <div className="w-full md:w-3/5 p-5 md:p-6 flex flex-col justify-center relative">
                     <i className="fa-solid fa-file-medical absolute right-4 bottom-4 text-8xl text-slate-800/50 -rotate-12 group-hover:text-cyan-900/30 transition-colors duration-500 pointer-events-none"></i>
                     
                     <div className="relative z-10 h-full flex flex-col justify-center">
-                      {/* ✨ 修改處：移除 flex，讓文字自然折行，Icon 用 inline-block */}
                       <h2 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
                         {program.title}
                         <i className="fa-solid fa-arrow-right inline-block opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all ml-3 text-lg text-cyan-500"></i>
@@ -152,7 +171,7 @@ export default function WeightLossPage() {
 
             {/* ============================================================
                 ✨ 醫師治療理念與叮嚀
-               ============================================================ */}
+                ============================================================ */}
             <div className="bg-slate-800/80 rounded-2xl p-8 border border-slate-700 relative overflow-hidden">
                 <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>
                 

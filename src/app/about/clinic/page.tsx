@@ -7,40 +7,68 @@ import JsonLd from '@/components/JsonLd'
 
 // 1. Meta 設定
 export const metadata: Metadata = { 
-  title: '診所環境與設備介紹 - 數位X光/超音波/骨科復健區 | 宸新復健科',
+  title: '診所環境與設備介紹 - 數位X光/超音波/骨科復健區 | 新竹宸新復健科',
   description: '新竹宸新復健科擁有醫學中心等級設備。包含數位X光、高解析超音波、瑞士聚焦式震波、兒童早療教室、獨立徒手治療室及專屬停車場，提供最優質的就醫環境。',
   keywords: ['新竹復健科設備', 'X光檢查', '超音波檢查', 'PRP設備', '兒童早療', '骨科復健', '停車方便']
 }
 
 export default function ClinicPage() {
   
-  // 2. Schema: MedicalClinic
-  const jsonLdClinic = {
+  const siteUrl = 'https://www.dryichen.com.tw'
+  const currentUrl = `${siteUrl}/about/clinic`
+
+  // 2. Schema: 麵包屑 (Breadcrumb)
+  const jsonLdBreadcrumb = {
     '@context': 'https://schema.org',
-    '@type': 'MedicalClinic',
-    name: '宸新復健科診所',
-    image: 'https://dryichen-4ze1.vercel.app/images/clinic-cover.jpg',
-    description: '提供全方位骨科復健與兒童發展評估的專業診所。',
-    address: { '@type': 'PostalAddress', addressLocality: '新竹市' },
-     amenityFeature: facilitiesData.map(f => ({
-       '@type': 'LocationFeatureSpecification',
-       name: f.title,
-       value: true
-    }))
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: '關於我們', item: `${siteUrl}/about` }, // 假設有這個層級，若無可移除
+      { '@type': 'ListItem', position: 3, name: '環境與設備', item: currentUrl },
+    ],
+  }
+
+  // 3. Schema: 改為 MedicalWebPage + ItemList
+  // 這樣 Google 才知道這頁是「設備清單」，而不是診所的首頁
+  const jsonLdPage = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
+    '@id': `${currentUrl}#webpage`,
+    name: '診所環境與設備介紹',
+    description: '提供全方位骨科復健與兒童發展評估的專業診所環境介紹。',
+    url: currentUrl,
+    author: {
+        '@type': 'MedicalOrganization',
+        name: '新竹宸新復健科',
+        url: siteUrl,
+    },
+    // ✨ 重點：使用 ItemList 來條列出這裡有哪些設備
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: facilitiesData.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        url: `${currentUrl}/${item.id}`,
+        name: item.title,
+        // 選擇性：如果有圖片也可稍微帶入
+        image: item.imageUrl
+      }))
+    }
   }
 
   return (
     <>
-      <JsonLd data={jsonLdClinic} />
+      <JsonLd data={jsonLdBreadcrumb} />
+      <JsonLd data={jsonLdPage} />
 
-      {/* ✨ 修改重點：
-          原為 py-12 (上下 48px)
-          改為 pt-4 (上 16px) pb-12 (下 48px) md:pt-8 (電腦版上 32px)
+      {/* UI 樣式保持您原本的設定
+          pt-4 pb-12 md:pt-8 md:pb-16 
       */}
       <div className="min-h-screen bg-slate-900 text-slate-300 pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
+          {/* 返回按鈕 (這裡指回 /about 或首頁，視您網站架構而定) */}
           <Link href="/about" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group">
              <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回關於我們
           </Link>

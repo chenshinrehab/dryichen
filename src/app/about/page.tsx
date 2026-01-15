@@ -17,49 +17,6 @@ export const metadata: Metadata = {
   ],
 }
 
-// ==========================================
-// 2. Schema 結構化資料
-// ==========================================
-const aboutSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'MedicalClinic',
-  'name': '宸新復健科診所',
-  'image': 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800',
-  'medicalSpecialty': ['Physical Medicine and Rehabilitation', 'Orthopedics', 'Pediatrics'],
-  'address': {
-    '@type': 'PostalAddress',
-    'addressLocality': '新竹市東區',
-    'addressRegion': 'Hsinchu City',
-    'addressCountry': 'TW',
-    'streetAddress': '關新路與光復路交界'
-  },
-  'areaServed': [
-    { '@type': 'Place', 'name': 'Hsinchu Science Park' },
-    { '@type': 'AdministrativeArea', 'name': 'Hsinchu East District' },
-    { '@type': 'AdministrativeArea', 'name': 'Guanpu' }
-  ],
-  'founder': {
-    '@type': 'Person',
-    'name': '林羿辰 醫師',
-    'jobTitle': '院長',
-    'alumniOf': 'National Taiwan University'
-  },
-  'openingHoursSpecification': [
-    {
-      '@type': 'OpeningHoursSpecification',
-      'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      'opens': '09:00',
-      'closes': '21:00'
-    },
-    {
-      '@type': 'OpeningHoursSpecification',
-      'dayOfWeek': 'Saturday',
-      'opens': '09:00',
-      'closes': '12:00'
-    }
-  ]
-}
-
 // 頁面選單資料
 const aboutSections = [
   {
@@ -92,8 +49,81 @@ const aboutSections = [
 ]
 
 export default function AboutPage() {
+  const siteUrl = 'https://www.dryichen.com.tw'
+
+  // ==========================================
+  // 2. Schema: 麵包屑
+  // ==========================================
+  const jsonLdBreadcrumb = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: '關於我們', item: `${siteUrl}/about` },
+    ],
+  }
+
+  // ==========================================
+  // 3. Schema: AboutPage + MedicalClinic
+  // ==========================================
+  const aboutSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage', // 定義這是一個「關於頁面」
+    '@id': `${siteUrl}/about#webpage`,
+    url: `${siteUrl}/about`,
+    name: '關於宸新復健科',
+    description: metadata.description,
+    mainEntity: {
+        '@type': 'MedicalClinic',
+        name: '宸新復健科診所',
+        image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800', // 建議換成真實診所照片 URL
+        url: siteUrl,
+        telephone: '+886-3-5647999', // ✨ 建議補上真實電話
+        priceRange: '健保特約', // ✨ 必填欄位之一 (可填 "$$" 或 "健保特約")
+        medicalSpecialty: [
+            'Physical Medicine and Rehabilitation', 
+            'Orthopedics', 
+            'Pediatrics',
+            'Pain Management'
+        ],
+        address: {
+            '@type': 'PostalAddress',
+            addressLocality: '新竹市東區',
+            addressRegion: 'Hsinchu City',
+            addressCountry: 'TW',
+            streetAddress: '新竹市東區光復路一段371號b1' // 建議填寫完整地址
+        },
+        areaServed: [
+            { '@type': 'Place', name: 'Hsinchu Science Park' },
+            { '@type': 'AdministrativeArea', name: 'Hsinchu East District' },
+            { '@type': 'AdministrativeArea', name: 'Guanpu' }
+        ],
+        founder: {
+            '@type': 'Person',
+            name: '林羿辰', // 建議不要加 "醫師" title，純人名
+            jobTitle: '院長',
+            alumniOf: { '@type': 'CollegeOrUniversity', name: '國立台灣大學' } // 結構化學歷
+        },
+        openingHoursSpecification: [
+            {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+            opens: '09:00',
+            closes: '21:00'
+            },
+            {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: 'Saturday',
+            opens: '09:00',
+            closes: '12:00'
+            }
+        ]
+    }
+  }
+
   return (
     <>
+      <JsonLd data={jsonLdBreadcrumb} />
       <JsonLd data={aboutSchema} />
 
       <div className="min-h-screen bg-slate-900 text-slate-300">
@@ -112,20 +142,15 @@ export default function AboutPage() {
           </div>
 
           {/* ============================================================
-              ✨ SEO 導言區 (修正版)
-              1. max-w-3xl + mx-auto: 設定固定寬度並置中，這是避免內容跳動的關鍵。
-              2. border-l-4 在 details 上: 確保線條會隨內容延伸。
-              3. text-left: 確保文字緊貼左側藍線。
+              ✨ SEO 導言區
              ============================================================ */}
           <div className="mb-12 max-w-3xl mx-auto">
                 <details className="group border-l-4 border-cyan-500 pl-4">
-                    {/* Summary: 永遠顯示的第一段 */}
-                    {/* list-none 與 [&::-webkit-details-marker]:hidden 用來隱藏原生三角形，避免移位 */}
+                    {/* Summary */}
                     <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left">
                         <span className="inline-block h-full">
                             我們是<strong className="text-cyan-400 font-normal">新竹推薦</strong>的首選復健專科診所。擁有<strong className="text-cyan-400 font-normal">醫學中心等級</strong>的醫療設備及醫療人員。
                             
-                            {/* 展開提示文字 */}
                             <span className="group-open:hidden">
                                 ... 
                                 <span className="ml-1 text-sm text-cyan-500 hover:text-cyan-400 hover:underline underline-offset-4 font-semibold">
@@ -135,7 +160,7 @@ export default function AboutPage() {
                         </span>
                     </summary>
                     
-                    {/* 展開後的詳細內容 */}
+                    {/* Content */}
                     <div className="mt-4 text-lg text-slate-400 leading-relaxed text-left animate-in fade-in slide-in-from-top-1 duration-300">
                         <p className="mb-4">
                             宸新復健科座落於繁華的<strong className="text-cyan-400 font-normal">新竹東區</strong>核心地帶，緊鄰<strong className="text-cyan-400 font-normal">新竹科學園區 (竹科)</strong> 與熱鬧的<strong className="text-cyan-400 font-normal">關埔重劃區</strong>。

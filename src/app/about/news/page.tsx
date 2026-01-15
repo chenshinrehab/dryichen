@@ -1,3 +1,4 @@
+// src/app/about/news/page.tsx
 import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
@@ -12,29 +13,64 @@ export const metadata: Metadata = {
 }
 
 export default function NewsListPage() {
-  
-  // 2. Schema: CollectionPage
-  const jsonLdCollection = {
+
+  const siteUrl = 'https://www.dryichen.com.tw'
+  const currentUrl = `${siteUrl}/about/news`
+
+  // 2. Schema: 麵包屑
+  const jsonLdBreadcrumb = {
     '@context': 'https://schema.org',
-    '@type': 'CollectionPage',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: '關於我們', item: `${siteUrl}/about` },
+      { '@type': 'ListItem', position: 3, name: '最新消息', item: currentUrl },
+    ],
+  }
+  
+  // 3. Schema: Blog (取代原本的 MedicalWebPage + ItemList)
+  // 這告訴 Google 這是一個文章發布的動態牆
+  const jsonLdBlog = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    '@id': `${currentUrl}#blog`,
     name: '宸新復健科最新消息',
-    description: '門診公告與衛教文章彙整',
-    url: 'https://www.dryichen.com.tw/about/news'
+    description: '新竹宸新復健科門診異動公告與衛教文章發布專區',
+    url: currentUrl,
+    author: {
+        '@type': 'MedicalOrganization',
+        name: '新竹宸新復健科',
+        url: siteUrl
+    },
+    // ✨ blogPost: 告訴 Google 這裡面包含哪些文章 (BlogPosting)
+    blogPost: newsData.map((item) => ({
+        '@type': 'BlogPosting',
+        headline: item.title,
+        description: item.summary,
+        url: `${currentUrl}/${item.id}`,
+        datePublished: item.date, // 建議 data 裡的格式為 YYYY-MM-DD
+        image: item.coverImage,
+        author: {
+            '@type': 'Organization', // 這裡用 Organization 即可，單篇內文再用 Physician
+            name: '宸新復健科'
+        }
+    }))
   }
 
   return (
     <>
-      <JsonLd data={jsonLdCollection} />
+      <JsonLd data={jsonLdBreadcrumb} />
+      <JsonLd data={jsonLdBlog} />
 
-      {/* ✨ 修改重點：上方留白再減少
-          1. pt-1 -> pt-0 (手機版上方完全無內距)
-          2. md:pt-8 -> md:pt-4 (電腦版上方內距減半)
+      {/* ✨ 樣式保留您的設定：
+          pt-0 (手機版上方無內距)
+          md:pt-4 (電腦版上方內距減半)
       */}
       <div className="min-h-screen bg-slate-900 text-slate-300 pt-0 pb-12 md:pt-4 md:pb-16 fade-in">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
            
           {/* 返回按鈕 */}
-          <Link href="/about" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group">
+          <Link href="/about" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group mt-4 md:mt-0">
              <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回關於我們
           </Link>
 

@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!item) return { title: '設備介紹' }
   
   return {
-    title: `${item.title} - 診所設備介紹 | 宸新復健科`,
+    title: `${item.title} - 診所設備介紹 | 新竹宸新復健科`,
     description: item.description,
     keywords: item.keywords,
   }
@@ -29,13 +29,28 @@ export default function FacilityDetailPage({ params }: PageProps) {
   const siteUrl = 'https://www.dryichen.com.tw'
   const currentUrl = `${siteUrl}/about/clinic/${params.id}`
 
-  const jsonLdProduct = {
+  // ✨ 修改處：改用 MedicalWebPage 包裹 MedicalDevice
+  const jsonLdDevice = {
     '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: item.title,
+    '@type': 'MedicalWebPage',
+    '@id': `${currentUrl}#webpage`,
+    name: `${item.title} - 設備介紹`,
     description: item.description,
-    image: item.imageUrl,
-    brand: { '@type': 'Brand', name: 'Medical Equipment' }
+    url: currentUrl,
+    author: {
+        '@type': 'MedicalOrganization',
+        name: '新竹宸新復健科',
+        url: siteUrl
+    },
+    // 定義此頁面的主角是「醫療器材」
+    mainEntity: {
+        '@type': 'MedicalDevice',
+        name: item.title,
+        description: item.description,
+        image: item.imageUrl,
+        // 如果您的資料庫有廠商名稱，可以加在這裡，沒有的話可省略
+        // manufacturer: { '@type': 'Organization', name: '品牌名稱' } 
+    }
   }
 
   const jsonLdBreadcrumb = {
@@ -50,10 +65,10 @@ export default function FacilityDetailPage({ params }: PageProps) {
 
   return (
     <>
-      <JsonLd data={jsonLdProduct} />
+      <JsonLd data={jsonLdDevice} />
       <JsonLd data={jsonLdBreadcrumb} />
 
-      {/* ✨ CSS 樣式修正 */}
+      {/* ✨ CSS 樣式修正 (保持原本您喜歡的設定) */}
       <style dangerouslySetInnerHTML={{__html: `
         /* 手機版與全域預設 */
         .facility-content p, .facility-content li {
