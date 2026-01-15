@@ -53,25 +53,49 @@ export default function FacilityDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLdProduct} />
       <JsonLd data={jsonLdBreadcrumb} />
 
-      {/* ✨ CSS 樣式修正：
-          1. 電腦版字體改為 18px (text-lg)
-          2. 重點顏色改為青色
-      */}
+      {/* ✨ CSS 樣式修正 */}
       <style dangerouslySetInnerHTML={{__html: `
-        /* 手機版預設 */
+        /* 手機版與全域預設 */
         .facility-content p, .facility-content li {
-            font-size: 18px !important; /* 手機版統一為 18px */
+            font-size: 18px !important; 
             line-height: 1.625 !important;
             margin-bottom: 1.5rem !important;
             letter-spacing: 0px !important;
             color: #cbd5e1 !important; /* Slate-300 */
         }
+
+        /* 重點文字 (strong) - 青色 */
+        .facility-content strong {
+            color: #22d3ee !important; /* Cyan-400 */
+            font-weight: 700 !important;
+        }
+
+        /* 圖片與影片預設設定 */
+        .facility-content img, .facility-content video, .facility-content iframe {
+            max-width: 100% !important;
+            border-radius: 0.75rem !important;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3) !important;
+            margin: 2rem auto !important;
+            display: block !important;
+            border: 1px solid #475569 !important;
+        }
+
+        /* ✨ 圖片高度自動 */
+        .facility-content img {
+            height: auto !important;
+        }
+
+        /* ✨ 影片強制設定 16:9 比例，解決高度太矮問題 */
+        .facility-content video, .facility-content iframe {
+            aspect-ratio: 16 / 9 !important;
+            height: auto !important; /* 讓 aspect-ratio 控制高度 */
+        }
         
         /* 電腦版 (寬度大於 768px) */
         @media (min-width: 768px) {
             .facility-content p, .facility-content li {
-                font-size: 18px !important; /* ✨ 縮小：改為 18px (text-lg) */
-                line-height: 1.625 !important; /* ✨ 行高調整為 relaxed */
+                font-size: 18px !important; 
+                line-height: 1.625 !important; 
                 margin-bottom: 2rem !important;
                 letter-spacing: 0.025em !important;
                 color: #cbd5e1 !important;
@@ -82,30 +106,43 @@ export default function FacilityDetailPage({ params }: PageProps) {
                 margin-bottom: 1.5rem !important;
                 color: #ffffff !important;
             }
+            
+            /* H3 設定：放大且顏色改為灰白色 */
             .facility-content h3 {
-                font-size: 1.5rem !important;
+                font-size: 1.75rem !important;
                 margin-top: 2.5rem !important;
-                color: #22d3ee !important; /* Cyan-400 */
+                margin-bottom: 1.25rem !important;
+                color: #cbd5e1 !important;
+                font-weight: 700 !important;
             }
-            .facility-content strong {
-                color: #22d3ee !important; /* ✨ 重點文字用青色 */
+
+            /* 電腦版寬度調整 */
+            
+            /* 1. 圖片 (img)：限制為 85% */
+            .facility-content img {
+                width: 85% !important;
+                max-width: 85% !important;
+            }
+
+            /* 2. 影片 (video, iframe)：維持 100% 滿版 (比例已由上方 aspect-ratio 控制) */
+            .facility-content video, .facility-content iframe {
+                width: 100% !important;
+                max-width: 100% !important;
             }
         }
       `}} />
 
       <div className="min-h-screen bg-slate-900 text-slate-300 pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          {/* ✨ 修改 1：加入 hidden class 隱藏麵包屑 */}
           <nav className="hidden text-sm text-slate-500 mb-8 font-sans">
               <Link href="/about/clinic" className="hover:text-cyan-400 transition-colors">診所設備</Link>
               <span className="mx-2">/</span>
               <span className="text-cyan-500">{item.title}</span>
           </nav>
 
-          {/* ✨ 修改 2：將 mb-8 改為 mb-4，縮小與下方卡片的間距 */}
           <Link href="/about/clinic" className="inline-flex items-center text-cyan-400 mb-4 hover:text-cyan-300 transition-colors group">
-             <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回設備列表
+              <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回設備列表
           </Link>
 
           <div className="bg-slate-800/80 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden shadow-2xl">
@@ -133,7 +170,6 @@ export default function FacilityDetailPage({ params }: PageProps) {
              <div className="p-8 md:p-12">
                  <div 
                    className="facility-content prose prose-invert max-w-none 
-                              prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-slate-700 prose-img:w-full prose-img:my-8
                               prose-headings:font-bold 
                               prose-h2:border-l-4 prose-h2:border-cyan-500 prose-h2:pl-4
                               "

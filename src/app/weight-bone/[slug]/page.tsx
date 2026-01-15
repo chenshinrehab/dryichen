@@ -106,16 +106,7 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                       </div>
                   </div>
 
-                  {/* 內容說明區 */}
-                  <div className="text-slate-300 leading-relaxed text-lg mb-8 border-b border-slate-700 pb-6 article-content">
-                      {program.contentHtml ? (
-                          <div dangerouslySetInnerHTML={{ __html: program.contentHtml }} />
-                      ) : (
-                          <p>{program.description}</p>
-                      )}
-                  </div>
-
-                  {/* 特色與優點 */}
+                  {/* ✨ 1. 特色與優點 (移動到這裡，位於主文上方) */}
                   {(program.whyChooseUs || program.programBenefits) && (
                     <div className="grid md:grid-cols-2 gap-8 mb-12">
                         {program.whyChooseUs && (
@@ -147,12 +138,31 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                     </div>
                   )}
 
+                  {/* 內容說明區 (主文) */}
+                  {/* ✨ 樣式修正：
+                      2. strong 變青色
+                      3. h3 變大且維持灰白色
+                      4. img 圖片在電腦版寬度設為 85% (md:[&_img]:w-[85%]) 並置中
+                  */}
+                  <div className="text-slate-300 leading-relaxed text-lg mb-8 border-b border-slate-700 pb-6 article-content
+                    [&_strong]:!text-cyan-400 [&_strong]:font-bold
+                    [&_h3]:!text-slate-300 [&_h3]:!text-[1.75rem] [&_h3]:font-bold [&_h3]:mt-8 [&_h3]:mb-4
+                    [&_img]:w-full md:[&_img]:w-[85%] [&_img]:mx-auto [&_img]:rounded-lg [&_img]:shadow-lg [&_img]:border [&_img]:border-slate-700
+                  ">
+                      {program.contentHtml ? (
+                          <div dangerouslySetInnerHTML={{ __html: program.contentHtml }} />
+                      ) : (
+                          <p>{program.description}</p>
+                      )}
+                  </div>
+
                   {/* 圖片區 (修正：移除文字，保留 Alt SEO) */}
                   {program.images && program.images.length > 0 && (
                     <div className="space-y-8 mb-12">
                       {program.images.map((img, idx) => (
                         <div key={idx} className="text-center group">
-                           <div className="relative overflow-hidden rounded-lg shadow-lg inline-block w-full md:w-3/4 border border-slate-700">
+                           {/* ✨ 4. 修改處：將電腦版寬度設定為 md:w-[85%] */}
+                           <div className="relative overflow-hidden rounded-lg shadow-lg inline-block w-full md:w-[85%] border border-slate-700">
                              <img src={img.src} alt={img.alt} className="w-full h-auto transform group-hover:scale-[1.02] transition-transform duration-500" />
                            </div>
                            {/* 原本下方的文字標籤已移除，隱藏文字說明但保留 alt */}
@@ -164,18 +174,18 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                   {/* 常見問答 (Q&A) 區塊 */}
                   {program.qaList && program.qaList.length > 0 && (
                     <div className="mt-8">
-                       <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
+                        <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
                           <i className="fa-regular fa-circle-question text-cyan-400 mr-3"></i>
                           常見問答
-                       </h3>
-                       
-                       <div className="space-y-4">
+                        </h3>
+                        
+                        <div className="space-y-4">
                           {program.qaList.map((qa, idx) => (
                              <details key={idx} className="group bg-slate-900/50 rounded-xl border border-slate-700 overflow-hidden open:border-cyan-500/50 transition-all">
                                 <summary className="flex items-center justify-between p-5 cursor-pointer list-none hover:bg-slate-800/50 transition-colors">
                                    <h4 className="font-bold text-lg text-white flex items-center">
-                                      <span className="text-cyan-500 mr-3 font-black">Q{idx + 1}.</span>
-                                      {qa.question}
+                                     <span className="text-cyan-500 mr-3 font-black">Q{idx + 1}.</span>
+                                     {qa.question}
                                    </h4>
                                    <span className="text-cyan-500 group-open:rotate-180 transition-transform duration-300">
                                       <i className="fa-solid fa-chevron-down"></i>
@@ -188,7 +198,7 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                                 </div>
                              </details>
                           ))}
-                       </div>
+                        </div>
                     </div>
                   )}
 

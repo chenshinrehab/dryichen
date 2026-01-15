@@ -96,10 +96,13 @@ export default function TreatmentsPage() {
                         <p className="mb-4">
                             我們特別引進高解析度<strong className="text-cyan-400 font-normal">超音波導引注射</strong>技術，讓<strong className="text-cyan-400 font-normal">PRP</strong> (高濃度血小板) 與<strong className="text-cyan-400 font-normal">增生注射</strong>治療能精準修復受損組織，大幅提升<strong>退化性關節炎</strong>與<strong>肌腱撕裂</strong>的療效。
                         </p>
-                        <p>
-                            針對慢性疼痛與術後恢復，我們配備高能量<strong className="text-cyan-400 font-normal">體外震波</strong>儀器，專治<strong>足底筋膜炎</strong>與<strong>鈣化性肌腱炎</strong>。</p>
-                            <p> 並由資深治療師提供一對一的<strong className="text-cyan-400 font-normal">徒手治療</strong>與運動指導，全方位解決您的疼痛困擾。
-                        </p>
+                        <p className="mb-4">
+    針對慢性疼痛與術後恢復，我們配備高能量<strong className="text-cyan-400 font-normal">體外震波</strong>儀器，專治<strong>足底筋膜炎</strong>與<strong>鈣化性肌腱炎</strong>。
+</p>
+
+<p> 
+    並由資深治療師提供一對一的<strong className="text-cyan-400 font-normal">徒手治療</strong>與運動指導，全方位解決您的疼痛困擾。
+</p>
                     </div>
                 </details>
             </div>

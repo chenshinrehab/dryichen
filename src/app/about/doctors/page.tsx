@@ -138,9 +138,9 @@ export default function DoctorsPage() {
                                 </h3>
                                 <ul className="space-y-3 text-slate-300 text-sm">
                                    <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>新竹馬偕紀念醫院 主治醫師</li>
-                                   <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>台灣增生療法醫學會 (TAPRM) 會員</li>
-                                   <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>台灣疼痛醫學會 (TPS) 會員</li>
-                                   <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>前台灣大學網球校隊隊員</li>
+                                   <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>台灣增生療法醫學會會員</li>
+                                   <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>台灣疼痛醫學會會員</li>
+                                   <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>台灣大學網球校隊</li>
                                 </ul>
                             </div>
 
