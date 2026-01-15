@@ -4,7 +4,7 @@ import JsonLd from '@/components/JsonLd'
 import { diseaseCategories } from '@/data/diseases'
 
 // ==========================================
-// 1. Meta 設定 (保持你的設定，這寫得很好)
+// 1. Meta 設定
 // ==========================================
 export const metadata: Metadata = {
   title: '新竹骨科/復健科推薦 - 椎間盤突出/五十肩/關節炎/痠麻痛治療 | 宸新復健科',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 }
 
 // ==========================================
-// 2. Schema 結構化資料 (升級版)
+// 2. Schema 結構化資料
 // ==========================================
 const diseasesSchema = {
   '@context': 'https://schema.org',
@@ -31,11 +31,11 @@ const diseasesSchema = {
       ],
     },
     {
-      '@type': 'MedicalWebPage', // 或是 CollectionPage
+      '@type': 'MedicalWebPage', 
       '@id': 'https://www.dryichen.com.tw/diseases/#webpage',
       'name': '骨科復健疾病衛教導覽',
       'description': '提供脊椎、關節、肌肉疼痛等相關疾病的詳細症狀說明與治療建議。',
-      'lastReviewed': new Date().toISOString().split('T')[0], // 自動帶入今日或指定日期
+      'lastReviewed': new Date().toISOString().split('T')[0],
       'reviewedBy': {
         '@type': 'Physician',
         'name': '林羿辰 醫師',
@@ -45,7 +45,6 @@ const diseasesSchema = {
         { '@type': 'MedicalSpecialty', 'name': 'Orthopedics' },
         { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation' }
       ],
-      // ✨ 新增：告訴 Google 這裡有一份「清單」
       'mainEntity': {
         '@type': 'ItemList',
         'itemListElement': diseaseCategories.map((cat, index) => ({
@@ -66,10 +65,6 @@ export default function DiseasesPage() {
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
-        {/* 外層容器優化：
-            手機版保留 px-4 (避免卡片貼邊)，但在平板以上加大邊距。
-            max-w-7xl 確保在大螢幕上不會太散。
-        */}
         <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-16 md:pt-12 md:pb-20 fade-in">
           
           {/* ============================================================
@@ -134,7 +129,7 @@ export default function DiseasesPage() {
                       src={category.image} 
                       alt={`${category.title} - 新竹骨科復健`} 
                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
-                      loading="lazy" // 懶加載優化效能
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/10 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
                     
@@ -210,7 +205,18 @@ export default function DiseasesPage() {
                       
                       <div className="mt-8 pt-6 border-t border-slate-700/50 flex items-center justify-between flex-wrap gap-4">
                           <div className="flex items-center gap-2">
-                             <img src="/images/doctor-avatar-small.jpg" alt="林羿辰醫師" className="w-8 h-8 rounded-full border border-slate-600" onError={(e) => e.currentTarget.style.display='none'} />
+                             {/* 🔴 錯誤修復：移除 onError 
+                                原本：onError={(e) => e.currentTarget.style.display='none'}
+                                
+                                如果圖片載入失敗，建議在伺服器端確認圖片存在，
+                                或改用 Next.js <Image> 元件來處理錯誤。
+                                這裡直接使用 img 標籤並移除事件處理器以通過編譯。
+                             */}
+                             <img 
+                                src="/images/doctor-avatar-small.jpg" 
+                                alt="林羿辰醫師" 
+                                className="w-8 h-8 rounded-full border border-slate-600" 
+                             />
                              <span className="text-slate-400 text-sm">本文由 林羿辰 醫師 審閱</span>
                           </div>
                           <Link href="/about/doctors" className="text-cyan-400 hover:text-cyan-300 text-sm font-medium flex items-center gap-2 group">
