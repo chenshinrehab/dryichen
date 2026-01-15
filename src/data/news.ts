@@ -100,9 +100,9 @@ export const newsData: NewsPost[] = [
 <p><strong>「有聲無痛」多觀察，「有聲有痛」快就醫！</strong></p>
 <img src="/images/news/article/knee.jpg" alt="膝蓋為何會喀喀響" />
     `,
-    seoTitle: '膝蓋退化免開刀？新竹PRP治療推薦 - 宸新復健科',
-    seoDescription: '新竹PRP注射推薦。膝蓋退化性關節炎不一定要開刀，透過超音波導引PRP增生療法，精準修復軟骨與韌帶。',
-    keywords: ['新竹PRP', '膝蓋痛', '退化性關節炎', '免開刀']
+    seoTitle: '膝蓋為何會喀喀響，是膝蓋退化了嗎?',
+    seoDescription: '膝蓋為何會喀喀響，是膝蓋退化了嗎?，膝蓋有聲音，膝關節退化。',
+    keywords: ['醫學知識', '膝蓋痛', '退化性關節炎', '喀喀響']
   }
 ];
 

@@ -4,7 +4,6 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { getDiseaseBySlug, generateAllDiseaseParams } from '@/data/diseases'
-// ✨ 1. 新增引入 ShareButtons
 import ShareButtons from '@/components/ShareButtons'
 
 interface PageProps {
@@ -107,20 +106,22 @@ export default function DiseaseDetailPage({ params }: PageProps) {
         }
 
         /* 圖片寬度限制 (針對 article-content 內的圖片) */
+        /* 手機版預設設定 */
         .article-content img {
             max-width: 100%; /* 手機版滿版 */
             height: auto;
             border-radius: 0.75rem; /* rounded-xl */
             margin: 2rem auto; /* 上下留白，左右置中 */
             display: block; /* 讓 margin auto 生效 */
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
-            border: 1px solid #334155; /* border-slate-700 */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15); /* shadow-xl */
+            border: 1px solid #475569; /* border-slate-600 */
         }
 
-        /* 電腦版圖片寬度限制為 2/3 (66%) */
+        /* ✨ 修改處：電腦版圖片寬度調整 (變大) */
         @media (min-width: 768px) {
             .article-content img {
-                max-width: 66%; 
+                /* 將寬度改為 85%，讓圖片變大 */
+                max-width: 85%;
             }
         }
       `}} />
@@ -136,10 +137,9 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                  返回分類列表
               </Link>
               
-              {/* ✨ 修改 2：移除這裡的 p-4 md:p-8，改到下方的內層 div，這樣底部的分享區塊才能滿版 */}
               <div className="bg-slate-800/80 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden shadow-2xl">
                   
-                  {/* ✨ 新增內層容器：包裹 Header, Grid, 和主內容，給予 padding */}
+                  {/* 內層容器：包裹 Header, Grid, 和主內容，給予 padding */}
                   <div className="p-4 md:p-10">
                   
                       {/* Header: 標題與 QR Code */}
@@ -203,7 +203,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
 
                   </div> {/* End of padding wrapper */}
 
-                  {/* ✨ 3. 新增底部分享與導覽區塊 (滿版) */}
+                  {/* 底部分享與導覽區塊 (滿版) */}
                   <div className="bg-slate-900/50 p-8 md:p-12 border-t border-slate-700 text-center">
                       <h3 className="text-white font-bold text-2xl mb-3">覺得這篇文章有幫助嗎？</h3>
                       <p className="text-slate-400 mb-6 text-lg">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>

@@ -69,9 +69,8 @@ export default function NewsDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLdArticle} />
       <JsonLd data={jsonLdBreadcrumb} />
 
-      {/* ✨ CSS 樣式修正：將重點色移出 media query 以支援手機版 */}
       <style dangerouslySetInnerHTML={{__html: `
-        /* 手機版與全域設定 */
+        /* 一般內文設定 */
         .article-content p, .article-content li {
             font-size: 18px !important; 
             line-height: 1.625 !important;
@@ -80,17 +79,27 @@ export default function NewsDetailPage({ params }: PageProps) {
             color: #cbd5e1 !important; /* Slate-300 */
         }
         
-        /* ✨ 修改 2：這裡設定重點色 (strong)，手機版現在也會變色了 */
+        /* 重點色 (strong) - 青色 */
         .article-content strong {
             color: #22d3ee !important; /* Cyan-400 */
             font-weight: 700 !important;
         }
 
-        /* 電腦版 (寬度大於 768px) */
+        /* ✨ 修改處：H3 副標題全域設定 (改為灰白色 #cbd5e1) */
+        .article-content h3 {
+            font-size: 26px !important;
+            margin-top: 2.5rem !important;
+            margin-bottom: 1.25rem !important;
+            color: #cbd5e1 !important; /* 改成跟內文一樣的 Slate-300 */
+            font-weight: 700 !important;
+            line-height: 1.4 !important;
+        }
+
+        /* 電腦版調整 (寬度大於 768px) */
         @media (min-width: 768px) {
             .article-content p, .article-content li {
-                font-size: 18px !important; /* 18px (text-lg) */
-                line-height: 1.625 !important; /* relaxed */
+                font-size: 18px !important; 
+                line-height: 1.625 !important; 
                 margin-bottom: 2rem !important;
                 letter-spacing: 0.025em !important;
                 color: #cbd5e1 !important;
@@ -100,11 +109,6 @@ export default function NewsDetailPage({ params }: PageProps) {
                 margin-top: 3rem !important;
                 margin-bottom: 1.5rem !important;
                 color: #ffffff !important;
-            }
-            .article-content h3 {
-                font-size: 1.5rem !important; /* 24px */
-                margin-top: 2.5rem !important;
-                color: #22d3ee !important;
             }
         }
       `}} />
@@ -152,9 +156,6 @@ export default function NewsDetailPage({ params }: PageProps) {
                   </div>
               </header>
 
-              {/* ✨ 修改 1：已移除原本在這裡的封面圖片區塊 (div with img post.coverImage) */}
-
-              {/* 文章內容區塊 */}
               <div className="p-5 md:p-10">
                   <div 
                     className="article-content prose prose-invert max-w-none 

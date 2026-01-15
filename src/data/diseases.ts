@@ -391,15 +391,52 @@ export const diseaseCategories: DiseaseCategory[] = [
         title: '踝關節扭傷',
         description: '俗稱「翻船」，造成外踝腫脹瘀血。',
         contentHtml: `
-          <p>踝關節扭傷是最常見的運動傷害，通常是腳底朝內翻轉（Inversion），導致外側的韌帶（前距腓韌帶）拉傷或撕裂。</p>
-          <p>急性期需遵循 <strong>RICE 原則</strong>（休息、冰敷、壓迫、抬高）。待消腫後，務必進行<strong>本體感覺訓練</strong>（如單腳站立），否則韌帶鬆弛容易導致慣性扭傷。</p>
+         <p>走路踩空、下樓梯不留神，或是打球落地時沒踩穩，<strong>「腳踝扭傷」（俗稱翻腳刀）</strong>絕對是復健科門診最常見的運動傷害第一名。許多患者以為不痛就是好了，卻因為缺乏後續復健，演變成動不動就扭到的「玻璃腳」。</p>
+        <br>
+         <h3>🔍 為什麼會翻腳刀？傷到了哪裡？</h3>
+<p>人體的腳踝結構外側韌帶較弱，因此 80% 以上的扭傷都屬於<strong>腳掌向內翻轉 (Inversion)</strong>。這股力量最強烈衝擊的，通常是位於腳踝外側的<strong>「前距腓韌帶」(ATFL)</strong>。</p>
+<br>
+<p>輕微扭傷可能只是韌帶拉扯（第一級），但嚴重時可能造成韌帶部分撕裂（第二級）甚至全斷（第三級），這時腳踝就會腫得像「麵龜」一樣。</p>
+<img src="/images/diseases/ankle/sprain/b.jpg" alt="前距腓韌帶韌帶撕裂傷" />
+<h3>🧊 急性期處理：先消腫止痛</h3>
+<p>受傷後的 48~72 小時內是急性發炎期，目標是減少出血與腫脹。請遵循 <strong>RICE 原則</strong>（或是目前醫界推廣的 PEACE & LOVE 原則）：</p>
+<ul>
+  <li><strong>Rest（休息）：</strong> 減少走動，必要時使用拐杖，避免二度傷害。</li>
+  <li><strong>Ice（冰敷）：</strong> 幫助血管收縮消腫。每次 10-15 分鐘，小心不要凍傷。</li>
+  <li><strong>Compression（壓迫）：</strong> 使用彈性繃帶纏繞，幫助組織液回流，減少腫脹空間。</li>
+  <li><strong>Elevation（抬高）：</strong> 睡覺或坐著時，將患肢抬高於心臟位置。</li>
+</ul>
+ <img src="/images/diseases/ankle/sprain/c.jpg" alt="腳踝扭傷急性期處理RICE 原則" />
+
+<h3>⚠️ 復健科醫師的叮嚀：不痛不代表痊癒！</h3>
+<p>這是最關鍵的一點！等到消腫不痛後，<strong>「本體感覺」(Proprioception)</strong> 的重建至關重要。</p>
+<p>韌帶受傷後，大腦對腳踝位置的感應會變遲鈍（就像 GPS 訊號不良）。如果不進行訓練，腳踝就像螺絲沒鎖緊，很容易再次受傷，形成<strong>「慢性踝關節不穩定」</strong>。</p>
+<br>
+<h3>💪 在家也能做的復健三招</h3>
+<ul>
+  <li><strong>腳踝幫浦運動 (Ankle Pump)：</strong> 躺在床上，腳板向上勾起、向下壓，促進血液循環，幫助消腫。</li>
+  <li><strong>毛巾抓握訓練：</strong> 坐在椅子上，用腳趾頭去抓地上的毛巾，強化足底肌肉。</li>
+  <li><strong>單腳站立訓練 (金雞獨立)：</strong> 這是訓練本體感覺最好的方法。嘗試用受傷那隻腳單腳站立 30 秒，如果太簡單，可以試著閉上眼睛挑戰。</li>
+  <img src="/images/diseases/ankle/sprain/d.jpg" alt="腳踝扭傷在家也能做的復健三招" />
+</ul>
+
+<h3>🚨 什麼情況該來看醫生？</h3>
+<p>大部分扭傷會自行修復，但如果出現以下狀況，請務必就醫檢查是否傷及骨頭(照X光)或韌帶撕裂(超音波檢查)</p>
+<ul>
+  <li>1.受傷當下聽到「啪」一聲。</li>
+  <li>2.腳踝完全<strong>無法負重踩地</strong>，走四步都有困難。</li>
+  <li>3.外觀嚴重變形或按壓骨頭處有劇烈疼痛。</li>
+</ul>
+<br>
+<p>腳踝扭傷雖小，但處理不慎後患無窮。正確的診斷加上完整的復健訓練，才能讓您安心回歸運動場！</p>
+
         `,
         symptoms: ['外側腳踝腫脹瘀血', '觸摸外側韌帶處有壓痛', '行走疼痛困難', '關節不穩'],
-        treatments: ['急性期：RICE原則', '護踝保護', '慢性期：增生療法修復韌帶', '本體感覺訓練'],
+        treatments: ['急性期：RICE原則', '護踝保護', '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>', '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>' ],
         seoKeywords: ['踝關節扭傷', '翻船', '腳踝腫脹', '韌帶斷裂'],
         seoDescription: '踝關節扭傷是最常見的運動傷害，造成外踝腫脹瘀血。了解症狀、治療方式與復健方法。',
         images: [
-           { src: 'https://images.unsplash.com/photo-1598282216223-7a716c02690a?auto=format&fit=crop&q=80&w=800', alt: '腳踝包紮' }
+           { src: '/images/diseases/ankle/sprain/a.jpg', alt: '腳踝扭傷' }
         ]
       },
       {

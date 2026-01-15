@@ -75,7 +75,7 @@ export default function TreatmentDetailPage({ params }: PageProps) {
     <>
       <JsonLd data={jsonLdBreadcrumb} />
       <JsonLd data={jsonLdProcedure} />
-      
+
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
         <main className="flex-grow py-8 md:py-12 fade-in relative z-10">
@@ -102,34 +102,6 @@ export default function TreatmentDetailPage({ params }: PageProps) {
                           {treatment.subtitle && <h2 className="text-xl text-cyan-400 font-medium">{treatment.subtitle}</h2>}
                       </div>
                   </div>
-
-                  {/* 內容說明區 */}
-                  <div className="text-slate-300 leading-relaxed text-lg mb-8 border-b border-slate-700 pb-6 article-content">
-                      {treatment.contentHtml ? (
-                          <div dangerouslySetInnerHTML={{ __html: treatment.contentHtml }} />
-                      ) : (
-                          <p>{treatment.description}</p>
-                      )}
-                  </div>
-
-                  {/* YouTube 影片區塊 */}
-                  {treatment.youtubeVideoId && (
-                    <div className="mb-12 text-center">
-                        <div className="w-full md:w-3/4 mx-auto">
-                             <div className="relative w-full pb-[56.25%] rounded-xl overflow-hidden shadow-2xl border border-slate-700 group">
-                                <iframe 
-                                    src={`https://www.youtube.com/embed/${treatment.youtubeVideoId}`} 
-                                    title={`${treatment.title} 治療介紹影片`}
-                                    className="absolute top-0 left-0 w-full h-full" 
-                                    frameBorder="0" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                    allowFullScreen
-                                    loading="lazy"
-                                ></iframe>
-                             </div>
-                        </div>
-                    </div>
-                  )}
 
                   {/* 兩欄資訊區 */}
                   {(treatment.whyChooseUs || treatment.treatmentFocus) && (
@@ -164,16 +136,52 @@ export default function TreatmentDetailPage({ params }: PageProps) {
                     </div>
                   )}
 
-                  {/* 圖片展示區 (修正：移除文字，保留 Alt SEO) */}
+                  {/* 內容說明區 (主文) */}
+                  {/* ✨ 樣式修正：
+                      1. strong 變青色
+                      2. h3 變大且維持灰白色
+                      3. img 圖片在電腦版寬度設為 85% (md:[&_img]:w-[85%]) 並置中
+                  */}
+                  <div className="text-slate-300 leading-relaxed text-lg mb-8 border-b border-slate-700 pb-6 article-content
+                    [&_strong]:!text-cyan-400 [&_strong]:font-bold
+                    [&_h3]:!text-slate-300 [&_h3]:!text-[1.75rem] [&_h3]:font-bold [&_h3]:mt-8 [&_h3]:mb-4
+                    [&_img]:w-full md:[&_img]:w-[85%] [&_img]:mx-auto [&_img]:rounded-lg [&_img]:shadow-lg [&_img]:border [&_img]:border-slate-700
+                  ">
+                      {treatment.contentHtml ? (
+                          <div dangerouslySetInnerHTML={{ __html: treatment.contentHtml }} />
+                      ) : (
+                          <p>{treatment.description}</p>
+                      )}
+                  </div>
+
+                  {/* YouTube 影片區塊 */}
+                  {treatment.youtubeVideoId && (
+                    <div className="mb-12 text-center">
+                        <div className="w-full md:w-3/4 mx-auto">
+                             <div className="relative w-full pb-[56.25%] rounded-xl overflow-hidden shadow-2xl border border-slate-700 group">
+                                <iframe 
+                                    src={`https://www.youtube.com/embed/${treatment.youtubeVideoId}`} 
+                                    title={`${treatment.title} 治療介紹影片`}
+                                    className="absolute top-0 left-0 w-full h-full" 
+                                    frameBorder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowFullScreen
+                                    loading="lazy"
+                                ></iframe>
+                             </div>
+                        </div>
+                    </div>
+                  )}
+
+                  {/* 圖片展示區 */}
                   {treatment.images && treatment.images.length > 0 && (
                     <div className="space-y-8 mb-12">
                       {treatment.images.map((img, idx) => (
                         <div key={idx} className="text-center group">
-                           <div className="relative overflow-hidden rounded-lg shadow-lg inline-block w-full md:w-3/4 border border-slate-700">
-                             {/* alt 屬性完整保留，給搜尋引擎看 */}
+                           {/* ✨ 修改處：將電腦版寬度從 md:w-3/4 (75%) 改為 md:w-[85%] 以符合您的需求 */}
+                           <div className="relative overflow-hidden rounded-lg shadow-lg inline-block w-full md:w-[85%] border border-slate-700">
                              <img src={img.src} alt={img.alt} className="w-full h-auto transform group-hover:scale-[1.02] transition-transform duration-500" />
                            </div>
-                           {/* 原本下方的 p 標籤已移除，達成視覺隱藏文字的效果 */}
                         </div>
                       ))}
                     </div>
@@ -182,18 +190,18 @@ export default function TreatmentDetailPage({ params }: PageProps) {
                   {/* 常見問答 (Q&A) 區塊 */}
                   {treatment.qaList && treatment.qaList.length > 0 && (
                     <div className="mt-8">
-                       <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
+                        <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
                           <i className="fa-regular fa-circle-question text-cyan-400 mr-3"></i>
                           常見問答
-                       </h3>
-                       
-                       <div className="space-y-4">
+                        </h3>
+                        
+                        <div className="space-y-4">
                           {treatment.qaList.map((qa, idx) => (
                              <details key={idx} className="group bg-slate-900/50 rounded-xl border border-slate-700 overflow-hidden open:border-cyan-500/50 transition-all">
                                 <summary className="flex items-center justify-between p-5 cursor-pointer list-none hover:bg-slate-800/50 transition-colors">
                                    <h4 className="font-bold text-lg text-white flex items-center">
-                                      <span className="text-cyan-500 mr-3 font-black">Q{idx + 1}.</span>
-                                      {qa.question}
+                                     <span className="text-cyan-500 mr-3 font-black">Q{idx + 1}.</span>
+                                     {qa.question}
                                    </h4>
                                    <span className="text-cyan-500 group-open:rotate-180 transition-transform duration-300">
                                       <i className="fa-solid fa-chevron-down"></i>
@@ -206,7 +214,7 @@ export default function TreatmentDetailPage({ params }: PageProps) {
                                 </div>
                              </details>
                           ))}
-                       </div>
+                        </div>
                     </div>
                   )}
 
