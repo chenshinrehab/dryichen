@@ -69,9 +69,9 @@ export default function NewsDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLdArticle} />
       <JsonLd data={jsonLdBreadcrumb} />
 
-      {/* ✨ CSS 樣式修正：電腦版字體 18px，重點色青色 */}
+      {/* ✨ CSS 樣式修正：將重點色移出 media query 以支援手機版 */}
       <style dangerouslySetInnerHTML={{__html: `
-        /* 手機版設定 */
+        /* 手機版與全域設定 */
         .article-content p, .article-content li {
             font-size: 18px !important; 
             line-height: 1.625 !important;
@@ -80,6 +80,12 @@ export default function NewsDetailPage({ params }: PageProps) {
             color: #cbd5e1 !important; /* Slate-300 */
         }
         
+        /* ✨ 修改 2：這裡設定重點色 (strong)，手機版現在也會變色了 */
+        .article-content strong {
+            color: #22d3ee !important; /* Cyan-400 */
+            font-weight: 700 !important;
+        }
+
         /* 電腦版 (寬度大於 768px) */
         @media (min-width: 768px) {
             .article-content p, .article-content li {
@@ -100,23 +106,18 @@ export default function NewsDetailPage({ params }: PageProps) {
                 margin-top: 2.5rem !important;
                 color: #22d3ee !important;
             }
-            .article-content strong {
-                color: #22d3ee !important; /* Cyan-400 */
-            }
         }
       `}} />
 
       <div className="min-h-screen bg-slate-900 text-slate-300 pt-4 pb-12 fade-in">
         <article className="max-w-4xl mx-auto px-3 sm:px-6 lg:px-8">
           
-          {/* ✨ 修改 1：加入 hidden class 隱藏麵包屑 */}
           <nav className="hidden text-sm text-slate-500 mb-8 font-sans px-1">
               <Link href="/about/news" className="hover:text-cyan-400 transition-colors">最新內容</Link>
               <span className="mx-2">/</span>
               <span className="text-cyan-500 truncate">{post.title}</span>
           </nav>
 
-          {/* ✨ 修改 2：將 mb-8 改為 mb-4，縮小與下方卡片的間距 */}
           <Link href="/about/news" className="inline-flex items-center text-cyan-400 mb-4 hover:text-cyan-300 transition-colors group px-1">
               <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回列表
           </Link>
@@ -151,10 +152,7 @@ export default function NewsDetailPage({ params }: PageProps) {
                   </div>
               </header>
 
-              <div className="w-full h-64 md:h-96 relative">
-                  <img src={post.coverImage} alt={post.title} className="absolute inset-0 w-full h-full object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-30"></div>
-              </div>
+              {/* ✨ 修改 1：已移除原本在這裡的封面圖片區塊 (div with img post.coverImage) */}
 
               {/* 文章內容區塊 */}
               <div className="p-5 md:p-10">
