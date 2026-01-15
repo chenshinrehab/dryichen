@@ -293,7 +293,7 @@ export default function TreatmentDetailPage({ params }: PageProps) {
                              <div className="relative overflow-hidden rounded-xl shadow-xl inline-block w-full md:w-[85%] border border-slate-700 bg-slate-900">
                                <img src={img.src} alt={img.alt} className="w-full h-auto transform group-hover:scale-[1.02] transition-transform duration-700 block" />
                              </div>
-                             {img.caption && <p className="text-slate-500 mt-2 text-sm">{img.caption}</p>}
+                             {/* 已移除 caption 以避免型別錯誤 */}
                           </div>
                         ))}
                       </div>
