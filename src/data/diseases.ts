@@ -50,17 +50,122 @@ export const diseaseCategories: DiseaseCategory[] = [
         title: '腰椎椎間盤突出',
         description: '椎間盤擠出壓迫神經，造成腰痛或下肢麻痛。',
         contentHtml: `
-          <p>腰椎椎間盤突出是現代人常見久坐的文明病，更是造成<strong>坐骨神經痛</strong>的主因。當脊椎間的椎間盤因長期受力不均、姿勢不良或外力撞擊，導致內部的髓核突出，想是果凍被擠出，壓迫到後方的神經根。</p>
-          <img src="/images/diseases/spine-hip/HIVD/a.jpg" alt="脊椎椎間盤突出構造圖" />
-          <p>導致劇烈的下背痛，並沿著坐骨神經延伸至臀部、大腿後側甚至小腿與腳底，產生<strong>麻、痛、無力</strong>的現象。嚴重時甚至會影響大小便功能（馬尾症候群）。</p>
-          <img src="/images/diseases/spine-hip/HIVD/b.jpg" alt="坐骨神經痛" />
-          <p>診所內備有X光設備，可以馬上檢查有沒有椎間盤狹窄或是滑脫的情況，<strong>骨頭中間的縫隙消失</strong>，或是<strong>骨頭排列歪斜</strong>。</p>
-          <img src="/images/diseases/spine-hip/HIVD/c.jpg" alt="ˊ椎間盤突出X光" />
-          <p class="mt-4"><span class="text-cyan-400 font-bold">✨ 治療關鍵：</span> 80%的患者可透過非手術治療痊癒，如復健拉腰及止痛藥物。更有效的治療有<strong>PRP 增生療法</strong>能修復受損的纖維環，搭配<strong>徒手運動訓練核心肌群</strong>穩固脊椎，是避免復發的不二法門。</p>
-          <p>若症狀惡化或太嚴重，甚至需要手術治療，核磁共振檢查，可以更清楚的看到椎間盤及神經結構。</p>
-          <img src="/images/diseases/spine-hip/HIVD/d.jpg" alt="ˊ椎間盤突出MRI" />
-          <p>正確的坐姿示意圖。</p>
-          <img src="/images/diseases/spine-hip/HIVD/f.jpg" alt="ˊ正確的坐姿示意圖" />
+<p>您是否有過這樣的經驗：早晨起床腰背僵硬、彎腰刷牙時突然一陣刺痛，或是久坐辦公室後，大腿後側傳來像「被電到」一樣的麻痛感？小心，這可能是現代人的文明病——<strong>腰椎椎間盤突出 (HIVD)</strong> 找上門了。</p>
+
+<p>宸新復健科提供從<strong>精準診斷</strong>、<strong>物理治療</strong>到<strong>再生醫學 (PRP)</strong> 的全方位脊椎照護方案。我們不只緩解疼痛，更致力於找出病灶根源，透過強化核心肌群，為您的脊椎打造天然的防護鐵衣。</p>
+
+<br>
+
+<div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+        📢 為什麼會椎間盤突出？脊椎的果凍理論
+    </h2>
+    
+    <p style="font-size: 1.1rem; color: #78350f !important;">要了解這個病，首先要認識脊椎的避震器——椎間盤。您可以把它想像成一顆<strong>「夾心軟糖」或「果凍甜甜圈」</strong>：</p>
+    
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+            <div style="color: #92400e !important;">
+                <strong style="color: #0891b2 !important;">纖維環 (Annulus Fibrosus)：</strong> 
+                外層像輪胎一樣堅韌的纖維組織，負責包覆與保護。
+            </div>
+        </li>
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+            <div style="color: #92400e !important;">
+                <strong style="color: #0891b2 !important;">髓核 (Nucleus Pulposus)：</strong> 
+                中心像果凍般充滿水分的物質，負責緩衝壓力。
+            </div>
+        </li>
+        <li style="margin-bottom: 0; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+            <div style="color: #92400e !important;">
+                <strong style="color: #0891b2 !important;">破裂與突出：</strong> 
+                當長期受力不均（如久坐）、姿勢不良（彎腰搬重物）或外力撞擊時，外層的纖維環會破裂，導致內部的「果凍」被擠出來，這就是椎間盤突出。
+            </div>
+        </li>
+    </ul>
+</div>
+
+<p><img src="/images/diseases/spine-hip/HIVD/a.jpg" alt="脊椎椎間盤突出構造圖"></p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3>⚡ 從下背痛到腳麻：坐骨神經痛的警訊</h3>
+<p>單純的椎間盤受損可能只會感到下背痠痛（類似閃到腰）。但真正的惡夢開始於<strong>突出的髓核壓迫到後方的神經根</strong>。</p>
+<p>這會導致疼痛沿著坐骨神經的路徑，一路從臀部、大腿後側放射至小腿甚至腳底。患者常形容這種痛感為「酸、麻、刺痛、像被電到」。若壓迫過久，甚至會出現肌肉萎縮、腳踝無力（垂足）等現象。最嚴重的情況稱為<strong>「馬尾症候群 (Cauda Equina Syndrome)」</strong>，會影響大小便功能（失禁或尿不出來），這時就必須緊急開刀，否則會造成永久性神經損傷。</p>
+
+<p><img src="/images/diseases/spine-hip/HIVD/b.jpg" alt="坐骨神經痛"></p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3>🔍 X 光 vs. MRI：我們如何揪出病灶？</h3>
+<p>很多患者會問：「醫師，我照 X 光看得到軟骨突出嗎？」其實，診斷工具各有其功能：</p>
+
+<h4>1. 快速篩檢：數位 X 光檢查</h4>
+<p>診所內備有高解析度 X 光設備。雖然 X 光無法直接看到軟骨（椎間盤），但我們可以透過觀察<strong>「骨頭排列」</strong>來推斷：</p>
+<ul>
+    <li><strong>椎間隙變窄：</strong> 暗示中間的軟骨可能已經脫水磨損或突出。</li>
+    <li><strong>骨刺增生：</strong> 脊椎退化的證據。</li>
+    <li><strong>脊椎滑脫：</strong> 骨頭位置跑掉，造成不穩定。</li>
+</ul>
+
+<p><img src="/images/diseases/spine-hip/HIVD/c.jpg" alt="椎間盤突出X光"></p>
+
+<h4>2. 黃金標準：核磁共振 (MRI)</h4>
+<p>若症狀經過復健治療未改善，或是出現肌肉無力等嚴重神經學症狀，我們會建議安排 MRI 檢查。MRI 可以清晰地顯影出軟組織，讓我們看到椎間盤突出的<strong>確切位置、大小</strong>，以及神經根被壓迫的<strong>嚴重程度</strong>，這是評估是否需要手術的關鍵依據。</p>
+
+<p><img src="/images/diseases/spine-hip/HIVD/d.jpg" alt="椎間盤突出MRI"></p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3>🛡️ 治療三部曲：80% 患者免開刀的秘密</h3>
+<p>確診後別慌張，根據統計，<strong>超過 80% 的椎間盤突出患者可以透過非手術治療痊癒</strong>。宸新復健科提供階梯式的治療策略：</p>
+
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490 !important;">第一階段：健保復健與藥物 (Conservative Therapy)</h4>
+    <p style="margin-bottom: 0; color: #334155 !important;">
+        急性期透過口服消炎藥或神經穩定劑緩解疼痛。搭配<strong>腰椎牽引 (拉腰)</strong>，利用機械力量拉開脊椎間隙，產生負壓效果，幫助突出的椎間盤「縮回去」，並放鬆緊繃的肌肉。
+    </p>
+</div>
+
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490 !important;">第二階段：PRP 再生注射 (Regenerative Therapy)</h4>
+    <p style="margin-bottom: 0; color: #334155 !important;">
+        若復健效果緩慢，可考慮<strong style="color: #0891b2 !important;">PRP 增生療法</strong>。在超音波導引下，將高濃度血小板注射至受損的韌帶與小面關節周圍。生長因子能促進纖維環的修復，強化脊椎穩定度，從根本解決疼痛，這在現代醫學中是避免手術的一大利器。
+    </p>
+</div>
+
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490 !important;">第三階段：核心肌群訓練 (Core Stability)</h4>
+    <p style="margin-bottom: 0; color: #334155 !important;">
+        「天然的最好！」最強的護腰其實是您的<strong>核心肌群</strong>。待疼痛緩解後，透過徒手治療師的一對一指導（如紅繩、皮拉提斯），訓練深層腹橫肌與多裂肌，穩固脊椎，這是<strong>避免復發</strong>的唯一途徑。
+    </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3>🧘‍♂️ 預防勝於治療：您的坐姿正確嗎？</h3>
+<p>所有的治療都抵不過一個壞姿勢。椎間盤突出常被稱為「久坐病」，因為坐姿時腰椎承受的壓力是站姿的 1.5 倍，若是彎腰駝背，壓力更會暴增至 2 倍以上。</p>
+
+<h4>💡 醫師的護脊小叮嚀：</h4>
+<ul>
+    <li><strong>坐好坐滿：</strong> 屁股坐到椅子最深處。</li>
+    <li><strong>腰部支撐：</strong> 使用靠墊支撐腰椎前凸的弧度。</li>
+    <li><strong>腳踏實地：</strong> 雙腳平踩地面，膝蓋與臀部同高。</li>
+    <li><strong>定時起身：</strong> 每 30-40 分鐘起身活動，別讓椎間盤「餓死」（椎間盤靠活動時的壓力變化來交換養分）。</li>
+</ul>
+
+<p><img src="/images/diseases/spine-hip/HIVD/f.jpg" alt="正確的坐姿示意圖"></p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+    <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 坐骨神經痛不是絕症！</h3>
+    <p style="color: #334155 !important; margin-bottom: 1.5rem;">只要及早診斷、精準治療，絕大多數的椎間盤突出都能獲得良好的改善。宸新復健科擁有完整的檢查設備與多元治療方案，讓我們陪您一起挺直腰桿，找回行動自如的快樂！</p>
+    <p style="font-weight: bold; color: #059669 !important;">腰痠背痛？立即預約專業評估！</p>
+</div>
           `,
         symptoms: ['下背劇痛', '坐骨神經痛 (腿麻)', '彎腰時疼痛加劇', '下肢無力'],
         treatments: [ '服用止痛藥物', '物理治療 (牽引)', '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>','<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>'],
@@ -76,17 +181,127 @@ export const diseaseCategories: DiseaseCategory[] = [
         title: '頸椎椎間盤退化',
         description: '低頭用電腦導致的頸椎問題，椎間盤壓迫神經，造成肩頸痛或上肢麻痛。',
         contentHtml: `
-          <p>現代人長時間低頭滑手機、使用電腦，頸椎承受的壓力是正常的數倍，容易導致頸椎椎間盤提早退化、長骨刺。</p>
-          <p>初期症狀為肩頸僵硬、痠痛，當椎間盤因長期受力不均、姿勢不良或外力撞擊，導致內部的髓核突出，想是果凍被擠出，壓迫到後方的神經根。若壓迫到神經，則會造成<strong>手臂麻痛、手部無力</strong>。嚴重時甚至會壓迫脊髓，影響行走平衡。</p>
-          <img src="/images/diseases/spine-hip/CHIVD/a.jpg" alt="頸部疼痛示意圖" />
-          <p>根據壓迫的位子不同，會有不同部位的手麻及酸痛。</p>
-          <img src="/images/diseases/spine-hip/CHIVD/b.jpg" alt="頸部神經壓迫疼痛地圖" />
-          <p>診所內備有X光設備，可以馬上檢查有沒有長骨刺、椎間盤狹窄或是滑脫的情況，<strong>骨頭中間的縫隙消失</strong>，或是<strong>骨頭排列歪斜</strong>。</p>
-          <img src="/images/diseases/spine-hip/CHIVD/c.jpg" alt="ˊ椎間盤突出X光" />
-          <p class="mt-4"><span class="text-cyan-400 font-bold">✨ 治療關鍵：</span> 80%的患者可透過非手術治療痊癒，如復健拉脖子及止痛藥物。更有效的治療有<strong>PRP 增生療法</strong>能修復受損的纖維環，搭配<strong>徒手治療放鬆頸部肌肉</strong>搭配<strong>肌力訓練改善烏龜脖</strong>，是避免復發的不二法門。</p>
-          <p>若症狀惡化或太嚴重，甚至需要手術治療，核磁共振檢查，可以更清楚的看到椎間盤及神經結構。</p>
-           <p>正確的坐姿示意圖。</p>
-          <img src="/images/diseases/spine-hip/CHIVD/d.jpg" alt="ˊ正確的坐姿示意圖" />
+<p style="color: #e2e8f0 !important;">您是否也是「低頭族」的一員？搭捷運滑手機、上班盯電腦，下班追劇還是在低頭。長時間維持同一姿勢，您是否常覺得肩頸僵硬，甚至偶爾會感覺手臂一陣麻痛傳到手指？小心，這不只是單純的肌肉痠痛，而是<strong style="color: #22d3ee !important;">頸椎椎間盤突出</strong>正在發出的警訊。</p>
+
+<p style="color: #e2e8f0 !important;">宸新復健科提供從<strong>精準診斷</strong>、<strong>物理治療</strong>到<strong>再生醫學 (PRP)</strong> 的全方位頸椎照護方案。我們致力於協助您擺脫「烏龜頸」，找回抬頭挺胸的自信與無痛生活。</p>
+
+
+<div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+        📢 為什麼頸椎會提早退化？手機脖的危機
+    </h2>
+    
+    <p style="font-size: 1.1rem; color: #78350f !important;">人的頭部重量約為 5 公斤（像一顆保齡球）。當我們維持直立時，頸椎承受的壓力最小。但研究顯示，當頭部每往前傾 15 度，頸椎承受的壓力就會倍增：</p>
+    
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+            <div style="color: #92400e !important;">
+                <strong style="color: #0891b2 !important;">低頭 30 度：</strong> 
+                頸椎承受約 <strong style="color: #0891b2 !important;">18 公斤</strong> 的壓力。
+            </div>
+        </li>
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+            <div style="color: #92400e !important;">
+                <strong style="color: #0891b2 !important;">低頭 60 度：</strong> 
+                壓力暴增至 <strong style="color: #0891b2 !important;">27 公斤</strong>，相當於一個小學生的體重掛在您的脖子上！
+            </div>
+        </li>
+        <li style="margin-bottom: 0; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+            <div style="color: #92400e !important;">
+                <strong style="color: #0891b2 !important;">結果：</strong> 
+                這種長期不正常的受力，會導致頸椎椎間盤提早磨損、脫水，甚至導致內部的髓核像果凍一樣被擠出來，形成突出。
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3 style="color: #f8fafc !important;">⚡ 從痠痛到手麻：症狀的三階段演變</h3>
+<p style="color: #e2e8f0 !important;">頸椎問題通常不是一天造成的，而是循序漸進的惡化。了解症狀進程，有助於您把握黃金治療期：</p>
+
+<h4 style="color: #f1f5f9 !important;">階段一：肩頸僵硬 (Local Pain)</h4>
+<p style="color: #e2e8f0 !important;">初期僅感覺脖子緊緊的、落枕頻率變高，常覺得肩膀重得像有石頭壓著。這時多半是肌肉緊繃與小面關節發炎。</p>
+
+<h4 style="color: #f1f5f9 !important;">階段二：神經根壓迫 (Radiculopathy)</h4>
+<p style="color: #e2e8f0 !important;">當突出的椎間盤壓迫到兩側的神經根時，會出現典型的<strong>「傳導痛」</strong>。這也是為什麼明明是脖子有問題，卻是手臂或手指在痛。根據壓迫的節數不同，麻痛的位置也像地圖一樣精準：</p>
+<ul style="color: #e2e8f0 !important;">
+    <li><strong>頸椎第 5 節 (C5)：</strong> 肩膀外側麻痛。</li>
+    <li><strong>頸椎第 6 節 (C6)：</strong> 延伸至大拇指、食指（像是比讚的手勢區域）。</li>
+    <li><strong>頸椎第 7 節 (C7)：</strong> 延伸至中指。</li>
+    <li><strong>頸椎第 8 節 (C8)：</strong> 延伸至無名指、小指。</li>
+</ul>
+
+<p><img src="/images/diseases/spine-hip/CHIVD/b.jpg" alt="頸部神經壓迫疼痛地圖"></p>
+
+<h4 style="color: #f1f5f9 !important;">階段三：脊髓病變 (Myelopathy)</h4>
+<p style="color: #e2e8f0 !important;">這是最危險的情況。若椎間盤直接向後正中突出，壓迫到<strong>脊髓 (Spinal Cord)</strong>，會造成全身性的影響，如雙腳無力、走路像踩棉花不穩、手部精細動作困難（扣釦子、拿筷子變笨拙）。這時通常需要手術介入。</p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3 style="color: #f8fafc !important;">🔍 我們如何精準診斷？</h3>
+<p style="color: #e2e8f0 !important;">要解決問題，必須先看清問題。宸新復健科提供完善的影像檢查：</p>
+
+<h4 style="color: #f1f5f9 !important;">X 光檢查：看骨頭排列</h4>
+<p style="color: #e2e8f0 !important;">診所內備有數位 X 光設備，可以快速檢查：</p>
+<ul style="color: #e2e8f0 !important;">
+    <li><strong>椎間盤變窄：</strong> 代表軟骨磨損，有突出風險。</li>
+    <li><strong>骨刺增生 (Spondylosis)：</strong> 骨頭為了應對壓力而增生的防禦機制。</li>
+    <li><strong>頸椎曲度變直：</strong> 從原本健康的 C 型曲線變成筆直的「軍人頸 (Military Neck)」，這是肌肉長期緊繃的證據。</li>
+</ul>
+
+<p><img src="/images/diseases/spine-hip/CHIVD/c.jpg" alt="椎間盤突出X光"></p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3 style="color: #f8fafc !important;">🛡️ 治療三部曲：宸新復健科的整合治療</h3>
+<p style="color: #e2e8f0 !important;">確診為頸椎椎間盤突出不代表一定要開刀。統計顯示，<strong>80% 的患者可透過非手術治療痊癒</strong>。我們提供階梯式的治療方案：</p>
+
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490 !important;">1. 健保物理治療 (保守治療)</h4>
+    <p style="margin-bottom: 0; color: #334155 !important;">
+        急性期可透過口服藥物消炎止痛。搭配<strong>頸椎牽引 (拉脖子)</strong>，利用機器溫和拉開頸椎間隙，降低椎間盤內的壓力，幫助突出的部分回縮，並解除神經壓迫。
+    </p>
+</div>
+
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490 !important;">2. PRP 增生療法 (修復受損)</h4>
+    <p style="margin-bottom: 0; color: #334155 !important;">
+        若復健效果有限，手麻症狀持續，<strong style="color: #0891b2 !important;">PRP 增生療法</strong>是更積極的選擇。醫師會在超音波導引下，將高濃度生長因子注射至受損的頸椎小面關節與神經根周圍，促進受損的纖維環修復，並快速消除神經發炎水腫，是目前避免手術的高效療法。
+    </p>
+</div>
+
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490 !important;">3. 徒手與運動治療 (矯正體態)</h4>
+    <p style="margin-bottom: 0; color: #334155 !important;">
+        這是最根本的解方。頸椎問題多半來自<strong>「上交叉症候群」</strong>（烏龜頸＋圓肩）。透過徒手治療放鬆過緊的胸肌與上斜方肌，並教導您訓練<strong>深層頸屈肌</strong>（收下巴運動），重新建立頸椎的正確排列，避免復發。
+    </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師的護頸小叮嚀：正確姿勢</h3>
+<p style="color: #e2e8f0 !important;">預防勝於治療，請在日常生活中落實以下原則：</p>
+<ul style="color: #e2e8f0 !important;">
+    <li><strong>螢幕高度：</strong> 電腦螢幕上緣應與視線平視，避免低頭。</li>
+    <li><strong>收下巴：</strong> 時刻提醒自己「縮下巴 (Chin Tuck)」，讓耳垂對準肩膀上方。</li>
+    <li><strong>手肘支撐：</strong> 使用電腦時，手肘應有支撐，避免聳肩造成頸部壓力。</li>
+    <li><strong>定時活動：</strong> 每 30 分鐘轉動頸部，做擴胸運動。</li>
+</ul>
+
+<p><img src="/images/diseases/spine-hip/CHIVD/d.jpg" alt="正確的坐姿示意圖"></p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+    <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 頸椎健康，生活才自在！</h3>
+    <p style="color: #334155 !important; margin-bottom: 1.5rem;">手麻、脖子痛不是忍一忍就會好。若延誤治療造成神經永久損傷，將得不償失。宸新復健科擁有完整的檢查與治療團隊，讓我們幫您找回靈活的頸椎！</p>
+    <p style="font-weight: bold; color: #059669 !important;">經常手麻脖子痛？立即預約評估！</p>
+</div>
         
                   `,
         symptoms: ['頸部疼痛僵硬', '膏肓痛', '手臂麻木刺痛', '頭痛 (頸因性頭痛)'],
@@ -103,15 +318,114 @@ export const diseaseCategories: DiseaseCategory[] = [
         title: '梨狀肌症候群',
         description: '梨狀肌緊繃壓迫坐骨神經，造成深層臀部疼痛或腳麻。',
         contentHtml: `
-          <p>梨狀肌是臀部深層的一條肌肉，當它因為<strong>久坐、過度運動或外傷</strong>而緊繃腫脹時，會覺得屁股深層很痛很緊，剛好在屁股肉最多的地方，有時候痛會往兩旁延伸，特徵是<strong>深層臀部疼痛</strong>，且在變換姿勢、翹腳或久坐時加劇。</p>
-          <img src="/images/diseases/spine-hip/piri/b.jpg" alt="梨狀肌疼痛" />
-          <p>肌肉腫脹嚴重時會壓迫到下方的<strong>坐骨神經</strong>，引發類似椎間盤突出的症狀，造成疼痛或是麻感延伸到整隻腳。</p>
-          <img src="/images/diseases/spine-hip/piri/c.jpg" alt="梨狀肌疼痛" />     
-          <p class="mt-4"><span class="text-cyan-400 font-bold">✨ 治療關鍵：</span> 90%的患者可透過非手術治療痊癒，如復健及止痛藥物。更有效的治療有<strong>神經減壓注射</strong>，搭配<strong>徒手治療放鬆梨狀肌</strong>搭配<strong>肌力訓練改善臀部肌肉</strong>，是避免復發的不二法門。</p>
-          <p>平常久坐可經由下面方式伸展梨狀肌，盤腿壓膝蓋的方式來伸展放鬆約30秒，建議一個小時做一次，可有效改善</p>
-          <img src="/images/diseases/spine-hip/piri/d.jpg" alt="梨狀肌伸展" />
-          <p>建議也可搭配橋式來訓練臀部及下背肌肉，撐起5~10秒，早晚五次，避免復發</p>
-          <img src="/images/diseases/spine-hip/piri/e.jpg" alt="橋式訓練" />
+<p style="color: #e2e8f0 !important;">您是否有過這種感覺：明明腰沒有很痛，但<strong>屁股深處</strong>卻像被人狠狠揍了一拳，痠痛感一路延伸到大腿後側？坐著超過 15 分鐘就如坐針氈，甚至睡覺翻身都會痛醒？</p>
+
+<p style="color: #e2e8f0 !important;">這可能不是脊椎出了問題，而是您的屁股「緊繃」了！這就是俗稱「假性坐骨神經痛」的<strong>梨狀肌症候群</strong>。宸新復健科提供從精準診斷、超音波導引注射到徒手物理治療的完整方案，幫您解開緊繃的枷鎖，找回輕鬆的臀部。</p>
+
+
+<div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+        📢 什麼是梨狀肌？屁股裡的隱形殺手
+    </h2>
+    
+    <p style="font-size: 1.1rem; color: #78350f !important;">梨狀肌是位於臀部深層（臀大肌下面）的一條小肌肉，起點在薦骨，終點在大腿骨大轉子。它的功能主要是協助大腿<strong>外旋</strong>（像是翹二郎腿的動作）。為什麼它會出問題？</p>
+    
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+            <div style="color: #92400e !important;">
+                <strong style="color: #0891b2 !important;">久坐受壓：</strong> 
+                長時間久坐（尤其是坐硬椅子），梨狀肌就像被夾心餅乾一樣長期缺血、緊繃。
+            </div>
+        </li>
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+            <div style="color: #92400e !important;">
+                <strong style="color: #0891b2 !important;">過度使用：</strong> 
+                長跑選手、自行車騎士或突然進行高強度的深蹲訓練，導致肌肉微小撕裂傷發炎腫脹。
+            </div>
+        </li>
+        <li style="margin-bottom: 0; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+            <div style="color: #92400e !important;">
+                <strong style="color: #0891b2 !important;">錢包症候群 (Wallet Neuritis)：</strong> 
+                習慣將厚錢包放在後口袋並坐著，直接壓迫梨狀肌與神經，這是許多男性的痛點。
+            </div>
+        </li>
+    </ul>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3 style="color: #f8fafc !important;">⚡ 症狀解析：深層的痛與麻</h3>
+<p style="color: #e2e8f0 !important;">梨狀肌發炎時，最典型的特徵就是<strong>「深層臀部疼痛」</strong>。這種痛點位於屁股肉最多的地方，按壓時會感到一陣痠軟。疼痛常在變換姿勢、翹腳、上下樓梯或久坐超過 30 分鐘時加劇。</p>
+
+<p><img src="/images/diseases/spine-hip/piri/b.jpg" alt="梨狀肌疼痛"></p>
+
+<h4 style="color: #f1f5f9 !important;">為什麼會腳麻？（坐骨神經的無辜受累）</h4>
+<p style="color: #e2e8f0 !important;">這正是它被稱為「假性坐骨神經痛」的原因。<strong>坐骨神經</strong>剛好從梨狀肌的下方（或中間）穿過。當梨狀肌因為發炎而腫脹、變硬時，就會像「掐脖子」一樣勒住下方的坐骨神經。</p>
+<p style="color: #e2e8f0 !important;">這會引發類似椎間盤突出的神經症狀，造成疼痛、麻感或電流感一路從屁股延伸到<strong>大腿後側</strong>，甚至到達小腿。但與椎間盤突出不同的是，梨狀肌症候群通常<strong>不會</strong>造成腰部疼痛。</p>
+
+<p><img src="/images/diseases/spine-hip/piri/c.jpg" alt="梨狀肌壓迫坐骨神經示意圖"></p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3 style="color: #f8fafc !important;">🔍 到底是腰椎突出還是梨狀肌？</h3>
+<p style="color: #e2e8f0 !important;">這兩者症狀太像，常被誤診。宸新復健科醫師教您簡單分辨：</p>
+<ul style="color: #e2e8f0 !important;">
+    <li><strong>腰椎椎間盤突出：</strong> 通常伴隨「下背痛」，彎腰時症狀加劇，直抬腿測試 (SLR) 角度受限。</li>
+    <li><strong>梨狀肌症候群：</strong> 腰部通常不痛（或只有輕微痠），主要是「屁股痛」。做<strong>翹二郎腿 (Figure 4)</strong> 的動作並下壓膝蓋時，屁股深處會劇痛。</li>
+</ul>
+<p style="color: #94a3b8 !important; font-size: 0.9rem;">*註：最準確的鑑別診斷仍需由醫師透過超音波或 MRI 檢查確認。</p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3 style="color: #f8fafc !important;">🛡️ 治療三部曲：解開屁股的結</h3>
+<p style="color: #e2e8f0 !important;">好消息是，<strong>90% 的梨狀肌症候群不需要開刀</strong>。我們採用階梯式治療：</p>
+
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490 !important;">1. 保守治療 (消炎與放鬆)</h4>
+    <p style="margin-bottom: 0; color: #334155 !important;">
+        急性期口服肌肉鬆弛劑與消炎藥。物理治療使用深層熱療（如短波、超音波）來增加深部血液循環，軟化僵硬的肌肉組織。
+    </p>
+</div>
+
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490 !important;">2. 神經減壓注射 (精準解除壓迫)</h4>
+    <p style="margin-bottom: 0; color: #334155 !important;">
+        若物理治療效果緩慢，這是一針見效的方法。醫師在<strong>超音波導引</strong>下，可以清楚看到腫脹的梨狀肌與受壓的坐骨神經。我們使用<strong style="color: #0891b2 !important;">神經解套注射 (Hydrodissection)</strong>，將藥水精準注入肌肉與神經之間的沾黏處，像「水刀」一樣將它們分開，瞬間解除壓迫，並能一併施打 PRP 修復受傷的肌肉纖維。
+    </p>
+</div>
+
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490 !important;">3. 徒手與運動治療 (避免復發)</h4>
+    <p style="margin-bottom: 0; color: #334155 !important;">
+        這是長治久安的關鍵。物理治療師會透過<strong>徒手治療</strong>按壓放鬆深層激痛點。接著指導您進行<strong>臀肌強化</strong>，因為很多時候是因為臀大肌無力，導致小小的梨狀肌必須「過勞」代償，練好臀部肌肉才能真正斷根。
+    </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3 style="color: #f8fafc !important;">🧘‍♂️ 居家復健：醫師教您自救兩招</h3>
+<p style="color: #e2e8f0 !important;">除了治療，日常的保養至關重要。建議久坐族每小時都要起來做一次：</p>
+
+<h4 style="color: #f1f5f9 !important;">1. 梨狀肌伸展 (Piriformis Stretch)</h4>
+<p style="color: #e2e8f0 !important;">坐在椅子上，將痛側的腳踝跨到對側膝蓋上（翹二郎腿姿勢）。腰桿挺直，身體慢慢往前傾，直到感覺屁股深處有緊繃痠痛感。停留 <strong>30 秒</strong>，重複 3-5 次。這能有效拉開緊繃的梨狀肌。</p>
+
+<p><img src="/images/diseases/spine-hip/piri/d.jpg" alt="梨狀肌伸展教學"></p>
+
+<h4 style="color: #f1f5f9 !important;">2. 橋式運動 (Bridge Exercise)</h4>
+<p style="color: #e2e8f0 !important;">平躺，雙膝彎曲踩地。利用臀部的力量將骨盆抬起，使身體呈一直線。停留 <strong>5~10 秒</strong>，早晚各做 10 次。這能喚醒沉睡的臀大肌，減輕梨狀肌的負擔。</p>
+
+<p><img src="/images/diseases/spine-hip/piri/e.jpg" alt="橋式訓練教學"></p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+    <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 屁股痛？別再忍耐！</h3>
+    <p style="color: #334155 !important; margin-bottom: 1.5rem;">梨狀肌症候群雖然惱人，但只要找對醫師、做對治療，恢復速度通常很快。宸新復健科擁有精準的超音波技術與專業治療團隊，讓我們幫您甩開屁股痛，坐得安穩、動得自在！</p>
+    <p style="font-weight: bold; color: #059669 !important;">久坐屁股痛？立即預約精準評估！</p>
+</div>
         `,
         symptoms: ['深層臀部痠痛', '久坐疼痛加劇', '無法翹二郎腿', '大腿後側麻痛'],
         treatments: ['梨狀肌伸展', '物理治療', '神經減壓注射', '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>'],
@@ -129,12 +443,110 @@ export const diseaseCategories: DiseaseCategory[] = [
         title: '退化性髖關節炎',
         description: '軟骨磨損導致鼠蹊部疼痛，影響行走與穿襪等日常動作。',
         contentHtml: `
-        <p><strong>退化性髖關節炎</strong>是因長期負重與磨損，導致關節軟骨磨損的疾病，常見於中老年族群。典型症狀並非只在臀部，更多時候是<strong>鼠蹊部（該邊）</strong>感到疼痛或僵硬，且早晨或久坐後特別明顯，嚴重時甚至會導致跛行與活動受限。</p>
-        <br>
-        <p>保養的關鍵在於<strong>減重</strong>與<strong>適度運動</strong>。控制體重能大幅降低關節壓力，搭配<strong>徒手運動治療</strong>穩定關節及<strong>PRP注射</strong>使軟骨增生可改善疼痛。別讓疼痛限制了您的行動力！</p>
-        <br>
-        <p>嚴重的關節磨損，箭頭處軟骨消失。</p>
-        <img src="/images/diseases/spine-hip/OA/b.jpg" alt="髖關節退化X光" />
+<p style="color: #e2e8f0 !important;">走路時總是覺得「該邊」（鼠蹊部）隱隱作痛？穿襪子、剪腳指甲變得越來越困難？小心，這可能不是單純的肌肉拉傷，而是<strong>退化性髖關節炎</strong>正在悄悄侵蝕您的行動力。</p>
+
+<p style="color: #e2e8f0 !important;">髖關節是人體最大的負重關節，支撐著我們跑、跳、走的每一步。宸新復健科提供從<strong>精準影像診斷</strong>、<strong>徒手物理治療</strong>到<strong>再生醫學 (PRP)</strong> 的整合照護，助您保養關節，找回輕盈的步伐。</p>
+
+
+<div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+        📢 為什麼髖關節會退化？不只是老人的專利
+    </h2>
+    
+    <p style="font-size: 1.1rem; color: #78350f !important;">退化性髖關節炎是因長期負重與磨損，導致關節軟骨逐漸變薄、消失的疾病。雖然常見於中老年族群，但以下高風險族群也需提早警覺：</p>
+    
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+            <div style="color: #92400e !important;">
+                <strong style="color: #0891b2 !important;">體重過重：</strong> 
+                行走時髖關節需承受體重 3 倍的壓力。體重每增加 1 公斤，關節負擔就增加 3~4 公斤。
+            </div>
+        </li>
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+            <div style="color: #92400e !important;">
+                <strong style="color: #0891b2 !important;">舊傷或發育不良：</strong> 
+                曾經骨折、脫臼，或是先天性髖關節發育不良 (DDH)，都會讓關節受力不均，加速磨損。
+            </div>
+        </li>
+        <li style="margin-bottom: 0; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+            <div style="color: #92400e !important;">
+                <strong style="color: #0891b2 !important;">股骨頭缺血性壞死 (AVN)：</strong> 
+                長期使用類固醇或酗酒者，易導致股骨頭血液循環受阻而壞死塌陷，最終引發嚴重退化。
+            </div>
+        </li>
+    </ul>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3 style="color: #f8fafc !important;">⚡ 別搞錯！髖關節痛不是屁股痛</h3>
+<p style="color: #e2e8f0 !important;">這是民眾最常混淆的觀念。真正的髖關節病變，痛點通常不在屁股後面（那是坐骨神經或梨狀肌的問題），而是集中在<strong>腹股溝（鼠蹊部/該邊）</strong>，有時會延伸到大腿前側或膝蓋內側。</p>
+
+<h4 style="color: #f1f5f9 !important;">常見的三大警訊：</h4>
+<ul style="color: #e2e8f0 !important;">
+    <li><strong>晨間僵硬 (Morning Stiffness)：</strong> 早上起床時關節像卡住一樣，活動 10-20 分鐘後才會比較順。</li>
+    <li><strong>活動受限 (ROM Loss)：</strong> 發現很難翹二郎腿、穿襪子要把腳抬很高很吃力、無法蹲低。</li>
+    <li><strong>跛行 (Limping)：</strong> 走路一跛一跛，身體會偏向患側（這是一種為了減輕疼痛的代償步態）。</li>
+</ul>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3 style="color: #f8fafc !important;">🔍 X 光下的真相：軟骨去哪了？</h3>
+<p style="color: #e2e8f0 !important;">透過 X 光檢查，我們可以清楚看到關節退化的程度。正常的髖關節，圓球狀的股骨頭與骨盆之間應該有一條黑色的縫隙，那就是健康的軟骨。</p>
+<p style="color: #e2e8f0 !important;">但在退化性關節炎的影像中（如下圖），您會發現：</p>
+<ul style="color: #e2e8f0 !important;">
+    <li><strong>關節間隙變窄：</strong> 如下圖箭頭所示，原本的縫隙消失了，代表軟骨已經磨損殆盡，變成「骨頭磨骨頭」。</li>
+    <li><strong>骨刺增生 (Osteophytes)：</strong> 骨頭邊緣長出尖銳的骨刺。</li>
+    <li><strong>軟骨下骨硬化 (Sclerosis)：</strong> 骨頭顏色變白、變硬。</li>
+</ul>
+
+<p><img src="/images/diseases/spine-hip/OA/b.jpg" alt="嚴重的髖關節退化X光，箭頭處顯示軟骨消失"></p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3 style="color: #f8fafc !important;">🛡️ 治療三部曲：保養、修復、重建</h3>
+<p style="color: #e2e8f0 !important;">髖關節退化不可逆，但我們可以「延緩」惡化並「改善」疼痛。宸新復健科採用階梯式治療策略：</p>
+
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490 !important;">1. 基礎保養 (減重與物理治療)</h4>
+    <p style="margin-bottom: 0; color: #334155 !important;">
+        <strong>減重</strong>是特效藥。研究顯示，每減輕 1 公斤體重，行走時髖關節的負擔就減少 4 公斤！搭配<strong>徒手治療</strong>放鬆緊繃的髂腰肌與內收肌群，增加關節活動角度，並利用儀器治療緩解發炎。
+    </p>
+</div>
+
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490 !important;">2. PRP 增生療法 (促進軟骨修復)</h4>
+    <p style="margin-bottom: 0; color: #334155 !important;">
+        對於中度退化、不想開刀的患者，<strong style="color: #0891b2 !important;">PRP (高濃度血小板) 注射</strong>是極佳的選擇。醫師會在超音波導引下，將生長因子精準注入狹窄的關節腔內。這能抑制發炎、減緩軟骨磨損速度，並改善關節潤滑液的品質，就像幫生鏽的齒輪上了頂級潤滑油。
+    </p>
+</div>
+
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490 !important;">3. 運動訓練 (天然護具)</h4>
+    <p style="margin-bottom: 0; color: #334155 !important;">
+        <strong>臀中肌</strong>是穩定髖關節最重要的肌肉。透過正確的肌力訓練（如側抬腿、蚌殼式），能強化肌肉力量，分擔關節承受的壓力。這比任何護具都來得有效。
+    </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3 style="color: #f8fafc !important;">🧘‍♂️ 日常保養小叮嚀</h3>
+<ul style="color: #e2e8f0 !important;">
+    <li><strong>減少負重：</strong> 避免頻繁上下樓梯、爬山或深蹲，這些動作會對髖關節造成巨大壓力。</li>
+    <li><strong>輔具使用：</strong> 疼痛嚴重時，請不要排斥使用登山杖或拐杖（拿在好邊），這能大幅分擔患側壓力。</li>
+    <li><strong>水中運動：</strong> 游泳或水中走路是最好的運動，水的浮力能支撐體重，讓關節在無負擔的情況下活動。</li>
+</ul>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+    <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 別讓疼痛限制了您的世界！</h3>
+    <p style="color: #334155 !important; margin-bottom: 1.5rem;">髖關節退化雖然不可逆，但透過正確的治療與保養，您依然可以擁有高品質的生活。若您有鼠蹊部疼痛或活動受限的困擾，請盡快至宸新復健科評估，讓我們幫您保住珍貴的關節！</p>
+    <p style="font-weight: bold; color: #059669 !important;">走路卡卡不順？立即預約專業檢查！</p>
+</div>
         `,
         symptoms: ['鼠蹊部疼痛', '走路跛行', '關節活動受限 (穿襪困難)', '腹股溝壓痛'],
         treatments: ['復健藥物治療', '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>', '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>', '人工關節置換'],
@@ -165,8 +577,111 @@ export const diseaseCategories: DiseaseCategory[] = [
         title: '旋轉肌撕裂',
         description: '肩膀旋轉肌群受傷或撕裂，造成肩膀疼痛與活動受限。',
         contentHtml: `
-          <p>旋轉肌袖是包覆肩關節的四條重要肌腱，負責肩膀的旋轉與抬舉。當因老化、長期過度使用（如投擲運動、油漆工）或外傷導致肌腱磨損撕裂，就會引起疼痛。</p>
-          <p>患者常在<strong>手臂上舉 60-120 度</strong>時感到劇痛（疼痛弧），且夜間側睡壓到患側會痛醒。部分撕裂可透過 PRP 修復，完全斷裂則建議手術。</p>
+<p style="color: #e2e8f0 !important;">您是否有這樣的困擾：想梳頭髮手卻舉不高？穿衣服時手無法伸到背後扣釦子？或是晚上睡覺壓到肩膀時，會被一陣尖銳的疼痛痛醒？小心，這可能不是單純的五十肩，而是更常見的肩膀隱形殺手——<strong>旋轉肌袖撕裂 (Rotator Cuff Tear)</strong>。</p>
+
+<p style="color: #e2e8f0 !important;">肩膀是人體活動度最大的關節，但高靈活度也伴隨著高受傷風險。宸新復健科擁有高解析度肌肉骨骼超音波，能快速精準診斷肌腱受損程度，並提供從徒手物理治療到 PRP 再生注射的全方位免動刀修復方案。</p>
+
+<br>
+
+<div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+        📢 什麼是「旋轉肌袖」？肩膀的安全帶
+    </h2>
+    
+    <p style="font-size: 1.1rem; color: #78350f !important;">肩膀就像一個球窩關節（高爾夫球與球座），為了讓手臂這顆「球」能穩穩地待在肩胛骨這個淺淺的「座」上轉動，我們需要一組肌肉像袖套一樣包覆住關節。這組肌肉合稱「旋轉肌袖」，由四條肌肉組成：</p>
+    
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+            <div style="color: #92400e !important;">
+                <strong style="color: #0891b2 !important;">棘上肌 (Supraspinatus)：</strong> 
+                最容易受傷的一條！負責啟動手臂側舉的動作。它常常被夾在肩峰骨頭與肱骨之間摩擦。
+            </div>
+        </li>
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+            <div style="color: #92400e !important;">
+                <strong style="color: #0891b2 !important;">棘下肌 (Infraspinatus) 與 小圓肌 (Teres Minor)：</strong> 
+                負責手臂向外旋轉的動作（例如梳頭、投球的後擺動作）。
+            </div>
+        </li>
+        <li style="margin-bottom: 0; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+            <div style="color: #92400e !important;">
+                <strong style="color: #0891b2 !important;">肩胛下肌 (Subscapularis)：</strong> 
+                位於肩胛骨前方，負責手臂向內旋轉（例如插腰、摸後背）。
+            </div>
+        </li>
+    </ul>
+</div>
+
+<p><img src="/path/to/your/image_anatomy_rotator_cuff.jpg" alt="肩關節旋轉肌袖解剖構造圖，顯示棘上肌肌腱位置"></p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3 style="color: #f8fafc !important;">⚡ 為什麼會撕裂？不只是運動員的專利</h3>
+<p style="color: #e2e8f0 !important;">旋轉肌袖撕裂可分為「急性創傷」與「慢性退化」兩大類。事實上，<strong>大部分的撕裂是「磨」出來的</strong>，而非一次性的拉傷。</p>
+
+<ul style="color: #e2e8f0 !important;">
+    <li><strong>慢性退化 (最常見)：</strong> 隨著年齡增長（40歲以上），肌腱血液循環變差，彈性下降。加上長期重複性的過頂動作（如油漆工、老師寫黑板、家庭主婦曬衣服），或肩峰骨刺增生反覆摩擦肌腱（夾擠症候群），肌腱就會像一條老舊的麻繩一樣，開始磨損、分岔，最後斷裂。</li>
+    <li><strong>急性創傷：</strong> 年輕人較常見。例如跌倒時手撐地、提重物拉傷、或運動時用力過猛（如棒球投擲、羽球殺球）。</li>
+</ul>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3 style="color: #f8fafc !important;">🔍 關鍵症狀：痛在哪裡？怎麼痛？</h3>
+<p style="color: #e2e8f0 !important;">旋轉肌撕裂的疼痛非常有特色，通常不是痛在關節深處，而是痛在<strong>肩膀外側（三角肌粗隆附近）</strong>，有時會延伸到上手臂。</p>
+
+<p><img src="/path/to/your/image_shoulder_pain_location.jpg" alt="旋轉肌袖撕裂典型疼痛位置示意圖，位於肩膀外側"></p>
+
+<h4 style="color: #f1f5f9 !important;">三大典型表現：</h4>
+<ol style="color: #e2e8f0 !important;">
+    <li><strong>夜間疼痛 (Night Pain)：</strong> 這是最惱人的症狀。白天可能還好，但晚上睡覺側躺壓到患側時，會痛到無法入睡。</li>
+    <li><strong>特定角度無力 (Weakness)：</strong> 手臂在側舉到 60~120 度之間（疼痛弧）會特別痛或無力，甚至舉不起來。但如果有人幫你把手扶上去超過這個角度，反而就不痛了。</li>
+    <li><strong>活動受限：</strong> 手臂很難伸到背後去扣內衣或抓癢。</li>
+</ol>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3 style="color: #f8fafc !important;">🩺 診斷利器：肌肉骨骼超音波</h3>
+<p style="color: #e2e8f0 !important;">懷疑肌腱撕裂時，X 光只能看骨頭有沒有骨刺，看不到肌腱。核磁共振 (MRI) 雖然清楚但排程久且昂貴。</p>
+<p style="color: #e2e8f0 !important;">在宸新復健科，我們使用<strong>高解析度肌肉骨骼超音波</strong>。它就像醫師的聽診器，能即時、動態地觀察肌腱在活動時的狀況。是部分撕裂、全層撕裂、還是鈣化發炎？超音波下一目了然，是診斷旋轉肌問題的黃金標準之一。</p>
+
+<p><img src="/path/to/your/image_ultrasound_shoulder_exam.jpg" alt="醫師使用高解析超音波進行肩關節旋轉肌袖檢查"></p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3 style="color: #f8fafc !important;">🛡️ 治療策略：修復肌腱，重建功能</h3>
+<p style="color: #e2e8f0 !important;">統計顯示，大部分（約 70-80%）的中小型撕裂或退化性撕裂，透過保守治療就能恢復良好功能，不一定要急著開刀。</p>
+
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490 !important;">1. 物理治療與運動訓練 (基礎工程)</h4>
+    <p style="margin-bottom: 0; color: #334155 !important;">
+        為什麼肌腱會磨損？通常是因為肩胛骨位置不對，或胸肌太緊、背肌無力造成的代償。物理治療師會利用<strong>徒手治療</strong>放鬆緊繃的關節囊，並指導您強化肩胛穩定肌群與未受傷的旋轉肌，導正肩膀的力學結構，避免肌腱繼續磨損。
+    </p>
+</div>
+
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490 !important;">2. PRP 增生療法 (加速癒合)</h4>
+    <p style="margin-bottom: 0; color: #334155 !important;">
+        肌腱的血液循環本來就不好，一旦撕裂很難自己長好。對於部分撕裂或嚴重退化的患者，<strong style="color: #0891b2 !important;">PRP (高濃度血小板血漿) 注射</strong>是強力的救援投手。在超音波導引下，將自體的生長因子精準注入撕裂孔洞中，能啟動組織再生機制，促進膠原蛋白癒合，是免於手術的高效選擇。
+    </p>
+</div>
+
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490 !important;">3. 何時需要考慮手術？</h4>
+    <p style="margin-bottom: 0; color: #334155 !important;">
+        如果是年輕人的急性創傷造成「全層完全斷裂」，導致手臂完全舉不起來，或者保守治療 3-6 個月後疼痛與無力仍無改善，這時就需要轉介骨科醫師評估關節鏡修補手術。
+    </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+    <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 肩膀痛別硬撐，及早修復是關鍵！</h3>
+    <p style="color: #334155 !important; margin-bottom: 1.5rem;">旋轉肌撕裂若置之不理，破洞可能會越來越大，最終導致不可逆的肩關節退化。宸新復健科具備精準的超音波診斷能力與再生醫療技術，讓我們協助您修復受損的翅膀，重新找回肩膀的自由！</p>
+    <p style="font-weight: bold; color: #059669 !important;">手舉不高、半夜痛醒？立即預約超音波檢查！</p>
+</div>
         `,
         symptoms: ['舉手疼痛無力', '夜間疼痛 (痛醒)', '特定角度疼痛 (Painful Arc)', '肩膀卡卡聲'],
         treatments: ['<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>', '聚焦式震波', '肌力訓練', '手術修補'],

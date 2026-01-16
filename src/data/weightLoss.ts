@@ -238,6 +238,10 @@ export const weightLossPrograms: WeightLossProgram[] = [
         answer: '減重藥物是輔助工具，幫助您建立良好的飲食與生活習慣。若停藥後能維持健康的飲食與運動習慣，就能有效維持體重。我們提供專業的衛教與追蹤，協助您長期維持成果。'
       },
       {
+        question: '一支猛健樂注射筆可以打幾次？可以使用多久？',
+        answer: '台灣目前的猛健樂筆針設計為一支筆含有 4 次（4 週）的劑量。您只需要每週固定同一天施打一次，一支筆剛好可以完成一個月的療程。這種設計不僅攜帶方便，也能大幅減少醫療廢棄物。'
+      },
+      {
         question: '施打猛健樂會痛嗎？',
         answer: '猛健樂使用的是極細的專利針頭，施打於皮下脂肪層（如腹部或大腿），大部分患者僅感覺像被蚊子叮一下，幾乎沒有疼痛感，非常方便操作。'
       }
@@ -248,17 +252,17 @@ export const weightLossPrograms: WeightLossProgram[] = [
   // 2. 週纖達 (Ozempic) - 關鍵字：Ozempic價格、善纖達比較、一週一次
   // =======================================================
   {
-    slug: 'ozempic',
-    title: '週纖達 (Ozempic)',
+    slug: 'Wegovy',
+    title: '週纖達 (Wegovy)',
     subtitle: 'GLP-1 受體促效劑',
     description: '協助控制體重的注射藥物，幫助您減少飢餓感，輕鬆達成減重目標。',
     image: '/images/weight-loss/b.jpg',
     features: ['穩定血糖', '減少體脂肪堆積'],
     
     // ✨ SEO 強力優化
-    seoTitle: '新竹週纖達(Ozempic)減重 - 價格/副作用/與善纖達比較 | 宸新復健科',
-    seoDescription: '新竹週纖達(Ozempic)瘦瘦針推薦。高CP值的一週一次減重藥物，有效抑制食慾、增加飽足感。適合忙碌上班族、想改善體態與血糖控制者。提供完整衛教與劑量規劃。',
-    keywords: ['新竹週纖達', 'Ozempic價格', '新竹瘦瘦針推薦', '善纖達比較', 'GLP-1', '減肥筆', '胰妥讚'],
+    seoTitle: '新竹週纖達(Wegovy)減重 - 價格/副作用/與善纖達比較 | 宸新復健科',
+    seoDescription: '新竹週纖達(Wegovy)瘦瘦針推薦。高CP值的一週一次減重藥物，有效抑制食慾、增加飽足感。適合忙碌上班族、想改善體態與血糖控制者。提供完整衛教與劑量規劃。',
+    keywords: ['新竹週纖達', 'Wegovy價格', '新竹瘦瘦針推薦', '善纖達比較', 'GLP-1', '減肥筆', '胰妥讚'],
 
     contentHtml: `
 <p>宸新復健科提供高 CP 值的<strong>週纖達</strong> 減重療程。這是一種長效型 GLP-1 受體促效劑，透過模擬腸道荷爾蒙的作用，能有效<strong>增加飽足感</strong>、<strong>延緩胃部排空</strong>，進而減少熱量攝取。</p>
@@ -268,7 +272,7 @@ export const weightLossPrograms: WeightLossProgram[] = [
 
 <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
     <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
-        📢 週纖達 (Ozempic) 本月專屬優惠方案
+        📢 週纖達 (Wegovy) 本月專屬優惠方案
     </h2>
     
     <p style="font-size: 1.1rem; color: #78350f;">宸新復健科提供最透明實惠的價格。週纖達依據劑量與筆型不同，分為兩種主要規格。醫師將依據您的目標體重與身體耐受度，建議最適合您的方案：</p>
@@ -306,7 +310,7 @@ export const weightLossPrograms: WeightLossProgram[] = [
 </div>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-<h3>⚖️ 該選誰？週纖達 (Ozempic) vs. 猛健樂 (Mounjaro) 超級比一比</h3>
+<h3>⚖️ 該選誰？週纖達 ( vs. 猛健樂 (Mounjaro) 超級比一比</h3>
 <p>這兩款都是目前市面上最強大的減重針劑，但機轉與定位略有不同。透過下方的比較圖，您可以更清楚了解它們的優缺點，從而做出最適合自己的選擇。</p>
 
 <p><img src="/images/weight-loss/ozempic/a.jpg" alt="週纖達與猛健樂、善纖達比較圖"></p>
@@ -337,7 +341,7 @@ export const weightLossPrograms: WeightLossProgram[] = [
   <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 1rem;">
     <thead>
       <tr style="background-color: #0e7490; color: white;">
-        <th style="padding: 12px; border: 1px solid #cbd5e1; text-align: center;">週纖達 (Ozempic) 劑量</th>
+        <th style="padding: 12px; border: 1px solid #cbd5e1; text-align: center;">週纖達 (Wegovy) 劑量</th>
         <th style="padding: 12px; border: 1px solid #cbd5e1; text-align: center;">約等於</th>
         <th style="padding: 12px; border: 1px solid #cbd5e1; text-align: center;">猛健樂 (Mounjaro) 劑量</th>
         <th style="padding: 12px; border: 1px solid #cbd5e1; text-align: left;">備註說明</th>
@@ -428,6 +432,10 @@ export const weightLossPrograms: WeightLossProgram[] = [
       {
         question: '我有糖尿病可以使用嗎？',
         answer: '可以的。週纖達本身即為治療第二型糖尿病的藥物，能有效穩定血糖。但若您已在使用其他降血糖藥物，請務必告知醫師，以免發生低血糖風險。'
+      },
+      {
+        question: '一支週纖達注射筆可以打幾次？可以使用多久？',
+        answer: '台灣目前的週纖達筆針設計為一支筆含有 4 次（4 週）的劑量。您只需要每週固定同一天施打一次，一支筆剛好可以完成一個月的療程。這種設計不僅攜帶方便，也能大幅減少醫療廢棄物。'
       },
       {
         question: '需要每天打針嗎？',
