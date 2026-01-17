@@ -2362,8 +2362,162 @@ export const diseaseCategories: DiseaseCategory[] = [
           { src: '/images/diseases/knee/jump/a.jpg', alt: '跳躍膝（髕骨肌腱炎）' 
           }
         ]
-      }
+      },
+{
+        id: 'iliotibial-band-syndrome',
+        slug: 'iliotibial-band-syndrome',
+        title: '髂脛束症候群 (跑者膝)',
+        description: '跑步膝蓋外側刺痛？下坡時痛感加劇？這就是典型的跑者膝！深入解析臀中肌無力與 ITBS 的關聯，以及震波治療與正確滾筒放鬆的全攻略。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：跑步跑到大約 3-5 公里時，<strong>膝蓋外側</strong>開始出現隱隱作痛，如果繼續跑下去，那種刺痛感會越來越強烈，甚至痛到無法彎曲膝蓋？休息幾天好像好了，但下次一跑，同樣的里程數又開始痛？</p>
+                <br>
+          <p style="color: #e2e8f0 !important;">這就是俗稱的<strong>「跑者膝」</strong>，醫學正式名稱為<strong>髂脛束症候群 (ITBS)</strong>。它是長跑者與自行車騎士最常見的夢魘。宸新復健科透過動態步態分析與高解析超音波，配合徒手運動治療評估、協助您找出是因為「臀肌失能」還是「足部過度旋前」導致的生物力學異常，並提供精準的修復方案。</p>
+      
+      
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 什麼是髂脛束？為什麼膝蓋外側會痛？
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">髂脛束 (Iliotibial Band) 是一條從臀部外側一路延伸到膝蓋外側下方的厚實筋膜，像一條強韌的鋼纜，負責穩定膝蓋與髖關節。</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">觀念更新：不是摩擦，是「壓迫」！</strong> 
+                          過去認為 ITBS 是筋膜在骨頭上前後「摩擦」起水泡。但最新醫學研究發現，髂脛束其實是被緊緊固定在骨頭上的，根本動不了。真正的痛源是髂脛束下方的<strong>「高敏感脂肪墊 (Fat Pad)」</strong>。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">30度夾角魔咒：</strong> 
+                          當膝蓋彎曲約 <strong>30度</strong> 時（正好是跑步著地的角度），緊繃的髂脛束會對下方的脂肪墊產生最大的<strong>「壓迫力」</strong>。反覆的壓迫導致脂肪墊充血、水腫、神經發炎，這就是為什麼下坡跑（膝蓋微彎受力大）會特別痛的原因。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">臀中肌失能 (The Root Cause)：</strong> 
+                          這才是真正的兇手！當負責穩定骨盆的臀中肌無力時，另一條肌肉（闊筋膜張肌）就必須過度用力來幫忙，闊筋膜張肌連接著髂脛束，導致整條髂脛束緊繃縮短，進而壓迫膝蓋外側。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+        <p><img src="/images/diseases/knee/itb/b.jpg" alt="髂脛束構造"></p>
 
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：跟其他膝蓋痛有何不同？</h3>
+          <p style="color: #e2e8f0 !important;">膝蓋痛分很多種，ITBS 的特徵非常明確：</p>
+          <ul style="color: #e2e8f0 !important;">
+              <li><strong>痛點明確：</strong> 痛在膝蓋<strong>外側骨突處</strong>（股骨外髁），按壓會有尖銳刺痛。</li>
+              <li><strong>下坡惡夢：</strong> 跑下坡或下樓梯時，疼痛感會加倍。</li>
+              <li><strong>里程數魔咒：</strong> 剛開始跑不痛，直到固定里程（例如 3km）後開始痛，停下來走就不痛。</li>
+              <li><strong>膝蓋伸直不痛：</strong> 膝蓋完全伸直或彎曲到底時通常不痛，痛都在彎曲 30 度左右的區間。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 診斷方式：超音波與壓力測試</h3>
+          <p style="color: #e2e8f0 !important;">診斷 ITBS 不需要照 X 光（骨頭通常沒事），靠的是理學檢查與超音波：</p>
+          
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 諾伯氏壓力測試 (Noble Compression Test)</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  醫師會用拇指按壓患者膝蓋外側的痛點，同時將膝蓋反覆伸直彎曲。若在彎曲 30 度時重現劇痛，即為陽性。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 高解析超音波檢查</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  可以直接看到髂脛束是否增厚、腫脹，以及下方的滑囊或脂肪墊是否有積水發炎。這能排除半月板損傷或外側韌帶受傷的可能性。
+              </p>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 治療策略：放鬆緊繃，強化弱點</h3>
+          <p style="color: #e2e8f0 !important;">ITBS 的治療不僅是止痛，重點在於「解決肌肉張力失衡」。</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 立即止痛：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療(ESWT)</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  由於髂脛束是一條血液循環很差的筋膜，吃藥效果有限。震波治療利用高能量聲波，直接打在緊繃的髂脛束與大腿外側肌肉上，能<strong>軟化沾黏的筋膜</strong>，促進微循環，並快速阻斷神經痛覺。通常 3-5 次療程後，跑步時的刺痛感會大幅下降。
+              </p>
+          </div>
+      
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 急性消腫：超音波導引注射</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  如果脂肪墊發炎腫脹太嚴重，導致走路一跛一跛，醫師會在超音波導引下，將微量類固醇或葡萄糖水準確注入滑囊內（神經解套），快速消除腫脹壓力。
+                  <br><span style="font-size: 0.9rem; color: #78350f;">*PRP 增生療法則適用於髂脛束本身有撕裂傷的個案。</span>
+              </p>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：別再亂滾滾筒！</h3>
+          <p style="color: #e2e8f0 !important;">很多跑者會直接拿滾筒去滾膝蓋外側最痛的地方，<strong>這是錯的！</strong> 那樣只會讓發炎的脂肪墊被壓得更扁、更痛。正確的方法是：</p>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">1. 滾筒放鬆：針對闊筋膜張肌</h4>
+              <p style="color: #e2e8f0 !important;">不要滾膝蓋外側，要滾<strong>「髖部外側（褲子口袋處）」</strong>。這裡才是拉緊整條髂脛束的源頭。側躺在滾筒上，在髖骨下方來回滾動，放鬆緊繃的肌肉腹。</p>
+          </div>
+        
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 蚌殼式或橋式運動 - 喚醒臀肌</h4>
+              
+            <p style="color: #e2e8f0 !important;">這是治療 ITBS 的黃金動作。側躺，雙膝彎曲，雙腳併攏。像蚌殼一樣將上面的膝蓋打開、合起來。重點是用<strong>臀部側邊</strong>的力量，身體不要跟著轉。每天 3 組，每組 15 下。</p>
+          <p style="color: #e2e8f0 !important;"><strong>橋式</strong>:平躺瑜珈墊，雙手放身體兩側，膝蓋彎曲，雙腳與肩同寬，由臀部發力將骨盆和軀幹向上抬起，直到肩膀、臀部、膝蓋呈一直線，停留3秒，緩緩放下臀部，每組10-20下，做3組。</p>
+            </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">3. 螃蟹走路 (Monster Walk)</h4>
+              <p style="color: #e2e8f0 !important;">在膝蓋上方套上彈力圈，採取半蹲姿勢，向側面橫向移動。這能強效訓練臀中肌，穩定骨盆，減少髂脛束的負擔。</p>
+          </div>
+              <p><img src="/images/diseases/knee/itb/c.jpg" alt="髂脛束伸展"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 練好臀部，膝蓋不痛！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">髂脛束症候群其實是身體在抗議「臀部偷懶」。只要透過震波緩解急性疼痛，並認真鍛鍊臀中肌，您就能擺脫側邊膝蓋痛的魔咒。宸新復健科，從力學根源幫您找回奔跑的樂趣！</p>
+              <p style="font-weight: bold; color: #059669 !important;">跑步膝蓋外側痛？立即預約步態評估！</p>
+          </div>
+        `,
+        symptoms: [
+          '膝蓋外側骨突處（股骨外髁）刺痛',
+          '跑步下坡或慢跑時疼痛加劇',
+          '膝蓋彎曲 30 度時最痛',
+          '臀部外側或大腿外側緊繃',
+          '休息時不痛，跑固定里程後開始痛'
+        ],
+        treatments: [
+          '體外震波治療 (ESWT)',
+          '超音波導引滑囊注射',
+          '滾筒肌筋膜放鬆 (TFL)',
+          '臀中肌肌力訓練 (蚌殼式)',
+          '步態與跑姿調整'
+        ],
+        seoKeywords: [
+          '髂脛束症候群',
+          'ITBS',
+          '跑者膝',
+          '膝蓋外側痛',
+          '震波治療',
+          '臀中肌訓練',
+          '滾筒放鬆'
+        ],
+        seoDescription: '髂脛束症候群（跑者膝）造成膝蓋外側劇痛。宸新復健科提供震波治療、超音波導引注射與臀中肌訓練教學，有效解決跑步膝蓋痛。',
+        images: [
+          { 
+            src: '/images/diseases/knee/itb/a.jpg', alt: '髂脛束症候群疼痛示意圖' 
+          }
+        ]
+      }
 
     ]
   },

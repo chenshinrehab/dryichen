@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { getWeightLossProgramBySlug, getAllWeightLossProgramSlugs } from '@/data/weightLoss'
+import ShareButtons from '@/components/ShareButtons'
 
 // 定義常數
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
@@ -180,13 +181,13 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
 
               {/* 返回按鈕 */}
               <Link href="/weight-bone" className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group">
-                 <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 
-                 返回列表
+                  <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 
+                  返回列表
               </Link>
               
               <div className="bg-slate-800/80 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden shadow-2xl">
-                 
-                 <div className="p-4 md:p-10">
+                  
+                  <div className="p-4 md:p-10">
 
                     {/* Header: 標題與 QR Code */}
                     <div className="mb-10 border-l-4 border-cyan-500 pl-4 bg-gradient-to-r from-slate-900/80 to-transparent py-6 rounded-r-xl flex flex-col md:flex-row md:items-center gap-6">
@@ -300,7 +301,30 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                       </div>
                     )}
                     
-                 </div> {/* End padding */}
+                  </div> {/* End padding */}
+
+                  {/* 底部分享區塊 */}
+                  <div className="bg-slate-900/80 p-8 md:p-12 border-t border-slate-700 text-center relative overflow-hidden">
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent blur-sm"></div>
+                    
+                    <h3 className="text-white font-bold text-2xl mb-3 relative z-10">覺得這篇文章有幫助嗎？</h3>
+                    <p className="text-slate-400 mb-8 text-lg relative z-10">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
+
+                    <div className="relative z-10">
+                        {/* 修正：使用 program.title */}
+                        <ShareButtons url={currentPageUrl} title={program.title} />
+                    </div>
+
+                    <div className="mt-12 pt-8 border-t border-slate-700/50 relative z-10">
+                      <Link
+                        href="/weight-bone"
+                        className="inline-flex items-center justify-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 group"
+                      >
+                        看更多相關資訊
+                        <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+                      </Link>
+                    </div>
+                  </div>
 
               </div>
            </div>

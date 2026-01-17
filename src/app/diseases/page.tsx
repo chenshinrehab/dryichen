@@ -213,9 +213,9 @@ export default function DiseasesPage() {
                                 這裡直接使用 img 標籤並移除事件處理器以通過編譯。
                              */}
                              <img 
-                                src="/images/doctor-avatar-small.jpg" 
+                                src="/images/doctor/b.jpg" 
                                 alt="林羿辰醫師" 
-                                className="w-8 h-8 rounded-full border border-slate-600" 
+                                className="w-12 h-12 rounded-full border border-slate-600" 
                              />
                              <span className="text-slate-400 text-sm">本文由 林羿辰 醫師 審閱</span>
                           </div>

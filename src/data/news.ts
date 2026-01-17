@@ -16,11 +16,13 @@ export interface NewsPost {
 }
 
 export const newsData: NewsPost[] = [
+ 
+ 
   {
     id: 'clinic-schedule',
     title: '宸新復健科門診公告',
     category: '門診公告',
-    date: '2026-01-15',
+    date: '置頂貼文 2026-01-15',
     summary: '宸新復健科2026年門診時間公告',
     coverImage: '/images/about/c.jpg',
     contentHtml: `
@@ -61,13 +63,56 @@ export const newsData: NewsPost[] = [
     seoTitle: '2026門診公告 - 新竹宸新復健科',
     keywords: ['門診公告', '林羿辰醫師', '新竹宸新復健科']
   },
+
+  {
+    id: 'hyaluronic-diff',
+    title: '打膝蓋剩下的玻尿酸，可以順便補臉嗎？',
+    category: '衛教文章',
+    date: '2026-01-17',
+    summary: '門診一位大姊突發奇想：「醫美打臉好貴，膝蓋打剩的玻尿酸可以補法令紋嗎？」修但幾勒！雖然都叫玻尿酸，但機油跟水泥可是不能混用的喔！',
+    coverImage: '/images/news/article/ha.jpg',
+    contentHtml: `
+  <p>門診一位可愛的大姊突發奇想問我：「醫美打臉好貴喔，阿打膝蓋的玻尿酸，剩一點幫我補一下法令紋？」</p>
+  <p><strong>😂 修但幾勒！當然不行！</strong></p>
+  <p>雖然都叫「玻尿酸」，但不會拿機油去補牆壁一樣啊！這兩者的濃度、分子大小與交聯程度完全不同。</p>
+  
+  <h3>1. 🚗 膝蓋退化用的：關節的「機油」</h3>
+  <p>膝蓋退化就像引擎機油乾掉，骨頭磨骨頭當然痛！這類玻尿酸主要功能是<strong>「潤滑」</strong>。</p>
+  <ul>
+    <li><strong>短效型（傳統機油）：</strong> 像水一樣稀，要每週打，比較便宜。</li>
+    <li><strong>長效型（合成機油）：</strong> 比較濃稠，半年到一年打一次就好，省時但較貴。</li>
+  </ul>
+  <p><strong>❌ 為什麼不能打臉？</strong><br>因為它太稀了！打進臉部無法支撐，幾天就被流失代謝掉了。</p>
+  
+  <h3>2. 🧱 醫美用的：臉部的「水泥/填充材」</h3>
+  <p>醫美的玻尿酸經過特殊處理（交聯），質地像果凍甚至黏土一樣硬挺。它的功能是<strong>「填充與塑形」</strong>，這樣才能撐起臉型、填補皺紋。</p>
+  <p><strong>❌ 為什麼不能打膝蓋？</strong><br>就像把乾掉硬硬的水泥灌進引擎，無法達到潤滑效果，反而會讓膝蓋卡住、更加疼痛！</p>
+  
+  <h3>3. 🏗️ 韌帶修補用的：組織的「鷹架」</h3>
+  <p>這是新研發的玻尿酸應用。它的目的是像<strong>「鷹架」</strong>一樣，讓修復細胞可以爬上鷹架去修補破洞，幫助受傷的組織長回來。</p>
+  
+  <h3>👨‍⚕️ 醫師小總結</h3>
+  <p>雖然名稱一樣，但用途大不同，請記住這三個概念：</p>
+  <ul>
+    <li>想<strong>潤滑關節</strong> 👉 用<strong>機油</strong>（關節玻尿酸）</li>
+    <li>想<strong>變美填補</strong> 👉 用<strong>水泥</strong>（醫美玻尿酸）</li>
+    <li>想<strong>修復韌帶</strong> 👉 用<strong>鷹架</strong>（軟組織玻尿酸）</li>
+  </ul>
+  <img src="/images/news/article/ha.jpg" alt="玻尿酸種類差異" />
+    `,
+    seoTitle: '打膝蓋剩下的玻尿酸，可以順便補臉嗎？醫美與關節玻尿酸差異',
+    seoDescription: '門診常被問：打膝蓋剩下的玻尿酸，可以順便補臉嗎？醫師解釋：雖然都叫玻尿酸，但關節用的像機油，醫美用的像水泥，用途大不同！醫師詳解三種玻尿酸差異。',
+    keywords: ['玻尿酸', '膝蓋退化', '醫美', '增生療法', '韌帶修復', '醫學知識']
+  },
+
+
   {
     id: 'kneeclick',
     title: '膝蓋為何會喀喀響，是膝蓋退化了嗎?',
     category: '衛教文章',
     date: '2026-01-14',
     summary: '門診很常碰到病患來看診，詢問膝蓋為何會喀喀響，擔心膝蓋是不是退化了!',
-    coverImage: '/images/about/d.jpg',
+    coverImage: '/images/news/article/knee.jpg',
     contentHtml: `
 <p>門診很常碰到病患來看診，詢問膝蓋為何會喀喀響，擔心膝蓋是不是退化了！</p>
 

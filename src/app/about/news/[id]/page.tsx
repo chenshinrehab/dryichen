@@ -19,7 +19,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const post = getNewsById(params.id)
   if (!post) return { title: '文章不存在' }
-  
+   
   return {
     title: post.seoTitle || `${post.title} - 宸新復健科`,
     description: post.seoDescription || post.summary,
@@ -184,7 +184,7 @@ export default function NewsDetailPage({ params }: PageProps) {
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         <main className="flex-grow pt-4 pb-12 md:py-12 fade-in relative z-10">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            
+             
             {/* 麵包屑/返回按鈕 */}
             <Link href="/about/news" className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group">
                 <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回列表
@@ -192,7 +192,7 @@ export default function NewsDetailPage({ params }: PageProps) {
 
             {/* 文章主體卡片 */}
             <div className="bg-slate-800/80 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden shadow-2xl">
-              
+               
               <div className="p-4 md:p-10">
 
                   {/* Header 區塊：仿照疾病頁面樣式 */}
@@ -211,7 +211,7 @@ export default function NewsDetailPage({ params }: PageProps) {
                           <h1 className="text-3xl md:text-5xl font-bold font-sans text-white mb-4 tracking-wide leading-tight">
                               {post.title}
                           </h1>
-                          
+                           
                           <div className="flex flex-wrap items-center gap-3">
                               {/* 分類標籤 */}
                               <span className={`px-3 py-1 rounded-full text-sm font-bold border ${
@@ -230,21 +230,11 @@ export default function NewsDetailPage({ params }: PageProps) {
                       </div>
                   </div>
 
-                  {/* 封面圖：保留封面圖，但樣式調整為與 article-content 內的圖片一致 */}
-                  {post.coverImage && (
-                    <div className="w-full mb-10">
-                        <img 
-                          src={post.coverImage} 
-                          alt={post.title} 
-                          className="w-full h-auto md:max-w-[85%] mx-auto rounded-xl shadow-xl border border-slate-600 object-cover" 
-                        />
-                         <div className="md:max-w-[85%] mx-auto mt-4 p-4 bg-slate-900/40 rounded-lg border-l-4 border-cyan-500">
-                             <p className="text-lg text-slate-300 italic">
-                                 {post.summary}
-                             </p>
-                         </div>
-                    </div>
-                  )}
+                  {/* 已移除：原本此處有 {post.coverImage && (...)} 的區塊 
+                     包含：
+                     1. 封面圖 (img)
+                     2. 摘要說明 (post.summary)
+                  */}
 
                   {/* 文章內容：使用 article-content 類別 */}
                   <div className="article-content text-slate-300 leading-relaxed text-lg pb-6">
@@ -256,10 +246,10 @@ export default function NewsDetailPage({ params }: PageProps) {
               {/* 底部分享區塊：仿照疾病頁面樣式 (含上方光暈) */}
               <div className="bg-slate-900/80 p-8 md:p-12 border-t border-slate-700 text-center relative overflow-hidden">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent blur-sm"></div>
-                
+                 
                 <h3 className="text-white font-bold text-2xl mb-3 relative z-10">覺得這篇文章有幫助嗎？</h3>
                 <p className="text-slate-400 mb-8 text-lg relative z-10">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
-                
+                 
                 <div className="relative z-10">
                     <ShareButtons url={currentUrl} title={post.title} />
                 </div>

@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { getTreatmentBySlug, getAllTreatmentSlugs } from '@/data/treatments'
+import ShareButtons from '@/components/ShareButtons'
 
 // 定義常數
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
@@ -331,6 +332,29 @@ export default function TreatmentDetailPage({ params }: PageProps) {
                     )}
                     
                  </div> {/* End padding */}
+              {/* 底部分享區塊 */}
+              <div className="bg-slate-900/80 p-8 md:p-12 border-t border-slate-700 text-center relative overflow-hidden">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent blur-sm"></div>
+                
+                <h3 className="text-white font-bold text-2xl mb-3 relative z-10">覺得這篇文章有幫助嗎？</h3>
+                <p className="text-slate-400 mb-8 text-lg relative z-10">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
+
+                <div className="relative z-10">
+                   <ShareButtons url={currentPageUrl} title={treatment.title} />
+                </div>
+
+                <div className="mt-12 pt-8 border-t border-slate-700/50 relative z-10">
+                  <Link
+                    href="/treatments"
+                    className="inline-flex items-center justify-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 group"
+                  >
+                    看更多治療項目
+                    <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+                  </Link>
+                </div>
+              </div>
+
+
 
               </div>
            </div>
