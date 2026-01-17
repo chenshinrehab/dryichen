@@ -2172,7 +2172,198 @@ export const diseaseCategories: DiseaseCategory[] = [
             }
           ]
 
+      },
+
+{
+        id: 'jumpers-knee',
+        slug: 'jumpers-knee',
+        title: '跳躍膝 (髕骨肌腱炎)',
+        description: '膝蓋下方痛到無法跳躍？下樓梯膝蓋軟腳？這不只是籃球員的專利！深入解析跳躍膝分級、超音波下的新生血管，以及震波治療與離心深蹲的修復全攻略。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：打完籃球或排球後，<strong>膝蓋骨正下方</strong>摸起來非常痛？或是長時間久坐看電影，站起來的那一瞬間膝蓋下方感到痠軟無力？</p>
+                <br>
+          <p style="color: #e2e8f0 !important;">這就是俗稱的<strong>「跳躍膝」</strong>，醫學正式名稱為<strong>髕骨肌腱炎 (Patellar Tendinitis)</strong>，或更精確地稱為<strong>髕骨肌腱病變</strong>。  </p>                
+              <br><p style="color: #e2e8f0 !important;">它是所有跑跳運動員的夢魘(如籃球、羽球跟排球)，但其實經常爬山、深蹲姿勢錯誤的健身族群也常中招。宸新復健科透過高解析超音波偵測「新生血管」，搭配震波與 PRP 再生療法，協助您修復這條負責「起飛」的關鍵肌腱。</p>
+
+
+      
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 什麼是跳躍膝？肌腱的「過勞死」
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">髕骨肌腱連接髕骨（膝蓋骨）下緣與脛骨（小腿骨），是大腿股四頭肌力量傳導的最終路徑。當我們跳躍、落地或深蹲時，這條肌腱要承受體重 <strong>7-10 倍</strong>的拉力。</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">微小撕裂 (Micro-tears)：</strong> 
+                          當運動強度超過肌腱負荷，肌腱纖維會產生微小撕裂。年輕時睡一覺就好，但若修復速度趕不上破壞速度，累積的傷害就會爆發。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">不是發炎，是「退化」：</strong> 
+                          這是最重要的觀念！慢性的跳躍膝，顯微鏡下看到的不是發炎細胞，而是<strong>膠原蛋白排列混亂、黏液樣變性</strong>。所以單純吃消炎藥（NSAIDs）往往無效，因為它不是發炎，而是結構壞掉了。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">新生血管 (Neovascularization)：</strong> 
+                          為了修復受傷組織，身體會長出不正常的微血管與神經。這些神經非常敏感，就是導致您覺得「刺痛」的元兇。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+                       <p><img src="/images/diseases/knee/jump/b.jpg" alt="髕骨肌腱結構"></p>
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">⚠️ 分級制度：Blazina Classification</h3>
+          <p style="color: #e2e8f0 !important;">您的膝蓋處於哪個階段？這決定了您是否需要停練：</p>
+          <ul style="color: #e2e8f0 !important;">
+              <li><strong>第一期：</strong> 運動中不痛，<strong>運動完才開始痛</strong>。不影響運動表現。（可繼續運動，但需冰敷與伸展）</li>
+              <li><strong>第二期：</strong> 運動中會痛，熱身後減輕，運動後又變痛。表現稍微受影響。</li>
+              <li><strong>第三期：</strong> <strong>運動中持續疼痛</strong>，無法發揮實力，甚至日常上下樓梯都會痛。（必須休息與治療）</li>
+              <li><strong>第四期：</strong> 肌腱完全斷裂（需手術）。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 超音波下的真相：尋找「新生血管」</h3>
+          <p style="color: #e2e8f0 !important;">在宸新復健科，我們不只聽您說痛，我們用看的！透過高解析超音波，我們可以觀察到：</p>
+          
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 肌腱腫脹增厚</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  正常的肌腱像一條緊實的白色緞帶。受傷的肌腱會變厚、變腫，看起來灰灰暗暗的（低回音）。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 能量都卜勒 (Power Doppler)</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  這也是我們判斷嚴重程度的關鍵。如果開啟血流偵測模式，在肌腱內部看到<strong>像火苗一樣的紅藍色訊號</strong>，代表有很多不正常的「新生血管」長進去。這些血管伴隨著神經，是疼痛的主要來源，也是 PRP 或震波治療的主要目標。
+              </p>
+          </div>
+                     <p><img src="/images/diseases/knee/jump/c.jpg" alt="髕骨肌超音波影像"></p>
+       
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 治療策略：破壞重建，再生修復</h3>
+          <p style="color: #e2e8f0 !important;">既然跳躍膝是「結構退化」，治療重點就不在消炎，而在於<strong>「刺激再生」</strong>：</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 急性期：髕骨加壓帶 (Patellar Strap)</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  綁在膝蓋骨正下方的一條帶子。它的原理是改變肌腱的受力支點，分散拉力，能立即減輕疼痛，讓您能維持輕度活動。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 黃金標準：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療(ESWT)</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  對於慢性的肌腱病變，震波是目前公認最有效的物理治療。利用高能量聲波<strong>破壞新生血管</strong>與神經，阻斷痛覺，並造成微小創傷以啟動身體的修復機制，促進膠原蛋白重新排列。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 頑固型剋星：<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  若超音波顯示肌腱內部有<strong>撕裂傷 (Cleft)</strong> 或震波效果不彰，建議使用 <strong style="color: #0891b2 !important;">PRP (高濃度血小板)</strong>。醫師在超音波導引下，將生長因子精準注入肌腱受損處，像「灌漿」一樣填補撕裂，是目前職業運動員的首選療法。
+              </p>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+          <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：復健運動兩大王牌—伸展與肌力強化</h3>
+          <p style="color: #e2e8f0 !important;">復健不是只有休息，<strong>「正確的負重」</strong>才能讓肌腱長好。請依序進行：</p>
+      
+          <div style="margin-bottom: 2rem;">
+
+
+    <div style="margin-bottom: 2rem;">
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important; margin-bottom: 0.5rem;">1. 滾筒放鬆股四頭肌 (Foam Rolling)</h4>
+        <p style="color: #e2e8f0 !important; margin: 0;">
+            <strong>動作：</strong> 採趴姿，將滾筒置於大腿前側下方。利用手肘支撐地面，身體前後緩慢滾動，尋找特別痠痛的點（激痛點）並停留 30 秒。<br>
+            <strong>重點：</strong> 改善筋膜沾黏，恢復肌肉彈性，減少對膝蓋肌腱的牽引張力。
+        </p>
+    </div>
+
+        <h4 style="color: #22d3ee !important; margin-bottom: 0.5rem;">2. 股四頭肌伸展 (Quadriceps Stretch)</h4>
+        <p style="color: #e2e8f0 !important; margin: 0;">
+            <strong>動作：</strong> 站立姿勢，一手扶牆保持平衡，另一手抓住同側腳踝往後拉，讓腳跟碰到屁股。需感覺大腿前側有明顯緊繃感。<br>
+            <strong>原理：</strong> 太緊的股四頭肌會不斷拉扯髕骨肌腱，導致發炎處反覆受傷，因此「放鬆肌肉」至關重要。
+        </p>
+    </div>
+
+
+    <div style="background-color: rgba(34, 211, 238, 0.1); border-left: 4px solid #22d3ee; padding: 1rem; margin: 2rem 0; border-radius: 4px;">
+        <p style="color: #e2e8f0 !important; margin: 0;">
+            ⚠️ <strong>觀念導正：</strong>復健不是只有休息，<strong>「正確的負重」</strong>才能讓肌腱長好。完成上述放鬆後，請依序進行以下訓練：
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important; margin-bottom: 0.5rem;">3. 西班牙深蹲 (Spanish Squat) - 止痛神器</h4>
+        <p style="color: #e2e8f0 !important; margin: 0;">
+            <strong>適用時機：</strong> 疼痛明顯時，作為「等長收縮」訓練。<br>
+            <strong>動作：</strong> 找一條粗的彈力帶綁在柱子上，將雙腳套入彈力帶放在膝蓋後窩。身體向後坐，利用彈力帶支撐，維持小腿垂直地面，大腿用力撐住 30-45 秒，做 5 組。<br>
+            <strong>原理：</strong> 這能有效減輕疼痛（利用皮質脊髓抑制作用），讓大腿肌肉在低疼痛的狀態下被喚醒。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important; margin-bottom: 0.5rem;">4. 斜板深蹲 (Decline Squat) - 修復關鍵</h4>
+        <p style="color: #e2e8f0 !important; margin: 0;">
+            <strong>適用時機：</strong> 疼痛緩解後，開始進行「離心訓練」。<br>
+            <strong>動作：</strong> 站在斜板（或是腳跟墊高）上單腳站立。<strong>慢慢地（數 5 秒）</strong>往下蹲，直到膝蓋彎曲約 60-90 度，然後用好腳幫忙站起來。<br>
+            <strong>重點：</strong> 重點在於「下蹲」的過程要慢。這能梳理肌腱纖維，引導新生組織排列整齊，增加肌腱強度。
+        </p>
+    </div>
+     <p><img src="/images/diseases/knee/jump/d.jpg" alt="髕骨肌腱炎(跳躍膝)居家運動強化"></p>
+</div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 找回起飛的力量！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">跳躍膝雖然難纏，但只要有耐心，透過超音波精準定位，搭配震波或 PRP 治療，並落實西班牙深蹲等肌力訓練，絕對能根治。宸新復健科，助您重返球場，再創佳績！</p>
+              <p style="font-weight: bold; color: #059669 !important;">膝蓋下方痛到無法蹲？立即預約超音波檢查！</p>
+          </div>
+        `,
+        symptoms: [
+          '膝蓋骨正下方（肌腱處）按壓劇痛',
+          '跳躍、落地、深蹲或久坐時疼痛加劇',
+          '下坡下樓梯時膝蓋下方痠軟',
+          '運動初期疼痛，熱身後緩解（早期症狀）'
+        ],
+        treatments: [
+          '止痛藥物及復健',
+          '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療(ESWT)</a>🔍️',
+          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>🔍️'
+        ],
+        seoKeywords: [
+          '跳躍膝',
+          '髕骨肌腱炎',
+          '膝蓋下方痛',
+          '震波治療',
+          'PRP注射',
+          '籃球膝',
+          '深蹲膝蓋痛'
+        ],
+        seoDescription: '跳躍膝（髕骨肌腱炎）造成膝蓋下方劇痛，影響跳躍能力。宸新復健科提供震波治療、PRP注射與西班牙深蹲教學，有效修復肌腱退化。',
+        images: [
+          { src: '/images/diseases/knee/jump/a.jpg', alt: '跳躍膝（髕骨肌腱炎）' 
+          }
+        ]
       }
+
 
     ]
   },
@@ -2243,6 +2434,30 @@ export const diseaseCategories: DiseaseCategory[] = [
         
             <p><img src="/images/diseases/ankle/sprain/b.jpg" alt="腳踝外側韌帶(前距腓韌帶)撕裂傷示意圖"></p>
         
+
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3 style="color: #f8fafc !important;">🔍 超音波檢查：透視腳踝內部的「鷹眼」</h3>
+    <p style="color: #e2e8f0 !important;">許多患者會問：「醫師，我 X 光照出來骨頭沒斷，為什麼還是這麼痛、這麼腫？」其實，X 光只能看大塊骨頭，<strong>韌帶、肌腱與細微裂痕必須靠高解析超音波才看得到</strong>。在宸新復健科，我們透過超音波能清楚看到以下關鍵問題：</p>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">1. 關節積水與血腫 (Joint Effusion)</h4>
+        <p style="color: #e2e8f0 !important;">扭傷當下微血管破裂，血液會瞬間灌入關節腔。超音波下可以看到關節囊被<strong>黑色的液體（血水）</strong>撐開。如果不將這些積血抽出，積血會釋放發炎物質侵蝕軟骨，造成長期腫脹與沾黏。</p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">2. 韌帶撕裂傷 (Ligament Tear)</h4>
+        <p style="color: #e2e8f0 !important;">正常的韌帶像是緊緻的白色纜繩。受傷時，超音波會顯示韌帶<strong>腫脹變粗、顏色變黑</strong>（水腫）。若是「完全斷裂」，則會看到韌帶連續性中斷，斷端像像橡皮筋一樣回縮，這代表關節已經失去穩定度。</p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">3. 撕裂性骨折與碎骨 (Avulsion Fracture)</h4>
+        <p style="color: #e2e8f0 !important;">有時候韌帶太強韌，扭傷瞬間沒有斷，反而把黏著的骨頭表面<strong>「撕」下一塊碎骨</strong>。這些細微的游離碎骨片（Loose body）在 X 光下容易被重疊忽略，但在超音波下會像「鑽石」一樣閃閃發亮，無所遁形。若不處理，這些碎骨會在關節內磨損軟骨。</p>
+    </div>
+
+            <p><img src="/images/diseases/ankle/sprain/e.jpg" alt="腳踝扭傷超音波影像"></p>
+
         
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
