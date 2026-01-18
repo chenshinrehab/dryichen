@@ -1,4 +1,3 @@
-// src/components/ClinicHoursModal.tsx
 'use client'
 
 import { useState } from 'react'
@@ -19,26 +18,31 @@ export default function ClinicHoursModal() {
       {/* 2. 彈出視窗 (Modal) */}
       {isOpen && (
         <div 
-          className="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-sm overflow-y-auto fade-in" // 修改1: 改為 overflow-y-auto 允許捲動
+          className="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-sm overflow-y-auto fade-in"
           onClick={() => setIsOpen(false)}
         >
-          {/* 修改2: 新增一個 min-h-full 的容器來負責置中與排列，確保長圖不會被切到 */}
-          <div className="flex min-h-full items-center justify-center p-4 py-12"> 
+          {/* 修改 1: 
+            - 移除 `items-start` 和 `md:items-center`。
+            - 改用預設的 Flex 行為 (stretch) 搭配子層的 margin 來控制。
+            - 保留 py-12 確保上下有留白。
+          */}
+          <div className="flex min-h-full justify-center p-4 py-12 text-center"> 
             
             <div 
-              className="relative max-w-4xl w-full flex justify-center"
+              // 修改 2: 新增 `my-auto`
+              //這會讓它在空間足夠時「垂直置中」，空間不夠時「靠上對齊」且不切頭。
+              className="relative max-w-4xl w-full flex justify-center my-auto"
               onClick={(e) => e.stopPropagation()} 
             >
-              {/* 右上角關閉按鈕 (X) - 調整位置，確保不會跑出畫面外 */}
+              {/* 右上角關閉按鈕 (X) */}
               <button 
                 onClick={() => setIsOpen(false)}
-                className="absolute -top-10 right-0 md:-right-8 text-white hover:text-cyan-400 transition-colors z-10"
+                className="absolute -top-10 right-0 md:-right-8 text-white hover:text-cyan-400 transition-colors z-10 p-2"
               >
                 <i className="fa-solid fa-xmark text-4xl"></i>
               </button>
 
               {/* 門診表圖片 */}
-              {/* 修改3: 移除 max-h 的嚴格限制，讓圖片可以依比例呈現，並保留 rounded 與 shadow */}
               <img 
                 src="/images/doctor/a.jpg" 
                 alt="宸新復健科門診時間表" 

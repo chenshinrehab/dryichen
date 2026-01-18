@@ -87,11 +87,10 @@ export default function DoctorsPage() {
                    
                    <div className="flex flex-col lg:flex-row items-center">
                       
-                      {/* 修改重點：
-                          1. aspect-[9/16]：設定為 9:16 的直式比例。
-                          2. lg:w-[55%]：維持您要求的寬度比例，這會讓圖片在電腦版非常大且長。
+                      {/* 調整 1: 照片寬度調整
+                          lg:w-[55%] -> lg:w-[40%] (縮小照片寬度)
                       */}
-                      <div className="w-full lg:w-[55%] relative aspect-[9/16] shrink-0 bg-slate-800 self-start">
+                      <div className="w-full lg:w-[40%] relative aspect-[9/16] shrink-0 bg-slate-800 self-start">
                          <img 
                            src="/images/doctor/c.jpg"
                            alt="新竹復健科推薦-林羿辰醫師-台大雙專科" 
@@ -100,8 +99,10 @@ export default function DoctorsPage() {
                          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-slate-900/30"></div>
                       </div>
 
-                      {/* 文字區塊：維持 45% 寬度與較大的字體設定 */}
-                      <div className="w-full lg:w-[45%] p-8 flex flex-col justify-center relative z-10">
+                      {/* 調整 2: 文字區塊寬度調整
+                          lg:w-[45%] -> lg:w-[60%] (增加文字區塊寬度以填滿剩餘空間)
+                      */}
+                      <div className="w-full lg:w-[60%] p-8 flex flex-col justify-center relative z-10">
                           
                           <div className="mb-6">
                              <h1 className="text-4xl md:text-5xl font-bold font-sans text-white mb-3 tracking-wide leading-tight">
@@ -146,10 +147,12 @@ export default function DoctorsPage() {
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
-                                    <h3 className="text-sm font-bold text-cyan-400 uppercase tracking-wider mb-3 border-b border-slate-700 pb-2 flex items-center">
+                                    {/* 調整 3: 標題字體加大 text-sm -> text-lg */}
+                                    <h3 className="text-lg font-bold text-cyan-400 uppercase tracking-wider mb-3 border-b border-slate-700 pb-2 flex items-center">
                                         <i className="fa-solid fa-graduation-cap mr-2"></i> 學歷與資格
                                     </h3>
-                                    <ul className="space-y-2 text-slate-300 text-sm">
+                                    {/* 調整 4: 列表字體加大 text-sm -> text-base */}
+                                    <ul className="space-y-2 text-slate-300 text-base">
                                       <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>國立台灣大學醫學系 畢業</li>
                                       <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>中華民國復健科 專科醫師</li>
                                       <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>中華民國骨鬆學會 專科醫師</li>
@@ -158,10 +161,12 @@ export default function DoctorsPage() {
                                 </div>
 
                                 <div>
-                                    <h3 className="text-sm font-bold text-cyan-400 uppercase tracking-wider mb-3 border-b border-slate-700 pb-2 flex items-center">
+                                    {/* 調整 5: 標題字體加大 text-sm -> text-lg */}
+                                    <h3 className="text-lg font-bold text-cyan-400 uppercase tracking-wider mb-3 border-b border-slate-700 pb-2 flex items-center">
                                         <i className="fa-solid fa-briefcase mr-2"></i> 專業經歷
                                     </h3>
-                                    <ul className="space-y-2 text-slate-300 text-sm">
+                                    {/* 調整 6: 列表字體加大 text-sm -> text-base */}
+                                    <ul className="space-y-2 text-slate-300 text-base">
                                       <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>新竹馬偕紀念醫院 主治醫師</li>
                                       <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>台灣增生療法醫學會會員</li>
                                       <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>台灣疼痛醫學會會員</li>
