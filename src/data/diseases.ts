@@ -2363,6 +2363,495 @@ export const diseaseCategories: DiseaseCategory[] = [
           }
         ]
       },
+
+{
+        id: 'meniscus-injury',
+        slug: 'meniscus-injury',
+        title: '膝蓋半月板損傷 (Meniscus Injury)',
+        description: '膝蓋突然「卡住」伸不直？走路膝蓋關節縫刺痛？這可能是膝蓋的避震器壞了！深入解析半月板損傷成因、紅黃白區的修復關鍵，以及 PRP 與手術治療的全攻略。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：打籃球一個轉身跳投，落地時膝蓋內部傳來「啪」的一聲，接著就一陣劇痛？或是蹲下去撿東西，站起來時膝蓋突然<strong>「卡住」</strong>伸不直，要甩一甩才能動？又或者上下樓梯時，膝蓋內側或外側的<strong>關節縫</strong>總是有固定的刺痛點？</p>
+                <br>
+          <p style="color: #e2e8f0 !important;">這些都是<strong>半月板損傷</strong>的典型症狀。半月板被稱為膝蓋的「避震器」，一旦受損，不僅走路痛苦，更會加速膝關節的退化。宸新復健科透過高解析超音波進行動態檢查，協助您判斷半月板受損的位置與程度，並提供保存膝蓋的再生醫療方案。</p>
+      
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 什麼是半月板？膝蓋裡的「C型軟骨墊片」
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">在我們的大腿骨（股骨）與小腿骨（脛骨）之間，塞著兩塊呈現「C」字型的纖維軟骨，內側一個、外側一個，這就是半月板。它們的功能至關重要：</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">避震緩衝：</strong> 
+                          吸收我們走路、跳躍時地面的反作用力，保護關節面的透明軟骨不被磨損。就像汽車的避震器一樣。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">增加穩定：</strong> 
+                          填補圓大腿骨與小腿骨之間的空隙，讓關節活動更吻合穩定。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">決定命運的「紅區」與「白區」：</strong> 
+                          這是治療最關鍵的概念！半月板的血液供應很差，只有靠近關節囊外緣的 1/3 有血管，稱為<strong>「紅區 (Red Zone)」</strong>，這裡受傷有機會自己癒合或透過注射修復。而靠近關節內側的 2/3 幾乎沒有血管，稱為<strong>「白區 (White Zone)」</strong>，一旦撕裂極難癒合，往往需要手術修整。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+         <p><img src="/images/diseases/knee/mm/b.jpg" alt="半月板的血液供應"></p>
+    
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">⚠️ 兩大成因：年輕人 vs. 中老年人</h3>
+          <p style="color: #e2e8f0 !important;">半月板損傷在不同年齡層有不同的致病機轉：</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 創傷型 (Traumatic Tear) - 年輕愛運動者</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  通常發生在激烈運動中。當膝蓋在<strong>彎曲且負重</strong>的狀態下，突然進行<strong>強力的扭轉</strong>（例如：籃球切入變向、足球急停轉身），半月板就會被夾在骨頭中間「扭破」。這類損傷常合併前十字韌帶 (ACL) 斷裂一起發生，受傷以內側半月板較為常見。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 退化型 (Degenerative Tear) - 中老年族群</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  隨著年齡增長，半月板的水分減少、變得脆弱。不需要劇烈運動，可能只是<strong>蹲下去澆花、從矮椅子站起來</strong>，一個簡單的動作就造成半月板磨損撕裂。這通常伴隨著退化性膝關節炎一起出現，同樣退化也是以內側半月板更為常見。
+              </p>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 症狀特徵：膝蓋裡的「不速之客」</h3>
+          <p style="color: #e2e8f0 !important;">怎麼知道半月板破了？請留意以下警訊：</p>
+          <ul style="color: #e2e8f0 !important;">
+              <li><strong>關節線疼痛：</strong> 最典型的症狀。按壓膝蓋內側或外側的關節縫隙時，會有明顯的刺痛點。</li>
+              <li><strong>卡鎖現象：</strong> 這是危險訊號！如果撕裂的半月板碎片像「門擋」一樣卡在關節中間，會導致膝蓋突然卡住伸不直。這通常需要盡快處理。</li>
+              <li><strong>關節積水腫脹：</strong> 受傷後幾小時到隔天，膝蓋會慢慢腫起來（因為關節液分泌增加）。</li>
+              <li><strong>發軟無力：</strong> 上下樓梯時突然覺得膝蓋「軟了一下」，使不上力。</li>
+              <li><strong>彈響聲：</strong> 活動膝蓋時常聽到喀喀聲。</li>
+          </ul>
+               <p><img src="/images/diseases/knee/mm/c.jpg" alt="半月板受傷的症狀"></p>
+
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3 style="color: #f8fafc !important;">🔍 精準診斷：超音波 vs. 核磁共振 (MRI)</h3>
+    <p style="color: #e2e8f0 !important;">半月板是軟骨，一般的 X 光只能看骨頭，是<strong>照不到半月板</strong>的！因此必須依靠更精密的影像檢查：</p>
+
+    <div style="margin-bottom: 2rem;">
+        <h3 style="color: #f8fafc "><strong>1. 高解析骨骼肌肉超音波</strong> (第一線檢查)</h3>
+        <p style="color: #e2e8f0 !important;">在宸新復健科，我們使用高階超音波進行檢查，它有兩大優勢：</p>
+        <ul style="color: #e2e8f0 !important;">
+            <li><strong>看積水：</strong> 半月板受傷常伴隨關節發炎積水。超音波能清楚看到關節囊被黑色的液體撐開，這是急性發炎的鐵證。</li>
+            <li><strong>動態檢查：</strong> 這是超音波最強的地方。醫師會邊擠壓膝蓋、邊用探頭看，可以觀察到半月板是否不穩定地<strong>「被擠出來」</strong>(Meniscus Extrusion)，或是看到明顯的撕裂裂縫。</li>
+        </ul>
+    </div>
+
+    <p><img src="/images/diseases/knee/mm/d.jpg" alt="半月板受傷的超音波影像"></p>
+    
+    <div style="margin-bottom: 2rem;">
+        <h3 style="color: #f8fafc "><strong>2. 核磁共振 MRI</strong> (手術評估黃金標準)</h3>
+        <p style="color: #e2e8f0 !important;">如果您有以下狀況，建議安排 MRI 檢查：</p>
+        <ul style="color: #e2e8f0 !important;">
+            <li>超音波懷疑有<strong>深層（白區）</strong>或是<strong>複雜性撕裂</strong>。</li>
+            <li>膝蓋持續卡鎖 (Locking)，懷疑有游離軟骨塊。</li>
+            <li>懷疑合併前十字韌帶斷裂。</li>
+            <li><strong>評估是否需要開刀：</strong> MRI 能提供膝蓋內部的 3D 立體影像，是骨科醫師決定手術方式（修補或切除）的最重要依據。</li>
+        </ul>
+    </div>
+    
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 治療策略：能留就留，能補就補</h3>
+          <p style="color: #e2e8f0 !important;">半月板非常珍貴，切掉一點就少一點避震能力，未來罹患退化性關節炎的機率會暴增。因此現代醫學的治療原則是<strong>「盡量保存」</strong>。</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 保守治療與物理治療</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  適用對象：退化型撕裂、小型且穩定的撕裂、位於紅區邊緣、沒有卡鎖症狀者。<br>
+                  急性期透過冰敷、休息減少腫脹。後續重點在於<strong>強化股四頭肌與臀部肌群</strong>，減輕膝蓋負擔。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 再生修復：<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  適用對象：位於<strong>紅區或紅白交界區</strong>的撕裂傷，且不想開刀者。<br>
+                  由於半月板血流差，我們透過超音波導引，將高濃度的生長因子 (PRP) 精準注射到撕裂縫隙中，提供修復所需的「養分與原料」，促進組織癒合。這對於年輕、創傷型的紅區撕裂效果尤佳。
+              </p>
+          </div>
+          
+     
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 什麼情況一定要開刀（關節鏡）？</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  如果出現以下狀況，通常需要骨科介入進行關節鏡手術：
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li>膝蓋反覆出現<strong>「卡鎖 (Locking)」</strong>現象，嚴重影響生活。</li>
+                      <li>保守治療與 PRP 注射 3-6 個月無效，持續疼痛積水。</li>
+                      <li>複雜的大型撕裂（如桶柄狀撕裂 Bucket-handle tear）。</li>
+                        <li>手術方式分為「修補縫合」（首選，但需在紅區）或「部分切除」（針對白區無法修復的碎片）。
+                  </ul>
+              </p>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：安全復健運動</h3>
+          <p style="color: #e2e8f0 !important;">半月板受傷後，最忌諱深蹲與過度扭轉。初期復健重點在於「不負重」的肌力訓練：</p>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">直抬腿運動</h4>
+              <p style="color: #e2e8f0 !important;">平躺在床上，患側膝蓋伸直，用力將整條腿抬高約 30-45 度，腳尖勾起。維持 5-10 秒，再慢慢放下。重複 15 次。這個動作能有效訓練股四頭肌，且完全不會對半月板造成壓力。</p>
+          </div>
+       
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 膝蓋卡卡別輕忽，保本最重要！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">半月板損傷是膝蓋退化的前哨站。一旦出現關節線疼痛或卡住的症狀，請務必及早就醫評估。透過精準的診斷，分辨紅區白區，選擇最適合的再生治療或手術方案，才能保住珍貴的避震器，讓膝蓋陪您走更長遠的路！</p>
+              <p style="font-weight: bold; color: #059669 !important;">走路膝蓋縫刺痛？立即預約超音波檢查！</p>
+          </div>
+        `,
+        symptoms: [
+          '膝蓋關節線（內側或外側縫隙）按壓刺痛',
+          '膝蓋腫脹反覆積水',
+          '膝蓋活動時突然「卡住」伸不直',
+          '活動時膝蓋有喀喀聲響 '
+
+        ],
+        treatments: [
+          '止痛藥物及復健',
+          '超音波導引抽積水與<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">物理治療與肌力訓練 (股四頭肌強化)</a>🔍️',
+          '關節鏡半月板手術'
+        ],
+        seoKeywords: [
+          '半月板損傷',
+          '半月板撕裂',
+          '膝蓋卡住',
+          '關節線疼痛',
+          'PRP注射',
+          '膝蓋積水',
+          '運動傷害'
+        ],
+        seoDescription: '膝蓋半月板損傷造成關節卡住、刺痛與積水。宸新復健科提供精準超音波診斷，分辨紅白區撕裂，提供PRP再生注射與復健指導，非手術修復膝蓋避震器。',
+        images: [
+          { src: '/images/diseases/knee/mm/a.jpg', alt: '膝蓋半月板損傷' 
+          }
+        ]
+      },
+ {
+        id: 'cruciate-ligament-injury',
+        slug: 'cruciate-ligament-injury',
+        title: '前後十字韌帶損傷',
+        description: '膝蓋聽到「波」一聲後腫脹？下樓梯覺得小腿會跑掉？深入解析前十字韌帶 (ACL) 與後十字韌帶 (PCL) 損傷，以及「開刀 vs. 保守治療」的黃金決策關鍵。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：打籃球急停跳投、或是滑雪轉身時，膝蓋內部突然傳來響亮的<strong>波 (Pop)</strong>一聲，接著整個人軟腳跌倒？當下雖然還能勉強站起來，但幾個小時後膝蓋腫得像麵龜一樣？</p>
+                <br>
+          <p style="color: #e2e8f0 !important;">這就是最典型的<strong>前十字韌帶斷裂</strong>劇本。它是膝蓋最脆弱也最重要的穩定器。宸新復健科透過精準的理學檢查與高階超音波檢查，協助您判斷韌帶的連續性，並提供從「不開刀增生治療」到「術前術後復健」的完整照護，讓您重返運動場。</p>
+      
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 膝蓋內部的「安全帶」：ACL 與 PCL
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">在膝關節深處，有兩條呈現「X」形狀交叉的韌帶，負責前後方向的穩定：</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">前十字韌帶 (ACL) - 運動員殺手：</strong> 
+                          負責防止小腿骨（脛骨）<strong>過度向前滑動</strong>。它非常脆弱，70% 的斷裂屬於「非接觸性損傷」，也就是沒人撞你，自己急停、旋轉、落地姿勢不對就斷了。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">後十字韌帶 (PCL) - 車禍與跌倒：</strong> 
+                          比 ACL 粗壯兩倍，負責防止小腿骨<strong>過度向後滑動</strong>。通常發生在機車車禍（膝蓋撞儀表板）或膝蓋跪地跌倒時。後十字韌帶自癒能力較好，手術機率較低。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">關節積血 (Hemarthrosis)：</strong> 
+                          十字韌帶斷裂時，血管會跟著破裂，導致大量血液灌入關節腔。這就是為什麼受傷後 2-4 小時內膝蓋會極速腫脹的原因。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          <p><img src="/images/diseases/knee/acl/b.jpg" alt="十字韌帶結構圖"></p>
+
+          
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：斷掉是什麼感覺？</h3>
+          <p style="color: #e2e8f0 !important;">如果出現以下「ACL 斷裂三部曲」，請務必就醫：</p>
+          <ul style="color: #e2e8f0 !important;">
+              <li><strong>聽覺：</strong> 受傷當下聽到或感覺到膝蓋深處<strong>「波 (Pop)」</strong>的一聲。</li>
+              <li><strong>腫脹：</strong> 受傷後 24 小時內膝蓋腫脹明顯（因為關節積血）。</li>
+              <li><strong>不穩：</strong> 急性期過後（2週後），走路或上下樓梯時覺得膝蓋空空的、小腿好像會跑掉，或是<strong>不敢做急停轉身</strong>的動作。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 診斷方式：拉拉看就知道</h3>
+          <p style="color: #e2e8f0 !important;">診斷十字韌帶不一定要馬上照 MRI，有經驗的醫師透過雙手即可初步判斷：</p>
+          
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 前拉測試 (Anterior drawer test)</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  這是診斷 ACL 最準確的理學檢查。醫師會將膝蓋彎曲 30 度，嘗試將小腿骨往前拉。如果韌帶斷了，小腿會被<strong>「拉出來」</strong>且沒有拉到最後沒有停住的感覺。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 影像檢查： 超音波 vs 核磁共振  </h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <strong>超音波：</strong> 可看到關節積血、韌帶腫脹，以及檢查是否合併<strong>半月板破裂或韌帶撕裂</strong>（這很常見，稱為惱人三重傷 Unhappy Triad），下圖為超音波導引下將積血抽吸出來。<br>
+                  <strong>核磁共振：</strong>若嚴重鬆脫或反覆積水，考慮手術建議安排，能清楚看到韌帶是「全斷」還是「部分斷裂」，。
+              </p>
+          </div>
+      
+          <p><img src="/images/diseases/knee/acl/c.jpg" alt="膝關節超音波導引抽血"></p>
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 治療決策：一定要開刀重建嗎？</h3>
+          <p style="color: #e2e8f0 !important;">這是患者最糾結的問題。其實並非斷了就一定要開刀，取決於您的「需求」與「斷裂程度」：</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 保守治療 (<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a> + 復健)</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <strong>適用對象：</strong> 部分撕裂 (Grade 1-2)、老年人、活動需求低（不打球，只走路）、後十字韌帶損傷者。<br>
+                  <strong>治療方式：</strong> 急性期抽出關節積血。接著使用 <strong style="color: #0891b2 !important;">PRP (高濃度血小板)</strong> 超音波導引下精準注射到撕裂的韌帶，促進癒合。最重要的是強化<strong>腿後肌</strong>及<strong>股四頭肌</strong>，讓強壯的肌肉代償韌帶的功能。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 手術重建 (Reconstruction)</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <strong>適用對象：</strong> 完全斷裂 (Grade 3)、膝蓋嚴重不穩（軟腳）、合併半月板破裂、年輕人、高強度運動員或保守治療效果不佳。<br>
+                  <strong>治療方式：</strong> 十字韌帶斷了接不回去，通常是取自體肌腱（如腿後肌）來「重建」一條新的韌帶。
+              </p>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：復健關鍵在「閉鎖鏈」</h3>
+          <p style="color: #e2e8f0 !important;">無論開不開刀，復健都是必須的。十字韌帶受傷後，重點在於強化大腿後側肌肉：</p>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">1. 橋式 - 喚醒腿後肌</h4>
+              <p style="color: #e2e8f0 !important;">平躺，雙膝彎曲，腳跟踩地。用力將屁股抬起，直到身體呈一直線。這能訓練臀大肌與腿後肌。腿後肌是前十字韌帶的好朋友，能幫忙拉住小腿骨。</p>
+          </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 靠牆深蹲 - 閉鎖鏈運動</h4>
+              <p style="color: #e2e8f0 !important;">背靠牆，雙腳與肩同寬，慢慢往下滑直到膝蓋彎曲 30-45 度。腳掌踩死地板（閉鎖鏈），這樣對韌帶的剪力最小，最安全。停留 10 秒，重複 10 次。</p>
+          </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">3. 避免動作 (禁忌)</h4>
+              <p style="color: #e2e8f0 !important;">受傷初期（或術後 3 個月內），<strong>請避免「坐姿踢腿機」</strong>最後 30 度伸直的動作（開放鏈），這會對前十字韌帶產生極大的剪力，容易導致韌帶鬆弛或重建失敗。</p>
+          </div>
+         <p><img src="/images/diseases/knee/acl/d.jpg" alt="十字韌帶受傷居家運動"></p>
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 膝蓋穩定，才能安心衝刺！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">十字韌帶損傷是膝蓋的大型工程，需要醫師、治療師與患者三方配合。即使需要手術，術前的 PRP 強化與術後的積極復健，都是決定重返運動場的關鍵。宸新復健科，陪您走過這段漫長的復健路！</p>
+              <p style="font-weight: bold; color: #059669 !important;">膝蓋聽到波一聲？立即預約穩定度檢查！</p>
+          </div>
+        `,
+        symptoms: [
+          '受傷當下聽到膝蓋「波」一聲',
+          '受傷後 24 小時內膝蓋嚴重腫脹 (積血)',
+          '感覺膝蓋鬆鬆的、不穩定',
+          '下樓梯或急停時膝蓋發軟',
+        ],
+        treatments: [
+          '止痛藥復健與護膝',
+          '超音波導引抽積血<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️',
+          '術前/術後<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>🔍️',
+          '十字韌帶重建手術',
+        ],
+        seoKeywords: [
+          '十字韌帶斷裂',
+          'ACL',
+          'PCL',
+          '膝蓋積水',
+          'PRP注射',
+          '膝蓋開刀',
+          '前十字韌帶重建'
+        ],
+        seoDescription: '十字韌帶損傷（ACL/PCL）造成膝蓋不穩與積水。宸新復健科提供PRP保守治療、術前術後復健指導，以及開刀決策諮詢，助您重返運動場。',
+        images: [
+          { src: '/images/diseases/knee/acl/a.jpg', alt: '十字韌帶損傷'  
+          }
+        ]
+      },
+
+{
+        id: 'knee-collateral-ligament',
+        slug: 'knee-collateral-ligament',
+        title: '膝蓋副韌帶損傷',
+        description: '膝蓋內側劇痛？被人從側面撞到後膝蓋不穩？這可能不是十字韌帶，而是副韌帶受傷！深入解析 MCL/LCL 受傷分級、動態超音波診斷，以及活動型護具與 PRP 修復全攻略。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：打籃球時被人從膝蓋外側「撞」了一下，瞬間感覺膝蓋內側一陣撕裂劇痛？或是滑雪、踢足球時，小腿突然往外或是往內折了一下？受傷後，雖然還能走路，但總覺得膝蓋兩側會<strong>疼痛</strong>且<strong>鬆鬆的</strong>，左右搖晃不穩？</p>
+            
+          <br>
+          <p style="color: #e2e8f0 !important;">這通常不是十字韌帶的問題，而是膝蓋的側向衛兵——<strong>副韌帶</strong> 受傷了。其中以<strong>內側副韌帶</strong> 損傷最為常見。宸新復健科透過「高階超音波檢查」，能親眼看到韌帶受傷及鬆弛的程度，並提供活動型護具與再生注射方案，讓韌帶重新長緊，避免膝蓋提早退化。</p>
+
+      
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 左右護法：內側與外側副韌帶的功能
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">膝蓋不只需要前後穩定（靠十字韌帶），更需要左右穩定（靠副韌帶）。它們像兩條強韌的膠帶，貼在膝蓋的內外兩側：</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">內側副韌帶 - 最常受傷：</strong> 
+                          位於膝蓋內側，像寬扁的扇子。當膝蓋外側受到撞擊，或是小腿過度往外轉時，內側副韌帶會被拉長撕裂。這常發生在足球、籃球、滑雪運動中。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">外側副韌帶：</strong> 
+                          位於膝蓋外側，像一條細繩子。當膝蓋內側受到撞擊時受傷。外側副韌帶受傷較少見，但一旦發生，常合併十字韌帶或腓神經損傷。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">自我修復能力：</strong> 
+                          好消息是，內側副韌帶的血液循環比十字韌帶好，如果是一、二級撕裂，透過正確的保守治療（復健+<a href="/treatments/prp" class="text-cyan-400 hover:underline">增生療法</a>），<strong>癒合機率極高</strong>，通常不需要開刀。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+    <p><img src="/images/diseases/knee/mcl/b.jpg" alt="內側副韌帶受傷結構"></p>
+
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">⚠️ 受傷分級：你是哪一級？</h3>
+          <p style="color: #e2e8f0 !important;">醫師會根據韌帶鬆弛的程度分為三級，這決定了你需要戴護具多久：</p>
+          <ul style="color: #e2e8f0 !important;">
+              <li><strong>第一級 (Grade I)：</strong> 韌帶<strong>微小撕裂</strong>，但在壓力測試下膝蓋沒有鬆動。只有按壓痛，走路正常。恢復期約 4 週。</li>
+              <li><strong>第二級 (Grade II)：</strong> 韌帶<strong>部分撕裂</strong>。壓力測試下膝蓋會「打開」一點點，但還有止點感（End point）。會有明顯腫脹、走路跛行。恢復期約 8 週。</li>
+              <li><strong>第三級 (Grade III)：</strong> 韌帶<strong>完全斷裂</strong>。壓力測試下膝蓋會像門一樣被完全打開，沒有止點感。膝蓋極度不穩，通常合併半月板或十字韌帶受傷。恢復期需 3 個月以上。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 超音波檢查：眼見為憑的診斷</h3>
+          <p style="color: #e2e8f0 !important;">X 光只能看骨頭，診斷副韌帶損傷，<strong>超音波是第一線利器</strong>。宸新復健科採用高階超音波檢查：</p>
+              <br>
+              <h4 style="color: #22d3ee !important;"><strong>1.副韌帶結構檢查</strong></h4>
+              <p style="color: #e2e8f0 !important;">高階超音波影像可以清楚看到副韌帶的結構，撕裂的程度，並搭配超音波導引精準注射效果更好。</p>
+
+              <h4 style="color: #22d3ee !important;"><strong>2. 檢查伴隨損傷</strong></h4>
+              <p style="color: #e2e8f0 !important;">副韌帶損傷受傷常伴隨內側半月板受損（因為它們黏在一起）。超音波可以同時檢查是否有半月板積水或突出的徵兆。</p>
+            <p><img src="/images/diseases/knee/mcl/c.jpg" alt="內側副韌帶受傷超音波圖片"></p>
+
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 治療策略：長好、長緊、不鬆弛</h3>
+          <p style="color: #e2e8f0 !important;">副韌帶治療的重點在於<strong>「早期活動但限制角度」</strong>。完全不動（打石膏）反而會讓韌帶癒合後變弱。</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 急性期：復健及護膝</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <strong>復健及止痛藥先消腫止痛</strong> 對於二、三級撕裂，必須配戴兩側有金屬支架的護具。
+                  <br>護膝允許膝蓋前後彎曲（避免沾黏），但<strong>嚴格禁止左右晃動</strong>（保護韌帶）。需配戴 4-6 週，直到韌帶初步癒合。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 加速修復：<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  韌帶一旦鬆弛就很難變緊。為了讓韌帶癒合得「強韌且緊實」，<strong style="color: #0891b2 !important;">PRP (高濃度血小板)</strong> 是最佳選擇。醫師在超音波導引下，將生長因子沿著撕裂的韌帶注射。這能加速膠原蛋白生成，就像用強力膠把撕裂的纖維緊緊黏回去，減少未來膝蓋不穩的後遺症。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 慢性沾黏：<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  如果受傷超過 3 個月，膝蓋內側還是一直痠痛，通常是癒合過程產生了<strong>疤痕組織</strong>。體外震波或徒手運動治療搭配關節鬆動，改善活動度。
+              </p>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：復健運動兩階段</h3>
+          <p style="color: #e2e8f0 !important;">復健的目標是先恢復角度，再強化肌肉。請在醫師指導下進行：</p>
+      
+          <div style="margin-bottom: 2rem;">
+              <h3 style="color: #e2e8f0 ">第一階段：角度恢復 (受傷 1-2 週)</h3>
+              <p style="color: #e2e8f0 !important;"><strong>足跟滑動訓練：</strong> 平躺，慢慢將腳跟往屁股方向滑動，讓膝蓋彎曲。彎到覺得緊繃微痛就停住，維持 10 秒再伸直。目標是恢復到 90 度彎曲。</p>
+          </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h3 style="color: #e2e8f0 ">第二階段：肌力強化 (受傷 3 週後)</h3>
+              <p style="color: #e2e8f0 !important;"><strong>直抬腿運動：</strong> 膝蓋打直，將整條腿抬高 45 度。強化股四頭肌，幫忙穩定膝蓋。</p>
+              <p style="color: #e2e8f0 !important;"><strong>蚌殼式運動：</strong> 側躺，雙膝彎曲，開合膝蓋。強化臀中肌，這是控制膝蓋不內夾（保護內側副韌帶）的最重要肌肉。</p>
+          </div>
+          
+         <p><img src="/images/diseases/knee/mcl/d.jpg" alt="內側副韌帶受傷居家運動"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 韌帶要長緊，膝蓋才穩定！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">內側副韌帶損傷雖然常見，但若忽視治療導致韌帶鬆弛，未來將大幅增加半月板磨損與退化性關節炎的風險。宸新復健科透過精準的高階超音波檢查與再生治療，協助您修復韌帶，讓膝蓋重回穩固！</p>
+              <p style="font-weight: bold; color: #059669 !important;">膝蓋內側痛、左右搖晃？立即預約韌帶檢查！</p>
+          </div>
+        `,
+        symptoms: [
+          '膝蓋內側或外側有明顯壓痛點',
+          '膝蓋左右搖晃不穩',
+          '膝蓋內側腫脹瘀血',
+          '走路時覺得膝蓋鬆鬆的'
+        ],
+        treatments: [
+          '復健吃止痛藥與穿戴護膝',
+          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️',
+          '臀肌訓練與<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>🔍️',
+          '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療(ESWT)</a>🔍️',
+        ],
+        seoKeywords: [
+          '膝蓋副韌帶損傷',
+          'MCL',
+          'LCL',
+          '膝蓋內側痛',
+          'PRP注射',
+          '膝蓋不穩',
+          '膝蓋護具'
+        ],
+        seoDescription: '膝蓋副韌帶損傷（MCL/LCL）造成膝蓋內側劇痛與不穩。宸新復健科提供動態超音波診斷、PRP韌帶修復與護具指導，有效解決膝蓋鬆弛問題。',
+        images: [
+          { src: '/images/diseases/knee/mcl/a.jpg', alt: '膝蓋副韌帶損傷' 
+          }
+        ]
+      },
+
+
 {
         id: 'iliotibial-band-syndrome',
         slug: 'iliotibial-band-syndrome',

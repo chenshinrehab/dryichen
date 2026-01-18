@@ -16,7 +16,7 @@ interface PageProps {
 // 1. 動態產生 Metadata
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const category = diseaseCategories.find((c) => c.slug === params.category)
-   
+    
   if (!category) {
     return { title: '找不到分類 | 宸新復健科' }
   }
@@ -115,9 +115,13 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                         <h1 className="text-3xl md:text-5xl font-bold font-sans text-white tracking-wide mb-3">
                             {category.title}
                         </h1>
-                        <p className="text-slate-400 text-lg max-w-2xl leading-relaxed">
+                        {/* 修改處：將原本顯示 category.description 的 p 標籤註解掉或移除。
+                           這會隱藏如「脊椎、髖關節與臀部相關疾病...」的文字，
+                           並讓 Header 區域的高度自然縮減。
+                        */}
+                        {/* <p className="text-slate-400 text-lg max-w-2xl leading-relaxed">
                             {category.description}
-                        </p>
+                        </p> */}
                     </div>
                     <div className="text-slate-500 text-sm mb-1 hidden md:block">
                         共收錄 {category.diseases.length} 項疾病
@@ -143,7 +147,7 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                               className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                             />
                         ) : (
-                            // 預設圖片處理：使用分類圖，並加上濾鏡讓它看起來像背景
+                            // 預設圖片處理
                             <div className="w-full h-full relative">
                                 <img 
                                   src={category.image || '/images/default-medical.jpg'} 
@@ -155,10 +159,10 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                                 </div>
                             </div>
                         )}
-                        {/* 漸層遮罩，讓圖片下方的文字清楚 */}
+                        {/* 漸層遮罩 */}
                         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
                         
-                        {/* 標題直接疊在圖片底部，增加時尚感 */}
+                        {/* 標題直接疊在圖片底部 */}
                         <div className="absolute bottom-0 left-0 p-6 w-full">
                              <h2 className="text-2xl font-bold text-white group-hover:text-cyan-300 transition-colors drop-shadow-md">
                                 {disease.title}
@@ -169,7 +173,7 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                       {/* 2. 內容區塊 */}
                       <div className="p-6 pt-4 flex flex-col flex-grow border-t border-slate-700/50">
                         
-                        {/* 症狀標籤 (稍微縮小間距) */}
+                        {/* 症狀標籤 */}
                         {disease.symptoms && disease.symptoms.length > 0 && (
                             <div className="flex flex-wrap gap-1.5 mb-4">
                                 {disease.symptoms.slice(0, 3).map((symptom, idx) => (

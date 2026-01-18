@@ -47,7 +47,6 @@ export const treatments: Treatment[] = [
     <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
         📢 為什麼選擇宸新 PRP 增生療法？
     </h2>
-    
     <p style="font-size: 1.1rem; color: #78350f;">許多人打過 PRP 覺得沒效，很大的原因是「沒打對位置」或「濃度不夠」。宸新復健科堅持最高規格的治療標準：</p>
     
     <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
@@ -59,9 +58,13 @@ export const treatments: Treatment[] = [
             <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
             <div><strong>高濃度萃取技術：</strong> 採用專利離心管與標準化流程，確保萃取出的血小板濃度達到修復所需的黃金標準（約血液濃度的 3-5 倍以上）。</div>
         </li>
-        <li style="margin-bottom: 0; display: flex; align-items: start;">
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
             <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
             <div><strong>複合式治療策略：</strong> 醫師會視情況搭配葡萄糖水增生療法、神經解套注射或震波治療，達到 1+1>2 的加乘效果。</div>
+        </li>
+                <li style="margin-bottom: 0; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
+            <div><strong>收費標準：</strong>高濃度葡萄糖：<strong>1200元</strong>。高濃度血小板(PRP)：<strong>15000元</strong>。</div>
         </li>
     </ul>
 </div>
@@ -69,7 +72,7 @@ export const treatments: Treatment[] = [
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <h3>🔬 什麼是 PRP？治療原理大解密</h3>
-<p>PRP 全名為 <strong>Platelet-Rich Plasma</strong>，意指「富含血小板的血漿」。大家熟知的血小板功能是止血，但其實它還富含多種<strong>生長因子 (Growth Factors)</strong>，如 PDGF、TGF-β、VEGF 等。</p>
+<p>PRP 全名為 <strong>Platelet-Rich Plasma</strong>，意指「富含血小板的血漿」。大家熟知的血小板功能是止血，但其實它還富含多種<strong>生長因子</strong>，如 PDGF、TGF-β、VEGF 等。</p>
 <br>
 <p>當組織受傷時，身體會啟動修復機制，但隨著年齡增長或反覆受傷，這個機制會變慢甚至停滯。PRP 治療就像是按下「快轉鍵」，直接將高濃度的生長因子注入受傷部位，重新啟動並加速組織修復反應，促進膠原蛋白增生、血管新生，讓受損的肌腱、韌帶或軟骨得以癒合。</p>
 
