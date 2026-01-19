@@ -190,17 +190,17 @@ export default function Home() {
                       {/* 左側：醫師照片 (50%) - 修改高度以適應長圖 */}
                       <div className="md:w-1/2 relative">
                           {/* 修改這裡：增加 min-h 高度 */}
-                          <div className="h-full w-full min-h-[550px] md:min-h-[700px] relative overflow-hidden">
+                          <div className="h-full w-full min-h-[320px] md:min-h-[550px] relative overflow-hidden">
                              <img 
                                src="/images/main/a.jpg"
                                alt="新竹復健科推薦-林羿辰醫師-台大雙專科院長" 
-                               className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-700" 
+                               className="absolute inset-0 w-full h-full object-cover object-center md:object-bottom group-hover:scale-105 transition-all duration-700" 
                              />
                           </div>
                       </div>
 
                       {/* 右側：醫師文字介紹 (50%) - 修改字體大小 */}
-                      <div className="md:w-1/2 p-8 md:p-12 flex flex-col justify-center relative z-10">
+                      <div className="md:w-1/2 p-8 md:p-8 flex flex-col justify-center relative z-10">
                           
                           {/* 修改：加大姓名與頭銜 */}
                           <h1 className="text-5xl md:text-6xl font-bold font-sans text-white mb-2 tracking-wide">
@@ -216,7 +216,7 @@ export default function Home() {
                             宸新復健科診所 <span className="text-lg text-slate-400 ml-2 font-normal">院長</span>
                           </h2>
                           
-                          <div className="space-y-8">
+                          <div className="space-y-8 md:space-y-6">
                             {/* 學歷區塊 - 字體加大 */}
                             <div>
                                <h3 className="text-xl font-bold text-cyan-400 uppercase tracking-wider mb-3 border-b border-slate-700 pb-1 inline-block">

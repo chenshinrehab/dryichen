@@ -29,3 +29,5 @@ image: '/images/about/a.jpg',
 cec110f66bebbea9.vercel-dns-017.com.
 
 https://www.dryichen.com.tw
+
+Ctrl + Shift + I  Ctrl + Shift + M

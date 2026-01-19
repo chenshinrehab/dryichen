@@ -175,6 +175,154 @@ export const diseaseCategories: DiseaseCategory[] = [
            { src: '/images/diseases/spine-hip/HIVD/e.jpg', alt: '脊椎椎間盤突出構造圖' }
         ]
       },
+
+{
+        id: 'scoliosis',
+        slug: 'scoliosis',
+        title: '脊椎側彎',
+        description: '孩子肩膀一高一低？背部凸起？脊椎側彎不只是姿勢不良！宸新擁有「院內X光機」即時追蹤，搭配「側彎專用矯正架」與專業治療師，把握黃金治療期，讓脊椎重回正軌。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">當您發現家中的孩子肩膀一高一低，或是彎腰時背部某一側異常凸起，這可能不只是單純的「姿勢不良」，而是<strong>脊椎側彎</strong> 的警訊。在台灣，青少年脊椎側彎的發生率約為 3-5%，若錯過黃金治療期，側彎角度可能會隨著身高抽高而急速惡化，不僅影響外觀自信，成年後更可能導致嚴重的背痛與心肺功能受損。</p>
+                <br>
+          <p style="color: #e2e8f0 !important;">治療脊椎側彎，<strong>「監測」</strong>與<strong>「精準運動」</strong>缺一不可。宸新復健科打造了新竹少見的<strong>「脊椎側彎整合治療中心」</strong>，我們不只提供治療，更擁有<strong>院內 X 光機</strong>可隨時追蹤角度變化，並引進特殊的<strong>脊椎側彎矯正訓練架</strong>，由受過專業訓練的物理治療師一對一指導，協助您對抗地心引力，將彎曲的脊椎「練」回來。</p>
+<p><img src="/images/diseases/spine-hip/scolio/b.jpg" alt="脊椎側彎四格漫畫"></p>
+      
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 什麼是脊椎側彎？這是一個「3D 立體」的變形
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">很多人以為脊椎側彎只是脊椎往左或往右彎（2D 平面），只要用力往反方向凹回來就好？<strong>這是大錯特錯的觀念！</strong></p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">螺旋狀旋轉 (Rotation)：</strong> 
+                          真正的脊椎側彎包含椎體的<strong>「旋轉」</strong>。想像一條擰乾的毛巾，脊椎在側彎的同時也發生了扭轉，這會帶動肋骨變形，造成背部單側隆起（剃刀背, Rib Hump）。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">C 型 vs. S 型：</strong> 
+                          側彎可能呈現單一弧度的 C 型，或是代償後出現兩個弧度的 S 型。每一種型態的施力點與矯正方向都完全不同。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">惡化的關鍵期：</strong> 
+                          青春期（10-18歲）的身高快速生長期是側彎惡化最快的時期。骨頭長得越快，彎得越快。一旦骨垢線閉合（長大成人），矯正難度將大幅增加。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      
+          <p><img src="/images/diseases/spine-hip/scolio/c.jpg" alt="脊椎側彎類型"></p>
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 亞當式前彎測試：在家就能做</h3>
+          <p style="color: #e2e8f0 !important;">家長可以透過<strong>「亞當式前彎測試 (Adam's Forward Bend Test)」</strong>進行初步篩檢：</p>
+          <ol style="color: #e2e8f0 !important; margin-left: 1.5rem;">
+              <li>讓孩子雙腳併攏站立，雙手合掌自然下垂。</li>
+              <li>膝蓋打直，身體慢慢向前彎腰 90 度。</li>
+              <li>家長從孩子的<strong>正後方</strong>觀察背部水平。</li>
+              <li><strong>結果：</strong> 如果發現背部一邊高、一邊低（單側隆起），這就是脊椎旋轉的證據，極高機率患有脊椎側彎。</li>
+          </ol>
+         <p><img src="/images/diseases/spine-hip/scolio/d.jpg" alt="脊椎側彎亞當式前彎測試"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新三大優勢：為什麼選擇我們？</h3>
+          <p style="color: #e2e8f0 !important;">治療脊椎側彎是一場與時間的賽跑，也是一場精準的力學戰爭。我們整合了<strong>影像、器材、人力</strong>，提供醫院等級的照護：</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">優勢一：<a href="/about/clinic/x-ray" class="text-cyan-400 hover:underline">院內X光機</a>🔍️，隨時追蹤 </h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <strong>不用再去大醫院排隊等片子！</strong> 
+                  側彎的角度（Cobb Angle）變化是治療成效的唯一指標。宸新復健科配置專業 X 光設備：
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>即時診斷：</strong> 初診當下立刻拍攝全脊椎影像，醫師直接測量角度，判斷是否需要背架或復健。</li>
+                      <li><strong>精準監控：</strong> 復健每 3-6 個月需重新拍攝，確認側彎是否有惡化或改善。</li>
+                  </ul>
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">優勢二：<a href="/about/clinic/scoliosis-rack" class="text-cyan-400 hover:underline">脊椎側彎專用矯正架</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <strong>對抗地心引力的秘密武器。</strong>
+                  這不是一般的健身器材，而是類似德國施羅斯 (Schroth) 概念的懸吊系統。
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>3D 懸吊：</strong> 利用繩索與帶子，將身體懸掛在特定角度，利用地心引力幫助脊椎「去旋轉 (De-rotation)」。</li>
+                      <li><strong>被動伸展 + 主動發力：</strong> 在矯正架上，我們可以固定骨盆（地基），讓患者針對塌陷的胸廓進行「旋轉式呼吸」，由內而外撐開凹陷的脊椎。這是徒手治療難以做到的精準度。</li>
+                  </ul>
+              </p>
+          </div>
+              <p><img src="/images/diseases/spine-hip/scolio/e.jpg" alt="脊椎側彎訓練架"></p>
+        
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">優勢三：<a href="/treatments/manual" class="text-cyan-400 hover:underline">專業物理治療師一對一指導</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <strong>側彎矯正運動非常複雜，做錯比沒做更糟。</strong>
+                  我們的治療師受過脊椎側彎特定運動的專業訓練。
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>客製化運動：</strong> 每位患者的彎曲方向不同（胸椎右彎、腰椎左彎等），治療師會設計專屬的「反向運動」。</li>
+                      <li><strong>大腦重塑：</strong> 側彎患者的大腦已經習慣歪斜的身體（覺得歪的才是正的）。治療師利用鏡子、觸覺回饋，重新訓練大腦的「本體感覺」，讓患者學會什麼才是「正」的姿勢。</li>
+                  </ul>
+              </p>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">📊 治療黃金階梯：Cobb Angle 決定策略</h3>
+          <p style="color: #e2e8f0 !important;">透過 X 光測量出的柯氏角 (Cobb Angle)，決定了我們的治療方針：</p>
+          <ul style="color: #e2e8f0 !important;">
+              <li><strong>0° - 20° (輕度)：</strong> <strong style="color: #22d3ee !important;">黃金觀察期。</strong> 重點在於「特定矯正運動」與「姿勢調整」，目標是防止惡化。</li>
+              <li><strong>20° - 40° (中度)：</strong> <strong style="color: #22d3ee !important;">積極治療期。</strong> 必須穿戴「矯正背架 (Brace)」，並搭配高強度的「矯正架運動」。目標是矯正角度與維持外觀。</li>
+              <li><strong>> 40° (重度)：</strong> <strong style="color: #22d3ee !important;">手術評估期。</strong> 若快速惡化影響心肺功能，可能需轉介骨科評估手術。但術前術後仍需復健維持柔軟度。</li>
+          </ul>
+      
+          
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 挺直背脊，找回自信！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">脊椎側彎是一場持久戰，家長與孩子的配合至關重要。宸新提供「X光檢測、背架諮詢、矯正架運動」的一站式服務。不要等到背部隆起才後悔，趁著骨骼還在生長，讓我們幫孩子把脊椎「拉」回來！</p>
+              <p style="font-weight: bold; color: #059669 !important;">懷疑孩子有側彎？立即預約 X 光檢測！</p>
+          </div>
+        `,
+        symptoms: [
+          '肩膀一高一低',
+          '肩胛骨單側隆起',
+          '彎腰時背部單側凸起',
+          '身體中心線偏移，衣服容易穿歪'    
+          
+        ],
+        treatments: [
+          '<a href="/about/clinic/x-ray" class="text-cyan-400 hover:underline">院內 X 光即時追蹤</a>🔍️ ',
+          '<a href="/about/clinic/scoliosis-rack" class="text-cyan-400 hover:underline">脊椎側彎專用矯正架</a>🔍️',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">專業物理治療師一對一指導</a>🔍️',
+          '穿戴背架或手術治療'
+        ],
+        seoKeywords: [
+          '脊椎側彎',
+          'Scoliosis',
+          '脊椎矯正',
+          '脊椎側彎矯正架',
+          '施羅斯運動',
+          'X光檢查',
+          '兒童復健',
+          '物理治療'
+        ],
+        seoDescription: '脊椎側彎矯正權威。宸新復健科擁有院內X光機即時追蹤，引進專業脊椎側彎矯正架，由物理治療師一對一指導3D矯正運動，把握兒童黃金治療期。',
+        images: [
+          { src: '/images/diseases/spine-hip/scolio/a.jpg', alt: '脊椎椎間盤突出構造圖'
+          }
+        ]
+      },
+
       {
         id: 'cervical-disc-degeneration',
         slug: 'cervical-disc-degeneration',
@@ -436,7 +584,164 @@ export const diseaseCategories: DiseaseCategory[] = [
         ]
       },
       
-  
+ {
+        id: 'muscle-tmd',
+        slug: 'muscle-tmd',
+        title: '顳顎關節症候群',
+        description: '臉頰痠痛、頭痛、脖子緊？這不只是壓力大，而是顳顎關節肌肉發炎！深入解析「頸部與下巴」的連動關係，以及徒手治療與高能量雷射如何放鬆深層筋膜。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：早晨起床覺得兩側臉頰痠軟無力，好像整晚都在咬牙切齒？或是工作壓力大時，太陽穴兩側開始抽痛，連帶脖子也覺得緊繃僵硬？甚至有時候張開嘴巴，覺得臉頰肌肉「卡卡的」拉不開？</p>
+                <br>
+          <p style="color: #e2e8f0 !important;">這些症狀往往被誤認為是單純的偏頭痛或肩頸痠痛，但其實這很可能是<strong>「肌肉型顳顎關節症候群」</strong>。不同於關節骨頭的問題，這類型的疼痛源自於<strong>「咬合肌群」</strong>與<strong>「頸部肌群」</strong>的過度緊繃</strong>。宸新復健科透過整合性的治療方案 — 從藥物控制、物理復健，到進階的徒手放鬆與高能量雷射，協助您解開這些打結的肌肉，找回放鬆的笑容。</p>
+      
+      
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 為什麼臉頰與脖子會一起痛？
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">顳顎關節（下巴關節）是全身最忙碌的關節，我們說話、吞嚥、咀嚼都要靠它。控制這個關節的肌肉群，與控制頸部的肌肉群有著密不可分的<strong>「連動關係」</strong>。</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">咬合肌群過勞：</strong> 
+                          當我們因為壓力大不自覺<strong>咬緊牙關</strong>，或是夜間磨牙時，臉頰兩側的「嚼肌」與太陽穴的「顳肌」會長時間處於收縮狀態，導致肌肉缺氧、乳酸堆積，形成<strong>激痛點 </strong>，引發臉頰痛與頭痛。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">頸部肌肉的牽連：</strong> 
+                          現代人常見的<strong>「烏龜頸」</strong>（頭部前傾），會強迫頸部肌肉（如胸鎖乳突肌、斜方肌）用力拉住頭部。研究發現，頸部肌肉緊繃會透過筋膜鏈直接拉扯下顎，導致嘴巴張不開或咬合位置改變。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">轉移痛 (Referred Pain)：</strong> 
+                          這是一個很重要的概念！脖子痛可能會傳導到下巴，下巴痛也可能傳導到耳朵或太陽穴。所以治療顳顎關節，<strong>絕對不能只醫嘴巴，必須連脖子一起治療！</strong>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      <p><img src="/images/diseases/spine-hip/tmd/b.jpg" alt="顳顎關節症候群肌肉圖"></p>
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">⚠️ 常見症狀：是不是肌肉在抗議？</h3>
+          <p style="color: #e2e8f0 !important;">如果不確定自己是不是肌肉型問題，請檢視以下症狀：</p>
+          <ul style="color: #e2e8f0 !important;">
+              <li><strong>臉頰痠痛：</strong> 尤其是早上起床時，感覺臉頰兩側肉很痠。</li>
+              <li><strong>太陽穴頭痛：</strong> 吃硬的東西時，太陽穴會有脹痛感（這是顳肌在痛）。</li>
+              <li><strong>張口受限但無卡卡聲：</strong> 嘴巴張不大，感覺像是被肌肉「拉住」或是「緊緊的」，而不一定是關節卡住，有卡卡聲代表關節跑位了，建議搭配牙科治療。</li>
+              <li><strong>肩頸僵硬：</strong> 伴隨明顯的脖子痛、肩膀緊，且當脖子放鬆時，牙齒咬合感覺比較輕鬆。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新全方位治療策略</h3>
+          <p style="color: #e2e8f0 !important;">針對肌肉筋膜型的顳顎障礙，單純吃藥往往治標不治本。我們採用<strong>「內外兼修」</strong>的治療策略：</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 第一線：藥物與物理復健</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <strong>藥物治療：</strong> 急性期我們會開立<strong>非類固醇消炎藥</strong>與<strong>肌肉鬆弛劑</strong>，幫助過度亢奮的咀嚼肌「強制關機」休息。<br>
+                  <strong>物理復健：</strong> 利用雷射或是熱療增加臉部血液循環，代謝堆積的乳酸；搭配經皮電刺激阻斷神經痛覺，緩解肌肉痙攣。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 關鍵技術：<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手放鬆治療</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  這是解決肌肉緊繃最直接的方法。物理治療師會針對特定的肌群進行放鬆：
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>口內放鬆術：</strong> 治療師戴上手套，直接伸入您的口腔內，按壓放鬆<strong>「內翼肌」</strong>與<strong>「外翼肌」</strong>。這些是藏在深層、從臉外面按不到的肌肉，往往是張口受限的主因。</li>
+                      <li><strong>頸椎筋膜鬆動：</strong> 放鬆緊繃的胸鎖乳突肌與枕下肌群，解除「烏龜頸」對下巴的拉扯，從源頭阻斷轉移痛。</li>
+                      <li><strong>顳顎關節鬆動：</strong> 透過手法輕柔地牽引關節，增加關節腔空間，減少壓力。</li>
+                  </ul>
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. <a href="/treatments/high-intensity-laser" class="text-cyan-400 hover:underline">高能量雷射 (HILT)</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  如果徒手治療太痛，或是肌肉發炎嚴重，<strong>高能量雷射</strong>是最佳選擇。
+                  <br>
+                  <strong>深層穿透：</strong> 不同於一般熱敷只在表皮，高能量雷射能穿透至皮下數公分，直達深層的咀嚼肌與頸椎小面關節。
+                  <br>
+                  <strong>立即放鬆：</strong> 透過光生物調節作用，能快速促進血液循環，帶走發炎物質。治療時會感受到<strong>溫暖舒適的熱感</strong>，許多患者在治療過程中就會感覺緊繃的臉頰瞬間鬆開，張口幅度立即改善。
+              </p>
+          </div>
+      
+      <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+        <h4 style="margin-top: 0; color: #0e7490 !important;">4. 進階醫療：跨專科轉介與合作</h4>
+        <p style="margin-bottom: 0; color: #334155 !important;">
+            若在保守治療後狀況仍惡化，出現<strong>張口幅度明顯變小</strong>（張口受限）、或關節內部開始出現<strong>卡卡聲與彈響</strong>，這代表問題可能已經從肌肉層面延伸到關節結構。
+            <br><br>
+            宸新復健科擁有<strong>長期配合的口腔外科專科醫師</strong>，能協助您快速轉介並安排最合適的進階治療，包括：
+            <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                <li><strong>客製化咬合板：</strong> 減少夜間磨牙對關節的破壞，保護關節盤。</li>
+                <li><strong>關節腔注射：</strong> 施打玻尿酸潤滑關節，或 PRP 修復關節盤。</li>
+                <li><strong>關節鏡手術：</strong> 針對嚴重沾黏或結構破壞的微創手術選擇。</li>
+            </ul>
+        </p>
+      </div>
+  <p><img src="/images/diseases/spine-hip/tmd/c.jpg" alt="顳顎關節症候群治療"></p>
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：居家放鬆小撇步</h3>
+          <p style="color: #e2e8f0 !important;">回家後，請保持良好的習慣，避免肌肉再次緊繃：</p>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">1. "N" 字休息法</h4>
+              <p style="color: #e2e8f0 !important;">發出 "N" 的音，將舌尖輕輕頂在上排門牙後方的牙肉上。保持這個姿勢，牙齒微微分開（不要咬合）。這是下顎肌肉最放鬆的姿勢，請隨時提醒自己保持在這個狀態。</p>
+          </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 溫熱敷按摩</h4>
+              <p style="color: #e2e8f0 !important;">睡前使用熱毛巾敷在臉頰兩側與後頸部，每次 10-15 分鐘。熱敷後輕輕畫圈按摩臉頰肌肉，能有效減少夜間磨牙的機率。</p>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 放鬆肌肉，找回張口的自在！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">大多數的顳顎關節疼痛，源頭都是那條緊繃的肌肉神經。不需要急著擔心骨頭壞掉，透過藥物控制，搭配專業的徒手治療鬆解沾黏，以及高能量雷射的深層修復，我們能幫您卸下臉部與頸部的重擔。宸新復健科，讓您輕鬆開口，不再咬牙切齒！</p>
+              <p style="font-weight: bold; color: #059669 !important;">臉頰痠痛、頭痛不已？立即預約肌肉放鬆評估！</p>
+          </div>
+        `,
+        symptoms: [
+          '太陽穴周圍脹痛或牙痛感',
+          '嘴巴張不開，感覺肌肉緊繃拉住',
+          '肩頸僵硬，尤其是後腦勺與頸部連接處',
+          '壓力大或疲勞時症狀加劇'
+        ],
+        treatments: [
+          '藥物治療及物理復健',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手口內放鬆/頸椎鬆動治療</a>🔍️',
+          '<a href="/treatments/high-intensity-laser" class="text-cyan-400 hover:underline">高能量雷射 (HILT)</a>🔍️',
+          '休息放鬆與姿勢矯正'
+        ],
+        seoKeywords: [
+          '顳顎關節症候群',
+          '肌肉型TMD',
+          '臉頰痠痛',
+          '徒手治療',
+          '高能量雷射',
+          '頸源性頭痛',
+          '磨牙治療'
+        ],
+        seoDescription: '臉頰痠痛、張口困難？這可能是肌肉型顳顎關節症候群。宸新復健科提供徒手治療放鬆深層筋膜，搭配高能量雷射快速止痛，解決緊繃問題。',
+        images: [
+          { src: '/images/diseases/spine-hip/tmd/a.jpg', alt: '顳顎關節症候群' 
+          }
+        ]
+
+      },
+
       {
         id: 'hip-osteoarthritis',
         slug: 'hip-osteoarthritis',

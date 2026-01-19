@@ -2,6 +2,8 @@
 import React from 'react'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
+// 修改這裡：直接引入原本的 Modal 組件
+import ClinicHoursModal from '@/components/ClinicHoursModal'
 
 // ==========================================
 // 1. Meta 設定
@@ -35,7 +37,6 @@ export default function BookingPage() {
   const jsonLdBooking = {
     '@context': 'https://schema.org',
     '@graph': [
-      // 定義這是一個醫療預約頁面
       {
         '@type': 'MedicalWebPage',
         '@id': `${currentUrl}#webpage`,
@@ -47,12 +48,11 @@ export default function BookingPage() {
             'name': '新竹宸新復健科',
             'url': siteUrl
         },
-        // 定義潛在動作：預約
         'potentialAction': {
           '@type': 'ReserveAction',
           'target': {
             '@type': 'EntryPoint',
-            'urlTemplate': 'https://lin.ee/FHj3mIs', // 以 Line 為主要預約入口
+            'urlTemplate': 'https://lin.ee/FHj3mIs',
             'actionPlatform': [
               'http://schema.org/DesktopWebPlatform',
               'http://schema.org/MobileWebPlatform'
@@ -64,7 +64,6 @@ export default function BookingPage() {
           }
         }
       },
-      // App 資訊 (Android)
       {
         '@type': 'MobileApplication',
         'name': '宸新復健科 App (Android)',
@@ -73,7 +72,6 @@ export default function BookingPage() {
         'installUrl': 'http://bit.ly/2Q8FdeK',
         'author': { '@type': 'Organization', 'name': '宸新復健科' }
       },
-      // App 資訊 (iOS)
       {
         '@type': 'MobileApplication',
         'name': '宸新復健科 App (iOS)',
@@ -90,16 +88,11 @@ export default function BookingPage() {
       <JsonLd data={jsonLdBreadcrumb} />
       <JsonLd data={jsonLdBooking} />
 
-      {/* UI 樣式保留您的設定：
-          pt-4 (上 16px) 
-          pb-16 (下 64px) 
-          md:pt-8 (電腦版上 32px)
-      */}
       <div className="flex-grow pt-4 pb-16 md:pt-8 px-4 bg-slate-900 min-h-screen">
         <section id="booking" className="fade-in max-w-5xl mx-auto">
           
           {/* 標題區 */}
-          <div className="flex flex-col items-center gap-4 mb-12 text-center">
+          <div className="flex flex-col items-center gap-4 mb-6 text-center">
             <div className="flex items-center gap-3">
                 <span className="bg-pink-500/20 text-pink-400 p-3 rounded-lg border border-pink-500/30">
                   <i className="fa-solid fa-calendar-check text-xl"></i>
@@ -109,16 +102,23 @@ export default function BookingPage() {
                 </h1>
             </div>
             
-            <p className="text-slate-400 text-lg w-full">
+            <p className="text-slate-400 text-lg w-full max-w-2xl">
                 為了節省您寶貴的等待時間，建議多加利用<strong className="text-cyan-400 font-normal">手機 App</strong> 或 <strong className="text-green-400 font-normal">Line 官方帳號</strong>進行預約掛號與查詢看診進度。
             </p>
+
+            {/* ==========================================
+                修改：直接使用原本包含按鈕的 Modal 組件
+                ========================================== */}
+            <div className="mt-0">
+               <ClinicHoursModal />
+            </div>
+            
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             
             {/* Line Block */}
             <div className="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl p-8 text-center hover:border-green-400/50 hover:shadow-[0_0_20px_rgba(74,222,128,0.2)] transition-all duration-300 group flex flex-col items-center relative overflow-hidden">
-              
               <div className="w-20 h-20 bg-green-400/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <i className="fa-brands fa-line text-4xl text-green-400"></i>
               </div>
@@ -168,7 +168,6 @@ export default function BookingPage() {
                 <i className="fa-solid fa-download mr-2"></i> 點擊下載
               </a>
             </div>
-
 
             {/* Android Block */}
             <div className="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl p-8 text-center hover:border-green-500/50 hover:shadow-[0_0_20px_rgba(34,197,94,0.2)] transition-all duration-300 group flex flex-col items-center">

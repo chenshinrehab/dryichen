@@ -87,9 +87,7 @@ export default function DoctorsPage() {
                    
                    <div className="flex flex-col lg:flex-row items-center">
                       
-                      {/* 調整 1: 照片寬度調整
-                          lg:w-[55%] -> lg:w-[40%] (縮小照片寬度)
-                      */}
+                      {/* 照片區域 */}
                       <div className="w-full lg:w-[40%] relative aspect-[9/16] shrink-0 bg-slate-800 self-start">
                          <img 
                            src="/images/doctor/c.jpg"
@@ -99,9 +97,7 @@ export default function DoctorsPage() {
                          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-slate-900/30"></div>
                       </div>
 
-                      {/* 調整 2: 文字區塊寬度調整
-                          lg:w-[45%] -> lg:w-[60%] (增加文字區塊寬度以填滿剩餘空間)
-                      */}
+                      {/* 文字區域 */}
                       <div className="w-full lg:w-[60%] p-8 flex flex-col justify-center relative z-10">
                           
                           <div className="mb-6">
@@ -147,11 +143,9 @@ export default function DoctorsPage() {
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
-                                    {/* 調整 3: 標題字體加大 text-sm -> text-lg */}
                                     <h3 className="text-lg font-bold text-cyan-400 uppercase tracking-wider mb-3 border-b border-slate-700 pb-2 flex items-center">
                                         <i className="fa-solid fa-graduation-cap mr-2"></i> 學歷與資格
                                     </h3>
-                                    {/* 調整 4: 列表字體加大 text-sm -> text-base */}
                                     <ul className="space-y-2 text-slate-300 text-base">
                                       <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>國立台灣大學醫學系 畢業</li>
                                       <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>中華民國復健科 專科醫師</li>
@@ -161,11 +155,9 @@ export default function DoctorsPage() {
                                 </div>
 
                                 <div>
-                                    {/* 調整 5: 標題字體加大 text-sm -> text-lg */}
                                     <h3 className="text-lg font-bold text-cyan-400 uppercase tracking-wider mb-3 border-b border-slate-700 pb-2 flex items-center">
                                         <i className="fa-solid fa-briefcase mr-2"></i> 專業經歷
                                     </h3>
-                                    {/* 調整 6: 列表字體加大 text-sm -> text-base */}
                                     <ul className="space-y-2 text-slate-300 text-base">
                                       <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>新竹馬偕紀念醫院 主治醫師</li>
                                       <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>台灣增生療法醫學會會員</li>
@@ -177,8 +169,18 @@ export default function DoctorsPage() {
 
                           </div>
                           
+                          {/* 修改重點：
+                             1. padding 加大至 px-8 py-3
+                             2. 加入 Flex, gap-2 與 group 設定
+                             3. 加入 Icon (聽診器) 與 hover 動畫
+                             4. 顏色維持 bg-cyan-600
+                          */}
                           <div className="mt-8 pt-5 border-t border-slate-700/50 flex flex-wrap gap-4">
-                              <Link href="/treatments" className="px-5 py-2 bg-cyan-600 hover:bg-cyan-500 text-white rounded-full transition-colors font-bold text-sm shadow-lg shadow-cyan-500/20 text-center flex-grow sm:flex-grow-0">
+                              <Link 
+                                href="/treatments" 
+                                className="px-8 py-3 bg-cyan-600 hover:bg-cyan-500 text-white rounded-full transition-all duration-300 font-bold flex items-center gap-2 group shadow-lg shadow-cyan-500/20 cursor-pointer"
+                              >
+                                  <i className="fa-solid fa-stethoscope text-xl group-hover:scale-110 transition-transform"></i>
                                   查看治療項目
                               </Link>
                               
