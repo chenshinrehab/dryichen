@@ -21,6 +21,7 @@ export interface DiseaseItem {
 export interface DiseaseCategory {
   slug: string
   title: string
+  lastModified?: string;
   description: string
   image: string
   diseases: DiseaseItem[]
@@ -3903,6 +3904,7 @@ export const diseaseCategoriesList = diseaseCategories.map((category) => ({
   seoKeywords: category.seoKeywords,
   seoDescription: category.seoDescription,
   // 針對裡面的疾病，把 "contentHtml" 拿掉
+  lastModified: category.lastModified,
   diseases: category.diseases.map((disease) => {
 
     const { contentHtml, treatments, images, ...lightweightData } = disease;
