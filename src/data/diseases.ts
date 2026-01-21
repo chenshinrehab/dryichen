@@ -3884,7 +3884,147 @@ export const diseaseCategories: DiseaseCategory[] = [
             }
           ]
 
+      },
+      {
+        id: 'posterior-tibial-tendonitis',
+        slug: 'posterior-tibial-tendonitis',
+        lastModified: '2026-01-21',
+        title: '脛後肌腱炎 ',
+        description: '腳踝內側腫痛？足弓塌陷變扁平足？這不只是腳的問題，可能跟脊椎力線有關！宸新復健科運用院內X光追蹤與脊椎側彎矯正架，從骨盆與脊椎源頭調整，徹底解決足部疼痛。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的困擾：走路走久了，<strong>腳踝內側骨頭下方</strong>開始紅腫刺痛？發現原本好好的足弓好像慢慢「垮」下去了，變成了扁平足？甚至從後面看，腳跟明顯往外歪斜？</p>
+                <br>
+          <p style="color: #e2e8f0 !important;">這就是典型的<strong>「脛後肌腱炎」</strong>，又稱為<strong>成人後天性扁平足</strong>。這不僅是肌腱發炎，更是足部地基的崩塌。值得注意的是，腳底的失衡往往源自於核心與脊椎的歪斜。在宸新復健科，我們不只醫腳，更擁有<strong>院內 X 光機</strong>即時追蹤骨骼排列，並結合專業物理治療師與<strong>脊椎側彎矯正架</strong>，從軀幹核心調整力線，減輕足部負擔，提供全方位的根治方案。</p>
+         <p><img src="/images/diseases/ankle/tp/b.jpg" alt="脛後肌腱炎"></p>
+      
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 什麼是脛後肌腱？足弓的「吊橋鋼纜」
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">脛後肌腱是一條沿著小腿內側骨頭，繞過內踝，連接到腳底舟狀骨的強壯肌腱。它的功能至關重要：</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">支撐足弓：</strong> 
+                          它像吊橋的鋼纜一樣，負責在我們踩地時將足弓「拉起來」，提供避震與推進力。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">過勞與撕裂：</strong> 
+                          當體重過重、久站久走，或是核心無力導致骨盆歪斜，這條肌腱會承受過大的拉力。久而久之，肌腱會像被拉鬆的橡皮筋一樣產生微小撕裂，最終導致足弓塌陷。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">動力鏈的連鎖反應：</strong> 
+                          這也是我們最重視的！足弓塌陷會導致膝蓋內轉 (X型腿)、骨盆前傾，甚至引發脊椎側彎。反之，脊椎側彎也會導致雙腳受力不均，加速單側足弓崩塌。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+           <p><img src="/images/diseases/ankle/tp/c.jpg" alt="脛後肌腱炎造成原因" style="width: 100%; height: auto;"></p>
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 自我檢測：你是不是危險族群？</h3>
+          <p style="color: #e2e8f0 !important;">除了腳踝內側痛，您可以透過以下方式檢查：</p>
+          <ul style="color: #e2e8f0 !important;">
+              <li><strong>踮腳尖測試 ：</strong> 扶著牆壁，嘗試用患側單腳踮腳尖。如果<strong>無法踮起來</strong>，或是踮起來時腳跟沒有往內轉，代表肌腱已經嚴重受損。</li>
+              <li><strong>太多腳趾徵象 ：</strong> 從背後看，患側的腳趾頭會往外撇，看到比好腳更多的腳趾頭（因為足弓垮了，前足外展）。</li>
+              <li><strong>鞋底磨損：</strong> 鞋底內側磨損特別嚴重。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新獨家優勢：從脊椎顧到足底</h3>
+          <p style="color: #e2e8f0 !important;">治療脛後肌腱炎，不能只是「頭痛醫頭，腳痛醫腳」。宸新復健科整合了高科技設備與專業團隊，提供業界少見的全方位治療：</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 超音波檢查搭配 X 光機，精準判讀診斷</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  我們不只用超音波看肌腱，更用 <strong>X 光</strong>看骨骼結構。
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>脛後肌超音波掃描：</strong> 搭配高解析度超音波可以清楚看到整條肌腱的結構，有無發炎或撕裂，經由超音波導引注射治療。</li>
+                      <li><strong>脊椎X光拍攝：</strong> 很多足部問題源自於長短腳或脊椎側彎。透過脊椎 X 光，我們能找出導致足部受力不均的「核心元兇」。</li>
+                  </ul>
+              </p>
+          </div>
+      
+   <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+          <h4 style="margin-top: 0; color: #0e7490 !important;">2. 再生治療💉：修復受損的鋼纜</h4> 
+          <p style="margin-bottom: 0; color: #334155 !important;">除了矯正結構，針對已經受傷發炎的肌腱，我們提供積極的修復方案：</p>
+          <ul style="margin-top: 0.5rem; color: #334155 !important;">
+              <li><strong><a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>：</strong> 在超音波導引下，將高濃度血小板注入撕裂的脛後肌腱中，強化肌腱結構，避免斷裂。</li>
+              <li><strong><a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療(ESWT)</a>：</strong> 擊碎慢性沾黏組織，促進肌腱周圍的血液循環。</li>
+          </ul>
+        </p>
+     </div>
+
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. <a href="/treatments/manual" class="text-cyan-400 hover:underline">專業物理治療師團隊</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  我們的治療師具備脊椎矯正與足部生物力學的雙重專業。
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>縮足運動：</strong> 手把手教您如何用腳底小肌肉重建足弓。</li>
+                      <li><strong>步態訓練：</strong> 矯正走路內八或外八的習慣。</li>
+                      <li><strong>客製化鞋墊建議：</strong> 針對結構性扁平足，提供專業的鞋墊選配建議。</li>
+                  </ul>
+              </p>
+          </div>
+      
+                <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">4. <a href="/about/clinic/scoliosis-rack" class="text-cyan-400 hover:underline">脊椎側彎矯正架</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <strong>這與腳痛有什麼關係？關係大了！</strong>
+                  如果骨盆歪斜或脊椎側彎，身體重心會偏移，導致單腳足弓承受巨大壓力，肌腱炎永遠好不了。
+                  我們利用專業的<strong>矯正架懸吊系統</strong>，由物理治療師指導，矯正軀幹與骨盆的排列，讓身體重心回正，徹底解除施加在足弓上的異常壓力。這是真正治本的關鍵。
+              </p>
+          </div>
+       <p><img src="/images/diseases/ankle/tp/d.jpg" alt="脛後肌腱炎治療方式"></p>
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 救足弓，要從「準確診斷」開始！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">脛後肌腱炎是身體力線崩塌的警訊。在宸新復健科，我們不只看您的腳，更看您的脊椎與骨盆。透過院內超音波及 X 光追蹤、增生注射、脊椎側彎矯正架與專業物理治療，我們從源頭改善受力機制，讓您的雙腳重獲支撐力！</p>
+              <p style="font-weight: bold; color: #059669 !important;">走路腳踝內側痛？立即預約全身力線評估！</p>
+          </div>
+        `,
+        symptoms: [
+          '腳踝內側（內踝下方）紅腫刺痛',
+          '走路久了腳底板痠痛',
+          '無法單腳踮腳尖',
+          '足弓塌陷，變成後天性扁平足',
+              ],
+        treatments: [
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療及體態評估</a>🔍️',
+          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️',
+          '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療(ESWT)</a>🔍️',
+          '客製化足弓鞋墊'
+        ],
+        seoKeywords: [
+          '脛後肌腱炎',
+          '後天性扁平足',
+          '足弓塌陷',
+          '腳踝內側痛',
+          '脊椎側彎矯正',
+          'X光檢查',
+          '物理治療'
+        ],
+        seoDescription: '脛後肌腱炎造成腳踝內側痛與足弓塌陷。宸新復健科獨家結合院內X光追蹤與脊椎側彎矯正架，從骨盆脊椎源頭調整力線，徹底解決足部疼痛。',
+        images: [
+          { src: '/images/diseases/ankle/tp/a.jpg', alt: '脛後肌腱炎示意圖' 
+          }
+        ]
       }
+
     ]
   }
 ]
