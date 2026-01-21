@@ -12,6 +12,7 @@ export interface WeightLossMetadata {
   description: string;
   image: string;
   features?: string[];
+  lastModified?: string;
   
   // SEO 欄位 (列表頁可能需要)
   seoTitle?: string;
@@ -42,6 +43,7 @@ const fullWeightLossData: WeightLossProgram[] = [
   {
     slug: 'mounjaro',
     title: '猛健樂 (Mounjaro)',
+    lastModified: '2026-01-21',
     subtitle: '新一代雙重腸泌素受體促效劑',
     description: '新一代雙重腸泌素(GIP/GLP-1)受體促效劑，提供更卓越的體重控制效果。',
     image: '/images/weight-loss/a.jpg',
@@ -257,6 +259,7 @@ const fullWeightLossData: WeightLossProgram[] = [
   {
     slug: 'Wegovy',
     title: '週纖達 (Wegovy)',
+    lastModified: '2026-01-21',
     subtitle: 'GLP-1 受體促效劑',
     description: '協助控制體重的注射藥物，幫助您減少飢餓感，輕鬆達成減重目標。',
     image: '/images/weight-loss/b.jpg',
@@ -448,6 +451,7 @@ const fullWeightLossData: WeightLossProgram[] = [
   {
     slug: 'bone-age',
     title: '兒童骨齡評估',
+    lastModified: '2026-01-21',
     subtitle: '掌握黃金生長發育期',
     description: '透過左手X光片判讀骨骼成熟度，預測成年身高，掌握黃金生長發育期。',
     image: '/images/weight-loss/c.jpg',

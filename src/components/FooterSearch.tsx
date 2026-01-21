@@ -3,16 +3,18 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-// 確保導入的是我們剛剛建立的輕量版 List
+// 1. 導入所有資料來源的輕量列表
 import { treatmentsList } from '@/data/treatments'
 import { diseaseCategoriesList } from '@/data/diseases'
 import { newsList } from '@/data/news'
+import { facilitiesData } from '@/data/facilities'     // ✅ 新增：診所設備
+import { weightLossPrograms } from '@/data/weightLoss' // ✅ 新增：減重骨齡
 
 // 定義搜尋結果介面
 interface SearchResult {
   title: string
   url: string
-  type: string // '治療' | '疾病' | '文章'
+  type: string
 }
 
 export default function FooterSearch() {
@@ -29,40 +31,72 @@ export default function FooterSearch() {
     const lowerQuery = query.toLowerCase()
     const newResults: SearchResult[] = []
 
-    // 1. 搜尋治療項目 (改用 treatmentsList)
+    // Helper: 通用搜尋判斷函式 (檢查標題、描述、關鍵字)
+    const isMatch = (item: any) => {
+        const titleMatch = item.title?.includes(query)
+        const descMatch = item.description?.includes(query) || item.summary?.includes(query)
+        // 檢查 keywords (有些資料結構沒有 keywords 欄位，所以要用 ?. )
+        const keywordMatch = item.keywords?.some((k: string) => k.includes(query)) || 
+                             item.seoKeywords?.some((k: string) => k.includes(query))
+        
+        return titleMatch || descMatch || keywordMatch
+    }
+
+    // ==========================================
+    // 1. 搜尋治療項目 (Treatments)
+    // ==========================================
     treatmentsList.forEach(t => {
-      // 確保欄位存在再進行比對
-      const matchTitle = t.title?.includes(query)
-      const matchDesc = t.description?.includes(query)
-      const matchSlug = t.slug?.includes(lowerQuery)
-      
-      if (matchTitle || matchDesc || matchSlug) {
+      if (isMatch(t)) {
         newResults.push({ title: t.title, url: `/treatments/${t.slug}`, type: '治療' })
       }
     })
 
-    // 2. 搜尋疾病衛教 (改用 diseaseCategoriesList)
+    // ==========================================
+    // 2. 搜尋疾病衛教 (Diseases)
+    // ==========================================
     diseaseCategoriesList.forEach(cat => {
       cat.diseases.forEach(d => {
-        // 使用 (d as any) 避免 TypeScript 檢查 Metadata 介面時若無 seoKeywords 欄位會報錯
-        // 這樣即使您的 interface 沒更新，這裡也能正常運作
+        // 疾病列表比較特殊，keywords 可能在 seoKeywords 裡
+        // 這裡直接檢查 title 和 seoKeywords
         const keywords = (d as any).seoKeywords as string[] | undefined;
+        const symptoms = (d as any).symptoms as string[] | undefined; // 如果有把症狀加回列表
         
-        const matchTitle = d.title.includes(query);
-        const matchKeywords = keywords?.some(k => k.includes(query));
+        const matchTitle = d.title.includes(query)
+        const matchKeywords = keywords?.some(k => k.includes(query))
+        const matchSymptoms = symptoms?.some(s => s.includes(query))
 
-        if (matchTitle || matchKeywords) {
-          // 建議網址改用 slug，若 id 與 slug 相同則沒差
+        if (matchTitle || matchKeywords || matchSymptoms) {
           newResults.push({ title: d.title, url: `/diseases/${cat.slug}/${d.slug}`, type: '疾病' })
         }
       })
     })
 
-    // 3. 搜尋最新文章 (改用 newsList)
+    // ==========================================
+    // 3. 搜尋最新文章 (News)
+    // ==========================================
     newsList.forEach(n => {
-      if (n.title.includes(query) || n.summary.includes(query)) {
+      if (isMatch(n)) {
         newResults.push({ title: n.title, url: `/about/news/${n.id}`, type: '文章' })
       }
+    })
+
+    // ==========================================
+    // 4. ✅ 新增：搜尋診所設備 (Facilities)
+    // ==========================================
+    facilitiesData.forEach(f => {
+        // 這裡會搜尋 title(如:專屬停車位), description, keywords
+        if (isMatch(f)) {
+            newResults.push({ title: f.title, url: `/about/clinic/${f.id}`, type: '設備' })
+        }
+    })
+
+    // ==========================================
+    // 5. ✅ 新增：搜尋減重與骨齡 (WeightLoss)
+    // ==========================================
+    weightLossPrograms.forEach(w => {
+        if (isMatch(w)) {
+            newResults.push({ title: w.title, url: `/weight-bone/${w.slug}`, type: '減重' })
+        }
     })
 
     // 取前 5 筆結果以免版面太長
@@ -80,26 +114,25 @@ export default function FooterSearch() {
                 type="text" 
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="搜尋疾病、治療 (如: 膝蓋)" 
-                className="w-full bg-slate-900/50 border border-slate-600 text-slate-200 text-sm rounded-lg px-4 py-2 pl-10 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all placeholder:text-slate-600"
+                placeholder="搜尋疾病、治療、停車位..." 
+                className="w-full bg-slate-900/50 border border-slate-600 text-slate-200 text-sm rounded-lg px-4 py-2 pl-10 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all placeholder:text-slate-500"
             />
             <i className="fa-solid fa-search absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 text-sm"></i>
         </div>
 
         {/* 搜尋結果列表 */}
         {results.length > 0 && (
-            <div className="mt-2 bg-slate-800 border border-slate-700 rounded-lg shadow-xl overflow-hidden animate-fade-in absolute z-50 w-full">
+            <div className="mt-2 bg-slate-800 border border-slate-700 rounded-lg shadow-xl overflow-hidden animate-fade-in absolute z-50 w-full left-0">
                 {results.map((res, idx) => (
                     <Link 
                         key={idx} 
                         href={res.url} 
-                        // 點擊後清空搜尋，避免選單擋住頁面
                         onClick={() => setQuery('')}
-                        className="block px-4 py-2 hover:bg-slate-700 transition-colors border-b border-slate-700/50 last:border-0"
+                        className="block px-4 py-3 hover:bg-slate-700 transition-colors border-b border-slate-700/50 last:border-0"
                     >
                         <div className="flex justify-between items-center">
                             <span className="text-slate-200 text-sm font-medium truncate flex-grow mr-2">{res.title}</span>
-                            <span className="text-xs bg-cyan-900/50 text-cyan-400 px-1.5 py-0.5 rounded border border-cyan-800 whitespace-nowrap">
+                            <span className="text-[10px] bg-cyan-900/40 text-cyan-300 px-2 py-0.5 rounded border border-cyan-500/20 whitespace-nowrap">
                                 {res.type}
                             </span>
                         </div>

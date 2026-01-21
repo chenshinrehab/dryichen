@@ -13,6 +13,7 @@ export interface NewsPost {
   summary: string;      // 列表頁顯示的短摘要
   coverImage: string;   // 封面圖
   contentHtml: string;  // ✨ 內文直接寫在這裡，統一管理
+  lastModified?: string;
   
   // SEO 專用欄位
   seoTitle?: string;
@@ -28,6 +29,7 @@ const fullNewsData: NewsPost[] = [
   {
     id: 'clinic-schedule',
     title: '宸新復健科門診公告',
+    lastModified: '2026-01-21',
     category: '門診公告',
     date: '2026-01-15',
     displayTag: '置頂貼文',
@@ -75,6 +77,7 @@ const fullNewsData: NewsPost[] = [
   {
     id: 'hyaluronic-diff',
     title: '打膝蓋剩下的玻尿酸，可以順便補臉嗎？',
+    lastModified: '2026-01-21',
     category: '衛教文章',
     date: '2026-01-17',
     summary: '門診一位大姊突發奇想：「醫美打臉好貴，膝蓋打剩的玻尿酸可以補法令紋嗎？」修但幾勒！雖然都叫玻尿酸，但機油跟水泥可是不能混用的喔！',
@@ -116,6 +119,7 @@ const fullNewsData: NewsPost[] = [
   {
     id: 'kneeclick',
     title: '膝蓋為何會喀喀響，是膝蓋退化了嗎?',
+    lastModified: '2026-01-21',
     category: '衛教文章',
     date: '2026-01-14',
     summary: '門診很常碰到病患來看診，詢問膝蓋為何會喀喀響，擔心膝蓋是不是退化了!',

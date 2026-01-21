@@ -41,6 +41,7 @@ const fullTreatmentsData: Treatment[] = [
   {
     slug: 'prp',
     title: '增生療法 / PRP',
+    lastModified: '2026-01-21',
     subtitle: '超音波導引、高濃度血小板注射',
     description: '透過注射高濃度血小板血漿 (PRP) 或高濃度葡萄糖，精準修復受損關節與韌帶。',
     image: '/images/treatments/a.jpg',
@@ -208,6 +209,7 @@ const fullTreatmentsData: Treatment[] = [
   {
     slug: 'shockwave',
     title: '聚焦式 / 發散式體外震波',
+    lastModified: '2026-01-21',
     subtitle: '瑞士頂級設備、擊碎鈣化與骨刺',
     description: '引進瑞士頂級震波設備，免開刀擊碎鈣化點，專治足底筋膜炎與頑固疼痛。',
     image: '/images/treatments/b.jpg',
@@ -363,6 +365,7 @@ const fullTreatmentsData: Treatment[] = [
   {
     slug: 'manual',
     title: '徒手治療',
+    lastModified: '2026-01-21',
     subtitle: '物理治療師一對一、骨骼筋膜調整',
     description: '專業物理治療師一對一評估，調整骨盆歪斜、脊椎側彎與筋膜放鬆。',
     image: '/images/treatments/c.jpg',
@@ -495,6 +498,7 @@ const fullTreatmentsData: Treatment[] = [
   {
     slug: 'high-intensity-laser',
     title: '高能量雷射治療 (HILT)',
+    lastModified: '2026-01-21',
     subtitle: '光速修復、深層止痛的黑科技',
     description: '引進美國頂級Summus高能量雷射，能穿透深層組織，提供立即性的止痛與消腫。專治急性運動傷害、兒童運動傷害與頑固性疼痛。',
     image: '/images/treatments/d.jpg',
@@ -610,7 +614,6 @@ const fullTreatmentsData: Treatment[] = [
   </table>
 </div>
 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <h3>📝 治療懶人包：醫師常見問答</h3>
 

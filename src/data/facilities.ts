@@ -463,7 +463,6 @@ const fullFacilitiesData: FacilityItem[] = [
   </table>
 </div>
 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <h3>📝 治療懶人包：醫師常見問答</h3>
 
