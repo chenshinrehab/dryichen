@@ -3,9 +3,10 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { treatments } from '@/data/treatments'
-import { diseaseCategories } from '@/data/diseases'
-import { newsData } from '@/data/news'
+// 確保導入的是我們剛剛建立的輕量版 List
+import { treatmentsList } from '@/data/treatments'
+import { diseaseCategoriesList } from '@/data/diseases'
+import { newsList } from '@/data/news'
 
 // 定義搜尋結果介面
 interface SearchResult {
@@ -28,24 +29,37 @@ export default function FooterSearch() {
     const lowerQuery = query.toLowerCase()
     const newResults: SearchResult[] = []
 
-    // 1. 搜尋治療項目
-    treatments.forEach(t => {
-      if (t.title.includes(query) || t.description.includes(query) || t.slug.includes(lowerQuery)) {
+    // 1. 搜尋治療項目 (改用 treatmentsList)
+    treatmentsList.forEach(t => {
+      // 確保欄位存在再進行比對
+      const matchTitle = t.title?.includes(query)
+      const matchDesc = t.description?.includes(query)
+      const matchSlug = t.slug?.includes(lowerQuery)
+      
+      if (matchTitle || matchDesc || matchSlug) {
         newResults.push({ title: t.title, url: `/treatments/${t.slug}`, type: '治療' })
       }
     })
 
-    // 2. 搜尋疾病衛教
-    diseaseCategories.forEach(cat => {
+    // 2. 搜尋疾病衛教 (改用 diseaseCategoriesList)
+    diseaseCategoriesList.forEach(cat => {
       cat.diseases.forEach(d => {
-        if (d.title.includes(query) || d.seoKeywords?.some(k => k.includes(query))) {
-          newResults.push({ title: d.title, url: `/diseases/${cat.slug}/${d.id}`, type: '疾病' })
+        // 使用 (d as any) 避免 TypeScript 檢查 Metadata 介面時若無 seoKeywords 欄位會報錯
+        // 這樣即使您的 interface 沒更新，這裡也能正常運作
+        const keywords = (d as any).seoKeywords as string[] | undefined;
+        
+        const matchTitle = d.title.includes(query);
+        const matchKeywords = keywords?.some(k => k.includes(query));
+
+        if (matchTitle || matchKeywords) {
+          // 建議網址改用 slug，若 id 與 slug 相同則沒差
+          newResults.push({ title: d.title, url: `/diseases/${cat.slug}/${d.slug}`, type: '疾病' })
         }
       })
     })
 
-    // 3. 搜尋最新文章
-    newsData.forEach(n => {
+    // 3. 搜尋最新文章 (改用 newsList)
+    newsList.forEach(n => {
       if (n.title.includes(query) || n.summary.includes(query)) {
         newResults.push({ title: n.title, url: `/about/news/${n.id}`, type: '文章' })
       }
@@ -79,6 +93,8 @@ export default function FooterSearch() {
                     <Link 
                         key={idx} 
                         href={res.url} 
+                        // 點擊後清空搜尋，避免選單擋住頁面
+                        onClick={() => setQuery('')}
                         className="block px-4 py-2 hover:bg-slate-700 transition-colors border-b border-slate-700/50 last:border-0"
                     >
                         <div className="flex justify-between items-center">
