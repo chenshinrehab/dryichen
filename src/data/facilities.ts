@@ -10,7 +10,7 @@ export interface FacilityMetadata {
   title: string;
   description: string; // 列表頁短描述 & Meta Description
   imageUrl: string;
-  keywords: string[];  // SEO 關鍵字 (保留在列表資料中通常沒問題，因為字串陣列不大)
+  keywords: string[];  // SEO 關鍵字
 }
 
 // 完整資料介面 (包含內文 HTML)
@@ -347,8 +347,7 @@ const fullFacilitiesData: FacilityItem[] = [
     <p style="color: #334155 !important;; margin-bottom: 1.5rem;">無論是想重回球場的運動員，還是深受肩膀痛困擾的長輩，宸新復健科都能為您提供最專業的協助。透過超音波導引與複合式震波治療，讓我們一起擊退疼痛，找回活動自如的快樂！</p>
     <p style="font-weight: bold; color: #059669 !important;;">歡迎預約諮詢，體驗精準醫療的魅力！</p>
 </div>
-    `,
-    imageUrl: '/images/clinic/f.jpg'
+    `
   },
 
   {
@@ -358,138 +357,8 @@ const fullFacilitiesData: FacilityItem[] = [
     keywords: ['高能量雷射', '消腫止痛', '腳踝扭傷', '肌肉拉傷', '光生物調節'],
     imageUrl: '/images/clinic/g.jpg',
     contentHtml: `
-    <p>您是否剛經歷了急性腳踝扭傷，腫得像麵龜一樣無法走路？或是深受坐骨神經痛折磨，卻又不敢開刀？當傳統的熱敷電療效果緩慢，而震波治療對急性發炎又太過刺激時，<strong>高能量雷射 (High Intensity Laser Therapy, HILT)</strong> 將是您最溫柔且強大的選擇。</p>
-<br>
-<p>且可施打於敏感部位，如肋骨、尾椎或手指頭等部位，或是對於不適合打針的族群(如凝血功能障礙或馬上要上場的球員)或不敢打針的族群(小朋友)，都可提供有效的止痛及治療</p>
-<br>
-<p>不同於傳統復健科常見的「低能量雷射」，宸新復健科引進的<strong>美國頂級Summus高能量雷射</strong>，功率是傳統雷射的 50 倍以上。它能像光速列車一般，攜帶巨大的修復能量穿透皮膚，直達皮下 10-12 公分的深層組織，在<strong>「無痛、溫熱、非侵入」</strong>的狀態下，實現快速止痛與組織再生。</p>
-
-<div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
-        📢 為什麼選擇宸新 HILT 高能量雷射？
-    </h2>
-    
-    <p style="font-size: 1.1rem; color: #78350f;">雷射治療不是只要「有光」就好。能量夠不夠強、波長能不能穿透、醫師的診斷是否精準，決定了治療的成敗：</p>
-    
-    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
-        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
-            <div><strong>深層穿透力：</strong> 我們採用多波長複合雷射，能突破皮膚與脂肪層的阻擋，將能量傳遞至深層的肌腱、神經、血管和骨頭等，這是傳統儀器無法觸及的深度。</div>
-        </li>
-        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
-            <div><strong>治療師施打：</strong> 由專精於身體結構的物理之療師施打，可準確施打於激痛點或是沾黏處，搭配徒手手法，讓效果加倍。</div>
-        </li>
-        <li style="margin-bottom: 0; display: flex; align-items: start;">
-            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
-            <div><strong>客製化治療參數：</strong> 針對急性水腫期與慢性沾黏期，我們會調整不同的波長與脈衝模式。急性期著重「消腫排毒」，慢性期著重「溫熱修復」。</div>
-        </li>
-    </ul>
-</div>
-
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-
-<h3>🔬 光的魔法：三大治療原理</h3>
-<p>高能量雷射並非單純的熱療，它是利用<strong>「光生物調節作用 (Photobiomodulation, PBM)」</strong>，從細胞層級啟動修復：</p>
-
-<h3>1. 光化學效應 (Photochemical Effect) - 細胞的充電器</h3>
-<p>雷射光能刺激細胞內的發電廠——<strong>線粒體 (Mitochondria)</strong>，大幅增加 ATP（細胞能量）的合成。這就像幫沒電的手機進行快充，讓受傷的細胞獲得足夠能量，加速修復受損的韌帶與肌腱。</p>
-
-<h3>2. 光機械效應 (Photomechanical Effect) - 排出水腫</h3>
-<p>透過脈衝波產生的微震動，能促進淋巴引流與微循環，將堆積在患部的發炎物質與水腫快速帶走。這也是為什麼高能量雷射對於<strong>急性扭傷的消腫</strong>效果特別驚人。</p>
-
-<h3>3. 光熱效應 (Photothermal Effect) - 舒緩溫熱</h3>
-<p>在控制的範圍內產生深層溫熱感，能擴張血管、放鬆緊繃痙攣的肌肉，並阻斷痛覺神經的傳導，達到立即的止痛效果。</p>
-
-
-<p><img src="/images/treatments/laser/a.jpg" alt="高能量雷射治療原理示意圖"></p>
-
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-
-<h3>🎯 震波不能打的，雷射可以！(適應症)</h3>
-<p>體外震波雖然效果好，但對於「急性紅腫熱痛」或「神經發炎」的部位通常不建議施打，以免更痛。這時，<strong>高能量雷射</strong>就是最佳救援投手。</p>
-
-<h4>✅ 急性運動傷害 (黃金期)</h4>
-<p>腳踝翻船扭傷、肌肉拉傷、十字韌帶撕裂術後。在受傷 24 小時內即可介入，能顯著減少腫脹與瘀血，縮短恢復期，甚至可以讓球員隔天馬上下場打球。</p>
-<br>
-<h4>✅ 神經壓迫與病變</h4>
-<p><strong>腕隧道症候群</strong>、<strong>坐骨神經痛</strong>、頸椎神經根病變。雷射能促進神經髓鞘修復，且治療過程無痛，非常適合怕痛的神經痛患者。</p>
-<br>
-<h4>✅ 脊椎與深層關節</h4>
-<p>退化性膝關節炎、五十肩、下背痛。雷射的深層穿透力能到達脊椎深層的小面關節，緩解長年腰痠背痛。</p>
-
-<p><img src="/images/treatments/laser/b.jpg" alt="高能量雷射治療適應症"></p>
-
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-
-<h3>⚖️ 超級比一比：高能量雷射 vs. 傳統低能量雷射</h3>
-<p>很多患者會問：「健保也有雷射啊，為什麼要打自費的？」這兩者雖然原理相似，但<strong>功率與效果</strong>卻是天壤之別。</p>
-
-<div style="overflow-x: auto;">
-  <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-    <thead>
-      <tr style="background-color: #f3f4f6;">
-        <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #e5e7eb; color: #0891b2;">比較項目</th>
-        <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #e5e7eb; color: #0891b2;">高能量雷射 (HILT)</th>
-        <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #e5e7eb; color: #0891b2;">低能量雷射 (LLLT)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>功率 (Power)</strong></td>
-        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>10W ~ 30W (極高)</strong></td>
-        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;">&lt; 0.5W (低)</td>
-      </tr>
-      <tr>
-        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>穿透深度</strong></td>
-        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>10 ~ 12 公分 (深層)</strong></td>
-        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;">0.5 ~ 1 公分 (表淺)</td>
-      </tr>
-      <tr>
-        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>治療感覺</strong></td>
-        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>舒適深層溫熱感</strong></td>
-        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;">無感覺</td>
-      </tr>
-      <tr>
-        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>治療時間</strong></td>
-        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>短 (約 10-15 分鐘)</strong></td>
-        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;">較長</td>
-      </tr>
-      <tr>
-        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>主要效果</strong></td>
-        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>立即止痛、深層修復</strong></td>
-        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;">表淺傷口癒合</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-
-<h3>📝 治療懶人包：醫師常見問答</h3>
-
-<h4>Q1：治療過程會痛嗎？會不會燙傷？</h4>
-<p><strong>完全不會痛！</strong> 高能量雷射治療時，您會感覺到一股舒服的暖流在肌肉深層流動，就像在做深層熱按摩一樣，非常放鬆。我們的設備具備高階溫控偵測，治療師也會隨時移動探頭，不會造成皮膚燙傷。</p>
-<br>
-<h4>Q2：誰不適合打雷射？（禁忌症）</h4>
-<p>雖然雷射很安全，但以下族群不建議施打：</p>
-<ul>
-    <li>治療部位有<strong>惡性腫瘤</strong>或未確診的腫塊。</li>
-    <li><strong>懷孕婦女</strong>的腹部與背部。</li>
-    <li>治療部位有刺青（深色會過度吸熱）。</li>
-    <li>眼球及甲狀腺周圍（嚴禁直射眼睛）。</li>
-</ul>
-<h4>Q3：需要打幾次？</h4>
-<p><strong>急性期：</strong> 建議密集治療，每週 2-3 次，通常 3-5 次即可消腫。<br>
-<strong>慢性期：</strong> 建議每週 1-2 次，完整療程約 6-10 次，以達到組織再生修復的目標。</p>
-
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-
-<div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
-    <h3 style="color: #047857; margin-top: 0;">👨‍⚕️ 怕痛？怕針？那就用「光」來治療吧！</h3>
-    <p style="color: #334155; margin-bottom: 1.5rem;">高能量雷射是現代復健醫學的黑科技，它填補了藥物與手術之間的空白，特別適合害怕打針震波、或急性受傷需要快速恢復的您。宸新復健科邀請您體驗這道溫暖的修復之光！</p>
-    <p style="font-weight: bold; color: #059669;">腳踝扭傷、腰痛難癒？立即預約雷射評估！</p>
-</div>
+      <p>高能量雷射能穿透至深層組織，透過光生物調節作用抑制發炎反應，並加速細胞粒線體產生能量。</p>
+      <p>對於<strong>急性腳踝扭傷消腫、肌肉拉傷修復</strong>效果極佳，能大幅縮短受傷後的恢復時間，無痛可馬上運動是職業運動員常備的治療利器。</p>
     `
   },
 
