@@ -3858,32 +3858,61 @@ export const diseaseCategories: DiseaseCategory[] = [
 ]
 
 // ==========================================
-// Helper Functions (確保頁面能抓到資料)
+// ✨ 1. 自動化瘦身區 (給 Sitemap 與 列表頁 使用)
+// ==========================================
+// 這段程式碼會自動過濾掉 "contentHtml"，只保留輕量資訊。
+// 這樣 sitemap.ts 導入這個變數時，就不會載入過重的文章內文。
+
+export const diseaseCategoriesList = diseaseCategories.map((category) => ({
+  slug: category.slug,
+  title: category.title,
+  description: category.description,
+  image: category.image,
+  // SEO 欄位保留給列表頁使用
+  seoKeywords: category.seoKeywords,
+  seoDescription: category.seoDescription,
+  // 針對裡面的疾病，把 "contentHtml" 拿掉
+  diseases: category.diseases.map((disease) => {
+    // 使用解構賦值，把 contentHtml 分離出來，只回傳其餘部分
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { contentHtml, ...lightweightData } = disease;
+    return lightweightData;
+  }),
+}));
+
+
+// ==========================================
+// ✨ 2. Helper Functions (資料讀取函式)
 // ==========================================
 
-export function getCategoryBySlug(slug: string): DiseaseCategory | undefined {
+// 取得單一分類 (使用原始資料，確保資料完整性)
+export function getCategoryBySlug(slug: string) {
   return diseaseCategories.find(c => c.slug === slug)
 }
 
-export function getDiseaseBySlug(categorySlug: string, diseaseId: string): DiseaseItem | undefined {
+// 取得單一疾病完整內容 (內頁用：必須讀取原始 diseaseCategories 以取得 contentHtml)
+export function getDiseaseBySlug(categorySlug: string, diseaseId: string) {
   const category = getCategoryBySlug(categorySlug)
   if (!category) return undefined
-  // 因為路由使用的是 id (或 slug)，這裡使用 id 來查找
+  // 支援透過 id 或 slug 查找
   return category.diseases.find(d => d.id === diseaseId || d.slug === diseaseId)
 }
 
-export function getAllDiseases(): DiseaseItem[] {
-  return diseaseCategories.flatMap(category => category.diseases)
+// 取得所有疾病列表 (列表頁/Sitemap用：改用 diseaseCategoriesList 以提升效能)
+export function getAllDiseases() {
+  // 這裡改用瘦身過的 list，這樣在生成所有文章列表時，不會佔用大量記憶體
+  return diseaseCategoriesList.flatMap(category => category.diseases);
 }
 
+// 生成所有靜態路徑參數 (SSG用：使用輕量資料)
 export function generateAllDiseaseParams(): Array<{ category: string; slug: string }> {
   const params: Array<{ category: string; slug: string }> = []
   
-  diseaseCategories.forEach((category) => {
+  diseaseCategoriesList.forEach((category) => {
     category.diseases.forEach((disease) => {
       params.push({
         category: category.slug,
-        slug: disease.slug, // 使用 slug 作為網址參數
+        slug: disease.slug,
       })
     })
   })
@@ -3891,8 +3920,9 @@ export function generateAllDiseaseParams(): Array<{ category: string; slug: stri
   return params
 }
 
+// 生成所有分類路徑參數 (SSG用)
 export function generateAllCategoryParams(): Array<{ category: string }> {
-  return diseaseCategories.map((category) => ({
+  return diseaseCategoriesList.map((category) => ({
     category: category.slug,
   }))
 }

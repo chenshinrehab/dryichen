@@ -10,7 +10,7 @@ import ClinicHoursModal from '@/components/ClinicHoursModal'
 // ==========================================
 export const metadata: Metadata = {
   title: '馬上預約 - 新竹網路掛號/APP預約/Line掛號 | 新竹宸新復健科',
-  description: '新竹宸新復健科提供便利的數位掛號服務。支援 Android/iOS App 下載預約，或加入 Line 官方帳號線上掛號。免排隊、即時查詢看診進度，就醫更輕鬆。',
+  description: '新竹宸新復健科提供便利的數位掛號服務。支援免APP網頁直接掛號、Android/iOS App 下載預約，或加入 Line 官方帳號線上掛號。免排隊、即時查詢看診進度。',
   keywords: ['新竹掛號', '網路預約', '診所APP', 'Line掛號', '看診進度查詢', '新竹復健科預約', '宸新掛號', '林羿辰醫師掛號'],
 }
 
@@ -18,6 +18,8 @@ export default function BookingPage() {
   
   const siteUrl = 'https://www.dryichen.com.tw'
   const currentUrl = `${siteUrl}/booking`
+  // 新的掛號網址
+  const webBookingUrl = 'https://reg.forcestar.com.tw/appointment/7/reserve'
 
   // ==========================================
   // 2. Schema: 麵包屑
@@ -42,7 +44,7 @@ export default function BookingPage() {
         '@id': `${currentUrl}#webpage`,
         'url': currentUrl,
         'name': '宸新復健科預約掛號',
-        'description': '提供 Line 線上掛號與手機 App 預約看診服務。',
+        'description': '提供網頁版直接掛號、Line 線上掛號與手機 App 預約看診服務。',
         'author': {
             '@type': 'MedicalOrganization',
             'name': '新竹宸新復健科',
@@ -52,7 +54,8 @@ export default function BookingPage() {
           '@type': 'ReserveAction',
           'target': {
             '@type': 'EntryPoint',
-            'urlTemplate': 'https://lin.ee/FHj3mIs',
+            // 🟢 Schema 更新：將預約動作指向新的直接掛號連結，這對 SEO 更友善
+            'urlTemplate': webBookingUrl,
             'actionPlatform': [
               'http://schema.org/DesktopWebPlatform',
               'http://schema.org/MobileWebPlatform'
@@ -92,7 +95,7 @@ export default function BookingPage() {
         <section id="booking" className="fade-in max-w-5xl mx-auto">
           
           {/* 標題區 */}
-          <div className="flex flex-col items-center gap-4 mb-6 text-center">
+          <div className="flex flex-col items-center gap-4 mb-8 text-center">
             <div className="flex items-center gap-3">
                 <span className="bg-pink-500/20 text-pink-400 p-3 rounded-lg border border-pink-500/30">
                   <i className="fa-solid fa-calendar-check text-xl"></i>
@@ -103,18 +106,56 @@ export default function BookingPage() {
             </div>
             
             <p className="text-slate-400 text-lg w-full max-w-2xl">
-                為了節省您寶貴的等待時間，建議多加利用<strong className="text-cyan-400 font-normal">手機 App</strong> 或 <strong className="text-green-400 font-normal">Line 官方帳號</strong>進行預約掛號與查詢看診進度。
+                為了節省您寶貴的等待時間，建議多加利用<strong className="text-cyan-400 font-normal">網路掛號</strong>、手機 App 或 Line 官方帳號進行預約。
             </p>
 
-            {/* ==========================================
-                修改：直接使用原本包含按鈕的 Modal 組件
-                ========================================== */}
             <div className="mt-0">
                <ClinicHoursModal />
             </div>
-            
           </div>
 
+          {/* =========================================================
+              🟢 新增：網路掛號 (Web Booking) 
+              放在最顯眼的位置 (Grid 之上)，強調「免掃描、免安裝」
+             ========================================================= */}
+          <div className="mb-6 w-full transform hover:-translate-y-1 transition-transform duration-300">
+             <div className="bg-gradient-to-br from-slate-800 to-slate-900 border border-cyan-500/50 rounded-2xl p-6 md:p-8 relative overflow-hidden shadow-[0_0_30px_rgba(34,211,238,0.15)] group">
+                
+                {/* 頂部發光條飾 */}
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-70"></div>
+                
+                <div className="flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+                   {/* 左側：圖示與說明 */}
+                   <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                      <div className="w-20 h-20 bg-cyan-500/10 rounded-full flex items-center justify-center shrink-0 border border-cyan-500/20 shadow-[0_0_15px_rgba(34,211,238,0.2)]">
+                         <i className="fa-solid fa-globe text-4xl text-cyan-400"></i>
+                      </div>
+                      <div>
+                         <h3 className="text-2xl font-bold text-white mb-2 flex items-center justify-center md:justify-start gap-3">
+                            網路掛號系統
+                         </h3>
+                         <p className="text-slate-400 text-lg">
+                            直接點擊按鈕，立即進行預約。
+                         </p>
+                      </div>
+                   </div>
+
+                   {/* 右側：巨大按鈕 */}
+                   <a 
+                     href={webBookingUrl}
+                     target="_blank" 
+                     rel="noopener noreferrer"
+                     className="whitespace-nowrap px-8 py-4 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white text-lg rounded-full font-bold shadow-lg hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all flex items-center gap-2 group-hover:scale-105"
+                   >
+                     <i className="fa-solid fa-arrow-pointer animate-pulse"></i> 
+                     立即前往預約
+                   </a>
+                </div>
+             </div>
+          </div>
+
+
+          {/* 既有的 3 欄式設計 (Line / iOS / Android) */}
           <div className="grid md:grid-cols-3 gap-8">
             
             {/* Line Block */}

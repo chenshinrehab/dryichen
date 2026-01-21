@@ -10,36 +10,23 @@ export default function Footer() {
 
   useEffect(() => {
     // =================================================================
-    // 🔢 瀏覽人數計算邏輯 (時間基礎演算法)
+    // 🔢 瀏覽人數計算邏輯
     // =================================================================
     
-    // 1. 設定起始值 (依照您的要求)
     const BASE_VIEWS = 125; 
-    
-    // 2. 設定每小時增加的人數 (依照您的要求)
     const VIEWS_PER_HOUR = 9;
-
-    // 3. 設定一個固定的「錨點時間」
-    // 設定為 2024-01-01，這樣現在看到的數字會累積到一個合理的量 (約 15~16萬)
-    // 且因為時間只會前進，數字永遠只會增加，不會減少
     const ANCHOR_DATE = new Date('2026-01-10T00:00:00').getTime();
 
     const calculateViews = () => {
       const now = Date.now();
       const timeDiff = now - ANCHOR_DATE;
-      // 將毫秒換算成「小時」
       const hoursPassed = timeDiff / (1000 * 60 * 60);
-      
-      // 公式：起始值 125 + (經過小時數 * 9)
       const currentViews = Math.floor(BASE_VIEWS + (hoursPassed * VIEWS_PER_HOUR));
       
       setVisitCount(currentViews.toLocaleString());
     };
 
-    // 初始化執行
     calculateViews();
-
-    // 每 10 秒更新一次 (雖然每小時才加9，但保持動態更新可以避免長時間停留數值不變)
     const intervalId = setInterval(calculateViews, 10000);
 
     return () => clearInterval(intervalId);
@@ -51,7 +38,6 @@ export default function Footer() {
 
         {/* =========================================
             Part 1: 快速導覽 (圖片區)
-            ✨ SEO 修改：將 h2 改為 h4，避免干擾頁面主要標題結構
            ========================================= */}
         <div className="mb-8">
             <h4 className="text-2xl font-bold font-sans text-white text-center mb-6 tracking-wide">
@@ -128,23 +114,30 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* 2. 中間：累計瀏覽 */}
+          {/* 2. 中間：累計瀏覽 (已放大) */}
           <div className="flex flex-col items-center justify-center w-full lg:w-auto my-4 lg:my-0">
-             <div className="bg-slate-800/80 px-4 py-1.5 rounded-lg border border-slate-700/50 flex items-center gap-2 shadow-inner">
-                <span className="relative flex h-2 w-2">
+             {/* ✨ 修改：
+                 1. px-4 py-1.5 -> px-6 py-3 (內距增加)
+                 2. border-slate-700/50 -> border-slate-600/50 (邊框稍微亮一點)
+             */}
+             <div className="bg-slate-800/80 px-6 py-3 rounded-xl border border-slate-600/50 flex items-center gap-3 shadow-[0_4px_10px_rgba(0,0,0,0.2)]">
+                {/* 綠點放大 h-2 w-2 -> h-3 w-3 */}
+                <span className="relative flex h-3 w-3">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                 </span>
-                <span className="text-xs text-slate-400">累計瀏覽:</span>
-                <span className="font-mono text-cyan-400 font-bold tracking-widest text-base">
+                
+                {/* 文字放大 text-xs -> text-sm */}
+                <span className="text-sm text-slate-300 font-medium">累計瀏覽:</span>
+                
+                {/* 數字放大 text-base -> text-xl */}
+                <span className="font-mono text-cyan-400 font-bold tracking-widest text-xl">
                     {visitCount}
                 </span>
              </div>
           </div>
 
-          {/* 3. 右側：診所資訊 
-              ✨ SEO 修改：加入真實的 Google Maps 連結
-          */}
+          {/* 3. 右側：診所資訊 */}
           <div className="text-center lg:text-right text-slate-300 space-y-1.5 w-full lg:w-auto text-sm">
             <p className="flex items-center justify-center lg:justify-end gap-2 group cursor-pointer">
               <i className="fa-solid fa-phone text-cyan-400 group-hover:animate-pulse"></i> 
@@ -154,6 +147,11 @@ export default function Footer() {
               <i className="fa-solid fa-location-dot text-cyan-400"></i>
               <span>300新竹市東區光復路一段371號B1</span>
             </a>
+
+            {/* 區域服務 SEO 關鍵字 */}
+            <p className="text-xs text-slate-500 pt-1">
+               服務範圍：新竹市東區、竹科園區、關新路周邊復健服務
+            </p>
           </div>
         </div>
 

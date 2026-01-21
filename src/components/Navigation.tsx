@@ -29,7 +29,6 @@ export default function Navigation() {
           <Link href="/" className="flex items-center gap-2.5 group cursor-pointer md:absolute md:left-1/2 md:-translate-x-1/2 z-10">
               <img src="/images/main/logo.png" alt="新竹宸新復健科診所 Logo" className="w-10 h-10 md:w-14 md:h-14 rounded-full object-cover border-2 border-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.5)] group-hover:shadow-[0_0_15px_rgba(34,211,238,0.8)] transition-all duration-300"/>
               <div className="text-left">
-                {/* H1 改為 div，SEO 問題解決 */}
                 <div className="text-base md:text-2xl font-bold font-sans text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 leading-tight">
                   運動教練醫師-林羿辰
                 </div>
@@ -37,40 +36,39 @@ export default function Navigation() {
               </div>
           </Link>
 
-          {/* 社群區塊 */}
+          {/* 右側區塊：包含手機版預約按鈕 & 電腦版社群圖示 */}
           <div className="flex items-center gap-2 ml-auto z-20">
-             <div className="hidden sm:flex items-center gap-3">
-                
-                {/* ✨ 修改 2: 按鈕大小微調
-                    原本 w-12 h-12 太大，改成 w-10 h-10 (40px)
-                    文字大小改成 text-lg
-                */}
+              
+              {/* 手機版專用「預約」按鈕 */}
+              <Link 
+                href="/booking"
+                className="sm:hidden flex items-center gap-1 px-3 py-1.5 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full font-bold shadow-md text-sm active:scale-95 transition-transform"
+              >
+                 <i className="fa-solid fa-calendar-check"></i> 預約
+              </Link>
 
-                {/* 回首頁 */}
+              {/* 電腦版社群圖示 */}
+              <div className="hidden sm:flex items-center gap-3">
                 <Link href="/" title="回到首頁" 
                   className="w-10 h-10 rounded-full bg-slate-800 text-cyan-400 border border-cyan-400 flex items-center justify-center text-lg hover:bg-slate-700 transition-colors shadow-md">
                   <i className="fa-solid fa-house"></i>
                 </Link>
 
-                {/* Facebook */}
                 <a href="https://www.facebook.com/DrYiChen" target="_blank" rel="noopener noreferrer" 
                    className="w-10 h-10 rounded-full bg-[#1877F2] border border-[#1877F2] text-white flex items-center justify-center text-lg hover:scale-110 transition-transform shadow-md">
                    <i className="fa-brands fa-facebook-f"></i>
                 </a>
 
-                {/* Instagram */}
                 <a href="https://www.instagram.com/dryichen/" target="_blank" rel="noopener noreferrer" 
                    className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white flex items-center justify-center text-lg border-none hover:scale-110 transition-transform shadow-md">
                    <i className="fa-brands fa-instagram"></i>
                 </a>
 
-                {/* Threads */}
                 <a href="https://www.threads.net/@dryichen" target="_blank" rel="noopener noreferrer" 
                    className="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center text-lg border-none hover:scale-110 transition-transform shadow-md">
                    <i className="fa-brands fa-threads"></i>
                 </a>
 
-                {/* YouTube */}
                 <a href="https://youtube.com/@dryichen" target="_blank" rel="noopener noreferrer" 
                    className="w-10 h-10 rounded-full bg-[#FF0000] border border-[#FF0000] text-white flex items-center justify-center text-lg border-none hover:scale-110 transition-transform shadow-md">
                    <i className="fa-brands fa-youtube"></i>
@@ -79,19 +77,26 @@ export default function Navigation() {
           </div>
         </div>
 
-        {/* 導覽選單 */}
+        {/* 導覽選單 - 手機版瘦身優化 */}
         <nav className="w-full overflow-x-auto xl:overflow-visible py-1.5 md:py-2 text-center no-scrollbar">
-           <ul className="inline-flex justify-center min-w-max gap-1 p-0.5 bg-slate-800/30 rounded-none md:rounded-full">
+           {/* ✨ 修改重點：
+              1. 手機版使用 w-full + justify-between (均分寬度) 或 justify-center (置中緊湊)
+              2. 移除了 min-w-max，避免手機版被強制撐開
+           */}
+           <ul className="flex w-full justify-between sm:justify-center sm:w-auto sm:inline-flex gap-0.5 md:gap-1 p-0.5 bg-slate-800/30 rounded-none md:rounded-full">
               {navItems.map((item) => (
-                <li key={item.path}>
+                <li key={item.path} className="flex-1 sm:flex-none">
                    <Link 
                      href={item.path} 
-                     /* ✨ 修改 1: 字體放大
-                        text-sm 改為 text-base (16px)
-                        同時維持 padding，確保好按
+                     /* ✨ 修改重點：
+                        1. padding: px-3.5 -> px-1.5 (大幅減少左右間距)
+                        2. font-size: text-base -> text-sm (手機版字體縮小一點以容納)
+                        3. md: (電腦版) 維持原本寬鬆的設定
                      */
                      className={`
-                       px-3.5 py-1.5 md:px-4 md:py-2 rounded-full text-base font-medium transition-all block
+                       px-1.5 py-1.5 text-sm 
+                       md:px-4 md:py-2 md:text-base 
+                       rounded-full font-medium transition-all block whitespace-nowrap
                        ${isActive(item.path) 
                          ? 'text-cyan-400 bg-slate-800 border-b-2 border-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.3)]' 
                          : 'text-slate-300 hover:text-white hover:bg-slate-700 border-b-2 border-transparent'}
@@ -101,19 +106,20 @@ export default function Navigation() {
                    </Link>
                 </li>
               ))}
-              <li>
-                 <Link 
-                   href="/booking" 
-                   /* 預約按鈕同步放大字體 */
-                   className={`
-                     px-3.5 py-1.5 md:px-4 md:py-2 rounded-full text-base font-medium transition-all ml-1 block
-                     ${isActive('/booking') 
-                       ? 'text-white bg-gradient-to-r from-pink-600 to-rose-600 shadow-[0_0_10px_rgba(236,72,153,0.5)]' 
-                       : 'text-white bg-gradient-to-r from-pink-500 to-rose-500 hover:shadow-[0_0_10px_rgba(236,72,153,0.5)]'}
-                   `}
-                 >
-                   <i className="fa-solid fa-calendar-check mr-1"></i> 預約
-                 </Link>
+              
+              {/* 電腦版顯示的預約按鈕 (手機版隱藏) */}
+              <li className="hidden sm:block">
+                  <Link 
+                    href="/booking" 
+                    className={`
+                      px-3.5 py-1.5 md:px-4 md:py-2 rounded-full text-base font-medium transition-all ml-1 block
+                      ${isActive('/booking') 
+                        ? 'text-white bg-gradient-to-r from-pink-600 to-rose-600 shadow-[0_0_10px_rgba(236,72,153,0.5)]' 
+                        : 'text-white bg-gradient-to-r from-pink-500 to-rose-500 hover:shadow-[0_0_10px_rgba(236,72,153,0.5)]'}
+                    `}
+                  >
+                    <i className="fa-solid fa-calendar-check mr-1"></i> 預約
+                  </Link>
               </li>
            </ul>
         </nav>

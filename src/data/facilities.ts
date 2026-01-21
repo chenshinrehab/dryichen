@@ -1,15 +1,28 @@
 // src/data/facilities.ts
 
-export interface FacilityItem {
-  id: string
-  title: string
-  description: string      // 列表頁短描述 & Meta Description
-  contentHtml: string      // 詳細頁 HTML
-  imageUrl: string
-  keywords: string[]       // SEO 關鍵字
+// ==========================================
+// 1. 定義資料結構
+// ==========================================
+
+// 輕量級 Metadata (給 Sitemap 和 列表頁用)
+export interface FacilityMetadata {
+  id: string;
+  title: string;
+  description: string; // 列表頁短描述 & Meta Description
+  imageUrl: string;
+  keywords: string[];  // SEO 關鍵字 (保留在列表資料中通常沒問題，因為字串陣列不大)
 }
 
-export const facilitiesData: FacilityItem[] = [
+// 完整資料介面 (包含內文 HTML)
+export interface FacilityItem extends FacilityMetadata {
+  contentHtml: string;
+}
+
+// ==========================================
+// 2. 完整資料來源 (Source of Truth)
+// ⚠️ 所有資料都在這裡維護
+// ==========================================
+const fullFacilitiesData: FacilityItem[] = [
   // ==========================================
   // 環境設施 (Environment)
   // ==========================================
@@ -18,17 +31,18 @@ export const facilitiesData: FacilityItem[] = [
     title: '寬敞舒適候診區',
     description: '挑高明亮的候診空間，提供免費 Wi-Fi 與茶水，讓您在放鬆的心情下等待看診。',
     keywords: ['新竹復健科環境', '舒適候診', '無障礙空間', '親子友善'],
+    imageUrl: '/images/clinic/a.jpg',
     contentHtml: `
       <p>宸新復健科打破傳統診所擁擠狹小的印象，打造<strong>挑高、明亮且寬敞</strong>的候診大廳。</p>
       <p>我們深知等待看診時的焦慮，因此特別設置了舒適的沙發區、免費Wi-Fi、衛教影片以及茶水服務。全院採<strong>無障礙設計</strong>，無論是推輪椅的長輩或推嬰兒車的家長，都能輕鬆進出，享有最友善的就醫體驗。</p>
-    `,
-    imageUrl: '/images/clinic/a.jpg'
+    `
   },
   {
     id: 'parking',
     title: '專屬停車位',
     description: '診所設有專屬停車空間，讓行動不便的患者免於奔波，就醫更便利。',
     keywords: ['復健科停車', '新竹好停車診所', '無障礙車位', '方便就醫'],
+    imageUrl: '/images/clinic/b.jpg',
     contentHtml: `
     <div class="my-8 flex justify-center">
     <iframe 
@@ -45,8 +59,7 @@ export const facilitiesData: FacilityItem[] = [
     <p>在新竹市區就醫，停車往往是最大的困擾。宸新復健科體貼行動不便的患者，於診所旁規劃了<strong>專屬汽機車停車位</strong>。</p>
       <p>您不需要在附近繞圈找位子，或是停在大老遠再忍痛走過來。我們致力於解決您就醫路上的最後一哩路，讓復健之路更加順暢無阻。</p>
       <img src="/images/clinic/bb.jpg" alt="診所停車位" />
-    `,
-    imageUrl: '/images/clinic/b.jpg'
+    `
   },
 
   // ==========================================
@@ -57,22 +70,22 @@ export const facilitiesData: FacilityItem[] = [
     title: '數位 X 光檢查',
     description: '低輻射、高解析度，快速診斷骨折與退化性關節炎，提供即時影像分析。',
     keywords: ['數位X光', '骨折檢查', '骨刺', '脊椎側彎檢查', '新竹X光診所'],
+    imageUrl: '/images/clinic/c.jpg',
     contentHtml: `
       <p>本院採用最新型數位 X 光機 (Digital Radiography)，具備<strong>低輻射、成像快、高解析度</strong>的特點。</p>
       <p>拍攝後影像直接傳輸至診間電腦，讓醫師能即時為您解說骨骼結構。無論是意外受傷的<strong>骨折診斷</strong>、長輩的<strong>退化性關節炎</strong>程度評估，或是兒童的<strong>脊椎側彎與骨齡篩檢</strong>，都能提供最客觀準確的影像依據。</p>
-    `,
-    imageUrl: '/images/clinic/c.jpg'
+    `
   },
   {
     id: 'ultrasound',
     title: '高解析度超音波',
     description: '軟組織檢查利器，精準導引注射不可或缺的「醫師第三隻眼」。',
     keywords: ['肌骨超音波', '超音波導引注射', '肌腱炎檢查', '韌帶撕裂', '新竹超音波檢查'],
+    imageUrl: '/images/clinic/d.jpg',
     contentHtml: `
       <p>相較於 X 光看骨頭，高解析度肌肉骨骼超音波能清楚看到<strong>肌腱、韌帶、神經與肌肉</strong>的動態狀況。</p>
       <p>搭配高階彩色都卜勒血流偵測，能精準判斷發炎程度。最重要的是，我們堅持進行<strong>超音波導引注射</strong>，邊掃描邊打針，將 PRP 或增生藥劑準確送達病灶，避免誤傷神經血管，大幅提升治療成功率。</p>
-    `,
-    imageUrl: '/images/clinic/d.jpg'
+    `
   },
 
   // ==========================================
@@ -83,6 +96,7 @@ export const facilitiesData: FacilityItem[] = [
     title: 'PRP 增生注射',
     description: '高濃度血小板分離技術，確保生長因子濃度，提升治療效果。',
     keywords: ['PRP設備', '離心機', '生長因子', '高濃度血小板', '無菌操作'],
+    imageUrl: '/images/clinic/e.jpg',
     contentHtml: `
   <p>疼痛總是如影隨形，讓你無法享受生活？傳統的消炎藥或類固醇雖然能暫時止痛，卻無法修復受損的組織。宸新復健科提供<strong>高濃度血小板血漿 (PRP) 增生療法</strong>及<strong>高濃度葡萄糖水</strong>，這是一種啟動人體自我修復機制的先進治療。</p>
 <p>透過抽取自身血液，離心萃取出富含生長因子的血小板，再經由<strong>高解析超音波精準導引</strong>注射至受傷部位。就像是為受損的肌腱、韌帶或關節打入一劑強效的「修復工程隊」，從根本解決疼痛問題，讓您重拾活動力。</p>
@@ -204,8 +218,7 @@ export const facilitiesData: FacilityItem[] = [
     
     <p style="font-weight: bold; color: #0891b2 !important;">現在就預約諮詢，告別疼痛！</p>
 </div>
-    `,
-    imageUrl: '/images/clinic/e.jpg'
+    `
   },
   
   {
@@ -213,6 +226,7 @@ export const facilitiesData: FacilityItem[] = [
     title: '聚焦式震波治療',
     description: '非侵入性治療首選，針對鈣化性肌腱炎與足底筋膜炎效果顯著。',
     keywords: ['震波治療', '聚焦式震波', '足底筋膜炎', '鈣化性肌腱炎', '網球肘治療'],
+    imageUrl: '/images/clinic/f.jpg',
     contentHtml: `
      <p>您是否長期受慢性疼痛所苦？足底筋膜炎反覆發作、網球肘痛到拿不起杯子、或是旋轉肌鈣化讓您徹夜難眠？當復健、吃藥、打針都無法解決您的疼痛時，<strong>體外震波治療 (ESWT)</strong> 可能是您免於開刀的最佳選擇。</p>
 <p>宸新復健科引進頂級雙機型震波設備，提供<strong>「聚焦式 + 發散式」複合式治療</strong>。我們堅持在治療前使用<strong>高解析超音波精準定位</strong>，如同導彈鎖定目標，將高能量聲波精準傳遞至深層受損組織，啟動身體的自我修復機制，從根本解決頑固疼痛。</p>
@@ -342,11 +356,141 @@ export const facilitiesData: FacilityItem[] = [
     title: '高能量雷射',
     description: '深層消炎止痛，加速細胞修復，急性扭傷消腫神器。',
     keywords: ['高能量雷射', '消腫止痛', '腳踝扭傷', '肌肉拉傷', '光生物調節'],
+    imageUrl: '/images/clinic/g.jpg',
     contentHtml: `
-      <p>高能量雷射能穿透至深層組織，透過光生物調節作用抑制發炎反應，並加速細胞粒線體產生能量。</p>
-      <p>對於<strong>急性腳踝扭傷消腫、肌肉拉傷修復</strong>效果極佳，能大幅縮短受傷後的恢復時間，無痛可馬上運動是職業運動員常備的治療利器。</p>
-    `,
-    imageUrl: '/images/clinic/g.jpg'
+    <p>您是否剛經歷了急性腳踝扭傷，腫得像麵龜一樣無法走路？或是深受坐骨神經痛折磨，卻又不敢開刀？當傳統的熱敷電療效果緩慢，而震波治療對急性發炎又太過刺激時，<strong>高能量雷射 (High Intensity Laser Therapy, HILT)</strong> 將是您最溫柔且強大的選擇。</p>
+<br>
+<p>且可施打於敏感部位，如肋骨、尾椎或手指頭等部位，或是對於不適合打針的族群(如凝血功能障礙或馬上要上場的球員)或不敢打針的族群(小朋友)，都可提供有效的止痛及治療</p>
+<br>
+<p>不同於傳統復健科常見的「低能量雷射」，宸新復健科引進的<strong>美國頂級Summus高能量雷射</strong>，功率是傳統雷射的 50 倍以上。它能像光速列車一般，攜帶巨大的修復能量穿透皮膚，直達皮下 10-12 公分的深層組織，在<strong>「無痛、溫熱、非侵入」</strong>的狀態下，實現快速止痛與組織再生。</p>
+
+<div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+        📢 為什麼選擇宸新 HILT 高能量雷射？
+    </h2>
+    
+    <p style="font-size: 1.1rem; color: #78350f;">雷射治療不是只要「有光」就好。能量夠不夠強、波長能不能穿透、醫師的診斷是否精準，決定了治療的成敗：</p>
+    
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+            <div><strong>深層穿透力：</strong> 我們採用多波長複合雷射，能突破皮膚與脂肪層的阻擋，將能量傳遞至深層的肌腱、神經、血管和骨頭等，這是傳統儀器無法觸及的深度。</div>
+        </li>
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+            <div><strong>治療師施打：</strong> 由專精於身體結構的物理之療師施打，可準確施打於激痛點或是沾黏處，搭配徒手手法，讓效果加倍。</div>
+        </li>
+        <li style="margin-bottom: 0; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+            <div><strong>客製化治療參數：</strong> 針對急性水腫期與慢性沾黏期，我們會調整不同的波長與脈衝模式。急性期著重「消腫排毒」，慢性期著重「溫熱修復」。</div>
+        </li>
+    </ul>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3>🔬 光的魔法：三大治療原理</h3>
+<p>高能量雷射並非單純的熱療，它是利用<strong>「光生物調節作用 (Photobiomodulation, PBM)」</strong>，從細胞層級啟動修復：</p>
+
+<h3>1. 光化學效應 (Photochemical Effect) - 細胞的充電器</h3>
+<p>雷射光能刺激細胞內的發電廠——<strong>線粒體 (Mitochondria)</strong>，大幅增加 ATP（細胞能量）的合成。這就像幫沒電的手機進行快充，讓受傷的細胞獲得足夠能量，加速修復受損的韌帶與肌腱。</p>
+
+<h3>2. 光機械效應 (Photomechanical Effect) - 排出水腫</h3>
+<p>透過脈衝波產生的微震動，能促進淋巴引流與微循環，將堆積在患部的發炎物質與水腫快速帶走。這也是為什麼高能量雷射對於<strong>急性扭傷的消腫</strong>效果特別驚人。</p>
+
+<h3>3. 光熱效應 (Photothermal Effect) - 舒緩溫熱</h3>
+<p>在控制的範圍內產生深層溫熱感，能擴張血管、放鬆緊繃痙攣的肌肉，並阻斷痛覺神經的傳導，達到立即的止痛效果。</p>
+
+
+<p><img src="/images/treatments/laser/a.jpg" alt="高能量雷射治療原理示意圖"></p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3>🎯 震波不能打的，雷射可以！(適應症)</h3>
+<p>體外震波雖然效果好，但對於「急性紅腫熱痛」或「神經發炎」的部位通常不建議施打，以免更痛。這時，<strong>高能量雷射</strong>就是最佳救援投手。</p>
+
+<h4>✅ 急性運動傷害 (黃金期)</h4>
+<p>腳踝翻船扭傷、肌肉拉傷、十字韌帶撕裂術後。在受傷 24 小時內即可介入，能顯著減少腫脹與瘀血，縮短恢復期，甚至可以讓球員隔天馬上下場打球。</p>
+<br>
+<h4>✅ 神經壓迫與病變</h4>
+<p><strong>腕隧道症候群</strong>、<strong>坐骨神經痛</strong>、頸椎神經根病變。雷射能促進神經髓鞘修復，且治療過程無痛，非常適合怕痛的神經痛患者。</p>
+<br>
+<h4>✅ 脊椎與深層關節</h4>
+<p>退化性膝關節炎、五十肩、下背痛。雷射的深層穿透力能到達脊椎深層的小面關節，緩解長年腰痠背痛。</p>
+
+<p><img src="/images/treatments/laser/b.jpg" alt="高能量雷射治療適應症"></p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3>⚖️ 超級比一比：高能量雷射 vs. 傳統低能量雷射</h3>
+<p>很多患者會問：「健保也有雷射啊，為什麼要打自費的？」這兩者雖然原理相似，但<strong>功率與效果</strong>卻是天壤之別。</p>
+
+<div style="overflow-x: auto;">
+  <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+    <thead>
+      <tr style="background-color: #f3f4f6;">
+        <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #e5e7eb; color: #0891b2;">比較項目</th>
+        <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #e5e7eb; color: #0891b2;">高能量雷射 (HILT)</th>
+        <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #e5e7eb; color: #0891b2;">低能量雷射 (LLLT)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>功率 (Power)</strong></td>
+        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>10W ~ 30W (極高)</strong></td>
+        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;">&lt; 0.5W (低)</td>
+      </tr>
+      <tr>
+        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>穿透深度</strong></td>
+        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>10 ~ 12 公分 (深層)</strong></td>
+        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;">0.5 ~ 1 公分 (表淺)</td>
+      </tr>
+      <tr>
+        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>治療感覺</strong></td>
+        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>舒適深層溫熱感</strong></td>
+        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;">無感覺</td>
+      </tr>
+      <tr>
+        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>治療時間</strong></td>
+        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>短 (約 10-15 分鐘)</strong></td>
+        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;">較長</td>
+      </tr>
+      <tr>
+        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>主要效果</strong></td>
+        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;"><strong>立即止痛、深層修復</strong></td>
+        <td style="padding: 1rem; border-bottom: 1px solid #e5e7eb;">表淺傷口癒合</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3>📝 治療懶人包：醫師常見問答</h3>
+
+<h4>Q1：治療過程會痛嗎？會不會燙傷？</h4>
+<p><strong>完全不會痛！</strong> 高能量雷射治療時，您會感覺到一股舒服的暖流在肌肉深層流動，就像在做深層熱按摩一樣，非常放鬆。我們的設備具備高階溫控偵測，治療師也會隨時移動探頭，不會造成皮膚燙傷。</p>
+<br>
+<h4>Q2：誰不適合打雷射？（禁忌症）</h4>
+<p>雖然雷射很安全，但以下族群不建議施打：</p>
+<ul>
+    <li>治療部位有<strong>惡性腫瘤</strong>或未確診的腫塊。</li>
+    <li><strong>懷孕婦女</strong>的腹部與背部。</li>
+    <li>治療部位有刺青（深色會過度吸熱）。</li>
+    <li>眼球及甲狀腺周圍（嚴禁直射眼睛）。</li>
+</ul>
+<h4>Q3：需要打幾次？</h4>
+<p><strong>急性期：</strong> 建議密集治療，每週 2-3 次，通常 3-5 次即可消腫。<br>
+<strong>慢性期：</strong> 建議每週 1-2 次，完整療程約 6-10 次，以達到組織再生修復的目標。</p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+    <h3 style="color: #047857; margin-top: 0;">👨‍⚕️ 怕痛？怕針？那就用「光」來治療吧！</h3>
+    <p style="color: #334155; margin-bottom: 1.5rem;">高能量雷射是現代復健醫學的黑科技，它填補了藥物與手術之間的空白，特別適合害怕打針震波、或急性受傷需要快速恢復的您。宸新復健科邀請您體驗這道溫暖的修復之光！</p>
+    <p style="font-weight: bold; color: #059669;">腳踝扭傷、腰痛難癒？立即預約雷射評估！</p>
+</div>
+    `
   },
 
   // ==========================================
@@ -357,17 +501,18 @@ export const facilitiesData: FacilityItem[] = [
     title: '骨科復健區',
     description: '寬敞的運動治療空間，配備多樣化復健器材，協助術後與慢性疼痛患者恢復功能。',
     keywords: ['骨科復健', '物理治療', '術後復健', '電療熱敷', '新竹復健中心'],
+    imageUrl: '/images/clinic/h.jpg',
     contentHtml: `
       <p>我們的骨科復健區空間寬敞明亮，不用人擠人等復健，依據功能劃分為<strong>電療熱敷區</strong>與<strong>微波牽引區</strong>。</p>
       <p>進口復健設備，治療效果更好，有紅外線、超音波、熱療蠟療、微波、干擾波、電療、頸椎腰椎牽引、雷射，循環機...等</p>
-    `,
-    imageUrl: '/images/clinic/h.jpg'
+    `
   },
   {
     id: 'manual-therapy-room',
     title: '獨立徒手治療室',
     description: '隱私性高的一對一治療空間，由物理治療師進行深層筋膜放鬆與骨骼調整。',
     keywords: ['徒手治療', '新竹整復', '筋膜放鬆', '一對一物理治療', '私密空間'],
+    imageUrl: '/images/clinic/i.jpg',
     contentHtml: `
 <p>您是否長期被慢性疼痛困擾？肩頸僵硬、下背痠痛、或是運動傷害後總是好不完全？當儀器治療（電療、熱敷）只能提供暫時的緩解時，<strong>徒手運動治療 (Manual & Exercise Therapy)</strong> 將是您重拾無痛生活的關鍵。</p>
 <p>宸新復健科打造了新竹首屈一指的<strong>獨立治療空間</strong>，結合專業物理治療師的雙手與頂尖運動訓練設備。我們不只「治標」，更要「治本」。透過精準的徒手調整與客制化運動訓練，找出疼痛的根源，重建身體的平衡與力量。</p>
@@ -429,6 +574,7 @@ export const facilitiesData: FacilityItem[] = [
 
 <h3>👋 什麼是徒手治療？跟按摩一樣嗎？</h3>
 <p>這是一個常見的誤解。按摩主要是放鬆表層肌肉，讓您當下覺得舒服；而<strong>徒手治療 (Manual Therapy)</strong> 則是由受過專業訓練的物理治療師，利用雙手進行的醫療行為。</p>
+<br>
 <p>治療師會先進行詳細的理學檢查，找出造成疼痛的「元兇」——可能是關節錯位、筋膜沾黏、或是肌肉失衡。接著運用關節鬆動術 (Mobilization)、神經鬆動術、肌筋膜放鬆術 (MFR) 等手法，恢復關節活動度與軟組織彈性。簡單來說，徒手治療是<strong>「有診斷、有目標、有療效」</strong>的專業治療。</p>
 
 <h3>🏋️‍♀️ 為什麼需要結合運動治療？</h3>
@@ -462,32 +608,31 @@ export const facilitiesData: FacilityItem[] = [
 <h3>🎯 誰適合徒手運動治療？</h3>
 <p>如果您有以下困擾，且健保的電療熱敷已經無法滿足您的需求，建議您可以預約徒手治療評估：</p>
 <ul>
-    <li><strong>脊椎問題：</strong> 頸椎病變、椎間盤突出、坐骨神經痛、脊椎側彎。</li>
-    <li><strong>肩頸問題：</strong> 五十肩、夾擠症候群、長期肩頸痠痛。</li>
-    <li><strong>下肢問題：</strong> 退化性關節炎、前十字韌帶術後復健、腳踝扭傷。</li>
-    <li><strong>特殊族群：</strong> 產後骨盆復位、運動員專項體能訓練、高齡防跌肌力訓練。</li>
+    <li><strong>脊椎問題：</strong> 頸椎病變、椎間盤突出、坐骨神經痛、脊椎側彎。</li>
+    <li><strong>肩頸問題：</strong> 五十肩、夾擠症候群、長期肩頸痠痛。</li>
+    <li><strong>下肢問題：</strong> 退化性關節炎、前十字韌帶術後復健、腳踝扭傷。</li>
+    <li><strong>特殊族群：</strong> 產後骨盆復位、運動員專項體能訓練、高齡防跌肌力訓練。</li>
 </ul>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <div style="background-color: #f0f9ff; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
-    <h3 style="color: #0369a1 !important; margin-top: 0;">👨‍⚕️ 找回身體的主導權！</h3>
-    <p style="color: #334155 !important; margin-bottom: 1.5rem;">疼痛不是老化的必然，而是身體發出的求救訊號。來到宸新復健科，我們不只幫您止痛，更要教您如何正確使用身體。</p>
-    <p style="font-weight: bold; color: #0891b2 !important;">現在就預約一對一評估，開啟您的無痛人生！</p>
+    <h3 style="color: #0369a1 !important; margin-top: 0;">👨‍⚕️ 找回身體的主導權！</h3>
+    <p style="color: #334155 !important; margin-bottom: 1.5rem;">疼痛不是老化的必然，而是身體發出的求救訊號。來到宸新復健科，我們不只幫您止痛，更要教您如何正確使用身體。</p>
+    <p style="font-weight: bold; color: #0891b2 !important;">現在就預約一對一評估，開啟您的無痛人生！</p>
 </div>
-    `,
-    imageUrl: '/images/clinic/i.jpg'
+    `
   },
   {
     id: 'pediatric-early-intervention',
     title: '兒童早療專區',
     description: '色彩繽紛、充滿童趣的治療空間，讓孩子在遊戲中快樂復健，促進感覺統合發展。',
     keywords: ['兒童早療', '感覺統合', '發展遲緩', '語言治療', '早療教室'],
+    imageUrl: '/images/clinic/j.jpg',
     contentHtml: `
       <p>為了讓怕生的孩子能卸下心防，我們打造了色彩繽紛、充滿童趣的<strong>兒童早療專區</strong>。</p>
       <p>配備攀岩牆、盪鞦韆、球池與平衡木等感覺統合器材。專業的語言治療師、職能治療師與物理治療師透過「遊戲治療」的方式，引導發展遲緩、語言遲緩、專注力不足或肌肉張力異常的孩子，在快樂玩耍中同步提升大腦與肢體的協調能力。</p>
-    `,
-    imageUrl: '/images/clinic/j.jpg'
+    `
   },
 
   // ==========================================
@@ -498,36 +643,56 @@ export const facilitiesData: FacilityItem[] = [
     title: '紅繩懸吊系統 (Redcord)',
     description: '源自挪威的醫療級懸吊運動，喚醒深層核心肌群，改善慢性腰痛與姿勢不良。',
     keywords: ['紅繩運動', 'Redcord', '核心訓練', '懸吊治療', '挪威紅繩'],
+    imageUrl: '/images/clinic/k.jpg',
     contentHtml: `
       <p><strong>紅繩懸吊系統 (Redcord)</strong> 是源自挪威的醫療級運動治療設備。透過不穩定的繩索懸吊，能強迫身體徵召深層的<strong>核心肌群</strong>來維持平衡。</p>
       <p>對於長期下背痛、脊椎不穩定、產後骨盆修復以及想提升運動表現的選手，紅繩能精準喚醒「沉睡的肌肉」，重新建立正確的肌肉用力模式 (Neuromuscular Control)。</p>
-    `,
-    imageUrl: '/images/clinic/k.jpg'
+    `
   },
   {
     id: 'pilates-reformer',
     title: '器械皮拉提斯',
     description: '結合復健醫學的彼拉提斯核心床，雕塑線條同時改善脊椎排列與身體控制。',
     keywords: ['器械皮拉提斯', 'Pilates', '核心床', '脊椎保健', '體態雕塑'],
+    imageUrl: '/images/clinic/m.jpg',
     contentHtml: `
       <p>本院引進專業的<strong>皮拉提斯核心床 (Reformer)</strong>，結合復健醫學原理，由物理治療師親自指導。</p>
       <p>利用彈簧阻力輔助，能更安全、精準地訓練核心肌群、延展脊椎並增加關節活動度。非常適合脊椎側彎矯正、椎間盤問題、下背痛及肩頸痠痛，以及追求優美體態線條的女性朋友。</p>
-    `,
-    imageUrl: '/images/clinic/m.jpg'
+    `
   },
   {
     id: 'scoliosis-rack',
     title: '脊椎側彎矯正架',
     description: '針對脊椎側彎患者設計的施羅斯 (Schroth) 矯正設備，透過3D呼吸與特定擺位改善側彎角度。',
     keywords: ['脊椎側彎矯正', '施羅斯療法', 'Schroth', '脊椎側彎背架', '兒童脊椎側彎'],
+    imageUrl: '/images/clinic/n.jpg',
     contentHtml: `
       <p>針對原發性脊椎側彎的青少年與成人，我們設有專用的<strong>脊椎側彎矯正架 (Wall Bar)</strong>。</p>
       <p>採用德國<strong>施羅斯療法 (Schroth Method)</strong> 的概念，透過特定的擺位、肌力訓練與 3D 旋轉呼吸法，主動對抗脊椎的旋轉與側彎。能有效改善外觀體態、減緩背部疼痛，並控制側彎角度的惡化。</p>
-    `,
-    imageUrl: '/images/clinic/n.jpg'
+    `
   }
 ];
 
-export function getFacilityById(id: string) {
-  return facilitiesData.find(item => item.id === id);
+// ==========================================
+// 3. 自動化瘦身區 (Sitemap 與列表頁專用)
+// ==========================================
+// 這段程式碼會自動把 contentHtml 拿掉，只保留輕量資訊
+export const facilitiesData: FacilityMetadata[] = fullFacilitiesData.map((item) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { contentHtml, ...lightweightData } = item;
+  return lightweightData;
+});
+
+// ==========================================
+// 4. Helper Functions
+// ==========================================
+
+export function getFacilityById(id: string): FacilityItem | undefined {
+  // 從完整資料庫中查找
+  return fullFacilitiesData.find(item => item.id === id);
+}
+
+export function getAllFacilities() {
+  // 回傳輕量列表
+  return facilitiesData;
 }

@@ -1,33 +1,43 @@
 // src/data/news.ts
 
+// ==========================================
+// 1. 定義資料介面
+// ==========================================
+
 export interface NewsPost {
   id: string;
   title: string;
   category: '門診公告' | '衛教文章' | '醫學新知' | '診所活動';
-  date: string;
+  date: string;         // 純日期格式 YYYY-MM-DD
+  displayTag?: string;  // 顯示 "置頂貼文" 等特殊標籤
   summary: string;      // 列表頁顯示的短摘要
   coverImage: string;   // 封面圖
-  contentHtml: string;  // 內文 (支援 HTML)
+  contentHtml: string;  // ✨ 內文直接寫在這裡，統一管理
   
-  // ✨ SEO 專用欄位 (預留給未來發文用)
+  // SEO 專用欄位
   seoTitle?: string;
   seoDescription?: string;
   keywords?: string[];
 }
 
-export const newsData: NewsPost[] = [
- 
- 
+// ==========================================
+// 2. 完整資料內容 (Source of Truth)
+// ⚠️ 以後發文只要改這個陣列就好！
+// ==========================================
+const fullNewsData: NewsPost[] = [
   {
     id: 'clinic-schedule',
     title: '宸新復健科門診公告',
     category: '門診公告',
-    date: '置頂貼文 2026-01-15',
+    date: '2026-01-15',
+    displayTag: '置頂貼文',
     summary: '宸新復健科2026年門診時間公告',
     coverImage: '/images/about/c.jpg',
+    seoTitle: '2026門診公告 - 新竹宸新復健科',
+    keywords: ['門診公告', '林羿辰醫師', '新竹宸新復健科'],
     contentHtml: `
 <p><strong>01/12-01/17 門診表</strong></p>
- <img src="/images/news/a.jpg" alt="門診時間表" />
+<img src="/images/news/a.jpg" alt="門診時間表" />
 <p><strong>✦貼心小叮嚀✦</strong><br></p>
 
 <ul>
@@ -59,9 +69,7 @@ export const newsData: NewsPost[] = [
 <img src="/images/news/b.jpg" alt="林羿辰醫師" />
 <img src="/images/news/c.jpg" alt="徐維農醫師" />
 <img src="/images/news/d.jpg" alt="吳皓偉醫師" />
-    `,
-    seoTitle: '2026門診公告 - 新竹宸新復健科',
-    keywords: ['門診公告', '林羿辰醫師', '新竹宸新復健科']
+    `
   },
 
   {
@@ -71,6 +79,9 @@ export const newsData: NewsPost[] = [
     date: '2026-01-17',
     summary: '門診一位大姊突發奇想：「醫美打臉好貴，膝蓋打剩的玻尿酸可以補法令紋嗎？」修但幾勒！雖然都叫玻尿酸，但機油跟水泥可是不能混用的喔！',
     coverImage: '/images/news/article/ha.jpg',
+    seoTitle: '打膝蓋剩下的玻尿酸，可以順便補臉嗎？醫美與關節玻尿酸差異',
+    seoDescription: '門診常被問：打膝蓋剩下的玻尿酸，可以順便補臉嗎？醫師解釋：雖然都叫玻尿酸，但關節用的像機油，醫美用的像水泥，用途大不同！醫師詳解三種玻尿酸差異。',
+    keywords: ['玻尿酸', '膝蓋退化', '醫美', '增生療法', '韌帶修復', '醫學知識'],
     contentHtml: `
   <p>門診一位可愛的大姊突發奇想問我：「醫美打臉好貴喔，阿打膝蓋的玻尿酸，剩一點幫我補一下法令紋？」</p>
   <p><strong>😂 修但幾勒！當然不行！</strong></p>
@@ -99,12 +110,8 @@ export const newsData: NewsPost[] = [
     <li>想<strong>修復韌帶</strong> 👉 用<strong>鷹架</strong>（軟組織玻尿酸）</li>
   </ul>
   <img src="/images/news/article/ha.jpg" alt="玻尿酸種類差異" />
-    `,
-    seoTitle: '打膝蓋剩下的玻尿酸，可以順便補臉嗎？醫美與關節玻尿酸差異',
-    seoDescription: '門診常被問：打膝蓋剩下的玻尿酸，可以順便補臉嗎？醫師解釋：雖然都叫玻尿酸，但關節用的像機油，醫美用的像水泥，用途大不同！醫師詳解三種玻尿酸差異。',
-    keywords: ['玻尿酸', '膝蓋退化', '醫美', '增生療法', '韌帶修復', '醫學知識']
+    `
   },
-
 
   {
     id: 'kneeclick',
@@ -113,6 +120,9 @@ export const newsData: NewsPost[] = [
     date: '2026-01-14',
     summary: '門診很常碰到病患來看診，詢問膝蓋為何會喀喀響，擔心膝蓋是不是退化了!',
     coverImage: '/images/news/article/knee.jpg',
+    seoTitle: '膝蓋為何會喀喀響，是膝蓋退化了嗎?',
+    seoDescription: '膝蓋為何會喀喀響，是膝蓋退化了嗎?，膝蓋有聲音，膝關節退化。',
+    keywords: ['醫學知識', '膝蓋痛', '退化性關節炎', '喀喀響'],
     contentHtml: `
 <p>門診很常碰到病患來看診，詢問膝蓋為何會喀喀響，擔心膝蓋是不是退化了！</p>
 
@@ -144,13 +154,32 @@ export const newsData: NewsPost[] = [
 <h3>💡 最後記住這句口訣：</h3>
 <p><strong>「有聲無痛」多觀察，「有聲有痛」快就醫！</strong></p>
 <img src="/images/news/article/knee.jpg" alt="膝蓋為何會喀喀響" />
-    `,
-    seoTitle: '膝蓋為何會喀喀響，是膝蓋退化了嗎?',
-    seoDescription: '膝蓋為何會喀喀響，是膝蓋退化了嗎?，膝蓋有聲音，膝關節退化。',
-    keywords: ['醫學知識', '膝蓋痛', '退化性關節炎', '喀喀響']
+    `
   }
 ];
 
-export function getNewsById(id: string) {
-  return newsData.find((post) => post.id === id);
+// ==========================================
+// 3. 自動化瘦身區 (Sitemap 與列表頁專用)
+// ==========================================
+// 自動過濾掉 contentHtml，產生輕量列表
+// 這樣 Sitemap 和新聞列表頁載入時就不會卡住
+
+export const newsList = fullNewsData.map((post) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { contentHtml, ...lightweightData } = post;
+  return lightweightData;
+});
+
+// ==========================================
+// 4. Helper Functions
+// ==========================================
+
+export function getNewsById(id: string): NewsPost | undefined {
+  // 直接從完整資料庫找
+  return fullNewsData.find((post) => post.id === id);
+}
+
+export function getAllNews() {
+  // 回傳輕量列表 (如果你有其他地方需要全部新聞，用這個)
+  return newsList;
 }

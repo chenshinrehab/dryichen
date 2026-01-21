@@ -1,14 +1,27 @@
 // src/data/weightLoss.ts
 
-// 1. 定義資料結構
-export interface WeightLossProgram {
+// =======================================================
+// 1. 定義資料介面
+// =======================================================
+
+// 輕量級 Metadata (給 Sitemap 和 列表頁用)
+export interface WeightLossMetadata {
   slug: string;
   title: string;
   subtitle?: string;
   description: string;
-  image: string
-  contentHtml?: string;
+  image: string;
   features?: string[];
+  
+  // SEO 欄位 (列表頁可能需要)
+  seoTitle?: string;
+  seoDescription?: string;
+  keywords?: string[];
+}
+
+// 完整資料介面 (包含內文 HTML 與詳細列表)
+export interface WeightLossProgram extends WeightLossMetadata {
+  contentHtml?: string;
   whyChooseUs?: string[];
   programBenefits?: string[];
   images?: { src: string; alt: string }[];
@@ -16,31 +29,26 @@ export interface WeightLossProgram {
   benefitsTitle?: string;
   benefitsIconClass?: string;
   qaList?: { question: string; answer: string }[];
-
-  // ✨ 新增 SEO 專用欄位
-  seoTitle?: string;        // 瀏覽器標題
-  seoDescription?: string;  // 搜尋結果摘要
-  keywords?: string[];      // 關鍵字標籤
 }
 
-export const weightLossPrograms: WeightLossProgram[] = [
-  // =======================================================
-  // 1. 猛健樂 (Mounjaro) - 關鍵字：新竹減重、瘦瘦針價格、雙重腸泌素
-  // =======================================================
+// =======================================================
+// 2. 完整資料來源 (Source of Truth)
+// ⚠️ 所有資料都在這裡維護，程式會自動產生 Sitemap 用的列表
+// =======================================================
+const fullWeightLossData: WeightLossProgram[] = [
+  // -----------------------------------------------------
+  // 1. 猛健樂 (Mounjaro)
+  // -----------------------------------------------------
   {
     slug: 'mounjaro',
     title: '猛健樂 (Mounjaro)',
     subtitle: '新一代雙重腸泌素受體促效劑',
     description: '新一代雙重腸泌素(GIP/GLP-1)受體促效劑，提供更卓越的體重控制效果。',
-    // ✨ 新增圖片：醫師諮詢/藥物示意
     image: '/images/weight-loss/a.jpg',
     features: ['一週一次', '抑制食慾', '延緩胃排空'],
-    
-    // ✨ SEO 強力優化
     seoTitle: '新竹猛健樂(Mounjaro)減重門診 - 價格/效果/副作用 | 宸新復健科',
     seoDescription: '新竹猛健樂(Mounjaro)瘦瘦針推薦。新一代雙重腸泌素(GIP/GLP-1)，減重效果優於傳統善纖達。醫師親自規劃療程，含InBody檢測與飲食指導，有效改善肥胖、脂肪肝與三高問題。',
     keywords: ['新竹猛健樂', 'Mounjaro價格', '新竹瘦瘦針', '新竹減重門診', '雙重腸泌素', '減肥針推薦', '胰島素阻抗'],
-
     contentHtml: `
 <p>宸新復健科提供完整的<strong>猛健樂 (Mounjaro)</strong> 減重療程。這是目前最新的雙重腸泌素受體促效劑，能同時活化 GIP 與 GLP-1 兩種受體。</p>
 <br>
@@ -207,9 +215,6 @@ export const weightLossPrograms: WeightLossProgram[] = [
 </ul>
 <p><strong>舉例說明：</strong> 您固定每週日施打。若週三想起來（未滿 4 天），請立即補打；若週四才想起來（已超過 4 天），請等到這週日再打下一劑。</p>
 
-
-
-
 <div style="background-color: #f0f9ff; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
     <h3 style="color: #0369a1; margin-top: 0;">👨‍⚕️ 想了解您是否適合猛健樂療程？</h3>
     <p style="color: #334155; margin-bottom: 1.5rem;">歡迎來到新竹宸新復健科，由醫師親自為您評估。我們提供一對一的諮詢，結合 InBody 檢測，甲狀腺超音波檢查或抽血為您量身打造最安全、有效的減重計畫。</p>
@@ -225,8 +230,6 @@ export const weightLossPrograms: WeightLossProgram[] = [
       '一週一次皮下注射，簡單方便',
       '臨床顯示體重下降幅度可達 20%',
       '有效控制三高、改善脂肪肝與心血管健康'
-    ],
-    images: [
     ],
     qaList: [
       {
@@ -248,9 +251,9 @@ export const weightLossPrograms: WeightLossProgram[] = [
     ]
   },
 
-  // =======================================================
-  // 2. 週纖達 (Ozempic) - 關鍵字：Ozempic價格、善纖達比較、一週一次
-  // =======================================================
+  // -----------------------------------------------------
+  // 2. 週纖達 (Ozempic/Wegovy)
+  // -----------------------------------------------------
   {
     slug: 'Wegovy',
     title: '週纖達 (Wegovy)',
@@ -258,17 +261,13 @@ export const weightLossPrograms: WeightLossProgram[] = [
     description: '協助控制體重的注射藥物，幫助您減少飢餓感，輕鬆達成減重目標。',
     image: '/images/weight-loss/b.jpg',
     features: ['穩定血糖', '減少體脂肪堆積'],
-    
-    // ✨ SEO 強力優化
     seoTitle: '新竹週纖達(Wegovy)減重 - 價格/副作用/與善纖達比較 | 宸新復健科',
     seoDescription: '新竹週纖達(Wegovy)瘦瘦針推薦。高CP值的一週一次減重藥物，有效抑制食慾、增加飽足感。適合忙碌上班族、想改善體態與血糖控制者。提供完整衛教與劑量規劃。',
     keywords: ['新竹週纖達', 'Wegovy價格', '新竹瘦瘦針推薦', '善纖達比較', 'GLP-1', '減肥筆', '胰妥讚'],
-
     contentHtml: `
 <p>宸新復健科提供高 CP 值的<strong>週纖達</strong> 減重療程。這是一種長效型 GLP-1 受體促效劑，透過模擬腸道荷爾蒙的作用，能有效<strong>增加飽足感</strong>、<strong>延緩胃部排空</strong>，進而減少熱量攝取。</p>
 <br>
 <p>週纖達 (Semaglutide) 原本是糖尿病治療的明星藥物，但在臨床應用中發現其卓越的減重效果，迅速風靡全球，成為許多名人與醫師推薦的減重首選。對於預算有限、或追求高性價比的減重族群來說，週纖達是一個非常理想且相對經濟的選擇。</p>
-
 
 <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
     <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -423,7 +422,6 @@ export const weightLossPrograms: WeightLossProgram[] = [
       'CP值高，小資族也能負擔',
       '有效控制三高及脂肪肝，提供心臟保護'
     ],
-    images: [],
     qaList: [
       {
         question: '週纖達跟猛健樂有什麼不一樣？',
@@ -444,23 +442,19 @@ export const weightLossPrograms: WeightLossProgram[] = [
     ]
   },
 
-  // =======================================================
-  // 3. 兒童骨齡評估 - 關鍵字：新竹照骨齡、性早熟檢查、長高門診
-  // =======================================================
+  // -----------------------------------------------------
+  // 3. 兒童骨齡評估
+  // -----------------------------------------------------
   {
     slug: 'bone-age',
     title: '兒童骨齡評估',
     subtitle: '掌握黃金生長發育期',
     description: '透過左手X光片判讀骨骼成熟度，預測成年身高，掌握黃金生長發育期。',
-    // ✨ 新增圖片：兒童測量身高
     image: '/images/weight-loss/c.jpg',
     features: ['性早熟', '生長遲緩', '想了解身高潛力的兒童'],
-    
-    // ✨ SEO 強力優化
     seoTitle: '新竹兒童骨齡檢查 - 性早熟/長高門診/身高預測 | 宸新復健科',
     seoDescription: '新竹照骨齡推薦。免掛號免預約，隨到隨照。結合TW3法與AI大數據精準判讀，準確預測兒童成年身高。針對性早熟、生長遲緩提供專業評估與治療建議，把握孩子黃金轉骨期。',
     keywords: ['新竹照骨齡', '兒童長高門診', '性早熟檢查', '生長遲緩', '預測身高', '骨齡X光', '新竹小兒內分泌'],
-
     contentHtml: `
    <p>擔心孩子長不高嗎？想知道是否有<strong>性早熟</strong>或<strong>生長遲緩</strong>的問題？孩子的成長只有一次，錯過了黃金期，可能就再也追不回來了。</p>
     <br>
@@ -612,8 +606,6 @@ export const weightLossPrograms: WeightLossProgram[] = [
     ],
     benefitsTitle: '為什麼選擇 TW3 法？',
     benefitsIconClass: 'fa-solid fa-check-circle text-green-500',
-    images: [
-    ],
     qaList: [
       {
         question: '照骨齡會有輻射影響嗎？',
@@ -631,10 +623,44 @@ export const weightLossPrograms: WeightLossProgram[] = [
   }
 ];
 
-export function getWeightLossProgramBySlug(slug: string) {
-  return weightLossPrograms.find((program) => program.slug === slug);
+// =======================================================
+// 3. 自動化瘦身區 (Sitemap 與列表頁專用)
+// =======================================================
+// 自動過濾掉 contentHtml 與詳細內容，產生輕量列表
+// 這樣 sitemap.ts 導入 weightLossPrograms 時就不會載入過重的資料
+
+export const weightLossPrograms: WeightLossMetadata[] = fullWeightLossData.map((item) => {
+  // 使用解構賦值，把詳細資料分離出來，只回傳 metadata
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const {
+    contentHtml,
+    whyChooseUs,
+    programBenefits,
+    images,
+    qrCode,
+    benefitsTitle,
+    benefitsIconClass,
+    qaList,
+    ...metadata
+  } = item;
+  return metadata;
+});
+
+// =======================================================
+// 4. Helper Functions
+// =======================================================
+
+// 取得單一減重項目 (內頁用，從完整資料庫找)
+export function getWeightLossProgramBySlug(slug: string): WeightLossProgram | undefined {
+  return fullWeightLossData.find((program) => program.slug === slug);
 }
 
+// 取得所有減重項目 (列表頁或 Sitemap 用，只回傳輕量資料)
+export function getAllWeightLossPrograms() {
+  return weightLossPrograms;
+}
+
+// 取得所有 Slug (Sitemap 專用)
 export function getAllWeightLossProgramSlugs() {
   return weightLossPrograms.map((program) => ({
     slug: program.slug,

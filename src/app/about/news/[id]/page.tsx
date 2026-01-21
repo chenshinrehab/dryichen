@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
-import { newsData, getNewsById } from '@/data/news'
+import { newsList, getNewsById } from '@/data/news'
 import ShareButtons from '@/components/ShareButtons'
 
 // 定義常數，方便未來修改
@@ -12,7 +12,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.t
 interface PageProps { params: { id: string } }
 
 export async function generateStaticParams() {
-  return newsData.map((post) => ({ id: post.id }))
+  return newsList.map((post) => ({ id: post.id }))
 }
 
 // 1. 動態 Meta

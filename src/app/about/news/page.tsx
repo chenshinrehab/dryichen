@@ -3,7 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
-import { newsData } from '@/data/news'
+import { newsList } from '@/data/news'
 
 // 1. Meta 設定
 export const metadata: Metadata = { 
@@ -43,7 +43,7 @@ export default function NewsListPage() {
         url: siteUrl
     },
     // ✨ blogPost: 告訴 Google 這裡面包含哪些文章 (BlogPosting)
-    blogPost: newsData.map((item) => ({
+    blogPost: newsList.map((item) => ({
         '@type': 'BlogPosting',
         headline: item.title,
         description: item.summary,
@@ -111,7 +111,7 @@ export default function NewsListPage() {
 
           {/* 文章列表 */}
           <div className="space-y-8">
-            {newsData.map((item) => (
+            {newsList.map((item) => (
               <Link 
                 key={item.id} 
                 href={`/about/news/${item.id}`} 

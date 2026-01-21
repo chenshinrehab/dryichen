@@ -16,36 +16,22 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
   const SITE_DOMAIN = 'https://www.dryichen.com.tw/'
 
   useEffect(() => {
-    // 確保只在客戶端執行
     if (typeof window !== 'undefined') {
-      
       let path = ''
-
-      // 1. 如果父元件有傳入 url (例如 /treatments/prp)
       if (url) {
-        // 如果傳入的是完整網址 (http開頭)，直接用
         if (url.startsWith('http')) {
           setShareUrl(url)
           return
         }
-        // 如果是相對路徑，把它存起來
         path = url.startsWith('/') ? url : `/${url}`
-      } 
-      // 2. 如果沒傳入，自動抓取當前頁面的「路徑」 (pathname)
-      else {
-        path = window.location.pathname // 這裡只抓路徑，例如 /about，不抓 domain
+      } else {
+        path = window.location.pathname
       }
-
-      // 3. 組合：正式網域 + 路徑
-      // 這樣就算您在 localhost:3000 測試，分享出去的也會是 https://dryichen...
       setShareUrl(`${SITE_DOMAIN}${path}`)
     }
   }, [url])
 
-  // 防止空網址渲染
   if (!shareUrl) return null
-
-  // --- 分享功能實作 ---
 
   const handleLineShare = () => {
     window.open(
@@ -133,6 +119,15 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
           </>
         )}
       </button>
+
+      {/* 🟢 新增：預約掛號按鈕 (已套用您指定的粉紅/玫瑰色系) */}
+      <a
+        href="https://www.dryichen.com.tw/booking"
+        className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white rounded-full transition-all font-bold shadow-lg hover:shadow-[0_0_15px_rgba(236,72,153,0.6)] flex items-center justify-center gap-2 transform hover:-translate-y-1 no-underline"
+      >
+        <i className="fa-solid fa-calendar-check text-xl"></i>
+        預約掛號
+      </a>
       
     </div>
   )

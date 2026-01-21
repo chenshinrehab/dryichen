@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { facilitiesData, getFacilityById } from '@/data/facilities'
+import ShareButtons from '@/components/ShareButtons'
 
 interface PageProps { params: { id: string } }
 
@@ -19,6 +20,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: `${item.title} - 診所設備介紹 | 新竹宸新復健科`,
     description: item.description,
     keywords: item.keywords,
+    openGraph: {
+      title: item.title,
+      description: item.description,
+      images: [item.imageUrl],
+    }
   }
 }
 
@@ -26,10 +32,9 @@ export default function FacilityDetailPage({ params }: PageProps) {
   const item = getFacilityById(params.id)
   if (!item) notFound()
 
-  const siteUrl = 'https://www.dryichen.com.tw'
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
   const currentUrl = `${siteUrl}/about/clinic/${params.id}`
 
-  // ✨ 修改處：改用 MedicalWebPage 包裹 MedicalDevice
   const jsonLdDevice = {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
@@ -42,14 +47,11 @@ export default function FacilityDetailPage({ params }: PageProps) {
         name: '新竹宸新復健科',
         url: siteUrl
     },
-    // 定義此頁面的主角是「醫療器材」
     mainEntity: {
         '@type': 'MedicalDevice',
         name: item.title,
         description: item.description,
         image: item.imageUrl,
-        // 如果您的資料庫有廠商名稱，可以加在這裡，沒有的話可省略
-        // manufacturer: { '@type': 'Organization', name: '品牌名稱' } 
     }
   }
 
@@ -68,113 +70,90 @@ export default function FacilityDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLdDevice} />
       <JsonLd data={jsonLdBreadcrumb} />
 
-      {/* ✨ CSS 樣式修正 (保持原本您喜歡的設定) */}
       <style dangerouslySetInnerHTML={{__html: `
-        /* 手機版與全域預設 */
+        .facility-content {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: #cbd5e1;
+        }
         .facility-content p, .facility-content li {
-            font-size: 18px !important; 
-            line-height: 1.625 !important;
-            margin-bottom: 1.5rem !important;
-            letter-spacing: 0px !important;
-            color: #cbd5e1 !important; /* Slate-300 */
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.025em;
         }
-
-        /* 重點文字 (strong) - 青色 */
         .facility-content strong {
-            color: #22d3ee !important; /* Cyan-400 */
-            font-weight: 700 !important;
+            color: #22d3ee;
+            font-weight: 700;
         }
-
-        /* 圖片與影片預設設定 */
+        .facility-content h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #06b6d4;
+            padding-left: 1rem;
+        }
+        .facility-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .facility-content ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
         .facility-content img, .facility-content video, .facility-content iframe {
-            max-width: 100% !important;
-            border-radius: 0.75rem !important;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3) !important;
-            margin: 2rem auto !important;
-            display: block !important;
-            border: 1px solid #475569 !important;
+            max-width: 100%;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            margin: 2rem auto;
+            display: block;
+            border: 1px solid #475569;
         }
-
-        /* ✨ 圖片高度自動 */
         .facility-content img {
-            height: auto !important;
+            height: auto;
         }
-
-        /* ✨ 影片強制設定 16:9 比例，解決高度太矮問題 */
         .facility-content video, .facility-content iframe {
-            aspect-ratio: 16 / 9 !important;
-            height: auto !important; /* 讓 aspect-ratio 控制高度 */
+            aspect-ratio: 16 / 9;
+            height: auto;
         }
-        
-        /* 電腦版 (寬度大於 768px) */
         @media (min-width: 768px) {
-            .facility-content p, .facility-content li {
-                font-size: 18px !important; 
-                line-height: 1.625 !important; 
-                margin-bottom: 2rem !important;
-                letter-spacing: 0.025em !important;
-                color: #cbd5e1 !important;
-            }
-            .facility-content h2 {
-                font-size: 1.875rem !important; 
-                margin-top: 3rem !important;
-                margin-bottom: 1.5rem !important;
-                color: #ffffff !important;
-            }
-            
-            /* H3 設定：放大且顏色改為灰白色 */
-            .facility-content h3 {
-                font-size: 1.75rem !important;
-                margin-top: 2.5rem !important;
-                margin-bottom: 1.25rem !important;
-                color: #cbd5e1 !important;
-                font-weight: 700 !important;
-            }
-
-            /* 電腦版寬度調整 */
-            
-            /* 1. 圖片 (img)：限制為 85% */
-            .facility-content img {
-                width: 85% !important;
-                max-width: 85% !important;
-            }
-
-            /* 2. 影片 (video, iframe)：維持 100% 滿版 (比例已由上方 aspect-ratio 控制) */
-            .facility-content video, .facility-content iframe {
-                width: 100% !important;
-                max-width: 100% !important;
-            }
+            .facility-content h2 { font-size: 1.875rem; }
+            .facility-content h3 { font-size: 1.5rem; }
+            .facility-content img { max-width: 85%; }
         }
       `}} />
 
-      <div className="min-h-screen bg-slate-900 text-slate-300 pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
+      {/* 🟢 修改 1: 減少頂部 Padding (pt-0, md:pt-4) */}
+      <div className="min-h-screen bg-slate-900 text-slate-300 pt-0 pb-12 md:pt-4 md:pb-16 fade-in">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <nav className="hidden text-sm text-slate-500 mb-8 font-sans">
-              <Link href="/about/clinic" className="hover:text-cyan-400 transition-colors">診所設備</Link>
-              <span className="mx-2">/</span>
-              <span className="text-cyan-500">{item.title}</span>
-          </nav>
+          {/* 🟢 修改 2: 麵包屑導航 <nav> 已移除 */}
 
-          <Link href="/about/clinic" className="inline-flex items-center text-cyan-400 mb-4 hover:text-cyan-300 transition-colors group">
-              <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回設備列表
+          {/* 🟢 修改 3: 減少按鈕下方間距 (mb-4) */}
+          <Link href="/about/clinic" className="inline-flex items-center text-cyan-400 mt-4 mb-4 hover:text-cyan-300 transition-colors group">
+              <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i>
+              返回設備列表
           </Link>
 
           <div className="bg-slate-800/80 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden shadow-2xl">
               
              <div className="relative h-64 md:h-96 w-full group">
-                <img src={item.imageUrl} alt={item.title} className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
+                <img 
+                  src={item.imageUrl} 
+                  alt={item.title} 
+                  className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
                 
-                {/* 圖片文字區塊 */}
-                <div className="absolute bottom-0 left-0 p-4 md:p-8 w-full bg-gradient-to-t from-slate-900/90 to-transparent">
-                    {/* 標題 */}
-                    <h1 className="text-2xl md:text-4xl font-bold text-white mb-0 md:mb-2">{item.title}</h1>
-                    
-                    {/* 小標籤：手機隱藏，電腦顯示 */}
-                    <div className="hidden md:flex flex-wrap gap-2">
-                        {item.keywords.slice(0, 4).map((kw, i) => (
-                            <span key={i} className="text-xs bg-cyan-900/60 text-cyan-300 px-2 py-1 rounded border border-cyan-700/50 backdrop-blur-sm">
+                <div className="absolute bottom-0 left-0 p-6 md:p-10 w-full">
+                    <h1 className="text-3xl md:text-5xl font-bold text-white mb-3 tracking-wide shadow-black drop-shadow-md">{item.title}</h1>
+                    <div className="flex flex-wrap gap-2">
+                        {item.keywords.slice(0, 5).map((kw, i) => (
+                            <span key={i} className="text-xs md:text-sm bg-cyan-950/80 text-cyan-300 px-3 py-1 rounded-full border border-cyan-500/30 backdrop-blur-md">
                                 #{kw}
                             </span>
                         ))}
@@ -182,22 +161,28 @@ export default function FacilityDetailPage({ params }: PageProps) {
                 </div>
              </div>
 
-             <div className="p-8 md:p-12">
-                 <div 
-                   className="facility-content prose prose-invert max-w-none 
-                              prose-headings:font-bold 
-                              prose-h2:border-l-4 prose-h2:border-cyan-500 prose-h2:pl-4
-                              "
-                 >
+             <div className="p-6 md:p-12">
+                 <div className="facility-content">
                     <div dangerouslySetInnerHTML={{ __html: item.contentHtml }} />
                  </div>
+             </div>
 
-                 <div className="mt-12 pt-10 border-t border-slate-700/50 w-full flex flex-col items-center gap-8">
+             <div className="bg-slate-900/80 p-8 md:p-12 border-t border-slate-700 text-center relative overflow-hidden">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent blur-sm"></div>
+                
+                <h3 className="text-white font-bold text-2xl mb-3 relative z-10">覺得這篇介紹有幫助嗎？</h3>
+                <p className="text-slate-400 mb-8 text-lg relative z-10">歡迎分享給親朋好友，讓更多人了解我們的專業設備。</p>
+
+                <div className="relative z-10 mb-10">
+                   <ShareButtons url={currentUrl} title={item.title} />
+                </div>
+
+                 <div className="pt-8 border-t border-slate-700/50 w-full flex justify-center">
                      <Link 
                        href="/about/clinic" 
-                       className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-cyan-400 border-2 border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] transition-all duration-300 group"
+                       className="inline-flex items-center justify-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 group"
                      >
-                           了解更多診所資訊 
+                           查看更多設備 
                            <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
                      </Link>
                  </div>

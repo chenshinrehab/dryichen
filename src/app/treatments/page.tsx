@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
-import { treatments } from '@/data/treatments'
+import { treatmentsList } from '@/data/treatments'
 
 // 定義常數
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
@@ -57,7 +57,7 @@ const treatmentsSchema = {
       // 告訴 Google 這裡有一份服務清單
       'mainEntity': {
         '@type': 'ItemList',
-        'itemListElement': treatments.map((item, index) => ({
+        'itemListElement': treatmentsList.map((item, index) => ({
             '@type': 'ListItem',
             'position': index + 1,
             'url': `${SITE_URL}/treatments/${item.slug}`,
@@ -127,7 +127,7 @@ export default function TreatmentsPage() {
                 grid-cols-1, gap-8, h-64, w-2/5:w-3/5
                 ============================================================ */}
             <div className="grid grid-cols-1 gap-8 mb-16">
-              {treatments.map((treatment) => (
+              {treatmentsList.map((treatment) => (
                 <Link
                   key={treatment.slug}
                   href={`/treatments/${treatment.slug}`}

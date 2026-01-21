@@ -1,3 +1,4 @@
+// src/app/diseases/[category]/[slug]/page.tsx
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import Link from 'next/link'
@@ -43,10 +44,13 @@ export default function DiseaseDetailPage({ params }: PageProps) {
   if (!disease) notFound()
 
   const currentPageUrl = `${SITE_URL}/diseases/${params.category}/${params.slug}`
+  
   // QR Code API
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&bgcolor=ffffff&data=${encodeURIComponent(currentPageUrl)}`
 
-  // SEO: 麵包屑 Schema
+  // ==========================================
+  // SEO Schema 1: 麵包屑
+  // ==========================================
   const jsonLdBreadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -57,28 +61,66 @@ export default function DiseaseDetailPage({ params }: PageProps) {
     ],
   }
 
-  // SEO: 醫療狀況 Schema
-  const jsonLdCondition = {
+  // ==========================================
+  // SEO Schema 2: 醫療網頁 (E-E-A-T 增強版)
+  // ==========================================
+  const jsonLdMedicalWebPage = {
     '@context': 'https://schema.org',
-    '@type': 'MedicalCondition',
-    name: disease.title,
+    '@type': 'MedicalWebPage',
+    '@id': `${currentPageUrl}#webpage`,
+    url: currentPageUrl,
+    name: `${disease.title} - 疾病衛教`,
     description: disease.seoDescription || disease.description,
-    possibleTreatment: disease.treatments.map(t => ({
-      '@type': 'MedicalTherapy',
-      name: t.replace(/<[^>]*>?/gm, '') // 移除 HTML 標籤
-    })),
-    signOrSymptom: disease.symptoms.map(s => ({
-      '@type': 'MedicalSymptom',
-      name: s
-    })),
+    
+    // ✨ 關鍵優化：標示作者為醫師 (權威性)
+    author: {
+      '@type': 'Physician',
+      name: '林羿辰醫師',
+      url: SITE_URL,
+      jobTitle: '院長',
+      affiliation: {
+          '@type': 'MedicalClinic',
+          name: '宸新復健科診所'
+      }
+    },
+    // ✨ 關鍵優化：標示審核者
+    reviewedBy: {
+      '@type': 'Physician',
+      name: '林羿辰醫師'
+    },
+    publisher: {
+        '@type': 'MedicalClinic',
+        name: '宸新復健科診所',
+        logo: {
+            '@type': 'ImageObject',
+            url: `${SITE_URL}/images/logo.png`
+        }
+    },
+
+    // 主要內容：疾病資訊
+    mainEntity: {
+      '@type': 'MedicalCondition',
+      name: disease.title,
+      description: disease.seoDescription || disease.description,
+      
+      possibleTreatment: disease.treatments.map(t => ({
+        '@type': 'MedicalTherapy',
+        name: t.replace(/<[^>]*>?/gm, '') // 移除 HTML 標籤
+      })),
+      signOrSymptom: disease.symptoms.map(s => ({
+        '@type': 'MedicalSymptom',
+        name: s
+      })),
+    }
   }
 
   return (
     <>
       <JsonLd data={jsonLdBreadcrumb} />
-      <JsonLd data={jsonLdCondition} />
+      {/* 使用新的 MedicalWebPage Schema */}
+      <JsonLd data={jsonLdMedicalWebPage} />
 
-      {/* 回復原本的 Style 區塊，確保圖片置中與連結樣式與原本一致 */}
+      {/* Style 區塊 */}
       <style dangerouslySetInnerHTML={{__html: `
         /* 重點文字 (strong) - 青色 */
         .article-content strong {
@@ -189,7 +231,6 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                   <div>
                     <h1 className="text-3xl md:text-5xl font-bold font-sans text-white mb-3 tracking-wide leading-tight">{disease.title}</h1>
                     <div className="flex flex-wrap gap-2 mt-2">
-                      {/* 修改：回復到原本的實心樣式 */}
                       {disease.seoKeywords?.slice(0, 5).map((kw, i) => (
                         <span key={i} className="text-xs bg-slate-700 text-cyan-400 px-2 py-1 rounded-full border border-slate-600">#{kw}</span>
                       ))}
@@ -235,7 +276,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                   </div>
                 </div>
 
-                {/* 修改：移除 prose，回復到 article-content 並使用上方的 style 控制樣式 */}
+                {/* 文章內容 */}
                 <div className="article-content text-slate-300 leading-relaxed text-lg pb-6">
                   {disease.contentHtml ? (
                     <div dangerouslySetInnerHTML={{ __html: disease.contentHtml }} />

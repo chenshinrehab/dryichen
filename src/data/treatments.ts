@@ -1,47 +1,59 @@
 // src/data/treatments.ts
 
-export interface Treatment {
+// =======================================================
+// 1. 定義介面
+// =======================================================
+
+// 輕量級 Metadata (給 Sitemap 和 治療項目列表頁用)
+export interface TreatmentMetadata {
   slug: string;
   title: string;
-  subtitle?: string;
-  description: string;
-  image: string
-  contentHtml: string;
-  whyChooseUs: string[];
-  treatmentFocus: string[];
-  images: { src: string; alt: string }[];
-  applicableConditions: string[];
-  features: string[];
-  youtubeVideoId?: string;
-  qaList?: { question: string; answer: string }[];
-  
-  // SEO 專用欄位
+  subtitle?: string;    
+  description: string;  
+  image: string;        
+  features: string[];   
+
+  // SEO 欄位
   seoTitle?: string;
   seoDescription?: string;
   keywords?: string[];
 }
 
-export const treatments: Treatment[] = [
-  // =======================================================
-  // 1. 增生療法 / PRP (完整保留 7 張圖 + 3 題 QA)
-  // =======================================================
+// 完整資料介面 (包含內文 HTML 與詳細列表)
+export interface Treatment extends TreatmentMetadata {
+  contentHtml: string;
+  whyChooseUs: string[];
+  treatmentFocus: string[];
+  images: { src: string; alt: string }[];
+  applicableConditions: string[];
+  youtubeVideoId?: string;
+  qaList?: { question: string; answer: string }[];
+}
+
+// =======================================================
+// 2. 完整資料來源 (Source of Truth)
+// ⚠️ 所有資料都在這裡維護，程式會自動產生 Sitemap 用的列表
+// =======================================================
+const fullTreatmentsData: Treatment[] = [
+  // -----------------------------------------------------
+  // 1. 增生療法 / PRP
+  // -----------------------------------------------------
   {
     slug: 'prp',
     title: '增生療法 / PRP',
     subtitle: '超音波導引、高濃度血小板注射',
     description: '透過注射高濃度血小板血漿 (PRP) 或高濃度葡萄糖，精準修復受損關節與韌帶。',
-    // 圖片：注射/實驗室示意
     image: '/images/treatments/a.jpg',
-    // SEO 設定
+    features: ['啟動修復', '免開刀', '精準導引'],
     seoTitle: '新竹PRP注射推薦 - 膝蓋退化/旋轉肌破裂/網球肘 | 宸新復健科',
     seoDescription: '新竹PRP增生療法首選。醫師親自執行高解析超音波導引注射，將高濃度血小板精準送達病灶。免開刀治療退化性關節炎、半月軟骨受損與韌帶撕裂，啟動身體修復力。',
     keywords: ['新竹PRP', '新竹增生療法', '超音波導引注射', '膝蓋退化免開刀', '旋轉肌破裂', '足底筋膜炎', '高濃度葡萄糖', '新竹骨科推薦'],
-
+    
+    // 詳細內容
     contentHtml: `
 <p>疼痛總是如影隨形，讓你無法享受生活？傳統的消炎藥或類固醇雖然能暫時止痛，卻無法修復受損的組織。宸新復健科提供<strong>高濃度血小板血漿 (PRP) 增生療法</strong>及<strong>高濃度葡萄糖水</strong>，這是一種啟動人體自我修復機制的先進治療。</p>
 <br>
 <p>透過抽取自身血液，離心萃取出富含生長因子的血小板，再經由<strong>高解析超音波精準導引</strong>注射至受傷部位。就像是為受損的肌腱、韌帶或關節打入一劑強效的「修復工程隊」，從根本解決疼痛問題，讓您重拾活動力。</p>
-
 
 <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
     <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -164,13 +176,8 @@ export const treatments: Treatment[] = [
       '關節韌帶鬆弛與不穩定。',
       '退化性關節炎與半月軟骨損傷。'
     ],
-    // 完整保留原始 7 張圖片
-    images: [
-    ],
+    images: [],
     applicableConditions: ['退化性關節炎', '旋轉肌撕裂', '網球肘', '足底筋膜炎', '半月軟骨受損'],
-    features: ['啟動修復', '免開刀', '精準導引'],
-    
-    // 完整保留原始 3 題 QA
     qaList: [
       {
         question: 'PRP 注射需要打幾次？',
@@ -195,23 +202,20 @@ export const treatments: Treatment[] = [
     ]
   },
 
-  // =======================================================
-  // 2. 聚焦式震波治療 (完整保留 3 張圖 + 3 題 QA)
-  // =======================================================
+  // -----------------------------------------------------
+  // 2. 聚焦式震波治療
+  // -----------------------------------------------------
   {
     slug: 'shockwave',
     title: '聚焦式 / 發散式體外震波',
     subtitle: '瑞士頂級設備、擊碎鈣化與骨刺',
     description: '引進瑞士頂級震波設備，免開刀擊碎鈣化點，專治足底筋膜炎與頑固疼痛。',
-    // 圖片：醫療儀器/物理治療
     image: '/images/treatments/b.jpg',
-    youtubeVideoId: '3OK5zeUBeGc',
-    
-    // SEO 設定
+    features: ['非侵入性', '擊碎鈣化', '恢復期短'],
     seoTitle: '新竹體外震波治療 - 專治足底筋膜炎/骨刺/鈣化性肌腱炎 | 宸新復健科',
     seoDescription: '新竹震波治療推薦。宸新復健科採用瑞士頂級聚焦式震波儀，針對足底筋膜炎、鈣化性肌腱炎與網球肘效果顯著。免打針、免吃藥、非侵入性，有效擊碎鈣化組織並刺激血管新生。',
     keywords: ['新竹震波', '體外震波推薦', '足底筋膜炎', '鈣化性肌腱炎', '骨刺治療', '網球肘', '新竹物理治療'],
-
+    youtubeVideoId: '3OK5zeUBeGc',
     contentHtml: `
      <p>您是否長期受慢性疼痛所苦？足底筋膜炎反覆發作、網球肘痛到拿不起杯子、或是旋轉肌鈣化讓您徹夜難眠？當復健、吃藥、打針都無法解決您的疼痛時，<strong>體外震波治療 (ESWT)</strong> 可能是您免於開刀的最佳選擇。</p>
 <br>
@@ -335,13 +339,8 @@ export const treatments: Treatment[] = [
       '鈣化性肌腱炎 (肩膀劇烈疼痛)。',
       '長期肌肉緊繃與慢性筋膜炎。'
     ],
-    // 完整保留原始 3 張圖片
-    images: [
-    ], 
+    images: [],
     applicableConditions: ['足底筋膜炎', '鈣化性肌腱炎', '骨刺', '網球肘', '阿基里斯腱炎'],
-    features: ['非侵入性', '擊碎鈣化', '恢復期短'],
-    
-    // 完整保留原始 3 題 QA
     qaList: [
       {
         question: '震波治療過程會痛嗎？',
@@ -358,21 +357,19 @@ export const treatments: Treatment[] = [
     ]
   },
 
-  // =======================================================
-  // 3. 徒手治療 (完整保留 3 題 QA)
-  // =======================================================
+  // -----------------------------------------------------
+  // 3. 徒手治療
+  // -----------------------------------------------------
   {
     slug: 'manual',
     title: '徒手治療',
     subtitle: '物理治療師一對一、骨骼筋膜調整',
     description: '專業物理治療師一對一評估，調整骨盆歪斜、脊椎側彎與筋膜放鬆。',
-    // 圖片：兒童積木/學習
     image: '/images/treatments/c.jpg',
-    // SEO 設定
+    features: ['一對一治療', '筋膜放鬆', '骨骼調整'],
     seoTitle: '新竹徒手治療推薦 - 脊椎側彎矯正/骨盆歪斜/筋膜放鬆 | 宸新復健科',
     seoDescription: '新竹專業物理治療師一對一徒手治療。針對脊椎側彎、骨盆前傾/歪斜、產後喬骨盆、長短腳及術後關節沾黏，提供客製化的骨骼調整與筋膜放鬆療程，從根本改善體態與疼痛。',
     keywords: ['新竹徒手治療', '新竹整骨', '脊椎側彎矯正', '骨盆歪斜', '產後喬骨盆', '筋膜放鬆', '新竹物理治療推薦', '五十肩治療'],
-
     contentHtml: `
 <p>您是否長期被慢性疼痛困擾？肩頸僵硬、下背痠痛、或是運動傷害後總是好不完全？當儀器治療（電療、熱敷）只能提供暫時的緩解時，<strong>徒手運動治療 (Manual & Exercise Therapy)</strong> 將是您重拾無痛生活的關鍵。</p>
 <br>
@@ -450,18 +447,18 @@ export const treatments: Treatment[] = [
 <h3>🎯 誰適合徒手運動治療？</h3>
 <p>如果您有以下困擾，且健保的電療熱敷已經無法滿足您的需求，建議您可以預約徒手治療評估：</p>
 <ul>
-    <li><strong>脊椎問題：</strong> 頸椎病變、椎間盤突出、坐骨神經痛、脊椎側彎。</li>
-    <li><strong>肩頸問題：</strong> 五十肩、夾擠症候群、長期肩頸痠痛。</li>
-    <li><strong>下肢問題：</strong> 退化性關節炎、前十字韌帶術後復健、腳踝扭傷。</li>
-    <li><strong>特殊族群：</strong> 產後骨盆復位、運動員專項體能訓練、高齡防跌肌力訓練。</li>
+    <li><strong>脊椎問題：</strong> 頸椎病變、椎間盤突出、坐骨神經痛、脊椎側彎。</li>
+    <li><strong>肩頸問題：</strong> 五十肩、夾擠症候群、長期肩頸痠痛。</li>
+    <li><strong>下肢問題：</strong> 退化性關節炎、前十字韌帶術後復健、腳踝扭傷。</li>
+    <li><strong>特殊族群：</strong> 產後骨盆復位、運動員專項體能訓練、高齡防跌肌力訓練。</li>
 </ul>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <div style="background-color: #f0f9ff; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
-    <h3 style="color: #0369a1; margin-top: 0;">👨‍⚕️ 找回身體的主導權！</h3>
-    <p style="color: #334155; margin-bottom: 1.5rem;">疼痛不是老化的必然，而是身體發出的求救訊號。來到宸新復健科，我們不只幫您止痛，更要教您如何正確使用身體。</p>
-    <p style="font-weight: bold; color: #0891b2;">現在就預約一對一評估，開啟您的無痛人生！</p>
+    <h3 style="color: #0369a1; margin-top: 0;">👨‍⚕️ 找回身體的主導權！</h3>
+    <p style="color: #334155; margin-bottom: 1.5rem;">疼痛不是老化的必然，而是身體發出的求救訊號。來到宸新復健科，我們不只幫您止痛，更要教您如何正確使用身體。</p>
+    <p style="font-weight: bold; color: #0891b2;">現在就預約一對一評估，開啟您的無痛人生！</p>
 </div>
     `,
     whyChooseUs: [
@@ -474,11 +471,8 @@ export const treatments: Treatment[] = [
       '脊椎側彎、骨盆歪斜、產後骨盆調整。',
       '手術後關節沾黏 (如骨折術後)、五十肩。'
     ],
-    images: [], 
+    images: [],
     applicableConditions: ['肩頸痠痛', '脊椎側彎', '骨盆歪斜', '五十肩', '術後復健'],
-    features: ['一對一治療', '筋膜放鬆', '骨骼調整'],
-    
-    // 完整保留原始 3 題 QA
     qaList: [
       {
         question: '徒手治療跟坊間的整骨、推拿有什麼不一樣？',
@@ -495,20 +489,20 @@ export const treatments: Treatment[] = [
     ]
   },
 
+  // -----------------------------------------------------
+  // 4. 高能量雷射治療 (HILT)
+  // -----------------------------------------------------
   {
     slug: 'high-intensity-laser',
     title: '高能量雷射治療 (HILT)',
     subtitle: '光速修復、深層止痛的黑科技',
     description: '引進美國頂級Summus高能量雷射，能穿透深層組織，提供立即性的止痛與消腫。專治急性運動傷害、兒童運動傷害與頑固性疼痛。',
-    // 圖片：醫師操作雷射治療的示意圖
-    image: '/images/treatments/d.jpg', 
-    youtubeVideoId: '6vQDqF7Xk9E', // 若有相關影片可填入
-    
-    // SEO 設定
+    image: '/images/treatments/d.jpg',
+    features: ['無痛舒適', '立即消腫', '深層穿透'],
     seoTitle: '新竹高能量雷射治療 - 急性扭傷/術後修復/神經痛推薦 | 宸新復健科',
     seoDescription: '新竹高能量雷射推薦。宸新復健科採用美國頂級Summus高能量雷射，穿透深度達 10 公分。針對急性運動傷害、兒童運動傷害與頑固性疼痛效果顯著。無痛、溫熱感、立即消腫止痛，隔天可以馬上上場。',
     keywords: ['新竹高能量雷射', 'HILT', '雷射治療', '運動傷害', '急性扭傷', '坐骨神經痛', '術後復健'],
-
+    youtubeVideoId: '6vQDqF7Xk9E',
     contentHtml: `
       <p>您是否剛經歷了急性腳踝扭傷，腫得像麵龜一樣無法走路？或是深受坐骨神經痛折磨，卻又不敢開刀？當傳統的熱敷電療效果緩慢，而震波治療對急性發炎又太過刺激時，<strong>高能量雷射 (High Intensity Laser Therapy, HILT)</strong> 將是您最溫柔且強大的選擇。</p>
 <br>
@@ -653,11 +647,8 @@ export const treatments: Treatment[] = [
       '不適合打針的部位(肋骨或指頭)。',
       '怕打診的病患或兒童。'
     ],
-    // 圖片保留空陣列或填入您實際的圖片網址
-    images: [], 
+    images: [],
     applicableConditions: ['急性扭傷', '坐骨神經痛', '退化性關節炎', '腕隧道症候群', '術後水腫'],
-    features: ['無痛舒適', '立即消腫', '深層穿透'],
-    
     qaList: [
       {
         question: '高能量雷射跟一般復健科的雷射有什麼不同？',
@@ -673,17 +664,45 @@ export const treatments: Treatment[] = [
       }
     ]
   }
-
-
-
-
 ];
 
-// Helper functions (保持不變)
-export function getTreatmentBySlug(slug: string) {
-  return treatments.find((t) => t.slug === slug);
+// =======================================================
+// 3. 自動化瘦身區 (Sitemap 與列表頁專用)
+// =======================================================
+// 自動過濾掉 contentHtml 與其他詳細資料，產生輕量列表
+// 這樣 sitemap.ts 導入 treatmentsList 時就不會載入過重的資料
+
+export const treatmentsList: TreatmentMetadata[] = fullTreatmentsData.map((item) => {
+  // 使用解構賦值，把詳細資料分離出來，只回傳 metadata
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const {
+    contentHtml,
+    whyChooseUs,
+    treatmentFocus,
+    images,
+    applicableConditions,
+    youtubeVideoId,
+    qaList,
+    ...metadata
+  } = item;
+  return metadata;
+});
+
+// =======================================================
+// 4. Helper Functions
+// =======================================================
+
+// 取得單一治療項目 (內頁用，從完整資料庫找)
+export function getTreatmentBySlug(slug: string): Treatment | undefined {
+  return fullTreatmentsData.find((t) => t.slug === slug);
 }
 
+// 取得所有治療項目 (列表頁或 Sitemap 用，只回傳輕量資料)
+export function getAllTreatments() {
+  return treatmentsList;
+}
+
+// 取得所有 Slug (Sitemap 專用)
 export function getAllTreatmentSlugs() {
-  return treatments.map((t) => ({ slug: t.slug }));
+  return treatmentsList.map((t) => ({ slug: t.slug }));
 }
