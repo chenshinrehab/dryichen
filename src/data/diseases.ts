@@ -3873,9 +3873,9 @@ export const diseaseCategoriesList = diseaseCategories.map((category) => ({
   seoDescription: category.seoDescription,
   // 針對裡面的疾病，把 "contentHtml" 拿掉
   diseases: category.diseases.map((disease) => {
-    // 使用解構賦值，把 contentHtml 分離出來，只回傳其餘部分
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const { contentHtml, ...lightweightData } = disease;
+
+    const { contentHtml, treatments, images, ...lightweightData } = disease;
+    
     return lightweightData;
   }),
 }));

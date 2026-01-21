@@ -12,7 +12,7 @@ export interface TreatmentMetadata {
   description: string;  
   image: string;        
   features: string[];   
-
+  applicableConditions: string[];
   // SEO 欄位
   seoTitle?: string;
   seoDescription?: string;
@@ -680,7 +680,6 @@ export const treatmentsList: TreatmentMetadata[] = fullTreatmentsData.map((item)
     whyChooseUs,
     treatmentFocus,
     images,
-    applicableConditions,
     youtubeVideoId,
     qaList,
     ...metadata
