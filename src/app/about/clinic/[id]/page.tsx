@@ -55,85 +55,120 @@ export default function FacilityDetailPage({ params }: PageProps) {
     }
   }
 
-  const jsonLdBreadcrumb = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
-      { '@type': 'ListItem', position: 2, name: '診所設備', item: `${siteUrl}/about/clinic` },
-      { '@type': 'ListItem', position: 3, name: item.title, item: currentUrl },
-    ],
-  }
-
   return (
     <>
       <JsonLd data={jsonLdDevice} />
-      <JsonLd data={jsonLdBreadcrumb} />
 
+      {/* ✨ CSS 樣式：完全比照 Treatment 頁面，移除多餘的 p margin 設定 */}
       <style dangerouslySetInnerHTML={{__html: `
-        .facility-content {
-            font-size: 1.125rem;
-            line-height: 1.8;
-            color: #cbd5e1;
-        }
-        .facility-content p, .facility-content li {
-            margin-bottom: 1.5rem;
-            letter-spacing: 0.025em;
-        }
+        /* 重點文字 (strong) - 青色 */
         .facility-content strong {
-            color: #22d3ee;
+            color: #22d3ee !important; /* Cyan-400 */
             font-weight: 700;
         }
-        .facility-content h2 {
-            font-size: 1.5rem;
+
+        /* 超連結 (a) - 桃紅色 */
+        .facility-content a {
+            color: #ec4899 !important; /* Pink-500 */
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px dashed #ec4899;
+            transition: all 0.2s ease;
+        }
+
+        .facility-content a:hover {
+            color: #db2777 !important; /* Pink-600 */
+            border-bottom-style: solid;
+        }
+
+        /* 內容標題樣式 (H3) - 比照參考頁面 */
+        .facility-content h3 {
+            font-size: 1.5rem; /* text-2xl */
             font-weight: 700;
             color: white;
             margin-top: 2.5rem;
-            margin-bottom: 1.5rem;
-            border-left: 4px solid #06b6d4;
-            padding-left: 1rem;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
         }
-        .facility-content h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #e2e8f0;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
+        
+        /* 標題前的小裝飾 */
+        .facility-content h3::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 24px;
+            background-color: #06b6d4; /* Cyan-500 */
+            margin-right: 12px;
+            border-radius: 2px;
         }
+        
+        /* 為了保險起見，若資料中有用到 H2，也給予相同樣式 */
+        .facility-content h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: white;
+            margin-top: 2.5rem;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+        }
+        .facility-content h2::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 28px;
+            background-color: #06b6d4;
+            margin-right: 12px;
+            border-radius: 2px;
+        }
+
+        /* 圖片寬度限制 */
+        .facility-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.75rem;
+            margin: 2rem auto;
+            display: block;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            border: 1px solid #475569;
+        }
+
+        /* 電腦版圖片寬度調整 (85% + 置中) */
+        @media (min-width: 768px) {
+            .facility-content img {
+                max-width: 85%;
+            }
+        }
+        
+        /* 列表樣式 */
         .facility-content ul {
             list-style-type: disc;
             padding-left: 1.5rem;
             margin-bottom: 1.5rem;
+            color: #cbd5e1; /* slate-300 */
         }
-        .facility-content img, .facility-content video, .facility-content iframe {
+        .facility-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* 影片樣式 */
+        .facility-content video, .facility-content iframe {
             max-width: 100%;
+            aspect-ratio: 16 / 9;
+            height: auto;
             border-radius: 0.75rem;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
             margin: 2rem auto;
             display: block;
             border: 1px solid #475569;
         }
-        .facility-content img {
-            height: auto;
-        }
-        .facility-content video, .facility-content iframe {
-            aspect-ratio: 16 / 9;
-            height: auto;
-        }
-        @media (min-width: 768px) {
-            .facility-content h2 { font-size: 1.875rem; }
-            .facility-content h3 { font-size: 1.5rem; }
-            .facility-content img { max-width: 85%; }
-        }
       `}} />
 
-      {/* 🟢 修改 1: 減少頂部 Padding (pt-0, md:pt-4) */}
       <div className="min-h-screen bg-slate-900 text-slate-300 pt-0 pb-12 md:pt-4 md:pb-16 fade-in">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          {/* 🟢 修改 2: 麵包屑導航 <nav> 已移除 */}
-
-          {/* 🟢 修改 3: 減少按鈕下方間距 (mb-4) */}
+          {/* 返回按鈕 */}
           <Link href="/about/clinic" className="inline-flex items-center text-cyan-400 mt-4 mb-4 hover:text-cyan-300 transition-colors group">
               <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i>
               返回設備列表
@@ -141,6 +176,7 @@ export default function FacilityDetailPage({ params }: PageProps) {
 
           <div className="bg-slate-800/80 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden shadow-2xl">
               
+             {/* Header 圖片區塊 */}
              <div className="relative h-64 md:h-96 w-full group">
                 <img 
                   src={item.imageUrl} 
@@ -162,7 +198,12 @@ export default function FacilityDetailPage({ params }: PageProps) {
              </div>
 
              <div className="p-6 md:p-12">
-                 <div className="facility-content">
+                 {/* ✨ 關鍵修正：
+                     這裡加上了 'text-slate-300 leading-relaxed text-lg'
+                     這會讓字體大小與行距直接繼承 Tailwind 的標準設定，
+                     解決了原本自己寫 CSS 導致間距過大的問題。
+                 */}
+                 <div className="facility-content text-slate-300 leading-relaxed text-lg">
                     <div dangerouslySetInnerHTML={{ __html: item.contentHtml }} />
                  </div>
              </div>
