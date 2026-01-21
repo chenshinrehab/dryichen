@@ -13,6 +13,7 @@ export interface TreatmentMetadata {
   image: string;        
   features: string[];   
   applicableConditions: string[];
+  lastModified?: string;
   // SEO 欄位
   seoTitle?: string;
   seoDescription?: string;
