@@ -42,7 +42,7 @@ const fullTreatmentsData: Treatment[] = [
   {
     slug: 'prp',
     title: '增生療法 / PRP',
-    lastModified: '2026-01-21',
+    lastModified: '2026-01-22',
     subtitle: '超音波導引、高濃度血小板注射',
     description: '透過注射高濃度血小板血漿 (PRP) 或高濃度葡萄糖，精準修復受損關節與韌帶。',
     image: '/images/treatments/a.jpg',
@@ -83,6 +83,18 @@ const fullTreatmentsData: Treatment[] = [
     </ul>
 </div>
 
+    <div class="my-8 flex justify-center">
+    <iframe 
+      width="315" 
+      height="560" 
+      src="https://www.youtube.com/embed/KVp7HFpl3RY" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+      class="max-w-full rounded-xl shadow-lg border border-slate-700"
+    ></iframe>
+     </div>
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <h3>🔬 什麼是 PRP？治療原理大解密</h3>

@@ -51,7 +51,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         id: 'lumbar-disc-herniation',
         slug: 'lumbar-disc-herniation',
         title: '腰椎椎間盤突出',
-        lastModified: '2026-01-21',
+        lastModified: '2026-01-22',
         description: '彎腰刷牙一陣刺痛、大腿後側像被電到？這是椎間盤突出壓迫坐骨神經的警訊。了解如何透過拉腰與PRP免動刀修復脊椎。',
         contentHtml: `
 <p>您是否有過這樣的經驗：早晨起床腰背僵硬、彎腰刷牙時突然一陣刺痛，或是久坐辦公室後，大腿後側傳來像「被電到」一樣的麻痛感？小心，這可能是現代人的文明病——<strong>腰椎椎間盤突出 (HIVD)</strong> 找上門了。</p>
@@ -148,6 +148,97 @@ export const diseaseCategories: DiseaseCategory[] = [
     </p>
 </div>
 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>🧘‍♂️ 醫師教你做：穿上天然的「肌肉護腰」</h3>
+    <p style="color: #e2e8f0 !important;">椎間盤退化就像車子的輪胎扁掉了，吸震能力變差。這時我們必須把旁邊的肌肉（核心肌群與臀肌）練得像鋼圈一樣硬，才能分擔脊椎的壓力。</p>
+
+    <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 1. 溫和伸展 (增加循環、減少沾黏)</h4>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">1. 嬰兒式伸展</h4>
+        <p style="color: #e2e8f0 !important;">
+            這是一個非常好的「自我牽引」動作，能打開壓迫的椎間孔。
+            <br>
+            1. 採跪姿，臀部坐在腳跟上。<br>
+            2. 雙手盡量向前延伸，上半身趴在地上，額頭點地。<br>
+            3. 感覺下背部被溫柔地拉開。停留 30 秒，深呼吸。重複 3 次。
+        </p>
+    </div>
+
+        <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">2. 眼鏡蛇式/人面獅身式</h4>
+        <p style="color: #e2e8f0 !important;">
+            對於久坐族群，後仰能幫助椎間盤向前復位，恢復腰椎生理曲線。
+            <br>
+            1. 趴在瑜珈墊上，雙腳與肩同寬。<br>
+            2. <strong>初階版（人面獅身）：</strong> 手肘撐地，將上半身撐起，視線平視前方。適合退化較嚴重或怕痛的長輩。<br>
+            3. <strong>進階版（眼鏡蛇）：</strong> 手掌撐地，將手臂伸直撐起上半身。<br>
+            4. <strong>注意：</strong> 若覺得腰部有「卡住」或刺痛感，請降低高度或停止，不要勉強硬撐。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">3. 貓牛式</h4>
+        <p style="color: #e2e8f0 !important;">
+            增加脊椎的液體交換，幫助椎間盤代謝。
+            <br>
+            1. 四足跪姿，雙手在肩膀正下方。<br>
+            2. <strong>吸氣時：</strong>頭抬起，腰微凹（牛式）。<br>
+            3. <strong>吐氣時：</strong>腹部收緊，背部拱高像生氣的貓，視線看肚臍。<br>
+            4. 動作要慢，專注於脊椎一節一節的活動。重複 10 次。
+        </p>
+    </div>
+    <p><img src="/images/diseases/spine-hip/HIVD/g.jpg" alt="下背痛伸展"></p>
+    <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 2. 核心與臀部強化 (重建地基)</h4>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">4. 死蟲式 (Dead Bug) - 黃金標準</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>這是對退化性脊椎最安全的運動</strong>，因為脊椎完全平貼地板，不會受到剪力。
+            <br>
+            1. 平躺，雙手舉高，雙腳屈膝抬起呈 90 度（像死掉的蟲）。<br>
+            2. <strong>關鍵：</strong> 用力將下背部「壓死」在地板上，不能有縫隙。<br>
+            3. 吐氣時，對側手腳慢慢伸直（右手左腳延伸），吸氣回正。<br>
+            4. 過程中背部絕對不能拱起來。每邊做 10 次。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">5. 橋式 (Bridge) - 喚醒臀肌</h4>
+        <p style="color: #e2e8f0 !important;">
+            臀部是腰部的地基。臀肌有力，腰椎壓力減半。
+            <br>
+            1. 平躺，雙腳屈膝踩地，腳跟靠近屁股。<br>
+            2. <strong>發力順序：</strong> 先夾緊屁股 → 再將骨盆抬起。<br>
+            3. 抬到身體呈一直線即可，<strong>不要過度拱腰</strong>（肋骨要收好）。停留 5 秒，慢慢放下。重複 12 次。
+        </p>
+    </div>
+
+    
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">6. 棒式 (Plank) - 全身穩定</h4>
+        <p style="color: #e2e8f0 !important;">
+            訓練深層腹橫肌，形成天然護腰帶。
+            <br>
+            1. 手肘撐地（在肩膀正下方），雙腳伸直踩地。<br>
+            2. 腹部用力收緊，屁股夾緊，身體呈一直線。<br>
+            3. <strong>關鍵錯誤：</strong> 絕對不能「塌腰」！如果覺得腰痠，代表核心沒力了，請膝蓋著地（退階做跪姿棒式）。目標維持 30 秒。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">7. 鳥狗式 (Bird-Dog)</h4>
+        <p style="color: #e2e8f0 !important;">
+            訓練背肌與核心的協調性。
+            <br>
+            1. 四足跪姿，背部打平（這時背上放一杯水不能倒）。<br>
+            2. 慢慢伸直右手與左腳，讓身體呈一直線。<br>
+            3. 停留 5 秒，收回。換邊進行。<br>
+            4. 重點是身體<strong>不要左右搖晃</strong>，訓練核心抗旋轉的能力。
+        </p>
+    </div>
+  <p><img src="/images/diseases/spine-hip/HIVD/h.jpg" alt="下背痛核心訓練"></p>
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <h3>🧘‍♂️ 預防勝於治療：您的坐姿正確嗎？</h3>
@@ -328,11 +419,251 @@ export const diseaseCategories: DiseaseCategory[] = [
         ]
       },
 
+ {
+        id: 'upper-crossed-syndrome',
+        slug: 'upper-crossed-syndrome',
+        lastModified: '2026-01-22',
+        title: '上交叉症候群 (烏龜頸/圓肩)',
+        description: '脖子後面長出「富貴包」？長期頭痛、肩膀僵硬？這是典型的上交叉症候群！深入解析肌肉失衡機制，提供高能量雷射放鬆與徒手矯正策略，搭配居家運動找回挺拔體態。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">走在路上，您是否注意到很多人都有這樣的體態：<strong>頭部不自覺前傾</strong>（像是烏龜探頭）、<strong>肩膀向內拱起</strong>（圓肩）、背部駝背，甚至頸椎後方凸起了一塊肉（俗稱富貴包）？</p>
+                 <br>
+          <p style="color: #e2e8f0 !important;">這不只是外觀不好看的問題，這是現代人最常見的文明病——<strong>「上交叉症候群」</strong>。這種長期的肌肉失衡，是造成慢性頭痛、頸椎骨刺、甚至手臂麻木的元兇，常發生在長期用電腦的竹科工程師或是練胸肌多於背部肌肉的健身族(<strong>建議訓練重量胸:背為1:1.2，訓練量胸:背為1:2</strong>)。在宸新復健科，我們不只治療疼痛，更透過<strong>姿態評估</strong>與<strong>肌力平衡訓練</strong>，從力學結構上「把身體拉回正軌」。</p>
+     
+   
+      
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 什麼是「上交叉」？身體裡的隱形大 X
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">由捷克物理治療大師 Dr. Vladimir Janda 提出。當我們從側面看人體時，強弱失衡的肌肉群剛好形成一個<strong>「X」字型的交叉</strong>：</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #ef4444; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">緊</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">過度緊繃線 (Tight Line)：</strong> 
+                          連接<strong>後上背</strong>（上斜方肌、提肩胛肌）與<strong>前胸</strong>（胸大肌、胸小肌）。這條線太緊，會把肩膀往上聳、往內拉，造成圓肩。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #3b82f6; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">弱</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">過度無力線 (Weak Line)：</strong> 
+                          連接<strong>頸部前方</strong>（深層頸屈肌）與<strong>中下背部</strong>（中下斜方肌、前鋸肌）。這條線太弱，導致頭抬不起來（下巴凸出），肩胛骨抓不住脊椎（翼狀肩胛）。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #b45309 !important;">力學後果：</strong> 
+                          頭每往前伸 1 吋，頸椎受力就增加 1 倍。長期下來，頸椎關節會提早退化、長骨刺，甚至壓迫神經。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      <p><img src="/images/diseases/spine-hip/upper/b.jpg" alt="上交叉症候群成因"></p>
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 疼痛特徵：您的痛是哪一種？</h3>
+          <p style="color: #e2e8f0 !important;">上交叉症候群的患者，通常會有以下幾種典型的疼痛表現：</p>
+          
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 頸源性頭痛 </h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  痛感通常從<strong>後腦勺</strong>開始，像一條帶子一樣緊箍到太陽穴或眼窩。這是因為後頸的「枕下肌群」太緊，壓迫到枕神經所致。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 膏肓痛與肩頸僵硬</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  覺得肩膀上像背了千斤頂，怎麼按摩都鬆不開。肩胛骨內側（膏肓穴）常有痠痛點，這是因為菱形肌被圓肩「拉長」而過勞發炎。
+              </p>
+          </div>
+          <p><img src="/images/diseases/spine-hip/upper/c.jpg" alt="上交叉症候群疼痛特徵"></p>
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 手臂麻木 (胸廓出口症候群)</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  因為圓肩導致胸小肌太緊，卡住通往手臂的神經血管。睡覺時或手舉高時，手掌和手指容易發麻、冰冷。
+              </p>
+          </div>
+       <p><img src="/images/diseases/spine-hip/upper/d.jpg" alt="胸廓出口症候群"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新整合治療：先放鬆，後訓練</h3>
+          <p style="color: #e2e8f0 !important;">治療上交叉症候群，順序非常重要。如果緊繃的肌肉沒放鬆就直接練肌力，只會代償更嚴重。我們的治療三部曲：</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 深度鬆解：<a href="/treatments/high-intensity-laser" class="text-cyan-400 hover:underline">高能量雷射</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  針對像石頭一樣硬的<strong>上斜方肌</strong>與<strong>提肩胛肌</strong>，傳統熱敷效果有限。高能量雷射能穿透至深層筋膜，透過光熱效應與光化學效應，快速促進血液循環，帶走堆積的乳酸，讓肌肉瞬間「軟化」。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 結構調整：<a href="/treatments/manual" class="text-cyan-400 hover:underline">專業徒手治療</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  上交叉患者通常伴隨<strong>「胸椎僵硬」</strong>（駝背卡死）。物理治療師會使用關節鬆動術打開胸椎活動度，並徒手放鬆緊繃的胸大肌與枕下肌群，，及教導正確的居家運動，改善體態，讓頸椎回正。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 痛點擊破：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  如果您摸到肩膀裡有「氣結」或條索狀的硬塊（激痛點），震波是最佳選擇。利用聲波震碎鈣化與沾黏組織，雖然治療當下會有些痠痛，但效果非常顯著。
+              </p>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：逆轉「大 X」的 8 招黃金運動</h3>
+    <p style="color: #e2e8f0 !important;">上交叉症候群的修正原則是：<strong>先放鬆緊繃的肌肉（前胸、上肩），再強化無力的肌肉（深層頸肌、背肌）</strong>。請務必依照順序進行：</p>
+
+    <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 1. 四大伸展：釋放緊繃枷鎖</h4>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">1. 門框胸肌伸展</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 放鬆胸大肌與胸小肌，改善圓肩。
+            <br>
+            1. 找一個門框，雙手手肘彎曲 90 度抵住門框兩側（呈投降姿勢）。<br>
+            2. 一腳向前跨一步，身體重心往前壓。<br>
+            3. 感覺胸口前方肌肉被拉開。維持 30 秒，重複 3 次。<br>
+            4. <strong>注意：</strong> 腰不要過度前挺，專注在胸口打開。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">2. 上斜方肌伸展</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 放鬆聳肩的肌肉，改善僵硬。
+            <br>
+            1. 坐姿或站姿，右手放在背後（固定肩膀不聳起）。<br>
+            2. 左手繞過頭頂，輕輕將頭往左邊肩膀拉。<br>
+            3. 感覺右側脖子到肩膀的線條被拉開。維持 15 秒，換邊。重複 3 次。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">3. 提肩胛肌伸展</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 放鬆連接頸椎與肩胛骨的肌肉，改善落枕感。
+            <br>
+            1. 頭向左轉 45 度，低頭看左邊腋下（像要聞腋下）。<br>
+            2. 左手輕壓後腦勺，感覺右後頸被拉伸。<br>
+            3. 維持 15 秒，換邊。重複 3 次。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">4. 枕下肌群放鬆</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 放鬆後腦勺與頸椎交界處，緩解頸源性頭痛。
+            <br>
+            1. 雙手抱頭，十指交扣在後腦勺。<br>
+            2. 頭部維持不動，雙手大拇指輕輕按摩後腦勺下方的凹陷處（風池穴周圍）。<br>
+            3. 也可以用花生球或網球放在後腦勺下方躺著熱敷放鬆。
+        </p>
+    </div>
+     <p><img src="/images/diseases/spine-hip/upper/e.jpg" alt="上交叉症候群伸展"></p>
+    
+    <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 2. 四大強化：喚醒沉睡背肌</h4>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">5. 彈力帶划船</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 強化中下斜方肌與菱形肌，把圓肩「拉」回來。
+            <br>
+            1. 將彈力帶固定在門把或柱子上（約胸口高度）。<br>
+            2. 雙手抓住彈力帶兩端，手肘彎曲向後拉。<br>
+            3. <strong>關鍵：</strong> 感覺是用「肩胛骨夾背」的力量帶動手肘，而不是只用手拉。肩膀保持下壓不聳肩。<br>
+            4. 重複 15 下，做 3 組。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">6. 反向飛鳥</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 強化三角肌後束與上背部，打開胸廓。
+            <br>
+            1. 雙手握住彈力帶或輕啞鈴，身體微向前傾，膝蓋微彎。<br>
+            2. 雙手像鳥展翅一樣向兩側打開，直到與身體平行。<br>
+            3. 感覺肩胛骨用力互相靠近。動作要慢，不要用甩的。<br>
+            4. 重複 12 下，做 3 組。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">7. 牆壁天使 </h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 訓練下斜方肌與前鋸肌，改善翼狀肩胛。
+            <br>
+            1. 背對牆壁站立，腳跟離牆約 15 公分。<br>
+            2. 讓後腦勺、上背部、臀部貼緊牆壁。<br>
+            3. 雙手舉起呈「W」字型，手背貼牆。慢慢向上推成「Y」字型，再慢慢拉回「W」。<br>
+            4. 過程中<strong>下背部不能拱起</strong>離開牆面。重複 10 下。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">8. 縮下巴運動 </h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 強化深層頸屈肌，改善烏龜頸（這是最重要的核心訓練）。
+            <br>
+            1. 眼睛平視前方，手指輕推下巴。<br>
+            2. 頭部<strong>水平向後</strong>平移（擠出雙下巴），感覺後頸被拉長。<br>
+            3. 停留 5-10 秒，放鬆。重複 10 次。<br>
+            4. 隨時隨地都可以做，次數不限。
+        </p>
+    </div>
+   <p><img src="/images/diseases/spine-hip/upper/f.jpg" alt="上交叉症候群肌力訓練"></p>
+     
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 挺起胸膛，告別痠痛！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">上交叉症候群是日積月累的結果，當然不可能一天就矯正回來。但只要透過高能量雷射緩解急性疼痛，配合物理治療調整關節，並持之以恆地進行居家運動，您絕對能找回挺拔自信的體態。宸新復健科，陪您一起把脊椎「練」回來！</p>
+              <p style="font-weight: bold; color: #059669 !important;">想改善體態、消除富貴包？立即預約姿態評估！</p>
+          </div>
+        `,
+        symptoms: [
+          '頭部明顯前傾 (烏龜頸)',
+          '肩膀圓肩內扣，背部駝背',
+          '後頸部與上背部交界處凸起 (富貴包)',
+          '經常性頭痛、頭暈、手臂容易麻木',
+        ],
+        treatments: [
+          '姿態矯正運動，止痛藥復健',
+          '<a href="/treatments/laser" class="text-cyan-400 hover:underline">高能量雷射止痛</a>🔍️',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手放鬆運動治療</a>🔍️',
+          '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療</a>🔍️',
+          
+        ],
+        seoKeywords: [
+          '上交叉症候群',
+          '烏龜頸',
+          '圓肩',
+          '富貴包',
+          '膏肓痛',
+          '頸源性頭痛',
+          '物理治療',
+          '姿態矯正'
+        ],
+        seoDescription: '上交叉症候群造成烏龜頸、圓肩與富貴包。宸新復健科提供高能量雷射、徒手治療與專業姿態矯正運動，有效解決長期肩頸痠痛與體態問題。',
+        images: [
+          { src: '/images/diseases/spine-hip/upper/a.jpg', alt: '上交叉症候群'
+          }
+        ]
+      },
+
       {
         id: 'cervical-disc-degeneration',
         slug: 'cervical-disc-degeneration',
         title: '頸椎椎間盤退化',
-        lastModified: '2026-01-21',
+        lastModified: '2026-01-22',
         description: '低頭滑手機導致脖子緊繃、手麻傳到手指？這不只是肌肉痠痛，小心是頸椎長骨刺或椎間盤突出。了解免動刀的修復關鍵。',
         contentHtml: `
 <p style="color: #e2e8f0 !important;">您是否也是「低頭族」的一員？搭捷運滑手機、上班盯電腦，下班追劇還是在低頭。長時間維持同一姿勢，您是否常覺得肩頸僵硬，甚至偶爾會感覺手臂一陣麻痛傳到手指？小心，這不只是單純的肌肉痠痛，而是<strong style="color: #22d3ee !important;">頸椎椎間盤突出</strong>正在發出的警訊。</p>
@@ -436,9 +767,91 @@ export const diseaseCategories: DiseaseCategory[] = [
     </p>
 </div>
 
+
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3 >🧘‍♂️ 醫師教你做：打造天然的「肌肉頸圈」</h3>
+    <p style="color: #e2e8f0 !important;">頸椎退化就像避震器老舊了。我們必須強化深層的頸部核心肌肉，讓它們像「天然頸圈」一樣穩穩抓住脊椎，減少神經受到的壓迫。</p>
+
+    <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 1. 伸展減壓 (找回生理曲線)</h4>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">1. 縮下巴運動 - 頸椎復位</h4>
+        <p style="color: #e2e8f0 !important;">
+            這是對抗退化最重要的一招，能打開椎間孔，讓突出的椎間盤有機會縮回。
+            <br>
+            1. 眼睛平視前方，手指輕推下巴。<br>
+            2. 頭部<strong>水平向後</strong>平移（擠出雙下巴），感覺後腦勺像被一條線往上拉。<br>
+            3. 停留 5 秒，放鬆。重複 10 次。<br>
+            4. <strong>注意：</strong> 千萬不要變成「低頭」，視線要保持水平。
+        </p>
+    </div>
+    
+   
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">2. 毛巾頸椎牽引</h4>
+        <p style="color: #e2e8f0 !important;">
+            利用毛巾輔助，溫和恢復頸椎的 C 型曲線。
+            <br>
+            1. 將毛巾捲成條狀，掛在脖子後方（約頸椎中段）。<br>
+            2. 雙手抓住毛巾兩端向前拉緊。<br>
+            3. 頭部慢慢向後仰，以毛巾為支點，伸展頸部前方。<br>
+            4. 感覺頸椎一節節打開。停留 10 秒，重複 5 次。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">3. 胸大肌伸展</h4>
+        <p style="color: #e2e8f0 !important;">
+            駝背會加重頸椎退化，所以要打開胸口。
+            <br>
+            1. 面對牆角，雙手抬高呈 90 度扶牆。<br>
+            2. 腳呈弓箭步，身體重心向前壓。<br>
+            3. 感覺胸口肌肉被拉開。停留 15 秒，重複 3 次。
+        </p>
+    </div>
+
+    <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 2. 核心穩定 (強化深層肌群)</h4>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">4. 等長收縮訓練</h4>
+        <p style="color: #e2e8f0 !important;">
+            這是最安全的肌力訓練，<strong>脖子不動，肌肉用力</strong>。
+            <br>
+            1. <strong>前推：</strong> 手掌抵住額頭，頭用力往前頂手，但手不讓頭動。維持 5 秒。<br>
+            2. <strong>側推：</strong> 手掌抵住太陽穴，頭用力往側面頂。維持 5 秒。<br>
+            3. <strong>後推：</strong> 雙手交疊在後腦勺，頭用力往後頂。維持 5 秒。<br>
+            4. 每個方向做 5 次。這能強化頸部四周的肌肉牆。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">5. 頸部深層屈肌訓練 </h4>
+        <p style="color: #e2e8f0 !important;">
+            訓練頸椎的「腹肌」（頸長肌），這是穩定頸椎的關鍵。
+            <br>
+            1. 平躺，拿掉枕頭。先做「縮下巴」動作。<br>
+            2. 保持縮下巴，將頭<strong>微微抬離地面 2 公分</strong>就好（不要抬太高）。<br>
+            3. 視線看向腳尖，維持 5-10 秒。感覺脖子深處微痠。<br>
+            4. 如果覺得脖子表面（胸鎖乳突肌）很緊繃，代表做錯了，請縮小抬起的幅度。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">6. W 字伸展</h4>
+        <p style="color: #e2e8f0 !important;">
+            強化上背部肌群，提供頸椎穩定的地基。
+            <br>
+            1. 站立或坐姿，雙手舉起呈「W」字型。<br>
+            2. 用力將肩胛骨向後、向下夾緊（想像背後夾一支筆）。<br>
+            3. 維持 5 秒，放鬆。重複 12 次。
+        </p>
+    </div>
+<p><img src="/images/diseases/spine-hip/CHIVD/e.jpg" alt="頸椎退化居家運動"></p>
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
-<h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師的護頸小叮嚀：正確姿勢</h3>
+<h3 >🧘‍♂️ 醫師的護頸小叮嚀：正確姿勢</h3>
 <p style="color: #e2e8f0 !important;">預防勝於治療，請在日常生活中落實以下原則：</p>
 <ul style="color: #e2e8f0 !important;">
     <li><strong>螢幕高度：</strong> 電腦螢幕上緣應與視線平視，避免低頭。</li>
@@ -590,6 +1003,397 @@ export const diseaseCategories: DiseaseCategory[] = [
            { src: '/images/diseases/spine-hip/piri/a.jpg', alt: '梨狀肌疼痛示意圖' }
         ]
       },
+{
+        id: 'cervical-facet-syndrome',
+        slug: 'cervical-facet-syndrome',
+        title: '頸椎小面關節炎',
+        lastModified: '2026-01-22',
+        description: '抬頭看天花板脖子就痛？早上起床頸部僵硬卡住？這可能不是單純落枕！深入解析小面關節炎成因，教您分辨與椎間盤突出的差異，以及超音波導引增生注射的精準修復。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：早上起床發現脖子僵硬，像是「落枕」一樣動彈不得？或是開車要倒車入庫時，頭一轉就覺得頸後深處傳來一陣刺痛？甚至只是抬頭想點個眼藥水，脖子就痛到受不了？</p>
+                <br>
+          <p style="color: #e2e8f0 !important;">這些症狀的元兇，往往不是大家熟知的骨刺或椎間盤突出，而是頸椎的穩定器——<strong>「小面關節」</strong>發炎了。這是現代「低頭族」最常見的頸痛原因之一。宸新復健科透過X光與高解析超音波診斷，能精準分辨疼痛來源，並提供<strong>超音波導引增生注射</strong>，直接修復鬆弛的關節囊，從根本解決反覆落枕與頸痛。</p>
+            
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 什麼是小面關節？脖子裡的「指關節」
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">我們的頸椎每一節的後方，左右各有一個指甲般大小的關節，這就是小面關節。它們上下相連，就像屋頂的瓦片一樣。</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">功能：</strong> 
+                          限制頸椎過度旋轉與滑動，提供穩定性。就像火車的軌道一樣，引導我們抬頭、低頭與轉頭的動作。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">為什麼會發炎？</strong> 
+                          當我們長期低頭滑手機（頸椎受力增加），或是突然的甩鞭式外傷（車禍），包覆在關節外的「關節囊」會受傷鬆弛，導致軟骨磨損、發炎腫脹，甚至卡住，這就是為什麼會突然轉不動的原因。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">轉移痛：</strong> 
+                          小面關節的神經非常豐富。有趣的是，痛點通常不只在脖子，還會往下傳到<strong>肩胛骨內側</strong>，往上傳到<strong>後腦勺</strong>。這常被誤診為膏肓痛或頭痛。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+           <p><img src="/images/diseases/spine-hip/cfacet/b.jpg" alt="小面關節結構圖"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 超級比一比：是關節、神經還是肌肉痛？</h3>
+          <p style="color: #e2e8f0 !important;">這是患者最常搞混的三種病。治療方向完全不同，必須精準區分：</p>
+          
+          <div style="overflow-x: auto;">
+              <table style="width: 100%; border-collapse: collapse; margin-top: 1rem; color: #e2e8f0; table-layout: fixed;">
+                  <thead>
+                      <tr style="background-color: #1e293b;">
+                          <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #334155; width: 16%; white-space: nowrap;">比較項目</th>
+                          <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #334155; color: #22d3ee; width: 28%;">小面關節炎</th>
+                          <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #334155; width: 28%;">椎間盤突出</th>
+                          <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #334155; width: 28%;">肌肉筋膜疼痛</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold;">最痛動作</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold; color: #22d3ee;">抬頭、後仰、轉頭</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;">低頭、縮下巴</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;">特定肌肉拉扯時</td>
+                      </tr>
+                      <tr>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold;">疼痛範圍</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;">後頸深處、肩胛骨</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;">沿著手臂像「電流」</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;">肩頸大範圍痠痛</td>
+                      </tr>
+                      <tr>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold;">手部麻木</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;"><strong>極少見</strong> (通常不過手肘)</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;"><strong>常見</strong> (手指會麻)</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;">無</td>
+                      </tr>
+                      <tr>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold;">晨間僵硬</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;"><strong>明顯</strong> (越睡越痛)</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;">較不明顯</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;">有時有</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">💉 治療策略：精準修復，不再反覆發作</h3>
+          <p style="color: #e2e8f0 !important;">小面關節炎如果只吃藥、熱敷，往往只能暫時緩解，因為鬆弛的關節囊沒有修復，下次抬頭還是會痛。我們建議採取階梯式治療：</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 精準修復：超音波導引<a href="/treatments/prp" class="text-cyan-400 hover:underline">增生療法</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <strong>這是治療的關鍵！</strong> 由於小面關節非常微小（僅指甲大），且旁邊就是重要的神經血管，<strong>盲打（不看影像直接打）風險極高且效果不佳</strong>。
+                  <br><br>
+                  在宸新，醫師會使用<strong>高解析超音波</strong>，清晰呈現關節位置，將高濃度葡萄糖或 PRP (自體生長因子) 精準注入受損的<strong>關節囊與周邊韌帶</strong>。
+                  <br>
+                  <strong>原理：</strong> 刺激組織產生輕微發炎反應，啟動修復機制，讓鬆弛的關節囊重新變得強韌緊實，如同幫頸椎「鎖緊螺絲」，從根本解決不穩定的問題。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 配套治療：<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>🔍️與<a href="/treatments/high-intensity-laser" class="text-cyan-400 hover:underline">高能量雷射 (HILT)</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <strong>徒手治療 (Manual Therapy)：</strong> 當關節「卡住 (Lock)」時，治療師會運用關節鬆動術 (Mobilization)，溫和地將卡住的關節打開，恢復活動度。<br>
+                  <strong>高能量雷射 (HILT)：</strong> 針對害怕打針的患者，高能量雷射能深層穿透至關節處，快速消除滑膜發炎腫脹，達到無痛止痛的效果。
+              </p>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+
+    <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：進階頸椎保養四招</h3>
+
+    <p style="color: #e2e8f0 !important;">小面關節最怕「頭前傾（烏龜頸）」，這會讓關節壓力暴增。請每天勤做以下運動：</p>
+
+    <div style="margin-bottom: 2rem;">
+        <h3 style="color: #22d3ee !important;">1. 縮下巴運動</h3>
+        <p style="color: #e2e8f0 !important;">
+            1. 眼睛平視前方，手指輕推下巴。<br>
+            2. 頭部<strong>水平向後</strong>平移（擠出雙下巴的感覺），感覺後頸部被拉直。<br>
+            3. 停留 5 秒，放鬆。重複 10 次。<br>
+            <strong>注意：</strong> 是平移，不是低頭！這能打開後方的小面關節，釋放壓力。
+        </p>
+    </div>
+
+
+    <div style="margin-bottom: 2rem;">
+        <h3 style="color: #22d3ee !important;">2. 毛巾輔助旋轉 - 落枕救星</h3>
+        <p style="color: #e2e8f0 !important;">
+            當脖子轉動會痛或卡住時，這招非常有效。
+            <br>
+            1. 將毛巾掛在脖子後方，雙手交叉抓住毛巾兩端。<br>
+            2. 若要向<strong>右轉</strong>：右手抓毛巾下端往下拉穩，左手抓毛巾上端<strong>沿著臉頰顴骨</strong>將頭帶往右邊轉。<br>
+            3. 動作要輕柔，利用毛巾的力量帶動頸椎旋轉，而非脖子自己用力。重複 6-10 次。<br>
+            <strong>原理：</strong> 毛巾提供了一個滑動的支點，能幫助卡住的小面關節順暢滑開。
+        </p>
+    </div>
+    
+    <div style="margin-bottom: 2rem;">
+        <h3 style="color: #22d3ee !important;">3. 提肩胛肌伸展 (聞腋下運動)</h3>
+        <p style="color: #e2e8f0 !important;">
+            這條肌肉連接著頸椎與肩胛骨，緊繃時會把頸椎向下拉扯，增加關節壓力。
+            <br>
+            1. 坐姿，右手抓住椅子邊緣固定肩膀（不聳肩）。<br>
+            2. 頭轉向左邊 45 度，低頭看像<strong>左邊腋下</strong>。<br>
+            3. 左手輕壓後腦勺，感覺右後頸被拉開。停留 15 秒，重複 3 次。<br>
+            <strong>注意：</strong> 動作是「低頭」，剛好可以打開後方的小面關節，非常適合此症狀。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h3 style="color: #22d3ee !important;">4. 胸椎開展運動 </h3>
+        <p style="color: #e2e8f0 !important;">
+            許多人的頸痛源自於「駝背」。胸椎太僵硬，脖子就被迫要代償做出更多角度。
+            <br>
+            1. 找一張有靠背的椅子，坐到底。<br>
+            2. 雙手抱頭，將上背部靠在椅背上緣。<br>
+            3. 吐氣時，上半身慢慢向後仰，伸展胸椎（感覺胸口打開）。<br>
+            4. <strong>關鍵：</strong> 下巴要微收，不要讓頭過度後仰，我們要動的是「背」不是「脖子」。
+        </p>
+    </div>
+<p><img src="/images/diseases/spine-hip/cfacet/c.jpg" alt="小面關節結構圖"></p>
+    
+  
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 告別「卡脖子」，找回靈活視角！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">頸椎小面關節炎雖然不是大病，但痛起來卻讓人坐立難安。只要精準分辨病因，透過超音波導引注射修復鬆弛的關節，再搭配正確的姿勢矯正，您絕對能擺脫反覆落枕的困擾。宸新復健科，專業守護您的頸椎健康！</p>
+              <p style="font-weight: bold; color: #059669 !important;">抬頭脖子就刺痛？立即預約頸椎檢查！</p>
+          </div>
+        `,
+        symptoms: [
+          '抬頭、後仰或轉頭時頸後深處刺痛',
+          '早晨起床脖子僵硬（反覆落枕）',
+          '疼痛會傳導至肩胛骨內側或後腦勺',
+          '按壓頸椎旁開 1-2 公分處有明顯壓痛點',
+        ],
+        treatments: [
+          '止痛藥復健治療',
+          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引增生注射 (PRP/葡萄糖)</a>🔍️',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">頸椎關節鬆動術 (徒手治療)</a>🔍️',
+          '<a href="/treatments/laser" class="text-cyan-400 hover:underline">高能量雷射治療 (HILT)</a>🔍️',
+        ],
+        seoKeywords: [
+          '頸椎小面關節炎',
+          '落枕',
+          '脖子痛',
+          '抬頭痛',
+          '超音波導引注射',
+          '增生療法',
+          'PRP注射'
+        ],
+        seoDescription: '頸椎小面關節炎造成反覆落枕與抬頭疼痛。宸新復健科提供高解析超音波診斷，區分椎間盤突出，並施行精準導引增生注射，修復頸椎關節。',
+        images: [
+          { src: '/images/diseases/spine-hip/cfacet/a.jpg', alt: '頸椎小面關節炎示意圖' 
+          }
+        ]
+      },
+
+      {
+        id: 'facet-joint-syndrome',
+        slug: 'facet-joint-syndrome',
+        lastModified: '2026-01-22',
+        title: '腰椎小面關節炎',
+        description: '腰痠背痛不一定是肌肉痛或椎間盤突出！往後仰就痛？早上起床腰桿僵硬？這可能是脊椎後方的「小面關節」在抗議。深入解析小面關節炎特徵、與坐骨神經痛的差異，以及超音波導引增生注射如何精準修復。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：早上起床時腰部僵硬挺不直，要活動個半小時才比較舒服？久坐後站起來的那一瞬間，腰部深處傳來一陣酸楚？或是當您試著<strong>「往後仰」</strong>伸懶腰，或者轉頭看後方時，脊椎某個點會產生尖銳的疼痛感？</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">許多人以為這只是單純的肌肉拉傷，或是擔心自己是不是椎間盤突出。但如果您的疼痛集中在脊椎兩側深處，且<strong>「後仰比前彎更痛」</strong>，那麼兇手很可能不是椎間盤，而是脊椎後方的穩定器——<strong>「小面關節」</strong>發炎了。在宸新復健科，我們透過高解析超音波精準定位，分辨疼痛根源，並提供增生療法注射與體外震波修復受損的關節囊，搭配徒手運動治療強化脊椎，從根本解決脊椎退化問題。</p>
+        
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 什麼是小面關節？脊椎後方的「門鉸鏈」
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">我們的脊椎就像一節一節疊起來的積木。為了讓這些積木能穩定活動，每一節脊椎後方左右兩側，都各有一個像手指關節般大小的構造，這就是「小面關節」。</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">功能：引導動作與承重</strong> 
+                          如果說前方的「椎間盤」是避震器，後方的「小面關節」就是控制方向的門鉸鏈。它們負責引導脊椎進行後仰與旋轉的動作，並承擔約 15-20% 的脊椎壓力。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">退化與發炎：</strong> 
+                          隨著年齡增長、長期姿勢不良（如駝背、烏龜頸）或反覆扭傷，包覆在關節外面的「關節囊韌帶」會鬆弛，導致關節不穩定、軟骨磨損，進而引發滑膜發炎腫脹。這就是所謂的脊椎退化性關節炎。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">惡性循環：</strong> 
+                          當前方椎間盤退化變扁時，後方的小面關節壓力就會暴增，加速磨損。反之，小面關節不穩定也會導致椎間盤更容易突出。兩者互為因果。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      <p><img src="/images/diseases/spine-hip/facet/b.jpg" alt="小面關節結構圖"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 超級比一比：如何分辨是肌肉、椎間盤還是小面關節痛？</h3>
+<p style="color: #e2e8f0 !important;">這三者是最常混淆的背痛原因，但疼痛特徵其實大不相同：</p>
+
+<div style="overflow-x: auto;">
+    <table style="width: 100%; border-collapse: collapse; margin-top: 1rem; color: #e2e8f0; table-layout: fixed;">
+        <thead>
+            <tr style="background-color: #1e293b;">
+                <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #334155; width: 16%; white-space: nowrap;">比較項目</th>
+                <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #334155; color: #22d3ee; width: 28%;">小面關節炎</th>
+                <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #334155; width: 28%;">椎間盤突出</th>
+                <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #334155; width: 28%;">肌肉筋膜疼痛</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold;">最痛動作</td>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold; color: #22d3ee;">往後仰、旋轉</td>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155;">往前彎腰、久坐</td>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155;">特定姿勢拉扯、出力時</td>
+            </tr>
+            <tr>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold;">疼痛範圍</td>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155;">脊椎兩側深處範圍較局限</td>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155;">脊椎中央深處</td>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155;">大範圍淺層痠痛</td>
+            </tr>
+            <tr>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold;">傳導痛</td>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155;"><strong>通常不過膝</strong> (傳到臀部、大腿後側)</td>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155;"><strong>常超過膝</strong> (典型的坐骨神經痛，傳到小腿腳底)</td>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155;">無明顯神經傳導痛</td>
+            </tr>
+            <tr>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold;">晨間僵硬</td>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155;"><strong>非常明顯</strong>，活動後改善</td>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155;">較不明顯</td>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155;">有時有，熱敷後改善</td>
+            </tr>
+            <tr>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold;">壓痛點</td>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155;">脊椎旁開 2-3 公分深壓痛</td>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155;">棘突正中央深壓痛</td>
+                <td style="padding: 1rem; border-bottom: 1px solid #334155;">肌肉上的激痛點</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新精準治療策略：修復不穩定的關節</h3>
+          <p style="color: #e2e8f0 !important;">小面關節炎的根源往往是「關節囊韌帶鬆弛」導致的關節不穩定。因此，治療不能只靠止痛藥，重點在於<strong>「修復韌帶，恢復穩定」</strong>。</p>
+
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 精準診斷：超音波影像及X光檢查</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  X 光只能看到骨頭有沒有長骨刺，但看不到發炎的滑膜與腫脹的關節囊。我們使用高解析度骨骼肌肉超音波，能直接觀察小面關節是否有積水、滑膜增生，並確認壓痛點是否與影像吻合，排除其他問題。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 核心治療💉：超音波導引<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  這是治療小面關節炎最關鍵的一環。
+                  <br>
+                  <strong>為什麼要打針？</strong> 因為關節囊韌帶血液循環差，自我修復能力弱。
+                  <br>
+                  <strong>怎麼打？</strong> 我們在超音波即時導引下，清楚看到細小的關節縫隙，將高濃度葡萄糖水或自體血小板 (PRP) 精準注入關節囊周圍韌帶。
+                  <br>
+                  <strong>效果：</strong> 這些增生劑能啟動身體的修復機制，刺激膠原蛋白新生，讓鬆弛的關節囊重新變得強韌緊實，恢復關節穩定度，疼痛自然消失。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 功能重建：<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手治療與核心訓練</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  在疼痛緩解後，必須解決造成關節退化的根本原因——姿勢不良與核心無力。
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>徒手治療：</strong> 物理治療師運用關節鬆動術，改善關節活動度，並放鬆周邊緊繃的肌肉。</li>
+                      <li><strong>核心肌群訓練：</strong> 強化深層核心肌肉（如多裂肌、腹橫肌），它們是脊椎的天然馬甲，能分擔小面關節的壓力。</li>
+                  </ul>
+              </p>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+
+    <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：打開卡住的關節</h3>
+    <p style="color: #e2e8f0 !important;">小面關節炎的特性是<strong>「喜歡彎腰，討厭後仰」</strong>。因此復健的重點在於「屈曲運動 (Flexion Exercise)」與「核心穩定」，把擠壓的關節打開，釋放壓力：</p>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">1. 雙膝抱胸運動</h4>
+        <p style="color: #e2e8f0 !important;">平躺在床上，雙手抱住兩腳膝蓋，慢慢將大腿拉向胸口，直到感覺下背部有被拉開的微痠感（不會痛的範圍）。停留 15-30 秒，重複 5 次。這能直接擴大小面關節的間隙，緩解晨間僵硬。</p>
+    </div>
+    
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">2. 貓式伸展 - 著重拱背</h4>
+        <p style="color: #e2e8f0 !important;">採四足跪姿。吐氣時腹部用力收緊，背部像生氣的貓一樣<strong>盡量拱高</strong>，視線看向肚臍。這個動作能完全打開脊椎後方的關節。<strong>注意：吸氣回正即可，盡量不要做出「下腰（牛式）」的動作，以免過度擠壓關節造成疼痛。</strong></p>
+    </div>
+    
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">3. 骨盆後傾運動 )</h4>
+        <p style="color: #e2e8f0 !important;">平躺，雙膝彎曲踩地。想像肚臍要用力往下貼到背後的脊椎，收縮腹肌，讓您的腰部<strong>「完全貼平地面」</strong>（消除腰椎原本懸空的弧度）。維持 10 秒後放鬆。這能啟動深層核心，減少腰椎過度前凸帶來的關節壓力。</p>
+    </div>
+      <p><img src="/images/diseases/spine-hip/facet/c.jpg" alt="小面關節居家運動"></p>
+      
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 別讓「後仰痛」困擾您的生活！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">小面關節炎常被誤認為普通的腰痠背痛而被忽略，導致脊椎持續退化。如果您發現自己後仰特別痛、早上起床特別僵硬，請務必尋求專業評估。透過超音波精準診斷與增生注射修復韌帶，搭配物理治療強化核心，我們能協助您找回穩定的脊椎，重拾靈活的身軀！</p>
+              <p style="font-weight: bold; color: #059669 !important;">腰背後仰疼痛？懷疑脊椎關節退化？立即預約脊椎評估！</p>
+          </div>
+        `,
+        symptoms: [
+          '往後仰或旋轉時背痛加劇',
+          '晨間起床時脊椎僵硬明顯，活動後改善',
+          '疼痛位置在脊椎兩側深處，按壓會痛',
+          '久站或維持同一姿勢過久會變痛'
+        ],
+        treatments: [
+          '止痛藥物及復健',
+          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">關節鬆動術與核心肌群訓練</a>🔍️',
+          '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療(ESWT)</a>🔍️'
+        ],
+        seoKeywords: [
+          '小面關節炎',
+          'Facet Joint Syndrome',
+          '脊椎退化',
+          '後仰痛',
+          '晨間僵硬',
+          '閃到腰',
+          '增生療法注射',
+          'PRP注射',
+          '超音波導引'
+        ],
+        seoDescription: '小面關節炎是造成慢性背痛與頸痛的常見原因，特徵是後仰疼痛與晨間僵硬。宸新復健科提供超音波導引增生注射(PRP)精準修復受損韌帶，並比較其與椎間盤突出之差異。',
+        images: [
+          { src: '/images/diseases/spine-hip/facet/a.jpg', alt: '小面關節炎示意圖' 
+          }
+        ]
+      }, 
       
  {
         id: 'muscle-tmd',
@@ -3931,7 +4735,46 @@ export const diseaseCategories: DiseaseCategory[] = [
            <p><img src="/images/diseases/ankle/tp/c.jpg" alt="脛後肌腱炎造成原因" style="width: 100%; height: auto;"></p>
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-      
+
+     
+
+    <h3 style="color: #f8fafc !important;">🏃 跑者的隱形傷痛：脛後肌與跑步的愛恨情仇</h3>
+    <p style="color: #e2e8f0 !important;">很多跑者聽過「足底筋膜炎」或「跑者膝」，但卻忽略了<strong>脛後肌</strong>這個默默付出的無名英雄。其實，許多不明原因的小腿內側痛（夾脛症）或腳底痛，元兇都是它！</p>
+
+    <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+        <h4 style="color: #b45309 !important; margin-top: 0;">💡 為什麼跑步會傷到脛後肌？</h4>
+        <ul style="margin-top: 0.5rem; color: #92400e !important;">
+            <li style="margin-bottom: 0.5rem;"><strong>煞車與避震：</strong> 跑步著地時，腳掌會自然發生「足外翻 (Pronation)」來吸收衝擊。脛後肌的工作就是<strong>「離心收縮」</strong>，像煞車皮一樣控制外翻的速度。</li>
+            <li style="margin-bottom: 0.5rem;"><strong>推進力：</strong> 離地時，它負責鎖定足部骨骼，將軟趴趴的腳掌變成堅硬的槓桿，幫助推進。</li>
+            <li style="margin-bottom: 0;"><strong>過勞崩潰：</strong> 如果跑量增加太快、跑鞋支撐不足，或是本身有扁平足，脛後肌就會因為「煞車踩太久」而過勞發炎，導致足弓支撐力失效。</li>
+        </ul>
+    </div>
+   
+    <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：關鍵放鬆與強化</h3>
+    <p style="color: #e2e8f0 !important;">不想跑到足弓塌陷？請務必將以下動作加入您的日常訓練菜單：</p>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">1. 深層放鬆：小腿內側按摩</h4>
+        <p style="color: #e2e8f0 !important;">脛後肌藏在小腿深層，單純拉筋很難拉到。
+        <br><strong>做法：</strong> 坐在地上，將按摩球（網球或花生球）放在小腿內側骨頭（脛骨）的後方邊緣。用手加壓並尋找痠痛點，找到後停留 30-60 秒，並配合腳踝上下勾動。這能釋放深層筋膜張力。</p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">2. 提踵夾球- 黃金訓練！</h4>
+        <p style="color: #e2e8f0 !important;">這是專門訓練脛後肌的經典動作。
+        <br><strong>做法：</strong> 光腳站立，在<strong>雙腳腳跟之間夾一顆網球</strong>。
+        <br><strong>動作：</strong> 慢慢踮起腳尖，過程中<strong>用力夾緊球</strong>，不要讓球掉下來。這會強迫腳跟往內轉，精準徵召脛後肌。每組 15 下，做 3 組。</p>
+    </div>
+    
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">3. 彈力帶內翻訓練</h4>
+        <p style="color: #e2e8f0 !important;"><strong>做法：</strong> 坐姿，一腳伸直，將彈力帶套在腳掌上，另一端固定在身體外側（或用另一腳踩住）。
+        <br><strong>動作：</strong> 對抗彈力帶的阻力，將腳掌<strong>「往內、往上」</strong>翻轉（像要看腳底板一樣）。慢慢放回。這能強化脛後肌的肌耐力。</p>
+    </div>
+
+    <p><img src="/images/diseases/ankle/tp/e.jpg" alt="脛後肌腱炎放鬆及伸展" style="width: 100%; height: auto;"></p>
+
+           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
           <h3 style="color: #f8fafc !important;">🔍 自我檢測：你是不是危險族群？</h3>
           <p style="color: #e2e8f0 !important;">除了腳踝內側痛，您可以透過以下方式檢查：</p>
           <ul style="color: #e2e8f0 !important;">
