@@ -5,24 +5,41 @@ import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import ClinicHoursModal from '@/components/ClinicHoursModal'
 
+// 1. 定義常數 (移到 Component 外，讓 Metadata 也能使用)
+const SITE_URL = 'https://www.dryichen.com.tw'
+const PAGE_PATH = '/about/doctors'
+const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
+
 export const metadata: Metadata = { 
   title: '林羿辰醫師介紹 - 台大雙專科院長 | 新竹復健科/骨科/運動傷害推薦',
   description: '新竹復健科推薦林羿辰醫師。台大醫學系畢業，具備復健專科與骨質疏鬆專科雙資格。專精超音波導引PRP注射、增生療法、兒童骨齡評估與各類運動傷害治療，是您值得信賴的骨科復健專家。',
-  keywords: ['林羿辰', '新竹復健科醫師', '台大醫師', '新竹骨科推薦', '運動醫學', 'PRP注射', '增生療法', '超音波導引', '兒童骨齡']
+  keywords: ['林羿辰', '新竹復健科醫師', '台大醫師', '新竹骨科推薦', '運動醫學', 'PRP注射', '增生療法', '超音波導引', '兒童骨齡'],
+  // ★★★ 新增：標準網址設定 ★★★
+  alternates: {
+    canonical: CANONICAL_URL,
+  },
+  // 建議同步補上 OpenGraph URL
+  openGraph: {
+    title: '林羿辰醫師介紹 - 台大雙專科院長',
+    description: '新竹復健科推薦林羿辰醫師。台大醫學系畢業，具備復健專科與骨質疏鬆專科雙資格。',
+    url: CANONICAL_URL,
+    type: 'profile',
+    images: [`${SITE_URL}/images/doctor/c.jpg`],
+  }
 }
 
 export default function DoctorsPage() {
   
-  const siteUrl = 'https://www.dryichen.com.tw'
-  const currentUrl = `${siteUrl}/about/doctors`
+  // 使用上方定義好的常數
+  const currentUrl = CANONICAL_URL
 
   // 1. Schema: 麵包屑導航
   const jsonLdBreadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
-      { '@type': 'ListItem', position: 2, name: '關於我們', item: `${siteUrl}/about` },
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: '關於我們', item: `${SITE_URL}/about` },
       { '@type': 'ListItem', position: 3, name: '醫師團隊', item: currentUrl },
     ],
   }
@@ -38,19 +55,19 @@ export default function DoctorsPage() {
     author: {
         '@type': 'MedicalOrganization',
         name: '新竹宸新復健科',
-        url: siteUrl
+        url: SITE_URL
     },
     mainEntity: {
       '@type': 'Physician',
       name: '林羿辰',
       jobTitle: '院長',
-      image: `${siteUrl}/images/main/a.jpg`, 
+      image: `${SITE_URL}/images/main/a.jpg`, 
       telephone: '03-1234567', 
       url: currentUrl,
       worksFor: {
         '@type': 'MedicalClinic',
         name: '宸新復健科診所',
-        url: siteUrl
+        url: SITE_URL
       },
       address: { 
         '@type': 'PostalAddress', 
@@ -89,12 +106,12 @@ export default function DoctorsPage() {
                       
                       {/* 照片區域 */}
                       <div className="w-full lg:w-[40%] relative aspect-[9/16] shrink-0 bg-slate-800 self-start">
-                         <img 
-                           src="/images/doctor/c.jpg"
-                           alt="新竹復健科推薦-林羿辰醫師-台大雙專科" 
-                           className="absolute inset-0 w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-700" 
-                         />
-                         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-slate-900/30"></div>
+                          <img 
+                            src="/images/doctor/c.jpg"
+                            alt="新竹復健科推薦-林羿辰醫師-台大雙專科" 
+                            className="absolute inset-0 w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-700" 
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-slate-900/30"></div>
                       </div>
 
                       {/* 文字區域 */}
@@ -169,12 +186,6 @@ export default function DoctorsPage() {
 
                           </div>
                           
-                          {/* 修改重點：
-                             1. padding 加大至 px-8 py-3
-                             2. 加入 Flex, gap-2 與 group 設定
-                             3. 加入 Icon (聽診器) 與 hover 動畫
-                             4. 顏色維持 bg-cyan-600
-                          */}
                           <div className="mt-8 pt-5 border-t border-slate-700/50 flex flex-wrap gap-4">
                               <Link 
                                 href="/treatments" 

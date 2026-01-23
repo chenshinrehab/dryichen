@@ -13,7 +13,7 @@ interface PageProps {
   }
 }
 
-// 1. 動態產生 Metadata
+// 1. 動態產生 Metadata (已修正：加入 canonical)
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const category = diseaseCategories.find((c) => c.slug === params.category)
     
@@ -22,15 +22,21 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const ogImage = category.image || '/images/default-og.jpg'
+  // 定義標準網址 (移除結尾斜線，確保與 sitemap 一致)
+  const canonicalUrl = `${SITE_URL}/diseases/${params.category}`
 
   return {
     title: `${category.title} - 症狀與治療介紹 | 新竹宸新復健科`,
     description: `新竹宸新復健科提供${category.title}相關的疾病衛教，包含：${category.diseases.map(d => d.title).join('、')}等常見症狀與治療方式。`,
     keywords: [`${category.title}`, '新竹骨科', '新竹復健', ...category.diseases.map(d => d.title)],
+    // ★★★ 新增：告訴 Google 標準網址是這一個 ★★★
+    alternates: {
+        canonical: canonicalUrl,
+    },
     openGraph: {
       title: `${category.title} - 症狀與治療介紹`,
       description: category.description,
-      url: `${SITE_URL}/diseases/${params.category}`,
+      url: canonicalUrl, // OpenGraph URL 也建議同步使用標準網址
       images: [{ url: ogImage, width: 1200, height: 630, alt: category.title }],
       type: 'website',
     }
@@ -115,10 +121,6 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                         <h1 className="text-3xl md:text-5xl font-bold font-sans text-white tracking-wide mb-3">
                             {category.title}
                         </h1>
-                        {/* 修改處：將原本顯示 category.description 的 p 標籤註解掉或移除。
-                           這會隱藏如「脊椎、髖關節與臀部相關疾病...」的文字，
-                           並讓 Header 區域的高度自然縮減。
-                        */}
                         {/* <p className="text-slate-400 text-lg max-w-2xl leading-relaxed">
                             {category.description}
                         </p> */}

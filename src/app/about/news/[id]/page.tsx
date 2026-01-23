@@ -15,19 +15,28 @@ export async function generateStaticParams() {
   return newsList.map((post) => ({ id: post.id }))
 }
 
-// 1. 動態 Meta
+// 1. 動態 Meta (修正重點：加入 Canonical)
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const post = getNewsById(params.id)
   if (!post) return { title: '文章不存在' }
+  
+  // ★★★ 定義標準網址：排除任何 fbclid 或其他參數 ★★★
+  const canonicalUrl = `${SITE_URL}/about/news/${params.id}`
    
   return {
     title: post.seoTitle || `${post.title} - 宸新復健科`,
     description: post.seoDescription || post.summary,
     keywords: post.keywords,
+    
+    // ★★★ 加入 Canonical Tag，告訴 Google 這是正本 ★★★
+    alternates: {
+      canonical: canonicalUrl,
+    },
+
     openGraph: {
       title: post.seoTitle || post.title,
       description: post.seoDescription || post.summary,
-      url: `${SITE_URL}/about/news/${params.id}`,
+      url: canonicalUrl, // OpenGraph URL 也同步使用乾淨的網址
       type: 'article',
       images: [
         {
@@ -45,6 +54,7 @@ export default function NewsDetailPage({ params }: PageProps) {
   const post = getNewsById(params.id)
   if (!post) notFound()
 
+  // 確保頁面內部使用的網址也是標準格式
   const currentUrl = `${SITE_URL}/about/news/${params.id}`
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&bgcolor=ffffff&data=${encodeURIComponent(currentUrl)}`
 
@@ -55,6 +65,8 @@ export default function NewsDetailPage({ params }: PageProps) {
   const jsonLdData = {
     '@context': 'https://schema.org',
     '@type': isAnnouncement ? 'NewsArticle' : 'MedicalWebPage',
+    '@id': `${currentUrl}#webpage`, // 建議加上 ID
+    url: currentUrl,                // 建議明確宣告 URL
     [isAnnouncement ? 'headline' : 'name']: post.title,
     image: [post.coverImage],
     datePublished: post.date,
@@ -229,12 +241,6 @@ export default function NewsDetailPage({ params }: PageProps) {
                           </div>
                       </div>
                   </div>
-
-                  {/* 已移除：原本此處有 {post.coverImage && (...)} 的區塊 
-                     包含：
-                     1. 封面圖 (img)
-                     2. 摘要說明 (post.summary)
-                  */}
 
                   {/* 文章內容：使用 article-content 類別 */}
                   <div className="article-content text-slate-300 leading-relaxed text-lg pb-6">

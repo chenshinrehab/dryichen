@@ -21,19 +21,29 @@ export async function generateStaticParams() {
   return generateAllDiseaseParams()
 }
 
-// 2. SEO Metadata
+// 2. SEO Metadata (修正重點)
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const disease = getDiseaseBySlug(params.category, params.slug)
   if (!disease) return { title: '疾病介紹不存在' }
+
+  // ★★★ 定義標準網址 (Canonical URL) ★★★
+  // 這樣無論網址後面帶有什麼亂碼參數，Google 永遠只認這個乾淨的網址
+  const canonicalUrl = `${SITE_URL}/diseases/${params.category}/${params.slug}`
 
   return {
     title: `${disease.title} - 疾病衛教 | 新竹宸新復健科`,
     description: disease.seoDescription || disease.description,
     keywords: disease.seoKeywords,
+    
+    // ★★★ 加入 Canonical Tag ★★★
+    alternates: {
+        canonical: canonicalUrl,
+    },
+
     openGraph: {
       title: disease.title,
       description: disease.seoDescription || disease.description,
-      url: `${SITE_URL}/diseases/${params.category}/${params.slug}`,
+      url: canonicalUrl, // OpenGraph 也同步使用標準網址
       type: 'article',
     }
   }
@@ -43,6 +53,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
   const disease = getDiseaseBySlug(params.category, params.slug)
   if (!disease) notFound()
 
+  // 頁面內部使用的網址，確保與 Canonical 一致
   const currentPageUrl = `${SITE_URL}/diseases/${params.category}/${params.slug}`
   
   // QR Code API
@@ -295,7 +306,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                 <p className="text-slate-400 mb-8 text-lg relative z-10">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
 
                 <div className="relative z-10">
-                   <ShareButtons url={currentPageUrl} title={disease.title} />
+                    <ShareButtons url={currentPageUrl} title={disease.title} />
                 </div>
 
                 <div className="mt-12 pt-8 border-t border-slate-700/50 relative z-10">
