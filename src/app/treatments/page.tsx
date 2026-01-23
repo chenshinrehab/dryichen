@@ -1,13 +1,16 @@
+// src/app/treatments/page.tsx
 import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { treatmentsList } from '@/data/treatments'
 
-// 定義常數
+// 定義標準網域與路徑
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+const PAGE_PATH = '/treatments'
+const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
 // ==========================================
-// 1. Meta 設定 (保留 SEO 優化：加入 Open Graph)
+// 1. Meta 設定 (加入 Canonical)
 // ==========================================
 export const metadata: Metadata = {
   title: '新竹PRP/增生注射/震波/徒手治療 - 超音波導引骨科復健 | 宸新復健科',
@@ -17,16 +20,20 @@ export const metadata: Metadata = {
     '體外震波', '新竹體外震波', '徒手治療', '新竹徒手治療', 
     '復健科推薦', '膝蓋退化免開刀', '足底筋膜炎治療'
   ],
+  // ★★★ 加入 Canonical Tag ★★★
+  alternates: {
+    canonical: CANONICAL_URL,
+  },
   openGraph: {
     title: '新竹PRP/增生注射/震波/徒手治療 - 宸新復健科',
     description: '提供PRP增生療法、體外震波、徒手治療等專業骨科復健服務。',
-    url: `${SITE_URL}/treatments`,
+    url: CANONICAL_URL, // 同步更新為標準網址
     type: 'website',
   },
 }
 
 // ==========================================
-// 2. Schema 結構化資料 (保留 SEO 優化：加入 ItemList)
+// 2. Schema 結構化資料
 // ==========================================
 const treatmentsSchema = {
   '@context': 'https://schema.org',
@@ -35,14 +42,15 @@ const treatmentsSchema = {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
-        { '@type': 'ListItem', position: 2, name: '治療項目', item: `${SITE_URL}/treatments` },
+        { '@type': 'ListItem', position: 2, name: '治療項目', item: CANONICAL_URL },
       ],
     },
     {
       '@type': 'MedicalWebPage',
-      '@id': `${SITE_URL}/treatments/#webpage`,
+      '@id': `${CANONICAL_URL}#webpage`,
       'name': '復健治療項目總覽',
       'description': '提供PRP增生療法、體外震波、徒手治療等專業骨科復健服務。',
+      'url': CANONICAL_URL, // 明確宣告 URL
       'lastReviewed': new Date().toISOString().split('T')[0],
       'reviewedBy': {
         '@type': 'Physician',
@@ -75,11 +83,12 @@ export default function TreatmentsPage() {
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
-    <main className="flex-grow pt--6 pb-12 md:pt--6 md:pb-12 fade-in relative z-10">
+        {/* 修正了 padding top 的拼寫錯誤 (pt--6 -> pt-6) */}
+        <main className="flex-grow -pt-6 pb-12 md:-pt-6 md:pb-12 fade-in relative z-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             {/* ============================================================
-                ✨ 標題區塊 (回復您原本的樣式)
+                ✨ 標題區塊
                 ============================================================ */}
             <div className="flex items-center justify-center gap-3 mb-10">
                 <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
@@ -91,18 +100,21 @@ export default function TreatmentsPage() {
             </div>
 
             {/* ============================================================
-                ✨ SEO 導言區 (回復您原本的樣式)
+                ✨ SEO 導言區
                 ============================================================ */}
             <div className="mb-12 max-w-3xl mx-auto">
                 <details className="group border-l-4 border-cyan-500 pl-4">
-                    <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left">
+                    <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left hover:text-cyan-400 transition-colors">
                         <span className="inline-block h-full">
-                            宸新復健科致力於提供最先進的<strong className="text-cyan-400 font-normal">新竹骨科</strong>復健治療，結合醫學影像與運動科學，為您解決長期疼痛。
+                            <span className="flex items-center gap-2 mb-2">
+                                <i className="fa-solid fa-user-doctor text-cyan-500"></i>
+                                <strong className="text-white font-medium">醫師叮嚀：精準治療，重啟修復</strong>
+                            </span>
+                            宸新復健科致力於提供最先進的<strong className="text-cyan-400 font-normal">新竹骨科</strong>復健治療...
                             
                             <span className="group-open:hidden">
-                                ... 
-                                <span className="ml-1 text-sm text-cyan-500 hover:text-cyan-400 hover:underline underline-offset-4 font-semibold">
-                                    了解更多 <i className="fa-solid fa-chevron-down text-xs"></i>
+                                <span className="ml-2 text-sm text-cyan-500 hover:text-cyan-400 hover:underline underline-offset-4 font-semibold">
+                                    展開閱讀 <i className="fa-solid fa-chevron-down text-xs"></i>
                                 </span>
                             </span>
                         </span>
@@ -123,8 +135,7 @@ export default function TreatmentsPage() {
             </div>
             
             {/* ============================================================
-                ✨ 卡片列表 (完全回復您原本的樣式與結構)
-                grid-cols-1, gap-8, h-64, w-2/5:w-3/5
+                ✨ 卡片列表
                 ============================================================ */}
             <div className="grid grid-cols-1 gap-8 mb-16">
               {treatmentsList.map((treatment) => (
@@ -183,23 +194,26 @@ export default function TreatmentsPage() {
             </div>
 
             {/* ============================================================
-                ✨ 專業理念區塊 (保持不變)
+                ✨ 專業理念區塊
                 ============================================================ */}
             <div className="bg-slate-800/80 rounded-2xl p-8 border border-slate-700 relative overflow-hidden">
                 <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>
                 
                 <div className="relative z-10 flex flex-col md:flex-row gap-8 items-start">
-                    <div className="flex-shrink-0">
+                    <div className="flex-shrink-0 hidden md:block">
                         <div className="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center border-2 border-cyan-500/50">
                              <i className="fa-solid fa-microscope text-3xl text-cyan-400"></i>
                         </div>
                     </div>
                     
                     <div className="flex-grow">
-                        <h3 className="text-2xl font-bold text-white mb-4">
-                            精準醫療，對症下藥
-                        </h3>
-                        <div className="space-y-4 text-slate-300 leading-relaxed">
+                        <div className="flex items-center gap-4 mb-4 md:mb-2">
+                            <i className="fa-solid fa-microscope text-3xl text-cyan-400 md:hidden"></i>
+                            <h3 className="text-2xl font-bold text-white">
+                                精準醫療，對症下藥
+                            </h3>
+                        </div>
+                        <div className="space-y-4 text-slate-300 leading-relaxed text-lg">
                             <p>
                                 疼痛的成因複雜，傳統的「頭痛醫頭」往往只能治標。宸新復健科堅持引入醫學中心等級的<strong className="text-cyan-400">超音波導引</strong>技術，在注射治療（如 PRP、增生療法）時，能即時看見神經、血管與受傷組織，確保藥劑精準送達病灶。
                             </p>

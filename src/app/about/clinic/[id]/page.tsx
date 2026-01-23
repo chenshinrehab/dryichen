@@ -6,24 +6,39 @@ import JsonLd from '@/components/JsonLd'
 import { facilitiesData, getFacilityById } from '@/data/facilities'
 import ShareButtons from '@/components/ShareButtons'
 
+// 定義標準網域與路徑
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+
 interface PageProps { params: { id: string } }
 
 export async function generateStaticParams() {
   return facilitiesData.map((item) => ({ id: item.id }))
 }
 
+// ==========================================
+// 1. 動態 Meta 設定 (加入 Canonical)
+// ==========================================
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const item = getFacilityById(params.id)
   if (!item) return { title: '設備介紹' }
   
+  // ★★★ 定義標準網址 ★★★
+  const canonicalUrl = `${SITE_URL}/about/clinic/${params.id}`
+
   return {
     title: `${item.title} - 診所設備介紹 | 新竹宸新復健科`,
     description: item.description,
     keywords: item.keywords,
+    // ★★★ 加入 Canonical Tag ★★★
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: item.title,
       description: item.description,
       images: [item.imageUrl],
+      url: canonicalUrl, // 同步更新 OG URL
+      type: 'article',   // 這裡也可以用 article
     }
   }
 }
@@ -32,9 +47,12 @@ export default function FacilityDetailPage({ params }: PageProps) {
   const item = getFacilityById(params.id)
   if (!item) notFound()
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
-  const currentUrl = `${siteUrl}/about/clinic/${params.id}`
+  // 頁面內使用的網址
+  const currentUrl = `${SITE_URL}/about/clinic/${params.id}`
 
+  // ==========================================
+  // 2. Schema: MedicalDevice + MedicalWebPage
+  // ==========================================
   const jsonLdDevice = {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
@@ -45,19 +63,33 @@ export default function FacilityDetailPage({ params }: PageProps) {
     author: {
         '@type': 'MedicalOrganization',
         name: '新竹宸新復健科',
-        url: siteUrl
+        url: SITE_URL
     },
     mainEntity: {
         '@type': 'MedicalDevice',
         name: item.title,
         description: item.description,
         image: item.imageUrl,
+        // 建議加上製造商或用途 (如果有資料的話，這邊先維持基本)
     }
+  }
+
+  // Schema: 麵包屑
+  const jsonLdBreadcrumb = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: '關於我們', item: `${SITE_URL}/about` },
+      { '@type': 'ListItem', position: 3, name: '環境與設備', item: `${SITE_URL}/about/clinic` },
+      { '@type': 'ListItem', position: 4, name: item.title, item: currentUrl },
+    ],
   }
 
   return (
     <>
       <JsonLd data={jsonLdDevice} />
+      <JsonLd data={jsonLdBreadcrumb} />
 
       <style dangerouslySetInnerHTML={{__html: `
         /* 重點文字 (strong) - 青色 */
@@ -147,7 +179,6 @@ export default function FacilityDetailPage({ params }: PageProps) {
         .facility-content li {
             margin-bottom: 0.5rem;
         }
-        /* 註：移除了原本的 video/iframe CSS，改用下方專屬區塊處理，效果較好 */
       `}} />
 
       <div className="min-h-screen bg-slate-900 text-slate-300 pt-0 pb-12 md:pt-0 md:pb-16 fade-in">
@@ -189,7 +220,7 @@ export default function FacilityDetailPage({ params }: PageProps) {
                     <div dangerouslySetInnerHTML={{ __html: item.contentHtml }} />
                  </div>
 
-                 {/* ✨ 新增：YouTube 影片區塊 (參考治療方式格式) */}
+                 {/* YouTube 影片區塊 */}
                  {/* 使用 (item as any) 轉型以繞過 TypeScript 檢查 */}
                  {(item as any).youtubeVideoId && (
                     <div className="mb-14 text-center">

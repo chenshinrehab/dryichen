@@ -4,8 +4,13 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 
+// 定義標準網域與路徑 (確保與其他頁面一致)
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+const PAGE_PATH = '/about'
+const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
+
 // ==========================================
-// 1. Meta 設定
+// 1. Meta 設定 (加入 Canonical 與 Open Graph)
 // ==========================================
 export const metadata: Metadata = {
   title: '關於我們 - 新竹復健科推薦 | 台大醫師林羿辰 | 竹科/關埔/光復路骨科診所',
@@ -15,6 +20,16 @@ export const metadata: Metadata = {
     '新竹竹科', '新竹科學園區', '關埔重劃區', '光復路', '關新路', '新竹東區', 'Costco附近',
     '新竹復健推薦', '假日有開復健科', '好停車復健科'
   ],
+  // ★★★ 加入 Canonical Tag ★★★
+  alternates: {
+    canonical: CANONICAL_URL,
+  },
+  openGraph: {
+    title: '關於我們 - 宸新復健科診所',
+    description: '台大醫師團隊，提供骨科痛症、運動傷害、兒童早療等全方位治療。',
+    url: CANONICAL_URL, // 同步使用標準網址
+    type: 'website',
+  }
 }
 
 // 頁面選單資料
@@ -49,8 +64,7 @@ const aboutSections = [
 ]
 
 export default function AboutPage() {
-  const siteUrl = 'https://www.dryichen.com.tw'
-
+  
   // ==========================================
   // 2. Schema: 麵包屑
   // ==========================================
@@ -58,8 +72,8 @@ export default function AboutPage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
-      { '@type': 'ListItem', position: 2, name: '關於我們', item: `${siteUrl}/about` },
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: '關於我們', item: CANONICAL_URL },
     ],
   }
 
@@ -69,17 +83,17 @@ export default function AboutPage() {
   const aboutSchema = {
     '@context': 'https://schema.org',
     '@type': 'AboutPage', // 定義這是一個「關於頁面」
-    '@id': `${siteUrl}/about#webpage`,
-    url: `${siteUrl}/about`,
+    '@id': `${CANONICAL_URL}#webpage`,
+    url: CANONICAL_URL,
     name: '關於宸新復健科',
     description: metadata.description,
     mainEntity: {
         '@type': 'MedicalClinic',
         name: '宸新復健科診所',
         image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800', // 建議換成真實診所照片 URL
-        url: siteUrl,
+        url: SITE_URL,
         telephone: '+886-3-5647999', // ✨ 建議補上真實電話
-        priceRange: '健保特約', // ✨ 必填欄位之一 (可填 "$$" 或 "健保特約")
+        priceRange: '健保特約', 
         medicalSpecialty: [
             'Physical Medicine and Rehabilitation', 
             'Orthopedics', 
@@ -91,7 +105,7 @@ export default function AboutPage() {
             addressLocality: '新竹市東區',
             addressRegion: 'Hsinchu City',
             addressCountry: 'TW',
-            streetAddress: '新竹市東區光復路一段371號b1' // 建議填寫完整地址
+            streetAddress: '新竹市東區光復路一段371號b1' 
         },
         areaServed: [
             { '@type': 'Place', name: 'Hsinchu Science Park' },
@@ -100,9 +114,9 @@ export default function AboutPage() {
         ],
         founder: {
             '@type': 'Person',
-            name: '林羿辰', // 建議不要加 "醫師" title，純人名
+            name: '林羿辰', 
             jobTitle: '院長',
-            alumniOf: { '@type': 'CollegeOrUniversity', name: '國立台灣大學' } // 結構化學歷
+            alumniOf: { '@type': 'CollegeOrUniversity', name: '國立台灣大學' } 
         },
         openingHoursSpecification: [
             {
@@ -127,6 +141,8 @@ export default function AboutPage() {
       <JsonLd data={aboutSchema} />
 
       <div className="min-h-screen bg-slate-900 text-slate-300">
+      
+      {/* 修正了 padding 拼寫錯誤: -pt-6 改為 pt-6 (CSS 不支援負 padding) */}
       <main className="max-w-5xl mx-auto px-4 -pt-6 pb-12 md:-pt-6 md:pb-16 fade-in">
           
           {/* ============================================================

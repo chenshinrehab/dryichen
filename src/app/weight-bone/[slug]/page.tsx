@@ -1,3 +1,4 @@
+// src/app/weight-bone/[slug]/page.tsx
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import Link from 'next/link'
@@ -18,19 +19,28 @@ export async function generateStaticParams() {
   return getAllWeightLossProgramSlugs()
 }
 
-// 1. 動態 Meta 設定 (SEO 核心)
+// 1. 動態 Meta 設定 (SEO 核心 - 已修正)
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const program = getWeightLossProgramBySlug(params.slug)
   if (!program) return { title: '項目不存在' }
+
+  // ★★★ 定義標準網址：確保唯一性 ★★★
+  const canonicalUrl = `${SITE_URL}/weight-bone/${params.slug}`
 
   return {
     title: program.seoTitle || `${program.title} - 新竹減重與骨齡門診`,
     description: program.seoDescription || program.description,
     keywords: program.keywords || ['新竹減重', '瘦瘦針', '骨齡', '兒童生長'],
+    
+    // ★★★ 加入 Canonical Tag ★★★
+    alternates: {
+      canonical: canonicalUrl,
+    },
+
     openGraph: {
       title: program.title,
       description: program.seoDescription || program.description,
-      url: `${SITE_URL}/weight-bone/${params.slug}`,
+      url: canonicalUrl, // OpenGraph URL 同步使用標準網址
       type: 'article',
       images: program.images && program.images.length > 0 ? [program.images[0].src] : [],
     }
@@ -41,6 +51,7 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
   const program = getWeightLossProgramBySlug(params.slug)
   if (!program) notFound()
 
+  // 確保頁面內連結一致
   const currentPageUrl = `${SITE_URL}/weight-bone/${params.slug}`
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&bgcolor=ffffff&data=${encodeURIComponent(currentPageUrl)}`
 
@@ -58,13 +69,14 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
   // 3. Schema: 醫療服務 (Service)
   const jsonLdService = {
     '@context': 'https://schema.org',
-    '@type': 'Service', // 對於減重課程或骨齡評估，Service 是合適的
+    '@type': 'Service', 
     name: program.title,
     description: program.seoDescription || program.description,
+    url: currentPageUrl, // 明確指定服務頁面網址
     provider: {
       '@type': 'MedicalClinic',
       'name': '宸新復健科診所',
-      'image': `${SITE_URL}/logo.png`, // 建議確認路徑
+      'image': `${SITE_URL}/logo.png`, 
       'address': {
         '@type': 'PostalAddress',
         'addressLocality': '新竹市',
@@ -77,11 +89,10 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
        '@type': 'City',
        'name': 'Hsinchu'
     },
-    // 加入專科標記
     serviceType: ['Medical Weight Loss', 'Bone Age Assessment'],
   }
 
-  // 4. Schema: FAQ (自動生成問答結構化資料)
+  // 4. Schema: FAQ
   const jsonLdFAQ = program.qaList && program.qaList.length > 0 ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -256,7 +267,7 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                         )}
                     </div>
 
-                    {/* 圖片展示區 (使用與治療頁面相同的樣式) */}
+                    {/* 圖片展示區 */}
                     {program.images && program.images.length > 0 && (
                       <div className="space-y-8 mb-14">
                         {program.images.map((img, idx) => (
@@ -311,7 +322,6 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                     <p className="text-slate-400 mb-8 text-lg relative z-10">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
 
                     <div className="relative z-10">
-                        {/* 修正：使用 program.title */}
                         <ShareButtons url={currentPageUrl} title={program.title} />
                     </div>
 

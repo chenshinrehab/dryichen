@@ -5,42 +5,55 @@ import { Metadata } from 'next'
 import { facilitiesData } from '@/data/facilities'
 import JsonLd from '@/components/JsonLd'
 
-// 1. Meta 設定
+// 定義標準網域與路徑
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+const PAGE_PATH = '/about/clinic'
+const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
+
+// ==========================================
+// 1. Meta 設定 (加入 Canonical)
+// ==========================================
 export const metadata: Metadata = { 
   title: '診所環境與設備介紹 - 數位X光/超音波/骨科復健區 | 新竹宸新復健科',
   description: '新竹宸新復健科擁有醫學中心等級設備。包含數位X光、高解析超音波、瑞士聚焦式震波、兒童早療教室、獨立徒手治療室及專屬停車場，提供最優質的就醫環境。',
-  keywords: ['新竹復健科設備', 'X光檢查', '超音波檢查', 'PRP設備', '兒童早療', '骨科復健', '停車方便']
+  keywords: ['新竹復健科設備', 'X光檢查', '超音波檢查', 'PRP設備', '兒童早療', '骨科復健', '停車方便'],
+  // ★★★ 加入 Canonical Tag ★★★
+  alternates: {
+    canonical: CANONICAL_URL,
+  },
+  openGraph: {
+    title: '診所環境與設備介紹 - 宸新復健科',
+    description: '醫學中心等級設備：數位X光、高解析超音波、瑞士震波、兒童早療教室。',
+    url: CANONICAL_URL,
+    type: 'website',
+  }
 }
 
 export default function ClinicPage() {
   
-  const siteUrl = 'https://www.dryichen.com.tw'
-  const currentUrl = `${siteUrl}/about/clinic`
-
   // 2. Schema: 麵包屑 (Breadcrumb)
   const jsonLdBreadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
-      { '@type': 'ListItem', position: 2, name: '關於我們', item: `${siteUrl}/about` }, // 假設有這個層級，若無可移除
-      { '@type': 'ListItem', position: 3, name: '環境與設備', item: currentUrl },
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: '關於我們', item: `${SITE_URL}/about` }, 
+      { '@type': 'ListItem', position: 3, name: '環境與設備', item: CANONICAL_URL },
     ],
   }
 
-  // 3. Schema: 改為 MedicalWebPage + ItemList
-  // 這樣 Google 才知道這頁是「設備清單」，而不是診所的首頁
+  // 3. Schema: MedicalWebPage + ItemList
   const jsonLdPage = {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
-    '@id': `${currentUrl}#webpage`,
+    '@id': `${CANONICAL_URL}#webpage`,
     name: '診所環境與設備介紹',
     description: '提供全方位骨科復健與兒童發展評估的專業診所環境介紹。',
-    url: currentUrl,
+    url: CANONICAL_URL, // 明確指定 URL
     author: {
         '@type': 'MedicalOrganization',
         name: '新竹宸新復健科',
-        url: siteUrl,
+        url: SITE_URL,
     },
     // ✨ 重點：使用 ItemList 來條列出這裡有哪些設備
     mainEntity: {
@@ -48,7 +61,7 @@ export default function ClinicPage() {
       itemListElement: facilitiesData.map((item, index) => ({
         '@type': 'ListItem',
         position: index + 1,
-        url: `${currentUrl}/${item.id}`,
+        url: `${CANONICAL_URL}/${item.id}`, // 使用標準網址拼接
         name: item.title,
         // 選擇性：如果有圖片也可稍微帶入
         image: item.imageUrl
@@ -61,14 +74,11 @@ export default function ClinicPage() {
       <JsonLd data={jsonLdBreadcrumb} />
       <JsonLd data={jsonLdPage} />
 
-      {/* UI 樣式保持您原本的設定
-          pt-4 pb-12 md:pt-8 md:pb-16 
-      */}
       <div className="min-h-screen bg-slate-900 text-slate-300 pt-0 pb-12 md:pt-0 md:pb-16 fade-in">
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          {/* 返回按鈕 (這裡指回 /about 或首頁，視您網站架構而定) */}
+          {/* 返回按鈕 */}
           <Link href="/about" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group">
              <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回關於我們
           </Link>
@@ -88,16 +98,16 @@ export default function ClinicPage() {
                 href={`/about/clinic/${item.id}`} 
                 className="group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col"
               >
-                 <div className="h-48 overflow-hidden relative bg-slate-800">
+                  <div className="h-48 overflow-hidden relative bg-slate-800">
                     <img 
                       src={item.imageUrl} 
                       alt={item.title} 
                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
-                 </div>
-                 
-                 <div className="p-6 flex flex-col flex-grow">
+                  </div>
+                  
+                  <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors flex items-center justify-between">
                        {item.title}
                        <i className="fa-solid fa-angle-right opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all text-sm"></i>
@@ -112,7 +122,7 @@ export default function ClinicPage() {
                          了解更多 <i className="fa-solid fa-arrow-right ml-1 text-xs"></i>
                        </span>
                     </div>
-                 </div>
+                  </div>
               </Link>
             ))}
           </div>

@@ -5,19 +5,33 @@ import JsonLd from '@/components/JsonLd'
 // 修改這裡：直接引入原本的 Modal 組件
 import ClinicHoursModal from '@/components/ClinicHoursModal'
 
+// 定義標準網域 (Top-level constant)
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+const PAGE_PATH = '/booking'
+const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
+
 // ==========================================
-// 1. Meta 設定
+// 1. Meta 設定 (加入 Canonical)
 // ==========================================
 export const metadata: Metadata = {
   title: '馬上預約 - 新竹網路掛號/APP預約/Line掛號 | 新竹宸新復健科',
   description: '新竹宸新復健科提供便利的數位掛號服務。支援免APP網頁直接掛號、Android/iOS App 下載預約，或加入 Line 官方帳號線上掛號。免排隊、即時查詢看診進度。',
   keywords: ['新竹掛號', '網路預約', '診所APP', 'Line掛號', '看診進度查詢', '新竹復健科預約', '宸新掛號', '林羿辰醫師掛號'],
+  // ★★★ 加入 Canonical Tag 保護此頁面 ★★★
+  alternates: {
+    canonical: CANONICAL_URL,
+  },
+  openGraph: {
+    title: '馬上預約 - 網路掛號/APP/Line | 新竹宸新復健科',
+    description: '提供免APP網頁直接掛號、手機 App 下載與 Line 線上預約服務。',
+    url: CANONICAL_URL,
+    type: 'website',
+  }
 }
 
 export default function BookingPage() {
   
-  const siteUrl = 'https://www.dryichen.com.tw'
-  const currentUrl = `${siteUrl}/booking`
+  const currentUrl = CANONICAL_URL
   // 新的掛號網址
   const webBookingUrl = 'https://reg.forcestar.com.tw/appointment/7/reserve'
 
@@ -28,7 +42,7 @@ export default function BookingPage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
       { '@type': 'ListItem', position: 2, name: '馬上預約', item: currentUrl },
     ],
   }
@@ -48,13 +62,13 @@ export default function BookingPage() {
         'author': {
             '@type': 'MedicalOrganization',
             'name': '新竹宸新復健科',
-            'url': siteUrl
+            'url': SITE_URL
         },
         'potentialAction': {
           '@type': 'ReserveAction',
           'target': {
             '@type': 'EntryPoint',
-            // 🟢 Schema 更新：將預約動作指向新的直接掛號連結，這對 SEO 更友善
+            // 🟢 Schema 維持指向外部預約系統，這對 Google 辨識「掛號入口」很有幫助
             'urlTemplate': webBookingUrl,
             'actionPlatform': [
               'http://schema.org/DesktopWebPlatform',
@@ -115,8 +129,7 @@ export default function BookingPage() {
           </div>
 
           {/* =========================================================
-              🟢 新增：網路掛號 (Web Booking) 
-              放在最顯眼的位置 (Grid 之上)，強調「免掃描、免安裝」
+              🟢 網路掛號 (Web Booking) 
              ========================================================= */}
           <div className="mb-6 w-full transform hover:-translate-y-1 transition-transform duration-300">
              <div className="bg-gradient-to-br from-slate-800 to-slate-900 border border-cyan-500/50 rounded-2xl p-6 md:p-8 relative overflow-hidden shadow-[0_0_30px_rgba(34,211,238,0.15)] group">
@@ -132,10 +145,10 @@ export default function BookingPage() {
                       </div>
                       <div>
                          <h3 className="text-2xl font-bold text-white mb-2 flex items-center justify-center md:justify-start gap-3">
-                            網路掛號系統
+                           網路掛號系統
                          </h3>
                          <p className="text-slate-400 text-lg">
-                            直接點擊按鈕，立即進行預約。
+                           直接點擊按鈕，立即進行預約。
                          </p>
                       </div>
                    </div>

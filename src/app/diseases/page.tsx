@@ -4,6 +4,11 @@ import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { diseaseCategories } from '@/data/diseases'
 
+// 定義標準網域與路徑
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+const PAGE_PATH = '/diseases'
+const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
+
 // ==========================================
 // 1. Meta 設定
 // ==========================================
@@ -11,10 +16,15 @@ export const metadata: Metadata = {
   title: '新竹骨科/復健科推薦 - 椎間盤突出/五十肩/關節炎/痠麻痛治療 | 宸新復健科',
   description: '新竹復健科權威，專治椎間盤突出、坐骨神經痛、肩頸痠痛與五十肩。提供退化性關節炎與網球肘的精準診斷，解決您的痠麻痛困擾，是您值得信賴的新竹骨科診所。',
   keywords: ['新竹骨科', '新竹復健科', '椎間盤突出', '背痛', '肩頸痠痛', '五十肩', '退化性關節炎', '網球肘', '痠麻痛', '復健診所'],
+  // ★★★ 加入 Canonical Tag ★★★
+  alternates: {
+    canonical: CANONICAL_URL,
+  },
   openGraph: {
     title: '新竹骨科/復健科推薦 - 各部位疼痛治療導覽',
     description: '肩膀痛、膝蓋痛、腰痛？點擊查看宸新復健科針對各部位疼痛的詳細衛教與治療建議。',
     type: 'website',
+    url: CANONICAL_URL, // 同步更新 OG URL
   }
 }
 
@@ -27,20 +37,21 @@ const diseasesSchema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: '首頁', item: 'https://www.dryichen.com.tw' },
-        { '@type': 'ListItem', position: 2, name: '疾病衛教', item: 'https://www.dryichen.com.tw/diseases' },
+        { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
+        { '@type': 'ListItem', position: 2, name: '疾病衛教', item: CANONICAL_URL },
       ],
     },
     {
       '@type': 'MedicalWebPage', 
-      '@id': 'https://www.dryichen.com.tw/diseases/#webpage',
+      '@id': `${CANONICAL_URL}#webpage`,
       'name': '骨科復健疾病衛教導覽',
       'description': '提供脊椎、關節、肌肉疼痛等相關疾病的詳細症狀說明與治療建議。',
+      'url': CANONICAL_URL, // 明確指定 URL
       'lastReviewed': new Date().toISOString().split('T')[0],
       'reviewedBy': {
         '@type': 'Physician',
         'name': '林羿辰 醫師',
-        'url': 'https://www.dryichen.com.tw/about/doctors'
+        'url': `${SITE_URL}/about/doctors`
       },
       'specialty': [
         { '@type': 'MedicalSpecialty', 'name': 'Orthopedics' },
@@ -51,7 +62,7 @@ const diseasesSchema = {
         'itemListElement': diseaseCategories.map((cat, index) => ({
             '@type': 'ListItem',
             'position': index + 1,
-            'url': `https://www.dryichen.com.tw/diseases/${cat.slug}`,
+            'url': `${SITE_URL}/diseases/${cat.slug}`,
             'name': cat.title
         }))
       }

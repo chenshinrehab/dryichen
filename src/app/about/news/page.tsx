@@ -5,31 +5,46 @@ import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { newsList } from '@/data/news'
 
-// 1. Meta 設定
+// 定義標準網域與路徑
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+const PAGE_PATH = '/about/news'
+const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
+
+// ==========================================
+// 1. Meta 設定 (加入 Canonical)
+// ==========================================
 export const metadata: Metadata = { 
   title: '最新內容 - 門診公告與復健衛教 | 新竹宸新復健科',
   description: '提供新竹宸新復健科最新的門診異動公告、休診通知，以及專業醫師撰寫的骨科復健、PRP注射、兒童骨齡等衛教文章。',
-  keywords: ['新竹復健科公告', '門診時間', '復健衛教', '醫療新知']
+  keywords: ['新竹復健科公告', '門診時間', '復健衛教', '醫療新知'],
+  // ★★★ 加入 Canonical Tag ★★★
+  alternates: {
+    canonical: CANONICAL_URL,
+  },
+  openGraph: {
+    title: '最新內容 - 門診公告與復健衛教 | 宸新復健科',
+    description: '最新門診異動、休診公告與復健醫學衛教文章。',
+    url: CANONICAL_URL,
+    type: 'website',
+  }
 }
 
 export default function NewsListPage() {
 
-  const siteUrl = 'https://www.dryichen.com.tw'
-  const currentUrl = `${siteUrl}/about/news`
+  const currentUrl = CANONICAL_URL
 
   // 2. Schema: 麵包屑
   const jsonLdBreadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
-      { '@type': 'ListItem', position: 2, name: '關於我們', item: `${siteUrl}/about` },
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: '關於我們', item: `${SITE_URL}/about` },
       { '@type': 'ListItem', position: 3, name: '最新消息', item: currentUrl },
     ],
   }
   
-  // 3. Schema: Blog (取代原本的 MedicalWebPage + ItemList)
-  // 這告訴 Google 這是一個文章發布的動態牆
+  // 3. Schema: Blog
   const jsonLdBlog = {
     '@context': 'https://schema.org',
     '@type': 'Blog',
@@ -40,9 +55,9 @@ export default function NewsListPage() {
     author: {
         '@type': 'MedicalOrganization',
         name: '新竹宸新復健科',
-        url: siteUrl
+        url: SITE_URL
     },
-    // ✨ blogPost: 告訴 Google 這裡面包含哪些文章 (BlogPosting)
+    // ✨ blogPost: 告訴 Google 這裡面包含哪些文章
     blogPost: newsList.map((item) => ({
         '@type': 'BlogPosting',
         headline: item.title,
@@ -62,10 +77,6 @@ export default function NewsListPage() {
       <JsonLd data={jsonLdBreadcrumb} />
       <JsonLd data={jsonLdBlog} />
 
-      {/* ✨ 樣式保留您的設定：
-          pt-0 (手機版上方無內距)
-          md:pt-4 (電腦版上方內距減半)
-      */}
       <div className="min-h-screen bg-slate-900 text-slate-300 pt-0 pb-12 md:pt-0 md:pb-16 fade-in">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
            
@@ -142,15 +153,15 @@ export default function NewsListPage() {
                       </div>
                       
                       <h2 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors leading-tight">
-                         {item.title}
+                          {item.title}
                       </h2>
                       
                       <p className="text-slate-400 line-clamp-2 mb-4 leading-relaxed">
-                         {item.summary}
+                          {item.summary}
                       </p>
                       
                       <div className="mt-auto text-cyan-500 text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center">
-                         閱讀更多 <i className="fa-solid fa-arrow-right ml-2"></i>
+                          閱讀更多 <i className="fa-solid fa-arrow-right ml-2"></i>
                       </div>
                   </div>
                 </div>

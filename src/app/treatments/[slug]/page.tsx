@@ -1,3 +1,4 @@
+// src/app/treatments/[slug]/page.tsx
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import Link from 'next/link'
@@ -18,19 +19,28 @@ export async function generateStaticParams() {
   return getAllTreatmentSlugs()
 }
 
-// 1. 動態 Meta 設定 (SEO 核心)
+// 1. 動態 Meta 設定 (SEO 核心 - 已修正)
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const treatment = getTreatmentBySlug(params.slug)
   if (!treatment) return { title: '項目不存在' }
+
+  // ★★★ 定義標準網址：確保 Google 收錄的是乾淨的網址 ★★★
+  const canonicalUrl = `${SITE_URL}/treatments/${params.slug}`
 
   return {
     title: treatment.seoTitle || `${treatment.title} - 新竹宸新復健科`,
     description: treatment.seoDescription || treatment.description,
     keywords: treatment.keywords || ['新竹復健', '骨科', treatment.title],
+    
+    // ★★★ 加入 Canonical Tag ★★★
+    alternates: {
+        canonical: canonicalUrl,
+    },
+
     openGraph: {
       title: treatment.title,
       description: treatment.seoDescription || treatment.description,
-      url: `${SITE_URL}/treatments/${params.slug}`,
+      url: canonicalUrl, // OpenGraph URL 同步更新
       type: 'article',
       images: treatment.images && treatment.images.length > 0 ? [treatment.images[0].src] : [],
     }
@@ -41,6 +51,7 @@ export default function TreatmentDetailPage({ params }: PageProps) {
   const treatment = getTreatmentBySlug(params.slug)
   if (!treatment) notFound()
 
+  // 確保頁面內使用的網址與 Canonical 一致
   const currentPageUrl = `${SITE_URL}/treatments/${params.slug}`
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&bgcolor=ffffff&data=${encodeURIComponent(currentPageUrl)}`
 
@@ -55,23 +66,22 @@ export default function TreatmentDetailPage({ params }: PageProps) {
     ],
   }
 
-  // 3. Schema: 醫療程序 (優化版：加入專科、圖片、更精確的類別)
+  // 3. Schema: 醫療程序 (TherapeuticProcedure)
   const jsonLdProcedure = {
     '@context': 'https://schema.org',
-    '@type': 'TherapeuticProcedure', // 更精確，指「治療性處置」
+    '@type': 'TherapeuticProcedure',
     name: treatment.title,
     description: treatment.seoDescription || treatment.description,
     procedureType: 'Non-surgical',
-    // 加入圖片，增加豐富搜尋結果顯示機會
+    url: currentPageUrl, // 建議明確加入 URL 欄位
     image: treatment.images && treatment.images.length > 0 
       ? treatment.images.map(img => img.src) 
       : undefined,
-    // 標註專科：復健科與骨科
     medicalSpecialty: [
       { '@type': 'MedicalSpecialty', name: 'Physical Medicine and Rehabilitation' },
       { '@type': 'MedicalSpecialty', name: 'Orthopedics' }
     ],
-    bodyLocation: 'Musculoskeletal system', // 肌肉骨骼系統
+    bodyLocation: 'Musculoskeletal system',
     howPerformed: '由專業醫師透過超音波導引或理學檢查評估後執行',
     provider: {
       '@type': 'Physician',
@@ -90,7 +100,7 @@ export default function TreatmentDetailPage({ params }: PageProps) {
     }
   }
 
-  // 4. Schema: FAQ (如果有 Q&A 資料自動產生)
+  // 4. Schema: FAQ
   const jsonLdFAQ = treatment.qaList && treatment.qaList.length > 0 ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -272,13 +282,13 @@ export default function TreatmentDetailPage({ params }: PageProps) {
                           <div className="w-full md:w-[85%] mx-auto">
                                <div className="relative w-full pb-[56.25%] rounded-xl overflow-hidden shadow-2xl border border-slate-700 group">
                                   <iframe 
-                                      src={`https://www.youtube.com/embed/${treatment.youtubeVideoId}`} 
-                                      title={`${treatment.title} 治療介紹影片`}
-                                      className="absolute top-0 left-0 w-full h-full" 
-                                      frameBorder="0" 
-                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                      allowFullScreen
-                                      loading="lazy"
+                                    src={`https://www.youtube.com/embed/${treatment.youtubeVideoId}`} 
+                                    title={`${treatment.title} 治療介紹影片`}
+                                    className="absolute top-0 left-0 w-full h-full" 
+                                    frameBorder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowFullScreen
+                                    loading="lazy"
                                   ></iframe>
                                </div>
                           </div>
@@ -294,7 +304,6 @@ export default function TreatmentDetailPage({ params }: PageProps) {
                              <div className="relative overflow-hidden rounded-xl shadow-xl inline-block w-full md:w-[85%] border border-slate-700 bg-slate-900">
                                <img src={img.src} alt={img.alt} className="w-full h-auto transform group-hover:scale-[1.02] transition-transform duration-700 block" />
                              </div>
-                             {/* 已移除 caption 以避免型別錯誤 */}
                           </div>
                         ))}
                       </div>
@@ -353,8 +362,6 @@ export default function TreatmentDetailPage({ params }: PageProps) {
                   </Link>
                 </div>
               </div>
-
-
 
               </div>
            </div>

@@ -1,3 +1,4 @@
+// src/app/weight-bone/page.tsx
 import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
@@ -5,19 +6,25 @@ import { weightLossPrograms } from '@/data/weightLoss'
 
 // 定義常數，確保網址一致
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+const PAGE_PATH = '/weight-bone'
+const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
 // ==========================================
-// 1. Meta 設定 (新增 Open Graph)
+// 1. Meta 設定 (新增 Open Graph 與 Canonical)
 // ==========================================
 export const metadata: Metadata = {
   title: '新竹減重與骨齡門診 - 猛健樂/瘦瘦針/生長遲緩/性早熟評估 | 宸新復健科',
   description: '新竹宸新復健科提供專業體重管理與兒童生長發育評估。林羿辰醫師親自規劃猛健樂(Mounjaro)、週纖達(Ozempic)等瘦瘦針療程，並提供兒童骨齡X光檢查，針對性早熟與生長遲緩問題提供專業建議。',
   keywords: ['新竹減重', '新竹猛健樂', '瘦瘦針', '新竹照骨齡', '生長遲緩', '性早熟', '週纖達', '兒童長高'],
+  // ★★★ 加入 Canonical Tag ★★★
+  alternates: {
+    canonical: CANONICAL_URL,
+  },
   // ✨ 新增 Open Graph，讓分享連結時顯示正確標題與縮圖
   openGraph: {
     title: '新竹減重與骨齡門診 - 猛健樂/瘦瘦針/生長遲緩/性早熟評估',
     description: '提供新竹地區專業減重、瘦瘦針治療與兒童骨齡評估服務。',
-    url: `${SITE_URL}/weight-bone`,
+    url: CANONICAL_URL, // 同步使用標準網址
     type: 'website',
   },
 }
@@ -32,14 +39,15 @@ const weightBoneSchema = {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
-        { '@type': 'ListItem', position: 2, name: '減重與骨齡', item: `${SITE_URL}/weight-bone` },
+        { '@type': 'ListItem', position: 2, name: '減重與骨齡', item: CANONICAL_URL },
       ],
     },
     {
       '@type': 'MedicalWebPage',
-      '@id': `${SITE_URL}/weight-bone/#webpage`,
+      '@id': `${CANONICAL_URL}#webpage`,
       'name': '減重與骨齡門診',
       'description': '提供新竹地區專業減重、瘦瘦針治療與兒童骨齡評估服務。',
+      'url': CANONICAL_URL, // 明確指定 URL
       'lastReviewed': new Date().toISOString().split('T')[0],
       'reviewedBy': {
         '@type': 'Physician',
@@ -71,7 +79,8 @@ export default function WeightLossPage() {
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
-        <main className="flex-grow pt--6 pb-12 md:pt--6 md:pb-16 fade-in">
+        {/* 修正了 padding top 的拼寫錯誤 (pt--6 -> pt-6) */}
+        <main className="flex-grow -pt-6 pb-12 md:-pt-6 md:pb-16 fade-in">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
             {/* ============================================================

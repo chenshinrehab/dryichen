@@ -8,10 +8,13 @@ import { newsList } from '@/data/news'
 // 1. Meta 設定
 // ==========================================
 
-const siteUrl = 'https://www.dryichen.com.tw'; 
+// 定義標準網域 (請確保沒有結尾斜線，這樣後續拼接比較方便)
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  // 設定 Base URL，解決 OG Image 找不到域名的問題
+  metadataBase: new URL(SITE_URL),
+  
   title: {
     default: '林羿辰醫師 - 運動教練醫師 | 新竹宸新復健科診所院長',
     template: '%s | 林羿辰醫師'
@@ -22,8 +25,9 @@ export const metadata: Metadata = {
     '新竹復健科', '宸新復健科', 'PRP注射', '震波治療', '兒童骨齡', '減重門診',
     '新竹科學園區', '關埔重劃區'
   ],
+  // ★★★ 修正重點：Canonical 必須是絕對路徑 ★★★
   alternates: {
-    canonical: '/',
+    canonical: SITE_URL, // 這代表 https://www.dryichen.com.tw
   },
   robots: {
     index: true,
@@ -39,12 +43,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: '林羿辰醫師 - 運動教練醫師 | 專業復健治療',
     description: '台大醫師林羿辰，結合醫學與運動訓練，提供最專業的骨科復健與疼痛治療。',
-    type: 'profile',
-    url: '/',
+    type: 'profile', // 對於個人首頁，profile 是合適的
+    url: SITE_URL,   // 這裡也同步使用標準網址
     siteName: '林羿辰醫師',
     images: [
       {
-        url: '/images/main/a.jpg',
+        url: '/images/main/a.jpg', // 有了 metadataBase，這裡寫相對路徑沒問題
         width: 1200,
         height: 630,
         alt: '林羿辰醫師',
@@ -60,13 +64,13 @@ export const metadata: Metadata = {
 const medicalClinicSchema = {
   '@context': 'https://schema.org',
   '@type': 'MedicalClinic',
-  '@id': `${siteUrl}/#clinic`,
+  '@id': `${SITE_URL}/#clinic`,
   name: '宸新復健科診所',
   alternateName: '林羿辰醫師診所',
   description: '由台大醫師林羿辰院長親自看診，提供PRP注射、震波治療、一對一運動治療等服務。',
-  image: `${siteUrl}/images/main/b.jpg`,
-  logo: `${siteUrl}/images/logo.png`,
-  url: siteUrl,
+  image: `${SITE_URL}/images/main/b.jpg`,
+  logo: `${SITE_URL}/images/logo.png`,
+  url: SITE_URL, // 確保這裡是絕對路徑
   telephone: '+886-3-564-7999',
   priceRange: '$$', 
   address: {
@@ -98,7 +102,7 @@ const medicalClinicSchema = {
     '@type': 'Physician',
     name: '林羿辰',
     jobTitle: '院長',
-    image: `${siteUrl}/images/main/a.jpg`,
+    image: `${SITE_URL}/images/main/a.jpg`,
     alumniOf: { '@type': 'EducationalOrganization', name: '國立台灣大學醫學系' },
     medicalSpecialty: 'RehabilitationPhysician'
   },
@@ -111,7 +115,7 @@ const medicalClinicSchema = {
   // 🟢 Schema 加入評價數據 (必須與頁面顯示一致)
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '4.6',
+    ratingValue: '4.6', // 建議定期檢查 Google Maps 真實評分並更新
     reviewCount: '706',
     bestRating: '5',
     worstRating: '1'
@@ -169,45 +173,37 @@ export default function Home() {
         <main className="flex-grow relative pt-0">
           
          {/* 最新內容速報欄位 */}
-<section className="container mx-auto px-4 mb-4 md:mb-0 relative z-20 -mt-6 md:-mt-10">
-    {/* 修改處說明：
-       1. 移除了 'flex-col' (這原本讓手機版變成直排)。
-       2. 移除了 'items-start'，直接使用 'items-center' (讓標籤和文字垂直置中)。
-       3. gap-2 改為 gap-3 讓手機版間距稍微舒服一點。
-    */}
-    <div className="max-w-5xl mx-auto bg-slate-800/80 backdrop-blur border-l-4 border-pink-500 rounded-r-lg shadow-lg p-3 flex items-center gap-3 md:gap-4 hover:bg-slate-800 transition-colors">
-        
-        {/* 標籤區塊：保持 shrink-0 防止被壓縮 */}
-        <div className="bg-pink-500/10 text-pink-400 px-3 py-1 rounded-full text-sm font-bold flex items-center shrink-0 border border-pink-500/20 z-10">
-            <i className="fa-solid fa-bell mr-2 animate-swing"></i>
-            最新消息
-        </div>
+        <section className="container mx-auto px-4 mb-4 md:mb-0 relative z-20 -mt-6 md:-mt-10">
+            <div className="max-w-5xl mx-auto bg-slate-800/80 backdrop-blur border-l-4 border-pink-500 rounded-r-lg shadow-lg p-3 flex items-center gap-3 md:gap-4 hover:bg-slate-800 transition-colors">
+                
+                {/* 標籤區塊 */}
+                <div className="bg-pink-500/10 text-pink-400 px-3 py-1 rounded-full text-sm font-bold flex items-center shrink-0 border border-pink-500/20 z-10">
+                    <i className="fa-solid fa-bell mr-2 animate-swing"></i>
+                    最新消息
+                </div>
 
-        {/* 跑馬燈區塊：
-           1. 加入 'min-w-0'：這在 flex 佈局中非常重要，能防止長文字把手機版面撐開。
-           2. 保持 flex-grow 或 flex-1 讓它佔據剩餘空間。
-        */}
-        <div className="flex-grow min-w-0 overflow-hidden relative h-6 mask-linear-fade">
-            <div className="animate-marquee absolute top-0 left-0 flex gap-12 items-center h-full">
-                {displayNews.map((news, index) => (
-                    <Link 
-                        key={`${news.id}-${index}`} 
-                        href={`/about/news/${news.id}`} 
-                        className="text-slate-200 hover:text-cyan-400 transition-colors flex items-center whitespace-nowrap text-sm md:text-base font-medium"
-                    >
-                        <span className="text-yellow-400 font-bold mr-2 text-xs border border-yellow-400/30 px-1 rounded">NEW</span>
-                        <span className="text-slate-400 mr-2 text-sm">[{news.date}]</span>
-                        {news.title}
-                    </Link>
-                ))}
+                {/* 跑馬燈區塊 */}
+                <div className="flex-grow min-w-0 overflow-hidden relative h-6 mask-linear-fade">
+                    <div className="animate-marquee absolute top-0 left-0 flex gap-12 items-center h-full">
+                        {displayNews.map((news, index) => (
+                            <Link 
+                                key={`${news.id}-${index}`} 
+                                href={`/about/news/${news.id}`} 
+                                className="text-slate-200 hover:text-cyan-400 transition-colors flex items-center whitespace-nowrap text-sm md:text-base font-medium"
+                            >
+                                <span className="text-yellow-400 font-bold mr-2 text-xs border border-yellow-400/30 px-1 rounded">NEW</span>
+                                <span className="text-slate-400 mr-2 text-sm">[{news.date}]</span>
+                                {news.title}
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+
+                <Link href="/about/news" className="text-sm text-slate-400 hover:text-white shrink-0 hidden md:flex items-center group z-10 bg-slate-800/50 px-2 rounded">
+                    查看更多 <i className="fa-solid fa-chevron-right text-xs ml-1 group-hover:translate-x-1 transition-transform"></i>
+                </Link>
             </div>
-        </div>
-
-        <Link href="/about/news" className="text-sm text-slate-400 hover:text-white shrink-0 hidden md:flex items-center group z-10 bg-slate-800/50 px-2 rounded">
-            查看更多 <i className="fa-solid fa-chevron-right text-xs ml-1 group-hover:translate-x-1 transition-transform"></i>
-        </Link>
-    </div>
-</section>
+        </section>
 
           {/* Section 1: 醫師介紹 */}
           <section className="container mx-auto px-4 pt-4 pb-8 md:pt-6 md:pb-8 fade-in">
@@ -272,7 +268,7 @@ export default function Home() {
               </div>
           </section>
 
-         {/* Section 2: 診所資訊 */}
+          {/* Section 2: 診所資訊 */}
       <section className="container mx-auto px-4 pb-4">
           <div className="max-w-6xl mx-auto w-full">
             <div className="flex items-center gap-3 mb-8">
@@ -292,7 +288,6 @@ export default function Home() {
                       <div className="w-full h-full relative aspect-[9/16] rounded-xl overflow-hidden border border-slate-600 shadow-xl bg-black">
                          <iframe 
                            className="absolute inset-0 w-full h-full"
-                           // ↓↓↓ 請記得替換為您的 Shorts ID ↓↓↓
                            src="https://www.youtube.com/embed/asqbvbEukOM" 
                            title="診所介紹 Shorts"
                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -301,7 +296,7 @@ export default function Home() {
                       </div>
                   </div>
 
-                  {/* 右側：文字資訊 (使用 justify-between 來拉開垂直間距，填滿高度) */}
+                  {/* 右側：文字資訊 */}
                   <div className="lg:w-8/12 flex flex-col justify-between h-auto py-1">
                       
                       {/* 上半部：標題、評價與設施標籤 */}
@@ -330,7 +325,7 @@ export default function Home() {
 
                              <div className="hidden sm:block w-px h-6 bg-slate-600"></div>
 
-                             {/* 移動過來的標籤：設施亮點 */}
+                             {/* 設施亮點 */}
                              <div className="flex flex-wrap gap-3">
                                 <span className="text-sm bg-cyan-900/40 border border-cyan-500/30 text-cyan-100 px-3 py-1.5 rounded-md flex items-center">
                                     <i className="fa-solid fa-square-parking mr-2 text-yellow-400"></i>專屬停車位
@@ -342,7 +337,7 @@ export default function Home() {
                           </div>
                       </div>
 
-                      {/* 中間部：特色項目 (增加垂直間距讓版面更舒展) */}
+                      {/* 中間部：特色項目 */}
                       <div className="grid md:grid-cols-2 gap-8 my-6">
                         <div className="flex flex-col justify-center">
                            <h4 className="text-xl font-bold text-cyan-400 mb-5 font-sans border-l-4 border-cyan-500 pl-3">診所特色項目</h4>
@@ -364,7 +359,7 @@ export default function Home() {
                         </div>
                       </div>
 
-                      {/* 下半部：聯絡資訊 (置底) */}
+                      {/* 下半部：聯絡資訊 */}
                       <div className="bg-slate-900/40 p-6 rounded-lg border border-slate-700/50 hover:border-slate-600 transition-colors mt-auto">
                          <div className="flex flex-col gap-5">
                             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
