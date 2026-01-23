@@ -422,13 +422,13 @@ export const diseaseCategories: DiseaseCategory[] = [
  {
         id: 'upper-crossed-syndrome',
         slug: 'upper-crossed-syndrome',
-        lastModified: '2026-01-22',
+        lastModified: '2026-01-23',
         title: '上交叉症候群 (烏龜頸/圓肩)',
         description: '脖子後面長出「富貴包」？長期頭痛、肩膀僵硬？這是典型的上交叉症候群！深入解析肌肉失衡機制，提供高能量雷射放鬆與徒手矯正策略，搭配居家運動找回挺拔體態。',
         contentHtml: `
           <p style="color: #e2e8f0 !important;">走在路上，您是否注意到很多人都有這樣的體態：<strong>頭部不自覺前傾</strong>（像是烏龜探頭）、<strong>肩膀向內拱起</strong>（圓肩）、背部駝背，甚至頸椎後方凸起了一塊肉（俗稱富貴包）？</p>
                  <br>
-          <p style="color: #e2e8f0 !important;">這不只是外觀不好看的問題，這是現代人最常見的文明病——<strong>「上交叉症候群」</strong>。這種長期的肌肉失衡，是造成慢性頭痛、頸椎骨刺、甚至手臂麻木的元兇，常發生在長期用電腦的竹科工程師或是練胸肌多於背部肌肉的健身族(<strong>建議訓練重量胸:背為1:1.2，訓練量胸:背為1:2</strong>)。在宸新復健科，我們不只治療疼痛，更透過<strong>姿態評估</strong>與<strong>肌力平衡訓練</strong>，從力學結構上「把身體拉回正軌」。</p>
+          <p style="color: #e2e8f0 !important;">這不只是外觀不好看的問題，這是現代人最常見的文明病——<strong>「上交叉症候群」</strong>。這種長期的肌肉失衡，是造成慢性頭痛、頸椎骨刺、甚至手臂麻木的元兇，常發生在長期用電腦的竹科工程師或是練胸肌多於背部肌肉的健身族(<strong>建議訓練重量胸:背為1 : 1.2，訓練量胸:背為1 : 2</strong>)。在宸新復健科，我們不只治療疼痛，更透過<strong>姿態評估</strong>與<strong>肌力平衡訓練</strong>，從力學結構上「把身體拉回正軌」。</p>
      
    
       
@@ -467,6 +467,13 @@ export const diseaseCategories: DiseaseCategory[] = [
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
+
+          <h3 style="color: #f8fafc !important;">🔍 X光下的發現：頸椎曲度消失及退化</h3>
+          <p style="color: #e2e8f0 !important;">上交叉症候群的患者，X光可以發現<strong>倒C的曲度</strong> 不見了，變成I型的脊椎，漸漸地開始長出骨刺或椎間盤突出。</p>
+      <p><img src="/images/diseases/spine-hip/upper/g.jpg" alt="上交叉症候群的x光"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+
           <h3 style="color: #f8fafc !important;">🔍 疼痛特徵：您的痛是哪一種？</h3>
           <p style="color: #e2e8f0 !important;">上交叉症候群的患者，通常會有以下幾種典型的疼痛表現：</p>
           
@@ -656,6 +663,239 @@ export const diseaseCategories: DiseaseCategory[] = [
         images: [
           { src: '/images/diseases/spine-hip/upper/a.jpg', alt: '上交叉症候群'
           }
+        ]
+      },
+
+      {
+        id: 'lower-crossed-syndrome',
+        slug: 'lower-crossed-syndrome',
+        lastModified: '2026-01-23',
+        title: '下交叉症候群 (骨盆前傾)',
+        description: '明明很瘦卻有小腹？久坐腰部總是痠痛？你可能患有「下交叉症候群」導致的骨盆前傾！宸新復健科透過院內X光骨骼排列分析，結合徒手治療與核心懸吊訓練，從根源導正體態，告別慢性腰痛。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否也有這樣的困擾：明明體重標準，甚至四肢纖細，但<strong>小腹總是特別凸出</strong>？久坐辦公室後，站起來時<strong>腰椎連著屁股上方一陣痠軟無力</strong>？睡覺平躺時，腰部卻懸空無法貼平床面，怎麼躺都不舒服？</p>
+                <br>
+          <p style="color: #e2e8f0 !important;">這些現象，很可能不是因為您「胖」，而是典型的體態失衡——<strong>「下交叉症候群」</strong>，也就是俗稱的嚴重的<strong>骨盆前傾</strong>。這不只是外觀問題，更是許多慢性腰痛、膝蓋疼痛的根源。在宸新復健科，我們不只緩解疼痛，更利用<strong>院內 X 光機</strong>科學化分析骨盆角度，並結合專業物理治療師團隊與<strong>紅繩懸吊系統與器械皮拉提斯</strong>，喚醒沉睡的核心肌群，從「結構」與「功能」雙管齊下，找回身體正確的排列。</p>
+      
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 什麼是下交叉症候群？身體裡的「拔河比賽」失控了
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">想像您的骨盆是一個水桶，正常情況下它應該保持相對水平。但當身體前後的肌肉力量失衡，就像一場失控的拔河比賽，導致「水桶」向前傾倒（骨盆前傾），腰椎過度前凸。這種對角線的肌肉失衡模式，我們稱之為下交叉症候群：</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #ef4444; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">強</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">過度緊繃/縮短的肌群 (需要放鬆)：</strong> 
+                          <br>1. <strong>髖屈肌群 (髂腰肌)：</strong> 長時間久坐導致大腿前側與腹股溝深處肌肉縮短。
+                          <br>2. <strong>下背伸肌群 (豎脊肌)：</strong> 為了平衡前傾的骨盆，腰部肌肉被迫持續緊繃收縮。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #3b82f6; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">弱</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">無力/被拉長的肌群 (需要訓練)：</strong> 
+                          <br>1. <strong>腹部核心肌群：</strong> 腹肌無力拉不住骨盆，導致內臟往前推，形成「假凸肚」。
+                          <br>2. <strong>臀部肌群 (臀大肌/臀中肌)：</strong> 久坐加上被長期拉長，導致臀肌失憶，無法發揮穩定骨盆與髖關節的作用。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+         <p><img src="/images/diseases/spine-hip/lower/b.jpg" alt="下交叉症候群成因"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+          
+          <h3 style="color: #f8fafc !important;">🔍 不只是腰痛！下交叉症候群的連鎖反應</h3>
+          <p style="color: #e2e8f0 !important;">骨盆是連接上半身與下半身的樞紐，一旦歪斜，影響是全身性的：</p>
+          <ul style="color: #e2e8f0 !important; line-height: 1.6;">
+              <li><strong>慢性下背痛：</strong> 腰椎長期處於過度伸展擠壓的狀態，容易引發小面關節發炎、椎間盤突出風險增加。</li>
+              <li><strong>外觀體態改變：</strong> 明顯的「翹臀」假象（實際上是骨盆前傾）、小腹凸出、肋骨外翻。</li>
+              <li><strong>膝蓋疼痛與退化：</strong> 骨盆前傾常伴隨股骨內轉（膝蓋內扣），增加膝關節內側壓力。</li>
+              <li><strong>大腿後側緊繃拉傷：</strong> 臀肌無力時，大腿後側肌群（膕旁肌）需代償出力，長期處於被拉長又過勞的狀態，容易拉傷。</li>
+              <li><strong>呼吸模式異常：</strong> 核心與肋骨位置改變，影響橫膈膜功能，導致呼吸短淺。</li>
+          </ul>
+                  <p><img src="/images/diseases/spine-hip/lower/c.jpg" alt="下交叉症候群的連鎖反應"></p>
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+          
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新全方位治療策略：重塑身體力線</h3>
+          <p style="color: #e2e8f0 !important;">面對下交叉症候群，單純的按摩放鬆只能治標。宸新復健科採取「評估-放鬆-啟動-整合」的四步驟根治方案：</p>
+          
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 科學化影像診斷與功能評估</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                           <li><strong>物理治療師觸診與<a href="/treatments/manual" class="text-cyan-400 hover:underline">動作測試</a>：</strong> 評估髂腰肌緊繃程度（Thomas Test）、臀肌啟動模式是否異常，找出代償的元兇。</li>
+                  </ul>
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 精準徒手治療：釋放緊繃枷鎖</h4> 
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  在訓練無力肌肉前，必須先鬆開緊繃的拮抗肌。
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong><a href="/treatments/manual" class="text-cyan-400 hover:underline">專業徒手治療</a>：</strong> 針對深層緊繃的髂腰肌、腰方肌進行筋膜釋放與關節鬆動術，恢復肌肉彈性與關節活動度。</li>
+                  </ul>
+              </p>
+          </div>
+          
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 核心與臀肌喚醒：重建身體地基</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  這是最關鍵的一步！治療師手把手指導，確保您「用對肌肉」發力。
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>臀肌失憶症治療：</strong> 重新建立大腦與臀肌的連結，學習在走路、站立時正確使用臀部支撐。</li>
+                        <li><strong><a href="/about/clinic/redcord" class="text-cyan-400 hover:underline">紅繩懸吊系統 (Redcord)</a>：</strong> 利用不穩定的懸吊繩索，強迫身體深層核心肌群參與穩定，這是一般地面運動難以達到的訓練深度，對於矯正骨盆位置效果顯著。</li>
+                       <li><strong><a href="/about/clinic/pilates-reformer" class="text-cyan-400 hover:underline">器械皮拉提斯(Pilates)</a>：</strong> 本院引進專業的皮拉提斯核心床 (Reformer)，結合復健醫學原理，由物理治療師親自指導。利用彈簧阻力輔助，能更安全、精準地訓練核心肌群、延展脊椎並增加關節活動度。</li>
+                    
+                  </ul>
+                </p>               
+           </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+     <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：逆轉「下交叉」的 8 招黃金運動</h3>
+<p style="color: #e2e8f0 !important;">下交叉症候群（骨盆前傾）的修正原則是：<strong>先放鬆緊繃的肌肉（髖屈肌、下背），再強化無力的肌肉（腹部核心、臀肌）</strong>。請務必依照順序進行：</p>
+
+<h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 1. 四大伸展：釋放骨盆壓力</h4>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">1. 跪姿髖屈肌伸展</h4>
+    <p style="color: #e2e8f0 !important;">
+        <strong>目標：</strong> 放鬆最緊繃的髂腰肌，改善骨盆前傾的主因。
+        <br>
+        1. 採單腳跪姿（弓箭步），後腳膝蓋著地（可墊毛巾）。<br>
+        2. 保持上半身挺直，重心緩慢前移，直到感覺後腳鼠蹊部有拉扯感。<br>
+        3. 收緊屁股（夾臀）可以增加伸展效果。維持 30 秒，換邊，重複 3 次。<br>
+        <strong>注意：</strong> 腰椎不要過度拱起，重點在髖部前推。
+    </p>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">2. 嬰兒式</h4>
+    <p style="color: #e2e8f0 !important;">
+        <strong>目標：</strong> 溫和延展緊繃的下背豎脊肌。
+        <br>
+        1. 採跪姿，雙腳大拇指併攏，膝蓋微開。<br>
+        2. 臀部坐向腳跟，上半身往前趴下，雙手盡量向前延伸。<br>
+        3. 感受下背部肌肉被拉長放鬆。維持 30~60 秒，重複 3 次。<br>
+        <strong>注意：</strong> 保持深呼吸，讓肋骨後側擴張。
+    </p>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">3. 貓式拱背</h4>
+    <p style="color: #e2e8f0 !important;">
+        <strong>目標：</strong> 增加脊椎活動度，釋放腰椎壓力。
+        <br>
+        1. 四足跪姿，手腕在肩膀正下方，膝蓋在髖部正下方。<br>
+        2. 吐氣時，肚臍內收，將背部拱起像生氣的貓，視線看向肚臍。<br>
+        3. 吸氣時回到中間位置（下交叉患者避免過度做塌腰的牛式，專注在拱背即可）。<br>
+        <strong>注意：</strong> 動作要緩慢，專注於脊椎一節一節的活動。
+    </p>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">4. 站姿股四頭肌伸展</h4>
+    <p style="color: #e2e8f0 !important;">
+        <strong>目標：</strong> 放鬆大腿前側，減少向下拉扯骨盆的力量。
+        <br>
+        1. 採站姿（可扶牆保持平衡）。<br>
+        2. 一手抓住同側腳踝，將腳跟拉向臀部。<br>
+        3. 保持兩膝蓋併攏，骨盆微後傾（尾骨捲向地板）。維持 30 秒，換邊。<br>
+        <strong>注意：</strong> 不要讓大腿向外打開，膝蓋要朝向地板。
+    </p>
+</div>
+    <p><img src="/images/diseases/spine-hip/lower/d.jpg" alt="下交叉症候群的伸展動作"></p>
+<h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 2. 四大肌力：建立核心護盾</h4>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">1. 死蟲式</h4>
+    <p style="color: #e2e8f0 !important;">
+        <strong>目標：</strong> 強化深層核心，學習在四肢活動時穩定腰椎。
+        <br>
+        1. 平躺，雙手舉向天花板，雙腳屈膝舉起呈 90 度（像翻倒的蟲）。<br>
+        2. 此時腰部要平貼地板（不能有縫隙）。<br>
+        3. 吸氣，對側手腳（如右手左腳）同時緩慢下放，但不碰地；吐氣收回。<br>
+        4. 動作過程中腰部必須全程緊貼地面。左右交替做 10~12 下，3 組。<br>
+        <strong>注意：</strong> 如果腰部拱起，請縮小動作幅度。
+    </p>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">2. 橋式 </h4>
+    <p style="color: #e2e8f0 !important;">
+        <strong>目標：</strong> 喚醒並強化無力的臀大肌，改善「睡著的屁股」。
+        <br>
+        1. 平躺，雙腳屈膝踩地，寬度與骨盆同寬。<br>
+        2. 腳跟用力踩地，將臀部抬起，直到肩膀、髖部、膝蓋呈一直線。<br>
+        3. 頂峰停留 2 秒，用力夾緊臀部，再緩慢放下。<br>
+        4. 重複 15 次，做 3 組。<br>
+        <strong>注意：</strong> 是用屁股的力量推，而不是用腰頂（腰不應痠痛）。
+    </p>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">3. 棒式 </h4>
+    <p style="color: #e2e8f0 !important;">
+        <strong>目標：</strong> 建立抗伸展的核心力量，防止骨盆前傾。
+        <br>
+        1. 雙肘撐地，位於肩膀正下方，雙腳伸直併攏。<br>
+        2. 收緊肚子、夾緊屁股、大腿用力，身體呈一直線。<br>
+        3. 想像肚臍要吸向脊椎。維持 30~60 秒，重複 3 次。<br>
+        <strong>注意：</strong> 絕對不能塌腰，如果腰痠請先膝蓋著地降低難度。
+    </p>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">4. 鳥狗式 </h4>
+    <p style="color: #e2e8f0 !important;">
+        <strong>目標：</strong> 訓練核心穩定性與背部/臀部的協調控制。
+        <br>
+        1. 四足跪姿預備，背部保持平坦（桌板姿勢）。<br>
+        2. 吸氣，同時伸直對側手腳（如右手左腳），向前後延伸。<br>
+        3. 想像有人拉你的手跟腳，身體不歪斜。停留 2 秒後吐氣收回。<br>
+        4. 左右交替做 10~12 下，3 組。<br>
+        <strong>注意：</strong> 保持骨盆水平，不要翻轉身體，背上像放了一杯水不能灑。
+    </p>
+</div>
+            <p><img src="/images/diseases/spine-hip/lower/e.jpg" alt="下交叉症候群的肌力訓練動作"></p>
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 別讓錯誤體態偷走您的健康</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">下交叉症候群是現代人的文明病，它不只影響外觀，更是身體發出的求救訊號。在宸新復健科，我們透過專業的醫師與物理治療團隊，協助您打破肌肉失衡的惡性循環，重建穩定的核心與骨盆，找回無痛且挺拔的自信體態！</p>
+              <p style="font-weight: bold; color: #059669 !important;">懷疑自己骨盆前傾？立即預約專業體態評估！</p>
+          </div>
+        `,
+        symptoms: [
+          '久坐後腰部明顯痠痛挺不直',
+          '平躺時腰部懸空無法貼地',
+          '明明不胖卻有明顯的小腹凸出',
+          '站姿時有明顯的「翹臀」但伴隨腰痠',
+        ],
+        treatments: [
+          '醫師檢查與治療師體態評估',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">髂腰肌深層筋膜放鬆與客製化居家運動</a>🔍️',
+          '<a href="/about/clinic/redcord" class="text-cyan-400 hover:underline">紅繩懸吊系統 (Redcord)</a>🔍️',
+          '<a href="/about/clinic/pilates-reformer" class="text-cyan-400 hover:underline">器械皮拉提斯(Pilates)</a>🔍️'
+
+        ],
+        seoKeywords: [
+          '下交叉症候群',
+          '骨盆前傾',
+          '腰痛',
+          '小腹凸出',
+          '核心肌群無力',
+          '髂腰肌緊繃',
+          '物理治療',
+          '體態矯正',
+          'X光檢查',
+          '臀肌失憶症'
+        ],
+        seoDescription: '下交叉症候群(骨盆前傾)是久坐族腰痛與小腹凸出的主因。宸新復健科結合院內X光分析、徒手治療放鬆緊繃髂腰肌，並運用紅繩懸吊系統強化核心與臀肌，從根源矯正體態改善疼痛。',
+        images: [
+          { src: '/images/diseases/spine-hip/lower/a.jpg', alt: '下交叉症候群' }
         ]
       },
 

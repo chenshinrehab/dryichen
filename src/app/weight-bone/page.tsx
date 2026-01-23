@@ -71,7 +71,7 @@ export default function WeightLossPage() {
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
-        <main className="flex-grow pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
+        <main className="flex-grow pt--6 pb-12 md:pt--6 md:pb-16 fade-in">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
             {/* ============================================================
@@ -82,7 +82,7 @@ export default function WeightLossPage() {
                     <i className="fa-solid fa-weight-scale text-xl"></i>
                 </span>
                 <h1 className="text-3xl font-bold font-sans text-white">
-                    減重與骨齡 <span className="text-slate-500 text-lg font-normal ml-2">Weight & Bone</span>
+                    減重與骨齡 <span className="text-slate-500 text-lg font-normal ml-2">Weight</span>
                 </h1>
             </div>
 

@@ -134,16 +134,19 @@ const fullFacilitiesData: FacilityItem[] = [
         </li>
     </ul>
 </div>
+
 <div class="my-8 flex justify-center">
-    <iframe 
-      src="https://www.youtube.com/embed/KVp7HFpl3RY" 
-      title="YouTube video player" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen
-      class="w-full max-w-md aspect-[9/16] rounded-xl shadow-lg border border-slate-700"
-    ></iframe>
-</div>
+<iframe 
+  width="315" 
+  height="560" 
+  src="https://www.youtube.com/embed/KVp7HFpl3RY" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen
+  class="max-w-full rounded-xl shadow-lg border border-slate-700"
+></iframe>
+ </div>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 

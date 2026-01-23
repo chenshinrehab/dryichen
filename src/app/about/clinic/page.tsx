@@ -64,7 +64,7 @@ export default function ClinicPage() {
       {/* UI 樣式保持您原本的設定
           pt-4 pb-12 md:pt-8 md:pb-16 
       */}
-      <div className="min-h-screen bg-slate-900 text-slate-300 pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
+      <div className="min-h-screen bg-slate-900 text-slate-300 pt-0 pb-12 md:pt-0 md:pb-16 fade-in">
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           

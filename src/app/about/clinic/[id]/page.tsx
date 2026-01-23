@@ -59,7 +59,6 @@ export default function FacilityDetailPage({ params }: PageProps) {
     <>
       <JsonLd data={jsonLdDevice} />
 
-      {/* ✨ CSS 樣式：完全比照 Treatment 頁面，移除多餘的 p margin 設定 */}
       <style dangerouslySetInnerHTML={{__html: `
         /* 重點文字 (strong) - 青色 */
         .facility-content strong {
@@ -81,7 +80,7 @@ export default function FacilityDetailPage({ params }: PageProps) {
             border-bottom-style: solid;
         }
 
-        /* 內容標題樣式 (H3) - 比照參考頁面 */
+        /* 內容標題樣式 (H3) */
         .facility-content h3 {
             font-size: 1.5rem; /* text-2xl */
             font-weight: 700;
@@ -92,7 +91,6 @@ export default function FacilityDetailPage({ params }: PageProps) {
             align-items: center;
         }
         
-        /* 標題前的小裝飾 */
         .facility-content h3::before {
             content: '';
             display: inline-block;
@@ -103,7 +101,6 @@ export default function FacilityDetailPage({ params }: PageProps) {
             border-radius: 2px;
         }
         
-        /* 為了保險起見，若資料中有用到 H2，也給予相同樣式 */
         .facility-content h2 {
             font-size: 1.75rem;
             font-weight: 700;
@@ -134,7 +131,6 @@ export default function FacilityDetailPage({ params }: PageProps) {
             border: 1px solid #475569;
         }
 
-        /* 電腦版圖片寬度調整 (85% + 置中) */
         @media (min-width: 768px) {
             .facility-content img {
                 max-width: 85%;
@@ -151,25 +147,14 @@ export default function FacilityDetailPage({ params }: PageProps) {
         .facility-content li {
             margin-bottom: 0.5rem;
         }
-
-        /* 影片樣式 */
-        .facility-content video, .facility-content iframe {
-            max-width: 100%;
-            aspect-ratio: 16 / 9;
-            height: auto;
-            border-radius: 0.75rem;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-            margin: 2rem auto;
-            display: block;
-            border: 1px solid #475569;
-        }
+        /* 註：移除了原本的 video/iframe CSS，改用下方專屬區塊處理，效果較好 */
       `}} />
 
-      <div className="min-h-screen bg-slate-900 text-slate-300 pt-0 pb-12 md:pt-4 md:pb-16 fade-in">
+      <div className="min-h-screen bg-slate-900 text-slate-300 pt-0 pb-12 md:pt-0 md:pb-16 fade-in">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* 返回按鈕 */}
-          <Link href="/about/clinic" className="inline-flex items-center text-cyan-400 mt-4 mb-4 hover:text-cyan-300 transition-colors group">
+          <Link href="/about/clinic" className="inline-flex items-center text-cyan-400 mt-0 mb-4 hover:text-cyan-300 transition-colors group">
               <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i>
               返回設備列表
           </Link>
@@ -198,14 +183,36 @@ export default function FacilityDetailPage({ params }: PageProps) {
              </div>
 
              <div className="p-6 md:p-12">
-                 {/* ✨ 關鍵修正：
-                     這裡加上了 'text-slate-300 leading-relaxed text-lg'
-                     這會讓字體大小與行距直接繼承 Tailwind 的標準設定，
-                     解決了原本自己寫 CSS 導致間距過大的問題。
-                 */}
-                 <div className="facility-content text-slate-300 leading-relaxed text-lg">
+                 
+                 {/* 內文區塊 */}
+                 <div className="facility-content text-slate-300 leading-relaxed text-lg mb-10">
                     <div dangerouslySetInnerHTML={{ __html: item.contentHtml }} />
                  </div>
+
+                 {/* ✨ 新增：YouTube 影片區塊 (參考治療方式格式) */}
+                 {/* 請確保您的 facilitiesData 資料介面中有 youtubeVideoId 欄位 */}
+                 {item.youtubeVideoId && (
+                    <div className="mb-14 text-center">
+                        <h3 className="text-2xl font-bold text-white mb-6 flex items-center justify-center">
+                            <i className="fa-brands fa-youtube text-red-500 mr-3 text-3xl"></i>
+                            設備介紹影片
+                        </h3>
+                        <div className="w-full md:w-[85%] mx-auto">
+                            <div className="relative w-full pb-[56.25%] rounded-xl overflow-hidden shadow-2xl border border-slate-700 group">
+                                <iframe 
+                                    src={`https://www.youtube.com/embed/${item.youtubeVideoId}`} 
+                                    title={`${item.title} 介紹影片`}
+                                    className="absolute top-0 left-0 w-full h-full" 
+                                    frameBorder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowFullScreen
+                                    loading="lazy"
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                 )}
+
              </div>
 
              <div className="bg-slate-900/80 p-8 md:p-12 border-t border-slate-700 text-center relative overflow-hidden">

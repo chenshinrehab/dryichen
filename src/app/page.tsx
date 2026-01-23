@@ -168,39 +168,49 @@ export default function Home() {
         
         <main className="flex-grow relative pt-0">
           
-          {/* 最新內容速報欄位 */}
-          <section className="container mx-auto px-4 mb-4 md:mb-0 relative z-20 mt-0">
-              <div className="max-w-5xl mx-auto bg-slate-800/80 backdrop-blur border-l-4 border-pink-500 rounded-r-lg shadow-lg p-3 md:p-3 flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4 hover:bg-slate-800 transition-colors">
-                <div className="bg-pink-500/10 text-pink-400 px-3 py-1 rounded-full text-sm font-bold flex items-center shrink-0 border border-pink-500/20 z-10">
-                  <i className="fa-solid fa-bell mr-2 animate-swing"></i>
-                  最新消息
-                </div>
+         {/* 最新內容速報欄位 */}
+<section className="container mx-auto px-4 mb-4 md:mb-0 relative z-20 -mt-6 md:-mt-10">
+    {/* 修改處說明：
+       1. 移除了 'flex-col' (這原本讓手機版變成直排)。
+       2. 移除了 'items-start'，直接使用 'items-center' (讓標籤和文字垂直置中)。
+       3. gap-2 改為 gap-3 讓手機版間距稍微舒服一點。
+    */}
+    <div className="max-w-5xl mx-auto bg-slate-800/80 backdrop-blur border-l-4 border-pink-500 rounded-r-lg shadow-lg p-3 flex items-center gap-3 md:gap-4 hover:bg-slate-800 transition-colors">
+        
+        {/* 標籤區塊：保持 shrink-0 防止被壓縮 */}
+        <div className="bg-pink-500/10 text-pink-400 px-3 py-1 rounded-full text-sm font-bold flex items-center shrink-0 border border-pink-500/20 z-10">
+            <i className="fa-solid fa-bell mr-2 animate-swing"></i>
+            最新消息
+        </div>
 
-                <div className="flex-grow overflow-hidden relative h-6 w-full mask-linear-fade">
-                    <div className="animate-marquee absolute top-0 left-0 flex gap-12 items-center h-full">
-                         {displayNews.map((news, index) => (
-                             <Link 
-                                 key={`${news.id}-${index}`} 
-                                 href={`/about/news/${news.id}`} 
-                                 className="text-slate-200 hover:text-cyan-400 transition-colors flex items-center whitespace-nowrap text-sm md:text-base font-medium"
-                             >
-                                 <span className="text-yellow-400 font-bold mr-2 text-xs border border-yellow-400/30 px-1 rounded">NEW</span>
-                                 <span className="text-slate-400 mr-2 text-sm">[{news.date}]</span>
-                                 {news.title}
-                             </Link>
-                         ))}
-                    </div>
-                </div>
+        {/* 跑馬燈區塊：
+           1. 加入 'min-w-0'：這在 flex 佈局中非常重要，能防止長文字把手機版面撐開。
+           2. 保持 flex-grow 或 flex-1 讓它佔據剩餘空間。
+        */}
+        <div className="flex-grow min-w-0 overflow-hidden relative h-6 mask-linear-fade">
+            <div className="animate-marquee absolute top-0 left-0 flex gap-12 items-center h-full">
+                {displayNews.map((news, index) => (
+                    <Link 
+                        key={`${news.id}-${index}`} 
+                        href={`/about/news/${news.id}`} 
+                        className="text-slate-200 hover:text-cyan-400 transition-colors flex items-center whitespace-nowrap text-sm md:text-base font-medium"
+                    >
+                        <span className="text-yellow-400 font-bold mr-2 text-xs border border-yellow-400/30 px-1 rounded">NEW</span>
+                        <span className="text-slate-400 mr-2 text-sm">[{news.date}]</span>
+                        {news.title}
+                    </Link>
+                ))}
+            </div>
+        </div>
 
-                <Link href="/about/news" className="text-sm text-slate-400 hover:text-white shrink-0 hidden md:flex items-center group z-10 bg-slate-800/50 px-2 rounded">
-                  查看更多 <i className="fa-solid fa-chevron-right text-xs ml-1 group-hover:translate-x-1 transition-transform"></i>
-                </Link>
-              </div>
-          </section>
-
+        <Link href="/about/news" className="text-sm text-slate-400 hover:text-white shrink-0 hidden md:flex items-center group z-10 bg-slate-800/50 px-2 rounded">
+            查看更多 <i className="fa-solid fa-chevron-right text-xs ml-1 group-hover:translate-x-1 transition-transform"></i>
+        </Link>
+    </div>
+</section>
 
           {/* Section 1: 醫師介紹 */}
-          <section className="container mx-auto px-4 pt-4 pb-12 md:pt-6 md:pb-16 fade-in">
+          <section className="container mx-auto px-4 pt-4 pb-8 md:pt-6 md:pb-8 fade-in">
               <div className="max-w-6xl mx-auto">
                 <div className="bg-slate-800/60 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden shadow-2xl relative group">
                    <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
@@ -262,126 +272,141 @@ export default function Home() {
               </div>
           </section>
 
-          {/* Section 2: 診所資訊 */}
-          <section className="container mx-auto px-4 pb-16">
-              <div className="max-w-6xl mx-auto w-full">
-                <div className="flex items-center gap-3 mb-8">
-                   <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
-                     <i className="fa-solid fa-hospital text-2xl"></i>
-                   </span>
-                   <h2 className="text-4xl font-bold font-sans text-white">
-                     診所資訊 <span className="text-slate-500 text-xl font-normal ml-2">Clinic Info</span>
-                   </h2>
-                </div>
+         {/* Section 2: 診所資訊 */}
+      <section className="container mx-auto px-4 pb-4">
+          <div className="max-w-6xl mx-auto w-full">
+            <div className="flex items-center gap-3 mb-8">
+               <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
+                 <i className="fa-solid fa-hospital text-2xl"></i>
+               </span>
+               <h2 className="text-4xl font-bold font-sans text-white">
+                 診所資訊 <span className="text-slate-500 text-xl font-normal ml-2"></span>
+               </h2>
+            </div>
 
-                <div className="bg-slate-800/60 border border-slate-700 rounded-xl p-6 md:p-8 mb-12 shadow-lg backdrop-blur-sm hover:border-cyan-500/30 transition-colors">
-                   <div className="flex flex-col lg:flex-row gap-8 items-stretch">
-                      
-                      <div className="lg:w-5/12 flex-shrink-0">
-                          <div className="h-full w-full min-h-[300px] rounded-lg overflow-hidden border border-slate-600 shadow-md relative group">
-                             <img 
-                               src="/images/main/b.jpg"
-                               alt="新竹宸新復健科診所外觀 - 位於光復路近竹科與Costco" 
-                               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
-                             />
-                             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
-                             
-                             <div className="absolute bottom-4 left-4 flex gap-2">
-                                 <span className="text-sm bg-black/60 text-white px-2 py-1 rounded backdrop-blur">
-                                     <i className="fa-solid fa-square-parking mr-1 text-yellow-400"></i>專屬停車位
-                                 </span>
-                                 <span className="text-sm bg-black/60 text-white px-2 py-1 rounded backdrop-blur">
-                                     <i className="fa-solid fa-wheelchair mr-1 text-blue-400"></i>無障礙空間
-                                 </span>
-                             </div>
-                          </div>
+            <div className="bg-slate-800/60 border border-slate-700 rounded-xl p-6 md:p-8 mb-12 shadow-lg backdrop-blur-sm hover:border-cyan-500/30 transition-colors">
+               <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-stretch">
+                  
+                  {/* 左側：Youtube Shorts 影片區塊 (9:16) */}
+                  <div className="lg:w-4/12 w-full flex-shrink-0">
+                      <div className="w-full h-full relative aspect-[9/16] rounded-xl overflow-hidden border border-slate-600 shadow-xl bg-black">
+                         <iframe 
+                           className="absolute inset-0 w-full h-full"
+                           // ↓↓↓ 請記得替換為您的 Shorts ID ↓↓↓
+                           src="https://www.youtube.com/embed/asqbvbEukOM" 
+                           title="診所介紹 Shorts"
+                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                           allowFullScreen
+                         ></iframe>
                       </div>
+                  </div>
 
-                      <div className="lg:w-7/12 flex flex-col">
-                          <h3 className="text-4xl font-bold text-white mb-2 flex items-center justify-between">
+                  {/* 右側：文字資訊 (使用 justify-between 來拉開垂直間距，填滿高度) */}
+                  <div className="lg:w-8/12 flex flex-col justify-between h-auto py-1">
+                      
+                      {/* 上半部：標題、評價與設施標籤 */}
+                      <div className="flex flex-col gap-5">
+                          <h3 className="text-4xl font-bold text-white flex flex-wrap items-center justify-between gap-4">
                              新竹市宸新復健科
-                             <Link href="/about/clinic" className="text-base text-cyan-500 font-normal hover:underline decoration-cyan-500/50 underline-offset-4">
-                                 查看設備介紹 <i className="fa-solid fa-arrow-right text-sm"></i>
+                             <Link href="/about/clinic" className="text-base text-cyan-500 font-normal hover:underline decoration-cyan-500/50 underline-offset-4 flex items-center whitespace-nowrap">
+                                 查看設備介紹 <i className="fa-solid fa-arrow-right text-sm ml-1"></i>
                              </Link>
                           </h3>
 
-                          {/* 🟢 方案 B：精緻低調的評價顯示 (符合 Google 規範) */}
-                          <div className="flex items-center gap-2 mb-6 text-sm border-b border-slate-700 pb-4">
-                             <div className="flex text-yellow-400">
-                               {/* 5顆小星星 */}
-                               <i className="fa-solid fa-star"></i>
-                               <i className="fa-solid fa-star"></i>
-                               <i className="fa-solid fa-star"></i>
-                               <i className="fa-solid fa-star"></i>
-                               <i className="fa-solid fa-star"></i>
-                             </div>
-                             <span className="text-slate-300 font-bold">4.7</span>
-                             <span className="text-slate-500 font-medium tracking-wide">(超過 700 則 Google 評論)</span>
-                          </div>
-
-                          <div className="grid md:grid-cols-2 gap-6 mb-8">
-                            <div>
-                               <h4 className="text-xl font-bold text-cyan-400 mb-3 font-sans border-l-4 border-cyan-500 pl-3">診所特色項目</h4>
-                               <ul className="space-y-2 text-slate-300 text-xl">
-                                  <li className="flex items-start"><span className="text-cyan-500 mr-2">▹</span>醫學中心級數位X光機</li>
-                                  <li className="flex items-start"><span className="text-cyan-500 mr-2">▹</span>頂規高畫質超音波檢查</li>
-                                  <li className="flex items-start"><span className="text-cyan-500 mr-2">▹</span>台大醫師團隊親自看診</li>
-                               </ul>
-                            </div>
-
-                            <div>
-                               <h4 className="text-xl font-bold text-pink-400 mb-3 font-sans border-l-4 border-pink-500 pl-3">診所特色治療</h4>
-                               <ul className="space-y-2 text-slate-300 text-xl">
-                                  <li className="flex items-start"><span className="text-pink-500 mr-2">▹</span>瑞士進口聚焦式震波</li>
-                                  <li className="flex items-start"><span className="text-pink-500 mr-2">▹</span>PRP 高濃度血小板再生</li>
-                                  <li className="flex items-start"><span className="text-pink-500 mr-2">▹</span>兒童早療 (PT/OT/ST)</li>
-                                  <li className="flex items-start"><span className="text-pink-500 mr-2">▹</span>增生療法注射</li>
-                               </ul>
-                            </div>
-                          </div>
-
-                          <div className="mt-auto bg-slate-900/40 p-5 rounded-lg border border-slate-700/50 hover:border-slate-600 transition-colors">
-                             <div className="flex flex-col gap-4">
-                                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                                   <div className="space-y-2 text-lg">
-                                      <div className="flex items-start gap-3 text-slate-200 font-medium">
-                                         <i className="fa-solid fa-location-dot mt-1 text-cyan-400"></i>
-                                         <p>300新竹市東區光復路一段371號B1 (近竹科/關新路)</p>
-                                      </div>
-                                      <div className="flex items-center gap-3 text-slate-200 font-medium">
-                                         <i className="fa-solid fa-phone text-cyan-400"></i>
-                                         <p>(03) 564-7999</p>
-                                      </div>
-                                   </div>
-                                   
-                                   <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-                                      <a 
-                                        href="https://www.forcestar.com.tw/clinic/%E6%96%B0%E7%AB%B9%E7%AB%B9%E7%A7%91%E5%AE%B8%E6%96%B0%E5%BE%A9%E5%81%A5%E7%A7%91%E8%A8%BA%E6%89%80/c/jvAUv7dDKT"
-                                        target="_blank" 
-                                        rel="noopener noreferrer"
-                                        className="text-center px-5 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg hover:shadow-lg hover:shadow-cyan-500/20 transition-all font-medium text-base whitespace-nowrap group"
-                                      >
-                                        <i className="fa-solid fa-globe mr-2 group-hover:scale-110 transition-transform"></i> 診所網頁
-                                      </a>
-
-                                      <a 
-                                        href="https://www.google.com/maps/search/?api=1&query=新竹市宸新復健科診所" 
-                                        target="_blank" 
-                                        rel="noopener noreferrer"
-                                        className="text-center px-5 py-3 bg-slate-700 hover:bg-slate-600 text-white rounded-lg hover:shadow-lg transition-all font-medium text-base whitespace-nowrap group border border-slate-600"
-                                      >
-                                        <i className="fa-solid fa-map-location-dot mr-1 text-cyan-400"></i> 開啟 Google 地圖
-                                      </a>
-                                   </div>
-
+                          {/* 評價與標籤整合區塊 */}
+                          <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 border-b border-slate-700 pb-6">
+                             {/* 評價 */}
+                             <div className="flex items-center gap-2">
+                                <div className="flex text-yellow-400 text-sm">
+                                  <i className="fa-solid fa-star"></i>
+                                  <i className="fa-solid fa-star"></i>
+                                  <i className="fa-solid fa-star"></i>
+                                  <i className="fa-solid fa-star"></i>
+                                  <i className="fa-solid fa-star"></i>
                                 </div>
+                                <span className="text-slate-300 font-bold">4.7</span>
+                                <span className="text-slate-500 text-sm">(700+ 評論)</span>
+                             </div>
+
+                             <div className="hidden sm:block w-px h-6 bg-slate-600"></div>
+
+                             {/* 移動過來的標籤：設施亮點 */}
+                             <div className="flex flex-wrap gap-3">
+                                <span className="text-sm bg-cyan-900/40 border border-cyan-500/30 text-cyan-100 px-3 py-1.5 rounded-md flex items-center">
+                                    <i className="fa-solid fa-square-parking mr-2 text-yellow-400"></i>專屬停車位
+                                </span>
+                                <span className="text-sm bg-cyan-900/40 border border-cyan-500/30 text-cyan-100 px-3 py-1.5 rounded-md flex items-center">
+                                    <i className="fa-solid fa-wheelchair mr-2 text-blue-400"></i>無障礙空間
+                                </span>
                              </div>
                           </div>
                       </div>
-                   </div>
-                </div>
-              </div>
-          </section>
+
+                      {/* 中間部：特色項目 (增加垂直間距讓版面更舒展) */}
+                      <div className="grid md:grid-cols-2 gap-8 my-6">
+                        <div className="flex flex-col justify-center">
+                           <h4 className="text-xl font-bold text-cyan-400 mb-5 font-sans border-l-4 border-cyan-500 pl-3">診所特色項目</h4>
+                           <ul className="space-y-4 text-slate-300 text-lg">
+                              <li className="flex items-start"><span className="text-cyan-500 mr-3 mt-1 text-sm"><i className="fa-solid fa-circle"></i></span>醫學中心級數位X光機</li>
+                              <li className="flex items-start"><span className="text-cyan-500 mr-3 mt-1 text-sm"><i className="fa-solid fa-circle"></i></span>頂規高畫質超音波檢查</li>
+                              <li className="flex items-start"><span className="text-cyan-500 mr-3 mt-1 text-sm"><i className="fa-solid fa-circle"></i></span>台大醫師團隊親自看診</li>
+                           </ul>
+                        </div>
+
+                        <div className="flex flex-col justify-center">
+                           <h4 className="text-xl font-bold text-pink-400 mb-5 font-sans border-l-4 border-pink-500 pl-3">診所特色治療</h4>
+                           <ul className="space-y-4 text-slate-300 text-lg">
+                              <li className="flex items-start"><span className="text-pink-500 mr-3 mt-1"><i className="fa-solid fa-circle"></i></span>瑞士進口聚焦式震波</li>
+                              <li className="flex items-start"><span className="text-pink-500 mr-3 mt-1"><i className="fa-solid fa-circle"></i></span>PRP 高濃度血小板再生</li>
+                              <li className="flex items-start"><span className="text-pink-500 mr-3 mt-1"><i className="fa-solid fa-circle"></i></span>兒童早療 (PT/OT/ST)</li>
+                              <li className="flex items-start"><span className="text-pink-500 mr-3 mt-1"><i className="fa-solid fa-circle"></i></span>增生療法注射</li>
+                           </ul>
+                        </div>
+                      </div>
+
+                      {/* 下半部：聯絡資訊 (置底) */}
+                      <div className="bg-slate-900/40 p-6 rounded-lg border border-slate-700/50 hover:border-slate-600 transition-colors mt-auto">
+                         <div className="flex flex-col gap-5">
+                            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                               <div className="space-y-3">
+                                  <div className="flex items-start gap-3 text-slate-200 text-lg font-medium">
+                                     <i className="fa-solid fa-location-dot mt-1.5 text-cyan-400"></i>
+                                     <p>300新竹市東區光復路一段371號B1 <span className="text-slate-400 text-base block sm:inline ml-0 sm:ml-2">(近竹科/關新路)</span></p>
+                                  </div>
+                                  <div className="flex items-center gap-3 text-slate-200 text-lg font-medium">
+                                     <i className="fa-solid fa-phone text-cyan-400"></i>
+                                     <p className="tracking-wide text-xl font-bold">(03) 564-7999</p>
+                                  </div>
+                               </div>
+                               
+                               <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto flex-shrink-0">
+                                  <a 
+                                    href="https://www.forcestar.com.tw/clinic/%E6%96%B0%E7%AB%B9%E7%AB%B9%E7%A7%91%E5%AE%B8%E6%96%B0%E5%BE%A9%E5%81%A5%E7%A7%91%E8%A8%BA%E6%89%80/c/jvAUv7dDKT"
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="flex-1 md:flex-none text-center px-5 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg hover:shadow-lg hover:shadow-cyan-500/20 transition-all font-medium whitespace-nowrap group"
+                                  >
+                                    <i className="fa-solid fa-globe mr-2 group-hover:scale-110 transition-transform"></i> 診所網頁
+                                  </a>
+
+                                  <a 
+                                    href="https://www.google.com/maps/search/?api=1&query=新竹市宸新復健科診所" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="flex-1 md:flex-none text-center px-5 py-3 bg-slate-700 hover:bg-slate-600 text-white rounded-lg hover:shadow-lg transition-all font-medium whitespace-nowrap group border border-slate-600"
+                                  >
+                                    <i className="fa-solid fa-map-location-dot mr-1 text-cyan-400"></i> Google 地圖
+                                  </a>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+            </div>
+          </div>
+      </section>
 
         </main>
       </div>

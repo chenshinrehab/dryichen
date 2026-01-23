@@ -67,7 +67,7 @@ export default function DiseasesPage() {
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
         {/* 🟢 修改 1: 減少頂部 Padding (pt-4, md:pt-8) */}
-        <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
+        <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt--6 pb-12 md:pt--6 md:pb-16 fade-in">
           
           {/* ============================================================
               ✨ 標題區塊 (樣式更新：參考 WeightLoss)

@@ -182,7 +182,7 @@ export default function NewsDetailPage({ params }: PageProps) {
       `}} />
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
-        <main className="flex-grow pt-4 pb-12 md:py-12 fade-in relative z-10">
+       <main className="flex-grow pt-0 pb-12 md:pt-0 md:pb-12 fade-in relative z-10">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
              
             {/* 麵包屑/返回按鈕 */}

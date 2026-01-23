@@ -91,7 +91,7 @@ export default function BookingPage() {
       <JsonLd data={jsonLdBreadcrumb} />
       <JsonLd data={jsonLdBooking} />
 
-      <div className="flex-grow pt-4 pb-16 md:pt-8 px-4 bg-slate-900 min-h-screen">
+      <div className="flex-grow pt-0 pb-16 md:pt-0 px-4 bg-slate-900 min-h-screen">
         <section id="booking" className="fade-in max-w-5xl mx-auto">
           
           {/* 標題區 */}

@@ -74,7 +74,7 @@ export default function DoctorsPage() {
       <JsonLd data={jsonLdBreadcrumb} />
       <JsonLd data={jsonLdPhysicianPage} />
       
-      <div className="min-h-screen bg-slate-900 text-slate-300 pt-4 pb-12 md:pt-8 md:pb-16 fade-in">
+      <div className="min-h-screen bg-slate-900 text-slate-300 pt-0 pb-12 md:pt-0 md:pb-16 fade-in">
         <div className="container mx-auto px-4 max-w-6xl">
           
           <Link href="/about" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group">

@@ -66,11 +66,11 @@ export default function NewsListPage() {
           pt-0 (手機版上方無內距)
           md:pt-4 (電腦版上方內距減半)
       */}
-      <div className="min-h-screen bg-slate-900 text-slate-300 pt-0 pb-12 md:pt-4 md:pb-16 fade-in">
+      <div className="min-h-screen bg-slate-900 text-slate-300 pt-0 pb-12 md:pt-0 md:pb-16 fade-in">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
            
           {/* 返回按鈕 */}
-          <Link href="/about" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group mt-4 md:mt-0">
+          <Link href="/about" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group mt-0 md:mt-0">
              <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回關於我們
           </Link>
 
