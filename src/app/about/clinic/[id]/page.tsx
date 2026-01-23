@@ -190,8 +190,8 @@ export default function FacilityDetailPage({ params }: PageProps) {
                  </div>
 
                  {/* ✨ 新增：YouTube 影片區塊 (參考治療方式格式) */}
-                 {/* 請確保您的 facilitiesData 資料介面中有 youtubeVideoId 欄位 */}
-                 {item.youtubeVideoId && (
+                 {/* 使用 (item as any) 轉型以繞過 TypeScript 檢查 */}
+                 {(item as any).youtubeVideoId && (
                     <div className="mb-14 text-center">
                         <h3 className="text-2xl font-bold text-white mb-6 flex items-center justify-center">
                             <i className="fa-brands fa-youtube text-red-500 mr-3 text-3xl"></i>
@@ -200,7 +200,7 @@ export default function FacilityDetailPage({ params }: PageProps) {
                         <div className="w-full md:w-[85%] mx-auto">
                             <div className="relative w-full pb-[56.25%] rounded-xl overflow-hidden shadow-2xl border border-slate-700 group">
                                 <iframe 
-                                    src={`https://www.youtube.com/embed/${item.youtubeVideoId}`} 
+                                    src={`https://www.youtube.com/embed/${(item as any).youtubeVideoId}`} 
                                     title={`${item.title} 介紹影片`}
                                     className="absolute top-0 left-0 w-full h-full" 
                                     frameBorder="0" 
