@@ -2368,7 +2368,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-      
+       <p><img src="/images/diseases/shoulder/ac/b.jpg" alt="肩鎖關節結構"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：痛點在哪裡？</h3>
@@ -2411,7 +2411,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                       </tr>
                       <tr>
                           <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold; color: #fcd34d;">第三級 (Grade III)</td>
-                          <td style="padding: 1rem; border-bottom: 1px solid #334155;">兩條韌帶 (AC & CC) <strong>皆完全斷裂</strong>。</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;">兩條韌帶 (肩鎖韌帶與喙鎖韌帶) <strong>皆完全斷裂</strong>。</td>
                           <td style="padding: 1rem; border-bottom: 1px solid #334155;">鎖骨明顯凸起 (100%位移)。出現<strong>「鋼琴鍵徵象」</strong>：把凸起的鎖骨往下壓會復位，手放開又彈起來。</td>
                       </tr>
                       <tr>
@@ -2422,35 +2422,33 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </tbody>
               </table>
           </div>
-          <p style="color: #94a3b8; font-size: 0.9rem; margin-top: 0.5rem;">*註：第一至三級通常優先採保守治療；第四級以上或保守治療失敗的第三級才考慮手術。</p>
-      
-          <p><img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&q=80&w=1200" alt="肩鎖關節X光影像示意圖" style="width: 100%; height: auto; border-radius: 12px;"></p>
-      
+          <p style="  margin-top: 0.5rem;">*註：第一至三級通常優先採保守治療；第四級以上或保守治療失敗的第三級才考慮手術。</p>
+          <p><img src="/images/diseases/shoulder/ac/c.jpg" alt="肩鎖關節受傷分級"></p>
+
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <h3 style="color: #f8fafc !important;">🛡️ 宸新全方位治療策略：修復韌帶，穩定地基</h3>
           <p style="color: #e2e8f0 !important;">肩鎖關節受傷後，韌帶變得鬆弛，容易導致長期慢性疼痛與關節提早退化。我們的目標是加速韌帶癒合，並強化周邊肌肉來代償穩定性。</p>
       
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 精準診斷：高解析超音波</h4>
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 精準診斷：<a href="/about/clinic/ultrasound" class="text-cyan-400 hover:underline">高解析超音波</a></h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
-                  X 光只能看骨頭位置，<strong>超音波才能真正看到韌帶有沒有斷！</strong>
-                  醫師會利用動態超音波，請患者做跨胸動作，觀察關節是否不穩定地開合，並測量韌帶撕裂的範圍與積水情形。
+                  X 光只能看骨頭位置，確認有無骨折及移位，<strong>超音波才能真正看到韌帶有沒有斷！</strong>
+                  醫師會利用動態超音波，觀察關節是否不穩定地開合，並觀察韌帶撕裂的狀況與積水情形。
               </p>
           </div>
-          
-          <p><img src="https://plus.unsplash.com/premium_photo-1661764654573-048777170884?auto=format&fit=crop&q=80&w=1200" alt="醫師使用超音波檢查肩膀韌帶" style="width: 100%; height: auto; border-radius: 12px;"></p>
-      
+            <p><img src="/images/diseases/shoulder/ac/d.jpg" alt="肩鎖關節受傷超音波影像"></p>
+
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
               <h4 style="margin-top: 0; color: #0e7490 !important;">2. 核心治療：<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引 PRP/增生注射</a></h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
                   對於第二、三級的韌帶撕裂，單靠休息很難完全長好。
-                  我們在超音波精準導引下，將<strong>高濃度血小板 (PRP)</strong> 或高濃度葡萄糖直接注射到撕裂的肩鎖韌帶與喙鎖韌帶周圍。啟動身體的自我修復機制，像「強力膠」一樣幫助韌帶癒合、變強壯，減少鎖骨的晃動。這是避免手術的關鍵治療。
+                  我們在超音波精準導引下，將<strong>高濃度血小板 (PRP)</strong> 或<strong>高濃度葡萄糖</strong>直接注射到撕裂的肩鎖韌帶與喙鎖韌帶周圍。啟動身體的自我修復機制，像「強力膠」一樣幫助韌帶癒合、變強壯，減少鎖骨的晃動。這是避免手術的關鍵治療。
               </p>
           </div>
       
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 急性止痛：<a href="/treatments/laser" class="text-cyan-400 hover:underline">高能量雷射 (HILT)</a></h4>
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 急性止痛：<a href="/treatments/high-intensity-laser" class="text-cyan-400 hover:underline">高能量雷射 (HILT)</a></h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
                   受傷初期劇痛難耐時，高能量雷射能深層穿透組織，快速消炎止痛，加速組織代謝，縮短急性發炎期。
               </p>
@@ -2472,14 +2470,14 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">目標是消腫止痛，避免沾黏。通常需佩戴手臂吊帶。禁止手舉超過肩膀高度。</p>
       
           <div style="margin-bottom: 2rem;">
-              <h4 style="color: #22d3ee !important;">1. 鐘擺運動 (Pendulum Exercise)</h4>
+              <h4 style="color: #22d3ee !important;">1. 鐘擺運動 </h4>
               <p style="color: #e2e8f0 !important;">
                   身體前彎，好手扶著桌子，讓患側手臂像鐘擺一樣自然下垂。利用身體的晃動帶動手臂前後、左右輕微擺動（不是肩膀用力）。早晚各做 3-5 分鐘。
               </p>
           </div>
       
           <div style="margin-bottom: 2rem;">
-              <h4 style="color: #22d3ee !important;">2. 肩胛骨後收 (Scapular Squeezes)</h4>
+              <h4 style="color: #22d3ee !important;">2. 肩胛骨後收 </h4>
               <p style="color: #e2e8f0 !important;">
                   坐姿或站姿，肩膀放鬆。想像背後中間夾一支筆，將兩側肩胛骨向後、向內夾緊。維持 5 秒，放鬆。重複 10 次。這能啟動穩定肌群而不移動受傷關節。
               </p>
@@ -2489,24 +2487,69 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">疼痛減輕後，開始溫和增加角度並建立基礎肌力。</p>
       
           <div style="margin-bottom: 2rem;">
-              <h4 style="color: #22d3ee !important;">3. 爬牆運動 (Wall Walk)</h4>
+              <h4 style="color: #22d3ee !important;">3. 爬牆運動 </h4>
               <p style="color: #e2e8f0 !important;">
                   面對牆壁，用手指像爬樓梯一樣慢慢沿著牆壁向上爬高，直到肩膀感覺緊繃微痛就停住。停留 10 秒，再慢慢爬下來。目標是逐漸恢復舉手角度。
               </p>
           </div>
-      
-          <div style="margin-bottom: 2rem;">
-              <h4 style="color: #22d3ee !important;">4. 等長收縮肌力訓練</h4>
-              <p style="color: #e2e8f0 !important;">
-                  站在門框邊或牆邊。
-                  <br><strong>外旋：</strong> 手肘彎曲 90 度貼著身體，手背用力頂牆壁（像要往外轉），但身體和手都不動。維持 5 秒。
-                  <br><strong>內旋：</strong> 手掌用力頂牆壁（像要往肚子轉）。維持 5 秒。
-                  <br>重複 10 次。這能在不造成關節壓力的情況下強化旋轉肌袖。
-              </p>
-          </div>
-      
-          <p><img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&q=80&w=1200" alt="居家肩膀復健運動示範" style="width: 100%; height: auto; border-radius: 12px;"></p>
-      
+         <p><img src="/images/diseases/shoulder/ac/e.jpg" alt="肩鎖關節受傷急性期運動"></p>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：強化肩胛，穩住地基</h3>
+    <p style="color: #e2e8f0 !important;">肩鎖關節受傷後，韌帶雖然鬆了，但我們可以把旁邊的肌肉練強，讓肌肉幫忙抓住骨頭。重點在於訓練<strong>前鋸肌</strong> 與 <strong>中下斜方肌</strong>，避免聳肩：</p>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">1. 肩胛骨伏地挺身 - 前鋸肌王牌</h4>
+        <p style="color: #e2e8f0 !important;">
+            這不是練胸肌，而是練「推出去」的力量，能改善翼狀肩胛。
+            <br>
+            1. 採高平板撐姿勢（手撐地，身體呈直線），或退階採四足跪姿。<br>
+            2. <strong>手肘保持伸直鎖死，絕對不能彎曲。</strong><br>
+            3. 身體慢慢下沉，感覺兩片肩胛骨在背後夾起來。<br>
+            4. 用力將地板推開，讓上背部拱起（像生氣的貓），感覺肩胛骨往兩側滑開。<br>
+            5. 重複 12 下，做 3 組。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">2. 趴姿 Y-T-W 抬手 </h4>
+        <p style="color: #e2e8f0 !important;">
+            全面強化斜方肌的中下束，矯正圓肩與聳肩習慣。
+            <br>
+            1. 趴在瑜珈墊上，腹部收緊。額頭下方可墊毛巾。<br>
+            2. <strong>Y字型：</strong> 雙手向斜前方伸直（像比 Y），大拇指朝上，抬起手臂。訓練下斜方肌。<br>
+            3. <strong>T字型：</strong> 雙手向兩側平舉（像比 T），肩胛骨夾緊抬起。訓練中斜方肌。<br>
+            4. <strong>W字型：</strong> 手肘彎曲呈 W，用力夾背抬起。<br>
+            5. 每個動作停留 3 秒，各做 8 次。<strong>注意：全程肩膀要遠離耳朵，不可聳肩。</strong>
+        </p>
+    </div>
+
+    
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">3. 滾筒滑牆 </h4>
+        <p style="color: #e2e8f0 !important;">
+            訓練肩胛骨在活動時的穩定性，並打開緊繃的胸椎。
+            <br>
+            1. 面對牆壁站立，雙手前臂靠在泡棉滾筒上（壓在牆上）。<br>
+            2. 雙手慢慢將滾筒向上推，身體順勢前傾。<br>
+            3. 推到最高點時，感覺腋下被拉開，但<strong>不要聳肩</strong>。<br>
+            4. 慢慢拉回起始位置。重複 10 次。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">4. 彈力帶水平外展</h4>
+        <p style="color: #e2e8f0 !important;">
+            強化後側肌群，平衡前側緊繃的胸肌。
+            <br>
+            1. 站立，雙手伸直握住彈力帶，與肩同寬。<br>
+            2. 雙手向兩側拉開彈力帶，直到接觸胸口。<br>
+            3. 專注於<strong>肩胛骨向後夾緊</strong>的感覺。<br>
+            4. 慢慢回放（回放時也要用力控制，不能彈回去）。重複 15 下。
+        </p>
+    </div>
+         <p><img src="/images/diseases/shoulder/ac/f.jpg" alt="肩鎖關節受傷肌力強化"></p>
+
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
@@ -2517,18 +2560,16 @@ export const diseaseCategories: DiseaseCategory[] = [
         `,
         symptoms: [
           '肩膀正上方（鎖骨末端）有明顯壓痛點',
-          '鎖骨末端外觀凸起變形 (Step deformity)',
+          '鎖骨末端外觀凸起變形',
           '手臂舉高過頭或做跨胸動作時劇痛',
-          '受傷當下肩膀著地或受到強力撞擊',
           '按壓凸起的鎖骨會有彈性感 (鋼琴鍵徵象)'
         ],
         treatments: [
+          '止痛藥復健治療',
           '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引 PRP/增生注射</a>🔍️',
           '<a href="/treatments/laser" class="text-cyan-400 hover:underline">高能量雷射治療 (HILT)</a>🔍️',
-          '功能性貼紮固定',
-          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">專業徒手治療與肩胛穩定訓練</a>🔍️',
-          '手臂吊帶固定 (急性期)'
-        ],
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">專業徒手治療與肩胛穩定訓練</a>🔍️'
+                  ],
         seoKeywords: [
           '肩鎖關節受傷',
           'AC joint injury',
@@ -2541,17 +2582,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '肩鎖關節韌帶受傷（肩膀分離）常發生於摔車或撞擊，導致鎖骨凸起與劇痛。宸新復健科提供超音波精準診斷、PRP再生注射與分階段復健運動，協助免手術修復韌帶。',
         images: [
-          { 
-            src: 'https://images.unsplash.com/photo-1599447421405-0c3078a73333?auto=format&fit=crop&q=80&w=1200', 
-            alt: '肩膀上方疼痛檢查示意圖' 
-          },
-          {
-            src: 'https://plus.unsplash.com/premium_photo-1661764654573-048777170884?auto=format&fit=crop&q=80&w=1200',
-            alt: '醫師進行肩膀超音波檢查'
-          },
-          {
-            src: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&q=80&w=1200',
-            alt: '居家肩膀復健運動'
+          {src: '/images/diseases/shoulder/ac/a.jpg', alt: '肩鎖關節韌帶受傷'
           }
         ]
       }
