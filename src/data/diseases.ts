@@ -1634,7 +1634,210 @@ export const diseaseCategories: DiseaseCategory[] = [
           }
         ]
       }, 
+{
+        id: 'sacroiliac-joint-dysfunction',
+        slug: 'sacroiliac-joint-dysfunction',
+        lastModified: '2026-01-24',
+        title: '薦髂關節炎',
+        description: '屁股深處痛？坐久了站不起來？這可能不是椎間盤突出，而是骨盆的「薦髂關節」鬆掉了！深入解析疼痛特徵，以及運用 X 光追蹤、PRP 修復韌帶與矯正架調整骨盆的全方位治療。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：坐在沙發或辦公椅上一段時間，要站起來的那一瞬間，<strong>下背部與屁股深處</strong>突然傳來一陣劇痛，痛點在<strong>腰窩</strong>附近，必須扶著桌子「緩一下」才能挺直腰桿？或是晚上睡覺想翻身，卻覺得骨盆像快散掉一樣痛？甚至有時候疼痛會稍微往下傳到大腿後側，讓您以為自己得了坐骨神經痛？</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">這其實是復健科門診極為常見，卻常被誤診的<strong>「薦髂關節炎」</strong>，又稱為<strong>薦髂關節失能</strong>或<strong>骨盆帶疼痛</strong>。這不是長骨刺，通常是因為關節韌帶鬆弛或骨盆歪斜，導致這個負責承重的重要關節「卡住」或「不穩」。在宸新復健科，我們不只止痛，更透過<strong>X光評估骨盆角度還有薦椎髂關節間隙</strong>，搭配<strong>關節鬆動與肌力訓練</strong>與<strong>增生注射</strong>，從地基把您的身體「扶正」。</p>
+      <p><img src="/images/diseases/spine-hip/si/c.jpg" alt="薦髂關節炎疼痛點"></p>
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 什麼是薦髂關節？身體的「避震器」與「基石」
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">試著摸摸看您後腰部，脊椎兩側有兩個凹下去的小窩（俗稱腰窩），那裏就是薦髂關節的位置。它連接了三角形的<strong>薦椎</strong>與<strong>骨盆</strong>。</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">穩定大於活動：</strong> 
+                          不同於肩膀或膝蓋，這個關節幾乎不太能動（活動度僅 2-4 度）。它的主要任務是<strong>「穩定」</strong>，將上半身的重量傳遞到雙腳。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">韌帶是關鍵：</strong> 
+                          因為骨頭本身並沒有很深的卡槽，薦髂關節的穩定性 90% 依賴周圍強壯的<strong>韌帶</strong>（就像用繩子把兩塊磚頭綁在一起）。一旦韌帶受傷鬆弛（如跌倒、懷孕賀爾蒙影響、長期翹腳），關節就會開始微小錯位，引發劇痛。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">上下連動：</strong> 
+                          薦髂關節的問題常與<strong>長短腳</strong>、<strong>扁平足</strong>以及<strong>脊椎側彎</strong>互為因果。骨盆一歪，上面脊椎跟著歪，下面腳也跟著長短不一。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+       <p><img src="/images/diseases/spine-hip/si/b.jpg" alt="薦髂關節結構圖"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
+          <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：如何分辨是「薦髂痛」還是「坐骨神經痛」？</h3>
+          <p style="color: #e2e8f0 !important;">這是患者最容易混淆的。雖然兩者都會屁股痛，但有幾個關鍵差異：</p>
+          
+          <div style="overflow-x: auto;">
+              <table style="width: 100%; border-collapse: collapse; margin-top: 1rem; color: #e2e8f0; table-layout: fixed;">
+                  <thead>
+                      <tr style="background-color: #1e293b;">
+                          <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #334155; width: 20%;">特徵</th>
+                          <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #334155; width: 40%; color: #22d3ee;">薦髂關節炎 (SI Joint)</th>
+                          <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #334155; width: 40%;">椎間盤突出 (Disc)</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold;">疼痛位置</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;"><strong>單側</strong>屁股痛，痛點在腰窩附近。</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;">腰部中央痛，可能雙側。</td>
+                      </tr>
+                      <tr>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold;">傳導範圍</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;">痛感通常<strong>不超過膝蓋</strong>（大腿後側、鼠蹊部）。</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;">典型的「電擊感」一路傳到<strong>小腿、腳底</strong>。</td>
+                      </tr>
+                      <tr>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold;">誘發動作</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;"><strong>變換姿勢時</strong>（坐到站、翻身）、單腳站立。</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;"><strong>彎腰</strong>、打噴嚏、咳嗽時劇痛。</td>
+                      </tr>
+                      <tr>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold;">神經症狀</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;">無麻木感，肌力正常。</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;">腳趾<strong>麻木</strong>，腳踝無力（垂足）。</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新全方位治療：穩固骨盆地基</h3>
+          <p style="color: #e2e8f0 !important;">薦髂關節炎通常是「結構不穩」造成的。止痛藥只能治標，策略是<strong>「修復韌帶」</strong>與<strong>「矯正排列」</strong>雙管齊下。</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 精準診斷：<a href="/about/clinic/x-ray" class="text-cyan-400 hover:underline">院內 X 光骨盆測量</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  許多薦髂關節疼痛源自於<strong>長短腳 (Leg Length Discrepancy)</strong> 或<strong>骨盆旋轉</strong>。宸新復健科擁有專業 X 光設備，能拍攝站立位骨盆影像，檢測兩側髂骨高度差與脊椎偏斜，擊薦髂關節沾黏狀況，這是徒手治療前最重要的導航地圖。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 韌帶修復：<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引 PRP 注射</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  既然韌帶鬆弛是主因，那我們就把韌帶「修緊」。
+                  薦髂關節的韌帶非常深層且複雜。醫師利用高解析超音波導引，將<strong>高濃度血小板 (PRP)</strong> 或高濃度葡萄糖精準注射到<strong>後薦髂韌帶</strong>與關節縫隙中。
+                  <br>
+                  <strong>效果：</strong> 促進韌帶增生強化，就像幫鬆動的螺絲重新鎖緊，恢復關節的被動穩定度。這對於產後骨盆鬆弛或慢性反覆疼痛特別有效。
+              </p>
+          </div>
+          
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 結構調整：<a href="/about/clinic/scoliosis-rack" class="text-cyan-400 hover:underline">脊椎側彎矯正架</a>與<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  這與一般整骨不同！如果您的薦髂問題源自於<strong>脊椎側彎</strong>或嚴重的<strong>骨盆旋轉</strong>，單純的徒手復位容易復發。
+                  <br>
+                  我們引進專業的<strong>矯正架懸吊系統</strong>，透過 3D 懸吊技術，在無重力狀態下，由治療師引導您做出「反向旋轉」的動作。從核心肌群由內而外導正骨盆位置，效果比單純被動整骨更持久。
+              </p>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    
+    <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：骨盆自我復位與黃金穩定訓練</h3>
+    <p style="color: #e2e8f0 !important;">薦髂關節的特性是「怕鬆不怕緊」。如果感覺關節卡住，請先做溫和的復位運動，接著<strong>一定要做核心訓練</strong>把關節鎖好，否則很快又會跑掉。</p>
+
+    <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 1. 自我復位：肌肉能量療法 (MET)</h4>
+    <p style="color: #94a3b8; font-size: 0.9rem;">*利用肌肉收縮的力量，將微小錯位的骨盆拉回正位。</p>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">1. 夾球復位術</h4>
+        <p style="color: #e2e8f0 !important;">
+            這招能調整恥骨聯合與薦髂關節的對稱性。
+            <br>1. 平躺，雙腳屈膝踩地。
+            <br>2. 雙膝中間夾一個瑜珈磚、枕頭或球。
+            <br>3. 雙腳膝蓋<strong>用力往內夾緊</strong>，維持 5-10 秒。
+            <br>4. 放鬆，可能會聽到恥骨或骨盆「喀」一聲歸位，這是正常的。重複 3-5 次。
+        </p>
+    </div>
+
+        <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">2. 單腳抱膝對抗</h4>
+        <p style="color: #e2e8f0 !important;">
+            針對單側骨盆後旋卡住的情況。
+            <br>1. 平躺，患側腳屈膝抬起。
+            <br>2. 雙手抱住大腿後側。
+            <br>3. <strong>動作對抗：</strong> 腳用力想「踢出去」（伸直），但雙手用力拉住不讓腳動。
+            <br>4. 維持 5 秒，放鬆。重複 5 次。這能啟動大腿後肌將骨盆拉回正位。
+        </p>
+    </div>
+
+    <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 2. 核心鎖定：重建骨盆避震器</h4>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">3. 死蟲式- 核心地基</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>薦髂關節痛首選運動</strong>，因為脊椎平貼地面，這對骨盆最安全。
+            <br>1. 平躺，雙手舉高，雙腳屈膝抬起呈 90 度（像死掉的蟲）。
+            <br>2. <strong>關鍵：</strong> 下背部用力壓死地板。
+            <br>3. 吐氣時，對側手腳延伸（右手左腳），吸氣回正。
+            <br>4. 骨盆不能左右搖晃。重複 10 下。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">4. 鳥狗式- 對角線穩定</h4>
+        <p style="color: #e2e8f0 !important;">
+            訓練「背闊肌」與對側「臀大肌」的連線（後斜向筋膜鏈），這是薦髂關節最重要的穩定機制。
+            <br>1. 四足跪姿，背部打平。
+            <br>2. 慢慢伸直右手與左腳，讓身體呈一直線。
+            <br>3. 想像有人在拉你的手跟腳，身體<strong>不能歪斜或旋轉</strong>。
+            <br>4. 停留 5 秒，收回。重複 10 下。
+        </p>
+    </div>
+ <p><img src="/images/diseases/spine-hip/si/d.jpg" alt="薦髂關節居家運動"></p>
+ 
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 骨盆正了，腰就不痛了！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">薦髂關節炎常是長年的壞習慣（翹腳、站三七步）或舊傷累積的結果。它需要精準的診斷來區分是否為神經壓迫，並透過 PRP 強化鬆弛的韌帶。更重要的是，利用X光分析搭配專業訓練的物理治療師，從力學結構上徹底導正骨盆。別讓屁股痛限制了您的行動力！</p>
+              <p style="font-weight: bold; color: #059669 !important;">坐久起不來？懷疑骨盆歪斜？立即預約 X 光評估！</p>
+          </div>
+        `,
+        symptoms: [
+          '久坐站起瞬間，下背部與臀部深處劇痛',
+          '單側屁股痛，痛感可能延伸至大腿後側（不過膝）',
+          '睡覺翻身或單腳站立（穿褲子）時疼痛加劇',,
+          '長短腳或經常習慣性翹腳'
+        ],
+        treatments: [
+          '止痛藥物與復健治療',
+          '<a href="/about/clinic/x-ray" class="text-cyan-400 hover:underline">X 光骨盆與長短腳分析</a>🔍️',
+          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引 PRP/增生注射</a>🔍️',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">骨盆關節鬆動與臀肌穩定訓練</a>🔍️'
+        ],
+        seoKeywords: [
+          '薦髂關節炎',
+          'SI joint dysfunction',
+          '骨盆歪斜',
+          '假性坐骨神經痛',
+          '屁股深處痛',
+          '長短腳矯正',
+          'PRP注射',
+          '產後骨盆痛'
+        ],
+        seoDescription: '薦髂關節炎(骨盆歪斜)造成下背與臀部深處痛，常被誤為坐骨神經痛。宸新復健科提供X光精準測量，運用PRP修復韌帶與脊椎側彎矯正架，徹底解決骨盆不穩問題。',
+        images: [ {src: '/images/diseases/spine-hip/si/a.jpg', alt: '薦髂關節炎' 
+          }
+        ]
+      },
+            
  {
         id: 'muscle-tmd',
         slug: 'muscle-tmd',
@@ -2257,7 +2460,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             <p style="color: #e2e8f0 !important;">傳統復健（電療、熱敷）對於已經沾黏的關節囊效果緩慢。宸新復健科提供積極的「解凍三劍客」：</p>
         
             <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-                <h4 style="margin-top: 0; color: #0e7490 !important;">1. 肩關節擴張術 (Hydrodilatation) - 特效藥(激推!)</h4>
+                <h4 style="margin-top: 0; color: #0e7490 !important;">1. <a href="/about/clinic/shoulder-dilation" class="text-cyan-400 hover:underline">肩關節擴張術 (Hydrodilatation)</a>🔍️- 特效藥(激推!)</h4>
                 <p style="margin-bottom: 0; color: #334155 !important;">
                     這是治療五十肩最快速有效的方法。醫師在<strong>超音波即時導引</strong>下，將擴張液（生理食鹽水 + 少量麻藥與抗炎藥）精準注入緊縮的關節囊中。利用液體的壓力，由內而外將沾黏的組織<strong>「撐開」</strong>。許多患者在注射完隔幾天，手就能舉高 30 度以上，且疼痛改善明顯，效果驚人！
                 </p>
@@ -2332,7 +2535,7 @@ export const diseaseCategories: DiseaseCategory[] = [
       {
         id: 'acromioclavicular-joint-injury',
         slug: 'acromioclavicular-joint-injury',
-        lastModified: '2026-01-25',
+        lastModified: '2026-01-24',
         title: '肩鎖關節韌帶受傷 (肩膀分離)',
         description: '摔車肩膀著地，鎖骨尾端凸一塊？肩膀上方按壓劇痛，手舉不過頭？這不是一般的肩膀脫臼，而是「肩鎖關節分離」！深入解析損傷分級、鋼琴鍵徵象，以及無需手術的超音波導引 PRP 修復與居家復健攻略。',
         contentHtml: `
@@ -2585,7 +2788,429 @@ export const diseaseCategories: DiseaseCategory[] = [
           {src: '/images/diseases/shoulder/ac/a.jpg', alt: '肩鎖關節韌帶受傷'
           }
         ]
+      },
+ {
+        id: 'slap-shoulder',
+        slug: 'slap-shoulder',
+        lastModified: '2026-01-24',
+        title: '肩關節唇撕裂',
+        description: '肩膀深處感到刺痛？投球或舉手時肩膀有「喀喀聲」且無力？這可能不是肌肉拉傷，而是關節唇撕裂！深入解析 SLAP 損傷成因，以及超音波導引 PRP 修復與肩胛骨穩定訓練的全攻略。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：在做過頭動作（如投棒球、打羽球殺球、自由式划手）的瞬間，肩膀深處突然傳來一陣<strong>尖銳的刺痛</strong>，甚至伴隨著<strong>「喀」</strong>的一聲？從此之後，雖然日常生活手還舉得起來，但只要一用力或角度對了，肩膀裡面就像「卡住」一樣痛，甚至覺得整隻手<strong>痠軟無力</strong>？</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">這種深層的痛楚，常被誤以為是五十肩或肌腱炎，但復健很久卻不見好轉。其實，問題可能出在肩膀的「O型墊片」——<strong>肩關節唇</strong> 破裂了，醫學上稱為 <strong>SLAP 損傷</strong>。在宸新復健科，我們透過動態超音波與理學檢查，能精準揪出這個躲在關節深處的隱形殺手，並提供免開刀的再生注射修復方案。</p>
+      
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 什麼是關節唇？肩膀的「吸盤」與「墊片」
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">肩關節是全身上下活動度最大的關節，構造像是一顆高爾夫球（肱骨頭）放在一個小球座（肩胛盂）上。為了讓球不要掉下來，造物主在球座邊緣圍了一圈<strong>軟骨組織</strong>，這就是關節唇。</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">負壓吸盤效應：</strong> 
+                          關節唇能加深關節窩的深度，並形成負壓（像吸盤一樣），把手臂骨頭牢牢吸在肩膀上，提供穩定度。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">二頭肌的錨點：</strong> 
+                          這也是受傷的關鍵！手臂的<strong>肱二頭肌長頭腱</strong>（大力水手的肌肉）就像船錨一樣，連接在關節唇的最上方 (Superior)。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">SLAP 損傷機制：</strong> 
+                          當我們做快速投球、殺球，或是手撐地跌倒時，二頭肌腱會被猛烈拉扯。這股拉力會把上方的關節唇像<strong>「剝香蕉皮」</strong>一樣，從骨頭上撕下來。這就叫做 <strong>S.L.A.P.</strong> (Superior Labrum Anterior and Posterior) 損傷。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+               <p><img src="/images/diseases/shoulder/slap/b.jpg" alt="肩關節唇撕裂結構"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：跟旋轉肌受傷有何不同？</h3>
+          <p style="color: #e2e8f0 !important;">關節唇在深層，旋轉肌在淺層，兩者症狀很像但有細微差異：</p>
+          <ul style="color: #e2e8f0 !important; margin-left: 1rem;">
+              <li style="margin-bottom: 0.5rem;"><strong>深層且難以定位的痛：</strong> 患者常說「覺得肩膀裡面痛，但摸不到痛點」，不像肌腱炎按壓表面就會痛。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>彈響聲：</strong> 手臂旋轉或舉高時，會感覺關節裡面有東西「卡住」或發出聲響。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>死臂感：</strong> 這是投手最怕的。投球速度突然下降，感覺手使不上力，控制不住球。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>夜間痛較不明顯：</strong> 除非合併發炎，否則單純關節唇撕裂通常在活動時才痛，這點跟五十肩（睡覺痛）不同。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 為什麼會受傷？不只是因為過度使用</h3>
+          <p style="color: #e2e8f0 !important;">除了外傷（車禍、跌倒手撐地），慢性的 SLAP 損傷通常伴隨著力學結構的異常：</p>
+          
+          <div style="overflow-x: auto;">
+              <table style="width: 100%; border-collapse: collapse; margin-top: 1rem; color: #e2e8f0; table-layout: fixed;">
+                  <thead>
+                      <tr style="background-color: #1e293b;">
+                          <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #334155; width: 30%;">風險因子</th>
+                          <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #334155; width: 70%;">病理解析</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold; color: #22d3ee;">GIRD (關節內轉不足)</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;">這是投擲運動員常見的問題。肩膀後方的關節囊太緊，導致<strong>內轉角度受限</strong>。這會迫使肱骨頭在活動時往後上方推擠，磨損關節唇。</td>
+                      </tr>
+                      <tr>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold; color: #22d3ee;">肩胛骨運動障礙</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;">圓肩、駝背導致肩胛骨位置不對。地基不穩，手臂骨頭就會在關節窩裡亂撞，夾擠到關節唇。</td>
+                      </tr>
+                      <tr>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155; font-weight: bold; color: #22d3ee;">二頭肌腱拉扯</td>
+                          <td style="padding: 1rem; border-bottom: 1px solid #334155;">健身愛好者（如硬舉、單槓）或搬運工，因二頭肌長頭腱長期承受高張力，連帶把附著點的關節唇扯下來。</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新全方位治療：從修復到穩定</h3>
+          <p style="color: #e2e8f0 !important;">關節唇是軟骨，血液循環極差，一旦撕裂<strong>幾乎不會自己癒合</strong>。傳統物理治療若無效，往往只能開刀。但在宸新，我們提供介於兩者之間的「再生醫療」選擇，且目前也已經有很多成功治療的案例。</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 精準修復：<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引 PRP 注射</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  這是治療 SLAP 的黃金非手術療法。
+                  <br>
+                  由於關節唇位於關節最深處，盲打根本打不到。醫師必須使用<strong>高解析超音波</strong>導引，避開神經血管，將<strong>高濃度血小板 (PRP)</strong> 精準注射到關節唇撕裂的縫隙中。
+                  <br>
+                  <strong>原理：</strong> PRP 富含生長因子，能像「生物強力膠」一樣黏合撕裂的軟骨，並促進組織再生，讓關節唇重新附著在骨頭上。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 結構調整：<a href="/treatments/manual" class="text-cyan-400 hover:underline">針對 GIRD 的徒手治療</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  只修復傷口不夠，必須解決「為什麼會受傷」。
+                  物理治療師會針對<strong>後關節囊緊繃</strong> 進行深層鬆動術，恢復肩膀的內轉角度，減少肱骨頭對關節唇的異常剪力。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 動力鏈訓練：<a href="/treatments/manual" class="text-cyan-400 hover:underline">肩胛穩定運動</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  強化前鋸肌與下斜方肌，確保肩胛骨在手臂活動時能提供穩定的地基。
+              </p>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：居家復健三部曲</h3>
+          <p style="color: #e2e8f0 !important;">請在醫師確認非急性發炎期後開始進行：</p>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">1. 側睡伸展 - 解決 GIRD</h4>
+              <p style="color: #e2e8f0 !important;">
+                  這是治療關節唇撕裂最重要的伸展，能放鬆後關節囊。
+                  <br>1. 側躺，患側在下。手臂與身體呈 90 度，手肘彎曲 90 度。<br>
+                  2. 用好手將患側手腕慢慢往下壓（往床面壓）。<br>
+                  3. 感覺肩膀後側緊繃。停留 30 秒，重複 3 次。<br>
+                  <strong>注意：</strong> 動作要輕柔，不可引起劇痛。
+              </p>
+          </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 前鋸肌出拳</h4>
+              <p style="color: #e2e8f0 !important;">
+                  穩定肩胛骨，避免聳肩。
+                  <br>1. 平躺，患手握拳（或拿輕啞鈴）垂直舉高向天花板。<br>
+                  2. 手肘伸直鎖死，利用肩膀的力量將拳頭「再往上推」離地面。<br>
+                  3. 感覺腋下肌肉用力，肩胛骨服貼背部。重複 15 下。
+              </p>
+          </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">3. 外旋肌力訓練 </h4>
+              <p style="color: #e2e8f0 !important;">
+                  強化旋轉肌袖，幫忙抓住肱骨頭。
+                  <br>1. 側躺，患側在上。手肘彎曲 90 度夾緊身體（可夾毛巾）。<br>
+                  2. 手握輕啞鈴，以前臂為半徑，慢慢向上轉開。<br>
+                  3. 慢慢放下。重複 12 下，做 3 組。
+              </p>
+          </div>
+       <p><img src="/images/diseases/shoulder/slap/c.jpg" alt="肩關節唇撕裂居家運動"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 別讓肩膀裡的「墊片」壞了！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">肩關節唇撕裂雖然聽起來可怕，且在過去常被認為必須開刀，但隨著再生醫學的進步，精準的 PRP 注射已能幫助許多患者免於手術之苦。透過超音波精確診斷，搭配針對性的後關節囊伸展與肩胛訓練，宸新復健科助您修復深層損傷，找回肩膀的活動自由！</p>
+              <p style="font-weight: bold; color: #059669 !important;">肩膀深處卡卡作響？立即預約關節唇評估！</p>
+          </div>
+        `,
+        symptoms: [
+          '肩膀深處疼痛，難以指出確切痛點',
+          '手臂過頭活動時有「喀喀」聲或卡住感',
+          '投球或揮拍速度下降，有無力感',
+          '做過頭動作（如推舉、引體向上）時疼痛加劇'
+        ],
+        treatments: [
+          '止痛藥復健治療',
+          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引 PRP/增生注射</a>🔍️',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">後關節囊鬆動及肩胛骨穩定訓練 </a>🔍️',
+          '手術修補'
+        ],
+        seoKeywords: [
+          '肩關節唇撕裂',
+          'SLAP lesion',
+          '肩膀喀喀聲',
+          '投擲肩',
+          'GIRD',
+          'PRP注射',
+          '肩膀深處痛',
+          'Sleeper stretch'
+        ],
+        seoDescription: '肩關節唇撕裂(SLAP)造成肩膀深處刺痛與卡頓聲。宸新復健科提供超音波精準診斷，運用PRP再生注射修復軟骨，搭配GIRD矯正運動，免手術治療肩膀損傷。',
+        images: [
+          {src: '/images/diseases/shoulder/slap/a.jpg', alt: '肩關節唇撕裂'
+          }
+        ]
+      },
+       {
+        id: 'shoulder-impingement-syndrome',
+        slug: 'shoulder-impingement-syndrome',
+        lastModified: '2026-01-24',
+        title: '肩夾擠症候群 (游泳肩)',
+        description: '手舉到一半肩膀就痛？睡覺壓到肩膀會痛醒？這不是五十肩，而是「肩夾擠」！深入解析疼痛弧特徵，以及超音波導引注射與肩胛穩定訓練的根本治療。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的困擾：手自然下垂時不痛，舉高到頭頂也不太痛，偏偏在<strong>手舉到側邊 60 度到 120 度</strong>這個區間，肩膀外側會感到一陣劇痛？或是晚上睡覺側睡壓到患側肩膀，常常痛到醒過來？</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">這就是典型的<strong>「肩夾擠症候群」</strong>，常發生在游泳選手、重訓愛好者，過頭運動或工程師身上。它的成因並非單純的「發炎」，而是肩膀內部的空間變窄了，導致肌腱在活動時不斷被骨頭「夾」到。宸新復健科透過超音波檢查，檢查肌腱被夾擠的空間及肌肉狀況，並提供精準的空間擴張與修復治療。</p>
+        <p><img src="/images/diseases/shoulder/impinge/b.jpg" alt="疼痛弧"></p>
+
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 為什麼會「夾擠」？肩膀裡的交通堵塞
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">我們的肩膀上方有一塊骨頭叫「肩峰」，下方是「肱骨頭」，中間這個狹小的隧道叫做<strong>「肩峰下空間」</strong>。這條隧道裡塞滿了棘上肌腱與滑囊。</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">骨頭長歪 (骨刺)：</strong> 
+                          天生肩峰形狀彎曲，或是退化長出骨刺，像天花板往下塌陷一樣，直接壓縮了隧道空間，刮傷通過的肌腱。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">圓肩駝背 (姿勢不良)：</strong> 
+                          這是現代人最常見的原因！當我們駝背時，肩胛骨會往前傾，導致肩峰往下壓，人為地製造了夾擠的環境。這時候就算打針消炎，姿勢不改，肌腱還是會繼續被夾。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">肌力失衡：</strong> 
+                          旋轉肌袖負責將肱骨頭「向下拉」，三角肌負責「向上拉」。如果旋轉肌太弱（拉不住），手一舉高，肱骨頭就會直接往上撞到天花板（肩峰），造成夾擠。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：神秘的「疼痛弧」</h3>
+          <p style="color: #e2e8f0 !important;">肩夾擠最著名的特徵就是<strong>「疼痛弧 (Painful Arc)」</strong>，這也是醫師區分它與五十肩的關鍵：</p>
+          <ul style="color: #e2e8f0 !important; margin-left: 1rem;">
+              <li style="margin-bottom: 0.5rem;"><strong>0°~60° 不痛：</strong> 手剛開始舉起來時，空間還夠，不會痛。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>60°~120° 劇痛：</strong> 這是最擁擠的區段，肌腱剛好滑過狹窄處被夾到。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>120°~180° 不痛：</strong> 手舉到最高時，肱骨頭轉開了，空間反而變大，又不痛了。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>夜間疼痛：</strong> 側睡壓到患側時，會直接擠壓滑囊，導致半夜痛醒。</li>
+          </ul>
+             <p><img src="/images/diseases/shoulder/impinge/c.jpg" alt="肩夾擠壓迫"></p>
+
+          <h3 style="color: #f8fafc !important;">🔍 超音波檢查：眼見為憑的診斷</h3>
+          <p style="color: #e2e8f0 !important;">X 光只能看到骨刺，但<strong>超音波可以看到「動態夾擠」</strong>。在宸新復健科，我們會請您做舉手動作：</p>
+          
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">動態夾擠測試 (Dynamic Impingement Test)</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  當您手舉高時，我們可以在螢幕上清楚看到棘上肌腱滑進肩峰下隧道時，是否被卡住、擠壓變形，或是滑囊被擠得像水球一樣鼓起來。這能確診夾擠的真正原因。
+              </p>
+          </div>
+                   <p><img src="/images/diseases/shoulder/impinge/d.jpg" alt="肩夾擠超音波影像"></p>
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新全方位治療：騰出空間，修復肌腱</h3>
+          <p style="color: #e2e8f0 !important;">治療肩夾擠不能只止痛，必須<strong>「把空間打開」</strong>並<strong>「強化旋轉肌」</strong>，否則肌腱會反覆磨損直到斷裂。</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 急性消腫：超音波導引注射</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  如果滑囊發炎嚴重積水，我們會先用超音波導引抽出積水，並注射微量藥物消除急性腫脹，立即緩解疼痛，讓您晚上能睡好覺。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 肌腱修復：<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  長期夾擠會導致<strong>棘上肌腱撕裂</strong>或退化。我們將高濃度血小板 (PRP) 精準注射到受損的肌腱內，啟動組織再生，讓肌腱變強壯，恢復抓穩肱骨頭的能力。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 空間重塑：<a href="/treatments/manual" class="text-cyan-400 hover:underline">專業徒手治療</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  這是治本的關鍵！治療師會放鬆緊繃的<strong>胸小肌</strong>（改善圓肩），並強化<strong>下斜方肌</strong>與<strong>前鋸肌</strong>，讓肩胛骨後傾，自然地將肩峰下的空間打開，讓肌腱不再被夾到。
+              </p>
+          </div>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：把肩膀空間「練」出來 (8 招詳解)</h3>
+    <p style="color: #e2e8f0 !important;">肩夾擠的復健核心策略是：<strong>「放鬆緊繃的前側與上方肌肉」</strong>（避免肩膀內扣與聳肩），並<strong>「強化無力的後側與旋轉肌群」</strong>（把肱骨頭抓穩、向下拉）。</p>
+
+    <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 1. 四大伸展：釋放被壓縮的空間</h4>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">1. 門框胸肌伸展</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 放鬆胸大肌與胸小肌，改善圓肩，這是最重要的一步。
+            <br>
+            1. 找一個門框，雙手手肘彎曲 90 度抵住門框兩側（呈投降姿勢）。<br>
+            2. 一腳向前跨一步，身體重心慢慢往前壓。<br>
+            3. 感覺胸口前方肌肉被拉開。維持 30 秒，重複 3 次。<br>
+            <strong>注意：</strong> 腰不要過度前挺，肋骨收好。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">2. 上斜方肌伸展</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 放鬆習慣性「聳肩」的肌肉，減少肱骨頭往上撞擊。
+            <br>
+            1. 坐姿，右手抓住椅子邊緣固定肩膀（確保不聳肩）。<br>
+            2. 左手繞過頭頂，輕輕將頭往左邊肩膀拉。<br>
+            3. 感覺右側脖子到肩膀的線條被拉開。維持 15 秒，換邊。重複 3 次。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">3. 椅子胸椎伸展</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 矯正駝背。胸椎挺直了，肩膀才有空間活動。
+            <br>
+            1. 坐在有靠背的椅子上，臀部坐到底。<br>
+            2. 雙手抱頭，將上背部靠在椅背上緣。<br>
+            3. 吐氣時，上半身慢慢向後仰，伸展胸椎（感覺胸口打開）。<br>
+            4. 維持 10 秒，重複 5 次。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">4. 後關節囊伸展</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 放鬆肩膀後側，避免肱骨頭被推向前上方。
+            <br>
+            1. 將患側手水平橫過胸前。<br>
+            2. 用好手勾住患側手肘，往身體方向拉緊。<br>
+            3. 感覺肩膀後側緊繃。維持 30 秒，重複 3 次。<br>
+            <strong>注意：</strong> 過程中肩膀要下沉，不可聳肩。
+        </p>
+    </div>
+ <p><img src="/images/diseases/shoulder/impinge/e.jpg" alt="肩夾擠伸展運動"></p>
+  
+    <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 2. 四大肌力：強化旋轉肌與肩胛穩定</h4>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">5. 側躺外旋</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 強化棘下肌與小圓肌，這兩條肌肉負責將肱骨頭「向下拉」，避免撞擊。
+            <br>
+            1. 側躺，患側在上，腋下夾一條毛巾（避免代償）。<br>
+            2. 手肘彎曲 90 度，手握輕啞鈴或水瓶。<br>
+            3. 以手肘為軸心，慢慢將手向上轉開（像開門）。<br>
+            4. 慢慢放下。重複 15 下，做 3 組。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">6. 彈力帶水平外展</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 強化後三角肌與菱形肌，直接對抗圓肩。
+            <br>
+            1. 站立，雙手伸直握住彈力帶，與肩同寬，手掌朝上（外旋位）。<br>
+            2. 雙手向兩側拉開彈力帶，直到接觸胸口。<br>
+            3. 專注於<strong>肩胛骨向後夾緊</strong>的感覺。<br>
+            4. 慢慢回放。重複 15 下，做 3 組。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">7. 趴姿 Y 字上舉</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 訓練下斜方肌，幫助肩胛骨後傾，騰出肩峰下空間。
+            <br>
+            1. 趴在床緣或瑜珈墊上，雙手向斜前方伸直（呈 Y 字型），大拇指朝上。<br>
+            2. 用力將手臂抬離地面，感覺肩胛骨下角往脊椎方向收。<br>
+            3. 停留 3 秒，慢慢放下。重複 10 下。<br>
+            <strong>注意：</strong> 絕對不能聳肩（上斜方肌不能用力）。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">8. 牆壁天使/滑牆</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 活化前鋸肌，讓肩胛骨能順暢旋轉。
+            <br>
+            1. 面對牆壁站立，雙手前臂貼在牆上（也可套彈力帶在手腕增加強度）。<br>
+            2. 雙手慢慢沿著牆壁向上滑動，身體順勢微前傾。<br>
+            3. 滑到最高點時，感覺腋下肌肉用力推牆。<br>
+            4. 慢慢滑回。重複 12 下。
+        </p>
+    </div>
+ <p><img src="/images/diseases/shoulder/impinge/e.jpg" alt="肩夾擠肌力強化"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 打開空間，釋放肩膀自由！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">肩夾擠症候群是肩膀在發出「空間不足」的抗議。只要透過超音波精準診斷，配合 PRP 修復受損肌腱，並認真執行姿態矯正運動，絕對能擺脫舉手就痛的魔咒。宸新復健科，一起把肩膀的空間找回來！</p>
+              <p style="font-weight: bold; color: #059669 !important;">手舉高就痛？立即預約動態超音波檢查！</p>
+          </div>
+        `,
+        symptoms: [
+          '手舉高至 60°-120° 時肩膀外側劇痛 (疼痛弧)',
+          '做過頭動作（如晾衣服、拿高處物品）無力',
+          '手伸到背後扣內衣或拿皮夾時疼痛',
+          '肩膀前外側有痠痛感，有時延伸至手臂'
+        ],
+        treatments: [
+          '止痛藥與復健治療',
+          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引 PRP/增生注射</a>🔍️',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">肩胛胸廓關節鬆動與肩胛肌群訓練</a>🔍️',
+          '日常姿勢矯正'
+        ],
+        seoKeywords: [
+          '肩夾擠症候群',
+          '肩膀痛',
+          '疼痛弧',
+          '游泳肩',
+          '棘上肌腱炎',
+          '鈣化性肌腱炎',
+          'PRP注射',
+          '圓肩矯正'
+        ],
+        seoDescription: '肩夾擠症候群造成舉手疼痛與夜間痛。宸新復健科提供動態超音波診斷，運用PRP再生注射修復肌腱，搭配肩胛穩定訓練，有效解決肩膀夾擠問題。',
+        images: [
+          {src: '/images/diseases/shoulder/impinge/a.jpg', alt: '肩夾擠症候群'
+          }
+        ]
       }
+
     ]
   },
 
@@ -3605,6 +4230,171 @@ export const diseaseCategories: DiseaseCategory[] = [
             { src: '/images/diseases/hand/trigger/a.jpg', alt: '板機指疼痛示意圖'   
             }
           ]
+      },
+ {
+        id: 'scapholunate-ligament-injury',
+        slug: 'scapholunate-ligament-injury',
+        lastModified: '2026-01-24',
+        title: '舟月韌帶受傷',
+        description: '手腕撐地後痛很久？伏地挺身手腕背面劇痛？這可能不是普通扭傷，而是手腕的「十字韌帶」斷裂！深入解析舟月韌帶損傷，以及超音波導引 PRP 修復與飛鏢投擲復健運動的全攻略。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：幾個月前跌倒手撐地，或是打球時手腕被用力折到，當時以為只是單純的扭傷，貼貼藥布就會好。沒想到過了這麼久，<strong>手腕背面</strong>依然隱隱作痛？</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">特別是在做<strong>伏地挺身</strong>、撐身體起床，或是轉門把、擰毛巾時，手腕深處會傳來一陣無力感或刺痛，甚至會聽到「喀」的一聲？</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">小心！這很可能不是普通的扭傷，而是手腕最關鍵的穩定器—<strong>「舟月韌帶」</strong>受傷了。它被稱為「手腕的前十字韌帶」，一旦斷裂未治療，會導致手腕骨頭崩塌，演變成嚴重關節炎。在宸新復健科，我們透過<strong>高階超音波</strong>，能精準揪出這個常被漏診的隱形殺手，並提供免開刀的韌帶修復方案。</p>
+      
+          
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 什麼是舟月韌帶？手腕的「微型手銬」
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">我們的手腕由 8 塊小骨頭組成，其中最重要、活動度最大的兩塊是<strong>舟狀骨</strong>與<strong>月狀骨</strong>。舟月韌帶就像一副「微型手銬」，將這兩塊骨頭緊緊銬在一起，讓它們在活動時能同步轉動。</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">關鍵功能：</strong> 
+                          它負責傳遞力量並維持手腕骨頭的排列。如果它斷了，舟狀骨和月狀骨就會「分道揚鑣」（舟狀骨往前倒，月狀骨往後倒），導致手腕結構崩塌。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">受傷機制 (FOOSH)：</strong> 
+                          最常見的原因是 <strong>F</strong>all <strong>O</strong>n <strong>O</strong>ut<strong>S</strong>tretched <strong>H</strong>and（跌倒手撐地）。當手腕過度背伸加上強烈撞擊，這條韌帶就會被扯斷。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">為什麼常被誤診？</strong> 
+                          因為受傷初期，X 光看起來骨頭可能還沒移位（靜態正常），只有在用力握拳或特定角度下（動態）骨頭才會分開。一般的檢查很容易漏掉。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      <p><img src="/images/diseases/hand/sl/b.jpg" alt="舟月韌帶結構"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：如何分辨是韌帶斷了？</h3>
+          <p style="color: #e2e8f0 !important;">如果您的手腕痛符合以下特徵，請務必提高警覺：</p>
+          <ul style="color: #e2e8f0 !important; margin-left: 1rem;">
+              <li style="margin-bottom: 0.5rem;"><strong>特定痛點：</strong> 疼痛集中在手腕背面正中央 (就在手錶錶面的位置）。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>撐地劇痛：</strong> 無法做伏地挺身，手腕只要彎曲超過 90 度並受力就痛。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>握力下降：</strong> 手握東西覺得沒力，感覺手腕裡面「鬆鬆的」。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>華生氏測試陽性：</strong> 醫師按壓舟狀骨並活動手腕時，會誘發疼痛或聽到明顯的「喀」聲（骨頭復位的聲音）。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 宸新精準診斷：<a href="/about/clinic/ultrasound" class="text-cyan-400 hover:underline">高解析度超音波</a></h3>
+          <p style="color: #e2e8f0 !important;">對於舟月韌帶損傷，單靠一張普通的 X 光片往往不夠。我們採用進階的影像診斷：</p>
+           <p style="color: #e2e8f0 !important;">高解析度超音波檢查，可清楚看到關節中間的<strong>韌帶有無受傷，關節有無分離或是有積液</strong></p>
+
+      <p><img src="/images/diseases/hand/sl/c.jpg" alt="舟月韌帶超音波影像"></p>
+     
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新全方位治療：修復韌帶，重建穩定</h3>
+          <p style="color: #e2e8f0 !important;">舟月韌帶血液循環差，一旦受傷很難自己好。治療目標是<strong>「讓韌帶長回來」</strong>並<strong>「訓練肌肉代償穩定」</strong>。</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 急性期保護：強化型護腕</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  在受傷初期，搭配專業的<strong>強化型護腕</strong>，限制手腕的活動，特別是限制橈偏與伸展動作，給予韌帶癒合的環境。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 再生修復：<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引 PRP 注射</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  這是避免手術的關鍵！
+                  由於韌帶位於關節深處，醫師需透過高解析超音波導引，將<strong>高濃度血小板 (PRP)</strong> 精準注射到舟月韌帶的撕裂處（背側與掌側部分）。PRP 能提供強大的生長因子，促進膠原蛋白增生，讓鬆弛的韌帶重新變得強韌緊實。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 復健關鍵：<a href="/treatments/manual" class="text-cyan-400 hover:underline">本體感覺與肌力訓練</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  韌帶受傷後，手腕的「位置感」會變差。物理治療師會設計專屬的<strong>本體感覺訓練</strong>，並強化<strong>橈側屈腕肌</strong> 與 <strong>橈側伸腕肌</strong>，利用肌肉的力量來幫忙抓住不穩定的舟狀骨。
+              </p>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：飛鏢投擲運動</h3>
+          <p style="color: #e2e8f0 !important;">這是舟月韌帶受傷後<strong>最安全且重要</strong>的復健動作。因為這個動作平面幾乎不會拉扯到受傷的韌帶，卻能有效訓練穩定肌群。</p>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">1. 飛鏢投擲動作 </h4>
+              <p style="color: #e2e8f0 !important;">
+                  想像你在射飛鏢。
+                  <br>1. <strong>起始姿勢：</strong> 手腕向後、向大拇指側偏（像拿著飛鏢準備射出）。
+                  <br>2. <strong>動作：</strong> 手腕向前、向小指側偏（像把飛鏢射出去）。
+                  <br>3. 動作要在一個斜向的平面上進行。初期空手做，後期可拿輕啞鈴或水瓶增加阻力。
+                  <br>4. 重複 20 次，做 3 組。
+              </p>
+          </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 等長收縮訓練</h4>
+              <p style="color: #e2e8f0 !important;">
+                  在不動到關節的情況下練肌力。
+                  <br>1. 手握拳，手腕保持正中位置（不彎不翹）。
+                  <br>2. 用另一隻手給予阻力，嘗試做伸展、屈曲、橈偏、尺偏的動作，但<strong>手腕撐住不動</strong>。
+                  <br>3. 每個方向維持 5-10 秒。
+              </p>
+          </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">3. 握力球訓練</h4>
+              <p style="color: #e2e8f0 !important;">
+                  強化前臂肌肉，增加動態穩定。
+                  <br>1. 手握軟式握力球或網球。
+                  <br>2. 緩慢用力握緊，維持 3 秒，再緩慢放鬆。
+                  <br>3. <strong>注意：</strong> 握球時手腕要保持正中，不要彎曲。
+              </p>
+          </div>
+          <p><img src="/images/diseases/hand/sl/d.jpg" alt="舟月韌帶受傷居家運動"></p>
+        
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 別讓「小扭傷」變成「大退化」！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">舟月韌帶損傷如果置之不理，幾年後非常容易演變成<strong>手腕塌陷 (SLAC Wrist)</strong>，最終只能進行腕骨融合手術。早期發現、早期治療至關重要。透過動態超音波確診，並利用 PRP 修復韌帶，宸新復健科能協助您穩住手腕結構，避免關節提早報銷。手腕痛很久沒好？請務必來做詳細檢查！</p>
+              <p style="font-weight: bold; color: #059669 !important;">手腕撐地就會痛？懷疑韌帶損傷？立即預約動態超音波！</p>
+          </div>
+        `,
+        symptoms: [
+          '手腕背面有明確壓痛點',
+          '伏地挺身或撐地起床時手腕劇痛',
+          '手腕活動範圍受限（特別是向後彎）',
+          '轉門把、擰毛巾時感覺手腕無力或疼痛',
+        ],
+        treatments: [
+          '止痛藥與復健治療',
+          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引 PRP/增生注射</a>🔍️',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">周邊肌肉放鬆與肌力訓練</a>🔍️',
+          '手術固定'
+        ],
+        seoKeywords: [
+          '舟月韌帶受傷',
+          'Scapholunate ligament',
+          '手腕扭傷',
+          '手腕痛',
+          '伏地挺身手腕痛',
+          'PRP注射',
+          '泰瑞托馬斯徵象',
+          '手腕復健'
+        ],
+        seoDescription: '舟月韌帶受傷常被誤為普通扭傷，導致長期手腕痛與撐地無力。宸新復健科提供動態超音波診斷，運用PRP再生注射修復韌帶，搭配飛鏢投擲運動，重建手腕穩定。',
+        images: [
+          {src: '/images/diseases/hand/sl/a.jpg', alt: '舟月韌帶受傷'
+          }
+        ]
       }
 
     ]
@@ -3782,9 +4572,8 @@ export const diseaseCategories: DiseaseCategory[] = [
           ],
           treatments: [
             '止痛藥及復健',
-            '玻尿酸潤滑注射',
+            '<a href="/treatments/hyaluronic-acid" class="text-cyan-400 hover:underline">玻尿酸注射 (潤滑)</a>🔍️',
             '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️',
-
             '<a href="/treatments/manual" class="text-cyan-400 hover:underline">股四頭肌強化運動</a>🔍️',
           ],
           seoKeywords: [
@@ -4639,6 +5428,390 @@ export const diseaseCategories: DiseaseCategory[] = [
         images: [
           { 
             src: '/images/diseases/knee/itb/a.jpg', alt: '髂脛束症候群疼痛示意圖' 
+          }
+        ]
+      },
+ {
+        id: 'chondromalacia-patellae',
+        slug: 'chondromalacia-patellae',
+        lastModified: '2026-01-24',
+        title: '髕骨軟化症 (跑者膝)',
+        description: '看電影膝蓋痠痛？下樓梯膝蓋前方軟軟的？這不是退化性關節炎，而是年輕人常見的「髕骨軟化症」！深入解析髕骨外翻機制，以及玻尿酸潤滑、PRP 修復與內側廣肌訓練的全方位攻略。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：坐著看電影或搭長途飛機，膝蓋維持彎曲久了，覺得膝蓋前方痠痛難耐，非得要把腳伸直動一動才舒服？或是平常走路還好，但只要<strong>下樓梯</strong>或<strong>蹲下</strong>時，膝蓋前方會感到痠軟無力，甚至聽到「喀喀」的摩擦聲？</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">這不是老人的專利，而是年輕女性、路跑愛好者及久坐上班族最常見的膝蓋問題——<strong>「髕骨軟化症」</strong>，又常被稱為<strong>跑者膝</strong>。這代表您的膝蓋骨（髕骨）背面的軟骨正在被磨損！在宸新復健科，我們不只止痛，更重視<strong>「軌跡矯正」</strong>，透過超音波導引注射修復軟骨，並教您如何鍛鍊關鍵肌肉，把跑掉的膝蓋骨「拉回正軌」。</p>
+                        <p><img src="/images/diseases/knee/pfps/b.jpg" alt="髕骨軟化症示意圖"></p>
+          
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 為什麼軟骨會軟化？膝蓋裡的「火車脫軌」
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">髕骨（膝蓋骨）就像一列火車，在股骨（大腿骨）末端的軌道（滑車溝）上滑動。正常情況下，火車應該穩穩地行駛在軌道正中央，軟骨之間有潤滑液，幾乎沒有摩擦。</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">軌跡偏移：</strong> 
+                          這是主因！如果大腿外側的肌肉（髂脛束、股外側肌）太緊，而內側的肌肉（股內側肌）太弱，髕骨就會被<strong>「往外拉」</strong>。導致髕骨外翻，脫離軌道中央，不斷磨損外側的軟骨。
+                      </div>
+                  </li>
+                                          <p><img src="/images/diseases/knee/pfps/c.jpg" alt="髕骨外翻原理"></p>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">軟化與磨損：</strong> 
+                          健康的軟骨像硬橡膠一樣有彈性。但在長期摩擦壓力下，軟骨會開始水腫、變軟（第一期），接著出現裂縫（第二期），最後像螃蟹殼一樣裂開脫落（第三、四期），這時就會變成不可逆的退化性關節炎。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">Q角 (Q-Angle) 過大：</strong> 
+                          女性因為骨盆較寬，大腿骨與小腿骨的角度（Q角）較大，俗稱的X形腿，天生髕骨就更容易往外滑，這也是為什麼女性患者遠多於男性的原因。
+                      </div>
+                  </li>
+                    <p><img src="/images/diseases/knee/pfps/d.jpg" alt="髕骨軟化症因Q角 (Q-Angle) 過大"></p>
+              </ul>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：你的膝蓋在抗議嗎？</h3>
+          <p style="color: #e2e8f0 !important;">髕骨軟化症的痛點通常在「膝蓋骨的正後方」或周圍，很難指出確切位置：</p>
+          <ul style="color: #e2e8f0 !important; margin-left: 1rem;">
+              <li style="margin-bottom: 0.5rem;"><strong>電影院徵象：</strong> 久坐膝蓋彎曲超過 30 分鐘，膝蓋前方會痠痛，伸直會緩解。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>下樓梯痛 > 上樓梯痛：</strong> 下樓梯時，股四頭肌要用力煞車，這時髕骨對關節面的壓力最大。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>摩擦音 ：</strong> 蹲下或伸直膝蓋時，手摸膝蓋骨會感覺到<strong>沙沙的摩擦感</strong> ，或是聽到喀喀聲。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>假性卡住：</strong> 偶爾覺得膝蓋軟腳或卡住，但甩一甩又好了（這是因為粗糙的軟骨面互相摩擦）。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 宸新精準診斷：看見軟骨的傷痕</h3>
+          <p style="color: #e2e8f0 !important;">早期的軟骨軟化，X 光通常看起來是「正常」的（因為 X 光照不出軟骨）。我們需要更精細的檢查：</p>
+          
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 動態超音波軌跡評估</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  我們會請患者做膝蓋彎曲伸直的動作，透過超音波直接觀察髕骨是否有<strong>外翻 (Lateral subluxation)</strong> 或傾斜。同時檢查關節內是否有積水（滑囊炎）。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. X 光檢查</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  拍攝髕骨，觀察膝蓋骨有沒有歪斜或偏移。
+              </p>
+              <p><img src="/images/diseases/knee/pfps/e.jpg" alt="髕骨外翻x光"></p>
+          </div>
+      
+          
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新全方位治療：潤滑、修復、拉回正軌</h3>
+          <p style="color: #e2e8f0 !important;">軟骨一旦磨損就很難再生，因此治療目標是<strong>「保護剩餘軟骨」</strong>並<strong>「矯正滑動軌跡」</strong>。</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 為關節上油：玻尿酸注射 (Hyaluronic Acid)</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  這就像幫引擎加機油。
+                  在超音波導引下，將高分子量玻尿酸注射進關節腔，增加潤滑度，減少髕骨與股骨之間的摩擦阻力，並覆蓋受傷的軟骨表面，提供緩衝保護。這是緩解「喀喀聲」與疼痛最直接的方法。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 軟骨修復：<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 自體血小板注射</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  如果軟骨已經有裂縫或缺損，單純潤滑不夠。
+                  PRP 富含生長因子，能抑制關節內的發炎反應，並促進軟骨細胞與基質的修復。對於二、三期的髕骨軟化症，PRP 是延緩置換人工關節的關鍵治療。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 釋放張力：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波</a>與徒<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <strong>震波治療：</strong> 放鬆大腿外側緊繃的髂脛束與股外側肌腱，減少將髕骨向外拉扯的力量。
+                  <br><strong>徒手治療：</strong> 治療師會進行髕骨鬆動術，並放鬆攣縮的支持帶，增加髕骨向內滑動的活動度。
+              </p>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：拯救膝蓋外翻的特訓</h3>
+          <p style="color: #e2e8f0 !important;">除非您把大腿內側肌肉練強，否則打再多針，髕骨還是會被外面拉跑。請務必勤做以下運動：</p>
+      
+          <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 1. 放鬆外側：解開緊箍咒</h4>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">1. 滾筒放鬆髂脛束</h4>
+              <p style="color: #e2e8f0 !important;">
+                  大腿外側太緊是髕骨外翻的主因。
+                  <br>1. 側躺，將泡沫滾筒放在大腿外側（骨盆到膝蓋之間）。
+                  <br>2. 用手肘支撐，上下滾動尋找痠痛點。
+                  <br>3. <strong>注意：</strong> 不要滾到骨頭上，會很痛。每個點停留 30 秒。
+              </p>
+          </div>
+      
+          <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 2. 強化內側：VMO 的精準鍛鍊</h4>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 坐姿夾球抬腿</h4>
+              <p style="color: #e2e8f0 !important;">
+                  這是訓練內側廣肌 (VMO) 最有效的動作。
+                  <br>1. 坐在椅子上，背挺直。雙膝中間夾一顆枕頭或瑜珈球。
+                  <br>2. <strong>用力夾緊球</strong>（啟動內收肌群），同時慢慢將小腿伸直。
+                  <br>3. 伸直到最直時，大腿前內側用力繃緊，腳尖勾起。
+                  <br>4. 停留 5 秒，慢慢放下。重複 15 下。
+              </p>
+          </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">3. 直膝抬腿</h4>
+              <p style="color: #e2e8f0 !important;">
+                  在不磨損軟骨的情況下練肌力。
+                  <br>1. 平躺，患側腳伸直，腳尖稍微向外轉（外八，這樣更能練到內側）。
+                  <br>2. 大腿用力，將整條腿抬高 45 度。
+                  <br>3. 停留 5 秒，慢慢放下。重複 15 下。
+              </p>
+          </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">4. 蚌殼式 - 臀肌穩定</h4>
+              <p style="color: #e2e8f0 !important;">
+                  膝蓋的問題常常源自於屁股無力（導致股骨內轉）。
+                  <br>1. 側躺，雙膝彎曲 90 度併攏。
+                  <br>2. 腳跟互貼，像蚌殼一樣將上面的膝蓋打開。
+                  <br>3. 感覺屁股側邊痠痠的。重複 15 下。
+              </p>
+          </div>
+         <p><img src="/images/diseases/knee/pfps/f.jpg" alt="髕骨軟化症髕骨外翻居家放鬆運動"></p>
+        
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 別讓膝蓋「出軌」！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">髕骨軟化症是軟骨磨損的前奏曲。如果忽視膝蓋前方的痠痛與喀喀聲，等到軟骨磨光了，就真的不可逆了。透過玻尿酸與 PRP 的及時介入，加上正確的肌力訓練矯正軌跡，您絕對可以延長膝蓋的使用壽命。宸新復健科，幫您的膝蓋重回正軌，跑得更長遠！</p>
+              <p style="font-weight: bold; color: #059669 !important;">上下樓梯膝蓋痛？懷疑軟骨磨損？立即預約來診所評估！</p>
+          </div>
+        `,
+        symptoms: [
+          '久坐膝蓋彎曲後，起身時膝蓋前方痠痛',
+          '上下樓梯（尤其是下樓）或蹲下時膝蓋無力、疼痛',
+          '膝蓋活動時有喀喀聲或沙沙的摩擦感',
+          '髕骨周圍有腫脹感，偶爾感覺膝蓋軟腳',
+        ],
+        treatments: [
+          '<a href="/treatments/hyaluronic-acid" class="text-cyan-400 hover:underline">玻尿酸注射 (潤滑)</a>🔍️',
+          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引 PRP 再生注射 (修復)</a>🔍️',
+          '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療 (放鬆髂脛束)</a>🔍️',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">髕骨鬆動術 (徒手治療)</a>🔍️'
+        ],
+        seoKeywords: [
+          '髕骨軟化症',
+          'Chondromalacia patellae',
+          '跑者膝',
+          '膝蓋前側痛',
+          '下樓梯膝蓋痛',
+          '玻尿酸注射',
+          'PRP注射',
+          '髕骨外翻'
+        ],
+        seoDescription: '髕骨軟化症（跑者膝）造成膝蓋前側痛與下樓梯無力。宸新復健科提供超音波導引玻尿酸與PRP注射，搭配內側廣肌訓練，矯正髕骨軌跡，延緩膝蓋退化。',
+        images: [
+          {      src: '/images/diseases/knee/pfps/a.jpg',  alt: '股四頭肌肌腱炎' 
+          }
+        ]
+      },
+ {
+        id: 'quadriceps-tendonitis',
+        slug: 'quadriceps-tendonitis',
+        lastModified: '2026-01-24',
+        title: '股四頭肌肌腱炎',
+        description: '膝蓋上方按壓劇痛？下樓梯或蹲下時膝蓋無力？小心是「股四頭肌肌腱炎」甚至合併鈣化！深入解析鈣化成因，以及運用體外震波擊碎鈣化點與 PRP 修復肌腱的全方位治療攻略。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的困擾：平常走路還好，但只要<strong>上下樓梯（特別是下樓）</strong>、或是想要<strong>深蹲、從椅子上站起來</strong>的瞬間，膝蓋骨（髕骨）的<strong>正上方</strong>就會傳來一陣尖銳的刺痛？甚至在早上起床時，覺得膝蓋僵硬，活動一下會有「卡卡」的摩擦聲？</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">很多人以為這是膝蓋退化，但如果痛點明確在「膝蓋骨上緣」，這通常是<strong>「股四頭肌肌腱炎」</strong>。若是長期反覆發炎未癒，受傷的肌腱組織甚至會變硬、形成像小石頭一樣的沉積物，演變成<strong>「鈣化性肌腱炎」</strong>。在宸新復健科，我們透過高解析超音波揪出這些隱藏的鈣化點，並利用<strong>聚焦式體外震波</strong>與<strong>再生注射</strong>，幫您的膝蓋「除垢」並修復強韌度。</p>
+      
+         
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 什麼是股四頭肌腱？膝蓋的「煞車系統」
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">大腿前側強壯的肌肉叫做「股四頭肌」。這四條肌肉向下匯集，變成一條強韌的肌腱，連在膝蓋骨（髕骨）的上緣，這就是<strong>股四頭肌腱</strong>。</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">功能：</strong> 
+                          負責將膝蓋伸直。當我們<strong>下樓梯、下山</strong>或落地緩衝時，它扮演關鍵的<strong>「離心煞車」</strong>角色，承受體重數倍的拉力。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">為什麼會鈣化？</strong> 
+                          當肌腱反覆撕裂傷，身體來不及修復，就會用「鈣質」來填補受傷的洞（錯誤的修復機制）。時間久了，柔軟的肌腱裡長出了硬硬的鈣化點（骨質沉積），就像鞋子裡跑進小石頭，每次活動都會磨到，造成劇痛。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      
+            <p><img src="/images/diseases/knee/quadri/b.jpg" alt="股四頭肌肌腱結構"></p>
+        
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：如何分辨是單純發炎還是鈣化？</h3>
+          <p style="color: #e2e8f0 !important;">股四頭肌肌腱炎的症狀非常典型，若合併鈣化，症狀會更明顯：</p>
+          <ul style="color: #e2e8f0 !important; margin-left: 1rem;">
+              <li style="margin-bottom: 0.5rem;"><strong>特定痛點：</strong> 膝蓋骨（髕骨）的<strong>正上方邊緣</strong>有明顯壓痛，按下去會有明顯壓痛。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>離心收縮痛：</strong> <strong>下樓梯</strong>比上樓梯痛，或是從蹲姿要站起來的那一瞬間最痛。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>晨間僵硬：</strong> 早上起床膝蓋覺得緊緊的，活動開了比較好，但動久了又開始痛。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>鈣化特徵：</strong> 若肌腱內有鈣化，膝蓋活動時可能會聽到<strong>沙沙聲或喀喀聲</strong>，且保守治療（吃藥復健）效果通常不佳，容易反覆發作。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 宸新精準診斷：揪出軟組織裡的石頭</h3>
+          <p style="color: #e2e8f0 !important;">一般 X 光可以看到明顯的鈣化（白點），但對於早期的肌腱撕裂或微小鈣化，必須依靠超音波：</p>
+          
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;"><a href="/about/clinic/ultrasound" class="text-cyan-400 hover:underline">高解析骨骼肌肉超音波</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  我們可以清楚看到肌腱是否<strong>腫脹、撕裂</strong>，以及內部是否有<strong>高回音的鈣化亮點</strong>。如果是「軟式鈣化」（還在發炎期），超音波下會呈現混濁狀；如果是「硬式鈣化」（陳舊傷），則會有明顯的陰影。這決定了我們治療的能量要開多強。
+              </p>
+          </div>
+             <p><img src="/images/diseases/knee/quadri/c.jpg" alt="股四頭肌肌腱鈣化超音波圖"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新全方位治療：重建肌腱，擊碎鈣化</h3>
+          <p style="color: #e2e8f0 !important;">針對合併鈣化的肌腱炎，單純吃消炎藥效果很差（因為石頭還在）。我們的策略是<strong>「先破壞，再建設」</strong>。</p>
+      
+                    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 肌腱修復：<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引 PRP 注射</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  我們利用超音波導引，將<strong>高濃度血小板 (PRP)或高濃度葡萄糖</strong> 精準注射到肌腱撕裂處。PRP 富含生長因子，能加速膠原蛋白排列，讓肌腱重新長好，恢復原有的彈性與強度，避免再次撕裂或受傷。
+              </p>
+          </div>
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 擊碎鈣化：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波 (ESWT)</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  這是治療鈣化性肌腱炎的<strong>黃金標準</strong>。
+                  利用高能量的聲波聚焦在鈣化點上，將大塊的鈣化結晶<strong>「震碎」</strong>成粉末，讓身體的巨噬細胞將其吸收代謝掉。同時，震波能刺激微血管新生，解決慢性發炎缺氧的問題。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 肌肉放鬆：<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手放鬆運動治療</a>🔍️</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  長時間緊繃的股四頭肌，會增加肌鍵的張力，更容易疼痛與受傷，經由肌肉的放鬆，改善疼痛，並搭配肌力強化，避免後續二次受傷。
+              </p>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+          <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：居家復健二部曲</h3>
+    <p style="color: #e2e8f0 !important;">面對股四頭肌肌腱炎，我們的策略是<strong>「先洩壓，後強化」</strong>。請依照順序，先徹底放鬆緊繃的肌肉與激痛點，再進行離心肌力訓練排列肌腱：</p>
+
+    <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 1. 放鬆與伸展：幫緊繃的大腿「洩壓」</h4>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">1. 滾筒筋膜放鬆</h4>
+        <p style="color: #e2e8f0 !important;">
+            這能大面積放鬆股四頭肌的淺層筋膜，改善循環。
+            <br>1. 趴姿，將泡沫滾筒放在大腿下方。
+            <br>2. 手肘撐地，利用身體重量前後滾動。
+            <br>3. <strong>範圍：</strong> 從髖關節下方一直滾到<strong>膝蓋上方 5 公分處</strong>（絕對不要滾到膝蓋骨頭上）。
+            <br>4. 遇到特別痠痛的點，停留 30 秒直到感覺放鬆。
+        </p>
+    </div>
+    
+    <div style="margin-bottom: 2rem;">
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      <h4 style="color: #22d3ee !important;">2. 按摩球深層按壓</h4>
+        <p style="color: #e2e8f0 !important;">
+            針對大腿前側最深層、最容易拉扯肌腱的「股直肌」進行定點釋放。
+            <br>1. 坐姿，將按摩球（或網球）放在大腿前側最緊繃、按下去會痠痛的硬塊上。
+            <br>2. 雙手交疊在球上施加壓力（力道適中，微痠即可）。
+            <br>3. <strong>進階技巧 - 主動釋放：</strong> 壓住球不動，小腿慢慢做「伸直-彎曲」的動作，讓肌肉在球下方滑動，解開深層沾黏。
+            <br>4. 每個點操作 30-60 秒。
+        </p>
+    </div>
+  
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">3. 股四頭肌伸展</h4>
+        <p style="color: #e2e8f0 !important;">
+            放鬆完後進行伸展，恢復肌肉長度，減少對肌腱的張力。
+            <br>1. 站立，手扶牆壁保持平衡。
+            <br>2. 一手抓住患側腳踝，往屁股方向拉。
+            <br>3. <strong>關鍵：</strong> 骨盆要往前推，不要翹屁股，感覺大腿前側緊繃。
+            <br>4. 維持 30 秒，重複 3 次。
+        </p>
+    </div>
+
+    <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 2. 肌力訓練：離心運動是復健關鍵</h4>
+    <p style="color: #e2e8f0 !important;">肌腱炎最怕完全不動（會沾黏），也怕亂動（會撕裂）。<strong>「離心收縮訓練」</strong>是被證實最能排列肌腱纖維的運動。</p>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">4. 直膝抬腿 - 急性期專用</h4>
+        <p style="color: #e2e8f0 !important;">
+            在不彎曲膝蓋（不磨損肌腱）的情況下維持肌力。
+            <br>1. 平躺，患側腳伸直，好腳彎曲踩地。
+            <br>2. 大腿前側用力，將腳整條抬起約 30-45 度。
+            <br>3. 停留 5 秒，慢慢放下。重複 15 下。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">5. 離心深蹲 - 復原期必做</h4>
+        <p style="color: #e2e8f0 !important;">
+            利用「慢速下放」來強化肌腱韌性。
+            <br>1. 找一個斜板（或腳跟墊高書本）站立。
+            <br>2. 雙腳正常站起。
+            <br>3. <strong>動作重點：</strong> 下蹲時用患側單腳支撐（或雙腳重心偏患側），<strong>非常緩慢</strong>地蹲下（數 5 秒）。
+            <br>4. 站起來時可以用好腳幫忙。
+            <br>5. 重複 10 下，做 3 組。
+        </p>
+    </div>
+              <p><img src="/images/diseases/knee/quadri/d.jpg" alt="股四頭肌肌腱炎居家運動"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 修復撕裂擊碎鈣化，找回膝蓋的煞車力！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">股四頭肌腱炎如果不治療，容易因為反覆發炎而導致鈣化及撕裂，讓膝蓋上方永遠有個「痛點」。別讓這個小石頭或撕裂阻礙了您的行動力。透過超音波精準定位，搭配增生療法修復肌腱，運用震波擊碎鈣化，宸新復健科能協助您徹底解決膝蓋上方的頑固疼痛，重新享受爬山、運動的樂趣！</p>
+              <p style="font-weight: bold; color: #059669 !important;">膝蓋上方痛？懷疑有鈣化？立即預約超音波檢查！</p>
+          </div>
+        `,
+        symptoms: [
+          '膝蓋骨（髕骨）正上方邊緣有明顯壓痛點',
+          '下樓梯或深蹲站起時，膝蓋上方劇痛',
+          '早晨起床膝蓋僵硬，活動後稍解',
+          '大腿前側肌肉緊繃，膝蓋彎曲角度受限'
+        ],
+        treatments: [
+          '止痛藥復健治療',
+          '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波 (針對鈣化)</a>🔍️',
+          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引 PRP/增生注射</a>🔍️',
+           '<a href="/treatments/manual" class="text-cyan-400 hover:underline">軟組織鬆動術</a>🔍️'
+        ],
+        seoKeywords: [
+          '股四頭肌腱炎',
+          'Quadriceps tendonitis',
+          '鈣化性肌腱炎',
+          '膝蓋上方痛',
+          '下樓梯膝蓋痛',
+          '體外震波',
+          'PRP注射',
+          '跳躍膝'
+        ],
+        seoDescription: '股四頭肌肌腱炎常造成膝蓋上方疼痛與鈣化，導致下樓梯無力。宸新復健科提供聚焦式體外震波擊碎鈣化，運用PRP再生注射修復肌腱，徹底解決膝蓋頑疾。',
+        images: [
+          {              src: '/images/diseases/knee/quadri/a.jpg',  alt: '股四頭肌肌腱炎' 
           }
         ]
       }

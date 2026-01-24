@@ -86,7 +86,19 @@ const fullFacilitiesData: FacilityItem[] = [
     contentHtml: `
       <p>相較於 X 光看骨頭，高解析度肌肉骨骼超音波能清楚看到<strong>肌腱、韌帶、神經與肌肉</strong>的動態狀況。</p><br>
       <p>我們堅持使用醫學中心等級的頂級規格超音波，畫質解析度更好，最重要的是，我們堅持進行<strong>超音波導引注射</strong>，邊掃描邊打針，將 PRP 或增生藥劑準確送達病灶，避免誤傷神經血管，大幅提升治療成功率。搭配高階彩色都卜勒血流偵測，也能精準判斷發炎程度</p>
-    `
+    <div class="my-8 flex justify-center">
+<iframe 
+  width="315" 
+  height="560" 
+  src="https://www.youtube.com/embed/KVp7HFpl3RY" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen
+  class="max-w-full rounded-xl shadow-lg border border-slate-700"
+></iframe>
+ </div>
+      `
   },
 
   // ==========================================
@@ -505,6 +517,19 @@ const fullFacilitiesData: FacilityItem[] = [
     `
   },
 
+  {
+    id: 'shoulder-dilation',
+    title: '肩關節擴張術',
+    description: '五十肩注射治療，精準導引注射不可或缺的「醫師第三隻眼，肩關節擴張」。',
+    keywords: ['肌骨超音波', '超音波導引注射', '五十肩', '手舉不高', '晚上肩膀痛', '新竹超音波檢查'],
+    imageUrl: '/images/clinic/o.jpg',
+    contentHtml: `
+      <p>五十肩治療效果顯著幾天內可有效<strong>改善疼痛跟活動度</strong>。</p><br>
+      <p>經由液體將緊繃沾黏的<strong>肩關節腔撐開</strong>，增加關節的空腔還有潤滑關節</strong>。</p><br>
+      <p>我們堅持使用醫學中心等級的頂級規格超音波，畫質解析度更好，最重要的是，我們堅持進行<strong>超音波導引注射</strong>，邊掃描邊打針，精準將食鹽水還有消炎針注入關節腔，大幅提升治療成功率。</p>
+    <p><img src="/images/clinic/p.jpg" alt="肩關節擴張超音波導引注射"></p>
+      `
+  },
   // ==========================================
   // 復健區域 (Rehab Areas)
   // ==========================================

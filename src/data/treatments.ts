@@ -257,6 +257,10 @@ const fullTreatmentsData: Treatment[] = [
             <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
             <div><strong>治療師親自操作：</strong> 震波能量的強弱、頻率與角度調整是治療成功的關鍵。本院全程由物理治療師親自評估與操作，隨時根據您的感受調整參數，安全又有效。</div>
         </li>
+                        <li style="margin-bottom: 0; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
+            <div><strong>收費標準(每次3000發)：</strong>第一次體驗價：<strong>1500元</strong>。單次施打：<strong>2800元</strong>。購買療程(3次共9000發)：<strong>6800元</strong>。</div>
+        </li>
     </ul>
 </div>
 
@@ -679,9 +683,184 @@ const fullTreatmentsData: Treatment[] = [
         answer: '雖然雷射能立即止痛，但受傷的組織仍需要時間修復。建議治療後 24 小時內避免劇烈運動或提重物，但可以進行日常的輕度活動與伸展。'
       }
     ]
-  }
-];
+  },
 
+
+{
+  slug: 'hyaluronic-acid',
+  title: '超音波導引玻尿酸注射',
+  lastModified: '2026-01-24',
+  subtitle: '精準導引、潤滑關節、延緩膝蓋退化',
+  description: '新竹玻尿酸注射推薦。堅持採用高解析超音波導引，將玻尿酸精準注入關節腔，有效緩解退化性關節炎與五十肩疼痛，比傳統盲打更安全有效。',
+  image: '/images/treatments/e.jpg',
+  features: ['超音波導引', '潤滑關節', '延緩置換'],
+  seoTitle: '新竹玻尿酸注射 - 退化性關節炎/膝蓋痛/五十肩治療 | 宸新復健科',
+  seoDescription: '新竹玻尿酸治療推薦。宸新復健科採用高階超音波導引注射技術，針對退化性膝關節炎、五十肩沾黏與運動傷害，提供精準的關節潤滑治療。免開刀、低疼痛，有效延緩關節置換時間。',
+  keywords: ['新竹玻尿酸', '膝蓋打玻尿酸', '退化性關節炎', '超音波導引注射', '五十肩治療', '關節潤滑', '新竹復健科', '髖關節疼痛'],
+  youtubeVideoId: '', // 若有相關衛教影片可填入 ID
+  contentHtml: `
+    <p>您是否發現上下樓梯時膝蓋開始無力、發出喀喀聲？或是早上起床時關節僵硬，活動一下才緩解？這些都是<strong>退化性關節炎</strong> 的早期警訊。當口服葡萄糖胺、止痛藥效果有限，又不希望走到置換人工關節這一步時，<strong>玻尿酸注射</strong> 是醫學界公認能有效延緩退化的「關節保養液」。</p>
+    <br>
+    <p>然而，玻尿酸不是「打了就有效」，重點在於<strong>「打在哪裡」</strong>。宸新復健科堅持拒絕傳統的「盲打」方式，全療程採用<strong>高解析骨骼肌肉超音波導引</strong>，讓醫師擁有一雙透視眼，避開神經血管，確保每一滴珍貴的玻尿酸都準確進入關節腔與受損軟骨表面。</p>
+
+    <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+            📢 為什麼選擇宸新「超音波導引」注射？
+        </h2>
+        
+        <p style="font-size: 1.1rem; color: #78350f;">傳統的關節注射憑藉的是醫師的手感與解剖經驗（盲打），但在關節變形或腫脹的情況下，盲打的準確率可能大幅下降，甚至誤傷周邊組織。宸新復健科採用精準醫療標準：</p>
+        
+        <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                <div><strong>100% 準確度：</strong> 透過螢幕即時顯像，醫師能清楚看見針頭路徑，確認針尖進入關節腔空隙後才推藥，確保藥物直達病灶，不浪費任何一滴藥劑。</div>
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                <div><strong>大幅降低疼痛：</strong> 因為看得到，所以能避開神經與血管，並選擇最短、阻力最小的路徑進針，大幅減少注射過程的痠痛感與出血風險。</div>
+            </li>
+            <li style="margin-bottom: 0; display: flex; align-items: start;">
+                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                <div><strong>動態評估病況：</strong> 注射同時，醫師會利用超音波檢查關節積水狀況。若有積水，可先在超音波導引下精準抽出積液，再注入玻尿酸，效果加倍。</div>
+            </li>
+      
+             <li style="margin-bottom: 0; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
+            <div><strong>收費標準：</strong>短效型玻尿酸(建議每周連續三次，半年一輪)：<strong>1600元</strong>。長效型玻尿酸(半年一次)：<strong>8000元</strong>。</div>
+        </li>
+        </ul>
+    </div>
+          <p><img src="/images/treatments/ha/a.jpg" alt="膝關節積水超音波圖"></p>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>🔬 玻尿酸如何保護關節？三大作用機制</h3>
+    <p>人體的關節液中原本就含有高濃度的玻尿酸，負責潤滑與緩衝。但隨著年齡增長或過度使用，人體自行製造玻尿酸的速度跟不上消耗，導致關節液變稀，軟骨開始磨損。</p>
+    <br>
+    <p>注射醫用級玻尿酸就像是幫汽車引擎「換機油」，主要功能如下：</p>
+    <ol>
+        <li><strong>物理性潤滑：</strong> 高黏稠度的玻尿酸能覆蓋在粗糙的軟骨表面，減少骨頭間的摩擦，消除活動時的卡卡聲與不適感。</li>
+        <li><strong>吸震緩衝：</strong> 玻尿酸具有極佳的黏彈性，能像氣墊一樣吸收行走或運動時的衝擊力，保護軟骨不再繼續磨損。</li>
+        <li><strong>抗發炎與止痛：</strong> 研究顯示，高分子量玻尿酸能抑制發炎介質，減少關節滑膜的發炎反應，從而減輕疼痛。</li>
+    </ol>
+
+    <p>
+
+</p>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>🎯 誰適合打玻尿酸？適應症範圍</h3>
+    <p>玻尿酸注射主要針對<strong>輕度至中度</strong>的退化性關節炎患者效果最佳。若軟骨已經完全磨損（重度退化），效果則較有限。</p>
+
+    <h4>常見適應症包括：</h4>
+    <ul>
+        <li><strong>膝關節退化：</strong> 上下樓梯痛、蹲下站不起來、天氣變化時痠痛。</li>
+        <li><strong>五十肩 (沾黏性肩關節囊炎)：</strong> 手舉不起來、無法扣內衣、夜間痛醒。搭配<strong>關節擴張術</strong>注射玻尿酸，能撐開沾黏的關節囊，大幅改善活動度。</li>
+        <li><strong>髖關節磨損：</strong> 走路鼠蹊部疼痛、穿襪子困難。</li>
+        <li><strong>踝關節炎：</strong> 舊傷導致的長期腳踝腫脹疼痛。</li>
+        <li><strong>運動傷害保養：</strong> 馬拉松跑者、籃球愛好者等高衝擊運動族群的軟骨保養。</li>
+    </ul>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>⚖️ 玻尿酸 vs. PRP vs. 類固醇：我該選哪種？</h3>
+    <p>這是門診病患最常問的問題。簡單來說，這三種針劑的「任務」不同，醫師會根據您的嚴重程度建議適合的療程，甚至採用<strong>複合式治療</strong>。</p>
+
+    <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+            <thead>
+                <tr style="background-color: #0369a1;">
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left;">治療項目</th>
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left;">主要作用</th>
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left;">適合對象</th>
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left;">特點</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #0369a1;">玻尿酸</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">潤滑、緩衝、保護軟骨</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">輕中度退化、關節卡卡</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">像是幫關節「上油」，立即改善活動度，副作用極低。</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #b91c1c;"><a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">修復組織、再生</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">肌腱撕裂、軟骨磨損較明顯者</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">利用自身生長因子修復，效果較持久，針對「受傷」修復。</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #f3f4f6;">類固醇</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">強力消炎、止痛</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">急性發炎期、積水腫脹嚴重</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">治標不治本，短期急救用，不建議長期頻繁施打。</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+        <h4 style="margin-top: 0; color: #0e7490;">💡 醫師的小叮嚀：長效 vs. 短效玻尿酸</h4>
+        <p style="margin-bottom: 0; color: #334155;">市面上的玻尿酸劑型眾多，從「每週打一次（療程 3 次）」到「半年打一次」都有。長效型分子量大、黏稠度高，維持時間久；短效型則適合初次嘗試或怕痛的患者。請與宸新的醫師討論，依據您的生活型態選擇最適合的劑型。</p>
+    </div>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>📝 治療流程與術後保養</h3>
+    
+    <h4>治療流程：</h4>
+    <ol>
+        <li><strong>醫師評估：</strong> 進行理學檢查與 X 光/超音波判讀，確認退化程度。</li>
+        <li><strong>超音波定位：</strong> 患者採坐姿或臥姿，醫師利用超音波掃描找出最佳進針點。</li>
+        <li><strong>消毒注射：</strong> 嚴格無菌消毒後，在動態顯影下完成注射。全程約 5 分鐘。</li>
+    </ol>
+
+    <h4>術後注意事項：</h4>
+    <ul>
+        <li><strong>注射後 24 小時：</strong> 針孔處請勿碰水，可淋浴但避免泡澡，以免感染。</li>
+        <li><strong>注射後 48 小時：</strong> 避免劇烈運動（如跑步、爬山），讓玻尿酸均勻分布於關節腔。</li>
+        <li><strong>正常反應：</strong> 極少數人注射後會有短暫的痠脹感，冰敷 10-15 分鐘即可緩解。</li>
+        <li><strong>規律運動：</strong> 玻尿酸是輔助，施打後仍需搭配<strong>股四頭肌肌力訓練</strong>，才能真正減輕膝蓋負擔。</li>
+    </ul>
+            <p><img src="/images/treatments/ha/b.jpg" alt="玻尿酸注射後注意事項"></p>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+        <h3 style="color: #047857; margin-top: 0;">👨‍⚕️ 找回膝蓋的「潤滑油」，重拾行動力！</h3>
+        <p style="color: #334155; margin-bottom: 1.5rem;">膝蓋是要用一輩子的，千萬別等到寸步難行才求醫。宸新復健科透過精準的超音波導引玻尿酸注射，為您的關節提供最完善的保護，讓您陪著家人走得更遠、更久。</p>
+        <p style="font-weight: bold; color: #059669;">立即預約評估，守護您的關節健康！</p>
+    </div>
+  `,
+  whyChooseUs: [
+    '全程使用<strong><a href="/about/clinic/ultrasound" class="text-cyan-400 hover:underline">高解析超音波導引</a></strong>，精準注射。',
+    '針對五十肩提供<strong>關節擴張術</strong>，解決沾黏與疼痛。',
+    '提供多種分子量劑型（長效/短效）選擇，客製化您的治療計畫。'
+  ],
+  treatmentFocus: [
+    '退化性膝關節炎 (上下樓梯無力)。',
+    '五十肩 (肩膀卡住舉不起來)。',
+    '髖關節與踝關節慢性疼痛。'
+  ],
+  images: [],
+  applicableConditions: ['退化性關節炎', '膝蓋軟骨磨損', '五十肩', '肩夾擠症候群', '髖關節炎'],
+  qaList: [
+    {
+      question: '打玻尿酸會有依賴性嗎？需要一直打下去嗎？',
+      answer: '玻尿酸沒有依賴性。它是一種保養補充品，就像車子需要定期換機油一樣。因為人體會代謝掉外來的玻尿酸，所以當藥效減退時，若關節退化狀況仍存在，就需要再次補充以維持保護效果，並非「上癮」。'
+    },
+    {
+      question: '健保可以給付玻尿酸嗎？',
+      answer: '健保針對玻尿酸有嚴格規範：只能在醫院健保施打，需年滿 60 歲，經 X 光檢查確診為退化性膝關節炎，且藥物與在醫院持續復健治療 6 個月無效者，方可申請給付。若未符資格或希望使用長效型劑型，則需自費治療。'
+    },
+    {
+      question: '打完玻尿酸可以馬上走路嗎？',
+      answer: '可以。注射完後可正常行走、上下班，不影響日常生活。但建議 2 天內避免負重運動（如深蹲、爬山、長時間跑步），讓藥液在關節內均勻擴散與吸收。'
+    }
+  ]
+}
+]
 // =======================================================
 // 3. 自動化瘦身區 (Sitemap 與列表頁專用)
 // =======================================================
