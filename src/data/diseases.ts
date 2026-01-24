@@ -1813,7 +1813,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         symptoms: [
           '久坐站起瞬間，下背部與臀部深處劇痛',
           '單側屁股痛，痛感可能延伸至大腿後側（不過膝）',
-          '睡覺翻身或單腳站立（穿褲子）時疼痛加劇',,
+          '睡覺翻身或單腳站立（穿褲子）時疼痛加劇',
           '長短腳或經常習慣性翹腳'
         ],
         treatments: [
