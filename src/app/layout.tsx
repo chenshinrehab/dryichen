@@ -7,13 +7,58 @@ import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  // ✨ 修正位置：這行必須放在 metadata 物件的大括號裡面
-  // 這行是用來解決 "metadata.metadataBase is missing" 的警告，並幫助 SEO 抓圖片
-  metadataBase: new URL('https://www.dryichen.com.tw'), 
+// 定義標準網域
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw';
 
-  title: '新竹宸新復健科診所 - 林羿辰醫師',
-  description: '新竹推薦復健科，提供PRP注射、震波治療、徒手治療、兒童骨齡評估。',
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL), 
+
+  // 1. 全站預設標題
+  title: {
+    default: '新竹宸新復健科診所 - 骨科/復健/兒童早療推薦 | 林羿辰醫師',
+    template: '%s | 新竹宸新復健科'
+  },
+  
+  description: '新竹推薦復健科，由台大醫師林羿辰院長親自看診。提供高解析超音波導引PRP注射、聚焦式震波治療、徒手物理治療與兒童骨齡生長評估。',
+  
+  // 2. 全站關鍵字
+  keywords: ['新竹復健科', '新竹骨科', '林羿辰', 'PRP注射', '震波治療', '兒童早療', '竹科復健'],
+
+  // 3. 全站預設 Canonical (安全網)
+  alternates: {
+    canonical: './',
+  },
+
+  // 4. 全站預設 Open Graph
+  openGraph: {
+    type: 'website',
+    locale: 'zh_TW',
+    url: SITE_URL,
+    siteName: '新竹宸新復健科診所',
+    title: '新竹宸新復健科診所 - 骨科/復健/兒童早療推薦',
+    description: '新竹復健科首選，台大醫師團隊，提供最專業的骨科疼痛治療與兒童發展評估。',
+    images: [
+      {
+        url: '/images/og-default.jpg',
+        width: 1200,
+        height: 630,
+        alt: '新竹宸新復健科診所',
+      },
+    ],
+  },
+
+  // 5. 爬蟲設定
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 }
 
 export default function RootLayout({
@@ -23,8 +68,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-TW">
+      {/* ✨ 修正：手動加回 <head> 區塊來載入 FontAwesome 
+        這是確保圖示 (如 fa-solid, fa-brands) 能正常顯示最穩定的方法
+      */}
       <head>
-        {/* ✨ 支援 Thread 圖示 (FontAwesome 6.5.1) */}
         <link 
           rel="stylesheet" 
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
@@ -36,8 +83,7 @@ export default function RootLayout({
         <Navigation />
         
         {/* 2. 頁面內容 */}
-        {/* ✨ 加入 main 並設定 flex-grow，確保內容少時 Footer 也會被推到底部 */}
-        <main className="flex-grow pt-10 md:pt-16">
+        <main className="flex-grow pt-14 md:pt-20"> 
            {children}
         </main>
         

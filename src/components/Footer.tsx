@@ -3,6 +3,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image' // ✨ 新增：引入 Next.js 圖片優化組件
 import FooterSearch from '@/components/FooterSearch'
 
 export default function Footer() {
@@ -47,37 +48,58 @@ export default function Footer() {
                 
                 {/* 1. 關於我們 */}
                 <Link href="/about" className="group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
-                  <img src="/images/icons/a.jpg"  alt="關於我們" 
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  {/* ✨ 優化：使用 Next.js Image 組件 (fill 模式自動填滿) */}
+                  <Image 
+                    src="/images/icons/a.jpg" 
+                    alt="關於我們 - 宸新復健科" 
+                    fill
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-3">
-                      <span className="text-white font-bold text-sm md:text-base group-hover:text-cyan-400 transition-colors">關於我們</span>
+                      <span className="text-white font-bold text-sm md:text-base group-hover:text-cyan-400 transition-colors relative z-10">關於我們</span>
                   </div>
                 </Link>
 
                 {/* 2. 治療方式 */}
                 <Link href="/treatments" className="group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
-                  <img src="/images/icons/b.jpg"  alt="治療方式" 
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <Image 
+                    src="/images/icons/b.jpg" 
+                    alt="治療方式 - PRP與震波" 
+                    fill
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-3">
-                        <span className="text-white font-bold text-sm md:text-base group-hover:text-cyan-400 transition-colors">治療方式</span>
+                        <span className="text-white font-bold text-sm md:text-base group-hover:text-cyan-400 transition-colors relative z-10">治療方式</span>
                     </div>
                 </Link>
 
                 {/* 3. 減重與骨齡 */}
                 <Link href="/weight-bone" className="group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
-                  <img src="/images/icons/c.jpg"  alt="減重與骨齡" 
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <Image 
+                    src="/images/icons/c.jpg" 
+                    alt="減重與骨齡門診" 
+                    fill
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-3">
-                        <span className="text-white font-bold text-sm md:text-base group-hover:text-cyan-400 transition-colors">減重與骨齡</span>
+                        <span className="text-white font-bold text-sm md:text-base group-hover:text-cyan-400 transition-colors relative z-10">減重與骨齡</span>
                     </div>
                 </Link>
 
                 {/* 4. 疾病衛教 */}
                 <Link href="/diseases" className="group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
-                  <img src="/images/icons/d.jpg"  alt="疾病衛教" 
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <Image 
+                    src="/images/icons/d.jpg" 
+                    alt="疾病衛教文章" 
+                    fill
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-3">
-                        <span className="text-white font-bold text-sm md:text-base group-hover:text-cyan-400 transition-colors">疾病衛教</span>
+                        <span className="text-white font-bold text-sm md:text-base group-hover:text-cyan-400 transition-colors relative z-10">疾病衛教</span>
                     </div>
                 </Link>
             </div>
@@ -114,36 +136,34 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* 2. 中間：累計瀏覽 (已放大) */}
+          {/* 2. 中間：累計瀏覽 */}
           <div className="flex flex-col items-center justify-center w-full lg:w-auto my-4 lg:my-0">
-             {/* ✨ 修改：
-                 1. px-4 py-1.5 -> px-6 py-3 (內距增加)
-                 2. border-slate-700/50 -> border-slate-600/50 (邊框稍微亮一點)
-             */}
              <div className="bg-slate-800/80 px-6 py-3 rounded-xl border border-slate-600/50 flex items-center gap-3 shadow-[0_4px_10px_rgba(0,0,0,0.2)]">
-                {/* 綠點放大 h-2 w-2 -> h-3 w-3 */}
                 <span className="relative flex h-3 w-3">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                 </span>
                 
-                {/* 文字放大 text-xs -> text-sm */}
                 <span className="text-sm text-slate-300 font-medium">累計瀏覽:</span>
                 
-                {/* 數字放大 text-base -> text-xl */}
                 <span className="font-mono text-cyan-400 font-bold tracking-widest text-xl">
                     {visitCount}
                 </span>
              </div>
           </div>
 
-          {/* 3. 右側：診所資訊 */}
+          {/* 3. 右側：診所資訊 (✨ 修正地圖連結) */}
           <div className="text-center lg:text-right text-slate-300 space-y-1.5 w-full lg:w-auto text-sm">
             <p className="flex items-center justify-center lg:justify-end gap-2 group cursor-pointer">
               <i className="fa-solid fa-phone text-cyan-400 group-hover:animate-pulse"></i> 
               <span className="font-mono tracking-wide">(03) 564-7999</span>
             </p>
-            <a href="https://www.google.com/maps/search/?api=1&query=宸新復健科診所+新竹市東區光復路一段371號B1" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center lg:justify-end gap-2 hover:text-cyan-400 transition-colors">
+            <a 
+              href="https://www.google.com/maps/search/?api=1&query=新竹市宸新復健科診所" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center justify-center lg:justify-end gap-2 hover:text-cyan-400 transition-colors"
+            >
               <i className="fa-solid fa-location-dot text-cyan-400"></i>
               <span>300新竹市東區光復路一段371號B1</span>
             </a>
