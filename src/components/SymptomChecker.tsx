@@ -127,7 +127,7 @@ export default function SymptomChecker() {
               }
             }
           }}
-          placeholder={isExpanded ? "請輸入症狀（例如：下背痛、大拇指腫痛）..." : "AI 症狀分析 (點擊輸入)"}
+          placeholder={isExpanded ? "AI系統測試中，有問題請見諒" : "AI系統測試中，有問題請見諒"}
           
           className={`w-full bg-transparent text-slate-200 placeholder-slate-400 focus:outline-none resize-none py-4 pl-12 leading-relaxed transition-all duration-300 relative z-0
             ${isExpanded 
