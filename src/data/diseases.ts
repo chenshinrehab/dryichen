@@ -2270,7 +2270,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           lastModified: '2026-01-21',
           description: '肩膀痛到像被電鑽鑽？這不是五十肩，而是肌腱裡「長石頭」了！了解鈣化性肌腱炎的成因、震波治療與超音波導引洗鈣技術。',
           contentHtml: `
-            <p style="color: #e2e8f0 !important;">您是否有過這種經驗：肩膀平時好好的，突然某天痛到<strong>想鑽地洞</strong>，連手都不敢動一下，甚至半夜痛到掛急診？這通常不是五十肩，也不是普通的拉傷，而是肩膀裡的「瘋狂石頭」在作怪——<strong>鈣化性肌腱炎 (Calcific Tendinitis)</strong>。</p>
+            <p style="color: #e2e8f0 !important;">您是否有過這種經驗：肩膀平時好好的，突然某天痛到<strong>想鑽地洞</strong>，連手都不敢動一下，甚至半夜痛到掛急診？這通常不是五十肩，也不是普通的拉傷，而是肩膀裡的「瘋狂石頭」在作怪——<strong>鈣化性肌腱炎</strong>。</p>
                     <br>
             <p style="color: #e2e8f0 !important;">這是肩關節疼痛中最劇烈的一種。好消息是，這是一種<strong>「會好」</strong>的疾病。宸新復健科透過高解析超音波診斷，搭配<strong>體外震波</strong>與<strong>超音波導引洗鈣</strong>技術，能協助您快速粉碎結石，解除劇痛。</p>
         
@@ -2301,7 +2301,8 @@ export const diseaseCategories: DiseaseCategory[] = [
                         <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
                         <div style="color: #92400e !important;">
                             <strong style="color: #dc2626 !important;">吸收期 (Resorptive) - 最痛！：</strong> 
-                            身體試圖把鈣點「吃掉」吸收。此時鈣化點會軟化變成像<strong>牙膏</strong>一樣的濃稠液體，內部壓力暴增，引發劇烈發炎。這也是患者痛到掛急診的階段。
+                            身體試圖把鈣點「吃掉」吸收。此時鈣化點會軟化變成像<strong>牙膏</strong>一樣的濃稠液體，內部壓力暴增，引發劇烈發炎。這也是患者痛到掛急診的階段，此時建議先做
+                            <a href="/treatments/steroid-injection" class="text-cyan-400 hover:underline">超音波導引類固醇注射</a>止痛，後續再運用<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治</a>處理鈣化。
                         </div>
                     </li>
                 </ul>
@@ -2362,8 +2363,10 @@ export const diseaseCategories: DiseaseCategory[] = [
             '疼痛延伸至手臂外側'
           ],
           treatments: [
-            '復健藥物治療', '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療</a>🔍️','超音波導引鈣化抽吸術',
-            '超音波導引類固醇注射'
+            '復健藥物治療', 
+            '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療</a>🔍️',
+            '超音波導引鈣化抽吸術',
+            '<a href="/treatments/steroid-injection" class="text-cyan-400 hover:underline">超音波導引類固醇注射</a>🔍️(疼痛期)'
           ],
           seoKeywords: [
             '旋轉肌鈣化',
@@ -2512,7 +2515,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             '手臂無法伸到背後'
           ],
           treatments: [
-            '超音波導引肩關節擴張術',
+            '<a href="/treatments/shoulder-dilation" class="text-cyan-400 hover:underline">超音波導引肩關節擴張術</a>🔍️',
             '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手治療關節鬆動術</a>🔍️',
             '居家伸展運動 (爬牆/毛巾操)'     ,
             '止痛藥及復健'
@@ -2530,6 +2533,195 @@ export const diseaseCategories: DiseaseCategory[] = [
             { src: '/images/diseases/shoulder/fs/a.jpg', alt: '五十肩示意圖'
             }
           ]
+      },
+
+{
+        id: 'rotator-cuff-tendinitis',
+        slug: 'rotator-cuff-tendinitis',
+        lastModified: '2026-01-25',
+        title: '旋轉肌腱炎與滑囊炎 (肩膀痛/夜間痛)',
+        description: '手舉高就痛？晚上睡覺壓到肩膀痛醒？這不只是肌腱發炎，可能已經惡化成「滑囊炎」！深入解析旋轉肌受傷的惡性循環，以及運用超音波導引抽吸、PRP 修復與居家復健的全方位攻略。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的困擾：穿衣服、洗頭、或是伸手去拿後座的東西時，肩膀深處會傳來一陣劇痛？剛開始只是覺得肩膀痠痠的，但最近情況變嚴重了，連<strong>晚上睡覺側睡</strong>都會痛醒，甚至覺得手越來越無力，舉不起來？</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">這通常是肩膀最常見的殺手——<strong>「旋轉肌腱炎 (Rotator Cuff Tendinitis)」</strong>。更糟糕的是，如果忽視初期的肌腱發炎，腫脹的肌腱會不斷摩擦上方的緩衝墊（滑囊），導致<strong>「肩峰下滑囊炎 (Subacromial Bursitis)」</strong>。這就像是火上澆油，讓疼痛指數瞬間飆升！在宸新復健科，我們透過高解析超音波，能精準分辨是肌腱受傷還是滑囊積水，並提供對症下藥的精準治療。</p>
+      
+          
+          <p><img src="https://images.unsplash.com/photo-1544367563-12123d832d34?auto=format&fit=crop&q=80&w=1200" alt="患者按壓肩膀疼痛位置，表情痛苦" style="width: 100%; height: auto; border-radius: 12px;"></p>
+          
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 什麼是旋轉肌？為什麼會變成「滑囊炎」？
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">旋轉肌袖是由四條肌肉（棘上肌、棘下肌、小圓肌、肩胛下肌）組成的肌群，像袖子一樣包覆住肱骨頭，負責旋轉手臂並將骨頭穩定在關節窩內。</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">第一階段 - 肌腱炎：</strong> 
+                          長期過度使用（如投球、搬重物、寫黑板）或姿勢不良（圓肩），導致最上方的「棘上肌腱」在活動時不斷被骨頭夾擠、磨損，產生發炎與微小撕裂。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">第二階段 - 滑囊炎 (惡性循環)：</strong> 
+                          在肌腱與骨頭（肩峰）之間，有一個充滿液體的氣墊叫「滑囊」。當肌腱腫脹變大，就會去摩擦這個氣墊。滑囊受到刺激後開始<strong>發炎、積水、腫大</strong>。
+                          <br>
+                          <strong>結果：</strong> 腫大的滑囊佔據了原本就狹小的空間，導致肌腱被夾得更緊，發炎更嚴重。這就是為什麼肩膀痛會越來越劇烈、甚至不動也痛的原因。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：肌腱炎 vs. 滑囊炎</h3>
+          <p style="color: #e2e8f0 !important;">兩者症狀常同時出現，但滑囊炎的疼痛感通常更為敏銳且持續：</p>
+          <ul style="color: #e2e8f0 !important; margin-left: 1rem;">
+              <li style="margin-bottom: 0.5rem;"><strong>疼痛弧 (Painful Arc)：</strong> 手臂側舉到 60-120 度之間最痛，因為這時空間最窄，滑囊被夾得最慘。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>夜間劇痛：</strong> 這是滑囊炎的經典症狀。平躺時滑囊液體流動壓力改變，加上側睡直接壓迫，常讓人痛到醒過來。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>活動受限：</strong> 因為太痛不敢動，導致手舉不高、無法扣內衣、無法洗背。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>休息痛：</strong> 嚴重的滑囊炎連手不動垂在身側都會隱隱作痛。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 宸新精準診斷：不只看骨頭，更看軟組織</h3>
+          <p style="color: #e2e8f0 !important;">X 光只能看到骨刺，但<strong>超音波才能看到「發炎的積水」</strong>。我們的檢查重點：</p>
+          
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">高解析動態超音波</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  1. <strong>測量滑囊積水：</strong> 正常滑囊幾乎看不到，發炎時會變成厚厚的一層黑影（積水）。
+                  <br>2. <strong>肌腱撕裂評估：</strong> 檢查棘上肌腱是否有鈣化、微小撕裂或斷裂。
+                  <br>3. <strong>動態夾擠測試：</strong> 請患者舉手，直接觀察滑囊是否被骨頭夾住。
+              </p>
+          </div>
+      
+          
+          <p><img src="https://plus.unsplash.com/premium_photo-1661764654573-048777170884?auto=format&fit=crop&q=80&w=1200" alt="醫師進行肩膀超音波檢查滑囊積水" style="width: 100%; height: auto; border-radius: 12px;"></p>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新全方位治療：消水腫 + 修肌腱</h3>
+          <p style="color: #e2e8f0 !important;">治療必須分兩步走：先解決急性腫脹（滑囊炎），再修復受損組織（肌腱炎）。</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 急性期：超音波導引抽吸與注射</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  如果滑囊積水嚴重，我們會先用細針將積水抽出，解除壓力。接著注射微量消炎藥物，快速消除滑囊的紅腫熱痛，這通常能立即改善夜間睡眠品質。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 修復期：<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  解決滑囊發炎後，必須處理根本問題——受傷的肌腱。
+                  PRP 富含生長因子，能修復肌腱的微小撕裂傷，強化肌腱結構，恢復其抓取骨頭的能力，避免未來再次夾擠。
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 結構調整：<a href="/treatments/manual" class="text-cyan-400 hover:underline">肩胛骨控制訓練</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  很多患者是因為「圓肩」導致空間變窄。
+                  物理治療師會放鬆緊繃的<strong>胸小肌</strong>，並強化<strong>下斜方肌</strong>與<strong>前鋸肌</strong>，幫助肩胛骨後傾，自然打開肩峰下的空間，讓滑囊不再被霸凌。
+              </p>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：居家復健三部曲</h3>
+          <p style="color: #e2e8f0 !important;">急性痛期請多休息，待疼痛緩解後，請開始進行以下運動，重建肩膀功能：</p>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">1. 鐘擺運動 (Pendulum) - 急性期首選</h4>
+              <p style="color: #e2e8f0 !important;">
+                  利用地心引力溫和活動關節，避免沾黏。
+                  <br>1. 身體前彎，好手扶桌子，患手自然下垂。
+                  <br>2. 身體輕微晃動，帶動手臂畫圈或前後擺動（肩膀完全不用力）。
+                  <br>3. 每個方向做 30 秒。
+              </p>
+          </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 後關節囊伸展 (Sleeper Stretch)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  放鬆緊繃的後側關節囊，減少肱骨頭上移。
+                  <br>1. 側躺，患側在下。手臂與身體呈 90 度，手肘彎曲 90 度。
+                  <br>2. 用好手將患側手腕慢慢往下壓（往床面壓）。
+                  <br>3. 感覺肩膀後側緊繃。停留 30 秒，重複 3 次。
+                  <br><strong>注意：</strong> 動作要輕柔，不可引起劇痛。
+              </p>
+          </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">3. 彈力帶外旋 (External Rotation)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  強化旋轉肌袖，把骨頭「抓」回正位。
+                  <br>1. 站立，雙手握住彈力帶，腋下夾毛巾。
+                  <br>2. 手肘彎曲 90 度，以前臂為半徑，慢慢向外轉開。
+                  <br>3. 感覺肩膀後側肌肉用力。慢慢回放。
+                  <br>4. 重複 15 下，做 3 組。
+              </p>
+          </div>
+      
+          
+      
+      [Image of resistance band shoulder exercise]
+      
+          <p><img src="https://images.unsplash.com/photo-1599447421405-0c3078a73333?auto=format&fit=crop&q=80&w=1200" alt="居家彈力帶旋轉肌強化運動" style="width: 100%; height: auto; border-radius: 12px;"></p>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 熄滅肩膀的火，修補受傷的弦！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">旋轉肌腱炎演變成滑囊炎，是肩膀在發出強烈的求救訊號。如果不解決「夾擠」的結構問題，光吃止痛藥是好不了的。宸新復健科利用超音波精準定位，先抽積水消炎，再用 PRP 修復肌腱，並配合專業的肩胛穩定訓練，幫您徹底打破疼痛的惡性循環，找回肩膀的自由！</p>
+              <p style="font-weight: bold; color: #059669 !important;">肩膀夜間痛醒？懷疑滑囊積水？立即預約超音波檢查！</p>
+          </div>
+        `,
+        symptoms: [
+          '手臂側舉至 60-120 度時劇痛 (疼痛弧)',
+          '夜間睡覺壓到患側肩膀會痛醒',
+          '手無法伸到背後扣內衣或拿皮夾',
+          '肩膀前外側有持續性的鈍痛或刺痛',
+          '嚴重時手部無力，無法維持抬舉姿勢'
+        ],
+        treatments: [
+          '超音波導引滑囊積水抽吸與注射',
+          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法 (肌腱修復)</a>🔍️',
+          '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波 (針對鈣化)</a>🔍️',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">關節鬆動術與肩胛穩定訓練</a>🔍️',
+          '高能量雷射 (急性消腫)'
+        ],
+        seoKeywords: [
+          '旋轉肌腱炎',
+          '肩峰下滑囊炎',
+          '肩膀夜間痛',
+          '五十肩分辨',
+          '疼痛弧',
+          'PRP注射',
+          '肩膀鈣化',
+          '圓肩矯正'
+        ],
+        seoDescription: '旋轉肌腱炎常惡化為滑囊炎，導致劇烈夜間痛與舉手困難。宸新復健科提供超音波導引抽吸積水，運用PRP修復肌腱，搭配肩胛復健，徹底解決肩膀夾擠問題。',
+        images: [
+          { 
+            src: 'https://images.unsplash.com/photo-1544367563-12123d832d34?auto=format&fit=crop&q=80&w=1200', 
+            alt: '肩膀滑囊炎疼痛示意圖' 
+          },
+          {
+            src: 'https://plus.unsplash.com/premium_photo-1661764654573-048777170884?auto=format&fit=crop&q=80&w=1200',
+            alt: '醫師進行肩膀超音波檢查'
+          },
+          {
+            src: 'https://images.unsplash.com/photo-1599447421405-0c3078a73333?auto=format&fit=crop&q=80&w=1200',
+            alt: '居家彈力帶肩膀復健運動'
+          }
+        ]
       },
 
       {
@@ -3732,14 +3924,14 @@ export const diseaseCategories: DiseaseCategory[] = [
 {
         id: 'mommy-thumb',
         slug: 'mommy-thumb',
-        title: '媽媽手 (狹窄性肌腱滑膜炎)',
-        lastModified: '2026-01-21',
+        title: '媽媽手 (狄奎凡氏症)',
+        lastModified: '2026-01-25',
         description: '大拇指根部痛到無法擰毛巾、抱小孩？這不只是媽媽的專利，更是現代人的文明病！深入解析媽媽手成因、Finkelstein 自我檢測，以及從護具固定到 PRP 修復的完整治療攻略。',
         contentHtml: `
           <p style="color: #e2e8f0 !important;">您是否有這樣的困擾：想要把毛巾擰乾，大拇指根部的手腕處卻傳來一陣劇痛？剛生完寶寶，想要把孩子抱起來哄睡，手腕卻痛到差點鬆手？或是身為長時間滑手機、打手遊的族群，發現大拇指卡卡、甚至出現凸起的腫塊？</p>
             
           <br>
-          <p style="color: #e2e8f0 !important;">這就是俗稱的<strong>「媽媽手」</strong>，但它其實有一個繞口的醫學學名——<strong>「狄奎凡氏症 (De Quervain's Tenosynovitis)」</strong>，正式名稱為<strong>狹窄性肌腱滑膜炎</strong>。這並非媽媽的專利，任何過度使用大拇指的人都可能中招。宸新復健科透過精準超音波診斷，協助您分辨是單純發炎還是結構卡壓，並提供對應的再生醫療方案。</p>
+          <p style="color: #e2e8f0 !important;">這就是俗稱的<strong>「媽媽手」</strong>，但它其實有一個繞口的醫學學名——<strong>「狄奎凡氏症」</strong>，正式名稱為<strong>狹窄性肌腱滑膜炎</strong>。這並非媽媽的專利，任何過度使用大拇指的人都可能中招。宸新復健科透過精準超音波診斷，協助您分辨是單純發炎還是結構卡壓，並提供對應的再生醫療方案。</p>
 
       
           <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
@@ -3815,11 +4007,11 @@ export const diseaseCategories: DiseaseCategory[] = [
                   <strong>護腕沒用，要用「拇指副木」！</strong> 一般的護腕只能固定手腕，大拇指還是能亂動。治療媽媽手必須使用<strong>「包含大拇指固定」</strong>的專用護具（Thumb Spica Splint），強迫大拇指休息，這是最重要的一步，也可以考慮高能量雷射快速減緩痛。
               </p>
           </div>
-      
+                 <p><img src="/images/diseases/hand/dq/d.jpg" alt="媽媽手護腕"></p>
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
               <h4 style="margin-top: 0; color: #0e7490 !important;">2. 注射治療：類固醇好還是 PRP 好？</h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
-                  <strong>類固醇 (Steroid)：</strong> 俗稱「打針」。優點是消炎止痛極快，通常一針見效。但缺點是可能造成施打處皮膚變白（色素脫失）或皮下脂肪萎縮（皮膚凹陷），且若反覆施打會讓肌腱變脆，容易斷裂。通常建議<strong>最多施打 1-2 次，且間隔要大於3個月</strong>。<br><br>
+                  <strong><a href="/treatments/steroid-injection" class="text-cyan-400 hover:underline">類固醇</a>🔍️：</strong> 俗稱「打針」。優點是消炎止痛極快，通常一針見效。但缺點是可能造成施打處皮膚變白（色素脫失）或皮下脂肪萎縮（皮膚凹陷），且若反覆施打會讓肌腱變脆，容易斷裂。通常建議<strong>最多施打 1-2 次，且間隔要大於3個月</strong>。<br><br>
                   <strong><a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️：</strong> 在超音波導引下，將高濃度血小板注入腱鞘與肌腱之間。優點是<strong>修復組織、沒有副作用</strong>，能強化肌腱結構。對於擔心類固醇副作用或慢性難癒合的患者，是最佳選擇。
               </p>
           </div>
@@ -3831,7 +4023,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   如果痛了幾個月，肌腱已經變厚、腱鞘已經變窄（沾黏），震波是很好的非侵入性選擇。利用能量波<strong>軟化僵硬的組織</strong>，促進微血管新生，改善局部的延展性。
               </p>
           </div>
-           <p><img src="/images/diseases/hand/dq/d.jpg" alt="媽媽手護腕"></p>
+
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
 <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：告別媽媽手！復健運動四招</h3>
@@ -3888,18 +4080,16 @@ export const diseaseCategories: DiseaseCategory[] = [
           </div>
         `,
         symptoms: [
-          '大拇指根部（手腕橈側）腫脹疼痛',
+          '大拇指根部腫脹按壓疼痛',
           '擰毛巾、轉門把、抱小孩時劇痛',
           'Finkelstein 測試呈現陽性',
-          '大拇指活動時有卡住感或摩擦聲',
-          '手腕橈側骨突處按壓疼痛'
+          '大拇指活動時有卡住感或摩擦聲'
         ],
         treatments: [
-          '專用拇指護具固定 (Thumb Spica)',
-          '超音波導引類固醇注射',
-          'PRP 增生療法注射',
-          '體外震波治療 (ESWT)',
-          '橡皮筋肌力訓練'
+          '止痛藥復健治療及肌肉放鬆',
+          '專用拇指護具固定',
+          '<a href="/treatments/steroid-injection" class="text-cyan-400 hover:underline">超音波導引類固醇注射</a>🔍️',
+          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法注射</a>🔍️',
         ],
         seoKeywords: [
           '媽媽手',
@@ -4163,7 +4353,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
                 <h4 style="margin-top: 0; color: #0e7490 !important;">2. 第二、三級：超音波導引注射</h4>
                 <p style="margin-bottom: 0; color: #334155 !important;">
-                    <strong>類固醇 (Steroid)：</strong> 傳統治療首選。直接注射在腱鞘內（不能打在肌腱上！，超音波導引注射才能更準確打在腱鞘內），強效消炎消腫。優點是快，缺點是多次施打可能導致肌腱斷裂，糖尿病患者效果不佳。<br><br>
+                    <strong><a href="/treatments/steroid-injection" class="text-cyan-400 hover:underline">超音波導引類固醇注射</a>：</strong> 傳統治療首選。直接注射在腱鞘內（不能打在肌腱上！，超音波導引注射才能更準確打在腱鞘內），強效消炎消腫。優點是快，缺點是多次施打可能導致肌腱斷裂，糖尿病患者效果不佳。<br><br>
                     <strong>超音波導引解套注射 (Hydrodissection)：</strong> 新式療法。利用超音波看準滑車與肌腱的縫隙，注入藥水（葡萄糖或 PRP）將兩者<strong>「撐開」</strong>，剝離沾黏並促進修復。適合不想打類固醇或糖尿病患者。
                 </p>
             </div>
@@ -4181,12 +4371,12 @@ export const diseaseCategories: DiseaseCategory[] = [
             <p style="color: #e2e8f0 !important;">除了治療，日常的按摩與伸展能預防復發。請早晚各做一輪：</p>
         
             <div style="margin-bottom: 2rem;">
-                <h4 style="color: #22d3ee !important;">1. 橫向深層按摩 (Deep Friction)</h4>
+                <h4 style="color: #22d3ee !important;">1. 橫向深層按摩</h4>
                 <p style="color: #e2e8f0 !important;">用好手的大拇指，按壓患指根部最痛的結節處。做<strong>左右方向</strong>（垂直肌腱走向）的深層撥動按摩，而不是上下推。這有助於破壞沾黏組織。</p>
             </div>
         
             <div style="margin-bottom: 2rem;">
-                <h4 style="color: #22d3ee !important;">2. 肌腱滑動運動 (Tendon Gliding)</h4>
+                <h4 style="color: #22d3ee !important;">2. 肌腱滑動運動</h4>
                 <p style="color: #e2e8f0 !important;">這是手指的體操。依序做：伸直手指 -> 彎曲指節（像爪子） -> 握拳 -> 手指伸直。動作要慢，讓肌腱在滑車內順暢滑動。</p>
             </div>
         
@@ -4212,7 +4402,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           ],
           treatments: [
             '超音波導引解套注射 (Hydrodissection)',
-            '局部類固醇注射',
+            '<a href="/treatments/steroid-injection" class="text-cyan-400 hover:underline">超音波導引類固醇注射</a>🔍️',
             '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>🔍️',
             '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療(ESWT)</a>🔍️'
           ],
@@ -4515,7 +4705,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             <p style="color: #e2e8f0 !important;">膝蓋退化不可逆，但我們可以「延緩」惡化並「消除」疼痛。治療選擇取決於嚴重程度：</p>
         
             <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-                <h4 style="margin-top: 0; color: #0e7490 !important;">1. 潤滑保養：玻尿酸注射 (Hyaluronic Acid)</h4>
+                <h4 style="margin-top: 0; color: #0e7490 !important;">1. 潤滑保養：<a href="/treatments/hyaluronic-acid" class="text-cyan-400 hover:underline">玻尿酸注射🔍️</a></h4>
                 <p style="margin-bottom: 0; color: #334155 !important;">
                     <strong>就像幫車子換機油。</strong> 玻尿酸能增加關節液的黏稠度與潤滑度，減少軟骨摩擦，並具有輕微的抗發炎效果。適合第 2-3 級，覺得膝蓋卡卡、輕微疼痛的患者。健保與自費劑型皆有提供。
                 </p>
@@ -4529,9 +4719,9 @@ export const diseaseCategories: DiseaseCategory[] = [
             </div>
        
             <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-                <h4 style="margin-top: 0; color: #0e7490 !important;">3. 嚴重疼痛：神經阻斷術 (Nerve Block)</h4>
+                <h4 style="margin-top: 0; color: #0e7490 !important;">3. 嚴重疼痛：膝關節置換或神經阻斷術</h4>
                 <p style="margin-bottom: 0; color: #334155 !important;">
-                    對於第 4 級嚴重退化、但不適合或不想開刀的長輩，我們可以針對支配膝蓋感覺的「膝神經 (Genicular Nerve)」進行阻斷或燒灼。這能阻斷痛覺訊號傳回大腦，大幅改善生活品質。
+                    對於第 4 級嚴重退化、考慮做膝關節置換，但不適合或不想開刀的長輩，我們可以針對支配膝蓋感覺的「膝神經 (Genicular Nerve)」進行阻斷或燒灼。這能阻斷痛覺訊號傳回大腦，大幅改善生活品質。
                 </p>
             </div>
         
@@ -5515,7 +5705,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">軟骨一旦磨損就很難再生，因此治療目標是<strong>「保護剩餘軟骨」</strong>並<strong>「矯正滑動軌跡」</strong>。</p>
       
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 為關節上油：玻尿酸注射 (Hyaluronic Acid)</h4>
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 為關節上油：<a href="/treatments/hyaluronic-acid" class="text-cyan-400 hover:underline">玻尿酸注射</a></h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
                   這就像幫引擎加機油。
                   在超音波導引下，將高分子量玻尿酸注射進關節腔，增加潤滑度，減少髕骨與股骨之間的摩擦阻力，並覆蓋受傷的軟骨表面，提供緩衝保護。這是緩解「喀喀聲」與疼痛最直接的方法。
@@ -5531,7 +5721,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           </div>
       
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 釋放張力：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波</a>與徒<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a></h4>
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 釋放張力：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波</a>與<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a></h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
                   <strong>震波治療：</strong> 放鬆大腿外側緊繃的髂脛束與股外側肌腱，減少將髕骨向外拉扯的力量。
                   <br><strong>徒手治療：</strong> 治療師會進行髕骨鬆動術，並放鬆攣縮的支持帶，增加髕骨向內滑動的活動度。

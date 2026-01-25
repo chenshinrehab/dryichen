@@ -2,22 +2,54 @@
 import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
-import { facilitiesData } from '@/data/facilities'
 import JsonLd from '@/components/JsonLd'
 
-// 定義標準網域與路徑
+// 1. 引入資料
+import { facilitiesData } from '@/data/facilities'
+import { getTreatmentBySlug } from '@/data/treatments' // 只需要這個函式
+
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
 const PAGE_PATH = '/about/clinic'
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
 // ==========================================
-// 1. Meta 設定 (加入 Canonical)
+// 2. 資料處理邏輯 (混合與排序)
+// ==========================================
+const allItems = facilitiesData.map((item) => {
+  // 檢查是否有標記 "isTreatment" (我們在 data 裡加的)
+  if ((item as any).isTreatment) {
+    const treatment = getTreatmentBySlug(item.id);
+    
+    // 如果找得到治療資料，就用治療的資料「覆蓋」原本的空殼
+    if (treatment) {
+      // 圖片邏輯：優先用 treatment.image，沒有則用 images[0]
+      const targetImage = (treatment as any).image || (treatment.images && treatment.images.length > 0 ? treatment.images[0].src : '/images/clinic/default.jpg');
+      
+      return {
+        id: treatment.slug,
+        title: treatment.title,
+        description: treatment.description,
+        imageUrl: targetImage,
+      };
+    }
+  }
+
+  // 如果不是治療項目 (是普通設備)，就直接回傳原本的資料
+  return {
+    id: item.id,
+    title: item.title,
+    description: item.description,
+    imageUrl: item.imageUrl,
+  };
+});
+
+// ==========================================
+// Meta 設定
 // ==========================================
 export const metadata: Metadata = { 
   title: '診所環境與設備介紹 - 數位X光/超音波/骨科復健區 | 新竹宸新復健科',
   description: '新竹宸新復健科擁有醫學中心等級設備。包含數位X光、高解析超音波、瑞士聚焦式震波、兒童早療教室、獨立徒手治療室及專屬停車場，提供最優質的就醫環境。',
   keywords: ['新竹復健科設備', 'X光檢查', '超音波檢查', 'PRP設備', '兒童早療', '骨科復健', '停車方便'],
-  // ★★★ 加入 Canonical Tag ★★★
   alternates: {
     canonical: CANONICAL_URL,
   },
@@ -31,7 +63,6 @@ export const metadata: Metadata = {
 
 export default function ClinicPage() {
   
-  // 2. Schema: 麵包屑 (Breadcrumb)
   const jsonLdBreadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -42,28 +73,25 @@ export default function ClinicPage() {
     ],
   }
 
-  // 3. Schema: MedicalWebPage + ItemList
   const jsonLdPage = {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
     '@id': `${CANONICAL_URL}#webpage`,
     name: '診所環境與設備介紹',
     description: '提供全方位骨科復健與兒童發展評估的專業診所環境介紹。',
-    url: CANONICAL_URL, // 明確指定 URL
+    url: CANONICAL_URL,
     author: {
         '@type': 'MedicalOrganization',
         name: '新竹宸新復健科',
         url: SITE_URL,
     },
-    // ✨ 重點：使用 ItemList 來條列出這裡有哪些設備
     mainEntity: {
       '@type': 'ItemList',
-      itemListElement: facilitiesData.map((item, index) => ({
+      itemListElement: allItems.map((item, index) => ({
         '@type': 'ListItem',
         position: index + 1,
-        url: `${CANONICAL_URL}/${item.id}`, // 使用標準網址拼接
+        url: `${CANONICAL_URL}/${item.id}`,
         name: item.title,
-        // 選擇性：如果有圖片也可稍微帶入
         image: item.imageUrl
       }))
     }
@@ -78,7 +106,6 @@ export default function ClinicPage() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          {/* 返回按鈕 */}
           <Link href="/about" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group">
              <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回關於我們
           </Link>
@@ -92,21 +119,24 @@ export default function ClinicPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {facilitiesData.map((item) => (
+            {allItems.map((item) => (
               <Link 
                 key={item.id} 
                 href={`/about/clinic/${item.id}`} 
                 className="group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col"
               >
+                  {/* 圖片區塊 */}
                   <div className="h-48 overflow-hidden relative bg-slate-800">
                     <img 
                       src={item.imageUrl} 
                       alt={item.title} 
-                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" 
+                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                    {/* 深色漸層遮罩 */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
                   </div>
                   
+                  {/* 文字區塊 */}
                   <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors flex items-center justify-between">
                        {item.title}

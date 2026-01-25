@@ -87,7 +87,7 @@ const fullTreatmentsData: Treatment[] = [
     <iframe 
       width="315" 
       height="560" 
-      src="https://www.youtube.com/embed/KVp7HFpl3RY" 
+      src="https://www.youtube.com/embed/A-keqKDu7bQ" 
       title="YouTube video player" 
       frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -730,7 +730,18 @@ const fullTreatmentsData: Treatment[] = [
         </li>
         </ul>
     </div>
-          <p><img src="/images/treatments/ha/a.jpg" alt="膝關節積水超音波圖"></p>
+          <div class="my-8 flex justify-center">
+    <iframe 
+      width="315" 
+      height="560" 
+      src="https://www.youtube.com/embed/A-keqKDu7bQ" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+      class="max-w-full rounded-xl shadow-lg border border-slate-700"
+    ></iframe>
+     </div>
 
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -853,7 +864,7 @@ const fullTreatmentsData: Treatment[] = [
   qaList: [
     {
       question: '打玻尿酸會有依賴性嗎？需要一直打下去嗎？',
-      answer: '玻尿酸沒有依賴性。它是一種保養補充品，就像車子需要定期換機油一樣。因為人體會代謝掉外來的玻尿酸，所以當藥效減退時，若關節退化狀況仍存在，就需要再次補充以維持保護效果，並非「上癮」。'
+      answer: '玻尿酸沒有依賴性。它是一種保養補充品，就像車子需要定期換機油一樣。因為人體會代謝掉外來的玻尿酸，所以當藥效減退時，就會又開始磨損，關節退化狀況仍存在，就需要再次補充以維持保護效果，並非「上癮」。'
     },
     {
       question: '健保可以給付玻尿酸嗎？',
@@ -864,7 +875,372 @@ const fullTreatmentsData: Treatment[] = [
       answer: '可以。注射完後可正常行走、上下班，不影響日常生活。但建議 2 天內避免負重運動（如深蹲、爬山、長時間跑步），讓藥液在關節內均勻擴散與吸收。'
     }
   ]
+},
+
+{
+  slug: 'shoulder-dilation',
+  title: '肩關節擴張術',
+  lastModified: '2026-01-25',
+  subtitle: '五十肩救星，精準撐開沾黏、重拾活動力',
+  description: '新竹五十肩治療推薦。針對頑固性沾黏與手舉不高，採用高解析超音波導引「肩關節擴張術」，將擴張液精準注入關節囊，有效撐開沾黏組織，大幅改善疼痛與活動角度。',
+  image: '/images/treatments/f.jpg',
+  features: ['超音波導引', '撐開沾黏', '立即改善'],
+  seoTitle: '新竹肩關節擴張術 - 五十肩/肩膀沾黏/手舉不高治療 | 宸新復健科',
+  seoDescription: '新竹五十肩進階治療推薦。宸新復健科採用「肩關節擴張術」，利用高階超音波導引，精準將擴張液注入沾黏的肩關節囊中。針對手舉不高、夜間疼痛、長期復健卡關的患者，提供快速且顯著的改善效果。',
+  keywords: ['新竹肩關節擴張術', '五十肩治療', '肩膀沾黏', '超音波導引注射', '手舉不高', '夜間肩膀痛', '新竹復健科', '肌骨超音波'],
+  youtubeVideoId: '', // 若有相關衛教影片可填入 ID
+  contentHtml: `
+    <p>您是否深受<strong>五十肩</strong>困擾，手舉不高、無法扣內衣，甚至晚上睡覺壓到肩膀就痛醒？當一般的熱敷電療效果停滯，或是復健了很久角度卻卡住無法突破時，<strong>肩關節擴張術（Hydrodilatation）</strong>是復健科骨科醫師公認治療沾黏性肩關節囊炎（五十肩）的強效解方。</p>
+    <br>
+    <p>肩關節擴張術的原理，是利用液體的壓力將<strong>緊繃沾黏的肩關節囊「撐開」</strong>。然而，肩關節囊深且空間狹小，宸新復健科堅持拒絕憑手感的盲打，全療程採用<strong>高解析骨骼肌肉超音波導引</strong>，邊掃描邊打針，確保擴張液精準注入關節腔內，大幅提升治療成功率。</p>
+
+    <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+            📢 為什麼五十肩需要「超音波導引」擴張術？
+        </h2>
+        
+        <p style="font-size: 1.1rem; color: #78350f;">五十肩的病理核心是「關節囊沾黏縮小」。我們堅持使用醫學中心等級的頂級規格超音波，畫質解析度更佳，這對精準治療至關重要：</p>
+        
+        <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                <div><strong>精準撐開沾黏：</strong> 醫師透過「第三隻眼」監控，確認針尖進入關節腔後，注入大量擴張液（食鹽水、葡萄糖或消炎藥）。在螢幕上可直接看到關節囊被液體撐開的瞬間，確保沾黏組織被有效分離。</div>
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                <div><strong>避開神經血管：</strong> 肩膀周圍神經密布，透過超音波導引能清楚避開危險區域，並選擇阻力最小的路徑進針，大幅降低注射過程的疼痛與風險。</div>
+            </li>
+            <li style="margin-bottom: 0; display: flex; align-items: start;">
+                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                <div><strong>同步消炎止痛：</strong> 除了物理性撐開，醫師會視情況加入適量消炎藥劑，直接作用於發炎的關節囊內部，通常在治療後幾天內即可顯著<strong>改善疼痛跟活動度</strong>。</div>
+            </li>
+        </ul>
+              <p><img src="/images/treatments/dilation/a.jpg" alt="肩關節擴張超音波導引注射"></p>
+    </div>
+              <div class="my-8 flex justify-center">
+    <iframe 
+      width="315" 
+      height="560" 
+      src="https://www.youtube.com/embed/A-keqKDu7bQ" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+      class="max-w-full rounded-xl shadow-lg border border-slate-700"
+    ></iframe>
+     </div>
+    
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>🔬 什麼是肩關節擴張術？作用機制</h3>
+    <p>五十肩的正式名稱為「沾黏性肩關節囊炎」，想像原本<strong>寬鬆的碗（關節囊）</strong> ，肩膀骨頭是裡面的<strong>球</strong> ，因為碗變小還有發炎而黏在一起、縮水變緊，導致手臂卡住動彈不得。</p>
+    <br>
+    <p>肩關節擴張術（Hydrodilatation）是利用液體壓力進行的一種「微創鬆動術」，主要功能如下：</p>
+    <ol>
+        <li><strong>液壓擴張（撐開）：</strong> 注入約 20-40cc 的液體（通常為生理食鹽水混合麻醉藥），利用液體的體積強行將沾黏縮小的關節囊「撐大」，恢復關節內的活動空間。</li>
+        <li><strong>消炎與潤滑：</strong> 藥液中含有抗發炎成分與潤滑劑，能快速緩解滑膜發炎，並潤滑乾澀的關節表面，減少活動時的摩擦痛。</li>
+        <li><strong>打破沾黏循環：</strong> 疼痛減少後，患者敢於活動肩膀，進一步防止沾黏再次發生，打破「疼痛→不動→更沾黏」的惡性循環。</li>
+    </ol>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>🎯 誰適合做肩關節擴張術？</h3>
+    <p>此療程主要針對<strong>五十肩</strong>的患者。若您的肩膀問題屬於肌腱撕裂或鈣化，醫師會建議其他治療方式（如 PRP 或震波）。</p>
+
+    <h4>常見適應症包括：</h4>
+    <ul>
+        <li><strong>頑固型五十肩：</strong> 復健治療超過 1-2 個月，關節活動角度（如手舉高、向後扣內衣）仍無明顯進步者。</li>
+        <li><strong>夜間疼痛嚴重：</strong> 晚上睡覺時肩膀隱隱作痛，無法側睡，嚴重影響睡眠品質。</li>
+        <li><strong>活動角度極度受限：</strong> 手臂無法抬高超過 90 度，日常生活（如洗頭、梳頭、穿衣）受到嚴重影響。</li>
+        <li><strong>希望能快速改善：</strong> 工作或生活需求，無法等待漫長（通常需半年至一年）的自然恢復期者。</li>
+    </ul>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>⚖️ 五十肩治療比一比：復健 vs. 擴張術 vs. 手術</h3>
+    <p>面對沾黏的肩膀，不同的治療手段有不同的效率與介入程度。宸新復健科提供完整的階梯式治療。</p>
+
+    <div style="overflow-x: auto; padding-bottom: 10px;">
+        <table style="width: 100%; min-width: 600px; border-collapse: collapse; margin-top: 1rem;">
+            <thead>
+                <tr style="background-color: #0369a1; color: white;">
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">治療項目</th>
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">主要原理</th>
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">恢復速度</th>
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">特點</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color:rgb(116, 233, 239); white-space: nowrap;">純物理治療</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">熱敷、電療、徒手治療</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">慢 (需數月至半年)</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">適合初期或症狀輕微者，需極大耐心與頻繁回診。</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #b91c1c; white-space: nowrap;">
+                         肩關節擴張術 🔥
+                    </td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">液壓撐開、超音波導引</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">快 (數週內顯著改善)</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>CP值最高。</strong>免住院、免麻醉，精準撐開沾黏，立即改善角度。</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color:rgb(181, 209, 247); white-space: nowrap;">關節授動手術</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">全麻下強力拉開、微創開刀</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">快 (術後需立即復健)</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">需全身麻醉與住院，風險較高，通常為最後一線治療。</td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="text-align: center; font-size: 0.8rem; color: #6b7280; margin-top: 5px; display: block; md:hidden;">
+            (可左右滑動查看表格 👉)
+        </div>
+    </div>
+
+    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+        <h4 style="margin-top: 0; color: #0e7490;">💡 醫師的小叮嚀：治療後的黃金期</h4>
+        <p style="margin-bottom: 0; color: #334155;">擴張術能幫您「打開」卡住的關節，但要維持這個角度，治療後兩週內的<a href="/treatments/manual" class="text-cyan-400 hover:underline">肩關節鬆動</a>與<strong>居家伸展運動</strong>至關重要。趁著關節鬆開、疼痛感降低時，積極進行爬牆運動與毛巾操，才能將治療效果最大化，避免沾黏復發。</p>
+    </div>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>📝 治療流程與術後保養</h3>
+    
+    <h4>治療流程：</h4>
+    <ol>
+        <li><strong>醫師評估：</strong> 確認沾黏程度與排除旋轉肌袖斷裂等其他問題。</li>
+        <li><strong>超音波定位：</strong> 側臥或坐姿，醫師掃描肩關節囊位置與周邊神經血管。</li>
+        <li><strong>擴張注射：</strong> 局部麻醉後，在動態顯影下注入擴張液。過程中會感到肩膀內部有腫脹痠痛感，代表沾黏正在被撐開，此為正常現象。</li>
+    </ol>
+
+    <h4>術後注意事項：</h4>
+    <ul>
+        <li><strong>注射後反應：</strong> 擴張後的腫脹感通常會持續半天至一天，隨液體吸收後消失。</li>
+        <li><strong>把握黃金期：</strong> 治療兩天後，即可開始溫和的肩關節活動度運動（如鐘擺運動即爬牆運動）。</li>
+        <li><strong>規律復健：</strong> 建議搭配診所的徒手治療，針對被撐開後的關節囊進行軟組織放鬆與動作控制訓練。</li>
+    </ul>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+        <h3 style="color: #047857; margin-top: 0;">👨‍⚕️ 別讓五十肩限制了您的生活！</h3>
+        <p style="color: #334155; margin-bottom: 1.5rem;">五十肩雖然會自然痊癒，但過程長達一兩年且可能殘留後遺症。宸新復健科透過精準的超音波導引擴張術，幫您縮短痛苦的病程。幾天內有效改善疼痛與活動度，讓您重拾穿衣洗澡的輕鬆自在。</p>
+        <p style="font-weight: bold; color: #059669;">立即預約評估，找回肩膀的自由！</p>
+    </div>
+  `,
+  whyChooseUs: [
+    '全程使用<strong>醫學中心等級超音波</strong>，畫質清晰。',
+    '堅持<strong>超音波導引注射</strong>，邊掃邊注射，精準定位。',
+    '複合式治療方案，結合擴張術與徒手復健，全方位解決五十肩沾黏。'
+  ],
+  treatmentFocus: [
+    '<a href="/diseases/shoulder/frozen-shoulder" class="text-cyan-400 hover:underline">頑固型五十肩</a>🔍️',
+    '夜間肩膀劇痛 (影響睡眠)。',
+    '肩膀活動角度受限 (手舉不高/無法後扣)。'
+  ],
+  images: [],
+  applicableConditions: ['五十肩', '沾黏性肩關節囊炎', '肩關節活動受限', '冷凍肩'],
+  qaList: [
+    {
+      question: '做肩關節擴張術會很痛嗎？',
+      answer: '注射前我們會進行局部麻醉。治療過程中，因為液體將沾黏的組織撐開，會有一種深層的「痠脹感」或「緊繃感」，大多數患者描述是可以忍受的範圍，且這代表沾黏正在被鬆解。'
+    },
+    {
+      question: '擴張術要做幾次才有效？',
+      answer: '這取決於沾黏的嚴重程度。輕中度患者通常 1-2 次治療即可感到顯著改善；重度沾黏者可能需要 3 次以上的療程，並需密切搭配徒手物理治療以維持效果。'
+    },
+    {
+      question: '打完擴張術，五十肩就完全好了嗎？',
+      answer: '擴張術是幫您「打開門」，後續還需要您「走出去」。手術能快速改善角度與疼痛，但後續必須靠積極的伸展運動與肌力訓練，才能維持角度並恢復肩膀的正常功能，防止沾黏復發。'
+    }
+  ]
+},
+
+{
+  slug: 'steroid-injection',
+  title: '超音波導引類固醇注射',
+  lastModified: '2026-01-25',
+  subtitle: '急性發炎的滅火器，精準止痛不傷身',
+  description: '破除類固醇迷思，宸新復健科採用高解析超音波導引，將低劑量藥物精準注入發炎組織周邊，避開肌腱本體。針對媽媽手、板機指與滑囊炎，提供最快速的消炎止痛選擇。',
+  image: '/images/treatments/g.jpg',
+  features: ['超音波導引', '強力消炎', '快速止痛'],
+  seoTitle: '新竹類固醇注射 - 媽媽手/板機指/滑囊炎治療 | 宸新復健科',
+  seoDescription: '新竹超音波導引注射推薦。針對急性疼痛、肌腱炎與神經壓迫，宸新復健科提供精準類固醇注射治療。透過影像導引避開神經血管與肌腱實質，大幅降低副作用風險，是安全有效的「局部」消炎療法。',
+  keywords: ['新竹類固醇', '局部注射', '媽媽手治療', '板機指', '超音波導引', '滑囊炎', '腕隧道症候群', '足底筋膜炎'],
+  youtubeVideoId: '', // 若有相關衛教影片可填入 ID
+  contentHtml: `
+    <p>當手腕痛到無法轉門把、手指卡住彈不回去，或是肩膀痛到無法側睡時，這些<strong>急性發炎</strong>的症狀往往讓人痛不欲生。當口服消炎藥效果緩慢，復健治療又還沒跟上進度時，<strong>局部類固醇注射</strong>是醫學上公認最快速、最強效的「發炎滅火器」。</p>
+    <br>
+    <p>許多人聽到「類固醇」就聞之色變，擔心會有月亮臉、水牛肩等副作用。其實，復健科使用的<strong>局部注射</strong>與口服全身性類固醇完全不同。重點在於<strong>「打得準」</strong>與<strong>「劑量對」</strong>。宸新復健科堅持全療程採用<strong>高解析超音波導引</strong>，讓醫師能精準辨識發炎的腱鞘或滑囊，將藥物準確送到病灶，避免誤傷肌腱。</p>
+
+    <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+            📢 為什麼類固醇一定要用「超音波導引」？
+        </h2>
+        
+        <p style="font-size: 1.1rem; color: #78350f;">傳統的「盲打」容易將類固醇打入肌腱內部或皮下脂肪層，這正是造成肌腱斷裂或皮膚白斑的主因。宸新復健科透過精準影像導引，確保安全性：</p>
+        
+        <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                <div><strong>保護肌腱：</strong> 透過螢幕即時顯像，醫師能確保針尖位於肌腱外層的「腱鞘」或「滑囊」內，絕對避免將藥物直接打進脆弱的肌腱纖維中，大幅降低肌腱脆化斷裂風險。</div>
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                <div><strong>避開神經血管：</strong> 如腕隧道症候群的注射，神經與血管緊密相鄰。超音波導引能清楚避開正中神經，確保每一針都安全無虞。</div>
+            </li>
+            <li style="margin-bottom: 0; display: flex; align-items: start;">
+                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                <div><strong>極少量高效能：</strong> 因為打得準，只需要極低劑量的類固醇就能達到極佳的消炎效果，將副作用降到最低。</div>
+            </li>
+        </ul>
+    </div>
+                <div class="my-8 flex justify-center">
+    <iframe 
+      width="315" 
+      height="560" 
+      src="https://www.youtube.com/embed/A-keqKDu7bQ" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+      class="max-w-full rounded-xl shadow-lg border border-slate-700"
+    ></iframe>
+     </div>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>🔬 類固醇如何治療？作用機制</h3>
+    <p>類固醇被稱為「美國仙丹」，是因為它具有強大的抗發炎能力。在復健科的應用中，我們將其視為針對局部的精準治療：</p>
+    <ol>
+        <li><strong>強力抗發炎：</strong> 阻斷發炎介質的釋放，快速消除紅、腫、熱、痛的反應。</li>
+        <li><strong>消除腫脹：</strong> 針對神經壓迫（如腕隧道症候群）或滑囊積水，類固醇能快速消腫，解除對神經的壓迫。</li>
+        <li><strong>抑制沾黏：</strong> 在發炎早期介入，可以預防組織因長期發炎而產生纖維化沾黏。</li>
+    </ol>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>🎯 誰適合打類固醇？適應症範圍</h3>
+    <p>類固醇注射主要針對<strong>急性發炎期</strong>且<strong>疼痛劇烈</strong>的患者，或是長期復健效果不彰的頑固性疼痛。</p>
+
+    <h4>常見適應症包括：</h4>
+    <ul>
+        <li><strong>手指/手腕疼痛：</strong> <a href="/diseases/hand/trigger-finger" class="text-cyan-400 hover:underline">板機指（手指卡住）</a>、
+        <a href="/diseases/hand/mommy-thumb" class="text-cyan-400 hover:underline">媽媽手</a>、
+        <a href="/diseases/hand/carpal-tunnel-syndrome" class="text-cyan-400 hover:underline">腕隧道症候群</a>。</li>
+        <li><strong>肩膀疼痛：</strong> <a href="/diseases/shoulder/shoulder-impingement-syndrome" class="text-cyan-400 hover:underline">肩夾擠症候群</a>、
+        <a href="/diseases/shoulder/calcific-tendinitis" class="text-cyan-400 hover:underline">鈣化性肌腱炎</a>、
+        <a href="/diseases/shoulder/frozen-shoulder" class="text-cyan-400 hover:underline">急性五十肩（劇痛期）</a>。</li>
+    </ul>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>⚖️ 類固醇 vs. PRP vs. 玻尿酸：比較表</h3>
+    <p>不同的針劑有不同的適應症，類固醇並非萬能，但在「急性消炎」上具有不可取代的地位。</p>
+
+    <div style="overflow-x: auto; padding-bottom: 10px;">
+        <table style="width: 100%; min-width: 600px; border-collapse: collapse; margin-top: 1rem;">
+            <thead>
+                <tr style="background-color: #0369a1; color: white;">
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">治療項目</th>
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">主要作用</th>
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">起效速度</th>
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">特點</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color:rgb(116, 233, 239); white-space: nowrap;">類固醇</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">強力消炎、消腫止痛</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">極快 (1-3天內)</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">適合急性劇痛。不能頻繁施打(<strong>間隔至少三個月</strong>)，需醫師嚴格把關。</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #b91c1c; white-space: nowrap;">
+                        <a href="/treatments/prp" class="text-cyan-400 hover:underline" style="color: #0891b2; text-decoration: none;">PRP 增生療法</a> 
+                    </td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">組織修復、再生</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">慢 (數週至數月)</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">針對肌腱撕裂、退化根本治療。價格較高，需自費。</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color:rgb(181, 209, 247); white-space: nowrap;">                        
+                     <a href="/treatments/hyaluronic-acid" class="text-cyan-400 hover:underline" style="color: #0891b2; text-decoration: none;">玻尿酸</a> 
+</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">潤滑關節、物理保護</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">中等 (注射後即潤滑)</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">主要用於關節退化保養，副作用極低。</td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="text-align: center; font-size: 0.8rem; color: #6b7280; margin-top: 5px; display: block; md:hidden;">
+            (可左右滑動查看表格 👉)
+        </div>
+    </div>
+  <p><img src="/images/treatments/steroid/a.jpg" alt="類固醇與增生療法比較"></p>
+    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+        <h4 style="margin-top: 0; color: #0e7490;">💡 醫師的小叮嚀：類固醇是雙面刃</h4>
+        <p style="margin-bottom: 0; color: #334155;">我們遵循嚴格的注射原則：<strong>「同一部位一年不超過 3-4 次」</strong>。適量的類固醇是良藥，過量則可能導致肌腱變脆或加速軟骨退化。在超音波精準導引下單次使用，能取其利而避其害，請放心交給專業醫師評估。</p><br>
+         <p style="margin-bottom: 0; color: #334155;">且類固醇只<strong>治標不治本</strong>，沒有好的休息及後續治療，可能一個月後又復發。</p>
+    </div>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>📝 治療流程與術後保養</h3>
+    
+    <h4>治療流程：</h4>
+    <ol>
+        <li><strong>醫師評估：</strong> 確認發炎位置，排除感染或骨折等禁忌症。</li>
+        <li><strong>超音波導引：</strong> 醫師操作超音波，即時鎖定病灶（如腫脹的腱鞘），規劃進針路徑。</li>
+        <li><strong>精準注射：</strong> 消毒後，在動態影像監控下將藥物注入正確層次。過程快速，約 1-2 分鐘。</li>
+    </ol>
+
+    <h4>術後注意事項：</h4>
+    <ul>
+        <li><strong>注射後疼痛：</strong> 部分患者在藥效發揮前（約6-12小時內）會有短暫的反彈痛，可冰敷緩解。</li>
+        <li><strong>多休息：</strong> 這是最重要的！打完針不痛<strong>不代表已經好了</strong>，只是發炎被壓下來。請務必讓患處休息至少 3-5 天，避免立刻從事劇烈運動或粗重工作。</li>
+        <li><strong>注意血糖：</strong> 糖尿病患者注射後，短期內血糖可能會有些微波動，請持續監控。</li>
+        <li><strong>觀察變化：</strong> 若注射處出現持續紅腫熱痛（感染徵兆），請立即回診。</li>
+    </ul>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+        <h3 style="color: #047857; margin-top: 0;">👨‍⚕️ 精準用藥，快速告別急性疼痛！</h3>
+        <p style="color: #334155; margin-bottom: 1.5rem;">疼痛不該是您生活的常態。面對急性發炎，宸新復健科利用超音波導引技術，讓類固醇成為您安全可靠的盟友，精準滅火、快速緩解，助您盡早回歸正常生活。</p>
+        <p style="font-weight: bold; color: #059669;">立即預約評估，讓專業醫師為您精準治療！</p>
+    </div>
+  `,
+  whyChooseUs: [
+    '全程使用<strong>高解析超音波導引</strong>，確保藥物不打進肌腱本體。',
+    '嚴格把關注射劑量與頻率，避免副作用。',
+    '結合物理治療與運動衛教，治標也治本。'
+  ],
+  treatmentFocus: [
+    '媽媽手 (手腕橈側痛) / 板機指 (手指卡住)。',
+    '腕隧道症候群 (手指發麻) 🔍️',
+    '急性滑囊炎 (肩膀/膝蓋腫痛)。'
+  ],
+  images: [],
+  applicableConditions: ['媽媽手', '板機指', '腕隧道症候群', '滑囊炎','旋轉肌腱炎炎',  '足底筋膜炎'],
+  qaList: [
+    {
+      question: '打類固醇會有「月亮臉」或「變胖」嗎？',
+      answer: '一般不會。復健科使用的是「局部」極微量的注射，與治療免疫疾病長期口服的高劑量類固醇不同。藥物主要作用在患處，進入全身循環的量極少，因此幾乎不會造成月亮臉或水牛肩等全身性副作用。'
+    },
+    {
+      question: '聽說打類固醇肌腱會斷掉？',
+      answer: '這是傳統「盲打」誤將藥物打入肌腱內部造成的風險。宸新採用「超音波導引」，能精準將藥物打在肌腱周圍的滑囊或腱鞘內，避開肌腱本體，因此安全性極高，肌腱斷裂風險極低。'
+    },
+    {
+      question: '打完針如果不痛了，是不是就不用復健了？',
+      answer: '不建議。類固醇是強力的消炎止痛藥，能解決「發炎」的結果，治標不治本，但往往沒有解決「動作錯誤」或「肌力不足」的原因。建議在疼痛緩解後，持續進行復健運動，強化肌力與姿勢矯正，才能避免復發。'
+    }
+  ]
 }
+
 ]
 // =======================================================
 // 3. 自動化瘦身區 (Sitemap 與列表頁專用)
