@@ -10,6 +10,9 @@ interface AIResult {
   externalSuggestions?: string[];
 }
 
+// 定義要存入 Storage 的資料結構
+const STORAGE_KEY = 'ai_symptom_cache';
+
 export default function SymptomChecker() {
   const [input, setInput] = useState('');
   const [isExpanded, setIsExpanded] = useState(false);
@@ -17,6 +20,26 @@ export default function SymptomChecker() {
   const [result, setResult] = useState<AIResult | null>(null);
   
   const formRef = useRef<HTMLFormElement>(null);
+
+  // ============================================================
+  // 💾 新增功能 1：組件載入時，檢查有沒有「暫存結果」
+  // ============================================================
+  useEffect(() => {
+    try {
+        const cachedData = sessionStorage.getItem(STORAGE_KEY);
+        if (cachedData) {
+            const parsed = JSON.parse(cachedData);
+            // 只有當暫存裡面真的有結果時，才恢復
+            if (parsed.result && (parsed.result.recommendedIds.length > 0 || (parsed.result.externalSuggestions?.length || 0) > 0)) {
+                setInput(parsed.input);
+                setResult(parsed.result);
+                setIsExpanded(true); // 自動展開看結果
+            }
+        }
+    } catch (e) {
+        console.error("讀取暫存失敗", e);
+    }
+  }, []);
 
   // 點擊外部自動收合
   useEffect(() => {
@@ -29,13 +52,11 @@ export default function SymptomChecker() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [input]);
 
-  // ★★★ 核心修改：防抖動與省流機制 ★★★
-  // 將原本的邏輯保留，但確保只有在這個函式被明確呼叫時才執行 fetch
   const handleManualSubmit = async () => {
     if (!input.trim()) return;
     setLoading(true);
     setResult(null);
-    setIsExpanded(true); // 確保 UI 是展開狀態
+    setIsExpanded(true); 
 
     try {
       const res = await fetch('/api/ai-triage', {
@@ -45,14 +66,35 @@ export default function SymptomChecker() {
       });
       if (!res.ok) throw new Error('API Error');
       const data = await res.json();
+      
       setResult(data);
+
+      // ============================================================
+      // 💾 新增功能 2：成功拿到結果後，存入 SessionStorage
+      // ============================================================
+      sessionStorage.setItem(STORAGE_KEY, JSON.stringify({
+          input: input,
+          result: data
+      }));
+
     } catch (error) {
-      // 這裡可以選擇不跳 alert，或是優雅地顯示錯誤訊息
-      // alert('分析失敗，請稍後再試'); 
       setResult({ recommendedIds: [], externalSuggestions: ["伺服器忙線中，請稍後再試"] });
     } finally {
       setLoading(false);
     }
+  };
+
+  // 清除結果的函式
+  const handleClear = (e?: React.MouseEvent) => {
+    if (e) e.stopPropagation(); // 防止觸發 form onClick
+    setResult(null); 
+    setInput(''); 
+    setIsExpanded(false);
+    
+    // ============================================================
+    // 💾 新增功能 3：使用者手動關閉時，清除暫存
+    // ============================================================
+    sessionStorage.removeItem(STORAGE_KEY);
   };
 
   // 1. 處理「有連結」的內部文章
@@ -76,10 +118,7 @@ export default function SymptomChecker() {
   };
 
   const internalCards = getRecommendedItems();
-  
-  // 2. 處理「無連結」的外部診斷
   const externalDiagnoses = result?.externalSuggestions || [];
-
   const hasAnyResult = internalCards.length > 0 || externalDiagnoses.length > 0;
 
   return (
@@ -88,15 +127,11 @@ export default function SymptomChecker() {
       {/* 輸入區塊 */}
       <form 
         ref={formRef}
-        /* 點擊展開 */
         onClick={() => {
             setIsExpanded(true);
             const textarea = formRef.current?.querySelector('textarea');
             if (textarea) textarea.focus();
         }}
-        /* ★★★ 核心修改：阻擋預設 submit，改用手動觸發 ★★★ 
-           這樣可以確保不會因為意外的表單行為而呼叫 API
-        */
         onSubmit={(e) => {
             e.preventDefault(); 
             handleManualSubmit();
@@ -107,7 +142,6 @@ export default function SymptomChecker() {
             : 'rounded-full border-slate-600 hover:border-cyan-400/50 hover:shadow-lg'
           }`}
       >
-        {/* 左側機器人圖示 */}
         <div className={`absolute left-4 top-4 text-cyan-400 transition-opacity duration-300 pointer-events-none z-10 ${isExpanded ? 'opacity-100' : 'opacity-70'}`}>
           <i className={`fa-solid ${loading ? 'fa-spinner fa-spin' : 'fa-robot'} text-xl`}></i>
         </div>
@@ -116,9 +150,6 @@ export default function SymptomChecker() {
           value={input}
           onFocus={() => setIsExpanded(true)}
           onChange={(e) => setInput(e.target.value)}
-          /* ★★★ 核心修改：鍵盤事件 ★★★
-             只有按下 Enter (且沒有按 Shift) 時，才呼叫 API
-          */
           onKeyDown={(e) => {
             if (e.key === 'Enter' && !e.shiftKey && !e.nativeEvent.isComposing) {
               e.preventDefault();
@@ -136,15 +167,14 @@ export default function SymptomChecker() {
             }`}
         />
 
-        {/* 右側按鈕 */}
         <div className={`absolute right-2 z-20 transition-all duration-300 
             ${isExpanded ? 'bottom-3 right-3' : 'top-2'}`}
         >
             <button
-            type="button" /* 改為 button type，避免自動 submit */
+            type="button" 
             onClick={(e) => {
-                e.stopPropagation(); // 防止觸發 form onClick
-                handleManualSubmit(); // 點擊按鈕才呼叫 API
+                e.stopPropagation(); 
+                handleManualSubmit(); 
             }}
             disabled={loading || !input.trim()}
             className={`bg-cyan-600 hover:bg-cyan-500 text-white font-medium transition-all flex items-center justify-center shadow-lg
@@ -163,33 +193,26 @@ export default function SymptomChecker() {
       {result && (
         <div className="mt-6 animate-in fade-in slide-in-from-top-4 duration-500">
           <div className="bg-slate-800/80 border border-slate-700 rounded-xl p-6 relative">
-             <button onClick={() => {setResult(null); setInput(''); setIsExpanded(false);}} className="absolute top-4 right-4 text-slate-500 hover:text-white">
+             {/* 這裡改用 handleClear 來清除暫存 */}
+             <button onClick={handleClear} className="absolute top-4 right-4 text-slate-500 hover:text-white">
                 <i className="fa-solid fa-xmark"></i>
              </button>
 
-  {/* 標題區 */}
-  <div className="mb-6 border-b border-slate-700/50 pb-4">
+            <div className="mb-6 border-b border-slate-700/50 pb-4">
                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-3">
-                    
-                    {/* 標題 */}
                     <h3 className="text-cyan-400 font-bold text-xl flex items-center shrink-0">
                         <i className="fa-solid fa-clipboard-check mr-2"></i>
                         AI初步診斷
                     </h3>
-                    
-                    {/* 警語 */}
                     <div className="text-slate-400 text-sm font-normal bg-slate-900/40 px-3 py-1.5 rounded-lg border border-slate-700/50 inline-block w-fit">
                         (⚠️ 僅供參考，請務必由醫師親自評估。)
                     </div>
-
                 </div>
             </div>
 
-            {/* 卡片顯示邏輯 */}
             {hasAnyResult ? (
                 <div className="flex flex-col gap-3">
                     
-                    {/* 1. 顯示【有文章連結】的內部診斷 */}
                     {internalCards.map((item) => (
                     <Link 
                         key={item.id} 
@@ -210,7 +233,6 @@ export default function SymptomChecker() {
                     </Link>
                     ))}
 
-                    {/* 2. 顯示【無連結】的外部診斷 */}
                     {externalDiagnoses.map((diseaseName, index) => (
                         <div 
                             key={`ext-${index}`}
@@ -218,7 +240,6 @@ export default function SymptomChecker() {
                         >
                             <div className="flex-grow min-w-0">
                                 <h4 className="text-slate-300 text-xl font-bold flex items-center">
-                                  {/* 用驚嘆號圖示區隔 */}
                                   <i className="fa-solid fa-circle-exclamation text-amber-500/80 mr-3 text-lg"></i>
                                   {diseaseName}
                                   <span className="ml-3 text-xs text-slate-500 font-normal bg-slate-700/50 px-2 py-1 rounded">
