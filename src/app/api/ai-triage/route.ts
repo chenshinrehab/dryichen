@@ -97,7 +97,7 @@ export async function POST(request: Request) {
             return NextResponse.json(result);
 
         } catch (e) {
-            console.error("💥 AI 全面忙線 (流量限制/當機)");
+            console.error("💥 AI 全面忙線  (流量限制/當機)");
             
             // ★★★ 關鍵修改在這裡 ★★★
             // 當所有 AI 都掛掉時，直接回傳「伺服器忙線中」
