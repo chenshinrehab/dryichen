@@ -144,6 +144,7 @@ const fullFacilitiesData: FacilityItem[] = [
     imageUrl: '',
     keywords: [],
     isTreatment: true, // ★★★ 關鍵標記：這是一個治療項目 ★★★
+    contentHtml: '',
   },
 
   {
@@ -153,6 +154,7 @@ const fullFacilitiesData: FacilityItem[] = [
     imageUrl: '',
     keywords: [],
     isTreatment: true, // ★★★ 關鍵標記：這是一個治療項目 ★★★
+    contentHtml: '',
   },
   {
     id: 'manual', // 對應 treatments.ts 裡的 slug
@@ -161,6 +163,7 @@ const fullFacilitiesData: FacilityItem[] = [
     imageUrl: '',
     keywords: [],
     isTreatment: true, // ★★★ 關鍵標記：這是一個治療項目 ★★★
+    contentHtml: '',
   },
   {
     id: 'high-intensity-laser', // 對應 treatments.ts 裡的 slug
@@ -169,6 +172,7 @@ const fullFacilitiesData: FacilityItem[] = [
     imageUrl: '',
     keywords: [],
     isTreatment: true, // ★★★ 關鍵標記：這是一個治療項目 ★★★
+    contentHtml: '',
   },
   {
     id: 'hyaluronic-acid', // 對應 treatments.ts 裡的 slug
@@ -177,6 +181,7 @@ const fullFacilitiesData: FacilityItem[] = [
     imageUrl: '',
     keywords: [],
     isTreatment: true, // ★★★ 關鍵標記：這是一個治療項目 ★★★
+    contentHtml: '',
   },
   {
     id: 'shoulder-dilation', // 對應 treatments.ts 裡的 slug
@@ -185,6 +190,7 @@ const fullFacilitiesData: FacilityItem[] = [
     imageUrl: '',
     keywords: [],
     isTreatment: true, // ★★★ 關鍵標記：這是一個治療項目 ★★★
+    contentHtml: '',
   },
   {
     id: 'steroid-injection', // 對應 treatments.ts 裡的 slug
@@ -193,6 +199,7 @@ const fullFacilitiesData: FacilityItem[] = [
     imageUrl: '',
     keywords: [],
     isTreatment: true, // ★★★ 關鍵標記：這是一個治療項目 ★★★
+    contentHtml: '',
   },
 
 
