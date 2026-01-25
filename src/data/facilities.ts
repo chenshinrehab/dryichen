@@ -12,6 +12,8 @@ export interface FacilityMetadata {
   imageUrl: string;
   keywords: string[];  // SEO 關鍵字
   lastModified?: string;
+  isTreatment?: boolean;  
+  youtubeVideoId?: string;
 }
 
 // 完整資料介面 (包含內文 HTML)
