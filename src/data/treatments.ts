@@ -1220,7 +1220,7 @@ const fullTreatmentsData: Treatment[] = [
   ],
   treatmentFocus: [
     '媽媽手 (手腕橈側痛) / 板機指 (手指卡住)。',
-    '腕隧道症候群 (手指發麻) 🔍️',
+    '腕隧道症候群 (手指發麻) ',
     '急性滑囊炎 (肩膀/膝蓋腫痛)。'
   ],
   images: [],
@@ -1239,8 +1239,165 @@ const fullTreatmentsData: Treatment[] = [
       answer: '不建議。類固醇是強力的消炎止痛藥，能解決「發炎」的結果，治標不治本，但往往沒有解決「動作錯誤」或「肌力不足」的原因。建議在疼痛緩解後，持續進行復健運動，強化肌力與姿勢矯正，才能避免復發。'
     }
   ]
-}
+},
 
+{
+  slug: 'iv-pain-relief',
+  title: '靜脈消炎止痛注射',
+  lastModified: '2026-01-25',
+  subtitle: '全身性疼痛的急救站，快速緩解急性發炎',
+  description: '當口服藥物緩不濟急，靜脈止痛針(NSAIDs)能提供更快速的藥物吸收與作用。針對閃到腰、落枕、急性痛風、偏頭痛或全身性筋膜炎，宸新復健科提供專業評估與安全施打，特別強調過敏史篩檢，確保治療安全有效。',
+  image: '/images/treatments/h.jpg',
+  features: ['快速起效', '全身性消炎', '急性期適用'],
+  seoTitle: '新竹靜脈止痛針 - 閃到腰/落枕/急性痛風/偏頭痛/全身痠痛治療 | 宸新復健科',
+  seoDescription: '新竹靜脈注射推薦。針對急性痛風發作、頑固性偏頭痛與全身性筋膜發炎，宸新復健科提供高效靜脈消炎止痛治療(IV NSAIDs)。專業醫師評估藥物過敏史，提供比口服藥物更快速的疼痛緩解方案。',
+  keywords: ['新竹打止痛針', '靜脈注射', 'NSAID', '閃到腰','落枕','急性痛風', '偏頭痛', '全身痠痛', '打點滴', '消炎針'],
+  youtubeVideoId: '', 
+  contentHtml: `
+    <p>生活中有時會遇到突如其來的<strong>劇烈疼痛</strong>，例如閃到腰或落枕影響工作、痛風突然發作讓人寸步難行、偏頭痛痛到想撞牆，或是重感冒引起的全身肌肉痠痛。當口服止痛藥吃了很久還沒感覺，或是痛到無法吞嚥時，<strong>靜脈消炎止痛注射</strong>是醫療上協助患者度過疼痛難關的重要手段。</p>
+    <br>
+    <p>這類針劑通常含有高強度的<strong>非類固醇消炎藥（NSAIDs）</strong>，直接進入血液循環，跳過腸胃吸收的等待時間，能以最快速度壓制體內的發炎風暴。</p>
+
+    <div style="background-color: #fef2f2; border: 2px solid #ef4444; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #991b1b; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fca5a5; padding-bottom: 0.5rem; display: flex; align-items: center;">
+            🚨 救命關鍵：這類人「絕對」要主動告知！
+        </h2>
+        
+        <p style="font-size: 1.1rem; color: #7f1d1d; font-weight: bold;">靜脈止痛針的主要成分通常是 NSAIDs（如 Ketorolac 等）。如果您有以下狀況，請務必在治療前告知醫師，否則可能引發嚴重過敏性休克：</p>
+        
+        <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #991b1b;">
+            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                <span style="background: #ef4444; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">!</span>
+                <div><strong>藥物過敏史：</strong> 曾對阿斯匹靈 (Aspirin)、布洛芬 (Ibuprofen)或其他止痛藥過敏，出現過眼睛紅腫、嘴唇腫脹、氣喘或呼吸困難者。</div>
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                <span style="background: #ef4444; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">!</span>
+                <div><strong>胃潰瘍/出血病史：</strong> 近期有胃出血或嚴重胃潰瘍者，強力消炎藥可能加重症狀。</div>
+            </li>
+            <li style="margin-bottom: 0; display: flex; align-items: start;">
+                <span style="background: #ef4444; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">!</span>
+                <div><strong>腎功能不全：</strong> 洗腎患者或慢性腎臟病患，需由醫師嚴格調整劑量或改用其他藥物。</div>
+            </li>
+        </ul>
+    </div>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>💊 靜脈止痛針的成分與原理</h3>
+    <p>很多人會問：「這是不是就是打類固醇？」其實不一定。復健科與急診常用的「消炎止痛針」，主要成分通常是 <strong>NSAIDs (非類固醇消炎藥)</strong>，有時會視情況搭配肌肉鬆弛劑或維生素 B 群。</p>
+    <ol>
+        <li><strong>阻斷發炎源頭：</strong> 透過抑制體內的環氧化酶，阻斷前列腺素的合成，直接從源頭「關掉」發炎反應。</li>
+        <li><strong>生物利用率 100%：</strong> 口服藥物需經過胃酸破壞、腸道吸收、肝臟代謝，最後只剩部分藥效進入血液。靜脈注射則是 100% 進入血液循環，因此效果既強且快。</li>
+    </ol>
+    
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>🎯 什麼時候需要打血管針？(適應症)</h3>
+    <p>靜脈注射屬於「全身性」治療，與針對單點肌腱的「局部注射」不同。它適合範圍較大、多處疼痛，或是疼痛級數極高的狀況：</p>
+
+    <h4>常見適應症包括：</h4>
+    <ul>
+        <li><strong>急性下背痛 (閃到腰)：</strong> 肌肉強烈痙攣導致無法起身或移動。</li>
+        <li><strong>急性脖子痛(落枕)：</strong> 肌肉強烈痙攣導致無法轉頭。</li>
+        <li><strong>急性痛風發作：</strong> 關節紅腫熱痛到無法走路，口服藥壓不下來時。</li>
+        <li><strong>頑固性偏頭痛：</strong> 劇烈頭痛伴隨噁心、嘔吐，無法口服藥物時。</li>
+        <li><strong>全身性筋膜炎/流感痠痛：</strong> 伴隨發燒的全身骨頭痠痛。</li>
+        
+    </ul>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>⚖️ 靜脈注射 vs. 口服藥 vs. 局部針劑</h3>
+    <p>選擇哪種治療方式，取決於疼痛的「範圍」與「急迫性」。</p>
+
+    <div style="overflow-x: auto; padding-bottom: 10px;">
+        <table style="width: 100%; min-width: 600px; border-collapse: collapse; margin-top: 1rem;">
+            <thead>
+                <tr style="background-color: #4338ca; color: white;">
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">治療方式</th>
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">作用範圍</th>
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">起效速度</th>
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">適用情境</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color:rgb(99, 102, 241); white-space: nowrap;">靜脈注射 (IV)</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">全身循環</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">最快 (約30分鐘)</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">急性劇痛、痛風、多處發炎、無法口服藥物時。</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #059669; white-space: nowrap;">
+                       口服藥物
+                    </td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">全身循環</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">慢 (1-2小時)</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">輕中度疼痛、慢性疼痛控制、居家照護。</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color:rgb(217, 119, 6); white-space: nowrap;">
+                       局部注射
+                    </td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">單點患處</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">快 (針對該點)</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">媽媽手、網球肘、單一關節炎。(不經過全身，副作用較少)</td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="text-align: center; font-size: 0.8rem; color: #6b7280; margin-top: 5px; display: block; md:hidden;">
+            (可左右滑動查看表格 👉)
+        </div>
+    </div>
+
+    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+        <h4 style="margin-top: 0; color: #0e7490;">💡 醫師的小叮嚀</h4>
+        <p style="margin-bottom: 0; color: #334155;">靜脈止痛針雖然效果神速，但它屬於<strong>「急救性質」</strong>。長期依賴打針止痛，不僅可能傷腎、傷胃，更會掩蓋身體真正的問題。當急性疼痛緩解後，務必配合物理治療找出疼痛根源（如姿勢不良、肌力失衡），才是長久之計。</p>
+    </div>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>📝 治療流程</h3>
+    <ol>
+        <li><strong>病史詢問：</strong> 醫師確認<strong>過敏史（重要！）</strong>、用藥史及疼痛狀況。</li>
+        <li><strong>靜脈施打：</strong> 護理師尋找合適血管建立管路，藥物推注或點滴滴注。</li>
+        <li><strong>留院觀察：</strong> 建議在院內休息 10-15 分鐘，確認無頭暈、呼吸不順等過敏反應後再離開。</li>
+    </ol>
+
+    <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+        <h3 style="color: #047857; margin-top: 0;">👨‍⚕️ 宸新復健科：安全優先的疼痛管理</h3>
+        <p style="color: #334155; margin-bottom: 1.5rem;">我們理解疼痛帶來的焦慮與不適。宸新復健科堅持在使用任何靜脈針劑前，進行嚴謹的過敏篩檢與身體評估，讓您在最安全的環境下，快速告別疼痛折磨。</p>
+    </div>
+  `,
+  whyChooseUs: [
+    '嚴格執行<strong>藥物過敏篩檢</strong>，確保施打安全。',
+    '醫師專業評估，區分「局部注射」與「全身注射」的必要性。',
+    '提供舒適的治療環境，即時監測生理數值。'
+  ],
+  treatmentFocus: [
+    '急性肌肉痙攣(落枕、閃到腰)',
+    '急性關節劇痛(積水、痛風)。',
+    '嚴重偏頭痛 / 全身痠痛。'
+    
+  ],
+  images: [],
+  applicableConditions: ['痛風', '偏頭痛', '急性背痛', '全身痠痛', '類風濕性關節炎發作'],
+  qaList: [
+    {
+      question: '打止痛針會有副作用嗎？',
+      answer: '所有藥物都有潛在副作用。NSAID 類針劑最常見的副作用是胃部不適（胃痛、胃酸逆流），少數人可能出現過敏反應。腎功能不佳者需特別小心。宸新醫師會根據您的身體狀況調整劑量，將風險降至最低。'
+    },
+    {
+      question: '是不是越痛就要打越多支？',
+      answer: '不是。藥物有「天花板效應」，超過一定劑量後止痛效果不會增加，副作用風險卻會倍增。我們會依照標準醫療指引給予最適合的單次劑量。'
+    },
+    {
+      question: '這跟去急診打嗎啡一樣嗎？',
+      answer: '不一樣。急診針對外傷或癌症劇痛有時會使用鴉片類藥物（如嗎啡），會有成癮性與嗜睡風險。復健科門診使用的多為非類固醇消炎藥（NSAIDs），無成癮性，打完通常意識清醒，可正常返家。'
+    }
+  ]
+}
 ]
 // =======================================================
 // 3. 自動化瘦身區 (Sitemap 與列表頁專用)

@@ -1,8 +1,8 @@
-// src/app/diseases/page.tsx
 import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { diseaseCategories } from '@/data/diseases'
+import SymptomChecker from '@/components/SymptomChecker'
 
 // 定義標準網域與路徑
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
@@ -16,7 +16,6 @@ export const metadata: Metadata = {
   title: '新竹骨科/復健科推薦 - 椎間盤突出/五十肩/關節炎/痠麻痛治療 | 宸新復健科',
   description: '新竹復健科權威，專治椎間盤突出、坐骨神經痛、肩頸痠痛與五十肩。提供退化性關節炎與網球肘的精準診斷，解決您的痠麻痛困擾，是您值得信賴的新竹骨科診所。',
   keywords: ['新竹骨科', '新竹復健科', '椎間盤突出', '背痛', '肩頸痠痛', '五十肩', '退化性關節炎', '網球肘', '痠麻痛', '復健診所'],
-  // ★★★ 加入 Canonical Tag ★★★
   alternates: {
     canonical: CANONICAL_URL,
   },
@@ -24,7 +23,7 @@ export const metadata: Metadata = {
     title: '新竹骨科/復健科推薦 - 各部位疼痛治療導覽',
     description: '肩膀痛、膝蓋痛、腰痛？點擊查看宸新復健科針對各部位疼痛的詳細衛教與治療建議。',
     type: 'website',
-    url: CANONICAL_URL, // 同步更新 OG URL
+    url: CANONICAL_URL,
   }
 }
 
@@ -46,7 +45,7 @@ const diseasesSchema = {
       '@id': `${CANONICAL_URL}#webpage`,
       'name': '骨科復健疾病衛教導覽',
       'description': '提供脊椎、關節、肌肉疼痛等相關疾病的詳細症狀說明與治療建議。',
-      'url': CANONICAL_URL, // 明確指定 URL
+      'url': CANONICAL_URL,
       'lastReviewed': new Date().toISOString().split('T')[0],
       'reviewedBy': {
         '@type': 'Physician',
@@ -77,55 +76,33 @@ export default function DiseasesPage() {
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
-        {/* 🟢 修改 1: 減少頂部 Padding (pt-4, md:pt-8) */}
-        <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt--6 pb-12 md:pt--6 md:pb-16 fade-in">
+        {/* 修正 padding */}
+        <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 _pt-8 pb-12 md:-pt-12 md:pb-16 fade-in">
           
           {/* ============================================================
-              ✨ 標題區塊 (樣式更新：參考 WeightLoss)
+              ✨ 標題區塊 + AI 搜尋
               ============================================================ */}
-          <div className="flex items-center justify-center gap-3 mb-10">
-              <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
-                  <i className="fa-solid fa-book-medical text-xl"></i>
-              </span>
-              <h1 className="text-3xl font-bold font-sans text-white">
-                  疾病衛教 <span className="text-slate-500 text-lg font-normal ml-2">Diseases Info</span>
-              </h1>
+          <div className="text-center mb-10 max-w-4xl mx-auto">
+              
+              <div className="flex items-center justify-center gap-3 mb-10">
+                  <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
+                      <i className="fa-solid fa-book-medical text-xl"></i>
+                  </span>
+                  <h1 className="text-3xl font-bold font-sans text-white">
+                      常見骨科疾病衛教
+                  </h1>
+              </div>
+
+              {/* AI 輸入框 */}
+              <div className="relative z-20">
+                  <SymptomChecker />
+              </div>
           </div>
 
-          {/* ============================================================
-              ✨ SEO 導言區 (樣式更新：參考 WeightLoss 改為左側線條式)
-              ============================================================ */}
-          <div className="mb-12 max-w-3xl mx-auto">
-              <details className="group border-l-4 border-cyan-500 pl-4">
-                  <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left hover:text-cyan-400 transition-colors">
-                      <span className="inline-block h-full">
-                          <span className="flex items-center gap-2 mb-2">
-                             <i className="fa-solid fa-user-doctor text-cyan-500"></i>
-                             <strong className="text-white font-medium">醫師叮嚀：身體的疼痛，不能只靠止痛藥</strong>
-                          </span>
-                          作為專業的<strong className="text-cyan-400 font-normal">新竹復健科骨科</strong>診所，我們重視精確的鑑別診斷...
-                          
-                          <span className="group-open:hidden">
-                              <span className="ml-2 text-sm text-cyan-500 hover:text-cyan-400 hover:underline underline-offset-4 font-semibold">
-                                  展開閱讀 <i className="fa-solid fa-chevron-down text-xs"></i>
-                              </span>
-                          </span>
-                      </span>
-                  </summary>
-                  
-                  <div className="mt-4 text-lg text-slate-400 leading-relaxed text-left animate-in fade-in slide-in-from-top-1 duration-300">
-                      <p className="mb-4">
-                          無論是現代文明病造成的<strong className="text-cyan-400 font-normal">肩頸痠痛</strong>與<strong className="text-cyan-400 font-normal">背痛</strong>，或是困擾中老年人的<strong className="text-cyan-400 font-normal">五十肩</strong>與膝蓋<strong className="text-cyan-400 font-normal">退化性關節炎</strong>，我們都能提供完整的治療計畫。
-                      </p>
-                      <p>
-                          針對運動傷害如<strong className="text-cyan-400 font-normal">網球肘</strong>，以及神經壓迫導致的<strong className="text-cyan-400 font-normal">椎間盤突出</strong>與手腳<strong className="text-cyan-400 font-normal">痠麻痛</strong>，宸新復健科團隊將協助您找出病因，遠離疼痛。
-                      </p>
-                  </div>
-              </details>
-          </div>
+          {/* (原本這裡的 SEO 導言區已被移動到最下方) */}
           
           {/* ============================================================
-              ✨ 卡片列表 Grid (保持原本佈局，但微調樣式)
+              ✨ 卡片列表 Grid
               ============================================================ */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16">
             {diseaseCategories.map((category) => (
@@ -144,7 +121,7 @@ export default function DiseasesPage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/10 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
                     
-                    {/* 分類標題直接壓在圖片左下角 */}
+                    {/* 分類標題 */}
                     <div className="absolute bottom-0 left-0 p-5 w-full">
                         <h2 className="text-2xl font-bold text-white group-hover:text-cyan-300 transition-colors drop-shadow-lg flex items-center justify-between">
                             {category.title}
@@ -172,7 +149,7 @@ export default function DiseasesPage() {
                             )}
                         </div>
                       ) : (
-                         <span className="text-xs text-slate-600 italic">資料更新中...</span>
+                          <span className="text-xs text-slate-600 italic">資料更新中...</span>
                       )}
                   </div>
                 </div>
@@ -181,9 +158,9 @@ export default function DiseasesPage() {
           </div>
 
           {/* ============================================================
-              ✨ 專業信任區塊 (保留原本的 E-E-A-T 區塊，增加頁面權威性)
+              ✨ 專業信任區塊
               ============================================================ */}
-          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 md:p-10 border border-slate-700 relative overflow-hidden shadow-2xl">
+          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 md:p-10 border border-slate-700 relative overflow-hidden shadow-2xl mb-12">
               <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
               
               <div className="relative z-10 flex flex-col md:flex-row gap-8 items-start">
@@ -225,6 +202,36 @@ export default function DiseasesPage() {
                       </div>
                   </div>
               </div>
+          </div>
+
+          {/* ============================================================
+              ✨ SEO 導言區 (已移動至頁面最下方)
+              說明：為了不影響使用者瀏覽卡片體驗，將詳細文字說明移至此處。
+              這對 SEO 沒有負面影響，且符合 "補充內容 (Supplementary Content)" 的位置慣例。
+              ============================================================ */}
+          <div className="max-w-4xl mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+              <details className="group border-l-2 border-slate-700 pl-4">
+                  <summary className="list-none [&::-webkit-details-marker]:hidden text-sm md:text-base text-slate-500 leading-relaxed outline-none cursor-pointer select-none text-left hover:text-cyan-400 transition-colors">
+                      <span className="inline-block h-full">
+                          <span className="flex items-center gap-2 mb-2">
+                             <i className="fa-solid fa-circle-info text-cyan-500/50"></i>
+                             <strong className="text-slate-400 font-medium">更多關於骨科復健的衛教資訊</strong>
+                          </span>
+                          <span className="group-open:hidden">
+                              ... <span className="text-xs text-cyan-500 hover:underline ml-2">展開閱讀</span>
+                          </span>
+                      </span>
+                  </summary>
+                  
+                  <div className="mt-4 text-base text-slate-500 leading-relaxed text-left animate-in fade-in slide-in-from-top-1 duration-300">
+                      <p className="mb-4">
+                          無論是現代文明病造成的<strong className="text-slate-400 font-normal">肩頸痠痛</strong>與<strong className="text-slate-400 font-normal">背痛</strong>，或是困擾中老年人的<strong className="text-slate-400 font-normal">五十肩</strong>與膝蓋<strong className="text-slate-400 font-normal">退化性關節炎</strong>，我們都能提供完整的治療計畫。
+                      </p>
+                      <p>
+                          針對運動傷害如<strong className="text-slate-400 font-normal">網球肘</strong>，以及神經壓迫導致的<strong className="text-slate-400 font-normal">椎間盤突出</strong>與手腳<strong className="text-slate-400 font-normal">痠麻痛</strong>，宸新復健科團隊將協助您找出病因，遠離疼痛。我們致力於提供新竹地區最專業的骨科復健服務。
+                      </p>
+                  </div>
+              </details>
           </div>
 
         </main>

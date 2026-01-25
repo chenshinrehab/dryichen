@@ -201,6 +201,15 @@ const fullFacilitiesData: FacilityItem[] = [
     isTreatment: true, // ★★★ 關鍵標記：這是一個治療項目 ★★★
     contentHtml: '',
   },
+  {
+    id: 'iv-pain-relief', // 對應 treatments.ts 裡的 slug
+    title: '靜脈消炎止痛注射 佔位符(不會顯示)', // 這行隨便寫，反正會被覆蓋
+    description: '',
+    imageUrl: '',
+    keywords: [],
+    isTreatment: true, // ★★★ 關鍵標記：這是一個治療項目 ★★★
+    contentHtml: '',
+  },
 
 
 
