@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getAllDiseases } from '@/data/diseases';
-
+export const maxDuration = 60;
 // ============================================================
 // 🛠️ 呼叫 AI 的工具函式
 // ============================================================

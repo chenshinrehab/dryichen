@@ -7,7 +7,7 @@ import { diseaseCategories } from '@/data/diseases';
 // 定義回傳資料的型別
 interface AIResult {
   recommendedIds: string[];
-  externalSuggestions?: string[]; // ★ 新增這個欄位
+  externalSuggestions?: string[];
 }
 
 export default function SymptomChecker() {
@@ -29,12 +29,13 @@ export default function SymptomChecker() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [input]);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  // ★★★ 核心修改：防抖動與省流機制 ★★★
+  // 將原本的邏輯保留，但確保只有在這個函式被明確呼叫時才執行 fetch
+  const handleManualSubmit = async () => {
     if (!input.trim()) return;
     setLoading(true);
     setResult(null);
-    setIsExpanded(true);
+    setIsExpanded(true); // 確保 UI 是展開狀態
 
     try {
       const res = await fetch('/api/ai-triage', {
@@ -46,7 +47,9 @@ export default function SymptomChecker() {
       const data = await res.json();
       setResult(data);
     } catch (error) {
-      alert('分析失敗，請稍後再試');
+      // 這裡可以選擇不跳 alert，或是優雅地顯示錯誤訊息
+      // alert('分析失敗，請稍後再試'); 
+      setResult({ recommendedIds: [], externalSuggestions: ["伺服器忙線中，請稍後再試"] });
     } finally {
       setLoading(false);
     }
@@ -74,7 +77,7 @@ export default function SymptomChecker() {
 
   const internalCards = getRecommendedItems();
   
-  // 2. 處理「無連結」的外部診斷 (直接取用 string array)
+  // 2. 處理「無連結」的外部診斷
   const externalDiagnoses = result?.externalSuggestions || [];
 
   const hasAnyResult = internalCards.length > 0 || externalDiagnoses.length > 0;
@@ -82,21 +85,21 @@ export default function SymptomChecker() {
   return (
     <div className="w-full max-w-3xl mx-auto transition-all duration-300">
       
-{/* 輸入區塊 */}
-<form 
+      {/* 輸入區塊 */}
+      <form 
         ref={formRef}
-        /* 修正重點 1: 手機版觸控優化
-           直接在最外層 Form 加上 onClick 事件。
-           只要手指點到這個框框的任何一個角落，就強制設定為「展開」並讓游標跳進去。
-        */
+        /* 點擊展開 */
         onClick={() => {
-            setIsExpanded(true); // 強制展開 UI
+            setIsExpanded(true);
             const textarea = formRef.current?.querySelector('textarea');
-            if (textarea) textarea.focus(); // 強制鍵盤彈出
+            if (textarea) textarea.focus();
         }}
+        /* ★★★ 核心修改：阻擋預設 submit，改用手動觸發 ★★★ 
+           這樣可以確保不會因為意外的表單行為而呼叫 API
+        */
         onSubmit={(e) => {
             e.preventDefault(); 
-            handleSubmit(e);
+            handleManualSubmit();
         }} 
         className={`relative group bg-slate-800 border transition-all duration-300 ease-in-out
           ${isExpanded 
@@ -104,37 +107,32 @@ export default function SymptomChecker() {
             : 'rounded-full border-slate-600 hover:border-cyan-400/50 hover:shadow-lg'
           }`}
       >
-        {/* 左側機器人圖示 (保持穿透設定，避免擋住點擊) */}
+        {/* 左側機器人圖示 */}
         <div className={`absolute left-4 top-4 text-cyan-400 transition-opacity duration-300 pointer-events-none z-10 ${isExpanded ? 'opacity-100' : 'opacity-70'}`}>
           <i className={`fa-solid ${loading ? 'fa-spinner fa-spin' : 'fa-robot'} text-xl`}></i>
         </div>
 
         <textarea
           value={input}
-          /* 保持原本的 onFocus，雙重保險 */
           onFocus={() => setIsExpanded(true)}
           onChange={(e) => setInput(e.target.value)}
-          /* 鍵盤事件：電腦版按 Enter 送出 */
+          /* ★★★ 核心修改：鍵盤事件 ★★★
+             只有按下 Enter (且沒有按 Shift) 時，才呼叫 API
+          */
           onKeyDown={(e) => {
             if (e.key === 'Enter' && !e.shiftKey && !e.nativeEvent.isComposing) {
               e.preventDefault();
               if (!loading && input.trim()) {
-                handleSubmit(e);
+                handleManualSubmit();
               }
             }
           }}
-          placeholder={isExpanded ? "AI目前測試中，有問題請見諒" : "AI目前測試中，有問題請見諒"}
+          placeholder={isExpanded ? "請輸入症狀（例如：下背痛、大拇指腫痛）..." : "AI 症狀分析 (點擊輸入)"}
           
-          /* 修正重點 2: CSS 版面配置 (解決輸入跳行與空間問題)
-             - pb-14: 展開時，底部留白 14 (約56px)，讓文字不會被右下角的按鈕蓋住。
-             - pr-4: 展開時，右邊只留一點點縫隙，讓文字可以寫到最右邊 (像電腦版一樣寬)。
-             - whitespace-pre-wrap: 展開時，允許自動換行。
-             - whitespace-nowrap: 收合時，強制單行 (避免跑版)。
-          */
           className={`w-full bg-transparent text-slate-200 placeholder-slate-400 focus:outline-none resize-none py-4 pl-12 leading-relaxed transition-all duration-300 relative z-0
             ${isExpanded 
-                ? 'h-40 pr-4 pb-14 overflow-y-auto whitespace-pre-wrap' // 展開：高度高，底部留白避開按鈕，可換行
-                : 'h-14 pr-12 overflow-hidden whitespace-nowrap'       // 收合：高度矮，右邊留白給放大鏡，單行
+                ? 'h-40 pr-4 pb-14 overflow-y-auto whitespace-pre-wrap'
+                : 'h-14 pr-12 overflow-hidden whitespace-nowrap'
             }`}
         />
 
@@ -143,8 +141,11 @@ export default function SymptomChecker() {
             ${isExpanded ? 'bottom-3 right-3' : 'top-2'}`}
         >
             <button
-            type="submit"
-            onClick={(e) => e.stopPropagation()} // 防止觸發 form onClick
+            type="button" /* 改為 button type，避免自動 submit */
+            onClick={(e) => {
+                e.stopPropagation(); // 防止觸發 form onClick
+                handleManualSubmit(); // 點擊按鈕才呼叫 API
+            }}
             disabled={loading || !input.trim()}
             className={`bg-cyan-600 hover:bg-cyan-500 text-white font-medium transition-all flex items-center justify-center shadow-lg
                 ${isExpanded ? 'px-6 py-2 rounded-lg text-sm' : 'w-10 h-10 rounded-full'}`}
@@ -176,7 +177,7 @@ export default function SymptomChecker() {
                         AI初步診斷
                     </h3>
                     
-                    {/* 警語：手機版會自動換行到下方，電腦版會接在右邊 */}
+                    {/* 警語 */}
                     <div className="text-slate-400 text-sm font-normal bg-slate-900/40 px-3 py-1.5 rounded-lg border border-slate-700/50 inline-block w-fit">
                         (⚠️ 僅供參考，請務必由醫師親自評估。)
                     </div>
@@ -188,7 +189,7 @@ export default function SymptomChecker() {
             {hasAnyResult ? (
                 <div className="flex flex-col gap-3">
                     
-                    {/* 1. 顯示【有文章連結】的內部診斷 (優先顯示) */}
+                    {/* 1. 顯示【有文章連結】的內部診斷 */}
                     {internalCards.map((item) => (
                     <Link 
                         key={item.id} 
@@ -209,7 +210,7 @@ export default function SymptomChecker() {
                     </Link>
                     ))}
 
-                    {/* 2. 顯示【無連結】的外部診斷 (AI 高度懷疑但網站沒文章) */}
+                    {/* 2. 顯示【無連結】的外部診斷 */}
                     {externalDiagnoses.map((diseaseName, index) => (
                         <div 
                             key={`ext-${index}`}
@@ -221,7 +222,7 @@ export default function SymptomChecker() {
                                   <i className="fa-solid fa-circle-exclamation text-amber-500/80 mr-3 text-lg"></i>
                                   {diseaseName}
                                   <span className="ml-3 text-xs text-slate-500 font-normal bg-slate-700/50 px-2 py-1 rounded">
-                                     本站尚無文章
+                                    {diseaseName.includes('忙線') ? '請稍後' : '本站尚無文章'}
                                   </span>
                                 </h4>
                             </div>
