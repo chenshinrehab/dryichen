@@ -177,7 +177,7 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                         
                         {/* 症狀標籤 */}
                         {disease.symptoms && disease.symptoms.length > 0 && (
-                            <div className="flex flex-wrap gap-1.5 mb-4">
+                            <div className="hidden md:flex flex-wrap gap-1.5 mb-4">
                                 {disease.symptoms.slice(0, 3).map((symptom, idx) => (
                                     <span key={idx} className="text-[11px] font-medium bg-slate-700/50 text-cyan-200/80 px-2 py-1 rounded-md border border-slate-600/50">
                                         #{symptom}

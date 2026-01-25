@@ -43,7 +43,7 @@ const fullTreatmentsData: Treatment[] = [
     slug: 'prp',
     title: '增生療法 / PRP',
     lastModified: '2026-01-22',
-    subtitle: '超音波導引、高濃度血小板注射',
+    subtitle: '超音波導引高濃度血小板注射',
     description: '透過注射高濃度血小板血漿 (PRP) 或高濃度葡萄糖，精準修復受損關節與韌帶。',
     image: '/images/treatments/a.jpg',
     features: ['啟動修復', '免開刀', '精準導引'],
@@ -223,7 +223,7 @@ const fullTreatmentsData: Treatment[] = [
     slug: 'shockwave',
     title: '聚焦式 / 發散式體外震波',
     lastModified: '2026-01-21',
-    subtitle: '瑞士頂級設備、擊碎鈣化與骨刺',
+    subtitle: '瑞士頂級設備擊碎鈣化與骨刺',
     description: '引進瑞士頂級震波設備，免開刀擊碎鈣化點，專治足底筋膜炎與頑固疼痛。',
     image: '/images/treatments/b.jpg',
     features: ['非侵入性', '擊碎鈣化', '恢復期短'],
@@ -383,7 +383,7 @@ const fullTreatmentsData: Treatment[] = [
     slug: 'manual',
     title: '徒手治療',
     lastModified: '2026-01-21',
-    subtitle: '物理治療師一對一、骨骼筋膜調整',
+    subtitle: '物理治療師一對一評估治療',
     description: '專業物理治療師一對一評估，調整骨盆歪斜、脊椎側彎與筋膜放鬆。',
     image: '/images/treatments/c.jpg',
     features: ['一對一治療', '筋膜放鬆', '骨骼調整'],
@@ -690,7 +690,7 @@ const fullTreatmentsData: Treatment[] = [
   slug: 'hyaluronic-acid',
   title: '超音波導引玻尿酸注射',
   lastModified: '2026-01-24',
-  subtitle: '精準導引、潤滑關節、延緩膝蓋退化',
+  subtitle: '精準導引潤滑關節、延緩退化',
   description: '新竹玻尿酸注射推薦。堅持採用高解析超音波導引，將玻尿酸精準注入關節腔，有效緩解退化性關節炎與五十肩疼痛，比傳統盲打更安全有效。',
   image: '/images/treatments/e.jpg',
   features: ['超音波導引', '潤滑關節', '延緩置換'],
@@ -765,40 +765,45 @@ const fullTreatmentsData: Treatment[] = [
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
     <h3>⚖️ 玻尿酸 vs. PRP vs. 類固醇：我該選哪種？</h3>
-    <p>這是門診病患最常問的問題。簡單來說，這三種針劑的「任務」不同，醫師會根據您的嚴重程度建議適合的療程，甚至採用<strong>複合式治療</strong>。</p>
+<p>這是門診病患最常問的問題。簡單來說，這三種針劑的「任務」不同，醫師會根據您的嚴重程度建議適合的療程，甚至採用<strong>複合式治療</strong>。</p>
 
-    <div style="overflow-x: auto;">
-        <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-            <thead>
-                <tr style="background-color: #0369a1;">
-                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left;">治療項目</th>
-                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left;">主要作用</th>
-                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left;">適合對象</th>
-                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left;">特點</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #0369a1;">玻尿酸</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">潤滑、緩衝、保護軟骨</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">輕中度退化、關節卡卡</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">像是幫關節「上油」，立即改善活動度，副作用極低。</td>
-                </tr>
-                <tr>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #b91c1c;"><a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">修復組織、再生</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">肌腱撕裂、軟骨磨損較明顯者</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">利用自身生長因子修復，效果較持久，針對「受傷」修復。</td>
-                </tr>
-                <tr>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #f3f4f6;">類固醇</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">強力消炎、止痛</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">急性發炎期、積水腫脹嚴重</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">治標不治本，短期急救用，不建議長期頻繁施打。</td>
-                </tr>
-            </tbody>
-        </table>
+<div style="overflow-x: auto; padding-bottom: 10px;">
+    <table style="width: 100%; min-width: 600px; border-collapse: collapse; margin-top: 1rem;">
+        <thead>
+            <tr style="background-color: #0369a1; color: white;">
+                <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">治療項目</th>
+                <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">主要作用</th>
+                <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">適合對象</th>
+                <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">特點</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color:rgb(116, 233, 239); white-space: nowrap;">玻尿酸</td>
+                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">潤滑、緩衝、保護軟骨</td>
+                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">輕中度退化、關節卡卡</td>
+                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">像是幫關節「上油」，立即改善活動度，副作用極低。</td>
+            </tr>
+            <tr>
+                <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #b91c1c; white-space: nowrap;">
+                    <a href="/treatments/prp" class="text-cyan-400 hover:underline" style="color: #0891b2; text-decoration: none;">PRP 增生療法</a> 🔍️
+                </td>
+                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">修復組織、再生</td>
+                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">肌腱撕裂、軟骨磨損較明顯者</td>
+                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">利用自身生長因子修復，效果較持久，針對「受傷」修復。</td>
+            </tr>
+            <tr>
+                <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color:rgb(181, 209, 247); white-space: nowrap;">類固醇</td>
+                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">強力消炎、止痛</td>
+                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">急性發炎期、積水腫脹嚴重</td>
+                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">治標不治本，短期急救用，不建議長期頻繁施打。</td>
+            </tr>
+        </tbody>
+    </table>
+    <div style="text-align: center; font-size: 0.8rem; color: #6b7280; margin-top: 5px; display: block; md:hidden;">
+        (可左右滑動查看表格 👉)
     </div>
+</div>
 
     <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
         <h4 style="margin-top: 0; color: #0e7490;">💡 醫師的小叮嚀：長效 vs. 短效玻尿酸</h4>

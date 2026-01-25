@@ -241,7 +241,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                   </div>
                   <div>
                     <h1 className="text-3xl md:text-5xl font-bold font-sans text-white mb-3 tracking-wide leading-tight">{disease.title}</h1>
-                    <div className="flex flex-wrap gap-2 mt-2">
+                    <div className="hidden md:flex flex-wrap gap-2 mt-2">
                       {disease.seoKeywords?.slice(0, 5).map((kw, i) => (
                         <span key={i} className="text-xs bg-slate-700 text-cyan-400 px-2 py-1 rounded-full border border-slate-600">#{kw}</span>
                       ))}

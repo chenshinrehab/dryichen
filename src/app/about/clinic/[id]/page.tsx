@@ -203,7 +203,7 @@ export default function FacilityDetailPage({ params }: PageProps) {
                 
                 <div className="absolute bottom-0 left-0 p-6 md:p-10 w-full">
                     <h1 className="text-3xl md:text-5xl font-bold text-white mb-3 tracking-wide shadow-black drop-shadow-md">{item.title}</h1>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="hidden md:flex flex-wrap gap-2">
                         {item.keywords.slice(0, 5).map((kw, i) => (
                             <span key={i} className="text-xs md:text-sm bg-cyan-950/80 text-cyan-300 px-3 py-1 rounded-full border border-cyan-500/30 backdrop-blur-md">
                                 #{kw}
