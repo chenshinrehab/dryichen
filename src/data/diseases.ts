@@ -50,16 +50,14 @@ export const diseaseCategories: DiseaseCategory[] = [
 {
         id: 'lower-back-muscle-pain',
         slug: 'lower-back-muscle-pain',
-        lastModified: '2026-02-02',
-        title: '下背肌筋膜疼痛 (腰閃到/久坐腰痠)',
+        lastModified: '2026-01-25',
+        title: '下背肌筋膜疼痛 ',
         description: '洗臉彎腰就定住？早上起床腰桿挺不直？這不一定是骨刺，而是「下背肌筋膜疼痛」！深入解析闊背肌與腰方肌的激痛點，以及運用增生注射修復筋膜與徒手治療的全方位攻略。',
         contentHtml: `
           <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：早上起床時，腰部僵硬得像一塊鐵板，要在床邊坐好一陣子才能慢慢站直？或是只是彎腰刷牙、搬個盆栽，腰部突然<strong>「啪」</strong>的一聲，接著就痛到動彈不得（俗稱閃到腰）？又或者，您是久坐辦公室的族群，總覺得後腰深處有一點<strong>「痠痠的、重重的」</strong>，怎麼按摩都搔不到癢處？</p>
           <br>
-          <p style="color: #e2e8f0 !important;">這些症狀，高達 80% 不是因為椎間盤突出或長骨刺，而是<strong>「下背肌筋膜疼痛症候群 (Myofascial Pain Syndrome)」</strong>。這是肌肉長期過勞、緊繃，形成一球一球的<strong>「激痛點 (Trigger Points)」</strong>所致。在宸新復健科，我們不只開止痛藥，更透過高解析超音波精準導航，利用<strong>增生注射</strong>修復受損的筋膜與韌帶，並配合<strong>專業徒手治療</strong>調整骨盆力學，徹底解決反覆腰痛的根源。</p>
+          <p style="color: #e2e8f0 !important;">這些症狀，高達 80% 不是因為椎間盤突出或長骨刺，而是<strong>「下背肌筋膜疼痛症候群」</strong>。這是肌肉長期過勞、緊繃，形成一球一球的<strong>「激痛點」</strong>所致。在宸新復健科，我們不只開止痛藥，更透過高解析超音波精準導航，利用<strong>增生注射</strong>修復受損的筋膜與韌帶，並配合<strong>專業徒手治療</strong>調整骨盆力學，徹底解決反覆腰痛的根源。</p>
       
-          <p><img src="https://images.unsplash.com/photo-1559055749-0d22088e0729?auto=format&fit=crop&q=80&w=1200" alt="男子手扶後腰部表情痛苦" style="width: 100%; height: auto; border-radius: 12px;"></p>
-          
           <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
               <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
                   📢 誰是兇手？下背痛的四大「肌肉嫌疑犯」
@@ -91,6 +89,9 @@ export const diseaseCategories: DiseaseCategory[] = [
                           <br><strong>特徵：</strong> 負責維持直立。久站後，這兩條肌肉會變得像<strong>「石頭一樣硬」</strong>，導致無法彎腰，按壓會有明顯的條索狀硬塊。
                       </div>
                   </li>
+                  
+                         <p><img src="/images/diseases/spine-hip/lbp/b.jpg" alt="下背肌肉構造圖"></p>
+
                   <li style="margin-bottom: 0; display: flex; align-items: start;">
                       <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
                       <div style="color: #92400e !important;">
@@ -98,6 +99,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                           <br><strong>特徵：</strong> <strong>久坐族</strong>的通病。肌肉縮短導致站起來時<strong>「腰桿挺不直」</strong>，且疼痛常傳導到大腿前側。
                       </div>
                   </li>
+                  <p><img src="/images/diseases/spine-hip/lbp/c.jpg" alt="髂腰肌肌肉構造圖"></p>
               </ul>
           </div>
       
@@ -106,8 +108,8 @@ export const diseaseCategories: DiseaseCategory[] = [
           <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：是肌肉痛還是神經痛？</h3>
           <p style="color: #e2e8f0 !important;">肌筋膜疼痛症候群有幾個經典特徵，可與坐骨神經痛區分：</p>
           <ul style="color: #e2e8f0 !important; margin-left: 1rem;">
-              <li style="margin-bottom: 0.5rem;"><strong>激痛點 (Trigger Point)：</strong> 在肌肉上可以摸到像花生米大小的硬結，用力按壓會引發劇烈疼痛，甚至會讓肌肉抽動（跳針反應）。</li>
-              <li style="margin-bottom: 0.5rem;"><strong>轉移痛 (Referred Pain)：</strong> 按壓腰部的痛點，疼痛會「跑」到屁股或大腿外側，但通常<strong>不會</strong>像坐骨神經痛那樣「電」到腳底板。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>激痛點：</strong> 在肌肉上可以摸到像花生米大小的硬結，用力按壓會引發劇烈疼痛，甚至會讓肌肉抽動。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>轉移痛：</strong> 按壓腰部的痛點，疼痛會「跑」到屁股或大腿外側，但通常<strong>不會</strong>像坐骨神經痛那樣「電」到腳底</li>
               <li style="margin-bottom: 0.5rem;"><strong>晨間僵硬：</strong> 剛起床最痛，活動開了會稍微緩解，但到了下午疲勞累積又開始痛。</li>
           </ul>
       
@@ -119,18 +121,15 @@ export const diseaseCategories: DiseaseCategory[] = [
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
               <h4 style="margin-top: 0; color: #0e7490 !important;">1. 精準修復：<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引增生注射 (Prolotherapy/PRP)</a></h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
-                  許多慢性腰痛是因為「筋膜層沾黏」夾殺了皮神經，或是肌腱附著點（Enthesis）反覆撕裂。
+                  許多慢性腰痛是因為「筋膜層沾黏」夾殺了皮神經，或是肌腱附著點反覆撕裂。
                   <br>
                   <strong>治療原理：</strong> 醫師利用高解析超音波，清楚看到沾黏的筋膜與受傷的肌肉。將高濃度葡萄糖或自體血小板 (PRP) 精準注射到患處：
-                  <ul style="margin-top: 0.5rem;">
-                      <li><strong>神經解套 (Hydrodissection)：</strong> 用注射液將沾黏的筋膜「撐開」，釋放被夾住的神經，疼痛通常能立即緩解。</li>
+                  <ul style="color: #334155 !important; margin-top: 0.5rem;">
+                      <li><strong>神經解套：</strong> 用注射液將沾黏的筋膜「撐開」，釋放被夾住的神經，疼痛通常能立即緩解。</li>
                       <li><strong>組織再生：</strong> 啟動身體的修復機制，強化鬆弛的韌帶與受傷的肌腱，讓腰部重新變得強韌。</li>
                   </ul>
               </p>
           </div>
-      
-          
-          <p><img src="https://plus.unsplash.com/premium_photo-1661580574627-9211124e5c3f?auto=format&fit=crop&q=80&w=1200" alt="醫師進行下背部超音波導引注射治療" style="width: 100%; height: auto; border-radius: 12px;"></p>
       
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
               <h4 style="margin-top: 0; color: #0e7490 !important;">2. 結構還原：<a href="/treatments/manual" class="text-cyan-400 hover:underline">專業徒手治療 (Manual Therapy)</a></h4>
@@ -138,7 +137,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   這不是一般的按摩放鬆。治療師會進行完整的體態評估，找出導致肌肉緊繃的源頭（例如長短腳、骨盆歪斜或胸椎僵硬）。
                   <br>
                   <strong>治療重點：</strong>
-                  <ul style="margin-top: 0.5rem;">
+                   <ul style="color: #334155 !important; margin-top: 0.5rem;">
                       <li><strong>筋膜釋放術：</strong> 深層推開闊背肌與腰方肌的沾黏硬塊。</li>
                       <li><strong>關節鬆動術：</strong> 矯正錯位的骨盆與脊椎，恢復關節活動度。</li>
                       <li><strong>神經動能調整 (NKT)：</strong> 重新訓練大腦對肌肉的控制，避免錯誤的代償用力。</li>
@@ -148,66 +147,127 @@ export const diseaseCategories: DiseaseCategory[] = [
       
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
-          <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：居家護腰三部曲</h3>
-          <p style="color: #e2e8f0 !important;">除了治療，回家後的保養至關重要。這三個動作能放鬆緊繃的背肌並啟動核心：</p>
-      
-          <div style="margin-bottom: 2rem;">
-              <h4 style="color: #22d3ee !important;">1. 嬰兒式側伸展 (Child's Pose Side Stretch)</h4>
-              <p style="color: #e2e8f0 !important;">
-                  <strong>目標：</strong> 同時拉開<strong>闊背肌</strong>與<strong>腰方肌</strong>，緩解單側腰痛。
-                  <br>1. 跪姿，臀部坐在腳跟上，身體趴下（嬰兒式）。
-                  <br>2. 雙手盡量向前延伸。
-                  <br>3. <strong>關鍵：</strong> 雙手慢慢往<strong>左邊</strong>爬，直到感覺<strong>右邊</strong>腋下到側腰被拉開。
-                  <br>4. 停留 30 秒，深呼吸。換邊進行。重複 3 次。
-              </p>
-          </div>
-      
-          <div style="margin-bottom: 2rem;">
-              <h4 style="color: #22d3ee !important;">2. 貓牛式 (Cat-Cow)</h4>
-              <p style="color: #e2e8f0 !important;">
-                  <strong>目標：</strong> 增加脊椎活動度，促進豎脊肌循環。
-                  <br>1. 四足跪姿，手在肩膀下，膝蓋在臀部下。
-                  <br>2. <strong>吸氣：</strong> 頭抬起，腰微凹（牛式）。
-                  <br>3. <strong>吐氣：</strong> 腹部收緊，背部拱高像生氣的貓，視線看肚臍。
-                  <br>4. 動作要慢，專注於脊椎一節一節的活動。重複 10 次。
-              </p>
-          </div>
-      
-          
-          <p><img src="https://images.unsplash.com/photo-1544367563-12123d832d34?auto=format&fit=crop&q=80&w=1200" alt="貓牛式瑜珈伸展動作" style="width: 100%; height: auto; border-radius: 12px;"></p>
-      
-          <div style="margin-bottom: 2rem;">
-              <h4 style="color: #22d3ee !important;">3. 死蟲式 (Dead Bug)</h4>
-              <p style="color: #e2e8f0 !important;">
-                  <strong>目標：</strong> 核心鎖定，建立天然護腰。
-                  <br>1. 平躺，雙手舉高，雙腳屈膝抬起呈 90 度。
-                  <br>2. <strong>重點：</strong> 用力將下背部「壓死」在地板上，不能有縫隙。
-                  <br>3. 吐氣時，對側手腳慢慢伸直，吸氣回正。
-                  <br>4. 背部絕對不能拱起來。每邊做 10 次。
-              </p>
-          </div>
-      
+
+    <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：護腰運動懶人包 (8 招詳解)</h3>
+    <p style="color: #e2e8f0 !important;">下背痛的復健原則是：<strong>「先伸展放鬆緊繃肌肉，再強化核心與臀部」</strong>。請依照順序進行，若動作引發劇烈刺痛請暫停。</p>
+
+    <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 1. 四大伸展：釋放腰背壓力</h4>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">1. 人面獅身/眼鏡蛇式</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 伸展緊繃的腹部與髂腰肌，舒緩久坐造成的彎腰姿勢。
+            <br>
+            1. 趴在瑜珈墊上，雙腳與肩同寬。
+            <br>
+            2. <strong>初階版（人面獅身）：</strong> 手肘撐地（在肩膀正下方），將上半身撐起，視線平視前方。適合腰比較硬的人。<br>
+            3. <strong>進階版（眼鏡蛇）：</strong> 手掌撐地，手臂伸直將上半身推高，恥骨盡量貼地。<br>
+            4. 感覺肚子被拉開。停留 30 秒，重複 3 次。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">2. 嬰兒式側伸展</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 拉開闊背肌與腰方肌（這是緩解單側腰痛最有效的動作）。
+            <br>
+            1. 跪姿，臀部坐在腳跟上，身體趴下手向前伸（嬰兒式）。<br>
+            2. 雙手慢慢往<strong>左邊</strong>爬，直到感覺<strong>右邊</strong>側腰與腋下被拉開。<br>
+            3. 停留 30 秒，深呼吸。換邊進行。重複 3 次。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">3. 貓牛式</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 增加脊椎活動度，放鬆豎脊肌。
+            <br>
+            1. 四足跪姿，手在肩膀下，膝蓋在臀部下。<br>
+            2. <strong>吸氣（牛式）：</strong> 頭抬起，腰微凹，肚子放鬆下沉。<br>
+            3. <strong>吐氣（貓式）：</strong> 腹部收緊，背部拱高像生氣的貓，視線看肚臍。<br>
+            4. 動作要慢，重複 10 次。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">4. 雙膝抱胸</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>目標：</strong> 伸展下背部筋膜與臀大肌，緩解晨間僵硬。
+            <br>
+            1. 平躺，雙手抱住雙膝。<br>
+            2. 慢慢將膝蓋往胸口拉近，直到下背部有被拉開的微痠感。<br>
+            3. 也可以左右輕微搖晃按摩背部。<br>
+            4. 維持 30 秒，重複 3 次。
+        </p>
+    </div>
+ <p><img src="/images/diseases/spine-hip/lbp/d.jpg" alt="下背痛伸展運動"></p>
+    <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 2. 四大肌力：穿上天然護腰</h4>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">5. 死蟲式 - 核心地基</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>最安全的護腰訓練</strong>，因為脊椎完全平貼地面，不會受傷。
+            <br>
+            1. 平躺，雙手舉高，雙腳屈膝抬起呈 90 度。<br>
+            2. <strong>關鍵：</strong> 用力將下背部「壓死」在地板上，不能有縫隙（想像背後壓著一張千元鈔票不能被抽走）。<br>
+            3. 吐氣時，對側手腳慢慢伸直（右手左腳），吸氣回正。<br>
+            4. 過程中背部絕對不能拱起來。每邊做 10 次。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">6. 橋式 - 喚醒臀肌</h4>
+        <p style="color: #e2e8f0 !important;">
+            臀部有力，腰部壓力減半。
+            <br>
+            1. 平躺，雙腳屈膝踩地，腳跟靠近屁股。<br>
+            2. <strong>發力順序：</strong> 先夾緊屁股 → 再將骨盆抬起。<br>
+            3. 抬到身體呈一直線即可，<strong>不要過度拱腰</strong>（肋骨要收好）。停留 5 秒，慢慢放下。重複 12 次。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">7. 棒式 - 全身穩定</h4>
+        <p style="color: #e2e8f0 !important;">
+            訓練深層腹橫肌，收緊腰身。
+            <br>
+            1. 手肘撐地（在肩膀正下方），雙腳伸直踩地。<br>
+            2. 腹部用力收緊，屁股夾緊，身體從頭到腳跟呈一直線。<br>
+            3. <strong>關鍵錯誤：</strong> 絕對不能「塌腰」！如果腰痠，代表核心沒力了，請先改做跪姿棒式。目標維持 30 秒。
+        </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">8. 鳥狗式 - 對角線平衡</h4>
+        <p style="color: #e2e8f0 !important;">
+            訓練背肌與核心的協調性，模擬走路時的穩定需求。
+            <br>
+            1. 四足跪姿，背部打平（背上放一杯水不能倒）。<br>
+            2. 慢慢伸直右手與左腳，讓身體呈一直線。<br>
+            3. 停留 5 秒，收回。換邊進行。<br>
+            4. 重點是身體<strong>不要左右搖晃</strong>，訓練核心抗旋轉的能力。重複 10 次。
+        </p>
+    </div>
+     <p><img src="/images/diseases/spine-hip/lbp/e.jpg" alt="下背痛核心肌肉運動"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
               <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 鬆開緊繃，修復筋膜！</h3>
               <p style="color: #334155 !important; margin-bottom: 1.5rem;">下背肌筋膜疼痛是身體在抗議「過勞」與「結構失衡」。這些深層的激痛點如果不好好處理，會導致肌肉纖維化，腰痛會越來越頻繁。宸新復健科利用超音波導引增生注射，精準修復受損筋膜，並搭配專業徒手治療導正骨盆。別讓腰痛成為您的日常，找回柔軟有力的脊椎！</p>
-              <p style="font-weight: bold; color: #059669 !important;">經常閃到腰？腰部深層痠痛？立即預約超音波評估！</p>
+              <p style="font-weight: bold; color: #059669 !important;">經常閃到腰？腰部深層痠痛？立即預約醫師治療師評估！</p>
           </div>
         `,
         symptoms: [
           '腰部深層有持續性的痠痛或鈍痛',
-          '可以摸到腰部肌肉有明顯的硬塊或條索狀物 (激痛點)',
+          '可以摸到腰部肌肉有明顯的硬塊或條索狀物',
           '久坐或久站後，腰部僵硬挺不直',
           '彎腰刷牙或洗臉時感到疼痛',
-          '疼痛可能傳導至臀部或大腿外側 (轉移痛)'
         ],
         treatments: [
+          '止痛藥與復健',
+          '<a href="/treatments/iv-pain-relief" class="text-cyan-400 hover:underline">靜脈消炎止痛注射</a>🔍️',
           '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引增生注射 (修復/解套)</a>🔍️',
-          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">筋膜放鬆與骨盆調整 (徒手治療)</a>🔍️',
-          '神經動能調整 (NKT)',
-          '核心肌群穩定訓練',
-          '姿態矯正'
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">筋膜放鬆與核心訓練 (徒手治療)</a>🔍️'
         ],
         seoKeywords: [
           '下背肌筋膜疼痛',
@@ -221,22 +281,222 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '下背肌筋膜疼痛造成腰痠與閃到腰。宸新復健科提供超音波導引增生注射修復筋膜，搭配專業徒手治療調整骨盆，徹底解決反覆腰痛。',
         images: [
-          { 
-            src: 'https://images.unsplash.com/photo-1559055749-0d22088e0729?auto=format&fit=crop&q=80&w=1200', 
-            alt: '下背痛疼痛位置示意圖' 
-          },
-          {
-            src: 'https://plus.unsplash.com/premium_photo-1661580574627-9211124e5c3f?auto=format&fit=crop&q=80&w=1200', 
-            alt: '醫師進行增生注射治療'
-          },
-          {
-            src: 'https://images.unsplash.com/photo-1544367563-12123d832d34?auto=format&fit=crop&q=80&w=1200',
-            alt: '居家貓牛式伸展運動'
+          { src: '/images/diseases/spine-hip/lbp/a.jpg', alt: '下背痛示意圖'
           }
         ]
       },
+ {
+        id: 'cervical-muscle-pain',
+        slug: 'cervical-muscle-pain',
+        lastModified: '2026-02-03',
+        title: '頸部肌筋膜疼痛',
+        description: '轉頭就卡住？肩膀像背了千斤頂？這不一定是骨刺，而是「頸部肌筋膜疼痛」！深入解析斜方肌與提肩胛肌的激痛點，以及運用震波擊碎氣結與增生注射修復的全方位攻略。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：早上起床想轉頭看鬧鐘，脖子卻像卡死了一樣，痛到必須連身體一起轉（俗稱落枕）？或是長時間盯著電腦工作，覺得肩膀越來越沉重，像背了千斤頂，甚至痛感會一路往上蔓延到後腦勺，變成頭痛（頸源性頭痛）？</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">這些症狀，超過 85% 不是因為頸椎長骨刺或椎間盤突出，而是<strong>「頸部肌筋膜疼痛症候群」</strong>。這是因為長期姿勢不良（烏龜頸），導致肌肉過勞缺氧，形成一顆顆敏感的<strong>「激痛點」</strong>。在宸新復健科，我們透過高解析超音波找出這些躲在深層的氣結，利用<strong>徒手筋膜鬆動</strong>、<strong>聚焦式體外震波</strong>與<strong>增生注射</strong>，幫您的肌肉「大掃除」，徹底解決反覆落枕與肩頸僵硬。</p>
+      
+          
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 誰是兇手？頸部疼痛的三大「肌肉嫌疑犯」
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">脖子的肌肉非常複雜，每一條受傷的症狀都不同。找出是哪條肌肉在作怪，是治療的第一步。</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">上斜方肌 (Upper Trapezius) - 聳肩魔人：</strong> 
+                          <br><strong>位置：</strong> 從後腦勺連到肩膀外側，就是肩膀最厚的那塊肉。
+                          <br><strong>特徵：</strong> 它是最常見的兇手！因為我們緊張或打字時會不自覺聳肩。激痛點會導致<strong>「問號型頭痛」</strong>（痛感像問號一樣繞過耳朵到太陽穴）。
+                      </div>
+                  </li>
+                                         <p><img src="/images/diseases/spine-hip/neck/b.jpg" alt="上斜方肌疼痛"></p>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color:  #dc2626 !important;">提肩胛肌 (Levator Scapulae) - 落枕王：</strong> 
+                          <br><strong>位置：</strong> 連接頸椎側面到肩胛骨內上角。
+                          <br><strong>特徵：</strong> 它是造成<strong>「落枕」</strong>的主因。因為這條肌肉負責轉頭，一旦它痙攣，脖子就轉不動了。痛點常在頸部與肩膀交接的轉角處。
+                      </div>
+                  </li>
+                        <p><img src="/images/diseases/spine-hip/neck/c.jpg" alt="提肩胛肌疼痛"></p>
 
+                 <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+    <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+    <div style="color: #92400e !important;">
+        <strong style="color: #0891b2 !important;">菱形肌 (Rhomboids) - 膏肓痛：</strong> 
+        <br><strong>位置：</strong> 連接胸椎與肩胛骨內側緣（夾在脊椎跟肩胛骨中間的區域）。
+        <br><strong>特徵：</strong> 這是中醫所謂<strong>「病入膏肓」</strong>的位置。久坐駝背、圓肩的人最容易傷到這裡。痛感通常在背部深層，覺得酸痛卻很難直接按到痛點，呼吸或是活動肩胛骨時會有緊繃感。
+    </div>
+</li>
+                     <p><img src="/images/diseases/spine-hip/neck/d.jpg" alt="菱形肌疼痛"></p>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">胸鎖乳突肌 (SCM) - 暈眩製造者：</strong> 
+                          <br><strong>位置：</strong> 脖子前面那兩條明顯的粗筋。
+                          <br><strong>特徵：</strong> 常被忽略！它受傷不只會脖子痛，還會引起<strong>頭暈、噁心、耳鳴</strong>，甚至眼睛乾澀。這常發生在車禍揮鞭傷或長期轉頭看螢幕的人身上。
+                      </div>
+                  </li>
+                  <p><img src="/images/diseases/spine-hip/neck/e.jpg" alt="胸鎖乳突肌疼痛"></p>
+              </ul>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：是肌肉痛還是神經痛？</h3>
+          <p style="color: #e2e8f0 !important;">肌筋膜疼痛有幾個經典特徵，可與頸椎神經壓迫區分：</p>
+          <ul style="color: #e2e8f0 !important; margin-left: 1rem;">
+              <li style="margin-bottom: 0.5rem;"><strong>激痛點：</strong> 在肌肉上可以摸到像繩索般的緊繃帶 (Taut band)，按壓特定點會劇痛，甚至讓肌肉跳一下。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>轉移痛 ：</strong> 按壓肩膀的點，疼痛會「跑」到頭頂或手臂，但通常<strong>不會</strong>像神經壓迫那樣有明確的「電流麻木感」直達手指。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>活動受限：</strong> 轉頭或低頭時，感覺像被一條筋拉住，轉不過去。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>膏肓痛：</strong> 雖然痛在背後的膏肓穴，但源頭往往是頸部的神經或肌肉轉移下去的。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新全方位治療：擊碎氣結，修復筋膜</h3>
+          <p style="color: #e2e8f0 !important;">肌肉長期緊繃會導致局部缺氧、鈣化。治療目標是<strong>「打破缺氧循環」</strong>並<strong>「修復受損筋膜」</strong>。</p>
+      
+    
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 肌筋膜放鬆與體態調整：<a href="/treatments/manual" class="text-cyan-400 hover:underline">專業徒手治療</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  治療師會針對<strong>頸椎小面關節</strong>進行鬆動術，並放鬆上斜方肌、提肩胛肌與胸大肌（改善圓肩），。因為圓肩會把頭往前拉，增加頸部肌肉 3-5 倍的負擔。調整體態是治本的關鍵。
+              </p>
+          </div>
+      
+          
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 深層修復：<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引增生注射</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  如果您的疼痛反覆發作，代表筋膜或韌帶已經鬆弛受損。
+                  醫師利用超音波導引，將高濃度葡萄糖或 PRP 注射到肌肉附著點與小面關節周圍。
+                  <ul style="color: #334155 !important;margin-top: 0.5rem;">
+                      <li><strong>神經解套：</strong> 用注射液將沾黏的筋膜「撐開」，釋放被夾殺的神經。</li>
+                      <li><strong>強化韌帶：</strong> 強化頸椎周圍的韌帶，讓脖子變穩，肌肉就不需要一直緊繃來保護脊椎。</li>
+                  </ul>
+              </p>
+          </div>
+      
+      <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 痛點擊破：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  這是對付陳年肩頸僵硬的<strong>殺手鐧</strong>。
+                  針對斜方肌與提肩胛肌深層的「氣結」，利用高能量聲波進行物理性擊碎。震波能強迫缺氧的肌肉組織重新充血，帶走堆積的乳酸與發炎物質。治療後肩膀會瞬間感到鬆軟，活動度大幅增加。
+              </p>
+          </div>
 
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：居家頸椎保養三部曲</h3>
+          <p style="color: #e2e8f0 !important;">除了治療，回家後的伸展至關重要。請依照順序進行：</p>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">1. 上斜方肌伸展</h4>
+              <p style="color: #e2e8f0 !important;">
+                  放鬆肩膀最緊繃的那塊肉。
+                  <br>1. 坐姿，右手抓住椅子邊緣（固定肩膀不聳起）。
+                  <br>2. 左手繞過頭頂，輕輕將頭往左邊肩膀拉。
+                  <br>3. 感覺右側脖子被拉開。維持 15 秒，換邊。重複 3 次。
+              </p>
+          </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 提肩胛肌伸展</h4>
+              <p style="color: #e2e8f0 !important;">
+                  專門對付落枕與轉頭痛。
+                  <br>1. 頭向左轉 45 度，低頭看左邊腋下（像要聞腋下）。
+                  <br>2. 左手輕壓後腦勺，往腋下方向拉。
+                  <br>3. 感覺右後頸被拉伸。維持 15 秒，換邊。重複 3 次。
+              </p>
+          </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">3. 縮下巴運動 - 核心強化</h4>
+              <p style="color: #e2e8f0 !important;">
+                  <strong>最重要的一招！</strong> 強化頸部深層屈肌，矯正烏龜頸。
+                  <br>1. 眼睛平視前方，手指輕推下巴。
+                  <br>2. 頭部<strong>水平向後</strong>平移（擠出雙下巴），感覺後腦勺被往上拉高。
+                  <br>3. 停留 5 秒，放鬆。重複 10 次。
+              </p>
+          </div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">4. 背部前伸展 (放鬆菱形肌)</h4>
+    <p style="color: #e2e8f0 !important;">
+        專門對付膏肓痛，把卡在脊椎跟肩胛骨中間的緊繃拉開。
+        <br>1. 雙手手指十指交扣，手掌翻面，掌心朝前用力推。
+        <br>2. 想像雙手要往前去抱一顆大樹，同時將上背部拱起（有點像生氣的貓背），讓兩片肩胛骨往外打開。
+        <br>3. 頭部輕鬆低下，眼睛看肚臍。
+        <br>4. 維持 15 秒，感覺肩胛骨內側被拉開。重複 3 次。
+    </p>
+</div>
+
+      <div style="margin-bottom: 2rem;">
+        <h4 style="color: #22d3ee !important;">5. 彈力帶水平外展 - 強化背肌</h4>
+        <p style="color: #e2e8f0 !important;">
+            <strong>矯正圓肩關鍵！</strong> 強化背部菱形肌與中下斜方肌，對抗前面的緊繃，把肩膀拉回正位。
+            <br>1. 雙手握住彈力帶，手臂伸直與肩同高（掌心朝上）。
+            <br>2. 雙手向外拉開，直到彈力帶觸碰到胸口。
+            <br>3. <strong>關鍵：</strong> 專注於夾緊兩片肩胛骨（膏肓處），而不是聳肩。
+            <br>4. 慢慢回放。重複 15 下，做 3 組。
+        </p>
+    </div>
+       
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">6. 彈力帶肩胛前推 (強化前距肌)</h4>
+    <p style="color: #e2e8f0 !important;">
+        這條肌肉被稱為「拳擊手肌肉」，能穩定肩胛骨，改善「翼狀肩胛」與肩膀喀喀聲。
+        <br>1. 站姿，將彈力帶繞過背部（約在肩胛骨下方高度），雙手抓握彈力帶兩端，手臂向前平舉伸直。
+        <br>2. <strong>關鍵動作：</strong>保持手肘伸直鎖死，利用「肩膀」的力量將拳頭再往前推（像是要伸長手臂去摸遠處的東西）。
+        <br>3. 此時會感覺腋下肋骨處有收縮感，背部會微微拱起。
+        <br>4. 慢慢將肩膀縮回（手肘依然伸直），做肩胛骨的前後滑動。重複 12 下。
+    </p>
+</div>
+<p><img src="/images/diseases/spine-hip/neck/f.jpg" alt="頸部痛居家伸展運動"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 鬆開緊箍咒，頭腦更清醒！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">頸部肌筋膜疼痛是現代人的文明病，它不只造成痠痛，更會引起頭痛、失眠與專注力下降。這些深層的激痛點如果不好好處理，肌肉會纖維化，脖子會越來越僵硬。宸新復健科有專業的物理治療師，放鬆肌筋膜改善體態，利用震波擊碎氣結，搭配增生注射修復筋膜。別讓脖子成為您的負擔，找回靈活輕鬆的頸椎！</p>
+              <p style="font-weight: bold; color: #059669 !important;">經常落枕？肩頸僵硬頭痛？立即預約超音波評估！</p>
+          </div>
+        `,
+        symptoms: [
+          '頸部與肩膀交界處有明顯壓痛點 (激痛點)',
+          '轉頭或低頭時頸部僵硬受限',
+          '疼痛會傳導至後腦勺、太陽穴或眼窩 (頸源性頭痛)',
+          '肩膀感覺沉重，像背了重物',
+          '嚴重時會引起頭暈、耳鳴或噁心感'
+        ],
+        treatments: [
+          '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波 (擊碎氣結)</a>🔍️',
+          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引增生注射 (筋膜修復)</a>🔍️',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">頸椎關節鬆動術 (徒手治療)</a>🔍️',
+          '神經解套注射 (Hydrodissection)',
+          '姿態矯正與頸部核心訓練'
+        ],
+        seoKeywords: [
+          '頸部肌筋膜疼痛',
+          '落枕',
+          '膏肓痛',
+          '頸源性頭痛',
+          '斜方肌',
+          '提肩胛肌',
+          '體外震波',
+          '烏龜頸'
+        ],
+        seoDescription: '頸部肌筋膜疼痛造成落枕與頭痛。宸新復健科提供聚焦式體外震波擊碎氣結，運用增生注射修復筋膜，搭配縮下巴運動，徹底解決肩頸僵硬。',
+        images: [
+          {src: '/images/diseases/spine-hip/neck/a.jpg', alt: '頸部肌筋膜疼痛'
+          }
+        ]
+      },
       {
         id: 'lumbar-disc-herniation',
         slug: 'lumbar-disc-herniation',

@@ -82,32 +82,69 @@ export default function SymptomChecker() {
   return (
     <div className="w-full max-w-3xl mx-auto transition-all duration-300">
       
-      {/* 輸入區塊 */}
-      <form 
+{/* 輸入區塊 */}
+<form 
         ref={formRef}
-        onSubmit={handleSubmit} 
-        className={`relative group bg-slate-800 border transition-all duration-300 ease-in-out overflow-hidden
+        /* 修正重點 1: 手機版觸控優化
+           直接在最外層 Form 加上 onClick 事件。
+           只要手指點到這個框框的任何一個角落，就強制設定為「展開」並讓游標跳進去。
+        */
+        onClick={() => {
+            setIsExpanded(true); // 強制展開 UI
+            const textarea = formRef.current?.querySelector('textarea');
+            if (textarea) textarea.focus(); // 強制鍵盤彈出
+        }}
+        onSubmit={(e) => {
+            e.preventDefault(); 
+            handleSubmit(e);
+        }} 
+        className={`relative group bg-slate-800 border transition-all duration-300 ease-in-out
           ${isExpanded 
             ? 'rounded-2xl border-cyan-500 shadow-[0_0_20px_rgba(34,211,238,0.15)]' 
             : 'rounded-full border-slate-600 hover:border-cyan-400/50 hover:shadow-lg'
           }`}
       >
-        <div className={`absolute left-4 top-4 text-cyan-400 transition-opacity duration-300 ${isExpanded ? 'opacity-100' : 'opacity-70'}`}>
+        {/* 左側機器人圖示 (保持穿透設定，避免擋住點擊) */}
+        <div className={`absolute left-4 top-4 text-cyan-400 transition-opacity duration-300 pointer-events-none z-10 ${isExpanded ? 'opacity-100' : 'opacity-70'}`}>
           <i className={`fa-solid ${loading ? 'fa-spinner fa-spin' : 'fa-robot'} text-xl`}></i>
         </div>
 
         <textarea
           value={input}
+          /* 保持原本的 onFocus，雙重保險 */
           onFocus={() => setIsExpanded(true)}
           onChange={(e) => setInput(e.target.value)}
-          placeholder={isExpanded ? "請清楚詳細描述您的症狀及部位（例如：下樓梯膝蓋前方會痛、跳起來落地會痛...）" : "AI 症狀快篩：簡易自我診斷"}
-          className={`w-full bg-transparent text-slate-200 placeholder-slate-400 focus:outline-none resize-none py-4 pl-12 pr-32 leading-relaxed transition-all duration-300
-            ${isExpanded ? 'h-40' : 'h-14 overflow-hidden truncate'}`}
+          /* 鍵盤事件：電腦版按 Enter 送出 */
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' && !e.shiftKey && !e.nativeEvent.isComposing) {
+              e.preventDefault();
+              if (!loading && input.trim()) {
+                handleSubmit(e);
+              }
+            }
+          }}
+          placeholder={isExpanded ? "AI目前測試中，有問題請見諒" : "AI目前測試中，有問題請見諒"}
+          
+          /* 修正重點 2: CSS 版面配置 (解決輸入跳行與空間問題)
+             - pb-14: 展開時，底部留白 14 (約56px)，讓文字不會被右下角的按鈕蓋住。
+             - pr-4: 展開時，右邊只留一點點縫隙，讓文字可以寫到最右邊 (像電腦版一樣寬)。
+             - whitespace-pre-wrap: 展開時，允許自動換行。
+             - whitespace-nowrap: 收合時，強制單行 (避免跑版)。
+          */
+          className={`w-full bg-transparent text-slate-200 placeholder-slate-400 focus:outline-none resize-none py-4 pl-12 leading-relaxed transition-all duration-300 relative z-0
+            ${isExpanded 
+                ? 'h-40 pr-4 pb-14 overflow-y-auto whitespace-pre-wrap' // 展開：高度高，底部留白避開按鈕，可換行
+                : 'h-14 pr-12 overflow-hidden whitespace-nowrap'       // 收合：高度矮，右邊留白給放大鏡，單行
+            }`}
         />
 
-        <div className={`absolute right-2 transition-all duration-300 ${isExpanded ? 'bottom-3' : 'top-2'}`}>
+        {/* 右側按鈕 */}
+        <div className={`absolute right-2 z-20 transition-all duration-300 
+            ${isExpanded ? 'bottom-3 right-3' : 'top-2'}`}
+        >
             <button
             type="submit"
+            onClick={(e) => e.stopPropagation()} // 防止觸發 form onClick
             disabled={loading || !input.trim()}
             className={`bg-cyan-600 hover:bg-cyan-500 text-white font-medium transition-all flex items-center justify-center shadow-lg
                 ${isExpanded ? 'px-6 py-2 rounded-lg text-sm' : 'w-10 h-10 rounded-full'}`}

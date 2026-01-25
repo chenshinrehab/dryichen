@@ -89,7 +89,7 @@ export default function DiseasesPage() {
                       <i className="fa-solid fa-book-medical text-xl"></i>
                   </span>
                   <h1 className="text-3xl font-bold font-sans text-white">
-                      常見骨科疾病衛教
+                      常見骨科疾病衛教(AI目前測試中)
                   </h1>
               </div>
 
