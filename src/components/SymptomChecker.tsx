@@ -158,7 +158,7 @@ export default function SymptomChecker() {
               }
             }
           }}
-          placeholder={isExpanded ? "AI系統測試中，有問題請見諒" : "AI系統測試中，有問題請見諒"}
+          placeholder={isExpanded ? "請清楚輸入症狀（例如：膝蓋內側疼痛，跑步時候加劇）..." : "AI 症狀分析 (點擊輸入)"}
           
           className={`w-full bg-transparent text-slate-200 placeholder-slate-400 focus:outline-none resize-none py-4 pl-12 leading-relaxed transition-all duration-300 relative z-0
             ${isExpanded 

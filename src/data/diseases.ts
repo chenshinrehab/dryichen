@@ -468,18 +468,16 @@ export const diseaseCategories: DiseaseCategory[] = [
           </div>
         `,
         symptoms: [
-          '頸部與肩膀交界處有明顯壓痛點 (激痛點)',
+          '頸部與肩膀交界處有明顯壓痛點',
           '轉頭或低頭時頸部僵硬受限',
           '疼痛會傳導至後腦勺、太陽穴或眼窩 (頸源性頭痛)',
           '肩膀感覺沉重，像背了重物',
-          '嚴重時會引起頭暈、耳鳴或噁心感'
         ],
         treatments: [
+            '止痛藥復健治療與姿態矯正',
           '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波 (擊碎氣結)</a>🔍️',
           '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引增生注射 (筋膜修復)</a>🔍️',
-          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">頸椎關節鬆動術 (徒手治療)</a>🔍️',
-          '神經解套注射 (Hydrodissection)',
-          '姿態矯正與頸部核心訓練'
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">肌筋膜放鬆與關節鬆動術 (徒手治療)</a>🔍️',
         ],
         seoKeywords: [
           '頸部肌筋膜疼痛',
@@ -3902,7 +3900,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   📢 為什麼會得網球肘？肌腱的「過勞死」
               </h2>
               
-              <p style="font-size: 1.1rem; color: #78350f !important;">要了解網球肘，得先認識一群關鍵肌肉——<strong>「共同伸肌腱(Common extensor tendon)」</strong>。這群肌肉從手肘外側一路延伸到手腕，負責我們手腕向後翹起（伸腕）的動作。</p>
+              <p style="font-size: 1.1rem; color: #78350f !important;">要了解網球肘，得先認識一群關鍵肌肉——<strong>「共同伸肌腱」</strong>。這群肌肉從手肘外側一路延伸到手腕，負責我們手腕向後翹起（伸腕）的動作。</p>
               
               <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
                   <li style="margin-bottom: 1rem; display: flex; align-items: start;">
@@ -3964,7 +3962,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   <strong>休息是第一步。</strong> 建議配戴<strong>「網球肘護具」</strong>（戴在手肘下方約兩指幅的肌肉肥厚處，而非骨頭上），能分散肌腱受力。搭配健保物理治療（超音波、雷射、深層熱療）來緩解急性發炎，及居家按摩伸展肌肉或徒手治療來放鬆肌肉。
               </p>
           </div>
-      
+       <p><img src="/images/diseases/elbow/tennis/e.jpg" alt="網球肘護具機轉"></p>
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
               <h4 style="margin-top: 0; color: #0e7490 !important;">2. 慢性期首選：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療(ESWT)</a>🔍️</h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
@@ -3982,16 +3980,22 @@ export const diseaseCategories: DiseaseCategory[] = [
       
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
-          <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：關鍵的「離心運動」</h3>
-          <p style="color: #e2e8f0 !important;">研究證實，<strong>離心收縮運動 (Eccentric Exercise)</strong> 是排列肌腱纖維、增加強度的關鍵。等疼痛緩解後（約治療 2-3 週後），請務必開始做以下運動，才能避免復發：</p>
-      
+          <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：關鍵的「放鬆」與「離心運動」</h3>
+             
           <div style="margin-bottom: 2rem;">
-              <h4 style="color: #22d3ee !important;">1. 伸腕肌群伸展 (Stretching)</h4>
+              <h4 style="color: #22d3ee !important;">1. 伸腕肌群伸展</h4>
               <p style="color: #e2e8f0 !important;">手臂伸直，手心向下。用另一隻手將患側手掌<strong>往下、往內</strong>壓，直到手肘外側有緊繃感。停留 15-30 秒，重複 3-5 次。這能放鬆緊繃的肌肉。</p>
           </div>
            <p><img src="/images/diseases/elbow/tennis/d.jpg" alt="居家進行手腕屈肌伸展運動"></p>
+
+      <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 橫向深層按摩</h4>
+              <p style="color: #e2e8f0 !important;">用好手的大拇指，在患側手肘最痛的骨頭點附近，<strong>垂直於肌肉走向</strong>（左右推，不是上下推）進行深層按摩。每次約 3-5 分鐘。這有助於破壞沾黏組織，促進血液循環。</p>
+          </div>
+
           <div style="margin-bottom: 2rem;">
-              <h4 style="color: #22d3ee !important;">2. 啞鈴離心訓練 (最重要！)</h4>
+              <h4 style="color: #22d3ee !important;">3. 啞鈴離心訓練 (最重要！)</h4>
+                 <p style="color: #e2e8f0 !important;">研究證實，<strong>離心收縮運動 (Eccentric Exercise)</strong> 是排列肌腱纖維、增加強度的關鍵。等疼痛緩解後（約治療 2-3 週後），請務必開始做以下運動，才能避免復發：</p>
               <p style="color: #e2e8f0 !important;">找一個輕啞鈴（或裝水的水瓶，約 0.5-1 公斤）。</p>
               <ol style="color: #e2e8f0 !important; margin-left: 1.5rem;">
                   <li>將患側手前臂放在桌上，手腕懸空，手心向下握住啞鈴。</li>
@@ -4003,10 +4007,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           </div>
           <p><img src="/images/diseases/elbow/tennis/c.jpg" alt="網球肘離心運動訓練"></p>
       
-          <div style="margin-bottom: 2rem;">
-              <h4 style="color: #22d3ee !important;">3. 橫向深層按摩 (Deep Friction Massage)</h4>
-              <p style="color: #e2e8f0 !important;">用好手的大拇指，在患側手肘最痛的骨頭點附近，<strong>垂直於肌肉走向</strong>（左右推，不是上下推）進行深層按摩。每次約 3-5 分鐘。這有助於破壞沾黏組織，促進血液循環。</p>
-          </div>
+    
       
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -4132,7 +4133,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                     <strong>暫停致痛動作。</strong> 建議配戴<strong>「高爾夫球肘護具」</strong>（戴在手肘下方肌肉肥厚處），改變力的傳導方向。可搭配徒手物理治療，物理治療師會使用貼紮技術或深層按摩來放鬆緊繃的前臂屈肌。
                 </p>
             </div>
-        
+         <p><img src="/images/diseases/elbow/tennis/e.jpg" alt="網球肘護具機轉"></p>
             <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
                 <h4 style="margin-top: 0; color: #0e7490 !important;">2. 慢性期首選：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療(ESWT)</a>🔍️</h4>
                 <p style="margin-bottom: 0; color: #334155 !important;">
@@ -4150,20 +4151,25 @@ export const diseaseCategories: DiseaseCategory[] = [
             </div>
         
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-        
-            <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：復健運動三部曲</h3>
+            <p><img src="/images/diseases/elbow/golf/d.jpg" alt="高爾夫球肘居家進行手腕屈肌伸展伸展運動"></p>
+            <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：復健運動四部曲</h3>
             <p style="color: #e2e8f0 !important;">疼痛緩解後，必須透過運動強化肌腱，否則下次提重物又會復發。請早晚各做一輪：</p>
         
             <div style="margin-bottom: 2rem;">
-                <h4 style="color: #22d3ee !important;">1. 屈腕肌群伸展 (Stretching)</h4>
+                <h4 style="color: #22d3ee !important;">1. 屈腕肌群伸展</h4>
                 <p style="color: #e2e8f0 !important;">手臂伸直，手心向上。用另一隻手將患側手掌<strong>往下、往後</strong>拉，直到手肘內側有緊繃感。停留 15-30 秒，重複 3-5 次。這能延長緊繃縮短的肌肉。</p>
             </div>
         
               <p><img src="/images/diseases/elbow/golf/c.jpg" alt="居家進行手腕屈肌伸展運動"></p>
         
+           <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 橫向深層按摩</h4>
+              <p style="color: #e2e8f0 !important;">用好手的大拇指，在患側手肘最痛的骨頭點附近，<strong>垂直於肌肉走向</strong>（左右推，不是上下推）進行深層按摩。每次約 3-5 分鐘。這有助於破壞沾黏組織，促進血液循環。</p>
+          </div>
+
             <div style="margin-bottom: 2rem;">
-                <h4 style="color: #22d3ee !important;">2. 啞鈴離心訓練 (Eccentric Training)</h4>
-                <p style="color: #e2e8f0 !important;">这是強化肌腱最有效的方法。找一個輕啞鈴或水瓶。</p>
+                <h4 style="color: #22d3ee !important;">3. 啞鈴離心訓練 (Eccentric Training)</h4>
+                <p style="color: #e2e8f0 !important;">。這是強化肌腱最有效的方法。疼痛減緩兩周後開始練習，找一個輕啞鈴或水瓶</p>
                 <ol style="color: #e2e8f0 !important; margin-left: 1.5rem;">
                     <li>將患側手前臂放在桌上（手掌懸空），<strong>手心向上</strong>握住啞鈴。</li>
                     <li><strong>向心階段（不練）：</strong> 用好手幫忙，把患側手腕彎起來到最高點。</li>
@@ -4173,10 +4179,10 @@ export const diseaseCategories: DiseaseCategory[] = [
             </div>
         
             <div style="margin-bottom: 2rem;">
-                <h4 style="color: #22d3ee !important;">3. 抓握力訓練</h4>
+                <h4 style="color: #22d3ee !important;">4. 抓握力訓練</h4>
                 <p style="color: #e2e8f0 !important;">使用軟式網球或握力球，輕輕擠壓 5 秒後放鬆。重複 10-20 次。這能增加屈指肌群的耐力。</p>
             </div>
-        
+          
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
             <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
@@ -4889,6 +4895,170 @@ export const diseaseCategories: DiseaseCategory[] = [
             }
           ]
       },
+
+      {
+        id: 'ganglion-cyst',
+        slug: 'ganglion-cyst',
+        lastModified: '2026-01-26',
+        title: '手部腱鞘囊腫',
+        description: '手腕突然鼓起一顆像水球的東西？用力撐地或拿重物時會痛？這是常見的「腱鞘囊腫」。這不只是把水抽出來就好，更代表您的手腕關節韌帶已經鬆弛！宸新復健科運用高解析超音波導引抽吸，並結合韌帶增生強化治療，防止囊腫反覆復發。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否曾在洗澡或活動手腕時，無意間發現<strong>手腕背側</strong>或<strong>手腕內側</strong>突然凸起一顆圓圓、軟軟的東西？用力按壓時有點痠痠的，甚至在做伏地挺身、撐床起身時，手腕會感到一陣刺痛？</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">別驚慌，這通常不是腫瘤，而是良性的<strong>「腱鞘囊腫」</strong>。雖然它很常見，但這其實是關節發出的求救訊號，代表您的手腕韌帶可能已經鬆弛不穩定！在宸新復健科，我們不只幫您把囊腫裡的積液抽掉，更重視<strong>「為什麼會長出來？」</strong>。我們透過<strong>高解析超音波</strong>精準導引治療，並針對鬆弛的韌帶進行強化，從根本解決反覆復發的困擾。</p>
+          <p><img src="/images/diseases/hand/cyst/b.jpg" alt="手腕背側腱鞘囊腫" style="width: 50%; height: auto;"></p>
+      
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 為什麼會長水球？關節的「防禦氣囊」
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">腱鞘囊腫裡面包的不是膿，而是像果凍一樣黏稠的關節液。它的形成機制就像是車子的安全氣囊：</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">關節壓力過大：</strong> 
+                          當我們長期過度使用手腕（如滑手機、打電腦、做家事），關節囊內的壓力會不斷升高。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">韌帶破洞滲漏：</strong> 
+                          如果包覆關節的韌帶或關節囊比較薄弱、有微小撕裂，受壓的關節液就會從這些弱點「擠」出來。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">單向閥門效應：</strong> 
+                          這些擠出來的液體被一層薄膜包住，形成囊腫。麻煩的是，這個開口通常是「單行道」，液體流得出來卻流不回去，導致囊腫越來越大，變硬像骨頭一樣。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+    
+    
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 哪裡最容易長？常見的三大位置</h3>
+          <p style="color: #e2e8f0 !important;">囊腫可能出現在手部任何關節，但以下三個位置最常見：</p>
+          <ul style="color: #e2e8f0 !important;">
+              <li><strong>手腕背側：</strong> 最常見！通常位於手背正中央，當手腕彎曲時會凸得更明顯。這常跟「<a href="/diseases/hand/scapholunate-ligament-injury" class="text-cyan-400 hover:underline">舟月韌帶</a>」受損有關。</li>
+              <li><strong>手腕掌側：</strong> 位於手腕內側，靠近脈搏跳動處（橈動脈旁）。這裡處理要非常小心，因為緊鄰血管與神經。</li>
+              <li><strong>手指關節：</strong> 小小的像米粒一樣，長在手指頭關節處，握用力按壓像壓到小石頭一樣痛。</li>
+          </ul>
+            <p><img src="/images/diseases/hand/cyst/c.jpg" alt="腱鞘囊腫位置" style="width: 70%; height: auto;"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新獨家治療策略：不只抽吸，更要「封口」</h3>
+          <p style="color: #e2e8f0 !important;">很多人會說：「我去把水抽掉，結果過兩個禮拜又長出來了！」這是因為沒有處理導致滲漏的「破洞」（韌帶損傷）。宸新復健科採取三合一治療法：</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 超音波導引抽吸</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  我們使用高解析度超音波，清楚看見囊腫與周圍神經血管的位置。
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>精準定位：</strong> 特別是掌側囊腫，緊鄰橈動脈，盲目穿刺風險極高。超音波能確保針頭安全避開血管。</li>
+                      <li><strong>多房性囊腫處理：</strong> 有些囊腫像葡萄串一樣有好幾顆，超音波能導引針頭將所有隔間打破，徹底抽吸乾淨。</li>
+                  </ul>
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. <a href="/treatments/prp" class="text-cyan-400 hover:underline">韌帶強化注射</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                 這是降低復發率的關鍵！
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>修補破洞：</strong> 抽吸完後，我們會注射高濃度葡萄糖或PRP到囊腫根部的韌帶損傷處。</li>
+                      <li><strong>強化結構：</strong> 促進組織增生，讓原本薄弱的關節囊變厚、變強壯，就像幫破洞的輪胎補胎一樣，防止關節液再次滲漏。</li>
+                  </ul>
+              </p>
+          </div>
+    
+           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 物理治療與動作優化</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong><a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手治療</a>：</strong> 調整錯位的腕骨（如月狀骨脫位），恢復關節正常的力學排列。</li>
+                      <li><strong>人體工學建議：</strong> 教導如何正確使用滑鼠、鍵盤，避免手腕長時間處於極度彎曲或伸直的姿勢（這會讓關節內壓飆高）。</li>
+                      <li><strong>穿戴護腕：</strong> 固定保護關節避免過度凹折或是旋轉。</li>
+                  </ul>
+              </p>
+          </div>
+        
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    
+          <h3 style="color: #f8fafc !important;">🏠 居家運動：穩定手腕，減少壓力</h3>
+          <p style="color: #e2e8f0 !important;">除了治療，平時的保養也很重要。這些運動能增強手腕穩定性，減少關節囊受壓：</p>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">1. 手腕伸展 (溫和版)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  放鬆緊繃的前臂肌肉，降低肌腱對手腕的拉扯。
+                  <br>1. 手臂向前伸直，掌心朝下。
+                  <br>2. 用另一隻手輕輕將手背往下拉，直到感覺前臂上方有微酸感。
+                  <br>3. <strong>注意：</strong>如果拉到囊腫處會痛，請減小角度，不要硬拉。
+                  <br>4. 維持 15 秒，重複 3 次。
+              </p>
+          </div>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 握力球訓練 (等長收縮)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  強化抓握力，增加腕關節的動態穩定。
+                  <br>1. 手握軟球（或捲起來的襪子）。
+                  <br>2. 輕輕用力握住，維持手腕正中位置（不彎不翹）。
+                  <br>3. 保持用力 5-10 秒，然後放鬆。
+                  <br>4. 重複 10-15 次。這能活化前臂肌肉，分擔韌帶的壓力。
+              </p>
+          </div>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">3. 橡皮筋手指撐開</h4>
+              <p style="color: #e2e8f0 !important;">
+                  訓練伸指肌群，平衡手掌前後的肌力。
+                  <br>1. 將橡皮筋套在五根手指頭外面。
+                  <br>2. 用力將五指張開，對抗橡皮筋的阻力。
+                  <br>3. 慢慢收回。重複 15 下，做 3 組。
+              </p>
+          </div>
+       <p><img src="/images/diseases/hand/cyst/d.jpg" alt="腱鞘囊腫居家運動" style="width: 100%; height: auto;"></p>
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 別去揉它！越揉可能越嚴重</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">很多患者會試圖用力把囊腫「揉散」或「敲破」，這其實非常危險！不僅容易復發，還可能造成周圍組織發炎甚至感染。如果您發現手腕長了東西，請交給專業醫師評估。宸新復健科透過精準的超音波診斷與再生治療，幫您安全、有效地解決手腕上的違章建築！</p>
+              <p style="font-weight: bold; color: #059669 !important;">手腕凸起會痛？立即預約超音波導引檢查！</p>
+          </div>
+        `,
+        symptoms: [
+          '手腕背側或掌側出現圓形凸起物',
+          '凸起物摸起來軟軟的有彈性（像水球）',
+          '手腕用力撐地（如伏地挺身）時感到疼痛',
+          '長時間使用手腕後囊腫會變大'
+        ],
+        treatments: [
+          '止痛藥與復健治療',
+          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引抽吸與韌帶增生療法</a>🔍️',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手關節鬆動術</a>🔍️',
+          '開刀取出'
+        ],
+        seoKeywords: [
+          '腱鞘囊腫',
+          '手腕長瘤',
+          '手腕凸一塊',
+          'Ganglion Cyst',
+          '手腕痛',
+          '超音波抽吸',
+          '增生療法',
+          'PRP注射'
+        ],
+        seoDescription: '手腕長水球、腱鞘囊腫怎麼辦？宸新復健科提供高解析超音波導引抽吸，並結合韌帶增生療法強化關節穩定度，有效降低復發機率，免開刀解決手腕疼痛。',
+        images: [
+          { src: '/images/diseases/hand/cyst/a.jpg', alt: '囊腫形成示意圖' }
+        ]
+    },
  {
         id: 'scapholunate-ligament-injury',
         slug: 'scapholunate-ligament-injury',
@@ -5335,12 +5505,12 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">既然跳躍膝是「結構退化」，治療重點就不在消炎，而在於<strong>「刺激再生」</strong>：</p>
       
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 急性期：髕骨加壓帶 (Patellar Strap)</h4>
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 急性期：髕骨加壓帶</h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
                   綁在膝蓋骨正下方的一條帶子。它的原理是改變肌腱的受力支點，分散拉力，能立即減輕疼痛，讓您能維持輕度活動。
               </p>
           </div>
-      
+      <p><img src="/images/diseases/knee/jump/e.jpg" alt="髕骨加壓帶" style="width: 50%; height: auto;"></p>
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
               <h4 style="margin-top: 0; color: #0e7490 !important;">2. 黃金標準：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療(ESWT)</a>🔍️</h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
@@ -5441,6 +5611,186 @@ export const diseaseCategories: DiseaseCategory[] = [
           }
         ]
       },
+
+      {
+        id: 'osgood-schlatter-disease',
+        slug: 'osgood-schlatter-disease',
+        lastModified: '2026-01-26',
+        title: '奧斯戈德氏病 - 孩子膝蓋下方凸一塊',
+        description: '青春期孩子喊膝蓋痛，摸到膝蓋下方骨頭凸起？這不是單純生長痛，而是「奧斯戈德氏病」。宸新復健科透過X光監測骨骼癒合狀況，並利用脊椎側彎矯正架調整骨盆與下肢力線，避免骨頭永久變形，讓孩子重回運動場。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您的孩子是否正處於快速長高的青春期？是不是常在打球、跑步後抱怨<strong>膝蓋下方（小腿骨上端）疼痛</strong>？甚至您摸到那邊的骨頭好像<strong>「凸起來」</strong>了一塊，輕輕碰到就痛得哇哇叫？</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">很多家長誤以為這是正常的「生長痛」，貼貼藥布就好。其實，這很可能是<strong>「奧斯戈德氏病 (Osgood-Schlatter Disease)」</strong>，俗稱<strong>脛骨粗隆骨凸炎</strong>。這不只是肌肉問題，更是骨頭與肌腱的拉鋸戰！在宸新復健科，我們重視的不僅是消炎，更透過<strong>院內超音波與 X 光機</strong>追蹤骨骼生長板狀態，並結合<strong>脊高能雷射止痛</strong>與<strong>徒手放鬆治療</strong>，防止骨頭永久性突起與變形。</p>
+          <p><img src="/images/diseases/knee/osgood/b.jpg" alt="奧斯戈德氏病痛點位置"></p>
+
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 為什麼骨頭會凸起來？生長板的「拔河比賽」
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">這個疾病最常發生在 10-15 歲，活動量大且正在快速長高的青少年。我們可以把這個過程想像成一場不公平的拔河：</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">骨頭長得太快：</strong> 
+                          青春期時，大腿骨跟小腿骨像雨後春筍般變長，但周圍的肌肉（股四頭肌）與肌腱生長速度跟不上，導致肌肉被「繃得很緊」。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">脆弱的著力點：</strong> 
+                          大腿前側強壯的「股四頭肌」，透過髕骨肌腱連接到小腿的「脛骨粗隆」。而在青少年時期，這個連接點還是軟骨（生長板），非常脆弱。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">反覆拉扯導致發炎：</strong> 
+                          當孩子反覆跑、跳、踢球時，緊繃的股四頭肌會不斷用力拉扯這個脆弱的軟骨點，造成發炎、微小撕裂，身體為了修復它，就會增生骨質，導致該處<strong>永久性凸起</strong>。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          <p><img src="/images/diseases/knee/osgood/c.jpg" alt="脛骨粗隆拉扯示意圖" style="width: 100%; height: auto;"></p>
+    
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 潛在兇手：不只是運動過度，更是「力線錯誤」</h3>
+          <p style="color: #e2e8f0 !important;">為什麼全隊都在練球，只有我的孩子會痛？除了肌肉緊繃，宸新復健科發現，<strong>下肢排列問題</strong>才是關鍵：</p>
+          <ul style="color: #e2e8f0 !important;">
+              <li><strong>扁平足與足弓塌陷：</strong> 足弓塌陷會導致小腿骨（脛骨）向內旋轉，這會扭曲髕骨肌腱的角度，增加對脛骨粗隆的側向拉力。</li>
+              <li><strong>腿後肌（大腿後側）太緊：</strong> 後側太緊會限制膝蓋伸直，導致前側的股四頭肌必須花更大的力氣才能把腳踢直，進而增加拉扯力量。</li>
+              <li><strong>骨盆前傾：</strong> 骨盆前傾會讓股直肌（接在骨盆上）處於被拉長的緊繃狀態，張力直接傳遞到膝蓋下方。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新獨家治療策略：守護孩子的生長板</h3>
+          <p style="color: #e2e8f0 !important;">奧斯戈德氏病如果不處理，疼痛可能持續數年，甚至留下永久的骨質隆起，影響日後跪姿工作。我們提供全方位的整合治療：</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 影像診斷：區分骨折與發炎</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>X 光檢查：</strong> 透過 X 光確認生長板是否有<strong>撕裂性骨折</strong>，或是游離骨塊，這決定了孩子是否需要完全停止運動。</li>
+                      <li><strong>高解析超音波：</strong> 觀察肌腱本體是否腫脹、鈣化，精準定位發炎區域。</li>
+                  </ul>
+              </p>
+          </div>
+            <p><img src="/images/diseases/knee/osgood/d.jpg" alt="奧斯戈德氏病撕裂性骨折" style="width: 100%; height: auto;"></p>
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 力線矯正：物理治療師評估與運動治療</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                 治療膝蓋不能只看膝蓋。物理治療師經由評估與運動治療，對全身進行整體調整：
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>骨盆與核心調整：</strong> 利用放鬆與運動訓練矯正骨盆前傾與旋轉，釋放股四頭肌的源頭張力。</li>
+                      <li><strong>下肢排列訓練：</strong> 矯正膝蓋內夾（X型腿）與脛骨旋轉，讓肌肉拉力回到正軌，不再歪斜地拉扯生長板。</li>
+                      <li>這是預防復發最關鍵的一環，讓孩子在發育過程中建立正確的身體使用模式。</li>
+                  </ul>
+              </p>
+          </div>
+    
+           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 疼痛控制與修復</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+
+                      <li><strong>髕骨加壓帶：</strong> 綁在膝蓋骨正下方的一條帶子。它的原理是改變肌腱的受力支點，分散拉力，能立即減輕疼痛，讓您能維持輕度活動。</li>
+                      <li><strong><a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波</a>：</strong> 對於已經慢性化、有鈣化點的肌腱，震波能有效促進組織再生，緩解疼痛（急性紅腫期除外）。</li>
+                      <li><strong><a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手治療</a>：</strong> 放鬆緊繃的股四頭肌與腿後肌，增加髕骨的活動度。</li>
+                      <li><strong><a href="/treatments/high-intensity-laser" class="text-cyan-400 hover:underline">高能量雷射</a>：</strong> 急性期止痛加速修復，放鬆緊繃的股四頭肌。</li>
+                    </ul>
+              </p>
+          </div>
+                       <p><img src="/images/diseases/knee/osgood/e.jpg" alt="奧斯戈德氏病撕裂性骨折" style="width: 50%; height: auto;"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    
+          <h3 style="color: #f8fafc !important;">🏠 居家運動：聰明伸展，保護膝蓋</h3>
+          <p style="color: #e2e8f0 !important;">適度的伸展可以減緩生長板的壓力，但請注意：<strong>不要在劇烈疼痛時硬拉筋</strong>。</p>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">1. 股四頭肌伸展 (大腿前側)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  這是最直接減壓的動作，但要注意不要拉到膝蓋痛。
+                  <br>1. 站姿（手扶牆保持平衡），單手抓住患側腳踝，將腳跟往屁股方向拉。
+                  <br>2. <strong>關鍵技巧：</strong>膝蓋要在髖關節正下方（不要往外打開），肚子收緊（不要翹屁股）。
+                  <br>3. 感覺大腿前側緊緊的即可，膝蓋下方不能有刺痛感。
+                  <br>4. 維持 30 秒，重複 3 次。
+              </p>
+          </div>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 腿後肌伸展 (大腿後側)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  放鬆後側鍊，減少膝蓋伸直的阻力。
+                  <br>1. 坐在椅子邊緣，患側腳伸直，腳跟著地，腳尖勾起。
+                  <br>2. 背部打直，上半身從髖關節慢慢向前傾（像鞠躬一樣）。
+                  <br>3. 感覺大腿後側與膝蓋後窩被拉開。
+                  <br>4. 維持 30 秒，重複 3 次。
+              </p>
+          </div>
+    
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">3. 大腿前側筋膜放鬆 (滾筒/按摩球)</h4>
+    <p style="color: #e2e8f0 !important;">
+        直接放鬆股四頭肌的肌腹，從源頭減少對膝蓋骨的拉力。
+        <br>1. 趴在瑜珈墊上，將滾筒或按摩球放在大腿前側（肌肉最肥厚的地方）。
+        <br>2. 用手肘支撐身體，另一隻腳像爬行一樣輔助移動。
+        <br>3. 緩慢上下滾動，尋找大腿中間特別痠痛的點，停留 30-60 秒直到放鬆。
+        <br>4. <strong>⚠️ 重要禁區：</strong>請在大腿肌肉上操作即可，<strong style="color: #f87171 !important;">絕對不要</strong>滾到膝蓋骨或下方疼痛的骨頭凸起處，以免發炎更嚴重。
+    </p>
+</div>
+
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">4. 靠牆靜蹲 (等長收縮訓練)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  在不造成生長板拉扯的情況下，維持肌肉力量。
+                  <br>1. 背對牆壁，雙腳打開與肩同寬，向前跨一步。
+                  <br>2. 身體沿著牆壁慢慢往下滑，直到膝蓋彎曲約 45-60 度（不需要蹲太低）。
+                  <br>3. 膝蓋不要超過腳尖，保持這個姿勢不動。
+                  <br>4. 維持 30-45 秒，感覺大腿痠即可。
+              </p>
+          </div>
+    
+ <p><img src="/images/diseases/knee/osgood/f.jpg" alt="奧斯戈德氏病居家伸展運動" style="width: 100%; height: auto;"></p>
+
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 把握青春期黃金治療期！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">奧斯戈德氏病雖然常見，但絕不能輕忽。錯誤的處置可能導致骨骼變形，影響孩子一輩子的膝蓋外觀與功能。透過宸新復健科的精準 X 光追蹤與全身力線矯正，我們幫助孩子在長高的同時，也能健康地奔跑跳躍！</p>
+              <p style="font-weight: bold; color: #059669 !important;">發現膝蓋下方凸起紅腫？立即預約青少年足膝評估！</p>
+          </div>
+        `,
+        symptoms: [
+          '膝蓋下方（脛骨粗隆）骨頭凸起',
+          '按壓膝蓋下方骨凸處會劇痛',
+          '跑步、跳躍、上下樓梯時疼痛加劇',
+          '跪在地上時膝蓋碰到地板會痛'
+        ],
+        treatments: [
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手放鬆與運動治療</a>🔍️',
+          '<a href="/treatments/high-intensity-laser" class="text-cyan-400 hover:underline">高能量雷射止痛</a>🔍️',
+          '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波</a>🔍️',
+          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️'
+        ],
+        seoKeywords: [
+          '奧斯戈德氏病',
+          '脛骨粗隆骨凸炎',
+          '生長痛',
+          '膝蓋下方痛',
+          '青少年膝蓋痛',
+          '骨頭凸起',
+          '脊椎側彎矯正',
+          '物理治療'
+        ],
+        seoDescription: '青春期膝蓋痛、膝蓋下方凸起？奧斯戈德氏病專門治療。宸新復健科運用X光排除骨折，結合脊椎側彎矯正架調整骨盆與足部力線，預防骨骼永久變形。',
+        images: [
+          { src: '/images/diseases/knee/osgood/a.jpg', alt: '奧斯戈德氏病'  }
+        ]
+    },
 
 {
         id: 'meniscus-injury',
@@ -5940,11 +6290,11 @@ export const diseaseCategories: DiseaseCategory[] = [
         lastModified: '2026-01-21',
         description: '跑步膝蓋外側刺痛？下坡時痛感加劇？這就是典型的跑者膝！深入解析臀中肌無力與 ITBS 的關聯，以及震波治療與正確滾筒放鬆的全攻略。',
         contentHtml: `
-          <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：跑步跑到大約 3-5 公里時，<strong>膝蓋外側</strong>開始出現隱隱作痛，如果繼續跑下去，那種刺痛感會越來越強烈，甚至痛到無法彎曲膝蓋？休息幾天好像好了，但下次一跑，同樣的里程數又開始痛？</p>
+          <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：跑步跑到大約 3-5 公里時，<strong>膝蓋外側</strong>開始出現隱隱作痛，甚至往上延伸到髖部，如果繼續跑下去，那種刺痛感會越來越強烈，甚至痛到無法彎曲膝蓋？休息幾天好像好了，但下次一跑，同樣的里程數又開始痛？</p>
                 <br>
           <p style="color: #e2e8f0 !important;">這就是俗稱的<strong>「跑者膝」</strong>，醫學正式名稱為<strong>髂脛束症候群 (ITBS)</strong>。它是長跑者與自行車騎士最常見的夢魘。宸新復健科透過動態步態分析與高解析超音波，配合徒手運動治療評估、協助您找出是因為「臀肌失能」還是「足部過度旋前」導致的生物力學異常，並提供精準的修復方案。</p>
       
-      
+      <p><img src="/images/diseases/knee/itb/d.jpg" alt="髂脛束疼痛" style="width: 50%; height: auto;"></p>
           <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
               <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
                   📢 什麼是髂脛束？為什麼膝蓋外側會痛？
@@ -5957,7 +6307,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                       <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
                       <div style="color: #92400e !important;">
                           <strong style="color: #dc2626 !important;">觀念更新：不是摩擦，是「壓迫」！</strong> 
-                          過去認為 ITBS 是筋膜在骨頭上前後「摩擦」起水泡。但最新醫學研究發現，髂脛束其實是被緊緊固定在骨頭上的，根本動不了。真正的痛源是髂脛束下方的<strong>「高敏感脂肪墊 (Fat Pad)」</strong>。
+                          過去認為 ITBS 是筋膜在骨頭上前後「摩擦」起水泡。但最新醫學研究發現，髂脛束其實是被緊緊固定在骨頭上的，根本動不了。真正的痛源是髂脛束下方的<strong>「高敏感脂肪墊」</strong>。
                       </div>
                   </li>
                   <li style="margin-bottom: 1rem; display: flex; align-items: start;">
@@ -5970,13 +6320,15 @@ export const diseaseCategories: DiseaseCategory[] = [
                   <li style="margin-bottom: 0; display: flex; align-items: start;">
                       <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
                       <div style="color: #92400e !important;">
-                          <strong style="color: #0891b2 !important;">臀中肌失能 (The Root Cause)：</strong> 
+                          <strong style="color: #0891b2 !important;">臀中肌失能：</strong> 
                           這才是真正的兇手！當負責穩定骨盆的臀中肌無力時，另一條肌肉（闊筋膜張肌）就必須過度用力來幫忙，闊筋膜張肌連接著髂脛束，導致整條髂脛束緊繃縮短，進而壓迫膝蓋外側。
                       </div>
                   </li>
               </ul>
           </div>
-        <p><img src="/images/diseases/knee/itb/b.jpg" alt="髂脛束構造"></p>
+        <p>
+  <img src="/images/diseases/knee/itb/b.jpg" alt="髂脛束構造" style="width: 35%; height: auto;">
+           </p>
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -6047,7 +6399,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             </div>
       
           <div style="margin-bottom: 2rem;">
-              <h4 style="color: #22d3ee !important;">3. 螃蟹走路 (Monster Walk)</h4>
+              <h4 style="color: #22d3ee !important;">3. 螃蟹走路</h4>
               <p style="color: #e2e8f0 !important;">在膝蓋上方套上彈力圈，採取半蹲姿勢，向側面橫向移動。這能強效訓練臀中肌，穩定骨盆，減少髂脛束的負擔。</p>
           </div>
               <p><img src="/images/diseases/knee/itb/c.jpg" alt="髂脛束伸展"></p>
@@ -6060,18 +6412,17 @@ export const diseaseCategories: DiseaseCategory[] = [
           </div>
         `,
         symptoms: [
-          '膝蓋外側骨突處（股骨外髁）刺痛',
+            '臀部外側或大腿外側緊繃疼痛',
           '跑步下坡或慢跑時疼痛加劇',
           '膝蓋彎曲 30 度時最痛',
-          '臀部外側或大腿外側緊繃',
-          '休息時不痛，跑固定里程後開始痛'
+                   '休息時不痛，跑固定里程後開始痛'
         ],
         treatments: [
-          '體外震波治療 (ESWT)',
-          '超音波導引滑囊注射',
-          '滾筒肌筋膜放鬆 (TFL)',
-          '臀中肌肌力訓練 (蚌殼式)',
-          '步態與跑姿調整'
+            '止痛藥與復健治療',
+            '<a href="/treatments/manual" class="text-cyan-400 hover:underline">肌筋膜放鬆與臀肌訓練</a>🔍️',
+            '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療(ESWT)</a>🔍️',
+            '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️'
+           
         ],
         seoKeywords: [
           '髂脛束症候群',
@@ -6472,7 +6823,184 @@ export const diseaseCategories: DiseaseCategory[] = [
           {              src: '/images/diseases/knee/quadri/a.jpg',  alt: '股四頭肌肌腱炎' 
           }
         ]
-      }
+      },
+
+      {
+        id: 'popliteus-tendonitis',
+        slug: 'popliteus-tendonitis',
+        lastModified: '2026-01-26',
+        title: '膕肌肌腱炎',
+        description: '膝蓋後側深處總是痠痛？蹲不下去、膝蓋伸不直？這可能是「膕肌」在抗議！這條肌肉被稱為膝蓋的解鎖鑰匙。宸新復健科透過高解析超音波與脊椎X光，找出骨盆旋轉與長短腳造成的膝蓋扭轉壓力，從源頭根治膝後疼痛。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有過這種感覺：<strong>膝蓋後側（膝窩）深處</strong>總是隱隱作痛，特別是在<strong>下坡跑步、下樓梯</strong>，或是想把膝蓋完全伸直的時候？有時候蹲下去覺得卡卡的，像是裡面夾了東西？</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">很多人以為這是貝克氏囊腫或是腿後肌拉傷，但往往治療許久不見好轉。其實，這很可能是被忽略的<strong>「膕肌肌腱炎」</strong>。在宸新復健科，我們發現單純治療膝蓋效果有限，因為膕肌的問題通常源自於<strong>「脛骨旋轉」</strong>與<strong>「骨盆歪斜」</strong>。我們運用<strong>物理治療評估</strong>與<strong>超音波</strong>雙重檢查，搭配專業的<strong>治療師客製運動訓練</strong>，調整下肢力線，徹底釋放膝蓋後側的壓力。</p>
+          
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 什麼是膕肌？膝關節的「解鎖鑰匙」
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">膕肌是一條位於膝蓋正後方、呈現三角形的小肌肉，深埋在腓腸肌與腿後肌之下。雖然它體積不大，但功能卻極其關鍵：</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">啟動膝蓋彎曲（解鎖）：</strong> 
+                          當我們站立且膝蓋伸直鎖死時，要開始走路的第一步，必須靠膕肌收縮，帶動小腿骨（脛骨）內旋，才能「解鎖」膝關節進行彎曲。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">防止膝蓋過度伸直：</strong> 
+                          它像是一個煞車系統，防止膝蓋在伸直時過度超伸，保護十字韌帶。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">穩定半月板：</strong> 
+                          膕肌連接到外側半月板，收縮時能將半月板向後拉，避免膝蓋彎曲時夾傷半月板。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+            <p><img src="/images/diseases/knee/pop/b.jpg" alt="膕肌解剖構造"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 為什麼膕肌會受傷？不只是膝蓋的問題！</h3>
+          <p style="color: #e2e8f0 !important;">膕肌受傷常見於跑者（特別是下坡跑）、登山客，或是需要頻繁急停轉向的運動員，造成肌肉緊繃發炎。但臨床上，我們發現更多的是<strong>「代償性受傷」</strong>：</p>
+          <ul style="color: #e2e8f0 !important;">
+              <li><strong>足弓塌陷（扁平足）：</strong> 當足弓塌陷時，小腿骨會被強迫向內旋轉，持續拉扯膕肌，使其長期處於緊繃狀態。</li>
+              <li><strong>骨盆歪斜與脊椎側彎：</strong> 這是最容易被忽視的主因！當骨盆前傾或旋轉時，會改變股骨（大腿骨）的角度，導致膝關節產生異常的扭轉力矩。這時候膕肌為了維持膝蓋穩定，必須加倍工作，最終過勞發炎。</li>
+              <li><strong>膝關節過度伸直（膝超伸）：</strong> 常見於柔軟度過好的女性或舞者，站立時膝蓋像反折一樣，這會讓膕肌失去彈性。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新獨家治療策略：從脊椎、骨盆到膝蓋的完整修復</h3>
+          <p style="color: #e2e8f0 !important;">針對頑固的膝後側疼痛，宸新復健科採取「精準診斷、再生修復、力線矯正」三步驟：</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 影像診斷：看見深層的問題</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>高解析骨骼肌肉超音波：</strong> 膕肌位於深層，觸診不易。我們利用超音波直接觀察肌腱是否有腫脹、積水或撕裂，並檢查是否伴隨貝克氏囊腫。</li>
+                      <li><strong>物理治療師評估：</strong> 物理治療師經由動作評估，檢查有沒有<strong>長短腳</strong>或<strong>骨盆旋轉</strong>，這往往是膕肌反覆發炎的元兇。</li>
+                  </ul>
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 再生治療：修復深層肌腱</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong><a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>：</strong> 對於慢性撕裂的肌腱，在超音波導引下精準注射 PRP，啟動組織修復機制。</li>
+                      <li><strong><a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波 (ESWT)</a>：</strong> 膕肌位置很深，手技難以按壓。震波能穿透軟組織，放鬆深層鈣化或沾黏的肌肉纖維，效果顯著。</li>
+                  </ul>
+              </p>
+          </div>
+    
+           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 結構力線矯正：治標更治本</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                 這就是宸新與眾不同之處。我們有專業的物理治療師、<a href="/about/clinic/redcord" class="text-cyan-400 hover:underline">紅繩懸吊</a>
+                 與<a href="/about/clinic/pilates-reformer" class="text-cyan-400 hover:underline">器械皮拉提斯</a>
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>去重力調整：</strong> 在懸吊狀態下，消除體重對膝蓋的壓迫，讓治療師能重新引導骨盆與脊椎回到中軸位置。</li>
+                      <li><strong>核心與旋轉鍊訓練：</strong> 強化身體抗旋轉的能力，減少走路時膝蓋承受的扭力。</li>
+                      <li><strong>足部矯正：</strong> 若評估為扁平足影響，則搭配客製化鞋墊支撐足弓。</li>
+                  </ul>
+              </p>
+          </div>
+   
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+     <p><img src="/images/diseases/knee/pop/c.jpg" alt="放鬆膕肌與穩定膝蓋"></p>
+          <h3 style="color: #f8fafc !important;">🏠 居家復健運動：放鬆膕肌與穩定膝蓋</h3>
+          <p style="color: #e2e8f0 !important;">在治療期間，配合居家運動能加速復原。請依照自身狀況進行：</p>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">1. 膕肌深層放鬆 (按摩球)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  針對膝蓋後側深處的緊繃點進行按壓。
+                  <br>1. 坐在地板上，雙腿伸直。
+                  <br>2. 將按摩球（網球或花生球）放在膝蓋後側（膝窩）偏外側一點點的位置。
+                  <br>3. 慢慢彎曲膝蓋，利用小腿的重量夾住按摩球。
+                  <br>4. 輕微左右晃動小腿，尋找痠痛點，停留 30 秒。
+                  <br><em>注意：膝窩有神經血管，若出現麻感請立刻停止並調整位置。</em>
+              </p>
+          </div>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 坐姿比目魚肌伸展</h4>
+              <p style="color: #e2e8f0 !important;">
+                  放鬆與膕肌筋膜相連的小腿深層肌肉。
+                  <br>1. 坐在椅子上，雙腳平踩地板。
+                  <br>2. 患側腳翹二郎腿（將腳踝放在另一腳的膝蓋上，呈「4」字型）。
+                  <br>3. 雙手扶住小腿與腳踝，身體慢慢往前傾，保持背部挺直。
+                  <br>4. 感覺臀部與膝蓋外後側有拉伸感。維持 15-30 秒，重複 3 次。
+              </p>
+          </div>
+    <div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">3. 弓箭步屈膝下壓 (站姿比目魚肌伸展)</h4>
+    <p style="color: #e2e8f0 !important;">
+        比目魚肌緊繃常會拉扯膕肌，這個動作能精準放鬆深層的小腿肚。
+        <br>1. 面對牆壁，雙手扶牆，雙腳呈現前後弓箭步站立。
+        <br>2. <strong>關鍵動作：</strong>將後腳往前踩一步縮短距離，並讓<strong>「後腳膝蓋微微彎曲」</strong>，腳跟保持踩死在地板上不能離地。
+        <br>3. 身體重心垂直像「坐」下去一樣下沉，利用體重去擠壓後腳踝。
+        <br>4. 此時拉扯感會從膝蓋後窩轉移到<strong>「腳跟上方、阿基里斯腱深處」</strong>。
+        <br>5. 維持 15-30 秒，重複 3 次。
+    </p>
+    </div>
+
+
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">4. 彈力帶脛骨內旋訓練 (強化膕肌)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  這是恢復膕肌功能的關鍵動作，要在不痛的前提下進行。
+                  <br>1. 坐姿，膝蓋彎曲 90 度，腳跟著地。
+                  <br>2. 將彈力帶一端固定在腳掌外側，另一端由他人拉住或固定在身體外側方向。
+                  <br>3. <strong>動作：</strong>腳跟當作支點不動，將腳尖「往內轉」（對抗彈力帶阻力）。
+                  <br>4. 過程中膝蓋不要晃動，專注在小腿骨的旋轉。
+                  <br>5. 慢慢放回，重複 10-12 下，做 3 組。
+              </p>
+          </div>
+    
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 膝蓋後側痛，別只醫膝蓋！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">膕肌肌腱炎往往是身體力線失衡的受害者。如果您的膝窩疼痛反覆發作，休息也不會好，請務必檢視您的脊椎與骨盆狀況。宸新復健科提供從頭到腳的整體評估，用科學數據與精準治療，幫您找回健康的膝蓋！</p>
+              <p style="font-weight: bold; color: #059669 !important;">預約院內治療師評估與超音波檢查，找出疼痛真兇！</p>
+          </div>
+        `,
+        symptoms: [
+          '膝蓋後側（膝窩）深層痠痛',
+          '下坡走路或跑步時疼痛加劇',
+          '膝蓋完全伸直時會痛或卡住',
+          '蹲下時膝蓋後側有擠壓感',
+        ],
+        treatments: [
+          '止痛藥與物理治療',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">肌筋膜放鬆與體態評估</a>🔍️',
+          '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波 (ESWT)</a>🔍️',
+          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">高解析超音波導引注射 (PRP)</a>🔍️'
+        ],
+        seoKeywords: [
+          '膕肌肌腱炎',
+          '膝蓋後側痛',
+          '膝窩痛',
+          '下坡膝蓋痛',
+          '膝蓋伸不直',
+          '脊椎側彎矯正',
+          '物理治療',
+          '震波治療'
+        ],
+        seoDescription: '膝蓋後側深處痠痛、下坡痛？可能是膕肌肌腱炎！宸新復健科運用院內X光與超音波雙重檢查，結合脊椎側彎矯正架調整骨盆力線，從根源解決膝窩疼痛與緊繃。',
+        images: [
+          {   src: '/images/diseases/knee/pop/a.jpg',  alt: '膕肌肌腱炎'  }
+        ]
+    }
 
     ]
   },
