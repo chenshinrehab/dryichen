@@ -7041,7 +7041,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：跑步或是上下樓梯時，<strong>膝蓋內側下方</strong>（大約關節縫下面一點點）感到劇烈刺痛？晚上睡覺側躺時，兩個膝蓋碰在一起也會痛？甚至摸起來有點腫腫的熱熱的？</p>
           <br>
           <p style="color: #e2e8f0 !important;">這不是膝關節退化，而是常見的<strong>「鵝掌肌腱炎」</strong>。這通常是運動過度或姿勢不良造成的結果。值得注意的是，鵝掌肌腱的問題往往暗示著<strong>「X 型腿」</strong>或<strong>「骨盆不穩」</strong>。在宸新復健科，我們不只幫您止痛，更利用<strong>物理治療師評估</strong>與<strong>超音波</strong>雙重檢查，結合<strong>核心運動訓練</strong>調整下肢力線，避免膝蓋持續內夾，徹底解決反覆發作的內側痛。</p>
-          <p><img src="/images/diseases/knee/pes-anserine/a.jpg" alt="鵝掌肌腱炎疼痛位置"></p>
+          <p><img src="/images/diseases/knee/pes/b.jpg" alt="鵝掌肌腱炎疼痛位置"></p>
       
           <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
               <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -7061,7 +7061,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   <li style="margin-bottom: 1rem; display: flex; align-items: start;">
                       <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
                       <div style="color: #92400e !important;">
-                          <strong style="color: #0891b2 !important;">薄肌：</strong> 
+                          <strong style="color: #0891b2 !important;">股薄肌：</strong> 
                           大腿內側的肌肉，負責大腿內夾。
                       </div>
                   </li>
@@ -7075,7 +7075,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               </ul>
               <p style="margin-top: 1rem; color: #78350f !important;">這三條肌肉中間夾著一個<strong>「滑囊」</strong>，當肌肉過度緊繃或膝蓋角度不對反覆摩擦時，滑囊就會發炎腫脹，產生劇痛。</p>
           </div>
-          <p><img src="/images/diseases/knee/pes-anserine/b.jpg" alt="鵝掌肌腱解剖構造" style="width: 100%; height: auto;"></p>
+          <p><img src="/images/diseases/knee/pes/c.jpg" alt="鵝掌肌腱解剖構造" style="width: 50%; height: auto;"></p>
     
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -7174,10 +7174,11 @@ export const diseaseCategories: DiseaseCategory[] = [
                   <br>4. 每組 15 下，做 3 組。
               </p>
           </div>
-    
+    <p><img src="/images/diseases/knee/pes/d.jpg" alt="鵝掌肌腱解剖構造" style="width: 100%; height: auto;"></p>
+
           <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
               <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 膝蓋內側痛，別讓它變形！</h3>
-              <p style="color: #334155 !important; margin-bottom: 1.5rem;">鵝掌肌腱炎是身體發出的警訊，告訴您「膝蓋的使用軌道偏了」。如果不矯正，長期摩擦可能加速膝關節退化。宸新復健科提供從超音波診斷到脊椎力線矯正的一站式治療，幫您找回健康的膝蓋！</p>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">鵝掌肌腱炎是身體發出的警訊，告訴您「膝蓋的使用軌道偏了」。如果不矯正，長期摩擦可能加速膝關節退化。宸新復健科提供從超音波診斷到徒手運動治療的一站式治療，幫您找回健康的膝蓋！</p>
               <p style="font-weight: bold; color: #059669 !important;">上下樓梯膝蓋刺痛？立即預約超音波導引評估！</p>
           </div>
         `,
@@ -7205,8 +7206,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '下樓梯膝蓋內側痛、腫脹？可能是鵝掌肌腱炎。宸新復健科運用院內X光與超音波精準診斷，結合脊椎側彎矯正架調整X型腿與骨盆力線，根治反覆發作的膝蓋疼痛。',
         images: [
-          { src: '/images/diseases/knee/pes-anserine/a.jpg', alt: '鵝掌肌腱炎位置圖' },
-          { src: '/images/diseases/knee/pes-anserine/b.jpg', alt: '膝蓋內側解剖構造' }
+          { src: '/images/diseases/knee/pes/a.jpg', alt: '鵝掌肌腱炎' }
         ]
     }
     ]
@@ -7930,7 +7930,177 @@ export const diseaseCategories: DiseaseCategory[] = [
           { src: '/images/diseases/ankle/tp/a.jpg', alt: '脛後肌腱炎示意圖' 
           }
         ]
-      }
+      },
+
+      {
+        id: 'gout-arthritis',
+        slug: 'gout-arthritis',
+        lastModified: '2026-01-28',
+        title: '急性痛風',
+        description: '半夜腳拇指突然紅腫劇痛？這是痛風發作的警訊！宸新復健科運用高解析超音波，精準揪出關節內的尿酸結晶。除了藥物治療，我們提供完整的飲食衛教與急性期物理治療，幫您快速滅火，遠離關節變形。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否曾有過這樣的經驗：昨晚吃完火鍋或海鮮大餐，喝了點酒，結果半夜睡到一半，<strong>大腳趾</strong>突然像被老虎咬一口一樣劇烈疼痛？痛到連蓋棉被碰到都不行，關節整個<strong>紅、腫、發燙</strong>，甚至無法下床走路？</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">這就是典型的<strong>「痛風」</strong>急性發作。痛風古稱「帝王病」，是因為體內代謝異常導致尿酸過高。很多人以為只要吃止痛藥就好，但如果沒有控制好，尿酸結晶會像「粉筆灰」一樣堆積在關節，形成<strong>痛風石</strong>導致關節變形。在宸新復健科，我們利用<strong>高解析骨骼肌肉超音波</strong>，能直接看到沈積在軟骨表面的尿酸結晶，在痛風石形成前就早期診斷，並提供精準的治療策略。</p>
+          <p><img src="/images/diseases/ankle/gout/b.jpg" alt="痛風發作紅腫熱痛"></p>
+      
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 為什麼會痛風？關節裡的「碎玻璃」
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">痛風是一種代謝性關節炎。當我們攝取過多含有「普林」的食物，身體代謝後會產生「尿酸」。正常情況下尿酸會隨尿液排出，但如果：</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">製造太多：</strong> 
+                          飲食大魚大肉、飲酒過量、細胞代謝過快。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">排出太少：</strong> 
+                          腎臟功能不佳、喝水太少、服用利尿劑等。
+                      </div>
+                  </li>
+              </ul>
+              <p style="margin-top: 1rem; color: #78350f !important;">當血液中尿酸濃度過高（高尿酸血症），尿酸就會析出形成<strong>「針狀結晶」</strong>，沈積在關節裡。免疫系統會把這些結晶當成外來入侵者發動攻擊，引發激烈的發炎反應，那種痛就像有無數碎玻璃在刺你的關節。</p>
+          </div>
+          <p><img src="/images/diseases/ankle/gout/c.jpg" alt="尿酸結晶沈積示意圖" style="width: 100%; height: auto;"></p>
+    
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 痛在哪裡？常見的三大戰場</h3>
+          <p style="color: #e2e8f0 !important;">尿酸結晶喜歡沈積在<strong>體溫較低、血液循環較差</strong>的末梢關節：</p>
+          <ul style="color: #e2e8f0 !important;">
+              <li><strong>第一蹠趾關節 (大腳趾根部)：</strong> 超過 50% 的第一次發作都在這裡。</li>
+              <li><strong>腳踝與足背：</strong> 常被誤認為是扭傷，但痛風通常沒有明顯的外傷史，且疼痛來得非常快且劇烈。</li>
+              <li><strong>膝蓋：</strong> 可能會造成膝蓋極度腫脹，甚至積水。</li>
+              <li>其他如<strong>手腕、手肘</strong>也可能出現痛風石。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    
+          <h3 style="color: #f8fafc !important;">🍽️ 痛風飲食指南：什麼不能吃？</h3>
+          <p style="color: #e2e8f0 !important;">控制飲食是預防復發的關鍵。請務必避開以下「普林炸彈」：</p>
+    
+          <div style="background-color: #fef2f2; padding: 1.5rem; border-left: 4px solid #ef4444; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #991b1b !important;">🚫 紅燈區：急性期絕對禁止</h4>
+              <ul style="margin-top: 0.5rem; color: #7f1d1d !important;">
+                  <li><strong>內臟類：</strong> 豬肝、大腸、雞心、腰子等。</li>
+                  <li><strong>濃湯與火鍋湯底：</strong> 普林是水溶性的，煮久的肉湯、火鍋湯含有超高濃度普林。</li>
+                  <li><strong>酒類：</strong> 尤其是<strong>啤酒</strong>（本身含普林又阻礙尿酸排出）和烈酒。</li>
+                  <li><strong>含糖飲料：</strong> 果糖會加速尿酸合成，手搖飲是大忌！</li>
+                  <li><strong>部分海鮮：</strong> 帶殼海鮮（蝦、蟹、蛤蜊、牡蠣）、乾貨（小魚乾、魷魚乾）。</li>
+              </ul>
+          </div>
+    
+           <div style="background-color: #f0fdf4; padding: 1.5rem; border-left: 4px solid #22c55e; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #166534 !important;">✅ 綠燈區：可以多吃</h4>
+              <ul style="margin-top: 0.5rem; color: #14532d !important;">
+                  <li><strong>水：</strong> 每天至少 2000-3000cc，幫助尿酸排出。</li>
+                  <li><strong>低脂乳製品：</strong> 牛奶、優格有助於降低尿酸。</li>
+                  <li><strong>蔬菜水果：</strong> 大部分蔬菜皆可（豆芽菜、蘆筍適量即可），富含維生素 C 的水果尤佳。</li>
+              </ul>
+          </div>
+              <p><img src="/images/diseases/ankle/gout/e.jpg" alt="痛風飲食注意事項"></p>
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新獨家治療策略：不只止痛，更要看清</h3>
+          <p style="color: #e2e8f0 !important;">很多人痛風發作只去藥局買止痛藥，但對於嚴重的關節積水效果有限。宸新復健科提供更積極的醫療處置：</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 超音波導引診斷 (看見結晶)</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>雙軌徵：</strong> 這是痛風的特徵影像。超音波下可以看到尿酸結晶像一層霜一樣覆蓋在軟骨表面。</li>
+                      <li><strong>鑑別診斷：</strong> 區分是蜂窩性組織炎、類風濕性關節炎還是痛風，避免吃錯藥。</li>
+                  </ul>
+              </p>
+          </div>
+              <p><img src="/images/diseases/ankle/gout/d.jpg" alt="超音波檢查痛風石"></p>
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 急性期處置 (快速滅火)</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>藥物治療：</strong> 開立秋水仙素與消炎止痛藥。</li>
+                      <li><strong>超音波導引抽吸：</strong> 若關節積水嚴重腫脹，我們會在超音波導引下將發炎的關節液抽出，並視情況注射消炎藥物，通常能立即緩解一半以上的疼痛。</li>
+                  </ul>
+              </p>
+          </div>
+    
+           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 物理治療與慢性期管理</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>冰敷 ：</strong> 急性紅腫期建議<strong>冰敷</strong>，千萬不能熱敷或推拿，否則發炎會更嚴重。</li>
+                      <li><strong><a href="/treatments/shockwave" class="text-cyan-400 hover:underline">震波治療</a>：</strong> 對於慢性期已經形成的痛風石或關節僵硬，震波可幫助軟化組織，改善活動度。</li>
+                  </ul>
+              </p>
+          </div>
+  
+    
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    
+          <h3 style="color: #f8fafc !important;">🏠 居家照護：發作時怎麼辦？</h3>
+          
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">1. 絕對休息，不要揉！</h4>
+              <p style="color: #e2e8f0 !important;">
+                  痛風發作時，關節內全是尖銳的結晶。任何按摩、推拿、走動都會讓結晶刮傷軟組織，讓發炎擴散。請將患部抬高，多休息。
+              </p>
+          </div>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 狂喝水</h4>
+              <p style="color: #e2e8f0 !important;">
+                  如果心臟腎臟功能正常，急性期請一天喝到 3000cc 以上的水，幫助將體內過多的尿酸洗出來。
+              </p>
+          </div>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">3. 冰敷減痛</h4>
+              <p style="color: #e2e8f0 !important;">
+                  使用冰袋用毛巾包裹，敷在紅腫處 10-15 分鐘，可收縮血管，減緩腫脹與疼痛感。
+              </p>
+          </div>
+    
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 別讓痛風吃掉你的關節！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">痛風不只是痛，更會侵蝕骨頭導致關節報銷。早期發現、精準控制是關鍵。宸新復健科結合超音波影像科技與專業醫療團隊，在第一時間為您止痛，並規劃長遠的關節保健計畫。</p>
+              <p style="font-weight: bold; color: #059669 !important;">腳趾紅腫熱痛？立即預約超音波檢測尿酸結晶！</p>
+          </div>
+        `,
+        symptoms: [
+          '關節突然紅、腫、熱、痛',
+          '疼痛通常在半夜或清晨發作',
+          '患部皮膚緊繃發亮，輕觸劇痛',
+          '常見於大腳趾、腳踝、膝蓋'
+        ],
+        treatments: [
+          '藥物治療 (秋水仙素/消炎藥)',
+          '冰敷與休息，飲食控制',
+          '<a href="/treatments/steroid-injection" class="text-cyan-400 hover:underline">超音波導引抽水與類固醇</a>🔍️',
+          '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療 (慢性期)</a>🔍️'
+        ],
+        seoKeywords: [
+          '痛風',
+          'Gout',
+          '痛風飲食',
+          '腳趾紅腫',
+          '尿酸過高',
+          '普林食物',
+          '痛風急救',
+          '超音波檢查'
+        ],
+        seoDescription: '半夜腳趾痛風發作怎麼辦？宸新復健科提供痛風飲食禁忌指南與急性期治療策略。運用院內超音波精準診斷尿酸結晶，結合抽吸與藥物治療，快速緩解紅腫熱痛。',
+        images: [
+          { src: '/images/diseases/ankle/gout/a.jpg', alt: '痛風急性發作' }
+        ]
+    }
 
     ]
   }
