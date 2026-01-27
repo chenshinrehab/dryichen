@@ -576,21 +576,21 @@ export const diseaseCategories: DiseaseCategory[] = [
 <p>確診後別慌張，根據統計，<strong>超過 80% 的椎間盤突出患者可以透過非手術治療痊癒</strong>。宸新復健科提供階梯式的治療策略：</p>
 
 <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-    <h4 style="margin-top: 0; color: #0e7490 !important;">第一階段：健保復健與藥物 (Conservative Therapy)</h4>
+    <h4 style="margin-top: 0; color: #0e7490 !important;">第一階段：健保復健與藥物</h4>
     <p style="margin-bottom: 0; color: #334155 !important;">
         急性期透過口服消炎藥或神經穩定劑緩解疼痛。搭配<strong>腰椎牽引 (拉腰)</strong>，利用機械力量拉開脊椎間隙，產生負壓效果，幫助突出的椎間盤「縮回去」，並放鬆緊繃的肌肉。
     </p>
 </div>
 
 <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-    <h4 style="margin-top: 0; color: #0e7490 !important;">第二階段：PRP 再生注射 (Regenerative Therapy)</h4>
+    <h4 style="margin-top: 0; color: #0e7490 !important;">第二階段：<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a></h4>
     <p style="margin-bottom: 0; color: #334155 !important;">
         若復健效果緩慢，可考慮<strong style="color: #0891b2 !important;">PRP 增生療法</strong>。在超音波導引下，將高濃度血小板注射至受損的韌帶與小面關節周圍。生長因子能促進纖維環的修復，強化脊椎穩定度，從根本解決疼痛，這在現代醫學中是避免手術的一大利器。
     </p>
 </div>
 
 <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-    <h4 style="margin-top: 0; color: #0e7490 !important;">第三階段：核心肌群訓練 (Core Stability)</h4>
+    <h4 style="margin-top: 0; color: #0e7490 !important;">第三階段：<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a></h4>
     <p style="margin-bottom: 0; color: #334155 !important;">
         「天然的最好！」最強的護腰其實是您的<strong>核心肌群</strong>。待疼痛緩解後，透過徒手治療師的一對一指導（如紅繩、皮拉提斯），訓練深層腹橫肌與多裂肌，穩固脊椎，這是<strong>避免復發</strong>的唯一途徑。
     </p>
@@ -1647,33 +1647,63 @@ export const diseaseCategories: DiseaseCategory[] = [
 </div>
 
 <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-    <h4 style="margin-top: 0; color: #0e7490 !important;">2. 神經減壓注射 (精準解除壓迫)</h4>
+    <h4 style="margin-top: 0; color: #0e7490 !important;">2. <a href="/treatments/prp" class="text-cyan-400 hover:underline">神經減壓注射與肌肉修復</a></h4>
     <p style="margin-bottom: 0; color: #334155 !important;">
         若物理治療效果緩慢，這是一針見效的方法。醫師在<strong>超音波導引</strong>下，可以清楚看到腫脹的梨狀肌與受壓的坐骨神經。我們使用<strong style="color: #0891b2 !important;">神經解套注射 (Hydrodissection)</strong>，將藥水精準注入肌肉與神經之間的沾黏處，像「水刀」一樣將它們分開，瞬間解除壓迫，並能一併施打 PRP 修復受傷的肌肉纖維。
     </p>
 </div>
 
 <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-    <h4 style="margin-top: 0; color: #0e7490 !important;">3. 徒手與運動治療 (避免復發)</h4>
+    <h4 style="margin-top: 0; color: #0e7490 !important;">3. <a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a> (避免復發)</h4>
     <p style="margin-bottom: 0; color: #334155 !important;">
         這是長治久安的關鍵。物理治療師會透過<strong>徒手治療</strong>按壓放鬆深層激痛點。接著指導您進行<strong>臀肌強化</strong>，因為很多時候是因為臀大肌無力，導致小小的梨狀肌必須「過勞」代償，練好臀部肌肉才能真正斷根。
     </p>
 </div>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<h3 style="color: #f8fafc !important;">🧘‍♂️ 居家復健：醫師教您自救四招</h3>
+<p><img src="/images/diseases/spine-hip/piri/d.jpg" alt="梨狀肌伸展運動教學"></p>
 
-<h3 style="color: #f8fafc !important;">🧘‍♂️ 居家復健：醫師教您自救兩招</h3>
-<p style="color: #e2e8f0 !important;">除了治療，日常的保養至關重要。建議久坐族每小時都要起來做一次：</p>
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">1. 坐姿梨狀肌伸展</h4>
+    <p style="color: #e2e8f0 !important;">
+        適合辦公室操作，建議久坐族每小時都要起來做一次。
+        <br>1. 坐在椅子上，將痛側的腳踝跨到對側膝蓋上（翹二郎腿姿勢）。
+        <br>2. 腰桿挺直，身體慢慢往前傾，直到感覺屁股深處有緊繃痠痛感。
+        <br>3. 停留 <strong>30 秒</strong>，重複 3-5 次。這能有效拉開緊繃的梨狀肌。
+    </p>
+</div>
 
-<h4 style="color: #f1f5f9 !important;">1. 梨狀肌伸展 (Piriformis Stretch)</h4>
-<p style="color: #e2e8f0 !important;">坐在椅子上，將痛側的腳踝跨到對側膝蓋上（翹二郎腿姿勢）。腰桿挺直，身體慢慢往前傾，直到感覺屁股深處有緊繃痠痛感。停留 <strong>30 秒</strong>，重複 3-5 次。這能有效拉開緊繃的梨狀肌。</p>
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">2. 仰臥跨膝伸展</h4>
+    <p style="color: #e2e8f0 !important;">
+        適合睡前在床上做，能更放鬆地拉伸。
+        <br>1. 平躺，將患側腳彎曲抬起。
+        <br>2. 雙手抱住患側膝蓋，往<strong>「對側肩膀」</strong>的方向拉（例如：右膝往左肩拉）。
+        <br>3. 過程中身體平貼床面不要扭轉。
+        <br>4. 感覺臀部深處被拉開，停留 <strong>30 秒</strong>，重複 3 次。
+    </p>
+</div>
 
-<p><img src="/images/diseases/spine-hip/piri/d.jpg" alt="梨狀肌伸展教學"></p>
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">3. 橋式運動</h4>
+    <p style="color: #e2e8f0 !important;">
+        平躺，雙膝彎曲踩地。利用臀部的力量將骨盆抬起，使身體呈一直線。停留 <strong>5~10 秒</strong>，早晚各做 10 次。這能喚醒沉睡的臀大肌，減輕梨狀肌的負擔。
+    </p>
+</div>
 
-<h4 style="color: #f1f5f9 !important;">2. 橋式運動 (Bridge Exercise)</h4>
-<p style="color: #e2e8f0 !important;">平躺，雙膝彎曲踩地。利用臀部的力量將骨盆抬起，使身體呈一直線。停留 <strong>5~10 秒</strong>，早晚各做 10 次。這能喚醒沉睡的臀大肌，減輕梨狀肌的負擔。</p>
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">4. 蚌殼式運動</h4>
+    <p style="color: #e2e8f0 !important;">
+        <strong>啟動臀中肌的王牌動作！</strong> 很多梨狀肌症候群是因為臀中肌無力，導致梨狀肌過勞代償。
+        <br>1. 側躺，雙腳併攏，膝蓋彎曲約 90 度。
+        <br>2. 腳跟互貼當作支點，利用屁股側邊的力量，將上方的膝蓋像「蚌殼」一樣打開。
+        <br>3. <strong>關鍵細節：</strong>骨盆要保持垂直地面（像一道牆），膝蓋打開時骨盆<strong>不可往後翻</strong>。
+        <br>4. 每組 <strong>12-15 下</strong>，做 3 組。
+    </p>
+</div>
 
-<p><img src="/images/diseases/spine-hip/piri/e.jpg" alt="橋式訓練教學"></p>
+
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -1684,7 +1714,7 @@ export const diseaseCategories: DiseaseCategory[] = [
 </div>
         `,
         symptoms: ['深層臀部痠痛', '久坐疼痛加劇', '無法翹二郎腿', '大腿後側麻痛'],
-        treatments: ['梨狀肌伸展', '物理治療', '神經減壓注射', '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>🔍️'],
+        treatments: [ '止痛藥與物理治療', '<a href="/treatments/prp" class="text-cyan-400 hover:underline">神經減壓注射與肌肉修復</a>', '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>🔍️','避免久坐梨狀肌伸展'],
         seoKeywords: ['梨狀肌症候群', '屁股痛', '假性坐骨神經痛', '腳麻', '久坐屁股痛', '神經解套注射', '深層臀痛', '錢包症候群', '徒手治療', '免動刀復健'],
         seoDescription: '屁股深處痠痛、腳麻？小心是「梨狀肌症候群」引發的假性坐骨神經痛！宸新復健科透過超音波導引神經解套注射與徒手物理治療，精準解除神經壓迫，免動刀改善久坐臀痛。',
         images: [
@@ -7000,8 +7030,185 @@ export const diseaseCategories: DiseaseCategory[] = [
         images: [
           {   src: '/images/diseases/knee/pop/a.jpg',  alt: '膕肌肌腱炎'  }
         ]
-    }
+    },
+    {
+        id: 'pes-anserine-bursitis',
+        slug: 'pes-anserine-bursitis',
+        lastModified: '2026-01-27',
+        title: '鵝掌肌腱炎',
+        description: '膝蓋內側下方一碰就痛？上下樓梯像有針在刺？這是「鵝掌肌腱炎」！不只是消炎，更要找出膝蓋內夾與骨盆歪斜的元兇。宸新復健科運用高解析超音波導引與脊椎側彎矯正架，從力線源頭根治膝蓋疼痛。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：跑步或是上下樓梯時，<strong>膝蓋內側下方</strong>（大約關節縫下面一點點）感到劇烈刺痛？晚上睡覺側躺時，兩個膝蓋碰在一起也會痛？甚至摸起來有點腫腫的熱熱的？</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">這不是膝關節退化，而是常見的<strong>「鵝掌肌腱炎」</strong>。這通常是運動過度或姿勢不良造成的結果。值得注意的是，鵝掌肌腱的問題往往暗示著<strong>「X 型腿」</strong>或<strong>「骨盆不穩」</strong>。在宸新復健科，我們不只幫您止痛，更利用<strong>物理治療師評估</strong>與<strong>超音波</strong>雙重檢查，結合<strong>核心運動訓練</strong>調整下肢力線，避免膝蓋持續內夾，徹底解決反覆發作的內側痛。</p>
+          <p><img src="/images/diseases/knee/pes-anserine/a.jpg" alt="鵝掌肌腱炎疼痛位置"></p>
+      
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 為什麼叫「鵝掌」？膝蓋內側的神秘三角
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">在我們膝蓋內側下方脛骨的位置，有三條肌肉的肌腱匯聚在一起，形狀長得像「鵝的腳掌」，因此得名。這三條肌肉分別是：</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">縫匠肌：</strong> 
+                          大腿前側最長的肌肉，負責盤腿的動作。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">薄肌：</strong> 
+                          大腿內側的肌肉，負責大腿內夾。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">半腱肌 ：</strong> 
+                          大腿後側的肌肉，負責膝蓋彎曲。
+                      </div>
+                  </li>
+              </ul>
+              <p style="margin-top: 1rem; color: #78350f !important;">這三條肌肉中間夾著一個<strong>「滑囊」</strong>，當肌肉過度緊繃或膝蓋角度不對反覆摩擦時，滑囊就會發炎腫脹，產生劇痛。</p>
+          </div>
+          <p><img src="/images/diseases/knee/pes-anserine/b.jpg" alt="鵝掌肌腱解剖構造" style="width: 100%; height: auto;"></p>
+    
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 為什麼會發炎？魔鬼藏在「力線」裡</h3>
+          <p style="color: #e2e8f0 !important;">鵝掌肌腱炎很少單獨發生，它通常是身體其他部位失衡的受害者：</p>
+          <ul style="color: #e2e8f0 !important;">
+              <li><strong>膝外翻 (X型腿)：</strong> 這是最常見的原因。當膝蓋往內夾，會拉長內側的韌帶與肌腱，增加鵝掌滑囊的摩擦壓力。</li>
+              <li><strong>腿後肌與內收肌太緊：</strong> 久坐族或運動後不伸展，肌肉縮短變硬，直接拉扯肌腱附著點。</li>
+              <li><strong>扁平足：</strong> 足弓塌陷會連帶造成小腿內旋，進一步加重膝蓋內側的負擔。</li>
+              <li><strong>退化性關節炎：</strong> 長輩膝關節內側軟骨磨損，常併發鵝掌滑囊炎。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新獨家治療策略：精準消炎 + 導正軌道</h3>
+          <p style="color: #e2e8f0 !important;">針對頑固的膝內側痛，我們採取標本兼治的三步驟：</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 超音波導引注射 (精準消腫)</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  滑囊發炎時常伴隨積水。
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>精準定位：</strong> 利用高解析超音波，我們可以清楚看到積水的滑囊與發炎的肌腱。</li>
+                      <li><strong><a href="/treatments/prp" class="text-cyan-400 hover:underline">增生因子藥物注射</a>：</strong> 在超音波導引下，將消炎藥物或修復因子準確注入滑囊內，避免打到旁邊的神經血管，快速緩解急性疼痛。</li>
+                  </ul>
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 高能量雷射與震波 (放鬆肌肉)</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong><a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波</a>：</strong> 針對緊繃的腿後肌與縫匠肌進行震波治療，鬆解肌肉與肌腱交界處的鈣化或沾黏，降低張力。</li>
+                      <li><strong><a href="/treatments/high-intensity-laser" class="text-cyan-400 hover:underline">高能量雷射</a>：</strong> 促進深層組織血液循環，加速代謝發炎物質。</li>
+                  </ul>
+              </p>
+          </div>
+    
+           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. <a href="/treatments/manual" class="text-cyan-400 hover:underline">物理治療師評估與運動訓練</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                 <strong>這是根治的關鍵！</strong> 如果 X 型腿或骨盆前傾不解決，發炎很快就會復發。
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li> 由治療師一對一指導，搭配放鬆與紅繩或器械皮拉提斯，訓練臀中肌與核心肌群，矯正骨盆歪斜，讓膝蓋回到正確的軌道，不再內夾摩擦。</li>
 
+                  </ul>
+              </p>
+          </div>
+
+    
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    
+          <h3 style="color: #f8fafc !important;">🏠 居家運動：四招告別膝蓋內側痛</h3>
+          <p style="color: #e2e8f0 !important;">除了治療，回家後的伸展與訓練能防止肌肉再次緊繃。請量力而為：</p>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">1. 坐姿腿後肌伸展 (放鬆半腱肌)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  放鬆大腿後側，減少對鵝掌肌腱的拉扯。
+                  <br>1. 坐在椅子邊緣，患側腳伸直，腳跟著地，腳尖勾起。
+                  <br>2. 背部打直，上半身從髖關節慢慢向前傾（像鞠躬一樣）。
+                  <br>3. 感覺大腿後側與膝蓋後窩有拉伸感。
+                  <br>4. 維持 30 秒，重複 3 次。
+              </p>
+          </div>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 蝴蝶式伸展 (放鬆內收肌)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  放鬆大腿內側最緊的那條筋。
+                  <br>1. 坐姿，雙腳腳底板互貼，膝蓋向外打開。
+                  <br>2. 雙手握住腳踝，手肘輕壓膝蓋內側。
+                  <br>3. 身體慢慢往前傾，感覺大腿內側根部被拉開。
+                  <br>4. 維持 30 秒，重複 3 次。
+              </p>
+          </div>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">3. 股內側肌強化 (毛巾下壓)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  強化膝蓋內側的股四頭肌，增加膝關節穩定度。
+                  <br>1. 長坐姿或躺姿，將捲好的毛巾放在患側膝蓋下方。
+                  <br>2. <strong>動作：</strong>大腿前側用力，將膝蓋窩「往下壓」毛巾，讓腳跟微微離地。
+                  <br>3. 感覺大腿內側鼓起來，維持 10 秒，放鬆。
+                  <br>4. 重複 15 下，做 3 組。
+              </p>
+          </div>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">4. 蚌殼式運動</h4>
+              <p style="color: #e2e8f0 !important;">
+                  <strong>解決 X 型腿的王牌動作！</strong> 強化臀中肌，防止膝蓋內夾。
+                  <br>1. 側躺，雙腳併攏，膝蓋彎曲約 90 度。
+                  <br>2. 腳跟互貼當作支點，利用屁股側邊的力量，將上方的膝蓋像「蚌殼」一樣打開。
+                  <br>3. <strong>關鍵：</strong>骨盆保持垂直地面，不要往後翻。
+                  <br>4. 每組 15 下，做 3 組。
+              </p>
+          </div>
+    
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 膝蓋內側痛，別讓它變形！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">鵝掌肌腱炎是身體發出的警訊，告訴您「膝蓋的使用軌道偏了」。如果不矯正，長期摩擦可能加速膝關節退化。宸新復健科提供從超音波診斷到脊椎力線矯正的一站式治療，幫您找回健康的膝蓋！</p>
+              <p style="font-weight: bold; color: #059669 !important;">上下樓梯膝蓋刺痛？立即預約超音波導引評估！</p>
+          </div>
+        `,
+        symptoms: [
+          '膝蓋內側下方紅腫疼痛',
+          '上下樓梯或蹲下站起時疼痛加劇',
+          '側睡時兩膝碰在一起會痛',
+          '膝蓋彎曲伸直時會有摩擦感'
+        ],
+        treatments: [
+            '休息止痛藥與復健治療',
+        '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療(力線調整)</a🔍️>',
+          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引注射 (PRP/消炎)</a>🔍️',
+          '<a href="/treatments/high-intensity-laser" class="text-cyan-400 hover:underline">高能量雷射</a>🔍️',
+        ],
+        seoKeywords: [
+          '鵝掌肌腱炎',
+          '膝蓋內側痛',
+          '上下樓梯痛',
+          '鵝掌滑囊炎',
+          'X型腿矯正',
+          '超音波注射',
+          '物理治療',
+          '膝蓋痛'
+        ],
+        seoDescription: '下樓梯膝蓋內側痛、腫脹？可能是鵝掌肌腱炎。宸新復健科運用院內X光與超音波精準診斷，結合脊椎側彎矯正架調整X型腿與骨盆力線，根治反覆發作的膝蓋疼痛。',
+        images: [
+          { src: '/images/diseases/knee/pes-anserine/a.jpg', alt: '鵝掌肌腱炎位置圖' },
+          { src: '/images/diseases/knee/pes-anserine/b.jpg', alt: '膝蓋內側解剖構造' }
+        ]
+    }
     ]
   },
 
