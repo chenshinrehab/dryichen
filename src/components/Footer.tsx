@@ -168,9 +168,22 @@ export default function Footer() {
               <span>300新竹市東區光復路一段371號B1</span>
             </a>
 
-            {/* 區域服務 SEO 關鍵字 */}
+            {/* 區域服務 SEO 關鍵字 + 診所權威連結 */}
             <p className="text-xs text-slate-500 pt-1">
-               服務範圍：新竹市東區、竹科園區、關新路周邊復健服務
+                服務範圍：新竹市東區、竹科園區、關新路周邊復健服務
+            </p>
+
+            {/* 🔥 新增：權威連結指向診所頁面 🔥 */}
+            <p className="text-xs text-slate-500 pt-1">
+                如需查詢門診時間或掛號，請前往：
+                <a 
+                  href="https://www.forcestar.com.tw/clinic/%E6%96%B0%E7%AB%B9%E7%AB%B9%E7%A7%91%E5%AE%B8%E6%96%B0%E5%BE%A9%E5%81%A5%E7%A7%91%E8%A8%BA%E6%89%80/c/jvAUv7dDKT" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-cyan-500 hover:text-cyan-400 hover:underline font-medium"
+                >
+                    新竹復健科首選 - 宸新復健科診所
+                </a>
             </p>
           </div>
         </div>

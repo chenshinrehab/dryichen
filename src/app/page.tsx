@@ -15,8 +15,11 @@ export const metadata: Metadata = {
   // 設定 Base URL，解決 OG Image 找不到域名的問題
   metadataBase: new URL(SITE_URL),
   
+  // ★★★ 修正重點：修改標題策略 ★★★
+  // 原本：'林羿辰醫師 - 運動教練醫師 | 新竹宸新復健科診所院長'
+  // 修改後：強調個人專業，移除標題開頭的「新竹復健科」強烈字眼，避免與診所官網競爭
   title: {
-    default: '林羿辰醫師 - 運動教練醫師 | 新竹宸新復健科診所院長',
+    default: '林羿辰醫師 - 骨科與運動傷害專家 | 宸新診所院長',
     template: '%s | 林羿辰醫師'
   },
   description: '台大醫院林羿辰醫師官方網站。現任新竹宸新復健科診所院長，擁有健身教練證照的復健科醫師。專長：高解析超音波導引PRP注射、增生療法、震波治療、兒童骨齡評估與減重門診。',
@@ -41,7 +44,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: '林羿辰醫師 - 運動教練醫師 | 專業復健治療',
+    // 同步更新 OG 標題
+    title: '林羿辰醫師 - 骨科與運動傷害專家 | 宸新診所院長',
     description: '台大醫師林羿辰，結合醫學與運動訓練，提供最專業的骨科復健與疼痛治療。',
     type: 'profile', // 對於個人首頁，profile 是合適的
     url: SITE_URL,   // 這裡也同步使用標準網址
@@ -172,7 +176,7 @@ export default function Home() {
         
         <main className="flex-grow relative pt-0">
           
-         {/* 最新內容速報欄位 */}
+          {/* 最新內容速報欄位 */}
         <section className="container mx-auto px-4 mb-4 md:mb-0 relative z-20 -mt-6 md:-mt-10">
             <div className="max-w-5xl mx-auto bg-slate-800/80 backdrop-blur border-l-4 border-pink-500 rounded-r-lg shadow-lg p-3 flex items-center gap-3 md:gap-4 hover:bg-slate-800 transition-colors">
                 
