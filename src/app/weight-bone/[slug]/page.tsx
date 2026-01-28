@@ -9,6 +9,9 @@ import ShareButtons from '@/components/ShareButtons'
 // 定義常數
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
 
+// 定義小工具按鈕樣式 (一致性)
+const toolBtnStyle = "inline-flex items-center gap-2 px-4 py-2 bg-slate-800 border border-slate-600 rounded-full text-slate-300 text-sm hover:text-cyan-400 hover:border-cyan-500 transition-all shadow-sm hover:shadow-[0_0_15px_rgba(34,211,238,0.2)]"
+
 interface PageProps {
   params: {
     slug: string
@@ -19,7 +22,7 @@ export async function generateStaticParams() {
   return getAllWeightLossProgramSlugs()
 }
 
-// 1. 動態 Meta 設定 (SEO 核心 - 已修正)
+// 1. 動態 Meta 設定 (SEO 核心)
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const program = getWeightLossProgramBySlug(params.slug)
   if (!program) return { title: '項目不存在' }
@@ -201,7 +204,7 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                   <div className="p-4 md:p-10">
 
                     {/* Header: 標題與 QR Code */}
-                    <div className="mb-10 border-l-4 border-cyan-500 pl-4 bg-gradient-to-r from-slate-900/80 to-transparent py-6 rounded-r-xl flex flex-col md:flex-row md:items-center gap-6">
+                    <div className="mb-3 md:mb-6 border-l-4 border-cyan-500 pl-4 bg-gradient-to-r from-slate-900/80 to-transparent py-6 rounded-r-xl flex flex-col md:flex-row md:items-center gap-6">
                         <div className="hidden md:block bg-white p-2 rounded-lg shrink-0 group relative shadow-lg ring-2 ring-slate-700">
                            <img 
                             className="w-24 h-24 object-contain" 
@@ -218,6 +221,54 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                            {program.subtitle && <h2 className="text-xl text-cyan-400 font-medium tracking-wide">{program.subtitle}</h2>}
                         </div>
                     </div>
+
+                    {/* ============================================================
+                        ✨ 新增：實用小工具按鈕 (根據 slug 判斷顯示)
+                        ============================================================ */}
+                        <div className="mb-4 md:mb-8 flex flex-wrap gap-4">
+                        
+                        {/* 減重相關頁面 -> 顯示「減重自我評估」 (藍青色漸層) */}
+                        {['mounjaro', 'Wegovy'].includes(params.slug) && (
+                            <Link 
+                                href="/weight-bone/BMI" 
+                                className="group relative inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full text-white font-bold shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:-translate-y-1 transition-all duration-300"
+                            >
+                                <span className="absolute inset-0 bg-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                <i className="fa-solid fa-calculator text-lg group-hover:animate-pulse"></i>
+                                <span>減重自我評估</span>
+                                <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
+                            </Link>
+                        )}
+
+                        {/* 兒童相關頁面 -> 顯示「生長曲線」與「骨齡預測」 */}
+                        {['bone-age'].includes(params.slug) && (
+                            <>
+                                {/* 生長曲線 (青綠色漸層) */}
+                                <Link 
+                                    href="/weight-bone/child" 
+                                    className="group relative inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-600 to-teal-500 rounded-full text-white font-bold shadow-lg shadow-teal-500/20 hover:shadow-teal-500/40 hover:-translate-y-1 transition-all duration-300"
+                                >
+                                    <span className="absolute inset-0 bg-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                    <i className="fa-solid fa-chart-line text-lg group-hover:animate-pulse"></i>
+                                    <span>兒童生長曲線分析</span>
+                                    <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
+                                </Link>
+
+                                {/* 骨齡預測 (藍紫色漸層) */}
+                                <Link 
+                                    href="/weight-bone/calculator" 
+                                    className="group relative inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full text-white font-bold shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40 hover:-translate-y-1 transition-all duration-300"
+                                >
+                                    <span className="absolute inset-0 bg-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                    <i className="fa-solid fa-x-ray text-lg group-hover:animate-pulse"></i>
+                                    <span>骨齡與遺傳身高預測</span>
+                                    <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
+                                </Link>
+                            </>
+                        )}
+                    </div>
+                    {/* ============================================================ */}
+
 
                     {/* 特色與優點 (Grid) */}
                     {(program.whyChooseUs || program.programBenefits) && (
@@ -302,9 +353,9 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                                       </span>
                                   </summary>
                                   <div className="px-6 pb-6 pt-0 text-slate-300 leading-relaxed ml-0 md:ml-10">
-                                     <div className="border-l-2 border-slate-600 pl-4 py-1 text-base md:text-lg animate-in fade-in slide-in-from-top-2">
-                                       {qa.answer}
-                                     </div>
+                                       <div className="border-l-2 border-slate-600 pl-4 py-1 text-base md:text-lg animate-in fade-in slide-in-from-top-2">
+                                         {qa.answer}
+                                       </div>
                                   </div>
                                </details>
                             ))}

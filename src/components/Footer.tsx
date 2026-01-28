@@ -1,19 +1,19 @@
-// src/components/Footer.tsx
 'use client'
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
-import Image from 'next/image' // ✨ 新增：引入 Next.js 圖片優化組件
+import Image from 'next/image'
 import FooterSearch from '@/components/FooterSearch'
+// ✨ 1. 引入跟首頁完全一樣的動畫組件 (確保手機版行為一致)
+import ScrollAnimation from '@/components/ScrollAnimation'
 
 export default function Footer() {
   const [visitCount, setVisitCount] = useState<string>('---,---')
 
+  // =================================================================
+  // 瀏覽人數計算邏輯 (保持不變)
+  // =================================================================
   useEffect(() => {
-    // =================================================================
-    // 🔢 瀏覽人數計算邏輯
-    // =================================================================
-    
     const BASE_VIEWS = 125; 
     const VIEWS_PER_HOUR = 9;
     const ANCHOR_DATE = new Date('2026-01-10T00:00:00').getTime();
@@ -35,6 +35,12 @@ export default function Footer() {
 
   return (
     <footer className="bg-slate-900 border-t border-slate-800 pt-10 pb-6 mt-auto">
+      
+      {/* ✨ 2. 直接使用 ScrollAnimation 組件
+          這會自動套用首頁那套「手機版也能正常顯示」的邏輯與樣式 
+      */}
+      <ScrollAnimation />
+
       <div className="container mx-auto px-4">
 
         {/* =========================================
@@ -44,11 +50,12 @@ export default function Footer() {
             <h4 className="text-2xl font-bold font-sans text-white text-center mb-6 tracking-wide">
                 <span className="text-cyan-400">快速</span>導覽
             </h4>
+            
+            {/* ✨ 3. Class 名稱改回 animate-on-scroll (配合首頁組件) */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 px-2 max-w-6xl mx-auto">
                 
                 {/* 1. 關於我們 */}
-                <Link href="/about" className="group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
-                  {/* ✨ 優化：使用 Next.js Image 組件 (fill 模式自動填滿) */}
+                <Link href="/about" className="animate-on-scroll delay-100 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
                   <Image 
                     src="/images/icons/a.jpg" 
                     alt="關於我們 - 宸新復健科" 
@@ -62,7 +69,7 @@ export default function Footer() {
                 </Link>
 
                 {/* 2. 治療方式 */}
-                <Link href="/treatments" className="group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
+                <Link href="/treatments" className="animate-on-scroll delay-200 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
                   <Image 
                     src="/images/icons/b.jpg" 
                     alt="治療方式 - PRP與震波" 
@@ -76,7 +83,7 @@ export default function Footer() {
                 </Link>
 
                 {/* 3. 減重與骨齡 */}
-                <Link href="/weight-bone" className="group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
+                <Link href="/weight-bone" className="animate-on-scroll delay-300 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
                   <Image 
                     src="/images/icons/c.jpg" 
                     alt="減重與骨齡門診" 
@@ -90,7 +97,7 @@ export default function Footer() {
                 </Link>
 
                 {/* 4. 疾病衛教 */}
-                <Link href="/diseases" className="group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
+                <Link href="/diseases" className="animate-on-scroll delay-400 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
                   <Image 
                     src="/images/icons/d.jpg" 
                     alt="疾病衛教文章" 
@@ -152,7 +159,7 @@ export default function Footer() {
              </div>
           </div>
 
-          {/* 3. 右側：診所資訊 (✨ 修正地圖連結) */}
+          {/* 3. 右側：診所資訊 */}
           <div className="text-center lg:text-right text-slate-300 space-y-1.5 w-full lg:w-auto text-sm">
             <p className="flex items-center justify-center lg:justify-end gap-2 group cursor-pointer">
               <i className="fa-solid fa-phone text-cyan-400 group-hover:animate-pulse"></i> 
@@ -168,12 +175,10 @@ export default function Footer() {
               <span>300新竹市東區光復路一段371號B1</span>
             </a>
 
-            {/* 區域服務 SEO 關鍵字 + 診所權威連結 */}
             <p className="text-xs text-slate-500 pt-1">
                 服務範圍：新竹市東區、竹科園區、關新路周邊復健服務
             </p>
 
-            {/* 🔥 新增：權威連結指向診所頁面 🔥 */}
             <p className="text-xs text-slate-500 pt-1">
                 如需查詢門診時間或掛號，請前往：
                 <a 

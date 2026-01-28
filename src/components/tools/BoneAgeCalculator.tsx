@@ -229,10 +229,11 @@ export default function BoneAgeCalculator() {
                 />
               </div>
               <div className="group">
-                <label className="block text-sm font-bold text-slate-300 mb-2 group-focus-within:text-[#22d3ee] transition-colors">
-                  骨齡 (歲)
-                  <span className="text-xs font-normal text-slate-500 ml-1 block sm:inline">醫師判讀</span>
-                </label>
+  <label className="block text-sm font-bold text-slate-300 mb-2 group-focus-within:text-[#22d3ee] transition-colors">
+    骨齡 (歲)
+    {/* 移除 block 與 sm:inline，保留 ml-1 以維持間距 */}
+    <span className="text-xs font-normal text-slate-500 ml-1">醫師判讀</span>
+  </label>
                 <input
                   type="number"
                   step="0.5"

@@ -514,7 +514,7 @@ const fullTreatmentsData: Treatment[] = [
   // -----------------------------------------------------
   {
     slug: 'high-intensity-laser',
-    title: '高能量雷射治療 (HILT)',
+    title: '高能量雷射治療',
     lastModified: '2026-01-21',
     subtitle: '光速修復、深層止痛的黑科技',
     description: '引進美國頂級Summus高能量雷射，能穿透深層組織，提供立即性的止痛與消腫。專治急性運動傷害、兒童運動傷害與頑固性疼痛。',
@@ -1244,7 +1244,7 @@ const fullTreatmentsData: Treatment[] = [
 
 {
   slug: 'iv-pain-relief',
-  title: '靜脈消炎止痛注射',
+  title: '靜脈消炎止痛針',
   lastModified: '2026-01-25',
   subtitle: '全身性疼痛的急救站，快速緩解急性發炎',
   description: '當口服藥物緩不濟急，靜脈止痛針(NSAIDs)能提供更快速的藥物吸收與作用。針對閃到腰、落枕、急性痛風、偏頭痛或全身性筋膜炎，宸新復健科提供專業評估與安全施打，特別強調過敏史篩檢，確保治療安全有效。',

@@ -87,14 +87,15 @@ export default function WeightLossPage() {
             <div className="mb-10 border-b border-slate-700/50 pb-8">
                 
                 {/* 1. 標題列 */}
-                <div className="flex items-center gap-3 mb-4">
-                    <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
-                        <i className="fa-solid fa-weight-scale text-xl"></i>
-                    </span>
-                    <h1 className="text-3xl font-bold font-sans text-white">
-                        減重與骨齡 <span className="text-slate-500 text-lg font-normal ml-2"></span>
-                    </h1>
-                </div>
+{/* 增加 justify-center 即可水平置中 */}
+<div className="flex items-center justify-center gap-3 mb-4">
+    <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
+        <i className="fa-solid fa-weight-scale text-xl"></i>
+    </span>
+    <h1 className="text-3xl font-bold font-sans text-white">
+        減重與骨齡 <span className="text-slate-500 text-lg font-normal ml-2"></span>
+    </h1>
+</div>
 
                 {/* 2. 按鈕工具區 (引入 Client Component) 
                    這裡會自動根據裝置顯示：電腦版(橫排按鈕) / 手機版(下拉選單) */}

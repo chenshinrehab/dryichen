@@ -43,10 +43,10 @@ export default function WeightLossTools() {
   return (
     <div className="w-full mt-6">
       
-      {/* =======================
-          電腦版：橫向排列
+{/* =======================
+          電腦版：橫向排列 (已置中)
           ======================= */}
-      <div className="hidden md:flex flex-wrap gap-4">
+      <div className="hidden md:flex flex-wrap gap-4 justify-center">
         {tools.map((tool) => (
           <Link
             key={tool.href}

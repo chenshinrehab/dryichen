@@ -193,7 +193,7 @@ export default function GrowthAnalysisMRI() {
             兒童生長發育評估儀
           </h2>
           <p className="text-slate-400 text-lg">
-            對照台灣兒童生長曲線 (2010版)，精準定位生長落點
+            對照最新台灣兒童生長曲線，精準定位生長落點
           </p>
         </div>
         <div className="hidden md:block text-slate-500 text-xs text-right opacity-60">

@@ -3,6 +3,8 @@ import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { diseaseCategories } from '@/data/diseases'
 import SymptomChecker from '@/components/SymptomChecker'
+// ✨ 1. 引入動畫組件
+import ScrollAnimation from '@/components/ScrollAnimation'
 
 // 定義標準網域與路徑
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
@@ -73,23 +75,26 @@ export default function DiseasesPage() {
   return (
     <>
       <JsonLd data={diseasesSchema} />
+      
+      {/* ✨ 2. 放入動畫組件 (負責處理 IntersectionObserver) */}
+      <ScrollAnimation />
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
-        {/* 修正 padding */}
-        <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 _pt-8 pb-12 md:-pt-12 md:pb-16 fade-in">
+        {/* 修正 padding (原本的 _pt-8 怪怪的，改為標準 pt-8) */}
+        <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 pb-12 md:pt-0 md:pb-16 fade-in">
           
           {/* ============================================================
-              ✨ 標題區塊 + AI 搜尋
+              ✨ 標題區塊 + AI 搜尋 (加入 animate-on-scroll)
               ============================================================ */}
-          <div className="text-center mb-10 max-w-4xl mx-auto">
+          <div className="text-center mb-10 max-w-4xl mx-auto animate-on-scroll">
               
               <div className="flex items-center justify-center gap-3 mb-10">
                   <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
                       <i className="fa-solid fa-book-medical text-xl"></i>
                   </span>
                   <h1 className="text-3xl font-bold font-sans text-white">
-                      常見骨科疾病衛教(AI目前測試中)
+                      常見骨科疾病衛教
                   </h1>
               </div>
 
@@ -99,12 +104,10 @@ export default function DiseasesPage() {
               </div>
           </div>
 
-          {/* (原本這裡的 SEO 導言區已被移動到最下方) */}
-          
           {/* ============================================================
-              ✨ 卡片列表 Grid
+              ✨ 卡片列表 Grid (加入 animate-on-scroll + delay-100)
               ============================================================ */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16 animate-on-scroll delay-100">
             {diseaseCategories.map((category) => (
               <Link
                 key={category.slug}
@@ -158,9 +161,9 @@ export default function DiseasesPage() {
           </div>
 
           {/* ============================================================
-              ✨ 專業信任區塊
+              ✨ 專業信任區塊 (加入 animate-on-scroll + delay-200)
               ============================================================ */}
-          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 md:p-10 border border-slate-700 relative overflow-hidden shadow-2xl mb-12">
+          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 md:p-10 border border-slate-700 relative overflow-hidden shadow-2xl mb-12 animate-on-scroll delay-200">
               <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
               
               <div className="relative z-10 flex flex-col md:flex-row gap-8 items-start">
@@ -205,11 +208,9 @@ export default function DiseasesPage() {
           </div>
 
           {/* ============================================================
-              ✨ SEO 導言區 (已移動至頁面最下方)
-              說明：為了不影響使用者瀏覽卡片體驗，將詳細文字說明移至此處。
-              這對 SEO 沒有負面影響，且符合 "補充內容 (Supplementary Content)" 的位置慣例。
+              ✨ SEO 導言區 (加入 animate-on-scroll + delay-300)
               ============================================================ */}
-          <div className="max-w-4xl mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+          <div className="max-w-4xl mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300 animate-on-scroll delay-300">
               <details className="group border-l-2 border-slate-700 pl-4">
                   <summary className="list-none [&::-webkit-details-marker]:hidden text-sm md:text-base text-slate-500 leading-relaxed outline-none cursor-pointer select-none text-left hover:text-cyan-400 transition-colors">
                       <span className="inline-block h-full">
