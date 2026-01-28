@@ -99,40 +99,7 @@ export default function TreatmentsPage() {
                 </h1>
             </div>
 
-            {/* ============================================================
-                ✨ SEO 導言區
-                ============================================================ */}
-            <div className="mb-12 max-w-3xl mx-auto">
-                <details className="group border-l-4 border-cyan-500 pl-4">
-                    <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left hover:text-cyan-400 transition-colors">
-                        <span className="inline-block h-full">
-                            <span className="flex items-center gap-2 mb-2">
-                                <i className="fa-solid fa-user-doctor text-cyan-500"></i>
-                                <strong className="text-white font-medium">醫師叮嚀：精準治療，重啟修復</strong>
-                            </span>
-                            宸新復健科致力於提供最先進的<strong className="text-cyan-400 font-normal">新竹骨科</strong>復健治療...
-                            
-                            <span className="group-open:hidden">
-                                <span className="ml-2 text-sm text-cyan-500 hover:text-cyan-400 hover:underline underline-offset-4 font-semibold">
-                                    展開閱讀 <i className="fa-solid fa-chevron-down text-xs"></i>
-                                </span>
-                            </span>
-                        </span>
-                    </summary>
-                    
-                    <div className="mt-4 text-lg text-slate-400 leading-relaxed text-left animate-in fade-in slide-in-from-top-1 duration-300">
-                        <p className="mb-4">
-                            我們特別引進高解析度<strong className="text-cyan-400 font-normal">超音波導引注射</strong>技術，讓<strong className="text-cyan-400 font-normal">PRP</strong> (高濃度血小板) 與<strong className="text-cyan-400 font-normal">增生注射</strong>治療能精準修復受損組織，大幅提升<strong>退化性關節炎</strong>與<strong>肌腱撕裂</strong>的療效。
-                        </p>
-                        <p className="mb-4">
-                            針對慢性疼痛與術後恢復，我們配備高能量<strong className="text-cyan-400 font-normal">體外震波</strong>儀器，專治<strong>足底筋膜炎</strong>與<strong>鈣化性肌腱炎</strong>。
-                        </p>
-                        <p> 
-                            並由資深治療師提供一對一的<strong className="text-cyan-400 font-normal">徒手治療</strong>與運動指導，全方位解決您的疼痛困擾。
-                        </p>
-                    </div>
-                </details>
-            </div>
+            
             
             {/* ============================================================
                 ✨ 卡片列表
@@ -226,6 +193,41 @@ export default function TreatmentsPage() {
             </div>
 
           </div>
+
+{/* ============================================================
+                ✨ SEO 導言區
+                ============================================================ */}
+
+<div className="max-w-4xl mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+              <details className="group border-l-2 border-slate-700 pl-4">
+                  <summary className="list-none [&::-webkit-details-marker]:hidden text-sm md:text-base text-slate-500 leading-relaxed outline-none cursor-pointer select-none text-left hover:text-cyan-400 transition-colors">
+                      <span className="inline-block h-full">
+                          <span className="flex items-center gap-2 mb-2">
+                             <i className="fa-solid fa-circle-info text-cyan-500/50"></i>
+                             <strong className="text-white font-medium">醫師叮嚀：精準治療，重啟修復</strong>
+                          </span>
+                          宸新復健科致力於提供最先進的<strong className="text-cyan-400 font-normal">新竹骨科</strong>復健治療...
+                          <span className="group-open:hidden">
+                             <span className="text-xs text-cyan-500 hover:underline ml-2">展開閱讀</span>
+                          </span>
+                      </span>
+                  </summary>
+
+                  <div className="mt-4 text-base text-slate-500 leading-relaxed text-left animate-in fade-in slide-in-from-top-1 duration-300">
+                  <p className="mb-4">
+                            我們特別引進高解析度<strong className="text-cyan-400 font-normal">超音波導引注射</strong>技術，讓<strong className="text-cyan-400 font-normal">PRP</strong> (高濃度血小板) 與<strong className="text-cyan-400 font-normal">增生注射</strong>治療能精準修復受損組織，大幅提升<strong>退化性關節炎</strong>與<strong>肌腱撕裂</strong>的療效。
+                        </p>
+                        <p className="mb-4">
+                            針對慢性疼痛與術後恢復，我們配備高能量<strong className="text-cyan-400 font-normal">體外震波</strong>儀器，專治<strong>足底筋膜炎</strong>與<strong>鈣化性肌腱炎</strong>。
+                        </p>
+                        <p> 
+                            並由資深治療師提供一對一的<strong className="text-cyan-400 font-normal">徒手治療</strong>與運動指導，全方位解決您的疼痛困擾。
+                        </p>
+                  </div>
+              </details>
+          </div>
+
+
         </main>
       </div>
     </>

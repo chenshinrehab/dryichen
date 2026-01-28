@@ -1219,8 +1219,9 @@ const fullTreatmentsData: Treatment[] = [
     '結合物理治療與運動衛教，治標也治本。'
   ],
   treatmentFocus: [
-    '媽媽手 (手腕橈側痛) / 板機指 (手指卡住)。',
-    '腕隧道症候群 (手指發麻) ',
+    '<a href="/diseases/hand/mommy-thumb" class="text-cyan-400 hover:underline">媽媽手</a> / <a href="/diseases/hand/trigger-finger" class="text-cyan-400 hover:underline">板機指</a> 。',
+    '<a href="/diseases/hand/carpal-tunnel-syndrome" class="text-cyan-400 hover:underline">腕隧道症候群</a> ',
+    '<a href="/diseases/ankle/gout-arthritis" class="text-cyan-400 hover:underline">急性痛風</a>',
     '急性滑囊炎 (肩膀/膝蓋腫痛)。'
   ],
   images: [],

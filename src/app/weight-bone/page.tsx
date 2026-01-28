@@ -3,6 +3,8 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { weightLossPrograms } from '@/data/weightLoss'
+// 引入剛剛建立的組件 (路徑請依您實際存放位置調整)
+import WeightLossTools from '@/components/WeightLossTools'
 
 // 定義常數，確保網址一致
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
@@ -10,27 +12,25 @@ const PAGE_PATH = '/weight-bone'
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
 // ==========================================
-// 1. Meta 設定 (新增 Open Graph 與 Canonical)
+// 1. Meta 設定
 // ==========================================
 export const metadata: Metadata = {
   title: '新竹減重與骨齡門診 - 猛健樂/瘦瘦針/生長遲緩/性早熟評估 | 宸新復健科',
   description: '新竹宸新復健科提供專業體重管理與兒童生長發育評估。林羿辰醫師親自規劃猛健樂(Mounjaro)、週纖達(Ozempic)等瘦瘦針療程，並提供兒童骨齡X光檢查，針對性早熟與生長遲緩問題提供專業建議。',
   keywords: ['新竹減重', '新竹猛健樂', '瘦瘦針', '新竹照骨齡', '生長遲緩', '性早熟', '週纖達', '兒童長高'],
-  // ★★★ 加入 Canonical Tag ★★★
   alternates: {
     canonical: CANONICAL_URL,
   },
-  // ✨ 新增 Open Graph，讓分享連結時顯示正確標題與縮圖
   openGraph: {
     title: '新竹減重與骨齡門診 - 猛健樂/瘦瘦針/生長遲緩/性早熟評估',
     description: '提供新竹地區專業減重、瘦瘦針治療與兒童骨齡評估服務。',
-    url: CANONICAL_URL, // 同步使用標準網址
+    url: CANONICAL_URL,
     type: 'website',
   },
 }
 
 // ==========================================
-// 2. Schema 結構化資料 (新增 ItemList)
+// 2. Schema 結構化資料
 // ==========================================
 const weightBoneSchema = {
   '@context': 'https://schema.org',
@@ -47,7 +47,7 @@ const weightBoneSchema = {
       '@id': `${CANONICAL_URL}#webpage`,
       'name': '減重與骨齡門診',
       'description': '提供新竹地區專業減重、瘦瘦針治療與兒童骨齡評估服務。',
-      'url': CANONICAL_URL, // 明確指定 URL
+      'url': CANONICAL_URL,
       'lastReviewed': new Date().toISOString().split('T')[0],
       'reviewedBy': {
         '@type': 'Physician',
@@ -58,7 +58,6 @@ const weightBoneSchema = {
         { '@type': 'MedicalSpecialty', 'name': 'Weight Loss Management' },
         { '@type': 'MedicalSpecialty', 'name': 'Pediatric Growth Assessment' }
       ],
-      // ✨ 新增 ItemList：告訴 Google 這頁面列出了哪些具體服務
       'mainEntity': {
         '@type': 'ItemList',
         'itemListElement': weightLossPrograms.map((program, index) => ({
@@ -79,53 +78,33 @@ export default function WeightLossPage() {
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
-        {/* 修正了 padding top 的拼寫錯誤 (pt--6 -> pt-6) */}
         <main className="flex-grow -pt-6 pb-12 md:-pt-6 md:pb-16 fade-in">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
             {/* ============================================================
-                ✨ 標題區塊
+                ✨ 標題區塊 (修改版)
                 ============================================================ */}
-            <div className="flex items-center justify-center gap-3 mb-10">
-                <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
-                    <i className="fa-solid fa-weight-scale text-xl"></i>
-                </span>
-                <h1 className="text-3xl font-bold font-sans text-white">
-                    減重與骨齡 <span className="text-slate-500 text-lg font-normal ml-2">Weight</span>
-                </h1>
+            <div className="mb-10 border-b border-slate-700/50 pb-8">
+                
+                {/* 1. 標題列 */}
+                <div className="flex items-center gap-3 mb-4">
+                    <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
+                        <i className="fa-solid fa-weight-scale text-xl"></i>
+                    </span>
+                    <h1 className="text-3xl font-bold font-sans text-white">
+                        減重與骨齡 <span className="text-slate-500 text-lg font-normal ml-2"></span>
+                    </h1>
+                </div>
+
+                {/* 2. 按鈕工具區 (引入 Client Component) 
+                   這裡會自動根據裝置顯示：電腦版(橫排按鈕) / 手機版(下拉選單) */}
+                <WeightLossTools />
+
             </div>
 
+
             {/* ============================================================
-                ✨ SEO 導言區
-                ============================================================ */}
-            <div className="mb-12 max-w-3xl mx-auto">
-                  <details className="group border-l-4 border-cyan-500 pl-4">
-                      <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left">
-                          <span className="inline-block h-full">
-                              宸新復健科提供<strong className="text-cyan-400 font-normal">全方位的服務</strong>，在<strong className="text-cyan-400 font-normal">減重及兒童發展</strong>也提供完整優良的服務。
-                              
-                              <span className="group-open:hidden">
-                                  ... 
-                                  <span className="ml-1 text-sm text-cyan-500 hover:text-cyan-400 hover:underline underline-offset-4 font-semibold">
-                                      了解更多 <i className="fa-solid fa-chevron-down text-xs"></i>
-                                  </span>
-                              </span>
-                          </span>
-                      </summary>
-                      
-                      <div className="mt-4 text-lg text-slate-400 leading-relaxed text-left animate-in fade-in slide-in-from-top-1 duration-300">
-                          <p className="mb-4">
-                              我們提供科學化的<strong className="text-cyan-400 font-normal">減重</strong>療程，引進雙重腸泌素<strong className="text-cyan-400 font-normal">猛健樂 (Mounjaro)</strong> 與常見的<strong className="text-cyan-400 font-normal">瘦瘦針</strong> (週纖達)，協助您有效控制體重。
-                          </p>
-                          <p>
-                              針對兒童發育，我們提供專業的<strong className="text-cyan-400 font-normal">照骨齡</strong> X光檢查，精準評估<strong className="text-cyan-400 font-normal">生長遲緩</strong>與<strong className="text-cyan-400 font-normal">性早熟</strong>風險，把握孩子黃金成長期。
-                          </p>
-                      </div>
-                  </details>
-            </div>
-            
-            {/* ============================================================
-                ✨ 卡片列表
+                ✨ 卡片列表 (維持原樣)
                 ============================================================ */}
             <div className="grid grid-cols-1 gap-8 mb-16">
               {weightLossPrograms.map((program) => (
@@ -179,7 +158,7 @@ export default function WeightLossPage() {
             </div>
 
             {/* ============================================================
-                ✨ 醫師治療理念與叮嚀
+                ✨ 醫師治療理念與叮嚀 (維持原樣)
                 ============================================================ */}
             <div className="bg-slate-800/80 rounded-2xl p-8 border border-slate-700 relative overflow-hidden">
                 <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>
@@ -199,6 +178,7 @@ export default function WeightLossPage() {
                             <p>
                                 體重控制不僅僅是為了外觀，更是為了長遠的健康。市面上的減重藥物（如<span className="text-cyan-400">瘦瘦針、猛健樂</span>）雖然效果顯著，但它們屬於<strong>醫療處方藥品</strong>，必須在專業醫師的評估下使用，以避免副作用並確保療效。
                             </p>
+
                             <p>
                                 同樣地，兒童的生長發育只有一次。透過<span className="text-cyan-400">骨齡檢測</span>，我們能客觀判斷孩子的生長潛力。無論是性早熟的治療或生長遲緩的介入，都需要精準的醫療判斷，而非盲目補充營養品。
                             </p>
@@ -215,6 +195,32 @@ export default function WeightLossPage() {
             </div>
 
           </div>
+
+            {/* ============================================================
+                ✨ SEO 導言區 (維持原樣)
+                ============================================================ */}
+            <div className="max-w-4xl mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300 mt-12 px-4">
+              <details className="group border-l-2 border-slate-700 pl-4">
+                <summary className="list-none [&::-webkit-details-marker]:hidden text-sm md:text-base text-slate-500 leading-relaxed outline-none cursor-pointer select-none text-left hover:text-cyan-400 transition-colors">
+                  <span className="inline-block h-full">
+                    宸新復健科提供<strong className="text-cyan-400 font-normal">全方位的服務</strong>，在<strong className="text-cyan-400 font-normal">減重及兒童發展</strong>也提供完整優良的服務。
+                    <span className="group-open:hidden">
+                      ... <span className="text-xs text-cyan-500 hover:underline ml-2">展開閱讀</span>
+                    </span>
+                  </span>
+                </summary>
+
+                <div className="mt-4 text-base text-slate-500 leading-relaxed text-left animate-in fade-in slide-in-from-top-1 duration-300">
+                  <p className="mb-4">
+                    我們提供科學化的<strong className="text-cyan-400 font-normal">減重</strong>療程，引進雙重腸泌素<strong className="text-cyan-400 font-normal">猛健樂 (Mounjaro)</strong> 與常見的<strong className="text-cyan-400 font-normal">瘦瘦針</strong> (週纖達)，協助您有效控制體重。
+                  </p>
+                  <p>
+                    針對兒童發育，我們提供專業的<strong className="text-cyan-400 font-normal">照骨齡</strong> X光檢查，精準評估<strong className="text-cyan-400 font-normal">生長遲緩</strong>與<strong className="text-cyan-400 font-normal">性早熟</strong>風險，把握孩子黃金成長期。
+                  </p>
+                </div>
+              </details>
+            </div>
+
         </main>
       </div>
     </>

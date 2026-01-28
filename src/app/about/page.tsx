@@ -142,7 +142,6 @@ export default function AboutPage() {
 
       <div className="min-h-screen bg-slate-900 text-slate-300">
       
-      {/* 修正了 padding 拼寫錯誤: -pt-6 改為 pt-6 (CSS 不支援負 padding) */}
       <main className="max-w-5xl mx-auto px-4 -pt-6 pb-12 md:-pt-6 md:pb-16 fade-in">
           
           {/* ============================================================
@@ -157,40 +156,7 @@ export default function AboutPage() {
               </h1>
           </div>
 
-          {/* ============================================================
-              ✨ SEO 導言區
-             ============================================================ */}
-          <div className="mb-12 max-w-3xl mx-auto">
-                <details className="group border-l-4 border-cyan-500 pl-4">
-                    {/* Summary */}
-                    <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left">
-                        <span className="inline-block h-full">
-                            我們是<strong className="text-cyan-400 font-normal">新竹推薦</strong>的首選復健專科診所。擁有<strong className="text-cyan-400 font-normal">醫學中心等級</strong>的醫療設備及醫療人員。
-                            
-                            <span className="group-open:hidden">
-                                ... 
-                                <span className="ml-1 text-sm text-cyan-500 hover:text-cyan-400 hover:underline underline-offset-4 font-semibold">
-                                    了解更多 <i className="fa-solid fa-chevron-down text-xs"></i>
-                                </span>
-                            </span>
-                        </span>
-                    </summary>
-                    
-                    {/* Content */}
-                    <div className="mt-4 text-lg text-slate-400 leading-relaxed text-left animate-in fade-in slide-in-from-top-1 duration-300">
-                        <p className="mb-4">
-                            宸新復健科座落於繁華的<strong className="text-cyan-400 font-normal">新竹東區</strong>核心地帶，緊鄰<strong className="text-cyan-400 font-normal">新竹科學園區 (竹科)</strong> 與熱鬧的<strong className="text-cyan-400 font-normal">關埔重劃區</strong>。
-                        </p>
-                        <p className="mb-4">
-                            診所位置交通極其便利，位於<strong className="text-cyan-400 font-normal">光復路</strong>與<strong className="text-cyan-400 font-normal">關新路</strong>交界處附近。無論您是住在關新社區的居民，或是下班後從竹科過來的工程師，甚至是剛逛完 <strong className="text-cyan-400 font-normal">Costco (好市多)</strong> 的民眾，都能輕鬆抵達。
-                        </p>
-                        <p>
-                            為了解決新竹市區停車困難的問題，我們特別規劃了<strong className="text-cyan-400 font-normal">專屬停車位</strong>，讓您就醫復健不再為了找車位而煩惱。我們提供骨科疼痛、運動傷害、增生注射、高階儀器、兒童早療等全方位治療。
-                        </p>
-                    </div>
-                </details>
-          </div>
-
+       
           {/* 卡片連結區塊 */}
           <div className="grid grid-cols-1 gap-8">
             {aboutSections.map((item) => (
@@ -226,7 +192,37 @@ export default function AboutPage() {
             ))}
           </div>
 
-        </main>
+   {/* ============================================================
+              ✨ SEO 導言區
+             ============================================================ */}
+
+<div className="max-w-4xl mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+  <details className="group border-l-2 border-slate-700 pl-4">
+    <summary className="list-none [&::-webkit-details-marker]:hidden text-sm md:text-base text-slate-500 leading-relaxed outline-none cursor-pointer select-none text-left hover:text-cyan-400 transition-colors">
+      <span className="inline-block h-full">
+      我們是<strong className="text-cyan-400 font-normal">新竹推薦</strong>的首選復健專科診所。擁有<strong className="text-cyan-400 font-normal">醫學中心等級</strong>的醫療設備及醫療人員。
+        <span className="group-open:hidden">
+          ... <span className="text-xs text-cyan-500 hover:underline ml-2">展開閱讀</span>
+        </span>
+      </span>
+    </summary>
+
+            <div className="mt-4 text-base text-slate-500 leading-relaxed text-left animate-in fade-in slide-in-from-top-1 duration-300">
+                    <p className="mb-4">
+                            宸新復健科座落於繁華的<strong className="text-cyan-400 font-normal">新竹東區</strong>核心地帶，緊鄰<strong className="text-cyan-400 font-normal">新竹科學園區 (竹科)</strong> 與熱鬧的<strong className="text-cyan-400 font-normal">關埔重劃區</strong>。
+                        </p>
+                        <p className="mb-4">
+                            診所位置交通極其便利，位於<strong className="text-cyan-400 font-normal">光復路</strong>與<strong className="text-cyan-400 font-normal">關新路</strong>交界處附近。無論您是住在關新社區的居民，或是下班後從竹科過來的工程師，甚至是剛逛完 <strong className="text-cyan-400 font-normal">Costco (好市多)</strong> 的民眾，都能輕鬆抵達。
+                        </p>
+                        <p>
+                            為了解決新竹市區停車困難的問題，我們特別規劃了<strong className="text-cyan-400 font-normal">專屬停車位</strong>，讓您就醫復健不再為了找車位而煩惱。我們提供骨科疼痛、運動傷害、增生注射、高階儀器、兒童早療等全方位治療。
+                        </p>
+             </div>
+      </details>
+    </div>
+
+                    
+                        </main>
       </div>
     </>
   )

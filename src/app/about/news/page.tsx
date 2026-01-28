@@ -11,13 +11,12 @@ const PAGE_PATH = '/about/news'
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
 // ==========================================
-// 1. Meta 設定 (加入 Canonical)
+// 1. Meta 設定
 // ==========================================
 export const metadata: Metadata = { 
   title: '最新內容 - 門診公告與復健衛教 | 新竹宸新復健科',
   description: '提供新竹宸新復健科最新的門診異動公告、休診通知，以及專業醫師撰寫的骨科復健、PRP注射、兒童骨齡等衛教文章。',
   keywords: ['新竹復健科公告', '門診時間', '復健衛教', '醫療新知'],
-  // ★★★ 加入 Canonical Tag ★★★
   alternates: {
     canonical: CANONICAL_URL,
   },
@@ -43,7 +42,7 @@ export default function NewsListPage() {
       { '@type': 'ListItem', position: 3, name: '最新消息', item: currentUrl },
     ],
   }
-  
+   
   // 3. Schema: Blog
   const jsonLdBlog = {
     '@context': 'https://schema.org',
@@ -57,16 +56,15 @@ export default function NewsListPage() {
         name: '新竹宸新復健科',
         url: SITE_URL
     },
-    // ✨ blogPost: 告訴 Google 這裡面包含哪些文章
     blogPost: newsList.map((item) => ({
         '@type': 'BlogPosting',
         headline: item.title,
         description: item.summary,
         url: `${currentUrl}/${item.id}`,
-        datePublished: item.date, // 建議 data 裡的格式為 YYYY-MM-DD
+        datePublished: item.date,
         image: item.coverImage,
         author: {
-            '@type': 'Organization', // 這裡用 Organization 即可，單篇內文再用 Physician
+            '@type': 'Organization',
             name: '宸新復健科'
         }
     }))
@@ -77,22 +75,81 @@ export default function NewsListPage() {
       <JsonLd data={jsonLdBreadcrumb} />
       <JsonLd data={jsonLdBlog} />
 
-      <div className="min-h-screen bg-slate-900 text-slate-300 pt-0 pb-12 md:pt-0 md:pb-16 fade-in">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-           
-          {/* 返回按鈕 */}
-          <Link href="/about" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group mt-0 md:mt-0">
-             <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回關於我們
-          </Link>
+      <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
+        
+        {/* 參照 Disease 頁面調整 Main 結構與間距 */}
+        <main className="flex-grow -pt-6 pb-12 md:-pt-6 md:pb-12 fade-in">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            {/* Header 區塊：依照 Disease 頁面排版 */}
+            <div className="mb-10">
+                {/* 返回按鈕 */}
+                <Link 
+                  href="/about" 
+                  className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group text-sm font-medium"
+                >
+                   <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 
+                   返回關於我們
+                </Link>
 
-          {/* 標題區塊 */}
-          <div className="text-center mb-6">
-              <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-wider">最新內容</h1>
-              <div className="h-1 w-20 bg-cyan-500 mx-auto rounded-full"></div>
-          </div>
+                <div className="border-b border-slate-700 pb-6 text-center">
+                    <h1 className="text-3xl md:text-5xl font-bold font-sans text-white tracking-wide mb-3">
+                        最新內容
+                    </h1>
+                </div>
+            </div>
 
-          {/* SEO 導言區 */}
-          <div className="mb-12 max-w-3xl mx-auto">
+            {/* 文章列表 (保持不變) */}
+            <div className="space-y-8">
+              {newsList.map((item) => (
+                <Link 
+                  key={item.id} 
+                  href={`/about/news/${item.id}`} 
+                  className="block group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300"
+                >
+                  <div className="flex flex-col md:flex-row h-full">
+                    {/* 圖片區 */}
+                    <div className="md:w-1/3 h-56 md:h-auto relative overflow-hidden">
+                      <img 
+                        src={item.coverImage} 
+                        alt={item.title} 
+                        className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent md:bg-transparent"></div>
+                    </div>
+                    
+                    {/* 文字區 */}
+                    <div className="md:w-2/3 p-6 md:p-8 flex flex-col justify-center">
+                        <div className="flex items-center gap-3 mb-3 text-sm">
+                           <span className={`px-2 py-1 rounded border ${
+                              item.category === '門診公告' ? 'bg-pink-500/10 text-pink-400 border-pink-500/30' : 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30'
+                           }`}>
+                              {item.category}
+                           </span>
+                           <span className="text-slate-500 flex items-center">
+                              <i className="fa-regular fa-calendar mr-2"></i>{item.date}
+                           </span>
+                        </div>
+                        
+                        <h2 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors leading-tight">
+                            {item.title}
+                        </h2>
+                        
+                        <p className="text-slate-400 line-clamp-2 mb-4 leading-relaxed">
+                            {item.summary}
+                        </p>
+                        
+                        <div className="mt-auto text-cyan-500 text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center">
+                            閱讀更多 <i className="fa-solid fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            {/* SEO 導言區 (保持不變) */}
+            <div className="mb-12 max-w-3xl mx-auto mt-16">
               <details className="group border-l-4 border-cyan-500 pl-4">
                   {/* Summary */}
                   <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left">
@@ -118,58 +175,10 @@ export default function NewsListPage() {
                       </p>
                   </div>
               </details>
-          </div>
+            </div>
 
-          {/* 文章列表 */}
-          <div className="space-y-8">
-            {newsList.map((item) => (
-              <Link 
-                key={item.id} 
-                href={`/about/news/${item.id}`} 
-                className="block group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300"
-              >
-                <div className="flex flex-col md:flex-row h-full">
-                  {/* 圖片區 */}
-                  <div className="md:w-1/3 h-56 md:h-auto relative overflow-hidden">
-                    <img 
-                      src={item.coverImage} 
-                      alt={item.title} 
-                      className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent md:bg-transparent"></div>
-                  </div>
-                  
-                  {/* 文字區 */}
-                  <div className="md:w-2/3 p-6 md:p-8 flex flex-col justify-center">
-                      <div className="flex items-center gap-3 mb-3 text-sm">
-                         <span className={`px-2 py-1 rounded border ${
-                            item.category === '門診公告' ? 'bg-pink-500/10 text-pink-400 border-pink-500/30' : 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30'
-                         }`}>
-                             {item.category}
-                         </span>
-                         <span className="text-slate-500 flex items-center">
-                             <i className="fa-regular fa-calendar mr-2"></i>{item.date}
-                         </span>
-                      </div>
-                      
-                      <h2 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors leading-tight">
-                          {item.title}
-                      </h2>
-                      
-                      <p className="text-slate-400 line-clamp-2 mb-4 leading-relaxed">
-                          {item.summary}
-                      </p>
-                      
-                      <div className="mt-auto text-cyan-500 text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center">
-                          閱讀更多 <i className="fa-solid fa-arrow-right ml-2"></i>
-                      </div>
-                  </div>
-                </div>
-              </Link>
-            ))}
           </div>
-
-        </div>
+        </main>
       </div>
     </>
   )

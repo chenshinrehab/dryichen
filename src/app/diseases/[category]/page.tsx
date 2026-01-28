@@ -116,17 +116,18 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                    返回所有部位
                 </Link>
 
-                <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-700 pb-6">
+
+
+
+
+                <div className="border-b border-slate-700 pb-6 text-center">
                     <div>
-                        <h1 className="text-3xl md:text-5xl font-bold font-sans text-white tracking-wide mb-3">
-                            {category.title}
-                        </h1>
-                        {/* <p className="text-slate-400 text-lg max-w-2xl leading-relaxed">
+                       <h1 className="text-3xl md:text-5xl font-bold font-sans text-white tracking-wide mb-3">
+                       {category.title}
+                    </h1>
+                         {/* <p className="text-slate-400 text-lg max-w-2xl leading-relaxed">
                             {category.description}
                         </p> */}
-                    </div>
-                    <div className="text-slate-500 text-sm mb-1 hidden md:block">
-                        共收錄 {category.diseases.length} 項疾病
                     </div>
                 </div>
             </div>
