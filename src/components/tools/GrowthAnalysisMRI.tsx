@@ -148,9 +148,7 @@ export default function GrowthAnalysisMRI() {
     const maxVal = range[4] * 1.1;
     const scaleY = (val: number) => height - padding - ((val - minVal) / (maxVal - minVal)) * (height - 2 * padding);
 
-    // 生成曲線路徑 (模擬常態分佈曲線，這裡用簡化直線連接示意)
-    // X軸: 年齡 (固定顯示 0-18歲的縮影作為背景)
-    const path3rd = `M0,${height-20} Q${width/2},${height-10} ${width},${height-30}`; // 裝飾用背景線
+    // 生成曲線路徑
     
     // 實際上有意義的是「落點」
     // 我們畫五條橫線代表 97, 85, 50, 15, 3
@@ -195,7 +193,7 @@ export default function GrowthAnalysisMRI() {
             兒童生長發育評估儀
           </h2>
           <p className="text-slate-400 text-lg">
-            對照台灣兒童生長曲線，精準定位生長落點
+            對照台灣兒童生長曲線 (2010版)，精準定位生長落點
           </p>
         </div>
         <div className="hidden md:block text-slate-500 text-xs text-right opacity-60">
@@ -365,7 +363,7 @@ export default function GrowthAnalysisMRI() {
                     </h4>
                     <div className="text-[#78350f] text-sm leading-relaxed font-medium space-y-2">
                         {result.hPercentile < 3 ? (
-                            <p>⚠️ <strong>生長遲緩警訊：</strong> 身高低於第 3 百分位。強烈建議安排<strong>骨齡</strong>檢測。</p>
+                            <p>⚠️ <strong>生長遲緩警訊：</strong> 身高低於第 3 百分位。強烈建議至<strong>兒童內分泌科</strong>安排骨齡與生長激素檢查。</p>
                         ) : result.hPercentile < 15 ? (
                             <p>📉 <strong>身高偏矮：</strong> 雖然在正常範圍內，但屬於後段班。建議加強跳躍運動與睡眠管理（22:00前入睡）。</p>
                         ) : result.hPercentile > 97 ? (
@@ -376,7 +374,7 @@ export default function GrowthAnalysisMRI() {
                         
                         {result.wPercentile > 85 && (
                              <p className="border-t border-orange-200 pt-2 mt-2">
-                                🍔 <strong>體重注意：</strong> 體重百分位較高 (>85th)。過重可能導致<strong>骨齡超前</strong>，進而壓縮未來的長高空間，建議減少甜食攝取。
+                                🍔 <strong>體重注意：</strong> 體重百分位較高 (&gt;85th)。過重可能導致<strong>骨齡超前</strong>，進而壓縮未來的長高空間，建議減少甜食攝取。
                              </p>
                         )}
                     </div>
