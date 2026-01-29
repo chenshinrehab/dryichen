@@ -1,9 +1,8 @@
-// src/app/treatments/page.tsx
 import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { treatmentsList } from '@/data/treatments'
-// ✨ 1. 引入動畫組件
+// ✨ 引入動畫組件
 import ScrollAnimation from '@/components/ScrollAnimation'
 
 // 定義標準網域與路徑
@@ -12,11 +11,11 @@ const PAGE_PATH = '/treatments'
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
 // ==========================================
-// 1. Meta 設定 (加入 Canonical)
+// 1. Meta 設定 (完整保留)
 // ==========================================
 export const metadata: Metadata = {
   title: '新竹PRP/增生注射/震波/徒手治療 - 超音波導引骨科復健 | 宸新復健科',
-  description: '新竹復健科推薦。林羿辰醫師團隊提供高解析超音波導引注射(PRP/葡萄糖增生療法)，精準治療疼痛。另設有高能量體外震波、專業徒手治療與運動治療。',
+  description: '新竹復健科推薦。林羿辰醫師團隊提供高解析超音波導引注射(PRP/葡萄糖增生療法)，精準治療疼痛。另設有高能量體外震波、專業徒手治療與運動治療，為新竹骨科患者提供全方位復健方案。',
   keywords: [
     '新竹PRP', '新竹增生注射', '超音波導引注射', '新竹骨科', 
     '體外震波', '新竹體外震波', '徒手治療', '新竹徒手治療', 
@@ -27,14 +26,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: '新竹PRP/增生注射/震波/徒手治療 - 宸新復健科',
-    description: '提供PRP增生療法、體外震波、徒手治療等專業骨科復健服務過。',
+    description: '提供PRP增生療法、體外震波、徒手治療等專業骨科復健服務。',
     url: CANONICAL_URL,
     type: 'website',
   },
 }
 
 // ==========================================
-// 2. Schema 結構化資料
+// 2. Schema 結構化資料 (完整保留)
 // ==========================================
 const treatmentsSchema = {
   '@context': 'https://schema.org',
@@ -52,6 +51,17 @@ const treatmentsSchema = {
       'name': '復健治療項目總覽',
       'description': '提供PRP增生療法、體外震波、徒手治療等專業骨科復健服務。',
       'url': CANONICAL_URL,
+      'lastReviewed': new Date().toISOString().split('T')[0],
+      'reviewedBy': {
+        '@type': 'Physician',
+        'name': '林羿辰 醫師',
+        'url': `${SITE_URL}/about/doctors`
+      },
+      'specialty': [
+        { '@type': 'MedicalSpecialty', 'name': 'Orthopedics' },
+        { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation' },
+        { '@type': 'MedicalSpecialty', 'name': 'Sports Medicine' }
+      ],
       'mainEntity': {
         '@type': 'ItemList',
         'itemListElement': treatmentsList.map((item, index) => ({
@@ -70,7 +80,7 @@ export default function TreatmentsPage() {
     <>
       <JsonLd data={treatmentsSchema} />
       
-      {/* ✨ 2. 放置動畫觸發器 */}
+      {/* 2. 放置動畫組件 */}
       <ScrollAnimation />
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
@@ -78,7 +88,7 @@ export default function TreatmentsPage() {
         <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 relative z-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            {/* ✨ 3. 標題區塊動畫 */}
+            {/* ✨ 3. 標題區塊動畫 - 參考範本：整組 animate-on-scroll */}
             <div className="flex items-center justify-center gap-3 mb-10 animate-on-scroll">
                 <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
                     <i className="fa-solid fa-notes-medical text-xl"></i>
@@ -88,66 +98,64 @@ export default function TreatmentsPage() {
                 </h1>
             </div>
 
-            {/* ✨ 4. 卡片列表 - 加入交錯進場動畫 */}
-            <div className="grid grid-cols-1 gap-8 mb-16">
-              {treatmentsList.map((treatment, index) => {
-                // 為前幾張卡片加上延遲
-                const delays = ['delay-100', 'delay-200', 'delay-300', 'delay-500'];
-                const delayClass = index < 4 ? delays[index] : 'delay-100';
+            {/* ✨ 4. 卡片列表 Grid - 參考範本：由外層容器統一控制 animate-on-scroll + delay-100 */}
+            <div className="grid grid-cols-1 gap-8 mb-16 animate-on-scroll delay-100">
+              {treatmentsList.map((treatment) => (
+                <Link
+                  key={treatment.slug}
+                  href={`/treatments/${treatment.slug}`}
+                  // 移除單張卡片的動畫類別與延遲，實現整組同步進場
+                  className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
+                >
+                  {/* 左側：圖片區塊 (完整保留) */}
+                  <div className="w-full md:w-2/5 relative h-48 md:h-full overflow-hidden">
+                    <img 
+                      src={treatment.image} 
+                      alt={`${treatment.title} - 新竹推薦`}
+                      className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/90 to-transparent"></div>
+                  </div>
 
-                return (
-                  <Link
-                    key={treatment.slug}
-                    href={`/treatments/${treatment.slug}`}
-                    className={`group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer animate-on-scroll ${delayClass}`}
-                  >
-                    {/* 左側：圖片區塊 */}
-                    <div className="w-full md:w-2/5 relative h-48 md:h-full overflow-hidden">
-                      <img 
-                        src={treatment.image} 
-                        alt={`${treatment.title} - 新竹推薦`}
-                        className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/90 to-transparent"></div>
+                  {/* 右側：文字內容區塊 (完整保留) */}
+                  <div className="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center relative">
+                    <i className="fa-solid fa-file-medical absolute right-4 bottom-4 text-8xl text-slate-800/50 -rotate-12 group-hover:text-cyan-900/30 transition-colors duration-500 pointer-events-none"></i>
+                    
+                    <div className="relative z-10 h-full flex flex-col justify-center">
+                        {/* 標題 */}
+                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors flex items-center">
+                            {treatment.title}
+                            <i className="fa-solid fa-arrow-right opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-2 transition-all ml-3 text-lg text-cyan-500"></i>
+                        </h2>
+                        
+                        {/* 描述 */}
+                        <p className="text-slate-300 text-lg mb-4 line-clamp-2">
+                            {treatment.description}
+                        </p>
+                        
+                        {/* 適用症狀 (完整保留) */}
+                        {treatment.applicableConditions && treatment.applicableConditions.length > 0 && (
+                            <div className="mt-auto">
+                                <div className="flex flex-wrap gap-2">
+                                    {treatment.applicableConditions.slice(0, 4).map((condition, idx) => (
+                                        <span key={idx} className="text-sm bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded border border-cyan-500/20">
+                                            <i className="fa-solid fa-check mr-1 text-xs"></i>{condition}
+                                        </span>
+                                    ))}
+                                    {treatment.applicableConditions.length > 4 && (
+                                        <span className="text-sm text-slate-500 px-2 py-1">...</span>
+                                    )}
+                                </div>
+                            </div>
+                        )}
                     </div>
-
-                    {/* 右側：文字內容區塊 */}
-                    <div className="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center relative">
-                      <i className="fa-solid fa-file-medical absolute right-4 bottom-4 text-8xl text-slate-800/50 -rotate-12 group-hover:text-cyan-900/30 transition-colors duration-500 pointer-events-none"></i>
-                      
-                      <div className="relative z-10 h-full flex flex-col justify-center">
-                          <h2 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors flex items-center">
-                              {treatment.title}
-                              <i className="fa-solid fa-arrow-right opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-2 transition-all ml-3 text-lg text-cyan-500"></i>
-                          </h2>
-                          
-                          <p className="text-slate-300 text-lg mb-4 line-clamp-2">
-                              {treatment.description}
-                          </p>
-                          
-                          {treatment.applicableConditions && treatment.applicableConditions.length > 0 && (
-                              <div className="mt-auto">
-                                  <div className="flex flex-wrap gap-2">
-                                      {treatment.applicableConditions.slice(0, 4).map((condition, idx) => (
-                                          <span key={idx} className="text-sm bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded border border-cyan-500/20">
-                                              <i className="fa-solid fa-check mr-1 text-xs"></i>{condition}
-                                          </span>
-                                      ))}
-                                      {treatment.applicableConditions.length > 4 && (
-                                          <span className="text-sm text-slate-500 px-2 py-1">...</span>
-                                      )}
-                                  </div>
-                              </div>
-                          )}
-                      </div>
-                    </div>
-                  </Link>
-                );
-              })}
+                  </div>
+                </Link>
+              ))}
             </div>
 
-            {/* ✨ 5. 專業理念區塊 - 動畫 */}
-            <div className="bg-slate-800/80 rounded-2xl p-8 border border-slate-700 relative overflow-hidden animate-on-scroll">
+            {/* ✨ 5. 專業理念區塊 - 參考範本：加入 animate-on-scroll + delay-200 */}
+            <div className="bg-slate-800/80 rounded-2xl p-8 border border-slate-700 relative overflow-hidden animate-on-scroll delay-200">
                 <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>
                 
                 <div className="relative z-10 flex flex-col md:flex-row gap-8 items-start">
@@ -166,10 +174,10 @@ export default function TreatmentsPage() {
                         </div>
                         <div className="space-y-4 text-slate-300 leading-relaxed text-lg">
                             <p>
-                                疼痛的成因複雜，傳統的「頭痛醫頭」往往只能治標。宸新復健科堅持引入醫學中心等級的<strong className="text-cyan-400">超音波導引</strong>技術，在注射治療（如 PRP、增生療法）時，能精準送達病灶。
+                                疼痛的成因複雜，傳統的「頭痛醫頭」往往只能治標。宸新復健科堅持引入醫學中心等級的<strong className="text-cyan-400">超音波導引</strong>技術，在注射治療（如 PRP、增生療法）時，能即時看見神經、血管與受傷組織，確保藥劑精準送達病灶。
                             </p>
                             <p>
-                                同時，我們整合了物理治療師的<strong className="text-cyan-400">徒手治療</strong>與運動訓練，不僅修復組織，更協助您重建正確的身體力學。
+                                同時，我們整合了物理治療師的<strong className="text-cyan-400">徒手治療</strong>與運動訓練，不僅修復組織，更協助您重建正確的身體力學，從根本預防復發。
                             </p>
                         </div>
                     </div>
@@ -178,7 +186,7 @@ export default function TreatmentsPage() {
 
           </div>
 
-          {/* ✨ 6. SEO 導言區 - 動畫 */}
+          {/* ✨ 6. SEO 導言區 - 參考範本：加入 animate-on-scroll + delay-300 */}
           <div className="max-w-4xl mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300 mt-12 animate-on-scroll delay-300">
               <details className="group border-l-2 border-slate-700 pl-4">
                   <summary className="list-none [&::-webkit-details-marker]:hidden text-sm md:text-base text-slate-500 leading-relaxed outline-none cursor-pointer select-none text-left hover:text-cyan-400 transition-colors">
@@ -196,13 +204,13 @@ export default function TreatmentsPage() {
 
                   <div className="mt-4 text-base text-slate-500 leading-relaxed text-left">
                     <p className="mb-4">
-                        我們特別引進高解析度<strong className="text-cyan-400 font-normal">超音波導引注射</strong>技術，讓<strong className="text-cyan-400 font-normal">PRP</strong>與<strong className="text-cyan-400 font-normal">增生注射</strong>治療能精準修復受損組織。
+                        我們特別引進高解析度<strong className="text-cyan-400 font-normal">超音波導引注射</strong>技術，讓<strong className="text-cyan-400 font-normal">PRP</strong> (高濃度血小板) 與<strong className="text-cyan-400 font-normal">增生注射</strong>治療能精準修復受損組織，大幅提升<strong>退化性關節炎</strong>與<strong>肌腱撕裂</strong>的療效。
                     </p>
                     <p className="mb-4">
-                        針對慢性疼痛與術後恢復，我們配備高能量<strong className="text-cyan-400 font-normal">體外震波</strong>儀器，專治足底筋膜炎等。
+                        針對慢性疼痛與術後恢復，我們配備高能量<strong className="text-cyan-400 font-normal">體外震波</strong>儀器，專治<strong>足底筋膜炎</strong>與<strong>鈣化性肌腱炎</strong>。
                     </p>
                     <p> 
-                        並由資深治療師提供一對一的<strong className="text-cyan-400 font-normal">徒手治療</strong>與運動指導。
+                        並由資深治療師提供一對一的<strong className="text-cyan-400 font-normal">徒手治療</strong>與運動指導，全方位解決您的疼痛困擾。
                     </p>
                   </div>
               </details>

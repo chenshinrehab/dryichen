@@ -1,4 +1,3 @@
-// src/app/about/page.tsx
 import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
@@ -11,6 +10,9 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.t
 const PAGE_PATH = '/about'
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
+// ==========================================
+// 1. Meta 設定 (完整保留)
+// ==========================================
 export const metadata: Metadata = {
   title: '關於我們 - 新竹復健科推薦 | 台大醫師林羿辰 | 竹科/關埔/光復路骨科診所',
   description: '新竹東區/竹科復健科首選。宸新復健科由台大林羿辰醫師主持，位於關埔重劃區(近Costco、光復路)。提供骨科痛症、運動傷害、兒童早療等全方位治療。附設專屬停車位，就醫方便。',
@@ -38,8 +40,7 @@ const aboutSections = [
     description: '掌握診所最新公告、門診異動、以及最新的復健醫學新知與衛教文章。',
     href: '/about/news',
     image: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=800',
-    icon: 'fa-solid fa-newspaper',
-    delay: 'delay-100' // ✨ 加入動畫延遲
+    icon: 'fa-solid fa-newspaper'
   },
   {
     id: 'clinic',
@@ -48,8 +49,7 @@ const aboutSections = [
     description: '舒適寬敞的復健空間，配備醫學中心等級的檢查與治療設備，提供高品質的醫療服務。',
     href: '/about/clinic',
     image: '/images/about/b.jpg',
-    icon: 'fa-solid fa-hospital',
-    delay: 'delay-200' // ✨ 加入動畫延遲
+    icon: 'fa-solid fa-hospital'
   },
   {
     id: 'doctors',
@@ -58,12 +58,14 @@ const aboutSections = [
     description: '由台大訓練醫師團隊親自看診，結合骨科與復健科專業，提供全方位的疼痛治療方案。',
     href: '/about/doctors',
     image: '/images/about/a.jpg',
-    icon: 'fa-solid fa-user-doctor',
-    delay: 'delay-300' // ✨ 加入動畫延遲
+    icon: 'fa-solid fa-user-doctor'
   }
 ]
 
 export default function AboutPage() {
+  // ==========================================
+  // 2. Schema: 麵包屑 (完整保留)
+  // ==========================================
   const jsonLdBreadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -73,6 +75,9 @@ export default function AboutPage() {
     ],
   }
 
+  // ==========================================
+  // 3. Schema: AboutPage + MedicalClinic (完整保留)
+  // ==========================================
   const aboutSchema = {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
@@ -113,7 +118,7 @@ export default function AboutPage() {
       <div className="min-h-screen bg-slate-900 text-slate-300">
         <main className="max-w-5xl mx-auto px-4 pt-0 -mt-10 md:-mt-12 pb-12">
           
-          {/* ✨ 3. 標題區塊：加入 animate-on-scroll */}
+          {/* ✨ 3. 標題區塊：依照範本同步進場 */}
           <div className="flex items-center justify-center gap-3 mb-10 animate-on-scroll">
               <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
                   <i className="fa-solid fa-address-card text-xl"></i>
@@ -123,16 +128,15 @@ export default function AboutPage() {
               </h1>
           </div>
 
-          {/* 卡片連結區塊 */}
-          <div className="grid grid-cols-1 gap-8 mb-16">
+          {/* ✨ 4. 卡片連結區塊：參考範本由外層 grid 統一控制進場 */}
+          <div className="grid grid-cols-1 gap-8 mb-16 animate-on-scroll delay-100">
             {aboutSections.map((item) => (
               <Link 
                 key={item.id} 
                 href={item.href}
-                // ✨ 4. 卡片加入動畫與延遲
-                className={`group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer animate-on-scroll ${item.delay}`}
+                className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
               >
-                {/* 圖片區塊 */}
+                {/* 圖片區塊 (完整保留) */}
                 <div className="w-full md:w-2/5 relative h-48 md:h-full overflow-hidden">
                   <img 
                     src={item.image} 
@@ -142,7 +146,7 @@ export default function AboutPage() {
                   <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/90 to-transparent"></div>
                 </div>
                 
-                {/* 文字內容區塊 */}
+                {/* 文字內容區塊 (完整保留) */}
                 <div className="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center relative">
                    <i className={`${item.icon} absolute right-4 bottom-4 text-8xl text-slate-800/50 -rotate-12 group-hover:text-cyan-900/30 transition-colors duration-500 pointer-events-none`}></i>
                    
@@ -159,8 +163,8 @@ export default function AboutPage() {
             ))}
           </div>
 
-          {/* ✨ 5. SEO 導言區：加入 animate-on-scroll 與較長的延遲 */}
-          <div className="max-w-4xl mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300 animate-on-scroll delay-500">
+          {/* ✨ 5. SEO 導言區：依照範本延遲 delay-300 進場 */}
+          <div className="max-w-4xl mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300 animate-on-scroll delay-300">
             <details className="group border-l-2 border-slate-700 pl-4">
               <summary className="list-none [&::-webkit-details-marker]:hidden text-sm md:text-base text-slate-500 leading-relaxed outline-none cursor-pointer select-none text-left hover:text-cyan-400 transition-colors">
                 <span className="inline-block h-full">
@@ -171,7 +175,7 @@ export default function AboutPage() {
                 </span>
               </summary>
 
-              <div className="mt-4 text-base text-slate-500 leading-relaxed text-left">
+              <div className="mt-4 text-base text-slate-500 leading-relaxed text-left animate-in fade-in slide-in-from-top-1 duration-300">
                   <p className="mb-4">
                       宸新復健科座落於繁華的<strong className="text-cyan-400 font-normal">新竹東區</strong>核心地帶，緊鄰<strong className="text-cyan-400 font-normal">新竹科學園區 (竹科)</strong> 與熱鬧的<strong className="text-cyan-400 font-normal">關埔重劃區</strong>。
                   </p>
