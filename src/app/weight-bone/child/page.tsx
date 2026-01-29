@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function CalculatorPage() {
   return (
     <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
-    <main className="flex-grow pt-0 pb-12 md:pt-0 md:pb-12 fade-in relative z-10">
+    <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 fade-in relative z-10">
        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* 返回按鈕 */}
         <div className="max-w-4xl mx-auto mb-6">

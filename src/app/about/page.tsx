@@ -3,15 +3,14 @@ import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
+// ✨ 1. 引入動畫組件
+import ScrollAnimation from '@/components/ScrollAnimation'
 
-// 定義標準網域與路徑 (確保與其他頁面一致)
+// 定義標準網域與路徑
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
 const PAGE_PATH = '/about'
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
-// ==========================================
-// 1. Meta 設定 (加入 Canonical 與 Open Graph)
-// ==========================================
 export const metadata: Metadata = {
   title: '關於我們 - 新竹復健科推薦 | 台大醫師林羿辰 | 竹科/關埔/光復路骨科診所',
   description: '新竹東區/竹科復健科首選。宸新復健科由台大林羿辰醫師主持，位於關埔重劃區(近Costco、光復路)。提供骨科痛症、運動傷害、兒童早療等全方位治療。附設專屬停車位，就醫方便。',
@@ -20,19 +19,17 @@ export const metadata: Metadata = {
     '新竹竹科', '新竹科學園區', '關埔重劃區', '光復路', '關新路', '新竹東區', 'Costco附近',
     '新竹復健推薦', '假日有開復健科', '好停車復健科'
   ],
-  // ★★★ 加入 Canonical Tag ★★★
   alternates: {
     canonical: CANONICAL_URL,
   },
   openGraph: {
     title: '關於我們 - 宸新復健科診所',
-    description: '台大醫師團隊，提供骨科痛症、運動傷害、兒童早療等全方位治療。',
-    url: CANONICAL_URL, // 同步使用標準網址
+    description: '台大醫師團隊，提供骨科痛症、運動傷害、兒童早療等全方位治療標。',
+    url: CANONICAL_URL,
     type: 'website',
   }
 }
 
-// 頁面選單資料
 const aboutSections = [
   {
     id: 'news',
@@ -41,7 +38,8 @@ const aboutSections = [
     description: '掌握診所最新公告、門診異動、以及最新的復健醫學新知與衛教文章。',
     href: '/about/news',
     image: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=800',
-    icon: 'fa-solid fa-newspaper'
+    icon: 'fa-solid fa-newspaper',
+    delay: 'delay-100' // ✨ 加入動畫延遲
   },
   {
     id: 'clinic',
@@ -50,7 +48,8 @@ const aboutSections = [
     description: '舒適寬敞的復健空間，配備醫學中心等級的檢查與治療設備，提供高品質的醫療服務。',
     href: '/about/clinic',
     image: '/images/about/b.jpg',
-    icon: 'fa-solid fa-hospital'
+    icon: 'fa-solid fa-hospital',
+    delay: 'delay-200' // ✨ 加入動畫延遲
   },
   {
     id: 'doctors',
@@ -59,15 +58,12 @@ const aboutSections = [
     description: '由台大訓練醫師團隊親自看診，結合骨科與復健科專業，提供全方位的疼痛治療方案。',
     href: '/about/doctors',
     image: '/images/about/a.jpg',
-    icon: 'fa-solid fa-user-doctor'
+    icon: 'fa-solid fa-user-doctor',
+    delay: 'delay-300' // ✨ 加入動畫延遲
   }
 ]
 
 export default function AboutPage() {
-  
-  // ==========================================
-  // 2. Schema: 麵包屑
-  // ==========================================
   const jsonLdBreadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -77,12 +73,9 @@ export default function AboutPage() {
     ],
   }
 
-  // ==========================================
-  // 3. Schema: AboutPage + MedicalClinic
-  // ==========================================
   const aboutSchema = {
     '@context': 'https://schema.org',
-    '@type': 'AboutPage', // 定義這是一個「關於頁面」
+    '@type': 'AboutPage',
     '@id': `${CANONICAL_URL}#webpage`,
     url: CANONICAL_URL,
     name: '關於宸新復健科',
@@ -90,16 +83,11 @@ export default function AboutPage() {
     mainEntity: {
         '@type': 'MedicalClinic',
         name: '宸新復健科診所',
-        image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800', // 建議換成真實診所照片 URL
+        image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800',
         url: SITE_URL,
-        telephone: '+886-3-5647999', // ✨ 建議補上真實電話
+        telephone: '+886-3-5647999',
         priceRange: '健保特約', 
-        medicalSpecialty: [
-            'Physical Medicine and Rehabilitation', 
-            'Orthopedics', 
-            'Pediatrics',
-            'Pain Management'
-        ],
+        medicalSpecialty: ['Physical Medicine and Rehabilitation', 'Orthopedics', 'Pediatrics', 'Pain Management'],
         address: {
             '@type': 'PostalAddress',
             addressLocality: '新竹市東區',
@@ -107,30 +95,9 @@ export default function AboutPage() {
             addressCountry: 'TW',
             streetAddress: '新竹市東區光復路一段371號b1' 
         },
-        areaServed: [
-            { '@type': 'Place', name: 'Hsinchu Science Park' },
-            { '@type': 'AdministrativeArea', name: 'Hsinchu East District' },
-            { '@type': 'AdministrativeArea', name: 'Guanpu' }
-        ],
-        founder: {
-            '@type': 'Person',
-            name: '林羿辰', 
-            jobTitle: '院長',
-            alumniOf: { '@type': 'CollegeOrUniversity', name: '國立台灣大學' } 
-        },
         openingHoursSpecification: [
-            {
-            '@type': 'OpeningHoursSpecification',
-            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-            opens: '09:00',
-            closes: '21:00'
-            },
-            {
-            '@type': 'OpeningHoursSpecification',
-            dayOfWeek: 'Saturday',
-            opens: '09:00',
-            closes: '12:00'
-            }
+            { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:00', closes: '21:00' },
+            { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '09:00', closes: '12:00' }
         ]
     }
   }
@@ -139,15 +106,15 @@ export default function AboutPage() {
     <>
       <JsonLd data={jsonLdBreadcrumb} />
       <JsonLd data={aboutSchema} />
+      
+      {/* ✨ 2. 放入動畫觸發器 */}
+      <ScrollAnimation />
 
       <div className="min-h-screen bg-slate-900 text-slate-300">
-      
-      <main className="max-w-5xl mx-auto px-4 -pt-6 pb-12 md:-pt-6 md:pb-16 fade-in">
+        <main className="max-w-5xl mx-auto px-4 pt-0 -mt-10 md:-mt-12 pb-12">
           
-          {/* ============================================================
-              ✨ 標題區塊 (置中版)
-             ============================================================ */}
-          <div className="flex items-center justify-center gap-3 mb-10">
+          {/* ✨ 3. 標題區塊：加入 animate-on-scroll */}
+          <div className="flex items-center justify-center gap-3 mb-10 animate-on-scroll">
               <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
                   <i className="fa-solid fa-address-card text-xl"></i>
               </span>
@@ -156,14 +123,14 @@ export default function AboutPage() {
               </h1>
           </div>
 
-       
           {/* 卡片連結區塊 */}
-          <div className="grid grid-cols-1 gap-8">
+          <div className="grid grid-cols-1 gap-8 mb-16">
             {aboutSections.map((item) => (
               <Link 
                 key={item.id} 
                 href={item.href}
-                className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
+                // ✨ 4. 卡片加入動畫與延遲
+                className={`group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer animate-on-scroll ${item.delay}`}
               >
                 {/* 圖片區塊 */}
                 <div className="w-full md:w-2/5 relative h-48 md:h-full overflow-hidden">
@@ -192,37 +159,33 @@ export default function AboutPage() {
             ))}
           </div>
 
-   {/* ============================================================
-              ✨ SEO 導言區
-             ============================================================ */}
+          {/* ✨ 5. SEO 導言區：加入 animate-on-scroll 與較長的延遲 */}
+          <div className="max-w-4xl mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300 animate-on-scroll delay-500">
+            <details className="group border-l-2 border-slate-700 pl-4">
+              <summary className="list-none [&::-webkit-details-marker]:hidden text-sm md:text-base text-slate-500 leading-relaxed outline-none cursor-pointer select-none text-left hover:text-cyan-400 transition-colors">
+                <span className="inline-block h-full">
+                我們是<strong className="text-cyan-400 font-normal">新竹推薦</strong>的首選復健專科診所。擁有<strong className="text-cyan-400 font-normal">醫學中心等級</strong>的醫療設備及醫療人員。
+                  <span className="group-open:hidden">
+                    ... <span className="text-xs text-cyan-500 hover:underline ml-2">展開閱讀</span>
+                  </span>
+                </span>
+              </summary>
 
-<div className="max-w-4xl mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
-  <details className="group border-l-2 border-slate-700 pl-4">
-    <summary className="list-none [&::-webkit-details-marker]:hidden text-sm md:text-base text-slate-500 leading-relaxed outline-none cursor-pointer select-none text-left hover:text-cyan-400 transition-colors">
-      <span className="inline-block h-full">
-      我們是<strong className="text-cyan-400 font-normal">新竹推薦</strong>的首選復健專科診所。擁有<strong className="text-cyan-400 font-normal">醫學中心等級</strong>的醫療設備及醫療人員。
-        <span className="group-open:hidden">
-          ... <span className="text-xs text-cyan-500 hover:underline ml-2">展開閱讀</span>
-        </span>
-      </span>
-    </summary>
+              <div className="mt-4 text-base text-slate-500 leading-relaxed text-left">
+                  <p className="mb-4">
+                      宸新復健科座落於繁華的<strong className="text-cyan-400 font-normal">新竹東區</strong>核心地帶，緊鄰<strong className="text-cyan-400 font-normal">新竹科學園區 (竹科)</strong> 與熱鬧的<strong className="text-cyan-400 font-normal">關埔重劃區</strong>。
+                  </p>
+                  <p className="mb-4">
+                      診所位置交通極其便利，位於<strong className="text-cyan-400 font-normal">光復路</strong>與<strong className="text-cyan-400 font-normal">關新路</strong>交界處附近。無論您是住在關新社區的居民，或是下班後從竹科過來的工程師，甚至是剛逛完 <strong className="text-cyan-400 font-normal">Costco (好市多)</strong> 的民眾，都能輕鬆抵達。
+                  </p>
+                  <p>
+                      為了解決新竹市區停車困難的問題，我們特別規劃了<strong className="text-cyan-400 font-normal">專屬停車位</strong>，讓您就醫復健不再為了找車位而煩惱。我們提供骨科疼痛、運動傷害、增生注射、高階儀器、兒童早療等全方位治療。
+                  </p>
+              </div>
+            </details>
+          </div>
 
-            <div className="mt-4 text-base text-slate-500 leading-relaxed text-left animate-in fade-in slide-in-from-top-1 duration-300">
-                    <p className="mb-4">
-                            宸新復健科座落於繁華的<strong className="text-cyan-400 font-normal">新竹東區</strong>核心地帶，緊鄰<strong className="text-cyan-400 font-normal">新竹科學園區 (竹科)</strong> 與熱鬧的<strong className="text-cyan-400 font-normal">關埔重劃區</strong>。
-                        </p>
-                        <p className="mb-4">
-                            診所位置交通極其便利，位於<strong className="text-cyan-400 font-normal">光復路</strong>與<strong className="text-cyan-400 font-normal">關新路</strong>交界處附近。無論您是住在關新社區的居民，或是下班後從竹科過來的工程師，甚至是剛逛完 <strong className="text-cyan-400 font-normal">Costco (好市多)</strong> 的民眾，都能輕鬆抵達。
-                        </p>
-                        <p>
-                            為了解決新竹市區停車困難的問題，我們特別規劃了<strong className="text-cyan-400 font-normal">專屬停車位</strong>，讓您就醫復健不再為了找車位而煩惱。我們提供骨科疼痛、運動傷害、增生注射、高階儀器、兒童早療等全方位治療。
-                        </p>
-             </div>
-      </details>
-    </div>
-
-                    
-                        </main>
+        </main>
       </div>
     </>
   )

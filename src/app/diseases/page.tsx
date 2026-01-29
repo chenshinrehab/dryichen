@@ -82,14 +82,16 @@ export default function DiseasesPage() {
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
         {/* 修正 padding (原本的 _pt-8 怪怪的，改為標準 pt-8) */}
-        <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 pb-12 md:pt-0 md:pb-16 fade-in">
-          
+
+        <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 -mt-10 md:-mt-12 pb-12  fade-in">
           {/* ============================================================
               ✨ 標題區塊 + AI 搜尋 (加入 animate-on-scroll)
               ============================================================ */}
-          <div className="text-center mb-10 max-w-4xl mx-auto animate-on-scroll">
-              
-              <div className="flex items-center justify-center gap-3 mb-10">
+          {/* 1. 外層容器：將 mb-10 改為 mb-5 或 mb-4 (減少整體下方留白) */}
+<div className="text-center mb-5 max-w-4xl mx-auto animate-on-scroll">
+      
+      {/* 2. 標題容器：將 mb-10 改為 mb-4 (減少標題與搜尋框之間的距離) */}
+      <div className="flex items-center justify-center gap-3 mb-4">
                   <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
                       <i className="fa-solid fa-book-medical text-xl"></i>
                   </span>

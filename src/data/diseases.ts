@@ -7693,12 +7693,20 @@ export const diseaseCategories: DiseaseCategory[] = [
             </div>
         
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-        
+            
+             <p><img src="/images/diseases/ankle/achill/b.jpg" alt="阿基里斯腱居家伸展放鬆運動示範"></p>
             <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：黃金標準「離心收縮運動」</h3>
             <p style="color: #e2e8f0 !important;">單純的拉筋是不夠的。研究證實，<strong>離心收縮 (Eccentric Loading)</strong> 是唯一能讓排列混亂的肌腱纖維重新變整齊的方法。請在疼痛緩解後開始執行：</p>
         
+       <div style="margin-bottom: 2rem;">
+                <h4 style="color: #22d3ee !important;">1. 小腿伸展及滾筒放鬆</h4>
+                <p style="color: #e2e8f0 !important;">阿基里斯腱太緊往往是因為上面的小腿肌肉太緊。使用拉弓步的方式伸展小腿肚(腓腸肌)或滾筒按摩球，放鬆小腿肚，這能有效降低肌腱承受的張力。</p>
+            </div>
+   
+       
+
             <div style="margin-bottom: 2rem;">
-                <h4 style="color: #22d3ee !important;">1. 離心足跟下降 (Heel Drop) - 最重要！</h4>
+                <h4 style="color: #22d3ee !important;">2. 離心足跟下降 </h4>
                 <p style="color: #e2e8f0 !important;">找一個樓梯或階梯邊緣，雙腳前腳掌踩在邊緣，腳跟懸空。</p>
                 <ol style="color: #e2e8f0 !important; margin-left: 1.5rem;">
                     <li><strong>向心階段（不練）：</strong> 用「好腳」幫忙用力，把身體墊高到最高點。</li>
@@ -7709,14 +7717,9 @@ export const diseaseCategories: DiseaseCategory[] = [
                 <p style="color: #94a3b8 !important; font-size: 0.9rem;">*注意：止點性肌腱炎（痛點在骨頭接點）做此動作若太痛，請在平地做，不要讓腳跟低於平面。</p>
             </div>
             
-             <p><img src="/images/diseases/ankle/achill/b.jpg" alt="阿基里斯腱居家階梯離心收縮復健運動示範"></p>
-            
-            <div style="margin-bottom: 2rem;">
-                <h4 style="color: #22d3ee !important;">2. 小腿伸展及滾筒放鬆</h4>
-                <p style="color: #e2e8f0 !important;">阿基里斯腱太緊往往是因為上面的小腿肌肉太緊。使用拉弓步的方式伸展小腿肚(腓腸肌)或滾筒按摩球，放鬆小腿肚，這能有效降低肌腱承受的張力。</p>
-            </div>
-                     <p><img src="/images/diseases/ankle/achill/c.jpg" alt="阿基里斯腱居家伸展放鬆運動示範"></p>
-            <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+                         
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
             <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
                 <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 跑者的生命線，值得最好照顧！</h3>

@@ -29,22 +29,22 @@ export default function WeightLossTools() {
     {
       href: '/weight-bone/child',
       label: '兒童生長曲線分析',
-      icon: 'fa-chart-line', // 建議換成圖表 icon，若無可改回 fa-calculator
+      icon: 'fa-chart-line',
       color: 'from-cyan-600 to-teal-500'
     },
     {
       href: '/weight-bone/calculator',
       label: '骨齡與遺傳身高預測',
-      icon: 'fa-x-ray', // 建議換成 X光或骨頭 icon，若無可改回 fa-calculator
+      icon: 'fa-x-ray',
       color: 'from-blue-500 to-indigo-600'
     }
   ]
 
   return (
-    <div className="w-full mt-6">
+    <div className="w-full my-0">
       
 {/* =======================
-          電腦版：橫向排列 (已置中)
+          電腦版：橫向排列
           ======================= */}
       <div className="hidden md:flex flex-wrap gap-4 justify-center">
         {tools.map((tool) => (
@@ -67,7 +67,8 @@ export default function WeightLossTools() {
       <div className="md:hidden relative z-50" ref={dropdownRef}>
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-full flex items-center justify-between px-6 py-4 bg-slate-800 border border-slate-700 rounded-xl text-white font-bold shadow-lg active:bg-slate-700 transition-colors"
+          // 👇 修改：移除了 border border-slate-700
+          className="w-full flex items-center justify-between px-6 py-4 bg-slate-800 rounded-xl text-white font-bold shadow-lg active:bg-slate-700 transition-colors"
         >
           <div className="flex items-center gap-3">
             <i className="fa-solid fa-toolbox text-cyan-400"></i>
@@ -78,7 +79,8 @@ export default function WeightLossTools() {
 
         {/* 下拉內容 */}
         <div
-          className={`absolute top-full left-0 w-full mt-2 bg-slate-800 border border-slate-700 rounded-xl shadow-2xl overflow-hidden transition-all duration-300 origin-top ${
+          // 👇 修改：移除了 border border-slate-700
+          className={`absolute top-full left-0 w-full mt-2 bg-slate-800 rounded-xl shadow-2xl overflow-hidden transition-all duration-300 origin-top ${
             isOpen ? 'opacity-100 scale-y-100 visible' : 'opacity-0 scale-y-95 invisible'
           }`}
         >
@@ -87,7 +89,7 @@ export default function WeightLossTools() {
               <Link
                 key={tool.href}
                 href={tool.href}
-                onClick={() => setIsOpen(false)} // 點擊後關閉選單
+                onClick={() => setIsOpen(false)}
                 className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-700 transition-colors text-slate-200 hover:text-cyan-400"
               >
                 <div className={`w-8 h-8 rounded-full bg-gradient-to-br ${tool.color} flex items-center justify-center text-white text-xs`}>
