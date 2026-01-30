@@ -365,6 +365,21 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                     
                   </div> {/* End padding */}
 
+                                              {/* ★★★ 新增：作者權威聲明 (SEO E-E-A-T) ★★★ */}
+                  {/* 設計為：小字、淡色、靠右對齊，不搶視覺但確保存在 */}
+                  <div className="mt-0 pt-0 border-t border-slate-700/40 text-right">
+                    <div className="inline-block text-slate-500 text-sm space-y-1">
+                      <p>
+                        <span className="mr-2">撰文者 :</span>
+                        <span className="font-medium text-slate-400">復健專科 宸新復健科院長 林羿辰醫師</span>
+                      </p>
+                      <p>
+                        <span className="mr-2">資料來源 :</span>
+                        <span className="font-medium text-slate-400">減重與兒童醫學會</span>
+                      </p>
+                    </div>
+                  </div>
+
                   {/* 底部分享區塊 */}
                   <div className="bg-slate-900/80 p-8 md:p-12 border-t border-slate-700 text-center relative overflow-hidden">
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent blur-sm"></div>

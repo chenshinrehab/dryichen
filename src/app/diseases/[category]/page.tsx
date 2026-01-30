@@ -14,7 +14,7 @@ interface PageProps {
   }
 }
 
-// 1. 動態產生 Metadata
+// 1. 動態產生 Metadata (包含 SEO 強制索引設定)
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const category = diseaseCategories.find((c) => c.slug === params.category)
 
@@ -23,15 +23,35 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const ogImage = category.image || '/images/default-og.jpg'
+  // 確保標準網址是絕對路徑
   const canonicalUrl = `${SITE_URL}/diseases/${params.category}`
 
   return {
+    // 設定 metadataBase 以解決相對路徑問題
+    metadataBase: new URL(SITE_URL),
+    
     title: `${category.title} - 症狀與治療介紹 | 新竹宸新復健科`,
     description: `新竹宸新復健科提供${category.title}相關的疾病衛教，包含：${category.diseases.map(d => d.title).join('、')}等常見症狀與治療方式。`,
     keywords: [`${category.title}`, '新竹骨科', '新竹復健', ...category.diseases.map(d => d.title)],
+    
+    // 明確宣告標準網址 (Canonical URL)
     alternates: {
       canonical: canonicalUrl,
     },
+
+    // 強制 Google 索引此頁面
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+
     openGraph: {
       title: `${category.title} - 症狀與治療介紹`,
       description: category.description,
@@ -98,7 +118,7 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
       <JsonLd data={jsonLdBreadcrumb} />
       <JsonLd data={jsonLdCategory} />
 
-      {/* 啟動動畫引擎 (ScrollAnimation 內已設定手機版不執行動畫) */}
+      {/* 啟動動畫引擎 */}
       <ScrollAnimation />
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
@@ -122,9 +142,10 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                   <h1 className="text-3xl md:text-5xl font-bold font-sans text-white tracking-wide mb-3">
                     {category.title}
                   </h1>
-                  {/* <p className="text-slate-400 text-lg max-w-2xl leading-relaxed">
+                  {/* [已開啟] 這裡的描述文字有助於增加頁面獨特性，提升 SEO */}
+                  <p className="text-slate-400 text-lg max-w-2xl leading-relaxed mx-auto">
                     {category.description}
-                  </p> */}
+                  </p>
                 </div>
               </div>
             </div>

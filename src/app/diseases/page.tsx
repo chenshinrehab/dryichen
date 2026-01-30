@@ -76,14 +76,12 @@ export default function DiseasesPage() {
     <>
       <JsonLd data={diseasesSchema} />
       
-      {/* ✨ 2. 放入動畫組件 (負責處理 IntersectionObserver) */}
       <ScrollAnimation />
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
         {/* 修正 padding (原本的 _pt-8 怪怪的，改為標準 pt-8) */}
-
-        <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 -mt-10 md:-mt-12 pb-12  fade-in">
+        <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 -mt-10 md:-mt-12 pb-12 fade-in">
           {/* ============================================================
               ✨ 標題區塊 + AI 搜尋 (加入 animate-on-scroll)
               ============================================================ */}

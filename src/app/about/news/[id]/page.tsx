@@ -220,7 +220,7 @@ export default function NewsDetailPage({ params }: PageProps) {
 
                       {/* 標題與 Metadata */}
                       <div className="flex-grow">
-                          <h1 className="text-3xl md:text-5xl font-bold font-sans text-white mb-4 tracking-wide leading-tight">
+                          <h1 className="text-3xl md:text-5xl font-bold font-sans text-white mb-4 tracking-wide leading-tight md:leading-[1.2]">
                               {post.title}
                           </h1>
                            

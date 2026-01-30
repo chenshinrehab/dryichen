@@ -137,7 +137,7 @@ export default function NewsListPage() {
                            </span>
                         </div>
                         
-                        <h2 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors leading-tight">
+                        <h2 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors leading-relaxed">
                             {item.title}
                         </h2>
                         

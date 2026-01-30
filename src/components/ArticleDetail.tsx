@@ -279,7 +279,7 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle 
                                         <span className="leading-relaxed">{qa.question}</span>
                                       </h4>
                                       <span className="text-slate-500 group-hover:text-cyan-400 group-open:rotate-180 group-open:text-cyan-500 transition-all duration-300 ml-4 mt-1 shrink-0">
-                                         <i className="fa-solid fa-chevron-down"></i>
+                                       <i className="fa-solid fa-chevron-down"></i>
                                       </span>
                                   </summary>
                                   <div className="px-6 pb-6 pt-0 text-slate-300 leading-relaxed ml-0 md:ml-10">
@@ -295,6 +295,22 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle 
                     
                  </div> {/* End Padding */}
 
+                 {/* ★★★ 作者權威聲明 (僅在 treatments / standard 模式顯示) ★★★ */}
+                 {layoutStyle === 'standard' && (
+                   <div className="mt-0 pt-0 border-t border-slate-700/40 text-right">
+                     <div className="inline-block text-slate-500 text-sm space-y-1">
+                       <p>
+                         <span className="mr-2">撰文者 :</span>
+                         <span className="font-medium text-slate-400">復健專科 宸新復健科院長 林羿辰醫師</span>
+                       </p>
+                       <p>
+                         <span className="mr-2">資料來源 :</span>
+                         <span className="font-medium text-slate-400">復健醫學會</span>
+                       </p>
+                     </div>
+                   </div>
+                 )}
+
                  {/* =========================================================
                      FOOTER: SHARE & CTA
                      ========================================================= */}
@@ -305,7 +321,7 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle 
                     <p className="text-slate-400 mb-8 text-lg relative z-10">歡迎分享給親朋好友，讓更多人了解我們的專業。</p>
 
                     <div className="relative z-10 mb-10">
-                       <ShareButtons url={currentUrl} title={data.title} />
+                        <ShareButtons url={currentUrl} title={data.title} />
                     </div>
 
                     <div className="pt-8 border-t border-slate-700/50 w-full flex justify-center">
@@ -313,8 +329,8 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle 
                         href={backLink.href}
                         className="inline-flex items-center justify-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 group"
                       >
-                         查看更多項目
-                         <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+                          查看更多項目
+                          <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
                       </Link>
                     </div>
                  </div>
