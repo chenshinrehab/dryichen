@@ -316,7 +316,7 @@ export default function WeightLossCalculator() {
                         </>
                     ) : result.bmiStatus === 'overweight' ? (
                         <>
-                            您目前處於<strong>體重過重</strong>階段。這是一個關鍵轉折點！建議開始進行<strong>飲食控制 (低碳/168)</strong> 搭配每週 150 分鐘的有氧運動，即可有效逆轉。
+                            您目前處於<strong>體重過重</strong>階段。這是一個關鍵轉折點！建議開始進行<strong>飲食控制 (高蛋白低碳)</strong> 搭配每週 150 分鐘的有氧運動，即可有效逆轉。
                         </>
                     ) : (
                         <>

@@ -3,109 +3,210 @@
 import React, { useState } from 'react';
 
 // =====================================================================
-// 台灣兒童生長常模數據庫 (Taiwan 2010 Growth Standards)
-// 來源: Chen W & Chang MH. Pediatr Neonatol 2010
-// 數據結構: Age: { mean: 身高中位數, sd: 標準差 }
+// 新版數據庫與計算邏輯
 // =====================================================================
 
-type GrowthParams = { mean: number; sd: number };
-type GrowthData = { [age: number]: GrowthParams };
-
-// 男生身高常模 (2-18歲)
-const DATA_BOY: GrowthData = {
-  2: { mean: 87.8, sd: 3.2 },
-  3: { mean: 96.1, sd: 3.7 },
-  4: { mean: 103.3, sd: 4.1 },
-  5: { mean: 110.0, sd: 4.5 },
-  6: { mean: 116.0, sd: 4.9 },
-  7: { mean: 121.7, sd: 5.3 },
-  8: { mean: 127.3, sd: 5.7 },
-  9: { mean: 132.6, sd: 6.1 },
-  10: { mean: 137.8, sd: 6.5 },
-  11: { mean: 143.5, sd: 7.1 }, // 青春期衝刺
-  12: { mean: 149.8, sd: 7.8 },
-  13: { mean: 157.5, sd: 8.2 }, // 生長高峰
-  14: { mean: 164.5, sd: 7.8 },
-  15: { mean: 169.5, sd: 6.8 },
-  16: { mean: 172.0, sd: 6.0 },
-  17: { mean: 173.0, sd: 5.6 },
-  18: { mean: 173.5, sd: 5.5 }  // 成年預估值
+const growthData = {
+  male: {
+    height: {
+      "3rd": [
+        { age: 0, v: 46.3 }, { age: 0.5, v: 63.6 }, { age: 1, v: 71.3 }, { age: 1.5, v: 77.2 },
+        { age: 2, v: 82.1 }, { age: 2.5, v: 85.5 }, { age: 3, v: 89.1 }, { age: 3.5, v: 92.4 },
+        { age: 4, v: 95.4 }, { age: 4.5, v: 98.4 }, { age: 5, v: 101.2 }, { age: 5.5, v: 103.9 },
+        { age: 6, v: 106.5 }, { age: 6.5, v: 109.2 }, { age: 7, v: 111.8 }, { age: 7.5, v: 114.5 },
+        { age: 8, v: 117.0 }, { age: 8.5, v: 119.5 }, { age: 9, v: 121.8 }, { age: 9.5, v: 124.0 },
+        { age: 10, v: 126.0 }, { age: 10.5, v: 128.0 }, { age: 11, v: 130.5 }, { age: 11.5, v: 133.0 },
+        { age: 12, v: 135.6 }, { age: 12.5, v: 138.2 }, { age: 13, v: 141.9 }, { age: 13.5, v: 145.5 },
+        { age: 14, v: 149.3 }, { age: 14.5, v: 153.0 }, { age: 15, v: 155.5 }, { age: 15.5, v: 158.0 },
+        { age: 16, v: 159.3 }, { age: 16.5, v: 160.5 }, { age: 17, v: 160.9 }, { age: 17.5, v: 161.0 },
+        { age: 18, v: 161.5 }, { age: 18.5, v: 162.0 }
+      ],
+      "15th": [
+        { age: 0, v: 47.9 }, { age: 0.5, v: 65.4 }, { age: 1, v: 73.3 }, { age: 1.5, v: 79.5 },
+        { age: 2, v: 84.6 }, { age: 2.5, v: 88.4 }, { age: 3, v: 92.2 }, { age: 3.5, v: 95.7 },
+        { age: 4, v: 99.0 }, { age: 4.5, v: 102.1 }, { age: 5, v: 105.2 }, { age: 5.5, v: 107.9 },
+        { age: 6, v: 110.5 }, { age: 6.5, v: 113.2 }, { age: 7, v: 115.8 }, { age: 7.5, v: 118.5 },
+        { age: 8, v: 121.3 }, { age: 8.5, v: 124.0 }, { age: 9, v: 126.0 }, { age: 9.5, v: 128.0 },
+        { age: 10, v: 130.5 }, { age: 10.5, v: 133.0 }, { age: 11, v: 135.6 }, { age: 11.5, v: 138.1 },
+        { age: 12, v: 141.1 }, { age: 12.5, v: 144.0 }, { age: 13, v: 148.5 }, { age: 13.5, v: 153.0 },
+        { age: 14, v: 156.3 }, { age: 14.5, v: 159.6 }, { age: 15, v: 161.3 }, { age: 15.5, v: 163.0 },
+        { age: 16, v: 164.0 }, { age: 16.5, v: 165.0 }, { age: 17, v: 165.5 }, { age: 17.5, v: 166.0 },
+        { age: 18, v: 166.0 }, { age: 18.5, v: 166.0 }
+      ],
+      "50th": [
+        { age: 0, v: 49.9 }, { age: 0.5, v: 67.6 }, { age: 1, v: 75.7 }, { age: 1.5, v: 82.3 },
+        { age: 2, v: 87.8 }, { age: 2.5, v: 91.9 }, { age: 3, v: 96.1 }, { age: 3.5, v: 99.9 },
+        { age: 4, v: 103.5 }, { age: 4.5, v: 106.7 }, { age: 5, v: 110.0 }, { age: 5.5, v: 112.8 },
+        { age: 6, v: 115.6 }, { age: 6.5, v: 118.4 }, { age: 7, v: 121.2 }, { age: 7.5, v: 124.0 },
+        { age: 8, v: 126.8 }, { age: 8.5, v: 129.5 }, { age: 9, v: 131.8 }, { age: 9.5, v: 134.0 },
+        { age: 10, v: 136.5 }, { age: 10.5, v: 139.0 }, { age: 11, v: 142.0 }, { age: 11.5, v: 145.0 },
+        { age: 12, v: 148.8 }, { age: 12.5, v: 152.5 }, { age: 13, v: 156.9 }, { age: 13.5, v: 161.2 },
+        { age: 14, v: 163.7 }, { age: 14.5, v: 166.2 }, { age: 15, v: 167.6 }, { age: 15.5, v: 169.0 },
+        { age: 16, v: 170.0 }, { age: 16.5, v: 171.0 }, { age: 17, v: 171.5 }, { age: 17.5, v: 172.0 },
+        { age: 18, v: 172.0 }, { age: 18.5, v: 172.0 }
+      ],
+      "85th": [
+        { age: 0, v: 51.8 }, { age: 0.5, v: 69.8 }, { age: 1, v: 78.2 }, { age: 1.5, v: 85.1 },
+        { age: 2, v: 91.0 }, { age: 2.5, v: 95.5 }, { age: 3, v: 99.9 }, { age: 3.5, v: 104.0 },
+        { age: 4, v: 107.7 }, { age: 4.5, v: 111.2 }, { age: 5, v: 114.8 }, { age: 5.5, v: 117.7 },
+        { age: 6, v: 120.6 }, { age: 6.5, v: 123.6 }, { age: 7, v: 126.5 }, { age: 7.5, v: 129.4 },
+        { age: 8, v: 132.2 }, { age: 8.5, v: 135.0 }, { age: 9, v: 137.5 }, { age: 9.5, v: 140.0 },
+        { age: 10, v: 142.8 }, { age: 10.5, v: 145.5 }, { age: 11, v: 149.4 }, { age: 11.5, v: 153.2 },
+        { age: 12, v: 157.1 }, { age: 12.5, v: 161.0 }, { age: 13, v: 164.9 }, { age: 13.5, v: 168.7 },
+        { age: 14, v: 170.8 }, { age: 14.5, v: 172.8 }, { age: 15, v: 173.9 }, { age: 15.5, v: 175.0 },
+        { age: 16, v: 175.8 }, { age: 16.5, v: 176.5 }, { age: 17, v: 176.8 }, { age: 17.5, v: 177.0 },
+        { age: 18, v: 177.3 }, { age: 18.5, v: 177.5 }
+      ],
+      "97th": [
+        { age: 0, v: 53.4 }, { age: 0.5, v: 71.6 }, { age: 1, v: 80.2 }, { age: 1.5, v: 87.3 },
+        { age: 2, v: 93.6 }, { age: 2.5, v: 98.3 }, { age: 3, v: 103.1 }, { age: 3.5, v: 107.3 },
+        { age: 4, v: 111.2 }, { age: 4.5, v: 115.0 }, { age: 5, v: 118.7 }, { age: 5.5, v: 121.8 },
+        { age: 6, v: 124.9 }, { age: 6.5, v: 128.1 }, { age: 7, v: 131.2 }, { age: 7.5, v: 134.3 },
+        { age: 8, v: 137.2 }, { age: 8.5, v: 140.0 }, { age: 9, v: 142.5 }, { age: 9.5, v: 145.0 },
+        { age: 10, v: 148.3 }, { age: 10.5, v: 151.5 }, { age: 11, v: 156.1 }, { age: 11.5, v: 160.7 },
+        { age: 12, v: 164.4 }, { age: 12.5, v: 168.0 }, { age: 13, v: 171.0 }, { age: 13.5, v: 174.0 },
+        { age: 14, v: 176.0 }, { age: 14.5, v: 178.0 }, { age: 15, v: 179.0 }, { age: 15.5, v: 180.0 },
+        { age: 16, v: 180.5 }, { age: 16.5, v: 181.0 }, { age: 17, v: 181.5 }, { age: 17.5, v: 182.0 },
+        { age: 18, v: 182.0 }, { age: 18.5, v: 182.0 }
+      ]
+    }
+  },
+  female: {
+    height: {
+      "3rd": [
+        { age: 0, v: 45.6 }, { age: 0.5, v: 61.5 }, { age: 1, v: 69.2 }, { age: 1.5, v: 75.2 },
+        { age: 2, v: 80.3 }, { age: 2.5, v: 84 }, { age: 3, v: 87.9 }, { age: 3.5, v: 91.4 },
+        { age: 4, v: 94.6 }, { age: 4.5, v: 97.6 }, { age: 5, v: 100.5 }, { age: 5.5, v: 103 },
+        { age: 6, v: 105.5 }, { age: 6.5, v: 108.1 }, { age: 7, v: 110.6 }, { age: 7.5, v: 113.1 },
+        { age: 8, v: 115.7 }, { age: 8.5, v: 118.3 }, { age: 9, v: 120.7 }, { age: 9.5, v: 123 },
+        { age: 10, v: 125.8 }, { age: 10.5, v: 128.5 }, { age: 11, v: 131.8 }, { age: 11.5, v: 135 },
+        { age: 12, v: 137.9 }, { age: 12.5, v: 140.8 }, { age: 13, v: 143.2 }, { age: 13.5, v: 145.5 },
+        { age: 14, v: 146.8 }, { age: 14.5, v: 148 }, { age: 15, v: 148.5 }, { age: 15.5, v: 149 },
+        { age: 16, v: 149.5 }, { age: 16.5, v: 150 }, { age: 17, v: 150 }, { age: 17.5, v: 150 },
+        { age: 18, v: 150 }, { age: 18.5, v: 150 }
+      ],
+      "15th": [
+        { age: 0, v: 47.2 }, { age: 0.5, v: 63.4 }, { age: 1, v: 71.3 }, { age: 1.5, v: 77.7 },
+        { age: 2, v: 83.1 }, { age: 2.5, v: 87 }, { age: 3, v: 91.1 }, { age: 3.5, v: 94.8 },
+        { age: 4, v: 98.3 }, { age: 4.5, v: 101.5 }, { age: 5, v: 104.5 }, { age: 5.5, v: 107.1 },
+        { age: 6, v: 109.7 }, { age: 6.5, v: 112.3 }, { age: 7, v: 114.9 }, { age: 7.5, v: 117.5 },
+        { age: 8, v: 120.3 }, { age: 8.5, v: 123 }, { age: 9, v: 125.5 }, { age: 9.5, v: 128 },
+        { age: 10, v: 131 }, { age: 10.5, v: 134 }, { age: 11, v: 137.5 }, { age: 11.5, v: 141 },
+        { age: 12, v: 143.8 }, { age: 12.5, v: 146.5 }, { age: 13, v: 148.5 }, { age: 13.5, v: 150.5 },
+        { age: 14, v: 151.3 }, { age: 14.5, v: 152 }, { age: 15, v: 152.5 }, { age: 15.5, v: 153 },
+        { age: 16, v: 153.5 }, { age: 16.5, v: 154 }, { age: 17, v: 154 }, { age: 17.5, v: 154 },
+        { age: 18, v: 154 }, { age: 18.5, v: 154 }
+      ],
+      "50th": [
+        { age: 0, v: 49.1 }, { age: 0.5, v: 65.7 }, { age: 1, v: 74 }, { age: 1.5, v: 80.7 },
+        { age: 2, v: 86.4 }, { age: 2.5, v: 90.7 }, { age: 3, v: 95.1 }, { age: 3.5, v: 99 },
+        { age: 4, v: 102.7 }, { age: 4.5, v: 106.2 }, { age: 5, v: 109.4 }, { age: 5.5, v: 112.1 },
+        { age: 6, v: 114.8 }, { age: 6.5, v: 117.6 }, { age: 7, v: 120.3 }, { age: 7.5, v: 123 },
+        { age: 8, v: 125.8 }, { age: 8.5, v: 128.5 }, { age: 9, v: 131.3 }, { age: 9.5, v: 134 },
+        { age: 10, v: 137.5 }, { age: 10.5, v: 141 }, { age: 11, v: 144.5 }, { age: 11.5, v: 148 },
+        { age: 12, v: 150.5 }, { age: 12.5, v: 153 }, { age: 13, v: 154.5 }, { age: 13.5, v: 156 },
+        { age: 14, v: 156.8 }, { age: 14.5, v: 157.5 }, { age: 15, v: 157.9 }, { age: 15.5, v: 158.3 },
+        { age: 16, v: 158.7 }, { age: 16.5, v: 159 }, { age: 17, v: 159.3 }, { age: 17.5, v: 159.5 },
+        { age: 18, v: 159.5 }, { age: 18.5, v: 159.5 }
+      ],
+      "85th": [
+        { age: 0, v: 51.1 }, { age: 0.5, v: 68.1 }, { age: 1, v: 76.7 }, { age: 1.5, v: 83.7 },
+        { age: 2, v: 89.8 }, { age: 2.5, v: 94.3 }, { age: 3, v: 99 }, { age: 3.5, v: 103.3 },
+        { age: 4, v: 107.2 }, { age: 4.5, v: 110.9 }, { age: 5, v: 114.4 }, { age: 5.5, v: 117.1 },
+        { age: 6, v: 119.9 }, { age: 6.5, v: 122.6 }, { age: 7, v: 125.4 }, { age: 7.5, v: 128.1 },
+        { age: 8, v: 131.3 }, { age: 8.5, v: 134.5 }, { age: 9, v: 137.8 }, { age: 9.5, v: 141 },
+        { age: 10, v: 144.8 }, { age: 10.5, v: 148.5 }, { age: 11, v: 151.8 }, { age: 11.5, v: 155 },
+        { age: 12, v: 157 }, { age: 12.5, v: 159 }, { age: 13, v: 160.3 }, { age: 13.5, v: 161.5 },
+        { age: 14, v: 162.3 }, { age: 14.5, v: 163 }, { age: 15, v: 163.5 }, { age: 15.5, v: 164 },
+        { age: 16, v: 164.2 }, { age: 16.5, v: 164.4 }, { age: 17, v: 164.7 }, { age: 17.5, v: 165 },
+        { age: 18, v: 165 }, { age: 18.5, v: 165 }
+      ],
+      "97th": [
+        { age: 0, v: 52.7 }, { age: 0.5, v: 70 }, { age: 1, v: 78.9 }, { age: 1.5, v: 86.2 },
+        { age: 2, v: 92.5 }, { age: 2.5, v: 97.3 }, { age: 3, v: 102.2 }, { age: 3.5, v: 106.7 },
+        { age: 4, v: 110.8 }, { age: 4.5, v: 114.7 }, { age: 5, v: 118.4 }, { age: 5.5, v: 121.3 },
+        { age: 6, v: 124.2 }, { age: 6.5, v: 127.2 }, { age: 7, v: 130.1 }, { age: 7.5, v: 133 },
+        { age: 8, v: 136.5 }, { age: 8.5, v: 140 }, { age: 9, v: 143.5 }, { age: 9.5, v: 147 },
+        { age: 10, v: 150.8 }, { age: 10.5, v: 154.5 }, { age: 11, v: 157.3 }, { age: 11.5, v: 160 },
+        { age: 12, v: 161.8 }, { age: 12.5, v: 163.5 }, { age: 13, v: 164.8 }, { age: 13.5, v: 166 },
+        { age: 14, v: 167 }, { age: 14.5, v: 167.9 }, { age: 15, v: 168.2 }, { age: 15.5, v: 168.5 },
+        { age: 16, v: 168.8 }, { age: 16.5, v: 169 }, { age: 17, v: 169 }, { age: 17.5, v: 169 },
+        { age: 18, v: 169 }, { age: 18.5, v: 169 }
+      ]
+    }
+  }
 };
 
-// 女生身高常模 (2-18歲)
-const DATA_GIRL: GrowthData = {
-  2: { mean: 86.4, sd: 3.2 },
-  3: { mean: 95.1, sd: 3.6 },
-  4: { mean: 102.7, sd: 4.0 },
-  5: { mean: 109.4, sd: 4.4 },
-  6: { mean: 115.1, sd: 4.8 },
-  7: { mean: 120.8, sd: 5.2 },
-  8: { mean: 126.6, sd: 5.6 },
-  9: { mean: 132.5, sd: 6.0 },
-  10: { mean: 138.8, sd: 6.6 }, // 青春期較早
-  11: { mean: 145.5, sd: 7.0 },
-  12: { mean: 151.5, sd: 6.5 },
-  13: { mean: 155.8, sd: 5.8 },
-  14: { mean: 158.2, sd: 5.4 },
-  15: { mean: 159.5, sd: 5.1 },
-  16: { mean: 160.2, sd: 5.0 },
-  17: { mean: 160.6, sd: 4.9 },
-  18: { mean: 160.8, sd: 4.9 }  // 成年預估值
+// 計算輔助函式
+const linearInterpolation = (x: number, x0: number, y0: number, x1: number, y1: number) => {
+  if (x1 === x0) return y0;
+  return y0 + (x - x0) * (y1 - y0) / (x1 - x0);
+};
+
+const getValueFromCurve = (age: number, curveData: { age: number, v: number }[]) => {
+  if (age <= curveData[0].age) return curveData[0].v;
+  for (let i = 0; i < curveData.length - 1; i++) {
+    if (age >= curveData[i].age && age <= curveData[i + 1].age) {
+      return linearInterpolation(age, curveData[i].age, curveData[i].v, curveData[i + 1].age, curveData[i + 1].v);
+    }
+  }
+  return curveData[curveData.length - 1].v;
+};
+
+// 找出目前的百分位落點 (利用骨齡)
+const findHeightPercentile = (gender: 'male' | 'female', boneAge: number, currentHeight: number, data: any) => {
+  const percentiles = [3, 15, 50, 85, 97];
+  const percentileKeys = ["3rd", "15th", "50th", "85th", "97th"];
+  
+  // 找出該骨齡時，各百分位曲線對應的身高
+  const heightsAtBoneAge = percentileKeys.map(key => getValueFromCurve(boneAge, data[gender].height[key]));
+  
+  if (currentHeight <= heightsAtBoneAge[0]) return 3;
+  if (currentHeight >= heightsAtBoneAge[4]) return 97;
+  
+  for (let i = 0; i < heightsAtBoneAge.length - 1; i++) {
+    if (currentHeight >= heightsAtBoneAge[i] && currentHeight <= heightsAtBoneAge[i+1]) {
+      return linearInterpolation(currentHeight, heightsAtBoneAge[i], percentiles[i], heightsAtBoneAge[i+1], percentiles[i+1]);
+    }
+  }
+  return 50;
+};
+
+// 根據百分位預測成年身高
+const predictAdultHeight = (gender: 'male' | 'female', percentile: number, data: any) => {
+  const percentiles = [3, 15, 50, 85, 97];
+  const percentileKeys = ["3rd", "15th", "50th", "85th", "97th"];
+  
+  // 找出18歲時，各百分位曲線對應的身高
+  const heightsAt18 = percentileKeys.map(key => getValueFromCurve(18, data[gender].height[key]));
+  
+  if (percentile <= percentiles[0]) return heightsAt18[0];
+  if (percentile >= percentiles[4]) return heightsAt18[4];
+  
+  for (let i = 0; i < percentiles.length - 1; i++) {
+    if (percentile >= percentiles[i] && percentile <= percentiles[i+1]) {
+      return linearInterpolation(percentile, percentiles[i], heightsAt18[i], percentiles[i+1], heightsAt18[i+1]);
+    }
+  }
+  return heightsAt18[2];
 };
 
 type Gender = 'boy' | 'girl';
 
 export default function BoneAgeCalculator() {
-  // 輸入狀態
   const [gender, setGender] = useState<Gender>('boy');
   const [height, setHeight] = useState<string>('');
   const [boneAge, setBoneAge] = useState<string>('');
   const [fatherHeight, setFatherHeight] = useState<string>('');
   const [motherHeight, setMotherHeight] = useState<string>('');
 
-  // 計算結果狀態
   const [result, setResult] = useState<{
     targetHeight: number;
     targetMin: number;
     targetMax: number;
     predictedHeight: number;
-    currentPercentile: number; // 目前骨齡對應的身高百分位
-    positionInRange: number; // UI 顯示用
+    currentPercentile: number;
   } | null>(null);
-
-  // 線性內插函式：取得特定年齡(小數點)的 Mean 與 SD
-  const getInterpolatedParams = (age: number, data: GrowthData): GrowthParams => {
-    const ages = Object.keys(data).map(Number).sort((a, b) => a - b);
-    
-    // 邊界處理
-    if (age <= ages[0]) return data[ages[0]];
-    if (age >= ages[ages.length - 1]) return data[ages[ages.length - 1]];
-
-    // 找到區間 [lower, upper]
-    let lower = ages[0];
-    let upper = ages[ages.length - 1];
-    
-    for (let i = 0; i < ages.length - 1; i++) {
-      if (age >= ages[i] && age <= ages[i+1]) {
-        lower = ages[i];
-        upper = ages[i+1];
-        break;
-      }
-    }
-
-    const ratio = (age - lower) / (upper - lower);
-    const mean = data[lower].mean + (data[upper].mean - data[lower].mean) * ratio;
-    const sd = data[lower].sd + (data[upper].sd - data[lower].sd) * ratio;
-
-    return { mean, sd };
-  };
-
-  // Z-Score 轉 百分位 (近似值)
-  const zScoreToPercentile = (z: number) => {
-    if (z < -3) return 0.1;
-    if (z > 3) return 99.9;
-    return Math.round((1 / (1 + Math.exp(-1.7 * z))) * 100);
-  };
 
   const calculate = () => {
     const h = parseFloat(height);
@@ -117,52 +218,115 @@ export default function BoneAgeCalculator() {
       alert('請填寫完整資訊以進行計算');
       return;
     }
-
-    // 1. 計算遺傳身高 (Target Height)
-    let targetH = 0;
-    if (gender === 'boy') {
-      targetH = (fh + mh + 12) / 2;
-    } else {
-      targetH = (fh + mh - 12) / 2;
+    
+    if (ba > 18) {
+      alert('骨齡不可超過 18 歲');
+      return;
     }
 
-    // 2. 預測身高 (骨齡法)
-    const db = gender === 'boy' ? DATA_BOY : DATA_GIRL;
-    
-    // A. 取得「骨齡」當下的常模數據 (內插法)
-    const currentParams = getInterpolatedParams(ba, db);
-    
-    // B. 計算目前的 Z-Score (標準差分數) -> 這代表孩子在同骨齡人中的相對位置
-    // Z = (目前身高 - 常模平均) / 常模標準差
-    const zScore = (h - currentParams.mean) / currentParams.sd;
+    // 1. 計算遺傳身高
+    let targetH = 0;
+    if (gender === 'boy') {
+      targetH = (fh + mh + 13) / 2;
+    } else {
+      targetH = (fh + mh - 13) / 2;
+    }
 
-    // C. 取得「18歲」的常模數據
-    const adultParams = db[18];
+    // 2. 預測身高
+    const dataGender = gender === 'boy' ? 'male' : 'female';
+    const p = findHeightPercentile(dataGender, ba, h, growthData);
+    const predH = predictAdultHeight(dataGender, p, growthData);
 
-    // D. 預測成年身高 = 18歲平均 + (目前的 Z-Score * 18歲標準差)
-    // 這裡運用了「軌跡現象」(Tracking)，假設孩子會沿著同一條生長曲線長大
-    const predH = adultParams.mean + (zScore * adultParams.sd);
-
-    // E. 計算百分位與 UI 位置
-    const p = zScoreToPercentile(zScore);
-
-    // 計算預測身高在遺傳區間的位置 (用於 UI 顯示)
     const min = targetH - 7.5;
     const max = targetH + 7.5;
-    let pos = ((predH - min) / (max - min)) * 100;
-    
-    // UI 顯示限制 (避免跑到外面去)
-    if (pos < 5) pos = 5;
-    if (pos > 95) pos = 95;
 
     setResult({
       targetHeight: parseFloat(targetH.toFixed(1)),
       targetMin: parseFloat(min.toFixed(1)),
       targetMax: parseFloat(max.toFixed(1)),
       predictedHeight: parseFloat(predH.toFixed(1)),
-      currentPercentile: p,
-      positionInRange: pos
+      currentPercentile: Math.round(p),
     });
+  };
+
+  // [新增] 遺傳身高 SVG 圖表繪製函式
+  const renderGeneticChart = () => {
+    if (!result) return null;
+
+    const width = 300;
+    const height = 80;
+    const barHeight = 16;
+    const barY = 35;
+
+    // 計算視覺範圍: 讓遺傳區間 (±7.5) 佔據中間約 60%
+    // 我們設定圖表顯示範圍為 Target ± 12.5 cm
+    // 這樣 15cm 的區間會佔 15/25 = 60%
+    const chartMin = result.targetHeight - 12.5;
+    const chartMax = result.targetHeight + 12.5;
+    const range = chartMax - chartMin;
+
+    // 位置轉換函式
+    const getX = (val: number) => {
+      // 限制在範圍內，避免跑出SVG
+      const clampedVal = Math.max(chartMin, Math.min(chartMax, val));
+      return ((clampedVal - chartMin) / range) * width;
+    };
+
+    const xTarget = getX(result.targetHeight);
+    const xMin = getX(result.targetMin);
+    const xMax = getX(result.targetMax);
+    const xPred = getX(result.predictedHeight);
+
+    return (
+      <svg width="100%" height={height} viewBox={`0 0 ${width} ${height}`} className="overflow-visible">
+        <defs>
+          {/* 定義漸層：紅(低) -> 黃 -> 綠(區間) -> 黃 -> 紅(高) */}
+          <linearGradient id="geneticGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#ef4444" />
+            <stop offset="25%" stopColor="#eab308" />
+            <stop offset="35%" stopColor="#22c55e" />
+            <stop offset="65%" stopColor="#22c55e" />
+            <stop offset="75%" stopColor="#eab308" />
+            <stop offset="100%" stopColor="#ef4444" />
+          </linearGradient>
+        </defs>
+
+        {/* 1. 背景軌道 */}
+        <rect x="0" y={barY} width={width} height={barHeight} rx={barHeight/2} fill="url(#geneticGradient)" opacity="0.8" />
+
+        {/* 2. 遺傳區間標示 (白色虛線區塊) */}
+        {/* 下限線 */}
+        <line x1={xMin} y1={barY-5} x2={xMin} y2={barY+barHeight+5} stroke="white" strokeWidth="1.5" />
+        <text x={xMin} y={barY+barHeight+15} fontSize="10" fill="#94a3b8" textAnchor="middle">下限 {result.targetMin}</text>
+        
+        {/* 上限線 */}
+        <line x1={xMax} y1={barY-5} x2={xMax} y2={barY+barHeight+5} stroke="white" strokeWidth="1.5" />
+        <text x={xMax} y={barY+barHeight+15} fontSize="10" fill="#94a3b8" textAnchor="middle">上限 {result.targetMax}</text>
+
+        {/* 中位數 (虛線) */}
+        <line x1={xTarget} y1={barY} x2={xTarget} y2={barY+barHeight} stroke="white" strokeWidth="1" strokeDasharray="3 3" opacity="0.7" />
+        <text x={xTarget} y={barY-8} fontSize="10" fill="#22d3ee" textAnchor="middle" fontWeight="bold">中位數 {result.targetHeight}</text>
+
+        {/* 3. 預測落點指標 (動態) */}
+        <g transform={`translate(${xPred}, ${barY + barHeight/2})`}>
+           {/* 外光暈 */}
+           <circle r="8" fill="#f59e0b" opacity="0.4">
+             <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite" />
+           </circle>
+           {/* 實心點 */}
+           <circle r="6" fill="#ffffff" stroke="#f59e0b" strokeWidth="2.5" />
+           
+           {/* 數值 Bubble */}
+           <g transform="translate(0, -26)">
+              <rect x="-30" y="-18" width="60" height="20" rx="6" fill="#f59e0b" />
+              <text x="0" y="-4" fontSize="11" fontWeight="bold" fill="white" textAnchor="middle">
+                 預測 {result.predictedHeight}
+              </text>
+              <path d="M-5,2 L5,2 L0,7 Z" fill="#f59e0b" />
+           </g>
+        </g>
+      </svg>
+    );
   };
 
   return (
@@ -229,11 +393,10 @@ export default function BoneAgeCalculator() {
                 />
               </div>
               <div className="group">
-  <label className="block text-sm font-bold text-slate-300 mb-2 group-focus-within:text-[#22d3ee] transition-colors">
-    骨齡 (歲)
-    {/* 移除 block 與 sm:inline，保留 ml-1 以維持間距 */}
-    <span className="text-xs font-normal text-slate-500 ml-1">醫師判讀</span>
-  </label>
+                <label className="block text-sm font-bold text-slate-300 mb-2 group-focus-within:text-[#22d3ee] transition-colors">
+                    骨齡 (歲)
+                    <span className="text-xs font-normal text-slate-500 ml-1">醫師判讀</span>
+                </label>
                 <input
                   type="number"
                   step="0.5"
@@ -316,42 +479,21 @@ export default function BoneAgeCalculator() {
                   </div>
                 </div>
 
-                {/* 2. 視覺化遺傳區間圖表 */}
+                {/* 2. 視覺化遺傳區間圖表 (使用新的 SVG 長條圖樣式) */}
                 <div className="bg-slate-700 rounded-2xl p-6 shadow-sm border border-slate-600">
                   <div className="flex justify-between items-end mb-4">
                     <h4 className="font-bold text-slate-200">遺傳身高 vs 骨齡預測</h4>
-                    <span className="text-sm font-medium text-[#22d3ee]">
-                        遺傳區間: {result.targetMin} ~ {result.targetMax} cm
-                    </span>
                   </div>
                   
-                  {/* 圖表軌道 */}
-                  <div className="relative h-12 bg-slate-800 rounded-full w-full mt-2 border border-slate-600 overflow-hidden">
-                    {/* 遺傳範圍 (深綠色透明背景) */}
-                    <div className="absolute top-0 bottom-0 left-[20%] right-[20%] bg-teal-900/50 border-x-2 border-teal-700/50 flex items-center justify-center">
-                        <span className="text-xs font-bold text-teal-300 hidden md:block">遺傳潛力</span>
-                    </div>
-                    
-                    {/* 遺傳中位數標記 */}
-                    <div className="absolute top-0 bottom-0 left-1/2 w-0.5 bg-slate-600 border-dashed border-l border-slate-500"></div>
-
-                    {/* 預測落點指標 (動態位置) */}
-                    <div 
-                        className="absolute top-1/2 -translate-y-1/2 transition-all duration-1000 ease-out flex flex-col items-center z-20"
-                        style={{ left: `${result.positionInRange}%` }}
-                    >
-                        <div className="w-4 h-4 bg-[#f59e0b] border-2 border-slate-800 rounded-full shadow-md z-10 relative">
-                            <div className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full animate-ping"></div>
-                        </div>
-                        <div className="mt-1 px-2 py-0.5 bg-[#f59e0b] text-white text-[10px] font-bold rounded-full whitespace-nowrap shadow-sm">
-                            預測 {result.predictedHeight}
-                        </div>
-                    </div>
+                  {/* [修改] 呼叫新的 SVG 圖表函式 */}
+                  <div className="mt-2">
+                     {renderGeneticChart()}
                   </div>
+                  
+                  {/* 圖表下方的輔助說明文字，配合新的 SVG 排版 */}
                   <div className="flex justify-between text-xs text-slate-400 mt-2 font-medium px-2">
-                    <span>偏低</span>
-                    <span>遺傳中位數 {result.targetHeight}</span>
-                    <span>偏高</span>
+                    <span>偏低 (黃/紅區)</span>
+                    <span>偏高 (黃/紅區)</span>
                   </div>
                 </div>
 

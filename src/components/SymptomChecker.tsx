@@ -124,71 +124,71 @@ export default function SymptomChecker() {
   return (
     <div className="w-full max-w-3xl mx-auto transition-all duration-300">
       
-      {/* 輸入區塊 */}
-      <form 
-        ref={formRef}
-        onClick={() => {
-            setIsExpanded(true);
-            const textarea = formRef.current?.querySelector('textarea');
-            if (textarea) textarea.focus();
-        }}
-        onSubmit={(e) => {
-            e.preventDefault(); 
-            handleManualSubmit();
-        }} 
-        className={`relative group bg-slate-800 border transition-all duration-300 ease-in-out
-          ${isExpanded 
-            ? 'rounded-2xl border-cyan-500 shadow-[0_0_20px_rgba(34,211,238,0.15)]' 
-            : 'rounded-full border-slate-600 hover:border-cyan-400/50 hover:shadow-lg'
-          }`}
+  {/* 輸入區塊 */}
+<form 
+  ref={formRef}
+  onClick={() => {
+      setIsExpanded(true);
+      const textarea = formRef.current?.querySelector('textarea');
+      if (textarea) textarea.focus();
+  }}
+  onSubmit={(e) => {
+      e.preventDefault(); 
+      handleManualSubmit();
+  }} 
+  className={`relative group bg-slate-800 border-2 transition-all duration-300 ease-in-out
+    ${isExpanded 
+      ? 'rounded-2xl border-cyan-400 shadow-[0_0_25px_rgba(34,211,238,0.3)]' 
+      : 'rounded-full border-cyan-400/70 shadow-[0_0_10px_rgba(34,211,238,0.2)] hover:border-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]'
+    }`}
+>
+  {/* 修改處：移除了 opacity 的判斷，並加入了 drop-shadow 讓機器人更亮一點 */}
+  <div className="absolute left-4 top-4 text-cyan-400 pointer-events-none z-10 drop-shadow-[0_0_5px_rgba(34,211,238,0.8)]">
+    <i className={`fa-solid ${loading ? 'fa-spinner fa-spin' : 'fa-robot'} text-xl`}></i>
+  </div>
+
+  <textarea
+    value={input}
+    onFocus={() => setIsExpanded(true)}
+    onChange={(e) => setInput(e.target.value)}
+    onKeyDown={(e) => {
+      if (e.key === 'Enter' && !e.shiftKey && !e.nativeEvent.isComposing) {
+        e.preventDefault();
+        if (!loading && input.trim()) {
+          handleManualSubmit();
+        }
+      }
+    }}
+    placeholder={isExpanded ? "請清楚輸入症狀（例如：膝蓋內側疼痛，跑步時候加劇）..." : "AI 症狀分析 (點擊輸入)"}
+    
+    className={`w-full bg-transparent text-slate-200 placeholder-slate-400 focus:outline-none resize-none py-4 pl-12 leading-relaxed transition-all duration-300 relative z-0
+      ${isExpanded 
+          ? 'h-40 pr-4 pb-14 overflow-y-auto whitespace-pre-wrap'
+          : 'h-14 pr-12 overflow-hidden whitespace-nowrap'
+      }`}
+  />
+
+  <div className={`absolute right-2 z-20 transition-all duration-300 
+      ${isExpanded ? 'bottom-3 right-3' : 'top-2'}`}
+  >
+      <button
+      type="button" 
+      onClick={(e) => {
+          e.stopPropagation(); 
+          handleManualSubmit(); 
+      }}
+      disabled={loading || !input.trim()}
+      className={`bg-cyan-600 hover:bg-cyan-500 text-white font-medium transition-all flex items-center justify-center shadow-lg
+          ${isExpanded ? 'px-6 py-2 rounded-lg text-sm' : 'w-10 h-10 rounded-full'}`}
       >
-        <div className={`absolute left-4 top-4 text-cyan-400 transition-opacity duration-300 pointer-events-none z-10 ${isExpanded ? 'opacity-100' : 'opacity-70'}`}>
-          <i className={`fa-solid ${loading ? 'fa-spinner fa-spin' : 'fa-robot'} text-xl`}></i>
-        </div>
-
-        <textarea
-          value={input}
-          onFocus={() => setIsExpanded(true)}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter' && !e.shiftKey && !e.nativeEvent.isComposing) {
-              e.preventDefault();
-              if (!loading && input.trim()) {
-                handleManualSubmit();
-              }
-            }
-          }}
-          placeholder={isExpanded ? "請清楚輸入症狀（例如：膝蓋內側疼痛，跑步時候加劇）..." : "AI 症狀分析 (點擊輸入)"}
-          
-          className={`w-full bg-transparent text-slate-200 placeholder-slate-400 focus:outline-none resize-none py-4 pl-12 leading-relaxed transition-all duration-300 relative z-0
-            ${isExpanded 
-                ? 'h-40 pr-4 pb-14 overflow-y-auto whitespace-pre-wrap'
-                : 'h-14 pr-12 overflow-hidden whitespace-nowrap'
-            }`}
-        />
-
-        <div className={`absolute right-2 z-20 transition-all duration-300 
-            ${isExpanded ? 'bottom-3 right-3' : 'top-2'}`}
-        >
-            <button
-            type="button" 
-            onClick={(e) => {
-                e.stopPropagation(); 
-                handleManualSubmit(); 
-            }}
-            disabled={loading || !input.trim()}
-            className={`bg-cyan-600 hover:bg-cyan-500 text-white font-medium transition-all flex items-center justify-center shadow-lg
-                ${isExpanded ? 'px-6 py-2 rounded-lg text-sm' : 'w-10 h-10 rounded-full'}`}
-            >
-            {isExpanded ? (
-                <>分析 <i className="fa-solid fa-paper-plane ml-2"></i></>
-            ) : (
-                <i className="fa-solid fa-magnifying-glass"></i>
-            )}
-            </button>
-        </div>
-      </form>
-
+      {isExpanded ? (
+        <>分析 <i className="fa-solid fa-paper-plane ml-2"></i></>
+      ) : (
+        <i className="fa-solid fa-magnifying-glass"></i>
+      )}
+      </button>
+  </div>
+</form>
       {/* 結果顯示區 */}
       {result && (
         <div className="mt-6 animate-in fade-in slide-in-from-top-4 duration-500">

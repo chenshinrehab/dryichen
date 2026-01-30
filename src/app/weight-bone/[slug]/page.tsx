@@ -264,6 +264,17 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                                     <span>骨齡與遺傳身高預測</span>
                                     <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
                                 </Link>
+
+                                  {/* 營養 (青綠色漸層) */}
+                                   <Link 
+                                    href="/weight-bone/nutrition" 
+                                    className="group relative inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-600 to-teal-500 rounded-full text-white font-bold shadow-lg shadow-teal-500/20 hover:shadow-teal-500/40 hover:-translate-y-1 transition-all duration-300"
+                                >
+                                    <span className="absolute inset-0 bg-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                    <i className="fa-solid fa-chart-line text-lg group-hover:animate-pulse"></i>
+                                    <span>兒童長高營養指南</span>
+                                    <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
+                                </Link>
                             </>
                         )}
                     </div>

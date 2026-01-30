@@ -62,6 +62,7 @@ export default function Navigation() {
             { name: '減重自我評估計算機', path: '/weight-bone/BMI' },
             { name: '兒童生長發育評估儀', path: '/weight-bone/child' },
             { name: '骨齡與遺傳身高預測', path: '/weight-bone/calculator' },
+            { name: '兒童長高營養指南', path: '/weight-bone/nutrition' },
         ]
     },
     { 

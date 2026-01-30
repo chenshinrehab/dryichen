@@ -3,51 +3,116 @@
 import React, { useState, useMemo } from 'react';
 
 // =====================================================================
-// 台灣兒童生長曲線數據庫 (Taiwan 2010 Growth Charts Approximation)
-// 參考來源: Chen W & Chang MH. Pediatr Neonatol 2010
-// 數據結構: 年齡(歲): [3rd, 15th, 50th, 85th, 97th]
+// 台灣兒童生長曲線數據庫
+// Height: Updated to 0.5-year intervals (High Precision)
+// Weight: Integers filled via linear interpolation (Consistent Density)
 // =====================================================================
 
 type GrowthTable = { [age: number]: number[] };
 
-// 簡化的數據採樣點 (0, 0.5, 1, ... 18歲)
-// 數值經人工校正以符合台灣 2010 曲線趨勢
+// [資料區] 身高：0.5 歲間隔精細版
 const DATA_BOY_HEIGHT: GrowthTable = {
   0: [46.3, 47.9, 49.9, 51.8, 53.4],
-  1: [71.3, 73.4, 75.7, 78.1, 79.8],
-  2: [81.8, 84.8, 87.8, 90.9, 93.2],
-  3: [89.7, 92.9, 96.1, 99.4, 102.3],
-  5: [102.5, 106.2, 110.0, 113.8, 117.2],
-  7: [114.6, 118.0, 121.7, 125.4, 129.5],
-  10: [129.0, 133.5, 137.8, 142.5, 147.5],
-  12: [139.0, 144.0, 149.0, 155.0, 161.0], // 進入青春期
-  15: [158.0, 163.5, 169.0, 174.0, 179.0],
-  18: [162.0, 166.0, 172.0, 177.0, 182.0]  // 台灣男生18歲中位數約172
+  0.5: [63.6, 65.4, 67.6, 69.8, 71.6],
+  1: [71.3, 73.3, 75.7, 78.2, 80.2],
+  1.5: [77.2, 79.5, 82.3, 85.1, 87.3],
+  2: [82.1, 84.6, 87.8, 91.0, 93.6],
+  2.5: [85.5, 88.4, 91.9, 95.5, 98.3],
+  3: [89.1, 92.2, 96.1, 99.9, 103.1],
+  3.5: [92.4, 95.7, 99.9, 104.0, 107.3],
+  4: [95.4, 99.0, 103.5, 107.7, 111.2],
+  4.5: [98.4, 102.1, 106.7, 111.2, 115.0],
+  5: [101.2, 105.2, 110.0, 114.8, 118.7],
+  5.5: [103.9, 107.9, 112.8, 117.7, 121.8],
+  6: [106.5, 110.5, 115.6, 120.6, 124.9],
+  6.5: [109.2, 113.2, 118.4, 123.6, 128.1],
+  7: [111.8, 115.8, 121.2, 126.5, 131.2],
+  7.5: [114.5, 118.5, 124.0, 129.4, 134.3],
+  8: [117.0, 121.3, 126.8, 132.2, 137.2],
+  8.5: [119.5, 124.0, 129.5, 135.0, 140.0],
+  9: [121.8, 126.0, 131.8, 137.5, 142.5],
+  9.5: [124.0, 128.0, 134.0, 140.0, 145.0],
+  10: [126.0, 130.5, 136.5, 142.8, 148.3],
+  10.5: [128.0, 133.0, 139.0, 145.5, 151.5],
+  11: [130.5, 135.6, 142.0, 149.4, 156.1],
+  11.5: [133.0, 138.1, 145.0, 153.2, 160.7],
+  12: [135.6, 141.1, 148.8, 157.1, 164.4],
+  12.5: [138.2, 144.0, 152.5, 161.0, 168.0],
+  13: [141.9, 148.5, 156.9, 164.9, 171.0],
+  13.5: [145.5, 153.0, 161.2, 168.7, 174.0],
+  14: [149.3, 156.3, 163.7, 170.8, 176.0],
+  14.5: [153.0, 159.6, 166.2, 172.8, 178.0],
+  15: [155.5, 161.3, 167.6, 173.9, 179.0],
+  15.5: [158.0, 163.0, 169.0, 175.0, 180.0],
+  16: [159.3, 164.0, 170.0, 175.8, 180.5],
+  16.5: [160.5, 165.0, 171.0, 176.5, 181.0],
+  17: [160.9, 165.5, 171.5, 176.8, 181.5],
+  17.5: [161.0, 166.0, 172.0, 177.0, 182.0],
+  18: [161.5, 166.0, 172.0, 177.3, 182.0],
+  18.5: [162.0, 166.0, 172.0, 177.5, 182.0]
 };
 
 const DATA_GIRL_HEIGHT: GrowthTable = {
-  0: [45.6, 47.3, 49.1, 51.0, 52.7],
-  1: [69.0, 71.3, 74.0, 76.6, 78.6],
-  2: [80.3, 83.2, 86.4, 89.6, 92.2],
-  3: [88.5, 91.8, 95.1, 98.6, 101.4],
-  5: [101.8, 105.5, 109.4, 113.4, 116.8],
-  7: [113.8, 117.2, 120.8, 124.6, 128.5],
-  10: [129.2, 133.8, 138.6, 143.8, 148.5],
-  12: [141.5, 146.0, 151.0, 156.0, 160.5],
-  15: [150.0, 154.5, 159.5, 164.0, 167.5],
-  18: [151.0, 155.0, 160.0, 165.0, 169.0] // 台灣女生18歲中位數約160
+  0: [45.6, 47.2, 49.1, 51.1, 52.7],
+  0.5: [61.5, 63.4, 65.7, 68.1, 70.0],
+  1: [69.2, 71.3, 74.0, 76.7, 78.9],
+  1.5: [75.2, 77.7, 80.7, 83.7, 86.2],
+  2: [80.3, 83.1, 86.4, 89.8, 92.5],
+  2.5: [84.0, 87.0, 90.7, 94.3, 97.3],
+  3: [87.9, 91.1, 95.1, 99.0, 102.2],
+  3.5: [91.4, 94.8, 99.0, 103.3, 106.7],
+  4: [94.6, 98.3, 102.7, 107.2, 110.8],
+  4.5: [97.6, 101.5, 106.2, 110.9, 114.7],
+  5: [100.5, 104.5, 109.4, 114.4, 118.4],
+  5.5: [103.0, 107.1, 112.1, 117.1, 121.3],
+  6: [105.5, 109.7, 114.8, 119.9, 124.2],
+  6.5: [108.1, 112.3, 117.6, 122.6, 127.2],
+  7: [110.6, 114.9, 120.3, 125.4, 130.1],
+  7.5: [113.1, 117.5, 123.0, 128.1, 133.0],
+  8: [115.7, 120.3, 125.8, 131.3, 136.5],
+  8.5: [118.3, 123.0, 128.5, 134.5, 140.0],
+  9: [120.7, 125.5, 131.3, 137.8, 143.5],
+  9.5: [123.0, 128.0, 134.0, 141.0, 147.0],
+  10: [125.8, 131.0, 137.5, 144.8, 150.8],
+  10.5: [128.5, 134.0, 141.0, 148.5, 154.5],
+  11: [131.8, 137.5, 144.5, 151.8, 157.3],
+  11.5: [135.0, 141.0, 148.0, 155.0, 160.0],
+  12: [137.9, 143.8, 150.5, 157.0, 161.8],
+  12.5: [140.8, 146.5, 153.0, 159.0, 163.5],
+  13: [143.2, 148.5, 154.5, 160.3, 164.8],
+  13.5: [145.5, 150.5, 156.0, 161.5, 166.0],
+  14: [146.8, 151.3, 156.8, 162.3, 167.0],
+  14.5: [148.0, 152.0, 157.5, 163.0, 167.9],
+  15: [148.5, 152.5, 157.9, 163.5, 168.2],
+  15.5: [149.0, 153.0, 158.3, 164.0, 168.5],
+  16: [149.5, 153.5, 158.7, 164.2, 168.8],
+  16.5: [150.0, 154.0, 159.0, 164.4, 169.0],
+  17: [150.0, 154.0, 159.3, 164.7, 169.0],
+  17.5: [150.0, 154.0, 159.5, 165.0, 169.0],
+  18: [150.0, 154.0, 159.5, 165.0, 169.0],
+  18.5: [150.0, 154.0, 159.5, 165.0, 169.0]
 };
 
+// [資料區] 體重：插值補齊整數年齡
 const DATA_BOY_WEIGHT: GrowthTable = {
   0: [2.5, 2.9, 3.3, 3.9, 4.4],
   1: [7.8, 8.6, 9.6, 10.8, 11.8],
   2: [9.8, 10.9, 12.2, 13.7, 15.0],
   3: [11.5, 12.8, 14.3, 16.2, 17.8],
+  4: [13.0, 14.5, 16.3, 18.6, 21.0],
   5: [14.6, 16.2, 18.3, 21.0, 24.2],
+  6: [16.5, 18.3, 20.6, 24.0, 28.3],
   7: [18.5, 20.5, 22.9, 27.0, 32.5],
-  10: [25.0, 28.0, 32.0, 40.0, 50.0], // 體重變異大
+  8: [20.6, 23.0, 25.9, 31.3, 38.3],
+  9: [22.8, 25.5, 29.0, 35.6, 44.1],
+  10: [25.0, 28.0, 32.0, 40.0, 50.0],
+  11: [28.0, 31.5, 36.5, 46.0, 57.5],
   12: [31.0, 35.0, 41.0, 52.0, 65.0],
+  13: [34.6, 39.3, 46.0, 57.3, 70.0],
+  14: [38.3, 43.6, 51.0, 62.6, 75.0],
   15: [42.0, 48.0, 56.0, 68.0, 80.0],
+  16: [44.6, 50.3, 58.3, 70.3, 82.6],
+  17: [47.3, 52.6, 60.6, 72.6, 85.3],
   18: [50.0, 55.0, 63.0, 75.0, 88.0]
 };
 
@@ -56,11 +121,20 @@ const DATA_GIRL_WEIGHT: GrowthTable = {
   1: [7.1, 7.9, 8.9, 10.1, 11.0],
   2: [9.2, 10.2, 11.5, 13.1, 14.5],
   3: [11.0, 12.2, 13.9, 15.8, 17.5],
+  4: [12.5, 13.9, 16.0, 18.5, 21.0],
   5: [14.0, 15.6, 18.2, 21.2, 24.5],
+  6: [15.7, 17.7, 20.3, 23.8, 27.7],
   7: [17.5, 19.8, 22.4, 26.5, 31.0],
+  8: [19.6, 22.2, 25.6, 31.0, 36.6],
+  9: [21.8, 24.6, 28.8, 35.5, 42.3],
   10: [24.0, 27.0, 32.0, 40.0, 48.0],
+  11: [28.0, 31.5, 37.0, 45.0, 54.0],
   12: [32.0, 36.0, 42.0, 50.0, 60.0],
+  13: [34.6, 39.0, 45.3, 53.3, 63.3],
+  14: [37.3, 42.0, 48.6, 56.6, 66.6],
   15: [40.0, 45.0, 52.0, 60.0, 70.0],
+  16: [40.6, 45.3, 52.6, 61.0, 70.6],
+  17: [41.3, 45.6, 53.3, 62.0, 71.3],
   18: [42.0, 46.0, 54.0, 63.0, 72.0]
 };
 
@@ -73,9 +147,10 @@ export default function GrowthAnalysisMRI() {
   const [height, setHeight] = useState<string>('');
   const [weight, setWeight] = useState<string>('');
 
-  // 線性插值函數 (取得該年齡的準確百分位數值)
+  // 1. 線性插值函數
   const interpolate = (age: number, table: GrowthTable, percentileIndex: number) => {
     const ages = Object.keys(table).map(Number).sort((a, b) => a - b);
+    
     if (age <= ages[0]) return table[ages[0]][percentileIndex];
     if (age >= ages[ages.length - 1]) return table[ages[ages.length - 1]][percentileIndex];
 
@@ -92,18 +167,19 @@ export default function GrowthAnalysisMRI() {
     const ratio = (age - lower) / (upper - lower);
     const valLower = table[lower][percentileIndex];
     const valUpper = table[upper][percentileIndex];
+    
     return valLower + (valUpper - valLower) * ratio;
   };
 
-  // 計算結果
+  // 2. 計算結果
   const result = useMemo(() => {
     const y = parseFloat(ageYear);
     const m = parseFloat(ageMonth || '0');
     const h = parseFloat(height);
     const w = parseFloat(weight);
     
-    if (!y && y !== 0) return null;
-    if (!h || !w) return null;
+    if (isNaN(y)) return null;
+    if (isNaN(h) || isNaN(w)) return null;
 
     const totalAge = y + m / 12;
     const hTable = gender === 'boy' ? DATA_BOY_HEIGHT : DATA_GIRL_HEIGHT;
@@ -137,48 +213,80 @@ export default function GrowthAnalysisMRI() {
     };
   }, [ageYear, ageMonth, height, weight, gender]);
 
-  // SVG 曲線繪製函數
-  const renderCurve = (type: 'h' | 'w', currentVal: number, range: number[], percentile: number) => {
-    // 繪圖參數
-    const width = 280;
-    const height = 120;
-    const padding = 20;
-    // Y軸範圍: 稍微擴大 3rd 和 97th
-    const minVal = range[0] * 0.9;
-    const maxVal = range[4] * 1.1;
-    const scaleY = (val: number) => height - padding - ((val - minVal) / (maxVal - minVal)) * (height - 2 * padding);
+  // 3. [修改] 水平長條圖繪製函式 (仿 BoneAgeCalculator 風格)
+  const renderPercentileBar = (type: 'h' | 'w', value: number, percentile: number) => {
+    const width = 300;
+    const height = 50;
+    const barHeight = 12;
+    const barY = 25; // Bar 的垂直位置
 
-    // 生成曲線路徑
+    // 計算指標位置 (限制在 2% ~ 98% 以免超出邊界)
+    const positionX = (Math.max(2, Math.min(98, percentile)) / 100) * width;
     
-    // 實際上有意義的是「落點」
-    // 我們畫五條橫線代表 97, 85, 50, 15, 3
-    const lines = [97, 85, 50, 15, 3].map((p, i) => {
-      const val = range[4-i]; 
-      const y = scaleY(val);
-      return (
-        <g key={i}>
-           <line x1="40" y1={y} x2={width} y2={y} stroke="#334155" strokeWidth="1" strokeDasharray="4 4" />
-           <text x="0" y={y+4} fontSize="10" fill="#64748b" textAnchor="start">{p}th</text>
-        </g>
-      );
-    });
-
-    // 孩子的落點
-    const cx = width * 0.7; // 固定 X 位置
-    const cy = scaleY(currentVal);
+    // 定義顏色
+    const mainColor = type === 'h' ? '#22d3ee' : '#f472b6'; // Cyan (Height) or Pink (Weight)
     
     return (
-      <svg width="100%" height={height} viewBox={`0 0 ${width} ${height}`}>
-        {lines}
-        {/* 連線到Y軸的指示線 */}
-        <line x1="40" y1={cy} x2={cx} y2={cy} stroke="#22d3ee" strokeWidth="1" opacity="0.5" />
-        {/* 落點 */}
-        <circle cx={cx} cy={cy} r="6" fill="#facc15" stroke="white" strokeWidth="2" />
-        <text x={cx} y={cy - 12} fontSize="12" fontWeight="bold" fill="#facc15" textAnchor="middle">
-          {currentVal} {type==='h'?'cm':'kg'}
-        </text>
-        {/* 趨勢箭頭 (裝飾) */}
-        <path d={`M${40},${scaleY(range[2])} Q${width/2},${scaleY(range[2])} ${width},${scaleY(range[2])}`} stroke="#0ea5e9" strokeWidth="2" fill="none" opacity="0.3" />
+      <svg width="100%" height={height} viewBox={`0 0 ${width} ${height}`} className="overflow-visible">
+        <defs>
+          {/* 定義漸層背景：紅(過低) -> 黃(偏低) -> 綠(正常) -> 黃(偏高) -> 紅(過高) */}
+          <linearGradient id="growthGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#ef4444" />   {/* <3rd */}
+            <stop offset="3%" stopColor="#ef4444" />
+            <stop offset="3%" stopColor="#eab308" />   {/* 3rd-15th */}
+            <stop offset="15%" stopColor="#eab308" />
+            <stop offset="15%" stopColor="#22c55e" />  {/* 15th-85th (正常) */}
+            <stop offset="85%" stopColor="#22c55e" />
+            <stop offset="85%" stopColor="#eab308" />  {/* 85th-97th */}
+            <stop offset="97%" stopColor="#eab308" />
+            <stop offset="97%" stopColor="#ef4444" />  {/* >97th */}
+            <stop offset="100%" stopColor="#ef4444" />
+          </linearGradient>
+        </defs>
+
+        {/* 1. 背景刻度線 (3, 15, 50, 85, 97) */}
+        {[3, 15, 50, 85, 97].map(p => (
+           <g key={p}>
+             <line 
+               x1={(p/100)*width} y1={barY - 8} 
+               x2={(p/100)*width} y2={barY + barHeight + 8} 
+               stroke="#475569" strokeWidth="1" strokeDasharray="2 2" 
+             />
+             <text 
+               x={(p/100)*width} y={barY + barHeight + 18} 
+               fontSize="9" fill="#94a3b8" textAnchor="middle"
+             >
+               {p}
+             </text>
+           </g>
+        ))}
+
+        {/* 2. 彩色長條 Bar */}
+        <rect 
+          x="0" y={barY} rx={barHeight/2} ry={barHeight/2}
+          width={width} height={barHeight} 
+          fill="url(#growthGradient)" opacity="0.8" 
+        />
+
+        {/* 3. 使用者落點指標 (三角形 + 圓點) */}
+        <g transform={`translate(${positionX}, ${barY + barHeight/2})`}>
+          {/* 外光暈動畫 */}
+          <circle r="8" fill={mainColor} opacity="0.3">
+             <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite" />
+          </circle>
+          {/* 中心實點 */}
+          <circle r="5" fill="#ffffff" stroke={mainColor} strokeWidth="2" />
+          
+          {/* 上方標籤 (Bubble) */}
+          <g transform="translate(0, -18)">
+             <rect x="-20" y="-14" width="40" height="16" rx="4" fill={mainColor} />
+             <text x="0" y="-2" fontSize="10" fontWeight="bold" fill="#1e293b" textAnchor="middle">
+               PR{percentile}
+             </text>
+             {/* 三角形箭頭指向下方 */}
+             <path d="M-4,2 L4,2 L0,6 Z" fill={mainColor} />
+          </g>
+        </g>
       </svg>
     );
   };
@@ -301,7 +409,7 @@ export default function GrowthAnalysisMRI() {
                         <span className="text-6xl">📏</span>
                     </div>
                     
-                    <div className="flex justify-between items-end mb-4 relative z-10">
+                    <div className="flex justify-between items-end mb-2 relative z-10">
                         <div>
                             <h3 className="text-[#22d3ee] font-bold text-lg flex items-center gap-2">
                                 身高百分位
@@ -319,9 +427,9 @@ export default function GrowthAnalysisMRI() {
                         </div>
                     </div>
                     
-                    {/* SVG 曲線圖 */}
-                    <div className="bg-slate-900/50 rounded-lg border border-slate-700/50 p-2">
-                        {renderCurve('h', parseFloat(height), result.hRange, result.hPercentile)}
+                    {/* [修改] 水平長條圖區塊 */}
+                    <div className="bg-slate-900/50 rounded-lg border border-slate-700/50 px-4 py-2 mt-2">
+                        {renderPercentileBar('h', parseFloat(height), result.hPercentile)}
                     </div>
                 </div>
 
@@ -331,7 +439,7 @@ export default function GrowthAnalysisMRI() {
                         <span className="text-6xl">⚖️</span>
                     </div>
 
-                    <div className="flex justify-between items-end mb-4 relative z-10">
+                    <div className="flex justify-between items-end mb-2 relative z-10">
                         <div>
                             <h3 className="text-[#f472b6] font-bold text-lg flex items-center gap-2">
                                 體重百分位
@@ -349,9 +457,9 @@ export default function GrowthAnalysisMRI() {
                         </div>
                     </div>
 
-                    {/* SVG 曲線圖 */}
-                    <div className="bg-slate-900/50 rounded-lg border border-slate-700/50 p-2">
-                         {renderCurve('w', parseFloat(weight), result.wRange, result.wPercentile)}
+                    {/* [修改] 水平長條圖區塊 */}
+                    <div className="bg-slate-900/50 rounded-lg border border-slate-700/50 px-4 py-2 mt-2">
+                          {renderPercentileBar('w', parseFloat(weight), result.wPercentile)}
                     </div>
                 </div>
 
