@@ -276,7 +276,7 @@ export default function Home() {
 
           {/* Section 2: 診所資訊 */}
           {/* ✨ 加入 animate-on-scroll 與 delay-200 */}
-          <section className="container mx-auto px-4 pb-4 animate-on-scroll delay-200">
+          <section className="container mx-auto px-4 pb-4 animate-on-scroll delay-80">
              <div className="max-w-6xl mx-auto w-full">
                <div className="flex items-center gap-3 mb-8">
                   <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
