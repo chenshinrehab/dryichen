@@ -49,6 +49,7 @@ export default function Navigation() {
             { name: '高能量雷射治療', path: '/treatments/high-intensity-laser' },
             { name: '玻尿酸注射', path: '/treatments/hyaluronic-acid' },
             { name: '肩關節擴張術', path: '/treatments/shoulder-dilation' },
+            { name: '超音波導引抽水', path: '/treatments/ultrasound-guided-aspiration' },
             { name: '類固醇注射', path: '/treatments/steroid-injection' },
             { name: '靜脈消炎止痛針', path: '/treatments/iv-pain-relief' },
         ]

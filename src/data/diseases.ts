@@ -7954,6 +7954,204 @@ export const diseaseCategories: DiseaseCategory[] = [
           }
         ]
       },
+      {
+        id: 'tennis-leg',
+        slug: 'tennis-leg',
+        lastModified: '2026-01-31',
+        title: '網球腿 (小腿肌肉撕裂)',
+        description: '打球時感覺小腿被踢了一下？聽到「啪」一聲後小腿劇痛腫脹？這不是筋膜炎，而是「網球腿」！這是一種小腿肌肉撕裂傷。宸新復健科運用高解析超音波區分診斷，提供血腫抽吸、PRP修復與震波治療，加速肌肉癒合。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有過這樣的經驗：在打籃球、羽球，或是快跑時，小腿肚突然感覺<strong>被重重踢了一腳</strong>（甚至回頭看是誰踢你，結果發現背後根本沒人）？接著聽到或是感覺到<strong>「啪」</strong>的一聲，小腿瞬間劇痛，無法快走或走樓梯</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">這就是典型的<strong>「網球腿」</strong>，醫學名稱為<strong>腓腸肌內側頭撕裂傷</strong>。這常被誤認為只是單純抽筋或拉傷，但其實是肌肉纖維斷裂！如果沒有妥善治療，容易留下疤痕組織導致長期慢性疼痛。在宸新復健科，我們使用<strong>高解析超音波鑑別診斷</strong>（排除阿基里斯腱斷裂），並透過<strong>超音波導引抽吸血腫</strong>與<strong>再生注射</strong>，大幅縮短恢復期。</p>
+      
+                 <p><img src="/images/diseases/ankle/tennis/b.jpg" alt="網球腿疼痛處" style="width: 50%; height: auto;"></p>
+      
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 到底是斷在哪裡？解剖小教室
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">小腿後側主要由兩層肌肉構成，網球腿主要發生在淺層肌肉：</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">腓腸肌 - 主要受害者：</strong> 
+                          這是小腿肚最凸起的那塊肌肉（蘿蔔腿的主角）。它跨越了膝關節與踝關節，負責爆發力的動作（跳躍、衝刺）。網球腿 90% 發生在<strong>腓腸肌內側頭</strong>與肌腱的交界處。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">比目魚肌：</strong> 
+                          位於腓腸肌深層，主要負責耐力與維持站姿。雖然也會拉傷，但通常症狀較輕微，不會有「啪」一聲的戲劇性斷裂感。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">蹠肌：</strong> 
+                          一條細長像麵條的肌肉，以前認為網球腿是這條肌肉斷裂，但現代醫學證實主要是腓腸肌的問題。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+    
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3 style="color: #f8fafc !important;">🔍 為什麼會斷？網球腿的常見成因</h3>
+<p style="color: #e2e8f0 !important;">網球腿不只發生在打網球，任何需要<strong>「急停、變向、瞬間衝刺」</strong>的運動都可能發生。這通常源於肌肉承受不住瞬間的巨大張力：</p>
+<ul style="color: #e2e8f0 !important;">
+    <li><strong>致命動作機制：</strong> 當<strong>「膝蓋伸直」</strong>準備發力，同時腳踝突然被迫<strong>「往上勾 (背屈)」</strong>時（例如：籃球搶籃板落地、羽球接殺球跨步、過馬路突然起跑），腓腸肌被過度拉伸又要用力收縮，就像拉到極限的橡皮筋突然斷裂。尤其是<strong>沒暖身或天氣冷</strong>的狀況，
+    就像是從冷凍庫拿出來的橡皮筋，更容易斷裂。</li>
+    <li><strong>週末運動員 ：</strong> 好發於 <strong>30-50 歲</strong>的中壯年族群。隨著年齡增長，肌肉與肌腱的彈性變差、含水量下降，如果平時少動、假日突然劇烈運動，受傷機率大增。</li>
+    <li><strong>肌肉緊繃與疲勞：</strong> 運動後半段肌肉疲勞，神經肌肉控制變差；或是平時久坐導致小腿後側筋膜長期<strong>縮短僵硬</strong>，都會增加撕裂風險。</li>
+</ul>
+      
+     
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新獨家治療策略：縮短跛腳的時間</h3>
+          <p style="color: #e2e8f0 !important;">網球腿如果只靠休息（RICE），恢復期可能長達 6-8 週。我們採取更積極的介入：</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 超音波檢查及導引血腫抽吸</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <strong>這是關鍵！</strong> 肌肉撕裂常伴隨<strong>大量內出血</strong>，形成血塊。血塊積在肌肉間隙會造成極大壓力與疼痛，且容易鈣化變成硬塊。
+                  <br>我們在超音波導引下，將積血抽出。患者常表示抽完的瞬間，脹痛感就少了一半。
+              </p>
+          </div>
+           <p><img src="/images/diseases/ankle/tennis/c.jpg" alt="網球腿超音波圖片" style="width: 60%; height: auto;"></p>
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 再生注射 (PRP) 與 震波治療</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong><a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>：</strong> 將生長因子注射到肌肉撕裂處，像「強力膠」一樣加速肌肉纖維黏合，減少疤痕組織生成。</li>
+                      <li><strong><a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波</a>：</strong> 在恢復後期使用，能軟化已經纖維化的疤痕組織，避免未來肌肉僵硬彈性變差。</li>
+                  </ul>
+              </p>
+          </div>
+    
+           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. <a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手治療與貼紮固定</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  經由治療師把周圍肌肉放鬆，還有搭配動態貼布，讓腓腸肌處於放鬆狀態，避免走路時拉扯傷口。
+              </p>
+          </div>
+        
+     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    
+          <h3 style="color: #f8fafc !important;">🍽️ 飲食禁忌：受傷了該吃什麼？不該吃什麼？</h3>
+          <p style="color: #e2e8f0 !important;">肌肉撕裂後會經歷「發炎期」與「修復期」。正確的飲食能加速組織癒合，錯誤的飲食則會讓發炎失控腫脹。</p>
+    
+          <div style="background-color: #fef2f2; padding: 1.5rem; border-left: 4px solid #ef4444; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #991b1b !important;">🚫 紅燈區：急性期 (前兩週) 盡量避免</h4>
+              <ul style="margin-top: 0.5rem; color: #7f1d1d !important;">
+                  <li><strong>酒精：</strong> 這是大忌！酒精會擴張血管加重出血與腫脹，並抑制肌肉蛋白合成，延緩修復。</li>
+                  <li><strong>辛辣與油炸食物：</strong> 麻辣鍋、鹹酥雞等高發炎食物，會讓患處紅腫熱痛更嚴重。</li>
+                  <li><strong>高糖飲食：</strong> 含糖飲料與甜點會促進身體發炎反應。</li>
+                  <li><strong>補品/活血藥酒：</strong> 在急性出血期（受傷前 3 天），千萬不要喝活血化瘀的藥酒，否則內出血會止不住，讓小腿腫得像大象腿。</li>
+              </ul>
+          </div>
+    
+           <div style="background-color: #f0fdf4; padding: 1.5rem; border-left: 4px solid #22c55e; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #166534 !important;">✅ 綠燈區：幫助肌肉修復</h4>
+              <ul style="margin-top: 0.5rem; color: #14532d !important;">
+                  <li><strong>優質蛋白質：</strong> 雞肉、魚肉、豆類。這是修補肌肉纖維的原料。</li>
+                  <li><strong>維生素 C：</strong> 芭樂、奇異果、柑橘。幫助膠原蛋白合成，強化肌腱癒合。</li>
+                  <li><strong>Omega-3 脂肪酸：</strong> 深海魚、亞麻仁油。天然的抗發炎劑。</li>
+                  <li><strong>鋅 (Zinc)：</strong> 牡蠣、牛肉、南瓜籽。促進組織修復。</li>
+              </ul>
+          </div>
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    
+          <h3 style="color: #f8fafc !important;">🏠 居家復健：從不痛開始</h3>
+           <p><img src="/images/diseases/ankle/tennis/d.jpg" alt="網球腿居家放鬆運動" style="width: 100%; height: auto;"></p>
+          <p style="color: #e2e8f0 !important;"><strong>注意：</strong> 急性期（前3-5天）請多休息、抬高患肢，不要急著拉筋！等到走路不痛了，再開始以下運動：</p>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">1. 坐姿毛巾牽引 (初期伸展)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  最溫和的伸展，由自己控制力道。
+                  <br>1. 坐在床上，腿伸直。
+                  <br>2. 用長毛巾套住腳掌前緣。
+                  <br>3. 雙手輕輕將腳板往身體方向拉，感覺小腿後側<strong>微微</strong>緊繃即可，不可有刺痛感。
+                  <br>4. 維持 15-30 秒，重複 3 次。
+              </p>
+          </div>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 站姿提踵訓練 (中期強化)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  重新建立小腿肌力，讓纖維排列整齊。
+                  <br>1. 扶著桌子站立，雙腳與肩同寬。
+                  <br>2. 慢慢墊起腳尖（提踵），感覺小腿用力。
+                  <br>3. <strong>關鍵：</strong> 放下的速度要非常慢（離心收縮），這是修復肌腱最有用的部分。
+                  <br>4. 如果單腳做太痛，先雙腳一起做。重複 10-15 下。
+              </p>
+          </div>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">3. 弓箭步伸展 (後期恢復)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  恢復完整的關節活動度。
+                  <br>1. 面對牆壁，雙手扶牆。
+                  <br>2. 患側腳在後，膝蓋伸直，腳跟踩死地板。
+                  <br>3. 前腳彎曲，身體重心前移，拉伸後腳小腿肚。
+                  <br>4. 維持 30 秒，重複 3 次。
+              </p>
+          </div>
+
+          <div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">4. 小腿筋膜放鬆 (滾筒/按摩球)</h4>
+    <p style="color: #e2e8f0 !important;">
+        針對受傷周圍緊繃的肌肉筋膜進行放鬆，減少對癒合處的張力。
+        <br>1. 坐在瑜珈墊上，雙腿伸直，將滾筒放在患側小腿肚下方。
+        <br>2. 雙手在身體後方撐地，將臀部微微抬起。
+        <br>3. 利用身體重量前後緩慢滾動，尋找痠痛點停留 30 秒。
+        <br>4. <strong>⚠️ 重要禁區：</strong>請針對「緊繃痠痛」的地方按壓即可，<strong style="color: #f87171 !important;">絕對避開</strong>撕裂傷最痛的那一點（特別是急性期有血腫時），以免加重出血。
+    </p>
+</div>
+    
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 感覺被踢一腳，不是抽筋騎士是撕裂傷！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">網球腿是肌肉「撕裂」，如果在此時去推拿按摩，會讓裂縫變大、出血更嚴重，導致嚴重的血腫與鈣化。正確的做法是儘快就醫，透過超音波確認撕裂程度。宸新復健科提供完整的影像診斷與修復計畫，幫您把斷掉的肌肉「黏」回來，重返球場！</p>
+              <p style="font-weight: bold; color: #059669 !important;">小腿劇痛腫脹？立即預約超音波檢查！</p>
+          </div>
+        `,
+        symptoms: [
+            '受傷瞬間感覺小腿被踢了一腳或被打到',
+            '聽到或感覺到小腿發出「啪」的一聲',
+            '小腿肚內側劇烈疼痛，無法腳跟著地走路',
+            '受傷2-3天後，腳踝或腳底出現瘀青',
+            '小腿腫脹，按壓小腿肚內側有明顯痛點'
+        ],
+        treatments: [
+            '高解析超音波鑑別診斷',
+            '超音波導引血腫抽吸',
+            '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法 (加速癒合)</a>🔍️',
+            '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波 (軟化疤痕)</a>🔍️',
+            '肌內效貼紮與足跟墊高'
+        ],
+        seoKeywords: [
+            '網球腿',
+            'Tennis Leg',
+            '小腿肌肉撕裂',
+            '腓腸肌拉傷',
+            '小腿被踢到的感覺',
+            '小腿瘀青',
+            'PRP注射',
+            '超音波檢查'
+        ],
+        seoDescription: '打球小腿劇痛像被踢到？這是網球腿(腓腸肌撕裂)！宸新復健科提供高解析超音波診斷，排除阿基里斯腱斷裂，運用血腫抽吸與PRP再生注射，加速小腿肌肉修復。',
+        images: [
+            { src: '/images/diseases/ankle/tennis/a.jpg', alt: '網球腿示意圖'  }
+        ]
+    },
 
       {
         id: 'gout-arthritis',

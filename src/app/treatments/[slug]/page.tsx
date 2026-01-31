@@ -57,7 +57,7 @@ export default function TreatmentDetailPage({ params }: PageProps) {
 
   // A. 抓取「成功案例」 (根據 Tags)
   // 這份資料會傳給 ArticleDetail，顯示在問答下方
-  const matchedCases = getRelatedCases(treatment.slug);
+  const matchedCases = getRelatedCases(treatment.tags);
 
   // ------------------
 
