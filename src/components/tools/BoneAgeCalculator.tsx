@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 
 // =====================================================================
-// 新版數據庫與計算邏輯
+// 新版數據庫與計算邏輯 (維持不變)
 // =====================================================================
 
 const growthData = {
@@ -137,7 +137,7 @@ const growthData = {
   }
 };
 
-// 計算輔助函式
+// ... (計算輔助函式維持不變)
 const linearInterpolation = (x: number, x0: number, y0: number, x1: number, y1: number) => {
   if (x1 === x0) return y0;
   return y0 + (x - x0) * (y1 - y0) / (x1 - x0);
@@ -153,12 +153,9 @@ const getValueFromCurve = (age: number, curveData: { age: number, v: number }[])
   return curveData[curveData.length - 1].v;
 };
 
-// 找出目前的百分位落點 (利用骨齡)
 const findHeightPercentile = (gender: 'male' | 'female', boneAge: number, currentHeight: number, data: any) => {
   const percentiles = [3, 15, 50, 85, 97];
   const percentileKeys = ["3rd", "15th", "50th", "85th", "97th"];
-  
-  // 找出該骨齡時，各百分位曲線對應的身高
   const heightsAtBoneAge = percentileKeys.map(key => getValueFromCurve(boneAge, data[gender].height[key]));
   
   if (currentHeight <= heightsAtBoneAge[0]) return 3;
@@ -172,12 +169,9 @@ const findHeightPercentile = (gender: 'male' | 'female', boneAge: number, curren
   return 50;
 };
 
-// 根據百分位預測成年身高
 const predictAdultHeight = (gender: 'male' | 'female', percentile: number, data: any) => {
   const percentiles = [3, 15, 50, 85, 97];
   const percentileKeys = ["3rd", "15th", "50th", "85th", "97th"];
-  
-  // 找出18歲時，各百分位曲線對應的身高
   const heightsAt18 = percentileKeys.map(key => getValueFromCurve(18, data[gender].height[key]));
   
   if (percentile <= percentiles[0]) return heightsAt18[0];
@@ -249,38 +243,28 @@ export default function BoneAgeCalculator() {
     });
   };
 
-  // [新增] 遺傳身高 SVG 圖表繪製函式
+  // 遺傳身高 SVG 圖表繪製函式 (維持不變)
   const renderGeneticChart = () => {
     if (!result) return null;
-
     const width = 300;
     const height = 80;
     const barHeight = 16;
     const barY = 35;
-
-    // 計算視覺範圍: 讓遺傳區間 (±7.5) 佔據中間約 60%
-    // 我們設定圖表顯示範圍為 Target ± 12.5 cm
-    // 這樣 15cm 的區間會佔 15/25 = 60%
     const chartMin = result.targetHeight - 12.5;
     const chartMax = result.targetHeight + 12.5;
     const range = chartMax - chartMin;
-
-    // 位置轉換函式
     const getX = (val: number) => {
-      // 限制在範圍內，避免跑出SVG
       const clampedVal = Math.max(chartMin, Math.min(chartMax, val));
       return ((clampedVal - chartMin) / range) * width;
     };
-
     const xTarget = getX(result.targetHeight);
     const xMin = getX(result.targetMin);
     const xMax = getX(result.targetMax);
     const xPred = getX(result.predictedHeight);
 
     return (
-      <svg width="100%" height={height} viewBox={`0 0 ${width} ${height}`} className="overflow-visible">
+      <svg width="100%" height={height} viewBox={`0 0 ${width} ${height}`} className="overflow-visible" aria-label="遺傳身高與預測身高比較圖表" role="img">
         <defs>
-          {/* 定義漸層：紅(低) -> 黃 -> 綠(區間) -> 黃 -> 紅(高) */}
           <linearGradient id="geneticGradient" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="#ef4444" />
             <stop offset="25%" stopColor="#eab308" />
@@ -290,38 +274,19 @@ export default function BoneAgeCalculator() {
             <stop offset="100%" stopColor="#ef4444" />
           </linearGradient>
         </defs>
-
-        {/* 1. 背景軌道 */}
         <rect x="0" y={barY} width={width} height={barHeight} rx={barHeight/2} fill="url(#geneticGradient)" opacity="0.8" />
-
-        {/* 2. 遺傳區間標示 (白色虛線區塊) */}
-        {/* 下限線 */}
         <line x1={xMin} y1={barY-5} x2={xMin} y2={barY+barHeight+5} stroke="white" strokeWidth="1.5" />
         <text x={xMin} y={barY+barHeight+15} fontSize="10" fill="#94a3b8" textAnchor="middle">下限 {result.targetMin}</text>
-        
-        {/* 上限線 */}
         <line x1={xMax} y1={barY-5} x2={xMax} y2={barY+barHeight+5} stroke="white" strokeWidth="1.5" />
         <text x={xMax} y={barY+barHeight+15} fontSize="10" fill="#94a3b8" textAnchor="middle">上限 {result.targetMax}</text>
-
-        {/* 中位數 (虛線) */}
         <line x1={xTarget} y1={barY} x2={xTarget} y2={barY+barHeight} stroke="white" strokeWidth="1" strokeDasharray="3 3" opacity="0.7" />
         <text x={xTarget} y={barY-8} fontSize="10" fill="#22d3ee" textAnchor="middle" fontWeight="bold">中位數 {result.targetHeight}</text>
-
-        {/* 3. 預測落點指標 (動態) */}
         <g transform={`translate(${xPred}, ${barY + barHeight/2})`}>
-           {/* 外光暈 */}
-           <circle r="8" fill="#f59e0b" opacity="0.4">
-             <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite" />
-           </circle>
-           {/* 實心點 */}
+           <circle r="8" fill="#f59e0b" opacity="0.4"><animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite" /></circle>
            <circle r="6" fill="#ffffff" stroke="#f59e0b" strokeWidth="2.5" />
-           
-           {/* 數值 Bubble */}
            <g transform="translate(0, -26)">
               <rect x="-30" y="-18" width="60" height="20" rx="6" fill="#f59e0b" />
-              <text x="0" y="-4" fontSize="11" fontWeight="bold" fill="white" textAnchor="middle">
-                 預測 {result.predictedHeight}
-              </text>
+              <text x="0" y="-4" fontSize="11" fontWeight="bold" fill="white" textAnchor="middle">預測 {result.predictedHeight}</text>
               <path d="M-5,2 L5,2 L0,7 Z" fill="#f59e0b" />
            </g>
         </g>
@@ -329,15 +294,40 @@ export default function BoneAgeCalculator() {
     );
   };
 
+  // === SEO 修改：JSON-LD 結構化資料 (定義此為一個軟體應用程式) ===
+  const softwareSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "骨齡與遺傳身高預測計算機",
+    "applicationCategory": "MedicalApplication", // 醫療應用
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "TWD"
+    },
+    "featureList": "依據骨齡預測成年身高, 計算父母遺傳身高區間, 台灣兒童生長常模比對",
+    "author": {
+        "@type": "Physician",
+        "name": "林羿辰醫師"
+    },
+    "description": "輸入骨齡、目前身高與父母身高，即可透過台灣兒童常模數據，精準計算遺傳身高區間與成年身高預測值。"
+  };
+  // ========================================================
+
   return (
-    <div className="max-w-5xl mx-auto p-6 md:p-10 bg-slate-800 rounded-3xl shadow-2xl border border-slate-700 my-10 font-sans text-slate-100">
+    // SEO 修改：使用 section 作為主要容器
+    <section aria-label="骨齡計算工具" className="max-w-5xl mx-auto p-6 md:p-10 bg-slate-800 rounded-3xl shadow-2xl border border-slate-700 my-10 font-sans text-slate-100">
       
+      {/* SEO 修改：注入 JSON-LD */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
+
       {/* 標題區 */}
       <div className="mb-10 border-l-8 border-[#22d3ee] pl-6 flex justify-between items-end">
         <div>
-          <h2 className="text-3xl font-bold text-white mb-2 tracking-tight">
+        <h1 className="text-3xl font-bold text-white mb-2 tracking-tight">
             骨齡與遺傳身高預測
-          </h2>
+          </h1>
           <p className="text-slate-400 text-lg">
             採用台灣最新兒童生長常模，透過骨齡大數據精準推算成年身高
           </p>
@@ -353,7 +343,7 @@ export default function BoneAgeCalculator() {
         <div className="lg:col-span-5 space-y-8">
           
           {/* 性別切換 */}
-          <div className="bg-slate-700 p-2 rounded-2xl flex relative border border-slate-600">
+          <div className="bg-slate-700 p-2 rounded-2xl flex relative border border-slate-600" role="group" aria-label="性別選擇">
             <button
               onClick={() => setGender('boy')}
               className={`flex-1 py-3 rounded-xl font-bold text-lg transition-all duration-300 flex items-center justify-center gap-2 ${
@@ -361,8 +351,9 @@ export default function BoneAgeCalculator() {
                   ? 'bg-[#0ea5e9]/20 text-[#38bdf8] border-2 border-[#0ea5e9]/50 shadow-md scale-[1.02]'
                   : 'text-slate-400 hover:text-slate-200 hover:bg-slate-600 border-2 border-transparent'
               }`}
+              aria-pressed={gender === 'boy'}
             >
-              <span className="text-2xl">👦</span> 男孩
+              <span className="text-2xl" role="img" aria-label="男孩">👦</span> 男孩
             </button>
             <button
               onClick={() => setGender('girl')}
@@ -371,8 +362,9 @@ export default function BoneAgeCalculator() {
                   ? 'bg-[#ec4899]/20 text-[#f472b6] border-2 border-[#ec4899]/50 shadow-md scale-[1.02]'
                   : 'text-slate-400 hover:text-slate-200 hover:bg-slate-600 border-2 border-transparent'
               }`}
+              aria-pressed={gender === 'girl'}
             >
-              <span className="text-2xl">👧</span> 女孩
+              <span className="text-2xl" role="img" aria-label="女孩">👧</span> 女孩
             </button>
           </div>
 
@@ -383,8 +375,10 @@ export default function BoneAgeCalculator() {
             
             <div className="grid grid-cols-2 gap-5">
               <div className="group">
-                <label className="block text-sm font-bold text-slate-300 mb-2 group-focus-within:text-[#22d3ee] transition-colors">目前身高 (cm)</label>
+                {/* SEO 修改：加入 htmlFor 綁定 id */}
+                <label htmlFor="current-height" className="block text-sm font-bold text-slate-300 mb-2 group-focus-within:text-[#22d3ee] transition-colors">目前身高 (cm)</label>
                 <input
+                  id="current-height"
                   type="number"
                   value={height}
                   onChange={(e) => setHeight(e.target.value)}
@@ -393,11 +387,12 @@ export default function BoneAgeCalculator() {
                 />
               </div>
               <div className="group">
-                <label className="block text-sm font-bold text-slate-300 mb-2 group-focus-within:text-[#22d3ee] transition-colors">
+                <label htmlFor="bone-age" className="block text-sm font-bold text-slate-300 mb-2 group-focus-within:text-[#22d3ee] transition-colors">
                     骨齡 (歲)
                     <span className="text-xs font-normal text-slate-500 ml-1">醫師判讀</span>
                 </label>
                 <input
+                  id="bone-age"
                   type="number"
                   step="0.5"
                   value={boneAge}
@@ -414,8 +409,9 @@ export default function BoneAgeCalculator() {
 
             <div className="grid grid-cols-2 gap-5">
               <div className="group">
-                <label className="block text-sm font-bold text-slate-300 mb-2 group-focus-within:text-[#22d3ee] transition-colors">父親身高 (cm)</label>
+                <label htmlFor="father-height" className="block text-sm font-bold text-slate-300 mb-2 group-focus-within:text-[#22d3ee] transition-colors">父親身高 (cm)</label>
                 <input
+                  id="father-height"
                   type="number"
                   value={fatherHeight}
                   onChange={(e) => setFatherHeight(e.target.value)}
@@ -424,8 +420,9 @@ export default function BoneAgeCalculator() {
                 />
               </div>
               <div className="group">
-                <label className="block text-sm font-bold text-slate-300 mb-2 group-focus-within:text-[#22d3ee] transition-colors">母親身高 (cm)</label>
+                <label htmlFor="mother-height" className="block text-sm font-bold text-slate-300 mb-2 group-focus-within:text-[#22d3ee] transition-colors">母親身高 (cm)</label>
                 <input
+                  id="mother-height"
                   type="number"
                   value={motherHeight}
                   onChange={(e) => setMotherHeight(e.target.value)}
@@ -440,12 +437,13 @@ export default function BoneAgeCalculator() {
             onClick={calculate}
             className="w-full py-4 mt-4 bg-gradient-to-r from-[#0891b2] to-[#22d3ee] hover:from-[#0e7490] hover:to-[#0891b2] text-white font-bold rounded-2xl shadow-lg shadow-cyan-500/30 transform active:scale-[0.98] transition-all text-xl flex items-center justify-center gap-2"
           >
-            <span>🚀</span> 開始分析預測
+            <span role="img" aria-label="火箭">🚀</span> 開始分析預測
           </button>
         </div>
 
         {/* 右側：結果顯示區 */}
-        <div className="lg:col-span-7">
+        {/* SEO 修改：使用 aria-live 讓螢幕閱讀器知道這裡內容會動態改變 */}
+        <div className="lg:col-span-7" aria-live="polite">
           <div className="h-full bg-slate-800/50 rounded-3xl p-6 md:p-8 border border-slate-700 relative overflow-hidden flex flex-col justify-center">
             
             {!result ? (
@@ -479,18 +477,16 @@ export default function BoneAgeCalculator() {
                   </div>
                 </div>
 
-                {/* 2. 視覺化遺傳區間圖表 (使用新的 SVG 長條圖樣式) */}
+                {/* 2. 視覺化遺傳區間圖表 */}
                 <div className="bg-slate-700 rounded-2xl p-6 shadow-sm border border-slate-600">
                   <div className="flex justify-between items-end mb-4">
                     <h4 className="font-bold text-slate-200">遺傳身高 vs 骨齡預測</h4>
                   </div>
                   
-                  {/* [修改] 呼叫新的 SVG 圖表函式 */}
                   <div className="mt-2">
-                     {renderGeneticChart()}
+                      {renderGeneticChart()}
                   </div>
                   
-                  {/* 圖表下方的輔助說明文字，配合新的 SVG 排版 */}
                   <div className="flex justify-between text-xs text-slate-400 mt-2 font-medium px-2">
                     <span>偏低 (黃/紅區)</span>
                     <span>偏高 (黃/紅區)</span>
@@ -498,7 +494,8 @@ export default function BoneAgeCalculator() {
                 </div>
 
                 {/* 3. 醫師評估 */}
-                <div className="bg-[#fffbeb] border-2 border-[#fbbf24] rounded-2xl p-6 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.2)]">
+                {/* SEO 修改：使用 article 包覆評論區塊，增加權重 */}
+                <article className="bg-[#fffbeb] border-2 border-[#fbbf24] rounded-2xl p-6 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.2)]">
                   <h4 className="text-[#b45309] font-bold text-lg mb-3 flex items-center">
                     <span className="bg-[#f59e0b] text-white w-6 h-6 rounded-full flex items-center justify-center text-sm mr-2 shadow-sm">!</span>
                     醫師初步評估
@@ -520,7 +517,7 @@ export default function BoneAgeCalculator() {
                       </p>
                     )}
                   </div>
-                </div>
+                </article>
 
                 <p className="text-center text-xs text-slate-500">
                   * 預測結果基於統計學常模，實際身高仍受後天環境、青春期啟動時間等因素影響。
@@ -529,12 +526,11 @@ export default function BoneAgeCalculator() {
               </div>
             )}
             
-            {/* 背景裝飾 */}
             <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-cyan-900/20 rounded-full blur-3xl pointer-events-none"></div>
             <div className="absolute top-10 -left-10 w-32 h-32 bg-blue-900/20 rounded-full blur-3xl pointer-events-none"></div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
