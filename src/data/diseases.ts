@@ -3102,7 +3102,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">治療必須分兩步走：先解決急性腫脹（滑囊炎），再修復受損組織（肌腱炎）。</p>
       
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 急性期：超音波導引抽吸與注射</h4>
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 急性期：<a href="/treatments/ultrasound-guided-aspiration" class="text-cyan-400 hover:underline">超音波導引抽吸與注射</a></h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
                   如果滑囊積水嚴重，我們會先用細針將積水抽出，解除壓力。接著注射微量消炎藥物，快速消除滑囊的紅腫熱痛，這通常能立即改善夜間睡眠品質。
               </p>
@@ -3214,7 +3214,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           '嚴重時手部無力，無法維持抬舉姿勢'
         ],
         treatments: [
-          '<a href="/treatments/steroid-injection" class="text-cyan-400 hover:underline">超音波導引滑囊積水抽吸與類固醇注射</a>🔍️',
+          '<a href="/treatments/ultrasound-guided-aspiration" class="text-cyan-400 hover:underline">超音波導引抽吸</a>🔍️與<a href="/treatments/steroid-injection" class="text-cyan-400 hover:underline">類固醇注射</a>🔍️',
           '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法 (肌腱修復)</a>🔍️',
           '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波 (針對鈣化)</a>🔍️',
           '<a href="/treatments/manual" class="text-cyan-400 hover:underline">關節鬆動術與肩胛穩定訓練</a>🔍️',
@@ -4262,7 +4262,151 @@ export const diseaseCategories: DiseaseCategory[] = [
             { src: '/images/diseases/elbow/golf/a.jpg', alt: '高爾夫球肘示意圖'
             }
           ]
-      }
+      },
+      {
+        id: 'ulnar-nerve-entrapment',
+        slug: 'ulnar-nerve-entrapment',
+        lastModified: '2026-02-01',
+        title: '尺神經壓迫 (肘隧道症候群)',
+        description: '講電話手就麻？睡覺起來小指跟無名指沒知覺？這不是血液循環不好，而是「尺神經」被壓到了！宸新復健科運用高解析超音波精準定位神經卡壓點，透過「神經解套注射」與神經滑動術，免開刀解除手肘麻痛與肌肉萎縮危機。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：趴在桌上午休，醒來發現<strong>小指和無名指</strong>麻到像有螞蟻在爬？或是講電話、滑手機久了，手肘內側覺得痠痠的，手指頭開始不聽使喚？嚴重時甚至發現手掌虎口處的肌肉好像<strong>「凹下去」</strong>了？</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">這些都是典型的<strong>「尺神經壓迫」</strong>症狀，臨床上最常見的就是<strong>「肘隧道症候群」</strong>，俗稱「手機肘」。這條神經就是我們撞到手肘會像觸電一樣痛的那條「麻筋」。在宸新復健科，我們不只做電療，更利用<strong>高解析神經超音波</strong>直接觀察神經是否腫脹變形，並運用<strong>神經解套注射</strong>將壓迫的組織撐開，從源頭釋放神經壓力，避免走上開刀這條路。</p>
+          <p><img src="/images/diseases/elbow/ulnar/b.jpg" alt="尺神經壓迫麻痛範圍" style="width: 80%; height: auto;"></p>
+      
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 神經卡在哪？兩個最危險的「塞車點」
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">尺神經從脖子一路延伸到手掌，沿途有兩個地方最容易被「卡住」：</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">手肘 - 肘隧道 (最常見)：</strong> 
+                          位於手肘內側的骨頭溝槽。當我們<strong>彎曲手肘</strong>超過 90 度時（如講電話、睡覺彎手），這裡的空間會變窄，神經受到的壓力會暴增 20 倍！就像水管被折起來一樣，神經傳導就會中斷。
+                      </div>
+                  </li>
+                    <p><img src="/images/diseases/elbow/ulnar/c.jpg" alt="手肘尺神經壓迫麻痛範圍" style="width: 45%; height: auto;"></p>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">手腕 - 蓋恩氏管：</strong> 
+                          位於手掌小指側根部。常見於<strong>自行車騎士</strong>（手握把手壓迫）或長期使用滑鼠壓著手腕的人。這裡壓迫通常只會手麻，手肘不會痛。
+                      </div>
+                  </li>
+                   <p><img src="/images/diseases/elbow/ulnar/d.jpg" alt="手腕尺神經壓迫麻痛範圍" style="width: 45%; height: auto;"></p>
+              </ul>
+          </div>
+      
+    
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🔍 為什麼會得病？你的壞習慣正在「謀殺」神經</h3>
+          <p style="color: #e2e8f0 !important;">尺神經非常敏感，以下行為是高風險因子：</p>
+          <ul style="color: #e2e8f0 !important;">
+              <li><strong>長時間彎曲手肘 (手機肘)：</strong> 這是現代人第一大主因！躺在床上舉著手機、講電話、趴睡當午安枕，這些動作都在虐待尺神經。</li>
+              <li><strong>手肘長期倚靠硬物：</strong> 辦公時手肘靠在桌緣、開車時手肘靠在窗框，直接壓迫神經。</li>
+              <li><strong>外傷後遺症：</strong> 小時候手肘骨折過，可能會導致手肘變形（外翻），隨著年紀增長，神經被拉扯而受損。</li>
+              <li><strong>三頭肌肥大：</strong> 健身族群若內側三頭肌練得太壯，有時會擠壓到神經。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新獨家治療策略：把空間還給神經</h3>
+          <p style="color: #e2e8f0 !important;">神經受壓迫久了會導致不可逆的肌肉萎縮（爪狀手）。因此，一旦出現持續麻木，必須積極治療。我們採取「減壓、修復、滑動」三部曲：</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 超音波導引神經解套注射 (Hydrodissection)</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  這是免開刀治療的首選！
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong>精準導航：</strong> 醫師利用超音波找到神經被周圍筋膜「勒住」的確切位置（通常神經在卡壓點近端會腫脹）。</li>
+                      <li><strong>液體刀剝離：</strong> 在超音波導引下，將低濃度葡萄糖水 (5% Dextrose) 或 <strong><a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 生長因子</a></strong> 注射到神經周圍，像氣囊一樣將壓迫的組織「撐開」，瞬間釋放壓力，並提供神經修復所需的養分。</li>
+                  </ul>
+              </p>
+          </div>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 物理治療與神經滑動術</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong><a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手治療</a>：</strong> 放鬆緊繃的屈腕肌群與三頭肌，減少對神經的夾擠。</li>
+                      <li><strong>神經鬆動術 (Nerve Flossing)：</strong> 治療師教導特定的動作，像用牙線清潔牙縫一樣，讓神經在組織間滑動，打破沾黏。</li>
+                  </ul>
+              </p>
+          </div>
+    
+           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 輔具固定與生活調整</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  如果在夜間睡覺時症狀最嚴重，我們會建議配戴<strong>「夜間副木」</strong>或特製護肘，強迫手肘保持伸直（約 45 度），避免睡夢中不自覺彎曲手肘壓迫神經。
+              </p>
+          </div>
+    
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+     <p><img src="/images/diseases/elbow/ulnar/e.jpg" alt="手腕尺神經壓迫居家運動" style="width: 100%; height: auto;"></p>
+          <h3 style="color: #f8fafc !important;">🏠 居家運動：幫神經做體操</h3>
+          <p style="color: #e2e8f0 !important;">這套動作稱為「神經滑動」，請輕柔操作，<strong>不要</strong>做到手麻，感覺微微拉扯即可。</p>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">1. 倒戴眼鏡 (OK 手勢)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  這是最經典的尺神經滑動動作。
+                  <br>1. 手指比出「OK」的手勢（拇指碰食指，其他三指朝上）。
+                  <br>2. 將手掌翻轉過來，像要拿眼鏡戴上一樣，把「OK」圈圈放到眼睛周圍（掌心朝臉）。
+                  <br>3. 過程中手肘抬高往外打開。
+                  <br>4. 感覺小指側有拉伸感，維持 2 秒就放鬆回來。重複 10 次。
+              </p>
+          </div>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 托盤式伸展</h4>
+              <p style="color: #e2e8f0 !important;">
+                  <br>1. 手臂往側邊平舉，手肘彎曲 90 度，手掌朝上（像服務生托盤子）。
+                  <br>2. 慢慢將手腕往外側下壓（手指向外指）。
+                  <br>3. 接著慢慢將手臂往伸直的方向移動，直到感覺手肘內側微緊。
+                  <br>4. 來回活動，不要停留太久。重複 10 次。
+              </p>
+          </div>
+    
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 肌肉一旦萎縮，就難救了！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">尺神經壓迫初期只是麻，但後期會造成手掌小肌肉萎縮（虎口凹陷、爪狀手），這時候即便開刀，握力也很難完全恢復。早期透過超音波診斷並進行神經解套注射，是目前公認最有效且免開刀的治療方式。別讓手機綁架了您的神經！</p>
+              <p style="font-weight: bold; color: #059669 !important;">小指發麻無力？立即預約神經超音波檢查！</p>
+          </div>
+        `,
+        symptoms: [
+          '小指與無名指（靠小指側）麻木或刺痛',
+          '手肘彎曲講電話時麻木感加劇',
+          '半夜或清晨被手麻醒',
+          '手握力變差，拿東西容易掉',
+        ],
+        treatments: [
+          '復健治療與神經修復藥(B12)',
+         '<a href="/treatments/prp" class="text-cyan-400 hover:underline">神經解套注射 (Hydrodissection)</a>🔍️',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">神經滑動術與徒手治療</a>🔍️',
+          '姿勢矯正 (避免長時間彎手)'
+        ],
+        seoKeywords: [
+          '尺神經壓迫',
+          '肘隧道症候群',
+          '手麻',
+          '小指麻',
+          '手機肘',
+          '神經解套注射',
+          'Cubital Tunnel Syndrome',
+          '物理治療'
+        ],
+        seoDescription: '小指無名指發麻、手肘內側痛？可能是尺神經壓迫(肘隧道症候群)。宸新復健科運用高解析超音波診斷，提供神經解套注射與物理治療，免開刀解決手麻與肌肉萎縮。',
+        images: [
+          { src: '/images/diseases/elbow/ulnar/a.jpg', alt: '尺神經壓迫麻痛區域' }
+        ]
+    }
+
     ]
   },
 
@@ -5005,7 +5149,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">很多人會說：「我去把水抽掉，結果過兩個禮拜又長出來了！」這是因為沒有處理導致滲漏的「破洞」（韌帶損傷）。宸新復健科採取三合一治療法：</p>
       
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 超音波導引抽吸</h4>
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. <a href="/treatments/ultrasound-guided-aspiration" class="text-cyan-400 hover:underline">超音波導引抽吸</a></h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
                   我們使用高解析度超音波，清楚看見囊腫與周圍神經血管的位置。
                   <ul style="margin-top: 0.5rem; color: #334155 !important;">
@@ -5088,7 +5232,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         treatments: [
           '止痛藥與復健治療',
-          '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引抽吸與韌帶增生療法</a>🔍️',
+          '<a href="/treatments/ultrasound-guided-aspiration" class="text-cyan-400 hover:underline">超音波導引抽吸</a>🔍️與<a href="/treatments/prp" class="text-cyan-400 hover:underline">韌帶增生療法</a>🔍️',
           '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手關節鬆動術</a>🔍️',
           '開刀取出'
         ],
@@ -5406,7 +5550,14 @@ export const diseaseCategories: DiseaseCategory[] = [
             </div>
        
             <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-                <h4 style="margin-top: 0; color: #0e7490 !important;">3. 嚴重疼痛：膝關節置換或神經阻斷術</h4>
+                <h4 style="margin-top: 0; color: #0e7490 !important;">3. 關節腫脹：<a href="/treatments/ultrasound-guided-aspiration" class="text-cyan-400 hover:underline">超音波導引抽吸</a></h4>
+                <p style="margin-bottom: 0; color: #334155 !important;">
+                    因半月板破裂及關節磨損變形，造成關節長時間發炎，發炎的組織液堆積在膝蓋內會很腫脹，無法彎曲甚至行走，將積水抽出後可大幅改善生活品質。
+                </p>
+            </div>
+
+            <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+                <h4 style="margin-top: 0; color: #0e7490 !important;">4. 嚴重疼痛：膝關節置換或神經阻斷術</h4>
                 <p style="margin-bottom: 0; color: #334155 !important;">
                     對於第 4 級嚴重退化、考慮做膝關節置換，但不適合或不想開刀的長輩，我們可以針對支配膝蓋感覺的「膝神經 (Genicular Nerve)」進行阻斷或燒灼。這能阻斷痛覺訊號傳回大腦，大幅改善生活品質。
                 </p>
@@ -5450,7 +5601,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           treatments: [
             '止痛藥及復健',
             '<a href="/treatments/hyaluronic-acid" class="text-cyan-400 hover:underline">玻尿酸注射 (潤滑)</a>🔍️',
-            '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️',
+            '<a href="/treatments/ultrasound-guided-aspiration" class="text-cyan-400 hover:underline">超音波導引抽吸</a>🔍️與<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️',
             '<a href="/treatments/manual" class="text-cyan-400 hover:underline">股四頭肌強化運動</a>🔍️',
           ],
           seoKeywords: [
@@ -5844,7 +5995,7 @@ export const diseaseCategories: DiseaseCategory[] = [
 {
         id: 'meniscus-injury',
         slug: 'meniscus-injury',
-        title: '膝蓋半月板損傷 (Meniscus Injury)',
+        title: '膝蓋半月板損傷',
         lastModified: '2026-01-21',
         description: '膝蓋突然「卡住」伸不直？走路膝蓋關節縫刺痛？這可能是膝蓋的避震器壞了！深入解析半月板損傷成因、紅黃白區的修復關鍵，以及 PRP 與手術治療的全攻略。',
         contentHtml: `
@@ -5959,7 +6110,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           </div>
       
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 再生修復：<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️</h4>
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 再生修復：<a href="/treatments/ultrasound-guided-aspiration" class="text-cyan-400 hover:underline">超音波導引抽吸</a>與<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a></h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
                   適用對象：位於<strong>紅區或紅白交界區</strong>的撕裂傷，且不想開刀者。<br>
                   由於半月板血流差，我們透過超音波導引，將高濃度的生長因子 (PRP) 精準注射到撕裂縫隙中，提供修復所需的「養分與原料」，促進組織癒合。這對於年輕、創傷型的紅區撕裂效果尤佳。
@@ -6007,7 +6158,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         treatments: [
           '止痛藥物及復健',
-          '超音波導引抽積水與<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️',
+          '<a href="/treatments/ultrasound-guided-aspiration" class="text-cyan-400 hover:underline">超音波導引抽吸</a>🔍️與<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️',
           '<a href="/treatments/manual" class="text-cyan-400 hover:underline">物理治療與肌力訓練 (股四頭肌強化)</a>🔍️',
           '關節鏡半月板手術'
         ],
@@ -6096,7 +6247,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
               <h4 style="margin-top: 0; color: #0e7490 !important;">2. 影像檢查： 超音波 vs 核磁共振  </h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
-                  <strong>超音波：</strong> 可看到關節積血、韌帶腫脹，以及檢查是否合併<strong>半月板破裂或韌帶撕裂</strong>（這很常見，稱為惱人三重傷 Unhappy Triad），下圖為超音波導引下將積血抽吸出來。<br>
+                  <strong>超音波：</strong> 可看到關節積血、韌帶腫脹，以及檢查是否合併<strong>半月板破裂或韌帶撕裂</strong>（這很常見，稱為惱人三重傷 Unhappy Triad），下圖為超音波導引下將<a href="/treatments/ultrasound-guided-aspiration" class="text-cyan-400 hover:underline">積血抽吸出來</a>。<br>
                   <strong>核磁共振：</strong>若嚴重鬆脫或反覆積水，考慮手術建議安排，能清楚看到韌帶是「全斷」還是「部分斷裂」，。
               </p>
           </div>
@@ -6161,7 +6312,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         treatments: [
           '止痛藥復健與護膝',
-          '超音波導引抽積血<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️',
+          '<a href="/treatments/ultrasound-guided-aspiration" class="text-cyan-400 hover:underline">超音波導引抽積血</a>🔍️<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️',
           '術前/術後<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>🔍️',
           '十字韌帶重建手術',
         ],
@@ -8018,7 +8169,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">網球腿如果只靠休息（RICE），恢復期可能長達 6-8 週。我們採取更積極的介入：</p>
       
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 超音波檢查及導引血腫抽吸</h4>
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 超音波檢查及<a href="/treatments/ultrasound-guided-aspiration" class="text-cyan-400 hover:underline">導引血腫抽吸</a></h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
                   <strong>這是關鍵！</strong> 肌肉撕裂常伴隨<strong>大量內出血</strong>，形成血塊。血塊積在肌肉間隙會造成極大壓力與疼痛，且容易鈣化變成硬塊。
                   <br>我們在超音波導引下，將積血抽出。患者常表示抽完的瞬間，脹痛感就少了一半。
@@ -8127,15 +8278,13 @@ export const diseaseCategories: DiseaseCategory[] = [
             '受傷瞬間感覺小腿被踢了一腳或被打到',
             '聽到或感覺到小腿發出「啪」的一聲',
             '小腿肚內側劇烈疼痛，無法腳跟著地走路',
-            '受傷2-3天後，腳踝或腳底出現瘀青',
             '小腿腫脹，按壓小腿肚內側有明顯痛點'
         ],
         treatments: [
-            '高解析超音波鑑別診斷',
-            '超音波導引血腫抽吸',
+            '<a href="/treatments/ultrasound-guided-aspiration" class="text-cyan-400 hover:underline">超音波檢查及導引抽吸</a>🔍️',
             '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法 (加速癒合)</a>🔍️',
             '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波 (軟化疤痕)</a>🔍️',
-            '肌內效貼紮與足跟墊高'
+            '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療與肌內效貼紮</a>🔍️'
         ],
         seoKeywords: [
             '網球腿',
@@ -8248,7 +8397,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               <p style="margin-bottom: 0; color: #334155 !important;">
                   <ul style="margin-top: 0.5rem; color: #334155 !important;">
                       <li><strong>藥物治療：</strong> 開立秋水仙素與消炎止痛藥。</li>
-                      <li><strong>超音波導引抽吸：</strong> 若關節積水嚴重腫脹，我們會在超音波導引下將發炎的關節液抽出，並視情況注射消炎藥物，通常能立即緩解一半以上的疼痛。</li>
+                      <li><strong><a href="/treatments/ultrasound-guided-aspiration" class="text-cyan-400 hover:underline">超音波導引抽吸</a>：</strong> 若關節積水嚴重腫脹，我們會在超音波導引下將發炎的關節液抽出，並視情況注射消炎藥物，通常能立即緩解一半以上的疼痛。</li>
                   </ul>
               </p>
           </div>
@@ -8304,7 +8453,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         treatments: [
           '藥物治療 (秋水仙素/消炎藥)',
           '冰敷與休息，飲食控制',
-          '<a href="/treatments/steroid-injection" class="text-cyan-400 hover:underline">超音波導引抽水與類固醇</a>🔍️',
+          '<a href="/treatments/ultrasound-guided-aspiration" class="text-cyan-400 hover:underline">超音波導引抽水</a>🔍️與<a href="/treatments/steroid-injection" class="text-cyan-400 hover:underline">類固醇</a>🔍️',
           '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療 (慢性期)</a>🔍️'
         ],
         seoKeywords: [

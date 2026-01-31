@@ -9,6 +9,7 @@ interface RelatedCasesProps {
 
 export default function RelatedCases({ cases }: RelatedCasesProps) {
   if (!cases || cases.length === 0) return null;
+  const displayTitle = `${cases[0].category} 治療成功案例`;
 
   return (
 <section className="pt-4 pb-4 border border-slate-800 bg-slate-900/50 rounded-3xl overflow-hidden shadow-sm">
@@ -18,7 +19,7 @@ export default function RelatedCases({ cases }: RelatedCasesProps) {
         <div className="flex items-center mb-3">
           <i className="fa-solid fa-file-medical text-cyan-400 text-lg mr-2"></i>
           <h2 className="text-xl font-bold text-white">
-            相關臨床案例
+            {displayTitle} 
           </h2>
         </div>
 

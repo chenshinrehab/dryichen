@@ -1,6 +1,7 @@
 // src/app/sitemap.ts
 import { MetadataRoute } from 'next'
 import { newsList } from '@/data/news' 
+import { casesData } from '@/data/cases'
 import { treatmentsList } from '@/data/treatments'
 import { diseaseCategoriesList } from '@/data/diseases'
 import { weightLossPrograms } from '@/data/weightLoss'
@@ -23,9 +24,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/about/doctors',
     '/about/clinic',
     '/about/news',
+    '/about/cases',
     '/treatments',
     '/diseases',
     '/weight-bone',
+    '/weight-bone/BMI',
+    '/weight-bone/child',
+    '/weight-bone/calculator',
+    '/weight-bone/nutrition',
     '/booking',
   ].map((route) => ({
     url: `${SITE_URL}${route}`,
@@ -44,10 +50,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return {
       url: `${SITE_URL}/about/news/${post.id}`,
       lastModified: new Date(modDate),
-      changeFrequency: 'monthly' as const,
+      changeFrequency: 'weekly' as const,
       priority: 0.7,
     }
   })
+
+// 3. 動態案例頁面 (Cases)
+const casesRoutes = casesData.map((post) => {
+  // 根據你的 page.tsx，資料物件名稱是 post，欄位應該也是 id 與 date
+  const modDate = (post as any).lastModified ? (post as any).lastModified : post.date;
+  
+  return {
+    // 注意：根據你的代碼 canonicalUrl，路徑似乎是 /about/news/ 而不是 /about/cases/
+    // 如果你之後有把路由改掉，這裡也要跟著改
+    url: `${SITE_URL}/about/news/${post.id}`, 
+    lastModified: new Date(modDate),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }
+})
 
   // 3. 動態治療項目 (Treatments)
   const treatmentRoutes = treatmentsList.map((t) => {
@@ -70,7 +91,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return {
       url: `${SITE_URL}/diseases/${c.slug}`,
       lastModified: lastModifiedTime,
-      changeFrequency: 'monthly' as const,
+      changeFrequency: 'weekly' as const,
       priority: 0.7,
     }
   })
@@ -85,7 +106,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         return {
             url: `${SITE_URL}/diseases/${c.slug}/${d.slug}`,
             lastModified: modDate,
-            changeFrequency: 'monthly' as const,
+            changeFrequency: 'weekly' as const,
             priority: 0.8,
         }
     })
@@ -115,6 +136,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticRoutes,
     ...newsRoutes,
+    ...casesRoutes,
     ...treatmentRoutes,
     ...diseaseCategoryRoutes,
     ...diseaseDetailRoutes,

@@ -1,4 +1,4 @@
-// src/app/about/news/[id]/page.tsx
+// src/app/about/cases/[id]/page.tsx
 
 import React from 'react'
 import { notFound } from 'next/navigation'

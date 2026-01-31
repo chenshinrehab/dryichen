@@ -54,10 +54,10 @@ const aboutSections = [
   {
     id: 'clinic',
     title: '成功案例分享',
-    subtitle: 'Clinic Information',
-    description: '舒適寬敞的復健空間，配備醫學中心等級的檢查與治療設備，提供高品質的醫療服務。',
+    subtitle: 'Case Sharing',
+    description: '疼痛不是生活的一部分，康復才是。在這裡，我們分享患者透過精準診斷與再生醫學重拾生活品質的真實故事。',
     href: '/about/cases',
-    image: '/images/about/b.jpg',
+    image: '/images/about/e.jpg',
     icon: 'fa-solid fa-hospital'
   },
   {
