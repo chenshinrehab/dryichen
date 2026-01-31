@@ -5,6 +5,8 @@ import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { getDiseaseBySlug, generateAllDiseaseParams } from '@/data/diseases'
 import ShareButtons from '@/components/ShareButtons'
+// ✨ 新增：匯入案例資料
+import { casesData } from '@/data/cases'
 
 // 定義常數，方便未來修改
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
@@ -58,6 +60,22 @@ export default function DiseaseDetailPage({ params }: PageProps) {
   
   // QR Code API
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&bgcolor=ffffff&data=${encodeURIComponent(currentPageUrl)}`
+
+  // ✨ 新增：根據病症標題 (Title) 篩選相關案例
+// ✨ 修改這裡：強化篩選邏輯
+const matchedCases = casesData.filter(c => {
+  // 1. Tag 精準比對：如果 Disease 有 tags 且 Case 也有 tags，檢查是否有重疊 (例如都有 'KOA')
+  // (注意：TypeScript 若報錯，請確認 src/data/diseases.ts 的 interface 有定義 tags?: string[])
+  const hasMatchingTag = disease.tags && c.tags?.some(tag => disease.tags?.includes(tag));
+
+  // 2. 標題模糊比對：保留原本邏輯，比對標題文字
+  const hasMatchingTitle = c.title.includes(disease.title);
+  
+  // 3. 關鍵字比對：如果標題沒對到，檢查案例的 tags 是否包含病症名稱
+  const hasTagIncludesTitle = c.tags?.some(tag => disease.title.includes(tag) || tag.includes(disease.title));
+
+  return hasMatchingTag || hasMatchingTitle || hasTagIncludesTitle;
+}).slice(0, 3);
 
   // ==========================================
   // SEO Schema 1: 麵包屑
@@ -298,20 +316,70 @@ export default function DiseaseDetailPage({ params }: PageProps) {
 
               </div>
 
-                            {/* ★★★ 新增：作者權威聲明 (SEO E-E-A-T) ★★★ */}
-                  {/* 設計為：小字、淡色、靠右對齊，不搶視覺但確保存在 */}
-                  <div className="mt-0 pt-0 border-t border-slate-700/40 text-right">
-                    <div className="inline-block text-slate-500 text-sm space-y-1">
-                      <p>
-                        <span className="mr-2">撰文者 :</span>
-                        <span className="font-medium text-slate-400">復健專科 宸新復健科院長 林羿辰醫師</span>
-                      </p>
-                      <p>
-                        <span className="mr-2">資料來源 :</span>
-                        <span className="font-medium text-slate-400">復健醫學會</span>
-                      </p>
+              {/* ✨ 新增：相關成功案例區塊 (圓角外框樣式) */}
+              {matchedCases.length > 0 && (
+                <section className="pt-4 pb-4 border border-slate-800 bg-slate-900/50 rounded-3xl overflow-hidden mx-2 md:mx-4 mb-8">
+                  <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    {/* 標題區 */}
+                    <div className="flex items-center mb-5">
+                      <i className="fa-solid fa-file-medical text-cyan-400 text-xl mr-3"></i>
+                      <h2 className="text-2xl font-bold text-white">
+                        {disease.title} 治療成功案例
+                      </h2>
                     </div>
+
+                    {/* 卡片列表 */}
+                    <div className="flex overflow-x-auto pb-4 gap-3 snap-x snap-mandatory md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0 scrollbar-hide">
+                      {matchedCases.map((item) => (
+                        <Link 
+                          key={item.id} 
+                          href={`/about/cases/${item.id}`} 
+                          className="group block flex-shrink-0 w-[66vw] sm:w-64 md:w-auto md:flex-shrink-1 min-w-0 snap-center bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.15)] transition-all duration-300"
+                        >
+                          {/* 圖片區 */}
+                          <div className="h-32 md:h-40 overflow-hidden relative">
+                            <img 
+                              src={item.coverImage} 
+                              alt={item.title} 
+                              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                            />
+                          </div>
+
+                          {/* 內容區 */}
+                          <div className="p-3">
+                            <h3 className="text-base font-bold text-slate-100 mb-1 line-clamp-2 leading-tight">
+                              {item.title}
+                            </h3>
+                            <p className="text-slate-400 text-xs line-clamp-2 mb-2">
+                              {item.summary}
+                            </p>
+                            <div className="text-cyan-500 text-xs font-bold">
+                              閱讀案例 <i className="fa-solid fa-arrow-right ml-1"></i>
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+
                   </div>
+                </section>
+              )}
+
+              {/* ★★★ 新增：作者權威聲明 (SEO E-E-A-T) ★★★ */}
+              {/* 設計為：小字、淡色、靠右對齊，不搶視覺但確保存在 */}
+              <div className="mt-0 pt-0 px-4 md:px-10 border-t border-slate-700/40 text-right">
+                <div className="inline-block text-slate-500 text-sm space-y-1">
+                  <p>
+                    <span className="mr-2">撰文者 :</span>
+                    <span className="font-medium text-slate-400">復健專科 宸新復健科院長 林羿辰醫師</span>
+                  </p>
+                  <p>
+                    <span className="mr-2">資料來源 :</span>
+                    <span className="font-medium text-slate-400">復健醫學會</span>
+                  </p>
+                </div>
+              </div>
 
               {/* 底部分享區塊 */}
               <div className="bg-slate-900/80 p-8 md:p-12 border-t border-slate-700 text-center relative overflow-hidden">

@@ -11,8 +11,8 @@ export default function RelatedCases({ cases }: RelatedCasesProps) {
   if (!cases || cases.length === 0) return null;
 
   return (
-    <section className="pt-4 pb-2 border-t border-slate-800 bg-slate-900/50">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<section className="pt-4 pb-4 border border-slate-800 bg-slate-900/50 rounded-3xl overflow-hidden shadow-sm">
+<div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* 標題區：mb-3 減少與卡片的距離 */}
         <div className="flex items-center mb-3">
@@ -23,11 +23,11 @@ export default function RelatedCases({ cases }: RelatedCasesProps) {
         </div>
 
         {/* 卡片列表容器 */}
-        <div className="flex overflow-x-auto pb-2 gap-3 snap-x snap-mandatory md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0 scrollbar-hide">
+        <div className="flex overflow-x-auto pb-0 gap-3 snap-x snap-mandatory md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0 scrollbar-hide">
           {cases.map((item) => (
             <Link 
               key={item.id} 
-              href={`/about/news/${item.id}`} 
+              href={`/about/cases/${item.id}`} 
               className="group block flex-shrink-0 w-[66vw] sm:w-64 md:w-auto md:flex-shrink-1 min-w-0 snap-center bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.15)] transition-all duration-300"
             >
               {/* 圖片區高度壓低 */}

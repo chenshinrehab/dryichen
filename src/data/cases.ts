@@ -30,7 +30,7 @@ export const casesData: CaseStudy[] = [
     `,
     date: '2024-01-15',
     category: 'PRP注射',
-    tags: ['膝蓋疼痛', 'PRP', '免開刀'],
+    tags: ['KOA', 'PRP', '免開刀'],
     coverImage: '/images/news/case-knee.jpg',
     relatedTreatments: ['prp-injection', 'regenerative-medicine']
   },

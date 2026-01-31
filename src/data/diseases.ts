@@ -12,6 +12,7 @@ export interface DiseaseItem {
   contentHtml: string     // 詳細頁用的 HTML 內容 (支援排版)
   symptoms: string[]      // 常見症狀列表
   treatments: string[]    // 治療建議列表
+
   lastModified?: string;
   seoKeywords: string[]   // SEO 關鍵字
   seoDescription: string  // SEO 描述
@@ -22,6 +23,7 @@ export interface DiseaseCategory {
   slug: string
   title: string
   lastModified?: string;
+  tags: string[]
   description: string
   image: string
   diseases: DiseaseItem[]
@@ -51,6 +53,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         id: 'lower-back-muscle-pain',
         slug: 'lower-back-muscle-pain',
         lastModified: '2026-01-25',
+        tags: [],
         title: '下背肌筋膜疼痛 ',
         description: '洗臉彎腰就定住？早上起床腰桿挺不直？這不一定是骨刺，而是「下背肌筋膜疼痛」！深入解析闊背肌與腰方肌的激痛點，以及運用增生注射修復筋膜與徒手治療的全方位攻略。',
         contentHtml: `
@@ -289,6 +292,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         id: 'cervical-muscle-pain',
         slug: 'cervical-muscle-pain',
         lastModified: '2026-02-03',
+        tags: [],
         title: '頸部肌筋膜疼痛',
         description: '轉頭就卡住？肩膀像背了千斤頂？這不一定是骨刺，而是「頸部肌筋膜疼痛」！深入解析斜方肌與提肩胛肌的激痛點，以及運用震波擊碎氣結與增生注射修復的全方位攻略。',
         contentHtml: `
@@ -500,6 +504,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         slug: 'lumbar-disc-herniation',
         title: '腰椎椎間盤突出',
         lastModified: '2026-01-22',
+        tags: [],
         description: '彎腰刷牙一陣刺痛、大腿後側像被電到？這是椎間盤突出壓迫坐骨神經的警訊。了解如何透過拉腰與PRP免動刀修復脊椎。',
         contentHtml: `
 <p>您是否有過這樣的經驗：早晨起床腰背僵硬、彎腰刷牙時突然一陣刺痛，或是久坐辦公室後，大腿後側傳來像「被電到」一樣的麻痛感？小心，這可能是現代人的文明病——<strong>腰椎椎間盤突出 (HIVD)</strong> 找上門了。</p>
@@ -724,6 +729,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         slug: 'scoliosis',
         title: '脊椎側彎',
         lastModified: '2026-01-21',
+        tags: [],
         description: '孩子肩膀一高一低？背部凸起？脊椎側彎不只是姿勢不良！宸新擁有「院內X光機」即時追蹤，搭配「側彎專用矯正架」與專業治療師，把握黃金治療期，讓脊椎重回正軌。',
         contentHtml: `
           <p style="color: #e2e8f0 !important;">當您發現家中的孩子肩膀一高一低，或是彎腰時背部某一側異常凸起，這可能不只是單純的「姿勢不良」，而是<strong>脊椎側彎</strong> 的警訊。在台灣，青少年脊椎側彎的發生率約為 3-5%，若錯過黃金治療期，側彎角度可能會隨著身高抽高而急速惡化，不僅影響外觀自信，成年後更可能導致嚴重的背痛與心肺功能受損。</p>
@@ -871,6 +877,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         id: 'upper-crossed-syndrome',
         slug: 'upper-crossed-syndrome',
         lastModified: '2026-01-23',
+        tags: [],
         title: '上交叉症候群 (烏龜頸/圓肩)',
         description: '脖子後面長出「富貴包」？長期頭痛、肩膀僵硬？這是典型的上交叉症候群！深入解析肌肉失衡機制，提供高能量雷射放鬆與徒手矯正策略，搭配居家運動找回挺拔體態。',
         contentHtml: `
@@ -1118,6 +1125,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         id: 'lower-crossed-syndrome',
         slug: 'lower-crossed-syndrome',
         lastModified: '2026-01-23',
+        tags: [],
         title: '下交叉症候群 (骨盆前傾)',
         description: '明明很瘦卻有小腹？久坐腰部總是痠痛？你可能患有「下交叉症候群」導致的骨盆前傾！宸新復健科透過院內X光骨骼排列分析，結合徒手治療與核心懸吊訓練，從根源導正體態，告別慢性腰痛。',
         contentHtml: `
@@ -1352,6 +1360,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         slug: 'cervical-disc-degeneration',
         title: '頸椎椎間盤退化',
         lastModified: '2026-01-22',
+        tags: [],
         description: '低頭滑手機導致脖子緊繃、手麻傳到手指？這不只是肌肉痠痛，小心是頸椎長骨刺或椎間盤突出。了解免動刀的修復關鍵。',
         contentHtml: `
 <p style="color: #e2e8f0 !important;">您是否也是「低頭族」的一員？搭捷運滑手機、上班盯電腦，下班追劇還是在低頭。長時間維持同一姿勢，您是否常覺得肩頸僵硬，甚至偶爾會感覺手臂一陣麻痛傳到手指？小心，這不只是單純的肌肉痠痛，而是<strong style="color: #22d3ee !important;">頸椎椎間盤突出</strong>正在發出的警訊。</p>
@@ -1572,6 +1581,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         slug: 'piriformis-syndrome',
         title: '梨狀肌症候群',
         lastModified: '2026-01-21',
+        tags: [],
         description: '久坐屁股深處痠痛、腳麻像觸電？這可能是「假性坐骨神經痛」。了解如何透過伸展與注射解開梨狀肌緊繃。',
         contentHtml: `
 <p style="color: #e2e8f0 !important;">您是否有過這種感覺：明明腰沒有很痛，但<strong>屁股深處</strong>卻像被人狠狠揍了一拳，痠痛感一路延伸到大腿後側？坐著超過 15 分鐘就如坐針氈，甚至睡覺翻身都會痛醒？</p>
@@ -1726,6 +1736,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         slug: 'cervical-facet-syndrome',
         title: '頸椎小面關節炎',
         lastModified: '2026-01-22',
+        tags: [],
         description: '抬頭看天花板脖子就痛？早上起床頸部僵硬卡住？這可能不是單純落枕！深入解析小面關節炎成因，教您分辨與椎間盤突出的差異，以及超音波導引增生注射的精準修復。',
         contentHtml: `
           <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：早上起床發現脖子僵硬，像是「落枕」一樣動彈不得？或是開車要倒車入庫時，頭一轉就覺得頸後深處傳來一陣刺痛？甚至只是抬頭想點個眼藥水，脖子就痛到受不了？</p>
@@ -1928,6 +1939,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         slug: 'facet-joint-syndrome',
         lastModified: '2026-01-22',
         title: '腰椎小面關節炎',
+        tags: [],
         description: '腰痠背痛不一定是肌肉痛或椎間盤突出！往後仰就痛？早上起床腰桿僵硬？這可能是脊椎後方的「小面關節」在抗議。深入解析小面關節炎特徵、與坐骨神經痛的差異，以及超音波導引增生注射如何精準修復。',
         contentHtml: `
           <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：早上起床時腰部僵硬挺不直，要活動個半小時才比較舒服？久坐後站起來的那一瞬間，腰部深處傳來一陣酸楚？或是當您試著<strong>「往後仰」</strong>伸懶腰，或者轉頭看後方時，脊椎某個點會產生尖銳的疼痛感？</p>
@@ -2116,6 +2128,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         id: 'sacroiliac-joint-dysfunction',
         slug: 'sacroiliac-joint-dysfunction',
         lastModified: '2026-01-24',
+        tags: [],
         title: '薦髂關節炎',
         description: '屁股深處痛？坐久了站不起來？這可能不是椎間盤突出，而是骨盆的「薦髂關節」鬆掉了！深入解析疼痛特徵，以及運用 X 光追蹤、PRP 修復韌帶與矯正架調整骨盆的全方位治療。',
         contentHtml: `
@@ -2321,6 +2334,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         slug: 'muscle-tmd',
         title: '顳顎關節症候群',
         lastModified: '2026-01-21',
+        tags: [],
         description: '臉頰痠痛、頭痛、脖子緊？這不只是壓力大，而是顳顎關節肌肉發炎！深入解析「頸部與下巴」的連動關係，以及徒手治療與高能量雷射如何放鬆深層筋膜。',
         contentHtml: `
           <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：早晨起床覺得兩側臉頰痠軟無力，好像整晚都在咬牙切齒？或是工作壓力大時，太陽穴兩側開始抽痛，連帶脖子也覺得緊繃僵硬？甚至有時候張開嘴巴，覺得臉頰肌肉「卡卡的」拉不開？</p>
@@ -2480,6 +2494,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         slug: 'hip-osteoarthritis',
         title: '退化性髖關節炎',
         lastModified: '2026-01-21',
+        tags: [],
         description: '走路該邊痛、穿襪子腳抬不起來？這是退化性髖關節炎的典型警訊。了解如何透過PRP與復健保養關節，找回輕盈步伐。',
         contentHtml: `
 <p style="color: #e2e8f0 !important;">走路時總是覺得「該邊」（鼠蹊部）隱隱作痛？穿襪子、剪腳指甲變得越來越困難？小心，這可能不是單純的肌肉拉傷，而是<strong>退化性髖關節炎</strong>正在悄悄侵蝕您的行動力。</p>
@@ -2618,6 +2633,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         slug: 'rotator-cuff-tear',
         title: '旋轉肌撕裂',
         lastModified: '2026-01-21',
+        tags: [],
         description: '手舉不高、半夜痛醒？小心是「旋轉肌撕裂」而非五十肩！宸新復健科透過高解析肌肉骨骼超音波精準診斷，提供PRP增生注射與專業徒手物理治療，為您量身打造免動刀的肌腱修復計畫，找回肩膀活動力。',
         contentHtml: `
 <p style="color: #e2e8f0 !important;">您是否有這樣的困擾：想梳頭髮手卻舉不高？穿衣服時手無法伸到背後扣釦子？或是晚上睡覺壓到肩膀時，會被一陣尖銳的疼痛痛醒？小心，這可能不是單純的五十肩，而是更常見的肩膀隱形殺手——<strong>旋轉肌袖撕裂 (Rotator Cuff Tear)</strong>。</p>
@@ -3919,6 +3935,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         slug: 'tennis-elbow',
         title: '網球肘 (肱骨外上髁炎)',
         lastModified: '2026-01-21',
+        tags: [],
         description: '擰毛巾、轉門把手肘外側就痛？這不只是網球選手的專利！深入解析網球肘成因，從震波治療到 PRP 修復，以及關鍵的居家離心運動教學。',
         contentHtml: `
           <p style="color: #e2e8f0 !important;">您是否有這樣的困擾：想要擰乾一條毛巾，手肘外側卻傳來一陣刺痛？拿個馬克杯喝水、轉動門把，甚至只是敲鍵盤滑鼠，手肘那顆突出的骨頭附近就痛到不行？這就是典型的<strong>網球肘</strong>症狀。</p>
@@ -4266,6 +4283,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         slug: 'tfcc-injury',
         title: '三角纖維軟骨損傷 (TFCC)',
         lastModified: '2026-01-21',
+        tags: [],
         description: '手腕外側一轉就痛？擰毛巾、撐地都沒力？這可能是「手腕的半月板」受傷了！深入解析 TFCC 損傷成因、自我檢測法，以及 PRP 修復與護具選擇全攻略。',
         contentHtml: `
           <p style="color: #e2e8f0 !important;">您是否有這樣的困擾：做伏地挺身或想從椅子上撐起來時，手腕小指那側（尺側）傳來一陣刺痛？平時手不動還好，但只要做<strong>「轉門把」、「擰毛巾」</strong>或「轉動鑰匙」的動作，手腕深處就痛到沒力？</p>
@@ -5275,6 +5293,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           slug: 'knee-osteoarthritis',
           title: '退化性膝關節炎',
           lastModified: '2026-01-21',
+          tags: ['KOA', 'PRP'],
           description: '上下樓梯膝蓋無力？蹲下去站不起來？這不只是老化的必然！深入解析膝關節退化分級、玻尿酸與 PRP 的差別，以及關鍵的「股四頭肌」強化運動。',
           contentHtml: `
             <p style="color: #e2e8f0 !important;">您是否有這樣的困擾：早晨起床覺得膝蓋僵硬，要活動一下才比較順？上下樓梯時膝蓋感到痠軟無力，甚至聽到<strong>「喀喀」</strong>的摩擦聲？或是遇到濕冷的天氣，膝蓋就像氣象台一樣開始痠痛？</p>
@@ -7230,6 +7249,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           slug: 'ankle-sprain',
           title: '踝關節扭傷 (翻腳刀)',
           lastModified: '2026-01-21',
+          tags: [],
           description: '走路踩空、打球翻船？腳踝扭傷不只是冰敷就好！深入解析韌帶撕裂分級、為何會變成「玻璃腳」，以及震波與 PRP 如何加速修復。',
           contentHtml: `
             <p style="color: #e2e8f0 !important;">走路踩空、下樓梯不留神，或是打球落地時沒踩穩，<strong>「腳踝扭傷」（俗稱翻腳刀）</strong>絕對是復健科門診最常見的運動傷害第一名。許多患者以為「不痛就是好了」，受傷後隨便貼個藥布就繼續運動，結果韌帶鬆弛沒長好，演變成動不動就扭到的<strong>「習慣性扭傷（玻璃腳）」</strong>，甚至年紀輕輕就產生關節退化。</p>
