@@ -63,7 +63,7 @@ const casesRoutes = casesData.map((post) => {
   return {
     // 注意：根據你的代碼 canonicalUrl，路徑似乎是 /about/news/ 而不是 /about/cases/
     // 如果你之後有把路由改掉，這裡也要跟著改
-    url: `${SITE_URL}/about/news/${post.id}`, 
+    url: `${SITE_URL}/about/cases/${post.id}`,
     lastModified: new Date(modDate),
     changeFrequency: 'weekly' as const,
     priority: 0.8,
