@@ -12,7 +12,7 @@ export interface DiseaseItem {
   contentHtml: string     // 詳細頁用的 HTML 內容 (支援排版)
   symptoms: string[]      // 常見症狀列表
   treatments: string[]    // 治療建議列表
-
+  tags?: string[];
   lastModified?: string;
   seoKeywords: string[]   // SEO 關鍵字
   seoDescription: string  // SEO 描述
@@ -23,7 +23,7 @@ export interface DiseaseCategory {
   slug: string
   title: string
   lastModified?: string;
-  tags: string[]
+  tags?: string[];
   description: string
   image: string
   diseases: DiseaseItem[]
