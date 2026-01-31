@@ -42,7 +42,8 @@ const fullTreatmentsData: Treatment[] = [
   {
     slug: 'prp',
     title: '增生療法 / PRP',
-    lastModified: '2026-01-22',
+    lastModified: '2026-01-31',
+    tags: ['PRP'],
     subtitle: '超音波導引高濃度血小板注射',
     description: '透過注射高濃度血小板血漿 (PRP) 或高濃度葡萄糖，精準修復受損關節與韌帶。',
     image: '/images/treatments/a.jpg',
@@ -74,7 +75,7 @@ const fullTreatmentsData: Treatment[] = [
         </li>
         <li style="margin-bottom: 1rem; display: flex; align-items: start;">
             <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
-            <div><strong>複合式治療策略：</strong> 醫師會視情況搭配葡萄糖水增生療法、神經解套注射或震波治療，達到 1+1>2 的加乘效果。</div>
+            <<div><strong>複合式治療策略：</strong> 醫師會視情況搭配葡萄糖水增生療法、神經解套注射或 <a href="/treatments/shockwave" style="color: #d97706; text-decoration: underline;">聚焦式震波治療</a>，特別針對<strong>長期使用電腦的工程師</strong>或運動愛好者，達到 1+1>2 的修復效果。</div>
         </li>
                 <li style="margin-bottom: 0; display: flex; align-items: start;">
             <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
@@ -206,6 +207,10 @@ const fullTreatmentsData: Treatment[] = [
         answer: 'PRP 是非常安全的治療，因為用的完全是自己的血液，幾乎不會有過敏反應。大部分人的副作用會有注射部位的痠、脹或輕微疼痛、局部小範圍的瘀青。'
       },
       {
+        question: 'PRP 治療保險有給付嗎？健保有給付嗎?',
+        answer: 'PRP 屬於自費項目，健保尚未給付。但若您持有「實支實付」型的醫療險或意外險，且符合保單條款中的理賠條件（例如：意外受傷、醫師診斷證明書註明必要性），通常有機會申請理賠。建議您治療前先諮詢您的保險業務員，我們診所可協助開立診斷證明與收據供您申請。'
+      },
+      {
         question: '打 PRP 會越打越沒效嗎？',
         answer: '不會產生抗藥性。因為 PRP 取自自體血液，不含藥物成分，所以不會像止痛藥或類固醇那樣產生「抗藥性」。相反地，對於慢性損傷或退化，連續施打（如一個療程 3 次）通常能帶來「累加」的修復效果。不過，若關節磨損過於嚴重或生活習慣未改善，修復速度可能趕不上破壞速度，這時醫師會評估是否需要調整治療頻率或搭配其他療法。'
       },
@@ -223,6 +228,7 @@ const fullTreatmentsData: Treatment[] = [
     slug: 'shockwave',
     title: '聚焦式 / 發散式體外震波',
     lastModified: '2026-01-21',
+    tags: ['ESWT'],
     subtitle: '瑞士頂級設備擊碎鈣化與骨刺',
     description: '引進瑞士頂級震波設備，免開刀擊碎鈣化點，專治足底筋膜炎與頑固疼痛。',
     image: '/images/treatments/b.jpg',
@@ -383,6 +389,7 @@ const fullTreatmentsData: Treatment[] = [
     slug: 'manual',
     title: '徒手治療',
     lastModified: '2026-01-21',
+    tags: ['manual'],
     subtitle: '物理治療師一對一評估治療',
     description: '專業物理治療師一對一評估，調整骨盆歪斜、脊椎側彎與筋膜放鬆。',
     image: '/images/treatments/c.jpg',
@@ -516,6 +523,7 @@ const fullTreatmentsData: Treatment[] = [
     slug: 'high-intensity-laser',
     title: '高能量雷射治療',
     lastModified: '2026-01-21',
+    tags: ['laser'],
     subtitle: '光速修復、深層止痛的黑科技',
     description: '引進美國頂級Summus高能量雷射，能穿透深層組織，提供立即性的止痛與消腫。專治急性運動傷害、兒童運動傷害與頑固性疼痛。',
     image: '/images/treatments/d.jpg',
@@ -690,6 +698,7 @@ const fullTreatmentsData: Treatment[] = [
   slug: 'hyaluronic-acid',
   title: '超音波導引玻尿酸注射',
   lastModified: '2026-01-24',
+  tags: ['HA'],
   subtitle: '精準導引潤滑關節、延緩退化',
   description: '新竹玻尿酸注射推薦。堅持採用高解析超音波導引，將玻尿酸精準注入關節腔，有效緩解退化性關節炎與五十肩疼痛，比傳統盲打更安全有效。',
   image: '/images/treatments/e.jpg',
@@ -881,6 +890,7 @@ const fullTreatmentsData: Treatment[] = [
   slug: 'shoulder-dilation',
   title: '肩關節擴張術',
   lastModified: '2026-01-25',
+  tags: ['dilation'],
   subtitle: '五十肩救星，精準撐開沾黏、重拾活動力',
   description: '新竹五十肩治療推薦。針對頑固性沾黏與手舉不高，採用高解析超音波導引「肩關節擴張術」，將擴張液精準注入關節囊，有效撐開沾黏組織，大幅改善疼痛與活動角度。',
   image: '/images/treatments/f.jpg',
@@ -1062,6 +1072,7 @@ const fullTreatmentsData: Treatment[] = [
   slug: 'steroid-injection',
   title: '超音波導引類固醇注射',
   lastModified: '2026-01-25',
+  tags: ['steroid'],
   subtitle: '急性發炎的滅火器，精準止痛不傷身',
   description: '破除類固醇迷思，宸新復健科採用高解析超音波導引，將低劑量藥物精準注入發炎組織周邊，避開肌腱本體。針對媽媽手、板機指與滑囊炎，提供最快速的消炎止痛選擇。',
   image: '/images/treatments/g.jpg',
@@ -1246,6 +1257,7 @@ const fullTreatmentsData: Treatment[] = [
   slug: 'iv-pain-relief',
   title: '靜脈消炎止痛針',
   lastModified: '2026-01-25',
+  tags: ['IV'],
   subtitle: '全身性疼痛的急救站，快速緩解急性發炎',
   description: '當口服藥物緩不濟急，靜脈止痛針(NSAIDs)能提供更快速的藥物吸收與作用。針對閃到腰、落枕、急性痛風、偏頭痛或全身性筋膜炎，宸新復健科提供專業評估與安全施打，特別強調過敏史篩檢，確保治療安全有效。',
   image: '/images/treatments/h.jpg',

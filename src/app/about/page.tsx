@@ -52,6 +52,15 @@ const aboutSections = [
     icon: 'fa-solid fa-hospital'
   },
   {
+    id: 'clinic',
+    title: '成功案例分享',
+    subtitle: 'Clinic Information',
+    description: '舒適寬敞的復健空間，配備醫學中心等級的檢查與治療設備，提供高品質的醫療服務。',
+    href: '/about/cases',
+    image: '/images/about/b.jpg',
+    icon: 'fa-solid fa-hospital'
+  },
+  {
     id: 'doctors',
     title: '醫師介紹',
     subtitle: 'Our Physician',

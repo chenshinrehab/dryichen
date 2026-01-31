@@ -34,6 +34,7 @@ export default function Navigation() {
         subItems: [
             { name: '最新消息', path: '/about/news' },
             { name: '診所環境', path: '/about/clinic' },
+            { name: '成功案例分享', path: '/about/cases' },
             { name: '醫師團隊', path: '/about/doctors' },
         ]
     },

@@ -56,7 +56,6 @@ export default function NewsDetailPage({ params }: PageProps) {
 
   // 確保頁面內部使用的網址也是標準格式
   const currentUrl = `${SITE_URL}/about/news/${params.id}`
-  const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&bgcolor=ffffff&data=${encodeURIComponent(currentUrl)}`
 
   // 邏輯判斷：如果是「門診公告」或「診所活動」，用 NewsArticle
   const isAnnouncement = post.category === '門診公告' || post.category === '診所活動';
@@ -210,13 +209,6 @@ export default function NewsDetailPage({ params }: PageProps) {
                   {/* Header 區塊：仿照疾病頁面樣式 */}
                   <div className="mb-10 border-l-4 border-cyan-500 pl-4 bg-gradient-to-r from-slate-900/80 to-transparent py-6 rounded-r-xl flex flex-col md:flex-row md:items-center gap-6">
                       
-                      {/* QR Code (僅電腦版顯示) */}
-                      <div className="hidden md:block bg-white p-2 rounded-lg shrink-0 group relative shadow-lg ring-2 ring-slate-700 cursor-pointer">
-                          <img className="w-24 h-24 object-contain" src={qrCodeApiUrl} alt={`掃描閱讀 ${post.title}`} />
-                          <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-max bg-slate-900 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-slate-600">
-                              掃描帶走文章
-                          </div>
-                      </div>
 
                       {/* 標題與 Metadata */}
                       <div className="flex-grow">
@@ -248,6 +240,14 @@ export default function NewsDetailPage({ params }: PageProps) {
                   </div>
 
               </div>
+
+                          {/* 撰文者資訊 */}
+                          <div className="text-right mt-0 pb-4 pr-2">
+                    <div className="inline-block text-slate-500 text-[11px] md:text-xs space-y-0.5">
+                      <p><span className="mr-2">撰文者 :</span><span className="font-medium text-slate-400">復健專科 宸新復健科院長 林羿辰醫師</span></p>
+                      <p><span className="mr-2">資料來源 :</span><span className="font-medium text-slate-400">Pubmed</span></p>
+                    </div>
+                  </div>
 
               {/* 底部分享區塊：仿照疾病頁面樣式 (含上方光暈) */}
               <div className="bg-slate-900/80 p-8 md:p-12 border-t border-slate-700 text-center relative overflow-hidden">

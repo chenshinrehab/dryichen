@@ -160,7 +160,7 @@ export default function GrowthNutritionCalculator() {
             <h3 className="block text-base font-bold text-[#92400e] mb-3">飲食習慣與特殊狀況</h3>
             <div className="grid grid-cols-2 gap-3">
               {[
-                { key: 'isPicky', label: '挑食 / 食慾差' }, { key: 'isVegetarian', label: '素食主義' },
+                { key: 'isPicky', label: '愛挑食' }, 
                 { key: 'isAllergic', label: '食物過敏' }, { key: 'isHighActivity', label: '高活動量' }
               ].map((item: any) => (
                 <label key={item.key} className={`flex items-center p-3 border-2 rounded-xl cursor-pointer transition-all ${conditions[item.key as keyof typeof conditions] ? 'bg-[#fff7ed] border-[#b45309] text-[#78350f]' : 'bg-white border-transparent hover:border-[#fcd34d] text-[#92400e]/70'}`}>
@@ -226,13 +226,12 @@ export default function GrowthNutritionCalculator() {
                <div className="flex flex-col sm:flex-row border-b border-[#fcd34d]/30 pb-3 last:border-0 last:pb-0"><span className="font-bold text-[#b45309] w-20 shrink-0">點心</span><span>希臘優格淋蜂蜜 + 一小把堅果 (核桃/腰果)</span></div>
                <div className="flex flex-col sm:flex-row border-b border-[#fcd34d]/30 pb-3 last:border-0 last:pb-0"><span className="font-bold text-[#b45309] w-20 shrink-0">晚餐</span><span>糙米飯 + 蔥爆牛肉 + 毛豆炒豆干 + 季節水果</span></div>
              </div>
-             {(result.conditions.isPicky || result.conditions.isVegetarian || result.conditions.isAllergic || result.conditions.isHighActivity) && (
+             {(result.conditions.isPicky || result.conditions.isAllergic || result.conditions.isHighActivity) && (
               <div className="mt-6 bg-[#f0f9ff] border-l-4 border-[#0891b2] p-4 rounded-r-lg">
                 <h5 className="font-bold text-[#0e7490] mb-2 flex items-center">💡 林醫師的個人化叮嚀</h5>
                 <ul className="space-y-2 text-sm text-[#334155]">
                   {result.conditions.isPicky && <li className="flex items-start"><span className="text-[#0891b2] mr-2">●</span><span><b>針對挑食：</b>試著將蔬菜切碎混入漢堡排或煎蛋中，增加色彩吸引力。</span></li>}
-                  {result.conditions.isVegetarian && <li className="flex items-start"><span className="text-[#0891b2] mr-2">●</span><span><b>素食提醒：</b>請多攝取深綠色蔬菜、豆類製品，並搭配富含維生素C的水果幫助鐵吸收。</span></li>}
-                  {result.conditions.isAllergic && <li className="flex items-start"><span className="text-[#0891b2] mr-2">●</span><span><b>過敏注意：</b>已記錄避開「{result.allergyText || '過敏原'}」。建議尋找替代營養源（如黑芝麻補鈣）。</span></li>}
+                   {result.conditions.isAllergic && <li className="flex items-start"><span className="text-[#0891b2] mr-2">●</span><span><b>過敏注意：</b>已記錄避開「{result.allergyText || '過敏原'}」。建議尋找替代營養源（如黑芝麻補鈣）。</span></li>}
                   {result.conditions.isHighActivity && <li className="flex items-start"><span className="text-[#0891b2] mr-2">●</span><span><b>高活動量：</b>運動後30分鐘內補充碳水+蛋白質（如香蕉+豆漿），修補肌肉。</span></li>}
                 </ul>
               </div>
