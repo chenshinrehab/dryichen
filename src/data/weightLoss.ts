@@ -252,7 +252,186 @@ const fullWeightLossData: WeightLossProgram[] = [
       }
     ]
   },
+ // -----------------------------------------------------
+  // 3. 兒童骨齡評估
+  // -----------------------------------------------------
+  {
+    slug: 'bone-age',
+    title: '兒童骨齡評估',
+    lastModified: '2026-01-31',
+    subtitle: '掌握黃金生長發育期',
+    description: '透過左手X光片判讀骨骼成熟度，預測成年身高，掌握黃金生長發育期。',
+    image: '/images/weight-loss/c.jpg',
+    features: ['性早熟', '生長遲緩', '想了解身高潛力的兒童'],
+    seoTitle: '新竹兒童骨齡檢查 - 性早熟/長高門診/身高預測 | 宸新復健科',
+    seoDescription: '新竹照骨齡推薦。免掛號免預約，隨到隨照。結合TW3法與AI大數據精準判讀，準確預測兒童成年身高。針對性早熟、生長遲緩提供專業評估與治療建議，把握孩子黃金轉骨期。',
+    keywords: ['新竹照骨齡', '兒童長高門診', '性早熟檢查', '生長遲緩', '預測身高', '骨齡X光', '新竹小兒內分泌'],
+    contentHtml: `
+   <p>擔心孩子長不高嗎？想知道是否有<strong>性早熟</strong>或<strong>生長遲緩</strong>的問題？孩子的成長只有一次，錯過了黃金期，可能就再也追不回來了。</p>
+    <br>
+<p>宸新復健科提供專業的<strong>兒童骨齡檢查</strong>服務。我們深知新竹家長對於孩子身高的焦慮，因此特別引進了醫學中心等級的評估系統。我們最大的特色是：<strong>不需要漫長等待、流程快速便捷</strong>，且輻射劑量極低，安全無虞。</p>
+    <br>
+<p>我們結合專業醫師經驗親自判讀與<strong>二代 AI 大數據</strong>，採用最符合亞洲兒童生長曲線的 <strong>TW3 法</strong>進行判讀。經由骨齡及父母身高，能精準預測孩子的成年身高潛力！目前已有破百名兒童參與，並獲得家長高度好評肯定。</p>
 
+
+<p><img src="/images/weight-loss/boneage/a.png" alt="兒童照骨齡檢查流程圖"></p>
+
+<div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+        📢 宸新復健科「骨齡專業評估」服務流程
+    </h2>
+    
+    <p style="font-size: 1.1rem; color: #78350f;">為了節省家長與孩子的寶貴時間，我們優化了看診流程。只需簡單三步驟，就能掌握孩子的生長密碼：</p>
+    
+    <br>
+    
+    <ul style="list-style: none; padding: 0; margin: 0; color: #92400e;">
+        <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0; font-weight: bold;">1</span>
+            <div>
+                <strong style="font-size: 1.2rem; color: #0891b2;">步驟 1：純照骨齡 (費用 $500)</strong>
+                <p style="margin-top: 0.5rem;">無需預先掛號，請於門診時間直接至櫃檯告知「要照骨齡」。我們將安排放射師為孩子拍攝左手掌 X 光片，過程僅需數秒鐘，無痛且輻射量極低。拍完即可離院，無需等待。</p>
+            </div>
+        </li>
+        <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0; font-weight: bold;">2</span>
+            <div>
+                <strong style="font-size: 1.2rem; color: #0891b2;">步驟 2：獲取判讀報告 (費用 +$500，共$1000)</strong>
+                <p style="margin-top: 0.5rem;">醫師將親自判讀 X 光片，結合 AI 大數據分析，產出一份完整的書面報告。報告內容包含：</p>
+                <ul style="list-style-type: disc; margin-left: 1.5rem; margin-top: 0.5rem; color: #78350f;">
+                    <li><strong>精確骨齡數據：</strong> 採用 TW3 法計分。</li>
+                    <li><strong>生長板閉合程度：</strong> 評估剩餘生長空間。</li>
+                    <li><strong>未來身高預測：</strong> 依據遺傳與骨齡推算。</li>
+                    <li><strong>醫師專業建議：</strong> 飲食、運動與睡眠指導。</li>
+                </ul>
+                <p style="margin-top: 0.5rem; color: #dc2626; font-weight: bold;">※ 此步驟不需看診，報告完成後將以 Email 寄送給家長。</p>
+            </div>
+        </li>
+        <li style="margin-bottom: 0; display: flex; align-items: start;">
+            <span style="background: #f59e0b; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0; font-weight: bold;">3</span>
+            <div>
+                <strong style="font-size: 1.2rem; color: #0891b2;">步驟 3：醫師解說 (費用 +$500，共$1500)</strong>
+                <p style="margin-top: 0.5rem;">若您收到報告後有疑問，或是發現孩子有生長遲緩/性早熟的疑慮，可加選此項目。需先持有本院完整報告，於門診時間掛號，由醫師面對面詳細解說報告內容，並擬定後續追蹤或轉診計畫。</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3>🦴 為什麼要照骨齡？它能告訴我們什麼？</h3>
+<p>骨齡 (Bone Age) 是反映孩子生理發育成熟度最客觀的指標。雖然每個孩子的身分證年齡（日曆年齡）一樣在增加，但骨骼的成熟速度卻可能天差地遠。</p>
+
+<h3>1. 判斷生長潛力 (還有多少長高空間？)</h3>
+<p>骨齡與實際年齡的落差是關鍵。如果骨齡比實際年齡<strong>大（超前）</strong>，代表孩子發育較快，雖然現在可能比同學高，但生長板會提早閉合，反而導致成年身高不理想（小時了了，大未必佳）。反之，若骨齡較<strong>小（落後）</strong>，雖然現在矮小，但可能只是「大器晚成」，未來還有追趕的空間。</p>
+
+<h3>2. 檢測性早熟 (Precocious Puberty)</h3>
+<p>近年來受環境荷爾蒙與飲食西化影響，性早熟案例激增。如果<strong>女童在 8 歲前乳房發育、男童在 9 歲前睪丸變大</strong>，且骨齡明顯<strong>超前實際年齡 2 歲以上</strong>，就必須高度懷疑是性早熟，需積極介入治療。</p>
+
+<h3>3. 預測成年身高 (Adult Height Prediction)</h3>
+<p>這是家長最關心的。透過骨齡，我們可以利用公式推算出孩子未來「大概」能長多高。雖然這只是預測值，但能作為是否需要施打生長激素或調整生活作息的重要參考依據。</p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3>🔍 骨齡判讀大解密：GP 法 vs. TW3 法</h3>
+<p>在醫學上，判讀骨齡主要有兩大流派。這也是為什麼有些家長會疑惑：「為什麼我在 A 醫院照出來是 10 歲，去 B 診所照卻變成 11 歲？」原因就在於使用的判讀標準不同。</p>
+
+<p><img src="/images/weight-loss/boneage/b.jpg" alt="GP法及TW3法骨齡判讀比較"></p>
+
+<h4>1. GP 法 (Greulich-Pyle method)：圖譜比對法</h4>
+<ul>
+    <li><strong>原理：</strong> 就像「看圖說故事」。醫師拿著一本標準圖譜（類似相簿），將孩子的 X 光片與圖譜上的標準範例進行視覺比對，看哪一張最像，就判定為幾歲。</li>
+    <li><strong>優點：</strong> 速度極快（約 1 分鐘），全球通用，適合做大規模的初步快速篩檢。</li>
+    <li><strong>缺點：</strong>
+        <ul>
+            <li><strong>主觀性強：</strong> 非常依賴醫師個人的經驗與主觀判斷，誤差範圍較大。</li>
+            <li><strong>種族差異：</strong> GP 法是建立在 1930 年代美國白人兒童的數據上，直接套用在現代亞洲兒童身上，容易有高估或低估的情況。</li>
+        </ul>
+    </li>
+</ul>
+
+<h4>2. TW3 法 (Tanner-Whitehouse 3 method)：計分評估法</h4>
+<ul>
+    <li><strong>原理：</strong> 這是更為精細的「精準打分制」。醫師需仔細觀察手掌中 13 塊特定骨頭（如橈骨、尺骨、掌骨等）的發育形狀與等級，每一塊骨頭都有獨立的分數，最後將總分加總，對照表格換算出骨齡。</li>
+    <li><strong>優點：</strong>
+        <ul>
+            <li><strong>精準度高：</strong> 減少人為主觀誤差，是目前學術界公認的<strong>黃金標準 (Gold Standard)</strong>。</li>
+            <li><strong>適合亞洲人：</strong> 對於亞洲兒童的生長曲線有較好的預測力。</li>
+        </ul>
+    </li>
+    <li><strong>缺點：</strong> 判讀非常耗時（人工判讀需 15-20 分鐘以上），因此一般健保門診較難全面採用。</li>
+</ul>
+
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490;">💡 宸新復健科的選擇：TW3 法 + AI 輔助</h4>
+    <p style="margin-bottom: 0; color: #334155;">為了給家長最準確的答案，宸新堅持採用 <strong>TW3 標準</strong>。同時，我們引進了先進的 <strong>AI 骨齡判讀輔助系統</strong>，能快速精準地識別 13 塊骨頭的特徵並評分。這不僅保留了 TW3 法的高精確度，更大幅縮短了等待時間，讓您能快速拿到專業且可信賴的報告。</p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3>📝 家長必看！醫師的兒童長高懶人包</h3>
+<p>照完骨齡只是第一步，重點是回家後該怎麼做？林羿辰醫師特別整理了「長高三大法寶」，幫助孩子突破遺傳限制：</p>
+
+<h3>1. 睡眠：生長激素的黃金期</h3>
+<p>生長激素的分泌高峰在<strong>夜間 10 點到凌晨 2 點</strong>的深層睡眠期。
+<br><strong>✅ 醫師建議：</strong> 孩子最好在晚上 9:30 前上床準備，10 點前熟睡。睡前一小時避免使用手機、平板，藍光會抑制褪黑激素，影響睡眠品質。</p>
+
+<h3>2. 運動：刺激生長板分裂</h3>
+<p>垂直律動性的運動最能刺激生長板。
+<br><strong>✅ 醫師建議：</strong>
+<ul>
+    <li><strong>跳繩：</strong> 最簡單有效，建議每天分次跳「年齡 × 100 下」。</li>
+    <li><strong>籃球/排球：</strong> 跳躍動作多，有助於拉伸骨骼。</li>
+    <li><strong>戶外活動：</strong> 曬太陽能合成維生素 D，幫助鈣質吸收，強化骨骼。</li>
+</ul>
+</p>
+
+<h3>3. 飲食：遠離甜食炸物</h3>
+<p>這點最重要！<strong>「糖分」是生長激素的殺手。</strong> 當血糖升高時，生長激素的分泌就會被抑制長達 2-4 小時。
+<br><strong>✅ 醫師建議：</strong>
+<ul>
+    <li><strong>戒含糖飲料：</strong> 這是長不高的最大元兇。</li>
+    <li><strong>少吃油炸：</strong> 炸雞、薯條易導致肥胖與性早熟。</li>
+    <li><strong>多吃蛋白質：</strong> 蛋、豆、魚、肉、奶是生長的原料。</li>
+    <li><strong>補充鈣質：</strong> 每天兩杯牛奶（或無糖優格、起司）。</li>
+</ul>
+</p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+    <h3 style="color: #047857; margin-top: 0;">👨‍⚕️ 把握黃金成長期，現在就來檢測！</h3>
+    <p style="color: #334155; margin-bottom: 1.5rem;">孩子的成長不能等，早一點發現問題，就多一分長高的機會。歡迎隨時至新竹宸新復健科櫃檯，告知要進行「骨齡評估」，我們將竭誠為您服務。</p>
+    <p style="font-weight: bold; color: #059669;">不需預約，隨到隨照，給孩子一個長高的機會！</p>
+</div>
+    `,
+    whyChooseUs: [
+      '<strong>免預約、免掛號</strong>：門診時間來馬上照，省去醫院排隊時間',
+      '<strong>精準判讀</strong>：醫師親自使用 TW3 法判讀及二代 AI 輔助，比傳統 GP 法更準確',
+      '<strong>彈性收費</strong>：依照需求階段性選擇付費，不強迫推銷'
+    ],
+    programBenefits: [
+      '準確度高，適合早期發現生長遲緩問題',
+      '更能反映真實的身高潛力，避免錯過治療黃金期',
+      'AI 模板更符合現代亞洲兒童生長曲線'
+    ],
+    benefitsTitle: '為什麼選擇 TW3 法？',
+    benefitsIconClass: 'fa-solid fa-check-circle text-green-500',
+    qaList: [
+      {
+        question: '照骨齡會有輻射影響嗎？',
+        answer: '請家長放心。拍攝左手掌骨的X光輻射劑量極低（約 0.001 毫西弗），相當於搭飛機飛行 10 分鐘所接收的背景輻射量，對兒童身體幾乎沒有影響。'
+      },
+      {
+        question: '幾歲適合做骨齡檢查？',
+        answer: '一般建議 5 歲以上即可進行評估。若發現孩子身高百分位低於 3%、一年長高不到 4 公分，或是出現性早熟徵兆（如女生胸部發育、男生睪丸變大），應儘早檢查。'
+      },
+      {
+        question: '如果骨齡超前或落後怎麼辦？',
+        answer: '骨齡超前可能代表性早熟，雖然現在長得高，但生長板可能提早閉合導致成人身高矮小；骨齡落後則可能與營養或內分泌有關。醫師會根據個別狀況，提供飲食、運動、睡眠或轉介藥物治療的建議。'
+      }
+    ]
+  },
   // -----------------------------------------------------
   // 2. 週纖達 (Ozempic/Wegovy)
   // -----------------------------------------------------
@@ -443,188 +622,9 @@ const fullWeightLossData: WeightLossProgram[] = [
         answer: '不需要。週纖達是長效型藥物，一週只需要皮下注射一次，非常方便，不用擔心每天忘記吃藥的問題。'
       }
     ]
-  },
-
-  // -----------------------------------------------------
-  // 3. 兒童骨齡評估
-  // -----------------------------------------------------
-  {
-    slug: 'bone-age',
-    title: '兒童骨齡評估',
-    lastModified: '2026-01-21',
-    subtitle: '掌握黃金生長發育期',
-    description: '透過左手X光片判讀骨骼成熟度，預測成年身高，掌握黃金生長發育期。',
-    image: '/images/weight-loss/c.jpg',
-    features: ['性早熟', '生長遲緩', '想了解身高潛力的兒童'],
-    seoTitle: '新竹兒童骨齡檢查 - 性早熟/長高門診/身高預測 | 宸新復健科',
-    seoDescription: '新竹照骨齡推薦。免掛號免預約，隨到隨照。結合TW3法與AI大數據精準判讀，準確預測兒童成年身高。針對性早熟、生長遲緩提供專業評估與治療建議，把握孩子黃金轉骨期。',
-    keywords: ['新竹照骨齡', '兒童長高門診', '性早熟檢查', '生長遲緩', '預測身高', '骨齡X光', '新竹小兒內分泌'],
-    contentHtml: `
-   <p>擔心孩子長不高嗎？想知道是否有<strong>性早熟</strong>或<strong>生長遲緩</strong>的問題？孩子的成長只有一次，錯過了黃金期，可能就再也追不回來了。</p>
-    <br>
-<p>宸新復健科提供專業的<strong>兒童骨齡檢查</strong>服務。我們深知新竹家長對於孩子身高的焦慮，因此特別引進了醫學中心等級的評估系統。我們最大的特色是：<strong>不需要漫長等待、流程快速便捷</strong>，且輻射劑量極低，安全無虞。</p>
-    <br>
-<p>我們結合專業醫師經驗與<strong>二代 AI 大數據</strong>，採用最符合亞洲兒童生長曲線的 <strong>TW3 法</strong>進行判讀。經由骨齡及父母身高，能精準預測孩子的成年身高潛力！目前已有破百名兒童參與，並獲得家長高度好評肯定。</p>
-
-
-<p><img src="/images/weight-loss/boneage/a.jpg" alt="兒童照骨齡檢查流程圖"></p>
-
-<div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
-        📢 宸新復健科「骨齡專業評估」服務流程
-    </h2>
-    
-    <p style="font-size: 1.1rem; color: #78350f;">為了節省家長與孩子的寶貴時間，我們優化了看診流程。只需簡單三步驟，就能掌握孩子的生長密碼：</p>
-    
-    <br>
-    
-    <ul style="list-style: none; padding: 0; margin: 0; color: #92400e;">
-        <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
-            <span style="background: #f59e0b; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0; font-weight: bold;">1</span>
-            <div>
-                <strong style="font-size: 1.2rem; color: #0891b2;">步驟 1：純照骨齡 (費用 $500)</strong>
-                <p style="margin-top: 0.5rem;">無需預先掛號，請於門診時間直接至櫃檯告知「要照骨齡」。我們將安排放射師為孩子拍攝左手掌 X 光片，過程僅需數秒鐘，無痛且輻射量極低。拍完即可離院，無需等待。</p>
-            </div>
-        </li>
-        <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
-            <span style="background: #f59e0b; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0; font-weight: bold;">2</span>
-            <div>
-                <strong style="font-size: 1.2rem; color: #0891b2;">步驟 2：獲取判讀報告 (費用 +$500，共$1000)</strong>
-                <p style="margin-top: 0.5rem;">醫師將親自判讀 X 光片，結合 AI 大數據分析，產出一份完整的書面報告。報告內容包含：</p>
-                <ul style="list-style-type: disc; margin-left: 1.5rem; margin-top: 0.5rem; color: #78350f;">
-                    <li><strong>精確骨齡數據：</strong> 採用 TW3 法計分。</li>
-                    <li><strong>生長板閉合程度：</strong> 評估剩餘生長空間。</li>
-                    <li><strong>未來身高預測：</strong> 依據遺傳與骨齡推算。</li>
-                    <li><strong>醫師專業建議：</strong> 飲食、運動與睡眠指導。</li>
-                </ul>
-                <p style="margin-top: 0.5rem; color: #dc2626; font-weight: bold;">※ 此步驟不需看診，報告完成後將以 Email 寄送給家長。</p>
-            </div>
-        </li>
-        <li style="margin-bottom: 0; display: flex; align-items: start;">
-            <span style="background: #f59e0b; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0; font-weight: bold;">3</span>
-            <div>
-                <strong style="font-size: 1.2rem; color: #0891b2;">步驟 3：醫師解說 (費用 +$500，共$1500)</strong>
-                <p style="margin-top: 0.5rem;">若您收到報告後有疑問，或是發現孩子有生長遲緩/性早熟的疑慮，可加選此項目。需先持有本院完整報告，於門診時間掛號，由醫師面對面詳細解說報告內容，並擬定後續追蹤或轉診計畫。</p>
-            </div>
-        </li>
-    </ul>
-</div>
-
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-
-<h3>🦴 為什麼要照骨齡？它能告訴我們什麼？</h3>
-<p>骨齡 (Bone Age) 是反映孩子生理發育成熟度最客觀的指標。雖然每個孩子的身分證年齡（日曆年齡）一樣在增加，但骨骼的成熟速度卻可能天差地遠。</p>
-
-<h3>1. 判斷生長潛力 (還有多少長高空間？)</h3>
-<p>骨齡與實際年齡的落差是關鍵。如果骨齡比實際年齡<strong>大（超前）</strong>，代表孩子發育較快，雖然現在可能比同學高，但生長板會提早閉合，反而導致成年身高不理想（小時了了，大未必佳）。反之，若骨齡較<strong>小（落後）</strong>，雖然現在矮小，但可能只是「大器晚成」，未來還有追趕的空間。</p>
-
-<h3>2. 檢測性早熟 (Precocious Puberty)</h3>
-<p>近年來受環境荷爾蒙與飲食西化影響，性早熟案例激增。如果<strong>女童在 8 歲前乳房發育、男童在 9 歲前睪丸變大</strong>，且骨齡明顯<strong>超前實際年齡 2 歲以上</strong>，就必須高度懷疑是性早熟，需積極介入治療。</p>
-
-<h3>3. 預測成年身高 (Adult Height Prediction)</h3>
-<p>這是家長最關心的。透過骨齡，我們可以利用公式推算出孩子未來「大概」能長多高。雖然這只是預測值，但能作為是否需要施打生長激素或調整生活作息的重要參考依據。</p>
-
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-
-<h3>🔍 骨齡判讀大解密：GP 法 vs. TW3 法</h3>
-<p>在醫學上，判讀骨齡主要有兩大流派。這也是為什麼有些家長會疑惑：「為什麼我在 A 醫院照出來是 10 歲，去 B 診所照卻變成 11 歲？」原因就在於使用的判讀標準不同。</p>
-
-<p><img src="/images/weight-loss/boneage/b.jpg" alt="GP法及TW3法骨齡判讀比較"></p>
-
-<h4>1. GP 法 (Greulich-Pyle method)：圖譜比對法</h4>
-<ul>
-    <li><strong>原理：</strong> 就像「看圖說故事」。醫師拿著一本標準圖譜（類似相簿），將孩子的 X 光片與圖譜上的標準範例進行視覺比對，看哪一張最像，就判定為幾歲。</li>
-    <li><strong>優點：</strong> 速度極快（約 1 分鐘），全球通用，適合做大規模的初步快速篩檢。</li>
-    <li><strong>缺點：</strong>
-        <ul>
-            <li><strong>主觀性強：</strong> 非常依賴醫師個人的經驗與主觀判斷，誤差範圍較大。</li>
-            <li><strong>種族差異：</strong> GP 法是建立在 1930 年代美國白人兒童的數據上，直接套用在現代亞洲兒童身上，容易有高估或低估的情況。</li>
-        </ul>
-    </li>
-</ul>
-
-<h4>2. TW3 法 (Tanner-Whitehouse 3 method)：計分評估法</h4>
-<ul>
-    <li><strong>原理：</strong> 這是更為精細的「精準打分制」。醫師需仔細觀察手掌中 13 塊特定骨頭（如橈骨、尺骨、掌骨等）的發育形狀與等級，每一塊骨頭都有獨立的分數，最後將總分加總，對照表格換算出骨齡。</li>
-    <li><strong>優點：</strong>
-        <ul>
-            <li><strong>精準度高：</strong> 減少人為主觀誤差，是目前學術界公認的<strong>黃金標準 (Gold Standard)</strong>。</li>
-            <li><strong>適合亞洲人：</strong> 對於亞洲兒童的生長曲線有較好的預測力。</li>
-        </ul>
-    </li>
-    <li><strong>缺點：</strong> 判讀非常耗時（人工判讀需 15-20 分鐘以上），因此一般健保門診較難全面採用。</li>
-</ul>
-
-<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-    <h4 style="margin-top: 0; color: #0e7490;">💡 宸新復健科的選擇：TW3 法 + AI 輔助</h4>
-    <p style="margin-bottom: 0; color: #334155;">為了給家長最準確的答案，宸新堅持採用 <strong>TW3 標準</strong>。同時，我們引進了先進的 <strong>AI 骨齡判讀輔助系統</strong>，能快速精準地識別 13 塊骨頭的特徵並評分。這不僅保留了 TW3 法的高精確度，更大幅縮短了等待時間，讓您能快速拿到專業且可信賴的報告。</p>
-</div>
-
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-
-<h3>📝 家長必看！醫師的兒童長高懶人包</h3>
-<p>照完骨齡只是第一步，重點是回家後該怎麼做？林羿辰醫師特別整理了「長高三大法寶」，幫助孩子突破遺傳限制：</p>
-
-<h3>1. 睡眠：生長激素的黃金期</h3>
-<p>生長激素的分泌高峰在<strong>夜間 10 點到凌晨 2 點</strong>的深層睡眠期。
-<br><strong>✅ 醫師建議：</strong> 孩子最好在晚上 9:30 前上床準備，10 點前熟睡。睡前一小時避免使用手機、平板，藍光會抑制褪黑激素，影響睡眠品質。</p>
-
-<h3>2. 運動：刺激生長板分裂</h3>
-<p>垂直律動性的運動最能刺激生長板。
-<br><strong>✅ 醫師建議：</strong>
-<ul>
-    <li><strong>跳繩：</strong> 最簡單有效，建議每天分次跳「年齡 × 100 下」。</li>
-    <li><strong>籃球/排球：</strong> 跳躍動作多，有助於拉伸骨骼。</li>
-    <li><strong>戶外活動：</strong> 曬太陽能合成維生素 D，幫助鈣質吸收，強化骨骼。</li>
-</ul>
-</p>
-
-<h3>3. 飲食：遠離甜食炸物</h3>
-<p>這點最重要！<strong>「糖分」是生長激素的殺手。</strong> 當血糖升高時，生長激素的分泌就會被抑制長達 2-4 小時。
-<br><strong>✅ 醫師建議：</strong>
-<ul>
-    <li><strong>戒含糖飲料：</strong> 這是長不高的最大元兇。</li>
-    <li><strong>少吃油炸：</strong> 炸雞、薯條易導致肥胖與性早熟。</li>
-    <li><strong>多吃蛋白質：</strong> 蛋、豆、魚、肉、奶是生長的原料。</li>
-    <li><strong>補充鈣質：</strong> 每天兩杯牛奶（或無糖優格、起司）。</li>
-</ul>
-</p>
-
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-
-<div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
-    <h3 style="color: #047857; margin-top: 0;">👨‍⚕️ 把握黃金成長期，現在就來檢測！</h3>
-    <p style="color: #334155; margin-bottom: 1.5rem;">孩子的成長不能等，早一點發現問題，就多一分長高的機會。歡迎隨時至新竹宸新復健科櫃檯，告知要進行「骨齡評估」，我們將竭誠為您服務。</p>
-    <p style="font-weight: bold; color: #059669;">不需預約，隨到隨照，給孩子一個長高的機會！</p>
-</div>
-    `,
-    whyChooseUs: [
-      '<strong>免預約、免掛號</strong>：門診時間來馬上照，省去醫院排隊時間',
-      '<strong>精準判讀</strong>：使用 TW3 法判讀及二代 AI 輔助，比傳統 GP 法更準確',
-      '<strong>彈性收費</strong>：依照需求階段性選擇付費，不強迫推銷'
-    ],
-    programBenefits: [
-      '準確度高，適合早期發現生長遲緩問題',
-      '更能反映真實的身高潛力，避免錯過治療黃金期',
-      'AI 模板更符合現代亞洲兒童生長曲線'
-    ],
-    benefitsTitle: '為什麼選擇 TW3 法？',
-    benefitsIconClass: 'fa-solid fa-check-circle text-green-500',
-    qaList: [
-      {
-        question: '照骨齡會有輻射影響嗎？',
-        answer: '請家長放心。拍攝左手掌骨的X光輻射劑量極低（約 0.001 毫西弗），相當於搭飛機飛行 10 分鐘所接收的背景輻射量，對兒童身體幾乎沒有影響。'
-      },
-      {
-        question: '幾歲適合做骨齡檢查？',
-        answer: '一般建議 5 歲以上即可進行評估。若發現孩子身高百分位低於 3%、一年長高不到 4 公分，或是出現性早熟徵兆（如女生胸部發育、男生睪丸變大），應儘早檢查。'
-      },
-      {
-        question: '如果骨齡超前或落後怎麼辦？',
-        answer: '骨齡超前可能代表性早熟，雖然現在長得高，但生長板可能提早閉合導致成人身高矮小；骨齡落後則可能與營養或內分泌有關。醫師會根據個別狀況，提供飲食、運動、睡眠或轉介藥物治療的建議。'
-      }
-    ]
   }
+
+ 
 ];
 
 // =======================================================
