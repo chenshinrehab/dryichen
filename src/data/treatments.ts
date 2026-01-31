@@ -14,6 +14,7 @@ export interface TreatmentMetadata {
   features: string[];   
   applicableConditions: string[];
   lastModified?: string;
+  tags?: string[];
   // SEO 欄位
   seoTitle?: string;
   seoDescription?: string;
