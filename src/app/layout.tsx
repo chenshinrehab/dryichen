@@ -6,13 +6,11 @@ import Footer from '@/components/Footer'
 
 const inter = Inter({ 
   subsets: ['latin'],
-  display: 'swap', // 已確保 swap 屬性存在，減少 FCP 延遲
+  display: 'swap',
 })
 
-// --- 安全處理網址 ---
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim();
 
-// --- 1. Viewport 配置 ---
 export const viewport: Viewport = {
   themeColor: '#0f172a',
   width: 'device-width',
@@ -20,30 +18,23 @@ export const viewport: Viewport = {
   maximumScale: 5,
 }
 
-// --- 2. SEO Metadata 配置 ---
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-
   title: {
     default: '新竹宸新復健科診所 - 骨科/復健/兒童早療推薦 | 林羿辰醫師',
     template: '%s | 新竹宸新復健科'
   },
   description: '新竹推薦復健科，由台大醫師林羿辰院長親自看診。提供高解析超音波導引PRP注射、聚焦式震波治療、徒手物理治療與兒童骨齡生長評估。',
   keywords: ['新竹復健科', '新竹骨科', '林羿辰醫師', 'PRP注射', '震波治療', '兒童早療', '新竹物理治療', '竹科復健推薦'],
-
-  // Google Search Console 驗證
   verification: {
     google: null, 
   },
-
   formatDetection: {
     telephone: false,
   },
-
   alternates: {
     canonical: './',
   },
-
   openGraph: {
     type: 'website',
     locale: 'zh_TW',
@@ -60,19 +51,16 @@ export const metadata: Metadata = {
       },
     ],
   },
-  
   twitter: {
     card: 'summary_large_image',
     title: '新竹宸新復健科診所 - 林羿辰醫師',
     description: '專業 PRP 注射、震波治療與兒童早療評估。',
     images: ['/images/og-default.jpg'],
   },
-
   icons: {
     icon: '/favicon.png',
     apple: '/apple-touch-icon.png',
   },
-
   robots: {
     index: true,
     follow: true,
@@ -91,7 +79,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  // --- 3. JSON-LD 在地化結構化資料 ---
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'MedicalClinic',
@@ -124,34 +111,24 @@ export default function RootLayout({
   return (
     <html lang="zh-TW" className="scroll-smooth">
       <head>
-        {/* JSON-LD 注入 */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
-        {/* ✨ 效能優化：根據 PageSpeed 建議補上 Preconnect ✨ */}
+        {/* 預連線優化 */}
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
-        {/* 針對 YouTube 預先連結 (解決報告中 LCP 節省 300ms 的建議) */}
         <link rel="preconnect" href="https://www.youtube-nocookie.com" />
-        <link rel="preconnect" href="https://s.ytimg.com" />
         
-        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
-        
-        {/* ✨ 修正點：改為非同步載入 FontAwesome (解決 910ms 轉譯封鎖問題) ✨ */}
+        {/* ✨ 修正點：改回同步載入，確保所有圖示（FB, IG, Threads, 放大鏡）立即顯示 ✨ */}
         <link 
           rel="stylesheet" 
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-          media="print" 
-          // @ts-ignore
-          onLoad="this.media='all'"
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
         />
-        <noscript>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-        </noscript>
         
         <style>{`
           img { height: auto; }
