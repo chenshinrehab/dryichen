@@ -47,9 +47,9 @@ export default function Footer() {
             Part 1: 快速導覽 (圖片區)
            ========================================= */}
         <div className="mb-8">
-            <h4 className="text-2xl font-bold font-sans text-white text-center mb-6 tracking-wide">
+            <h3 className="text-2xl font-bold font-sans text-white text-center mb-6 tracking-wide">
                 <span className="text-cyan-400">快速</span>導覽
-            </h4>
+            </h3>
             
             {/* ✨ 3. Class 名稱改回 animate-on-scroll (配合首頁組件) */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 px-2 max-w-6xl mx-auto">

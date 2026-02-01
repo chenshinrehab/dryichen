@@ -39,7 +39,13 @@ const fullNewsData: NewsPost[] = [
     seoDescription: '攀岩愛好者必看！醫師整理六大常見攀岩傷害：A2滑車韌帶撕裂、肩夾擠、高爾夫球肘、TFCC手腕痛及折膝導致的半月板損傷。結合 Alex Honnold 挑戰 101 情境衛教。',
     keywords: ['攀岩', '運動傷害', 'Alex Honnold', '手指滑車', '滑車韌帶', '肩旋轉肌', '半月板', '復健'],
     contentHtml: `
-    <img src="/images/news/article/climb.jpg" alt="攀岩常見運動傷害" />
+    <Image 
+  src="/images/news/article/climb.jpg" 
+  alt="【運動常見傷害 - 攀岩】"
+  fill // 取代原本的 absolute inset-0 w-full h-full
+  className="object-cover transition-transform duration-300 group-hover:scale-110" // 保留你的樣式
+  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // ✨ 關鍵：告訴瀏覽器只要下載小圖
+/>
     <p>攀岩是近年來超級熱門的運動，不僅納入奧運項目，最近無繩獨攀大神 Alex Honnold 成功攀登台北 101 的壯舉更是震撼全台！</p><br>
   <p>🏥 門診中常遇到受傷的岩友，不同於滑雪多傷下肢，攀岩因運動特性，受傷部位多集中在上肢。常見原因不外乎：<strong>過度使用、休息不足或墜落姿勢不當</strong>。</p>
   

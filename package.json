@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "go": "git add . && git commit -m \"Update: Remove next-sitemap\" && git push"
+    "go": "git add . && git commit -m \"Update: Optimization config\" && git push"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
@@ -31,5 +31,11 @@
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.5.0"
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not op_mini all",
+    "> 0.2%"
+  ]
 }

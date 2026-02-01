@@ -9,12 +9,12 @@ const inter = Inter({
   display: 'swap', 
 })
 
-// --- 安全處理網址 (防禦環境變數空白導致的報錯) ---
+// --- 安全處理網址 ---
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim();
 
-// --- 1. Viewport 配置 (Next.js 14.2+ 標準) ---
+// --- 1. Viewport 配置 ---
 export const viewport: Viewport = {
-  themeColor: '#0f172a', // 配合你的 bg-slate-900，讓手機網址列顏色統一
+  themeColor: '#0f172a',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
@@ -33,10 +33,9 @@ export const metadata: Metadata = {
 
   // Google Search Console 驗證
   verification: {
-    google: null, // DNS 已驗證，此處留空安全
+    google: null, 
   },
 
-  // 防止電話號碼在 iOS 上被強制變色或產生奇怪樣式
   formatDetection: {
     telephone: false,
   },
@@ -45,7 +44,6 @@ export const metadata: Metadata = {
     canonical: './',
   },
 
-  // Open Graph (FB/LINE 分享)
   openGraph: {
     type: 'website',
     locale: 'zh_TW',
@@ -63,7 +61,6 @@ export const metadata: Metadata = {
     ],
   },
   
-  // Twitter Card (Threads/X 分享大圖)
   twitter: {
     card: 'summary_large_image',
     title: '新竹宸新復健科診所 - 林羿辰醫師',
@@ -71,7 +68,6 @@ export const metadata: Metadata = {
     images: ['/images/og-default.jpg'],
   },
 
-  // 標題列圖示 (Favicon)
   icons: {
     icon: '/favicon.png',
     apple: '/apple-touch-icon.png',
@@ -95,7 +91,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  // --- 3. JSON-LD 在地化結構化資料 (最專業的 SEO 強化) ---
+  // --- 3. JSON-LD 在地化結構化資料 ---
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'MedicalClinic',
@@ -138,24 +134,16 @@ export default function RootLayout({
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
         <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
         
-        {/* ✨ 效能強化：FontAwesome 非同步載入 (解決 FCP 8.6秒問題) */}
-        {/* 1. 先用 media="print" 騙過瀏覽器不阻塞渲染 */}
-        {/* 2. 下載完後透過 onLoad 切換回 all 顯示圖示 */}
+        {/* ✨ 修正 1：改回標準載入模式 (確保圖示 100% 顯示) */}
         <link 
           rel="stylesheet" 
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-          media="print" 
-          // @ts-expect-error: optimization trick
-          onLoad="this.media='all'" 
         />
-        {/* 3. 無腳本環境的備案 */}
-        <noscript>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-        </noscript>
         
-        {/* 圖片渲染優化樣式 */}
+        {/* ✨ 修正 2：移除了 content-visibility: auto (避免小圖示消失) */}
+        {/* 只保留 height: auto 防止跑版 */}
         <style>{`
-          img { content-visibility: auto; height: auto; }
+          img { height: auto; }
         `}</style>
       </head>
       

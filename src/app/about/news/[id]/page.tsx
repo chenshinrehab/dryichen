@@ -1,13 +1,14 @@
 // src/app/about/news/[id]/page.tsx
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image' // ✨ 新增：引入 Next.js 圖片優化組件
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { newsList, getNewsById } from '@/data/news'
 import ShareButtons from '@/components/ShareButtons'
 
 // 定義常數，方便未來修改
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
 
 interface PageProps { params: { id: string } }
 
@@ -64,8 +65,8 @@ export default function NewsDetailPage({ params }: PageProps) {
   const jsonLdData = {
     '@context': 'https://schema.org',
     '@type': isAnnouncement ? 'NewsArticle' : 'MedicalWebPage',
-    '@id': `${currentUrl}#webpage`, // 建議加上 ID
-    url: currentUrl,                // 建議明確宣告 URL
+    '@id': `${currentUrl}#webpage`,
+    url: currentUrl,
     [isAnnouncement ? 'headline' : 'name']: post.title,
     image: [post.coverImage],
     datePublished: post.date,
@@ -195,7 +196,7 @@ export default function NewsDetailPage({ params }: PageProps) {
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
        <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 fade-in relative z-10">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-             
+              
             {/* 麵包屑/返回按鈕 */}
             <Link href="/about/news" className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group">
                 <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回列表
@@ -203,19 +204,18 @@ export default function NewsDetailPage({ params }: PageProps) {
 
             {/* 文章主體卡片 */}
             <div className="bg-slate-800/80 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden shadow-2xl">
-               
+                
               <div className="p-4 md:p-10">
 
                   {/* Header 區塊：仿照疾病頁面樣式 */}
                   <div className="mb-10 border-l-4 border-cyan-500 pl-4 bg-gradient-to-r from-slate-900/80 to-transparent py-6 rounded-r-xl flex flex-col md:flex-row md:items-center gap-6">
                       
-
                       {/* 標題與 Metadata */}
                       <div className="flex-grow">
                           <h1 className="text-3xl md:text-5xl font-bold font-sans text-white mb-4 tracking-wide leading-tight md:leading-[1.2]">
                               {post.title}
                           </h1>
-                           
+                            
                           <div className="flex flex-wrap items-center gap-3">
                               {/* 分類標籤 */}
                               <span className={`px-3 py-1 rounded-full text-sm font-bold border ${
@@ -227,35 +227,50 @@ export default function NewsDetailPage({ params }: PageProps) {
                               </span>
 
                               {/* 日期 */}
-                              <span className="text-slate-400 text-sm flex items-center bg-slate-700/50 px-3 py-1 rounded-full border border-slate-600">
+                              <span className="text-slate-300 text-sm flex items-center bg-slate-700/50 px-3 py-1 rounded-full border border-slate-600">
                                 <i className="fa-regular fa-calendar mr-2"></i>{post.date}
                               </span>
                           </div>
                       </div>
                   </div>
 
-                  {/* 文章內容：使用 article-content 類別 */}
+                  {/* ✨ 新增：LCP 優化主圖區域 (如果有的話) ✨ */}
+                  {/* 這能解決 PageSpeed 抱怨圖片載入太慢的問題 */}
+                  {post.coverImage && (
+                    <div className="relative w-full h-48 md:h-[400px] mb-8 rounded-xl overflow-hidden shadow-lg border border-slate-700/50">
+                      <Image
+                        src={post.coverImage}
+                        alt={post.title}
+                        fill
+                        priority // 關鍵：告訴瀏覽器這是最重要的圖
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                      />
+                    </div>
+                  )}
+
+                  {/* 文章內容 */}
                   <div className="article-content text-slate-300 leading-relaxed text-lg pb-6">
                       <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
                   </div>
 
               </div>
 
-                          {/* 撰文者資訊 */}
-                          <div className="text-right mt-0 pb-4 pr-2">
+                  {/* 撰文者資訊 */}
+                  <div className="text-right mt-0 pb-4 pr-2">
                     <div className="inline-block text-slate-500 text-[11px] md:text-xs space-y-0.5">
                       <p><span className="mr-2">撰文者 :</span><span className="font-medium text-slate-400">復健專科 宸新復健科院長 林羿辰醫師</span></p>
                       <p><span className="mr-2">資料來源 :</span><span className="font-medium text-slate-400">Pubmed</span></p>
                     </div>
                   </div>
 
-              {/* 底部分享區塊：仿照疾病頁面樣式 (含上方光暈) */}
+              {/* 底部分享區塊 */}
               <div className="bg-slate-900/80 p-8 md:p-12 border-t border-slate-700 text-center relative overflow-hidden">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent blur-sm"></div>
-                 
+                  
                 <h3 className="text-white font-bold text-2xl mb-3 relative z-10">覺得這篇文章有幫助嗎？</h3>
                 <p className="text-slate-400 mb-8 text-lg relative z-10">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
-                 
+                  
                 <div className="relative z-10">
                     <ShareButtons url={currentUrl} title={post.title} />
                 </div>
