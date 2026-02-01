@@ -8,7 +8,6 @@ import { newsList } from '@/data/news'
 import ScrollAnimation from '@/components/ScrollAnimation'
 
 
-
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw';
 
 export const metadata: Metadata = {
@@ -261,36 +260,20 @@ export default function Home() {
                <div className="bg-slate-800/60 border border-slate-700 rounded-xl p-6 md:p-8 mb-12 shadow-lg backdrop-blur-sm hover:border-cyan-500/30 transition-colors">
                   <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-stretch">
                       
-                  <div className="lg:w-4/12 w-full flex-shrink-0">
-  {/* 外層容器：定義 9:16 比例與樣式 */}
-  <div className="w-full relative aspect-[9/16] rounded-xl overflow-hidden border border-slate-600 shadow-xl bg-black">
-    <iframe
-      className="absolute inset-0 w-full h-full"
-      title="宸新復健科介紹"
-      src="https://www.youtube.com/embed/asqbvbEukOM"
-      srcDoc={`
-        <style>
-          * { padding: 0; margin: 0; overflow: hidden; background: #000; }
-          html, body { height: 100%; width: 100%; }
-          a { display: block; width: 100%; height: 100%; position: relative; }
-          img { 
-            position: absolute; width: 100%; height: 100%; 
-            top: 0; left: 0; object-fit: cover; /* 確保縮圖填滿 9:16 容器 */
-          }
-          span { 
-            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-            font: 48px/1.5 sans-serif; color: white; text-shadow: 0 0 0.5em black;
-            pointer-events: none;
-          }
-        </style>
-        <a href="https://www.youtube.com/embed/asqbvbEukOM?autoplay=1">
-          <img src="https://img.youtube.com/vi/asqbvbEukOM/maxresdefault.webp" alt="宸新復健科介紹">
-          <span>▶</span>
-        </a>
-      `}
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      {/* ✨ 修改重點：使用 YoutubeEmbed 元件 */}
+                      <div className="lg:w-4/12 w-full flex-shrink-0">
+  <div className="w-full h-full relative aspect-[9/16] rounded-xl overflow-hidden border border-slate-600 shadow-xl bg-black">
+    {/* 使用優化後的 srcDoc 邏輯取代原本的 YoutubeEmbed */}
+    <iframe 
+      width="100%" 
+      height="100%" 
+      src="https://www.youtube.com/embed/asqbvbEukOM" 
+      srcDoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}img{height:100%;object-fit:cover}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/asqbvbEukOM?autoplay=1><img src=https://i.ytimg.com/vi/asqbvbEukOM/frame0.jpg alt='宸新復健科介紹'><span>▶</span></a>"
+      title="宸新復健科介紹" 
+      frameBorder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
       allowFullScreen
+      className="w-full h-full"
       loading="lazy"
     ></iframe>
   </div>
