@@ -3,6 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
+import Image from 'next/image'
 import ClinicHoursModal from '@/components/ClinicHoursModal'
 // ✨ 1. 引入動畫組件
 import ScrollAnimation from '@/components/ScrollAnimation'
@@ -125,13 +126,18 @@ export default function DoctorsPage() {
                       
                       {/* 照片區域：增加稍微明顯的延遲 */}
                       <div className="w-full lg:w-[40%] relative aspect-[9/16] shrink-0 bg-slate-800 self-start animate-on-scroll delay-200">
-                          <img 
-                            src="/images/doctor/c.jpg"
-                            alt="新竹復健科推薦-林羿辰醫師-台大雙專科" 
-                            className="absolute inset-0 w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-700" 
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-slate-900/30"></div>
-                      </div>
+  <Image 
+    src="/images/doctor/c.jpg"
+    alt="新竹復健科推薦-林羿辰醫師-台大雙專科" 
+    fill // ✨ 取代原本的 w-full h-full
+    priority // ✨ 核心修正：告訴瀏覽器這是最重要的圖片，立即載入
+    // @ts-ignore
+    fetchPriority="high" // ✨ 強制瀏覽器排在所有資源的最前面下載
+    className="object-cover opacity-90 hover:opacity-100 transition-opacity duration-700" 
+    sizes="(max-width: 1024px) 100vw, 40vw" // ✨ 效能優化：讓手機版不載入電腦版的大圖
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-slate-900/30 pointer-events-none"></div>
+</div>
 
                       {/* 文字區域 */}
                       <div className="w-full lg:w-[60%] p-8 flex flex-col justify-center relative z-10 animate-on-scroll delay-300">

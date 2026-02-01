@@ -308,7 +308,7 @@ const matchedCases = casesData.filter(c => {
                 {/* 文章內容 */}
                 <div className="article-content text-slate-300 leading-relaxed text-lg pb-6">
                   {disease.contentHtml ? (
-                    <div dangerouslySetInnerHTML={{ __html: disease.contentHtml }} />
+                    <RichTextRenderer content={disease.contentHtml} />
                   ) : (
                     <p>{disease.content || disease.description}</p>
                   )}

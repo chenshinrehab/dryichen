@@ -166,7 +166,7 @@ export default function CaseDetailPage({ params }: PageProps) {
 
                   {/* 內容區 */}
                   <div className="article-content text-slate-300 leading-relaxed text-lg mb-6">
-                      <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+                      <RichTextRenderer content={post.contentHtml} />
                   </div>
                   
                   {/* 醫療免責聲明 */}
