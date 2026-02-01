@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 
 const inter = Inter({ 
   subsets: ['latin'],
-  display: 'swap', 
+  display: 'swap', // 已確保 swap 屬性存在，減少 FCP 延遲
 })
 
 // --- 安全處理網址 ---
@@ -130,18 +130,23 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
-        {/* 手機效能預連線 */}
-        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        {/* ✨ 修正點：根據 PageSpeed 報告補上 Preconnect ✨ */}
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
+        {/* ✨ 新增：針對 YouTube 預先連結 (解決報告中 TBT 2.1s 相關問題) ✨ */}
+        <link rel="preconnect" href="https://www.youtube.com" />
+        <link rel="preconnect" href="https://s.ytimg.com" />
+        
         <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
         
-        {/* ✨ 修正 1：改回標準載入模式 (確保圖示 100% 顯示) */}
+        {/* 標準載入模式 (確保圖示顯示) */}
         <link 
           rel="stylesheet" 
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
         />
         
-        {/* ✨ 修正 2：移除了 content-visibility: auto (避免小圖示消失) */}
-        {/* 只保留 height: auto 防止跑版 */}
         <style>{`
           img { height: auto; }
         `}</style>
