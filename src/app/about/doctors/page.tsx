@@ -59,16 +59,12 @@ export default function DoctorsPage() {
       image: `${SITE_URL}/images/main/a.jpg`, 
       url: currentUrl,
       
-      // ✅ 這裡是唯一的 description，確保不會重複報錯
+      // ✅ description 放這裡就好 (確保沒有重複)
       description: '台大醫學系畢業，具備復健科專科與骨鬆雙專科醫師資歷。',
       
-      // ✅ 補上電話 (解決 GSC 建議)
       telephone: '+886-3-564-7999', 
-      
-      // ✅ 補上價位 (解決 GSC 建議)
       priceRange: '$$', 
       
-      // ✅ 補上地址 (解決 GSC 建議)
       address: {
         '@type': 'PostalAddress',
         streetAddress: '東區光復路一段371號B1',
@@ -77,28 +73,31 @@ export default function DoctorsPage() {
         postalCode: '300'
       },
 
-      // ✅ 關聯診所資訊 (補齊截斷的部分)
       worksFor: {
         '@type': 'MedicalClinic',
         name: '宸新復健科診所',
-        url: SITE_URL
+        url: SITE_URL,
+        address: {
+            '@type': 'PostalAddress',
+            streetAddress: '東區光復路一段371號B1',
+            addressLocality: '新竹市',
+            addressRegion: 'TW',
+            postalCode: '300'
+        }
       },
       
-      // ✅ 學歷資訊
       alumniOf: { 
         '@type': 'EducationalOrganization', 
         name: '國立台灣大學醫學系' 
       },
       
-      // ✅ 專科關鍵字
       medicalSpecialty: [
         'Physiotherapy', 
         'SportsMedicine', 
         'Musculoskeletal'
-      ]
-      description: '台大醫學系畢業，具備復健科專科與骨鬆雙專科醫師資歷。'
+      ] // ✅ 陣列結束後沒有逗號，因為這已經是最後一項了
     }
-  }
+}
   return (
     <>
       <JsonLd data={jsonLdBreadcrumb} />
