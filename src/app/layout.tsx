@@ -73,7 +73,7 @@ export const metadata: Metadata = {
 
   // 標題列圖示 (Favicon)
   icons: {
-    icon: '/favicon.ico',
+    icon: '/favicon.png',
     apple: '/apple-touch-icon.png',
   },
 
