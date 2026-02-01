@@ -251,7 +251,7 @@ export default function NewsDetailPage({ params }: PageProps) {
 
                   {/* 文章內容 */}
                   <div className="article-content text-slate-300 leading-relaxed text-lg pb-6">
-                      <RichTextRenderer content={post.contentHtml} />
+                      <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
                   </div>
 
               </div>

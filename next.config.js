@@ -26,13 +26,19 @@ const nextConfig = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     
-    // ✨ 修正重點：加入 YouTube 圖片網域許可，解決 Runtime Error ✨
+    // ✨ 修正重點：同時許可 YouTube 與 QR Code 網域 ✨
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'img.youtube.com',
         port: '',
         pathname: '/vi/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'api.qrserver.com',
+        port: '',
+        pathname: '/**',
       },
     ],
   },

@@ -323,7 +323,7 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                     {/* 內容說明區 (主文) */}
                     <div className="article-content text-slate-300 leading-relaxed text-lg mb-10 pb-8 border-b border-slate-700/50">
                         {program.contentHtml ? (
-                            <RichTextRenderer content={program.contentHtml} />
+                            <div dangerouslySetInnerHTML={{ __html: program.contentHtml }} />
                         ) : (
                             <p>{program.description}</p>
                         )}
