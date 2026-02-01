@@ -8470,11 +8470,245 @@ export const diseaseCategories: DiseaseCategory[] = [
         images: [
           { src: '/images/diseases/ankle/gout/a.webp', alt: '痛風急性發作' }
         ]
-    }
+    },
+
+          {
+            id: 'tarsal-tunnel-syndrome',
+            slug: 'tarsal-tunnel-syndrome',
+            lastModified: '2026-02-01',
+            tags: ['腳底麻', '神經壓迫', '足踝痛'],
+            title: '跗骨隧道症候群',
+            description: '腳底莫名灼熱、刺麻，像有無數隻螞蟻在爬？這可能不是單純的足底筋膜炎，而是「腳踝的腕隧道症候群」！深入解析跗骨隧道症候群的成因，以及運用神經解套注射與結構調整的完整治療方案。',
+            contentHtml: `
+                <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：走路走久了，<strong>腳底開始出現「燒灼感」或「刺麻感」</strong>，脫下鞋子按摩也無法緩解？或是晚上睡覺時，腳底突然像被電到一樣，甚至麻到醒過來？許多人以為這是足底筋膜炎，拼命踩球、拉筋，結果症狀反而更嚴重。</p>
+                <br>
+                <p style="color: #e2e8f0 !important;">小心！這很可能不是筋膜的問題，而是<strong>「跗骨隧道症候群」</strong>。簡單來說，就是<strong>腳部的神經被「勒住」了</strong>，就像在腳底的腕隧道症候群。在宸新復健科，我們常遇到被誤診多年的患者，透過高解析超音波檢查，發現脛神經在腳踝內側腫脹受壓。我們利用<strong>神經解套注射</strong>釋放壓迫，並配合<strong>足踝力學調整</strong>，從結構解決腳麻的根源。</p>
+             
+                <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                    <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                        🔍 什麼是跗骨隧道？神經為什麼會卡住？
+                    </h2>
+                    
+                    <p style="font-size: 1.1rem; color: #78350f !important;">就像手腕有「腕隧道」，腳踝內側也有一個狹窄的通道，稱為「跗骨隧道」。</p>
+                    
+                    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                            <div style="color: #92400e !important;">
+                                <strong style="color: #dc2626 !important;">解剖位置：</strong> 
+                                <br>位於腳踝內側，由內踝骨頭（天花板）與屈肌支持帶（地板）所圍成的狹小空間。裡面擠滿了血管、肌腱，以及最重要的主角——<strong>脛神經</strong>。
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                            <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                            <div style="color: #92400e !important;">
+                                <strong style="color: #0891b2 !important;">發病機制：</strong> 
+                                <br>當這個隧道因為受傷腫脹、長骨刺、或是扁平足導致空間變窄，脛神經就會被周圍組織「勒緊」。神經缺血缺氧，就會產生異常放電，也就是您感覺到的<strong>「麻、痛、灼熱」</strong>。
+                            </div>
+                        </li>
+                    </ul>
+                   <p><img src="/images/diseases/ankle/tarsal/c.webp" alt="跗骨隧道症候群結構"style="width: 65%; height: auto;"></p>
+                </div>
+             
+                <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+             
+                <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：如何分辨是「神經痛」還是「筋膜炎」？</h3>
+                <p style="color: #e2e8f0 !important;">這兩者常被混淆，但疼痛的特質有明顯差異：</p>
+                
+                <div style="overflow-x: auto;">
+                  <table style="width: 100%; border-collapse: collapse; color: #e2e8f0; margin-top: 1rem;">
+                    <thead>
+                      <tr style="background-color: #1e293b; color: #38bdf8;">
+                        <th style="padding: 1rem; border: 1px solid #475569;">特徵</th>
+                        <th style="padding: 1rem; border: 1px solid #475569;">跗骨隧道症候群 (神經)</th>
+                        <th style="padding: 1rem; border: 1px solid #475569;">足底筋膜炎 (軟組織)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="padding: 1rem; border: 1px solid #475569; font-weight: bold;">疼痛性質</td>
+                        <td style="padding: 1rem; border: 1px solid #475569;">刺麻感、灼熱感、電流感、螞蟻爬行感</td>
+                        <td style="padding: 1rem; border: 1px solid #475569;">深層痠痛、像踩到釘子的銳利痛</td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 1rem; border: 1px solid #475569; font-weight: bold;">發生時間</td>
+                        <td style="padding: 1rem; border: 1px solid #475569;"><strong>越走越麻</strong>，甚至<strong>夜間休息時更痛</strong></td>
+                        <td style="padding: 1rem; border: 1px solid #475569;"><strong>早起下床第一步最痛</strong>，走一走會稍微緩解</td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 1rem; border: 1px solid #475569; font-weight: bold;">疼痛範圍</td>
+                        <td style="padding: 1rem; border: 1px solid #475569;">腳踝內側延伸到<strong>腳趾頭</strong>與腳底板</td>
+                        <td style="padding: 1rem; border: 1px solid #475569;">集中在<strong>腳跟</strong>與足弓處</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+      
+                <p style="color: #e2e8f0 !important; margin-top: 1.5rem;">
+                  <strong>簡單自我檢測 (Tinel's Sign)：</strong><br>
+                  用手指輕敲腳踝內側（內踝骨頭後下方）。如果輕敲會引發像電流一樣竄到腳底的刺麻感，那很可能就是跗骨隧道症候群。
+                </p>
+             <p><img src="/images/diseases/ankle/tarsal/b.webp" alt="跗骨隧道症候群疼痛處"style="width: 80%; height: auto;"></p>
+                <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+             
+                <h3 style="color: #f8fafc !important;">📢 誰是高風險族群？四大致病原因</h3>
+                <ul style="list-style: none; padding: 0; color: #e2e8f0 !important;">
+                    <li style="margin-bottom: 1.5rem;">
+                        <strong style="color: #22d3ee; font-size: 1.1rem;">1. 結構異常（扁平足/足外翻）：</strong><br>
+                        這是最常見的原因。當足弓塌陷，腳跟骨會向外翻，導致腳踝內側的韌帶被過度拉扯，隧道空間變扁、變窄，直接擠壓神經。
+                    </li>
+                    <li style="margin-bottom: 1.5rem;">
+                        <strong style="color: #22d3ee; font-size: 1.1rem;">2. 佔位性病變：</strong><br>
+                        隧道內長了不該長的東西，例如：腱鞘囊腫、靜脈曲張或是骨刺，佔據了神經的空間。
+                    </li>
+                    <li style="margin-bottom: 1.5rem;">
+                        <strong style="color: #22d3ee; font-size: 1.1rem;">3. 舊傷沾黏：</strong><br>
+                        曾經嚴重的腳踝扭傷，修復過程中產生的疤痕組織（纖維化）將神經與周圍組織「黏」在一起，導致神經失去滑動能力。
+                    </li>
+                    <li style="margin-bottom: 1.5rem;">
+                        <strong style="color: #22d3ee; font-size: 1.1rem;">4. 過度使用：</strong><br>
+                        長跑選手或需要久站的工作者，因屈肌支持帶反覆摩擦增厚，或脛後肌腫脹，導致壓力升高。
+                    </li>
+                </ul>
+      
+                <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+             
+                <h3 style="color: #f8fafc !important;">🛡️ 宸新全方位治療：撐開隧道，釋放神經</h3>
+                <p style="color: #e2e8f0 !important;">針對神經壓迫，單純吃止痛藥效果有限。我們採用<strong>「解套、修復、導正」</strong>三步驟治療策略。</p>
+             
+                <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+                    <h4 style="margin-top: 0; color: #0e7490 !important;">1. 立即減壓：<a href="/treatments/prp" class="text-cyan-400 hover:underline">神經解套注射</a></h4>
+                    <p style="margin-bottom: 0; color: #334155 !important;">
+                        這是治療此症最關鍵的技術。
+                        <br>
+                        <strong>治療原理：</strong> 醫師透過高解析超音波，精準定位被夾住的脛神經。在即時影像導引下，將低濃度葡萄糖水 (5%) 或 PRP 注射到神經周圍。
+                        <ul style="color: #334155 !important; margin-top: 0.5rem;">
+                            <li><strong>液體手術刀：</strong> 利用液體的壓力，將神經與周圍沾黏的組織「撐開」，創造緩衝空間。</li>
+                            <li><strong>營養神經：</strong> 高濃度葡萄糖能降低神經發炎反應，阻斷疼痛訊號。</li>
+                        </ul>
+                        <span style="font-size: 0.9rem; color: #0e7490; background-color: #cffafe; padding: 2px 8px; border-radius: 4px;">患者回饋：注射當下常感覺一股暖流流過腳底，麻痛感瞬間減輕。</span>
+                    </p>
+                </div>
+             
+                <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+                    <h4 style="margin-top: 0; color: #0e7490 !important;">2. 結構導正：<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手治療與動態矯正</a></h4>
+                    <p style="margin-bottom: 0; color: #334155 !important;">
+                        如果沒有解決扁平足或骨盆歪斜，神經很快又會被卡住。
+                        <br>
+                        <strong>治療重點：</strong>
+                         <ul style="color: #334155 !important; margin-top: 0.5rem;">
+                            <li><strong>關節鬆動：</strong> 調整距下關節 與舟狀骨位置，減少內側壓力。</li>
+                            <li><strong>筋膜放鬆：</strong> 鬆解小腿後側緊繃的肌肉（脛後肌），減少神經張力。</li>
+                        </ul>
+                    </p>
+                </div>
+      
+                <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+                    <h4 style="margin-top: 0; color: #0e7490 !important;">3. 長效支撐：<a href="/treatments/insoles" class="text-cyan-400 hover:underline">醫療級客製化鞋墊</a></h4>
+                    <p style="margin-bottom: 0; color: #334155 !important;">
+                       對於扁平足或足外翻引起的跗骨隧道症候群，鞋墊是<strong>必須</strong>的輔具。透過足弓支撐，將塌陷的「隧道天花板」撐起來，防止行走時神經反覆受壓。
+                    </p>
+                </div>
+             
+                <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+              <p><img src="/images/diseases/ankle/tarsal/d.webp" alt="跗骨隧道症候群居家運動"></p>
+                <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：神經滑動術與足踝運動</h3>
+                <p style="color: #e2e8f0 !important;">居家復健重點在於「放鬆小腿」與「增加神經延展性」。請在不引發劇烈刺痛的前提下進行。</p>
+             
+                <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">1. 脛神經滑動術</h4>
+                <div style="margin-bottom: 2rem;">
+                    <p style="color: #e2e8f0 !important;">
+                        <strong>目標：</strong> 像用牙線清潔牙縫一樣，讓神經在隧道內滑動，減少沾黏。
+                        <br>
+                        1. 坐在椅子上，患側腳伸直。<br>
+                        2. <strong>動作 A：</strong> 腳背勾起（腳趾朝向自己），同時頭往後仰。<br>
+                        3. <strong>動作 B：</strong> 腳背下壓（像踩油門），同時頭往下低（看肚子）。<br>
+                        4. 來回交替動作 A 與 B，動作要輕柔流暢，不要用力拉扯。<br>
+                        5. 重複 15-20 次。
+                    </p>
+                </div>
+             
+                <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">2. 小腿後側伸展</h4>
+                <div style="margin-bottom: 2rem;">
+                    <p style="color: #e2e8f0 !important;">
+                        <strong>目標：</strong> 放鬆小腿三頭肌，減輕跟腱與神經張力。
+                        <br>
+                        1. 找一面牆，雙手扶牆，呈弓箭步（前腳彎，後腳直）。<br>
+                        2. 痛的那隻腳在後方，腳跟踩死地板，腳尖朝向正前方（勿外八）。<br>
+                        3. 身體重心往前移，感覺小腿肚緊繃。<br>
+                        4. 停留 30 秒，重複 3 次。
+                    </p>
+                </div>
+      
+                <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">3. 腳趾抓毛巾</h4>
+                <div style="margin-bottom: 2rem;">
+                    <p style="color: #e2e8f0 !important;">
+                        <strong>目標：</strong> 強化足底小肌肉，建立足弓支撐力。
+                        <br>
+                        1. 坐姿，腳下放一條毛巾。<br>
+                        2. 用腳趾頭用力將毛巾抓皺、捲起，再放開。<br>
+                        3. 能夠訓練足內肌，減少足弓塌陷對神經的壓迫。<br>
+                        4. 每天做 3-5 分鐘。
+                    </p>
+                </div>
+   
+                <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">4. 屈膝小腿伸展 (深層比目魚肌)</h4>
+          <div style="margin-bottom: 2rem;">
+              <p style="color: #e2e8f0 !important;">
+                  <strong>目標：</strong> 放鬆深層的「比目魚肌」。這條肌肉如果緊繃，會直接壓迫經過跗骨隧道的神經與血管，是一般直腿伸展拉不到的死角。
+                  <br>
+                  1. 動作與第 2 招類似，雙手扶牆，一腳在前一腳在後。
+                  <br>
+                  2. <strong>關鍵差異：</strong> 身體重心下沉，將<strong>「後腳的膝蓋也慢慢彎曲」</strong>，但腳跟依然要踩死地板。
+                  <br>
+                  3. 您會發現痠痛拉扯點從「小腿肚」往下移到「腳踝上方與阿基里斯腱」的位置。
+                  <br>
+                  4. 這個動作能更精準放鬆隧道入口的壓力。停留 30 秒，重複 3 次。
+              </p>
+          </div>
+             
+                <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+             
+                <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+                    <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 腳底麻痛，不能只看腳底！</h3>
+                    <p style="color: #334155 !important; margin-bottom: 1.5rem;">跗骨隧道症候群常因長期忽視而導致神經永久性損傷。如果您發現腳底麻木感持續不退，甚至影響睡眠，請務必尋求專業協助。宸新復健科利用高階超音波診斷，搭配神經解套注射與力學矯正，助您擺脫腳麻困擾，重拾輕盈步伐！</p>
+                    <p style="font-weight: bold; color: #059669 !important;">懷疑自己是跗骨隧道症候群？立即預約醫師評估神經狀況！</p>
+                </div>
+            `,
+            symptoms: [
+              '腳底有灼熱感、刺痛感或麻木感，夜間痛醒',
+              '輕敲腳踝內側會有電流竄到腳底',
+              '久站或走路後症狀加劇，休息也不一定緩解',
+              '感覺鞋子裡好像有小石頭或襪子皺褶，但脫鞋看卻沒有'
+            ],
+            treatments: [
+              '休息與消炎藥物',
+              '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引神經解套注射</a>🔍️',
+              '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手治療 (關節鬆動/筋膜放鬆)</a>🔍️',
+              '客製化矯正鞋墊 (改善扁平足)'
+            ],
+            seoKeywords: [
+              '跗骨隧道症候群',
+              'Tarsal Tunnel Syndrome',
+              '腳底麻',
+              '腳底灼熱',
+              '神經解套注射',
+              '扁平足',
+              '足踝復健',
+              '脛神經壓迫'
+            ],
+            seoDescription: '腳底麻痛、灼熱不僅是足底筋膜炎，可能是跗骨隧道症候群！宸新復健科提供超音波導引神經解套注射，解除脛神經壓迫，搭配鞋墊改善扁平足，精準治療腳麻問題。',
+            images: [
+              {  src: '/images/diseases/ankle/tarsal/a.webp', alt: '跗骨隧道症候群疼痛位置示意圖'
+ }
+            ]
+          }
+        ]
+      }
 
     ]
-  }
-]
+  
+
 
 // ==========================================
 // ✨ 1. 自動化瘦身區 (給 Sitemap 與 列表頁 使用)

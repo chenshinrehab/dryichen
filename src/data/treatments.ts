@@ -1246,6 +1246,157 @@ const fullTreatmentsData: Treatment[] = [
 },
 
 {
+  slug: 'nerve-hydrodissection',
+  title: '超音波導引神經解套注射',
+  lastModified: '2026-02-01',
+  subtitle: '鬆開神經枷鎖，修復受損的關鍵',
+  description: '手指發麻、腳底刺痛卻找不出原因？這可能是神經受到周邊組織壓迫。宸新復健科運用高解析超音波導引，進行「神經解套注射」，以低濃度葡萄糖水撐開沾黏空間，並提供神經修復養分。包含腕隧道症候群、跗骨隧道症候群及關節積水抽吸，皆能精準處理。',
+  image: '/images/treatments/hydrodissection-cover.jpg',
+  features: ['神經修復', '非類固醇', '精準導引'],
+  seoTitle: '新竹神經解套注射 - 腕隧道/跗骨隧道/關節抽水 | 宸新復健科',
+  seoDescription: '新竹神經解套注射推薦。針對手麻腳麻、腕隧道症候群與跗骨隧道症候群，宸新復健科採用超音波導引神經解套術(Hydrodissection)。利用5%葡萄糖水剝離沾黏神經並供給養分，同時提供精準關節抽水服務，解決神經壓迫與關節腫脹問題。',
+  keywords: ['神經解套', '新竹復健科', '腕隧道症候群', '跗骨隧道症候群', '關節抽水', '超音波導引', '手麻治療', '腳底刺痛'],
+  youtubeVideoId: '', // 若有相關影片可填入
+  contentHtml: `
+    <p>你是否有過這種經驗：半夜睡覺手麻到醒過來，甩一甩才舒服一點？或是腳底莫名刺痛、灼熱，被當成足底筋膜炎治療許久卻不見起色？這些症狀的根源，往往不是肌肉或骨頭，而是<strong>「周邊神經夾擠」</strong>。</p>
+    <br>
+    <p>當神經在通過骨頭、韌帶或肌肉的狹窄隧道時，若因過度使用、受傷或發炎腫脹而受到壓迫，就會像被石頭壓住的水管一樣，導致缺血、缺氧，進而產生麻木、刺痛或無力感。傳統治療常依賴止痛藥或開刀減壓，而現代復健醫學提供了更安全、非手術的選擇——<strong>「超音波導引神經解套注射</strong>。</p>
+
+    <div style="background-color: #f0fdf4; border: 2px solid #34d399; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #047857; margin-top: 0; font-weight: bold; border-bottom: 2px solid #6ee7b7; padding-bottom: 0.5rem; display: flex; align-items: center;">
+            💉 什麼是神經解套注射？
+        </h2>
+        
+        <p style="font-size: 1.1rem; color: #064e3b;">簡單來說，就是用液體將被夾住的神經「沖開」並「鬆綁」。</p>
+        <p style="color: #065f46;">我們使用<strong>低濃度葡萄糖水 (5% Glucose)</strong> 作為注射液，這在醫學上具有雙重作用：</p>
+        
+        <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #115e59;">
+            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                <span style="background: #10b981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                <div><strong>物理性解套：</strong> 利用液體的壓力，將神經與周圍沾黏的筋膜、韌帶強行分開，創造出緩衝空間，解除神經受到的物理壓迫。</div>
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                <span style="background: #10b981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                <div><strong>藥理性修復 ：</strong> 研究發現，5% 葡萄糖水能降低神經發炎因子 (TRPV-1)，阻斷痛覺傳導，並提供神經細胞修復所需的養分，改善神經缺血缺氧的狀態。</div>
+            </li>
+        </ul>
+        <p style="font-size: 0.95rem; color: #059669; font-weight: bold;">※ 此療法不含類固醇，不會造成肌腱萎縮或全身性副作用，是極為安全的綠色療法，但過度發炎還是需要加一點類固醇。</p>
+    </div>
+
+    <h3>👁️ 為什麼「超音波導引」是絕對必要？</h3>
+    <p>神經就像一條細緻的電線，肉眼看不見，且與血管並行。若沒有影像導引進行「盲打」，極有可能誤傷神經造成永久性損傷，或打錯位置導致無效。</p>
+    <p>宸新復健科堅持全療程使用<strong>高解析肌肉骨骼超音波</strong>：</p>
+    <ol>
+        <li><strong>精準定位：</strong> 超音波能清楚顯示神經腫脹的位置（截面積變大），確認卡壓點。</li>
+        <li><strong>即時監控：</strong> 醫師能看著針尖緩緩接近神經，將藥水精準地注射在神經與周邊組織的<strong>介面之間</strong>，將神經360度完整包覆剝離，而不觸碰到神經本體。</li>
+        <li><strong>動態評估：</strong> 注射後可立即檢查神經是否恢復滑動空間。</li>
+    </ol>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>🩺 常見適應症與治療重點</h3>
+
+    <h4>1. 腕隧道症候群</h4>
+    <p>這是最常見的神經壓迫，主因是手腕橫韌帶增厚，壓迫到<strong>正中神經</strong>。</p>
+    <ul>
+        <li><strong>症狀：</strong> 拇指、食指、中指發麻，半夜容易麻醒，甩手會改善。嚴重時大魚際肌（手掌肉）會萎縮無力。</li>
+        <li><strong>治療關鍵：</strong> 透過超音波導引，將葡萄糖水注入橫韌帶與正中神經之間，撐開沾黏，取代傳統手術劃開韌帶的效果。適合輕中度患者，通常治療 3-5 次有顯著改善。</li>
+    </ul>
+    
+
+    <h4>2. 跗骨隧道症候群</h4>
+    <p>這是一個常被誤診為「足底筋膜炎」的疾病。問題出在腳踝內側的<strong>脛後神經</strong>受到壓迫。</p>
+    <ul>
+        <li><strong>症狀：</strong> 腳底（特別是前腳掌或足跟）有燒灼感、刺痛、麻木，久站久走後加劇。與足底筋膜炎不同的是，它通常帶有神經症狀（麻、電），且按壓腳踝內側會引發放射痛。</li>
+        <li><strong>治療關鍵：</strong> 因腳踝內側血管神經豐富，盲打風險極高。超音波能精確避開脛後動脈，將藥水注入屈肌支持帶下方，釋放受壓迫的脛後神經分支。</li>
+    </ul>
+
+    <h4>3. 肘隧道症候群</h4>
+    <p>俗稱「手機肘」，尺神經在手肘處受壓迫。症狀為無名指與小指發麻。神經解套能有效緩解手肘內側的沾黏。</p>
+
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>⚖️ 治療比較：神經解套 vs. 類固醇 vs. 手術</h3>
+    
+    <div style="overflow-x: auto; padding-bottom: 10px;">
+        <table style="width: 100%; min-width: 600px; border-collapse: collapse; margin-top: 1rem;">
+            <thead>
+                <tr style="background-color: #0f766e; color: white;">
+                    <th style="padding: 0.75rem; border: 1px solid #cbd5e1;">治療方式</th>
+                    <th style="padding: 0.75rem; border: 1px solid #cbd5e1;">主要成分</th>
+                    <th style="padding: 0.75rem; border: 1px solid #cbd5e1;">作用原理</th>
+                    <th style="padding: 0.75rem; border: 1px solid #cbd5e1;">適合對象</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1; font-weight: bold; color: #0d9488;">神經解套注射</td>
+                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">5% 葡萄糖水 (D5W)</td>
+                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">物理剝離沾黏 + 神經營養修復</td>
+                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">神經夾擠、慢性神經痛、不適合打類固醇者</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1; font-weight: bold; color: #b45309;">類固醇注射</td>
+                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">皮質類固醇</td>
+                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">強力抗發炎、消腫</td>
+                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">急性期劇烈疼痛、滑囊炎、腱鞘炎</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1; font-weight: bold; color:rgb(245, 69, 69);">減壓手術</td>
+                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">無</td>
+                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">切開組織，釋放壓力</td>
+                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">肌肉已萎縮、注射治療無效的重度患者</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3>📝 治療流程與常見問題</h3>
+    
+    <h4>治療頻率是多久？</h4>
+    <p>神經修復需要時間。通常建議 <strong>每 2 週注射一次</strong>，完整療程約需 <strong>3次</strong>。醫師會根據超音波影像中神經消腫的程度來調整次數。</p>
+
+    <h4>注射後會痛嗎？</h4>
+    <p>由於使用的是細針，疼痛感輕微。但因為液體注入會撐開組織，治療當下與結束後可能會有一種「痠脹感」或短暫的麻感，這是藥水正在剝離沾黏的正常現象，通常 1-2 天內會緩解。</p>
+
+    <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+        <h3 style="color: #047857; margin-top: 0;">👨‍⚕️ 別讓神經痛限制了您的人生</h3>
+        <p style="color: #334155; margin-bottom: 1.5rem;">神經受損是不可逆的，越早處理，恢復機率越高。如果您長期受手麻、腳麻困擾，或有關節腫脹抽水的需求，請不要忍耐。</p>
+        <p style="font-weight: bold; color: #059669;">來宸新復健科，用超音波找出病灶，精準解套，重拾無痛生活！</p>
+    </div>
+  `,
+  whyChooseUs: [
+    '堅持<strong>超音波導引</strong>，精準避開血管與神經本體，安全性高。',
+    '使用高濃度葡萄糖水，提供神經養分，無肌腱斷裂風險。',
+    '具備關節積水鑑別診斷與抽吸技術，全面解決壓迫源頭。'
+  ],
+  treatmentFocus: [
+    '<a href="/diseases/hand/carpal-tunnel-syndrome" class="text-cyan-400 hover:underline">腕隧道症候群 </a>🔍️',
+    '<a href="/diseases/ankle/tarsal-tunnel-syndrome" class="text-cyan-400 hover:underline">跗骨隧道症候群</a>🔍️ ',
+    '<a href="/diseases/elbow/ulnar-nerve-entrapment" class="text-cyan-400 hover:underline">肘隧道症候群</a>🔍️。',
+  ],
+  images: [],
+  applicableConditions: ['腕隧道症候群', '跗骨隧道症候群', '肘隧道症候群', '關節積水', '貝克氏囊腫', '術後神經沾黏', '梨狀肌症候群'],
+  qaList: [
+    {
+      question: '為什麼一定要用「超音波導引」？不能直接打嗎？',
+      answer: '絕對不建議盲打。神經就像是一條極細的電線，且通常緊鄰著血管。沒有超音波導引的「盲打」不僅無法確保藥水準確注入「神經與組織的介面」來達到剝離效果，更有極高風險誤傷神經造成永久性損傷，或是刺破血管導致血腫。超音波導引是這項治療的「眼睛」，確保安全與精準。'
+    },
+    {
+      question: '神經解套注射的治療原理是什麼？',
+      answer: '主要包含物理與生化雙重機制：1. 物理性解套：利用液體壓力將被周邊組織沾黏、夾擠的神經「撐開」，創造緩衝空間，恢復神經的血液循環。  2. 神經修復：使用5%葡萄糖水，能阻斷神經上的痛覺受器（TRPV-1），減少疼痛訊號，並提供神經細胞修復所需的能量養分。'
+    },
+    {
+      question: '神經壓迫如果一直不處理會怎樣？',
+      answer: '神經損傷是不可逆的過程。初期可能只是手麻腳麻，甩一甩會好；中期會演變成持續性的刺痛與感覺異常；若拖到後期，神經支配的肌肉會開始萎縮、無力（例如腕隧道症候群導致大魚際肌凹陷）。一旦發生肌肉萎縮，即便後來開刀減壓，功能也難以完全恢復。因此建議在出現麻痛症狀初期就介入治療。'
+    }
+  ]
+},
+
+{
   slug: 'steroid-injection',
   title: '超音波導引類固醇注射',
   lastModified: '2026-01-25',
