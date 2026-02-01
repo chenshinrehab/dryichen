@@ -202,9 +202,9 @@ export default function Home() {
                                 src="/images/main/a.jpg"
                                 alt="新竹復健科推薦-林羿辰醫師-台大雙專科院長" 
                                 fill
-                                priority 
-                                // @ts-ignore
-                                fetchPriority="high"
+                                priority // ✨ 必須有
+                                loading="eager" // ✨ 新增：強制立即載入
+                                fetchPriority="high" // ✨ 強制最高優先級
                                 className="object-cover object-center md:object-bottom group-hover:scale-105 transition-all duration-700"
                                 sizes="(max-width: 768px) 100vw, 50vw"
                               />

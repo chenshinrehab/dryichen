@@ -36,6 +36,7 @@
     "defaults",
     "not IE 11",
     "not op_mini all",
-    "> 0.2%"
+    "> 0.5%",
+    "fully supports es6-module"
   ]
 }
