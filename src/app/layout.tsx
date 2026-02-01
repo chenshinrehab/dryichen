@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
   // Google Search Console 驗證
   verification: {
-    google: null, // DNS 已驗證，此处留空安全
+    google: null, // DNS 已驗證，此處留空安全
   },
 
   // 防止電話號碼在 iOS 上被強制變色或產生奇怪樣式
@@ -110,15 +110,14 @@ export default function RootLayout({
       addressLocality: '新竹市', 
       addressRegion: 'TW',
       postalCode: '300',
-      streetAddress: '東區光復路一段371號B1', // ✨ 已補上行政區與大寫
+      streetAddress: '東區光復路一段371號B1',
     },
     telephone: '+886-3-564-7999', 
-    // ✨ 修正點：這裡加上了陣列括號 []，並用逗號分隔
+    priceRange: '$$',
     openingHours: [
       'Mo,Tu,We,Th,Fr 08:00-21:00',
       'Sa 08:00-18:00'
     ], 
-    // ✨ 修正點：上面這裡補上了一個逗號
     geo: {
       '@type': 'GeoCoordinates',
       latitude: '24.7833314', 
@@ -139,11 +138,20 @@ export default function RootLayout({
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
         <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
         
-        {/* 穩定圖示方案 (CDN) */}
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        {/* ✨ 效能強化：FontAwesome 非同步載入 (解決 FCP 8.6秒問題) */}
+        {/* 1. 先用 media="print" 騙過瀏覽器不阻塞渲染 */}
+        {/* 2. 下載完後透過 onLoad 切換回 all 顯示圖示 */}
+        <link 
+          rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+          media="print" 
+          // @ts-expect-error: optimization trick
+          onLoad="this.media='all'" 
         />
+        {/* 3. 無腳本環境的備案 */}
+        <noscript>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        </noscript>
         
         {/* 圖片渲染優化樣式 */}
         <style>{`

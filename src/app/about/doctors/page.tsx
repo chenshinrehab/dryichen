@@ -57,23 +57,51 @@ export default function DoctorsPage() {
       name: '林羿辰',
       jobTitle: '院長',
       image: `${SITE_URL}/images/main/a.jpg`, 
-      telephone: '03-5647999', 
       url: currentUrl,
+      description: '台大醫學系畢業，具備復健科專科與骨鬆雙專科醫師資歷。',
+      
+      // ✨ 修正 1：補上電話 (解決「telephone」欄位未填)
+      telephone: '+886-3-564-7999', 
+      
+      // ✨ 修正 2：補上價位區間 (解決「priceRange」欄位未填)
+      // 建議與診所 layout.tsx 保持一致
+      priceRange: '$$', 
+      
+      // ✨ 修正 3：補上地址 (解決「address」欄位未填)
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '東區光復路一段371號B1',
+        addressLocality: '新竹市',
+        addressRegion: 'TW',
+        postalCode: '300'
+      },
       worksFor: {
         '@type': 'MedicalClinic',
         name: '宸新復健科診所',
-        url: SITE_URL
+        url: SITE_URL,
+        // 建議在 worksFor 裡也帶入地址，強化關聯
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '東區光復路一段371號B1',
+          addressLocality: '新竹市',
+          addressRegion: 'TW',
+          postalCode: '300'
+        }
       },
-      alumni: { '@type': 'CollegeOrUniversity', name: '國立台灣大學醫學系' },
+      // ✨ 2. 修正為 alumniOf (更符合 Schema 規範)
+      alumniOf: { 
+        '@type': 'CollegeOrUniversity', 
+        name: '國立台灣大學醫學系' 
+      },
+      // ✨ 3. 優化專科描述
       medicalSpecialty: [
-        { '@type': 'MedicalSpecialty', name: '復健科' },
-        { '@type': 'MedicalSpecialty', name: '骨科復健' },
-        { '@type': 'MedicalSpecialty', name: '運動醫學' }
+        'Physiotherapy', // 復健醫學標準關鍵字
+        'SportsMedicine', // 運動醫學
+        'Musculoskeletal' // 骨骼肌肉系統
       ],
-      description: '台大醫學系畢業，雙專科醫師(復健+骨鬆)。'
+      description: '台大醫學系畢業，具備復健科專科與骨鬆雙專科醫師資歷。'
     }
   }
-
   return (
     <>
       <JsonLd data={jsonLdBreadcrumb} />
