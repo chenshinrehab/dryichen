@@ -1,6 +1,3 @@
-/** @type {import('next').NextConfig} */
-
-// 定義安全性標頭
 const securityHeaders = [
   { key: 'X-DNS-Prefetch-Control', value: 'on' },
   { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
@@ -17,15 +14,16 @@ const nextConfig = {
   // 1. 基本效能與安全性
   reactStrictMode: true,
   poweredByHeader: false,
+  trailingSlash: false, // 5. 網址標準化 (移至此處統一基礎設定)
 
   // 2. ✨ 影像優化設定
   images: {
-    unoptimized: false, 
+    unoptimized: false,
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 60,
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    
+
     // ✨ 修正重點：同時許可 YouTube 與 QR Code 網域 ✨
     remotePatterns: [
       {
@@ -72,13 +70,10 @@ const nextConfig = {
         source: '/images/:path*',
         headers: [
           { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }
-        ]
-      }
-    ]
+        ],
+      },
+    ];
   },
-
-  // 5. 網址標準化
-  trailingSlash: false,
 };
 
 module.exports = nextConfig;
