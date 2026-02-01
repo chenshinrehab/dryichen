@@ -15,7 +15,7 @@ export function getImageSrcSet(src: string, sizes: number[] = [400, 800, 1200]):
  * 生成 WebP 版本的圖片 URL
  */
 export function getWebPUrl(src: string): string {
-  if (src.endsWith('.jpg') || src.endsWith('.jpeg')) {
+  if (src.endsWith('.webp') || src.endsWith('.webp')) {
     return src.replace(/\.(jpg|jpeg)$/i, '.webp')
   }
   return src
@@ -26,7 +26,7 @@ export function getWebPUrl(src: string): string {
  */
 export function getThumbnailUrl(src: string): string {
   // 如果使用 CDN，可以添加縮圖參數
-  // 例如：/images/disease.jpg?w=400
+  // 例如：/images/disease.webp?w=400
   return src
 }
 

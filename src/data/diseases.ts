@@ -45,7 +45,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     title: '脊椎髖臀',
     lastModified: '2026-01-21',
     description: '脊椎、髖關節與臀部相關疾病',
-    image: '/images/diseases/a.jpg',
+    image: '/images/diseases/a.webp',
     seoKeywords: ['新竹脊椎側彎', '坐骨神經痛治療', '新竹整脊', '骨刺', '梨狀肌症候群'],
     seoDescription: '新竹脊椎權威復健。專治腰椎椎間盤突出、坐骨神經痛與長骨刺。提供免開刀的PRP注射與徒手物理治療，精準改善下背痛與腳麻問題。',
     diseases: [
@@ -93,7 +93,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                       </div>
                   </li>
                   
-                         <p><img src="/images/diseases/spine-hip/lbp/b.jpg" alt="下背肌肉構造圖"></p>
+                         <p><img src="/images/diseases/spine-hip/lbp/b.webp" alt="下背肌肉構造圖"></p>
 
                   <li style="margin-bottom: 0; display: flex; align-items: start;">
                       <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
@@ -102,7 +102,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                           <br><strong>特徵：</strong> <strong>久坐族</strong>的通病。肌肉縮短導致站起來時<strong>「腰桿挺不直」</strong>，且疼痛常傳導到大腿前側。
                       </div>
                   </li>
-                  <p><img src="/images/diseases/spine-hip/lbp/c.jpg" alt="髂腰肌肌肉構造圖"></p>
+                  <p><img src="/images/diseases/spine-hip/lbp/c.webp" alt="髂腰肌肌肉構造圖"></p>
               </ul>
           </div>
       
@@ -203,7 +203,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             4. 維持 30 秒，重複 3 次。
         </p>
     </div>
- <p><img src="/images/diseases/spine-hip/lbp/d.jpg" alt="下背痛伸展運動"></p>
+ <p><img src="/images/diseases/spine-hip/lbp/d.webp" alt="下背痛伸展運動"></p>
     <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 2. 四大肌力：穿上天然護腰</h4>
 
     <div style="margin-bottom: 2rem;">
@@ -251,7 +251,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             4. 重點是身體<strong>不要左右搖晃</strong>，訓練核心抗旋轉的能力。重複 10 次。
         </p>
     </div>
-     <p><img src="/images/diseases/spine-hip/lbp/e.jpg" alt="下背痛核心肌肉運動"></p>
+     <p><img src="/images/diseases/spine-hip/lbp/e.webp" alt="下背痛核心肌肉運動"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
@@ -284,7 +284,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '下背肌筋膜疼痛造成腰痠與閃到腰。宸新復健科提供超音波導引增生注射修復筋膜，搭配專業徒手治療調整骨盆，徹底解決反覆腰痛。',
         images: [
-          { src: '/images/diseases/spine-hip/lbp/a.jpg', alt: '下背痛示意圖'
+          { src: '/images/diseases/spine-hip/lbp/a.webp', alt: '下背痛示意圖'
           }
         ]
       },
@@ -317,7 +317,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                           <br><strong>特徵：</strong> 它是最常見的兇手！因為我們緊張或打字時會不自覺聳肩。激痛點會導致<strong>「問號型頭痛」</strong>（痛感像問號一樣繞過耳朵到太陽穴）。
                       </div>
                   </li>
-                                         <p><img src="/images/diseases/spine-hip/neck/b.jpg" alt="上斜方肌疼痛"></p>
+                                         <p><img src="/images/diseases/spine-hip/neck/b.webp" alt="上斜方肌疼痛"></p>
                   <li style="margin-bottom: 1rem; display: flex; align-items: start;">
                       <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
                       <div style="color: #92400e !important;">
@@ -326,7 +326,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                           <br><strong>特徵：</strong> 它是造成<strong>「落枕」</strong>的主因。因為這條肌肉負責轉頭，一旦它痙攣，脖子就轉不動了。痛點常在頸部與肩膀交接的轉角處。
                       </div>
                   </li>
-                        <p><img src="/images/diseases/spine-hip/neck/c.jpg" alt="提肩胛肌疼痛"></p>
+                        <p><img src="/images/diseases/spine-hip/neck/c.webp" alt="提肩胛肌疼痛"></p>
 
                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
     <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
@@ -336,7 +336,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         <br><strong>特徵：</strong> 這是中醫所謂<strong>「病入膏肓」</strong>的位置。久坐駝背、圓肩的人最容易傷到這裡。痛感通常在背部深層，覺得酸痛卻很難直接按到痛點，呼吸或是活動肩胛骨時會有緊繃感。
     </div>
 </li>
-                     <p><img src="/images/diseases/spine-hip/neck/d.jpg" alt="菱形肌疼痛"></p>
+                     <p><img src="/images/diseases/spine-hip/neck/d.webp" alt="菱形肌疼痛"></p>
                   <li style="margin-bottom: 0; display: flex; align-items: start;">
                       <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
                       <div style="color: #92400e !important;">
@@ -345,7 +345,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                           <br><strong>特徵：</strong> 常被忽略！它受傷不只會脖子痛，還會引起<strong>頭暈、噁心、耳鳴</strong>，甚至眼睛乾澀。這常發生在車禍揮鞭傷或長期轉頭看螢幕的人身上。
                       </div>
                   </li>
-                  <p><img src="/images/diseases/spine-hip/neck/e.jpg" alt="胸鎖乳突肌疼痛"></p>
+                  <p><img src="/images/diseases/spine-hip/neck/e.webp" alt="胸鎖乳突肌疼痛"></p>
               </ul>
           </div>
       
@@ -462,7 +462,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         <br>4. 慢慢將肩膀縮回（手肘依然伸直），做肩胛骨的前後滑動。重複 12 下。
     </p>
 </div>
-<p><img src="/images/diseases/spine-hip/neck/f.jpg" alt="頸部痛居家伸展運動"></p>
+<p><img src="/images/diseases/spine-hip/neck/f.webp" alt="頸部痛居家伸展運動"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
@@ -495,7 +495,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '頸部肌筋膜疼痛造成落枕與頭痛。宸新復健科提供聚焦式體外震波擊碎氣結，運用增生注射修復筋膜，搭配縮下巴運動，徹底解決肩頸僵硬。',
         images: [
-          {src: '/images/diseases/spine-hip/neck/a.jpg', alt: '頸部肌筋膜疼痛'
+          {src: '/images/diseases/spine-hip/neck/a.webp', alt: '頸部肌筋膜疼痛'
           }
         ]
       },
@@ -545,7 +545,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     </ul>
 </div>
 
-<p><img src="/images/diseases/spine-hip/HIVD/a.jpg" alt="脊椎椎間盤突出構造圖"></p>
+<p><img src="/images/diseases/spine-hip/HIVD/a.webp" alt="脊椎椎間盤突出構造圖"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -553,7 +553,7 @@ export const diseaseCategories: DiseaseCategory[] = [
 <p>單純的椎間盤受損可能只會感到下背痠痛（類似閃到腰）。但真正的惡夢開始於<strong>突出的髓核壓迫到後方的神經根</strong>。</p>
 <p>這會導致疼痛沿著坐骨神經的路徑，一路從臀部、大腿後側放射至小腿甚至腳底。患者常形容這種痛感為「酸、麻、刺痛、像被電到」。若壓迫過久，甚至會出現肌肉萎縮、腳踝無力（垂足）等現象。最嚴重的情況稱為<strong>「馬尾症候群 (Cauda Equina Syndrome)」</strong>，會影響大小便功能（失禁或尿不出來），這時就必須緊急開刀，否則會造成永久性神經損傷。</p>
 
-<p><img src="/images/diseases/spine-hip/HIVD/b.jpg" alt="坐骨神經痛"></p>
+<p><img src="/images/diseases/spine-hip/HIVD/b.webp" alt="坐骨神經痛"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -568,12 +568,12 @@ export const diseaseCategories: DiseaseCategory[] = [
     <li><strong>脊椎滑脫：</strong> 骨頭位置跑掉，造成不穩定。</li>
 </ul>
 
-<p><img src="/images/diseases/spine-hip/HIVD/c.jpg" alt="椎間盤突出X光"></p>
+<p><img src="/images/diseases/spine-hip/HIVD/c.webp" alt="椎間盤突出X光"></p>
 
 <h4>2. 黃金標準：核磁共振 (MRI)</h4>
 <p>若症狀經過復健治療未改善，或是出現肌肉無力等嚴重神經學症狀，我們會建議安排 MRI 檢查。MRI 可以清晰地顯影出軟組織，讓我們看到椎間盤突出的<strong>確切位置、大小</strong>，以及神經根被壓迫的<strong>嚴重程度</strong>，這是評估是否需要手術的關鍵依據。</p>
 
-<p><img src="/images/diseases/spine-hip/HIVD/d.jpg" alt="椎間盤突出MRI"></p>
+<p><img src="/images/diseases/spine-hip/HIVD/d.webp" alt="椎間盤突出MRI"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -642,7 +642,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             4. 動作要慢，專注於脊椎一節一節的活動。重複 10 次。
         </p>
     </div>
-    <p><img src="/images/diseases/spine-hip/HIVD/g.jpg" alt="下背痛伸展"></p>
+    <p><img src="/images/diseases/spine-hip/HIVD/g.webp" alt="下背痛伸展"></p>
     <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 2. 核心與臀部強化 (重建地基)</h4>
 
     <div style="margin-bottom: 2rem;">
@@ -691,7 +691,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             4. 重點是身體<strong>不要左右搖晃</strong>，訓練核心抗旋轉的能力。
         </p>
     </div>
-  <p><img src="/images/diseases/spine-hip/HIVD/h.jpg" alt="下背痛核心訓練"></p>
+  <p><img src="/images/diseases/spine-hip/HIVD/h.webp" alt="下背痛核心訓練"></p>
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <h3>🧘‍♂️ 預防勝於治療：您的坐姿正確嗎？</h3>
@@ -705,7 +705,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     <li><strong>定時起身：</strong> 每 30-40 分鐘起身活動，別讓椎間盤「餓死」（椎間盤靠活動時的壓力變化來交換養分）。</li>
 </ul>
 
-<p><img src="/images/diseases/spine-hip/HIVD/f.jpg" alt="正確的坐姿示意圖"></p>
+<p><img src="/images/diseases/spine-hip/HIVD/f.webp" alt="正確的坐姿示意圖"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -720,7 +720,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         seoKeywords: ['腰椎椎間盤突出', '坐骨神經痛', '腳麻', '下背痛', '閃到腰', 'HIVD', '脊椎牽引', 'PRP增生療法', '核心肌群', '免動刀復健'],  
         seoDescription: '彎腰刺痛、腳麻像觸電？小心是「腰椎椎間盤突出」壓迫坐骨神經。宸新復健科提供免動刀治療方案，整合健保牽引(拉腰)、PRP增生注射與核心肌群訓練，精準修復脊椎健康。',
         images: [
-           { src: '/images/diseases/spine-hip/HIVD/e.jpg', alt: '脊椎椎間盤突出構造圖' }
+           { src: '/images/diseases/spine-hip/HIVD/e.webp', alt: '脊椎椎間盤突出構造圖' }
         ]
       },
 
@@ -735,7 +735,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">當您發現家中的孩子肩膀一高一低，或是彎腰時背部某一側異常凸起，這可能不只是單純的「姿勢不良」，而是<strong>脊椎側彎</strong> 的警訊。在台灣，青少年脊椎側彎的發生率約為 3-5%，若錯過黃金治療期，側彎角度可能會隨著身高抽高而急速惡化，不僅影響外觀自信，成年後更可能導致嚴重的背痛與心肺功能受損。</p>
                 <br>
           <p style="color: #e2e8f0 !important;">治療脊椎側彎，<strong>「監測」</strong>與<strong>「精準運動」</strong>缺一不可。宸新復健科打造了新竹少見的<strong>「脊椎側彎整合治療中心」</strong>，我們不只提供治療，更擁有<strong>院內 X 光機</strong>可隨時追蹤角度變化，並引進特殊的<strong>脊椎側彎矯正訓練架</strong>，由受過專業訓練的物理治療師一對一指導，協助您對抗地心引力，將彎曲的脊椎「練」回來。</p>
-<p><img src="/images/diseases/spine-hip/scolio/b.jpg" alt="脊椎側彎四格漫畫"></p>
+<p><img src="/images/diseases/spine-hip/scolio/b.webp" alt="脊椎側彎四格漫畫"></p>
       
           <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
               <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -769,7 +769,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               </ul>
           </div>
       
-          <p><img src="/images/diseases/spine-hip/scolio/c.jpg" alt="脊椎側彎類型"></p>
+          <p><img src="/images/diseases/spine-hip/scolio/c.webp" alt="脊椎側彎類型"></p>
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -781,7 +781,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               <li>家長從孩子的<strong>正後方</strong>觀察背部水平。</li>
               <li><strong>結果：</strong> 如果發現背部一邊高、一邊低（單側隆起），這就是脊椎旋轉的證據，極高機率患有脊椎側彎。</li>
           </ol>
-         <p><img src="/images/diseases/spine-hip/scolio/d.jpg" alt="脊椎側彎亞當式前彎測試"></p>
+         <p><img src="/images/diseases/spine-hip/scolio/d.webp" alt="脊椎側彎亞當式前彎測試"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <h3 style="color: #f8fafc !important;">🛡️ 宸新三大優勢：為什麼選擇我們？</h3>
@@ -810,7 +810,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </ul>
               </p>
           </div>
-              <p><img src="/images/diseases/spine-hip/scolio/e.jpg" alt="脊椎側彎訓練架"></p>
+              <p><img src="/images/diseases/spine-hip/scolio/e.webp" alt="脊椎側彎訓練架"></p>
         
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
               <h4 style="margin-top: 0; color: #0e7490 !important;">優勢三：<a href="/treatments/manual" class="text-cyan-400 hover:underline">專業物理治療師一對一指導</a>🔍️</h4>
@@ -868,7 +868,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '脊椎側彎矯正權威。宸新復健科擁有院內X光機即時追蹤，引進專業脊椎側彎矯正架，由物理治療師一對一指導3D矯正運動，把握兒童黃金治療期。',
         images: [
-          { src: '/images/diseases/spine-hip/scolio/a.jpg', alt: '脊椎椎間盤突出構造圖'
+          { src: '/images/diseases/spine-hip/scolio/a.webp', alt: '脊椎椎間盤突出構造圖'
           }
         ]
       },
@@ -918,14 +918,14 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-      <p><img src="/images/diseases/spine-hip/upper/b.jpg" alt="上交叉症候群成因"></p>
+      <p><img src="/images/diseases/spine-hip/upper/b.webp" alt="上交叉症候群成因"></p>
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
 
           <h3 style="color: #f8fafc !important;">🔍 X光下的發現：頸椎曲度消失及退化</h3>
           <p style="color: #e2e8f0 !important;">上交叉症候群的患者，X光可以發現<strong>倒C的曲度</strong> 不見了，變成I型的脊椎，漸漸地開始長出骨刺或椎間盤突出。</p>
-      <p><img src="/images/diseases/spine-hip/upper/g.jpg" alt="上交叉症候群的x光"></p>
+      <p><img src="/images/diseases/spine-hip/upper/g.webp" alt="上交叉症候群的x光"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
 
@@ -945,14 +945,14 @@ export const diseaseCategories: DiseaseCategory[] = [
                   覺得肩膀上像背了千斤頂，怎麼按摩都鬆不開。肩胛骨內側（膏肓穴）常有痠痛點，這是因為菱形肌被圓肩「拉長」而過勞發炎。
               </p>
           </div>
-          <p><img src="/images/diseases/spine-hip/upper/c.jpg" alt="上交叉症候群疼痛特徵"></p>
+          <p><img src="/images/diseases/spine-hip/upper/c.webp" alt="上交叉症候群疼痛特徵"></p>
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
               <h4 style="margin-top: 0; color: #0e7490 !important;">3. 手臂麻木 (胸廓出口症候群)</h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
                   因為圓肩導致胸小肌太緊，卡住通往手臂的神經血管。睡覺時或手舉高時，手掌和手指容易發麻、冰冷。
               </p>
           </div>
-       <p><img src="/images/diseases/spine-hip/upper/d.jpg" alt="胸廓出口症候群"></p>
+       <p><img src="/images/diseases/spine-hip/upper/d.webp" alt="胸廓出口症候群"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <h3 style="color: #f8fafc !important;">🛡️ 宸新整合治療：先放鬆，後訓練</h3>
@@ -1030,7 +1030,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             3. 也可以用花生球或網球放在後腦勺下方躺著熱敷放鬆。
         </p>
     </div>
-     <p><img src="/images/diseases/spine-hip/upper/e.jpg" alt="上交叉症候群伸展"></p>
+     <p><img src="/images/diseases/spine-hip/upper/e.webp" alt="上交叉症候群伸展"></p>
     
     <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 2. 四大強化：喚醒沉睡背肌</h4>
 
@@ -1081,7 +1081,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             4. 隨時隨地都可以做，次數不限。
         </p>
     </div>
-   <p><img src="/images/diseases/spine-hip/upper/f.jpg" alt="上交叉症候群肌力訓練"></p>
+   <p><img src="/images/diseases/spine-hip/upper/f.webp" alt="上交叉症候群肌力訓練"></p>
      
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -1116,7 +1116,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '上交叉症候群造成烏龜頸、圓肩與富貴包。宸新復健科提供高能量雷射、徒手治療與專業姿態矯正運動，有效解決長期肩頸痠痛與體態問題。',
         images: [
-          { src: '/images/diseases/spine-hip/upper/a.jpg', alt: '上交叉症候群'
+          { src: '/images/diseases/spine-hip/upper/a.webp', alt: '上交叉症候群'
           }
         ]
       },
@@ -1159,7 +1159,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-         <p><img src="/images/diseases/spine-hip/lower/b.jpg" alt="下交叉症候群成因"></p>
+         <p><img src="/images/diseases/spine-hip/lower/b.webp" alt="下交叉症候群成因"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
           
           <h3 style="color: #f8fafc !important;">🔍 不只是腰痛！下交叉症候群的連鎖反應</h3>
@@ -1171,7 +1171,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               <li><strong>大腿後側緊繃拉傷：</strong> 臀肌無力時，大腿後側肌群（膕旁肌）需代償出力，長期處於被拉長又過勞的狀態，容易拉傷。</li>
               <li><strong>呼吸模式異常：</strong> 核心與肋骨位置改變，影響橫膈膜功能，導致呼吸短淺。</li>
           </ul>
-                  <p><img src="/images/diseases/spine-hip/lower/c.jpg" alt="下交叉症候群的連鎖反應"></p>
+                  <p><img src="/images/diseases/spine-hip/lower/c.webp" alt="下交叉症候群的連鎖反應"></p>
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
           
@@ -1264,7 +1264,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         <strong>注意：</strong> 不要讓大腿向外打開，膝蓋要朝向地板。
     </p>
 </div>
-    <p><img src="/images/diseases/spine-hip/lower/d.jpg" alt="下交叉症候群的伸展動作"></p>
+    <p><img src="/images/diseases/spine-hip/lower/d.webp" alt="下交叉症候群的伸展動作"></p>
 <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 2. 四大肌力：建立核心護盾</h4>
 
 <div style="margin-bottom: 2rem;">
@@ -1317,7 +1317,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         <strong>注意：</strong> 保持骨盆水平，不要翻轉身體，背上像放了一杯水不能灑。
     </p>
 </div>
-            <p><img src="/images/diseases/spine-hip/lower/e.jpg" alt="下交叉症候群的肌力訓練動作"></p>
+            <p><img src="/images/diseases/spine-hip/lower/e.webp" alt="下交叉症候群的肌力訓練動作"></p>
           <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
               <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 別讓錯誤體態偷走您的健康</h3>
               <p style="color: #334155 !important; margin-bottom: 1.5rem;">下交叉症候群是現代人的文明病，它不只影響外觀，更是身體發出的求救訊號。在宸新復健科，我們透過專業的醫師與物理治療團隊，協助您打破肌肉失衡的惡性循環，重建穩定的核心與骨盆，找回無痛且挺拔的自信體態！</p>
@@ -1351,7 +1351,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '下交叉症候群(骨盆前傾)是久坐族腰痛與小腹凸出的主因。宸新復健科結合院內X光分析、徒手治療放鬆緊繃髂腰肌，並運用紅繩懸吊系統強化核心與臀肌，從根源矯正體態改善疼痛。',
         images: [
-          { src: '/images/diseases/spine-hip/lower/a.jpg', alt: '下交叉症候群' }
+          { src: '/images/diseases/spine-hip/lower/a.webp', alt: '下交叉症候群' }
         ]
       },
 
@@ -1418,7 +1418,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     <li><strong>頸椎第 8 節 (C8)：</strong> 延伸至無名指、小指。</li>
 </ul>
 
-<p><img src="/images/diseases/spine-hip/CHIVD/b.jpg" alt="頸部神經壓迫疼痛地圖"></p>
+<p><img src="/images/diseases/spine-hip/CHIVD/b.webp" alt="頸部神經壓迫疼痛地圖"></p>
 
 <h4 style="color: #f1f5f9 !important;">階段三：脊髓病變 (Myelopathy)</h4>
 <p style="color: #e2e8f0 !important;">這是最危險的情況。若椎間盤直接向後正中突出，壓迫到<strong>脊髓 (Spinal Cord)</strong>，會造成全身性的影響，如雙腳無力、走路像踩棉花不穩、手部精細動作困難（扣釦子、拿筷子變笨拙）。這時通常需要手術介入。</p>
@@ -1436,7 +1436,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     <li><strong>頸椎曲度變直：</strong> 從原本健康的 C 型曲線變成筆直的「軍人頸 (Military Neck)」，這是肌肉長期緊繃的證據。</li>
 </ul>
 
-<p><img src="/images/diseases/spine-hip/CHIVD/c.jpg" alt="椎間盤突出X光"></p>
+<p><img src="/images/diseases/spine-hip/CHIVD/c.webp" alt="椎間盤突出X光"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -1545,7 +1545,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             3. 維持 5 秒，放鬆。重複 12 次。
         </p>
     </div>
-<p><img src="/images/diseases/spine-hip/CHIVD/e.jpg" alt="頸椎退化居家運動"></p>
+<p><img src="/images/diseases/spine-hip/CHIVD/e.webp" alt="頸椎退化居家運動"></p>
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <h3 >🧘‍♂️ 醫師的護頸小叮嚀：正確姿勢</h3>
@@ -1557,7 +1557,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     <li><strong>定時活動：</strong> 每 30 分鐘轉動頸部，做擴胸運動。</li>
 </ul>
 
-<p><img src="/images/diseases/spine-hip/CHIVD/d.jpg" alt="正確的坐姿示意圖"></p>
+<p><img src="/images/diseases/spine-hip/CHIVD/d.webp" alt="正確的坐姿示意圖"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -1573,7 +1573,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         seoKeywords: ['頸椎椎間盤退化', '頸椎骨刺', '手麻', '脖子痛', '手機脖', '烏龜頸', '上交叉症候群', '頸椎牽引', 'PRP增生療法', '膏肓痛'],
         seoDescription: '低頭族手麻、脖子痛？小心是「頸椎椎間盤突出」或長骨刺。宸新復健科提供免動刀治療方案，結合頸椎牽引、PRP增生注射與徒手物理治療，精準改善神經壓迫與烏龜頸體態。',
         images: [
-           { src: '/images/diseases/spine-hip/CHIVD/a.jpg', alt: '頸部疼痛示意圖' }
+           { src: '/images/diseases/spine-hip/CHIVD/a.webp', alt: '頸部疼痛示意圖' }
         ]
       },
       {
@@ -1626,13 +1626,13 @@ export const diseaseCategories: DiseaseCategory[] = [
 <h3 style="color: #f8fafc !important;">⚡ 症狀解析：深層的痛與麻</h3>
 <p style="color: #e2e8f0 !important;">梨狀肌發炎時，最典型的特徵就是<strong>「深層臀部疼痛」</strong>。這種痛點位於屁股肉最多的地方，按壓時會感到一陣痠軟。疼痛常在變換姿勢、翹腳、上下樓梯或久坐超過 30 分鐘時加劇。</p>
 
-<p><img src="/images/diseases/spine-hip/piri/b.jpg" alt="梨狀肌疼痛"></p>
+<p><img src="/images/diseases/spine-hip/piri/b.webp" alt="梨狀肌疼痛"></p>
 
 <h4 style="color: #f1f5f9 !important;">為什麼會腳麻？（坐骨神經的無辜受累）</h4>
 <p style="color: #e2e8f0 !important;">這正是它被稱為「假性坐骨神經痛」的原因。<strong>坐骨神經</strong>剛好從梨狀肌的下方（或中間）穿過。當梨狀肌因為發炎而腫脹、變硬時，就會像「掐脖子」一樣勒住下方的坐骨神經。</p>
 <p style="color: #e2e8f0 !important;">這會引發類似椎間盤突出的神經症狀，造成疼痛、麻感或電流感一路從屁股延伸到<strong>大腿後側</strong>，甚至到達小腿。但與椎間盤突出不同的是，梨狀肌症候群通常<strong>不會</strong>造成腰部疼痛。</p>
 
-<p><img src="/images/diseases/spine-hip/piri/c.jpg" alt="梨狀肌壓迫坐骨神經示意圖"></p>
+<p><img src="/images/diseases/spine-hip/piri/c.webp" alt="梨狀肌壓迫坐骨神經示意圖"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -1672,7 +1672,7 @@ export const diseaseCategories: DiseaseCategory[] = [
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 <h3 style="color: #f8fafc !important;">🧘‍♂️ 居家復健：醫師教您自救四招</h3>
-<p><img src="/images/diseases/spine-hip/piri/d.jpg" alt="梨狀肌伸展運動教學"></p>
+<p><img src="/images/diseases/spine-hip/piri/d.webp" alt="梨狀肌伸展運動教學"></p>
 
 <div style="margin-bottom: 2rem;">
     <h4 style="color: #22d3ee !important;">1. 坐姿梨狀肌伸展</h4>
@@ -1728,7 +1728,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         seoKeywords: ['梨狀肌症候群', '屁股痛', '假性坐骨神經痛', '腳麻', '久坐屁股痛', '神經解套注射', '深層臀痛', '錢包症候群', '徒手治療', '免動刀復健'],
         seoDescription: '屁股深處痠痛、腳麻？小心是「梨狀肌症候群」引發的假性坐骨神經痛！宸新復健科透過超音波導引神經解套注射與徒手物理治療，精準解除神經壓迫，免動刀改善久坐臀痛。',
         images: [
-           { src: '/images/diseases/spine-hip/piri/a.jpg', alt: '梨狀肌疼痛示意圖' }
+           { src: '/images/diseases/spine-hip/piri/a.webp', alt: '梨狀肌疼痛示意圖' }
         ]
       },
 {
@@ -1774,7 +1774,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-           <p><img src="/images/diseases/spine-hip/cfacet/b.jpg" alt="小面關節結構圖"></p>
+           <p><img src="/images/diseases/spine-hip/cfacet/b.webp" alt="小面關節結構圖"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <h3 style="color: #f8fafc !important;">🔍 超級比一比：是關節、神經還是肌肉痛？</h3>
@@ -1896,7 +1896,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             4. <strong>關鍵：</strong> 下巴要微收，不要讓頭過度後仰，我們要動的是「背」不是「脖子」。
         </p>
     </div>
-<p><img src="/images/diseases/spine-hip/cfacet/c.jpg" alt="小面關節結構圖"></p>
+<p><img src="/images/diseases/spine-hip/cfacet/c.webp" alt="小面關節結構圖"></p>
     
   
       
@@ -1929,7 +1929,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '頸椎小面關節炎造成反覆落枕與抬頭疼痛。宸新復健科提供高解析超音波診斷，區分椎間盤突出，並施行精準導引增生注射，修復頸椎關節。',
         images: [
-          { src: '/images/diseases/spine-hip/cfacet/a.jpg', alt: '頸椎小面關節炎示意圖' 
+          { src: '/images/diseases/spine-hip/cfacet/a.webp', alt: '頸椎小面關節炎示意圖' 
           }
         ]
       },
@@ -1977,7 +1977,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-      <p><img src="/images/diseases/spine-hip/facet/b.jpg" alt="小面關節結構圖"></p>
+      <p><img src="/images/diseases/spine-hip/facet/b.webp" alt="小面關節結構圖"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <h3 style="color: #f8fafc !important;">🔍 超級比一比：如何分辨是肌肉、椎間盤還是小面關節痛？</h3>
@@ -2086,7 +2086,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         <h4 style="color: #22d3ee !important;">3. 骨盆後傾運動 )</h4>
         <p style="color: #e2e8f0 !important;">平躺，雙膝彎曲踩地。想像肚臍要用力往下貼到背後的脊椎，收縮腹肌，讓您的腰部<strong>「完全貼平地面」</strong>（消除腰椎原本懸空的弧度）。維持 10 秒後放鬆。這能啟動深層核心，減少腰椎過度前凸帶來的關節壓力。</p>
     </div>
-      <p><img src="/images/diseases/spine-hip/facet/c.jpg" alt="小面關節居家運動"></p>
+      <p><img src="/images/diseases/spine-hip/facet/c.webp" alt="小面關節居家運動"></p>
       
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
           <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
@@ -2120,7 +2120,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '小面關節炎是造成慢性背痛與頸痛的常見原因，特徵是後仰疼痛與晨間僵硬。宸新復健科提供超音波導引增生注射(PRP)精準修復受損韌帶，並比較其與椎間盤突出之差異。',
         images: [
-          { src: '/images/diseases/spine-hip/facet/a.jpg', alt: '小面關節炎示意圖' 
+          { src: '/images/diseases/spine-hip/facet/a.webp', alt: '小面關節炎示意圖' 
           }
         ]
       }, 
@@ -2135,7 +2135,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：坐在沙發或辦公椅上一段時間，要站起來的那一瞬間，<strong>下背部與屁股深處</strong>突然傳來一陣劇痛，痛點在<strong>腰窩</strong>附近，必須扶著桌子「緩一下」才能挺直腰桿？或是晚上睡覺想翻身，卻覺得骨盆像快散掉一樣痛？甚至有時候疼痛會稍微往下傳到大腿後側，讓您以為自己得了坐骨神經痛？</p>
           <br>
           <p style="color: #e2e8f0 !important;">這其實是復健科門診極為常見，卻常被誤診的<strong>「薦髂關節炎」</strong>，又稱為<strong>薦髂關節失能</strong>或<strong>骨盆帶疼痛</strong>。這不是長骨刺，通常是因為關節韌帶鬆弛或骨盆歪斜，導致這個負責承重的重要關節「卡住」或「不穩」。在宸新復健科，我們不只止痛，更透過<strong>X光評估骨盆角度還有薦椎髂關節間隙</strong>，搭配<strong>關節鬆動與肌力訓練</strong>與<strong>增生注射</strong>，從地基把您的身體「扶正」。</p>
-      <p><img src="/images/diseases/spine-hip/si/c.jpg" alt="薦髂關節炎疼痛點"></p>
+      <p><img src="/images/diseases/spine-hip/si/c.webp" alt="薦髂關節炎疼痛點"></p>
           <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
               <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
                   📢 什麼是薦髂關節？身體的「避震器」與「基石」
@@ -2167,7 +2167,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-       <p><img src="/images/diseases/spine-hip/si/b.jpg" alt="薦髂關節結構圖"></p>
+       <p><img src="/images/diseases/spine-hip/si/b.webp" alt="薦髂關節結構圖"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：如何分辨是「薦髂痛」還是「坐骨神經痛」？</h3>
@@ -2291,7 +2291,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             <br>4. 停留 5 秒，收回。重複 10 下。
         </p>
     </div>
- <p><img src="/images/diseases/spine-hip/si/d.jpg" alt="薦髂關節居家運動"></p>
+ <p><img src="/images/diseases/spine-hip/si/d.webp" alt="薦髂關節居家運動"></p>
  
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -2324,7 +2324,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           '產後骨盆痛'
         ],
         seoDescription: '薦髂關節炎(骨盆歪斜)造成下背與臀部深處痛，常被誤為坐骨神經痛。宸新復健科提供X光精準測量，運用PRP修復韌帶與脊椎側彎矯正架，徹底解決骨盆不穩問題。',
-        images: [ {src: '/images/diseases/spine-hip/si/a.jpg', alt: '薦髂關節炎' 
+        images: [ {src: '/images/diseases/spine-hip/si/a.webp', alt: '薦髂關節炎' 
           }
         ]
       },
@@ -2373,7 +2373,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-      <p><img src="/images/diseases/spine-hip/tmd/b.jpg" alt="顳顎關節症候群肌肉圖"></p>
+      <p><img src="/images/diseases/spine-hip/tmd/b.webp" alt="顳顎關節症候群肌肉圖"></p>
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -2435,7 +2435,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             </ul>
         </p>
       </div>
-  <p><img src="/images/diseases/spine-hip/tmd/c.jpg" alt="顳顎關節症候群治療"></p>
+  <p><img src="/images/diseases/spine-hip/tmd/c.webp" alt="顳顎關節症候群治療"></p>
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -2483,7 +2483,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '臉頰痠痛、張口困難？這可能是肌肉型顳顎關節症候群。宸新復健科提供徒手治療放鬆深層筋膜，搭配高能量雷射快速止痛，解決緊繃問題。',
         images: [
-          { src: '/images/diseases/spine-hip/tmd/a.jpg', alt: '顳顎關節症候群' 
+          { src: '/images/diseases/spine-hip/tmd/a.webp', alt: '顳顎關節症候群' 
           }
         ]
 
@@ -2557,7 +2557,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     <li><strong>軟骨下骨硬化 (Sclerosis)：</strong> 骨頭顏色變白、變硬。</li>
 </ul>
 
-<p><img src="/images/diseases/spine-hip/OA/b.jpg" alt="嚴重的髖關節退化X光，箭頭處顯示軟骨消失"></p>
+<p><img src="/images/diseases/spine-hip/OA/b.webp" alt="嚴重的髖關節退化X光，箭頭處顯示軟骨消失"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -2609,7 +2609,7 @@ export const diseaseCategories: DiseaseCategory[] = [
       
       seoDescription: '走路鼠蹊部(該邊)痛、穿襪子困難？小心是「退化性髖關節炎」。宸新復健科提供免動刀治療方案，結合精準診斷、PRP增生注射與徒手物理治療，助您延緩關節置換，改善跛行與活動受限。',
         images: [
-           { src: '/images/diseases/spine-hip/OA/a.jpg', alt: '髖關節退化' }
+           { src: '/images/diseases/spine-hip/OA/a.webp', alt: '髖關節退化' }
         ]
       }
       
@@ -2624,7 +2624,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     title: '肩膀',
     lastModified: '2026-01-21',
     description: '肩膀相關疾病',
-    image: '/images/diseases/b.jpg',
+    image: '/images/diseases/b.webp',
     seoKeywords: ['新竹五十肩治療', '肩膀痛', '旋轉肌破裂', '鈣化性肌腱炎', '新竹物理治療'],
     seoDescription: '肩膀痛手舉不起來？五十肩與旋轉肌撕裂治療推薦。免開刀肩關節擴張術與PRP修復，解決夜間痛醒與活動受限問題。',
     diseases: [
@@ -2674,7 +2674,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     </ul>
 </div>
 
-<p><img src="/images/diseases/shoulder/tear/b.jpg" alt="肩關節旋轉肌袖解剖構造圖，顯示棘上肌肌腱位置"></p>
+<p><img src="/images/diseases/shoulder/tear/b.webp" alt="肩關節旋轉肌袖解剖構造圖，顯示棘上肌肌腱位置"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -2700,7 +2700,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     <li><strong>特定動作疼痛：</strong> 當做特定動作時（例如將手抬高、向後轉動），肩膀的疼痛感會顯著加劇。</li>
     <li><strong>關節聲響：</strong> 活動肩膀時，關節內部容易發出「咔嗒」的聲響，或是出現類似摩擦的聲音。</li>
 </ol>
-<p><img src="/images/diseases/shoulder/tear/c.jpg" alt="旋轉肌袖撕裂典型症狀"></p>
+<p><img src="/images/diseases/shoulder/tear/c.webp" alt="旋轉肌袖撕裂典型症狀"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -2709,7 +2709,7 @@ export const diseaseCategories: DiseaseCategory[] = [
 <p style="color: #e2e8f0 !important;">在宸新復健科，我們使用<strong>高解析度肌肉骨骼超音波</strong>。它就像醫師的聽診器，能即時、動態地觀察肌腱在活動時的狀況。是部分撕裂、全層撕裂、還是鈣化發炎？超音波下一目了然，是診斷旋轉肌問題的黃金標準之一。</p>
 
 <p style="color: #e2e8f0 !important;">下方超音波影像可清楚看到肌肉中間黑色的破洞。</p>
-<p><img src="/images/diseases/shoulder/tear/d.jpg" alt="旋轉肌撕裂超音波影像"></p>
+<p><img src="/images/diseases/shoulder/tear/d.webp" alt="旋轉肌撕裂超音波影像"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -2753,7 +2753,7 @@ export const diseaseCategories: DiseaseCategory[] = [
       ],
       seoDescription: '手舉不高、半夜痛醒？小心是「旋轉肌撕裂」而非五十肩！宸新復健科透過高解析肌肉骨骼超音波精準診斷，提供PRP增生注射與專業徒手物理治療，為您量身打造免動刀的肌腱修復計畫，找回肩膀活動力。',
         images: [
-           { src: '/images/diseases/shoulder/tear/a.jpg', alt: '旋轉肌撕裂傷' }
+           { src: '/images/diseases/shoulder/tear/a.webp', alt: '旋轉肌撕裂傷' }
         ]
       },
 
@@ -2811,7 +2811,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 </li> <li><strong>特定角度疼痛加劇：</strong> 典型徵兆為「疼痛弧」，即手臂側抬至特定角度（如圖中 90 度附近）時，疼痛會顯著加劇。
                 </li> <li><strong>突然發作的劇痛：</strong> 疼痛常常無預警地發作，且非常劇烈。
                 </li> <li><strong>關節內異物感：</strong> 活動時感覺關節內有東西卡住或有粗糙摩擦感，但通常無聲響。</li> </ul>
-            <p><img src="/images/diseases/shoulder/cal/b.jpg" alt="旋轉肌袖鈣化典型症狀"></p>
+            <p><img src="/images/diseases/shoulder/cal/b.webp" alt="旋轉肌袖鈣化典型症狀"></p>
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
             <h3 style="color: #f8fafc !important;">🔍 診斷：X 光與超音波雙管齊下</h3>
@@ -2821,7 +2821,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 <li><strong>超音波：</strong> 能判斷鈣化是在「硬化期」（有陰影）還是「牙膏期」（腫脹模糊），並確認是否伴隨旋轉肌撕裂，這對於決定治療策略至關重要。</li>
             </ul>
         
-            <p><img src="/images/diseases/shoulder/cal/c.jpg" alt="旋轉肌袖鈣化X光及超音波影像"></p>
+            <p><img src="/images/diseases/shoulder/cal/c.webp" alt="旋轉肌袖鈣化X光及超音波影像"></p>
         
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
@@ -2841,7 +2841,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                     針對「急性劇痛期」或「牙膏期」的患者，醫師在<strong>超音波導引下</strong>，將針頭精準刺入鈣化點，用生理食鹽水反覆沖洗，將白色的鈣化牙膏<strong>直接抽吸出來</strong>，並注射藥物消炎。患者通常在術後當下就能感覺疼痛減少 50% 以上，但只有單顆大型的才有辦法使用抽吸。
                 </p>
             </div>
-        <p><img src="/images/diseases/shoulder/cal/d.jpg" alt="旋轉肌袖鈣化超音波導引抽吸術 (Barbotage)"></p>
+        <p><img src="/images/diseases/shoulder/cal/d.webp" alt="旋轉肌袖鈣化超音波導引抽吸術 (Barbotage)"></p>
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
             <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
@@ -2873,7 +2873,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           seoDescription: '旋轉肌鈣化（鈣化性肌腱炎）造成肩膀劇烈疼痛，常被誤為五十肩。宸新復健科提供震波治療與超音波導引洗鈣，有效擊碎結石，快速緩解疼痛。',
           images: [
             { 
-              src: '/images/diseases/shoulder/cal/a.jpg', alt: '旋轉肌鈣化'
+              src: '/images/diseases/shoulder/cal/a.webp', alt: '旋轉肌鈣化'
             },
           ]
       },
@@ -2940,7 +2940,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         
             <li><strong>4. 女性與年齡</strong></li>
             <p style="color: #e2e8f0 !important;">好發於 40-60 歲，且<strong>女性比例略高於男性</strong>。更年期前後的荷爾蒙變化也被認為是潛在因素之一。</p>
-           <p><img src="/images/diseases/shoulder/fs/b.jpg" alt="五十肩好發族群"></p>
+           <p><img src="/images/diseases/shoulder/fs/b.webp" alt="五十肩好發族群"></p>
 
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
@@ -2992,7 +2992,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 <p style="color: #e2e8f0 !important;">身體前彎，好手扶著桌子支撐，讓患側手臂像鐘擺一樣自然垂下。利用身體的晃動帶動手臂前後、左右、畫圈擺動。這適合在運動前暖身，或疼痛較明顯時放鬆關節使用。</p>
             </div>
         
-            <p><img src="/images/diseases/shoulder/fs/c.jpg" alt="五十肩居家運動"></p>
+            <p><img src="/images/diseases/shoulder/fs/c.webp" alt="五十肩居家運動"></p>
         
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
@@ -3024,7 +3024,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           ],
           seoDescription: '五十肩（冰凍肩）導致肩膀僵硬舉不起來，夜間疼痛難耐。宸新復健科提供超音波導引肩關節擴張術與居家運動教學，快速分離沾黏，縮短恢復期。',
           images: [
-            { src: '/images/diseases/shoulder/fs/a.jpg', alt: '五十肩示意圖'
+            { src: '/images/diseases/shoulder/fs/a.webp', alt: '五十肩示意圖'
             }
           ]
       },
@@ -3067,7 +3067,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-             <p><img src="/images/diseases/shoulder/bursa/b.jpg" alt="旋轉肌建炎與滑囊炎"></p>
+             <p><img src="/images/diseases/shoulder/bursa/b.webp" alt="旋轉肌建炎與滑囊炎"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：肌腱炎 vs. 滑囊炎</h3>
@@ -3092,7 +3092,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   <br>3. <strong>肌腱撕裂評估：</strong> 檢查棘上肌腱是否有鈣化、微小撕裂或斷裂。
                   <br>4. <strong>超音波導引抽吸與注射：</strong> 若有滑囊炎或肌肉發炎，搭配超音波導引精準抽積水與注射消炎藥物。
                                 </p>
-                 <p><img src="/images/diseases/shoulder/bursa/c.jpg" alt="旋轉肌建炎與滑囊炎超音波圖"></p>
+                 <p><img src="/images/diseases/shoulder/bursa/c.webp" alt="旋轉肌建炎與滑囊炎超音波圖"></p>
           </div>
       
          
@@ -3198,7 +3198,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             <br>5. 慢慢回放（離心控制很重要）。重複 12 下，做 3 組。
         </p>
     </div>
-     <p><img src="/images/diseases/shoulder/bursa/d.jpg" alt="旋轉肌建炎與滑囊炎居家運動"></p>
+     <p><img src="/images/diseases/shoulder/bursa/d.webp" alt="旋轉肌建炎與滑囊炎居家運動"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
@@ -3231,7 +3231,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '旋轉肌腱炎常惡化為滑囊炎，導致劇烈夜間痛與舉手困難。宸新復健科提供超音波導引抽吸積水，運用PRP修復肌腱，搭配肩胛復健，徹底解決肩膀夾擠問題。',
         images: [
-          { src: '/images/diseases/shoulder/bursa/a.jpg', alt: '旋轉肌腱炎'
+          { src: '/images/diseases/shoulder/bursa/a.webp', alt: '旋轉肌腱炎'
           }
         ]
       },
@@ -3275,7 +3275,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-       <p><img src="/images/diseases/shoulder/ac/b.jpg" alt="肩鎖關節結構"></p>
+       <p><img src="/images/diseases/shoulder/ac/b.webp" alt="肩鎖關節結構"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：痛點在哪裡？</h3>
@@ -3330,7 +3330,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               </table>
           </div>
           <p style="  margin-top: 0.5rem;">*註：第一至三級通常優先採保守治療；第四級以上或保守治療失敗的第三級才考慮手術。</p>
-          <p><img src="/images/diseases/shoulder/ac/c.jpg" alt="肩鎖關節受傷分級"></p>
+          <p><img src="/images/diseases/shoulder/ac/c.webp" alt="肩鎖關節受傷分級"></p>
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -3344,7 +3344,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   醫師會利用動態超音波，觀察關節是否不穩定地開合，並觀察韌帶撕裂的狀況與積水情形。
               </p>
           </div>
-            <p><img src="/images/diseases/shoulder/ac/d.jpg" alt="肩鎖關節受傷超音波影像"></p>
+            <p><img src="/images/diseases/shoulder/ac/d.webp" alt="肩鎖關節受傷超音波影像"></p>
 
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
               <h4 style="margin-top: 0; color: #0e7490 !important;">2. 核心治療：<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引 PRP/增生注射</a></h4>
@@ -3399,7 +3399,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   面對牆壁，用手指像爬樓梯一樣慢慢沿著牆壁向上爬高，直到肩膀感覺緊繃微痛就停住。停留 10 秒，再慢慢爬下來。目標是逐漸恢復舉手角度。
               </p>
           </div>
-         <p><img src="/images/diseases/shoulder/ac/e.jpg" alt="肩鎖關節受傷急性期運動"></p>
+         <p><img src="/images/diseases/shoulder/ac/e.webp" alt="肩鎖關節受傷急性期運動"></p>
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
     <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：強化肩胛，穩住地基</h3>
@@ -3455,7 +3455,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             4. 慢慢回放（回放時也要用力控制，不能彈回去）。重複 15 下。
         </p>
     </div>
-         <p><img src="/images/diseases/shoulder/ac/f.jpg" alt="肩鎖關節受傷肌力強化"></p>
+         <p><img src="/images/diseases/shoulder/ac/f.webp" alt="肩鎖關節受傷肌力強化"></p>
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -3489,7 +3489,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '肩鎖關節韌帶受傷（肩膀分離）常發生於摔車或撞擊，導致鎖骨凸起與劇痛。宸新復健科提供超音波精準診斷、PRP再生注射與分階段復健運動，協助免手術修復韌帶。',
         images: [
-          {src: '/images/diseases/shoulder/ac/a.jpg', alt: '肩鎖關節韌帶受傷'
+          {src: '/images/diseases/shoulder/ac/a.webp', alt: '肩鎖關節韌帶受傷'
           }
         ]
       },
@@ -3535,7 +3535,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-               <p><img src="/images/diseases/shoulder/slap/b.jpg" alt="肩關節唇撕裂結構"></p>
+               <p><img src="/images/diseases/shoulder/slap/b.webp" alt="肩關節唇撕裂結構"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：跟旋轉肌受傷有何不同？</h3>
@@ -3643,7 +3643,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   3. 慢慢放下。重複 12 下，做 3 組。
               </p>
           </div>
-       <p><img src="/images/diseases/shoulder/slap/c.jpg" alt="肩關節唇撕裂居家運動"></p>
+       <p><img src="/images/diseases/shoulder/slap/c.webp" alt="肩關節唇撕裂居家運動"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
@@ -3676,7 +3676,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '肩關節唇撕裂(SLAP)造成肩膀深處刺痛與卡頓聲。宸新復健科提供超音波精準診斷，運用PRP再生注射修復軟骨，搭配GIRD矯正運動，免手術治療肩膀損傷。',
         images: [
-          {src: '/images/diseases/shoulder/slap/a.jpg', alt: '肩關節唇撕裂'
+          {src: '/images/diseases/shoulder/slap/a.webp', alt: '肩關節唇撕裂'
           }
         ]
       },
@@ -3690,7 +3690,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">您是否有這樣的困擾：手自然下垂時不痛，舉高到頭頂也不太痛，偏偏在<strong>手舉到側邊 60 度到 120 度</strong>這個區間，肩膀外側會感到一陣劇痛？或是晚上睡覺側睡壓到患側肩膀，常常痛到醒過來？</p>
           <br>
           <p style="color: #e2e8f0 !important;">這就是典型的<strong>「肩夾擠症候群」</strong>，常發生在游泳選手、重訓愛好者，過頭運動或工程師身上。它的成因並非單純的「發炎」，而是肩膀內部的空間變窄了，導致肌腱在活動時不斷被骨頭「夾」到。宸新復健科透過超音波檢查，檢查肌腱被夾擠的空間及肌肉狀況，並提供精準的空間擴張與修復治療。</p>
-        <p><img src="/images/diseases/shoulder/impinge/b.jpg" alt="疼痛弧"></p>
+        <p><img src="/images/diseases/shoulder/impinge/b.webp" alt="疼痛弧"></p>
 
           <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
               <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -3734,7 +3734,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               <li style="margin-bottom: 0.5rem;"><strong>120°~180° 不痛：</strong> 手舉到最高時，肱骨頭轉開了，空間反而變大，又不痛了。</li>
               <li style="margin-bottom: 0.5rem;"><strong>夜間疼痛：</strong> 側睡壓到患側時，會直接擠壓滑囊，導致半夜痛醒。</li>
           </ul>
-             <p><img src="/images/diseases/shoulder/impinge/c.jpg" alt="肩夾擠壓迫"></p>
+             <p><img src="/images/diseases/shoulder/impinge/c.webp" alt="肩夾擠壓迫"></p>
 
           <h3 style="color: #f8fafc !important;">🔍 超音波檢查：眼見為憑的診斷</h3>
           <p style="color: #e2e8f0 !important;">X 光只能看到骨刺，但<strong>超音波可以看到「動態夾擠」</strong>。在宸新復健科，我們會請您做舉手動作：</p>
@@ -3745,7 +3745,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   當您手舉高時，我們可以在螢幕上清楚看到棘上肌腱滑進肩峰下隧道時，是否被卡住、擠壓變形，或是滑囊被擠得像水球一樣鼓起來。這能確診夾擠的真正原因。
               </p>
           </div>
-                   <p><img src="/images/diseases/shoulder/impinge/d.jpg" alt="肩夾擠超音波影像"></p>
+                   <p><img src="/images/diseases/shoulder/impinge/d.webp" alt="肩夾擠超音波影像"></p>
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -3826,7 +3826,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             <strong>注意：</strong> 過程中肩膀要下沉，不可聳肩。
         </p>
     </div>
- <p><img src="/images/diseases/shoulder/impinge/e.jpg" alt="肩夾擠伸展運動"></p>
+ <p><img src="/images/diseases/shoulder/impinge/e.webp" alt="肩夾擠伸展運動"></p>
   
     <h4 style="color: #fcd34d !important; margin-top: 2rem; border-left: 4px solid #fcd34d; padding-left: 1rem;">Part 2. 四大肌力：強化旋轉肌與肩胛穩定</h4>
 
@@ -3877,7 +3877,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             4. 慢慢滑回。重複 12 下。
         </p>
     </div>
- <p><img src="/images/diseases/shoulder/impinge/e.jpg" alt="肩夾擠肌力強化"></p>
+ <p><img src="/images/diseases/shoulder/impinge/e.webp" alt="肩夾擠肌力強化"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
@@ -3910,7 +3910,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '肩夾擠症候群造成舉手疼痛與夜間痛。宸新復健科提供動態超音波診斷，運用PRP再生注射修復肌腱，搭配肩胛穩定訓練，有效解決肩膀夾擠問題。',
         images: [
-          {src: '/images/diseases/shoulder/impinge/a.jpg', alt: '肩夾擠症候群'
+          {src: '/images/diseases/shoulder/impinge/a.webp', alt: '肩夾擠症候群'
           }
         ]
       }
@@ -3926,7 +3926,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     title: '手肘',
     description: '手肘相關疾病',
     lastModified: '2026-01-21',
-    image: '/images/diseases/c.jpg',
+    image: '/images/diseases/c.webp',
     seoKeywords: ['網球肘治療', '高爾夫球肘', '手肘痛', '新竹震波推薦'],
     seoDescription: '手肘外側痛擰毛巾沒力？專治網球肘與高爾夫球肘。引進瑞士聚焦式震波治療，有效修復肌腱發炎，恢復手臂力量。',
     diseases: [
@@ -3974,7 +3974,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               </ul>
           </div>
       
-          <p><img src="/images/diseases/elbow/tennis/b.jpg" alt="網球肘疼痛機轉"></p>
+          <p><img src="/images/diseases/elbow/tennis/b.webp" alt="網球肘疼痛機轉"></p>
       
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -4009,7 +4009,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   <strong>休息是第一步。</strong> 建議配戴<strong>「網球肘護具」</strong>（戴在手肘下方約兩指幅的肌肉肥厚處，而非骨頭上），能分散肌腱受力。搭配健保物理治療（超音波、雷射、深層熱療）來緩解急性發炎，及居家按摩伸展肌肉或徒手治療來放鬆肌肉。
               </p>
           </div>
-       <p><img src="/images/diseases/elbow/tennis/e.jpg" alt="網球肘護具機轉"></p>
+       <p><img src="/images/diseases/elbow/tennis/e.webp" alt="網球肘護具機轉"></p>
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
               <h4 style="margin-top: 0; color: #0e7490 !important;">2. 慢性期首選：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療(ESWT)</a>🔍️</h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
@@ -4033,7 +4033,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               <h4 style="color: #22d3ee !important;">1. 伸腕肌群伸展</h4>
               <p style="color: #e2e8f0 !important;">手臂伸直，手心向下。用另一隻手將患側手掌<strong>往下、往內</strong>壓，直到手肘外側有緊繃感。停留 15-30 秒，重複 3-5 次。這能放鬆緊繃的肌肉。</p>
           </div>
-           <p><img src="/images/diseases/elbow/tennis/d.jpg" alt="居家進行手腕屈肌伸展運動"></p>
+           <p><img src="/images/diseases/elbow/tennis/d.webp" alt="居家進行手腕屈肌伸展運動"></p>
 
       <div style="margin-bottom: 2rem;">
               <h4 style="color: #22d3ee !important;">2. 橫向深層按摩</h4>
@@ -4052,7 +4052,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               </ol>
               <p style="color: #94a3b8 !important; font-size: 0.9rem;">*原理：離心運動能像「梳頭髮」一樣，將雜亂的肌腱纖維梳理整齊，並增加肌腱強度。</p>
           </div>
-          <p><img src="/images/diseases/elbow/tennis/c.jpg" alt="網球肘離心運動訓練"></p>
+          <p><img src="/images/diseases/elbow/tennis/c.webp" alt="網球肘離心運動訓練"></p>
       
     
       
@@ -4083,7 +4083,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '網球肘（肱骨外上髁炎）造成手肘外側疼痛、握力下降。宸新復健科提供震波治療、PRP注射與離心運動教學，有效修復肌腱，解決長期手肘疼痛。',
         images: [
-          { src: '/images/diseases/elbow/tennis/a.jpg', alt: '網球肘示意圖'
+          { src: '/images/diseases/elbow/tennis/a.webp', alt: '網球肘示意圖'
           }
         ]
       },
@@ -4133,7 +4133,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             </div>
         
             
-            <p><img src="/images/diseases/elbow/golf/b.jpg" alt="高爾夫球解剖結構示意圖，標示內側疼痛點"></p>
+            <p><img src="/images/diseases/elbow/golf/b.webp" alt="高爾夫球解剖結構示意圖，標示內側疼痛點"></p>
         
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
@@ -4180,7 +4180,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                     <strong>暫停致痛動作。</strong> 建議配戴<strong>「高爾夫球肘護具」</strong>（戴在手肘下方肌肉肥厚處），改變力的傳導方向。可搭配徒手物理治療，物理治療師會使用貼紮技術或深層按摩來放鬆緊繃的前臂屈肌。
                 </p>
             </div>
-         <p><img src="/images/diseases/elbow/tennis/e.jpg" alt="網球肘護具機轉"></p>
+         <p><img src="/images/diseases/elbow/tennis/e.webp" alt="網球肘護具機轉"></p>
             <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
                 <h4 style="margin-top: 0; color: #0e7490 !important;">2. 慢性期首選：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療(ESWT)</a>🔍️</h4>
                 <p style="margin-bottom: 0; color: #334155 !important;">
@@ -4198,7 +4198,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             </div>
         
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-            <p><img src="/images/diseases/elbow/golf/d.jpg" alt="高爾夫球肘居家進行手腕屈肌伸展伸展運動"></p>
+            <p><img src="/images/diseases/elbow/golf/d.webp" alt="高爾夫球肘居家進行手腕屈肌伸展伸展運動"></p>
             <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：復健運動四部曲</h3>
             <p style="color: #e2e8f0 !important;">疼痛緩解後，必須透過運動強化肌腱，否則下次提重物又會復發。請早晚各做一輪：</p>
         
@@ -4207,7 +4207,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 <p style="color: #e2e8f0 !important;">手臂伸直，手心向上。用另一隻手將患側手掌<strong>往下、往後</strong>拉，直到手肘內側有緊繃感。停留 15-30 秒，重複 3-5 次。這能延長緊繃縮短的肌肉。</p>
             </div>
         
-              <p><img src="/images/diseases/elbow/golf/c.jpg" alt="居家進行手腕屈肌伸展運動"></p>
+              <p><img src="/images/diseases/elbow/golf/c.webp" alt="居家進行手腕屈肌伸展運動"></p>
         
            <div style="margin-bottom: 2rem;">
               <h4 style="color: #22d3ee !important;">2. 橫向深層按摩</h4>
@@ -4259,7 +4259,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           ],
           seoDescription: '高爾夫球肘（肱骨內上髁炎）造成手肘內側疼痛、握力下降。宸新復健科提供震波治療、PRP注射與離心運動教學，有效修復肌腱，解決長期手肘疼痛。',
           images: [
-            { src: '/images/diseases/elbow/golf/a.jpg', alt: '高爾夫球肘示意圖'
+            { src: '/images/diseases/elbow/golf/a.webp', alt: '高爾夫球肘示意圖'
             }
           ]
       },
@@ -4273,7 +4273,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：趴在桌上午休，醒來發現<strong>小指和無名指</strong>麻到像有螞蟻在爬？或是講電話、滑手機久了，手肘內側覺得痠痠的，手指頭開始不聽使喚？嚴重時甚至發現手掌虎口處的肌肉好像<strong>「凹下去」</strong>了？</p>
           <br>
           <p style="color: #e2e8f0 !important;">這些都是典型的<strong>「尺神經壓迫」</strong>症狀，臨床上最常見的就是<strong>「肘隧道症候群」</strong>，俗稱「手機肘」。這條神經就是我們撞到手肘會像觸電一樣痛的那條「麻筋」。在宸新復健科，我們不只做電療，更利用<strong>高解析神經超音波</strong>直接觀察神經是否腫脹變形，並運用<strong>神經解套注射</strong>將壓迫的組織撐開，從源頭釋放神經壓力，避免走上開刀這條路。</p>
-          <p><img src="/images/diseases/elbow/ulnar/b.jpg" alt="尺神經壓迫麻痛範圍" style="width: 80%; height: auto;"></p>
+          <p><img src="/images/diseases/elbow/ulnar/b.webp" alt="尺神經壓迫麻痛範圍" style="width: 80%; height: auto;"></p>
       
           <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
               <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -4290,7 +4290,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                           位於手肘內側的骨頭溝槽。當我們<strong>彎曲手肘</strong>超過 90 度時（如講電話、睡覺彎手），這裡的空間會變窄，神經受到的壓力會暴增 20 倍！就像水管被折起來一樣，神經傳導就會中斷。
                       </div>
                   </li>
-                    <p><img src="/images/diseases/elbow/ulnar/c.jpg" alt="手肘尺神經壓迫麻痛範圍" style="width: 45%; height: auto;"></p>
+                    <p><img src="/images/diseases/elbow/ulnar/c.webp" alt="手肘尺神經壓迫麻痛範圍" style="width: 45%; height: auto;"></p>
                   <li style="margin-bottom: 0; display: flex; align-items: start;">
                       <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
                       <div style="color: #92400e !important;">
@@ -4298,7 +4298,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                           位於手掌小指側根部。常見於<strong>自行車騎士</strong>（手握把手壓迫）或長期使用滑鼠壓著手腕的人。這裡壓迫通常只會手麻，手肘不會痛。
                       </div>
                   </li>
-                   <p><img src="/images/diseases/elbow/ulnar/d.jpg" alt="手腕尺神經壓迫麻痛範圍" style="width: 45%; height: auto;"></p>
+                   <p><img src="/images/diseases/elbow/ulnar/d.webp" alt="手腕尺神經壓迫麻痛範圍" style="width: 45%; height: auto;"></p>
               </ul>
           </div>
       
@@ -4348,7 +4348,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           </div>
     
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-     <p><img src="/images/diseases/elbow/ulnar/e.jpg" alt="手腕尺神經壓迫居家運動" style="width: 100%; height: auto;"></p>
+     <p><img src="/images/diseases/elbow/ulnar/e.webp" alt="手腕尺神經壓迫居家運動" style="width: 100%; height: auto;"></p>
           <h3 style="color: #f8fafc !important;">🏠 居家運動：幫神經做體操</h3>
           <p style="color: #e2e8f0 !important;">這套動作稱為「神經滑動」，請輕柔操作，<strong>不要</strong>做到手麻，感覺微微拉扯即可。</p>
     
@@ -4403,7 +4403,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '小指無名指發麻、手肘內側痛？可能是尺神經壓迫(肘隧道症候群)。宸新復健科運用高解析超音波診斷，提供神經解套注射與物理治療，免開刀解決手麻與肌肉萎縮。',
         images: [
-          { src: '/images/diseases/elbow/ulnar/a.jpg', alt: '尺神經壓迫麻痛區域' }
+          { src: '/images/diseases/elbow/ulnar/a.webp', alt: '尺神經壓迫麻痛區域' }
         ]
     }
 
@@ -4418,7 +4418,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     title: '手部',
     lastModified: '2026-01-21',
     description: '手部相關疾病',
-    image: '/images/diseases/d.jpg',
+    image: '/images/diseases/d.webp',
     seoKeywords: ['板機指微創手術', '媽媽手治療', '腕隧道症候群', '手麻', '新竹手外科'],
     seoDescription: '手指卡住或手麻刺痛？專治板機指、媽媽手與腕隧道症候群。提供超音波導引注射與微創手術諮詢，快速緩解手部疼痛。',
     diseases: [
@@ -4468,7 +4468,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               </ul>
           </div>
 
-        <p><img src="/images/diseases/hand/tfcc/b.jpg" alt="三角纖維軟骨損傷結構"></p>
+        <p><img src="/images/diseases/hand/tfcc/b.webp" alt="三角纖維軟骨損傷結構"></p>
       
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -4546,7 +4546,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               <p style="color: #e2e8f0 !important;">用力握住軟式網球或握力球 5 秒後放鬆。強化前臂肌肉群，增加手腕穩定度。</p>
           </div>
       
-         <p><img src="/images/diseases/hand/tfcc/c.jpg" alt="三角纖維軟骨損傷腕關節穩定訓練"></p>
+         <p><img src="/images/diseases/hand/tfcc/c.webp" alt="三角纖維軟骨損傷腕關節穩定訓練"></p>
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -4581,7 +4581,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: 'TFCC損傷（三角纖維軟骨）造成手腕外側擰毛巾疼痛。宸新復健科提供PRP增生療法與護具指導，修復手腕半月板，解決長期手腕疼痛。',
         images: [
-          {  src: '/images/diseases/hand/tfcc/a.jpg', alt: '三角纖維軟骨示意圖'
+          {  src: '/images/diseases/hand/tfcc/a.webp', alt: '三角纖維軟骨示意圖'
           }
         ]
       },
@@ -4633,7 +4633,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           </div>
       
           
-             <p><img src="/images/diseases/hand/dq/b.jpg" alt="媽媽手肌肉構造"></p>
+             <p><img src="/images/diseases/hand/dq/b.webp" alt="媽媽手肌肉構造"></p>
       
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -4660,7 +4660,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               </ol>
           </div>
       
-                  <p><img src="/images/diseases/hand/dq/c.jpg" alt="媽媽手Finkelstein 自我檢測動作示範"></p>
+                  <p><img src="/images/diseases/hand/dq/c.webp" alt="媽媽手Finkelstein 自我檢測動作示範"></p>
       
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -4673,7 +4673,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   <strong>護腕沒用，要用「拇指副木」！</strong> 一般的護腕只能固定手腕，大拇指還是能亂動。治療媽媽手必須使用<strong>「包含大拇指固定」</strong>的專用護具（Thumb Spica Splint），強迫大拇指休息，這是最重要的一步，也可以考慮高能量雷射快速減緩痛。
               </p>
           </div>
-                 <p><img src="/images/diseases/hand/dq/d.jpg" alt="媽媽手護腕"></p>
+                 <p><img src="/images/diseases/hand/dq/d.webp" alt="媽媽手護腕"></p>
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
               <h4 style="margin-top: 0; color: #0e7490 !important;">2. 注射治療：類固醇好還是 PRP 好？</h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
@@ -4735,7 +4735,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         <strong>功效：</strong>直接伸展發炎緊繃的伸拇短肌與外展拇長肌腱。
     </p>
 </div>
-             <p><img src="/images/diseases/hand/dq/e.jpg" alt="媽媽手居家手部放鬆與訓練"></p>
+             <p><img src="/images/diseases/hand/dq/e.webp" alt="媽媽手居家手部放鬆與訓練"></p>
       
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -4768,7 +4768,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '媽媽手（狄奎凡氏症）造成大拇指根部劇痛。宸新復健科提供PRP增生療法、專用護具指導與居家復健教學，有效修復肌腱，解決長期手腕疼痛。',
         images: [
-          { src: '/images/diseases/hand/dq/a.jpg', alt: '媽媽手疼痛示意圖'
+          { src: '/images/diseases/hand/dq/a.webp', alt: '媽媽手疼痛示意圖'
           }
         ]
       },
@@ -4818,7 +4818,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 </ul>
             </div>
         
-                        <p><img src="/images/diseases/hand/cts/b.jpg" alt="腕隧道症候群原理與構造"></p>
+                        <p><img src="/images/diseases/hand/cts/b.webp" alt="腕隧道症候群原理與構造"></p>
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
             <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：麻哪幾根手指很重要！</h3>
@@ -4829,7 +4829,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 <li><strong>嚴重警訊：</strong> 大拇指基部的肌肉（大魚際肌）萎縮凹陷，導致拿東西沒力氣，容易掉落。這代表神經已經受損嚴重，可能需要開刀。</li>
             </ul>
             <p style="color: #94a3b8 !important; font-size: 0.9rem;">*註：如果是小指麻，通常是「肘隧道症候群」（尺神經問題），不是腕隧道喔！</p>
-        <p><img src="/images/diseases/hand/cts/c.jpg" alt="腕隧道症候群症狀"></p>
+        <p><img src="/images/diseases/hand/cts/c.webp" alt="腕隧道症候群症狀"></p>
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
             <h3 style="color: #f8fafc !important;">🔍 自我檢測：法倫氏測試 (Phalen's Test)</h3>
@@ -4841,7 +4841,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 <li><strong>結果：</strong> 如果在 1 分鐘內，手指開始出現<strong>麻木、刺痛</strong>的感覺，那就是陽性反應，罹患腕隧道症候群的機率很高。</li>
             </ol>
         
-           <p><img src="/images/diseases/hand/cts/d.jpg" alt="腕隧道症候法倫氏測試 (Phalen's test) 動作示範"></p>
+           <p><img src="/images/diseases/hand/cts/d.webp" alt="腕隧道症候法倫氏測試 (Phalen's test) 動作示範"></p>
         
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
@@ -4864,7 +4864,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 </p>
             </div>
         
-             <p><img src="/images/diseases/hand/cts/e.jpg" alt="腕隧道症候群超音波導引神經解套術注射"></p>
+             <p><img src="/images/diseases/hand/cts/e.webp" alt="腕隧道症候群超音波導引神經解套術注射"></p>
 
             <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
                 <h4 style="margin-top: 0; color: #0e7490 !important;">3. 何時需要手術？</h4>
@@ -4890,7 +4890,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 <p style="color: #94a3b8 !important; font-size: 0.9rem;">*每個動作停留 5 秒，過程中若感到輕微麻感是正常的拉扯現象。</p>
             </div>
         
-               <p><img src="/images/diseases/hand/cts/f.jpg" alt="腕隧道症候群正中神經滑動五部曲"></p>
+               <p><img src="/images/diseases/hand/cts/f.webp" alt="腕隧道症候群正中神經滑動五部曲"></p>
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
             <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
@@ -4923,7 +4923,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           seoDescription: '腕隧道症候群（滑鼠手）造成手指發麻、夜間痛醒。宸新復健科提供神經解套注射與夜間護具指導，有效解除正中神經壓迫，免除手術之苦。',
           images: [
             { 
-                    src: '/images/diseases/hand/cts/a.jpg', alt: '腕隧道症候群疼痛示意圖'   
+                    src: '/images/diseases/hand/cts/a.webp', alt: '腕隧道症候群疼痛示意圖'   
             }
           ]
       },
@@ -4972,7 +4972,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                     </li>
                 </ul>
             </div>
-               <p><img src="/images/diseases/hand/trigger/b.jpg" alt="板機指構造示意圖"></p>
+               <p><img src="/images/diseases/hand/trigger/b.webp" alt="板機指構造示意圖"></p>
 
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
@@ -5023,7 +5023,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                     <strong>超音波導引解套注射 (Hydrodissection)：</strong> 新式療法。利用超音波看準滑車與肌腱的縫隙，注入藥水（葡萄糖或 PRP）將兩者<strong>「撐開」</strong>，剝離沾黏並促進修復。適合不想打類固醇或糖尿病患者。
                 </p>
             </div>
-                  <p><img src="/images/diseases/hand/trigger/c.jpg" alt="板機指超音波導引注射"></p>
+                  <p><img src="/images/diseases/hand/trigger/c.webp" alt="板機指超音波導引注射"></p>
             <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
                 <h4 style="margin-top: 0; color: #0e7490 !important;">3. 頑固型：經皮穿刺鬆解術 (Needle Release)</h4>
                 <p style="margin-bottom: 0; color: #334155 !important;">
@@ -5050,7 +5050,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 <h4 style="color: #22d3ee !important;">3. 伸展屈指肌群</h4>
                 <p style="color: #e2e8f0 !important;">將患側手臂伸直，手心向外，用另一隻手將患指往後扳，感覺前臂內側有拉扯感。停留 15 秒，重複 5 次。</p>
             </div>
-            <p><img src="/images/diseases/hand/trigger/d.jpg" alt="板機指居家運動"></p>
+            <p><img src="/images/diseases/hand/trigger/d.webp" alt="板機指居家運動"></p>
 
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
@@ -5083,7 +5083,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           ],
           seoDescription: '板機指造成手指卡住伸不直，伴隨喀喀聲。宸新復健科提供超音波導引注射、副木固定與微創針挑手術，有效解決肌腱沾黏，恢復手指靈活。',
           images: [
-            { src: '/images/diseases/hand/trigger/a.jpg', alt: '板機指疼痛示意圖'   
+            { src: '/images/diseases/hand/trigger/a.webp', alt: '板機指疼痛示意圖'   
             }
           ]
       },
@@ -5098,7 +5098,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">您是否曾在洗澡或活動手腕時，無意間發現<strong>手腕背側</strong>或<strong>手腕內側</strong>突然凸起一顆圓圓、軟軟的東西？用力按壓時有點痠痠的，甚至在做伏地挺身、撐床起身時，手腕會感到一陣刺痛？</p>
           <br>
           <p style="color: #e2e8f0 !important;">別驚慌，這通常不是腫瘤，而是良性的<strong>「腱鞘囊腫」</strong>。雖然它很常見，但這其實是關節發出的求救訊號，代表您的手腕韌帶可能已經鬆弛不穩定！在宸新復健科，我們不只幫您把囊腫裡的積液抽掉，更重視<strong>「為什麼會長出來？」</strong>。我們透過<strong>高解析超音波</strong>精準導引治療，並針對鬆弛的韌帶進行強化，從根本解決反覆復發的困擾。</p>
-          <p><img src="/images/diseases/hand/cyst/b.jpg" alt="手腕背側腱鞘囊腫" style="width: 50%; height: auto;"></p>
+          <p><img src="/images/diseases/hand/cyst/b.webp" alt="手腕背側腱鞘囊腫" style="width: 50%; height: auto;"></p>
       
           <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
               <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -5142,7 +5142,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               <li><strong>手腕掌側：</strong> 位於手腕內側，靠近脈搏跳動處（橈動脈旁）。這裡處理要非常小心，因為緊鄰血管與神經。</li>
               <li><strong>手指關節：</strong> 小小的像米粒一樣，長在手指頭關節處，握用力按壓像壓到小石頭一樣痛。</li>
           </ul>
-            <p><img src="/images/diseases/hand/cyst/c.jpg" alt="腱鞘囊腫位置" style="width: 70%; height: auto;"></p>
+            <p><img src="/images/diseases/hand/cyst/c.webp" alt="腱鞘囊腫位置" style="width: 70%; height: auto;"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <h3 style="color: #f8fafc !important;">🛡️ 宸新獨家治療策略：不只抽吸，更要「封口」</h3>
@@ -5217,7 +5217,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   <br>3. 慢慢收回。重複 15 下，做 3 組。
               </p>
           </div>
-       <p><img src="/images/diseases/hand/cyst/d.jpg" alt="腱鞘囊腫居家運動" style="width: 100%; height: auto;"></p>
+       <p><img src="/images/diseases/hand/cyst/d.webp" alt="腱鞘囊腫居家運動" style="width: 100%; height: auto;"></p>
           <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
               <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 別去揉它！越揉可能越嚴重</h3>
               <p style="color: #334155 !important; margin-bottom: 1.5rem;">很多患者會試圖用力把囊腫「揉散」或「敲破」，這其實非常危險！不僅容易復發，還可能造成周圍組織發炎甚至感染。如果您發現手腕長了東西，請交給專業醫師評估。宸新復健科透過精準的超音波診斷與再生治療，幫您安全、有效地解決手腕上的違章建築！</p>
@@ -5248,7 +5248,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '手腕長水球、腱鞘囊腫怎麼辦？宸新復健科提供高解析超音波導引抽吸，並結合韌帶增生療法強化關節穩定度，有效降低復發機率，免開刀解決手腕疼痛。',
         images: [
-          { src: '/images/diseases/hand/cyst/a.jpg', alt: '囊腫形成示意圖' }
+          { src: '/images/diseases/hand/cyst/a.webp', alt: '囊腫形成示意圖' }
         ]
     },
  {
@@ -5296,7 +5296,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-      <p><img src="/images/diseases/hand/sl/b.jpg" alt="舟月韌帶結構"></p>
+      <p><img src="/images/diseases/hand/sl/b.webp" alt="舟月韌帶結構"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：如何分辨是韌帶斷了？</h3>
@@ -5314,7 +5314,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">對於舟月韌帶損傷，單靠一張普通的 X 光片往往不夠。我們採用進階的影像診斷：</p>
            <p style="color: #e2e8f0 !important;">高解析度超音波檢查，可清楚看到關節中間的<strong>韌帶有無受傷，關節有無分離或是有積液</strong></p>
 
-      <p><img src="/images/diseases/hand/sl/c.jpg" alt="舟月韌帶超音波影像"></p>
+      <p><img src="/images/diseases/hand/sl/c.webp" alt="舟月韌帶超音波影像"></p>
      
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -5378,7 +5378,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   <br>3. <strong>注意：</strong> 握球時手腕要保持正中，不要彎曲。
               </p>
           </div>
-          <p><img src="/images/diseases/hand/sl/d.jpg" alt="舟月韌帶受傷居家運動"></p>
+          <p><img src="/images/diseases/hand/sl/d.webp" alt="舟月韌帶受傷居家運動"></p>
         
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -5412,7 +5412,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '舟月韌帶受傷常被誤為普通扭傷，導致長期手腕痛與撐地無力。宸新復健科提供動態超音波診斷，運用PRP再生注射修復韌帶，搭配飛鏢投擲運動，重建手腕穩定。',
         images: [
-          {src: '/images/diseases/hand/sl/a.jpg', alt: '舟月韌帶受傷'
+          {src: '/images/diseases/hand/sl/a.webp', alt: '舟月韌帶受傷'
           }
         ]
       }
@@ -5428,7 +5428,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     title: '膝蓋',
     lastModified: '2026-01-21',
     description: '膝蓋相關疾病',
-    image: '/images/diseases/e.jpg',
+    image: '/images/diseases/e.webp',
     seoKeywords: ['退化性關節炎治療', '膝蓋痛打針', 'PRP膝蓋', '半月板破裂', '新竹骨科膝蓋'],
     seoDescription: '膝蓋退化上下樓梯痛？新竹退化性膝關節炎治療首選。提供玻尿酸潤滑與PRP軟骨修復療程。免開刀改善半月板受損與十字韌帶損傷。',
     diseases: [
@@ -5478,7 +5478,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 </ul>
             </div>
         
-                    <p><img src="/images/diseases/knee/oa/b.jpg" alt="退化性關節炎示意圖"></p>
+                    <p><img src="/images/diseases/knee/oa/b.webp" alt="退化性關節炎示意圖"></p>
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
             <h3 style="color: #f8fafc !important;">⚠️ 分級制度：你的膝蓋幾歲了？</h3>
@@ -5490,7 +5490,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 <li><strong>第四級 (Grade 4)：</strong> 關節間隙消失（骨頭磨骨頭），骨頭變形。寸步難行，可能需要考慮人工關節置換。</li>
             </ul>
                
-                    <p><img src="/images/diseases/knee/oa/c.jpg" alt="退化性關節炎x光分級"></p>
+                    <p><img src="/images/diseases/knee/oa/c.webp" alt="退化性關節炎x光分級"></p>
 
 
 
@@ -5503,7 +5503,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         <h4 style="color: #22d3ee !important;">1. 膝關節積水 (Joint Effusion)</h4>
         <p style="color: #e2e8f0 !important;">正常的關節液只有一點點。但在超音波下，若看到髕骨上方出現<strong>「黑色的不規則區域」</strong>（黑色代表液體），那就是積水。這代表關節內正處於急性發炎狀態，會讓膝蓋非常腫脹，抽出後會舒服很多，施打PRP或玻尿酸前也一定要抽出，以免跟積水混在一起影響效果。</p>
     </div>
-<p><img src="/images/diseases/knee/oa/e.jpg" alt="退化性關節炎膝蓋積水"></p>
+<p><img src="/images/diseases/knee/oa/e.webp" alt="退化性關節炎膝蓋積水"></p>
     <div style="margin-bottom: 2rem;">
         <h4 style="color: #22d3ee !important;">2. 半月板擠出與破裂 (Meniscus Extrusion)</h4>
         <p style="color: #e2e8f0 !important;">健康的半月板應該乖乖待在上下骨頭中間當避震器。但在退化性關節炎患者身上，超音波常看到半月板像<strong>「夾心餅乾的內餡」</strong>一樣被擠出來，甚至出現不連續的裂痕（撕裂）。這代表避震功能失效，骨頭將直接承受衝擊。</p>
@@ -5583,7 +5583,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 <p style="color: #e2e8f0 !important;">平躺或長坐，在膝蓋下方墊一條捲起來的毛巾。用力將膝蓋往下壓毛巾，讓大腿肌肉繃緊，維持 10 秒後放鬆。適合術後或膝蓋無力的初期復健。</p>
             </div>
         
-                     <p><img src="/images/diseases/knee/oa/d.jpg" alt="退化性關節炎居家運動"></p>
+                     <p><img src="/images/diseases/knee/oa/d.webp" alt="退化性關節炎居家運動"></p>
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
             <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
@@ -5615,7 +5615,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           ],
           seoDescription: '退化性膝關節炎造成上下樓梯膝蓋無力疼痛。宸新復健科提供PRP軟骨修復、玻尿酸注射與股四頭肌運動教學，有效延緩關節置換手術。',
           images: [
-            { src: '/images/diseases/knee/oa/a.jpg', alt: '退化性膝關節炎疼痛示意圖' 
+            { src: '/images/diseases/knee/oa/a.webp', alt: '退化性膝關節炎疼痛示意圖' 
             }
           ]
 
@@ -5666,7 +5666,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-                       <p><img src="/images/diseases/knee/jump/b.jpg" alt="髕骨肌腱結構"></p>
+                       <p><img src="/images/diseases/knee/jump/b.webp" alt="髕骨肌腱結構"></p>
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -5697,7 +5697,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   這也是我們判斷嚴重程度的關鍵。如果開啟血流偵測模式，在肌腱內部看到<strong>像火苗一樣的紅藍色訊號</strong>，代表有很多不正常的「新生血管」長進去。這些血管伴隨著神經，是疼痛的主要來源，也是 PRP 或震波治療的主要目標。
               </p>
           </div>
-                     <p><img src="/images/diseases/knee/jump/c.jpg" alt="髕骨肌超音波影像"></p>
+                     <p><img src="/images/diseases/knee/jump/c.webp" alt="髕骨肌超音波影像"></p>
        
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -5710,7 +5710,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   綁在膝蓋骨正下方的一條帶子。它的原理是改變肌腱的受力支點，分散拉力，能立即減輕疼痛，讓您能維持輕度活動。
               </p>
           </div>
-      <p><img src="/images/diseases/knee/jump/e.jpg" alt="髕骨加壓帶" style="width: 50%; height: auto;"></p>
+      <p><img src="/images/diseases/knee/jump/e.webp" alt="髕骨加壓帶" style="width: 50%; height: auto;"></p>
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
               <h4 style="margin-top: 0; color: #0e7490 !important;">2. 黃金標準：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療(ESWT)</a>🔍️</h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
@@ -5773,7 +5773,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             <strong>重點：</strong> 重點在於「下蹲」的過程要慢。這能梳理肌腱纖維，引導新生組織排列整齊，增加肌腱強度。
         </p>
     </div>
-     <p><img src="/images/diseases/knee/jump/d.jpg" alt="髕骨肌腱炎(跳躍膝)居家運動強化"></p>
+     <p><img src="/images/diseases/knee/jump/d.webp" alt="髕骨肌腱炎(跳躍膝)居家運動強化"></p>
 </div>
       
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -5807,7 +5807,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '跳躍膝（髕骨肌腱炎）造成膝蓋下方劇痛，影響跳躍能力。宸新復健科提供震波治療、PRP注射與西班牙深蹲教學，有效修復肌腱退化。',
         images: [
-          { src: '/images/diseases/knee/jump/a.jpg', alt: '跳躍膝（髕骨肌腱炎）' 
+          { src: '/images/diseases/knee/jump/a.webp', alt: '跳躍膝（髕骨肌腱炎）' 
           }
         ]
       },
@@ -5822,7 +5822,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">您的孩子是否正處於快速長高的青春期？是不是常在打球、跑步後抱怨<strong>膝蓋下方（小腿骨上端）疼痛</strong>？甚至您摸到那邊的骨頭好像<strong>「凸起來」</strong>了一塊，輕輕碰到就痛得哇哇叫？</p>
           <br>
           <p style="color: #e2e8f0 !important;">很多家長誤以為這是正常的「生長痛」，貼貼藥布就好。其實，這很可能是<strong>「奧斯戈德氏病 (Osgood-Schlatter Disease)」</strong>，俗稱<strong>脛骨粗隆骨凸炎</strong>。這不只是肌肉問題，更是骨頭與肌腱的拉鋸戰！在宸新復健科，我們重視的不僅是消炎，更透過<strong>院內超音波與 X 光機</strong>追蹤骨骼生長板狀態，並結合<strong>脊高能雷射止痛</strong>與<strong>徒手放鬆治療</strong>，防止骨頭永久性突起與變形。</p>
-          <p><img src="/images/diseases/knee/osgood/b.jpg" alt="奧斯戈德氏病痛點位置"></p>
+          <p><img src="/images/diseases/knee/osgood/b.webp" alt="奧斯戈德氏病痛點位置"></p>
 
           <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
               <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -5855,7 +5855,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-          <p><img src="/images/diseases/knee/osgood/c.jpg" alt="脛骨粗隆拉扯示意圖" style="width: 100%; height: auto;"></p>
+          <p><img src="/images/diseases/knee/osgood/c.webp" alt="脛骨粗隆拉扯示意圖" style="width: 100%; height: auto;"></p>
     
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -5881,7 +5881,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </ul>
               </p>
           </div>
-            <p><img src="/images/diseases/knee/osgood/d.jpg" alt="奧斯戈德氏病撕裂性骨折" style="width: 100%; height: auto;"></p>
+            <p><img src="/images/diseases/knee/osgood/d.webp" alt="奧斯戈德氏病撕裂性骨折" style="width: 100%; height: auto;"></p>
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
               <h4 style="margin-top: 0; color: #0e7490 !important;">2. 力線矯正：物理治療師評估與運動治療</h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
@@ -5906,7 +5906,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                     </ul>
               </p>
           </div>
-                       <p><img src="/images/diseases/knee/osgood/e.jpg" alt="奧斯戈德氏病撕裂性骨折" style="width: 50%; height: auto;"></p>
+                       <p><img src="/images/diseases/knee/osgood/e.webp" alt="奧斯戈德氏病撕裂性骨折" style="width: 50%; height: auto;"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
     
           <h3 style="color: #f8fafc !important;">🏠 居家運動：聰明伸展，保護膝蓋</h3>
@@ -5956,7 +5956,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               </p>
           </div>
     
- <p><img src="/images/diseases/knee/osgood/f.jpg" alt="奧斯戈德氏病居家伸展運動" style="width: 100%; height: auto;"></p>
+ <p><img src="/images/diseases/knee/osgood/f.webp" alt="奧斯戈德氏病居家伸展運動" style="width: 100%; height: auto;"></p>
 
           <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
               <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 把握青春期黃金治療期！</h3>
@@ -5988,7 +5988,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '青春期膝蓋痛、膝蓋下方凸起？奧斯戈德氏病專門治療。宸新復健科運用X光排除骨折，結合脊椎側彎矯正架調整骨盆與足部力線，預防骨骼永久變形。',
         images: [
-          { src: '/images/diseases/knee/osgood/a.jpg', alt: '奧斯戈德氏病'  }
+          { src: '/images/diseases/knee/osgood/a.webp', alt: '奧斯戈德氏病'  }
         ]
     },
 
@@ -6034,7 +6034,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-         <p><img src="/images/diseases/knee/mm/b.jpg" alt="半月板的血液供應"></p>
+         <p><img src="/images/diseases/knee/mm/b.webp" alt="半月板的血液供應"></p>
     
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -6066,7 +6066,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               <li><strong>發軟無力：</strong> 上下樓梯時突然覺得膝蓋「軟了一下」，使不上力。</li>
               <li><strong>彈響聲：</strong> 活動膝蓋時常聽到喀喀聲。</li>
           </ul>
-               <p><img src="/images/diseases/knee/mm/c.jpg" alt="半月板受傷的症狀"></p>
+               <p><img src="/images/diseases/knee/mm/c.webp" alt="半月板受傷的症狀"></p>
 
 
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -6083,7 +6083,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         </ul>
     </div>
 
-    <p><img src="/images/diseases/knee/mm/d.jpg" alt="半月板受傷的超音波影像"></p>
+    <p><img src="/images/diseases/knee/mm/d.webp" alt="半月板受傷的超音波影像"></p>
     
     <div style="margin-bottom: 2rem;">
         <h3 style="color: #f8fafc "><strong>2. 核磁共振 MRI</strong> (手術評估黃金標準)</h3>
@@ -6173,7 +6173,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '膝蓋半月板損傷造成關節卡住、刺痛與積水。宸新復健科提供精準超音波診斷，分辨紅白區撕裂，提供PRP再生注射與復健指導，非手術修復膝蓋避震器。',
         images: [
-          { src: '/images/diseases/knee/mm/a.jpg', alt: '膝蓋半月板損傷' 
+          { src: '/images/diseases/knee/mm/a.webp', alt: '膝蓋半月板損傷' 
           }
         ]
       },
@@ -6219,7 +6219,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-          <p><img src="/images/diseases/knee/acl/b.jpg" alt="十字韌帶結構圖"></p>
+          <p><img src="/images/diseases/knee/acl/b.webp" alt="十字韌帶結構圖"></p>
 
           
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -6252,7 +6252,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               </p>
           </div>
       
-          <p><img src="/images/diseases/knee/acl/c.jpg" alt="膝關節超音波導引抽血"></p>
+          <p><img src="/images/diseases/knee/acl/c.webp" alt="膝關節超音波導引抽血"></p>
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -6294,7 +6294,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               <h4 style="color: #22d3ee !important;">3. 避免動作 (禁忌)</h4>
               <p style="color: #e2e8f0 !important;">受傷初期（或術後 3 個月內），<strong>請避免「坐姿踢腿機」</strong>最後 30 度伸直的動作（開放鏈），這會對前十字韌帶產生極大的剪力，容易導致韌帶鬆弛或重建失敗。</p>
           </div>
-         <p><img src="/images/diseases/knee/acl/d.jpg" alt="十字韌帶受傷居家運動"></p>
+         <p><img src="/images/diseases/knee/acl/d.webp" alt="十字韌帶受傷居家運動"></p>
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -6327,7 +6327,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '十字韌帶損傷（ACL/PCL）造成膝蓋不穩與積水。宸新復健科提供PRP保守治療、術前術後復健指導，以及開刀決策諮詢，助您重返運動場。',
         images: [
-          { src: '/images/diseases/knee/acl/a.jpg', alt: '十字韌帶損傷'  
+          { src: '/images/diseases/knee/acl/a.webp', alt: '十字韌帶損傷'  
           }
         ]
       },
@@ -6376,7 +6376,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-    <p><img src="/images/diseases/knee/mcl/b.jpg" alt="內側副韌帶受傷結構"></p>
+    <p><img src="/images/diseases/knee/mcl/b.webp" alt="內側副韌帶受傷結構"></p>
 
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -6399,7 +6399,7 @@ export const diseaseCategories: DiseaseCategory[] = [
 
               <h4 style="color: #22d3ee !important;"><strong>2. 檢查伴隨損傷</strong></h4>
               <p style="color: #e2e8f0 !important;">副韌帶損傷受傷常伴隨內側半月板受損（因為它們黏在一起）。超音波可以同時檢查是否有半月板積水或突出的徵兆。</p>
-            <p><img src="/images/diseases/knee/mcl/c.jpg" alt="內側副韌帶受傷超音波圖片"></p>
+            <p><img src="/images/diseases/knee/mcl/c.webp" alt="內側副韌帶受傷超音波圖片"></p>
 
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -6445,7 +6445,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               <p style="color: #e2e8f0 !important;"><strong>蚌殼式運動：</strong> 側躺，雙膝彎曲，開合膝蓋。強化臀中肌，這是控制膝蓋不內夾（保護內側副韌帶）的最重要肌肉。</p>
           </div>
           
-         <p><img src="/images/diseases/knee/mcl/d.jpg" alt="內側副韌帶受傷居家運動"></p>
+         <p><img src="/images/diseases/knee/mcl/d.webp" alt="內側副韌帶受傷居家運動"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
@@ -6477,7 +6477,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '膝蓋副韌帶損傷（MCL/LCL）造成膝蓋內側劇痛與不穩。宸新復健科提供動態超音波診斷、PRP韌帶修復與護具指導，有效解決膝蓋鬆弛問題。',
         images: [
-          { src: '/images/diseases/knee/mcl/a.jpg', alt: '膝蓋副韌帶損傷' 
+          { src: '/images/diseases/knee/mcl/a.webp', alt: '膝蓋副韌帶損傷' 
           }
         ]
       },
@@ -6494,7 +6494,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 <br>
           <p style="color: #e2e8f0 !important;">這就是俗稱的<strong>「跑者膝」</strong>，醫學正式名稱為<strong>髂脛束症候群 (ITBS)</strong>。它是長跑者與自行車騎士最常見的夢魘。宸新復健科透過動態步態分析與高解析超音波，配合徒手運動治療評估、協助您找出是因為「臀肌失能」還是「足部過度旋前」導致的生物力學異常，並提供精準的修復方案。</p>
       
-      <p><img src="/images/diseases/knee/itb/d.jpg" alt="髂脛束疼痛" style="width: 50%; height: auto;"></p>
+      <p><img src="/images/diseases/knee/itb/d.webp" alt="髂脛束疼痛" style="width: 50%; height: auto;"></p>
           <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
               <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
                   📢 什麼是髂脛束？為什麼膝蓋外側會痛？
@@ -6527,7 +6527,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               </ul>
           </div>
         <p>
-  <img src="/images/diseases/knee/itb/b.jpg" alt="髂脛束構造" style="width: 35%; height: auto;">
+  <img src="/images/diseases/knee/itb/b.webp" alt="髂脛束構造" style="width: 35%; height: auto;">
            </p>
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -6602,7 +6602,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               <h4 style="color: #22d3ee !important;">3. 螃蟹走路</h4>
               <p style="color: #e2e8f0 !important;">在膝蓋上方套上彈力圈，採取半蹲姿勢，向側面橫向移動。這能強效訓練臀中肌，穩定骨盆，減少髂脛束的負擔。</p>
           </div>
-              <p><img src="/images/diseases/knee/itb/c.jpg" alt="髂脛束伸展"></p>
+              <p><img src="/images/diseases/knee/itb/c.webp" alt="髂脛束伸展"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
@@ -6636,7 +6636,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         seoDescription: '髂脛束症候群（跑者膝）造成膝蓋外側劇痛。宸新復健科提供震波治療、超音波導引注射與臀中肌訓練教學，有效解決跑步膝蓋痛。',
         images: [
           { 
-            src: '/images/diseases/knee/itb/a.jpg', alt: '髂脛束症候群疼痛示意圖' 
+            src: '/images/diseases/knee/itb/a.webp', alt: '髂脛束症候群疼痛示意圖' 
           }
         ]
       },
@@ -6650,7 +6650,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：坐著看電影或搭長途飛機，膝蓋維持彎曲久了，覺得膝蓋前方痠痛難耐，非得要把腳伸直動一動才舒服？或是平常走路還好，但只要<strong>下樓梯</strong>或<strong>蹲下</strong>時，膝蓋前方會感到痠軟無力，甚至聽到「喀喀」的摩擦聲？</p>
           <br>
           <p style="color: #e2e8f0 !important;">這不是老人的專利，而是年輕女性、路跑愛好者及久坐上班族最常見的膝蓋問題——<strong>「髕骨軟化症」</strong>，又常被稱為<strong>跑者膝</strong>。這代表您的膝蓋骨（髕骨）背面的軟骨正在被磨損！在宸新復健科，我們不只止痛，更重視<strong>「軌跡矯正」</strong>，透過超音波導引注射修復軟骨，並教您如何鍛鍊關鍵肌肉，把跑掉的膝蓋骨「拉回正軌」。</p>
-                        <p><img src="/images/diseases/knee/pfps/b.jpg" alt="髕骨軟化症示意圖"></p>
+                        <p><img src="/images/diseases/knee/pfps/b.webp" alt="髕骨軟化症示意圖"></p>
           
           <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
               <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -6667,7 +6667,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                           這是主因！如果大腿外側的肌肉（髂脛束、股外側肌）太緊，而內側的肌肉（股內側肌）太弱，髕骨就會被<strong>「往外拉」</strong>。導致髕骨外翻，脫離軌道中央，不斷磨損外側的軟骨。
                       </div>
                   </li>
-                                          <p><img src="/images/diseases/knee/pfps/c.jpg" alt="髕骨外翻原理"></p>
+                                          <p><img src="/images/diseases/knee/pfps/c.webp" alt="髕骨外翻原理"></p>
                   <li style="margin-bottom: 1rem; display: flex; align-items: start;">
                       <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
                       <div style="color: #92400e !important;">
@@ -6682,7 +6682,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                           女性因為骨盆較寬，大腿骨與小腿骨的角度（Q角）較大，俗稱的X形腿，天生髕骨就更容易往外滑，這也是為什麼女性患者遠多於男性的原因。
                       </div>
                   </li>
-                    <p><img src="/images/diseases/knee/pfps/d.jpg" alt="髕骨軟化症因Q角 (Q-Angle) 過大"></p>
+                    <p><img src="/images/diseases/knee/pfps/d.webp" alt="髕骨軟化症因Q角 (Q-Angle) 過大"></p>
               </ul>
           </div>
       
@@ -6714,7 +6714,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               <p style="margin-bottom: 0; color: #334155 !important;">
                   拍攝髕骨，觀察膝蓋骨有沒有歪斜或偏移。
               </p>
-              <p><img src="/images/diseases/knee/pfps/e.jpg" alt="髕骨外翻x光"></p>
+              <p><img src="/images/diseases/knee/pfps/e.webp" alt="髕骨外翻x光"></p>
           </div>
       
           
@@ -6796,7 +6796,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   <br>3. 感覺屁股側邊痠痠的。重複 15 下。
               </p>
           </div>
-         <p><img src="/images/diseases/knee/pfps/f.jpg" alt="髕骨軟化症髕骨外翻居家放鬆運動"></p>
+         <p><img src="/images/diseases/knee/pfps/f.webp" alt="髕骨軟化症髕骨外翻居家放鬆運動"></p>
         
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -6830,7 +6830,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '髕骨軟化症（跑者膝）造成膝蓋前側痛與下樓梯無力。宸新復健科提供超音波導引玻尿酸與PRP注射，搭配內側廣肌訓練，矯正髕骨軌跡，延緩膝蓋退化。',
         images: [
-          {      src: '/images/diseases/knee/pfps/a.jpg',  alt: '股四頭肌肌腱炎' 
+          {      src: '/images/diseases/knee/pfps/a.webp',  alt: '股四頭肌肌腱炎' 
           }
         ]
       },
@@ -6871,7 +6871,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               </ul>
           </div>
       
-            <p><img src="/images/diseases/knee/quadri/b.jpg" alt="股四頭肌肌腱結構"></p>
+            <p><img src="/images/diseases/knee/quadri/b.webp" alt="股四頭肌肌腱結構"></p>
         
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -6895,7 +6895,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   我們可以清楚看到肌腱是否<strong>腫脹、撕裂</strong>，以及內部是否有<strong>高回音的鈣化亮點</strong>。如果是「軟式鈣化」（還在發炎期），超音波下會呈現混濁狀；如果是「硬式鈣化」（陳舊傷），則會有明顯的陰影。這決定了我們治療的能量要開多強。
               </p>
           </div>
-             <p><img src="/images/diseases/knee/quadri/c.jpg" alt="股四頭肌肌腱鈣化超音波圖"></p>
+             <p><img src="/images/diseases/knee/quadri/c.webp" alt="股四頭肌肌腱鈣化超音波圖"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <h3 style="color: #f8fafc !important;">🛡️ 宸新全方位治療：重建肌腱，擊碎鈣化</h3>
@@ -6987,7 +6987,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             <br>5. 重複 10 下，做 3 組。
         </p>
     </div>
-              <p><img src="/images/diseases/knee/quadri/d.jpg" alt="股四頭肌肌腱炎居家運動"></p>
+              <p><img src="/images/diseases/knee/quadri/d.webp" alt="股四頭肌肌腱炎居家運動"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
@@ -7020,7 +7020,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '股四頭肌肌腱炎常造成膝蓋上方疼痛與鈣化，導致下樓梯無力。宸新復健科提供聚焦式體外震波擊碎鈣化，運用PRP再生注射修復肌腱，徹底解決膝蓋頑疾。',
         images: [
-          {              src: '/images/diseases/knee/quadri/a.jpg',  alt: '股四頭肌肌腱炎' 
+          {              src: '/images/diseases/knee/quadri/a.webp',  alt: '股四頭肌肌腱炎' 
           }
         ]
       },
@@ -7067,7 +7067,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-            <p><img src="/images/diseases/knee/pop/b.jpg" alt="膕肌解剖構造"></p>
+            <p><img src="/images/diseases/knee/pop/b.webp" alt="膕肌解剖構造"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <h3 style="color: #f8fafc !important;">🔍 為什麼膕肌會受傷？不只是膝蓋的問題！</h3>
@@ -7117,7 +7117,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           </div>
    
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-     <p><img src="/images/diseases/knee/pop/c.jpg" alt="放鬆膕肌與穩定膝蓋"></p>
+     <p><img src="/images/diseases/knee/pop/c.webp" alt="放鬆膕肌與穩定膝蓋"></p>
           <h3 style="color: #f8fafc !important;">🏠 居家復健運動：放鬆膕肌與穩定膝蓋</h3>
           <p style="color: #e2e8f0 !important;">在治療期間，配合居家運動能加速復原。請依照自身狀況進行：</p>
     
@@ -7198,7 +7198,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '膝蓋後側深處痠痛、下坡痛？可能是膕肌肌腱炎！宸新復健科運用院內X光與超音波雙重檢查，結合脊椎側彎矯正架調整骨盆力線，從根源解決膝窩疼痛與緊繃。',
         images: [
-          {   src: '/images/diseases/knee/pop/a.jpg',  alt: '膕肌肌腱炎'  }
+          {   src: '/images/diseases/knee/pop/a.webp',  alt: '膕肌肌腱炎'  }
         ]
     },
     {
@@ -7211,7 +7211,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：跑步或是上下樓梯時，<strong>膝蓋內側下方</strong>（大約關節縫下面一點點）感到劇烈刺痛？晚上睡覺側躺時，兩個膝蓋碰在一起也會痛？甚至摸起來有點腫腫的熱熱的？</p>
           <br>
           <p style="color: #e2e8f0 !important;">這不是膝關節退化，而是常見的<strong>「鵝掌肌腱炎」</strong>。這通常是運動過度或姿勢不良造成的結果。值得注意的是，鵝掌肌腱的問題往往暗示著<strong>「X 型腿」</strong>或<strong>「骨盆不穩」</strong>。在宸新復健科，我們不只幫您止痛，更利用<strong>物理治療師評估</strong>與<strong>超音波</strong>雙重檢查，結合<strong>核心運動訓練</strong>調整下肢力線，避免膝蓋持續內夾，徹底解決反覆發作的內側痛。</p>
-          <p><img src="/images/diseases/knee/pes/b.jpg" alt="鵝掌肌腱炎疼痛位置"></p>
+          <p><img src="/images/diseases/knee/pes/b.webp" alt="鵝掌肌腱炎疼痛位置"></p>
       
           <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
               <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -7245,7 +7245,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               </ul>
               <p style="margin-top: 1rem; color: #78350f !important;">這三條肌肉中間夾著一個<strong>「滑囊」</strong>，當肌肉過度緊繃或膝蓋角度不對反覆摩擦時，滑囊就會發炎腫脹，產生劇痛。</p>
           </div>
-          <p><img src="/images/diseases/knee/pes/c.jpg" alt="鵝掌肌腱解剖構造" style="width: 50%; height: auto;"></p>
+          <p><img src="/images/diseases/knee/pes/c.webp" alt="鵝掌肌腱解剖構造" style="width: 50%; height: auto;"></p>
     
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -7344,7 +7344,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   <br>4. 每組 15 下，做 3 組。
               </p>
           </div>
-    <p><img src="/images/diseases/knee/pes/d.jpg" alt="鵝掌肌腱解剖構造" style="width: 100%; height: auto;"></p>
+    <p><img src="/images/diseases/knee/pes/d.webp" alt="鵝掌肌腱解剖構造" style="width: 100%; height: auto;"></p>
 
           <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
               <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 膝蓋內側痛，別讓它變形！</h3>
@@ -7376,7 +7376,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '下樓梯膝蓋內側痛、腫脹？可能是鵝掌肌腱炎。宸新復健科運用院內X光與超音波精準診斷，結合脊椎側彎矯正架調整X型腿與骨盆力線，根治反覆發作的膝蓋疼痛。',
         images: [
-          { src: '/images/diseases/knee/pes/a.jpg', alt: '鵝掌肌腱炎' }
+          { src: '/images/diseases/knee/pes/a.webp', alt: '鵝掌肌腱炎' }
         ]
     }
     ]
@@ -7390,7 +7390,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     title: '足踝',
     lastModified: '2026-01-21',
     description: '足踝相關疾病',
-    image: '/images/diseases/f.jpg',
+    image: '/images/diseases/f.webp',
     seoKeywords: ['足底筋膜炎治療', '腳踝扭傷復健', '阿基里斯腱發炎', '腳跟痛', '扁平足'],
     seoDescription: '足底筋膜炎下床好痛？新竹震波治療推薦。專治腳踝扭傷後遺症與阿基里斯腱發炎。提供客製化足弓鞋墊與復健運動指導，徹底解決足部疼痛。',
     diseases: [
@@ -7449,7 +7449,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 <li><strong>第三級 (重度)：</strong> 韌帶<strong>完全斷裂</strong>。腳踝極度腫脹、甚至變形，完全無法受力踩地，關節明顯不穩。恢復期需 3 個月以上，甚至需手術修補。</li>
             </ul>
         
-            <p><img src="/images/diseases/ankle/sprain/b.jpg" alt="腳踝外側韌帶(前距腓韌帶)撕裂傷示意圖"></p>
+            <p><img src="/images/diseases/ankle/sprain/b.webp" alt="腳踝外側韌帶(前距腓韌帶)撕裂傷示意圖"></p>
         
 
 
@@ -7473,7 +7473,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         <p style="color: #e2e8f0 !important;">有時候韌帶太強韌，扭傷瞬間沒有斷，反而把黏著的骨頭表面<strong>「撕」下一塊碎骨</strong>。這些細微的游離碎骨片（Loose body）在 X 光下容易被重疊忽略，但在超音波下會像「鑽石」一樣閃閃發亮，無所遁形。若不處理，這些碎骨會在關節內磨損軟骨。</p>
     </div>
 
-            <p><img src="/images/diseases/ankle/sprain/e.jpg" alt="腳踝扭傷超音波影像"></p>
+            <p><img src="/images/diseases/ankle/sprain/e.webp" alt="腳踝扭傷超音波影像"></p>
 
         
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -7491,7 +7491,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 </ul>
             </div>
         
-            <p><img src="/images/diseases/ankle/sprain/c.jpg" alt="腳踝扭傷急性期處理 RICE 原則"></p>
+            <p><img src="/images/diseases/ankle/sprain/c.webp" alt="腳踝扭傷急性期處理 RICE 原則"></p>
         
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
@@ -7533,7 +7533,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 <p style="color: #e2e8f0 !important;">站在平地上，用受傷那隻腳單腳站立，維持平衡 30 秒。如果覺得簡單，可以嘗試<strong>閉上眼睛</strong>（這會變得非常難！）。這能重新訓練大腦對腳踝的控制力，是預防再次扭傷最有效的運動。</p>
             </div>
         
-            <p><img src="/images/diseases/ankle/sprain/d.jpg" alt="腳踝扭傷復健運動教學：幫浦運動、毛巾抓握、單腳站立"></p>
+            <p><img src="/images/diseases/ankle/sprain/d.webp" alt="腳踝扭傷復健運動教學：幫浦運動、毛巾抓握、單腳站立"></p>
         
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
@@ -7575,7 +7575,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           seoDescription: '踝關節扭傷（翻腳刀）造成外踝腫脹瘀血。宸新復健科提供PRP增生療法修復韌帶，搭配本體感覺訓練，預防變成習慣性扭傷與玻璃腳。',
           images: [
             { 
-              src: '/images/diseases/ankle/sprain/a.jpg', 
+              src: '/images/diseases/ankle/sprain/a.webp', 
               alt: '腳踝扭傷疼痛示意圖' 
             }
           ]
@@ -7626,7 +7626,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-       <p><img src="/images/diseases/ankle/plantar/a.jpg" alt="足底筋膜炎"></p>
+       <p><img src="/images/diseases/ankle/plantar/a.webp" alt="足底筋膜炎"></p>
       
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -7718,7 +7718,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               <h4 style="color: #22d3ee !important;">4. 腳趾抓毛巾 (Towel Curl)</h4>
               <p style="color: #e2e8f0 !important;">將一條毛巾鋪在地上，腳跟著地，利用腳趾頭的力量將毛巾抓皺、捲回來。這能訓練足底的小肌肉群，強化足弓支撐力。</p>
           </div>
-       <p><img src="/images/diseases/ankle/plantar/b.jpg" alt="足底筋膜炎居家伸展運動"></p>
+       <p><img src="/images/diseases/ankle/plantar/b.webp" alt="足底筋膜炎居家伸展運動"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
@@ -7751,7 +7751,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         seoDescription: '足底筋膜炎造成下床第一步腳底劇痛。宸新復健科提供震波治療、PRP注射與客製化鞋墊，搭配居家伸展教學，有效解決長期腳底疼痛。',
         images: [
           { 
-           src: '/images/diseases/ankle/plantar/a.jpg', alt: '足底筋膜炎'
+           src: '/images/diseases/ankle/plantar/a.webp', alt: '足底筋膜炎'
           }
         ]
       },
@@ -7801,7 +7801,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 </ul>
             </div>
             
-                   <p><img src="/images/diseases/ankle/achill/a.jpg" alt="阿基里斯肌腱炎 (跟腱炎)"></p>
+                   <p><img src="/images/diseases/ankle/achill/a.webp" alt="阿基里斯肌腱炎 (跟腱炎)"></p>
         
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
         
@@ -7865,7 +7865,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
             
-             <p><img src="/images/diseases/ankle/achill/b.jpg" alt="阿基里斯腱居家伸展放鬆運動示範"></p>
+             <p><img src="/images/diseases/ankle/achill/b.webp" alt="阿基里斯腱居家伸展放鬆運動示範"></p>
             <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：黃金標準「離心收縮運動」</h3>
             <p style="color: #e2e8f0 !important;">單純的拉筋是不夠的。研究證實，<strong>離心收縮 (Eccentric Loading)</strong> 是唯一能讓排列混亂的肌腱纖維重新變整齊的方法。請在疼痛緩解後開始執行：</p>
         
@@ -7922,7 +7922,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           seoDescription: '阿基里斯肌腱炎造成腳跟上方劇痛與僵硬。宸新復健科提供震波治療、PRP注射與離心收縮運動教學，有效修復肌腱，預防斷裂風險。',
           images: [
             { 
-           src: '/images/diseases/ankle/achill/a.jpg', alt: '阿基里斯肌腱炎'
+           src: '/images/diseases/ankle/achill/a.webp', alt: '阿基里斯肌腱炎'
             }
           ]
 
@@ -7937,7 +7937,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">您是否有這樣的困擾：走路走久了，<strong>腳踝內側骨頭下方</strong>開始紅腫刺痛？發現原本好好的足弓好像慢慢「垮」下去了，變成了扁平足？甚至從後面看，腳跟明顯往外歪斜？</p>
                 <br>
           <p style="color: #e2e8f0 !important;">這就是典型的<strong>「脛後肌腱炎」</strong>，又稱為<strong>成人後天性扁平足</strong>。這不僅是肌腱發炎，更是足部地基的崩塌。值得注意的是，腳底的失衡往往源自於核心與脊椎的歪斜。在宸新復健科，我們不只醫腳，更擁有<strong>院內 X 光機</strong>即時追蹤骨骼排列，並結合專業物理治療師與<strong>脊椎側彎矯正架</strong>，從軀幹核心調整力線，減輕足部負擔，提供全方位的根治方案。</p>
-         <p><img src="/images/diseases/ankle/tp/b.jpg" alt="脛後肌腱炎"></p>
+         <p><img src="/images/diseases/ankle/tp/b.webp" alt="脛後肌腱炎"></p>
       
           <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
               <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -7970,7 +7970,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-           <p><img src="/images/diseases/ankle/tp/c.jpg" alt="脛後肌腱炎造成原因" style="width: 100%; height: auto;"></p>
+           <p><img src="/images/diseases/ankle/tp/c.webp" alt="脛後肌腱炎造成原因" style="width: 100%; height: auto;"></p>
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -8010,7 +8010,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         <br><strong>動作：</strong> 對抗彈力帶的阻力，將腳掌<strong>「往內、往上」</strong>翻轉（像要看腳底板一樣）。慢慢放回。這能強化脛後肌的肌耐力。</p>
     </div>
 
-    <p><img src="/images/diseases/ankle/tp/e.jpg" alt="脛後肌腱炎放鬆及伸展" style="width: 100%; height: auto;"></p>
+    <p><img src="/images/diseases/ankle/tp/e.webp" alt="脛後肌腱炎放鬆及伸展" style="width: 100%; height: auto;"></p>
 
            <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
           <h3 style="color: #f8fafc !important;">🔍 自我檢測：你是不是危險族群？</h3>
@@ -8068,7 +8068,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   我們利用專業的<strong>矯正架懸吊系統</strong>，由物理治療師指導，矯正軀幹與骨盆的排列，讓身體重心回正，徹底解除施加在足弓上的異常壓力。這是真正治本的關鍵。
               </p>
           </div>
-       <p><img src="/images/diseases/ankle/tp/d.jpg" alt="脛後肌腱炎治療方式"></p>
+       <p><img src="/images/diseases/ankle/tp/d.webp" alt="脛後肌腱炎治療方式"></p>
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -8101,7 +8101,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '脛後肌腱炎造成腳踝內側痛與足弓塌陷。宸新復健科獨家結合院內X光追蹤與脊椎側彎矯正架，從骨盆脊椎源頭調整力線，徹底解決足部疼痛。',
         images: [
-          { src: '/images/diseases/ankle/tp/a.jpg', alt: '脛後肌腱炎示意圖' 
+          { src: '/images/diseases/ankle/tp/a.webp', alt: '脛後肌腱炎示意圖' 
           }
         ]
       },
@@ -8116,7 +8116,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <br>
           <p style="color: #e2e8f0 !important;">這就是典型的<strong>「網球腿」</strong>，醫學名稱為<strong>腓腸肌內側頭撕裂傷</strong>。這常被誤認為只是單純抽筋或拉傷，但其實是肌肉纖維斷裂！如果沒有妥善治療，容易留下疤痕組織導致長期慢性疼痛。在宸新復健科，我們使用<strong>高解析超音波鑑別診斷</strong>（排除阿基里斯腱斷裂），並透過<strong>超音波導引抽吸血腫</strong>與<strong>再生注射</strong>，大幅縮短恢復期。</p>
       
-                 <p><img src="/images/diseases/ankle/tennis/b.jpg" alt="網球腿疼痛處" style="width: 50%; height: auto;"></p>
+                 <p><img src="/images/diseases/ankle/tennis/b.webp" alt="網球腿疼痛處" style="width: 50%; height: auto;"></p>
       
           <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
               <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -8175,7 +8175,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   <br>我們在超音波導引下，將積血抽出。患者常表示抽完的瞬間，脹痛感就少了一半。
               </p>
           </div>
-           <p><img src="/images/diseases/ankle/tennis/c.jpg" alt="網球腿超音波圖片" style="width: 60%; height: auto;"></p>
+           <p><img src="/images/diseases/ankle/tennis/c.webp" alt="網球腿超音波圖片" style="width: 60%; height: auto;"></p>
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
               <h4 style="margin-top: 0; color: #0e7490 !important;">2. 再生注射 (PRP) 與 震波治療</h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
@@ -8221,7 +8221,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
     
           <h3 style="color: #f8fafc !important;">🏠 居家復健：從不痛開始</h3>
-           <p><img src="/images/diseases/ankle/tennis/d.jpg" alt="網球腿居家放鬆運動" style="width: 100%; height: auto;"></p>
+           <p><img src="/images/diseases/ankle/tennis/d.webp" alt="網球腿居家放鬆運動" style="width: 100%; height: auto;"></p>
           <p style="color: #e2e8f0 !important;"><strong>注意：</strong> 急性期（前3-5天）請多休息、抬高患肢，不要急著拉筋！等到走路不痛了，再開始以下運動：</p>
     
           <div style="margin-bottom: 2rem;">
@@ -8298,7 +8298,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '打球小腿劇痛像被踢到？這是網球腿(腓腸肌撕裂)！宸新復健科提供高解析超音波診斷，排除阿基里斯腱斷裂，運用血腫抽吸與PRP再生注射，加速小腿肌肉修復。',
         images: [
-            { src: '/images/diseases/ankle/tennis/a.jpg', alt: '網球腿示意圖'  }
+            { src: '/images/diseases/ankle/tennis/a.webp', alt: '網球腿示意圖'  }
         ]
     },
 
@@ -8312,7 +8312,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">您是否曾有過這樣的經驗：昨晚吃完火鍋或海鮮大餐，喝了點酒，結果半夜睡到一半，<strong>大腳趾</strong>突然像被老虎咬一口一樣劇烈疼痛？痛到連蓋棉被碰到都不行，關節整個<strong>紅、腫、發燙</strong>，甚至無法下床走路？</p>
           <br>
           <p style="color: #e2e8f0 !important;">這就是典型的<strong>「痛風」</strong>急性發作。痛風古稱「帝王病」，是因為體內代謝異常導致尿酸過高。很多人以為只要吃止痛藥就好，但如果沒有控制好，尿酸結晶會像「粉筆灰」一樣堆積在關節，形成<strong>痛風石</strong>導致關節變形。在宸新復健科，我們利用<strong>高解析骨骼肌肉超音波</strong>，能直接看到沈積在軟骨表面的尿酸結晶，在痛風石形成前就早期診斷，並提供精準的治療策略。</p>
-          <p><img src="/images/diseases/ankle/gout/b.jpg" alt="痛風發作紅腫熱痛"></p>
+          <p><img src="/images/diseases/ankle/gout/b.webp" alt="痛風發作紅腫熱痛"></p>
       
           <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
               <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -8339,7 +8339,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               </ul>
               <p style="margin-top: 1rem; color: #78350f !important;">當血液中尿酸濃度過高（高尿酸血症），尿酸就會析出形成<strong>「針狀結晶」</strong>，沈積在關節裡。免疫系統會把這些結晶當成外來入侵者發動攻擊，引發激烈的發炎反應，那種痛就像有無數碎玻璃在刺你的關節。</p>
           </div>
-          <p><img src="/images/diseases/ankle/gout/c.jpg" alt="尿酸結晶沈積示意圖" style="width: 100%; height: auto;"></p>
+          <p><img src="/images/diseases/ankle/gout/c.webp" alt="尿酸結晶沈積示意圖" style="width: 100%; height: auto;"></p>
     
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -8376,7 +8376,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   <li><strong>蔬菜水果：</strong> 大部分蔬菜皆可（豆芽菜、蘆筍適量即可），富含維生素 C 的水果尤佳。</li>
               </ul>
           </div>
-              <p><img src="/images/diseases/ankle/gout/e.jpg" alt="痛風飲食注意事項"></p>
+              <p><img src="/images/diseases/ankle/gout/e.webp" alt="痛風飲食注意事項"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <h3 style="color: #f8fafc !important;">🛡️ 宸新獨家治療策略：不只止痛，更要看清</h3>
@@ -8391,7 +8391,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </ul>
               </p>
           </div>
-              <p><img src="/images/diseases/ankle/gout/d.jpg" alt="超音波檢查痛風石"></p>
+              <p><img src="/images/diseases/ankle/gout/d.webp" alt="超音波檢查痛風石"></p>
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
               <h4 style="margin-top: 0; color: #0e7490 !important;">2. 急性期處置 (快速滅火)</h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
@@ -8468,7 +8468,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '半夜腳趾痛風發作怎麼辦？宸新復健科提供痛風飲食禁忌指南與急性期治療策略。運用院內超音波精準診斷尿酸結晶，結合抽吸與藥物治療，快速緩解紅腫熱痛。',
         images: [
-          { src: '/images/diseases/ankle/gout/a.jpg', alt: '痛風急性發作' }
+          { src: '/images/diseases/ankle/gout/a.webp', alt: '痛風急性發作' }
         ]
     }
 

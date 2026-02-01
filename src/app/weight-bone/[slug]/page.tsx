@@ -79,7 +79,7 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
     provider: {
       '@type': 'MedicalClinic',
       'name': '宸新復健科診所',
-      'image': `${SITE_URL}/logo.png`, 
+      'image': `${SITE_URL}/logo.webp`, 
       'address': {
         '@type': 'PostalAddress',
         'addressLocality': '新竹市',

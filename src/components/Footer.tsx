@@ -57,7 +57,7 @@ export default function Footer() {
                 {/* 1. 關於我們 */}
                 <Link href="/about" className="animate-on-scroll delay-100 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
                   <Image 
-                    src="/images/icons/a.jpg" 
+                    src="/images/icons/a.webp" 
                     alt="關於我們 - 宸新復健科" 
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"
@@ -71,7 +71,7 @@ export default function Footer() {
                 {/* 2. 治療方式 */}
                 <Link href="/treatments" className="animate-on-scroll delay-200 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
                   <Image 
-                    src="/images/icons/b.jpg" 
+                    src="/images/icons/b.webp" 
                     alt="治療方式 - PRP與震波" 
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"
@@ -85,7 +85,7 @@ export default function Footer() {
                 {/* 3. 減重與骨齡 */}
                 <Link href="/weight-bone" className="animate-on-scroll delay-300 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
                   <Image 
-                    src="/images/icons/c.jpg" 
+                    src="/images/icons/c.webp" 
                     alt="減重與骨齡門診" 
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"
@@ -99,7 +99,7 @@ export default function Footer() {
                 {/* 4. 疾病衛教 */}
                 <Link href="/diseases" className="animate-on-scroll delay-400 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
                   <Image 
-                    src="/images/icons/d.jpg" 
+                    src="/images/icons/d.webp" 
                     alt="疾病衛教文章" 
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"

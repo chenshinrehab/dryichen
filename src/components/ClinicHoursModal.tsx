@@ -47,7 +47,7 @@ export default function ClinicHoursModal() {
 
               {/* 門診表圖片 */}
               <img 
-                src="/images/doctor/a.jpg" 
+                src="/images/doctor/a.webp" 
                 alt="宸新復健科門診時間表" 
                 className="w-full h-auto object-contain rounded-lg shadow-2xl border border-slate-700 bg-slate-900"
               />

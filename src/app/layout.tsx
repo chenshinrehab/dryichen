@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     description: '新竹復健科首選，台大醫師團隊，提供專業骨科疼痛治療與兒童發展評估。',
     images: [
       {
-        url: '/images/og-default.jpg',
+        url: '/images/og-default.webp',
         width: 1200,
         height: 630,
         alt: '新竹宸新復健科診所 - 林羿辰醫師',
@@ -86,7 +86,7 @@ export default function RootLayout({
     alternateName: 'Chenxin Rehabilitation Clinic',
     url: SITE_URL,
     logo: `${SITE_URL}/favicon.ico`,
-    image: `${SITE_URL}/images/og-default.jpg`,
+    image: `${SITE_URL}/images/og-default.webp`,
     description: '新竹推薦復健科，提供專業 PRP、震波治療與兒童早療評估。',
     address: {
       '@type': 'PostalAddress',

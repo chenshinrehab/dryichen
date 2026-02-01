@@ -34,13 +34,13 @@ const fullNewsData: NewsPost[] = [
     category: '衛教文章',
     date: '2026-01-30',
     summary: '攀岩是近年熱門運動，但受傷部位多集中在上肢。從手指滑車、肩膀到膝蓋折膝動作，醫師詳解六大常見攀岩傷害，讓你像大神 Alex Honnold 一樣挑戰自我而不受傷！',
-    coverImage: '/images/news/article/climb.jpg',
+    coverImage: '/images/news/article/climb.webp',
     seoTitle: '攀岩運動傷害懶人包：手指滑車、肩旋轉肌、折膝半月板受傷詳解',
     seoDescription: '攀岩愛好者必看！醫師整理六大常見攀岩傷害：A2滑車韌帶撕裂、肩夾擠、高爾夫球肘、TFCC手腕痛及折膝導致的半月板損傷。結合 Alex Honnold 挑戰 101 情境衛教。',
     keywords: ['攀岩', '運動傷害', 'Alex Honnold', '手指滑車', '滑車韌帶', '肩旋轉肌', '半月板', '復健'],
     contentHtml: `
     <Image 
-  src="/images/news/article/climb.jpg" 
+  src="/images/news/article/climb.webp" 
   alt="【運動常見傷害 - 攀岩】"
   fill // 取代原本的 absolute inset-0 w-full h-full
   className="object-cover transition-transform duration-300 group-hover:scale-110" // 保留你的樣式
@@ -87,12 +87,12 @@ const fullNewsData: NewsPost[] = [
     date: '2026-01-15',
     displayTag: '置頂貼文',
     summary: '宸新復健科2026年門診時間公告',
-    coverImage: '/images/about/c.jpg',
+    coverImage: '/images/about/c.webp',
     seoTitle: '2026門診公告 - 新竹宸新復健科',
     keywords: ['門診公告', '林羿辰醫師', '新竹宸新復健科'],
     contentHtml: `
 <p><strong>01/12-01/17 門診表</strong></p>
-<img src="/images/news/a.jpg" alt="門診時間表" />
+<img src="/images/news/a.webp" alt="門診時間表" />
 <p><strong>✦貼心小叮嚀✦</strong><br></p>
 
 <ul>
@@ -121,9 +121,9 @@ const fullNewsData: NewsPost[] = [
   <li>新竹宸新兒童天地: <a href="https://lin.ee/j4Qc7u5" target="_blank">https://lin.ee/j4Qc7u5</a></li>
   <li>恆新復健聯盟 (可預約門診、徒手治療): <a href="https://lin.ee/U7WJTZB" target="_blank">https://lin.ee/U7WJTZB</a></li>
 </ul>
-<img src="/images/news/b.jpg" alt="林羿辰醫師" />
-<img src="/images/news/c.jpg" alt="徐維農醫師" />
-<img src="/images/news/d.jpg" alt="吳皓偉醫師" />
+<img src="/images/news/b.webp" alt="林羿辰醫師" />
+<img src="/images/news/c.webp" alt="徐維農醫師" />
+<img src="/images/news/d.webp" alt="吳皓偉醫師" />
     `
   },
 
@@ -134,7 +134,7 @@ const fullNewsData: NewsPost[] = [
     category: '衛教文章',
     date: '2026-01-17',
     summary: '門診一位大姊突發奇想：「醫美打臉好貴，膝蓋打剩的玻尿酸可以補法令紋嗎？」修但幾勒！雖然都叫玻尿酸，但機油跟水泥可是不能混用的喔！',
-    coverImage: '/images/news/article/ha.jpg',
+    coverImage: '/images/news/article/ha.webp',
     seoTitle: '打膝蓋剩下的玻尿酸，可以順便補臉嗎？醫美與關節玻尿酸差異',
     seoDescription: '門診常被問：打膝蓋剩下的玻尿酸，可以順便補臉嗎？醫師解釋：雖然都叫玻尿酸，但關節用的像機油，醫美用的像水泥，用途大不同！醫師詳解三種玻尿酸差異。',
     keywords: ['玻尿酸', '膝蓋退化', '醫美', '增生療法', '韌帶修復', '醫學知識'],
@@ -165,7 +165,7 @@ const fullNewsData: NewsPost[] = [
     <li>想<strong>變美填補</strong> 👉 用<strong>水泥</strong>（醫美玻尿酸）</li>
     <li>想<strong>修復韌帶</strong> 👉 用<strong>鷹架</strong>（軟組織玻尿酸）</li>
   </ul>
-  <img src="/images/news/article/ha.jpg" alt="玻尿酸種類差異" />
+  <img src="/images/news/article/ha.webp" alt="玻尿酸種類差異" />
     `
   },
 
@@ -176,7 +176,7 @@ const fullNewsData: NewsPost[] = [
     category: '衛教文章',
     date: '2026-01-14',
     summary: '門診很常碰到病患來看診，詢問膝蓋為何會喀喀響，擔心膝蓋是不是退化了!',
-    coverImage: '/images/news/article/knee.jpg',
+    coverImage: '/images/news/article/knee.webp',
     seoTitle: '膝蓋為何會喀喀響，是膝蓋退化了嗎?',
     seoDescription: '膝蓋為何會喀喀響，是膝蓋退化了嗎?，膝蓋有聲音，膝關節退化。',
     keywords: ['醫學知識', '膝蓋痛', '退化性關節炎', '喀喀響'],
@@ -210,7 +210,7 @@ const fullNewsData: NewsPost[] = [
 
 <h3>💡 最後記住這句口訣：</h3>
 <p><strong>「有聲無痛」多觀察，「有聲有痛」快就醫！</strong></p>
-<img src="/images/news/article/knee.jpg" alt="膝蓋為何會喀喀響" />
+<img src="/images/news/article/knee.webp" alt="膝蓋為何會喀喀響" />
     `
   }
 ];

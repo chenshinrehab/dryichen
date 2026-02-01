@@ -193,7 +193,7 @@ export default function DiseasesPage() {
                       <div className="mt-8 pt-6 border-t border-slate-700/50 flex items-center justify-between flex-wrap gap-4">
                           <div className="flex items-center gap-2">
                              <img 
-                                src="/images/doctor/b.jpg" 
+                                src="/images/doctor/b.webp" 
                                 alt="林羿辰醫師" 
                                 className="w-12 h-12 rounded-full border border-slate-600" 
                              />

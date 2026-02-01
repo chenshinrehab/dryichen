@@ -25,7 +25,7 @@ export const casesData: CaseStudy[] = [
       <h2>當治療無效，只剩開刀的恐懼</h2>
       <p>阿嬤一坐下就充滿無奈地說：「林醫師，我真的沒辦法了。我去過大醫院打好幾次玻尿酸，也在附近診所打過好幾次 <strong>PRP (高濃度血小板血漿)</strong>，錢花了不少，但效果真的都不好……」</p>
       <p>其實阿嬤的膝蓋退化相當嚴重，本來已經打算開刀置換人工關節。但因為她本身心肺功能不佳，麻醉與手術的風險極高，家人不敢冒險，她自己也害怕下不了手術台。在進退兩難、寸步難行的情況下，她抱著最後一絲希望來嘗試。</p>
-          <p><img src="/images/cases/prpknee/a.jpg" alt: '退化性關節炎x光"></p>
+          <p><img src="/images/cases/prpknee/a.webp" alt: '退化性關節炎x光"></p>
      
       <h2>為什麼之前的 PRP 沒效？關鍵在「細節」</h2>
       <p>詳細檢查後，我發現阿嬤的膝蓋有明顯積水，且內側<strong>半月板磨損</strong>嚴重。我向她解釋：「阿嬤，之前的治療效果不好，可能跟『濃度』和『注射位置』有關。」</p>
@@ -38,7 +38,7 @@ export const casesData: CaseStudy[] = [
         <li><strong>精準定位：</strong>不只是打入關節腔，更利用<strong>超音波導引</strong>，清楚看見內側半月板及周邊韌帶的撕裂處。</li>
         <li><strong>定點注射：</strong>將高濃度的 PRP 精準注射到最需要修復的破損位置。</li>
       </ul>
-          <p><img src="/images/cases/prpknee/b.jpg" alt: '半月板破裂超音波圖片"></p>
+          <p><img src="/images/cases/prpknee/b.webp" alt: '半月板破裂超音波圖片"></p>
       <h2>從舉步維艱到丟掉拐杖</h2>
       <p>第一次治療後，阿嬤回診時神情輕鬆許多，她說：「醫師，好像稍微比較不痛了耶！」這微小的進步建立了她的信心。我們按部就班，一個月進行一次治療。</p>
       <p>到了第三次療程結束後的回診，打開診間門看到一個熟悉的身影——但這次，她手上沒有拿拐杖。阿嬤走進診間，笑得非常開心，那是久違的自信。她說：「醫師，我終於可以不用靠這支拐杖，可以行動自如了！」</p>
@@ -60,7 +60,7 @@ export const casesData: CaseStudy[] = [
     date: '2026-01-31',
     category: 'PRP注射',
     tags: ['膝蓋退化', 'PRP', '免開刀', '半月板損傷'], 
-    coverImage: '/images/cases/prpknee/a.jpg', // 建議更換為您的實際案例圖檔名
+    coverImage: '/images/cases/prpknee/a.webp', // 建議更換為您的實際案例圖檔名
     relatedTreatments: ['prp-injection', 'ultrasound-guided-injection'] 
   },
 
@@ -92,7 +92,7 @@ export const casesData: CaseStudy[] = [
       <h2>正確診斷，才能少走冤枉路</h2>
       <p>後續我們又進行了兩次擴張注射，搭配徒手關節鬆動治療，她的肩膀現在已經完全恢復正常，可以自在地梳頭、穿衣。</p>
       <p>五十肩的痛苦，外人很難體會。但我想告訴大家，醫療沒有萬靈丹，PRP 雖好，但要用在對的地方。<strong>精準的診斷</strong>加上<strong>對症下藥</strong>，才能真正幫助病人走出疼痛的深淵。</p>
-      <p><img src="/images/cases/fs/a.jpg" alt: '五十肩治療成果" style="width: 40%; height: auto;"></p>
+      <p><img src="/images/cases/fs/a.webp" alt: '五十肩治療成果" style="width: 40%; height: auto;"></p>
       <hr />
       
       <div class="cta-box" style="background-color: #f3f4f6; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; color: #374151;">
@@ -108,7 +108,7 @@ export const casesData: CaseStudy[] = [
     date: '2026-01-31', // 設定一個未來的日期或當前日期
     category: '肩膀疼痛',
     tags: ['五十肩', 'dilation', '沾黏', '糖尿病', '免開刀'], 
-    coverImage: '/images/cases/fs/a.jpg', // 記得更換對應圖片
+    coverImage: '/images/cases/fs/a.webp', // 記得更換對應圖片
     relatedTreatments: ['frozen-shoulder-treatment', 'hydrodilatation'] 
   }
   // ... 其他案例

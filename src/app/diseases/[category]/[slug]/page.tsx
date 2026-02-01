@@ -122,7 +122,7 @@ const matchedCases = casesData.filter(c => {
         name: '宸新復健科診所',
         logo: {
             '@type': 'ImageObject',
-            url: `${SITE_URL}/images/logo.png`
+            url: `${SITE_URL}/images/logo.webp`
         }
     },
 

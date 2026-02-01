@@ -83,7 +83,7 @@ export default function GrowthNutritionCalculator() {
       "recipeCategory": r.category === 'protein' ? '高蛋白料理' : '兒童成長料理',
       "recipeIngredient": r.ingredients,
       "recipeInstructions": [{ "@type": "HowToStep", "text": r.steps }],
-      // "image": "https://your-domain.com/path-to-image.jpg" // 建議補上
+      // "image": "https://your-domain.com/path-to-image.webp" // 建議補上
     }));
 
     // 3. WebApplication Schema (針對計算機功能)

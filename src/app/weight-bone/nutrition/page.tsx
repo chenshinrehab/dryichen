@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     siteName: '新竹宸新復健科診所',
     locale: 'zh_TW',
     type: 'website',
-    // images: [{ url: '/og-nutrition.jpg', width: 1200, height: 630 }], // 建議加上一張預覽圖
+    // images: [{ url: '/og-nutrition.webp', width: 1200, height: 630 }], // 建議加上一張預覽圖
   },
 };
 
@@ -51,7 +51,7 @@ export default function NutritionPage() {
           "name": "新竹宸新復健科診所",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://www.dryichen.com.tw/icon.png" // 請換成實際 Logo 網址
+            "url": "https://www.dryichen.com.tw/icon.webp" // 請換成實際 Logo 網址
           }
         },
         "isPartOf": {

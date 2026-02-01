@@ -81,7 +81,7 @@ export default function NewsDetailPage({ params }: PageProps) {
         name: '宸新復健科診所',
         logo: {
             '@type': 'ImageObject',
-            url: `${SITE_URL}/logo.png`
+            url: `${SITE_URL}/logo.webp`
         }
     },
     description: post.summary,

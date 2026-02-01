@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: '新竹復健科推薦林羿辰醫師。台大醫學系畢業，具備復健專科與骨質疏鬆專科雙資格。',
     url: CANONICAL_URL,
     type: 'profile',
-    images: [`${SITE_URL}/images/doctor/c.jpg`],
+    images: [`${SITE_URL}/images/doctor/c.webp`],
   }
 }
 
@@ -57,7 +57,7 @@ export default function DoctorsPage() {
       '@type': 'Physician',
       name: '林羿辰',
       jobTitle: '院長',
-      image: `${SITE_URL}/images/main/a.jpg`, 
+      image: `${SITE_URL}/images/main/a.webp`, 
       url: currentUrl,
       
       // ✅ description 放這裡就好 (確保沒有重複)
@@ -127,7 +127,7 @@ export default function DoctorsPage() {
                       {/* 照片區域：增加稍微明顯的延遲 */}
                       <div className="w-full lg:w-[40%] relative aspect-[9/16] shrink-0 bg-slate-800 self-start animate-on-scroll delay-200">
   <Image 
-    src="/images/doctor/c.jpg"
+    src="/images/doctor/c.webp"
     alt="新竹復健科推薦-林羿辰醫師-台大雙專科" 
     fill // ✨ 取代原本的 w-full h-full
     priority // ✨ 核心修正：告訴瀏覽器這是最重要的圖片，立即載入

@@ -52,7 +52,7 @@ export default function ClinicHome() {
             >
               {/* 圖片請填入之後的連結 */}
               <img 
-                src="https://duk.tw/iHBaCj.png" 
+                src="https://duk.tw/iHBaCj.webp" 
                 alt="新竹宸新復健科診所 Logo" 
                 className="w-10 h-10 md:w-14 md:h-14 rounded-full object-cover border-2 border-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.5)] group-hover:shadow-[0_0_15px_rgba(34,211,238,0.8)] transition-all duration-300"
               />
@@ -134,7 +134,7 @@ export default function ClinicHome() {
                 <div className="flex flex-col md:flex-row">
                   <div className="md:w-2/5 relative min-h-[400px]">
                     {/* 圖片位置 */}
-                    <img src="https://duk.tw/UXXvK3.jpg" alt="林羿辰醫師" className="absolute inset-0 w-full h-full object-cover object-top opacity-90" />
+                    <img src="https://duk.tw/UXXvK3.webp" alt="林羿辰醫師" className="absolute inset-0 w-full h-full object-cover object-top opacity-90" />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent md:bg-gradient-to-r"></div>
                   </div>
                   <div className="md:w-3/5 p-8 md:p-10 flex flex-col justify-center relative z-10">
@@ -175,7 +175,7 @@ export default function ClinicHome() {
                     <div className="lg:w-5/12 flex-shrink-0">
                         <div className="h-full w-full min-h-[300px] rounded-lg overflow-hidden border border-slate-600 relative">
                              {/* 圖片位置: 診所照片 */}
-                            <img src="https://duk.tw/PLVLuz.png" alt="診所環境" className="w-full h-full object-cover" />
+                            <img src="https://duk.tw/PLVLuz.webp" alt="診所環境" className="w-full h-full object-cover" />
                         </div>
                     </div>
                     <div className="lg:w-7/12 flex flex-col">
@@ -323,7 +323,7 @@ export default function ClinicHome() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-2">
                 {[
                   { title: '治療方式', id: 'treatments', img: 'https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=800' },
-                  { title: '減重與骨齡', id: 'weight-bone', img: 'https://duk.tw/R97hvw.jpg' },
+                  { title: '減重與骨齡', id: 'weight-bone', img: 'https://duk.tw/R97hvw.webp' },
                   { title: '預約看診', id: 'booking', img: '/* 圖片路徑 */' }, // 圖片空白
                   { title: '關於我們', id: 'about', img: '/* 圖片路徑 */' },   // 圖片空白
                 ].map((item, idx) => (

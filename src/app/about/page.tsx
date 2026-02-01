@@ -48,7 +48,7 @@ const aboutSections = [
     subtitle: 'Clinic Information',
     description: '舒適寬敞的復健空間，配備醫學中心等級的檢查與治療設備，提供高品質的醫療服務。',
     href: '/about/clinic',
-    image: '/images/about/b.jpg',
+    image: '/images/about/b.webp',
     icon: 'fa-solid fa-hospital'
   },
   {
@@ -57,7 +57,7 @@ const aboutSections = [
     subtitle: 'Case Sharing',
     description: '疼痛不是生活的一部分，康復才是。在這裡，我們分享患者透過精準診斷與再生醫學重拾生活品質的真實故事。',
     href: '/about/cases',
-    image: '/images/about/e.jpg',
+    image: '/images/about/e.webp',
     icon: 'fa-solid fa-hospital'
   },
   {
@@ -66,7 +66,7 @@ const aboutSections = [
     subtitle: 'Our Physician',
     description: '由台大訓練醫師團隊親自看診，結合骨科與復健科專業，提供全方位的疼痛治療方案。',
     href: '/about/doctors',
-    image: '/images/about/a.jpg',
+    image: '/images/about/a.webp',
     icon: 'fa-solid fa-user-doctor'
   }
 ]

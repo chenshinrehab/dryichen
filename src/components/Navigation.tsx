@@ -91,7 +91,7 @@ export default function Navigation() {
           <Link href="/" className="flex items-center gap-2.5 group cursor-pointer md:absolute md:left-1/2 md:-translate-x-1/2 z-10" aria-label="宸新復健科首頁">
               <div className="relative w-10 h-10 md:w-14 md:h-14">
                   <Image 
-                    src="/images/main/logo.png" 
+                    src="/images/main/logo.webp" 
                     alt="新竹宸新復健科診所 Logo" 
                     fill 
                     sizes="(max-width: 768px) 40px, 56px"

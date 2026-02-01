@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: '新竹宸新復健科診所',
     locale: 'zh_TW',
     type: 'website',
-    // images: ['/og-growth-curve.jpg'], // 建議補上一張預覽圖
+    // images: ['/og-growth-curve.webp'], // 建議補上一張預覽圖
   },
 };
 

@@ -20,7 +20,7 @@ const allItems = facilitiesData.map((item) => {
   if ((item as any).isTreatment) {
     const treatment = getTreatmentBySlug(item.id);
     if (treatment) {
-      const targetImage = (treatment as any).image || (treatment.images && treatment.images.length > 0 ? treatment.images[0].src : '/images/clinic/default.jpg');
+      const targetImage = (treatment as any).image || (treatment.images && treatment.images.length > 0 ? treatment.images[0].src : '/images/clinic/default.webp');
       return {
         id: treatment.slug,
         title: treatment.title,

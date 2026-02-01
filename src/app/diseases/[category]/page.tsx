@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: '找不到分類 | 宸新復健科' }
   }
 
-  const ogImage = category.image || '/images/default-og.jpg'
+  const ogImage = category.image || '/images/default-og.webp'
   // 確保標準網址是絕對路徑
   const canonicalUrl = `${SITE_URL}/diseases/${params.category}`
 
@@ -170,7 +170,7 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                       ) : (
                         <div className="w-full h-full relative">
                           <img
-                            src={category.image || '/images/default-medical.jpg'}
+                            src={category.image || '/images/default-medical.webp'}
                             alt={category.title}
                             className="w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-500 transform group-hover:scale-105"
                           />

@@ -7,11 +7,7 @@ import JsonLd from '@/components/JsonLd'
 import { newsList } from '@/data/news'
 import ScrollAnimation from '@/components/ScrollAnimation'
 
-// ✨ 僅針對影片區塊做動態優化
-const YoutubeEmbed = dynamic(() => import('@/components/YoutubeEmbed'), {
-  ssr: false,
-  loading: () => <div className="absolute inset-0 w-full h-full bg-slate-800 animate-pulse" />
-})
+
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw';
 
@@ -49,7 +45,7 @@ export const metadata: Metadata = {
     siteName: '林羿辰醫師',
     images: [
       {
-        url: '/images/main/a.jpg',
+        url: '/images/main/a.webp',
         width: 1200,
         height: 630,
         alt: '林羿辰醫師',
@@ -67,8 +63,8 @@ const medicalClinicSchema = {
   name: '宸新復健科診所',
   alternateName: '林羿辰醫師診所',
   description: '由台大醫師林羿辰院長親自看診，提供PRP注射、震波治療、一對一運動治療等服務。',
-  image: `${SITE_URL}/images/main/b.jpg`,
-  logo: `${SITE_URL}/images/logo.png`,
+  image: `${SITE_URL}/images/main/b.webp`,
+  logo: `${SITE_URL}/images/logo.webp`,
   url: SITE_URL,
   telephone: '+886-3-564-7999',
   priceRange: '$$', 
@@ -100,7 +96,7 @@ const medicalClinicSchema = {
     '@type': 'Physician',
     name: '林羿辰',
     jobTitle: '院長',
-    image: `${SITE_URL}/images/main/a.jpg`,
+    image: `${SITE_URL}/images/main/a.webp`,
     alumniOf: { '@type': 'EducationalOrganization', name: '國立台灣大學醫學系' },
     medicalSpecialty: 'RehabilitationPhysician'
   },
@@ -199,7 +195,7 @@ export default function Home() {
                       <div className="md:w-1/2 relative">
                           <div className="h-full w-full min-h-[320px] md:min-h-[550px] relative overflow-hidden">
                               <Image 
-                                src="/images/main/a.jpg"
+                                src="/images/main/a.webp"
                                 alt="新竹復健科推薦-林羿辰醫師-台大雙專科院長" 
                                 fill
                                 priority // ✨ 必須有
@@ -265,12 +261,40 @@ export default function Home() {
                <div className="bg-slate-800/60 border border-slate-700 rounded-xl p-6 md:p-8 mb-12 shadow-lg backdrop-blur-sm hover:border-cyan-500/30 transition-colors">
                   <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-stretch">
                       
-                      {/* ✨ 修改重點：使用 YoutubeEmbed 元件 */}
-                      <div className="lg:w-4/12 w-full flex-shrink-0">
-                          <div className="w-full h-full relative aspect-[9/16] rounded-xl overflow-hidden border border-slate-600 shadow-xl bg-black">
-                          <YoutubeEmbed videoId="asqbvbEukOM" title="宸新復健科介紹" />
-                          </div>
-                      </div>
+                  <div className="lg:w-4/12 w-full flex-shrink-0">
+  {/* 外層容器：定義 9:16 比例與樣式 */}
+  <div className="w-full relative aspect-[9/16] rounded-xl overflow-hidden border border-slate-600 shadow-xl bg-black">
+    <iframe
+      className="absolute inset-0 w-full h-full"
+      title="宸新復健科介紹"
+      src="https://www.youtube.com/embed/asqbvbEukOM"
+      srcDoc={`
+        <style>
+          * { padding: 0; margin: 0; overflow: hidden; background: #000; }
+          html, body { height: 100%; width: 100%; }
+          a { display: block; width: 100%; height: 100%; position: relative; }
+          img { 
+            position: absolute; width: 100%; height: 100%; 
+            top: 0; left: 0; object-fit: cover; /* 確保縮圖填滿 9:16 容器 */
+          }
+          span { 
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            font: 48px/1.5 sans-serif; color: white; text-shadow: 0 0 0.5em black;
+            pointer-events: none;
+          }
+        </style>
+        <a href="https://www.youtube.com/embed/asqbvbEukOM?autoplay=1">
+          <img src="https://img.youtube.com/vi/asqbvbEukOM/maxresdefault.webp" alt="宸新復健科介紹">
+          <span>▶</span>
+        </a>
+      `}
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+      loading="lazy"
+    ></iframe>
+  </div>
+</div>
 
                       <div className="lg:w-8/12 flex flex-col justify-between h-auto py-1">
                           <div className="flex flex-col gap-5">

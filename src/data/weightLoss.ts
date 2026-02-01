@@ -46,7 +46,7 @@ const fullWeightLossData: WeightLossProgram[] = [
     lastModified: '2026-01-21',
     subtitle: '新一代雙重腸泌素受體促效劑',
     description: '新一代雙重腸泌素(GIP/GLP-1)受體促效劑，提供更卓越的體重控制效果。',
-    image: '/images/weight-loss/a.jpg',
+    image: '/images/weight-loss/a.webp',
     features: ['一週一次', '抑制食慾', '延緩胃排空'],
     seoTitle: '新竹猛健樂(Mounjaro)減重門診 - 價格/效果/副作用 | 宸新復健科',
     seoDescription: '新竹猛健樂(Mounjaro)瘦瘦針推薦。新一代雙重腸泌素(GIP/GLP-1)，減重效果優於傳統善纖達。醫師親自規劃療程，含InBody檢測與飲食指導，有效改善肥胖、脂肪肝與三高問題。',
@@ -103,7 +103,7 @@ const fullWeightLossData: WeightLossProgram[] = [
 </ul>
 </div>
 
-<p><img src="/images/weight-loss/mounjaro/a.jpg" alt="猛健樂本月優惠與注意事項"></p>
+<p><img src="/images/weight-loss/mounjaro/a.webp" alt="猛健樂本月優惠與注意事項"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -137,7 +137,7 @@ const fullWeightLossData: WeightLossProgram[] = [
 <h3>5. 多國權威認證核准</h3>
 <p>安全性是我們最重視的。猛健樂已獲得<strong>美國 FDA</strong>、<strong>歐洲 EMA</strong> 以及<strong>台灣 TFDA</strong> 的核准，用於第二型糖尿病的血糖控制以及體重控制。該藥物已在全球 55 國進行過臨床試驗，累積了大量的安全性數據。</p>
 
-<p><img src="/images/weight-loss/mounjaro/b.jpg" alt="猛健樂雙重腸泌素特點說明"></p>
+<p><img src="/images/weight-loss/mounjaro/b.webp" alt="猛健樂雙重腸泌素特點說明"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -160,7 +160,7 @@ const fullWeightLossData: WeightLossProgram[] = [
     <li><strong>成人肥胖：</strong> BMI 30 以上</li>
 </ul>
 
-<p><img src="/images/weight-loss/mounjaro/c.jpg" alt="猛健樂適合施打對象"></p>
+<p><img src="/images/weight-loss/mounjaro/c.webp" alt="猛健樂適合施打對象"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -186,7 +186,7 @@ const fullWeightLossData: WeightLossProgram[] = [
 <h3>5. 建立黃金三角習慣</h3>
 <p>藥物是輔助，習慣才是根本。透過猛健樂的幫助，養成<strong>規律運動</strong>、<strong>健康飲食</strong>、<strong>睡飽覺</strong>的好習慣。當療程結束後，這些習慣將幫助您維持成果，達成<strong>不復胖</strong>的終極目標！</p>
 
-<p><img src="/images/weight-loss/mounjaro/d.jpg" alt="猛健樂懶人包"></p>
+<p><img src="/images/weight-loss/mounjaro/d.webp" alt="猛健樂懶人包"></p>
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <h3>💉 猛健樂 (Mounjaro) 施打教學與補打原則</h3>
@@ -261,7 +261,7 @@ const fullWeightLossData: WeightLossProgram[] = [
     lastModified: '2026-01-31',
     subtitle: '掌握黃金生長發育期',
     description: '透過左手X光片判讀骨骼成熟度，預測成年身高，掌握黃金生長發育期。',
-    image: '/images/weight-loss/c.jpg',
+    image: '/images/weight-loss/c.webp',
     features: ['性早熟', '生長遲緩', '想了解身高潛力的兒童'],
     seoTitle: '新竹兒童骨齡檢查 - 性早熟/長高門診/身高預測 | 宸新復健科',
     seoDescription: '新竹照骨齡推薦。免掛號免預約，隨到隨照。結合TW3法與AI大數據精準判讀，準確預測兒童成年身高。針對性早熟、生長遲緩提供專業評估與治療建議，把握孩子黃金轉骨期。',
@@ -274,7 +274,7 @@ const fullWeightLossData: WeightLossProgram[] = [
 <p>我們結合專業醫師經驗親自判讀與<strong>二代 AI 大數據</strong>，採用最符合亞洲兒童生長曲線的 <strong>TW3 法</strong>進行判讀。經由骨齡及父母身高，能精準預測孩子的成年身高潛力！目前已有破百名兒童參與，並獲得家長高度好評肯定。</p>
 
 
-<p><img src="/images/weight-loss/boneage/a.png" alt="兒童照骨齡檢查流程圖"></p>
+<p><img src="/images/weight-loss/boneage/a.webp" alt="兒童照骨齡檢查流程圖"></p>
 
 <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
     <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -336,7 +336,7 @@ const fullWeightLossData: WeightLossProgram[] = [
 <h3>🔍 骨齡判讀大解密：GP 法 vs. TW3 法</h3>
 <p>在醫學上，判讀骨齡主要有兩大流派。這也是為什麼有些家長會疑惑：「為什麼我在 A 醫院照出來是 10 歲，去 B 診所照卻變成 11 歲？」原因就在於使用的判讀標準不同。</p>
 
-<p><img src="/images/weight-loss/boneage/b.jpg" alt="GP法及TW3法骨齡判讀比較"></p>
+<p><img src="/images/weight-loss/boneage/b.webp" alt="GP法及TW3法骨齡判讀比較"></p>
 
 <h4>1. GP 法 (Greulich-Pyle method)：圖譜比對法</h4>
 <ul>
@@ -441,7 +441,7 @@ const fullWeightLossData: WeightLossProgram[] = [
     lastModified: '2026-01-21',
     subtitle: 'GLP-1 受體促效劑',
     description: '協助控制體重的注射藥物，幫助您減少飢餓感，輕鬆達成減重目標。',
-    image: '/images/weight-loss/b.jpg',
+    image: '/images/weight-loss/b.webp',
     features: ['穩定血糖', '減少體脂肪堆積'],
     seoTitle: '新竹週纖達(Wegovy)減重 - 價格/副作用/與善纖達比較 | 宸新復健科',
     seoDescription: '新竹週纖達(Wegovy)瘦瘦針推薦。高CP值的一週一次減重藥物，有效抑制食慾、增加飽足感。適合忙碌上班族、想改善體態與血糖控制者。提供完整衛教與劑量規劃。',
@@ -494,7 +494,7 @@ const fullWeightLossData: WeightLossProgram[] = [
 <h3>⚖️ 該選誰？週纖達 ( vs. 猛健樂 (Mounjaro) 超級比一比</h3>
 <p>這兩款都是目前市面上最強大的減重針劑，但機轉與定位略有不同。透過下方的比較圖，您可以更清楚了解它們的優缺點，從而做出最適合自己的選擇。</p>
 
-<p><img src="/images/weight-loss/ozempic/a.jpg" alt="週纖達與猛健樂、善纖達比較圖"></p>
+<p><img src="/images/weight-loss/ozempic/a.webp" alt="週纖達與猛健樂、善纖達比較圖"></p>
 
 <h3>1. 具備心血管保護功能 (適合銀髮族)</h3>
 <p><strong>週纖達</strong> 在大型臨床試驗中證實具有<strong>心血管保護效果</strong>，並已獲得美國 FDA 核准用於降低第二型糖尿病患者的心血管重大事件風險（如中風、心肌梗塞）。對於<strong>年長者</strong>或本身有<strong>心血管病史</strong>的減重族群來說，選擇週纖達能提供額外的健康保障，安全性數據也較為長期完整。</p>

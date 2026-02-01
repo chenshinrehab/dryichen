@@ -17,11 +17,13 @@
     "@google/generative-ai": "^0.24.1",
     "@keystatic/core": "^0.5.48",
     "@keystatic/next": "^5.0.4",
+    "fs-extra": "^11.3.3",
     "html-react-parser": "^5.2.15",
     "next": "^14.2.0",
     "openai": "^6.16.0",
     "react": "^18.3.0",
-    "react-dom": "^18.3.0"
+    "react-dom": "^18.3.0",
+    "sharp": "^0.34.5"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.19",
@@ -39,5 +41,19 @@
     "not op_mini all",
     "> 0.5%",
     "fully supports es6-module"
-  ]
+  ],
+  "description": "使用 Next.js 14+ (App Router)、TypeScript 和 Tailwind CSS 建構的靜態網站，支援 GitHub Pages 部署。",
+  "main": "next-sitemap.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenshinrehab/dryichen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/chenshinrehab/dryichen/issues"
+  },
+  "homepage": "https://github.com/chenshinrehab/dryichen#readme"
 }

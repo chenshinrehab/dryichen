@@ -32,6 +32,10 @@ export interface Treatment extends TreatmentMetadata {
   qaList?: { question: string; answer: string }[];
 }
 
+interface YoutubeEmbedProps {
+  videoId: string;
+  title: string;
+}
 // =======================================================
 // 2. 完整資料來源 (Source of Truth)
 // ⚠️ 所有資料都在這裡維護，程式會自動產生 Sitemap 用的列表
@@ -47,17 +51,16 @@ const fullTreatmentsData: Treatment[] = [
     tags: ['PRP'],
     subtitle: '超音波導引高濃度血小板注射',
     description: '透過注射高濃度血小板血漿 (PRP) 或高濃度葡萄糖，精準修復受損關節與韌帶。',
-    image: '/images/treatments/a.jpg',
+    image: '/images/treatments/a.webp',
     features: ['啟動修復', '免開刀', '精準導引'],
     seoTitle: '新竹PRP注射推薦 - 膝蓋退化/旋轉肌破裂/網球肘 | 宸新復健科',
     seoDescription: '新竹PRP增生療法首選。醫師親自執行高解析超音波導引注射，將高濃度血小板精準送達病灶。免開刀治療退化性關節炎、半月軟骨受損與韌帶撕裂，啟動身體修復力。',
     keywords: ['新竹PRP', '新竹增生療法', '超音波導引注射', '膝蓋退化免開刀', '旋轉肌破裂', '足底筋膜炎', '高濃度葡萄糖', '新竹骨科推薦'],
     
-    // 詳細內容
     contentHtml: `
 <p>疼痛總是如影隨形，讓你無法享受生活？傳統的消炎藥或類固醇雖然能暫時止痛，卻無法修復受損的組織。宸新復健科提供<strong>高濃度血小板血漿 (PRP) 增生療法</strong>及<strong>高濃度葡萄糖水</strong>，這是一種啟動人體自我修復機制的先進治療。</p>
 <br>
-<p>透過抽取自身血液，離心萃取出富含生長因子的血小板，再經由<strong>高解析超音波精準導引</strong>注射至受傷部位。就像是為受損的肌腱、韌帶或關節打入一劑強效的「修復工程隊」，從根本解決疼痛問題，讓您重拾活動力。</p>
+<p>透過抽取自身血液，離心萃取出富含生長因子的血小板，再經由<strong>高解析超音波精準導引</strong>注射至受傷部位。就像是為受損的肌腱、韌帶或關節打入一劑強效的「修復工程隊」，從根本解決疼痛問題，讓您重習活動力。</p>
 
 <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
     <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -76,109 +79,86 @@ const fullTreatmentsData: Treatment[] = [
         </li>
         <li style="margin-bottom: 1rem; display: flex; align-items: start;">
             <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
-            <<div><strong>複合式治療策略：</strong> 醫師會視情況搭配葡萄糖水增生療法、神經解套注射或 <a href="/treatments/shockwave" style="color: #d97706; text-decoration: underline;">聚焦式震波治療</a>，特別針對<strong>長期使用電腦的工程師</strong>或運動愛好者，達到 1+1>2 的修復效果。</div>
+            <div><strong>複合式治療策略：</strong> 醫師會視情況搭配葡萄糖水增生療法、神經解套注射或 <a href="/treatments/shockwave" style="color: #d97706; text-decoration: underline;">聚焦式震波治療</a>，特別針對<strong>長期使用電腦的工程師</strong>或運動愛好者，達到 1+1>2 的修復效果。</div>
         </li>
-                <li style="margin-bottom: 0; display: flex; align-items: start;">
+        <li style="margin-bottom: 0; display: flex; align-items: start;">
             <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
             <div><strong>收費標準：</strong>高濃度葡萄糖：<strong>1200元</strong>。高濃度血小板(PRP)：<strong>15000元</strong>。</div>
         </li>
     </ul>
 </div>
 
-    <div class="my-8 flex justify-center">
+<div class="my-8 flex justify-center">
     <iframe 
       width="315" 
       height="560" 
       src="https://www.youtube.com/embed/A-keqKDu7bQ" 
+      srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}img{height:100%;object-fit:cover}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/A-keqKDu7bQ?autoplay=1><img src=https://img.youtube.com/vi/A-keqKDu7bQ/sddefault.webp alt='宸新復健科 PRP 治療說明'><span>▶</span></a>"
       title="YouTube video player" 
       frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
       allowfullscreen
       class="max-w-full rounded-xl shadow-lg border border-slate-700"
+      loading="lazy"
     ></iframe>
-     </div>
+</div>
+
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <h3>🔬 什麼是 PRP？治療原理大解密</h3>
 <p>PRP 全名為 <strong>Platelet-Rich Plasma</strong>，意指「富含血小板的血漿」。大家熟知的血小板功能是止血，但其實它還富含多種<strong>生長因子</strong>，如 PDGF、TGF-β、VEGF 等。</p>
 <br>
-<p>當組織受傷時，身體會啟動修復機制，但隨著年齡增長或反覆受傷，這個機制會變慢甚至停滯。PRP 治療就像是按下「快轉鍵」，直接將高濃度的生長因子注入受傷部位，重新啟動並加速組織修復反應，促進膠原蛋白增生、血管新生，讓受損的肌腱、韌帶或軟骨得以癒合。</p>
+<p>當組織受傷時，身體會啟動修復機制，但隨著年齡增長或反覆受傷，這個機制會變慢甚至停滯。PRP 治療就像是按下「快轉鍵」，直接將高濃度的生長因子注入受傷部位。</p>
 
-<p><img src="/images/treatments/prp/principle.jpg" alt="PRP高濃度血小板治療原理說明"></p>
+<p><img src="/images/treatments/prp/principle.webp" alt="PRP高濃度血小板治療原理說明" width="602" height="806" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <h3>🎯 誰適合打 PRP？適應症列表</h3>
-<p>PRP 的應用範圍非常廣泛，幾乎涵蓋了所有骨科與復健科的軟組織損傷。若您有以下困擾，且復健或藥物治療效果不彰，PRP 會是您免於開刀的最佳選擇：</p>
-
 <ul>
-    <li><strong>退化性關節炎：</strong> 膝蓋、髖部、肩膀退化，PRP 能延緩軟骨磨損，減輕疼痛。</li>
-    <li><strong>肌腱與韌帶撕裂傷：</strong> 旋轉肌袖撕裂、十字韌帶損傷、半月板損傷。</li>
-    <li><strong>慢性肌腱炎：</strong> 網球肘、高爾夫球肘、阿基里斯腱炎、髕骨肌腱炎。</li>
-    <li><strong>運動傷害：</strong> 腳踝扭傷（翻船）、肌肉拉傷。</li>
-    <li><strong>神經壓迫：</strong> 腕隧道症候群、神經根壓迫。</li>
-    <li><strong>足底筋膜炎：</strong> 長期足跟痛，踩地如針刺。</li>
+    <li><strong>退化性關節炎：</strong> 膝蓋、髖部、肩膀退化。</li>
+    <li><strong>肌腱與韌帶撕裂傷：</strong> 旋轉肌袖撕裂、十字韌帶損傷。</li>
+    <li><strong>慢性肌腱炎：</strong> 網球肘、高爾夫球肘、足底筋膜炎。</li>
 </ul>
 
-<p><img src="/images/treatments/prp/c.jpg" alt="PRP高濃度血小板治療適應症列表"></p>
+<p><img src="/images/treatments/prp/c.webp" alt="PRP高濃度血小板治療適應症列表" width="602" height="806" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <h3>💉 超音波導引：精準醫療的靈魂</h3>
-<p>「明明打了針，為什麼沒效？」這可能是因為沒有打到對的位置。傳統注射依賴醫師觸摸體表解剖位置（盲打），容易打偏或傷及周邊組織。</p>
-<br>
-<p>在宸新復健科，我們堅持<strong>「眼見為憑」</strong>。利用高解析度骨骼肌肉超音波，我們可以清晰看見神經、血管、肌腱與受傷組織的深度。在螢幕的<strong>即時導引下</strong>，醫師能將針頭精準引導至病灶核心，將珍貴的 PRP 一滴不漏地注入，大幅提升治療成功率並減少疼痛。</p>
+<p>在宸新復健科，我們堅持<strong>「眼見為憑」</strong>。醫師能將針頭精準引導至病灶核心，大幅提升治療成功率並減少疼痛。</p>
 
-<p><img src="/images/treatments/prp/d.jpg" alt="PRP高濃度血小板超音波導引注射示意圖"></p>
+<p><img src="/images/treatments/prp/d.webp" alt="PRP高濃度血小板超音波導引注射示意圖" width="602" height="806" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <h3>🏥 治療流程：四步驟重啟修復力</h3>
-<p>為了確保 PRP 的品質與安全性，我們建立了標準化的無菌操作流程，全程約需 30-40 分鐘，無需住院，治療後即可返家。</p>
-
 <ol>
-    <li><strong>血液抽取：</strong> 如同一般抽血檢查，從手臂抽取約 10~20cc 的血液。</li>
-    <li><strong>離心濃縮：</strong> 將血液放入專用離心機，透過物理離心力將紅血球與血漿分離，萃取出高濃度的血小板層。</li>
-    <li><strong>精準注射：</strong> 醫師消毒患部後，在超音波導引下，將 PRP 精準注射至受傷組織。</li>
-    <li><strong>衛教與修復：</strong> 注射後稍微休息，聆聽衛教指導，即可返家開始修復期。</li>
+    <li><strong>血液抽取：</strong> 抽取約 10~20cc 的血液。</li>
+    <li><strong>離心濃縮：</strong> 透過物理離心力萃取出高濃度的血小板。</li>
+    <li><strong>精準注射：</strong> 在超音波導引下注入 PRP。</li>
+    <li><strong>衛教與修復：</strong> 聆聽衛教後即可返家。</li>
 </ol>
 
-<p><img src="/images/treatments/prp/a.jpg" alt="PRP高濃度血小板注射標準流程圖"></p>
+<p><img src="/images/treatments/prp/a.webp" alt="PRP高濃度血小板注射標準流程圖" width="602" height="806" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
-<h3>⚖️ 超級比一比：PRP vs. 葡萄糖水 vs. 類固醇</h3>
-<p>面對多種注射治療，該如何選擇？我們整理了以下比較表，幫助您釐清觀念。</p>
-
+<h3>⚖️ 治療比較：PRP vs. 葡萄糖水 vs. 類固醇</h3>
 <h4>1. PRP vs. 高濃度葡萄糖水</h4>
-<p>兩者都屬於「增生療法 (Prolotherapy)」，目的都是促進修復。<strong>高濃度葡萄糖水</strong>是利用滲透壓刺激輕微發炎反應來啟動修復，適合輕微損傷；而 <strong>PRP</strong> 則是直接提供生長因子原料，修復力更強、速度更快，適合中重度損傷或老年人。</p>
-
-<p><img src="/images/treatments/prp/e.jpg" alt="PRP高濃度血小板與高濃度葡萄糖比較表"></p>
+<p><img src="/images/treatments/prp/e.webp" alt="PRP高濃度血小板與高濃度葡萄糖比較表" width="602" height="328" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
 
 <h4>2. 增生療法 vs. 類固醇 (消炎針)</h4>
-<p>這是截然不同的治療邏輯。<strong>類固醇</strong>強效消炎止痛，但會抑制修復，長期施打可能導致肌腱脆化甚至斷裂。<strong>增生療法</strong>初期可能會有些許痠脹感（那是修復啟動的訊號），但能讓組織長得更強壯、更健康。</p>
-
-<p><img src="/images/treatments/prp/f.jpg" alt="增生注射與類固醇治療差異比較"></p>
+<p><img src="/images/treatments/prp/f.webp" alt="增生注射與類固醇治療差異比較" width="602" height="328" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
-<h3>📝 術後照顧懶人包：讓效果更加分</h3>
-<p>打完 PRP 只是修復的開始，術後的保養同樣重要。請遵循以下原則，幫助組織長得更好：</p>
-
-<ul>
-    <li><strong>注射後反應：</strong> 注射處可能會痠脹、溫熱感持續 3-7 天，這是正常的發炎修復反應，請勿驚慌。</li>
-    <li><strong>禁止消炎藥：</strong> 術後兩週內<strong>請勿服用消炎止痛藥 (NSAIDs)</strong> 或施打類固醇，以免抑制生長因子的作用。若疼痛難耐，可服用普拿疼 (Acetaminophen) 或冰敷緩解。</li>
-    <li><strong>營養補充：</strong> 多攝取優質蛋白質（修復原料）、維生素 C（膠原蛋白合成輔酶）與水分。</li>
-    <li><strong>適度活動：</strong> 避免劇烈運動，但可進行溫和的關節活動與伸展，避免沾黏。</li>
-</ul>
-
-<p><img src="/images/treatments/prp/b.jpg" alt="PRP高濃度血小板注射後注意事項與衛教"></p>
-
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<h3>📝 術後照顧懶人包</h3>
+<p><img src="/images/treatments/prp/b.webp" alt="PRP高濃度血小板注射後注意事項與衛教" width="602" height="806" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
 
 <div style="background-color: #f0f9ff; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
     <h3 style="color: #0369a1; margin-top: 0;">👨‍⚕️ 還在忍受慢性疼痛嗎？</h3>
-    <p style="color: #334155; margin-bottom: 1.5rem;">疼痛不該是常態。歡迎來到新竹宸新復健科，由醫師親自評估。透過精準的超音波診斷與 PRP 增生療法，讓我們一起啟動身體的修復力，找回無痛的自在生活！</p>
+    <p style="color: #334155; margin-bottom: 1.5rem;">疼痛不該是常態。歡迎來到新竹宸新復健科，找回無痛的自在生活！</p>
     <p style="font-weight: bold; color: #0891b2;">現在就預約諮詢，告別疼痛！</p>
 </div>
     `,
@@ -205,22 +185,14 @@ const fullTreatmentsData: Treatment[] = [
       },
       {
         question: '打 PRP 有副作用嗎？',
-        answer: 'PRP 是非常安全的治療，因為用的完全是自己的血液，幾乎不會有過敏反應。大部分人的副作用會有注射部位的痠、脹或輕微疼痛、局部小範圍的瘀青。'
+        answer: 'PRP 是非常安全的治療，因為用的完全是自己的血液，幾乎不會有過敏反應。'
       },
       {
-        question: 'PRP 治療保險有給付嗎？健保有給付嗎?',
-        answer: 'PRP 屬於自費項目，健保尚未給付。但若您持有「實支實付」型的醫療險或意外險，且符合保單條款中的理賠條件（例如：意外受傷、醫師診斷證明書註明必要性），通常有機會申請理賠。建議您治療前先諮詢您的保險業務員，我們診所可協助開立診斷證明與收據供您申請。'
-      },
-      {
-        question: '打 PRP 會越打越沒效嗎？',
-        answer: '不會產生抗藥性。因為 PRP 取自自體血液，不含藥物成分，所以不會像止痛藥或類固醇那樣產生「抗藥性」。相反地，對於慢性損傷或退化，連續施打（如一個療程 3 次）通常能帶來「累加」的修復效果。不過，若關節磨損過於嚴重或生活習慣未改善，修復速度可能趕不上破壞速度，這時醫師會評估是否需要調整治療頻率或搭配其他療法。'
-      },
-      {
-        question: 'PRP 和打類固醇有什麼不同？',
-        answer: '類固醇是強力的「消炎藥」，能迅速止痛但長期使用可能導致肌腱脆化與斷裂；PRP 則是提供「生長因子」，目的是「修復」與「再生」受損組織。簡單來說，類固醇是滅火，PRP 是重建房子。'
+        question: 'PRP 治療保險有給付嗎？',
+        answer: 'PRP 屬於自費項目，健保尚未給付。但若您持有「實支實付」型的醫療險，通常有機會申請理賠。'
       }
     ]
-  },
+},
 
   // -----------------------------------------------------
   // 2. 聚焦式震波治療
@@ -232,7 +204,7 @@ const fullTreatmentsData: Treatment[] = [
     tags: ['ESWT'],
     subtitle: '瑞士頂級設備擊碎鈣化與骨刺',
     description: '引進瑞士頂級震波設備，免開刀擊碎鈣化點，專治足底筋膜炎與頑固疼痛。',
-    image: '/images/treatments/b.jpg',
+    image: '/images/treatments/b.webp',
     features: ['非侵入性', '擊碎鈣化', '恢復期短'],
     seoTitle: '新竹體外震波治療 - 專治足底筋膜炎/骨刺/鈣化性肌腱炎 | 宸新復健科',
     seoDescription: '新竹震波治療推薦。宸新復健科採用瑞士頂級聚焦式震波儀，針對足底筋膜炎、鈣化性肌腱炎與網球肘效果顯著。免打針、免吃藥、非侵入性，有效擊碎鈣化組織並刺激血管新生。',
@@ -283,7 +255,7 @@ const fullTreatmentsData: Treatment[] = [
     <li><strong>阻斷疼痛訊號：</strong> 高強度震波能過度刺激神經末梢，降低物質 P (Substance P) 的濃度，達到立即止痛與放鬆肌肉的效果。</li>
 </ol>
 
-<p><img src="/images/treatments/shockwave/a.jpg" alt="ESWT體外震波治療原理圖解"></p>
+<p><img src="/images/treatments/shockwave/a.webp" alt="ESWT體外震波治療原理圖解"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -300,14 +272,14 @@ const fullTreatmentsData: Treatment[] = [
     <li><strong>其他：</strong> 慢性肌筋膜疼痛症候群、骨折癒合不良。</li>
 </ul>
 
-<p><img src="/images/treatments/shockwave/b.jpg" alt="ESWT體外震波治療適應症範圍"></p>
+<p><img src="/images/treatments/shockwave/b.webp" alt="ESWT體外震波治療適應症範圍"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <h3>⚖️ 聚焦式 vs. 發散式：複合式治療的優勢</h3>
 <p>市面上的震波機器主要分為兩種，各有優缺點。宸新復健科採用<strong>複合式治療策略</strong>，結合兩者優勢，達到 1+1>2 的效果。</p>
 
-<p><img src="/images/treatments/shockwave/c.jpg" alt="ESWT聚焦式與發散式震波比較圖"></p>
+<p><img src="/images/treatments/shockwave/c.webp" alt="ESWT聚焦式與發散式震波比較圖"></p>
 
 <h4>1. 聚焦式震波 (Focused Shockwave)</h4>
 <ul>
@@ -393,7 +365,7 @@ const fullTreatmentsData: Treatment[] = [
     tags: ['manual'],
     subtitle: '物理治療師一對一評估治療',
     description: '專業物理治療師一對一評估，調整骨盆歪斜、脊椎側彎與筋膜放鬆。',
-    image: '/images/treatments/c.jpg',
+    image: '/images/treatments/c.webp',
     features: ['一對一治療', '筋膜放鬆', '骨骼調整'],
     seoTitle: '新竹徒手治療推薦 - 脊椎側彎矯正/骨盆歪斜/筋膜放鬆 | 宸新復健科',
     seoDescription: '新竹專業物理治療師一對一徒手治療。針對脊椎側彎、骨盆前傾/歪斜、產後喬骨盆、長短腳及術後關節沾黏，提供客製化的骨骼調整與筋膜放鬆療程，從根本改善體態與疼痛。',
@@ -435,7 +407,7 @@ const fullTreatmentsData: Treatment[] = [
     </ul>
 </div>
 
-<p><img src="/images/treatments/therapy/a.jpg" alt="獨立的徒手治療空間"></p>
+<p><img src="/images/treatments/therapy/a.webp" alt="獨立的徒手治療空間"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -453,22 +425,22 @@ const fullTreatmentsData: Treatment[] = [
 <h3>1. 氣壓式多功能訓練機 (Keiser)</h3>
 <p>傳統重量訓練機使用鐵片，會有慣性問題，容易受傷且無法模擬快速動作。<strong>Keiser 氣壓式訓練機</strong>利用空氣阻力，能讓您在任何速度下都能保持恆定的阻力。這意味著我們可以安全地進行<strong>爆發力訓練 (Power Training)</strong>，對於運動員重返賽場，或是長輩想要增加肌力預防跌倒，都是最安全高效的選擇。</p>
 
-<p><img src="/images/treatments/therapy/b.jpg" alt="氣壓式多功能訓練機"></p>
+<p><img src="/images/treatments/therapy/b.webp" alt="氣壓式多功能訓練機"></p>
 
 <h3>2. 脊椎側彎專用訓練架</h3>
 <p>脊椎側彎不只是外觀問題，更會影響呼吸與造成背痛。我們設有專用的訓練架（類似施羅斯牆），讓治療師能引導患者進行<strong>3D 空間的呼吸與矯正運動</strong>。透過特定的擺位與施力，將凹陷的胸廓撐開、旋轉的椎體轉正，從而改善體態並控制側彎角度。</p>
 
-<p><img src="/images/treatments/therapy/c.jpg" alt="脊椎側彎訓練架"></p>
+<p><img src="/images/treatments/therapy/c.webp" alt="脊椎側彎訓練架"></p>
 
 <h3>3. 挪威紅繩懸吊系統 (Redcord)</h3>
 <p>源自挪威的醫療級懸吊系統。它的核心概念是「弱連結測試 (Weak Link Testing)」。治療師會利用繩索的不穩定性，找出您身體力量傳遞最弱的環節，然後透過高強度的神經肌肉控制訓練 (Neurac)，<strong>瞬間喚醒沉睡的深層核心肌群</strong>。對於長期下背痛、骨盆歪斜或產後核心無力的族群，紅繩往往能帶來立竿見影的改善。</p>
 
-<p><img src="/images/treatments/therapy/d.jpg" alt="挪威紅繩懸吊訓練"></p>
+<p><img src="/images/treatments/therapy/d.webp" alt="挪威紅繩懸吊訓練"></p>
 
 <h3>4. 器械皮拉提斯 (Pilates Reformer)</h3>
 <p>皮拉提斯不只是運動，更是復健的延伸。Reformer (核心床) 利用彈簧阻力與滑動平臺，能提供脊椎極佳的支撐與延伸感。在治療師的一對一指導下，您能精準地鍛鍊核心、改善圓肩駝背、骨盆前傾等不良姿勢，同時雕塑出修長緊實的肌肉線條。</p>
 
-<p><img src="/images/treatments/therapy/e.jpg" alt="器械皮拉提斯"></p>
+<p><img src="/images/treatments/therapy/e.webp" alt="器械皮拉提斯"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -527,7 +499,7 @@ const fullTreatmentsData: Treatment[] = [
     tags: ['laser'],
     subtitle: '光速修復、深層止痛的黑科技',
     description: '引進美國頂級Summus高能量雷射，能穿透深層組織，提供立即性的止痛與消腫。專治急性運動傷害、兒童運動傷害與頑固性疼痛。',
-    image: '/images/treatments/d.jpg',
+    image: '/images/treatments/d.webp',
     features: ['無痛舒適', '立即消腫', '深層穿透'],
     seoTitle: '新竹高能量雷射治療 - 急性扭傷/術後修復/神經痛推薦 | 宸新復健科',
     seoDescription: '新竹高能量雷射推薦。宸新復健科採用美國頂級Summus高能量雷射，穿透深度達 10 公分。針對急性運動傷害、兒童運動傷害與頑固性疼痛效果顯著。無痛、溫熱感、立即消腫止痛，隔天可以馬上上場。',
@@ -578,7 +550,7 @@ const fullTreatmentsData: Treatment[] = [
 <p>在控制的範圍內產生深層溫熱感，能擴張血管、放鬆緊繃痙攣的肌肉，並阻斷痛覺神經的傳導，達到立即的止痛效果。</p>
 
 
-<p><img src="/images/treatments/laser/a.jpg" alt="高能量雷射治療原理示意圖"></p>
+<p><img src="/images/treatments/laser/a.webp" alt="高能量雷射治療原理示意圖"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -594,7 +566,7 @@ const fullTreatmentsData: Treatment[] = [
 <h4>✅ 脊椎與深層關節</h4>
 <p>退化性膝關節炎、五十肩、下背痛。雷射的深層穿透力能到達脊椎深層的小面關節，緩解長年腰痠背痛。</p>
 
-<p><img src="/images/treatments/laser/b.jpg" alt="高能量雷射治療適應症"></p>
+<p><img src="/images/treatments/laser/b.webp" alt="高能量雷射治療適應症"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -702,7 +674,7 @@ const fullTreatmentsData: Treatment[] = [
   tags: ['HA'],
   subtitle: '精準導引潤滑關節、延緩退化',
   description: '新竹玻尿酸注射推薦。堅持採用高解析超音波導引，將玻尿酸精準注入關節腔，有效緩解退化性關節炎與五十肩疼痛，比傳統盲打更安全有效。',
-  image: '/images/treatments/e.jpg',
+  image: '/images/treatments/e.webp',
   features: ['超音波導引', '潤滑關節', '延緩置換'],
   seoTitle: '新竹玻尿酸注射 - 退化性關節炎/膝蓋痛/五十肩治療 | 宸新復健科',
   seoDescription: '新竹玻尿酸治療推薦。宸新復健科採用高階超音波導引注射技術，針對退化性膝關節炎、五十肩沾黏與運動傷害，提供精準的關節潤滑治療。免開刀、低疼痛，有效延緩關節置換時間。',
@@ -849,7 +821,7 @@ const fullTreatmentsData: Treatment[] = [
         <li><strong>正常反應：</strong> 極少數人注射後會有短暫的痠脹感，冰敷 10-15 分鐘即可緩解。</li>
         <li><strong>規律運動：</strong> 玻尿酸是輔助，施打後仍需搭配<strong>股四頭肌肌力訓練</strong>，才能真正減輕膝蓋負擔。</li>
     </ul>
-            <p><img src="/images/treatments/ha/b.jpg" alt="玻尿酸注射後注意事項"></p>
+            <p><img src="/images/treatments/ha/b.webp" alt="玻尿酸注射後注意事項"></p>
 
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -894,7 +866,7 @@ const fullTreatmentsData: Treatment[] = [
   tags: ['dilation'],
   subtitle: '五十肩救星，精準撐開沾黏、重拾活動力',
   description: '新竹五十肩治療推薦。針對頑固性沾黏與手舉不高，採用高解析超音波導引「肩關節擴張術」，將擴張液精準注入關節囊，有效撐開沾黏組織，大幅改善疼痛與活動角度。',
-  image: '/images/treatments/f.jpg',
+  image: '/images/treatments/f.webp',
   features: ['超音波導引', '撐開沾黏', '立即改善'],
   seoTitle: '新竹肩關節擴張術 - 五十肩/肩膀沾黏/手舉不高治療 | 宸新復健科',
   seoDescription: '新竹五十肩進階治療推薦。宸新復健科採用「肩關節擴張術」，利用高階超音波導引，精準將擴張液注入沾黏的肩關節囊中。針對手舉不高、夜間疼痛、長期復健卡關的患者，提供快速且顯著的改善效果。',
@@ -926,7 +898,7 @@ const fullTreatmentsData: Treatment[] = [
                 <div><strong>同步消炎止痛：</strong> 除了物理性撐開，醫師會視情況加入適量消炎藥劑，直接作用於發炎的關節囊內部，通常在治療後幾天內即可顯著<strong>改善疼痛跟活動度</strong>。</div>
             </li>
         </ul>
-              <p><img src="/images/treatments/dilation/a.jpg" alt="肩關節擴張超音波導引注射"></p>
+              <p><img src="/images/treatments/dilation/a.webp" alt="肩關節擴張超音波導引注射"></p>
     </div>
               <div class="my-8 flex justify-center">
     <iframe 
@@ -1075,7 +1047,7 @@ const fullTreatmentsData: Treatment[] = [
   lastModified: '2026-01-31',
   subtitle: '精準導引解除「壓力鍋」，膝蓋積水、肌肉血腫的救星',
   description: '膝蓋腫得像麵龜？腳踝扭傷腫脹不退？肌肉撕裂瘀血散不掉？宸新復健科運用高解析超音波導引，精準抽吸關節積水與血腫。解決退化性關節炎腫脹、加速運動傷害復原，並有效預防肌肉鈣化，是安全、可視化的精準醫療。',
-  image: '/images/treatments/i.jpg',
+  image: '/images/treatments/i.webp',
   features: ['精準可視化', '立即減壓', '加速修復'],
   seoTitle: '新竹關節抽水/抽血腫 - 膝蓋積水/腳踝扭傷/肌肉撕裂 | 宸新復健科',
   seoDescription: '新竹超音波導引抽吸推薦。膝蓋積水、腳踝嚴重扭傷血腫、肌肉撕裂傷必看。宸新復健科透過影像導引，將發炎積液或瘀血抽出，解除組織壓力，避免沾黏與鈣化，並提供關節積水顏色分析，精準診斷病因。',
@@ -1188,7 +1160,7 @@ const fullTreatmentsData: Treatment[] = [
             </tbody>
         </table>
     </div>
-            <p><img src="/images/treatments/aspiration/a.jpg" alt="超音波導引抽積液比較"></p>
+            <p><img src="/images/treatments/aspiration/a.webp" alt="超音波導引抽積液比較"></p>
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
     <h3>🛠️ 治療流程與術後照護</h3>
@@ -1280,7 +1252,7 @@ const fullTreatmentsData: Treatment[] = [
   tags: ['steroid'],
   subtitle: '急性發炎的滅火器，精準止痛不傷身',
   description: '破除類固醇迷思，宸新復健科採用高解析超音波導引，將低劑量藥物精準注入發炎組織周邊，避開肌腱本體。針對媽媽手、板機指與滑囊炎，提供最快速的消炎止痛選擇。',
-  image: '/images/treatments/g.jpg',
+  image: '/images/treatments/g.webp',
   features: ['超音波導引', '強力消炎', '快速止痛'],
   seoTitle: '新竹類固醇注射 - 媽媽手/板機指/滑囊炎治療 | 宸新復健科',
   seoDescription: '新竹超音波導引注射推薦。針對急性疼痛、肌腱炎與神經壓迫，宸新復健科提供精準類固醇注射治療。透過影像導引避開神經血管與肌腱實質，大幅降低副作用風險，是安全有效的「局部」消炎療法。',
@@ -1395,7 +1367,7 @@ const fullTreatmentsData: Treatment[] = [
             (可左右滑動查看表格 👉)
         </div>
     </div>
-  <p><img src="/images/treatments/steroid/a.jpg" alt="類固醇與增生療法比較"></p>
+  <p><img src="/images/treatments/steroid/a.webp" alt="類固醇與增生療法比較"></p>
     <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
         <h4 style="margin-top: 0; color: #0e7490;">💡 醫師的小叮嚀：類固醇是雙面刃</h4>
         <p style="margin-bottom: 0; color: #334155;">我們遵循嚴格的注射原則：<strong>「同一部位一年不超過 3-4 次」</strong>。適量的類固醇是良藥，過量則可能導致肌腱變脆或加速軟骨退化。在超音波精準導引下單次使用，能取其利而避其害，請放心交給專業醫師評估。</p><br>
@@ -1465,7 +1437,7 @@ const fullTreatmentsData: Treatment[] = [
   tags: ['IV'],
   subtitle: '全身性疼痛的急救站，快速緩解急性發炎',
   description: '當口服藥物緩不濟急，靜脈止痛針(NSAIDs)能提供更快速的藥物吸收與作用。針對閃到腰、落枕、急性痛風、偏頭痛或全身性筋膜炎，宸新復健科提供專業評估與安全施打，特別強調過敏史篩檢，確保治療安全有效。',
-  image: '/images/treatments/h.jpg',
+  image: '/images/treatments/h.webp',
   features: ['快速起效', '全身性消炎', '急性期適用'],
   seoTitle: '新竹靜脈止痛針 - 閃到腰/落枕/急性痛風/偏頭痛/全身痠痛治療 | 宸新復健科',
   seoDescription: '新竹靜脈注射推薦。針對急性痛風發作、頑固性偏頭痛與全身性筋膜發炎，宸新復健科提供高效靜脈消炎止痛治療(IV NSAIDs)。專業醫師評估藥物過敏史，提供比口服藥物更快速的疼痛緩解方案。',
