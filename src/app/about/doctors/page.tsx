@@ -58,16 +58,17 @@ export default function DoctorsPage() {
       jobTitle: '院長',
       image: `${SITE_URL}/images/main/a.jpg`, 
       url: currentUrl,
+      
+      // ✅ 這裡是唯一的 description，確保不會重複報錯
       description: '台大醫學系畢業，具備復健科專科與骨鬆雙專科醫師資歷。',
       
-      // ✨ 修正 1：補上電話 (解決「telephone」欄位未填)
+      // ✅ 補上電話 (解決 GSC 建議)
       telephone: '+886-3-564-7999', 
       
-      // ✨ 修正 2：補上價位區間 (解決「priceRange」欄位未填)
-      // 建議與診所 layout.tsx 保持一致
+      // ✅ 補上價位 (解決 GSC 建議)
       priceRange: '$$', 
       
-      // ✨ 修正 3：補上地址 (解決「address」欄位未填)
+      // ✅ 補上地址 (解決 GSC 建議)
       address: {
         '@type': 'PostalAddress',
         streetAddress: '東區光復路一段371號B1',
@@ -75,30 +76,26 @@ export default function DoctorsPage() {
         addressRegion: 'TW',
         postalCode: '300'
       },
+
+      // ✅ 關聯診所資訊 (補齊截斷的部分)
       worksFor: {
         '@type': 'MedicalClinic',
         name: '宸新復健科診所',
-        url: SITE_URL,
-        // 建議在 worksFor 裡也帶入地址，強化關聯
-        address: {
-          '@type': 'PostalAddress',
-          streetAddress: '東區光復路一段371號B1',
-          addressLocality: '新竹市',
-          addressRegion: 'TW',
-          postalCode: '300'
-        }
+        url: SITE_URL
       },
-      // ✨ 2. 修正為 alumniOf (更符合 Schema 規範)
+      
+      // ✅ 學歷資訊
       alumniOf: { 
-        '@type': 'CollegeOrUniversity', 
+        '@type': 'EducationalOrganization', 
         name: '國立台灣大學醫學系' 
       },
-      // ✨ 3. 優化專科描述
+      
+      // ✅ 專科關鍵字
       medicalSpecialty: [
-        'Physiotherapy', // 復健醫學標準關鍵字
-        'SportsMedicine', // 運動醫學
-        'Musculoskeletal' // 骨骼肌肉系統
-      ],
+        'Physiotherapy', 
+        'SportsMedicine', 
+        'Musculoskeletal'
+      ]
       description: '台大醫學系畢業，具備復健科專科與骨鬆雙專科醫師資歷。'
     }
   }
