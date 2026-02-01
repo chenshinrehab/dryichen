@@ -130,22 +130,28 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
-        {/* ✨ 修正點：根據 PageSpeed 報告補上 Preconnect ✨ */}
+        {/* ✨ 效能優化：根據 PageSpeed 建議補上 Preconnect ✨ */}
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         
-        {/* ✨ 新增：針對 YouTube 預先連結 (解決報告中 TBT 2.1s 相關問題) ✨ */}
-        <link rel="preconnect" href="https://www.youtube.com" />
+        {/* 針對 YouTube 預先連結 (解決報告中 LCP 節省 300ms 的建議) */}
+        <link rel="preconnect" href="https://www.youtube-nocookie.com" />
         <link rel="preconnect" href="https://s.ytimg.com" />
         
         <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
         
-        {/* 標準載入模式 (確保圖示顯示) */}
+        {/* ✨ 修正點：改為非同步載入 FontAwesome (解決 910ms 轉譯封鎖問題) ✨ */}
         <link 
           rel="stylesheet" 
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+          media="print" 
+          // @ts-ignore
+          onLoad="this.media='all'"
         />
+        <noscript>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        </noscript>
         
         <style>{`
           img { height: auto; }

@@ -268,7 +268,7 @@ export default function Home() {
                       {/* ✨ 修改重點：使用 YoutubeEmbed 元件 */}
                       <div className="lg:w-4/12 w-full flex-shrink-0">
                           <div className="w-full h-full relative aspect-[9/16] rounded-xl overflow-hidden border border-slate-600 shadow-xl bg-black">
-                             <YoutubeEmbed />
+                          <YoutubeEmbed videoId="asqbvbEukOM" title="宸新復健科介紹" />
                           </div>
                       </div>
 
