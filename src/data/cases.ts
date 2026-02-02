@@ -15,14 +15,90 @@ export interface CaseStudy {
 }
 
 export const casesData: CaseStudy[] = [
+ 
+  {
+    id: 'case-rotator-cuff-art-teacher',
+    title: '那雙教會我畫畫的手，舉不起來了...高中美術老師的旋轉肌修復之旅',
+    summary: '昔日實驗高中的美術恩師，因木工勞損導致嚴重旋轉肌撕裂，夜不成眠且無法作畫。本以為難逃開刀命運，透過超音波導引與高濃度葡萄糖增生療法，歷經六次治療，見證撕裂傷口從「破洞」到「填滿」的癒合奇蹟，重拾畫筆。',
+    contentHtml: `
+        <div class="quote-box" style="border-left: 4px solid #06b6d4; border-radius:8px; padding-left: 1rem; margin: 1.5rem 0; font-style: italic; color: #64748b; background-color: #f8fafc; padding: 1rem;">
+          <p class="mb-0" style="font-size: 1.1rem; font-weight: 500;">「以前是老師教我用眼睛觀察美、用手創造美；現在換我用超音波的眼睛、治療的手，來守護老師的創作生涯。」</p>
+        </div>
+  
+        <p>那天診間門一開，進來的是一位熟悉又敬重的身影——我的高中美術老師。</p>
+        <p>看著她，我不禁想起以前在<strong>實驗高中</strong>的日子。實中有個很棒的傳統，就是畢業前每個人都要畫一幅油畫。那時候，正是這位老師帶著我們一點一滴教會我調色、構圖，更讓我愛上了藝術，懂得在忙碌的生活中停下來欣賞美。</p>
+        <p>但這次見面，老師的眉頭深鎖，那雙曾經揮灑自如的手，此刻卻撫著肩膀，顯得無力而沈重。</p>
+  
+        <h2>從拿畫筆到搬木頭，旋轉肌的無聲抗議</h2>
+        <p>「羿辰，我的手現在連舉都舉不太起來，晚上更是痛到沒辦法睡...」老師無奈地說。</p>
+        <p>原來，老師近年來醉心於木工創作。為了追求作品的完美，她頻繁地搬運沈重的原木、長時間敲打琢磨。這些高強度的反覆動作，早已超過了身體的負荷。原本是用來創造藝術的雙手，卻因為過度操勞，造成了肩膀<a href="/diseases/shoulder/rotator-cuff-tear" class="text-cyan-400 hover:underline">旋轉肌嚴重撕裂傷</a>。</p>
+        <p>對一位創作者來說，手舉不起來，不僅是生活的困擾，更是心靈的折磨——這意味著她<strong>再也沒辦法好好畫畫了</strong>。</p>
+  
+        <h2>超音波下的殘酷真相與轉機</h2>
+        <p>我拿起超音波探頭，滑過老師的肩膀。螢幕上的影像讓我心裡沈了一下：<strong>撕裂傷的範圍很大</strong>。</p>
+        <p>依照傳統的骨科觀點，這樣程度的撕裂，往往意味著漫長的復健，甚至不得不考慮<strong>手術修復</strong>。聽到可能要開刀，老師的眼神流露出擔憂，她不想因為手術而有長期的停工期，更害怕術後的不確定性。</p>
+        <p>「老師，我們先別急著開刀。」我看著影像中殘存的肌腱組織，判斷還有再生的機會：「我們試試看用修復的方式，讓它自己長回來。」</p>
+  
+        <figure style="margin: 2rem 0;">
+           <img src="/images/cases/art/b.webp" alt="旋轉肌撕裂修復過程超音波對照圖" style="border-radius: 8px; width: 60%;">
+        </figure>
+
+        <h2>看得見的癒合：六次治療的修復之路</h2>
+        <p>我們擬定了治療計畫：<strong>超音波導引注射</strong>搭配<strong>高濃度葡萄糖 (Prolotherapy)</strong>。</p>
+        <p>這是一場耐心與信心的馬拉松。第一次因為撕裂範圍很大，先做了<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>
+            ；隨後的五次治療，則是改用兩周一次的高濃度葡萄糖增生注射。</p>
+  
+        <p>身為美術老師，她對「視覺」特別敏銳。每次回診，我們都會一起看著超音波螢幕。這成了我們之間新的「評圖」時間——評的不是油畫，而是肌腱的修復進度。</p>
+        <p>「林醫師，這個黑黑的<strong>破洞好像真的變小</strong>了！」老師指著螢幕驚喜地說。</p>
+        <p>是的，每一次注射，我們都親眼見證傷口<strong>一點一滴地癒合</strong>。隨著影像上的黑影縮小，老師笑容也變多了。她開始能睡個好覺，手能舉高了，最重要的是，她終於能再次拿起畫筆。</p>
+  
+        <h2>藝術與醫術的交會</h2>
+        <p>最後一次回診，超音波顯示旋轉肌已經順利癒合。老師轉動著肩膀，開心地告訴我她已經開始構思新的畫作。</p>
+        <p>看著老師離去的背影，我很慶幸能運用我的專業，回報當年的啟蒙之恩。醫療有時不僅是治癒身體，更是為了守護病人熱愛生活的能力。</p>
+                <figure style="margin: 2rem 0;">
+           <img src="/images/cases/art/a.webp" alt="旋轉肌撕裂修復完成合照" style="border-radius: 8px; width: 50%;">
+        </figure>
+  
+
+        <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 2rem 0;">
+  
+        <div class="doctor-note" style="background-color: #fff7ed; border-left: 4px solid #f97316; padding: 1.5rem; border-radius:8px; margin-bottom: 2rem;">
+          <h3 style="margin-top: 0; color: #c2410c; font-size: 1.2rem; display: flex; align-items: center; gap: 0.5rem;">
+              <i class="fa-solid fa-user-doctor"></i> 醫師手札
+          </h3>
+          <p style="color: #431407; font-style: italic; margin-bottom: 0;">
+            「許多旋轉肌撕裂的患者，一聽到『撕裂』兩個字就覺得天崩地裂，以為一定要開刀。其實在超音波導引下，若撕裂程度未完全斷裂，透過高濃度葡萄糖或 PRP 啟動身體的修復機制，人體的自癒潛力往往超乎想像。能幫老師保住不用開刀的肩膀，是我身為學生最驕傲的成績單。」
+          </p>
+        </div>
+        
+        <div class="cta-box" style="background-color: #f3f4f6; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; color: #374151;">
+          <h3 style="margin-top: 0; color: #111827;">肩膀痛到手舉不起來？</h3>
+          <p style="color: #374151;">旋轉肌撕裂不一定非開刀不可。透過精密超音波診斷，評估是否適合免開刀的修復注射治療。</p>
+          <p style="margin-bottom: 0;">
+            <a href="/treatments/prp" style="color: #2563eb; text-decoration: underline; font-weight: bold;">
+              👉 點此了解：增生療法如何修復撕裂傷
+            </a>
+          </p>
+        </div>
+    `,
+    date: '2026-02-02', 
+    category: '增生注射',
+    tags: ['旋轉肌撕裂', '增生療法', '高濃度葡萄糖', '免開刀', 'PRP'], 
+    coverImage: '/images/cases/art/a.webp', 
+    relatedTreatments: ['prolotherapy', 'ultrasound-guided-injection'] 
+  }, 
+ 
+ 
   {
     id: 'case-prp-01y',
       title: '65歲膝蓋嚴重退化：超音波導引PRP精準注射，成功免開刀擺脫拐杖',
       summary: '65歲阿嬤因膝蓋退化性關節炎寸步難行，因心肺風險無法手術。曾於他處多次施打玻尿酸與PRP無效，經評估後採用「先抽積水、後精準注射」策略，針對內側半月板破損處修復。3次療程後疼痛顯著改善，終於丟掉拐杖行動自如。',
       contentHtml: `
-          <div class="quote-box" style="border-left: 4px solid #06b6d4; padding-left: 1rem; margin: 1.5rem 0; font-style: italic; color: #64748b; background-color: #f8fafc; padding: 1rem;">
-            <p class="mb-0" style="font-size: 1.1rem; font-weight: 500;">「林醫師，我本來以為這輩子都要拿拐杖了...沒想到還能再次自己走進來。」</p>
-          </div>
+          <div class="quote-box" style="border-left: 4px solid #06b6d4; border-radius: 8px; padding-left: 1rem; margin: 1.5rem 0; font-style: italic; color: #64748b; background-color: #f8fafc; padding: 1rem;">
+  <p class="mb-0" style="font-size: 1.1rem; font-weight: 500;">
+    「林醫師，我本來以為這輩子都要拿拐杖了...沒想到還能再次自己走進來。」
+  </p>
+</div>
     
           <p>那天，一位 65 歲的阿嬤拄著拐杖，在鄰居的介紹下走進了我的診間。她每走一步，眉頭就深鎖一次，那是長期忍受 <a href="/diseases/knee/knee-osteoarthritis" class="text-cyan-400 hover:underline">膝蓋退化性關節炎</a> 折磨的疲憊神情。</p>
       
@@ -59,7 +135,7 @@ export const casesData: CaseStudy[] = [
       
           <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 2rem 0;">
     
-          <div class="doctor-note" style="background-color: #fff7ed; border-left: 4px solid #f97316; padding: 1.5rem; border-radius: 0 8px 8px 0; margin-bottom: 2rem;">
+          <div class="doctor-note" style="background-color: #fff7ed; border-left: 4px solid #f97316; padding: 1.5rem; border-radius: 8px ; margin-bottom: 2rem;">
             <h3 style="margin-top: 0; color: #c2410c; font-size: 1.2rem; display: flex; align-items: center; gap: 0.5rem;">
                <i class="fa-solid fa-user-doctor"></i> 醫師手札
             </h3>
@@ -93,7 +169,7 @@ export const casesData: CaseStudy[] = [
     title: '50歲的五十肩惡夢：為什麼病人想打 PRP，我卻拒絕了？',
     summary: '50歲女性因嚴重五十肩導致生活一團亂，夜間痛醒、無法穿衣。外院誤診為撕裂傷建議施打昂貴PRP。經超音波檢查確認無撕裂僅為沾黏，改採「肩關節擴張術」治療。一次注射後夜間疼痛即消失，最終完全康復。',
     contentHtml: `
-        <div class="quote-box" style="border-left: 4px solid #06b6d4; padding-left: 1rem; margin: 1.5rem 0; font-style: italic; color: #64748b; background-color: #f8fafc; padding: 1rem;">
+        <div class="quote-box" style="border-left: 4px solid #06b6d4; border-radius: 8px; padding-left: 1rem; margin: 1.5rem 0; font-style: italic; color: #64748b; background-color: #f8fafc; padding: 1rem;">
           <p class="mb-0" style="font-size: 1.1rem; font-weight: 500;">「林醫師，只要能不痛，多少錢我都願意花...謝謝醫師沒有讓我花冤枉錢，還治好了我的病。」</p>
         </div>
   
@@ -130,7 +206,7 @@ export const casesData: CaseStudy[] = [
   
         <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 2rem 0;">
   
-        <div class="doctor-note" style="background-color: #fff7ed; border-left: 4px solid #f97316; padding: 1.5rem; border-radius: 0 8px 8px 0; margin-bottom: 2rem;">
+        <div class="doctor-note" style="background-color: #fff7ed; border-left: 4px solid #f97316; padding: 1.5rem; border-radius:8px; margin-bottom: 2rem;">
           <h3 style="margin-top: 0; color: #c2410c; font-size: 1.2rem; display: flex; align-items: center; gap: 0.5rem;">
              <i class="fa-solid fa-user-doctor"></i> 醫師手札
           </h3>
@@ -150,7 +226,7 @@ export const casesData: CaseStudy[] = [
         </div>
     `,
     date: '2026-01-31', // 設定一個未來的日期或當前日期
-    category: '肩膀疼痛',
+    category: '肩關節擴張術',
     tags: ['五十肩', 'dilation', '沾黏', '糖尿病', '免開刀'], 
     coverImage: '/images/cases/fs/a.webp', // 記得更換對應圖片
     relatedTreatments: ['frozen-shoulder-treatment', 'hydrodilatation'] 

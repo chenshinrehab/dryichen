@@ -149,11 +149,11 @@ export default function CaseDetailPage({ params }: PageProps) {
                               </span>
                           </div>
 
-                          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold font-sans text-white mb-4 leading-tight">
+                          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold font-sans text-white mb-4 lg:mb-6 leading-tight lg:leading-snug">
                               {post.title}
                           </h1>
 
-                          <div className="bg-slate-900/50 rounded-xl p-4 md:p-6 border-l-4 border-cyan-500">
+                          <div className="bg-slate-900/50 rounded-xl p-4 md:p-4 border-l-4 border-cyan-500">
                               <div className="flex items-start gap-3">
                                 <i className="fa-solid fa-user-doctor text-cyan-500 mt-1"></i>
                                 <p className="text-lg text-slate-300 italic m-0">
