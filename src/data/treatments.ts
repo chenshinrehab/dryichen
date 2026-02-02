@@ -53,12 +53,12 @@ const fullTreatmentsData: Treatment[] = [
     description: '透過注射高濃度血小板血漿 (PRP) 或高濃度葡萄糖，精準修復受損關節與韌帶。',
     image: '/images/treatments/a.webp',
     features: ['啟動修復', '免開刀', '精準導引'],
-    seoTitle: '新竹PRP注射推薦 - 膝蓋退化/旋轉肌破裂/網球肘 | 宸新復健科',
-    seoDescription: '新竹PRP增生療法首選。醫師親自執行高解析超音波導引注射，將高濃度血小板精準送達病灶。免開刀治療退化性關節炎、半月軟骨受損與韌帶撕裂，啟動身體修復力。',
-    keywords: ['新竹PRP', '新竹增生療法', '超音波導引注射', '膝蓋退化免開刀', '旋轉肌破裂', '足底筋膜炎', '高濃度葡萄糖', '新竹骨科推薦'],
+    seoTitle: '新竹 PRP 增生療法推薦 | 宸新復健科診所 - 關節退化與運動傷害治療',
+    seoDescription: '新竹PRP增生療法首選。位於鄰近新竹科學園區近竹北，醫師親自執行高解析超音波導引注射，將高濃度血小板精準送達病灶。免開刀治療退化性關節炎、半月軟骨受損與韌帶撕裂。',
+    keywords: ['新竹PRP', '新竹增生療法', '竹北PRP', '超音波導引注射', '膝蓋退化免開刀', '旋轉肌破裂', '足底筋膜炎', '高濃度葡萄糖', '新竹骨科推薦'],
     
     contentHtml: `
-<p>疼痛總是如影隨形，讓你無法享受生活？傳統的消炎藥或類固醇雖然能暫時止痛，卻無法修復受損的組織。宸新復健科提供<strong>高濃度血小板血漿 (PRP) 增生療法</strong>及<strong>高濃度葡萄糖水</strong>，這是一種啟動人體自我修復機制的先進治療。</p>
+<p>疼痛總是如影隨形，讓你無法享受生活？傳統的消炎藥或類固醇雖然能暫時止痛，卻無法修復受損的組織。<strong>位於新竹的宸新復健科</strong>，專為<strong>新竹科學園區</strong>與在地民眾提供<strong>高濃度血小板血漿 (PRP) 增生療法</strong>及<strong>高濃度葡萄糖水</strong>，這是一種啟動人體自我修復機制的先進治療。</p>
 <br>
 <p>透過抽取自身血液，離心萃取出富含生長因子的血小板，再經由<strong>高解析超音波精準導引</strong>注射至受傷部位。就像是為受損的肌腱、韌帶或關節打入一劑強效的「修復工程隊」，從根本解決疼痛問題，讓您重習活動力。</p>
 
@@ -66,7 +66,7 @@ const fullTreatmentsData: Treatment[] = [
     <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
         📢 為什麼選擇宸新 PRP 增生療法？
     </h2>
-    <p style="font-size: 1.1rem; color: #78350f;">許多人打過 PRP 覺得沒效，很大的原因是「沒打對位置」或「濃度不夠」。宸新復健科堅持最高規格的治療標準：</p>
+    <p style="font-size: 1.1rem; color: #78350f;">許多人打過 PRP 覺得沒效，很大的原因是「沒打對位置」或「濃度不夠」。宸新復健科提供<strong>竹北與新竹市區民眾</strong>最高規格的治療標準：</p>
     
     <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
         <li style="margin-bottom: 1rem; display: flex; align-items: start;">
@@ -79,7 +79,7 @@ const fullTreatmentsData: Treatment[] = [
         </li>
         <li style="margin-bottom: 1rem; display: flex; align-items: start;">
             <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
-            <div><strong>複合式治療策略：</strong> 醫師會視情況搭配葡萄糖水增生療法、<a href="/treatments/nerve-hydrodissection" style="color: #d97706; text-decoration: underline;">神經解套注射</a>或 <a href="/treatments/shockwave" style="color: #d97706; text-decoration: underline;">聚焦式震波治療</a>，特別針對<strong>長期使用電腦的工程師</strong>或運動愛好者，達到 1+1>2 的修復效果。</div>
+            <div><strong>複合式治療策略：</strong> 醫師會視情況搭配葡萄糖水增生療法、<a href="/treatments/nerve-hydrodissection" style="color: #d97706; text-decoration: underline;">神經解套注射</a>或 <a href="/treatments/shockwave" style="color: #d97706; text-decoration: underline;">聚焦式震波治療</a>，特別針對<strong>長期使用電腦的竹科工程師</strong>或運動愛好者，達到 1+1>2 的修復效果。</div>
         </li>
         <li style="margin-bottom: 0; display: flex; align-items: start;">
             <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
@@ -93,7 +93,7 @@ const fullTreatmentsData: Treatment[] = [
       width="315" 
       height="560" 
       src="https://www.youtube.com/embed/A-keqKDu7bQ" 
-      srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}img{height:100%;object-fit:cover}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/A-keqKDu7bQ?autoplay=1><img src=https://i.ytimg.com/vi/A-keqKDu7bQ/frame0.jpg alt='宸新復健科 PRP 治療說明'><span>▶</span></a>"
+      srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}img{height:100%;object-fit:cover}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/A-keqKDu7bQ?autoplay=1><img src=https://i.ytimg.com/vi/A-keqKDu7bQ/frame0.jpg alt='宸新復健科 PRP 治療說明'><span>▶</span></a>" 
       title="YouTube video player" 
       frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -158,7 +158,7 @@ const fullTreatmentsData: Treatment[] = [
 
 <div style="background-color: #f0f9ff; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
     <h3 style="color: #0369a1; margin-top: 0;">👨‍⚕️ 還在忍受慢性疼痛嗎？</h3>
-    <p style="color: #334155; margin-bottom: 1.5rem;">疼痛不該是常態。歡迎來到新竹宸新復健科，找回無痛的自在生活！</p>
+    <p style="color: #334155; margin-bottom: 1.5rem;">疼痛不該是常態。歡迎來到<strong>新竹竹北</strong>宸新復健科，找回無痛的自在生活！</p>
     <p style="font-weight: bold; color: #0891b2;">現在就預約諮詢，告別疼痛！</p>
 </div>
     `,
@@ -193,7 +193,6 @@ const fullTreatmentsData: Treatment[] = [
       }
     ]
 },
-
   // -----------------------------------------------------
   // 2. 聚焦式震波治療
   // -----------------------------------------------------
@@ -206,14 +205,14 @@ const fullTreatmentsData: Treatment[] = [
     description: '引進瑞士頂級震波設備，免開刀擊碎鈣化點，專治足底筋膜炎與頑固疼痛。',
     image: '/images/treatments/b.webp',
     features: ['非侵入性', '擊碎鈣化', '恢復期短'],
-    seoTitle: '新竹體外震波治療 - 專治足底筋膜炎/骨刺/鈣化性肌腱炎 | 宸新復健科',
-    seoDescription: '新竹震波治療推薦。宸新復健科採用瑞士頂級聚焦式震波儀，針對足底筋膜炎、鈣化性肌腱炎與網球肘效果顯著。免打針、免吃藥、非侵入性，有效擊碎鈣化組織並刺激血管新生。',
-    keywords: ['新竹震波', '體外震波推薦', '足底筋膜炎', '鈣化性肌腱炎', '骨刺治療', '網球肘', '新竹物理治療'],
+    seoTitle: '新竹體外震波推薦 | 宸新復健科診所 - 關節退化與運動傷害治療',
+    seoDescription: '新竹體外震波治療首選。位於鄰近新竹科學園區近竹北，宸新復健科採用瑞士頂級聚焦式震波儀，針對足底筋膜炎、鈣化性肌腱炎與網球肘效果顯著。免打針、免吃藥、非侵入性，有效擊碎鈣化組織並刺激血管新生。',
+    keywords: ['新竹震波', '體外震波推薦', '竹北震波', '足底筋膜炎', '鈣化性肌腱炎', '骨刺治療', '網球肘', '新竹物理治療'],
     youtubeVideoId: '3OK5zeUBeGc',
     contentHtml: `
-     <p>您是否長期受慢性疼痛所苦？足底筋膜炎反覆發作、網球肘痛到拿不起杯子、或是旋轉肌鈣化讓您徹夜難眠？當復健、吃藥、打針都無法解決您的疼痛時，<strong>體外震波治療 (ESWT)</strong> 可能是您免於開刀的最佳選擇。</p>
+      <p>您是否長期受慢性疼痛所苦？足底筋膜炎反覆發作、網球肘痛到拿不起杯子、或是旋轉肌鈣化讓您徹夜難眠？當復健、吃藥、打針都無法解決您的疼痛時，<strong>體外震波治療 (ESWT)</strong> 可能是您免於開刀的最佳選擇。</p>
 <br>
-<p>宸新復健科引進頂級雙機型震波設備，提供<strong>「聚焦式 + 發散式」複合式治療</strong>。我們堅持在治療前使用<strong>高解析超音波精準定位</strong>，如同導彈鎖定目標，將高能量聲波精準傳遞至深層受損組織，啟動身體的自我修復機制，從根本解決頑固疼痛。</p>
+<p><strong>位於新竹的宸新復健科</strong>，特別針對<strong>新竹科學園區</strong>高壓工作的族群，引進頂級雙機型震波設備，提供<strong>「聚焦式 + 發散式」複合式治療</strong>。我們堅持在治療前使用<strong>高解析超音波精準定位</strong>，如同導彈鎖定目標，將高能量聲波精準傳遞至深層受損組織，啟動身體的自我修復機制，從根本解決頑固疼痛。</p>
 
 
 <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
@@ -221,7 +220,7 @@ const fullTreatmentsData: Treatment[] = [
         📢 為什麼選擇宸新 ESWT 震波治療？
     </h2>
     
-    <p style="font-size: 1.1rem; color: #78350f;">許多患者在其他地方打過震波覺得沒效，往往是因為「打太淺」或「沒對準」。宸新復健科堅持三大黃金治療標準，確保每一發震波都發揮最大效益：</p>
+    <p style="font-size: 1.1rem; color: #78350f;">許多患者在其他地方打過震波覺得沒效，往往是因為「打太淺」或「沒對準」。宸新復健科為<strong>竹北與新竹市區民眾</strong>堅持三大黃金治療標準，確保每一發震波都發揮最大效益：</p>
     
     <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
         <li style="margin-bottom: 1rem; display: flex; align-items: start;">
@@ -236,7 +235,7 @@ const fullTreatmentsData: Treatment[] = [
             <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
             <div><strong>治療師親自操作：</strong> 震波能量的強弱、頻率與角度調整是治療成功的關鍵。本院全程由物理治療師親自評估與操作，隨時根據您的感受調整參數，安全又有效。</div>
         </li>
-                        <li style="margin-bottom: 0; display: flex; align-items: start;">
+                                <li style="margin-bottom: 0; display: flex; align-items: start;">
             <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
             <div><strong>收費標準(每次3000發)：</strong>第一次體驗價：<strong>1500元</strong>。單次施打：<strong>2800元</strong>。購買療程(3次共9000發)：<strong>6800元</strong>。</div>
         </li>
@@ -323,7 +322,7 @@ const fullTreatmentsData: Treatment[] = [
 
 <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
     <h3 style="color: #047857; margin-top: 0;">👨‍⚕️ 別讓疼痛限制了您的生活！</h3>
-    <p style="color: #334155; margin-bottom: 1.5rem;">無論是想重回球場的運動員，還是深受肩膀痛困擾的長輩，宸新復健科都能為您提供最專業的協助。透過超音波導引與複合式震波治療，讓我們一起擊退疼痛，找回活動自如的快樂！</p>
+    <p style="color: #334155; margin-bottom: 1.5rem;">無論是想重回球場的運動員，還是深受肩膀痛困擾的長輩，<strong>位於新竹竹北</strong>的宸新復健科都能為您提供最專業的協助。透過超音波導引與複合式震波治療，讓我們一起擊退疼痛，找回活動自如的快樂！</p>
     <p style="font-weight: bold; color: #059669;">歡迎預約諮詢，體驗精準醫療的魅力！</p>
 </div>
     `,
@@ -354,7 +353,6 @@ const fullTreatmentsData: Treatment[] = [
       }
     ]
   },
-
   // -----------------------------------------------------
   // 3. 徒手治療
   // -----------------------------------------------------
