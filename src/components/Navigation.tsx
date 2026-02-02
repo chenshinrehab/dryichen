@@ -42,7 +42,6 @@ export default function Navigation() {
         name: '治療項目', 
         path: '/treatments',
         subItems: [
-            { name: '總覽頁面', path: '/treatments' },
             { name: 'PRP增生療法', path: '/treatments/prp' },
             { name: '聚焦式震波', path: '/treatments/shockwave' },
             { name: '徒手治療', path: '/treatments/manual' },
@@ -50,6 +49,7 @@ export default function Navigation() {
             { name: '玻尿酸注射', path: '/treatments/hyaluronic-acid' },
             { name: '肩關節擴張術', path: '/treatments/shoulder-dilation' },
             { name: '超音波導引抽水', path: '/treatments/ultrasound-guided-aspiration' },
+            { name: '超音波導引神經解套', path: '/treatments/nerve-hydrodissection' },
             { name: '類固醇注射', path: '/treatments/steroid-injection' },
             { name: '靜脈消炎止痛針', path: '/treatments/iv-pain-relief' },
         ]

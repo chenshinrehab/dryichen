@@ -75,11 +75,11 @@ const fullTreatmentsData: Treatment[] = [
         </li>
         <li style="margin-bottom: 1rem; display: flex; align-items: start;">
             <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
-            <div><strong>高濃度萃取技術：</strong> 採用專利離心管與標準化流程，確保萃取出的血小板濃度達到修復所需的黃金標準（約血液濃度的 3-5 倍以上）。</div>
+            <div><strong>高濃度萃取技術：</strong> 採用專利離心管與標準化流程，確保萃取出的血小板濃度達到修復所需的黃金標準（約血液濃度的 5 倍以上）。</div>
         </li>
         <li style="margin-bottom: 1rem; display: flex; align-items: start;">
             <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
-            <div><strong>複合式治療策略：</strong> 醫師會視情況搭配葡萄糖水增生療法、神經解套注射或 <a href="/treatments/shockwave" style="color: #d97706; text-decoration: underline;">聚焦式震波治療</a>，特別針對<strong>長期使用電腦的工程師</strong>或運動愛好者，達到 1+1>2 的修復效果。</div>
+            <div><strong>複合式治療策略：</strong> 醫師會視情況搭配葡萄糖水增生療法、<a href="/treatments/nerve-hydrodissection" style="color: #d97706; text-decoration: underline;">神經解套注射</a>或 <a href="/treatments/shockwave" style="color: #d97706; text-decoration: underline;">聚焦式震波治療</a>，特別針對<strong>長期使用電腦的工程師</strong>或運動愛好者，達到 1+1>2 的修復效果。</div>
         </li>
         <li style="margin-bottom: 0; display: flex; align-items: start;">
             <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
@@ -1251,7 +1251,7 @@ const fullTreatmentsData: Treatment[] = [
   lastModified: '2026-02-01',
   subtitle: '鬆開神經枷鎖，修復受損的關鍵',
   description: '手指發麻、腳底刺痛卻找不出原因？這可能是神經受到周邊組織壓迫。宸新復健科運用高解析超音波導引，進行「神經解套注射」，以低濃度葡萄糖水撐開沾黏空間，並提供神經修復養分。包含腕隧道症候群、跗骨隧道症候群及關節積水抽吸，皆能精準處理。',
-  image: '/images/treatments/hydrodissection-cover.jpg',
+  image: '/images/treatments/j.webp',
   features: ['神經修復', '非類固醇', '精準導引'],
   seoTitle: '新竹神經解套注射 - 腕隧道/跗骨隧道/關節抽水 | 宸新復健科',
   seoDescription: '新竹神經解套注射推薦。針對手麻腳麻、腕隧道症候群與跗骨隧道症候群，宸新復健科採用超音波導引神經解套術(Hydrodissection)。利用5%葡萄糖水剝離沾黏神經並供給養分，同時提供精準關節抽水服務，解決神經壓迫與關節腫脹問題。',
@@ -1260,7 +1260,7 @@ const fullTreatmentsData: Treatment[] = [
   contentHtml: `
     <p>你是否有過這種經驗：半夜睡覺手麻到醒過來，甩一甩才舒服一點？或是腳底莫名刺痛、灼熱，被當成足底筋膜炎治療許久卻不見起色？這些症狀的根源，往往不是肌肉或骨頭，而是<strong>「周邊神經夾擠」</strong>。</p>
     <br>
-    <p>當神經在通過骨頭、韌帶或肌肉的狹窄隧道時，若因過度使用、受傷或發炎腫脹而受到壓迫，就會像被石頭壓住的水管一樣，導致缺血、缺氧，進而產生麻木、刺痛或無力感。傳統治療常依賴止痛藥或開刀減壓，而現代復健醫學提供了更安全、非手術的選擇——<strong>「超音波導引神經解套注射</strong>。</p>
+    <p>當神經在通過骨頭、韌帶或肌肉的狹窄隧道時，若因過度使用、受傷或發炎腫脹而受到壓迫，就會像被石頭壓住的水管一樣，導致缺血、缺氧，進而產生麻木、刺痛或無力感。傳統治療常依賴止痛藥或開刀減壓，而現代復健醫學提供了更安全、非手術的選擇——<strong>「超音波導引神經解套注射」</strong>。</p>
 
     <div style="background-color: #f0fdf4; border: 2px solid #34d399; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
         <h2 style="color: #047857; margin-top: 0; font-weight: bold; border-bottom: 2px solid #6ee7b7; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -1291,7 +1291,8 @@ const fullTreatmentsData: Treatment[] = [
         <li><strong>即時監控：</strong> 醫師能看著針尖緩緩接近神經，將藥水精準地注射在神經與周邊組織的<strong>介面之間</strong>，將神經360度完整包覆剝離，而不觸碰到神經本體。</li>
         <li><strong>動態評估：</strong> 注射後可立即檢查神經是否恢復滑動空間。</li>
     </ol>
-
+         <h3>腕隧道症候群超音波導引解套，撐開<strong>正中神經</strong>的壓迫。</h3>
+         <p><img src="/images/treatments/nerve/a.webp" alt="腕隧道症候群超音波導引解套"></p>
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
     <h3>🩺 常見適應症與治療重點</h3>

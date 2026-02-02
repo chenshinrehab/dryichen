@@ -111,13 +111,24 @@ export default function GrowthNutritionCalculator() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: generateStructuredData() }} />
 
       {/* Header Section */}
-      <header className="text-center mb-8">
+      <header className="text-center mb-8 relative">
+        {/* 修改 1：電腦版左上 QR Code */}
+        <div className="hidden md:block absolute left-0 top-0 mt-2 ml-2">
+            <div className="bg-white p-2 rounded-lg border-2 border-[#fcd34d] shadow-sm inline-block">
+                <img 
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://www.dryichen.com.tw/weight-bone/nutrition" 
+                    alt="Scan QR Code" 
+                    className="w-20 h-20"
+                />
+            </div>
+        </div>
+
         <h1 className="text-3xl md:text-4xl font-bold text-[#fffbeb]  pb-2 px-4">
-          兒童客製成長營養藍圖
+            兒童長高營養指南
         </h1>
         {/* SEO 修改：增加簡短描述，讓搜尋引擎抓取關鍵字 */}
         <p className="text-[#fcd34d] mt-2 text-lg font-medium opacity-90 hidden md:block">
-          結合醫師專業建議與國健署 DRIs 數據，為您的孩子計算蛋白質、鈣質需求，並提供專屬長高食譜。
+          結合醫師專業建議與國健署 DRIs 數據，為孩子計算每日營養需求，並提供專屬長高食譜。
         </p>
       </header>
 
@@ -171,8 +182,8 @@ export default function GrowthNutritionCalculator() {
             </div>
             {conditions.isAllergic && (
               <input type="text" value={allergyText} onChange={(e) => setAllergyText(e.target.value)}
-                     className="mt-3 block w-full rounded-lg border-2 border-[#fcd34d] py-2 px-3 bg-white text-[#78350f] placeholder-amber-300 outline-none focus:border-[#b45309]"
-                     placeholder="請備註過敏原，如：蝦蟹、花生..." aria-label="過敏原輸入" />
+                      className="mt-3 block w-full rounded-lg border-2 border-[#fcd34d] py-2 px-3 bg-white text-[#78350f] placeholder-amber-300 outline-none focus:border-[#b45309]"
+                      placeholder="請備註過敏原，如：蝦蟹、花生..." aria-label="過敏原輸入" />
             )}
           </div>
         </div>
@@ -219,14 +230,14 @@ export default function GrowthNutritionCalculator() {
           </div>
           {/* ... (一日飲食範例與叮嚀維持不變) ... */}
           <div className="mt-8">
-             <h4 className="text-xl font-bold text-[#b45309] mb-4 flex items-center"><span className="bg-[#f59e0b] text-white w-6 h-6 rounded-full flex items-center justify-center mr-3 text-sm">!</span>醫師推薦一日飲食範例</h4>
-             <div className="bg-[#fffbeb] border border-[#fcd34d] rounded-xl p-5 space-y-4 text-[#78350f]">
-               <div className="flex flex-col sm:flex-row border-b border-[#fcd34d]/30 pb-3 last:border-0 last:pb-0"><span className="font-bold text-[#b45309] w-20 shrink-0">早餐</span><span>全麥吐司夾起司蛋 + 無糖豆漿或鮮奶 + 小番茄</span></div>
-               <div className="flex flex-col sm:flex-row border-b border-[#fcd34d]/30 pb-3 last:border-0 last:pb-0"><span className="font-bold text-[#b45309] w-20 shrink-0">午餐</span><span>雜糧飯 + 清蒸鱸魚 + 蒜炒深綠色蔬菜 + 蛤蜊湯</span></div>
-               <div className="flex flex-col sm:flex-row border-b border-[#fcd34d]/30 pb-3 last:border-0 last:pb-0"><span className="font-bold text-[#b45309] w-20 shrink-0">點心</span><span>希臘優格淋蜂蜜 + 一小把堅果 (核桃/腰果)</span></div>
-               <div className="flex flex-col sm:flex-row border-b border-[#fcd34d]/30 pb-3 last:border-0 last:pb-0"><span className="font-bold text-[#b45309] w-20 shrink-0">晚餐</span><span>糙米飯 + 蔥爆牛肉 + 毛豆炒豆干 + 季節水果</span></div>
-             </div>
-             {(result.conditions.isPicky || result.conditions.isAllergic || result.conditions.isHighActivity) && (
+              <h4 className="text-xl font-bold text-[#b45309] mb-4 flex items-center"><span className="bg-[#f59e0b] text-white w-6 h-6 rounded-full flex items-center justify-center mr-3 text-sm">!</span>醫師推薦一日飲食範例</h4>
+              <div className="bg-[#fffbeb] border border-[#fcd34d] rounded-xl p-5 space-y-4 text-[#78350f]">
+                <div className="flex flex-col sm:flex-row border-b border-[#fcd34d]/30 pb-3 last:border-0 last:pb-0"><span className="font-bold text-[#b45309] w-20 shrink-0">早餐</span><span>全麥吐司夾起司蛋 + 無糖豆漿或鮮奶 + 小番茄</span></div>
+                <div className="flex flex-col sm:flex-row border-b border-[#fcd34d]/30 pb-3 last:border-0 last:pb-0"><span className="font-bold text-[#b45309] w-20 shrink-0">午餐</span><span>雜糧飯 + 清蒸鱸魚 + 蒜炒深綠色蔬菜 + 蛤蜊湯</span></div>
+                <div className="flex flex-col sm:flex-row border-b border-[#fcd34d]/30 pb-3 last:border-0 last:pb-0"><span className="font-bold text-[#b45309] w-20 shrink-0">點心</span><span>希臘優格淋蜂蜜 + 一小把堅果 (核桃/腰果)</span></div>
+                <div className="flex flex-col sm:flex-row border-b border-[#fcd34d]/30 pb-3 last:border-0 last:pb-0"><span className="font-bold text-[#b45309] w-20 shrink-0">晚餐</span><span>糙米飯 + 蔥爆牛肉 + 毛豆炒豆干 + 季節水果</span></div>
+              </div>
+              {(result.conditions.isPicky || result.conditions.isAllergic || result.conditions.isHighActivity) && (
               <div className="mt-6 bg-[#f0f9ff] border-l-4 border-[#0891b2] p-4 rounded-r-lg">
                 <h5 className="font-bold text-[#0e7490] mb-2 flex items-center">💡 林醫師的個人化叮嚀</h5>
                 <ul className="space-y-2 text-sm text-[#334155]">
@@ -268,7 +279,8 @@ export default function GrowthNutritionCalculator() {
            <span className="bg-[#f59e0b] text-white w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-1">2</span>
            <div className="text-[#92400e] w-full">
                <strong className="text-[#0891b2] text-lg block mb-1">成長加速器：不可或缺的輔助隊友</strong>
-               <ul className="list-none space-y-5 mt-3">
+               {/* 修改 2：每一列改成放兩個 (Grid 佈局) */}
+               <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 mt-3 list-none">
                    {/* ... (維持原本的 li 結構，無需變動，內容已經很好了) ... */}
                    <li className="flex items-start"><span className="w-1.5 h-1.5 bg-[#0891b2] rounded-full mr-2 mt-2.5 flex-shrink-0"></span><div className="text-[#78350f]"><strong>鋅 - 生長發育的點火器：</strong><p className="mb-1">催化細胞分裂與蛋白質合成的關鍵角色...</p><span className="text-sm text-[#9a3412] inline-block bg-[#ffedd5] px-2 py-0.5 rounded border border-[#fed7aa]">推薦食物：蛤蜊、牡蠣、紅肉(牛肉)、腰果</span></div></li>
                    <li className="flex items-start"><span className="w-1.5 h-1.5 bg-[#0891b2] rounded-full mr-2 mt-2.5 flex-shrink-0"></span><div className="text-[#78350f]"><strong>鎂 - 深層睡眠的守門員：</strong><p className="mb-1">負責放鬆緊繃的神經與肌肉...</p><span className="text-sm text-[#9a3412] inline-block bg-[#ffedd5] px-2 py-0.5 rounded border border-[#fed7aa]">推薦食物：菠菜、香蕉、杏仁、南瓜子</span></div></li>

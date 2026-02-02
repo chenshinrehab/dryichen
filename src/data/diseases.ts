@@ -128,7 +128,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   <br>
                   <strong>治療原理：</strong> 醫師利用高解析超音波，清楚看到沾黏的筋膜與受傷的肌肉。將高濃度葡萄糖或自體血小板 (PRP) 精準注射到患處：
                   <ul style="color: #334155 !important; margin-top: 0.5rem;">
-                      <li><strong>神經解套：</strong> 用注射液將沾黏的筋膜「撐開」，釋放被夾住的神經，疼痛通常能立即緩解。</li>
+                      <li><strong><a href="/treatments/nerve-hydrodissection" class="text-cyan-400 hover:underline">神經解套</a>：</strong> 用注射液將沾黏的筋膜「撐開」，釋放被夾住的神經，疼痛通常能立即緩解。</li>
                       <li><strong>組織再生：</strong> 啟動身體的修復機制，強化鬆弛的韌帶與受傷的肌腱，讓腰部重新變得強韌。</li>
                   </ul>
               </p>
@@ -380,7 +380,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   如果您的疼痛反覆發作，代表筋膜或韌帶已經鬆弛受損。
                   醫師利用超音波導引，將高濃度葡萄糖或 PRP 注射到肌肉附著點與小面關節周圍。
                   <ul style="color: #334155 !important;margin-top: 0.5rem;">
-                      <li><strong>神經解套：</strong> 用注射液將沾黏的筋膜「撐開」，釋放被夾殺的神經。</li>
+                      <li><strong><a href="/treatments/nerve-hydrodissection" class="text-cyan-400 hover:underline">神經解套</a>：</strong> 用注射液將沾黏的筋膜「撐開」，釋放被夾殺的神經。</li>
                       <li><strong>強化韌帶：</strong> 強化頸椎周圍的韌帶，讓脖子變穩，肌肉就不需要一直緊繃來保護脊椎。</li>
                   </ul>
               </p>
@@ -1659,7 +1659,7 @@ export const diseaseCategories: DiseaseCategory[] = [
 <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
     <h4 style="margin-top: 0; color: #0e7490 !important;">2. <a href="/treatments/prp" class="text-cyan-400 hover:underline">神經減壓注射與肌肉修復</a></h4>
     <p style="margin-bottom: 0; color: #334155 !important;">
-        若物理治療效果緩慢，這是一針見效的方法。醫師在<strong>超音波導引</strong>下，可以清楚看到腫脹的梨狀肌與受壓的坐骨神經。我們使用<strong style="color: #0891b2 !important;">神經解套注射 (Hydrodissection)</strong>，將藥水精準注入肌肉與神經之間的沾黏處，像「水刀」一樣將它們分開，瞬間解除壓迫，並能一併施打 PRP 修復受傷的肌肉纖維。
+        若物理治療效果緩慢，這是一針見效的方法。醫師在<strong>超音波導引</strong>下，可以清楚看到腫脹的梨狀肌與受壓的坐骨神經。我們使用<a href="/treatments/nerve-hydrodissection" class="text-cyan-400 hover:underline">超音波導引神經解套注射</a>，將藥水精準注入肌肉與神經之間的沾黏處，像「水刀」一樣將它們分開，瞬間解除壓迫，並能一併施打 PRP 修復受傷的肌肉纖維。
     </p>
 </div>
 
@@ -4193,7 +4193,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
                 <h4 style="margin-top: 0; color: #0e7490 !important;">3. 難治型救星：<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>🔍️</h4>
                 <p style="margin-bottom: 0; color: #334155 !important;">
-                    如果超音波顯示肌腱有<strong>撕裂傷</strong>或嚴重的鈣化，<strong style="color: #0891b2 !important;">PRP (高濃度血小板血漿)</strong> 是最強力的修復劑。醫師在超音波精準導引下，將自體生長因子注入受損肌腱，加速組織癒合。若合併尺神經壓迫，我們會同時進行<strong>神經解套注射</strong>，用藥水將被卡住的神經剝離出來，一次解決痛與麻。
+                    如果超音波顯示肌腱有<strong>撕裂傷</strong>或嚴重的鈣化，<strong style="color: #0891b2 !important;">PRP (高濃度血小板血漿)</strong> 是最強力的修復劑。醫師在超音波精準導引下，將自體生長因子注入受損肌腱，加速組織癒合。若合併尺神經壓迫，我們會同時進行<a href="/treatments/nerve-hydrodissection" class="text-cyan-400 hover:underline">超音波導引神經解套注射</a>，用藥水將被卡住的神經剝離出來，一次解決痛與麻。
                 </p>
             </div>
         
@@ -4272,7 +4272,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         contentHtml: `
           <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：趴在桌上午休，醒來發現<strong>小指和無名指</strong>麻到像有螞蟻在爬？或是講電話、滑手機久了，手肘內側覺得痠痠的，手指頭開始不聽使喚？嚴重時甚至發現手掌虎口處的肌肉好像<strong>「凹下去」</strong>了？</p>
           <br>
-          <p style="color: #e2e8f0 !important;">這些都是典型的<strong>「尺神經壓迫」</strong>症狀，臨床上最常見的就是<strong>「肘隧道症候群」</strong>，俗稱「手機肘」。這條神經就是我們撞到手肘會像觸電一樣痛的那條「麻筋」。在宸新復健科，我們不只做電療，更利用<strong>高解析神經超音波</strong>直接觀察神經是否腫脹變形，並運用<strong>神經解套注射</strong>將壓迫的組織撐開，從源頭釋放神經壓力，避免走上開刀這條路。</p>
+          <p style="color: #e2e8f0 !important;">這些都是典型的<strong>「尺神經壓迫」</strong>症狀，臨床上最常見的就是<strong>「肘隧道症候群」</strong>，俗稱「手機肘」。這條神經就是我們撞到手肘會像觸電一樣痛的那條「麻筋」。在宸新復健科，我們不只做電療，更利用<strong>高解析神經超音波</strong>直接觀察神經是否腫脹變形，並運用<a href="/treatments/nerve-hydrodissection" class="text-cyan-400 hover:underline">超音波導引神經解套注射</a>將壓迫的組織撐開，從源頭釋放神經壓力，避免走上開刀這條路。</p>
           <p><img src="/images/diseases/elbow/ulnar/b.webp" alt="尺神經壓迫麻痛範圍" style="width: 80%; height: auto;"></p>
       
           <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
@@ -4320,7 +4320,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">神經受壓迫久了會導致不可逆的肌肉萎縮（爪狀手）。因此，一旦出現持續麻木，必須積極治療。我們採取「減壓、修復、滑動」三部曲：</p>
       
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 超音波導引神經解套注射 (Hydrodissection)</h4>
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. <a href="/treatments/nerve-hydrodissection" class="text-cyan-400 hover:underline">超音波導引神經解套注射</a></h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
                   這是免開刀治療的首選！
                   <ul style="margin-top: 0.5rem; color: #334155 !important;">
@@ -4387,7 +4387,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         treatments: [
           '復健治療與神經修復藥(B12)',
-         '<a href="/treatments/prp" class="text-cyan-400 hover:underline">神經解套注射 (Hydrodissection)</a>🔍️',
+         '<a href="/treatments/nerve-hydrodissection" class="text-cyan-400 hover:underline">超音波導引神經解套注射</a>🔍️',
           '<a href="/treatments/manual" class="text-cyan-400 hover:underline">神經滑動術與徒手治療</a>🔍️',
           '姿勢矯正 (避免長時間彎手)'
         ],
@@ -4782,7 +4782,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           contentHtml: `
             <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：騎機車催油門久一點，手掌就開始發麻？或是半夜睡覺睡到一半，大拇指、食指和中指<strong>麻到把您叫醒</strong>，必須起來甩甩手才會舒服一點？</p>
                     <br>
-            <p style="color: #e2e8f0 !important;">這些都是<strong>腕隧道症候群</strong>最經典的症狀，俗稱「滑鼠手」。它是最常見的周邊神經壓迫疾病，但常被誤認為是頸椎長骨刺或是單純的血液循環不良。宸新復健科透過高解析超音波，能直接測量神經是否腫脹，並利用<strong>神經解套注射</strong>技術，將被卡住的神經「救」出來，免除開刀之苦。</p>
+            <p style="color: #e2e8f0 !important;">這些都是<strong>腕隧道症候群</strong>最經典的症狀，俗稱「滑鼠手」。它是最常見的周邊神經壓迫疾病，但常被誤認為是頸椎長骨刺或是單純的血液循環不良。宸新復健科透過高解析超音波，能直接測量神經是否腫脹，並利用<a href="/treatments/nerve-hydrodissection" class="text-cyan-400 hover:underline">超音波導引神經解套注射</a>技術，將被卡住的神經「救」出來，免除開刀之苦。</p>
         
 
         
@@ -4856,7 +4856,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             </div>
         
             <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-                <h4 style="margin-top: 0; color: #0e7490 !important;">2. 黃金治療：超音波導引神經解套注射</h4>
+                <h4 style="margin-top: 0; color: #0e7490 !important;">2. 黃金治療：<a href="/treatments/nerve-hydrodissection" class="text-cyan-400 hover:underline">超音波導引神經解套注射</a></h4>
                 <p style="margin-bottom: 0; color: #334155 !important;">
                     這是宸新復健科的專長項目。我們使用高解析超音波，清楚看到被壓扁的正中神經。接著利用長針，將藥水（低濃度葡萄糖或 PRP）精準注入神經與橫腕韌帶之間。
                     <br>
@@ -4907,7 +4907,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           ],
           treatments: [
             '物理治療 (雷射/超音波)',
-            '超音波導引神經解套注射 (Hydrodissection)',
+            '<a href="/treatments/nerve-hydrodissection" class="text-cyan-400 hover:underline">超音波導引神經解套注射</a>🔍️',
             '夜間副木/護具固定',
             '神經滑動運動 (Nerve Gliding)',
           ],
@@ -8482,7 +8482,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             contentHtml: `
                 <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：走路走久了，<strong>腳底開始出現「燒灼感」或「刺麻感」</strong>，脫下鞋子按摩也無法緩解？或是晚上睡覺時，腳底突然像被電到一樣，甚至麻到醒過來？許多人以為這是足底筋膜炎，拼命踩球、拉筋，結果症狀反而更嚴重。</p>
                 <br>
-                <p style="color: #e2e8f0 !important;">小心！這很可能不是筋膜的問題，而是<strong>「跗骨隧道症候群」</strong>。簡單來說，就是<strong>腳部的神經被「勒住」了</strong>，就像在腳底的腕隧道症候群。在宸新復健科，我們常遇到被誤診多年的患者，透過高解析超音波檢查，發現脛神經在腳踝內側腫脹受壓。我們利用<strong>神經解套注射</strong>釋放壓迫，並配合<strong>足踝力學調整</strong>，從結構解決腳麻的根源。</p>
+                <p style="color: #e2e8f0 !important;">小心！這很可能不是筋膜的問題，而是<strong>「跗骨隧道症候群」</strong>。簡單來說，就是<strong>腳部的神經被「勒住」了</strong>，就像在腳底的腕隧道症候群。在宸新復健科，我們常遇到被誤診多年的患者，透過高解析超音波檢查，發現脛神經在腳踝內側腫脹受壓。我們利用<a href="/treatments/nerve-hydrodissection" class="text-cyan-400 hover:underline">神經解套注射</a>釋放壓迫，並配合<strong>足踝力學調整</strong>，從結構解決腳麻的根源。</p>
              
                 <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
                     <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -8577,7 +8577,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                 <p style="color: #e2e8f0 !important;">針對神經壓迫，單純吃止痛藥效果有限。我們採用<strong>「解套、修復、導正」</strong>三步驟治療策略。</p>
              
                 <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-                    <h4 style="margin-top: 0; color: #0e7490 !important;">1. 立即減壓：<a href="/treatments/prp" class="text-cyan-400 hover:underline">神經解套注射</a></h4>
+                    <h4 style="margin-top: 0; color: #0e7490 !important;">1. 立即減壓：<a href="/treatments/nerve-hydrodissection" class="text-cyan-400 hover:underline">超音波導引神經解套注射</a></h4>
                     <p style="margin-bottom: 0; color: #334155 !important;">
                         這是治療此症最關鍵的技術。
                         <br>
@@ -8683,7 +8683,7 @@ export const diseaseCategories: DiseaseCategory[] = [
             ],
             treatments: [
               '休息與消炎藥物',
-              '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引神經解套注射</a>🔍️',
+              '<a href="/treatments/nerve-hydrodissection" class="text-cyan-400 hover:underline">超音波導引神經解套注射</a>🔍️',
               '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手治療 (關節鬆動/筋膜放鬆)</a>🔍️',
               '客製化矯正鞋墊 (改善扁平足)'
             ],
