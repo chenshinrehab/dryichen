@@ -234,20 +234,6 @@ export default function NewsDetailPage({ params }: PageProps) {
                       </div>
                   </div>
 
-                  {/* ✨ 新增：LCP 優化主圖區域 (如果有的話) ✨ */}
-                  {/* 這能解決 PageSpeed 抱怨圖片載入太慢的問題 */}
-                  {post.coverImage && (
-                    <div className="relative w-full h-48 md:h-[400px] mb-8 rounded-xl overflow-hidden shadow-lg border border-slate-700/50">
-                      <Image
-                        src={post.coverImage}
-                        alt={post.title}
-                        fill
-                        priority // 關鍵：告訴瀏覽器這是最重要的圖
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
-                      />
-                    </div>
-                  )}
 
                   {/* 文章內容 */}
                   <div className="article-content text-slate-300 leading-relaxed text-lg pb-6">

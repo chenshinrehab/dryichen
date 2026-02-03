@@ -242,40 +242,51 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
 
                         {/* 兒童相關頁面 -> 顯示「生長曲線」與「骨齡預測」 */}
                         {['bone-age'].includes(params.slug) && (
-                            <>
-                                {/* 生長曲線 (青綠色漸層) */}
-                                <Link 
-                                    href="/weight-bone/child" 
-                                    className="group relative inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-600 to-teal-500 rounded-full text-white font-bold shadow-lg shadow-teal-500/20 hover:shadow-teal-500/40 hover:-translate-y-1 transition-all duration-300"
-                                >
-                                    <span className="absolute inset-0 bg-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                                    <i className="fa-solid fa-chart-line text-lg group-hover:animate-pulse"></i>
-                                    <span>兒童生長曲線分析</span>
-                                    <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
-                                </Link>
-
-                                {/* 骨齡預測 (藍紫色漸層) */}
-                                <Link 
-                                    href="/weight-bone/calculator" 
-                                    className="group relative inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full text-white font-bold shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40 hover:-translate-y-1 transition-all duration-300"
-                                >
-                                    <span className="absolute inset-0 bg-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                                    <i className="fa-solid fa-x-ray text-lg group-hover:animate-pulse"></i>
-                                    <span>骨齡與遺傳身高預測</span>
-                                    <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
-                                </Link>
-
-                                  {/* 營養 (青綠色漸層) */}
-                                   <Link 
-                                    href="/weight-bone/nutrition" 
-                                    className="group relative inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-600 to-teal-500 rounded-full text-white font-bold shadow-lg shadow-teal-500/20 hover:shadow-teal-500/40 hover:-translate-y-1 transition-all duration-300"
-                                >
-                                    <span className="absolute inset-0 bg-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                                    <i className="fa-solid fa-chart-line text-lg group-hover:animate-pulse"></i>
-                                    <span>兒童長高營養指南</span>
-                                    <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
-                                </Link>
-                            </>
+                          <div className="flex flex-col md:flex-row items-stretch justify-between gap-4 w-full overflow-x-auto pb-2">
+                          {/* 1. 兒童長高全攻略 (青色風格) */}
+                          <Link 
+                            href="/about/news/child-height-growth-guide" 
+                            className="flex-1 min-w-fit md:min-w-0 group relative inline-flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-cyan-600 to-teal-500 rounded-2xl text-white font-bold text-base shadow-lg shadow-teal-500/20 hover:shadow-teal-500/40 hover:-translate-y-1 transition-all duration-300"
+                          >
+                            <span className="absolute inset-0 bg-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                            <i className="fa-solid fa-book-open text-xl group-hover:animate-pulse"></i>
+                            <span className="whitespace-nowrap">兒童長高全攻略</span>
+                            <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
+                          </Link>
+                        
+                          {/* 2. 兒童生長曲線分析 (藍色風格) */}
+                          <Link 
+                            href="/weight-bone/child" 
+                            className="flex-1 min-w-fit md:min-w-0 group relative inline-flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl text-white font-bold text-base shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 hover:-translate-y-1 transition-all duration-300"
+                          >
+                            <span className="absolute inset-0 bg-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                            <i className="fa-solid fa-chart-line text-xl group-hover:animate-pulse"></i>
+                            <span className="whitespace-nowrap">兒童生長曲線分析</span>
+                            <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
+                          </Link>
+                        
+                          {/* 3. 骨齡預測 (深藍/靛青風格) */}
+                          <Link 
+                            href="/weight-bone/calculator" 
+                            className="flex-1 min-w-fit md:min-w-0 group relative inline-flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-indigo-500 to-violet-600 rounded-2xl text-white font-bold text-base shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40 hover:-translate-y-1 transition-all duration-300"
+                          >
+                            <span className="absolute inset-0 bg-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                            <i className="fa-solid fa-x-ray text-xl group-hover:animate-pulse"></i>
+                            <span className="whitespace-nowrap">骨齡與遺傳身高預測</span>
+                            <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
+                          </Link>
+                        
+                          {/* 4. 營養指南 (天藍/青綠風格) */}
+                          <Link 
+                            href="/weight-bone/nutrition" 
+                            className="flex-1 min-w-fit md:min-w-0 group relative inline-flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-sky-500 to-cyan-600 rounded-2xl text-white font-bold text-base shadow-lg shadow-sky-500/20 hover:shadow-sky-500/40 hover:-translate-y-1 transition-all duration-300"
+                          >
+                            <span className="absolute inset-0 bg-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                            <i className="fa-solid fa-utensils text-xl group-hover:animate-pulse"></i>
+                            <span className="whitespace-nowrap">兒童長高營養指南</span>
+                            <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
+                          </Link>
+                        </div>
                         )}
                     </div>
                     {/* ============================================================ */}
