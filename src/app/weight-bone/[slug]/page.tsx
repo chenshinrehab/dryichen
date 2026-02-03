@@ -265,7 +265,7 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                             <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
                           </Link>
                         
-                          {/* 3. 骨齡預測 (深藍/靛青風格) */}
+                          {/* 3. 骨齡預測  (深藍/靛青風格) */}
                           <Link 
                             href="/weight-bone/calculator" 
                             className="flex-1 min-w-fit md:min-w-0 group relative inline-flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-indigo-500 to-violet-600 rounded-2xl text-white font-bold text-base shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40 hover:-translate-y-1 transition-all duration-300"
