@@ -6,14 +6,27 @@ const TARGET_DIR = './public/images';
 const MAX_WIDTH = 1200; 
 const QUALITY = 85;
 
+// 定義要排除的檔名清單（不含副檔名）
+const EXCLUDED_FILENAMES = ['apple-touch-icon', 'favicon', 'og-default'];
+
 async function processDirectory(dir) {
   const files = fs.readdirSync(dir);
   for (const file of files) {
     const fullPath = path.join(dir, file);
     const stat = fs.statSync(fullPath);
+
     if (stat.isDirectory()) {
       await processDirectory(fullPath);
-    } else if (/\.(webp|jpg|jpeg|png)$/i.test(file)) { // 1. 修改正則表達式，支援更多格式
+    } else if (/\.(webp|jpg|jpeg|png)$/i.test(file)) {
+      // 取得不含副檔名的純檔名
+      const fileNameWithoutExt = path.parse(file).name;
+
+      // 檢查是否在排除名單中
+      if (EXCLUDED_FILENAMES.includes(fileNameWithoutExt)) {
+        console.log(`跳過排除的檔案: ${file}`);
+        continue;
+      }
+
       await processAndConvert(fullPath);
     }
   }
@@ -24,7 +37,7 @@ async function processAndConvert(filePath) {
     const ext = path.extname(filePath).toLowerCase();
     const isWebP = ext === '.webp';
     
-    // 2. 讀取檔案至記憶體 (避免鎖定)
+    // 讀取檔案至記憶體 (避免鎖定)
     const inputBuffer = fs.readFileSync(filePath);
     const image = sharp(inputBuffer);
     const metadata = await image.metadata();
@@ -41,7 +54,7 @@ async function processAndConvert(filePath) {
 
       console.log(`處理中: ${path.basename(filePath)} -> [${actionLog}]`);
       
-      // 3. 處理圖片：統一轉為 WebP 加上縮圖設定
+      // 處理圖片：統一轉為 WebP 加上縮圖設定
       const outputBuffer = await image
         .resize({ width: MAX_WIDTH, withoutEnlargement: true }) // 超過才縮，沒超過不動
         .webp({ quality: QUALITY })
@@ -52,10 +65,10 @@ async function processAndConvert(filePath) {
       const name = path.parse(filePath).name;
       const newFilePath = path.join(dir, `${name}.webp`);
 
-      // 4. 寫入新檔案
+      // 寫入新檔案
       fs.writeFileSync(newFilePath, outputBuffer);
 
-      // 5. 如果是轉檔 (原檔名不同)，刪除舊的 jpg/png
+      // 如果是轉檔 (原檔名不同)，刪除舊的 jpg/png
       if (needsConversion) {
         fs.unlinkSync(filePath);
         console.log(`✅ 轉換並取代: ${path.basename(filePath)} -> ${path.basename(newFilePath)}`);

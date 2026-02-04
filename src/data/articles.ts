@@ -16,6 +16,12 @@ export const articlesData: NewsPost[] = [
     keywords: ['兒童長高', '性早熟', '生長板', '遺傳身高', '骨齡', '轉大人', '生長激素', '跳繩長高', '維生素D', '補鈣'],
     
     contentHtml: `
+        <img src="/images/news/article/boneage/1.webp" alt="兒童長高全攻略懶人包1" style="width: 70%; height: auto;">
+        <img src="/images/news/article/boneage/2.webp" alt="兒童長高全攻略懶人包2" style="width: 70%; height: auto;">
+        <img src="/images/news/article/boneage/3.webp" alt="兒童長高全攻略懶人包3" style="width: 70%; height: auto;">
+        <img src="/images/news/article/boneage/4.webp" alt="兒童長高全攻略懶人包4" style="width: 70%; height: auto;">
+        <img src="/images/news/article/boneage/5.webp" alt="兒童長高全攻略懶人包5" style="width: 70%; height: auto;">
+
       <p>孩子的身高，一直是許多家長最焦慮的話題。「我的孩子這樣算矮嗎？」、「是不是該補鈣？」、「聽說太早發育會長不高？」這些疑問在診間層出不窮。</p>
       <br>
       <p>其實，兒童長高是一場與時間的賽跑。了解生長板的運作、掌握遺傳與後天的黃金比例，並在正確的時間點介入，才能幫助孩子發揮最大的生長潛力。本篇懶人包將為您完整解析關於「長高」的所有關鍵知識。</p>
@@ -127,6 +133,7 @@ export const articlesData: NewsPost[] = [
     seoDescription: '攀岩愛好者必看！醫師整理六大常見攀岩傷害：A2滑車韌帶撕裂、肩夾擠、高爾夫球肘、TFCC手腕痛及折膝導致的半月板損傷。結合 Alex Honnold 挑戰 101 情境衛教。',
     keywords: ['攀岩', '運動傷害', 'Alex Honnold', '手指滑車', '滑車韌帶', '肩旋轉肌', '半月板', '復健'],
     contentHtml: `
+    <img src="/images/news/article/climb.webp" alt="運動常見傷害 - 攀岩" style="width: 60%; height: auto;">
       <p>攀岩是近年來超級熱門的運動，不僅納入奧運項目，最近無繩獨攀大神 Alex Honnold 成功攀登台北 101 的壯舉更是震撼全台！</p><br>
       <p>🏥 門診中常遇到受傷的岩友，不同於滑雪多傷下肢，攀岩因運動特性，受傷部位多集中在上肢。常見原因不外乎：<strong>過度使用、休息不足或墜落姿勢不當</strong>。</p>
       

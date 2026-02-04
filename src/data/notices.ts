@@ -17,7 +17,7 @@ export const noticesData: NewsPost[] = [
     
     contentHtml: `
 <p><strong>2026年 門診表</strong></p>
-<img src="/images/news/a.webp" alt="門診時間表" />
+<img src="/images/notice/a.webp" alt="門診時間表" />
 <p><strong>✦貼心小叮嚀✦</strong><br></p>
 
 <ul>
@@ -46,9 +46,9 @@ Line 線上預約: <a href="https://lin.ee/FHj3mIs" target="_blank">https://lin.
 <li>新竹宸新兒童天地: <a href="https://lin.ee/j4Qc7u5" target="_blank">https://lin.ee/j4Qc7u5</a></li>
 <li>恆新復健聯盟 (可預約門診、徒手治療): <a href="https://lin.ee/U7WJTZB" target="_blank">https://lin.ee/U7WJTZB</a></li>
 </ul>
-<img src="/images/news/b.webp" alt="林羿辰醫師" />
-<img src="/images/news/c.webp" alt="徐維農醫師" />
-<img src="/images/news/d.webp" alt="吳皓偉醫師" />
+<img src="/images/notice/b.webp" alt="林羿辰醫師" />
+<img src="/images/notice/c.webp" alt="徐維農醫師" />
+<img src="/images/notice/d.webp" alt="吳皓偉醫師" />
     `
   }
 ];
