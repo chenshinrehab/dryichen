@@ -4,6 +4,18 @@ import Link from 'next/link'
 import Image from 'next/image' 
 import { usePathname } from 'next/navigation'
 
+// ✨ 引入所需的 React Icons，只抓取有用到的小圖示，不佔空間
+import { 
+  FaFacebookF, 
+  FaInstagram, 
+  FaYoutube, 
+  FaCalendarCheck, 
+  FaHome, 
+  FaChevronDown, 
+  FaCaretRight 
+} from "react-icons/fa";
+import { SiThreads } from "react-icons/si";
+
 // 定義子選單結構
 type SubItem = {
   name: string;
@@ -32,7 +44,7 @@ export default function Navigation() {
         name: '關於我們', 
         path: '/about',
         subItems: [
-            { name: '最新消息', path: '/about/news' },
+            { name: '最新文章與公告', path: '/about/news' },
             { name: '診所環境', path: '/about/clinic' },
             { name: '成功案例分享', path: '/about/cases' },
             { name: '醫師團隊', path: '/about/doctors' },
@@ -106,33 +118,38 @@ export default function Navigation() {
               </div>
           </Link>
 
-          {/* 右側區塊 */}
+          {/* 右側區塊 - 圖示已改為 React Icons */}
           <div className="flex items-center gap-2 ml-auto z-20">
               <Link 
                 href="/booking"
                 className="sm:hidden flex items-center gap-1 px-3 py-1.5 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full font-bold shadow-md text-sm active:scale-95 transition-transform"
               >
-                 <i className="fa-solid fa-calendar-check"></i> 預約
+                 <FaCalendarCheck size={14} /> 預約
               </Link>
 
               <div className="hidden sm:flex items-center gap-3">
                 <Link href="/" title="回到首頁" 
                   className="w-10 h-10 rounded-full bg-slate-800 text-cyan-400 border border-cyan-400 flex items-center justify-center text-lg hover:bg-slate-700 transition-colors shadow-md">
-                  <i className="fa-solid fa-house"></i>
+                  <FaHome size={18} />
                 </Link>
-                <a href="https://www.facebook.com/DrYiChen" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#1877F2] border border-[#1877F2] text-white flex items-center justify-center text-lg hover:scale-110 transition-transform shadow-md"><i className="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/dryichen/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white flex items-center justify-center text-lg border-none hover:scale-110 transition-transform shadow-md"><i className="fa-brands fa-instagram"></i></a>
-                <a href="https://www.threads.net/@dryichen" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center text-lg border-none hover:scale-110 transition-transform shadow-md"><i className="fa-brands fa-threads"></i></a>
-                <a href="https://youtube.com/@dryichen" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#FF0000] border border-[#FF0000] text-white flex items-center justify-center text-lg border-none hover:scale-110 transition-transform shadow-md"><i className="fa-brands fa-youtube"></i></a>
+                <a href="https://www.facebook.com/DrYiChen" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#1877F2] border border-[#1877F2] text-white flex items-center justify-center text-lg hover:scale-110 transition-transform shadow-md">
+                  <FaFacebookF size={18} />
+                </a>
+                <a href="https://www.instagram.com/dryichen/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white flex items-center justify-center text-lg border-none hover:scale-110 transition-transform shadow-md">
+                  <FaInstagram size={18} />
+                </a>
+                <a href="https://www.threads.net/@dryichen" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center text-lg border-none hover:scale-110 transition-transform shadow-md">
+                  <SiThreads size={18} />
+                </a>
+                <a href="https://youtube.com/@dryichen" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#FF0000] border border-[#FF0000] text-white flex items-center justify-center text-lg border-none hover:scale-110 transition-transform shadow-md">
+                  <FaYoutube size={18} />
+                </a>
               </div>
           </div>
         </div>
 
-        {/* ==========================================
-            🟢 導覽選單
-            ========================================== */}
+        {/* 導覽選單 */}
         <nav className="w-full py-1.5 md:py-2 text-center relative">
-           
            <ul className="flex w-full overflow-x-auto xl:overflow-visible justify-start md:justify-center gap-1 p-0.5 bg-slate-800/30 rounded-none md:rounded-full no-scrollbar px-2 md:px-0">
               
               {navItems.map((item) => (
@@ -154,13 +171,12 @@ export default function Navigation() {
                          
                          {item.subItems && (
                             <span className="hidden md:block ml-1.5">
-                                <i className="fa-solid fa-chevron-down text-xs transition-transform duration-300 group-hover:rotate-180"></i>
+                                <FaChevronDown size={10} className="transition-transform duration-300 group-hover:rotate-180" />
                             </span>
                          )}
                        </Link>
                    </div>
 
-                   {/* 下拉選單：修正重點 - 移除 [總覽] 文字 */}
                    {item.subItems && (
                      <div className="
                         hidden md:block
@@ -175,8 +191,7 @@ export default function Navigation() {
                                     href={sub.path}
                                     className="block px-4 py-3 text-sm text-slate-300 hover:bg-slate-800 hover:text-cyan-400 text-left border-b border-slate-800 last:border-0"
                                 >
-                                    {/* 這裡統一使用小箭頭，看起來更整齊 */}
-                                    <i className="fa-solid fa-caret-right mr-2 text-slate-600 text-xs"></i>
+                                    <FaCaretRight size={10} className="inline-block mr-2 text-slate-600" />
                                     {sub.name}
                                 </Link>
                             ))}
@@ -186,18 +201,18 @@ export default function Navigation() {
                 </li>
               ))}
               
-              {/* 電腦版顯示的預約按鈕 */}
+              {/* 電腦版預約按鈕 */}
               <li className="hidden sm:block shrink-0">
                   <Link 
                     href="/booking" 
                     className={`
-                      px-3.5 py-1.5 md:px-4 md:py-2 rounded-full text-base font-medium transition-all ml-1 block
+                      px-3.5 py-1.5 md:px-4 md:py-2 rounded-full text-base font-medium transition-all ml-1 block flex items-center gap-1.5
                       ${isActive('/booking') 
                         ? 'text-white bg-gradient-to-r from-pink-600 to-rose-600 shadow-[0_0_10px_rgba(236,72,153,0.5)]' 
                         : 'text-white bg-gradient-to-r from-pink-500 to-rose-500 hover:shadow-[0_0_10px_rgba(236,72,153,0.5)]'}
                     `}
                   >
-                    <i className="fa-solid fa-calendar-check mr-1"></i> 預約
+                    <FaCalendarCheck size={16} /> 預約
                   </Link>
               </li>
            </ul>

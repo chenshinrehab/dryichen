@@ -116,40 +116,13 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
-        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+        {/* 1. 保留必要的字體與外部資源預連接 */}
         <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.youtube-nocookie.com" />
         
-        <link 
-          id="font-awesome-css"
-          rel="stylesheet" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-          crossOrigin="anonymous"
-          referrerPolicy="no-referrer"
-          media="print"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                var link = document.getElementById('font-awesome-css');
-                if (link) {
-                  link.addEventListener('load', function() { this.media = 'all'; });
-                }
-              })();
-            `,
-          }}
-        />
+        {/* 2. ✨ 已移除 FontAwesome CSS 與動態加載 Script，改用 react-icons SVG 模式提升速度 */}
 
-        <noscript>
-          <link 
-            rel="stylesheet" 
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-          />
-        </noscript>
-        
         <style>{`
           img { height: auto; }
           h1 { font-size: 2.25rem; }

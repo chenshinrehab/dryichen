@@ -4,6 +4,19 @@ import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { diseaseCategories } from '@/data/diseases';
 
+// ✨ 引入所需的 React Icons，確保 AI 分析介面圖示穩定顯示
+import { 
+  FaRobot, 
+  FaSpinner, 
+  FaMagnifyingGlass, 
+  FaPaperPlane, 
+  FaXmark, 
+  FaClipboardCheck, 
+  FaFileMedical, 
+  FaArrowRight, 
+  FaCircleExclamation 
+} from "react-icons/fa6"; // 使用 fa6 版本更接近您原本的樣式
+
 // 定義回傳資料的型別
 interface AIResult {
   recommendedIds: string[];
@@ -29,11 +42,10 @@ export default function SymptomChecker() {
         const cachedData = sessionStorage.getItem(STORAGE_KEY);
         if (cachedData) {
             const parsed = JSON.parse(cachedData);
-            // 只有當暫存裡面真的有結果時，才恢復
             if (parsed.result && (parsed.result.recommendedIds.length > 0 || (parsed.result.externalSuggestions?.length || 0) > 0)) {
                 setInput(parsed.input);
                 setResult(parsed.result);
-                setIsExpanded(true); // 自動展開看結果
+                setIsExpanded(true); 
             }
         }
     } catch (e) {
@@ -69,9 +81,6 @@ export default function SymptomChecker() {
       
       setResult(data);
 
-      // ============================================================
-      // 💾 新增功能 2：成功拿到結果後，存入 SessionStorage
-      // ============================================================
       sessionStorage.setItem(STORAGE_KEY, JSON.stringify({
           input: input,
           result: data
@@ -84,20 +93,14 @@ export default function SymptomChecker() {
     }
   };
 
-  // 清除結果的函式
   const handleClear = (e?: React.MouseEvent) => {
-    if (e) e.stopPropagation(); // 防止觸發 form onClick
+    if (e) e.stopPropagation(); 
     setResult(null); 
     setInput(''); 
     setIsExpanded(false);
-    
-    // ============================================================
-    // 💾 新增功能 3：使用者手動關閉時，清除暫存
-    // ============================================================
     sessionStorage.removeItem(STORAGE_KEY);
   };
 
-  // 1. 處理「有連結」的內部文章
   const getRecommendedItems = () => {
     if (!result?.recommendedIds) return [];
     const foundItems: any[] = [];
@@ -124,84 +127,83 @@ export default function SymptomChecker() {
   return (
     <div className="w-full max-w-3xl mx-auto transition-all duration-300">
       
-  {/* 輸入區塊 */}
-<form 
-  ref={formRef}
-  onClick={() => {
-      setIsExpanded(true);
-      const textarea = formRef.current?.querySelector('textarea');
-      if (textarea) textarea.focus();
-  }}
-  onSubmit={(e) => {
-      e.preventDefault(); 
-      handleManualSubmit();
-  }} 
-  className={`relative group bg-slate-800 border-2 transition-all duration-300 ease-in-out
-    ${isExpanded 
-      ? 'rounded-2xl border-cyan-400 shadow-[0_0_25px_rgba(34,211,238,0.3)]' 
-      : 'rounded-full border-cyan-400/70 shadow-[0_0_10px_rgba(34,211,238,0.2)] hover:border-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]'
-    }`}
->
-  {/* 修改處：移除了 opacity 的判斷，並加入了 drop-shadow 讓機器人更亮一點 */}
-  <div className="absolute left-4 top-4 text-cyan-400 pointer-events-none z-10 drop-shadow-[0_0_5px_rgba(34,211,238,0.8)]">
-    <i className={`fa-solid ${loading ? 'fa-spinner fa-spin' : 'fa-robot'} text-xl`}></i>
-  </div>
-
-  <textarea
-    value={input}
-    onFocus={() => setIsExpanded(true)}
-    onChange={(e) => setInput(e.target.value)}
-    onKeyDown={(e) => {
-      if (e.key === 'Enter' && !e.shiftKey && !e.nativeEvent.isComposing) {
-        e.preventDefault();
-        if (!loading && input.trim()) {
-          handleManualSubmit();
-        }
-      }
-    }}
-    placeholder={isExpanded ? "請清楚輸入症狀（例如：膝蓋內側疼痛，跑步時候加劇）..." : "AI 症狀分析 (點擊輸入)"}
-    
-    className={`w-full bg-transparent text-slate-200 placeholder-slate-400 focus:outline-none resize-none py-4 pl-12 leading-relaxed transition-all duration-300 relative z-0
-      ${isExpanded 
-          ? 'h-40 pr-4 pb-14 overflow-y-auto whitespace-pre-wrap'
-          : 'h-14 pr-12 overflow-hidden whitespace-nowrap'
-      }`}
-  />
-
-  <div className={`absolute right-2 z-20 transition-all duration-300 
-      ${isExpanded ? 'bottom-3 right-3' : 'top-2'}`}
-  >
-      <button
-      type="button" 
-      onClick={(e) => {
-          e.stopPropagation(); 
-          handleManualSubmit(); 
-      }}
-      disabled={loading || !input.trim()}
-      className={`bg-cyan-600 hover:bg-cyan-500 text-white font-medium transition-all flex items-center justify-center shadow-lg
-          ${isExpanded ? 'px-6 py-2 rounded-lg text-sm' : 'w-10 h-10 rounded-full'}`}
+      {/* 輸入區塊 */}
+      <form 
+        ref={formRef}
+        onClick={() => {
+            setIsExpanded(true);
+            const textarea = formRef.current?.querySelector('textarea');
+            if (textarea) textarea.focus();
+        }}
+        onSubmit={(e) => {
+            e.preventDefault(); 
+            handleManualSubmit();
+        }} 
+        className={`relative group bg-slate-800 border-2 transition-all duration-300 ease-in-out
+          ${isExpanded 
+            ? 'rounded-2xl border-cyan-400 shadow-[0_0_25px_rgba(34,211,238,0.3)]' 
+            : 'rounded-full border-cyan-400/70 shadow-[0_0_10px_rgba(34,211,238,0.2)] hover:border-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]'
+          }`}
       >
-      {isExpanded ? (
-        <>分析 <i className="fa-solid fa-paper-plane ml-2"></i></>
-      ) : (
-        <i className="fa-solid fa-magnifying-glass"></i>
-      )}
-      </button>
-  </div>
-</form>
+        <div className="absolute left-4 top-4 text-cyan-400 pointer-events-none z-10 drop-shadow-[0_0_5px_rgba(34,211,238,0.8)]">
+          {loading ? <FaSpinner className="animate-spin text-xl" /> : <FaRobot className="text-xl" />}
+        </div>
+
+        <textarea
+          value={input}
+          onFocus={() => setIsExpanded(true)}
+          onChange={(e) => setInput(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' && !e.shiftKey && !e.nativeEvent.isComposing) {
+              e.preventDefault();
+              if (!loading && input.trim()) {
+                handleManualSubmit();
+              }
+            }
+          }}
+          placeholder={isExpanded ? "請清楚輸入症狀（例如：膝蓋內側疼痛，跑步時候加劇）..." : "AI 症狀分析 (點擊輸入)"}
+          
+          className={`w-full bg-transparent text-slate-200 placeholder-slate-400 focus:outline-none resize-none py-4 pl-12 leading-relaxed transition-all duration-300 relative z-0
+            ${isExpanded 
+                ? 'h-40 pr-4 pb-14 overflow-y-auto whitespace-pre-wrap'
+                : 'h-14 pr-12 overflow-hidden whitespace-nowrap'
+            }`}
+        />
+
+        <div className={`absolute right-2 z-20 transition-all duration-300 
+            ${isExpanded ? 'bottom-3 right-3' : 'top-2'}`}
+        >
+            <button
+            type="button" 
+            onClick={(e) => {
+                e.stopPropagation(); 
+                handleManualSubmit(); 
+            }}
+            disabled={loading || !input.trim()}
+            className={`bg-cyan-600 hover:bg-cyan-500 text-white font-medium transition-all flex items-center justify-center shadow-lg
+                ${isExpanded ? 'px-6 py-2 rounded-lg text-sm' : 'w-10 h-10 rounded-full'}`}
+            >
+            {isExpanded ? (
+              <>分析 <FaPaperPlane className="ml-2" /></>
+            ) : (
+              <FaMagnifyingGlass />
+            )}
+            </button>
+        </div>
+      </form>
+
       {/* 結果顯示區 */}
       {result && (
         <div className="mt-6 animate-in fade-in slide-in-from-top-4 duration-500">
           <div className="bg-slate-800/80 border border-slate-700 rounded-xl p-6 relative">
-             {/* 這裡改用 handleClear 來清除暫存 */}
-             <button onClick={handleClear} className="absolute top-4 right-4 text-slate-500 hover:text-white">
-                <i className="fa-solid fa-xmark"></i>
+             <button onClick={handleClear} className="absolute top-4 right-4 text-slate-500 hover:text-white transition-colors">
+                <FaXmark className="text-xl" />
              </button>
 
             <div className="mb-6 border-b border-slate-700/50 pb-4">
                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-3">
                     <h3 className="text-cyan-400 font-bold text-xl flex items-center shrink-0">
-                        <i className="fa-solid fa-clipboard-check mr-2"></i>
+                        <FaClipboardCheck className="mr-2" />
                         AI初步診斷
                     </h3>
                     <div className="text-slate-400 text-sm font-normal bg-slate-900/40 px-3 py-1.5 rounded-lg border border-slate-700/50 inline-block w-fit">
@@ -221,13 +223,13 @@ export default function SymptomChecker() {
                     >
                         <div className="flex-grow min-w-0 mr-4">
                             <h4 className="text-slate-200 text-xl font-bold truncate group-hover:text-cyan-400 flex items-center">
-                              <i className="fa-solid fa-file-medical text-slate-500 mr-3 group-hover:text-cyan-400 text-lg"></i>
+                              <FaFileMedical className="text-slate-500 mr-3 group-hover:text-cyan-400 text-lg" />
                               {item.title}
                             </h4>
                         </div>
                         <div className="flex-shrink-0">
                             <span className="text-sm font-medium text-cyan-500 flex items-center bg-cyan-500/10 px-4 py-2 rounded-lg group-hover:bg-cyan-500 group-hover:text-white transition-colors">
-                              閱讀全文 <i className="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                              閱讀全文 <FaArrowRight className="ml-2 text-xs" />
                             </span>
                         </div>
                     </Link>
@@ -240,7 +242,7 @@ export default function SymptomChecker() {
                         >
                             <div className="flex-grow min-w-0">
                                 <h4 className="text-slate-300 text-xl font-bold flex items-center">
-                                  <i className="fa-solid fa-circle-exclamation text-amber-500/80 mr-3 text-lg"></i>
+                                  <FaCircleExclamation className="text-amber-500/80 mr-3 text-lg" />
                                   {diseaseName}
                                   <span className="ml-3 text-xs text-slate-500 font-normal bg-slate-700/50 px-2 py-1 rounded">
                                     {diseaseName.includes('忙線') ? '請稍後' : '本站尚無文章'}

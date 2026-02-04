@@ -2,6 +2,15 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+// ✨ 引入所需的 React Icons，確保分享按鈕圖示不閃爍、不消失
+import { 
+  FaLine, 
+  FaFacebookMessenger, 
+  FaFacebook, 
+  FaCheck, 
+  FaLink, 
+  FaCalendarCheck 
+} from "react-icons/fa";
 
 interface ShareButtonsProps {
   url?: string 
@@ -13,7 +22,7 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
   const [shareUrl, setShareUrl] = useState('')
 
   // ⚠️ 請在此設定您的正式網址 (結尾不要加斜線)
-  const SITE_DOMAIN = 'https://www.dryichen.com.tw/'
+  const SITE_DOMAIN = 'https://www.dryichen.com.tw'
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -78,7 +87,7 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
         onClick={handleLineShare}
         className="w-full sm:w-auto px-6 py-3 bg-[#06C755] hover:bg-[#05b34c] text-white rounded-full transition-all font-bold shadow-lg hover:shadow-[#06C755]/30 flex items-center justify-center gap-2 transform hover:-translate-y-1"
       >
-        <i className="fa-brands fa-line text-2xl"></i>
+        <FaLine size={24} />
         分享到 LINE
       </button>
 
@@ -87,7 +96,7 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
         onClick={handleMessengerShare}
         className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-[#00B2FF] to-[#006AFF] hover:from-[#0099FF] hover:to-[#0055EE] text-white rounded-full transition-all font-bold shadow-lg hover:shadow-[#0099FF]/30 flex items-center justify-center gap-2 transform hover:-translate-y-1"
       >
-        <i className="fa-brands fa-facebook-messenger text-2xl"></i>
+        <FaFacebookMessenger size={24} />
         傳送給朋友
       </button>
 
@@ -96,7 +105,7 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
         onClick={handleFBShare}
         className="w-full sm:w-auto px-6 py-3 bg-[#1877F2] hover:bg-[#166fe5] text-white rounded-full transition-all font-bold shadow-lg hover:shadow-[#1877F2]/30 flex items-center justify-center gap-2 transform hover:-translate-y-1"
       >
-        <i className="fa-brands fa-facebook text-2xl"></i>
+        <FaFacebook size={24} />
         分享到 FB
       </button>
 
@@ -111,21 +120,21 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
       >
         {isCopied ? (
           <>
-            <i className="fa-solid fa-check text-xl"></i> 已複製
+            <FaCheck size={20} /> 已複製
           </>
         ) : (
           <>
-            <i className="fa-solid fa-link text-xl"></i> 複製網址
+            <FaLink size={20} /> 複製網址
           </>
         )}
       </button>
 
-      {/* 🟢 新增：預約掛號按鈕 (已套用您指定的粉紅/玫瑰色系) */}
+      {/* 預約掛號按鈕 */}
       <a
         href="https://www.dryichen.com.tw/booking"
         className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white rounded-full transition-all font-bold shadow-lg hover:shadow-[0_0_15px_rgba(236,72,153,0.6)] flex items-center justify-center gap-2 transform hover:-translate-y-1 no-underline"
       >
-        <i className="fa-solid fa-calendar-check text-xl"></i>
+        <FaCalendarCheck size={20} />
         預約掛號
       </a>
       

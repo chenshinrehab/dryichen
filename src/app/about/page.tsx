@@ -2,8 +2,16 @@ import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
-// ✨ 1. 引入動畫組件
 import ScrollAnimation from '@/components/ScrollAnimation'
+
+// ✨ 引入所需的 React Icons，確保顯示穩定且極速
+import { 
+  FaNewspaper, 
+  FaHospital, 
+  FaUserMd, 
+  FaAddressCard, 
+  FaArrowRight 
+} from "react-icons/fa";
 
 // 定義標準網域與路徑
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
@@ -32,15 +40,16 @@ export const metadata: Metadata = {
   }
 }
 
+// 修改資料結構，將 icon 儲存為組件引用而非字串類名
 const aboutSections = [
   {
     id: 'news',
-    title: '最新內容',
+    title: '最新文章與公告',
     subtitle: 'Latest News',
-    description: '掌握診所最新公告、門診異動、以及最新的復健醫學新知與衛教文章。',
+    description: '掌握最新的復健醫學新知與衛教文章雨診所最新公告、門診異動。',
     href: '/about/news',
     image: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=800',
-    icon: 'fa-solid fa-newspaper'
+    Icon: FaNewspaper
   },
   {
     id: 'clinic',
@@ -49,16 +58,16 @@ const aboutSections = [
     description: '舒適寬敞的復健空間，配備醫學中心等級的檢查與治療設備，提供高品質的醫療服務。',
     href: '/about/clinic',
     image: '/images/about/b.webp',
-    icon: 'fa-solid fa-hospital'
+    Icon: FaHospital
   },
   {
-    id: 'clinic',
+    id: 'cases',
     title: '成功案例分享',
     subtitle: 'Case Sharing',
     description: '疼痛不是生活的一部分，康復才是。在這裡，我們分享患者透過精準診斷與再生醫學重拾生活品質的真實故事。',
     href: '/about/cases',
     image: '/images/about/e.webp',
-    icon: 'fa-solid fa-hospital'
+    Icon: FaHospital
   },
   {
     id: 'doctors',
@@ -67,14 +76,11 @@ const aboutSections = [
     description: '由台大訓練醫師團隊親自看診，結合骨科與復健科專業，提供全方位的疼痛治療方案。',
     href: '/about/doctors',
     image: '/images/about/a.webp',
-    icon: 'fa-solid fa-user-doctor'
+    Icon: FaUserMd
   }
 ]
 
 export default function AboutPage() {
-  // ==========================================
-  // 2. Schema: 麵包屑 (完整保留)
-  // ==========================================
   const jsonLdBreadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -84,9 +90,6 @@ export default function AboutPage() {
     ],
   }
 
-  // ==========================================
-  // 3. Schema: AboutPage + MedicalClinic (完整保留)
-  // ==========================================
   const aboutSchema = {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
@@ -121,28 +124,26 @@ export default function AboutPage() {
       <JsonLd data={jsonLdBreadcrumb} />
       <JsonLd data={aboutSchema} />
       
-      {/* ✨ 2. 放入動畫觸發器 */}
       <ScrollAnimation />
 
       <div className="min-h-screen bg-slate-900 text-slate-300">
         <main className="max-w-5xl mx-auto px-4 pt-0 -mt-10 md:-mt-12 pb-12">
           
-          {/* ✨ 3. 標題區塊：依照範本同步進場 */}
+          {/* 標題區塊：圖示已改為 React Icons */}
           <div className="flex items-center justify-center gap-4 mb-10 animate-on-scroll">
-  <span className="flex items-center justify-center w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-lg border border-cyan-500/30">
-    <i className="fa-solid fa-address-card text-xl"></i>
-  </span>
-  
-  <div className="flex flex-col justify-center">
-    {/* 將 translate-y 從 [3px] 改為 [5px] */}
-    <h1 className="text-3xl font-bold font-sans text-white leading-none flex items-baseline transform translate-y-[7px]">
-      關於我們 
-      <span className="text-slate-500 text-lg font-normal ml-3 leading-none">About Us</span>
-    </h1>
-  </div>
-</div>
+            <span className="flex items-center justify-center w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-lg border border-cyan-500/30">
+              <FaAddressCard size={24} />
+            </span>
+            
+            <div className="flex flex-col justify-center">
+              <h1 className="text-3xl font-bold font-sans text-white leading-none flex items-baseline transform translate-y-[7px]">
+                關於我們 
+                <span className="text-slate-500 text-lg font-normal ml-3 leading-none">About Us</span>
+              </h1>
+            </div>
+          </div>
 
-          {/* ✨ 4. 卡片連結區塊：參考範本由外層 grid 統一控制進場 */}
+          {/* 卡片連結區塊 */}
           <div className="grid grid-cols-1 gap-8 mb-16 animate-on-scroll delay-100">
             {aboutSections.map((item) => (
               <Link 
@@ -150,7 +151,7 @@ export default function AboutPage() {
                 href={item.href}
                 className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
               >
-                {/* 圖片區塊 (完整保留) */}
+                {/* 圖片區塊 */}
                 <div className="w-full md:w-2/5 relative h-48 md:h-full overflow-hidden">
                   <img 
                     src={item.image} 
@@ -160,14 +161,15 @@ export default function AboutPage() {
                   <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/90 to-transparent"></div>
                 </div>
                 
-                {/* 文字內容區塊 (完整保留) */}
+                {/* 文字內容區塊 */}
                 <div className="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center relative">
-                   <i className={`${item.icon} absolute right-4 bottom-4 text-8xl text-slate-800/50 -rotate-12 group-hover:text-cyan-900/30 transition-colors duration-500 pointer-events-none`}></i>
+                   {/* 背景大圖示：改用組件形式 */}
+                   <item.Icon className="absolute right-4 bottom-4 text-8xl text-slate-800/50 -rotate-12 group-hover:text-cyan-900/30 transition-colors duration-500 pointer-events-none" />
                    
                    <div className="relative z-10">
                       <h2 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors flex items-center">
                         {item.title}
-                        <i className="fa-solid fa-arrow-right opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-2 transition-all ml-3 text-lg text-cyan-500"></i>
+                        <FaArrowRight className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-2 transition-all ml-3 text-lg text-cyan-500" />
                       </h2>
                       <h3 className="text-sm font-tech text-cyan-500/80 mb-4 tracking-widest uppercase font-semibold">{item.subtitle}</h3>
                       <p className="text-slate-300 text-lg leading-relaxed">{item.description}</p>
@@ -177,7 +179,7 @@ export default function AboutPage() {
             ))}
           </div>
 
-          {/* ✨ 5. SEO 導言區：依照範本延遲 delay-300 進場 */}
+          {/* SEO 導言區 */}
           <div className="max-w-4xl mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300 animate-on-scroll delay-300">
             <details className="group border-l-2 border-slate-700 pl-4">
               <summary className="list-none [&::-webkit-details-marker]:hidden text-sm md:text-base text-slate-500 leading-relaxed outline-none cursor-pointer select-none text-left hover:text-cyan-400 transition-colors">
@@ -197,7 +199,7 @@ export default function AboutPage() {
                       診所位置交通極其便利，位於<strong className="text-cyan-400 font-normal">光復路</strong>與<strong className="text-cyan-400 font-normal">關新路</strong>交界處附近。無論您是住在關新社區的居民，或是下班後從竹科過來的工程師，甚至是剛逛完 <strong className="text-cyan-400 font-normal">Costco (好市多)</strong> 的民眾，都能輕鬆抵達。
                   </p>
                   <p>
-                      為了解決新竹市區停車困難的問題，我們特別規劃了<strong className="text-cyan-400 font-normal">專屬停車位</strong>，讓您就醫復健不再為了找車位而煩惱。我們提供骨科疼痛、運動傷害、增生注射、高階儀器、兒童早療等全方位治療。
+                      為了解決新竹市區停車困難的問題，我們特別規劃了<strong className="text-cyan-400 font-normal">專屬停車位</strong>，讓您就醫復健不再為了找車位而煩惱。我們提供骨科疼痛、運動傷害、增生療法、兒童早療等全方位治療。
                   </p>
               </div>
             </details>

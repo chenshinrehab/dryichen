@@ -2,8 +2,19 @@ import React from 'react'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import ClinicHoursModal from '@/components/ClinicHoursModal'
-// ✨ 1. 引入動畫組件
 import ScrollAnimation from '@/components/ScrollAnimation'
+
+// ✨ 引入所需的 React Icons，確保掛號流程圖示穩定且極速載入
+import { 
+  FaCalendarCheck, 
+  FaGlobe, 
+  FaMousePointer, 
+  FaLine, 
+  FaApple, 
+  FaAndroid, 
+  FaUserPlus, 
+  FaDownload 
+} from "react-icons/fa";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
 const PAGE_PATH = '/booking'
@@ -90,17 +101,16 @@ export default function BookingPage() {
       <JsonLd data={jsonLdBreadcrumb} />
       <JsonLd data={jsonLdBooking} />
       
-      {/* ✨ 2. 放置動畫邏輯 */}
       <ScrollAnimation />
 
       <div className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 px-4 bg-slate-900 min-h-screen">
         <section id="booking" className="max-w-5xl mx-auto">
           
-          {/* ✨ 3. 標題區動畫 - 參考範本：同步進場 */}
+          {/* 標題區動畫 */}
           <div className="flex flex-col items-center gap-4 mb-8 text-center animate-on-scroll">
             <div className="flex items-center gap-3">
-                <span className="bg-pink-500/20 text-pink-400 p-3 rounded-lg border border-pink-500/30">
-                  <i className="fa-solid fa-calendar-check text-xl"></i>
+                <span className="bg-pink-500/20 text-pink-400 p-3 rounded-lg border border-pink-500/30 flex items-center justify-center">
+                  <FaCalendarCheck size={20} />
                 </span>
                 <h1 className="text-3xl md:text-4xl font-bold font-sans text-white">
                   馬上預約 <span className="text-slate-500 text-lg font-normal ml-2">Book Now</span>
@@ -116,7 +126,7 @@ export default function BookingPage() {
             </div>
           </div>
 
-          {/* ✨ 4. 網路掛號區塊 - 參考範本：delay-100 */}
+          {/* 網路掛號區塊 */}
           <div className="mb-10 w-full transform transition-all animate-on-scroll delay-100">
              <div className="bg-gradient-to-br from-slate-800 to-slate-900 border border-cyan-500/50 rounded-2xl p-6 md:p-8 relative overflow-hidden shadow-[0_0_30px_rgba(34,211,238,0.15)] group hover:-translate-y-1 transition-all duration-300">
                 
@@ -125,7 +135,7 @@ export default function BookingPage() {
                 <div className="flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
                    <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
                       <div className="w-20 h-20 bg-cyan-500/10 rounded-full flex items-center justify-center shrink-0 border border-cyan-500/20 shadow-[0_0_15px_rgba(34,211,238,0.2)]">
-                         <i className="fa-solid fa-globe text-4xl text-cyan-400"></i>
+                         <FaGlobe size={32} className="text-cyan-400" />
                       </div>
                       <div>
                          <h3 className="text-2xl font-bold text-white mb-2 flex items-center justify-center md:justify-start gap-3">
@@ -143,7 +153,7 @@ export default function BookingPage() {
                      rel="noopener noreferrer"
                      className="whitespace-nowrap px-8 py-4 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white text-lg rounded-full font-bold shadow-lg hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all flex items-center gap-2 group-hover:scale-105"
                    >
-                     <i className="fa-solid fa-arrow-pointer animate-pulse"></i> 
+                     <FaMousePointer className="animate-pulse" /> 
                      立即前往預約
                    </a>
                 </div>
@@ -151,13 +161,13 @@ export default function BookingPage() {
           </div>
 
 
-          {/* ✨ 5. APP 與 Line 列表 Grid - 參考範本：delay-200 整組同步進場 */}
+          {/* APP 與 Line 列表 Grid */}
           <div className="grid md:grid-cols-3 gap-8 animate-on-scroll delay-200">
             
             {/* Line Block */}
             <div className="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl p-8 text-center hover:border-green-400/50 hover:shadow-[0_0_20px_rgba(74,222,128,0.2)] transition-all duration-300 group flex flex-col items-center relative overflow-hidden">
               <div className="w-20 h-20 bg-green-400/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <i className="fa-brands fa-line text-4xl text-green-400"></i>
+                <FaLine size={40} className="text-green-400" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Line 官方帳號</h3>
               <p className="text-slate-400 text-sm mb-6">加入好友，一鍵預約</p>
@@ -174,16 +184,16 @@ export default function BookingPage() {
                 href="https://lin.ee/FHj3mIs" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-full py-3 bg-green-500 hover:bg-green-400 text-white rounded-xl transition-colors font-bold shadow-lg"
+                className="w-full py-3 bg-green-500 hover:bg-green-400 text-white rounded-xl transition-colors font-bold shadow-lg flex items-center justify-center gap-2"
               >
-                <i className="fa-solid fa-user-plus mr-2"></i> 加入好友
+                <FaUserPlus size={18} /> 加入好友
               </a>
             </div>
 
             {/* iOS Block */}
             <div className="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl p-8 text-center hover:border-blue-500/50 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)] transition-all duration-300 group flex flex-col items-center">
               <div className="w-20 h-20 bg-blue-500/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <i className="fa-brands fa-apple text-4xl text-blue-500"></i>
+                <FaApple size={40} className="text-blue-500" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">iOS App</h3>
               <p className="text-slate-400 text-sm mb-6">iPhone 用戶專用</p>
@@ -200,16 +210,16 @@ export default function BookingPage() {
                 href="https://apple.co/2vZfRsH" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-full py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-xl transition-colors font-bold shadow-lg"
+                className="w-full py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-xl transition-colors font-bold shadow-lg flex items-center justify-center gap-2"
               >
-                <i className="fa-solid fa-download mr-2"></i> 點擊下載
+                <FaDownload size={16} /> 點擊下載
               </a>
             </div>
 
             {/* Android Block */}
             <div className="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl p-8 text-center hover:border-green-500/50 hover:shadow-[0_0_20px_rgba(34,197,94,0.2)] transition-all duration-300 group flex flex-col items-center">
               <div className="w-20 h-20 bg-green-500/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <i className="fa-brands fa-android text-4xl text-green-500"></i>
+                <FaAndroid size={40} className="text-green-500" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Android App</h3>
               <p className="text-slate-400 text-sm mb-6">安卓手機用戶專用</p>
@@ -226,9 +236,9 @@ export default function BookingPage() {
                 href="http://bit.ly/2Q8FdeK" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-full py-3 bg-green-600 hover:bg-green-500 text-white rounded-xl transition-colors font-bold shadow-lg"
+                className="w-full py-3 bg-green-600 hover:bg-green-500 text-white rounded-xl transition-colors font-bold shadow-lg flex items-center justify-center gap-2"
               >
-                <i className="fa-solid fa-download mr-2"></i> 點擊下載
+                <FaDownload size={16} /> 點擊下載
               </a>
             </div>
 

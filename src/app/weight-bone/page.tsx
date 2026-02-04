@@ -3,8 +3,17 @@ import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { weightLossPrograms } from '@/data/weightLoss'
 import WeightLossTools from '@/components/WeightLossTools'
-// ✨ 1. 引入動畫組件
 import ScrollAnimation from '@/components/ScrollAnimation'
+
+// ✨ 引入所需的 React Icons，確保顯示穩定且極速
+import { 
+  FaWeight, 
+  FaFileMedical, 
+  FaArrowRight, 
+  FaCheck, 
+  FaUserMd, 
+  FaExclamationTriangle 
+} from "react-icons/fa";
 
 // 定義常數，確保網址一致
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
@@ -70,7 +79,6 @@ export default function WeightLossPage() {
     <>
       <JsonLd data={weightBoneSchema} />
       
-      {/* ✨ 2. 放入動畫組件 */}
       <ScrollAnimation />
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
@@ -78,37 +86,34 @@ export default function WeightLossPage() {
         <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 relative z-10">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            {/* ✨ 3. 標題與工具區塊 - 參考範本加入 relative z-50 解決選單擋住問題 */}
+            {/* 標題與工具區塊 */}
             <div className="text-center mb-5 max-w-4xl mx-auto animate-on-scroll relative z-50">
-    <div className="flex items-center justify-center gap-4 mb-4">
-        {/* 圖示容器：固定寬高並置中 */}
-        <span className="flex items-center justify-center w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-lg border border-cyan-500/30">
-            <i className="fa-solid fa-weight-scale text-xl"></i>
-        </span>
+              <div className="flex items-center justify-center gap-4 mb-4">
+                  <span className="flex items-center justify-center w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-lg border border-cyan-500/30">
+                      <FaWeight size={20} />
+                  </span>
 
-        {/* 文字容器：套用同樣的垂直位移校正 */}
-        <div className="flex flex-col justify-center">
-            <h1 className="text-3xl font-bold font-sans text-white leading-none transform translate-y-[7px]">
-                減重與骨齡
-            </h1>
-        </div>
-    </div>
+                  <div className="flex flex-col justify-center">
+                      <h1 className="text-3xl font-bold font-sans text-white leading-none transform translate-y-[7px]">
+                          減重與骨齡
+                      </h1>
+                  </div>
+              </div>
 
-    <div className="relative z-20">
-        <WeightLossTools />
-    </div>
-</div>
+              <div className="relative z-20">
+                  <WeightLossTools />
+              </div>
+            </div>
 
-            {/* ✨ 4. 卡片列表 - 依照範本修改為「容器一次進場」 */}
+            {/* 卡片列表 */}
             <div className="grid grid-cols-1 gap-8 mb-16 animate-on-scroll delay-100 relative z-10">
               {weightLossPrograms.map((program) => (
                 <Link
                   key={program.slug}
                   href={`/weight-bone/${program.slug}`}
-                  // 移除單張卡片的動畫與延遲 class
                   className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] hover:-translate-y-1 transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
                 >
-                  {/* 圖片區塊 (2/5) - 完整保留 */}
+                  {/* 圖片區塊 */}
                   <div className="w-full md:w-2/5 relative h-48 md:h-full overflow-hidden">
                     <img 
                       src={program.image} 
@@ -118,14 +123,14 @@ export default function WeightLossPage() {
                     <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/90 to-transparent"></div>
                   </div>
 
-                  {/* 文字內容區塊 (3/5) - 完整保留 */}
+                  {/* 文字內容區塊 */}
                   <div className="w-full md:w-3/5 p-5 md:p-6 flex flex-col justify-center relative">
-                    <i className="fa-solid fa-file-medical absolute right-4 bottom-4 text-8xl text-slate-800/50 -rotate-12 group-hover:text-cyan-900/30 transition-colors duration-500 pointer-events-none"></i>
+                    <FaFileMedical className="absolute right-4 bottom-4 text-8xl text-slate-800/50 -rotate-12 group-hover:text-cyan-900/30 transition-colors duration-500 pointer-events-none" />
                     
                     <div className="relative z-10 h-full flex flex-col justify-center">
                       <h2 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors flex items-center">
                         {program.title}
-                        <i className="fa-solid fa-arrow-right opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all ml-3 text-lg text-cyan-500"></i>
+                        <FaArrowRight className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all ml-3 text-lg text-cyan-500" />
                       </h2>
 
                       <p className="text-slate-300 text-lg mb-4 line-clamp-2">
@@ -136,8 +141,8 @@ export default function WeightLossPage() {
                         <div className="mt-auto">
                           <div className="flex flex-wrap gap-2">
                              {program.features.slice(0, 3).map((feature, idx) => (
-                               <span key={idx} className="text-sm bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded border border-cyan-500/20">
-                                  <i className="fa-solid fa-check mr-1 text-xs"></i>{feature}
+                               <span key={idx} className="text-sm bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded border border-cyan-500/20 flex items-center">
+                                  <FaCheck className="mr-1 text-[10px]" />{feature}
                                </span>
                              ))}
                              {program.features.length > 3 && (
@@ -152,14 +157,14 @@ export default function WeightLossPage() {
               ))}
             </div>
 
-            {/* ✨ 5. 醫師治療理念區塊 - 範本延遲 delay-200 */}
+            {/* 醫師治療理念區塊 */}
             <div className="bg-slate-800/80 rounded-2xl p-8 border border-slate-700 relative overflow-hidden animate-on-scroll delay-200">
                 <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>
                 
                 <div className="relative z-10 flex flex-col md:flex-row gap-8 items-start">
                     <div className="flex-shrink-0">
                         <div className="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center border-2 border-cyan-500/50">
-                             <i className="fa-solid fa-user-doctor text-3xl text-cyan-400"></i>
+                             <FaUserMd className="text-3xl text-cyan-400" />
                         </div>
                     </div>
                     
@@ -177,7 +182,7 @@ export default function WeightLossPage() {
                         </div>
                         
                         <div className="mt-6 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-lg flex gap-3">
-                            <i className="fa-solid fa-triangle-exclamation text-yellow-500 mt-1"></i>
+                            <FaExclamationTriangle className="text-yellow-500 mt-1 shrink-0" />
                             <p className="text-sm text-yellow-200/80">
                                 <strong>特別提醒：</strong>所有醫療行為皆有個別差異。請親自蒞臨診所，由醫師進行完整評估。
                             </p>
@@ -186,7 +191,7 @@ export default function WeightLossPage() {
                 </div>
             </div>
 
-            {/* ✨ 6. SEO 導言區 - 範本延遲 delay-300 */}
+            {/* SEO 導言區 */}
             <div className="max-w-4xl mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300 mt-12 px-4 animate-on-scroll delay-300">
               <details className="group border-l-2 border-slate-700 pl-4">
                 <summary className="list-none [&::-webkit-details-marker]:hidden text-sm md:text-base text-slate-500 leading-relaxed outline-none cursor-pointer select-none text-left hover:text-cyan-400 transition-colors">

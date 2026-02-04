@@ -3,8 +3,15 @@ import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { diseaseCategories } from '@/data/diseases'
 import SymptomChecker from '@/components/SymptomChecker'
-// ✨ 1. 引入動畫組件
 import ScrollAnimation from '@/components/ScrollAnimation'
+
+// ✨ 引入所需的 React Icons，確保顯示穩定且極速
+import { 
+  FaBookMedical, 
+  FaArrowRight, 
+  FaChartBar, 
+  FaInfoCircle 
+} from "react-icons/fa";
 
 // 定義標準網域與路徑
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
@@ -80,28 +87,21 @@ export default function DiseasesPage() {
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         
-        {/* 修正 padding (原本的 _pt-8 怪怪的，改為標準 pt-8) */}
         <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 -mt-10 md:-mt-12 pb-12 fade-in">
-          {/* ============================================================
-              ✨ 標題區塊 + AI 搜尋 (加入 animate-on-scroll)
-              ============================================================ */}
-          {/* 1. 外層容器：將 mb-10 改為 mb-5 或 mb-4 (減少整體下方留白) */}
-<div className="text-center mb-5 max-w-4xl mx-auto animate-on-scroll">
-      
-      {/* 2. 標題容器：將 mb-10 改為 mb-4 (減少標題與搜尋框之間的距離) */}
-      <div className="flex items-center justify-center gap-4 mb-4">
-    {/* 圖示容器：確保內容絕對置中 */}
-    <span className="flex items-center justify-center w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-lg border border-cyan-500/30">
-        <i className="fa-solid fa-book-medical text-xl"></i>
-    </span>
+          
+          {/* 標題區塊 + AI 搜尋 */}
+          <div className="text-center mb-5 max-w-4xl mx-auto animate-on-scroll">
+              <div className="flex items-center justify-center gap-4 mb-4">
+                <span className="flex items-center justify-center w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-lg border border-cyan-500/30">
+                    <FaBookMedical size={20} />
+                </span>
 
-    {/* 文字容器：套用統一的視覺校正位移 */}
-    <div className="flex flex-col justify-center">
-        <h1 className="text-3xl font-bold font-sans text-white leading-none transform translate-y-[7px]">
-            常見骨科疾病衛教
-        </h1>
-    </div>
-</div>
+                <div className="flex flex-col justify-center">
+                    <h1 className="text-3xl font-bold font-sans text-white leading-none transform translate-y-[7px]">
+                        常見骨科疾病衛教
+                    </h1>
+                </div>
+              </div>
 
               {/* AI 輸入框 */}
               <div className="relative z-20">
@@ -109,9 +109,7 @@ export default function DiseasesPage() {
               </div>
           </div>
 
-          {/* ============================================================
-              ✨ 卡片列表 Grid (加入 animate-on-scroll + delay-100)
-              ============================================================ */}
+          {/* 卡片列表 Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16 animate-on-scroll delay-100">
             {diseaseCategories.map((category) => (
               <Link
@@ -133,7 +131,7 @@ export default function DiseasesPage() {
                     <div className="absolute bottom-0 left-0 p-5 w-full">
                         <h2 className="text-2xl font-bold text-white group-hover:text-cyan-300 transition-colors drop-shadow-lg flex items-center justify-between">
                             {category.title}
-                            <i className="fa-solid fa-arrow-right -rotate-45 group-hover:rotate-0 text-slate-400 group-hover:text-cyan-400 transition-all duration-300 text-lg opacity-0 group-hover:opacity-100"></i>
+                            <FaArrowRight className="-rotate-45 group-hover:rotate-0 text-slate-400 group-hover:text-cyan-400 transition-all duration-300 text-lg opacity-0 group-hover:opacity-100" />
                         </h2>
                     </div>
                 </div>
@@ -165,22 +163,20 @@ export default function DiseasesPage() {
             ))}
           </div>
 
-          {/* ============================================================
-              ✨ 專業信任區塊 (加入 animate-on-scroll + delay-200)
-              ============================================================ */}
+          {/* 專業信任區塊 */}
           <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 md:p-10 border border-slate-700 relative overflow-hidden shadow-2xl mb-12 animate-on-scroll delay-200">
               <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
               
               <div className="relative z-10 flex flex-col md:flex-row gap-8 items-start">
                   <div className="flex-shrink-0 hidden md:block">
                       <div className="w-16 h-16 rounded-2xl bg-slate-700/50 flex items-center justify-center border border-cyan-500/30 shadow-[0_0_15px_rgba(34,211,238,0.1)]">
-                           <i className="fa-solid fa-magnifying-glass-chart text-3xl text-cyan-400"></i>
+                           <FaChartBar size={28} className="text-cyan-400" />
                       </div>
                   </div>
                   
                   <div className="flex-grow">
                       <div className="flex items-center gap-4 mb-4 md:mb-2">
-                        <i className="fa-solid fa-magnifying-glass-chart text-3xl text-cyan-400 md:hidden"></i>
+                        <FaChartBar size={28} className="text-cyan-400 md:hidden" />
                         <h3 className="text-2xl md:text-3xl font-bold text-white">
                             正確的診斷，是治療的第一步
                         </h3>
@@ -205,26 +201,24 @@ export default function DiseasesPage() {
                              <span className="text-slate-400 text-sm">本文由 林羿辰 醫師 審閱</span>
                           </div>
                           <Link href="/about/doctors" className="text-cyan-400 hover:text-cyan-300 text-sm font-medium flex items-center gap-2 group">
-                             認識我們的醫療團隊 <i className="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                              認識我們的醫療團隊 <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
                           </Link>
                       </div>
                   </div>
               </div>
           </div>
 
-          {/* ============================================================
-              ✨ SEO 導言區 (加入 animate-on-scroll + delay-300)
-              ============================================================ */}
+          {/* SEO 導言區 */}
           <div className="max-w-4xl mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300 animate-on-scroll delay-300">
               <details className="group border-l-2 border-slate-700 pl-4">
                   <summary className="list-none [&::-webkit-details-marker]:hidden text-sm md:text-base text-slate-500 leading-relaxed outline-none cursor-pointer select-none text-left hover:text-cyan-400 transition-colors">
                       <span className="inline-block h-full">
                           <span className="flex items-center gap-2 mb-2">
-                             <i className="fa-solid fa-circle-info text-cyan-500/50"></i>
+                             <FaInfoCircle className="text-cyan-500/50" />
                              <strong className="text-slate-400 font-medium">更多關於骨科復健的衛教資訊</strong>
                           </span>
                           <span className="group-open:hidden">
-                              ... <span className="text-xs text-cyan-500 hover:underline ml-2">展開閱讀</span>
+                             ... <span className="text-xs text-cyan-500 hover:underline ml-2">展開閱讀</span>
                           </span>
                       </span>
                   </summary>

@@ -4,14 +4,24 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import FooterSearch from '@/components/FooterSearch'
-// ✨ 1. 引入跟首頁完全一樣的動畫組件 (確保手機版行為一致)
 import ScrollAnimation from '@/components/ScrollAnimation'
+
+// ✨ 僅載入本頁面有用到的小圖示，達到極速載入 (Tree Shaking)
+import { 
+  FaFacebookF, 
+  FaInstagram, 
+  FaYoutube, 
+  FaPhoneAlt, 
+  FaCalendarCheck 
+} from "react-icons/fa";
+import { SiThreads } from "react-icons/si";
+import { HiLocationMarker } from "react-icons/hi";
 
 export default function Footer() {
   const [visitCount, setVisitCount] = useState<string>('---,---')
 
   // =================================================================
-  // 瀏覽人數計算邏輯 (保持不變)
+  // 瀏覽人數計算邏輯
   // =================================================================
   useEffect(() => {
     const BASE_VIEWS = 125; 
@@ -36,9 +46,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 border-t border-slate-800 pt-10 pb-6 mt-auto">
       
-      {/* ✨ 2. 直接使用 ScrollAnimation 組件
-          這會自動套用首頁那套「手機版也能正常顯示」的邏輯與樣式 
-      */}
+      {/* 載入滾動動畫組件 */}
       <ScrollAnimation />
 
       <div className="container mx-auto px-4">
@@ -51,7 +59,6 @@ export default function Footer() {
                 <span className="text-cyan-400">快速</span>導覽
             </h3>
             
-            {/* ✨ 3. Class 名稱改回 animate-on-scroll (配合首頁組件) */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 px-2 max-w-6xl mx-auto">
                 
                 {/* 1. 關於我們 */}
@@ -131,14 +138,23 @@ export default function Footer() {
             </h3>
             
             <div className="flex gap-3 items-center flex-wrap">
-                <a href="https://www.facebook.com/DrYiChen" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-[#1877F2] text-white flex items-center justify-center text-base hover:scale-110 transition-transform shadow-lg shadow-blue-500/30" title="Facebook"><i className="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/dryichen/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white flex items-center justify-center text-base hover:scale-110 transition-transform shadow-lg shadow-pink-500/30" title="Instagram"><i className="fa-brands fa-instagram"></i></a>
-                <a href="https://www.threads.net/@dryichen" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white text-black flex items-center justify-center text-base hover:scale-110 transition-transform shadow-lg shadow-white/30" title="Threads"><i className="fa-brands fa-threads"></i></a>
-                <a href="https://youtube.com/@dryichen" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-[#FF0000] text-white flex items-center justify-center text-base hover:scale-110 transition-transform shadow-lg shadow-red-500/30" title="YouTube"><i className="fa-brands fa-youtube"></i></a>
+                {/* 使用 React-Icons，取代原本不穩定的 <i> 標籤 */}
+                <a href="https://www.facebook.com/DrYiChen" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-[#1877F2] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-blue-500/30" title="Facebook">
+                  <FaFacebookF size={18} />
+                </a>
+                <a href="https://www.instagram.com/dryichen/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-pink-500/30" title="Instagram">
+                  <FaInstagram size={18} />
+                </a>
+                <a href="https://www.threads.net/@dryichen" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white text-black flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-white/30" title="Threads">
+                  <SiThreads size={18} />
+                </a>
+                <a href="https://youtube.com/@dryichen" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-[#FF0000] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-red-500/30" title="YouTube">
+                  <FaYoutube size={20} />
+                </a>
                 
                 {/* 獨立的預約按鈕 */}
                 <Link href="/booking" className="px-4 py-1.5 rounded-full text-sm font-medium text-white bg-gradient-to-r from-pink-500 to-rose-500 hover:shadow-[0_0_10px_rgba(236,72,153,0.5)] transition-all flex items-center gap-1.5 ml-1">
-                    <i className="fa-solid fa-calendar-check"></i> 馬上預約
+                    <FaCalendarCheck /> 馬上預約
                 </Link>
             </div>
           </div>
@@ -162,16 +178,16 @@ export default function Footer() {
           {/* 3. 右側：診所資訊 */}
           <div className="text-center lg:text-right text-slate-300 space-y-1.5 w-full lg:w-auto text-sm">
             <p className="flex items-center justify-center lg:justify-end gap-2 group cursor-pointer">
-              <i className="fa-solid fa-phone text-cyan-400 group-hover:animate-pulse"></i> 
+              <FaPhoneAlt size={14} className="text-cyan-400 group-hover:animate-pulse" /> 
               <span className="font-mono tracking-wide">(03) 564-7999</span>
             </p>
             <a 
-              href="https://www.google.com/maps/search/?api=1&query=新竹市宸新復健科診所" 
+              href="https://maps.app.goo.gl/YourActualGoogleMapsLink" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="flex items-center justify-center lg:justify-end gap-2 hover:text-cyan-400 transition-colors"
             >
-              <i className="fa-solid fa-location-dot text-cyan-400"></i>
+              <HiLocationMarker size={18} className="text-cyan-400" />
               <span>300新竹市東區光復路一段371號B1</span>
             </a>
 
