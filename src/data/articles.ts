@@ -80,6 +80,47 @@ export const articlesData: NewsPost[] = [
         <img src="/images/news/article/boneage/4.webp" alt="兒童長高全攻略懶人包4" style="width: 100%; height: auto;">
         <img src="/images/news/article/boneage/5.webp" alt="兒童長高全攻略懶人包5" style="width: 100%; height: auto;">
 
+        <div style="
+          display: grid; 
+          /* 強制手機版為兩欄，並在電腦版（螢幕寬於 640px）自動變回四欄 */
+          grid-template-columns: repeat(2, 1fr); 
+          gap: 10px; 
+          padding: 16px 8px;
+        ">
+          <style>
+            @media (min-width: 640px) {
+              .button-grid-container { grid-template-columns: repeat(4, 1fr) !important; }
+            }
+          </style>
+
+          <div class="button-grid-container" style="display: grid; grid-template-columns: inherit; gap: inherit; grid-column: 1 / -1;">
+            
+            <a href="/weight-bone/bone-age" 
+               style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #3b82f6, #4f46e5); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
+               onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+              <span style="color: #ffffff;">宸新骨齡門診</span>
+            </a>
+
+            <a href="/weight-bone/BMI" 
+               style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #10b981, #059669); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
+               onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+              <span style="color: #ffffff;">生長發育評估</span>
+            </a>
+
+            <a href="/weight-bone/calculator" 
+               style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #3b82f6, #4f46e5); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
+               onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+              <span style="color: #ffffff;">遺傳身高預測</span>
+            </a>
+
+            <a href="/weight-bone/nutrition" 
+               style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #f59e0b, #d97706); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
+               onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+              <span style="color: #ffffff;">長高營養指南</span>
+            </a>
+          </div>
+        </div>
+        
       <p>孩子的身高，一直是許多家長最焦慮的話題。「我的孩子這樣算矮嗎？」、「是不是該補鈣？」、「聽說太早發育會長不高？」這些疑問在診間層出不窮。</p>
       <br>
       <p>其實，兒童長高是一場與時間的賽跑。了解生長板的運作、掌握遺傳與後天的黃金比例，並在正確的時間點介入，才能幫助孩子發揮最大的生長潛力。本篇懶人包將為您完整解析關於「長高」的所有關鍵知識。</p>
@@ -177,46 +218,7 @@ export const articlesData: NewsPost[] = [
         <li><strong>及早就醫：</strong>若發現發育過早或身高停滯，請盡速諮詢復健科醫師進行骨齡評估。</li>
       </ol>
 
-<div style="
-          display: grid; 
-          /* 強制手機版為兩欄，並在電腦版（螢幕寬於 640px）自動變回四欄 */
-          grid-template-columns: repeat(2, 1fr); 
-          gap: 10px; 
-          padding: 16px 8px;
-        ">
-          <style>
-            @media (min-width: 640px) {
-              .button-grid-container { grid-template-columns: repeat(4, 1fr) !important; }
-            }
-          </style>
 
-          <div class="button-grid-container" style="display: grid; grid-template-columns: inherit; gap: inherit; grid-column: 1 / -1;">
-            
-            <a href="/weight-bone/bone-age" 
-               style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #3b82f6, #4f46e5); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
-               onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
-              <span style="color: #ffffff;">宸新骨齡門診</span>
-            </a>
-
-            <a href="/weight-bone/BMI" 
-               style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #10b981, #059669); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
-               onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
-              <span style="color: #ffffff;">生長發育評估</span>
-            </a>
-
-            <a href="/weight-bone/calculator" 
-               style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #3b82f6, #4f46e5); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
-               onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
-              <span style="color: #ffffff;">遺傳身高預測</span>
-            </a>
-
-            <a href="/weight-bone/nutrition" 
-               style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #f59e0b, #d97706); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
-               onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
-              <span style="color: #ffffff;">長高營養指南</span>
-            </a>
-          </div>
-        </div>
     `
   },
 
