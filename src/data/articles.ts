@@ -1,6 +1,64 @@
 import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
+
+  {
+    id: 'mounjaro-guide-hsinchu',
+    title: '【猛健樂懶人包】：藥物原理施打方式，注意事項副作用全解析',
+    lastModified: '2026-02-04',
+    category: '衛教文章',
+    date: '2026-02-04',
+    summary: '新竹減重新選擇！猛健樂到底在紅什麼？宸新復健科醫師統整其機轉原理、適應症、施打方式及副作用管理，並公開新竹民眾最關心的價格與療程優勢。',
+    coverImage: '/images/news/article/mounjaro/0.webp',
+    seoTitle: '新竹猛健樂(Mounjaro)減重門診｜宸新復健科：原理、價格、副作用懶人包',
+    seoDescription: '想在新竹諮詢猛健樂(Mounjaro)減重？宸新復健科詳解 Tirzepatide 雙腸泌素原理、適應症、正確施打方式及飲食注意事項。結合專業身體組成檢測，為您量身打造安全有效的瘦身計畫。',
+    keywords: ['猛健樂', 'Mounjaro', '新竹減重', '宸新復健科', 'Tirzepatide', '瘦瘦針', '雙機轉', '減肥門診', '胰島素阻抗'],
+    contentHtml: `
+        <img src="/images/news/article/mounjaro/1.webp" alt="猛健樂全攻略懶人包1" style="width: 100%; height: auto;">
+        <img src="/images/news/article/mounjaro/2.webp" alt="猛健樂全攻略懶人包2" style="width: 100%; height: auto;">
+        <img src="/images/news/article/mounjaro/3.webp" alt="猛健樂全攻略懶人包3" style="width: 100%; height: auto;">
+        <img src="/images/news/article/mounjaro/4.webp" alt="猛健樂全攻略懶人包4" style="width: 100%; height: auto;">
+        <img src="/images/news/article/mounjaro/5.webp" alt="猛健樂全攻略懶人包5" style="width: 100%; height: auto;">
+        <img src="/images/news/article/mounjaro/6.webp" alt="猛健樂全攻略懶人包6" style="width: 100%; height: auto;">
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; padding: 12px 0;">
+          
+          <a href="/weight-bone/mounjaro" 
+             style="
+                display: flex; flex-direction: row; align-items: center; justify-content: center;
+                gap: 10px; padding: 12px 24px;
+                background: linear-gradient(to right, #3b82f6, #4f46e5);
+                border-radius: 16px; color: #ffffff !important; text-decoration: none !important;
+                font-weight: 700; font-size: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease-in-out; cursor: pointer;
+             "
+             onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.2)';"
+             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgba(0, 0, 0, 0.1)';"
+          >
+            <svg stroke="currentColor" fill="currentColor" viewBox="0 0 512 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="color: white;"><path d="M464 128a64 64 0 0 0-93.5-57.1C352.4 53.6 324.4 41 292 41c-43.4 0-80.4 22.8-100.4 57.1-15.8-11.4-35.3-18.1-56.3-18.1-52.6 0-95.3 42.7-95.3 95.3 0 22.2 7.6 42.6 20.3 58.7-12.7 16.1-20.3 36.5-20.3 58.7 0 52.6 42.7 95.3 95.3 95.3 21 0 40.5-6.7 56.3-18.1C211.6 404.2 248.6 427 292 427c32.4 0 60.4-12.6 78.5-29.9 11 10.7 25.9 17.3 42.3 17.3 35.3 0 64-28.7 64-64 0-18.8-8.1-35.7-21-47.5 12.9-11.8 21-28.7 21-47.5 0-18.8-8.1-35.7-21-47.5 12.9-11.8 21-28.7 21-47.5 0-16.4-6.6-31.3-17.2-42.3a64.24 64.24 0 0 0 4.4-15.1zM292 379c-48 0-87-39-87-87s39-87 87-87 87 39 87 87-39 87-87 87z"></path></svg>
+            <span style="white-space: nowrap; color: #ffffff;">了解更多猛健樂</span>
+          </a>
+
+          <a href="/weight-bone/BMI" 
+             style="
+                display: flex; flex-direction: row; align-items: center; justify-content: center;
+                gap: 10px; padding: 12px 24px;
+                background: linear-gradient(to right, #10b981, #059669);
+                border-radius: 16px; color: #ffffff !important; text-decoration: none !important;
+                font-weight: 700; font-size: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease-in-out; cursor: pointer;
+             "
+             onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.2)';"
+             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgba(0, 0, 0, 0.1)';"
+          >
+            <svg stroke="currentColor" fill="currentColor" viewBox="0 0 512 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="color: white;"><path d="M448 64H64C28.65 64 0 92.65 0 128v256c0 35.35 28.65 64 64 64h384c35.35 0 64-28.65 64-64V128c0-35.35-28.65-64-64-64zm-192 272c-44.18 0-80-35.82-80-80s35.82-80 80-80 80 35.82 80 80-35.82 80-80 80z"></path></svg>
+            <span style="white-space: nowrap; color: #ffffff;">減重自我評估</span>
+          </a>
+
+        </div>
+    `
+  },
+
   {
     id: 'child-height-growth-guide',
     title: '【兒童長高全攻略懶人包】家長必看！掌握黃金生長期的關鍵密碼',
@@ -8,7 +66,7 @@ export const articlesData: NewsPost[] = [
     date: '2026-02-04',
     lastModified: '2026-02-04',
     summary: '孩子的身高是家長最關心的事。從遺傳公式、生長板閉合時間、性早熟警訊，到睡眠、營養、跳繩運動建議，復健科醫師整理完整長高懶人包，助孩子突破遺傳限制！',
-    coverImage: '/images/news/article/child.webp',
+    coverImage: '/images/news/article/boneage/0.webp',
     
     // ✨ SEO 強力優化區
     seoTitle: '兒童長高懶人包：生長板閉合時間、性早熟症狀、長高食物與跳繩建議 - 醫師完整解析',
@@ -16,11 +74,11 @@ export const articlesData: NewsPost[] = [
     keywords: ['兒童長高', '性早熟', '生長板', '遺傳身高', '骨齡', '轉大人', '生長激素', '跳繩長高', '維生素D', '補鈣'],
     
     contentHtml: `
-        <img src="/images/news/article/boneage/1.webp" alt="兒童長高全攻略懶人包1" style="width: 70%; height: auto;">
-        <img src="/images/news/article/boneage/2.webp" alt="兒童長高全攻略懶人包2" style="width: 70%; height: auto;">
-        <img src="/images/news/article/boneage/3.webp" alt="兒童長高全攻略懶人包3" style="width: 70%; height: auto;">
-        <img src="/images/news/article/boneage/4.webp" alt="兒童長高全攻略懶人包4" style="width: 70%; height: auto;">
-        <img src="/images/news/article/boneage/5.webp" alt="兒童長高全攻略懶人包5" style="width: 70%; height: auto;">
+        <img src="/images/news/article/boneage/1.webp" alt="兒童長高全攻略懶人包1" style="width: 100%; height: auto;">
+        <img src="/images/news/article/boneage/2.webp" alt="兒童長高全攻略懶人包2" style="width: 100%; height: auto;">
+        <img src="/images/news/article/boneage/3.webp" alt="兒童長高全攻略懶人包3" style="width: 100%; height: auto;">
+        <img src="/images/news/article/boneage/4.webp" alt="兒童長高全攻略懶人包4" style="width: 100%; height: auto;">
+        <img src="/images/news/article/boneage/5.webp" alt="兒童長高全攻略懶人包5" style="width: 100%; height: auto;">
 
       <p>孩子的身高，一直是許多家長最焦慮的話題。「我的孩子這樣算矮嗎？」、「是不是該補鈣？」、「聽說太早發育會長不高？」這些疑問在診間層出不窮。</p>
       <br>
@@ -118,6 +176,47 @@ export const articlesData: NewsPost[] = [
         <li><strong>吃對營養：</strong>補充足夠蛋白質、鋅與維生素 D，嚴格禁絕糖分與油炸。</li>
         <li><strong>及早就醫：</strong>若發現發育過早或身高停滯，請盡速諮詢復健科醫師進行骨齡評估。</li>
       </ol>
+
+<div style="
+          display: grid; 
+          /* 強制手機版為兩欄，並在電腦版（螢幕寬於 640px）自動變回四欄 */
+          grid-template-columns: repeat(2, 1fr); 
+          gap: 10px; 
+          padding: 16px 8px;
+        ">
+          <style>
+            @media (min-width: 640px) {
+              .button-grid-container { grid-template-columns: repeat(4, 1fr) !important; }
+            }
+          </style>
+
+          <div class="button-grid-container" style="display: grid; grid-template-columns: inherit; gap: inherit; grid-column: 1 / -1;">
+            
+            <a href="/weight-bone/bone-age" 
+               style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #3b82f6, #4f46e5); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
+               onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+              <span style="color: #ffffff;">宸新骨齡門診</span>
+            </a>
+
+            <a href="/weight-bone/BMI" 
+               style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #10b981, #059669); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
+               onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+              <span style="color: #ffffff;">生長發育評估</span>
+            </a>
+
+            <a href="/weight-bone/calculator" 
+               style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #3b82f6, #4f46e5); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
+               onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+              <span style="color: #ffffff;">遺傳身高預測</span>
+            </a>
+
+            <a href="/weight-bone/nutrition" 
+               style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #f59e0b, #d97706); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
+               onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+              <span style="color: #ffffff;">長高營養指南</span>
+            </a>
+          </div>
+        </div>
     `
   },
 
