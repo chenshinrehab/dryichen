@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     description: '新竹推薦復健科，由台大醫師林羿辰院長親自看診。提供高解析超音波導引PRP注射、聚焦式震波治療與兒童早療評估。',
     images: [
       {
-        url: '/images/og-default.jpg',
+        url: `${SITE_URL}/images/og-default.jpg`,
         width: 1200,
         height: 630,
         alt: '新竹宸新復健科診所 - 林羿辰醫師',
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '新竹宸新復健科診所 - 林羿辰醫師',
     description: '專業 PRP 注射、震波治療與兒童早療評估。',
-    images: ['/images/og-default.jpg'],
+    images: [`${SITE_URL}/images/og-default.jpg`],
   },
   icons: {
     icon: '/favicon.png',

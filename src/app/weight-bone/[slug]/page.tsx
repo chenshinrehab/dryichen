@@ -6,6 +6,9 @@ import JsonLd from '@/components/JsonLd'
 import { getWeightLossProgramBySlug, getAllWeightLossProgramSlugs } from '@/data/weightLoss'
 import ShareButtons from '@/components/ShareButtons'
 
+// 引入 React Icons (Font Awesome 6 版本)
+import { FaCalculator, FaChartLine, FaBone, FaUtensils } from 'react-icons/fa6'
+
 // 定義常數
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
 
@@ -222,74 +225,69 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                         </div>
                     </div>
 
-                    {/* ============================================================
-                        ✨ 新增：實用小工具按鈕 (根據 slug 判斷顯示)
-                        ============================================================ */}
-                        <div className="mb-4 md:mb-8 flex flex-wrap gap-4">
-                        
-                        {/* 減重相關頁面 -> 顯示「減重自我評估」 (藍青色漸層) */}
-                        {['mounjaro', 'Wegovy'].includes(params.slug) && (
-                            <Link 
-                                href="/weight-bone/BMI" 
-                                className="group relative inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full text-white font-bold shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:-translate-y-1 transition-all duration-300"
-                            >
-                                <span className="absolute inset-0 bg-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                                <i className="fa-solid fa-calculator text-lg group-hover:animate-pulse"></i>
-                                <span>減重自我評估</span>
-                                <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
-                            </Link>
-                        )}
+{/* ============================================================
+    ✨ 優化：小工具按鈕 (降低高度，Icon 文字同列，尺寸大而扁平)
+    ============================================================ */}
+<div className="mb-4 md:mb-8">
+    
+    {/* 減重相關頁面 -> 顯示「減重自我評估」 */}
+    {['mounjaro', 'Wegovy'].includes(params.slug) && (
+        <Link 
+            href="/weight-bone/BMI" 
+            className="group relative inline-flex items-center gap-3 px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full text-white font-bold shadow-lg hover:-translate-y-1 transition-all duration-300 w-full md:w-auto justify-center"
+        >
+            <FaCalculator className="text-xl md:text-2xl" />
+            <span className="text-lg md:text-xl">減重自我評估</span>
+            <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
+        </Link>
+    )}
 
-                        {/* 兒童相關頁面 -> 顯示「生長曲線」與「骨齡預測」 */}
-                        {['bone-age'].includes(params.slug) && (
-                          <div className="flex flex-col md:flex-row items-stretch justify-between gap-4 w-full overflow-x-auto pb-2">
-                          {/* 1. 兒童長高全攻略 (青色風格) */}
-                          <Link 
-                            href="/about/news/child-height-growth-guide" 
-                            className="flex-1 min-w-fit md:min-w-0 group relative inline-flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-cyan-600 to-teal-500 rounded-2xl text-white font-bold text-base shadow-lg shadow-teal-500/20 hover:shadow-teal-500/40 hover:-translate-y-1 transition-all duration-300"
-                          >
-                            <span className="absolute inset-0 bg-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                            <i className="fa-solid fa-book-open text-xl group-hover:animate-pulse"></i>
-                            <span className="whitespace-nowrap">兒童長高全攻略</span>
-                            <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
-                          </Link>
-                        
-                          {/* 2. 兒童生長曲線分析 (藍色風格) */}
-                          <Link 
-                            href="/weight-bone/child" 
-                            className="flex-1 min-w-fit md:min-w-0 group relative inline-flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl text-white font-bold text-base shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 hover:-translate-y-1 transition-all duration-300"
-                          >
-                            <span className="absolute inset-0 bg-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                            <i className="fa-solid fa-chart-line text-xl group-hover:animate-pulse"></i>
-                            <span className="whitespace-nowrap">兒童生長曲線分析</span>
-                            <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
-                          </Link>
-                        
-                          {/* 3. 骨齡預測  (深藍/靛青風格) */}
-                          <Link 
-                            href="/weight-bone/calculator" 
-                            className="flex-1 min-w-fit md:min-w-0 group relative inline-flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-indigo-500 to-violet-600 rounded-2xl text-white font-bold text-base shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40 hover:-translate-y-1 transition-all duration-300"
-                          >
-                            <span className="absolute inset-0 bg-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                            <i className="fa-solid fa-x-ray text-xl group-hover:animate-pulse"></i>
-                            <span className="whitespace-nowrap">骨齡與遺傳身高預測</span>
-                            <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
-                          </Link>
-                        
-                          {/* 4. 營養指南 (天藍/青綠風格) */}
-                          <Link 
-                            href="/weight-bone/nutrition" 
-                            className="flex-1 min-w-fit md:min-w-0 group relative inline-flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-sky-500 to-cyan-600 rounded-2xl text-white font-bold text-base shadow-lg shadow-sky-500/20 hover:shadow-sky-500/40 hover:-translate-y-1 transition-all duration-300"
-                          >
-                            <span className="absolute inset-0 bg-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                            <i className="fa-solid fa-utensils text-xl group-hover:animate-pulse"></i>
-                            <span className="whitespace-nowrap">兒童長高營養指南</span>
-                            <i className="fa-solid fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
-                          </Link>
-                        </div>
-                        )}
-                    </div>
-                    {/* ============================================================ */}
+    {/* 兒童相關頁面 -> 手機一行二，扁平化設計 */}
+    {['bone-age'].includes(params.slug) && (
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 w-full pb-2">
+        
+        {/* 1. 兒童長高全攻略 */}
+        <Link 
+          href="/about/news/child-height-growth-guide" 
+          className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-cyan-600 to-teal-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300"
+        >
+          <FaChartLine className="text-xl md:text-2xl shrink-0" />
+          <span className="text-[15px] md:text-lg whitespace-nowrap">長高攻略</span>
+        </Link>
+
+        {/* 2. 兒童生長曲線分析 */}
+        <Link 
+          href="/weight-bone/child" 
+          className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-cyan-600 to-teal-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300"
+        >
+          <FaChartLine className="text-xl md:text-2xl shrink-0" />
+          <span className="text-[15px] md:text-lg whitespace-nowrap">曲線分析</span>
+        </Link>
+
+        {/* 3. 骨齡與遺傳預測 */}
+        <Link 
+          href="/weight-bone/calculator" 
+          className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300"
+        >
+          <FaBone className="text-xl md:text-2xl shrink-0" />
+          <span className="text-[15px] md:text-lg whitespace-nowrap">骨齡預測</span>
+        </Link>
+
+        {/* 4. 營養指南 */}
+        <Link 
+          href="/weight-bone/nutrition" 
+          className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300"
+        >
+          <FaUtensils className="text-xl md:text-2xl shrink-0" />
+          <span className="text-[15px] md:text-lg whitespace-nowrap">營養指南</span>
+        </Link>
+        
+      </div>
+    )}
+</div>
+
+
+                                        {/* ============================================================ */}
 
 
                     {/* 特色與優點 (Grid) */}
@@ -345,7 +343,6 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                       <div className="space-y-8 mb-14">
                         {program.images.map((img, idx) => (
                           <div key={idx} className="text-center group">
-                             {/* 使用 inline-block 和 w-[85%] 確保與內文圖片一致 */}
                              <div className="relative overflow-hidden rounded-xl shadow-xl inline-block w-full md:w-[85%] border border-slate-700 bg-slate-900">
                                <img src={img.src} alt={img.alt} className="w-full h-auto transform group-hover:scale-[1.02] transition-transform duration-700 block" />
                              </div>
@@ -385,10 +382,9 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
                       </div>
                     )}
                     
-                  </div> {/* End padding */}
+                  </div>
 
-                                              {/* ★★★ 新增：作者權威聲明 (SEO E-E-A-T) ★★★ */}
-                  {/* 設計為：小字、淡色、靠右對齊，不搶視覺但確保存在 */}
+                  {/* 作者權威聲明 */}
                   <div className="mt-0 pt-0 border-t border-slate-700/40 text-right">
                     <div className="inline-block text-slate-500 text-sm space-y-1">
                       <p>
