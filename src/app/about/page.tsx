@@ -128,14 +128,20 @@ export default function AboutPage() {
         <main className="max-w-5xl mx-auto px-4 pt-0 -mt-10 md:-mt-12 pb-12">
           
           {/* ✨ 3. 標題區塊：依照範本同步進場 */}
-          <div className="flex items-center justify-center gap-3 mb-10 animate-on-scroll">
-              <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
-                  <i className="fa-solid fa-address-card text-xl"></i>
-              </span>
-              <h1 className="text-3xl font-bold font-sans text-white">
-                  關於我們 <span className="text-slate-500 text-lg font-normal ml-2">About Us</span>
-              </h1>
-          </div>
+          <div className="flex items-center justify-center gap-4 mb-10 animate-on-scroll">
+  {/* 1. 給圖示容器一個固定高度，並確保內容絕對置中 */}
+  <span className="flex items-center justify-center w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-lg border border-cyan-500/30">
+    <i className="fa-solid fa-address-card text-xl"></i>
+  </span>
+  
+  {/* 2. 移除 h1 的預設行高，並透過 flex + translate 微調文字位置 */}
+  <div className="flex flex-col justify-center">
+    <h1 className="text-3xl font-bold font-sans text-white leading-[1] flex items-baseline transform translate-y-[3px]">
+      關於我們 
+      <span className="text-slate-500 text-lg font-normal ml-3 leading-none">About Us</span>
+    </h1>
+  </div>
+</div>
 
           {/* ✨ 4. 卡片連結區塊：參考範本由外層 grid 統一控制進場 */}
           <div className="grid grid-cols-1 gap-8 mb-16 animate-on-scroll delay-100">

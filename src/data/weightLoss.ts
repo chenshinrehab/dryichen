@@ -61,7 +61,7 @@ const fullWeightLossData: WeightLossProgram[] = [
         📢 猛健樂 (Mounjaro) 本月前 100 名限定優惠
     </h2>
     
-    <p style="font-size: 1.1rem; color: #78350f;">宸新復健科本月特別推出<strong>前 100 名</strong>專屬優惠方案。猛健樂依據劑量濃度不同，分為四種規格，醫師將依據您的減重進程調整劑量：</p>
+    <p style="font-size: 1.1rem; color: #78350f;">宸新復健科<strong>猛健樂</strong>價格。猛健樂依據劑量濃度不同，分為四種規格，醫師將依據您的減重進程調整劑量：</p>
     <br>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.75rem; margin-bottom: 1.5rem;">
     <div style="background: white; padding: 0.75rem; border-radius: 0.5rem; border: 1px solid #e5e7eb; text-align: center;">
