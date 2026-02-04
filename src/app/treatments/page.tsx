@@ -89,14 +89,20 @@ export default function TreatmentsPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             {/* ✨ 3. 標題區塊動畫 - 參考範本：整組 animate-on-scroll */}
-            <div className="flex items-center justify-center gap-3 mb-10 animate-on-scroll">
-                <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
-                    <i className="fa-solid fa-notes-medical text-xl"></i>
-                </span>
-                <h1 className="text-3xl font-bold font-sans text-white">
-                    治療項目 <span className="text-slate-500 text-lg font-normal ml-2">Treatments</span>
-                </h1>
-            </div>
+            <div className="flex items-center justify-center gap-4 mb-10 animate-on-scroll">
+  {/* 圖示容器：確保內容置中 */}
+  <span className="flex items-center justify-center w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-lg border border-cyan-500/30">
+    <i className="fa-solid fa-notes-medical text-xl"></i>
+  </span>
+  
+  {/* 文字容器：使用 translate-y-[5px] 修正中文字體偏上的問題 */}
+  <div className="flex flex-col justify-center">
+    <h1 className="text-3xl font-bold font-sans text-white leading-none flex items-baseline transform translate-y-[7px]">
+      治療項目 
+      <span className="text-slate-500 text-lg font-normal ml-3 leading-none">Treatments</span>
+    </h1>
+  </div>
+</div>
 
             {/* ✨ 4. 卡片列表 Grid - 參考範本：由外層容器統一控制 animate-on-scroll + delay-100 */}
             <div className="grid grid-cols-1 gap-8 mb-16 animate-on-scroll delay-100">

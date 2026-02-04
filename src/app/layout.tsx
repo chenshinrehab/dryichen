@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: '新竹宸新復健科診所',
     title: '新竹宸新復健科診所 - 骨科/復健/兒童早療推薦',
-    description: '新竹復健科首選，台大醫師團隊，提供專業骨科疼痛治療與兒童發展評估。',
+    description: '新竹推薦復健科，由台大醫師林羿辰院長親自看診。提供高解析超音波導引PRP注射、聚焦式震波治療與兒童早療評估。',
     images: [
       {
         url: '/images/og-default.jpg',
@@ -116,15 +116,12 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
-        {/* 1. 預連線優化：讓瀏覽器在下載 HTML 時就先去跟外部網站建立握手連線 */}
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.youtube-nocookie.com" />
         
-        {/* 2. ✨ 非同步載入 FontAwesome：解決轉譯封鎖 ✨ */}
-        {/* 先以 media="print" 載入，這不會阻塞網頁渲染 */}
         <link 
           id="font-awesome-css"
           rel="stylesheet" 
@@ -133,7 +130,6 @@ export default function RootLayout({
           referrerPolicy="no-referrer"
           media="print"
         />
-        {/* 下載完成後透過原生 JS 將 media 切換回 all 以顯示圖示，避開 Next.js 事件處理器報錯 */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -154,7 +150,6 @@ export default function RootLayout({
           />
         </noscript>
         
-        {/* 3. 解決 H1 淘汰警告與基礎圖片修正 */}
         <style>{`
           img { height: auto; }
           h1 { font-size: 2.25rem; }
@@ -165,7 +160,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-slate-900 text-slate-300 antialiased min-h-screen flex flex-col`}>
         <Navigation />
         <main className="flex-grow pt-14 md:pt-20">
-           {children}
+            {children}
         </main>
         <Footer />
       </body>

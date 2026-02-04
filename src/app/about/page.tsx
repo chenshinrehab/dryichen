@@ -129,14 +129,13 @@ export default function AboutPage() {
           
           {/* ✨ 3. 標題區塊：依照範本同步進場 */}
           <div className="flex items-center justify-center gap-4 mb-10 animate-on-scroll">
-  {/* 1. 給圖示容器一個固定高度，並確保內容絕對置中 */}
   <span className="flex items-center justify-center w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-lg border border-cyan-500/30">
     <i className="fa-solid fa-address-card text-xl"></i>
   </span>
   
-  {/* 2. 移除 h1 的預設行高，並透過 flex + translate 微調文字位置 */}
   <div className="flex flex-col justify-center">
-    <h1 className="text-3xl font-bold font-sans text-white leading-[1] flex items-baseline transform translate-y-[3px]">
+    {/* 將 translate-y 從 [3px] 改為 [5px] */}
+    <h1 className="text-3xl font-bold font-sans text-white leading-none flex items-baseline transform translate-y-[7px]">
       關於我們 
       <span className="text-slate-500 text-lg font-normal ml-3 leading-none">About Us</span>
     </h1>

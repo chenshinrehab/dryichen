@@ -80,19 +80,24 @@ export default function WeightLossPage() {
             
             {/* ✨ 3. 標題與工具區塊 - 參考範本加入 relative z-50 解決選單擋住問題 */}
             <div className="text-center mb-5 max-w-4xl mx-auto animate-on-scroll relative z-50">
-                <div className="flex items-center justify-center gap-3 mb-4">
-                    <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
-                        <i className="fa-solid fa-weight-scale text-xl"></i>
-                    </span>
-                    <h1 className="text-3xl font-bold font-sans text-white">
-                        減重與骨齡
-                    </h1>
-                </div>
+    <div className="flex items-center justify-center gap-4 mb-4">
+        {/* 圖示容器：固定寬高並置中 */}
+        <span className="flex items-center justify-center w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-lg border border-cyan-500/30">
+            <i className="fa-solid fa-weight-scale text-xl"></i>
+        </span>
 
-                <div className="relative z-20">
-                    <WeightLossTools />
-                </div>
-            </div>
+        {/* 文字容器：套用同樣的垂直位移校正 */}
+        <div className="flex flex-col justify-center">
+            <h1 className="text-3xl font-bold font-sans text-white leading-none transform translate-y-[7px]">
+                減重與骨齡
+            </h1>
+        </div>
+    </div>
+
+    <div className="relative z-20">
+        <WeightLossTools />
+    </div>
+</div>
 
             {/* ✨ 4. 卡片列表 - 依照範本修改為「容器一次進場」 */}
             <div className="grid grid-cols-1 gap-8 mb-16 animate-on-scroll delay-100 relative z-10">

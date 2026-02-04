@@ -89,14 +89,19 @@ export default function DiseasesPage() {
 <div className="text-center mb-5 max-w-4xl mx-auto animate-on-scroll">
       
       {/* 2. 標題容器：將 mb-10 改為 mb-4 (減少標題與搜尋框之間的距離) */}
-      <div className="flex items-center justify-center gap-3 mb-4">
-                  <span className="bg-cyan-500/20 text-cyan-400 p-3 rounded-lg border border-cyan-500/30">
-                      <i className="fa-solid fa-book-medical text-xl"></i>
-                  </span>
-                  <h1 className="text-3xl font-bold font-sans text-white">
-                      常見骨科疾病衛教
-                  </h1>
-              </div>
+      <div className="flex items-center justify-center gap-4 mb-4">
+    {/* 圖示容器：確保內容絕對置中 */}
+    <span className="flex items-center justify-center w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-lg border border-cyan-500/30">
+        <i className="fa-solid fa-book-medical text-xl"></i>
+    </span>
+
+    {/* 文字容器：套用統一的視覺校正位移 */}
+    <div className="flex flex-col justify-center">
+        <h1 className="text-3xl font-bold font-sans text-white leading-none transform translate-y-[7px]">
+            常見骨科疾病衛教
+        </h1>
+    </div>
+</div>
 
               {/* AI 輸入框 */}
               <div className="relative z-20">
