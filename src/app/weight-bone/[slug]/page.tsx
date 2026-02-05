@@ -249,39 +249,40 @@ export default function WeightBoneDetailPage({ params }: PageProps) {
         {/* 1. 兒童長高全攻略 */}
         <Link 
           href="/about/news/child-height-growth-guide" 
-          className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-cyan-600 to-teal-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300"
+          className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-blue-600 to-teal-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300"
         >
           <FaChartLine className="text-xl md:text-2xl shrink-0" />
           <span className="text-[15px] md:text-lg whitespace-nowrap">長高攻略</span>
         </Link>
 
-        {/* 2. 兒童生長曲線分析 */}
-        <Link 
-          href="/weight-bone/child" 
-          className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-cyan-600 to-teal-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300"
+      {/* 2. 營養指南 */}
+      <Link 
+          href="/weight-bone/nutrition" 
+          className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300"
         >
-          <FaChartLine className="text-xl md:text-2xl shrink-0" />
-          <span className="text-[15px] md:text-lg whitespace-nowrap">曲線分析</span>
+          <FaUtensils className="text-xl md:text-2xl shrink-0" />
+          <span className="text-[15px] md:text-lg whitespace-nowrap">營養指南</span>
         </Link>
 
-        {/* 3. 骨齡與遺傳預測 */}
+        {/* 3. 兒童生長曲線分析 */}
+        <Link 
+          href="/weight-bone/child" 
+          className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-blue-600 to-teal-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300"
+        >
+          <FaChartLine className="text-xl md:text-2xl shrink-0" />
+          <span className="text-[15px] md:text-lg whitespace-nowrap">成長分析</span>
+        </Link>
+
+        {/* 4. 骨齡與遺傳預測 */}
         <Link 
           href="/weight-bone/calculator" 
-          className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300"
+          className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300"
         >
           <FaBone className="text-xl md:text-2xl shrink-0" />
           <span className="text-[15px] md:text-lg whitespace-nowrap">骨齡預測</span>
         </Link>
 
-        {/* 4. 營養指南 */}
-        <Link 
-          href="/weight-bone/nutrition" 
-          className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300"
-        >
-          <FaUtensils className="text-xl md:text-2xl shrink-0" />
-          <span className="text-[15px] md:text-lg whitespace-nowrap">營養指南</span>
-        </Link>
-        
+  
       </div>
     )}
 </div>
