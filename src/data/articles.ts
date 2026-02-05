@@ -3,8 +3,63 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
   {
+    id: 'prp-prolotherapy-guide-hsinchu',
+    title: '【2026新竹PRP懶人包】：增生療法原理、治療流程與注意事項全解析',
+    lastModified: '2026-02-05',
+    category: '衛教文章',
+    date: '2026-02-05',
+    summary: '新竹關節疼痛治療首選！PRP 到底能治療什麼？宸新復健科專業醫師統整 PRP 修復機轉、適應症、治療流程及術後注意事項，並針對新竹運動族群最關心的修復週期與常見問題深度解答。',
+    coverImage: '/images/news/article/prp/0.webp',
+    seoTitle: '新竹 PRP 增生療法推薦｜宸新復健科：關節修復、運動傷害、價格流程懶人包',
+    seoDescription: '在新竹找 PRP 治療？宸新復健科詳細解析 PRP 高濃度血小板血漿原理，針對膝關節退化、旋轉肌破裂、網球肘等運動傷害提供精準治療。結合超音波導引技術，打造最高效率的組織修復計畫。',
+    keywords: [
+      '新竹PRP', 
+      'PRP治療', 
+      '宸新復健科', 
+      '增生療法', 
+      '高濃度血小板血漿', 
+      '關節退化治療', 
+      '運動傷害修復', 
+      '竹北PRP推薦', 
+      '超音波導引注射', 
+      '韌帶修復'
+    ],
+    contentHtml: `
+    <style>
+  .responsive-img-enlarge { width: 110% !important; max-width: none !important; display: block !important; margin: 1rem auto !important; position: relative !important; left: 50% !important; transform: translateX(-50%) !important; height: auto; }
+  @media (min-width: 768px) { .responsive-img-enlarge { width: 100% !important; left: 0 !important; transform: none !important; } }
+</style>
+        <img src="/images/news/article/prp/1.webp" alt="PRP全攻略懶人包1" class="responsive-img-enlarge">
+        <img src="/images/news/article/prp/2.webp" alt="PRP全攻略懶人包2" class="responsive-img-enlarge">
+        <img src="/images/news/article/prp/3.webp" alt="PRP全攻略懶人包3" class="responsive-img-enlarge">
+        <img src="/images/news/article/prp/4.webp" alt="PRP全攻略懶人包4" class="responsive-img-enlarge">
+        <img src="/images/news/article/prp/5.webp" alt="PRP全攻略懶人包5" class="responsive-img-enlarge">
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; padding: 12px 0;">
+          
+          <a href="/treatments/prp" 
+             style="
+                display: flex; flex-direction: row; align-items: center; justify-content: center;
+                gap: 10px; padding: 12px 24px;
+                background: linear-gradient(to right, #3b82f6, #4f46e5);
+                border-radius: 16px; color: #ffffff !important; text-decoration: none !important;
+                font-weight: 700; font-size: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease-in-out; cursor: pointer;
+             "
+             onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.2)';"
+             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgba(0, 0, 0, 0.1)';"
+          >
+            <svg stroke="currentColor" fill="currentColor" viewBox="0 0 512 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="color: white;"><path d="M464 128a64 64 0 0 0-93.5-57.1C352.4 53.6 324.4 41 292 41c-43.4 0-80.4 22.8-100.4 57.1-15.8-11.4-35.3-18.1-56.3-18.1-52.6 0-95.3 42.7-95.3 95.3 0 22.2 7.6 42.6 20.3 58.7-12.7 16.1-20.3 36.5-20.3 58.7 0 52.6 42.7 95.3 95.3 95.3 21 0 40.5-6.7 56.3-18.1C211.6 404.2 248.6 427 292 427c32.4 0 60.4-12.6 78.5-29.9 11 10.7 25.9 17.3 42.3 17.3 35.3 0 64-28.7 64-64 0-18.8-8.1-35.7-21-47.5 12.9-11.8 21-28.7 21-47.5 0-18.8-8.1-35.7-21-47.5 12.9-11.8 21-28.7 21-47.5 0-16.4-6.6-31.3-17.2-42.3a64.24 64.24 0 0 0 4.4-15.1zM292 379c-48 0-87-39-87-87s39-87 87-87 87 39 87 87-39 87-87 87z"></path></svg>
+            <span style="white-space: nowrap; color: #ffffff;">了解更多PRP增生療法</span>
+          </a>
+
+        </div>
+
+      `
+  }, 
+
+  {
     id: 'mounjaro-guide-hsinchu',
-    title: '【猛健樂懶人包】：藥物原理施打方式，注意事項副作用全解析',
+    title: '【2026猛健樂懶人包】：藥物原理施打方式，注意事項副作用全解析',
     lastModified: '2026-02-04',
     category: '衛教文章',
     date: '2026-02-04',
@@ -14,12 +69,16 @@ export const articlesData: NewsPost[] = [
     seoDescription: '想在新竹諮詢猛健樂(Mounjaro)減重？宸新復健科詳解 Tirzepatide 雙腸泌素原理、適應症、正確施打方式及飲食注意事項。結合專業身體組成檢測，為您量身打造安全有效的瘦身計畫。',
     keywords: ['猛健樂', 'Mounjaro', '新竹減重', '宸新復健科', 'Tirzepatide', '瘦瘦針', '雙機轉', '減肥門診', '胰島素阻抗'],
     contentHtml: `
-        <img src="/images/news/article/mounjaro/1.webp" alt="猛健樂全攻略懶人包1" style="width: 100%; height: auto;">
-        <img src="/images/news/article/mounjaro/2.webp" alt="猛健樂全攻略懶人包2" style="width: 100%; height: auto;">
-        <img src="/images/news/article/mounjaro/3.webp" alt="猛健樂全攻略懶人包3" style="width: 100%; height: auto;">
-        <img src="/images/news/article/mounjaro/4.webp" alt="猛健樂全攻略懶人包4" style="width: 100%; height: auto;">
-        <img src="/images/news/article/mounjaro/5.webp" alt="猛健樂全攻略懶人包5" style="width: 100%; height: auto;">
-        <img src="/images/news/article/mounjaro/6.webp" alt="猛健樂全攻略懶人包6" style="width: 100%; height: auto;">
+    <style>
+  .responsive-img-enlarge { width: 110% !important; max-width: none !important; display: block !important; margin: 1rem auto !important; position: relative !important; left: 50% !important; transform: translateX(-50%) !important; height: auto; }
+  @media (min-width: 768px) { .responsive-img-enlarge { width: 100% !important; left: 0 !important; transform: none !important; } }
+</style>
+        <img src="/images/news/article/mounjaro/1.webp" alt="猛健樂全攻略懶人包1" class="responsive-img-enlarge">
+        <img src="/images/news/article/mounjaro/2.webp" alt="猛健樂全攻略懶人包2" class="responsive-img-enlarge">
+        <img src="/images/news/article/mounjaro/3.webp" alt="猛健樂全攻略懶人包3" class="responsive-img-enlarge">
+        <img src="/images/news/article/mounjaro/4.webp" alt="猛健樂全攻略懶人包4" class="responsive-img-enlarge">
+        <img src="/images/news/article/mounjaro/5.webp" alt="猛健樂全攻略懶人包5" class="responsive-img-enlarge">
+        <img src="/images/news/article/mounjaro/6.webp" alt="猛健樂全攻略懶人包6" class="responsive-img-enlarge">
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; padding: 12px 0;">
           
@@ -61,7 +120,7 @@ export const articlesData: NewsPost[] = [
 
   {
     id: 'child-height-growth-guide',
-    title: '【兒童長高全攻略懶人包】家長必看！掌握黃金生長期的關鍵密碼',
+    title: '【2026兒童長高全攻略懶人包】家長必看！掌握黃金生長期的關鍵密碼',
     category: '衛教文章',
     date: '2026-02-04',
     lastModified: '2026-02-04',
@@ -74,11 +133,15 @@ export const articlesData: NewsPost[] = [
     keywords: ['兒童長高', '性早熟', '生長板', '遺傳身高', '骨齡', '轉大人', '生長激素', '跳繩長高', '維生素D', '補鈣'],
     
     contentHtml: `
-        <img src="/images/news/article/boneage/1.webp" alt="兒童長高全攻略懶人包1" style="width: 100%; height: auto;">
-        <img src="/images/news/article/boneage/2.webp" alt="兒童長高全攻略懶人包2" style="width: 100%; height: auto;">
-        <img src="/images/news/article/boneage/3.webp" alt="兒童長高全攻略懶人包3" style="width: 100%; height: auto;">
-        <img src="/images/news/article/boneage/4.webp" alt="兒童長高全攻略懶人包4" style="width: 100%; height: auto;">
-        <img src="/images/news/article/boneage/5.webp" alt="兒童長高全攻略懶人包5" style="width: 100%; height: auto;">
+<style>
+  .responsive-img-enlarge { width: 110% !important; max-width: none !important; display: block !important; margin: 1rem auto !important; position: relative !important; left: 50% !important; transform: translateX(-50%) !important; height: auto; }
+  @media (min-width: 768px) { .responsive-img-enlarge { width: 100% !important; left: 0 !important; transform: none !important; } }
+</style>
+       <img src="/images/news/article/boneage/1.webp" alt="兒童長高全攻略懶人包1" class="responsive-img-enlarge">
+        <img src="/images/news/article/boneage/2.webp" alt="兒童長高全攻略懶人包2" class="responsive-img-enlarge">
+        <img src="/images/news/article/boneage/3.webp" alt="兒童長高全攻略懶人包3" class="responsive-img-enlarge">
+        <img src="/images/news/article/boneage/4.webp" alt="兒童長高全攻略懶人包4" class="responsive-img-enlarge">
+        <img src="/images/news/article/boneage/5.webp" alt="兒童長高全攻略懶人包5" class="responsive-img-enlarge">
 
         <div style="
           display: grid; 
@@ -120,7 +183,7 @@ export const articlesData: NewsPost[] = [
             </a>
           </div>
         </div>
-        
+
       <p>孩子的身高，一直是許多家長最焦慮的話題。「我的孩子這樣算矮嗎？」、「是不是該補鈣？」、「聽說太早發育會長不高？」這些疑問在診間層出不窮。</p>
       <br>
       <p>其實，兒童長高是一場與時間的賽跑。了解生長板的運作、掌握遺傳與後天的黃金比例，並在正確的時間點介入，才能幫助孩子發揮最大的生長潛力。本篇懶人包將為您完整解析關於「長高」的所有關鍵知識。</p>
@@ -279,6 +342,7 @@ export const articlesData: NewsPost[] = [
     seoDescription: '門診常被問：打膝蓋剩下的玻尿酸，可以順便補臉嗎？醫師解釋：雖然都叫玻尿酸，但關節用的像機油，醫美用的像水泥，用途大不同！醫師詳解三種玻尿酸差異。',
     keywords: ['玻尿酸', '膝蓋退化', '醫美', '增生療法', '韌帶修復', '醫學知識'],
     contentHtml: `
+      <img src="/images/news/article/ha.webp" alt="打膝蓋剩下的玻尿酸，可以順便補臉嗎？" style="width: 100%; height: auto;">
       <p>門診一位可愛的大姊突發奇想問我：「醫美打臉好貴喔，阿打膝蓋的玻尿酸，剩一點幫我補一下法令紋？」</p>
       <p><strong>😂 修但幾勒！當然不行！</strong></p>
       <p>雖然都叫「玻尿酸」，但不會拿機油去補牆壁一樣啊！這兩者的濃度、分子大小與交聯程度完全不同。</p>
@@ -320,6 +384,8 @@ export const articlesData: NewsPost[] = [
     seoDescription: '膝蓋為何會喀喀響，是膝蓋退化了嗎?，膝蓋有聲音，膝關節退化。',
     keywords: ['醫學知識', '膝蓋痛', '退化性關節炎', '喀喀響'],
     contentHtml: `
+      <img src="/images/news/article/knee.webp" alt="膝蓋為何會喀喀響，是膝蓋退化了嗎?" style="width: 100%; height: auto;">
+
       <p>門診很常碰到病患來看診，詢問膝蓋為何會喀喀響，擔心膝蓋是不是退化了！</p>
   
       <h2>✅ 這種聲音免驚！(生理性聲響)</h2>
