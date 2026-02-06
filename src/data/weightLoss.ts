@@ -267,6 +267,15 @@ const fullWeightLossData: WeightLossProgram[] = [
     seoDescription: '新竹照骨齡推薦。鄰近新竹科學園區，靠近竹北，宸新復健科提供免掛號免預約，隨到隨照服務。結合TW3法與AI大數據精準判讀，準確預測兒童成年身高。針對性早熟、生長遲緩提供專業評估與治療建議。',
     keywords: ['新竹照骨齡', '竹北照骨齡', '兒童長高門診', '性早熟檢查', '生長遲緩', '預測身高', '骨齡X光', '新竹小兒內分泌'],
     contentHtml: `
+    <style>
+  .responsive-img-enlarge { width: 110% !important; max-width: none !important; display: block !important; margin: 1rem auto !important; position: relative !important; left: 50% !important; transform: translateX(-50%) !important; height: auto; }
+  @media (min-width: 768px) { .responsive-img-enlarge { width: 100% !important; left: 0 !important; transform: none !important; } }
+</style>
+       <img src="/images/news/article/boneage/1.webp" alt="兒童長高全攻略懶人包1" class="responsive-img-enlarge">
+        <img src="/images/news/article/boneage/2.webp" alt="兒童長高全攻略懶人包2" class="responsive-img-enlarge">
+        <img src="/images/news/article/boneage/3.webp" alt="兒童長高全攻略懶人包3" class="responsive-img-enlarge">
+        <img src="/images/news/article/boneage/4.webp" alt="兒童長高全攻略懶人包4" class="responsive-img-enlarge">
+        <img src="/images/news/article/boneage/5.webp" alt="兒童長高全攻略懶人包5" class="responsive-img-enlarge">
     <p>擔心孩子長不高嗎？想知道是否有<strong>性早熟</strong>或<strong>生長遲緩</strong>的問題？孩子的成長只有一次，錯過了黃金期，可能就再也追不回來了。</p>
     <br>
 <p><strong>位於新竹的宸新復健科</strong>，提供<strong>新竹科學園區</strong>與在地民眾專業的<strong>兒童骨齡檢查</strong>服務。我們深知<strong>新竹市區與竹北</strong>家長對於孩子身高的焦慮，因此特別引進了醫學中心等級的評估系統。我們最大的特色是：<strong>不需要漫長等待、流程快速便捷</strong>，且輻射劑量極低，安全無虞。</p>
