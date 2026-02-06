@@ -15,6 +15,207 @@ export interface CaseStudy {
 }
 
 export const casesData: CaseStudy[] = [
+
+  {
+    id: 'case-precocious-puberty-height',
+    title: '妳敢信這是一雙7歲的手？全班最高的她，骨齡竟已10歲...偷走身高的性早熟警訊',
+    summary: '七歲小女生身高鶴立雞群，家長原本引以為傲，直到摸到乳房硬塊才驚覺不對勁。經朋友介紹至宸新拍攝骨齡，赫然發現骨齡超前三歲！預估身高從遺傳的167公分暴跌至155公分。透過緊急轉診至兒童內分泌科施打柳普林，我們要在這場與生長板閉合的賽跑中，搶回孩子的未來身高。',
+    contentHtml: `
+        <div class="quote-box" style="border-left: 4px solid #06b6d4; border-radius:8px; padding-left: 1rem; margin: 1.5rem 0; font-style: italic; color: #64748b; background-color: #f8fafc; padding: 1rem;">
+          <p class="mb-0" style="font-size: 1.1rem; font-weight: 500;">「你敢相信這是一位7歲小朋友的手部 X 光嗎？因為判讀起來，這雙手的骨骼年齡竟然已經10歲了。」</p>
+        </div>
+  
+        <p>看著燈箱上的 X 光片，診間裡的氣氛瞬間凝結。這句話對於坐在對面的爸媽來說，無疑是一記重擊。</p>
+        <p>故事的主角是一位可愛的7歲小女生。她在班上總是鶴立雞群，身高一直名列前茅。爸爸媽媽看著孩子長得比同齡人高，心裡原本是高興的，以為這孩子發育得好，贏在了起跑點。</p>
+        <p>直到最近，媽媽在幫女兒洗澡時，意外在<strong>乳暈下方觸摸到硬塊</strong>，甚至感覺乳房似乎開始發育了。這份「發育太好」的喜悅，瞬間轉變為對「性早熟」的恐慌。</p>
+  
+        <h2>鶴立雞群的背後：被偷走的 12 公分</h2>
+        <p>家長上網查了許多資料，越看越擔心，最後在朋友的介紹下，來到<strong>宸新</strong>進行專業的<a href="/weight-bone/bone-age" class="text-cyan-400 hover:underline">骨齡評估</a>。</p>
+        <p>「醫師，她才七歲，怎麼可能骨頭已經十歲了？」媽媽焦急地問。</p>
+        <p>事實擺在眼前，X 光片顯示生長板的成熟度遠超乎預期。我們立刻進行了身高預測計算，結果令人心碎：</p>
+        <ul style="background-color: #fff1f2; padding: 1.5rem; border-radius: 8px; list-style-type: none;">
+            <li style="margin-bottom: 0.5rem;">🧬 <strong>依遺傳計算的目標身高： 167 公分</strong></li>
+            <li style="margin-bottom: 0.5rem; color: #e11d48; font-weight: bold;">⚠️ 依目前骨齡預測的成年身高： 155 公分</li>
+            <li style="border-top: 1px solid #fecdd3; padding-top: 0.5rem; margin-top: 0.5rem;">📉 <strong>整整消失了 12 公分！</strong></li>
+        </ul>
+        <p>這就是性早熟最可怕的地方——<strong>「小時候高不是高」</strong>。過早啟動的荷爾蒙雖然讓孩子現在看起來比別人高，但卻加速了生長板的閉合，像是提早把未來的身高額度給透支光了。</p>
+                 <p><img src="/images/cases/boneage/1.webp " alt="骨齡X光" style="width: 50%; height: auto;"></p>
+        <h2>與時間賽跑：緊急轉診與柳普林治療</h2>
+        <p>面對這消失的12公分，我們一刻都不能等。</p>
+        <p>在宸新完成初步評估後，我們立刻協助轉診至醫院的<strong>兒童內分泌科</strong>。經過詳細檢查，確診為性早熟，並隨即開始接受<strong>柳普林</strong> 的治療。</p>
+        <p>柳普林是一種 GnRH 作用劑，簡單來說，它的任務是「踩煞車」。透過抑制性荷爾蒙的分泌，它能暫緩第二性徵的發育進程，更重要的是<strong>避免生長板提前閉合</strong>。我們希望能爭取更多長高的時間，讓骨齡「等一等」身高的成長，盡力把那失去的 12 公分追回來。</p>
+
+  
+
+        <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 2rem 0;">
+  
+        <div class="doctor-note" style="background-color: #fff7ed; border-left: 4px solid #f97316; padding: 1.5rem; border-radius:8px; margin-bottom: 2rem;">
+          <h3 style="margin-top: 0; color: #c2410c; font-size: 1.2rem; display: flex; align-items: center; gap: 0.5rem;">
+              <i class="fa-solid fa-user-doctor"></i> 醫師手札
+          </h3>
+          <p style="color: #431407; font-style: italic; margin-bottom: 0;">
+            「很多家長以為孩子長得高就是好，卻忽略了『性徵』的提早出現。女童8歲前、男童9歲前若出現第二性徵（如乳房發育、睪丸變大），都可能是性早熟的警訊。如果您發現孩子身高突然長得特別快，或是摸到胸部有硬塊，請務必儘早進行骨齡檢查。別讓一時的『高人一等』，成為未來的遺憾。」
+          </p>
+        </div>
+        
+        <div class="cta-box" style="background-color: #f3f4f6; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; color: #374151;">
+          <h3 style="margin-top: 0; color: #111827;">擔心孩子長不高或發育太快？</h3>
+          <p style="color: #374151;">掌握生長黃金期，只需一張 X 光片。透過精準骨齡判讀，預測成年身高與評估發育狀況。</p>
+          <p style="margin-bottom: 0;">
+            <a href="/weight-bone/bone-age" style="color: #2563eb; text-decoration: underline; font-weight: bold;">
+              👉 點此預約：兒童生長與骨齡評估門診
+            </a>
+          </p>
+        </div>
+    `,
+    date: '2026-02-07', 
+    category: '兒童生長',
+    tags: ['性早熟', '骨齡', ], 
+    coverImage: '/images/cases/boneage/1.webp', 
+    relatedTreatments: ['bone-age-assessment', 'pediatric-endocrinology-referral'] 
+},
+
+  {
+    id: 'case-calcific-tendinitis-shockwave',
+    title: '誤把「結石」當「撕裂傷」？健身美女打了三次PRP無效，原來肩膀藏了顆大石頭！',
+    summary: '一位熱愛羽球的40歲女性，因肩膀劇痛被誤診為嚴重撕裂傷，在恐懼下施打了三次PRP卻毫無起色。經由林醫師超音波精準檢查，才發現真兇竟是一顆巨大鈣化結石！透過「聚焦式體外震波」精準擊碎鈣化，四次療程後疼痛消失，重返球場。',
+    contentHtml: `
+        <div class="quote-box" style="border-left: 4px solid #06b6d4; border-radius:8px; padding-left: 1rem; margin: 1.5rem 0; font-style: italic; color: #64748b; background-color: #f8fafc; padding: 1rem;">
+          <p class="mb-0" style="font-size: 1.1rem; font-weight: 500;">「方向不對，努力白費。治療肩膀痛最怕的不是痛本身，而是沒有找到真正的『痛點』，讓病患走了冤枉路。」</p>
+        </div>
+   
+        <p>對於一位熱愛運動的人來說，最痛苦的懲罰莫過於「不能動」。</p>
+        <p>這次來到診間的，是一位充滿活力的40歲女性。她平時熱愛健身，羽球更是打得嚇嚇叫。然而，在一次高強度的揮拍後，她的肩膀開始隱隱作痛，原本以為休息幾天就好，沒想到疼痛卻變本加厲，到最後連手都舉不起來，別說殺球了，連日常生活都成了問題。</p>
+   
+        <h2>恐懼下的錯誤選擇：無效的三次PRP</h2>
+        <p>「我去附近的骨科看過，醫生說我有嚴重的肌肉撕裂傷，如果不打PRP（高濃度血小板血漿），就只能開刀了...」她回憶起當時的情景，眼神中仍帶著餘悸。</p>
+        <p>聽到「開刀」兩個字，她嚇壞了。為了避免手術，她咬著牙自費打了三次 PRP。然而，昂貴的治療換來的卻是失望——<strong>疼痛一點都沒有改善</strong>，肩膀依然僵硬如石。</p>
+        <p>她在絕望之際，上網搜尋到了宸新診所的好風評，抱著最後一絲希望來找林醫師：「醫生，為什麼我的撕裂傷都治不好？」</p>
+   
+        <h2>超音波建功：揪出藏在肌肉裡的「大石頭」</h2>
+        <p>「我們先別急著下定論，讓超音波來說話。」</p>
+        <p>當超音波探頭滑過她的肩膀，螢幕上的影像立刻揭露了真相——哪裡是什麼嚴重的撕裂傷？在旋轉肌腱裡，赫然卡著一顆<strong>巨大的鈣化點</strong>！隨後安排的 X 光檢查，更是鐵證如山：一顆輪廓清晰、密度極高的結石，死死地卡在肩膀關節處。</p>
+        <p>謎底揭曉：<strong>這就是典型的「<a href="/diseases/shoulder/calcific-tendinitis" class="text-cyan-400 hover:underline">鈣化性肌腱炎</a>」。</strong></p>
+        <p>這也解釋了為什麼之前的 PRP 治療完全無效。PRP 的強項是修復軟組織撕裂，但對於這種堅硬如石的鈣化點，它就像是拿水去澆石頭，根本無法解決物理上的阻塞與發炎。</p>
+   
+      <p><img src="/images/cases/cal/1.webp " alt="鈣化肌腱炎X光" style="width: 50%; height: auto;"></p>
+
+        <h2>對症下藥：聚焦式體外震波的「碎石」計畫</h2>
+        <p>面對這種已經形成的硬化結石，正確的武器應該是<strong>「<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波</a>」</strong>。</p>
+        <p>我們的治療策略很明確：</p>
+        <ol style="padding-left: 1.5rem; margin-bottom: 1.5rem;">
+            <li style="margin-bottom: 0.5rem;"><strong>精準定位：</strong>每次施打前，先用超音波確認鈣化點的深度與位置。</li>
+            <li style="margin-bottom: 0.5rem;"><strong>震波擊碎：</strong>利用高能量的聚焦震波，直接穿透軟組織，將大塊的鈣化結晶「震碎」成粉末狀。</li>
+            <li style="margin-bottom: 0.5rem;"><strong>身體吸收：</strong>震碎後的微小鈣化顆粒，會透過發炎反應引導血液循環，慢慢被身體代謝帶走。</li>
+        </ol>
+
+        <h2>眼見為憑：變小、變淡的鈣化點</h2>
+        <p>經過四次的高階震波治療，病患的疼痛感顯著下降。她興奮地告訴我：「林醫師，我現在手可以舉高了，昨天甚至試著去健身房動了一下！」</p>
+        <p>為了確認療效，我們再次拍攝 X 光。影像結果令人振奮：</p>
+        <p>雖然因為肩膀擺位的角度略有不同，造成鈣化點在影像上的位置往下移動，但可以清楚看到<strong>鈣化明顯變小了</strong>！更重要的是，鈣化點的顏色<strong>沒這麼白了</strong>。</p>
+        <p>在 X 光影像學上，<strong>「越白代表越硬」</strong>。顏色變淡，意味著鈣化結構已經變得鬆散、軟化。接下來，只需要搭配復健運動，促進肩部的血液循環，剩下的殘餘鈣化就會隨著時間慢慢被身體「運走」。</p>
+   <p><img src="/images/cases/cal/2.webp " alt="鈣化肌腱炎X光" style="width: 50%; height: auto;"></p>
+
+        <h2>重拾球拍的笑容</h2>
+        <p>看著她從原本進診間時的愁眉苦臉，到現在開始規劃下一次的羽球聚會，這正是精準醫療最大的價值。不用開刀、不用白受罪，只要診斷正確，頑固的肩膀痛也能迎刃而解。</p>
+        <p>現在，她終於可以無後顧之憂地殺球了！</p>
+
+        <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 2rem 0;">
+   
+        <div class="doctor-note" style="background-color: #fff7ed; border-left: 4px solid #f97316; padding: 1.5rem; border-radius:8px; margin-bottom: 2rem;">
+          <h3 style="margin-top: 0; color: #c2410c; font-size: 1.2rem; display: flex; align-items: center; gap: 0.5rem;">
+              <i class="fa-solid fa-user-doctor"></i> 醫師手札
+          </h3>
+          <p style="color: #431407; font-style: italic; margin-bottom: 0;">
+            「鈣化性肌腱炎常被誤診為五十肩或單純的肌腱撕裂。如果在沒有超音波確認的情況下盲目治療，往往事倍功半。面對鈣化，PRP 雖好但非首選；透過『超音波導引定位』加上『聚焦式震波』，才是震碎頑石、釋放肩膀的最佳解方。」
+          </p>
+        </div>
+        
+        <div class="cta-box" style="background-color: #f3f4f6; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; color: #374151;">
+          <h3 style="margin-top: 0; color: #111827;">肩膀痛了很久都好不了？</h3>
+          <p style="color: #374151;">別讓錯誤的治療耽誤您的復原。立即預約高階超音波檢查，確認是否有鈣化問題。</p>
+          <p style="margin-bottom: 0;">
+            <a href="/treatments/shockwave" style="color: #2563eb; text-decoration: underline; font-weight: bold;">
+              👉 點此了解：聚焦式體外震波治療
+            </a>
+          </p>
+        </div>
+    `,
+    date: '2026-02-07', 
+    category: '震波治療',
+    tags: ['鈣化性肌腱炎', '聚焦式體外震波'], 
+    coverImage: '/images/cases/cal/1.webp', 
+    relatedTreatments: ['shockwave-therapy', 'ultrasound-guided-injection'] 
+}, 
+
+  {
+    id: 'case-calcific-tendonitis-lavage',
+    title: '打了幾十次震波都沒用？50歲大姐的肩膀「頑石」消除記—超音波導引鈣化沖洗術',
+    summary: '一位飽受肩膀劇痛折磨的50歲女性，歷經數月、數十次震波治療無效，生活幾近停擺。來到宸新後，透過高階超音波揪出導致疼痛的「頑固鈣化結石」。在嘗試高能量震波仍未改善後，醫師果斷採取「超音波導引鈣化沖洗術」，直接將肌腱內的結石「洗」出來，兩週後重獲新生。',
+    contentHtml: `
+      <div class="quote-box" style="border-left: 4px solid #06b6d4; border-radius:8px; padding-left: 1rem; margin: 1.5rem 0; font-style: italic; color: #64748b; background-color: #f8fafc; padding: 1rem;">
+        <p class="mb-0" style="font-size: 1.1rem; font-weight: 500;">「看著螢幕上那顆白色的石頭一點一點被洗出來，我心裡的重擔好像也跟著放下了。原來，我的肩膀是真的可以不痛的。」</p>
+      </div>
+  
+      <p>肩膀痛起來，真的會讓人懷疑人生。</p>
+      <p>這次來到診間的，是一位50歲的大姐。她一坐下，臉上就寫滿了疲憊與無奈。這幾個月來，她的肩膀像是被鎖住了一樣，手舉不高、穿衣困難，最近更是惡化到劇烈疼痛，不僅工作大受影響，連晚上的睡眠都成了奢求。</p>
+  
+      <h2>以為是救星，卻打了個寂寞？震波無效的真相</h2>
+      <p>「醫師，我真的什麼都試過了...」她嘆了口氣。</p>
+      <p>在來到宸新之前，她在其他診所被診斷為<a href="/diseases/shoulder/calcific-tendinitis" class="text-cyan-400 hover:underline">鈣化性肌腱炎</a>。為了治好它，她非常配合治療，不僅急性發作時打了類固醇，甚至忍痛做了<strong>好幾十次的震波治療</strong>。但讓她崩潰的是，錢花了、痛忍了，那種鑽心的痛卻始終如影隨形。</p>
+      <p>後來，她在朋友介紹下，抱著最後一絲希望來到這裡。她聽說我們有<strong>進口的高能量<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波儀器</a></strong>，而且每次施打前都會用<strong>超音波精準定位</strong>，心想：「這次總該有效了吧？」</p>
+  
+      <h2>當高能量震波也遇到「鐵板」</h2>
+      <p>初次評估時，我也推測可能是之前的治療定位不夠精準，或是儀器能量穿透力不足。於是，我們在超音波導引下，精確鎖定鈣化點，進行了幾次聚焦式體外震波治療。</p>
+      <p>然而，令人意外的是，即便用上了最強的武器，那顆鈣化點依然不動如山，疼痛改善非常有限。</p>
+      <p>「這顆鈣化太頑固了，太硬、太大，光靠從外面打震波，可能打不散。」看著超音波影像中那團亮白色的結石，我向患者提出了一個更直接的方案：「我們換個方式，直接進去把它『洗』出來吧！」</p>
+  
+  
+      <h2>超音波導引鈣化沖洗：眼見為憑的「掏石」工程</h2>
+      <p>這項技術叫做<strong>「超音波導引鈣化沖洗術」 (Barbotage)</strong>。我們在即時超音波的監控下，將針頭精準地引導至鈣化中心，利用生理食鹽水反覆沖洗、抽吸。</p>
+       
+   <p><img src="/images/cases/calwash/1.webp " alt="鈣化沖洗超音波圖" style="width: 70%; height: auto;"></p>
+      <p>治療過程中，螢幕上的畫面就像是挖掘工程。一開始那顆巨大的白色結石，隨著我們不斷地沖洗、抽出粉筆灰般的鈣化物，體積肉眼可見地開始縮小、崩解。患者看著螢幕，驚訝地說：「原來裡面真的有這麼多東西！」</p>
+      
+   <p><img src="/images/cases/calwash/2.webp " alt="鈣化沖洗超音波圖" style="width: 70%; height: auto;"></p>
+      <p>到了治療尾聲，那顆原本巨大的「路障」，幾乎已經看不到了。</p>
+    <p><img src="/images/cases/calwash/3.webp " alt="鈣化沖洗超音波圖" style="width: 70%; height: auto;"></p>
+    <p>針筒中沖洗出來的鈣化。</p>
+    <p><img src="/images/cases/calwash/4.webp " alt="沖洗出來的鈣化" style="width: 70%; height: auto;"></p>
+
+  
+      <h2>兩週後的笑容：重拾正常生活</h2>
+      <p>兩週後回診，大姐是笑著走進診間的。</p>
+      <p>「醫師，這次真的不一樣了！」她興奮地轉動手臂給我看。不僅疼痛感大幅下降，原本卡住的角度也終於鬆開了。她說，終於不用再提心吊膽地過日子，工作和生活都回到了正軌。</p>
+      <p>看著她輕鬆的動作，證明了對於頑固型的鈣化，精準的「沖洗」往往能突破震波治療的瓶頸，帶來真正的解脫。</p>
+  
+      <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 2rem 0;">
+  
+      <div class="doctor-note" style="background-color: #fff7ed; border-left: 4px solid #f97316; padding: 1.5rem; border-radius:8px; margin-bottom: 2rem;">
+        <h3 style="margin-top: 0; color: #c2410c; font-size: 1.2rem; display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fa-solid fa-user-doctor"></i> 醫師手札
+        </h3>
+        <p style="color: #431407; font-style: italic; margin-bottom: 0;">
+          「鈣化性肌腱炎的治療不是只有一種。有些鈣化處於『吸收期』，質地像牙膏，這時候震波效果不佳，反而用針抽吸沖洗效果最好；有些則是太過堅硬陳舊，震波也難以震碎。透過超音波精準判斷鈣化的『質地』與『大小』，選擇對的武器（震波或沖洗），才能讓病人少受罪，快點好。」
+        </p>
+      </div>
+      
+      <div class="cta-box" style="background-color: #f3f4f6; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; color: #374151;">
+        <h3 style="margin-top: 0; color: #111827;">肩膀痛了很久，震波打不好？</h3>
+        <p style="color: #374151;">也許您需要的不是更多的震波，而是精準的「鈣化沖洗」。歡迎預約評估，讓我們幫您找出疼痛的真正原因。</p>
+        <p style="margin-bottom: 0;">
+          <a href="/booking" style="color: #2563eb; text-decoration: underline; font-weight: bold;">
+            👉 點此預約門診檢查
+          </a>
+        </p>
+      </div>
+    `,
+    date: '2026-02-06', 
+    category: '鈣化性肌腱炎',
+    tags: ['鈣化性肌腱炎', '超音波導引'], 
+    coverImage: '/images/cases/calwash/1.webp', 
+    relatedTreatments: ['shockwave-therapy', 'ultrasound-guided-injection', 'barbotage'] 
+  }, 
  
   {
     id: 'case-rotator-cuff-art-teacher',

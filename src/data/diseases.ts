@@ -919,6 +919,8 @@ export const diseaseCategories: DiseaseCategory[] = [
               </ul>
           </div>
       <p><img src="/images/diseases/spine-hip/upper/b.webp" alt="上交叉症候群成因"></p>
+       <p><img src="/images/diseases/spine-hip/upper/1.webp" alt="上交叉症候群成因" style="width: 40%; height: auto;></p>
+
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
@@ -952,7 +954,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   因為圓肩導致胸小肌太緊，卡住通往手臂的神經血管。睡覺時或手舉高時，手掌和手指容易發麻、冰冷。
               </p>
           </div>
-       <p><img src="/images/diseases/spine-hip/upper/d.webp" alt="胸廓出口症候群"></p>
+       <p><img src="/images/diseases/spine-hip/upper/d.webp" alt="胸廓出口症候群" style="width: 60%; height: auto;></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <h3 style="color: #f8fafc !important;">🛡️ 宸新整合治療：先放鬆，後訓練</h3>

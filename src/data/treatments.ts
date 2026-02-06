@@ -58,6 +58,15 @@ const fullTreatmentsData: Treatment[] = [
     keywords: ['新竹PRP', '新竹增生療法', '竹北PRP', '超音波導引注射', '膝蓋退化免開刀', '旋轉肌破裂', '足底筋膜炎', '高濃度葡萄糖', '新竹骨科推薦'],
     
     contentHtml: `
+        <style>
+  .responsive-img-enlarge { width: 110% !important; max-width: none !important; display: block !important; margin: 1rem auto !important; position: relative !important; left: 50% !important; transform: translateX(-50%) !important; height: auto; }
+  @media (min-width: 768px) { .responsive-img-enlarge { width: 100% !important; left: 0 !important; transform: none !important; } }
+</style>
+        <img src="/images/news/article/prp/1.webp" alt="PRP全攻略懶人包1" class="responsive-img-enlarge">
+        <img src="/images/news/article/prp/2.webp" alt="PRP全攻略懶人包2" class="responsive-img-enlarge">
+        <img src="/images/news/article/prp/3.webp" alt="PRP全攻略懶人包3" class="responsive-img-enlarge">
+        <img src="/images/news/article/prp/4.webp" alt="PRP全攻略懶人包4" class="responsive-img-enlarge">
+        <img src="/images/news/article/prp/5.webp" alt="PRP全攻略懶人包5" class="responsive-img-enlarge">
 <p>疼痛總是如影隨形，讓你無法享受生活？傳統的消炎藥或類固醇雖然能暫時止痛，卻無法修復受損的組織。<strong>位於新竹的宸新復健科</strong>，專為<strong>新竹科學園區</strong>與在地民眾提供<strong>高濃度血小板血漿 (PRP) 增生療法</strong>及<strong>高濃度葡萄糖水</strong>，這是一種啟動人體自我修復機制的先進治療。</p>
 <br>
 <p>透過抽取自身血液，離心萃取出富含生長因子的血小板，再經由<strong>高解析超音波精準導引</strong>注射至受傷部位。就像是為受損的肌腱、韌帶或關節打入一劑強效的「修復工程隊」，從根本解決疼痛問題，讓您重習活動力。</p>

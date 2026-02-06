@@ -52,6 +52,17 @@ const fullWeightLossData: WeightLossProgram[] = [
     seoDescription: '新竹猛健樂(Mounjaro)瘦瘦針推薦。位於鄰近新竹科學園區，靠近竹北，宸新復健科提供新一代雙重腸泌素(GIP/GLP-1)，減重效果優於傳統善纖達。醫師親自規劃療程，含InBody檢測與飲食指導，有效改善肥胖、脂肪肝與三高問題。',
     keywords: ['新竹猛健樂', '竹北猛健樂', 'Mounjaro價格', '新竹瘦瘦針', '新竹減重門診', '竹科減重', '雙重腸泌素', '減肥針推薦', '胰島素阻抗'],
     contentHtml: `
+    <style>
+  .responsive-img-enlarge { width: 110% !important; max-width: none !important; display: block !important; margin: 1rem auto !important; position: relative !important; left: 50% !important; transform: translateX(-50%) !important; height: auto; }
+  @media (min-width: 768px) { .responsive-img-enlarge { width: 100% !important; left: 0 !important; transform: none !important; } }
+</style>
+        <img src="/images/news/article/mounjaro/1.webp" alt="猛健樂全攻略懶人包1" class="responsive-img-enlarge">
+        <img src="/images/news/article/mounjaro/2.webp" alt="猛健樂全攻略懶人包2" class="responsive-img-enlarge">
+        <img src="/images/news/article/mounjaro/3.webp" alt="猛健樂全攻略懶人包3" class="responsive-img-enlarge">
+        <img src="/images/news/article/mounjaro/4.webp" alt="猛健樂全攻略懶人包4" class="responsive-img-enlarge">
+        <img src="/images/news/article/mounjaro/5.webp" alt="猛健樂全攻略懶人包5" class="responsive-img-enlarge">
+        <img src="/images/news/article/mounjaro/6.webp" alt="猛健樂全攻略懶人包6" class="responsive-img-enlarge">
+
 <p><strong>位於新竹的宸新復健科</strong>，專為<strong>新竹科學園區</strong>與在地民眾提供完整的<strong>猛健樂 (Mounjaro)</strong> 減重療程。這是目前最新的雙重腸泌素受體促效劑，能同時活化 GIP 與 GLP-1 兩種受體。</p>
 <br>
 <p>隨著醫學科技的進步，減重已不再單純依靠意志力。繼第一代 GLP-1 藥物（俗稱瘦瘦針）之後，全球醫學界迎來了更具突破性的「雙重腸泌素」——Tirzepatide（商品名：Mounjaro 猛健樂）。</p><br><p>它不僅延續了抑制食慾的效果，更加入了 GIP 機制來提升代謝與燃脂效率。本院特別整理了本月專屬優惠與完整的衛教資訊，幫助您安全、有效地找回健康的體態。</p>
