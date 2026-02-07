@@ -75,7 +75,7 @@ const matchedCases = casesData.filter(c => {
   const hasTagIncludesTitle = c.tags?.some(tag => disease.title.includes(tag) || tag.includes(disease.title));
 
   return hasMatchingTag || hasMatchingTitle || hasTagIncludesTitle;
-}).slice(0, 3);
+}).slice(0, 6);
 
   // ==========================================
   // SEO Schema 1: 麵包屑
@@ -330,7 +330,7 @@ const matchedCases = casesData.filter(c => {
                     </div>
 
                     {/* 卡片列表 */}
-                    <div className="flex overflow-x-auto pb-4 gap-3 snap-x snap-mandatory md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0 scrollbar-hide">
+                    <div className="flex overflow-x-auto pb-4 gap-4 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0 scrollbar-hide">
                       {matchedCases.map((item) => (
                         <Link 
                           key={item.id} 

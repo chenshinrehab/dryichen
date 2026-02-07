@@ -39,7 +39,7 @@ export const casesData: CaseStudy[] = [
             <li style="border-top: 1px solid #fecdd3; padding-top: 0.5rem; margin-top: 0.5rem;">📉 <strong>整整消失了 12 公分！</strong></li>
         </ul>
         <p>這就是性早熟最可怕的地方——<strong>「小時候高不是高」</strong>。過早啟動的荷爾蒙雖然讓孩子現在看起來比別人高，但卻加速了生長板的閉合，像是提早把未來的身高額度給透支光了。</p>
-                 <p><img src="/images/cases/boneage/1.webp " alt="骨齡X光" style="width: 50%; height: auto;"></p>
+                 <p><img src="/images/cases/boneage/1.webp " alt="骨齡X光" style="width: min(100%, 450px); height: auto; display: block; margin: 0 auto;"></p>
         <h2>與時間賽跑：緊急轉診與柳普林治療</h2>
         <p>面對這消失的12公分，我們一刻都不能等。</p>
         <p>在宸新完成初步評估後，我們立刻協助轉診至醫院的<strong>兒童內分泌科</strong>。經過詳細檢查，確診為性早熟，並隨即開始接受<strong>柳普林</strong> 的治療。</p>
@@ -67,10 +67,55 @@ export const casesData: CaseStudy[] = [
             </a>
           </p>
         </div>
+
+        {/* ✨ 相關成功案例區塊 (單一卡片樣式) */}
+<section className="pt-4 pb-4 border border-slate-800 bg-slate-900/50 rounded-3xl overflow-hidden mx-2 md:mx-4 mb-8">
+  <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    {/* 標題區 */}
+    <div className="flex items-center mb-5">
+      <i className="fa-solid fa-file-medical text-cyan-400 text-xl mr-3"></i>
+      <h2 className="text-2xl font-bold text-white">
+        性早熟治療成功案例
+      </h2>
+    </div>
+
+    {/* 卡片列表 (單一卡片顯示) */}
+    <div className="flex overflow-x-auto pb-4 gap-3 snap-x snap-mandatory md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0 scrollbar-hide">
+      <Link 
+        href="/about/cases/case-precocious-puberty-height" 
+        className="group block flex-shrink-0 w-[66vw] sm:w-64 md:w-auto md:flex-shrink-1 min-w-0 snap-center bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.15)] transition-all duration-300"
+      >
+        {/* 圖片區 */}
+        <div className="h-32 md:h-40 overflow-hidden relative">
+          <img 
+            src="/images/cases/boneage/1.webp" 
+            alt="性早熟治療案例" 
+            className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+          />
+        </div>
+
+        {/* 內容區 */}
+        <div className="p-3">
+          <h3 className="text-base font-bold text-slate-100 mb-1 line-clamp-2 leading-tight">
+            性早熟與身高追蹤案例
+          </h3>
+          <p className="text-slate-400 text-xs line-clamp-2 mb-2">
+            透過骨齡評估與個人化成長管理，成功幫助孩子在發育期間維持穩定身高成長曲線。
+          </p>
+          <div className="text-cyan-500 text-xs font-bold">
+            閱讀案例 <i className="fa-solid fa-arrow-right ml-1"></i>
+          </div>
+        </div>
+      </Link>
+    </div>
+
+  </div>
+</section>
     `,
     date: '2026-02-07', 
     category: '兒童生長',
-    tags: ['性早熟', '骨齡', ], 
+    tags: ['boneage'], 
     coverImage: '/images/cases/boneage/1.webp', 
     relatedTreatments: ['bone-age-assessment', 'pediatric-endocrinology-referral'] 
 },
@@ -98,7 +143,7 @@ export const casesData: CaseStudy[] = [
         <p>謎底揭曉：<strong>這就是典型的「<a href="/diseases/shoulder/calcific-tendinitis" class="text-cyan-400 hover:underline">鈣化性肌腱炎</a>」。</strong></p>
         <p>這也解釋了為什麼之前的 PRP 治療完全無效。PRP 的強項是修復軟組織撕裂，但對於這種堅硬如石的鈣化點，它就像是拿水去澆石頭，根本無法解決物理上的阻塞與發炎。</p>
    
-      <p><img src="/images/cases/cal/1.webp " alt="鈣化肌腱炎X光" style="width: 50%; height: auto;"></p>
+      <p><img src="/images/cases/cal/1.webp " alt="鈣化肌腱炎X光" style="width: min(100%, 450px); height: auto; display: block; margin: 0 auto;"></p>
 
         <h2>對症下藥：聚焦式體外震波的「碎石」計畫</h2>
         <p>面對這種已經形成的硬化結石，正確的武器應該是<strong>「<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波</a>」</strong>。</p>
@@ -114,7 +159,7 @@ export const casesData: CaseStudy[] = [
         <p>為了確認療效，我們再次拍攝 X 光。影像結果令人振奮：</p>
         <p>雖然因為肩膀擺位的角度略有不同，造成鈣化點在影像上的位置往下移動，但可以清楚看到<strong>鈣化明顯變小了</strong>！更重要的是，鈣化點的顏色<strong>沒這麼白了</strong>。</p>
         <p>在 X 光影像學上，<strong>「越白代表越硬」</strong>。顏色變淡，意味著鈣化結構已經變得鬆散、軟化。接下來，只需要搭配復健運動，促進肩部的血液循環，剩下的殘餘鈣化就會隨著時間慢慢被身體「運走」。</p>
-   <p><img src="/images/cases/cal/2.webp " alt="鈣化肌腱炎X光" style="width: 50%; height: auto;"></p>
+   <p><img src="/images/cases/cal/2.webp " alt="鈣化肌腱炎X光" style="width: min(100%, 400px); height: auto; display: block; margin: 0 auto;"></p>
 
         <h2>重拾球拍的笑容</h2>
         <p>看著她從原本進診間時的愁眉苦臉，到現在開始規劃下一次的羽球聚會，這正是精準醫療最大的價值。不用開刀、不用白受罪，只要診斷正確，頑固的肩膀痛也能迎刃而解。</p>
@@ -143,7 +188,7 @@ export const casesData: CaseStudy[] = [
     `,
     date: '2026-02-07', 
     category: '震波治療',
-    tags: ['鈣化性肌腱炎', '聚焦式體外震波'], 
+    tags: ['鈣化性肌腱炎', 'ESWT'], 
     coverImage: '/images/cases/cal/1.webp', 
     relatedTreatments: ['shockwave-therapy', 'ultrasound-guided-injection'] 
 }, 

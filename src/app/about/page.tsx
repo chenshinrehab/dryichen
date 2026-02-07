@@ -62,7 +62,7 @@ const aboutSections = [
   },
   {
     id: 'cases',
-    title: '成功案例分享',
+    title: '治療案例分享',
     subtitle: 'Case Sharing',
     description: '疼痛不是生活的一部分，康復才是。在這裡，我們分享患者透過精準診斷與再生醫學重拾生活品質的真實故事。',
     href: '/about/cases',

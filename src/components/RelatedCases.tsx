@@ -9,7 +9,10 @@ interface RelatedCasesProps {
 
 export default function RelatedCases({ cases }: RelatedCasesProps) {
   if (!cases || cases.length === 0) return null;
-  const displayTitle = `${cases[0].category} 治療成功案例`;
+  
+  // 調整顯示數量上限為 6 個
+  const displayCases = cases.slice(0, 6);
+  const displayTitle = `${displayCases[0].category} 治療成功案例`;
 
   return (
 <section className="pt-4 pb-4 border border-slate-800 bg-slate-900/50 rounded-3xl overflow-hidden shadow-sm">
@@ -23,9 +26,9 @@ export default function RelatedCases({ cases }: RelatedCasesProps) {
           </h2>
         </div>
 
-        {/* 卡片列表容器 */}
+        {/* 卡片列表容器：修改 md:grid-cols-3 確保超過三個會自動換行 */}
         <div className="flex overflow-x-auto pb-0 gap-3 snap-x snap-mandatory md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0 scrollbar-hide">
-          {cases.map((item) => (
+          {displayCases.map((item) => (
             <Link 
               key={item.id} 
               href={`/about/cases/${item.id}`} 

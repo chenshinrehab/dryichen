@@ -13,7 +13,7 @@ export interface WeightLossMetadata {
   image: string;
   features?: string[];
   lastModified?: string;
-  
+  tags?: string[];
   // SEO 欄位 (列表頁可能需要)
   seoTitle?: string;
   seoDescription?: string;
@@ -269,7 +269,8 @@ const fullWeightLossData: WeightLossProgram[] = [
   {
     slug: 'bone-age',
     title: '兒童骨齡評估',
-    lastModified: '2026-01-31',
+    lastModified: '2026-02-07',
+    tags: ['boneage'],  
     subtitle: '掌握黃金生長發育期',
     description: '透過左手X光片判讀骨骼成熟度，預測成年身高，掌握黃金生長發育期。',
     image: '/images/weight-loss/c.webp',
@@ -450,7 +451,13 @@ const fullWeightLossData: WeightLossProgram[] = [
         question: '如果骨齡超前或落後怎麼辦？',
         answer: '骨齡超前可能代表性早熟，雖然現在長得高，但生長板可能提早閉合導致成人身高矮小；骨齡落後則可能與營養或內分泌有關。醫師會根據個別狀況，提供飲食、運動、睡眠或轉介藥物治療的建議。'
       }
+
+      
     ]
+
+
+    
+    
   },
   // -----------------------------------------------------
   // 2. 週纖達 (Ozempic/Wegovy)

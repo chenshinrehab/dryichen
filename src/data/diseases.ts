@@ -798,7 +798,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </ul>
               </p>
           </div>
-      
+             <p><img src="/images/diseases/spine-hip/scolio/f.webp " alt="脊椎側彎X光" style="width: min(80%, 300px); height: auto; display: block; margin: 0 auto;"></p>
           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
               <h4 style="margin-top: 0; color: #0e7490 !important;">優勢二：<a href="/about/clinic/scoliosis-rack" class="text-cyan-400 hover:underline">脊椎側彎專用矯正架</a>🔍️</h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
