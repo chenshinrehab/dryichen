@@ -17,6 +17,149 @@ export interface CaseStudy {
 export const casesData: CaseStudy[] = [
 
   {
+    id: 'case-acl-basketball-cbc',
+    title: '那一聲驚心的「啪」...新竹籃球員的前十字韌帶(ACL)免開刀重生實錄',
+    summary: '宸新復健科籃球隊員在激烈季賽中上籃落地受傷，膝蓋抽出積血確診為前十字韌帶部分撕裂。面對手術重建需漫長復健且影響工作的困境，他選擇相信再生醫學。透過精準超音波導引與三次PRP注射，搭配專屬運動治療，成功修復韌帶，奇蹟般重返熱愛的球場。',
+    contentHtml: `
+        <div class="quote-box" style="border-left: 4px solid #06b6d4; border-radius:8px; padding-left: 1rem; margin: 1.5rem 0; font-style: italic; color: #64748b; background-color: #f8fafc; padding: 1rem;">
+          <p class="mb-0" style="font-size: 1.1rem; font-weight: 500;">「原本以為聽到那聲『啪』，我的籃球夢就碎了。醫生告訴我可能要開刀時，我心都涼了...沒想到，我真的能靠自己的力量好起來。」</p>
+        </div>
+   
+        <p>在新竹業餘籃球聯賽 (CBC) 的賽場上，我們宸新復健科也有一支熱血的專屬球隊。那天正值季賽的關鍵時刻，氣氛緊繃，場上每一個 Play 都至關重要。</p>
+        <p>一次快攻上籃，我們陣中的一員猛將奮力躍起，但在落地的那一瞬間，沒有帥氣的慶祝動作，取而代之的是膝蓋傳來一聲清脆恐怖的<strong>「啪」</strong>。</p>
+        <p>隨即，他抱著膝蓋倒地，冷汗直流。當下腳已經完全站不穩，連走路都成了問題。隊友們立刻將他攙扶下場，並火速送到診所進行緊急處置。</p>
+   
+        <h2>不是積水是「積血」！超音波下的紅色警訊</h2>
+        <p>回到熟悉的診間，我立刻拿起超音波探頭檢查患部。影像顯示關節腔內有大量液體，但這液體的特徵與一般的發炎積水不同。</p>
+        <p>「這不是單純的積水，這是<strong>積血</strong>。」我看著螢幕，神色凝重地告訴他。</p>
+        <p>在骨科與復健科的臨床經驗中，膝蓋受傷若抽出的是血，事情往往不單純。這通常強烈暗示著關節內部結構的損傷，極高機率伴隨著<strong>韌帶斷裂</strong>或是<strong>半月板破裂</strong>。我們先將關節內的積血抽出以緩解腫脹與疼痛，並立即開立轉診單，安排他到醫院進行核磁共振 (MRI) 做進一步確認。</p>
+
+        <figure style="margin: 2rem 0;">
+           <img src="/images/cases/acl/a.webp" alt="膝關節超音波顯示關節積血" style="width: min(100%, 450px); height: auto; display: block; margin: 0 auto;">
+           <figcaption style="color: #64748b; font-size: 0.9rem; margin-top: 0.5rem; text-align: center;">超音波下可見膝關節內明顯的積血訊號，暗示內部結構受損。</figcaption>
+        </figure>
+   
+        <h2>開刀還是等待？十字路口的抉擇</h2>
+        <p>MRI 的報告出來了，結果證實了我們的擔憂：<a href="/diseases/knee/cruciate-ligament-injury" class="text-cyan-400 hover:underline">前十字韌帶 (ACL) 撕裂</a>。</p>
+        <p>醫院的骨科醫師建議進行手術重建。然而，這個建議讓球員陷入了兩難。身為職場中堅份子，手術意味著需要請長假，術後長達 6 到 9 個月的漫長復健期更會嚴重影響他的工作與生活步調。</p>
+        <p>「林醫師，我真的不想開刀...我的工作不能停，有沒有別的方法？」他帶著求救的眼神回到診所。</p>
+        <p>我仔細評估了他的 MRI 影像與理學檢查，發現不幸中的大幸是：<strong>韌帶沒有完全斷裂，仍有連續性</strong>。這意味著，我們還有機會透過再生醫學來「修補」它。</p>
+   
+
+        <figure style="margin: 2rem 0;">
+           <img src="/images/cases/acl/b.webp" alt="MRI十字韌帶撕裂傷" style="width: min(100%, 450px); height: auto; display: block; margin: 0 auto;">
+                </figure>
+
+        <h2>PRP 與運動治療的雙重奏</h2>
+        <p>我們決定採用<strong>非手術的積極療法</strong>。治療計畫的核心是利用他自己血液中的生長因子——<strong><a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP (高濃度血小板血漿)</a></strong>。</p>
+        
+        <ul style="margin: 1.5rem 0; padding-left: 1.5rem; line-height: 1.8;">
+            <li><strong>精準修復：</strong>我們進行了三次的 PRP 注射治療，在超音波導引下，將生長因子精準地送到韌帶撕裂的缺口。</li>
+            <li><strong>地基強化：</strong>光補韌帶是不夠的。我們同步搭配<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療</a>，重點強化大腿的股四頭肌與腿後肌群。強壯的肌肉就像是膝蓋的「動態穩定器」，能分擔韌帶的受力，保護修復中的組織。</li>
+        </ul>
+   
+        <h2>重披戰袍，回到最初的起點</h2>
+        <p>治療的過程需要耐心，從一開始的跛行，到後來能慢跑、跳躍。每一次回診，我們都看見他的膝蓋越來越穩定。</p>
+        <p>幾個月後，他終於再次穿上球衣。看著他在場上奔跑、防守，雖然多了一分謹慎，但那份對籃球的熱愛與自信已經完全回來了，球隊也取得第二名的佳績。這一次，我們用醫學與科學，守護了他的運動生命。</p>
+
+        <figure style="margin: 2rem 0;">
+           <img src="/images/cases/acl/c.webp" alt="CBC籃球聯賽得獎" style="width: min(100%, 450px); height: auto; display: block; margin: 0 auto;">
+                </figure>
+   
+        <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 2rem 0;">
+   
+        <div class="doctor-note" style="background-color: #fff7ed; border-left: 4px solid #f97316; padding: 1.5rem; border-radius:8px; margin-bottom: 2rem;">
+          <h3 style="margin-top: 0; color: #c2410c; font-size: 1.2rem; display: flex; align-items: center; gap: 0.5rem;">
+              <i class="fa-solid fa-user-doctor"></i> 醫師手札
+          </h3>
+          <p style="color: #431407; font-style: italic; margin-bottom: 0;">
+            「膝蓋受傷後若出現『積血』，絕對不能輕忽，這往往是十字韌帶受傷的鐵證。但『撕裂』不代表一定得『重建』。對於部分撕裂的案例，若能早期介入，利用 PRP 促進組織再生，並配合正確的肌力訓練，許多患者其實可以免挨一刀，順利回到運動場上。」
+          </p>
+        </div>
+        
+        <div class="cta-box" style="background-color: #f3f4f6; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; color: #374151;">
+          <h3 style="margin-top: 0; color: #111827;">運動傷害，膝蓋積水久不癒？</h3>
+          <p style="color: #374151;">前十字韌帶損傷不一定要立刻開刀。透過專業超音波評估與再生注射治療，為您的膝蓋爭取修復的機會。</p>
+          <p style="margin-bottom: 0;">
+            <a href="/treatments/prp" style="color: #2563eb; text-decoration: underline; font-weight: bold;">
+              👉 點此了解：PRP 如何修復十字韌帶
+            </a>
+          </p>
+        </div>
+    `,
+    date: '2026-02-07', 
+    category: '運動傷害',
+    tags: ['前後十字韌帶損傷', 'ACL', 'PRP', '膝蓋積水', 'aspiration', 'manual'], 
+    coverImage: '/images/cases/acl/c.webp', 
+    relatedTreatments: ['PRP', 'manual', 'aspiration'] 
+},
+
+  {
+    id: 'case-basketball-ankle-laser',
+    title: '「只剩兩天，我要上場！」新竹高中籃球員的腳踝扭傷急救—高能量雷射神助攻',
+    summary: '來自新竹籃球名校的主力球員，在決賽前兩天的一次上籃中嚴重扭傷，腳踝腫脹積水，寸步難行。面對不能輸的比賽壓力，透過超音波導引抽吸積水，並緊急啟動「高能量雷射」療程。在短短48小時內奇蹟般消腫止痛，順利帶傷上陣助球隊晉級，見證現代運動醫學的救援實力。',
+    contentHtml: `
+      <div class="quote-box" style="border-left: 4px solid #06b6d4; border-radius:8px; padding-left: 1rem; margin: 1.5rem 0; font-style: italic; color: #64748b; background-color: #f8fafc; padding: 1rem;">
+        <p class="mb-0" style="font-size: 1.1rem; font-weight: 500;">「醫生，這場比賽我們準備了整整一年。兩天後就是決賽，無論如何，我都必須站在球場上。」</p>
+      </div>
+  
+      <p>新竹的風，吹不熄籃球場上的熱血。那天傍晚，一位身穿<strong>新竹知名籃球名校</strong>球衣的高中生被隊友攙扶著進了診所。</p>
+      <p>就在幾個小時前，他在一次快攻上籃落地時踩到了防守者的腳。那一瞬間，沒有掌聲，只有腳踝傳來的劇烈撕裂感。看著原本精壯的腳踝迅速腫得像「麵龜」，連走路都需要人架著，這位主力球員的眼神裡充滿了不甘心與焦急。</p>
+      <p>因為，<strong>距離關鍵晉級賽，只剩下不到48小時</strong>。</p>
+  
+      <h2>X光沒事就安心？超音波照出「腫脹真兇」</h2>
+      <p>「骨頭沒事，去冰敷休息就好。」這是一般急診最常聽到的話。X光確實顯示骨頭完整無損，但在高強度的運動傷害中，軟組織的傷往往更棘手。</p>
+      <p>我們立刻換上高階超音波檢查，影像中的黑影揭露了真相：<a href="/diseases/ankle/ankle-sprain" class="text-cyan-400 hover:underline">急性腳踝扭傷</a><strong>合併前距腓韌帶撕裂</strong>，且關節腔內伴隨嚴重的<strong>急性積水（關節炎）</strong>。這就像腳踝裡灌滿了水球，難怪連輕輕踩地都痛徹心扉。</p>
+  
+      <h2>關鍵第一步：<a href="/treatments/ultrasound-guided-aspiration" class="text-cyan-400 hover:underline">超音波導引抽水</a>，釋放壓力</h2>
+      <p>面對這種急性腫脹，時間就是金錢。我們當機立斷，在超音波導引下精準定位，將關節內發炎的組織液抽出。</p>
+      <p>隨著積水被引流出來，關節內的壓力瞬間釋放。十分鐘前還需要兩人攙扶的他，下床時已經能自己行走。「感覺鬆開了很多！」他驚訝地說。但这還不夠，能走路跟能上場跑動，是完全不同的兩個世界。</p>
+  
+      <h2>運動員的秘密武器：<a href="/treatments/high-intensity-laser" class="text-cyan-400 hover:underline">高能量雷射</a></h2>
+      <p>為了在兩天內將發炎反應壓到最低，我們啟動了診所的「加速器」——<strong>高能量雷射</strong>。</p>
+      <p>這不是一般的熱敷或電療。高能量雷射能產生光化學效應，將能量深入傳遞至受傷的韌帶深處：</p>
+      <ul>
+          <li><strong>極速消腫</strong>：加速微循環，代謝發炎物質。</li>
+          <li><strong>深層止痛</strong>：阻斷疼痛神經傳導，降低痛感。</li>
+          <li><strong>組織修復</strong>：提供細胞粒線體能量 (ATP)，加速韌帶癒合。</li>
+      </ul>
+      <p>治療過程中沒有侵入性，只有微微的溫熱感，卻在細胞層級進行著激烈的修復工程。連續兩天，這位球員風雨無阻地來報到，看著腳踝一天比一天消腫。</p>
+  
+
+  
+      <h2>帶傷上陣的榮耀，晉級成功！</h2>
+      <p>比賽當天，雖然腳踝尚未100%完全復原，需要完整的貼紮跟護踝，還不能全力跑動，但經過抽水與高能量雷射的急救，疼痛感已在可控範圍內。</p>
+      <p>憑藉著意志力與恢復的六、七成身手，他在關鍵時刻穩住了球隊的攻防節奏。最終哨音響起，他們贏了！順利晉級下一輪。賽後他傳來訊息：「醫生，還好有那個雷射，不然我今天真的只能坐板凳哭了。」</p>
+  
+      <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 2rem 0;">
+  
+      <div class="doctor-note" style="background-color: #fff7ed; border-left: 4px solid #f97316; padding: 1.5rem; border-radius:8px; margin-bottom: 2rem;">
+        <h3 style="margin-top: 0; color: #c2410c; font-size: 1.2rem; display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fa-solid fa-user-doctor"></i> 醫師手札
+        </h3>
+        <p style="color: #431407; font-style: italic; margin-bottom: 0;">
+          「雖然站在醫師立場，充分休息永遠是最好的處方。但面對運動員『一生只有一次』的比賽時刻，現代醫療科技（如超音波導引抽吸、高能量雷射）能提供強力的後援。我們無法讓傷口瞬間消失，但我們能用最有效率的方式，幫助選手爭取上場圓夢的機會。」
+        </p>
+      </div>
+      
+      <div class="cta-box" style="background-color: #f3f4f6; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; color: #374151;">
+        <h3 style="margin-top: 0; color: #111827;">剛受傷？想加速復原重回賽場？</h3>
+        <p style="color: #374151;">急性扭傷黃金期，別只靠冰敷等待。透過高能量雷射與精準治療，大幅縮短恢復時間。</p>
+        <p style="margin-bottom: 0;">
+          <a href="/treatments/high-intensity-laser" style="color: #2563eb; text-decoration: underline; font-weight: bold;">
+            👉 點此了解：高能量雷射如何加速修復
+          </a>
+        </p>
+      </div>
+    `,
+    date: '2026-02-07', 
+    category: '運動傷害',
+    tags: ['踝關節扭傷', 'laser', 'aspiration'], 
+    coverImage: '/images/cases/ankle/1.webp', 
+    relatedTreatments: ['high-intensity-laser',  'aspiration'] 
+  },
+
+  {
     id: 'case-precocious-puberty-height',
     title: '妳敢信這是一雙7歲的手？全班最高的她，骨齡竟已10歲...偷走身高的性早熟警訊',
     summary: '七歲小女生身高鶴立雞群，家長原本引以為傲，直到摸到乳房硬塊才驚覺不對勁。經朋友介紹至宸新拍攝骨齡，赫然發現骨齡超前三歲！預估身高從遺傳的167公分暴跌至155公分。透過緊急轉診至兒童內分泌科施打柳普林，我們要在這場與生長板閉合的賽跑中，搶回孩子的未來身高。',
@@ -68,50 +211,7 @@ export const casesData: CaseStudy[] = [
           </p>
         </div>
 
-        {/* ✨ 相關成功案例區塊 (單一卡片樣式) */}
-<section className="pt-4 pb-4 border border-slate-800 bg-slate-900/50 rounded-3xl overflow-hidden mx-2 md:mx-4 mb-8">
-  <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-    
-    {/* 標題區 */}
-    <div className="flex items-center mb-5">
-      <i className="fa-solid fa-file-medical text-cyan-400 text-xl mr-3"></i>
-      <h2 className="text-2xl font-bold text-white">
-        性早熟治療成功案例
-      </h2>
-    </div>
-
-    {/* 卡片列表 (單一卡片顯示) */}
-    <div className="flex overflow-x-auto pb-4 gap-3 snap-x snap-mandatory md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0 scrollbar-hide">
-      <Link 
-        href="/about/cases/case-precocious-puberty-height" 
-        className="group block flex-shrink-0 w-[66vw] sm:w-64 md:w-auto md:flex-shrink-1 min-w-0 snap-center bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.15)] transition-all duration-300"
-      >
-        {/* 圖片區 */}
-        <div className="h-32 md:h-40 overflow-hidden relative">
-          <img 
-            src="/images/cases/boneage/1.webp" 
-            alt="性早熟治療案例" 
-            className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-          />
-        </div>
-
-        {/* 內容區 */}
-        <div className="p-3">
-          <h3 className="text-base font-bold text-slate-100 mb-1 line-clamp-2 leading-tight">
-            性早熟與身高追蹤案例
-          </h3>
-          <p className="text-slate-400 text-xs line-clamp-2 mb-2">
-            透過骨齡評估與個人化成長管理，成功幫助孩子在發育期間維持穩定身高成長曲線。
-          </p>
-          <div className="text-cyan-500 text-xs font-bold">
-            閱讀案例 <i className="fa-solid fa-arrow-right ml-1"></i>
-          </div>
-        </div>
-      </Link>
-    </div>
-
-  </div>
-</section>
+        
     `,
     date: '2026-02-07', 
     category: '兒童生長',
@@ -286,18 +386,25 @@ export const casesData: CaseStudy[] = [
         <p>「老師，我們先別急著開刀。」我看著影像中殘存的肌腱組織，判斷還有再生的機會：「我們試試看用修復的方式，讓它自己長回來。」</p>
   
         <figure style="margin: 2rem 0;">
-           <img src="/images/cases/art/b.webp" alt="旋轉肌撕裂修復過程超音波對照圖" style="border-radius: 8px; width: 60%;">
+           <img src="/images/cases/art/e.webp" alt="旋轉肌撕裂超音波圖" style="width: min(100%, 450px); height: auto; display: block; margin: 0 auto;">
         </figure>
 
         <h2>看得見的癒合：六次治療的修復之路</h2>
         <p>我們擬定了治療計畫：<strong>超音波導引注射</strong>搭配<strong>高濃度葡萄糖 (Prolotherapy)</strong>。</p>
         <p>這是一場耐心與信心的馬拉松。第一次因為撕裂範圍很大，先做了<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>
             ；隨後的五次治療，則是改用兩周一次的高濃度葡萄糖增生注射。</p>
+    <figure style="margin: 2rem 0;">
+           <img src="/images/cases/art/c.webp" alt="旋轉肌撕裂注射超音波圖" style="width: min(100%, 450px); height: auto; display: block; margin: 0 auto;">
+        </figure>
   
         <p>身為美術老師，她對「視覺」特別敏銳。每次回診，我們都會一起看著超音波螢幕。這成了我們之間新的「評圖」時間——評的不是油畫，而是肌腱的修復進度。</p>
         <p>「林醫師，這個黑黑的<strong>破洞好像真的變小</strong>了！」老師指著螢幕驚喜地說。</p>
         <p>是的，每一次注射，我們都親眼見證傷口<strong>一點一滴地癒合</strong>。隨著影像上的黑影縮小，老師笑容也變多了。她開始能睡個好覺，手能舉高了，最重要的是，她終於能再次拿起畫筆。</p>
   
+    <figure style="margin: 2rem 0;">
+           <img src="/images/cases/art/d.webp" alt="旋轉肌撕裂注射後超音波圖" style="width: min(100%, 450px); height: auto; display: block; margin: 0 auto;">
+        </figure>
+
         <h2>藝術與醫術的交會</h2>
         <p>最後一次回診，超音波顯示旋轉肌已經順利癒合。老師轉動著肩膀，開心地告訴我她已經開始構思新的畫作。</p>
         <p>看著老師離去的背影，我很慶幸能運用我的專業，回報當年的啟蒙之恩。醫療有時不僅是治癒身體，更是為了守護病人熱愛生活的能力。</p>
@@ -354,7 +461,7 @@ export const casesData: CaseStudy[] = [
           <p>其實阿嬤的膝蓋退化相當嚴重，本來已經打算開刀置換人工關節。但因為她本身心肺功能不佳，麻醉與手術的風險極高，家人不敢冒險，她自己也害怕下不了手術台。在進退兩難、寸步難行的情況下，她抱著最後一絲希望來嘗試。</p>
           
           <figure style="margin: 2rem 0;">
-            <img src="/images/cases/prpknee/a.webp" alt="退化性關節炎X光顯示內側關節間隙狹窄" style="border-radius: 8px; width: 40%;">
+            <img src="/images/cases/prpknee/a.webp" alt="退化性關節炎X光顯示內側關節間隙狹窄" style="width: min(100%, 450px); height: auto; display: block; margin: 0 auto;">
            </figure>
          
           <h2>為什麼之前的 PRP 沒效？關鍵在「細節」</h2>
@@ -371,14 +478,21 @@ export const casesData: CaseStudy[] = [
           </ul>
           
           <figure style="margin: 2rem 0;">
-            <img src="/images/cases/prpknee/b.webp" alt="超音波導引下精準注射半月板破裂處" style="border-radius: 8px; width: 50%;">
+            <img src="/images/cases/prpknee/b.webp" alt="超音波導引下精準注射半月板破裂處" style="width: min(100%, 450px); height: auto; display: block; margin: 0 auto;">
             
           </figure>
     
           <h2>從舉步維艱到丟掉拐杖</h2>
           <p>第一次治療後，阿嬤回診時神情輕鬆許多，她說：「醫師，好像稍微比較不痛了耶！」這微小的進步建立了她的信心。我們按部就班，一個月進行一次治療。</p>
+          <p>超音波影像也可以看到半月板破損處開始癒合，不過畢竟有點年紀且破損嚴重，不可能完全修復好，能擺脫疼痛已經大幅改善生活品質了。</p>
           <p>到了第三次療程結束後的回診，打開診間門看到一個熟悉的身影——但這次，她手上沒有拿拐杖。阿嬤走進診間，笑得非常開心，那是久違的自信。她說：「醫師，我終於可以不用靠這支拐杖，可以行動自如了！」</p>
       
+          
+          <figure style="margin: 2rem 0;">
+            <img src="/images/cases/prpknee/c.webp" alt="半月板PRP注射後超音波圖" style="width: min(100%, 450px); height: auto; display: block; margin: 0 auto;">
+            
+          </figure>
+
           <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 2rem 0;">
     
           <div class="doctor-note" style="background-color: #fff7ed; border-left: 4px solid #f97316; padding: 1.5rem; border-radius: 8px ; margin-bottom: 2rem;">

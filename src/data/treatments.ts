@@ -1052,6 +1052,7 @@ const fullTreatmentsData: Treatment[] = [
   slug: 'ultrasound-guided-aspiration',
   title: '超音波導引關節抽積液/血腫',
   lastModified: '2026-01-31',
+  tags: ['aspiration'],
   subtitle: '精準導引解除「壓力鍋」，膝蓋積水、肌肉血腫的救星',
   description: '膝蓋腫得像麵龜？腳踝扭傷腫脹不退？肌肉撕裂瘀血散不掉？宸新復健科運用高解析超音波導引，精準抽吸關節積水與血腫。解決退化性關節炎腫脹、加速運動傷害復原，並有效預防肌肉鈣化，是安全、可視化的精準醫療。',
   image: '/images/treatments/i.webp',
