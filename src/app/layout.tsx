@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     images: [`${SITE_URL}/images/og-default.jpg`],
   },
   icons: {
-    icon: '/favicon.png',
+    icon: '/favicon.svg',
     apple: '/apple-touch-icon.png',
   },
   robots: {
