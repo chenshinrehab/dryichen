@@ -100,8 +100,17 @@ export default function TreatmentDetailPage({ params }: PageProps) {
       : undefined,
     medicalSpecialty: [
       { '@type': 'MedicalSpecialty', name: 'Physical Medicine and Rehabilitation' },
-      { '@type': 'MedicalSpecialty', name: 'Orthopedics' }
+      { '@type': 'MedicalSpecialty', name: 'Orthopedics' },
+      { "@type": "MedicalSpecialty", "name": "Sports Medicine" }
     ],
+"bodyLocation": [
+    { "@type": "AnatomicalStructure", "name": "Knee", "alternateName": "膝蓋" },
+    { "@type": "AnatomicalStructure", "name": "Shoulder", "alternateName": "肩膀" },
+    { "@type": "AnatomicalStructure", "name": "Elbow", "alternateName": "手肘" },
+    { "@type": "AnatomicalStructure", "name": "Ankle", "alternateName": "足踝" }
+  ],
+  "howPerformed": "Ultrasound-guided injection (超音波導引注射)",
+
     provider: {
       '@type': 'Physician',
       'name': '林羿辰 醫師',

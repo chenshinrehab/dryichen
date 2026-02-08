@@ -182,7 +182,7 @@ export default function Footer() {
               <span className="font-mono tracking-wide">(03) 564-7999</span>
             </p>
             <a 
-              href="https://maps.app.goo.gl/YourActualGoogleMapsLink" 
+              href="https://maps.app.goo.gl/Lra7Zo5CJxXLdbSJ6" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="flex items-center justify-center lg:justify-end gap-2 hover:text-cyan-400 transition-colors"

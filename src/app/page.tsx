@@ -113,8 +113,22 @@ const medicalClinicSchema = {
     name: '林羿辰',
     jobTitle: '院長',
     image: `${SITE_URL}/images/main/a.webp`,
-    alumniOf: { '@type': 'EducationalOrganization', name: '國立台灣大學醫學系' },
-    medicalSpecialty: ['RehabilitationPhysician', 'SportsMedicine']
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '光復路一段371號B1',
+      addressLocality: '新竹市',
+      addressRegion: '東區',
+      postalCode: '300',
+      addressCountry: 'TW',
+    },
+    alumniOf: { 
+      '@type': 'EducationalOrganization', 
+      name: '國立台灣大學醫學系' 
+    },
+    medicalSpecialty: [
+      'Physical Medicine and Rehabilitation',
+      'SportsMedicine'
+    ]
   },
 
   "hasMap": "https://maps.app.goo.gl/Lra7Zo5CJxXLdbSJ6",
