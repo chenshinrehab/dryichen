@@ -107,14 +107,38 @@ export default function DiseaseDetailPage({ params }: PageProps) {
       name: '林羿辰醫師',
       url: SITE_URL,
       jobTitle: '院長',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '光復路一段371號B1',
+        addressLocality: '新竹市',
+        addressRegion: '東區',
+        postalCode: '300',
+        addressCountry: 'TW',
+      },
       affiliation: {
           '@type': 'MedicalClinic',
-          name: '宸新復健科診所'
+          name: '宸新復健科診所',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: '光復路一段371號B1',
+            addressLocality: '新竹市',
+            addressRegion: '東區',
+            postalCode: '300',
+            addressCountry: 'TW',
+          }
       }
     },
     reviewedBy: {
       '@type': 'Physician',
-      name: '林羿辰醫師'
+      name: '林羿辰醫師',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '光復路一段371號B1',
+        addressLocality: '新竹市',
+        addressRegion: '東區',
+        postalCode: '300',
+        addressCountry: 'TW',
+      }
     },
     publisher: {
         '@type': 'MedicalClinic',
@@ -122,6 +146,14 @@ export default function DiseaseDetailPage({ params }: PageProps) {
         logo: {
             '@type': 'ImageObject',
             url: `${SITE_URL}/images/logo.webp`
+        },
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '光復路一段371號B1',
+          addressLocality: '新竹市',
+          addressRegion: '東區',
+          postalCode: '300',
+          addressCountry: 'TW',
         }
     },
     mainEntity: {

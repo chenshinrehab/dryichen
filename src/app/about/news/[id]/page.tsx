@@ -78,11 +78,27 @@ export default function NewsDetailPage({ params }: PageProps) {
     author: { 
         '@type': 'Person', 
         name: '林羿辰醫師',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '光復路一段371號B1',
+          addressLocality: '新竹市',
+          addressRegion: '東區',
+          postalCode: '300',
+          addressCountry: 'TW',
+        },
         url: `${SITE_URL}/about/doctors`
     },
     publisher: { 
         '@type': 'MedicalClinic', 
         name: '宸新復健科診所',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '光復路一段371號B1',
+          addressLocality: '新竹市',
+          addressRegion: '東區',
+          postalCode: '300',
+          addressCountry: 'TW',
+        },
         logo: {
             '@type': 'ImageObject',
             url: `${SITE_URL}/logo.webp`
@@ -93,7 +109,15 @@ export default function NewsDetailPage({ params }: PageProps) {
         lastReviewed: post.date,
         reviewedBy: {
             '@type': 'Physician',
-            name: '林羿辰醫師'
+            name: '林羿辰醫師',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: '光復路一段371號B1',
+              addressLocality: '新竹市',
+              addressRegion: '東區',
+              postalCode: '300',
+              addressCountry: 'TW',
+            },
         }
     })
   }

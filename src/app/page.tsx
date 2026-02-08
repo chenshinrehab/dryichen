@@ -406,7 +406,7 @@ export default function Home() {
   專屬停車位
 </Link>
                                     <span className="text-sm bg-cyan-900/40 border border-cyan-500/30 text-cyan-100 px-3 py-1.5 rounded-md flex items-center">
-                                         <FaWheelchair className="mr-2 text-blue-400" />無障礙空間
+                                         <FaWheelchair className="mr-2 text-blue-400" />無障礙空間(電梯)
                                     </span>
                                  </div>
                               </div>

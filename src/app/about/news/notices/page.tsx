@@ -59,12 +59,45 @@ export default function NoticesPage() {
     publisher: {
         '@type': 'MedicalClinic',
         name: '新竹宸新復健科診所',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '光復路一段371號B1',
+          addressLocality: '新竹市',
+          addressRegion: '東區',
+          postalCode: '300',
+          addressCountry: 'TW',
+        },
         logo: {
             '@type': 'ImageObject',
             url: `${SITE_URL}/logo.webp`
         }
     },
-    author: { '@type': 'MedicalOrganization', name: '新竹宸新復健科', url: SITE_URL },
+    author: {
+      '@type': 'Physician',
+      name: '林羿辰醫師',
+      url: SITE_URL,
+      jobTitle: '院長',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '光復路一段371號B1',
+        addressLocality: '新竹市',
+        addressRegion: '東區',
+        postalCode: '300',
+        addressCountry: 'TW',
+      },
+      affiliation: {
+          '@type': 'MedicalClinic',
+          name: '宸新復健科診所',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: '光復路一段371號B1',
+            addressLocality: '新竹市',
+            addressRegion: '東區',
+            postalCode: '300',
+            addressCountry: 'TW',
+          }
+      }
+    },
     blogPost: noticesList.map((item) => ({
         '@type': 'BlogPosting',
         headline: item.title,
