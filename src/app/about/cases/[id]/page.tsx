@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const canonicalUrl = `${SITE_URL}/about/cases/${params.id}`
    
   return {
-    title: pageTitle,
+    title: `${post.title} | 新竹宸新復健科`,
     description: post.seoDescription || post.summary,
     keywords: post.tags,
     alternates: {

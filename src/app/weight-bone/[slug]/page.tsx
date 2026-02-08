@@ -23,21 +23,23 @@ export async function generateStaticParams() {
   return getAllWeightLossProgramSlugs()
 }
 
-// 1. 動態 Meta 設定 (SEO 核心)
+// 1. 動態 Meta 設定 (修正標題重複)
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params
   const program = getWeightLossProgramBySlug(slug)
   if (!program) return { title: '項目不存在' }
 
-  // ★★★ 定義標準網址：確保唯一性 ★★★
   const canonicalUrl = `${SITE_URL}/weight-bone/${slug}`
 
+  // ✅ 核心修正：切除資料庫內手寫的後綴，交給 layout 模板處理，避免重複
+  const baseTitle = program.seoTitle || program.title;
+  const cleanTitle = baseTitle.split('|')[0].split('-')[0].trim();
+
   return {
-    title: program.seoTitle || `${program.title} - 新竹減重與骨齡門診`,
+    title: `${cleanTitle} | 新竹宸新復健科`,
     description: program.seoDescription || program.description,
     keywords: program.keywords || ['新竹減重', '瘦瘦針', '骨齡', '兒童生長'],
     
-    // ★★★ 加入 Canonical Tag ★★★
     alternates: {
       canonical: canonicalUrl,
     },
@@ -47,7 +49,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: program.seoDescription || program.description,
       url: canonicalUrl,
       type: 'article',
-      // 確保圖片路徑包含完整的網域 (絕對路徑)
       images: program.images && program.images.length > 0 
         ? [
             {
@@ -412,16 +413,14 @@ export default async function WeightBoneDetailPage({ params }: PageProps) {
                 )}
               </div>
 
-              {/* ✨ 新增：自動帶入的案例區塊 (修正標籤匹配不顯示問題) */}
+              {/* 相關案例區塊 */}
               {matchedCases.length > 0 && (
-                  <section className="pt-4 pb-4 border border-slate-800 bg-slate-900/50 rounded-3xl overflow-hidden mx-2 md:mx-4 mb-8">
-                   <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8"></div>
-
-                   <div className="flex items-center mb-5">
+                  <section className="pt-4 pb-4 border-t border-slate-800 bg-slate-900/50 overflow-hidden px-4 md:px-10">
+                    <div className="flex items-center mb-5 mt-6">
                       <i className="fa-solid fa-file-medical text-cyan-400 text-xl mr-3"></i>
-                      <h3 className="text-2xl font-bold text-white">相關治療案例</h3>
+                      <h3 className="text-2xl font-bold text-white m-0">相關治療案例</h3>
                     </div>
-                   
+                    
                     <div className="flex overflow-x-auto pb-4 gap-4 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0 scrollbar-hide">
                       {matchedCases.map((item) => (
                         <Link 
@@ -436,14 +435,14 @@ export default async function WeightBoneDetailPage({ params }: PageProps) {
                              <h4 className="text-lg font-bold text-slate-100 mb-2 line-clamp-2 leading-tight group-hover:text-cyan-400 transition-colors">{item.title}</h4>
                              <p className="text-slate-400 text-sm line-clamp-2 mb-4 leading-relaxed">{item.summary}</p>
                              <div className="text-cyan-500 text-sm font-bold flex items-center">
-                                閱讀案例詳情 <i className="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                               閱讀案例詳情 <i className="fa-solid fa-arrow-right ml-2 text-xs"></i>
                              </div>
                           </div>
                         </Link>
                       ))}
-                   </div>
-                </section>
-              )}
+                    </div>
+                  </section>
+                )}
 
               {/* 作者權威聲明 */}
               <div className="mt-0 pt-0 px-4 md:px-10 border-t border-slate-700/40 text-right">

@@ -1,3 +1,4 @@
+// src/app/treatments/[slug]/page.tsx
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
@@ -5,12 +6,10 @@ import { getTreatmentBySlug, getAllTreatmentSlugs } from '@/data/treatments'
 import ArticleDetail, { ArticleData } from '@/components/ArticleDetail'
 
 // 1. 匯入資料抓取功能
-import { getRelatedCases } from '@/data/cases'        // 抓取案例資料
-
-// 2. 匯入底部組件
+import { getRelatedCases } from '@/data/cases'         // 抓取案例資料
 
 // 定義常數
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
 
 interface PageProps {
   params: {
@@ -30,18 +29,25 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const canonicalUrl = `${SITE_URL}/treatments/${params.slug}`
 
   return {
-    title: treatment.seoTitle || `${treatment.title} - 新竹宸新復健科`,
+    // 修正：移除後綴診所名，避免與 layout.tsx 模板疊加
+    title: treatment.seoTitle || `${treatment.title}  | 新竹宸新復健科 `, 
     description: treatment.seoDescription || treatment.description,
-    keywords: treatment.keywords || ['新竹復健', '骨科', treatment.title],
+    keywords: treatment.keywords || ['新竹復健', '骨科', treatment.title, '宸新復健科'],
     alternates: {
         canonical: canonicalUrl,
     },
     openGraph: {
-      title: treatment.title,
+      title: treatment.title ,
       description: treatment.seoDescription || treatment.description,
       url: canonicalUrl,
       type: 'article',
+      siteName: '新竹宸新復健科診所',
       images: treatment.images && treatment.images.length > 0 ? [treatment.images[0].src] : [],
+    },
+    // 加入在地化 Geo 標記
+    other: {
+      'geo.region': 'TW-HCH',
+      'geo.placename': '新竹市',
     }
   }
 }
@@ -56,7 +62,6 @@ export default function TreatmentDetailPage({ params }: PageProps) {
   // --- 資料獲取區 ---
 
   // A. 抓取「成功案例」 (根據 Tags)
-  // 這份資料會傳給 ArticleDetail，顯示在問答下方
   const matchedCases = getRelatedCases(treatment.tags);
 
   // ------------------
@@ -72,7 +77,7 @@ export default function TreatmentDetailPage({ params }: PageProps) {
     whyChooseUs: treatment.whyChooseUs,
     treatmentFocus: treatment.treatmentFocus,
     qaList: treatment.qaList,
-    keywords: treatment.keywords, // 補上 keywords 讓 Hero 模式也能用
+    keywords: treatment.keywords, 
   }
 
   // Schema (JSON-LD)
@@ -96,60 +101,64 @@ export default function TreatmentDetailPage({ params }: PageProps) {
     procedureType: 'Non-surgical',
     url: currentPageUrl,
     image: treatment.images && treatment.images.length > 0 
-      ? treatment.images.map(img => img.src) 
+      ? treatment.images.map(img => img.src.startsWith('http') ? img.src : `${SITE_URL}${img.src}`) 
       : undefined,
     medicalSpecialty: [
       { '@type': 'MedicalSpecialty', name: 'Physical Medicine and Rehabilitation' },
       { '@type': 'MedicalSpecialty', name: 'Orthopedics' },
       { "@type": "MedicalSpecialty", "name": "Sports Medicine" }
     ],
-"bodyLocation": [
-    { "@type": "AnatomicalStructure", "name": "Knee", "alternateName": "膝蓋" },
-    { "@type": "AnatomicalStructure", "name": "Shoulder", "alternateName": "肩膀" },
-    { "@type": "AnatomicalStructure", "name": "Elbow", "alternateName": "手肘" },
-    { "@type": "AnatomicalStructure", "name": "Ankle", "alternateName": "足踝" }
-  ],
-  "howPerformed": "Ultrasound-guided injection (超音波導引注射)",
-
+    bodyLocation: [
+      { "@type": "AnatomicalStructure", "name": "Knee", "alternateName": "膝蓋" },
+      { "@type": "AnatomicalStructure", "name": "Shoulder", "alternateName": "肩膀" },
+      { "@type": "AnatomicalStructure", "name": "Elbow", "alternateName": "手肘" },
+      { "@type": "AnatomicalStructure", "name": "Ankle", "alternateName": "足踝" }
+    ],
+    howPerformed: "Ultrasound-guided injection (超音波導引注射)",
     provider: {
       '@type': 'Physician',
-      'name': '林羿辰 醫師',
-      'url': `${SITE_URL}/about/doctors`,
+      name: '林羿辰 醫師',
+      url: `${SITE_URL}/about/doctors`,
       jobTitle: '院長',
-    image: `${SITE_URL}/images/main/a.webp`,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '光復路一段371號B1',
-      addressLocality: '新竹市',
-      addressRegion: '東區',
-      postalCode: '300',
-      addressCountry: 'TW',
-    },
-    alumniOf: { 
-      '@type': 'EducationalOrganization', 
-      name: '國立台灣大學醫學系' 
-    },
-    medicalSpecialty: [
-      'Physical Medicine and Rehabilitation',
-      'SportsMedicine'
-    ]
+      image: `${SITE_URL}/images/main/a.webp`,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '光復路一段371號B1',
+        addressLocality: '新竹市',
+        addressRegion: '東區',
+        postalCode: '300',
+        addressCountry: 'TW',
+      },
+      alumniOf: { 
+        '@type': 'EducationalOrganization', 
+        name: '國立台灣大學醫學系' 
+      },
+      medicalSpecialty: [
+        'Physical Medicine and Rehabilitation',
+        'SportsMedicine'
+      ]
     },
     location: {
       '@type': 'MedicalClinic',
-      'name': '宸新復健科診所',
-      'address': { 
+      name: '宸新復健科診所',
+      url: SITE_URL,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/logo.webp`
+      },
+      address: { 
          '@type': 'PostalAddress',
          'streetAddress': '光復路一段371號B1',
          'addressLocality': '東區',
          'addressRegion': '新竹市',
          'addressCountry': 'TW'
-               },
-     'areaServed': [
-    { "@type": "City", "name": "新竹市" },
-    { "@type": "City", "name": "竹北市" },
-    { "@type": "Place", "name": "新竹科學園區" },
-    { "@type": "AdministrativeArea", "name": "新竹縣" }
-  ]
+      },
+      'areaServed': [
+        { "@type": "City", "name": "新竹市" },
+        { "@type": "City", "name": "竹北市" },
+        { "@type": "Place", "name": "新竹科學園區" },
+        { "@type": "AdministrativeArea", "name": "新竹縣" }
+      ]
     }
   }
 
@@ -172,18 +181,13 @@ export default function TreatmentDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLdProcedure} />
       {jsonLdFAQ && <JsonLd data={jsonLdFAQ} />}
 
-      {/* 1. 主文區塊 (包含成功案例) */}
       <ArticleDetail 
         data={articleData} 
         backLink={{ href: '/treatments', label: '返回治療列表' }}
         currentUrl={currentPageUrl}
         layoutStyle="standard" 
-        
-        // ★ 關鍵修改：把案例資料傳進去，讓組件內部決定顯示位置
         relatedCases={matchedCases}
       />
-
-
     </>
   )
 }

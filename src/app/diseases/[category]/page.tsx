@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     metadataBase: new URL(SITE_URL),
     
     // 修正：移除後綴診所名，避免與 layout.tsx 模板疊加
-    title: `${category.title} - 症狀與治療介紹`,
+    title: `${category.title} - 症狀與治療介紹 | 新竹宸新復健科`,
     description: `新竹宸新復健科提供${category.title}相關的疾病衛教，包含：${category.diseases.map(d => d.title).join('、')}等常見症狀與治療方式。`,
     keywords: [`${category.title}`, '新竹骨科', '新竹復健', '宸新復健科', ...category.diseases.map(d => d.title)],
     
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
 
     openGraph: {
-      title: `${category.title} - 症狀與治療介紹 `,
+      title: `${category.title} - 症狀與治療介紹 | 新竹宸新復健科`,
       description: category.description,
       url: canonicalUrl,
       images: [{ url: ogImage, width: 1200, height: 630, alt: category.title }],

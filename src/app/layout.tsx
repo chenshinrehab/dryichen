@@ -1,3 +1,4 @@
+// src/app/layout.tsx
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -18,14 +19,21 @@ export const viewport: Viewport = {
   maximumScale: 5,
 }
 
+// ==========================================
+// 1. 全站 Metadata 配置
+// ==========================================
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
+    // 當子頁面沒有設定 title 時顯示的預設標題
     default: '新竹宸新復健科診所 - 骨科/復健/兒童早療推薦 | 林羿辰醫師',
-    template: '%s | 新竹宸新復健科'
+    // 子頁面標題的模板：%s 會被子頁面的 title 取代
+    // 重要：請確保所有子頁面 page.tsx 內的 title 不要再包含「 | 新竹宸新復健科」
+    template: '%s'
   },
-  description: '新竹推薦復健科，由台大醫師林羿辰院長親自看診。提供高解析超音波導引PRP注射、聚焦式震波治療、徒手物理治療與兒童骨齡生長評估。',
+  description: '新竹推薦復健科，由台大醫師林羿辰院長親自看診。提供高解析超音波導引PRP注射、聚焦式震波治療、徒手物理治療與兒童骨齡生長評補。',
   keywords: ['新竹復健科', '新竹骨科', '林羿辰醫師', 'PRP注射', '震波治療', '兒童早療', '新竹物理治療', '竹科復健推薦'],
+  
   verification: {
     google: null, 
   },
@@ -33,8 +41,16 @@ export const metadata: Metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: './',
+    // 修正：首頁使用絕對路徑以利 SEO
+    canonical: SITE_URL,
   },
+  
+  // ✨ 全站地理位置標記 (Local SEO 核心)
+  other: {
+    'geo.region': 'TW-HCH',
+    'geo.placename': '新竹市',
+  },
+
   openGraph: {
     type: 'website',
     locale: 'zh_TW',
@@ -74,11 +90,15 @@ export const metadata: Metadata = {
   },
 }
 
+// ==========================================
+// 2. Root Layout 組件
+// ==========================================
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  // 診所結構化數據 (JSON-LD)
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'MedicalClinic',
@@ -111,18 +131,18 @@ export default function RootLayout({
   return (
     <html lang="zh-TW" className="scroll-smooth">
       <head>
+        {/* 結構化數據 */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
-        {/* 1. 保留必要的字體與外部資源預連接 */}
+        {/* 外部資源預連接 */}
         <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.youtube-nocookie.com" />
         
-        {/* 2. ✨ 已移除 FontAwesome CSS 與動態加載 Script，改用 react-icons SVG 模式提升速度 */}
-
+        {/* 全域樣式補強 */}
         <style>{`
           img { height: auto; }
           h1 { font-size: 2.25rem; }

@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     const canonicalUrl = `${SITE_URL}/about/clinic/${slug}`;
     return {
       // 修正：移除後綴，交給 layout.tsx 模板處理以避免重複
-      title: `${facility.title} - 診所設備介紹`, 
+      title: `${facility.title} - 診所設備介紹 | 新竹宸新復健科`, 
       description: facility.description,
       alternates: { canonical: canonicalUrl },
       openGraph: {

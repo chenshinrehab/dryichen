@@ -43,12 +43,12 @@ const allItems = facilitiesData.map((item) => {
 // ==========================================
 export const metadata: Metadata = { 
   // 修正：移除後綴診所名，避免與 layout.tsx 模板疊加
-  title: '診所環境與設備介紹 - 數位X光/超音波/骨科復健區',
+  title: '診所環境與設備介紹 - 數位X光/超音波/骨科復健區 | 新竹宸新復健科',
   description: '新竹宸新復健科擁有醫學中心等級設備。包含數位X光、高解析超音波、瑞士聚焦式震波、兒童早療教室、獨立徒手治療室及專屬停車場，提供最優質的就醫環境。',
   keywords: ['新竹復健科設備', 'X光檢查', '超音波檢查', 'PRP設備', '兒童早療', '骨科復健', '停車方便', '宸新復健科環境'],
   alternates: { canonical: CANONICAL_URL },
   openGraph: {
-    title: '診所環境與設備介紹 - 宸新復健科',
+    title: '診所環境與設備介紹 - 新竹宸新復健科',
     description: '醫學中心等級設備：數位X光、高解析超音波、瑞士震波、兒童早療教室。',
     url: CANONICAL_URL,
     type: 'website',

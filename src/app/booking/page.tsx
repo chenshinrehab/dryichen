@@ -24,7 +24,7 @@ const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 // 1. Meta 設定 (優化 Title 與在地化標記)
 // ==========================================
 export const metadata: Metadata = {
-  title: '馬上預約 - 新竹網路掛號/APP預約/Line掛號 ',
+  title: '馬上預約 - 新竹網路掛號/APP預約/Line掛號 | 新竹宸新復健科 ',
   description: '新竹宸新復健科提供便利的數位掛號服務。支援免APP網頁直接掛號、Android/iOS App 下載預約，或加入 Line 官方帳號線上掛號。免排隊、即時查詢看診進度。',
   keywords: ['新竹掛號', '網路預約', '診所APP', 'Line掛號', '看診進度查詢', '新竹復健科預約', '宸新掛號', '林羿辰醫師掛號'],
   alternates: {

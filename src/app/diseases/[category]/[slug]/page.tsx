@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     // 修正：這裡移除手寫的「| 新竹宸新復健科」，讓 layout 的 template 自動組合，避免重複
-    title: `${disease.title} - 疾病衛教`, 
+    title: `${disease.title} - 疾病衛教 | 新竹宸新復健科`, 
     description: disease.seoDescription || disease.description,
     keywords: disease.seoKeywords,
     

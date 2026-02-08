@@ -19,7 +19,7 @@ export async function generateStaticParams() {
 // ==========================================
 export const metadata: Metadata = { 
   // 修正：移除後綴診所名，避免與 layout.tsx 模板疊加
-  title: '臨床治療案例分享 - PRP與震波治療成效',
+  title: '臨床治療案例分享 - PRP與震波治療成效 | 新竹宸新復健科',
   description: '匯集新竹宸新復健科的實際臨床治療案例。透過高濃度血小板(PRP)、聚焦式震波與徒手物理治療，協助患者改善退化性關節炎、五十肩、運動傷害與兒童生長發育問題。',
   keywords: ['PRP治療案例', '震波治療心得', '五十肩治療', '退化性關節炎改善', '新竹復健推薦', '宸新復健科案例'],
   alternates: {

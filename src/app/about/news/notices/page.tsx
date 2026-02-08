@@ -15,7 +15,7 @@ const noticesList = newsList.filter(item => item.category === '門診公告');
 // 1. Meta 設定 (解決標題重複與加入 Geo 標記)
 export const metadata: Metadata = { 
   // 修正：僅提供頁面標題，讓 Layout Template 自動加上「 | 新竹宸新復健科」
-  title: '門診異動公告 - 休診與代診通知', 
+  title: '門診異動公告 - 休診與代診通知 | 新竹宸新復健科', 
   description: '查詢新竹宸新復健科最新的門診異動、國定假日休診公告、醫師代診資訊，掌握看診動態。',
   keywords: ['門診時間', '休診公告', '復健科門診', '新竹復健科公告', '宸新復健科異動'],
   alternates: {

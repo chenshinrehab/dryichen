@@ -25,7 +25,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
    
   return {
     // 修正：確保標題不重複堆疊診所名稱
-    title: post.seoTitle ? post.seoTitle : `${post.title} `,
+    // 修正後的語法
+    title: post.seoTitle ? post.seoTitle : `${post.title} | 新竹宸新復健科`,
     description: post.seoDescription || post.summary,
     keywords: post.keywords,
     

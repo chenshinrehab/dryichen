@@ -18,7 +18,7 @@ const articlesList = newsList.filter(item => item.category !== '門診公告');
 // ==========================================
 export const metadata: Metadata = { 
   // 修正：僅提供頁面標題，由 layout.tsx 模板附加診所名稱
-  title: '復健衛教文章 - 最新醫療新知',
+  title: '復健衛教文章 - 最新醫療新知 | 新竹宸新復健科',
   description: '提供新竹宸新復健科最新的復健醫學衛教文章，包含 PRP 增生療法、骨骼肌肉超音波、兒童骨齡與生長評估等專業知識。',
   keywords: ['復健衛教', 'PRP注射', '兒童骨齡', '新竹復健科', '疼痛管理', '宸新復健科'],
   alternates: {
