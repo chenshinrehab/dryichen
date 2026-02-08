@@ -16,7 +16,7 @@ import {
   FaArrowRight, 
   FaHospital, 
   FaStar, 
-  FaParking, // ✅ 修改此處
+  FaParking, 
   FaWheelchair, 
   FaCircle, 
   FaPhoneAlt, 
@@ -94,8 +94,8 @@ const medicalClinicSchema = {
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: '24.783935', 
-    longitude: '121.015243'
+    latitude: '24.7833314', 
+    longitude: '121.0170937'
   },
   sameAs: [
     "https://www.facebook.com/DrYiChen", 
@@ -114,13 +114,34 @@ const medicalClinicSchema = {
     jobTitle: '院長',
     image: `${SITE_URL}/images/main/a.webp`,
     alumniOf: { '@type': 'EducationalOrganization', name: '國立台灣大學醫學系' },
-    medicalSpecialty: 'RehabilitationPhysician'
+    medicalSpecialty: ['RehabilitationPhysician', 'SportsMedicine']
   },
-  areaServed: [
-    { '@type': 'City', name: '新竹市' },
-    { '@type': 'Place', name: '新竹科學園區' },
-    { '@type': 'Place', name: '關埔重劃區' }
+
+  "hasMap": "https://maps.app.goo.gl/Lra7Zo5CJxXLdbSJ6",
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "新竹市"
+    },
+    {
+      "@type": "Place",
+      "name": "新竹科學園區"
+    },
+    {
+      "@type": "Place",
+      "name": "關埔重劃區",
+      "geo": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+              "@type": "GeoCoordinates",
+              "latitude": "24.7833314",
+              "longitude": "121.0170937"
+          },
+          "geoRadius": "5000"
+      }
+    }
   ],
+
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.6',
@@ -148,6 +169,34 @@ const medicalClinicSchema = {
   }
 }
 
+// ✨ 新增 FAQ Schema 以提升 GEO 表現
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "請問宸新復健科診所好停車嗎？有無障礙設施嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "有的，宸新復健科診所備有專屬平面停車位供看診民眾使用，解決您在新竹市區找車位的困擾。此外，診所全區設有完善的無障礙空間，無論是行動不便的長輩或使用輪椅的患者，都能輕鬆進出就診。"
+    }
+  }, {
+    "@type": "Question",
+    "name": "林羿辰醫師的治療有什麼特色？什麼是「運動教練醫師」？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "林羿辰院長同時擁有復健專科與骨鬆專科雙執照，並考取美國 ACE-CPT 私人教練證照。治療特色是「醫學結合訓練」，除了使用高解析超音波導引進行 PRP 增生療法或震波治療外，更會指導正確發力模式，從根源預防運動傷害復發。"
+    }
+  }, {
+    "@type": "Question",
+    "name": "看診需要預約嗎？可以現場掛號嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "為了節省您的寶貴時間，建議使用網路預約掛號。診所雖接受現場掛號，但預約民眾享有優先看診權益。您可以透過官網預約按鈕或官方 LINE 完成掛號。"
+    }
+  }]
+}
+
 export default function Home() {
   const latestNews = [...newsList]
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
@@ -158,6 +207,7 @@ export default function Home() {
   return (
     <>
       <JsonLd data={medicalClinicSchema} />
+      <JsonLd data={faqSchema} />
       <ScrollAnimation />
 
       <style dangerouslySetInnerHTML={{__html: `
@@ -323,9 +373,13 @@ export default function Home() {
                                  </div>
                                  <div className="hidden sm:block w-px h-6 bg-slate-600"></div>
                                  <div className="flex flex-wrap gap-3">
-                                    <span className="text-sm bg-cyan-900/40 border border-cyan-500/30 text-cyan-100 px-3 py-1.5 rounded-md flex items-center">
-                                         <FaParking className="mr-2 text-yellow-400" />專屬停車位
-                                    </span>
+                                 <Link 
+  href="/about/clinic/parking" 
+  className="text-sm bg-cyan-900/40 border border-cyan-500/30 text-cyan-100 px-3 py-1.5 rounded-md flex items-center hover:bg-cyan-900/60 transition-colors cursor-pointer"
+>
+  <FaParking className="mr-2 text-yellow-400" />
+  專屬停車位
+</Link>
                                     <span className="text-sm bg-cyan-900/40 border border-cyan-500/30 text-cyan-100 px-3 py-1.5 rounded-md flex items-center">
                                          <FaWheelchair className="mr-2 text-blue-400" />無障礙空間
                                     </span>
@@ -370,7 +424,7 @@ export default function Home() {
                                        <a href="https://www.forcestar.com.tw/clinic/%E6%96%B0%E7%AB%B9%E7%AB%B9%E7%A7%91%E5%AE%B8%E6%96%B0%E5%BE%A9%E5%81%A5%E7%A7%91%E8%A8%BA%E6%89%80/c/jvAUv7dDKT" target="_blank" rel="noopener noreferrer" className="w-full md:w-72 text-center px-4 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg hover:shadow-lg transition-all font-medium whitespace-nowrap flex items-center justify-center gap-2">
                                            <FaGlobe />新竹復健科首選 - 宸新復健科診所
                                        </a>
-                                       <a href="http://googleusercontent.com/maps.google.com/9" target="_blank" rel="noopener noreferrer" className="w-full md:w-72 text-center px-5 py-3 bg-slate-700 text-white rounded-lg transition-all font-medium flex items-center justify-center border border-slate-600 gap-2">
+                                       <a href="https://maps.app.goo.gl/Lra7Zo5CJxXLdbSJ6" target="_blank" rel="noopener noreferrer" className="w-full md:w-72 text-center px-5 py-3 bg-slate-700 text-white rounded-lg transition-all font-medium flex items-center justify-center border border-slate-600 gap-2">
                                            <FaMapMarkedAlt className="text-cyan-400" /> Google 地圖
                                        </a>
                                     </div>
