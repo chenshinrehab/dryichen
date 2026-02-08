@@ -1,3 +1,4 @@
+// src/app/about/news/page.tsx
 import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
@@ -5,25 +6,35 @@ import JsonLd from '@/components/JsonLd'
 import { newsList } from '@/data/news'
 import ScrollAnimation from '@/components/ScrollAnimation'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
 const PAGE_PATH = '/about/news'
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
 // 過濾衛教文章 (排除門診公告類別)
 const articlesList = newsList.filter(item => item.category !== '門診公告');
 
+// ==========================================
+// 1. Meta 設定 (優化 Title 並加入 Geo 標籤)
+// ==========================================
 export const metadata: Metadata = { 
-  title: '復健衛教文章 - 最新醫療新知 | 新竹宸新復健科',
+  // 修正：僅提供頁面標題，由 layout.tsx 模板附加診所名稱
+  title: '復健衛教文章 - 最新醫療新知',
   description: '提供新竹宸新復健科最新的復健醫學衛教文章，包含 PRP 增生療法、骨骼肌肉超音波、兒童骨齡與生長評估等專業知識。',
-  keywords: ['復健衛教', 'PRP注射', '兒童骨齡', '新竹復健科', '疼痛管理'],
+  keywords: ['復健衛教', 'PRP注射', '兒童骨齡', '新竹復健科', '疼痛管理', '宸新復健科'],
   alternates: {
     canonical: CANONICAL_URL,
   },
   openGraph: {
-    title: '復健衛教文章 | 宸新復健科',
+    title: '復健衛教文章 | 新竹宸新復健科',
     description: '深入淺出的復健醫學與疼痛管理知識分享。',
     url: CANONICAL_URL,
     type: 'website',
+    siteName: '新竹宸新復健科診所',
+  },
+  // 加入在地化 Geo 標記
+  other: {
+    'geo.region': 'TW-HCH',
+    'geo.placename': '新竹市',
   }
 }
 
@@ -47,6 +58,14 @@ export default function NewsListPage() {
     name: '宸新復健科復健衛教專區',
     description: '專業醫師撰寫的復健醫學與疼痛管理衛教文章',
     url: currentUrl,
+    publisher: {
+        '@type': 'MedicalClinic',
+        name: '新竹宸新復健科診所',
+        logo: {
+            '@type': 'ImageObject',
+            url: `${SITE_URL}/logo.webp`
+        }
+    },
     author: {
         '@type': 'MedicalOrganization',
         name: '新竹宸新復健科',
@@ -59,7 +78,7 @@ export default function NewsListPage() {
         url: `${SITE_URL}/about/news/${item.id}`,
         datePublished: item.date,
         image: item.coverImage,
-        author: { '@type': 'Organization', name: '宸新復健科' }
+        author: { '@type': 'Person', name: '林羿辰醫師' }
     }))
   }
 
@@ -111,14 +130,22 @@ export default function NewsListPage() {
                 <Link key={item.id} href={`/about/news/${item.id}`} className="block group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300">
                   <div className="flex flex-col md:flex-row h-full">
                     <div className="md:w-1/3 h-56 md:h-auto relative overflow-hidden">
-                      <img src={item.coverImage} alt={item.title} className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
+                      {/* 優化 Alt：包含診所與文章標題關鍵字 */}
+                      <img 
+                        src={item.coverImage} 
+                        alt={`新竹宸新復健科衛教文章：${item.title}`} 
+                        className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
+                      />
                     </div>
                     <div className="md:w-2/3 p-6 md:p-8 flex flex-col justify-center">
                         <div className="flex items-center gap-3 mb-3 text-sm">
-                           <span className="px-2 py-1 rounded border bg-cyan-500/10 text-cyan-400 border-cyan-500/30">{item.category}</span>
-                           <span className="text-slate-500 flex items-center"><i className="fa-regular fa-calendar mr-2"></i>{item.date}</span>
+                            <span className="px-2 py-1 rounded border bg-cyan-500/10 text-cyan-400 border-cyan-500/30">{item.category}</span>
+                            <span className="text-slate-500 flex items-center"><i className="fa-regular fa-calendar mr-2"></i>{item.date}</span>
                         </div>
-                        <h2 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors leading-relaxed">{item.title}</h2>
+                        {/* H2 正確應用於列表標題 */}
+                        <h2 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors leading-relaxed">
+                            {item.title}
+                        </h2>
                         <p className="text-slate-400 line-clamp-2 mb-4 leading-relaxed">{item.summary}</p>
                         <div className="mt-auto text-cyan-500 text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center">
                             閱讀更多 <i className="fa-solid fa-arrow-right ml-2"></i>

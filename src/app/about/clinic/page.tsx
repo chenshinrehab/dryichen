@@ -1,3 +1,4 @@
+// src/app/about/clinic/page.tsx
 import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
@@ -9,7 +10,7 @@ import ScrollAnimation from '@/components/ScrollAnimation'
 import { facilitiesData } from '@/data/facilities'
 import { getTreatmentBySlug } from '@/data/treatments'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
 const PAGE_PATH = '/about/clinic'
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
@@ -38,18 +39,25 @@ const allItems = facilitiesData.map((item) => {
 });
 
 // ==========================================
-// 3. Meta 設定 (完整保留)
+// 3. Meta 設定 (優化 Title 並加入 Geo 標籤)
 // ==========================================
 export const metadata: Metadata = { 
-  title: '診所環境與設備介紹 - 數位X光/超音波/骨科復健區 | 新竹宸新復健科',
+  // 修正：移除後綴診所名，避免與 layout.tsx 模板疊加
+  title: '診所環境與設備介紹 - 數位X光/超音波/骨科復健區',
   description: '新竹宸新復健科擁有醫學中心等級設備。包含數位X光、高解析超音波、瑞士聚焦式震波、兒童早療教室、獨立徒手治療室及專屬停車場，提供最優質的就醫環境。',
-  keywords: ['新竹復健科設備', 'X光檢查', '超音波檢查', 'PRP設備', '兒童早療', '骨科復健', '停車方便'],
+  keywords: ['新竹復健科設備', 'X光檢查', '超音波檢查', 'PRP設備', '兒童早療', '骨科復健', '停車方便', '宸新復健科環境'],
   alternates: { canonical: CANONICAL_URL },
   openGraph: {
     title: '診所環境與設備介紹 - 宸新復健科',
     description: '醫學中心等級設備：數位X光、高解析超音波、瑞士震波、兒童早療教室。',
     url: CANONICAL_URL,
     type: 'website',
+    siteName: '新竹宸新復健科診所',
+  },
+  // 加入在地化 Geo 標記
+  other: {
+    'geo.region': 'TW-HCH',
+    'geo.placename': '新竹市',
   }
 }
 
@@ -103,14 +111,14 @@ export default function ClinicPage() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          {/* ✨ 6. 返回按鈕區塊動畫 - 參考範本：同步進場 */}
+          {/* ✨ 6. 返回按鈕區塊動畫 */}
           <div className="animate-on-scroll">
             <Link href="/about" className="inline-flex items-center text-cyan-400 mb-2 hover:text-cyan-300 transition-colors group">
                 <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回關於我們
             </Link>
           </div>
 
-          {/* ✨ 7. 標題區塊動畫 - 參考範本：同步進場 */}
+          {/* ✨ 7. 標題區塊動畫 */}
           <div className="mb-12 text-center animate-on-scroll">
               <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-wider">專業醫療設備與環境</h1>
               <div className="h-1 w-20 bg-cyan-500 mx-auto rounded-full mb-4"></div>
@@ -119,31 +127,30 @@ export default function ClinicPage() {
               </p>
           </div>
 
-          {/* ✨ 8. 卡片網格區塊 - 參考範本：整組加上 animate-on-scroll + delay-100 */}
+          {/* ✨ 8. 卡片網格區塊 */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-on-scroll delay-100">
             {allItems.map((item) => (
               <Link 
                 key={item.id} 
                 href={`/about/clinic/${item.id}`} 
-                // ✨ 移除單張卡片的動畫類別，改由上方網格容器統一控制整組同步進場
                 className="group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col"
               >
-                  {/* 圖片區塊 (完整保留結構) */}
+                  {/* 圖片區塊 (優化 Alt 描述) */}
                   <div className="h-48 overflow-hidden relative bg-slate-800">
                     <img 
                       src={item.imageUrl} 
-                      alt={item.title} 
+                      alt={`新竹宸新復健科專業設備介紹：${item.title}`} 
                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
                   </div>
                   
-                  {/* 文字區塊 (完整保留結構) */}
+                  {/* 文字區塊 */}
                   <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors flex items-center justify-between">
+                    <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors flex items-center justify-between">
                        {item.title}
                        <i className="fa-solid fa-angle-right opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all text-sm"></i>
-                    </h3>
+                    </h2>
                     
                     <p className="text-slate-400 line-clamp-2 mb-4 flex-grow text-sm leading-relaxed">
                        {item.description}

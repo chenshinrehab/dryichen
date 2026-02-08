@@ -10,7 +10,7 @@ import ShareButtons from '@/components/ShareButtons'
 import { casesData, getCaseById } from '@/data/cases'
 import RelatedCases from '@/components/RelatedCases' 
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
 
 interface PageProps { params: { id: string } }
 
@@ -19,13 +19,14 @@ export async function generateStaticParams() {
   return casesData.map((post) => ({ id: post.id }))
 }
 
-// 1. Meta 設定
+// 1. Meta 設定 (優化：解決 Title 重複、加入 Geo 標籤)
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const post = getCaseById(params.id)
   if (!post) return { title: '案例不存在' }
   
-  const pageTitle = post.seoTitle || `${post.title} | 臨床治療案例 - 宸新復健科`
-  const canonicalUrl = `${SITE_URL}/about/news/${params.id}`
+  // 修正：不在此處加診所名後綴，交給 layout.tsx 的 title.template 處理
+  const pageTitle = post.seoTitle ? post.seoTitle : post.title
+  const canonicalUrl = `${SITE_URL}/about/cases/${params.id}`
    
   return {
     title: pageTitle,
@@ -35,10 +36,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: canonicalUrl,
     },
     openGraph: {
-      title: pageTitle,
+      title: post.seoTitle || post.title,
       description: post.seoDescription || post.summary,
       url: canonicalUrl,
       type: 'article',
+      siteName: '新竹宸新復健科診所',
       images: [
         {
             url: post.coverImage,
@@ -47,6 +49,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
             alt: post.title,
         }
       ]
+    },
+    // 加入在地化 Geo 標記
+    other: {
+      'geo.region': 'TW-HCH',
+      'geo.placename': '新竹市',
     }
   }
 }
@@ -57,12 +64,12 @@ export default function CaseDetailPage({ params }: PageProps) {
   // 如果 ID 對不上，回傳 404
   if (!post) notFound()
 
-  const currentUrl = `${SITE_URL}/about/news/${params.id}`
+  const currentUrl = `${SITE_URL}/about/cases/${params.id}`
 
   // 篩選出「其他相關案例」 (排除當前這一篇)
   const otherCases = casesData.filter(c => c.id !== post.id).slice(0, 3);
 
-  // 2. Schema
+  // 2. Schema (優化：使用完整 Logo 網址)
   const jsonLdData = {
     '@context': 'https://schema.org',
     '@type': 'MedicalScholarlyArticle',
@@ -81,6 +88,7 @@ export default function CaseDetailPage({ params }: PageProps) {
     publisher: { 
         '@type': 'MedicalOrganization', 
         name: '新竹宸新復健科診所',
+        // 優化：提供絕對路徑的 Logo 網址
         logo: {
             '@type': 'ImageObject',
             url: `${SITE_URL}/logo.webp`
@@ -122,9 +130,9 @@ export default function CaseDetailPage({ params }: PageProps) {
       `}} />
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
-       <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 relative z-10">
+        <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 relative z-10">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-             
+              
             <nav className="mb-4 pt-4 flex items-center justify-between">
                 <Link href="/about/news" className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors group text-sm font-medium">
                     <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 
@@ -196,17 +204,17 @@ export default function CaseDetailPage({ params }: PageProps) {
 
               </div>
 
-              {/* ✨ 底部分享區塊 (仿照疾病頁面樣式) */}
-              <div className="bg-slate-900/80 p-8 md:p-12 border-t border-slate-700 text-center relative overflow-hidden">
+              {/* ✨ 底部分享區塊 (優化：H2 層級應用) */}
+              <footer className="bg-slate-900/80 p-8 md:p-12 border-t border-slate-700 text-center relative overflow-hidden">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent blur-sm"></div>
                  
-                <h3 className="text-white font-bold text-2xl mb-3 relative z-10">覺得這篇文章有幫助嗎？</h3>
+                <h2 className="text-white font-bold text-2xl mb-3 relative z-10">覺得這篇文章有幫助嗎？</h2>
                 <p className="text-slate-400 mb-8 text-lg relative z-10">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
                  
                 <div className="relative z-10">
                     <ShareButtons url={currentUrl} title={post.title} />
                 </div>
-              </div>
+              </footer>
 
             </article>
 

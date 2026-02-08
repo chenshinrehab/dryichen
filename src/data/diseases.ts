@@ -44,7 +44,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     slug: 'spine-hip',
     title: '脊椎髖臀',
     lastModified: '2026-01-21',
-    description: '脊椎、髖關節與臀部相關疾病',
+    description: '脊椎與臀部相關疾病',
     image: '/images/diseases/a.webp',
     seoKeywords: ['新竹脊椎側彎', '坐骨神經痛治療', '新竹整脊', '骨刺', '梨狀肌症候群'],
     seoDescription: '新竹脊椎權威復健。專治腰椎椎間盤突出、坐骨神經痛與長骨刺。提供免開刀的PRP注射與徒手物理治療，精準改善下背痛與腳麻問題。',
@@ -7402,7 +7402,6 @@ export const diseaseCategories: DiseaseCategory[] = [
           slug: 'ankle-sprain',
           title: '踝關節扭傷 (翻腳刀)',
           lastModified: '2026-01-21',
-          tags: [],
           description: '走路踩空、打球翻船？腳踝扭傷不只是冰敷就好！深入解析韌帶撕裂分級、為何會變成「玻璃腳」，以及震波與 PRP 如何加速修復。',
           contentHtml: `
             <p style="color: #e2e8f0 !important;">走路踩空、下樓梯不留神，或是打球落地時沒踩穩，<strong>「腳踝扭傷」（俗稱翻腳刀）</strong>絕對是復健科門診最常見的運動傷害第一名。許多患者以為「不痛就是好了」，受傷後隨便貼個藥布就繼續運動，結果韌帶鬆弛沒長好，演變成動不動就扭到的<strong>「習慣性扭傷（玻璃腳）」</strong>，甚至年紀輕輕就產生關節退化。</p>

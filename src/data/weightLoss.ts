@@ -42,7 +42,7 @@ const fullWeightLossData: WeightLossProgram[] = [
   // -----------------------------------------------------
   {
     slug: 'mounjaro',
-    title: '猛健樂 (Mounjaro)',
+    title: '新竹猛健樂 (Mounjaro) 減重門診：專業醫師規劃瘦瘦筆療程',
     lastModified: '2026-01-21',
     subtitle: '新一代雙重腸泌素受體促效劑',
     description: '新一代雙重腸泌素(GIP/GLP-1)受體促效劑，提供更卓越的體重控制效果。',
@@ -268,7 +268,7 @@ const fullWeightLossData: WeightLossProgram[] = [
   // -----------------------------------------------------
   {
     slug: 'bone-age',
-    title: '兒童骨齡評估',
+    title: '新竹兒童骨齡評估：預測遺傳身高與生長發育，掌握黃金長高期',
     lastModified: '2026-02-07',
     tags: ['boneage'],  
     subtitle: '掌握黃金生長發育期',
@@ -464,7 +464,7 @@ const fullWeightLossData: WeightLossProgram[] = [
   // -----------------------------------------------------
   {
     slug: 'Wegovy',
-    title: '週纖達 (Wegovy)',
+    title: '新竹週纖達 (Wegovy) 減重門診，專業醫師衛教規劃',
     lastModified: '2026-01-21',
     subtitle: 'GLP-1 受體促效劑',
     description: '協助控制體重的注射藥物，幫助您減少飢餓感，輕鬆達成減重目標。',

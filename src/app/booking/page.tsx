@@ -21,10 +21,10 @@ const PAGE_PATH = '/booking'
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
 // ==========================================
-// 1. Meta 設定 (完整保留)
+// 1. Meta 設定 (優化 Title 與在地化標記)
 // ==========================================
 export const metadata: Metadata = {
-  title: '馬上預約 - 新竹網路掛號/APP預約/Line掛號 | 新竹宸新復健科',
+  title: '馬上預約 - 新竹網路掛號/APP預約/Line掛號 ',
   description: '新竹宸新復健科提供便利的數位掛號服務。支援免APP網頁直接掛號、Android/iOS App 下載預約，或加入 Line 官方帳號線上掛號。免排隊、即時查詢看診進度。',
   keywords: ['新竹掛號', '網路預約', '診所APP', 'Line掛號', '看診進度查詢', '新竹復健科預約', '宸新掛號', '林羿辰醫師掛號'],
   alternates: {
@@ -35,6 +35,12 @@ export const metadata: Metadata = {
     description: '提供免APP網頁直接掛號、手機 App 下載與 Line 線上預約服務。',
     url: CANONICAL_URL,
     type: 'website',
+    siteName: '新竹宸新復健科診所',
+    locale: 'zh_TW',
+  },
+  other: {
+    'geo.region': 'TW-HCH',
+    'geo.placename': '新竹市',
   }
 }
 
@@ -126,7 +132,7 @@ export default function BookingPage() {
             </div>
           </div>
 
-          {/* 網路掛號區塊 */}
+          {/* 網路掛號區塊 (提升為 H2 以優化層級) */}
           <div className="mb-10 w-full transform transition-all animate-on-scroll delay-100">
              <div className="bg-gradient-to-br from-slate-800 to-slate-900 border border-cyan-500/50 rounded-2xl p-6 md:p-8 relative overflow-hidden shadow-[0_0_30px_rgba(34,211,238,0.15)] group hover:-translate-y-1 transition-all duration-300">
                 
@@ -138,9 +144,9 @@ export default function BookingPage() {
                          <FaGlobe size={32} className="text-cyan-400" />
                       </div>
                       <div>
-                         <h3 className="text-2xl font-bold text-white mb-2 flex items-center justify-center md:justify-start gap-3">
+                         <h2 className="text-2xl font-bold text-white mb-2 flex items-center justify-center md:justify-start gap-3">
                            網路掛號系統
-                         </h3>
+                         </h2>
                          <p className="text-slate-400 text-lg">
                            免安裝 App，直接點擊即可進行預約。
                          </p>
@@ -175,7 +181,7 @@ export default function BookingPage() {
               <div className="relative p-2 bg-white rounded-xl mb-6 shadow-lg group-hover:-translate-y-1 transition-transform">
                   <img 
                     src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://lin.ee/FHj3mIs" 
-                    alt="Line 官方帳號 QR Code" 
+                    alt="加入宸新復健科 Line 官方帳號進行網路掛號" 
                     className="w-32 h-32 object-contain" 
                   />
               </div>
@@ -201,7 +207,7 @@ export default function BookingPage() {
               <div className="relative p-2 bg-white rounded-xl mb-6 shadow-lg group-hover:-translate-y-1 transition-transform">
                   <img 
                     src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://apple.co/2vZfRsH" 
-                    alt="iOS App 下載 QR Code" 
+                    alt="下載宸新復健科 iOS 掛號 App" 
                     className="w-32 h-32 object-contain" 
                   />
               </div>
@@ -227,7 +233,7 @@ export default function BookingPage() {
               <div className="relative p-2 bg-white rounded-xl mb-6 shadow-lg group-hover:-translate-y-1 transition-transform">
                   <img 
                     src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://bit.ly/2Q8FdeK" 
-                    alt="Android App 下載 QR Code" 
+                    alt="下載宸新復健科 Android 掛號 App" 
                     className="w-32 h-32 object-contain" 
                   />
               </div>

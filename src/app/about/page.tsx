@@ -1,3 +1,4 @@
+// src/app/about/page.tsx
 import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
@@ -14,14 +15,15 @@ import {
 } from "react-icons/fa";
 
 // 定義標準網域與路徑
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
 const PAGE_PATH = '/about'
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
 // ==========================================
-// 1. Meta 設定 (完整保留)
+// 1. Meta 設定 (優化 Title 並加入 Geo 標籤)
 // ==========================================
 export const metadata: Metadata = {
+  // 修正：移除後綴診所名，避免與 layout.tsx 疊加
   title: '關於我們 - 新竹復健科推薦 | 台大醫師林羿辰 | 竹科/關埔/光復路骨科診所',
   description: '新竹東區/竹科復健科首選。宸新復健科由台大林羿辰醫師主持，位於關埔重劃區(近Costco、光復路)。提供骨科痛症、運動傷害、兒童早療等全方位治療。附設專屬停車位，就醫方便。',
   keywords: [
@@ -37,6 +39,12 @@ export const metadata: Metadata = {
     description: '台大醫師團隊，提供骨科痛症、運動傷害、兒童早療等全方位治療標。',
     url: CANONICAL_URL,
     type: 'website',
+    siteName: '新竹宸新復健科診所',
+  },
+  // 加入在地化 Geo 標記
+  other: {
+    'geo.region': 'TW-HCH',
+    'geo.placename': '新竹市',
   }
 }
 
@@ -103,7 +111,7 @@ export default function AboutPage() {
         image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800',
         url: SITE_URL,
         telephone: '+886-3-5647999',
-        priceRange: '健保特約', 
+        priceRange: '$$', 
         medicalSpecialty: ['Physical Medicine and Rehabilitation', 'Orthopedics', 'Pediatrics', 'Pain Management'],
         address: {
             '@type': 'PostalAddress',
@@ -129,7 +137,7 @@ export default function AboutPage() {
       <div className="min-h-screen bg-slate-900 text-slate-300">
         <main className="max-w-5xl mx-auto px-4 pt-0 -mt-10 md:-mt-12 pb-12">
           
-          {/* 標題區塊：圖示已改為 React Icons */}
+          {/* 標題區塊 */}
           <div className="flex items-center justify-center gap-4 mb-10 animate-on-scroll">
             <span className="flex items-center justify-center w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-lg border border-cyan-500/30">
               <FaAddressCard size={24} />
@@ -155,7 +163,7 @@ export default function AboutPage() {
                 <div className="w-full md:w-2/5 relative h-48 md:h-full overflow-hidden">
                   <img 
                     src={item.image} 
-                    alt={`${item.title} - 宸新復健科 - 新竹推薦`}
+                    alt={`${item.title} - 新竹宸新復健科診所專業服務`}
                     className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/90 to-transparent"></div>
@@ -163,7 +171,7 @@ export default function AboutPage() {
                 
                 {/* 文字內容區塊 */}
                 <div className="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center relative">
-                   {/* 背景大圖示：改用組件形式 */}
+                   {/* 背景大圖示 */}
                    <item.Icon className="absolute right-4 bottom-4 text-8xl text-slate-800/50 -rotate-12 group-hover:text-cyan-900/30 transition-colors duration-500 pointer-events-none" />
                    
                    <div className="relative z-10">
@@ -179,8 +187,11 @@ export default function AboutPage() {
             ))}
           </div>
 
-          {/* SEO 導言區 */}
+          {/* SEO 導言區 (優化：加入 H2 層級補強) */}
           <div className="max-w-4xl mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300 animate-on-scroll delay-300">
+            {/* 視覺隱藏 H2 補強 SEO 層級 */}
+            <h2 className="sr-only">新竹東區與竹科復健科首選：宸新復健科地理位置與診所優勢</h2>
+            
             <details className="group border-l-2 border-slate-700 pl-4">
               <summary className="list-none [&::-webkit-details-marker]:hidden text-sm md:text-base text-slate-500 leading-relaxed outline-none cursor-pointer select-none text-left hover:text-cyan-400 transition-colors">
                 <span className="inline-block h-full">

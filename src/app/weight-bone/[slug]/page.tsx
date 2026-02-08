@@ -45,9 +45,27 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: program.title,
       description: program.seoDescription || program.description,
-      url: canonicalUrl, // OpenGraph URL 同步使用標準網址
+      url: canonicalUrl,
       type: 'article',
-      images: program.images && program.images.length > 0 ? [program.images[0].src] : [],
+      // 確保圖片路徑包含完整的網域 (絕對路徑)
+      images: program.images && program.images.length > 0 
+        ? [
+            {
+              url: program.images[0].src.startsWith('http') 
+                ? program.images[0].src 
+                : `https://www.dryichen.com.tw${program.images[0].src}`,
+              width: 1200,
+              height: 630,
+              alt: program.title,
+            }
+          ] 
+        : [
+            {
+              url: 'https://www.dryichen.com.tw/images/og-default.jpg',
+              width: 1200,
+              height: 630,
+            }
+          ],
     }
   }
 }
@@ -84,29 +102,55 @@ export default async function WeightBoneDetailPage({ params }: PageProps) {
   // 3. Schema: 醫療服務 (Service)
   const jsonLdService = {
     '@context': 'https://schema.org',
-    '@type': 'Service', 
-    name: program.title,
+    '@type': 'Service',
+    // 強化 Service 名稱，增加地理權重
+    name: `新竹${program.title}門診推薦`, 
     description: program.seoDescription || program.description,
-    url: currentPageUrl, // 明確指定服務頁面網址
+    url: currentPageUrl,
     provider: {
+      '@type': 'Physician',
+      'name': '林羿辰 醫師',
+      'url': `${SITE_URL}/about/doctors`,
+      jobTitle: '院長',
+      image: `${SITE_URL}/images/main/a.webp`,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '光復路一段371號B1',
+        addressLocality: '東區', // 細化到市轄區
+        addressRegion: '新竹市', // 統一中文格式
+        postalCode: '300',
+        addressCountry: 'TW',
+      },
+      alumniOf: {
+        '@type': 'EducationalOrganization',
+        name: '國立台灣大學醫學系'
+      },
+      medicalSpecialty: [
+        'Physical Medicine and Rehabilitation',
+        'SportsMedicine'
+      ]
+    },
+    // 關鍵修改：將完整的 areaServed 移至最外層或 location 內（建議最外層）
+    'areaServed': [
+      { "@type": "City", "name": "新竹市" },
+      { "@type": "City", "name": "竹北市" },
+      { "@type": "Place", "name": "新竹科學園區" },
+      { "@type": "AdministrativeArea", "name": "新竹縣" }
+    ],
+    location: {
       '@type': 'MedicalClinic',
       'name': '宸新復健科診所',
-      'image': `${SITE_URL}/logo.webp`, 
       'address': {
         '@type': 'PostalAddress',
-        'addressLocality': '新竹市',
-        'addressRegion': 'Hsinchu City',
+        'streetAddress': '光復路一段371號B1',
+        'addressLocality': '東區',
+        'addressRegion': '新竹市',
         'addressCountry': 'TW'
       }
     },
     image: program.images && program.images.length > 0 ? program.images.map(img => img.src) : undefined,
-    areaServed: {
-       '@type': 'City',
-       'name': 'Hsinchu'
-    },
-    serviceType: ['Medical Weight Loss', 'Bone Age Assessment'],
+    serviceType: ['Medical Weight Loss', 'InBody Assessment', 'Weight Control'], // 加入更具體的標籤
   }
-
   // 4. Schema: FAQ
   const jsonLdFAQ = program.qaList && program.qaList.length > 0 ? {
     '@context': 'https://schema.org',

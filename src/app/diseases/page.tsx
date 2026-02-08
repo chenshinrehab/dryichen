@@ -1,3 +1,4 @@
+// src/app/diseases/page.tsx
 import { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
@@ -14,17 +15,18 @@ import {
 } from "react-icons/fa";
 
 // 定義標準網域與路徑
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
 const PAGE_PATH = '/diseases'
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
 // ==========================================
-// 1. Meta 設定
+// 1. Meta 設定 (優化 Title 並加入 Geo 標籤)
 // ==========================================
 export const metadata: Metadata = {
-  title: '新竹骨科/復健科推薦 - 椎間盤突出/五十肩/關節炎/痠麻痛治療 | 宸新復健科',
+  // 修正：移除後綴診所名，避免與 layout.tsx 模板疊加
+  title: '新竹骨科/復健科推薦 - 椎間盤突出/五十肩/關節炎/痠麻痛治療',
   description: '新竹復健科權威，專治椎間盤突出、坐骨神經痛、肩頸痠痛與五十肩。提供退化性關節炎與網球肘的精準診斷，解決您的痠麻痛困擾，是您值得信賴的新竹骨科診所。',
-  keywords: ['新竹骨科', '新竹復健科', '椎間盤突出', '背痛', '肩頸痠痛', '五十肩', '退化性關節炎', '網球肘', '痠麻痛', '復健診所'],
+  keywords: ['新竹骨科', '新竹復健科', '椎間盤突出', '背痛', '肩頸痠痛', '五十肩', '退化性關節炎', '網球肘', '痠麻痛', '復健診所', '宸新復健科'],
   alternates: {
     canonical: CANONICAL_URL,
   },
@@ -33,6 +35,12 @@ export const metadata: Metadata = {
     description: '肩膀痛、膝蓋痛、腰痛？點擊查看宸新復健科針對各部位疼痛的詳細衛教與治療建議。',
     type: 'website',
     url: CANONICAL_URL,
+    siteName: '新竹宸新復健科診所',
+  },
+  // 加入在地化 Geo 標記
+  other: {
+    'geo.region': 'TW-HCH',
+    'geo.placename': '新竹市',
   }
 }
 
@@ -92,15 +100,15 @@ export default function DiseasesPage() {
           {/* 標題區塊 + AI 搜尋 */}
           <div className="text-center mb-5 max-w-4xl mx-auto animate-on-scroll">
               <div className="flex items-center justify-center gap-4 mb-4">
-                <span className="flex items-center justify-center w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-lg border border-cyan-500/30">
-                    <FaBookMedical size={20} />
-                </span>
+                  <span className="flex items-center justify-center w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-lg border border-cyan-500/30">
+                      <FaBookMedical size={20} />
+                  </span>
 
-                <div className="flex flex-col justify-center">
-                    <h1 className="text-3xl font-bold font-sans text-white leading-none transform translate-y-[7px]">
-                        常見骨科疾病衛教
-                    </h1>
-                </div>
+                  <div className="flex flex-col justify-center">
+                      <h1 className="text-3xl font-bold font-sans text-white leading-none transform translate-y-[7px]">
+                          常見骨科疾病衛教
+                      </h1>
+                  </div>
               </div>
 
               {/* AI 輸入框 */}
@@ -117,11 +125,11 @@ export default function DiseasesPage() {
                 href={`/diseases/${category.slug}`}
                 className="group relative bg-slate-800/40 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
               >
-                {/* 1. 圖片區塊 */}
+                {/* 1. 圖片區塊 (優化 Alt 描述) */}
                 <div className="aspect-[16/9] w-full overflow-hidden relative bg-slate-900">
                     <img 
                       src={category.image} 
-                      alt={`${category.title} - 新竹骨科復健`} 
+                      alt={`新竹骨科復健常見疾病：${category.title}症狀與治療建議`} 
                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
                       loading="lazy"
                     />
@@ -129,6 +137,7 @@ export default function DiseasesPage() {
                     
                     {/* 分類標題 */}
                     <div className="absolute bottom-0 left-0 p-5 w-full">
+                        {/* H2 應用於分類列表標題 */}
                         <h2 className="text-2xl font-bold text-white group-hover:text-cyan-300 transition-colors drop-shadow-lg flex items-center justify-between">
                             {category.title}
                             <FaArrowRight className="-rotate-45 group-hover:rotate-0 text-slate-400 group-hover:text-cyan-400 transition-all duration-300 text-lg opacity-0 group-hover:opacity-100" />
@@ -163,7 +172,7 @@ export default function DiseasesPage() {
             ))}
           </div>
 
-          {/* 專業信任區塊 */}
+          {/* 專業信任區塊 (優化：H2 層級應用) */}
           <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 md:p-10 border border-slate-700 relative overflow-hidden shadow-2xl mb-12 animate-on-scroll delay-200">
               <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
               
@@ -177,9 +186,9 @@ export default function DiseasesPage() {
                   <div className="flex-grow">
                       <div className="flex items-center gap-4 mb-4 md:mb-2">
                         <FaChartBar size={28} className="text-cyan-400 md:hidden" />
-                        <h3 className="text-2xl md:text-3xl font-bold text-white">
-                            正確的診斷，是治療的第一步
-                        </h3>
+                        <h2 className="text-2xl md:text-3xl font-bold text-white">
+                            正確的診斷，是有效復健治療的第一步
+                        </h2>
                       </div>
                       
                       <div className="space-y-4 text-slate-300 leading-relaxed text-lg">
@@ -195,10 +204,10 @@ export default function DiseasesPage() {
                           <div className="flex items-center gap-2">
                              <img 
                                 src="/images/doctor/b.webp" 
-                                alt="林羿辰醫師" 
+                                alt="新竹宸新復健科院長林羿辰醫師" 
                                 className="w-12 h-12 rounded-full border border-slate-600" 
                              />
-                             <span className="text-slate-400 text-sm">本文由 林羿辰 醫師 審閱</span>
+                             <span className="text-slate-400 text-sm">本文內容由 林羿辰 醫師 專業審閱</span>
                           </div>
                           <Link href="/about/doctors" className="text-cyan-400 hover:text-cyan-300 text-sm font-medium flex items-center gap-2 group">
                               認識我們的醫療團隊 <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
@@ -208,8 +217,9 @@ export default function DiseasesPage() {
               </div>
           </div>
 
-          {/* SEO 導言區 */}
+          {/* SEO 導言區 (優化：加入 H2 層級補強) */}
           <div className="max-w-4xl mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300 animate-on-scroll delay-300">
+              <h2 className="sr-only">新竹專業復健科疾病衛教：解決各部位疼痛與運動傷害</h2>
               <details className="group border-l-2 border-slate-700 pl-4">
                   <summary className="list-none [&::-webkit-details-marker]:hidden text-sm md:text-base text-slate-500 leading-relaxed outline-none cursor-pointer select-none text-left hover:text-cyan-400 transition-colors">
                       <span className="inline-block h-full">

@@ -46,7 +46,7 @@ const fullTreatmentsData: Treatment[] = [
   // -----------------------------------------------------
     {
       slug: 'prp',
-      title: '新竹 PRP 增生療法 推薦/ 超音波導引注射/ ',
+      title: '新竹 PRP 增生療法 推薦/ 超音波導引注射',
       lastModified: '2026-01-31',
       tags: ['PRP'],
       subtitle: '超音波導引高濃度血小板注射',

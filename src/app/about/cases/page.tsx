@@ -1,3 +1,4 @@
+// src/app/about/cases/page.tsx
 import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
@@ -5,7 +6,7 @@ import JsonLd from '@/components/JsonLd'
 import { casesData } from '@/data/cases' 
 import ScrollAnimation from '@/components/ScrollAnimation'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
 const PAGE_PATH = '/about/cases' 
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
@@ -14,20 +15,27 @@ export async function generateStaticParams() {
 }
 
 // ==========================================
-// 1. Meta 設定
+// 1. Meta 設定 (優化 Title 並加入 Geo 標籤)
 // ==========================================
 export const metadata: Metadata = { 
-  title: '臨床治療案例分享 - PRP與震波治療成效 | 新竹宸新復健科',
+  // 修正：移除後綴診所名，避免與 layout.tsx 模板疊加
+  title: '臨床治療案例分享 - PRP與震波治療成效',
   description: '匯集新竹宸新復健科的實際臨床治療案例。透過高濃度血小板(PRP)、聚焦式震波與徒手物理治療，協助患者改善退化性關節炎、五十肩、運動傷害與兒童生長發育問題。',
-  keywords: ['PRP治療案例', '震波治療心得', '五十肩治療', '退化性關節炎改善', '新竹復健推薦'],
+  keywords: ['PRP治療案例', '震波治療心得', '五十肩治療', '退化性關節炎改善', '新竹復健推薦', '宸新復健科案例'],
   alternates: {
     canonical: CANONICAL_URL,
   },
   openGraph: {
-    title: '臨床治療案例分享 - 疼痛改善與復健成效 | 宸新復健科',
+    title: '臨床治療案例分享 - 疼痛改善與復健成效 | 新竹宸新復健科',
     description: '查看真實患者如何透過再生醫學與精準復健，成功擺脫慢性疼痛的治療過程。',
     url: CANONICAL_URL,
     type: 'website',
+    siteName: '新竹宸新復健科診所',
+  },
+  // 加入在地化 Geo 標記
+  other: {
+    'geo.region': 'TW-HCH',
+    'geo.placename': '新竹市',
   }
 }
 
@@ -54,6 +62,14 @@ export default function CaseStudyListPage() {
     name: '宸新復健科臨床治療案例集',
     description: '收錄PRP注射、震波治療、兒童生長評估之實際成功案例',
     url: currentUrl,
+    publisher: {
+        '@type': 'MedicalClinic',
+        name: '新竹宸新復健科診所',
+        logo: {
+            '@type': 'ImageObject',
+            url: `${SITE_URL}/logo.webp`
+        }
+    },
     author: {
         '@type': 'MedicalOrganization',
         name: '新竹宸新復健科',
@@ -64,7 +80,6 @@ export default function CaseStudyListPage() {
         itemListElement: casesData.map((item, index) => ({
             '@type': 'ListItem',
             position: index + 1,
-            // ✨ 這裡的路徑也要同步修正，讓 Google 知道正確網址
             url: `${SITE_URL}/about/cases/${item.id}`, 
             name: item.title
         }))
@@ -111,7 +126,6 @@ export default function CaseStudyListPage() {
               {casesData.map((item) => (
                 <Link 
                   key={item.id} 
-                  // ✨ 修正重點：將連結從 /about/news 改為 /about/case
                   href={`/about/cases/${item.id}`} 
                   className="block group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300"
                 >
@@ -120,7 +134,7 @@ export default function CaseStudyListPage() {
                     <div className="md:w-1/3 h-64 md:h-auto relative overflow-hidden">
                       <img 
                         src={item.coverImage} 
-                        alt={`${item.title} - 治療成效示意圖`} 
+                        alt={`新竹宸新復健科臨床成功案例：${item.title}`} 
                         className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent md:hidden"></div>
@@ -144,6 +158,7 @@ export default function CaseStudyListPage() {
                            </span>
                         </div>
                         
+                        {/* H2 正確應用於列表標題 */}
                         <h2 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors leading-relaxed">
                             {item.title}
                         </h2>
@@ -167,8 +182,9 @@ export default function CaseStudyListPage() {
               ))}
             </div>
 
-            {/* SEO 導言區 */}
+            {/* SEO 導言區 (優化：加入 H2 層級補強) */}
             <div className="mb-12 max-w-3xl mx-auto mt-20 animate-on-scroll delay-300">
+              <h2 className="sr-only">為何參考實際復健案例對病患很重要？新竹宸新復健科專業解析</h2>
               <details className="group border-l-4 border-cyan-500 pl-4">
                   <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left flex items-start">
                       <div className="flex-1">

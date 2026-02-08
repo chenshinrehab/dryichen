@@ -1,5 +1,7 @@
-import { Metadata } from 'next'
+// src/app/weight-bone/page.tsx
+import React from 'react'
 import Link from 'next/link'
+import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { weightLossPrograms } from '@/data/weightLoss'
 import WeightLossTools from '@/components/WeightLossTools'
@@ -16,14 +18,18 @@ import {
 } from "react-icons/fa";
 
 // 定義常數，確保網址一致
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
 const PAGE_PATH = '/weight-bone'
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
+// ==========================================
+// 1. Meta 設定 (優化 Title 並加入 Geo 標籤)
+// ==========================================
 export const metadata: Metadata = {
-  title: '新竹減重與骨齡門診 - 猛健樂/瘦瘦針/生長遲緩/性早熟評估 | 新竹宸新復健科',
+  // 修正：移除後綴診所名，避免與 layout.tsx 模板疊加
+  title: '新竹減重與骨齡門診 - 猛健樂/瘦瘦針/生長遲緩/性早熟評估',
   description: '新竹宸新復健科提供專業體重管理與兒童生長發育評估。林羿辰醫師親自規劃猛健樂(Mounjaro)、週纖達(Ozempic)等瘦瘦針療程，並提供兒童骨齡X光檢查。',
-  keywords: ['新竹減重', '新竹猛健樂', '瘦瘦針', '新竹照骨齡', '生長遲緩', '性早熟', '週纖達', '兒童長高'],
+  keywords: ['新竹減重', '新竹猛健樂', '瘦瘦針', '新竹照骨齡', '生長遲緩', '性早熟', '週纖達', '兒童長高', '宸新復健科減重'],
   alternates: {
     canonical: CANONICAL_URL,
   },
@@ -32,7 +38,13 @@ export const metadata: Metadata = {
     description: '提供新竹地區專業減重、瘦瘦針治療與兒童骨齡評估服務。',
     url: CANONICAL_URL,
     type: 'website',
+    siteName: '新竹宸新復健科診所',
   },
+  // 加入在地化 Geo 標記
+  other: {
+    'geo.region': 'TW-HCH',
+    'geo.placename': '新竹市',
+  }
 }
 
 const weightBoneSchema = {
@@ -105,7 +117,7 @@ export default function WeightLossPage() {
               </div>
             </div>
 
-            {/* 卡片列表 */}
+            {/* 卡片列表 (優化：H2 層級與圖片 Alt) */}
             <div className="grid grid-cols-1 gap-8 mb-16 animate-on-scroll delay-100 relative z-10">
               {weightLossPrograms.map((program) => (
                 <Link
@@ -117,7 +129,7 @@ export default function WeightLossPage() {
                   <div className="w-full md:w-2/5 relative h-48 md:h-full overflow-hidden">
                     <img 
                       src={program.image} 
-                      alt={`${program.title} - 新竹推薦`}
+                      alt={`新竹宸新復健科專業門診：${program.title}`} 
                       className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/90 to-transparent"></div>
@@ -157,7 +169,7 @@ export default function WeightLossPage() {
               ))}
             </div>
 
-            {/* 醫師治療理念區塊 */}
+            {/* 醫師治療理念區塊 (優化：H2 層級應用) */}
             <div className="bg-slate-800/80 rounded-2xl p-8 border border-slate-700 relative overflow-hidden animate-on-scroll delay-200">
                 <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>
                 
@@ -169,9 +181,9 @@ export default function WeightLossPage() {
                     </div>
                     
                     <div className="flex-grow text-left">
-                        <h3 className="text-2xl font-bold text-white mb-4">
-                            醫師治療理念與叮嚀
-                        </h3>
+                        <h2 className="text-2xl font-bold text-white mb-4">
+                            新竹宸新復健科：醫師治療理念與專業叮嚀
+                        </h2>
                         <div className="space-y-4 text-slate-300 leading-relaxed text-lg">
                             <p>
                                 體重控制不僅僅是為了外觀，更是為了健康。市面上的減重藥物（如<span className="text-cyan-400">瘦瘦針、猛健樂</span>）必須在專業醫師的評估下使用。
@@ -191,8 +203,9 @@ export default function WeightLossPage() {
                 </div>
             </div>
 
-            {/* SEO 導言區 */}
+            {/* SEO 導言區 (優化：加入 H2 層級補強) */}
             <div className="max-w-4xl mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300 mt-12 px-4 animate-on-scroll delay-300">
+              <h2 className="sr-only">新竹減重與兒童骨齡專業醫療服務介紹</h2>
               <details className="group border-l-2 border-slate-700 pl-4">
                 <summary className="list-none [&::-webkit-details-marker]:hidden text-sm md:text-base text-slate-500 leading-relaxed outline-none cursor-pointer select-none text-left hover:text-cyan-400 transition-colors">
                   <span className="inline-block h-full">
@@ -208,7 +221,7 @@ export default function WeightLossPage() {
                     我們提供科學化的<strong className="text-cyan-400 font-normal">減重</strong>療程，包含<strong className="text-cyan-400 font-normal">猛健樂</strong>與<strong className="text-cyan-400 font-normal">瘦瘦針</strong>。
                   </p>
                   <p>
-                    針對兒童發育，我們提供專業的<strong className="text-cyan-400 font-normal">照骨齡</strong> X光檢查，把握成長期。
+                    針對兒童發育，我們提供專業的<strong className="text-cyan-400 font-normal">照骨齡</strong> X光檢查，協助家長精準掌握孩子的生長進度與潛力，預防性早熟。
                   </p>
                 </div>
               </details>

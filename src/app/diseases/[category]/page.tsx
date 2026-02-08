@@ -1,3 +1,4 @@
+// src/app/diseases/[category]/page.tsx
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -6,7 +7,7 @@ import JsonLd from '@/components/JsonLd'
 import ScrollAnimation from '@/components/ScrollAnimation'
 
 // 定義常數
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
 
 interface PageProps {
   params: {
@@ -14,32 +15,29 @@ interface PageProps {
   }
 }
 
-// 1. 動態產生 Metadata (包含 SEO 強制索引設定)
+// 1. 動態產生 Metadata (優化 Title 並加入 Geo 標籤)
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const category = diseaseCategories.find((c) => c.slug === params.category)
 
   if (!category) {
-    return { title: '找不到分類 | 宸新復健科' }
+    return { title: '找不到分類' }
   }
 
   const ogImage = category.image || '/images/default-og.webp'
-  // 確保標準網址是絕對路徑
   const canonicalUrl = `${SITE_URL}/diseases/${params.category}`
 
   return {
-    // 設定 metadataBase 以解決相對路徑問題
     metadataBase: new URL(SITE_URL),
     
-    title: `${category.title} - 症狀與治療介紹 | 新竹宸新復健科`,
+    // 修正：移除後綴診所名，避免與 layout.tsx 模板疊加
+    title: `${category.title} - 症狀與治療介紹`,
     description: `新竹宸新復健科提供${category.title}相關的疾病衛教，包含：${category.diseases.map(d => d.title).join('、')}等常見症狀與治療方式。`,
-    keywords: [`${category.title}`, '新竹骨科', '新竹復健', ...category.diseases.map(d => d.title)],
+    keywords: [`${category.title}`, '新竹骨科', '新竹復健', '宸新復健科', ...category.diseases.map(d => d.title)],
     
-    // 明確宣告標準網址 (Canonical URL)
     alternates: {
       canonical: canonicalUrl,
     },
 
-    // 強制 Google 索引此頁面
     robots: {
       index: true,
       follow: true,
@@ -53,11 +51,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
 
     openGraph: {
-      title: `${category.title} - 症狀與治療介紹`,
+      title: `${category.title} - 症狀與治療介紹 `,
       description: category.description,
       url: canonicalUrl,
       images: [{ url: ogImage, width: 1200, height: 630, alt: category.title }],
       type: 'website',
+      siteName: '新竹宸新復健科診所',
+    },
+    // 加入在地化 Geo 標記
+    other: {
+      'geo.region': 'TW-HCH',
+      'geo.placename': '新竹市',
     }
   }
 }
@@ -98,9 +102,9 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
     description: category.description,
     url: currentUrl,
     author: {
-      '@type': 'MedicalOrganization',
-      name: '新竹宸新復健科',
-      url: SITE_URL,
+        '@type': 'MedicalOrganization',
+        name: '新竹宸新復健科',
+        url: SITE_URL,
     },
     mainEntity: {
       '@type': 'ItemList',
@@ -118,12 +122,10 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
       <JsonLd data={jsonLdBreadcrumb} />
       <JsonLd data={jsonLdCategory} />
 
-      {/* 啟動動畫引擎 */}
       <ScrollAnimation />
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
 
-        {/* Padding 設定：手機版 pt-24，電腦版 pt-32 */}
         <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -140,12 +142,8 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
               <div className="border-b border-slate-700 pb-6 text-center">
                 <div>
                   <h1 className="text-3xl md:text-5xl font-bold font-sans text-white tracking-wide mb-3">
-                    {category.title}
+                  {category.description}
                   </h1>
-                  {/* [已開啟] 這裡的描述文字有助於增加頁面獨特性，提升 SEO */}
-                  <p className="text-slate-400 text-lg max-w-2xl leading-relaxed mx-auto">
-                    {category.description}
-                  </p>
                 </div>
               </div>
             </div>
@@ -159,19 +157,19 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                     href={`/diseases/${category.slug}/${disease.slug}`}
                     className="group bg-slate-800/40 backdrop-blur border border-slate-700/80 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_20px_rgba(34,211,238,0.15)] transition-all duration-300 flex flex-col h-full"
                   >
-                    {/* 1. 圖片區塊 */}
+                    {/* 1. 圖片區塊 (優化 Alt) */}
                     <div className="h-56 overflow-hidden relative bg-slate-900">
                       {disease.images && disease.images.length > 0 ? (
                         <img
                           src={disease.images[0].src}
-                          alt={disease.images[0].alt || disease.title}
+                          alt={`新竹復健科：${disease.title}專業治療與復健建議`}
                           className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                         />
                       ) : (
                         <div className="w-full h-full relative">
                           <img
                             src={category.image || '/images/default-medical.webp'}
-                            alt={category.title}
+                            alt={`新竹復健科：${category.title}相關病症衛教`}
                             className="w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-500 transform group-hover:scale-105"
                           />
                           <div className="absolute inset-0 flex items-center justify-center">
@@ -182,6 +180,7 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
 
                       <div className="absolute bottom-0 left-0 p-6 w-full">
+                        {/* H2 應用於特定疾病列表標題 */}
                         <h2 className="text-2xl font-bold text-white group-hover:text-cyan-300 transition-colors drop-shadow-md">
                           {disease.title}
                         </h2>
@@ -224,8 +223,9 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
               </div>
             )}
 
-            {/* 底部導航區 */}
+            {/* 底部導航區 (優化：加入 H2 補強層級) */}
             <div className="text-center border-t border-slate-800 pt-12 animate-on-scroll delay-200">
+              <h2 className="sr-only">探索其他部位的骨科復健衛教與治療資訊</h2>
               <p className="text-slate-500 mb-6">想了解其他部位的不適症狀嗎？</p>
               <Link
                 href="/diseases"

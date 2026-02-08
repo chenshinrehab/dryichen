@@ -21,7 +21,9 @@ import {
   FaCircle, 
   FaPhoneAlt, 
   FaGlobe, 
-  FaMapMarkedAlt 
+  FaMapMarkedAlt,
+  FaCar,      // 新增：用於交通資訊
+  FaRoute     // 新增：用於路徑描述
 } from "react-icons/fa";
 import { HiLocationMarker } from "react-icons/hi";
 
@@ -30,14 +32,15 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.t
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: '林羿辰醫師 - 骨科與運動傷害專家 | 宸新診所院長',
+    default: '新竹復健科推薦-林羿辰醫師｜專業PRP注射、震波治療｜宸新復健科診所院長',
     template: '%s | 林羿辰醫師'
   },
   description: '台大醫院林羿辰醫師官方網站。現任新竹宸新復健科診所院長，擁有健身教練證照的復健科醫師。專長：高解析超音波導引PRP注射、增生療法、震波治療、兒童骨齡評估與減重門診。',
   keywords: [
     '林羿辰醫師', '林羿辰', '運動教練醫師', '新竹復健科醫師推薦',
     '新竹復健科', '宸新復健科', 'PRP注射', '震波治療', '兒童骨齡', '減重門診',
-    '新竹科學園區', '關埔重劃區'
+    '新竹科學園區', '關埔重劃區',
+    '新竹東區復健科', '新竹科學園區物理治療', '竹北增生療法', '光復路復健診所'
   ],
   alternates: {
     canonical: SITE_URL,
@@ -54,7 +57,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: '林羿辰醫師 - 骨科與運動傷害專家 | 宸新診所院長',
+    title: '新竹復健科推薦-林羿辰醫師｜專業PRP注射、震波治療｜宸新復健科診所院長',
     description: '台大醫師林羿辰，結合醫學與運動訓練，提供最專業的骨科復健與疼痛治療應用.',
     type: 'profile',
     url: SITE_URL,
@@ -71,7 +74,7 @@ export const metadata: Metadata = {
   },
 }
 
-// --- Schema 資料完全保留 ---
+// --- Schema 資料更新 ---
 const medicalClinicSchema = {
   '@context': 'https://schema.org',
   '@type': 'MedicalClinic',
@@ -131,7 +134,7 @@ const medicalClinicSchema = {
     ]
   },
 
-  "hasMap": "https://maps.app.goo.gl/Lra7Zo5CJxXLdbSJ6",
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=宸新復健科診所",
   "areaServed": [
     {
       "@type": "City",
@@ -153,6 +156,14 @@ const medicalClinicSchema = {
           },
           "geoRadius": "5000"
       }
+    },
+    {
+      "@type": "City",
+      "name": "竹北市"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "新竹縣"
     }
   ],
 
@@ -183,7 +194,7 @@ const medicalClinicSchema = {
   }
 }
 
-// ✨ 新增 FAQ Schema 以提升 GEO 表現
+// ✨ FAQ Schema
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -426,20 +437,24 @@ export default function Home() {
                                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
                                     <div className="space-y-3">
                                        <div className="flex items-start gap-3 text-slate-200 text-lg font-medium">
-                                           <HiLocationMarker className="mt-1.5 text-cyan-400 text-xl shrink-0" />
-                                           <p>300新竹市東區光復路一段371號B1 <span className="text-slate-300 text-base block sm:inline ml-0 sm:ml-2">(近竹科/關新路)</span></p>
+                                            <HiLocationMarker className="mt-1.5 text-cyan-400 text-xl shrink-0" />
+                                            <p>300新竹市東區光復路一段371號B1 <span className="text-slate-300 text-base block sm:inline ml-0 sm:ml-2">(近竹科/關新路)</span></p>
                                        </div>
                                        <div className="flex items-center gap-3 text-slate-200 text-lg font-medium">
-                                           <FaPhoneAlt className="text-cyan-400 shrink-0" />
-                                           <p className="tracking-wide text-xl font-bold">(03) 564-7999</p>
+                                            <FaPhoneAlt className="text-cyan-400 shrink-0" />
+                                            {/* 確保電話格式 NAP 一致性 */}
+                                            <a href="tel:+886-3-564-7999" className="tracking-wide text-xl font-bold hover:text-cyan-400 transition-colors">
+                                              (03) 564-7999
+                                            </a>
                                        </div>
                                     </div>
                                     <div className="flex flex-col gap-3 w-full md:w-auto flex-shrink-0">
                                        <a href="https://www.forcestar.com.tw/clinic/%E6%96%B0%E7%AB%B9%E7%AB%B9%E7%A7%91%E5%AE%B8%E6%96%B0%E5%BE%A9%E5%81%A5%E7%A7%91%E8%A8%BA%E6%89%80/c/jvAUv7dDKT" target="_blank" rel="noopener noreferrer" className="w-full md:w-72 text-center px-4 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg hover:shadow-lg transition-all font-medium whitespace-nowrap flex items-center justify-center gap-2">
-                                           <FaGlobe />新竹復健科首選 - 宸新復健科診所
+                                            <FaGlobe />新竹復健科首選 - 宸新復健科診所
                                        </a>
-                                       <a href="https://maps.app.goo.gl/Lra7Zo5CJxXLdbSJ6" target="_blank" rel="noopener noreferrer" className="w-full md:w-72 text-center px-5 py-3 bg-slate-700 text-white rounded-lg transition-all font-medium flex items-center justify-center border border-slate-600 gap-2">
-                                           <FaMapMarkedAlt className="text-cyan-400" /> Google 地圖
+                                       {/* 替換為正確的 Google Maps 連結 */}
+                                       <a href="https://www.google.com/maps/search/?api=1&query=宸新復健科診所" target="_blank" rel="noopener noreferrer" className="w-full md:w-72 text-center px-5 py-3 bg-slate-700 text-white rounded-lg transition-all font-medium flex items-center justify-center border border-slate-600 gap-2">
+                                            <FaMapMarkedAlt className="text-cyan-400" /> Google 地圖
                                        </a>
                                     </div>
                                  </div>
@@ -448,6 +463,35 @@ export default function Home() {
                        </div>
                    </div>
                 </div>
+
+                {/* ✨ 新增：交通指引與位置區塊 - 針對 Local SEO 優化 */}
+                <div className="grid md:grid-cols-3 gap-6 mb-12 animate-on-scroll delay-150">
+                   <div className="bg-slate-800/60 p-6 rounded-xl border border-slate-700 hover:border-cyan-500/30 transition-colors">
+                      <div className="flex items-center gap-3 mb-4 text-cyan-400 font-bold text-lg">
+                         <FaCar className="text-2xl" /> 國道一號 (新竹交流道)
+                      </div>
+                      <p className="text-slate-300 leading-relaxed text-sm">
+                        下新竹交流道後，請往「光復路/竹東」方向行駛。沿光復路一段直行約 1.5 公里，診所位於您的右側（元大期貨旁）。
+                      </p>
+                   </div>
+                   <div className="bg-slate-800/60 p-6 rounded-xl border border-slate-700 hover:border-cyan-500/30 transition-colors">
+                      <div className="flex items-center gap-3 mb-4 text-cyan-400 font-bold text-lg">
+                         <FaRoute className="text-2xl" /> 新竹科學園區
+                      </div>
+                      <p className="text-slate-300 leading-relaxed text-sm">
+                        由園區一路或介壽路出口離開園區，轉光復路一段往竹東方向。直行約 500 公尺即可抵達，診所提供優質的園區復健服務。
+                      </p>
+                   </div>
+                   <div className="bg-slate-800/60 p-6 rounded-xl border border-slate-700 hover:border-cyan-500/30 transition-colors">
+                      <div className="flex items-center gap-3 mb-4 text-cyan-400 font-bold text-lg">
+                         <FaMapMarkedAlt className="text-2xl" /> 關新路商圈
+                      </div>
+                      <p className="text-slate-300 leading-relaxed text-sm">
+                        沿關新路往光復路方向行駛，於光復路一段路口右轉即達。診所備有<span className="text-yellow-400 font-bold">專屬平面停車位</span>，看診停車免煩惱。
+                      </p>
+                   </div>
+                </div>
+
               </div>
           </section>
         </main>

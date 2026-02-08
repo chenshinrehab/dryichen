@@ -7,7 +7,7 @@ import { facilitiesData, getFacilityById } from '@/data/facilities'
 import { getTreatmentBySlug, getAllTreatmentSlugs } from '@/data/treatments'
 import ArticleDetail, { ArticleData } from '@/components/ArticleDetail'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
 
 interface PageProps { params: { slug: string } } 
 
@@ -26,26 +26,50 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const slug = params.slug; 
 
-  // A. 檢查是否為設備 (✨ 修正點：如果是佔位符，就跳過！)
+  // A. 檢查是否為設備
   const facility = getFacilityById(slug);
   if (facility && !(facility as any).isTreatment) {
     const canonicalUrl = `${SITE_URL}/about/clinic/${slug}`;
     return {
-      title: `${facility.title} - 診所設備介紹 | 新竹宸新復健科`,
+      // 修正：移除後綴，交給 layout.tsx 模板處理以避免重複
+      title: `${facility.title} - 診所設備介紹`, 
       description: facility.description,
       alternates: { canonical: canonicalUrl },
+      openGraph: {
+        title: `${facility.title} | 新竹宸新復健科`,
+        description: facility.description,
+        url: canonicalUrl, // 修正：OG URL 應指向具體頁面而非首頁
+        type: 'website',
+        siteName: '新竹宸新復健科診所',
+      },
+      // 補上在地化標記
+      other: {
+        'geo.region': 'TW-HCH',
+        'geo.placename': '新竹市',
+      }
     };
   }
 
   // B. 檢查是否為治療
   const treatment = getTreatmentBySlug(slug);
   if (treatment) {
+    const canonicalUrl = `${SITE_URL}/treatments/${slug}`;
     return {
-      title: `${treatment.title} (設備介紹) | 新竹宸新復健科`,
+      title: `${treatment.title} (設備介紹)`, 
       description: treatment.description,
       alternates: {
-        canonical: `${SITE_URL}/treatments/${slug}`, // 指向本尊
+        canonical: canonicalUrl, // 指向本尊
       },
+      openGraph: {
+        title: `${treatment.title} | 新竹宸新復健科`,
+        description: treatment.description,
+        url: canonicalUrl,
+        type: 'website',
+      },
+      other: {
+        'geo.region': 'TW-HCH',
+        'geo.placename': '新竹市',
+      }
     };
   }
 
@@ -61,8 +85,6 @@ export default function ClinicHybridPage({ params }: PageProps) {
 
   // ----------------------------------------------------
   // 情境 A: 這是原本的診所設備
-  // ✨ 修正點：加上 && !(facility as any).isTreatment
-  // 意思是：雖然有找到 ID，但如果它是佔位符，請忽略它，不要進來這裡！
   // ----------------------------------------------------
   const facility = getFacilityById(slug);
   if (facility && !(facility as any).isTreatment) {
@@ -102,7 +124,7 @@ export default function ClinicHybridPage({ params }: PageProps) {
   }
 
   // ----------------------------------------------------
-  // 情境 B: 治療項目 (因為上方過濾掉了佔位符，程式會跑到這裡來)
+  // 情境 B: 治療項目
   // ----------------------------------------------------
   const treatment = getTreatmentBySlug(slug);
   if (treatment) {
@@ -123,7 +145,7 @@ export default function ClinicHybridPage({ params }: PageProps) {
           data={articleData} 
           backLink={{ href: '/about/clinic', label: '返回設備列表' }}
           currentUrl={currentUrl}
-          layoutStyle="standard" // 治療項目使用標準樣式
+          layoutStyle="standard" 
         />
       );
   }

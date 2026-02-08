@@ -29,11 +29,12 @@ export const articlesData: NewsPost[] = [
   .responsive-img-enlarge { width: 110% !important; max-width: none !important; display: block !important; margin: 1rem auto !important; position: relative !important; left: 50% !important; transform: translateX(-50%) !important; height: auto; }
   @media (min-width: 768px) { .responsive-img-enlarge { width: 100% !important; left: 0 !important; transform: none !important; } }
 </style>
-        <img src="/images/news/article/prp/1.webp" alt="PRP全攻略懶人包1" class="responsive-img-enlarge">
-        <img src="/images/news/article/prp/2.webp" alt="PRP全攻略懶人包2" class="responsive-img-enlarge">
-        <img src="/images/news/article/prp/3.webp" alt="PRP全攻略懶人包3" class="responsive-img-enlarge">
-        <img src="/images/news/article/prp/4.webp" alt="PRP全攻略懶人包4" class="responsive-img-enlarge">
-        <img src="/images/news/article/prp/5.webp" alt="PRP全攻略懶人包5" class="responsive-img-enlarge">
+        <h2>新竹 PRP 增生療法：專業原理與治療流程全解析</h2>
+        <img src="/images/news/article/prp/1.webp" alt="新竹 PRP 增生療法修復原理懶人包" class="responsive-img-enlarge">
+        <img src="/images/news/article/prp/2.webp" alt="新竹宸新復健科 PRP 專業治療流程說明" class="responsive-img-enlarge">
+        <img src="/images/news/article/prp/3.webp" alt="PRP 治療常見適應症：膝關節、旋轉肌、網球肘" class="responsive-img-enlarge">
+        <img src="/images/news/article/prp/4.webp" alt="PRP 注射術後注意事項與居家照護建議" class="responsive-img-enlarge">
+        <img src="/images/news/article/prp/5.webp" alt="新竹地區 PRP 治療常見問題 FAQ" class="responsive-img-enlarge">
 <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; padding: 12px 0;">
           
           <a href="/treatments/prp" 
@@ -73,12 +74,13 @@ export const articlesData: NewsPost[] = [
   .responsive-img-enlarge { width: 110% !important; max-width: none !important; display: block !important; margin: 1rem auto !important; position: relative !important; left: 50% !important; transform: translateX(-50%) !important; height: auto; }
   @media (min-width: 768px) { .responsive-img-enlarge { width: 100% !important; left: 0 !important; transform: none !important; } }
 </style>
-        <img src="/images/news/article/mounjaro/1.webp" alt="猛健樂全攻略懶人包1" class="responsive-img-enlarge">
-        <img src="/images/news/article/mounjaro/2.webp" alt="猛健樂全攻略懶人包2" class="responsive-img-enlarge">
-        <img src="/images/news/article/mounjaro/3.webp" alt="猛健樂全攻略懶人包3" class="responsive-img-enlarge">
-        <img src="/images/news/article/mounjaro/4.webp" alt="猛健樂全攻略懶人包4" class="responsive-img-enlarge">
-        <img src="/images/news/article/mounjaro/5.webp" alt="猛健樂全攻略懶人包5" class="responsive-img-enlarge">
-        <img src="/images/news/article/mounjaro/6.webp" alt="猛健樂全攻略懶人包6" class="responsive-img-enlarge">
+        <h2>新竹猛健樂 Mounjaro 減重門診：藥物機轉與施打指南</h2>
+        <img src="/images/news/article/mounjaro/1.webp" alt="猛健樂 Mounjaro 雙腸泌素作用原理懶人包" class="responsive-img-enlarge">
+        <img src="/images/news/article/mounjaro/2.webp" alt="猛健樂正確施打方式與療程進度規劃" class="responsive-img-enlarge">
+        <img src="/images/news/article/mounjaro/3.webp" alt="新竹減重門診：猛健樂常見副作用管理與應對" class="responsive-img-enlarge">
+        <img src="/images/news/article/mounjaro/4.webp" alt="猛健樂療程期間的飲食建議與生活型態調整" class="responsive-img-enlarge">
+        <img src="/images/news/article/mounjaro/5.webp" alt="新竹宸新復健科：猛健樂 vs 傳統瘦瘦針差異比較" class="responsive-img-enlarge">
+        <img src="/images/news/article/mounjaro/6.webp" alt="猛健樂減重門診諮詢流程與價格說明" class="responsive-img-enlarge">
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; padding: 12px 0;">
           
@@ -137,11 +139,12 @@ export const articlesData: NewsPost[] = [
   .responsive-img-enlarge { width: 110% !important; max-width: none !important; display: block !important; margin: 1rem auto !important; position: relative !important; left: 50% !important; transform: translateX(-50%) !important; height: auto; }
   @media (min-width: 768px) { .responsive-img-enlarge { width: 100% !important; left: 0 !important; transform: none !important; } }
 </style>
-       <img src="/images/news/article/boneage/1.webp" alt="兒童長高全攻略懶人包1" class="responsive-img-enlarge">
-        <img src="/images/news/article/boneage/2.webp" alt="兒童長高全攻略懶人包2" class="responsive-img-enlarge">
-        <img src="/images/news/article/boneage/3.webp" alt="兒童長高全攻略懶人包3" class="responsive-img-enlarge">
-        <img src="/images/news/article/boneage/4.webp" alt="兒童長高全攻略懶人包4" class="responsive-img-enlarge">
-        <img src="/images/news/article/boneage/5.webp" alt="兒童長高全攻略懶人包5" class="responsive-img-enlarge">
+        <h2>2026 兒童長高全攻略：把握生長板閉合前的黃金衝刺期</h2>
+        <img src="/images/news/article/boneage/1.webp" alt="兒童長高黃金期與生長板閉合時間圖解" class="responsive-img-enlarge">
+        <img src="/images/news/article/boneage/2.webp" alt="影響兒童身高的關鍵因素：遺傳、營養與作息" class="responsive-img-enlarge">
+        <img src="/images/news/article/boneage/3.webp" alt="兒童長高必備營養素：蛋白質、鈣質、維生素 D 與鋅" class="responsive-img-enlarge">
+        <img src="/images/news/article/boneage/4.webp" alt="預防兒童性早熟：避免環境荷爾蒙與肥胖影響身高" class="responsive-img-enlarge">
+        <img src="/images/news/article/boneage/5.webp" alt="高效長高運動建議：每日跳繩計畫與正確姿勢" class="responsive-img-enlarge">
 
         <div style="
           display: grid; 
@@ -159,26 +162,26 @@ export const articlesData: NewsPost[] = [
           <div class="button-grid-container" style="display: grid; grid-template-columns: inherit; gap: inherit; grid-column: 1 / -1;">
             
             <a href="/weight-bone/bone-age" 
-               style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #3b82f6, #4f46e5); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
-               onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+                style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #3b82f6, #4f46e5); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
+                onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
               <span style="color: #ffffff;">宸新骨齡門診</span>
             </a>
 
             <a href="/weight-bone/BMI" 
-               style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #10b981, #059669); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
-               onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+                style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #10b981, #059669); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
+                onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
               <span style="color: #ffffff;">生長發育評估</span>
             </a>
 
             <a href="/weight-bone/calculator" 
-               style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #3b82f6, #4f46e5); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
-               onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+                style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #3b82f6, #4f46e5); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
+                onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
               <span style="color: #ffffff;">遺傳身高預測</span>
             </a>
 
             <a href="/weight-bone/nutrition" 
-               style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #f59e0b, #d97706); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
-               onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+                style="display: flex; align-items: center; justify-content: center; padding: 12px 4px; background: linear-gradient(to right, #f59e0b, #d97706); border-radius: 12px; color: #ffffff !important; text-decoration: none !important; font-weight: 700; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; text-align: center;"
+                onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
               <span style="color: #ffffff;">長高營養指南</span>
             </a>
           </div>
@@ -218,7 +221,7 @@ export const articlesData: NewsPost[] = [
       <p>孩子的生長並非等速前進，每個時期都有標準速度。若低於以下標準，家長務必提高警覺：</p>
       <ul>
         <li><strong>嬰兒期 (0-1歲)：</strong>一年增長 20~25 公分 (生長最快的黃金期)。</li>
-        <li><strong>幼兒期 (1-3歲)：</strong>一年增長 10~12 公分。</li>
+        <li><strong>幼兒期 (1-3歲)：</strong>一年增長 10~12 公分.</li>
         <li><strong>學齡前期 (3-6歲)：</strong>一年增長 6~8 公分。</li>
         <li><strong>學齡期 (6歲至青春期前)：</strong>一年穩定成長 5~6 公分。</li>
       </ul>
@@ -297,7 +300,8 @@ export const articlesData: NewsPost[] = [
     seoDescription: '攀岩愛好者必看！醫師整理六大常見攀岩傷害：A2滑車韌帶撕裂、肩夾擠、高爾夫球肘、TFCC手腕痛及折膝導致的半月板損傷。結合 Alex Honnold 挑戰 101 情境衛教。',
     keywords: ['攀岩', '運動傷害', 'Alex Honnold', '手指滑車', '滑車韌帶', '肩旋轉肌', '半月板', '復健'],
     contentHtml: `
-    <img src="/images/news/article/climb.webp" alt="運動常見傷害 - 攀岩" style="width: 60%; height: auto;">
+        <h2>常見攀岩運動傷害解析：上肢與下肢的潛在風險</h2>
+        <img src="/images/news/article/climb.webp" alt="攀岩運動常見傷害分布圖：手指、肩膀、手肘與膝蓋" style="width: 60%; height: auto;">
       <p>攀岩是近年來超級熱門的運動，不僅納入奧運項目，最近無繩獨攀大神 Alex Honnold 成功攀登台北 101 的壯舉更是震撼全台！</p><br>
       <p>🏥 門診中常遇到受傷的岩友，不同於滑雪多傷下肢，攀岩因運動特性，受傷部位多集中在上肢。常見原因不外乎：<strong>過度使用、休息不足或墜落姿勢不當</strong>。</p>
       
@@ -320,7 +324,7 @@ export const articlesData: NewsPost[] = [
       <p>指的是手腕外側（小指側）的疼痛。當遇到需要抓握大角度的 <strong>「Sloper (平滑點)」</strong> 或 <strong>「Undercling (倒抓)」</strong> 時，手腕在極度扭轉的角度下發力，就容易造成軟骨擠壓受損。</p>
   
       <h2>5️⃣ 膝蓋半月板損傷</h2>
-      <p>現代攀岩技巧常使用 <strong>「Drop Knee (折膝)」</strong> 或高強度的 <strong>「Heel Hook (掛腳)」</strong>。這類動作會對膝蓋施加強大的扭轉剪力，容易導致半月板 or 內側韌帶受傷。</p>
+      <p>現代攀岩技巧常使用 <strong>「Drop Knee (折膝)」</strong> 或高強度的 <strong>「Heel Hook (掛腳)」</strong>。這類動作會對膝蓋施加強大的扭轉剪力，容易導致半月板 or 内側韌帶受傷。</p>
   
       <h2>6️⃣ 腳踝扭傷</h2>
       <p>通常發生在 <strong>抱石 (Bouldering)</strong> 項目。在沒有繩索保護的情況下墜落，若落地姿勢不佳或腳剛好卡在岩墊縫隙，極易造成腳踝翻船扭傷。</p>
@@ -342,7 +346,8 @@ export const articlesData: NewsPost[] = [
     seoDescription: '門診常被問：打膝蓋剩下的玻尿酸，可以順便補臉嗎？醫師解釋：雖然都叫玻尿酸，但關節用的像機油，醫美用的像水泥，用途大不同！醫師詳解三種玻尿酸差異。',
     keywords: ['玻尿酸', '膝蓋退化', '醫美', '增生療法', '韌帶修復', '醫學知識'],
     contentHtml: `
-      <img src="/images/news/article/ha.webp" alt="打膝蓋剩下的玻尿酸，可以順便補臉嗎？" style="width: 100%; height: auto;">
+        <h2>關節玻尿酸 vs 醫美玻尿酸：成分、用途與交聯度大對比</h2>
+        <img src="/images/news/article/ha.webp" alt="醫美用玻尿酸與關節注射用玻尿酸的差異解析" style="width: 100%; height: auto;">
       <p>門診一位可愛的大姊突發奇想問我：「醫美打臉好貴喔，阿打膝蓋的玻尿酸，剩一點幫我補一下法令紋？」</p>
       <p><strong>😂 修但幾勒！當然不行！</strong></p>
       <p>雖然都叫「玻尿酸」，但不會拿機油去補牆壁一樣啊！這兩者的濃度、分子大小與交聯程度完全不同。</p>
@@ -384,7 +389,8 @@ export const articlesData: NewsPost[] = [
     seoDescription: '膝蓋為何會喀喀響，是膝蓋退化了嗎?，膝蓋有聲音，膝關節退化。',
     keywords: ['醫學知識', '膝蓋痛', '退化性關節炎', '喀喀響'],
     contentHtml: `
-      <img src="/images/news/article/knee.webp" alt="膝蓋為何會喀喀響，是膝蓋退化了嗎?" style="width: 100%; height: auto;">
+        <h2>膝蓋喀喀響原因揭秘：是生理現象還是關節退化警訊？</h2>
+        <img src="/images/news/article/knee.webp" alt="膝蓋關節構造與喀喀響發生原因示意圖" style="width: 100%; height: auto;">
 
       <p>門診很常碰到病患來看診，詢問膝蓋為何會喀喀響，擔心膝蓋是不是退化了！</p>
   

@@ -12,7 +12,11 @@ const SITE_URL = 'https://www.dryichen.com.tw'
 const PAGE_PATH = '/about/doctors'
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
+// ==========================================
+// 1. Meta 設定 (優化 Title、加入 Geo 與 OG)
+// ==========================================
 export const metadata: Metadata = { 
+  // 修正：僅提供標題，讓 layout.tsx 的模板加上「 | 新竹宸新復健科」避免重複
   title: '林羿辰醫師介紹 - 台大雙專科院長 | 新竹復健科/骨科/運動傷害推薦',
   description: '新竹復健科推薦林羿辰醫師。台大醫學系畢業，具備復健專科與骨質疏鬆專科雙資格。專精超音波導引PRP注射、增生療法、兒童骨齡評估與各類運動傷害治療，是您值得信賴的骨科復健專家。',
   keywords: ['林羿辰', '新竹復健科醫師', '台大醫師', '新竹骨科推薦', '運動醫學', 'PRP注射', '增生療法', '超音波導引', '兒童骨齡'],
@@ -20,11 +24,17 @@ export const metadata: Metadata = {
     canonical: CANONICAL_URL,
   },
   openGraph: {
-    title: '林羿辰醫師介紹 - 台大雙專科院長',
+    title: '林羿辰醫師介紹 - 台大雙專科院長 | 新竹宸新復健科',
     description: '新竹復健科推薦林羿辰醫師。台大醫學系畢業，具備復健專科與骨質疏鬆專科雙資格。',
     url: CANONICAL_URL,
     type: 'profile',
     images: [`${SITE_URL}/images/doctor/c.webp`],
+    siteName: '新竹宸新復健科診所',
+  },
+  // 加入在地化標記
+  other: {
+    'geo.region': 'TW-HCH',
+    'geo.placename': '新竹市',
   }
 }
 
@@ -57,15 +67,11 @@ export default function DoctorsPage() {
       '@type': 'Physician',
       name: '林羿辰',
       jobTitle: '院長',
-      image: `${SITE_URL}/images/main/a.webp`, 
+      image: `${SITE_URL}/images/doctor/c.webp`, 
       url: currentUrl,
-      
-      // ✅ description 放這裡就好 (確保沒有重複)
-      description: '台大醫學系畢業，具備復健科專科與骨鬆雙專科醫師資歷。',
-      
+      description: '台大醫學系畢業，具備復健科專科與骨鬆雙專科醫師資歷。專精超音波導引PRP注射與運動傷害治療。',
       telephone: '+886-3-564-7999', 
       priceRange: '$$', 
-      
       address: {
         '@type': 'PostalAddress',
         streetAddress: '東區光復路一段371號B1',
@@ -73,7 +79,6 @@ export default function DoctorsPage() {
         addressRegion: 'TW',
         postalCode: '300'
       },
-
       worksFor: {
         '@type': 'MedicalClinic',
         name: '宸新復健科診所',
@@ -86,19 +91,18 @@ export default function DoctorsPage() {
             postalCode: '300'
         }
       },
-      
       alumniOf: { 
         '@type': 'EducationalOrganization', 
         name: '國立台灣大學醫學系' 
       },
-      
       medicalSpecialty: [
         'Physiotherapy', 
         'SportsMedicine', 
         'Musculoskeletal'
-      ] // ✅ 陣列結束後沒有逗號，因為這已經是最後一項了
+      ]
     }
 }
+
   return (
     <>
       <JsonLd data={jsonLdBreadcrumb} />
@@ -113,7 +117,7 @@ export default function DoctorsPage() {
           {/* ✨ 3. 返回按鈕動畫 */}
           <div className="animate-on-scroll">
             <Link href="/about" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group">
-               <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回關於我們
+                <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回關於我們
             </Link>
           </div>
 
@@ -128,13 +132,13 @@ export default function DoctorsPage() {
                       <div className="w-full lg:w-[40%] relative aspect-[9/16] shrink-0 bg-slate-800 self-start animate-on-scroll delay-200">
   <Image 
     src="/images/doctor/c.webp"
-    alt="新竹復健科推薦-林羿辰醫師-台大雙專科" 
-    fill // ✨ 取代原本的 w-full h-full
-    priority // ✨ 核心修正：告訴瀏覽器這是最重要的圖片，立即載入
+    alt="新竹復健科推薦醫師：林羿辰院長 - 台大醫學系雙專科背景" 
+    fill 
+    priority 
     // @ts-ignore
-    fetchPriority="high" // ✨ 強制瀏覽器排在所有資源的最前面下載
+    fetchPriority="high" 
     className="object-cover opacity-90 hover:opacity-100 transition-opacity duration-700" 
-    sizes="(max-width: 1024px) 100vw, 40vw" // ✨ 效能優化：讓手機版不載入電腦版的大圖
+    sizes="(max-width: 1024px) 100vw, 40vw" 
   />
   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-slate-900/30 pointer-events-none"></div>
 </div>
@@ -146,9 +150,10 @@ export default function DoctorsPage() {
                              <h1 className="text-4xl md:text-5xl font-bold font-sans text-white mb-3 tracking-wide leading-tight">
                                 林羿辰 <span className="text-2xl text-cyan-400 font-medium ml-1 whitespace-nowrap">醫師</span>
                              </h1>
-                             <p className="text-xl text-slate-300 border-l-4 border-cyan-500 pl-4 mb-2">
-                               宸新復健科診所院長
-                             </p>
+                             {/* ✨ 補強 H2：強化專業形象與關鍵字權重 */}
+                             <h2 className="text-xl text-slate-300 border-l-4 border-cyan-500 pl-4 mb-2">
+                               新竹宸新復健科診所院長：專業PRP注射、猛健樂與兒童骨齡
+                             </h2>
                              <div className="flex flex-wrap gap-2 mt-3">
                                 <span className="text-xs bg-cyan-900/50 text-cyan-300 px-2 py-1 rounded border border-cyan-700/50">台大醫學系</span>
                                 <span className="text-xs bg-cyan-900/50 text-cyan-300 px-2 py-1 rounded border border-cyan-700/50">雙專科</span>
@@ -207,7 +212,7 @@ export default function DoctorsPage() {
                             </div>
                           </div>
                           
-                          {/* ✨ 按鈕區塊：最後滑入，吸引注意 */}
+                          {/* ✨ 按鈕區塊 */}
                           <div className="mt-8 pt-5 border-t border-slate-700/50 flex flex-wrap gap-4 animate-on-scroll delay-500">
                               <Link 
                                 href="/treatments" 
