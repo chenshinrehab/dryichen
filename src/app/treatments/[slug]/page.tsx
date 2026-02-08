@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     // 修正：移除後綴診所名，避免與 layout.tsx 模板疊加
-    title: treatment.seoTitle || `${treatment.title}  | 新竹宸新復健科 `, 
+    title: treatment.seoTitle || `${treatment.title}  `, 
     description: treatment.seoDescription || treatment.description,
     keywords: treatment.keywords || ['新竹復健', '骨科', treatment.title, '宸新復健科'],
     alternates: {

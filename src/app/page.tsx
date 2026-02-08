@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: '新竹復健科推薦-林羿辰醫師｜專業PRP注射、震波治療｜宸新復健科診所院長',
+    title: '林羿辰醫師-宸新復健科診所院長',
     description: '台大醫師林羿辰，結合醫學與運動訓練，提供最專業的骨科復健與疼痛治療應用.',
     type: 'profile',
     url: SITE_URL,
