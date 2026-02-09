@@ -16,23 +16,38 @@ const noticesList = newsList.filter(item => item.category === '門診公告');
 export const metadata: Metadata = { 
   // 修正：僅提供頁面標題，讓 Layout Template 自動加上「 | 新竹宸新復健科」
   title: '門診異動公告 - 休診與代診通知 | 新竹宸新復健科', 
-  description: '查詢新竹宸新復健科最新的門診異動、國定假日休診公告、醫師代診資訊，掌握看診動態。',
-  keywords: ['門診時間', '休診公告', '復健科門診', '新竹復健科公告', '宸新復健科異動'],
+  description: '查詢新竹宸新復健科最新的門診異動、國定假日休診公告、醫師代診資訊，掌握看診動態。提供新竹東區、竹北地區民眾最即時的復健科看診資訊。',
+  // SEO 強化：加入更精確的在地關鍵字與醫療服務關鍵字
+  keywords: [
+    '門診時間', '休診公告', '復健科門診', '新竹復健科公告', '宸新復健科異動',
+    '新竹東區復健科', '新竹復健科推薦', '關埔復健科', 'PRP注射', '增生療法', '林羿辰醫師'
+  ],
   alternates: {
     canonical: CANONICAL_URL,
   },
   openGraph: {
     title: '門診異動公告 | 新竹宸新復健科',
-    description: '即時更新的門診時間異動與休診資訊。',
+    description: '即時更新的門診時間異動與休診資訊，包含國定假日與醫師代診通知。',
     url: CANONICAL_URL,
     type: 'website',
     siteName: '新竹宸新復健科診所',
     locale: 'zh_TW',
+    // SEO 強化：補上 OG 圖片設定 (若無特定圖片則使用 Logo 或預設圖)
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`, // 建議確保此路徑有預設圖片
+        width: 1200,
+        height: 630,
+        alt: '新竹宸新復健科門診公告',
+      },
+    ],
   },
-  // 加入在地化 Geo 標記
+  // 加入在地化 Geo 標記 (SEO 強化核心)
   other: {
-    'geo.region': 'TW-HCH',
-    'geo.placename': '新竹市',
+    'geo.region': 'TW-HSZ', // 修正為新竹市 (Hsinchu City) 的 ISO 代碼
+    'geo.placename': '新竹市東區',
+    'geo.position': '24.783331;121.017094', // 加入精確座標
+    'ICBM': '24.783331, 121.017094',        // 加入精確座標
   }
 }
 
@@ -49,6 +64,7 @@ export default function NoticesPage() {
     ],
   }
 
+  // SEO 強化：在 MedicalClinic Schema 中加入 Geo 座標與服務範圍
   const jsonLdBlog = {
     '@context': 'https://schema.org',
     '@type': 'Blog',
@@ -59,6 +75,9 @@ export default function NoticesPage() {
     publisher: {
         '@type': 'MedicalClinic',
         name: '新竹宸新復健科診所',
+        image: `${SITE_URL}/logo.webp`,
+        medicalSpecialty: ['Physical Therapy', 'Rehabilitation', 'Pain Management'], // 加入專科類別
+        telephone: '+886-3-xxxxxxx', // 建議填入實際電話
         address: {
           '@type': 'PostalAddress',
           streetAddress: '光復路一段371號B1',
@@ -67,6 +86,16 @@ export default function NoticesPage() {
           postalCode: '300',
           addressCountry: 'TW',
         },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 24.783331,
+          longitude: 121.017094
+        },
+        areaServed: [
+          { '@type': 'City', name: '新竹市' },
+          { '@type': 'City', name: '竹北市' },
+          { '@type': 'Place', name: '新竹科學園區' }
+        ],
         logo: {
             '@type': 'ImageObject',
             url: `${SITE_URL}/logo.webp`
@@ -95,6 +124,12 @@ export default function NoticesPage() {
             addressRegion: '東區',
             postalCode: '300',
             addressCountry: 'TW',
+          },
+          // 這裡也同步加入座標
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: 24.783331,
+            longitude: 121.017094
           }
       }
     },
@@ -105,6 +140,10 @@ export default function NoticesPage() {
         url: `${SITE_URL}/about/news/${item.id}`,
         datePublished: item.date,
         image: item.coverImage,
+        mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id': `${SITE_URL}/about/news/${item.id}`
+        }
     }))
   }
 

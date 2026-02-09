@@ -16,7 +16,7 @@ export async function generateStaticParams() {
   return newsList.map((post) => ({ id: post.id }))
 }
 
-// 1. 動態 Meta (修正重點：加入 Canonical 與在地化標記)
+// 1. 動態 Meta (強化重點：加入精確座標與主題性 SEO)
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const post = getNewsById(params.id)
   if (!post) return { title: '文章不存在' }
@@ -25,7 +25,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
    
   return {
     // 修正：確保標題不重複堆疊診所名稱
-    // 修正後的語法
     title: post.seoTitle ? post.seoTitle : `${post.title} | 新竹宸新復健科`,
     description: post.seoDescription || post.summary,
     keywords: post.keywords,
@@ -41,20 +40,23 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       type: 'article',
       siteName: '新竹宸新復健科診所',
       locale: 'zh_TW',
+      authors: ['林羿辰醫師'],
+       tags: ['復健科', '增生療法', 'PRP', '新竹復健科'],
       images: [
         {
             url: post.coverImage,
             width: 1200,
             height: 630,
             alt: post.title,
-        }
-      ]
+        }    ],
+
     },
-    // 補上在地化標記
     other: {
-      'geo.region': 'TW-HCH',
-      'geo.placename': '新竹市',
-    }
+      'geo.position': '24.783331;121.017094',
+      'geo.region': 'TW-Hsinchu', // 新竹區域標記
+      'geo.placename': 'Zhubei',
+    },
+
   }
 }
 
@@ -63,21 +65,52 @@ export default function NewsDetailPage({ params }: PageProps) {
   if (!post) notFound()
 
   const currentUrl = `${SITE_URL}/about/news/${params.id}`
+  
+  // 分類判斷
   const isAnnouncement = post.category === '門診公告' || post.category === '診所活動';
+  // 定義重點強化的醫療專業內容類別
+  const isMedicalContent = ['衛教文章', '醫學新知', '診間隨筆'].includes(post.category);
 
-  // 2. Schema (根據類別切換結構)
+  // 2. Schema (根據類別切換結構，針對指定主題深度強化)
   const jsonLdData = {
     '@context': 'https://schema.org',
+    // 若非公告，預設使用 MedicalWebPage 以提升專業權重
     '@type': isAnnouncement ? 'NewsArticle' : 'MedicalWebPage',
     '@id': `${currentUrl}#webpage`,
     url: currentUrl,
     [isAnnouncement ? 'headline' : 'name']: post.title,
+    alternativeHeadline: post.seoTitle,
     image: [post.coverImage],
     datePublished: post.date,
     dateModified: post.date,
+    articleSection: post.category,
+    keywords: post.keywords,
+
+    // 針對「衛教文章」、「醫學新知」、「診間隨筆」加入進階醫療標記
+    ...(isMedicalContent ? {
+        medicalSpecialty: {
+            '@type': 'MedicalSpecialty',
+            name: 'Physical Medicine and Rehabilitation', // 復健科
+            alternateName: '復健科'
+        },
+        audience: {
+            '@type': 'Patient',
+            audienceType: 'public',
+            geographicArea: {
+                '@type': 'AdministrativeArea',
+                name: 'Hsinchu City'
+            }
+        }
+    } : {}),
+
     author: { 
         '@type': 'Person', 
         name: '林羿辰醫師',
+        jobTitle: '院長',
+        worksFor: {
+            '@type': 'MedicalClinic',
+            name: '宸新復健科診所'
+        },
         address: {
           '@type': 'PostalAddress',
           streetAddress: '光復路一段371號B1',
@@ -99,17 +132,25 @@ export default function NewsDetailPage({ params }: PageProps) {
           postalCode: '300',
           addressCountry: 'TW',
         },
+        // 強化：發布者加入地理座標，提升 Local SEO
+        geo: {
+            '@type': 'GeoCoordinates',
+            latitude: 24.783331,
+            longitude: 121.017094 
+        },
         logo: {
             '@type': 'ImageObject',
             url: `${SITE_URL}/logo.webp`
         }
     },
     description: post.summary,
+    // 針對非公告類文章 (含診間隨筆)，確保有最後審閱資訊
     ...(isAnnouncement ? {} : {
         lastReviewed: post.date,
         reviewedBy: {
             '@type': 'Physician',
             name: '林羿辰醫師',
+            medicalSpecialty: 'Physical Medicine and Rehabilitation',
             address: {
               '@type': 'PostalAddress',
               streetAddress: '光復路一段371號B1',

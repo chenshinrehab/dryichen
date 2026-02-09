@@ -10,7 +10,7 @@ import { noticesData } from './notices';
 export interface NewsPost {
   id: string;
   title: string;
-  category: '門診公告' | '衛教文章' | '醫學新知' | '診所活動';
+  category: '門診公告' | '衛教文章' | '醫學新知' | '診所活動'| '診間隨筆';
   date: string;       // YYYY-MM-DD
   displayTag?: string;// 置頂或重要標籤
   summary: string;
