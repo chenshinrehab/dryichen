@@ -88,7 +88,21 @@ export default function CaseDetailPage({ params }: PageProps) {
     publisher: { 
         '@type': 'MedicalOrganization', 
         name: '新竹宸新復健科診所',
-        // 優化：提供絕對路徑的 Logo 網址
+        telephone: '+886-3-564-7999',
+        priceRange: '$$', 
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '光復路一段371號B1',
+          addressLocality: '新竹市',
+          addressRegion: '東區',
+          postalCode: '300',
+          addressCountry: 'TW',
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: '24.7833314', 
+          longitude: '121.0170937'
+        },
         logo: {
             '@type': 'ImageObject',
             url: `${SITE_URL}/logo.webp`

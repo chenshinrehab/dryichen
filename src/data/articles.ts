@@ -3,6 +3,58 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
   {
+    id: 'skiing-injuries-top5',
+    title: '🏂 滑雪的終點是骨科？揭曉雪季「五大傷兵名單」',
+    lastModified: '2026-02-11',
+    category: '衛教文章',
+    date: '2026-02-11',
+    summary: '最近門診病患有一半是剛從日本回來的雪友。究竟滑雪最容易傷到哪裡？受傷了該如何快速回到雪場？復健科醫師為你解析雪季熱門傷情與 PRP 增生療法。',
+    coverImage: '/images/news/article/ski.webp',
+    seoTitle: '滑雪受傷怎麼辦？膝蓋韌帶、尾椎、手腕受傷治療與PRP增生療法',
+    seoDescription: '解析滑雪五大常見傷害：尾椎挫傷、腳踝扭傷、膝蓋 MCL 受傷、手腕 TFCC 損傷及肩膀脫臼。提供 PRP、增生療法與高能量雷射等快速修復方案。',
+    keywords: ['滑雪受傷', '膝蓋內側副韌帶', 'PRP', '增生療法', '三角軟骨損傷', '復健科'],
+    contentHtml: `
+        <img src="/images/news/article/ski.webp" alt="滑雪受傷常見部位示意圖" style="width: min(100%, 450px); height: auto; display: block; margin: 0 auto;">
+        <h2>🏂 滑雪的終點是骨科？</h2>
+
+        <p>最近門診病患，有一半是剛從日本回來的雪友，甚至還有人是為了下週要出發，現在急著要把舊傷修好的。🎿 最近統計了一下診所的「雪季五大傷兵名單」，看看你中了哪一個？👇</p>
+
+        <hr>
+
+        <h2>🔥 滑雪受傷熱門榜 Top 5</h2>
+        <ul>
+          <li><strong>尾椎下背挫傷：</strong>跌倒時屁股向後坐，造成下背或尾椎疼痛。</li>
+          <li><strong>腳踝扭傷：</strong>雪鞋沒穿好或單板（Snowboard），腳踝直接「翻船」。</li>
+          <li><strong>膝蓋內側副韌帶受傷：</strong>雙板（Ski）最常見！兩腳板分太開或是膝蓋內夾，導致內側韌帶撕裂傷。</li>
+          <li><strong>手腕三角軟骨損傷：</strong>跌倒時手掌直覺撐地，傷到三角軟骨或舟月韌帶。</li>
+          <li><strong>肩膀旋轉肌撕裂：</strong>高速撞擊或跌倒時肩膀著地，嚴重時也可能脫臼。</li>
+        </ul>
+
+        <hr>
+
+        <h2>🚑 受傷了，該怎麼辦？</h2>
+        <p>其實大部分的輕微拉傷，透過口服藥物搭配物理治療，乖乖休息都會好。但問題來了——<strong>「醫師，我的雪季很短啊！」</strong> 😭</p>
+        <p>這是我們最常聽到的心聲。機票飯店都訂了，假也請了，誰想在飯店躺平？這也是為什麼最近<strong>增生療法</strong>與 <strong>PRP（自體血小板）</strong> 的詢問度爆表：</p>
+
+        <ul>
+          <li><strong>輕微損傷：</strong>使用高濃度葡萄糖修補組織，穩扎穩打；急性疼痛可考慮<strong>高能量雷射</strong>快速舒緩。</li>
+          <li><strong>嚴重撕裂 / 時間緊迫：</strong>許多雪友為了趕快回到雪場，直接選擇 <strong>PRP</strong>。利用高濃度生長因子加速修復，縮短尷尬的「停機時間」。</li>
+        </ul>
+
+        <blockquote>
+            看到好多病患打完針、經過短暫休息與測試後，傳來順利回到雪道上分享滑雪過程的照片，那種失而復得的笑容，真的是復健科醫師最大的成就感！💪
+        </blockquote>
+
+        <p>我也開始期待三月底北海道員工旅遊的滑雪行程了！❄️</p>
+
+        <h2>👨‍⚕️ 醫師小叮嚀</h2>
+        <p>滑雪前<strong>「暖身」</strong>真的不能省，護具（護腕、護膝、防摔褲）穿好穿滿。如果不幸受傷，千萬不要硬撐，及早評估治療，才能滑得長長久久喔！</p>
+        <br />
+        <p>如果您也有滑雪運動傷害，歡迎<a href="/booking" class="text-cyan-400 hover:underline">預約門診</a>，讓我們陪您重返雪道。</p>
+    `
+  },
+
+  {
     id: 'musclesprain',
     title: '別再叫它「肌鬆針」了！揭開冬天閃腰潮的背後真相',
     lastModified: '2026-02-10',

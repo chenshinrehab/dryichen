@@ -3,6 +3,58 @@ import { NewsPost } from './news';
 export const noticesData: NewsPost[] = [
 
   {
+    id: 'cny-holiday-notice-2026',
+    title: '📢 宸新復健科診所｜春節休診公告',
+    category: '門診公告',
+    date: '2026-02-11',
+    summary: '宸新復健科將於 2 月 14 日（六）下午起進行春節休診，2 月 23 日（一）初七正式開工，請留意門診時間調整。',
+    coverImage: '/images/notice/newyear/2.webp', 
+    seoTitle: '【春節休診公告】2/14-2/22 宸新復健科春節放假通知 - 新竹竹科院區',
+    seoDescription: '新竹宸新復健科診所 2026 農曆春節休診公告：2/14(六)僅提供早診，2/14下午至2/22全院休假，2/23(一)初七恢復正常營業。',
+    keywords: ['春節休診', '宸新復健科休診', '新竹復健科', '竹科復健科', '門診調整'],
+    
+    contentHtml: `
+    <img src="/images/notice/newyear/2.webp" alt="宸新復健科春節休診公告" />
+<p><strong>🧧 【宸新復健科｜春節休診公告】</strong></p>
+<p>各位親愛的朋友：</p>
+<p>農曆新年將至，宸新復健科新竹竹科院區將於 <strong>2 月 14 日（六）下午</strong> 起進行春節休診，相關服務調整如下：</p>
+
+<p><strong>🗓️ 休診時間表</strong></p>
+<ul>
+    <li><strong>02.14 (六) 早上：</strong> 正常營業（僅提供早上復健及門診服務）</li>
+    <li><strong>02.14 (六) 下午：</strong> 開始休診</li>
+    <li><strong>02.15 (日) ～ 02.22 (日)：</strong> 全院休息</li>
+    <li><strong>02.23 (一) 初七：</strong> 正常營業（開工大吉 🧧）</li>
+</ul>
+
+<p><strong>💡 溫馨提醒：</strong><br>
+請長期復健或有領藥需求的病友，<strong>提前確認您的治療進度與藥品存量</strong>，以免影響療程。</p>
+
+<hr>
+
+
+<p><strong>✦ 預約與門診提醒 ✦</strong></p>
+<ul>
+    <li>休診期間線上掛號系統仍可使用，歡迎預約 2/23 以後之時段。</li>
+    <li>初七開工後人潮較多，建議改約其他天或多加利用 App 查看現場跳號進度。</li>
+</ul>
+
+<p>
+線上掛號: <a href="https://reurl.cc/5dr7YG" target="_blank">點我預約</a><br>
+Line 線上預約: <a href="https://lin.ee/FHj3mIs" target="_blank">點我加入 LINE</a>
+</p>
+
+<p><strong>診所多功能 App：</strong><br>
+【安卓】<a href="http://bit.ly/2Q8FdeK" target="_blank">下載 Android 版</a><br>
+【iOS】<a href="https://apple.co/2vZfRsH" target="_blank">下載 iOS 版</a>
+</p>
+
+<p>預祝大家 新年快樂，龍馬精神，平安健康！</p>
+    `
+},
+
+
+  {
     id: 'cny-special-schedule-2026',
     title: '【春節門診加開】林醫師與您一起健康過好年！',
     category: '門診公告',

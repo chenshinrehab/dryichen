@@ -23,24 +23,38 @@ const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 // ==========================================
 // 1. Meta 設定 (優化 Title 與在地化標記)
 // ==========================================
+
 export const metadata: Metadata = {
-  title: '馬上預約 - 新竹網路掛號/APP預約/Line掛號 | 新竹宸新復健科 ',
-  description: '新竹宸新復健科提供便利的數位掛號服務。支援免APP網頁直接掛號、Android/iOS App 下載預約，或加入 Line 官方帳號線上掛號。免排隊、即時查詢看診進度。',
-  keywords: ['新竹掛號', '網路預約', '診所APP', 'Line掛號', '看診進度查詢', '新竹復健科預約', '宸新掛號', '林羿辰醫師掛號'],
+  title: '馬上預約 | 林羿辰院長 - 新竹宸新復健科 (網路掛號/APP/Line預約)',
+  description: '新竹宸新復健科提供便利的數位掛號服務。支援APP或網頁直接掛號、Android/iOS App 下載預約，或加入 Line 官方帳號線上掛號。免排隊、即時查詢看診進度。新竹宸新復健科提供 PRP 注射、震波治療、一對一運動治療。由台大醫師醫師看診。近新竹科學園區與關埔重劃區。',
+  keywords: [
+    '林羿辰醫師', '新竹復健科推薦', '新竹掛號', '宸新復健科預約', 
+    '科學園區復健科', '關埔復健科', 'PRP注射', '震波治療', 
+    '新竹物理治療', '網路預約診所', '看診進度查詢'
+  ],
   alternates: {
     canonical: CANONICAL_URL,
   },
   openGraph: {
-    title: '馬上預約 - 網路掛號/APP/Line | 新竹宸新復健科',
-    description: '提供免APP網頁直接掛號、手機 App 下載與 Line 線上預約服務。',
+    title: '馬上預約 | 林羿辰院長 - 新竹宸新復健科',
+    description: '提供免 APP 網頁掛號、手機 App 與 Line 線上預約，專業台大復健科醫療團隊為您服務。',
     url: CANONICAL_URL,
     type: 'website',
     siteName: '新竹宸新復健科診所',
     locale: 'zh_TW',
+    images: [
+      {
+        url: `${SITE_URL}/images/main/a.webp`,
+        width: 1200,
+        height: 630,
+        alt: '宸新復健科診所 - 林羿辰醫師專業團隊',
+      },
+    ],
   },
   other: {
     'geo.region': 'TW-HCH',
     'geo.placename': '新竹市',
+    'geo.position': '24.7833314;121.0170937',
   }
 }
 
