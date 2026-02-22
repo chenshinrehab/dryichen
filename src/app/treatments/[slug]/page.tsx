@@ -93,10 +93,24 @@ export default function TreatmentDetailPage({ params }: PageProps) {
 
   const jsonLdProcedure = {
     '@context': 'https://schema.org',
+    // 為了讓 Google 更好理解這不僅是醫療程序，也是一篇衛教文章，保留原有的 '@type'
     '@type': 'TherapeuticProcedure',
     name: treatment.title,
     headline: treatment.seoTitle,
-    dateModified: treatment.lastModified,
+    
+    // ✨ 新增 1：明確定義文章的首次發布時間 (Schema 標準格式建議使用 YYYY-MM-DD)
+    datePublished: '2026-01-25',
+    
+    // ✨ 修改 2：動態載入最後審閱/更新日期，若無資料則帶入預設值
+    dateModified: treatment.lastModified || '2026-02-22',
+    
+    // ✨ 新增 3：加入 author 屬性，將這篇治療介紹與「林羿辰醫師實體」強綁定
+    author: {
+      '@type': 'Physician',
+      name: '林羿辰 醫師',
+      url: `${SITE_URL}/about/doctors`
+    },
+
     description: treatment.seoDescription || treatment.description,
     procedureType: 'Non-surgical',
     url: currentPageUrl,
@@ -136,6 +150,47 @@ export default function TreatmentDetailPage({ params }: PageProps) {
       medicalSpecialty: [
         'Physical Medicine and Rehabilitation',
         'SportsMedicine'
+      ],
+      // ✨ 強化 EEAT：在提供者這裡再次確認外部權威連結與證照
+      sameAs: [
+        'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
+        'https://www.pmr.org.tw/associator/associator-all.asp?w/',
+        'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a='
+      ],
+      hasCredential: [
+        // 1. 衛生福利部 - 醫師執照
+        {
+          '@type': 'EducationalOccupationalCredential',
+          'name': '醫事人員執業資格',
+          'credentialCategory': '醫師證書',
+          'url': 'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
+          'recognizedBy': {
+            '@type': 'Organization',
+            'name': '中華民國衛生福利部'
+          }
+        },
+        // 2. 復健醫學會 - 復健專科
+        {
+          '@type': 'EducationalOccupationalCredential',
+          'name': '復健科專科醫師資格',
+          'credentialCategory': '復健科專科醫師證書',
+          'url': 'https://www.pmr.org.tw/associator/associator-all.asp?w/',
+          'recognizedBy': {
+            '@type': 'Organization',
+            'name': '台灣復健醫學會'
+          }
+        },
+        // 3. 骨質疏鬆症學會 - 骨鬆專科 (新增)
+        {
+          '@type': 'EducationalOccupationalCredential',
+          'name': '骨質疏鬆症學會專科醫師資格',
+          'credentialCategory': '骨質疏鬆症學會專科醫師證書',
+          'url': 'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a=',
+          'recognizedBy': {
+            '@type': 'Organization',
+            'name': '中華民國骨質疏鬆症學會'
+          }
+        }
       ]
     },
     location: {

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image'; // 修正：使用 Next.js Image 組件
 import ShareButtons from '@/components/ShareButtons';
 import RelatedCases from '@/components/RelatedCases'; 
 import { CaseStudy } from '@/data/cases';
@@ -18,6 +19,7 @@ export interface ArticleData {
   treatmentFocus?: string[];
   qaList?: { question: string; answer: string }[];
   keywords?: string[];
+  lastModified?: string;
 }
 
 interface ArticleDetailProps {
@@ -36,7 +38,7 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
 
   return (
     <>
-      {/* 修正 1：改用標準 React 樣式注入，解決編譯報錯 */}
+      {/* 修正 1：CSS 注入 */}
       <style dangerouslySetInnerHTML={{ __html: `
         .article-content strong { color: #22d3ee !important; font-weight: 700; }
         .article-content a { color: #ec4899 !important; font-weight: 600; text-decoration: none; border-bottom: 1px dashed #ec4899; transition: all 0.2s ease; }
@@ -72,22 +74,54 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                 </div>
               )}
 
-              {/* 修正 2：縮小底部 padding 為 pb-2 */}
               <div className="p-4 md:p-10 pb-2">
                 
+                {/* 頂部標題區塊 */}
                 {layoutStyle === 'standard' && (
                   <div className="mb-8 border-l-4 border-cyan-500 pl-4 bg-gradient-to-r from-slate-900/80 to-transparent py-5 rounded-r-xl flex flex-col md:flex-row md:items-center gap-6">
                     <div className="hidden md:block bg-white p-2 rounded-lg shrink-0 shadow-lg ring-2 ring-slate-700">
                       <img className="w-20 h-20 object-contain" src={qrCodeApiUrl} alt="QR" />
                     </div>
-                    <div>
-                      <h1 className="text-2xl md:text-4xl font-bold font-sans text-white mb-2 tracking-wide leading-tight">{data.title}</h1>
-                      {data.subtitle && <h2 className="text-lg text-cyan-400 font-medium">{data.subtitle}</h2>}
+                    <div className="flex-grow">
+                      <h1 className="text-2xl md:text-4xl font-bold font-sans text-white mb-2 tracking-wide leading-tight">
+                        {data.title}
+                      </h1>
+                      
+                      {data.subtitle && (
+                        <div className="flex flex-col md:flex-row md:items-end justify-between gap-2">
+                          <h2 className="text-lg text-cyan-400 font-medium">
+                            {data.subtitle}
+                          </h2>
+                          
+                          <div className="text-slate-400 text-xs md:text-sm font-normal flex flex-wrap items-center gap-x-3 gap-y-1">
+                            <span className="flex items-center">
+                              撰文者：
+                              <Link 
+                                href="/about/doctors" 
+                                className="text-slate-300 hover:text-cyan-400 underline underline-offset-4 decoration-slate-600 transition-colors cursor-pointer"
+                              >
+                                林羿辰醫師
+                              </Link>
+                            </span>
+                            <span className="hidden md:inline text-slate-600">|</span>
+                            <span className="flex items-center">
+                              最後更新日期：
+                              {data.lastModified ? (
+                                <time dateTime={data.lastModified} itemProp="dateModified">
+                                  {data.lastModified}
+                                </time>
+                              ) : (
+                                "2026-02-22"
+                              )}
+                            </span>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 )}
 
-                {/* Why Choose Us & Focus */}
+                {/* 核心重點區塊 */}
                 {(data.whyChooseUs || data.treatmentFocus) && (
                   <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-12">
                     {data.whyChooseUs && (
@@ -113,12 +147,12 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                   </div>
                 )}
 
-                {/* 文章內文 - 縮小下方間距 mb-4 */}
+                {/* 文章內文 */}
                 <div className="article-content text-slate-300 leading-relaxed text-lg mb-4">
                   {data.contentHtml ? <div dangerouslySetInnerHTML={{ __html: data.contentHtml }} /> : <p>{data.description}</p>}
                 </div>
 
-                {/* YouTube */}
+                {/* 多媒體內容 */}
                 {data.youtubeVideoId && (
                   <div className="mb-14 text-center">
                     <h3 className="text-2xl font-bold text-white mb-6 flex items-center justify-center"><i className="fa-brands fa-youtube text-red-500 mr-3 text-3xl"></i>相關介紹影片</h3>
@@ -130,7 +164,6 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                   </div>
                 )}
 
-                {/* 圖片展示 */}
                 {data.images && data.images.length > 0 && (
                   <div className="space-y-8 mb-14">
                     {data.images.map((img, idx) => (
@@ -143,7 +176,6 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                   </div>
                 )}
 
-                {/* QA List */}
                 {data.qaList && data.qaList.length > 0 && (
                   <div className="mt-8 mb-8">
                     <h3 className="text-2xl font-bold text-white mb-6 flex items-center"><i className="fa-regular fa-circle-question text-cyan-400 mr-3"></i>常見問答</h3>
@@ -165,19 +197,62 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                   </div>
                 )}
 
-                {/* 修正 3：成功案例 - 移除 border-t，移除重複的區塊，pt-0 緊貼上方 */}
+                {/* 成功案例 */}
                 {relatedCases && relatedCases.length > 0 && (
                   <div className="mb-0 pt-0">
                     <RelatedCases cases={relatedCases} />
                   </div>
                 )}
 
-                {/* 修正 4：撰文者資訊 - 移除 border-t，mt-0 緊貼案例 */}
+                {/* 修正 4：醫師資歷方塊 (將 animate-on-scroll 移除或改為即時顯示確保穩定性) */}
                 {layoutStyle === 'standard' && (
-                  <div className="text-right mt-0 pb-6 pr-2">
-                    <div className="inline-block text-slate-500 text-[11px] md:text-xs space-y-0.5 border-none">
-                      <p><span className="mr-2">撰文者 :</span><span className="font-medium text-slate-400">復健專科 宸新復健科院長 林羿辰醫師</span></p>
-                      <p><span className="mr-2">資料來源 :</span><span className="font-medium text-slate-400">復健醫學會</span></p>
+                  <div className="mt-8 mb-10">
+                    <div className="bg-slate-800/40 backdrop-blur border border-slate-700 rounded-2xl p-6 md:p-8 shadow-lg relative overflow-hidden">
+                      <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+                      
+                      <div className="flex flex-col md:flex-row items-center md:items-start gap-6 relative z-10">
+                        <div className="flex-grow text-center md:text-left">
+                          <div className="mb-2">
+                            <h3 className="text-xl font-bold text-white flex flex-col md:flex-row items-center gap-2">
+                              本文由 <span className="text-cyan-400">林羿辰醫師</span> 撰寫與醫學審閱
+                              <span className="hidden md:inline-block text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full border border-cyan-500/30 font-normal uppercase tracking-wider">Verified Expert</span>
+                            </h3>
+                            <p className="text-sm text-slate-400 mt-1 font-medium">宸新復健科診所院長 / 復健科專科醫師</p>
+                          </div>
+                          
+                          <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-6">
+                            現任宸新復健科診所院長。畢業於國立台灣大學醫學系，擁有復健科、骨質疏鬆雙專科醫師資歷，專精於精準超音波導引注射治療、增生療法與各類運動傷害。林醫師具備豐富臨床經驗，致力於將醫學實證應用於病患康復。
+                          </p>
+
+                          <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-5 border-t border-slate-700/50">
+                            <Link 
+                              href="/about/doctors" 
+                              className="text-cyan-400 hover:text-cyan-300 text-sm font-bold flex items-center group transition-colors cursor-pointer"
+                            >
+                              <i className="fa-solid fa-id-card-clip mr-2 text-lg"></i>
+                              <span className="border-b border-cyan-500/30 group-hover:border-cyan-300">👉 查看更多醫師資歷、證照認證與學術論文</span>
+                              <i className="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                            </Link>
+                            
+                            <div className="flex flex-col items-end gap-1 text-[10px] md:text-xs text-slate-500">
+                              <div className="flex items-center gap-3">
+                                <span className="flex items-center"><i className="fa-solid fa-check-double mr-1 text-cyan-500/70"></i> 專家審閱完成</span>
+                                <span className="flex items-center"><i className="fa-solid fa-database mr-1 text-cyan-500/70"></i> 來源：醫學實證與專科臨床</span>
+                              </div>
+                              <div className="text-gray-500">
+                                最後更新日期：
+                                {data.lastModified ? (
+                                  <time dateTime={data.lastModified} itemProp="dateModified">
+                                    {data.lastModified}
+                                  </time>
+                                ) : (
+                                  "2026-02-22"
+                                )}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 )}

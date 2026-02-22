@@ -177,10 +177,13 @@ export default function Footer() {
 
           {/* 3. 右側：診所資訊 */}
           <div className="text-center lg:text-right text-slate-300 space-y-1.5 w-full lg:w-auto text-sm">
-            <p className="flex items-center justify-center lg:justify-end gap-2 group cursor-pointer">
-              <FaPhoneAlt size={14} className="text-cyan-400 group-hover:animate-pulse" /> 
-              <span className="font-mono tracking-wide">(03) 564-7999</span>
-            </p>
+          <a 
+  href="tel:+886-3-564-7999" 
+  className="flex items-center justify-center lg:justify-end gap-2 group cursor-pointer hover:text-cyan-400 transition-colors"
+>
+  <FaPhoneAlt size={14} className="text-cyan-400 group-hover:animate-pulse" /> 
+  <span className="font-mono tracking-wide text-xl font-bold">(03) 564-7999</span>
+</a>
             <a 
               href="https://www.google.com/maps/search/?api=1&query=宸新復健科診所" 
               target="_blank" 
