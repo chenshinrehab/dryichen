@@ -96,7 +96,49 @@ const fullTreatmentsData: Treatment[] = [
           </li>
       </ul>
   </div>
+  <section style="background-color: rgba(6, 182, 212, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); border-radius: 1.5rem; padding: 2rem; margin-bottom: 3rem;">
+  <h2 style="color: #22d3ee; display: flex; align-items: center; gap: 0.5rem; font-size: 1.875rem; margin-top: 0;">
+    👨‍⚕️ 林羿辰醫師觀點：PRP 真的非打不可嗎？
+  </h2>
   
+  <p style="font-size: 1.125rem; line-height: 1.8; color: #cbd5e1;">
+    依據我過去 10 年的臨床經驗，很多患者以為打一針就好或是覺得沒效。身為復健科醫師與運動教練，我也常被問到：「林醫師，我是不是一定要打 PRP 才會好？」或是「為什麼我朋友打了 PRP 卻沒效？」
+    其實，<strong>PRP 療效好壞的關鍵不在於藥物本身，而在於「精準診斷」與「精準注射」。</strong>
+  </p>
+
+  <div style="display: grid; gap: 1.5rem; margin-top: 1.5rem;">
+    <div style="background: rgba(15, 23, 42, 0.4); padding: 1.25rem; border-radius: 1rem; border-left: 4px solid #22d3ee;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.5rem;">1. 診斷先於治療，而非大砲打小鳥</h4>
+      <p style="margin: 0; font-size: 1rem;">
+        並非所有疼痛都適合 PRP。例如：<strong>鈣化性肌腱炎</strong>，使用體外震波碎石的效果通常優於注射；如果是單純的<strong>肌肉發炎緊繃</strong>，徒手治療或基礎消炎針就已足夠。
+        我們不主張「大砲打小鳥」，許多輕微受傷透過<strong>高濃度葡萄糖 (Prolotherapy)</strong> 就能獲得顯著改善，節省病患不必要的開支。
+      </p>
+    </div>
+
+    
+
+    <div style="background: rgba(15, 23, 42, 0.4); padding: 1.25rem; border-radius: 1rem; border-left: 4px solid #22d3ee;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.5rem;">2. 超音波導引：差之毫釐，失之千里</h4>
+      <p style="margin: 0; font-size: 1rem;">
+        為什麼有些人打了 PRP 沒效？除了診斷錯誤，<strong>注射位置不精準</strong>是主因。
+        在宸新復健科，我們堅持全程搭配<strong>高解析度超音波導引</strong>，確保昂貴的生長因子能精準送到患部（如肌腱撕裂處或關節內），而不是打在周圍組織，這才是決定療效的最後一哩路。
+      </p>
+    </div>
+
+      <div style="background: rgba(15, 23, 42, 0.4); padding: 1.25rem; border-radius: 1rem; border-left: 4px solid #22d3ee;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.5rem;">3. 高品質的PRP離心技術</h4>
+      <p style="margin: 0; font-size: 1rem;">
+        PRP分離的試管好壞差很多，能不能有效分離出高濃度的增生因子及分離出不要的其他血球很重要。
+        研究顯示<strong>3~5倍濃度</strong>是最適合的，我們也持續監測分離濃度在5倍左右，以達到最佳效果，超過五倍會過於濃稠，就像鹽水撒在傷口，造成劇烈疼痛及發炎，所以濃度也並非越高越好。
+      </p>
+    </div>
+
+
+  <p style="margin-top: 1.5rem; font-style: italic; color: #94a3b8; border-top: 1px solid rgba(255,255,255,0.1); pt-4;">
+    ※ 醫學是有溫度的，我們拒絕過度醫療。在新竹宸新，林羿辰院長秉持台大醫學中心的標準，提供最誠實、最專業的評估建議，讓您的每一分治療預算都花在刀口上。
+  </p>
+</section>
+
   <div class="my-8 flex justify-center">
       <iframe 
         width="315" 
@@ -205,6 +247,82 @@ const fullTreatmentsData: Treatment[] = [
       <li><strong>專業指導</strong>：強烈建議搭配物理治療師制定的運動處方，以達到最佳的功能復原。</li>
     </ul>
   </p>
+</section>
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+      🏆 經典修復案例：從超音波見證組織癒合
+    </h2>
+  </div>
+
+  <div style="padding: 2rem 2rem 1.2rem 2rem;">
+    <div style="display: flex; flex-direction: column; lg:flex-row gap: 2.5rem; align-items: flex-start;">
+      
+      <div style="flex-shrink: 0; width: 100%; lg:w-[450px];">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 1.5rem;">
+          <div style="text-align: center;">
+            <div style="position: relative; margin-bottom: 0.75rem;">
+              <img 
+                src="/images/cases/art/e.webp" 
+                alt="林羿辰醫師旋轉肌撕裂案例：治療前超音波顯示明顯肌腱破洞黑影" 
+                loading="lazy"
+                style="border-radius: 0.75rem; border: 1.5px solid #475569; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover;"
+              >
+              <div style="position: absolute; top: 8px; left: 8px; background: rgba(0,0,0,0.6); color: #94a3b8; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">BEFORE</div>
+            </div>
+            <p style="color: #cbd5e1; font-size: 0.9rem; line-height: 1.4; padding: 0 4px;">
+              <strong>圖左：</strong>治療前可見明顯肌腱撕裂破洞(黑影)
+            </p>
+          </div>
+          <div style="text-align: center;">
+            <div style="position: relative; margin-bottom: 0.75rem;">
+              <img 
+                src="/images/cases/art/d.webp" 
+                alt="林羿辰醫師旋轉肌撕裂案例：增生注射後組織完全修復平整" 
+                loading="lazy"
+                style="border-radius: 0.75rem; border: 1.5px solid #475569; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover;"
+              >
+              <div style="position: absolute; top: 8px; left: 8px; background: rgba(34, 211, 238, 0.2); color: #22d3ee; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">AFTER</div>
+            </div>
+            <p style="color: #cbd5e1; font-size: 0.9rem; line-height: 1.4; padding: 0 4px;">
+              <strong>圖右：</strong>精準增生注射後，組織完全修復平整
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div style="flex-grow: 1;">
+        <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.5rem; line-height: 1.4;">
+          那雙教會我畫畫的手，舉不起來了... <br><span style="color: #94a3b8; font-size: 1.25rem;">高中美術老師的旋轉肌修復之旅</span>
+        </h3>
+        
+        <p style="color: #38bdf8; font-weight: 500; font-size: 1rem; margin-bottom: 1.25rem;">
+          👤 高中美術老師 | 🎯 治療：PRP ＋ 高濃度葡萄糖增生療法
+        </p>
+
+        <p style="color: #94a3b8; line-height: 1.8; font-size: 1.1 rem; margin-bottom: 1.5rem;">
+          昔日恩師因木工創作導致嚴重<strong>旋轉肌撕裂</strong>，夜不成眠且面臨開刀壓力。林醫師運用<strong>高解析超音波導引</strong>精準修補，親見影像中原本漆黑的破洞逐漸被新生的肌腱纖維填滿。
+        </p>
+
+        <div style="background: rgba(30, 41, 59, 0.5); border-left: 2px solid #334155; padding: 1rem 1.25rem; margin-bottom: 1rem;">
+          <p style="margin: 0; color: #cbd5e1; font-size: 1rem;">
+            ✨ <strong>臨床成效：</strong> 疼痛指數 8 降至 0，超音波證實組織完全癒合。不僅免除手術，更保住了藝術家的創作熱情。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="width: 100%; display: flex; justify-content: center; margin-top: 0.5rem;">
+      <a 
+        href="/about/cases/case-rotator-cuff-art-teacher" 
+        style="display: inline-flex; align-items: center; background-color: transparent; border: 1.5px solid #334155; color: #cbd5e1; padding: 0.6rem 2rem; border-radius: 0.5rem; text-decoration: none; font-size: 0.95rem; transition: all 0.3s ease; letter-spacing: 0.05em;"
+        onmouseover="this.style.borderColor='#475569'; this.style.backgroundColor='#1e293b'; this.style.color='#f8fafc';"
+        onmouseout="this.style.borderColor='#334155'; this.style.backgroundColor='transparent'; this.style.color='#cbd5e1';"
+      >
+        查看完整「美術老師修復之路」故事 →
+      </a>
+    </div>
+  </div>
 </section>
 
   <div style="background-color: #f0f9ff; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">

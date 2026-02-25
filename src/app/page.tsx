@@ -73,6 +73,20 @@ export const metadata: Metadata = {
     locale: 'zh_TW',
   },
 }
+// --- 🎬 VideoObject Schema (讓影片出現在搜尋結果 Rich Snippet) ---
+const videoSchema = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "宸新復健科診所環境與服務介紹 - 林羿辰院長",
+  "description": "由台大復健專科林羿辰醫師創立，提供新竹民眾專業的 PRP、震波治療及兒童早療服務。",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/asqbvbEukOM/maxresdefault.jpg"
+  ],
+  "uploadDate": "2026-01-25T08:00:00+08:00",
+  "duration": "PT1M30S", 
+  "contentUrl": "https://www.youtube.com/watch?v=asqbvbEukOM",
+  "embedUrl": "https://www.youtube.com/embed/asqbvbEukOM"
+};
 
 // --- Schema 資料更新 ---
 const medicalClinicSchema = {
