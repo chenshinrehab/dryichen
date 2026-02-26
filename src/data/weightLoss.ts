@@ -418,7 +418,143 @@ const fullWeightLossData: WeightLossProgram[] = [
 </ul>
 </p>
 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="background-color: rgba(6, 182, 212, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); border-radius: 1.5rem; padding: 2rem; margin-bottom: 3rem;">
+  <h2 style="color: #22d3ee; display: block; font-size: 1.875rem; margin-top: 0; line-height: 1.5; word-break: break-word;">
+    <span style="white-space: nowrap; display: inline-flex; align-items: center; vertical-align: middle;">
+      <span style="margin-right: 0.5rem;">👨‍⚕️</span>
+      <a href="/about/doctors" style="color: #22d3ee; text-decoration: none; border: none; outline: none;">林羿辰醫師</a>
+    </span>
+    <span style="vertical-align: middle;">觀點：什麼時候該照骨齡？ 多久追蹤呢?</span>
+  </h2>
+  
+  <p style="font-size: 1.125rem; line-height: 1.8; color: #cbd5e1;">
+    我深知家長對孩子身高的焦慮。許多爸媽一看到孩子沒長高就想照骨齡，或是照了一次正常就掉以輕心。
+    其實，<strong>骨齡檢查的價值不在於「照幾次」，而在於「對的時間點」與「數據趨勢的解讀」。</strong>
+  </p>
+
+  <div style="display: grid; gap: 1.5rem; margin-top: 1.5rem;">
+    <div style="background: rgba(15, 23, 42, 0.4); padding: 1.25rem; border-radius: 1rem; border-left: 4px solid #22d3ee;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.5rem;">1. 初次檢查建議：8 到 10 歲最適合</h4>
+      <p style="margin: 0; font-size: 1rem;">
+        年齡太小照骨齡，影像準確度不高，且若無急迫性病徵，過早干預的意義不大；反之，若等到國高中生長板已趨於癒合才檢查，能調整的空間就非常有限。
+        <strong>8-10 歲是發展評估的黃金期</strong>，能讓我們有足夠的時間規劃後續的運動、營養或醫療介入。
+      </p>
+    </div>
+
+    
+
+    <div style="background: rgba(15, 23, 42, 0.4); padding: 1.25rem; border-radius: 1rem; border-left: 4px solid #22d3ee;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.5rem;">2. 追蹤頻率：數據穩定時，每年追蹤即可</h4>
+      <p style="margin: 0; font-size: 1rem;">
+        如果初步檢查顯示骨齡正常，且預測身高與遺傳身高差異不大，我建議<strong>每年追蹤一次</strong>即可，不需要頻繁奔波花大錢。
+        <strong>例外情況：</strong>若一年長不到 4 公分，或是短期內身高突然飆升、出現性早熟特徵，這代表成長板可能正在快速閉合，此時才需要短期且頻繁的追蹤。
+      </p>
+    </div>
+  </div>
+
+  <div style="background: rgba(15, 23, 42, 0.4); padding: 1.25rem; border-radius: 1rem; border-left: 4px solid #22d3ee; margin-top: 1.5rem;">
+  <h4 style="color: #f8fafc; margin-bottom: 0.5rem;">3.若沒有生長激素缺乏，真的需要打針嗎？</h4>
+  <p style="margin: 0; font-size: 1rem; line-height: 1.7; color: #cbd5e1;">
+    如果孩子並非生長激素缺乏，純粹是因為遺傳導致身高預測不理想，施打生長激素最終雖有機會多長 <strong>3 到 5 公分</strong>，但個案差異極大，且背後需考量極高的代價。
+  </p>
+
+  <ul style="margin-top: 1rem; margin-bottom: 1rem; color: #cbd5e1; padding-left: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;">
+      <strong>經濟負擔與心理壓力：</strong>換算下來，多長一公分平均約需花費 <strong>20 萬元</strong>，且需長期忍受每日打針的恐懼，對兒童心理也是壓力。
+    </li>
+    <li style="margin-bottom: 0.5rem;">
+      <strong>潛在副作用風險：</strong>包括增加胰島素阻抗（影響血糖）、骨骼變形、影響甲狀腺功能，甚至長期潛在的癌症疑慮，必須謹慎評估。
+    </li>
+  </ul>
+
+  <p style="margin: 0; font-size: 1rem; line-height: 1.7; color: #f8fafc; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+    <strong>林醫師建議：</strong>醫療行為應建立在「顯著臨床意義」上。若預測成年身高<strong>男生低於 160cm、女生低於 145cm</strong>，施打才具備較強的必要性。若非上述情況，應回歸均衡營養、充足睡眠與運動，這才是對孩子最健康的成長方案。
+  </p>
+</div>
+
+  <p style="margin-top: 1.5rem; font-style: italic; color: #94a3b8; border-top: 1px solid rgba(255,255,255,0.1); pt-4;">
+    ※ 身高發育是一場與時間的賽跑，但精準判斷能讓孩子跑得更輕鬆。在新竹宸新，林羿辰院長透過科學化的骨齡判讀，拒絕無意義的過度檢查，把珍貴的醫療資源轉化為守護孩子未來的數據。
+  </p>
+</section>
+
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+      🏆 診所治療案例：搶回孩子消失的 12 公分
+    </h2>
+  </div>
+
+  <div style="padding: 2rem 2rem 1.2rem 2rem;">
+    <div style="display: flex; flex-direction: column; lg:flex-row gap: 2.5rem; align-items: flex-start;">
+      
+      <div style="flex-shrink: 0; width: 100%; lg:w-[450px];">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 1.5rem;">
+          <div style="text-align: center;">
+            <div style="position: relative; margin-bottom: 0.75rem;">
+              <img 
+                src="/images/cases/boneage/2.webp" 
+                alt="林羿辰醫師骨齡評估案例：7歲女童在班上身高比同學高很多" 
+                loading="lazy"
+                style="border-radius: 0.75rem; border: 1.5px solid #475569; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover;"
+              >
+              <div style="position: absolute; top: 8px; left: 8px; background: rgba(0,0,0,0.6); color: #94a3b8; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">實際年齡 7 歲</div>
+            </div>
+            <p style="color: #cbd5e1; font-size: 0.9rem; line-height: 1.4; padding: 0 4px;">
+              <strong>現況：</strong>身高全班最高，家長原以為發育優良
+            </p>
+          </div>
+          <div style="text-align: center;">
+            <div style="position: relative; margin-bottom: 0.75rem;">
+              <img 
+                src="/images/cases/boneage/1.webp" 
+                alt="林羿辰醫師骨齡評估案例：判讀顯示生長板已達10歲成熟度" 
+                loading="lazy"
+                style="border-radius: 0.75rem; border: 1.5px solid #e11d48; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover;"
+              >
+              <div style="position: absolute; top: 8px; left: 8px; background: rgba(225, 29, 72, 0.2); color: #fb7185; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">判讀骨齡 10 歲</div>
+            </div>
+            <p style="color: #fb7185; font-size: 0.9rem; line-height: 1.4; padding: 0 4px;">
+              <strong>警訊：</strong>骨齡超前 3 歲，生長板提早透支
+            </p>
+          </div>
+        </div>
+        
+      </div>
+
+      <div style="flex-grow: 1;">
+        <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.5rem; line-height: 1.4;">
+          全班最高的她，竟被偷走了身高？<br><span style="color: #94a3b8; font-size: 1.25rem;">7歲女孩與消失的12公分賽跑</span>
+        </h3>
+        
+        <p style="color: #38bdf8; font-weight: 500; font-size: 1rem; margin-bottom: 1.25rem;">
+          👤 7歲女童家長 | 🎯 診斷：性早熟導致骨齡大幅超前
+        </p>
+
+        <p style="color: #94a3b8; line-height: 1.8; font-size: 1.1rem; margin-bottom: 1.5rem;">
+          孩子身高鶴立雞群，直到發現乳房硬塊才驚覺不對。經<strong>骨齡判讀</strong>，發現預估身高從遺傳的 167 公分慘跌至 155 公分。林醫師緊急協助轉診與柳普林治療，旨在<strong>踩下生長板閉合的煞車</strong>。
+        </p>
+
+        <div style="background: rgba(30, 41, 59, 0.5); border-left: 2px solid #334155; padding: 1rem 1.25rem; margin-bottom: 1rem;">
+          <p style="margin: 0; color: #cbd5e1; font-size: 1rem;">
+            ✨ <strong>治療進展：</strong> 透過醫事級骨齡檢查，精準掌握發育節點。目前已啟動成長干預，目標是搶回原本應有的成年身高。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="width: 100%; display: flex; justify-content: center; margin-top: 0.5rem;">
+      <a 
+        href="/about/cases/case-precocious-puberty-height" 
+        style="display: inline-flex; align-items: center; background-color: transparent; border: 1.5px solid #334155; color: #cbd5e1; padding: 0.6rem 2rem; border-radius: 0.5rem; text-decoration: none; font-size: 0.95rem; transition: all 0.3s ease; letter-spacing: 0.05em;"
+        onmouseover="this.style.borderColor='#475569'; this.style.backgroundColor='#1e293b'; this.style.color='#f8fafc';"
+        onmouseout="this.style.borderColor='#334155'; this.style.backgroundColor='transparent'; this.style.color='#cbd5e1';"
+      >
+        查看「性早熟骨齡」完整評估案例 →
+      </a>
+    </div>
+  </div>
+</section>
 
 <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
     <h3 style="color: #047857; margin-top: 0;">👨‍⚕️ 把握黃金成長期，現在就來檢測！</h3>

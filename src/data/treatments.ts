@@ -97,9 +97,13 @@ const fullTreatmentsData: Treatment[] = [
       </ul>
   </div>
   <section style="background-color: rgba(6, 182, 212, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); border-radius: 1.5rem; padding: 2rem; margin-bottom: 3rem;">
-  <h2 style="color: #22d3ee; display: flex; align-items: center; gap: 0.5rem; font-size: 1.875rem; margin-top: 0;">
-    👨‍⚕️ 林羿辰醫師觀點：PRP 真的非打不可嗎？
-  </h2>
+<h2 style="color: #22d3ee; display: flex; align-items: center; gap: 0.5rem; font-size: 1.875rem; margin-top: 0;">
+  👨‍⚕️ 
+  <a href="/about/doctors" style="color: #22d3ee; text-decoration: none; border: none; outline: none;">
+    林羿辰醫師
+  </a>
+  觀點：PRP 真的非打不可嗎？
+</h2>
   
   <p style="font-size: 1.125rem; line-height: 1.8; color: #cbd5e1;">
     依據我過去 10 年的臨床經驗，很多患者以為打一針就好或是覺得沒效。身為復健科醫師與運動教練，我也常被問到：「林醫師，我是不是一定要打 PRP 才會好？」或是「為什麼我朋友打了 PRP 卻沒效？」
@@ -416,8 +420,51 @@ const fullTreatmentsData: Treatment[] = [
   </ul>
 </div>
 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
+<section style="background-color: rgba(6, 182, 212, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); border-radius: 1.5rem; padding: 2rem; margin-bottom: 3rem;">
+<h2 style="color: #22d3ee; display: block; font-size: 1.875rem; margin-top: 0; line-height: 1.5; word-break: break-word;">
+  <span style="white-space: nowrap; display: inline-flex; align-items: center; vertical-align: middle;">
+    <span style="margin-right: 0.5rem;">👨‍⚕️</span>
+    <a href="/about/doctors" style="color: #22d3ee; text-decoration: none; border: none; outline: none;">林羿辰醫師</a>
+  </span>
+  <span style="vertical-align: middle;">觀點：震波越痛越有效嗎？為什麼很多人打了沒效？</span>
+</h2>
+  <p style="font-size: 1.125rem; line-height: 1.8; color: #cbd5e1;">
+    體外震波（Shockwave）是處理慢性疼痛與鈣化問題的利器，但診間常有患者抱怨：「林醫師，我在別的地方打過震波，怎麼沒效？」或是問：「是不是要打到愈痛才愈好？」
+    其實，<strong>震波成功的關鍵在於「精準定位」與「能量適中」，而非一味的追求痛感。</strong>
+  </p>
+
+  <div style="display: grid; gap: 1.5rem; margin-top: 1.5rem;">
+    <div style="background: rgba(15, 23, 42, 0.4); padding: 1.25rem; border-radius: 1rem; border-left: 4px solid #22d3ee;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.5rem;">1. 超音波定位：精準瞄準病灶，而非哪裡痛打哪裡</h4>
+      <p style="margin: 0; font-size: 1rem;">
+        特別是<strong>鈣化性肌腱炎</strong>，疼痛點跟實際鈣化點往往不在同個位置。如果只根據患者的主觀感覺「盲打」，效果會大打折扣。
+        在施打前先用<strong>超音波</strong>找出病灶並做記號，讓能量準確聚焦於患部，才能真正擊碎鈣化、解決問題。
+      </p>
+    </div>
+
+    <div style="background: rgba(15, 23, 42, 0.4); padding: 1.25rem; border-radius: 1rem; border-left: 4px solid #22d3ee;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.5rem;">2. 聚焦型 vs. 發散型：複合式治療才是王道</h4>
+      <p style="margin: 0; font-size: 1rem;">
+        震波分為兩類：<strong>聚焦式震波</strong>用於擊碎鈣化或修復深層肌腱受損；<strong>發散式震波</strong>則用於大面積的肌肉放鬆。
+        疼痛原因往往是複合性的，我們透過組合治療，深層修補、淺層放鬆，才能達到最佳的改善效果。
+      </p>
+    </div>
+
+    <div style="background: rgba(15, 23, 42, 0.4); padding: 1.25rem; border-radius: 1rem; border-left: 4px solid #22d3ee;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.5rem;">3. 5~7 分痛最適中：能量並非越強越好</h4>
+      <p style="margin: 0; font-size: 1rem;">
+        能量太弱無效，太強則會導致組織過度發炎。林醫師建議，以 10 分為最痛，施打時維持在 <strong>5~7 分的酸痛感</strong> 最適合。
+        治療初始若無法耐受，會先以弱能量啟動，待身體適應後再循序調高強度，確保在舒適與成效間取得平衡。
+      </p>
+    </div>
+  </div>
+
+  <p style="margin-top: 1.5rem; font-style: italic; color: #94a3b8; border-top: 1px solid rgba(255,255,255,0.1); pt-4;">
+    ※ 醫學是有溫度的，專業的判斷決定了治療的價值。在新竹宸新，林羿辰院長結合台大醫學中心的嚴謹與運動科學，讓每一發震波能量都能發揮其應有的治療意義。
+  </p>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 <h2>🔬 什麼是體外震波？治療原理大解密</h2>
 <p>體外震波 (Extracorporeal Shock Wave Therapy, ESWT) 原本是用來擊碎腎結石的技術，後來發現調控適當能量後，對於骨骼肌肉系統有驚人的修復效果。</p>
 <br>
@@ -492,7 +539,84 @@ const fullTreatmentsData: Treatment[] = [
   <li><strong>正常反應：</strong> 治療部位可能會有些微紅腫或瘀青，約 3~5 天會自然消退。</li>
 </ul>
 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+      🏆 經典修復案例：震波擊碎「肩內頑石」
+    </h2>
+  </div>
+
+  <div style="padding: 2rem 2rem 1.2rem 2rem;">
+    <div style="display: flex; flex-direction: column; lg:flex-row gap: 2.5rem; align-items: flex-start;">
+      
+      <div style="flex-shrink: 0; width: 100%; lg:w-[450px];">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 1.5rem;">
+          <div style="text-align: center;">
+            <div style="position: relative; margin-bottom: 0.75rem;">
+              <img 
+                src="/images/cases/cal/1.webp" 
+                alt="林羿辰醫師鈣化性肌腱炎案例：治療前X光顯示巨大白色結石影" 
+                loading="lazy"
+                style="border-radius: 0.75rem; border: 1.5px solid #475569; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover;"
+              >
+              <div style="position: absolute; top: 8px; left: 8px; background: rgba(0,0,0,0.6); color: #94a3b8; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">BEFORE</div>
+            </div>
+            <p style="color: #cbd5e1; font-size: 0.9rem; line-height: 1.4; padding: 0 4px;">
+              <strong>圖左：</strong>治療前可見巨大且密實的鈣化結石
+            </p>
+          </div>
+          <div style="text-align: center;">
+            <div style="position: relative; margin-bottom: 0.75rem;">
+              <img 
+                src="/images/cases/cal/2.webp" 
+                alt="林羿辰醫師鈣化性肌腱炎案例：四次聚焦震波後鈣化明顯變小變淡" 
+                loading="lazy"
+                style="border-radius: 0.75rem; border: 1.5px solid #475569; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover;"
+              >
+              <div style="position: absolute; top: 8px; left: 8px; background: rgba(34, 211, 238, 0.2); color: #22d3ee; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">AFTER</div>
+            </div>
+            <p style="color: #cbd5e1; font-size: 0.9rem; line-height: 1.4; padding: 0 4px;">
+              <strong>圖右：</strong>四次震波後，鈣化點顯著縮小、軟化
+            </p>
+          </div>
+        </div>
+        
+      </div>
+
+      <div style="flex-grow: 1;">
+        <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.5rem; line-height: 1.4;">
+          打完三劑 PRP 沒效？<br><span style="color: #94a3b8; font-size: 1.25rem;">原來是肩膀藏了顆大石頭！</span>
+        </h3>
+        
+        <p style="color: #38bdf8; font-weight: 500; font-size: 1rem; margin-bottom: 1.25rem;">
+          👤 40歲羽球愛好者 | 🎯 治療：聚焦式體外震波 (ESWT)
+        </p>
+
+        <p style="color: #94a3b8; line-height: 1.8; font-size: 1.1rem; margin-bottom: 1.5rem;">
+          病患被誤診為肌肉撕裂而盲目施打 PRP 卻毫無起色。經林醫師<strong>超音波與 X 光精準診斷</strong>，證實為<strong>鈣化性肌腱炎</strong>。透過能量精準聚焦，成功將「頑石」擊碎為粉末，讓病患免於開刀。
+        </p>
+
+        <div style="background: rgba(30, 41, 59, 0.5); border-left: 2px solid #334155; padding: 1rem 1.25rem; margin-bottom: 1rem;">
+          <p style="margin: 0; color: #cbd5e1; font-size: 1rem;">
+            ✨ <strong>臨床成效：</strong> 疼痛顯著消失，手部活動度完全恢復。病患已成功重返羽球場，重拾往日殺球快感。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="width: 100%; display: flex; justify-content: center; margin-top: 0.5rem;">
+      <a 
+        href="/about/cases/case-calcific-tendinitis-shockwave" 
+        style="display: inline-flex; align-items: center; background-color: transparent; border: 1.5px solid #334155; color: #cbd5e1; padding: 0.6rem 2rem; border-radius: 0.5rem; text-decoration: none; font-size: 0.95rem; transition: all 0.3s ease; letter-spacing: 0.05em;"
+        onmouseover="this.style.borderColor='#475569'; this.style.backgroundColor='#1e293b'; this.style.color='#f8fafc';"
+        onmouseout="this.style.borderColor='#334155'; this.style.backgroundColor='transparent'; this.style.color='#cbd5e1';"
+      >
+        查看「肩膀藏石頭」完整治療故事 →
+      </a>
+    </div>
+  </div>
+</section>
 
 <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
   <h2 style="color: #047857; margin-top: 0;">👨‍⚕️ 別讓疼痛限制了您的生活！</h2>
