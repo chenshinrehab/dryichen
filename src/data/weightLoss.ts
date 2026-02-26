@@ -228,6 +228,46 @@ const fullWeightLossData: WeightLossProgram[] = [
 </ul>
 <p><strong>舉例說明：</strong> 您固定每週日施打。若週三想起來（未滿 4 天），請立即補打；若週四才想起來（已超過 4 天），請等到這週日再打下一劑。</p>
 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="background-color: rgba(6, 182, 212, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); border-radius: 1.5rem; padding: 2rem; margin-bottom: 3rem;">
+  <h2 style="color: #22d3ee; display: block; font-size: 1.875rem; margin-top: 0; line-height: 1.5; word-break: break-word;">
+    <span style="white-space: nowrap; display: inline-flex; align-items: center; vertical-align: middle;">
+      <span style="margin-right: 0.5rem;">👨‍⚕️</span>
+      <a href="/about/doctors" style="color: #22d3ee; text-decoration: none; border: none; outline: none;">醫師</a>
+    </span>
+    <span style="vertical-align: middle;">觀點：猛健樂停藥後會復胖嗎？它不是減重仙丹！</span>
+  </h2>
+  
+  <p style="font-size: 1.125rem; line-height: 1.8; color: #cbd5e1;">
+    這幾乎是每位來診間諮詢的朋友必問的問題。身為專科醫師與專業健身教練，我必須告訴大家：<strong>猛健樂並非魔法藥，而是當您飲食控制遇到卡關時的「助燃劑」。</strong>
+  </p>
+
+  <div style="display: grid; gap: 1.5rem; margin-top: 1.5rem;">
+    <div style="background: rgba(15, 23, 42, 0.4); padding: 1.25rem; border-radius: 1rem; border-left: 4px solid #22d3ee;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.5rem;">1. 停藥後會復胖嗎？關鍵在於「無敵星星」期後的習慣</h4>
+      <p style="margin: 0; font-size: 1rem;">
+        猛健樂能幫您抑制食慾、降低體重，就像吃了「無敵星星」進入加速期。
+        但如同房間不持續打掃會變髒、肌肉不持續鍛鍊會萎縮，<strong>減重是長期的生活方式。</strong>
+        請務必把握施打期間建立正確的飲食模式，讓它成為您重塑生活的起點，而非短暫的結果。
+      </p>
+    </div>
+
+    
+
+    <div style="background: rgba(15, 23, 42, 0.4); padding: 1.25rem; border-radius: 1rem; border-left: 4px solid #22d3ee;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.5rem;">2. 療程建議：至少持續施打三個月</h4>
+      <p style="margin: 0; font-size: 1rem;">
+        為了降低復胖機會，我建議療程至少需持續<strong>三個月</strong>。
+        這個時間長度足以讓體內的脂肪體系完成一輪完整的代謝與重新設定，讓身體在低體脂的狀態下趨於穩定，比起短期速成，更能達到長效維持的效果。
+      </p>
+    </div>
+  </div>
+
+  <p style="margin-top: 1.5rem; font-style: italic; color: #94a3b8; border-top: 1px solid rgba(255,255,255,0.1); pt-4;">
+    ※ 醫學是有溫度的，健康是需要經營的。在新竹宸新，林羿辰院長結合醫療數據與運動處方，不只幫您找回體態，更要幫您建立一套能跟隨一輩子的健康生活模式。
+  </p>
+</section>
+
 <div style="background-color: #f0f9ff; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
     <h3 style="color: #0369a1; margin-top: 0;">👨‍⚕️ 想了解您是否適合猛健樂療程？</h3>
     <p style="color: #334155; margin-bottom: 1.5rem;">歡迎來到新竹宸新復健科，由醫師親自為您評估。我們提供一對一的諮詢，結合 InBody 檢測，甲狀腺超音波檢查或抽血為您量身打造最安全、有效的減重計畫。</p>
