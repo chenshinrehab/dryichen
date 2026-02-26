@@ -4,7 +4,6 @@ import Link from 'next/link'
 import Image from 'next/image' 
 import { usePathname } from 'next/navigation'
 
-// ✨ 引入所需的 React Icons，只抓取有用到的小圖示，不佔空間
 import { 
   FaFacebookF, 
   FaInstagram, 
