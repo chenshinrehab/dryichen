@@ -313,7 +313,7 @@ const fullTreatmentsData: Treatment[] = [
         href="/about/cases/case-rotator-cuff-art-teacher" 
         style="display: inline-block; background-color: #1e293b; border: 1.5px solid #334155; color: #cbd5e1; padding: 0.8rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-size: 1rem; text-align: center; width: 100%; max-width: 320px;"
       >
-        查看完整「美術老師修復之路」故事 →
+        查看「美術老師修復之路」故事 →
       </a>
     </div>
   </div>

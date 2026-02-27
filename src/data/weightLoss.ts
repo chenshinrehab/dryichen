@@ -231,9 +231,11 @@ const fullWeightLossData: WeightLossProgram[] = [
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 <section style="background-color: rgba(6, 182, 212, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); border-radius: 1.5rem; padding: 2.5rem 1.25rem; margin-bottom: 3rem; font-family: sans-serif;">
   
-  <h2 style="color: #22d3ee; margin-top: 0; margin-bottom: 1.5rem; line-height: 1.4; font-size: 1.5rem; letter-spacing: -0.02em; word-break: keep-all;">
-    <span style="margin-right: 4px;">👨‍⚕️</span><a href="/about/doctors" style="color: #22d3ee; text-decoration: none; border: none; outline: none;">林羿辰醫師</a>觀點：猛健樂停藥後會復胖嗎？
-  </h2>
+<h2 style="color: #22d3ee; margin-top: 0; margin-bottom: 1.5rem; line-height: 1.4; font-size: 1.5rem; letter-spacing: -0.02em; word-break: keep-all;">
+  <span suppressHydrationWarning style="margin-right: 4px; display: inline-block; vertical-align: middle;">👨‍⚕️</span>
+  <a href="/about/doctors" style="color: #22d3ee; text-decoration: none; border: none; outline: none; display: inline-block; vertical-align: middle;">林羿辰醫師觀點：</a>
+  <span style="display: inline-block; vertical-align: middle;">什麼時候該照骨齡？多久追蹤呢？</span>
+</h2>
   
   <p style="font-size: 1.2rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 2.5rem; text-align: justify; letter-spacing: -0.01em;">
     這幾乎是每位來診間諮詢的朋友必問的問題。身為專科醫師與專業健身教練，我必須告訴大家：<strong>猛健樂並非魔法藥，而是當您飲食控制遇到卡關時的「助燃劑」。</strong>
@@ -451,9 +453,11 @@ const fullWeightLossData: WeightLossProgram[] = [
 
 <section style="background-color: rgba(6, 182, 212, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); border-radius: 1.5rem; padding: 2.5rem 1.25rem; margin-bottom: 3rem; font-family: sans-serif;">
   
-  <h2 style="color: #22d3ee; margin-top: 0; margin-bottom: 1.5rem; line-height: 1.4; font-size: 1.5rem; letter-spacing: -0.02em; word-break: keep-all;">
-    <span style="margin-right: 4px;">👨‍⚕️</span><a href="/about/doctors" style="color: #22d3ee; text-decoration: none; border: none; outline: none;">林羿辰醫師</a>觀點：什麼時候該照骨齡？多久追蹤呢？
-  </h2>
+<h2 style="color: #22d3ee; margin-top: 0; margin-bottom: 1.5rem; line-height: 1.4; font-size: 1.5rem; letter-spacing: -0.02em; word-break: keep-all;">
+  <span suppressHydrationWarning style="margin-right: 4px; display: inline-block; vertical-align: middle;">👨‍⚕️</span>
+  <a href="/about/doctors" style="color: #22d3ee; text-decoration: none; border: none; outline: none; display: inline-block; vertical-align: middle;">林羿辰醫師觀點：</a>
+  <span style="display: inline-block; vertical-align: middle;">什麼時候該照骨齡？多久追蹤呢？</span>
+</h2>
   
   <p style="font-size: 1.2rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 2.5rem; text-align: justify; letter-spacing: -0.01em;">
     我深知家長對孩子身高的焦慮。許多爸媽一看到孩子沒長高就想照骨齡，或是照了一次正常就掉以輕心。其實，<strong>骨齡檢查的價值不在於「照幾次」，而在於「對的時間點」與「數據趨勢的解讀」。</strong>
@@ -555,14 +559,15 @@ const fullWeightLossData: WeightLossProgram[] = [
       </div>
     </div>
 
-    <div style="width: 100%; display: flex; justify-content: center; margin-top: 1rem;">
-      <a 
-        href="/about/cases/case-precocious-puberty-height" 
-        style="display: inline-block; background-color: #1e293b; border: 1.5px solid #334155; color: #cbd5e1; padding: 0.8rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-size: 1rem; text-align: center; width: 100%; max-width: 300px;"
-      >
-        查看完整評估案例 →
-      </a>
-    </div>
+<div style="width: 100%; display: flex; justify-content: center; margin-top: 1rem;">
+  <a 
+    href="/about/cases/case-precocious-puberty-height" 
+    onclick="window.location.href='/about/cases/case-precocious-puberty-height'; return false;"
+    style="display: inline-block; background-color: #1e293b; border: 1.5px solid #334155; color: #cbd5e1; padding: 0.8rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-size: 1rem; text-align: center; width: 100%; max-width: 300px; cursor: pointer;"
+  >
+    查看完整評估案例 →
+  </a>
+</div>
   </div>
 </section>
 
