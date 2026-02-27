@@ -161,7 +161,7 @@ export default function SymptomChecker() {
               }
             }
           }}
-          placeholder={isExpanded ? "請清楚輸入症狀（例如：膝蓋內側疼痛，跑步時候加劇）..." : "AI 症狀分析 (點擊輸入)"}
+          placeholder={isExpanded ? "請簡短重點輸入症狀，越有辨識度越好，如內側外側，合併麻或是舉不起來等。（例如：膝蓋內側疼痛，手掌麻等）..." : "AI 症狀分析 (點擊輸入)"}
           
           className={`w-full bg-transparent text-slate-200 placeholder-slate-400 focus:outline-none resize-none py-4 pl-12 leading-relaxed transition-all duration-300 relative z-0
             ${isExpanded 

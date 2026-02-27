@@ -96,52 +96,44 @@ const fullTreatmentsData: Treatment[] = [
           </li>
       </ul>
   </div>
-  <section style="background-color: rgba(6, 182, 212, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); border-radius: 1.5rem; padding: 2rem; margin-bottom: 3rem;">
-<h2 style="color: #22d3ee; display: flex; align-items: center; gap: 0.5rem; font-size: 1.875rem; margin-top: 0;">
-  👨‍⚕️ 
-  <a href="/about/doctors" style="color: #22d3ee; text-decoration: none; border: none; outline: none;">
-    林羿辰醫師
-  </a>
-  觀點：PRP 真的非打不可嗎？
-</h2>
+
+<section style="background-color: rgba(6, 182, 212, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); border-radius: 1.5rem; padding: 2.5rem 1.25rem; margin-bottom: 3rem; font-family: sans-serif;">
   
-  <p style="font-size: 1.125rem; line-height: 1.8; color: #cbd5e1;">
-    依據我過去 10 年的臨床經驗，很多患者以為打一針就好或是覺得沒效。身為復健科醫師與運動教練，我也常被問到：「林醫師，我是不是一定要打 PRP 才會好？」或是「為什麼我朋友打了 PRP 卻沒效？」
-    其實，<strong>PRP 療效好壞的關鍵不在於藥物本身，而在於「精準診斷」與「精準注射」。</strong>
+<h2 style="color: #22d3ee; margin-top: 0; margin-bottom: 1.5rem; line-height: 1.4; font-size: 1.5rem; letter-spacing: -0.02em;">
+    <span style="display: inline-block;">👨‍⚕️<a href="/about/doctors" style="color: #22d3ee; text-decoration: none;">林羿辰醫師</a>觀點：PRP 真的非打不可嗎？</span>
+  </h2>
+  
+  <p style="font-size: 1.2rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 2.5rem; text-align: justify; letter-spacing: -0.01em;">
+    依據我過去 10 年的臨床經驗，許多患者以為打一針就好。身為復健科醫師與運動教練，我常被問到：「林醫師，我是不是一定要打 PRP 才會好？」其實，<strong>PRP 療效關鍵在於「精準診斷」與「精準注射」。</strong>
   </p>
 
-  <div style="display: grid; gap: 1.5rem; margin-top: 1.5rem;">
-    <div style="background: rgba(15, 23, 42, 0.4); padding: 1.25rem; border-radius: 1rem; border-left: 4px solid #22d3ee;">
-      <h4 style="color: #f8fafc; margin-bottom: 0.5rem;">1. 診斷先於治療，而非大砲打小鳥</h4>
-      <p style="margin: 0; font-size: 1rem;">
-        並非所有疼痛都適合 PRP。例如：<strong>鈣化性肌腱炎</strong>，使用體外震波碎石的效果通常優於注射；如果是單純的<strong>肌肉發炎緊繃</strong>，徒手治療或基礎消炎針就已足夠。
-        我們不主張「大砲打小鳥」，許多輕微受傷透過<strong>高濃度葡萄糖 (Prolotherapy)</strong> 就能獲得顯著改善，節省病患不必要的開支。
-      </p>
-    </div>
-
+  <div style="display: grid; gap: 1.8rem;">
     
-
-    <div style="background: rgba(15, 23, 42, 0.4); padding: 1.25rem; border-radius: 1rem; border-left: 4px solid #22d3ee;">
-      <h4 style="color: #f8fafc; margin-bottom: 0.5rem;">2. 超音波導引：差之毫釐，失之千里</h4>
-      <p style="margin: 0; font-size: 1rem;">
-        為什麼有些人打了 PRP 沒效？除了診斷錯誤，<strong>注射位置不精準</strong>是主因。
-        在宸新復健科，我們堅持全程搭配<strong>高解析度超音波導引</strong>，確保昂貴的生長因子能精準送到患部（如肌腱撕裂處或關節內），而不是打在周圍組織，這才是決定療效的最後一哩路。
+    <div style="padding: 0;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">1. 診斷先於治療，而非大砲打小鳥</h4>
+      <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;">
+        並非所有疼痛都適合 PRP。例如<strong>鈣化性肌腱炎</strong>，震波效果通常優於注射；許多輕微受傷透過<strong>高濃度葡萄糖</strong>就能獲得改善，不需一開始就花大錢打 PRP。
       </p>
     </div>
 
-      <div style="background: rgba(15, 23, 42, 0.4); padding: 1.25rem; border-radius: 1rem; border-left: 4px solid #22d3ee;">
-      <h4 style="color: #f8fafc; margin-bottom: 0.5rem;">3. 高品質的PRP離心技術</h4>
-      <p style="margin: 0; font-size: 1rem;">
-        PRP分離的試管好壞差很多，能不能有效分離出高濃度的增生因子及分離出不要的其他血球很重要。
-        研究顯示<strong>3~5倍濃度</strong>是最適合的，我們也持續監測分離濃度在5倍左右，以達到最佳效果，超過五倍會過於濃稠，就像鹽水撒在傷口，造成劇烈疼痛及發炎，所以濃度也並非越高越好。
+    <div style="padding: 0;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">2. 超音波導引：差之毫釐，失之千里</h4>
+      <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;">
+        <strong>注射位置不精準</strong>是失敗主因。我們堅持全程搭配<strong>高解析超音波導引</strong>，確保藥物精準打到患部撕裂處，這才是決定療效的最後一哩路。
       </p>
     </div>
 
+    <div style="padding: 0;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">3. 高品質的 PRP 離心技術</h4>
+      <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;">
+        研究顯示 <strong>3~5 倍濃度</strong> 最適合。濃度並非越高越好，超過 5 倍會過於濃稠，就像鹽水灑在傷口，反而會造成劇烈疼痛與發炎。
+      </p>
+    </div>
 
-  <p style="margin-top: 1.5rem; font-style: italic; color: #94a3b8; border-top: 1px solid rgba(255,255,255,0.1); pt-4;">
-    ※ 醫學是有溫度的，我們拒絕過度醫療。在新竹宸新，林羿辰院長秉持台大醫學中心的標準，提供最誠實、最專業的評估建議，讓您的每一分治療預算都花在刀口上。
-  </p>
+  </div>
+
 </section>
+
 
   <div class="my-8 flex justify-center">
       <iframe 
@@ -254,23 +246,23 @@ const fullTreatmentsData: Treatment[] = [
 </section>
 <section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
   <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
-    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
-      🏆 經典修復案例：從超音波見證組織癒合
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center;">
+      <span style="margin-right: 8px;">🏆</span> 經典修復案例：從超音波見證組織癒合
     </h2>
   </div>
 
-  <div style="padding: 2rem 2rem 1.2rem 2rem;">
-    <div style="display: flex; flex-direction: column; lg:flex-row gap: 2.5rem; align-items: flex-start;">
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
       
-      <div style="flex-shrink: 0; width: 100%; lg:w-[450px];">
+      <div style="flex-shrink: 0; width: 100%; max-width: 450px;">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 1.5rem;">
           <div style="text-align: center;">
             <div style="position: relative; margin-bottom: 0.75rem;">
               <img 
                 src="/images/cases/art/e.webp" 
-                alt="林羿辰醫師旋轉肌撕裂案例：治療前超音波顯示明顯肌腱破洞黑影" 
+                alt="林羿辰醫師旋轉肌撕裂案例：治療前" 
                 loading="lazy"
-                style="border-radius: 0.75rem; border: 1.5px solid #475569; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover;"
+                style="border-radius: 0.75rem; border: 1.5px solid #475569; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; display: block;"
               >
               <div style="position: absolute; top: 8px; left: 8px; background: rgba(0,0,0,0.6); color: #94a3b8; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">BEFORE</div>
             </div>
@@ -282,9 +274,9 @@ const fullTreatmentsData: Treatment[] = [
             <div style="position: relative; margin-bottom: 0.75rem;">
               <img 
                 src="/images/cases/art/d.webp" 
-                alt="林羿辰醫師旋轉肌撕裂案例：增生注射後組織完全修復平整" 
+                alt="林羿辰醫師旋轉肌撕裂案例：治療後" 
                 loading="lazy"
-                style="border-radius: 0.75rem; border: 1.5px solid #475569; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover;"
+                style="border-radius: 0.75rem; border: 1.5px solid #475569; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; display: block;"
               >
               <div style="position: absolute; top: 8px; left: 8px; background: rgba(34, 211, 238, 0.2); color: #22d3ee; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">AFTER</div>
             </div>
@@ -295,33 +287,31 @@ const fullTreatmentsData: Treatment[] = [
         </div>
       </div>
 
-      <div style="flex-grow: 1;">
-        <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.5rem; line-height: 1.4;">
-          那雙教會我畫畫的手，舉不起來了... <br><span style="color: #94a3b8; font-size: 1.25rem;">高中美術老師的旋轉肌修復之旅</span>
+      <div style="width: 100%;">
+        <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.5rem; line-height: 1.4; display: block; width: 100%; clear: both;">
+          那雙教會我畫畫的手，舉不起來了... <br>
         </h3>
         
-        <p style="color: #38bdf8; font-weight: 500; font-size: 1rem; margin-bottom: 1.25rem;">
-          👤 高中美術老師 | 🎯 治療：PRP ＋ 高濃度葡萄糖增生療法
+        <p style="color: #38bdf8; font-weight: 500; font-size: 1rem; margin-bottom: 1.25rem; display: flex; align-items: center;">
+          <span style="margin-right: 6px;">👤</span> 高中美術老師 | 🎯 治療：PRP ＋ 增生療法
         </p>
 
-        <p style="color: #94a3b8; line-height: 1.8; font-size: 1.1 rem; margin-bottom: 1.5rem;">
-          昔日恩師因木工創作導致嚴重<strong>旋轉肌撕裂</strong>，夜不成眠且面臨開刀壓力。林醫師運用<strong>高解析超音波導引</strong>精準修補，親見影像中原本漆黑的破洞逐漸被新生的肌腱纖維填滿。
+        <p style="color: #94a3b8; line-height: 1.8; font-size: 1.1rem; margin-bottom: 1.5rem; text-align: justify;">
+          昔日恩師因木工創作導致嚴重<strong>旋轉肌撕裂</strong>，夜不成眠。林醫師運用<strong>高解析超音波導引</strong>精準修補，親見影像中原本漆黑的破洞逐漸被新生的肌腱纖維填滿。
         </p>
 
-        <div style="background: rgba(30, 41, 59, 0.5); border-left: 2px solid #334155; padding: 1rem 1.25rem; margin-bottom: 1rem;">
-          <p style="margin: 0; color: #cbd5e1; font-size: 1rem;">
-            ✨ <strong>臨床成效：</strong> 疼痛指數 8 降至 0，超音波證實組織完全癒合。不僅免除手術，更保住了藝術家的創作熱情。
+        <div style="background: rgba(30, 41, 59, 0.5); border-left: 2px solid #334155; padding: 1rem 1.25rem; margin-bottom: 1.5rem; border-radius: 0 0.5rem 0.5rem 0;">
+          <p style="margin: 0; color: #cbd5e1; font-size: 1rem; line-height: 1.6;">
+            <span style="margin-right: 4px;">✨</span> <strong>臨床成效：</strong> 疼痛指數 8 降至 0，超音波證實組織完全癒合，成功保住了藝術家的創作熱情。
           </p>
         </div>
       </div>
     </div>
 
-    <div style="width: 100%; display: flex; justify-content: center; margin-top: 0.5rem;">
+    <div style="width: 100%; display: flex; justify-content: center; margin-top: 1rem;">
       <a 
         href="/about/cases/case-rotator-cuff-art-teacher" 
-        style="display: inline-flex; align-items: center; background-color: transparent; border: 1.5px solid #334155; color: #cbd5e1; padding: 0.6rem 2rem; border-radius: 0.5rem; text-decoration: none; font-size: 0.95rem; transition: all 0.3s ease; letter-spacing: 0.05em;"
-        onmouseover="this.style.borderColor='#475569'; this.style.backgroundColor='#1e293b'; this.style.color='#f8fafc';"
-        onmouseout="this.style.borderColor='#334155'; this.style.backgroundColor='transparent'; this.style.color='#cbd5e1';"
+        style="display: inline-block; background-color: #1e293b; border: 1.5px solid #334155; color: #cbd5e1; padding: 0.8rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-size: 1rem; text-align: center; width: 100%; max-width: 320px;"
       >
         查看完整「美術老師修復之路」故事 →
       </a>
@@ -419,50 +409,41 @@ const fullTreatmentsData: Treatment[] = [
       </li>
   </ul>
 </div>
-
-
-<section style="background-color: rgba(6, 182, 212, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); border-radius: 1.5rem; padding: 2rem; margin-bottom: 3rem;">
-<h2 style="color: #22d3ee; display: block; font-size: 1.875rem; margin-top: 0; line-height: 1.5; word-break: break-word;">
-  <span style="white-space: nowrap; display: inline-flex; align-items: center; vertical-align: middle;">
-    <span style="margin-right: 0.5rem;">👨‍⚕️</span>
-    <a href="/about/doctors" style="color: #22d3ee; text-decoration: none; border: none; outline: none;">林羿辰醫師</a>
-  </span>
-  <span style="vertical-align: middle;">觀點：震波越痛越有效嗎？為什麼很多人打了沒效？</span>
-</h2>
-  <p style="font-size: 1.125rem; line-height: 1.8; color: #cbd5e1;">
-    體外震波（Shockwave）是處理慢性疼痛與鈣化問題的利器，但診間常有患者抱怨：「林醫師，我在別的地方打過震波，怎麼沒效？」或是問：「是不是要打到愈痛才愈好？」
-    其實，<strong>震波成功的關鍵在於「精準定位」與「能量適中」，而非一味的追求痛感。</strong>
+<section style="background-color: rgba(6, 182, 212, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); border-radius: 1.5rem; padding: 2.5rem 1.25rem; margin-bottom: 3rem; font-family: sans-serif;">
+  
+<h2 style="color: #22d3ee; margin-top: 0; margin-bottom: 1.5rem; line-height: 1.4; font-size: 1.5rem; letter-spacing: -0.02em;">
+    <span style="display: inline-block;">👨‍⚕️<a href="/about/doctors" style="color: #22d3ee; text-decoration: none;">林羿辰醫師</a>觀點：PRP 真的非打不可嗎？</span>
+  </h2>
+  
+  <p style="font-size: 1.2rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 2.5rem; text-align: justify; letter-spacing: -0.01em;">
+    體外震波（Shockwave）是處理慢性疼痛與鈣化問題的利器，但診間常有患者抱怨：「林醫師，我在別的地方打過震波，怎麼沒效？」或是問：「是不是要打到愈痛才愈好？」其實，<strong>震波成功的關鍵在於「精準定位」與「能量適中」，而非一味的追求痛感。</strong>
   </p>
 
-  <div style="display: grid; gap: 1.5rem; margin-top: 1.5rem;">
-    <div style="background: rgba(15, 23, 42, 0.4); padding: 1.25rem; border-radius: 1rem; border-left: 4px solid #22d3ee;">
-      <h4 style="color: #f8fafc; margin-bottom: 0.5rem;">1. 超音波定位：精準瞄準病灶，而非哪裡痛打哪裡</h4>
-      <p style="margin: 0; font-size: 1rem;">
-        特別是<strong>鈣化性肌腱炎</strong>，疼痛點跟實際鈣化點往往不在同個位置。如果只根據患者的主觀感覺「盲打」，效果會大打折扣。
-        在施打前先用<strong>超音波</strong>找出病灶並做記號，讓能量準確聚焦於患部，才能真正擊碎鈣化、解決問題。
+  <div style="display: grid; gap: 1.8rem;">
+    
+    <div style="padding: 0;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">1. 超音波定位：精準瞄準病灶，而非哪裡痛打哪裡</h4>
+      <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;">
+        特別是<strong>鈣化性肌腱炎</strong>，疼痛點跟實際鈣化點往往不同。在施打前先用<strong>超音波</strong>找出病灶並做記號，讓能量準確聚焦於患部，才能真正擊碎鈣化、解決問題。
       </p>
     </div>
 
-    <div style="background: rgba(15, 23, 42, 0.4); padding: 1.25rem; border-radius: 1rem; border-left: 4px solid #22d3ee;">
-      <h4 style="color: #f8fafc; margin-bottom: 0.5rem;">2. 聚焦型 vs. 發散型：複合式治療才是王道</h4>
-      <p style="margin: 0; font-size: 1rem;">
-        震波分為兩類：<strong>聚焦式震波</strong>用於擊碎鈣化或修復深層肌腱受損；<strong>發散式震波</strong>則用於大面積的肌肉放鬆。
-        疼痛原因往往是複合性的，我們透過組合治療，深層修補、淺層放鬆，才能達到最佳的改善效果。
+    <div style="padding: 0;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">2. 聚焦型 vs. 發散型：複合式治療才是王道</h4>
+      <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;">
+        <strong>聚焦式震波</strong>用於深層修復；<strong>發散式震波</strong>則用於大面積放鬆。疼痛原因往往是複合性的，我們透過組合治療，深層修補、淺層放鬆，才能達到最佳改善效果。
       </p>
     </div>
 
-    <div style="background: rgba(15, 23, 42, 0.4); padding: 1.25rem; border-radius: 1rem; border-left: 4px solid #22d3ee;">
-      <h4 style="color: #f8fafc; margin-bottom: 0.5rem;">3. 5~7 分痛最適中：能量並非越強越好</h4>
-      <p style="margin: 0; font-size: 1rem;">
-        能量太弱無效，太強則會導致組織過度發炎。林醫師建議，以 10 分為最痛，施打時維持在 <strong>5~7 分的酸痛感</strong> 最適合。
-        治療初始若無法耐受，會先以弱能量啟動，待身體適應後再循序調高強度，確保在舒適與成效間取得平衡。
+    <div style="padding: 0;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">3. 5~7 分痛最適中：能量並非越強越好</h4>
+      <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;">
+        能量太弱無效，太強則會導致過度發炎。以 10 分為最痛，林醫師建議維持在 <strong>5~7 分的酸痛感</strong> 最適合，在舒適與成效間取得平衡，確保每一發能量都有意義。
       </p>
     </div>
+
   </div>
 
-  <p style="margin-top: 1.5rem; font-style: italic; color: #94a3b8; border-top: 1px solid rgba(255,255,255,0.1); pt-4;">
-    ※ 醫學是有溫度的，專業的判斷決定了治療的價值。在新竹宸新，林羿辰院長結合台大醫學中心的嚴謹與運動科學，讓每一發震波能量都能發揮其應有的治療意義。
-  </p>
 </section>
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 <h2>🔬 什麼是體外震波？治療原理大解密</h2>
@@ -542,23 +523,23 @@ const fullTreatmentsData: Treatment[] = [
 
 <section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
   <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
-    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
-      🏆 經典修復案例：震波擊碎「肩內頑石」
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center;">
+      <span style="margin-right: 8px;">🏆</span> 經典修復案例：震波擊碎「肩內頑石」
     </h2>
   </div>
 
-  <div style="padding: 2rem 2rem 1.2rem 2rem;">
-    <div style="display: flex; flex-direction: column; lg:flex-row gap: 2.5rem; align-items: flex-start;">
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
       
-      <div style="flex-shrink: 0; width: 100%; lg:w-[450px];">
+      <div style="flex-shrink: 0; width: 100%; max-width: 450px;">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 1.5rem;">
           <div style="text-align: center;">
             <div style="position: relative; margin-bottom: 0.75rem;">
               <img 
                 src="/images/cases/cal/1.webp" 
-                alt="林羿辰醫師鈣化性肌腱炎案例：治療前X光顯示巨大白色結石影" 
+                alt="林羿辰醫師鈣化性肌腱炎案例：治療前" 
                 loading="lazy"
-                style="border-radius: 0.75rem; border: 1.5px solid #475569; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover;"
+                style="border-radius: 0.75rem; border: 1.5px solid #475569; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; display: block;"
               >
               <div style="position: absolute; top: 8px; left: 8px; background: rgba(0,0,0,0.6); color: #94a3b8; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">BEFORE</div>
             </div>
@@ -570,9 +551,9 @@ const fullTreatmentsData: Treatment[] = [
             <div style="position: relative; margin-bottom: 0.75rem;">
               <img 
                 src="/images/cases/cal/2.webp" 
-                alt="林羿辰醫師鈣化性肌腱炎案例：四次聚焦震波後鈣化明顯變小變淡" 
+                alt="林羿辰醫師鈣化性肌腱炎案例：治療後" 
                 loading="lazy"
-                style="border-radius: 0.75rem; border: 1.5px solid #475569; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover;"
+                style="border-radius: 0.75rem; border: 1.5px solid #475569; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; display: block;"
               >
               <div style="position: absolute; top: 8px; left: 8px; background: rgba(34, 211, 238, 0.2); color: #22d3ee; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">AFTER</div>
             </div>
@@ -581,36 +562,33 @@ const fullTreatmentsData: Treatment[] = [
             </p>
           </div>
         </div>
-        
       </div>
 
-      <div style="flex-grow: 1;">
-        <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.5rem; line-height: 1.4;">
-          打完三劑 PRP 沒效？<br><span style="color: #94a3b8; font-size: 1.25rem;">原來是肩膀藏了顆大石頭！</span>
+      <div style="width: 100%;">
+        <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.5rem; line-height: 1.4; display: block; width: 100%; clear: both;">
+          打完三劑 PRP 沒效？ <br>
         </h3>
         
-        <p style="color: #38bdf8; font-weight: 500; font-size: 1rem; margin-bottom: 1.25rem;">
-          👤 40歲羽球愛好者 | 🎯 治療：聚焦式體外震波 (ESWT)
+        <p style="color: #38bdf8; font-weight: 500; font-size: 1rem; margin-bottom: 1.25rem; display: flex; align-items: center;">
+          <span style="margin-right: 6px;">👤</span> 40歲羽球愛好者 | 🎯 治療：聚焦式體外震波 (ESWT)
         </p>
 
-        <p style="color: #94a3b8; line-height: 1.8; font-size: 1.1rem; margin-bottom: 1.5rem;">
+        <p style="color: #94a3b8; line-height: 1.8; font-size: 1.1rem; margin-bottom: 1.5rem; text-align: justify;">
           病患被誤診為肌肉撕裂而盲目施打 PRP 卻毫無起色。經林醫師<strong>超音波與 X 光精準診斷</strong>，證實為<strong>鈣化性肌腱炎</strong>。透過能量精準聚焦，成功將「頑石」擊碎為粉末，讓病患免於開刀。
         </p>
 
-        <div style="background: rgba(30, 41, 59, 0.5); border-left: 2px solid #334155; padding: 1rem 1.25rem; margin-bottom: 1rem;">
-          <p style="margin: 0; color: #cbd5e1; font-size: 1rem;">
-            ✨ <strong>臨床成效：</strong> 疼痛顯著消失，手部活動度完全恢復。病患已成功重返羽球場，重拾往日殺球快感。
+        <div style="background: rgba(30, 41, 59, 0.5); border-left: 2px solid #334155; padding: 1rem 1.25rem; margin-bottom: 1.5rem; border-radius: 0 0.5rem 0.5rem 0;">
+          <p style="margin: 0; color: #cbd5e1; font-size: 1rem; line-height: 1.6;">
+            <span style="margin-right: 4px;">✨</span> <strong>臨床成效：</strong> 疼痛顯著消失，手部活動度完全恢復。病患已成功重返羽球場，重拾往日殺球快感。
           </p>
         </div>
       </div>
     </div>
 
-    <div style="width: 100%; display: flex; justify-content: center; margin-top: 0.5rem;">
+    <div style="width: 100%; display: flex; justify-content: center; margin-top: 1rem;">
       <a 
         href="/about/cases/case-calcific-tendinitis-shockwave" 
-        style="display: inline-flex; align-items: center; background-color: transparent; border: 1.5px solid #334155; color: #cbd5e1; padding: 0.6rem 2rem; border-radius: 0.5rem; text-decoration: none; font-size: 0.95rem; transition: all 0.3s ease; letter-spacing: 0.05em;"
-        onmouseover="this.style.borderColor='#475569'; this.style.backgroundColor='#1e293b'; this.style.color='#f8fafc';"
-        onmouseout="this.style.borderColor='#334155'; this.style.backgroundColor='transparent'; this.style.color='#cbd5e1';"
+        style="display: inline-block; background-color: #1e293b; border: 1.5px solid #334155; color: #cbd5e1; padding: 0.8rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-size: 1rem; text-align: center; width: 100%; max-width: 320px;"
       >
         查看「肩膀藏石頭」完整治療故事 →
       </a>
