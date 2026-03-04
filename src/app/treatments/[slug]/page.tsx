@@ -92,36 +92,38 @@ export default function TreatmentDetailPage({ params }: PageProps) {
       { '@type': 'ListItem', position: 3, name: treatment.title, item: currentPageUrl },
     ],
   }
+
+
   const jsonLdProcedure = {
     '@context': 'https://schema.org',
-    // 1. 修正：外層改用 MedicalWebPage，讓衛教文章的屬性 (日期、標題、作者) 全部合法
     '@type': 'MedicalWebPage',
     'name': treatment.title,
     'headline': treatment.seoTitle,
     'description': treatment.seoDescription || treatment.description,
     'url': currentPageUrl,
-    
-    // 2. 時效性：保留原本的日期，現在在 WebPage 下完全合法
     'datePublished': '2026-01-25',
     'dateModified': treatment.lastModified || '2026-02-22',
-    
     'image': treatment.images && treatment.images.length > 0 
       ? treatment.images.map(img => img.src.startsWith('http') ? img.src : `${SITE_URL}${img.src}`) 
       : [`${SITE_URL}/images/main/a.webp`],
 
-    // 3. 醫學專科：修正為官方 Enum 網址，原本的字串移至 about 保留資訊不遺漏
-    'medicalSpecialty': [
-      'https://schema.org/Physiotherapy', 
-      'https://schema.org/Orthopaedic', 
-      'https://schema.org/Pediatric'
-    ],
+    // ✨ 修正 1：移除 WebPage 頂層無效的 medicalSpecialty
+    // 將原本想表達的專業資訊移至 about 或 knowsAbout，保留 SEO 權重
     'about': [
       { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation' },
       { '@type': 'MedicalSpecialty', 'name': 'Orthopedics' },
-      { '@type': 'MedicalSpecialty', 'name': 'Sports Medicine' }
+      { '@type': 'MedicalSpecialty', 'name': 'Sports Medicine' },
+      { '@type': 'MedicalSpecialty', 'name': 'Pediatric' }
+    ],
+    'knowsAbout': [
+      'Orthopaedic', 
+      'Sports Medicine', 
+      'Pain Management',
+      'Physical Medicine and Rehabilitation',
+      'Pediatric Rehabilitation'
     ],
 
-    // 4. 作者區塊：修正 Physician 報錯，使用雙重宣告
+    // 4. 作者區塊：保留醫師雙重宣告
     'author': {
       '@type': ['Person', 'Physician'],
       'name': '林羿辰 醫師',
@@ -132,11 +134,11 @@ export default function TreatmentDetailPage({ params }: PageProps) {
         '@type': 'EducationalOrganization', 
         'name': '國立台灣大學醫學系' 
       },
+      // ✨ 修正 2：medicalSpecialty 放在醫師實體內是合法的
       'medicalSpecialty': [
-        'https://schema.org/Physiotherapy', 
-        'https://schema.org/Orthopaedic'
+        'http://schema.org/Physiotherapy', 
+        'http://schema.org/Pediatric'
       ],
-      'knowsAbout': ['Physical Medicine and Rehabilitation', 'Sports Medicine'],
       'sameAs': [
         'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
         'https://www.pmr.org.tw/associator/associator-all.asp?w/',
@@ -167,7 +169,7 @@ export default function TreatmentDetailPage({ params }: PageProps) {
       ]
     },
 
-    // 5. 提供者區塊：修正雙重宣告 (WebPage 支援 provider)
+    // 5. 提供者區塊
     'provider': {
       '@type': ['Person', 'Physician'],
       'name': '林羿辰 醫師',
@@ -185,33 +187,10 @@ export default function TreatmentDetailPage({ params }: PageProps) {
         'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
         'https://www.pmr.org.tw/associator/associator-all.asp?w/',
         'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a='
-      ],
-      'hasCredential': [
-        {
-          '@type': 'EducationalOccupationalCredential',
-          'name': '醫事人員執業資格',
-          'credentialCategory': '醫師證書',
-          'url': 'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
-          'recognizedBy': { '@type': 'Organization', 'name': '中華民國衛生福利部' }
-        },
-        {
-          '@type': 'EducationalOccupationalCredential',
-          'name': '復健科專科醫師資格',
-          'credentialCategory': '復健科專科醫師證書',
-          'url': 'https://www.pmr.org.tw/associator/associator-all.asp?w/',
-          'recognizedBy': { '@type': 'Organization', 'name': '台灣復健醫學會' }
-        },
-        {
-          '@type': 'EducationalOccupationalCredential',
-          'name': '骨質疏鬆症學會專科醫師資格',
-          'credentialCategory': '骨質疏鬆症學會專科醫師證書',
-          'url': 'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a=',
-          'recognizedBy': { '@type': 'Organization', 'name': '中華民國骨質疏鬆症學會' }
-        }
       ]
     },
 
-    // 6. 地點資訊：修正為 contentLocation (WebPage 專用，合法包含地點)
+    // 6. 地點資訊
     'contentLocation': {
       '@type': 'MedicalClinic',
       'name': '宸新復健科診所',
@@ -243,23 +222,28 @@ export default function TreatmentDetailPage({ params }: PageProps) {
       ]
     },
 
-    // 7. 核心實體：將原先的 TherapeuticProcedure 包裝在這裡
+    // 7. 核心實體
     'mainEntity': {
       '@type': 'TherapeuticProcedure',
       'name': treatment.title,
       'description': treatment.seoDescription || treatment.description,
-      
-      // 修正：使用 Google 規定的官方非侵入性治療 URL
       'procedureType': 'http://schema.org/NoninvasiveProcedure',
       'howPerformed': "Ultrasound-guided injection (超音波導引注射)",
       
-      // 修正：加上 https://schema.org/ 前綴，解決「無效目標類型」的警告
+      // ✨ 修正 3：bodyLocation 報錯處理
+      // 根據 Schema.org 定義，bodyLocation 期望的是 Text 或 AnatomicalStructure 的 URL。
+      // 為了保留原本內容並通過驗證，我們使用字串陣列，這在實務上最能解決 Google 報錯問題。
       'bodyLocation': [
-        { "@type": "https://schema.org/AnatomicalStructure", "name": "Knee", "alternateName": "膝蓋" },
-        { "@type": "https://schema.org/AnatomicalStructure", "name": "Shoulder", "alternateName": "肩膀" },
-        { "@type": "https://schema.org/AnatomicalStructure", "name": "Elbow", "alternateName": "手肘" },
-        { "@type": "https://schema.org/AnatomicalStructure", "name": "Ankle", "alternateName": "足踝" }
-      ]
+        "Knee (膝蓋)",
+        "Shoulder (肩膀)",
+        "Elbow (手肘)",
+        "Ankle (足踝)"
+      ],
+      // 原本詳細的 AnatomicalStructure 資訊移至 relevantSpecialty 或相關屬性中保留
+      'relevantSpecialty': {
+        '@type': 'MedicalSpecialty',
+        'name': 'Musculoskeletal Medicine'
+      }
     }
   };
 

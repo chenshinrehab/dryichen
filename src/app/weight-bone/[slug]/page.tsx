@@ -39,6 +39,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${cleanTitle} | 新竹宸新復健科`,
     description: program.seoDescription || program.description,
+    authors: [{ name: '林羿辰醫師', url: SITE_URL }],
+    publisher: '宸新復健科診所-林羿辰醫師',
     keywords: program.keywords || ['新竹減重', '瘦瘦針', '骨齡', '兒童生長'],
     
     alternates: {
@@ -100,22 +102,121 @@ export default async function WeightBoneDetailPage({ params }: PageProps) {
       { '@type': 'ListItem', position: 3, name: program.title, item: currentPageUrl },
     ],
   }
-
-  // 3. Schema: 醫療服務 (Service)
-  const jsonLdService = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    // 強化名稱，鎖定「新竹」、「門診」、「推薦」等高價值搜尋關鍵字
-    'name': `新竹${program.title}門診推薦`, 
-    'description': program.seoDescription || program.description,
-    'url': currentPageUrl,
-    
-    // 圖片路徑自動補完邏輯，確保搜尋引擎抓得到圖
-    'image': program.images && program.images.length > 0 
-      ? program.images.map(img => img.src.startsWith('http') ? img.src : `${SITE_URL}${img.src}`) 
-      : [`${SITE_URL}/images/main/a.webp`],
+// 3. Schema: 醫療服務 (Service) - 完整修正版
+const jsonLdService = {
+  '@context': 'https://schema.org',
+  // 1. 修正：外層改用 MedicalWebPage，讓日期、作者、地點等屬性完全合法
+  '@type': 'MedicalWebPage',
+  // 強化名稱，鎖定「新竹」、「門診」、「推薦」等高價值搜尋關鍵字
+  'name': `新竹${program.title}門診推薦`, 
+  'description': program.seoDescription || program.description,
+  'url': currentPageUrl,
   
-    // 具體服務類型，幫助 AI 引擎分類
+  // 圖片路徑自動補完邏輯，確保搜尋引擎抓得到圖
+  'image': program.images && program.images.length > 0 
+    ? program.images.map(img => img.src.startsWith('http') ? img.src : `${SITE_URL}${img.src}`) 
+    : [`${SITE_URL}/images/main/a.webp`],
+
+  // 2. 內容時效性 (移至 WebPage 層級，完全合法)
+  'datePublished': '2026-01-25',
+  'dateModified': program.lastModified || '2026-02-25',
+
+  // 3. 修正：WebPage 不直接支援 medicalSpecialty，將其移至 about 保留所有 SEO 權重
+  'about': [
+    { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation' },
+    { '@type': 'MedicalSpecialty', 'name': 'Orthopedics' },
+    { '@type': 'MedicalSpecialty', 'name': 'Sports Medicine' }
+  ],
+
+  // 4. 作者/醫師區塊：使用雙重宣告 ['Person', 'Physician'] 解決報錯
+  'author': {
+    '@type': ['Person', 'Physician'],
+    'name': '林羿辰 醫師',
+    'jobTitle': '宸新復健科診所 院長', // Person 支援 jobTitle
+    'url': `${SITE_URL}/about/doctors`,
+    'image': `${SITE_URL}/images/main/a.webp`,
+    'alumniOf': {  // Person 支援 alumniOf
+      '@type': 'EducationalOrganization', 
+      'name': '國立台灣大學醫學系' 
+    },
+    // 將非標準字串改用標準網址，原有字串移入 knowsAbout 保留關鍵字
+    'medicalSpecialty': [
+      'https://schema.org/Physiotherapy',  
+      'https://schema.org/Pediatric'
+    ],
+    'knowsAbout': [
+      'Orthopaedic', 
+      'Sports Medicine', 
+      'Pain Management',
+      'Physical Medicine and Rehabilitation'
+    ],
+    'sameAs': [
+      'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
+      'https://www.pmr.org.tw/associator/associator-all.asp?w/',
+      'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a='
+    ],
+    'hasCredential': [
+      {
+        '@type': 'EducationalOccupationalCredential',
+        'name': '醫事人員執業資格',
+        'credentialCategory': '醫師證書',
+        'url': 'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
+        'recognizedBy': { '@type': 'Organization', 'name': '中華民國衛生福利部' }
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        'name': '復健科專科醫師資格',
+        'credentialCategory': '復健科專科醫師證書',
+        'url': 'https://www.pmr.org.tw/associator/associator-all.asp?w/',
+        'recognizedBy': { '@type': 'Organization', 'name': '台灣復健醫學會' }
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        'name': '骨質疏鬆症學會專科醫師資格',
+        'credentialCategory': '骨質疏鬆症學會專科醫師證書',
+        'url': 'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a=',
+        'recognizedBy': { '@type': 'Organization', 'name': '中華民國骨質疏鬆症學會' }
+      }
+    ]
+  },
+
+  // 5. 地點資訊：修正為 contentLocation (WebPage 層級專用，取代失效的 location)
+  'contentLocation': {
+    '@type': 'MedicalClinic',
+    'name': '宸新復健科診所',
+    'alternateName': 'Chenshin Rehabilitation Clinic',
+    'url': SITE_URL,
+    'logo': {
+      '@type': 'ImageObject',
+      'url': `${SITE_URL}/logo.webp`
+    },
+    'address': { 
+       '@type': 'PostalAddress',
+       'streetAddress': '光復路一段371號B1',
+       'addressLocality': '東區',
+       'addressRegion': '新竹市',
+       'addressCountry': 'TW',
+       'postalCode': '300'
+    },
+    'telephone': '+886-3-5647999',
+    'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': '24.7833314', 
+      'longitude': '121.0170937'
+    },
+    'areaServed': [
+      { "@type": "City", "name": "新竹市" },
+      { "@type": "City", "name": "竹北市" },
+      { "@type": "Place", "name": "新竹科學園區" },
+      { "@type": "AdministrativeArea", "name": "新竹縣" }
+    ]
+  },
+
+  // 6. 核心實體：使用雙重宣告 ['MedicalService', 'TherapeuticProcedure']
+  // 這樣可以合法包含 serviceType、howPerformed、bodyLocation 與 provider
+  'mainEntity': {
+    '@type': ['MedicalService', 'TherapeuticProcedure'],
+    'name': `${program.title}門診服務`,
     'serviceType': [
       'Medical Weight Loss', 
       'InBody Assessment', 
@@ -123,84 +224,19 @@ export default async function WeightBoneDetailPage({ params }: PageProps) {
       'Physical Medicine', 
       'Rehabilitation Service'
     ],
-  
-    // 1. 作者/醫師區塊 (EEAT 核心：證照、學歷、外部權威連結)
-    'author': {
-      '@type': 'Physician',
-      'name': '林羿辰 醫師',
-      'jobTitle': '宸新復健科診所 院長',
-      'url': `${SITE_URL}/about/doctors`,
-      'image': `${SITE_URL}/images/main/a.webp`,
-      'alumniOf': { 
-        '@type': 'EducationalOrganization', 
-        'name': '國立台灣大學醫學系' 
-      },
-      'medicalSpecialty': [
-        'Physical Medicine and Rehabilitation',
-        'Sports Medicine'
-      ],
-      // 外部權威資料庫連結，建立醫師實體（Entity）唯一性
-      'sameAs': [
-        'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
-        'https://www.pmr.org.tw/associator/associator-all.asp?w/',
-        'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a='
-      ],
-      // 醫師證照：GEO (AI 搜尋) 評斷可信度的關鍵
-      'hasCredential': [
-        {
-          '@type': 'EducationalOccupationalCredential',
-          'name': '醫事人員執業資格',
-          'credentialCategory': '醫師證書',
-          'url': 'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
-          'recognizedBy': {
-            '@type': 'Organization',
-            'name': '中華民國衛生福利部'
-          }
-        },
-        {
-          '@type': 'EducationalOccupationalCredential',
-          'name': '復健科專科醫師資格',
-          'credentialCategory': '復健科專科醫師證書',
-          'url': 'https://www.pmr.org.tw/associator/associator-all.asp?w/',
-          'recognizedBy': {
-            '@type': 'Organization',
-            'name': '台灣復健醫學會'
-          }
-        },
-        {
-          '@type': 'EducationalOccupationalCredential',
-          'name': '骨質疏鬆症學會專科醫師資格',
-          'credentialCategory': '骨質疏鬆症學會專科醫師證書',
-          'url': 'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a=',
-          'recognizedBy': {
-            '@type': 'Organization',
-            'name': '中華民國骨質疏鬆症學會'
-          }
-        }
-      ]
-    },
-  
-    // 2. 內容時效性 (GEO 判斷新鮮度的關鍵)
-    'datePublished': '2026-01-25',
-    'dateModified': program.lastModified || '2026-02-25',
-  
-    // 3. 醫學專科與針對部位
-    'medicalSpecialty': [
-      { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation' },
-      { '@type': 'MedicalSpecialty', 'name': 'Orthopedics' },
-      { '@type': 'MedicalSpecialty', 'name': 'Sports Medicine' }
-    ],
-    'bodyLocation': [
-      { "@type": "AnatomicalStructure", "name": "Knee", "alternateName": "膝蓋" },
-      { "@type": "AnatomicalStructure", "name": "Shoulder", "alternateName": "肩膀" },
-      { "@type": "AnatomicalStructure", "name": "Elbow", "alternateName": "手肘" },
-      { "@type": "AnatomicalStructure", "name": "Ankle", "alternateName": "足踝" }
-    ],
     'howPerformed': "Ultrasound-guided injection (超音波導引注射)",
-  
-    // 4. 提供者資訊 (醫師個人背景)
+    
+    // 修正：bodyLocation 改為字串陣列，徹底解決 AnatomicalStructure 目標錯誤
+    'bodyLocation': [
+      "Knee (膝蓋)",
+      "Shoulder (肩膀)",
+      "Elbow (手肘)",
+      "Ankle (足踝)"
+    ],
+    
+    // 提供者資訊 (醫師個人背景) - 維持雙重宣告
     'provider': {
-      '@type': 'Physician',
+      '@type': ['Person', 'Physician'],
       'name': '林羿辰 醫師',
       'url': `${SITE_URL}/about/doctors`,
       'jobTitle': '院長',
@@ -223,67 +259,26 @@ export default async function WeightBoneDetailPage({ params }: PageProps) {
           'name': '醫事人員執業資格',
           'credentialCategory': '醫師證書',
           'url': 'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
-          'recognizedBy': {
-            '@type': 'Organization',
-            'name': '中華民國衛生福利部'
-          }
+          'recognizedBy': { '@type': 'Organization', 'name': '中華民國衛生福利部' }
         },
         {
           '@type': 'EducationalOccupationalCredential',
           'name': '復健科專科醫師資格',
           'credentialCategory': '復健科專科醫師證書',
           'url': 'https://www.pmr.org.tw/associator/associator-all.asp?w/',
-          'recognizedBy': {
-            '@type': 'Organization',
-            'name': '台灣復健醫學會'
-          }
+          'recognizedBy': { '@type': 'Organization', 'name': '台灣復健醫學會' }
         },
         {
           '@type': 'EducationalOccupationalCredential',
           'name': '骨質疏鬆症學會專科醫師資格',
           'credentialCategory': '骨質疏鬆症學會專科醫師證書',
           'url': 'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a=',
-          'recognizedBy': {
-            '@type': 'Organization',
-            'name': '中華民國骨質疏鬆症學會'
-          }
+          'recognizedBy': { '@type': 'Organization', 'name': '中華民國骨質疏鬆症學會' }
         }
       ]
-    },
-  
-    // 5. 地點資訊 (診所實體 - 強化在地 SEO 與 Google Maps 關聯)
-    'location': {
-      '@type': 'MedicalClinic',
-      'name': '宸新復健科診所',
-      'alternateName': 'Chenshin Rehabilitation Clinic',
-      'url': SITE_URL,
-      'logo': {
-        '@type': 'ImageObject',
-        'url': `${SITE_URL}/logo.webp`
-      },
-      'address': { 
-         '@type': 'PostalAddress',
-         'streetAddress': '光復路一段371號B1',
-         'addressLocality': '東區',
-         'addressRegion': '新竹市',
-         'addressCountry': 'TW',
-         'postalCode': '300'
-      },
-      'telephone': '+886-3-5647999',
-      'geo': {
-        '@type': 'GeoCoordinates',
-        'latitude': '24.7833314', 
-        'longitude': '121.0170937'
-      },
-      // 服務區域：對 AI 搜尋定位您的目標客戶群非常有幫助
-      'areaServed': [
-        { "@type": "City", "name": "新竹市" },
-        { "@type": "City", "name": "竹北市" },
-        { "@type": "Place", "name": "新竹科學園區" },
-        { "@type": "AdministrativeArea", "name": "新竹縣" }
-      ]
     }
-  };
+  }
+};
   // 4. Schema: FAQ
   const jsonLdFAQ = program.qaList && program.qaList.length > 0 ? {
     '@context': 'https://schema.org',

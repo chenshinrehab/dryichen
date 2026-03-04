@@ -35,9 +35,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     // 修正：這裡移除手寫的「| 新竹宸新復健科」，讓 layout 的 template 自動組合，避免重複
     title: `${disease.title} - 疾病衛教 | 新竹宸新復健科`, 
     description: disease.seoDescription || disease.description,
+    authors: [{ name: '林羿辰醫師', url: SITE_URL }],
+    publisher: '宸新復健科診所-林羿辰醫師',
     keywords: disease.seoKeywords,
     
-    // ★★★ 加入 Canonical Tag ★★★
     alternates: {
         canonical: canonicalUrl,
     },
@@ -92,7 +93,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
     ],
   }
 
-  // ==========================================
+// ==========================================
   // SEO Schema 2: 醫療網頁 (E-E-A-T 增強版)
   // ==========================================
   const jsonLdMedicalWebPage = {
@@ -110,7 +111,8 @@ export default function DiseaseDetailPage({ params }: PageProps) {
     
     // 1. 作者 (Author)：強調醫師個人的權威背景
     author: {
-      '@type': 'Physician',
+      // ✨ 修正：使用雙重宣告，讓 jobTitle、affiliation、alumniOf 成為合法屬性
+      '@type': ['Person', 'Physician'], 
       name: '林羿辰 醫師',
       url: `${SITE_URL}/about/doctors`,
       jobTitle: '院長',
@@ -187,10 +189,11 @@ export default function DiseaseDetailPage({ params }: PageProps) {
         }
       ]
     },
-  
+    
     // 2. 審閱者 (ReviewedBy)：醫療 YMYL 內容加分項
     reviewedBy: {
-      '@type': 'Physician',
+      // ✨ 修正：同步使用雙重宣告，維持結構的一致性與權威性
+      '@type': ['Person', 'Physician'],
       name: '林羿辰 醫師',
       url: `${SITE_URL}/about/doctors`,
       address: {
@@ -240,7 +243,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
         }
       ]
     },
-  
+    
     // 3. 發佈者 (Publisher)：標註為正式醫療診所
     publisher: {
         '@type': 'MedicalClinic',
@@ -265,7 +268,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
           'longitude': '121.0170937'
         }
     },
-  
+    
     // 4. 疾病主體 (MainEntity)：將網頁內容轉化為結構化醫學實體
     mainEntity: {
       '@type': 'MedicalCondition',

@@ -48,7 +48,7 @@ const fullWeightLossData: WeightLossProgram[] = [
     description: '新一代雙重腸泌素(GIP/GLP-1)受體促效劑，提供更卓越的體重控制效果。',
     image: '/images/weight-loss/a.webp',
     features: ['一週一次', '抑制食慾', '延緩胃排空'],
-    seoTitle: '新竹猛健樂推薦(Mounjaro) | 宸新復健科診所 - 專業減重門診',
+    seoTitle: '新竹猛健樂推薦｜宸新復健科診所：台大醫師專業減重門診，Mounjaro 瘦瘦針助您精準控糖減脂，新竹首選，客製化體重管理找回輕盈體態',
     seoDescription: '新竹猛健樂(Mounjaro)瘦瘦針推薦。位於鄰近新竹科學園區，靠近竹北，宸新復健科提供新一代雙重腸泌素(GIP/GLP-1)，減重效果優於傳統善纖達。醫師親自規劃療程，含InBody檢測與飲食指導，有效改善肥胖、脂肪肝與三高問題。',
     keywords: ['新竹猛健樂', '竹北猛健樂', 'Mounjaro價格', '新竹瘦瘦針', '新竹減重門診', '竹科減重', '雙重腸泌素', '減肥針推薦', '胰島素阻抗'],
     contentHtml: `
@@ -308,7 +308,7 @@ const fullWeightLossData: WeightLossProgram[] = [
     description: '透過左手X光片判讀骨骼成熟度，預測成年身高，掌握黃金生長發育期。',
     image: '/images/weight-loss/c.webp',
     features: ['性早熟', '生長遲緩', '想了解身高潛力的兒童'],
-    seoTitle: '新竹兒童骨齡推薦 | 宸新復健科診所 - 關節退化與運動傷害治療',
+    seoTitle: '新竹兒童骨齡推薦｜宸新復健科診所：台大醫師精準判讀骨齡，新竹首選兒童生長門診，專業預估成人身高，分析生長曲線與發育狀況，掌握黃金長高期',
     seoDescription: '新竹照骨齡推薦。鄰近新竹科學園區，靠近竹北，宸新復健科提供免掛號免預約，隨到隨照服務。結合TW3法與AI大數據精準判讀，準確預測兒童成年身高。針對性早熟、生長遲緩提供專業評估與治療建議。',
     keywords: ['新竹照骨齡', '竹北照骨齡', '兒童長高門診', '性早熟檢查', '生長遲緩', '預測身高', '骨齡X光', '新竹小兒內分泌'],
     contentHtml: `
@@ -621,7 +621,7 @@ const fullWeightLossData: WeightLossProgram[] = [
     description: '協助控制體重的注射藥物，幫助您減少飢餓感，輕鬆達成減重目標。',
     image: '/images/weight-loss/b.webp',
     features: ['穩定血糖', '減少體脂肪堆積'],
-    seoTitle: '新竹週纖達(Wegovy)減重 - 價格/副作用/與善纖達比較 | 宸新復健科',
+    seoTitle: '新竹週纖達推薦｜宸新復健科診所：台大醫師專業減重門診，Wegovy 瘦瘦針助您輕鬆降體脂控體重，關埔竹北首選，客製化精準減脂方案找回健康曲線',
     seoDescription: '新竹週纖達(Wegovy)瘦瘦針推薦。高CP值的一週一次減重藥物，有效抑制食慾、增加飽足感。適合忙碌上班族、想改善體態與血糖控制者。提供完整衛教與劑量規劃。',
     keywords: ['新竹週纖達', 'Wegovy價格', '新竹瘦瘦針推薦', '善纖達比較', 'GLP-1', '減肥筆', '胰妥讚'],
     contentHtml: `

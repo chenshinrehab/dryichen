@@ -159,9 +159,14 @@ const medicalClinicSchema = {
     ],
     // 診所專業科別 (修正拼寫與 HTTPS)
     'medicalSpecialty': [
-      'https://schema.org/Physiotherapy', 
-      'https://schema.org/Orthopaedic', 
+      'https://schema.org/Physiotherapy',  
       'https://schema.org/Pediatric'
+    ],
+    'knowsAbout': [
+      'Orthopaedic', 
+      'Sports Medicine', 
+      'Pain Management',
+      'Physical Medicine and Rehabilitation'
     ],
 
     // ✨ 核心優化：院長資訊
