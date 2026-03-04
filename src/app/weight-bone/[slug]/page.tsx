@@ -105,41 +105,38 @@ export default async function WeightBoneDetailPage({ params }: PageProps) {
 // 3. Schema: 醫療服務 (Service) - 完整修正版
 const jsonLdService = {
   '@context': 'https://schema.org',
-  // 1. 修正：外層改用 MedicalWebPage，讓日期、作者、地點等屬性完全合法
+  // 1. 外層使用 MedicalWebPage
   '@type': 'MedicalWebPage',
-  // 強化名稱，鎖定「新竹」、「門診」、「推薦」等高價值搜尋關鍵字
   'name': `新竹${program.title}門診推薦`, 
   'description': program.seoDescription || program.description,
   'url': currentPageUrl,
   
-  // 圖片路徑自動補完邏輯，確保搜尋引擎抓得到圖
   'image': program.images && program.images.length > 0 
     ? program.images.map(img => img.src.startsWith('http') ? img.src : `${SITE_URL}${img.src}`) 
     : [`${SITE_URL}/images/main/a.webp`],
 
-  // 2. 內容時效性 (移至 WebPage 層級，完全合法)
+  // 2. 內容時效性 (保留 date)
   'datePublished': '2026-01-25',
   'dateModified': program.lastModified || '2026-02-25',
 
-  // 3. 修正：WebPage 不直接支援 medicalSpecialty，將其移至 about 保留所有 SEO 權重
+  // 3. 醫學專科
   'about': [
     { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation' },
     { '@type': 'MedicalSpecialty', 'name': 'Orthopedics' },
     { '@type': 'MedicalSpecialty', 'name': 'Sports Medicine' }
   ],
 
-  // 4. 作者/醫師區塊：使用雙重宣告 ['Person', 'Physician'] 解決報錯
+  // 4. 作者/醫師區塊：使用雙重宣告 ['Person', 'Physician']
   'author': {
     '@type': ['Person', 'Physician'],
     'name': '林羿辰 醫師',
-    'jobTitle': '宸新復健科診所 院長', // Person 支援 jobTitle
+    'jobTitle': '宸新復健科診所 院長',
     'url': `${SITE_URL}/about/doctors`,
     'image': `${SITE_URL}/images/main/a.webp`,
-    'alumniOf': {  // Person 支援 alumniOf
+    'alumniOf': { 
       '@type': 'EducationalOrganization', 
       'name': '國立台灣大學醫學系' 
     },
-    // 將非標準字串改用標準網址，原有字串移入 knowsAbout 保留關鍵字
     'medicalSpecialty': [
       'https://schema.org/Physiotherapy',  
       'https://schema.org/Pediatric'
@@ -180,7 +177,7 @@ const jsonLdService = {
     ]
   },
 
-  // 5. 地點資訊：修正為 contentLocation (WebPage 層級專用，取代失效的 location)
+  // 5. 地點資訊
   'contentLocation': {
     '@type': 'MedicalClinic',
     'name': '宸新復健科診所',
@@ -212,10 +209,11 @@ const jsonLdService = {
     ]
   },
 
-  // 6. 核心實體：使用雙重宣告 ['MedicalService', 'TherapeuticProcedure']
-  // 這樣可以合法包含 serviceType、howPerformed、bodyLocation 與 provider
+  // 6. 核心實體：修正為 ['Service', 'MedicalProcedure']
+  // ✨ 修正重點：使用 Service (支援 serviceType 與 provider) 
+  // 加上 MedicalProcedure (支援 howPerformed 與 bodyLocation)
   'mainEntity': {
-    '@type': ['MedicalService', 'TherapeuticProcedure'],
+    '@type': ['Service', 'MedicalProcedure'],
     'name': `${program.title}門診服務`,
     'serviceType': [
       'Medical Weight Loss', 
@@ -226,7 +224,6 @@ const jsonLdService = {
     ],
     'howPerformed': "Ultrasound-guided injection (超音波導引注射)",
     
-    // 修正：bodyLocation 改為字串陣列，徹底解決 AnatomicalStructure 目標錯誤
     'bodyLocation': [
       "Knee (膝蓋)",
       "Shoulder (肩膀)",
@@ -234,7 +231,6 @@ const jsonLdService = {
       "Ankle (足踝)"
     ],
     
-    // 提供者資訊 (醫師個人背景) - 維持雙重宣告
     'provider': {
       '@type': ['Person', 'Physician'],
       'name': '林羿辰 醫師',

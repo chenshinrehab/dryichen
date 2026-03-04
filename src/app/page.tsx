@@ -191,7 +191,7 @@ const medicalClinicSchema = {
       },
       'medicalSpecialty': [
         'https://schema.org/Physiotherapy', 
-        'https://schema.org/Orthopaedic', 
+        'https://schema.org/Orthopedic', 
         'https://schema.org/Pediatric'
       ],
       'knowsAbout': [

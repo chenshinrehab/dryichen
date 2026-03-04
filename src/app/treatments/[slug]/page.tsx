@@ -115,13 +115,7 @@ export default function TreatmentDetailPage({ params }: PageProps) {
       { '@type': 'MedicalSpecialty', 'name': 'Sports Medicine' },
       { '@type': 'MedicalSpecialty', 'name': 'Pediatric' }
     ],
-    'knowsAbout': [
-      'Orthopaedic', 
-      'Sports Medicine', 
-      'Pain Management',
-      'Physical Medicine and Rehabilitation',
-      'Pediatric Rehabilitation'
-    ],
+
 
     // 4. 作者區塊：保留醫師雙重宣告
     'author': {
@@ -134,10 +128,18 @@ export default function TreatmentDetailPage({ params }: PageProps) {
         '@type': 'EducationalOrganization', 
         'name': '國立台灣大學醫學系' 
       },
+      'knowsAbout': [
+        'Orthopaedic', 
+        'Sports Medicine', 
+        'Pain Management',
+        'Physical Medicine and Rehabilitation',
+        'Pediatric Rehabilitation'
+      ],
       // ✨ 修正 2：medicalSpecialty 放在醫師實體內是合法的
       'medicalSpecialty': [
-        'http://schema.org/Physiotherapy', 
-        'http://schema.org/Pediatric'
+        'https://schema.org/Physiotherapy', 
+        'https://schema.org/Orthopedic', 
+        'https://schema.org/Pediatric'
       ],
       'sameAs': [
         'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
