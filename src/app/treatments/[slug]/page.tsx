@@ -138,7 +138,6 @@ export default function TreatmentDetailPage({ params }: PageProps) {
       // ✨ 修正 2：medicalSpecialty 放在醫師實體內是合法的
       'medicalSpecialty': [
         'https://schema.org/Physiotherapy', 
-        'https://schema.org/Orthopedic', 
         'https://schema.org/Pediatric'
       ],
       'sameAs': [

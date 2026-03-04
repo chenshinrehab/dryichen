@@ -75,7 +75,6 @@ export default function BookingPage() {
       { '@type': 'ListItem', position: 2, name: '馬上預約', item: currentUrl },
     ],
   }
-
   const jsonLdBooking = {
     '@context': 'https://schema.org',
     // ✨ 修正 1：補充最外層的類型宣告，解決「未指定類型」報錯
@@ -147,23 +146,28 @@ export default function BookingPage() {
     datePublished: '2026-01-25',
     dateModified: '2026-02-25',
 
-    // 3. 醫學專科與解剖結構
-    'medicalSpecialty': [
-      'https://schema.org/Physiotherapy', 
-      'https://schema.org/Orthopaedic', 
-      'https://schema.org/Pediatric'
-    ],
-    'bodyLocation': [
-      "Knee (膝蓋)",
-      "Shoulder (肩膀)",
-      "Elbow (手肘)",
-      "Ankle (足踝)"
-    ],
-    'howPerformed': "Ultrasound-guided injection (超音波導引注射)",
+    // ✨ 核心修正：將 WebPage 不支援的醫療屬性，包裝進 about (關於) 中
+    // 宣告為 MedicalProcedure (醫療程序)，這樣就可以合法容納原本的所有內容與關鍵字
+    'about': {
+      '@type': 'MedicalProcedure',
+      'name': '復健科門診與注射治療',
+      'medicalSpecialty': [
+        'https://schema.org/Physiotherapy', 
+        'https://schema.org/Orthopaedic', 
+        'https://schema.org/Pediatric'
+      ],
+      'bodyLocation': [
+        "Knee (膝蓋)",
+        "Shoulder (肩膀)",
+        "Elbow (手肘)",
+        "Ankle (足踝)"
+      ],
+      'howPerformed': "Ultrasound-guided injection (超音波導引注射)"
+    },
 
     // 4. 提供者區塊 (強化執行者的專業背景)
     'provider': {
-      // ✨ 修正 3：同樣加入 Person 宣告，合法化職稱
+      // 同樣加入 Person 宣告，合法化職稱
       '@type': ['Person', 'Physician'],
       'name': '林羿辰 醫師',
       'url': `${SITE_URL}/about/doctors`,
@@ -215,8 +219,8 @@ export default function BookingPage() {
       ]
     },
 
-    // 5. 地點資訊 (強化 Local SEO / Google Maps)
-    'location': {
+    // ✨ 修正：將 location 改為 WebPage 專用的 contentLocation，強化 Local SEO
+    'contentLocation': {
       '@type': 'MedicalClinic',
       'name': '宸新復健科診所',
       'alternateName': 'Chenshin Rehabilitation Clinic',
@@ -262,7 +266,7 @@ export default function BookingPage() {
             'urlTemplate': webBookingUrl,
             'actionPlatform': ['http://schema.org/DesktopWebPlatform', 'http://schema.org/MobileWebPlatform']
           },
-          // ✨ 修正 4：將無效的 MedicalAppointment 改為官方認可的 Reservation
+          // 修正 4：將無效的 MedicalAppointment 改為官方認可的 Reservation
           'result': { '@type': 'Reservation', 'name': '門診預約' }
         }
       },

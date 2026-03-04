@@ -190,8 +190,7 @@ const medicalClinicSchema = {
         'name': '國立台灣大學醫學系' 
       },
       'medicalSpecialty': [
-        'https://schema.org/Physiotherapy', 
-        'https://schema.org/Orthopedic', 
+        'https://schema.org/Physiotherapy',  
         'https://schema.org/Pediatric'
       ],
       'knowsAbout': [

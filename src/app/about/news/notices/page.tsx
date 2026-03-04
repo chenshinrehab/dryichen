@@ -17,7 +17,8 @@ export const metadata: Metadata = {
   // 修正：僅提供頁面標題，讓 Layout Template 自動加上「 | 新竹宸新復健科」
   title: '門診異動公告 - 休診與代診通知 | 新竹宸新復健科', 
   description: '查詢新竹宸新復健科最新的門診異動、國定假日休診公告、醫師代診資訊，掌握看診動態。提供新竹東區、竹北地區民眾最即時的復健科看診資訊。',
-  // SEO 強化：加入更精確的在地關鍵字與醫療服務關鍵字
+  authors: [{ name: '林羿辰醫師', url: SITE_URL }],
+  publisher: '宸新復健科診所-林羿辰醫師',
   keywords: [
     '門診時間', '休診公告', '復健科門診', '新竹復健科公告', '宸新復健科異動',
     '新竹東區復健科', '新竹復健科推薦', '關埔復健科', 'PRP注射', '增生療法', '林羿辰醫師'
@@ -64,48 +65,21 @@ export default function NoticesPage() {
     ],
   }
 
-  // SEO 強化：在 MedicalClinic Schema 中加入 Geo 座標與服務範圍
-  const jsonLdBlog = {
-    '@context': 'https://schema.org',
-    '@type': 'Blog',
-    '@id': `${currentUrl}#notices`,
-    name: '宸新復健科門診異動公告',
-    description: '新竹宸新復健科最新的休診與公告資訊',
-    url: currentUrl,
-    publisher: {
-        '@type': 'MedicalClinic',
-        name: '新竹宸新復健科診所',
-        image: `${SITE_URL}/logo.webp`,
-        medicalSpecialty: ['Physical Therapy', 'Rehabilitation', 'Pain Management'], // 加入專科類別
-        telephone: '+886-3-xxxxxxx', // 建議填入實際電話
-        address: {
-          '@type': 'PostalAddress',
-          streetAddress: '光復路一段371號B1',
-          addressLocality: '新竹市',
-          addressRegion: '東區',
-          postalCode: '300',
-          addressCountry: 'TW',
-        },
-        geo: {
-          '@type': 'GeoCoordinates',
-          latitude: 24.783331,
-          longitude: 121.017094
-        },
-        areaServed: [
-          { '@type': 'City', name: '新竹市' },
-          { '@type': 'City', name: '竹北市' },
-          { '@type': 'Place', name: '新竹科學園區' }
-        ],
-        logo: {
-            '@type': 'ImageObject',
-            url: `${SITE_URL}/logo.webp`
-        }
-    },
-    author: {
-      '@type': 'Physician',
-      name: '林羿辰醫師',
-      url: SITE_URL,
-      jobTitle: '院長',
+ // SEO 強化：在 MedicalClinic Schema 中加入 Geo 座標與服務範圍
+ const jsonLdBlog = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  '@id': `${currentUrl}#notices`,
+  name: '宸新復健科門診異動公告',
+  description: '新竹宸新復健科最新的休診與公告資訊',
+  
+  url: currentUrl,
+  publisher: {
+      '@type': 'MedicalClinic',
+      name: '新竹宸新復健科診所',
+      image: `${SITE_URL}/logo.webp`,
+      medicalSpecialty: ['Physical Therapy', 'Rehabilitation', 'Pain Management'], // 加入專科類別
+      telephone: '+886-3-5647999', // 已填入診所電話
       address: {
         '@type': 'PostalAddress',
         streetAddress: '光復路一段371號B1',
@@ -114,38 +88,77 @@ export default function NoticesPage() {
         postalCode: '300',
         addressCountry: 'TW',
       },
-      affiliation: {
-          '@type': 'MedicalClinic',
-          name: '宸新復健科診所',
-          address: {
-            '@type': 'PostalAddress',
-            streetAddress: '光復路一段371號B1',
-            addressLocality: '新竹市',
-            addressRegion: '東區',
-            postalCode: '300',
-            addressCountry: 'TW',
-          },
-          // 這裡也同步加入座標
-          geo: {
-            '@type': 'GeoCoordinates',
-            latitude: 24.783331,
-            longitude: 121.017094
-          }
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 24.783331,
+        longitude: 121.017094
+      },
+      areaServed: [
+        { '@type': 'City', name: '新竹市' },
+        { '@type': 'City', name: '竹北市' },
+        { '@type': 'Place', name: '新竹科學園區' }
+      ],
+      logo: {
+          '@type': 'ImageObject',
+          url: `${SITE_URL}/logo.webp`
       }
+  },
+  author: {
+    // ✨ 修正重點：使用雙重宣告 ['Person', 'Physician'] 讓 jobTitle 合法化
+    '@type': ['Person', 'Physician'],
+    name: '林羿辰醫師',
+    url: SITE_URL,
+    jobTitle: '院長', // 現在 jobTitle 是合法的屬性
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '光復路一段371號B1',
+      addressLocality: '新竹市',
+      addressRegion: '東區',
+      postalCode: '300',
+      addressCountry: 'TW',
     },
-    blogPost: noticesList.map((item) => ({
-        '@type': 'BlogPosting',
-        headline: item.title,
-        description: item.summary,
-        url: `${SITE_URL}/about/news/${item.id}`,
-        datePublished: item.date,
-        image: item.coverImage,
-        mainEntityOfPage: {
-            '@type': 'WebPage',
-            '@id': `${SITE_URL}/about/news/${item.id}`
+    // ✨ 醫師專屬權威標記
+    medicalSpecialty: [
+      { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation' }
+    ],
+    // ✨ 修正重點：隸屬關係使用 Person 支援的 affiliation
+    affiliation: {
+        '@type': 'MedicalClinic',
+        name: '宸新復健科診所',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '光復路一段371號B1',
+          addressLocality: '新竹市',
+          addressRegion: '東區',
+          postalCode: '300',
+          addressCountry: 'TW',
+        },
+        // 保留原始座標
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 24.783331,
+          longitude: 121.017094
         }
-    }))
-  }
+    }
+  },
+  blogPost: noticesList.map((item) => ({
+      '@type': 'BlogPosting',
+      headline: item.title,
+      description: item.summary,
+      url: `${SITE_URL}/about/news/${item.id}`,
+      // ✨ 保留原始日期與時間戳
+      datePublished: item.date,
+      image: item.coverImage,
+      author: {
+        '@type': ['Person', 'Physician'],
+        name: '林羿辰醫師'
+      },
+      mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': `${SITE_URL}/about/news/${item.id}`
+      }
+  }))
+}
 
   return (
     <>
