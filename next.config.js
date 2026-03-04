@@ -7,7 +7,9 @@ const securityHeaders = [
   { key: 'Referrer-Policy', value: 'origin-when-cross-origin' },
   { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), browsing-topics=()' },
   // ✨ 補上 Cross-Origin-Opener-Policy 解決 Best Practices 警告
-  { key: 'Cross-Origin-Opener-Policy', value: 'same-origin' }
+  { key: 'Cross-Origin-Opener-Policy', value: 'same-origin' },
+  // ✨ 補上 X-Robots-Tag 滿足 SEO 檢查
+  { key: 'X-Robots-Tag', value: 'index, follow' }
 ];
 
 const nextConfig = {

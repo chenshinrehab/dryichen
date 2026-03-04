@@ -28,14 +28,15 @@ import {
 import { HiLocationMarker } from "react-icons/hi";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw';
-
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: '新竹復健科推薦-林羿辰醫師｜專業PRP注射、震波治療｜宸新復健科診所院長',
+    default: '新竹復健科推薦-林羿辰醫師｜宸新復健科診所院長：專業PRP增生療法、震波治療、骨科復健、猛健樂、兒童骨齡，精準治療腰痛、五十肩、運動傷害、退化性關節炎，提供全方位疼痛修復與物理治療方案',
     template: '%s | 林羿辰醫師'
   },
   description: '台大醫院林羿辰醫師官方網站。現任新竹宸新復健科診所院長，擁有健身教練證照的復健科醫師。專長：高解析超音波導引PRP注射、增生療法、震波治療、兒童骨齡評估與減重門診。',
+  authors: [{ name: '林羿辰醫師', url: SITE_URL }],
+  publisher: '宸新復健科診所',
   keywords: [
     '林羿辰醫師', '林羿辰', '運動教練醫師', '新竹復健科醫師推薦',
     '新竹復健科', '宸新復健科', 'PRP注射', '震波治療', '兒童骨齡', '減重門診',
@@ -73,6 +74,7 @@ export const metadata: Metadata = {
     locale: 'zh_TW',
   },
 }
+
 // --- 🎬 VideoObject Schema (讓影片出現在搜尋結果 Rich Snippet) ---
 const videoSchema = {
   "@context": "https://schema.org",
@@ -85,165 +87,196 @@ const videoSchema = {
   "uploadDate": "2026-01-25T08:00:00+08:00",
   "duration": "PT1M30S", 
   "contentUrl": "https://www.youtube.com/watch?v=asqbvbEukOM",
-  "embedUrl": "https://www.youtube.com/embed/asqbvbEukOM"
+  "embedUrl": "https://www.youtube.com/embed/asqbvbEukOM",
+  "publisher": {
+    "@type": "Organization",
+    "name": "宸新復健科診所",
+    "logo": {
+      "@type": "ImageObject",
+      "url": `${SITE_URL}/images/logo.webp`,
+      "width": 600,
+      "height": 60
+    }}
 };
-
-// --- Schema 資料更新 ---
+// --- Schema 資料更新 (首頁專用：完整不精簡版) ---
 const medicalClinicSchema = {
   '@context': 'https://schema.org',
-  '@type': 'MedicalClinic',
-  '@id': `${SITE_URL}/#clinic`,
-  name: '宸新復健科診所',
-  alternateName: '林羿辰醫師診所',
-  description: '由台大醫師林羿辰院長親自看診，提供PRP注射、震波治療、一對一運動治療等服務。',
-  image: `${SITE_URL}/images/main/b.webp`,
-  logo: `${SITE_URL}/images/logo.webp`,
-  url: SITE_URL,
-  datePublished: '2026-01-25',
-  dateModified: '2026-02-25',
-  telephone: '+886-3-564-7999',
-  priceRange: '$$', 
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: '光復路一段371號B1',
-    addressLocality: '新竹市',
-    addressRegion: '東區',
-    postalCode: '300',
-    addressCountry: 'TW',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: '24.7833314', 
-    longitude: '121.0170937'
-  },
-  sameAs: [
-    "https://www.facebook.com/DrYiChen", 
-    "https://www.instagram.com/dryichen/",
-    "https://www.threads.net/@dryichen",
-    "https://youtube.com/@dryichen"
-  ],
-  openingHoursSpecification: [
-    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:00', closes: '21:30' },
-    { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '09:00', closes: '12:00' }
-  ],
-  medicalSpecialty: ['Physical Medicine and Rehabilitation', 'Orthopedics', 'Pediatrics'],
-  physician: {
-    '@type': 'Physician',
-    name: '林羿辰',
-    jobTitle: '院長',
-    image: `${SITE_URL}/images/main/a.webp`,
-    address: {
+  '@type': 'WebPage',
+  '@id': `${SITE_URL}/#webpage`,
+  'url': SITE_URL,
+  'name': '新竹復健科推薦-林羿辰醫師｜宸新復健科診所',
+  'description': '由台大醫師林羿辰院長親自看診，提供PRP注射、震波治療、一對一運動治療等服務。',
+  
+  // ✨ SEO 關鍵日期：確保網頁新鮮度，提升搜尋排名
+  'datePublished': '2026-01-25T08:00:00+08:00',
+  'dateModified': '2026-03-04T15:00:00+08:00',
+  
+  // 將原本的診所資料作為網頁的主要實體
+  'mainEntity': {
+    '@type': 'MedicalClinic',
+    '@id': `${SITE_URL}/#clinic`,
+    'name': '宸新復健科診所',
+    'alternateName': '林羿辰醫師診所',
+    'publisher': {
+      '@type': 'Organization',
+      'name': '宸新復健科診所',
+      'logo': {
+        '@type': 'ImageObject',
+        'url': `${SITE_URL}/images/logo.webp`
+      }
+    },
+    'description': '由台大醫師林羿辰院長親自看診，提供PRP注射、震波治療、一對一運動治療等服務。',
+    'image': `${SITE_URL}/images/main/b.webp`,
+    'logo': `${SITE_URL}/images/logo.webp`,
+    'url': SITE_URL,
+    'telephone': '+886-3-564-7999',
+    'priceRange': '$$', 
+    'address': {
       '@type': 'PostalAddress',
-      streetAddress: '光復路一段371號B1',
-      addressLocality: '新竹市',
-      addressRegion: '東區',
-      postalCode: '300',
-      addressCountry: 'TW',
+      'streetAddress': '光復路一段371號B1',
+      'addressLocality': '新竹市',
+      'addressRegion': '東區',
+      'postalCode': '300',
+      'addressCountry': 'TW',
     },
-    alumniOf: { 
-      '@type': 'EducationalOrganization', 
-      name: '國立台灣大學醫學系' 
+    'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': '24.7833314', 
+      'longitude': '121.0170937'
     },
-    medicalSpecialty: [
-      'Physical Medicine and Rehabilitation',
-      'SportsMedicine'
+    'sameAs': [
+      "https://www.facebook.com/DrYiChen", 
+      "https://www.instagram.com/dryichen/",
+      "https://www.threads.net/@dryichen",
+      "https://youtube.com/@dryichen"
     ],
- 
-  'sameAs': [
-    'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
-    'https://www.pmr.org.tw/associator/associator-all.asp?w/',
-    'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a='
-  ],
-  // 專業證照 (Credentials)：GEO (AI 搜尋) 判斷可信度的鐵證
-  'hasCredential': [
-    {
-      '@type': 'EducationalOccupationalCredential',
-      'name': '醫事人員執業資格',
-      'credentialCategory': '醫師證書',
-      'url': 'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
-      'recognizedBy': {
-        '@type': 'Organization',
-        'name': '中華民國衛生福利部'
-      }
-    },
-    {
-      '@type': 'EducationalOccupationalCredential',
-      'name': '復健科專科醫師資格',
-      'credentialCategory': '復健科專科醫師證書',
-      'url': 'https://www.pmr.org.tw/associator/associator-all.asp?w/',
-      'recognizedBy': {
-        '@type': 'Organization',
-        'name': '台灣復健醫學會'
-      }
-    },
-    {
-      '@type': 'EducationalOccupationalCredential',
-      'name': '骨質疏鬆症學會專科醫師資格',
-      'credentialCategory': '骨質疏鬆症學會專科醫師證書',
-      'url': 'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a=',
-      'recognizedBy': {
-        '@type': 'Organization',
-        'name': '中華民國骨質疏鬆症學會'
-      }
-    }
-  ],
+    'openingHoursSpecification': [
+      { '@type': 'OpeningHoursSpecification', 'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], 'opens': '09:00', 'closes': '21:30' },
+      { '@type': 'OpeningHoursSpecification', 'dayOfWeek': 'Saturday', 'opens': '09:00', 'closes': '12:00' }
+    ],
+    // 診所專業科別
+    'medicalSpecialty': [
+      'http://schema.org/Physiotherapy', 
+      'http://schema.org/Orthopedic', 
+      'http://schema.org/Pediatric'
+    ],
 
-  "hasMap": "https://www.google.com/maps/search/?api=1&query=宸新復健科診所",
-  "areaServed": [
-    {
-      "@type": "City",
-      "name": "新竹市"
-    },
-    {
-      "@type": "Place",
-      "name": "新竹科學園區"
-    },
-    {
-      "@type": "Place",
-      "name": "關埔重劃區",
-      "geo": {
-          "@type": "GeoCircle",
-          "geoMidpoint": {
-              "@type": "GeoCoordinates",
-              "latitude": "24.7833314",
-              "longitude": "121.0170937"
-          },
-          "geoRadius": "5000"
-      }
-    },
-    {
-      "@type": "City",
-      "name": "竹北市"
-    },
-    {
-      "@type": "AdministrativeArea",
-      "name": "新竹縣"
-    }
-  ] },
-
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.6',
-    reviewCount: '706',
-    bestRating: '5',
-    worstRating: '1'
-  },
-  potentialAction: {
-    '@type': 'ReserveAction',
-    target: {
-      '@type': 'EntryPoint',
-      urlTemplate: 'https://reg.forcestar.com.tw/appointment/7/reserve',
-      inLanguage: 'zh-TW',
-      actionPlatform: [
-        'http://schema.org/DesktopWebPlatform',
-        'http://schema.org/MobileWebPlatform',
-        'http://schema.org/IOSPlatform',
-        'http://schema.org/AndroidPlatform'
+    // ✨ 核心優化：林醫師資訊 (採用雙重類型宣告)
+    'employee': {
+      '@type': ['Person', 'Physician'], 
+      'name': '林羿辰',
+      'jobTitle': '院長',
+      'image': `${SITE_URL}/images/main/a.webp`,
+      'gender': 'http://schema.org/Male',
+      'url': `${SITE_URL}/about/doctors`,
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': '光復路一段371號B1',
+        'addressLocality': '新竹市',
+        'addressRegion': '東區',
+        'postalCode': '300',
+        'addressCountry': 'TW',
+      },
+      // 學歷背景 (對應 Person)
+      'alumniOf': { 
+        '@type': 'EducationalOrganization', 
+        'name': '國立台灣大學醫學系' 
+      },
+      // 專業專長 (對應 Physician)
+      'medicalSpecialty': [
+        'http://schema.org/Physiotherapy', 
+        'http://schema.org/Orthopedic'
+      ],
+      'knowsAbout': [
+        'Physical Medicine and Rehabilitation',
+        'Sports Medicine',
+        'Prolotherapy',
+        'PRP Injection'
+      ],
+      'sameAs': [
+        'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
+        'https://www.pmr.org.tw/associator/associator-all.asp?w/',
+        'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a='
+      ],
+      // 專業證照 (醫師權威性的核心)
+      'hasCredential': [
+        {
+          '@type': 'EducationalOccupationalCredential',
+          'name': '醫事人員執業資格',
+          'credentialCategory': '醫師證書',
+          'url': 'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
+          'recognizedBy': {
+            '@type': 'Organization',
+            'name': '中華民國衛生福利部'
+          }
+        },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          'name': '復健科專科醫師資格',
+          'credentialCategory': '復健科專科醫師證書',
+          'url': 'https://www.pmr.org.tw/associator/associator-all.asp?w/',
+          'recognizedBy': {
+            '@type': 'Organization',
+            'name': '台灣復健醫學會'
+          }
+        },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          'name': '骨質疏鬆症學會專科醫師資格',
+          'credentialCategory': '骨質疏鬆症學會專科醫師證書',
+          'url': 'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a=',
+          'recognizedBy': {
+            '@type': 'Organization',
+            'name': '中華民國骨質疏鬆症學會'
+          }
+        }
       ]
     },
-    result: {
-      '@type': 'MedicalAppointment',
-      name: '網路掛號'
+
+    'hasMap': 'https://www.google.com/maps?cid=YOUR_CID_HERE',
+    'areaServed': [
+      { '@type': 'City', 'name': '新竹市' },
+      { '@type': 'Place', 'name': '新竹科學園區' },
+      {
+        '@type': 'Place',
+        'name': '關埔重劃區',
+        'geo': {
+            '@type': 'GeoCircle',
+            'geoMidpoint': {
+                '@type': 'GeoCoordinates',
+                'latitude': '24.7833314',
+                'longitude': '121.0170937'
+            },
+            'geoRadius': '5000'
+        }
+      },
+      { '@type': 'City', 'name': '竹北市' },
+      { '@type': 'AdministrativeArea', 'name': '新竹縣' }
+    ],
+    'aggregateRating': {
+      '@type': 'AggregateRating',
+      'ratingValue': '4.6',
+      'reviewCount': '706',
+      'bestRating': '5',
+      'worstRating': '1'
+    },
+    'potentialAction': {
+      '@type': 'ReserveAction',
+      'target': {
+        '@type': 'EntryPoint',
+        'urlTemplate': 'https://reg.forcestar.com.tw/appointment/7/reserve',
+        'inLanguage:': 'zh-TW',
+        'actionPlatform': [
+          'http://schema.org/DesktopWebPlatform',
+          'http://schema.org/MobileWebPlatform',
+          'http://schema.org/IOSPlatform',
+          'http://schema.org/AndroidPlatform'
+        ]
+      },
+      'result': {
+        '@type': 'Reservation',
+        'name': '網路掛號'
+      }
     }
   }
 }
@@ -287,6 +320,7 @@ export default function Home() {
     <>
       <JsonLd data={medicalClinicSchema} />
       <JsonLd data={faqSchema} />
+      <JsonLd data={videoSchema} /> 
       <ScrollAnimation />
 
       <style dangerouslySetInnerHTML={{__html: `

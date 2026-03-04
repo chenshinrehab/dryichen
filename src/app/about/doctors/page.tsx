@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   // 修正：僅提供標題，讓 layout.tsx 的模板加上「 | 新竹宸新復健科」避免重複
   title: '林羿辰醫師介紹 - 台大雙專科院長 | 新竹復健科/骨科/運動傷害推薦 | 新竹宸新復健科',
   description: '新竹復健科推薦林羿辰醫師。台大醫學系畢業，具備復健專科與骨質疏鬆專科雙資格。專精超音波導引PRP注射、增生療法、兒童骨齡評估與各類運動傷害治療，是您值得信賴的骨科復健專家。',
+  authors: [{ name: '林羿辰醫師', url: SITE_URL }],
+  publisher: '宸新復健科診所',
   keywords: ['林羿辰', '新竹復健科醫師', '台大醫師', '新竹骨科推薦', '運動醫學', 'PRP注射', '增生療法', '超音波導引', '兒童骨齡'],
   alternates: {
     canonical: CANONICAL_URL,
@@ -59,28 +61,33 @@ export default function DoctorsPage() {
     'url': currentUrl,
     'name': '林羿辰 醫師介紹 | 宸新復健科診所院長',
     'description': '新竹宸新復健科院長林羿辰醫師，台大雙專科背景，專精復健醫學、骨質疏鬆症、超音波導引 PRP 注射與各種運動傷害精準治療。',
-    datePublished: '2026-01-25',
-    dateModified: '2026-02-25',
+    'datePublished': '2026-01-25',
+    'dateModified': '2026-03-04',
+    
     // 1. 作者區塊 (Author)：醫療 SEO 的權威核心
-    // 強烈建議使用「醫師個人」作為作者，而非診所
+    // ✨ 修正：使用陣列同時標註為 Person 與 Physician，兼容職稱與專業背景
     'author': {
-      '@type': 'Physician',
+      '@type': ['Person', 'Physician'],
+      '@id': `${SITE_URL}/about/doctors/#dr-yichen`,
       'name': '林羿辰 醫師',
       'jobTitle': '院長',
       'url': `${SITE_URL}/about/doctors`,
       'image': `${SITE_URL}/images/main/a.webp`,
-      'gender': 'Male',
-      // 學歷背景：強化 EEAT
+      'gender': 'http://schema.org/Male',
+      
+      // 學歷背景：強化 EEAT (Person 支援屬性)
       'alumniOf': {
         '@type': 'EducationalOrganization',
         'name': '國立台灣大學醫學系'
       },
+      
       // 醫師實體唯一識別連結 (SameAs)：修正 URL 編碼確保 100% 爬取成功
       'sameAs': [
         'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
         'https://www.pmr.org.tw/associator/associator-all.asp?w/',
         'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a='
       ],
+      
       // 專業證照 (Credentials)：GEO (AI 搜尋) 判斷可信度的鐵證
       'hasCredential': [
         {
@@ -137,8 +144,10 @@ export default function DoctorsPage() {
     },
   
     // 3. 頁面主要實體 (MainEntity)：將網頁焦點精確錨定在林醫師身上
+    // ✨ 修正：使用陣列雙重宣告，保留醫療專長 (Physician) 與職稱/所屬機構 (Person)
     'mainEntity': {
-      '@type': 'Physician',
+      '@type': ['Person', 'Physician'],
+      '@id': `${SITE_URL}/about/doctors/#dr-yichen`,
       'name': '林羿辰',
       'jobTitle': '院長',
       'image': `${SITE_URL}/images/doctor/c.webp`,
@@ -147,7 +156,7 @@ export default function DoctorsPage() {
       'priceRange': '$$',
       'url': `${SITE_URL}/about/doctors`,
       
-      // 專業技能分類：GEO 搜尋匹配 (AI 推薦關鍵字)
+      // 專業技能分類：GEO 搜尋匹配 (AI 推薦關鍵字) - Physician 支援屬性
       'medicalSpecialty': [
         { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation' },
         { '@type': 'MedicalSpecialty', 'name': 'Sports Medicine' },
@@ -164,7 +173,7 @@ export default function DoctorsPage() {
         'addressCountry': 'TW'
       },
       
-      // 醫師隸屬診所
+      // 醫師隸屬診所 (Person 支援屬性)
       'worksFor': {
         '@type': 'MedicalClinic',
         'name': '宸新復健科診所',
