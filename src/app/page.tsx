@@ -31,12 +31,12 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.t
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: '新竹復健科推薦-林羿辰醫師｜宸新復健科診所院長：專業PRP增生療法、震波治療、骨科復健、猛健樂、兒童骨齡，精準治療腰痛、五十肩、運動傷害、退化性關節炎，提供全方位疼痛修復與物理治療方案',
+    default: '新竹復健科推薦-林羿辰醫師｜宸新復健科診所：專業PRP增生療法、震波、骨科復健、猛健樂、兒童骨齡',
     template: '%s | 林羿辰醫師'
   },
-  description: '台大醫院林羿辰醫師官方網站。現任新竹宸新復健科診所院長，擁有健身教練證照的復健科醫師。專長：高解析超音波導引PRP注射、增生療法、震波治療、兒童骨齡評估與減重門診。',
+  description: '台大醫院林羿辰醫師官方網站。現任新竹宸新復健科診所院長，擁有健身教練證照的復健科醫師。專長：高解析超音波導引PRP注射、增生療法、震波治療、兒童骨齡評估與減重門診，提供全方位疼痛修復與物理治療方案。',
   authors: [{ name: '林羿辰醫師', url: SITE_URL }],
-  publisher: '宸新復健科診所',
+  publisher: '宸新復健科診所-林羿辰醫師',
   keywords: [
     '林羿辰醫師', '林羿辰', '運動教練醫師', '新竹復健科醫師推薦',
     '新竹復健科', '宸新復健科', 'PRP注射', '震波治療', '兒童骨齡', '減重門診',
@@ -107,24 +107,27 @@ const medicalClinicSchema = {
   'name': '新竹復健科推薦-林羿辰醫師｜宸新復健科診所',
   'description': '由台大醫師林羿辰院長親自看診，提供PRP注射、震波治療、一對一運動治療等服務。',
   
-  // ✨ SEO 關鍵日期：確保網頁新鮮度，提升搜尋排名
+  // ✨ SEO 關鍵日期
   'datePublished': '2026-01-25T08:00:00+08:00',
-  'dateModified': '2026-03-04T15:00:00+08:00',
+  'dateModified': '2026-03-04T16:00:00+08:00',
   
-  // 將原本的診所資料作為網頁的主要實體
+  // 修正：將 publisher 移至 WebPage 下方才合法
+  'publisher': {
+    '@type': 'Organization',
+    'name': '宸新復健科診所',
+    'logo': {
+      '@type': 'ImageObject',
+      'url': `${SITE_URL}/images/logo.webp`
+    }
+  },
+
+  // 主要實體指向診所
   'mainEntity': {
     '@type': 'MedicalClinic',
     '@id': `${SITE_URL}/#clinic`,
     'name': '宸新復健科診所',
     'alternateName': '林羿辰醫師診所',
-    'publisher': {
-      '@type': 'Organization',
-      'name': '宸新復健科診所',
-      'logo': {
-        '@type': 'ImageObject',
-        'url': `${SITE_URL}/images/logo.webp`
-      }
-    },
+    // 修正：MedicalClinic 內部已移除無效的 publisher
     'description': '由台大醫師林羿辰院長親自看診，提供PRP注射、震波治療、一對一運動治療等服務。',
     'image': `${SITE_URL}/images/main/b.webp`,
     'logo': `${SITE_URL}/images/logo.webp`,
@@ -154,14 +157,14 @@ const medicalClinicSchema = {
       { '@type': 'OpeningHoursSpecification', 'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], 'opens': '09:00', 'closes': '21:30' },
       { '@type': 'OpeningHoursSpecification', 'dayOfWeek': 'Saturday', 'opens': '09:00', 'closes': '12:00' }
     ],
-    // 診所專業科別
+    // 診所專業科別 (修正拼寫與 HTTPS)
     'medicalSpecialty': [
-      'http://schema.org/Physiotherapy', 
-      'http://schema.org/Orthopedic', 
-      'http://schema.org/Pediatric'
+      'https://schema.org/Physiotherapy', 
+      'https://schema.org/Orthopaedic', 
+      'https://schema.org/Pediatric'
     ],
 
-    // ✨ 核心優化：林醫師資訊 (採用雙重類型宣告)
+    // ✨ 核心優化：院長資訊
     'employee': {
       '@type': ['Person', 'Physician'], 
       'name': '林羿辰',
@@ -177,15 +180,14 @@ const medicalClinicSchema = {
         'postalCode': '300',
         'addressCountry': 'TW',
       },
-      // 學歷背景 (對應 Person)
       'alumniOf': { 
         '@type': 'EducationalOrganization', 
         'name': '國立台灣大學醫學系' 
       },
-      // 專業專長 (對應 Physician)
       'medicalSpecialty': [
-        'http://schema.org/Physiotherapy', 
-        'http://schema.org/Orthopedic'
+        'https://schema.org/Physiotherapy', 
+        'https://schema.org/Orthopaedic', 
+        'https://schema.org/Pediatric'
       ],
       'knowsAbout': [
         'Physical Medicine and Rehabilitation',
@@ -198,7 +200,6 @@ const medicalClinicSchema = {
         'https://www.pmr.org.tw/associator/associator-all.asp?w/',
         'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a='
       ],
-      // 專業證照 (醫師權威性的核心)
       'hasCredential': [
         {
           '@type': 'EducationalOccupationalCredential',
@@ -233,7 +234,7 @@ const medicalClinicSchema = {
       ]
     },
 
-    'hasMap': 'https://www.google.com/maps?cid=YOUR_CID_HERE',
+    'hasMap': 'https://www.google.com/maps?cid=YOUR_CID_HERE', // 建議換成診所地標的 CID 連結
     'areaServed': [
       { '@type': 'City', 'name': '新竹市' },
       { '@type': 'Place', 'name': '新竹科學園區' },
@@ -265,7 +266,7 @@ const medicalClinicSchema = {
       'target': {
         '@type': 'EntryPoint',
         'urlTemplate': 'https://reg.forcestar.com.tw/appointment/7/reserve',
-        'inLanguage:': 'zh-TW',
+        'inLanguage': 'zh-TW',
         'actionPlatform': [
           'http://schema.org/DesktopWebPlatform',
           'http://schema.org/MobileWebPlatform',
