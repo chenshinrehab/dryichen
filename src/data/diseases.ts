@@ -2755,7 +2755,7 @@ export const diseaseCategories: DiseaseCategory[] = [
         ],
         seoDescription: '鼠蹊部疼痛當心是髖關節壞死！宸新復健科帶您了解股骨頭缺血性壞死分期與退化性關節炎的差異，運用體外震波與PRP增生注射，搶救缺血骨頭免開刀。',
         images: [
-          { src: '/images/diseases/spine-hip/avn/a.webp', alt: '髖關節壞死' }
+          { src: '/images/diseases/spine-hip/AVN/a.webp', alt: '髖關節壞死' }
         ]
 }
       
