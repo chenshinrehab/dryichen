@@ -3834,6 +3834,173 @@ export const diseaseCategories: DiseaseCategory[] = [
           }
         ]
       },
+
+      {
+        id: 'quadrangular-space-syndrome',
+        slug: 'quadrangular-space-syndrome',
+        lastModified: '2026-03-09',
+        tags: [],
+        title: '四角空間症候群',
+        description: '手舉高就沒力？肩膀後側總是隱隱作痛，甚至伴隨手臂外側發麻？這可能不是單純的肌肉拉傷或五十肩，而是隱藏在肩膀後方的神經陷阱——「四角空間症候群」！深入解析腋神經壓迫原因，以及如何透過神經解套與徒手治療解除危機。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有這樣的經驗：熱愛健身、打排球或投棒球的您，最近只要把手舉高過頭，肩膀後側就會傳來一陣深層的痠痛？不僅如此，手臂外側（肩膀三角肌的位置）還時不時覺得麻麻的，甚至感覺肩膀有點使不上力？</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">當心！這不一定是常見的旋轉肌破裂或五十肩，而是一個常被忽略的隱形殺手：<strong>「四角空間症候群」 (Quadrangular Space Syndrome, QSS)</strong>。這是因為肩膀後方的一個狹小空間變得擁擠，掐住了掌管肩膀的重要神經與血管。在宸新復健科，我們透過高解析超音波精準定位這個「塞車路段」，利用<strong>神經解套注射</strong>、<strong>聚焦式體外震波</strong>與<strong>徒手治療</strong>，幫您的神經鬆綁，找回肩膀的爆發力與活動度。</p>
+      
+                <p><img src="/images/diseases/shoulder/quadri/a.webp" alt="四角空間症候群" style="width: 50%; height: auto;"></p>
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 認識陷阱：什麼是「四角空間」？誰被困住了？
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">在我們肩膀後方，由四個構造圍成了一個像「四邊形」的小通道。當這些肌肉因為過度使用、緊繃或發炎腫脹時，通道就會變窄，壓迫到穿梭其中的神經與血管。</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">空間的四面牆（解剖邊界）：</strong> 
+                          <br><strong>上方：</strong> 小圓肌 (Teres minor)
+                          <br><strong>下方：</strong> 大圓肌 (Teres major)
+                          <br><strong>內側：</strong> 肱三頭肌長頭 (Triceps brachii long head)
+                          <br><strong>外側：</strong> 肱骨外科頸 (Surgical neck of humerus)
+                      </div>
+                  </li>
+                            <p><img src="/images/diseases/shoulder/quadri/b.webp" alt="四角空間肌肉結構" style="width: 50%; height: auto;"></p>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color:  #dc2626 !important;">受困的苦主：腋神經與旋肱後動脈</strong> 
+                          <br><strong>腋神經 (Axillary Nerve)：</strong> 負責支配三角肌和小圓肌。一旦被壓迫，肩膀就會<strong>無力、舉不高</strong>，且肩膀外側皮膚會感到<strong>麻木、刺痛</strong>。
+                          <br><strong>旋肱後動脈：</strong> 負責供應血液。被壓迫時，手部活動久了容易感到缺血性的痠痛與疲勞。
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：是四角空間還是五十肩？</h3>
+          <p style="color: #e2e8f0 !important;">四角空間症候群常發生在需要反覆將手舉過頭的人身上（如投手、游泳選手、重訓愛好者），它與其他肩膀痛有以下區別：</p>
+          <ul style="color: #e2e8f0 !important; margin-left: 1rem;">
+              <li style="margin-bottom: 0.5rem;"><strong>特定位置壓痛：</strong> 痛點通常非常明確，就在肩膀正後方（靠近腋下後側的位置），按壓時會誘發手臂的痠麻感。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>麻木與無力：</strong> 不同於單純的肌肉痛，它會伴隨肩膀外側（一小塊像徽章大小的區域）感覺異常，且肩膀向外平舉或向外旋轉時會明顯覺得沒力氣。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>高舉過頭最痛：</strong> 當手臂上舉並向外轉（例如投球的準備動作）時，四角空間會被擠壓到最小，此時症狀最明顯。五十肩則是各個方向的活動角度都被「卡死」受限。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新全方位治療：鬆綁神經，重啟肩膀動力</h3>
+          <p style="color: #e2e8f0 !important;">治療的關鍵在於<strong>「打開狹窄的空間」</strong>並<strong>「修復受損發炎的神經」</strong>。</p>
+      
+    
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 解除沾黏：<a href="/treatments/nerve-hydrodissection" class="text-cyan-400 hover:underline">超音波導引神經解套注射</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  這是治療神經壓迫的<strong>首選利器</strong>！醫師會透過高解析超音波，精準找到被夾擊的「腋神經」。利用低濃度葡萄糖水或 PRP 作為「水刀」，將周圍沾黏緊繃的肌肉與筋膜撐開，幫神經洗澡、提供營養，能迅速緩解麻木與無力感。
+              </p>
+          </div>
+      
+          
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 軟化肌肉：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">複合式體外震波</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  針對構成四角空間的「牆壁」——緊繃的小圓肌、大圓肌與三頭肌，利用震波的物理能量擊碎深層的肌肉氣結（激痛點），促進局部血液循環與組織軟化，從根本擴張空間。
+              </p>
+          </div>
+      
+      <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 空間重建：<a href="/treatments/manual" class="text-cyan-400 hover:underline">專業徒手治療</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  治療師會利用徒手技巧，放鬆肩關節後側關節囊，並調整肩胛骨的動態穩定性（Scapular Dyskinesis）。若是因為圓肩、駝背導致肩胛骨位置異常，也會一併進行姿勢矯正，避免空間再次被擠壓。
+              </p>
+          </div>
+
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+          <p><img src="/images/diseases/shoulder/quadri/c.webp" alt="四角空間伸展放鬆四部曲" style="width: 100%; height: auto;"></p>
+          <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：四角空間伸展放鬆四部曲</h3>
+          <p style="color: #e2e8f0 !important;">透過伸展構成四角空間的肌肉，能有效維持通道暢通。請以不產生刺痛、麻木為原則進行：</p>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">1. 側躺內轉伸展  - 放鬆小圓肌與後關節囊</h4>
+              <p style="color: #e2e8f0 !important;">
+                  針對四角空間的「天花板」。
+                  <br>1. 患側肩膀朝下側躺，將患側手臂向前平舉至 90 度，手肘彎曲 90 度（指尖朝上）。
+                  <br>2. 用另一手輕壓患側手腕，慢慢將手背往下壓向床面（做肩膀內轉動作）。
+                  <br>3. 感覺肩膀後側有緊繃拉扯感。維持 15-20 秒，重複 3-5 次。
+              </p>
+          </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 跨胸伸展  - 放鬆大圓肌與後三角肌</h4>
+              <p style="color: #e2e8f0 !important;">
+                  針對四角空間的「地板」。
+                  <br>1. 站立或坐姿，將患側手臂伸直，水平跨過胸前（像在胸前畫一條線）。
+                  <br>2. 另一手勾住患側手肘上方，輕輕將患側手臂往身體靠近、往對側肩膀方向拉。
+                  <br>3. <strong>關鍵：</strong> 患側的肩膀要記得往下沉，不要聳肩。
+                  <br>4. 維持 15-20 秒，感覺肩膀正後方拉伸。重複 3-5 次。
+              </p>
+          </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">3. 肱三頭肌伸展  - 放鬆空間內側壁</h4>
+              <p style="color: #e2e8f0 !important;">
+                  針對四角空間的「內側牆壁」。
+                  <br>1. 將患側手臂高舉過頭，手肘彎曲，手掌盡量去觸摸對側的後肩胛骨（或後腦勺）。
+                  <br>2. 用另一手抓住患側的手肘，輕輕往後、往內側拉。
+                  <br>3. 保持身體直立，不要過度挺腰。
+                  <br>4. 維持 15-20 秒，感覺手臂後側延伸至腋下有拉扯感。重複 3-5 次。
+              </p>
+          </div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">4. 門框擴胸伸展  - 改善圓肩減輕壓迫</h4>
+    <p style="color: #e2e8f0 !important;">
+        前側胸肌太緊會導致肩膀前傾（圓肩），連帶使後側肌肉過度緊繃拉長，擠壓四角空間。
+        <br>1. 站在門框處，雙手手肘彎曲 90 度，前臂貼在門框兩側（呈「投降」姿勢）。
+        <br>2. 雙腳呈弓箭步，身體重心慢慢往前移動，穿過門框。
+        <br>3. 感覺胸部前方與肩膀前側有打開、伸展的感覺。
+        <br>4. 維持 15-20 秒，避免折腰。重複 3-5 次。
+    </p>
+</div>
+
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 別讓神經卡關，找回肩膀自由！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">四角空間症候群因為症狀容易與其他肩頸問題混淆，常常被延誤治療。如果您發現肩膀後側疼痛，且伴隨手臂無力發麻，請不要強忍或盲目推拿。宸新復健科擁有專業的高階超音波設備與神經解套技術，能為您揪出真正的病因，對症下藥。找回順暢無礙的肩膀，讓您無論在球場或職場都能全力以赴！</p>
+               <a href="/booking" style="color: inherit; text-decoration: underline;">肩膀後側痛又無力？立即預約超音波精準評估！</a>
+
+          </div>
+        `,
+        symptoms: [
+          '肩膀正後方深處有明顯壓痛與痠痛',
+          '肩膀外側感覺異常、麻木或刺痛',
+          '手臂向外平舉或向外旋轉時感覺無力',
+          '手舉高過頭或向後伸展時，症狀會加劇',
+        ],
+        treatments: [
+            '消炎止痛藥與復健治療',
+          '<a href="/treatments/nerve-hydrodissection" class="text-cyan-400 hover:underline">超音波導引神經解套注射 (解除神經壓迫)</a>🔍️',
+          '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波 (軟化緊繃肌肉壁)</a>🔍️',
+          '<a href="/treatments/manual" class="text-cyan-400 hover:underline">肌筋膜放鬆與肩胛動態調整 (徒手治療)</a>🔍️',
+        ],
+        seoKeywords: [
+          '四角空間症候群',
+          '肩膀後側痛',
+          '腋神經壓迫',
+          '神經解套注射',
+          '肩膀無力',
+          '手舉高會痛',
+          '體外震波',
+          '投擲肩'
+        ],
+        seoDescription: '手舉高就沒力？肩膀後側痛伴隨發麻？當心「四角空間症候群」！宸新復健科提供超音波神經解套注射與聚焦震波治療，搭配專屬四招伸展，徹底解決腋神經壓迫。',
+        images: [
+          {src: '/images/diseases/shoulder/quadri/a.webp', alt: '四角空間症候群'
+          }
+        ]
+      },
        {
         id: 'shoulder-impingement-syndrome',
         slug: 'shoulder-impingement-syndrome',
@@ -8638,7 +8805,203 @@ export const diseaseCategories: DiseaseCategory[] = [
           }
         ]
       },
+      {
+        id: 'tennis-leg',
+        slug: 'tennis-leg',
+        lastModified: '2026-01-31',
+        title: '網球腿 (小腿肌肉撕裂)',
+        description: '打球時感覺小腿被踢了一下？聽到「啪」一聲後小腿劇痛腫脹？這不是筋膜炎，而是「網球腿」！這是一種小腿肌肉撕裂傷。宸新復健科運用高解析超音波區分診斷，提供血腫抽吸、PRP修復與震波治療，加速肌肉癒合。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">您是否有過這樣的經驗：在打籃球、羽球，或是快跑時，小腿肚突然感覺<strong>被重重踢了一腳</strong>（甚至回頭看是誰踢你，結果發現背後根本沒人）？接著聽到或是感覺到<strong>「啪」</strong>的一聲，小腿瞬間劇痛，無法快走或走樓梯</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">這就是典型的<strong>「網球腿」</strong>，醫學名稱為<strong>腓腸肌內側頭撕裂傷</strong>。這常被誤認為只是單純抽筋或拉傷，但其實是肌肉纖維斷裂！如果沒有妥善治療，容易留下疤痕組織導致長期慢性疼痛。在宸新復健科，我們使用<strong>高解析超音波鑑別診斷</strong>（排除阿基里斯腱斷裂），並透過<strong>超音波導引抽吸血腫</strong>與<strong>再生注射</strong>，大幅縮短恢復期。</p>
+      
+                 <p><img src="/images/diseases/ankle/tennis/b.webp" alt="網球腿疼痛處" style="width: 50%; height: auto;"></p>
+      
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 到底是斷在哪裡？解剖小教室
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">小腿後側主要由兩層肌肉構成，網球腿主要發生在淺層肌肉：</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">腓腸肌 - 主要受害者：</strong> 
+                          這是小腿肚最凸起的那塊肌肉（蘿蔔腿的主角）。它跨越了膝關節與踝關節，負責爆發力的動作（跳躍、衝刺）。網球腿 90% 發生在<strong>腓腸肌內側頭</strong>與肌腱的交界處。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">比目魚肌：</strong> 
+                          位於腓腸肌深層，主要負責耐力與維持站姿。雖然也會拉傷，但通常症狀較輕微，不會有「啪」一聲的戲劇性斷裂感。
+                      </div>
+                  </li>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">蹠肌：</strong> 
+                          一條細長像麵條的肌肉，以前認為網球腿是這條肌肉斷裂，但現代醫學證實主要是腓腸肌的問題。
+                      </div>
+                  </li>
+              </ul>
+          </div>
     
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h3 style="color: #f8fafc !important;">🔍 為什麼會斷？網球腿的常見成因</h3>
+<p style="color: #e2e8f0 !important;">網球腿不只發生在打網球，任何需要<strong>「急停、變向、瞬間衝刺」</strong>的運動都可能發生。這通常源於肌肉承受不住瞬間的巨大張力：</p>
+<ul style="color: #e2e8f0 !important;">
+    <li><strong>致命動作機制：</strong> 當<strong>「膝蓋伸直」</strong>準備發力，同時腳踝突然被迫<strong>「往上勾 (背屈)」</strong>時（例如：籃球搶籃板落地、羽球接殺球跨步、過馬路突然起跑），腓腸肌被過度拉伸又要用力收縮，就像拉到極限的橡皮筋突然斷裂。尤其是<strong>沒暖身或天氣冷</strong>的狀況，
+    就像是從冷凍庫拿出來的橡皮筋，更容易斷裂。</li>
+    <li><strong>週末運動員 ：</strong> 好發於 <strong>30-50 歲</strong>的中壯年族群。隨著年齡增長，肌肉與肌腱的彈性變差、含水量下降，如果平時少動、假日突然劇烈運動，受傷機率大增。</li>
+    <li><strong>肌肉緊繃與疲勞：</strong> 運動後半段肌肉疲勞，神經肌肉控制變差；或是平時久坐導致小腿後側筋膜長期<strong>縮短僵硬</strong>，都會增加撕裂風險。</li>
+</ul>
+      
+     
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新獨家治療策略：縮短跛腳的時間</h3>
+          <p style="color: #e2e8f0 !important;">網球腿如果只靠休息（RICE），恢復期可能長達 6-8 週。我們採取更積極的介入：</p>
+      
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 超音波檢查及<a href="/treatments/ultrasound-guided-aspiration" class="text-cyan-400 hover:underline">導引血腫抽吸</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <strong>這是關鍵！</strong> 肌肉撕裂常伴隨<strong>大量內出血</strong>，形成血塊。血塊積在肌肉間隙會造成極大壓力與疼痛，且容易鈣化變成硬塊。
+                  <br>我們在超音波導引下，將積血抽出。患者常表示抽完的瞬間，脹痛感就少了一半。
+              </p>
+          </div>
+           <p><img src="/images/diseases/ankle/tennis/c.webp" alt="網球腿超音波圖片" style="width: 60%; height: auto;"></p>
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 再生注射 (PRP) 與 震波治療</h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  <ul style="margin-top: 0.5rem; color: #334155 !important;">
+                      <li><strong><a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>：</strong> 將生長因子注射到肌肉撕裂處，像「強力膠」一樣加速肌肉纖維黏合，減少疤痕組織生成。</li>
+                      <li><strong><a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波</a>：</strong> 在恢復後期使用，能軟化已經纖維化的疤痕組織，避免未來肌肉僵硬彈性變差。</li>
+                  </ul>
+              </p>
+          </div>
+    
+           <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. <a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手治療與貼紮固定</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  經由治療師把周圍肌肉放鬆，還有搭配動態貼布，讓腓腸肌處於放鬆狀態，避免走路時拉扯傷口。
+              </p>
+          </div>
+        
+     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    
+          <h3 style="color: #f8fafc !important;">🍽️ 飲食禁忌：受傷了該吃什麼？不該吃什麼？</h3>
+          <p style="color: #e2e8f0 !important;">肌肉撕裂後會經歷「發炎期」與「修復期」。正確的飲食能加速組織癒合，錯誤的飲食則會讓發炎失控腫脹。</p>
+    
+          <div style="background-color: #fef2f2; padding: 1.5rem; border-left: 4px solid #ef4444; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #991b1b !important;">🚫 紅燈區：急性期 (前兩週) 盡量避免</h4>
+              <ul style="margin-top: 0.5rem; color: #7f1d1d !important;">
+                  <li><strong>酒精：</strong> 這是大忌！酒精會擴張血管加重出血與腫脹，並抑制肌肉蛋白合成，延緩修復。</li>
+                  <li><strong>辛辣與油炸食物：</strong> 麻辣鍋、鹹酥雞等高發炎食物，會讓患處紅腫熱痛更嚴重。</li>
+                  <li><strong>高糖飲食：</strong> 含糖飲料與甜點會促進身體發炎反應。</li>
+                  <li><strong>補品/活血藥酒：</strong> 在急性出血期（受傷前 3 天），千萬不要喝活血化瘀的藥酒，否則內出血會止不住，讓小腿腫得像大象腿。</li>
+              </ul>
+          </div>
+    
+           <div style="background-color: #f0fdf4; padding: 1.5rem; border-left: 4px solid #22c55e; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #166534 !important;">✅ 綠燈區：幫助肌肉修復</h4>
+              <ul style="margin-top: 0.5rem; color: #14532d !important;">
+                  <li><strong>優質蛋白質：</strong> 雞肉、魚肉、豆類。這是修補肌肉纖維的原料。</li>
+                  <li><strong>維生素 C：</strong> 芭樂、奇異果、柑橘。幫助膠原蛋白合成，強化肌腱癒合。</li>
+                  <li><strong>Omega-3 脂肪酸：</strong> 深海魚、亞麻仁油。天然的抗發炎劑。</li>
+                  <li><strong>鋅 (Zinc)：</strong> 牡蠣、牛肉、南瓜籽。促進組織修復。</li>
+              </ul>
+          </div>
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    
+          <h3 style="color: #f8fafc !important;">🏠 居家復健：從不痛開始</h3>
+           <p><img src="/images/diseases/ankle/tennis/d.webp" alt="網球腿居家放鬆運動" style="width: 100%; height: auto;"></p>
+          <p style="color: #e2e8f0 !important;"><strong>注意：</strong> 急性期（前3-5天）請多休息、抬高患肢，不要急著拉筋！等到走路不痛了，再開始以下運動：</p>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">1. 坐姿毛巾牽引 (初期伸展)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  最溫和的伸展，由自己控制力道。
+                  <br>1. 坐在床上，腿伸直。
+                  <br>2. 用長毛巾套住腳掌前緣。
+                  <br>3. 雙手輕輕將腳板往身體方向拉，感覺小腿後側<strong>微微</strong>緊繃即可，不可有刺痛感。
+                  <br>4. 維持 15-30 秒，重複 3 次。
+              </p>
+          </div>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 站姿提踵訓練 (中期強化)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  重新建立小腿肌力，讓纖維排列整齊。
+                  <br>1. 扶著桌子站立，雙腳與肩同寬。
+                  <br>2. 慢慢墊起腳尖（提踵），感覺小腿用力。
+                  <br>3. <strong>關鍵：</strong> 放下的速度要非常慢（離心收縮），這是修復肌腱最有用的部分。
+                  <br>4. 如果單腳做太痛，先雙腳一起做。重複 10-15 下。
+              </p>
+          </div>
+    
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">3. 弓箭步伸展 (後期恢復)</h4>
+              <p style="color: #e2e8f0 !important;">
+                  恢復完整的關節活動度。
+                  <br>1. 面對牆壁，雙手扶牆。
+                  <br>2. 患側腳在後，膝蓋伸直，腳跟踩死地板。
+                  <br>3. 前腳彎曲，身體重心前移，拉伸後腳小腿肚。
+                  <br>4. 維持 30 秒，重複 3 次。
+              </p>
+          </div>
+
+          <div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">4. 小腿筋膜放鬆 (滾筒/按摩球)</h4>
+    <p style="color: #e2e8f0 !important;">
+        針對受傷周圍緊繃的肌肉筋膜進行放鬆，減少對癒合處的張力。
+        <br>1. 坐在瑜珈墊上，雙腿伸直，將滾筒放在患側小腿肚下方。
+        <br>2. 雙手在身體後方撐地，將臀部微微抬起。
+        <br>3. 利用身體重量前後緩慢滾動，尋找痠痛點停留 30 秒。
+        <br>4. <strong>⚠️ 重要禁區：</strong>請針對「緊繃痠痛」的地方按壓即可，<strong style="color: #f87171 !important;">絕對避開</strong>撕裂傷最痛的那一點（特別是急性期有血腫時），以免加重出血。
+    </p>
+</div>
+    
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 感覺被踢一腳，不是抽筋騎士是撕裂傷！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">網球腿是肌肉「撕裂」，如果在此時去推拿按摩，會讓裂縫變大、出血更嚴重，導致嚴重的血腫與鈣化。正確的做法是儘快就醫，透過超音波確認撕裂程度。宸新復健科提供完整的影像診斷與修復計畫，幫您把斷掉的肌肉「黏」回來，重返球場！</p>
+              <p style="font-weight: bold; color: #059669 !important;">小腿劇痛腫脹？立即預約超音波檢查！</p>
+          </div>
+        `,
+        symptoms: [
+            '受傷瞬間感覺小腿被踢了一腳或被打到',
+            '聽到或感覺到小腿發出「啪」的一聲',
+            '小腿肚內側劇烈疼痛，無法腳跟著地走路',
+            '小腿腫脹，按壓小腿肚內側有明顯痛點'
+        ],
+        treatments: [
+            '<a href="/treatments/ultrasound-guided-aspiration" class="text-cyan-400 hover:underline">超音波檢查及導引抽吸</a>🔍️',
+            '<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法 (加速癒合)</a>🔍️',
+            '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波 (軟化疤痕)</a>🔍️',
+            '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療與肌內效貼紮</a>🔍️'
+        ],
+        seoKeywords: [
+            '網球腿',
+            'Tennis Leg',
+            '小腿肌肉撕裂',
+            '腓腸肌拉傷',
+            '小腿被踢到的感覺',
+            '小腿瘀青',
+            'PRP注射',
+            '超音波檢查'
+        ],
+        seoDescription: '打球小腿劇痛像被踢到？這是網球腿(腓腸肌撕裂)！宸新復健科提供高解析超音波診斷，排除阿基里斯腱斷裂，運用血腫抽吸與PRP再生注射，加速小腿肌肉修復。',
+        images: [
+            { src: '/images/diseases/ankle/tennis/a.webp', alt: '網球腿示意圖'  }
+        ]
+    },
+
       {
         id: 'shin-splints',
         slug: 'shin-splints',
@@ -8859,6 +9222,212 @@ export const diseaseCategories: DiseaseCategory[] = [
             { src: '/images/diseases/ankle/shin/a.webp', alt: '夾脛痛示意圖'  }
         ]
     },
+
+    {
+        id: 'metatarsalgia',
+        slug: 'metatarsalgia',
+        lastModified: '2026-03-09',
+        tags: [],
+        title: '蹠骨痛 (前腳掌痛)',
+        description: '走路像踩到石頭？前腳掌痛到不敢著地？這不一定是單純的長繭，可能是「蹠骨痛」！深入解析前足底痛的四大元凶，以及運用震波與增生注射修復的全方位攻略。',
+        contentHtml: `
+          <p style="color: #e2e8f0 !important;">喜歡穿高跟鞋，或是熱愛跑步的您，是否曾經感到前腳掌底（腳趾根部）有一陣陣的灼熱痛感？有時甚至覺得鞋底好像「踩著一顆小石頭」，每走一步都刺痛，必須脫下鞋子揉一揉腳底才能稍微喘口氣？</p>
+          <br>
+          <p style="color: #e2e8f0 !important;">前足痛的這些症狀，在醫學上統稱為<strong>「蹠骨痛」</strong>。它不是單一的疾病，而是<strong>包含好幾種疾病</strong>，可能是蹠趾關節炎或滑囊炎、莫頓氏神經瘤、脂肪墊萎縮或蹠骨應力性骨折。因為足部結構異常、長期穿錯鞋或運動過度，導致前腳掌承受了不該承受的壓力。在宸新復健科，我們透過高解析超音波找出發炎與受損的確切位置，利用<strong>專屬鞋墊評估與徒手治療</strong>、<strong>聚焦式體外震波</strong>與<strong>增生注射</strong>，幫您的足部「重新找回避震器」，徹底解決舉步維艱的痛苦。</p>
+      
+          
+          <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                  📢 誰是兇手？前腳掌痛的四大「嫌疑犯」
+              </h2>
+              
+              <p style="font-size: 1.1rem; color: #78350f !important;">前足的結構精細，找出是哪個部位在作怪，是精準治療的第一步。</p>
+              
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #dc2626 !important;">蹠趾關節炎或滑囊炎 - 壓力過載：</strong> 
+                          <br><strong>位置：</strong> 通常在第二或第三腳趾根部的關節。
+                          <br><strong>特徵：</strong> 當大拇趾因為外翻等問題「罷工」時，壓力會轉移到第二、三趾。長期的異常受力會導致關節與周圍的滑囊發炎腫脹。
+                      </div>
+                  </li>
+                    <p><img src="/images/diseases/ankle/metatarsal/b.webp" alt="蹠趾關節炎或滑囊炎" style="width: 60%; height: auto;"></p>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color:  #dc2626 !important;">脂肪墊萎縮 - 避震器磨損：</strong> 
+                          <br><strong>位置：</strong> 整個前腳掌底部的肉墊。
+                          <br><strong>特徵：</strong> 隨著年紀增長或過度使用，腳底天然的「肉墊」會變薄。走在硬地板上會覺得骨頭直接撞擊地面，赤腳走路時特別痛。
+                      </div>
+                  </li>
+                  <p><img src="/images/diseases/ankle/metatarsal/c.webp" alt="脂肪墊萎縮" style="width: 40%; height: auto;"></p>
+                  <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">莫頓氏神經瘤 (Morton's Neuroma) - 隱形的石頭：</strong> 
+                          <br><strong>位置：</strong> 常見於第三和第四腳趾之間的縫隙。 
+
+
+                          <br><strong>特徵：</strong> 愛穿窄楦頭、高跟鞋的族群最常見。腳趾神經被兩側骨頭長期夾擠，導致發炎腫大。除了痛，還會伴隨<strong>「觸電感、麻木」</strong>，或是覺得鞋底有異物。
+                      </div>
+                  </li>
+                   <p><img src="/images/diseases/ankle/metatarsal/d.webp" alt="莫頓氏神經瘤" style="width: 50%; height: auto;"></p>
+                  <li style="margin-bottom: 0; display: flex; align-items: start;">
+                      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
+                      <div style="color: #92400e !important;">
+                          <strong style="color: #0891b2 !important;">蹠骨應力性骨折 (Stress Fracture) - 金屬疲勞：</strong> 
+                          <br><strong>位置：</strong> 蹠骨骨幹本身。 
+
+
+                          <br><strong>特徵：</strong> 常發生在突然增加訓練量的跑者、行軍的軍人身上。骨頭累積了太多微小創傷來不及修復而產生裂痕，按壓骨頭特定點會有劇烈疼痛。
+                      </div>
+                  </li>
+                   <p><img src="/images/diseases/ankle/metatarsal/e.webp" alt="蹠骨應力性骨折" style="width: 50%; height: auto;"></p>
+
+              </ul>
+          </div>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：是神經痛還是發炎痛？</h3>
+          <p style="color: #e2e8f0 !important;">前腳掌痛的原因多樣，可透過以下特徵初步區分：</p>
+          <ul style="color: #e2e8f0 !important; margin-left: 1rem;">
+              <li style="margin-bottom: 0.5rem;"><strong>神經瘤：</strong> 脫下鞋子、按摩腳趾有明顯舒緩；常有像電擊、火燒的麻痛感傳到腳趾尖。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>脂肪墊萎縮：</strong> 穿軟底鞋或氣墊鞋會大幅改善，赤腳走磁磚地最痛苦。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>滑囊炎/關節炎：</strong> 腳趾根部按壓有明確痛點，甚至局部有微腫發熱感。</li>
+              <li style="margin-bottom: 0.5rem;"><strong>應力性骨折：</strong> 只要腳一承重就痛，休息不走路時痛感明顯降低。</li>
+          </ul>
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <h3 style="color: #f8fafc !important;">🛡️ 宸新全方位治療：分散壓力，修復組織</h3>
+          <p style="color: #e2e8f0 !important;">腳底每天都要承受全身的重量，治療的目標是<strong>「重建足部力學平衡」</strong>並<strong>「加速組織修復」</strong>。</p>
+      
+    
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">1. 力學矯正:矯正鞋墊與<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手治療專業足踝評估</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  治療師會評估您的足弓狀態（扁平足、高弓足）與步態。透過<strong>客製化鞋墊</strong>提供橫弓支撐，能立刻將前腳掌的壓力分散。同時徒手放鬆緊繃的小腿肚與阿基里斯腱，減少走路時前腳掌的代償受力。
+              </p>
+          </div>
+      
+          
+          <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">2. 深層修復：<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引增生注射</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  如果疼痛拖延已久，代表軟組織已慢性發炎甚至退化。
+                  醫師利用高解析超音波導引，精準將高濃度葡萄糖或 PRP 注入受損部位：
+                  <ul style="color: #334155 !important;margin-top: 0.5rem;">
+                      <li><strong><a href="/treatments/nerve-hydrodissection" class="text-cyan-400 hover:underline">神經解套</a>：</strong> 針對莫頓氏神經瘤，利用低濃度葡萄糖水將夾擠神經的沾黏組織撐開，立刻緩解刺麻感。</li>
+                      <li><strong>強化韌帶與滑囊消炎：</strong> 修復受損的蹠趾關節韌帶，增加關節穩定度。</li>
+                  </ul>
+              </p>
+          </div>
+      
+      <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 組織喚醒：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波</a></h4>
+              <p style="margin-bottom: 0; color: #334155 !important;">
+                  足底的血液循環相對較差，修復速度慢。利用聚焦式震波的高能量聲波，能強迫局部微血管新生，改善足底筋膜與肌肉的血流供應。對於應力性骨折的癒合或慢性肌腱炎，震波能大幅縮短復原時間。
+              </p>
+          </div>
+
+      
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+               <p><img src="/images/diseases/ankle/metatarsal/f.webp" alt="蹠骨痛居家足部保養四部曲" style="width: 100%; height: auto;"></p>
+          <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：居家足部保養四部曲</h3>
+          <p style="color: #e2e8f0 !important;">除了治療與選對鞋子，強化足部核心肌肉能有效預防復發：</p>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">1. 小腿與足底筋膜伸展</h4>
+              <p style="color: #e2e8f0 !important;">
+                  小腿太緊會導致走路時前腳掌提早落地，增加壓力。
+                  <br>1. 面對牆壁站立，雙手扶牆，弓箭步（痛腳在後，腳跟踩平）。
+                  <br>2. 身體重心往前，感覺後腳小腿肚緊繃拉伸。
+                  <br>3. 維持 15-30 秒，重複 3 次。
+              </p>
+          </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">2. 抓毛巾運動 - 強化足弓</h4>
+              <p style="color: #e2e8f0 !important;">
+                  喚醒足底內在肌群，幫助支撐橫弓。
+                  <br>1. 坐在椅子上，將一條毛巾平舖在地板。
+                  <br>2. 腳掌平放，用腳趾的力量將毛巾往自己的方向抓皺、收攏。
+                  <br>3. 抓到底後重新鋪平，重複 3-5 次。
+              </p>
+          </div>
+      
+          <div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">3. 腳趾鋼琴運動 - 恢復靈活度</h4>
+              <p style="color: #e2e8f0 !important;">
+                  打開被鞋子擠壓變形的腳趾。
+                  <br>1. 腳掌平放地面。
+                  <br>2. 嘗試將大拇趾單獨翹起（其他四趾貼地），接著換大拇趾貼地，其他四趾翹起。
+                  <br>3. 像彈鋼琴一樣，嘗試讓五根腳趾盡量向外張開撐平。
+                  <br>4. 每天有空就練習，增加神經肌肉控制力。
+              </p>
+          </div>
+
+<div style="margin-bottom: 2rem;">
+              <h4 style="color: #22d3ee !important;">4. 選擇合適的鞋子</h4>
+              <p style="color: #e2e8f0 !important;">
+                  鞋子是腳的外部支撐。避免穿著<strong>窄楦頭、高跟或底太薄且硬</strong>的鞋子，因為這會迫使重心全部前移到蹠骨頭。
+              </p>
+          </div>
+
+          <div style="background-color: #f8fafc; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; border: 1px dashed #cbd5e1;">
+              <h4 style="color: #0f172a !important; margin-top: 0; font-weight: bold; display: flex; align-items: center;">
+                  👟 專業選鞋建議：如何挑選「保護前掌」的好鞋？
+              </h4>
+              <ul style="list-style: none; padding: 0; color: #475569 !important;">
+                  <li style="margin-bottom: 0.8rem;">✅ <strong>寬楦頭設計：</strong> 讓腳趾有足夠空間自然伸展，避免橫向擠壓導致莫頓氏神經瘤。</li>
+                  <li style="margin-bottom: 0.8rem;">✅ <strong>良好的前掌緩震：</strong> 選擇中底較厚且具備彈性的鞋款，代替萎縮的脂肪墊吸收衝擊。</li>
+                  <li style="margin-bottom: 0.8rem;">✅ <strong>適度的足弓支撐：</strong> 穩固的足弓支撐能防止足部過度內旋，平衡全足受力。</li>
+                  <li style="margin-bottom: 0.8rem;">✅ <strong>滾動式鞋底：</strong> 弧形鞋底設計能幫助行走時重心轉移更順暢，減少腳趾推離地面的負擔。</li>
+                  <li style="margin-bottom: 0;">❌ <strong>避免尖頭鞋與高度超過 5 公分的高跟鞋。</strong></li>
+              </ul>
+          </div>
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+      
+          <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+              <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 踏出輕盈步伐，別讓腳痛限制您的生活！</h3>
+              <p style="color: #334155 !important; margin-bottom: 1.5rem;">前腳掌痛雖然不會要命，但每走一步都痛的感覺卻極度影響生活品質。無論是愛美的代價還是運動的勳章，只要找對原因，都不需要一直忍耐。宸新復健科透過精準超音波診斷，搭配震波與增生注射修復組織，並輔以力學鞋墊與徒手治療治本，幫您徹底擺脫鞋底的那顆「隱形石頭」。</p>
+               <a href="/booking" style="color: inherit; text-decoration: underline;">走路會痛？腳底發麻？立即預約超音波評估！</a>
+
+          </div>
+        `,
+        symptoms: [
+          '前腳掌底部有灼熱痛感或刺痛',
+          '感覺鞋底好像有異物或踩到小石頭',
+          '腳趾間可能有觸電般的麻木感',
+          '赤腳走硬地板時疼痛加劇',
+        ],
+        treatments: [
+            '物理治療、止痛藥與鞋墊輔具評估',
+            '<a href="/treatments/manual" class="text-cyan-400 hover:underline">下肢力學調整與徒手治療</a>🔍️',
+            '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引增生注射 (修復韌帶與神經解套)</a>🔍️',
+          '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波 (促進血液循環與修復)</a>🔍️',
+        ],
+        seoKeywords: [
+          '蹠骨痛',
+          '前腳掌痛',
+          '腳底痛',
+          '莫頓氏神經瘤',
+          '脂肪墊萎縮',
+          '蹠骨骨折',
+          '體外震波',
+          '增生注射',
+          '客製化鞋墊'
+        ],
+        seoDescription: '前腳掌痛、走路像踩到石頭？這可能是蹠骨痛或莫頓氏神經瘤！宸新復健科提供超音波精準診斷，運用增生注射、神經解套與體外震波，搭配鞋墊評估，徹底解決足底疼痛。',
+        images: [
+          {src: '/images/diseases/ankle/metatarsal/a.webp', alt: '蹠骨痛與前腳掌痛'
+          }
+        ]
+      },
+
       {
         id: 'gout-arthritis',
         slug: 'gout-arthritis',
