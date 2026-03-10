@@ -5819,7 +5819,7 @@ export const diseaseCategories: DiseaseCategory[] = [
                   </li>
               </ul>
           </div>
-      <p><img src="/images/diseases/hand/sl/b.webp" alt="舟月韌帶結構"></p>
+      <p><img src="/images/diseases/hand/sl/b.webp" alt="舟月韌帶結構" style="width: 50%; height: auto;"></p>
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
       
           <h3 style="color: #f8fafc !important;">⚠️ 症狀特徵：如何分辨是韌帶斷了？</h3>
