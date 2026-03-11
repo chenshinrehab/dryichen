@@ -47,17 +47,25 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const firstImage = Array.isArray(imagesArray) && imagesArray.length > 0 ? imagesArray[0] : null;
 
   // 先設定預設的圖片做為保底
-  let ogImageUrl: string = `${SITE_URL}/images/default-og.jpg`;
+  let ogImageUrl: string = `${SITE_URL}/images/og-default.jpg`;
 
-  // 💡 確保 firstImage 是字串才去執行 startsWith，徹底避免報錯
-  if (typeof firstImage === 'string' && firstImage.length > 0) {
-    const isFullUrl = firstImage.startsWith('http');
-    const hasLeadingSlash = firstImage.startsWith('/');
+  // 💡 修正提取圖片路徑的邏輯：判斷是字串還是包含 src 的物件
+  let imagePath = '';
+  if (typeof firstImage === 'string') {
+    imagePath = firstImage;
+  } else if (firstImage && typeof firstImage === 'object' && firstImage.src) {
+    imagePath = firstImage.src;
+  }
+
+  // 如果有成功抓到圖片路徑，則組合成絕對網址
+  if (imagePath && typeof imagePath === 'string' && imagePath.length > 0) {
+    const isFullUrl = imagePath.startsWith('http');
+    const hasLeadingSlash = imagePath.startsWith('/');
     
     // 組合出正確的圖片絕對路徑
     ogImageUrl = isFullUrl
-      ? firstImage
-      : `${SITE_URL}${hasLeadingSlash ? '' : '/'}${firstImage}`;
+      ? imagePath
+      : `${SITE_URL}${hasLeadingSlash ? '' : '/'}${imagePath}`;
   }
 
   // 💡 同樣使用 (disease as any) 來防止 seoDescription 等欄位報錯
@@ -88,7 +96,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           url: ogImageUrl,
           width: 1200,
           height: 630,
-          alt: disease.title,
+          alt: firstImage?.alt || disease.title, // 如果物件有 alt 就優先使用
         },
       ],
     },
@@ -103,7 +111,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-// 3. 頁面主體 (修復你程式碼底部被截斷的部分)
+// 3. 頁面主體
 export default function DiseaseDetailPage({ params }: PageProps) {
   const disease = getDiseaseBySlug(params.category, params.slug)
   
