@@ -16,7 +16,6 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.t
 interface PageProps {
   params: Promise<{
     slug: string
-
   }>
 }
 
@@ -52,12 +51,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: program.seoDescription || program.description,
       url: canonicalUrl,
       type: 'article',
-      images: program.images && program.images.length > 0 
+      // ✅ 修改此處：改讀取 program.image 作為 og:image
+      images: program.image 
         ? [
             {
-              url: program.images[0].src.startsWith('http') 
-                ? program.images[0].src 
-                : `https://www.dryichen.com.tw${program.images[0].src}`,
+              url: program.image.startsWith('http') 
+                ? program.image 
+                : `${SITE_URL}${program.image}`,
               width: 1200,
               height: 630,
               alt: program.title,
@@ -65,9 +65,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           ] 
         : [
             {
-              url: 'https://www.dryichen.com.tw/images/og-default.jpg',
+              url: `${SITE_URL}/images/og-default.jpg`,
               width: 1200,
               height: 630,
+              alt: program.title,
             }
           ],
     }
