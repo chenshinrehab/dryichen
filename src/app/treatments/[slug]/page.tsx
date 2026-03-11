@@ -44,7 +44,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: canonicalUrl,
       type: 'article',
       siteName: '新竹宸新復健科診所',
-      images: treatment.images && treatment.images.length > 0 ? [treatment.images[0].src] : [],
+      // 修改處：改為抓取 treatment.image 作為 og:image
+      images: treatment.image ? [treatment.image] : [],
     },
     // 加入在地化 Geo 標記
     other: {
