@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: '找不到分類' }
   }
 
-  const ogImage = category.image || '/images/default-og.webp'
+  const ogImage = category.image || '/images/default-og.jpg'
   const canonicalUrl = `${SITE_URL}/diseases/${params.category}`
 
   return {

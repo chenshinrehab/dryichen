@@ -23,38 +23,93 @@ export async function generateStaticParams() {
   return generateAllDiseaseParams()
 }
 
-// 2. SEO Metadata (修正重點：移除重複診所名稱)
+// 2. SEO Metadata
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const disease = getDiseaseBySlug(params.category, params.slug)
-  if (!disease) return { title: '疾病介紹不存在' }
+  
+  // 1. 處理找不到疾病的情況
+  if (!disease) {
+    return { 
+      title: '疾病介紹不存在',
+      description: '找不到相關疾病衛教資訊'
+    }
+  }
 
   // ★★★ 定義標準網址 (Canonical URL) ★★★
   const canonicalUrl = `${SITE_URL}/diseases/${params.category}/${params.slug}`
 
+  // 2. 處理動態圖片來源
+  // 💡 加入 (disease as any) 繞過 TypeScript 介面未定義 images 的報錯
+  const diseaseData = disease as any;
+  const imagesArray = diseaseData.images;
+  
+  // 嚴謹檢查：確保 images 是一個陣列且有內容
+  const firstImage = Array.isArray(imagesArray) && imagesArray.length > 0 ? imagesArray[0] : null;
+
+  // 先設定預設的圖片做為保底
+  let ogImageUrl: string = `${SITE_URL}/images/default-og.jpg`;
+
+  // 💡 確保 firstImage 是字串才去執行 startsWith，徹底避免報錯
+  if (typeof firstImage === 'string' && firstImage.length > 0) {
+    const isFullUrl = firstImage.startsWith('http');
+    const hasLeadingSlash = firstImage.startsWith('/');
+    
+    // 組合出正確的圖片絕對路徑
+    ogImageUrl = isFullUrl
+      ? firstImage
+      : `${SITE_URL}${hasLeadingSlash ? '' : '/'}${firstImage}`;
+  }
+
+  // 💡 同樣使用 (disease as any) 來防止 seoDescription 等欄位報錯
+  const seoDescription = diseaseData.seoDescription || diseaseData.description || '';
+  const seoKeywords = diseaseData.seoKeywords || '';
+
   return {
-    // 修正：這裡移除手寫的「| 新竹宸新復健科」，讓 layout 的 template 自動組合，避免重複
-    title: `${disease.title} - 疾病衛教 | 新竹宸新復健科`, 
-    description: disease.seoDescription || disease.description,
+    // 標題會與 layout.tsx 中的 template 組合
+    title: `${disease.title} - 疾病衛教`,
+    description: seoDescription,
     authors: [{ name: '林羿辰醫師', url: SITE_URL }],
     publisher: '宸新復健科診所-林羿辰醫師',
-    keywords: disease.seoKeywords,
-    
+    keywords: seoKeywords,
+
     alternates: {
-        canonical: canonicalUrl,
+      canonical: canonicalUrl,
     },
 
     openGraph: {
       title: disease.title,
-      description: disease.seoDescription || disease.description,
-      url: canonicalUrl, 
+      description: seoDescription,
+      url: canonicalUrl,
       type: 'article',
-    }
-  }
+      siteName: '新竹宸新復健科',
+      // 設定分享時顯示的圖片
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: disease.title,
+        },
+      ],
+    },
+
+    // Twitter Card 設定，這會影響 LINE 與 FB 的大圖預覽呈現
+    twitter: {
+      card: 'summary_large_image',
+      title: disease.title,
+      description: seoDescription,
+      images: [ogImageUrl],
+    },
+  };
 }
 
+// 3. 頁面主體 (修復你程式碼底部被截斷的部分)
 export default function DiseaseDetailPage({ params }: PageProps) {
   const disease = getDiseaseBySlug(params.category, params.slug)
-  if (!disease) notFound()
+  
+  if (!disease) {
+    notFound()
+  }
 
   // 方案一：從元件層級修正標籤結構 (H3->H2, H4->H3)
   // 這樣全站 50 篇疾病衛教的內容大綱會立刻變得符合 SEO 邏輯
