@@ -132,7 +132,28 @@ export default function RootLayout({
   return (
     <html lang="zh-TW" className="scroll-smooth">
       <head>
-        {/* ✨ 新增：Google Analytics 程式碼 */}
+        {/* 結構化數據 */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+
+        {/* 外部資源預連接 */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.youtube-nocookie.com" />
+        
+        {/* 全域樣式補強 */}
+        <style>{`
+          img { height: auto; }
+          h1 { font-size: 2.25rem; }
+          section h1, article h1, nav h1, aside h1 { font-size: 2.25rem; }
+        `}</style>
+      </head>
+      
+      <body className={`${inter.className} bg-slate-900 text-slate-300 antialiased min-h-screen flex flex-col`}>
+        {/* ✨ 將 Google Analytics 移至 body 內，確保 Next.js 順利執行 Script 組件 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-GCXZ5W7NS2"
           strategy="afterInteractive"
@@ -147,26 +168,6 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* 結構化數據 */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-
-        {/* 外部資源預連接 */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://www.youtube-nocookie.com" />
-        
-        {/* 全域樣式補強 */}
-        <style>{`
-          img { height: auto; }
-          h1 { font-size: 2.25rem; }
-          section h1, article h1, nav h1, aside h1 { font-size: 2.25rem; }
-        `}</style>
-      </head>
-      
-      <body className={`${inter.className} bg-slate-900 text-slate-300 antialiased min-h-screen flex flex-col`}>
         <Navigation />
         <main className="flex-grow pt-14 md:pt-20">
             {children}
