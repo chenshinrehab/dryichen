@@ -1,6 +1,7 @@
 // src/app/layout.tsx
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
+import Script from 'next/script' // ✨ 新增：引入 Next.js 內建的 Script 組件
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
@@ -131,6 +132,21 @@ export default function RootLayout({
   return (
     <html lang="zh-TW" className="scroll-smooth">
       <head>
+        {/* ✨ 新增：Google Analytics 程式碼 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-GCXZ5W7NS2"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-GCXZ5W7NS2');
+          `}
+        </Script>
+
         {/* 結構化數據 */}
         <script
           type="application/ld+json"
