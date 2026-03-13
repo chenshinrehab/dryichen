@@ -2598,7 +2598,31 @@ export const diseaseCategories: DiseaseCategory[] = [
     <li><strong>水中運動：</strong> 游泳或水中走路是最好的運動，水的浮力能支撐體重，讓關節在無負擔的情況下活動。</li>
 </ul>
 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<p><img src="/images/diseases/spine-hip/AVN/d.webp" alt="髖關節退化居家護髖肌力訓練"></p>
+
+<h3 style="color: #f8fafc !important;">💪 醫師教你做：居家護髖肌力訓練</h3>
+<p style="color: #e2e8f0 !important;">透過溫和的臀部肌肉訓練，能幫助穩定骨盆並減輕髖關節的負擔。請在「不產生疼痛」的範圍內，緩慢且規律地進行以下運動：</p>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">1. 仰臥橋式 </h4>
+    <p style="color: #e2e8f0 !important;">平躺於床面或瑜珈墊上，雙膝微彎，雙腳踩地與肩同寬。收緊臀部肌肉，慢慢將骨盆向上抬起，直到肩膀、臀部與膝蓋呈一直線。停留 3-5 秒後慢慢放下，重複 10 次。這能有效喚醒臀大肌，且對髖關節的壓力較小。</p>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">2. 溫和蚌殼式 </h4>
+    <p style="color: #e2e8f0 !important;">側躺，下方手臂可枕在頭下，雙膝彎曲約 45 度，雙腳跟併攏。在身體與骨盆不往後翻轉的前提下，像蚌殼一樣慢慢將上方膝蓋打開，感受到臀部側面（臀中肌）出力即可。稍微停留後合起，每側重複 10 次。此動作能強化骨盆側面的穩定度。</p>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">3. 側躺直腿側抬 </h4>
+    <p style="color: #e2e8f0 !important;">側躺，下方腿微彎保持平衡，上方腿伸直。將上方腿輕輕向正上方抬起約 30-45 度，腳尖可微微朝下，感受臀部外上方肌肉收縮。動作請保持緩慢，不要利用慣性甩動，每側重複 10 次。</p>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">4. 站姿後伸腿 </h4>
+    <p style="color: #e2e8f0 !important;">站立並雙手扶著堅固的椅背或牆壁保持平衡。身體挺直，將一側的腿向正後方伸直抬起。請注意腰部不要跟著過度凹陷（避免骨盆前傾），專注於收縮臀部肌肉。停留 2 秒後放下，每側重複 10 次。</p>
+</div>
+
 
 <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
     <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 別讓疼痛限制了您的世界！</h3>
@@ -2723,7 +2747,32 @@ export const diseaseCategories: DiseaseCategory[] = [
               </p>
           </div>
 
-          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+          
+<p><img src="/images/diseases/spine-hip/AVN/d.webp" alt="髖關節壞死居家護髖肌力訓練"></p>
+
+<h3 style="color: #f8fafc !important;">💪 醫師教你做：居家護髖肌力訓練</h3>
+<p style="color: #e2e8f0 !important;">透過溫和的臀部肌肉訓練，能幫助穩定骨盆並減輕髖關節的負擔。請在「不產生疼痛」的範圍內，緩慢且規律地進行以下運動：</p>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">1. 仰臥橋式 </h4>
+    <p style="color: #e2e8f0 !important;">平躺於床面或瑜珈墊上，雙膝微彎，雙腳踩地與肩同寬。收緊臀部肌肉，慢慢將骨盆向上抬起，直到肩膀、臀部與膝蓋呈一直線。停留 3-5 秒後慢慢放下，重複 10 次。這能有效喚醒臀大肌，且對髖關節的壓力較小。</p>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">2. 溫和蚌殼式 </h4>
+    <p style="color: #e2e8f0 !important;">側躺，下方手臂可枕在頭下，雙膝彎曲約 45 度，雙腳跟併攏。在身體與骨盆不往後翻轉的前提下，像蚌殼一樣慢慢將上方膝蓋打開，感受到臀部側面（臀中肌）出力即可。稍微停留後合起，每側重複 10 次。此動作能強化骨盆側面的穩定度。</p>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">3. 側躺直腿側抬 </h4>
+    <p style="color: #e2e8f0 !important;">側躺，下方腿微彎保持平衡，上方腿伸直。將上方腿輕輕向正上方抬起約 30-45 度，腳尖可微微朝下，感受臀部外上方肌肉收縮。動作請保持緩慢，不要利用慣性甩動，每側重複 10 次。</p>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: #22d3ee !important;">4. 站姿後伸腿 </h4>
+    <p style="color: #e2e8f0 !important;">站立並雙手扶著堅固的椅背或牆壁保持平衡。身體挺直，將一側的腿向正後方伸直抬起。請注意腰部不要跟著過度凹陷（避免骨盆前傾），專注於收縮臀部肌肉。停留 2 秒後放下，每側重複 10 次。</p>
+</div>
+
       
           <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
               <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 把握黃金救援期，保住原生髖關節！</h3>
