@@ -5,6 +5,9 @@
 // =======================================================
 
 // 輕量級 Metadata (給 Sitemap 和 治療項目列表頁用)
+// src/data/treatments.ts
+
+// 輕量級 Metadata (給 Sitemap 和 治療項目列表頁用)
 export interface TreatmentMetadata {
   slug: string;
   title: string;
@@ -13,7 +16,11 @@ export interface TreatmentMetadata {
   image: string;        
   features: string[];   
   applicableConditions: string[];
-  lastModified?: string;
+  
+  // --- 日期管理 (建議新增 datePublished) ---
+  datePublished?: string;  // 例如: '2026-01-25'
+  lastModified?: string;   // 例如: '2026-04-06'
+  
   tags?: string[];
   // SEO 欄位
   seoTitle?: string;
@@ -27,7 +34,7 @@ export interface Treatment extends TreatmentMetadata {
   whyChooseUs: string[];
   treatmentFocus: string[];
   images: { src: string; alt: string }[];
-  applicableConditions: string[];
+  // 注意：這裡重複定義了 applicableConditions，可以移除或保持一致
   youtubeVideoId?: string;
   qaList?: { question: string; answer: string }[];
 }
@@ -54,10 +61,12 @@ const fullTreatmentsData: Treatment[] = [
   contentHtml: `
     <style>.responsive-img-enlarge { width: 110% !important; max-width: none !important; display: block !important; margin: 1rem auto !important; position: relative !important; left: 50% !important; transform: translateX(-50%) !important; height: auto; } @media (min-width: 768px) { .responsive-img-enlarge { width: 100% !important; left: 0 !important; transform: none !important; } }</style>
     <img src="/images/news/article/prp/1.webp" alt="PRP全攻略懶人包1" class="responsive-img-enlarge"><img src="/images/news/article/prp/2.webp" alt="PRP全攻略懶人包2" class="responsive-img-enlarge"><img src="/images/news/article/prp/3.webp" alt="PRP全攻略懶人包3" class="responsive-img-enlarge"><img src="/images/news/article/prp/4.webp" alt="PRP全攻略懶人包4" class="responsive-img-enlarge"><img src="/images/news/article/prp/5.webp" alt="PRP全攻略懶人包5" class="responsive-img-enlarge">
-    <div style="background-color: #f0fdf4; border-left: 4px solid #16a34a; border-radius: 0.75rem; padding: 1.5rem 1.75rem; margin: 1.5rem 0 2rem 0;">
-      <h2 style="color: #15803d; margin-top: 0; font-size: 1.15rem; font-weight: bold;">📋 本文重點摘要</h2>
-      <p style="color: #166534; line-height: 1.8; margin: 0; font-size: 1rem;">PRP（高濃度血小板血漿）增生療法是目前有最多高品質隨機對照試驗支持的骨科非手術再生治療之一。根據 2025 年整合 40 項研究的系統性回顧<sup><a href="https://doi.org/10.3390/jcm14113983" style="color: #15803d;">[1]</a></sup>，PRP 注射在輕至中度退化性膝關節炎（Kellgren–Lawrence I–III 級）上，疼痛改善及功能恢復均優於玻尿酸與類固醇。2024 年 Mayo Clinic 的統合分析納入 1,993 名患者，PRP 相較玻尿酸，治療成功率的勝算比高達 2.19（95% CI, 1.33–3.62）<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38420745/" style="color: #15803d;">[2]</a></sup>。對於旋轉肌腱病變，2024 年雙盲 RCT 顯示 PRP 在 12 個月追蹤期的疼痛與功能恢復均顯著優於類固醇<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39098382/" style="color: #15803d;">[3]</a></sup>。高濃度葡萄糖水（增生療法）則於 837 名患者的系統性回顧中被認定安全且具 B 級實證支持<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34046305/" style="color: #15803d;">[4]</a></sup>。療效的核心關鍵在於：<strong>精準診斷 + 超音波導引確保注射到位 + 標準化離心濃度（建議 4–5 倍基線）</strong>。任一環節缺失均可能導致治療失敗。</p>
-    </div>
+<div style="background-color: #f8fafc; border-left: 5px solid #0284c7; padding: 1.75rem 2rem; margin-bottom: 2rem; border-radius: 0.75rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+  <h3 style="margin-top: 0; margin-bottom: 1rem; color: #0369a1; font-size: 1.4rem; font-weight: bold; line-height: 1.3; display: flex; align-items: center;">📋 本文重點摘要</h3>
+  <p style="margin-bottom: 0; line-height: 1.8; color: #334155; font-size: 1.15rem;">
+    PRP（高濃度血小板血漿）增生療法是目前有最多高品質隨機對照試驗支持的骨科非手術再生治療之一。根據 2025 年整合 40 項研究的系統性回顧<sup><a href="https://doi.org/10.3390/jcm14113983" style="color: #0369a1; text-decoration: none;">[1]</a></sup>，PRP 注射在輕至中度退化性膝關節炎（Kellgren–Lawrence I–III 級）上，疼痛改善及功能恢復均優於玻尿酸與類固醇。2024 年 Mayo Clinic 的統合分析納入 1,993 名患者，PRP 相較玻尿酸，治療成功率的勝算比高達 2.19（95% CI, 1.33–3.62）<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38420745/" style="color: #0369a1; text-decoration: none;">[2]</a></sup>。對於旋轉肌腱病變，2024 年雙盲 RCT 顯示 PRP 在 12 個月追蹤期的疼痛與功能恢復均顯著優於類固醇<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39098382/" style="color: #0369a1; text-decoration: none;">[3]</a></sup>。高濃度葡萄糖水（增生療法）則於 837 名患者的系統性回顧中被認定安全且具 B 級實證支持<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34046305/" style="color: #0369a1; text-decoration: none;">[4]</a></sup>。療效的核心關鍵在於：<strong>精準診斷 + 超音波導引確保注射到位 + 標準化離心濃度（建議 4–5 倍基線）</strong>。任一環節缺失均可能導致治療失敗。
+  </p>
+</div>
     <p>疼痛總是如影隨形，讓你無法享受生活？傳統的消炎藥或類固醇雖然能暫時止痛，卻無法修復受損的組織。<strong>位於新竹的宸新復健科</strong>，專為<strong>新竹科學園區</strong>與在地民眾提供<strong>高濃度血小板血漿 (PRP) 增生療法</strong>及<strong>高濃度葡萄糖水</strong>，這是一種啟動人體自我修復機制的先進治療。</p><br>
     <p>透過抽取自身血液，離心萃取出富含生長因子的血小板，再經由<strong>高解析超音波精準導引</strong>注射至受傷部位。就像是為受損的肌腱、韌帶或關節打入一劑強效的「修復工程隊」，從根本解決疼痛問題，讓您重習活動力。</p>
     <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
@@ -326,7 +335,7 @@ const fullTreatmentsData: Treatment[] = [
     <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
       <h3 style="margin-top: 0; color: #0369a1;">📝 文章摘要與核心觀點</h3>
       <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-        體外震波治療（ESWT）是目前針對慢性疼痛、肌腱炎與鈣化問題，具備高度實證醫學支持的非侵入性療法。本文結合多項近十年的權威醫學期刊數據，證實<strong>聚焦式與發散式雙機複合震波</strong>能有效改善足底筋膜炎、網球肘與鈣化性肌腱炎。研究顯示，足底筋膜炎患者的治療改善率高達安慰劑的 2.58 倍 <sup><a href="https://doi.org/10.1097/MD.0000000000006621">[^1^]</a></sup>，而針對肩部慢性鈣化，亦有高比例的完全或部分吸收率 <sup><a href="https://doi.org/10.1136/ard.62.3.248" target="_blank" target="_blank">[^3^]</a></sup>。我們建議搭配高階超音波精準定位，並破除「越痛越有效」的迷思，以 5~7 分痛感的適當能量進行 3~6 次完整療程，即可安全、高效地啟動組織修復，從根本解決頑固疼痛。
+        體外震波治療（ESWT）是目前針對慢性疼痛、肌腱炎與鈣化問題，具備高度實證醫學支持的非侵入性療法。本文結合多項近十年的權威醫學期刊數據，證實<strong>聚焦式與發散式雙機複合震波</strong>能有效改善足底筋膜炎、網球肘與鈣化性肌腱炎。研究顯示，足底筋膜炎患者的治療改善率高達安慰劑的 2.58 倍 <sup><a href="https://doi.org/10.1097/MD.0000000000006621">[1]</a></sup>，而針對肩部慢性鈣化，亦有高比例的完全或部分吸收率 <sup><a href="https://doi.org/10.1136/ard.62.3.248" target="_blank" target="_blank">[3]</a></sup>。我們建議搭配高階超音波精準定位，並破除「越痛越有效」的迷思，以 5~7 分痛感的適當能量進行 3~6 次完整療程，即可安全、高效地啟動組織修復，從根本解決頑固疼痛。
       </p>
     </div>
 
@@ -416,9 +425,9 @@ const fullTreatmentsData: Treatment[] = [
 
 <h3>常見適應症與文獻治療根據：</h3>
 <ul>
-  <li><strong>足部問題（足底筋膜炎、阿基里斯腱炎、跟骨骨刺）：</strong> 根據 2017 年《Medicine》期刊發表的薈萃分析（涵蓋 9 項隨機對照試驗，共 935 名患者），震波治療對於慢性足底筋膜炎的疼痛改善率是安慰劑組的 2.58 倍 <sup><a href="https://doi.org/10.1097/MD.0000000000006621" target="_blank">[^1^]</a></sup>。此外，2013年文獻也指出中高能量震波能有效減少患者早晨下床第一步的劇烈疼痛 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/23552334/" target="_blank">[^4^]</a></sup>。</li>
-  <li><strong>肘部問題（網球肘、高爾夫球肘）：</strong> 針對外上髁炎（網球肘），2020 年的一項系統性回顧與薈萃分析（涵蓋 13 篇文獻、1035 位患者）證實，震波治療能顯著降低視覺疼痛評分 (VAS) 並恢復病患的握力，且安全性極高 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/32309425/" target="_blank">[^2^]</a></sup>。</li>
-  <li><strong>肩部問題（鈣化性肌腱炎、五十肩、旋轉肌病變）：</strong> 臨床研究表明，震波能有效擊碎深層鈣化。2003 年的單盲試驗顯示，高達 71% 的患者在治療後出現鈣化點的完全吸收 (31%) 或部分吸收 (40%) <sup><a href="https://doi.org/10.1136/ard.62.3.248" target="_blank">[^3^]</a></sup>；2024 年發表的最新文獻進一步分析了影響肩部鈣化沉積物吸收的因素，證實震波做為免開刀選項的高可靠性 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/39369947/" target="_blank">[^5^]</a></sup>。</li>
+  <li><strong>足部問題（足底筋膜炎、阿基里斯腱炎、跟骨骨刺）：</strong> 根據 2017 年《Medicine》期刊發表的薈萃分析（涵蓋 9 項隨機對照試驗，共 935 名患者），震波治療對於慢性足底筋膜炎的疼痛改善率是安慰劑組的 2.58 倍 <sup><a href="https://doi.org/10.1097/MD.0000000000006621" target="_blank">[1]</a></sup>。此外，2013年文獻也指出中高能量震波能有效減少患者早晨下床第一步的劇烈疼痛 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/23552334/" target="_blank">[4]</a></sup>。</li>
+  <li><strong>肘部問題（網球肘、高爾夫球肘）：</strong> 針對外上髁炎（網球肘），2020 年的一項系統性回顧與薈萃分析（涵蓋 13 篇文獻、1035 位患者）證實，震波治療能顯著降低視覺疼痛評分 (VAS) 並恢復病患的握力，且安全性極高 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/32309425/" target="_blank">[2]</a></sup>。</li>
+  <li><strong>肩部問題（鈣化性肌腱炎、五十肩、旋轉肌病變）：</strong> 臨床研究表明，震波能有效擊碎深層鈣化。2003 年的單盲試驗顯示，高達 71% 的患者在治療後出現鈣化點的完全吸收 (31%) 或部分吸收 (40%) <sup><a href="https://doi.org/10.1136/ard.62.3.248" target="_blank">[3]</a></sup>；2024 年發表的最新文獻進一步分析了影響肩部鈣化沉積物吸收的因素，證實震波做為免開刀選項的高可靠性 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/39369947/" target="_blank">[5]</a></sup>。</li>
   <li><strong>膝部與髖部問題：</strong> 髕骨肌腱炎（跳躍膝）、大轉子疼痛症候群。</li>
 </ul>
 
@@ -459,7 +468,7 @@ const fullTreatmentsData: Treatment[] = [
   <li><strong>誤區二：只要打一次震波，我的痛就會徹底消失？</strong><br>
   <strong>👉 醫學實證解析：</strong>許多患者期望「一針見效」，但震波的原理是「破壞後重建」，誘發身體啟動血管新生與組織自我修復機制。細胞的增生與膠原蛋白的重塑需要時間。臨床實證指出，通常需要 <strong>3~6 次完整療程</strong>，且最佳的組織修復效果往往在療程結束後的 4 到 12 週內才會逐漸顯現。</li>
   <li><strong>誤區三：震波可以取代所有骨科手術，再大的鈣化都能打掉？</strong><br>
-  <strong>👉 醫學實證解析：</strong>雖然震波治療成功挽救了許多患者免於開刀，但它並非萬靈丹。根據 2024 年的研究 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/39369947/" target="_blank">[^5^]</a></sup>，鈣化點的吸收率與鈣化的質地（如 Gärtner 分類中的柔軟度）、大小及病程時間有關。對於處於急性發炎期、液化中的極大鈣化，或是合併嚴重肌腱全層撕裂的患者，有時仍需由醫師評估是否採用超音波導引抽吸 (Barbotage) 或微創手術介入。</li>
+  <strong>👉 醫學實證解析：</strong>雖然震波治療成功挽救了許多患者免於開刀，但它並非萬靈丹。根據 2024 年的研究 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/39369947/" target="_blank">[5]</a></sup>，鈣化點的吸收率與鈣化的質地（如 Gärtner 分類中的柔軟度）、大小及病程時間有關。對於處於急性發炎期、液化中的極大鈣化，或是合併嚴重肌腱全層撕裂的患者，有時仍需由醫師評估是否採用超音波導引抽吸 (Barbotage) 或微創手術介入。</li>
 </ol>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -2052,7 +2061,7 @@ export const treatmentsList: TreatmentMetadata[] = fullTreatmentsData.map((item)
 // =======================================================
 
 // 取得單一治療項目 (內頁用，從完整資料庫找)
-export function getTreatmentBySlug(slug: string): Treatment | undefined {
+export const getTreatmentBySlug = (slug: string): Treatment | undefined => {
   return fullTreatmentsData.find((t) => t.slug === slug);
 }
 
@@ -2065,3 +2074,4 @@ export function getAllTreatments() {
 export function getAllTreatmentSlugs() {
   return treatmentsList.map((t) => ({ slug: t.slug }));
 }
+

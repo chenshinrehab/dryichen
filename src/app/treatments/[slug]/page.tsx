@@ -64,8 +64,13 @@ export default function TreatmentDetailPage({ params }: PageProps) {
 
   // --- 資料獲取區 ---
 
-  // A. 抓取「成功案例」 (根據 Tags)
+  // 1. 取得更新日期：優先從 data 抓取，若無則自動產生當天日期 (確保 SEO 最新)
+  const finalModifiedDate = treatment.lastModified || new Date().toISOString().split('T')[0];
+
+  // 2. 抓取「成功案例」 (根據 Tags)
   const matchedCases = getRelatedCases(treatment.tags);
+
+  // ... 後續的 articleData 與 jsonLd 則統一使用 finalModifiedDate
 
   // ------------------
 
@@ -102,8 +107,8 @@ export default function TreatmentDetailPage({ params }: PageProps) {
     'headline': treatment.seoTitle,
     'description': treatment.seoDescription || treatment.description,
     'url': currentPageUrl,
-    'datePublished': '2026-01-25',
-    'dateModified': treatment.lastModified || '2026-02-22',
+'datePublished': treatment.datePublished || '2026-01-25', // 優先抓 data，沒有才用預設
+'dateModified': treatment.lastModified || treatment.datePublished || '2026-04-06',
     'image': treatment.images && treatment.images.length > 0 
       ? treatment.images.map(img => img.src.startsWith('http') ? img.src : `${SITE_URL}${img.src}`) 
       : [`${SITE_URL}/images/main/a.webp`],
