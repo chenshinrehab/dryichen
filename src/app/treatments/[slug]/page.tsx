@@ -1,4 +1,3 @@
-// src/app/treatments/[slug]/page.tsx
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
@@ -6,7 +5,7 @@ import { getTreatmentBySlug, getAllTreatmentSlugs } from '@/data/treatments'
 import ArticleDetail, { ArticleData } from '@/components/ArticleDetail'
 
 // 1. 匯入資料抓取功能
-import { getRelatedCases } from '@/data/cases'         // 抓取案例資料
+import { getRelatedCases } from '@/data/cases'
 
 // 定義常數
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
@@ -29,8 +28,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const canonicalUrl = `${SITE_URL}/treatments/${params.slug}`
 
   return {
-    // 修正：移除後綴診所名，避免與 layout.tsx 模板疊加
-    title: treatment.seoTitle || `${treatment.title}  `, 
+    title: treatment.seoTitle || `${treatment.title}`, 
     authors: [{ name: '林羿辰醫師', url: SITE_URL }],
     publisher: '宸新復健科診所-林羿辰醫師',
     description: treatment.seoDescription || treatment.description,
@@ -39,15 +37,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         canonical: canonicalUrl,
     },
     openGraph: {
-      title: treatment.title ,
+      title: treatment.title,
       description: treatment.seoDescription || treatment.description,
       url: canonicalUrl,
       type: 'article',
       siteName: '新竹宸新復健科診所',
-      // 修改處：改為抓取 treatment.image 作為 og:image
       images: treatment.image ? [treatment.image] : [],
     },
-    // 加入在地化 Geo 標記
     other: {
       'geo.region': 'TW-HCH',
       'geo.placename': '新竹市',
@@ -62,17 +58,17 @@ export default function TreatmentDetailPage({ params }: PageProps) {
   // 網址設定
   const currentPageUrl = `${SITE_URL}/treatments/${params.slug}`
 
-  // --- 資料獲取區 ---
+  // --- 資料獲取與日期處理 ---
+  
+  // 取得今天日期作為最後保險備案
+  const today = new Date().toISOString().split('T')[0];
+  
+  // ✨ 核心修正：嚴格優先抓取 data 裡的日期，完全不使用舊的 '0222' 字串
+  const finalPublishedDate = treatment.datePublished || '2026-01-25'; 
+  const finalModifiedDate = treatment.lastModified || today; 
 
-  // 1. 取得更新日期：優先從 data 抓取，若無則自動產生當天日期 (確保 SEO 最新)
-  const finalModifiedDate = treatment.lastModified || new Date().toISOString().split('T')[0];
-
-  // 2. 抓取「成功案例」 (根據 Tags)
+  // A. 抓取「成功案例」 (根據 Tags)
   const matchedCases = getRelatedCases(treatment.tags);
-
-  // ... 後續的 articleData 與 jsonLd 則統一使用 finalModifiedDate
-
-  // ------------------
 
   // 轉換資料格式給 ArticleDetail
   const articleData: ArticleData = {
@@ -86,6 +82,7 @@ export default function TreatmentDetailPage({ params }: PageProps) {
     treatmentFocus: treatment.treatmentFocus,
     qaList: treatment.qaList,
     keywords: treatment.keywords, 
+    lastModified: treatment.lastModified,
   }
 
   // Schema (JSON-LD)
@@ -99,7 +96,6 @@ export default function TreatmentDetailPage({ params }: PageProps) {
     ],
   }
 
-
   const jsonLdProcedure = {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
@@ -107,14 +103,12 @@ export default function TreatmentDetailPage({ params }: PageProps) {
     'headline': treatment.seoTitle,
     'description': treatment.seoDescription || treatment.description,
     'url': currentPageUrl,
-'datePublished': treatment.datePublished || '2026-01-25', // 優先抓 data，沒有才用預設
-'dateModified': treatment.lastModified || treatment.datePublished || '2026-04-06',
+    'datePublished': finalPublishedDate,
+    'dateModified': finalModifiedDate, // ✨ 連動 data/treatments.ts 裡的 lastModified
     'image': treatment.images && treatment.images.length > 0 
       ? treatment.images.map(img => img.src.startsWith('http') ? img.src : `${SITE_URL}${img.src}`) 
       : [`${SITE_URL}/images/main/a.webp`],
 
-    // ✨ 修正 1：移除 WebPage 頂層無效的 medicalSpecialty
-    // 將原本想表達的專業資訊移至 about 或 knowsAbout，保留 SEO 權重
     'about': [
       { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation' },
       { '@type': 'MedicalSpecialty', 'name': 'Orthopedics' },
@@ -122,8 +116,6 @@ export default function TreatmentDetailPage({ params }: PageProps) {
       { '@type': 'MedicalSpecialty', 'name': 'Pediatric' }
     ],
 
-
-    // 4. 作者區塊：保留醫師雙重宣告
     'author': {
       '@type': ['Person', 'Physician'],
       'name': '林羿辰 醫師',
@@ -135,13 +127,9 @@ export default function TreatmentDetailPage({ params }: PageProps) {
         'name': '國立台灣大學醫學系' 
       },
       'knowsAbout': [
-        'Orthopaedic', 
-        'Sports Medicine', 
-        'Pain Management',
-        'Physical Medicine and Rehabilitation',
-        'Pediatric Rehabilitation'
+        'Orthopaedic', 'Sports Medicine', 'Pain Management',
+        'Physical Medicine and Rehabilitation', 'Pediatric Rehabilitation'
       ],
-      // ✨ 修正 2：medicalSpecialty 放在醫師實體內是合法的
       'medicalSpecialty': [
         'https://schema.org/Physiotherapy', 
         'https://schema.org/Pediatric'
@@ -176,7 +164,6 @@ export default function TreatmentDetailPage({ params }: PageProps) {
       ]
     },
 
-    // 5. 提供者區塊
     'provider': {
       '@type': ['Person', 'Physician'],
       'name': '林羿辰 醫師',
@@ -197,7 +184,6 @@ export default function TreatmentDetailPage({ params }: PageProps) {
       ]
     },
 
-    // 6. 地點資訊
     'contentLocation': {
       '@type': 'MedicalClinic',
       'name': '宸新復健科診所',
@@ -229,24 +215,13 @@ export default function TreatmentDetailPage({ params }: PageProps) {
       ]
     },
 
-    // 7. 核心實體
     'mainEntity': {
       '@type': 'TherapeuticProcedure',
       'name': treatment.title,
       'description': treatment.seoDescription || treatment.description,
       'procedureType': 'http://schema.org/NoninvasiveProcedure',
       'howPerformed': "Ultrasound-guided injection (超音波導引注射)",
-      
-      // ✨ 修正 3：bodyLocation 報錯處理
-      // 根據 Schema.org 定義，bodyLocation 期望的是 Text 或 AnatomicalStructure 的 URL。
-      // 為了保留原本內容並通過驗證，我們使用字串陣列，這在實務上最能解決 Google 報錯問題。
-      'bodyLocation': [
-        "Knee (膝蓋)",
-        "Shoulder (肩膀)",
-        "Elbow (手肘)",
-        "Ankle (足踝)"
-      ],
-      // 原本詳細的 AnatomicalStructure 資訊移至 relevantSpecialty 或相關屬性中保留
+      'bodyLocation': ["Knee (膝蓋)", "Shoulder (肩膀)", "Elbow (手肘)", "Ankle (足踝)"],
       'relevantSpecialty': {
         '@type': 'MedicalSpecialty',
         'name': 'Musculoskeletal Medicine'

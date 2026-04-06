@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image'; // 修正：使用 Next.js Image 組件
 import ShareButtons from '@/components/ShareButtons';
 import RelatedCases from '@/components/RelatedCases'; 
 import { CaseStudy } from '@/data/cases';
@@ -35,6 +34,9 @@ interface ArticleDetailProps {
 
 export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle, relatedCases }: ArticleDetailProps) {
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&bgcolor=ffffff&data=${encodeURIComponent(currentUrl)}`;
+
+  // 取得今天的日期作為最終備案 (ISO 格式: YYYY-MM-DD)
+  const today = new Date().toISOString().split('T')[0];
 
   return (
     <>
@@ -87,36 +89,30 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                         {data.title}
                       </h1>
                       
-                      {data.subtitle && (
-                        <div className="flex flex-col md:flex-row md:items-end justify-between gap-2">
-                          <h2 className="text-lg text-cyan-400 font-medium">
-                            {data.subtitle}
-                          </h2>
-                          
-                          <div className="text-slate-400 text-xs md:text-sm font-normal flex flex-wrap items-center gap-x-3 gap-y-1">
-                            <span className="flex items-center">
-                              撰文者：
-                              <Link 
-                                href="/about/doctors" 
-                                className="text-slate-300 hover:text-cyan-400 underline underline-offset-4 decoration-slate-600 transition-colors cursor-pointer"
-                              >
-                                林羿辰醫師
-                              </Link>
-                            </span>
-                            <span className="hidden md:inline text-slate-600">|</span>
-                            <span className="flex items-center">
-                              最後更新日期：
-                              {data.lastModified ? (
-                                <time dateTime={data.lastModified} itemProp="dateModified">
-                                  {data.lastModified}
-                                </time>
-                              ) : (
-                                "2026-02-22"
-                              )}
-                            </span>
-                          </div>
+                      <div className="flex flex-col md:flex-row md:items-end justify-between gap-2">
+                        <h2 className="text-lg text-cyan-400 font-medium">
+                          {data.subtitle}
+                        </h2>
+                        
+                        <div className="text-slate-400 text-xs md:text-sm font-normal flex flex-wrap items-center gap-x-3 gap-y-1">
+                          <span className="flex items-center">
+                            撰文者：
+                            <Link 
+                              href="/about/doctors" 
+                              className="text-slate-300 hover:text-cyan-400 underline underline-offset-4 decoration-slate-600 transition-colors cursor-pointer"
+                            >
+                              林羿辰醫師
+                            </Link>
+                          </span>
+                          <span className="hidden md:inline text-slate-600">|</span>
+                          <span className="flex items-center">
+                            最後更新日期：
+                            <time dateTime={data.lastModified || today} itemProp="dateModified">
+                              {data.lastModified || today}
+                            </time>
+                          </span>
                         </div>
-                      )}
+                      </div>
                     </div>
                   </div>
                 )}
@@ -204,7 +200,7 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                   </div>
                 )}
 
-                {/* 修正 4：醫師資歷方塊 (將 animate-on-scroll 移除或改為即時顯示確保穩定性) */}
+                {/* 醫師資歷方塊 */}
                 {layoutStyle === 'standard' && (
                   <div className="mt-8 mb-10">
                     <div className="bg-slate-800/40 backdrop-blur border border-slate-700 rounded-2xl p-6 md:p-8 shadow-lg relative overflow-hidden">
@@ -214,18 +210,18 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                         <div className="flex-grow text-center md:text-left">
                           <div className="mb-2">
                           <h3 className="text-xl font-bold text-white flex flex-col md:flex-row items-center gap-2">
-  本文由 
-  <Link 
-    href="/about/doctors"
-    className="text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer underline underline-offset-4 decoration-cyan-900/50 hover:decoration-cyan-400"
-  >
-    林羿辰醫師
-  </Link> 
-  撰寫與醫學審閱
-  <span className="hidden md:inline-block text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full border border-cyan-500/30 font-normal uppercase tracking-wider">
-    Verified Expert
-  </span>
-</h3>
+                            本文由 
+                            <Link 
+                              href="/about/doctors"
+                              className="text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer underline underline-offset-4 decoration-cyan-900/50 hover:decoration-cyan-400"
+                            >
+                              林羿辰醫師
+                            </Link> 
+                            撰寫與醫學審閱
+                            <span className="hidden md:inline-block text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full border border-cyan-500/30 font-normal uppercase tracking-wider">
+                              Verified Expert
+                            </span>
+                          </h3>
                             <p className="text-sm text-slate-400 mt-1 font-medium">宸新復健科診所院長 / 復健科專科醫師</p>
                           </div>
                           
@@ -248,15 +244,11 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                                 <span className="flex items-center"><i className="fa-solid fa-check-double mr-1 text-cyan-500/70"></i> 專家審閱完成</span>
                                 <span className="flex items-center"><i className="fa-solid fa-database mr-1 text-cyan-500/70"></i> 來源：醫學實證與專科臨床</span>
                               </div>
-                              <div className="text-gray-500">
+                              <div className="text-slate-500">
                                 最後更新日期：
-                                {data.lastModified ? (
-                                  <time dateTime={data.lastModified} itemProp="dateModified">
-                                    {data.lastModified}
-                                  </time>
-                                ) : (
-                                  "2026-02-22"
-                                )}
+                                <time dateTime={data.lastModified || today} itemProp="dateModified">
+                                  {data.lastModified || today}
+                                </time>
                               </div>
                             </div>
                           </div>
