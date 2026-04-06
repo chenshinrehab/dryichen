@@ -44,321 +44,266 @@ const fullTreatmentsData: Treatment[] = [
   // -----------------------------------------------------
   // 1. 增生療法 / PRP
   // -----------------------------------------------------
-    {
-      slug: 'prp',
-      title: '新竹 PRP 增生療法 推薦/ 超音波導引注射',
-      lastModified: '2026-01-31',
-      tags: ['PRP'],
-      subtitle: '超音波導引高濃度血小板注射',
-      description: '透過注射高濃度血小板血漿 (PRP) 或高濃度葡萄糖，精準修復受損關節與韌帶。',
-      image: '/images/treatments/a.webp',
-      features: ['啟動修復', '免開刀', '精準導引'],
-      seoTitle: '新竹 PRP 增生療法推薦 |運動傷害、關節退化| 免開刀治療|新竹宸新復健科診所 - 關節退化與運動傷害治療',
-      seoDescription: '新竹PRP增生療法首選。位於鄰近新竹科學園區近竹北，醫師親自執行高解析超音波導引注射，將高濃度血小板精準送達病灶。免開刀治療退化性關節炎、半月軟骨受損與韌帶撕裂。',
-      keywords: ['新竹PRP', '新竹增生療法', '竹北PRP', '超音波導引注射', '膝蓋退化免開刀', '旋轉肌破裂', '足底筋膜炎', '高濃度葡萄糖', '新竹骨科推薦'],
-      
-      contentHtml: `
-          <style>
-    .responsive-img-enlarge { width: 110% !important; max-width: none !important; display: block !important; margin: 1rem auto !important; position: relative !important; left: 50% !important; transform: translateX(-50%) !important; height: auto; }
-    @media (min-width: 768px) { .responsive-img-enlarge { width: 100% !important; left: 0 !important; transform: none !important; } }
-  </style>
-          <img src="/images/news/article/prp/1.webp" alt="PRP全攻略懶人包1" class="responsive-img-enlarge">
-          <img src="/images/news/article/prp/2.webp" alt="PRP全攻略懶人包2" class="responsive-img-enlarge">
-          <img src="/images/news/article/prp/3.webp" alt="PRP全攻略懶人包3" class="responsive-img-enlarge">
-          <img src="/images/news/article/prp/4.webp" alt="PRP全攻略懶人包4" class="responsive-img-enlarge">
-          <img src="/images/news/article/prp/5.webp" alt="PRP全攻略懶人包5" class="responsive-img-enlarge">
-  <p>疼痛總是如影隨形，讓你無法享受生活？傳統的消炎藥或類固醇雖然能暫時止痛，卻無法修復受損的組織。<strong>位於新竹的宸新復健科</strong>，專為<strong>新竹科學園區</strong>與在地民眾提供<strong>高濃度血小板血漿 (PRP) 增生療法</strong>及<strong>高濃度葡萄糖水</strong>，這是一種啟動人體自我修復機制的先進治療。</p>
-  <br>
-  <p>透過抽取自身血液，離心萃取出富含生長因子的血小板，再經由<strong>高解析超音波精準導引</strong>注射至受傷部位。就像是為受損的肌腱、韌帶或關節打入一劑強效的「修復工程隊」，從根本解決疼痛問題，讓您重習活動力。</p>
-  
-  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-      <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
-          📢 為什麼選擇宸新 PRP 增生療法？
-      </h2>
+{
+  slug: 'prp', title: '新竹 PRP 增生療法 推薦/ 超音波導引注射', lastModified: '2026-04-06', tags: ['PRP'], subtitle: '超音波導引高濃度血小板注射',
+  description: '透過注射高濃度血小板血漿 (PRP) 或高濃度葡萄糖，精準修復受損關節與韌帶。', image: '/images/treatments/a.webp',
+  features: ['啟動修復', '免開刀', '精準導引'],
+  seoTitle: '新竹 PRP 增生療法推薦 |運動傷害、關節退化| 免開刀治療|新竹宸新復健科診所 - 關節退化與運動傷害治療',
+  seoDescription: '新竹PRP增生療法首選。位於鄰近新竹科學園區近竹北，醫師親自執行高解析超音波導引注射，將高濃度血小板精準送達病灶。免開刀治療退化性關節炎、半月軟骨受損與韌帶撕裂。',
+  keywords: ['新竹PRP', '新竹增生療法', '竹北PRP', '超音波導引注射', '膝蓋退化免開刀', '旋轉肌破裂', '足底筋膜炎', '高濃度葡萄糖', '新竹骨科推薦'],
+  contentHtml: `
+    <style>.responsive-img-enlarge { width: 110% !important; max-width: none !important; display: block !important; margin: 1rem auto !important; position: relative !important; left: 50% !important; transform: translateX(-50%) !important; height: auto; } @media (min-width: 768px) { .responsive-img-enlarge { width: 100% !important; left: 0 !important; transform: none !important; } }</style>
+    <img src="/images/news/article/prp/1.webp" alt="PRP全攻略懶人包1" class="responsive-img-enlarge"><img src="/images/news/article/prp/2.webp" alt="PRP全攻略懶人包2" class="responsive-img-enlarge"><img src="/images/news/article/prp/3.webp" alt="PRP全攻略懶人包3" class="responsive-img-enlarge"><img src="/images/news/article/prp/4.webp" alt="PRP全攻略懶人包4" class="responsive-img-enlarge"><img src="/images/news/article/prp/5.webp" alt="PRP全攻略懶人包5" class="responsive-img-enlarge">
+    <div style="background-color: #f0fdf4; border-left: 4px solid #16a34a; border-radius: 0.75rem; padding: 1.5rem 1.75rem; margin: 1.5rem 0 2rem 0;">
+      <h2 style="color: #15803d; margin-top: 0; font-size: 1.15rem; font-weight: bold;">📋 本文重點摘要</h2>
+      <p style="color: #166534; line-height: 1.8; margin: 0; font-size: 1rem;">PRP（高濃度血小板血漿）增生療法是目前有最多高品質隨機對照試驗支持的骨科非手術再生治療之一。根據 2025 年整合 40 項研究的系統性回顧<sup><a href="https://doi.org/10.3390/jcm14113983" style="color: #15803d;">[1]</a></sup>，PRP 注射在輕至中度退化性膝關節炎（Kellgren–Lawrence I–III 級）上，疼痛改善及功能恢復均優於玻尿酸與類固醇。2024 年 Mayo Clinic 的統合分析納入 1,993 名患者，PRP 相較玻尿酸，治療成功率的勝算比高達 2.19（95% CI, 1.33–3.62）<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38420745/" style="color: #15803d;">[2]</a></sup>。對於旋轉肌腱病變，2024 年雙盲 RCT 顯示 PRP 在 12 個月追蹤期的疼痛與功能恢復均顯著優於類固醇<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39098382/" style="color: #15803d;">[3]</a></sup>。高濃度葡萄糖水（增生療法）則於 837 名患者的系統性回顧中被認定安全且具 B 級實證支持<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34046305/" style="color: #15803d;">[4]</a></sup>。療效的核心關鍵在於：<strong>精準診斷 + 超音波導引確保注射到位 + 標準化離心濃度（建議 4–5 倍基線）</strong>。任一環節缺失均可能導致治療失敗。</p>
+    </div>
+    <p>疼痛總是如影隨形，讓你無法享受生活？傳統的消炎藥或類固醇雖然能暫時止痛，卻無法修復受損的組織。<strong>位於新竹的宸新復健科</strong>，專為<strong>新竹科學園區</strong>與在地民眾提供<strong>高濃度血小板血漿 (PRP) 增生療法</strong>及<strong>高濃度葡萄糖水</strong>，這是一種啟動人體自我修復機制的先進治療。</p><br>
+    <p>透過抽取自身血液，離心萃取出富含生長因子的血小板，再經由<strong>高解析超音波精準導引</strong>注射至受傷部位。就像是為受損的肌腱、韌帶或關節打入一劑強效的「修復工程隊」，從根本解決疼痛問題，讓您重習活動力。</p>
+    <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+      <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">📢 為什麼選擇宸新 PRP 增生療法？</h2>
       <p style="font-size: 1.1rem; color: #78350f;">許多人打過 PRP 覺得沒效，很大的原因是「沒打對位置」或「濃度不夠」。宸新復健科提供<strong>竹北與新竹市區民眾</strong>最高規格的治療標準：</p>
-      
       <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
-          <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-              <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
-              <div><strong>醫學中心級超音波導引：</strong> 我們不靠「手感」盲打。每一針都透過高解析度超音波即時顯像，避開神經血管，精準將 PRP 送達受損組織深處。</div>
-          </li>
-          <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-              <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
-              <div><strong>高濃度萃取技術：</strong> 採用專利離心管與標準化流程，確保萃取出的血小板濃度達到修復所需的黃金標準（約血液濃度的 5 倍以上）。</div>
-          </li>
-          <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-              <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
-              <div><strong>複合式治療策略：</strong> 醫師會視情況搭配葡萄糖水增生療法、<a href="/treatments/nerve-hydrodissection" style="color: #d97706; text-decoration: underline;">神經解套注射</a>或 <a href="/treatments/shockwave" style="color: #d97706; text-decoration: underline;">聚焦式震波治療</a>，特別針對<strong>長期使用電腦的竹科工程師</strong>或運動愛好者，達到 1+1>2 的修復效果。</div>
-          </li>
-          <li style="margin-bottom: 0; display: flex; align-items: start;">
-              <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
-              <div><strong>收費標準：</strong>高濃度葡萄糖：<strong>1200元</strong>。高濃度血小板(PRP)：<strong>15000元</strong>。</div>
-          </li>
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;"><span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span><div><strong>醫學中心級超音波導引：</strong> 我們不靠「手感」盲打。每一針都透過高解析度超音波即時顯像，避開神經血管，精準將 PRP 送達受損組織深處。</div></li>
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;"><span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span><div><strong>高濃度萃取技術：</strong> 採用專利離心管與標準化流程，確保萃取出的血小板濃度達到修復所需的黃金標準（約血液濃度的 5 倍以上）。研究顯示，4.5 倍基線濃度的 PRP 可顯著提升 VEGF、PDGF-AB 等關鍵生長因子<sup><a href="https://doi.org/10.1186/s12891-025-09339-8" style="color: #d97706;">[5]</a></sup>。</div></li>
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;"><span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span><div><strong>複合式治療策略：</strong> 醫師會視情況搭配葡萄糖水增生療法、<a href="/treatments/nerve-hydrodissection" style="color: #d97706; text-decoration: underline;">神經解套注射</a>或 <a href="/treatments/shockwave" style="color: #d97706; text-decoration: underline;">聚焦式震波治療</a>，特別針對<strong>長期使用電腦的竹科工程師</strong>或運動愛好者，達到 1+1>2 的修復效果。</div></li>
+        <li style="margin-bottom: 0; display: flex; align-items: start;"><span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span><div><strong>收費標準：</strong>高濃度葡萄糖：<strong>1200元</strong>。高濃度血小板(PRP)：<strong>15000元</strong>。</div></li>
       </ul>
-  </div>
-
-<section style="background-color: rgba(6, 182, 212, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); border-radius: 1.5rem; padding: 2.5rem 1.25rem; margin-bottom: 3rem; font-family: sans-serif;">
-  
-<h2 style="color: #22d3ee; margin-top: 0; margin-bottom: 1.5rem; line-height: 1.4; font-size: 1.5rem; letter-spacing: -0.02em;">
-    <span style="display: inline-block;">👨‍⚕️<a href="/about/doctors" style="color: #22d3ee; text-decoration: none;">林羿辰醫師</a>觀點：PRP 真的非打不可嗎？</span>
-  </h2>
-  
-  <p style="font-size: 1.2rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 2.5rem; text-align: justify; letter-spacing: -0.01em;">
-    依據我過去 10 年的臨床經驗，許多患者以為打一針就好。身為復健科醫師與運動教練，我常被問到：「林醫師，我是不是一定要打 PRP 才會好？」其實，<strong>PRP 療效關鍵在於「精準診斷」與「精準注射」。</strong>
-  </p>
-
-  <div style="display: grid; gap: 1.8rem;">
-    
-    <div style="padding: 0;">
-      <h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">1. 診斷先於治療，而非大砲打小鳥</h4>
-      <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;">
-        並非所有疼痛都適合 PRP。例如<strong>鈣化性肌腱炎</strong>，震波效果通常優於注射；許多輕微受傷透過<strong>高濃度葡萄糖</strong>就能獲得改善，不需一開始就花大錢打 PRP。
-      </p>
     </div>
-
-    <div style="padding: 0;">
-      <h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">2. 超音波導引：差之毫釐，失之千里</h4>
-      <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;">
-        <strong>注射位置不精準</strong>是失敗主因。我們堅持全程搭配<strong>高解析超音波導引</strong>，確保藥物精準打到患部撕裂處，這才是決定療效的最後一哩路。
-      </p>
-    </div>
-
-    <div style="padding: 0;">
-      <h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">3. 高品質的 PRP 離心技術</h4>
-      <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;">
-        研究顯示 <strong>3~5 倍濃度</strong> 最適合。濃度並非越高越好，超過 5 倍會過於濃稠，就像鹽水灑在傷口，反而會造成劇烈疼痛與發炎。
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-
-  <div class="my-8 flex justify-center">
-      <iframe 
-        width="315" 
-        height="560" 
-        src="https://www.youtube.com/embed/A-keqKDu7bQ" 
-        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}img{height:100%;object-fit:cover}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/A-keqKDu7bQ?autoplay=1><img src=https://i.ytimg.com/vi/A-keqKDu7bQ/frame0.jpg alt='宸新復健科 PRP 治療說明'><span>▶</span></a>" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen
-        class="max-w-full rounded-xl shadow-lg border border-slate-700"
-        loading="lazy"
-      ></iframe>
-  </div>
-  
-  <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-  
-  <h2>🔬 什麼是 PRP？治療原理大解密</h2>
-  <p>PRP 全名為 <strong>Platelet-Rich Plasma</strong>，意指「富含血小板的血漿」。大家熟知的血小板功能是止血，但其實它還富含多種<strong>生長因子</strong>，如 PDGF、TGF-β、VEGF 等。</p>
-  <br>
-  <p>當組織受傷時，身體會啟動修復機制，但隨著年齡增長或反覆受傷，這個機制會變慢甚至停滯。PRP 治療就像是按下「快轉鍵」，直接將高濃度的生長因子注入受傷部位。</p>
-  
-  <p><img src="/images/treatments/prp/principle.webp" alt="PRP高濃度血小板治療原理說明" width="602" height="806" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
-  
-  <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-  
-  <h2>🎯 誰適合打 PRP？適應症列表</h2>
-  <ul>
-      <li><strong>退化性關節炎：</strong> 膝蓋、髖部、肩膀退化。</li>
-      <li><strong>肌腱與韌帶撕裂傷：</strong> 旋轉肌袖撕裂、十字韌帶損傷。</li>
-      <li><strong>慢性肌腱炎：</strong> 網球肘、高爾夫球肘、足底筋膜炎。</li>
-  </ul>
-  
-  <p><img src="/images/treatments/prp/c.webp" alt="PRP高濃度血小板治療適應症列表" width="602" height="806" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
-  
-  <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-  
-  <h2>💉 超音波導引：精準醫療的靈魂</h2>
-  <p>在宸新復健科，我們堅持<strong>「眼見為憑」</strong>。醫師能將針頭精準引導至病灶核心，大幅提升治療成功率並減少疼痛。</p>
-  
-  <p><img src="/images/treatments/prp/d.webp" alt="PRP高濃度血小板超音波導引注射示意圖" width="602" height="806" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
-  
-  <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-  
-  <h2>🏥 治療流程：四步驟重啟修復力</h2>
-  <ol>
+    <section style="background-color: rgba(6, 182, 212, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); border-radius: 1.5rem; padding: 2.5rem 1.25rem; margin-bottom: 3rem; font-family: sans-serif;">
+      <h2 style="color: #22d3ee; margin-top: 0; margin-bottom: 1.5rem; line-height: 1.4; font-size: 1.5rem; letter-spacing: -0.02em;"><span style="display: inline-block;">👨‍⚕️<a href="/about/doctors" style="color: #22d3ee; text-decoration: none;">林羿辰醫師</a>觀點：PRP 真的非打不可嗎？</span></h2>
+      <p style="font-size: 1.2rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 2.5rem; text-align: justify; letter-spacing: -0.01em;">依據我過去 10 年的臨床經驗，許多患者以為打一針就好。身為復健科醫師與運動教練，我常被問到：「林醫師，我是不是一定要打 PRP 才會好？」其實，<strong>PRP 療效關鍵在於「精準診斷」與「精準注射」。</strong></p>
+      <div style="display: grid; gap: 1.8rem;">
+        <div style="padding: 0;"><h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">1. 診斷先於治療，而非大砲打小鳥</h4><p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;">並非所有疼痛都適合 PRP。例如<strong>鈣化性肌腱炎</strong>，震波效果通常優於注射；許多輕微受傷透過<strong>高濃度葡萄糖</strong>就能獲得改善，不需一開始就花大錢打 PRP。</p></div>
+        <div style="padding: 0;"><h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">2. 超音波導引：差之毫釐，失之千里</h4><p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;"><strong>注射位置不精準</strong>是失敗主因。我們堅持全程搭配<strong>高解析超音波導引</strong>，確保藥物精準打到患部撕裂處，這才是決定療效的最後一哩路。</p></div>
+        <div style="padding: 0;"><h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">3. 高品質的 PRP 離心技術</h4><p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;">研究顯示 <strong>3~5 倍濃度</strong> 最適合<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39751394/" style="color: #67e8f9;">[6]</a></sup>。濃度並非越高越好，超過 5 倍會過於濃稠，就像鹽水灑在傷口，反而會造成劇烈疼痛與發炎。</p></div>
+      </div>
+    </section>
+    <div class="my-8 flex justify-center"><iframe width="315" height="560" src="https://www.youtube.com/embed/A-keqKDu7bQ" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}img{height:100%;object-fit:cover}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/A-keqKDu7bQ?autoplay=1><img src=https://i.ytimg.com/vi/A-keqKDu7bQ/frame0.jpg alt='宸新復健科 PRP 治療說明'><span>▶</span></a>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="max-w-full rounded-xl shadow-lg border border-slate-700" loading="lazy"></iframe></div>
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    <h2>🔬 什麼是 PRP？治療原理大解密</h2>
+    <p>PRP 全名為 <strong>Platelet-Rich Plasma</strong>，意指「富含血小板的血漿」。大家熟知的血小板功能是止血，但其實它還富含多種<strong>生長因子</strong>，包括 PDGF（血小板衍生生長因子）、TGF-β（轉化生長因子）、VEGF（血管內皮生長因子）、IGF-1、EGF 等<sup><a href="https://doi.org/10.3389/fchem.2017.00089" style="color: #0369a1;">[7]</a></sup>。這些生長因子在注射後會依序釋放：PDGF-AB 最早在注射後 8 小時達峰值，EGF 在第 7 天，VEGF 則在第 14 天才達到高峰<sup><a href="https://doi.org/10.1186/s12891-025-09339-8" style="color: #0369a1;">[5]</a></sup>，多階段協同促進組織癒合。</p><br>
+    <p>當組織受傷時，身體會啟動修復機制，但隨著年齡增長或反覆受傷，這個機制會變慢甚至停滯。PRP 治療就像是按下「快轉鍵」，直接將高濃度的生長因子注入受傷部位。PRP 同時能抑制 IL-1β 和 TNF-α 等促炎因子，改善滑液成分，並促進玻尿酸合成，對關節微環境具有調節作用<sup><a href="https://doi.org/10.1186/s40001-025-03253-4" style="color: #0369a1;">[8]</a></sup>。</p>
+    <p><img src="/images/treatments/prp/principle.webp" alt="PRP高濃度血小板治療原理說明" width="602" height="806" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    <h2>🎯 誰適合打 PRP？適應症列表（附文獻實證）</h2>
+    <ul>
+      <li><strong>退化性關節炎（膝蓋、髖部、肩膀）：</strong> 最有實證支持的適應症。2024 年 Mayo Clinic 統合分析（1,993 名患者）顯示，PRP 較玻尿酸治療成功率高出 2.19 倍<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38420745/" style="color: #0369a1;">[2]</a></sup>；18 項 RCT 的統合分析（1,995 名患者）亦顯示 PRP 在 3 個月及 6 個月均超越最小臨床重要差異（MCID）<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39751394/" style="color: #0369a1;">[6]</a></sup>。</li>
+      <li><strong>旋轉肌腱病變與旋轉肌袖部分撕裂：</strong> 2024 年雙盲 RCT（100 名患者）顯示，PRP 單次注射在 12 個月後疼痛及功能改善均顯著優於類固醇，且治療失敗率更低<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39098382/" style="color: #0369a1;">[3]</a></sup>；2021 年的雙盲 RCT 亦顯示 PRP 在 3 個月時的 VAS 及 ASES 分數優於類固醇<sup><a href="https://pubmed.ncbi.nlm.nih.gov/33127554/" style="color: #0369a1;">[9]</a></sup>。</li>
+      <li><strong>網球肘（外側肱骨上髁炎）：</strong> 2024 年的系統性回顧與統合分析（730 名患者，11 項 RCT）顯示，PRP 在 6 個月以上的長期疼痛改善（VAS, MD −2.18）及功能（DASH, MD −8.13）顯著優於類固醇<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38357713/" style="color: #0369a1;">[10]</a></sup>；另有系統性回顧（2,420 名患者，33 項研究）確認各型 PRP 均有效<sup><a href="https://pubmed.ncbi.nlm.nih.gov/35337955/" style="color: #0369a1;">[11]</a></sup>。</li>
+      <li><strong>足底筋膜炎：</strong> 系統性回顧顯示 PRP 在長期功能改善上具極大效應值（ES 1.94），優於類固醇<sup><a href="https://pubmed.ncbi.nlm.nih.gov/31821010/" style="color: #0369a1;">[12]</a></sup>。美國退伍軍人署 2024 年系統性回顧亦支持其在足底筋膜炎的應用<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK611427/" style="color: #0369a1;">[13]</a></sup>。</li>
+    </ul>
+    <p><img src="/images/treatments/prp/c.webp" alt="PRP高濃度血小板治療適應症列表" width="602" height="806" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    <h2>💉 超音波導引：精準醫療的靈魂</h2>
+    <p>在宸新復健科，我們堅持<strong>「眼見為憑」</strong>。醫師能將針頭精準引導至病灶核心，大幅提升治療成功率並減少疼痛。研究指出，超音波導引可確保 PRP 精準送達目標組織，是影響治療結果的關鍵因素<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11499309/" style="color: #0369a1;">[14]</a></sup>。</p>
+    <p><img src="/images/treatments/prp/d.webp" alt="PRP高濃度血小板超音波導引注射示意圖" width="602" height="806" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    <h2>🏥 治療流程：四步驟重啟修復力</h2>
+    <ol>
       <li><strong>血液抽取：</strong> 抽取約 10~20cc 的血液。</li>
-      <li><strong>離心濃縮：</strong> 透過物理離心力萃取出高濃度的血小板。</li>
+      <li><strong>離心濃縮：</strong> 透過物理離心力萃取出高濃度的血小板（目標達基線 4–5 倍，約 1,000,000/µL 以上）<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39751394/" style="color: #0369a1;">[6]</a></sup>。</li>
       <li><strong>精準注射：</strong> 在超音波導引下注入 PRP。</li>
       <li><strong>衛教與修復：</strong> 聆聽衛教後即可返家。</li>
-  </ol>
-  
-  <p><img src="/images/treatments/prp/a.webp" alt="PRP高濃度血小板注射標準流程圖" width="602" height="806" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
-  
-  <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-  
-  <h2>⚖️ 治療比較：PRP vs. 葡萄糖水 vs. 類固醇</h2>
-
-<h3>1. PRP vs. 高濃度葡萄糖水</h3>
-<p><img src="/images/treatments/prp/e.webp" alt="PRP高濃度血小板與高濃度葡萄糖比較表顯示：PRP 修復力較強且維持時間長，葡萄糖水則需較多次數。" width="602" height="328" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
-<p>
-  這兩者皆屬於<strong>增生療法 (Prolotherapy)</strong>，核心邏輯都是藉由誘發輕微發炎來啟動修復機制。
-  <strong>高濃度葡萄糖水</strong>是透過滲透壓產生「人為發炎」來喚醒免疫系統；
-  而 <strong>PRP (自體血小板)</strong> 則是直接注入生長因子，跳過喚醒階段直接提供修復原料。
-  整體而言，PRP 的修復效率較高、所需次數較少，適合預算充足或希望加速復原的患者。
-</p>
-
-<h3>2. 增生療法 vs. 類固醇 (消炎針)</h3>
-<p><img src="/images/treatments/prp/f.webp" alt="增生注射與類固醇治療差異比較顯示：增生療法為修復性質無副作用，類固醇為止痛性質長期使用恐有副作用。" width="602" height="328" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
-<p>
-  這是兩種截然不同的治療思維：<strong>類固醇</strong>主要用於「抑制發炎」，能快速緩解急性疼痛，但多次注射可能導致組織脆化；
-  <strong>增生療法</strong>則是「促進發炎」，目標是強化結構。
-  簡單來說，類固醇像<strong>關掉警報</strong>，適合處理急性火災（劇痛）；增生療法則像<strong>施工隊</strong>，適合重建老舊受損的房子（慢性勞損、退化）。
-</p>
-
-  <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-  <h2>🩹 PRP 療法後注意事項</h2>
-
-<p>
-  <img src="/images/treatments/prp/b.webp" alt="PRP療法後注意事項：避免消炎藥、均衡營養、循序漸進復健運動。" width="602" height="800" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;">
-</p>
-
-<section>
-  <h3>1. 避免消炎藥物 (NSAIDs)</h3>
-  <p>
-    PRP 是利用啟動發炎反應來促進修復，因此<strong>應避免使用消炎類藥物</strong>（如：阿斯匹靈、布洛芬等），以免阻擋組織癒合。若注射後有明顯酸痛感，建議選用<strong>不含消炎成分的止痛藥</strong>（如：普拿疼 Acetaminophen）。
-  </p>
-
-  <h3>2. 均衡營養攝取</h3>
-  <p>
-    修復受損組織需要足夠的「建築原料」。建議在療程期間補充：
-    <ul>
-      <li><strong>優質蛋白質</strong>：修復的基本構成。</li>
-      <li><strong>維他命 B、C</strong>：協助細胞呼吸與能量代謝。</li>
-      <li><strong>必須脂肪酸</strong>：促進細胞膜修復與減少不良發炎。</li>
-    </ul>
-    這些營養能幫助膠原纖維順利生成，提升治療成功率。
-  </p>
-
-  <h3>3. 循序漸進的復健運動</h3>
-  <p>
-    適度的物理活動能增加局部循環，加速修復效果。請遵循「<strong>循序漸進</strong>」原則進行肌力與關節訓練：
-    <ul>
-      <li><strong>安全性</strong>：若出現尖銳的刺痛或劇烈拉扯感，應立即暫停。</li>
-      <li><strong>專業指導</strong>：強烈建議搭配物理治療師制定的運動處方，以達到最佳的功能復原。</li>
-    </ul>
-  </p>
-</section>
-<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
-  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
-    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center;">
-      <span style="margin-right: 8px;">🏆</span> 經典修復案例：從超音波見證組織癒合
-    </h2>
-  </div>
-
-  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
-    <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
-      
-      <div style="flex-shrink: 0; width: 100%; max-width: 450px;">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 1.5rem;">
-          <div style="text-align: center;">
-            <div style="position: relative; margin-bottom: 0.75rem;">
-              <img 
-                src="/images/cases/art/e.webp" 
-                alt="林羿辰醫師旋轉肌撕裂案例：治療前" 
-                loading="lazy"
-                style="border-radius: 0.75rem; border: 1.5px solid #475569; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; display: block;"
-              >
-              <div style="position: absolute; top: 8px; left: 8px; background: rgba(0,0,0,0.6); color: #94a3b8; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">BEFORE</div>
-            </div>
-            <p style="color: #cbd5e1; font-size: 0.9rem; line-height: 1.4; padding: 0 4px;">
-              <strong>圖左：</strong>治療前可見明顯肌腱撕裂破洞(黑影)
-            </p>
-          </div>
-          <div style="text-align: center;">
-            <div style="position: relative; margin-bottom: 0.75rem;">
-              <img 
-                src="/images/cases/art/d.webp" 
-                alt="林羿辰醫師旋轉肌撕裂案例：治療後" 
-                loading="lazy"
-                style="border-radius: 0.75rem; border: 1.5px solid #475569; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; display: block;"
-              >
-              <div style="position: absolute; top: 8px; left: 8px; background: rgba(34, 211, 238, 0.2); color: #22d3ee; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">AFTER</div>
-            </div>
-            <p style="color: #cbd5e1; font-size: 0.9rem; line-height: 1.4; padding: 0 4px;">
-              <strong>圖右：</strong>精準增生注射後，組織完全修復平整
-            </p>
-          </div>
-        </div>
+    </ol>
+    <p><img src="/images/treatments/prp/a.webp" alt="PRP高濃度血小板注射標準流程圖" width="602" height="806" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    <h2>⚖️ 治療比較：PRP vs. 葡萄糖水 vs. 類固醇</h2>
+    <h3>1. PRP vs. 高濃度葡萄糖水</h3>
+    <p><img src="/images/treatments/prp/e.webp" alt="PRP高濃度血小板與高濃度葡萄糖比較表顯示：PRP 修復力較強且維持時間長，葡萄糖水則需較多次數。" width="602" height="328" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
+    <p>這兩者皆屬於<strong>增生療法 (Prolotherapy)</strong>，核心邏輯都是藉由誘發輕微發炎來啟動修復機制。<strong>高濃度葡萄糖水</strong>是透過滲透壓產生「人為發炎」來喚醒免疫系統。系統性回顧（837 名患者，11 項 RCT）顯示葡萄糖水在膝關節炎疼痛與功能改善上具 B 級實證，且無重大副作用<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34046305/" style="color: #0369a1;">[4]</a></sup>；2024 年統合分析亦確認其能顯著降低疼痛（SMD: −0.95）及關節僵硬<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38915358/" style="color: #0369a1;">[15]</a></sup>。而 <strong>PRP (自體血小板)</strong> 則是直接注入生長因子，跳過喚醒階段直接提供修復原料。整體而言，PRP 的修復效率較高、所需次數較少，適合預算充足或希望加速復原的患者；兩者比較時，PRP 在 6 個月的僵硬評估上優於葡萄糖水（MD 0.45, p = 0.03）<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34046305/" style="color: #0369a1;">[4]</a></sup>。</p>
+    <h3>2. 增生療法 vs. 類固醇 (消炎針)</h3>
+    <p><img src="/images/treatments/prp/f.webp" alt="增生注射與類固醇治療差異比較顯示：增生療法為修復性質無副作用，類固醇為止痛性質長期使用恐有副作用。" width="602" height="328" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
+    <p>這是兩種截然不同的治療思維：<strong>類固醇</strong>主要用於「抑制發炎」，能快速緩解急性疼痛，但多次注射可能導致組織脆化；<strong>增生療法</strong>則是「促進發炎」，目標是強化結構。以網球肘為例，類固醇短期（1 個月）疼痛改善較快，但 3 個月後 PRP 開始反超，6 個月時 PRP 疼痛與功能評分均顯著更優<sup><a href="https://pubmed.ncbi.nlm.nih.gov/37247780/" style="color: #0369a1;">[16]</a></sup>。簡單來說，類固醇像<strong>關掉警報</strong>，適合處理急性火災（劇痛）；增生療法則像<strong>施工隊</strong>，適合重建老舊受損的房子（慢性勞損、退化）。</p>
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    <h2>❌ 3 個常見 PRP 迷思，醫師幫你反向查證</h2>
+    <div style="display: grid; gap: 1.5rem; margin-bottom: 2rem;">
+      <div style="background: #fff7ed; border: 1.5px solid #fed7aa; border-radius: 0.875rem; padding: 1.5rem;">
+        <h3 style="color: #c2410c; margin-top: 0; font-size: 1.1rem;">❌ 迷思一：「PRP 濃度越高，效果越好」</h3>
+        <p style="color: #7c2d12; line-height: 1.75; margin: 0;"><strong>事實：</strong> 這是最常見的誤解。2025 年的系統性回顧與統合分析（18 項 RCT，1,995 名患者）設定 100 萬/µL（約 4–5 倍基線）為分水嶺，發現超過此閾值後療效並未線性增加<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39751394/" style="color: #c2410c;">[6]</a></sup>。過度濃縮的 PRP 血小板密度過高，反而可能因過強的局部發炎反應造成更多疼痛，甚至抑制細胞增殖。2021 年針對 150 名退化性膝關節炎患者的 RCT 發現，10 億血小板劑量的精準控制（非越多越好）才是達到最佳 WOMAC 及 IKDC 分數的關鍵<sup><a href="https://www.nature.com/articles/s41598-021-83025-2" style="color: #c2410c;">[17]</a></sup>。</p>
       </div>
-
-      <div style="width: 100%;">
-        <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.5rem; line-height: 1.4; display: block; width: 100%; clear: both;">
-          那雙教會我畫畫的手，舉不起來了... <br>
-        </h3>
-        
-        <p style="color: #38bdf8; font-weight: 500; font-size: 1rem; margin-bottom: 1.25rem; display: flex; align-items: center;">
-          <span style="margin-right: 6px;">👤</span> 高中美術老師 | 🎯 治療：PRP ＋ 增生療法
-        </p>
-
-        <p style="color: #94a3b8; line-height: 1.8; font-size: 1.1rem; margin-bottom: 1.5rem; text-align: justify;">
-          昔日恩師因木工創作導致嚴重<strong>旋轉肌撕裂</strong>，夜不成眠。林醫師運用<strong>高解析超音波導引</strong>精準修補，親見影像中原本漆黑的破洞逐漸被新生的肌腱纖維填滿。
-        </p>
-
-        <div style="background: rgba(30, 41, 59, 0.5); border-left: 2px solid #334155; padding: 1rem 1.25rem; margin-bottom: 1.5rem; border-radius: 0 0.5rem 0.5rem 0;">
-          <p style="margin: 0; color: #cbd5e1; font-size: 1rem; line-height: 1.6;">
-            <span style="margin-right: 4px;">✨</span> <strong>臨床成效：</strong> 疼痛指數 8 降至 0，超音波證實組織完全癒合，成功保住了藝術家的創作熱情。
-          </p>
-        </div>
+      <div style="background: #fef2f2; border: 1.5px solid #fecaca; border-radius: 0.875rem; padding: 1.5rem;">
+        <h3 style="color: #b91c1c; margin-top: 0; font-size: 1.1rem;">❌ 迷思二：「打完 PRP 馬上見效，沒效就是騙人的」</h3>
+        <p style="color: #7f1d1d; line-height: 1.75; margin: 0;"><strong>事實：</strong> PRP 的生長因子釋放遵循時間動力學，PDGF-AB 在 8 小時內達峰，VEGF 需要 14 天，軟組織重塑則可能持續 3–6 個月<sup><a href="https://doi.org/10.1186/s12891-025-09339-8" style="color: #b91c1c;">[5]</a></sup>。多項 RCT 一致顯示：PRP 組在 6 週至 3 個月才開始明顯超越對照組，在第 6–12 個月時達到最佳療效差距<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38357713/" style="color: #b91c1c;">[10]</a></sup><sup><a href="https://pubmed.ncbi.nlm.nih.gov/39098382/" style="color: #b91c1c;">[3]</a></sup>。如果以「打完一週沒感覺」就認定無效，正好是錯過修復最活躍的時期。建議至少追蹤至 3 個月再評估療效。</p>
+      </div>
+      <div style="background: #f0fdf4; border: 1.5px solid #bbf7d0; border-radius: 0.875rem; padding: 1.5rem;">
+        <h3 style="color: #15803d; margin-top: 0; font-size: 1.1rem;">❌ 迷思三：「只要是自己的血，PRP 就一定安全有效」</h3>
+        <p style="color: #14532d; line-height: 1.75; margin: 0;"><strong>事實：</strong> 自體血液確實幾乎無過敏風險，安全性高。然而「安全」不等於「有效」。療效取決於三大關鍵變數：① 離心技術與血小板濃度標準化、② 注射位置精準度（超音波導引 vs. 徒手盲打）、③ 術後是否避免 NSAIDs 影響修復發炎期。研究指出不同製備方法導致 PDGF、TGF-β、VEGF 等生長因子濃度可相差 10 倍以上，直接影響臨床結果<sup><a href="https://journals.sagepub.com/doi/10.1177/26348535241277625" style="color: #15803d;">[18]</a></sup>。因此，選擇具有標準化流程的醫療機構，與接受治療本身同等重要。</p>
       </div>
     </div>
-
-    <div style="width: 100%; display: flex; justify-content: center; margin-top: 1rem;">
-      <a 
-        href="/about/cases/case-rotator-cuff-art-teacher" 
-        style="display: inline-block; background-color: #1e293b; border: 1.5px solid #334155; color: #cbd5e1; padding: 0.8rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-size: 1rem; text-align: center; width: 100%; max-width: 320px;"
-      >
-        查看「美術老師修復之路」故事 →
-      </a>
-    </div>
-  </div>
-</section>
-
-  <div style="background-color: #f0f9ff; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+    <h2>🩹 PRP 療法後注意事項</h2>
+    <p><img src="/images/treatments/prp/b.webp" alt="PRP療法後注意事項：避免消炎藥、均衡營養、循序漸進復健運動。" width="602" height="800" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
+    <section>
+      <h3>1. 避免消炎藥物 (NSAIDs)</h3>
+      <p>PRP 是利用啟動發炎反應來促進修復，因此<strong>應避免使用消炎類藥物</strong>（如：阿斯匹靈、布洛芬等），以免阻擋組織癒合。若注射後有明顯酸痛感，建議選用<strong>不含消炎成分的止痛藥</strong>（如：普拿疼 Acetaminophen）。</p>
+      <h3>2. 均衡營養攝取</h3>
+      <p>修復受損組織需要足夠的「建築原料」。建議在療程期間補充：
+        <ul><li><strong>優質蛋白質</strong>：修復的基本構成。</li><li><strong>維他命 B、C</strong>：協助細胞呼吸與能量代謝。</li><li><strong>必須脂肪酸</strong>：促進細胞膜修復與減少不良發炎。</li></ul>
+        這些營養能幫助膠原纖維順利生成，提升治療成功率。
+      </p>
+      <h3>3. 循序漸進的復健運動</h3>
+      <p>適度的物理活動能增加局部循環，加速修復效果。請遵循「<strong>循序漸進</strong>」原則進行肌力與關節訓練：
+        <ul><li><strong>安全性</strong>：若出現尖銳的刺痛或劇烈拉扯感，應立即暫停。</li><li><strong>專業指導</strong>：強烈建議搭配物理治療師制定的運動處方，以達到最佳的功能復原。</li></ul>
+      </p>
+    </section>
+    <section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+      <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;"><h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center;"><span style="margin-right: 8px;">🏆</span> 經典修復案例：從超音波見證組織癒合</h2></div>
+      <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+        <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
+          <div style="flex-shrink: 0; width: 100%; max-width: 450px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 1.5rem;">
+              <div style="text-align: center;">
+                <div style="position: relative; margin-bottom: 0.75rem;"><img src="/images/cases/art/e.webp" alt="林羿辰醫師旋轉肌撕裂案例：治療前" loading="lazy" style="border-radius: 0.75rem; border: 1.5px solid #475569; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; display: block;"><div style="position: absolute; top: 8px; left: 8px; background: rgba(0,0,0,0.6); color: #94a3b8; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">BEFORE</div></div>
+                <p style="color: #cbd5e1; font-size: 0.9rem; line-height: 1.4; padding: 0 4px;"><strong>圖左：</strong>治療前可見明顯肌腱撕裂破洞(黑影)</p>
+              </div>
+              <div style="text-align: center;">
+                <div style="position: relative; margin-bottom: 0.75rem;"><img src="/images/cases/art/d.webp" alt="林羿辰醫師旋轉肌撕裂案例：治療後" loading="lazy" style="border-radius: 0.75rem; border: 1.5px solid #475569; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; display: block;"><div style="position: absolute; top: 8px; left: 8px; background: rgba(34, 211, 238, 0.2); color: #22d3ee; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">AFTER</div></div>
+                <p style="color: #cbd5e1; font-size: 0.9rem; line-height: 1.4; padding: 0 4px;"><strong>圖右：</strong>精準增生注射後，組織完全修復平整</p>
+              </div>
+            </div>
+          </div>
+          <div style="width: 100%;">
+            <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.5rem; line-height: 1.4; display: block; width: 100%; clear: both;">那雙教會我畫畫的手，舉不起來了... <br></h3>
+            <p style="color: #38bdf8; font-weight: 500; font-size: 1rem; margin-bottom: 1.25rem; display: flex; align-items: center;"><span style="margin-right: 6px;">👤</span> 高中美術老師 | 🎯 治療：PRP ＋ 增生療法</p>
+            <p style="color: #94a3b8; line-height: 1.8; font-size: 1.1rem; margin-bottom: 1.5rem; text-align: justify;">昔日恩師因木工創作導致嚴重<strong>旋轉肌撕裂</strong>，夜不成眠。林醫師運用<strong>高解析超音波導引</strong>精準修補，親見影像中原本漆黑的破洞逐漸被新生的肌腱纖維填滿。</p>
+            <div style="background: rgba(30, 41, 59, 0.5); border-left: 2px solid #334155; padding: 1rem 1.25rem; margin-bottom: 1.5rem; border-radius: 0 0.5rem 0.5rem 0;"><p style="margin: 0; color: #cbd5e1; font-size: 1rem; line-height: 1.6;"><span style="margin-right: 4px;">✨</span> <strong>臨床成效：</strong> 疼痛指數 8 降至 0，超音波證實組織完全癒合，成功保住了藝術家的創作熱情。</p></div>
+          </div>
+        </div>
+        <div style="width: 100%; display: flex; justify-content: center; margin-top: 1rem;"><a href="/about/cases/case-rotator-cuff-art-teacher" style="display: inline-block; background-color: #1e293b; border: 1.5px solid #334155; color: #cbd5e1; padding: 0.8rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-size: 1rem; text-align: center; width: 100%; max-width: 320px;">查看「美術老師修復之路」故事 →</a></div>
+      </div>
+    </section>
+    <div style="background-color: #f0f9ff; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
       <h2 style="color: #0369a1; margin-top: 0;">👨‍⚕️ 還在忍受慢性疼痛嗎？</h2>
       <p style="color: #334155; margin-bottom: 1.5rem;">疼痛不該是常態。歡迎來到<strong>新竹竹科</strong>宸新復健科，找回無痛的自在生活！</p>
+      <p style="font-weight: bold; color: #059669;"><a href="/booking" style="color: inherit; text-decoration: underline;">現在就預約諮詢，告別疼痛！</a></p>
+    </div>
 
-      <p style="font-weight: bold; color: #059669;">
-  <a href="/booking" style="color: inherit; text-decoration: underline;">現在就預約諮詢，告別疼痛！</a>
-</p>
-  </div>
-      `,
-      whyChooseUs: [
-        '瑞士原裝進口專利高濃縮分離技術',
-        '堅持使用<strong>高解析度超音波導引</strong>，確保針劑精準到達病灶',
-        '醫師施打技術多項認證'
-      ],
-      treatmentFocus: [
-        '慢性肌腱炎久治不癒。',
-        '關節韌帶鬆弛與不穩定。',
-        '退化性關節炎與半月軟骨損傷。'
-      ],
-      images: [],
-      applicableConditions: ['退化性關節炎', '旋轉肌撕裂', '網球肘', '足底筋膜炎', '半月軟骨受損'],
-      qaList: [
-        {
-          question: 'PRP 注射需要打幾次？',
-          answer: '一般建議的完整療程為 3 次，每次間隔約 4 週。但因每個人受傷程度與身體修復能力不同，醫師會在第一次治療後，根據超音波影像追蹤修復狀況來調整後續次數。'
-        },
-        {
-          question: '打完 PRP 會很痛嗎？可以走路嗎？',
-          answer: '注射後 2-3 天患部會有腫脹痠痛感（因為正在啟動修復發炎反應），這是正常的。一般行走與日常生活皆不受影響，但建議一週內避免劇烈運動，並多休息。'
-        },
-        {
-          question: '打 PRP 有副作用嗎？',
-          answer: 'PRP 是非常安全的治療，因為用的完全是自己的血液，幾乎不會有過敏反應。'
-        },
-        {
-          question: 'PRP 治療保險有給付嗎？',
-          answer: 'PRP 屬於自費項目，健保尚未給付。但若您持有「實支實付」型的醫療險，通常有機會申請理賠。'
-        }
-      ]
-  },
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 2rem; border-radius: 1rem; margin-top: 3rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0;">
+    <h3 style="color: #334155; margin-top: 0; margin-bottom: 1rem; font-size: 1.2rem; border-bottom: 2px solid #cbd5e1; padding-bottom: 0.5rem;">📚 參考文獻與實證數據來源</h3>
+    <ol style="padding-left: 1.5rem; margin-bottom: 0; line-height: 1.6; list-style-type: none;">
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[1]</strong> 
+            <a href="https://doi.org/10.3390/jcm14113983" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Garg R, et al. (2025). Platelet-Rich Plasma for Knee Osteoarthritis: A Comprehensive Narrative Review. <i>J Clin Med</i>. 14(11):3983. doi: 10.3390/jcm14113983
+            </a>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[2]</strong> 
+            <a href="https://pubmed.ncbi.nlm.nih.gov/38420745/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Oeding JF, et al. (2024). Platelet-Rich Plasma Versus Alternative Injections for Osteoarthritis of the Knee: A Systematic Review and Statistical Fragility Index-Based Meta-analysis of RCTs. <i>Am J Sports Med</i>. PubMed: 38420745
+            </a>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[3]</strong> 
+            <a href="https://pubmed.ncbi.nlm.nih.gov/39098382/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Rossi LA, et al. (2024). Subacromial injection of platelet-rich plasma provides greater improvement in pain and functional outcomes compared to corticosteroids at 1-year follow-up: a double-blinded randomized controlled trial. <i>J Shoulder Elbow Surg</i>. 33(12):2563-2571. PubMed: 39098382
+            </a>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[4]</strong> 
+            <a href="https://pubmed.ncbi.nlm.nih.gov/34046305/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Sanderson LM, et al. (2021). Dextrose prolotherapy in knee osteoarthritis: A systematic review and meta-analysis. <i>J Bodyw Mov Ther</i>. PubMed: 34046305
+            </a>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[5]</strong> 
+            <a href="https://doi.org/10.1186/s12891-025-09339-8" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Hassan M, et al. (2025). Time-dependent growth factor kinetics, platelet concentration, and clinical response following platelet-rich plasma versus saline in chronic tenosynovitis: a randomized controlled trial. <i>BMC Musculoskelet Disord</i>. 26:1089. doi: 10.1186/s12891-025-09339-8
+            </a>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[6]</strong> 
+            <a href="https://pubmed.ncbi.nlm.nih.gov/39751394/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Gianoli D, et al. (2025). PRP Injections for the Treatment of Knee Osteoarthritis: The Improvement Is Clinically Significant and Influenced by Platelet Concentration: A Meta-analysis of RCTs. <i>Orthop J Sports Med</i>. PubMed: 39751394
+            </a>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[7]</strong> 
+            <a href="https://doi.org/10.3389/fchem.2017.00089" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Zhong W, et al. (2017). Platelet-Rich Plasma Derived Growth Factors Contribute to Stem Cell Differentiation in Musculoskeletal Regeneration. <i>Front Chem</i>. 5:89. doi: 10.3389/fchem.2017.00089
+            </a>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[8]</strong> 
+            <a href="https://doi.org/10.1186/s40001-025-03253-4" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Zhang Y, et al. (2025). Efficacy and safety of platelet-rich plasma injections for the treatment of knee osteoarthritis: a systematic review and meta-analysis of randomized controlled trials. <i>Eur J Med Res</i>. doi: 10.1186/s40001-025-03253-4
+            </a>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[9]</strong> 
+            <a href="https://pubmed.ncbi.nlm.nih.gov/33127554/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Kwong CA, et al. (2021). Platelet-Rich Plasma in Patients With Partial-Thickness Rotator Cuff Tears or Tendinopathy Leads to Significantly Improved Short-Term Pain Relief and Function Compared With Corticosteroid Injection: A Double-Blind Randomized Controlled Trial. <i>Arthroscopy</i>. 37(2):510-517. PubMed: 33127554
+            </a>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[10]</strong> 
+            <a href="https://pubmed.ncbi.nlm.nih.gov/38357713/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Xu Y, et al. (2024). Platelet-Rich Plasma Has Better Results for Long-term Functional Improvement and Pain Relief for Lateral Epicondylitis: A Systematic Review and Meta-analysis of Randomized Controlled Trials. <i>Am J Sports Med</i>. 52(10):2646-2656. PubMed: 38357713
+            </a>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[11]</strong> 
+            <a href="https://pubmed.ncbi.nlm.nih.gov/35337955/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Li S, et al. (2022). A systematic review on the efficacy of different types of platelet-rich plasma in the management of lateral epicondylitis. <i>J Shoulder Elbow Surg</i>. 31(7):1533-1544. PubMed: 35337955
+            </a>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[12]</strong> 
+            <a href="https://pubmed.ncbi.nlm.nih.gov/31821010/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Lin MT, et al. (2020). Platelet-Rich Plasma Versus Corticosteroid Injections in the Management of Elbow Epicondylitis and Plantar Fasciitis: An Updated Systematic Review and Meta-analysis. <i>Am J Sports Med</i>. PubMed: 31821010
+            </a>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[13]</strong> 
+            <a href="https://www.ncbi.nlm.nih.gov/books/NBK611427/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Ewart D, et al. (2024). Dextrose Prolotherapy for Musculoskeletal Pain: A Systematic Review. <i>Department of Veterans Affairs Evidence Synthesis Program</i>. NCBI Bookshelf: NBK611427
+            </a>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[14]</strong> 
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11499309/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Rathod V, et al. (2024). Platelet-Rich Plasma Therapy for Rotator Cuff Injuries: A Comprehensive Review of Current Evidence and Future Directions. <i>Cureus</i>. 16(9):e70042. PMC: 11499309
+            </a>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[15]</strong> 
+            <a href="https://pubmed.ncbi.nlm.nih.gov/38915358/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Khateri S, et al. (2024). The effect of dextrose prolotherapy on patients diagnosed with knee osteoarthritis: A comprehensive systematic review and meta-analysis. <i>Health Sci Rep</i>. 7:e2145. PubMed: 38915358
+            </a>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[16]</strong> 
+            <a href="https://pubmed.ncbi.nlm.nih.gov/37247780/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Hohmann E, et al. (2023). Corticosteroid injections for the treatment of lateral epicondylitis are superior to platelet-rich plasma at 1 month but platelet-rich plasma is more effective at 6 months: an updated systematic review and meta-analysis. <i>J Shoulder Elbow Surg</i>. 32(9):1770-1783. PubMed: 37247780
+            </a>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[17]</strong> 
+            <a href="https://www.nature.com/articles/s41598-021-83025-2" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Dhurat R, et al. (2021). Platelet-rich plasma (PRP) in osteoarthritis (OA) knee: Correct dose critical for long term clinical efficacy. <i>Sci Rep</i>. 11:4278. doi: 10.1038/s41598-021-83025-2
+            </a>
+        </li>
+        <li style="margin-bottom: 0;">
+            <strong>[18]</strong> 
+            <a href="https://journals.sagepub.com/doi/10.1177/26348535241277625" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Pineda-Cortel MR, et al. (2024). Complexity of Platelet-Rich Plasma: Mechanism of Action, Growth Factor Utilization and Variation in Preparation. <i>Regen Med</i>. doi: 10.1177/26348535241277625
+            </a>
+        </li>
+    </ol>
+</div>
+`,
+  whyChooseUs: ['瑞士原裝進口專利高濃縮分離技術', '堅持使用<strong>高解析度超音波導引</strong>，確保針劑精準到達病灶', '醫師施打技術多項認證'],
+  treatmentFocus: ['慢性肌腱炎久治不癒。', '關節韌帶鬆弛與不稳定。', '退化性關節炎與半月軟骨損傷。'], images: [],
+  applicableConditions: ['退化性關節炎', '旋轉肌撕裂', '網球肘', '足底筋膜炎', '半月軟骨受損'],
+  qaList: [
+    { question: 'PRP 注射需要打幾次？', answer: '一般建議的完整療程為 3 次，每次間隔約 4 週。但因每個人受傷程度與身體修復能力不同，醫師會在第一次治療後，根據超音波影像追蹤修復狀況來調整後續次數。' },
+    { question: '打完 PRP 會很痛嗎？可以走路嗎？', answer: '注射後 2-3 天患部會有腫脹痠痛感（因為正在啟動修復發炎反應），這是正常的。一般行走與日常生活皆不受影響，但建議一週內避免劇烈運動，並多休息。' },
+    { question: '打 PRP 有副作用嗎？', answer: 'PRP 是非常安全的治療，因為用的完全是自己的血液，幾乎不會有過敏反應。' },
+    { question: 'PRP 治療保險有給付嗎？', answer: 'PRP 屬於自費項目，健保尚未給付。但若您持有「實支實付」型的醫療險，通常有機會申請理賠。' }
+  ]
+},
   
   // -----------------------------------------------------
   // 2. 聚焦式震波治療
@@ -367,7 +312,7 @@ const fullTreatmentsData: Treatment[] = [
 {
   slug: 'shockwave',
   title: '新竹體外震波推薦 / 聚焦式複合治療',
-  lastModified: '2026-01-21',
+  lastModified: '2026-04-06',
   tags: ['ESWT'],
   subtitle: '瑞士頂級設備擊碎鈣化與骨刺',
   description: '引進瑞士頂級震波設備，免開刀擊碎鈣化點，專治足底筋膜炎與頑固疼痛。',
@@ -378,10 +323,16 @@ const fullTreatmentsData: Treatment[] = [
   keywords: ['新竹震波', '體外震波推薦', '竹北震波', '足底筋膜炎', '鈣化性肌腱炎', '骨刺治療', '網球肘', '新竹物理治療'],
   youtubeVideoId: '3OK5zeUBeGc',
   contentHtml: `
+    <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+      <h3 style="margin-top: 0; color: #0369a1;">📝 文章摘要與核心觀點</h3>
+      <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+        體外震波治療（ESWT）是目前針對慢性疼痛、肌腱炎與鈣化問題，具備高度實證醫學支持的非侵入性療法。本文結合多項近十年的權威醫學期刊數據，證實<strong>聚焦式與發散式雙機複合震波</strong>能有效改善足底筋膜炎、網球肘與鈣化性肌腱炎。研究顯示，足底筋膜炎患者的治療改善率高達安慰劑的 2.58 倍 <sup><a href="https://doi.org/10.1097/MD.0000000000006621">[^1^]</a></sup>，而針對肩部慢性鈣化，亦有高比例的完全或部分吸收率 <sup><a href="https://doi.org/10.1136/ard.62.3.248" target="_blank" target="_blank">[^3^]</a></sup>。我們建議搭配高階超音波精準定位，並破除「越痛越有效」的迷思，以 5~7 分痛感的適當能量進行 3~6 次完整療程，即可安全、高效地啟動組織修復，從根本解決頑固疼痛。
+      </p>
+    </div>
+
     <p>您是否長期受慢性疼痛所苦？足底筋膜炎反覆發作、網球肘痛到拿不起杯子、或是旋轉肌鈣化讓您徹夜難眠？當復健、吃藥、打針都無法解決您的疼痛時，<strong>體外震波治療 (ESWT)</strong> 可能是您免於開刀的最佳選擇。</p>
 <br>
 <p><strong>位於新竹的宸新復健科</strong>，特別針對<strong>新竹科學園區</strong>高壓工作的族群，引進頂級雙機型震波設備，提供<strong>「聚焦式 + 發散式」複合式治療</strong>。我們堅持在治療前使用<strong>高解析超音波精準定位</strong>，如同導彈鎖定目標，將高能量聲波精準傳遞至深層受損組織，啟動身體的自我修復機制，從根本解決頑固疼痛。</p>
-
 
 <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
   <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -460,17 +411,15 @@ const fullTreatmentsData: Treatment[] = [
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
-<h2>🎯 誰適合打震波？適應症範圍</h2>
+<h2>🎯 誰適合打震波？適應症與實證醫學支持</h2>
 <p>震波治療是目前國際公認對於<strong>慢性肌腱炎</strong>與<strong>鈣化性肌腱炎</strong>最有效的非侵入性療法。若您的疼痛持續超過 3 個月，且對復健、藥物反應不佳，震波將是您的首選。</p>
 
-<h3>常見適應症包括：</h3>
+<h3>常見適應症與文獻治療根據：</h3>
 <ul>
-  <li><strong>足部問題：</strong> 足底筋膜炎、阿基里斯腱炎、跟骨骨刺。</li>
-  <li><strong>肘部問題：</strong> 網球肘（外上髁炎）、高爾夫球肘（內上髁炎）。</li>
-  <li><strong>肩部問題：</strong> 鈣化性肌腱炎、五十肩（沾黏性肩關節囊炎）、旋轉肌袖肌腱病變。</li>
-  <li><strong>膝部問題：</strong> 髕骨肌腱炎（跳躍膝）、髂脛束摩擦症候群（跑者膝）。</li>
-  <li><strong>髖部問題：</strong> 大轉子疼痛症候群。</li>
-  <li><strong>其他：</strong> 慢性肌筋膜疼痛症候群、骨折癒合不良。</li>
+  <li><strong>足部問題（足底筋膜炎、阿基里斯腱炎、跟骨骨刺）：</strong> 根據 2017 年《Medicine》期刊發表的薈萃分析（涵蓋 9 項隨機對照試驗，共 935 名患者），震波治療對於慢性足底筋膜炎的疼痛改善率是安慰劑組的 2.58 倍 <sup><a href="https://doi.org/10.1097/MD.0000000000006621" target="_blank">[^1^]</a></sup>。此外，2013年文獻也指出中高能量震波能有效減少患者早晨下床第一步的劇烈疼痛 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/23552334/" target="_blank">[^4^]</a></sup>。</li>
+  <li><strong>肘部問題（網球肘、高爾夫球肘）：</strong> 針對外上髁炎（網球肘），2020 年的一項系統性回顧與薈萃分析（涵蓋 13 篇文獻、1035 位患者）證實，震波治療能顯著降低視覺疼痛評分 (VAS) 並恢復病患的握力，且安全性極高 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/32309425/" target="_blank">[^2^]</a></sup>。</li>
+  <li><strong>肩部問題（鈣化性肌腱炎、五十肩、旋轉肌病變）：</strong> 臨床研究表明，震波能有效擊碎深層鈣化。2003 年的單盲試驗顯示，高達 71% 的患者在治療後出現鈣化點的完全吸收 (31%) 或部分吸收 (40%) <sup><a href="https://doi.org/10.1136/ard.62.3.248" target="_blank">[^3^]</a></sup>；2024 年發表的最新文獻進一步分析了影響肩部鈣化沉積物吸收的因素，證實震波做為免開刀選項的高可靠性 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/39369947/" target="_blank">[^5^]</a></sup>。</li>
+  <li><strong>膝部與髖部問題：</strong> 髕骨肌腱炎（跳躍膝）、大轉子疼痛症候群。</li>
 </ul>
 
 <p><img src="/images/treatments/shockwave/b.webp" alt="ESWT體外震波適應症範圍：涵蓋足底筋膜炎、網球肘、鈣化性肌腱炎與肩頸慢性痛。"></p>
@@ -500,6 +449,18 @@ const fullTreatmentsData: Treatment[] = [
   <h4 style="margin-top: 0; color: #0e7490;">💡 宸新的獨家打法：先聚焦，後發散</h4>
   <p style="margin-bottom: 0; color: #334155;">我們會先用<strong>聚焦式震波</strong>針對深層病灶（如鈣化點）進行精準打擊，破壞沾黏組織；接著依病患狀況使用<strong>發散式震波</strong>掃描周邊緊繃的肌肉群，進行大範圍放鬆。這種「點面結合」的打法，能大幅提升治療後的舒適度與活動度。</p>
 </div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h2>🛑 破解迷思：震波治療的 3 大常見誤區解析</h2>
+<ol style="line-height: 1.8;">
+  <li><strong>誤區一：震波越痛越有效？必須忍耐到極限？</strong><br>
+  <strong>👉 醫學實證解析：</strong>這是一個嚴重的迷思。震波能量太弱確實無效，但能量太強會導致周邊健康組織過度發炎與微血管破裂。文獻與臨床指引皆建議，將疼痛控制在視覺類比量表 (VAS) 的 <strong>5~7 分中度痠痛感</strong> 最適合。在此範圍內，既能產生足夠的空穴效應 (Cavitation effect) 來破壞鈣化與沾黏，又能避免組織遭受不必要的二次傷害。</li>
+  <li><strong>誤區二：只要打一次震波，我的痛就會徹底消失？</strong><br>
+  <strong>👉 醫學實證解析：</strong>許多患者期望「一針見效」，但震波的原理是「破壞後重建」，誘發身體啟動血管新生與組織自我修復機制。細胞的增生與膠原蛋白的重塑需要時間。臨床實證指出，通常需要 <strong>3~6 次完整療程</strong>，且最佳的組織修復效果往往在療程結束後的 4 到 12 週內才會逐漸顯現。</li>
+  <li><strong>誤區三：震波可以取代所有骨科手術，再大的鈣化都能打掉？</strong><br>
+  <strong>👉 醫學實證解析：</strong>雖然震波治療成功挽救了許多患者免於開刀，但它並非萬靈丹。根據 2024 年的研究 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/39369947/" target="_blank">[^5^]</a></sup>，鈣化點的吸收率與鈣化的質地（如 Gärtner 分類中的柔軟度）、大小及病程時間有關。對於處於急性發炎期、液化中的極大鈣化，或是合併嚴重肌腱全層撕裂的患者，有時仍需由醫師評估是否採用超音波導引抽吸 (Barbotage) 或微創手術介入。</li>
+</ol>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -595,6 +556,44 @@ const fullTreatmentsData: Treatment[] = [
     </div>
   </div>
 </section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 2rem; border-radius: 1rem; margin-top: 3rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0;">
+    <h3 style="color: #334155; margin-top: 0; margin-bottom: 1rem; font-size: 1.2rem; border-bottom: 2px solid #cbd5e1; padding-bottom: 0.5rem;">📚 參考文獻與實證數據來源</h3>
+    <ol style="padding-left: 1.5rem; margin-bottom: 0; line-height: 1.6; list-style-type: none;">
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[1]</strong> 
+            <a href="https://doi.org/10.1097/MD.0000000000006621" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Sun, J., et al. (2017). Extracorporeal shock wave therapy is effective in treating chronic plantar fasciitis: A meta-analysis of RCTs. <i>Medicine (Baltimore)</i>, 96(15), e6621. doi: 10.1097/MD.0000000000006621
+            </a> (實證：震波治療對於慢性足底筋膜炎的疼痛改善顯著優於對照組，改善率為安慰劑組的 2.58 倍)
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[2]</strong> 
+            <a href="https://doi.org/10.1155/2020/2064781" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Yao, G., et al. (2020). Efficacy of Extracorporeal Shock Wave Therapy for Lateral Epicondylitis: A Systematic Review and Meta-Analysis. <i>BioMed Research International</i>, 2020, 2064781. doi: 10.1155/2020/2064781
+            </a> (實證：體外震波可有效降低網球肘疼痛並提升握力功能，安全性優於多種其他療法)
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[3]</strong> 
+            <a href="https://doi.org/10.1136/ard.62.3.248" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Cosentino, R., et al. (2003). Extracorporeal shock wave therapy for chronic calcific tendinitis of the shoulder: single blind study. <i>Annals of the Rheumatic Diseases</i>, 62(3), 248-250. doi: 10.1136/ard.62.3.248
+            </a> (實證：震波治療組有 71% 患者（部分吸收 40% + 完全吸收 31%）觀察到肩部鈣化點吸收或顯著縮小，對照組則無顯著變化)
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+            <strong>[4]</strong> 
+            <a href="https://pubmed.ncbi.nlm.nih.gov/23552334/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Dizon, J. N., et al. (2013). Effectiveness of extracorporeal shock wave therapy in chronic plantar fasciitis: a meta-analysis. <i>American Journal of Physical Medicine & Rehabilitation</i>, 92(7), 606-620. PMID: 23552334
+            </a> (實證：中強度與高強度震波對於頑固型足底筋膜炎均有顯著長期療效，可改善整體疼痛與功能預後)
+        </li>
+        <li style="margin-bottom: 0;">
+            <strong>[5]</strong> 
+            <a href="https://doi.org/10.1016/j.jse.2024.07.056" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                Sakai, S., et al. (2025). Factors associated with resorption of calcific deposits in the shoulder with extracorporeal shock wave therapy. <i>Journal of Shoulder and Elbow Surgery</i>, 34(5), 1208-1215. doi: 10.1016/j.jse.2024.07.056
+            </a> (實證：2024/2025年最新研究（117肩，9次療程）系統性分析震波治療對肩部鈣化沉積物重吸收之影響因子，確認 Gärtner 鈣化分類與超音波血流訊號為關鍵預測指標)
+        </li>
+    </ol>
+</div>
 
 <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
   <h2 style="color: #047857; margin-top: 0;">👨‍⚕️ 別讓疼痛限制了您的生活！</h2>
