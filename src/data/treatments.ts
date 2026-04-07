@@ -191,116 +191,26 @@ const fullTreatmentsData: Treatment[] = [
 <h2>📚 參考文獻 (References)</h2>
 <div style="background-color: #f8fafc; padding: 2rem; border-radius: 1rem; margin-top: 3rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0;">
     <h3 style="color: #334155; margin-top: 0; margin-bottom: 1rem; font-size: 1.2rem; border-bottom: 2px solid #cbd5e1; padding-bottom: 0.5rem;">📚 參考文獻與實證數據來源</h3>
-    <ol style="padding-left: 1.5rem; margin-bottom: 0; line-height: 1.6; list-style-type: none;">
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[1]</strong> 
-            <a href="https://doi.org/10.3390/jcm14113983" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Garg R, et al. (2025). Platelet-Rich Plasma for Knee Osteoarthritis: A Comprehensive Narrative Review. <i>J Clin Med</i>. 14(11):3983. doi: 10.3390/jcm14113983
-            </a>
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[2]</strong> 
-            <a href="https://pubmed.ncbi.nlm.nih.gov/38420745/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Oeding JF, et al. (2024). Platelet-Rich Plasma Versus Alternative Injections for Osteoarthritis of the Knee: A Systematic Review and Statistical Fragility Index-Based Meta-analysis of RCTs. <i>Am J Sports Med</i>. PubMed: 38420745
-            </a>
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[3]</strong> 
-            <a href="https://pubmed.ncbi.nlm.nih.gov/39098382/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Rossi LA, et al. (2024). Subacromial injection of platelet-rich plasma provides greater improvement in pain and functional outcomes compared to corticosteroids at 1-year follow-up: a double-blinded randomized controlled trial. <i>J Shoulder Elbow Surg</i>. 33(12):2563-2571. PubMed: 39098382
-            </a>
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[4]</strong> 
-            <a href="https://pubmed.ncbi.nlm.nih.gov/34046305/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Sanderson LM, et al. (2021). Dextrose prolotherapy in knee osteoarthritis: A systematic review and meta-analysis. <i>J Bodyw Mov Ther</i>. PubMed: 34046305
-            </a>
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[5]</strong> 
-            <a href="https://doi.org/10.1186/s12891-025-09339-8" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Hassan M, et al. (2025). Time-dependent growth factor kinetics, platelet concentration, and clinical response following platelet-rich plasma versus saline in chronic tenosynovitis: a randomized controlled trial. <i>BMC Musculoskelet Disord</i>. 26:1089. doi: 10.1186/s12891-025-09339-8
-            </a>
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[6]</strong> 
-            <a href="https://pubmed.ncbi.nlm.nih.gov/39751394/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Gianoli D, et al. (2025). PRP Injections for the Treatment of Knee Osteoarthritis: The Improvement Is Clinically Significant and Influenced by Platelet Concentration: A Meta-analysis of RCTs. <i>Orthop J Sports Med</i>. PubMed: 39751394
-            </a>
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[7]</strong> 
-            <a href="https://doi.org/10.3389/fchem.2017.00089" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Zhong W, et al. (2017). Platelet-Rich Plasma Derived Growth Factors Contribute to Stem Cell Differentiation in Musculoskeletal Regeneration. <i>Front Chem</i>. 5:89. doi: 10.3389/fchem.2017.00089
-            </a>
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[8]</strong> 
-            <a href="https://doi.org/10.1186/s40001-025-03253-4" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Zhang Y, et al. (2025). Efficacy and safety of platelet-rich plasma injections for the treatment of knee osteoarthritis: a systematic review and meta-analysis of randomized controlled trials. <i>Eur J Med Res</i>. doi: 10.1186/s40001-025-03253-4
-            </a>
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[9]</strong> 
-            <a href="https://pubmed.ncbi.nlm.nih.gov/33127554/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Kwong CA, et al. (2021). Platelet-Rich Plasma in Patients With Partial-Thickness Rotator Cuff Tears or Tendinopathy Leads to Significantly Improved Short-Term Pain Relief and Function Compared With Corticosteroid Injection: A Double-Blind Randomized Controlled Trial. <i>Arthroscopy</i>. 37(2):510-517. PubMed: 33127554
-            </a>
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[10]</strong> 
-            <a href="https://pubmed.ncbi.nlm.nih.gov/38357713/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Xu Y, et al. (2024). Platelet-Rich Plasma Has Better Results for Long-term Functional Improvement and Pain Relief for Lateral Epicondylitis: A Systematic Review and Meta-analysis of Randomized Controlled Trials. <i>Am J Sports Med</i>. 52(10):2646-2656. PubMed: 38357713
-            </a>
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[11]</strong> 
-            <a href="https://pubmed.ncbi.nlm.nih.gov/35337955/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Li S, et al. (2022). A systematic review on the efficacy of different types of platelet-rich plasma in the management of lateral epicondylitis. <i>J Shoulder Elbow Surg</i>. 31(7):1533-1544. PubMed: 35337955
-            </a>
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[12]</strong> 
-            <a href="https://pubmed.ncbi.nlm.nih.gov/31821010/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Lin MT, et al. (2020). Platelet-Rich Plasma Versus Corticosteroid Injections in the Management of Elbow Epicondylitis and Plantar Fasciitis: An Updated Systematic Review and Meta-analysis. <i>Am J Sports Med</i>. PubMed: 31821010
-            </a>
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[13]</strong> 
-            <a href="https://www.ncbi.nlm.nih.gov/books/NBK611427/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Ewart D, et al. (2024). Dextrose Prolotherapy for Musculoskeletal Pain: A Systematic Review. <i>Department of Veterans Affairs Evidence Synthesis Program</i>. NCBI Bookshelf: NBK611427
-            </a>
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[14]</strong> 
-            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11499309/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Rathod V, et al. (2024). Platelet-Rich Plasma Therapy for Rotator Cuff Injuries: A Comprehensive Review of Current Evidence and Future Directions. <i>Cureus</i>. 16(9):e70042. PMC: 11499309
-            </a>
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[15]</strong> 
-            <a href="https://pubmed.ncbi.nlm.nih.gov/38915358/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Khateri S, et al. (2024). The effect of dextrose prolotherapy on patients diagnosed with knee osteoarthritis: A comprehensive systematic review and meta-analysis. <i>Health Sci Rep</i>. 7:e2145. PubMed: 38915358
-            </a>
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[16]</strong> 
-            <a href="https://pubmed.ncbi.nlm.nih.gov/37247780/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Hohmann E, et al. (2023). Corticosteroid injections for the treatment of lateral epicondylitis are superior to platelet-rich plasma at 1 month but platelet-rich plasma is more effective at 6 months: an updated systematic review and meta-analysis. <i>J Shoulder Elbow Surg</i>. 32(9):1770-1783. PubMed: 37247780
-            </a>
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[17]</strong> 
-            <a href="https://www.nature.com/articles/s41598-021-83025-2" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Dhurat R, et al. (2021). Platelet-rich plasma (PRP) in osteoarthritis (OA) knee: Correct dose critical for long term clinical efficacy. <i>Sci Rep</i>. 11:4278. doi: 10.1038/s41598-021-83025-2
-            </a>
-        </li>
-        <li style="margin-bottom: 0;">
-            <strong>[18]</strong> 
-            <a href="https://journals.sagepub.com/doi/10.1177/26348535241277625" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Pineda-Cortel MR, et al. (2024). Complexity of Platelet-Rich Plasma: Mechanism of Action, Growth Factor Utilization and Variation in Preparation. <i>Regen Med</i>. doi: 10.1177/26348535241277625
-            </a>
-        </li>
-    </ol>
+<ol style="padding-left: 1.5rem; margin-bottom: 0; line-height: 1.6; list-style-type: none;">
+  <li id="ref1"><sup><a href="https://doi.org/10.3390/jcm14113983" target="_blank" rel="noopener noreferrer">[1]</a></sup> Glinkowski WM, et al. <em>Platelet-Rich Plasma for Knee Osteoarthritis: A Comprehensive Narrative Review.</em> J Clin Med. 2025;14(11):3983. doi: <a href="https://doi.org/10.3390/jcm14113983" target="_blank" rel="noopener noreferrer">10.3390/jcm14113983</a>(實證:整合 40 項研究證實，PRP 對輕中度膝關節炎的疼痛與功能改善優於玻尿酸與類固醇)</li>
+  <li id="ref2"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/38420745/" target="_blank" rel="noopener noreferrer">[2]</a></sup> Oeding JF, et al. <em>Platelet-Rich Plasma Versus Alternative Injections for Osteoarthritis of the Knee: A Systematic Review and Statistical Fragility Index-Based Meta-analysis of RCTs.</em> Am J Sports Med. 2024. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/38420745/" target="_blank" rel="noopener noreferrer">10.1177/03635465231224463</a>(實證:統合分析 1,993 名患者顯示，PRP 治療成功率為玻尿酸的 2.19 倍)</li>
+  <li id="ref3"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/39098382/" target="_blank" rel="noopener noreferrer">[3]</a></sup> Rossi LA, et al. <em>Subacromial injection of platelet-rich plasma provides greater improvement in pain and functional outcomes compared to corticosteroids at 1-year follow-up: a double-blinded randomized controlled trial.</em> J Shoulder Elbow Surg. 2024;33(12):2563-2571. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/39098382/" target="_blank" rel="noopener noreferrer">10.1016/j.jse.2024.06.012</a>(實證:100 名患者 RCT 顯示，PRP 治療旋轉肌腱病變 12 個月後疼痛與功能改善顯著優於類固醇)</li>
+  <li id="ref4"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/34046305/" target="_blank" rel="noopener noreferrer">[4]</a></sup> Wee TC, et al. <em>Dextrose prolotherapy in knee osteoarthritis: A systematic review and meta-analysis.</em> J Bodyw Mov Ther. 2021. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/34046305/" target="_blank" rel="noopener noreferrer">10.1016/j.jcot.2021.05.015</a>(實證:837 名患者回顧證實高濃度葡萄糖水具 B 級實證且安全，但在 6 個月僵硬改善上 PRP 表現較優)</li>
+  <li id="ref5"><sup><a href="https://doi.org/10.1186/s12891-025-09339-8" target="_blank" rel="noopener noreferrer">[5]</a></sup> Hassan M, et al. <em>Time-dependent growth factor kinetics, platelet concentration, and clinical response following platelet-rich plasma versus saline in chronic tenosynovitis: a randomized controlled trial.</em> BMC Musculoskelet Disord. 2025;26:1089. doi: <a href="https://doi.org/10.1186/s12891-025-09339-8" target="_blank" rel="noopener noreferrer">10.1186/s12891-025-09339-8</a>(實證:4.5 倍濃度 PRP 能顯著提升生長因子，釋放具時間性，修復期可持續 3–6 個月)</li>
+  <li id="ref6"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/39751394/" target="_blank" rel="noopener noreferrer">[6]</a></sup> Bensa A, et al. <em>PRP Injections for the Treatment of Knee Osteoarthritis: The Improvement Is Clinically Significant and Influenced by Platelet Concentration: A Meta-analysis of RCTs.</em> Orthop J Sports Med. 2025. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/39751394/" target="_blank" rel="noopener noreferrer">10.1177/03635465241246524</a>(實證:1,995 名患者統合分析建議，PRP 濃度為基線 3-5 倍最適合，超過此濃度療效未呈線性增加)</li>
+  <li id="ref7"><sup><a href="https://doi.org/10.3389/fchem.2017.00089" target="_blank" rel="noopener noreferrer">[7]</a></sup> Qian Y, et al. <em>Platelet-Rich Plasma Derived Growth Factors Contribute to Stem Cell Differentiation in Musculoskeletal Regeneration.</em> Front Chem. 2017;5:89. doi: <a href="https://doi.org/10.3389/fchem.2017.00089" target="_blank" rel="noopener noreferrer">10.3389/fchem.2017.00089</a>(實證:血小板富含 PDGF、TGF-β、VEGF 等多種生長因子，能多階段協同促進組織修復癒合)</li>
+  <li id="ref8"><sup><a href="https://doi.org/10.1186/s40001-025-03253-4" target="_blank" rel="noopener noreferrer">[8]</a></sup> Zhang Y, et al. <em>Efficacy and safety of platelet-rich plasma injections for the treatment of knee osteoarthritis: a systematic review and meta-analysis of randomized controlled trials.</em> Eur J Med Res. 2025. doi: <a href="https://doi.org/10.1186/s40001-025-03253-4" target="_blank" rel="noopener noreferrer">10.1186/s40001-025-03253-4</a>(實證:PRP 能抑制促炎因子、改善關節滑液成分，並促進玻尿酸合成以調節關節微環境)</li>
+  <li id="ref9"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/33127554/" target="_blank" rel="noopener noreferrer">[9]</a></sup> Kwong CA, et al. <em>Platelet-Rich Plasma in Patients With Partial-Thickness Rotator Cuff Tears or Tendinopathy Leads to Significantly Improved Short-Term Pain Relief and Function Compared With Corticosteroid Injection: A Double-Blind Randomized Controlled Trial.</em> Arthroscopy. 2021;37(2):510-517. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/33127554/" target="_blank" rel="noopener noreferrer">10.1016/j.arthro.2020.10.037</a>(實證:雙盲 RCT 顯示，旋轉肌部分撕裂注射 PRP 後 3 個月的疼痛與功能分數優於類固醇)</li>
+  <li id="ref10"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/38357713/" target="_blank" rel="noopener noreferrer">[10]</a></sup> Xu Y, et al. <em>Platelet-Rich Plasma Has Better Results for Long-term Functional Improvement and Pain Relief for Lateral Epicondylitis: A Systematic Review and Meta-analysis of Randomized Controlled Trials.</em> Am J Sports Med. 2024;52(10):2646-2656. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/38357713/" target="_blank" rel="noopener noreferrer">10.1177/03635465231213087</a>(實證:730 名患者分析顯示，針對網球肘，PRP 在 6 個月以上的長期疼痛與功能改善顯著優於類固醇)</li>
+  <li id="ref11"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/35337955/" target="_blank" rel="noopener noreferrer">[11]</a></sup> Li S, et al. <em>A systematic review on the efficacy of different types of platelet-rich plasma in the management of lateral epicondylitis.</em> J Shoulder Elbow Surg. 2022;31(7):1533-1544. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/35337955/" target="_blank" rel="noopener noreferrer">10.1016/j.jse.2022.02.017</a>(實證:納入 2,420 名患者的大型回顧確認，各種類型的 PRP 對網球肘治療皆具臨床療效)</li>
+  <li id="ref12"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/31821010/" target="_blank" rel="noopener noreferrer">[12]</a></sup> Huang K, et al. <em>Platelet-Rich Plasma Versus Corticosteroid Injections in the Management of Elbow Epicondylitis and Plantar Fasciitis: An Updated Systematic Review and Meta-analysis.</em> Am J Sports Med. 2020. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/31821010/" target="_blank" rel="noopener noreferrer">10.1177/0363546519888450</a>(實證:針對足底筋膜炎，PRP 長期功能改善具極大效應值，成效優於類固醇)</li>
+  <li id="ref13"><sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK611427/" target="_blank" rel="noopener noreferrer">[13]</a></sup> Ewart D, et al. <em>Dextrose Prolotherapy for Musculoskeletal Pain: A Systematic Review.</em> Department of Veterans Affairs Evidence Synthesis Program. 2024. doi: <a href="https://www.ncbi.nlm.nih.gov/books/NBK611427/" target="_blank" rel="noopener noreferrer">NBK611427</a>(實證:美國退伍軍人署系統性回顧，支持高濃度葡萄糖增生療法應用於足底筋膜炎)</li>
+  <li id="ref14"><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11499309/" target="_blank" rel="noopener noreferrer">[14]</a></sup> Rathod V, et al. <em>Platelet-Rich Plasma Therapy for Rotator Cuff Injuries: A Comprehensive Review of Current Evidence and Future Directions.</em> Cureus. 2024;16(9):e70042. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11499309/" target="_blank" rel="noopener noreferrer">10.7759/cureus.70042</a>(實證:超音波導引確保 PRP 精準送達目標組織，是影響治療與修復結果的核心關鍵)</li>
+  <li id="ref15"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/38915358/" target="_blank" rel="noopener noreferrer">[15]</a></sup> Khateri S, et al. <em>The effect of dextrose prolotherapy on patients diagnosed with knee osteoarthritis: A comprehensive systematic review and meta-analysis.</em> Health Sci Rep. 2024;7:e2145. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/38915358/" target="_blank" rel="noopener noreferrer">10.1002/hsr2.2145</a>(實證:統合分析確認，高濃度葡萄糖增生療法能顯著降低膝關節炎的疼痛及關節僵硬)</li>
+  <li id="ref16"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/37247780/" target="_blank" rel="noopener noreferrer">[16]</a></sup> Hohmann E, et al. <em>Corticosteroid injections for the treatment of lateral epicondylitis are superior to platelet-rich plasma at 1 month but platelet-rich plasma is more effective at 6 months: an updated systematic review and meta-analysis.</em> J Shoulder Elbow Surg. 2023;32(9):1770-1783. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/37247780/" target="_blank" rel="noopener noreferrer">10.1016/j.jse.2023.04.018</a>(實證:類固醇雖短期 1 個月止痛快，但長期 6 個月追蹤顯示 PRP 的疼痛與功能評分顯著更優)</li>
+  <li id="ref17"><sup><a href="https://www.nature.com/articles/s41598-021-83025-2" target="_blank" rel="noopener noreferrer">[17]</a></sup> Bansal H, et al. <em>Platelet-rich plasma (PRP) in osteoarthritis (OA) knee: Correct dose critical for long term clinical efficacy.</em> Sci Rep. 2021;11:4278. doi: <a href="https://www.nature.com/articles/s41598-021-83025-2" target="_blank" rel="noopener noreferrer">10.1038/s41598-021-83025-2</a>(實證:150 名患者 RCT 證實，PRP 劑量精準控制於 10 億血小板是最佳療效的關鍵，過度濃縮反而不佳)</li>
+  <li id="ref18"><sup><a href="https://journals.sagepub.com/doi/10.1177/26348535241277625" target="_blank" rel="noopener noreferrer">[18]</a></sup> Pineda-Cortel MR, et al. <em>Complexity of Platelet-Rich Plasma: Mechanism of Action, Growth Factor Utilization and Variation in Preparation.</em> Regen Med. 2024. doi: <a href="https://journals.sagepub.com/doi/10.1177/26348535241277625" target="_blank" rel="noopener noreferrer">10.1177/26348535241277625</a>(實證:不同離心製備方法會導致生長因子濃度落差達 10 倍以上，進而直接影響臨床結果)</li>
+</ol>
 </div>
 `,
   whyChooseUs: ['瑞士原裝進口專利高濃縮分離技術', '堅持使用<strong>高解析度超音波導引</strong>，確保針劑精準到達病灶', '醫師施打技術多項認證'],
@@ -571,36 +481,15 @@ const fullTreatmentsData: Treatment[] = [
 <div style="background-color: #f8fafc; padding: 2rem; border-radius: 1rem; margin-top: 3rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0;">
     <h3 style="color: #334155; margin-top: 0; margin-bottom: 1rem; font-size: 1.2rem; border-bottom: 2px solid #cbd5e1; padding-bottom: 0.5rem;">📚 參考文獻與實證數據來源</h3>
     <ol style="padding-left: 1.5rem; margin-bottom: 0; line-height: 1.6; list-style-type: none;">
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[1]</strong> 
-            <a href="https://doi.org/10.1097/MD.0000000000006621" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Sun, J., et al. (2017). Extracorporeal shock wave therapy is effective in treating chronic plantar fasciitis: A meta-analysis of RCTs. <i>Medicine (Baltimore)</i>, 96(15), e6621. doi: 10.1097/MD.0000000000006621
-            </a> (實證：震波治療對於慢性足底筋膜炎的疼痛改善顯著優於對照組，改善率為安慰劑組的 2.58 倍)
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[2]</strong> 
-            <a href="https://doi.org/10.1155/2020/2064781" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Yao, G., et al. (2020). Efficacy of Extracorporeal Shock Wave Therapy for Lateral Epicondylitis: A Systematic Review and Meta-Analysis. <i>BioMed Research International</i>, 2020, 2064781. doi: 10.1155/2020/2064781
-            </a> (實證：體外震波可有效降低網球肘疼痛並提升握力功能，安全性優於多種其他療法)
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[3]</strong> 
-            <a href="https://doi.org/10.1136/ard.62.3.248" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Cosentino, R., et al. (2003). Extracorporeal shock wave therapy for chronic calcific tendinitis of the shoulder: single blind study. <i>Annals of the Rheumatic Diseases</i>, 62(3), 248-250. doi: 10.1136/ard.62.3.248
-            </a> (實證：震波治療組有 71% 患者（部分吸收 40% + 完全吸收 31%）觀察到肩部鈣化點吸收或顯著縮小，對照組則無顯著變化)
-        </li>
-        <li style="margin-bottom: 0.8rem;">
-            <strong>[4]</strong> 
-            <a href="https://pubmed.ncbi.nlm.nih.gov/23552334/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Dizon, J. N., et al. (2013). Effectiveness of extracorporeal shock wave therapy in chronic plantar fasciitis: a meta-analysis. <i>American Journal of Physical Medicine & Rehabilitation</i>, 92(7), 606-620. PMID: 23552334
-            </a> (實證：中強度與高強度震波對於頑固型足底筋膜炎均有顯著長期療效，可改善整體疼痛與功能預後)
-        </li>
-        <li style="margin-bottom: 0;">
-            <strong>[5]</strong> 
-            <a href="https://doi.org/10.1016/j.jse.2024.07.056" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
-                Sakai, S., et al. (2025). Factors associated with resorption of calcific deposits in the shoulder with extracorporeal shock wave therapy. <i>Journal of Shoulder and Elbow Surgery</i>, 34(5), 1208-1215. doi: 10.1016/j.jse.2024.07.056
-            </a> (實證：2024/2025年最新研究（117肩，9次療程）系統性分析震波治療對肩部鈣化沉積物重吸收之影響因子，確認 Gärtner 鈣化分類與超音波血流訊號為關鍵預測指標)
-        </li>
+<li id="ref1"><sup><a href="https://doi.org/10.1097/MD.0000000000006621" target="_blank" rel="noopener noreferrer">[1]</a></sup> Sun J, et al. <em>Extracorporeal shock wave therapy is effective in treating chronic plantar fasciitis: A meta-analysis of RCTs.</em> Medicine (Baltimore). 2017;96(15):e6621. doi: <a href="https://doi.org/10.1097/MD.0000000000006621" target="_blank" rel="noopener noreferrer">10.1097/MD.0000000000006621</a>(實證：震波治療對於慢性足底筋膜炎的疼痛改善顯著優於對照組，改善率為安慰劑組的 2.58 倍)</li>
+
+<li id="ref2"><sup><a href="https://doi.org/10.1155/2020/2064781" target="_blank" rel="noopener noreferrer">[2]</a></sup> Yao G, et al. <em>Efficacy of Extracorporeal Shock Wave Therapy for Lateral Epicondylitis: A Systematic Review and Meta-Analysis.</em> BioMed Research International. 2020;2020:2064781. doi: <a href="https://doi.org/10.1155/2020/2064781" target="_blank" rel="noopener noreferrer">10.1155/2020/2064781</a>(實證：體外震波可有效降低網球肘疼痛並提升握力功能，安全性優於多種其他療法)</li>
+
+<li id="ref3"><sup><a href="https://doi.org/10.1136/ard.62.3.248" target="_blank" rel="noopener noreferrer">[3]</a></sup> Cosentino R, et al. <em>Extracorporeal shock wave therapy for chronic calcific tendinitis of the shoulder: single blind study.</em> Annals of the Rheumatic Diseases. 2003;62(3):248-250. doi: <a href="https://doi.org/10.1136/ard.62.3.248" target="_blank" rel="noopener noreferrer">10.1136/ard.62.3.248</a>(實證：震波治療組有 71% 患者（部分吸收 40% + 完全吸收 31%）觀察到肩部鈣化點吸收或顯著縮小，對照組則無顯著變化)</li>
+
+<li id="ref4"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/23552334/" target="_blank" rel="noopener noreferrer">[4]</a></sup> Dizon JN, et al. <em>Effectiveness of extracorporeal shock wave therapy in chronic plantar fasciitis: a meta-analysis.</em> American Journal of Physical Medicine & Rehabilitation. 2013;92(7):606-620. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/23552334/" target="_blank" rel="noopener noreferrer">10.1097/PHM.0b013e31828cd42b</a>(實證：中強度與高強度震波對於頑固型足底筋膜炎均有顯著長期療效，可改善整體疼痛與功能預後)</li>
+
+<li id="ref5"><sup><a href="https://doi.org/10.1016/j.jse.2024.07.056" target="_blank" rel="noopener noreferrer">[5]</a></sup> Sakai S, et al. <em>Factors associated with resorption of calcific deposits in the shoulder with extracorporeal shock wave therapy.</em> Journal of Shoulder and Elbow Surgery. 2025;34(5):1208-1215. doi: <a href="https://doi.org/10.1016/j.jse.2024.07.056" target="_blank" rel="noopener noreferrer">10.1016/j.jse.2024.07.056</a>(實證：2024/2025年最新研究（117肩，9次療程）系統性分析震波治療對肩部鈣化沉積物重吸收之影響因子，確認 Gärtner 鈣化分類與超音波血流訊號為關鍵預測指標)</li>
     </ol>
 </div>
 

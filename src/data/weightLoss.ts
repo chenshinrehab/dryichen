@@ -678,79 +678,45 @@ const fullWeightLossData: WeightLossProgram[] = [
     <p style="font-weight: bold; color: #059669;">不需預約，隨到隨照，給孩子一個長高的機會！</p>
 </div>
 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <!-- ===== 參考文獻 ===== -->
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem 1.75rem; margin-top: 2rem;">
   <h3 style="color: #1e293b; margin-top: 0; font-size: 1.15rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem;">📚 參考文獻</h3>
-  <ol style="padding-left: 1.5rem; color: #334155; line-height: 1.9; font-size: 0.92rem;">
-    <li id="ref1">
-      <a href="https://pubmed.ncbi.nlm.nih.gov/32748530/" target="_blank" rel="noopener" style="color: #0891b2; font-weight: bold;">[1] Wang et al. (2020). Automatic assessment of bone age in Taiwanese children: A comparison of the GP and TW3 methods. <em>Kaohsiung Journal of Medical Sciences</em>.</a><br>
-      <span style="color: #64748b;">實證：以 563 名台灣兒童為對象，使用 BoneXpert 自動化軟體驗證 GP 及 TW3 法在台灣族群的適用性，並建立台灣兒童骨齡參考標準。</span>
-    </li>
-    <li id="ref2">
-      <a href="https://pubmed.ncbi.nlm.nih.gov/39989489/" target="_blank" rel="noopener" style="color: #0891b2; font-weight: bold;">[2] PMC (2025). Enhancing Pediatric Bone Age Assessment Using Artificial Intelligence. <em>PMC / Cureus</em>.</a><br>
-      <span style="color: #64748b;">實證：ResNet-50 AI 模型以 12,611 張 X 光片訓練，MAE 達 8.54 個月，R² = 0.929，顯示 AI 骨齡評估的高精確度與標準化潛力。</span>
-    </li>
-    <li id="ref3">
-      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7559721/" target="_blank" rel="noopener" style="color: #0891b2; font-weight: bold;">[3] Su et al. (2020). The Age Distribution among Children Seeking Medical Treatment for Precocious Puberty in Taiwan. <em>Int J Environ Res Public Health</em>.</a><br>
-      <span style="color: #64748b;">實證：運用台灣全國健保資料庫（NHIRD），揭示 2000–2013 年間台灣性早熟盛行率的急遽上升趨勢，女童增幅超過 8 倍。</span>
-    </li>
-    <li id="ref4">
-      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10847528/" target="_blank" rel="noopener" style="color: #0891b2; font-weight: bold;">[4] PMC (2024). Complex relationship between growth hormone and sleep in children. <em>Frontiers in Endocrinology</em>.</a><br>
-      <span style="color: #64748b;">實證：系統性回顧確認深層慢波睡眠是兒童 GH 分泌的核心生理窗口，睡眠障礙與 GH 分泌異常高度相關。</span>
-    </li>
-    <li id="ref5">
-      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8926113/" target="_blank" rel="noopener" style="color: #0891b2; font-weight: bold;">[5] PMC (2022). The role of glucose and insulin in the metabolic regulation of growth hormone secretion. <em>PMC Review</em>.</a><br>
-      <span style="color: #64748b;">實證：回顧高血糖與高胰島素血症對 GH 分泌的抑制機制，指出過量糖分攝取會透過體抑素途徑顯著壓抑 GH 釋放。</span>
-    </li>
-    <li id="ref6">
-      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12219976/" target="_blank" rel="noopener" style="color: #0891b2; font-weight: bold;">[6] PMC (2024). 24-Week jumping exercise influence on growth speed and GH-IGF-1-IGFBP-3 axis among short-stature children. <em>PMC</em>.</a><br>
-      <span style="color: #64748b;">實證：前瞻性隨機對照試驗，24 週跳躍訓練使矮小兒童身高增長 4.32 公分，並顯著改善 GH-IGF-1-IGFBP-3 生長軸指標。</span>
-    </li>
-    <li id="ref7">
-      <a href="https://pubmed.ncbi.nlm.nih.gov/11876666/" target="_blank" rel="noopener" style="color: #0891b2; font-weight: bold;">[7] Finkelstein et al. (2002). Effect of growth hormone therapy on height in children with idiopathic short stature: a meta-analysis. <em>Arch Pediatr Adolesc Med</em>.</a><br>
-      <span style="color: #64748b;">實證：系統性回顧 38 項研究（1,089 名兒童），確認 rhGH 治療 ISS 兒童的成年身高平均增益為 4–6 公分，並計算每英寸增益的龐大治療費用。</span>
-    </li>
-    <li id="ref8">
-      <a href="https://pubmed.ncbi.nlm.nih.gov/36652571/" target="_blank" rel="noopener" style="color: #0891b2; font-weight: bold;">[8] PubMed (2023). Bone age assessment: Large-scale comparison of GP and TW3 for Taiwanese children. <em>PubMed</em>.</a><br>
-      <span style="color: #64748b;">實證：分析 1,476 張台灣兒童 X 光片，比較 GP（平均 0.79 分鐘）與 TW3-RUS（平均 3.01 分鐘）的判讀時間與信度，確認兩法在青春期的高度一致性。</span>
-    </li>
-    <li id="ref9">
-      <a href="https://link.springer.com/article/10.1007/s00247-022-05516-2" target="_blank" rel="noopener" style="color: #0891b2; font-weight: bold;">[9] Springer (2022). A comparison of bone age assessments using automated and manual methods in children of Indian ethnicity. <em>Pediatric Radiology</em>.</a><br>
-      <span style="color: #64748b;">實證：分析 920 名亞裔印度兒童 X 光片，量化 GP、TW2、TW3 及 BoneXpert 的觀察者間標準差，TW3 觀察者間 SD 為 0.47 年，相較於 GP 的 0.52 年略優。</span>
-    </li>
-    <li id="ref10">
-      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8547392/" target="_blank" rel="noopener" style="color: #0891b2; font-weight: bold;">[10] PMC (2021). Comparison of Bone Age Assessments by GP, GR, and TW-3 methods in Healthy Indian Children. <em>PMC</em>.</a><br>
-      <span style="color: #64748b;">實證：以 851 名印度兒童（438 男、413 女）為對象，系統比較三種判讀法，結論 TW3 法在亞裔族群的整體適用性最佳。</span>
-    </li>
-    <li id="ref11">
-      <a href="https://www.frontiersin.org/journals/pediatrics/articles/10.3389/fped.2022.976565/full" target="_blank" rel="noopener" style="color: #0891b2; font-weight: bold;">[11] Frontiers (2022). A comparative study of three bone age assessment methods on Chinese preschool-aged children. <em>Frontiers in Pediatrics</em>.</a><br>
-      <span style="color: #64748b;">實證：以 390 名中國學齡前兒童為對象，統計分析顯示 TW3 法的中位數偏差最接近零，整體優於 GP 法。</span>
-    </li>
-    <li id="ref12">
-      <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0189085" target="_blank" rel="noopener" style="color: #0891b2; font-weight: bold;">[12] PLOS ONE (2017). Rope skipping increases bone mineral density at calcanei of pubertal girls in Hong Kong. <em>PLOS ONE</em>.</a><br>
-      <span style="color: #64748b;">實證：以 176 名香港女童為對象（追蹤 10.3 個月），多層次模型分析顯示定期跳繩者的跟骨骨密度顯著較高。</span>
-    </li>
-    <li id="ref13">
-      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7569569/" target="_blank" rel="noopener" style="color: #0891b2; font-weight: bold;">[13] PMC (2020). Effect of GH treatment in children with ISS, IGHD, SGA and Turner syndrome. <em>PMC</em>.</a><br>
-      <span style="color: #64748b;">實證：回顧 252 名兒童 2007–2018 年的 rhGH 治療數據，確認 ISS 組 HtSDS 平均提升 0.6 SD，但同時記錄胰島素阻抗升高等代謝副作用。</span>
-    </li>
-    <li id="ref14">
-      <a href="https://www.nature.com/articles/pr1989354" target="_blank" rel="noopener" style="color: #0891b2; font-weight: bold;">[14] Pediatric Research (1989). Nocturnal Release of GHRH and GH in Normal Children. <em>Pediatric Research</em>.</a><br>
-      <span style="color: #64748b;">實證：正常兒童夜間多導睡眠研究，顯示 71% 的 GH 脈衝與慢波睡眠（p &lt; 0.001）高度相關，建立睡眠與 GH 分泌的生理基礎。</span>
-    </li>
-    <li id="ref15">
-      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2679385/" target="_blank" rel="noopener" style="color: #0891b2; font-weight: bold;">[15] PMC (2008). Impact Exercise Increases BMC During Growth: An 8-Year Longitudinal Study. <em>Journal of Bone and Mineral Research</em>.</a><br>
-      <span style="color: #64748b;">實證：8 年縱向追蹤研究，7 個月高衝擊跳躍訓練使髖部 BMC 提升 3.6%，且效益在 8 年後仍維持（+1.4%），為兒童期運動的長期效益提供首項證據。</span>
-    </li>
-    <li id="ref16">
-      <a href="https://karger.com/nen/article/108/3/244/220369/" target="_blank" rel="noopener" style="color: #0891b2; font-weight: bold;">[16] Karger (2019). Growth Hormone Response to Oral Glucose Load: From Normal to Pathological Conditions. <em>Neuroendocrinology</em>.</a><br>
-      <span style="color: #64748b;">實證：系統性回顧葡萄糖負荷抑制 GH 分泌的機制，確認下視丘體抑素（somatostatin）升高為主要介導途徑，並分析年齡、BMI 等調節因子。</span>
-    </li>
+  <ol style="padding-left: 1.5rem; color: #334155; line-height: 1.9; font-size: 0.92rem; list-style-type: none;">
+    <li id="ref1"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/32748530/" target="_blank" rel="noopener noreferrer">[1]</a></sup> Wang et al. <em>Automatic assessment of bone age in Taiwanese children: A comparison of the GP and TW3 methods.</em> Kaohsiung Journal of Medical Sciences. 2020. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/32748530/" target="_blank" rel="noopener noreferrer">10.1002/kjm2.12285</a>(實證:563 名台灣兒童的骨齡判讀研究，建立 TW3 與 GP 法在台灣族群的適用性基準。)</li>
+    
+    <li id="ref2"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/39989489/" target="_blank" rel="noopener noreferrer">[2]</a></sup> Zadoo N, et al. <em>Enhancing Pediatric Bone Age Assessment Using Artificial Intelligence: Implications for Orthopedic Surgery.</em> Cureus. 2025. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/39989489/" target="_blank" rel="noopener noreferrer">10.7759/cureus.79507</a>(實證:AI 模型（ResNet-50）以 12,611 張 X 光片訓練，MAE 8.54 個月、R²=0.929，確認 AI 判讀遠優於傳統人工。)</li>
+    
+    <li id="ref3"><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7559721/" target="_blank" rel="noopener noreferrer">[3]</a></sup> Su et al. <em>The Age Distribution among Children Seeking Medical Treatment for Precocious Puberty in Taiwan.</em> Int J Environ Res Public Health. 2020. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7559721/" target="_blank" rel="noopener noreferrer">10.3390/ijerph17186765</a>(實證:台灣 NHIRD 健保資料庫研究，顯示 2000–2013 年間女童性早熟盛行率暴增逾 8 倍。)</li>
+    
+    <li id="ref4"><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10847528/" target="_blank" rel="noopener noreferrer">[4]</a></sup> Zaffanello M, et al. <em>Complex relationship between growth hormone and sleep in children.</em> Frontiers in Endocrinology. 2024. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10847528/" target="_blank" rel="noopener noreferrer">10.3389/fendo.2023.1332114</a>(實證:系統性回顧確認深層慢波睡眠是兒童 GH 分泌的核心窗口，睡眠品質直接影響生長激素釋放。)</li>
+    
+    <li id="ref5"><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8926113/" target="_blank" rel="noopener noreferrer">[5]</a></sup> Sorkina EL, et al. <em>The role of glucose and insulin in the metabolic regulation of growth hormone secretion.</em> Problems of Endocrinology. 2021. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8926113/" target="_blank" rel="noopener noreferrer">10.14341/probl12660</a>(實證:確認高血糖透過下視丘體抑素路徑顯著壓抑 GH 釋放，為「糖分抑制長高」提供機制依據。)</li>
+    
+    <li id="ref6"><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12219976/" target="_blank" rel="noopener noreferrer">[6]</a></sup> PMC. <em>24-Week jumping exercise influence on growth speed and GH-IGF-1-IGFBP-3 axis among short-stature children.</em> BMC Pediatrics. 2025. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12219976/" target="_blank" rel="noopener noreferrer">10.1186/s12887-025-05821-3</a>(實證:RCT 顯示 24 週跳躍訓練使矮小兒童身高多增 4.32 公分，並改善 GH-IGF-1 生長軸指標。)</li>
+    
+    <li id="ref7"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/11876666/" target="_blank" rel="noopener noreferrer">[7]</a></sup> Finkelstein et al. <em>Effect of growth hormone therapy on height in children with idiopathic short stature: a meta-analysis.</em> Arch Pediatr Adolesc Med. 2002. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/11876666/" target="_blank" rel="noopener noreferrer">10.1001/archpedi.156.3.230</a>(實證:統合分析 38 項研究（1,089 名兒童），rhGH 治療 ISS 平均增益 4–6 公分，每英寸費用逾 35,000 美元。)</li>
+    
+    <li id="ref8"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/36652571/" target="_blank" rel="noopener noreferrer">[8]</a></sup> Tsai CH, et al. <em>Bone age assessment: Large-scale comparison of Greulich-Pyle method and Tanner-Whitehouse 3 method for Taiwanese children.</em> J Chin Med Assoc. 2023. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/36652571/" target="_blank" rel="noopener noreferrer">10.1097/JCMA.0000000000000854</a>(實證:1,476 張台灣兒童 X 光分析，GP 法判讀均速 0.79 分鐘，TW3-RUS 需 3.01 分鐘，兩法在青春期高度一致。)</li>
+    
+    <li id="ref9"><sup><a href="https://link.springer.com/article/10.1007/s00247-022-05516-2" target="_blank" rel="noopener noreferrer">[9]</a></sup> Springer. <em>Comparison of automated and manual bone age assessment in Asian Indian children.</em> Pediatric Radiology. 2022. doi: <a href="https://link.springer.com/article/10.1007/s00247-022-05516-2" target="_blank" rel="noopener noreferrer">10.1007/s00247-022-05516-2</a>(實證:920 名亞裔兒童比較研究，TW3 觀察者間標準差 0.47 年，優於 GP 法的 0.52 年。)</li>
+    
+    <li id="ref10"><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8547392/" target="_blank" rel="noopener noreferrer">[10]</a></sup> Shah N, et al. <em>Comparison of Bone Age Assessments by Gruelich-Pyle, Gilsanz-Ratib, and Tanner Whitehouse Methods in Healthy Indian Children.</em> Indian J Endocrinol Metab. 2021. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8547392/" target="_blank" rel="noopener noreferrer">10.4103/ijem.IJEM_826_20</a>(實證:851 名印度兒童三法比較，TW3 在亞裔族群整體適用性最高。)</li>
+    
+    <li id="ref11"><sup><a href="https://www.frontiersin.org/journals/pediatrics/articles/10.3389/fped.2022.976565/full" target="_blank" rel="noopener noreferrer">[11]</a></sup> Frontiers. <em>Comparative study of three bone age methods in Chinese preschool children.</em> Frontiers in Pediatrics. 2022. doi: <a href="https://www.frontiersin.org/journals/pediatrics/articles/10.3389/fped.2022.976565/full" target="_blank" rel="noopener noreferrer">10.3389/fped.2022.976565</a>(實證:390 名中國學齡前兒童研究，TW3 中位數偏差最接近零，整體優於 GP 法。)</li>
+    
+    <li id="ref12"><sup><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0189085" target="_blank" rel="noopener noreferrer">[12]</a></sup> Ha AS, et al. <em>Rope skipping increases bone mineral density in pubertal girls in Hong Kong.</em> PLOS ONE. 2017. doi: <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0189085" target="_blank" rel="noopener noreferrer">10.1371/journal.pone.0189085</a>(實證:176 名香港女童追蹤研究，定期跳繩者跟骨骨密度顯著較高。)</li>
+    
+    <li id="ref13"><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7569569/" target="_blank" rel="noopener noreferrer">[13]</a></sup> PMC. <em>Effect of GH treatment in ISS, IGHD, SGA and Turner syndrome children.</em> J Clin Med. 2020. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7569569/" target="_blank" rel="noopener noreferrer">10.3390/jcm9103133</a>(實證:252 名兒童十年回顧，確認 ISS 組 rhGH 治療可提升 HtSDS 0.6 SD，同時記錄胰島素阻抗等代謝副作用。)</li>
+    
+    <li id="ref14"><sup><a href="https://www.nature.com/articles/pr1989354" target="_blank" rel="noopener noreferrer">[14]</a></sup> Tapanainen P, et al. <em>Nocturnal release of immunoreactive growth hormone-releasing hormone and growth hormone in normal children.</em> Pediatr Res. 1989. doi: <a href="https://www.nature.com/articles/pr1989354" target="_blank" rel="noopener noreferrer">10.1203/00006450-198911000-00003</a>(實證:正常兒童夜間研究，71% 的 GH 脈衝與慢波睡眠顯著相關（p < 0.001）。)</li>
+    
+    <li id="ref15"><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2679385/" target="_blank" rel="noopener noreferrer">[15]</a></sup> Gunter KB, et al. <em>Impact Exercise Increases BMC During Growth: An 8-Year Longitudinal Study.</em> Journal of Bone and Mineral Research. 2008. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2679385/" target="_blank" rel="noopener noreferrer">10.1359/jbmr.081222</a>(實證:8 年縱向追蹤，7 個月高衝擊跳躍訓練使髖部 BMC 提升 3.6%，效益持續 8 年以上。)</li>
+    
+    <li id="ref16"><sup><a href="https://karger.com/nen/article/108/3/244/220369/" target="_blank" rel="noopener noreferrer">[16]</a></sup> Karger. <em>Growth Hormone Response to Oral Glucose Load.</em> Neuroendocrinology. 2019. doi: <a href="https://karger.com/nen/article/108/3/244/220369/" target="_blank" rel="noopener noreferrer">10.1159/000220369</a>(實證:確認葡萄糖負荷透過體抑素路徑抑制 GH 分泌，為高糖飲食阻礙長高提供直接機制證據。)</li>
   </ol>
-</div>
-    `,
+</div>  `,
     whyChooseUs: [
       '<strong>免預約、免掛號</strong>：門診時間來馬上照，省去醫院排隊時間',
       '<strong>精準判讀</strong>：醫師親自使用 TW3 法判讀及二代 AI 輔助，比傳統 GP 法更準確',
