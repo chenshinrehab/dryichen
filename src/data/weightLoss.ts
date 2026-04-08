@@ -307,22 +307,65 @@ const fullWeightLossData: WeightLossProgram[] = [
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
-<!-- ===== 參考文獻 ===== -->
-<div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem 1.75rem; margin-top: 2rem;">
-  <h2 style="color: #1e293b; font-size: 1.1rem; margin-top: 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem;">📚 參考文獻</h2>
-  <ol style="margin: 0; padding-left: 1.25rem; line-height: 2; font-size: 0.92rem; color: #334155;">
-    <li id="ref1"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/35658024/" target="_blank" rel="noopener noreferrer">[1]</a></sup> Jastreboff AM, et al. <em>Tirzepatide Once Weekly for the Treatment of Obesity.</em> N Engl J Med. 2022;387(3):205-216. doi: <a href="https://doi.org/10.1056/NEJMoa2206038" target="_blank" rel="noopener noreferrer">10.1056/NEJMoa2206038</a>（實證：72 週 RCT 確立體重可下降 15–20.9%）</li>
-    <li id="ref2"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/38078870/" target="_blank" rel="noopener noreferrer">[2]</a></sup> Aronne LJ, et al. <em>Continued Treatment With Tirzepatide for Maintenance of Weight Reduction in Adults With Obesity.</em> JAMA. 2024;331(1):38-48. doi: <a href="https://doi.org/10.1001/jama.2023.24945" target="_blank" rel="noopener noreferrer">10.1001/jama.2023.24945</a>（實證：持續用藥 88 週總減重達 25.3%；停藥組體重回升 14%）</li>
-    <li id="ref3"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/34170647/" target="_blank" rel="noopener noreferrer">[3]</a></sup> Frías JP, et al. <em>Tirzepatide versus Semaglutide Once Weekly in Patients with Type 2 Diabetes.</em> N Engl J Med. 2021;385(6):503-515. doi: <a href="https://doi.org/10.1056/NEJMoa2107519" target="_blank" rel="noopener noreferrer">10.1056/NEJMoa2107519</a>（實證：HbA1c 降幅最高 2.30%，優於 semaglutide）</li>
-    <li id="ref4"><sup><a href="https://www.nature.com/articles/s41591-023-02344-1" target="_blank" rel="noopener noreferrer">[4]</a></sup> SURPASS-AP-Combo Investigators. <em>Tirzepatide versus insulin glargine in type 2 diabetes in the Asia-Pacific region.</em> Nat Med. 2023. doi: <a href="https://doi.org/10.1038/s41591-023-02344-1" target="_blank" rel="noopener noreferrer">10.1038/s41591-023-02344-1</a>（實證：亞太華人族群 HbA1c 降幅達 2.49%，優於胰島素 glargine）</li>
-    <li id="ref5"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/38856224/" target="_blank" rel="noopener noreferrer">[5]</a></sup> Loomba R, et al. <em>Tirzepatide for Metabolic Dysfunction–Associated Steatohepatitis with Liver Fibrosis.</em> N Engl J Med. 2024;391(4):299-310. doi: <a href="https://doi.org/10.1056/NEJMoa2401943" target="_blank" rel="noopener noreferrer">10.1056/NEJMoa2401943</a>（實證：52 週 MASH 緩解率 62%，安慰劑組僅 10%）</li>
-    <li id="ref6"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/41406444/" target="_blank" rel="noopener noreferrer">[6]</a></sup> Nicholls SJ, et al. <em>Cardiovascular Outcomes with Tirzepatide versus Dulaglutide in Type 2 Diabetes.</em> N Engl J Med. 2025;393(24):2409-2420. doi: <a href="https://doi.org/10.1056/NEJMoa2505928" target="_blank" rel="noopener noreferrer">10.1056/NEJMoa2505928</a>（實證：4 年追蹤確認心血管安全性不劣於 dulaglutide，擴展 MACE HR=0.88）</li>
-    <li id="ref7"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/39536238/" target="_blank" rel="noopener noreferrer">[7]</a></sup> Jastreboff AM, et al. <em>Tirzepatide for Obesity Treatment and Diabetes Prevention.</em> N Engl J Med. 2025;392(10):958-971. doi: <a href="https://doi.org/10.1056/NEJMoa2410819" target="_blank" rel="noopener noreferrer">10.1056/NEJMoa2410819</a>（實證：176 週三年追蹤，糖尿病前期進展風險降低 93%）</li>
-    <li id="ref8"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/39084707/" target="_blank" rel="noopener noreferrer">[8]</a></sup> Krumholz HM, de Lemos JA, Sattar N, et al. <em>Tirzepatide and blood pressure reduction: stratified analyses of the SURMOUNT-1 RCT.</em> Heart. 2024;110(19):1165-1171. doi: <a href="https://doi.org/10.1136/heartjnl-2024-324170" target="_blank" rel="noopener noreferrer">10.1136/heartjnl-2024-324170</a>（實證：收縮壓平均下降 6.8 mmHg、舒張壓下降 4.2 mmHg）</li>
-    <li id="ref9"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/39555826/" target="_blank" rel="noopener noreferrer">[9]</a></sup> Packer M, Zile MR, Kramer CM, et al. <em>Tirzepatide for Heart Failure with Preserved Ejection Fraction and Obesity.</em> N Engl J Med. 2025;392(5):427-437. doi: <a href="https://doi.org/10.1056/NEJMoa2410027" target="_blank" rel="noopener noreferrer">10.1056/NEJMoa2410027</a>（實證：HFpEF 患者心血管死亡或心衰惡化風險降低 38%，HR=0.62）</li>
-    <li id="ref10"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/40545827/" target="_blank" rel="noopener noreferrer">[10]</a></sup> Lam CSP, et al. <em>Tirzepatide for reduction of morbidity and mortality in adults with obesity: rationale and design of the SURMOUNT-MMO trial.</em> Obesity (Silver Spring). 2025;33(9):1645-1656. doi: <a href="https://doi.org/10.1002/oby.24332" target="_blank" rel="noopener noreferrer">10.1002/oby.24332</a>（實證：~15,000 人、27 國長期心血管死亡率試驗的設計依據）</li>
-    <li id="ref11"><sup><a href="https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2024.1453825/full" target="_blank" rel="noopener noreferrer">[11]</a></sup> <em>Tirzepatide's innovative applications in the management of type 2 diabetes and its future prospects in cardiovascular health.</em> Front Pharmacol. 2024. doi: <a href="https://doi.org/10.3389/fphar.2024.1453825" target="_blank" rel="noopener noreferrer">10.3389/fphar.2024.1453825</a>（實證：彙整 SURPASS 系列各劑量副作用停藥率，提供安全性參考）</li>
-  </ol>
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.9rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.5; word-break: break-all;">
+    <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+        <li id="ref1" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Jastreboff AM, et al. <em>Tirzepatide Once Weekly for the Treatment of Obesity.</em> N Engl J Med. 2022;387(3):205-216. <a href="https://doi.org/10.1056/NEJMoa2206038" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1056/NEJMoa2206038</a>（實證：72 週 RCT 確立體重可下降 15–20.9%）
+            </span>
+        </li>
+        <li id="ref2" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Aronne LJ, et al. <em>Continued Treatment With Tirzepatide for Maintenance of Weight Reduction in Adults With Obesity.</em> JAMA. 2024;331(1):38-48. <a href="https://doi.org/10.1001/jama.2023.24945" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1001/jama.2023.24945</a>（實證：持續用藥 88 週總減重達 25.3%；停藥組體重回升 14%）
+            </span>
+        </li>
+        <li id="ref3" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Frías JP, et al. <em>Tirzepatide versus Semaglutide Once Weekly in Patients with Type 2 Diabetes.</em> N Engl J Med. 2021;385(6):503-515. <a href="https://doi.org/10.1056/NEJMoa2107519" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1056/NEJMoa2107519</a>（實證：HbA1c 降幅最高 2.30%，優於 semaglutide）
+            </span>
+        </li>
+        <li id="ref4" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                SURPASS-AP-Combo Investigators. <em>Tirzepatide versus insulin glargine in type 2 diabetes in the Asia-Pacific region.</em> Nat Med. 2023. <a href="https://doi.org/10.1038/s41591-023-02344-1" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1038/s41591-023-02344-1</a>（實證：亞太華人族群 HbA1c 降幅達 2.49%，優於胰島素 glargine）
+            </span>
+        </li>
+        <li id="ref5" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Loomba R, et al. <em>Tirzepatide for Metabolic Dysfunction–Associated Steatohepatitis with Liver Fibrosis.</em> N Engl J Med. 2024;391(4):299-310. <a href="https://doi.org/10.1056/NEJMoa2401943" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1056/NEJMoa2401943</a>（實證：52 週 MASH 緩解率 62%，安慰劑組僅 10%）
+            </span>
+        </li>
+        <li id="ref6" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Nicholls SJ, et al. <em>Cardiovascular Outcomes with Tirzepatide versus Dulaglutide in Type 2 Diabetes.</em> N Engl J Med. 2025;393(24):2409-2420. <a href="https://doi.org/10.1056/NEJMoa2505928" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1056/NEJMoa2505928</a>（實證：4 年追蹤確認心血管安全性不劣於 dulaglutide，擴展 MACE HR=0.88）
+            </span>
+        </li>
+        <li id="ref7" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Jastreboff AM, et al. <em>Tirzepatide for Obesity Treatment and Diabetes Prevention.</em> N Engl J Med. 2025;392(10):958-971. <a href="https://doi.org/10.1056/NEJMoa2410819" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1056/NEJMoa2410819</a>（實證：176 週三年追蹤，糖尿病前期進展風險降低 93%）
+            </span>
+        </li>
+        <li id="ref8" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Krumholz HM, de Lemos JA, Sattar N, et al. <em>Tirzepatide and blood pressure reduction: stratified analyses of the SURMOUNT-1 RCT.</em> Heart. 2024;110(19):1165-1171. <a href="https://doi.org/10.1136/heartjnl-2024-324170" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1136/heartjnl-2024-324170</a>（實證：收縮壓平均下降 6.8 mmHg、舒張壓下降 4.2 mmHg）
+            </span>
+        </li>
+        <li id="ref9" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Packer M, Zile MR, Kramer CM, et al. <em>Tirzepatide for Heart Failure with Preserved Ejection Fraction and Obesity.</em> N Engl J Med. 2025;392(5):427-437. <a href="https://doi.org/10.1056/NEJMoa2410027" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1056/NEJMoa2410027</a>（實證：HFpEF 患者心血管死亡或心衰惡化風險降低 38%，HR=0.62）
+            </span>
+        </li>
+        <li id="ref10" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Lam CSP, et al. <em>Tirzepatide for reduction of morbidity and mortality in adults with obesity: rationale and design of the SURMOUNT-MMO trial.</em> Obesity (Silver Spring). 2025;33(9):1645-1656. <a href="https://doi.org/10.1002/oby.24332" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1002/oby.24332</a>（實證：~15,000 人、27 國長期心血管死亡率試驗的設計依據）
+            </span>
+        </li>
+        <li id="ref11" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                <em>Tirzepatide's innovative applications in the management of type 2 diabetes and its future prospects in cardiovascular health.</em> Front Pharmacol. 2024. <a href="https://doi.org/10.3389/fphar.2024.1453825" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.3389/fphar.2024.1453825</a>（實證：彙整 SURPASS 系列各劑量副作用停藥率，提供安全性參考）
+            </span>
+        </li>
+    </ol>
 </div>
     `,
     whyChooseUs: [
@@ -679,43 +722,92 @@ const fullWeightLossData: WeightLossProgram[] = [
 </div>
 
 
-<!-- ===== 參考文獻 ===== -->
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-<div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem 1.75rem; margin-top: 2rem;">
-  <h3 style="color: #1e293b; margin-top: 0; font-size: 1.15rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem;">📚 參考文獻</h3>
-  <ol style="padding-left: 1.5rem; color: #334155; line-height: 1.9; font-size: 0.92rem; list-style-type: none;">
-    <li id="ref1"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/32748530/" target="_blank" rel="noopener noreferrer">[1]</a></sup> Wang et al. <em>Automatic assessment of bone age in Taiwanese children: A comparison of the GP and TW3 methods.</em> Kaohsiung Journal of Medical Sciences. 2020. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/32748530/" target="_blank" rel="noopener noreferrer">10.1002/kjm2.12285</a>(實證:563 名台灣兒童的骨齡判讀研究，建立 TW3 與 GP 法在台灣族群的適用性基準。)</li>
-    
-    <li id="ref2"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/39989489/" target="_blank" rel="noopener noreferrer">[2]</a></sup> Zadoo N, et al. <em>Enhancing Pediatric Bone Age Assessment Using Artificial Intelligence: Implications for Orthopedic Surgery.</em> Cureus. 2025. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/39989489/" target="_blank" rel="noopener noreferrer">10.7759/cureus.79507</a>(實證:AI 模型（ResNet-50）以 12,611 張 X 光片訓練，MAE 8.54 個月、R²=0.929，確認 AI 判讀遠優於傳統人工。)</li>
-    
-    <li id="ref3"><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7559721/" target="_blank" rel="noopener noreferrer">[3]</a></sup> Su et al. <em>The Age Distribution among Children Seeking Medical Treatment for Precocious Puberty in Taiwan.</em> Int J Environ Res Public Health. 2020. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7559721/" target="_blank" rel="noopener noreferrer">10.3390/ijerph17186765</a>(實證:台灣 NHIRD 健保資料庫研究，顯示 2000–2013 年間女童性早熟盛行率暴增逾 8 倍。)</li>
-    
-    <li id="ref4"><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10847528/" target="_blank" rel="noopener noreferrer">[4]</a></sup> Zaffanello M, et al. <em>Complex relationship between growth hormone and sleep in children.</em> Frontiers in Endocrinology. 2024. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10847528/" target="_blank" rel="noopener noreferrer">10.3389/fendo.2023.1332114</a>(實證:系統性回顧確認深層慢波睡眠是兒童 GH 分泌的核心窗口，睡眠品質直接影響生長激素釋放。)</li>
-    
-    <li id="ref5"><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8926113/" target="_blank" rel="noopener noreferrer">[5]</a></sup> Sorkina EL, et al. <em>The role of glucose and insulin in the metabolic regulation of growth hormone secretion.</em> Problems of Endocrinology. 2021. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8926113/" target="_blank" rel="noopener noreferrer">10.14341/probl12660</a>(實證:確認高血糖透過下視丘體抑素路徑顯著壓抑 GH 釋放，為「糖分抑制長高」提供機制依據。)</li>
-    
-    <li id="ref6"><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12219976/" target="_blank" rel="noopener noreferrer">[6]</a></sup> PMC. <em>24-Week jumping exercise influence on growth speed and GH-IGF-1-IGFBP-3 axis among short-stature children.</em> BMC Pediatrics. 2025. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12219976/" target="_blank" rel="noopener noreferrer">10.1186/s12887-025-05821-3</a>(實證:RCT 顯示 24 週跳躍訓練使矮小兒童身高多增 4.32 公分，並改善 GH-IGF-1 生長軸指標。)</li>
-    
-    <li id="ref7"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/11876666/" target="_blank" rel="noopener noreferrer">[7]</a></sup> Finkelstein et al. <em>Effect of growth hormone therapy on height in children with idiopathic short stature: a meta-analysis.</em> Arch Pediatr Adolesc Med. 2002. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/11876666/" target="_blank" rel="noopener noreferrer">10.1001/archpedi.156.3.230</a>(實證:統合分析 38 項研究（1,089 名兒童），rhGH 治療 ISS 平均增益 4–6 公分，每英寸費用逾 35,000 美元。)</li>
-    
-    <li id="ref8"><sup><a href="https://pubmed.ncbi.nlm.nih.gov/36652571/" target="_blank" rel="noopener noreferrer">[8]</a></sup> Tsai CH, et al. <em>Bone age assessment: Large-scale comparison of Greulich-Pyle method and Tanner-Whitehouse 3 method for Taiwanese children.</em> J Chin Med Assoc. 2023. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/36652571/" target="_blank" rel="noopener noreferrer">10.1097/JCMA.0000000000000854</a>(實證:1,476 張台灣兒童 X 光分析，GP 法判讀均速 0.79 分鐘，TW3-RUS 需 3.01 分鐘，兩法在青春期高度一致。)</li>
-    
-    <li id="ref9"><sup><a href="https://link.springer.com/article/10.1007/s00247-022-05516-2" target="_blank" rel="noopener noreferrer">[9]</a></sup> Springer. <em>Comparison of automated and manual bone age assessment in Asian Indian children.</em> Pediatric Radiology. 2022. doi: <a href="https://link.springer.com/article/10.1007/s00247-022-05516-2" target="_blank" rel="noopener noreferrer">10.1007/s00247-022-05516-2</a>(實證:920 名亞裔兒童比較研究，TW3 觀察者間標準差 0.47 年，優於 GP 法的 0.52 年。)</li>
-    
-    <li id="ref10"><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8547392/" target="_blank" rel="noopener noreferrer">[10]</a></sup> Shah N, et al. <em>Comparison of Bone Age Assessments by Gruelich-Pyle, Gilsanz-Ratib, and Tanner Whitehouse Methods in Healthy Indian Children.</em> Indian J Endocrinol Metab. 2021. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8547392/" target="_blank" rel="noopener noreferrer">10.4103/ijem.IJEM_826_20</a>(實證:851 名印度兒童三法比較，TW3 在亞裔族群整體適用性最高。)</li>
-    
-    <li id="ref11"><sup><a href="https://www.frontiersin.org/journals/pediatrics/articles/10.3389/fped.2022.976565/full" target="_blank" rel="noopener noreferrer">[11]</a></sup> Frontiers. <em>Comparative study of three bone age methods in Chinese preschool children.</em> Frontiers in Pediatrics. 2022. doi: <a href="https://www.frontiersin.org/journals/pediatrics/articles/10.3389/fped.2022.976565/full" target="_blank" rel="noopener noreferrer">10.3389/fped.2022.976565</a>(實證:390 名中國學齡前兒童研究，TW3 中位數偏差最接近零，整體優於 GP 法。)</li>
-    
-    <li id="ref12"><sup><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0189085" target="_blank" rel="noopener noreferrer">[12]</a></sup> Ha AS, et al. <em>Rope skipping increases bone mineral density in pubertal girls in Hong Kong.</em> PLOS ONE. 2017. doi: <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0189085" target="_blank" rel="noopener noreferrer">10.1371/journal.pone.0189085</a>(實證:176 名香港女童追蹤研究，定期跳繩者跟骨骨密度顯著較高。)</li>
-    
-    <li id="ref13"><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7569569/" target="_blank" rel="noopener noreferrer">[13]</a></sup> PMC. <em>Effect of GH treatment in ISS, IGHD, SGA and Turner syndrome children.</em> J Clin Med. 2020. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7569569/" target="_blank" rel="noopener noreferrer">10.3390/jcm9103133</a>(實證:252 名兒童十年回顧，確認 ISS 組 rhGH 治療可提升 HtSDS 0.6 SD，同時記錄胰島素阻抗等代謝副作用。)</li>
-    
-    <li id="ref14"><sup><a href="https://www.nature.com/articles/pr1989354" target="_blank" rel="noopener noreferrer">[14]</a></sup> Tapanainen P, et al. <em>Nocturnal release of immunoreactive growth hormone-releasing hormone and growth hormone in normal children.</em> Pediatr Res. 1989. doi: <a href="https://www.nature.com/articles/pr1989354" target="_blank" rel="noopener noreferrer">10.1203/00006450-198911000-00003</a>(實證:正常兒童夜間研究，71% 的 GH 脈衝與慢波睡眠顯著相關（p < 0.001）。)</li>
-    
-    <li id="ref15"><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2679385/" target="_blank" rel="noopener noreferrer">[15]</a></sup> Gunter KB, et al. <em>Impact Exercise Increases BMC During Growth: An 8-Year Longitudinal Study.</em> Journal of Bone and Mineral Research. 2008. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2679385/" target="_blank" rel="noopener noreferrer">10.1359/jbmr.081222</a>(實證:8 年縱向追蹤，7 個月高衝擊跳躍訓練使髖部 BMC 提升 3.6%，效益持續 8 年以上。)</li>
-    
-    <li id="ref16"><sup><a href="https://karger.com/nen/article/108/3/244/220369/" target="_blank" rel="noopener noreferrer">[16]</a></sup> Karger. <em>Growth Hormone Response to Oral Glucose Load.</em> Neuroendocrinology. 2019. doi: <a href="https://karger.com/nen/article/108/3/244/220369/" target="_blank" rel="noopener noreferrer">10.1159/000220369</a>(實證:確認葡萄糖負荷透過體抑素路徑抑制 GH 分泌，為高糖飲食阻礙長高提供直接機制證據。)</li>
-  </ol>
+
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.9rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.5; word-break: break-all;">
+    <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+        <li id="ref1" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Wang et al. <em>Automatic assessment of bone age in Taiwanese children: A comparison of the GP and TW3 methods.</em> Kaohsiung Journal of Medical Sciences. 2020. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/32748530/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">10.1002/kjm2.12285</a> (實證:563 名台灣兒童的骨齡判讀研究，建立 TW3 與 GP 法在台灣族群的適用性基準。)
+            </span>
+        </li>
+        <li id="ref2" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Zadoo N, et al. <em>Enhancing Pediatric Bone Age Assessment Using Artificial Intelligence: Implications for Orthopedic Surgery.</em> Cureus. 2025. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/39989489/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">10.7759/cureus.79507</a> (實證:AI 模型（ResNet-50）以 12,611 張 X 光片訓練，MAE 8.54 個月、R²=0.929，確認 AI 判讀遠優於傳統人工。)
+            </span>
+        </li>
+        <li id="ref3" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Su et al. <em>The Age Distribution among Children Seeking Medical Treatment for Precocious Puberty in Taiwan.</em> Int J Environ Res Public Health. 2020. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7559721/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">10.3390/ijerph17186765</a> (實證:台灣 NHIRD 健保資料庫研究，顯示 2000–2013 年間女童性早熟盛行率暴增逾 8 倍。)
+            </span>
+        </li>
+        <li id="ref4" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Zaffanello M, et al. <em>Complex relationship between growth hormone and sleep in children.</em> Frontiers in Endocrinology. 2024. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10847528/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">10.3389/fendo.2023.1332114</a> (實證:系統性回顧確認深層慢波睡眠是兒童 GH 分泌的核心窗口，睡眠品質直接影響生長激素釋放。)
+            </span>
+        </li>
+        <li id="ref5" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Sorkina EL, et al. <em>The role of glucose and insulin in the metabolic regulation of growth hormone secretion.</em> Problems of Endocrinology. 2021. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8926113/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">10.14341/probl12660</a> (實證:確認高血糖透過下視丘體抑素路徑顯著壓抑 GH 釋放，為「糖分抑制長高」提供機制依據。)
+            </span>
+        </li>
+        <li id="ref6" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                PMC. <em>24-Week jumping exercise influence on growth speed and GH-IGF-1-IGFBP-3 axis among short-stature children.</em> BMC Pediatrics. 2025. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12219976/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">10.1186/s12887-025-05821-3</a> (實證:RCT 顯示 24 週跳躍訓練使矮小兒童身高多增 4.32 公分，並改善 GH-IGF-1 生長軸指標。)
+            </span>
+        </li>
+        <li id="ref7" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Finkelstein et al. <em>Effect of growth hormone therapy on height in children with idiopathic short stature: a meta-analysis.</em> Arch Pediatr Adolesc Med. 2002. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/11876666/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">10.1001/archpedi.156.3.230</a> (實證:統合分析 38 項研究（1,089 名兒童），rhGH 治療 ISS 平均增益 4–6 公分，每英寸費用逾 35,000 美元。)
+            </span>
+        </li>
+        <li id="ref8" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Tsai CH, et al. <em>Bone age assessment: Large-scale comparison of Greulich-Pyle method and Tanner-Whitehouse 3 method for Taiwanese children.</em> J Chin Med Assoc. 2023. doi: <a href="https://pubmed.ncbi.nlm.nih.gov/36652571/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">10.1097/JCMA.0000000000000854</a> (實證:1,476 張台灣兒童 X 光分析，GP 法判讀均速 0.79 分鐘，TW3-RUS 需 3.01 分鐘，兩法在青春期高度一致。)
+            </span>
+        </li>
+        <li id="ref9" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Springer. <em>Comparison of automated and manual bone age assessment in Asian Indian children.</em> Pediatric Radiology. 2022. doi: <a href="https://link.springer.com/article/10.1007/s00247-022-05516-2" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">10.1007/s00247-022-05516-2</a> (實證:920 名亞裔兒童比較研究，TW3 觀察者間標準差 0.47 年，優於 GP 法的 0.52 年。)
+            </span>
+        </li>
+        <li id="ref10" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Shah N, et al. <em>Comparison of Bone Age Assessments by Gruelich-Pyle, Gilsanz-Ratib, and Tanner Whitehouse Methods in Healthy Indian Children.</em> Indian J Endocrinol Metab. 2021. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8547392/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">10.4103/ijem.IJEM_826_20</a> (實證:851 名印度兒童三法比較，TW3 在亞裔族群整體適用性最高。)
+            </span>
+        </li>
+        <li id="ref11" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Frontiers. <em>Comparative study of three bone age methods in Chinese preschool children.</em> Frontiers in Pediatrics. 2022. doi: <a href="https://www.frontiersin.org/journals/pediatrics/articles/10.3389/fped.2022.976565/full" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">10.3389/fped.2022.976565</a> (實證:390 名中國學齡前兒童研究，TW3 中位數偏差最接近零，整體優於 GP 法。)
+            </span>
+        </li>
+        <li id="ref12" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Ha AS, et al. <em>Rope skipping increases bone mineral density in pubertal girls in Hong Kong.</em> PLOS ONE. 2017. doi: <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0189085" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">10.1371/journal.pone.0189085</a> (實證:176 名香港女童追蹤研究，定期跳繩者跟骨骨密度顯著較高。)
+            </span>
+        </li>
+        <li id="ref13" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                PMC. <em>Effect of GH treatment in ISS, IGHD, SGA and Turner syndrome children.</em> J Clin Med. 2020. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7569569/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">10.3390/jcm9103133</a> (實證:252 名兒童十年回顧，確認 ISS 組 rhGH 治療可提升 HtSDS 0.6 SD，同時記錄胰島素阻抗等代謝副作用。)
+            </span>
+        </li>
+        <li id="ref14" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Tapanainen P, et al. <em>Nocturnal release of immunoreactive growth hormone-releasing hormone and growth hormone in normal children.</em> Pediatr Res. 1989. doi: <a href="https://www.nature.com/articles/pr1989354" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">10.1203/00006450-198911000-00003</a> (實證:正常兒童夜間研究，71% 的 GH 脈衝與慢波睡眠顯著相關（p < 0.001）。)
+            </span>
+        </li>
+        <li id="ref15" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Gunter KB, et al. <em>Impact Exercise Increases BMC During Growth: An 8-Year Longitudinal Study.</em> Journal of Bone and Mineral Research. 2008. doi: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2679385/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">10.1359/jbmr.081222</a> (實證:8 年縱向追蹤，7 個月高衝擊跳躍訓練使髖部 BMC 提升 3.6%，效益持續 8 年以上。)
+            </span>
+        </li>
+        <li id="ref16" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Karger. <em>Growth Hormone Response to Oral Glucose Load.</em> Neuroendocrinology. 2019. doi: <a href="https://karger.com/nen/article/108/3/244/220369/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">10.1159/000220369</a> (實證:確認葡萄糖負荷透過體抑素路徑抑制 GH 分泌，為高糖飲食阻礙長高提供直接機制證據。)
+            </span>
+        </li>
+    </ol>
 </div>  `,
     whyChooseUs: [
       '<strong>免預約、免掛號</strong>：門診時間來馬上照，省去醫院排隊時間',
