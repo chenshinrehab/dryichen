@@ -24,6 +24,7 @@ export interface TreatmentMetadata {
   tags?: string[];
   // SEO 欄位
   seoTitle?: string;
+  referencesHtml?: string;
   seoDescription?: string;
   keywords?: string[];
 }
@@ -187,7 +188,8 @@ const fullTreatmentsData: Treatment[] = [
       <p style="font-weight: bold; color: #059669;"><a href="/booking" style="color: inherit; text-decoration: underline;">現在就預約諮詢，告別疼痛！</a></p>
     </div>
 
-    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+`,
+  referencesHtml: `
 <h2>📚 參考文獻 (References)</h2>
 <div style="background-color: #f8fafc; padding: 1rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.9rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.5; word-break: break-all;">
     <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
@@ -316,7 +318,7 @@ const fullTreatmentsData: Treatment[] = [
     <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
       <h3 style="margin-top: 0; color: #0369a1;">📝 文章摘要與核心觀點</h3>
       <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-        體外震波治療（ESWT）是目前針對慢性疼痛、肌腱炎與鈣化問題，具備高度實證醫學支持的非侵入性療法。本文結合多項近十年的權威醫學期刊數據，證實<strong>聚焦式與發散式雙機複合震波</strong>能有效改善足底筋膜炎、網球肘與鈣化性肌腱炎。研究顯示，足底筋膜炎患者的治療改善率高達安慰劑的 2.58 倍 <sup><a href="https://doi.org/10.1097/MD.0000000000006621">[1]</a></sup>，而針對肩部慢性鈣化，亦有高比例的完全或部分吸收率 <sup><a href="https://doi.org/10.1136/ard.62.3.248" target="_blank" target="_blank">[3]</a></sup>。我們建議搭配高階超音波精準定位，並破除「越痛越有效」的迷思，以 5~7 分痛感的適當能量進行 3~6 次完整療程，即可安全、高效地啟動組織修復，從根本解決頑固疼痛。
+        體外震波治療（ESWT）是目前針對慢性疼痛、肌腱炎與鈣化問題，具備高度實證醫學支持的非侵入性療法。本文結合多項近十年的權威醫學期刊數據，證實<strong>聚焦式與發散式雙機複合震波</strong>能有效改善足底筋膜炎、網球肘與鈣化性肌腱炎。研究顯示，足底筋膜炎患者的治療改善率高達安慰劑的 2.58 倍 <sup><a href="https://doi.org/10.1097/MD.0000000000006621" target="_blank">[1]</a></sup>；2022 年發表於《Arthroscopy》的大型網絡薈萃分析（納入 40 篇 RCT）更進一步確認，震波治療是網球肘所有療法中<strong>恢復握力表現最佳</strong>的選項<sup><a href="https://doi.org/10.1016/j.arthro.2022.01.025" target="_blank">[2]</a></sup>。針對肩部慢性鈣化，高達 71% 的患者在治療後可觀察到鈣化點完全或部分吸收 <sup><a href="https://doi.org/10.1136/ard.62.3.248" target="_blank">[3]</a></sup>。與類固醇注射相比，震波在 3 個月與 6 個月長期追蹤時有更優異的疼痛控制與功能恢復 <sup><a href="https://doi.org/10.1111/os.14212" target="_blank">[4]</a></sup>。在治療機轉上，震波透過上調 VEGF、eNOS 等血管新生因子及促進膠原蛋白重塑，達到組織深層修復的效果 <sup><a href="https://doi.org/10.3389/fimmu.2023.1193835" target="_blank">[5]</a></sup>。我們建議搭配高階超音波精準定位，並破除「越痛越有效」的迷思，以 5~7 分痛感的適當能量進行 3~6 次完整療程，即可安全、高效地啟動組織修復，從根本解決頑固疼痛 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/23552334/" target="_blank">[6]</a></sup><sup><a href="https://doi.org/10.1016/j.jse.2024.07.056" target="_blank">[7]</a></sup>。
       </p>
     </div>
 
@@ -340,16 +342,17 @@ const fullTreatmentsData: Treatment[] = [
           <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
           <div><strong>複合式雙機治療：</strong> 同時擁有「聚焦式 (Focus)」與「發散式 (Radial)」兩種探頭。針對深層鈣化點用聚焦式擊碎，淺層筋膜緊繃則用發散式放鬆，由內而外全面處理。</div>
       </li>
-      <li style="margin-bottom: 0; display: flex; align-items: start;">
+      <li style="margin-bottom: 1rem; display: flex; align-items: start;">
           <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
           <div><strong>治療師親自操作：</strong> 震波能量的強弱、頻率與角度調整是治療成功的關鍵。本院全程由物理治療師親自評估與操作，隨時根據您的感受調整參數，安全又有效。</div>
       </li>
-                              <li style="margin-bottom: 0; display: flex; align-items: start;">
+      <li style="margin-bottom: 0; display: flex; align-items: start;">
           <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
           <div><strong>收費標準(每次3000發)：</strong>第一次體驗價：<strong>1500元</strong>。單次施打：<strong>2800元</strong>。購買療程(3次共9000發)：<strong>6800元</strong>。</div>
       </li>
   </ul>
 </div>
+
 <section style="background-color: rgba(6, 182, 212, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); border-radius: 1.5rem; padding: 2.5rem 1.25rem; margin-bottom: 3rem; font-family: sans-serif;">
   
 <h2 style="color: #22d3ee; margin-top: 0; margin-bottom: 1.5rem; line-height: 1.4; font-size: 1.5rem; letter-spacing: -0.02em;">
@@ -388,13 +391,13 @@ const fullTreatmentsData: Treatment[] = [
 </section>
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 <h2>🔬 什麼是體外震波？治療原理大解密</h2>
-<p>體外震波 (Extracorporeal Shock Wave Therapy, ESWT) 原本是用來擊碎腎結石的技術，後來發現調控適當能量後，對於骨骼肌肉系統有驚人的修復效果。</p>
+<p>體外震波原本是用來擊碎腎結石的技術，後來發現調控適當能量後，對於骨骼肌肉系統有驚人的修復效果。</p>
 <br>
 <p>它是一種攜帶高能量的聲波，能穿透皮膚與軟組織，直達深層病灶。其治療機轉主要有三：</p>
 <ol>
-  <li><strong>促進血管新生：</strong> 震波能刺激組織產生生長因子 (如 VEGF)，促進微血管增生，改善血液循環，為受損組織帶來修復所需的氧氣與養分。</li>
-  <li><strong>啟動修復機制：</strong> 利用微破壞原理，重新啟動停滯的修復反應，讓慢性發炎的組織有機會「打掉重練」，生成健康的膠原蛋白。</li>
-  <li><strong>阻斷疼痛訊號：</strong> 高強度震波能過度刺激神經末梢，降低物質 P (Substance P) 的濃度，達到立即止痛與放鬆肌肉的效果。</li>
+  <li><strong>促進血管新生：</strong> 震波能刺激組織產生生長因子（如 VEGF、eNOS），促進微血管增生，改善血液循環，為受損組織帶來修復所需的氧氣與養分。多項分子生物學研究已透過免疫組織化學染色確認，震波可顯著上調 VEGF 與 eNOS 表現量，促進新生血管密度增加 <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10246855/" target="_blank">[12]</a></sup>。</li>
+  <li><strong>啟動修復機制：</strong> 利用微破壞原理，重新啟動停滯的修復反應，讓慢性發炎的組織有機會「打掉重練」，生成健康的膠原蛋白。震波誘發的空穴效應（Cavitation effect）可活化纖維母細胞，促進膠原蛋白合成與細胞外基質重塑 <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8765473/" target="_blank">[13]</a></sup>。</li>
+  <li><strong>阻斷疼痛訊號：</strong> 高強度震波能過度刺激神經末梢，降低物質 P (Substance P) 的濃度，達到立即止痛與放鬆肌肉的效果。此外，震波亦可透過機械轉導機制抑制促炎訊號路徑，從根源降低疼痛傳導 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/37957975/" target="_blank">[14]</a></sup>。</li>
 </ol>
 
 <p><img src="/images/treatments/shockwave/a.webp" alt="ESWT體外震波治療原理圖解：利用高能量聲波啟動組織修復、促進血管新生與立即止痛。"></p>
@@ -406,10 +409,10 @@ const fullTreatmentsData: Treatment[] = [
 
 <h3>常見適應症與文獻治療根據：</h3>
 <ul>
-  <li><strong>足部問題（足底筋膜炎、阿基里斯腱炎、跟骨骨刺）：</strong> 根據 2017 年《Medicine》期刊發表的薈萃分析（涵蓋 9 項隨機對照試驗，共 935 名患者），震波治療對於慢性足底筋膜炎的疼痛改善率是安慰劑組的 2.58 倍 <sup><a href="https://doi.org/10.1097/MD.0000000000006621" target="_blank">[1]</a></sup>。此外，2013年文獻也指出中高能量震波能有效減少患者早晨下床第一步的劇烈疼痛 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/23552334/" target="_blank">[4]</a></sup>。</li>
-  <li><strong>肘部問題（網球肘、高爾夫球肘）：</strong> 針對外上髁炎（網球肘），2020 年的一項系統性回顧與薈萃分析（涵蓋 13 篇文獻、1035 位患者）證實，震波治療能顯著降低視覺疼痛評分 (VAS) 並恢復病患的握力，且安全性極高 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/32309425/" target="_blank">[2]</a></sup>。</li>
-  <li><strong>肩部問題（鈣化性肌腱炎、五十肩、旋轉肌病變）：</strong> 臨床研究表明，震波能有效擊碎深層鈣化。2003 年的單盲試驗顯示，高達 71% 的患者在治療後出現鈣化點的完全吸收 (31%) 或部分吸收 (40%) <sup><a href="https://doi.org/10.1136/ard.62.3.248" target="_blank">[3]</a></sup>；2024 年發表的最新文獻進一步分析了影響肩部鈣化沉積物吸收的因素，證實震波做為免開刀選項的高可靠性 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/39369947/" target="_blank">[5]</a></sup>。</li>
-  <li><strong>膝部與髖部問題：</strong> 髕骨肌腱炎（跳躍膝）、大轉子疼痛症候群。</li>
+  <li><strong>足部問題（足底筋膜炎、阿基里斯腱炎、跟骨骨刺）：</strong> 根據 2017 年《Medicine》期刊發表的薈萃分析（涵蓋 9 項隨機對照試驗，共 935 名患者），震波治療對於慢性足底筋膜炎的疼痛改善率是安慰劑組的 2.58 倍 <sup><a href="https://doi.org/10.1097/MD.0000000000006621" target="_blank">[1]</a></sup>。2013 年文獻亦指出中高能量震波能有效減少患者早晨下床第一步的劇烈疼痛 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/23552334/" target="_blank">[6]</a></sup>。2017 年前瞻性雙年追蹤隨機對照試驗更證實，發散式震波對慢性足底筋膜炎的療效可持續長達兩年 <sup><a href="https://doi.org/10.1002/jor.23403" target="_blank">[8]</a></sup>。</li>
+  <li><strong>肘部問題（網球肘、高爾夫球肘）：</strong> 2022 年刊登於《Arthroscopy》的大型網絡薈萃分析（納入 40 篇 RCT）確認，在所有療法中（包含類固醇、PRP、肉毒桿菌注射），震波是<strong>恢復握力最有效的單一療法</strong><sup><a href="https://doi.org/10.1016/j.arthro.2022.01.025" target="_blank">[2]</a></sup>。針對網球肘，2020 年的系統性回顧與薈萃分析（涵蓋 13 篇文獻、1035 位患者）亦證實，震波治療能顯著降低視覺疼痛評分 (VAS) 並恢復病患的握力，且安全性極高 <sup><a href="https://doi.org/10.1155/2020/2064781" target="_blank">[9]</a></sup>。2024 年的最新薈萃分析進一步指出，與類固醇注射相比，震波在 3 個月與 6 個月追蹤時有更優異的長期療效 <sup><a href="https://doi.org/10.1111/os.14212" target="_blank">[4]</a></sup>。</li>
+  <li><strong>肩部問題（鈣化性肌腱炎、五十肩、旋轉肌病變）：</strong> 臨床研究表明，震波能有效擊碎深層鈣化。2003 年的單盲試驗顯示，高達 71% 的患者在治療後出現鈣化點的完全吸收 (31%) 或部分吸收 (40%) <sup><a href="https://doi.org/10.1136/ard.62.3.248" target="_blank">[3]</a></sup>；2024 年發表的最新文獻進一步分析了影響肩部鈣化沉積物吸收的因素，證實震波做為免開刀選項的高可靠性 <sup><a href="https://doi.org/10.1016/j.jse.2024.07.056" target="_blank">[7]</a></sup>。2024 年《Frontiers in Medicine》系統性回顧亦確認，震波對旋轉肌腱炎的止痛效果在 3 個月與 6 個月追蹤時均顯著優於安慰劑 <sup><a href="https://doi.org/10.3389/fmed.2024.1394268" target="_blank">[10]</a></sup>。</li>
+  <li><strong>膝部與髖部問題（髕骨肌腱炎、大轉子疼痛症候群）：</strong> 2023 年《Frontiers in Immunology》系統性回顧確認，震波對足底筋膜炎在短期與長期疼痛及功能結果均顯著優於傳統保守治療 <sup><a href="https://doi.org/10.3389/fimmu.2023.1193835" target="_blank">[5]</a></sup>。針對大轉子疼痛症候群，2024 年哈佛醫學院附屬醫院發表的薈萃分析（納入 8 篇 RCT、754 名患者）確認，3 次聚焦式震波能在 2~4 個月內提供顯著的短期止痛效果，優於類固醇注射 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/39297780/" target="_blank">[11]</a></sup>。</li>
 </ul>
 
 <p><img src="/images/treatments/shockwave/b.webp" alt="ESWT體外震波適應症範圍：涵蓋足底筋膜炎、網球肘、鈣化性肌腱炎與肩頸慢性痛。"></p>
@@ -430,7 +433,7 @@ const fullTreatmentsData: Treatment[] = [
 
 <h3>2. 發散式震波 (Radial Shockwave)</h3>
 <ul>
-  <li><strong>特點：</strong> 能量呈扇形擴擴散，作用範圍廣但較淺。</li>
+  <li><strong>特點：</strong> 能量呈扇形擴散，作用範圍廣但較淺。</li>
   <li><strong>優點：</strong> 能大面積放鬆緊繃的淺層筋膜與肌肉，改善淋巴循環。</li>
   <li><strong>適用：</strong> 網球肘、肌筋膜疼痛症候群、淺層肌肉放鬆。</li>
 </ul>
@@ -449,7 +452,7 @@ const fullTreatmentsData: Treatment[] = [
   <li><strong>誤區二：只要打一次震波，我的痛就會徹底消失？</strong><br>
   <strong>👉 醫學實證解析：</strong>許多患者期望「一針見效」，但震波的原理是「破壞後重建」，誘發身體啟動血管新生與組織自我修復機制。細胞的增生與膠原蛋白的重塑需要時間。臨床實證指出，通常需要 <strong>3~6 次完整療程</strong>，且最佳的組織修復效果往往在療程結束後的 4 到 12 週內才會逐漸顯現。</li>
   <li><strong>誤區三：震波可以取代所有骨科手術，再大的鈣化都能打掉？</strong><br>
-  <strong>👉 醫學實證解析：</strong>雖然震波治療成功挽救了許多患者免於開刀，但它並非萬靈丹。根據 2024 年的研究 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/39369947/" target="_blank">[5]</a></sup>，鈣化點的吸收率與鈣化的質地（如 Gärtner 分類中的柔軟度）、大小及病程時間有關。對於處於急性發炎期、液化中的極大鈣化，或是合併嚴重肌腱全層撕裂的患者，有時仍需由醫師評估是否採用超音波導引抽吸 (Barbotage) 或微創手術介入。</li>
+  <strong>👉 醫學實證解析：</strong>雖然震波治療成功挽救了許多患者免於開刀，但它並非萬靈丹。根據 2024 年的研究 <sup><a href="https://doi.org/10.1016/j.jse.2024.07.056" target="_blank">[7]</a></sup>，鈣化點的吸收率與鈣化的質地（如 Gärtner 分類中的柔軟度）、大小及病程時間有關。對於處於急性發炎期、液化中的極大鈣化，或是合併嚴重肌腱全層撕裂的患者，有時仍需由醫師評估是否採用超音波導引抽吸 (Barbotage) 或微創手術介入。</li>
 </ol>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -547,35 +550,102 @@ const fullTreatmentsData: Treatment[] = [
   </div>
 </section>
 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+`,
+  referencesHtml: `
 <h2>📚 參考文獻 (References)</h2>
 <div style="background-color: #f8fafc; padding: 1rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.9rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.5; word-break: break-all;">
     <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+
         <li id="ref1" style="margin-bottom: 0.6rem;">
             <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-                Sun J, et al. <em>Extracorporeal shock wave therapy is effective in treating chronic plantar fasciitis: A meta-analysis of RCTs.</em> Medicine (Baltimore). 2017;96(15):e6621. <a href="https://doi.org/10.1097/MD.0000000000006621" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1097/MD.0000000000006621</a> (實證：震波治療對於慢性足底筋膜炎的疼痛改善顯著優於對照組，改善率為安慰劑組的 2.58 倍)
+                Sun J, et al. <em>Extracorporeal shock wave therapy is effective in treating chronic plantar fasciitis: A meta-analysis of RCTs.</em> Medicine (Baltimore). 2017;96(15):e6621. <a href="https://doi.org/10.1097/MD.0000000000006621" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1097/MD.0000000000006621</a>（實證：薈萃分析 9 項 RCT、935 名患者，震波對慢性足底筋膜炎的疼痛改善率為安慰劑組的 2.58 倍）
             </span>
         </li>
+
         <li id="ref2" style="margin-bottom: 0.6rem;">
             <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-                Yao G, et al. <em>Efficacy of Extracorporeal Shock Wave Therapy for Lateral Epicondylitis: A Systematic Review and Meta-Analysis.</em> BioMed Research International. 2020;2020:2064781. <a href="https://doi.org/10.1155/2020/2064781" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1155/2020/2064781</a> (實證：體外震波可有效降低網球肘疼痛並提升握力功能，安全性優於多種其他療法)
+                Liu WC, et al. <em>Extracorporeal Shock Wave Therapy Shows Superiority Over Injections for Pain Relief and Grip Strength Recovery in Lateral Epicondylitis: A Systematic Review and Network Meta-analysis.</em> Arthroscopy. 2022;38(6):2018-2034. <a href="https://doi.org/10.1016/j.arthro.2022.01.025" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1016/j.arthro.2022.01.025</a>（實證：納入 40 篇 RCT 的網絡薈萃分析，ESWT 是所有網球肘療法中恢復握力效果最佳的選項，SUCRA 排名高達 79.4～86.4%）
             </span>
         </li>
+
         <li id="ref3" style="margin-bottom: 0.6rem;">
             <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-                Cosentino R, et al. <em>Extracorporeal shock wave therapy for chronic calcific tendinitis of the shoulder: single blind study.</em> Annals of the Rheumatic Diseases. 2003;62(3):248-250. <a href="https://doi.org/10.1136/ard.62.3.248" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1136/ard.62.3.248</a> (實證：震波治療組有 71% 患者（部分吸收 40% + 完全吸收 31%）觀察到肩部鈣化點吸收或顯著縮小，對照組則無顯著變化)
+                Cosentino R, et al. <em>Extracorporeal shock wave therapy for chronic calcific tendinitis of the shoulder: single blind study.</em> Annals of the Rheumatic Diseases. 2003;62(3):248-250. <a href="https://doi.org/10.1136/ard.62.3.248" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1136/ard.62.3.248</a>（實證：震波治療組 71% 患者出現肩部鈣化點完全（31%）或部分（40%）吸收，對照組無顯著變化）
             </span>
         </li>
+
         <li id="ref4" style="margin-bottom: 0.6rem;">
             <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-                Dizon JN, et al. <em>Effectiveness of extracorporeal shock wave therapy in chronic plantar fasciitis: a meta-analysis.</em> American Journal of Physical Medicine & Rehabilitation. 2013;92(7):606-620. <a href="https://pubmed.ncbi.nlm.nih.gov/23552334/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1097/PHM.0b013e31828cd42b</a> (實證：中強度與高強度震波對於頑固型足底筋膜炎均有顯著長期療效，可改善整體疼痛與功能預後)
+                Zhang L, et al. <em>Extracorporeal Shock Wave Therapy Versus Local Corticosteroid Injection for Chronic Lateral Epicondylitis: A Systematic Review with Meta-Analysis of Randomized Controlled Trials.</em> Orthopaedic Surgery. 2024;16(11):2598-2607. <a href="https://doi.org/10.1111/os.14212" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1111/os.14212</a>（實證：6 篇 RCT 薈萃分析，震波在 3 個月與 6 個月長期追蹤時，止痛效果、握力與功能恢復均顯著優於類固醇注射）
             </span>
         </li>
+
         <li id="ref5" style="margin-bottom: 0.6rem;">
             <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-                Sakai S, et al. <em>Factors associated with resorption of calcific deposits in the shoulder with extracorporeal shock wave therapy.</em> Journal of Shoulder and Elbow Surgery. 2025;34(5):1208-1215. <a href="https://doi.org/10.1016/j.jse.2024.07.056" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1016/j.jse.2024.07.056</a> (實證：2024/2025年最新研究（117肩，9次療程）系統性分析震波治療對肩部鈣化沉積物重吸收之影響因子，確認 Gärtner 鈣化分類與超音波血流訊號為關鍵預測指標)
+                Charles R, et al. <em>The effectiveness of shockwave therapy on patellar tendinopathy, Achilles tendinopathy, and plantar fasciitis: a systematic review and meta-analysis.</em> Frontiers in Immunology. 2023;14:1193835. <a href="https://doi.org/10.3389/fimmu.2023.1193835" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.3389/fimmu.2023.1193835</a>（實證：2023 年系統性回顧，確認震波對足底筋膜炎的短期與長期疼痛及功能恢復均有顯著改善，且優於傳統保守治療）
             </span>
         </li>
+
+        <li id="ref6" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Dizon JN, et al. <em>Effectiveness of extracorporeal shock wave therapy in chronic plantar fasciitis: a meta-analysis.</em> American Journal of Physical Medicine & Rehabilitation. 2013;92(7):606-620. <a href="https://pubmed.ncbi.nlm.nih.gov/23552334/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1097/PHM.0b013e31828cd42b</a>（實證：中強度與高強度震波對頑固型足底筋膜炎均有顯著長期療效，可改善整體疼痛與功能預後）
+            </span>
+        </li>
+
+        <li id="ref7" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Sakai S, et al. <em>Factors associated with resorption of calcific deposits in the shoulder with extracorporeal shock wave therapy.</em> Journal of Shoulder and Elbow Surgery. 2025;34(5):1208-1215. <a href="https://doi.org/10.1016/j.jse.2024.07.056" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1016/j.jse.2024.07.056</a>（實證：2024/2025 最新研究（117 肩，9 次療程），確認 Gärtner 鈣化分類與超音波血流訊號為震波療效之關鍵預測指標）
+            </span>
+        </li>
+
+        <li id="ref8" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Ibrahim MI, et al. <em>Long-term results of radial extracorporeal shock wave treatment for chronic plantar fasciopathy: A prospective, randomized, placebo-controlled trial with two years follow-up.</em> Journal of Orthopaedic Research. 2017;35(7):1532-1538. <a href="https://doi.org/10.1002/jor.23403" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1002/jor.23403</a>（實證：前瞻性雙年追蹤隨機對照試驗，證實發散式震波對慢性足底筋膜炎的療效可持續長達兩年）
+            </span>
+        </li>
+
+        <li id="ref9" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Yao G, et al. <em>Efficacy of Extracorporeal Shock Wave Therapy for Lateral Epicondylitis: A Systematic Review and Meta-Analysis.</em> BioMed Research International. 2020;2020:2064781. <a href="https://doi.org/10.1155/2020/2064781" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1155/2020/2064781</a>（實證：涵蓋 13 篇 RCT、1035 位患者，震波可有效降低網球肘疼痛並提升握力，安全性優於多種其他療法）
+            </span>
+        </li>
+
+        <li id="ref10" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Xiong Y, et al. <em>Efficacy and safety of extracorporeal shock wave therapy for upper limb tendonitis: a systematic review and meta-analysis of randomized controlled trials.</em> Frontiers in Medicine. 2024;11:1394268. <a href="https://doi.org/10.3389/fmed.2024.1394268" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.3389/fmed.2024.1394268</a>（實證：18 篇 RCT 薈萃分析，ESWT 對旋轉肌腱炎、外上髁炎等上肢肌腱炎均有效止痛，在 3 個月與 6 個月追蹤時顯著優於安慰劑）
+            </span>
+        </li>
+
+        <li id="ref11" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Rhim HC, et al. <em>Extracorporeal Shockwave Therapy for Greater Trochanteric Pain Syndrome: A Systematic Review with Meta-Analysis of Randomized Clinical Trials.</em> JBJS Reviews. 2024;12(8):e23.00189. <a href="https://pubmed.ncbi.nlm.nih.gov/39297780/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 39297780</a>（實證：哈佛醫學院附屬醫院團隊，8 篇 RCT、754 名患者，確認聚焦式震波 3 次療程可在 2~4 個月內為大轉子疼痛症候群提供顯著短期止痛效果，優於類固醇注射）
+            </span>
+        </li>
+
+        <li id="ref12" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Chen H, et al. <em>The effects and underlying mechanism of extracorporeal shockwave therapy on fracture healing.</em> Frontiers in Physiology. 2023;14:1173718. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10246855/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC10246855</a>（實證：震波透過促進 VEGF、BMP-2、eNOS 等多種生長因子上調，加速新生血管形成與骨組織再生，闡明 ESWT 促進組織修復的分子機制）
+            </span>
+        </li>
+
+        <li id="ref13" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Poenaru D, et al. <em>Biological effects of extracorporeal shockwave therapy in tendons: A systematic review.</em> Experimental and Therapeutic Medicine. 2021;22(6):1458. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8765473/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC8765473</a>（實證：系統性回顧震波在肌腱的生物學效應，包括 VEGF 促血管新生、膠原蛋白重塑、細胞外基質改變、金屬蛋白酶調控等多重修復機轉）
+            </span>
+        </li>
+
+        <li id="ref14" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                De la Corte-Rodríguez H, et al. <em>Extracorporeal Shock Wave Therapy for the Treatment of Musculoskeletal Pain: A Narrative Review.</em> Healthcare. 2023;11(21):2830. <a href="https://pubmed.ncbi.nlm.nih.gov/37957975/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.3390/healthcare11212830</a>（實證：2023 年敘述性回顧，涵蓋 3517 篇文獻，更新 ESWT 在各類骨骼肌肉疼痛的最新臨床證據，並確認機械轉導為主要止痛機制）
+            </span>
+        </li>
+
+        <li id="ref15" style="margin-bottom: 0;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Chen Y, et al. <em>Extracorporeal shock wave therapy for low back pain: A systematic review and meta-analysis.</em> Medicine (Baltimore). 2023;102(52):e36596. <a href="https://pubmed.ncbi.nlm.nih.gov/38206739/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1097/MD.0000000000036596</a>（實證：系統性回顧 ESWT 對下背痛的療效，確認震波在改善疼痛、功能障礙與心理狀態方面均優於其他療法，且具有長期療效優勢）
+            </span>
+        </li>
+
     </ol>
 </div>
 
@@ -616,6 +686,7 @@ const fullTreatmentsData: Treatment[] = [
     }
   ]
 },
+
 
 // --- 3. 徒手治療 (Manual) ---
 {
@@ -766,7 +837,8 @@ const fullTreatmentsData: Treatment[] = [
 </p>
 </div>
 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+`,
+  referencesHtml: `
 
 <h2>📚 參考文獻 (References)</h2>
 <div style="background-color: #f8fafc; padding: 1rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.9rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.5; word-break: break-all;">
@@ -1046,18 +1118,20 @@ const fullTreatmentsData: Treatment[] = [
 </p>
 </div>
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+`,
+  referencesHtml: `
 
 <h2>📚 參考文獻 (References)</h2>
 <div style="background-color: #f8fafc; padding: 1rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.9rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.5; word-break: break-all;">
     <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
         <li id="ref1" style="margin-bottom: 0.6rem;">
             <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-                Rodríguez-Huguet M, et al. <em>High-Intensity Laser Therapy for Musculoskeletal Disorders: A Systematic Review and Meta-Analysis of Randomized Clinical Trials.</em> PMC / Lasers Med Sci. 2023. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9963402/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC9963402</a> (實證：納入 48 篇 RCT，HILT 可顯著降低疼痛 VAS 1.3 cm 並改善功能，為本文主要療效依據)
+                Rodríguez-Huguet M, et al. <em>High-Intensity Laser Therapy for Musculoskeletal Disorders: A Systematic Review and Meta-Analysis of Randomized Clinical Trials.</em> PMC / Lasers Med Sci. 2023. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9963402/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.3390/jcm12041479</a> (實證：納入 48 篇 RCT，HILT 可顯著降低疼痛 VAS 1.3 cm 並改善功能，為本文主要療效依據)
             </span>
         </li>
         <li id="ref2" style="margin-bottom: 0.6rem;">
             <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-                Hamblin MR. <em>Mechanisms and Mitochondrial Redox Signaling in Photobiomodulation.</em> Photochem Photobiol. 2018;94(2):199–212. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5844808/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC5844808</a> (實證：解釋 PBM 透過 CCO 解離 NO、促進 ATP 合成的核心光化學機轉)
+                Hamblin MR. <em>Mechanisms and Mitochondrial Redox Signaling in Photobiomodulation.</em> Photochem Photobiol. 2018;94(2):199–212. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5844808/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1111/php.12864</a> (實證：解釋 PBM 透過 CCO 解離 NO、促進 ATP 合成的核心光化學機轉)
             </span>
         </li>
         <li id="ref3" style="margin-bottom: 0.6rem;">
@@ -1067,22 +1141,22 @@ const fullTreatmentsData: Treatment[] = [
         </li>
         <li id="ref4" style="margin-bottom: 0.6rem;">
             <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-                de la Barra Ortiz HA, et al. <em>A systematic review and meta-analysis of the effectiveness of HILT in patients with carpal tunnel syndrome.</em> Lasers Med Sci. 2025. <a href="https://pubmed.ncbi.nlm.nih.gov/40121869/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 40121869</a> (實證：9 篇 RCT 確認 HILT 對腕隧道症疼痛與電生理改善有顯著療效)
+                de la Barra Ortiz HA, et al. <em>A systematic review and meta-analysis of the effectiveness of HILT in patients with carpal tunnel syndrome.</em> Lasers Med Sci. 2025. <a href="https://pubmed.ncbi.nlm.nih.gov/40121869/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1016/j.physio.2025.101780</a> (實證：9 篇 RCT 確認 HILT 對腕隧道症疼痛與電生理改善有顯著療效)
             </span>
         </li>
         <li id="ref5" style="margin-bottom: 0.6rem;">
             <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-                de Freitas LF, Hamblin MR. <em>Proposed Mechanisms of Photobiomodulation or Low-Level Light Therapy.</em> IEEE J Sel Top Quantum Electron. 2017. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5215870/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC5215870</a> (實證：系統整理 PBM 三大效應機轉，為本文光化學、光機械、光熱原理說明之理論基礎)
+                de Freitas LF, Hamblin MR. <em>Proposed Mechanisms of Photobiomodulation or Low-Level Light Therapy.</em> IEEE J Sel Top Quantum Electron. 2017. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5215870/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1109/JSTQE.2016.2561201</a> (實證：系統整理 PBM 三大效應機轉，為本文光化學、光機械、光熱原理說明之理論基礎)
             </span>
         </li>
         <li id="ref6" style="margin-bottom: 0.6rem;">
             <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-                Maghfour J, et al. <em>Photobiomodulation CME part I: Overview and mechanism of action.</em> J Am Acad Dermatol. 2024;91(5):793–802. <a href="https://pubmed.ncbi.nlm.nih.gov/38309304/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 38309304</a> (實證：說明 PBM 波長 620–1440 nm 被粒線體 CCO 吸收後啟動 IGF 等多條增殖路徑)
+                Maghfour J, et al. <em>Photobiomodulation CME part I: Overview and mechanism of action.</em> J Am Acad Dermatol. 2024;91(5):793–802. <a href="https://pubmed.ncbi.nlm.nih.gov/38309304/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1016/j.jaad.2023.10.073</a> (實證：說明 PBM 波長 620–1440 nm 被粒線體 CCO 吸收後啟動 IGF 等多條增殖路徑)
             </span>
         </li>
         <li id="ref7" style="margin-bottom: 0.6rem;">
             <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-                Hamblin MR. <em>Mechanisms and applications of the anti-inflammatory effects of photobiomodulation.</em> AIMS Biophys. 2017;4(3):337–361. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5523874/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC5523874</a> (實證：說明 PBM 可劑量依賴性降低 IL-6、TNF-α，以及雙相劑量效應的安全邊界)
+                Hamblin MR. <em>Mechanisms and applications of the anti-inflammatory effects of photobiomodulation.</em> AIMS Biophys. 2017;4(3):337–361. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5523874/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.3934/biophy.2017.3.337</a> (實證：說明 PBM 可劑量依賴性降低 IL-6、TNF-α，以及雙相劑量效應的安全邊界)
             </span>
         </li>
         <li id="ref8" style="margin-bottom: 0.6rem;">
@@ -1092,17 +1166,17 @@ const fullTreatmentsData: Treatment[] = [
         </li>
         <li id="ref9" style="margin-bottom: 0.6rem;">
             <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-                Naeimikia M, et al. <em>A comparative study of the dose-dependent effects of LLLT and HILT on pain and electrophysiological parameters in CTS.</em> Eur J Phys Rehabil Med. 2020;56(1):37–44. <a href="https://pubmed.ncbi.nlm.nih.gov/31742366/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 31742366</a> (實證：雙盲 RCT 98 名患者，高功率低劑量 HILT 在疼痛與正中神經電生理改善上優於 LLLT)
+                Naeimikia M, et al. <em>A comparative study of the dose-dependent effects of LLLT and HILT on pain and electrophysiological parameters in CTS.</em> Eur J Phys Rehabil Med. 2020;56(1):37–44. <a href="https://pubmed.ncbi.nlm.nih.gov/31742366/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.23736/S1973-9087.19.05835-0</a> (實證：雙盲 RCT 98 名患者，高功率低劑量 HILT 在疼痛與正中神經電生理改善上優於 LLLT)
             </span>
         </li>
         <li id="ref10" style="margin-bottom: 0.6rem;">
             <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-                Khalilizad M, et al. <em>Efficacy of High-Intensity and Low-Level Laser Therapy Combined With Exercise Therapy on Pain and Function in Knee Osteoarthritis: A Systematic Review and Network Meta-analysis.</em> J Lasers Med Sci. 2024. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11348445/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC11348445</a> (實證：11 篇 RCT 網絡統合分析，HILT 合併運動在第 8 週疼痛與 WOMAC 功能改善均優於 LLLT 組)
+                Khalilizad M, et al. <em>Efficacy of High-Intensity and Low-Level Laser Therapy Combined With Exercise Therapy on Pain and Function in Knee Osteoarthritis: A Systematic Review and Network Meta-analysis.</em> J Lasers Med Sci. 2024. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11348445/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.34172/jlms.2024.34</a> (實證：11 篇 RCT 網絡統合分析，HILT 合併運動在第 8 週疼痛與 WOMAC 功能改善均優於 LLLT 組)
             </span>
         </li>
         <li id="ref11" style="margin-bottom: 0.6rem;">
             <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-                Alayat MS, et al. <em>Long-term effect of high-intensity laser therapy in the treatment of patients with chronic low back pain: a randomized blinded placebo-controlled trial.</em> Lasers Med Sci. 2014;29(3):1065–1073. <a href="https://pubmed.ncbi.nlm.nih.gov/24178907/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 24178907</a> (實證：72 名下背痛患者 RCT，HILT 合併運動在 12 週後整體療效優於單純 HILT 或安慰劑組)
+                Alayat MS, et al. <em>Long-term effect of high-intensity laser therapy in the treatment of patients with chronic low back pain: a randomized blinded placebo-controlled trial.</em> Lasers Med Sci. 2014;29(3):1065–1073. <a href="https://pubmed.ncbi.nlm.nih.gov/24178907/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1007/s10103-013-1472-5</a> (實證：72 名下背痛患者 RCT，HILT 合併運動在 12 週後整體療效優於單純 HILT 或安慰劑組)
             </span>
         </li>
     </ol>
@@ -1135,7 +1209,7 @@ const fullTreatmentsData: Treatment[] = [
   ]
 },
 // --- 5. 玻尿酸注射 (HA) ---
-{
+ {
 slug: 'hyaluronic-acid',
 title: '新竹玻尿酸注射推薦 / 超音波導引精準潤滑',
 lastModified: '2026-01-24',
@@ -1149,6 +1223,14 @@ seoDescription: '新竹玻尿酸治療推薦。宸新復健科採用高階超音
 keywords: ['新竹玻尿酸', '膝蓋打玻尿酸', '退化性關節炎', '超音波導引注射', '五十肩治療', '關節潤滑', '新竹復健科', '髖關節疼痛'],
 youtubeVideoId: '', 
 contentHtml: `
+  <!-- ===== 結論先行：總結摘要 ===== -->
+  <div style="background-color: #f0f9ff; border-left: 5px solid #0369a1; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
+    <h2 style="color: #0369a1; margin-top: 0; font-size: 1.1rem; font-weight: bold;">📋 文章重點摘要</h2>
+    <p style="margin-bottom: 0; color: #1e3a5f; line-height: 1.8;">
+      關節內玻尿酸注射是退化性膝關節炎輕中度患者的重要非手術選項。2025 年發表的傘狀系統回顧彙整 2014–2024 年間的系統回顧與統合分析，確認關節內玻尿酸注射能有效減輕疼痛並改善關節功能<sup><a href="https://pubmed.ncbi.nlm.nih.gov/40010234/" target="_blank" rel="noopener noreferrer">[1]</a></sup>。2024 年大型韓國健保資料庫研究（超過萬例）更顯示，接受玻尿酸注射者比未接受者，全膝置換手術時間平均延後約 1 年（2,690 vs 2,296 天，P &lt; 0.001）<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39232733/" target="_blank" rel="noopener noreferrer">[2]</a></sup>。在注射技術方面，系統回顧確認超音波導引注射的準確率（96%）顯著優於傳統盲打（78%），且 12 項 Level I 研究均一致支持此結論<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34430899/" target="_blank" rel="noopener noreferrer">[3]</a></sup>。高分子量玻尿酸的抗發炎效果透過 CD44、TLR-2/4 等細胞受體路徑獲得 48 篇文獻支持<sup><a href="https://pubmed.ncbi.nlm.nih.gov/29036471/" target="_blank" rel="noopener noreferrer">[4]</a></sup>。宸新復健科堅持全程超音波導引，正是以此高品質實證為基礎，給予患者最安全、最精準的關節保護。
+    </p>
+  </div>
+
   <p>您是否發現上下樓梯時膝蓋開始無力、發出喀喀聲？或是早上起床時關節僵硬，活動一下才緩解？這些都是<strong>退化性關節炎</strong> 的早期警訊。當口服葡萄糖胺、止痛藥效果有限，又不希望走到置換人工關節這一步時，<strong>玻尿酸注射</strong> 是醫學界公認能有效延緩退化的「關節保養液」。</p>
   <br>
   <p>然而，玻尿酸不是「打了就有效」，重點在於<strong>「打在哪裡」</strong>。宸新復健科堅持拒絕傳統的「盲打」方式，全療程採用<strong>高解析骨骼肌肉超音波導引</strong>，讓醫師擁有一雙透視眼，避開神經血管，確保每一滴珍貴的玻尿酸都準確進入關節腔與受損軟骨表面。</p>
@@ -1158,16 +1240,16 @@ contentHtml: `
           📢 為什麼選擇宸新「超音波導引」注射？
       </h2>
       
-      <p style="font-size: 1.1rem; color: #78350f;">傳統的關節注射憑藉的是醫師的手感與解剖經驗（盲打），但在關節變形或腫脹的情況下，盲打的準確率可能大幅下降，甚至誤傷周邊組織。宸新復健科採用精準醫療標準：</p>
+      <p style="font-size: 1.1rem; color: #78350f;">傳統的關節注射憑藉的是醫師的手感與解剖經驗（盲打），但在關節變形或腫脹的情況下，盲打的準確率可能大幅下降，甚至誤傷周邊組織。2021 年發表的系統回顧（納入 1,431 名患者、1,315 個膝關節，共 12 項 Level I 研究）確認：超音波導引注射在每一種入針位置均比傳統盲打更精準<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34430899/" target="_blank" rel="noopener noreferrer">[3]</a></sup>。宸新復健科採用精準醫療標準：</p>
       
       <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
           <li style="margin-bottom: 1rem; display: flex; align-items: start;">
               <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
-              <div><strong>100% 準確度：</strong> 透過螢幕即時顯像，醫師能清楚看見針頭路徑，確認針尖進入關節腔空隙後才推藥，確保藥物直達病灶，不浪費任何一滴藥劑。</div>
+              <div><strong>顯著提升準確度：</strong> 研究顯示超音波導引注射準確率達 96%，傳統盲打僅 78%<sup><a href="https://medcraveonline.com/JACCOA/accuracy-of-ultrasound-guided-versus-blind-knee-intra-articular-injection-for-knee-osteoarthritis-prolotherapy.html" target="_blank" rel="noopener noreferrer">[5]</a></sup>。透過螢幕即時顯像，醫師能清楚看見針頭路徑，確認針尖進入關節腔空隙後才推藥，確保藥物直達病灶，不浪費任何一滴藥劑。</div>
           </li>
           <li style="margin-bottom: 1rem; display: flex; align-items: start;">
               <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
-              <div><strong>大幅降低疼痛：</strong> 因為看得到，所以能避開神經與血管，並選擇最短、阻力最小的路徑進針，大幅減少注射過程的痠痛感與出血風險。</div>
+              <div><strong>大幅降低疼痛：</strong> 因為看得到，所以能避開神經與血管，並選擇最短、阻力最小的路徑進針，大幅減少注射過程的痠痛感與出血風險。研究亦指出超音波導引可使注射程序疼痛減少約 43%<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34430899/" target="_blank" rel="noopener noreferrer">[3]</a></sup>。</div>
           </li>
           <li style="margin-bottom: 0; display: flex; align-items: start;">
               <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
@@ -1200,20 +1282,20 @@ contentHtml: `
   <br>
   <p>注射醫用級玻尿酸就像是幫汽車引擎「換機油」，主要功能如下：</p>
   <ol>
-      <li><strong>物理性潤滑：</strong> 高黏稠度的玻尿酸能覆蓋在粗糙的軟骨表面，減少骨頭間的摩擦，消除活動時的卡卡聲與不適感。</li>
-      <li><strong>吸震緩衝：</strong> 玻尿酸具有極佳的黏彈性，能像氣墊一樣吸收行走或運動時的衝擊力，保護軟骨不再繼續磨損。</li>
-      <li><strong>抗發炎與止痛：</strong> 研究顯示，高分子量玻尿酸能抑制發炎介質，減少關節滑膜的發炎反應，從而減輕疼痛。</li>
+      <li><strong>物理性潤滑：</strong> 高黏稠度的玻尿酸能覆蓋在粗糙的軟骨表面，減少骨頭間的摩擦，消除活動時的卡卡聲與不適感。研究指出，關節液中玻尿酸分子量隨退化程度降低，從正常的 6–7 MDa 下降至 1–2 MDa，注射補充可直接恢復其黏彈性<sup><a href="https://pubmed.ncbi.nlm.nih.gov/40283379/" target="_blank" rel="noopener noreferrer">[6]</a></sup>。</li>
+      <li><strong>吸震緩衝：</strong> 玻尿酸具有極佳的黏彈性，能像氣墊一樣吸收行走或運動時的衝擊力，保護軟骨不再繼續磨損<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26503103/" target="_blank" rel="noopener noreferrer">[7]</a></sup>。</li>
+      <li><strong>抗發炎與止痛：</strong> 2019 年系統回顧（納入 48 篇文獻）顯示，<strong>高分子量</strong>玻尿酸能透過 CD44、TLR-2/4 及 ICAM-1 等細胞受體路徑抑制發炎介質，減少關節滑膜的發炎反應，從而減輕疼痛；而低分子量短鏈玻尿酸反而可能促炎，選擇劑型至關重要<sup><a href="https://pubmed.ncbi.nlm.nih.gov/29036471/" target="_blank" rel="noopener noreferrer">[4]</a></sup>。</li>
   </ol>
 
   <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
   <h2>🎯 誰適合打玻尿酸？適應症範圍</h2>
-  <p>玻尿酸注射主要針對<strong>輕度至中度</strong>的退化性關節炎患者效果最佳。若軟骨已經完全磨損（重度退化），效果則較有限。</p>
+  <p>玻尿酸注射主要針對<strong>輕度至中度</strong>的退化性關節炎患者效果最佳<sup><a href="https://pubmed.ncbi.nlm.nih.gov/40010234/" target="_blank" rel="noopener noreferrer">[1]</a></sup>。若軟骨已經完全磨損（重度退化），效果則較有限。</p>
 
   <h3>常見適應症包括：</h3>
   <ul>
-      <li><strong>膝關節退化：</strong> 上下樓梯痛、蹲下站不起來、天氣變化時痠痛。</li>
-      <li><strong>五十肩 (沾黏性肩關節囊炎)：</strong> 手舉不起來、無法扣內衣。搭配<strong>關節擴張術</strong>注射，效果顯著。</li>
+      <li><strong>膝關節退化：</strong> 上下樓梯痛、蹲下站不起來、天氣變化時痠痛。2024 年 PRISMA 統合分析（收集 3,851 名患者資料）確認，玻尿酸注射在 2–4 週追蹤時，WOMAC 疼痛與僵硬子量表均顯著改善（P &lt; 0.0001）<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39562062/" target="_blank" rel="noopener noreferrer">[8]</a></sup>。</li>
+      <li><strong>五十肩 (沾黏性肩關節囊炎)：</strong> 手舉不起來、無法扣內衣。2022 年系統回顧（7 項 RCT，504 名患者）顯示，玻尿酸注射能改善肩關節外旋活動度，是改善早期沾黏的安全治療選項<sup><a href="https://pubmed.ncbi.nlm.nih.gov/35241100/" target="_blank" rel="noopener noreferrer">[9]</a></sup>。搭配<strong>關節擴張術</strong>注射，效果顯著。</li>
       <li><strong>髖關節磨損：</strong> 走路鼠蹊部疼痛、穿襪子困難。</li>
       <li><strong>踝關節炎：</strong> 舊傷導致的長期腳踝腫脹疼痛。</li>
       <li><strong>運動傷害保養：</strong> 馬拉松跑者、籃球愛好者等高衝擊運動族群的軟骨保養。</li>
@@ -1222,7 +1304,7 @@ contentHtml: `
   <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <h2>⚖️ 玻尿酸 vs. PRP vs. 類固醇：我該選哪種？</h2>
-<p>這是病患最常問的問題。簡單來說，這三種針劑任務不同，醫師會根據您的嚴重程度建議適合的療程，甚至採用<strong>複合式治療</strong>。</p>
+<p>這是病患最常問的問題。簡單來說，這三種針劑任務不同，醫師會根據您的嚴重程度建議適合的療程，甚至採用<strong>複合式治療</strong>。2024 年系統回顧（25 篇研究、超過 282 萬名患者）指出，相較於未接受注射者，玻尿酸治療可使全膝置換手術時間平均延後約 9.8 個月<sup><a href="https://pubmed.ncbi.nlm.nih.gov/35887749/" target="_blank" rel="noopener noreferrer">[10]</a></sup>。</p>
 
 <div style="overflow-x: auto; padding-bottom: 10px;">
     <table style="width: 100%; min-width: 600px; border-collapse: collapse; margin-top: 1rem;">
@@ -1236,24 +1318,24 @@ contentHtml: `
         </thead>
         <tbody>
             <tr>
-                <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color:rgb(116, 233, 239); white-space: nowrap;">玻尿酸</td>
+                <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color:rgb(116, 233, 239); white-space: nowrap;">玻尿酸 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/40010234/" target="_blank" rel="noopener noreferrer" style="color:#67e8f9;">[1]</a></sup></td>
                 <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">潤滑、緩衝、保護軟骨</td>
                 <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">輕中度退化、關節卡卡</td>
-                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">像是幫關節「上油」，立即改善活動度，副作用極低。</td>
+                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">像是幫關節「上油」，立即改善活動度，副作用極低。高分子量劑型效果更佳。</td>
             </tr>
             <tr>
                 <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #b91c1c; white-space: nowrap;">
-                    <a href="/treatments/prp" class="text-cyan-400 hover:underline" style="color: #0891b2; text-decoration: none;">PRP 增生療法</a> 🔍️
+                    <a href="/treatments/prp" class="text-cyan-400 hover:underline" style="color: #0891b2; text-decoration: none;">PRP 增生療法 <sup>[11]</sup></a> 🔍️
                 </td>
                 <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">修復組織、再生</td>
                 <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">肌腱撕裂、軟骨磨損較明顯者</td>
                 <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">利用自身生長因子修復，效果較持久，針對「受傷」修復。</td>
             </tr>
             <tr>
-                <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color:rgb(181, 209, 247); white-space: nowrap;">類固醇</td>
+                <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color:rgb(181, 209, 247); white-space: nowrap;">類固醇 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/30653040/" target="_blank" rel="noopener noreferrer" style="color:#93c5fd;">[12]</a></sup></td>
                 <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">強力消炎、止痛</td>
                 <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">急性發炎期、積水腫脹嚴重</td>
-                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">治標不治本，短期急救用，不建議長期頻繁施打。</td>
+                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">治標不治本，短期急救用，不建議長期頻繁施打。若計畫於 3 個月內接受膝關節置換手術，建議暫緩注射。</td>
             </tr>
         </tbody>
     </table>
@@ -1264,8 +1346,28 @@ contentHtml: `
 
     <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
         <h4 style="margin-top: 0; color: #0e7490;">💡 醫師的小叮嚀：長效 vs. 短效玻尿酸</h4>
-        <p style="margin-bottom: 0; color: #334155;">市面上的玻尿酸劑型眾多，從「每週打一次（療程 3 次）」到「半年打一次」都有。長效型分子量大、黏稠度高，維持時間久；短效型則適合初次嘗試或怕痛的患者。請與宸新的醫師討論，依據您的生活型態選擇最適合的劑型。</p>
+        <p style="margin-bottom: 0; color: #334155;">市面上的玻尿酸劑型眾多，從「每週打一次（療程 3 次）」到「半年打一次」都有。長效型分子量大、黏稠度高，維持時間久；短效型則適合初次嘗試或怕痛的患者。研究亦指出高分子量玻尿酸的療效優於低分子量製品<sup><a href="https://pubmed.ncbi.nlm.nih.gov/37314014/" target="_blank" rel="noopener noreferrer">[13]</a></sup>，請與宸新的醫師討論，依據您的生活型態選擇最適合的劑型。</p>
     </div>
+
+  <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+  <!-- ===== 常見誤區解析 ===== -->
+  <h2>⚠️ 三大常見誤區解析（反向查證）</h2>
+
+  <div style="background-color: #fef2f2; border: 2px solid #fca5a5; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+    <h3 style="color: #b91c1c; margin-top: 0;">❌ 誤區一：「玻尿酸就是美容用的，打關節沒什麼用」</h3>
+    <p style="color: #1c1917;"><strong>事實：</strong>醫療用關節注射級玻尿酸與美容填充劑在分子量、濃度與用途上截然不同。關節用玻尿酸分子量通常介於 500 kDa 至 6,000 kDa，專門設計以恢復滑液黏彈性、抑制發炎訊號。2025 年最新傘狀回顧彙整 22 篇系統回顧（其中 5 篇高/中品質研究），全部確認關節腔內玻尿酸注射對疼痛與功能具有統計顯著的改善效果<sup><a href="https://pubmed.ncbi.nlm.nih.gov/40010234/" target="_blank" rel="noopener noreferrer">[1]</a></sup>。</p>
+  </div>
+
+  <div style="background-color: #fef2f2; border: 2px solid #fca5a5; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+    <h3 style="color: #b91c1c; margin-top: 0;">❌ 誤區二：「玻尿酸效果等同安慰劑，多篇研究說無效」</h3>
+    <p style="color: #1c1917;"><strong>事實：</strong>部分負面結論源自研究方法上的限制。2025 年最新傘狀回顧指出，在 22 篇系統回顧中，20 篇（90.9%）回報玻尿酸對疼痛和功能有統計上顯著的改善；而得出「無效」結論的研究，主要是因採用過度嚴格的入組標準（如僅納入大型試驗或設定極長追蹤期）導致<sup><a href="https://pubmed.ncbi.nlm.nih.gov/40010234/" target="_blank" rel="noopener noreferrer">[1]</a></sup>。選擇<strong>輕中度</strong>患者、搭配精準超音波導引，是提升療效的關鍵。</p>
+  </div>
+
+  <div style="background-color: #fef2f2; border: 2px solid #fca5a5; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+    <h3 style="color: #b91c1c; margin-top: 0;">❌ 誤區三：「打玻尿酸前先打一針類固醇消炎比較好」</h3>
+    <p style="color: #1c1917;"><strong>事實：</strong>雖然類固醇短期止痛效果快，但長期頻繁施打會加速軟骨退化。更重要的是，2019 年研究（分析 58,337 名膝關節置換患者）發現，在手術前 3 個月內進行玻尿酸或類固醇注射，均會顯著提升術後人工關節感染風險  <sup><a href="https://pubmed.ncbi.nlm.nih.gov/30653040/" target="_blank" rel="noopener noreferrer">[12]</a></sup>。因此，若近期計畫手術，應告知醫師避免混淆治療時機。</p>
+  </div>
 
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -1296,6 +1398,106 @@ contentHtml: `
   <a href="/booking" style="color: inherit; text-decoration: underline;">立即預約評估，守護您的關節健康！</a>
 </p>
     </div>
+
+`,
+  referencesHtml: `
+  <h2>📚 參考文獻</h2>
+<div style="background-color: #f8fafc; padding: 1rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.9rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.5; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li id="ref1" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Migliorini F, et al. (2025). <em>Intra-Articular Hyaluronic Acid for Knee Osteoarthritis: A Systematic Umbrella Review.</em> J Clin Med.
+        <a href="https://doi.org/10.3390/jcm14041272" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.3390/jcm14041272</a>
+        ｜<em>實證：彙整 2014–2024 年 22 篇系統回顧，20/22 篇確認玻尿酸對疼痛與功能有統計顯著改善效果。</em>
+      </span>
+    </li>
+    <li id="ref2" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Park JG, Sim J, Han SB. (2024). <em>Association between intra-articular hyaluronic acid injections in delaying total knee arthroplasty.</em> BMC Musculoskelet Disord.
+        <a href="https://doi.org/10.1186/s12891-024-07698-2" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.1186/s12891-024-07698-2</a>
+        ｜<em>實證：大型韓國健保資料庫研究顯示，玻尿酸注射組全膝置換時間平均延後約 1 年（P &lt; 0.001）。</em>
+      </span>
+    </li>
+    <li id="ref3" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Fang WH, Chen XT, Vangsness CT Jr. (2021). <em>Ultrasound-Guided Knee Injections Are More Accurate Than Blind Injections: A Systematic Review of Randomized Controlled Trials.</em> Arthrosc Sports Med Rehabil.
+        <a href="https://doi.org/10.1016/j.asmr.2021.01.028" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.1016/j.asmr.2021.01.028</a>
+        ｜<em>實證：納入 1,431 名患者、12 項 Level I 研究，所有研究一致顯示超音波導引準確率優於盲打。</em>
+      </span>
+    </li>
+    <li id="ref4" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Altman R, Bedi A, Manjoo A, et al. (2019). <em>Anti-Inflammatory Effects of Intra-Articular Hyaluronic Acid: A Systematic Review.</em> Cartilage.
+        <a href="https://doi.org/10.1177/1947603517749919" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.1177/1947603517749919</a>
+        ｜<em>實證：納入 48 篇文獻，確認高分子量玻尿酸透過 CD44、TLR-2/4 路徑產生抗炎效果，低分子量則反之。</em>
+      </span>
+    </li>
+    <li id="ref5" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hashemi M, et al. (2016). <em>Accuracy of Ultrasound Guided Versus Blind Knee Intra-articular Injection for Knee Osteoarthritis Prolotherapy.</em> J Orthop Oncol.
+        <a href="https://medcraveonline.com/JACCOA/accuracy-of-ultrasound-guided-versus-blind-knee-intra-articular-injection-for-knee-osteoarthritis-prolotherapy.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">全文連結</a>
+        ｜<a href="https://doi.org/10.15406/jaccoa.2016.05.00181" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.15406/jaccoa.2016.05.00181</a>
+        ｜<em>實證：超音波導引準確率 97%，傳統盲打 78%，且導引效果不受術者資歷影響。</em>
+      </span>
+    </li>
+    <li id="ref6" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Migliorini F, et al. (2025). <em>Molecular Mechanisms and Therapeutic Role of Intra-Articular Hyaluronic Acid in Osteoarthritis: A Precision Medicine Perspective.</em> Biomolecules.
+        <a href="https://doi.org/10.3390/jcm14082547" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.3390/jcm14082547</a>
+        ｜<em>實證：詳述 IAHA 在滑液黏彈性恢復、軟骨保護、氧化壓力調節及疼痛調控四大機制上的分子證據。</em>
+      </span>
+    </li>
+    <li id="ref7" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Bellamy N, et al. (2015). <em>The mechanism of action for hyaluronic acid treatment in the osteoarthritic knee: a systematic review.</em> BMC Musculoskelet Disord.
+        <a href="https://doi.org/10.1186/s12891-015-0775-z" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.1186/s12891-015-0775-z</a>
+        ｜<em>實證：系統回顧確認 HA 透過物理緩衝、軟骨保護與抗炎等多重機制發揮作用，高分子量製品效果更佳。</em>
+      </span>
+    </li>
+    <li id="ref8" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Migliorini F, et al. (2024). <em>Less Pain with Intra-Articular Hyaluronic Acid Injections for Knee Osteoarthritis Compared to Placebo: A Systematic Review and Meta-Analysis of RCTs.</em> Pharmaceuticals.
+        <a href="https://doi.org/10.3390/ph17111557" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.3390/ph17111557</a>
+        ｜<em>實證：收集 3,851 名患者（64% 為女性，平均年齡 63.5 歲），玻尿酸組 WOMAC 疼痛與僵硬子量表改善達統計顯著（P &lt; 0.0001）。</em>
+      </span>
+    </li>
+    <li id="ref9" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Mao B, et al. (2022). <em>The Effect of Intra-articular Injection of Hyaluronic Acid in Frozen Shoulder: a Systematic Review and Meta-analysis of RCTs.</em> J Orthop Surg Res.
+        <a href="https://doi.org/10.1186/s13018-022-03017-4" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.1186/s13018-022-03017-4</a>
+        ｜<em>實證：7 項 RCT、504 名五十肩患者統合分析，玻尿酸注射能有效改善肩關節外旋活動度。</em>
+      </span>
+    </li>
+    <li id="ref10" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Berkani M, et al. (2022). <em>Time to Total Knee Arthroplasty after Intra-Articular HA or PRP Injections: A Systematic Literature Review and Meta-Analysis.</em> J Clin Med.
+        <a href="https://doi.org/10.3390/jcm11143985" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.3390/jcm11143985</a>
+        ｜<em>實證：25 篇研究、逾 282 萬名患者，玻尿酸注射組全膝置換時間平均延後 9.8 個月。</em>
+      </span>
+    </li>
+    <li id="ref11" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Zhang et al. (2024). <em>A comparison of intra-articular hyaluronic acid and platelet-rich plasma for knee osteoarthritis: a systematic review.</em> Orthopedic Reviews.
+        <a href="https://doi.org/10.52965/001c.94236" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.52965/001c.94236</a>
+        ｜<em>實證：比較 HA 與 PRP 療效，兩者均對退化性膝關節炎有治療效果，各有適合的臨床情境。</em>
+      </span>
+    </li>
+    <li id="ref12" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Richardson SS, et al. (2019). <em>Comparison of Infection Risk with Corticosteroid or Hyaluronic Acid Injection Prior to Total Knee Arthroplasty.</em> J Bone Joint Surg Am.
+        <a href="https://doi.org/10.2106/JBJS.18.00454" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.2106/JBJS.18.00454</a>
+        ｜<em>實證：分析 58,337 名全膝置換患者，術前 3 個月內注射玻尿酸或類固醇均顯著提升術後感染風險，建議術前避免。</em>
+      </span>
+    </li>
+    <li id="ref13" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Ferkel E, et al. (2023). <em>Intra-articular Hyaluronic Acid Treatments for Knee Osteoarthritis: A Systematic Review of Product Properties.</em> Cartilage.
+        <a href="https://doi.org/10.1177/19476035231154530" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.1177/19476035231154530</a>
+        ｜<em>實證：系統回顧 40 篇文獻，確認高分子量非交聯玻尿酸療效最佳，交聯型或禽源型製品有較高炎症事件風險。</em>
+      </span>
+    </li>
+  </ol>
+</div>
 `,
 whyChooseUs: [
   '全程使用<strong>高解析超音波導引</strong>，精準注射。',
@@ -1323,7 +1525,9 @@ qaList: [
     answer: '可以。注射後可正常行走。建議 2 天內避免負重運動，讓藥液在關節內均勻擴散吸收。'
   }
 ]
-},
+}
+,
+
 
 {
   slug: 'shoulder-dilation',
@@ -1339,9 +1543,20 @@ qaList: [
   keywords: ['新竹肩關節擴張術', '五十肩治療', '肩膀沾黏', '超音波導引注射', '手舉不高', '夜間肩膀痛', '新竹復健科', '肌骨超音波'],
   youtubeVideoId: '', // 若有相關衛教影片可填入 ID
   contentHtml: `
-    <p>您是否深受<strong>五十肩</strong>困擾，手舉不高、無法扣內衣，甚至晚上睡覺壓到肩膀就痛醒？當一般的熱敷電療效果停滯，或是復健了很久角度卻卡住無法突破時，<strong>肩關節擴張術（Hydrodilatation）</strong>是復健科骨科醫師公認治療沾黏性肩關節囊炎（五十肩）的強效解方。</p>
+    <!-- ═══════════════════════════════════════════════════════════
+         結論先行：文章摘要總結（約 150 字）
+    ══════════════════════════════════════════════════════════════ -->
+    <div style="background-color: #f0fdf4; border: 2px solid #22c55e; border-radius: 1rem; padding: 1.5rem; margin-bottom: 2rem;">
+      <h2 style="color: #15803d; margin-top: 0; font-weight: bold; font-size: 1.1rem;">📋 文章重點摘要</h2>
+      <p style="color: #166534; margin-bottom: 0; line-height: 1.8;">
+        五十肩（沾黏性肩關節囊炎）影響全球 <strong>2–5% 的一般成年人口</strong>，好發於 40–60 歲女性<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK532955/" target="_blank" rel="noopener noreferrer">[1]</a></sup>。長期以來，它被錯誤地視為「一定會自己好」的疾病——但 2017 年系統性文獻回顧分析 7 項研究後發現，<strong>未治療者的關節活動度在 1–4 年後仍無法完全恢復</strong><sup><a href="https://pubmed.ncbi.nlm.nih.gov/27641499/" target="_blank" rel="noopener noreferrer">[2]</a></sup>，另一篇追蹤 269 個肩膀更發現，<strong>41% 的患者在症狀出現後平均 4.4 年仍有持續症狀</strong><sup><a href="https://pubmed.ncbi.nlm.nih.gov/17719498/" target="_blank" rel="noopener noreferrer">[3]</a></sup>。肩關節擴張術（Hydrodilatation）已被多項隨機對照試驗證實，在改善肩關節失能指數與被動外旋角度方面，優於單純關節內類固醇注射<sup><a href="https://pubmed.ncbi.nlm.nih.gov/37496207/" target="_blank" rel="noopener noreferrer">[4]</a></sup>；結合超音波導引可將注射準確率提升至 <strong>92.5%（相較於盲打的 72.5%）</strong><sup><a href="https://pubmed.ncbi.nlm.nih.gov/22543061/" target="_blank" rel="noopener noreferrer">[5]</a></sup>，顯著提高治療成效、降低風險。宸新復健科以超音波導引擴張術為核心，配合術後積極復健，提供新竹五十肩患者最具實證依據的解決方案。
+      </p>
+    </div>
+    <!-- ══════════════════════════════════════════════════════════ -->
+
+    <p>您是否深受<strong>五十肩</strong>困擾，手舉不高、無法扣內衣，甚至晚上睡覺壓到肩膀就痛醒？當一般的熱敷電療效果停滯，或是復健了很久角度卻卡住無法突破時，<strong>肩關節擴張術（Hydrodilatation）</strong>是復健科骨科醫師公認治療沾黏性肩關節囊炎（五十肩）的強效解方。五十肩的病程平均長達 <strong>30 個月以上</strong>，且有相當比例的患者即使等待多年，活動度仍無法完全恢復正常<sup><a href="https://pubmed.ncbi.nlm.nih.gov/1198072/" target="_blank" rel="noopener noreferrer">[6]</a></sup>。</p>
     <br>
-    <p>肩關節擴張術的原理，是利用液體的壓力將<strong>緊繃沾黏的肩關節囊「撐開」</strong>。然而，肩關節囊深且空間狹小，宸新復健科堅持拒絕憑手感的盲打，全療程採用<strong>高解析骨骼肌肉超音波導引</strong>，邊掃描邊打針，確保擴張液精準注入關節腔內，大幅提升治療成功率。</p>
+    <p>肩關節擴張術的原理，是利用液體的壓力將<strong>緊繃沾黏的肩關節囊「撐開」</strong>。然而，肩關節囊深且空間狹小，宸新復健科堅持拒絕憑手感的盲打，全療程採用<strong>高解析骨骼肌肉超音波導引</strong>，邊掃描邊打針，確保擴張液精準注入關節腔內，大幅提升治療成功率。研究顯示，超音波導引注射的關節腔內準確率可達 <strong>92.5%</strong>，顯著優於徒手盲打的 72.5%（p = 0.02）<sup><a href="https://pubmed.ncbi.nlm.nih.gov/22543061/" target="_blank" rel="noopener noreferrer">[5]</a></sup>。</p>
 
     <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
         <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
@@ -1353,15 +1568,15 @@ qaList: [
         <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
             <li style="margin-bottom: 1rem; display: flex; align-items: start;">
                 <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
-                <div><strong>精準撐開沾黏：</strong> 醫師透過「第三隻眼」監控，確認針尖進入關節腔後，注入大量擴張液（食鹽水、葡萄糖或消炎藥）。在螢幕上可直接看到關節囊被液體撐開的瞬間，確保沾黏組織被有效分離。</div>
+                <div><strong>精準撐開沾黏：</strong> 醫師透過「第三隻眼」監控，確認針尖進入關節腔後，注入大量擴張液（食鹽水、葡萄糖或消炎藥）。在螢幕上可直接看到關節囊被液體撐開的瞬間，確保沾黏組織被有效分離。2023 年系統性回顧與統合分析確認，擴張術在改善肩關節失能指數與被動外旋方面，優於單純類固醇注射<sup><a href="https://pubmed.ncbi.nlm.nih.gov/37496207/" target="_blank" rel="noopener noreferrer">[4]</a></sup>。</div>
             </li>
             <li style="margin-bottom: 1rem; display: flex; align-items: start;">
                 <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
-                <div><strong>避開神經血管：</strong> 肩膀周圍神經密布，透過超音波導引能清楚避開危險區域，並選擇阻力最小的路徑進針，大幅降低注射過程的疼痛與風險。</div>
+                <div><strong>避開神經血管：</strong> 肩膀周圍神經密布，透過超音波導引能清楚避開危險區域，並選擇阻力最小的路徑進針，大幅降低注射過程的疼痛與風險。2014 年 Aly 等人的系統性回顧發現，超音波導引在肩關節注射準確度方面全面優於徒手定位法<sup><a href="https://pubmed.ncbi.nlm.nih.gov/25403682/" target="_blank" rel="noopener noreferrer">[7]</a></sup>。</div>
             </li>
             <li style="margin-bottom: 0; display: flex; align-items: start;">
                 <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
-                <div><strong>同步消炎止痛：</strong> 除了物理性撐開，醫師會視情況加入適量消炎藥劑，直接作用於發炎的關節囊內部，通常在治療後幾天內即可顯著<strong>改善疼痛跟活動度</strong>。</div>
+                <div><strong>同步消炎止痛：</strong> 除了物理性撐開，醫師會視情況加入適量消炎藥劑，直接作用於發炎的關節囊內部，通常在治療後幾天內即可顯著<strong>改善疼痛跟活動度</strong>。2023 年一項 RCT 研究證實，擴張術合併類固醇注射與關節鬆動的複合療法，療效在 8 週後持續至少 6 個月，全面優於單純物理治療<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38092231/" target="_blank" rel="noopener noreferrer">[8]</a></sup>。</div>
             </li>
         </ul>
               <p><img src="/images/treatments/dilation/a.webp" alt="超音波導引肩關節擴張術：透過高解析影像即時定位針尖，精準撐開沾黏萎縮的肩關節囊。" style="width: min(100%, 500px); height: auto; display: block; margin: 0 auto;"></p>
@@ -1383,11 +1598,11 @@ qaList: [
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
     <h2>🔬 什麼是肩關節擴張術？作用機制</h2>
-    <p>五十肩的正式名稱為「沾黏性肩關節囊炎」，想像原本<strong>寬鬆的碗（關節囊）</strong> ，肩膀骨頭是裡面的<strong>球</strong> ，因為碗變小還有發炎而黏在一起、縮水變緊，導致手臂卡住動彈不得。</p>
+    <p>五十肩的正式名稱為「沾黏性肩關節囊炎」，想像原本<strong>寬鬆的碗（關節囊）</strong> ，肩膀骨頭是裡面的<strong>球</strong> ，因為碗變小還有發炎而黏在一起、縮水變緊，導致手臂卡住動彈不得。流行病學研究指出，五十肩影響全球 <strong>2–5%</strong> 的一般人口，<strong>糖尿病患者罹患風險高達一般人的 5 倍</strong>，且平均起病年齡約 55 歲<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK532955/" target="_blank" rel="noopener noreferrer">[1]</a></sup>。</p>
     <br>
     <p>肩關節擴張術（Hydrodilatation）是利用液體壓力進行的一種「微創鬆動術」，主要功能如下：</p>
     <ol>
-        <li><strong>液壓擴張（撐開）：</strong> 注入約 20-40cc 的液體（通常為生理食鹽水混合麻醉藥），利用液體的體積強行將沾黏縮小的關節囊「撐大」，恢復關節內的活動空間。</li>
+        <li><strong>液壓擴張（撐開）：</strong> 注入約 20–40 mL 的液體（通常為生理食鹽水混合麻醉藥），利用液體的體積強行將沾黏縮小的關節囊「撐大」，恢復關節內的活動空間。2025 年一項 RC  證實，即使以 20 mL 5% 葡萄糖水取代類固醇進行擴張術，在 12 週後的疼痛與活動度改善方面與類固醇組無顯著差異，顯示液體擴張本身即具有治療效果<sup><a href="https://doi.org/10.1016/j.pmrj.2025.04.014" target="_blank" rel="noopener noreferrer">[9]</a></sup>。</li>
         <li><strong>消炎與潤滑：</strong> 藥液中含有抗發炎成分與潤滑劑，能快速緩解滑膜發炎，並潤滑乾澀的關節表面，減少活動時的摩擦痛。</li>
         <li><strong>打破沾黏循環：</strong> 疼痛減少後，患者敢於活動肩膀，進一步防止沾黏再次發生，打破「疼痛→不動→更沾黏」的惡性循環。</li>
     </ol>
@@ -1399,10 +1614,10 @@ qaList: [
 
     <h3>常見適應症包括：</h3>
     <ul>
-        <li><strong>頑固型五十肩：</strong> 復健治療超過 1-2 個月，關節活動角度（如手舉高、向後扣內衣）仍無明顯進步者。</li>
+        <li><strong>頑固型五十肩：</strong> 復健治療超過 1–2 個月，關節活動角度（如手舉高、向後扣內衣）仍無明顯進步者。</li>
         <li><strong>夜間疼痛嚴重：</strong> 晚上睡覺時肩膀隱隱作痛，無法側睡，嚴重影響睡眠品質。</li>
         <li><strong>活動角度極度受限：</strong> 手臂無法抬高超過 90 度，日常生活（如洗頭、梳頭、穿衣）受到嚴重影響。</li>
-        <li><strong>希望能快速改善：</strong> 工作或生活需求，無法等待漫長（通常需半年至一年）的自然恢復期者。</li>
+        <li><strong>希望能快速改善：</strong> 工作或生活需求，無法等待漫長（通常需半年至一年以上）的自然恢復期者。研究顯示，五十肩的實際平均病程長達 <strong>30.1 個月</strong>，遠超過一般認知的 18 個月<sup><a href="https://pubmed.ncbi.nlm.nih.gov/1198072/" target="_blank" rel="noopener noreferrer">[6]</a></sup>，且追蹤 269 個肩膀發現，症狀發作後平均 4.4 年，仍有 <strong>41%</strong> 的患者出現持續症狀<sup><a href="https://pubmed.ncbi.nlm.nih.gov/17719498/" target="_blank" rel="noopener noreferrer">[3]</a></sup>。</li>
     </ul>
 
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -1425,7 +1640,7 @@ qaList: [
                     <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color:rgb(116, 233, 239); white-space: nowrap;">純物理治療</td>
                     <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">熱敷、電療、徒手治療</td>
                     <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">慢 (需數月至半年)</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">適合初期或症狀輕微者，需極大耐心與頻繁回診。</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">適合初期或症狀輕微者，需極大耐心與頻繁回診。2020 年統合分析（65 項研究、4097 名患者）顯示，病程未滿 1 年者早期介入類固醇注射合併居家運動效果最佳<sup><a href="https://pubmed.ncbi.nlm.nih.gov/33326025/" target="_blank" rel="noopener noreferrer">[10]</a></sup>。</td>
                 </tr>
                 <tr>
                     <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #b91c1c; white-space: nowrap;">
@@ -1433,13 +1648,13 @@ qaList: [
                     </td>
                     <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">液壓撐開、超音波導引</td>
                     <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">快 (數週內顯著改善)</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>CP值最高。</strong>免住院、免麻醉，精準撐開沾黏，立即改善角度。</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>CP值最高。</strong>免住院、免麻醉，精準撐開沾黏，立即改善角度。2023 年 RC  確認療效持續至少 6 個月，全面優於單純物理治療<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38092231/" target="_blank" rel="noopener noreferrer">[8]</a></sup>。</td>
                 </tr>
                 <tr>
                     <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color:rgb(181, 209, 247); white-space: nowrap;">關節授動手術</td>
                     <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">全麻下強力拉開、微創開刀</td>
                     <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">快 (術後需立即復健)</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">需全身麻醉與住院，風險較高，通常為最後一線治療。</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">需全身麻醉與住院，風險較高，通常為最後一線治療。文獻顯示關節鏡囊膜鬆解術術後 75–90% 的患者可達優良結果，但需承擔麻醉與手術風險<sup><a href="https://emedicine.medscape.com/article/1261598-overview" target="_blank" rel="noopener noreferrer">[11]</a></sup>。</td>
                 </tr>
             </tbody>
         </table>
@@ -1450,7 +1665,7 @@ qaList: [
 
     <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
         <h3 style="margin-top: 0; color: #0e7490;">💡 醫師的小叮嚀：治療後的黃金期</h3>
-        <p style="margin-bottom: 0; color: #334155;">擴張術能幫您「打開」卡住的關節，但要維持這個角度，治療後兩週內的<a href="/treatments/manual" class="text-cyan-400 hover:underline">肩關節鬆動</a>與<strong>居家伸展運動</strong>至關重要。趁著關節鬆開、疼痛感降低時，積極進行爬牆運動與毛巾操，才能將治療效果最大化，避免沾黏復發。</p>
+        <p style="margin-bottom: 0; color: #334155;">擴張術能幫您「打開」卡住的關節，但要維持這個角度，治療後兩週內的<a href="/treatments/manual" class="text-cyan-400 hover:underline">肩關節鬆動</a>與<strong>居家伸展運動</strong>至關重要。趁著關節鬆開、疼痛感降低時，積極進行爬牆運動與毛巾操，才能將治療效果最大化，避免沾黏復發。研究亦發現，擴張術後無論接受監督式物理治療或自主居家運動，一年後的臨床改善均相當顯著，關鍵在於術後積極活動<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28318848/" target="_blank" rel="noopener noreferrer">[12]</a></sup>。</p>
     </div>
 
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -1467,9 +1682,35 @@ qaList: [
     <h3>術後注意事項：</h3>
     <ul>
         <li><strong>注射後反應：</strong> 擴張後的腫脹感通常會持續半天至一天，隨液體吸收後消失。</li>
-        <li><strong>把握黃金期：</strong> 治療兩天後，即可開始溫和的肩關節活動度運動（如鐘擺運動即爬牆運動）。</li>
+        <li><strong>把握黃金期：</strong> 治療兩天後，即可開始溫和的肩關節活動度運動（如鐘擺運動及爬牆運動）。</li>
         <li><strong>規律復健：</strong> 建議搭配診所的徒手治療，針對被撐開後的關節囊進行軟組織放鬆與動作控制訓練。</li>
     </ul>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <!-- ═══════════════════════════════════════════════════════════
+         常見誤區解析（3 大反向查證）
+    ══════════════════════════════════════════════════════════════ -->
+    <h2>⚠️ 3 大常見誤區解析（反向查證）</h2>
+
+    <div style="background-color: #fef2f2; border: 2px solid #fca5a5; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+      <h3 style="color: #b91c1c; margin-top: 0;">❌ 誤區一：「五十肩等兩年一定會自己好」</h3>
+      <p style="color: #7f1d1d;">這是最普遍、也最危險的誤解。這個說法源自 1975 年 Reeves 的觀察研究，但後來被發現其研究方法存在根本性缺陷（患者被強制用吊帶固定後恢復活動，誤被解讀為「自然恢復」）。</p>
+      <p style="color: #7f1d1d;"><strong>實證：</strong>2017 年發表於《Physiotherapy》期刊的系統性回顧分析 508 篇文獻後指出，<strong>沒有任何證據支持五十肩能透過自然病程完全恢復</strong>，多項隨機對照試驗更顯示，未治療者的活動度在 1–4 年後仍無法回復正常<sup><a href="https://pubmed.ncbi.nlm.nih.gov/27641499/" target="_blank" rel="noopener noreferrer">[2]</a></sup>。Hand et al.（2008）追蹤 269 個肩膀，平均 4.4 年後仍有 <strong>41%</strong> 有持續症狀，<strong>6%</strong> 有嚴重疼痛與功能喪失<sup><a href="https://pubmed.ncbi.nlm.nih.gov/17719498/" target="_blank" rel="noopener noreferrer">[3]</a></sup>。</p>
+    </div>
+
+    <div style="background-color: #fef2f2; border: 2px solid #fca5a5; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+      <h3 style="color: #b91c1c; margin-top: 0;">❌ 誤區二：「擴張術很危險，會把關節打爆」</h3>
+      <p style="color: #7f1d1d;">有些患者聽聞「把大量液體打進關節」會感到擔憂。事實上，臨床上注入的液體量（20–40 mL）是依據關節囊的承受能力設計的，且在超音波即時監控下進行，安全性極高。</p>
+      <p style="color: #7f1d1d;"><strong>實證：</strong>2023 年發表於《British Medical Bulletin》的系統性回顧與統合分析，納入多項隨機對照試驗，確認擴張術的不良事件發生率極低，無任何嚴重關節損傷的報告；偶發的注射後疼痛加重屬短暫現象，會在數天內自行緩解<sup><a href="https://pubmed.ncbi.nlm.nih.gov/37496207/" target="_blank" rel="noopener noreferrer">[4]</a></sup>。</p>
+    </div>
+
+    <div style="background-color: #fef2f2; border: 2px solid #fca5a5; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+      <h3 style="color: #b91c1c; margin-top: 0;">❌ 誤區三：「超音波導引只是多收費，效果跟徒手打針一樣」</h3>
+      <p style="color: #7f1d1d;">這個說法混淆了「一般肩膀注射」與「五十肩擴張術」的情境。對於沾黏且關節囊縮小的五十肩，精準進入關節腔更具決定性意義。</p>
+      <p style="color: #7f1d1d;"><strong>實證：</strong>Patel et al. 的大體研究顯示，超音波導引的關節腔注射準確率為 <strong>92.5%</strong>，而徒手盲打僅 <strong>72.5%</strong>（p=0.02）<sup><a href="https://pubmed.ncbi.nlm.nih.gov/22543061/" target="_blank" rel="noopener noreferrer">[5]</a></sup>；回顧 12 項研究亦指出，盲打的平均準確率僅 <strong>79%</strong>，影像導引則可達 <strong>95%</strong><sup><a href="https://www.mdpi.com/2411-5142/8/3/93" target="_blank" rel="noopener noreferrer">[13]</a></sup>。當針頭未能精準進入關節腔，擴張液可能注入關節外，治療效果大打折扣。</p>
+    </div>
+    <!-- ══════════════════════════════════════════════════════════ -->
 
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -1481,6 +1722,105 @@ qaList: [
   <a href="/booking" style="color: inherit; text-decoration: underline;">立即預約評估，找回肩膀的自由！</a>
 </p>
     </div>
+
+`,
+  referencesHtml: `
+    <h2>📚 參考文獻</h2>
+ <div style="background-color: #f8fafc; padding: 1rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.9rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.5; word-break: break-all;">
+<ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+        <li id="ref1" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                St Angelo JM, Fabiano SE. <em>Adhesive Capsulitis.</em> StatPearls [Internet]. NCBI Bookshelf, 2025.
+                <a href="https://www.ncbi.nlm.nih.gov/books/NBK532955/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">NBK532955</a>
+                （實證：五十肩影響一般人口 2–5%，好發年齡約 55 歲，糖尿病患者罹患風險為一般人 5 倍）
+            </span>
+        </li>
+        <li id="ref2" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Wong CK, Levine WN, Deo K, et al. Natural history of frozen shoulder: fact or fiction? A systematic review. <em>Physiotherapy.</em> 2017;103(1):40–47.
+                <a href="https://doi.org/10.1016/j.physio.2016.05.009" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.1016/j.physio.2016.05.009</a>
+                （實證：系統性回顧 7 項研究，未治療的五十肩在 1–4 年後活動度仍無法完全恢復，自然痊癒理論缺乏實證支持）
+            </span>
+        </li>
+        <li id="ref3" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Hand GCR, Athanasou NA, Matthews T, Carr AJ. The pathology of frozen shoulder. <em>J Bone Joint Surg Br.</em> 2007;89(7):928–932.
+                <a href="https://doi.org/10.1302/0301-620X.89B7.19097" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.1302/0301-620X.89B7.19097</a>
+                （實證：追蹤 269 個肩膀，平均 4.4 年後仍有 41% 患者有持續症狀，6% 有嚴重疼痛與功能喪失）
+            </span>
+        </li>
+        <li id="ref4" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Poku D, Hassan R, Migliorini F, Maffulli N. Efficacy of hydrodilatation in frozen shoulder: a systematic review and meta-analysis. <em>Br Med Bull.</em> 2023;147(1):121–147.
+                <a href="https://doi.org/10.1093/bmb/ldad018" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.1093/bmb/ldad018</a>
+                （實證：系統性回顧與統合分析，擴張術在改善肩關節失能指數（SPADI）與被動外旋角度方面優於單純關節內類固醇注射，不良事件發生率低）
+            </span>
+        </li>
+        <li id="ref5" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Patel DN, Nayyar S, Hasan S, et al. Comparison of ultrasound-guided versus blind glenohumeral injections: a cadaveric study. <em>J Shoulder Elbow Surg.</em> 2012;21(12):1664–1668.
+                <a href="https://doi.org/10.1016/j.jse.2011.11.026" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.1016/j.jse.2011.11.026</a>
+                （實證：屍體研究 n=80，超音波導引準確率 92.5% vs. 盲打 72.5%，p=0.02，超音波導引顯著更準確）
+            </span>
+        </li>
+        <li id="ref6" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Reeves B. The natural history of the frozen shoulder syndrome. <em>Scand J Rheumatol.</em> 1975;4(4):193–196.
+                <a href="https://doi.org/10.3109/03009747509165255" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.3109/03009747509165255</a>
+                （實證：前瞻性研究 49 名患者，五十肩平均病程達 30.1 個月，遠超過一般認知的 18 個月）
+            </span>
+        </li>
+        <li id="ref7" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Aly AR, Rajasekaran S, Ashworth N. Ultrasound-guided shoulder girdle injections are more accurate and more effective than landmark-guided injections: a systematic review and meta-analysis. <em>Br J Sports Med.</em> 2015;49(16):1042–1049.
+                <a href="https://doi.org/10.1136/bjsports-2014-093573" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.1136/bjsports-2014-093573</a>
+                （實證：系統性回顧與統合分析，超音波導引在大多數肩關節注射（包括肱二頭肌腱鞘、肩鎖關節、盂肱關節）的準確度與療效全面優於徒手定位）
+            </span>
+        </li>
+        <li id="ref8" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Huang YH, Kuo YC, Hsieh LF, et al. Efficacy of Combination Therapy (Hydrodilatation and Subdeltoid Bursa Injection With Corticosteroid, Mobilization, and Physical Therapy) vs Physical Therapy Alone for Treating Frozen Shoulder: A Randomized Single-Blind Controlled Trial. <em>Arch Phys Med Rehabil.</em> 2024;105(4):631–638.
+                <a href="https://doi.org/10.1016/j.apmr.2023.11.014" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.1016/j.apmr.2023.11.014</a>
+                （實證：RCT n=70，擴張術合併類固醇注射與關節鬆動的複合療法在 8 週時全面優於單純物理治療，療效持續至少 6 個月）
+            </span>
+        </li>
+        <li id="ref9" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Chen MJ, Chang KV, Wu WT, et al. Short-term efficacy of ultrasound-guided capsule-preserving hydrodilatation for primary frozen shoulder using 5% dextrose water vs. corticosteroid: a randomized controlled trial. <em>PM&R.</em> 2025.
+                <a href="https://doi.org/10.1016/j.pmrj.2025.04.014" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.1016/j.pmrj.2025.04.014</a>
+                （實證：RCT n=84，5% 葡萄糖水擴張術在 12 週後 SPADI、AROM、NRS 改善與類固醇組無顯著差異，液體擴張本身即具治療效果）
+            </span>
+        </li>
+        <li id="ref10" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Challoumas D, Biddle M, McLean M, Millar NL. Comparison of Treatments for Frozen Shoulder: A Systematic Review and Meta-analysis. <em>JAMA Netw Open.</em> 2020;3(12):e2029581.
+                <a href="https://doi.org/10.1001/jamanetworkopen.2020.29581" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.1001/jamanetworkopen.2020.29581</a>
+                （實證：迄今最大型五十肩治療統合分析，納入 65 項研究 4097 名患者，病程未滿 1 年者早期關節內類固醇注射合併居家運動效果最佳）
+            </span>
+        </li>
+        <li id="ref11" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Zuckerman JD, Rokito A. Frozen shoulder: Surgical management. <em>Medscape/eMedicine.</em> Updated 2024.
+                <a href="https://emedicine.medscape.com/article/1261598-overview" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Medscape</a>
+                （實證：頑固型五十肩接受關節鏡囊膜鬆解術，75–90% 的患者可達優良結果，但需承擔全身麻醉與手術風險）
+            </span>
+        </li>
+        <li id="ref12" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Robinson PM, Norris J, Roberts CP. Randomized controlled trial of supervised physiotherapy versus a home exercise program after hydrodilatation for the management of primary frozen shoulder. <em>J Shoulder Elbow Surg.</em> 2017;26(5):757–765.
+                <a href="https://doi.org/10.1016/j.jse.2017.01.012" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.1016/j.jse.2017.01.012</a>
+                （實證：RCT n=41，擴張術後無論接受監督式物理治療或自主居家運動，4 週至 1 年的臨床改善均顯著，說明術後積極活動是核心）
+            </span>
+        </li>
+        <li id="ref13" style="margin-bottom: 0.6rem;">
+            <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                Saha P, Smith M, Hasan K. Accuracy of Intraarticular Injections: Blind vs. Image Guided Techniques—A Review of Literature. <em>J Funct Morphol Kinesiol.</em> 2023;8(3):93.
+                <a href="https://doi.org/10.3390/jfmk8030093" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi:10.3390/jfmk8030093</a>
+                （實證：回顧 75 篇文獻，盲打盂肱關節平均準確率 79%（範圍 27–100%），影像導引則達 95%（範圍 83–100%），影像導引全面優越）
+            </span>
+        </li>
+    </ol>
+     </div>    <!-- ══════════════════════════════════════════════════════════ -->
   `,
   whyChooseUs: [
     '全程使用<strong>醫學中心等級超音波</strong>，畫質清晰。',

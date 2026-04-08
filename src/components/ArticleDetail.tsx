@@ -19,6 +19,7 @@ export interface ArticleData {
   qaList?: { question: string; answer: string }[];
   keywords?: string[];
   lastModified?: string;
+  referencesHtml?: string; // 新增：支援直接傳入 HTML 格式的參考文獻
 }
 
 interface ArticleDetailProps {
@@ -257,6 +258,7 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                     </div>
                   </div>
                 )}
+
               </div>
 
               {/* FOOTER */}
@@ -274,6 +276,13 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                   </Link>
                 </div>
               </div>
+
+                {/* 參考文獻 (渲染傳入的 HTML) */}
+                {data.referencesHtml && (
+                  <div className="mt-8 mb-10">
+                    <div dangerouslySetInnerHTML={{ __html: data.referencesHtml }} />
+                  </div>
+                )}
 
             </div>
           </div>

@@ -83,6 +83,7 @@ export default function TreatmentDetailPage({ params }: PageProps) {
     qaList: treatment.qaList,
     keywords: treatment.keywords, 
     lastModified: treatment.lastModified,
+    referencesHtml: treatment.referencesHtml,
   }
 
   // Schema (JSON-LD)
