@@ -1212,7 +1212,7 @@ const fullTreatmentsData: Treatment[] = [
  {
 slug: 'hyaluronic-acid',
 title: '新竹玻尿酸注射推薦 / 超音波導引精準潤滑',
-lastModified: '2026-01-24',
+lastModified: '2026-04-09',
 tags: ['HA'],
 subtitle: '精準導引潤滑關節、延緩退化',
 description: '新竹玻尿酸注射推薦。堅持採用高解析超音波導引，將玻尿酸精準注入關節腔，有效緩解退化性關節炎與五十肩疼痛，比傳統盲打更安全有效。',
@@ -1532,7 +1532,7 @@ qaList: [
 {
   slug: 'shoulder-dilation',
   title: '新竹五十肩推薦 / 超音波導引肩關節擴張術',
-  lastModified: '2026-01-25',
+  lastModified: '2026-04-09',
   tags: ['dilation'],
   subtitle: '五十肩救星，精準撐開沾黏、重拾活動力',
   description: '新竹五十肩治療推薦。針對頑固性沾黏與手舉不高，採用高解析超音波導引「肩關節擴張術」，將擴張液精準注入關節囊，有效撐開沾黏組織，大幅改善疼痛與活動角度。',
@@ -1854,7 +1854,7 @@ qaList: [
 {
   slug: 'ultrasound-guided-aspiration',
   title: '新竹關節抽水推薦 / 超音波導引抽積液與血腫',
-  lastModified: '2026-01-31',
+  lastModified: '2026-04-09',
   tags: ['aspiration'],
   subtitle: '精準導引解除「壓力鍋」，膝蓋積水、肌肉血腫的救星',
   description: '膝蓋腫得像麵龜？腳踝扭傷腫脹不退？肌肉撕裂瘀血散不掉？宸新復健科運用高解析超音波導引，精準抽吸關節積水與血腫。解決退化性關節炎腫脹、加速運動傷害復原，並有效預防肌肉鈣化，是安全、可視化的精準醫療。',
@@ -1865,158 +1865,329 @@ qaList: [
   keywords: ['膝蓋積水', '關節抽水', '超音波導引', '腳踝扭傷', '肌肉撕裂', '血腫抽吸', '貝克氏囊腫', '滑囊炎', '新竹復健科'],
   youtubeVideoId: '', // 若有相關抽吸影片可填入
   contentHtml: `
-    <p>當膝蓋腫得像「麵龜」無法彎曲，或是腳踝扭傷後腫脹處像一顆水球，甚至肌肉拉傷後出現巨大的瘀青硬塊，這些都是<strong>「積液」</strong>或<strong>「血腫」</strong>在作怪。這時候，組織內部就像一個壓力鍋，不僅造成劇烈脹痛，更會阻礙血液循環與修復。</p>
-    <br>
-    <p>傳統觀念常認為「積水不能抽，會越抽越多」，這其實是錯誤的迷思。在現代醫學中，透過<strong>高解析超音波導引抽吸</strong>，我們能將這些有害的發炎物質或陳舊瘀血「精準移除」。這不僅能立即緩解疼痛，更是加速組織修復、預防沾黏與鈣化的關鍵步驟。</p>
 
-    <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-        <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
-            👁️ 為什麼「超音波導引」抽吸是黃金標準？
-        </h2>
-        
-        <p style="font-size: 1.1rem; color: #78350f;">過去醫師靠手感「盲抽」，容易因為針頭沒對準積水處而抽不到，或是誤傷神經血管。宸新復健科全面採用超音波導引，將治療過程「視覺化」，帶來三大優勢：</p>
-        
-        <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
-            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
-                <div><strong>精準定位，抽得乾淨：</strong> 超音波能清楚顯示積水或血腫的深度與範圍。醫師能看著螢幕，將針尖引導至積液最深處，將髒水抽吸乾淨，避免殘留。</div>
-            </li>
-            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
-                <div><strong>安全性高，避開地雷：</strong> 關節周圍常佈滿血管與神經。透過影像導引，我們能規劃安全路徑，避開重要組織，大幅降低出血或神經損傷風險。</div>
-            </li>
-            <li style="margin-bottom: 0; display: flex; align-items: start;">
-                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
-                <div><strong>診斷病因 (看顏色)：</strong> 抽出來的液體是診斷的重要依據。透過觀察液體的顏色、黏稠度，醫師能判斷是單純退化、痛風結晶、細菌感染還是韌帶斷裂造成的出血。</div>
-            </li>
-        </ul>
-    </div>
-  <div style="text-align: center;">
+<section style="background: linear-gradient(135deg,#eff6ff,#e0f2fe); border: 2px solid #3b82f6; border-radius:1rem; padding:1.5rem 2rem; margin:0 0 2rem 0;">
+  <h2 style="color:#1d4ed8; margin-top:0; font-size:1.2rem;">📋 核心結論摘要（閱讀本文前請先看這裡）</h2>
+  <p style="margin-bottom:0; color:#1e3a5f;">
+    超音波導引抽吸（arthrocentesis）已被多項系統性回顧確立為關節積液與血腫處置的黃金標準。與傳統「盲抽」相比，超音波導引可將穿刺準確率顯著提升約 21% <sup><a href="https://pubmed.ncbi.nlm.nih.gov/26791571/" target="_blank" rel="noopener">[1]</a></sup>，並降低術中疼痛 VAS 評分達 2.24 分<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26791571/" target="_blank" rel="noopener">[1]</a></sup>，同時抽出更多積液體積（17.06 mL）<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26791571/" target="_blank" rel="noopener">[1]</a></sup>。退化性關節炎（OA）的積液中含有大量促發炎細胞激素——包括 IL-1β、TNF-α、IL-6、MMP 等——會持續侵蝕軟骨<sup><a href="https://doi.org/10.3390/jcm10215027" target="_blank" rel="noopener">[2]</a></sup><sup><a href="https://doi.org/10.1038/s41598-020-69328-w" target="_blank" rel="noopener">[3]</a></sup>；肌肉大型血腫若不及早引流，6–8 週內即可出現周邊鈣化，進入「骨化性肌炎（myositis ossificans）」不可逆階段<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26320160/" target="_blank" rel="noopener">[4]</a></sup><sup><a href="https://pubmed.ncbi.nlm.nih.gov/27404421/" target="_blank" rel="noopener">[5]</a></sup>；化膿性關節炎（septic arthritis）更需以滑液白血球計數（sWBC &gt; 50,000/mm³）快速鑑別，方能及早啟動抗生素治療<sup><a href="https://pubmed.ncbi.nlm.nih.gov/30958454/" target="_blank" rel="noopener">[6]</a></sup><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3229263/" target="_blank" rel="noopener">[7]</a></sup>。本文將以 16 篇以上的近年文獻，系統性解析超音波導引抽吸的適應症、鑑別診斷、治療流程，並破除 3 大常見迷思。
+  </p>
+</section>
+
+<!-- ===== 開頭段落 ===== -->
+<p>當膝蓋腫得像「麵龜」無法彎曲，或是腳踝扭傷後腫脹處像一顆水球，甚至肌肉拉傷後出現巨大的瘀青硬塊，這些都是<strong>「積液」</strong>或<strong>「血腫」</strong>在作怪。這時候，組織內部就像一個壓力鍋，不僅造成劇烈脹痛，更會阻礙血液循環與修復。</p>
+<br>
+<p>傳統觀念常認為「積水不能抽，會越抽越多」，這其實是錯誤的迷思。在現代醫學中，透過<strong>高解析超音波導引抽吸</strong>，我們能將這些有害的發炎物質或陳舊瘀血「精準移除」。2016 年納入 715 名患者（725 個膝關節）的系統性回顧暨統合分析顯示，超音波導引顯著優於傳統解剖標記盲抽，不僅準確率更高<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26791571/" target="_blank" rel="noopener">[1]</a></sup>，術後兩週疼痛評分亦明顯改善（WMD = 0.84，P &lt; 0.001）<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26791571/" target="_blank" rel="noopener">[1]</a></sup>。這不僅能立即緩解疼痛，更是加速組織修復、預防沾黏與鈣化的關鍵步驟。</p>
+
+<!-- ===== 黃色卡片：為什麼超音波是黃金標準 ===== -->
+<div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+  <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+    👁️ 為什麼「超音波導引」抽吸是黃金標準？
+  </h2>
+
+  <p style="font-size: 1.1rem; color: #78350f;">過去醫師靠手感「盲抽」，容易因為針頭沒對準積水處而抽不到，或是誤傷神經血管。2025 年納入 11 項試驗的統合分析進一步確認，超音波導引的關節內準確率高達 95–96%，顯著優於解剖標記法的 78–83%（P &lt; 0.001）<sup><a href="https://doi.org/10.1002/ajum.12386" target="_blank" rel="noopener">[8]</a></sup>；在滑囊與肌腱周圍注射上，超音波的優勢更達優勝比（OR）6.4（95% CI：2.9–14）<sup><a href="https://doi.org/10.1002/ajum.12386" target="_blank" rel="noopener">[8]</a></sup>。宸新復健科全面採用超音波導引，將治療過程「視覺化」，帶來三大優勢：</p>
+
+  <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+    <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+      <div><strong>精準定位，抽得乾淨：</strong> 超音波能清楚顯示積水或血腫的深度與範圍。醫師能看著螢幕，將針尖引導至積液最深處，將髒水抽吸乾淨，避免殘留。2023 年的橫斷面研究顯示，使用超音波確認積液後進行引流，成功率可達 77%，若選用正確長度的脊椎針（22G/3.5 英寸）成功率更高達 90.9%<sup><a href="https://pubmed.ncbi.nlm.nih.gov/37301888/" target="_blank" rel="noopener">[9]</a></sup>。</div>
+    </li>
+    <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+      <div><strong>安全性高，避開地雷：</strong> 關節周圍常佈滿血管與神經。透過影像導引，我們能規劃安全路徑，避開重要組織，大幅降低出血或神經損傷風險。StatPearls 2025 年版教科書亦確認超音波導引為可降低併發症、增加患者舒適度的進階操作技術<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK573084/" target="_blank" rel="noopener">[10]</a></sup>。</div>
+    </li>
+    <li style="margin-bottom: 0; display: flex; align-items: start;">
+      <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+      <div><strong>診斷病因（看顏色）：</strong> 抽出來的液體是診斷的重要依據。透過觀察液體的顏色、黏稠度，醫師能判斷是單純退化、痛風結晶、細菌感染還是韌帶斷裂造成的出血。化膿性關節炎的滑液白血球若超過 50,000/mm³（陽性概似比 LR = 7.7），即高度懷疑感染<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3229263/" target="_blank" rel="noopener">[7]</a></sup>。</div>
+    </li>
+  </ul>
+</div>
+
+<!-- YouTube 影片 -->
+<div style="text-align: center;">
   門診實際超音波導引抽肩膀積水，看在螢幕清楚<strong>看到針尖</strong>，安全的將水<strong>抽乾淨</strong>。
 </div>
-        <div class="my-8 flex justify-center">
-    <iframe 
-      width="315" 
-      height="560" 
-      src="https://www.youtube.com/embed/E-xuUAarxbA" 
-      title="YouTube video player" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen
-      class="max-w-full rounded-xl shadow-lg border border-slate-700"
-    ></iframe>
-     </div>
+<div class="my-8 flex justify-center">
+  <iframe
+    width="315"
+    height="560"
+    src="https://www.youtube.com/embed/E-xuUAarxbA"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    class="max-w-full rounded-xl shadow-lg border border-slate-700"
+  ></iframe>
+</div>
 
-    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
-    <h2>🩺 三大常見適應症：什麼時候需要抽？</h2>
-    <p>並非所有的腫脹都需要抽吸，但在以下三種情況，超音波導引抽吸是極為重要的治療手段：</p>
+<!-- ===== 三大適應症 ===== -->
+<h2>🩺 三大常見適應症：什麼時候需要抽？</h2>
+<p>並非所有的腫脹都需要抽吸，但在以下三種情況，超音波導引抽吸是極為重要的治療手段：</p>
 
-    <h3> 1. 急性膝關節積水 (退化性關節炎/痛風)</h3>
-    <p>當退化性關節炎急性發作時，滑膜會過度分泌發炎性的關節液（俗稱積水）。</p>
-    <ul>
-        <li><strong>為什麼要抽？</strong> 這些積水充滿了發炎物質，會像酸液一樣<strong>侵蝕軟骨</strong>。且大量積水會撐開關節囊，造成劇痛並導致大腿肌肉萎縮（關節源性肌肉抑制）。</li>
-        <li><strong>治療效益：</strong> 抽出發炎積液後，關節內壓力瞬間釋放，疼痛通常能改善 <strong>50% 以上</strong>，並為後續注射（如玻尿酸或 PRP）騰出空間，避免被積水稀釋。</li>
-    </ul>
+<h3>1. 急性膝關節積水（退化性關節炎 / 痛風）</h3>
+<p>當退化性關節炎急性發作時，滑膜會過度分泌發炎性的關節液（俗稱積水）。</p>
+<ul>
+  <li><strong>為什麼要抽？</strong> 退化性關節炎的積液充滿促炎性細胞激素與基質金屬蛋白酶（MMP），包括 IL-1β、TNF-α、IL-6、IL-15、IL-17 等，研究證實這些物質會持續破壞軟骨細胞的外基質（ECM），加速軟骨退化<sup><a href="https://doi.org/10.3390/jcm10215027" target="_blank" rel="noopener">[2]</a></sup>。2020 年日本大型橫斷面研究亦確認，滑膜炎積液體積與 MMP-3 濃度呈顯著正相關（β = 0.60，P &lt; 0.001），且與所有 KOOS 功能評分呈負相關<sup><a href="https://doi.org/10.1038/s41598-020-69328-w" target="_blank" rel="noopener">[3]</a></sup>。且大量積水會撐開關節囊，造成劇痛並導致大腿肌肉萎縮（關節源性肌肉抑制）。</li>
+  <li><strong>治療效益：</strong> 抽出發炎積液後，關節內壓力瞬間釋放，疼痛通常能改善 <strong>50% 以上</strong>，並為後續注射（如玻尿酸或 PRP）騰出空間，避免被積水稀釋。2024 年統合分析（4 項 RCT，338 名膝關節 OA 患者）確認，超音波導引關節注射在術中疼痛（SMD = 0.89）、術後疼痛追蹤（SMD = 0.51）及功能改善（SMD = 1.30）三項指標均顯著優於傳統盲目注射<sup><a href="https://doi.org/10.1002/ajum.12386" target="_blank" rel="noopener">[8]</a></sup>。</li>
+</ul>
 
-    <h3>2. 嚴重腳踝扭傷 (積血)</h3>
-    <p>嚴重的腳踝翻船往往伴隨著韌帶撕裂，導致微血管破裂，血液流進關節腔內形成「關節積血」。</p>
-    <ul>
-        <li><strong>為什麼要抽？</strong> 血液在關節腔內是非常強的發炎刺激物，且容易造成關節沾黏，導致日後腳踝僵硬、活動度受限。</li>
-        <li><strong>治療效益：</strong> 在受傷後黃金期內（通常是24-72小時內液化期），透過超音波導引將關節內的瘀血抽出，能大幅縮短消腫時間，讓患者更快開始復健運動，過太久血液凝固就抽不出來了。</li>
-    </ul>
+<h3>2. 嚴重腳踝扭傷（積血）</h3>
+<p>嚴重的腳踝翻船往往伴隨著韌帶撕裂，導致微血管破裂，血液流進關節腔內形成「關節積血（hemarthrosis）」。</p>
+<ul>
+  <li><strong>為什麼要抽？</strong> 血液在關節腔內是非常強的發炎刺激物，且容易造成關節沾黏，導致日後腳踝僵硬、活動度受限。StatPearls 2025 年教科書指出，若急性關節積血未及時處置，反覆出血將啟動滑膜發炎→纖維化→軟骨退化的惡性循環，最終可能導致創傷後關節炎<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK525999/" target="_blank" rel="noopener">[11]</a></sup>。</li>
+  <li><strong>治療效益：</strong> 在受傷後黃金期內（通常是 24–72 小時內液化期），透過超音波導引將關節內的瘀血抽出，能大幅縮短消腫時間，讓患者更快開始復健運動。一項針對血友病患者的前瞻性研究顯示，急性關節積血組進行關節抽吸後，血腫消退天數、藥物使用天數及恢復工作/學校活動的時間均顯著縮短，且無任何併發症<sup><a href="https://pubmed.ncbi.nlm.nih.gov/30958454/" target="_blank" rel="noopener">[6]</a></sup>。過太久血液凝固就抽不出來了。</li>
+</ul>
 
-    <h3> 3. 肌肉撕裂傷 (巨大的血腫)</h3>
-    <p>運動員或意外撞擊常造成肌肉斷裂（如小腿腓腸肌、大腿股四頭肌），形成巨大的血塊包在肌肉筋膜內。</p>
-    <ul>
-        <li><strong>為什麼要抽？</strong> 這是最關鍵的適應症！如果肌肉內的大血塊沒有排出，身體吸收速度極慢，最後容易發生<strong>「骨化性肌炎」</strong>，也就是血塊變成了骨頭（鈣化），導致肌肉永久性纖維化與僵硬。</li>
-        <li><strong>治療效益：</strong> 透過粗針頭將濃稠的血腫抽出，能直接預防肌肉鈣化，是保存肌肉功能的重要處置。</li>
-    </ul>
+<h3>3. 肌肉撕裂傷（巨大的血腫）</h3>
+<p>運動員或意外撞擊常造成肌肉斷裂（如小腿腓腸肌、大腿股四頭肌），形成巨大的血塊包在肌肉筋膜內。</p>
+<ul>
+  <li><strong>為什麼要抽？</strong> 這是最關鍵的適應症！如果肌肉內的大血塊沒有排出，身體吸收速度極慢，最後容易發生<strong>「骨化性肌炎（myositis ossificans）」</strong>——血腫在受傷後 6–8 週即可出現周邊鈣化，6 個月時骨化完全成熟<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26320160/" target="_blank" rel="noopener">[4]</a></sup>。此一過程為原始血腫中的血液分層發生板層狀異位骨化，導致肌肉永久性纖維化與僵硬。創傷後骨化性肌炎好發於大腿股四頭肌，在有大型血腫的病例中估計發生率約 20%<sup><a href="https://pubmed.ncbi.nlm.nih.gov/27404421/" target="_blank" rel="noopener">[5]</a></sup>。</li>
+  <li><strong>治療效益：</strong> 透過粗針頭將濃稠的血腫抽出，能直接預防肌肉鈣化，是保存肌肉功能的重要處置。Radsource 影像教學資料亦明確指出：大型血腫存在時，抽吸引流是保守治療的核心選項之一<sup><a href="https://radsource.us/myositis-ossificans/" target="_blank" rel="noopener">[12]</a></sup>。</li>
+</ul>
 
-    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
-    <h2>🔍 抽出來的液體告訴我們什麼？(液體顏色分析)</h2>
-    <p>在宸新復健科，我們不僅是執行「抽」的動作，更重視「看」的診斷。醫師會向您解說抽出來的液體代表什麼意義：</p>
+<!-- ===== 液體顏色分析 ===== -->
+<h2>🔍 抽出來的液體告訴我們什麼？（液體顏色分析）</h2>
+<p>在宸新復健科，我們不僅是執行「抽」的動作，更重視「看」的診斷。醫師會向您解說抽出來的液體代表什麼意義。化膿性關節炎的診斷金標準正是對滑液進行細菌培養，而滑液白血球計數（sWBC）是即時鑑別的關鍵指標<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7295646/" target="_blank" rel="noopener">[13]</a></sup>。</p>
 
-    <div style="overflow-x: auto; padding-bottom: 10px;">
-        <table style="width: 100%; min-width: 600px; border-collapse: collapse; margin-top: 1rem;">
-            <thead>
-                <tr style="background-color: #0369a1; color: white;">
-                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left;">液體顏色</th>
-                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left;">常見原因</th>
-                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left;">臨床意義</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #ca8a04;">淡黃色/透明 (清澈)</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">退化性關節炎、過度使用</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">典型的滑膜發炎。抽出後通常注射類固醇或玻尿酸即可改善。</td>
-                </tr>
-                <tr>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #dc2626;">鮮紅色/暗紅色 (血水)</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">韌帶斷裂、骨折、肌肉撕裂</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">代表組織創傷。若在腳扭傷抽到血，暗示韌帶傷勢較重，需更積極保護。</td>
-                </tr>
-                <tr>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #facc15;">混濁黃色/乳白色</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">痛風、假性痛風</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">液體內含有尿酸結晶。通常痛感極其劇烈。</td>
-                </tr>
-                <tr>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #e5e7eb;">乳白色/黃綠色</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">化膿性關節炎 (細菌感染)</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>緊急狀況！</strong> 需立即轉診進行細菌培養與抗生素治療，不可隨意注射藥物。</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-            <p><img src="/images/treatments/aspiration/a.webp" alt="超音波導引抽積液顏色分析圖：詳細呈現淡黃發炎積液、紅色創傷出血與乳白痛風結晶液的診斷差異。"></p>
-    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<div style="overflow-x: auto; padding-bottom: 10px;">
+  <table style="width: 100%; min-width: 600px; border-collapse: collapse; margin-top: 1rem;">
+    <thead>
+      <tr style="background-color: #0369a1; color: white;">
+        <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left;">液體顏色</th>
+        <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left;">常見原因</th>
+        <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left;">臨床意義</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #ca8a04;">淡黃色 / 透明（清澈）</td>
+        <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">退化性關節炎、過度使用</td>
+        <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">典型的滑膜發炎。sWBC 通常 &lt; 2,000/mm³<sup><a href="https://pubmed.ncbi.nlm.nih.gov/30958454/" target="_blank" rel="noopener">[6]</a></sup>。抽出後通常注射類固醇或玻尿酸即可改善。</td>
+      </tr>
+      <tr>
+        <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #dc2626;">鮮紅色 / 暗紅色（血水）</td>
+        <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">韌帶斷裂、骨折、肌肉撕裂</td>
+        <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">代表組織創傷。真性積血不凝固（因關節腔纖維溶解）；若迅速凝固則可能為穿刺傷所致<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK525999/" target="_blank" rel="noopener">[11]</a></sup>。</td>
+      </tr>
+      <tr>
+        <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #facc15;">混濁黃色 / 乳白色</td>
+        <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">痛風、假性痛風</td>
+        <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">液體內含有尿酸結晶；痛風時 sWBC 可達 2,000–100,000/mm³，但需與感染性關節炎鑑別<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7295646/" target="_blank" rel="noopener">[13]</a></sup>。通常痛感極其劇烈。</td>
+      </tr>
+      <tr>
+        <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #e5e7eb;">乳白色 / 黃綠色（混濁）</td>
+        <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">化膿性關節炎（細菌感染）</td>
+        <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>緊急狀況！</strong> sWBC &gt; 50,000/mm³（LR = 7.7）高度懷疑感染；超過 100,000/mm³ 則 LR 達無限大<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3229263/" target="_blank" rel="noopener">[7]</a></sup>。需立即轉診進行細菌培養與抗生素治療，不可隨意注射藥物。</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-    <h2>🛠️ 治療流程與術後照護</h2>
-    
+<p><img src="/images/treatments/aspiration/a.webp" alt="超音波導引抽積液顏色分析圖：詳細呈現淡黃發炎積液、紅色創傷出血與乳白痛風結晶液的診斷差異。"></p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<!-- ===== 3 大常見誤區解析 ===== -->
+<div style="background: #fef2f2; border: 2px solid #f87171; border-radius: 1rem; padding: 1.5rem 2rem; margin: 2rem 0;">
+  <h2 style="color: #b91c1c; margin-top: 0;">🚫 三大常見迷思反向查證（Evidence-Based 破解）</h2>
+
+  <h3 style="color: #991b1b;">❌ 迷思一：「膝蓋積水越抽越多，所以不能抽。」</h3>
+  <p><strong>✅ 事實：</strong>積水是「發炎→滑膜過度分泌」的結果，不是「抽了才變多」。相反，積液中的 IL-1β、TNF-α 等促炎性細胞激素會持續刺激滑膜，形成惡性循環<sup><a href="https://doi.org/10.3390/jcm10215027" target="_blank" rel="noopener">[2]</a></sup>。研究顯示，OA 積液中的 MMP 活性在急性期可較正常關節液高出 3.8 倍以上<sup><a href="https://www.thno.org/v02p0198.htm" target="_blank" rel="noopener">[14]</a></sup>。不抽出這些有害物質，軟骨退化只會更快。抽吸後若又腫起來，代表內部的發炎問題（如磨損、撕裂）尚未解決，應針對病因進一步治療，而不是不抽。</p>
+
+  <h3 style="color: #991b1b;">❌ 迷思二：「少喝水，膝蓋就不會積水。」</h3>
+  <p><strong>✅ 事實：</strong>關節積液是「組織發炎反應」產生的組織液，與飲水量毫無直接關係<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK573084/" target="_blank" rel="noopener">[10]</a></sup>。關節液的生成由滑膜細胞調控，其驅動力是關節腔內的發炎介質濃度，而非體液總量。刻意減少飲水不僅無助於消積液，反而會使血液黏稠、加速腎功能負擔，干擾正常的修復機制。正確做法是積極控制發炎根本原因，而非限制飲水。</p>
+
+  <h3 style="color: #991b1b;">❌ 迷思三：「化膿性關節炎只要 sWBC &gt; 50,000 就是感染，可以此為唯一標準。」</h3>
+  <p><strong>✅ 事實：</strong>sWBC &gt; 50,000/mm³ 的陽性概似比（LR）雖高達 7.7，但感染性關節炎中仍有高達 <strong>39%</strong> 的病例，sWBC 低於此閾值<sup><a href="https://pubmed.ncbi.nlm.nih.gov/17870475/" target="_blank" rel="noopener">[15]</a></sup>。2023 年的回顧性研究（192 名患者）更指出，單純依賴 sWBC 50,000/mm³ 的截斷值可能導致誤診，建議結合 Gram 染色、乳酸值及臨床高度懷疑度進行綜合判斷<sup><a href="https://pubmed.ncbi.nlm.nih.gov/37750279/" target="_blank" rel="noopener">[16]</a></sup>。因此，「滑液外觀混濁 + 高度臨床懷疑」比單一數值更可靠。</p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<!-- ===== 治療流程 ===== -->
+<h2>🛠️ 治療流程與術後照護</h2>
+
 <div style="margin-top: 2rem; color: #1e293b;">
-        <div style="margin-bottom: 2rem; background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem;">
-            <h3 style="color: #0891b2; margin-top: 0; display: flex; align-items: center;">
-                <span style="background: #0891b2; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; font-size: 0.9rem;">1</span>
-                治療過程
-            </h3>
-            <ol style="line-height: 1.8;">
-                <li><strong>超音波評估：</strong> 確認積液位置、總量與性質。</li>
-                <li><strong>無菌操作：</strong> 嚴格消毒皮膚，確保無感染風險。</li>
-                <li><strong>動態導引抽吸：</strong> 在超音波螢幕監控下，針頭精準進入積液腔，您會親眼看到積水/血腫逐漸消失。</li>
-                <li><strong>必要時注射：</strong> 抽吸完畢後，視情況原針頭直接注射消炎藥物或增生療法，不需挨第二針。</li>
-            </ol>
-        </div>
+  <div style="margin-bottom: 2rem; background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem;">
+    <h3 style="color: #0891b2; margin-top: 0; display: flex; align-items: center;">
+      <span style="background: #0891b2; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; font-size: 0.9rem;">1</span>
+      治療過程
+    </h3>
+    <ol style="line-height: 1.8;">
+      <li><strong>超音波評估：</strong> 確認積液位置、總量與性質。</li>
+      <li><strong>無菌操作：</strong> 嚴格消毒皮膚，確保無感染風險。StatPearls 教科書強調使用 povidone-iodine 或 chlorhexidine 進行標準消毒程序<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK573084/" target="_blank" rel="noopener">[10]</a></sup>。</li>
+      <li><strong>動態導引抽吸：</strong> 在超音波螢幕監控下，針頭精準進入積液腔，您會親眼看到積水 / 血腫逐漸消失。</li>
+      <li><strong>必要時注射：</strong> 抽吸完畢後，視情況原針頭直接注射消炎藥物或增生療法，不需挨第二針。</li>
+    </ol>
+  </div>
 
-        <div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem;">
-            <h3 style="color: #0891b2; margin-top: 0; display: flex; align-items: center;">
-                <span style="background: #0891b2; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; font-size: 0.9rem;">2</span>
-                術後照護
-            </h3>
-            <ul style="line-height: 1.8;color: #1e293b;">
-                <li><strong>加壓止血：</strong> 抽吸處需按壓 5-10 分鐘。</li>
-                <li><strong>適度冰敷：</strong> 術後 24 小時內可冰敷減輕針孔不適。</li>
-                <li><strong>避免碰水：</strong> 針孔處建議當天保持乾燥，貼上防水貼布。</li>
-                <li><strong>休息與觀察：</strong> 避免劇烈運動。若抽吸處再次快速腫脹，可能是內部仍有出血，請回診評估。</li>
-            </ul>
-        </div>
-    </div>
+  <div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem;">
+    <h3 style="color: #0891b2; margin-top: 0; display: flex; align-items: center;">
+      <span style="background: #0891b2; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; font-size: 0.9rem;">2</span>
+      術後照護
+    </h3>
+    <ul style="line-height: 1.8; color: #1e293b;">
+      <li><strong>加壓止血：</strong> 抽吸處需按壓 5–10 分鐘。</li>
+      <li><strong>適度冰敷：</strong> 術後 24 小時內可冰敷減輕針孔不適。</li>
+      <li><strong>避免碰水：</strong> 針孔處建議當天保持乾燥，貼上防水貼布。</li>
+      <li><strong>休息與觀察：</strong> 避免劇烈運動。若抽吸處再次快速腫脹，可能是內部仍有出血，請回診評估。</li>
+    </ul>
+  </div>
+</div>
 
-    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 2rem 0;">
-        <h3 style="margin-top: 0; color: #0e7490;">💡 醫師的小叮嚀：抽水只是第一步</h3>
-        <p style="margin-bottom: 0; color: #334155;">「抽積水」是為了緩解症狀與避免併發症，但<strong>並非治療疾病的根本</strong>。如果退化性關節炎沒有保養、韌帶受傷沒有修復，積水確實可能再產生。因此，抽吸後配合<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>修復組織，才是根治之道。</p>
-    </div>
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 2rem 0;">
+  <h3 style="margin-top: 0; color: #0e7490;">💡 醫師的小叮嚀：抽水只是第一步</h3>
+  <p style="margin-bottom: 0; color: #334155;">「抽積水」是為了緩解症狀與避免併發症，但<strong>並非治療疾病的根本</strong>。如果退化性關節炎沒有保養、韌帶受傷沒有修復，積水確實可能再產生。因此，抽吸後配合<a href="/treatments/prp" class="text-cyan-400 hover:underline">PRP 增生療法</a>修復組織，才是根治之道。</p>
+</div>
 
-    <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
-        <h2 style="color: #047857; margin-top: 0;">👨‍⚕️ 別讓積水/血腫阻礙您的復原之路！</h2>
-        <p style="color: #334155; margin-bottom: 1.5rem;">面對腫脹，您不需要忍耐。宸新復健科運用先進的超音波導引技術，為您精準「減壓」，看見積水消失的瞬間，疼痛也隨之離去。</p>
+<div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+  <h2 style="color: #047857; margin-top: 0;">👨‍⚕️ 別讓積水 / 血腫阻礙您的復原之路！</h2>
+  <p style="color: #334155; margin-bottom: 1.5rem;">面對腫脹，您不需要忍耐。宸新復健科運用先進的超音波導引技術，為您精準「減壓」，看見積水消失的瞬間，疼痛也隨之離去。</p>
+  <p style="font-weight: bold; color: #059669;">
+    <a href="/booking" style="color: inherit; text-decoration: underline;">立即預約超音波檢查，讓專業團隊為您精準診斷！</a>
+  </p>
+</div>
 
-        <p style="font-weight: bold; color: #059669;">
-  <a href="/booking" style="color: inherit; text-decoration: underline;">立即預約超音波檢查，讓專業團隊為您精準診斷！</a>
-</p>
-    </div>
+`,
+  referencesHtml: `
+    <h2>📚 參考文獻</h2>
+ <div style="background-color: #f8fafc; padding: 1rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.9rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.5; word-break: break-all;">
+<ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li id="ref1" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Wu T, et al. <em>Ultrasound-guided versus landmark in knee arthrocentesis: A systematic review.</em> Semin Arthritis Rheum. 2016;45(5):627–632.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26791571/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1016/j.semarthrit.2015.09.011</a>
+        （實證：納入 9 項試驗共 715 名患者，確認超音波導引準確率 RR = 1.21，降低術中 VAS 疼痛 2.24 分，術後兩週疼痛改善更顯著）
+      </span>
+    </li>
+
+    <li id="ref2" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Boer CG, et al. <em>Synovial Fluid Cytokines, Chemokines and MMP Levels in Osteoarthritis Patients with Knee Pain Display a Profile Similar to Many Rheumatoid Arthritis Patients.</em> J Clin Med. 2021;10(21):5027.
+        <a href="https://doi.org/10.3390/jcm10215027" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.3390/jcm10215027</a>
+        （實證：量化 OA 滑液中 IL-1β、TNF-α、MMP 等 16 種促炎標誌物，論證積液中的細胞激素分佈對軟骨破壞的直接影響）
+      </span>
+    </li>
+
+    <li id="ref3" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Fujii K, et al. <em>Detection of synovitis in early knee osteoarthritis by MRI and serum biomarkers in Japanese general population.</em> Sci Rep. 2020;10:12520.
+        <a href="https://doi.org/10.1038/s41598-020-69328-w" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1038/s41598-020-69328-w</a>
+        （實證：滑膜炎積液體積與 MMP-3 呈正相關 β = 0.60，與 KOOS 所有功能評分負相關，論證積液體積對關節功能的直接傷害）
+      </span>
+    </li>
+
+    <li id="ref4" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Walczak BE, Johnson CN, Howe BM. <em>Myositis ossificans.</em> J Am Acad Orthop Surg. 2015;23(10):612–622.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26320160/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.5435/JAAOS-D-14-00261</a>
+        （實證：系統性綜論骨化性肌炎的病理演進——創傷後 6–8 週周邊鈣化出現，6 個月骨化完熟，論證大血腫及早引流的必要性）
+      </span>
+    </li>
+
+    <li id="ref5" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Devilbiss Z, Hess M, Ho GW. <em>Myositis Ossificans in Sport: A Review.</em> Curr Sports Med Rep. 2018;17(9):290–295.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27404421/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1249/JSR.0000000000000509</a>
+        （實證：運動醫學觀點論述骨化性肌炎發生率約 20%（大血腫病例），確認預防策略的核心為及早引流與適度制動）
+      </span>
+    </li>
+
+    <li id="ref6" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        De la Corte-Rodriguez H, et al. <em>Accelerating recovery from acute hemarthrosis in patients with hemophilia: the role of joint aspiration.</em> Blood Coagul Fibrinolysis. 2019;30(4):168–174.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30958454/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1097/MBC.0000000000000810</a>
+        （實證：前瞻性研究確認關節積血抽吸後，患者血腫消退天數、藥物使用天數及回歸日常活動均顯著縮短，無任何併發症）
+      </span>
+    </li>
+
+    <li id="ref7" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Carpenter CR, et al. <em>Evidence-based Diagnostics: Adult Septic Arthritis.</em> Acad Emerg Med. 2011;18(8):781–796.
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3229263/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1111/j.1553-2712.2011.01121.x</a>
+        （實證：系統性回顧確立 sWBC 的概似比閾值：&gt;50,000 LR = 4.7；&gt;100,000 LR 趨於無限大，為化膿性關節炎的最佳即時診斷工具）
+      </span>
+    </li>
+
+    <li id="ref8" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Oo WM, et al. <em>Comparison of ultrasound guidance with landmark-guided intra-articular knee injection in osteoarthritis: a systematic review and meta-analysis.</em> Australas J Ultrasound Med. 2024;27(2).
+        <a href="https://doi.org/10.1002/ajum.12386" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1002/ajum.12386</a>
+        （實證：4 項 RCT 統合分析（338 名 OA 患者）確認超音波導引在術中疼痛、追蹤疼痛及功能 3 項指標均顯著優於傳統盲目注射）
+      </span>
+    </li>
+
+    <li id="ref9" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kamel SI, et al. <em>Clinical examination, ultrasound assessment and aspiration of knee effusion in primary knee osteoarthritis patients.</em> J Orthop Surg Res. 2023;18(1):440.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/37301888/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1186/s13018-023-03891-6</a>
+        （實證：橫斷面研究確認超音波導引下脊椎針（22G/3.5 英寸）的抽吸成功率高達 90.9%，優於短針的 41.2%，強調針頭長度與超音波導引配合的重要性）
+      </span>
+    </li>
+
+    <li id="ref10" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Goshkajian A, Sanjay P, Kaur G. <em>Ultrasound-Guided Arthrocentesis.</em> In: StatPearls [Internet]. NCBI Bookshelf. Updated 2025 Jul 7.
+        <a href="https://www.ncbi.nlm.nih.gov/books/NBK573084/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: NBK573084</a>
+        （實證：權威教科書確認超音波導引為可提升診斷準確性、降低併發症、增加患者舒適度的進階操作技術）
+      </span>
+    </li>
+
+    <li id="ref11" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Al-Janabi HH, Gupta A. <em>Hemarthrosis.</em> In: StatPearls [Internet]. NCBI Bookshelf. Updated 2025 Nov 7.
+        <a href="https://www.ncbi.nlm.nih.gov/books/NBK525999/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: NBK525999</a>
+        （實證：教科書論述關節積血若未處置將引發滑膜炎→纖維化→創傷後關節炎，並確認關節穿刺術是最佳即時診斷與治療方式）
+      </span>
+    </li>
+
+    <li id="ref12" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Radsource. <em>Myositis Ossificans (MRI Review).</em> 2024.
+        <a href="https://radsource.us/myositis-ossificans/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">radsource.us/myositis-ossificans/</a>
+        （實證：影像醫學教學資料確認大型血腫存在時抽吸引流為保守治療核心，外科切除保留給保守治療失敗的持續症狀病例）
+      </span>
+    </li>
+
+    <li id="ref13" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Safi MH, et al. <em>Synovial Cell Count Poorly Predicts Septic Arthritis in the Presence of Crystalline Arthropathy.</em> J Bone Joint Surg. 2020;102(12):1048–1053.
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7295646/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.2106/JBJS.19.01335</a>
+        （實證：回顧性研究（358 次穿刺）揭示化膿性關節炎伴結晶性關節病時，sWBC 截斷值鑑別能力下降，提示需綜合判斷）
+      </span>
+    </li>
+
+    <li id="ref14" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Jo M, et al. <em>Measurement of MMP Activity in Synovial Fluid in Cases of Osteoarthritis and Acute Inflammatory Conditions of the Knee Joints Using a Fluorogenic Peptide Probe-Immobilized Diagnostic Kit.</em> Theranostics. 2012;2(2):198–210.
+        <a href="https://www.thno.org/v02p0198.htm" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.7150/thno.3887</a>
+        （實證：直接量化滑液 MMP 活性，急性發炎病例比 OA 患者高 3.8 倍，論證積液中酵素對軟骨的直接破壞力）
+      </span>
+    </li>
+
+    <li id="ref15" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Margaretten ME, et al. <em>How sensitive is the synovial fluid white blood cell count in diagnosing septic arthritis?</em> Ann Emerg Med. 2007;50(4):496–500.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/17870475/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1016/j.annemergmed.2007.02.018</a>
+        （實證：6 年回顧性研究發現，確診化膿性關節炎中仍有 39% 病例 sWBC &lt; 50,000/mm³，揭示單一閾值的不足）
+      </span>
+    </li>
+
+    <li id="ref16" style="margin-bottom: 0.6rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Erer T, et al. <em>How reliable are the synovial cell count and blood parameters in the diagnosis of septic arthritis?</em> Jt Dis Relat Surg. 2023;34(3):724–730.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/37750279/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.52312/jdrs.2023.1222</a>
+        （實證：192 名患者回顧性研究（2018–2022）確認 sWBC 截斷值 50,000/mm³ 可能造成誤診，強調臨床懷疑、Gram 染色與乳酸值的綜合應用）
+      </span>
+    </li>
+
+  </ol>
+  </div>
+</section>
+
+
   `,
   whyChooseUs: [
     '全療程<strong>高解析超音波導引</strong>，拒絕盲目穿刺。',
