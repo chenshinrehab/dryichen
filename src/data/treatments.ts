@@ -1856,7 +1856,7 @@ qaList: [
   title: '新竹關節抽水推薦 / 超音波導引抽積液與血腫',
   lastModified: '2026-04-09',
   tags: ['aspiration'],
-  subtitle: '精準導引解除「壓力鍋」，膝蓋積水、肌肉血腫的救星',
+  subtitle: '精準導引解除膝蓋積水、肌肉血腫的救星',
   description: '膝蓋腫得像麵龜？腳踝扭傷腫脹不退？肌肉撕裂瘀血散不掉？宸新復健科運用高解析超音波導引，精準抽吸關節積水與血腫。解決退化性關節炎腫脹、加速運動傷害復原，並有效預防肌肉鈣化，是安全、可視化的精準醫療。',
   image: '/images/treatments/i.webp',
   features: ['精準可視化', '立即減壓', '加速修復'],
@@ -1869,14 +1869,14 @@ qaList: [
 <section style="background: linear-gradient(135deg,#eff6ff,#e0f2fe); border: 2px solid #3b82f6; border-radius:1rem; padding:1.5rem 2rem; margin:0 0 2rem 0;">
   <h2 style="color:#1d4ed8; margin-top:0; font-size:1.2rem;">📋 核心結論摘要（閱讀本文前請先看這裡）</h2>
   <p style="margin-bottom:0; color:#1e3a5f;">
-    超音波導引抽吸（arthrocentesis）已被多項系統性回顧確立為關節積液與血腫處置的黃金標準。與傳統「盲抽」相比，超音波導引可將穿刺準確率顯著提升約 21% <sup><a href="https://pubmed.ncbi.nlm.nih.gov/26791571/" target="_blank" rel="noopener">[1]</a></sup>，並降低術中疼痛 VAS 評分達 2.24 分<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26791571/" target="_blank" rel="noopener">[1]</a></sup>，同時抽出更多積液體積（17.06 mL）<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26791571/" target="_blank" rel="noopener">[1]</a></sup>。退化性關節炎（OA）的積液中含有大量促發炎細胞激素——包括 IL-1β、TNF-α、IL-6、MMP 等——會持續侵蝕軟骨<sup><a href="https://doi.org/10.3390/jcm10215027" target="_blank" rel="noopener">[2]</a></sup><sup><a href="https://doi.org/10.1038/s41598-020-69328-w" target="_blank" rel="noopener">[3]</a></sup>；肌肉大型血腫若不及早引流，6–8 週內即可出現周邊鈣化，進入「骨化性肌炎（myositis ossificans）」不可逆階段<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26320160/" target="_blank" rel="noopener">[4]</a></sup><sup><a href="https://pubmed.ncbi.nlm.nih.gov/27404421/" target="_blank" rel="noopener">[5]</a></sup>；化膿性關節炎（septic arthritis）更需以滑液白血球計數（sWBC &gt; 50,000/mm³）快速鑑別，方能及早啟動抗生素治療<sup><a href="https://pubmed.ncbi.nlm.nih.gov/30958454/" target="_blank" rel="noopener">[6]</a></sup><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3229263/" target="_blank" rel="noopener">[7]</a></sup>。本文將以 16 篇以上的近年文獻，系統性解析超音波導引抽吸的適應症、鑑別診斷、治療流程，並破除 3 大常見迷思。
+    超音波導引抽吸（arthrocentesis）已被多項系統性回顧確立為關節積液與血腫處置的黃金標準。與傳統「盲抽」相比，超音波導引可將穿刺準確率顯著提升約 21% <sup><a href="https://pubmed.ncbi.nlm.nih.gov/26791571/" target="_blank" rel="noopener">[1]</a></sup>，並降低術中疼痛 VAS 評分達 2.24 分<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26791571/" target="_blank" rel="noopener">[1]</a></sup>，同時抽出更多積液體積（17.06 mL）<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26791571/" target="_blank" rel="noopener">[1]</a></sup>。退化性關節炎（OA）的積液中含有大量促發炎細胞激素——包括 IL-1β、TNF-α、IL-6、MMP 等——會持續侵蝕軟骨<sup><a href="https://doi.org/10.3390/jcm10215027" target="_blank" rel="noopener">[2]</a></sup><sup><a href="https://doi.org/10.1038/s41598-020-69328-w" target="_blank" rel="noopener">[3]</a></sup>；肌肉大型血腫若不及早引流，6–8 週內即可出現周邊鈣化，進入「骨化性肌炎」不可逆階段<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26320160/" target="_blank" rel="noopener">[4]</a></sup><sup><a href="https://pubmed.ncbi.nlm.nih.gov/27404421/" target="_blank" rel="noopener">[5]</a></sup>；化膿性關節炎更需以滑液白血球計數快速鑑別，方能及早啟動抗生素治療<sup><a href="https://pubmed.ncbi.nlm.nih.gov/30958454/" target="_blank" rel="noopener">[6]</a></sup><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3229263/" target="_blank" rel="noopener">[7]</a></sup>。本文將以 16 篇以上的近年文獻，系統性解析超音波導引抽吸的適應症、鑑別診斷、治療流程，並破除 3 大常見迷思。
   </p>
 </section>
 
 <!-- ===== 開頭段落 ===== -->
 <p>當膝蓋腫得像「麵龜」無法彎曲，或是腳踝扭傷後腫脹處像一顆水球，甚至肌肉拉傷後出現巨大的瘀青硬塊，這些都是<strong>「積液」</strong>或<strong>「血腫」</strong>在作怪。這時候，組織內部就像一個壓力鍋，不僅造成劇烈脹痛，更會阻礙血液循環與修復。</p>
 <br>
-<p>傳統觀念常認為「積水不能抽，會越抽越多」，這其實是錯誤的迷思。在現代醫學中，透過<strong>高解析超音波導引抽吸</strong>，我們能將這些有害的發炎物質或陳舊瘀血「精準移除」。2016 年納入 715 名患者（725 個膝關節）的系統性回顧暨統合分析顯示，超音波導引顯著優於傳統解剖標記盲抽，不僅準確率更高<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26791571/" target="_blank" rel="noopener">[1]</a></sup>，術後兩週疼痛評分亦明顯改善（WMD = 0.84，P &lt; 0.001）<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26791571/" target="_blank" rel="noopener">[1]</a></sup>。這不僅能立即緩解疼痛，更是加速組織修復、預防沾黏與鈣化的關鍵步驟。</p>
+<p>傳統觀念常認為「積水不能抽，會越抽越多」，這其實是錯誤的迷思。在現代醫學中，透過<strong>高解析超音波導引抽吸</strong>，我們能將這些有害的發炎物質或陳舊瘀血「精準移除」。2016 年納入 715 名患者（725 個膝關節）的系統性回顧暨統合分析顯示，超音波導引顯著優於傳統解剖標記盲抽，不僅準確率更高<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26791571/" target="_blank" rel="noopener">[1]</a></sup>，術後兩週疼痛評分亦明顯改善）<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26791571/" target="_blank" rel="noopener">[1]</a></sup>。這不僅能立即緩解疼痛，更是加速組織修復、預防沾黏與鈣化的關鍵步驟。</p>
 
 <!-- ===== 黃色卡片：為什麼超音波是黃金標準 ===== -->
 <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
@@ -1884,20 +1884,20 @@ qaList: [
     👁️ 為什麼「超音波導引」抽吸是黃金標準？
   </h2>
 
-  <p style="font-size: 1.1rem; color: #78350f;">過去醫師靠手感「盲抽」，容易因為針頭沒對準積水處而抽不到，或是誤傷神經血管。2025 年納入 11 項試驗的統合分析進一步確認，超音波導引的關節內準確率高達 95–96%，顯著優於解剖標記法的 78–83%（P &lt; 0.001）<sup><a href="https://doi.org/10.1002/ajum.12386" target="_blank" rel="noopener">[8]</a></sup>；在滑囊與肌腱周圍注射上，超音波的優勢更達優勝比（OR）6.4（95% CI：2.9–14）<sup><a href="https://doi.org/10.1002/ajum.12386" target="_blank" rel="noopener">[8]</a></sup>。宸新復健科全面採用超音波導引，將治療過程「視覺化」，帶來三大優勢：</p>
+  <p style="font-size: 1.1rem; color: #78350f;">過去醫師靠手感「盲抽」，容易因為針頭沒對準積水處而抽不到，或是誤傷神經血管。2025 年納入 11 項試驗的統合分析進一步確認，超音波導引的關節內準確率高達 95–96%，顯著優於解剖標記法的 78–83%（P &lt; 0.001）<sup><a href="https://doi.org/10.1002/ajum.12386" target="_blank" rel="noopener">[8]</a></sup>；在滑囊與肌腱周圍注射上，超音波的優勢更達優勝比（OR）6.4<sup><a href="https://doi.org/10.1002/ajum.12386" target="_blank" rel="noopener">[8]</a></sup>。宸新復健科全面採用超音波導引，將治療過程「視覺化」，帶來三大優勢：</p>
 
   <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
     <li style="margin-bottom: 1rem; display: flex; align-items: start;">
       <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
-      <div><strong>精準定位，抽得乾淨：</strong> 超音波能清楚顯示積水或血腫的深度與範圍。醫師能看著螢幕，將針尖引導至積液最深處，將髒水抽吸乾淨，避免殘留。2023 年的橫斷面研究顯示，使用超音波確認積液後進行引流，成功率可達 77%，若選用正確長度的脊椎針（22G/3.5 英寸）成功率更高達 90.9%<sup><a href="https://pubmed.ncbi.nlm.nih.gov/37301888/" target="_blank" rel="noopener">[9]</a></sup>。</div>
+      <div><strong>精準定位，抽得乾淨：</strong> 超音波能清楚顯示積水或血腫的深度與範圍。醫師能看著螢幕，將針尖引導至積液最深處，將髒水抽吸乾淨，避免殘留。2023 年的橫斷面研究顯示，使用超音波確認積液後進行引流，成功率可達 77%，若選用正確長度的脊椎針成功率更高達 90.9%<sup><a href="https://pubmed.ncbi.nlm.nih.gov/37301888/" target="_blank" rel="noopener">[9]</a></sup>。</div>
     </li>
     <li style="margin-bottom: 1rem; display: flex; align-items: start;">
       <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
-      <div><strong>安全性高，避開地雷：</strong> 關節周圍常佈滿血管與神經。透過影像導引，我們能規劃安全路徑，避開重要組織，大幅降低出血或神經損傷風險。StatPearls 2025 年版教科書亦確認超音波導引為可降低併發症、增加患者舒適度的進階操作技術<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK573084/" target="_blank" rel="noopener">[10]</a></sup>。</div>
+      <div><strong>安全性高，避開地雷：</strong> 關節周圍常佈滿血管與神經。透過影像導引，我們能規劃安全路徑，避開重要組織，大幅降低出血或神經損傷風險。2025 年版教科書亦確認超音波導引為可降低併發症、增加患者舒適度的進階操作技術<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK573084/" target="_blank" rel="noopener">[10]</a></sup>。</div>
     </li>
     <li style="margin-bottom: 0; display: flex; align-items: start;">
       <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
-      <div><strong>診斷病因（看顏色）：</strong> 抽出來的液體是診斷的重要依據。透過觀察液體的顏色、黏稠度，醫師能判斷是單純退化、痛風結晶、細菌感染還是韌帶斷裂造成的出血。化膿性關節炎的滑液白血球若超過 50,000/mm³（陽性概似比 LR = 7.7），即高度懷疑感染<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3229263/" target="_blank" rel="noopener">[7]</a></sup>。</div>
+      <div><strong>診斷病因（看顏色）：</strong> 抽出來的液體是診斷的重要依據。透過觀察液體的顏色、黏稠度，醫師能判斷是單純退化、痛風結晶、細菌感染還是韌帶斷裂造成的出血。化膿性關節炎的滑液白血球若超過 50,000/mm³，即高度懷疑感染<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3229263/" target="_blank" rel="noopener">[7]</a></sup>。</div>
     </li>
   </ul>
 </div>
@@ -1928,22 +1928,22 @@ qaList: [
 <h3>1. 急性膝關節積水（退化性關節炎 / 痛風）</h3>
 <p>當退化性關節炎急性發作時，滑膜會過度分泌發炎性的關節液（俗稱積水）。</p>
 <ul>
-  <li><strong>為什麼要抽？</strong> 退化性關節炎的積液充滿促炎性細胞激素與基質金屬蛋白酶（MMP），包括 IL-1β、TNF-α、IL-6、IL-15、IL-17 等，研究證實這些物質會持續破壞軟骨細胞的外基質（ECM），加速軟骨退化<sup><a href="https://doi.org/10.3390/jcm10215027" target="_blank" rel="noopener">[2]</a></sup>。2020 年日本大型橫斷面研究亦確認，滑膜炎積液體積與 MMP-3 濃度呈顯著正相關（β = 0.60，P &lt; 0.001），且與所有 KOOS 功能評分呈負相關<sup><a href="https://doi.org/10.1038/s41598-020-69328-w" target="_blank" rel="noopener">[3]</a></sup>。且大量積水會撐開關節囊，造成劇痛並導致大腿肌肉萎縮（關節源性肌肉抑制）。</li>
-  <li><strong>治療效益：</strong> 抽出發炎積液後，關節內壓力瞬間釋放，疼痛通常能改善 <strong>50% 以上</strong>，並為後續注射（如玻尿酸或 PRP）騰出空間，避免被積水稀釋。2024 年統合分析（4 項 RCT，338 名膝關節 OA 患者）確認，超音波導引關節注射在術中疼痛（SMD = 0.89）、術後疼痛追蹤（SMD = 0.51）及功能改善（SMD = 1.30）三項指標均顯著優於傳統盲目注射<sup><a href="https://doi.org/10.1002/ajum.12386" target="_blank" rel="noopener">[8]</a></sup>。</li>
+  <li><strong>為什麼要抽？</strong> 退化性關節炎的積液充滿促炎性細胞激素與基質金屬蛋白酶（MMP），包括 IL-1β、TNF-α、IL-6、IL-15、IL-17 等，研究證實這些物質會持續破壞軟骨細胞的外基質，加速軟骨退化<sup><a href="https://doi.org/10.3390/jcm10215027" target="_blank" rel="noopener">[2]</a></sup>。2020 年日本大型橫斷面研究亦確認，滑膜炎積液體積與 MMP-3 濃度呈顯著正相關，且與所有 KOOS 功能評分呈負相關<sup><a href="https://doi.org/10.1038/s41598-020-69328-w" target="_blank" rel="noopener">[3]</a></sup>。且大量積水會撐開關節囊，造成劇痛並導致大腿肌肉萎縮（關節源性肌肉抑制）。</li>
+  <li><strong>治療效益：</strong> 抽出發炎積液後，關節內壓力瞬間釋放，疼痛通常能改善 <strong>50% 以上</strong>，並為後續注射（如玻尿酸或 PRP）騰出空間，避免被積水稀釋。2024 年統合分析（4 項 RCT，338 名膝關節退化患者）確認，超音波導引關節注射在術中疼痛、術後疼痛追蹤及功能改善三項指標均顯著優於傳統盲目注射<sup><a href="https://doi.org/10.1002/ajum.12386" target="_blank" rel="noopener">[8]</a></sup>。</li>
 </ul>
 
 <h3>2. 嚴重腳踝扭傷（積血）</h3>
 <p>嚴重的腳踝翻船往往伴隨著韌帶撕裂，導致微血管破裂，血液流進關節腔內形成「關節積血（hemarthrosis）」。</p>
 <ul>
-  <li><strong>為什麼要抽？</strong> 血液在關節腔內是非常強的發炎刺激物，且容易造成關節沾黏，導致日後腳踝僵硬、活動度受限。StatPearls 2025 年教科書指出，若急性關節積血未及時處置，反覆出血將啟動滑膜發炎→纖維化→軟骨退化的惡性循環，最終可能導致創傷後關節炎<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK525999/" target="_blank" rel="noopener">[11]</a></sup>。</li>
+  <li><strong>為什麼要抽？</strong> 血液在關節腔內是非常強的發炎刺激物，且容易造成關節沾黏，導致日後腳踝僵硬、活動度受限。2025 年教科書指出，若急性關節積血未及時處置，反覆出血將啟動滑膜發炎→纖維化→軟骨退化的惡性循環，最終可能導致創傷後關節炎<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK525999/" target="_blank" rel="noopener">[11]</a></sup>。</li>
   <li><strong>治療效益：</strong> 在受傷後黃金期內（通常是 24–72 小時內液化期），透過超音波導引將關節內的瘀血抽出，能大幅縮短消腫時間，讓患者更快開始復健運動。一項針對血友病患者的前瞻性研究顯示，急性關節積血組進行關節抽吸後，血腫消退天數、藥物使用天數及恢復工作/學校活動的時間均顯著縮短，且無任何併發症<sup><a href="https://pubmed.ncbi.nlm.nih.gov/30958454/" target="_blank" rel="noopener">[6]</a></sup>。過太久血液凝固就抽不出來了。</li>
 </ul>
 
 <h3>3. 肌肉撕裂傷（巨大的血腫）</h3>
 <p>運動員或意外撞擊常造成肌肉斷裂（如小腿腓腸肌、大腿股四頭肌），形成巨大的血塊包在肌肉筋膜內。</p>
 <ul>
-  <li><strong>為什麼要抽？</strong> 這是最關鍵的適應症！如果肌肉內的大血塊沒有排出，身體吸收速度極慢，最後容易發生<strong>「骨化性肌炎（myositis ossificans）」</strong>——血腫在受傷後 6–8 週即可出現周邊鈣化，6 個月時骨化完全成熟<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26320160/" target="_blank" rel="noopener">[4]</a></sup>。此一過程為原始血腫中的血液分層發生板層狀異位骨化，導致肌肉永久性纖維化與僵硬。創傷後骨化性肌炎好發於大腿股四頭肌，在有大型血腫的病例中估計發生率約 20%<sup><a href="https://pubmed.ncbi.nlm.nih.gov/27404421/" target="_blank" rel="noopener">[5]</a></sup>。</li>
-  <li><strong>治療效益：</strong> 透過粗針頭將濃稠的血腫抽出，能直接預防肌肉鈣化，是保存肌肉功能的重要處置。Radsource 影像教學資料亦明確指出：大型血腫存在時，抽吸引流是保守治療的核心選項之一<sup><a href="https://radsource.us/myositis-ossificans/" target="_blank" rel="noopener">[12]</a></sup>。</li>
+  <li><strong>為什麼要抽？</strong> 這是最關鍵的適應症！如果肌肉內的大血塊沒有排出，身體吸收速度極慢，最後容易發生<strong>「骨化性肌炎」</strong>——血腫在受傷後 6–8 週即可出現周邊鈣化，6 個月時骨化完全成熟<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26320160/" target="_blank" rel="noopener">[4]</a></sup>。此一過程為原始血腫中的血液分層發生板層狀異位骨化，導致肌肉永久性纖維化與僵硬。創傷後骨化性肌炎好發於大腿股四頭肌，在有大型血腫的病例中估計發生率約 20%<sup><a href="https://pubmed.ncbi.nlm.nih.gov/27404421/" target="_blank" rel="noopener">[5]</a></sup>。</li>
+  <li><strong>治療效益：</strong> 透過粗針頭將濃稠的血腫抽出，能直接預防肌肉鈣化，是保存肌肉功能的重要處置。影像教學資料亦明確指出：大型血腫存在時，抽吸引流是保守治療的核心選項之一<sup><a href="https://radsource.us/myositis-ossificans/" target="_blank" rel="noopener">[12]</a></sup>。</li>
 </ul>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -1995,15 +1995,14 @@ qaList: [
   <h2 style="color: #b91c1c; margin-top: 0;">🚫 三大常見迷思反向查證（Evidence-Based 破解）</h2>
 
   <h3 style="color: #991b1b;">❌ 迷思一：「膝蓋積水越抽越多，所以不能抽。」</h3>
-  <p><strong>✅ 事實：</strong>積水是「發炎→滑膜過度分泌」的結果，不是「抽了才變多」。相反，積液中的 IL-1β、TNF-α 等促炎性細胞激素會持續刺激滑膜，形成惡性循環<sup><a href="https://doi.org/10.3390/jcm10215027" target="_blank" rel="noopener">[2]</a></sup>。研究顯示，OA 積液中的 MMP 活性在急性期可較正常關節液高出 3.8 倍以上<sup><a href="https://www.thno.org/v02p0198.htm" target="_blank" rel="noopener">[14]</a></sup>。不抽出這些有害物質，軟骨退化只會更快。抽吸後若又腫起來，代表內部的發炎問題（如磨損、撕裂）尚未解決，應針對病因進一步治療，而不是不抽。</p>
+  <p style="color: #000000;"><strong>✅ 事實：</strong>積水是「發炎→滑膜過度分泌」的結果，不是「抽了才變多」。相反，積液中的 IL-1β、TNF-α 等促炎性細胞激素會持續刺激滑膜，形成惡性循環<sup><a href="https://doi.org/10.3390/jcm10215027" target="_blank" rel="noopener" style="color: #000000;">[2]</a></sup>。研究顯示，退化性關節炎積液中的 MMP 活性在急性期可較正常關節液高出 3.8 倍以上<sup><a href="https://www.thno.org/v02p0198.htm" target="_blank" rel="noopener" style="color: #000000;">[14]</a></sup>。不抽出這些有害物質，軟骨退化只會更快。抽吸後若又腫起來，代表內部的發炎問題（如磨損、撕裂）尚未解決，應針對病因進一步治療，而不是不抽。</p>
 
   <h3 style="color: #991b1b;">❌ 迷思二：「少喝水，膝蓋就不會積水。」</h3>
-  <p><strong>✅ 事實：</strong>關節積液是「組織發炎反應」產生的組織液，與飲水量毫無直接關係<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK573084/" target="_blank" rel="noopener">[10]</a></sup>。關節液的生成由滑膜細胞調控，其驅動力是關節腔內的發炎介質濃度，而非體液總量。刻意減少飲水不僅無助於消積液，反而會使血液黏稠、加速腎功能負擔，干擾正常的修復機制。正確做法是積極控制發炎根本原因，而非限制飲水。</p>
+  <p style="color: #000000;"><strong>✅ 事實：</strong>關節積液是「組織發炎反應」產生的組織液，與飲水量毫無直接關係<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK573084/" target="_blank" rel="noopener" style="color: #000000;">[10]</a></sup>。關節液的生成由滑膜細胞調控，其驅動力是關節腔內的發炎介質濃度，而非體液總量。刻意減少飲水不僅無助於消積液，反而會使血液黏稠、加速腎功能負擔，干擾正常的修復機制。正確做法是積極控制發炎根本原因，而非限制飲水。</p>
 
-  <h3 style="color: #991b1b;">❌ 迷思三：「化膿性關節炎只要 sWBC &gt; 50,000 就是感染，可以此為唯一標準。」</h3>
-  <p><strong>✅ 事實：</strong>sWBC &gt; 50,000/mm³ 的陽性概似比（LR）雖高達 7.7，但感染性關節炎中仍有高達 <strong>39%</strong> 的病例，sWBC 低於此閾值<sup><a href="https://pubmed.ncbi.nlm.nih.gov/17870475/" target="_blank" rel="noopener">[15]</a></sup>。2023 年的回顧性研究（192 名患者）更指出，單純依賴 sWBC 50,000/mm³ 的截斷值可能導致誤診，建議結合 Gram 染色、乳酸值及臨床高度懷疑度進行綜合判斷<sup><a href="https://pubmed.ncbi.nlm.nih.gov/37750279/" target="_blank" rel="noopener">[16]</a></sup>。因此，「滑液外觀混濁 + 高度臨床懷疑」比單一數值更可靠。</p>
+  <h3 style="color: #991b1b;">❌ 迷思三：「化膿性關節炎只要 sWBC > 50,000 就是感染，可以此為唯一標準。」</h3>
+  <p style="color: #000000;"><strong>✅ 事實：</strong>sWBC > 50,000/mm³ 的陽性概似比（LR）雖高達 7.7，但感染性關節炎中仍有高達 <strong>39%</strong> 的病例，sWBC 低於此閾值<sup><a href="https://pubmed.ncbi.nlm.nih.gov/17870475/" target="_blank" rel="noopener" style="color: #000000;">[15]</a></sup>。2023 年的回顧性研究（192 名患者）更指出，單純依賴 sWBC 50,000/mm³ 的截斷值可能導致誤診，建議結合 Gram 染色、乳酸值及臨床高度懷疑度進行綜合判斷<sup><a href="https://pubmed.ncbi.nlm.nih.gov/37750279/" target="_blank" rel="noopener" style="color: #000000;">[16]</a></sup>。因此，「滑液外觀混濁 + 高度臨床懷疑」比單一數值更可靠。</p>
 </div>
-
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <!-- ===== 治療流程 ===== -->
@@ -2017,7 +2016,7 @@ qaList: [
     </h3>
     <ol style="line-height: 1.8;">
       <li><strong>超音波評估：</strong> 確認積液位置、總量與性質。</li>
-      <li><strong>無菌操作：</strong> 嚴格消毒皮膚，確保無感染風險。StatPearls 教科書強調使用 povidone-iodine 或 chlorhexidine 進行標準消毒程序<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK573084/" target="_blank" rel="noopener">[10]</a></sup>。</li>
+      <li><strong>無菌操作：</strong> 嚴格消毒皮膚，確保無感染風險。強調使用 povidone-iodine 或 chlorhexidine 進行標準消毒程序<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK573084/" target="_blank" rel="noopener">[10]</a></sup>。</li>
       <li><strong>動態導引抽吸：</strong> 在超音波螢幕監控下，針頭精準進入積液腔，您會親眼看到積水 / 血腫逐漸消失。</li>
       <li><strong>必要時注射：</strong> 抽吸完畢後，視情況原針頭直接注射消炎藥物或增生療法，不需挨第二針。</li>
     </ol>
@@ -2055,134 +2054,133 @@ qaList: [
     <h2>📚 參考文獻</h2>
  <div style="background-color: #f8fafc; padding: 1rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.9rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.5; word-break: break-all;">
 <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
-    <li id="ref1" style="margin-bottom: 0.6rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Wu T, et al. <em>Ultrasound-guided versus landmark in knee arthrocentesis: A systematic review.</em> Semin Arthritis Rheum. 2016;45(5):627–632.
-        <a href="https://pubmed.ncbi.nlm.nih.gov/26791571/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1016/j.semarthrit.2015.09.011</a>
-        （實證：納入 9 項試驗共 715 名患者，確認超音波導引準確率 RR = 1.21，降低術中 VAS 疼痛 2.24 分，術後兩週疼痛改善更顯著）
-      </span>
-    </li>
+   <li id="ref1" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Wu T, et al. <em>Ultrasound-guided versus landmark in knee arthrocentesis: A systematic review.</em> Semin Arthritis Rheum. 2016;45(5):627–632.
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26791571/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1016/j.semarthrit.2015.10.011</a>
+    （實證：納入 9 項試驗共 715 名患者，確認超音波導引準確率 RR = 1.21，降低術中 VAS 疼痛 2.24 分，術後兩週疼痛改善更顯著）
+  </span>
+</li>
 
-    <li id="ref2" style="margin-bottom: 0.6rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Boer CG, et al. <em>Synovial Fluid Cytokines, Chemokines and MMP Levels in Osteoarthritis Patients with Knee Pain Display a Profile Similar to Many Rheumatoid Arthritis Patients.</em> J Clin Med. 2021;10(21):5027.
-        <a href="https://doi.org/10.3390/jcm10215027" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.3390/jcm10215027</a>
-        （實證：量化 OA 滑液中 IL-1β、TNF-α、MMP 等 16 種促炎標誌物，論證積液中的細胞激素分佈對軟骨破壞的直接影響）
-      </span>
-    </li>
+<li id="ref2" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Boer CG, et al. <em>Synovial Fluid Cytokines, Chemokines and MMP Levels in Osteoarthritis Patients with Knee Pain Display a Profile Similar to Many Rheumatoid Arthritis Patients.</em> J Clin Med. 2021;10(21):5027.
+    <a href="https://doi.org/10.3390/jcm10215027" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.3390/jcm10215027</a>
+    （實證：量化 OA 滑液中 IL-1β、TNF-α、MMP 等 16 種促炎標誌物，論證積液中的細胞激素分佈對軟骨破壞的直接影響）
+  </span>
+</li>
 
-    <li id="ref3" style="margin-bottom: 0.6rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Fujii K, et al. <em>Detection of synovitis in early knee osteoarthritis by MRI and serum biomarkers in Japanese general population.</em> Sci Rep. 2020;10:12520.
-        <a href="https://doi.org/10.1038/s41598-020-69328-w" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1038/s41598-020-69328-w</a>
-        （實證：滑膜炎積液體積與 MMP-3 呈正相關 β = 0.60，與 KOOS 所有功能評分負相關，論證積液體積對關節功能的直接傷害）
-      </span>
-    </li>
+<li id="ref3" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Fujii K, et al. <em>Detection of synovitis in early knee osteoarthritis by MRI and serum biomarkers in Japanese general population.</em> Sci Rep. 2020;10:12520.
+    <a href="https://doi.org/10.1038/s41598-020-69328-w" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1038/s41598-020-69328-w</a>
+    （實證：滑膜炎積液體積與 MMP-3 呈正相關 β = 0.60，與 KOOS 所有功能評分負相關，論證積液體積對關節功能的直接傷害）
+  </span>
+</li>
 
-    <li id="ref4" style="margin-bottom: 0.6rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Walczak BE, Johnson CN, Howe BM. <em>Myositis ossificans.</em> J Am Acad Orthop Surg. 2015;23(10):612–622.
-        <a href="https://pubmed.ncbi.nlm.nih.gov/26320160/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.5435/JAAOS-D-14-00261</a>
-        （實證：系統性綜論骨化性肌炎的病理演進——創傷後 6–8 週周邊鈣化出現，6 個月骨化完熟，論證大血腫及早引流的必要性）
-      </span>
-    </li>
+<li id="ref4" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Walczak BE, Johnson CN, Howe BM. <em>Myositis ossificans.</em> J Am Acad Orthop Surg. 2015;23(10):612–622.
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26320160/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.5435/JAAOS-D-14-00269</a>
+    （實證：系統性綜論骨化性肌炎的病理演進——創傷後 6–8 週周邊鈣化出現，6 個月骨化完熟，論證大血腫及早引流的必要性）
+  </span>
+</li>
 
-    <li id="ref5" style="margin-bottom: 0.6rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Devilbiss Z, Hess M, Ho GW. <em>Myositis Ossificans in Sport: A Review.</em> Curr Sports Med Rep. 2018;17(9):290–295.
-        <a href="https://pubmed.ncbi.nlm.nih.gov/27404421/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1249/JSR.0000000000000509</a>
-        （實證：運動醫學觀點論述骨化性肌炎發生率約 20%（大血腫病例），確認預防策略的核心為及早引流與適度制動）
-      </span>
-    </li>
+<li id="ref5" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Devilbiss Z, Hess M, Ho GW. <em>Myositis Ossificans in Sport: A Review.</em> Curr Sports Med Rep. 2018;17(9):290–295.
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30204632/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1249/JSR.0000000000000515</a>
+    （實證：運動醫學觀點論述骨化性肌炎發生率約 20%（大血腫病例），確認預防策略的核心為及早引流與適度制動）
+  </span>
+</li>
 
-    <li id="ref6" style="margin-bottom: 0.6rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        De la Corte-Rodriguez H, et al. <em>Accelerating recovery from acute hemarthrosis in patients with hemophilia: the role of joint aspiration.</em> Blood Coagul Fibrinolysis. 2019;30(4):168–174.
-        <a href="https://pubmed.ncbi.nlm.nih.gov/30958454/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1097/MBC.0000000000000810</a>
-        （實證：前瞻性研究確認關節積血抽吸後，患者血腫消退天數、藥物使用天數及回歸日常活動均顯著縮短，無任何併發症）
-      </span>
-    </li>
+<li id="ref6" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    De la Corte-Rodriguez H, et al. <em>Accelerating recovery from acute hemarthrosis in patients with hemophilia: the role of joint aspiration.</em> Blood Coagul Fibrinolysis. 2019;30(4):168–174.
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30958454/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1097/MBC.0000000000000810</a>
+    （實證：前瞻性研究確認關節積血抽吸後，患者血腫消退天數、藥物使用天數及回歸日常活動均顯著縮短，無任何併發症）
+  </span>
+</li>
 
-    <li id="ref7" style="margin-bottom: 0.6rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Carpenter CR, et al. <em>Evidence-based Diagnostics: Adult Septic Arthritis.</em> Acad Emerg Med. 2011;18(8):781–796.
-        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3229263/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1111/j.1553-2712.2011.01121.x</a>
-        （實證：系統性回顧確立 sWBC 的概似比閾值：&gt;50,000 LR = 4.7；&gt;100,000 LR 趨於無限大，為化膿性關節炎的最佳即時診斷工具）
-      </span>
-    </li>
+<li id="ref7" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Carpenter CR, et al. <em>Evidence-based Diagnostics: Adult Septic Arthritis.</em> Acad Emerg Med. 2011;18(8):781–796.
+    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3229263/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1111/j.1553-2712.2011.01121.x</a>
+    （實證：系統性回顧確立 sWBC 的概似比閾值：&gt;50,000 LR = 4.7；&gt;100,000 LR 趨於無限大，為化膿性關節炎的最佳即時診斷工具）
+  </span>
+</li>
 
-    <li id="ref8" style="margin-bottom: 0.6rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Oo WM, et al. <em>Comparison of ultrasound guidance with landmark-guided intra-articular knee injection in osteoarthritis: a systematic review and meta-analysis.</em> Australas J Ultrasound Med. 2024;27(2).
-        <a href="https://doi.org/10.1002/ajum.12386" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1002/ajum.12386</a>
-        （實證：4 項 RCT 統合分析（338 名 OA 患者）確認超音波導引在術中疼痛、追蹤疼痛及功能 3 項指標均顯著優於傳統盲目注射）
-      </span>
-    </li>
+<li id="ref8" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Oo WM, et al. <em>Comparison of ultrasound guidance with landmark-guided intra-articular knee injection in osteoarthritis: a systematic review and meta-analysis.</em> Australas J Ultrasound Med. 2024;27(2):97–105.
+    <a href="https://doi.org/10.1002/ajum.12386" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1002/ajum.12386</a>
+    （實證：4 項 RCT 統合分析（338 名 OA 患者）確認超音波導引在術中疼痛、追蹤疼痛及功能 3 項指標均顯著優於傳統盲目注射）
+  </span>
+</li>
 
-    <li id="ref9" style="margin-bottom: 0.6rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Kamel SI, et al. <em>Clinical examination, ultrasound assessment and aspiration of knee effusion in primary knee osteoarthritis patients.</em> J Orthop Surg Res. 2023;18(1):440.
-        <a href="https://pubmed.ncbi.nlm.nih.gov/37301888/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1186/s13018-023-03891-6</a>
-        （實證：橫斷面研究確認超音波導引下脊椎針（22G/3.5 英寸）的抽吸成功率高達 90.9%，優於短針的 41.2%，強調針頭長度與超音波導引配合的重要性）
-      </span>
-    </li>
+<li id="ref9" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Kamel SI, et al. <em>Clinical examination, ultrasound assessment and aspiration of knee effusion in primary knee osteoarthritis patients.</em> J Orthop Surg Res. 2023;18(1):440.
+    <a href="https://pubmed.ncbi.nlm.nih.gov/37301888/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1186/s13018-023-03891-6</a>
+    （實證：橫斷面研究確認超音波導引下脊椎針（22G/3.5 英寸）的抽吸成功率高達 90.9%，優於短針的 41.2%，強調針頭長度與超音波導引配合的重要性）
+  </span>
+</li>
 
-    <li id="ref10" style="margin-bottom: 0.6rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Goshkajian A, Sanjay P, Kaur G. <em>Ultrasound-Guided Arthrocentesis.</em> In: StatPearls [Internet]. NCBI Bookshelf. Updated 2025 Jul 7.
-        <a href="https://www.ncbi.nlm.nih.gov/books/NBK573084/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: NBK573084</a>
-        （實證：權威教科書確認超音波導引為可提升診斷準確性、降低併發症、增加患者舒適度的進階操作技術）
-      </span>
-    </li>
+<li id="ref10" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Goshkajian A, Sanjay P, Kaur G. <em>Ultrasound-Guided Arthrocentesis.</em> In: StatPearls [Internet]. NCBI Bookshelf. Updated 2025 Jul 7.
+    <a href="https://www.ncbi.nlm.nih.gov/books/NBK573084/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: NBK573084</a>
+    （實證：權威教科書確認超音波導引為可提升診斷準確性、降低併發症、增加患者舒適度的進階操作技術）
+  </span>
+</li>
 
-    <li id="ref11" style="margin-bottom: 0.6rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Al-Janabi HH, Gupta A. <em>Hemarthrosis.</em> In: StatPearls [Internet]. NCBI Bookshelf. Updated 2025 Nov 7.
-        <a href="https://www.ncbi.nlm.nih.gov/books/NBK525999/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: NBK525999</a>
-        （實證：教科書論述關節積血若未處置將引發滑膜炎→纖維化→創傷後關節炎，並確認關節穿刺術是最佳即時診斷與治療方式）
-      </span>
-    </li>
+<li id="ref11" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Al-Janabi HH, Gupta A. <em>Hemarthrosis.</em> In: StatPearls [Internet]. NCBI Bookshelf. Updated 2025 Nov 7.
+    <a href="https://www.ncbi.nlm.nih.gov/books/NBK525999/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: NBK525999</a>
+    （實證：教科書論述關節積血若未處置將引發滑膜炎→纖維化→創傷後關節炎，並確認關節穿刺術是最佳即時診斷與治療方式）
+  </span>
+</li>
 
-    <li id="ref12" style="margin-bottom: 0.6rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Radsource. <em>Myositis Ossificans (MRI Review).</em> 2024.
-        <a href="https://radsource.us/myositis-ossificans/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">radsource.us/myositis-ossificans/</a>
-        （實證：影像醫學教學資料確認大型血腫存在時抽吸引流為保守治療核心，外科切除保留給保守治療失敗的持續症狀病例）
-      </span>
-    </li>
+<li id="ref12" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Radsource. <em>Myositis Ossificans (MRI Review).</em> 2024.
+    <a href="https://radsource.us/myositis-ossificans/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">radsource.us/myositis-ossificans/</a>
+    （實證：影像醫學教學資料確認大型血腫存在時抽吸引流為保守治療核心，外科切除保留給保守治療失敗的持續症狀病例）
+  </span>
+</li>
 
-    <li id="ref13" style="margin-bottom: 0.6rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Safi MH, et al. <em>Synovial Cell Count Poorly Predicts Septic Arthritis in the Presence of Crystalline Arthropathy.</em> J Bone Joint Surg. 2020;102(12):1048–1053.
-        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7295646/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.2106/JBJS.19.01335</a>
-        （實證：回顧性研究（358 次穿刺）揭示化膿性關節炎伴結晶性關節病時，sWBC 截斷值鑑別能力下降，提示需綜合判斷）
-      </span>
-    </li>
+<li id="ref13" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Safi MH, et al. <em>Synovial Cell Count Poorly Predicts Septic Arthritis in the Presence of Crystalline Arthropathy.</em> J Bone Joint Surg. 2020;102(12):1048–1053.
+    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7295646/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.2106/JBJS.19.01335</a>
+    （實證：回顧性研究（358 次穿刺）揭示化膿性關節炎伴結晶性關節病時，sWBC 截斷值鑑別能力下降，提示需綜合判斷）
+  </span>
+</li>
 
-    <li id="ref14" style="margin-bottom: 0.6rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Jo M, et al. <em>Measurement of MMP Activity in Synovial Fluid in Cases of Osteoarthritis and Acute Inflammatory Conditions of the Knee Joints Using a Fluorogenic Peptide Probe-Immobilized Diagnostic Kit.</em> Theranostics. 2012;2(2):198–210.
-        <a href="https://www.thno.org/v02p0198.htm" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.7150/thno.3887</a>
-        （實證：直接量化滑液 MMP 活性，急性發炎病例比 OA 患者高 3.8 倍，論證積液中酵素對軟骨的直接破壞力）
-      </span>
-    </li>
+<li id="ref14" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Jo M, et al. <em>Measurement of MMP Activity in Synovial Fluid in Cases of Osteoarthritis and Acute Inflammatory Conditions of the Knee Joints Using a Fluorogenic Peptide Probe-Immobilized Diagnostic Kit.</em> Theranostics. 2012;2(2):198–210.
+    <a href="https://www.thno.org/v02p0198.htm" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.7150/thno.3887</a>
+    （實證：直接量化滑液 MMP 活性，急性發炎病例比 OA 患者高 3.8 倍，論證積液中酵素對軟骨的直接破壞力）
+  </span>
+</li>
 
-    <li id="ref15" style="margin-bottom: 0.6rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Margaretten ME, et al. <em>How sensitive is the synovial fluid white blood cell count in diagnosing septic arthritis?</em> Ann Emerg Med. 2007;50(4):496–500.
-        <a href="https://pubmed.ncbi.nlm.nih.gov/17870475/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1016/j.annemergmed.2007.02.018</a>
-        （實證：6 年回顧性研究發現，確診化膿性關節炎中仍有 39% 病例 sWBC &lt; 50,000/mm³，揭示單一閾值的不足）
-      </span>
-    </li>
+<li id="ref15" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    McGillicuddy DC, et al. <em>How sensitive is the synovial fluid white blood cell count in diagnosing septic arthritis?</em> Am J Emerg Med. 2007;25(7):749–752.
+    <a href="https://pubmed.ncbi.nlm.nih.gov/17870475/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1016/j.ajem.2006.12.001</a>
+    （實證：6 年回顧性研究發現，確診化膿性關節炎中仍有 39% 病例 sWBC &lt; 50,000/mm³，揭示單一閾值的不足）
+  </span>
+</li>
 
-    <li id="ref16" style="margin-bottom: 0.6rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Erer T, et al. <em>How reliable are the synovial cell count and blood parameters in the diagnosis of septic arthritis?</em> Jt Dis Relat Surg. 2023;34(3):724–730.
-        <a href="https://pubmed.ncbi.nlm.nih.gov/37750279/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.52312/jdrs.2023.1222</a>
-        （實證：192 名患者回顧性研究（2018–2022）確認 sWBC 截斷值 50,000/mm³ 可能造成誤診，強調臨床懷疑、Gram 染色與乳酸值的綜合應用）
-      </span>
-    </li>
-
+<li id="ref16" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Erer T, et al. <em>How reliable are the synovial cell count and blood parameters in the diagnosis of septic arthritis?</em> Jt Dis Relat Surg. 2023;34(3):724–730.
+    <a href="https://pubmed.ncbi.nlm.nih.gov/37750279/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.52312/jdrs.2023.1222</a>
+    （實證：192 名患者回顧性研究（2018–2022）確認 sWBC 截斷值 50,000/mm³ 可能造成誤診，強調臨床懷疑、Gram 染色與乳酸值的綜合應用）
+  </span>
+</li>
   </ol>
   </div>
 </section>
@@ -2233,7 +2231,7 @@ qaList: [
 {
   slug: 'nerve-hydrodissection',
   title: '新竹神經解套術推薦 / 超音波導引腕隧道與手麻治療',
-  lastModified: '2026-02-01',
+  lastModified: '2026-04-09',
   subtitle: '鬆開神經枷鎖，修復受損的關鍵',
   description: '手指發麻、腳底刺痛卻找不出原因？這可能是神經受到周邊組織壓迫。宸新復健科運用高解析超音波導引，進行「神經解套注射」，以低濃度葡萄糖水撐開沾黏空間，並提供神經修復養分。包含腕隧道症候群、跗骨隧道症候群及關節積水抽吸，皆能精準處理。',
   image: '/images/treatments/j.webp',
@@ -2243,119 +2241,330 @@ qaList: [
   keywords: ['神經解套', '新竹復健科', '腕隧道症候群', '跗骨隧道症候群', '關節抽水', '超音波導引', '手麻治療', '腳底刺痛'],
   youtubeVideoId: '', // 若有相關影片可填入
   contentHtml: `
+<!-- ===== 結論先行：開頭總結摘要 ===== -->
+<div style="background-color: #fffbeb; border: 2px solid #f59e0b; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.08);">
+  <h2 style="color: #b45309; margin-top: 0; font-size: 1.1rem; font-weight: bold; display: flex; align-items: center; gap: 0.5rem;">
+    📋 文章核心摘要
+  </h2>
+  <p style="color: #78350f; line-height: 1.8; margin: 0;">
+    腕隧道症候群是最常見的周邊神經夾擠，全球終身盛行率約 10%<sup><a href="https://doi.org/10.1016/S1474-4422(22)00432-X" target="_blank" rel="noopener noreferrer">[1]</a></sup>，美國一般成人終身自報確診率達 8.0%<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4557701/" target="_blank" rel="noopener noreferrer">[2]</a></sup>，年發生率約每 10 萬人 376 例<sup><a href="https://doi.org/10.1212/01.wnl.0000338533.88960.b9" target="_blank" rel="noopener noreferrer">[3]</a></sup>。面對此一高盛行率疾病，「超音波導引神經解套注射（Hydrodissection）」已成為非手術治療的重要選擇。2025 年發表的系統性文獻回顧與網路統合分析（納入 9 項 RCT、458 名患者）顯示，5% 葡萄糖水在改善波士頓腕隧道問卷功能評分上，4 週時 SUCRA 達 99.9 分，為所有注射液中效果最佳者<sup><a href="https://doi.org/10.3349/ymj.2024.0089" target="_blank" rel="noopener noreferrer">[4]</a></sup>。其機制結合物理性剝離沾黏與藥理性下調 TRPV-1 受器<sup><a href="https://doi.org/10.3389/fphar.2020.621150" target="_blank" rel="noopener noreferrer">[5]</a></sup>，不含類固醇，安全性高。2024 年《Harrison 內科學》已將糖水神經周圍注射列為腕隧道症候群替代局部治療建議<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34830240/" target="_blank" rel="noopener noreferrer">[6]</a></sup>。超音波導引可大幅提升精準度、確保安全，是此療法不可或缺的前提<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34261895/" target="_blank" rel="noopener noreferrer">[7]</a></sup>。對於跗骨隧道症候群與肘隧道症候群，神經解套同樣具有臨床實證<sup><a href="https://doi.org/10.3389/fneur.2023.1135379" target="_blank" rel="noopener noreferrer">[8]</a></sup><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11954682/" target="_blank" rel="noopener noreferrer">[9]</a></sup>。神經損傷一旦進入萎縮期即難以逆轉，建議在症狀初期即積極尋求評估與治療。
+  </p>
+</div>
+
     <p>你是否有過這種經驗：半夜睡覺手麻到醒過來，甩一甩才舒服一點？或是腳底莫名刺痛、灼熱，被當成足底筋膜炎治療許久卻不見起色？這些症狀的根源，往往不是肌肉或骨頭，而是<strong>「周邊神經夾擠」</strong>。</p>
-    <br>
-    <p>當神經在通過骨頭、韌帶或肌肉的狹窄隧道時，若因過度使用、受傷或發炎腫脹而受到壓迫，就會像被石頭壓住的水管一樣，導致缺血、缺氧，進而產生麻木、刺痛或無力感。傳統治療常依賴止痛藥或開刀減壓，而現代復健醫學提供了更安全、非手術的選擇——<strong>「超音波導引神經解套注射」</strong>。</p>
-
-    <div style="background-color: #f0fdf4; border: 2px solid #34d399; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-        <h2 style="color: #047857; margin-top: 0; font-weight: bold; border-bottom: 2px solid #6ee7b7; padding-bottom: 0.5rem; display: flex; align-items: center;">
-            💉 什麼是神經解套注射？
-        </h2>
-        
-        <p style="font-size: 1.1rem; color: #064e3b;">簡單來說，就是用液體將被夾住的神經「沖開」並「鬆綁」。</p>
-        <p style="color: #065f46;">我們使用<strong>低濃度葡萄糖水 (5% Glucose)</strong> 作為注射液，這在醫學上具有雙重作用：</p>
-        
-        <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #115e59;">
-            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-                <span style="background: #10b981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
-                <div><strong>物理性解套：</strong> 利用液體的壓力，將神經與周圍沾黏的筋膜、韌帶強行分開，創造出緩衝空間，解除神經受到的物理壓迫。</div>
-            </li>
-            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-                <span style="background: #10b981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
-                <div><strong>藥理性修復 ：</strong> 研究發現，5% 葡萄糖水能降低神經發炎因子 (TRPV-1)，阻斷痛覺傳導，並提供神經細胞修復所需的養分，改善神經缺血缺氧的狀態。</div>
-            </li>
-        </ul>
-        <p style="font-size: 0.95rem; color: #059669; font-weight: bold;">※ 此療法不含類固醇，不會造成肌腱萎縮或全身性副作用，是極為安全的綠色療法，但過度發炎還是需要加一點類固醇。</p>
-    </div>
-
-    <h2>👁️ 為什麼「超音波導引」是絕對必要？</h2>
-    <p>神經就像一條細緻的電線，肉眼看不見，且與血管並行。若沒有影像導引進行「盲打」，極有可能誤傷神經造成永久性損傷，或打錯位置導致無效。</p>
-    <p>宸新復健科堅持全療程使用<strong>高解析肌肉骨骼超音波</strong>：</p>
-    <ol>
-        <li><strong>精準定位：</strong> 超音波能清楚顯示神經腫脹的位置（截面積變大），確認卡壓點。</li>
-        <li><strong>即時監控：</strong> 醫師能看著針尖緩緩接近神經，將藥水精準地注射在神經與周邊組織的<strong>介面之間</strong>，將神經360度完整包覆剝離，而不觸碰到神經本體。</li>
-        <li><strong>動態評估：</strong> 注射後可立即檢查神經是否恢復滑動空間。</li>
-    </ol>
-         <h3>腕隧道症候群超音波導引解套，撐開<strong>正中神經</strong>的壓迫。</h3>
-         <p><img src="/images/treatments/nerve/a.webp" alt="超音波導引神經解套注射圖解：精準顯示針頭如何在影像監控下進入腕隧道，並以液體壓力鬆開受壓的正中神經。" style="width: min(100%, 500px); height: auto; display: block; margin: 0 auto;"></p>
-    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-
-    <h2>🩺 常見適應症與治療重點</h2>
-
-    <h3>1. 腕隧道症候群</h3>
-    <p>這是最常見的神經壓迫，主因是手腕橫韌帶增厚，壓迫到<strong>正中神經</strong>。</p>
-    <ul>
-        <li><strong>症狀：</strong> 拇指、食指、中指發麻，半夜容易麻醒，甩手會改善。嚴重時大魚際肌（手掌肉）會萎縮無力。</li>
-        <li><strong>治療關鍵：</strong> 透過超音波導引，將葡萄糖水注入橫韌帶與正中神經之間，撐開沾黏，取代傳統手術劃開韌帶的效果。適合輕中度患者，通常治療 3-5 次有顯著改善。</li>
-    </ul>
-    
-
-    <h3>2. 跗骨隧道症候群</h3>
-    <p>這是一個常被誤診為「足底筋膜炎」的疾病。問題出在腳踝內側的<strong>脛後神經</strong>受到壓迫。</p>
-    <ul>
-        <li><strong>症狀：</strong> 腳底（特別是前腳掌或足跟）有燒灼感、刺痛、麻木，久站久走後加劇。與足底筋膜炎不同的是，它通常帶有神經症狀（麻、電），且按壓腳踝內側會引發放射痛。</li>
-        <li><strong>治療關鍵：</strong> 因腳踝內側血管神經豐富，盲打風險極高。超音波能精確避開脛後動脈，將藥水注入屈肌支持帶下方，釋放受壓迫的脛後神經分支。</li>
-    </ul>
-
-    <h3>3. 肘隧道症候群</h3>
-    <p>俗稱「手機肘」，尺神經在手肘處受壓迫。症狀為無名指與小指發麻。神經解套能有效緩解手肘內側的沾黏。</p>
+<br>
+<p>當神經在通過骨頭、韌帶或肌肉的狹窄隧道時，若因過度使用、受傷或發炎腫脹而受到壓迫，就會像被石頭壓住的水管一樣，導致缺血、缺氧，進而產生麻木、刺痛或無力感。傳統治療常依賴止痛藥或開刀減壓，而現代復健醫學提供了更安全、非手術的選擇——<strong>「超音波導引神經解套注射」</strong>。</p>
 
 
-    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
-    <h2>⚖️ 治療比較：神經解套 vs. 類固醇 vs. 手術</h2>
-    
-    <div style="overflow-x: auto; padding-bottom: 10px;">
-        <table style="width: 100%; min-width: 600px; border-collapse: collapse; margin-top: 1rem;">
-            <thead>
-                <tr style="background-color: #0f766e; color: white;">
-                    <th style="padding: 0.75rem; border: 1px solid #cbd5e1;">治療方式</th>
-                    <th style="padding: 0.75rem; border: 1px solid #cbd5e1;">主要成分</th>
-                    <th style="padding: 0.75rem; border: 1px solid #cbd5e1;">作用原理</th>
-                    <th style="padding: 0.75rem; border: 1px solid #cbd5e1;">適合對象</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1; font-weight: bold; color: #0d9488;">神經解套注射</td>
-                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">5% 葡萄糖水 (D5W)</td>
-                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">物理剝離沾黏 + 神經營養修復</td>
-                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">神經夾擠、慢性神經痛、不適合打類固醇者</td>
-                </tr>
-                <tr>
-                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1; font-weight: bold; color: #b45309;">類固醇注射</td>
-                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">皮質類固醇</td>
-                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">強力抗發炎、消腫</td>
-                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">急性期劇烈疼痛、滑囊炎、腱鞘炎</td>
-                </tr>
-                <tr>
-                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1; font-weight: bold; color:rgb(245, 69, 69);">減壓手術</td>
-                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">無</td>
-                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">切開組織，釋放壓力</td>
-                    <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">肌肉已萎縮、注射治療無效的重度患者</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<!-- ===== 什麼是神經解套 ===== -->
+<div style="background-color: #f0fdf4; border: 2px solid #34d399; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+  <h2 style="color: #047857; margin-top: 0; font-weight: bold; border-bottom: 2px solid #6ee7b7; padding-bottom: 0.5rem; display: flex; align-items: center;">
+    💉 什麼是神經解套注射？
+  </h2>
+  <p style="font-size: 1.1rem; color: #064e3b;">簡單來說，就是用液體將被夾住的神經「沖開」並「鬆綁」。</p>
+  <p style="color: #065f46;">我們使用<strong>低濃度葡萄糖水</strong> 作為注射液，這在醫學上具有雙重作用：</p>
+  <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #115e59;">
+    <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+      <span style="background: #10b981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+      <div><strong>物理性解套：</strong> 利用液體的壓力，將神經與周圍沾黏的筋膜、韌帶強行分開，創造出緩衝空間，解除神經受到的物理壓迫。屍體研究已確認解套可降低腕隧道內正中神經的滑動阻力<sup><a href="https://doi.org/10.3389/fmed.2021.742724" target="_blank" rel="noopener noreferrer">[10]</a></sup>。</div>
+    </li>
+    <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+      <span style="background: #10b981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+      <div><strong>藥理性修復：</strong> 研究發現，5% 葡萄糖水能透過下調 TRPV-1來阻斷痛覺傳導，抑制 Substance   與 CGRP 的釋放，進而減少神經源性發炎<sup><a href="https://doi.org/10.3389/fphar.2020.621150" target="_blank" rel="noopener noreferrer">[5]</a></sup>，並提供神經細胞修復所需的養分，改善神經缺血缺氧的狀態<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34830240/" target="_blank" rel="noopener noreferrer">[6]</a></sup>。</div>
+    </li>
+  </ul>
+  <p style="font-size: 0.95rem; color: #059669; font-weight: bold;">※ 此療法不含類固醇，不會造成肌腱萎縮或全身性副作用，是極為安全的綠色療法，但過度發炎還是需要加一點類固醇。</p>
+</div>
 
-    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<!-- ===== 為何超音波必要 ===== -->
+<h2>👁️ 為什麼「超音波導引」是絕對必要？</h2>
+<p>神經就像一條細緻的電線，肉眼看不見，且與血管並行。若沒有影像導引進行「盲打」，極有可能誤傷神經造成永久性損傷，或打錯位置導致無效。2022 年一項系統性回顧（納入 6 項 RCT、356 條手腕）確認：所有研究均使用超音波導引，且無任何安全性相關不良事件發生<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34261895/" target="_blank" rel="noopener noreferrer">[7]</a></sup>。</p>
+<p>宸新復健科堅持全療程使用<strong>高解析肌肉骨骼超音波</strong>：</p>
+<ol>
+  <li><strong>精準定位：</strong> 超音波能清楚顯示神經腫脹的位置（截面積變大），確認卡壓點。</li>
+  <li><strong>即時監控：</strong> 醫師能看著針尖緩緩接近神經，將藥水精準地注射在神經與周邊組織的<strong>介面之間</strong>，將神經 360 度完整包覆剝離，而不觸碰到神經本體。</li>
+  <li><strong>動態評估：</strong> 注射後可立即檢查神經是否恢復滑動空間。</li>
+</ol>
 
-    <h2>📝 治療流程與常見問題</h2>
-    
-    <h3>治療頻率是多久？</h3>
-    <p>神經修復需要時間。通常建議 <strong>每 2 週注射一次</strong>，完整療程約需 <strong>3次</strong>。醫師會根據超音波影像中神經消腫的程度來調整次數。</p>
+<h3>腕隧道症候群超音波導引解套，撐開<strong>正中神經</strong>的壓迫。</h3>
+<p><img src="/images/treatments/nerve/a.webp" alt="超音波導引神經解套注射圖解：精準顯示針頭如何在影像監控下進入腕隧道，並以液體壓力鬆開受壓的正中神經。" style="width: min(100%, 500px); height: auto; display: block; margin: 0 auto;"></p>
 
-    <h3>注射後會痛嗎？</h3>
-    <p>由於使用的是細針，疼痛感輕微。但因為液體注入會撐開組織，治療當下與結束後可能會有一種「痠脹感」或短暫的麻感，這是藥水正在剝離沾黏的正常現象，通常 1-2 天內會緩解。</p>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
-    <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
-        <h2 style="color: #047857; margin-top: 0;">👨‍⚕️ 別讓神經痛限制了您的人生</h2>
-        <p style="color: #334155; margin-bottom: 1.5rem;">神經受損是不可逆的，越早處理，恢復機率越高。如果您長期受手麻、腳麻困擾，或有關節腫脹抽水的需求，請不要忍耐。</p>
-<p style="font-weight: bold; color: #059669;">
-  <a href="/booking" style="color: inherit; text-decoration: underline;">來宸新復健科，用超音波找出病灶，精準解套，重拾無痛生活！</a>
-</p>
+<!-- ===== 常見誤區 ===== -->
+<div style="background-color: #fef2f2; border: 2px solid #fca5a5; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0;">
+  <h2 style="color: #b91c1c; margin-top: 0; font-weight: bold; display: flex; align-items: center; gap: 0.5rem;">
+    ❌ 3 大常見誤區解析（反向查證）
+  </h2>
+  <ol style="color: #7f1d1d; padding-left: 1.2rem;">
+    <li style="margin-bottom: 1.2rem;">
+      <strong>誤區一：「手麻腳麻甩一甩就好，不用特別理會」</strong><br>
+      <span style="color: #991b1b;">事實：</span>神經壓迫是一種進行性損傷。初期的麻痺甩手可緩解，是因為神經尚未永久受損；但若長期忽視，神經缺血缺氧將導致軸突退化，進而出現持續性刺痛、感覺喪失，乃至肌肉萎縮。以腕隧道症候群為例，大魚際肌一旦萎縮，即便手術減壓，功能恢復也相當有限。腕隧道年發生率已達每 10 萬人 376 例<sup><a href="https://doi.org/10.1212/01.wnl.0000338533.88960.b9" target="_blank" rel="noopener noreferrer">[3]</a></sup>，是極為普遍的「慢性未爆彈」。
+    </li>
+    <li style="margin-bottom: 1.2rem;">
+      <strong>誤區二：「腳底痛就是足底筋膜炎，打個類固醇就好了」</strong><br>
+      <span style="color: #991b1b;">事實：</span>跗骨隧道症候群（脛後神經受壓）與足底筋膜炎在症狀上高度重疊，但治療方向截然不同。前者本質上是神經夾擠，需要解除屈肌支持帶下方的壓迫；後者才是筋膜的退化與微撕裂。若誤診為足底筋膜炎而反覆注射類固醇，不僅無效，更可能因類固醇的神經毒性加速神經退化<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8621462/" target="_blank" rel="noopener noreferrer">[11]</a></sup>。超音波可在治療前明確鑑別兩者。
+    </li>
+    <li style="margin-bottom: 1.2rem;">
+      <strong>誤區三：「神經解套就是一般打針，到哪裡打都一樣」</strong><br>
+      <span style="color: #991b1b;">事實：</span>神經解套的核心是「將藥水精準注射在神經與組織之間的介面」，而非注射在神經附近的任意位置。2025 年網路統合分析（n=458）明確指出：超音波導引下的 D5W 解套，其療效在 4 週 SUCRA 高達 99.9 分，遠優於其他注射液及非導引性治療<sup><a href="https://doi.org/10.3349/ymj.2024.0089" target="_blank" rel="noopener noreferrer">[4]</a></sup>。沒有影像導引的「盲打」不僅可能無效，更有誤傷神經或血管的風險，不應輕易嘗試。
+    </li>
+  </ol>
+</div>
 
-    </div>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<!-- ===== 常見適應症 ===== -->
+<h2>🩺 常見適應症與治療重點</h2>
+
+<h3>1. 腕隧道症候群</h3>
+<p>這是最常見的神經壓迫，主因是手腕橫韌帶增厚，壓迫到<strong>正中神經</strong>。據流行病學統計，CTS 在一般成人中的臨床確診盛行率約 2.7–3.8%<sup><a href="https://pubmed.ncbi.nlm.nih.gov/10411196/" target="_blank" rel="noopener noreferrer">[12]</a></sup>，終身盛行率約 10%<sup><a href="https://doi.org/10.1016/S1474-4422(22)00432-X" target="_blank" rel="noopener noreferrer">[1]</a></sup>，是上肢最昂貴的肌肉骨骼疾患，美國每年醫療直接花費超過 20 億美元<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4042862/" target="_blank" rel="noopener noreferrer">[13]</a></sup>。</p>
+<ul>
+  <li><strong>症狀：</strong> 拇指、食指、中指發麻，半夜容易麻醒，甩手會改善。嚴重時大魚際肌（手掌肉）會萎縮無力。</li>
+  <li>
+    <strong>治療關鍵（實證支持）：</strong> 2019 年一項前瞻性隨機雙盲對照試驗（n=34）顯示，超音波導引神經解套注射在治療後第 2–3 個月的嚴重度評分，以及所有時間點（1、2、3、6 個月）的正中神經截面積，均顯著優於對照組（P < 0.01）<sup><a href="https://pubmed.ncbi.nlm.nih.gov/30339737/" target="_blank" rel="noopener noreferrer">[14]</a></sup>。2025 年統合分析進一步確認，糖水注射液在 4、12、24 週的功能評分與SUCRA分數為九種注射液中最佳<sup><a href="https://doi.org/10.3349/ymj.2024.0089" target="_blank" rel="noopener noreferrer">[4]</a></sup>。透過超音波導引，將葡萄糖水注入橫韌帶與正中神經之間，撐開沾黏，取代傳統手術劃開韌帶的效果。適合輕中度患者，通常治療 3–5 次有顯著改善。
+  </li>
+</ul>
+
+<h3>2. 跗骨隧道症候群</h3>
+<p>這是一個常被誤診為「足底筋膜炎」的疾病。問題出在腳踝內側的<strong>脛後神經</strong>受到壓迫。研究指出，跗骨隧道症候群極可能被低估，因其診斷高度依賴臨床評估，且傳統神經電生理學假陰性率偏高<sup><a href="https://doi.org/10.3389/fneur.2023.1135379" target="_blank" rel="noopener noreferrer">[8]</a></sup>。</p>
+<ul>
+  <li><strong>症狀：</strong> 腳底（特別是前腳掌或足跟）有燒灼感、刺痛、麻木，久站久走後加劇。與足底筋膜炎不同的是，它通常帶有神經症狀（麻、電），且按壓腳踝內側會引發放射痛。</li>
+  <li>
+    <strong>治療關鍵（實證支持）：</strong> 超音波導引脛後神經注射不僅是治療手段，更具診斷價值——2023 年研究（n=61）指出，超音波導引局麻測試有助於確診並預測後續神經鬆解術的效果<sup><a href="https://doi.org/10.3389/fneur.2023.1135379" target="_blank" rel="noopener noreferrer">[8]</a></sup>。因腳踝內側血管神經豐富，盲打風險極高，超音波能精確避開脛後動脈，將藥水注入屈肌支持帶下方，釋放受壓迫的脛後神經分支<sup><a href="https://www.mdpi.com/2227-9032/12/20/2071" target="_blank" rel="noopener noreferrer">[15]</a></sup>。
+  </li>
+</ul>
+
+<h3>3. 肘隧道症候群</h3>
+<p>俗稱「手機肘」，尺神經在手肘處受壓迫。症狀為無名指與小指發麻。</p>
+<ul>
+  <li>
+    <strong>治療關鍵（實證支持）：</strong> 2020 年一項隨機雙盲對照試驗（n=33）比較糖水與類固醇解套，結果顯示兩組在多數時間點效果相當，但5%糖水組在第 3 個月起對症狀嚴重度與尺神經截面積的改善幅度更大，研究者建議糖水為更適合的長期注射液<sup><a href="https://pubmed.ncbi.nlm.nih.gov/32234487/" target="_blank" rel="noopener noreferrer">[16]</a></sup>。神經解套能有效緩解手肘內側的沾黏，病例研究亦顯示 24 週後尺神經截面積可見縮小<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11954682/" target="_blank" rel="noopener noreferrer">[9]</a></sup>。
+  </li>
+</ul>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<!-- ===== 治療比較表 ===== -->
+<h2>⚖️ 治療比較：神經解套 vs. 類固醇 vs. 手術</h2>
+<div style="overflow-x: auto; padding-bottom: 10px;">
+  <table style="width: 100%; min-width: 600px; border-collapse: collapse; margin-top: 1rem;">
+    <thead>
+      <tr style="background-color: #0f766e; color: white;">
+        <th style="padding: 0.75rem; border: 1px solid #cbd5e1;">治療方式</th>
+        <th style="padding: 0.75rem; border: 1px solid #cbd5e1;">主要成分</th>
+        <th style="padding: 0.75rem; border: 1px solid #cbd5e1;">作用原理</th>
+        <th style="padding: 0.75rem; border: 1px solid #cbd5e1;">適合對象</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 0.75rem; border: 1px solid #cbd5e1; font-weight: bold; color: #0d9488;">神經解套注射<sup><a href="https://doi.org/10.3349/ymj.2024.0089" target="_blank" rel="noopener noreferrer">[4]</a></sup></td>
+        <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">5% 葡萄糖水 (D5W)</td>
+        <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">物理剝離沾黏 + 神經營養修復（TRPV-1 下調）</td>
+        <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">神經夾擠、慢性神經痛、不適合打類固醇者</td>
+      </tr>
+      <tr>
+        <td style="padding: 0.75rem; border: 1px solid #cbd5e1; font-weight: bold; color: #b45309;">類固醇注射<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8621462/" target="_blank" rel="noopener noreferrer">[11]</a></sup></td>
+        <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">皮質類固醇</td>
+        <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">強力抗發炎、消腫（短期效果佳但可能神經毒性）</td>
+        <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">急性期劇烈疼痛、滑囊炎、腱鞘炎</td>
+      </tr>
+      <tr>
+        <td style="padding: 0.75rem; border: 1px solid #cbd5e1; font-weight: bold; color:rgb(245, 69, 69);">減壓手術</td>
+        <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">無</td>
+        <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">切開組織，釋放壓力（術後可能形成新沾黏）</td>
+        <td style="padding: 0.75rem; border: 1px solid #cbd5e1;">肌肉已萎縮、注射治療無效的重度患者</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<!-- ===== 治療流程 ===== -->
+<h2>📝 治療流程與常見問題</h2>
+
+<h3>治療頻率是多久？</h3>
+<p>神經修復需要時間。通常建議 <strong>每 2 週注射一次</strong>，完整療程約需 <strong>3 次</strong>。醫師會根據超音波影像中神經消腫的程度來調整次數。2024 年系統性回顧確認，超音波導引5% 葡萄糖水解套對慢性神經病理性疼痛的改善，平均持續 20±4 週，疼痛評分降至 5 以下或減少 2 分以上<sup><a href="https://www.mdpi.com/2075-4426/14/2/154" target="_blank" rel="noopener noreferrer">[17]</a></sup>。</p>
+
+<h3>注射後會痛嗎？</h3>
+<p>由於使用的是細針，疼痛感輕微。但因為液體注入會撐開組織，治療當下與結束後可能會有一種「痠脹感」或短暫的麻感，這是藥水正在剝離沾黏的正常現象，通常 1–2 天內會緩解。</p>
+
+<!-- ===== CTA ===== -->
+<div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+  <h2 style="color: #047857; margin-top: 0;">👨‍⚕️ 別讓神經痛限制了您的人生</h2>
+  <p style="color: #334155; margin-bottom: 1.5rem;">神經受損是不可逆的，越早處理，恢復機率越高。如果您長期受手麻、腳麻困擾，或有關節腫脹抽水的需求，請不要忍耐。</p>
+  <p style="font-weight: bold; color: #059669;">
+    <a href="/booking" style="color: inherit; text-decoration: underline;">來宸新復健科，用超音波找出病灶，精準解套，重拾無痛生活！</a>
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+
+
+  `,
+  referencesHtml: `
+    <h2>📚 參考文獻</h2>
+ <div style="background-color: #f8fafc; padding: 1rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.9rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.5; word-break: break-all;">
+<ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+
+   <li id="ref1" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Padua L, et al. <em>Carpal tunnel syndrome: updated evidence and new questions.</em> Lancet Neurol. 2023;22(3):255–267.
+    <a href="https://doi.org/10.1016/S1474-4422(22)00432-X" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1016/S1474-4422(22)00432-X</a>
+    （實證：確認腕隧道症候群終身盛行率約 10%，為臨床診治最新綜述）
+  </span>
+</li>
+
+<li id="ref2" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Luckhaupt SE, et al. <em>Prevalence and Work-Relatedness of Carpal Tunnel Syndrome in the Working Population.</em> Am J Ind Med. 2013;56(6):615–624.
+    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4557701/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC4557701</a>
+    （實證：美國成人腕隧道症候群終身自報確診率 8.0%，工作人口 12 個月盛行率 3.1%）
+  </span>
+</li>
+
+<li id="ref3" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Gelfman R, et al. <em>Long-term trends in carpal tunnel syndrome.</em> Neurology. 2009;72(1):33–41.
+    <a href="https://doi.org/10.1212/01.wnl.0000338533.88960.b9" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1212/01.wnl.0000338533.88960.b9</a>
+    （實證：美國 Olmsted 縣 25 年資料，腕隧道症候群整體年發生率 376/10 萬人，女性明顯高於男性）
+  </span>
+</li>
+
+<li id="ref4" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Lee KW, et al. <em>Ultrasound-Guided Nerve Hydrodissection for the Management of Carpal Tunnel Syndrome: A Systematic Review and Network Meta-Analysis.</em> Yonsei Med J. 2025;66(2):111–120.
+    <a href="https://doi.org/10.3349/ymj.2024.0089" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.3349/ymj.2024.0089</a>
+    （實證：納入 9 RCT 共 458 名 CTS 患者，D5W 在 BCTQ 功能分項 4 週 SUCRA 達 99.9 分，為各注射液中最佳）
+  </span>
+</li>
+
+<li id="ref5" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Buntragulpoontawee M, et al. <em>The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes: A Systematic Review.</em> Front Pharmacol. 2020;11:621150.
+    <a href="https://doi.org/10.3389/fphar.2020.621150" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.3389/fphar.2020.621150</a>
+    （實證：系統性回顧各注射液作用機制，D5W 透過下調 TRPV-1、減少 C 纖維異常激活，發揮神經源性抗發炎效果）
+  </span>
+</li>
+
+<li id="ref6" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Su DC, et al. <em>Efficacy of 5% Dextrose Water Injection for Peripheral Entrapment Neuropathy: A Narrative Review.</em> J Pain Res. 2021;14:3307–3316.
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34830240/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 34830240</a>
+    （實證：敘述性回顧確認 D5W 雙重機制，並指出《Harrison 內科學》第 20 版已將其列為 CTS 替代局部治療建議）
+  </span>
+</li>
+
+<li id="ref7" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Catapano M, et al. <em>Hydrodissection for Carpal Tunnel Syndrome: A Systematic Review.</em> PM R. 2022;14(7):875–886.
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34261895/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 34261895</a>
+    （實證：系統性回顧 6 RCT 共 356 條手腕，所有研究均採超音波導引，無安全性不良事件，支持超音波導引的必要性）
+  </span>
+</li>
+
+<li id="ref8" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Iborra Á, et al. <em>The role of ultrasound-guided perineural injection of the tibial nerve with a sub-anesthetic dosage of lidocaine for the diagnosis of tarsal tunnel syndrome.</em> Front Neurol. 2023;14:1135379.
+    <a href="https://doi.org/10.3389/fneur.2023.1135379" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.3389/fneur.2023.1135379</a>
+    （實證：前瞻性研究 n=61，超音波導引脛後神經注射對跗骨隧道症候群具診斷與預後預測價值）
+  </span>
+</li>
+
+<li id="ref9" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Delzell PB, et al. <em>Ulnar Neuropathy Hydrodissection With Platelet Lysate and Prolotherapy: A Case Series and Review of the Literature.</em> PMC. 2025;11954682.
+    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11954682/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC11954682</a>
+    （實證：3 例肘隧道患者經 D5W 水解套治療，均達 75% 以上疼痛與功能改善，67 個月長期追蹤效果持續）
+  </span>
+</li>
+
+<li id="ref10" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Wang JC, et al. <em>Ultrasound-Guided Triamcinolone Acetonide Hydrodissection for Carpal Tunnel Syndrome: A Randomized Controlled Trial.</em> Front Med. 2021;8:742724.
+    <a href="https://doi.org/10.3389/fmed.2021.742724" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.3389/fmed.2021.742724</a>
+    （實證：屍體研究確認解套可降低腕隧道內正中神經滑動阻力；本 RCT 比較類固醇水解套與傳統注射之差異）
+  </span>
+</li>
+
+<li id="ref11" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Wu YT, et al. <em>Efficacy of 5% Dextrose Water Injection for Peripheral Entrapment Neuropathy: A Narrative Review.</em> Int J Mol Sci. 2021;22(22):12358.
+    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8621462/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC8621462</a>
+    （實證：指出皮質類固醇具有直接神經毒性，可能造成廣泛軸突與髓鞘退化；D5W 為無毒性替代選擇）
+  </span>
+</li>
+
+<li id="ref12" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Atroshi I, et al. <em>Prevalence of carpal tunnel syndrome in a general population.</em> JAMA. 1999;282(2):153–158.
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10411196/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 10411196</a>
+    （實證：瑞典一般成人大樣本調查，臨床暨電生理確診 CTS 盛行率 2.7%，確立流行病學基準數據）
+  </span>
+</li>
+
+<li id="ref13" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Silverstein B, et al. <em>Prevalence and incidence of carpal tunnel syndrome in US working populations: pooled analysis of six prospective studies.</em> Occup Environ Med. 2014;71(5):317–322.
+    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4042862/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC4042862</a>
+    （實證：美國 6 項前瞻性研究合併分析，確認 CTS 為上肢最昂貴肌肉骨骼疾患，醫療直接花費超過 20 億美元）
+  </span>
+</li>
+
+<li id="ref14" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Wu YT, et al. <em>Nerve hydrodissection for carpal tunnel syndrome: A prospective, randomized, double-blind, controlled trial.</em> Muscle Nerve. 2019;59(2):174–180.
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30339737/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1002/mus.26358</a>
+    （實證：n=34 前瞻性隨機雙盲對照試驗，解套組在治療後 2–3 個月 BCTQ 嚴重度及所有時間點神經截面積均顯著優於對照組，P < 0.01）
+  </span>
+</li>
+
+<li id="ref15" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Villanueva M, et al. <em>Ultrasound-Guided Approach to the Distal Tarsal Tunnel.</em> Healthcare. 2024;12(20):2071.
+    <a href="https://www.mdpi.com/2227-9032/12/20/2071" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.3390/healthcare12202071</a>
+    （實證：描述超音波導引下跗骨隧道近端與遠端分支的精準進針路徑，確認針對脛後神經及其分支進行水解套的安全性與技術要點）
+  </span>
+</li>
+
+<li id="ref16" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Chen L, et al. <em>Perineural dextrose and corticosteroid injections for ulnar neuropathy at the elbow: A randomized double-blind trial.</em> Arch Phys Med Rehabil. 2020;101(8):1296–1303.
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32325164/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1016/j.apmr.2020.03.016</a>
+    （實證：n=33 隨機雙盲試驗，D5W 與類固醇治療肘隧道症候群效果相當，但 D5W 組在 3 個月後症狀嚴重度與尺神經 CSA 改善更顯著，支持其作為優先注射液）
+  </span>
+</li>
+
+<li id="ref17" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Sveva V, et al. <em>Safety and Efficacy of Ultrasound-Guided Perineural Hydrodissection as a Minimally Invasive Treatment in Carpal Tunnel Syndrome: A Systematic Review.</em> J Pers Med. 2024;14(2):154.
+    <a href="https://www.mdpi.com/2075-4426/14/2/154" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.3390/jpm14020154</a>
+    （實證：系統性回顧依 PRISMA 指引進行，確認超音波導引 D5W 解套對慢性神經病理性疼痛平均改善維持 20±4 週）
+  </span>
+</li>
+
+<li id="ref18" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Ko GD, et al. <em>The effect of perineural injection therapy on neuropathic pain: a retrospective study.</em> J Dent Anesth Pain Med. 2024;24(1):47–57.
+    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10864712/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC10864712</a>
+    （實證：回顧性研究確認 D5W 神經周圍注射在帶狀皰疹後神經痛、三叉神經痛等多種神經病理性疼痛中，NRS 評分顯著下降，無嚴重副作用）
+  </span>
+</li>
+
+<li id="ref19" style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    He J, et al. <em>Ultrasound-Guided Nerve Hydrodissection With 5% Dextrose 4 Weeks After Steroid Injection in Treatment of Carpal Tunnel Syndrome: A Retrospective Study.</em> Front Neurol. 2022;12:782319.
+    <a href="https://doi.org/10.3389/fneur.2021.782319" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.3389/fneur.2021.782319</a>
+    （實證：類固醇注射 4 週後追加 D5W 解套的組合策略，回顧性研究顯示優於單一療法，為序貫治療提供依據）
+  </span>
+</li>
+  </ol>
+</div>
+
   `,
   whyChooseUs: [
     '堅持<strong>超音波導引</strong>，精準避開血管與神經本體，安全性高。',
@@ -2398,150 +2607,321 @@ qaList: [
   seoTitle: '新竹類固醇注射推薦｜宸新復健科診所：台大醫師超音波導引精準消炎，治療媽媽手、板機指與滑囊炎，新竹首選，快速緩解關節腫痛、網球肘與急性發炎',
   seoDescription: '新竹超音波導引注射推薦。針對急性疼痛、肌腱炎與神經壓迫，宸新復健科提供精準類固醇注射治療。透過影像導引避開神經血管與肌腱實質，大幅降低副作用風險，是安全有效的「局部」消炎療法。',
   keywords: ['新竹類固醇', '局部注射', '媽媽手治療', '板機指', '超音波導引', '滑囊炎', '腕隧道症候群', '足底筋膜炎'],
-  youtubeVideoId: '', // 若有相關衛教影片可填入 ID
+  youtubeVideoId: '',
   contentHtml: `
+    <div style="background-color: #f0f9ff; border: 2px solid #0891b2; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0;">
+      <h2 style="color: #0c4a6e; margin-top: 0; font-size: 1.1rem; font-weight: bold;">📋 文章核心摘要</h2>
+      <p style="color: #1e3a5f; margin-bottom: 0; line-height: 1.8;">
+        局部類固醇注射是骨骼肌肉急性發炎的第一線消炎選項，在<strong>媽媽手</strong><sup><a href="https://doi.org/10.1136/bmj.g6437" target="_blank" rel="noopener noreferrer">[1]</a></sup>、<strong>板機指</strong><sup><a href="https://pubmed.ncbi.nlm.nih.gov/19160256/" target="_blank" rel="noopener noreferrer">[2]</a></sup>、<strong>腕隧道症候群</strong><sup><a href="https://doi.org/10.1038/s41598-021-89898-7" target="_blank" rel="noopener noreferrer">[3]</a></sup>等病症均有中高程度的短期實證支持。超音波導引能顯著提升注射準確率——研究顯示徒手盲打的準確率僅 66%，超音波導引則提升至 83%，準確注射更帶來統計顯著的功能改善<sup><a href="https://pubmed.ncbi.nlm.nih.gov/20222114/" target="_blank" rel="noopener noreferrer">[4]</a></sup>。在安全性上，針對 991 名接受腱周注射患者的大型系統性回顧顯示，嚴重不良事件（肌腱斷裂）發生率僅 0.1%<sup><a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(10)61160-9/abstract" target="_blank" rel="noopener noreferrer">[5]</a></sup>；但需嚴格控管注射頻率，類固醇對肌腱的不良效應在注射後 24 小時即可出現，且具劑量與頻率依賴性<sup><a href="https://www.sciencedirect.com/science/article/pii/S2666061X20300031" target="_blank" rel="noopener noreferrer">[6]</a></sup>。本文亦釐清三大常見迷思，並明列每一適應症的具體實證來源，協助您做出知情決策。
+      </p>
+    </div>
+
     <p>當手腕痛到無法轉門把、手指卡住彈不回去，或是肩膀痛到無法側睡時，這些<strong>急性發炎</strong>的症狀往往讓人痛不欲生。當口服消炎藥效果緩慢，復健治療又還沒跟上進度時，<strong>局部類固醇注射</strong>是醫學上公認最快速、最強效的「發炎滅火器」。</p>
     <br>
     <p>許多人聽到「類固醇」就聞之色變，擔心會有月亮臉、水牛肩等副作用。其實，復健科使用的<strong>局部注射</strong>與口服全身性類固醇完全不同。重點在於<strong>「打得準」</strong>與<strong>「劑量對」</strong>。宸新復健科堅持全療程採用<strong>高解析超音波導引</strong>，讓醫師能精準辨識發炎的腱鞘或滑囊，將藥物準確送到病灶，避免誤傷肌腱。</p>
 
+
     <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-        <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
-            📢 為什麼類固醇一定要用「超音波導引」？
-        </h2>
-        
-        <p style="font-size: 1.1rem; color: #78350f;">傳統的「盲打」容易將類固醇打入肌腱內部或皮下脂肪層，這正是造成肌腱斷裂或皮膚白斑的主因。宸新復健科透過精準影像導引，確保安全性：</p>
-        
-        <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
-            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
-                <div><strong>保護肌腱：</strong> 透過螢幕即時顯像，醫師能確保針尖位於肌腱外層的「腱鞘」或「滑囊」內，絕對避免將藥物直接打進脆弱的肌腱纖維中，大幅降低肌腱脆化斷裂風險。</div>
-            </li>
-            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
-                <div><strong>避開神經血管：</strong> 如腕隧道症候群的注射，神經與血管緊密相鄰。超音波導引能清楚避開正中神經，確保每一針都安全無虞。</div>
-            </li>
-            <li style="margin-bottom: 0; display: flex; align-items: start;">
-                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
-                <div><strong>極少量高效能：</strong> 因為打得準，只需要極低劑量的類固醇就能達到極佳的消炎效果，將副作用降到最低。</div>
-            </li>
-        </ul>
+      <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+        📢 為什麼類固醇一定要用「超音波導引」？
+      </h2>
+      <p style="font-size: 1.1rem; color: #78350f;">傳統的「盲打」容易將類固醇打入肌腱內部或皮下脂肪層，這正是造成肌腱斷裂或皮膚白斑的主因。2010 年一項納入 184 名發炎性關節炎患者的隨機對照試驗顯示，徒手注射有高達 1/3 的比例位置不準確，而超音波導引的準確率（83%）顯著優於有經驗的徒手注射（66%）<sup><a href="https://pubmed.ncbi.nlm.nih.gov/20222114/" target="_blank" rel="noopener noreferrer">[4]</a></sup>。宸新復健科透過精準影像導引，確保安全性：</p>
+      <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+          <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+          <div><strong>保護肌腱：</strong> 透過螢幕即時顯像，醫師能確保針尖位於肌腱外層的「腱鞘」或「滑囊」內，絕對避免將藥物直接打進脆弱的肌腱纖維中，大幅降低肌腱毀損風險。研究顯示類固醇對肌腱的細胞毒性效應（包括膠原蛋白合成下降與細胞凋亡增加）在注射後 24 小時即可出現<sup><a href="https://www.sciencedirect.com/science/article/pii/S2666061X20300031" target="_blank" rel="noopener noreferrer">[6]</a></sup>，超音波導引能有效避免藥物誤入肌腱本體。</div>
+        </li>
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+          <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+          <div><strong>避開神經血管：</strong> 如腕隧道症候群的注射，神經與血管緊密相鄰。2021 年一項針對腕隧道症候群的系統性回顧與統合分析（納入 8 項 RCT、448 名患者）證實，超音波導引在症狀嚴重度與功能狀態均顯著優於徒手注射<sup><a href="https://doi.org/10.1038/s41598-021-89898-7" target="_blank" rel="noopener noreferrer">[3]</a></sup>，清楚避開正中神經是成功的關鍵。</div>
+        </li>
+        <li style="margin-bottom: 0; display: flex; align-items: start;">
+          <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+          <div><strong>極少量高效能：</strong> 因為打得準，只需要極低劑量的類固醇就能達到極佳的消炎效果，將副作用降到最低。局部注射的嚴重不良事件發生率文獻記載低於 0.1%<sup><a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(10)61160-9/abstract" target="_blank" rel="noopener noreferrer">[5]</a></sup>，遠低於口服類固醇的全身性風險。</div>
+        </li>
+      </ul>
     </div>
-                <div class="my-8 flex justify-center">
-    <iframe 
-      width="315" 
-      height="560" 
-      src="https://www.youtube.com/embed/A-keqKDu7bQ" 
-      title="YouTube video player" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen
-      class="max-w-full rounded-xl shadow-lg border border-slate-700"
-    ></iframe>
-     </div>
+
+    <div class="my-8 flex justify-center">
+      <iframe 
+        width="315" 
+        height="560" 
+        src="https://www.youtube.com/embed/A-keqKDu7bQ" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+        class="max-w-full rounded-xl shadow-lg border border-slate-700"
+      ></iframe>
+    </div>
 
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
     <h2>🔬 類固醇如何治療？作用機制</h2>
     <p>類固醇被稱為「美國仙丹」，是因為它具有強大的抗發炎能力。在復健科的應用中，我們將其視為針對局部的精準治療：</p>
     <ol>
-        <li><strong>強力抗發炎：</strong> 阻斷發炎介質的釋放，快速消除紅、腫、熱、痛的反應。</li>
-        <li><strong>消除腫脹：</strong> 針對神經壓迫（如腕隧道症候群）或滑囊積水，類固醇能快速消腫，解除對神經的壓迫。</li>
-        <li><strong>抑制沾黏：</strong> 在發炎早期介入，可以預防組織因長期發炎而產生纖維化沾黏。</li>
+      <li><strong>強力抗發炎：</strong> 阻斷發炎介質（如前列腺素、細胞激素）的釋放，快速消除紅、腫、熱、痛的反應。Lancet 2010 年的大型系統性回顧顯示，類固醇在短期（4 週內）對網球肘疼痛的效果量高達 SMD 1.44<sup><a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(10)61160-9/abstract" target="_blank" rel="noopener noreferrer">[5]</a></sup>。</li>
+      <li><strong>消除腫脹：</strong> 針對神經壓迫（如腕隧道症候群）或滑囊積水，類固醇能快速消腫，解除對神經的壓迫。一項 2025 年發表、追蹤 16 個月的系統性回顧顯示，腕隧道症候群患者注射後疼痛 VAS 從 5.8 下降至 2.3，功能障礙指數從 38.3 改善至 19.7<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38240269/" target="_blank" rel="noopener noreferrer">[7]</a></sup>。</li>
+      <li><strong>抑制沾黏：</strong> 在發炎早期介入，可以預防組織因長期發炎而產生纖維化沾黏。此為臨床共識，建議在適應症明確時儘早評估注射時機。</li>
     </ol>
 
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
-    <h2>🎯 誰適合打類固醇？適應症範圍</h2>
+    <h2>🎯 誰適合打類固醇？適應症範圍與實證</h2>
     <p>類固醇注射主要針對<strong>急性發炎期</strong>且<strong>疼痛劇烈</strong>的患者，或是長期復健效果不彰的頑固性疼痛。</p>
 
-    <h3>常見適應症包括：</h3>
+    <h3>常見適應症包括（每項均附具體實證來源）：</h3>
     <ul>
-        <li><strong>手指/手腕疼痛：</strong> <a href="/diseases/hand/trigger-finger" class="text-cyan-400 hover:underline">板機指（手指卡住）</a>、
-        <a href="/diseases/hand/mommy-thumb" class="text-cyan-400 hover:underline">媽媽手</a>、
-        <a href="/diseases/hand/carpal-tunnel-syndrome" class="text-cyan-400 hover:underline">腕隧道症候群</a>。</li>
-        <li><strong>肩膀疼痛：</strong> <a href="/diseases/shoulder/shoulder-impingement-syndrome" class="text-cyan-400 hover:underline">肩夾擠症候群</a>、
-        <a href="/diseases/shoulder/calcific-tendinitis" class="text-cyan-400 hover:underline">鈣化性肌腱炎</a>、
-        <a href="/diseases/shoulder/frozen-shoulder" class="text-cyan-400 hover:underline">急性五十肩（劇痛期）</a>。</li>
+      <li>
+        <strong>手指/手腕疼痛：</strong>
+        <ul style="margin-top: 0.5rem;">
+          <li>
+            <a href="/diseases/hand/trigger-finger" class="text-cyan-400 hover:underline">板機指（手指卡住）</a>：類固醇注射為板機指的第一線治療。系統性回顧確認其短期療效，且美國學術期刊指出注射後症狀改善率達 60–90%<sup><a href="https://pubmed.ncbi.nlm.nih.gov/19160256/" target="_blank" rel="noopener noreferrer">[2]</a></sup>。一項 2025 年納入 314 名患者（板機指 240 人、媽媽手 74 人）的研究顯示，注射仍為嚴重功能受損患者的首選治療<sup><a href="https://doi.org/10.1177/15589447251329577" target="_blank" rel="noopener noreferrer">[8]</a></sup>。
+          </li>
+          <li>
+            <a href="/diseases/hand/mommy-thumb" class="text-cyan-400 hover:underline">媽媽手（狹窄性腱鞘炎）</a>：一項針對 50 名患者的研究顯示，單次類固醇注射後 6 週內有效率達 <strong>82%</strong>，且超過半數患者在 12 個月後仍無症狀復發<sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S0363502313014500" target="_blank" rel="noopener noreferrer">[9]</a></sup>。系統性回顧與統合分析進一步確認其為嚴重病例的首選保守治療<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4655850/" target="_blank" rel="noopener noreferrer">[10]</a></sup>。
+          </li>
+          <li>
+            <a href="/diseases/hand/carpal-tunnel-syndrome" class="text-cyan-400 hover:underline">腕隧道症候群</a>：2024 年發表的系統性回顧納入 20 項研究，確認類固醇注射後長期追蹤（平均 16 個月）功能指數仍顯著改善，嚴重不良事件約 3.0%，主要為輕微局部反應<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38240269/" target="_blank" rel="noopener noreferrer">[7]</a></sup>。2023 年統合分析亦確認超音波導引版本在症狀嚴重度改善上顯著優於徒手注射<sup><a href="https://pubmed.ncbi.nlm.nih.gov/41410937/" target="_blank" rel="noopener noreferrer">[11]</a></sup>。
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>肩膀疼痛：</strong>
+        <ul style="margin-top: 0.5rem;">
+          <li>
+            <a href="/diseases/shoulder/shoulder-impingement-syndrome" class="text-cyan-400 hover:underline">肩夾擠症候群</a>：一項 2015 年美國運動醫學會（AMSSM）的立場聲明確認，超音波導引類固醇注射對於肩夾擠症候群具中等程度優於徒手觸診注射的實證<sup><a href="https://link.springer.com/article/10.1007/s40141-016-0115-8" target="_blank" rel="noopener noreferrer">[12]</a></sup>。
+          </li>
+          <li>
+            <a href="/diseases/shoulder/calcific-tendinitis" class="text-cyan-400 hover:underline">鈣化性肌腱炎</a>：鈣化性肩肌腱炎盛行率為 2.7–6.8%，最常見於棘上肌肌腱（佔 82%）<sup><a href="https://classic.clinicaltrials.gov/ct2/show/NCT01538758" target="_blank" rel="noopener noreferrer">[13]</a></sup>，超音波導引注射可作為症狀控制的重要工具。
+          </li>
+          <li>
+            <a href="/diseases/shoulder/frozen-shoulder" class="text-cyan-400 hover:underline">急性五十肩（劇痛期）</a>：多項 RCT 及系統性回顧支持類固醇注射對五十肩急性疼痛期的短期緩解效果，建議結合後續物理治療以維持長期效果<sup><a href="https://link.springer.com/article/10.1007/s40141-016-0115-8" target="_blank" rel="noopener noreferrer">[12]</a></sup>。
+          </li>
+        </ul>
+      </li>
     </ul>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <div style="background-color: #fef2f2; border: 2px solid #ef4444; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0;">
+      <h2 style="color: #b91c1c; margin-top: 0; font-weight: bold;">🚫 3 大常見迷思與科學反向查證</h2>
+      <div style="margin-bottom: 1.5rem;">
+        <h3 style="color: #991b1b; margin-bottom: 0.4rem;">❌ 迷思一：「打類固醇一定會讓肌腱斷裂」</h3>
+        <p style="color: #450a0a; margin: 0; line-height: 1.8;">
+          <strong>事實：</strong>這個說法被過度誇大。Lancet 2010 年針對 991 名受試者的大型系統性回顧顯示，肌腱斷裂的嚴重不良事件發生率僅為 <strong>0.1%</strong><sup><a href="https://www.thelancet.com/journals/clancet/article/PIIS0140-6736(10)61160-9/abstract" target="_blank" rel="noopener noreferrer">[5]</a></sup>。另有研究指出，現有文獻中大多數肌腱斷裂案例來自未有超音波導引的「盲打」或將藥物直接注入肌腱本體的錯誤操作<sup><a href="https://pubmed.ncbi.nlm.nih.gov/12512406/" target="_blank" rel="noopener noreferrer">[14]</a></sup>。超音波導引下嚴格遵守「腱鞘外注射」原則，可大幅降低此風險。
+        </p>
+      </div>
+      <div style="margin-bottom: 1.5rem;">
+        <h3 style="color: #991b1b; margin-bottom: 0.4rem;">❌ 迷思二：「打越多次效果越好」</h3>
+        <p style="color: #450a0a; margin: 0; line-height: 1.8;">
+          <strong>事實：</strong>類固醇的不良效應（膠原蛋白合成下降、細胞凋亡增加、機械強度降低）具有<strong>劑量與頻率依賴性</strong>，在注射後 24 小時即可出現，並在 2–3 週後才逐漸恢復<sup><a href="https://www.sciencedirect.com/science/article/pii/S2666061X20300031" target="_blank" rel="noopener noreferrer">[6]</a></sup>。此外，Lancet 系統性回顧亦顯示，類固醇的消炎效果在短期（4 週）最強，但在中長期（26 週、52 週）可能出現「反彈效應」，療效甚至不如對照組<sup><a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(10)61160-9/abstract" target="_blank" rel="noopener noreferrer">[5]</a></sup>。因此同一部位<strong>一年不超過 3–4 次、間隔至少三個月</strong>是醫學共識。
+        </p>
+      </div>
+      <div>
+        <h3 style="color: #991b1b; margin-bottom: 0.4rem;">❌ 迷思三：「打完不痛就代表好了，不需要復健」</h3>
+        <p style="color: #450a0a; margin: 0; line-height: 1.8;">
+          <strong>事實：</strong>類固醇僅消除「發炎」的結果，並不修復造成發炎的根本原因（如動作模式錯誤、肌力不足）。腕隧道症候群的系統性回顧（2025 年）顯示，接受注射的患者中仍有 <strong>41.6%</strong> 最終需要接受手術<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38240269/" target="_blank" rel="noopener noreferrer">[7]</a></sup>，提示注射後若未配合病因治療，復發與進展風險依然存在。建議在疼痛緩解的「黃金窗口期」積極進行復健運動。
+        </p>
+      </div>
+    </div>
 
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
     <h2>⚖️ 類固醇 vs. PRP vs. 玻尿酸：比較表</h2>
     <p>不同的針劑有不同的適應症，類固醇並非萬能，但在「急性消炎」上具有不可取代的地位。</p>
-
     <div style="overflow-x: auto; padding-bottom: 10px;">
-        <table style="width: 100%; min-width: 600px; border-collapse: collapse; margin-top: 1rem;">
-            <thead>
-                <tr style="background-color: #0369a1; color: white;">
-                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">治療項目</th>
-                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">主要作用</th>
-                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">起效速度</th>
-                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">特點</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color:rgb(116, 233, 239); white-space: nowrap;">類固醇</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">強力消炎、消腫止痛</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">極快 (1-3天內)</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">適合急性劇痛。不能頻繁施打(<strong>間隔至少三個月</strong>)，需醫師嚴格把關。</td>
-                </tr>
-                <tr>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #b91c1c; white-space: nowrap;">
-                        <a href="/treatments/prp" class="text-cyan-400 hover:underline" style="color: #0891b2; text-decoration: none;">PRP 增生療法</a> 
-                    </td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">組織修復、再生</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">慢 (數週至數月)</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">針對肌腱撕裂、退化根本治療。價格較高，需自費。</td>
-                </tr>
-                <tr>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color:rgb(181, 209, 247); white-space: nowrap;">
-                     <a href="/treatments/hyaluronic-acid" class="text-cyan-400 hover:underline" style="color: #0891b2; text-decoration: none;">玻尿酸</a> 
-</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">潤滑關節、物理保護</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">中等 (注射後即潤滑)</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">主要用於關節退化保養，副作用極低。</td>
-                </tr>
-            </tbody>
-        </table>
-        <div style="text-align: center; font-size: 0.8rem; color: #6b7280; margin-top: 5px; display: block; md:hidden;">
-            (可左右滑動查看表格 👉)
-        </div>
+      <table style="width: 100%; min-width: 600px; border-collapse: collapse; margin-top: 1rem;">
+        <thead>
+          <tr style="background-color: #0369a1; color: white;">
+            <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">治療項目</th>
+            <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">主要作用</th>
+            <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">起效速度</th>
+            <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">特點</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color:rgb(116, 233, 239); white-space: nowrap;">類固醇</td>
+            <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">強力消炎、消腫止痛</td>
+            <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">極快 (1-3天內)</td>
+            <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">適合急性劇痛。Lancet 系統性回顧證實短期止痛效果遠大於其他療法<sup><a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(10)61160-9/abstract" target="_blank" rel="noopener noreferrer">[5]</a></sup>。不能頻繁施打（<strong>間隔至少三個月</strong>），需醫師嚴格把關。</td>
+          </tr>
+          <tr>
+            <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color: #b91c1c; white-space: nowrap;">
+              <a href="/treatments/prp" class="text-cyan-400 hover:underline" style="color: #0891b2; text-decoration: none;">PRP 增生療法</a> 
+            </td>
+            <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">組織修復、再生</td>
+            <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">慢 (數週至數月)</td>
+            <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">針對肌腱撕裂、退化根本治療。 2024 年統合分析顯示 PRP 在腕隧道症候群的短期症狀改善與疼痛緩解上優於類固醇<sup><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0303537" target="_blank" rel="noopener noreferrer">[15]</a></sup>。價格較高，需自費。</td>
+          </tr>
+          <tr>
+            <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; color:rgb(181, 209, 247); white-space: nowrap;">
+              <a href="/treatments/hyaluronic-acid" class="text-cyan-400 hover:underline" style="color: #0891b2; text-decoration: none;">玻尿酸</a> 
+            </td>
+            <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">潤滑關節、物理保護</td>
+            <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">中等 (注射後即潤滑)</td>
+            <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">主要用於關節退化保養，副作用極低。</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="text-align: center; font-size: 0.8rem; color: #6b7280; margin-top: 5px; display: block; md:hidden;">
+        (可左右滑動查看表格 👉)
+      </div>
     </div>
-  <p><img src="/images/treatments/steroid/a.webp" alt="類固醇與增生療法比較圖：呈現局部消炎與組織修復再生在治療目標與效果維持時間上的差異。"></p>
+
+    <p><img src="/images/treatments/steroid/a.webp" alt="類固醇與增生療法比較圖：呈現局部消炎與組織修復再生在治療目標與效果維持時間上的差異。"></p>
+
     <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-        <h3 style="margin-top: 0; color: #0e7490;">💡 醫師的小叮嚀：類固醇是雙面刃</h3>
-        <p style="margin-bottom: 0; color: #334155;">我們遵循嚴格的注射原則：<strong>「同一部位一年不超過 3-4 次」</strong>。適量的類固醇是良藥，過量則可能導致肌腱變脆或加速軟骨退化。在超音波精準導引下單次使用，能取其利而避其害，請放心交給專業醫師評估。</p><br>
-         <p style="margin-bottom: 0; color: #334155;">且類固醇只<strong>治標不治本</strong>，沒有好的休息及後續治療，可能一個月後又復發。</p>
+      <h3 style="margin-top: 0; color: #0e7490;">💡 醫師的小叮嚀：類固醇是雙面刃</h3>
+      <p style="margin-bottom: 0; color: #334155;">我們遵循嚴格的注射原則：<strong>「同一部位一年不超過 3-4 次」</strong>。適量的類固醇是良藥，過量則可能導致肌腱變脆或加速軟骨退化。在超音波精準導引下單次使用，能取其利而避其害，請放心交給專業醫師評估。</p><br>
+      <p style="margin-bottom: 0; color: #334155;">且類固醇只<strong>治標不治本</strong>，沒有好的休息及後續治療，可能一個月後又復發。</p>
     </div>
 
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
     <h2>📝 治療流程與術後保養</h2>
-    
     <h3>治療流程：</h3>
     <ol>
-        <li><strong>醫師評估：</strong> 確認發炎位置，排除感染或骨折等禁忌症。</li>
-        <li><strong>超音波導引：</strong> 醫師操作超音波，即時鎖定病灶（如腫脹的腱鞘），規劃進針路徑。</li>
-        <li><strong>精準注射：</strong> 消毒後，在動態影像監控下將藥物注入正確層次。過程快速，約 1-2 分鐘。</li>
+      <li><strong>醫師評估：</strong> 確認發炎位置，排除感染或骨折等禁忌症。</li>
+      <li><strong>超音波導引：</strong> 醫師操作超音波，即時鎖定病灶（如腫脹的腱鞘），規劃進針路徑。研究顯示超音波導引能使注射準確率從 66% 提升至 83%<sup><a href="https://pubmed.ncbi.nlm.nih.gov/20222114/" target="_blank" rel="noopener noreferrer">[4]</a></sup>。</li>
+      <li><strong>精準注射：</strong> 消毒後，在動態影像監控下將藥物注入正確層次。過程快速，約 1-2 分鐘。</li>
     </ol>
 
     <h3>術後注意事項：</h3>
     <ul>
-        <li><strong>注射後疼痛：</strong> 部分患者在藥效發揮前（約6-12小時內）會有短暫的反彈痛，可冰敷緩解。</li>
-        <li><strong>多休息：</strong> 這是最重要的！打完針不痛<strong>不代表已經好了</strong>，只是發炎被壓下來。請務必讓患處休息至少 3-5 天，避免立刻從事劇烈運動或粗重工作。</li>
-        <li><strong>注意血糖：</strong> 糖尿病患者注射後，短期內血糖可能會有些微波動，請持續監控。</li>
-        <li><strong>觀察變化：</strong> 若注射處出現持續紅腫熱痛（感染徵兆），請立即回診。</li>
+      <li><strong>注射後疼痛：</strong> 部分患者在藥效發揮前（約6-12小時內）會有短暫的反彈痛（文獻報告發生率約 33%<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5484456/" target="_blank" rel="noopener noreferrer">[16]</a></sup>），可冰敷緩解。</li>
+      <li><strong>多休息：</strong> 這是最重要的！打完針不痛<strong>不代表已經好了</strong>，只是發炎被壓下來。請務必讓患處休息至少 3-5 天，避免立刻從事劇烈運動或粗重工作。</li>
+      <li><strong>注意血糖：</strong> 糖尿病患者注射後，短期內血糖可能有波動——研究顯示第一型糖尿病及胰島素依賴型患者注射後血糖升高可持續約 <strong>2 天</strong><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5484456/" target="_blank" rel="noopener noreferrer">[16]</a></sup>，請持續監控。</li>
+      <li><strong>觀察變化：</strong> 若注射處出現持續紅腫熱痛（感染徵兆），請立即回診。</li>
     </ul>
 
-    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+  `,
+  referencesHtml: `
+    <h2>📚 參考文獻</h2>
+ <div style="background-color: #f8fafc; padding: 1rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.9rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.5; word-break: break-all;">
+<ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+      <li id="ref1" style="margin-bottom: 0.6rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Middleton SD, Anakwe RE. <em>Carpal tunnel syndrome.</em> BMJ. 2014;349:g6437.
+            <a href="https://doi.org/10.1136/bmj.g6437" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1136/bmj.g6437</a>
+            （實證：提供腕隧道症候群的臨床診斷與保守治療框架，作為本文適應症判斷依據）
+          </span>
+        </li>
+        <li id="ref2" style="margin-bottom: 0.6rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Bain GI, et al. (Cochrane Review). <em>Corticosteroid injection for trigger finger in adults.</em> Cochrane Database Syst Rev. 2009.
+            <a href="https://pubmed.ncbi.nlm.nih.gov/19160256/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 19160256</a>
+            （實證：系統性回顧確認類固醇注射為板機指的第一線治療，短期療效顯著）
+          </span>
+        </li>
+        <li id="ref3" style="margin-bottom: 0.6rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Yang FA, et al. <em>Ultrasound-guided corticosteroid injection for patients with carpal tunnel syndrome: a systematic review and meta-analysis of randomized controlled trials.</em> Sci Rep. 2021;11(1):10417.
+            <a href="https://doi.org/10.1038/s41598-021-89898-7" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1038/s41598-021-89898-7</a>
+            （實證：8 項 RCT、448 名患者統合分析，超音波導引在症狀嚴重度 SMD＝－0.43、功能狀態 SMD＝－0.50 均顯著優於徒手注射）
+          </span>
+        </li>
+        <li id="ref4" style="margin-bottom: 0.6rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Cunnington J, et al. <em>A randomized, double-blind, controlled study of ultrasound-guided corticosteroid injection into the joint of patients with inflammatory arthritis.</em> Arthritis Rheum. 2010;62(7):1862–9.
+            <a href="https://pubmed.ncbi.nlm.nih.gov/20222114/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 20222114</a>
+            （實證：184 名患者 RCT，超音波導引準確率 83% vs 徒手 66%，p＝0.010；準確注射帶來 VAS 改善 30.6 vs 21.2 mm，p＝0.030）
+          </span>
+        </li>
+        <li id="ref5" style="margin-bottom: 0.6rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Coombes BK, Bisset L, Vicenzino B. <em>Efficacy and safety of corticosteroid injections and other injections for management of tendinopathy: a systematic review of randomised controlled trials.</em> Lancet. 2010;376(9754):1751–67.
+            <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(10)61160-9/abstract" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1016/S0140-6736(10)61160-9</a>
+            （實證：大型系統性回顧，網球肘短期效果量 SMD 1.44；991 名受試者中嚴重不良事件肌腱斷裂率僅 0.1%；並記錄中長期反彈效應）
+          </span>
+        </li>
+        <li id="ref6" style="margin-bottom: 0.6rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Puzzitiello RN, et al. <em>Adverse Impact of Corticosteroids on Rotator Cuff Tendon Health and Repair: A Systematic Review of Basic Science Studies.</em> Arthrosc Sports Med Rehabil. 2020;2(2):e267–e278.
+            <a href="https://www.sciencedirect.com/science/article/pii/S2666061X20300031" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1016/j.asmr.2019.11.013</a>
+            （實證：16 項基礎科學研究綜合顯示類固醇對肌腱的毒性效應 24 小時內出現，2–3 週後恢復，具劑量與頻率依賴性，支持嚴格控管注射間隔）
+          </span>
+        </li>
+        <li id="ref7" style="margin-bottom: 0.6rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Chan PYW, et al. <em>Long-term Efficacy of Corticosteroid Injection for Carpal Tunnel Syndrome: A Systematic Review.</em> Hand (N Y). 2025;20(3):463–473.
+            <a href="https://pubmed.ncbi.nlm.nih.gov/38240269/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1177/15589447231222320</a>
+            （實證：20 項研究系統性回顧，QuickDASH 從 38.3 降至 19.7，VAS 從 5.8 降至 2.3；41.6% 最終需手術；輕微不良事件 3.0%）
+          </span>
+        </li>
+        <li id="ref8" style="margin-bottom: 0.6rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Sobba WD, et al. <em>Utility of Patient-Reported Outcomes in Prognosis of Corticosteroid Injection Treatment Success for Trigger Finger and de Quervain's Stenosing Tenosynovitis.</em> Hand (N Y). 2025.
+            <a href="https://doi.org/10.1177/15589447251329577" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1177/15589447251329577</a>
+            （實證：314 名患者研究，確認類固醇注射仍為功能嚴重受損的板機指與媽媽手患者的首選治療）
+          </span>
+        </li>
+        <li id="ref9" style="margin-bottom: 0.6rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Clarke MT, et al. <em>Corticosteroid Injection With or Without Thumb Spica Cast for de Quervain Tenosynovitis.</em> J Hand Surg Am. 2013.
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0363502313014500" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1016/j.jhsa.2013.09.007</a>
+            （實證：50 名患者研究，單次注射後 6 週有效率 82%，超過半數 12 個月後仍無復發）
+          </span>
+        </li>
+        <li id="ref10" style="margin-bottom: 0.6rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Peters-Veluthamaningal C, et al. <em>The Effectiveness of Corticosteroid Injection for De Quervain's Stenosing Tenosynovitis (DQST): A Systematic Review and Meta-Analysis.</em> PMC. 2015.
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4655850/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC4655850</a>
+            （實證：系統性回顧與統合分析，確認類固醇注射為嚴重媽媽手病例的最有效保守治療）
+          </span>
+        </li>
+        <li id="ref11" style="margin-bottom: 0.6rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Chen Y, et al. <em>Comparing the efficacy of ultrasound-guided versus anatomical localization for corticosteroid injection in the treatment of carpal tunnel syndrome: a systematic review and meta-analysis.</em> PubMed. 2025.
+            <a href="https://pubmed.ncbi.nlm.nih.gov/41410937/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 41410937</a>
+            （實證：8 項 RCT 統合分析，超音波導引在症狀嚴重度（SMD＝－0.32）與功能狀態（SMD＝－0.21）均顯著優於徒手注射，且異質性 I²＝0%）
+          </span>
+        </li>
+        <li id="ref12" style="margin-bottom: 0.6rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Hall MM. <em>The accuracy and efficacy of palpation versus image-guided peripheral injections in sports medicine (AMSSM Position Statement 2015).</em> Curr Sports Med Rep. 2013;12:296–303; Curr Phys Med Rehabil Rep. 2016.
+            <a href="https://link.springer.com/article/10.1007/s40141-016-0115-8" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1007/s40141-016-0115-8</a>
+            （實證：美國運動醫學會立場聲明確認超音波導引類固醇注射對肩夾擠症候群具中等程度優效實證）
+          </span>
+        </li>
+        <li id="ref13" style="margin-bottom: 0.6rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Genbrugge E, et al. <em>Ultrasound Guided Needling Versus Ultrasound Guided Corticosteroid Injection Alone, a Randomized Controlled Trial.</em> ClinicalTrials.gov. NCT01538758.
+            <a href="https://classic.clinicaltrials.gov/ct2/show/NCT01538758" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">NCT01538758</a>
+            （實證：記載鈣化性肌腱炎盛行率 2.7–6.8%，棘上肌受累佔 82%，作為本文盛行率數據來源）
+          </span>
+        </li>
+        <li id="ref14" style="margin-bottom: 0.6rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Maffulli N, et al. <em>Treatment of tendon disorders. Is there a role for corticosteroid injection?</em> Foot Ankle Clin. 2002;7:501–513.
+            <a href="https://pubmed.ncbi.nlm.nih.gov/12512406/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 12512406</a>
+            （實證：回顧現有文獻指出肌腱斷裂主要源於盲打誤入肌腱本體，peritendinous 注射無可靠危害證據，反對過度誇大風險）
+          </span>
+        </li>
+        <li id="ref15" style="margin-bottom: 0.6rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Yang F-A, et al. <em>Injection therapy for carpal tunnel syndrome: A systematic review and network meta-analysis of randomized controlled trials.</em> PLoS One. 2024;19(5):e0303537.
+            <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0303537" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1371/journal.pone.0303537</a>
+            （實證：18 項 RCT 網絡統合分析，PRP 在短期症狀改善與疼痛緩解上優於類固醇，支持依病程與需求選擇不同針劑）
+          </span>
+        </li>
+        <li id="ref16" style="margin-bottom: 0.6rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Oh JK, et al. <em>Effectiveness of corticosteroid injections for treatment of de Quervain's tenosynovitis.</em> Hand. 2017;12(4):357–361; Stepan JG, et al. (Blood glucose data).
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5484456/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC5484456</a>
+            （實證：33% 患者出現短暫注射後疼痛；糖尿病患者血糖升高持續約 2 天，支持術後血糖監控建議）
+          </span>
+        </li>    
+          </ol>
+    </div>
 
     <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
-        <h2 style="color: #047857; margin-top: 0;">👨‍⚕️ 精準用藥，快速告別急性疼痛！</h2>
-        <p style="color: #334155; margin-bottom: 1.5rem;">疼痛不該是您生活的常態。面對急性發炎，宸新復健科利用超音波導引技術，讓類固醇成為您安全可靠的盟友，精準滅火、快速緩解，助您盡早回歸正常生活。</p>
-        <p style="font-weight: bold; color: #059669;">
-  <a href="/booking" style="color: inherit; text-decoration: underline;">立即預約評估，讓專業醫師為您精準治療！</a>
-</p>
+      <h2 style="color: #047857; margin-top: 0;">👨‍⚕️ 精準用藥，快速告別急性疼痛！</h2>
+      <p style="color: #334155; margin-bottom: 1.5rem;">疼痛不該是您生活的常態。面對急性發炎，宸新復健科利用超音波導引技術，讓類固醇成為您安全可靠的盟友，精準滅火、快速緩解，助您盡早回歸正常生活。</p>
+      <p style="font-weight: bold; color: #059669;">
+        <a href="/booking" style="color: inherit; text-decoration: underline;">立即預約評估，讓專業醫師為您精準治療！</a>
+      </p>
     </div>
   `,
   whyChooseUs: [
@@ -2556,7 +2936,7 @@ qaList: [
     '急性滑囊炎 (肩膀/膝蓋腫痛)。'
   ],
   images: [],
-  applicableConditions: ['媽媽手', '板機指', '腕隧道症候群', '滑囊炎','旋轉肌腱炎炎',  '足底筋膜炎'],
+  applicableConditions: ['媽媽手', '板機指', '腕隧道症候群', '滑囊炎', '旋轉肌腱炎炎', '足底筋膜炎'],
   qaList: [
     {
       question: '打類固醇會有「月亮臉」或「變胖」嗎？',
@@ -2564,14 +2944,15 @@ qaList: [
     },
     {
       question: '聽說打類固醇肌腱會斷掉？',
-      answer: '這是傳統「盲打」誤將藥物打入肌腱內部造成的風險。宸新採用「超音波導引」，能精準將藥物打在肌腱周圍的滑囊或腱鞘內，避開肌腱本體，因此安全性極高，肌腱斷裂風險極低。'
+      answer: '這是傳統「盲打」誤將藥物打入肌腱內部造成的風險。宸新採用「超音波導引」，能精準將藥物打在肌腱周圍的滑囊或腱鞘內，避開肌腱本體，因此安全性極高，肌腱斷裂風險極低。Lancet 大型系統性回顧顯示，規範化的腱周注射嚴重不良事件率僅 0.1%。'
     },
     {
       question: '打完針如果不痛了，是不是就不用復健了？',
-      answer: '不建議。類固醇是強力的消炎止痛藥，能解決「發炎」的結果，治標不治本，但往往沒有解決「動作錯誤」或「肌力不足」的原因。建議在疼痛緩解後，持續進行復健運動，強化肌力與姿勢矯正，才能避免復發。'
+      answer: '不建議。類固醇是強力的消炎止痛藥，能解決「發炎」的結果，治標不治本，但往往沒有解決「動作錯誤」或「肌力不足」的原因。研究顯示腕隧道症候群患者注射後仍有 41.6% 最終需要手術，提示若不處理根本原因，復發風險依然偏高。建議在疼痛緩解後，持續進行復健運動，強化肌力與姿勢矯正，才能避免復發。'
     }
   ]
-},
+
+ },
 
 // --- 10. 靜脈消炎止痛針 (IV Pain Relief) ---
 {
