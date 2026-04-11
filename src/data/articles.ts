@@ -2,6 +2,1263 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
 
+  
+  {
+  id: 'frozen-shoulder-and-diabetes',
+  title: '五十肩與糖尿病的深度關聯：為什麼糖尿病患者更容易罹患五十肩？',
+  lastModified: '2026-04-11',
+  category: '衛教文章',
+  date: '2026-04-11',
+  summary: '糖尿病患者五十肩風險高出5倍！深入解析AGEs糖化機制、血糖控制與五十肩的關係，以及完整治療選項比較。',
+  coverImage: '/images/news/article/frozen-shoulder-diabetes.webp',
+  seoTitle: '五十肩與糖尿病的深度關聯',
+  seoDescription: '深入解析五十肩（沾黏性肩關節囊炎）與糖尿病的相關性：糖尿病患者五十肩風險高出5倍，核心機制涉及AGEs糖化、慢性炎症與微血管病變。探討血糖控制能否改善五十肩，並解析甲狀腺、年齡、性別等其他危險因子。',
+  keywords: [
+    '五十肩',
+    '糖尿病五十肩',
+    '沾黏性肩關節囊炎',
+    'frozen shoulder',
+    '血糖控制',
+    'AGEs',
+    '五十肩危險因子',
+    '五十肩治療'
+  ],
+  contentHtml: `
+
+
+
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    五十肩（沾黏性肩關節囊炎）與糖尿病之間存在顯著的雙向流行病學關聯。根據2016年發表的分析，糖尿病患者罹患五十肩的風險是一般人的<strong style="color: #0284c7;">5倍</strong>，且五十肩在糖尿病族群中的盛行率高達13.4%
+    <sup><a href="https://doi.org/10.11138/mltj/2016.6.1.026" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[1]</a></sup>。
+    這背後的核心機制涉及長期高血糖促使「晚期糖化終產物（AGEs）」在關節囊組織中大量堆積，進而引發膠原蛋白交聯與纖維化。除了糖尿病，甲狀腺疾病、年齡、性別、肩部外傷及長時間固定不動，也是不可忽視的五十肩危險因子。雖然關於嚴格血糖控制能否「直接」改善五十肩症狀，目前醫學界仍有爭議，但整合性的治療策略——包括糖尿病管理、物理治療與適當的介入治療——已被證實能顯著改善患者的功能與生活品質。
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、什麼是五十肩？從醫學定義認識這個疾病
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    五十肩的正式醫學名稱為「沾黏性肩關節囊炎（Adhesive Capsulitis）」，俗稱冷凍肩（Frozen Shoulder）。顧名思義，這個疾病的核心病理是：肩關節囊（關節周圍的結締組織袋）因發炎而增厚、形成疤痕組織（沾黏），導致肩膀活動範圍大幅受限，並伴隨持續性的鈍痛或銳痛
+    <sup><a href="https://doi.org/10.1136/bmj.331.7530.1453" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 1.25rem; font-size: 1.1rem;">臨床上，五十肩通常分為三個階段：</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">疼痛期（Freezing Stage）</strong>：約持續6週至9個月，以漸進性疼痛為主，尤其夜間疼痛明顯，患者常因肩痛而難以入眠。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">冰凍期（Frozen Stage）</strong>：持續4至9個月，疼痛稍緩，但肩膀僵硬程度達到高峰，日常梳頭、穿衣、拿取高處物品均受限。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">解凍期（Thawing Stage）</strong>：持續5個月至2年，肩膀活動度逐漸恢復，但完全康復的時間因人而異，且糖尿病患者往往比一般人需要更長時間
+      <sup><a href="https://doi.org/10.1016/j.arrct.2021.100141" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>。
+    </li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem;">
+    五十肩在一般人口中的盛行率約為2-3%，好發於40至65歲族群，且女性（約58-70%）比男性更容易罹患
+    <sup><a href="https://doi.org/10.1136/bmjopen-2022-062920" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>。
+    這個看似「普通」的肩膀問題，其實與全身性的代謝疾病有著密不可分的關聯。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、糖尿病與五十肩：數據告訴你的事實
+  </h2>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+    糖尿病患者罹患五十肩的機率有多高？
+  </h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是許多糖尿病患者最迫切想了解的問題。數字相當驚人——
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    根據Zreik等人2016年發表於《Muscles, Ligaments and Tendons Journal》的系統性文獻回顧（共納入18篇研究），糖尿病患者發生五十肩的風險是非糖尿病者的
+    <strong style="color: #2dd4bf; font-size: 1.25rem;">5倍</strong>，而糖尿病族群中五十肩的整體盛行率估計為
+    <strong style="color: #2dd4bf; font-size: 1.25rem;">13.4%</strong>
+    <sup><a href="https://doi.org/10.11138/mltj/2016.6.1.026" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    更進一步細分，第一型糖尿病（Type 1 DM）患者的五十肩發生率高達約10%，而第二型糖尿病（Type 2 DM）患者更高，可達29%
+    <sup><a href="https://doi.org/10.1016/j.jcot.2018.04.003" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>。
+    換句話說，接近三成的第二型糖尿病患者，在其一生中可能遭遇五十肩困擾。
+  </p>
+  
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 臨床觀察：</strong>「一位65歲的第二型糖尿病退休教師，在血糖控制不穩定長達8年後，某天早晨醒來發現自己無法將手臂抬過頭頂，連穿上外套都費力無比。她就醫後被診斷出五十肩，而此前她的醫師從未告訴她，糖尿病本身就是五十肩的重要危險因子。」<br><br>這樣的情境，在臨床上其實相當普遍，卻長期未受到應有的重視。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">糖尿病病程長短也有影響</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem;">
+    2012年一項對超過201,513名糖尿病患者的大型回溯性研究發現，糖尿病病程同樣是五十肩的重要預測因子：
+    <strong style="color: #ffffff;">病程超過10年者，發生五十肩的風險是病程不足5年者的1.85倍</strong>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/22617920/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>.
+    這提示我們，即便血糖控制尚可，長期的糖尿病本身對結締組織的慢性損害就已不可小覷。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、為什麼糖尿病會導致五十肩？深入病理機制
+  </h2>
+
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      核心機制一：晚期糖化終產物（AGEs）與膠原蛋白交聯
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      這是目前最受學界重視、也最具說服力的解釋機制。
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      當血液中持續存在過高的葡萄糖時，糖分子會與蛋白質（尤其是膠原蛋白）發生非酶促反應，這個過程稱為「糖化（glycation）」，其產物即為「晚期糖化終產物（Advanced Glycation End-products, AGEs）」。AGEs會促使膠原蛋白分子之間產生異常的「交聯（cross-linking）」，使組織喪失原有的彈性與延展性，變得僵硬、厚實
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9815013/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>.
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+      肩關節囊本身富含第一型與第三型膠原蛋白。當AGEs不斷在此堆積，關節囊組織逐漸纖維化、攣縮，形成五十肩的病理基礎。這也解釋了為何糖尿病相關的五十肩在治療上特別頑固——因為底層的膠原蛋白結構已發生化學性改變，單純的物理治療往往難以逆轉。
+    </p>
+    
+    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+      <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解</h4>
+      <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+        在診所中，糖尿病相關五十肩患者的關節鏡影像往往顯示出比一般五十肩更為廣泛且緻密的纖維化病灶，且其疤痕組織的黏稠度和韌性也明顯不同。這種組織學上的差異，正是糖尿病五十肩對類固醇注射反應較差的根本原因之一——類固醇能抑制炎症，但無法逆轉已形成的AGEs交聯結構。
+      </p>
+    </div>
+  </div>
+
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      核心機制二：慢性炎症與促炎細胞激素
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      高血糖環境除了促進糖化反應，還會誘導多種促炎細胞激素的過量分泌，如腫瘤壞死因子-α（TNF-α）、白細胞介素-1β（IL-1β）等。研究發現，這些促炎因子在五十肩患者的關節囊和滑膜組織中均呈現高度表達
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9815013/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>.
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem;">
+      糖尿病患者本身即處於一種低度慢性炎症狀態，這使得肩關節囊更容易受到炎症侵襲，一旦啟動炎症-纖維化循環，就難以自行終止。
+    </p>
+  </div>
+
+  <div>
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      核心機制三：微血管病變與神經病變
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      長期糖尿病引起的微血管病變，會影響肩關節囊的局部血液供應，導致組織修復能力下降。同時，糖尿病神經病變則可能損害肩關節周圍的感覺神經，使患者對早期的肩膀疼痛與功能退化警覺性降低，從而延誤就醫
+      <sup><a href="https://t1dexchange.org/frozen-shoulder-and-diabetes-is-there-a-connection/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>.
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem;">
+      2024年一項研究進一步發現，HbA1c水平與肩關節本體感覺之間存在顯著正相關——血糖控制越差，肩部本體感覺偏差越大，這不僅增加了五十肩風險，也讓患者在治療過程中的動作學習和功能恢復更加困難
+      <sup><a href="https://doi.org/10.2147/JMDH.S472025" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>.
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、控制好糖尿病，能改善五十肩嗎？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">這是一個充滿爭議、但極具臨床意義的問題。</p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">研究怎麼說：正反並存的證據</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    一方面，2023年一項採用孟德爾隨機化方法的遺傳因果分析研究，發現第二型糖尿病及空腹血糖升高，與五十肩之間存在
+    <strong style="color: #ffffff;">基因因果關聯</strong>，提示控制血糖本身有其預防意義
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/37748531/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>.
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    另一方面，Bjordal等學者的回溯性研究（2012年，n=201,513）卻發現，HbA1c水平與五十肩盛行率之間
+    <strong style="color: #ffffff;">並無顯著統計相關性</strong>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/22617920/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>.
+    這似乎暗示，五十肩一旦形成，單靠改善HbA1c可能無法直接「治好」已發生的沾黏。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">臨床上較有共識的觀點</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">綜合目前證據，多數臨床專家的共識如下：</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">預防勝於治療</strong>：在五十肩尚未發生前，良好的血糖控制可能降低AGEs堆積速度，從而降低罹患風險。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">治療期間同步控糖</strong>：若糖尿病患者已罹患五十肩，積極的血糖管理能改善整體組織代謝環境，有助於提升物理治療的效果。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">肩關節擴張注射需特別謹慎</strong>：肩關節擴張注射是五十肩早期止痛的重要手段，但對糖尿病患者，注射後可能引發短暫性的血糖飆升（有時持續2-3天），無須過度擔心。
+      <sup><a href="https://t1dexchange.org/frozen-shoulder-and-diabetes-is-there-a-connection/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">糖尿病五十肩更難根治</strong>：研究顯示，糖尿病患者對類固醇注射的初期失敗率（70%）遠高於非糖尿病患者（44%），也就是說，糖尿病五十肩往往需要更長期、更積極的多模態治療。
+      <sup><a href="https://doi.org/10.1016/j.jcot.2018.04.003" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+    </li>
+  </ul>
+  
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      從整合醫學的角度來看，部分臨床醫師發現，當糖尿病患者在接受五十肩治療的同時，同步透過生活型態介入（飲食調整、有氧運動）顯著改善血糖，其肩關節活動度的恢復速度確實快於血糖持續不穩定的患者。這提示糖代謝環境可能透過影響組織修復效率，間接調節五十肩的病程。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、五十肩的其他重要危險因子
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    糖尿病固然是最重要的五十肩危險因子，但並非唯一。了解全貌，有助於高風險族群及早採取預防措施。
+  </p>
+  
+  <h3 style="font-size: 1.25rem; font-weight: bold; color: #ffffff; margin-bottom: 0.5rem;">👩 年齡與性別</h3>
+  <p style="color: #cbd5e1; line-height: 1.6; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    五十肩好發於50至60歲，極少在40歲以前發生。女性佔所有五十肩患者的58-70%，特別是更年期後因雌激素分泌減少，失去對關節周圍軟組織的保護效應，罹患風險顯著上升。
+    <sup><a href="https://clevelandshoulder.com/why-are-women-more-prone-to-frozen-shoulder/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.25rem; font-weight: bold; color: #ffffff; margin-bottom: 0.5rem;">🔬 甲狀腺疾病</h3>
+  <p style="color: #cbd5e1; line-height: 1.6; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    甲狀腺功能亢進或低下，均與五十肩風險增加有關。2014年一項台灣全國性縱向人口研究發現，甲狀腺機能亢進是五十肩的獨立危險因子。甲狀腺功能越差，雙側五十肩的比例越高。
+    <sup><a href="https://doi.org/10.1038/srep04183" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.25rem; font-weight: bold; color: #ffffff; margin-bottom: 0.5rem;">🩹 肩部外傷與長時間制動</h3>
+  <p style="color: #cbd5e1; line-height: 1.6; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    任何導致肩膀長時間無法活動的情況，如骨折、肩袖撕裂修補術後、乳癌手術後的活動限制，都可能誘發五十肩。關節囊在缺乏定期牽張的情況下，會加速沾黏。
+    <sup><a href="https://doi.org/10.1136/bmj.331.7530.1453" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.25rem; font-weight: bold; color: #ffffff; margin-bottom: 0.5rem;">❤️ 心血管疾病與代謝症候群</h3>
+  <p style="color: #cbd5e1; line-height: 1.6; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    心臟病發作後需長時間臥床，以及代謝症候群（肥胖、高血壓、高血脂合併）的患者，都屬於五十肩的高風險族群。
+    <sup><a href="https://doi.org/10.1136/bmopen-2022-062920" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.25rem; font-weight: bold; color: #ffffff; margin-bottom: 0.5rem;">🧠 神經系統疾病</h3>
+  <p style="color: #cbd5e1; line-height: 1.6; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    帕金森氏症患者因肌肉張力異常而容易肩膀僵硬；中風患者則因偏癱側肢體廢用而容易繼發性五十肩。
+    <sup><a href="https://doi.org/10.1136/bmj.331.7530.1453" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.25rem; font-weight: bold; color: #ffffff; margin-bottom: 0.5rem;">🧬 強直性脊椎炎</h3>
+  <p style="color: #cbd5e1; line-height: 1.6; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    帶有HLA-B27基因的患者（即強直性脊椎炎易感族群），也被發現具有較高的五十肩風險。
+    <sup><a href="https://drbao.org/frozen-shoulder3/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>
+  </p>
+</section>
+    六、五十肩的治療選項比較表格
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px; /* 確保內容不擠壓 */
+    }
+
+    /* 表頭樣式 */
+    .modern-table thead tr {
+      background-color: #1e3a8a; /* 深藍色 */
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+
+    /* 單元格樣式 */
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+
+    /* 第一欄側邊標題加強反差 */
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 180px;
+    }
+
+    /* 交錯行變色 */
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+
+    /* 滑鼠懸停效果 */
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+
+    /* 針對特殊提醒的樣式 */
+    .text-warning { color: #d97706; font-weight: 500; }
+    .text-danger { color: #dc2626; font-weight: 600; }
+    .text-success { color: #15803d; font-weight: 600; }
+
+    /* 響應式調整 */
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>治療方式</th>
+          <th>適用階段</th>
+          <th>主要效果</th>
+          <th>糖尿病患者特殊考量</th>
+          <th style="text-align: center; white-space: nowrap;">來源</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>口服止痛藥 (NSAIDs)</td>
+          <td>疼痛期</td>
+          <td>減輕炎症與疼痛</td>
+          <td>長期使用需注意腎功能</td>
+          <td style="text-align: center;">
+            <sup><a href="https://www.edh.tw/article/16019" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[15]</a></sup>
+          </td>
+        </tr>
+        <tr>
+          <td>肩關節擴張注射</td>
+          <td>疼痛期至冰凍期</td>
+          <td>快速止痛、改善短期功能</td>
+          <td class="text-warning">⚠️ 注射後可能血糖暫時升高 2-3 天，需加強監測</td>
+          <td style="text-align: center; white-space: nowrap;">
+            <sup><a href="https://doi.org/10.1016/j.jcot.2018.04.003" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[5]</a></sup>
+            <sup><a href="https://t1dexchange.org/frozen-shoulder-and-diabetes-is-there-a-connection/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[8]</a></sup>
+          </td>
+        </tr>
+        <tr>
+          <td>物理治療<br><span style="font-size: 0.8rem; font-weight: normal; opacity: 0.7;">(徒手＋運動)</span></td>
+          <td>各階段均適用</td>
+          <td>恢復關節活動度、強化肌力</td>
+          <td>糖尿病患者通常需要更長療程</td>
+          <td style="text-align: center;">
+            <sup><a href="https://doi.org/10.1016/j.arrct.2021.100141" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[3]</a></sup>
+          </td>
+        </tr>
+        <tr>
+          <td>麻醉下徒手矯正 </td>
+          <td>冰凍期至解凍期</td>
+          <td>強制鬆開沾黏，快速改善角度</td>
+          <td>糖尿病患者術後恢復較慢</td>
+          <td style="text-align: center;">
+            <sup><a href="https://doi.org/10.1016/j.arrct.2021.100141" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[3]</a></sup>
+          </td>
+        </tr>
+        <tr>
+          <td>關節鏡關節囊鬆解術</td>
+          <td>保守治療無效時</td>
+          <td>直接切除纖維組織，效果最佳</td>
+          <td class="text-danger">❗ 術後感染風險較高 (HbA1c > 8 時顯著上升)</td>
+          <td style="text-align: center; white-space: nowrap;">
+            <sup><a href="https://doi.org/10.1016/j.jcot.2018.04.003" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[5]</a></sup>
+            <sup><a href="https://pubmed.ncbi.nlm.nih.gov/29688958/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[16]</a></sup>
+          </td>
+        </tr>
+        <tr>
+          <td>體外震波治療 </td>
+          <td>疼痛期至冰凍期</td>
+          <td>促進血液循環、緩解疼痛</td>
+          <td class="text-success">✅ 無血糖影響，對糖尿病患者相對安全</td>
+          <td style="text-align: center;">
+            <sup><a href="https://doi.org/10.1016/j.arrct.2021.100141" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[3]</a></sup>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+          <section style="margin-bottom: 3.5rem;">
+            <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+              <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+                📢 七、常見三大誤區解析
+              </h2>
+              <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+                <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+                  <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                  <div>
+                    <strong>誤區一：「五十肩放著不管，一定會自己好」</strong><br>
+                    <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>事實澄清：</strong>雖然五十肩過去被認為是「自限性疾病」，但2021年發表的系統性文獻回顧明確指出，「五十肩是自限性疾病」的說法過於簡化且在很多情況下並不準確——大量證據顯示，許多患者長期遺留疼痛與活動受限。對於糖尿病患者而言，這個問題更為嚴重：若不積極介入，糖尿病五十肩的恢復期往往遠超過一般的2-3年。
+                      <sup><a href="https://doi.org/10.1016/j.arrct.2021.100141" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[3]</a></sup>.
+                    </span>
+                  </div>
+                </li>
+                <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+                  <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                  <div>
+                    <strong>誤區二：「糖尿病控制好了，五十肩就會消失」</strong><br>
+                    <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>事實澄清：</strong>這是一個過度樂觀的期待。如前所述，雖然良好的血糖控制在「預防」五十肩上有其意義，但一旦AGEs已在關節囊中大量交聯沉積，形成結構性纖維化，單靠改善HbA1c無法「消除」已形成的沾黏。糖尿病患者的五十肩，必須同時積極進行肩關節本身的治療（物理治療、注射或手術），而非單純等待血糖改善帶來轉機。
+                      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/22617920/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[6]</a></sup>.
+                    </span>
+                  </div>
+                </li>
+                <li style="margin-bottom: 0; display: flex; align-items: start;">
+                  <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                  <div>
+                    <strong>誤區三：「做越大、越用力的肩膀運動，五十肩好得越快」</strong><br>
+                    <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>事實澄清：</strong>在五十肩的「疼痛期」，過度激進的肩膀操練反而可能加劇炎症反應，延長痛苦期。臨床上正確的做法是「漸進式的溫和牽張」，而非暴力牽拉。尤其是糖尿病患者，因組織彈性較差，強迫活動容易造成微小撕裂傷，反而誘發更嚴重的炎症與疤痕。正確的方式應在物理治療師的指導下進行個人化的漸進式運動療程。
+                      <sup><a href="https://doi.org/10.1016/j.arrct.2021.100141" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[3]</a></sup>.
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+          <section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+            <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+              <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+                <span style="margin-right: 8px;">🏆</span> 八、FAQ 常見問題
+              </h2>
+            </div>
+            <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+              
+              <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+                Q1. 我有糖尿病，肩膀最近開始痛，怎麼知道是不是五十肩？
+              </h3>
+              <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+                五十肩最典型的特徵是「各方向活動均受限」，尤其是外旋（手臂向外轉）最為明顯，其次是外展與前屈。若您的肩痛是在無明顯外傷下逐漸發生，且活動範圍日漸縮小，夜間痛明顯，應及早至骨科或復健科就診，進行理學檢查。必要時可搭配超音波或MRI確診，並同時評估血糖控制狀況。
+              </p>
+
+              <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+                Q2. 除了藥物與治療，日常生活中能做什麼幫助五十肩恢復？
+              </h3>
+              <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 1.5rem; text-align: justify;">
+                每天定時做溫和的鐘擺運動（pendulum exercise）、爬牆練習（wall-climbing exercise）等伸展動作，有助於維持並逐步恢復關節活動度。此外，睡姿的調整（避免壓迫患側肩）、熱敷患部（疼痛期冰敷，解凍期熱敷）也有輔助效果。對糖尿病患者而言，規律的有氧運動（如快走、游泳）不僅有助於血糖控制，也能促進全身組織的代謝環境改善，間接有利於五十肩康復。
+              </p>
+
+              <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+                Q3. 五十肩需要開刀嗎？手術效果如何？
+              </h3>
+              <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+                絕大多數五十肩（包括糖尿病患者）可透過保守治療（物理治療、注射）獲得改善，不需要手術。手術（主要是關節鏡關節囊鬆解術）通常保留給：保守治療6個月以上仍無顯著改善者。糖尿病患者的手術效果，根據研究，整體上仍能獲得良好的功能改善，但初期改善幅度可能不如非糖尿病患者，且術後恢復較慢，需更積極配合復健。
+                <sup><a href="https://doi.org/10.1016/j.jcot.2018.04.003" target="_blank" rel="noopener noreferrer" style="color: #22d3ee; text-decoration: underline;">[5]</a></sup>.
+              </p>
+
+              <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+                Q4. 五十肩會復發嗎？另一側肩膀也會得嗎？
+              </h3>
+              <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+                同一側肩膀復發率低（約14%），但對側肩膀確實有發病風險——研究指出約6-17%的患者會在另一側也出現五十肩，且糖尿病患者的雙側發病率更高。預防之道在於保持肩部規律活動、積極控制糖尿病，並在發現早期症狀時及時就醫。
+                <sup><a href="https://doi.org/10.1136/bmjopen-2022-062920" target="_blank" rel="noopener noreferrer" style="color: #22d3ee; text-decoration: underline;">[4]</a></sup>.
+              </p>
+
+
+            </div>
+          </section>
+
+          <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+          <div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+            <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與呼籲行動</h2>
+            
+            <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+              五十肩與糖尿病之間，不是巧合，而是深層代謝失衡的外在表現。糖化、慢性炎症、微血管病變——這些糖尿病的經典病理機制，無一不在肩關節囊中留下它們的印記。
+            </p>
+            
+            <p style="color: #475569; font-size: 1.05rem;">
+              如果您是糖尿病患者，請記住：<strong style="color: #1e293b;">肩膀健康是糖尿病整體管理的一部分</strong>。定期請醫師評估肩關節活動度、積極維持血糖控制、不忽視任何早期肩痛信號，是預防五十肩的最有效策略。
+            </p>
+
+            <p style="color: #475569; font-size: 1.05rem;">
+              如果您已確診五十肩，請不要灰心——即使是糖尿病相關的頑固型五十肩，在規範化的多模態治療下（物理治療＋適當注射＋血糖管理），絕大多數患者都能獲得顯著的功能改善。
+            </p>
+
+            <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+              <p style="margin-bottom: 16px; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+                若您或身旁的糖尿病患者有肩膀疼痛或活動受限的症狀，請儘速預約復健科門診，進行全面評估，把握治療的黃金時期，另外控制好血糖對五十肩也是非常重要的，推薦新竹內分泌科好醫師。
+              </p>
+<a href="https://anfulin.com.tw/clinic-hours/metabolic-endocrinology/" 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+  前往林均賢內分泌專科醫師
+</a>
+            </div>
+          </div>
+
+      `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+          <div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+            <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+              <li style="margin-bottom: 0.8rem;">
+                <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                  Zreik NH, Malik RA, Charalambous CP. (2016). Adhesive capsulitis of the shoulder and diabetes: a meta-analysis of prevalence. Muscles Ligaments Tendons J, 6(1), 26–34. <a href="https://doi.org/10.11138/mltj/2016.6.1.026" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.11138/mltj/2016.6.1.026</a>
+                </span>
+              </li>
+              <li style="margin-bottom: 0.8rem;">
+                <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                  Dias R, Cutts S, Massoud S. (2005). Clinical Review: Frozen Shoulder. BMJ, 331, 1453–1456. <a href="https://doi.org/10.1136/bmj.331.7530.1453" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bmj.331.7530.1453</a>
+                </span>
+              </li>
+              <li style="margin-bottom: 0.8rem;">
+                <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                  Dyer BP, Burton C, Rathod-Mistry T, Blagojevic-Bucknall M, van der Windt DA. (2021). Diabetes as a Prognostic Factor in Frozen Shoulder: A Systematic Review. Arch Rehabil Res Clin Transl, 3(3), 100141. <a href="https://doi.org/10.1016/j.arrct.2021.100141" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1016/j.arrct.2021.100141</a>
+                </span>
+              </li>
+              <li style="margin-bottom: 0.8rem;">
+                <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                  Dyer BP, Rathod-Mistry T, Burton C, van der Windt D, Bucknall M. (2023). Diabetes as a risk factor for the onset of frozen shoulder: a systematic review and meta-analysis. BMJ Open, 13(1), e062920. <a href="https://doi.org/10.1136/bmjopen-2022-062920" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bmjopen-2022-062920</a>
+                </span>
+              </li>
+              <li style="margin-bottom: 0.8rem;">
+                <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                  Patel AN, Davies AJ, Bhatt M. (2019). Chronic adhesive capsulitis (Frozen shoulder): Comparative outcomes of treatment in patients with diabetes and obesity. J Clin Orthop Trauma, 10(2), 258–263. <a href="https://doi.org/10.1016/j.jcot.2018.04.003" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1016/j.jcot.2018.04.003</a>
+                </span>
+              </li>
+              <li style="margin-bottom: 0.8rem;">
+                <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                  Tighe CB, Oakley WS Jr. (2012). Effects of glycemic control on prevalence of diabetic frozen shoulder. J Shoulder Elbow Surg. <a href="https://pubmed.ncbi.nlm.nih.gov/22617920/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 22617920</a>
+                </span>
+              </li>
+              <li style="margin-bottom: 0.8rem;">
+                <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                  Dyer BP, Burton C, et al. (2023). Pathophysiology of frozen shoulder. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9815013/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC9815013</a>
+                </span>
+              </li>
+              <li style="margin-bottom: 0.8rem;">
+                <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                  Snyder T1D, Edelman S. (2025). Frozen Shoulder and Diabetes: Clinical Case Reports. <a href="https://t1dexchange.org/frozen-shoulder-and-diabetes-is-there-a-connection/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">T1D Exchange, January 2025</a>
+                </span>
+              </li>
+              <li style="margin-bottom: 0.8rem;">
+                <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                  Albishi A, et al. (2024). Impact of Glycemic Control on Shoulder Proprioception in Type 2 Diabetes Mellitus. <a href="https://doi.org/10.2147/JMDH.S472025" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.2147/JMDH.S472025</a>
+                </span>
+              </li>
+              <li style="margin-bottom: 0.8rem;">
+                <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                  Li W, Lou J, Huangfu W, Han D. (2023). Type 2 diabetes and fasting glycemic traits are causal factors of frozen shoulder. <a href="https://pubmed.ncbi.nlm.nih.gov/37748531/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 37748531</a>
+                </span>
+              </li>
+              <li style="margin-bottom: 0.8rem;">
+                <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                  Cleveland Shoulder Institute. (2025). The Increased Risk of Frozen Shoulder During Menopause Explained. <a href="https://clevelandshoulder.com/why-are-women-more-prone-to-frozen-shoulder/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Cleveland Shoulder Institute</a>
+                </span>
+              </li>
+              <li style="margin-bottom: 0.8rem;">
+                <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                  Huang SW, Lin JW, Wang WT, et al. (2014). Hyperthyroidism is a risk factor for developing adhesive capsulitis of the shoulder. <a href="https://doi.org/10.1038/srep04183" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1038/srep04183</a>
+                </span>
+              </li>
+              <li style="margin-bottom: 0.8rem;">
+                <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                  輝馥診所（2019）。甲狀腺功能好壞，與五十肩也有關係。 <a href="https://retreat-clinic.com/2019/01/08/%E7%94%B2%E7%8B%80%E8%85%BA%E5%8A%9F%E8%83%BD%E5%A5%BD%E5%A3%9E%EF%BC%8C%E8%88%87%E4%BA%94%E5%8D%81%E8%82%A9%E4%B9%9F%E6%9C%89%E9%97%9C%E4%BF%82/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">輝馥診所官方部落格</a>
+                </span>
+              </li>
+              <li style="margin-bottom: 0.8rem;">
+                <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                  台北原力復健科診所·侯鐘堡醫師（2021）。五十肩深度討論—醫學期刊翻譯分析。 <a href="https://drbao.org/frozen-shoulder3/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">台北原力復健科診所</a>
+                </span>
+              </li>
+              <li style="margin-bottom: 0.8rem;">
+                <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                  早安健康編輯部（2023）。五十肩治療方式完整解析。 <a href="https://www.edh.tw/article/16019" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">早安健康</a>
+                </span>
+              </li>
+              <li style="margin-bottom: 0.8rem;">
+                <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+                  Cancienne JM, et al. (2018). Association of Perioperative Glycemic Control With Deep Postoperative Infection After Shoulder Arthroplasty. <a href="https://pubmed.ncbi.nlm.nih.gov/29688958/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 29688958</a>
+                </span>
+              </li>
+            </ol>
+          </div>
+        </article>
+      </main>
+
+      <footer class="border-t border-zinc-800 text-gray-400 text-center py-8 text-sm mt-8" style="font-family: 'system-ui', sans-serif;">
+        <p>本文內容僅供醫學衛教參考，不構成診療建議。請諮詢您的主治醫師以獲得個人化的醫療建議。</p>
+        <p class="mt-2">© 2025 醫學知識編輯團隊</p>
+      </footer>
+    </div>
+  `
+},
+
+{
+  id: 'mounjaro-vs-wegovy-vs-rybelsus',
+  title: '猛健樂 vs 週纖達 vs 瑞倍適：三大腸泌素藥物完整比較指南',
+  lastModified: '2026-04-11',
+  category: '衛教文章',
+  date: '2026-04-11',
+  summary: '深度比較猛健樂（Mounjaro/Tirzepatide）、週纖達（Wegovy/Semaglutide）與瑞倍適（Rybelsus）的減重效果、副作用、使用方式與費用，結合SURMOUNT-5最新臨床實證，協助患者選擇最適合自己的減重方案。',
+  coverImage: '/images/news/article/mounjaro-vs-wegovy-vs-rybelsus.webp',
+  seoTitle: '猛健樂 vs 週纖達 vs 瑞倍適：三大腸泌素藥物完整比較指南',
+  seoDescription: '深度比較猛健樂（Mounjaro/Tirzepatide）、週纖達（Wegovy/Semaglutide）與瑞倍適（Rybelsus）的減重效果、副作用、使用方式與費用，結合SURMOUNT-5最新臨床實證，協助患者選擇最適合自己的減重方案。',
+  keywords: ['猛健樂', '週纖達', '瑞倍適', 'Mounjaro', 'Wegovy', 'Rybelsus', '腸泌素', '減重', 'Tirzepatide', 'Semaglutide'],
+  contentHtml: `
+
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    猛健樂（Mounjaro®/Tirzepatide）、週纖達（Wegovy®/Semaglutide 注射劑）與瑞倍適（Rybelsus®/Semaglutide 口服錠）同屬腸泌素類藥物，但機轉、劑型、減重效果與適用族群各有不同。若以純粹減重效果論，猛健樂憑藉 GIP＋GLP-1 雙重機轉，在 SURMOUNT-5 臨床試驗中創下 72 週平均減重 20.2% 的歷史紀錄，優於週纖達的 13.7%。週纖達則擁有最完整的心血管保護證據，適合高心血管風險患者。瑞倍適以口服錠劑形式突破注射恐懼，但吸收率受飲食影響大，整體減重效果相對較低。三種藥物皆為處方藥，須由專業醫師評估後方可使用，並須配合飲食與運動以達最佳療效。
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h2>前言：台灣肥胖危機與腸泌素藥物的崛起</h2>
+<p>根據衛生福利部國民健康署統計，台灣 31 歲以上成人超過 80% 體脂肪過高，成年人過重與肥胖比例已高達 50.85%，意即每兩位成人中就有一位正面臨體重管理的挑戰。<sup><a href="https://health.tvbs.com.tw/medical/359171" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[1]</a></sup> 肥胖不僅影響外觀，更與近 200 種慢性疾病高度相關，已被世界衛生組織正式定義為一種慢性疾病。</p>
+<br>
+<p>在此背景下，以「腸泌素）」為作用基礎的注射型與口服型藥物，近年成為全球醫學界最矚目的治療突破。2025 年，台灣衛福部先後正式核准猛健樂（Mounjaro®）的減重適應症（2025 年 6 月）以及週纖達（Wegovy®）正式上市（2025 年 4 月），加上早於 2022 年核准的口服藥瑞倍適（Rybelsus®），台灣患者現在擁有前所未有的多元治療選項。<sup><a href="https://drglowbeauty.com.tw/service/mounjaro" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[2]</a></sup><sup><a href="https://www.dr-heichao.com.tw/drnews_view.php?t=2&mpmid=9&minfoid=704" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[3]</a></sup></p>
+<br>
+<p>然而，面對選擇，許多患者感到困惑：這三種藥物到底有什麼差異？哪一種適合自己？本文將從藥理機轉、臨床實證、使用方法、副作用與費用等多個面向，為你提供最完整、最實證的比較分析。</p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h2>一、三種藥物的基本介紹與藥理機轉</h2>
+
+<h3>猛健樂（Mounjaro®）：雙腸泌素革命</h3>
+<p>猛健樂的主要成分為 Tirzepatide，由美國禮來藥廠（Eli Lilly and Company）研發，是全球第一個同時作用於 GIP（葡萄糖依賴型胰島素釋放胜肽）與 GLP-1（類升糖素胜肽-1）兩種腸泌素受體的「雙受體促效劑」。<sup><a href="https://webdept.fjuh.fju.edu.tw/FjuhDep/rdwe/mounjaro/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[4]</a></sup></p>
+<p><strong>其作用機轉如下：</strong></p>
+<ul>
+  <li><strong>GLP-1 受體促效</strong>：促進胰島素分泌、延緩胃排空、降低食慾、抑制升糖素</li>
+  <li><strong>GIP 受體促效</strong>：提升胰島素敏感性、促進脂肪代謝、強化能量利用效率，同時有助於降低噁心嘔吐的副作用感受</li>
+</ul>
+<p>這種雙重機轉，正是猛健樂能在減重與控糖上大幅超越傳統單純 GLP-1 藥物的核心原因。台灣衛福部已於 2025 年 6 月正式核准猛健樂的減重適應症，適用於 BMI ≥ 30 或 BMI ≥ 27 合併至少一項體重相關共病的成人。<sup><a href="https://drglowbeauty.com.tw/service/mounjaro" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[2]</a></sup></p>
+
+<h3>週纖達（Wegovy®）：GLP-1 單受體的心血管守護者</h3>
+<p>週纖達主成分為 Semaglutide，由丹麥藥廠諾和諾德（Novo Nordisk）研發，與人體自然分泌的 GLP-1 荷爾蒙有高達 94% 的結構同源性。其半衰期約為一週，因此僅需每週皮下注射一次即可維持穩定藥物濃度。<sup><a href="https://tpshow.net/Wegovy-35370" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[5]</a></sup></p>
+<p><strong>作用機轉聚焦於 GLP-1 受體，包含：</strong></p>
+<ul>
+  <li>向大腦傳遞飽足訊號，降低食慾與熱量攝取</li>
+  <li>延緩胃排空，延長飽足感</li>
+  <li>促進胰島素分泌並抑制升糖素</li>
+  <li>具有心血管保護的獨特優勢，可顯著降低重大心血管不良事件風險</li>
+</ul>
+<p>週纖達於 2025 年 4 月在台灣正式上市，台灣正式名稱為「週纖達諾特筆」（衛部菌疫輸字第 001224-001228 號）。<sup><a href="https://www.dr-heichao.com.tw/drnews_view.php?t=2&mpmid=9&minfoid=704" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[3]</a></sup></p>
+
+<h3>瑞倍適（Rybelsus®）：全球首款口服 GLP-1 藥物</h3>
+<p>瑞倍適同樣含有 Semaglutide，但以每日口服錠劑的創新形式給藥，是全球第一款、也是台灣第一個核准的口服 GLP-1 受體促效劑，於 2022 年取得台灣 TFDA 核准。<sup><a href="https://www.regentaiwan.com/news/rybelsus" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[6]</a></sup></p>
+<p>為了克服 GLP-1 類藥物在胃中易被蛋白酶分解的問題，瑞倍適採用 SNAC吸收增強劑包覆藥錠，可中和局部胃酸並促進胃黏膜吸收，使 Semaglutide 得以口服給藥。<sup><a href="https://doctorfit.com.tw/doctors-articles/rybelsus1/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[7]</a></sup> 目前瑞倍適在台灣核准適應症為第二型糖尿病血糖控制，用於減重屬於適應症外（off-label）使用，須由醫師評估。</p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h2>二、三種藥物完整比較表格</h2>
+<style>
+  .custom-table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+    font-size: 15px;
+    background-color: #ffffff;
+    color: #1f2937;
+    min-width: 800px; /* 確保內容不擠壓 */
+  }
+
+  /* 表頭樣式 */
+  .modern-table thead tr {
+    background-color: #1e3a8a; /* 深藍色 */
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .modern-table th {
+    padding: 16px 12px;
+    border-bottom: 2px solid #111827;
+    letter-spacing: 0.5px;
+  }
+
+  /* 單元格樣式 */
+  .modern-table td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    line-height: 1.5;
+  }
+
+  /* 第一欄側邊標題加強反差 */
+  .modern-table td:first-child {
+    background-color: #f9fafb;
+    font-weight: 600;
+    color: #111827;
+    width: 160px;
+  }
+
+  /* 交錯行變色 */
+  .modern-table tbody tr:nth-of-type(even) {
+    background-color: #f3f4f6;
+  }
+
+  /* 滑鼠懸停效果 */
+  .modern-table tbody tr:hover {
+    background-color: #e0e7ff;
+    transition: background-color 0.2s ease;
+  }
+
+  /* 響應式調整 */
+  @media (max-width: 600px) {
+    .modern-table {
+      font-size: 14px;
+    }
+  }
+</style>
+
+<div class="custom-table-container">
+  <table class="modern-table">
+    <thead>
+      <tr>
+        <th>比較項目</th>
+        <th>猛健樂（Mounjaro®）</th>
+        <th>週纖達（Wegovy®）</th>
+        <th>瑞倍適（Rybelsus®）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>主成分</td>
+        <td>Tirzepatide</td>
+        <td>Semaglutide</td>
+        <td>Semaglutide</td>
+      </tr>
+      <tr>
+        <td>作用機轉</td>
+        <td>GIP ＋ GLP-1 雙受體促效劑</td>
+        <td>GLP-1 單受體促效劑</td>
+        <td>GLP-1 單受體促效劑</td>
+      </tr>
+      <tr>
+        <td>劑型</td>
+        <td>每週一次皮下注射</td>
+        <td>每週一次皮下注射</td>
+        <td>每日一次口服錠劑</td>
+      </tr>
+      <tr>
+        <td>起始劑量</td>
+        <td>2.5 mg/週</td>
+        <td>0.25 mg/週</td>
+        <td>3 mg/日</td>
+      </tr>
+      <tr>
+        <td>最高劑量</td>
+        <td>15 mg/週</td>
+        <td>2.4 mg/週</td>
+        <td>14 mg/日</td>
+      </tr>
+      <tr>
+        <td>72 週平均減重幅度</td>
+        <td>約 20.2%（SURMOUNT-5）</td>
+        <td>約 13.7%（SURMOUNT-5）</td>
+        <td>約 9–15%（PIONEER 試驗）</td>
+      </tr>
+      <tr>
+        <td>HbA1c 平均降幅</td>
+        <td>約 2.0%–2.3%</td>
+        <td>約 1.86%</td>
+        <td>約 1.0%–1.4%</td>
+      </tr>
+      <tr>
+        <td>台灣核准減重適應症</td>
+        <td>✅ 是 (2025 年 6 月)</td>
+        <td>✅ 是 (2025 年 4 月)</td>
+        <td>❌ 否 (僅限糖尿病)</td>
+      </tr>
+      <tr>
+        <td>青少年 (≥12歲)</td>
+        <td>❌ 尚未核准</td>
+        <td>✅ 美國已核准</td>
+        <td>❌ 否</td>
+      </tr>
+      <tr>
+        <td>心血管保護證據</td>
+        <td>尚在研究中</td>
+        <td>✅ 強效 (SELECT 試驗)</td>
+        <td>有限</td>
+      </tr>
+      <tr>
+        <td>優勢</td>
+        <td><strong>最強減重效果、雙重控糖</strong></td>
+        <td><strong>心血管保護、青少年適用</strong></td>
+        <td><strong>免注射、口服方便</strong></td>
+      </tr>
+      <tr>
+        <td>劣勢</td>
+        <td>費用較高、注射劑型</td>
+        <td>注射劑型</td>
+        <td>吸收率低、服藥限制多</td>
+      </tr>
+      <tr>
+        <td>台灣健保給付</td>
+        <td>❌ 否（自費）</td>
+        <td>❌ 否（自費）</td>
+        <td>❌ 否（自費）</td>
+      </tr>
+      <tr>
+        <td>製藥公司</td>
+        <td>美國禮來 (Eli Lilly)</td>
+        <td>丹麥諾和諾德 (Novo Nordisk)</td>
+        <td>丹麥諾和諾德 (Novo Nordisk)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h2>三、臨床療效深度比較：數字說話</h2>
+
+<h3>減重效果：猛健樂勝出，但數字背後的細節更重要</h3>
+<p>2025 年 5 月，《新英格蘭醫學期刊》（NEJM）發表了史上首個針對猛健樂與週纖達的直接比較臨床試驗——SURMOUNT-5 試驗。<sup><a href="https://doi.org/10.1056/NEJMoa2416394" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[8]</a></sup></p>
+<p>試驗設計：751 名無第二型糖尿病的肥胖或過重成人（至少合併一項體重相關共病），隨機分配至猛健樂（最大耐受劑量 10mg 或 15mg）或週纖達（最大耐受劑量 1.7mg 或 2.4mg），持續 72 週。</p>
+<p><strong>主要結果：</strong></p>
+<ul>
+  <li>猛健樂組平均體重下降 <strong>20.2%</strong>（相當於平均減去約 22.8 公斤）</li>
+  <li>週纖達組平均體重下降 <strong>13.7%</strong>（相當於平均減去約 15.0 公斤）</li>
+  <li>猛健樂較週纖達多出 <strong>47% 的相對減重幅度</strong>，差異具高度統計顯著性<sup><a href="https://pubmed.ncbi.nlm.nih.gov/40353578/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[9]</a></sup></li>
+</ul>
+<p>腰圍改變方面，猛健樂組腰圍平均縮減 18.4 公分，週纖達組為 13.0 公分。此外，達到減重 25% 以上的比例，猛健樂組為 31.6%，週纖達組僅 16.1%。<sup><a href="https://www.acc.org/Latest-in-Cardiology/Journal-Scans/2025/07/10/09/09/SURMOUNT-5" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[10]</a></sup></p>
+<p>一項涵蓋多項 RCT 及真實世界資料的系統性回顧與統合分析研究（2025 年發表）進一步確認，在高劑量（&gt; 10 mg）長期使用（&gt; 6 個月）的情境下，猛健樂的減重效果平均比週纖達多出 5–6.5 個百分點，優勢十分穩健。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12151102/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[11]</a></sup></p>
+<p><strong>真實世界數據的補充：</strong>美國 Komodo Health 數據庫的真實世界研究（SHAPE 研究）顯示，在無第二型糖尿病的過重/肥胖患者中，使用 猛健樂一年的平均減重為 16.5%，週纖達 2.4 mg 則為 14.1%，差距較臨床試驗縮小，但仍維持 猛健樂 的優勢。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12579654/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[12]</a></sup></p>
+
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+  <h4 style="margin-top: 0; color: #0e7490;">💡 一個重要的臨床細節</h4>
+  <p style="margin-bottom: 0; color: #334155;">
+    SURMOUNT-5 試驗是以「最大耐受劑量」給藥，並非所有人都能達到最高劑量。因腸胃副作用停藥的比例，週纖達組（5.6%）反而高於猛健樂組（2.7%），這意味著猛健樂在腸胃耐受性方面可能略優於週纖達——這是臨床實務上值得關注的細微差異。
+  </p>
+</div>
+
+<h3>血糖控制：猛健樂的糖尿病優勢更為突出</h3>
+<p>根據 SURPASS-2 試驗，猛健樂各劑量組的 HbA1c 平均降幅分別為：5 mg 組 -2.01%、10 mg 組 -2.24%、15 mg 組 -2.30%。相比之下，週纖達 1 mg 組的 HbA1c 降幅為 -1.86%，三個劑量的猛健樂均顯著優於週纖達。<sup><a href="https://azurebeauty56.com/doctor-column/mounjarovswegovy/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[13]</a></sup> 達到 HbA1c &lt; 7% 目標的比例，猛健樂最高劑量組高達 92%，遠超週纖達的表現。</p>
+<p>輔大醫院的資料指出，對非糖尿病及糖尿病受試者，猛健樂分別可減去約 20.9% 及 14.7% 的體重，且可使 HbA1c 降低超過 2.0%。<sup><a href="https://webdept.fjuh.fju.edu.tw/FjuhDep/rdwe/mounjaro/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[4]</a></sup></p>
+
+<h3>心血管保護：週纖達的獨特優勢</h3>
+<p>這是三種藥物中差異最鮮明之處。週纖達在 SELECT 試驗（BMI ≥ 27 合併心血管疾病但無糖尿病）中，證明可顯著降低重大心血管不良事件（MACE）風險，包括心血管死亡、非致命心肌梗塞及非致命中風。這項心血管保護的適應症已獲台灣 TFDA 核准。<sup><a href="https://www.sensenyoho.com/info/post-theme-9" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[14]</a></sup></p>
+<p>相比之下，猛健樂的心血管保護數據（SURPASS-CVOT）目前仍有部分結果待完整公布。因此，對於有明確心血管疾病史（如曾有心肌梗塞、中風或冠心病）的患者，週纖達目前具有更強的循證依據。</p>
+<p>瑞倍適的口服 Semaglutide 心血管保護數據則相對有限，且由於口服劑量（最高 14 mg/日）遠低於注射型週纖達的有效暴露量，其心血管保護作用無法等同於週纖達。</p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h2>四、使用方式詳細說明</h2>
+
+<h3>猛健樂（Mounjaro®）使用方式</h3>
+<ol>
+  <li><strong>起始劑量</strong>：每週一次皮下注射 2.5 mg，持續 4 週</li>
+  <li><strong>劑量遞增</strong>：每 4 週可增加 2.5 mg，依序為 5 mg、7.5 mg、10 mg、12.5 mg、15 mg</li>
+  <li><strong>注射部位</strong>：腹部（肚臍 5 公分以外）、大腿或上臂，每次輪替部位</li>
+  <li><strong>注射時間</strong>：每週固定同一天，一天中任何時間均可，無需空腹</li>
+  <li><strong>儲存方式</strong>：未開封需冷藏（2–8°C）；開封後可室溫（不超過 30°C）保存最多 21–30 天，切勿冷凍<sup><a href="https://aurelie-aesthetic.com/mounjaro/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[15]</a></sup></li>
+  <li><strong>漏針處理</strong>：漏針後 4 天（96 小時）內盡快補打；超過 4 天則略過，依原定時程注射下一針</li>
+</ol>
+
+<h3>週纖達（Wegovy®）使用方式</h3>
+<ol>
+  <li><strong>起始劑量</strong>：每週一次皮下注射 0.25 mg，持續 4 週</li>
+  <li><strong>劑量遞增</strong>：每 4 週逐步增加，依序為 0.5 mg、1 mg、1.7 mg，最終維持劑量 2.4 mg</li>
+  <li><strong>注射部位</strong>：腹部（肚臍 5 公分以外）、上臂或大腿，每次輪替部位，90 度垂直刺入</li>
+  <li><strong>注射時間</strong>：每週固定同一天，一天中任何時間均可，無需空腹</li>
+  <li><strong>儲存方式</strong>：未使用前需冷藏；使用中可室溫（≤ 30°C）保存，不可冷凍</li>
+  <li><strong>漏針處理</strong>：5 天內可補打；已超過 5 天則略過，依原定時程注射下一針<sup><a href="https://www.vigorbeauty.com/service.php?act=view&no=124" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[16]</a></sup></li>
+</ol>
+
+<h3>瑞倍適（Rybelsus®）使用方式</h3>
+<p>瑞倍適的服藥規矩是三種藥物中最嚴格的，必須嚴格遵守：</p>
+<ol>
+  <li><strong>起始劑量</strong>：每日一次口服 3 mg，持續 1 個月；之後增至 7 mg/日；如需進一步改善血糖，可再增至 14 mg/日（每日最高劑量）</li>
+  <li><strong>服藥時機（關鍵！）</strong>：必須在<strong>空腹狀態下</strong>，搭配<strong>少量清水（不超過 120 ml/半杯）</strong>整顆吞服，不可剝開、壓碎或咀嚼</li>
+  <li><strong>服藥後等待</strong>：服藥後至少 <strong>30 分鐘內</strong>不可進食、喝水或服用其他口服藥物。等待時間越長，吸收率越佳<sup><a href="https://www.ktgh.com.tw/ktgh/Home/WesternMedDetail/8A908AC137E771A2D8C50EDC1E11BE54" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[17]</a></sup></li>
+  <li><strong>建議時機</strong>：通常建議早上起床後立即服藥，調早鬧鐘以確保服藥後 30 分鐘才吃早餐</li>
+</ol>
+
+<div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+  <p style="color: #9a3412; font-size: 14px; margin: 0;">
+    <strong>⚠️ 臨床觀察：</strong>許多患者在剛開始使用瑞倍適時，因為工作或生活習慣，往往無法堅持「嚴格空腹 30 分鐘」的服藥規則，導致 Semaglutide 實際吸收率大幅下降（若搭配食物服用，吸收率可能降低 34% 以上），進而影響療效。這是瑞倍適在真實世界表現可能不如臨床試驗的核心原因之一。
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h2>五、副作用與安全性比較</h2>
+<p>三種藥物因均含有 GLP-1 受體促效機制，腸胃道相關副作用是最常見的共同問題：</p>
+<p><strong>常見副作用（三種藥物共通）：</strong></p>
+<ul>
+  <li>噁心、嘔吐（尤其在劑量遞增階段）</li>
+  <li>腹瀉或便秘</li>
+  <li>腹脹、食慾明顯下降</li>
+  <li>輕微頭暈、倦怠感</li>
+</ul>
+<p>根據 SURMOUNT-5 試驗，因腸胃道副作用而停藥的比例，週纖達組（5.6%）高於猛健樂組（2.7%）。這可能與猛健樂中 GIP 受體促效的加入有關，GIP 受體活化被認為可以緩解部分 GLP-1 所引起的噁心感。<sup><a href="https://www.acc.org/Latest-in-Cardiology/Journal-Scans/2025/07/10/09/09/SURMOUNT-5" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[10]</a></sup></p>
+<p><strong>嚴重副作用與禁忌症（三種藥物共通）：</strong></p>
+<ul>
+  <li>個人或家族有甲狀腺髓質癌（MTC）病史者禁用</li>
+  <li>有第二型多發性內分泌腫瘤症候群（MEN 2）者禁用</li>
+  <li>有嚴重急性胰臟炎病史者禁用</li>
+  <li>孕婦及哺乳期婦女禁用（計畫懷孕者須提前至少 2 個月停藥）</li>
+  <li>對藥物成分過敏者禁用</li>
+</ul>
+<p><strong>瑞倍適的特殊交互作用提醒：</strong></p>
+<p>口服 Semaglutide 與 Levothyroxine（甲狀腺素藥物）同時使用時，後者的甲狀腺素暴露量（AUC）可增加約 33%，需監測甲狀腺參數。與 Rosuvastatin（他汀類降血脂藥）併用時，後者的 AUC 可增加 41%，需注意劑量調整。<sup><a href="https://www.ktgh.com.tw/ktgh/Home/WesternMedDetail/8A908AC137E771A2D8C50EDC1E11BE54" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[17]</a></sup></p>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+  <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 破解迷思：三大常見誤區解析
+  </h2>
+  
+  <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+          <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+          <div>
+            <strong>誤區一：「瑞倍適跟週纖達一樣，只是換成口服，效果相同」</strong><br>
+            <span style="display: block; margin-top: 0.5rem;"><strong>正確觀念：</strong>雖然二者同含 Semaglutide，但口服 Semaglutide 的生體可用率遠低於注射型。口服版本需以高達 14 mg/日的劑量才能達到接近週纖達 0.5 mg/週注射的血中暴露量。<sup><a href="https://www.pofeng.org/w/wegovy" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[18]</a></sup> 若與食物同服，吸收率可大幅降低。臨床研究顯示，口服 Semaglutide 14 mg/日的減重效果約為注射型 Semaglutide 2.4 mg/週的 60–70%，兩者並非等效。</span>
+          </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+          <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+          <div>
+            <strong>誤區二：「猛健樂副作用更嚴重，因為它更強效」</strong><br>
+            <span style="display: block; margin-top: 0.5rem;"><strong>正確觀念：</strong>直觀上可能認為藥物越強、副作用越大，但 SURMOUNT-5 試驗的數據恰恰相反。因腸胃不適停藥的比例，週纖達組（5.6%）實際上<strong>高於</strong>猛健樂組（2.7%）。<sup><a href="https://www.acc.org/Latest-in-Cardiology/Journal-Scans/2025/07/10/09/09/SURMOUNT-5" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[10]</a></sup> 這與猛健樂中 GIP 受體促效的加入有關，GIP 受體活化可能緩解部分 GLP-1 引起的噁心反應。</span>
+          </div>
+      </li>
+      <li style="margin-bottom: 0; display: flex; align-items: start;">
+          <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+          <div>
+            <strong>誤區三：「減重藥物只要停藥就會完全復胖，所以沒有意義」</strong><br>
+            <span style="display: block; margin-top: 0.5rem;"><strong>正確觀念：</strong>停藥後確實存在體重回升的風險，但這並非意味著減重藥物沒有價值。藥物輔助減重期間同步建立的健康飲食習慣與運動模式，可大幅降低停藥後的復胖幅度。世界衛生組織在 2025 年最新「肥胖用藥指南」中，明確建議成年肥胖患者可長期使用減重藥物作為治療的一部分。<sup><a href="https://drglowbeauty.com.tw/service/mounjaro" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[2]</a></sup></span>
+          </div>
+      </li>
+  </ul>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: rgba(6, 182, 212, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); border-radius: 1.5rem; padding: 2.5rem 1.25rem; margin-bottom: 3rem; font-family: sans-serif;">
+  
+  <h2 style="color: #22d3ee; margin-top: 0; margin-bottom: 1.5rem; line-height: 1.4; font-size: 1.5rem; letter-spacing: -0.02em;">
+    <span style="display: inline-block;">👨‍⚕️<a href="/about/doctors" style="color: #22d3ee; text-decoration: none;">林羿辰醫師</a>觀點：三大腸泌素該如何抉擇？</span>
+  </h2>
+  
+  <p style="font-size: 1.2rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 2.5rem; text-align: justify; letter-spacing: -0.01em;">
+    沒有一種藥物適合所有人，重點在於針對您的健康狀況與生活型態來挑選最符合需求的方案。
+  </p>
+
+  <div style="display: grid; gap: 1.8rem;">
+    
+    <div style="padding: 0;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">1. 我是第二型糖尿病患者，同時需要減重，該如何選擇？</h4>
+      <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;">
+        對於合併第二型糖尿病與肥胖（俗稱「糖胖症」）的患者，<strong>猛健樂</strong>是目前臨床實證最強的選項。其雙重 GIP/GLP-1 機轉不僅在控糖方面優於傳統 GLP-1 藥物，在減重幅度上同樣名列前茅。SURPASS 系列試驗證明，對第二型糖尿病患者，猛健樂可使 HbA1c 平均下降 2.0–2.3%，並減去約 14.7% 體重。<sup><a href="https://webdept.fjuh.fju.edu.tw/FjuhDep/rdwe/mounjaro/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[4]</a></sup>
+        <br><br>
+        <span style="color: #38bdf8;">⚡ 臨床重要提醒：部分糖尿病患者在使用雙重腸泌素藥物後，血糖改善速度快且幅度大，若同時服用磺醯脲類藥物或胰島素，低血糖風險相應提高，需與主治醫師密切溝通，適時調整同期使用的降血糖藥物劑量。</span>
+      </p>
+    </div>
+
+    <div style="padding: 0;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">2. 我有心臟病史或高心血管風險，但需要減重，哪種藥物最合適？</h4>
+      <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;">
+        對於有明確心血管疾病史（如心肌梗塞、腦中風、周邊動脈疾病）合併肥胖或過重的患者，<strong>週纖達（Wegovy）</strong>目前擁有最強的心血管保護臨床證據，其 SELECT 試驗已證明可顯著降低 MACE（重大心血管不良事件）風險。這也是三種藥物中唯一在台灣正式取得「心血管風險降低」適應症的藥物。
+      </p>
+    </div>
+
+    <div style="padding: 0;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">3. 我非常抗拒打針，但想用腸泌素藥物，只能選瑞倍適嗎？</h4>
+      <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;">
+        對於真的無法接受任何注射劑型的患者，<strong>瑞倍適</strong>目前是台灣唯一可選的口服 GLP-1 藥物。雖然減重效果相對有限，但研究顯示口服 Semaglutide 50 mg（未來高劑量版本）在 15 個月內平均可減去約 15% 體重，效果接近注射型。<sup><a href="https://www.bc-huang.com/glp1-semaglutide-liraglutide-dulaglutide-tirzepatide/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[19]</a></sup> 選擇瑞倍適的患者，需要特別做好「每天早起後立即服藥、等待 30 分鐘後才進食」的生活習慣調整。
+      </p>
+    </div>
+
+    <div style="padding: 0;">
+      <h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">4. 我是純粹為了減重（無糖尿病），最在意的是最大效果，該選哪個？</h4>
+      <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;">
+        若患者符合適應症（BMI ≥ 30 或 BMI ≥ 27 合併共病），且主要訴求是最大化減重效果，<strong>猛健樂（Mounjaro®）</strong>目前是臨床實證最強的選擇。SURMOUNT-5 的數據已清楚顯示，在同樣使用最大耐受劑量的情況下，猛健樂的減重效果比週纖達多出約 47%（相對減重幅度）。<sup><a href="https://doi.org/10.1056/NEJMoa2416394" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[8]</a></sup>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<h2>八、費用參考與取得方式</h2>
+<p>三種藥物在台灣目前均未納入健保給付，皆為自費處方藥：</p>
+<ul>
+  <li><strong>猛健樂</strong>：依診所與劑量不同，每月費用約 $11000–$20,000 台幣不等（每支含 4 週用量）</li>
+  <li><strong>週纖達</strong>：依診所與劑量不同，1 mg 一支約 $9,000；1.7 mg 約 $12,000；2.4 mg 約 $16,000（每支含 4 週用量）<sup><a href="https://www.pofeng.org/w/wegovy" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[18]</a></sup></li>
+  <li><strong>瑞倍適</strong>：費用相對較低，每月約 $4,000–$8,000 台幣（但服藥限制多，需嚴格配合）</li>
+</ul>
+
+<div style="background-color: #fef2f2; border: 1px solid #fca5a5; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+  <p style="color: #991b1b; font-size: 14px; font-weight: bold; margin: 0;">
+    ⛔ 重要警示：三種藥物均屬處方藥，嚴禁透過網路、私人代購或非醫療管道購買。非正規管道的藥物可能為仿冒品、過期品或儲存不當，不僅無效，更可能危及生命。請務必透過合法醫療院所，由醫師評估後方可取得。
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center;">
+      <span style="margin-right: 8px;">🏆</span> 常見問題 FAQ：用藥安全與迷思解答
+    </h2>
+  </div>
+
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    <div style="width: 100%;">
+      
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.3rem; line-height: 1.4; display: block; width: 100%; clear: both;">
+        Q1：猛健樂、週纖達和瑞倍適，三種藥物可以同時使用嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem; text-align: justify;">
+        不可以。三種藥物均含有 GLP-1 受體促效成分，同時使用不會增加療效，反而會大幅增加嚴重副作用風險，包括嚴重噁心嘔吐、胰臟炎等。若需更換藥物，必須在專業醫師評估後，制定銜接方案，切勿自行更換或併用。
+      </p>
+
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.3rem; line-height: 1.4; display: block; width: 100%; clear: both;">
+        Q2：打了猛健樂或週纖達之後，停藥會立刻復胖嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem; text-align: justify;">
+        停藥後若未維持健康飲食與運動習慣，確實有體重回升的風險。然而「停藥 = 立刻復胖回原點」是過度誇大的說法。研究顯示，停藥後 1 年內部分患者確實會回升約三分之一到一半的減重量，但若能配合生活習慣調整，可有效減緩復胖速度。治療目標是將藥物視為建立新代謝基線的工具，而非永久依賴的必需品。
+      </p>
+
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.3rem; line-height: 1.4; display: block; width: 100%; clear: both;">
+        Q3：瑞倍適的服藥方式為什麼這麼麻煩？不照做會怎樣？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem; text-align: justify;">
+        瑞倍適使用 SNAC 吸收增強劑技術，必須在空腹狀態下，胃中酸鹼值低時才能達到最佳局部中和效果，促進藥物穿透胃黏膜吸收。如果搭配食物或大量的水服用，Semaglutide 的吸收量（AUC）可降低 34%、最大濃度（Cmax）可降低 32% 以上。簡而言之，不按規矩服藥，療效會大打折扣。<sup><a href="https://www.ktgh.com.tw/ktgh/Home/WesternMedDetail/8A908AC137E771A2D8C50EDC1E11BE54" target="_blank" rel="noopener noreferrer" style="color: #22d3ee; text-decoration: none;">[17]</a></sup>
+      </p>
+
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.3rem; line-height: 1.4; display: block; width: 100%; clear: both;">
+        Q4：猛健樂或週纖達使用期間，可以喝酒嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem; text-align: justify;">
+        建議限量或避免飲酒。酒精本身會影響血糖穩定性，與 GLP-1 類藥物合用可能加重低血糖風險（尤其與其他降糖藥併用時），同時也可能加重腸胃道不適症狀。若有社交場合無法完全避免飲酒，建議先與主治醫師討論，並注意飲酒量與觀察身體反應。
+      </p>
+
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.3rem; line-height: 1.4; display: block; width: 100%; clear: both;">
+        Q5：這三種藥物對肌肉量有影響嗎？停藥後肌肉會流失嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.1rem; margin-bottom: 1.5rem; text-align: justify;">
+        這是近年臨床上備受關注的議題。台灣 STEP12 研究的次分析顯示，使用 Semaglutide 減去的體重中，約 75% 為脂肪下降，25% 為瘦體組織（肌肉）流失。<sup><a href="https://www.pofeng.org/w/wegovy" target="_blank" rel="noopener noreferrer" style="color: #22d3ee; text-decoration: none;">[18]</a></sup> 因此，在使用任何腸泌素藥物期間，建議同步進行阻力訓練（如重量訓練）並確保充足的蛋白質攝取（每日每公斤體重至少 1.2–1.5 克蛋白質），以盡量保留肌肉量。
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 24px; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動呼籲</h2>
+  
+  <p style="color: #475569; margin-top: 16px;">
+    猛健樂、週纖達與瑞倍適代表著現代醫學在代謝疾病與肥胖治療上的重大突破。沒有一種藥物適合所有人——<strong>猛健樂</strong>以最強減重效果領先，<strong>週纖達</strong>以心血管保護獨樹一幟，<strong>瑞倍適</strong>以口服劑型克服注射恐懼。
+  </p>
+  
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0;">
+    <p style="margin: 0; color: #1e293b;">
+      最重要的是，<span style="color: #b91c1c; font-weight: bold;">這三種藥物都是處方藥，不是保健食品</span>。任何使用決策都必須在專業醫師評估後進行，並配合飲食調整、規律運動及定期追蹤，才能達到安全有效的長期成果。
+    </p>
+  </div>
+
+  <p style="font-weight: bold; color: #1e293b; margin-bottom: 12px;">如果你正在考慮使用上述任一藥物，建議你：</p>
+  
+  <ol style="color: #475569; padding-left: 20px;">
+    <li style="margin-bottom: 8px;">預約具備肥胖醫學或代謝疾病專長的醫師進行評估</li>
+    <li style="margin-bottom: 8px;">如實提供完整病史（心血管疾病史、甲狀腺疾病史、胰臟炎病史及現有用藥清單）</li>
+    <li style="margin-bottom: 8px;">請醫師根據你的 BMI、共病狀況、心血管風險與個人生活習慣，共同制定個人化治療計畫</li>
+    <li style="margin-bottom: 8px;">了解費用與療程長度，做好心理與財務準備</li>
+    <li style="margin-bottom: 8px;"><span style="text-decoration: underline; font-weight: 600;">切勿透過網路或非醫療管道購藥</span>，以維護自身用藥安全</li>
+  </ol>
+
+  <p style="color: #64748b; font-size: 15px; font-style: italic; margin-top: 24px; border-top: 1px solid #e2e8f0; padding-top: 16px; margin-bottom: 0;">
+    肥胖是疾病，需要完整的醫療照護，而非一個人默默承受。勇敢踏出尋求幫助的第一步，才是真正改變的開始。
+  </p>
+  
+</div>
+
+`,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.9rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.5; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+   <li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    健康2.0／TVBS（2025年）。猛健樂比週纖達更快瘦？2025最新價格、副作用指南。實證：台灣肥胖人口與猛健樂市場資訊。 
+    <a href="https://health.tvbs.com.tw/medical/359171" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://health.tvbs.com.tw/medical/359171</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    存奕美學診所（2026年2月）。猛健樂 Mounjaro 完整解析。實證：猛健樂台灣核准減重適應症時間（2025年6月）及衛教資訊。 
+    <a href="https://drglowbeauty.com.tw/service/mounjaro" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://drglowbeauty.com.tw/service/mounjaro</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    潮代診所 林黑潮（2026年）。Wegovy 週纖達諾特筆全解析。實證：週纖達台灣上市時間（2025年4月）及藥品核准資訊。 
+    <a href="https://www.dr-heichao.com.tw/drnews_view.php?t=2&mpmid=9&minfoid=704" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://www.dr-heichao.com.tw/drnews_view.php?t=2&mpmid=9&minfoid=704</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    輔大醫院智慧科學體重管理中心（2025年）。猛健樂：幫助控糖與減重的新選擇。實證：猛健樂雙重機轉、HbA1c 降幅與減重幅度臨床數據。 
+    <a href="https://webdept.fjuh.fju.edu.tw/FjuhDep/rdwe/mounjaro/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://webdept.fjuh.fju.edu.tw/FjuhDep/rdwe/mounjaro/</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    北秀健康管理（2025年）。Wegovy 週纖達全攻略！施打方式、臨床效果、副作用詳細揭露。實證：週纖達 GLP-1 機轉、半衰期特性及 STEP 試驗數據。 
+    <a href="https://tpshow.net/Wegovy-35370" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://tpshow.net/Wegovy-35370</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Regent Taiwan（2025年）。瑞倍適（Rybelsus®）全球首款口服 GLP-1 藥物介紹。實證：瑞倍適台灣上市時間（2022年）及 SNAC 吸收技術說明。 
+    <a href="https://www.regentaiwan.com/news/rybelsus" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://www.regentaiwan.com/news/rybelsus</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    原美學診所（2024年）。Semaglutide 的口服劑型（Rybelsus 瑞倍適）在台灣上市了！實證：SNAC 吸收增強劑技術及口服 GLP-1 藥物突破說明。 
+    <a href="https://doctorfit.com.tw/doctors-articles/rybelsus1/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://doctorfit.com.tw/doctors-articles/rybelsus1/</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Aronne LJ, et al.（2025年）. <em>Tirzepatide as Compared with Semaglutide for the Treatment of Obesity.</em> New England Journal of Medicine. 2025; 393(1). 實證：SURMOUNT-5 頭對頭試驗，猛健樂 vs 週纖達直接比較，平均減重 20.2% vs 13.7%。
+    <a href="https://doi.org/10.1056/NEJMoa2416394" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi: 10.1056/NEJMoa2416394</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    PubMed（2025年）. <em>Tirzepatide as Compared with Semaglutide for the Treatment of Obesity.</em> PMID: 40353578. 實證：SURMOUNT-5 試驗 PubMed 索引，確認 p &lt; 0.001 統計顯著性。 
+    <a href="https://pubmed.ncbi.nlm.nih.gov/40353578/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://pubmed.ncbi.nlm.nih.gov/40353578/</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    American College of Cardiology（2025年7月）. <em>SURMOUNT-5: Greater Loss of Weight, Waist Circumference With Tirzepatide Than Semaglutide.</em> 實證：腰圍縮減比較（-18.4 cm vs -13.0 cm）、停藥率比較（2.7% vs 5.6%）。 
+    <a href="https://www.acc.org/Latest-in-Cardiology/Journal-Scans/2025/07/10/09/09/SURMOUNT-5" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://www.acc.org/Latest-in-Cardiology/Journal-Scans/2025/07/10/09/09/SURMOUNT-5</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    PMC（2025年）. <em>Comparative Efficacy of Tirzepatide vs. Semaglutide in Reducing Body Weight: A Systematic Review and Meta-Analysis.</em> 實證：統合分析顯示 Tirzepatide 平均比 Semaglutide 多減重 4.23%（MD）。 
+    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12151102/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://pmc.ncbi.nlm.nih.gov/articles/PMC12151102/</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    PMC / SHAPE Study（2025年）. <em>Real-World Weight Loss Observed With Semaglutide and Tirzepatide in Patients with Overweight or Obesity Without Type 2 Diabetes.</em> 實證：真實世界一年追蹤，Tirzepatide 平均減重 16.5% vs Semaglutide 14.1%。 
+    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12579654/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://pmc.ncbi.nlm.nih.gov/articles/PMC12579654/</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    蒼嵐健康美學診所（2026年2月）。猛健樂 vs 週纖達 2款瘦瘦筆哪個減重更有效？醫師蒼藍鴿曝答案。實證：SURPASS-2 試驗 HbA1c 降幅比較數據。 
+    <a href="https://azurebeauty56.com/doctor-column/mounjarovswegovy/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://azurebeauty56.com/doctor-column/mounjarovswegovy/</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    千色診所（2025年）。週纖達 Wegovy 減重注射筆完整介紹。實證：週纖達心血管保護適應症（SELECT 試驗）說明。 
+    <a href="https://www.sensenyoho.com/info/post-theme-9" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://www.sensenyoho.com/info/post-theme-9</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    奧蕾莉美學診所（2026年1月）。猛健樂懶人包 效果/副作用/價錢。實證：猛健樂儲存方式、漏針處理及使用方法。 
+    <a href="https://aurelie-aesthetic.com/mounjaro/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://aurelie-aesthetic.com/mounjaro/</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    維格醫療集團（2025年）。週纖達 Wegovy 服務項目。實證：週纖達注射方式、漏針處理、副作用及禁忌症說明。 
+    <a href="https://www.vigorbeauty.com/service.php?act=view&no=124" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://www.vigorbeauty.com/service.php?act=view&no=124</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    光田綜合醫院（2022年）。Rybelsus 瑞倍適錠用藥指導——Semaglutide 劑量說明。實證：瑞倍適服藥規範、藥物動力學及藥物交互作用（Levothyroxine、Rosuvastatin 等）。 
+    <a href="https://www.ktgh.com.tw/ktgh/Home/WesternMedDetail/8A908AC137E771A2D8C50EDC1E11BE54" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://www.ktgh.com.tw/ktgh/Home/WesternMedDetail/8A908AC137E771A2D8C50EDC1E11BE54</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    李柏鋒診所（2025年）。週纖達 Wegovy 完整資訊。實證：費用資訊、口服 vs 注射型 Semaglutide 暴露量比較、肌肉流失比例（STEP12 台灣次分析）。 
+    <a href="https://www.pofeng.org/w/wegovy" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://www.pofeng.org/w/wegovy</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    黃柏誠醫師（2025年1月）。瘦瘦針腸泌素：口服到注射，減重到控糖，每天到每週。實證：口服 Semaglutide 50 mg 高劑量版本減重效果（15 個月平均減重 15%）。 
+    <a href="https://www.bc-huang.com/glp1-semaglutide-liraglutide-dulaglutide-tirzepatide/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://www.bc-huang.com/glp1-semaglutide-liraglutide-dulaglutide-tirzepatide/</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Jastreboff AM, et al.（2022年）. <em>Tirzepatide Once Weekly for the Treatment of Obesity.</em> N Engl J Med. 387(3):205-216. 實證：SURMOUNT-1 試驗，非糖尿病肥胖患者使用 Tirzepatide 15 mg，72 週平均減重 22.5%。
+    <a href="https://doi.org/10.1056/NEJMoa2206038" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi: 10.1056/NEJMoa2206038</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Wilding JPH, et al.（2021年）. <em>Once-Weekly Semaglutide in Adults with Overweight or Obesity.</em> N Engl J Med. 384(11):989-1002. 實證：STEP 1 試驗，使用 Semaglutide 2.4 mg 68 週，平均減重 14.9%。
+    <a href="https://doi.org/10.1056/NEJMoa2032183" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi: 10.1056/NEJMoa2032183</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.6rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Hankosky et al.（2025年）. <em>Tirzepatide 10 and 15 mg versus semaglutide 2.4 mg in people with obesity or overweight with type 2 diabetes: An indirect treatment comparison.</em> Diabetes, Obesity and Metabolism. 實證：間接比較研究，Tirzepatide 10 mg 及 15 mg 在第二型糖尿病患者中的體重降幅顯著優於 Semaglutide 2.4 mg。
+    <a href="https://doi.org/10.1111/dom.16401" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi: 10.1111/dom.16401</a>
+  </span>
+</li>  </ol>
+</div>
+
+<div style="background-color: #f3f4f6; border-radius: 8px; padding: 16px; font-size: 12px; color: #6b7280; margin-top: 32px;">
+  <strong>免責聲明：</strong>本文以衛教宣導及分享醫療新知為目的，非為廣告內容。文章中提及之藥物名稱、效果與使用方式均以醫師親自說明為準。任何藥物使用均需由專業醫師評估並開立處方，切勿自行購買或使用。效果因個人體質不同而有差異。
+</div>  `
+},
+
   {
     id: 'dr-lin-appointment-guide',
     title: '🕒 林羿辰醫師看診攻略：掛號小撇步',

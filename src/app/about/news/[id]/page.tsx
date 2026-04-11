@@ -257,7 +257,13 @@ export default function NewsDetailPage({ params }: PageProps) {
             color: #22d3ee !important;
             font-weight: 700;
         }
-        .article-content a {
+
+        /* -----------------------------------------------------------
+           ✨ 關鍵修正區塊：處理連結與排除參考文獻
+           ----------------------------------------------------------- */
+           
+        /* 1. 先定義基礎樣式，但使用 :not 排除掉 sup(上標) 與帶有特定偏移 style 的連結 */
+        .article-content a:not(sup a):not([style*="text-underline-offset"]) {
             color: #ec4899 !important;
             font-weight: 600;
             text-decoration: none;
@@ -267,7 +273,17 @@ export default function NewsDetailPage({ params }: PageProps) {
             align-items: center;
             gap: 2px;
         }
-        .article-content a:hover {
+
+        /* 2. 只給「非參考文獻」的連結加上 ↗ 符號 */
+        .article-content a:not(sup a):not([style*="text-underline-offset"])::after {
+            content: "↗";
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        /* 3. Hover 效果也只針對一般連結 */
+        .article-content a:not(sup a):not([style*="text-underline-offset"]):hover {
             color: #db2777 !important;
             border-bottom-style: solid;
             background-color: rgba(236, 72, 153, 0.15);
@@ -275,12 +291,29 @@ export default function NewsDetailPage({ params }: PageProps) {
             margin: 0 -4px;
             border-radius: 4px;
         }
-        .article-content a::after {
-            content: "↗";
-            font-size: 0.85em;
-            font-weight: bold;
-            margin-bottom: 2px;
+
+        /* 4. ✨ 徹底清除參考文獻中的粉紅橫線與箭頭 (包含 [2] 等 sup a) */
+        .article-content sup a,
+        .article-content ol a,
+        .article-content a[style*="text-underline-offset"] {
+            border-bottom: none !important; /* 移除橫線 */
+            display: inline !important;    /* 防止 flex 產生的對齊問題 */
+            color: #ec4899 !important;      /* 回歸藍色 */
+            background: transparent !important;
+            padding: 0 !important;
+            margin: 0 !important;
         }
+
+        /* 5. 確保參考文獻連結後絕對不會出現 ↗ 符號 */
+        .article-content sup a::after,
+        .article-content ol a::after,
+        .article-content a[style*="text-underline-offset"]::after {
+            content: "" !important;
+            display: none !important;
+        }
+
+        /* ----------------------------------------------------------- */
+
         .article-content img {
             max-width: 100%;
             height: auto;
@@ -338,10 +371,8 @@ export default function NewsDetailPage({ params }: PageProps) {
       {post.title}
     </h1>
       
-    {/* 關鍵修改點：加入 justify-between 和 w-full */}
     <div className="flex flex-wrap items-center justify-between gap-3 w-full">
       
-      {/* 左側群組：分類標籤 + 撰文者 */}
       <div className="flex flex-wrap items-center gap-3">
         <span className={`px-3 py-1 rounded-full text-sm font-bold border ${
           post.category === '門診公告' 
@@ -362,7 +393,6 @@ export default function NewsDetailPage({ params }: PageProps) {
         </span>
       </div>
 
-      {/* 右側：日期會自動推到最後面 */}
       <span className="text-slate-300 text-sm flex items-center bg-slate-700/50 px-3 py-1 rounded-full border border-slate-600">
         <i className="fa-regular fa-calendar mr-2"></i>最後更新日期：{post.date}
       </span>
@@ -459,6 +489,31 @@ export default function NewsDetailPage({ params }: PageProps) {
                     </div>
                   </div>
               </footer>
+
+{/* 參考文獻區塊 (References) */}
+                {post.referencesHtml && (
+                  <section className="px-6 md:px-10 pb-12">
+                    <div className="bg-slate-900/50 border border-slate-700/50 rounded-2xl p-6 md:p-8">
+                      <div className="flex items-center mb-6 border-b border-slate-700 pb-4">
+                        <i className="fa-solid fa-book-bookmark text-cyan-400 text-xl mr-3"></i>
+                        <h3 className="text-xl font-bold text-white m-0 tracking-wide">醫學參考文獻</h3>
+                      </div>
+                      
+                      {/* 這裡直接渲染您在資料庫中寫好的 HTML */}
+                      <div 
+                        className="references-content text-slate-400 text-sm md:text-base leading-relaxed"
+                        dangerouslySetInnerHTML={{ __html: post.referencesHtml }} 
+                      />
+                      
+                      <div className="mt-6 pt-4 border-t border-slate-700/30 flex items-center gap-2">
+                        <span className="inline-block w-2 h-2 rounded-full bg-cyan-500/50 animate-pulse"></span>
+                        <p className="text-[10px] text-slate-500 uppercase tracking-widest font-medium">
+                          Evidence-Based Medicine Research & Clinical Guidelines
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                )}
 
             </article>
           </div>

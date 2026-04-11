@@ -683,6 +683,33 @@ const jsonLdService = {
                 </div>
               </div>
 
+{/* 參考文獻區塊 (References) */}
+                {program.referencesHtml && (
+                  <section className="px-6 md:px-10 pb-12">
+                    <div className="bg-slate-900/50 border border-slate-700/50 rounded-2xl p-6 md:p-8">
+                      <div className="flex items-center mb-6 border-b border-slate-700 pb-4">
+                        <i className="fa-solid fa-book-bookmark text-cyan-400 text-xl mr-3"></i>
+                        <h3 className="text-xl font-bold text-white m-0 tracking-wide">醫學參考文獻</h3>
+                      </div>
+                      
+                      {/* 這裡直接渲染您在資料庫中寫好的 HTML */}
+                      <div 
+                        className="references-content text-slate-400 text-sm md:text-base leading-relaxed"
+                        dangerouslySetInnerHTML={{ __html: program.referencesHtml }} 
+                      />
+                      
+                      <div className="mt-6 pt-4 border-t border-slate-700/30 flex items-center gap-2">
+                        <span className="inline-block w-2 h-2 rounded-full bg-cyan-500/50 animate-pulse"></span>
+                        <p className="text-[10px] text-slate-500 uppercase tracking-widest font-medium">
+                          Evidence-Based Medicine Research & Clinical Guidelines
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                )}
+
+          
+
             </div>
           </div>
         </main>

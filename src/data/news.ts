@@ -17,6 +17,7 @@ export interface NewsPost {
   coverImage: string;
   contentHtml: string;
   lastModified?: string;
+  referencesHtml?: string;
   
   // SEO 欄位
   seoTitle?: string;
