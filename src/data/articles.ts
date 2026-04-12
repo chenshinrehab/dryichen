@@ -3,12 +3,448 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
   
+
+{
+  id: 'ge-logiq-totus-ultrasound',
+  title: '診所正式引進 GE LOGIQ Totus——全球高階的肌肉骨骼超音波機',
+  lastModified: '2026-04-12',
+  category: '衛教文章',
+  date: '2026-04-12',
+  summary: '診所正式引進旗艦等級 GE LOGIQ Totus 肌肉骨骼超音波。擁有超高解析度影像與多項智慧輔助功能，讓超音波導引注射更精準、更安全。',
+  coverImage: '/images/news/article/gelotus/2.webp',
+  seoTitle: '新竹宸新復健科診所引進 GE LOGIQ Totus 頂級肌肉骨骼超音波',
+  seoDescription: '新竹宸新復健科診所引進全球最高階 GE LOGIQ Totus 肌肉骨骼超音波機，提供超高解析度影像與導引注射輔助，讓關節、肌腱、神經的疼痛診斷與治療更加精準安全。',
+  keywords: [
+    'GE LOGIQ Totus',
+    '肌肉骨骼超音波',
+    '超音波導引注射',
+    '新竹宸新復健科診所',
+    '復健科超音波',
+    '高階超音波'
+  ],
+  contentHtml: `
+
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 重點摘要</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    診所正式引進 <strong style="color: #0284c7;">GE LOGIQ Totus</strong>——旗艦等級的肌肉骨骼超音波機。它擁有超高解析度影像、多項智慧輔助功能，以及全新一代的探頭技術，讓醫師在診斷肌腱、韌帶、神經、關節等問題時更加清晰精準。更重要的是：<strong style="color: #0284c7;">更清晰的影像，意味著超音波導引注射時更安全、更準確，藥物打在真正需要的位置。</strong>
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">一、為什麼要買超音波？醫師看診靠什麼？</h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    很多人來診所看肩膀痛、膝蓋痛、手腕痛，常常會問：「醫師，你怎麼知道是哪裡有問題？」
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    過去，醫師主要靠「問診」和「徒手理學檢查」——用手壓、轉動關節、測試肌力——來推斷哪條肌腱受傷、哪裡有發炎。這已經是非常厲害的技術，但畢竟還是在「猜」。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    有了肌肉骨骼超音波，醫師可以<strong style="color: #2dd4bf; font-size: 1.15rem;">「即時看到皮膚下面的世界」</strong>——肌腱有沒有撕裂？韌帶有沒有鬆弛？滑囊有沒有積水？神經有沒有被壓迫？一切都在螢幕上清清楚楚。
+  </p>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 超音波 vs X光 vs MRI——差在哪裡？</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">X 光只看得到骨頭；MRI 看得到軟組織，但要等預約、費用高、不能即時動態掃描。超音波的優勢在於：<strong style="color: #0e7490;">即時、動態、安全、可反覆使用</strong>——醫師邊掃邊問「這樣動會痛嗎？」，當場找出病灶。</p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">二、GE LOGIQ Totus 是什麼？為什麼是「旗艦等級」？</h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    GE（奇異醫療）是全球最老牌的醫療影像設備製造商之一，而 <strong style="color: #2dd4bf; font-size: 1.15rem;">LOGIQ Totus</strong> 是 GE 在超音波領域推出的旗艦等級機種，專門為需要超高精度影像的科別設計——包括肌肉骨骼科、復健科、運動醫學科。
+  </p>
+  <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
+    <div style="background-color: #1e293b; border: 1px solid #334155; padding: 1rem; border-radius: 0.5rem; text-align: center; flex: 1; min-width: 120px;">
+      <span style="display: block; font-size: 1.5rem; font-weight: bold; color: #2dd4bf;">4K+</span>
+      <span style="font-size: 0.9rem; color: #cbd5e1; line-height: 1.4;">超高解析度影像<br>等級</span>
+    </div>
+    <div style="background-color: #1e293b; border: 1px solid #334155; padding: 1rem; border-radius: 0.5rem; text-align: center; flex: 1; min-width: 120px;">
+      <span style="display: block; font-size: 1.5rem; font-weight: bold; color: #2dd4bf;">AI</span>
+      <span style="font-size: 0.9rem; color: #cbd5e1; line-height: 1.4;">智慧輔助<br>分析功能</span>
+    </div>
+    <div style="background-color: #1e293b; border: 1px solid #334155; padding: 1rem; border-radius: 0.5rem; text-align: center; flex: 1; min-width: 120px;">
+      <span style="display: block; font-size: 1.5rem; font-weight: bold; color: #2dd4bf;">全景</span>
+      <span style="font-size: 0.9rem; color: #cbd5e1; line-height: 1.4;">擴展式<br>全景掃描</span>
+    </div>
+    <div style="background-color: #1e293b; border: 1px solid #334155; padding: 1rem; border-radius: 0.5rem; text-align: center; flex: 1; min-width: 120px;">
+      <span style="display: block; font-size: 1.5rem; font-weight: bold; color: #2dd4bf;">彈性</span>
+      <span style="font-size: 0.9rem; color: #cbd5e1; line-height: 1.4;">組織彈性<br>成像技術</span>
+    </div>
+  </div>
+  <div style="background-color: #1e293b; border: 1px dashed #475569; border-radius: 0.75rem; padding: 3rem; text-align: center; color: #94a3b8; margin-bottom: 2rem; font-size: 1.1rem;">
+    📷 GE LOGIQ Totus 機器照片
+
+<img src="/images/news/article/gelotus/1.webp" alt=" 宸新復健科超音波GE LOGIQ Totus 機器照片" class="responsive-img-enlarge">
+<img src="/images/news/article/gelotus/2.webp" alt=" 宸新復健科超音波GE LOGIQ Totus 機器照片" class="responsive-img-enlarge">
+  </div>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">它到底「強」在哪裡？用白話說</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    想像一下：普通超音波就像用一台老手機拍照——勉強能看，但模糊；LOGIQ Totus 就像用最新款旗艦手機加上專業鏡頭拍照——每一個細節都清晰銳利，就算是只有 0.1 公釐的小撕裂，也逃不過它的法眼。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">三、LOGIQ Totus 有哪些厲害功能？</h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">以下用淺顯易懂的方式，介紹幾個最重要的功能：</p>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+    <div style="background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <span style="font-size: 1.5rem; margin-bottom: 0.5rem; display: inline-block;">🔭</span>
+      <h4 style="color: #ffffff; font-size: 1.2rem; font-weight: bold; margin-top: 0; margin-bottom: 0.5rem;">超高解析度探頭</h4>
+      <p style="color: #cbd5e1; line-height: 1.6; font-size: 1rem; margin: 0;">最高可達 22 MHz 的高頻探頭，解析度極佳。越高頻率，表淺組織（如手指肌腱、神經）看得越清楚，連極細小的纖維都能辨認。</p>
+    </div>
+    <div style="background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <span style="font-size: 1.5rem; margin-bottom: 0.5rem; display: inline-block;">🧠</span>
+      <h4 style="color: #ffffff; font-size: 1.2rem; font-weight: bold; margin-top: 0; margin-bottom: 0.5rem;">AI 自動輔助判讀</h4>
+      <p style="color: #cbd5e1; line-height: 1.6; font-size: 1rem; margin: 0;">內建人工智慧輔助功能，可自動偵測影像中的異常回音區域，提示醫師注意，減少遺漏病灶的機率。</p>
+    </div>
+    <div style="background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <span style="font-size: 1.5rem; margin-bottom: 0.5rem; display: inline-block;">🗺️</span>
+      <h4 style="color: #ffffff; font-size: 1.2rem; font-weight: bold; margin-top: 0; margin-bottom: 0.5rem;">全景擴展掃描（Panoramic）</h4>
+      <p style="color: #cbd5e1; line-height: 1.6; font-size: 1rem; margin: 0;">一般超音波只看得到「一小格」，全景模式可以將多張影像拼接成一張完整長圖，輕鬆評估整條肌腱或肌肉的全貌。</p>
+    </div>
+    <div style="background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <span style="font-size: 1.5rem; margin-bottom: 0.5rem; display: inline-block;">🫀</span>
+      <h4 style="color: #ffffff; font-size: 1.2rem; font-weight: bold; margin-top: 0; margin-bottom: 0.5rem;">彩色都卜勒血流成像</h4>
+      <p style="color: #cbd5e1; line-height: 1.6; font-size: 1rem; margin: 0;">能夠即時顯示組織中的血流狀況。發炎的地方血流會增加，醫師一眼就能確認是急性發炎還是慢性退化，方向截然不同。</p>
+    </div>
+    <div style="background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <span style="font-size: 1.5rem; margin-bottom: 0.5rem; display: inline-block;">📐</span>
+      <h4 style="color: #ffffff; font-size: 1.2rem; font-weight: bold; margin-top: 0; margin-bottom: 0.5rem;">彈性成像（Elastography）</h4>
+      <p style="color: #cbd5e1; line-height: 1.6; font-size: 1rem; margin: 0;">透過色彩圖譜顯示組織「硬度」。健康肌腱是彈性的，已纖維化或有鈣化的組織會明顯變硬，這個功能讓硬度一目了然。</p>
+    </div>
+    <div style="background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <span style="font-size: 1.5rem; margin-bottom: 0.5rem; display: inline-block;">🎯</span>
+      <h4 style="color: #ffffff; font-size: 1.2rem; font-weight: bold; margin-top: 0; margin-bottom: 0.5rem;">導引注射輔助模式</h4>
+      <p style="color: #cbd5e1; line-height: 1.6; font-size: 1rem; margin: 0;">進行超音波導引注射時，系統會在螢幕上即時顯示針頭位置，幫助醫師將針精準導入目標位置，大幅提升安全性。</p>
+    </div>
+    <div style="background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <span style="font-size: 1.5rem; margin-bottom: 0.5rem; display: inline-block;">🔄</span>
+      <h4 style="color: #ffffff; font-size: 1.2rem; font-weight: bold; margin-top: 0; margin-bottom: 0.5rem;">動態即時 3D 成像</h4>
+      <p style="color: #cbd5e1; line-height: 1.6; font-size: 1rem; margin: 0;">可進行立體的三維掃描，對於複雜的關節解剖結構（如肩關節旋轉肌袖）提供更全面的空間感。</p>
+    </div>
+    <div style="background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <span style="font-size: 1.5rem; margin-bottom: 0.5rem; display: inline-block;">📊</span>
+      <h4 style="color: #ffffff; font-size: 1.2rem; font-weight: bold; margin-top: 0; margin-bottom: 0.5rem;">自動量測與報告生成</h4>
+      <p style="color: #cbd5e1; line-height: 1.6; font-size: 1rem; margin: 0;">系統能自動計算積液量、肌腱厚度、神經截面積等數值，並自動生成結構化報告，方便追蹤治療前後的變化。</p>
+    </div>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">四、肌肉骨骼超音波可以診斷哪些問題？</h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">LOGIQ Totus 在肌肉骨骼領域可以評估的範圍非常廣泛，以下列舉最常見的應用：</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">肩膀問題</strong>：旋轉肌袖撕裂（俗稱肩膀筋斷掉）、滑囊炎、二頭肌腱病變、五十肩（沾黏性肩關節囊炎）
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">手肘問題</strong>：網球肘（肱骨外上髁炎）、高爾夫球肘（肱骨內上髁炎）、尺側副韌帶損傷
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">手腕 / 手指問題</strong>：媽媽手（狄奎凡氏症）、板機指（手指腱鞘炎）、腕隧道症候群（正中神經壓迫）
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">髖關節問題</strong>：髖部滑囊炎、彈響髖、梨狀肌症候群、髖部唇撕裂評估輔助
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">膝關節問題</strong>：髕骨肌腱炎（跳躍膝）、膝韌帶損傷、半月板邊緣評估、膝關節積液偵測、膝蓋後方貝克氏囊腫
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">足踝問題</strong>：足底筋膜炎、阿基里斯腱病變或撕裂、踝關節韌帶損傷、莫頓神經瘤
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">神經問題</strong>：周邊神經壓迫（腕隧道、肘隧道等）、神經瘤偵測、神經滑動功能評估
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">其他</strong>：肌肉拉傷分級、骨膜反應、淺層囊腫或腫塊鑑別
+    </li>
+  </ul>
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <h4 style="margin-top: 0; color: #9a3412; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">🌟 重要補充</h4>
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">超音波最大的優勢之一是「動態評估」——醫師可以叫患者動一下手臂，同時觀察肌腱在活動時有沒有卡住、半脫位或異常摩擦，這是 MRI 完全無法做到的。</p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">五、影像清晰度，為什麼這麼重要？</h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    很多人以為超音波「有看就好」，但事實上，<strong style="color: #2dd4bf; font-size: 1.15rem;">影像品質的差異，直接決定診斷的準確度</strong>——尤其在做超音波導引注射時，清晰度更是攸關安全。
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">📍 什麼是超音波導引注射？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    超音波導引注射，就是醫師一手拿超音波探頭、一手持注射針，<strong style="color: #2dd4bf; font-size: 1.15rem;">在即時影像的監視下</strong>，將針頭引導至精確的目標位置進行注射。比起傳統的「盲打」注射（單靠體表解剖位置估算），超音波導引可以確保藥物真正打在病灶上，而非旁邊的肌肉或血管。
+  </p>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 180px;
+    }
+
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>比較項目</th>
+          <th>傳統盲打注射</th>
+          <th>低階超音波導引</th>
+          <th>LOGIQ Totus 高清導引</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>針頭可見度</td>
+          <td><span style="color: #dc2626; font-weight: 600;">❌ 完全看不到</span></td>
+          <td><span style="color: #d97706; font-weight: 500;">⚠️ 模糊，有時看不清</span></td>
+          <td><span style="color: #15803d; font-weight: 600;">✅ 全程清晰可見</span></td>
+        </tr>
+        <tr>
+          <td>目標結構辨識</td>
+          <td><span style="color: #dc2626; font-weight: 600;">❌ 靠解剖估算</span></td>
+          <td><span style="color: #d97706; font-weight: 500;">⚠️ 部分可見</span></td>
+          <td><span style="color: #15803d; font-weight: 600;">✅ 精確至 0.1mm</span></td>
+        </tr>
+        <tr>
+          <td>藥物到位率</td>
+          <td><span style="color: #dc2626; font-weight: 600;">約 50-70%</span></td>
+          <td><span style="color: #d97706; font-weight: 500;">約 80-90%</span></td>
+          <td><span style="color: #15803d; font-weight: 600;">超過 95%</span></td>
+        </tr>
+        <tr>
+          <td>血管誤打風險</td>
+          <td><span style="color: #dc2626; font-weight: 600;">❌ 有風險</span></td>
+          <td><span style="color: #d97706; font-weight: 500;">⚠️ 風險較低</span></td>
+          <td><span style="color: #15803d; font-weight: 600;">✅ 彩色血流即時迴避</span></td>
+        </tr>
+        <tr>
+          <td>細小神經辨識</td>
+          <td><span style="color: #dc2626; font-weight: 600;">❌ 無法辨識</span></td>
+          <td><span style="color: #dc2626; font-weight: 600;">❌ 解析不足</span></td>
+          <td><span style="color: #15803d; font-weight: 600;">✅ 高頻探頭清晰顯示</span></td>
+        </tr>
+        <tr>
+          <td>術後即時確認</td>
+          <td><span style="color: #dc2626; font-weight: 600;">❌ 無法確認</span></td>
+          <td><span style="color: #d97706; font-weight: 500;">⚠️ 有限確認</span></td>
+          <td><span style="color: #15803d; font-weight: 600;">✅ 藥液擴散即時觀察</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">🎯 高清影像帶來的三大核心價值</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">「打得準」——藥效更好</strong><br>
+      以膝關節注射為例，傳統盲打的準確率研究顯示只有約 50-70%，剩下的藥物打到關節旁邊的脂肪墊或肌肉，效果大打折扣。LOGIQ Totus 的高清導引讓準確率超過 95%，一劑藥物的效果完整發揮。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">「打得安全」——避開重要構造</strong><br>
+      手腕附近有正中神經，踝關節旁有腓腸神經，肩膀深處有腋神經。在低解析度超音波下，這些細小神經很難辨認；LOGIQ Totus 的高頻探頭能清晰顯示神經位置，讓醫師安全迴避。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">「看得到效果」——即時確認</strong><br>
+      注射完畢後，可以立刻在螢幕上看到藥液（積液）擴散的範圍是否正確，確認治療有效完成，而不是等幾天才知道有沒有打到位置。
+    </li>
+  </ul>
+  
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem; font-style: italic;">
+      「超音波導引注射就像有 GPS 導航的開車，傳統盲打就像憑感覺在霧中行駛。影像越清晰，醫師的手就越穩、患者就越安心。」
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">六、常見的超音波導引注射有哪些？</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+    <div style="background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <span style="font-size: 1.5rem; margin-bottom: 0.5rem; display: inline-block;">💉</span>
+      <h4 style="color: #ffffff; font-size: 1.2rem; font-weight: bold; margin-top: 0; margin-bottom: 0.5rem;">關節腔注射</h4>
+      <p style="color: #cbd5e1; line-height: 1.6; font-size: 1rem; margin: 0;">膝關節、肩關節、踝關節等，精準注入玻尿酸、類固醇或高濃度葡萄糖（增生療法）。</p>
+    </div>
+    <div style="background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <span style="font-size: 1.5rem; margin-bottom: 0.5rem; display: inline-block;">🧊</span>
+      <h4 style="color: #ffffff; font-size: 1.2rem; font-weight: bold; margin-top: 0; margin-bottom: 0.5rem;">滑囊注射</h4>
+      <p style="color: #cbd5e1; line-height: 1.6; font-size: 1rem; margin: 0;">肩峰下滑囊、大轉子滑囊炎等，直接消炎，減少疼痛。</p>
+    </div>
+    <div style="background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <span style="font-size: 1.5rem; margin-bottom: 0.5rem; display: inline-block;">🔬</span>
+      <h4 style="color: #ffffff; font-size: 1.2rem; font-weight: bold; margin-top: 0; margin-bottom: 0.5rem;">肌腱周圍注射</h4>
+      <p style="color: #cbd5e1; line-height: 1.6; font-size: 1rem; margin: 0;">肌腱炎、肌腱病變，將藥物精確送至肌腱外圍，不傷害肌腱本體。</p>
+    </div>
+    <div style="background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <span style="font-size: 1.5rem; margin-bottom: 0.5rem; display: inline-block;">⚡</span>
+      <h4 style="color: #ffffff; font-size: 1.2rem; font-weight: bold; margin-top: 0; margin-bottom: 0.5rem;">神經阻斷注射</h4>
+      <p style="color: #cbd5e1; line-height: 1.6; font-size: 1rem; margin: 0;">針對周邊神經（如正中神經、腓腸神經），進行神經鬆解或神經周圍水分離術。</p>
+    </div>
+    <div style="background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <span style="font-size: 1.5rem; margin-bottom: 0.5rem; display: inline-block;">💊</span>
+      <h4 style="color: #ffffff; font-size: 1.2rem; font-weight: bold; margin-top: 0; margin-bottom: 0.5rem;">PRP 富血小板血漿注射</h4>
+      <p style="color: #cbd5e1; line-height: 1.6; font-size: 1rem; margin: 0;">將自體 PRP 精準注射至受損肌腱或關節，促進組織修復再生。</p>
+    </div>
+    <div style="background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <span style="font-size: 1.5rem; margin-bottom: 0.5rem; display: inline-block;">🌊</span>
+      <h4 style="color: #ffffff; font-size: 1.2rem; font-weight: bold; margin-top: 0; margin-bottom: 0.5rem;">筋膜水分離術</h4>
+      <p style="color: #cbd5e1; line-height: 1.6; font-size: 1rem; margin: 0;">以大量生理食鹽水沖洗沾黏的筋膜層，恢復組織間的滑動性，改善慢性疼痛。</p>
+    </div>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🙋</span> 七、常見問題 FAQ
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1. 超音波檢查會痛嗎？有輻射嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      完全不會痛，也沒有輻射。超音波利用聲波成像，是目前醫學影像中最安全的技術之一，可反覆使用。檢查時醫師只需將探頭塗上一層超音波凝膠，輕放在皮膚上掃描即可，過程約 5-15 分鐘。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2. 我已經做過 MRI，還需要做超音波嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      MRI 和超音波是互補的，而非取代關係。MRI 能提供更深層、更全面的組織影像（如骨髓水腫、軟骨損傷）；超音波則勝在「即時動態」、「高表淺組織解析度」和「導引注射」。許多情況下兩者搭配，能獲得最完整的診斷資訊。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3. LOGIQ Totus 和一般診所的超音波差在哪？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      一般診所可能使用中低階超音波機（探頭頻率較低、處理器較舊），影像解析度有限，特別是在小型肌腱、表淺神經的顯示上較模糊。LOGIQ Totus 採用最新一代探頭技術與 AI 影像處理，解析度領先同級，即使是 0.1mm 的細微撕裂也能清晰呈現。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4. 超音波導引注射需要麻醉嗎？恢復期多長？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      一般不需要麻醉，只有輕微的針刺感。多數患者注射後可以立即回家，當天建議避免劇烈活動。注射部位可能有輕微痠脹感 1-2 天，屬於正常反應。具體的術後照護會由醫師在注射前詳細說明。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5. 哪些症狀的患者最需要這台機器？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      肩膀長期疼痛懷疑旋轉肌袖撕裂、網球肘高爾夫球肘治療效果不佳、媽媽手板機指、腕隧道神經壓迫、膝蓋積水或肌腱炎、足底筋膜炎、需要 PRP 或增生療法的患者，都是最能受益於 LOGIQ Totus 的族群。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">八、診所的承諾：每一針都要打在對的位置</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    引進 GE LOGIQ Totus，不是為了炫耀設備，而是因為我們相信：<strong style="color: #1e293b;">醫療的品質，藏在細節裡。</strong>
+  </p>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    當一個肌腱撕裂只有 2 公釐，只有頂級的解析度才能讓醫師看清楚；當注射針距離神經只有 1 公釐，只有高清的即時影像才能讓醫師安心操作。
+  </p>
+
+  <p style="color: #475569; font-size: 1.05rem;">
+    過去很多患者打了好幾次注射，效果卻不如預期——很多時候，問題不是藥物，而是藥物沒有打到真正需要的位置。LOGIQ Totus 讓我們有信心說：<strong style="color: #0284c7;">每一劑藥物，都能發揮它該有的效果。</strong>
+  </p>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin: 24px 0;">
+    <h4 style="margin-top: 0; color: #9a3412; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">🏆 我們選擇 LOGIQ Totus 的理由</h4>
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">市面上有很多超音波機，我們評估了多個品牌後，選擇 GE LOGIQ Totus，是因為它在肌肉骨骼影像的解析度、AI 輔助功能、探頭多樣性，以及全球骨科與運動醫學的大型醫院使用口碑上，均居業界頂尖地位。我們只願意為患者準備最好的工具。</p>
+  </div>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <h2 style="margin-top: 0; color: #1e293b; font-weight: bold; font-size: 1.25rem; margin-bottom: 12px;">🎯 想體驗更精準的診斷與治療？</h2>
+    <p style="margin-bottom: 16px; color: #1e293b; font-size: 1.05rem;">
+      如果您有肌肉、關節、肌腱或神經方面的疼痛困擾，歡迎來診所預約，讓 GE LOGIQ Totus 幫助我們找出真正的病因，給您最精準的治療。
+    </p>
+    <a href="/booking" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+      立即預約門診 →
+    </a>
+  </div>
+</div>
+`
+} ,
 {
   id: 'steak-muscle-anatomy',
   title: '復健科醫師帶老婆吃牛排：菲力對應腰大肌，牛排部位人體肌肉完整解析',
-  lastModified: '2025-06-01',
+  lastModified: '2026-04-12',
   category: '衛教文章',
-  date: '2025-06-01',
+  date: '2026-04-12',
   summary: '復健科醫師用人體肌肉解剖圖解析牛排部位，從菲力（腰大肌）到肋眼（肋間肌），讓你看懂菜單又懂人體。附比較表格、常見誤區與FAQ。',
   coverImage: '/images/news/article/steak-muscle-anatomy.webp',
   seoTitle: '復健科醫師帶老婆吃牛排：各部位完整人體肌肉對照解析',
@@ -1693,7 +2129,7 @@ export const articlesData: NewsPost[] = [
   <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
     脊椎側彎（Scoliosis）是指脊椎在正面（冠狀面）出現<strong style="color: #0284c7;">10度以上側向彎曲</strong>，全球盛行率約為2–3%，青少年族群最為常見。其中約80%屬於「特發性側彎」，成因至今尚未完全釐清。側彎一旦形成，
-    <strong style="color: #0284c7;">Cobb角度不會自行恢復到正常範圍</strong>，但透過適當介入可有效阻止惡化。輕度側彎（Cobb角 &lt;25°）以觀察或物理治療為主；中度（25–45°）建議穿戴支架；重度（&gt;45–50°）則可能需要手術矯正。早期發現、定期追蹤與積極治療，是改善預後的關鍵。
+    <strong style="color: #0284c7;">Cobb角度不會自行恢復到正常範圍</strong>，但透過適當介入可有效阻止惡化。輕度側彎（Cobb角 &lt;25°）以觀察或物理治療為主，對於青少年側彎，10°–15° 是物理治療的黃金期。透過特定的矯正運動（如 Schroth Method），有機會將角度逆轉回接近 5° 內的正常範圍，達到「校正歸零」<sup><a href="https://peerj.com/articles/19639/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>，超過15°則只能減少角度持續增加；中度（25–45°）建議穿戴支架；重度（&gt;45–50°）則可能需要手術矯正。早期發現、定期追蹤與積極治療，是改善預後的關鍵，長期使用背包、坐姿不良、缺乏運動等因素，並非特發性脊椎側彎的直接成因。這些因素可能加重已有的脊椎不適，但不會直接「導致」結構性脊椎側彎。
   </p>
 </div>
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -1711,7 +2147,7 @@ export const articlesData: NewsPost[] = [
   </p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
     <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">冠狀面側彎</strong>：從正面看，脊椎呈現「S」或「C」形彎曲</li>
-    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">椎體旋轉</strong>：各節脊椎骨同時發生軸向旋轉，導致肋骨隆起（rib hump）</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">椎體旋轉</strong>：各節脊椎骨同時發生軸向旋轉，導致肋骨隆起</li>
     <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">矢狀面變化</strong>：正常的生理弧度（頸椎前凸、胸椎後凸、腰椎前凸）可能同步改變</li>
   </ul>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
@@ -1731,17 +2167,19 @@ export const articlesData: NewsPost[] = [
       Cobb角是脊椎側彎嚴重程度的標準測量方式：在全脊椎正位X光片上，找出側彎最頂端與最底端的椎體，分別沿其上下終板畫出水平線，兩線相交所形成的角度即為Cobb角。Cobb角越大，代表側彎越嚴重，也是決定治療策略的核心依據。
     </p>
   </div>
+
+   <img src="/images/news/article/cobbangle.webp" alt="Cobb角是脊椎側彎嚴重程度的標準測量方式" class="responsive-img-enlarge">
 </section>
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    二、脊椎側彎的產生原因：三大類型解析
+    二、脊椎側彎的產生原因
   </h2>
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
     最常見：特發性脊椎側彎（約80%）
   </h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    「特發性（Idiopathic）」意指目前醫學尚無法找到單一明確原因。特發性脊椎側彎佔所有脊椎側彎的<strong style="color: #2dd4bf;">約80%</strong>，依發病年齡細分為：
+    「特發性」意指目前醫學尚無法找到單一明確原因。特發性脊椎側彎佔所有脊椎側彎的<strong style="color: #2dd4bf;">約80%</strong><sup><a href="https://doi.org/10.3238/arztebl.2010.0875" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>，依發病年齡細分為：
   </p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
     <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">嬰幼兒型</strong>（0–3歲）：少見，部分可自然恢復</li>
@@ -1756,51 +2194,44 @@ export const articlesData: NewsPost[] = [
     <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">遺傳因素</strong>：有家族史者風險提高3–10倍，多個基因位點（如CHD7、FBN1/FBN2）已被確認與發病相關</li>
     <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">生長不對稱</strong>：青春期快速生長階段，脊椎前柱與後柱生長速度不一致</li>
     <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">神經肌肉不平衡</strong>：脊椎旁肌群張力不對稱，影響脊椎排列</li>
-    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">結締組織異常</strong>：部分患者纖維連結蛋白（fibronectin）或彈性纖維結構異常</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">結締組織異常</strong>：部分患者纖維連結蛋白或彈性纖維結構異常</li>
   </ul>
   <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
     <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
       <strong>⚠️ 重要澄清：</strong>長期使用背包、坐姿不良、缺乏運動等因素，<strong>並非</strong>特發性脊椎側彎的直接成因。這些因素可能加重已有的脊椎不適，但不會直接「導致」結構性脊椎側彎。家長無需因此過度自責，但仍應鼓勵良好姿勢與核心肌力訓練。
     </p>
   </div>
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">先天性脊椎側彎</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    由於胎兒期（妊娠第5–8週）椎體形成異常所致，包括：椎體形成不全（半椎體）、椎體分節不全（骨橋）、或兩者混合型。先天性側彎通常在出生後或幼兒期即可被發現，進展速度與異常椎體位置和類型密切相關，部分需要早期手術介入以保護脊髓功能。
-  </p>
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">神經肌肉性脊椎側彎</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    繼發於神經或肌肉疾病，常見病因包括腦性麻痺（Cerebral Palsy）、肌肉萎縮症（Muscular Dystrophy）、脊髓性肌肉萎縮症（SMA）、脊髓損傷等。此類側彎常為長弧度「C型」，進展快速，且肌張力不足導致治療難度較高。
-  </p>
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">退化性（成人）脊椎側彎</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    好發於40歲以上成人，主要成因是椎間盤與關節突關節的不對稱退化。隨著年齡增長，椎間盤水分流失、高度下降，若退化不均勻，即可導致脊椎側向傾斜。退化性側彎的危險因子包括：
-  </p>
-  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    <li style="margin-bottom: 0.75rem;">骨質疏鬆症（尤其是停經後女性）</li>
-    <li style="margin-bottom: 0.75rem;">長期體重過重，增加腰椎負荷</li>
-    <li style="margin-bottom: 0.75rem;">核心肌群無力，無法提供足夠的脊椎支撐</li>
-    <li style="margin-bottom: 0.75rem;">既往脊椎手術史</li>
-  </ul>
 </section>
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 <section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+
+<h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
     三、側彎角度會不會自己變回來？關鍵真相
   </h2>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    這是家長與患者最常問、也最關心的問題。答案需要依據年齡與嚴重程度分別說明。
+    這是家長與患者最常問、也最關心的問題。答案需要依據年齡、嚴重程度以及是否接受專業介入分別說明。
   </p>
+  
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">骨骼成熟前（生長期兒童與青少年）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    在骨骼尚未成熟的生長期，Cobb角有兩種可能性：
+    在骨骼尚未成熟的生長期，Cobb角的變化存在以下幾種可能性：
   </p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    <li style="margin-bottom: 1rem;"><strong style="color: #2dd4bf;">自然改善（罕見）</strong>：嬰幼兒型特發性側彎（0–3歲）中，約85%的輕度病例（Cobb角 &lt;20°）可在生長過程中自然改善甚至消退，原因可能與嬰兒期脊椎塑形能力較強有關。</li>
-    <li style="margin-bottom: 1rem;"><strong style="color: #f87171;">進展風險（更常見）</strong>：青少年型特發性側彎在快速生長的青春期，每年可能進展5–10度，尤其Cobb角 &gt;25°、骨骼尚未成熟（Risser分級 0–2）的女性患者，進展風險最高。</li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #38bdf8;">物理治療介入（15° 內有機會回正）</strong>：對於青少年側彎，10°–15° 是物理治療的黃金期。透過特定的矯正運動（如 Schroth Method），有機會將角度逆轉回接近 5° 內的正常範圍，達到「校正歸零」<sup><a href="https://peerj.com/articles/19639/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #fbbf24;">結構優化（20°–40°）</strong>：此時目標為「阻斷惡化」。雖然骨骼可能已有輕微楔形變形難以完全回正，但物理治療能強化弱側肌肉，改善體態不對稱，並避免進入手術門檻。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #f87171;">進展風險（最常見）</strong>：青少年型特發性側彎在青春期快速生長時，每年可能惡化 5–10 度。尤其 Cobb角 &gt;25°、骨骼尚未成熟（Risser分級 0–2）者，風險最高<sup><a href="https://pubmed.ncbi.nlm.nih.gov/6480636/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>。
+    </li>
   </ul>
+  
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    <strong style="color: #ffffff;">重要結論：</strong>青少年特發性側彎的Cobb角<strong style="color: #f87171;">不會自行「變回」正常</strong>。若有進展，必須積極介入；若角度穩定，也需定期追蹤監測。
+    <strong style="color: #ffffff;">重要結論：</strong>青少年特發性側彎的 Cobb 角<strong style="color: #f87171;">不會自行「變回」正常</strong>。治療的核心不在於等待奇蹟，而是在於透過物理治療給予脊椎「向上的支撐力」與「抗惡化」的力量。若角度穩定或縮減，即是成功的介入。
   </p>
+
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">骨骼成熟後（成人）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
     骨骼成熟後，側彎通常會趨於穩定，但並非完全停止進展：
@@ -1833,24 +2264,24 @@ export const articlesData: NewsPost[] = [
     </p>
     <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
       <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">核心肌群訓練</strong>：強化腹橫肌、多裂肌、豎脊肌，改善脊椎動態穩定性</li>
-      <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">脊椎側彎專用運動（SEAS/Schroth）</strong>：針對特定彎弧設計的矯正性呼吸與姿勢運動，已有研究顯示可減緩進展</li>
+      <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">脊椎側彎專用運動（SEAS/Schroth）</strong>：針對特定彎弧設計的矯正性呼吸與姿勢運動，已有研究顯示可減緩進展<sup><a href="https://doi.org/10.1186/s13013-017-0145-8" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup><sup><a href="https://doi.org/10.1080/09638280801889568" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup></li>
       <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">姿勢訓練與體態矯正</strong>：改善日常生活中的不對稱姿勢習慣</li>
     </ul>
   </div>
   <div style="margin-bottom: 2.5rem;">
     <h3 style="font-size: 1.25rem; font-weight: bold; color: #ffffff; margin-bottom: 0.75rem;">🦺 支架治療（Cobb角 25–45°，骨骼未成熟）</h3>
     <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-      支架治療是目前唯一被高品質臨床研究（2013年BRAIST試驗）證實能有效阻止青少年特發性側彎進展的非手術療法。研究顯示，每日佩戴支架12–16小時以上的患者，治療成功率可達72%（對比觀察組的48%）。
+      支架治療是目前唯一被高品質臨床研究（2013年BRAIST試驗）證實能有效阻止青少年特發性側彎進展的非手術療法。研究顯示，每日佩戴支架12–16小時以上的患者，治療成功率可達72%（對比觀察組的48%）<sup><a href="https://doi.org/10.1056/NEJMoa1307337" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>。
     </p>
     <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">常見支架類型：</p>
     <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-      <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">TLSO支架（如Boston brace）</strong>：最廣泛使用，適用胸腰椎彎弧</li>
+      <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">TLSO支架（如Boston brace）</strong>：最廣泛使用，適用胸腰椎彎弧<sup><a href="https://pubmed.ncbi.nlm.nih.gov/7782353/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup></li>
       <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">Milwaukee支架</strong>：適用高胸椎彎弧，但舒適度較差</li>
       <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">Charleston彎曲支架</strong>：僅夜間佩戴，適合腰椎為主的彎弧</li>
       <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">SpineCor軟式支架</strong>：彈性較佳，適合活動量大的青少年</li>
     </ul>
     <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem;">
-      <strong style="color: #f87171;">重要：</strong>支架的目標是「阻止惡化」，而非「矯正已有的角度」。佩戴期間Cobb角可能暫時改善，但脫離支架後通常會部分回彈至原有角度。
+      <strong style="color: #f87171;">重要：</strong>支架的目標是「阻止惡化」，而非「矯正已有的角度」。佩戴期間Cobb角可能暫時改善，但脫離支架後通常會部分回彈至原有角度<sup><a href="https://doi.org/10.1007/s11999-009-1175-5" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>。
     </p>
   </div>
   <div style="margin-bottom: 2.5rem;">
@@ -2072,13 +2503,13 @@ export const articlesData: NewsPost[] = [
   </p>
   <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
     <p style="margin-bottom: 16px; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
-      若您或家中孩子有脊椎側彎的疑慮，或已確診需要評估治療方向，歡迎預約復健科或脊椎骨科門診，接受全面的脊椎評估與個人化治療計劃。
+      若您或家中孩子有脊椎側彎的疑慮，或已確診需要評估治療方向，歡迎預約宸新復健科門診，接受全面的X光脊椎評估與個人化物理運動治療計劃。
     </p>
-    <a href="https://anfulin.com.tw/clinic-hours/" 
+    <a href="/booking" 
        target="_blank" 
        rel="noopener noreferrer" 
        style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
-      預約脊椎評估門診
+      預約宸新脊椎評估門診
     </a>
   </div>
 </div>
@@ -2134,7 +2565,14 @@ export const articlesData: NewsPost[] = [
     Trobisch P, Suess O, Schwab F. (2010). Idiopathic scoliosis. <em>Deutsches Ärzteblatt International</em>, 107(49), 875–884.
     <a href="https://doi.org/10.3238/arztebl.2010.0875" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3238/arztebl.2010.0875</a>
   </span>
-</li>  </ol>
+</li> 
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Zhu F, et al. (2025). Effectiveness of Schroth exercises for adolescent idiopathic scoliosis: a meta-analysis. <em> Sports Medicine and Rehabilitation</em>, 2025, 6634812.
+    <a href="https://peerj.com/articles/19639/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.7717/peerj.19639</a>
+  </span>
+</li>
+</ol>
 </div>
   `
 },
@@ -2165,7 +2603,7 @@ export const articlesData: NewsPost[] = [
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
     骨科與復健科是處理筋骨問題最常見的兩個科別，卻有著截然不同的強項與思維邏輯。
     <strong style="color: #0284c7;">骨科偏向「外科」思維</strong>，以 X 光評估硬組織（骨骼、關節），擅長骨折固定、關節置換等手術處置；
-    <strong style="color: #0284c7;">復健科偏向「內科」思維</strong>，以超音波評估軟組織（肌肉、肌腱、韌帶、神經），強調非手術的精準注射與功能重建。在診所層面，兩者的健保開立項目、儀器配置與病患流量也有顯著差異。民眾若能根據自身症狀——是「骨頭結構問題」還是「軟組織功能問題」——來選擇對的科別，往往能少走許多冤枉路，並獲得更有針對性的治療。
+    <strong style="color: #0284c7;">復健科偏向「內科」思維</strong>，又稱骨內科，以超音波評估軟組織（肌肉、肌腱、韌帶、神經），善於用非開刀方式處理疼痛，強調非手術的精準注射與功能重建。在診所層面，兩者的健保開立項目、儀器配置與病患流量也有顯著差異。民眾若能根據自身症狀——是「骨頭結構問題」還是「軟組織功能問題」——來選擇對的科別，往往能少走許多冤枉路，並獲得更有針對性的治療。
   </p>
 </div>
 
@@ -2181,11 +2619,11 @@ export const articlesData: NewsPost[] = [
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
     用最簡單的二分法來理解：<strong style="color: #ffffff;">骨科著重「骨頭為核心」的議題</strong>，骨折、關節置換、骨腫瘤、脊椎側彎等，診間最常見的工具是 X 光機，因為 X 光能清楚呈現骨骼結構是否完整。
     <sup><a href="https://draiden.org/about_rehabilitation/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup> 
-    相對地，<strong style="color: #ffffff;">復健科著重「骨頭以外」的軟組織議題</strong>，包括肌肉、肌腱、韌帶與神經，診間最常使用的工具是超音波——因為只有超音波能即時動態地看到這些軟組織的狀態。
+    相對地，<strong style="color: #ffffff;">復健科著重「骨頭以外」的軟組織議題</strong>，包括肌肉、肌腱、韌帶與神經，診間最常使用的工具是超音波——因為只有超音波能即時動態地看到這些軟組織的狀態，不過其實現在復健科很多也都備有X光了，可以X光跟超音波都一起檢查。
     <sup><a href="https://draiden.org/about_rehabilitation/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    值得一提的是，台灣的復健科醫師是<strong style="color: #ffffff;">目前唯一在訓練過程中，必須通過肌肉骨骼超音波考試的醫師</strong>，這使得他們在軟組織評估與超音波導引注射治療上具備獨特優勢。
+    值得一提的是，台灣的復健科醫師是<strong style="color: #ffffff;">目前唯一在訓練過程中，必須通過肌肉骨骼超音波考試的醫師</strong>，這使得復健科醫師在軟組織評估與超音波導引注射治療上具備獨特優勢。
     <sup><a href="https://draiden.org/about_rehabilitation/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
   </p>
 </section>
@@ -2332,7 +2770,7 @@ export const articlesData: NewsPost[] = [
         <tr>
           <td>主要診斷工具</td>
           <td>X 光機</td>
-          <td>肌骨超音波</td>
+          <td>X 光機、肌骨超音波</td>
         </tr>
         <tr>
           <td>主要治療方式</td>
@@ -2357,7 +2795,7 @@ export const articlesData: NewsPost[] = [
         <tr>
           <td>注射治療</td>
           <td>類固醇注射、玻尿酸注射為主</td>
-          <td>增生療法、PRP、神經解套注射為主</td>
+          <td>超音波導引精準增生療法、PRP、神經解套注射為主</td>
         </tr>
         <tr>
           <td>衛教重心</td>
@@ -2510,7 +2948,7 @@ export const articlesData: NewsPost[] = [
   </div>
 
   <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
-    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+    <p style="color: #9a3412; font-size: 1.05 rem; line-height: 1.6; margin: 0;">
       <strong>⚠️ 觀察二：「長期類固醇」的隱性代價：</strong><br>
       部分患者習慣每隔幾個月去打一針類固醇止痛，以為這樣就是在「治療」。然而，類固醇的抗發炎效果雖然立竿見影，卻是壓抑症狀而非修復組織。反覆施打類固醇可能造成軟骨損傷、肌腱弱化，甚至骨頭壞死的風險。
       <sup><a href="https://www.youngforehospital.com/prp%E5%A2%9E%E7%94%9F%E6%B2%BB%E7%99%82%E6%B3%95/" target="_blank" rel="noopener noreferrer" style="color: #9a3412; text-decoration: underline;">[10]</a></sup> 
@@ -2559,12 +2997,6 @@ export const articlesData: NewsPost[] = [
       <sup><a href="https://www.kingnet.com.tw/news/single?newId=26398" target="_blank" rel="noopener noreferrer" style="color: #22d3ee; text-decoration: underline;">[2]</a></sup>
     </p>
 
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q5. 我住的地方只有骨科診所，可以在骨科做復健嗎？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      可以。骨科診所也能開立物理治療，進行電療、熱療、牽引等基本儀器治療。但若需要職能治療、語言治療，或是需要超音波導引的精準注射、增生療法等進階處置，則建議前往復健科診所或附設復健科的醫療院所就診。
-    </p>
   </div>
 </section>
 
@@ -2576,20 +3008,21 @@ export const articlesData: NewsPost[] = [
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
     骨科與復健科並非競爭關係，而是<strong style="color: #1e293b;">互補的醫療夥伴</strong>。理解兩者的核心差異，你才能在對的時機找到對的幫助：骨折脫臼、需要手術評估時找骨科；長期慢性疼痛、軟組織損傷、術後功能重建時找復健科。
   </p>
-  
-  <p style="color: #475569; font-size: 1.05rem;">
-    如果你目前正苦惱於持續的筋骨疼痛，不妨試著問自己一個問題：「我的問題是骨頭結構壞了，還是骨頭外面的組織出了問題？」這個問題的答案，往往就是你最佳就醫方向的起點。
-  </p>
 
-  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0;">
-    <p style="margin-bottom: 16px; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
-      下一步行動建議：
-    </p>
-    <ul style="color: #475569; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.05rem; margin-bottom: 0;">
-      <li>若有急性外力撞擊，優先至骨科或急診排除骨折</li>
-      <li>若屬於長期累積型疼痛，建議預約復健科進行超音波評估</li>
-      <li>若不確定，可先至家庭醫學科或一般門診進行初步評估並取得轉介</li>
-    </ul>
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    宸新復健科備有<strong style="color: #1e293b;">高解析度X光及超音波儀器</strong>，一站式檢查骨頭及軟組織，精準找出問題。
+  </p>
+    <br>
+
+
+<div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+      預約宸新X光及超音波門診檢查
+    </a>
+</div>
   </div>
 </div>
   `,

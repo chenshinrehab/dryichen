@@ -2194,7 +2194,24 @@ export const diseaseCategories: DiseaseCategory[] = [
           <p style="color: #e2e8f0 !important;">當您發現家中的孩子肩膀一高一低，或是彎腰時背部某一側異常凸起，這可能不只是單純的「姿勢不良」，而是<strong>脊椎側彎</strong> 的警訊。在台灣，青少年脊椎側彎的發生率約為 3-5%，若錯過黃金治療期，側彎角度可能會隨著身高抽高而急速惡化，不僅影響外觀自信，成年後更可能導致嚴重的背痛與心肺功能受損。</p>
                 <br>
           <p style="color: #e2e8f0 !important;">治療脊椎側彎，<strong>「監測」</strong>與<strong>「精準運動」</strong>缺一不可。宸新復健科打造了新竹少見的<strong>「脊椎側彎整合治療中心」</strong>，我們不只提供治療，更擁有<strong>院內 X 光機</strong>可隨時追蹤角度變化，並引進特殊的<strong>脊椎側彎矯正訓練架</strong>，由受過專業訓練的物理治療師一對一指導，協助您對抗地心引力，將彎曲的脊椎「練」回來。</p>
-<p><img src="/images/diseases/spine-hip/scolio/b.webp" alt="脊椎側彎四格漫畫"></p>
+<div style="text-align: center; margin: 20px 0;">
+    <a href="/about/news/scoliosis-causes-treatment" style="
+        display: inline-block;
+        padding: 12px 60px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white !important;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        letter-spacing: 4px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);"
+        onmouseover="this.style.transform='scale(1.05)'; this.style.opacity='0.9';"
+        onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+        延伸閱讀
+    </a>
+</div>
+          <p><img src="/images/diseases/spine-hip/scolio/b.webp" alt="脊椎側彎四格漫畫"></p>
       
           <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
               <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
