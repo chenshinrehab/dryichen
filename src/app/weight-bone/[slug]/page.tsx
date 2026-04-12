@@ -689,7 +689,7 @@ const jsonLdService = {
                     <div className="bg-slate-900/50 border border-slate-700/50 rounded-2xl p-6 md:p-8">
                       <div className="flex items-center mb-6 border-b border-slate-700 pb-4">
                         <i className="fa-solid fa-book-bookmark text-cyan-400 text-xl mr-3"></i>
-                        <h3 className="text-xl font-bold text-white m-0 tracking-wide">醫學參考文獻</h3>
+
                       </div>
                       
                       {/* 這裡直接渲染您在資料庫中寫好的 HTML */}

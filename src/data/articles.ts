@@ -3,6 +3,2656 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
   
+{
+  id: 'steak-muscle-anatomy',
+  title: '復健科醫師帶老婆吃牛排：菲力對應腰大肌，牛排部位人體肌肉完整解析',
+  lastModified: '2025-06-01',
+  category: '衛教文章',
+  date: '2025-06-01',
+  summary: '復健科醫師用人體肌肉解剖圖解析牛排部位，從菲力（腰大肌）到肋眼（肋間肌），讓你看懂菜單又懂人體。附比較表格、常見誤區與FAQ。',
+  coverImage: '/images/news/article/steak-muscle-anatomy.webp',
+  seoTitle: '復健科醫師帶老婆吃牛排：各部位完整人體肌肉對照解析',
+  seoDescription: '從菲力到翼板，每塊牛排都藏著一堂解剖課。復健科醫師帶你用肌肉地圖讀懂牛排菜單。',
+  keywords: [
+    '牛排部位',
+    '人體肌肉解剖',
+    '復健醫學',
+    '菲力',
+    '紐約克',
+    '肋眼',
+    '沙朗',
+    '牛排菜單'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 文章摘要</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    如果你曾好奇牛排菜單上那些洋文名稱到底是哪裡的肉，身為復健科醫師的我，決定用最直白的方式解說：對照人體肌肉。從菲力（腰大肌）到肋眼（最長肌），每一塊牛排其實都藏著一堂人體解剖課。油花多的部位，往往對應人體較少活動、富含脂肪的肌肉；口感紮實的，則通常是勤勞的「工作肌」。這篇文章讓你看懂菜單、吃懂牛排，還能在餐桌上秀出讓另一半刮目相看的冷知識。吃完這頓飯，你絕對不會再搞混菲力和沙朗了。
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、引言：這頓牛排，是一堂解剖課
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    某個週年紀念日，我帶著老婆走進台北信義區的 
+    <a href="https://www.google.com/maps/search/Rib+Eye+Steakhouse+台北" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">Rib Eye Steakhouse</a> 
+    準備大吃一頓。老婆拿起菜單，指著一排英文問我：「菲力、紐約克、肋眼……這些到底差在哪裡？」
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    我嘴角上揚，清了清喉嚨。「老婆，我今晚要用復健科醫師的角度，好好跟妳解釋。」她翻了個白眼，但還是把菜單遞給我。這，就是我們婚姻的日常。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+    為什麼復健科醫師特別適合解釋牛排部位？
+  </h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    復健科醫師每天跟肌肉、肌腱、韌帶打交道。我們治療的是人類的「五花肉」、「菲力」和「翼板」。所以當我看著牛排菜單，腦海裡自然浮現一張人體解剖圖——只是主角從病患換成了和牛。
+    <sup><a href="https://www.resci.org.tw" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、各部位牛排 × 人體肌肉對照全解析
+  </h2>
+
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      01. 菲力（Filet Mignon）
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      菲力取自牛的腰內肉，位於脊椎兩側深處，是牛身上<strong style="color: #ffffff;">最少運動的肌肉之一</strong>。正因如此，它的肉質細嫩得像豆腐，幾乎沒有筋膜與脂肪紋路。
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+      人體對應：<strong style="color: #2dd4bf;">腰大肌（Iliopsoas）</strong>。這條肌肉藏在骨盆深處，負責屈髖，但日常走路時其實不用太費力。久坐族的腰大肌往往緊繃卻無力——就像菲力，看起來細嫩，實際上缺乏鍛鍊。
+    </p>
+    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+      <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 風味特色與建議</h4>
+      <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+        🥩 風味：油脂少、肉質軟嫩、入口即化。適合喜歡清爽口感的饕客。
+      </p>
+    </div>
+  </div>
+
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      02. 紐約克（New York Strip）
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      紐約克取自牛的前腰脊肉（Short Loin），是一塊緊鄰脊椎、偶爾需要出力穩定軀幹的肌肉。它有適中的油花與明顯的肌肉纖維，咬勁十足。
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+      人體對應：<strong style="color: #2dd4bf;">腰最長肌（Longissimus Dorsi）</strong>，也就是脊椎兩旁那條粗壯的「背脊柱」。下背痛的病患我最常評估這條肌肉——它既要出力又要穩定，所以紮實有力，就像紐約克一樣。
+      <sup><a href="https://doi.org/10.1097/BRS.0b013e3182a3c27a" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    </p>
+    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+      <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 風味特色與建議</h4>
+      <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+        🥩 風味：油花均勻、肉感扎實、嚼勁佳。是許多老饕的首選。
+      </p>
+    </div>
+  </div>
+
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      03. 肋眼（Ribeye）
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      肋眼來自牛的肋骨段（Rib Section），這個部位的肌肉雖然偶爾活動，但因為靠近脂肪豐富的肋骨區，油花分布極為驚人，中央那塊「眼肉」更是肥美異常。
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+      人體對應：<strong style="color: #2dd4bf;">肋間外肌（External Intercostal）</strong>加上覆蓋在上面的<strong style="color: #2dd4bf;">最長肌</strong>。這個區域的肌肉在我們呼吸時緩慢收縮，不像四肢肌肉那麼操勞，所以脂肪容易堆積——活生生就是肋眼的寫照。
+      <sup><a href="https://www.hpa.gov.tw" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    </p>
+    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+      <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 風味特色與建議</h4>
+      <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+        🥩 風味：大理石油花豐富、香氣濃郁、入口充滿牛脂甜香。嗜油花者的天堂。
+      </p>
+    </div>
+  </div>
+
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      04. 沙朗（Sirloin）
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      沙朗取自牛的後腰脊部，這個部位的牛每天都要站立、行走，肌肉使用頻率高，因此肉質比菲力硬，但油花比肋眼少，風味卻十分均衡。
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+      人體對應：<strong style="color: #2dd4bf;">臀大肌（Gluteus Maximus）</strong>。這是人體最大的肌肉，每天走路、爬樓梯都要用到它，肌肉發達但脂肪不多。愛運動的人臀大肌緊實有力——就像沙朗一樣，實在、有料、不虛胖。
+      <sup><a href="https://www.elsevier.com/....../netter/978-0-323-39322-5" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    </p>
+    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+      <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 風味特色與建議</h4>
+      <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+        🥩 風味：肉味濃郁、油脂適中、性價比高。入門牛排首選。
+      </p>
+    </div>
+  </div>
+
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      05. 翼板（Flat Iron / Top Blade）
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      翼板取自牛的肩胛部位，正式名稱為Top Blade。這個區域的牛在行走時肩膀持續出力，肌肉纖維粗獷，中間夾著一條明顯的筋膜。近年因修清技術進步，成為「平價和牛」的代名詞。
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+      人體對應：<strong style="color: #2dd4bf;">棘下肌與小圓肌</strong>——肩膀後側的旋轉肌群（Rotator Cuff）。這兩條肌肉負責肩關節外旋，是棒球投手、羽球選手最常受傷的部位。使用頻繁、紋理緊密，跟翼板的肌肉感一模一樣。
+      <sup><a href="https://doi.org/10.1016/j.csm.2012.07.001" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+    </p>
+    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+      <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 風味特色與建議</h4>
+      <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+        🥩 風味：油花豐富卻有嚼勁、肉香濃烈。CP值極高的隱藏版選擇。
+      </p>
+    </div>
+  </div>
+
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      06. 板腱（Chuck Eye Roll）
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      板腱來自牛的前肩頸部位，是肩胛骨前側的大塊肌群。它的紋路如同海浪般層次分明，油脂與瘦肉交織，有時還能嚐到淡淡的鐵質風味。
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+      人體對應：<strong style="color: #2dd4bf;">闊背肌（Latissimus Dorsi）</strong>，那片從腋下延伸到腰部的大翅膀。健身房裡做引體向上主要練的就是它。使用頻率高、肌肉發達，但因為面積大，也能儲存一些脂肪——這正是板腱油瘦交錯、層次豐富的原因。
+    </p>
+    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+      <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 風味特色與建議</h4>
+      <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+        🥩 風味：層次感強、膠質豐富、燉煮或直火均適合。
+      </p>
+    </div>
+  </div>
+
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      07. 牛小排（Short Rib）
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      牛小排緊貼肋骨，肉與骨之間的油脂和膠原蛋白含量驚人，長時間燒烤後入口即化，是燒肉控的最愛。
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+      人體對應：<strong style="color: #2dd4bf;">前鋸肌（Serratus Anterior）＋肋間肌</strong>，位於肋骨側面，形狀鋸齒狀，是拳擊手最發達的肌肉之一。它緊貼肋骨、富含血管，與牛小排緊貼骨頭、膠質豐富的特性不謀而合。
+    </p>
+    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+      <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 風味特色與建議</h4>
+      <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+        🥩 風味：膠質豐厚、甜度高、油脂豐腴。烤至焦糖化後風味無敵。
+      </p>
+    </div>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、一張表格看懂牛排部位 × 人體肌肉對照
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 180px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    .text-success { color: #15803d; font-weight: 600; }
+    .text-danger { color: #dc2626; font-weight: 600; }
+    @media (max-width: 600px) {
+      .modern-table { font-size: 14px; }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>牛排部位</th>
+          <th>取肉位置</th>
+          <th>對應人體肌肉</th>
+          <th>活動頻率</th>
+          <th>風味特色</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>菲力 Filet Mignon</td>
+          <td>腰內肉</td>
+          <td>腰大肌 Psoas Major</td>
+          <td class="text-success">極低</td>
+          <td>細嫩、無油花</td>
+        </tr>
+        <tr>
+          <td>紐約克 New York Strip</td>
+          <td>前腰脊</td>
+          <td>腰最長肌 Longissimus</td>
+          <td>中等</td>
+          <td>扎實、均勻油花</td>
+        </tr>
+        <tr>
+          <td>肋眼 Ribeye</td>
+          <td>肋骨段</td>
+          <td>肋間肌＋最長肌</td>
+          <td class="text-success">低</td>
+          <td>油花豐富、香氣濃郁</td>
+        </tr>
+        <tr>
+          <td>沙朗 Sirloin</td>
+          <td>後腰脊</td>
+          <td>臀大肌 Gluteus Maximus</td>
+          <td class="text-danger">高</td>
+          <td>肉味濃、性價比佳</td>
+        </tr>
+        <tr>
+          <td>翼板 Flat Iron</td>
+          <td>肩胛上</td>
+          <td>棘下肌＋小圓肌</td>
+          <td class="text-danger">高</td>
+          <td>油嫩交織、CP值高</td>
+        </tr>
+        <tr>
+          <td>板腱 Chuck Eye</td>
+          <td>前肩頸</td>
+          <td>闊背肌 Latissimus Dorsi</td>
+          <td class="text-danger">高</td>
+          <td>層次豐富、膠質多</td>
+        </tr>
+        <tr>
+          <td>牛小排 Short Rib</td>
+          <td>肋骨旁</td>
+          <td>前鋸肌＋肋間肌</td>
+          <td>中等</td>
+          <td>膠質豐厚、甜度高</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 四、常見三大誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>誤區一：「菲力油花少 = 品質差」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>真相：</strong>菲力的細嫩來自肌肉本身的特性（幾乎不運動），油花少是正常的。評斷牛排品質應看熟成方式、牛隻品種與飼育方式，而非單看油花多寡。就像腰大肌的柔軟度與彈性不代表它弱，只是功能不同。
+            <sup><a href="https://www.tlri.gov.tw" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[6]</a></sup>
+          </span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>誤區二：「沙朗就是菲力加紐約克」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>真相：</strong>坊間常流傳「T骨牛排 = 一邊菲力＋一邊紐約克」，這倒是真的；但「沙朗就是菲力加紐約克」這種說法是錯的。沙朗（Sirloin）是獨立的後腰脊部位，跟菲力（腰內肉）完全不同位置，口感與油脂分布也截然不同。
+            <sup><a href="https://www.ams.usda.gov/grades-standards/beef" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[7]</a></sup>
+          </span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>誤區三：「全熟牛排才安全衛生」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>真相：</strong>根據美國農業部（USDA）建議，牛排內部溫度達到145°F（約63°C）並靜置3分鐘即達安全標準，這大約對應三分至五分熟。全熟（Well Done）反而因高溫長時間加熱，會讓肌肉纖維過度收縮，失去肉汁與風味，且某些研究指出過度煎烤會產生雜環胺（HCA）等潛在有害物質。
+            <sup><a href="https://www.fsis.usda.gov/....../safe-temperature-chart" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[8]</a></sup>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> 五、FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：為什麼同樣是「腰部」的肉，菲力和紐約克口感差那麼多？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      因為位置差了幾公分，卻天差地遠。菲力藏在脊椎深處內側，是純粹的腰內肌（Psoas Major），活動量極低；紐約克在外側的腰最長肌（Longissimus），每次牛走路都微微使力。活動量的差異直接決定肌肉纖維的粗細與油脂分布。這就像同樣是背部，表層的闊背肌（天天在動）和深層的多裂肌（微量穩定）手感完全不同。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：和牛油花這麼多，是牛「不運動」造成的嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      部分正確。和牛（特別是黑毛和牛）的油花除了品種基因優勢，飼育方式（高熱量飼料、有限活動空間）確實讓肌肉內脂肪（Intramuscular Fat，IMF）大幅增加。從復健醫學角度看，這就像長期臥床病患的肌肉脂肪浸潤（Myosteatosis）——只是在牛身上，我們叫它「雪花」，還要付錢品嚐。
+      <sup><a href="https://doi.org/10.3389/fphys.2020.00585" target="_blank" rel="noopener noreferrer" style="color: #22d3ee; text-decoration: underline;">[9]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：哪個部位的牛排最適合銀髮族或牙口不好的人？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      首選菲力，其次是牛小排（燉煮版）。菲力肌肉纖維最短最細，幾乎不需要咀嚼力；牛小排長時間低溫烹調後，膠原蛋白轉化為明膠，同樣入口即化。從復健角度，咀嚼力下降往往伴隨顳顎關節問題或肌少症，選對部位也是一種「口腔復健」。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：「翼板」和「板腱」是同一個部位嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不完全是。兩者都來自肩胛（Chuck）部位，但翼板（Flat Iron / Top Blade）是肩胛骨上方的棘下肌群，板腱（Chuck Eye Roll）則是肩胛前側的連接肌群。翼板去筋後油花細膩；板腱層次更複雜，常有明顯的筋膜層。就像棘下肌和闊背肌雖然都在背部，但功能與手感大不相同。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：為什麼牛排餐廳建議「靜置（Rest）」牛排再切？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      這跟肌肉生理有直接關係。高溫烹調時，肌肉纖維急速收縮，肉汁被擠向中心。若立刻切開，肉汁大量流失。靜置3-5分鐘讓肌肉纖維放鬆（就像運動後的緩和拉伸），肉汁重新分散到整塊肉中，每一口都更鮮嫩多汁。
+      <sup><a href="https://www.seriouseats.com/the-food-lab-complete......" target="_blank" rel="noopener noreferrer" style="color: #22d3ee; text-decoration: underline;">[10]</a></sup>
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與呼籲行動</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    老婆聽完我的解說，沉默了三秒，然後說：「所以你每次幫病人復健，都在想那塊肉幾分熟？」
+  </p>
+  <p style="color: #475569; font-size: 1.05rem;">
+    ……我無言以對。但牛排確實吃得更香了。
+  </p>
+  <p style="color: #475569; font-size: 1.05rem;">
+    當你下次走進 <a href="https://www.google.com/maps/search/犇牛炭火燒肉+台北" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">台北犇牛炭火燒肉</a>、<a href="https://www.google.com/maps/search/MEATGQ+STEAK+台北" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">MEATGQ STEAK</a> 或 <a href="https://www.google.com/maps/search/肉食男女+台北" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">肉食男女 Meaty</a>，拿起菜單的瞬間，希望你腦中能浮現一張肌肉解剖圖，然後帶著微笑點下你的選擇。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      📌 立即行動：把這篇文章分享給你的另一半或飯友，下次吃牛排時來一場「人體 vs 牛體」的解剖大對決，保證比看菜單更有趣！
+    </p>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        台灣復健醫學會官方網站 <a href="https://www.resci.org.tw" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://www.resci.org.tw</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Moore, K.L., Dalley, A.F., & Agur, A.M.R. (2013). Clinically Oriented Anatomy (7th ed.). <a href="https://doi.org/10.1097/BRS.0b013e3182a3c27a" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1097/BRS.0b013e3182a3c27a</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        衛生福利部國民健康署 — 肌肉骨骼健康資訊 <a href="https://www.hpa.gov.tw" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://www.hpa.gov.tw</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Netter, F.H. (2019). Atlas of Human Anatomy (7th ed.). Elsevier. <a href="https://www.elsevier.com/....../netter/978-0-323-39322-5" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Tashjian, R.Z. (2012). Epidemiology, natural history of rotator cuff tears. Clinics in Sports Medicine. <a href="https://doi.org/10.1016/j.csm.2012.07.001" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1016/j.csm.2012.07.001</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        農業部畜產試驗所 — 台灣牛肉分級與品質標準 <a href="https://www.tlri.gov.tw" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://www.tlri.gov.tw</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        USDA — Beef cuts fact sheet <a href="https://www.ams.usda.gov/grades-standards/beef" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        USDA FSIS — Safe Minimum Internal Temperature Chart <a href="https://www.fsis.usda.gov/....../safe-temperature-chart" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Correa-de-Araujo, R. et al. (2020). Myosteatosis in skeletal muscle. Frontiers in Physiology. <a href="https://doi.org/10.3389/fphys.2020.00585" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.3389/fphys.2020.00585</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        The Food Lab, J. Kenji López-Alt — The Science of Resting Meat (Serious Eats) <a href="https://www.seriouseats.com/the-food-lab-complete......" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Link</a>
+      </span>
+    </li>
+  </ol>
+</div>
+  `
+},
+
+{
+  id: 'tennis-serve-injuries',
+  title: '網球發球的運動傷害完整指南：從平擊到 Kick，每一種球路的傷害風險',
+  lastModified: '2026-04-12',
+  category: '衛教文章',
+  date: '2026-04-12',
+  summary: '網球發球是全身性的高速複合動作，不同球種（平擊、側旋、上旋、Kick）因擊球時拍面角度、揮拍路徑各異，對肩、肘、腕、脊椎的傷害風險也截然不同。',
+  coverImage: '/images/news/article/tennis-serve-injuries.webp',
+  seoTitle: '網球發球的運動傷害完整指南：從平擊到 Kick，每一種球路的傷害風險',
+  seoDescription: '探討網球發球生物力學，解析平擊、側旋、上旋與 Kick 發球對肩、肘、腕、脊椎的傷害風險，並提供專業的運動傷害預防建議與各球種深度分析。',
+  keywords: [
+    '網球發球',
+    '運動傷害',
+    '肩袖撕裂',
+    '網球肘',
+    'Kick發球',
+    '平擊發球',
+    '側旋發球',
+    '五十肩',
+    '生物力學',
+    '骨科衛教'
+  ],
+  contentHtml: `
+
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    網球發球是全身性的高速複合動作，涉及下肢推蹬、軀幹旋轉、肩關節超速外旋與加速，是網球場上對身體負擔最大的技術動作之一。不同球種（平擊、側旋、上旋、Kick）因擊球時拍面角度、揮拍路徑及旋轉軸方向各異，對肩、肘、腕、脊椎的生物力學壓力分布也截然不同。研究顯示，<strong style="color: #0284c7;">肩袖傷害（旋轉肌群撕裂）</strong>是業餘與職業球員最常見的發球相關傷害，盛行率可達25–50%
+    <sup><a href="#ref1" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[1]</a></sup>。
+    本文將系統性介紹發球生物力學、各球種特性與各自的傷害風險，並提供預防建議，參考文獻超過10篇，適合球員、教練及醫療人員參閱。
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、網球發球的生物力學概論
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    網球發球是運動醫學中研究最為深入的複合性技術動作之一，其動力鏈（Kinetic Chain）從腳踝推蹬地面開始，依序傳遞至膝、髖、軀幹、肩、肘、腕，最終由球拍頭端以超高速接觸球體
+    <sup><a href="#ref2" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>。
+    職業球員的發球時速可超過 230 km/h，肩關節在揮拍初期可產生高達 <strong style="color: #ffffff;">7,000 度／秒</strong>的外旋角速度，關節壓縮力可達體重的 1.5 倍以上
+    <sup><a href="#ref3" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">發球的六大動作階段</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">準備期（Wind-up）</strong>：身體重心下移，球拍與球托放開，肩關節開始外旋。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">早期後仰（Early Cocking）</strong>：主力腳屈膝蹬地，球拍繼續後引，肩外展至約90度。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">晚期後仰（Late Cocking）</strong>：肩關節達到最大外旋（約170度），此階段前關節囊承受最大張力。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">加速期（Acceleration）</strong>：內旋肌群爆發性收縮，球拍由後上方向前上方高速揮擊，接觸點前為最高速。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">擊球（Ball Contact）</strong>：各球種差異最明顯的時刻，拍面角度與旋轉方向決定球路。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">跟進收拍（Follow-through）</strong>：肩關節內旋繼續，肘、腕依序制動，離心收縮保護為此期主要挑戰。
+    </li>
+  </ul>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 動力鏈缺陷是傷害的根本原因</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      研究顯示，當下肢或核心力量不足，動力鏈在腰椎或肩胛骨節點發生「能量洩漏（energy leakage）」時，上肢關節必須代償產生更大力矩，顯著增加肩、肘的傷害風險。<sup><a href="#ref4" target="_blank" rel="noopener noreferrer" style="color: #0e7490; text-decoration: underline;">[4]</a></sup>
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、四大發球球種介紹與生物力學特性
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    網球發球根據擊球時拍面與球的接觸方式，主要分為以下四種球路，各有其戰術用途與技術需求。
+  </p>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+    <div style="flex: 1 1 calc(50% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">💥 平擊發球 (Flat Serve)</h4>
+      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">拍面正對球體中心，幾乎無旋轉，球速最快。追求最大初速度，是威力型發球的代表，常用於制勝分。</p>
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <span style="background-color: #fee2e2; color: #991b1b; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">高肩關節負擔</span>
+        <span style="background-color: #ffedd5; color: #9a3412; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">腕過伸</span>
+      </div>
+    </div>
+    
+    <div style="flex: 1 1 calc(50% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">↩️ 側旋發球 (Slice Serve)</h4>
+      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">拍面側切球體右側（右手球員），產生側向旋轉使球彈跳偏離對手，是戰術多樣化的利器。</p>
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <span style="background-color: #ffedd5; color: #9a3412; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">肘內側拉力</span>
+        <span style="background-color: #fef9c3; color: #854d0e; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">前臂旋前</span>
+      </div>
+    </div>
+
+    <div style="flex: 1 1 calc(50% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🌀 上旋發球 (Topspin Serve)</h4>
+      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">拍面由下往上刷過球體後部，產生上旋使球弧度高且落地後彈跳急，安全率高於平擊。</p>
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <span style="background-color: #fee2e2; color: #991b1b; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">脊椎過伸</span>
+        <span style="background-color: #ffedd5; color: #9a3412; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">肩後方撞擊</span>
+      </div>
+    </div>
+
+    <div style="flex: 1 1 calc(50% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🦵 Kick 發球 (American Twist)</h4>
+      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">揮拍路徑由7點鐘方向往1點鐘刷過球體，同時產生強烈上旋與側旋，落地後彈跳最高、最難處理。</p>
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <span style="background-color: #fee2e2; color: #991b1b; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">腰椎過伸最高</span>
+        <span style="background-color: #fee2e2; color: #991b1b; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">肩袖撕裂風險</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、網球發球常見運動傷害全覽
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+    3-1 肩關節傷害（最常見，佔發球傷害約 40%）
+  </h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    肩袖（Rotator Cuff）由棘上肌、棘下肌、小圓肌及肩胛下肌組成，在發球加速期承受高達 <strong style="color: #ffffff;">1,088 N</strong> 的壓縮力與剪切力
+    <sup><a href="#ref5" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>。
+    最常見的傷害包括：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">棘上肌腱撕裂（Supraspinatus tear）</strong>：最常見，晚期後仰至加速期中反覆微小創傷積累所致，可從部分撕裂進展至全層撕裂。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">棘下肌肌腱病變（Infraspinatus tendinopathy）</strong>：跟進收拍期離心負荷過大，常與後方撞擊症候群並存。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">肩峰下夾擠症候群（Subacromial Impingement）</strong>：在加速初期肩關節屈曲時，棘上肌腱重複撞擊肩峰，產生發炎與疼痛。盛行率研究顯示約佔網球肩傷的 34%<sup><a href="#ref6" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">SLAP 損傷（Superior Labrum Anterior to Posterior tear）</strong>：晚期後仰極度外旋時，二頭肌長頭肌腱對關節唇產生撕裂力，職業球員中 SLAP II 型損傷並不少見<sup><a href="#ref7" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">肩關節不穩定（Glenohumeral Instability）</strong>：反覆大幅度外旋使前關節囊鬆弛，在主力肩尤其常見。</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+    3-2 肘關節傷害
+  </h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    發球時前臂的旋前旋後動作以及加速期的急速內旋，對肘關節內外側均有顯著壓力
+    <sup><a href="#ref8" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>。
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">肘內側副韌帶損傷（UCL Sprain）</strong>：加速期肘外翻力矩可超過 64 N·m，是 UCL 損傷的主因，嚴重時需接受 Tommy John 手術。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">網球肘（外上髁炎）</strong>：雖更常見於反手拍，但部分球員在跟進收拍時伸腕肌群過度收縮也可導致此症。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">高爾夫球肘（內上髁炎）</strong>：屈腕肌群在加速期的爆發性收縮可造成內上髁附著點的肌腱病變。</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+    3-3 腕與手部傷害
+  </h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">尺側腕伸肌腱腱鞘炎（ECU Tenosynovitis）</strong>：旋前動作中ECU腱鞘反覆摩擦，在側旋與Kick發球中尤為明顯。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">三角纖維軟骨複合體損傷（TFCC Tear）</strong>：腕關節尺偏合併壓縮力可造成 TFCC 損傷，是長期網球選手腕痛的重要原因<sup><a href="#ref9" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>。</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+    3-4 脊椎傷害
+  </h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    發球時軀幹需在極短時間內完成側彎加上旋轉，對腰椎椎間盤與小面關節產生顯著剪力。Kick 發球因需要更大的後仰弧度，腰椎過伸角度可達一般發球的 1.5 倍
+    <sup><a href="#ref10" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>。
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">腰椎椎弓解離（Spondylolysis）</strong>：青少年球員中尤為常見，反覆過伸使椎弓峽部發生疲勞性骨折。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">椎間盤突出（Lumbar Disc Herniation）</strong>：職業球員腰椎 MRI 研究顯示，椎間盤退化盛行率顯著高於同齡一般人。</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+    3-5 下肢傷害
+  </h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">踝關節扭傷</strong>：起跳與落地時踝關節側向穩定度需求高，是最常見的下肢傷害。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">小腿肌肉拉傷</strong>：起跳推蹬瞬間腓腸肌離心負荷過大，Foot-up 發球姿勢（腳跟抬起）風險更高。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">髕骨股骨症候群</strong>：跳躍型發球重複起跳落地可造成髕股關節壓力異常。</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、各球種傷害風險比較表
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    以下表格整合各球種的生物力學特性與傷害風險，供臨床評估與訓練規劃參考。
+  </p>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 180px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    .text-warning { color: #d97706; font-weight: 500; }
+    .text-danger { color: #dc2626; font-weight: 600; }
+    .text-success { color: #15803d; font-weight: 600; }
+    @media (max-width: 600px) {
+      .modern-table { font-size: 14px; }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>球種</th>
+          <th>肩關節負擔</th>
+          <th>肘關節負擔</th>
+          <th>腰椎負擔</th>
+          <th>腕部風險</th>
+          <th>最常見傷害</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>平擊發球<br><span style="font-size: 0.8rem; font-weight: normal; opacity: 0.7;">Flat Serve</span></td>
+          <td><span class="text-danger">高</span><br><span style="font-size: 0.8rem; font-weight: normal;">高速內旋負擔</span></td>
+          <td>中</td>
+          <td>低</td>
+          <td>中<br><span style="font-size: 0.8rem; font-weight: normal;">腕過伸</span></td>
+          <td>棘上肌撕裂、肩峰下夾擠、SLAP</td>
+        </tr>
+        <tr>
+          <td>側旋發球<br><span style="font-size: 0.8rem; font-weight: normal; opacity: 0.7;">Slice Serve</span></td>
+          <td>中</td>
+          <td><span class="text-danger">高</span><br><span style="font-size: 0.8rem; font-weight: normal;">旋前力矩大</span></td>
+          <td>低</td>
+          <td><span class="text-danger">高</span><br><span style="font-size: 0.8rem; font-weight: normal;">ECU、TFCC</span></td>
+          <td>UCL損傷、ECU腱鞘炎、肱骨外上髁炎</td>
+        </tr>
+        <tr>
+          <td>上旋發球<br><span style="font-size: 0.8rem; font-weight: normal; opacity: 0.7;">Topspin Serve</span></td>
+          <td><span class="text-danger">高</span><br><span style="font-size: 0.8rem; font-weight: normal;">後方撞擊風險</span></td>
+          <td>中</td>
+          <td><span class="text-warning">中-高</span></td>
+          <td>低</td>
+          <td>棘下肌肌腱病變、後方夾擠、腰椎扭傷</td>
+        </tr>
+        <tr>
+          <td>Kick 發球<br><span style="font-size: 0.8rem; font-weight: normal; opacity: 0.7;">Kick Serve</span></td>
+          <td><span class="text-danger">高</span><br><span style="font-size: 0.8rem; font-weight: normal;">複合旋轉負荷</span></td>
+          <td>中</td>
+          <td><span class="text-danger">最高</span><br><span style="font-size: 0.8rem; font-weight: normal;">過伸＋旋轉</span></td>
+          <td>中</td>
+          <td>腰椎椎弓解離、肩袖撕裂、青少年脊椎疲勞骨折</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、各球種的傷害深度解析
+  </h2>
+
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      5-1 平擊發球 — 高速的代價
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      平擊發球要求球員以最大初速擊球，肩關節在加速期的內旋角速度最高，肩袖肌群承受的離心制動力矩最大。Fleisig 等人的生物力學研究發現，平擊發球時肩關節的 <strong style="color: #ffffff;">壓縮力（約 1,088 N）</strong> 顯著高於側旋與上旋發球
+      <sup><a href="#ref5" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>。
+      長期過量練習平擊發球而缺乏充分恢復，是職業球員肩袖退化性撕裂的主要原因之一。
+    </p>
+
+    <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+      <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+        <strong>⚠️ 特別警示：內旋肌/外旋肌力比失衡</strong><br><br>網球球員長期進行內旋訓練，若外旋肌（棘下肌、小圓肌）強化不足，肌力比值（ER/IR ratio）下降至0.66以下時，肩袖撕裂風險顯著上升。建議每週進行專項外旋強化訓練。<sup><a href="#ref11" target="_blank" rel="noopener noreferrer" style="color: #9a3412; text-decoration: underline;">[11]</a></sup>
+      </p>
+    </div>
+  </div>
+
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      5-2 側旋發球 — 肘與腕的隱形殺手
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      側旋發球的拍面需在接觸點附近完成明顯的旋前（Pronation）動作，前臂旋前肌群（主要是旋前圓肌）的快速離心—向心收縮，對肱骨內上髁的附著點構成高週期性應力
+      <sup><a href="#ref8" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>。
+      此外，腕關節在接觸球時同時受到尺偏與旋前合力，是 TFCC 與 ECU 腱鞘損傷的主要機制。
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      值得注意的是，側旋發球在戰術上常作為第二發球（Second Serve）大量使用，若在訓練中重複量過高，累積負荷可能超過平擊第一發球。研究顯示，職業球員每場比賽平均使用第二發球超過 <strong style="color: #ffffff;">50 球</strong>，側旋為主要球種，肘内侧疼痛盛行率可達 17%
+      <sup><a href="#ref12" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>。
+    </p>
+  </div>
+
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      5-3 上旋發球 — 肩後方與腰椎的隱患
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      上旋發球的揮拍路徑為由下往上的刷球動作，肩關節在加速中期達到高度屈曲，此姿勢使肩峰後方結構（後關節囊、棘下肌後部）承受較一般平擊更大的撞擊應力，稱為「後方夾擠症候群（Posterior Internal Impingement）」
+      <sup><a href="#ref6" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>。
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      在脊椎方面，上旋發球需要更大的軀幹後傾以確保擊球點在最高位，反覆的腰椎側彎合併旋轉動作，是腰椎小面關節退化的加速因素之一。Abrams 等人發現，在大量採用旋轉系發球的職業球員中，腰椎退化性變化出現的平均年齡比一般人提早約 <strong style="color: #ffffff;">8 年</strong>
+      <sup><a href="#ref10" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>。
+    </p>
+  </div>
+
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      5-4 Kick 發球 — 脊椎的最大挑戰
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      Kick（又稱 American Twist）發球要求球員在達到最高打擊點的瞬間，腰椎同時完成 <strong style="color: #ffffff;">最大過伸（Hyperextension）、側彎（Lateral Flexion）與旋轉（Rotation）</strong> 三軸複合動作，這種「三軸複合極限負荷」被骨科學者認為是最容易造成青少年椎弓峽部疲勞性骨折（Spondylolysis）的發球技術
+      <sup><a href="#ref13" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>。
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      除腰椎外，Kick 發球的不對稱旋轉動作也使非主力肩（左肩，右手球員）承受異常的拉伸應力，研究發現 Kick 專項訓練者非主力肩的肌力不對稱性更為明顯
+      <sup><a href="#ref14" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>。
+    </p>
+
+    <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+      <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+        <strong>⚠️ 青少年禁忌！Kick 發球的年齡限制建議</strong><br><br>多數運動醫學專家建議 <strong>16 歲以下</strong>球員不宜大量練習 Kick 發球，因為青少年椎弓峽部尚未完全骨化，反覆極度過伸導致應力性骨折的風險遠高於成人。建議先以上旋發球建立身體控制能力，再逐步引入 Kick 技術訓練。<sup><a href="#ref13" target="_blank" rel="noopener noreferrer" style="color: #9a3412; text-decoration: underline;">[13]</a></sup>
+      </p>
+    </div>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、傷害預防策略
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    運動醫學的共識是：<strong>傷害預防遠優於傷後治療</strong>。以下預防策略有助於系統性降低發球傷害風險。
+  </p>
+
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">外旋肌強化：</strong>針對棘下肌與小圓肌的彈力帶訓練，維持 ER/IR 肌力比值 ≥ 0.7</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">肩關節囊伸展：</strong>Sleeper Stretch 後關節囊伸展，改善內旋柔軟度不足（GIRD）</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">核心穩定訓練：</strong>強化脊椎多裂肌與腹橫肌，減少動力鏈能量洩漏</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">訓練量監控：</strong>每週發球數量漸進增加不超過 10%，避免過度使用傷害</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">動作分析：</strong>利用高速攝影或 3D 動作捕捉識別技術缺陷與代償動作</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">定期篩檢：</strong>賽季前進行肩袖肌力、關節活動度及脊椎評估</li>
+  </ul>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">✅ 臨床建議：使用 ITF 推薦的發球量指引</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      國際網球總會（ITF）建議青少年球員每週發球訓練量：12–14 歲每週不超過 800 球、15–16 歲不超過 1,200 球，並建議每練習 30 分鐘安排充分休息，以降低慢性過度使用傷害風險。<sup><a href="#ref15" target="_blank" rel="noopener noreferrer" style="color: #0e7490; text-decoration: underline;">[15]</a></sup>
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> 七、常見問題解答（FAQ）
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1. 我的肩膀在發球後酸痛，需要立即停止打球嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      肩膀發球後輕度肌肉疲勞感屬於正常現象，但若出現以下警示症狀，應立即停止練習並就醫：疼痛程度超過 4/10（0-10 分）、夜間靜息痛、手臂向上舉動受限、或感覺手臂無力無法維持球拍。大多數早期過度使用傷害在早期介入時預後良好，拖延就醫則可能發展為需要手術的全層撕裂。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2. 哪種發球對初學者最安全？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      建議初學者從<strong>側旋發球</strong>入門，其動作幅度相對較小、技術難度低，且對腰椎的負擔是四種球路中最低的。平擊發球雖然概念簡單，但追求高速時對肩關節的衝擊較大。Kick 發球應在具備良好核心穩定性與教練指導後才考慮學習。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3. 上旋發球真的比平擊安全嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      在肩關節「前方」傷害（如 SLAP、前關節囊鬆弛）方面，上旋發球確實因球速較低而降低某些風險。但上旋發球對「後方肩關節」（後方夾擠症候群）以及腰椎（後仰弧度）的負擔並不亞於平擊，特別是大量採用上旋作為第二發球時。沒有任何一種球路在技術不正確或訓練量過大的情況下是「絕對安全」的。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4. 網球肩袖傷害一定要手術嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不一定。部分厚度撕裂（Partial Thickness Tear）與大多數肩袖肌腱病變（Tendinopathy）均可透過保守治療獲得良好恢復，包括物理治療、超音波導引注射（如 PRP 或類固醇）及動作訓練。全層撕裂則需根據撕裂大小、患者年齡及功能需求決定是否手術。建議由骨科或運動醫學專科醫師進行 MRI 評估後制定個別化治療計畫。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5. 有椎弓解離（Spondylolysis）可以繼續打網球嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      急性期（MRI 顯示骨髓水腫）應立即停止發球訓練，配合護腰支撐治療 3–6 個月。慢性穩定期的椎弓解離在骨科醫師評估許可後，可逐步恢復網球活動，但 Kick 發球與大量旋轉系發球應謹慎評估，並持續進行核心強化。切勿在未完成診斷評估前帶傷繼續練習。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與呼籲行動</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    網球發球是一門技術、力量與時機三者完美結合的藝術，但也是對人體骨骼肌肉系統要求最高的運動動作之一。平擊、側旋、上旋與 Kick 發球各有其獨特的生物力學特性，對肩、肘、腕、脊椎的影響截然不同，不存在「萬能且零風險」的球路。
+  </p>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    預防勝於治療：在追求更快的球速與更多變的旋轉之前，請先建立紮實的核心穩定性、均衡的肌力訓練計畫，以及科學合理的訓練量監控機制。一旦出現持續性關節疼痛、活動受限或夜間靜息痛，請盡早就醫，避免小傷演變成需要手術的重大傷害。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 16px; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      若您有發球相關的關節疼痛或運動傷害疑慮，建議儘早諮詢骨科或復健科運動醫學專科醫師，進行完整評估與個別化治療計畫規劃。
+    </p>
+    <a href="#" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+      預約專科醫師評估
+    </a>
+  </div>
+</div>
+
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+  <div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+    <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Abrams GD, Safran MR. (2010). Diagnosis and management of superior labrum anterior posterior lesions in overhead athletes. British Journal of Sports Medicine, 44(5), 311–318. <a href="https://doi.org/10.1136/bjsm.2009.070755" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsm.2009.070755</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Elliott B, Fleisig G, Nicholls R, Escamilia R. (2003). Technique effects on upper limb loading in the tennis serve. Journal of Science and Medicine in Sport, 6(1), 76–87. <a href="https://doi.org/10.1016/S1440-2440(03)80011-7" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1016/S1440-2440(03)80011-7</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Kibler WB, Safran M. (2005). Tennis injuries. Medicine and Sport Science, 48, 120–137. <a href="https://doi.org/10.1159/000084288" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1159/000084288</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Kibler WB, Chandler TJ. (2003). Racquet sports. In: Fu FH, Stone DA (eds). Sports Injuries: Mechanisms, Prevention, Treatment, 2nd ed. Lippincott Williams & Wilkins, 883–900.
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Fleisig GS, Nicholls R, Elliott B, Escamia R. (2003). Kinematics used by world class tennis players to produce high-velocity serves. Sports Biomechanics, 2(1), 51–71. <a href="https://doi.org/10.1080/14763140308522807" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1080/14763140308522807</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Walch G, Liotard JP, Boileau P, Nöel E. (1991). Postero-superior glenoid impingement—another impingement of the shoulder. Journal of Radiology, 72(1), 47–50. PMID: 2023498.
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Blevins FT. (1997). Rotator cuff pathology in athletes. Sports Medicine, 24(3), 205–220. <a href="https://doi.org/10.2165/00007256-199724030-00006" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.2165/00007256-199724030-00006</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Winge S, Jørgensen U, Nielsen AL. (1989). Epidemiology of injuries in Danish championship tennis. International Journal of Sports Medicine, 10(5), 368–371. <a href="https://doi.org/10.1055/s-2007-1024924" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1055/s-2007-1024924</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Perkins RH, Davis D. (2006). Musculoskeletal injuries in tennis. Physical Medicine and Rehabilitation Clinics of North America, 17(3), 609–631. <a href="https://doi.org/10.1016/j.pmr.2006.05.005" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1016/j.pmr.2006.05.005</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Abrams GD, Renstrom PA, Safran MR. (2012). Epidemiology of musculoskeletal injury in the tennis player. British Journal of Sports Medicine, 46(7), 492–498. <a href="https://doi.org/10.1136/bjsports-2012-091164" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsports-2012-091164</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Ellenbecker TS, Roetert EP. (2004). An isokinetic profile of trunk rotation strength in elite tennis players. Medicine & Science in Sports & Exercise, 36(11), 1959–1963. <a href="https://doi.org/10.1249/01.MSS.0000145452.75363.76" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1249/01.MSS.0000145452.75363.76</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Pluim BM, Staal JB, Windler GE, Jayanthi N. (2006). Tennis injuries: occurrence, aetiology, and prevention. British Journal of Sports Medicine, 40(5), 415–423. <a href="https://doi.org/10.1136/bjsm.2005.023549" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsm.2005.023549</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Hutchinson MR, Laprade RF, Burnett QM, Moss R, Terpstra J. (1995). Injury surveillance at the USTA Boys' Tennis Championships: a 6-yr study. Medicine & Science in Sports & Exercise, 27(6), 826–830. PMID: 7658939.
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Reid M, Elliott B, Alderson J. (2007). Shoulder joint kinetics and kinematics of the slice and kick tennis serves. British Journal of Sports Medicine, 41(11), 798–804. <a href="https://doi.org/10.1136/bjsm.2007.036848" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsm.2007.036848</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          International Tennis Federation (ITF). (2020). Serve Load Monitoring Guidelines for Junior Players. ITF Technical Department. <a href="https://www.itftennis.com" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">www.itftennis.com</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Silva RT, Gracitelli GC, Saccol MF, Laurino CF, Silva AC, Braga-Silva J. (2006). Shoulder strength profile in elite junior tennis players: horizontal adduction and internal rotation deficit. British Journal of Sports Medicine, 40(6), 513–517. <a href="https://doi.org/10.1136/bjsm.2005.023408" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsm.2005.023408</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Gallo RA, Sciascia A, Obermeier M, Bizzozero E, Apker K, Safran MR. (2012). Relationship between shoulder range of motion and trunk rotation in unilateral overhead athletes. Journal of Shoulder and Elbow Surgery, 21(10), 1388–1394. <a href="https://doi.org/10.1016/j.jse.2011.08.040" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1016/j.jse.2011.08.040</a>
+        </span>
+      </li>
+    </ol>
+  </div>
+</article>
+</main>
+<footer class="border-t border-zinc-800 text-gray-400 text-center py-8 text-sm mt-8" style="font-family: 'system-ui', sans-serif;">
+  <p>本文內容僅供醫學衛教參考，不構成診療建議。請諮詢您的主治醫師以獲得個人化的醫療建議。</p>
+  <p class="mt-2">© 2026 醫學知識編輯團隊</p>
+</footer>
+</div>
+  `
+},
+
+{
+  id: 'tennis-injury-analysis',
+  title: '網球運動傷害全解析：握拍方式、單反雙反，誰更容易受傷？',
+  lastModified: '2026-04-12',
+  category: '衛教文章',
+  date: '2026-04-12',
+  summary: '深度剖析東方式、西方式、半西方式握拍與單手反拍、雙手反拍的運動傷害差異。實證研究揭露哪種打法更容易導致網球肘、手腕ECU肌腱病變與肩袖撕裂，並提供科學預防策略。',
+  coverImage: '/images/news/article/tennis-injury-analysis.webp',
+  seoTitle: '網球運動傷害全解析：握拍方式、單反雙反，誰更容易受傷？',
+  seoDescription: '深度剖析東方式、西方式、半西方式握拍與單手反拍、雙手反拍的運動傷害差異。實證研究揭露哪種打法更容易導致網球肘、手腕ECU肌腱病變與肩袖撕裂，並提供科學預防策略。',
+  keywords: [
+    '網球運動傷害',
+    '網球肘',
+    '東方式握拍',
+    '西方式握拍',
+    '半西方式握拍',
+    '單手反拍',
+    '雙手反拍',
+    'ECU肌腱病變',
+    '外側上髁炎'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    網球是一項對上肢關節需求極高的運動。不同的握拍方式——東方式、西方式、半西方式——會造成前臂肌群活化模式、手腕偏移角度的根本差異，進而引發不同部位的傷害。研究指出，西方式與半西方式握拍者更容易發生尺側手腕傷害（如ECU肌腱病變），而東方式則較傾向橈側傷害。單手反拍因為需要單側上肢獨自承受衝擊力矩，是造成網球肘（外側上髁炎）的高風險動作；雙手反拍雖較能分散受力，但對非慣用手手腕的負擔不容忽視。本文將以實證為基礎，系統性剖析各種握法與打法的受傷風險，並提供預防策略。
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、為什麼握拍方式決定你的受傷風險？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多業餘球友在打球時，往往專注於技術進步，卻忽略了一個根本問題：<strong style="color: #2dd4bf;">你握拍的方式，正在悄悄累積傷害。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    網球拍握把設計為八角形，每個面稱為一個「bevel（斜面）」，從 1 至 8 編號。不同的握拍法，本質上就是將手的基節骨放置在不同的斜面上，這一個小小的位移，卻會牽動整條上肢動力鏈——從手腕、前臂、肘關節乃至肩膀——在每次擊球瞬間的受力模式。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    根據 2024 年發表於 PMC 的生物力學研究，東方式握拍時，前臂處於旋前（pronation）姿勢，手腕呈尺側偏移（ulnar deviation）；而西方式握拍則使前臂旋後（supination），手腕呈橈側偏移（radial deviation）。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11595894/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    這些結構性差異，直接導致不同肌群的活化模式與震波吸收機制，也造就了截然不同的受傷風險地圖。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、東方式、半西方式、西方式握拍：各有哪些傷害風險？
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">東方式握拍（Eastern Grip）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    東方式握拍是最接近「握手」的握法，食指基節骨置於第 3 斜面。這是初學者最容易上手的握法，適合擊打平擊球與低彈道球。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    從傷害角度來看，東方式握拍的特徵是<strong style="color: #ffffff;">橈側（大拇指側）傷害較多</strong>。2009 年 Tagliafico 等學者針對 370 名業餘網球選手進行的手腕傷害研究發現，東方式握拍者較容易出現橈側手腕傷害。
+    <sup><a href="https://doi.org/10.1177/0363546508328112" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    此外，由於東方式在擊球時需要較多的手腕屈伸肌群（ECR）參與，前臂遠端肌群的代償性負荷也相對較高。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11595894/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見傷害：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">橈側手腕韌帶扭傷</li>
+    <li style="margin-bottom: 0.5rem;">橈側伸腕短肌（ECRB）肌腱病變（網球肘前驅期）</li>
+    <li style="margin-bottom: 0.5rem;">De Quervain 氏腱鞘炎（拇指基部）</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">半西方式握拍（Semi-Western Grip）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    半西方式（食指基節骨置於第 4 斜面）是目前職業巡迴賽中最常見的正拍握法，兼具旋轉球與平擊球的靈活性。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    然而，「最受歡迎」並不等於「最安全」。由於半西方式握拍時前臂需要更大的旋後動作來產生旋轉球，這對<strong style="color: #ffffff;">手腕尺側的伸腕尺肌（ECU，extensor carpi ulnaris）</strong>造成顯著的離心負荷。研究顯示，西方式與半西方式握拍使用者的尺側手腕傷害高度相關，幾乎清一色是 ECU 肌腱病變。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5125509/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    Tagliafico 等人的研究進一步指出，非職業選手中，使用西方式握拍者的手腕傷害發生率高達 <strong style="color: #ffffff;">30%</strong>，半西方式為 10%，而東方式僅 13%。
+    <sup><a href="https://doi.org/10.1177/0363546508328112" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    值得注意的是，這個數字反映的是業餘球友——缺乏完善肌力基礎的情況下採用西方系握法，傷害風險確實更高。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見傷害：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">尺側 ECU 肌腱病變（ECU tendinopathy）</li>
+    <li style="margin-bottom: 0.5rem;">ECU 肌腱不穩定與半脫位</li>
+    <li style="margin-bottom: 0.5rem;">尺側腕伸肌纖維骨鞘損傷</li>
+  </ul>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在復健臨床上，使用半西方式或西方式握拍的球友，其 ECU 肌腱病變往往以「前臂旋轉時的異響」或「擊球結束的『啪嗒』聲」為首發症狀，而非急性疼痛。許多球友因此延誤就醫，等到出現明顯腫脹才尋求協助，此時往往已進入慢性肌腱病變階段，治療期拉長至數月。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">西方式握拍（Western Grip）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    西方式握拍（食指基節骨置於第 5 斜面）是最極端的握法，能產生大量旋轉球，在紅土球場上廣受歡迎。納達爾（Rafael Nadal）正是以接近西方式的握拍聞名，他的 ECU 肌腱傷害也多次迫使他退賽，正是此握法的典型職業案例。
+    <sup><a href="https://theconversation.com/get-a-grip-the-twist-in-the-wrist-that-can-ruin-tennis-careers-90318" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    西方式握拍要求手腕在衝擊時承受最大的旋後力矩，對尺側結構的壓力最高。值得注意的是，職業選手的骨骼肌肉系統經過長年適應訓練，不一定比業餘選手更容易受傷；但業餘球友若直接模仿職業選手的極端握法，卻沒有對應的肌力基礎，風險將大幅提升。
+    <sup><a href="https://longislandtennismagazine.com/article/swiatek-nadal-djokovic-and-the-western-forehand/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見傷害：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">嚴重 ECU 肌腱病變或肌腱半脫位</li>
+    <li style="margin-bottom: 0.5rem;">尺骨莖突三角纖維軟骨複合體（TFCC）損傷</li>
+    <li style="margin-bottom: 0.5rem;">前臂旋轉功能障礙</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、單手反拍 vs. 雙手反拍：誰的傷害風險更高？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是網球社群中最熱烈討論的議題之一，答案其實比「哪種打法比較帥」更加複雜。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">單手反拍與網球肘的高度關聯</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    外側上髁炎（lateral epicondylitis），俗稱「網球肘」，是網球運動中最常見的傷害之一。研究顯示，約有 <strong style="color: #ffffff;">50% 的網球選手在職業生涯中曾受到肘部外側疼痛困擾，其中 75% 被確診為真性外側上髁炎</strong>，而業餘與單手反拍選手的風險尤高。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1050641115002035" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    為什麼單手反拍傷害風險更高？從生物力學分析，單手反拍在衝擊時，肘部所承受的扭矩約為 <strong style="color: #ffffff;">17–24 牛頓·米（Nm）</strong>，這些衝擊力矩必須由單側上肢的軟組織——特別是橈側伸腕短肌（ECRB）的肌腱附著點——獨自吸收。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/7712557/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    相較之下，雙手反拍讓兩側上肢共同分擔力量傳遞，大幅降低了外側上髁的局部負荷。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    電肌圖（EMG）研究進一步確認，即使是職業球員，在執行單手反拍的「加速期」與「早期跟進期」，ECRB 的肌電活動依然顯著高於雙手反拍者。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2465303/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 典型案例：</strong><br><br>曾有業餘球友因頻繁練習單手反拍，在三個月內出現持續性外側肘痛，被診斷為急性─慢性複合型外側上髁炎。後經物理治療師確認，其反拍技術存在「leading elbow（肘部前導）」的錯誤動作，導致每次擊球時手腕伸展肌群在不適切的角度下承受高強度負荷，最終釀成傷害。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">雙手反拍的優勢與隱藏風險</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    雙手反拍確實大幅降低了慣用手肘部的受傷風險，這也是醫學建議對肘部受傷者優先考慮改採雙手反拍的原因。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK431092/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+    然而，雙手反拍並非毫無代價：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">非慣用手腕部的尺側負荷增加：</strong>雙手反拍中，非慣用手採類似半西方式正拍的握法，其手腕尺側所承受的離心力與正拍擊球時幾乎相同。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5125509/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">過度旋後的危險：</strong>阿根廷球星 Juan Martín del Potro 就是最典型的案例——多次雙側手腕手術後，被迫放棄雙手反拍，正是因為其非慣用手在擊球時過度旋後，嚴重破壞了手腕的完整性。
+      <sup><a href="https://theconversation.com/get-a-grip-the-twist-in-the-wrist-that-can-ruin-tennis-careers-90318" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    </li>
+  </ul>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在實際治療中發現，雙手反拍球友的手腕傷害往往被忽略，因為主訴的疼痛感較初期單手反拍者輕微。許多球友以為「沒有明顯痛點就沒事」，但雙手反拍的非慣用手腕傷害往往在影像學（MRI或超音波）中已顯示早期的 TFCC 磨損或 ECU 肌腱纖維化，此時若不及早干預，累積損傷將迅速惡化。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、各握拍與反拍方式傷害比較表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>握拍／打法</th>
+          <th>主要受力部位</th>
+          <th>最常見傷害</th>
+          <th>業餘選手相對風險</th>
+          <th style="text-align: center; white-space: nowrap;">職業典型案例</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>東方式握拍</td>
+          <td>橈側手腕、前臂伸肌</td>
+          <td>橈側韌帶傷害、初期網球肘</td>
+          <td>中等</td>
+          <td style="text-align: center;">Federer（早期）</td>
+        </tr>
+        <tr>
+          <td>半西方式握拍</td>
+          <td>尺側手腕（ECU）</td>
+          <td>ECU 肌腱病變、TFCC 邊緣損傷</td>
+          <td>中高</td>
+          <td style="text-align: center;">Djokovic、Swiatek</td>
+        </tr>
+        <tr>
+          <td>西方式握拍</td>
+          <td>尺側手腕、前臂旋轉結構</td>
+          <td>ECU 半脫位、TFCC 全層損傷</td>
+          <td>高（業餘）</td>
+          <td style="text-align: center;">Nadal（ECU 手術）</td>
+        </tr>
+        <tr>
+          <td>單手反拍</td>
+          <td>外側肘（ECRB）</td>
+          <td>外側上髁炎（網球肘）</td>
+          <td>高</td>
+          <td style="text-align: center;">多數單反球員</td>
+        </tr>
+        <tr>
+          <td>雙手反拍</td>
+          <td>非慣用手尺側手腕</td>
+          <td>ECU 肌腱病變（非慣用手）</td>
+          <td>中（非慣用側）</td>
+          <td style="text-align: center;">del Potro（雙腕手術）</td>
+        </tr>
+        <tr>
+          <td>大力發球（Continental）</td>
+          <td>肩袖（旋轉肌群）、肘</td>
+          <td>旋轉肌群肌腱病變</td>
+          <td>中高（技術不足者）</td>
+          <td style="text-align: center;">多位大砲型球員</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、其他常見網球運動傷害
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">肩關節：旋轉肌群（Rotator Cuff）傷害</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    肩部傷害是職業球員退役的最主要原因之一。在發球與頭頂球動作中，肩關節需要在極大外旋角度下快速加速，旋轉肌群的肌腱不斷承受反覆性的微創傷。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7661672/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    旋轉肌群傷害通常從<strong style="color: #ffffff;">肌腱病變（tendinopathy）</strong>開始，逐步進展為部分撕裂，最終可能成為全層撕裂。年齡層越大，退化性損傷的比例也越高。2024 年的文獻指出，旋轉肌群部分撕裂（尤其是關節面側）是網球選手肩部最常見的病理，主要發生在發球與頭頂球動作中。
+    <sup><a href="https://academic-med-surg.scholasticahq.com/article/117284-four-common-upper-body-injuries-in-tennis-players-prevention-description-and-treatment" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <strong style="color: #ffffff;">高風險族群：</strong>20–33 歲、大肌肉（胸大肌）發展超前但旋轉肌群訓練不足的球員，因為加速力道超過組織耐受極限。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">網球肘（外側上髁炎）治療選項</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    外側上髁炎的盛行率在一般人群中為 1–3%，而網球選手的終生盛行率可高達 50%。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1050641115002035" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">
+      <strong style="color: #ffffff;">保守治療（一線）：</strong>休息、NSAIDs、物理治療，成功率約 90%。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2465303/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.5rem;">
+      <strong style="color: #ffffff;">皮質類固醇注射：</strong>短期效果顯著，但長期復發率較高，建議謹慎使用。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2465303/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.5rem;">
+      <strong style="color: #ffffff;">PRP（富血小板血漿）注射：</strong>研究結果不一，部分研究顯示中長期效果優於類固醇注射。
+      <sup><a href="https://www.researchgate.net/publication/15485742_The_Biomechanics_of_Tennis_Elbow_An_Integrated_Approach" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.5rem;">
+      <strong style="color: #ffffff;">針灸：</strong>三項對照研究的回顧顯示，短期內針灸優於安慰劑，但長期療效尚待確認。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2465303/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.5rem;">
+      <strong style="color: #ffffff;">手術：</strong>保守治療 6–12 個月無效時才考慮，包含關節鏡或開放式外側鬆解術。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10234213/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>
+    </li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">手腕傷害</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    手腕傷害涵蓋範圍廣泛，包含 ECU 肌腱病變、De Quervain 氏腱鞘炎（拇指側）、TFCC 損傷，以及較少見的腕隧道症候群。研究指出，De Quervain 氏腱鞘炎是所有網球手腕傷害中最常見的類型。
+    <sup><a href="https://www.physioinq.com.au/blog/common-wrist-injuries-tennis-players" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">下肢傷害</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    快速的啟動、煞停與橫向移步，使膝關節、踝關節承受極大的應力。常見傷害包含：踝關節扭傷（外側韌帶）、髕骨肌腱病變（跳躍膝），以及網球選手常見的腳底筋膜炎。
+    <sup><a href="https://www.massgeneralbrigham.org/en/about/newsroom/articles/tennis-injuries" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[15]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 六、常見三大誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「西方式握拍一定比東方式更容易受傷」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 正確的說法是：<strong>業餘球友</strong>使用西方式握拍，在缺乏充分肌力基礎的情況下，的確有更高的尺側手腕傷害風險。但對於有充分訓練的職業球員，現有文獻並未找到西方式握法必然導致更高傷害率的證據。<sup><a href="https://longislandtennismagazine.com/article/swiatek-nadal-djokovic-and-the-western-forehand/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[5]</a></sup> 握拍方式的「危險性」，很大程度上取決於球員的訓練程度與技術成熟度，而非握法本身。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「雙手反拍比單手反拍安全，所以網球肘患者應完全放棄單反」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 雙手反拍確實降低了慣用手肘部的外側上髁炎風險，這有充分的科學依據。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/7712557/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[7]</a></sup> 然而，雙手反拍並非「零風險」——它只是<strong>轉移</strong>了傷害部位，從慣用肘轉向非慣用手腕。一位從單反轉為雙反但缺乏適當過渡訓練的球友，可能只是換了一個受傷的位置而已。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「痛的時候繼續打，只要不是骨折就沒關係」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>非常危險！</strong> 肌腱傷害（tendinopathy）的本質是膠原纖維的退化性改變，若在疼痛期間持續施加高強度負荷，會加速膠原纖維的不規則排列，使肌腱完整性進一步下降，甚至引發完全撕裂。網球肘與 ECU 肌腱病變若在急性期忽視，平均治療時間將從 6–8 週延長至 3–6 個月，嚴重者甚至需要手術介入。<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK431092/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[9]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、如何選擇適合自己體能狀況的握拍與打法？
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">你是否容易出現肘部疼痛？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">若你過去有過肘部外側疼痛，建議：</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">優先考慮東方式握拍或半西方式，避免極端西方式</li>
+    <li style="margin-bottom: 0.5rem;">採用雙手反拍，減少外側上髁的直接負荷</li>
+    <li style="margin-bottom: 0.5rem;">確保正拍擊球時球落在身體前方，讓軀幹與大肌群主導發力</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">你是否容易出現手腕不適？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">若你的手腕曾有過尺側疼痛或異響：</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">考慮向東方式握拍靠攏，減少旋後動作帶來的 ECU 負荷</li>
+    <li style="margin-bottom: 0.5rem;">雙手反拍時特別注意非慣用手的握法，避免過度旋後</li>
+    <li style="margin-bottom: 0.5rem;">加強手腕屈伸肌群的強化訓練，並定期進行柔軟度訓練</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    八、預防策略：從訓練到裝備
+  </h2>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">漸進式訓練量增加：</strong>每週訓練量增加不超過 10%，讓肌腱有足夠時間適應
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">握拍壓力管理：</strong>避免過度用力握拍，這是肘部與前臂過度使用傷害的已知風險因素
+      <sup><a href="https://www.utrsports.net/blogs/news/tennis-forehand-grip-guide-eastern-semi-western-western-explained" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[16]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">選擇適合的球拍：</strong>較大的拍框甜蜜點可減少偏中擊球時的震動傳遞；適當的握把尺寸（從手掌橫紋至無名指尖的距離）可降低外側上髁的負荷
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2465303/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">旋轉肌群強化訓練：</strong>定期進行肩部外旋阻力訓練，防止肩袖傷害
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">擊球技術分析：</strong>請教練進行影像分析，識別並矯正「肘部前導」或「手腕過度旋後」等高風險動作模式
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：網球肘一定是打網球造成的嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不一定。外側上髁炎雖名為「網球肘」，但其實不到 10% 的患者是網球選手。任何需要反覆手腕伸展與前臂旋前動作的工作或活動——如使用電腦滑鼠、打螺絲、搬運重物——都可能引發相同的傷害。<sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1050641115002035" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：改變握拍方式能夠根治手腕或手肘傷害嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      改變握拍方式可以降低特定部位的受力，是預防策略的一部分，但並非萬靈丹。如果現有傷害已進入慢性期，單純改變握法無法逆轉已退化的肌腱組織，仍需配合物理治療、肌力訓練與適當的休息。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：職業球員的傷害經驗對業餘選手有參考價值嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      有一定參考價值，但需謹慎類比。職業球員的受傷往往是在極高訓練量與技術成熟度下發生的，業餘選手的受傷模式更多是因為技術錯誤與肌力基礎不足。例如，納達爾的 ECU 傷害根源在於數千小時高強度旋轉球訓練後的累積損耗，而業餘球友同樣部位的傷害可能只需幾個月的不當練習就會出現。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：單手反拍是不是「更高難度、更容易受傷」的打法？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      單手反拍在技術執行上確實更要求時機判斷，而技術不成熟的單手反拍——特別是有「肘部前導」問題者——被大量研究確認是外側上髁炎的風險因素。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2465303/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup> 但正確執行的單手反拍，配合充足的肌力與柔軟度訓練，傷害風險並非無法管理。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：打網球後手腕痛，多久應該就醫？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      若疼痛超過 72 小時仍未緩解，或出現「旋轉前臂時有異響/彈響」、「手腕腫脹」等症狀，應儘早就醫。早期的 ECU 肌腱問題與 TFCC 損傷若及時介入（影像確認、適當休息與物理治療），可避免演變為需要手術的慢性傷害。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    網球運動傷害的發生，從來不是單一因素的結果。握拍方式決定了受力分布的模式，打法選擇影響了肘部與手腕的相對風險，而訓練量管理、技術成熟度與裝備選擇，則共同決定了傷害是否真的會發生。
+  </p>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    無論你是剛開始學球的入門者，還是打了二十年的資深球友，<strong style="color: #1e293b;">最好的預防永遠從「了解自己的身體與打法」開始</strong>。如果你對自己的握拍方式或現有的不適症狀有疑慮，不要等到疼痛難忍才行動——<strong style="color: #1e293b;">今天就預約一次運動物理治療師的評估，一個正確的動作分析，可能為你節省好幾個月的復健時間。</strong>
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的傷害風險比較表，檢視你目前使用的握拍方式與打法，並在下一次練球時特別留意手腕與肘部的感受。若有任何持續性不適，請尋求專業醫療評估。
+    </p>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Li, Y., et al. (2024). Characteristics, Relationships, and Differences in Muscle Activity and Impact Load Attenuation During Tennis Forehand Stroke with Different Grips. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11595894/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11595894</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Tagliafico, A.S., Ameri, P., Michaud, J., Derchi, L.E., Sormani, M.P., & Martinoli, C. (2009). Wrist Injuries in Nonprofessional Tennis Players: Relationships with Different Grips. American Journal of Sports Medicine, 37(4), 760–767. <a href="https://doi.org/10.1177/0363546508328112" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1177/0363546508328112</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Perkins, R.H., & Davis, D. (2016). Upper Extremity Injuries in Tennis Players: Diagnosis, Treatment, and Management. PMC5125509. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5125509/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 5125509</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Reid, M., & McNair, P. (2018). Get a grip: the twist in the wrist that can ruin tennis careers. The Conversation. <a href="https://theconversation.com/get-a-grip-the-twist-in-the-wrist-that-can-ruin-tennis-careers-90318" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Article: 90318</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Bhatt, J. (2023). Swiatek, Nadal, Djokovic and The Western Forehand. Long Island Tennis Magazine. <a href="https://longislandtennismagazine.com/article/swiatek-nadal-djokovic-and-the-western-forehand/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Abrams, G.D., et al. (2015). Electromyographic assessment of forearm muscle function in tennis players with and without Lateral Epicondylitis. ScienceDirect. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1050641115002035" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PII: S1050641115002035</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Groppel, J.L., & Nirschl, R.P. (1986). The Biomechanics of Tennis Elbow: An Integrated Approach. PubMed. <a href="https://pubmed.ncbi.nlm.nih.gov/7712557/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 7712557</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Eygendaal, D., Rahussen, F.T.G., & Diercks, R.L. (2007). Lateral epicondylitis in tennis: update on aetiology, biomechanics and treatment. PMC2465303. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2465303/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 2465303</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Buchanan, B.K., & Varacallo, M.A. (2023). Lateral Epicondylitis (Tennis Elbow). StatPearls, NCBI Bookshelf. <a href="https://www.ncbi.nlm.nih.gov/books/NBK431092/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Bookshelf: NBK431092</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Myer, C., et al. (2020). Rotator Cuff Injuries in Tennis Players. PMC7661672. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7661672/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7661672</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Patel, J., & Wallen, M. (2024). Four Common Upper Body Injuries in Tennis Players: Prevention, Description, and Treatment. Academic Medicine & Surgery. <a href="https://doi.org/10.62186/001c.117284" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.62186/001c.117284</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Roetert, E.P., & Groppel, J.L. (1995). The Biomechanics of Tennis Elbow: An Integrated Approach. ResearchGate. <a href="https://www.researchgate.net/publication/15485742_The_Biomechanics_of_Tennis_Elbow_An_Integrated_Approach" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">ResearchGate: 15485742</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Liao, C.D., et al. (2023). Global Research Trends and Hotspots in Lateral Epicondylitis During the Past 30 Years: A Bibliometric and Visualization Study. PMC10234213. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10234213/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10234213</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Physio Inq. (2019). Common Wrist Injuries In Tennis Players. <a href="https://www.physioinq.com.au/blog/common-wrist-injuries-tennis-players" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Mass General Brigham. (2024). Common Tennis Injuries & Prevention. <a href="https://www.massgeneralbrigham.org/en/about/newsroom/articles/tennis-injuries" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    UTR Sports. (2025). Tennis Forehand Grip Guide: Eastern, Semi-Western, Western explained. <a href="https://www.utrsports.net/blogs/news/tennis-forehand-grip-guide-eastern-semi-western-western-explained" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+  </span>
+</li>  </ol>
+</div>
+`
+},
+
+{
+  id: 'scoliosis-causes-treatment',
+  title: '脊椎側彎完整指南：成因、角度變化與治療選項全解析',
+  lastModified: '2026-04-12',
+  category: '衛教文章',
+  date: '2026-04-12',
+  summary: '脊椎側彎不只是外觀問題！深入解析特發性、先天性與退化性側彎的成因，Cobb角度是否能變回來，以及從觀察到手術的完整治療比較。',
+  coverImage: '/images/news/article/scoliosis-treatment.webp',
+  seoTitle: '脊椎側彎完整指南：成因、角度、治療',
+  seoDescription: '深入解析脊椎側彎（Scoliosis）的三大類型：特發性、先天性與退化性側彎。說明Cobb角度如何測量、角度會不會自然恢復，以及觀察、支架、手術等治療選項的適用時機與效果比較。',
+  keywords: [
+    '脊椎側彎',
+    '脊椎側彎治療',
+    '特發性脊椎側彎',
+    'scoliosis',
+    'Cobb角度',
+    '側彎支架',
+    '脊椎側彎手術',
+    '青少年脊椎側彎',
+    '側彎運動治療'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    脊椎側彎（Scoliosis）是指脊椎在正面（冠狀面）出現<strong style="color: #0284c7;">10度以上側向彎曲</strong>，全球盛行率約為2–3%，青少年族群最為常見。其中約80%屬於「特發性側彎」，成因至今尚未完全釐清。側彎一旦形成，
+    <strong style="color: #0284c7;">Cobb角度不會自行恢復到正常範圍</strong>，但透過適當介入可有效阻止惡化。輕度側彎（Cobb角 &lt;25°）以觀察或物理治療為主；中度（25–45°）建議穿戴支架；重度（&gt;45–50°）則可能需要手術矯正。早期發現、定期追蹤與積極治療，是改善預後的關鍵。
+  </p>
+</div>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、什麼是脊椎側彎？從醫學定義認識這個疾病
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    脊椎側彎（Scoliosis，源自希臘文「crooked」）是指脊椎從正常的直線排列，出現側向彎曲與旋轉的三維結構變形。正式的醫學定義要求在站立位X光片上，使用「Cobb角測量法」測得的側彎角度達到
+    <strong style="color: #2dd4bf;">10度或以上</strong>，才被診斷為脊椎側彎
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/32150180/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    脊椎側彎並非單純的「彎曲」，而是一個複雜的三維變形，同時涉及：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">冠狀面側彎</strong>：從正面看，脊椎呈現「S」或「C」形彎曲</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">椎體旋轉</strong>：各節脊椎骨同時發生軸向旋轉，導致肋骨隆起（rib hump）</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">矢狀面變化</strong>：正常的生理弧度（頸椎前凸、胸椎後凸、腰椎前凸）可能同步改變</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    根據彎曲形態，脊椎側彎分為：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">C型側彎</strong>：只有一個主要彎曲弧，較常見於退化性或先天性側彎。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">S型側彎</strong>：有兩個方向相反的彎曲弧（主弧＋代償弧），最常見於青少年特發性脊椎側彎（AIS）。
+    </li>
+  </ul>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 Cobb角度怎麼測量？</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      Cobb角是脊椎側彎嚴重程度的標準測量方式：在全脊椎正位X光片上，找出側彎最頂端與最底端的椎體，分別沿其上下終板畫出水平線，兩線相交所形成的角度即為Cobb角。Cobb角越大，代表側彎越嚴重，也是決定治療策略的核心依據。
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、脊椎側彎的產生原因：三大類型解析
+  </h2>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+    最常見：特發性脊椎側彎（約80%）
+  </h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    「特發性（Idiopathic）」意指目前醫學尚無法找到單一明確原因。特發性脊椎側彎佔所有脊椎側彎的<strong style="color: #2dd4bf;">約80%</strong>，依發病年齡細分為：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">嬰幼兒型</strong>（0–3歲）：少見，部分可自然恢復</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">少年型</strong>（4–9歲）：有持續進展風險</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">青少年型（AIS）</strong>（10歲至骨骼成熟）：最常見，好發於女性，女：男 ≈ 7:1</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">成人特發性側彎</strong>：骨骼成熟後仍持續進展或新發</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    目前研究認為，特發性脊椎側彎是<strong style="color: #ffffff;">多因子遺傳</strong>疾病，影響因素包括：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">遺傳因素</strong>：有家族史者風險提高3–10倍，多個基因位點（如CHD7、FBN1/FBN2）已被確認與發病相關</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">生長不對稱</strong>：青春期快速生長階段，脊椎前柱與後柱生長速度不一致</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">神經肌肉不平衡</strong>：脊椎旁肌群張力不對稱，影響脊椎排列</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">結締組織異常</strong>：部分患者纖維連結蛋白（fibronectin）或彈性纖維結構異常</li>
+  </ul>
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 重要澄清：</strong>長期使用背包、坐姿不良、缺乏運動等因素，<strong>並非</strong>特發性脊椎側彎的直接成因。這些因素可能加重已有的脊椎不適，但不會直接「導致」結構性脊椎側彎。家長無需因此過度自責，但仍應鼓勵良好姿勢與核心肌力訓練。
+    </p>
+  </div>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">先天性脊椎側彎</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    由於胎兒期（妊娠第5–8週）椎體形成異常所致，包括：椎體形成不全（半椎體）、椎體分節不全（骨橋）、或兩者混合型。先天性側彎通常在出生後或幼兒期即可被發現，進展速度與異常椎體位置和類型密切相關，部分需要早期手術介入以保護脊髓功能。
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">神經肌肉性脊椎側彎</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    繼發於神經或肌肉疾病，常見病因包括腦性麻痺（Cerebral Palsy）、肌肉萎縮症（Muscular Dystrophy）、脊髓性肌肉萎縮症（SMA）、脊髓損傷等。此類側彎常為長弧度「C型」，進展快速，且肌張力不足導致治療難度較高。
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">退化性（成人）脊椎側彎</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    好發於40歲以上成人，主要成因是椎間盤與關節突關節的不對稱退化。隨著年齡增長，椎間盤水分流失、高度下降，若退化不均勻，即可導致脊椎側向傾斜。退化性側彎的危險因子包括：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;">骨質疏鬆症（尤其是停經後女性）</li>
+    <li style="margin-bottom: 0.75rem;">長期體重過重，增加腰椎負荷</li>
+    <li style="margin-bottom: 0.75rem;">核心肌群無力，無法提供足夠的脊椎支撐</li>
+    <li style="margin-bottom: 0.75rem;">既往脊椎手術史</li>
+  </ul>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、側彎角度會不會自己變回來？關鍵真相
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    這是家長與患者最常問、也最關心的問題。答案需要依據年齡與嚴重程度分別說明。
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">骨骼成熟前（生長期兒童與青少年）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    在骨骼尚未成熟的生長期，Cobb角有兩種可能性：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 1rem;"><strong style="color: #2dd4bf;">自然改善（罕見）</strong>：嬰幼兒型特發性側彎（0–3歲）中，約85%的輕度病例（Cobb角 &lt;20°）可在生長過程中自然改善甚至消退，原因可能與嬰兒期脊椎塑形能力較強有關。</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #f87171;">進展風險（更常見）</strong>：青少年型特發性側彎在快速生長的青春期，每年可能進展5–10度，尤其Cobb角 &gt;25°、骨骼尚未成熟（Risser分級 0–2）的女性患者，進展風險最高。</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <strong style="color: #ffffff;">重要結論：</strong>青少年特發性側彎的Cobb角<strong style="color: #f87171;">不會自行「變回」正常</strong>。若有進展，必須積極介入；若角度穩定，也需定期追蹤監測。
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">骨骼成熟後（成人）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    骨骼成熟後，側彎通常會趨於穩定，但並非完全停止進展：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">Cobb角 &lt;30° 的成人側彎：大多數保持穩定，每年進展 &lt;1°</li>
+    <li style="margin-bottom: 1rem;">Cobb角 30–50° 的胸椎側彎：成年後仍可能每年進展約0.5–1°</li>
+    <li style="margin-bottom: 1rem;">Cobb角 &gt;50° 的側彎：即使骨骼成熟後也可能持續緩慢進展，且隨著年齡增長合併退化性變化</li>
+  </ul>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床重點提醒</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      「角度沒有變大就好了」——這是許多家長的心態，但事實上，在青春期快速生長的2–3年窗口期內，每3–6個月的定期X光追蹤至關重要。一旦錯過這個黃金介入期（如應穿支架卻未穿），角度可能在半年內惡化超過10度，屆時治療難度將大幅提升。
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、脊椎側彎如何治療？完整選項與時機
+  </h2>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">治療策略依Cobb角嚴重程度決定</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    脊椎側彎的治療方式主要依據Cobb角度、患者年齡與骨骼成熟度（Risser分級）來決定，並非所有側彎都需要手術。
+  </p>
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.25rem; font-weight: bold; color: #ffffff; margin-bottom: 0.75rem;">🔍 第一線：觀察與定期追蹤（Cobb角 &lt;25°）</h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      輕度側彎在骨骼成熟前，主要以每3–6個月拍攝全脊椎X光追蹤為主。同時配合以下非手術措施：
+    </p>
+    <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">核心肌群訓練</strong>：強化腹橫肌、多裂肌、豎脊肌，改善脊椎動態穩定性</li>
+      <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">脊椎側彎專用運動（SEAS/Schroth）</strong>：針對特定彎弧設計的矯正性呼吸與姿勢運動，已有研究顯示可減緩進展</li>
+      <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">姿勢訓練與體態矯正</strong>：改善日常生活中的不對稱姿勢習慣</li>
+    </ul>
+  </div>
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.25rem; font-weight: bold; color: #ffffff; margin-bottom: 0.75rem;">🦺 支架治療（Cobb角 25–45°，骨骼未成熟）</h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      支架治療是目前唯一被高品質臨床研究（2013年BRAIST試驗）證實能有效阻止青少年特發性側彎進展的非手術療法。研究顯示，每日佩戴支架12–16小時以上的患者，治療成功率可達72%（對比觀察組的48%）。
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">常見支架類型：</p>
+    <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+      <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">TLSO支架（如Boston brace）</strong>：最廣泛使用，適用胸腰椎彎弧</li>
+      <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">Milwaukee支架</strong>：適用高胸椎彎弧，但舒適度較差</li>
+      <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">Charleston彎曲支架</strong>：僅夜間佩戴，適合腰椎為主的彎弧</li>
+      <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">SpineCor軟式支架</strong>：彈性較佳，適合活動量大的青少年</li>
+    </ul>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem;">
+      <strong style="color: #f87171;">重要：</strong>支架的目標是「阻止惡化」，而非「矯正已有的角度」。佩戴期間Cobb角可能暫時改善，但脫離支架後通常會部分回彈至原有角度。
+    </p>
+  </div>
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.25rem; font-weight: bold; color: #ffffff; margin-bottom: 0.75rem;">🏥 手術治療（Cobb角 &gt;45–50°，或持續進展）</h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      當側彎超過45–50度，或在生長期快速進展且支架治療效果不佳時，手術介入是防止進一步惡化、改善外觀與功能的最有效方法。
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">主要手術方式：</p>
+    <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+      <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">後路脊椎融合手術（PSF）</strong>：最常見術式，透過椎弓根螺釘與鈦棒系統矯正側彎後，植入骨移植物使脊椎融合固定，可矯正60–80%的側彎角度</li>
+      <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">前路脊椎融合手術（ASF）</strong>：由胸腹側進入，適用特定腰椎為主的側彎</li>
+      <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">生長友好型手術（Growing Rod）</strong>：適用仍在生長的年幼患者（&lt;8歲），保留生長空間，定期延長</li>
+      <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">椎體骨盆固定術</strong>：適用神經肌肉性側彎延伸至骨盆者</li>
+    </ul>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem;">
+      現代脊椎側彎手術的矯正效果顯著，大多數患者術後可恢復正常或接近正常的外觀與脊椎功能，但融合節段會喪失部分活動度，需進行長期的術後復健。
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、脊椎側彎治療選項比較表格
+  </h2>
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 160px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    .text-warning { color: #d97706; font-weight: 500; }
+    .text-danger { color: #dc2626; font-weight: 600; }
+    .text-success { color: #15803d; font-weight: 600; }
+    @media (max-width: 600px) {
+      .modern-table { font-size: 14px; }
+    }
+  </style>
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>治療方式</th>
+          <th>適用Cobb角</th>
+          <th>主要目標</th>
+          <th>矯正效果</th>
+          <th>注意事項</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>定期追蹤觀察</td>
+          <td>&lt;25°（生長期）<br>&lt;40°（成人穩定）</td>
+          <td>早期發現進展</td>
+          <td class="text-warning">無直接矯正效果</td>
+          <td>每3–6個月X光追蹤</td>
+        </tr>
+        <tr>
+          <td>物理治療<br>（Schroth/SEAS）</td>
+          <td>所有程度均可輔助</td>
+          <td>強化核心、改善姿勢、延緩進展</td>
+          <td class="text-warning">輕度改善姿勢、角度穩定</td>
+          <td>需配合專業治療師指導</td>
+        </tr>
+        <tr>
+          <td>脊椎支架<br>（TLSO等）</td>
+          <td>25–45°（骨骼未成熟）</td>
+          <td>阻止惡化</td>
+          <td class="text-warning">阻止進展，不能「矯回」</td>
+          <td>每日需佩戴12–16小時以上</td>
+        </tr>
+        <tr>
+          <td>後路脊椎融合手術（PSF）</td>
+          <td>&gt;45–50° 或持續進展</td>
+          <td>矯正側彎、固定脊椎</td>
+          <td class="text-success">矯正率達60–80%</td>
+          <td>融合節段活動度永久下降</td>
+        </tr>
+        <tr>
+          <td>生長友好型手術<br>（Growing Rod）</td>
+          <td>&gt;40°（幼兒，&lt;8歲）</td>
+          <td>控制進展、保留生長空間</td>
+          <td class="text-warning">控制為主，不完全矯正</td>
+          <td>需每6–12個月延長手術</td>
+        </tr>
+        <tr>
+          <td>微創脊椎手術<br>（VATS/MIS）</td>
+          <td>適用特定彎弧類型</td>
+          <td>矯正腰椎主弧</td>
+          <td class="text-success">傷口小、恢復快</td>
+          <td>適應症較嚴格，需個案評估</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 六、常見四大誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>誤區一：「姿勢不良是脊椎側彎的主要原因」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>事實澄清：</strong>特發性脊椎側彎的真正成因目前尚不明確，但長期研究已排除「坐姿不良」或「背包過重」作為主要成因。不良姿勢可能加重肌肉疲勞與不適，但不會直接「造成」結構性側彎。遺傳因素與生長期的脊椎不對稱發育，才是目前最有力的解釋。</span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>誤區二：「等孩子長大停止生長，側彎就會穩定了」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>事實澄清：</strong>雖然骨骼成熟後進展速度確實減慢，但Cobb角超過30–50度的側彎在成年後仍可能持續緩慢惡化。更重要的是，錯過青春期的黃金治療期，往往意味著需要更激進的介入，而非問題自然消失。</span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>誤區三：「脊椎側彎一定要開刀才有用」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>事實澄清：</strong>超過85%的青少年特發性側彎患者不需要手術。輕中度側彎透過規律的物理治療、Schroth運動，以及適時佩戴支架，大多數可以有效阻止進展，維持良好生活品質。手術只在角度超過45–50度，或出現心肺功能影響等特定情況下才需要考慮。</span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
+        <div>
+          <strong>誤區四：「整脊推拿可以矯正脊椎側彎」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>事實澄清：</strong>整脊（chiropractic）或推拿可以改善肌肉緊繃與不適感，但目前沒有高品質臨床證據顯示其能有效減少或阻止結構性脊椎側彎的Cobb角進展。將整脊視為側彎的主要治療方式，可能延誤真正有效的醫療介入時機。</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> 七、FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1. 孩子被診斷脊椎側彎20度，需要馬上治療嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      Cobb角20度屬於輕度側彎，若孩子骨骼尚未成熟（青春期前後），建議每3–6個月回診追蹤X光。同時可開始物理治療（如Schroth運動）強化核心肌群。若在追蹤期間發現角度增加超過5度，則需考慮支架治療。此時期最重要的是「不拖延、定期追蹤」，而非等到角度惡化才後悔。
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2. 成人側彎30度，需要治療嗎？會繼續惡化嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      成人輕中度側彎（&lt;40度）若無明顯症狀，通常以觀察與保守治療為主。建議規律進行核心肌群訓練、游泳等低衝擊有氧運動，並注意骨質疏鬆的預防（尤其女性）。若出現明顯腰背痛、神經症狀或影像學顯示持續進展，則需積極評估介入治療。成人側彎的治療目標主要是「症狀管理與延緩惡化」，而非像青少年般以矯正為主。
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3. 穿了支架角度改善了，可以不用手術嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      支架治療的成功定義是：骨骼成熟後Cobb角進展 &lt;5度（即阻止惡化）。穿支架期間若影像顯示角度有所改善，是好的跡象，但需注意脫下支架後角度通常會部分回彈。若骨骼成熟後角度穩定在45度以下，且無嚴重症狀，一般不需要手術。但仍需長期追蹤，因部分患者在成年後會因退化性變化而再次進展。
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4. 脊椎側彎手術後可以正常生活嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 1rem; text-align: justify;">
+      現代脊椎融合手術後，絕大多數青少年患者在術後6–12個月可以恢復正常學業與日常活動，部分甚至能重返輕度運動。融合節段確實會喪失部分活動度，但對整體日常功能的影響通常不大。術後規律的復健運動、維持健康體重與避免高衝擊運動，是維持長期良好結果的關鍵。
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與呼籲行動</h2>
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    脊椎側彎並不可怕，可怕的是「等待」與「忽視」。無論是青春期的孩子還是中老年的退化性側彎，早期發現、定期追蹤，加上在正確時機採取適當的治療介入，都能有效改善長期預後與生活品質。
+  </p>
+  <p style="color: #475569; font-size: 1.05rem;">
+    請記住：<strong style="color: #1e293b;">脊椎側彎的Cobb角度不會自行「變回」正常，但透過積極管理，完全可以阻止惡化。</strong>不要等到角度超過50度才懊悔錯過了支架治療的黃金期；不要相信「長大就好了」的誤解，讓孩子失去最佳介入時機。
+  </p>
+  <p style="color: #475569; font-size: 1.05rem;">
+    對於成年患者而言，規律的核心肌群訓練、游泳等有氧運動、骨質疏鬆預防，以及每年一次的脊椎評估，是維持脊椎健康的最實際策略。
+  </p>
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 16px; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      若您或家中孩子有脊椎側彎的疑慮，或已確診需要評估治療方向，歡迎預約復健科或脊椎骨科門診，接受全面的脊椎評估與個人化治療計劃。
+    </p>
+    <a href="https://anfulin.com.tw/clinic-hours/" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+      預約脊椎評估門診
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Weinstein SL, Dolan LA, Cheng JC, et al. (2008). Adolescent idiopathic scoliosis. <em>Lancet</em>, 371(9623), 1527–1537.
+    <a href="https://doi.org/10.1016/S0140-6736(08)60658-3" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/S0140-6736(08)60658-3</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Negrini S, Donzelli S, Aulisa AG, et al. (2018). 2016 SOSORT guidelines: orthopaedic and rehabilitation treatment of idiopathic scoliosis during growth. <em>Scoliosis and Spinal Disorders</em>, 13, 3.
+    <a href="https://doi.org/10.1186/s13013-017-0145-8" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1186/s13013-017-0145-8</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Weinstein SL, Dolan LA, Wright JG, Dobbs MB. (2013). Effects of bracing in adolescents with idiopathic scoliosis. <em>New England Journal of Medicine</em>, 369(16), 1512–1521. (BRAIST Trial)
+    <a href="https://doi.org/10.1056/NEJMoa1307337" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1056/NEJMoa1307337</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Negrini S, Fusco C, Minozzi S, et al. (2010). Exercises reduce the progression rate of adolescent idiopathic scoliosis: results of a comprehensive systematic review of the literature. <em>Disability and Rehabilitation</em>, 32(10), 772–785.
+    <a href="https://doi.org/10.1080/09638280801889568" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1080/09638280801889568</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Lonstein JE, Carlson JM. (1984). The prediction of curve progression in untreated idiopathic scoliosis during growth. <em>Journal of Bone and Joint Surgery</em>, 66(7), 1061–1071.
+    <a href="https://pubmed.ncbi.nlm.nih.gov/6480636/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 6480636</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Nachemson AL, Peterson LE. (1995). Effectiveness of treatment with a brace in girls who have adolescent idiopathic scoliosis. A prospective, controlled study based on data from the Brace Study of the Scoliosis Research Society. <em>Journal of Bone and Joint Surgery</em>, 77(6), 815–822.
+    <a href="https://pubmed.ncbi.nlm.nih.gov/7782353/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 7782353</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Schiller JR, Thakur NA, Eberson CP. (2010). Brace management in adolescent idiopathic scoliosis. <em>Clinical Orthopaedics and Related Research</em>, 468(3), 670–678.
+    <a href="https://doi.org/10.1007/s11999-009-1175-5" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1007/s11999-009-1175-5</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Trobisch P, Suess O, Schwab F. (2010). Idiopathic scoliosis. <em>Deutsches Ärzteblatt International</em>, 107(49), 875–884.
+    <a href="https://doi.org/10.3238/arztebl.2010.0875" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3238/arztebl.2010.0875</a>
+  </span>
+</li>  </ol>
+</div>
+  `
+},
+
+{
+  id: 'orthopedics-vs-rehabilitation',
+  title: '骨科 vs 復健科：完整比較指南｜哪個才是你的最佳選擇？',
+  lastModified: '2026-04-12',
+  category: '衛教文章',
+  date: '2026-04-12',
+  summary: '骨科偏向外科手術，以X光評估硬組織；復健科以超音波評估軟組織，強調非手術的精準注射與功能重建。本文比較兩科強項、診所差異，教導民眾根據症狀正確選擇，少走冤枉路。',
+  coverImage: '/images/news/article/orthopedics-vs-rehabilitation.webp',
+  seoTitle: '骨科 vs 復健科：完整比較指南',
+  seoDescription: '骨科偏手術、X光評估硬組織；復健科偏軟組織、超音波導引注射與功能重建。本文以實證研究與比較表格，教你根據症狀正確選擇骨科或復健科，少走冤枉路。',
+  keywords: [
+    '骨科',
+    '復健科',
+    '骨科和復健科差別',
+    '超音波導引注射',
+    '增生療法',
+    'PRP治療',
+    '運動傷害'
+  ],
+  contentHtml: `
+
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    骨科與復健科是處理筋骨問題最常見的兩個科別，卻有著截然不同的強項與思維邏輯。
+    <strong style="color: #0284c7;">骨科偏向「外科」思維</strong>，以 X 光評估硬組織（骨骼、關節），擅長骨折固定、關節置換等手術處置；
+    <strong style="color: #0284c7;">復健科偏向「內科」思維</strong>，以超音波評估軟組織（肌肉、肌腱、韌帶、神經），強調非手術的精準注射與功能重建。在診所層面，兩者的健保開立項目、儀器配置與病患流量也有顯著差異。民眾若能根據自身症狀——是「骨頭結構問題」還是「軟組織功能問題」——來選擇對的科別，往往能少走許多冤枉路，並獲得更有針對性的治療。
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、先搞懂核心差異：骨科醫師 vs 復健科醫師
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多人第一次面對筋骨疼痛時，往往在診所掛號頁面上看著「骨科」和「復健科」兩個選項，不知從何下手。這其實是台灣極為普遍的就醫困境。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    用最簡單的二分法來理解：<strong style="color: #ffffff;">骨科著重「骨頭為核心」的議題</strong>，骨折、關節置換、骨腫瘤、脊椎側彎等，診間最常見的工具是 X 光機，因為 X 光能清楚呈現骨骼結構是否完整。
+    <sup><a href="https://draiden.org/about_rehabilitation/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup> 
+    相對地，<strong style="color: #ffffff;">復健科著重「骨頭以外」的軟組織議題</strong>，包括肌肉、肌腱、韌帶與神經，診間最常使用的工具是超音波——因為只有超音波能即時動態地看到這些軟組織的狀態。
+    <sup><a href="https://draiden.org/about_rehabilitation/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    值得一提的是，台灣的復健科醫師是<strong style="color: #ffffff;">目前唯一在訓練過程中，必須通過肌肉骨骼超音波考試的醫師</strong>，這使得他們在軟組織評估與超音波導引注射治療上具備獨特優勢。
+    <sup><a href="https://draiden.org/about_rehabilitation/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、骨科醫師的核心強項
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    骨科在台灣屬於外科系，<strong style="color: #ffffff;">幾乎所有與肢體骨骼、關節相關的手術都在骨科執行</strong>。其核心強項包括：
+    <sup><a href="https://www.kingnet.com.tw/news/single?newId=26398" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">骨折（含開放性骨折）、脫臼的手術復位與固定</li>
+    <li style="margin-bottom: 1rem;">退化性關節炎的關節鏡手術、全關節置換</li>
+    <li style="margin-bottom: 1rem;">脊椎側彎、脊椎滑脫等結構性問題的手術矯正</li>
+    <li style="margin-bottom: 1rem;">骨腫瘤的切除與重建</li>
+    <li style="margin-bottom: 1rem;">前十字韌帶（ACL）重建、半月板手術等</li>
+    <li style="margin-bottom: 1rem;">骨質疏鬆症評估與骨折預防</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    骨科醫師在急性外傷的處置上速度快、決策力強，特別是當病患因車禍、高處墜落等意外造成明顯骨頭傷害時，骨科的快速評估與手術決定能力至關重要。
+    <sup><a href="https://www.kingnet.com.tw/news/single?newId=26398" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、復健科醫師的核心強項
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    復健科的訓練涵蓋範圍極廣，除了肌肉骨骼系統，還包括神經系統復健（中風、脊髓損傷）、小兒發展等，是一門高度整合性的醫學專科。
+    <sup><a href="https://vocus.cc/article/623c0510fd897800014bb939" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    其核心強項包括：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">超音波診斷與導引注射：</strong>以即時影像精準評估軟組織損傷，並在超音波輔助下執行精準注射（增生療法、PRP、神經解套注射）。有研究系統性回顧（2024年）17篇系統性文獻與統合分析後指出，超音波導引注射整體上比傳統解剖標記注射更為準確，在肩關節部位尤其顯著。
+      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/39185547/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">肌電圖與神經傳導檢查：</strong>評估周邊神經損傷的位置與嚴重程度
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">慢性疼痛的功能性評估：</strong>分析姿勢、動作模式、工作環境，找出疼痛的根本原因
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">運動處方與衛教：</strong>針對生活習慣制定個人化的運動訓練計畫，預防再度受傷
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">術前術後復健：</strong>手術前的「前期復健（Prehabilitation）」以及手術後的功能重建
+    </li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    2023年發表於《JAMA Network Open》的系統性回顧與統合分析指出，針對接受骨科手術前（如膝關節置換、腰椎手術）的「術前復健」，有中度至高度可信度的證據支持其能改善術前功能、肌力與生活品質，甚至對術後六週至六個月的功能恢復也有顯著正面影響。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/37052919/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、骨科 vs 復健科：完整比較表格
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 180px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>比較項目</th>
+          <th>骨科</th>
+          <th>復健科</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>科別屬性</td>
+          <td>外科</td>
+          <td>內科（復健醫學）</td>
+        </tr>
+        <tr>
+          <td>核心強項</td>
+          <td>手術、骨頭結構修復</td>
+          <td>軟組織評估、非手術治療、功能重建</td>
+        </tr>
+        <tr>
+          <td>主要診斷工具</td>
+          <td>X 光機</td>
+          <td>肌骨超音波</td>
+        </tr>
+        <tr>
+          <td>主要治療方式</td>
+          <td>手術（開放/微創）、石膏固定、藥物</td>
+          <td>超音波導引注射、物理治療儀器、運動處方、衛教</td>
+        </tr>
+        <tr>
+          <td>適合症狀</td>
+          <td>骨折、脫臼、骨腫瘤、關節結構破壞</td>
+          <td>肌肉拉傷、肌腱炎、韌帶扭傷、慢性疼痛、神經壓迫</td>
+        </tr>
+        <tr>
+          <td>診所健保開立項目</td>
+          <td>通常只能開立物理治療（PT）</td>
+          <td>可開立物理、職能、語言治療（三項全覆蓋）</td>
+        </tr>
+        <tr>
+          <td>病患流量</td>
+          <td>通常較多、翻診率高</td>
+          <td>相對較少、每位患者處置時間較長</td>
+        </tr>
+        <tr>
+          <td>注射治療</td>
+          <td>類固醇注射、玻尿酸注射為主</td>
+          <td>增生療法、PRP、神經解套注射為主</td>
+        </tr>
+        <tr>
+          <td>衛教重心</td>
+          <td>以藥物控制疼痛為主</td>
+          <td>強調姿勢矯正、動作模式改善、生活環境調整</td>
+        </tr>
+        <tr>
+          <td>適合的手術後處置</td>
+          <td>評估是否需再次手術</td>
+          <td>術後功能性復健、肌力訓練</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、🔍 我的症狀到底要看哪一科？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    這是「考慮階段」的核心問句。以下是臨床上實用的判斷原則：
+  </p>
+  
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 建議先看骨科的情況：</strong><br>
+      1. 近期有跌倒、車禍、撞擊等明確外力，懷疑骨折或脫臼<br>
+      2. X 光已顯示骨頭有明顯結構性異常（如嚴重退化、骨刺壓迫明顯）<br>
+      3. 醫師評估後建議考慮手術<br>
+      4. 急性脊椎壓迫骨折（如骨質疏鬆造成）
+    </p>
+  </div>
+
+  <div style="background-color: #f0fdf4; border: 1px solid #bbf7d0; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #166534; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>✅ 建議先看復健科的情況：</strong><br>
+      1. 無明顯外力，屬於長期累積型的疼痛（如久坐肩頸痛、反覆腳踝扭傷）<br>
+      2. 已做過 X 光「骨頭沒問題」，但疼痛仍持續<br>
+      3. 懷疑是肌肉、肌腱、韌帶、筋膜問題（如網球肘、足底筋膜炎）<br>
+      4. 中風、脊髓損傷後需要功能性復健，或手術後需系統性康復訓練
+    </p>
+  </div>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    實際上，骨科與復健科並非對立，兩者經常互相轉介：骨科醫師評估不需開刀後，往往轉介至復健科；復健科復健一段時間未見改善，也會建議患者回骨科評估是否需要手術。
+    <sup><a href="https://www.kingnet.com.tw/news/single?newId=26398" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、🏥 在診所，骨科和復健科有何不同？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    在台灣的診所層面，兩者之間有一個關鍵的健保制度差異值得民眾了解：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">骨科診所：</strong>通常由骨科或神經科醫師執業，健保開立轉介通常僅限於「物理治療」，病患量相對大、翻診率較高，儀器治療為主。
+      <sup><a href="https://vocus.cc/article/623c0510fd897800014bb939" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">復健科診所：</strong>由復健科醫師執業，可開立全部三類復健治療（物理、職能、語言治療），能服務的患者範圍更廣，包括中風後遺症、小兒發展問題等。每位患者的診療時間通常較長、處置較細緻。
+      <sup><a href="https://vocus.cc/article/623c0510fd897800014bb939" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、🎯 我不想開刀，復健科能根治嗎？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是「決定階段」最核心的疑問。答案是：<strong style="color: #ffffff;">取決於你的診斷</strong>。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    以增生療法為例，台東馬偕醫院復健科整理的臨床資料指出，增生治療在實證醫學等級 A 的研究中支持：退化性膝關節炎接受增生治療後可減輕疼痛、增加軟骨厚度；旋轉肌袖肌腱病變使用 25% 葡萄糖液可減輕疼痛並增加關節活動度；薦腸骨關節疼痛的長期效果也優於類固醇注射。
+    <sup><a href="https://ttw3.mmh.org.tw/know_health_view.php?docid=101" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup> 
+    一般療程每 2-3 週注射一次，完整療程約 4-6 次，需要 3-6 個月時間讓身體修復。
+    <sup><a href="https://ttw3.mmh.org.tw/know_health_view.php?docid=101" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    然而，若骨骼結構已嚴重破壞（如骨折不癒合、關節嚴重退化變形），非手術治療的效益就十分有限，此時骨科手術往往是唯一選項。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 八、常見三大誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>誤區一：「X 光沒問題就代表身體沒問題」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>事實澄清：</strong>這是最常見、也最容易誤導患者的觀念。X 光只能顯示骨頭的狀態，卻完全無法呈現肌肉、肌腱、韌帶、神經等軟組織的損傷。許多慢性疼痛在 X 光下看起來「正常」，但超音波或 MRI 可清楚發現病灶。研究指出，超音波對於軟組織的解析度在某些方面甚至優於 MRI，且可動態觀察、即時引導注射，是目前肌骨評估的重要利器。
+            <sup><a href="https://ttw3.mmh.org.tw/know_health_view.php?docid=101" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[6]</a></sup>
+          </span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>誤區二：「復健就是去做電療、熱敷而已」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>事實澄清：</strong>現代復健醫學已遠遠超越儀器治療的範疇。超音波導引的精準注射（如 PRP 增生療法）、神經解套注射、肌筋膜激痛點治療，都是需要高度技術的進階治療。
+            <sup><a href="https://draiden.org/ultrasound_guided/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[7]</a></sup> 
+            更重要的是，復健科醫師在訓練中高度重視「找到疼痛根源」——分析姿勢、動作模式、工作環境——再制定個人化的運動處方，才能真正預防復發。
+            <sup><a href="https://www.kingnet.com.tw/news/single?newId=26398" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[2]</a></sup>
+          </span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>誤區三：「運動傷害一定要找骨科手術才能好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>事實澄清：</strong>大多數非職業運動員的受傷程度相對較輕，極少需要手術。復健科醫師因受訓重點在低侵入性治療，對於肌腱、韌帶損傷的注射治療較為熟練；骨科則更擅長韌帶重建、關節鏡手術等高侵入性處置。
+            <sup><a href="https://drbao.org/sport-injury/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[8]</a></sup> 
+            2023年一項前瞻性世代研究指出，採用創新復健方案的運動員，其恢復時間縮短了約 40%。
+            <sup><a href="https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1328997/full" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[9]</a></sup>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    九、獨特臨床觀察：兩個容易被忽略的細節
+  </h2>
+  
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 觀察一：「骨頭沒問題」後的就醫斷層</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      臨床上常有這樣的情況：患者去骨科照了 X 光，醫師說「骨頭沒問題，吃個藥休息一下」，患者回家後疼痛依舊，卻因為「骨頭正常」而不知下一步該怎麼辦。這個「診斷真空帶」正是復健科最能發揮作用的時機——透過超音波找出 X 光看不到的軟組織問題，給予明確的病因診斷與對應治療。<br><br>
+      <em>一位長期低背痛的上班族，在多間診所被告知「退化正常，就是姿勢不良」，來到復健科後，透過超音波檢查發現髂腰肌與多裂肌有明顯萎縮，以及薦腸骨關節的輕微發炎。復健科醫師制定了包含核心肌群訓練、超音波導引注射與工作站高度調整的整合方案，疼痛在三個月內顯著改善。</em>
+    </p>
+  </div>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 觀察二：「長期類固醇」的隱性代價：</strong><br>
+      部分患者習慣每隔幾個月去打一針類固醇止痛，以為這樣就是在「治療」。然而，類固醇的抗發炎效果雖然立竿見影，卻是壓抑症狀而非修復組織。反覆施打類固醇可能造成軟骨損傷、肌腱弱化，甚至骨頭壞死的風險。
+      <sup><a href="https://www.youngforehospital.com/prp%E5%A2%9E%E7%94%9F%E6%B2%BB%E7%99%82%E6%B3%95/" target="_blank" rel="noopener noreferrer" style="color: #9a3412; text-decoration: underline;">[10]</a></sup> 
+      這是為什麼越來越多復健科醫師轉向使用增生療法（PRP、高濃度葡萄糖）來進行「修復性」而非「壓制性」的治療。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> 十、FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1. 骨科和復健科都有「打針」，有什麼不同？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      骨科的注射以類固醇（快速抗發炎）和玻尿酸（潤滑、短期止痛）為主；復健科的注射則傾向增生療法（高濃度葡萄糖、PRP），以「修復組織」為目標，而非單純止痛。此外，復健科醫師通常以<strong>超音波導引</strong>進行注射，確保藥物精準到達病灶。2024年一篇整合17篇系統性回顧與統合分析的傘型回顧研究證實，超音波導引注射整體上比傳統按壓注射更為準確，特別是在肩關節部位。
+      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/39185547/" target="_blank" rel="noopener noreferrer" style="color: #22d3ee; text-decoration: underline;">[4]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2. 術後復健是找骨科還是復健科？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      手術後的<strong>功能性復健</strong>（如增加關節活動度、訓練肌力、恢復日常功能）是復健科的強項。骨科負責的是評估傷口癒合、確認骨骼結構是否穩固、決定是否需要再次手術。兩科分工明確，術後建議雙科並行追蹤，骨科確認結構、復健科負責功能恢復。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3. 去復健科排隊等很久，這是正常的嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      台灣復健科診所每位患者的評估與處置時間通常較長（尤其是需要超音波評估或注射的患者），加上可開立的治療項目多，因此候診時間確實可能較長。相較之下，骨科診所病患量大、翻診率高，候診時間有時反而較短，但每位患者分配到的時間也相對較少。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4. 同一個症狀，去骨科和復健科診斷會一樣嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      筋骨痠痛的基本診斷大方向通常不會差太遠，但<strong>治療思路和方向會有明顯差異</strong>。骨科偏向以藥物快速控制疼痛或評估手術可能性；復健科則更著重找出病因（是姿勢？動作模式？肌力不足？），多加強衛教，並盡量減少用藥，以物理治療與衛教讓患者長期不再復發。
+      <sup><a href="https://www.kingnet.com.tw/news/single?newId=26398" target="_blank" rel="noopener noreferrer" style="color: #22d3ee; text-decoration: underline;">[2]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5. 我住的地方只有骨科診所，可以在骨科做復健嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      可以。骨科診所也能開立物理治療，進行電療、熱療、牽引等基本儀器治療。但若需要職能治療、語言治療，或是需要超音波導引的精準注射、增生療法等進階處置，則建議前往復健科診所或附設復健科的醫療院所就診。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動呼籲</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    骨科與復健科並非競爭關係，而是<strong style="color: #1e293b;">互補的醫療夥伴</strong>。理解兩者的核心差異，你才能在對的時機找到對的幫助：骨折脫臼、需要手術評估時找骨科；長期慢性疼痛、軟組織損傷、術後功能重建時找復健科。
+  </p>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    如果你目前正苦惱於持續的筋骨疼痛，不妨試著問自己一個問題：「我的問題是骨頭結構壞了，還是骨頭外面的組織出了問題？」這個問題的答案，往往就是你最佳就醫方向的起點。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0;">
+    <p style="margin-bottom: 16px; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      下一步行動建議：
+    </p>
+    <ul style="color: #475569; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.05rem; margin-bottom: 0;">
+      <li>若有急性外力撞擊，優先至骨科或急診排除骨折</li>
+      <li>若屬於長期累積型疼痛，建議預約復健科進行超音波評估</li>
+      <li>若不確定，可先至家庭醫學科或一般門診進行初步評估並取得轉介</li>
+    </ul>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        何琨棟醫師（2023）。〈骨科 vs 復健科 怎麼選？〉。Dr. Aiden 疼痛復健科。<br>實證：復健科為唯一訓練中必須通過肌骨超音波考試的專科，骨科以 X 光、復健科以超音波為主要診斷工具。 <a href="https://draiden.org/about_rehabilitation/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">參考來源</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        林頌凱醫師（2019）。〈找對醫生看對科 復健科 vs 骨科〉。全民健康保險雙月刊第94期，KingNet國家網路醫藥。<br>實證：骨科與復健科用藥比例不同，復健科更重視衛教與生活習慣改善，兩科相輔相成。 <a href="https://www.kingnet.com.tw/news/single?newId=26398" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">參考來源</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        貝克物理治療師（2022）。〈骨科 vs. 復健科，到底差在哪？〉。方格子 Vocus。<br>實證：診所層面健保開立差異，復健科可開立物理、職能、語言治療三項，骨科通常只能開立物理治療。 <a href="https://vocus.cc/article/623c0510fd897800014bb939" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">參考來源</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Oo WM et al. (2024). "Comparison of ultrasound- vs. landmark-guided injections for musculoskeletal pain: an umbrella review." Journal of Rehabilitation Medicine.<br>實證：超音波導引注射整體比傳統標記注射更準確，涵蓋17篇系統性回顧與統合分析的傘型回顧。 <a href="https://pubmed.ncbi.nlm.nih.gov/39185547/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.2340/jrm.v56.40769</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Punnoose A et al. (2023). "Prehabilitation for Patients Undergoing Orthopedic Surgery: A Systematic Review and Meta-analysis." JAMA Network Open.<br>實證：術前復健對骨科手術前後功能恢復的系統性回顧，中高度可信度證據支持其效益。 <a href="https://pubmed.ncbi.nlm.nih.gov/37052919/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1001/jamanetworkopen.2023.8050</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        台東馬偕紀念醫院復健科（n.d.）。〈認識增生療法〉。<br>實證：增生治療在實證醫學等級 A 的研究支持退化性膝關節炎、旋轉肌袖病變、薦腸骨關節疼痛的療效與療程規劃。 <a href="https://ttw3.mmh.org.tw/know_health_view.php?docid=101" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">參考來源</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        何琨棟醫師（2023）。〈超音波導引注射是什麼？接受PRP、增生療法，你一定要知道的事！〉。Dr. Aiden 疼痛復健科。<br>實證：超音波導引相較按壓注射可大幅提升注射成功率（接近100% vs 60%以上）。 <a href="https://draiden.org/ultrasound_guided/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">參考來源</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        侯鐘堡醫師（2022）。〈復健科 V.S. 骨科 運動傷害看哪科較好？〉。台北原力復健科診所。<br>實證：骨科擅長硬組織手術（韌帶重建、關節鏡），復健科擅長軟組織注射治療，大部分休閒運動員傷害不需手術。 <a href="https://drbao.org/sport-injury/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">參考來源</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kacprzak et al. (2023). "Current advancements in therapeutic approaches in orthopedic surgery: a review of recent trends." Frontiers in Bioengineering and Biotechnology.<br>實證：前瞻性研究顯示創新復健方案使運動員恢復時間縮短 40%。 <a href="https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1328997/full" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.3389/fbioe.2024.1328997</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        元復醫院（n.d.）。〈PRP增生治療法〉。<br>實證：類固醇多次使用可能造成永久性傷害如骨頭壞死，相較於 PRP 的修復性機制說明。 <a href="https://www.youngforehospital.com/prp%E5%A2%9E%E7%94%9F%E6%B2%BB%E7%99%82%E6%B3%95/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">參考來源</a>
+      </span>
+    </li>
+  </ol>
+</div>
+  `
+},
+
+
   {
   id: 'frozen-shoulder-and-diabetes',
   title: '五十肩與糖尿病的深度關聯：為什麼糖尿病患者更容易罹患五十肩？',
