@@ -5,7 +5,51 @@ export const articlesData: NewsPost[] = [
   
 
 
+{
+    id: 'pikmin-bloom-syndrome',
+    title: '捕捉皮克敏的終點是復健科？當心成為「痛痛皮友」！',
+    lastModified: '2026-04-14',
+    category: '衛教文章',
+    date: '2026-04-14',
+    summary: '最近《皮克敏 Bloom》大爆紅，但長時間低頭滑手機加上突然暴增的步行量，容易讓身體吃不消。復健科醫師為您盤點皮友常見的手遊與走路症候群！',
+    coverImage: '/images/news/article/pikmin.webp',
+    seoTitle: '玩皮克敏玩到手痛腳痛？復健科醫師教你預防手遊症候群',
+    seoDescription: '玩皮克敏 Bloom 也要注意健康！解析常見的烏龜頸、媽媽手、網球肘、足底筋膜炎等手遊與走路症候群，由復健科醫師提供專業建議，讓你無痛種花。',
+    keywords: ['皮克敏 Bloom', '手遊症候群', '媽媽手', '足底筋膜炎', '復健科', '陳新復健科'],
+    contentHtml: `
+        <h2>🌸 捕捉皮克敏的終點是復健科？當心成為「痛痛皮友」！</h2>
+        <img src="/images/news/article/pikmin.webp" alt="玩皮克敏 Bloom 造成的常見復健科問題示意圖" style="width: 100%; height: auto;">
 
+        <p>最近《皮克敏 Bloom》突然大爆紅，走在路上或是診所同仁都在搶香菇或是種花。身為一個每天搶蘑菇的皮友，完全懂想多走幾步路把花種滿、收集不同裝飾的成就感。</p>
+        
+        <p>不過，最近在診間裡，我發現多了一群因為「種花太認真」的「皮友」們。長時間低頭滑手機加上突然暴增的步行量，很容易讓身體吃不消。以下幫大家盤點幾個皮友最常出現的<strong>「手遊與走路症候群」</strong>：</p>
+
+        <h2>📱 上半身問題：滑手機的代價</h2>
+        <ul>
+            <li><strong>肩頸痠痛 💥：</strong>長時間低頭看地圖會讓頸椎承受巨大壓力，導致肌肉緊繃甚至引起頭痛。這就是俗稱的「烏龜頸」！</li>
+            <li><strong>媽媽手（橈骨莖突狹窄性腱鞘炎） 🖐️：</strong>單手拿手機、大拇指狂滑螢幕餵精華，過度使用大拇指與手腕力量，會造成手腕側邊肌腱發炎。</li>
+            <li><strong>網球肘（肱骨外上髁炎） 💪：</strong>懸空舉手機、手腕反覆施力（特別是點擊搶巨大香菇時），容易造成手肘外側肌腱疼痛。</li>
+        </ul>
+
+        <h2>🚶‍♂️ 下半身大問題：狂走路的危機</h2>
+        <ul>
+            <li><strong>下背痛 ⚡：</strong>邊走邊滑手機容易駝背、骨盆前傾，讓腰部肌肉過度代償，走久了下背就會開始痠痛。</li>
+            <li><strong>足底筋膜炎 🦶：</strong>步數突然暴增（例如從三千步變一萬五千步），若鞋底支撐力不足，腳底筋膜會因過度拉扯而發炎。</li>
+            <li><strong>跳躍膝（髕骨肌腱炎） 🦵：</strong>長時間在硬地快走或頻繁上下坡，會增加膝蓋髕骨肌腱負擔，導致膝蓋下方前側疼痛。</li>
+        </ul>
+
+        <h2>💡 給皮友們的溫馨小提醒</h2>
+        <p>皮克敏雖然可愛，但身體健康更重要！建議大家在出門種花前：</p>
+        <ul>
+            <li><strong>換上避震良好的運動鞋 👟：</strong>保護足底與膝蓋。</li>
+            <li><strong>善用時速 20 公里限制：</strong>種花用時速 20 最有效率，適度調整步數，減少行走時間。</li>
+            <li><strong>定時休息：</strong>不要長時間維持低頭姿勢，記得抬頭伸展。</li>
+        </ul>
+
+        <h4>👉 醫師說：</h4>
+        <p><strong>讓我們一起無痛種花，當個健康又快樂的皮友吧！🌱</strong></p>
+    `
+},
 
 
 {
@@ -478,12 +522,10 @@ export const articlesData: NewsPost[] = [
     一、引言：這頓牛排，是一堂解剖課
   </h2>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    某個週年紀念日，我帶著老婆走進台北信義區的 
-    <a href="https://www.google.com/maps/search/Rib+Eye+Steakhouse+台北" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">Rib Eye Steakhouse</a> 
-    準備大吃一頓。老婆拿起菜單，指著一排英文問我：「菲力、紐約克、肋眼……這些到底差在哪裡？」
+    某天晚上走進牛排店，準備大吃一頓。老婆拿起菜單，好奇指著一排英文問我：「菲力、紐約克、肋眼……這些到底差在哪裡？」
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    我嘴角上揚，清了清喉嚨。「老婆，我今晚要用復健科醫師的角度，好好跟妳解釋。」她翻了個白眼，但還是把菜單遞給我。這，就是我們婚姻的日常。
+    我嘴角上揚，清了清喉嚨。「老婆，我今晚要用復健科醫師的角度，好好跟妳解釋肌肉的構造。」她翻了個白眼，但還是把菜單遞給我。這，就是我們婚姻的日常。
   </p>
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
@@ -854,13 +896,13 @@ export const articlesData: NewsPost[] = [
   <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與呼籲行動</h2>
   
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
-    老婆聽完我的解說，沉默了三秒，然後說：「所以你每次幫病人復健，都在想那塊肉幾分熟？」
+    老婆聽完我的解說，沉默了三秒，然後說：「所以你每次幫病人打針，都在想那塊肉幾分熟？」
   </p>
   <p style="color: #475569; font-size: 1.05rem;">
     ……我無言以對。但牛排確實吃得更香了。
   </p>
   <p style="color: #475569; font-size: 1.05rem;">
-    當你下次走進 <a href="https://www.google.com/maps/search/犇牛炭火燒肉+台北" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">台北犇牛炭火燒肉</a>、<a href="https://www.google.com/maps/search/MEATGQ+STEAK+台北" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">MEATGQ STEAK</a> 或 <a href="https://www.google.com/maps/search/肉食男女+台北" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">肉食男女 Meaty</a>，拿起菜單的瞬間，希望你腦中能浮現一張肌肉解剖圖，然後帶著微笑點下你的選擇。
+    當你下次走進牛排店，拿起菜單的瞬間，希望你腦中能浮現一張肌肉解剖圖，然後帶著微笑點下分享牛排與人體的知識，保證讓約會對象刮目相看喔。
   </p>
 
   <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
@@ -4213,6 +4255,21 @@ export const articlesData: NewsPost[] = [
   <p style="color: #64748b; font-size: 15px; font-style: italic; margin-top: 24px; border-top: 1px solid #e2e8f0; padding-top: 16px; margin-bottom: 0;">
     肥胖是疾病，需要完整的醫療照護，而非一個人默默承受。勇敢踏出尋求幫助的第一步，才是真正改變的開始。
   </p>
+
+    <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 充分了解每種減重藥品的差異了嗎? 林醫師家人目前都是選擇猛健樂喔。
+    </p>
+
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/weight-bone/mounjaro" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        了解猛健樂，不需要預約直接來診所施打
+    </a>
+</div>
   
 </div>
 
