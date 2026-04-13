@@ -4,6 +4,10 @@ export const articlesData: NewsPost[] = [
 
   
 
+
+
+
+
 {
   id: 'ge-logiq-totus-ultrasound',
   title: '診所正式引進 GE LOGIQ Totus——全球高階的肌肉骨骼超音波機',
@@ -972,6 +976,7 @@ export const articlesData: NewsPost[] = [
   </p>
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">發球的六大動作階段</h3>
+  <img src="/images/news/article/tennisgrip/serve.webp" alt="網球發球的六大動作階段" class="responsive-img-enlarge">
   <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
     <li style="margin-bottom: 1rem;">
       <strong style="color: #ffffff;">準備期（Wind-up）</strong>：身體重心下移，球拍與球托放開，肩關節開始外旋。
@@ -1366,7 +1371,7 @@ export const articlesData: NewsPost[] = [
       Q4. 網球肩袖傷害一定要手術嗎？
     </h3>
     <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      不一定。部分厚度撕裂（Partial Thickness Tear）與大多數肩袖肌腱病變（Tendinopathy）均可透過保守治療獲得良好恢復，包括物理治療、超音波導引注射（如 PRP 或類固醇）及動作訓練。全層撕裂則需根據撕裂大小、患者年齡及功能需求決定是否手術。建議由骨科或運動醫學專科醫師進行 MRI 評估後制定個別化治療計畫。
+      不一定。部分厚度撕裂（Partial Thickness Tear）與大多數肩袖肌腱病變（Tendinopathy）均可透過保守治療獲得良好恢復，包括物理治療、超音波導引注射（如 PRP 或類固醇）及動作訓練。全層撕裂則需根據撕裂大小、患者年齡及功能需求決定是否手術。建議由骨科或運動醫學專科醫師進行超音波或 MRI 評估後制定個別化治療計畫。
     </p>
 
     <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
@@ -1394,13 +1399,13 @@ export const articlesData: NewsPost[] = [
 
   <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
     <p style="margin-bottom: 16px; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
-      若您有發球相關的關節疼痛或運動傷害疑慮，建議儘早諮詢骨科或復健科運動醫學專科醫師，進行完整評估與個別化治療計畫規劃。
+      若您有發球相關的關節疼痛或運動傷害疑慮，<strong style="color: #1e293b;">趕快預約林醫師的門診評估，林醫師打網球打了十多年，深知網球運動傷害的治療及正確動作，</strong>一個正確的動作分析，可能為你節省好幾個月的復健時間。
     </p>
-    <a href="#" 
+    <a href="/booking" 
        target="_blank" 
        rel="noopener noreferrer" 
        style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
-      預約專科醫師評估
+      預約打網球的林醫師評估
     </a>
   </div>
 </div>
@@ -1532,10 +1537,10 @@ export const articlesData: NewsPost[] = [
 <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
   <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-    網球是一項對上肢關節需求極高的運動。不同的握拍方式——東方式、西方式、半西方式——會造成前臂肌群活化模式、手腕偏移角度的根本差異，進而引發不同部位的傷害。研究指出，西方式與半西方式握拍者更容易發生尺側手腕傷害（如ECU肌腱病變），而東方式則較傾向橈側傷害。單手反拍因為需要單側上肢獨自承受衝擊力矩，是造成網球肘（外側上髁炎）的高風險動作；雙手反拍雖較能分散受力，但對非慣用手手腕的負擔不容忽視。本文將以實證為基礎，系統性剖析各種握法與打法的受傷風險，並提供預防策略。
+    網球是一項對上肢關節需求極高的運動。不同的握拍方式——東方式、西方式、半西方式——會造成前臂肌群活化模式、手腕偏移角度的根本差異，進而引發不同部位的傷害。研究指出，西方式與半西方式握拍者更容易發生尺側手腕傷害（靠小拇指側的肌肉），而東方式則較傾向橈側傷害（靠大拇指側的肌肉）。單手反拍因為需要單側上肢獨自承受衝擊力矩，是造成網球肘（外側上髁炎）的高風險動作；雙手反拍雖較能分散受力，但對非慣用手手腕的負擔不容忽視。本文將以實證為基礎，系統性剖析各種握法與打法的受傷風險，並提供預防策略。
   </p>
 </div>
-
+<img src="/images/news/article/tennisgrip/1.webp" alt="深度剖析東方式、西方式、半西方式握拍運動傷害" class="responsive-img-enlarge">
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <section style="margin-bottom: 3.5rem;">
@@ -1549,10 +1554,11 @@ export const articlesData: NewsPost[] = [
     網球拍握把設計為八角形，每個面稱為一個「bevel（斜面）」，從 1 至 8 編號。不同的握拍法，本質上就是將手的基節骨放置在不同的斜面上，這一個小小的位移，卻會牽動整條上肢動力鏈——從手腕、前臂、肘關節乃至肩膀——在每次擊球瞬間的受力模式。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    根據 2024 年發表於 PMC 的生物力學研究，東方式握拍時，前臂處於旋前（pronation）姿勢，手腕呈尺側偏移（ulnar deviation）；而西方式握拍則使前臂旋後（supination），手腕呈橈側偏移（radial deviation）。
+    根據 2024 年發表於 PMC 的生物力學研究，東方式握拍時，前臂處於旋前（pronation）姿勢，手腕呈尺側偏移（ulnar deviation），容易造成ECR受傷；而西方式握拍則使前臂旋後（supination），手腕呈橈側偏移（radial deviation），容易造成ECU受傷。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11595894/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
     這些結構性差異，直接導致不同肌群的活化模式與震波吸收機制，也造就了截然不同的受傷風險地圖。
   </p>
+  <img src="/images/news/article/tennisgrip/muscle.webp" alt="深度剖析東方式、西方式、半西方式握拍運動傷害" class="responsive-img-enlarge">
 </section>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -1563,6 +1569,7 @@ export const articlesData: NewsPost[] = [
   </h2>
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">東方式握拍（Eastern Grip）</h3>
+  <img src="/images/news/article/tennisgrip/2.webp" alt="深度剖析東方式握拍運動傷害" class="responsive-img-enlarge">
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     東方式握拍是最接近「握手」的握法，食指基節骨置於第 3 斜面。這是初學者最容易上手的握法，適合擊打平擊球與低彈道球。
   </p>
@@ -1580,6 +1587,7 @@ export const articlesData: NewsPost[] = [
   </ul>
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">半西方式握拍（Semi-Western Grip）</h3>
+  <img src="/images/news/article/tennisgrip/3.webp" alt="深度剖析半西方式握拍運動傷害" class="responsive-img-enlarge">
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     半西方式（食指基節骨置於第 4 斜面）是目前職業巡迴賽中最常見的正拍握法，兼具旋轉球與平擊球的靈活性。
   </p>
@@ -1588,7 +1596,7 @@ export const articlesData: NewsPost[] = [
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5125509/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    Tagliafico 等人的研究進一步指出，非職業選手中，使用西方式握拍者的手腕傷害發生率高達 <strong style="color: #ffffff;">30%</strong>，半西方式為 10%，而東方式僅 13%。
+    Tagliafico 等人的研究進一步指出，非職業選手中，使用西方式握拍者的手腕傷害發生率高達 <strong style="color: #ffffff;">30%</strong>，東方式 13%，而半西方式僅為 10%。
     <sup><a href="https://doi.org/10.1177/0363546508328112" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
     值得注意的是，這個數字反映的是業餘球友——缺乏完善肌力基礎的情況下採用西方系握法，傷害風險確實更高。
   </p>
@@ -1607,6 +1615,7 @@ export const articlesData: NewsPost[] = [
   </div>
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">西方式握拍（Western Grip）</h3>
+  <img src="/images/news/article/tennisgrip/4.webp" alt="深度剖析西方式握拍運動傷害" class="responsive-img-enlarge">
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     西方式握拍（食指基節骨置於第 5 斜面）是最極端的握法，能產生大量旋轉球，在紅土球場上廣受歡迎。納達爾（Rafael Nadal）正是以接近西方式的握拍聞名，他的 ECU 肌腱傷害也多次迫使他退賽，正是此握法的典型職業案例。
     <sup><a href="https://theconversation.com/get-a-grip-the-twist-in-the-wrist-that-can-ruin-tennis-careers-90318" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
@@ -2005,14 +2014,23 @@ export const articlesData: NewsPost[] = [
   </p>
   
   <p style="color: #475569; font-size: 1.05rem;">
-    無論你是剛開始學球的入門者，還是打了二十年的資深球友，<strong style="color: #1e293b;">最好的預防永遠從「了解自己的身體與打法」開始</strong>。如果你對自己的握拍方式或現有的不適症狀有疑慮，不要等到疼痛難忍才行動——<strong style="color: #1e293b;">今天就預約一次運動物理治療師的評估，一個正確的動作分析，可能為你節省好幾個月的復健時間。</strong>
+    無論你是剛開始學球的入門者，還是打了二十年的資深球友，<strong style="color: #1e293b;">最好的預防永遠從「了解自己的身體與打法」開始</strong>。如果你對自己的握拍方式或現有的不適症狀有疑慮，不要等到疼痛難忍才行動——<strong style="color: #1e293b;">預約林醫師的門診評估，林醫師打網球打了十多年，深知網球運動傷害的治療及正確動作，</strong>一個正確的動作分析，可能為你節省好幾個月的復健時間。
   </p>
 
   <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
     <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
       💡 立即行動：對照本文的傷害風險比較表，檢視你目前使用的握拍方式與打法，並在下一次練球時特別留意手腕與肘部的感受。若有任何持續性不適，請尋求專業醫療評估。
     </p>
+
   </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約打網球的林醫師評估
+    </a>
+</div>
 </div>
   `,
   referencesHtml: `
