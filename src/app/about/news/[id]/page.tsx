@@ -67,6 +67,8 @@ export default function NewsDetailPage({ params }: PageProps) {
   if (!post) notFound()
 
   const currentUrl = `${SITE_URL}/about/news/${params.id}`
+  // 自動生成該頁面專屬的 QR Code 網址
+  const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(currentUrl)}`
   
   // 分類判斷
   const isAnnouncement = post.category === '門診公告' || post.category === '診所活動';
@@ -259,9 +261,9 @@ export default function NewsDetailPage({ params }: PageProps) {
         }
 
         /* -----------------------------------------------------------
-           ✨ 關鍵修正區塊：處理連結與排除參考文獻
-           ----------------------------------------------------------- */
-           
+            ✨ 關鍵修正區塊：處理連結與排除參考文獻
+            ----------------------------------------------------------- */
+            
         /* 1. 先定義基礎樣式，但使用 :not 排除掉 sup(上標) 與帶有特定偏移 style 的連結 */
         .article-content a:not(sup a):not([style*="text-underline-offset"]) {
             color: #ec4899 !important;
@@ -366,6 +368,15 @@ export default function NewsDetailPage({ params }: PageProps) {
                 
               <div className="p-4 md:p-10">
               <header className="mb-10 border-l-4 border-cyan-500 pl-4 bg-gradient-to-r from-slate-900/80 to-transparent py-6 rounded-r-xl flex flex-col md:flex-row md:items-center gap-6">
+  
+  {/* 加入的 QR Code 區塊 */}
+  <div className="hidden md:block bg-white p-2 rounded-lg shrink-0 group relative shadow-lg ring-2 ring-slate-700">
+    <img className="w-24 h-24 object-contain" src={qrCodeApiUrl} alt={`掃描閱讀 ${post.title}`} />
+    <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-max bg-slate-900 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-slate-600">
+      掃描帶走文章
+    </div>
+  </div>
+
   <div className="flex-grow w-full">
     <h1 className="text-3xl md:text-5xl font-bold font-sans text-white mb-4 tracking-wide leading-tight md:leading-[1.2]">
       {post.title}
