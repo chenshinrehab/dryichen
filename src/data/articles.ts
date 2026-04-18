@@ -3,6 +3,397 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
   
+
+
+
+{
+    id: 'basketball-injury',
+    title: '為什麼打籃球最傷膝蓋？常見膝關節運動傷害完整解析',
+    lastModified: '2026-04-18',
+    category: '衛教文章',
+    date: '2026-04-18',
+    summary: '籃球是全球最受歡迎的運動之一，但它也是導致膝關節損傷最高的運動之一。深入解析為何籃球特別傷膝蓋、常見傷害類型、受傷機轉與完整預防策略。',
+    coverImage: '/images/news/article/doctorvsengineer.webp',
+    seoTitle: '為什麼打籃球最傷膝蓋？常見膝關節運動傷害完整解析',
+    seoDescription: '籃球是全球最受歡迎的運動之一，但它也是導致膝關節損傷最高的運動之一。深入解析為何籃球特別傷膝蓋、常見傷害類型、受傷機轉與完整預防策略。',
+    keywords: ['籃球', '運動傷害', '十字韌帶', '半月板', '髕骨肌腱炎', '跳躍膝', '骨科', '復健科'] ,
+    contentHtml: `
+
+    <h2>📝 總結摘要與核心觀點</h2>
+    <p>
+      籃球運動因其高頻率的<strong style="color: var(--accent-secondary);">跳躍、急停急起、切入轉向</strong>等動作，對膝關節的衝擊遠超過大多數運動。常見傷害包括前十字韌帶（ACL）撕裂、半月板損傷、髕骨肌腱炎（跳躍膝）、髕股關節疼痛症候群等。受傷機轉多源自單腳落地時膝蓋向內塌陷、急停時煞車力道集中在膝關節，以及過度訓練導致的累積性磨損。透過系統性的暖身、肌力訓練、動作模式修正與護具輔助，能顯著降低膝蓋受傷風險。
+    </p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 1 -->
+  <section>
+    <div class="section-number">Section 01</div>
+    <h2 class="section-title">一、為什麼籃球特別容易傷膝蓋？</h2>
+    <p class="body-text">
+      在所有球類運動中，籃球被運動醫學界列為膝關節傷害風險最高的項目之一。根據美國骨科運動醫學學會（AOSSM）統計，職業籃球員一生中遭遇膝關節傷害的機率超過七成，業餘球員亦不相上下。這背後並非巧合，而是由籃球運動的本質特性所決定。
+    </p>
+
+    <h3 class="subsection-title">籃球動作對膝蓋的三大威脅</h3>
+
+    <div class="mechanism-list">
+      <div class="mechanism-item">
+        <h4>🦘 高頻率垂直跳躍與落地衝擊</h4>
+        <p>一場籃球比賽中，球員平均跳躍次數超過 40 次。每次落地時，膝關節需吸收自身體重 3 至 7 倍的衝擊力。若落地姿勢不正確——尤其是單腳落地或膝蓋未彎曲吸震——股骨與脛骨之間的應力將驟升，前十字韌帶和半月板首當其衝。</p>
+      </div>
+      <div class="mechanism-item">
+        <h4>⚡ 急停急起、高速變向</h4>
+        <p>籃球場地僅 28 公尺長，球員頻繁在高速奔跑後瞬間煞車，或在移動中突然切入改變方向。這類動作使膝關節在極短時間內承受巨大的剪切力與旋轉力矩，是韌帶撕裂最常見的誘因。</p>
+      </div>
+      <div class="mechanism-item">
+        <h4>🔄 膝關節旋轉動作頻繁</h4>
+        <p>防守步伐、交叉運球突破、急轉身等籃球特有動作，都要求膝關節在半屈曲位進行旋轉。這是膝關節最脆弱的受力方向，半月板在此情況下尤其容易因旋轉與壓縮並存的力量而撕裂。</p>
+      </div>
+      <div class="mechanism-item">
+        <h4>🏃 長時間高強度持續運動</h4>
+        <p>一場完整的籃球比賽持續 40 至 48 分鐘，若加上訓練，每週累積的運動量相當驚人。隨著肌肉疲勞，神經肌肉控制能力下降，膝關節周邊肌群無法有效分擔衝擊，傷害風險在比賽後半段顯著升高。</p>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <h4>💡 運動醫學觀點</h4>
+      <p>研究發現，女性籃球員的 ACL 撕裂風險是男性的 2 至 6 倍，主要原因包括：股四頭肌主導（而非臀肌）的落地模式、較寬的骨盆導致 Q 角度增加，以及雌激素對韌帶鬆弛度的影響。因此，預防訓練在女性族群中尤為重要。</p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- Section 2 -->
+  <section>
+    <div class="section-number">Section 02</div>
+    <h2 class="section-title">二、籃球最常見的膝蓋傷害有哪些？</h2>
+    <p class="body-text">籃球運動中的膝關節傷害可分為急性外傷性傷害與慢性過度使用性傷害兩大類。以下列出最常見的六種：</p>
+
+    <div class="injury-grid">
+      <div class="injury-card">
+        <div class="card-icon">🔴</div>
+        <h4>前十字韌帶（ACL）撕裂</h4>
+        <p>籃球中最嚴重的膝關節傷害。ACL 是維持膝關節前後穩定的核心韌帶，撕裂後需手術重建，恢復期長達 9 至 12 個月。</p>
+        <span class="severity severity-high">重度傷害</span>
+      </div>
+
+      <div class="injury-card">
+        <div class="card-icon">🟠</div>
+        <h4>半月板損傷</h4>
+        <p>半月板是膝關節內的纖維軟骨，負責緩衝與穩定。籃球的旋轉動作與急停常造成半月板撕裂，輕者保守治療，重者需手術修復。</p>
+        <span class="severity severity-high">重度傷害</span>
+      </div>
+
+      <div class="injury-card">
+        <div class="card-icon">🟡</div>
+        <h4>髕骨肌腱炎（跳躍膝）</h4>
+        <p>長期高頻率跳躍造成髕骨下方肌腱的慢性發炎。初期為運動後疼痛，嚴重時休息也會痛，是籃球員最常見的慢性膝蓋問題。</p>
+        <span class="severity severity-med">中度傷害</span>
+      </div>
+
+      <div class="injury-card">
+        <div class="card-icon">🟡</div>
+        <h4>髕股關節疼痛症候群</h4>
+        <p>俗稱「跑者膝」，但籃球員同樣好發。髕骨（膝蓋骨）在股骨上運動軌跡偏移，造成軟骨磨損與膝蓋前方疼痛，上下樓梯或蹲下時特別明顯。</p>
+        <span class="severity severity-med">中度傷害</span>
+      </div>
+
+      <div class="injury-card">
+        <div class="card-icon">🟢</div>
+        <h4>後十字韌帶（PCL）損傷</h4>
+        <p>較 ACL 少見，通常由膝蓋正面遭受直接撞擊造成，如倒地時膝蓋著地。輕中度損傷多可保守治療，嚴重撕裂則需手術。</p>
+        <span class="severity severity-med">中度傷害</span>
+      </div>
+
+      <div class="injury-card">
+        <div class="card-icon">🟢</div>
+        <h4>奧斯古德氏病（青少年好發）</h4>
+        <p>好發於快速生長期的青少年籃球員，大量跳躍動作造成髕骨韌帶在脛骨粗隆附著點的慢性牽拉性骨化，表現為脛骨上方腫塊與疼痛。</p>
+        <span class="severity severity-low">輕中度傷害</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- Section 3 -->
+  <section>
+    <div class="section-number">Section 03</div>
+    <h2 class="section-title">三、受傷機轉：傷害是如何發生的？</h2>
+    <p class="body-text">了解傷害的發生機制，是制定預防策略的根本。以下逐一解析各傷害的核心受傷機轉。</p>
+
+    <h3 class="subsection-title">ACL 撕裂的受傷機轉</h3>
+    <p class="body-text">
+      約 70% 的 ACL 傷害屬於「非接觸性」——即沒有外力碰撞，純粹因動作失誤造成。最典型的場景是：球員跳起後以單腳落地，膝關節呈幾乎完全伸直狀態，同時膝蓋向內塌陷（俗稱「膝外翻塌陷」），此時股骨在脛骨上產生向前位移，ACL 被迫承受遠超其極限的拉力而斷裂。急停轉向時若重心過高、軀幹前傾不足，也是重要誘因。
+    </p>
+
+    <h3 class="subsection-title">半月板損傷的受傷機轉</h3>
+    <p class="body-text">
+      半月板損傷通常發生在膝關節半屈曲（約 30° 至 60°）且同時承受旋轉扭力的情境下。例如：球員在急停時腳掌固定在地面，軀幹卻仍向前旋轉，造成脛骨相對於股骨的旋轉剪切力直接作用於半月板。此外，ACL 撕裂後因膝關節不穩定，繼發性半月板損傷的機率高達 50% 至 80%。
+    </p>
+
+    <h3 class="subsection-title">髕骨肌腱炎（跳躍膝）的受傷機轉</h3>
+    <p class="body-text">
+      這是典型的「過度使用」傷害。每次跳躍落地時，股四頭肌強力收縮以控制膝蓋彎曲，其力量透過髕骨傳導至髕骨肌腱。長期高頻率重複這個動作，肌腱微細損傷累積速度超過修復速度，導致慢性發炎與肌腱退化。訓練量突然增加（如備戰期）尤其危險。
+    </p>
+
+    <div class="warning-box">
+      <h4>⚠️ 高風險動作一覽</h4>
+      <ul>
+        <li>單腳落地時膝蓋完全打直（最高 ACL 風險）</li>
+        <li>落地時膝蓋向內塌陷超過腳尖方向</li>
+        <li>急停時重心過高、臀部未下沉</li>
+        <li>轉向切入時腳掌著地角度不當（外旋不足）</li>
+        <li>疲勞後期仍持續高強度訓練（神經肌肉控制下降）</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- Section 4 -->
+  <section>
+    <div class="section-number">Section 04</div>
+    <h2 class="section-title">四、如何有效預防籃球膝蓋傷害？</h2>
+    <p class="body-text">預防運動傷害並非只靠佩戴護膝——完整的預防策略包含以下五個核心面向。</p>
+
+    <ol class="prevention-steps">
+      <li>
+        <div>
+          <strong>系統性暖身與神經肌肉啟動（Neuromuscular Warm-up）</strong>
+          <span>賽前或練前進行 10 至 15 分鐘的動態暖身，包含臀肌啟動、單腿平衡訓練、慢跑跨步等。研究顯示，結合神經肌肉訓練的暖身計畫（如 FIFA 11+）能將 ACL 傷害風險降低高達 50%。靜態拉伸應留至運動後，賽前過度靜態拉伸反而可能削弱肌力。</span>
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>強化下肢肌力，尤其是臀肌與膕繩肌</strong>
+          <span>股四頭肌過強、臀肌與膕繩肌過弱是 ACL 傷害的重要風險因素。建議每週進行 2 至 3 次下肢肌力訓練，重點包括：深蹲、單腿深蹲、羅馬尼亞硬舉（強化膕繩肌）、臀橋與蚌殼式（強化臀中肌）。強大的臀肌能有效防止落地時膝蓋向內塌陷。</span>
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>落地技術訓練與動作模式修正</strong>
+          <span>有意識地練習「軟著陸」技術：落地時膝蓋應彎曲至少 30°，臀部後坐，重心平均分布兩腳，膝蓋對準第二趾方向（不內夾）。可在教練監督下進行垂直跳落地、單腳跳落地的動作修正訓練，搭配影像回饋效果最佳。</span>
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>合理安排訓練量，避免過度使用</strong>
+          <span>髕骨肌腱炎等過度使用傷害的根本原因是訓練量增加速度過快。建議每週增加的總訓練量不超過 10%（10% 法則）。賽季密集期應安排充足的恢復日，並重視睡眠品質——生長激素在深度睡眠中分泌，是組織修復的關鍵。</span>
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>適當裝備與場地選擇</strong>
+          <span>選擇具備良好緩衝與側向支撐的籃球鞋，定期更換（一般建議每 500 至 800 公里或 6 個月）。已有輕度膝關節不穩定史者，可佩戴功能性護膝增加本體感覺回饋。室內木質彈性地板對關節的衝擊遠小於室外混凝土地面，在選擇練習場地時值得考量。</span>
+        </div>
+      </li>
+    </ol>
+
+    <h3 class="subsection-title">各傷害類型的預防重點比較</h3>
+    <div class="prevention-table-wrap">
+      <table class="prevention-table">
+        <thead>
+          <tr>
+            <th>傷害類型</th>
+            <th>主要預防重點</th>
+            <th>關鍵訓練動作</th>
+            <th>特別注意事項</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ACL 撕裂</td>
+            <td>落地技術修正、臀肌強化</td>
+            <td>單腿深蹲、臀橋、落地訓練</td>
+            <td>女性族群風險特別高，需針對性訓練</td>
+          </tr>
+          <tr>
+            <td>半月板損傷</td>
+            <td>避免高強度旋轉動作、維持 ACL 穩定</td>
+            <td>側向穩定訓練、本體感覺訓練</td>
+            <td>ACL 傷後請積極復健，防止繼發半月板傷害</td>
+          </tr>
+          <tr>
+            <td>髕骨肌腱炎</td>
+            <td>控制訓練量增加速度、強化離心力量</td>
+            <td>離心單腿深蹲（斜板）、伸展股四頭肌</td>
+            <td>症狀出現應立即減量，避免強忍疼痛繼續訓練</td>
+          </tr>
+          <tr>
+            <td>髕股關節疼痛</td>
+            <td>髕骨軌跡調整、臀中肌強化</td>
+            <td>蚌殼式、側躺抬腿、貼紮技術</td>
+            <td>避免長時間跪姿與深蹲，穿具支撐性鞋款</td>
+          </tr>
+          <tr>
+            <td>奧斯古德氏病（青少年）</td>
+            <td>控制訓練量、充足休息</td>
+            <td>股四頭肌伸展、低衝擊交叉訓練</td>
+            <td>骨骼發育期應特別限制跳躍訓練量</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- Section 5: FAQ -->
+  <div class="faq-section">
+    <div class="faq-header">
+      <h2>🏆 五、FAQ 常見問題</h2>
+    </div>
+    <div class="faq-body">
+      <div class="faq-item">
+        <h3>Q1. 打籃球時膝蓋「喀」一聲，代表韌帶斷了嗎？</h3>
+        <p>「喀」聲（pop）確實是 ACL 撕裂的典型症狀之一，受傷者常形容聽到或感覺到膝蓋「啪」地一聲，隨後出現膝蓋劇痛、腫脹與無法承重。然而，並非所有的膝蓋聲響都代表嚴重傷害——關節內氣泡破裂（俗稱「彈指」）或膕繩肌腱摩擦也會發出聲音。若聲響伴隨立即腫脹、無法承重或明顯不穩定感，應盡速就醫並安排 MRI 確認診斷。</p>
+      </div>
+      <div class="faq-item">
+        <h3>Q2. 膝蓋受傷後還能繼續打球嗎？</h3>
+        <p>這取決於傷害的嚴重程度與類型。輕度膝蓋疼痛（無腫脹、功能無明顯受限）可能在充分休息後繼續運動，但若有明顯腫脹、膝蓋感覺「軟掉」或不穩定、無法正常承重，則應立即停止運動並就醫評估。強忍疼痛繼續打球往往導致傷害惡化，甚至將輕度傷害變成需要手術的嚴重傷害。</p>
+      </div>
+      <div class="faq-item">
+        <h3>Q3. 戴護膝能有效預防膝蓋受傷嗎？</h3>
+        <p>護膝的效果因類型而異。預防型護膝（如簡易髕骨環）能提升本體感覺並穩定髕骨，對髕股關節疼痛有一定幫助；功能型護膝對已有 ACL 損傷史者能增加主觀穩定感。然而，護膝無法取代肌力訓練與正確動作模式——對於完整的韌帶，最好的保護仍是強壯的周邊肌群。過度依賴護膝而忽視肌力訓練反而有害。</p>
+      </div>
+      <div class="faq-item">
+        <h3>Q4. 髕骨肌腱炎需要休息多久才能恢復？</h3>
+        <p>急性發作期通常需要 2 至 6 週的相對休息（減少跳躍與高衝擊動作，但並非完全不動）。慢性髕骨肌腱病變若處理不當，復原可能拖延至數月甚至一年以上。關鍵在於：不要等到完全不痛才開始治療性訓練，適度的離心負重訓練（如斜板單腿深蹲）已被研究證實能促進肌腱重塑，效果優於單純休息。</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Section 6: Misunderstandings -->
+  <div class="misunderstand-box">
+    <h2>📢 六、常見三大迷思解析</h2>
+    <div class="misunderstand-item">
+      <div class="misunderstand-num">1</div>
+      <div class="misunderstand-content">
+        <strong>迷思一：「年輕就不怕傷膝蓋」</strong>
+        <p><strong>事實：</strong>青少年籃球員的 ACL 傷害發生率近年持續上升，且骨骼發育未完全更可能出現奧斯古德氏病等特有問題。年輕不代表免疫，正確的動作訓練應從青少年時期就建立。</p>
+      </div>
+    </div>
+    <div class="misunderstand-item">
+      <div class="misunderstand-num">2</div>
+      <div class="misunderstand-content">
+        <strong>迷思二：「跑步才會傷膝蓋，打球沒關係」</strong>
+        <p><strong>事實：</strong>籃球對膝關節的衝擊力遠高於一般跑步，因其包含更多爆發性跳躍與急速變向。業餘籃球員因缺乏系統訓練，傷害風險甚至可能高於有系統訓練的跑者。</p>
+      </div>
+    </div>
+    <div class="misunderstand-item">
+      <div class="misunderstand-num">3</div>
+      <div class="misunderstand-content">
+        <strong>迷思三：「手術後就能恢復到傷前水準」</strong>
+        <p><strong>事實：</strong>ACL 重建術後的復原是一段漫長而艱難的旅程。研究顯示，即便完成標準復健，重返運動後 2 年內再次受傷的機率高達 15 至 25%。術後充分的神經肌肉訓練與心理準備同樣不可或缺。</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- Conclusion -->
+  <div class="conclusion-box">
+    <h2>結語與行動建議</h2>
+    <p>
+      籃球帶來的運動樂趣無可替代，但膝蓋傷害一旦發生，往往需要付出數倍的代價來恢復。理解籃球動作對膝關節的特殊挑戰、認識常見傷害類型與受傷機轉，並落實預防策略——這才是讓你能長期享受籃球的根本。
+    </p>
+    <p>
+      預防的核心不是「不打球」，而是<strong>聰明地打球</strong>：暖身不偷懶、動作有意識、肌力持續練、疼痛要重視。任何持續超過 1 週的膝蓋疼痛，都值得尋求專業骨科或運動醫學科醫師評估。
+    </p>
+    <p>
+      如果你已有膝蓋不適的症狀，或希望在正式參與訓練前先評估膝關節狀況，強烈建議預約專業的骨科或復健科門診，及早介入，把握治療與預防的黃金時期。
+    </p>
+    <div class="conclusion-cta">
+      <p>若您有膝蓋疼痛、運動傷害相關疑慮，歡迎諮詢專業運動醫學門診</p>
+      <a href="#" class="cta-btn">預約門診諮詢</a>
+    </div>
+  </div>
+
+  <!-- References -->
+  <div class="references-box">
+    <h2>📚 參考文獻（References）</h2>
+    <ol>
+      <li>Prodromos CC, Han Y, Rogowski J, Joyce B, Shi K. (2007). A meta-analysis of the incidence of anterior cruciate ligament tears as a function of gender, sport, and a knee injury–reduction regimen. <em>Arthroscopy</em>, 23(12), 1320–1325. <a href="https://doi.org/10.1016/j.arthro.2007.07.003" target="_blank" rel="noopener noreferrer">doi:10.1016/j.arthro.2007.07.003</a></li>
+      <li>Meeuwisse WH, Sellmer R, Hagel BE. (2003). Rates and risks of injury during intercollegiate basketball. <em>Am J Sports Med</em>, 31(3), 379–385. <a href="https://doi.org/10.1177/03635465030310031301" target="_blank" rel="noopener noreferrer">doi:10.1177/03635465030310031301</a></li>
+      <li>Hewett TE, Myer GD, Ford KR. (2006). Anterior cruciate ligament injuries in female athletes: Part 1, mechanisms and risk factors. <em>Am J Sports Med</em>, 34(2), 299–311. <a href="https://doi.org/10.1177/0363546505284183" target="_blank" rel="noopener noreferrer">doi:10.1177/0363546505284183</a></li>
+      <li>Lian ØB, Engebretsen L, Bahr R. (2005). Prevalence of jumper's knee among elite athletes from different sports. <em>Am J Sports Med</em>, 33(4), 561–567. <a href="https://doi.org/10.1177/0363546504270454" target="_blank" rel="noopener noreferrer">doi:10.1177/0363546504270454</a></li>
+      <li>Silvers HJ, Mandelbaum BR. (2007). Prevention of anterior cruciate ligament injury in the female athlete. <em>Br J Sports Med</em>, 41(Suppl 1), i52–i59. <a href="https://doi.org/10.1136/bjsm.2007.037200" target="_blank" rel="noopener noreferrer">doi:10.1136/bjsm.2007.037200</a></li>
+      <li>van der Worp H, van Ark M, Roerink S, Pepping GJ, van den Akker-Scheek I, Zwerver J. (2011). Risk factors for patellar tendinopathy: a systematic review of the literature. <em>Br J Sports Med</em>, 45(5), 446–452. <a href="https://doi.org/10.1136/bjsm.2011.084079" target="_blank" rel="noopener noreferrer">doi:10.1136/bjsm.2011.084079</a></li>
+    </ol>
+  </div>
+
+    `
+},
+
+
+
+{
+    id: 'doctorvsengineer',
+    title: '從新竹實中到診所院長：跨越 20 年的科技與醫療圈觀察',
+    lastModified: '2026-04-15',
+    category: '衛教文章',
+    date: '2026-04-15',
+    summary: '最近「醫電大戰」討論火熱。身處科技城新竹且身為醫師的我，想分享關於天賦、財富、與職涯穩定性的真實觀察：有些領域是給天才奔跑的，而醫學，是給願意駐足的人。',
+    coverImage: '/images/news/article/doctorvsengineer.webp',
+    seoTitle: '醫學系與電機系怎麼選？醫師跨界分析天賦、薪資與職涯穩定度',
+    seoDescription: '深度解析醫學系與電機系的生存現狀：從矽谷千萬年薪工程師到醫院住院醫師的工時壓力，探討天賦牆、財富跑道及中年失業風險，為猶豫中的學子提供最真實的職場建議。',
+    keywords: ['醫學系', '電機系', '科技業', '工程師', '醫師薪水', '職涯規劃', '醫電大戰', '牙醫系'],
+    contentHtml: `
+
+        <p>最近「醫電大戰」討論得很火熱。家裡除了我之外，幾乎全都是科學園區工程師，我想我有資格來分享一點心得。</p>
+        
+        <p><strong>先說結論：</strong></p>
+        <ul>
+            <li>💻 <strong>工程師：</strong>適合聰明人。擅長投資、追求自我突破，終身學習。</li>
+            <li>🏥 <strong>醫師：</strong>穩定且溫暖。擅長經營管理、享受與人溝通的成就感，但要有高 EQ。</li>
+        </ul>
+
+        <hr>
+
+        <h2>一、 關於天賦的牆 🧱</h2>
+        <p>我高中唸新竹實驗高中，班上同學現在幾乎都在科技領域。剛入學時，我才發現我才是那棵被虐的菜。</p>
+        <p>數理方面，困難的題目我想半天，天才們看一眼就知道解答。那一刻我明白，有些領域是給天才奔跑的，而<strong>醫學，是給願意駐足的人</strong>。醫學需要的不是瞬間的靈光乍現，而是十年如一日的累積、對名詞的記憶，以及關鍵時刻不手抖的穩定。</p>
+
+        <hr>
+
+        <h2>二、 關於財富的跑道 💰</h2>
+        <p>那些天才同學目前在矽谷大廠年薪接近千萬，留在台灣一線「豬屎屋」（IC 設計）的年薪也約 300 萬。當我還在住院醫師領 8 萬月薪、每週工時 80 小時應付論文時，他們已經靠著高薪投資房產股市，不少人已經財富自由了。</p>
+        <p>醫學系的競爭從未停止，畢業選科是第一個分水嶺。除非排名在前 5%，否則很難進入皮膚科、眼科等熱門科別，而熬過這段，通常也 30 歲了。</p>
+
+        <hr>
+
+        <h2>三、 關於白袍下的代價 👨‍⚕️</h2>
+        <p>30 歲後的路分兩條：</p>
+        <ul>
+            <li><strong>留在醫院：</strong>有名聲與資源，但薪水（15-20萬）其實低於同年紀的工程師。</li>
+            <li><strong>選擇診所：</strong>薪水約 300 萬與工程師持平，但必須面對病人的情緒壓力、健保局不合理的核刪與法律風險。</li>
+        </ul>
+        <p>除非你善於管理並選擇<strong>「開業」</strong>，收入天花板才會拉高，有機會追上矽谷的天才同學。</p>
+
+        <hr>
+
+        <h2>四、 關於父親的背影與穩定的價值 👨‍👦</h2>
+        <p>我父親是園區工程師，雖然薪水不錯，但在一次裁員潮中失業了。中年失業要找回原本薪資極其困難。我看著他為了養家去廚房幫忙，那種辛酸讓我體會到：<strong>科技業新鮮的肝好用，但醫師年紀越大，民眾反而越信任你的經驗。</strong>這就是醫師「穩定」的價值。</p>
+
+        <hr>
+
+        <h2>五、 關於那顆流星 💫</h2>
+        <p>科技業進展極快，差兩年就是另一個世界；醫學則在緩慢中求精進。更重要的是成就感——治好病人的痛楚，那句微弱的「謝謝你，醫師」，就像黑夜裡劃過的流星，讓你覺得那些壓力都能再撐一下。</p>
+
+        <br />
+        <p>💡 <strong>如果你是看一眼題目就能解開的天才，去電機系發光發熱吧！但如果有高中生來問我建議……我會推薦你去讀牙醫系。</strong></p>
+        
+        <br />
+        <p>這份讓病患重回生活、重新擁抱無痛喜悅的悸動，就是我即便看清現實的骨感，卻依然熱衷於醫療圈、持續走下去的唯一理由。</p>
+    `
+},
+
+
+
 {
     id: 'why-cats-dont-get-stiff-neck',
     title: '家裡兩隻貓咪每天不是躺著就是躺著，為什麼不會落枕呢？',
@@ -1043,13 +1434,10 @@ export const articlesData: NewsPost[] = [
     '骨科衛教'
   ],
   contentHtml: `
-
 <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
   <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-    網球發球是全身性的高速複合動作，涉及下肢推蹬、軀幹旋轉、肩關節超速外旋與加速，是網球場上對身體負擔最大的技術動作之一。不同球種（平擊、側旋、上旋、Kick）因擊球時拍面角度、揮拍路徑及旋轉軸方向各異，對肩、肘、腕、脊椎的生物力學壓力分布也截然不同。研究顯示，<strong style="color: #0284c7;">肩袖傷害（旋轉肌群撕裂）</strong>是業餘與職業球員最常見的發球相關傷害，盛行率可達25–50%
-    <sup><a href="#ref1" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[1]</a></sup>。
-    本文將系統性介紹發球生物力學、各球種特性與各自的傷害風險，並提供預防建議，參考文獻超過10篇，適合球員、教練及醫療人員參閱。
+    籃球運動因其高頻率的<strong style="color: #0284c7;">跳躍、急停急起、切入轉向</strong>等動作，對膝關節的衝擊遠超過大多數運動。常見傷害包括前十字韌帶（ACL）撕裂、半月板損傷、髕骨肌腱炎（跳躍膝）、髕股關節疼痛症候群等。受傷機轉多源自單腳落地時膝蓋向內塌陷、急停時煞車力道集中在膝關節，以及過度訓練導致的累積性磨損。透過系統性的暖身、肌力訓練、動作模式修正與護具輔助，能顯著降低膝蓋受傷風險。
   </p>
 </div>
 
@@ -1057,42 +1445,40 @@ export const articlesData: NewsPost[] = [
 
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    一、網球發球的生物力學概論
+    一、為什麼籃球特別容易傷膝蓋？
   </h2>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    網球發球是運動醫學中研究最為深入的複合性技術動作之一，其動力鏈（Kinetic Chain）從腳踝推蹬地面開始，依序傳遞至膝、髖、軀幹、肩、肘、腕，最終由球拍頭端以超高速接觸球體
-    <sup><a href="#ref2" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>。
-    職業球員的發球時速可超過 230 km/h，肩關節在揮拍初期可產生高達 <strong style="color: #ffffff;">7,000 度／秒</strong>的外旋角速度，關節壓縮力可達體重的 1.5 倍以上
-    <sup><a href="#ref3" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>。
+    在所有球類運動中，籃球被運動醫學界列為膝關節傷害風險最高的項目之一。根據美國骨科運動醫學學會（AOSSM）統計，職業籃球員一生中遭遇膝關節傷害的機率超過七成，業餘球員亦不相上下。這背後並非巧合，而是由籃球運動的本質特性所決定。
   </p>
 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">發球的六大動作階段</h3>
-  <img src="/images/news/article/tennisgrip/serve.webp" alt="網球發球的六大動作階段" class="responsive-img-enlarge">
-  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">準備期（Wind-up）</strong>：身體重心下移，球拍與球托放開，肩關節開始外旋。
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">早期後仰（Early Cocking）</strong>：主力腳屈膝蹬地，球拍繼續後引，肩外展至約90度。
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">晚期後仰（Late Cocking）</strong>：肩關節達到最大外旋（約170度），此階段前關節囊承受最大張力。
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">加速期（Acceleration）</strong>：內旋肌群爆發性收縮，球拍由後上方向前上方高速揮擊，接觸點前為最高速。
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">擊球（Ball Contact）</strong>：各球種差異最明顯的時刻，拍面角度與旋轉方向決定球路。
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">跟進收拍（Follow-through）</strong>：肩關節內旋繼續，肘、腕依序制動，離心收縮保護為此期主要挑戰。
-    </li>
-  </ul>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">籃球動作對膝蓋的三大威脅</h3>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+    <div style="flex: 1 1 calc(50% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🦘 高頻率垂直跳躍與落地衝擊</h4>
+      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 0;">一場籃球比賽中，球員平均跳躍次數超過 40 次。每次落地時，膝關節需吸收自身體重 3 至 7 倍的衝擊力。若落地姿勢不正確——尤其是單腳落地或膝蓋未彎曲吸震——股骨與脛骨之間的應力將驟升，前十字韌帶和半月板首當其衝。</p>
+    </div>
+    
+    <div style="flex: 1 1 calc(50% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">⚡ 急停急起、高速變向</h4>
+      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 0;">籃球場地僅 28 公尺長，球員頻繁在高速奔跑後瞬間煞車，或在移動中突然切入改變方向。這類動作使膝關節在極短時間內承受巨大的剪切力與旋轉力矩，是韌帶撕裂最常見的誘因。</p>
+    </div>
+
+    <div style="flex: 1 1 calc(50% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🔄 膝關節旋轉動作頻繁</h4>
+      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 0;">防守步伐、交叉運球突破、急轉身等籃球特有動作，都要求膝關節在半屈曲位進行旋轉。這是膝關節最脆弱的受力方向，半月板在此情況下尤其容易因旋轉與壓縮並存的力量而撕裂。</p>
+    </div>
+
+    <div style="flex: 1 1 calc(50% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🏃 長時間高強度持續運動</h4>
+      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 0;">一場完整的籃球比賽持續 40 至 48 分鐘，若加上訓練，每週累積的運動量相當驚人。隨著肌肉疲勞，神經肌肉控制能力下降，膝關節周邊肌群無法有效分擔衝擊，傷害風險在比賽後半段顯著升高。</p>
+    </div>
+  </div>
 
   <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 動力鏈缺陷是傷害的根本原因</h4>
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 運動醫學觀點</h4>
     <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
-      研究顯示，當下肢或核心力量不足，動力鏈在腰椎或肩胛骨節點發生「能量洩漏（energy leakage）」時，上肢關節必須代償產生更大力矩，顯著增加肩、肘的傷害風險。<sup><a href="#ref4" target="_blank" rel="noopener noreferrer" style="color: #0e7490; text-decoration: underline;">[4]</a></sup>
+      研究發現，女性籃球員的 ACL 撕裂風險是男性的 2 至 6 倍，主要原因包括：股四頭肌主導（而非臀肌）的落地模式、較寬的骨盆導致 Q 角度增加，以及雌激素對韌帶鬆弛度的影響。因此，預防訓練在女性族群中尤為重要。
     </p>
   </div>
 </section>
@@ -1101,47 +1487,47 @@ export const articlesData: NewsPost[] = [
 
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    二、四大發球球種介紹與生物力學特性
+    二、籃球最常見的膝蓋傷害有哪些？
   </h2>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    網球發球根據擊球時拍面與球的接觸方式，主要分為以下四種球路，各有其戰術用途與技術需求。
+    籃球運動中的膝關節傷害可分為急性外傷性傷害與慢性過度使用性傷害兩大類。以下列出最常見的六種：
   </p>
 
   <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
-    <div style="flex: 1 1 calc(50% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
-      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">💥 平擊發球 (Flat Serve)</h4>
-      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">拍面正對球體中心，幾乎無旋轉，球速最快。追求最大初速度，是威力型發球的代表，常用於制勝分。</p>
-      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-        <span style="background-color: #fee2e2; color: #991b1b; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">高肩關節負擔</span>
-        <span style="background-color: #ffedd5; color: #9a3412; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">腕過伸</span>
-      </div>
-    </div>
-    
-    <div style="flex: 1 1 calc(50% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
-      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">↩️ 側旋發球 (Slice Serve)</h4>
-      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">拍面側切球體右側（右手球員），產生側向旋轉使球彈跳偏離對手，是戰術多樣化的利器。</p>
-      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-        <span style="background-color: #ffedd5; color: #9a3412; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">肘內側拉力</span>
-        <span style="background-color: #fef9c3; color: #854d0e; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">前臂旋前</span>
-      </div>
+    <div style="flex: 1 1 calc(33.333% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🔴 前十字韌帶（ACL）撕裂</h4>
+      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">籃球中最嚴重的膝關節傷害。ACL 是維持膝關節前後穩定的核心韌帶，撕裂後需手術重建，恢復期長達 9 至 12 個月。</p>
+      <span style="background-color: #fee2e2; color: #991b1b; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">重度傷害</span>
     </div>
 
-    <div style="flex: 1 1 calc(50% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
-      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🌀 上旋發球 (Topspin Serve)</h4>
-      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">拍面由下往上刷過球體後部，產生上旋使球弧度高且落地後彈跳急，安全率高於平擊。</p>
-      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-        <span style="background-color: #fee2e2; color: #991b1b; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">脊椎過伸</span>
-        <span style="background-color: #ffedd5; color: #9a3412; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">肩後方撞擊</span>
-      </div>
+    <div style="flex: 1 1 calc(33.333% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🟠 半月板損傷</h4>
+      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">半月板是膝關節內的纖維軟骨，負責緩衝與穩定。籃球的旋轉動作與急停常造成半月板撕裂，輕者保守治療，重者需手術修復。</p>
+      <span style="background-color: #ffedd5; color: #9a3412; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">重度傷害</span>
     </div>
 
-    <div style="flex: 1 1 calc(50% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
-      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🦵 Kick 發球 (American Twist)</h4>
-      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">揮拍路徑由7點鐘方向往1點鐘刷過球體，同時產生強烈上旋與側旋，落地後彈跳最高、最難處理。</p>
-      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-        <span style="background-color: #fee2e2; color: #991b1b; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">腰椎過伸最高</span>
-        <span style="background-color: #fee2e2; color: #991b1b; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">肩袖撕裂風險</span>
-      </div>
+    <div style="flex: 1 1 calc(33.333% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🟡 髕骨肌腱炎（跳躍膝）</h4>
+      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">長期高頻率跳躍造成髕骨下方肌腱的慢性發炎。初期為運動後疼痛，嚴重時休息也會痛，是籃球員最常見的慢性膝蓋問題。</p>
+      <span style="background-color: #fef9c3; color: #854d0e; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">中度傷害</span>
+    </div>
+
+    <div style="flex: 1 1 calc(33.333% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🟡 髕股關節疼痛症候群</h4>
+      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">俗稱「跑者膝」，但籃球員同樣好發。髕骨在股骨上運動軌跡偏移，造成軟骨磨損與膝前方疼痛，上下樓梯或蹲下時特別明顯。</p>
+      <span style="background-color: #fef9c3; color: #854d0e; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">中度傷害</span>
+    </div>
+
+    <div style="flex: 1 1 calc(33.333% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🟢 後十字韌帶（PCL）損傷</h4>
+      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">較 ACL 少見，通常由膝蓋正面遭受直接撞擊造成，如倒地時膝蓋著地。輕中度損傷多可保守治療，嚴重撕裂則需手術。</p>
+      <span style="background-color: #dcfce7; color: #166534; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">中度傷害</span>
+    </div>
+
+    <div style="flex: 1 1 calc(33.333% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
+      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🟢 奧斯古德氏病</h4>
+      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">好發於快速生長期的青少年籃球員，大量跳躍動作造成髕骨韌帶在脛骨粗隆附著點慢性牽拉，表現為脛骨上方腫塊與疼痛。</p>
+      <span style="background-color: #dcfce7; color: #166534; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">輕中度傷害</span>
     </div>
   </div>
 </section>
@@ -1150,78 +1536,76 @@ export const articlesData: NewsPost[] = [
 
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    三、網球發球常見運動傷害全覽
+    三、受傷機轉：傷害是如何發生的？
   </h2>
-
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
-    3-1 肩關節傷害（最常見，佔發球傷害約 40%）
-  </h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    肩袖（Rotator Cuff）由棘上肌、棘下肌、小圓肌及肩胛下肌組成，在發球加速期承受高達 <strong style="color: #ffffff;">1,088 N</strong> 的壓縮力與剪切力
-    <sup><a href="#ref5" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>。
-    最常見的傷害包括：
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    了解傷害的發生機制，是制定預防策略的根本。以下逐一解析各傷害的核心受傷機轉。
   </p>
-  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">棘上肌腱撕裂（Supraspinatus tear）</strong>：最常見，晚期後仰至加速期中反覆微小創傷積累所致，可從部分撕裂進展至全層撕裂。</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">棘下肌肌腱病變（Infraspinatus tendinopathy）</strong>：跟進收拍期離心負荷過大，常與後方撞擊症候群並存。</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">肩峰下夾擠症候群（Subacromial Impingement）</strong>：在加速初期肩關節屈曲時，棘上肌腱重複撞擊肩峰，產生發炎與疼痛。盛行率研究顯示約佔網球肩傷的 34%<sup><a href="#ref6" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>。</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">SLAP 損傷（Superior Labrum Anterior to Posterior tear）</strong>：晚期後仰極度外旋時，二頭肌長頭肌腱對關節唇產生撕裂力，職業球員中 SLAP II 型損傷並不少見<sup><a href="#ref7" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>。</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">肩關節不穩定（Glenohumeral Instability）</strong>：反覆大幅度外旋使前關節囊鬆弛，在主力肩尤其常見。</li>
-  </ul>
 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
-    3-2 肘關節傷害
-  </h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    發球時前臂的旋前旋後動作以及加速期的急速內旋，對肘關節內外側均有顯著壓力
-    <sup><a href="#ref8" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>。
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">ACL 撕裂的受傷機轉</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    約 70% 的 ACL 傷害屬於「非接觸性」——即沒有外力碰撞，純粹因動作失誤造成。最典型的場景是：球員跳起後以單腳落地，膝關節呈幾乎完全伸直狀態，同時膝蓋向內塌陷（俗稱「膝外翻塌陷」），此時股骨在脛骨上產生向前位移，ACL 被迫承受遠超其極限的拉力而斷裂。急停轉向時若重心過高、軀幹前傾不足，也是重要誘因。
   </p>
-  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">肘內側副韌帶損傷（UCL Sprain）</strong>：加速期肘外翻力矩可超過 64 N·m，是 UCL 損傷的主因，嚴重時需接受 Tommy John 手術。</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">網球肘（外上髁炎）</strong>：雖更常見於反手拍，但部分球員在跟進收拍時伸腕肌群過度收縮也可導致此症。</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">高爾夫球肘（內上髁炎）</strong>：屈腕肌群在加速期的爆發性收縮可造成內上髁附著點的肌腱病變。</li>
-  </ul>
 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
-    3-3 腕與手部傷害
-  </h3>
-  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">尺側腕伸肌腱腱鞘炎（ECU Tenosynovitis）</strong>：旋前動作中ECU腱鞘反覆摩擦，在側旋與Kick發球中尤為明顯。</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">三角纖維軟骨複合體損傷（TFCC Tear）</strong>：腕關節尺偏合併壓縮力可造成 TFCC 損傷，是長期網球選手腕痛的重要原因<sup><a href="#ref9" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>。</li>
-  </ul>
-
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
-    3-4 脊椎傷害
-  </h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    發球時軀幹需在極短時間內完成側彎加上旋轉，對腰椎椎間盤與小面關節產生顯著剪力。Kick 發球因需要更大的後仰弧度，腰椎過伸角度可達一般發球的 1.5 倍
-    <sup><a href="#ref10" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>。
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">半月板損傷的受傷機轉</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    半月板損傷通常發生在膝關節半屈曲（約 30° 至 60°）且同時承受旋轉扭力的情境下。例如：球員在急停時腳掌固定在地面，軀幹卻仍向前旋轉，造成脛骨相對於股骨的旋轉剪切力直接作用於半月板。此外，ACL 撕裂後因膝關節不穩定，繼發性半月板損傷的機率高達 50% 至 80%。
   </p>
-  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">腰椎椎弓解離（Spondylolysis）</strong>：青少年球員中尤為常見，反覆過伸使椎弓峽部發生疲勞性骨折。</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">椎間盤突出（Lumbar Disc Herniation）</strong>：職業球員腰椎 MRI 研究顯示，椎間盤退化盛行率顯著高於同齡一般人。</li>
-  </ul>
 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
-    3-5 下肢傷害
-  </h3>
-  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">踝關節扭傷</strong>：起跳與落地時踝關節側向穩定度需求高，是最常見的下肢傷害。</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">小腿肌肉拉傷</strong>：起跳推蹬瞬間腓腸肌離心負荷過大，Foot-up 發球姿勢（腳跟抬起）風險更高。</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">髕骨股骨症候群</strong>：跳躍型發球重複起跳落地可造成髕股關節壓力異常。</li>
-  </ul>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">髕骨肌腱炎（跳躍膝）的受傷機轉</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是典型的「過度使用」傷害。每次跳躍落地時，股四頭肌強力收縮以控制膝蓋彎曲，其力量透過髕骨傳導至髕骨肌腱。長期高頻率重複這個動作，肌腱微細損傷累積速度超過修復速度，導致慢性發炎與肌腱退化。訓練量突然增加（如備戰期）尤其危險。
+  </p>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 高風險動作一覽</strong><br><br>
+    </p>
+    <ul style="color: #9a3412; list-style-type: disc; padding-left: 1.5rem; line-height: 1.6; font-size: 1rem; margin-top: 0.5rem; margin-bottom: 0;">
+      <li style="margin-bottom: 0.25rem;">單腳落地時膝蓋完全打直（最高 ACL 風險）</li>
+      <li style="margin-bottom: 0.25rem;">落地時膝蓋向內塌陷超過腳尖方向</li>
+      <li style="margin-bottom: 0.25rem;">急停時重心過高、臀部未下沉</li>
+      <li style="margin-bottom: 0.25rem;">轉向切入時腳掌著地角度不當（外旋不足）</li>
+      <li style="margin-bottom: 0.25rem;">疲勞後期仍持續高強度訓練（神經肌肉控制下降）</li>
+    </ul>
+  </div>
 </section>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    四、各球種傷害風險比較表
+    四、如何有效預防籃球膝蓋傷害？
   </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    以下表格整合各球種的生物力學特性與傷害風險，供臨床評估與訓練規劃參考。
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    預防運動傷害並非只靠佩戴護膝——完整的預防策略包含以下五個核心面向。
   </p>
 
+  <ol style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">系統性暖身與神經肌肉啟動（Neuromuscular Warm-up）：</strong>
+      <span>賽前或練前進行 10 至 15 分鐘的動態暖身，包含臀肌啟動、單腿平衡訓練、慢跑跨步等。研究顯示，結合神經肌肉訓練的暖身計畫（如 FIFA 11+）能將 ACL 傷害風險降低高達 50%。靜態拉伸應留至運動後，賽前過度靜態拉伸反而可能削弱肌力。</span>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">強化下肢肌力，尤其是臀肌與膕繩肌：</strong>
+      <span>股四頭肌過強、臀肌與膕繩肌過弱是 ACL 傷害的重要風險因素。建議每週進行 2 至 3 次下肢肌力訓練，重點包括：深蹲、單腿深蹲、羅馬尼亞硬舉（強化膕繩肌）、臀橋與蚌殼式（強化臀中肌）。強大的臀肌能有效防止落地時膝蓋向內塌陷。</span>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">落地技術訓練與動作模式修正：</strong>
+      <span>有意識地練習「軟著陸」技術：落地時膝蓋應彎曲至少 30°，臀部後坐，重心平均分布兩腳，膝蓋對準第二趾方向（不內夾）。可在教練監督下進行垂直跳落地、單腳跳落地的動作修正訓練，搭配影像回饋效果最佳。</span>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">合理安排訓練量，避免過度使用：</strong>
+      <span>髕骨肌腱炎等過度使用傷害的根本原因是訓練量增加速度過快。建議每週增加的總訓練量不超過 10%（10% 法則）。賽季密集期應安排充足的恢復日，並重視睡眠品質——生長激素在深度睡眠中分泌，是組織修復的關鍵。</span>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">適當裝備與場地選擇：</strong>
+      <span>選擇具備良好緩衝與側向支撐的籃球鞋，定期更換（一般建議每 500 至 800 公里或 6 個月）。已有輕度膝關節不穩定史者，可佩戴功能性護膝增加本體感覺回饋。室內木質彈性地板對關節的衝擊遠小於室外混凝土地面，在選擇練習場地時值得考量。</span>
+    </li>
+  </ol>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">各傷害類型的預防重點比較</h3>
+  
   <style>
     .custom-table-container {
       width: 100%;
@@ -1280,46 +1664,42 @@ export const articlesData: NewsPost[] = [
     <table class="modern-table">
       <thead>
         <tr>
-          <th>球種</th>
-          <th>肩關節負擔</th>
-          <th>肘關節負擔</th>
-          <th>腰椎負擔</th>
-          <th>腕部風險</th>
-          <th>最常見傷害</th>
+          <th>傷害類型</th>
+          <th>主要預防重點</th>
+          <th>關鍵訓練動作</th>
+          <th>特別注意事項</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>平擊發球<br><span style="font-size: 0.8rem; font-weight: normal; opacity: 0.7;">Flat Serve</span></td>
-          <td><span class="text-danger">高</span><br><span style="font-size: 0.8rem; font-weight: normal;">高速內旋負擔</span></td>
-          <td>中</td>
-          <td>低</td>
-          <td>中<br><span style="font-size: 0.8rem; font-weight: normal;">腕過伸</span></td>
-          <td>棘上肌撕裂、肩峰下夾擠、SLAP</td>
+          <td>ACL 撕裂</td>
+          <td>落地技術修正、臀肌強化</td>
+          <td>單腿深蹲、臀橋、落地訓練</td>
+          <td>女性族群風險特別高，需針對性訓練</td>
         </tr>
         <tr>
-          <td>側旋發球<br><span style="font-size: 0.8rem; font-weight: normal; opacity: 0.7;">Slice Serve</span></td>
-          <td>中</td>
-          <td><span class="text-danger">高</span><br><span style="font-size: 0.8rem; font-weight: normal;">旋前力矩大</span></td>
-          <td>低</td>
-          <td><span class="text-danger">高</span><br><span style="font-size: 0.8rem; font-weight: normal;">ECU、TFCC</span></td>
-          <td>UCL損傷、ECU腱鞘炎、肱骨外上髁炎</td>
+          <td>半月板損傷</td>
+          <td>避免高強度旋轉動作、維持 ACL 穩定</td>
+          <td>側向穩定訓練、本體感覺訓練</td>
+          <td>ACL 傷後請積極復健，防止繼發半月板傷害</td>
         </tr>
         <tr>
-          <td>上旋發球<br><span style="font-size: 0.8rem; font-weight: normal; opacity: 0.7;">Topspin Serve</span></td>
-          <td><span class="text-danger">高</span><br><span style="font-size: 0.8rem; font-weight: normal;">後方撞擊風險</span></td>
-          <td>中</td>
-          <td><span class="text-warning">中-高</span></td>
-          <td>低</td>
-          <td>棘下肌肌腱病變、後方夾擠、腰椎扭傷</td>
+          <td>髕骨肌腱炎</td>
+          <td>控制訓練量增加速度、強化離心力量</td>
+          <td>離心單腿深蹲（斜板）、伸展股四頭肌</td>
+          <td>症狀出現應立即減量，避免強忍疼痛繼續訓練</td>
         </tr>
         <tr>
-          <td>Kick 發球<br><span style="font-size: 0.8rem; font-weight: normal; opacity: 0.7;">Kick Serve</span></td>
-          <td><span class="text-danger">高</span><br><span style="font-size: 0.8rem; font-weight: normal;">複合旋轉負荷</span></td>
-          <td>中</td>
-          <td><span class="text-danger">最高</span><br><span style="font-size: 0.8rem; font-weight: normal;">過伸＋旋轉</span></td>
-          <td>中</td>
-          <td>腰椎椎弓解離、肩袖撕裂、青少年脊椎疲勞骨折</td>
+          <td>髕股關節疼痛</td>
+          <td>髕骨軌跡調整、臀中肌強化</td>
+          <td>蚌殼式、側躺抬腿、貼紮技術</td>
+          <td>避免長時間跪姿與深蹲，穿具支撐性鞋款</td>
+        </tr>
+        <tr>
+          <td>奧斯古德氏病（青少年）</td>
+          <td>控制訓練量、充足休息</td>
+          <td>股四頭肌伸展、低衝擊交叉訓練</td>
+          <td>骨骼發育期應特別限制跳躍訓練量</td>
         </tr>
       </tbody>
     </table>
@@ -1328,279 +1708,144 @@ export const articlesData: NewsPost[] = [
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    五、各球種的傷害深度解析
-  </h2>
-
-  <div style="margin-bottom: 2.5rem;">
-    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
-      5-1 平擊發球 — 高速的代價
-    </h3>
-    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-      平擊發球要求球員以最大初速擊球，肩關節在加速期的內旋角速度最高，肩袖肌群承受的離心制動力矩最大。Fleisig 等人的生物力學研究發現，平擊發球時肩關節的 <strong style="color: #ffffff;">壓縮力（約 1,088 N）</strong> 顯著高於側旋與上旋發球
-      <sup><a href="#ref5" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>。
-      長期過量練習平擊發球而缺乏充分恢復，是職業球員肩袖退化性撕裂的主要原因之一。
-    </p>
-
-    <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
-      <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
-        <strong>⚠️ 特別警示：內旋肌/外旋肌力比失衡</strong><br><br>網球球員長期進行內旋訓練，若外旋肌（棘下肌、小圓肌）強化不足，肌力比值（ER/IR ratio）下降至0.66以下時，肩袖撕裂風險顯著上升。建議每週進行專項外旋強化訓練。<sup><a href="#ref11" target="_blank" rel="noopener noreferrer" style="color: #9a3412; text-decoration: underline;">[11]</a></sup>
-      </p>
-    </div>
-  </div>
-
-  <div style="margin-bottom: 2.5rem;">
-    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
-      5-2 側旋發球 — 肘與腕的隱形殺手
-    </h3>
-    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-      側旋發球的拍面需在接觸點附近完成明顯的旋前（Pronation）動作，前臂旋前肌群（主要是旋前圓肌）的快速離心—向心收縮，對肱骨內上髁的附著點構成高週期性應力
-      <sup><a href="#ref8" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>。
-      此外，腕關節在接觸球時同時受到尺偏與旋前合力，是 TFCC 與 ECU 腱鞘損傷的主要機制。
-    </p>
-    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-      值得注意的是，側旋發球在戰術上常作為第二發球（Second Serve）大量使用，若在訓練中重複量過高，累積負荷可能超過平擊第一發球。研究顯示，職業球員每場比賽平均使用第二發球超過 <strong style="color: #ffffff;">50 球</strong>，側旋為主要球種，肘内侧疼痛盛行率可達 17%
-      <sup><a href="#ref12" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>。
-    </p>
-  </div>
-
-  <div style="margin-bottom: 2.5rem;">
-    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
-      5-3 上旋發球 — 肩後方與腰椎的隱患
-    </h3>
-    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-      上旋發球的揮拍路徑為由下往上的刷球動作，肩關節在加速中期達到高度屈曲，此姿勢使肩峰後方結構（後關節囊、棘下肌後部）承受較一般平擊更大的撞擊應力，稱為「後方夾擠症候群（Posterior Internal Impingement）」
-      <sup><a href="#ref6" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>。
-    </p>
-    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-      在脊椎方面，上旋發球需要更大的軀幹後傾以確保擊球點在最高位，反覆的腰椎側彎合併旋轉動作，是腰椎小面關節退化的加速因素之一。Abrams 等人發現，在大量採用旋轉系發球的職業球員中，腰椎退化性變化出現的平均年齡比一般人提早約 <strong style="color: #ffffff;">8 年</strong>
-      <sup><a href="#ref10" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>。
-    </p>
-  </div>
-
-  <div style="margin-bottom: 2.5rem;">
-    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
-      5-4 Kick 發球 — 脊椎的最大挑戰
-    </h3>
-    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-      Kick（又稱 American Twist）發球要求球員在達到最高打擊點的瞬間，腰椎同時完成 <strong style="color: #ffffff;">最大過伸（Hyperextension）、側彎（Lateral Flexion）與旋轉（Rotation）</strong> 三軸複合動作，這種「三軸複合極限負荷」被骨科學者認為是最容易造成青少年椎弓峽部疲勞性骨折（Spondylolysis）的發球技術
-      <sup><a href="#ref13" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>。
-    </p>
-    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-      除腰椎外，Kick 發球的不對稱旋轉動作也使非主力肩（左肩，右手球員）承受異常的拉伸應力，研究發現 Kick 專項訓練者非主力肩的肌力不對稱性更為明顯
-      <sup><a href="#ref14" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>。
-    </p>
-
-    <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
-      <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
-        <strong>⚠️ 青少年禁忌！Kick 發球的年齡限制建議</strong><br><br>多數運動醫學專家建議 <strong>16 歲以下</strong>球員不宜大量練習 Kick 發球，因為青少年椎弓峽部尚未完全骨化，反覆極度過伸導致應力性骨折的風險遠高於成人。建議先以上旋發球建立身體控制能力，再逐步引入 Kick 技術訓練。<sup><a href="#ref13" target="_blank" rel="noopener noreferrer" style="color: #9a3412; text-decoration: underline;">[13]</a></sup>
-      </p>
-    </div>
-  </div>
-</section>
-
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    六、傷害預防策略
-  </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    運動醫學的共識是：<strong>傷害預防遠優於傷後治療</strong>。以下預防策略有助於系統性降低發球傷害風險。
-  </p>
-
-  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">外旋肌強化：</strong>針對棘下肌與小圓肌的彈力帶訓練，維持 ER/IR 肌力比值 ≥ 0.7</li>
-    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">肩關節囊伸展：</strong>Sleeper Stretch 後關節囊伸展，改善內旋柔軟度不足（GIRD）</li>
-    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">核心穩定訓練：</strong>強化脊椎多裂肌與腹橫肌，減少動力鏈能量洩漏</li>
-    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">訓練量監控：</strong>每週發球數量漸進增加不超過 10%，避免過度使用傷害</li>
-    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">動作分析：</strong>利用高速攝影或 3D 動作捕捉識別技術缺陷與代償動作</li>
-    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">定期篩檢：</strong>賽季前進行肩袖肌力、關節活動度及脊椎評估</li>
-  </ul>
-
-  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">✅ 臨床建議：使用 ITF 推薦的發球量指引</h4>
-    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
-      國際網球總會（ITF）建議青少年球員每週發球訓練量：12–14 歲每週不超過 800 球、15–16 歲不超過 1,200 球，並建議每練習 30 分鐘安排充分休息，以降低慢性過度使用傷害風險。<sup><a href="#ref15" target="_blank" rel="noopener noreferrer" style="color: #0e7490; text-decoration: underline;">[15]</a></sup>
-    </p>
-  </div>
-</section>
-
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-
 <section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
   <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
     <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
-      <span style="margin-right: 8px;">🏆</span> 七、常見問題解答（FAQ）
+      <span style="margin-right: 8px;">🏆</span> 五、FAQ 常見問題
     </h2>
   </div>
   <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
     
     <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q1. 我的肩膀在發球後酸痛，需要立即停止打球嗎？
+      Q1. 打籃球時膝蓋「喀」一聲，代表韌帶斷了嗎？
     </h3>
     <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      肩膀發球後輕度肌肉疲勞感屬於正常現象，但若出現以下警示症狀，應立即停止練習並就醫：疼痛程度超過 4/10（0-10 分）、夜間靜息痛、手臂向上舉動受限、或感覺手臂無力無法維持球拍。大多數早期過度使用傷害在早期介入時預後良好，拖延就醫則可能發展為需要手術的全層撕裂。
+      「喀」聲（pop）確實是 ACL 撕裂的典型症狀之一，受傷者常形容聽到或感覺到膝蓋「啪」地一聲，隨後出現膝蓋劇痛、腫脹與無法承重。然而，並非所有的膝蓋聲響都代表嚴重傷害——關節內氣泡破裂（俗稱「彈指」）或膕繩肌腱摩擦也會發出聲音。若聲響伴隨立即腫脹、無法承重或明顯不穩定感，應盡速就醫並安排 MRI 確認診斷。
     </p>
 
     <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q2. 哪種發球對初學者最安全？
+      Q2. 膝蓋受傷後還能繼續打球嗎？
     </h3>
     <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      建議初學者從<strong>側旋發球</strong>入門，其動作幅度相對較小、技術難度低，且對腰椎的負擔是四種球路中最低的。平擊發球雖然概念簡單，但追求高速時對肩關節的衝擊較大。Kick 發球應在具備良好核心穩定性與教練指導後才考慮學習。
+      這取決於傷害的嚴重程度與類型。輕度膝蓋疼痛（無腫脹、功能無明顯受限）可能在充分休息後繼續運動，但若有明顯腫脹、膝蓋感覺「軟掉」或不穩定、無法正常承重，則應立即停止運動並就醫評估。強忍疼痛繼續打球往往導致傷害惡化，甚至將輕度傷害變成需要手術的嚴重傷害。
     </p>
 
     <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q3. 上旋發球真的比平擊安全嗎？
+      Q3. 戴護膝能有效預防膝蓋受傷嗎？
     </h3>
     <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      在肩關節「前方」傷害（如 SLAP、前關節囊鬆弛）方面，上旋發球確實因球速較低而降低某些風險。但上旋發球對「後方肩關節」（後方夾擠症候群）以及腰椎（後仰弧度）的負擔並不亞於平擊，特別是大量採用上旋作為第二發球時。沒有任何一種球路在技術不正確或訓練量過大的情況下是「絕對安全」的。
+      護膝的效果因類型而異。預防型護膝（如簡易髕骨環）能提升本體感覺並穩定髕骨，對髕股關節疼痛有一定幫助；功能型護膝對已有 ACL 損傷史者能增加主觀穩定感。然而，護膝無法取代肌力訓練與正確動作模式——對於完整的韌帶，最好的保護仍是強壯的周邊肌群。過度依賴護膝而忽視肌力訓練反而有害。
     </p>
 
     <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q4. 網球肩袖傷害一定要手術嗎？
+      Q4. 髕骨肌腱炎需要休息多久才能恢復？
     </h3>
     <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      不一定。部分厚度撕裂（Partial Thickness Tear）與大多數肩袖肌腱病變（Tendinopathy）均可透過保守治療獲得良好恢復，包括物理治療、超音波導引注射（如 PRP 或類固醇）及動作訓練。全層撕裂則需根據撕裂大小、患者年齡及功能需求決定是否手術。建議由骨科或運動醫學專科醫師進行超音波或 MRI 評估後制定個別化治療計畫。
+      急性發作期通常需要 2 至 6 週的相對休息（減少跳躍與高衝擊動作，但並非完全不動）。慢性髕骨肌腱病變若處理不當，復原可能拖延至數月甚至一年以上。關鍵在於：不要等到完全不痛才開始治療性訓練，適度的離心負重訓練（如斜板單腿深蹲）已被研究證實能促進肌腱重塑，效果優於單純休息。
     </p>
+  </div>
+</section>
 
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q5. 有椎弓解離（Spondylolysis）可以繼續打網球嗎？
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    📢 六、常見三大迷思解析
+  </h2>
+  
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      1. 迷思一：「年輕就不怕傷膝蓋」
     </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      急性期（MRI 顯示骨髓水腫）應立即停止發球訓練，配合護腰支撐治療 3–6 個月。慢性穩定期的椎弓解離在骨科醫師評估許可後，可逐步恢復網球活動，但 Kick 發球與大量旋轉系發球應謹慎評估，並持續進行核心強化。切勿在未完成診斷評估前帶傷繼續練習。
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">事實：</strong>青少年籃球員的 ACL 傷害發生率近年持續上升，且骨骼發育未完全更可能出現奧斯古德氏病等特有問題。年輕不代表免疫，正確的動作訓練應從青少年時期就建立。
     </p>
+  </div>
 
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      2. 迷思二：「跑步才會傷膝蓋，打球沒關係」
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">事實：</strong>籃球對膝關節的衝擊力遠高於一般跑步，因其包含更多爆發性跳躍與急速變向。業餘籃球員因缺乏系統訓練，傷害風險甚至可能高於有系統訓練的跑者。
+    </p>
+  </div>
+
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      3. 迷思三：「手術後就能恢復到傷前水準」
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">事實：</strong>ACL 重建術後的復原是一段漫長而艱難的旅程。研究顯示，即便完成標準復健，重返運動後 2 年內再次受傷的機率高達 15 至 25%。術後充分的神經肌肉訓練與心理準備同樣不可或缺。
+    </p>
   </div>
 </section>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與呼籲行動</h2>
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
   
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
-    網球發球是一門技術、力量與時機三者完美結合的藝術，但也是對人體骨骼肌肉系統要求最高的運動動作之一。平擊、側旋、上旋與 Kick 發球各有其獨特的生物力學特性，對肩、肘、腕、脊椎的影響截然不同，不存在「萬能且零風險」的球路。
+    籃球帶來的運動樂趣無可替代，但膝蓋傷害一旦發生，往往需要付出數倍的代價來恢復。理解籃球動作對膝關節的特殊挑戰、認識常見傷害類型與受傷機轉，並落實預防策略——這才是讓你能長期享受籃球的根本。
   </p>
   
   <p style="color: #475569; font-size: 1.05rem;">
-    預防勝於治療：在追求更快的球速與更多變的旋轉之前，請先建立紮實的核心穩定性、均衡的肌力訓練計畫，以及科學合理的訓練量監控機制。一旦出現持續性關節疼痛、活動受限或夜間靜息痛，請盡早就醫，避免小傷演變成需要手術的重大傷害。
+    預防的核心不是「不打球」，而是<strong>聰明地打球</strong>：暖身不偷懶、動作有意識、肌力持續練、疼痛要重視。任何持續超過 1 週的膝蓋疼痛，都值得尋求專業骨科或運動醫學科醫師評估。
+  </p>
+
+  <p style="color: #475569; font-size: 1.05rem;">
+    如果你已有膝蓋不適的症狀，或希望在正式參與訓練前先評估膝關節狀況，強烈建議預約專業的骨科或復健科門診，及早介入，把握治療與預防的黃金時期。
   </p>
 
   <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
     <p style="margin-bottom: 16px; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
-      若您有發球相關的關節疼痛或運動傷害疑慮，<strong style="color: #1e293b;">趕快預約林醫師的門診評估，林醫師打網球打了十多年，深知網球運動傷害的治療及正確動作，</strong>一個正確的動作分析，可能為你節省好幾個月的復健時間。
+      若您有膝蓋疼痛或運動傷害相關疑慮，<strong style="color: #1e293b;">趕快預約林醫師的門診評估，林醫師本身熱愛籃球並組織診所球隊，深知籃球運動傷害的治療及正確動作，</strong>一個正確的動作分析，可能為你節省好幾個月的復健時間。
     </p>
     <a href="/booking" 
        target="_blank" 
        rel="noopener noreferrer" 
        style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
-      預約打網球的林醫師評估
+      預約熱愛籃球的林醫師評估
     </a>
   </div>
 </div>
 
-  `,
-  referencesHtml: `
 <h2>📚 參考文獻 (References)</h2>
-  <div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
-    <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
-      <li style="margin-bottom: 0.8rem;">
-        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-          Abrams GD, Safran MR. (2010). Diagnosis and management of superior labrum anterior posterior lesions in overhead athletes. British Journal of Sports Medicine, 44(5), 311–318. <a href="https://doi.org/10.1136/bjsm.2009.070755" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsm.2009.070755</a>
-        </span>
-      </li>
-      <li style="margin-bottom: 0.8rem;">
-        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-          Elliott B, Fleisig G, Nicholls R, Escamilia R. (2003). Technique effects on upper limb loading in the tennis serve. Journal of Science and Medicine in Sport, 6(1), 76–87. <a href="https://doi.org/10.1016/S1440-2440(03)80011-7" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1016/S1440-2440(03)80011-7</a>
-        </span>
-      </li>
-      <li style="margin-bottom: 0.8rem;">
-        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-          Kibler WB, Safran M. (2005). Tennis injuries. Medicine and Sport Science, 48, 120–137. <a href="https://doi.org/10.1159/000084288" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1159/000084288</a>
-        </span>
-      </li>
-      <li style="margin-bottom: 0.8rem;">
-        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-          Kibler WB, Chandler TJ. (2003). Racquet sports. In: Fu FH, Stone DA (eds). Sports Injuries: Mechanisms, Prevention, Treatment, 2nd ed. Lippincott Williams & Wilkins, 883–900.
-        </span>
-      </li>
-      <li style="margin-bottom: 0.8rem;">
-        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-          Fleisig GS, Nicholls R, Elliott B, Escamia R. (2003). Kinematics used by world class tennis players to produce high-velocity serves. Sports Biomechanics, 2(1), 51–71. <a href="https://doi.org/10.1080/14763140308522807" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1080/14763140308522807</a>
-        </span>
-      </li>
-      <li style="margin-bottom: 0.8rem;">
-        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-          Walch G, Liotard JP, Boileau P, Nöel E. (1991). Postero-superior glenoid impingement—another impingement of the shoulder. Journal of Radiology, 72(1), 47–50. PMID: 2023498.
-        </span>
-      </li>
-      <li style="margin-bottom: 0.8rem;">
-        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-          Blevins FT. (1997). Rotator cuff pathology in athletes. Sports Medicine, 24(3), 205–220. <a href="https://doi.org/10.2165/00007256-199724030-00006" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.2165/00007256-199724030-00006</a>
-        </span>
-      </li>
-      <li style="margin-bottom: 0.8rem;">
-        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-          Winge S, Jørgensen U, Nielsen AL. (1989). Epidemiology of injuries in Danish championship tennis. International Journal of Sports Medicine, 10(5), 368–371. <a href="https://doi.org/10.1055/s-2007-1024924" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1055/s-2007-1024924</a>
-        </span>
-      </li>
-      <li style="margin-bottom: 0.8rem;">
-        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-          Perkins RH, Davis D. (2006). Musculoskeletal injuries in tennis. Physical Medicine and Rehabilitation Clinics of North America, 17(3), 609–631. <a href="https://doi.org/10.1016/j.pmr.2006.05.005" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1016/j.pmr.2006.05.005</a>
-        </span>
-      </li>
-      <li style="margin-bottom: 0.8rem;">
-        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-          Abrams GD, Renstrom PA, Safran MR. (2012). Epidemiology of musculoskeletal injury in the tennis player. British Journal of Sports Medicine, 46(7), 492–498. <a href="https://doi.org/10.1136/bjsports-2012-091164" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsports-2012-091164</a>
-        </span>
-      </li>
-      <li style="margin-bottom: 0.8rem;">
-        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-          Ellenbecker TS, Roetert EP. (2004). An isokinetic profile of trunk rotation strength in elite tennis players. Medicine & Science in Sports & Exercise, 36(11), 1959–1963. <a href="https://doi.org/10.1249/01.MSS.0000145452.75363.76" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1249/01.MSS.0000145452.75363.76</a>
-        </span>
-      </li>
-      <li style="margin-bottom: 0.8rem;">
-        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-          Pluim BM, Staal JB, Windler GE, Jayanthi N. (2006). Tennis injuries: occurrence, aetiology, and prevention. British Journal of Sports Medicine, 40(5), 415–423. <a href="https://doi.org/10.1136/bjsm.2005.023549" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsm.2005.023549</a>
-        </span>
-      </li>
-      <li style="margin-bottom: 0.8rem;">
-        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-          Hutchinson MR, Laprade RF, Burnett QM, Moss R, Terpstra J. (1995). Injury surveillance at the USTA Boys' Tennis Championships: a 6-yr study. Medicine & Science in Sports & Exercise, 27(6), 826–830. PMID: 7658939.
-        </span>
-      </li>
-      <li style="margin-bottom: 0.8rem;">
-        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-          Reid M, Elliott B, Alderson J. (2007). Shoulder joint kinetics and kinematics of the slice and kick tennis serves. British Journal of Sports Medicine, 41(11), 798–804. <a href="https://doi.org/10.1136/bjsm.2007.036848" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsm.2007.036848</a>
-        </span>
-      </li>
-      <li style="margin-bottom: 0.8rem;">
-        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-          International Tennis Federation (ITF). (2020). Serve Load Monitoring Guidelines for Junior Players. ITF Technical Department. <a href="https://www.itftennis.com" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">www.itftennis.com</a>
-        </span>
-      </li>
-      <li style="margin-bottom: 0.8rem;">
-        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-          Silva RT, Gracitelli GC, Saccol MF, Laurino CF, Silva AC, Braga-Silva J. (2006). Shoulder strength profile in elite junior tennis players: horizontal adduction and internal rotation deficit. British Journal of Sports Medicine, 40(6), 513–517. <a href="https://doi.org/10.1136/bjsm.2005.023408" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsm.2005.023408</a>
-        </span>
-      </li>
-      <li style="margin-bottom: 0.8rem;">
-        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-          Gallo RA, Sciascia A, Obermeier M, Bizzozero E, Apker K, Safran MR. (2012). Relationship between shoulder range of motion and trunk rotation in unilateral overhead athletes. Journal of Shoulder and Elbow Surgery, 21(10), 1388–1394. <a href="https://doi.org/10.1016/j.jse.2011.08.040" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1016/j.jse.2011.08.040</a>
-        </span>
-      </li>
-    </ol>
-  </div>
-</article>
-</main>
-<footer class="border-t border-zinc-800 text-gray-400 text-center py-8 text-sm mt-8" style="font-family: 'system-ui', sans-serif;">
-  <p>本文內容僅供醫學衛教參考，不構成診療建議。請諮詢您的主治醫師以獲得個人化的醫療建議。</p>
-  <p class="mt-2">© 2026 醫學知識編輯團隊</p>
-</footer>
-</div>
-  `
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Prodromos CC, Han Y, Rogowski J, Joyce B, Shi K. (2007). A meta-analysis of the incidence of anterior cruciate ligament tears as a function of gender, sport, and a knee injury–reduction regimen. <em>Arthroscopy</em>, 23(12), 1320–1325. <a href="https://doi.org/10.1016/j.arthro.2007.07.003" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1016/j.arthro.2007.07.003</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Meeuwisse WH, Sellmer R, Hagel BE. (2003). Rates and risks of injury during intercollegiate basketball. <em>Am J Sports Med</em>, 31(3), 379–385. <a href="https://doi.org/10.1177/03635465030310031301" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1177/03635465030310031301</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hewett TE, Myer GD, Ford KR. (2006). Anterior cruciate ligament injuries in female athletes: Part 1, mechanisms and risk factors. <em>Am J Sports Med</em>, 34(2), 299–311. <a href="https://doi.org/10.1177/0363546505284183" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1177/0363546505284183</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lian ØB, Engebretsen L, Bahr R. (2005). Prevalence of jumper's knee among elite athletes from different sports. <em>Am J Sports Med</em>, 33(4), 561–567. <a href="https://doi.org/10.1177/0363546504270454" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1177/0363546504270454</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Silvers HJ, Mandelbaum BR. (2007). Prevention of anterior cruciate ligament injury in the female athlete. <em>Br J Sports Med</em>, 41(Suppl 1), i52–i59. <a href="https://doi.org/10.1136/bjsm.2007.037200" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsm.2007.037200</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        van der Worp H, van Ark M, Roerink S, Pepping GJ, van den Akker-Scheek I, Zwerver J. (2011). Risk factors for patellar tendinopathy: a systematic review of the literature. <em>Br J Sports Med</em>, 45(5), 446–452. <a href="https://doi.org/10.1136/bjsm.2011.084079" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsm.2011.084079</a>
+      </span>
+    </li>
+  </ol>
+</div>`
 },
 
 {
