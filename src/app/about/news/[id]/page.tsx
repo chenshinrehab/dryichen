@@ -75,6 +75,18 @@ export default function NewsDetailPage({ params }: PageProps) {
   // 定義重點強化的醫療專業內容類別
   const isMedicalContent = ['衛教文章', '醫學新知', '診間隨筆'].includes(post.category);
 
+  // ✨ 新增：定義不同類別對應的 Tailwind 顏色 class
+const categoryStyles: Record<string, string> = {
+  '門診公告': 'bg-pink-500/10 text-pink-400 border-pink-500/30',
+  '診所活動': 'bg-pink-500/10 text-pink-400 border-pink-500/30',
+  '診間隨筆': 'bg-amber-500/10 text-amber-400 border-amber-500/30', // ✨ 設定為橘/琥珀色
+  '衛教文章': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30',
+  '醫學新知': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30',
+};
+
+// ✨ 設定預設顏色（如果分類不在名單內）
+const activeCategoryStyle = categoryStyles[post.category] || 'bg-slate-500/10 text-slate-400 border-slate-500/30';
+
  // 2. Schema (根據類別切換結構，針對指定主題深度強化)
  const jsonLdData = {
   '@context': 'https://schema.org',
@@ -384,14 +396,10 @@ export default function NewsDetailPage({ params }: PageProps) {
       
     <div className="flex flex-wrap items-center justify-between gap-3 w-full">
       
-      <div className="flex flex-wrap items-center gap-3">
-        <span className={`px-3 py-1 rounded-full text-sm font-bold border ${
-          post.category === '門診公告' 
-          ? 'bg-pink-500/10 text-pink-400 border-pink-500/30' 
-          : 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30'
-        }`}>
-          {post.category}
-        </span>
+<div className="flex flex-wrap items-center gap-3">
+  <span className={`px-3 py-1 rounded-full text-sm font-bold border ${activeCategoryStyle}`}>
+    {post.category}
+  </span>
         
         <span className="text-slate-400 text-sm flex items-center">
           撰文者：

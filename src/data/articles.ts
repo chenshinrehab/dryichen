@@ -2,6 +2,691 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
 
+
+
+{
+id: 'chest-muscle-training-guide',
+  title: '胸肌訓練2026完全指南：最有效動作、策略全解析',
+  lastModified: '2026-04-19',
+  category: '衛教文章',
+  date: '2026-04-19',
+  summary: '深度剖析槓鈴臥推、上斜啞鈴推舉、纜繩夾胸等胸肌訓練動作的科學依據，解析最佳訓練組數、組間休息時間與漸進超負荷策略。實證研究揭露每週幾次訓練最有效、2–3分鐘休息為何優於短休息，以及為什麼漸進增重才是練出大胸肌的核心關鍵。',
+  coverImage: '/images/news/article/chest-training-guide.webp',
+  seoTitle: '重訓練大胸肌完全指南：最有效動作、組數、休息與漸進策略全解析',
+  seoDescription: '深度剖析訓練槓鈴臥推、上斜啞鈴推舉、纜繩夾胸等胸肌訓練動作的科學依據，解析最佳訓練組數、組間休息時間與漸進超負荷策略。實證研究揭露每週幾次訓練最有效、2–3分鐘休息為何優於短休息，以及為什麼漸進增重才是練出大胸肌的核心關鍵。',
+  keywords: [
+    '胸肌訓練',
+    '臥推',
+    '上斜啞鈴推舉',
+    '纜繩夾胸',
+    '肌肥大',
+    '漸進超負荷',
+    '訓練組數',
+    '組間休息',
+    '胸大肌',
+    '重訓課表',
+    '胸肌動作'
+  ],
+    contentHtml: `
+ 
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    胸大肌（Pectoralis Major）是上半身最大的推力肌群，由鎖骨頭（上胸）與胸骨肋骨頭（中下胸）共同構成。想要有效發展胸肌，動作選擇、訓練組數、組間休息與漸進超負荷缺一不可。實證研究指出，槓鈴臥推、上斜啞鈴推舉與纜繩夾胸是活化胸大肌效益最高的三類動作；每週總訓練組數建議落在 10–20 組之間；組間休息以 2–3 分鐘最有利於肌肥大；而重量應採「漸進增重」策略，搭配每週 2 次頻率刺激肌肉蛋白合成，方能最大化胸肌成長。本文將以實證研究為基礎，系統性解析各訓練變項的最佳化策略。
+  </p>
+</div>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、胸大肌的解剖結構：為什麼不同動作刺激不同部位？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    在選擇訓練動作之前，必須先了解胸大肌的解剖特性。胸大肌分為兩個主要肌束：<strong style="color: #2dd4bf;">鎖骨頭（Clavicular Head，俗稱「上胸」）</strong>與<strong style="color: #2dd4bf;">胸骨肋骨頭（Sternocostal Head，俗稱「中下胸」）</strong>。兩個肌束雖然最終匯聚於肱骨前側，但它們對不同訓練角度的反應截然不同。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    根據 2020 年發表於 PMC 的 EMG 研究，平臥推舉產生最高的胸骨肋骨頭（中胸）肌電活動，而將椅背傾斜至約 44 度的上斜推舉則最能活化鎖骨頭（上胸）。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7449336/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    另一篇 2020 年發表的系統性回顧與統合分析進一步確認，下斜臥推對胸大肌下緣的活化最為顯著，而不同傾斜角度對上胸的刺激具有明確的角度依賴性。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7579505/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    這些結構性差異，是設計胸肌訓練課表時必須納入考量的科學基礎。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、最有效的胸肌訓練動作：實證排名與操作要點
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">① 槓鈴平臥推舉（Barbell Flat Bench Press）——基礎王者</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    平臥推舉是胸肌訓練中負重能力最強、整體肌電活動最高的複合動作。2020 年一項 EMG 比較研究顯示，槓鈴臥推對胸大肌、前三角肌與三頭肌的整體活化均顯著高於啞鈴飛鳥（差異幅度達 8–81%），是訓練中下胸最具效率的首選動作。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7675616/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    此外，握距的選擇也影響肌肉參與程度。2023 年一篇系統性回顧指出，<strong style="color: #ffffff;">寬握距（約肩寬的 1.5–2 倍）</strong>能增加胸大肌的參與比例，但超過雙肩距 200% 的握距則會顯著提升肩關節受傷風險，應予避免。
+    <sup><a href="https://www.mdpi.com/2076-3417/13/8/5203" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">操作要點：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">握距略寬於肩膀（約 1.5 倍肩寬），手腕保持中立</li>
+    <li style="margin-bottom: 0.5rem;">槓鈴下放至乳頭連線位置，確保完整動作幅度</li>
+    <li style="margin-bottom: 0.5rem;">肩胛骨收緊下壓，避免聳肩保護肩關節</li>
+    <li style="margin-bottom: 0.5rem;">離心（下放）階段控制約 2–3 秒，不要讓重力主導動作</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">② 上斜啞鈴推舉（Incline Dumbbell Press）——上胸專項</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    許多人忽略上胸訓練，導致整體胸肌輪廓缺乏立體感。上斜推舉是填補這個視覺死角的關鍵動作。研究顯示，傾斜角度在 30–45 度時，鎖骨頭（上胸）的 EMG 活動顯著高於平板與下斜角度，其中以 44 度角的效果最為突出。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7449336/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    一項比較 20°、32°、43° 三種傾斜角度的研究同樣確認，較大傾斜角在上胸活化上具有優勢。
+    <sup><a href="https://eu-opensci.org/index.php/sport/article/view/9255" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    選擇<strong style="color: #ffffff;">啞鈴而非槓鈴</strong>進行上斜推舉的優勢在於：啞鈴允許更大的動作幅度，可以讓胸大肌在伸展端承受更大張力，這是近年研究強調的肌肥大重要機制之一。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10801605/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">操作要點：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">椅背傾斜設定於 30–45 度，避免超過 60 度（過高轉為肩推）</li>
+    <li style="margin-bottom: 0.5rem;">啞鈴下放至胸口兩側，讓胸肌充分伸展</li>
+    <li style="margin-bottom: 0.5rem;">上推時想像「用胸夾合啞鈴」而非只是推起重量</li>
+    <li style="margin-bottom: 0.5rem;">避免雙臂完全鎖死，保持肌肉持續張力</li>
+  </ul>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 訓練獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      許多初學者將上斜角度設定在 60–70 度，這個角度已大幅轉為「肩推」的動作模式，胸大肌參與比例反而下降，前三角肌才是主要受力部位。真正針對上胸的訓練角度應嚴格控制在 30–45 度之間。
+    </p>
+  </div>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">③ 纜繩夾胸 / 飛鳥（Cable Fly / Pec Deck）——全程張力之王</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    相較於槓鈴與啞鈴推舉，纜繩夾胸的最大優勢在於<strong style="color: #ffffff;">全動作範圍內均能維持恆定張力</strong>——在動作的頂峰（胸肌完全收縮）時，纜繩仍能提供有效阻力，而啞鈴飛鳥在頂峰時阻力幾乎歸零。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    2024 年一篇敘事型回顧強調，在「肌肉被拉長的位置承受更大張力」是目前最有力的肌肥大刺激機制之一。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10801605/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    從這個角度來看，低位纜繩夾胸（從下方拉起）能讓胸大肌在最伸展的位置承受最大張力，是目前科學上非常推薦的輔助動作。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">操作要點：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">纜繩高度設定：低位夾胸（45 度斜上方拉）以訓練上胸；高位夾胸（45 度斜下方拉）訓練中下胸</li>
+    <li style="margin-bottom: 0.5rem;">手臂微彎（約 10–15 度），避免肘關節過度伸直造成傷害</li>
+    <li style="margin-bottom: 0.5rem;">動作頂峰（雙手交叉合攏）時刻意停頓 1 秒，感受胸肌收縮</li>
+    <li style="margin-bottom: 0.5rem;">重量設定以能完整控制動作為準，避免用肩膀代償</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">④ 雙槓撐體（Dips）——下胸與整體厚度</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    雙槓撐體是訓練下胸與增加整體胸肌厚度的高效複合動作。身體微微前傾（約 30 度）可將重心轉移至胸大肌，減少三頭肌的主導比例。對進階訓練者而言，可在腰間加掛重量進行負重撐體，持續提供漸進超負荷刺激。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">操作要點：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">身體前傾約 20–30 度，以強調胸肌參與</li>
+    <li style="margin-bottom: 0.5rem;">下降至上臂平行地面或略低，確保下胸充分伸展</li>
+    <li style="margin-bottom: 0.5rem;">肩關節不穩定者需謹慎，可先以輔助機器練習</li>
+  </ul>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、最佳訓練組數：每週幾組最有效？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    訓練組數（Volume）是影響肌肥大最關鍵的單一訓練變項。2023 年發表於《英國運動醫學雜誌》（BJSM）、涵蓋 119 項研究（共 3,364 名受試者）的系統性回顧與貝葉斯網絡統合分析顯示，所有類型的阻力訓練處方對肌肥大的效益均優於不訓練，且<strong style="color: #ffffff;">多組數訓練對肌肥大的效益優於單組數訓練</strong>。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/37414459/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    Schoenfeld 等人的研究建議，想要顯著促進肌肥大，每週每個肌群的訓練組數甜蜜點約在 <strong style="color: #ffffff;">10 組以上</strong>，且組數越多增益越大，但超過 20–30 組時邊際效益開始遞減，甚至出現過度訓練風險。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9302196/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+ 
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 700px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table { font-size: 14px; }
+    }
+  </style>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>訓練程度</th>
+          <th>建議每週胸肌總組數</th>
+          <th>每次訓練組數</th>
+          <th>重點說明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>初學者（&lt;6個月）</td>
+          <td>10–12 組</td>
+          <td>5–6 組 × 2次/週</td>
+          <td>神經適應期，不需高組數</td>
+        </tr>
+        <tr>
+          <td>中級訓練者（6月–2年）</td>
+          <td>12–16 組</td>
+          <td>6–8 組 × 2次/週</td>
+          <td>逐步增加至有效劑量</td>
+        </tr>
+        <tr>
+          <td>進階訓練者（&gt;2年）</td>
+          <td>16–20 組</td>
+          <td>8–10 組 × 2次/週</td>
+          <td>需週期化安排，避免過度疲勞</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-top: 1.5rem;">
+    每個訓練組的<strong style="color: #ffffff;">重複次數</strong>方面，以肌肥大為目標時，每組建議做 <strong style="color: #ffffff;">6–20 下</strong>，其中 8–12 下因能同時兼顧重量強度與代謝壓力，是最常被文獻推薦的肌肥大甜蜜點。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12965823/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+    值得注意的是，只要訓練強度夠高（接近力竭），低次數重訓（如 5 下）與高次數輕重量訓練（如 30 下）在肌肥大效益上的差異並不顯著——組數量才是關鍵。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、組間休息：2–3 分鐘才是肌肥大的黃金標準
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    長期以來，健身界流傳「休息越短、代謝壓力越大、肌肉成長越好」的說法，但現代研究已推翻這個觀念。Schoenfeld 等人 2016 年發表於《力量與體能研究期刊》（JSCR）的隨機對照試驗，將 21 名有訓練經驗的男性分為休息 1 分鐘與休息 3 分鐘兩組，進行 8 週相同訓練計畫。結果顯示：<strong style="color: #ffffff;">休息 3 分鐘組在肌肉厚度與力量增加上均顯著優於 1 分鐘組</strong>，因為充足的休息讓訓練者能在下一組保持更高的訓練重量與質量。
+    <sup><a href="https://journals.lww.com/nsca-jscr/fulltext/2016/07000/longer_interset_rest_periods_enhance_muscle.3.aspx" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    2024 年一篇發表於《Frontiers in Sports and Active Living》、採用貝葉斯統合分析方法的大型系統性回顧進一步確認，組間休息不足會顯著削減肌肉蛋白合成的胞內信號傳遞，而短休息組（60 秒以內）所誘發的肌肥大反應一致性地低於長休息組（2–3 分鐘以上）。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11349676/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 訓練獨特見解 #2</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      如果你在組間覺得「等待 3 分鐘太無聊」，可以利用這段時間進行拮抗肌群的輕度伸展（如胸推之後做後肩被動伸展），或加入核心訓練的靜態動作（如棒式）。這種「超級組」安排既能提升訓練效率，也不干擾主要肌群的恢復。但切忌在胸肌組間做其他推系動作（如肩推、三頭下壓），因為會累積前三角肌與三頭肌疲勞，影響後續臥推的表現。
+    </p>
+  </div>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-top: 1rem;">
+    實用的組間休息建議如下：複合動作（如臥推、上斜推舉）建議休息 <strong style="color: #ffffff;">2–3 分鐘</strong>；孤立動作（如纜繩夾胸、飛鳥）因代謝壓力相對較小，可縮短至 <strong style="color: #ffffff;">90 秒–2 分鐘</strong>。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、重量如何調整？漸進增重還是漸進減重？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是許多訓練者最常有的疑問。答案很明確：<strong style="color: #2dd4bf;">以肌肥大為目標，應採用「漸進超負荷（Progressive Overload）」策略——即逐漸增加重量。</strong>漸進減重（如遞降組法 Drop Set）是一種輔助技巧，而非主要策略。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">漸進增重：肌肥大的核心驅動力</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    漸進超負荷原則要求持續給肌肉更高的刺激，讓身體不斷適應並生長。美國運動醫學會（ACSM）2024 年發表的系統性回顧確認，漸進增重訓練相較於等量不漸進訓練能顯著提升肌肉質量與強度。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12965823/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+    實際操作上，建議遵循「2-for-2 原則」：<strong style="color: #ffffff;">當你在某個重量下，連續 2 次訓練都能在最後一組多完成 2 下以上，則下次訓練可以增加 2–5% 的重量。</strong>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">漸進超負荷的可行策略（依優先順序）：</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">增加重量：</strong>最直接的方式，例如臥推從 80kg 進步到 82.5kg</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">增加重複次數：</strong>在相同重量下，從 8 下進步到 10 下</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">增加組數：</strong>從每週 12 組增加到 14 組</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">增加訓練頻率：</strong>從每週練 1 次胸改為每週 2 次</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">縮短組間休息（謹慎使用）：</strong>以提升訓練密度，但不建議犧牲動作品質</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">遞降組（Drop Set）：輔助技巧，非主流策略</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    遞降組是指在某個重量做到接近力竭後，立即降低重量繼續做。這個方式能在短時間內增加訓練量（Volume），適合用在<strong style="color: #ffffff;">最後一個動作的最後一組</strong>，作為「燃盡式訓練」的補充，而非貫穿整個課表。若主要動作全程採用遞降組，會大幅累積疲勞、破壞後續組數的動作品質，長期下來反而不利於肌肥大。
+  </p>
+ 
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 常見錯誤：</strong><br><br>每次訓練都在相同重量做相同次數，月復一月沒有進步——這是「維持訓練」而非「增肌訓練」。你的身體會在適應後停止生長。若你的臥推重量三個月內沒有任何進步，應優先檢視：睡眠品質、蛋白質攝取是否達到每公斤體重 1.6–2.2 克，以及是否有確實記錄每次訓練數據。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、訓練頻率：胸肌幾天練一次最好？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    傳統的「胸肌日」（Chest Day）課表，每週只練一次胸肌、動輒 20 組的安排，在科學上已被更優化的頻率策略所取代。核心原因在於<strong style="color: #ffffff;">肌肉蛋白合成（MPS）的時間窗口限制</strong>。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    Schoenfeld 等人 2016 年的統合分析顯示，在相同的每週訓練總量下，每週訓練肌群 2 次的頻率，對肌肥大的效益顯著優於只練 1 次。原因是：<strong style="color: #ffffff;">有訓練經驗者的 MPS 在訓練後只會維持 24–48 小時</strong>，若每週只練一次，有 5 天處於非蛋白合成的窗口期。一週練 2 次能讓這個窗口期被最大化利用。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/27752983/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    2023 年另一篇系統性回顧也確認，將相同的週訓練量分散在更多訓練頻次中，可以達到相似甚至更優的肌肥大效果，因為每次訓練的疲勞量較低，動作品質更能維持。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/37414459/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+ 
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">實用課表建議：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">最低有效頻率：每週 2 次</strong>（例如週一推系日、週四推系日），兩次間隔至少 48 小時讓肌肉充分恢復</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">最佳化頻率：每週 2–3 次</strong>，每次 5–8 組，總計 10–20 組</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">每週 1 次並非無效</strong>，但需要在單次訓練中堆疊更高的訓練組數，訓練效率相對較低</li>
+  </ul>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 訓練獨特見解 #3</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      對於忙碌的上班族，「推／拉／腿」六日分化課表雖然每週各部位只練 1 次，但若配合「推系 A」（以平臥為主）與「推系 B」（以上斜為主）的雙週交替設計，實際上每 10–12 天就讓各角度胸肌接受到完整刺激，兼顧訓練效率與頻率。這是在有限訓練天數下最接近最佳化頻率的折衷方案。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、各訓練動作比較總表
+  </h2>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>動作</th>
+          <th>主要訓練部位</th>
+          <th>建議組數×次數</th>
+          <th>優先次序</th>
+          <th style="text-align: center; white-space: nowrap;">適合訓練程度</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>槓鈴平臥推舉</td>
+          <td>中胸、下胸為主</td>
+          <td>3–5 組 × 5–10 下</td>
+          <td>★★★★★ 首選</td>
+          <td style="text-align: center;">初學至進階</td>
+        </tr>
+        <tr>
+          <td>上斜啞鈴推舉</td>
+          <td>上胸為主</td>
+          <td>3–4 組 × 8–12 下</td>
+          <td>★★★★★ 首選</td>
+          <td style="text-align: center;">初學至進階</td>
+        </tr>
+        <tr>
+          <td>纜繩夾胸（低位）</td>
+          <td>上胸全程張力</td>
+          <td>3–4 組 × 12–15 下</td>
+          <td>★★★★ 推薦</td>
+          <td style="text-align: center;">中級至進階</td>
+        </tr>
+        <tr>
+          <td>雙槓撐體（前傾）</td>
+          <td>下胸、整體厚度</td>
+          <td>3–4 組 × 8–15 下</td>
+          <td>★★★★ 推薦</td>
+          <td style="text-align: center;">中級至進階</td>
+        </tr>
+        <tr>
+          <td>啞鈴飛鳥（平板）</td>
+          <td>中胸伸展感</td>
+          <td>2–3 組 × 12–15 下</td>
+          <td>★★★ 輔助</td>
+          <td style="text-align: center;">中級</td>
+        </tr>
+        <tr>
+          <td>胸推機（Chest Press）</td>
+          <td>整體胸肌</td>
+          <td>2–3 組 × 10–15 下</td>
+          <td>★★★ 輔助</td>
+          <td style="text-align: center;">初學至中級</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 八、常見三大迷思破解
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「只要多做伏地挺身就能練出大胸肌」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">對初學者有一定效果，但進入中進階階段後，伏地挺身的阻力（等於你的體重）是固定的，無法有效實現漸進超負荷。現有研究確認，在相同訓練量下，可以持續調整阻力的訓練方式（如啞鈴、槓鈴）才能最大化長期肌肥大效益。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12965823/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[9]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「下斜臥推能練出下胸分離線」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">下斜臥推確實對胸大肌下緣有較高的 EMG 活化，但「下胸分離線」的視覺效果主要取決於體脂率，而非特定動作。當體脂降至 12–15% 以下，胸肌輪廓自然清晰；若體脂偏高，無論做多少下斜訓練都難以呈現清楚的肌肉線條。<sup><a href="https://journals.lww.com/nsca-jscr/abstract/1997/08000/electromyographical_activity_of_the_pectoralis.6.aspx" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[13]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「重訓後肌肉痠痛（DOMS）越嚴重代表訓練越有效」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>這是錯誤的!</strong> 延遲性肌肉痠痛（DOMS）反映的是肌肉受到不熟悉刺激後的發炎反應，與肌肉生長的相關性並不高。事實上，訓練有素的人往往感受到的 DOMS 越來越少，但肌肉仍在成長。過度追求「痠感」的訓練方式，反而可能干擾後續訓練的恢復與表現。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9302196/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[8]</a></sup></span>
+        </div>
+      </li>
+ 
+    </ul>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：臥推時該讓槓鈴碰到胸部嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      是的，在動作控制正確的前提下，讓槓鈴輕觸胸部（而非彈起）能確保完整動作幅度，讓胸大肌在最伸展的位置承受張力，這與近年強調「長肌肉訓練優勢」的研究方向一致。但若有肩關節疼痛，可以在槓鈴距胸約 2–3 公分處停頓，並由物理治療師評估肩關節活動狀況。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：啞鈴和槓鈴哪個對胸肌比較好？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      各有優勢。槓鈴能承受更大重量、提供更高的整體肌電活化，且更容易漸進增重；啞鈴則能提供更大的動作幅度與各自獨立的關節運動軌跡，對肩關節負擔相對較小。最佳策略是<strong style="color: #f8fafc;">兩者都納入訓練計畫</strong>：以槓鈴平臥推舉為主力動作，以上斜啞鈴推舉補充上胸，再以纜繩夾胸做孤立訓練。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7675616/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：我的胸肌兩側不對稱，怎麼辦？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      輕微的胸肌不對稱非常普遍，多數人的慣用側肌力都較強。解決方法是在訓練中優先使用啞鈴動作（讓兩側各自承受阻力），並在非慣用側適度增加訓練量。若不對稱情況明顯或伴隨疼痛，需排除肩膀或旋轉肌群的問題，建議尋求醫療評估。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：胸肌訓練後要休息幾天才能再練？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      一般建議相同肌群訓練之間至少間隔 <strong style="color: #f8fafc;">48 小時</strong>，讓肌肉蛋白合成窗口期完整進行。以每週練 2 次胸為例，週一與週四是理想安排。若訓練強度極高（訓練至接近力竭、大重量），可延長至 72 小時。初學者在神經適應期可能需要更長的恢復時間。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：做臥推時肩膀會痛，是訓練方式的問題嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      臥推導致的肩痛常見原因包括：肩胛骨未確實穩定（未收緊下壓）、握距過寬（超過雙肩距 200%）、槓鈴下放角度不當（雙肘過度外展超過 90 度），以及旋轉肌群肌力不足。若持續有肩部疼痛，應暫停訓練並就醫評估，以排除肩袖撕裂或肩峰夾擠的問題，而非硬撐繼續訓練。
+    </p>
+ 
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    九、範本課表：如何將以上原則整合為實際訓練計畫
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">中級訓練者 胸肌訓練日A（以中下胸為主）</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">槓鈴平臥推舉：</strong>4 組 × 6–8 下（組間休息 3 分鐘），作為主力動作，漸進增重</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">上斜啞鈴推舉（30 度）：</strong>3 組 × 10–12 下（組間休息 2 分鐘），補充上胸</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">纜繩低位夾胸：</strong>3 組 × 12–15 下（組間休息 90 秒），孤立全程張力訓練</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">中級訓練者 胸肌訓練日B（以上胸與伸展端為主）</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">上斜槓鈴推舉（45 度）：</strong>4 組 × 8–10 下（組間休息 3 分鐘），上胸主力動作</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">雙槓撐體（前傾）：</strong>3 組 × 10–12 下（組間休息 2 分鐘），下胸與整體厚度</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">啞鈴飛鳥（平板，強調伸展端）：</strong>3 組 × 12–15 下（組間休息 90 秒），強調胸肌最伸展位置的張力</li>
+  </ul>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem;">
+    兩次訓練間隔至少 48 小時（例如週一與週四），讓肌肉充分恢復。每 2–4 週檢視一次訓練紀錄，若動作次數已達上限，下次訓練即可嘗試增加重量或組數。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+ 
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    練出大胸肌從來不是靠「感覺」，而是靠「策略」。槓鈴平臥推舉與上斜啞鈴推舉是最有科學根據的首選動作，每週 10–20 組的訓練量是肌肥大的有效劑量，2–3 分鐘的組間休息才能真正維持高品質訓練量，而漸進增重的策略才是讓胸肌持續成長的根本驅動力。
+  </p>
+ 
+  <p style="color: #475569; font-size: 1.05rem;">
+    無論你是剛開始健身的新手，還是已訓練多年卻停滯不前的進階者，最重要的行動是：<strong style="color: #1e293b;">記錄每次訓練的重量與次數，每 2–4 週評估一次進步，並根據數據調整訓練計畫</strong>。若你有肩膀或胸部訓練時的疼痛問題，或長期無法突破訓練瓶頸，歡迎尋求專業運動醫學評估，讓正確的動作分析與個人化建議，幫助你在最短時間內達到最大進步。
+  </p>
+ 
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的訓練比較表，檢視你目前課表中是否涵蓋了上胸、中下胸的動作，並記錄你下一次訓練的重量數據，作為漸進超負荷的起點。
+    </p>
+  </div>
+ 
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約運動醫學門診評估
+    </a>
+  </div>
+</div>
+ 
+<!-- ===== referencesHtml ===== -->
+ 
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Rodríguez-Ridao, D., Antequera-Vique, J.A., Martín-Fuentes, I., & Muyor, J.M. (2020). Effects of Horizontal and Incline Bench Press on Neuromuscular Adaptations in Untrained Young Men. <em>PMC7449336</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7449336/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7449336</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lauver, J.D., Cayot, T.E., & Scheuermann, B.W. (2020). Effect of Five Bench Inclinations on the Electromyographic Activity of the Pectoralis Major, Anterior Deltoid, and Triceps Brachii during the Bench Press Exercise. <em>PMC7579505</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7579505/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7579505</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Solstad, T.E., Andersen, V., Shaw, M., Vistnes, M., & Saeterbakken, A.H. (2020). A Comparison of Muscle Activation between Barbell Bench Press and Dumbbell Flyes in Resistance-Trained Males. <em>PMC7675616</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7675616/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7675616</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        García-Ramos, A., et al. (2023). Electromyographic Activity of the Pectoralis Major Muscle during Traditional Bench Press and Other Variants of Pectoral Exercises: A Systematic Review and Meta-Analysis. <em>Applied Sciences, 13(8), 5203</em>. <a href="https://www.mdpi.com/2076-3417/13/8/5203" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3390/app13085203</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kukulski, P., et al. (2025). The Effect of Different Incline Angles on the Neuromuscular Activation of the Clavicular Head of the Pectoralis Major Muscle During the Barbell Incline Bench Press Exercise. <em>European Journal of Sport Sciences</em>. <a href="https://eu-opensci.org/index.php/sport/article/view/9255" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kassiano, W., Costa, B., Nunes, J.P., Kunevaliki, G., Castro-E-Souza, P., Stavinski, N., Fortes, L.S., & Cyrino, E.S. (2024). Optimizing Resistance Training Technique to Maximize Muscle Hypertrophy: A Narrative Review. <em>Journal of Functional Morphology and Kinesiology, 9(1), 9</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10801605/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10801605</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Currier, B.S., Mcleod, J.C., Banfield, L., Beyene, J., Welton, N.J., D'Souza, A.C., et al. (2023). Resistance training prescription for muscle strength and hypertrophy in healthy adults: a systematic review and Bayesian network meta-analysis. <em>British Journal of Sports Medicine, 57(18), 1211–1220</em>. <a href="https://pubmed.ncbi.nlm.nih.gov/37414459/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 37414459</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Baz-Valle, E., Schoenfeld, B.J., Torres-Unda, J., Santos-Concejero, J., & Balsalobre-Fernández, C. (2022). Resistance Training Variables for Optimization of Muscle Hypertrophy: An Umbrella Review. <em>PMC9302196</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9302196/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9302196</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        American College of Sports Medicine. (2024). Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews. <em>PMC12965823</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12965823/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12965823</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Schoenfeld, B.J., Pope, Z.K., Benik, F.M., Hester, G.M., Sellers, J., Nooner, J.L., et al. (2016). Longer Interset Rest Periods Enhance Muscle Strength and Hypertrophy in Resistance-Trained Men. <em>Journal of Strength and Conditioning Research, 30(7), 1805–1812</em>. <a href="https://journals.lww.com/nsca-jscr/fulltext/2016/07000/longer_interset_rest_periods_enhance_muscle.3.aspx" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1519/JSC.0000000000001272</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Refalo, M.C., Swinton, P.A., & Schoenfeld, B.J. (2024). Give it a rest: a systematic review with Bayesian meta-analysis on the effect of inter-set rest interval duration on muscle hypertrophy. <em>Frontiers in Sports and Active Living, 6, 1429789</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11349676/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11349676</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Schoenfeld, B.J., & Grgic, J. (2017). Frequency: The Overlooked Resistance Training Variable for Inducing Muscle Hypertrophy? <em>PubMed: 27752983</em>. <a href="https://pubmed.ncbi.nlm.nih.gov/27752983/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 27752983</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Barnett, C., Kippers, V., & Turner, P. (1995). Electromyographical Activity of the Pectoralis Muscle during Bench Press at Incline and Decline Angles. <em>Journal of Strength &amp; Conditioning Research, 9(3), 222–227</em>. <a href="https://journals.lww.com/nsca-jscr/abstract/1997/08000/electromyographical_activity_of_the_pectoralis.6.aspx" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">JSCR Link</a>
+      </span>
+    </li>
+ 
+  </ol>
+</div>
+    `
+},
+
+{
+    id: 'efficient-clinical-visit-guide',
+    title: '醫病也醫心：一份讓彼此都輕鬆的「看診攻略」🩺✨',
+    lastModified: '2026-04-19',
+    category: '診間隨筆',
+    date: '2026-04-19',
+    summary: '宸新復健科診所院長親身經歷大醫院候診煎熬後，整理出五大高效看診指南。透過分享過去治療經驗、精簡病史描述與釐清行政問題，讓我們一起縮短候診時間，找回看診品質與流失的時間。',
+    coverImage: '/images/news/article/hospital.webp',
+    seoTitle: '復健科看診攻略：縮短候診時間的 5 個高效溝通技巧 | 宸新復健科',
+    seoDescription: '物理治療與復健科門診總是等很久？陳新復健科醫師整理「看診攻略」，教你如何透過精準溝通、準備外院報告與釐清行政問題，提升醫療效率。醫病也醫心，讓我們一起找回高品質的醫療對話。',
+    keywords: ['看診攻略', '候診時間', '醫病溝通', '復健科門診', '陳新復健科', '醫療效率', '診間小故事'],
+    contentHtml: `
+        <p>前幾天，我以「病患」的身分去了一趟中國醫看診。</p>
+        
+        <p>為了不影響下午門診，我早早在開診前就抵達候診區，沒想到這一等，竟然等到了快中午才輪到我。坐在長廊的椅子上，我看著門上的燈號跳動緩慢，心裡不免也有些焦急趕不上下午的門診。</p>
+        <br>
+        <p>進診間後，我瞄到醫師的電腦畫面，後頭竟然還有一半的病患還沒看。我不僅擔心會耽誤醫師下班，更深刻體會到門外那些和我一樣、等得又累又酸的病患心情。</p>
+        <br>
+        <p>回到自己的診間，我一直在想，有沒有什麼方法能讓這段「煎熬」縮短？為了提升大家的看診品質，我整理了這份<strong>「高效看診攻略」</strong>，希望我們能一起找回流失的時間⏳：</p>
+
+        <h2>1. 分享過去經驗，讓我們少走冤枉路🤝</h2>
+        <p>很多病患怕醫師介意，會害羞或不敢說之前去哪裡看過、做過什麼。其實，「之前的治療經驗」是對醫師最有用的資訊。 其他醫師做過的檢查、吃過有效的藥、或是沒效的物理治療，都是能幫我快速篩選病因、精準排後續治療的關鍵。<strong>告訴我你走過的路，我們才能一起找更快的捷徑。</strong></p>
+
+        <h2>2. 進診間像上廁所，準備好再進場🚽</h2>
+        <p>我常比喻，進診間像上廁所：在外面排隊時，多等一分鐘都像一小時；但進了廁所，十分鐘卻轉瞬即逝。</p>
+        <p>為了不讓外面的人「憋」太久，建議進門前先整理好資料。用紙筆寫下重點，或是把外院的報告、影像先「截圖」存好。最怕進了診間才開始滑手機找照片，甚至有人手機突然響起，在診間開始講工作的電話，大家就在旁邊等待他把電話講完，這些時間累積起來，就是後面病患多等的一小時。</p>
+
+        <h2>3. 歸零思考，放下「過去診斷」</h2>
+        <p>每一次看診都是新的開始。有些病患會帶著過去的觀念進來，像是「推拿說我骨頭歪掉」、「中醫說濕氣重」，或是執著於某位醫師說的「這就是退化」。</p>
+        <p>如果信任眼前的醫師，而他也幫你做了完整的超音波檢查，明確指出是哪一條韌帶斷裂或發炎，<strong>請試著放下那張「看兩秒就說退化」的 X 光片</strong>。正確的醫病溝通，建立在對當下科學檢測的信任上🤝。</p>
+
+        <h2>4. 講重點，是為了留時間給「衛教」💬</h2>
+        <p>醫師最在意的是：<strong>哪裡痛？痛多久？怎麼發生的？</strong></p>
+        <p>有些病患怕漏掉細節，會從二十年前跌倒的那座山、那天路多滑、天多黑開始講起。雖然我很想聽你的故事，但健保門診的時間有限，過多的雜訊會干擾診斷。精簡病史，我才有足夠的時間為你做詳細的衛教與治療安排。</p>
+
+        <h2>5. 醫療問題找醫師，行政問題找櫃檯人員💁‍♂️</h2>
+        <p>「怎麼線上掛號？」、「復健室幾點開門？」這些非醫療的行政問題，建議可以詢問跟診護理師或櫃檯同仁。大家少一點詢問時間，門外的大家就能少更多候診時間，這是一份體諒，也是一份對彼此時間的尊重。</p>
+
+        <hr />
+<br>
+        <p>在中國醫的那次經驗，讓我更珍惜在診間與你們對話的每一分鐘❤️。</p>
+        <p>我們依然堅持做好每一項檢查，也希望透過這些小默契，讓我們能更專注在解決你的痛楚上。謝謝每一位願意閱讀這份攻略、並體諒醫護勞辛的你們。</p>
+        <p><strong>早點看完，早點回家🏡🌙。</strong></p>
+
+        <br>
+        <div style="background-color: #f8fafc; color: #334155; padding: 32px 32px 0px 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+          <h2 style="color: #1e293b; margin: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">
+            院長的溫馨叮嚀
+          </h2>
+          <p style="color: #475569; margin: 16px 0 8px 0; font-size: 1.05rem;">
+            良好的醫療品質需要醫病雙方共同維護。透過事前準備與精準溝通，我們能將有限的門診時間，發揮出最大的治療效益。期待在宸新，我們能一起更高效地找回您的健康。
+          </p>
+        </div>
+    `
+},
+
   {
   id: 'marathon-gait-injury-analysis',
   title: '馬拉松跑姿全解析：腳掌落地方式、步頻步幅，誰更容易受傷？',
@@ -9,7 +694,7 @@ export const articlesData: NewsPost[] = [
   category: '衛教文章',
   date: '2026-04-19',
   summary: '深度剖析後腳跟著地、中足著地、前腳掌著地三大跑姿，以及過度跨步、步頻不足、軀幹前傾角度對運動傷害的影響。實證研究揭露哪種跑法更容易導致膝蓋疼痛、髂脛束症候群、足底筋膜炎與跟腱病變，並提供科學預防策略。',
-  coverImage: '/images/news/article/marathon-gait-analysis.webp',
+  coverImage: '/images/news/article/marasone.webp',
   seoTitle: '馬拉松跑姿全解析：腳掌落地方式、步頻步幅，誰更容易受傷？',
   seoDescription: '深度剖析後腳跟著地、中足著地、前腳掌著地三大跑姿，以及過度跨步、步頻不足對運動傷害的影響。實證研究揭露哪種跑法更容易導致膝蓋疼痛、髂脛束症候群、足底筋膜炎與跟腱病變，並提供科學預防策略。',
   keywords: [
@@ -625,7 +1310,7 @@ export const articlesData: NewsPost[] = [
     id: 'pikmin-bloom-elderly-rehab',
     title: '當皮克敏走進阿媽的生活：五千步的約定，與找回笑容的魔法 ✨',
     lastModified: '2026-04-18',
-    category: '衛教文章',
+    category: '診間隨筆',
     date: '2026-04-18',
     summary: '面對肌少症與長年的腰膝疼痛，復健不只是單調的儀器治療。看陳新復健科醫師如何利用《Pikmin Bloom》遊戲，陪伴阿媽從沙發走向公園，找回生活的掌控感與色彩。',
     coverImage: '/images/news/article/pikmin-grandma.webp',
@@ -1119,11 +1804,11 @@ export const articlesData: NewsPost[] = [
 {
     id: 'doctorvsengineer',
     title: '從新竹實中到診所院長：跨越 20 年的科技與醫療圈觀察',
-    lastModified: '2026-04-15',
-    category: '衛教文章',
-    date: '2026-04-15',
+    lastModified: '2026-04-19',
+    category: '診間隨筆',
+    date: '2026-04-19',
     summary: '最近「醫電大戰」討論火熱。身處科技城新竹且身為醫師的我，想分享關於天賦、財富、與職涯穩定性的真實觀察：有些領域是給天才奔跑的，而醫學，是給願意駐足的人。',
-    coverImage: '/images/news/article/doctorvsengineer.webp',
+    coverImage: '/images/news/article/doctorvsengineer1.webp',
     seoTitle: '醫學系與電機系怎麼選？醫師跨界分析天賦、薪資與職涯穩定度',
     seoDescription: '深度解析醫學系與電機系的生存現狀：從矽谷千萬年薪工程師到醫院住院醫師的工時壓力，探討天賦牆、財富跑道及中年失業風險，為猶豫中的學子提供最真實的職場建議。',
     keywords: ['醫學系', '電機系', '科技業', '工程師', '醫師薪水', '職涯規劃', '醫電大戰', '牙醫系'],
@@ -1142,39 +1827,46 @@ export const articlesData: NewsPost[] = [
     <hr>
 
     <h2>1. 關於天賦的牆 🧱</h2>
-    <p>我高中唸新竹實驗高中，大家目標大都沒有醫科，班上除了兩三個唸醫科，其他現在幾乎都在科技領域。 剛入學時，我以為自己在國中成績打爆同學，來這也能輕鬆虐菜，結果幾次考試下來，才發現我才是那棵被虐的菜。🥬</p><br>
+    <p>我高中唸新竹實驗高中，大家目標大都是電機系，班上除了兩三個唸醫科，其他現在幾乎都在科技領域。 剛入學時，我以為自己在國中成績打爆同學，來這也能輕鬆虐菜，結果幾次考試下來，才發現我才是那棵被虐的菜。🥬</p><br>
     <p>數理方面，我算非常有興趣也付出極大的努力，但永遠考不贏班上某些人。困難的題目我想半天，他們看一眼就知道解答。有些早早就讀完高中內容，甚至拿奧林匹亞獎牌直接保送。那一刻我明白，有些領域是給天才奔跑的，而醫學，是給願意駐足的人。🏃‍♂️💨</p><br>
     <p>醫學需要的不是瞬間的靈光乍現，而是十年如一日的經驗累積、對無數解剖名詞的記憶，以及在關鍵時刻不手抖的穩定。⚖️</p>
 
     <hr>
 
     <h2>2. 關於財富的跑道 📈</h2>
-    <p>後來，那些天才同學幾乎都在美國矽谷、Google、Nvidia、Meta 這些大廠，年薪接近千萬。其他班上成績中後段的同學，目前大都留在台灣一線IC 設計公司，年薪也大概 300 萬。💰</p><br>
-    <p>我記得當我還在住院醫師領 8 萬月薪，每週工時 80 小時、一週值班兩到三天，還要應付各種考試與論文壓力時，他們已經靠著高薪投資股票房產，吃到疫情後的房市股市飛天，現在不少幾乎都財富自由了。🏖️</p><br>
-    <p>醫學系的圈子，競爭從來沒停過。從擠進醫學系的窄門，到畢業後的選科是第一個分水嶺，想進皮膚科、眼科這些光鮮亮麗的小科，排名沒在前 5% 幾乎沒機會。除非有個好爸爸，否則多的是落寞選擇不喜歡科別的人。而熬過這段，也超過 30 歲了。⏳</p>
+    <p>回頭看，當年那些天賦異稟的同學，如今多半在矽谷的 Google、Nvidia 或 Meta 發光發熱，領著讓人稱羨的高薪；而其他老同學大部分都留在台灣一線 IC 設計公司，生活也都早已優渥平穩。💰</p><br>
+    <p>還記得，當他們在疫情後的浪潮中精準布局、步入財富自由時，我正穿梭在醫院長廊，領著 8 萬月薪，在每週 80 小時的工時與無盡的值班中支撐著。那時的生活除了應付考試與論文，剩下的只有省吃儉用。</p><br>
+    <p>過幾年當我終於有餘力看一眼外面的世界，房價與股價早已翻了幾番，錯過的複利，成了主治醫師後再拚也難以追趕的距離。</p><br>
+    <p>如果進醫學系是為了致富，你可能會感到深深的失落。因為當你在深夜的值班室疲憊不堪時，真正讓你心累的，往往不職是工時，而是想起當初放棄電機或牙醫後，那份與同齡人交錯而過的人生進度感。</p><br>
+    <p>醫學系的圈子，競爭從來沒停過。畢業後的選科是第一個分水嶺，想進皮膚科、眼科這些光鮮亮麗的小科，排名沒在前 5% 幾乎沒機會。除非有個好爸爸，否則多的是落寞選擇不喜歡科別的人。而熬過這段，也超過 30 歲了。⏳</p>
 
     <hr>
 
     <h2>3. 關於白袍下的代價 🥼</h2>
-    <p>30 歲後，路分兩條。留在醫院，有名聲、有研究資源，但薪水其實是低於同年紀的工程師(月新約15萬)。 選擇診所，薪水比較有機會與一線工程師差不多。但你必須長出一層厚厚的神經保護膜，去面對各種病人的情緒——抱怨掛號費、抗議自費、或是快關門了強行加掛。甚至治療效果不如意，就直接提告或網路公審。⚖️💢</p><br>
-    <p>你還得面對健保局各種不合理的核刪。你做了治療，他們不給付，甚至還要乘上 20 倍罰診所。除非你是善於經營的人選擇開業，收入天花板才會拉高，但極少數才能接近那些矽谷工程師。🧗‍♂️</p>
+    <p>30 歲後，路分兩條。留在醫院，有名聲、有研究資源，但薪水其實是遠低於同年紀的工程師。 選擇診所，薪水比較有機會與台灣一線 IC 設計公司差不多。💰</p><br>
+    <p>但你必須長出一層厚厚的神經保護膜，去面對各種病人的情緒——抱怨掛號費、抗議自費、或是只掛了吵著要加掛。甚至治療效果不如意，就直接提告或網路公審，各種被醫德大旗綁架的言論。⚖️</p><br>
+    <p>你還得面對健保局各種不合理的核刪。你做了治療，他們不給付，甚至還要乘上 20 倍罰診所。除非你是善於經營的人選擇開業，收入天花板才會拉高，但極少數才能接近那些園區高階主管或是矽谷工程師。🧗‍♂️</p>
 
     <hr>
 
     <h2>4. 關於父親的背影 👨‍👦</h2>
-    <p>上面看起來醫學系一無是處，其實不然。醫學贏在<strong>「穩定」</strong>兩個字。 我父親是園區工程師。小時候只要趕計畫，他會連續一週加班到深夜。他在一次經濟不景氣的裁員潮中，也失業了。📉</p><br>
-    <p>中年失業要找回原本的薪資極其困難。我看著他為了養家去餐廳廚房幫忙，或去小科技公司上班。對科技業來說，新鮮的肝好用、腦子快且便宜；對醫師來說，你年紀越大，民眾反而越信任你的經驗，這時就顯現出醫生穩定的價值。👨‍⚕️✨</p>
+    <p>上面看起來醫學系一無是處，其實不然。醫學贏在<strong>「穩定」</strong>兩個字。 我父親是園區工程師。小時候只要趕計畫，他會連續一週加班到深夜，一路拼到主管職，給了我算優渥的成長環境。但他在一次經濟不景氣的裁員潮中，也失業了。📉</p><br>
+    <p>中年失業要找回原本的薪資極其困難。我看著他為了養家去餐廳廚房幫忙，或去小科技公司上班（後來老闆跑路，一年薪水直接不見）。🏠</p><br>
+    <p>對科技業來說，新鮮的肝好用、腦子快且便宜；對醫師來說，你年紀越大，民眾反而越信任你的經驗，這時就顯現出醫生穩定的價值。👨‍⚕️</p>
 
     <hr>
 
     <h2>5. 關於那顆流星 🌠</h2>
-    <p>科技業進展極快，差一兩年就是另一個世界；醫學進展緩慢，一項新技術要真正使用往往要試驗十幾年。 更重要的是成就感。治好病人的痛楚，那句微弱的「謝謝你，醫師」，就像黑夜裡劃過的流星。很短，但亮得讓你覺得，那些情緒與壓力好像都還能再撐一下。💪</p>
+    <p>科技業進展極快，差一兩年就是另一個世界；醫學進展緩慢，一項新技術要真正使用往往要試驗十幾年，環境變遷的壓力相對比較小。</p><br>
+    <p>還有醫學給我更多更重要的是成就感。治好病人的痛楚，那句微弱的「謝謝你，醫師」，就像黑夜裡劃過的流星。很短，但亮得讓你覺得，那些情緒與壓力好像都還能再撐一下。💪</p>
 
     <br>
-    <p>感謝大家用心看完。如果你是那種看一眼題目就能解開的天才，去電機系發光發熱吧！⚡️但如果有高中生來問我建議……我會推薦你去讀牙醫系，這個有機會再來討論。🦷</p><br>
     <p>人一輩子活在一個又一個小圈圈裡。醫學這條路，雖然前期真的極其辛苦，時常要面對各種消磨心志的瑣碎，但或許因為我自己熱愛運動，每當我看見那些被疼痛困擾的靈魂，在我的治療下慢慢復原，最終能重新擁抱無痛生活的喜悅——那種成就感，就像是在漫長黑夜裡點燃的火光。🔥</p><br>
-    <p>這份讓病患重回賽場、重回生活的悸動，就是我即便看清了現實的骨感，卻依然熱衷於醫療圈、持續走下去的唯一理由。🏀🎾✨</p>
-</article>
+    <p>未來在健保給付不漲，但物價持續飆升之下，醫界是持續走下波的，但這份讓病患重回賽場、重回生活的悸動，就是我即便看清了現實的骨感，卻依然熱衷於醫療圈、持續走下去的唯一理由。🏀🎾✨</p>
+
+    <br>
+    <p>感謝大家用心看完。如果你是那種看一眼題目就能解開的天才，去電機系發光發熱吧！詳細薪資如果考生有興趣可以私訊問我。⚡️</p><br>
+    <p>但如果有高中生來問我建議……我會推薦你去讀牙醫系，這個有機會再來討論。🦷</p>
     `
 },
 

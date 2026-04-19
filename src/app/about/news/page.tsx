@@ -1,4 +1,3 @@
-// src/app/about/news/page.tsx
 import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
@@ -13,11 +12,25 @@ const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 // 過濾衛教文章 (排除門診公告類別)
 const articlesList = newsList.filter(item => item.category !== '門診公告');
 
+// ✨ 定義不同類別在列表中的標籤樣式 (對應內頁邏輯)
+const categoryStyles: Record<string, string> = {
+  '診間隨筆': 'bg-amber-500/10 text-amber-400 border-amber-500/30',
+  '衛教文章': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30',
+  '醫學新知': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30',
+  '診所活動': 'bg-pink-500/10 text-pink-400 border-pink-500/30',
+};
+
+// ✨ 定義 Hover 時的外框發光顏色
+const hoverBorderStyles: Record<string, string> = {
+  '診間隨筆': 'hover:border-amber-500 hover:shadow-[0_0_15px_rgba(245,158,11,0.2)]',
+  '衛教文章': 'hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)]',
+  '醫學新知': 'hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)]',
+};
+
 // ==========================================
-// 1. Meta 設定 (優化 Title 並加入 Geo 標籤)
+// 1. Meta 設定
 // ==========================================
 export const metadata: Metadata = { 
-  // 修正：僅提供頁面標題，由 layout.tsx 模板附加診所名稱
   title: '復健衛教文章 - 最新醫療新知 | 新竹宸新復健科',
   description: '提供新竹宸新復健科最新的復健醫學衛教文章，包含 PRP 增生療法、骨骼肌肉超音波、兒童骨齡與生長評估等專業知識。',
   keywords: ['復健衛教', 'PRP注射', '兒童骨齡', '新竹復健科', '疼痛管理', '宸新復健科'],
@@ -31,7 +44,6 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: '新竹宸新復健科診所',
   },
-  // 加入在地化 Geo 標記
   other: {
     'geo.region': 'TW-HCH',
     'geo.placename': '新竹市',
@@ -109,7 +121,6 @@ export default function NewsListPage() {
                         <p className="text-slate-400">專業醫師團隊撰寫的復健醫學新知</p>
                     </div>
 
-                    {/* 超醒目粉紅切換按鈕 */}
                     <Link 
                         href="/about/news/notices" 
                         className="group relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-pink-600 rounded-xl hover:bg-pink-500 hover:scale-105 shadow-[0_0_20px_rgba(219,39,119,0.4)] hover:shadow-[0_0_30px_rgba(219,39,119,0.6)]"
@@ -126,34 +137,57 @@ export default function NewsListPage() {
 
             {/* 文章列表 */}
             <div className="space-y-8 animate-on-scroll delay-100">
-              {articlesList.map((item) => (
-                <Link key={item.id} href={`/about/news/${item.id}`} className="block group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300">
-                  <div className="flex flex-col md:flex-row h-full">
-                    <div className="md:w-1/3 h-56 md:h-auto relative overflow-hidden">
-                      {/* 優化 Alt：包含診所與文章標題關鍵字 */}
-                      <img 
-                        src={item.coverImage} 
-                        alt={`新竹宸新復健科衛教文章：${item.title}`} 
-                        className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
-                      />
-                    </div>
-                    <div className="md:w-2/3 p-6 md:p-8 flex flex-col justify-center">
+              {articlesList.map((item) => {
+                // ✨ 內部邏輯判定：根據當前文章類別決定樣式變數
+                const catStyle = categoryStyles[item.category] || 'bg-slate-500/10 text-slate-400 border-slate-500/30';
+                const hoverStyle = hoverBorderStyles[item.category] || 'hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)]';
+                
+                // 標題與按鈕的顏色分流
+                const isEssay = item.category === '診間隨筆';
+                const titleColorClass = isEssay ? 'group-hover:text-amber-400' : 'group-hover:text-cyan-400';
+                const moreBtnColorClass = isEssay ? 'text-amber-500' : 'text-cyan-500';
+
+                return (
+                  <Link 
+                    key={item.id} 
+                    href={`/about/news/${item.id}`} 
+                    className={`block group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden transition-all duration-300 ${hoverStyle}`}
+                  >
+                    <div className="flex flex-col md:flex-row h-full">
+                      <div className="md:w-1/3 h-56 md:h-auto relative overflow-hidden">
+                        <img 
+                          src={item.coverImage} 
+                          alt={`新竹宸新復健科衛教文章：${item.title}`} 
+                          className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
+                        />
+                      </div>
+                      <div className="md:w-2/3 p-6 md:p-8 flex flex-col justify-center">
                         <div className="flex items-center gap-3 mb-3 text-sm">
-                            <span className="px-2 py-1 rounded border bg-cyan-500/10 text-cyan-400 border-cyan-500/30">{item.category}</span>
-                            <span className="text-slate-500 flex items-center"><i className="fa-regular fa-calendar mr-2"></i>{item.date}</span>
+                          {/* 類別標籤 */}
+                          <span className={`px-2 py-1 rounded border font-medium ${catStyle}`}>
+                            {item.category}
+                          </span>
+                          <span className="text-slate-500 flex items-center">
+                            <i className="fa-regular fa-calendar mr-2"></i>{item.date}
+                          </span>
                         </div>
-                        {/* H2 正確應用於列表標題 */}
-                        <h2 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors leading-relaxed">
-                            {item.title}
+                        
+                        {/* 文章標題 */}
+                        <h2 className={`text-xl md:text-2xl font-bold text-white mb-3 transition-colors leading-relaxed ${titleColorClass}`}>
+                          {item.title}
                         </h2>
+                        
                         <p className="text-slate-400 line-clamp-2 mb-4 leading-relaxed">{item.summary}</p>
-                        <div className="mt-auto text-cyan-500 text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center">
-                            閱讀更多 <i className="fa-solid fa-arrow-right ml-2"></i>
+                        
+                        {/* 閱讀更多按鈕 */}
+                        <div className={`mt-auto text-sm font-bold group-hover:translate-x-1 transition-transform inline-flex items-center ${moreBtnColorClass}`}>
+                          閱讀更多 <i className="fa-solid fa-arrow-right ml-2"></i>
                         </div>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              ))}
+                  </Link>
+                );
+              })}
             </div>
 
             <div className="mb-12 max-w-3xl mx-auto mt-16 animate-on-scroll delay-300 text-center text-slate-400 text-sm">
