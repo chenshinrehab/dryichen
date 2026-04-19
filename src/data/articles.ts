@@ -9,7 +9,7 @@ export const articlesData: NewsPost[] = [
   category: '衛教文章',
   date: '2026-04-19',
   summary: '深度剖析NSAID過敏（藥物過敏性反應）的發生比例、致病機轉、遺傳因素與交叉反應問題。實證研究揭露哪些NSAID最容易引發過敏，並提供過敏後的疼痛處理替代策略。',
-  coverImage: '/images/news/article/nsaid-hypersensitivity.webp',
+  coverImage: '/images/news/article/drug.webp',
   seoTitle: 'NSAID（非類固醇消炎藥）過敏全解析：為什麼有人吃止痛藥會過敏？',
   seoDescription: '深度剖析NSAID過敏的發生比例、致病機轉、遺傳因素與交叉反應問題。實證研究揭露哪些NSAID最容易引發過敏，並提供過敏後的疼痛處理替代策略。',
   keywords: [
@@ -382,6 +382,12 @@ export const articlesData: NewsPost[] = [
         <strong>❌ 誤區四：「NSAID過敏是終身的，永遠沒辦法改變」</strong><br>
         <span style="color: #78350f; font-size: 0.97rem; line-height: 1.6;">藥理性交叉反應型NSAID過敏確實難以根治，但透過阿斯匹靈去敏感化治療，部分患者可以達到長期耐受。此外，若過敏是免疫媒介型，有時隨著時間推移或原因消除，對特定藥物的反應可能減弱，需由醫師追蹤評估。</span>
       </li>
+      <li style="padding: 1rem; background-color: #fffde7; border-radius: 0.5rem;">
+  <strong>❌ 誤區五：「吃消炎藥會胃痛、拉肚子，就代表我對這類藥物過敏」</strong><br>
+  <span style="color: #78350f; font-size: 0.97rem; line-height: 1.6;">
+    這通常是藥物的<strong>副作用</strong>而非過敏。非類固醇消炎止痛藥 (NSAID) 會抑制前列腺素合成，進而減少胃黏膜的保護，導致腸胃不適甚至潰瘍。真正的「過敏」是由免疫系統引起的，通常表現為皮疹、蕁麻疹、呼吸困難或臉部腫脹。若僅有胃痛，建議與醫師討論更換較不傷胃的劑型或搭配胃藥使用。
+  </span>
+</li>
     </ul>
   </div>
 </section>
@@ -403,51 +409,85 @@ export const articlesData: NewsPost[] = [
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
     <strong style="color: #ffffff;">正式的評估流程</strong>通常包括：詳細的病史詢問、皮膚試驗（skin prick test或intradermal test，針對IgE媒介型）、以及在醫療監督下進行的口服激發試驗（oral provocation test）——後者目前仍是診斷NSAID過敏的黃金標準。<sup><a href="https://doi.org/10.1111/all.13527" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
   </p>
-</section>
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    參考資料
-  </h2>
-  <ol style="color: #94a3b8; line-height: 1.8; font-size: 0.97rem; padding-left: 1.5rem;">
-    <li style="margin-bottom: 0.75rem;" id="ref-1">
-      Kowalski ML, Agache I, Bavbek S, et al. Diagnosis and management of NSAID-Exacerbated Respiratory Disease (N-ERD)—a EAACI position paper. <em>Allergy.</em> 2019;74(1):28–39. <a href="https://doi.org/10.1111/all.13527" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1111/all.13527</a>
-    </li>
-    <li style="margin-bottom: 0.75rem;" id="ref-2">
-      Blumenthal KG, Lai KH, Huang M, et al. Adverse and hypersensitivity reactions to prescription nonsteroidal anti-inflammatory agents in a large health care system. <em>J Allergy Clin Immunol Pract.</em> 2017;5(3):737–743. <a href="https://doi.org/10.1016/j.jaci.2018.09.004" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1016/j.jaci.2018.09.004</a>
-    </li>
-    <li style="margin-bottom: 0.75rem;" id="ref-3">
-      Doña I, Blanca-López N, Cornejo-García JA, et al. Characteristics of subjects experiencing hypersensitivity to non-steroidal anti-inflammatory drugs: patterns of response. <em>Clin Exp Allergy.</em> 2011;41(1):86–95. <a href="https://doi.org/10.1111/cea.13448" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1111/cea.13448</a>
-    </li>
-    <li style="margin-bottom: 0.75rem;" id="ref-4">
-      Cornejo-García JA, Blanca-López N, Doña I, et al. Hypersensitivity reactions to non-steroidal anti-inflammatory drugs. <em>Curr Drug Metab.</em> 2009;10(9):971–980. <a href="https://doi.org/10.1097/ACI.0000000000000496" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1097/ACI.0000000000000496</a>
-    </li>
-    <li style="margin-bottom: 0.75rem;" id="ref-5">
-      Stevenson DD, Szczeklik A. Clinical and pathologic perspectives on aspirin sensitivity and asthma. <em>J Allergy Clin Immunol.</em> 2006;118(4):773–786. <a href="https://doi.org/10.1016/j.jaci.2006.07.024" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1016/j.jaci.2006.07.024</a>
-    </li>
-    <li style="margin-bottom: 0.75rem;" id="ref-6">
-      Canto MG, Andreu I, Fernandez J, Blanca M. Selective immediate hypersensitivity reactions to NSAIDs. <em>Curr Opin Allergy Clin Immunol.</em> 2009;9(4):293–297. <a href="https://doi.org/10.1097/ACI.0b013e32832d7498" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1097/ACI.0b013e32832d7498</a>
-    </li>
-    <li style="margin-bottom: 0.75rem;" id="ref-7">
-      Bhala N, Emberson J, Merhi A, et al. Vascular and upper gastrointestinal effects of non-steroidal anti-inflammatory drugs: meta-analyses of individual participant data from randomised trials. <em>Lancet.</em> 2013;382(9894):769–779. <a href="https://doi.org/10.1136/bmj.k3059" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1136/bmj.k3059</a>
-    </li>
-    <li style="margin-bottom: 0.75rem;" id="ref-8">
-      Jenkins C, Costello J, Hodge L. Systematic review of prevalence of aspirin-induced asthma and its implications for clinical practice. <em>BMJ.</em> 2004;328(7437):434. <a href="https://doi.org/10.1136/bmj.328.7437.434" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1136/bmj.328.7437.434</a>
-    </li>
-    <li style="margin-bottom: 0.75rem;" id="ref-9">
-      Szczeklik A, Nizankowska E, Duplaga M. Natural history of aspirin-induced asthma. AIANE Investigators. <em>Eur Respir J.</em> 2000;16(3):432–436. <a href="https://doi.org/10.1034/j.1399-3003.2000.016003432.x" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1034/j.1399-3003.2000.016003432.x</a>
-    </li>
-    <li style="margin-bottom: 0.75rem;" id="ref-10">
-      Woessner KM, Simon RA, Stevenson DD. The safety of celecoxib in patients with aspirin-sensitive asthma. <em>Arthritis Rheum.</em> 2002;46(8):2201–2206. <a href="https://doi.org/10.1002/art.10426" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1002/art.10426</a>
-    </li>
-    <li style="margin-bottom: 0.75rem;" id="ref-11">
-      Settipane RA, Stevenson DD. Cross-sensitivity with acetaminophen in aspirin-sensitive subjects with asthma. <em>J Allergy Clin Immunol.</em> 1989;84(1):26–33. <a href="https://doi.org/10.1016/0091-6749(89)90173-X" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1016/0091-6749(89)90173-X</a>
-    </li>
-    <li style="margin-bottom: 0.75rem;" id="ref-12">
-      Quiralte J, Blanco C, Castillo R, et al. Intolerance to nonsteroidal anti-inflammatory drugs: results of controlled drug challenges in 98 patients. <em>J Allergy Clin Immunol.</em> 1996;98(3):678–685. <a href="https://doi.org/10.1016/s0091-6749(96)70097-2" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1016/s0091-6749(96)70097-2</a>
-    </li>
-  </ol>
-</section>`
+
+  <h2>📚 參考文獻 (References)</h2>
+  <div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+    <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Kowalski, M.L., Agache, I., Bavbek, S., et al. (2019). Diagnosis and management of NSAID-Exacerbated Respiratory Disease (N-ERD)—a EAACI position paper. <em>Allergy, 74(1), 28–39</em>. <a href="https://doi.org/10.1111/all.13527" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1111/all.13527</a>
+        </span>
+      </li>
+
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Blumenthal, K.G., Lai, K.H., Huang, M., et al. (2017). Adverse and hypersensitivity reactions to prescription nonsteroidal anti-inflammatory agents in a large health care system. <em>J Allergy Clin Immunol Pract, 5(3), 737–743</em>. <a href="https://doi.org/10.1016/j.jaci.2018.09.004" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.jaci.2018.09.004</a>
+        </span>
+      </li>
+
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Doña, I., Blanca-López, N., Cornejo-García, J.A., et al. (2011). Characteristics of subjects experiencing hypersensitivity to non-steroidal anti-inflammatory drugs: patterns of response. <em>Clin Exp Allergy, 41(1), 86–95</em>. <a href="https://doi.org/10.1111/cea.13448" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1111/cea.13448</a>
+        </span>
+      </li>
+
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Cornejo-García, J.A., Blanca-López, N., Doña, I., et al. (2009). Hypersensitivity reactions to non-steroidal anti-inflammatory drugs. <em>Curr Drug Metab, 10(9), 971–980</em>. <a href="https://doi.org/10.1097/ACI.0000000000000496" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1097/ACI.0000000000000496</a>
+        </span>
+      </li>
+
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Stevenson, D.D., & Szczeklik, A. (2006). Clinical and pathologic perspectives on aspirin sensitivity and asthma. <em>J Allergy Clin Immunol, 118(4), 773–786</em>. <a href="https://doi.org/10.1016/j.jaci.2006.07.024" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.jaci.2006.07.024</a>
+        </span>
+      </li>
+
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Canto, M.G., Andreu, I., Fernandez, J., & Blanca, M. (2009). Selective immediate hypersensitivity reactions to NSAIDs. <em>Curr Opin Allergy Clin Immunol, 9(4), 293–297</em>. <a href="https://doi.org/10.1097/ACI.0b013e32832d7498" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1097/ACI.0b013e32832d7498</a>
+        </span>
+      </li>
+
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Bhala, N., Emberson, J., Merhi, A., et al. (2013). Vascular and upper gastrointestinal effects of non-steroidal anti-inflammatory drugs: meta-analyses of individual participant data from randomised trials. <em>Lancet, 382(9894), 769–779</em>. <a href="https://doi.org/10.1136/bmj.k3059" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1136/bmj.k3059</a>
+        </span>
+      </li>
+
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Jenkins, C., Costello, J., & Hodge, L. (2004). Systematic review of prevalence of aspirin-induced asthma and its implications for clinical practice. <em>BMJ, 328(7437), 434</em>. <a href="https://doi.org/10.1136/bmj.328.7437.434" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1136/bmj.328.7437.434</a>
+        </span>
+      </li>
+
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Szczeklik, A., Nizankowska, E., & Duplaga, M. (2000). Natural history of aspirin-induced asthma. AIANE Investigators. <em>Eur Respir J, 16(3), 432–436</em>. <a href="https://doi.org/10.1034/j.1399-3003.2000.016003432.x" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1034/j.1399-3003.2000.016003432.x</a>
+        </span>
+      </li>
+
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Woessner, K.M., Simon, R.A., & Stevenson, D.D. (2002). The safety of celecoxib in patients with aspirin-sensitive asthma. <em>Arthritis Rheum, 46(8), 2201–2206</em>. <a href="https://doi.org/10.1002/art.10426" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1002/art.10426</a>
+        </span>
+      </li>
+
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Settipane, R.A., & Stevenson, D.D. (1989). Cross-sensitivity with acetaminophen in aspirin-sensitive subjects with asthma. <em>J Allergy Clin Immunol, 84(1), 26–33</em>. <a href="https://doi.org/10.1016/0091-6749(89)90173-X" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/0091-6749(89)90173-X</a>
+        </span>
+      </li>
+
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Quiralte, J., Blanco, C., Castillo, R., et al. (1996). Intolerance to nonsteroidal anti-inflammatory drugs: results of controlled drug challenges in 98 patients. <em>J Allergy Clin Immunol, 98(3), 678–685</em>. <a href="https://doi.org/10.1016/s0091-6749(96)70097-2" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/s0091-6749(96)70097-2</a>
+        </span>
+      </li>
+
+    </ol>
+  </div>  `
 },
 
 {
@@ -478,7 +518,8 @@ id: 'chest-muscle-training-guide',
 <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
   <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-    胸大肌（Pectoralis Major）是上半身最大的推力肌群，由鎖骨頭（上胸）與胸骨肋骨頭（中下胸）共同構成。想要有效發展胸肌，動作選擇、訓練組數、組間休息與漸進超負荷缺一不可。實證研究指出，槓鈴臥推、上斜啞鈴推舉與纜繩夾胸是活化胸大肌效益最高的三類動作；每週總訓練組數建議落在 10–20 組之間；組間休息以 2–3 分鐘最有利於肌肥大；而重量應採「漸進增重」策略，搭配每週 2 次頻率刺激肌肉蛋白合成，方能最大化胸肌成長。本文將以實證研究為基礎，系統性解析各訓練變項的最佳化策略。
+    胸大肌（Pectoralis Major）是上半身最大的推力肌群，由鎖骨頭（上胸）與胸骨肋骨頭（中下胸）共同構成。想要有效發展胸肌，動作選擇、訓練組數、組間休息與漸進超負荷缺一不可。<br><br>
+    實證研究指出，槓鈴臥推、上斜啞鈴推舉與纜繩夾胸是活化胸大肌效益最高的三類動作；每週總訓練組數建議落在 10–20 組之間；組間休息以 2–3 分鐘最有利於肌肥大；而重量應採「漸進增重」策略，搭配每週 2 次頻率刺激肌肉蛋白合成，方能最大化胸肌成長。本文將以實證研究為基礎，系統性解析各訓練變項的最佳化策略。
   </p>
 </div>
  
@@ -509,7 +550,7 @@ id: 'chest-muscle-training-guide',
  
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">① 槓鈴平臥推舉（Barbell Flat Bench Press）——基礎王者</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    平臥推舉是胸肌訓練中負重能力最強、整體肌電活動最高的複合動作。2020 年一項 EMG 比較研究顯示，槓鈴臥推對胸大肌、前三角肌與三頭肌的整體活化均顯著高於啞鈴飛鳥（差異幅度達 8–81%），是訓練中下胸最具效率的首選動作。
+    平臥推舉是胸肌訓練中負重能力最強、整體肌電活動最高的複合動作。2020 年一項肌電活動比較研究顯示，槓鈴臥推對胸大肌、前三角肌與三頭肌的整體活化均顯著高於啞鈴飛鳥（差異幅度達 8–81%），是訓練中下胸最具效率的首選動作。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7675616/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
@@ -526,7 +567,7 @@ id: 'chest-muscle-training-guide',
  
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">② 上斜啞鈴推舉（Incline Dumbbell Press）——上胸專項</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    許多人忽略上胸訓練，導致整體胸肌輪廓缺乏立體感。上斜推舉是填補這個視覺死角的關鍵動作。研究顯示，傾斜角度在 30–45 度時，鎖骨頭（上胸）的 EMG 活動顯著高於平板與下斜角度，其中以 44 度角的效果最為突出。
+    許多人忽略上胸訓練，導致整體胸肌輪廓缺乏立體感。上斜推舉是填補這個視覺死角的關鍵動作。研究顯示，傾斜角度在 30–45 度時，鎖骨頭（上胸）的肌電活動活動顯著高於平板與下斜角度，其中以 44 度角的效果最為突出。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7449336/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
     一項比較 20°、32°、43° 三種傾斜角度的研究同樣確認，較大傾斜角在上胸活化上具有優勢。
     <sup><a href="https://eu-opensci.org/index.php/sport/article/view/9255" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
@@ -586,7 +627,7 @@ id: 'chest-muscle-training-guide',
     三、最佳訓練組數：每週幾組最有效？
   </h2>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    訓練組數（Volume）是影響肌肥大最關鍵的單一訓練變項。2023 年發表於《英國運動醫學雜誌》（BJSM）、涵蓋 119 項研究（共 3,364 名受試者）的系統性回顧與貝葉斯網絡統合分析顯示，所有類型的阻力訓練處方對肌肥大的效益均優於不訓練，且<strong style="color: #ffffff;">多組數訓練對肌肥大的效益優於單組數訓練</strong>。
+    訓練組數是影響肌肥大最關鍵的單一訓練變項。2023 年發表於《英國運動醫學雜誌》（BJSM）、涵蓋 119 項研究（共 3,364 名受試者）的系統性回顧與貝葉斯網絡統合分析顯示，所有類型的阻力訓練處方對肌肥大的效益均優於不訓練，且<strong style="color: #ffffff;">多組數訓練對肌肥大的效益優於單組數訓練</strong>。
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/37414459/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
@@ -1160,7 +1201,8 @@ id: 'chest-muscle-training-guide',
 <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
   <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-    馬拉松是一項對下肢關節需求極高的耐力運動。不同的跑姿——後腳跟著地（Rearfoot Strike）、中足著地（Midfoot Strike）、前腳掌著地（Forefoot Strike）——會造成地面反作用力的傳遞模式、關節受力角度的根本差異，進而引發不同部位的傷害。研究指出，後腳跟著地者更容易發生膝關節傷害（尤其是髕骨股骨疼痛症候群與髂脛束症候群），而前腳掌著地者對阿基里斯腱與小腿的需求最高。此外，過度跨步、步頻不足與軀幹姿勢，同樣是決定跑者受傷風險的關鍵因素。本文將以實證為基礎，系統性剖析各種跑姿的受傷風險，並提供科學預防策略。
+    馬拉松是一項對下肢關節需求極高的耐力運動。不同的跑姿——後腳跟著地（Rearfoot Strike）、中足著地（Midfoot Strike）、前腳掌著地（Forefoot Strike）——會造成地面反作用力的傳遞模式、關節受力角度的根本差異，進而引發不同部位的傷害。 <br> <br>
+    研究指出，後腳跟著地者更容易發生膝關節傷害（尤其是髕骨股骨疼痛症候群與髂脛束症候群），而前腳掌著地者對阿基里斯腱與小腿的需求最高。此外，過度跨步、步頻不足與軀幹姿勢，同樣是決定跑者受傷風險的關鍵因素。本文將以實證為基礎，系統性剖析各種跑姿的受傷風險，並提供科學預防策略。
   </p>
 </div>
  
