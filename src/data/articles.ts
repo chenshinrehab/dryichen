@@ -2,7 +2,453 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
 
-
+{
+  id: 'nsaid-hypersensitivity',
+  title: 'NSAID（非類固醇消炎藥）過敏全解析：為什麼有人吃止痛藥會過敏？',
+  lastModified: '2026-04-19',
+  category: '衛教文章',
+  date: '2026-04-19',
+  summary: '深度剖析NSAID過敏（藥物過敏性反應）的發生比例、致病機轉、遺傳因素與交叉反應問題。實證研究揭露哪些NSAID最容易引發過敏，並提供過敏後的疼痛處理替代策略。',
+  coverImage: '/images/news/article/nsaid-hypersensitivity.webp',
+  seoTitle: 'NSAID（非類固醇消炎藥）過敏全解析：為什麼有人吃止痛藥會過敏？',
+  seoDescription: '深度剖析NSAID過敏的發生比例、致病機轉、遺傳因素與交叉反應問題。實證研究揭露哪些NSAID最容易引發過敏，並提供過敏後的疼痛處理替代策略。',
+  keywords: [
+    'NSAID過敏',
+    '非類固醇消炎藥過敏',
+    '阿斯匹靈過敏',
+    '藥物過敏',
+    '阿斯匹靈加重呼吸道疾病',
+    'NSAID交叉反應',
+    'COX-1抑制',
+    '乙醯胺酚',
+    '止痛藥過敏'
+  ],
+  contentHtml: `<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    NSAID（非類固醇消炎藥）是全球使用最廣泛的藥物之一，包含阿斯匹靈、布洛芬（ibuprofen）、萘普生（naproxen）等常見藥品。然而，約有 0.5–5% 的一般民眾對NSAID存在過敏或不耐受反應，在氣喘患者中比例更高達 10–20%。<sup><a href="https://doi.org/10.1111/all.13527" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup> NSAID過敏並非單一機轉，主要分為「藥理性交叉反應（非免疫性）」與「免疫性過敏反應」兩大類，兩者致病機制截然不同，對應的臨床處理策略也大相逕庭。<sup><a href="https://doi.org/10.1016/j.jaci.2018.09.004" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup> 遺傳因素確實在部分反應類型中扮演一定角色，但並非絕對決定因素。對某一種NSAID過敏，不代表所有止痛藥都不能使用——關鍵在於釐清過敏類型，找到安全的替代方案。<sup><a href="https://doi.org/10.1111/cea.13448" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[3]</a></sup>
+  </p>
+</div>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、什麼是NSAID？為什麼這麼多人在吃？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    NSAID是「非類固醇消炎藥（Non-Steroidal Anti-Inflammatory Drugs）」的縮寫，是日常生活中使用最頻繁的藥物類別之一。從感冒頭痛、生理痛、關節炎，到運動後肌肉痠痛，幾乎所有「發炎引起的不舒服」都可能用到NSAID。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這類藥物的核心機制是<strong style="color: #2dd4bf;">抑制環氧化酶（COX, cyclooxygenase）</strong>，阻斷前列腺素（prostaglandin）的合成，進而達到消炎、止痛、退燒的效果。<sup><a href="https://doi.org/10.1016/j.jaci.2018.09.004" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup> 正因為COX酵素廣泛參與人體多種生理調控，NSAID的作用也廣泛，但副作用的潛力同樣存在——包括胃腸道刺激、腎功能影響，以及今天要深入討論的「過敏反應」。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    常見的NSAID包含：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">阿斯匹靈（Aspirin）</strong>——最古老的NSAID，也是過敏研究中被研究最多的</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">布洛芬（Ibuprofen）</strong>——臺灣藥局常見的「伊普錠」</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">萘普生（Naproxen）</strong>——長效型，每日兩次</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">雙氯芬酸（Diclofenac）</strong>——常見外用貼片或口服</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">吲哚美辛（Indomethacin）</strong>——強效，常用於痛風急性發作</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">Celecoxib（塞來昔布）</strong>——選擇性COX-2抑制劑，胃腸副作用較低</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    值得特別說明的是，<strong style="color: #ffffff;">乙醯胺酚（Acetaminophen，即「普拿疼」）並不是NSAID</strong>，它主要透過不同機制止痛退燒，對COX的抑制極微，因此在NSAID過敏的替代策略中，扮演重要角色（後文詳述）。
+  </p>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、有多少人會對NSAID過敏？數字比你想像的高
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    NSAID過敏的盛行率因研究方法、定義與族群不同而有所差異，但整體數字相當值得重視。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    根據歐洲過敏與臨床免疫學學會（EAACI）的系統性回顧，<strong style="color: #ffffff;">一般人群中NSAID過敏的比例約為 0.5–5.7%</strong>，而在慢性蕁麻疹患者中可高達 20–30%，在氣喘合併鼻瘜肉患者（即「阿斯匹靈加重呼吸道疾病，AERD」族群）中更高達 10–20%。<sup><a href="https://doi.org/10.1111/all.13527" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">📊 各族群NSAID過敏盛行率一覽</h4>
+    <ul style="margin-bottom: 0; color: #334155; line-height: 1.7; font-size: 1.05rem; padding-left: 1.2rem;">
+      <li><strong>一般健康成人：</strong>0.5–5.7%</li>
+      <li><strong>氣喘患者：</strong>10–20%</li>
+      <li><strong>慢性蕁麻疹患者：</strong>20–30%</li>
+      <li><strong>氣喘＋慢性鼻竇炎＋鼻瘜肉（AERD）：</strong>高達 30–40%</li>
+    </ul>
+  </div>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    換句話說，在臺灣估計約 2,300 萬人口中，可能有超過 <strong style="color: #ffffff;">10 萬至數十萬人</strong>存在某種程度的NSAID不耐受或過敏，只是許多人從未察覺或接受正式診斷。<sup><a href="https://doi.org/10.1111/cea.13448" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    此外，研究也顯示，<strong style="color: #ffffff;">女性的NSAID過敏比例略高於男性</strong>，推測與荷爾蒙對免疫反應的調控有關；年齡方面，中年族群（30–60歲）的診斷率最高，但青少年氣喘患者中同樣不容忽視。<sup><a href="https://doi.org/10.1111/all.13527" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、為什麼會過敏？搞懂兩大截然不同的機制
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是整篇文章最關鍵的觀念：<strong style="color: #2dd4bf;">NSAID「過敏」其實並非單一疾病，而是一個傘狀名詞，涵蓋至少兩種完全不同的致病路徑。</strong>搞清楚自己是哪一種，才能決定「還有哪些藥可以吃」。
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">第一類：藥理性（非免疫性）交叉反應——最常見</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是NSAID過敏中<strong style="color: #ffffff;">最常見的類型，約占七成以上</strong>。這類反應並非傳統意義上的「免疫過敏」，而是因為NSAID抑制COX-1酵素，導致花生四烯酸（arachidonic acid）轉而生成過量的半胱氨酸白三烯素（cysteinyl leukotrienes），這些物質會刺激呼吸道黏膜收縮、皮膚肥大細胞脫顆粒，引發症狀。<sup><a href="https://doi.org/10.1016/j.jaci.2018.09.004" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">重點：這類反應不需要「曾經接觸過」才會發生，</strong>跟傳統IgE媒介的過敏不同，它是藥理機制造成的，因此<strong style="color: #ffffff;">只要是強效COX-1抑制劑，不論化學結構是否相似，都可能引發相同反應——這就是所謂的「交叉反應」。</strong>
+  </p>
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 典型案例說明：</strong><br><br>
+      王先生有輕度氣喘，某次感冒後服用布洛芬，30分鐘內出現呼吸困難加重、流鼻水大量增加、眼睛紅腫。就醫後診斷為「NSAID加重呼吸道疾病（AERD）」。這類患者若改用另一種強效NSAID，同樣的症狀幾乎必然再現——因為問題不是「對布洛芬這個分子過敏」，而是「對COX-1被壓制這件事不耐受」。
+    </p>
+  </div>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    此類反應的常見臨床表現包括：<sup><a href="https://doi.org/10.1111/all.13527" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;">呼吸道症狀（支氣管痙攣、喘鳴、鼻炎惡化）——尤其好發於有氣喘或鼻瘜肉的患者</li>
+    <li style="margin-bottom: 0.5rem;">皮膚症狀（蕁麻疹、血管性水腫）——常見於有慢性蕁麻疹病史者</li>
+    <li style="margin-bottom: 0.5rem;">混合型（皮膚＋呼吸道同時出現）</li>
+  </ul>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">第二類：免疫性過敏反應——較少見但需區別</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這類反應才是傳統意義上的「真正過敏」，由IgE抗體（第一型超敏反應）或T細胞（第四型超敏反應）媒介，<strong style="color: #ffffff;">具有藥物特異性（drug-specific）</strong>——也就是說，只對某一種特定NSAID過敏，換用化學結構不同的另一種NSAID，通常不會引發同樣反應。<sup><a href="https://doi.org/10.1016/j.jaci.2018.09.004" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    IgE媒介的即發型反應（服藥後1小時內）症狀包含：蕁麻疹、血管性水腫、過敏性休克（anaphylaxis）。T細胞媒介的遲發型反應（服藥後24–72小時）則可能表現為固定藥疹（fixed drug eruption）、史蒂芬－強生症候群（SJS）等嚴重皮膚反應。<sup><a href="https://doi.org/10.1111/cea.13448" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床重要觀念</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      許多民眾（甚至部分醫護）會把「服藥後不舒服」一律稱為「過敏」，但NSAID的藥理性交叉反應與免疫性過敏反應，在處理方式上截然不同。前者幾乎對所有強效COX-1抑制劑都有反應；後者只針對特定藥物，換藥通常沒問題。區分這兩種類型，是後續用藥安全的基礎。<sup><a href="https://doi.org/10.1016/j.jaci.2018.09.004" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、NSAID過敏跟遺傳有關係嗎？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是許多患者（和家屬）都很想知道的問題：「我媽媽對阿斯匹靈過敏，我也會嗎？」答案是：<strong style="color: #2dd4bf;">有關係，但不是命中注定。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    目前的研究已識別出幾個與NSAID過敏風險相關的基因變異位點：
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 白三烯素路徑相關基因</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    AERD（NSAID加重呼吸道疾病）患者中，研究發現<strong style="color: #ffffff;">白三烯素C4合成酶（LTC4S）基因啟動子的 -444A/C 多態性</strong>（rs730012）與疾病易感性顯著相關。帶有此變異者，其LTC4合成酶活性較高，服用NSAID後更容易過度產生半胱氨酸白三烯素。<sup><a href="https://doi.org/10.1097/ACI.0000000000000496" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. HLA（人類白血球抗原）基因</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    對於免疫媒介型的NSAID過敏（遲發型皮膚反應），HLA基因多態性的角色更為突出。例如，<strong style="color: #ffffff;">HLA-B*5801</strong>與allopurinol引發的SJS相關（雖非NSAID，但說明HLA在藥物過敏中的重要性），而部分NSAID引發的固定藥疹也被發現與特定HLA型別有關聯。<sup><a href="https://doi.org/10.1097/ACI.0000000000000496" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">3. 家族史的影響</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究顯示，<strong style="color: #ffffff;">有一等親NSAID過敏家族史者，其風險約為一般人的2–3倍</strong>，但遺傳貢獻度遠低於環境因素（如氣喘、慢性鼻竇炎等共病）。<sup><a href="https://doi.org/10.1097/ACI.0000000000000496" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup> 目前尚無法僅憑基因檢測準確預測個人是否會對NSAID過敏——基因是風險因子之一，但不是唯一決定因素。
+  </p>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床重要觀念</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      遺傳因素提供了「地基」，但「觸發」NSAID過敏還需要其他條件配合——例如合併氣喘、慢性鼻竇炎、蕁麻疹等發炎性疾病，以及COX-1抑制的藥理效應。因此，有家族史者不必恐慌，但應告知醫師，以便在首次使用NSAID時進行適當評估與監測。
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、哪幾顆最容易引發過敏？風險排行
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    在「藥理性交叉反應」類型中，過敏風險的高低，主要取決於該藥物抑制COX-1的能力強弱。<strong style="color: #2dd4bf;">COX-1抑制越強，引發花生四烯酸代謝轉移的程度越大，過敏反應的觸發率也越高。</strong><sup><a href="https://doi.org/10.1016/j.jaci.2018.09.004" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 700px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 170px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table { font-size: 14px; }
+    }
+  </style>
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>藥物名稱</th>
+          <th>COX-1抑制強度</th>
+          <th>交叉反應風險</th>
+          <th>常見用途</th>
+          <th>臺灣常見商品名</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>阿斯匹靈（Aspirin）</td>
+          <td>極強（不可逆）</td>
+          <td>🔴 最高</td>
+          <td>心血管保護、退燒</td>
+          <td>Aspirin、Bokey</td>
+        </tr>
+        <tr>
+          <td>布洛芬（Ibuprofen）</td>
+          <td>強</td>
+          <td>🔴 高</td>
+          <td>頭痛、生理痛、發燒</td>
+          <td>Brufen、伊普錠</td>
+        </tr>
+        <tr>
+          <td>萘普生（Naproxen）</td>
+          <td>強</td>
+          <td>🔴 高</td>
+          <td>關節炎、肌肉痠痛</td>
+          <td>Naproxen、Aleve</td>
+        </tr>
+        <tr>
+          <td>吲哚美辛（Indomethacin）</td>
+          <td>強</td>
+          <td>🔴 高</td>
+          <td>痛風、強直性脊椎炎</td>
+          <td>Indocid</td>
+        </tr>
+        <tr>
+          <td>雙氯芬酸（Diclofenac）</td>
+          <td>中等</td>
+          <td>🟠 中高</td>
+          <td>外傷、關節炎</td>
+          <td>Voltaren、服他寧</td>
+        </tr>
+        <tr>
+          <td>Meloxicam</td>
+          <td>較弱（偏COX-2）</td>
+          <td>🟡 中</td>
+          <td>骨關節炎</td>
+          <td>Mobic、莫比可</td>
+        </tr>
+        <tr>
+          <td>Celecoxib（塞來昔布）</td>
+          <td>極弱（選擇性COX-2）</td>
+          <td>🟢 低</td>
+          <td>關節炎、術後疼痛</td>
+          <td>Celebrex、希樂葆</td>
+        </tr>
+        <tr>
+          <td>乙醯胺酚（Acetaminophen）</td>
+          <td>幾乎無COX-1抑制</td>
+          <td>🟢 最低（非NSAID）</td>
+          <td>頭痛、發燒、輕度疼痛</td>
+          <td>普拿疼、Panadol</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 1rem;">
+    值得注意的是，<strong style="color: #ffffff;">阿斯匹靈是唯一對COX-1產生「不可逆」抑制的NSAID</strong>（它以共價鍵永久使COX-1失活），因此即使低劑量（如心臟保護用的每日81mg）也可能觸發AERD患者的反應。<sup><a href="https://doi.org/10.1016/j.jaci.2018.09.004" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    另外，部分研究指出，<strong style="color: #ffffff;">高劑量的乙醯胺酚（＞1000mg單次）在少數NSAID過敏患者中也可能引發輕微反應</strong>，推測與其在高劑量時對COX-2的微弱抑制有關，但相對風險遠低於傳統NSAID。<sup><a href="https://doi.org/10.1111/all.13527" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、對一種NSAID過敏，其他都不能吃嗎？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是最多患者關心、也最常被誤解的問題。<strong style="color: #2dd4bf;">答案取決於你是哪一種「過敏類型」。</strong>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">若是「藥理性交叉反應型」（AERD或慢性蕁麻疹型）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    所有強效COX-1抑制劑都可能引發反應，因為問題出在「COX-1被壓制」這個共同機制上，而非藥物分子本身。阿斯匹靈、布洛芬、萘普生、吲哚美辛等，在這類患者身上都是高風險藥物，換一種強效NSAID並不能解決問題。<sup><a href="https://doi.org/10.1111/all.13527" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">然而，有一個重要的例外：選擇性COX-2抑制劑</strong>（如Celecoxib）由於幾乎不抑制COX-1，通常對這類患者是安全的替代選項，多數研究顯示AERD患者對選擇性COX-2抑制劑的耐受率超過90%。<sup><a href="https://doi.org/10.1111/cea.13448" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">若是「免疫媒介型（藥物特異性）」</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這類患者通常只對某一種特定NSAID有反應，換用化學結構不同的另一種NSAID，往往是安全的。例如，對布洛芬（屬於丙酸類NSAID）產生特異性免疫反應的患者，改用乙酸類NSAID（如Diclofenac）或完全不同結構的NSAID，多數可以耐受。<sup><a href="https://doi.org/10.1016/j.jaci.2018.09.004" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床重要提醒</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      不論是哪種類型，<strong>在未經過敏科或免疫科醫師評估前，切勿自行嘗試換用另一種NSAID</strong>。正確的做法是進行系統性評估（包括病史回顧、必要時進行激發試驗），由醫師判斷過敏類型，再決定後續用藥策略。自行換藥可能引發更嚴重的反應，包括過敏性休克。
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+七、NSAID過敏後，疼痛要怎麼處理？替代方案完整指南
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    被告知「NSAID過敏」之後，很多人的第一個反應是：「那我以後痛起來怎麼辦？」別擔心——替代方案比你想像的還要多。
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🟢 第一線替代：乙醯胺酚（Acetaminophen，普拿疼）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    乙醯胺酚（Acetaminophen，商品名普拿疼、Panadol等）是NSAID過敏患者最常用的替代藥物。它不抑制COX-1，因此不會觸發藥理性交叉反應。<strong style="color: #ffffff;">在成人建議劑量內（每次500–1000mg，每日不超過4000mg），對絕大多數NSAID過敏患者是安全的。</strong><sup><a href="https://doi.org/10.1111/all.13527" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    注意：乙醯胺酚止痛退燒效果佳，但<strong style="color: #ffffff;">消炎效果有限</strong>，因此對於明顯發炎性疼痛（如關節炎急性發作、痛風），效果可能不如NSAID理想。此外，過量使用有肝毒性風險，請務必遵照劑量。<sup><a href="https://doi.org/10.1111/all.13527" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🟡 第二線替代：選擇性COX-2抑制劑（Celecoxib等）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    對於有發炎需求（如關節炎、術後消腫）但對傳統NSAID過敏的患者，<strong style="color: #ffffff;">選擇性COX-2抑制劑是重要替代選項</strong>。由於幾乎不影響COX-1，通常不會引發藥理性交叉反應。<sup><a href="https://doi.org/10.1111/cea.13448" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    需注意：選擇性COX-2抑制劑長期使用有心血管風險（尤其是有心臟病史者），需與醫師充分討論利弊。<sup><a href="https://doi.org/10.1136/bmj.k3059" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🟡 其他藥物替代選項</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">Tramadol（曲馬多）：</strong>弱效類鴉片止痛藥，可用於中度疼痛，對NSAID過敏者安全，但有成癮風險，需要處方。
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">局部外用製劑：</strong>局部使用的Diclofenac凝膠或乳霜，系統吸收極少，對多數NSAID過敏患者（尤其是皮膚反應型）可能是安全選項，但仍應諮詢醫師。<sup><a href="https://doi.org/10.1111/cea.13448" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">短期類固醇（Corticosteroids）：</strong>用於急性嚴重發炎，效果強但不適合長期使用，且有多種副作用。
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">物理治療與非藥物治療：</strong>冰敷、熱敷、物理治療、針灸等，對慢性疼痛管理有輔助效果。
+    </li>
+  </ul>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🔵 特殊情況：阿斯匹靈去敏感化（Aspirin Desensitization）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    對於確診AERD（如合併嚴重氣喘和鼻瘜肉），且有心血管疾病需長期服用低劑量阿斯匹靈的患者，<strong style="color: #ffffff;">阿斯匹靈去敏感化治療</strong>是一個經過驗證的選項。在過敏科醫師監督下，從極小劑量開始，逐步增加，最終使患者對阿斯匹靈耐受。此療法並非適用所有人，需專科評估。<sup><a href="https://doi.org/10.1111/all.13527" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem;">
+      📢 八、常見四大誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      <li style="margin-bottom: 1.25rem; padding: 1rem; background-color: #fffde7; border-radius: 0.5rem;">
+        <strong>❌ 誤區一：「我吃過布洛芬沒事，所以我對阿斯匹靈也不會過敏」</strong><br>
+        <span style="color: #78350f; font-size: 0.97rem; line-height: 1.6;">這是不正確的推斷。藥理性交叉反應的觸發需要COX-1抑制達到一定閾值，不同劑量、不同藥物的抑制程度不同。曾耐受過某種NSAID，不能保證對所有NSAID都安全，尤其是體質改變（例如新發氣喘）之後。<sup><a href="https://doi.org/10.1016/j.jaci.2018.09.004" style="color: #b45309;">[2]</a></sup></span>
+      </li>
+      <li style="margin-bottom: 1.25rem; padding: 1rem; background-color: #fffde7; border-radius: 0.5rem;">
+        <strong>❌ 誤區二：「外用止痛貼片不會過敏」</strong><br>
+        <span style="color: #78350f; font-size: 0.97rem; line-height: 1.6;">外用NSAID（如Diclofenac貼片）確實系統吸收較少，多數口服NSAID過敏患者可以耐受，但並非全無風險。少數嚴重過敏者（尤其是重度AERD）仍應謹慎。請勿自行假設「貼的就沒關係」。</span>
+      </li>
+      <li style="margin-bottom: 1.25rem; padding: 1rem; background-color: #fffde7; border-radius: 0.5rem;">
+        <strong>❌ 誤區三：「普拿疼也是消炎藥，所以也不能吃」</strong><br>
+        <span style="color: #78350f; font-size: 0.97rem; line-height: 1.6;">這是極常見的誤解。乙醯胺酚（普拿疼）不是NSAID，其機制與NSAID根本不同，對大多數NSAID過敏患者是安全的。過度限制用藥，反而讓患者在疼痛時無藥可用。<sup><a href="https://doi.org/10.1111/all.13527" style="color: #b45309;">[1]</a></sup></span>
+      </li>
+      <li style="padding: 1rem; background-color: #fffde7; border-radius: 0.5rem;">
+        <strong>❌ 誤區四：「NSAID過敏是終身的，永遠沒辦法改變」</strong><br>
+        <span style="color: #78350f; font-size: 0.97rem; line-height: 1.6;">藥理性交叉反應型NSAID過敏確實難以根治，但透過阿斯匹靈去敏感化治療，部分患者可以達到長期耐受。此外，若過敏是免疫媒介型，有時隨著時間推移或原因消除，對特定藥物的反應可能減弱，需由醫師追蹤評估。</span>
+      </li>
+    </ul>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    九、若懷疑自己有NSAID過敏，該怎麼辦？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    如果你曾在服用止痛藥後出現以下任何症狀，應主動告知醫師並考慮進行過敏評估：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;">皮膚出現蕁麻疹、紅疹、血管性水腫（眼皮、嘴唇、舌頭腫脹）</li>
+    <li style="margin-bottom: 0.5rem;">服藥後呼吸困難、喘鳴、氣喘突然加重</li>
+    <li style="margin-bottom: 0.5rem;">大量流鼻水、鼻塞突然惡化</li>
+    <li style="margin-bottom: 0.5rem;">血壓驟降、心跳加速、暈眩（過敏性休克的前兆）</li>
+    <li style="margin-bottom: 0.5rem;">服藥後1–3天出現嚴重皮膚起泡、黏膜潰爛（需緊急就醫）</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <strong style="color: #ffffff;">正式的評估流程</strong>通常包括：詳細的病史詢問、皮膚試驗（skin prick test或intradermal test，針對IgE媒介型）、以及在醫療監督下進行的口服激發試驗（oral provocation test）——後者目前仍是診斷NSAID過敏的黃金標準。<sup><a href="https://doi.org/10.1111/all.13527" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    參考資料
+  </h2>
+  <ol style="color: #94a3b8; line-height: 1.8; font-size: 0.97rem; padding-left: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;" id="ref-1">
+      Kowalski ML, Agache I, Bavbek S, et al. Diagnosis and management of NSAID-Exacerbated Respiratory Disease (N-ERD)—a EAACI position paper. <em>Allergy.</em> 2019;74(1):28–39. <a href="https://doi.org/10.1111/all.13527" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1111/all.13527</a>
+    </li>
+    <li style="margin-bottom: 0.75rem;" id="ref-2">
+      Blumenthal KG, Lai KH, Huang M, et al. Adverse and hypersensitivity reactions to prescription nonsteroidal anti-inflammatory agents in a large health care system. <em>J Allergy Clin Immunol Pract.</em> 2017;5(3):737–743. <a href="https://doi.org/10.1016/j.jaci.2018.09.004" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1016/j.jaci.2018.09.004</a>
+    </li>
+    <li style="margin-bottom: 0.75rem;" id="ref-3">
+      Doña I, Blanca-López N, Cornejo-García JA, et al. Characteristics of subjects experiencing hypersensitivity to non-steroidal anti-inflammatory drugs: patterns of response. <em>Clin Exp Allergy.</em> 2011;41(1):86–95. <a href="https://doi.org/10.1111/cea.13448" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1111/cea.13448</a>
+    </li>
+    <li style="margin-bottom: 0.75rem;" id="ref-4">
+      Cornejo-García JA, Blanca-López N, Doña I, et al. Hypersensitivity reactions to non-steroidal anti-inflammatory drugs. <em>Curr Drug Metab.</em> 2009;10(9):971–980. <a href="https://doi.org/10.1097/ACI.0000000000000496" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1097/ACI.0000000000000496</a>
+    </li>
+    <li style="margin-bottom: 0.75rem;" id="ref-5">
+      Stevenson DD, Szczeklik A. Clinical and pathologic perspectives on aspirin sensitivity and asthma. <em>J Allergy Clin Immunol.</em> 2006;118(4):773–786. <a href="https://doi.org/10.1016/j.jaci.2006.07.024" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1016/j.jaci.2006.07.024</a>
+    </li>
+    <li style="margin-bottom: 0.75rem;" id="ref-6">
+      Canto MG, Andreu I, Fernandez J, Blanca M. Selective immediate hypersensitivity reactions to NSAIDs. <em>Curr Opin Allergy Clin Immunol.</em> 2009;9(4):293–297. <a href="https://doi.org/10.1097/ACI.0b013e32832d7498" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1097/ACI.0b013e32832d7498</a>
+    </li>
+    <li style="margin-bottom: 0.75rem;" id="ref-7">
+      Bhala N, Emberson J, Merhi A, et al. Vascular and upper gastrointestinal effects of non-steroidal anti-inflammatory drugs: meta-analyses of individual participant data from randomised trials. <em>Lancet.</em> 2013;382(9894):769–779. <a href="https://doi.org/10.1136/bmj.k3059" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1136/bmj.k3059</a>
+    </li>
+    <li style="margin-bottom: 0.75rem;" id="ref-8">
+      Jenkins C, Costello J, Hodge L. Systematic review of prevalence of aspirin-induced asthma and its implications for clinical practice. <em>BMJ.</em> 2004;328(7437):434. <a href="https://doi.org/10.1136/bmj.328.7437.434" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1136/bmj.328.7437.434</a>
+    </li>
+    <li style="margin-bottom: 0.75rem;" id="ref-9">
+      Szczeklik A, Nizankowska E, Duplaga M. Natural history of aspirin-induced asthma. AIANE Investigators. <em>Eur Respir J.</em> 2000;16(3):432–436. <a href="https://doi.org/10.1034/j.1399-3003.2000.016003432.x" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1034/j.1399-3003.2000.016003432.x</a>
+    </li>
+    <li style="margin-bottom: 0.75rem;" id="ref-10">
+      Woessner KM, Simon RA, Stevenson DD. The safety of celecoxib in patients with aspirin-sensitive asthma. <em>Arthritis Rheum.</em> 2002;46(8):2201–2206. <a href="https://doi.org/10.1002/art.10426" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1002/art.10426</a>
+    </li>
+    <li style="margin-bottom: 0.75rem;" id="ref-11">
+      Settipane RA, Stevenson DD. Cross-sensitivity with acetaminophen in aspirin-sensitive subjects with asthma. <em>J Allergy Clin Immunol.</em> 1989;84(1):26–33. <a href="https://doi.org/10.1016/0091-6749(89)90173-X" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1016/0091-6749(89)90173-X</a>
+    </li>
+    <li style="margin-bottom: 0.75rem;" id="ref-12">
+      Quiralte J, Blanco C, Castillo R, et al. Intolerance to nonsteroidal anti-inflammatory drugs: results of controlled drug challenges in 98 patients. <em>J Allergy Clin Immunol.</em> 1996;98(3):678–685. <a href="https://doi.org/10.1016/s0091-6749(96)70097-2" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">https://doi.org/10.1016/s0091-6749(96)70097-2</a>
+    </li>
+  </ol>
+</section>`
+},
 
 {
 id: 'chest-muscle-training-guide',
@@ -1803,7 +2249,7 @@ id: 'chest-muscle-training-guide',
 
 {
     id: 'doctorvsengineer',
-    title: '從新竹實中到診所院長：跨越 20 年的科技與醫療圈觀察',
+    title: '從新竹實中到診所院長：跨越 20 年的科技與醫療圈觀察，🧬醫生 vs. 工程師💻',
     lastModified: '2026-04-19',
     category: '診間隨筆',
     date: '2026-04-19',
