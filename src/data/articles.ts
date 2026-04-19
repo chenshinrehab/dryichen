@@ -3,6 +3,694 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
 {
+  id: 'home-core-stretching-guide',
+  title: '居家核心訓練與伸展全指南：棒式、橋式、嬰兒式、眼鏡蛇式，哪些腰部病患適合做？',
+  lastModified: '2026-04-20',
+  category: '衛教文章',
+  date: '2026-04-20',
+  summary: '深入解析居家常見核心運動（棒式、橋式、鳥狗式）與伸展動作（嬰兒式、眼鏡蛇式、貓牛式）的訓練肌群、建議時長與組數，並說明各類腰部疾患（椎間盤突出、脊椎狹窄、脊椎滑脫）的適應與禁忌，以實證為依據，提供安全有效的居家復健建議。',
+  coverImage: '/images/news/article/coreexercise.webp',
+  seoTitle: '居家核心訓練與伸展全指南：棒式、橋式、嬰兒式、眼鏡蛇式，哪些腰部病患適合做？',
+  seoDescription: '深入解析居家常見核心運動（棒式、橋式）與伸展動作（嬰兒式、眼鏡蛇式）的訓練肌群、建議時長與組數，並說明各類腰部疾患的適應與禁忌，提供安全有效的居家復健建議。',
+  keywords: [
+    '核心運動',
+    '棒式',
+    '橋式',
+    '嬰兒式',
+    '眼鏡蛇式',
+    '居家復健',
+    '腰痛運動',
+    '椎間盤突出運動',
+    '脊椎狹窄運動',
+    '核心肌群'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    腰部疼痛是全球最常見的肌肉骨骼問題之一，研究顯示終生盛行率高達 85%。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9340836/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
+    居家核心訓練與伸展運動是目前實證支持的非手術介入方式，能有效強化深層穩定肌群、緩解慢性腰痛、改善功能性動作。
+    棒式（Plank）透過等長收縮強化腹橫肌、多裂肌等深層核心肌群，對腰椎的壓迫力遠低於仰臥起坐等動態動作；
+    橋式（Glute Bridge）則以臀大肌為主要目標，透過強化臀部與腰椎穩定肌群，幫助改善因臀肌失能引起的腰痛。
+    嬰兒式、眼鏡蛇式等伸展動作可有效放鬆緊繃的腰部組織、延展脊椎。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/34326296/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>
+    然而，不同的腰部疾病——包含椎間盤突出、脊椎狹窄、脊椎滑脫——對運動有不同的適應症與禁忌，本文將以民眾易懂的語言，逐一解析每個動作的正確做法與適用族群。
+    <sup><a href="https://www.jospt.org/doi/10.2519/jospt.2022.10671" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[3]</a></sup>
+  </p>
+</div>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、為什麼「核心」這麼重要？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    很多人聽到「練核心」就想到六塊腹肌，但其實核心肌群的主要功能不是美觀，而是<strong style="color: #2dd4bf;">穩定脊椎、分散壓力、保護腰部</strong>。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    核心肌群由兩層組成：<strong style="color: #ffffff;">深層穩定肌群</strong>（腹橫肌、多裂肌、骨盆底肌、橫膈膜）負責「靜態」的脊椎穩定；<strong style="color: #ffffff;">表層動作肌群</strong>（腹直肌、豎脊肌、腰方肌）則負責帶動軀幹動作。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK562179/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    當深層肌群功能不足時，表層肌群就必須代償，長期下來造成腰部肌肉僵硬、疼痛，甚至加速椎間盤退化。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    好消息是：核心肌群可以透過每天 10–20 分鐘的居家運動有效訓練，不需要任何器材，只要選對動作、做對方式，就能真正改善腰部功能。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、核心訓練動作詳解
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🔹 棒式（Plank）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    棒式是最常見的核心訓練動作之一，做法是以前臂和腳尖為支撐點，身體保持一直線，就像一根棍子懸在空中。
+  </p>
+ 
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">訓練哪些肌肉？</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">腹橫肌（深層核心）</strong>：最重要的脊椎穩定肌，棒式的主要鍛鍊目標</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">多裂肌</strong>：脊椎旁的深層小肌肉，負責每一節椎骨的精細穩定</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">腹直肌、腹斜肌</strong>：表層腹部肌群，提供整體軀幹張力</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">臀大肌、股四頭肌</strong>：維持雙腿伸直姿勢</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">肩胛穩定肌群</strong>：維持上半身支撐姿勢</li>
+  </ul>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究指出，棒式的最大優點是在有效強化核心的同時，對腰椎的壓迫力（約 1,600–1,800 牛頓）遠低於仰臥起坐或捲腹等動作，對腰部疾患來說更加安全。
+    <sup><a href="https://www.physio-pedia.com/Plank_exercise" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+ 
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">建議做法</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;">趴在地上，以前臂與腳尖撐起身體</li>
+    <li style="margin-bottom: 0.5rem;">身體從頭到腳保持一直線，不要讓臀部翹起或下沉</li>
+    <li style="margin-bottom: 0.5rem;">肚臍略微向內收，感覺腹部微微用力</li>
+    <li style="margin-bottom: 0.5rem;">正常呼吸，不要憋氣</li>
+  </ul>
+ 
+  <div style="background-color: #1e293b; border-left: 4px solid #2dd4bf; padding: 1.2rem; border-radius: 0.5rem; margin-bottom: 1.5rem;">
+    <p style="color: #e2e8f0; margin: 0; font-size: 1.05rem; line-height: 1.7;">
+      <strong style="color: #2dd4bf;">⏱ 建議時長與組數（依程度）：</strong><br>
+      • 初學者：每次撐 <strong>20–30 秒</strong>，休息 30 秒，做 <strong>2–3 組</strong><br>
+      • 進階者：每次撐 <strong>45–60 秒</strong>，休息 30 秒，做 <strong>3 組</strong><br>
+      • 品質優先於時間：30 秒姿勢正確遠比 60 秒姿勢跑掉更有效
+      <sup><a href="https://www.nasm.org/resource-center/exercise-library/plank" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    </p>
+  </div>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">🔹 橋式（Glute Bridge）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    橋式是仰躺後抬起臀部的動作，是復健領域最常開立的居家運動之一，特別適合因為長時間久坐導致「臀肌失憶」（臀部肌肉忘記用力）的現代人。
+  </p>
+ 
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">訓練哪些肌肉？</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">臀大肌</strong>：主要目標肌群，是最重要的髖部伸展肌</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">膕旁肌（大腿後側）</strong>：協助抬起臀部</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">豎脊肌（下背肌）</strong>：維持抬起時脊椎姿勢的穩定</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">腹橫肌</strong>：提供脊椎的靜態穩定</li>
+  </ul>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究顯示，臀肌強化訓練配合腰椎穩定運動，能顯著改善慢性腰痛患者的疼痛程度與功能障礙。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4713798/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    橋式的優勢在於「非負重」動作，對關節壓力小，腰部受傷期間仍可安全執行。
+  </p>
+ 
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">建議做法</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;">仰躺，膝蓋彎曲約 90 度，雙腳踩平地面，與肩同寬</li>
+    <li style="margin-bottom: 0.5rem;">先收緊腹部（像要保護肚子一樣輕輕用力）</li>
+    <li style="margin-bottom: 0.5rem;">吐氣，以雙腳踩地，抬起臀部直到身體從肩膀到膝蓋呈一直線</li>
+    <li style="margin-bottom: 0.5rem;">在最高點夾緊臀部，維持 2 秒</li>
+    <li style="margin-bottom: 0.5rem;">緩慢放下，重複動作。<strong style="color: #ffffff;">避免腰部過度向後翻</strong></li>
+  </ul>
+ 
+  <div style="background-color: #1e293b; border-left: 4px solid #2dd4bf; padding: 1.2rem; border-radius: 0.5rem; margin-bottom: 1.5rem;">
+    <p style="color: #e2e8f0; margin: 0; font-size: 1.05rem; line-height: 1.7;">
+      <strong style="color: #2dd4bf;">⏱ 建議時長與組數：</strong><br>
+      • 初學者：每次 <strong>10 下</strong>，維持 2 秒，做 <strong>2–3 組</strong>，組間休息 30–60 秒<br>
+      • 進階者：每次 <strong>15 下</strong>，或改為單腳橋式，做 <strong>3 組</strong><br>
+      • 每週 3–4 次為宜
+    </p>
+  </div>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">🔹 鳥狗式（Bird Dog）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    鳥狗式是四足跪姿同時伸出對角手腳的動作，常見於物理治療處方，被認為是最有效的腰椎穩定訓練之一。
+  </p>
+ 
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">訓練哪些肌肉？</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">多裂肌</strong>：脊椎最深層的穩定肌群</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">臀大肌、臀中肌</strong>：維持骨盆水平</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">腹橫肌</strong>：核心穩定</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">肩旋轉肌群</strong>：抬起手臂時的肩部穩定</li>
+  </ul>
+ 
+  <div style="background-color: #1e293b; border-left: 4px solid #2dd4bf; padding: 1.2rem; border-radius: 0.5rem; margin-bottom: 1.5rem;">
+    <p style="color: #e2e8f0; margin: 0; font-size: 1.05rem; line-height: 1.7;">
+      <strong style="color: #2dd4bf;">⏱ 建議時長與組數：</strong><br>
+      • 四足跪姿，伸出右手＋左腳，撐 <strong>5–8 秒</strong>，換邊，做 <strong>10 下/側 × 2–3 組</strong><br>
+      • 重點是骨盆不要歪斜，動作緩慢控制
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、伸展動作詳解
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🧘 嬰兒式（Child's Pose）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    嬰兒式是瑜伽中最具代表性的放鬆姿勢，做法是跪趴在地上，臀部向後坐向腳跟，雙臂向前伸展，頭輕輕放在地面。這個姿勢讓脊椎自然延伸，非常適合在訓練後或感覺腰部緊繃時做放鬆。
+  </p>
+ 
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">伸展哪些部位？</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">腰椎後側結構</strong>：讓壓縮的椎間隙稍微打開</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">臀部、髖屈肌</strong>：延展因久坐而緊繃的髖關節</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">肩膀、上背</strong>：雙臂向前伸展可同時放鬆肩頸</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">大腿前側（股四頭肌）、腳踝</strong>：折疊姿勢帶來的延展</li>
+  </ul>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    嬰兒式幫助脊椎減壓與延伸，並可放鬆腰部、開展髖部，同時具有鎮靜心情的效果。
+    <sup><a href="https://www.hingehealth.com/resources/articles/childs-pose/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+ 
+  <div style="background-color: #1e293b; border-left: 4px solid #2dd4bf; padding: 1.2rem; border-radius: 0.5rem; margin-bottom: 1.5rem;">
+    <p style="color: #e2e8f0; margin: 0; font-size: 1.05rem; line-height: 1.7;">
+      <strong style="color: #2dd4bf;">⏱ 建議停留時間：</strong><br>
+      • 每次維持 <strong>30–60 秒</strong>，緩慢深呼吸<br>
+      • 可重複 <strong>2–3 次</strong>，每次訓練後或睡前做<br>
+      • 若膝蓋不適，可在膝窩下方放一個小枕頭
+    </p>
+  </div>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">🧘 眼鏡蛇式（Cobra Pose）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    眼鏡蛇式是趴臥後以雙手撐起上半身的後彎動作，能有效對抗現代人長時間前屈（如滑手機、使用電腦）造成的脊椎過度彎曲。
+  </p>
+ 
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">伸展哪些部位？</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">腹部（腹直肌）</strong>：往後延展腹部前側</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">胸椎（上背）</strong>：促進上背脊椎的後彎活動度</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">髖屈肌</strong>：趴臥時有助延展緊繃的髂腰肌</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">背部伸展肌群</strong>：輕度等長收縮強化背伸肌</li>
+  </ul>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究指出，規律練習包含眼鏡蛇式在內的瑜伽動作 12 週，能有效改善慢性腰痛及伴隨的焦慮感。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/34326296/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+ 
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 16px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 重要注意事項：</strong> 眼鏡蛇式最常見的錯誤是「腰部過度後彎」，把所有的弧度集中在下腰，容易造成腰椎小面關節的壓迫。正確做法是感覺延展發生在<strong>整條脊椎</strong>，特別是上背（胸椎），下腰只是微微後彎，不是主角。骨盆維持中立位，不要讓腰部「卡住」。
+    </p>
+  </div>
+ 
+  <div style="background-color: #1e293b; border-left: 4px solid #2dd4bf; padding: 1.2rem; border-radius: 0.5rem; margin-bottom: 1.5rem;">
+    <p style="color: #e2e8f0; margin: 0; font-size: 1.05rem; line-height: 1.7;">
+      <strong style="color: #2dd4bf;">⏱ 建議停留時間：</strong><br>
+      • 趴下，雙手放肩膀下方，吸氣同時緩慢撐起上半身<br>
+      • 每次維持 <strong>15–30 秒</strong>，做 <strong>3–5 次</strong><br>
+      • 動作幅度以「不痛」為原則，可先從低眼鏡蛇（手肘貼地）開始
+      <sup><a href="https://system.methodisthealthsystem.org/news-center/2020/december/yoga-poses-to-alleviate-back-pain" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+    </p>
+  </div>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">🧘 貓牛式（Cat-Cow Stretch）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    貓牛式是四足跪姿交替進行脊椎屈曲（弓背）與後彎（塌腰）的暖身動作，是早晨起床後的絕佳活動操，能有效潤滑椎間盤、喚醒脊椎。
+  </p>
+ 
+  <div style="background-color: #1e293b; border-left: 4px solid #2dd4bf; padding: 1.2rem; border-radius: 0.5rem; margin-bottom: 1.5rem;">
+    <p style="color: #e2e8f0; margin: 0; font-size: 1.05rem; line-height: 1.7;">
+      <strong style="color: #2dd4bf;">⏱ 建議做法：</strong><br>
+      • 四足跪姿，吸氣時塌腰（牛式），吐氣時弓背（貓式）<br>
+      • 動作隨呼吸緩慢進行，<strong>10 個呼吸為一輪</strong>，做 <strong>2–3 輪</strong><br>
+      • 適合作為訓練前的熱身，或早晨起床後的活動操
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、各動作比較表
+  </h2>
+ 
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 750px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 120px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+  </style>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>動作名稱</th>
+          <th>主要目標肌群</th>
+          <th>類型</th>
+          <th>建議時長/組數</th>
+          <th>難度</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>棒式</td>
+          <td>腹橫肌、多裂肌、腹斜肌</td>
+          <td>等長核心強化</td>
+          <td>20–60 秒 × 2–3 組</td>
+          <td>初中階</td>
+        </tr>
+        <tr>
+          <td>橋式</td>
+          <td>臀大肌、膕旁肌、豎脊肌</td>
+          <td>動態臀部強化</td>
+          <td>10–15 下 × 2–3 組</td>
+          <td>初學</td>
+        </tr>
+        <tr>
+          <td>鳥狗式</td>
+          <td>多裂肌、臀中肌、腹橫肌</td>
+          <td>動態穩定訓練</td>
+          <td>5–8 秒 × 10 下/側 × 2–3 組</td>
+          <td>初中階</td>
+        </tr>
+        <tr>
+          <td>嬰兒式</td>
+          <td>腰椎後側、臀部、髖屈肌</td>
+          <td>被動放鬆伸展</td>
+          <td>30–60 秒 × 2–3 次</td>
+          <td>初學</td>
+        </tr>
+        <tr>
+          <td>眼鏡蛇式</td>
+          <td>腹部、胸椎、背伸肌群</td>
+          <td>主動後彎伸展</td>
+          <td>15–30 秒 × 3–5 次</td>
+          <td>初中階</td>
+        </tr>
+        <tr>
+          <td>貓牛式</td>
+          <td>脊椎全段、豎脊肌</td>
+          <td>動態活動操</td>
+          <td>10 次呼吸 × 2–3 輪</td>
+          <td>初學</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、不同腰部疾病的適應與禁忌
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    同樣是「腰痛」，不同的診斷背後有截然不同的病理機制，因此對運動的反應也大不相同。<strong style="color: #2dd4bf;">做對了事半功倍，做錯了可能越做越糟</strong>。以下針對三種最常見的腰部疾病分別說明。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">椎間盤突出（Disc Herniation）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    椎間盤突出是指椎間盤的髓核向後壓迫神經，常造成腰痛合併下肢放射痛（坐骨神經痛）。由於前屈（彎腰）動作會增加椎間盤前方壓力、讓突出更嚴重，這類病患通常「不喜歡彎腰，喜歡後彎」。
+    <sup><a href="https://premiaspine.com/l5-s1-exercises-to-avoid/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><span style="color: #4ade80;">✅ 適合：</span> 棒式（等長訓練，不增加椎間盤壓力）、橋式、鳥狗式、<strong>眼鏡蛇式</strong>（後彎可幫助髓核復位）</li>
+    <li style="margin-bottom: 0.5rem;"><span style="color: #f87171;">❌ 避免：</span> 仰臥起坐、捲腹、過度前屈的伸展（如坐姿彎腰摸腳尖）、深蹲至底部</li>
+    <li style="margin-bottom: 0.5rem;">嬰兒式若不造成腿部放射痛加重，可嘗試；但若做完腿麻加重，應先停止並諮詢醫師</li>
+  </ul>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床小提醒</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      椎間盤突出患者在做眼鏡蛇式時，若腿部放射痛「集中化」（從腳逐漸往大腿、臀部收縮），是好現象；若痛感向腳尖「周邊化」，應立即停止。這個「集中化現象」是 McKenzie 療法的核心概念，有充分的實證依據。
+    </p>
+  </div>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">腰椎狹窄（Lumbar Spinal Stenosis）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    腰椎狹窄是指脊椎管道因骨刺、韌帶肥厚或椎間盤退化而變窄，壓迫神經。特徵是「走路走一段就腿麻，坐下來休息就好，再走又麻」（神經性跛行）。這類患者通常「喜歡彎腰，不喜歡後彎」，因為彎腰可以增加脊椎管道的空間。
+    <sup><a href="https://www.physio-pedia.com/Core_stabilisation_exercises_vs_decompression_surgery_for_lumbar_spinal_stenosis" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><span style="color: #4ade80;">✅ 適合：</span> 棒式（微調為膝蓋著地的改良版）、橋式、鳥狗式、<strong>嬰兒式</strong>（前屈可暫時減壓）、貓牛式</li>
+    <li style="margin-bottom: 0.5rem;"><span style="color: #f87171;">❌ 避免：</span> 眼鏡蛇式（過度後彎會進一步縮窄椎管）、任何讓腰部後彎的動作、高衝擊性運動</li>
+    <li style="margin-bottom: 0.5rem;">騎固定式腳踏車（前傾姿勢）是此類患者非常適合的有氧替代方案</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">脊椎滑脫（Spondylolisthesis）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    脊椎滑脫是上方椎骨向前滑動，造成脊椎不穩定。此類患者的腰部特別脆弱，訓練重點是「穩定」而非「活動度」，所有讓脊椎過度扭轉或極端屈伸的動作都應避免。
+    <sup><a href="https://www.focusphysiotherapy.com/spondylolisthesis-exercises-safe-avoid/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><span style="color: #4ade80;">✅ 適合：</span> <strong>棒式</strong>（最推薦，等長訓練最安全）、橋式（動作幅度控制在舒適範圍）、鳥狗式</li>
+    <li style="margin-bottom: 0.5rem;"><span style="color: #f87171;">❌ 避免：</span> 仰臥起坐、過度後彎（眼鏡蛇式需謹慎）、旋轉性動作、深蹲、跳躍</li>
+    <li style="margin-bottom: 0.5rem;">嬰兒式若無不適可做，但不宜過度前屈；一切動作優先諮詢專業醫療人員</li>
+  </ul>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在門診中最常遇到的情況是：病患買了網路上的「腰痛舒緩運動」影片，裡面不分青紅皂白地教全部動作，結果椎間盤突出的人做了嬰兒式（過度前屈）越做越麻，脊椎狹窄的人做了眼鏡蛇式（後彎）越做越痛。腰痛的運動處方必須個人化，「有腰痛」不等於「適合同一組動作」。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、各腰部疾病動作適合性速查表
+  </h2>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>動作</th>
+          <th style="text-align: center;">非特異性腰痛<br>（一般腰痠）</th>
+          <th style="text-align: center;">椎間盤突出</th>
+          <th style="text-align: center;">腰椎狹窄</th>
+          <th style="text-align: center;">脊椎滑脫</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>棒式</td>
+          <td style="text-align: center; color: #4ade80;">✅ 適合</td>
+          <td style="text-align: center; color: #4ade80;">✅ 適合</td>
+          <td style="text-align: center; color: #facc15;">⚠️ 改良版</td>
+          <td style="text-align: center; color: #4ade80;">✅ 最推薦</td>
+        </tr>
+        <tr>
+          <td>橋式</td>
+          <td style="text-align: center; color: #4ade80;">✅ 適合</td>
+          <td style="text-align: center; color: #4ade80;">✅ 適合</td>
+          <td style="text-align: center; color: #4ade80;">✅ 適合</td>
+          <td style="text-align: center; color: #4ade80;">✅ 適合</td>
+        </tr>
+        <tr>
+          <td>鳥狗式</td>
+          <td style="text-align: center; color: #4ade80;">✅ 適合</td>
+          <td style="text-align: center; color: #4ade80;">✅ 適合</td>
+          <td style="text-align: center; color: #4ade80;">✅ 適合</td>
+          <td style="text-align: center; color: #4ade80;">✅ 適合</td>
+        </tr>
+        <tr>
+          <td>嬰兒式</td>
+          <td style="text-align: center; color: #4ade80;">✅ 適合</td>
+          <td style="text-align: center; color: #facc15;">⚠️ 需評估</td>
+          <td style="text-align: center; color: #4ade80;">✅ 最推薦</td>
+          <td style="text-align: center; color: #facc15;">⚠️ 需評估</td>
+        </tr>
+        <tr>
+          <td>眼鏡蛇式</td>
+          <td style="text-align: center; color: #4ade80;">✅ 適合</td>
+          <td style="text-align: center; color: #4ade80;">✅ 最推薦</td>
+          <td style="text-align: center; color: #f87171;">❌ 避免</td>
+          <td style="text-align: center; color: #f87171;">❌ 謹慎</td>
+        </tr>
+        <tr>
+          <td>貓牛式</td>
+          <td style="text-align: center; color: #4ade80;">✅ 適合</td>
+          <td style="text-align: center; color: #facc15;">⚠️ 輕柔</td>
+          <td style="text-align: center; color: #4ade80;">✅ 適合</td>
+          <td style="text-align: center; color: #facc15;">⚠️ 輕柔</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="color: #94a3b8; font-size: 0.95rem; margin-top: 0.8rem;">⚠️ 表中建議僅供參考，實際運動處方應由醫師或物理治療師依個人狀況評估。</p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 七、常見三大誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「棒式撐越久越好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 當身體開始代償（臀部翹起、腰部下沉、憋氣），棒式就失去了訓練深層核心的效果，反而可能造成腰部代償壓力。品質永遠優先於時間，30 秒姿勢正確遠比 2 分鐘姿勢跑掉更有效。
+          <sup><a href="https://www.nasm.org/resource-center/exercise-library/plank" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[6]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「腰痛時完全休息不動是最好的」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過時觀念！</strong> 現代實證醫學明確指出，超過 72 小時的完全臥床休息對慢性腰痛有害無益，會加速肌力流失、加重疼痛敏感化。選擇對的動作、維持適當活動，才是正確的復健策略。
+          <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9340836/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「做了就好，不需要看醫生」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>需要小心！</strong> 不同診斷的腰痛運動方向截然相反，錯誤的運動可能讓症狀加重。腰痛合併下肢麻木、無力、大小便困難等症狀，應立即就醫。即使只是一般腰痛，在開始運動計畫前，由醫師確認診斷並取得個人化的運動建議，能大幅降低受傷風險。</span>
+        </div>
+      </li>
+ 
+    </ul>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+    <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+      <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+        <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+      </h2>
+    </div>
+    <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q1：每天都要做嗎？還是隔天休息？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        核心訓練（棒式、橋式、鳥狗式）建議每週 3–4 次，讓肌肉有時間恢復。伸展動作（嬰兒式、貓牛式）則較溫和，可以每天做，尤其適合起床後或睡前進行。
+      </p>
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q2：做完運動後腰更痛，正常嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        輕微的「運動後疲痠感」在 24–48 小時內消退是正常的，但若出現「放射痛加重」、「麻感向腿部延伸」、或「疼痛超過 48 小時不退」，應停止運動並就醫評估。這可能是動作選擇不對或姿勢錯誤的訊號。
+      </p>
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q3：棒式一直撐不過 20 秒，可以從更簡單的版本開始嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        完全可以！棒式可以改為「膝蓋著地版本」（跪姿棒式），降低重量後更容易維持正確姿勢，訓練效果一樣有意義。從這個版本開始，等撐得穩了再逐步進展到標準棒式。
+      </p>
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q4：做瑜伽或皮拉提斯可以替代這些動作嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        部分可以。瑜伽中的嬰兒式、貓牛式、眼鏡蛇式都是本文提到的動作；皮拉提斯也有大量以核心為中心的訓練。研究顯示瑜伽對慢性腰痛有顯著改善效果。
+        <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11530940/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>
+        但仍需注意課程中是否有不適合你診斷的動作，建議告知老師你的腰部狀況。
+      </p>
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q5：做多久才看得到效果？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        研究顯示，規律執行核心訓練 6–12 週後，多數慢性腰痛患者會感受到明顯的疼痛緩解與功能改善。
+        <sup><a href="https://www.jospt.org/doi/10.2519/jospt.2022.10671" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+        但進步是漸進的，前 2–3 週可能感受不明顯，持之以恆是關鍵。
+      </p>
+    </div>
+  </section>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+ 
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    居家核心訓練與伸展不是萬靈丹，但對多數腰部疾患來說是最容易入門、最具實證支持的自我管理工具。棒式穩定深層核心、橋式喚醒臀肌、嬰兒式放鬆腰背、眼鏡蛇式對抗前屈——每個動作都有其適應症與禁忌，選對了才能真正有效。
+  </p>
+ 
+  <p style="color: #475569; font-size: 1.05rem;">
+    如果你有腰部疾病、正在受腰痛困擾，或是不確定自己適合做哪些動作，<strong style="color: #1e293b;">最重要的第一步是確認診斷，再依據診斷選擇運動</strong>。本文提供的資訊是參考指引，個人化的評估仍是最安全的起點——<strong style="color: #1e293b;">預約門診評估，讓醫師協助你找到最適合你的居家訓練計畫</strong>。
+  </p>
+ 
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的速查表，確認你目前的診斷，選出適合的動作，今天就可以從嬰兒式和橋式開始，安全又有效！
+    </p>
+  </div>
+ 
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診個人化評估
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Burcal, C.J., et al. (2022). A Systematic Review of the Effectiveness of Core Stability Exercises in Patients with Non-Specific Low Back Pain. International Journal of Sports Physical Therapy, 17(5), 766–774. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9340836/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9340836</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Anheyer, D., Haller, H., Lauche, R., Dobos, G., & Cramer, H. (2022). Yoga for treating low back pain: a systematic review and meta-analysis. Pain, 163, e504–e517. <a href="https://pubmed.ncbi.nlm.nih.gov/34326296/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 34326296</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Saragiotto, B.T., et al. (2022). Best Exercise Options for Reducing Pain and Disability in Adults with Chronic Low Back Pain: Pilates, Strength, Core-Based, and Mind-Body. Journal of Orthopaedic & Sports Physical Therapy, 52(5). <a href="https://www.jospt.org/doi/10.2519/jospt.2022.10671" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.2519/jospt.2022.10671</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        StatPearls. (2024). Lumbar Stabilization. NCBI Bookshelf. <a href="https://www.ncbi.nlm.nih.gov/books/NBK562179/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Bookshelf: NBK562179</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Physiopedia. (2023). Plank Exercise. <a href="https://www.physio-pedia.com/Plank_exercise" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        NASM. (2025). Plank: How to Do It, Form & Core Benefits. National Academy of Sports Medicine. <a href="https://www.nasm.org/resource-center/exercise-library/plank" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Nam, C.W., & Chung, J. (2015). The Effects of Gluteus Muscle Strengthening Exercise and Lumbar Stabilization Exercise on Lumbar Muscle Strength and Balance in Chronic Low Back Pain Patients. Journal of Physical Therapy Science, 27(12), 3813–3816. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4713798/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 4713798</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hinge Health. (2024). How to Do Child's Pose: Tips and Variations. <a href="https://www.hingehealth.com/resources/articles/childs-pose/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Methodist Health System. (2020). Yoga Poses to Alleviate Back Pain. <a href="https://system.methodisthealthsystem.org/news-center/2020/december/yoga-poses-to-alleviate-back-pain" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Premia Spine. (2024). L5-S1 Exercises to Avoid: Protect Your Lower Back. <a href="https://premiaspine.com/l5-s1-exercises-to-avoid/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Physiopedia. (2023). Core Stabilisation Exercises vs Decompression Surgery for Lumbar Spinal Stenosis. <a href="https://www.physio-pedia.com/Core_stabilisation_exercises_vs_decompression_surgery_for_lumbar_spinal_stenosis" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Focus Physiotherapy. (2023). Lumbar Spondylolisthesis Exercises to Avoid. <a href="https://www.focusphysiotherapy.com/spondylolisthesis-exercises-safe-avoid/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Saper, R.B., et al. (2024). Effectiveness of Virtual Yoga for Chronic Low Back Pain: A Randomized Clinical Trial. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11530940/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11530940</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Vijaya Krishnan, et al. (2026). Plank Exercises—They do train the core! International Journal of Health Sciences and Research, 16(1), 83–90. <a href="https://www.ijhsr.org/IJHSR_Vol.16_Issue.1_January2026/IJHSR11.pdf" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">IJHSR Vol.16 Issue 1</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Wieland, L.S., et al. (2022). Yoga for chronic non-specific low back pain. Cochrane Database of Systematic Reviews, 11, CD010671. <a href="https://doi.org/10.1002/14651858.CD010671.pub3" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1002/14651858.CD010671.pub3</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+
+
+{
   id: 'nsaid-hypersensitivity',
   title: 'NSAID（非類固醇消炎藥）過敏全解析：為什麼有人吃止痛藥會過敏？',
   lastModified: '2026-04-19',
