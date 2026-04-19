@@ -2,7 +2,624 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
 
+  {
+  id: 'marathon-gait-injury-analysis',
+  title: '馬拉松跑姿全解析：腳掌落地方式、步頻步幅，誰更容易受傷？',
+  lastModified: '2026-04-19',
+  category: '衛教文章',
+  date: '2026-04-19',
+  summary: '深度剖析後腳跟著地、中足著地、前腳掌著地三大跑姿，以及過度跨步、步頻不足、軀幹前傾角度對運動傷害的影響。實證研究揭露哪種跑法更容易導致膝蓋疼痛、髂脛束症候群、足底筋膜炎與跟腱病變，並提供科學預防策略。',
+  coverImage: '/images/news/article/marathon-gait-analysis.webp',
+  seoTitle: '馬拉松跑姿全解析：腳掌落地方式、步頻步幅，誰更容易受傷？',
+  seoDescription: '深度剖析後腳跟著地、中足著地、前腳掌著地三大跑姿，以及過度跨步、步頻不足對運動傷害的影響。實證研究揭露哪種跑法更容易導致膝蓋疼痛、髂脛束症候群、足底筋膜炎與跟腱病變，並提供科學預防策略。',
+  keywords: [
+    '馬拉松跑姿',
+    '後腳跟著地',
+    '中足著地',
+    '前腳掌著地',
+    '跑步運動傷害',
+    '髂脛束症候群',
+    '足底筋膜炎',
+    '跟腱病變',
+    '膝蓋疼痛',
+    '步頻',
+    '過度跨步'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    馬拉松是一項對下肢關節需求極高的耐力運動。不同的跑姿——後腳跟著地（Rearfoot Strike）、中足著地（Midfoot Strike）、前腳掌著地（Forefoot Strike）——會造成地面反作用力的傳遞模式、關節受力角度的根本差異，進而引發不同部位的傷害。研究指出，後腳跟著地者更容易發生膝關節傷害（尤其是髕骨股骨疼痛症候群與髂脛束症候群），而前腳掌著地者對阿基里斯腱與小腿的需求最高。此外，過度跨步、步頻不足與軀幹姿勢，同樣是決定跑者受傷風險的關鍵因素。本文將以實證為基礎，系統性剖析各種跑姿的受傷風險，並提供科學預防策略。
+  </p>
+</div>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、為什麼跑姿決定你的受傷風險？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多跑者在備戰馬拉松時，往往專注於訓練里程的累積，卻忽略了一個根本問題：<strong style="color: #2dd4bf;">你的跑姿，正在悄悄累積傷害。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    根據估計，高達 50% 的跑者每年會因傷停跑，任何時間點都有約 25% 的跑者正處於受傷狀態。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9441414/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    跑步動作中，每一步都會產生相當於體重 2 至 3 倍的衝擊力，透過腳掌、踝關節、膝關節、髖關節一路向上傳遞。腳掌落地的方式——也就是跑步的「足部著地模式」——決定了這些衝擊力如何分配到身體各個結構。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    根據研究，足部著地模式共有三種主要類型：後腳跟著地（RFS, Rearfoot Strike）、中足著地（MFS, Midfoot Strike）以及前腳掌著地（FFS, Forefoot Strike）。研究指出，高達 89% 的一般跑者使用後腳跟著地模式，這在很大程度上與現代跑鞋的設計有關——鞋跟厚重的緩衝設計使後跟著地變得更為舒適。
+    <sup><a href="https://www.jospt.org/doi/10.2519/jospt.2015.6019" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    然而，「最常見」並不等於「最安全」。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、後腳跟著地、中足著地、前腳掌著地：各有哪些傷害風險？
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">後腳跟著地（Rearfoot Strike）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    後腳跟著地是最多數跑者使用的著地模式，腳跟為第一接觸地面的部位，腳趾朝上、膝關節相對伸直。這是穿著現代厚底跑鞋者最自然的著地方式。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    從傷害角度來看，後腳跟著地的特徵是<strong style="color: #ffffff;">膝關節受力顯著增加</strong>。一項來自芬蘭坦佩雷運動醫學研究中心的研究發現，後腳跟著地者的膝關節所承受的衝擊力比中足著地者高出 16%，這種過高的力量集中於髕骨與膝關節內側，正是跑步過度使用傷害最常發生的區域。
+    <sup><a href="https://www.jospt.org/doi/10.2519/jospt.2015.6019" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    哈佛大學 2012 年針對 52 位越野跑者的研究更進一步發現，習慣性後腳跟著地者的重複性壓力傷害發生率，是前腳掌著地者的兩倍。
+    <sup><a href="https://scholar.harvard.edu/files/dlieberman/files/2012b.pdf" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    此外，後腳跟著地時會產生一個明顯的地面反作用力「衝擊峰值」（impact transient），這個瞬間的衝擊波以每秒超過 100G 的速率向上傳遞，是下肢疲勞性骨折（尤其是脛骨應力性骨折）的重要風險因素之一。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見傷害：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">髕骨股骨疼痛症候群（Patellofemoral Pain Syndrome，跑者膝）</li>
+    <li style="margin-bottom: 0.5rem;">髂脛束症候群（Iliotibial Band Syndrome，ITBS）</li>
+    <li style="margin-bottom: 0.5rem;">脛骨內側壓力症候群（Medial Tibial Stress Syndrome，俗稱「脛前疼痛」）</li>
+    <li style="margin-bottom: 0.5rem;">脛骨與足部應力性骨折</li>
+    <li style="margin-bottom: 0.5rem;">足底筋膜炎（Plantar Fasciitis）</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">中足著地（Midfoot Strike）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    中足著地是腳掌後部與前部同時接觸地面的著地模式，重量均勻分佈於踝關節、膝關節、髖關節與背部。許多跑步教練與研究者認為這是最「中性」也最有效率的著地方式。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    從生物力學角度，中足著地的最大優勢是<strong style="color: #ffffff;">衝擊力的分散性最佳</strong>。與後腳跟著地相比，中足著地時垂直地面反作用力的載入速率（vertical loading rate）顯著降低，減少了脛骨承受的瞬間衝擊。多項系統性回顧研究的薈萃分析確認，後腳跟著地者的肌骨傷害發生率顯著高於中足與前腳掌著地者。
+    <sup><a href="https://www.jospt.org/doi/10.2519/jospt.2015.6019" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    然而，中足著地並非無傷害風險。芬蘭的對照研究同時發現，中足著地者的踝關節與阿基里斯腱所承受的震波力量比後腳跟著地者高出 20%，顯示傷害風險只是從膝關節「轉移」到了下游的踝關節結構。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8436320/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見傷害：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">踝關節阿基里斯腱病變（Achilles Tendinopathy）</li>
+    <li style="margin-bottom: 0.5rem;">小腿肌肉疲勞性傷害</li>
+    <li style="margin-bottom: 0.5rem;">蹠骨應力性骨折（急性轉換跑姿者）</li>
+  </ul>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在復健臨床上，從後腳跟著地急速轉換為中足著地的跑者，最常見的代價是阿基里斯腱與蹠骨應力性骨折。因為這些組織從未受過高負荷訓練的適應，突然承受倍增的離心負荷，往往在 2–6 週內就發生急性傷害。跑姿轉換必須是漸進式的，通常需要至少 8–12 週的過渡期，並配合小腿肌群的肌力強化訓練。
+    </p>
+  </div>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">前腳掌著地（Forefoot Strike）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    前腳掌著地是由腳趾球（前腳掌）最先接觸地面的著地模式，常見於精英長跑選手與赤足跑者。這種跑法充分利用足弓與小腿肌群的彈性儲能機制，在特定速度下具有良好的運動經濟性。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    然而，前腳掌著地對下肢遠端組織的要求最高。生物力學研究顯示，前腳掌著地時的阿基里斯腱受力為後腳跟著地的 1.44 倍（分別為 2,194N vs 1,526N），而蹠趾關節的反作用力同樣最大。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6226080/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+    前腳掌著地適合短跑與高速跑，但對馬拉松這樣的超長距離跑步而言，持續的高阿基里斯腱負荷可能造成累積性傷害。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    值得注意的是，前腳掌著地若腳趾過於前傾（著地點太靠近腳趾尖），在長距離跑步中反而容易引發脛前疼痛或跟腱傷害。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8436320/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見傷害：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">嚴重阿基里斯腱病變（Achilles Tendinopathy）甚至腱斷裂</li>
+    <li style="margin-bottom: 0.5rem;">蹠骨應力性骨折（尤其是第 2、3 蹠骨）</li>
+    <li style="margin-bottom: 0.5rem;">前足蹠痛（Metatarsalgia）</li>
+    <li style="margin-bottom: 0.5rem;">小腿三頭肌肌肉拉傷</li>
+  </ul>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、過度跨步 vs. 最佳步頻：誰的傷害風險更高？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    足部著地模式之外，<strong style="color: #2dd4bf;">步幅長度與步頻</strong>是另一個決定跑步傷害風險的關鍵因素，兩者往往被業餘跑者嚴重忽視。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">過度跨步（Overstriding）的危害</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    過度跨步是指腳落地點在重心（質心）前方過遠的跑步模式。許多業餘跑者為了「跑得更快」而刻意拉大步幅，卻不知道這是造成膝關節與脛骨傷害的重要機制。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    生物力學研究顯示，步幅增加 15% 就會使下肢加速度峰值顯著增加，在數千步的累積之下，這種額外的衝擊極可能導致過度使用傷害。
+    <sup><a href="https://www.edoriumjournaloforthopedics.com/archive/article-full-text/100011O03WA2019" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    過度跨步幾乎必然伴隨後腳跟著地，製造出更高的衝擊載荷，進一步加重膝關節、脛骨與髖部的負擔。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    重要的是，「步幅長」本身並不等於危險，關鍵在於是否過度跨步——腳落地點是否在重心前方太遠。許多精英跑者擁有很長的步幅，但腳的落地點就在重心正下方，因此不存在過度跨步的問題。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4714754/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">步頻提升的保護效果</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    提高步頻（cadence，即每分鐘步數）是目前最受科學支持的跑步傷害預防策略之一。一項系統性回顧與薈萃分析確認，增加步頻有強力證據支持可降低膝關節屈曲角度峰值，以及中等程度的證據支持可降低髕骨股骨關節應力與膝關節伸展力矩。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9441414/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    2025 年發表的系統性回顧更進一步指出，適度提高步頻（通常增加 5% 至 10%）是優化跑步生物力學、降低過度使用傷害風險的有效策略，同時，一項 12 個月的步態再訓練計畫發現，加入步頻調整後，新手跑者的傷害風險降低了 62%。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12440572/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+ 
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 典型案例：</strong><br><br>曾有業餘馬拉松跑者每週跑量超過 60 公里，但步頻長期低於 160 步/分鐘，並有明顯的過度跨步習慣。在訓練後期出現持續性外側膝痛，診斷為髂脛束症候群。後經步態分析確認，其過度跨步導致每步的水平制動力遠超正常值，在訓練里程快速增加的壓力下，最終誘發傷害。透過將步頻提升至 170–175 步/分鐘，並縮短步幅，症狀在 6 週內顯著改善。
+    </p>
+  </div>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在實際治療中發現，「180 步/分鐘」這個廣為流傳的步頻建議，並非一個放諸四海皆準的標準。研究強調步頻的提升應基於個人的偏好步頻基礎，而非套用固定數字。對一個慣常 155 步/分鐘的跑者，提升至 165–170 步/分鐘已可帶來顯著的生物力學改善；強迫提升到 180 步/分鐘反而可能因為過度不自然而增加傷害風險。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、軀幹姿勢與頭部位置：跑姿細節不容忽視
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">軀幹前傾角度的影響</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    軀幹姿勢是跑步指導中最常被討論卻研究最少的議題之一。研究顯示，適度的軀幹前傾（約 5–10 度）可以將受力從膝關節轉移到髖關節與踝關節，對有髕骨股骨疼痛的跑者有保護效果。Teng 與 Powers 的研究發現，軀幹前傾約 7 度可顯著降低髕骨股骨關節的應力，且不會顯著增加踝關節的負擔。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4714754/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    然而，過度的軀幹前傾（超過 15 度）會使髖屈肌群負荷增加、腰椎承受過大的剪切力，反而增加下背痛與髖屈肌拉傷的風險。過度後傾（軀幹過直甚至後仰）則常伴隨過度跨步，加重膝關節負擔。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11135760/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">頭部前移姿勢（Forward Head Posture）的連鎖效應</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    頭部前移（下巴突出、頸椎過度前凸）是現代人常見的姿勢問題，也是許多跑者在疲勞後期出現的典型代償動作。研究顯示，頭部前移姿勢會增加上頸椎關節的負荷，干擾頸椎本體感覺的傳遞，進而影響整體的平衡控制與動作協調性。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7835487/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+    在馬拉松後半段，頭部前移往往是全身姿勢崩潰的第一個信號，往往連帶引發肩部聳起、軀幹旋轉增加與步態不對稱，顯著提升下肢傷害的風險。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、各跑姿傷害風險比較表
+  </h2>
+ 
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>跑姿類型</th>
+          <th>主要受力部位</th>
+          <th>最常見傷害</th>
+          <th>業餘跑者相對風險</th>
+          <th style="text-align: center; white-space: nowrap;">特別注意族群</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>後腳跟著地（RFS）</td>
+          <td>膝關節、脛骨、髖部</td>
+          <td>跑者膝（PFPS）、髂脛束症候群、脛骨應力性骨折</td>
+          <td>高（膝關節）</td>
+          <td style="text-align: center;">長距離訓練、膝關節舊傷者</td>
+        </tr>
+        <tr>
+          <td>中足著地（MFS）</td>
+          <td>踝關節、阿基里斯腱</td>
+          <td>阿基里斯腱病變、踝關節扭傷</td>
+          <td>中等</td>
+          <td style="text-align: center;">急速轉換跑姿者</td>
+        </tr>
+        <tr>
+          <td>前腳掌著地（FFS）</td>
+          <td>阿基里斯腱、蹠骨、小腿</td>
+          <td>阿基里斯腱斷裂、蹠骨應力性骨折、前足蹠痛</td>
+          <td>高（下肢遠端）</td>
+          <td style="text-align: center;">長距離跑者、缺乏小腿肌力者</td>
+        </tr>
+        <tr>
+          <td>過度跨步</td>
+          <td>膝關節、脛骨、髖部</td>
+          <td>髂脛束症候群、脛前疼痛、應力性骨折</td>
+          <td>高</td>
+          <td style="text-align: center;">步幅大、步頻低（&lt;160步/分）者</td>
+        </tr>
+        <tr>
+          <td>低步頻跑法（&lt;160步/分）</td>
+          <td>膝關節、踝關節</td>
+          <td>跑者膝、髂脛束症候群</td>
+          <td>中高</td>
+          <td style="text-align: center;">初跑者、體型較高者</td>
+        </tr>
+        <tr>
+          <td>軀幹過直或後仰</td>
+          <td>膝關節、腰椎</td>
+          <td>跑者膝、下背痛</td>
+          <td>中（合併過度跨步時高）</td>
+          <td style="text-align: center;">體能下降後半段跑者</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、常見馬拉松運動傷害深度解析
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">膝關節：最高發傷害區域</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    膝關節是跑步運動中最常受傷的部位，佔所有跑步傷害的近 50%。根據針對 2000 名受傷跑者的臨床研究，膝關節最常見的傷害依序為：髕骨股骨疼痛症候群（PFPS，跑者膝）、髂脛束症候群（ITBS）、半月板傷害以及髕骨肌腱炎。
+    <sup><a href="https://www.edoriumjournaloforthopedics.com/archive/article-full-text/100011O03WA2019" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    此外，馬拉松比賽後，運動疲勞會引起跑步生物力學的顯著改變。研究發現，完成馬拉松後，跑者在步態支撐期的膝關節屈曲角度減少、髖關節內旋增加，這種模式與髕骨股骨疼痛症候群的發生密切相關。
+    <sup><a href="https://www.tandfonline.com/doi/abs/10.1080/02640414.2024.2332865" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+    更值得注意的是，這些生物力學改變在賽後 2 天內最為顯著，甚至在 7 天後仍有部分殘留，意味著過早恢復訓練的跑者將在不良跑姿下繼續累積傷害。
+    <sup><a href="https://journals.humankinetics.com/view/journals/jsr/29/7/article-p934.xml" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">髂脛束症候群（IT Band Syndrome）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    髂脛束症候群是長距離跑者最常見的外側膝痛來源，源於髂脛束在膝關節外側反覆摩擦產生的發炎刺激。距離跑者尤其容易受影響，因為膝關節反覆彎曲伸直的動作模式正是誘發因素。
+    <sup><a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/iliotibial-band-syndrome" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    從跑姿角度，過度跨步與低步頻是髂脛束症候群的重要風險因素。研究已確認，增加步頻不僅可以減少過度跨步，也能有效降低髖關節內收峰值，減少髂脛束的張力。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9441414/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">阿基里斯腱病變（Achilles Tendinopathy）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    阿基里斯腱病變是前腳掌與中足著地跑者的高風險傷害，也是所有跑者中第二常見的慢性傷害。生物力學研究確認，阿基里斯腱病變跑者的衝擊衝量（strike impulse）顯著高於健康跑者，且伴隨功能喪失與生物力學對位失調，儘管多數受傷跑者仍帶傷繼續訓練，但伴隨疼痛與性能下降。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8158676/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[15]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">足底筋膜炎（Plantar Fasciitis）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    足底筋膜炎是跑者中最常見的足部傷害，主要特徵為腳跟內側疼痛，晨起踩地時尤為明顯。後腳跟著地跑者因每步對足跟骨的衝擊力更大，足底筋膜炎的風險相對較高。急速增加訓練里程（違反 10% 法則）是最常見的誘因，跑者若在訓練量過大的情況下忽視早期症狀繼續跑步，往往從急性發炎演變為慢性退化，治療期大幅延長。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9325808/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[16]</a></sup>
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 七、常見三大跑步誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「前腳掌著地才是正確跑法，後腳跟著地一定會受傷」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 前腳掌著地確實可以降低膝關節的衝擊，但會大幅提高阿基里斯腱與蹠骨的負荷。對於大多數業餘馬拉松跑者而言，貿然轉換為前腳掌著地，在缺乏充分小腿肌力與適應期的情況下，反而會引發新的傷害。研究顯示，不同著地模式只是傷害的「部位轉移」，而非消除傷害。<sup><a href="https://www.jospt.org/doi/10.2519/jospt.2015.6019" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[2]</a></sup> 最好的跑法，是在個人體能、肌力基礎與訓練背景下，找到最適合自己的著地模式。</span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「步頻一定要達到 180 步/分鐘才算正確」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>迷思！</strong> 180 步/分鐘是多年前基於精英跑者觀察所提出的粗略估計，並非適用所有人的黃金標準。研究明確指出，步頻調整應基於個人的基礎步頻，建議增加 5–10% 即可帶來顯著的生物力學改善，強迫達到特定數字反而可能造成適得其反的效果。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12440572/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[9]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「完賽後膝蓋痛很正常，休息幾天就好了」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>危險！</strong> 研究已證實，馬拉松後的跑步生物力學改變在賽後 2 天最為嚴重，7 天後仍可能未完全恢復。<sup><a href="https://journals.humankinetics.com/view/journals/jsr/29/7/article-p934.xml" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[13]</a></sup> 在這段恢復期間，以變形的跑姿進行訓練等同於在錯誤的生物力學下持續累積傷害。若膝關節疼痛超過 72 小時或伴隨腫脹，應及早就醫評估，而非一味等待。</span>
+        </div>
+      </li>
+ 
+    </ul>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    八、如何選擇適合自己體能狀況的跑姿？
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">你是否容易出現膝蓋疼痛？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">若你過去有過膝關節傷害或跑者膝，建議：</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">逐步嘗試中足著地，減少後腳跟著地的衝擊峰值</li>
+    <li style="margin-bottom: 0.5rem;">增加步頻 5–10%，縮短步幅以避免過度跨步</li>
+    <li style="margin-bottom: 0.5rem;">確保腳落地點在重心正下方，而非身體前方</li>
+    <li style="margin-bottom: 0.5rem;">加強髖外展肌群（臀中肌）力量，減少膝關節內翻壓力</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">你是否容易出現踝部或阿基里斯腱不適？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">若你的阿基里斯腱曾有過疼痛或腫脹：</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">避免急速改為前腳掌著地，保持中足或後腳跟著地，循序漸進轉換</li>
+    <li style="margin-bottom: 0.5rem;">加強小腿離心肌力訓練（如後跟下降練習），提升肌腱耐受力</li>
+    <li style="margin-bottom: 0.5rem;">跑步前後進行充分的小腿伸展</li>
+  </ul>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    九、預防策略：從訓練到裝備
+  </h2>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">遵守 10% 法則：</strong>每週訓練里程增加不超過 10%，讓肌腱與骨骼有足夠時間適應，這是預防跑步過度使用傷害最有效的單一策略之一
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9325808/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[16]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">逐步調整步頻：</strong>以個人當前步頻為基礎，每 2–4 週提升 5%，目標在 8–12 週內提升 10%，可顯著降低膝關節與髂脛束傷害風險
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12440572/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">選擇適合的跑鞋：</strong>鞋跟落差（heel-to-toe drop）是影響著地模式的重要因素。落差大（10–12mm）的跑鞋傾向後腳跟著地；落差小（0–4mm）的鞋款傾向中足或前腳掌著地。跑鞋選擇應根據個人的跑姿基礎與體能狀況，而非單純跟隨流行
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9325808/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[16]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">肌力訓練不可省略：</strong>臀肌（尤其是臀中肌）、股四頭肌與小腿三頭肌的肌力訓練，是降低膝關節與踝關節過度使用傷害的重要基礎
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">步態分析：</strong>在專業人員協助下進行跑步步態分析，識別並矯正過度跨步、骨盆側傾或膝關節外翻等高風險動作模式
+    </li>
+  </ul>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏃</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：我應該改變我習慣的跑姿嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不一定。如果你目前的跑姿沒有帶來反覆性傷害，強制改變跑姿反而可能製造新的問題。改變跑姿最有意義的情況是：有明確的過度跨步習慣、步頻明顯過低，或有特定部位的反覆傷害需要透過跑姿調整來減少受力。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：使用碳板跑鞋可以降低受傷風險嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      碳板跑鞋的設計主要是為了提升運動表現（跑步經濟性），而非降低受傷風險。部分研究顯示碳板鞋可能改變著地模式，減少部分衝擊，但對於跑姿基礎不佳或肌力不足的跑者，高效能跑鞋並不能取代正確的跑姿訓練。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：馬拉松後膝蓋一直痛，多久應該就醫？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      若膝關節疼痛超過 72 小時仍未緩解，或出現明顯腫脹、上下樓梯劇痛、關節積水等症狀，應儘早就醫評估。早期介入可避免急性傷害演變為慢性問題，也可透過影像學確認是否有半月板或韌帶損傷，以排除需要手術的情況。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：跑步傷害一定要停跑嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不一定完全停止，但需要智慧性的訓練調整。許多跑步傷害（如阿基里斯腱病變、足底筋膜炎）在適度減量、調整強度的情況下仍可維持有氧訓練。關鍵是在不引發明顯疼痛惡化的前提下進行跑步，並同步進行針對性的復健訓練。若繼續跑步會加重症狀，則應先停止，以免傷害惡化至需要手術的程度。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：跑步前的暖身對預防傷害有效嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      是的，但暖身的形式很重要。靜態拉伸在跑步前並不被推薦（可能暫時降低肌肉力量），應以動態暖身（動態拉伸、關節活動度練習）為主，搭配 5–10 分鐘的低強度慢跑讓組織溫度上升。跑步後則可進行靜態拉伸與泡沫滾筒放鬆，有助於改善恢復品質。
+    </p>
+ 
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
   
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    馬拉松跑步傷害的發生，從來不是單一因素的結果。足部著地模式決定了不同關節的受力分布，步頻與步幅影響了衝擊傳遞的效率，而訓練量管理、肌力基礎與跑鞋選擇，則共同決定了傷害是否真的會發生。
+  </p>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    無論你是剛開始備戰第一場馬拉松的初跑者，還是征戰多年的老手，<strong style="color: #1e293b;">最好的預防永遠從「了解自己的身體與跑姿」開始</strong>。如果你對自己的跑步方式或現有的不適症狀有疑慮，不要等到疼痛難忍才行動——一個正確的步態分析，可能為你節省好幾個月的復健時間。
+  </p>
+ 
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的傷害風險比較表，檢視你目前的跑姿習慣，並在下一次訓練時特別留意步頻、著地位置與膝蓋感受。若有任何持續性不適，請尋求專業醫療評估。
+    </p>
+  </div>
+ 
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診評估
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Neal, B.S., et al. (2022). What is the Effect of Changing Running Step Rate on Injury, Performance and Biomechanics? A Systematic Review and Meta-analysis. PMC9441414. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9441414/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9441414</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Almeida, M.O., Davis, I.S., & Lopes, A.D. (2015). Biomechanical Differences of Foot-Strike Patterns During Running: A Systematic Review With Meta-analysis. Journal of Orthopaedic & Sports Physical Therapy, 45(10), 738–755. <a href="https://www.jospt.org/doi/10.2519/jospt.2015.6019" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.2519/jospt.2015.6019</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lieberman, D.E., et al. (2012). Foot Strike and Injury Rates in Endurance Runners: A Retrospective Study. Medicine & Science in Sports & Exercise. <a href="https://scholar.harvard.edu/files/dlieberman/files/2012b.pdf" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Harvard PDF</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Patoz, A., et al. (2021). Risk Factors for Injuries in Runners: A Systematic Review of Foot Strike Technique and Its Classification at Impact. PMC8436320. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8436320/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8436320</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Yong, J.R., Silder, A., & Delp, S.L. (2014). A Forefoot Strike Requires the Highest Forces Applied to the Foot Among Foot Strike Patterns. PMC6226080. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6226080/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 6226080</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Aderem, J., & Louw, Q.A. (2015). Biomechanical risk factors associated with iliotibial band syndrome in runners: a systematic review. Edorium Journal of Orthopedics. <a href="https://www.edoriumjournaloforthopedics.com/archive/article-full-text/100011O03WA2019" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Willy, R.W., & Davis, I.S. (2016). An Evidence-Based Videotaped Running Biomechanics Analysis. PMC4714754. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4714754/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 4714754</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Schubert, A.G., Kempf, J., & Heiderscheit, B.C. (2014). Influence of Stride Frequency and Length on Running Mechanics: A Systematic Review. Sports Health. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9441414/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9441414</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Miramontes, R., et al. (2025). The Influence of Running Cadence on Biomechanics and Injury Prevention: A Systematic Review. PMC12440572. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12440572/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12440572</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Van Cant, J., et al. (2024). The effect of forward postural lean on running economy, kinematics, and muscle activation. PMC11135760. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11135760/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11135760</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Koseki, T., et al. (2021). Influence of Forward Head Posture on Cervicocephalic Kinesthesia and Electromyographic Activity of Neck Musculature. PMC7835487. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7835487/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7835487</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Tian, F., et al. (2024). The effect of marathon running on the lower extremity kinematics and muscle activities during walking and running tasks. Journal of Sports Sciences, 42(4). <a href="https://www.tandfonline.com/doi/abs/10.1080/02640414.2024.2332865" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1080/02640414.2024.2332865</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Clermont, C.A., et al. (2019). Fatigue-Related Changes in Running Gait Patterns Persist in the Days Following a Marathon Race. Journal of Sport Rehabilitation, 29(7), 934–940. <a href="https://journals.humankinetics.com/view/journals/jsr/29/7/article-p934.xml" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1123/jsr.2019-0104</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Johns Hopkins Medicine. (2024). Iliotibial Band Syndrome. <a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/iliotibial-band-syndrome" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Fuentes-Abolafio, I.J., et al. (2021). Biomechanical evaluation in runners with Achilles tendinopathy. PMC8158676. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8158676/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8158676</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Willwacher, S., et al. (2022). Running-Related Biomechanical Risk Factors for Overuse Injuries in Distance Runners: A Systematic Review Considering Injury Specificity and the Potentials for Future Research. PMC9325808. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9325808/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9325808</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
 
 {
     id: 'pikmin-bloom-elderly-rehab',
