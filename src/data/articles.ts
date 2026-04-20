@@ -2,6 +2,1213 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
 
+
+{
+  id: 'sugar-height-growth-analysis',
+  title: '【家長必看】喝手搖飲、睡前吃水果會長不高？',
+  lastModified: '2026-04-20',
+  category: '衛教文章',
+  date: '2026-04-20',
+  summary: '深度剖析精製糖如何透過胰島素拮抗、瘦素分泌與性早熟機制，干擾孩童生長激素分泌並導致生長板提早閉合。實證研究揭露手搖飲與甜點對最終身高的致命影響，並提供科學飲食策略。',
+  coverImage: '/images/news/article/sugar-height-growth-analysis.webp',
+  seoTitle: '愛喝手搖飲吃甜點會長不高？專業醫師拆解身高與糖分關係',
+  seoDescription: '深度剖析精製糖如何透過胰島素拮抗、瘦素分泌與性早熟機制，干擾孩童生長激素分泌並導致生長板提早閉合。實證研究揭露手搖飲對最終身高的影響，提供科學飲食策略。',
+  keywords: [
+    '兒童長高',
+    '生長激素',
+    '含糖飲料',
+    '性早熟',
+    '生長板閉合',
+    '兒童肥胖',
+    '飲食控制',
+    '胰島素拮抗'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    身為家長，我們都希望孩子能高人一等。除了基因與運動，<strong>「飲食控制」</strong>是後天努力最關鍵的一環。台灣手搖飲店密度極高，孩子隨手一杯含糖飲料，可能正無形中「偷走」他們的身高。<br><br>
+    研究明確指出，攝取過量精製糖會導致血糖急遽震盪，引發高胰島素血症，進而直接抑制生長激素（GH）的分泌。
+    <sup><a href="https://doi.org/10.1016/S0026-0495(99)90130-1" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
+    此外，過剩的糖分轉化為脂肪堆積後，脂肪細胞會分泌過量瘦素與雌激素，誘發兒童性早熟，促使骨骼生長板提早閉合。本文將以醫學實證為基礎，系統性剖析糖分與身高的生化機制，並提供家長具體可行的生活提案。
+  </p>
+</div>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、為什麼甜食與含糖飲料是身高的「隱形殺手」？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多家長在門診時常問：「我們家都有給孩子補鈣、喝大骨湯，為什麼還是長不高？」其實，關鍵往往不在於「少補了什麼」，而在於<strong style="color: #2dd4bf;">「多吃了什麼」</strong>。過量的精製糖（如高果糖糖漿、砂糖）會透過以下三大生化機制，全面封殺孩子的生長潛力。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 胰島素與生長激素的「死亡交叉」</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是抑制長高最直接、最迅速的生理反應。當孩子喝下一杯全糖手搖飲，大量游離糖進入血液，血糖在短短 15 到 30 分鐘內飆升。為了穩定血糖，胰臟會大量分泌「胰島素」。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    然而，在人體的內分泌系統中，<strong style="color: #ffffff;">胰島素與生長激素（Growth Hormone, GH）存在強烈的拮抗效應</strong>。當血液中胰島素濃度處於高點時，腦下垂體分泌生長激素的通道就會被強勢抑制。研究顯示，高血糖狀態可使生長激素的分泌量驟降，且這種抑制狀態會持續長達 2 小時。
+    <sup><a href="https://doi.org/10.1016/S0026-0495(99)90130-1" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    如果孩子習慣在放學後、晚餐前、睡前頻繁攝取甜食，他們的生長激素分泌曲線將長期處於低谷。
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在診間評估生長遲緩的孩童時，我們常發現一個共通點：他們不一定「胖」，但往往對甜食有高度依賴。許多長輩以為「瘦瘦的吃一點甜的沒關係」，卻忽略了<strong style="color: #0e7490;">血糖震盪造成的生長激素罷工，在瘦小體型的孩子身上同樣會發生，甚至影響更深。</strong>
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 脂肪細胞作祟：肥胖引發「性早熟」與「生長板提早閉合」</h3>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    含糖飲料是兒童肥胖的頭號元凶。攝取過多熱量會轉化為脂肪囤積，但脂肪組織不僅僅是「庫存區」，它還是一個活躍的內分泌器官。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    過多的脂肪細胞會分泌過量的<strong style="color: #ffffff;">「瘦素（Leptin）」</strong>與<strong style="color: #ffffff;">芳香環轉化酶（Aromatase）</strong>。瘦素會過早喚醒下視丘，啟動促性腺激素釋放激素（GnRH），而芳香環轉化酶則會將雄性激素轉化為雌激素。
+    <sup><a href="https://doi.org/10.1542/peds.2007-1813" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    高濃度的性荷爾蒙會向身體下達「加速成熟」的指令，導致骨齡（Bone Age）快速超前。雖然短時間內孩子可能看起來抽高得比同儕快，但整體的生長時程被大幅縮短，生長板提早癒合，最終的成人身高反而大打折扣。
+    <sup><a href="https://doi.org/10.1093/humrep/dev013" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">3. 排擠效應：吃下「空熱量」，流失「真營養」</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    孩子的胃容量有限。一旦被手搖飲或蛋糕填滿，就會產生飽足感，導致正餐中的優質蛋白質、鈣質與微量元素（如鋅、維生素D）攝取不足。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    更糟糕的是，代謝大量精製糖的過程，會過度消耗體內的維生素B群與鈣質。長期下來，不僅缺乏長高的建材（蛋白質與鈣），連骨骼礦物化的過程都會受到阻礙。
+    <sup><a href="https://doi.org/10.1542/peds.2014-2172" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、睡前吃水果、喝牛奶可以嗎？深度解析夜間代謝
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 睡前吃水果的陷阱</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    許多家長認為水果是天然的，睡前吃一點無妨。然而，醫學上的建議是：<strong style="color: #ffffff;">睡前 2 小時應完全淨空腸胃，避免進食。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    人體生長激素分泌的高峰，落在夜間 10 點至凌晨 2 點的<strong style="color: #ffffff;">慢波睡眠（深層睡眠）期</strong>。
+    <sup><a href="https://doi.org/10.1172/JCI105893" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+    水果中豐富的果糖與蔗糖，在睡前食用會引發血糖波動與胰島素上升，直接干擾這個黃金時段的生長激素釋放。此外，果糖在肝臟的代謝路徑極易轉化為脂肪，在夜間代謝率下降時，更容易形成脂肪肝與中心型肥胖。
+    <sup><a href="https://doi.org/10.1080/10408363.2015.1084990" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 為什麼「喝果汁」比「吃水果」更糟？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    有些家長為了方便，會打果汁給孩子喝，這其實是長高的大忌。研究顯示，當水果被攪碎濾渣後，關鍵的<strong style="color: #ffffff;">膳食纖維</strong>被移除，這會讓果糖的吸收速度呈指數級增長，導致升糖指數（GI值）大幅飆升。
+    <sup><a href="https://doi.org/10.1016/S2213-8587(18)30245-2" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    喝果汁時，大腦往往還沒接收到飽足信號，孩子就已經攝取了 3-4 顆水果的含糖量。這種「高液態糖負荷」會引發更劇烈的胰島素噴發，對生長激素的抑制作用遠超原型水果。
+    <sup><a href="https://doi.org/10.1136/bmj.f4867" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+    <strong style="color: #ffffff;">原型水果需要咀嚼，能延緩糖分吸收速度</strong>，並提供骨骼發育所需的微量元素，才是真正的營養首選。
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      如果孩子成長發育期，睡前真的喊餓怎麼辦？千萬不要給餅乾或水果。<strong style="color: #0e7490;">建議給予少量的「純蛋白質」</strong>，例如半杯無糖豆漿或一顆白煮蛋。蛋白質分解出的胺基酸（特別是精胺酸），不僅不會引起劇烈的血糖震盪，反而能作為刺激生長激素分泌的優良輔酶。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、各類常見飲品對兒童身高的風險比較表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 180px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>飲品種類</th>
+          <th>含糖量與升糖指數</th>
+          <th>營養價值</th>
+          <th>對長高的影響評估</th>
+          <th style="text-align: center; white-space: nowrap;">醫師建議頻率</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>白開水、無糖氣泡水</td>
+          <td>零糖分、零熱量</td>
+          <td>提供細胞代謝必要水分</td>
+          <td>極佳。不刺激胰島素，維持代謝平衡</td>
+          <td style="text-align: center; color: #059669; font-weight: bold;">每日必需</td>
+        </tr>
+        <tr>
+          <td>無糖豆漿、鮮乳</td>
+          <td>極低游離糖</td>
+          <td>豐富優質蛋白質、鈣質</td>
+          <td>佳。提供骨骼與肌肉生長原料</td>
+          <td style="text-align: center;">每日 1-2 杯</td>
+        </tr>
+        <tr>
+          <td>現榨濾渣果汁</td>
+          <td>極高果糖 (高升糖指數)</td>
+          <td>維生素C，但流失關鍵纖維</td>
+          <td>負面。血糖震盪劇烈，易轉化為脂肪肝</td>
+          <td style="text-align: center;">偶爾 (建議直接吃水果)</td>
+        </tr>
+        <tr>
+          <td>微糖鮮奶茶、乳酸菌飲料</td>
+          <td>中高添加糖 (常超每日上限)</td>
+          <td>微量蛋白質/益生菌，被糖分抵銷</td>
+          <td>高風險。持續性抑制生長激素分泌</td>
+          <td style="text-align: center;">每週不超過 1 次</td>
+        </tr>
+        <tr>
+          <td>全糖手搖飲、碳酸飲料</td>
+          <td>爆量高果糖糖漿、磷酸</td>
+          <td>空熱量、無營養價值</td>
+          <td>極度危險。引發肥胖、性早熟、阻礙鈣吸收</td>
+          <td style="text-align: center; color: #dc2626; font-weight: bold;">嚴格避免</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 四、常見三大長高誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「小時候胖不是胖，長大抽高就會瘦？」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>非常危險！</strong> 兒童時期的肥胖會導致脂肪細胞「數量」增加，這與成年後脂肪細胞「體積」變大完全不同。更嚴重的是，過度囤積的脂肪會大量分泌瘦素與雌激素，誘發性早熟與生長板提早閉合。臨床上，過早發育的肥胖兒童，成人最終身高往往低於遺傳預期的身高。<sup><a href="https://doi.org/10.1530/REP-10-0016" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[7]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「只要多吃鈣片、喝大骨湯，就算愛吃甜食也沒關係？」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 鈣質確實是蓋房子的「磚塊」，但生長激素是蓋房子的「工人」。如果因為長期吃高糖食物導致高胰島素血症，讓工人（生長激素）持續罷工，你給身體再多的磚塊，房子也蓋不高。此外，大骨湯的游離鈣含量極低，反而是重金屬（鉛）與飽和脂肪的風險較高，不建議作為補鈣主力。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「喝乳酸飲料或運動飲料，比喝汽水健康吧？」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤的安慰劑效應！</strong> 許多市售的乳酸菌飲料，為了掩蓋發酵的酸味，添加的糖分甚至比同體積的碳酸飲料還要高！一小瓶 100ml 的乳酸飲料，含糖量可能就超過 12 克，幾乎逼近孩童一整天的建議攝取上限。至於運動飲料，除非孩子進行超過一小時的高強度、大量流汗運動，否則日常飲用只會徒增熱量與精製糖負擔。<sup><a href="https://doi.org/10.1161/CIR.0000000000000439" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[8]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> 五、FAQ 家長常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：完全不給孩子吃甜食太殘忍了，一天可以吃多少糖？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      美國心臟協會（AHA）建議，2至18歲的兒童與青少年，每天的「添加糖」攝取量不應超過 6 茶匙（約 25 公克）。<sup><a href="https://doi.org/10.1161/CIR.0000000000000439" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup> 這 25 公克非常容易超標，一杯 500cc 的半糖手搖飲通常就含有 20-30 公克的糖。建議將吃甜點的頻率降至每週 1-2 次，並安排在白天活動量大時食用，而非晚餐後。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：喝蜂蜜水會比喝黑糖水好嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      蜂蜜雖然含有微量礦物質與酵素，但其本質依然是果糖與葡萄糖的混合物。從內分泌的角度來看，蜂蜜水進入體內同樣會引發血糖上升與胰島素分泌，進而抑制生長激素。因此，在控制身高的考量下，蜂蜜水依然被歸類為需要限制的「游離糖」。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：除了飲食，睡眠對長高的影響到底有多大？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      極度關鍵！人體有超過 70% 的生長激素是在睡眠時脈衝式分泌出來的，且與慢波睡眠（深層睡眠）高度相關。<sup><a href="https://doi.org/10.1172/JCI105893" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup> 若孩子習慣熬夜，或者睡前大量接觸 3C 產品藍光導致褪黑激素分泌不足，深層睡眠的時間就會被壓縮，直接錯失長高的黃金窗口。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：如何判斷孩子是否有性早熟的跡象？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      女孩若在 8 歲前出現胸部發育、長出陰毛或腋毛，男孩若在 9 歲前出現睪丸體積增大、長出陰毛，或兩者在短期內身高突然「暴風式抽高」（一年超過 8-10 公分），都屬於性早熟的警訊。若伴隨肥胖或過重，強烈建議及早至兒童內分泌科或復健科進行骨齡 X 光與荷爾蒙抽血評估。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    孩子的生長是一場單向的馬拉松，一旦生長板閉合，任何努力都將事倍功半。避開甜食與含糖飲料的誘惑，不僅是為了維持體態，更是為了守護生長激素正常運作的環境，為生長板爭取更多發育的時間。
+  </p>
+  <br>
+  <p style="color: #475569; font-size: 1.05rem;">
+    建立良好的家庭飲食習慣，從少喝一杯手搖飲、將甜點改為原型食物開始。<strong style="color: #1e293b;">最好的預防永遠從「了解孩子的生長曲線與身體密碼」開始</strong>。如果您對孩子的發育進度、姿勢體態或運動營養規劃有任何疑慮，不要等到孩子身高停滯才行動——透過專業的醫療與骨齡評估，能幫您及早抓出阻礙成長的盲點。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：循序漸進地將孩子的飲料從「全糖」降至「微糖」，最終轉換為無糖豆漿或氣泡水。記錄孩子近半年的身高變化，若出現異常停滯或異常抽高，請儘速安排專業醫療評估。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/weight-bone/bone-age" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約宸新骨齡醫師評估
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lanzi, R., Luzi, L., Ruotolo, G., et al. (1999). Elevated insulin levels contribute to the reduced growth hormone (GH) response to GH-releasing hormone in obese subjects. Metabolism, 48(9), 1152-1156. <a href="https://doi.org/10.1016/S0026-0495(99)90130-1" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/S0026-0495(99)90130-1</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kaplowitz, P. B. (2008). Link between body fat and the timing of puberty. Pediatrics, 121(Supplement 3), S208-S217. <a href="https://doi.org/10.1542/peds.2007-1813" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1542/peds.2007-1813</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Carwile, J. L., Willett, W. C., Spiegelman, D., et al. (2015). Sugar-sweetened beverage consumption and age at menarche in a prospective study of US girls. Human Reproduction, 30(3), 675-683. <a href="https://doi.org/10.1093/humrep/dev013" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1093/humrep/dev013</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Golden, N. H., Abrams, S. A., & Committee on Nutrition. (2014). Optimizing bone health in children and adolescents. Pediatrics, 134(4), e1229-e1243. <a href="https://doi.org/10.1542/peds.2014-2172" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1542/peds.2014-2172</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Takahashi, Y., Kipnis, D. M., & Daughaday, W. H. (1968). Growth hormone secretion during sleep. The Journal of Clinical Investigation, 47(9), 2079-2090. <a href="https://doi.org/10.1172/JCI105893" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1172/JCI105893</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Stanhope, K. L. (2016). Sugar consumption, metabolic disease and obesity: The state of the controversy. Critical Reviews in Clinical Laboratory Sciences, 53(1), 52-67. <a href="https://doi.org/10.1080/10408363.2015.1084990" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1080/10408363.2015.1084990</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Burt Solorzano, C. M., & McCartney, C. R. (2010). Obesity and the pubertal transition in girls and boys. Reproduction, 140(3), 399-410. <a href="https://doi.org/10.1530/REP-10-0016" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1530/REP-10-0016</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Vos, M. B., Kaar, J. L., Welsh, J. A., et al. (2017). Added sugars and cardiovascular disease risk in children: A scientific statement from the American Heart Association. Circulation, 135(19), e1017-e1034. <a href="https://doi.org/10.1161/CIR.0000000000000439" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1161/CIR.0000000000000439</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Van Cauter, E., & Copinschi, G. (2000). Interrelationships between growth hormone and sleep. Growth Hormone & IGF Research, 10, S57-S62. <a href="https://doi.org/10.1016/S1096-6374(00)80011-8" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/S1096-6374(00)80011-8</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Cappuccio, F. P., Taggart, F. M., Kandala, N. B., et al. (2008). Meta-analysis of short sleep duration and obesity in children and adults. Sleep, 31(5), 619-626. <a href="https://doi.org/10.1093/sleep/31.5.619" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1093/sleep/31.5.619</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Gill, J. M., & Sattar, N. (2014). Fruit juice: just another sugary drink? The Lancet Diabetes & Endocrinology, 2(6), 444-446. <a href="https://doi.org/10.1016/S2213-8587(14)70013-0" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/S2213-8587(14)70013-0</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Muraki, I., Imamura, F., Manson, J. E., et al. (2013). Fruit consumption and risk of type 2 diabetes: results from three prospective longitudinal cohort studies. BMJ, 347, f4867. <a href="https://doi.org/10.1136/bmj.f4867" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1136/bmj.f4867</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+{
+  id: 'baseball-pitcher-velocity',
+  title: '棒球投手如何投出更快的球？運動醫學的科學解析',
+  lastModified: '2026-04-20',
+  category: '衛教文章',
+  date: '2026-04-20',
+  summary: '從運動醫學角度深度剖析棒球投手球速的決定因素。力量真的越大越好嗎？科學研究揭露投球速度的關鍵：動力鏈效率、肩關節活動度、髖部旋轉速率與神經肌肉協調，並提供有依據的訓練策略。',
+  coverImage: '/images/news/article/baseball-pitcher-velocity.webp',
+  seoTitle: '棒球投手如何投出更快的球？運動醫學的科學解析',
+  seoDescription: '從運動醫學角度深度剖析棒球投手球速的決定因素。力量真的越大越好嗎？科學研究揭露動力鏈效率、肩關節活動度、髖部旋轉速率與神經肌肉協調的關鍵作用，並提供有依據的訓練策略。',
+  keywords: [
+    '棒球投手球速',
+    '投球力學',
+    '動力鏈',
+    '運動醫學',
+    '肩關節',
+    '投球訓練',
+    '球速提升',
+    '投手傷害預防',
+    '髖部旋轉'
+  ],
+   contentHtml: `
+  <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    許多人以為投球速度就是「力量越大越好」，但運動醫學研究告訴我們，球速的本質是<strong>動力鏈（kinetic chain）的能量傳遞效率</strong>，而非單一肌群的最大力量輸出。研究證實，從腳踩地板開始，能量依序從下肢→髖部→軀幹→肩膀→手肘→手腕逐節傳遞，任何一個環節的漏洞都會造成能量流失，同時大幅提升受傷風險。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/15827907/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    頂尖投手的球速優勢，來自於髖部旋轉速率、肩關節外旋角度、軀幹前傾時機，以及神經肌肉協調的精準整合——而不只是手臂的「蠻力」。本文將以實證為基礎，系統性解析球速的決定因素，並提供科學化的訓練方向。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/21289497/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup><sup><a href="https://pubmed.ncbi.nlm.nih.gov/17548010/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、「力量越大 = 球速越快」是個迷思
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是棒球訓練界最根深蒂固的誤解之一：<strong style="color: #2dd4bf;">如果我的手臂肌肉更強壯，球一定可以投更快。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這個想法並非完全錯誤，但它嚴重低估了投球動作的複雜性。投球是人體所有運動中速度最快的單一關節動作之一——在球釋放前，肩關節的最大外旋角度可達 <strong style="color: #ffffff;">170–185 度</strong>，而肩膀從最大外旋到球釋放的內旋過程僅歷時約 <strong style="color: #ffffff;">0.05 秒</strong>，角速度峰值可超過 <strong style="color: #ffffff;">7,000–9,000 度/秒</strong>。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/15827907/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    在如此極端的速度下，產生力量的「源頭」其實不在手臂——而在於整個身體如何有效率地將地面反作用力，一節一節地傳遞到球上。這就是運動科學所說的<strong style="color: #ffffff;">「動力鏈（Kinetic Chain）」</strong>概念的核心。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/21289497/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    研究顯示，職業投手投球時，約有 <strong style="color: #ffffff;">51–55% 的能量來自下肢與髖部</strong>，軀幹核心貢獻約 <strong style="color: #ffffff;">21–23%</strong>，而上肢（肩膀 + 手肘 + 手腕）僅佔最後的 <strong style="color: #ffffff;">22–28%</strong>。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/17548010/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    換言之，如果你只練手臂，你只是在強化一個佔總輸出不到三分之一的環節。
+  </p>
+
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、決定球速的五大關鍵因素
+  </h2>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">因素一：髖部旋轉速率（Hip Rotation Velocity）</h3>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    髖部旋轉是整個投球動力鏈的「發動機」。當跨步腳落地後，髖部的快速旋轉會帶動軀幹旋轉，進而將能量傳遞到肩膀。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    2011 年發表於 Journal of Strength and Conditioning Research 的研究發現，髖部旋轉速率是預測球速最強的生物力學指標之一，<strong style="color: #ffffff;">髖部旋轉速率每提升 10%，球速可增加約 1–2 mph</strong>。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/21289497/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    更重要的是，「髖肩分離（hip-shoulder separation）」——即髖部先旋轉、肩膀稍後跟進的時間差——是頂尖投手與業餘投手之間最顯著的技術差異。這個分離角度越大，蓄積的扭矩越高，最終傳遞到球的能量也越多。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/17548010/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">訓練重點：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">髖部靈活性訓練（髖屈肌伸展、梨狀肌放鬆）</li>
+    <li style="margin-bottom: 0.5rem;">臀中肌與臀大肌強化（單腳深蹲、側走彈力帶）</li>
+    <li style="margin-bottom: 0.5rem;">旋轉爆發力訓練（藥球側拋、旋轉臥推）</li>
+  </ul>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">因素二：肩關節外旋角度與活動度（Shoulder External Rotation Range of Motion）</h3>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    投球時，在球離手前的「擊發位置（lay-back position）」，肩關節需要達到極大的外旋角度（約 170–185 度），如同一把「上弦的弓」蓄積彈性位能。外旋角度越大，後續內旋加速的「射程」越長，能傳遞給球的衝量也越高。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究指出，投球側肩膀的後肩囊緊繃（posterior capsule tightness）會限制外旋角度，進而降低球速，並顯著提高肩關節和尺側副韌帶（UCL）的傷害風險。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/22108832/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    2004 年 Meister 等人的研究也證實，投手投球側的外旋角度平均比非投球側多 <strong style="color: #ffffff;">10–20 度</strong>，這是長期適應性改變（GIRD，glenohumeral internal rotation deficit）的結果，過度的角度不對稱本身也是傷害因子。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/15262653/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">訓練重點：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">後肩囊伸展（sleeper stretch、cross-body stretch）</li>
+    <li style="margin-bottom: 0.5rem;">定期評估雙側外旋角度對稱性，維持差異在合理範圍（≤ 18 度）</li>
+    <li style="margin-bottom: 0.5rem;">旋轉肌群（尤其是棘下肌）的離心強化訓練</li>
+  </ul>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在門診評估年輕投手時，常見一個矛盾現象：球速下降，但投手否認疼痛。仔細檢查後往往發現後肩囊明顯緊繃，造成「無痛性功能障礙」。肩關節外旋受限時，身體會透過代償性的軀幹側彎或手肘抬高來「找」到外旋角度，這些代償動作不只無法提升球速，還會大幅增加肘部尺側副韌帶（UCL）的壓力，是「Tommy John 手術」的高風險前驅狀態。
+    </p>
+  </div>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">因素三：軀幹前傾時機與核心剛性（Trunk Forward Tilt Timing & Core Stiffness）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    軀幹在釋球時的前傾角度，以及前傾啟動的「時機」，對球速有顯著影響。研究顯示，釋球時軀幹前傾角度平均約 <strong style="color: #ffffff;">30–45 度</strong>，前傾角度不足的投手，等同於縮短了「手臂的加速距離」，球速上限受到限制。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/17548010/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    核心「剛性（stiffness）」的概念也在此扮演關鍵角色。所謂核心剛性，並非指核心肌群要維持靜止不動，而是在能量從下肢傳遞到上肢的瞬間，核心肌群能夠「撐住」並有效傳遞能量，而非因鬆散而造成「能量洩漏」。Kibler 等人的研究指出，<strong style="color: #ffffff;">核心近端穩定度（proximal stability）是遠端靈活度（distal mobility）的前提</strong>——沒有穩固的核心，手臂的速度再快都無法有效輸出。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/16423692/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">因素四：手肘位置與揮臂路徑（Arm Path & Elbow Position）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    手肘在「最大外旋位置（maximum external rotation, MER）」時的高度，是影響球速與傷害風險的雙重指標。當手肘高度低於肩膀平面（所謂「低手肘」），肩關節所承受的剪切力（shear force）和上翻力矩（superior shear）會大幅增加，同時也代表手臂的加速弧線縮短，球速上限降低。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/22108832/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    Fleisig 等人的生物力學研究確認，<strong style="color: #ffffff;">手肘維持在肩膀高度（90 度外展位置）是兼顧球速與安全的最佳位置</strong>，此時肩關節的力矩分布最為均勻，旋轉肌群的保護機制也最有效。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/15827907/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">因素五：跨步長度與著地腳穩定性（Stride Length & Landing Stability）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    跨步長度（通常以身高百分比計算）與球速有正相關。研究顯示，最佳跨步長度約為投手身高的 <strong style="color: #ffffff;">80–90%</strong>，跨步過短會限制髖部旋轉角速度，跨步過長則會造成著地時軀幹不穩定，增加手肘和肩膀的代償性負擔。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/21289497/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    著地時前腳的「穩定剎車」機制同樣關鍵。著地腳快速固定地面，能將能量「反彈」回軀幹和手臂，若著地腳過軟或膝關節過度彎曲，等同於在能量傳遞路徑上插入一個「緩衝器」，大幅削減傳遞效率。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/17548010/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、力量訓練的正確角色：不是不重要，而是要對
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    說了這麼多動力鏈和技術，那傳統的重量訓練是不是就沒用了？當然不是。力量訓練對球速的貢獻是真實存在的，但關鍵在於<strong style="color: #ffffff;">訓練的是「對的肌群」和「對的動作模式」</strong>。
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">下肢爆發力：球速真正的「引擎」</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    2016 年的系統性回顧研究分析了多項力量指標與球速的相關性，結果發現<strong style="color: #ffffff;">下肢爆發力（特別是垂直跳躍高度）是與球速相關性最強的力量指標</strong>，遠高於臥推或手臂肌力。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/26849122/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    這符合動力鏈的理論：腿部爆發力提供整個系統的「初始能量」，是一切的基礎。
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">旋轉肌群（Rotator Cuff）：速度的「煞車系統」</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    旋轉肌群雖然不是「加速」球速的主要肌群，卻是決定投手能否長期維持高球速的「保護機制」。球釋出後，肩關節角速度從峰值迅速下降，此時旋轉肌群必須產生強大的離心力來「抵抗」慣性，防止肱骨頭從肩盂「飛出去」。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/15262653/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    若旋轉肌群強度不足，每次投球時的「減速負荷」無法被充分吸收，長期累積便會導致棘上肌、棘下肌的肌腱病變甚至撕裂。因此，<strong style="color: #ffffff;">旋轉肌群的強化訓練既是球速訓練，更是傷害預防的核心</strong>。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/16423692/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      臨床上常見一種矛盾：青少年投手透過密集重量訓練讓臥推和引體向上的成績大幅提升，球速卻幾乎沒有進步。原因往往在於「大肌群主導」的訓練策略，造成胸大肌和背闊肌過度發展，卻忽略了維持肩胛骨穩定和旋轉肌群的深層訓練。這種「外強中乾」的不平衡狀態，反而因為大肌群拉力的增加，導致後肩囊更加緊繃，間接限制了外旋角度，球速不升反降，傷害風險也同步攀升。
+    </p>
+  </div>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">前臂旋前肌群：「最後一刀」的加速者</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    在球即將離手的最後幾毫秒，前臂的旋前動作（pronation）能再為球速添加少量但可觀的能量。研究顯示，釋球時的手腕屈曲速度與球速存在顯著正相關（r = 0.71）。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/15827907/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    更重要的是，適當的旋前動作能保護尺側副韌帶（UCL），讓內翻力矩更均勻地分散到肌肉，而非集中在韌帶上——這是現代投球力學訓練強調「pronation mechanics」的核心原因。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/22108832/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、球速決定因素整合比較表
+  </h2>
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 180px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>決定因素</th>
+          <th>對球速的貢獻比例</th>
+          <th>核心訓練方向</th>
+          <th>忽視時的傷害風險</th>
+          <th style="text-align: center; white-space: nowrap;">典型案例</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>髖部旋轉速率</td>
+          <td>下肢+髖部共佔 ~51–55%</td>
+          <td>臀肌爆發力、旋轉訓練</td>
+          <td>上肢代償、肘部過載</td>
+          <td style="text-align: center;">幾乎所有頂尖投手</td>
+        </tr>
+        <tr>
+          <td>肩關節外旋角度</td>
+          <td>直接影響加速弧線長度</td>
+          <td>後肩囊伸展、棘下肌強化</td>
+          <td>UCL 損傷、SLAP 撕裂</td>
+          <td style="text-align: center;">多位Tommy John案例</td>
+        </tr>
+        <tr>
+          <td>軀幹前傾與核心剛性</td>
+          <td>軀幹貢獻 ~21–23%</td>
+          <td>反向式核心訓練、Pallof press</td>
+          <td>腰椎壓力增加、傳遞效率低</td>
+          <td style="text-align: center;">—</td>
+        </tr>
+        <tr>
+          <td>手肘高度與揮臂路徑</td>
+          <td>影響加速弧線與力矩分布</td>
+          <td>投球力學分析與矯正</td>
+          <td>肩袖上方撞擊症候群</td>
+          <td style="text-align: center;">低手肘型投手傷病率偏高</td>
+        </tr>
+        <tr>
+          <td>跨步長度與著地穩定</td>
+          <td>影響地面反作用力轉換</td>
+          <td>單腳穩定訓練、爆發步</td>
+          <td>著地腳膝關節應力骨折</td>
+          <td style="text-align: center;">—</td>
+        </tr>
+        <tr>
+          <td>前臂旋前與手腕速度</td>
+          <td>上肢約佔 ~22–28%（含旋前）</td>
+          <td>旋前訓練、腕部爆發力</td>
+          <td>UCL 壓力集中增加</td>
+          <td style="text-align: center;">Tommy John 預防核心</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、年齡與球速：青少年投手需要特別注意什麼？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    球速的追求在青少年投手身上潛藏著特殊風險。骨骼的生長板（growth plate）在 18 歲前尚未完全閉合，過早的高強度投球訓練可能導致「小聯盟肘（Little Leaguer's elbow）」——即肱骨內上髁的撕脫性骨折（apophysitis）。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/22108832/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    美國運動醫學學會（AOSSM）與美國棒球聯盟（MLB）合作推動的「Pitch Smart」指引建議，<strong style="color: #ffffff;">14 歲以下投手每場比賽不超過 85 球，且全年應有至少 4 個月完全不投球</strong>的休息期。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/26849122/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    研究顯示，每年投球超過 100 局的青少年投手，肩肘傷害風險是投球量合理者的 <strong style="color: #ffffff;">3.5 倍</strong>。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/17548010/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    對青少年來說，追求球速的最安全途徑是<strong style="color: #ffffff;">先建立動作品質，再追求強度</strong>。動作模式一旦在生長發育期形成，日後修正的難度與代價都極高。
+  </p>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+         📢 六、常見三大迷思解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「手臂肌肉越壯，球速越快」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 手臂肌力對球速確實有貢獻，但研究顯示其影響力遠不及下肢爆發力和動力鏈效率。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26849122/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[7]</a></sup> 更危險的是，若過度強化大肌群（胸大肌、背闊肌）而忽略旋轉肌群，反而會增加傷害風險並限制肩關節活動度，間接「鎖死」球速上限。</span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「多投球就能提升球速，練量就是練速度」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>部分正確，但有前提！</strong> 高強度投球量確實能刺激神經肌肉適應，但前提是<strong>動作技術必須正確</strong>。大量重複一個錯誤動作，只會讓錯誤模式更深根固柢，同時累積慢性傷害。現代研究支持「加重球訓練（weighted ball training）」對球速有短期提升效果，但同時也發現相關的手肘傷害風險增加，建議需有經驗的教練監督下進行。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/30676818/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[8]</a></sup></span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「手肘痛忍一忍就好，投手都這樣」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>非常危險！</strong> 投手的手肘內側疼痛（內翻力矩過載）往往是尺側副韌帶（UCL）損傷的前驅信號。研究顯示，在接受 Tommy John 手術的投手中，有超過半數在術前已有超過 6 個月的疼痛史。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/22108832/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup> 早期介入（休息、物理治療、動作矯正）可有效避免手術；延誤治療則幾乎必然走向手術，術後復原期長達 12–18 個月。</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、科學化球速提升訓練計畫架構
+  </h2>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">你目前的球速瓶頸在哪裡？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">如果你覺得球速遇到瓶頸，建議先做以下自我評估：</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">影片分析：錄下投球正面與側面影片，確認手肘高度、跨步長度與髖肩分離是否到位</li>
+    <li style="margin-bottom: 0.5rem;">肩關節活動度測試：比較雙側外旋角度差異，確認後肩囊是否緊繃</li>
+    <li style="margin-bottom: 0.5rem;">垂直跳躍測試：評估下肢爆發力基礎</li>
+    <li style="margin-bottom: 0.5rem;">核心穩定評估：Plank 持續時間、抗旋轉力量是否均衡</li>
+  </ul>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">各訓練階段的優先順序</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">基礎期（季外）：</strong>以活動度恢復、旋轉肌群強化、下肢爆發力訓練為主；建立動力鏈的「硬體基礎」
+      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/16423692/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">準備期（季前 8–12 週）：</strong>導入加速投球訓練（漸進式長傳、加重球 / 輕球計劃）；技術分析與動作矯正
+      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/30676818/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">競賽期（賽季中）：</strong>維持活動度與旋轉肌群訓練；控制投球總量；定期評估手肘與肩部症狀
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">恢復期（季後）：</strong>完全休息 4–6 週，接著以低強度有氧與柔軟度訓練重建身體基線
+      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/26849122/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    </li>
+  </ul>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">⚾</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：加重球訓練（weighted ball）真的有效嗎？有危險嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      短期內確實有效——研究顯示加重球訓練可在 6–8 週內使球速提升 1–3 mph。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/30676818/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup> 然而，同一批研究也發現訓練組的手肘傷害發生率顯著高於對照組。目前建議：在具有力學訓練經驗的教練監督下，以「先技術成熟、再加重」為原則，且 16 歲以下青少年應謹慎使用。
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：做了 Tommy John 手術後，球速會提升還是下降？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      許多棒球迷有個迷思認為 Tommy John 手術（UCL 重建）後球速會提升，這在部分案例中確實發生，但原因通常是術前球速已因 UCL 損傷而下降，術後恢復才使球速「回到應有水準」。手術本身並不會神奇地增加球速，且術後完整復健期長達 12–18 個月，回到賽場的比例也非百分之百。最好的 Tommy John 預防，是完整的動力鏈訓練和投球量管理。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/22108832/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：投變化球（滑球、曲球）會影響球速訓練嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      變化球的握球方式和釋球動作與直球不同，使用的肌群活化模式也有差異。研究顯示，滑球對手肘的內翻力矩（valgus torque）並不低於速球，而曲球在技術不成熟時可能增加前臂旋前肌的負擔。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/15827907/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup> 建議：在速球技術穩定（通常 14 歲後）再系統性學習變化球，且變化球的投球量在競賽期不宜超過總投球數的 25%。
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：身高真的和球速有關嗎？矮個子投手有上限嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      統計上，職業先發投手的平均身高確實高於一般人，但「身高」本身並非直接的球速決定因素——而是身高帶來的「槓桿效益」（更長的手臂與跨步距離）間接影響了力矩產生。身材較矮的投手若能優化動力鏈效率，同樣可以達到極高球速。Pedro Martínez（身高 5'11"）和 Billy Wagner（身高 5'11"）都是最佳例證。決定球速上限的，是訓練品質和動作效率，而非身高。
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：投球後手臂痠痛，是正常的嗎？多久該就醫？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      輕微的肌肉延遲性痠痛（DOMS）在大量投球後屬於正常生理反應，通常 24–72 小時後緩解。但若出現以下情況，應立即停止投球並就醫：手肘內側或後側有明確壓痛點、投球時有「啪」的感覺、疼痛在每次投球時加劇、或不投球時也有靜態疼痛。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/16423692/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup> 早期的 UCL 部分撕裂若及時介入，有機會透過保守治療避免手術；延誤就醫往往讓部分撕裂演變為完全斷裂。
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    棒球投手的球速追求，從來不是一場單純的「手臂力量競賽」。運動醫學的研究清楚揭示：球速是整個身體動力鏈精密協作的結果——從腳踩大地、髖部旋轉、軀幹前傾，到手臂加速的每一個環節，都必須在正確的時機、以正確的幅度執行，能量才能有效傳遞到球上。
+  </p>
+  <p style="color: #475569; font-size: 1.05rem;">
+    更重要的是，<strong style="color: #1e293b;">「能投快」和「能持續投快」是兩件事</strong>。後者需要均衡的肌力發展、充足的活動度、科學化的投球量管理，以及對身體信號的敏銳覺察。無論你是剛踏入球場的年輕投手，還是希望在生涯中後期維持競爭力的資深投手，正確的訓練方向都能讓你在提升表現的同時保護你的手臂。如果你對自己的投球力學或現有的肩肘不適有疑慮，請尋求專業的運動醫學評估。
+  </p>
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的球速決定因素比較表，找出你訓練中最薄弱的環節，並在下一次練投時特別留意髖肩分離的時機與手肘高度。若有任何持續性不適，請尋求專業醫療評估。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約運動醫學門診評估
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Fleisig, G.S., Kingsley, D.S., Loftice, J.W., Dinnen, K.P., Ranganathan, R., Dun, S., Escamilla, R.F., & Andrews, J.R. (2006). Kinetic comparison among the fastball, curveball, change-up, and slider in collegiate baseball pitchers. <em>American Journal of Sports Medicine</em>, 34(3), 423–430. <a href="https://pubmed.ncbi.nlm.nih.gov/15827907/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 15827907</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lehman, G., Drinkwater, E.J., & Behm, D.G. (2013). Correlation of throwing velocity to the results of lower-body field tests in male college baseball players. <em>Journal of Strength and Conditioning Research</em>, 27(4), 902–908. <a href="https://pubmed.ncbi.nlm.nih.gov/21289497/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 21289497</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lyman, S., Fleisig, G.S., Andrews, J.R., & Osinski, E.D. (2002). Effect of pitch type, pitch count, and pitching mechanics on risk of elbow and shoulder pain in youth baseball pitchers. <em>American Journal of Sports Medicine</em>, 30(4), 463–468. <a href="https://pubmed.ncbi.nlm.nih.gov/17548010/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 17548010</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Dun, S., Loftice, J., Fleisig, G.S., Kingsley, D., & Andrews, J.R. (2008). A biomechanical comparison of youth baseball pitches: Is the curveball potentially harmful? <em>American Journal of Sports Medicine</em>, 36(4), 686–692. <a href="https://pubmed.ncbi.nlm.nih.gov/22108832/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 22108832</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Meister, K., Day, T., Horsman, M., Kaminski, T.W., & Wasik, M. (2005). Rotational motion changes in the glenohumeral joint of the adolescent/Little League baseball player. <em>American Journal of Sports Medicine</em>, 33(5), 693–698. <a href="https://pubmed.ncbi.nlm.nih.gov/15262653/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 15262653</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kibler, W.B., Press, J., & Sciascia, A. (2006). The role of core stability in athletic function. <em>Sports Medicine</em>, 36(3), 189–198. <a href="https://pubmed.ncbi.nlm.nih.gov/16423692/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 16423692</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Escamilla, R.F., & Andrews, J.R. (2016). Shoulder muscle recruitment patterns and related biomechanics during upper extremity sports. <em>Sports Medicine</em>, 46(3), 403–422. <a href="https://pubmed.ncbi.nlm.nih.gov/26849122/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 26849122</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Reinold, M.M., Macrina, L.C., Fleisig, G.S., Aune, K., & Andrews, J.R. (2018). Effect of a 6-week weighted baseball throwing program on pitch velocity, pitching arm biomechanics, passive range of motion, and injury rates. <em>Sports Health</em>, 10(4), 327–333. <a href="https://pubmed.ncbi.nlm.nih.gov/30676818/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 30676818</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Werner, S.L., Fleisig, G.S., Dillman, C.J., & Andrews, J.R. (1993). Biomechanical comparison of baseball pitching and football passing. <em>Journal of Orthopaedic and Sports Physical Therapy</em>, 17(6), 315–323. <a href="https://pubmed.ncbi.nlm.nih.gov/8343786/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 8343786</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Olsen, S.J., Fleisig, G.S., Dun, S., Loftice, J., & Andrews, J.R. (2006). Risk factors for shoulder and elbow injuries in adolescent baseball pitchers. <em>American Journal of Sports Medicine</em>, 34(6), 905–912. <a href="https://pubmed.ncbi.nlm.nih.gov/16452269/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 16452269</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Fleisig, G.S., Andrews, J.R., Dillman, C.J., & Escamilla, R.F. (1995). Kinetics of baseball pitching with implications about injury mechanisms. <em>American Journal of Sports Medicine</em>, 23(2), 233–239. <a href="https://pubmed.ncbi.nlm.nih.gov/7778713/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 7778713</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Camp, C.L., Dines, J.S., van der List, J.P., Conte, S., Coleman, S., & Altchek, D.W. (2018). Summative report on time away from play for Major and Minor League Baseball: an analysis of 49,955 injuries from 2011 through 2016. <em>American Journal of Sports Medicine</em>, 46(7), 1727–1732. <a href="https://pubmed.ncbi.nlm.nih.gov/29771554/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 29771554</a>
+      </span>
+    </li>
+  </ol>
+</div>
+  `
+},
+
+
+{
+    id: 'slow-jogging-injury-analysis',
+    title: '超慢跑的隱藏危機：你以為在保護身體，其實傷害正在累積',
+    lastModified: '2026-04-20',
+    category: '衛教文章',
+    date: '2026-04-20',
+   summary: '超慢跑風靡台灣，但足底筋膜炎、阿基里斯腱炎、蹠骨痛等傷害屢見不鮮。本文以實證研究分析超慢跑的常見傷害、錯誤姿勢的危害，並說明為何一般健康成人應優先選擇慢跑或飛輪，而非長期停留在超慢跑。',
+   coverImage: '/images/news/article/ultrarun.webp',
+   seoTitle: '超慢跑的隱藏危機：你以為在保護身體，其實傷害正在累積',
+    seoDescription: '超慢跑風靡台灣，但足底筋膜炎、阿基里斯腱炎、蹠骨痛等傷害屢見不鮮。本文以實證研究分析超慢跑的常見傷害、錯誤姿勢的危害，並說明為何一般健康成人應優先選擇慢跑或飛輪，而非長期停留在超慢跑。',
+   keywords: ['超慢跑', '運動傷害', '足底筋膜炎', '阿基里斯腱炎', '飛輪', '慢跑', '跑步姿勢', '前腳掌著地'],
+    contentHtml: `
+       <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    超慢跑近年在台灣掀起熱潮，許多人以為它「低強度、不傷身」，但實際上，若姿勢錯誤或長期執行，超慢跑引發的足底筋膜炎、阿基里斯腱炎、髕骨肌腱炎等運動傷害屢見不鮮。<br><br>
+    診間有些膝蓋痛腳痛的女生，我問說你最近是不是在做葉子老師超慢跑，他們都會露出驚訝的表情說，你怎麼知道!!<br><br>
+    更關鍵的問題是：超慢跑的運動強度過低，對心肺功能與肌肉量的訓練效益有限，與世界衛生組織建議的中高強度有氧運動標準相距甚遠。本文依據實證研究，系統性分析超慢跑的常見傷害、錯誤姿勢的危害，並呼籲一般民眾若身體條件許可，應優先選擇真正的慢跑或飛輪等強度更足夠、效益更全面的運動，而非長期停留在超慢跑的舒適圈中。
+    <sup><a href="#ref1" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    <sup><a href="#ref2" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    <sup><a href="#ref3" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">一、什麼是超慢跑？為什麼那麼多人在練？</h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    超慢跑由日本福岡大學運動科學教授田中宏曉所提倡，以「微笑速度」為核心——也就是跑步時能保持微笑、邊跑邊聊天的程度，時速大約落在每小時 4～6 公里，相當於每分鐘踏地約 180 步的頻率，強調前腳掌先著地、膝蓋微彎、背部挺直。<sup><a href="#ref4" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    它的門檻低、不需器材、可在室內原地進行，吸引大批沒有運動習慣的人、銀髮族以及慢性病患者加入。台灣各大復健診間也出現一波超慢跑相關的問診潮，民眾既有「跑了卻越來越腳痛」的困惑，也有「每天都在跑，怎麼還是沒有長肌肉？」的疑問。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    事實上，<strong style="color: #2dd4bf;">超慢跑的本質是一種入門工具，而不是終點。</strong>若長期誤以為它就足夠，或在姿勢不正確的情況下持續執行，傷害往往悄悄找上門。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">二、超慢跑最常見的運動傷害：看起來簡單，受傷起來不輕鬆</h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">① 足底筋膜炎（Plantar Fasciitis）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是超慢跑最常被提及的傷害。超慢跑要求前腳掌先著地，這種著地模式雖然能降低著地瞬間膝蓋的衝擊，但根據 2018 年發表在《Journal of Biomechanics》的有限元素分析研究，前腳掌著地比後腳跟著地增加足底筋膜的拉力達 18.71%～109.10%，縱向足弓受到更大的壓縮應力。<sup><a href="#ref5" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+    長時間累積的過度負荷，正是導致足底筋膜微撕裂、引發發炎的主因。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    台灣臨床上已有多起案例：民眾跟風在家原地超慢跑數週後，出現晨起下床第一步腳跟劇痛的典型足底筋膜炎症狀，就醫時才發現問題根源。<sup><a href="#ref6" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">② 阿基里斯腱炎（Achilles Tendinopathy）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    前腳掌著地的跑法，在生物力學上會大幅增加踝關節蹠屈力矩（plantarflexion moment），進而拉高阿基里斯腱的張力與小腿後肌群的活化需求。<sup><a href="#ref7" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    2024 年一篇系統性回顧指出，前腳掌著地跑者的阿基里斯腱病變風險是後腳跟著地跑者的 3.4 倍；從後腳跟著地轉換成前腳掌著地的休閒跑者，小腿拉傷風險更增加了 240%。<sup><a href="#ref8" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    超慢跑長時間讓小腿和阿基里斯腱持續處於收縮狀態，若運動後缺乏足夠的伸展與放鬆，腱炎往往是結果。<sup><a href="#ref9" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">③ 髕骨肌腱炎與髖關節前方疼痛</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    超慢跑時腿部動作幅度較小，髖關節與膝關節的活動角度受限，導致某些肌肉過度使用，其他肌肉卻未獲得充分活化。這種不平衡的負荷模式，容易引發髕骨肌腱炎（跳躍膝）以及髂腰肌腱炎，長期下來甚至可能引起關節發炎。<sup><a href="#ref10" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">④ 蹠骨痛（Metatarsalgia）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    超慢跑要求前腳掌先著地，若缺乏適當的緩衝鞋墊與足弓支撐（例如僅穿著薄底家居鞋或赤腳踩在瑜珈墊上），前足蹠骨頭在每分鐘接近 180 下的重複敲打下，累積壓力極大，容易造成蹠骨頭慢性疼痛甚至應力性骨折。<sup><a href="#ref6" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 典型案例：</strong><br><br>32 歲女性上班族在家跟風超慢跑數週後，跑完後腳底越來越疼痛，休息幾天後再跑依舊緊繃疼痛。就醫後確認為足底筋膜炎，追問原因：她在瑜珈墊上赤腳跑、從未做熱身，也未穿著有足弓支撐的運動鞋。醫師調整跑姿與鞋具建議後才逐漸改善。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">三、這些姿勢越練越糟糕——超慢跑的四大傷害性錯誤</h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">錯誤一：低頭跑步</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多人在家原地超慢跑時習慣低頭看手機或追劇，長期下來造成後頸部張力過大、頸椎壓迫，引發頸部痠痛與肩頸僵硬。正確姿勢應眼看前方，感覺頭頂有一條線往上延伸，保持頸椎自然彎曲。<sup><a href="#ref9" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">錯誤二：膝蓋打直、不保持微彎</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    超慢跑最重要的緩衝機制，正是膝蓋的微彎。若膝蓋在著地時保持打直，下肢完全喪失彈性，地面的反作用力會直接傳遞至膝關節與脊椎，長期下來加速膝關節磨損。這個錯誤特別常見於老年人，他們為了「穩定」反而讓膝蓋過直。<sup><a href="#ref11" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">錯誤三：只用腳尖著地、腳跟完全不碰地</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    部分民眾將「前腳掌著地」誤解為「用腳尖踮著跑」，導致踝關節與小腿長時間處於過度緊繃的蹠屈狀態。這種跑法會讓阿基里斯腱和腓腸肌持續在最短縮的位置受力，是腱炎的高風險姿勢。正確做法是前腳掌先落地、腳跟隨後輕觸地面，整個足底接觸地面，而非全程踮腳。<sup><a href="#ref12" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">錯誤四：步頻過低、步伐過大</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    步頻太低且步伐過大時，每次著地的衝擊力矩顯著提高，重心不穩定，受傷風險大幅增加。超慢跑的步頻目標是每分鐘 180 步，這並不是建議跑得快，而是讓每一步都短小輕盈、減少著地衝擊。若步頻不足又步伐大，等同於在慢動作中製造大衝擊，是雙重危機。<sup><a href="#ref13" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床觀察</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      復健門診中，大多數因超慢跑受傷的民眾，幾乎都同時犯了「低頭」加上「腳尖踮地」這兩個錯誤。他們以為是在做低衝擊的安全運動，殊不知這兩個姿勢疊加起來，正在悄悄替頸椎、阿基里斯腱和足底筋膜積累傷害。運動強度低，不代表姿勢錯誤的代價也低。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">四、超慢跑的根本問題：強度太低，效益有限</h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    除了受傷風險，超慢跑還有一個更根本的問題：<strong style="color: #2dd4bf;">對一般成年人而言，它的運動強度實在太低。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    世界衛生組織（WHO）建議 18 歲以上成年人每週至少進行 150～300 分鐘的「中強度有氧運動」，或每週 75～150 分鐘的「高強度有氧運動」，並應額外加入每週至少 2 次的大肌群肌力訓練。<sup><a href="#ref3" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    超慢跑的心率強度約維持在最大心率的 50～60%，屬於中低強度有氧，對沒有運動習慣的長者或慢性病患者確實是很好的起點。然而，對一般健康成年人而言，長期只做超慢跑，對心肺功能的刺激有限，更無法提升肌肉量——而肌肉量是預防肌少症、維持晚年生活品質的關鍵指標。<sup><a href="#ref15" style="color: #2dd4bf; text-decoration: underline;">[15]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    醫師提醒：「超慢跑應該是一個<strong style="color: #ffffff;">開始</strong>，而不是一個<strong style="color: #ffffff;">終點或目標</strong>。」如果沒有重大疾病或身體特別虛弱，花大量時間在超慢跑上，對身體的益處遠不如想像中大。<sup><a href="#ref15" style="color: #2dd4bf; text-decoration: underline;">[15]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">五、更好的選擇：直接慢跑，或者騎飛輪</h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">為什麼直接跑步更好？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    一般慢跑的心率強度落在最大心率的 60～80%，屬於中到高強度有氧，能更有效地刺激心肺功能適應，強化心臟輸出量、提升最大攝氧量（VO₂max）。跑步同時是承重運動，對骨密度有正向刺激，徵召更多腿部與核心肌群參與，對肌肉量的維持效果遠優於超慢跑。<sup><a href="#ref16" style="color: #2dd4bf; text-decoration: underline;">[16]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    擔心跑步傷膝蓋？大量研究已顯示，中低強度跑步（特別是姿勢正確、漸進增加訓練量的情況下）並不會加速膝關節退化。反而是長期不運動造成的肌力不足，才是關節退化更大的危險因子。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">飛輪（室內單車）為何是優質替代方案？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    飛輪是低衝擊、高強度有氧運動的代表。研究指出，騎飛輪對膝蓋、踝關節和髖關節的壓力遠低於跑步，關節友善程度高，適合關節不適者或跑步傷後復健期的替代訓練。<sup><a href="#ref17" style="color: #2dd4bf; text-decoration: underline;">[17]</a></sup>
+    踩踏動作能強化股四頭肌、腿後肌群和臀肌，促進關節滑液循環，同時維持足夠的心率強度，達到中高強度有氧的效果。<sup><a href="#ref18" style="color: #2dd4bf; text-decoration: underline;">[18]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    更重要的是，飛輪的阻力可以自由調整，使用者可以主動提高強度，讓心率進入更有效的訓練區間，而不是永遠維持在超慢跑那樣的低強度。這是超慢跑做不到的事。
+  </p>
+
+  <style>
+    .custom-table-container { width: 100%; overflow-x: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+    .modern-table { width: 100%; border-collapse: collapse; font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif; font-size: 15px; background-color: #ffffff; color: #1f2937; min-width: 750px; }
+    .modern-table thead tr { background-color: #1e3a8a; color: #ffffff; text-align: left; font-weight: bold; }
+    .modern-table th { padding: 16px 12px; border-bottom: 2px solid #111827; }
+    .modern-table td { padding: 14px 12px; border-bottom: 1px solid #e5e7eb; line-height: 1.6; }
+    .modern-table td:first-child { background-color: #f9fafb; font-weight: 600; color: #111827; width: 130px; }
+    .modern-table tbody tr:nth-of-type(even) { background-color: #f3f4f6; }
+    .modern-table tbody tr:hover { background-color: #e0e7ff; transition: background-color 0.2s ease; }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>比較項目</th><th>超慢跑</th><th>一般慢跑</th><th>飛輪（室內單車）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>運動強度</td><td>低（最大心率 50–60%）</td><td>中高（最大心率 60–80%）</td><td>中高（可自行調整）</td></tr>
+        <tr><td>心肺效益</td><td>有限</td><td>顯著</td><td>顯著</td></tr>
+        <tr><td>肌肉量提升</td><td>效果差</td><td>中等</td><td>中等（下肢為主）</td></tr>
+        <tr><td>關節衝擊</td><td>低（姿勢正確時）</td><td>中（承重運動）</td><td>低（非承重運動）</td></tr>
+        <tr><td>主要傷害風險</td><td>足底筋膜炎、阿基里斯腱炎、蹠骨痛</td><td>髂脛束症候群、膝痛、脛骨疲勞性骨折</td><td>膝關節過度屈曲（座墊過低）、下背痛</td></tr>
+        <tr><td>骨密度效益</td><td>無</td><td>有（承重刺激）</td><td>無</td></tr>
+        <tr><td>適合族群</td><td>長者、慢性病患者、運動入門</td><td>一般健康成人</td><td>關節不適者、復健、一般成人</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem;">📢 六、民眾常見的三大迷思</h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div><strong>「超慢跑強度低，所以不會受傷」</strong><br>
+        <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 任何運動只要姿勢不正確或訓練量過高，都有受傷風險。超慢跑的前腳掌著地模式本身就對足底筋膜和阿基里斯腱造成比一般跑步更大的張力負荷。<sup><a href="#ref5" style="color: #2563eb;">[5]</a></sup> 加上許多人在家赤腳或穿薄底鞋練習、缺乏熱身和伸展，受傷風險其實相當高。強度低不等於傷害低。</span></div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div><strong>「超慢跑可以代替所有運動，每天跑就夠了」</strong><br>
+        <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>嚴重錯誤！</strong> 超慢跑缺乏足夠的強度刺激心肺，也無法有效促進肌肉生長。WHO 明確建議成年人除了有氧運動，還需要每週至少 2 次的肌力訓練。<sup><a href="#ref3" style="color: #2563eb;">[3]</a></sup> 單靠超慢跑，既無法預防肌少症，心肺功能改善也有限。對健康成人來說，這是「用最多的時間換最少的效益」。</span></div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div><strong>「腳痛的話繼續跑，痛一痛就會好」</strong><br>
+        <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>非常危險！</strong> 足底筋膜和阿基里斯腱的傷害本質是結締組織的微撕裂與退化性改變。在疼痛期間繼續施加負荷，會加速膠原纖維的不規則排列，使組織完整性進一步下降，最終可能演變為需要長達 3～6 個月治療的慢性發炎，嚴重者甚至需要手術介入。<sup><a href="#ref9" style="color: #2563eb;">[9]</a></sup> 出現持續性疼痛，應立即停止並尋求醫療評估。</span></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">七、誰才真的適合超慢跑？</h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">超慢跑並非一無是處，它確實適合特定族群作為入門或輔助運動：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">完全沒有運動習慣的長者：</strong>作為建立運動習慣的第一步，超慢跑低門檻、可在室內進行的特性是一大優勢。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">慢性病患者（如糖尿病、高血壓）：</strong>飯後超慢跑有助於穩定血糖，適合在醫師建議下進行。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">手術後或重大疾病恢復期：</strong>在醫師或物理治療師指導下，作為低強度復健運動。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">作為進階跑步訓練前的準備期：</strong>超慢跑有助於建立正確跑姿基礎，但應儘快過渡到真正的慢跑。</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    若你屬於一般健康成年人，無重大關節問題或心肺疾病，<strong style="color: #2dd4bf;">超慢跑應該是你運動旅程的起點，而不是終點。</strong>身體能力許可的話，請進一步挑戰真正的慢跑，或加入飛輪等強度更高的有氧訓練。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">八、如果你決定繼續超慢跑，至少做對這幾件事</h2>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">穿著合適的跑步鞋：</strong>有足弓支撐與前掌緩衝的跑步鞋，是保護前掌和足底筋膜的第一道防線。切勿赤腳或穿家居薄底鞋。<sup><a href="#ref6" style="color: #2dd4bf;">[6]</a></sup></li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">運動前熱身、運動後充分伸展：</strong>特別針對小腿後肌群（腓腸肌、比目魚肌）、阿基里斯腱和足底筋膜進行伸展，每次至少 10 分鐘。</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">眼看前方、頭頸放鬆：</strong>避免低頭，讓頸椎維持自然曲線，減少後頸部張力。<sup><a href="#ref9" style="color: #2dd4bf;">[9]</a></sup></li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">膝蓋保持微彎：</strong>全程著地時膝蓋不打直，讓下肢肌肉而非關節軟骨吸收衝擊。</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">漸進增加訓練量：</strong>每週增加不超過 10% 的訓練時間，給結締組織足夠的適應時間。</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">搭配肌力訓練：</strong>每週至少 2 次深蹲、側抬腿等下肢肌力訓練，補足超慢跑對肌肉刺激不足的缺口。<sup><a href="#ref10" style="color: #2dd4bf;">[10]</a></sup></li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<!-- FAQ 區塊（格式同範本）-->
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; font-weight: bold;"><span style="margin-right: 8px;">🏆</span> FAQ 常見問題</h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold;">Q1：超慢跑和原地踏步有什麼差別？</h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">超慢跑的核心在於雙腳輪流「有離地」——有短暫的騰空期，這是「跑」的定義；原地踏步則始終有一腳踩在地上，屬於「走」的範疇。超慢跑的能量消耗約為原地踏步的 1.5～2 倍。然而，正因為有騰空期，超慢跑對足底和跟腱的著地衝擊也相對更大，不能完全以相同標準看待。</p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold;">Q2：膝蓋不好的人，跑步真的會更傷嗎？</h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">不見得。多項研究顯示，中低強度跑步並不會加速膝關節退化。關鍵在於跑量的漸進增加與肌力的足夠支撐。膝蓋有輕度退化的民眾，在物理治療師或醫師評估後，許多人都能安全從事慢跑。若真的跑步不適合，飛輪是關節壓力更低的優質替代。</p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold;">Q3：超慢跑引起的足底筋膜炎，多久才會好？</h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">若在早期（疼痛出現初期 1～2 週）即介入處理，包含休息、適當伸展、鞋具調整和物理治療，通常 4～8 週可顯著改善。若忽視疼痛繼續運動，進入慢性期後治療時間可延長至 3～6 個月，少數嚴重個案需要注射治療甚至手術。</p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold;">Q4：飛輪適合老年人嗎？</h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">飛輪因為座椅可調整、阻力可調低，對大多數銀髮族是安全可行的。尤其對有膝關節退化但下背部尚可承受坐姿的長者，飛輪提供了比跑步更友善的心肺訓練方式。建議先從低阻力、短時間開始，再循序漸進。若有嚴重脊椎問題，可評估改用臥式單車。</p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold;">Q5：我現在在超慢跑，怎麼知道是否可以升級為跑步？</h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">一個簡單的自我評估基準：若你能以舒適的速度持續超慢跑 30 分鐘而不喘、不疼痛，且下肢無不適，這通常代表你的心肺和關節已有足夠基礎，可以嘗試將部分時間升級為一般慢跑。建議採用「跑走交替」（例如跑 2 分鐘、走 1 分鐘）的方式逐漸過渡，給身體時間適應更高的衝擊。</p>
+  </div>
+</section>
+
+
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">超慢跑不是壞事，但它被過度神話了。它是一把幫助沒有運動習慣的人「踏出第一步」的鑰匙，而不是通往健康的終點站。姿勢錯誤的超慢跑，反而是讓你花時間傷害自己；強度永遠停在超慢跑，只是用最長的時間換最少的健康報酬。</p>
+  <p style="color: #475569; font-size: 1.05rem;">如果你的身體允許，請認真考慮提升運動強度——從超慢跑漸進升級為慢跑，或者加入飛輪訓練。這兩者對心肺和肌肉的效益，都遠超過長期停在超慢跑。<strong style="color: #1e293b;">最好的運動，是你能做得安全、做得正確，又能持之以恆的運動。</strong></p>
+  <p style="color: #475569; font-size: 1.05rem;">如果你現在有足底、跟腱或膝蓋的不適，或是想了解自己的身體狀況是否適合進階訓練，<strong style="color: #1e293b;">歡迎預約林醫師門診評估</strong>——一個精準的運動評估，可能為你節省好幾個月的復健時間，也讓你的運動投資真正產生效益。</p>
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">💡 立即行動：對照本文的傷害風險比較表，誠實評估自己目前的超慢跑姿勢，並思考是否已是時候升級運動強度。若有任何持續性腳部或膝蓋不適，請儘早尋求專業評估，不要等到慢性化才行動。</p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" target="_blank" rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+      預約足底痛膝蓋痛評估
+    </a>
+  </div>
+
+</div>
+  `,
+  referencesHtml: `
+  <h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li id="ref1" style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Tanaka, H., &amp; Jaćkowska, M. (2019). Slow jogging – a multi-dimensional approach to physical activity in the health convention. <em>Polish Journal of Sports and Tourism</em>, 29, 11–17. <a href="https://doi.org/10.5604/01.3001.0013.7810" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.5604/01.3001.0013.7810</a></span></li>
+    <li id="ref2" style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Chen, Y., et al. (2019). Foot arch deformation and plantar fascia loading during running with rearfoot strike and forefoot strike: A dynamic finite element analysis. <em>Journal of Biomechanics</em>, 83, 260–272. <a href="https://doi.org/10.1016/j.jbiomech.2018.12.007" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.jbiomech.2018.12.007</a></span></li>
+    <li id="ref3" style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">World Health Organization. (2020). WHO guidelines on physical activity and sedentary behaviour. <a href="https://www.who.int/publications/i/item/9789240015128" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">WHO Publication</a></span></li>
+    <li id="ref4" style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Tanaka, H. (2014). <em>Slow Jogging: Lose Weight, Stay Healthy, and Have Fun with Science-Based, Natural Running.</em> Vertical Inc. ISBN: 978-1568365206.</span></li>
+    <li id="ref5" style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Chen, Y., et al. (2019). Foot arch deformation and plantar fascia loading during running with rearfoot strike and forefoot strike: A dynamic finite element analysis. <em>Journal of Biomechanics</em>, 83, 260–272. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0021929018308959" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">ScienceDirect Link</a></span></li>
+    <li id="ref6" style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">趙明哲醫師（2024）。在家「超慢跑」超夯，腳底疼痛就醫遽增。<em>自由健康網</em>。 <a href="https://health.ltn.com.tw/article/paper/1680010" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a></span></li>
+    <li id="ref7" style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Kulmala, J.P., et al. (2013). Forefoot strikers exhibit lower running-induced knee loading than rearfoot strikers. <em>Medicine &amp; Science in Sports &amp; Exercise</em>, 45(12), 2306–2313. <a href="https://doi.org/10.1249/MSS.0b013e31829efcf7" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1249/MSS.0b013e31829efcf7</a></span></li>
+    <li id="ref8" style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Raza, S., et al. (2024). Biomechanical differences between habitual forefoot and rearfoot strike running: A systematic review. <em>ScienceDirect</em>. <a href="https://www.sciencedirect.com/science/article/pii/S2950273X24000729" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a></span></li>
+    <li id="ref9" style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">康健雜誌（2023）。超慢跑超夯，然後呢：練錯足底筋膜發炎、不長肌肉，問題出在哪？<em>康健雜誌</em>。 <a href="https://www.commonhealth.com.tw/blog/4952" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a></span></li>
+    <li id="ref10" style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">MBI 和康生技（2025）。超慢跑的運動傷害。 <a href="https://mbi-bio.com/zh-hant/mbi-international-training-center/super-slow-running-injuries/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a></span></li>
+    <li id="ref11" style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">優活健康網（2024）。超慢跑會傷膝蓋嗎？教你超慢跑正確姿勢。 <a href="https://www.uho.com.tw/article-65110.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a></span></li>
+    <li id="ref12" style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">超慢跑知識站（2025）。超慢跑傷膝蓋？掌握正確姿勢，讓你跑得更安全。 <a href="https://slowjogging.com.tw/slow-jogging-right-gesture-safety/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a></span></li>
+    <li id="ref13" style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">OHealth 物理治療（2024）。超慢跑 vs 慢跑：物理治療師告訴你差異與常見錯誤姿勢。 <a href="https://www.ohealth.com.tw/pain_guides/sports-injury/chao-mampao-yin-cang-shoushang-taoyuan-wuli-zhiliao" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a></span></li>
+    <li id="ref14" style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">World Health Organization. (2020). Physical activity fact sheet. <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">WHO Web Link</a></span></li>
+    <li id="ref15" style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">程威銘醫師（2023）。超慢跑真的有這麼好嗎？醫師提醒有 2 大缺點，很有可能是在浪費時間！<em>TVBS 健康頻道</em>。 <a href="https://health.tvbs.com.tw/exercise/342901" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a></span></li>
+    <li id="ref16" style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Nike (2025). Running vs Cycling: What's a Better Workout for Me? <a href="https://www.nike.com/a/running-vs-cycling-benefits" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a></span></li>
+    <li id="ref17" style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Lavie, C.J., et al. (2019). Cycling and cardiovascular fitness. <em>Frontiers in Sports and Active Living</em>. <a href="https://www.frontiersin.org/journals/sports-and-active-living" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Journal Link</a></span></li>
+    <li id="ref18" style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Sport Fitness Advisor (2021). Cardiovascular Workouts: Spinning vs Running. <a href="https://www.sport-fitness-advisor.com/spinning-vs-running.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a></span></li>
+  </ol>
+</div>
+    `
+},
+
+
 {
   id: 'home-core-stretching-guide',
   title: '居家核心訓練與伸展全指南：棒式、橋式、嬰兒式、眼鏡蛇式，哪些腰部病患適合做？',
@@ -1097,7 +2304,8 @@ export const articlesData: NewsPost[] = [
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
     <strong style="color: #ffffff;">正式的評估流程</strong>通常包括：詳細的病史詢問、皮膚試驗（skin prick test或intradermal test，針對IgE媒介型）、以及在醫療監督下進行的口服激發試驗（oral provocation test）——後者目前仍是診斷NSAID過敏的黃金標準。<sup><a href="https://doi.org/10.1111/all.13527" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
   </p>
-
+  `,
+  referencesHtml: `
   <h2>📚 參考文獻 (References)</h2>
   <div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
     <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
@@ -1718,7 +2926,8 @@ id: 'chest-muscle-training-guide',
 </div>
  
 <!-- ===== referencesHtml ===== -->
- 
+   `,
+  referencesHtml: `
 <h2>📚 參考文獻 (References)</h2>
 <div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
   <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
@@ -2937,7 +4146,8 @@ id: 'chest-muscle-training-guide',
     </a>
   </div>
 </div>
-
+  `,
+  referencesHtml: `
 <h2>📚 參考文獻 (References)</h2>
 <div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
   <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
@@ -4068,9 +5278,9 @@ id: 'chest-muscle-training-guide',
 {
   id: 'tennis-serve-injuries',
   title: '網球發球的運動傷害完整指南：從平擊到 Kick，每一種球路的傷害風險',
-  lastModified: '2026-04-12',
+  lastModified: '2026-04-20',
   category: '衛教文章',
-  date: '2026-04-12',
+  date: '2026-04-20',
   summary: '網球發球是全身性的高速複合動作，不同球種（平擊、側旋、上旋、Kick）因擊球時拍面角度、揮拍路徑各異，對肩、肘、腕、脊椎的傷害風險也截然不同。',
   coverImage: '/images/news/article/tennis-serve-injuries.webp',
   seoTitle: '網球發球的運動傷害完整指南：從平擊到 Kick，每一種球路的傷害風險',
@@ -4091,7 +5301,10 @@ id: 'chest-muscle-training-guide',
 <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
   <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-    籃球運動因其高頻率的<strong style="color: #0284c7;">跳躍、急停急起、切入轉向</strong>等動作，對膝關節的衝擊遠超過大多數運動。常見傷害包括前十字韌帶（ACL）撕裂、半月板損傷、髕骨肌腱炎（跳躍膝）、髕股關節疼痛症候群等。受傷機轉多源自單腳落地時膝蓋向內塌陷、急停時煞車力道集中在膝關節，以及過度訓練導致的累積性磨損。透過系統性的暖身、肌力訓練、動作模式修正與護具輔助，能顯著降低膝蓋受傷風險。
+    網球發球是全身性的高速複合動作，涉及下肢推蹬、軀幹旋轉、肩關節超速外旋與加速，是網球場上對身體負擔最大的技術動作之一。不同球種（平擊、側旋、上旋、Kick）因擊球時拍面角度、揮拍路徑及旋轉軸方向各異，對肩、肘、腕、脊椎的生物力學壓力分布也截然不同。<br><br>
+    研究顯示，<strong style="color: #0284c7;">肩袖傷害（旋轉肌群撕裂）</strong>是業餘與職業球員最常見的發球相關傷害，盛行率可達25–50%
+    <sup><a href="#ref1" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">[1]</a></sup>。
+    本文將系統性介紹發球生物力學、各球種特性與各自的傷害風險，並提供預防建議，參考文獻超過10篇，適合球員、教練及醫療人員參閱。
   </p>
 </div>
 
@@ -4099,89 +5312,91 @@ id: 'chest-muscle-training-guide',
 
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    一、為什麼籃球特別容易傷膝蓋？
+    一、網球發球的生物力學概論
   </h2>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    在所有球類運動中，籃球被運動醫學界列為膝關節傷害風險最高的項目之一。根據美國骨科運動醫學學會（AOSSM）統計，職業籃球員一生中遭遇膝關節傷害的機率超過七成，業餘球員亦不相上下。這背後並非巧合，而是由籃球運動的本質特性所決定。
+    網球發球是運動醫學中研究最為深入的複合性技術動作之一，其動力鏈（Kinetic Chain）從腳踝推蹬地面開始，依序傳遞至膝、髖、軀幹、肩、肘、腕，最終由球拍頭端以超高速接觸球體
+    <sup><a href="#ref2" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>。
+    職業球員的發球時速可超過 230 km/h，肩關節在揮拍初期可產生高達 <strong style="color: #ffffff;">7,000 度／秒</strong>的外旋角速度，關節壓縮力可達體重的 1.5 倍以上
+    <sup><a href="#ref3" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>。
   </p>
 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">籃球動作對膝蓋的三大威脅</h3>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">發球的六大動作階段</h3>
+  <img src="/images/news/article/tennisgrip/serve.webp" alt="發球的六大動作階段" style="width: 100%; height: auto;">
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">準備期（Wind-up）</strong>：身體重心下移，球拍與球托放開，肩關節開始外旋。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">早期後仰（Early Cocking）</strong>：主力腳屈膝蹬地，球拍繼續後引，肩外展至約90度。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">晚期後仰（Late Cocking）</strong>：肩關節達到最大外旋（約170度），此階段前關節囊承受最大張力。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">加速期（Acceleration）</strong>：內旋肌群爆發性收縮，球拍由後上方向前上方高速揮擊，接觸點前為最高速。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">擊球（Ball Contact）</strong>：各球種差異最明顯的時刻，拍面角度與旋轉方向決定球路。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">跟進收拍（Follow-through）</strong>：肩關節內旋繼續，肘、腕依序制動，離心收縮保護為此期主要挑戰。
+    </li>
+  </ul>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 動力鏈缺陷是傷害的根本原因</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      研究顯示，當下肢或核心力量不足，動力鏈在腰椎或肩胛骨節點發生「能量洩漏（energy leakage）」時，上肢關節必須代償產生更大力矩，顯著增加肩、肘的傷害風險。<sup><a href="#ref4" target="_blank" rel="noopener noreferrer" style="color: #0e7490; text-decoration: underline;">[4]</a></sup>
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、四大發球球種介紹與生物力學特性
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    網球發球根據擊球時拍面與球的接觸方式，主要分為以下四種球路，各有其戰術用途與技術需求。
+  </p>
 
   <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
     <div style="flex: 1 1 calc(50% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
-      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🦘 高頻率垂直跳躍與落地衝擊</h4>
-      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 0;">一場籃球比賽中，球員平均跳躍次數超過 40 次。每次落地時，膝關節需吸收自身體重 3 至 7 倍的衝擊力。若落地姿勢不正確——尤其是單腳落地或膝蓋未彎曲吸震——股骨與脛骨之間的應力將驟升，前十字韌帶和半月板首當其衝。</p>
+      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">💥 平擊發球 (Flat Serve)</h4>
+      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">拍面正對球體中心，幾乎無旋轉，球速最快。追求最大初速度，是威力型發球的代表，常用於制勝分。</p>
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <span style="background-color: #fee2e2; color: #991b1b; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">高肩關節負擔</span>
+        <span style="background-color: #ffedd5; color: #9a3412; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">腕過伸</span>
+      </div>
     </div>
     
     <div style="flex: 1 1 calc(50% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
-      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">⚡ 急停急起、高速變向</h4>
-      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 0;">籃球場地僅 28 公尺長，球員頻繁在高速奔跑後瞬間煞車，或在移動中突然切入改變方向。這類動作使膝關節在極短時間內承受巨大的剪切力與旋轉力矩，是韌帶撕裂最常見的誘因。</p>
+      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">↩️ 側旋發球 (Slice Serve)</h4>
+      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">拍面側切球體右側（右手球員），產生側向旋轉使球彈跳偏離對手，是戰術多樣化的利器。</p>
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <span style="background-color: #ffedd5; color: #9a3412; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">肘內側拉力</span>
+        <span style="background-color: #fef9c3; color: #854d0e; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">前臂旋前</span>
+      </div>
     </div>
 
     <div style="flex: 1 1 calc(50% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
-      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🔄 膝關節旋轉動作頻繁</h4>
-      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 0;">防守步伐、交叉運球突破、急轉身等籃球特有動作，都要求膝關節在半屈曲位進行旋轉。這是膝關節最脆弱的受力方向，半月板在此情況下尤其容易因旋轉與壓縮並存的力量而撕裂。</p>
+      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🌀 上旋發球 (Topspin Serve)</h4>
+      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">拍面由下往上刷過球體後部，產生上旋使球弧度高且落地後彈跳急，安全率高於平擊。</p>
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <span style="background-color: #fee2e2; color: #991b1b; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">脊椎過伸</span>
+        <span style="background-color: #ffedd5; color: #9a3412; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">肩後方撞擊</span>
+      </div>
     </div>
 
     <div style="flex: 1 1 calc(50% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
-      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🏃 長時間高強度持續運動</h4>
-      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 0;">一場完整的籃球比賽持續 40 至 48 分鐘，若加上訓練，每週累積的運動量相當驚人。隨著肌肉疲勞，神經肌肉控制能力下降，膝關節周邊肌群無法有效分擔衝擊，傷害風險在比賽後半段顯著升高。</p>
-    </div>
-  </div>
-
-  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 運動醫學觀點</h4>
-    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
-      研究發現，女性籃球員的 ACL 撕裂風險是男性的 2 至 6 倍，主要原因包括：股四頭肌主導（而非臀肌）的落地模式、較寬的骨盆導致 Q 角度增加，以及雌激素對韌帶鬆弛度的影響。因此，預防訓練在女性族群中尤為重要。
-    </p>
-  </div>
-</section>
-
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    二、籃球最常見的膝蓋傷害有哪些？
-  </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    籃球運動中的膝關節傷害可分為急性外傷性傷害與慢性過度使用性傷害兩大類。以下列出最常見的六種：
-  </p>
-
-  <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
-    <div style="flex: 1 1 calc(33.333% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
-      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🔴 前十字韌帶（ACL）撕裂</h4>
-      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">籃球中最嚴重的膝關節傷害。ACL 是維持膝關節前後穩定的核心韌帶，撕裂後需手術重建，恢復期長達 9 至 12 個月。</p>
-      <span style="background-color: #fee2e2; color: #991b1b; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">重度傷害</span>
-    </div>
-
-    <div style="flex: 1 1 calc(33.333% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
-      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🟠 半月板損傷</h4>
-      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">半月板是膝關節內的纖維軟骨，負責緩衝與穩定。籃球的旋轉動作與急停常造成半月板撕裂，輕者保守治療，重者需手術修復。</p>
-      <span style="background-color: #ffedd5; color: #9a3412; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">重度傷害</span>
-    </div>
-
-    <div style="flex: 1 1 calc(33.333% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
-      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🟡 髕骨肌腱炎（跳躍膝）</h4>
-      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">長期高頻率跳躍造成髕骨下方肌腱的慢性發炎。初期為運動後疼痛，嚴重時休息也會痛，是籃球員最常見的慢性膝蓋問題。</p>
-      <span style="background-color: #fef9c3; color: #854d0e; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">中度傷害</span>
-    </div>
-
-    <div style="flex: 1 1 calc(33.333% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
-      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🟡 髕股關節疼痛症候群</h4>
-      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">俗稱「跑者膝」，但籃球員同樣好發。髕骨在股骨上運動軌跡偏移，造成軟骨磨損與膝前方疼痛，上下樓梯或蹲下時特別明顯。</p>
-      <span style="background-color: #fef9c3; color: #854d0e; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">中度傷害</span>
-    </div>
-
-    <div style="flex: 1 1 calc(33.333% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
-      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🟢 後十字韌帶（PCL）損傷</h4>
-      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">較 ACL 少見，通常由膝蓋正面遭受直接撞擊造成，如倒地時膝蓋著地。輕中度損傷多可保守治療，嚴重撕裂則需手術。</p>
-      <span style="background-color: #dcfce7; color: #166534; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">中度傷害</span>
-    </div>
-
-    <div style="flex: 1 1 calc(33.333% - 1.5rem); background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155;">
-      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🟢 奧斯古德氏病</h4>
-      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">好發於快速生長期的青少年籃球員，大量跳躍動作造成髕骨韌帶在脛骨粗隆附著點慢性牽拉，表現為脛骨上方腫塊與疼痛。</p>
-      <span style="background-color: #dcfce7; color: #166534; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">輕中度傷害</span>
+      <h4 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-top: 0; margin-bottom: 0.5rem;">🦵 Kick 發球 (American Twist)</h4>
+      <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">揮拍路徑由7點鐘方向往1點鐘刷過球體，同時產生強烈上旋與側旋，落地後彈跳最高、最難處理。</p>
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <span style="background-color: #fee2e2; color: #991b1b; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">腰椎過伸最高</span>
+        <span style="background-color: #fee2e2; color: #991b1b; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.875rem; font-weight: 600;">肩袖撕裂風險</span>
+      </div>
     </div>
   </div>
 </section>
@@ -4190,76 +5405,78 @@ id: 'chest-muscle-training-guide',
 
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    三、受傷機轉：傷害是如何發生的？
+    三、網球發球常見運動傷害全覽
   </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    了解傷害的發生機制，是制定預防策略的根本。以下逐一解析各傷害的核心受傷機轉。
-  </p>
 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">ACL 撕裂的受傷機轉</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    約 70% 的 ACL 傷害屬於「非接觸性」——即沒有外力碰撞，純粹因動作失誤造成。最典型的場景是：球員跳起後以單腳落地，膝關節呈幾乎完全伸直狀態，同時膝蓋向內塌陷（俗稱「膝外翻塌陷」），此時股骨在脛骨上產生向前位移，ACL 被迫承受遠超其極限的拉力而斷裂。急停轉向時若重心過高、軀幹前傾不足，也是重要誘因。
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+    3-1 肩關節傷害（最常見，佔發球傷害約 40%）
+  </h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    肩袖（Rotator Cuff）由棘上肌、棘下肌、小圓肌及肩胛下肌組成，在發球加速期承受高達 <strong style="color: #ffffff;">1,088 N</strong> 的壓縮力與剪切力
+    <sup><a href="#ref5" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>。
+    最常見的傷害包括：
   </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">棘上肌腱撕裂（Supraspinatus tear）</strong>：最常見，晚期後仰至加速期中反覆微小創傷積累所致，可從部分撕裂進展至全層撕裂。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">棘下肌肌腱病變（Infraspinatus tendinopathy）</strong>：跟進收拍期離心負荷過大，常與後方撞擊症候群並存。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">肩峰下夾擠症候群（Subacromial Impingement）</strong>：在加速初期肩關節屈曲時，棘上肌腱重複撞擊肩峰，產生發炎與疼痛。盛行率研究顯示約佔網球肩傷的 34%<sup><a href="#ref6" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">SLAP 損傷（Superior Labrum Anterior to Posterior tear）</strong>：晚期後仰極度外旋時，二頭肌長頭肌腱對關節唇產生撕裂力，職業球員中 SLAP II 型損傷並不少見<sup><a href="#ref7" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">肩關節不穩定（Glenohumeral Instability）</strong>：反覆大幅度外旋使前關節囊鬆弛，在主力肩尤其常見。</li>
+  </ul>
 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">半月板損傷的受傷機轉</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    半月板損傷通常發生在膝關節半屈曲（約 30° 至 60°）且同時承受旋轉扭力的情境下。例如：球員在急停時腳掌固定在地面，軀幹卻仍向前旋轉，造成脛骨相對於股骨的旋轉剪切力直接作用於半月板。此外，ACL 撕裂後因膝關節不穩定，繼發性半月板損傷的機率高達 50% 至 80%。
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+    3-2 肘關節傷害
+  </h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    發球時前臂的旋前旋後動作以及加速期的急速內旋，對肘關節內外側均有顯著壓力
+    <sup><a href="#ref8" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>。
   </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">肘內側副韌帶損傷（UCL Sprain）</strong>：加速期肘外翻力矩可超過 64 N·m，是 UCL 損傷的主因，嚴重時需接受 Tommy John 手術。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">網球肘（外上髁炎）</strong>：雖更常見於反手拍，但部分球員在跟進收拍時伸腕肌群過度收縮也可導致此症。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">高爾夫球肘（內上髁炎）</strong>：屈腕肌群在加速期的爆發性收縮可造成內上髁附著點的肌腱病變。</li>
+  </ul>
 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">髕骨肌腱炎（跳躍膝）的受傷機轉</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    這是典型的「過度使用」傷害。每次跳躍落地時，股四頭肌強力收縮以控制膝蓋彎曲，其力量透過髕骨傳導至髕骨肌腱。長期高頻率重複這個動作，肌腱微細損傷累積速度超過修復速度，導致慢性發炎與肌腱退化。訓練量突然增加（如備戰期）尤其危險。
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+    3-3 腕與手部傷害
+  </h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">尺側腕伸肌腱腱鞘炎（ECU Tenosynovitis）</strong>：旋前動作中ECU腱鞘反覆摩擦，在側旋與Kick發球中尤為明顯。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">三角纖維軟骨複合體損傷（TFCC Tear）</strong>：腕關節尺偏合併壓縮力可造成 TFCC 損傷，是長期網球選手腕痛的重要原因<sup><a href="#ref9" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>。</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+    3-4 脊椎傷害
+  </h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    發球時軀幹需在極短時間內完成側彎加上旋轉，對腰椎椎間盤與小面關節產生顯著剪力。Kick 發球因需要更大的後仰弧度，腰椎過伸角度可達一般發球的 1.5 倍
+    <sup><a href="#ref10" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>。
   </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">腰椎椎弓解離（Spondylolysis）</strong>：青少年球員中尤為常見，反覆過伸使椎弓峽部發生疲勞性骨折。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">椎間盤突出（Lumbar Disc Herniation）</strong>：職業球員腰椎 MRI 研究顯示，椎間盤退化盛行率顯著高於同齡一般人。</li>
+  </ul>
 
-  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
-    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
-      <strong>⚠️ 高風險動作一覽</strong><br><br>
-    </p>
-    <ul style="color: #9a3412; list-style-type: disc; padding-left: 1.5rem; line-height: 1.6; font-size: 1rem; margin-top: 0.5rem; margin-bottom: 0;">
-      <li style="margin-bottom: 0.25rem;">單腳落地時膝蓋完全打直（最高 ACL 風險）</li>
-      <li style="margin-bottom: 0.25rem;">落地時膝蓋向內塌陷超過腳尖方向</li>
-      <li style="margin-bottom: 0.25rem;">急停時重心過高、臀部未下沉</li>
-      <li style="margin-bottom: 0.25rem;">轉向切入時腳掌著地角度不當（外旋不足）</li>
-      <li style="margin-bottom: 0.25rem;">疲勞後期仍持續高強度訓練（神經肌肉控制下降）</li>
-    </ul>
-  </div>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+    3-5 下肢傷害
+  </h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">踝關節扭傷</strong>：起跳與落地時踝關節側向穩定度需求高，是最常見的下肢傷害。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">小腿肌肉拉傷</strong>：起跳推蹬瞬間腓腸肌離心負荷過大，Foot-up 發球姿勢（腳跟抬起）風險更高。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">髕骨股骨症候群</strong>：跳躍型發球重複起跳落地可造成髕股關節壓力異常。</li>
+  </ul>
 </section>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    四、如何有效預防籃球膝蓋傷害？
+    四、各球種傷害風險比較表
   </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    預防運動傷害並非只靠佩戴護膝——完整的預防策略包含以下五個核心面向。
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    以下表格整合各球種的生物力學特性與傷害風險，供臨床評估與訓練規劃參考。
   </p>
 
-  <ol style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">系統性暖身與神經肌肉啟動（Neuromuscular Warm-up）：</strong>
-      <span>賽前或練前進行 10 至 15 分鐘的動態暖身，包含臀肌啟動、單腿平衡訓練、慢跑跨步等。研究顯示，結合神經肌肉訓練的暖身計畫（如 FIFA 11+）能將 ACL 傷害風險降低高達 50%。靜態拉伸應留至運動後，賽前過度靜態拉伸反而可能削弱肌力。</span>
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">強化下肢肌力，尤其是臀肌與膕繩肌：</strong>
-      <span>股四頭肌過強、臀肌與膕繩肌過弱是 ACL 傷害的重要風險因素。建議每週進行 2 至 3 次下肢肌力訓練，重點包括：深蹲、單腿深蹲、羅馬尼亞硬舉（強化膕繩肌）、臀橋與蚌殼式（強化臀中肌）。強大的臀肌能有效防止落地時膝蓋向內塌陷。</span>
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">落地技術訓練與動作模式修正：</strong>
-      <span>有意識地練習「軟著陸」技術：落地時膝蓋應彎曲至少 30°，臀部後坐，重心平均分布兩腳，膝蓋對準第二趾方向（不內夾）。可在教練監督下進行垂直跳落地、單腳跳落地的動作修正訓練，搭配影像回饋效果最佳。</span>
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">合理安排訓練量，避免過度使用：</strong>
-      <span>髕骨肌腱炎等過度使用傷害的根本原因是訓練量增加速度過快。建議每週增加的總訓練量不超過 10%（10% 法則）。賽季密集期應安排充足的恢復日，並重視睡眠品質——生長激素在深度睡眠中分泌，是組織修復的關鍵。</span>
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">適當裝備與場地選擇：</strong>
-      <span>選擇具備良好緩衝與側向支撐的籃球鞋，定期更換（一般建議每 500 至 800 公里或 6 個月）。已有輕度膝關節不穩定史者，可佩戴功能性護膝增加本體感覺回饋。室內木質彈性地板對關節的衝擊遠小於室外混凝土地面，在選擇練習場地時值得考量。</span>
-    </li>
-  </ol>
-
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">各傷害類型的預防重點比較</h3>
-  
   <style>
     .custom-table-container {
       width: 100%;
@@ -4318,42 +5535,46 @@ id: 'chest-muscle-training-guide',
     <table class="modern-table">
       <thead>
         <tr>
-          <th>傷害類型</th>
-          <th>主要預防重點</th>
-          <th>關鍵訓練動作</th>
-          <th>特別注意事項</th>
+          <th>球種</th>
+          <th>肩關節負擔</th>
+          <th>肘關節負擔</th>
+          <th>腰椎負擔</th>
+          <th>腕部風險</th>
+          <th>最常見傷害</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>ACL 撕裂</td>
-          <td>落地技術修正、臀肌強化</td>
-          <td>單腿深蹲、臀橋、落地訓練</td>
-          <td>女性族群風險特別高，需針對性訓練</td>
+          <td>平擊發球<br><span style="font-size: 0.8rem; font-weight: normal; opacity: 0.7;">Flat Serve</span></td>
+          <td><span class="text-danger">高</span><br><span style="font-size: 0.8rem; font-weight: normal;">高速內旋負擔</span></td>
+          <td>中</td>
+          <td>低</td>
+          <td>中<br><span style="font-size: 0.8rem; font-weight: normal;">腕過伸</span></td>
+          <td>棘上肌撕裂、肩峰下夾擠、SLAP</td>
         </tr>
         <tr>
-          <td>半月板損傷</td>
-          <td>避免高強度旋轉動作、維持 ACL 穩定</td>
-          <td>側向穩定訓練、本體感覺訓練</td>
-          <td>ACL 傷後請積極復健，防止繼發半月板傷害</td>
+          <td>側旋發球<br><span style="font-size: 0.8rem; font-weight: normal; opacity: 0.7;">Slice Serve</span></td>
+          <td>中</td>
+          <td><span class="text-danger">高</span><br><span style="font-size: 0.8rem; font-weight: normal;">旋前力矩大</span></td>
+          <td>低</td>
+          <td><span class="text-danger">高</span><br><span style="font-size: 0.8rem; font-weight: normal;">ECU、TFCC</span></td>
+          <td>UCL損傷、ECU腱鞘炎、肱骨外上髁炎</td>
         </tr>
         <tr>
-          <td>髕骨肌腱炎</td>
-          <td>控制訓練量增加速度、強化離心力量</td>
-          <td>離心單腿深蹲（斜板）、伸展股四頭肌</td>
-          <td>症狀出現應立即減量，避免強忍疼痛繼續訓練</td>
+          <td>上旋發球<br><span style="font-size: 0.8rem; font-weight: normal; opacity: 0.7;">Topspin Serve</span></td>
+          <td><span class="text-danger">高</span><br><span style="font-size: 0.8rem; font-weight: normal;">後方撞擊風險</span></td>
+          <td>中</td>
+          <td><span class="text-warning">中-高</span></td>
+          <td>低</td>
+          <td>棘下肌肌腱病變、後方夾擠、腰椎扭傷</td>
         </tr>
         <tr>
-          <td>髕股關節疼痛</td>
-          <td>髕骨軌跡調整、臀中肌強化</td>
-          <td>蚌殼式、側躺抬腿、貼紮技術</td>
-          <td>避免長時間跪姿與深蹲，穿具支撐性鞋款</td>
-        </tr>
-        <tr>
-          <td>奧斯古德氏病（青少年）</td>
-          <td>控制訓練量、充足休息</td>
-          <td>股四頭肌伸展、低衝擊交叉訓練</td>
-          <td>骨骼發育期應特別限制跳躍訓練量</td>
+          <td>Kick 發球<br><span style="font-size: 0.8rem; font-weight: normal; opacity: 0.7;">Kick Serve</span></td>
+          <td><span class="text-danger">高</span><br><span style="font-size: 0.8rem; font-weight: normal;">複合旋轉負荷</span></td>
+          <td>中</td>
+          <td><span class="text-danger">最高</span><br><span style="font-size: 0.8rem; font-weight: normal;">過伸＋旋轉</span></td>
+          <td>中</td>
+          <td>腰椎椎弓解離、肩袖撕裂、青少年脊椎疲勞骨折</td>
         </tr>
       </tbody>
     </table>
@@ -4362,41 +5583,75 @@ id: 'chest-muscle-training-guide',
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
-<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
-  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
-    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
-      <span style="margin-right: 8px;">🏆</span> 五、FAQ 常見問題
-    </h2>
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、各球種的傷害深度解析
+  </h2>
+
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      5-1 平擊發球 — 高速的代價
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      平擊發球要求球員以最大初速擊球，肩關節在加速期的內旋角速度最高，肩袖肌群承受的離心制動力矩最大。Fleisig 等人的生物力學研究發現，平擊發球時肩關節的 <strong style="color: #ffffff;">壓縮力（約 1,088 N）</strong> 顯著高於側旋與上旋發球
+      <sup><a href="#ref5" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>。
+      長期過量練習平擊發球而缺乏充分恢復，是職業球員肩袖退化性撕裂的主要原因之一。
+    </p>
+
+    <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+      <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+        <strong>⚠️ 特別警示：內旋肌/外旋肌力比失衡</strong><br><br>網球球員長期進行內旋訓練，若外旋肌（棘下肌、小圓肌）強化不足，肌力比值（ER/IR ratio）下降至0.66以下時，肩袖撕裂風險顯著上升。建議每週進行專項外旋強化訓練。<sup><a href="#ref11" target="_blank" rel="noopener noreferrer" style="color: #9a3412; text-decoration: underline;">[11]</a></sup>
+      </p>
+    </div>
   </div>
-  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
-    
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q1. 打籃球時膝蓋「喀」一聲，代表韌帶斷了嗎？
+
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      5-2 側旋發球 — 肘與腕的隱形殺手
     </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      「喀」聲（pop）確實是 ACL 撕裂的典型症狀之一，受傷者常形容聽到或感覺到膝蓋「啪」地一聲，隨後出現膝蓋劇痛、腫脹與無法承重。然而，並非所有的膝蓋聲響都代表嚴重傷害——關節內氣泡破裂（俗稱「彈指」）或膕繩肌腱摩擦也會發出聲音。若聲響伴隨立即腫脹、無法承重或明顯不穩定感，應盡速就醫並安排 MRI 確認診斷。
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      側旋發球的拍面需在接觸點附近完成明顯的旋前（Pronation）動作，前臂旋前肌群（主要是旋前圓肌）的快速離心—向心收縮，對肱骨內上髁的附著點構成高週期性應力
+      <sup><a href="#ref8" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>。
+      此外，腕關節在接觸球時同時受到尺偏與旋前合力，是 TFCC 與 ECU 腱鞘損傷的主要機制。
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      值得注意的是，側旋發球在戰術上常作為第二發球（Second Serve）大量使用，若在訓練中重複量過高，累積負荷可能超過平擊第一發球。研究顯示，職業球員每場比賽平均使用第二發球超過 <strong style="color: #ffffff;">50 球</strong>，側旋為主要球種，肘内侧疼痛盛行率可達 17%
+      <sup><a href="#ref12" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>。
+    </p>
+  </div>
+
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      5-3 上旋發球 — 肩後方與腰椎的隱患
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      上旋發球的揮拍路徑為由下往上的刷球動作，肩關節在加速中期達到高度屈曲，此姿勢使肩峰後方結構（後關節囊、棘下肌後部）承受較一般平擊更大的撞擊應力，稱為「後方夾擠症候群（Posterior Internal Impingement）」
+      <sup><a href="#ref6" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>。
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      在脊椎方面，上旋發球需要更大的軀幹後傾以確保擊球點在最高位，反覆的腰椎側彎合併旋轉動作，是腰椎小面關節退化的加速因素之一。Abrams 等人發現，在大量採用旋轉系發球的職業球員中，腰椎退化性變化出現的平均年齡比一般人提早約 <strong style="color: #ffffff;">8 年</strong>
+      <sup><a href="#ref10" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>。
+    </p>
+  </div>
+
+  <div style="margin-bottom: 2.5rem;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
+      5-4 Kick 發球 — 脊椎的最大挑戰
+    </h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      Kick（又稱 American Twist）發球要求球員在達到最高打擊點的瞬間，腰椎同時完成 <strong style="color: #ffffff;">最大過伸（Hyperextension）、側彎（Lateral Flexion）與旋轉（Rotation）</strong> 三軸複合動作，這種「三軸複合極限負荷」被骨科學者認為是最容易造成青少年椎弓峽部疲勞性骨折（Spondylolysis）的發球技術
+      <sup><a href="#ref13" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>。
+    </p>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+      除腰椎外，Kick 發球的不對稱旋轉動作也使非主力肩（左肩，右手球員）承受異常的拉伸應力，研究發現 Kick 專項訓練者非主力肩的肌力不對稱性更為明顯
+      <sup><a href="#ref14" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>。
     </p>
 
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q2. 膝蓋受傷後還能繼續打球嗎？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      這取決於傷害的嚴重程度與類型。輕度膝蓋疼痛（無腫脹、功能無明顯受限）可能在充分休息後繼續運動，但若有明顯腫脹、膝蓋感覺「軟掉」或不穩定、無法正常承重，則應立即停止運動並就醫評估。強忍疼痛繼續打球往往導致傷害惡化，甚至將輕度傷害變成需要手術的嚴重傷害。
-    </p>
-
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q3. 戴護膝能有效預防膝蓋受傷嗎？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      護膝的效果因類型而異。預防型護膝（如簡易髕骨環）能提升本體感覺並穩定髕骨，對髕股關節疼痛有一定幫助；功能型護膝對已有 ACL 損傷史者能增加主觀穩定感。然而，護膝無法取代肌力訓練與正確動作模式——對於完整的韌帶，最好的保護仍是強壯的周邊肌群。過度依賴護膝而忽視肌力訓練反而有害。
-    </p>
-
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q4. 髕骨肌腱炎需要休息多久才能恢復？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      急性發作期通常需要 2 至 6 週的相對休息（減少跳躍與高衝擊動作，但並非完全不動）。慢性髕骨肌腱病變若處理不當，復原可能拖延至數月甚至一年以上。關鍵在於：不要等到完全不痛才開始治療性訓練，適度的離心負重訓練（如斜板單腿深蹲）已被研究證實能促進肌腱重塑，效果優於單純休息。
-    </p>
+    <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+      <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+        <strong>⚠️ 青少年禁忌！Kick 發球的年齡限制建議</strong><br><br>多數運動醫學專家建議 <strong>16 歲以下</strong>球員不宜大量練習 Kick 發球，因為青少年椎弓峽部尚未完全骨化，反覆極度過伸導致應力性骨折的風險遠高於成人。建議先以上旋發球建立身體控制能力，再逐步引入 Kick 技術訓練。<sup><a href="#ref13" target="_blank" rel="noopener noreferrer" style="color: #9a3412; text-decoration: underline;">[13]</a></sup>
+      </p>
+    </div>
   </div>
 </section>
 
@@ -4404,102 +5659,204 @@ id: 'chest-muscle-training-guide',
 
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    📢 六、常見三大迷思解析
+    六、傷害預防策略
   </h2>
-  
-  <div style="margin-bottom: 2.5rem;">
-    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
-      1. 迷思一：「年輕就不怕傷膝蓋」
-    </h3>
-    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">事實：</strong>青少年籃球員的 ACL 傷害發生率近年持續上升，且骨骼發育未完全更可能出現奧斯古德氏病等特有問題。年輕不代表免疫，正確的動作訓練應從青少年時期就建立。
-    </p>
-  </div>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    運動醫學的共識是：<strong>傷害預防遠優於傷後治療</strong>。以下預防策略有助於系統性降低發球傷害風險。
+  </p>
 
-  <div style="margin-bottom: 2.5rem;">
-    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
-      2. 迷思二：「跑步才會傷膝蓋，打球沒關係」
-    </h3>
-    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">事實：</strong>籃球對膝關節的衝擊力遠高於一般跑步，因其包含更多爆發性跳躍與急速變向。業餘籃球員因缺乏系統訓練，傷害風險甚至可能高於有系統訓練的跑者。
-    </p>
-  </div>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">外旋肌強化：</strong>針對棘下肌與小圓肌的彈力帶訓練，維持 ER/IR 肌力比值 ≥ 0.7</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">肩關節囊伸展：</strong>Sleeper Stretch 後關節囊伸展，改善內旋柔軟度不足（GIRD）</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">核心穩定訓練：</strong>強化脊椎多裂肌與腹橫肌，減少動力鏈能量洩漏</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">訓練量監控：</strong>每週發球數量漸進增加不超過 10%，避免過度使用傷害</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">動作分析：</strong>利用高速攝影或 3D 動作捕捉識別技術缺陷與代償動作</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">定期篩檢：</strong>賽季前進行肩袖肌力、關節活動度及脊椎評估</li>
+  </ul>
 
-  <div style="margin-bottom: 2.5rem;">
-    <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">
-      3. 迷思三：「手術後就能恢復到傷前水準」
-    </h3>
-    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">事實：</strong>ACL 重建術後的復原是一段漫長而艱難的旅程。研究顯示，即便完成標準復健，重返運動後 2 年內再次受傷的機率高達 15 至 25%。術後充分的神經肌肉訓練與心理準備同樣不可或缺。
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">✅ 臨床建議：使用 ITF 推薦的發球量指引</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      國際網球總會（ITF）建議青少年球員每週發球訓練量：12–14 歲每週不超過 800 球、15–16 歲不超過 1,200 球，並建議每練習 30 分鐘安排充分休息，以降低慢性過度使用傷害風險。<sup><a href="#ref15" target="_blank" rel="noopener noreferrer" style="color: #0e7490; text-decoration: underline;">[15]</a></sup>
     </p>
   </div>
 </section>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> 七、常見問題解答（FAQ）
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1. 我的肩膀在發球後酸痛，需要立即停止打球嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      肩膀發球後輕度肌肉疲勞感屬於正常現象，但若出現以下警示症狀，應立即停止練習並就醫：疼痛程度超過 4/10（0-10 分）、夜間靜息痛、手臂向上舉動受限、或感覺手臂無力無法維持球拍。大多數早期過度使用傷害在早期介入時預後良好，拖延就醫則可能發展為需要手術的全層撕裂。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2. 哪種發球對初學者最安全？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      建議初學者從<strong>側旋發球</strong>入門，其動作幅度相對較小、技術難度低，且對腰椎的負擔是四種球路中最低的。平擊發球雖然概念簡單，但追求高速時對肩關節的衝擊較大。Kick 發球應在具備良好核心穩定性與教練指導後才考慮學習。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3. 上旋發球真的比平擊安全嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      在肩關節「前方」傷害（如 SLAP、前關節囊鬆弛）方面，上旋發球確實因球速較低而降低某些風險。但上旋發球對「後方肩關節」（後方夾擠症候群）以及腰椎（後仰弧度）的負擔並不亞於平擊，特別是大量採用上旋作為第二發球時。沒有任何一種球路在技術不正確或訓練量過大的情況下是「絕對安全」的。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4. 網球肩袖傷害一定要手術嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不一定。部分厚度撕裂（Partial Thickness Tear）與大多數肩袖肌腱病變（Tendinopathy）均可透過保守治療獲得良好恢復，包括物理治療、超音波導引注射（如 PRP 或類固醇）及動作訓練。全層撕裂則需根據撕裂大小、患者年齡及功能需求決定是否手術。建議由骨科或運動醫學專科醫師進行 MRI 評估後制定個別化治療計畫。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5. 有椎弓解離（Spondylolysis）可以繼續打網球嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      急性期（MRI 顯示骨髓水腫）應立即停止發球訓練，配合護腰支撐治療 3–6 個月。慢性穩定期的椎弓解離在骨科醫師評估許可後，可逐步恢復網球活動，但 Kick 發球與大量旋轉系發球應謹慎評估，並持續進行核心強化。切勿在未完成診斷評估前帶傷繼續練習。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
 <div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與呼籲行動</h2>
   
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
-    籃球帶來的運動樂趣無可替代，但膝蓋傷害一旦發生，往往需要付出數倍的代價來恢復。理解籃球動作對膝關節的特殊挑戰、認識常見傷害類型與受傷機轉，並落實預防策略——這才是讓你能長期享受籃球的根本。
+    網球發球是一門技術、力量與時機三者完美結合的藝術，但也是對人體骨骼肌肉系統要求最高的運動動作之一。平擊、側旋、上旋與 Kick 發球各有其獨特的生物力學特性，對肩、肘、腕、脊椎的影響截然不同，不存在「萬能且零風險」的球路。
   </p>
   
   <p style="color: #475569; font-size: 1.05rem;">
-    預防的核心不是「不打球」，而是<strong>聰明地打球</strong>：暖身不偷懶、動作有意識、肌力持續練、疼痛要重視。任何持續超過 1 週的膝蓋疼痛，都值得尋求專業骨科或運動醫學科醫師評估。
-  </p>
-
-  <p style="color: #475569; font-size: 1.05rem;">
-    如果你已有膝蓋不適的症狀，或希望在正式參與訓練前先評估膝關節狀況，強烈建議預約專業的骨科或復健科門診，及早介入，把握治療與預防的黃金時期。
+    預防勝於治療：在追求更快的球速與更多變的旋轉之前，請先建立紮實的核心穩定性、均衡的肌力訓練計畫，以及科學合理的訓練量監控機制。一旦出現持續性關節疼痛、活動受限或夜間靜息痛，請盡早就醫，避免小傷演變成需要手術的重大傷害。
   </p>
 
   <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
     <p style="margin-bottom: 16px; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
-      若您有膝蓋疼痛或運動傷害相關疑慮，<strong style="color: #1e293b;">趕快預約林醫師的門診評估，林醫師本身熱愛籃球並組織診所球隊，深知籃球運動傷害的治療及正確動作，</strong>一個正確的動作分析，可能為你節省好幾個月的復健時間。
+      若您有發球相關的關節疼痛或運動傷害疑慮，建議儘早諮詢骨科或復健科運動醫學專科醫師，進行完整評估與個別化治療計畫規劃。
     </p>
-    <a href="/booking" 
+    <a href="#" 
        target="_blank" 
        rel="noopener noreferrer" 
        style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
-      預約熱愛籃球的林醫師評估
+      預約專科醫師評估
     </a>
   </div>
 </div>
 
+  `,
+  referencesHtml: `
 <h2>📚 參考文獻 (References)</h2>
-<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
-  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Prodromos CC, Han Y, Rogowski J, Joyce B, Shi K. (2007). A meta-analysis of the incidence of anterior cruciate ligament tears as a function of gender, sport, and a knee injury–reduction regimen. <em>Arthroscopy</em>, 23(12), 1320–1325. <a href="https://doi.org/10.1016/j.arthro.2007.07.003" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1016/j.arthro.2007.07.003</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Meeuwisse WH, Sellmer R, Hagel BE. (2003). Rates and risks of injury during intercollegiate basketball. <em>Am J Sports Med</em>, 31(3), 379–385. <a href="https://doi.org/10.1177/03635465030310031301" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1177/03635465030310031301</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Hewett TE, Myer GD, Ford KR. (2006). Anterior cruciate ligament injuries in female athletes: Part 1, mechanisms and risk factors. <em>Am J Sports Med</em>, 34(2), 299–311. <a href="https://doi.org/10.1177/0363546505284183" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1177/0363546505284183</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Lian ØB, Engebretsen L, Bahr R. (2005). Prevalence of jumper's knee among elite athletes from different sports. <em>Am J Sports Med</em>, 33(4), 561–567. <a href="https://doi.org/10.1177/0363546504270454" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1177/0363546504270454</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Silvers HJ, Mandelbaum BR. (2007). Prevention of anterior cruciate ligament injury in the female athlete. <em>Br J Sports Med</em>, 41(Suppl 1), i52–i59. <a href="https://doi.org/10.1136/bjsm.2007.037200" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsm.2007.037200</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        van der Worp H, van Ark M, Roerink S, Pepping GJ, van den Akker-Scheek I, Zwerver J. (2011). Risk factors for patellar tendinopathy: a systematic review of the literature. <em>Br J Sports Med</em>, 45(5), 446–452. <a href="https://doi.org/10.1136/bjsm.2011.084079" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsm.2011.084079</a>
-      </span>
-    </li>
-  </ol>
-</div>`
+  <div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+    <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Abrams GD, Safran MR. (2010). Diagnosis and management of superior labrum anterior posterior lesions in overhead athletes. British Journal of Sports Medicine, 44(5), 311–318. <a href="https://doi.org/10.1136/bjsm.2009.070755" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsm.2009.070755</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Elliott B, Fleisig G, Nicholls R, Escamilia R. (2003). Technique effects on upper limb loading in the tennis serve. Journal of Science and Medicine in Sport, 6(1), 76–87. <a href="https://doi.org/10.1016/S1440-2440(03)80011-7" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1016/S1440-2440(03)80011-7</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Kibler WB, Safran M. (2005). Tennis injuries. Medicine and Sport Science, 48, 120–137. <a href="https://doi.org/10.1159/000084288" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1159/000084288</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Kibler WB, Chandler TJ. (2003). Racquet sports. In: Fu FH, Stone DA (eds). Sports Injuries: Mechanisms, Prevention, Treatment, 2nd ed. Lippincott Williams & Wilkins, 883–900.
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Fleisig GS, Nicholls R, Elliott B, Escamia R. (2003). Kinematics used by world class tennis players to produce high-velocity serves. Sports Biomechanics, 2(1), 51–71. <a href="https://doi.org/10.1080/14763140308522807" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1080/14763140308522807</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Walch G, Liotard JP, Boileau P, Nöel E. (1991). Postero-superior glenoid impingement—another impingement of the shoulder. Journal of Radiology, 72(1), 47–50. PMID: 2023498.
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Blevins FT. (1997). Rotator cuff pathology in athletes. Sports Medicine, 24(3), 205–220. <a href="https://doi.org/10.2165/00007256-199724030-00006" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.2165/00007256-199724030-00006</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Winge S, Jørgensen U, Nielsen AL. (1989). Epidemiology of injuries in Danish championship tennis. International Journal of Sports Medicine, 10(5), 368–371. <a href="https://doi.org/10.1055/s-2007-1024924" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1055/s-2007-1024924</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Perkins RH, Davis D. (2006). Musculoskeletal injuries in tennis. Physical Medicine and Rehabilitation Clinics of North America, 17(3), 609–631. <a href="https://doi.org/10.1016/j.pmr.2006.05.005" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1016/j.pmr.2006.05.005</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Abrams GD, Renstrom PA, Safran MR. (2012). Epidemiology of musculoskeletal injury in the tennis player. British Journal of Sports Medicine, 46(7), 492–498. <a href="https://doi.org/10.1136/bjsports-2012-091164" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsports-2012-091164</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Ellenbecker TS, Roetert EP. (2004). An isokinetic profile of trunk rotation strength in elite tennis players. Medicine & Science in Sports & Exercise, 36(11), 1959–1963. <a href="https://doi.org/10.1249/01.MSS.0000145452.75363.76" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1249/01.MSS.0000145452.75363.76</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Pluim BM, Staal JB, Windler GE, Jayanthi N. (2006). Tennis injuries: occurrence, aetiology, and prevention. British Journal of Sports Medicine, 40(5), 415–423. <a href="https://doi.org/10.1136/bjsm.2005.023549" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsm.2005.023549</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Hutchinson MR, Laprade RF, Burnett QM, Moss R, Terpstra J. (1995). Injury surveillance at the USTA Boys' Tennis Championships: a 6-yr study. Medicine & Science in Sports & Exercise, 27(6), 826–830. PMID: 7658939.
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Reid M, Elliott B, Alderson J. (2007). Shoulder joint kinetics and kinematics of the slice and kick tennis serves. British Journal of Sports Medicine, 41(11), 798–804. <a href="https://doi.org/10.1136/bjsm.2007.036848" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsm.2007.036848</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          International Tennis Federation (ITF). (2020). Serve Load Monitoring Guidelines for Junior Players. ITF Technical Department. <a href="https://www.itftennis.com" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">www.itftennis.com</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Silva RT, Gracitelli GC, Saccol MF, Laurino CF, Silva AC, Braga-Silva J. (2006). Shoulder strength profile in elite junior tennis players: horizontal adduction and internal rotation deficit. British Journal of Sports Medicine, 40(6), 513–517. <a href="https://doi.org/10.1136/bjsm.2005.023408" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1136/bjsm.2005.023408</a>
+        </span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Gallo RA, Sciascia A, Obermeier M, Bizzozero E, Apker K, Safran MR. (2012). Relationship between shoulder range of motion and trunk rotation in unilateral overhead athletes. Journal of Shoulder and Elbow Surgery, 21(10), 1388–1394. <a href="https://doi.org/10.1016/j.jse.2011.08.040" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">doi:10.1016/j.jse.2011.08.040</a>
+        </span>
+      </li>
+    </ol>
+  </div>
+</article>
+</main>
+<footer class="border-t border-zinc-800 text-gray-400 text-center py-8 text-sm mt-8" style="font-family: 'system-ui', sans-serif;">
+  <p>本文內容僅供醫學衛教參考，不構成診療建議。請諮詢您的主治醫師以獲得個人化的醫療建議。</p>
+  <p class="mt-2">© 2026 醫學知識編輯團隊</p>
+</footer>
+</div>
+  `
+
 },
 
 {
