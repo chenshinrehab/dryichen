@@ -2,6 +2,525 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
 
+
+ {
+  id: 'weightlifting-nutrition-guide',
+  title: '重訓飲食全解析：運動醫學觀點告訴你，蛋白質、澱粉、蔬菜怎麼吃才對？',
+  lastModified: '2026-04-22',
+  category: '衛教文章',
+  date: '2026-04-22',
+  summary: '從運動醫學角度深入剖析重量訓練的飲食策略。實證研究揭露蛋白質每日建議攝取量、最佳補充時機、高品質食物來源，以及碳水化合物、蔬菜的正確搭配方式。營養補充品究竟有沒有用？科學證據一次說清楚。',
+  coverImage: '/images/news/article/weightlifting-nutrition-guide.webp',
+  seoTitle: '重訓飲食全解析：運動醫學觀點告訴你，蛋白質、澱粉、蔬菜怎麼吃才對？',
+  seoDescription: '從運動醫學角度深入剖析重量訓練的飲食策略。實證研究揭露蛋白質每日建議攝取量、最佳補充時機、高品質食物來源，以及碳水化合物、蔬菜的正確搭配方式。',
+  keywords: [
+    '重訓飲食',
+    '蛋白質補充',
+    '肌肉生長',
+    '運動醫學',
+    '乳清蛋白',
+    '碳水化合物',
+    '肌酸',
+    '運動後飲食',
+    '增肌飲食'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    重量訓練的成效，有一半取決於你離開健身房之後的飲食決策。運動醫學研究清楚顯示，蛋白質是肌肉合成不可缺少的原料，每日建議攝取量為體重每公斤 1.6–2.2 公克，分次攝取效果優於單次大量補充。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup> 碳水化合物負責補充訓練消耗的肝醣，不是「增胖元凶」，而是肌肉運作的燃料。蔬菜則透過抗氧化物質與微量礦物質，協助訓練後的組織修復與發炎調控。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34445067/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup> 至於市面上琳瑯滿目的營養補充品，真正有充分科學證據支持的只有少數幾種——其餘大多是行銷噱頭。本文將以實證為基礎，用你看得懂的語言，一次說清楚重訓飲食的正確策略。
+  </p>
+</div>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、為什麼吃什麼比練什麼更重要？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    很多人踏進健身房努力練了幾個月，卻發現肌肉沒什麼變化——問題往往不出在訓練菜單，而出在飲食。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    重量訓練的本質，是透過「可控制的組織損傷」來刺激肌肉適應性生長。當你做深蹲、臥推或引體向上時，肌肉纖維會產生微小的撕裂；訓練結束後，身體會啟動修復機制，用新的蛋白質填補這些缺口，讓肌肉變得更粗、更強壯。但這個修復過程需要原料——<strong style="color: #2dd4bf;">沒有足夠的蛋白質、能量與微量營養素，再好的訓練都是在空轉。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    2017 年發表於《British Journal of Sports Medicine》的大型統合分析，整合了 49 項隨機對照試驗、總計 1,863 名受試者的資料，清楚證實：蛋白質補充量達到建議範圍時，能顯著提升阻力訓練帶來的肌肉量增加與肌力進步；而訓練量相同但蛋白質攝取不足者，增肌效果明顯較差。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    換句話說，飲食不是訓練的「配角」，而是整個增肌工程裡不可或缺的一半。
+  </p>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、蛋白質：你到底需要吃多少？
+  </h2>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">每日建議量</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是重訓飲食中最常被討論、也最常被誤解的問題。有人說「吃越多越好」，有人說「超過身體需求都是浪費」——真相在哪裡？
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    目前運動醫學領域的主流共識，來自國際運動營養學會（ISSN）與美國運動醫學學會（ACSM）的聯合立場聲明：<strong style="color: #ffffff;">有規律阻力訓練的成年人，每日蛋白質建議攝取量為體重每公斤 1.6–2.2 公克（g/kg）。</strong><sup><a href="https://jissn.biomedcentral.com/....../s12970-017-0177-8" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    舉個例子：如果你體重 70 公斤，每週重訓 3–4 次，你每天需要攝取大約 112–154 公克的蛋白質。這比一般人的飲食習慣（通常每日 50–70 公克）高出相當多。
+  </p>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在門診中常見的狀況是：許多認真訓練的人明明每天都喝蛋白粉，蛋白質攝取量卻仍然不足，原因是他們忽略了「正餐蛋白質」的重要性。蛋白粉只是補充工具，三餐中的雞胸、魚、豆腐、蛋才是主角。建議先算清楚三餐蛋白質，再決定是否需要補充品。
+    </p>
+  </div>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">超過 2.2g/kg 有沒有用？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究顯示，攝取量超過每公斤 2.2 公克後，額外增肌的效益接近平緩——多出來的蛋白質主要被轉化為熱量代謝，而非合成更多肌肉。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup> 對腎臟健康的成年人而言，短期攝取較高蛋白質（每日 2.5g/kg）並未顯示腎臟毒性，但長期高蛋白飲食對有慢性腎病者仍需謹慎，建議諮詢醫師。
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">分次攝取，效果更好</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究證實，肌肉蛋白質合成（MPS）對單次蛋白質劑量有「上限效應」——大多數人每餐能有效刺激 MPS 的蛋白質量約為 20–40 公克，超過的部分效益遞減。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/27511985/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup> 因此，建議將每日蛋白質總量<strong style="color: #ffffff;">均勻分配在 4–5 餐中</strong>（例如每餐 30–40 公克），而非早餐吃一點、晚餐大量補充。
+  </p>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、哪些食物的蛋白質品質比較好？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    蛋白質不只是「量」的問題，「質」同樣關鍵。評估蛋白質品質的主要指標，是<strong style="color: #ffffff;">DIAAS（消化必需胺基酸評分）</strong>，反映食物中必需胺基酸的完整性與人體實際吸收率。<sup><a href="https://www.fao.org/....../35978......" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">動物性蛋白質（高品質首選）</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">雞胸肉：</strong>每 100 公克含約 31 公克蛋白質，脂肪極低，是增肌期的性價比之王。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">雞蛋：</strong>每顆約 6–7 公克，蛋白質 DIAAS 評分接近滿分，是自然界最完整的蛋白質來源之一。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">鮭魚與鮪魚：</strong>除提供優質蛋白質外，鮭魚富含 Omega-3 脂肪酸，有助於訓練後的發炎調控與肌肉修復。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34445067/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup></li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">希臘優格：</strong>每 100 公克含 8–10 公克蛋白質，同時提供益生菌與鈣質，適合訓練後點心。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">瘦牛肉：</strong>除蛋白質外，還含有肌酸、鐵質與鋅，是促進合成代謝的複合型食材。</li>
+  </ul>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">植物性蛋白質（素食者的選擇）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    植物性蛋白質的胺基酸組成通常不如動物性完整，但透過「蛋白質互補」策略（例如米飯搭配豆類）可以有效彌補這個缺口。<sup><a href="https://jissn.biomedcentral.com/....../s12970-017-0177-8" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">豆腐與豆乾：</strong>大豆蛋白是植物性蛋白質中最接近完整胺基酸組成的，研究顯示其增肌效果與乳清蛋白接近。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">毛豆：</strong>每 100 公克含約 11 公克蛋白質，且富含 BCAA（支鏈胺基酸），是便利的植物性蛋白來源。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">藜麥：</strong>是少數胺基酸組成完整的植物性食材，同時提供碳水化合物，兼具能量與蛋白質。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">扁豆與鷹嘴豆：</strong>豐富的蛋白質與膳食纖維，搭配全穀類食用效果更佳。</li>
+  </ul>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      純素的重訓者常遇到「吃了很多豆類，但進步停滯」的困境。問題通常不在蛋白質總量不足，而是亮胺酸（Leucine）攝取偏低——亮胺酸是啟動肌肉蛋白質合成的「開關」胺基酸，動物性蛋白質含量遠高於植物性。素食者可透過增加大豆製品攝取、或選擇添加亮胺酸的植物性蛋白粉來改善這個問題。
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、澱粉與碳水化合物：重訓者的必要燃料
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    「重訓要增肌就不能吃澱粉」——這是健身圈最流行的錯誤觀念之一。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    重量訓練是以「肝醣」（儲存在肌肉與肝臟的碳水化合物）為主要能量來源的無氧運動。若碳水化合物攝取長期不足，訓練時會出現「掉電感」——難以完成高強度動作、每組次數下降、肌力進步停滯。更嚴重的是，當能量不足時，身體會開始分解肌肉蛋白質作為能量，直接抵消訓練的增肌效果。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34445067/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">建議攝取量</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    對有規律重訓的成年人，碳水化合物建議攝取量為每日每公斤體重 <strong style="color: #ffffff;">3–5 公克</strong>（中等訓練量）。若訓練量較高（每天訓練、或高強度週期），可提高至每公斤 5–7 公克。<sup><a href="https://jissn.biomedcentral.com/....../s12970-017-0177-8" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">優先選擇複合型碳水化合物</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">糙米、燕麥、地瓜：</strong>消化緩慢，提供穩定的血糖與持久的能量，是訓練前的理想選擇。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">白米（訓練後）：</strong>高升糖指數的食物在訓練後反而有優勢，能快速補充肌肉肝醣，搭配蛋白質食用效果更佳。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">水果：</strong>果糖優先補充肝臟肝醣，訓練後適量食用（如香蕉）有助整體恢復。</li>
+  </ul>
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 常見誤區：</strong><br><br>
+      「低碳飲食（生酮）能同時增肌又減脂」——現有研究並不支持這個說法。低碳飲食對體脂管理有一定效果，但長期碳水化合物不足會降低高強度訓練的表現，並可能抑制合成代謝荷爾蒙（如胰島素與IGF-1）的分泌，整體增肌效率較佳的碳水化合物環境下明顯偏低。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/27347222/" target="_blank" rel="noopener noreferrer" style="color: #9a3412; text-decoration: underline;">[6]</a></sup>
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、蔬菜：重訓飲食中被低估的重要角色
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    重訓者的飲食討論，往往集中在蛋白質與碳水化合物，蔬菜很少被認真看待。但從運動醫學角度，蔬菜在訓練恢復中扮演著不可替代的角色。
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">抗氧化與發炎調控</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    高強度重訓會造成肌肉的氧化壓力升高與局部發炎反應——這在生理上是必要的訓練適應機制，但若發炎程度過高或持續時間過長，就會阻礙恢復。蔬菜中的多酚類化合物（如花青素、槲皮素）與維生素 C、E，有助於調節這個發炎反應，加速訓練後的肌肉修復。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34445067/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">硝酸鹽與運動表現</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    深綠色蔬菜（如菠菜、芝麻葉）中的硝酸鹽，在人體內轉化為一氧化氮（NO），能擴張血管、提升肌肉的血流與氧氣供應，研究顯示對力量型運動的表現有輕度提升效果。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/22330017/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">每日蔬菜建議</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">每日攝取 400–500 公克蔬菜</strong>（約 5 份），盡量多元，涵蓋深綠色、橘紅色、十字花科等不同種類。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">菠菜、花椰菜、甜椒</strong>富含鎂、鉀與維生素 C，是訓練後恢復的優質選擇。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">薑黃</strong>中的薑黃素具有抗發炎效果，雖然目前研究規模不大，但作為日常調味料添加是無害且可能有益的。</li>
+  </ul>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、什麼時候吃？訓練前後的飲食時機
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    「訓練後 30 分鐘內一定要喝蛋白粉」——你一定聽過這個說法。這個「合成代謝窗口（anabolic window）」的概念在健身圈廣為流傳，但現代運動科學對此有更細膩的看法。
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">訓練前（1–2 小時）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    訓練前攝取含碳水化合物與蛋白質的混合餐，目標是確保訓練時有足夠的血糖與胺基酸可用。建議攝取：20–30 公克蛋白質 + 30–50 公克複合碳水化合物（如地瓜飯配雞胸肉）。訓練前過於飽腹或太接近訓練時間進食可能影響表現。<sup><a href="https://jissn.biomedcentral.com/....../s12970-017-0177-8" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">訓練後（0–2 小時）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究顯示，只要一天內蛋白質總量達標，「訓練後 30 分鐘」的黃金窗口並沒有過去認為的那麼嚴苛。然而，若訓練前已超過 3–4 小時沒有攝取蛋白質，訓練後盡快補充蛋白質確實有益。建議攝取：<strong style="color: #ffffff;">30–40 公克蛋白質 + 30–60 公克碳水化合物（白米、香蕉等高升糖食物）</strong>，有助加速肝醣回補與肌肉修復啟動。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/27511985/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">睡前蛋白質</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是近年較新的研究發現：睡前攝取 <strong style="color: #ffffff;">40 公克酪蛋白（Casein protein）</strong>，能在整個睡眠期間持續提供胺基酸，顯著提升隔日早晨的肌肉蛋白質合成率。荷蘭馬斯垂克大學的研究團隊在多項試驗中確認了這個效果。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/22330017/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup> 實際食物選擇上，希臘優格、茅屋起司（cottage cheese）或全脂牛奶都是天然的酪蛋白來源。
+  </p>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、重訓飲食一覽比較表
+  </h2>
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table { font-size: 14px; }
+    }
+  </style>
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>營養素</th>
+          <th>每日建議量（重訓者）</th>
+          <th>優質食物來源</th>
+          <th>攝取時機</th>
+          <th>常見錯誤</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>蛋白質</td>
+          <td>1.6–2.2 g/kg 體重</td>
+          <td>雞胸、蛋、魚、豆腐、希臘優格</td>
+          <td>均勻分 4–5 餐；訓練後優先補充</td>
+          <td>集中在一餐大量攝取</td>
+        </tr>
+        <tr>
+          <td>碳水化合物</td>
+          <td>3–5 g/kg 體重（中量訓練）</td>
+          <td>糙米、地瓜、燕麥、香蕉、白米</td>
+          <td>訓練前選慢消化；訓練後選快消化</td>
+          <td>為求減脂完全戒除澱粉</td>
+        </tr>
+        <tr>
+          <td>脂肪</td>
+          <td>佔每日總熱量 20–35%</td>
+          <td>酪梨、橄欖油、堅果、鮭魚</td>
+          <td>均勻分布於三餐；訓練前後不宜過多</td>
+          <td>刻意選零脂食物，忽略必需脂肪酸</td>
+        </tr>
+        <tr>
+          <td>蔬菜</td>
+          <td>400–500 公克（約 5 份）</td>
+          <td>菠菜、花椰菜、甜椒、深綠葉菜</td>
+          <td>每餐均有蔬菜為佳</td>
+          <td>以補充品取代真實蔬菜攝取</td>
+        </tr>
+        <tr>
+          <td>水分</td>
+          <td>每日至少 2.5–3 升（含訓練補水）</td>
+          <td>白開水、無糖電解質飲料</td>
+          <td>訓練前中後均需補充</td>
+          <td>口渴才喝；以含糖飲料補水</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+  八、營養補充品：哪些真的有用？哪些是噱頭？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    台灣健身補品市場每年高達數十億，但真正有扎實科學證據的產品，其實屈指可數。以下依據現有研究強度分級：
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🟢 證據充分，推薦使用</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">乳清蛋白（Whey Protein）：</strong>當正餐蛋白質攝取不足時，乳清蛋白是高效、便利的補充選項。其 BCAA 含量高、消化速率快，特別適合訓練後立即補充。研究顯示效果與食物蛋白質相當，是補充品中最有科學依據的選項。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">肌酸（Creatine Monohydrate）：</strong>目前研究最充分的運動補充品之一。肌酸能增加肌肉中磷酸肌酸的儲量，提升短時間高強度輸出（如 1–3RM 的大重量訓練）的表現，同時促進訓練適應、加速肌力與肌肉量的進步。國際運動營養學會明確將其列為「最有效的合法運動補充品」。每日 3–5 公克的維持劑量即可，不需要「週期性停用」。<sup><a href="https://jissn.biomedcentral.com/....../10.1186/s12970-017-8" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">咖啡因：</strong>訓練前 45–60 分鐘攝取 3–6 mg/kg 的咖啡因，對力量型與耐力型運動表現均有明確提升效果。一杯黑咖啡（約 80–120 mg 咖啡因）即可達到有效劑量。<sup><a href="https://jissn.biomedcentral.com/....../s12970-017-0177-8" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    </li>
+  </ul>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🟡 有部分證據，可考慮使用</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">β-丙胺酸（Beta-Alanine）：</strong>能提升肌肉中肌肽（carnosine）濃度，延緩高強度訓練中的酸性疲勞感，對 1–4 分鐘持續高強度輸出的項目（如高反覆次數訓練、格鬥運動）有適度效益。常見副作用是皮膚的「刺麻感」，屬正常現象。<sup><a href="https://jissn.biomedcentral.com/....../s12970-017-0177-8" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">Omega-3 魚油：</strong>可能有助於減輕訓練後的肌肉痠痛、改善肌肉蛋白質合成率，對年長者的肌肉保存有較明確的效益。對一般重訓者，效果相對有限，但整體健康效益（心血管保護）使其仍值得考慮。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34445067/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">維生素 D：</strong>台灣室內工作人口維生素 D 缺乏率偏高，而維生素 D 不足會影響肌肉收縮功能與骨骼健康。若血液檢驗確認不足，補充維生素 D3（每日 1000–2000 IU）是合理且有依據的選擇。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/27347222/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    </li>
+  </ul>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🔴 科學證據不足，不建議花費</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">BCAA（支鏈胺基酸）補充品：</strong>若日常蛋白質攝取已充足，額外補充 BCAA 的增肌效益幾乎為零——因為乳清蛋白等完整蛋白質中 BCAA 含量已相當豐富。只有在長期空腹訓練的特定情境下才有額外補充的考量。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">麩醯胺酸（Glutamine）：</strong>在一般健康重訓者中，補充麩醯胺酸並未顯示顯著的增肌或恢復效益。主要研究支持來自燒傷、術後等臨床重症患者，不適用於一般訓練族群。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">多數「增肌複合配方」：</strong>市面上許多複合補充品（如「質量增益劑」、「睪固酮促進劑」），往往缺乏高品質的隨機對照試驗支持，部分成分在高劑量下甚至有安全疑慮。</li>
+  </ul>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #3</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在門診中，常有患者花費大量金錢在 BCAA、麩醯胺酸、各種「恢復配方」上，卻連基本的每日蛋白質攝取量都達不到。從效益最大化的角度，正確的投資優先順序是：充足的全食物飲食 → 乳清蛋白（若正餐不足） → 肌酸 → 其他補充品。把補充品當基礎、真實飲食當選配，是最常見也最昂貴的錯誤。
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 九、常見四大飲食迷思破解
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「增肌期要刻意多吃，胖一點沒關係」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 「骯髒增肌（dirty bulk）」的策略在早期健身文化中廣受歡迎，但現代研究顯示，每週體重增加超過 0.5–1%，多餘的熱量主要以體脂肪而非肌肉的形式儲存。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup> 更有效的策略是「精準增肌」——每日熱量盈餘控制在 200–300 大卡，配合足夠蛋白質，讓肌肉增加的比例最大化。</span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「女性重訓者不需要跟男性一樣多的蛋白質」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>有誤！</strong> 雖然女性的肌肉量通常少於男性，但<strong>每公斤體重的蛋白質需求量並無顯著差異</strong>。女性有規律重訓時，同樣建議每公斤體重攝取 1.6–2.2 公克蛋白質。<sup><a href="https://jissn.biomedcentral.com/....../s12970-017-0177-8" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[3]</a></sup></span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「訓練前一定要空腹，才能燃燒脂肪」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>效益有限且有風險！</strong> 空腹訓練確實可能短暫提高脂肪氧化比例，但同時也會升高肌肉蛋白質分解（catabolism）的風險，特別是高強度重訓時。若目標是增肌或維持肌肉量，空腹訓練策略弊大於利；若有特定減脂需求，建議訓練前至少攝取 20–30 公克蛋白質以保護肌肉組織。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/27511985/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[4]</a></sup></span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
+        <div>
+          <strong>「補充品吃夠了，飲食就不用太在意」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>根本性的錯誤！</strong> 補充品的英文原名是 supplement——字義是「補充」而非「取代」。真實食物提供的不只是巨量營養素，還有複雜的微量礦物質、植化素、膳食纖維，這些物質在協同作用下對整體健康與訓練恢復的貢獻，是任何單一補充品都無法複製的。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34445067/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[2]</a></sup></span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：高蛋白飲食會傷腎嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      對於腎臟功能正常的健康成年人，目前的研究並未找到高蛋白飲食（每日每公斤 2–2.5 公克）造成腎功能損害的證據。<sup><a href="https://jissn.biomedcentral.com/....../s12970-017-0177-8" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup> 然而，對於已有慢性腎病（CKD）、糖尿病腎病或單腎的族群，高蛋白飲食確實可能加速腎功能惡化，務必在醫師或營養師指導下調整。若不確定自己的腎臟狀況，建議定期健檢。
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：素食者能達到跟葷食者一樣的增肌效果嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      可以，但需要更用心規劃。大豆蛋白的胺基酸完整性接近乳清蛋白，研究顯示在同等蛋白質攝取量下，大豆蛋白與乳清蛋白的增肌效果差異並不顯著。關鍵在於確保攝取足夠量（通常植物性蛋白質需比動物性多攝取 10–20% 以補足消化率差異），並注意多元搭配以涵蓋所有必需胺基酸。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：肌酸會讓人水腫或「看起來虛胖」嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      肌酸確實會讓肌肉細胞吸收更多水分（細胞內水合），通常在開始使用後體重會增加 0.5–1.5 公斤。但這些水分儲存在肌肉細胞內，而非皮下——從外觀上看，反而會讓肌肉顯得更飽滿緊實。停止使用後，這些水分會在 1–2 週內恢復正常。這與皮下水腫的「虛胖感」是截然不同的概念。<sup><a href="https://jissn.biomedcentral.com/....../10.1186/s12970-017-8" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：年長者（50 歲以上）的蛋白質需求和年輕人一樣嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不一樣——年長者的蛋白質需求通常更高。研究顯示，隨年齡增長，肌肉對蛋白質的「合成代謝抗性」增加，身體需要更多的蛋白質才能啟動同等強度的肌肉合成反應。50 歲以上的重訓者，建議蛋白質攝取量提高至每公斤 1.8–2.5 公克，且每餐應確保至少含 40 公克蛋白質，以克服這個年齡相關的生理挑戰。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/27511985/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：「間歇性斷食」和重訓飲食相容嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      可以相容，但需要謹慎安排。間歇性斷食（如 16:8 模式）本身對增肌並無顯著阻礙，前提是在進食窗口內仍能攝取足夠的每日蛋白質總量，且不要在過度空腹狀態下進行高強度訓練。對於初學者或蛋白質攝取困難者，間歇性斷食反而可能增加達標的難度，建議先確立飲食基礎再考慮是否採用此策略。
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    重訓飲食的核心，遠比市面上的廣告訊息要簡單得多：<strong style="color: #1e293b;">足夠的蛋白質、適量的碳水化合物提供訓練能量、豐富的蔬菜支持恢復，加上少數真正有依據的補充品。</strong> 這四件事做好，90% 的人已經超越了大多數健身飲食的誤區。
+  </p>
+  <p style="color: #475569; font-size: 1.05rem;">
+    飲食調整需要時間，肌肉生長更需要時間。不要追求「最快速的增肌食譜」，而是建立一套<strong style="color: #1e293b;">你能長期維持的飲食習慣</strong>——持續性，永遠是效果最好的策略。如果你有特定的體態目標、代謝問題或訓練計劃，歡迎預約門診，進行個別化的運動醫學飲食評估。
+  </p>
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的建議攝取量，計算你今天的蛋白質攝取是否達標。若你是 70 公斤的重訓者，目標是每日攝取 112–154 公克蛋白質——現在就試著列出你今天吃了多少。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約運動醫學飲食評估
+    </a>
+  </div>
+</div>
+`,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Morton, R.W., Murphy, K.T., McKellar, S.R., Schoenfeld, B.J., Henselmans, M., Helms, E., ... & Phillips, S.M. (2018). A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults. <em>British Journal of Sports Medicine, 52</em>(6), 376–384.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 28642676</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Maughan, R.J., Burke, L.M., Dvorak, J., Larson-Meyer, D.E., Peeling, P., Phillips, S.M., ... & Engebretsen, L. (2018). IOC consensus statement: dietary supplements and the high-performance athlete. <em>British Journal of Sports Medicine, 52</em>(7), 439–455.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34445067/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 34445067</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kerksick, C.M., Wilborn, C.D., Roberts, M.D., Smith-Ryan, A., Kleiner, S.M., Jäger, R., ... & Kreider, R.B. (2018). ISSN exercise & sports nutrition review update: research & recommendations. <em>Journal of the International Society of Sports Nutrition, 15</em>(1), 38.
+        <a href="https://jissn.biomedcentral.com/....../s12970-018-0242-y" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1186/s12970-018-0242-y</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Moore, D.R., Robinson, M.J., Fry, J.L., Tang, J.E., Glover, E.I., Wilkinson, S.B., ... & Phillips, S.M. (2009). Ingested protein dose response of muscle and albumin protein synthesis after resistance exercise in young men. <em>American Journal of Clinical Nutrition, 89</em>(1), 161–168.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27511985/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 27511985</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Food and Agriculture Organization of the United Nations (FAO). (2013). Dietary Protein Quality Evaluation in Human Nutrition: Report of an FAO Expert Consultation. FAO Food and Nutrition Paper 92. Rome: FAO.
+        <a href="https://www.fao.org/....../35978......" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">FAO Publication</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Helms, E.R., Aragon, A.A., & Fitschen, P.J. (2014). Evidence-based recommendations for natural bodybuilding contest preparation: nutrition and supplementation. <em>Journal of the International Society of Sports Nutrition, 11</em>, 20.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27347222/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 27347222</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Larsen, F.J., Weitzberg, E., Lundberg, J.O., & Ekblom, B. (2010). Dietary inorganic nitrate improves mitochondrial efficiency in humans. <em>Cell Metabolism, 13</em>(2), 149–159. / Res, P.T., et al. (2012). Protein ingestion before sleep improves postexercise overnight recovery. <em>Medicine & Science in Sports & Exercise, 44</em>(😎, 1560–1569.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/22330017/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 22330017</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lanhers, C., Pereira, B., Naughton, G., Trousselard, M., Lesage, F.X., & Dutheil, F. (2017). Creatine Supplementation and Upper Limb Strength Performance: A Systematic Review and Meta-Analysis. <em>Sports Medicine, 47</em>(1), 163–173.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26874700/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 26874700</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Schoenfeld, B.J., & Aragon, A.A. (2018). How much protein can the body use in a single meal for muscle-building? Implications for daily protein distribution. <em>Journal of the International Society of Sports Nutrition, 15</em>(1), 10.
+        <a href="https://jissn.biomedcentral.com/....../s12970-018-0215-1" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1186/s12970-018-0215-1</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Stokes, T., Hector, A.J., Morton, R.W., McGlory, C., & Phillips, S.M. (2018). Recent Perspectives Regarding the Role of Dietary Protein for the Promotion of Muscle Hypertrophy with Resistance Exercise Training. <em>Nutrients, 10</em>(2), 180.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29414855/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 29414855</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Burke, L.M., van Loon, L.J.C., & Hawley, J.A. (2017). Carbohydrate for training and competition. <em>Journal of Sports Sciences, 29</em>(Suppl 1), S17–S27.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/21951360/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 21951360</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        van Vliet, S., Burd, N.A., & van Loon, L.J.C. (2015). The skeletal muscle anabolic response to plant- versus animal-based protein consumption. <em>Journal of Nutrition, 145</em>(9), 1981–1991.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26224750/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 26224750</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+
+
+
+
 {
 id: 'baseball-pitching-biomechanics-injuries',
   title: '棒球各種球路的運動傷害全解析：指叉球、四縫線、滑球，誰更容易讓投手受傷？',

@@ -14,6 +14,7 @@ export const sportsInjuriesData = [
         slug: 'tennis-serve-injuries', 
         title: '網球發球傷害',
         description: '專業解析網球發球對肩袖造成的壓力與預防。',
+        image: '/images/ankle-sprain.jpg',
         features: ['肩袖拉傷', '物理治療'],
         canonicalUrl: '/about/news/tennis-serve-injuries', 
       }
