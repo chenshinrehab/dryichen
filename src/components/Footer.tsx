@@ -92,14 +92,14 @@ export default function Footer() {
                 {/* 3. 減重與骨齡 */}
                 <Link href="/weight-bone" className="animate-on-scroll delay-300 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
                   <Image 
-                    src="/images/icons/c.webp" 
-                    alt="減重與骨齡門診" 
+                    src="/images/icons/e.webp" 
+                    alt="特色門診" 
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-3">
-                        <span className="text-white font-bold text-sm md:text-base group-hover:text-cyan-400 transition-colors relative z-10">減重與骨齡</span>
+                        <span className="text-white font-bold text-sm md:text-base group-hover:text-cyan-400 transition-colors relative z-10">特色門診</span>
                     </div>
                 </Link>
 

@@ -77,6 +77,8 @@ export default function Navigation() {
             { name: '重訓運動傷害', path: '/weight-bone/sports-injuries/weight-training' },
             { name: '跑步運動傷害', path: '/weight-bone/sports-injuries/running' },
             { name: '其他運動傷害', path: '/weight-bone/sports-injuries/other' },
+            { name: '營養補充知識', path: '/weight-bone/sports-injuries/nutrition' },
+            { name: '診間隨筆', path: '/weight-bone/sports-injuries/diary' },
         ]
     },
     { 

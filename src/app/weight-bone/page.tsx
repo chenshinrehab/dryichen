@@ -28,15 +28,20 @@ const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 // 1. Meta 設定
 // ==========================================
 export const metadata: Metadata = {
-  title: '新竹減重與骨齡門診 - 猛健樂/瘦瘦針/生長遲緩/性早熟評估 | 新竹宸新復健科 ',
-  description: '新竹宸新復健科提供專業體重管理與兒童生長發育評估。林羿辰醫師親自規劃猛健樂(Mounjaro)、週纖達(Ozempic)等瘦瘦針療程，並提供兒童骨齡X光檢查。',
-  keywords: ['新竹減重', '新竹猛健樂', '瘦瘦針', '新竹照骨齡', '生長遲緩', '性早熟', '週纖達', '兒童長高', '宸新復健科減重'],
+  // 強化「復健科」與「運動傷害」關聯
+  title: '新竹減重/骨齡/運動傷害門診 - 猛健樂、瘦瘦針、兒童生長 | 宸新復健科',
+  description: '新竹宸新復健科由林羿辰醫師帶領，專精猛健樂(Mounjaro)減重、兒童骨齡評估及運動傷害復健（籃球、網球運動傷害門診）。提供精準醫療評估，助您找回健康體態與活動力。',
+  // 擴充運動傷害關鍵字
+  keywords: [
+    '新竹減重', '新竹猛健樂', '新竹復健科推薦', '運動傷害治療', '網球肘復健', 
+    '籃球運動傷害', '新竹照骨齡', '性早熟', '林羿辰醫師', '宸新復健科'
+  ],
   alternates: {
     canonical: CANONICAL_URL,
   },
   openGraph: {
-    title: '新竹減重與骨齡門診 - 猛健樂/瘦瘦針/生長遲緩/性早熟評估  | 新竹宸新復健科',
-    description: '提供新竹地區專業減重、瘦瘦針治療與兒童骨齡評估服務。',
+    title: '新竹宸新復健科 - 減重、兒童骨齡與運動傷害專業門診',
+    description: '專業體重管理、兒童生長評估與運動傷害診斷，由林羿辰醫師提供個人化療程。',
     url: CANONICAL_URL,
     type: 'website',
     siteName: '新竹宸新復健科診所',
@@ -44,6 +49,8 @@ export const metadata: Metadata = {
   other: {
     'geo.region': 'TW-HCH',
     'geo.placename': '新竹市',
+    'geo.position': '24.7833314;121.0170937', // 建議加入經緯度，對在地 SEO 有幫助
+    'ICBM': '24.7833314;121.0170937',
   }
 }
 
@@ -52,36 +59,71 @@ const weightBoneSchema = {
   '@graph': [
     {
       '@type': 'BreadcrumbList',
-      itemListElement: [
+      'itemListElement': [
         { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
-        { '@type': 'ListItem', position: 2, name: '減重與骨齡', item: CANONICAL_URL },
+        { '@type': 'ListItem', position: 2, name: '醫療服務', item: CANONICAL_URL },
       ],
     },
     {
-      '@type': 'MedicalWebPage', 
+      '@type': 'MedicalWebPage',
       '@id': `${CANONICAL_URL}#webpage`,
-      'name': '減重與骨齡門診',
-      'description': '提供新竹地區專業減重、瘦瘦針治療與兒童骨齡評估服務。',
+      'name': '減重、骨齡與運動傷害綜合門診',
+      'description': '專精於體重管理(猛健樂)、兒童骨齡檢查及各類運動傷害(籃球、網球)之診斷與復健。',
       'url': CANONICAL_URL,
       'lastReviewed': new Date().toISOString().split('T')[0],
       'reviewedBy': {
         '@type': 'Physician',
         'name': '林羿辰 醫師',
-        'url': `${SITE_URL}/about/doctors`
+        'image': `${SITE_URL}/dr-lin-photo.jpg`, // 加入醫師照片對 E-E-A-T 有幫助
+        'medicalSpecialty': ['RehabilitationMedicine', 'SportsMedicine']
       },
-      'specialty': [
-        { '@type': 'MedicalSpecialty', 'name': 'Weight Loss Management' },
-        { '@type': 'MedicalSpecialty', 'name': 'Pediatric Growth Assessment' }
+      // 擴張醫療領域
+      'relevantSpecialty': [
+        { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation' },
+        { '@type': 'MedicalSpecialty', 'name': 'Sports Medicine' },
+        { '@type': 'MedicalSpecialty', 'name': 'Endocrinology' }
       ],
-      'mainEntity': {
-        '@type': 'ItemList',
-        'itemListElement': weightLossPrograms.map((program, index) => ({
+      // 透過 ItemList 呈現導覽架構
+      'mainEntity': [
+        {
+          '@type': 'ItemList',
+          'name': '體重管理與骨齡服務',
+          'itemListElement': weightLossPrograms.map((program, index) => ({
             '@type': 'ListItem',
             'position': index + 1,
             'url': `${SITE_URL}/weight-bone/${program.slug}`,
             'name': program.title
-        }))
-      }
+          }))
+        },
+        {
+          '@type': 'ItemList',
+          'name': '運動傷害復健導覽',
+          'itemListElement': [
+            { '@type': 'ListItem', 'position': 1, 'name': '籃球運動傷害復健', 'url': `${SITE_URL}/sports-injury/basketball` },
+            { '@type': 'ListItem', 'position': 2, 'name': '網球運動傷害與網球肘', 'url': `${SITE_URL}/sports-injury/tennis` }
+          ]
+        }
+      ]
+    },
+    // 新增：在地診所實體資訊，這對 Geo SEO 極其重要
+    {
+      '@type': 'MedicalClinic',
+      'name': '宸新復健科診所',
+      'alternateName': '新竹宸新復健科',
+      'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': '光復路一段371號B1',
+      'addressLocality': '新竹市',
+      'addressRegion': '東區',
+      'postalCode': '300',
+      'addressCountry': 'TW',
+      },
+      'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': '24.7833314', 
+      'longitude': '121.0170937'
+      },
+      'telephone': '+886-35647999',
     }
   ]
 }
@@ -105,13 +147,14 @@ export default function WeightLossPage() {
             {/* 標題區塊 */}
             <div className="text-center mb-5 max-w-4xl mx-auto animate-on-scroll relative z-50">
               <div className="flex items-center justify-center gap-4 mb-4">
-                  <span className="flex items-center justify-center w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-lg border border-cyan-500/30">
-                      <FaWeight size={20} />
-                  </span>
+{/* 手機版本隱藏，電腦版 (md以上) 才顯示 */}
+<span className="hidden md:flex items-center justify-center w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-lg border border-cyan-500/30">
+  <FaWeight size={20} />
+</span>
 
                   <div className="flex flex-col justify-center">
                       <h1 className="text-3xl font-bold font-sans text-white leading-none transform translate-y-[7px]">
-                          減重、成長與運動醫學特色門診
+                          減重、成長與運動醫學門診
                       </h1>
                   </div>
               </div>
@@ -122,21 +165,20 @@ export default function WeightLossPage() {
               </div>
             </div>
 
-            {/* 健康實用小工具區塊 (電腦版顯示四顆按鈕) */}
-            <div className="mb-16 animate-on-scroll delay-150 relative z-10">
-              <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-                  <FaTools className="text-cyan-400" /> 健康實用小工具
-                </h2>
-              </div>
+{/* 健康實用小工具區塊 (僅在電腦版 md 以上顯示) */}
+<div className="hidden md:block mb-16 animate-on-scroll delay-150 relative z-10">
+  <div className="flex items-center justify-between mb-6">
+    <h2 className="text-2xl font-bold text-white flex items-center gap-3">
+      <FaTools className="text-cyan-400" /> 健康實用小工具
+    </h2>
+  </div>
 
-              {/* 這裡電腦版放入四顆按鈕，方格內容自適應 */}
-              <div className="bg-slate-800/30 backdrop-blur border border-slate-700/50 rounded-2xl p-6 md:p-8">
-                  
-                 {/* 渲染按鈕組件 */}
-                 <WeightLossTools />
-              </div>
-            </div>
+  {/* 這裡電腦版放入四顆按鈕，方格內容自適應 */}
+  <div className="bg-slate-800/30 backdrop-blur border border-slate-700/50 rounded-2xl p-6 md:p-8">
+    {/* 渲染按鈕組件 */}
+    <WeightLossTools />
+  </div>
+</div>
 
             {/* 區塊一：前兩個減重與骨齡卡片 (通常是減重相關) */}
             <div className="grid grid-cols-1 gap-8 mb-16 animate-on-scroll delay-100 relative z-10">

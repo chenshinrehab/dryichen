@@ -15,21 +15,22 @@ export default function SportsCategoryPage({ params }: { params: { category: str
   }
 
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-300 pt-24 pb-12">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
+        <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 fade-in relative z-10">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* 返回上一頁 */}
         <Link 
           href="/weight-bone" 
           className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-8 transition-colors"
         >
-          <FaArrowLeft className="mr-2" /> 返回減重與骨齡首頁
+          <FaArrowLeft className="mr-2" /> 返回特色門診首頁
         </Link>
 
         {/* 分類標題 */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-white mb-4">{categoryData.title} 常見傷害導覽</h1>
-          <p className="text-xl text-slate-400">{categoryData.description}</p>
+          <h1 className="text-4xl font-bold text-white mb-4">{categoryData.title} </h1>
+  
         </div>
 
         {/* 具體傷害項目列表 */}
@@ -56,19 +57,13 @@ export default function SportsCategoryPage({ params }: { params: { category: str
                 <p className="text-slate-300 mb-6 flex-grow line-clamp-2">
                   {injury.description}
                 </p>
-                <div className="flex flex-wrap gap-2 mt-auto">
-                  {injury.features.map((feature, idx) => (
-                    <span key={idx} className="text-xs bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded border border-cyan-500/20 flex items-center">
-                      <FaCheck className="mr-1 text-[10px]" /> {feature}
-                    </span>
-                  ))}
-                </div>
               </div>
             </Link>
           ))}
         </div>
 
+          </div>
+        </main>
       </div>
-    </div>
   )
 }
