@@ -69,12 +69,11 @@ export default function WeightLossTools() {
           <Link
             key={tool.href}
             href={tool.href}
-            className={`group relative flex-1 min-w-0 inline-flex items-center justify-center gap-1.5 lg:gap-2 px-2 lg:px-6 py-3 bg-gradient-to-r ${tool.color} rounded-full text-white font-bold shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:-translate-y-1 transition-all duration-300 whitespace-nowrap text-sm lg:text-base`}
+            className={`group relative flex-1 min-w-0 inline-flex items-center justify-center gap-1.5 lg:gap-2 px-2 lg:px-5 py-3 bg-gradient-to-r ${tool.color} rounded-full text-white font-bold shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:-translate-y-1 transition-all duration-300 whitespace-nowrap text-sm lg:text-base`}
           >
             <span className="absolute inset-0 bg-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
             <tool.Icon className="text-base lg:text-lg group-hover:animate-pulse" />
             <span className="truncate">{tool.label}</span>
-            <FaArrowRight className="text-xs lg:text-sm ml-1 group-hover:translate-x-1 transition-transform shrink-0" />
           </Link>
         ))}
       </div>

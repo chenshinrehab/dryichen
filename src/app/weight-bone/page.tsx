@@ -1,4 +1,3 @@
-// src/app/weight-bone/page.tsx
 import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
@@ -6,15 +5,18 @@ import JsonLd from '@/components/JsonLd'
 import { weightLossPrograms } from '@/data/weightLoss'
 import WeightLossTools from '@/components/WeightLossTools'
 import ScrollAnimation from '@/components/ScrollAnimation'
+import { sportsInjuriesData } from '@/data/sportsInjuries'
 
-// ✨ 引入所需的 React Icons，確保顯示穩定且極速
+// ✨ 引入所需的 React Icons
 import { 
   FaWeight, 
   FaFileMedical, 
   FaArrowRight, 
   FaCheck, 
   FaUserMd, 
-  FaExclamationTriangle 
+  FaExclamationTriangle,
+  FaTools,
+  FaRunning
 } from "react-icons/fa";
 
 // 定義常數，確保網址一致
@@ -23,10 +25,9 @@ const PAGE_PATH = '/weight-bone'
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
 // ==========================================
-// 1. Meta 設定 (優化 Title 並加入 Geo 標籤)
+// 1. Meta 設定
 // ==========================================
 export const metadata: Metadata = {
-  // 修正：移除後綴診所名，避免與 layout.tsx 模板疊加
   title: '新竹減重與骨齡門診 - 猛健樂/瘦瘦針/生長遲緩/性早熟評估 | 新竹宸新復健科 ',
   description: '新竹宸新復健科提供專業體重管理與兒童生長發育評估。林羿辰醫師親自規劃猛健樂(Mounjaro)、週纖達(Ozempic)等瘦瘦針療程，並提供兒童骨齡X光檢查。',
   keywords: ['新竹減重', '新竹猛健樂', '瘦瘦針', '新竹照骨齡', '生長遲緩', '性早熟', '週纖達', '兒童長高', '宸新復健科減重'],
@@ -40,7 +41,6 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: '新竹宸新復健科診所',
   },
-  // 加入在地化 Geo 標記
   other: {
     'geo.region': 'TW-HCH',
     'geo.placename': '新竹市',
@@ -87,6 +87,10 @@ const weightBoneSchema = {
 }
 
 export default function WeightLossPage() {
+  // 將原本的三個項目拆分：前兩個為一組，第三個為一組
+  const firstTwoPrograms = weightLossPrograms.slice(0, 2);
+  const remainingPrograms = weightLossPrograms.slice(2);
+
   return (
     <>
       <JsonLd data={weightBoneSchema} />
@@ -98,7 +102,7 @@ export default function WeightLossPage() {
         <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 relative z-10">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            {/* 標題與工具區塊 */}
+            {/* 標題區塊 */}
             <div className="text-center mb-5 max-w-4xl mx-auto animate-on-scroll relative z-50">
               <div className="flex items-center justify-center gap-4 mb-4">
                   <span className="flex items-center justify-center w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-lg border border-cyan-500/30">
@@ -107,19 +111,36 @@ export default function WeightLossPage() {
 
                   <div className="flex flex-col justify-center">
                       <h1 className="text-3xl font-bold font-sans text-white leading-none transform translate-y-[7px]">
-                          減重與骨齡
+                          減重、成長與運動醫學特色門診
                       </h1>
                   </div>
               </div>
 
-              <div className="relative z-20">
+              {/* 手機版：維持在標題下方顯示小工具 */}
+              <div className="relative z-20 md:hidden">
                   <WeightLossTools />
               </div>
             </div>
 
-            {/* 卡片列表 (優化：H2 層級與圖片 Alt) */}
+            {/* 健康實用小工具區塊 (電腦版顯示四顆按鈕) */}
+            <div className="mb-16 animate-on-scroll delay-150 relative z-10">
+              <div className="flex items-center justify-between mb-6">
+                <h2 className="text-2xl font-bold text-white flex items-center gap-3">
+                  <FaTools className="text-cyan-400" /> 健康實用小工具
+                </h2>
+              </div>
+
+              {/* 這裡電腦版放入四顆按鈕，方格內容自適應 */}
+              <div className="bg-slate-800/30 backdrop-blur border border-slate-700/50 rounded-2xl p-6 md:p-8">
+                  
+                 {/* 渲染按鈕組件 */}
+                 <WeightLossTools />
+              </div>
+            </div>
+
+            {/* 區塊一：前兩個減重與骨齡卡片 (通常是減重相關) */}
             <div className="grid grid-cols-1 gap-8 mb-16 animate-on-scroll delay-100 relative z-10">
-              {weightLossPrograms.map((program) => (
+              {firstTwoPrograms.map((program) => (
                 <Link
                   key={program.slug}
                   href={`/weight-bone/${program.slug}`}
@@ -169,8 +190,94 @@ export default function WeightLossPage() {
               ))}
             </div>
 
-            {/* 醫師治療理念區塊 (優化：H2 層級應用) */}
-            <div className="bg-slate-800/80 rounded-2xl p-8 border border-slate-700 relative overflow-hidden animate-on-scroll delay-200">
+            {/* 中間插入：運動傷害導覽區塊 */}
+            <div className="mb-16 animate-on-scroll delay-200 relative z-10">
+              <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                <FaRunning className="text-cyan-400" /> 運動傷害導覽
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {sportsInjuriesData.map((categoryItem) => (
+                  <Link
+                    key={categoryItem.category}
+                    href={`/weight-bone/sports-injuries/${categoryItem.category}`}
+                    className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 transition-all duration-300 flex flex-col cursor-pointer"
+                  >
+                    <div className="h-40 w-full relative overflow-hidden bg-slate-700">
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10"></div>
+                      <img 
+                        src={categoryItem.image} 
+                        alt={categoryItem.title} 
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60"
+                      />
+                      <h3 className="absolute bottom-4 left-4 z-20 text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                        {categoryItem.title}
+                      </h3>
+                    </div>
+                    <div className="p-5 flex-grow">
+                      <p className="text-slate-300 mb-4 line-clamp-2">{categoryItem.description}</p>
+                      <div className="flex items-center text-cyan-500 text-sm font-bold">
+                        查看分類傷害 <FaArrowRight className="ml-2" />
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* 區塊二：最後一個減重與骨齡卡片 (通常是骨齡相關項目) */}
+            <div className="grid grid-cols-1 gap-8 mb-16 animate-on-scroll delay-100 relative z-10">
+              {remainingPrograms.map((program) => (
+                <Link
+                  key={program.slug}
+                  href={`/weight-bone/${program.slug}`}
+                  className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] hover:-translate-y-1 transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
+                >
+                  {/* 圖片區塊 */}
+                  <div className="w-full md:w-2/5 relative h-48 md:h-full overflow-hidden">
+                    <img 
+                      src={program.image} 
+                      alt={`新竹宸新復健科專業門診：${program.title}`} 
+                      className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/90 to-transparent"></div>
+                  </div>
+
+                  {/* 文字內容區塊 */}
+                  <div className="w-full md:w-3/5 p-5 md:p-6 flex flex-col justify-center relative">
+                    <FaFileMedical className="absolute right-4 bottom-4 text-8xl text-slate-800/50 -rotate-12 group-hover:text-cyan-900/30 transition-colors duration-500 pointer-events-none" />
+                    
+                    <div className="relative z-10 h-full flex flex-col justify-center">
+                      <h2 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors flex items-center">
+                        {program.title}
+                        <FaArrowRight className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all ml-3 text-lg text-cyan-500" />
+                      </h2>
+
+                      <p className="text-slate-300 text-lg mb-4 line-clamp-2">
+                        {program.description}
+                      </p>
+
+                      {program.features && program.features.length > 0 && (
+                        <div className="mt-auto">
+                          <div className="flex flex-wrap gap-2">
+                             {program.features.slice(0, 3).map((feature, idx) => (
+                               <span key={idx} className="text-sm bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded border border-cyan-500/20 flex items-center">
+                                  <FaCheck className="mr-1 text-[10px]" />{feature}
+                               </span>
+                             ))}
+                             {program.features.length > 3 && (
+                               <span className="text-sm text-slate-500 px-2 py-1">...</span>
+                             )}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            {/* 醫師治療理念區塊 */}
+            <div className="bg-slate-800/80 rounded-2xl p-8 border border-slate-700 relative overflow-hidden animate-on-scroll delay-300">
                 <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>
                 
                 <div className="relative z-10 flex flex-col md:flex-row gap-8 items-start">
@@ -203,7 +310,7 @@ export default function WeightLossPage() {
                 </div>
             </div>
 
-            {/* SEO 導言區 (優化：加入 H2 層級補強) */}
+            {/* SEO 導言區 */}
             <div className="max-w-4xl mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300 mt-12 px-4 animate-on-scroll delay-300">
               <h2 className="sr-only">新竹減重與兒童骨齡專業醫療服務介紹</h2>
               <details className="group border-l-2 border-slate-700 pl-4">

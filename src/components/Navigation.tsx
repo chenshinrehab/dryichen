@@ -66,16 +66,17 @@ export default function Navigation() {
         ]
     },
     { 
-        name: '減重與骨齡', 
+        name: '特色門診', 
         path: '/weight-bone',
         subItems: [
             { name: '猛健樂 (Mounjaro)', path: '/weight-bone/mounjaro' },
-            { name: '週纖達 (Wegovy)', path: '/weight-bone/Wegovy' },
             { name: '兒童骨齡評估', path: '/weight-bone/bone-age' },
-            { name: '減重自我評估計算機', path: '/weight-bone/BMI' },
-            { name: '兒童生長發育評估儀', path: '/weight-bone/child' },
-            { name: '骨齡與遺傳身高預測', path: '/weight-bone/calculator' },
-            { name: '兒童長高營養指南', path: '/weight-bone/nutrition' },
+            { name: '網球運動傷害', path: '/weight-bone/sports-injuries/tennis' },
+            { name: '籃球運動傷害', path: '/weight-bone/sports-injuries/basketball' },
+            { name: '棒球運動傷害', path: '/weight-bone/sports-injuries/baseball' },
+            { name: '重訓運動傷害', path: '/weight-bone/sports-injuries/weight-training' },
+            { name: '跑步運動傷害', path: '/weight-bone/sports-injuries/running' },
+            { name: '其他運動傷害', path: '/weight-bone/sports-injuries/other' },
         ]
     },
     { 
