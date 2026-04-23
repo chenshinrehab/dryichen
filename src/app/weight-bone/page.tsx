@@ -189,14 +189,17 @@ export default function WeightLossPage() {
                   className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] hover:-translate-y-1 transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
                 >
                   {/* 圖片區塊 */}
-                  <div className="w-full md:w-2/5 relative h-48 md:h-full overflow-hidden">
-                    <img 
-                      src={program.image} 
-                      alt={`新竹宸新復健科專業門診：${program.title}`} 
-                      className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/90 to-transparent"></div>
-                  </div>
+<div className="w-full md:w-2/5 relative h-48 md:h-full overflow-hidden">
+  <img 
+    src={program.image} 
+    alt={`新竹宸新復健科專業門診：${program.title}`} 
+    className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+  />
+  
+  {/* 修改重點：將 /90 改為 /60，並限制寬度 md:w-1/2，避免遮擋整張圖 */}
+  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent md:bg-none"></div>
+  <div className="hidden md:block absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-slate-900/60 to-transparent"></div>
+</div>
 
                   {/* 文字內容區塊 */}
                   <div className="w-full md:w-3/5 p-5 md:p-6 flex flex-col justify-center relative">
@@ -245,13 +248,13 @@ export default function WeightLossPage() {
                     className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 transition-all duration-300 flex flex-col cursor-pointer"
                   >
                     <div className="h-40 w-full relative overflow-hidden bg-slate-700">
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10"></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent z-10"></div>
                       <img 
                         src={categoryItem.image} 
                         alt={categoryItem.title} 
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 opacity-100"
                       />
-                      <h3 className="absolute bottom-4 left-4 z-20 text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                      <h3 className="absolute bottom-4 left-4 z-20 text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors drop-shadow-lg">
                         {categoryItem.title}
                       </h3>
                     </div>
@@ -281,7 +284,7 @@ export default function WeightLossPage() {
                       alt={`新竹宸新復健科專業門診：${program.title}`} 
                       className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/90 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/60 to-transparent group-hover:from-slate-900/40 transition-colors duration-500"></div>
                   </div>
 
                   {/* 文字內容區塊 */}

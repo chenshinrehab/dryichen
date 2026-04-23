@@ -109,7 +109,7 @@ const medicalClinicSchema = {
   
   // ✨ SEO 關鍵日期
   'datePublished': '2026-01-25T08:00:00+08:00',
-  'dateModified': '2026-03-04T16:00:00+08:00',
+  'dateModified': '2026-04-23T16:00:00+08:00',
   
   // 修正：將 publisher 移至 WebPage 下方才合法
   'publisher': {

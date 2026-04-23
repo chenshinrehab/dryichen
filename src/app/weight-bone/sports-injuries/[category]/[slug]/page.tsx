@@ -17,6 +17,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const article = getNewsById(params.slug)
   if (!article) return { title: '文章不存在' }
 
+  // 這裡是「正宮」原始頁面的網址
   const canonicalUrl = `${SITE_URL}/about/news/${params.slug}`
   
   return {
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: article.seoDescription || article.summary,
     keywords: article.keywords,
     alternates: {
-      canonical: canonicalUrl,
+      canonical: canonicalUrl, // 告訴 Google 重複內容請索引這一條
     },
     openGraph: {
       title: article.seoTitle || article.title,
@@ -60,11 +61,15 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
     notFound()
   }
 
-  const currentUrl = `${SITE_URL}/about/news/${params.slug}`
+  // 目前頁面的網址
+  const currentUrl = `${SITE_URL}/weight-bone/sports-injuries/${params.category}/${params.slug}`
+  // 原始文章網址 (用於 Schema 宣告來源)
+  const canonicalUrl = `${SITE_URL}/about/news/${params.slug}`
+  
+  // QR Code 建議使用目前頁面網址，方便現場掃描
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(currentUrl)}`
   
   // 分類與樣式邏輯
-  const isMedicalContent = ['衛教文章', '醫學新知', '診間隨筆'].includes(article.category);
   const categoryStyles: Record<string, string> = {
     '門診公告': 'bg-pink-500/10 text-pink-400 border-pink-500/30',
     '診所活動': 'bg-pink-500/10 text-pink-400 border-pink-500/30',
@@ -78,8 +83,12 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
   const jsonLdData = {
     '@context': 'https://schema.org',
     '@type': ['MedicalWebPage', 'MedicalEntity'],
-    '@id': `${currentUrl}#webpage`,
+    '@id': `${currentUrl}#webpage`, // 本頁的實體 ID
     'url': currentUrl,
+    'mainEntityOfPage': {
+      '@type': 'WebPage',
+      '@id': canonicalUrl // 指向原始內容網頁，強化 Canonical 關係
+    },
     'name': article.title,
     'image': [article.coverImage || `${SITE_URL}/images/main/a.webp`],
     'description': article.summary,
@@ -136,7 +145,6 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
         <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 fade-in relative z-10">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            {/* 返回按鈕與麵包屑 */}
             <Link 
               href={`/weight-bone/sports-injuries/${categoryData.category}`} 
               className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group"
@@ -148,9 +156,7 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
             <article className="bg-slate-800/80 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden shadow-2xl">
               <div className="p-4 md:p-10">
                 
-                {/* 標題區塊 */}
                 <header className="mb-10 border-l-4 border-cyan-500 pl-4 bg-gradient-to-r from-slate-900/80 to-transparent py-6 rounded-r-xl flex flex-col md:flex-row md:items-center gap-6">
-                  {/* QR Code */}
                   <div className="hidden md:block bg-white p-2 rounded-lg shrink-0 group relative shadow-lg ring-2 ring-slate-700">
                     <img className="w-24 h-24 object-contain" src={qrCodeApiUrl} alt="QR Code" />
                   </div>
@@ -175,13 +181,11 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
                   </div>
                 </header>
 
-                {/* 文章內容 */}
                 <div className="article-content text-slate-300 leading-relaxed text-lg pb-6">
                   <div dangerouslySetInnerHTML={{ __html: article.contentHtml }} />
                 </div>
               </div>
 
-              {/* 醫師資訊結語 - 樣式同步範本 */}
               <footer className="mt-0">
                 <div className="px-4 md:px-10 mb-10">
                   <div className="bg-slate-800/40 backdrop-blur border border-slate-700 rounded-2xl p-6 md:p-8 shadow-lg relative overflow-hidden">
@@ -207,7 +211,6 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
                   </div>
                 </div>
 
-                {/* 分享區塊 */}
                 <div className="bg-slate-900/80 p-8 md:p-12 border-t border-slate-700 text-center">
                   <h2 className="text-white font-bold text-2xl mb-3">覺得這篇文章有幫助嗎？</h2>
                   <p className="text-slate-400 mb-8 text-lg">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
@@ -224,7 +227,6 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
                 </div>
               </footer>
 
-              {/* 參考文獻 */}
               {article.referencesHtml && (
                 <section className="px-6 md:px-10 pb-12">
                   <div className="bg-slate-900/50 border border-slate-700/50 rounded-2xl p-6 md:p-8">
