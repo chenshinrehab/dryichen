@@ -16,6 +16,12 @@ export const sportsInjuriesData = [
         description: '從醫學角度深度解析枕頭軟硬、高度與形狀的選擇依據。實證研究揭露側躺與正躺各需哪種枕頭、中間凹洞設計是否真的有效，以及記憶棉、乳膠、羽絨等材質的差異，幫助你科學選出最適合自己的枕頭，告別晨起頸痛。',
         image: '/images/news/article/pillow-selection-guide.webp',
       },
+                {
+        slug: 'sleep-position-health-analysis',
+        title: '正睡還是側睡？解析對脊椎、肩膀、骨盆與內臟器官的影響',
+        description: '從醫學角度深度分析側睡與正睡（仰睡）的優缺點，涵蓋脊椎、肩膀旋轉肌群、骨盆、呼吸道及胃食道逆流等全面影響。實證研究揭露哪種睡姿更健康，並解析全球睡眠姿勢比例與個人化建議。',
+        image: '/images/news/article/sleep-position-health-analysis.webp',
+      },
           {
         slug: 'why-cats-dont-get-stiff-neck',
         title: '家裡兩隻貓咪每天不是躺著就是躺著，為什麼不會落枕呢？',
@@ -27,6 +33,12 @@ export const sportsInjuriesData = [
         title: '脊椎側彎完整指南：成因、角度變化與治療選項全解析',
         description: '脊椎側彎不只是外觀問題！深入解析特發性、先天性與退化性側彎的成因，Cobb角度是否能變回來，以及從觀察到手術的完整治療比較。',
         image: '/images/news/article/scoliosis-treatment.webp',
+      },
+                  {
+        slug: 'pain-medication-analysis',
+        title: '疼痛就吃止痛藥？解析止痛藥與肌肉鬆弛劑的真相與風險',
+        description: '深度剖析非類固醇消炎止痛藥（NSAIDs）、肌肉鬆弛劑、乙醯胺酚（普拿疼）的藥理機制與長期使用風險。實證研究揭露止痛藥只是「關掉警報」而非治療根源，並說明何時需要尋找疼痛的真正成因。',
+        image: '/images/news/article/pain-medication-analysis.webp',
       },
             {
         slug: 'nsaid-hypersensitivity',
@@ -117,6 +129,12 @@ export const sportsInjuriesData = [
     description: '籃球運動常見的急停、跳躍所導致的傷害解析。',
     image: '/images/sportinjury/2.webp',
     injuries: [
+            {
+        slug: 'nba-injury-analysis',
+        title: 'NBA球員十字韌帶、半月板、跟腱撕裂後的數據真相',
+        description: '深度剖析NBA球員最常見的三大毀滅性傷病：前十字韌帶(ACL)撕裂、半月板手術與跟腱(阿基里斯腱)撕裂。從運動醫學、生物力學與進階實證數據出發，揭露這三種傷病術後的重返賽場(RTP)機率、真實命中率(TS%)影響、球員效率值(PER)下降幅度，以及「代償效應」帶來的二次傷害風險。並以Kevin Durant、Klay Thompson等球星為例，提供最科學的傷病解答。',
+        image: '/images/news/article/nba-injury-analysis.webp',
+      },
       {
         slug: 'basketball-injury',
         title: '為什麼打籃球最傷膝蓋？常見膝關節運動傷害完整解析',
@@ -133,6 +151,12 @@ export const sportsInjuriesData = [
     description: '棒球運動醫學角度解析，並分析常見運動傷害。',
     image: '/images/sportinjury/3.webp',
     injuries: [
+            {
+        slug: 'mlb-tommy-john-surgery-analysis',
+        title: '解密 MLB 球員 Tommy John 手術後的真實回歸率與表現變化',
+        description: '從大谷翔平到韋蘭德：醫學解密 MLB 球員 Tommy John 手術的回歸率與表現',
+        image: '/images/news/article/tommyjohn-analysis.webp',
+      },
       {
         slug: 'baseball-pitcher-velocity',
         title: '棒球投手如何投出更快的球？運動醫學的科學解析',

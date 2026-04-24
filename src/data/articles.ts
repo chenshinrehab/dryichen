@@ -4,7 +4,7 @@ export const articlesData: NewsPost[] = [
 
 {
   id: 'nba-injury-analysis',
-  title: 'NBA球員三大致命傷：十字韌帶、半月板、跟腱撕裂後的數據真相',
+  title: 'NBA球員十字韌帶、半月板、跟腱撕裂後的數據真相',
   lastModified: '2026-04-24',
   category: '衛教文章',
   date: '2026-04-24',
@@ -32,13 +32,12 @@ export const articlesData: NewsPost[] = [
     <b>前十字韌帶（ACL）撕裂</b>的手術技術已相當成熟，重返賽場（RTP）的機率高達 86%，但多數球員需要到術後第二年才能找回受傷前的橫移速度，且對側膝蓋受傷的機率會顯著上升；
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/23982403/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
     <b>半月板撕裂</b>的影響則取決於位置與手術方式，其中「外側半月板切除」對籃球員的傷害最深，不僅大幅增加關節炎風險，平均職業壽命更比修補手術者少了近 2.5 年；
-    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/25136006/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/25136006/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup><br><br>
     而最令人聞之色變的<b>跟腱（阿基里斯腱）撕裂</b>，歷史數據顯示有近 30% 的球員因此結束 NBA 生涯，成功復出者在首季的球員效率值（PER）平均暴跌 4.6 分，真實命中率（TS%）在禁區內更會出現斷崖式下滑。
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/26415003/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
     本文將以實證數據為基礎，結合生物力學，帶您深入看懂這些傷病背後的醫學真相。
   </p>
 </div>
-<img src="/images/news/article/nba-injury/1.webp" alt="NBA球員十字韌帶、半月板與跟腱撕裂深度分析" class="responsive-img-enlarge">
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <section style="margin-bottom: 3.5rem;">
@@ -51,9 +50,9 @@ export const articlesData: NewsPost[] = [
   
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">重建手術的抉擇：髕骨肌腱 vs. 膕繩肌腱</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    ACL 斷裂後無法自行癒合，必須取身體其他部位的肌腱來「種」一條新的。在 NBA，超過 80% 的球員選擇使用<b>髕骨肌腱（BPTB）</b>進行重建，而非一般大眾常用的膕繩肌腱（Hamstring）。
+    ACL 斷裂後無法自行癒合，必須取身體其他部位的肌腱來「種」一條新的。在 NBA，超過 80% 的球員選擇使用<b>髕骨肌腱</b>進行重建，而非一般大眾常用的膕繩肌腱（Hamstring）。
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/28549272/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
-    原因是髕骨肌腱帶有兩端骨塊，骨頭與骨頭的癒合最為穩固，能承受 NBA 級別的強大煞車力道。但代價是術後容易出現「前膝痛（Anterior knee pain）」，影響球員早期的爆發力與跳躍信心。
+    原因是髕骨肌腱帶有兩端骨塊，骨頭與骨頭的癒合最為穩固，能承受 NBA 級別的強大煞車力道。但代價是術後容易出現「前膝痛」，影響球員早期的爆發力與跳躍信心。
   </p>
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">數據解碼：復出後的「防守黑洞」與「對側風險」</h3>
@@ -66,7 +65,7 @@ export const articlesData: NewsPost[] = [
   <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">NBA 球星案例：</p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
     <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">Derrick Rose（飆風玫瑰）：</strong>ACL 撕裂後，因為不敢完全依賴修復的左膝，過度代償導致後來右膝半月板嚴重撕裂，徹底改變了 MVP 級別的打法。</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">Ricky Rubio：</strong>生涯遭遇兩次同一膝蓋的 ACL 撕裂。醫學統計指出，同側韌帶再次斷裂（Re-tear）的機率在職業運動員中約為 5-9%。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">Ricky Rubio：</strong>生涯遭遇兩次同一膝蓋的 ACL 撕裂。醫學統計指出，同側韌帶再次斷裂的機率在職業運動員中約為 5-9%。</li>
   </ul>
 </section>
 
@@ -76,7 +75,6 @@ export const articlesData: NewsPost[] = [
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
     二、半月板撕裂：內外側的命運天秤，與「透支未來」的代價
   </h2>
-  <img src="/images/news/article/nba-injury/meniscus.webp" alt="內外側半月板修補與切除手術差異" class="responsive-img-enlarge">
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     半月板這兩塊「C型避震軟骨」，不僅吸收衝擊，更增加了大腿骨與小腿骨之間的密合度。但在籃球場上，半月板的受傷位置（內側或外側）以及治療方式，將決定一名球員未來的職業壽命。
   </p>
@@ -92,7 +90,7 @@ export const articlesData: NewsPost[] = [
   <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">NBA 球星案例：</p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
     <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">Chris Paul：</strong>曾在黃蜂時期接受外側半月板切除手術，這導致他失去了早年「黃蜂船長」時期可怕的第一步爆發力，迫使他全面轉型為節奏掌控與中距離大師。</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">Zion Williamson：</strong>在遭遇外側半月板撕裂時，醫療團隊堅持選擇「縫合修補（Repair）」。雖然讓他缺席了長達數月，但保留了完整的避震系統，是保護他驚人體重與爆發力的唯一正解。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">Zion Williamson：</strong>在遭遇外側半月板撕裂時，醫療團隊堅持選擇「縫合修補」。雖然讓他缺席了長達數月，但保留了完整的避震系統，是保護他驚人體重與爆發力的唯一正解。</li>
   </ul>
 
   <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
@@ -109,7 +107,6 @@ export const articlesData: NewsPost[] = [
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
     三、跟腱（阿基里斯腱）撕裂：偷走第一步爆發力的「死神」
   </h2>
-  <img src="/images/news/article/nba-injury/achilles.webp" alt="NBA跟腱撕裂傷害與爆發力喪失分析" class="responsive-img-enlarge">
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
     跟腱是人體最強壯的肌腱，負責傳遞小腿後側肌肉（腓腸肌與比目魚肌）的力量。在籃球運動中，從墊步起跳、歐洲步變向到防守橫移，跟腱就像一條不斷拉伸與收縮的粗壯橡皮筋。當這條橡皮筋在無對抗狀態下突然斷裂（通常感覺像被人從後面踢了一腳），球員的爆發力往往也隨之而去。
   </p>
@@ -118,7 +115,7 @@ export const articlesData: NewsPost[] = [
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     為什麼跟腱斷裂如此致命？醫學影像追蹤顯示，跟腱斷裂縫合後，雖然肌腱本身可以癒合，但<b>小腿比目魚肌的體積與力量，永遠無法 100% 恢復到受傷前的水準（通常會永久減少 10-15%）</b>。
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/30346850/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
-    此外，修復後的跟腱「剛性（Stiffness）」會改變，導致力量傳遞的效率下降。
+    此外，修復後的跟腱「剛性」會改變，導致力量傳遞的效率下降。
   </p>
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">進階數據的殘酷真相</h3>
@@ -129,7 +126,7 @@ export const articlesData: NewsPost[] = [
   </p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
     <li style="margin-bottom: 0.5rem;"><b>球員效率值（PER）：</b>平均下降 4.5 至 4.6 分。</li>
-    <li style="margin-bottom: 0.5rem;"><b>真實命中率（TS%）：</b>特別是在「禁區內（Restricted Area）」的命中率大幅下降，因為球員失去了最後一拍拔起爆扣或對抗上籃的彈速。</li>
+    <li style="margin-bottom: 0.5rem;"><b>真實命中率（TS%）：</b>特別是在「禁區內」的命中率大幅下降，因為球員失去了最後一拍拔起爆扣或對抗上籃的彈速。</li>
     <li style="margin-bottom: 0.5rem;"><b>上場時間：</b>場均減少 5-10 分鐘，且背靠背（B2B）賽程常需要輪休。
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/33132640/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
     </li>
@@ -153,7 +150,7 @@ export const articlesData: NewsPost[] = [
 
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    四、復健期的兩大隱形難關：心理障礙（Kinesiophobia）與代償連鎖反應
+    四、復健期的兩大隱形難關：心理障礙與代償連鎖反應
   </h2>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
     除了身體組織的癒合，現代運動醫學越來越重視傷後的「心理與神經力學」問題。許多球員生理指數已達標，但回到場上卻判若兩人，主要受限於以下兩點：
@@ -173,7 +170,7 @@ export const articlesData: NewsPost[] = [
   <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
     <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
       <strong>⚠️ 最著名的代償悲劇：Klay Thompson</strong><br><br>
-      Klay 在 2019 年總冠軍賽遭遇<b>左膝 ACL 撕裂</b>。經過 17 個月的漫長復健，當他準備在新賽季強勢復出時，卻在訓練中遭遇了<b>右腳阿基里斯腱斷裂</b>。運動醫學專家普遍認為，這並非單純運氣不好，而是在漫長的 ACL 復健過程中，右腳長期承受了過多的代償壓力（Kinematic overcompensation），導致右側跟腱疲勞累積，最終在一次平常的起跳中徹底崩潰。
+      Klay 在 2019 年總冠軍賽遭遇<b>左膝 ACL 撕裂</b>。經過 17 個月的漫長復健，當他準備在新賽季強勢復出時，卻在訓練中遭遇了<b>右腳阿基里斯腱斷裂</b>。運動醫學專家普遍認為，這並非單純運氣不好，而是在漫長的 ACL 復健過程中，右腳長期承受了過多的代償壓力，導致右側跟腱疲勞累積，最終在一次平常的起跳中徹底崩潰。
       <sup><a href="https://pubmed.ncbi.nlm.nih.gov/30932599/" target="_blank" rel="noopener noreferrer" style="color: #9a3412; text-decoration: underline;">[11]</a></sup>
     </p>
   </div>
@@ -302,7 +299,7 @@ export const articlesData: NewsPost[] = [
         <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
         <div>
           <strong>「受傷後換一雙避震更好的球鞋，或是穿護踝就能預防再次受傷」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>嚴重誤導！</strong> 球鞋的避震科技對於緩解足底筋膜炎有幫助，但 ACL 與跟腱的撕裂通常發生在「極端扭轉力矩」與「離心收縮失控」的瞬間，球鞋無法阻擋這些力量。預防大傷的根本在於<strong>臀大肌群的強化、正確的落地機制（Landing mechanics）以及本體感覺訓練</strong>。過度依賴硬式護具反而可能讓鄰近關節（如膝蓋）承受更大的扭轉壓力。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/24753239/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[12]</a></sup></span>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>嚴重誤導！</strong> 球鞋的避震科技對於緩解足底筋膜炎有幫助，但 ACL 與跟腱的撕裂通常發生在「極端扭轉力矩」與「離心收縮失控」的瞬間，球鞋無法阻擋這些力量。預防大傷的根本在於<strong>臀大肌群的強化、正確的落地機制以及本體感覺訓練</strong>。過度依賴硬式護具反而可能讓鄰近關節（如膝蓋）承受更大的扭轉壓力。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/24753239/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[12]</a></sup></span>
         </div>
       </li>
 
@@ -310,7 +307,7 @@ export const articlesData: NewsPost[] = [
         <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
         <div>
           <strong>「ACL 手術做完，越早回到球場越好，代表復健很成功」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>非常危險！</strong> 移植的韌帶在人體內需要經過脆弱的「韌帶化（Ligamentization）」過程，組織才會變得強韌，這通常需要 9-12 個月。如果在術後不到 9 個月就急於進行高強度的全場比賽，年輕運動員韌帶再次斷裂的機率高達原本的 7 倍。耐心等待生物學的自然修復，才是延長生涯的關鍵。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/27159297/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[13]</a></sup></span>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>非常危險！</strong> 移植的韌帶在人體內需要經過脆弱的「韌帶化」過程，組織才會變得強韌，這通常需要 9-12 個月。如果在術後不到 9 個月就急於進行高強度的全場比賽，年輕運動員韌帶再次斷裂的機率高達原本的 7 倍。耐心等待生物學的自然修復，才是延長生涯的關鍵。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/27159297/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[13]</a></sup></span>
         </div>
       </li>
 
@@ -366,10 +363,11 @@ export const articlesData: NewsPost[] = [
   
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
     籃球是一項極度迷人卻又充滿高張力衝擊的運動。NBA 球星們能在經歷 ACL、半月板或跟腱斷裂後重返賽場，背後依靠的是上百萬美元的頂尖醫療團隊、極度嚴苛的科學復健計畫，以及異於常人的強大意志力。我們在螢幕前看到的「奇蹟復出」，其實都是用無數汗水與精密數據堆砌出來的。
-  </p>
+  </p><br>
   
   <p style="color: #475569; font-size: 1.05rem;">
-    對於我們一般熱愛籃球的業餘球友來說，<strong style="color: #1e293b;">預防永遠勝於治療</strong>。平常在球場上盡情揮灑汗水之餘，千萬別忽略了下肢肌力與核心的強化（特別是臀中肌與大腿後側肌群），以及運動後的伸展放鬆。若你在打球時發現膝蓋或腳跟出現異常的痠痛、無力，或者曾在場上受過傷卻遲遲未能痊癒，切勿抱著「過幾天自己會好」的心態。透過專業復健科醫師的理學檢查與超音波精準評估，找出關節與肌腱的潛在問題，搭配正確的動作發力指導，才是讓你遠離阿基里斯魔咒，安全且長久地享受籃球樂趣的唯一法則。
+    對於我們一般熱愛籃球的業餘球友來說，<strong style="color: #1e293b;">預防永遠勝於治療</strong>。平常在球場上盡情揮灑汗水之餘，千萬別忽略了下肢肌力與核心的強化（特別是臀中肌與大腿後側肌群），以及運動後的伸展放鬆。若你在打球時發現膝蓋或腳跟出現異常的痠痛、無力，或者曾在場上受過傷卻遲遲未能痊癒，切勿抱著「過幾天自己會好」的心態。<br><br>
+    透過專業復健科醫師的理學檢查與超音波精準評估，找出關節與肌腱的潛在問題，搭配正確的動作發力指導，才是讓你遠離阿基里斯魔咒，安全且長久地享受籃球樂趣的唯一法則。
   </p>
 
   <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
@@ -383,7 +381,7 @@ export const articlesData: NewsPost[] = [
        target="_blank" 
        rel="noopener noreferrer" 
        style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
-        預約專業復健科醫師評估
+        預約專業復健科醫師超音波評估
     </a>
 </div>
 </div>
@@ -474,7 +472,7 @@ export const articlesData: NewsPost[] = [
 
 {
   id: 'mlb-tommy-john-surgery-analysis',
-  title: '從大谷翔平到韋蘭德：醫學解密 MLB 球員 Tommy John 手術後的真實回歸率與表現變化',
+  title: '解密 MLB 球員 Tommy John 手術後的真實回歸率與表現變化',
   lastModified: '2026-04-24',
   category: '衛教文章',
   date: '2026-04-24',
@@ -499,11 +497,11 @@ export const articlesData: NewsPost[] = [
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
     尺骨附屬韌帶重建手術（俗稱 Tommy John 手術）是挽救無數棒球投手職業生涯的重大醫學突破。然而，根據醫學實證研究指出，MLB 投手術後重返大聯盟賽場（RTP）的機率雖高達 80% 至 97%
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7905078/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>，但能完全恢復到「受傷前同等競技水準」的比例則降至約 67% 至 87%，且第二次動刀的回歸率會呈現斷崖式下跌
-    <sup><a href="https://scholars.houstonmethodist.org/en/publications/rate-of-return-to-pitching-and-performance-after-tommy-john-surge/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>。此外，手術並非「球速升級包」，多篇文獻顯示，投手在術後的防禦率（ERA）、被上壘率（WHIP）往往會微幅上升，控球能力（如保送率 BB/9）變差，且平均直球球速實質上會出現小幅下降
+    <sup><a href="https://scholars.houstonmethodist.org/en/publications/rate-of-return-to-pitching-and-performance-after-tommy-john-surge/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>。<br><br>
+    此外，手術並非「球速升級包」，多篇文獻顯示，投手在術後的防禦率（ERA）、被上壘率（WHIP）往往會微幅上升，控球能力（如保送率 BB/9）變差，且平均直球球速實質上會出現小幅下降
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4555623/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[3]</a></sup>。本文將從醫學視角出發，解析手術適應症、生物力學機制，並透過知名球星案例，帶您看懂 Tommy John 手術背後的殘酷數據與真實樣貌。
   </p>
 </div>
-<img src="/images/news/article/tommyjohn/1.webp" alt="Tommy John 手術與大聯盟投手表現分析" class="responsive-img-enlarge">
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <section style="margin-bottom: 3.5rem;">
@@ -514,7 +512,7 @@ export const articlesData: NewsPost[] = [
     Tommy John 手術的正式醫學名稱為<strong>尺骨附屬韌帶重建手術（Ulnar Collateral Ligament Reconstruction, UCLR）</strong>。1974 年，洛杉磯道奇隊隊醫 Frank Jobe 首次為投手 Tommy John 執行此手術，成功挽救了他的職業生涯，從此這項手術便以此命名。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    從生物力學的角度來看，投手在投球動作的「加速期」（Acceleration phase），手肘會承受極大的外翻扭力（Valgus torque）。美國知名生物力學專家 Glenn Fleisig 的研究指出，職業投手在投出 90 mph 以上的速球時，手肘內側承受的扭力高達 64 牛頓·米 (Nm)；然而，大體解剖實驗證實，UCL 韌帶本身的抗拉極限僅約 32-34 牛頓·米。
+    從生物力學的角度來看，投手在投球動作的「加速期」，手肘會承受極大的外翻扭力。美國知名生物力學專家 Glenn Fleisig 的研究指出，職業投手在投出 90 mph 以上的速球時，手肘內側承受的扭力高達 64 牛頓·米 (Nm)；然而，大體解剖實驗證實，UCL 韌帶本身的抗拉極限僅約 32-34 牛頓·米。
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/7726330/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
@@ -522,11 +520,10 @@ export const articlesData: NewsPost[] = [
   </p>
   <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">臨床上的適應症（Indications）：</p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    <li style="margin-bottom: 0.5rem;">經高解析度 MRI 影像確認 UCL 發生嚴重的部分撕裂或完全撕裂（High-grade partial or full-thickness tear）。</li>
+    <li style="margin-bottom: 0.5rem;">經高解析度 MRI 影像確認 UCL 發生嚴重的部分撕裂或完全撕裂。</li>
     <li style="margin-bottom: 0.5rem;">經歷 3-6 個月的保守治療（如 PRP 高濃度血小板血漿注射、物理治療、投球機制優化）後，仍出現持續性疼痛或無法恢復受傷前的投球強度。</li>
     <li style="margin-bottom: 0.5rem;">患者具有強烈意願，且有足夠的心理韌性面對長達一年以上的復健期。</li>
   </ul>
-  <img src="/images/news/article/tommyjohn/elbow-anatomy.webp" alt="手肘尺骨附屬韌帶解剖圖" class="responsive-img-enlarge">
 </section>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -547,14 +544,14 @@ export const articlesData: NewsPost[] = [
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">第二次手術（Revision TJ）的斷崖式下跌</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    如果球員因為再次撕裂而需要進行「第二次」Tommy John 手術（Revision UCLR），情況將非常嚴峻。2020 年的一項長期追蹤研究指出，第二次 TJ 手術後能成功重返大聯盟的機率約為 55-65%，而能夠維持三年以上健康出賽的投手更是不到一半。此外，第二次手術的復健期通常需要拉長至 15-18 個月。這也是為什麼醫療團隊對於第二次動刀總是格外謹慎。
+    如果球員因為再次撕裂而需要進行「第二次」Tommy John 手術，情況將非常嚴峻。2020 年的一項長期追蹤研究指出，第二次 TJ 手術後能成功重返大聯盟的機率約為 55-65%，而能夠維持三年以上健康出賽的投手更是不到一半。此外，第二次手術的復健期通常需要拉長至 15-18 個月。這也是為什麼醫療團隊對於第二次動刀總是格外謹慎。
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/32011928/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
   </p>
 
   <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
     <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 復健科醫師的臨床見解</h4>
     <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
-      在臨床上，重建韌帶的「生物癒合（Ligamentization）」大約在 9-12 個月會達到足夠強度，但「神經肌肉控制（Neuromuscular control）」與「投球本體感覺」往往需要更久的時間。這就是為什麼許多投手在回歸的第一年表現常常大起大落，甚至容易引發肩膀或闊背肌的代償性傷勢，直到第二年才能真正找回穩定的手感。
+      在臨床上，重建韌帶的「生物癒合」大約在 9-12 個月會達到足夠強度，但「神經肌肉控制」與「投球本體感覺」往往需要更久的時間。這就是為什麼許多投手在回歸的第一年表現常常大起大落，甚至容易引發肩膀或闊背肌的代償性傷勢，直到第二年才能真正找回穩定的手感。
     </p>
   </div>
 </section>
@@ -571,9 +568,9 @@ export const articlesData: NewsPost[] = [
   
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 球速與轉速的真實變化</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    多項針對 MLB 投手的龐大數據回顧直接打破了這個迷思。研究分析發現，投手在手術後的<strong>平均直球球速實際上是下降的</strong>（手術前 91.3 mph 降至手術後 90.6 mph，P = 0.003）。
+    多項針對 MLB 投手的龐大數據回顧直接打破了這個迷思。研究分析發現，投手在手術後的<strong>平均直球球速實際上是下降的</strong>（手術前 91.3 mph 降至手術後 90.6 mph）。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4555623/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup> 
-    此外，進階數據顯示，四縫線速球與曲球的「轉速（Spin Rate）」在術後第一年也有顯著下滑，這直接影響了球的尾勁與揮空率。
+    此外，進階數據顯示，四縫線速球與曲球的「轉速」在術後第一年也有顯著下滑，這直接影響了球的尾勁與揮空率。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     所謂的「少數人球速變快」，通常是因為投手在受傷前，韌帶已經處於慢性撕裂狀態，導致球速早已默默下滑；手術只是讓他們找回「健康時的正常球速」，加上長達一年的下肢與核心肌力復健，才產生了球速突破的錯覺。
@@ -588,7 +585,7 @@ export const articlesData: NewsPost[] = [
     <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">防禦率 (ERA)：</strong>從 4.15 惡化至 4.74。</li>
     <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">被上壘率 (WHIP)：</strong>從 1.40 惡化至 1.48。</li>
     <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">保送率 (BB/9)：</strong>從 3.1 上升至 3.5，顯示放球點（Release point）的本體感覺變差，導致控球不穩。</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">投球局數 (IP)：</strong>單季平均從 59 局減少至 50 局，這與球團的保護機制（Innings limit）及投手自身的體力恢復變慢有關。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">投球局數 (IP)：</strong>單季平均從 59 局減少至 50 局，這與球團的保護機制及投手自身的體力恢復變慢有關。</li>
   </ul>
 </section>
 
@@ -757,7 +754,7 @@ export const articlesData: NewsPost[] = [
         <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
         <div>
           <strong>「開完刀球速會突破天際，當作『手肘改裝升級』」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>完全錯誤！</strong> 如前述數據證實，術後平均直球速度是下降的。少數球員能變快，是因為在長達 12-15 個月的復健期中，嚴格地強化了下肢發力（Leg drive）與核心肌群，並由教練徹底修正了不良的投球機制，這是「刻苦復健與科學訓練」的功勞，絕非「手術本身」的魔法。</span>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>完全錯誤！</strong> 如前述數據證實，術後平均直球速度是下降的。少數球員能變快，是因為在長達 12-15 個月的復健期中，嚴格地強化了下肢發力與核心肌群，並由教練徹底修正了不良的投球機制，這是「刻苦復健與科學訓練」的功勞，絕非「手術本身」的魔法。</span>
         </div>
       </li>
 
@@ -773,7 +770,7 @@ export const articlesData: NewsPost[] = [
         <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
         <div>
           <strong>「換上新的韌帶後，就等於獲得一條永遠不會斷的鐵臂」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>並非如此！</strong> 移植物（通常是掌長肌腱）在植入後，會經歷數年的「韌帶化（Ligamentization）」過程，雖然最終強度足夠，但在高強度連續投球、不當的變化球握法下，依然會再次撕裂。這也是為何 MLB 投手開第二次 TJ 手術的比例逐年攀升。</span>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>並非如此！</strong> 移植物（通常是掌長肌腱）在植入後，會經歷數年的「韌帶化」過程，雖然最終強度足夠，但在高強度連續投球、不當的變化球握法下，依然會再次撕裂。這也是為何 MLB 投手開第二次 TJ 手術的比例逐年攀升。</span>
         </div>
       </li>
 
@@ -800,16 +797,16 @@ export const articlesData: NewsPost[] = [
       逐步恢復手肘的完全伸直與彎曲，並開始進行前臂屈肌群與肩胛骨穩定肌群（如前鋸肌、下斜方肌）的強化，這時可加入大量的下肢與核心訓練。
     </li>
     <li style="margin-bottom: 1.2rem; background-color: #1e293b; padding: 1rem; border-radius: 0.5rem; border-left: 4px solid #38bdf8;">
-      <strong style="color: #38bdf8;">階段三（第 4-6 個月）：進階肌力與漸進式傳接球 (ITP)</strong><br>
-      通過醫師與物理治療師的動態測試後，開始進行平地漸進式傳接球計畫（Interval Throwing Program），從 45 呎輕拋開始，數月內慢慢退至 120 呎，讓新韌帶適應拉扯力。
+      <strong style="color: #38bdf8;">階段三（第 4-6 個月）：進階肌力與漸進式傳接球 </strong><br>
+      通過醫師與物理治療師的動態測試後，開始進行平地漸進式傳接球計畫，從 45 呎輕拋開始，數月內慢慢退至 120 呎，讓新韌帶適應拉扯力。
     </li>
     <li style="margin-bottom: 1.2rem; background-color: #1e293b; padding: 1rem; border-radius: 0.5rem; border-left: 4px solid #38bdf8;">
-      <strong style="color: #38bdf8;">階段四（第 9-12 個月）：重返投手丘 (Mound Work)</strong><br>
+      <strong style="color: #38bdf8;">階段四（第 9-12 個月）：重返投手丘 </strong><br>
       開始上投手丘進行牛棚練投，初期只能投直球，嚴禁投擲需要手腕劇烈旋轉的滑球與曲球。此階段著重於投球機制的微調與找回放球點。
     </li>
     <li style="margin-bottom: 1.2rem; background-color: #1e293b; padding: 1rem; border-radius: 0.5rem; border-left: 4px solid #38bdf8;">
-      <strong style="color: #38bdf8;">階段五（第 12-15 個月）：模擬賽與復健賽 (Rehab Assignment)</strong><br>
-      參與實戰打擊練習 (Live BP) 與小聯盟復健賽，逐步拉高用球數與局數。當連續幾場比賽後手肘無不良反應，且球速與轉速達標，才能正式宣告回歸大聯盟。
+      <strong style="color: #38bdf8;">階段五（第 12-15 個月）：模擬賽與復健賽</strong><br>
+      參與實戰打擊練習與小聯盟復健賽，逐步拉高用球數與局數。當連續幾場比賽後手肘無不良反應，且球速與轉速達標，才能正式宣告回歸大聯盟。
     </li>
   </ul>
 </section>
@@ -864,10 +861,11 @@ export const articlesData: NewsPost[] = [
   
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
     Tommy John 手術是一項改變棒球歷史的偉大醫學技術，但透過客觀的數據與實證醫學，我們必須認清：這並不是一場穩賺不賠的交易，而是在窮盡一切保守治療後的最終手段。它能延續你的運動生涯，但代價是漫長且痛苦的復健期，以及不可避免的部分壓制力衰退與控球陣痛期。
-  </p>
+  </p> <br>
   
   <p style="color: #475569; font-size: 1.05rem;">
-    無論你是剛踏上投手丘的基層三級棒球員，還是熱愛棒球的業餘社會人好手，<strong style="color: #1e293b;">最好的預防永遠從「了解自己的身體與優化投球機制」開始</strong>。如果你對自己的投球動作發力順序、目前的球速瓶頸，或是現有的手肘與肩膀不適有任何疑慮，千萬不要吃止痛藥硬撐，更不要等到韌帶斷裂才行動——<strong style="color: #1e293b;">請前往新竹的辰星復健科診所，由具備復健專科醫師背景，並同時擁有 ACE-CPT 國際個人教練認證的陳醫師親自為您進行評估。</strong>一次結合醫學影像與運動生物力學的正確分析，可能為你拯救寶貴的運動生涯。
+    無論你是剛踏上投手丘的基層三級棒球員，還是熱愛棒球的業餘社會人好手，<strong style="color: #1e293b;">最好的預防永遠從「了解自己的身體與優化投球機制」開始</strong>。如果你對自己的投球動作發力順序、目前的球速瓶頸，或是現有的手肘與肩膀不適有任何疑慮，千萬不要吃止痛藥硬撐，更不要等到韌帶斷裂才行動<strong style="color: #1e293b;"> <br><br>
+    請前往新竹的辰星復健科診所，由具備復健專科醫師背景，並同時擁有 ACE-CPT 國際個人教練認證的陳醫師親自為您進行評估。</strong>一次結合醫學影像與運動生物力學的正確分析，可能為你拯救寶貴的運動生涯。
   </p>
 
   <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
@@ -881,7 +879,7 @@ export const articlesData: NewsPost[] = [
        target="_blank" 
        rel="noopener noreferrer" 
        style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
-        預約門診評估與力學分析
+        預約門診超音波檢查韌帶
     </a>
 </div>
 </div>
@@ -963,13 +961,13 @@ export const articlesData: NewsPost[] = [
 
 {
   id: 'pain-medication-analysis',
-  title: '疼痛就吃止痛藥？醫師解析 NSAIDs、肌肉鬆弛劑、普拿疼的真相與風險',
+  title: '疼痛就吃止痛藥？解析止痛藥與肌肉鬆弛劑的真相與風險',
   lastModified: '2026-04-24',
   category: '衛教文章',
   date: '2026-04-24',
   summary: '深度剖析非類固醇消炎止痛藥（NSAIDs）、肌肉鬆弛劑、乙醯胺酚（普拿疼）的藥理機制與長期使用風險。實證研究揭露止痛藥只是「關掉警報」而非治療根源，並說明何時需要尋找疼痛的真正成因。',
   coverImage: '/images/news/article/pain-medication-analysis.webp',
-  seoTitle: '疼痛就吃止痛藥？醫師解析 NSAIDs、肌肉鬆弛劑、普拿疼的真相與風險',
+  seoTitle: '疼痛就吃止痛藥？解析止痛藥與肌肉鬆弛劑的真相與風險',
   seoDescription: '深度剖析非類固醇消炎止痛藥（NSAIDs）、肌肉鬆弛劑、乙醯胺酚（普拿疼）的藥理機制與長期使用風險。實證研究揭露止痛藥只是關掉警報而非治療根源。',
   keywords: [
     '止痛藥',
@@ -1438,13 +1436,13 @@ export const articlesData: NewsPost[] = [
 
  {
   id: 'sleep-position-health-analysis',
-  title: '正睡還是側睡？醫學觀點全解析：對脊椎、肩膀、骨盆與內臟器官的影響',
+  title: '正睡還是側睡？解析對脊椎、肩膀、骨盆與內臟器官的影響',
   lastModified: '2026-04-24',
   category: '衛教文章',
   date: '2026-04-24',
   summary: '從醫學角度深度分析側睡與正睡（仰睡）的優缺點，涵蓋脊椎、肩膀旋轉肌群、骨盆、呼吸道及胃食道逆流等全面影響。實證研究揭露哪種睡姿更健康，並解析全球睡眠姿勢比例與個人化建議。',
   coverImage: '/images/news/article/sleep-position-health-analysis.webp',
-  seoTitle: '正睡還是側睡？醫學觀點全解析：對脊椎、肩膀、骨盆與器官的影響',
+  seoTitle: '正睡還是側睡？解析對脊椎、肩膀、骨盆與內臟器官的影響',
   seoDescription: '從醫學角度深度分析側睡與正睡（仰睡）的優缺點，涵蓋脊椎、肩膀旋轉肌群、骨盆、呼吸道及胃食道逆流等全面影響。實證研究揭露哪種睡姿更健康。',
   keywords: [
     '側睡',
@@ -1595,9 +1593,9 @@ export const articlesData: NewsPost[] = [
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">❌ 正睡的缺點與風險</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     <strong style="color: #ffffff;">1. 睡眠呼吸中止症與打鼾大幅惡化</strong><br>
-    這是正睡最主要的醫學缺點。仰睡時，重力使舌根後墜，壓迫上呼吸道，導致呼吸道截面積縮小甚至完全阻塞。研究顯示，<strong style="color: #ffffff;">超過半數的阻塞性睡眠呼吸中止症（OSA）患者在仰睡時症狀明顯惡化</strong>，仰睡型 OSA 是最常見的臨床表型。
+    這是正睡最主要的醫學缺點。仰睡時，重力使舌根後墜，壓迫上呼吸道，導致呼吸道截面積縮小甚至完全阻塞。研究顯示，<strong style="color: #ffffff;">超過半數的阻塞性睡眠呼吸中止症患者在仰睡時症狀明顯惡化</strong>，仰睡型阻塞性睡眠呼吸中止症是最常見的臨床表型。
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/23669094/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
-    一篇大型回顧研究更指出，仰睡時的呼吸暫停低通氣指數（AHI）平均為每小時 63.5 次，側睡僅約 37.8 次。
+    一篇大型回顧研究更指出，仰睡時的呼吸暫停低通氣指數平均為每小時 63.5 次，側睡僅約 37.8 次。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3817704/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
@@ -1624,7 +1622,7 @@ export const articlesData: NewsPost[] = [
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">✅ 側睡的好處</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     <strong style="color: #ffffff;">1. 呼吸道暢通，改善打鼾與睡眠呼吸中止症</strong><br>
-    側睡是臨床上改善 OSA 的首選姿勢調整策略。文獻顯示，對於體位依賴型 OSA 患者，側睡可將 AHI 從仰睡時的每小時 63.5 次降低至約 37.8 次，改善幅度達 40%。
+    側睡是臨床上改善阻塞性睡眠呼吸中止症的首選姿勢調整策略。文獻顯示，對於體位依賴型阻塞性睡眠呼吸中止症患者，側睡可將通氣指數從仰睡時的每小時 63.5 次降低至約 37.8 次，改善幅度達 40%。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3817704/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
@@ -1636,7 +1634,7 @@ export const articlesData: NewsPost[] = [
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     <strong style="color: #ffffff;">3. 促進大腦廢物代謝（腦脊液循環）</strong><br>
-    這是近年最令科學界興奮的發現之一。動物實驗顯示，側睡時腦部淋巴系統（glymphatic system）的活性最高，負責清除大腦代謝廢物（包括與阿茲海默症相關的β-澱粉樣蛋白）的效率最佳；趴睡時效率最低，仰睡居中。研究者認為，哺乳動物普遍偏好側睡的生物本能，可能正是為了確保腦部廢物得以有效清除。
+    這是近年最令科學界興奮的發現之一。動物實驗顯示，側睡時腦部淋巴系統的活性最高，負責清除大腦代謝廢物（包括與阿茲海默症相關的β-澱粉樣蛋白）的效率最佳；趴睡時效率最低，仰睡居中。研究者認為，哺乳動物普遍偏好側睡的生物本能，可能正是為了確保腦部廢物得以有效清除。
     <sup><a href="https://en.wikipedia.org/wiki/Sleep_position" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
@@ -1663,7 +1661,7 @@ export const articlesData: NewsPost[] = [
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     <strong style="color: #ffffff;">3. 骨盆歪斜與髖關節負荷</strong><br>
-    側睡時，若沒有在兩膝之間夾枕頭，上方的腿容易下沉，帶動骨盆向前旋轉，造成髂腰肌緊縮及腰骶關節的額外扭力。長期不對稱側睡（習慣固定一側）可能累積骨盆歪斜問題。此外，有大轉子疼痛症候群（GTPS，俗稱「髖部滑囊炎」）的患者，側睡時直接壓迫患側也可能加重症狀。
+    側睡時，若沒有在兩膝之間夾枕頭，上方的腿容易下沉，帶動骨盆向前旋轉，造成髂腰肌緊縮及腰骶關節的額外扭力。長期不對稱側睡（習慣固定一側）可能累積骨盆歪斜問題。此外，有大轉子疼痛症候群（俗稱「髖部滑囊炎」）的患者，側睡時直接壓迫患側也可能加重症狀。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     <strong style="color: #ffffff;">4. 下背痛患者需配合床墊軟硬度</strong><br>
@@ -1715,9 +1713,9 @@ export const articlesData: NewsPost[] = [
   </p>
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">呼吸道與睡眠品質</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    側睡在呼吸道維持方面遠優於正睡。超過半數的 OSA 患者屬於「體位依賴型」，在仰睡時 AHI 是側睡的兩倍以上。
+    側睡在呼吸道維持方面遠優於正睡。超過半數的阻塞性睡眠呼吸中止患者屬於「體位依賴型」，在仰睡時通氣指數是側睡的兩倍以上。
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/23669094/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
-    即便是沒有確診 OSA 的人，正睡時也更容易打鼾，因為舌根更容易受重力影響後墜，縮減呼吸道有效截面積。對於心臟衰竭患者，側睡還能減少中樞型睡眠呼吸中止症的發生，改善整體睡眠品質。
+    即便是沒有確診阻塞性睡眠呼吸中止的人，正睡時也更容易打鼾，因為舌根更容易受重力影響後墜，縮減呼吸道有效截面積。對於心臟衰竭患者，側睡還能減少中樞型睡眠呼吸中止症的發生，改善整體睡眠品質。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3817704/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
   </p>
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">消化道與胃食道逆流</h3>
@@ -1923,7 +1921,7 @@ export const articlesData: NewsPost[] = [
   <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
     正睡與側睡各有其醫學優勢，也各有其適用情境。如果你沒有特殊健康問題，最聰明的策略是允許自己在夜間自然翻身，偶爾有意識地調整姿勢，並確保床具（床墊與枕頭）的設計能配合你的主要睡姿提供良好支撐。
-  </p>
+  </p> <br>
   <p style="color: #475569; font-size: 1.05rem;">
     有一件事是可以確定的：<strong style="color: #1e293b;">趴睡是最不建議的姿勢</strong>，而固定壓同一側肩膀的側睡，是肩關節退化的重要風險因素，值得特別留意。如果你長期有晨起疼痛、打鼾、或胃食道逆流等問題，睡姿的調整可能就是你需要的第一步，也是最低成本、最無副作用的介入方式。
   </p>
@@ -1937,7 +1935,7 @@ export const articlesData: NewsPost[] = [
        target="_blank"
        rel="noopener noreferrer"
        style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
-        預約門診評估睡姿與脊椎健康
+        預約門診評估脊椎健康
     </a>
   </div>
 </div>
