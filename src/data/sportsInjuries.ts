@@ -10,7 +10,12 @@ export const sportsInjuriesData = [
     description: '日常生活醫學小知識，讓生活更健康。',
     image: '/images/sportinjury/5.webp',
     injuries: [
-
+          {
+        slug: 'pillow-selection-guide',
+        title: '枕頭選擇全解析：軟硬、高低、有凹洞嗎？醫學實證教你挑對枕頭',
+        description: '從醫學角度深度解析枕頭軟硬、高度與形狀的選擇依據。實證研究揭露側躺與正躺各需哪種枕頭、中間凹洞設計是否真的有效，以及記憶棉、乳膠、羽絨等材質的差異，幫助你科學選出最適合自己的枕頭，告別晨起頸痛。',
+        image: '/images/news/article/pillow-selection-guide.webp',
+      },
           {
         slug: 'why-cats-dont-get-stiff-neck',
         title: '家裡兩隻貓咪每天不是躺著就是躺著，為什麼不會落枕呢？',
@@ -42,9 +47,27 @@ export const sportsInjuriesData = [
           {
     category: 'nutrition',
     title: '營養補充知識',
-    description: '長高長狀還有減肥飲食該如何選擇，營養品到底有沒有??',
+    description: '長高長狀還有減肥飲食該如何選擇，營養品到底有沒有用?',
     image: '/images/sportinjury/7.webp',
     injuries: [
+            {
+        slug: 'weightlifting-nutrition-guide',
+        title: '重訓飲食全解析：運動醫學觀點告訴你，蛋白質、澱粉、蔬菜怎麼吃才對？',
+        description: '從運動醫學角度深入剖析重量訓練的飲食策略。實證研究揭露蛋白質每日建議攝取量、最佳補充時機、高品質食物來源，以及碳水化合物、蔬菜的正確搭配方式。營養補充品究竟有沒有用？科學證據一次說清楚。',
+        image: '/images/news/article/weightlifting-nutrition-guide.webp',
+      },
+                  {
+        slug: 'osteoporosis-calcium-guide',
+        title: '骨鬆補鈣完全指南：運動醫學觀點解析劑量、鈣片種類與維他命D怎麼選',
+        description: '從運動醫學角度深度解析骨質疏鬆補鈣策略。詳細比較碳酸鈣、檸檬酸鈣、海藻鈣的吸收率差異，說明每日鈣質建議劑量，以及維他命D3最佳補充方式，幫助民眾做出最正確的骨骼保健決定。',
+        image: '/images/news/article/osteoporosis-calcium-guide.webp',
+      },
+                        {
+        slug: 'joint-supplements-guide',
+        title: '顧關節保健品全解析：UC-II、葡萄糖胺、鈣片、玻尿酸等誰有效?',
+        description: '市售顧關節保健品種類繁多，本文以醫學觀點逐一解析 UC-II、葡萄糖胺、軟骨素、鈣片與口服玻尿酸的臨床證據。深入探討免疫調節機制、建議劑量、適用族群及常見迷思，幫助你科學選擇真正需要的成分，避免盲目花大錢。',
+        image: '/images/news/article/joint-supplements-guide.webp',
+      },
       {
         slug: 'sugar-height-growth-analysis',
         title: '【家長必看】喝手搖飲、睡前吃水果會長不高？',
@@ -118,13 +141,13 @@ export const sportsInjuriesData = [
       },
       {
         slug: 'baseball-hitting-biomechanics',
-        title: '棒球打擊科學全解析：如何打得更遠？運動醫學告訴你關鍵肌群與傷害預防',
+        title: '棒球打擊科學全解析：如何打得更遠？告訴你關鍵肌群與傷害預防',
         description: '從運動醫學與生物力學角度深度解析棒球打擊的核心機制：哪些肌群決定打擊距離、最佳擊球角度是幾度、如何提升初速，以及打者常見的運動傷害與預防策略。不只是「越強壯越好」，科學告訴你真正的答案。',
         image: '/images/news/article/baseball-hitting-biomechanics.webp',
       },
             {
         slug: 'baseball-pitching-biomechanics-injuries',
-        title: '棒球各種球路的運動傷害全解析：指叉球、四縫線、滑球，誰更容易讓投手受傷？',
+        title: '棒球各種球路及運動傷害全解析？',
         description: '從運動醫學實證出發，深度解析棒球投球各球路的生物力學特徵。為什麼指叉球傷手肘？四縫線速球的風險在哪？本文對比大聯盟投手案例，分析投球六階段的受傷關鍵，提供科學化的預防策略與常見誤區解析。',
         image: '/images/news/article/baseball-pitching-biomechanics-injuries.webp',
       },
@@ -144,11 +167,23 @@ export const sportsInjuriesData = [
         description: '深入解析居家常見核心運動（棒式、橋式、鳥狗式）與伸展動作（嬰兒式、眼鏡蛇式、貓牛式）的訓練肌群、建議時長與組數，並說明各類腰部疾患（椎間盤突出、脊椎狹窄、脊椎滑脫）的適應與禁忌，以實證為依據，提供安全有效的居家復健建議。',
         image: '/images/news/article/coreexercise1.webp',
       },
+                  {
+        slug: 'back-muscle-training-guide',
+        title: '背肌訓練完全指南：哪個動作效果最好？如何預防上交叉症候群？',
+        description: '從運動醫學角度深度解析背肌訓練：肌電圖研究揭露哪個動作活化效果最強、預防上交叉症候群必練的五條肌肉，以及背部與胸部訓練量的黃金比例。科學訓練，不再駝背。',
+        image: '/images/news/article/back-muscle-training-guide.webp',
+      },
       {
         slug: 'chest-muscle-training-guide',
         title: '胸肌訓練2026完全指南：最有效動作、策略全解析',
         description: '深度剖析槓鈴臥推、上斜啞鈴推舉、纜繩夾胸等胸肌訓練動作的科學依據，解析最佳訓練組數、組間休息時間與漸進超負荷策略。實證研究揭露每週幾次訓練最有效、2–3分鐘休息為何優於短休息，以及為什麼漸進增重才是練出大胸肌的核心關鍵。',
         image: '/images/news/article/chest-training-guide.webp',
+      },
+            {
+        slug: 'crossed-syndrome-analysis',
+        title: '交叉症候群完整解析：訓練背肌反而讓背更緊？',
+        description: '交叉症候群是現代人最常見的姿勢失衡問題，許多人深受背肌緊繃之苦，卻擔心「訓練背肌會讓肌肉更緊」。本文以運動醫學實證為基礎，解析上下交叉症候群的成因、為何緊繃的背肌其實需要訓練、哪些動作最有效，以及腹背肌力比例的科學建議。',
+        image: '/images/news/article/crossed-syndrome.webp',
       },
     ]
   },
@@ -172,6 +207,13 @@ export const sportsInjuriesData = [
         title: '超慢跑的隱藏危機：你以為在保護身體，其實傷害正在累積',
         description: '超慢跑風靡台灣，但足底筋膜炎、阿基里斯腱炎、蹠骨痛等傷害屢見不鮮。本文以實證研究分析超慢跑的常見傷害、錯誤姿勢的危害，並說明為何一般健康成人應優先選擇慢跑或飛輪，而非長期停留在超慢跑。',
         image: '/images/news/article/ultrarun.webp',
+
+      },
+                        {
+        slug: 'cycling-injury-analysis',
+        title: '腳踏車全解析：公路車、城市車、摺疊車，有哪些傷害風險？',
+        description: '從醫學與生物力學角度深度剖析公路車、城市車（通勤車）與摺疊車的姿勢差異與運動傷害風險。實證研究揭露各車型最容易導致的膝關節疼痛、下背痛、頸肩傷害與會陰神經壓迫，並提供科學預防策略。',
+        image: '/images/news/article/cycling-injury-analysis.webp',
 
       },
       {

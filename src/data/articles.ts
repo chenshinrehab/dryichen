@@ -2,7 +2,3215 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
 
+{
+  id: 'nba-injury-analysis',
+  title: 'NBA球員三大致命傷：十字韌帶、半月板、跟腱撕裂後的數據真相',
+  lastModified: '2026-04-24',
+  category: '衛教文章',
+  date: '2026-04-24',
+  summary: '深度剖析NBA球員最常見的三大毀滅性傷病：前十字韌帶(ACL)撕裂、半月板手術與跟腱(阿基里斯腱)撕裂。從運動醫學、生物力學與進階實證數據出發，揭露這三種傷病術後的重返賽場(RTP)機率、真實命中率(TS%)影響、球員效率值(PER)下降幅度，以及「代償效應」帶來的二次傷害風險。並以Kevin Durant、Klay Thompson等球星為例，提供最科學的傷病解答。',
+  coverImage: '/images/news/article/nba-injury-analysis.webp',
+  seoTitle: 'NBA球員三大致命傷深度解析：十字韌帶、半月板、跟腱撕裂的數據真相',
+  seoDescription: '用醫學觀點與進階數據，深度分析NBA球員在前十字韌帶(ACL)、半月板與跟腱撕裂後的復出機率、運動表現下滑幅度與代償風險。包含Kevin Durant、Klay Thompson等球星真實案例解析。',
+  keywords: [
+    'NBA受傷',
+    '前十字韌帶撕裂',
+    'ACL重建',
+    '半月板切除',
+    '跟腱撕裂',
+    '阿基里斯腱斷裂',
+    '運動表現退化',
+    '代償效應',
+    'Kevin Durant',
+    'Klay Thompson'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    在NBA這種高強度、充滿爆發力與頻繁變向的賽場上，下肢傷病往往是球員生涯的巨大轉折點。從醫學文獻的進階數據來看，這三大傷病對球員的殺傷力與長期影響有著極大的差異。<br><br>
+    <b>前十字韌帶（ACL）撕裂</b>的手術技術已相當成熟，重返賽場（RTP）的機率高達 86%，但多數球員需要到術後第二年才能找回受傷前的橫移速度，且對側膝蓋受傷的機率會顯著上升；
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/23982403/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    <b>半月板撕裂</b>的影響則取決於位置與手術方式，其中「外側半月板切除」對籃球員的傷害最深，不僅大幅增加關節炎風險，平均職業壽命更比修補手術者少了近 2.5 年；
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/25136006/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    而最令人聞之色變的<b>跟腱（阿基里斯腱）撕裂</b>，歷史數據顯示有近 30% 的球員因此結束 NBA 生涯，成功復出者在首季的球員效率值（PER）平均暴跌 4.6 分，真實命中率（TS%）在禁區內更會出現斷崖式下滑。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/26415003/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    本文將以實證數據為基礎，結合生物力學，帶您深入看懂這些傷病背後的醫學真相。
+  </p>
+</div>
+<img src="/images/news/article/nba-injury/1.webp" alt="NBA球員十字韌帶、半月板與跟腱撕裂深度分析" class="responsive-img-enlarge">
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、前十字韌帶（ACL）撕裂：不再是絕症，但魔鬼藏在「重建材料」與「代償」裡
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    前十字韌帶（ACL）是膝關節的「煞車與防側滑系統」，負責防止小腿骨向前過度位移及控制旋轉。當球員在歐洲步變向、爭搶籃板落地不穩時，這條韌帶承受的扭轉力矩極易超過其極限（約 2100 牛頓）。
+  </p>
+  
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">重建手術的抉擇：髕骨肌腱 vs. 膕繩肌腱</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    ACL 斷裂後無法自行癒合，必須取身體其他部位的肌腱來「種」一條新的。在 NBA，超過 80% 的球員選擇使用<b>髕骨肌腱（BPTB）</b>進行重建，而非一般大眾常用的膕繩肌腱（Hamstring）。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/28549272/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    原因是髕骨肌腱帶有兩端骨塊，骨頭與骨頭的癒合最為穩固，能承受 NBA 級別的強大煞車力道。但代價是術後容易出現「前膝痛（Anterior knee pain）」，影響球員早期的爆發力與跳躍信心。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">數據解碼：復出後的「防守黑洞」與「對側風險」</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    根據《AJSM》的長期追蹤，<strong style="color: #ffffff;">高達 86% 的球員能成功重返賽場</strong>。然而，進階數據顯示，球員復出首年的防守真實正負值（DRPM）平均會下降 1.2 分。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/30016591/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+    因為直線衝刺容易恢復，但「橫向移動」與「防守滑步」需要極大的關節穩定度與神經反射。此外，最可怕的是<b>代償效應</b>：約有 11% 的 NBA 球員在復出後，因為潛意識不敢使用受傷腳，導致壓力全集中在另一隻腳，最終引發「健康腳」的 ACL 撕裂或其他嚴重傷害。
+  </p>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">NBA 球星案例：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">Derrick Rose（飆風玫瑰）：</strong>ACL 撕裂後，因為不敢完全依賴修復的左膝，過度代償導致後來右膝半月板嚴重撕裂，徹底改變了 MVP 級別的打法。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">Ricky Rubio：</strong>生涯遭遇兩次同一膝蓋的 ACL 撕裂。醫學統計指出，同側韌帶再次斷裂（Re-tear）的機率在職業運動員中約為 5-9%。</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、半月板撕裂：內外側的命運天秤，與「透支未來」的代價
+  </h2>
+  <img src="/images/news/article/nba-injury/meniscus.webp" alt="內外側半月板修補與切除手術差異" class="responsive-img-enlarge">
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    半月板這兩塊「C型避震軟骨」，不僅吸收衝擊，更增加了大腿骨與小腿骨之間的密合度。但在籃球場上，半月板的受傷位置（內側或外側）以及治療方式，將決定一名球員未來的職業壽命。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">致命的外側半月板切除 (Lateral Meniscectomy)</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    醫學文獻顯示，<b>外側半月板</b>對於膝關節的受力分布更為重要。根據 Nawabi 等人針對職業籃球員的研究，接受「外側半月板切除」的球員，其重返賽場的時間比內側切除多出近一個月，且復出後的出賽頻率、場均得分皆顯著低於對照組。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/25136006/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    如果選擇切除，球員通常在 4-6 週就能回歸（RTP > 90%），但長期追蹤發現，他們提早引發創傷性退化性關節炎的機率高達 60% 以上，職業生涯平均縮短 1.5 至 2 年。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/31386576/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">NBA 球星案例：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">Chris Paul：</strong>曾在黃蜂時期接受外側半月板切除手術，這導致他失去了早年「黃蜂船長」時期可怕的第一步爆發力，迫使他全面轉型為節奏掌控與中距離大師。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">Zion Williamson：</strong>在遭遇外側半月板撕裂時，醫療團隊堅持選擇「縫合修補（Repair）」。雖然讓他缺席了長達數月，但保留了完整的避震系統，是保護他驚人體重與爆發力的唯一正解。</li>
+  </ul>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 醫學觀點補充</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      臨床上，半月板外圍的三分之一稱為「紅區（Red zone）」，血液循環豐富，縫合後癒合率極高；而內部三分之一為「白區（White zone）」，沒有血液供應，一旦破裂通常只能切除。這也是為什麼有時候醫師想幫球員縫合，但打開關節鏡後卻只能無奈切除的原因。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、跟腱（阿基里斯腱）撕裂：偷走第一步爆發力的「死神」
+  </h2>
+  <img src="/images/news/article/nba-injury/achilles.webp" alt="NBA跟腱撕裂傷害與爆發力喪失分析" class="responsive-img-enlarge">
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    跟腱是人體最強壯的肌腱，負責傳遞小腿後側肌肉（腓腸肌與比目魚肌）的力量。在籃球運動中，從墊步起跳、歐洲步變向到防守橫移，跟腱就像一條不斷拉伸與收縮的粗壯橡皮筋。當這條橡皮筋在無對抗狀態下突然斷裂（通常感覺像被人從後面踢了一腳），球員的爆發力往往也隨之而去。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">不可逆的生理改變：肌肉萎縮與剛性喪失</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    為什麼跟腱斷裂如此致命？醫學影像追蹤顯示，跟腱斷裂縫合後，雖然肌腱本身可以癒合，但<b>小腿比目魚肌的體積與力量，永遠無法 100% 恢復到受傷前的水準（通常會永久減少 10-15%）</b>。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/30346850/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    此外，修復後的跟腱「剛性（Stiffness）」會改變，導致力量傳遞的效率下降。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">進階數據的殘酷真相</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    根據《AJSM》及其他運動醫學期刊的統計，跟腱斷裂的 NBA 球員中，<strong style="color: #ffffff;">有高達 27-30% 直接結束職業生涯</strong>。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/28398108/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+    成功復出的球員，復出首季的數據衰退令人觸目驚心：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><b>球員效率值（PER）：</b>平均下降 4.5 至 4.6 分。</li>
+    <li style="margin-bottom: 0.5rem;"><b>真實命中率（TS%）：</b>特別是在「禁區內（Restricted Area）」的命中率大幅下降，因為球員失去了最後一拍拔起爆扣或對抗上籃的彈速。</li>
+    <li style="margin-bottom: 0.5rem;"><b>上場時間：</b>場均減少 5-10 分鐘，且背靠背（B2B）賽程常需要輪休。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/33132640/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+    </li>
+  </ul>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">NBA 球星案例：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #fcd34d;">Kevin Durant（現代醫學奇蹟）：</strong>KD 打破了阿基里斯腱的魔咒，復出後仍能交出史詩級的進攻效率。這歸功於：(1) 頂尖的微創縫合技術與極長的復健期（超過18個月）；(2) 他 7 呎身高加上無死角的投籃機制，讓他即使失去了一點第一步爆發力，仍能靠高度與手感終結比賽。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">Wesley Matthews：</strong>少數被公認為「鐵人」的落選秀，跟腱斷裂後僅用 8 個月便重返賽場，並成功轉型為純 3D 球員（三分與防守），透過精簡動作與加強核心對抗性，成功延續了超過 8 年的職業生涯。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">DeMarcus Cousins：</strong>曾經的聯盟第一中鋒，受傷前場均 25 分 12 籃板，跟腱斷裂後徹底失去禁區的靈活性與二次起跳能力，防守端更成為被後衛針對的目標，迅速淪為底薪邊緣球員。
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、復健期的兩大隱形難關：心理障礙（Kinesiophobia）與代償連鎖反應
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    除了身體組織的癒合，現代運動醫學越來越重視傷後的「心理與神經力學」問題。許多球員生理指數已達標，但回到場上卻判若兩人，主要受限於以下兩點：
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 運動恐懼症（Kinesiophobia）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    經歷過膝蓋發出「啪」一聲或跟腱劇痛的球員，潛意識裡會產生極大的創傷後恐懼。研究指出，約有 20-25% 的職業運動員即使身體痊癒，也無法克服心理障礙，導致他們在場上猶豫不決，不敢全力衝刺或在高空中尋求身體對抗。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/25227187/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+    這也是為什麼現在 NBA 的復健團隊中，必然包含運動心理學家。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 致命的代償連鎖反應（Compensatory Injuries）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    人體非常聰明，當一個部位受傷或力量不足時，大腦會自動呼叫其他部位來「幫忙」，這就是代償。但在 NBA 的高強度下，代償往往是下一場悲劇的開端。
+  </p>
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 最著名的代償悲劇：Klay Thompson</strong><br><br>
+      Klay 在 2019 年總冠軍賽遭遇<b>左膝 ACL 撕裂</b>。經過 17 個月的漫長復健，當他準備在新賽季強勢復出時，卻在訓練中遭遇了<b>右腳阿基里斯腱斷裂</b>。運動醫學專家普遍認為，這並非單純運氣不好，而是在漫長的 ACL 復健過程中，右腳長期承受了過多的代償壓力（Kinematic overcompensation），導致右側跟腱疲勞累積，最終在一次平常的起跳中徹底崩潰。
+      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/30932599/" target="_blank" rel="noopener noreferrer" style="color: #9a3412; text-decoration: underline;">[11]</a></sup>
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、NBA 三大傷病影響深度比較表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 900px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 160px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>傷病類型</th>
+          <th>重返NBA機率 (RTP)</th>
+          <th>平均復健時間</th>
+          <th>進階數據(PER/TS%)影響</th>
+          <th>最主要後遺症與風險</th>
+          <th style="text-align: center; white-space: nowrap;">代表球星</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>前十字韌帶 (ACL) 撕裂</td>
+          <td>~86%</td>
+          <td>9 - 12 個月</td>
+          <td>首季 DRPM 下降，PER 掉 1.5 分</td>
+          <td>對側健康腳受傷風險增加、防守橫移下降</td>
+          <td style="text-align: center;">Derrick Rose, Zach LaVine</td>
+        </tr>
+        <tr>
+          <td>外側半月板切除 (Lateral Meniscectomy)</td>
+          <td>>90% (但壽命短)</td>
+          <td>4 - 8 週</td>
+          <td>初期不變，晚期大幅退化</td>
+          <td>早期創傷性關節炎、膝蓋反覆積水</td>
+          <td style="text-align: center;">Dwyane Wade, Chris Paul</td>
+        </tr>
+        <tr>
+          <td>半月板修補 (Repair)</td>
+          <td>~85%</td>
+          <td>4 - 6 個月</td>
+          <td>維持良好，得分效率影響小</td>
+          <td>癒合失敗需二次手術 (約15%機率)</td>
+          <td style="text-align: center;">Zion Williamson, Jaren Jackson Jr.</td>
+        </tr>
+        <tr>
+          <td>跟腱 (阿基里斯腱) 撕裂</td>
+          <td>~70-73%</td>
+          <td>10 - 15 個月</td>
+          <td>PER 暴跌 4.5 分，禁區 TS% 崩盤</td>
+          <td>永久性失去第一步爆發力與絕對彈跳高度</td>
+          <td style="text-align: center;">Kobe Bryant, Kevin Durant, Klay Thompson</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 六、常見三大籃球傷病誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「受傷後換一雙避震更好的球鞋，或是穿護踝就能預防再次受傷」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>嚴重誤導！</strong> 球鞋的避震科技對於緩解足底筋膜炎有幫助，但 ACL 與跟腱的撕裂通常發生在「極端扭轉力矩」與「離心收縮失控」的瞬間，球鞋無法阻擋這些力量。預防大傷的根本在於<strong>臀大肌群的強化、正確的落地機制（Landing mechanics）以及本體感覺訓練</strong>。過度依賴硬式護具反而可能讓鄰近關節（如膝蓋）承受更大的扭轉壓力。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/24753239/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[12]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「ACL 手術做完，越早回到球場越好，代表復健很成功」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>非常危險！</strong> 移植的韌帶在人體內需要經過脆弱的「韌帶化（Ligamentization）」過程，組織才會變得強韌，這通常需要 9-12 個月。如果在術後不到 9 個月就急於進行高強度的全場比賽，年輕運動員韌帶再次斷裂的機率高達原本的 7 倍。耐心等待生物學的自然修復，才是延長生涯的關鍵。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/27159297/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[13]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「Kevin Durant 斷了跟腱還這麼強，代表跟腱手術現在已經沒什麼大不了了」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>嚴重的倖存者偏差！</strong> KD 的成功有賴於頂級醫療團隊的 PRP 技術與超過一年的耐心復健，且他極度依賴 7 呎身高的無解投籃，而非切入第一步。統計數據顯示，超過 70% 的 NBA 球員在跟腱斷裂後的切入頻率、籃下終結能力都會顯著下降。KD 是不折不扣的歷史特例，絕對不能當作常態標準。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/33132640/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[14]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：業餘球友打全場籃球，最容易遇到哪一種傷害？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      業餘球友最常發生的其實是「腳踝外側韌帶扭傷（翻船）」以及「髕骨肌腱炎（跳躍膝）」或「半月板磨損」。由於許多業餘球友平常坐辦公室，缺乏臀部與大腿後側的重量訓練，導致肌肉力量不足以支撐假日打球頻繁的急停跳投，長期下來關節軟骨就會提早耗損。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：如果在打球時聽到膝蓋「啪」一聲，該怎麼辦？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      「啪（Pop）」一聲伴隨著迅速腫脹與無力感，是 ACL 撕裂的典型特徵。當下請立刻停止所有動作，絕對不要嘗試「走走看」或繼續打球，落實 P.E.A.C.E & L.O.V.E 原則（保護、抬高、適度冰敷、壓迫等），並儘速尋求醫師進行理學檢查與 MRI 核磁共振確認。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：跟腱斷裂前會有前兆嗎？我最近打完球腳跟都很痛，是不是危險了？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      往往是有前兆的！許多跟腱斷裂的球員，在受傷前幾週或幾個月，都會有「阿基里斯腱發炎」、「早晨起床腳跟僵硬疼痛、走幾步才緩解」的症狀。如果你在打完球後腳跟後側（捏起來粗粗的那條筋）持續痠痛，這就是身體發出的嚴重警訊，代表組織正在慢性退化，此時應立刻停止高強度跳躍並就醫評估，切勿硬撐。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    籃球是一項極度迷人卻又充滿高張力衝擊的運動。NBA 球星們能在經歷 ACL、半月板或跟腱斷裂後重返賽場，背後依靠的是上百萬美元的頂尖醫療團隊、極度嚴苛的科學復健計畫，以及異於常人的強大意志力。我們在螢幕前看到的「奇蹟復出」，其實都是用無數汗水與精密數據堆砌出來的。
+  </p>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    對於我們一般熱愛籃球的業餘球友來說，<strong style="color: #1e293b;">預防永遠勝於治療</strong>。平常在球場上盡情揮灑汗水之餘，千萬別忽略了下肢肌力與核心的強化（特別是臀中肌與大腿後側肌群），以及運動後的伸展放鬆。若你在打球時發現膝蓋或腳跟出現異常的痠痛、無力，或者曾在場上受過傷卻遲遲未能痊癒，切勿抱著「過幾天自己會好」的心態。透過專業復健科醫師的理學檢查與超音波精準評估，找出關節與肌腱的潛在問題，搭配正確的動作發力指導，才是讓你遠離阿基里斯魔咒，安全且長久地享受籃球樂趣的唯一法則。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：打球後的異常痠痛不應被視為「認真的勳章」，它可能是重大傷病發生前的最後警告。若您的膝蓋、腳踝或阿基里斯腱有持續性不適，請盡速尋求專業的復健醫學評估。
+    </p>
+
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約專業復健科醫師評估
+    </a>
+</div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Harris, J. D., et al. (2013). Return to sport following anterior cruciate ligament reconstruction in the National Basketball Association. American Journal of Sports Medicine, 41(10), 2284-2288. <a href="https://pubmed.ncbi.nlm.nih.gov/23982403/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 23982403</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Nawabi, D. H., et al. (2014). Return to play after lateral meniscectomy compared with lateral meniscus repair in elite professional athletes. American Journal of Sports Medicine, 42(10), 2163-2168. <a href="https://pubmed.ncbi.nlm.nih.gov/25136006/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 25136006</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Amin, N. H., et al. (2015). Performance outcomes after Achilles tendon rupture in the National Basketball Association. American Journal of Sports Medicine, 43(12), 2951-2957. <a href="https://pubmed.ncbi.nlm.nih.gov/26415003/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 26415003</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Kester, B. S., et al. (2017). Return to play and performance after anterior cruciate ligament reconstruction in National Basketball Association players. American Journal of Sports Medicine, 45(10), 2244-2249. <a href="https://pubmed.ncbi.nlm.nih.gov/28549272/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 28549272</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Bakhsh, W. R., et al. (2018). Impact of Anterior Cruciate Ligament Tears on Performance and Time in the National Basketball Association. Orthopaedic Journal of Sports Medicine. <a href="https://pubmed.ncbi.nlm.nih.gov/30016591/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 30016591</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Desai, V. S., et al. (2019). Return to play and performance after meniscus surgery in the National Basketball Association. Sports Health, 11(6), 494-499. <a href="https://pubmed.ncbi.nlm.nih.gov/31386576/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 31386576</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Jack, R. A., et al. (2017). Performance and return to sport after Achilles tendon repair in National Basketball Association players. Sports Health, 9(6), 552-557. <a href="https://pubmed.ncbi.nlm.nih.gov/30346850/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 30346850</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Trofa, D. P., et al. (2017). Professional athletes' return to play and performance after operative repair of an Achilles tendon rupture. American Journal of Sports Medicine, 45(12), 2864-2871. <a href="https://pubmed.ncbi.nlm.nih.gov/28398108/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 28398108</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Khalil, L. S., et al. (2020). Impact of Achilles tendon rupture on player performance in the National Basketball Association. Orthopaedic Journal of Sports Medicine, 8(10). <a href="https://pubmed.ncbi.nlm.nih.gov/33132640/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 33132640</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Ardern, C. L., et al. (2014). The impact of psychological readiness to return to sport and recreational activities after anterior cruciate ligament reconstruction. British Journal of Sports Medicine, 48(22), 1613-1619. <a href="https://pubmed.ncbi.nlm.nih.gov/25227187/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 25227187</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Sonnery-Cottet, B., et al. (2019). Contralateral anterior cruciate ligament tears are more common than ipsilateral graft failures in elite athletes. Knee Surgery, Sports Traumatology, Arthroscopy. <a href="https://pubmed.ncbi.nlm.nih.gov/30932599/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 30932599</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Hewett, T. E., et al. (2013). Mechanisms, prediction, and prevention of ACL injuries: Cut risk with three sharpened and validated tools. Journal of Orthopaedic Research, 34(11), 1843-1855. <a href="https://pubmed.ncbi.nlm.nih.gov/24753239/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 24753239</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Grindem, H., et al. (2016). Simple decision rules can reduce reinjury risk by 84% after ACL reconstruction: the Delaware-Oslo ACL cohort study. British Journal of Sports Medicine, 50(13), 804-808. <a href="https://pubmed.ncbi.nlm.nih.gov/27159297/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 27159297</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Lyu, J., et al. (2022). Do NBA players return to their previous level of performance after Achilles tendon rupture? A retrospective matched-cohort study. Sports Medicine - Open. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8941018/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8941018</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Grassi, A., et al. (2020). Return to play and performance after anterior cruciate ligament reconstruction in elite athletes: Bone-Patellar Tendon-Bone vs Hamstring Autograft. Orthopaedic Journal of Sports Medicine. <a href="https://pubmed.ncbi.nlm.nih.gov/32047833/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 32047833</a>
+  </span>
+</li>
+  </ol>
+</div>
+`
+},
+
+{
+  id: 'mlb-tommy-john-surgery-analysis',
+  title: '從大谷翔平到韋蘭德：醫學解密 MLB 球員 Tommy John 手術後的真實回歸率與表現變化',
+  lastModified: '2026-04-24',
+  category: '衛教文章',
+  date: '2026-04-24',
+  summary: '探討美國職棒大聯盟 (MLB) 投手在接受尺骨附屬韌帶重建手術 (Tommy John 手術) 後的真實回歸機率與數據變化。實證研究打破「開刀後球速會變快」的迷思，揭露手術後防禦率 (ERA)、被上壘率 (WHIP) 與控球能力的實際衰退幅度。並以大谷翔平、韋蘭德及德格隆等球星為例，深入淺出地介紹手術原理、適應症與漫長的復健時程。',
+  coverImage: '/images/news/article/tommyjohn-analysis.webp',
+  seoTitle: '從大谷翔平到韋蘭德：醫學解密 MLB 球員 Tommy John 手術的回歸率與表現',
+  seoDescription: '大聯盟投手開完 Tommy John 手術後真的會變強嗎？實證醫學揭露術後防禦率 (ERA)、球速與控球衰退數據，並解析大谷翔平、韋蘭德與德格隆的真實案例與手術適應症。',
+  keywords: [
+    'Tommy John手術',
+    '尺骨附屬韌帶重建',
+    'UCL',
+    'MLB運動傷害',
+    '大谷翔平',
+    '韋蘭德',
+    '棒球手肘痛',
+    '投手球速退化',
+    '棒球復健'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    尺骨附屬韌帶重建手術（俗稱 Tommy John 手術）是挽救無數棒球投手職業生涯的重大醫學突破。然而，根據醫學實證研究指出，MLB 投手術後重返大聯盟賽場（RTP）的機率雖高達 80% 至 97%
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7905078/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>，但能完全恢復到「受傷前同等競技水準」的比例則降至約 67% 至 87%，且第二次動刀的回歸率會呈現斷崖式下跌
+    <sup><a href="https://scholars.houstonmethodist.org/en/publications/rate-of-return-to-pitching-and-performance-after-tommy-john-surge/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>。此外，手術並非「球速升級包」，多篇文獻顯示，投手在術後的防禦率（ERA）、被上壘率（WHIP）往往會微幅上升，控球能力（如保送率 BB/9）變差，且平均直球球速實質上會出現小幅下降
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4555623/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[3]</a></sup>。本文將從醫學視角出發，解析手術適應症、生物力學機制，並透過知名球星案例，帶您看懂 Tommy John 手術背後的殘酷數據與真實樣貌。
+  </p>
+</div>
+<img src="/images/news/article/tommyjohn/1.webp" alt="Tommy John 手術與大聯盟投手表現分析" class="responsive-img-enlarge">
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、什麼是 Tommy John 手術？生物力學的崩壞點在哪裡？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    Tommy John 手術的正式醫學名稱為<strong>尺骨附屬韌帶重建手術（Ulnar Collateral Ligament Reconstruction, UCLR）</strong>。1974 年，洛杉磯道奇隊隊醫 Frank Jobe 首次為投手 Tommy John 執行此手術，成功挽救了他的職業生涯，從此這項手術便以此命名。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    從生物力學的角度來看，投手在投球動作的「加速期」（Acceleration phase），手肘會承受極大的外翻扭力（Valgus torque）。美國知名生物力學專家 Glenn Fleisig 的研究指出，職業投手在投出 90 mph 以上的速球時，手肘內側承受的扭力高達 64 牛頓·米 (Nm)；然而，大體解剖實驗證實，UCL 韌帶本身的抗拉極限僅約 32-34 牛頓·米。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/7726330/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這意味著，<strong>每一次全力投球，力量都遠超過韌帶的極限</strong>。投手之所以沒有每次投球都斷手，是因為有前臂屈肌群的肌肉力量在幫忙分擔。當肌肉疲勞或投球機制走樣時，所有的衝擊力將由 UCL 獨自承受，最終導致微小撕裂累積成完全斷裂。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">臨床上的適應症（Indications）：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">經高解析度 MRI 影像確認 UCL 發生嚴重的部分撕裂或完全撕裂（High-grade partial or full-thickness tear）。</li>
+    <li style="margin-bottom: 0.5rem;">經歷 3-6 個月的保守治療（如 PRP 高濃度血小板血漿注射、物理治療、投球機制優化）後，仍出現持續性疼痛或無法恢復受傷前的投球強度。</li>
+    <li style="margin-bottom: 0.5rem;">患者具有強烈意願，且有足夠的心理韌性面對長達一年以上的復健期。</li>
+  </ul>
+  <img src="/images/news/article/tommyjohn/elbow-anatomy.webp" alt="手肘尺骨附屬韌帶解剖圖" class="responsive-img-enlarge">
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、殘酷的現實：MLB球員回到賽場的機率到底多高？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    在大眾媒體的渲染下，許多人誤以為 Tommy John 手術的成功率是 100%，似乎只要開刀就能「滿血復活」，但殘酷的醫學數據告訴我們這並非事實。
+  </p>
+  
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">初次手術的回歸率</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    根據《美國運動醫學期刊》(AJSM) 的系統性回顧文獻指出，MLB 投手接受初次 UCL 重建手術後，<strong>重返大聯盟賽場（Return to Play, RTP）的機率大約落在 80% 到 97% 之間</strong>。然而，若我們將標準提高到<strong>「重返受傷前同等水準」（Return to Same Level of Play, RTSP）</strong>，這個比例會顯著下降至 67% 到 87%。這意味著有將近 1/5 的投手，開完刀後再也找不回昔日的身手。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7905078/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">第二次手術（Revision TJ）的斷崖式下跌</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    如果球員因為再次撕裂而需要進行「第二次」Tommy John 手術（Revision UCLR），情況將非常嚴峻。2020 年的一項長期追蹤研究指出，第二次 TJ 手術後能成功重返大聯盟的機率約為 55-65%，而能夠維持三年以上健康出賽的投手更是不到一半。此外，第二次手術的復健期通常需要拉長至 15-18 個月。這也是為什麼醫療團隊對於第二次動刀總是格外謹慎。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/32011928/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 復健科醫師的臨床見解</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在臨床上，重建韌帶的「生物癒合（Ligamentization）」大約在 9-12 個月會達到足夠強度，但「神經肌肉控制（Neuromuscular control）」與「投球本體感覺」往往需要更久的時間。這就是為什麼許多投手在回歸的第一年表現常常大起大落，甚至容易引發肩膀或闊背肌的代償性傷勢，直到第二年才能真正找回穩定的手感。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、運動表現會掉多少？打破「手術後會變強」的神話
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    棒球界長久以來流傳一個都市傳說：「開完 Tommy John 手術後，球速會變快。」甚至有青少年投手為了追求球速而主動要求開刀。這是一個非常危險且完全錯誤的認知。
+  </p>
+  
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 球速與轉速的真實變化</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    多項針對 MLB 投手的龐大數據回顧直接打破了這個迷思。研究分析發現，投手在手術後的<strong>平均直球球速實際上是下降的</strong>（手術前 91.3 mph 降至手術後 90.6 mph，P = 0.003）。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4555623/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup> 
+    此外，進階數據顯示，四縫線速球與曲球的「轉速（Spin Rate）」在術後第一年也有顯著下滑，這直接影響了球的尾勁與揮空率。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    所謂的「少數人球速變快」，通常是因為投手在受傷前，韌帶已經處於慢性撕裂狀態，導致球速早已默默下滑；手術只是讓他們找回「健康時的正常球速」，加上長達一年的下肢與核心肌力復健，才產生了球速突破的錯覺。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 控球能力與壓制力的實質衰退</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    Henry Ford 醫院分析了 168 位 MLB 投手的完整賽季數據，發現手術後有幾項關鍵的壓制力指標出現了統計學上的顯著衰退：
+    <sup><a href="https://www.henryford.com/news/2014/03/mlb-pitchers-dont-regain-performance-level-after-tommy-john-surgery" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">防禦率 (ERA)：</strong>從 4.15 惡化至 4.74。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">被上壘率 (WHIP)：</strong>從 1.40 惡化至 1.48。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">保送率 (BB/9)：</strong>從 3.1 上升至 3.5，顯示放球點（Release point）的本體感覺變差，導致控球不穩。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">投球局數 (IP)：</strong>單季平均從 59 局減少至 50 局，這與球團的保護機制（Innings limit）及投手自身的體力恢復變慢有關。</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、大聯盟投手初次手術前後表現比較表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>評估項目</th>
+          <th>手術前平均表現</th>
+          <th>手術後平均表現</th>
+          <th>衰退幅度 / 變化</th>
+          <th style="text-align: center; white-space: nowrap;">數據背後的醫學意義</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>直球均速 (Fastball Vel.)</td>
+          <td>91.3 mph</td>
+          <td>90.6 mph</td>
+          <td>下降 0.7 mph</td>
+          <td style="text-align: center;">打破手術會增強絕對球速的迷思</td>
+        </tr>
+        <tr>
+          <td>防禦率 (ERA)</td>
+          <td>4.15</td>
+          <td>4.74</td>
+          <td>上升 0.59</td>
+          <td style="text-align: center;">整體壓制力實質下降</td>
+        </tr>
+        <tr>
+          <td>被上壘率 (WHIP)</td>
+          <td>1.40</td>
+          <td>1.48</td>
+          <td>上升 0.08</td>
+          <td style="text-align: center;">球威受影響，容易被擊出安打</td>
+        </tr>
+        <tr>
+          <td>九局保送率 (BB/9)</td>
+          <td>3.1</td>
+          <td>3.5</td>
+          <td>上升 0.4</td>
+          <td style="text-align: center;">神經本體感覺未完全恢復，控球變差</td>
+        </tr>
+        <tr>
+          <td>直球使用比例</td>
+          <td>64.8%</td>
+          <td>60.4%</td>
+          <td>減少 4.4%</td>
+          <td style="text-align: center;">因球速下降而傾向使用更多變化球</td>
+        </tr>
+        <tr>
+          <td>單季投球局數 (IP)</td>
+          <td>59 局</td>
+          <td>50 局</td>
+          <td>減少 9 局</td>
+          <td style="text-align: center;">球團的保護機制與投手體力恢復期延長</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="color: #94a3b8; font-size: 0.9rem; margin-top: 0.5rem;">註：數據主要取自 Henry Ford Hospital (2014) 與 AJSM 文獻回顧，代表大聯盟群體平均值，不排除極少數特例球員（如：自律極高、復健極其完美的賽揚級投手）能投出優於術前的成績。</p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、知名大聯盟球星真實案例分析
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 大谷翔平 (Shohei Ohtani)：二刀流的極端雙重考驗</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    大谷翔平在 2018 年底接受了初次 Tommy John 手術。當時的策略是讓他在 2019 年以「指定打擊 (DH)」身分出賽，同時讓右手肘進行漫長的復健。大谷成功在 2021 年滿血回歸投手丘，甚至投出 100 mph 的火球，成為棒球史上的奇蹟。然而，打擊與投球的雙重極端負荷，仍讓他的手肘在 2023 年底再次亮起紅燈，進行了第二次右手肘韌帶手術。這完美展現了即使是擁有頂尖身體素質的運動員，依然難以對抗生物力學的物理極限。
+    <sup><a href="https://www.mlb.com/news/shohei-ohtani-s-tommy-john-surgery-successful-c296823034" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 韋蘭德 (Justin Verlander)：打破年齡醫學限制的奇蹟</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    Justin Verlander 在 2020 年以 37 歲高齡接受 Tommy John 手術。在醫學統計上，大於 35 歲的投手開 TJ 手術，成功回歸並投滿一整個賽季的機率極低。但他歷經將近兩年嚴苛的復健後，在 2022 年以 39 歲之姿回歸，不但單季狂奪 18 勝，防禦率更低至 1.75，一舉拿下美聯賽揚獎。他是醫學統計上的「極端特例」，展現了現代運動科學、完美的投球機制與個人強大意志力的結合。
+    <sup><a href="https://www.mlb.com/news/justin-verlander-to-have-tommy-john-surgery" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">3. 德格隆 (Jacob deGrom)：第二次動刀的艱難挑戰</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    兩屆賽揚獎得主 Jacob deGrom 以驚人的四縫線速球與犀利滑球聞名，但他早在小聯盟時期（2010年）就開過一次 TJ 手術。在經歷了輝煌但傷病不斷的幾年後，他在 2023 年以遊騎兵隊球員身分，進行了生涯「第二次」的 UCL 重建手術。如同前文所述，第二次手術的回歸充滿變數，deGrom 的案例正是現代棒球過度追求極限球速與轉速下，韌帶無可避免的消耗縮影。
+    <sup><a href="https://www.espn.com/mlb/story/_/id/37810332/rangers-jacob-degrom-tommy-john-surgery-miss-rest-season" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">4. 斯特里德 (Spencer Strider)：新技術 Internal Brace 的應用</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    勇士隊的新生代火球男 Spencer Strider 在 2024 年初因 UCL 撕裂接受手術。由於他在大學時期已經開過一次傳統的 TJ 手術，醫師這次為他採用了近年興起的「內部支架 (Internal Brace)」技術。這種技術是在修復原生韌帶或植入物的同時，加上一種類似高強度安全帶的縫線來強化關節穩定性，理論上能縮短幾個月的復健期，但長期承受極端賽季的耐用度仍需更多大數據觀察。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6602383/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 六、常見三大誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「開完刀球速會突破天際，當作『手肘改裝升級』」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>完全錯誤！</strong> 如前述數據證實，術後平均直球速度是下降的。少數球員能變快，是因為在長達 12-15 個月的復健期中，嚴格地強化了下肢發力（Leg drive）與核心肌群，並由教練徹底修正了不良的投球機制，這是「刻苦復健與科學訓練」的功勞，絕非「手術本身」的魔法。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「既然韌帶遲早要斷，不如年輕時提早開刀當保養」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>非常荒謬且危險！</strong> 這在青少年棒球圈是一大隱憂。原生韌帶內部富含極其重要的「神經本體感覺受器」，這是重建肌腱無法完全取代的，也是投手精準控球的關鍵。此外，任何手術都具有高達 10-15% 的併發症風險（如尺神經病變、感染、移植物排斥）。沒有嚴重撕裂且無症狀的投手，絕對不該動刀。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「換上新的韌帶後，就等於獲得一條永遠不會斷的鐵臂」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>並非如此！</strong> 移植物（通常是掌長肌腱）在植入後，會經歷數年的「韌帶化（Ligamentization）」過程，雖然最終強度足夠，但在高強度連續投球、不當的變化球握法下，依然會再次撕裂。這也是為何 MLB 投手開第二次 TJ 手術的比例逐年攀升。</span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、漫長的 15 個月：Tommy John 術後標準復健時程
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    手術只是第一步，真正的考驗在於無比枯燥且痛苦的復健期。以下是針對棒球投手的標準化臨床復健時程：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: none; padding-left: 0; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1.2rem; background-color: #1e293b; padding: 1rem; border-radius: 0.5rem; border-left: 4px solid #38bdf8;">
+      <strong style="color: #38bdf8;">階段一（第 0-4 週）：保護與癒合期</strong><br>
+      手肘必須穿戴具有角度限制的支架，主要目標是控制發炎腫脹，並進行手腕與肩部的輕度等長收縮，嚴禁任何外翻應力。
+    </li>
+    <li style="margin-bottom: 1.2rem; background-color: #1e293b; padding: 1rem; border-radius: 0.5rem; border-left: 4px solid #38bdf8;">
+      <strong style="color: #38bdf8;">階段二（第 1-3 個月）：關節活動度與初期肌力</strong><br>
+      逐步恢復手肘的完全伸直與彎曲，並開始進行前臂屈肌群與肩胛骨穩定肌群（如前鋸肌、下斜方肌）的強化，這時可加入大量的下肢與核心訓練。
+    </li>
+    <li style="margin-bottom: 1.2rem; background-color: #1e293b; padding: 1rem; border-radius: 0.5rem; border-left: 4px solid #38bdf8;">
+      <strong style="color: #38bdf8;">階段三（第 4-6 個月）：進階肌力與漸進式傳接球 (ITP)</strong><br>
+      通過醫師與物理治療師的動態測試後，開始進行平地漸進式傳接球計畫（Interval Throwing Program），從 45 呎輕拋開始，數月內慢慢退至 120 呎，讓新韌帶適應拉扯力。
+    </li>
+    <li style="margin-bottom: 1.2rem; background-color: #1e293b; padding: 1rem; border-radius: 0.5rem; border-left: 4px solid #38bdf8;">
+      <strong style="color: #38bdf8;">階段四（第 9-12 個月）：重返投手丘 (Mound Work)</strong><br>
+      開始上投手丘進行牛棚練投，初期只能投直球，嚴禁投擲需要手腕劇烈旋轉的滑球與曲球。此階段著重於投球機制的微調與找回放球點。
+    </li>
+    <li style="margin-bottom: 1.2rem; background-color: #1e293b; padding: 1rem; border-radius: 0.5rem; border-left: 4px solid #38bdf8;">
+      <strong style="color: #38bdf8;">階段五（第 12-15 個月）：模擬賽與復健賽 (Rehab Assignment)</strong><br>
+      參與實戰打擊練習 (Live BP) 與小聯盟復健賽，逐步拉高用球數與局數。當連續幾場比賽後手肘無不良反應，且球速與轉速達標，才能正式宣告回歸大聯盟。
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：只要手肘內側痛，就代表韌帶斷了、需要開刀嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      絕對不一定。手肘內側痛的原因包含屈肌旋前肌群拉傷、尺神經炎、內側上髁炎（高爾夫球肘）等。即便是高解析度超音波或 MRI 確診為 UCL 部分撕裂，目前透過超音波導引的 PRP（高濃度血小板血漿）注射結合保守復健，也有極高的機會痊癒。手術永遠是窮盡一切保守治療後的最後手段。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8209837/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：手術通常會取身體哪裡的肌腱來重建？會有後遺症嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      最常使用的是同側或對側前臂的「掌長肌腱（Palmaris longus）」，這是一條退化構造，取走完全不影響手部的握力或功能。若患者天生缺乏掌長肌（約15%的人沒有），則會取用大腿後側的「半腱肌腱（Hamstring）」或腳部的「蹠肌腱（Plantaris）」。取腱處通常只會有短暫的痠痛，極少留下永久後遺症。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：為什麼近年來受傷的年輕投手越來越多？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      這是多重因素造成的現代棒球悲劇，包含：大聯盟與基層投手極端追求球速與高轉速（Weighted ball 訓練法的不當使用）、減少使用速球而大量使用高負荷的滑球與 sweeper、以及最嚴重的「青少年時期沒有嚴格控管單週投球數與休息天數」，導致韌帶在發育期就累積了不可逆的微小創傷。
+      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/26992430/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：野手也會做 Tommy John 手術嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      會的。雖然投手佔了超過 85%，但內野手（尤其是常需要在不平衡姿勢下長傳的游擊手、三壘手）與捕手，也會因為反覆猛烈傳球而撕裂韌帶（例如道奇隊的 Corey Seager）。不過，因為野手不需要像投手一樣執行極端的全力投球，通常術後重返賽場的時間會大幅縮短至 6-9 個月左右。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    Tommy John 手術是一項改變棒球歷史的偉大醫學技術，但透過客觀的數據與實證醫學，我們必須認清：這並不是一場穩賺不賠的交易，而是在窮盡一切保守治療後的最終手段。它能延續你的運動生涯，但代價是漫長且痛苦的復健期，以及不可避免的部分壓制力衰退與控球陣痛期。
+  </p>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    無論你是剛踏上投手丘的基層三級棒球員，還是熱愛棒球的業餘社會人好手，<strong style="color: #1e293b;">最好的預防永遠從「了解自己的身體與優化投球機制」開始</strong>。如果你對自己的投球動作發力順序、目前的球速瓶頸，或是現有的手肘與肩膀不適有任何疑慮，千萬不要吃止痛藥硬撐，更不要等到韌帶斷裂才行動——<strong style="color: #1e293b;">請前往新竹的辰星復健科診所，由具備復健專科醫師背景，並同時擁有 ACE-CPT 國際個人教練認證的陳醫師親自為您進行評估。</strong>一次結合醫學影像與運動生物力學的正確分析，可能為你拯救寶貴的運動生涯。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：嚴格重視投球數限制，積極強化下肢與核心旋轉肌力。若手肘內側出現連續幾天的痠痛或投球後有無力感，請立即停止投球並尋求專業醫療評估。
+    </p>
+
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診評估與力學分析
+    </a>
+</div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Coughlin, R. P., et al. (2019). Return-to-Play and Competitive Outcomes After Ulnar Collateral Ligament Reconstruction Among Baseball Players: A Systematic Review. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7905078/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7905078</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Erickson, B. J., et al. (2014). Rate of return to pitching and performance after Tommy John surgery in major league baseball pitchers. American Journal of Sports Medicine. <a href="https://scholars.houstonmethodist.org/en/publications/rate-of-return-to-pitching-and-performance-after-tommy-john-surge/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Houston Methodist Scholars</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Jiang, J. J., & Leland, J. M. (2014). The Effect of Ulnar Collateral Ligament Reconstruction on Pitch Velocity in Major League Baseball Pitchers. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4555623/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 4555623</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Fleisig, G. S., et al. (1995). Kinetics of baseball pitching with implications about injury mechanisms. American Journal of Sports Medicine, 23(2), 233-239. <a href="https://pubmed.ncbi.nlm.nih.gov/7726330/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 7726330</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Liu, J. N., et al. (2020). Outcomes of Revision Ulnar Collateral Ligament Reconstruction in Major League Baseball Pitchers. American Journal of Sports Medicine. <a href="https://pubmed.ncbi.nlm.nih.gov/32011928/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 32011928</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Makhni, E. C., et al. (2014). MLB Pitchers Don't Regain Performance Level after Tommy John Surgery. Henry Ford Health System Study. <a href="https://www.henryford.com/news/2014/03/mlb-pitchers-dont-regain-performance-level-after-tommy-john-surgery" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Henry Ford News</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Guardado, M. (2018). Ohtani has successful Tommy John surgery. MLB.com. <a href="https://www.mlb.com/news/shohei-ohtani-s-tommy-john-surgery-successful-c296823034" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">MLB News</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        McTaggart, B. (2020). Justin Verlander to have Tommy John surgery. MLB.com. <a href="https://www.mlb.com/news/justin-verlander-to-have-tommy-john-surgery" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">MLB News</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        ESPN. (2023). Rangers' Jacob deGrom to have Tommy John surgery, miss rest of season. ESPN.com. <a href="https://www.espn.com/mlb/story/_/id/37810332/rangers-jacob-degrom-tommy-john-surgery-miss-rest-season" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">ESPN News</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Dugas, J. R., et al. (2019). Ulnar Collateral Ligament Repair With Internal Brace Augmentation. Orthopaedic Journal of Sports Medicine. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6602383/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 6602383</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Saper, M. G., et al. (2021). Preventing Tommy John Surgery: The Identification of Trends in Pitch Selection, Velocity, and Spin Rate Before Ulnar Collateral Ligament Reconstruction. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8209837/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8209837</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Keller, R. A., et al. (2016). Tommy John Surgery in Youth Baseball Players. Journal of Pediatric Orthopaedics. <a href="https://pubmed.ncbi.nlm.nih.gov/26992430/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 26992430</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Buchanan, B. K., & Varacallo, M. A. (2023). Ulnar Collateral Ligament Tear. StatPearls, NCBI Bookshelf. <a href="https://www.ncbi.nlm.nih.gov/books/NBK431092/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Bookshelf: NBK431092</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+
+
+{
+  id: 'pain-medication-analysis',
+  title: '疼痛就吃止痛藥？醫師解析 NSAIDs、肌肉鬆弛劑、普拿疼的真相與風險',
+  lastModified: '2026-04-24',
+  category: '衛教文章',
+  date: '2026-04-24',
+  summary: '深度剖析非類固醇消炎止痛藥（NSAIDs）、肌肉鬆弛劑、乙醯胺酚（普拿疼）的藥理機制與長期使用風險。實證研究揭露止痛藥只是「關掉警報」而非治療根源，並說明何時需要尋找疼痛的真正成因。',
+  coverImage: '/images/news/article/pain-medication-analysis.webp',
+  seoTitle: '疼痛就吃止痛藥？醫師解析 NSAIDs、肌肉鬆弛劑、普拿疼的真相與風險',
+  seoDescription: '深度剖析非類固醇消炎止痛藥（NSAIDs）、肌肉鬆弛劑、乙醯胺酚（普拿疼）的藥理機制與長期使用風險。實證研究揭露止痛藥只是關掉警報而非治療根源。',
+  keywords: [
+    '止痛藥',
+    'NSAIDs',
+    '普拿疼',
+    '肌肉鬆弛劑',
+    '疼痛治療',
+    '止痛藥副作用',
+    '非類固醇消炎藥',
+    '慢性疼痛',
+    '乙醯胺酚'
+  ],
+  contentHtml: `<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    疼痛是身體發出的警訊，而止痛藥的作用本質上是「暫時關掉這個警報」。常見的止痛藥分為三大類：非類固醇消炎止痛藥（NSAIDs，如布洛芬、那普洛辛）、乙醯胺酚（普拿疼）、以及肌肉鬆弛劑（如環苯扎林、美索巴莫）。短期使用這些藥物能有效緩解急性疼痛，是合理的輔助治療；然而長期依賴卻可能帶來嚴重的胃腸道、腎臟、肝臟與心血管副作用。研究顯示，慢性疼痛患者若只靠藥物控制症狀而不處理根本原因，疼痛往往會反覆復發甚至加劇。本文以實證醫學為基礎，系統解析各類止痛藥的作用機制、副作用風險，並說明為何找出疼痛根源才是真正的解決之道。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK537240/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/28430049/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3168266/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[3]</a></sup>
+  </p>
+</div>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、疼痛是什麼？為什麼不能只靠止痛藥解決？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多人在感到疼痛時，第一個反應就是打開藥箱拿出止痛藥。短期來看，這樣做確實立竿見影——疼痛消失了，生活恢復正常。但這樣的做法，真的在「治病」嗎？
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    從醫學角度來看，<strong style="color: #2dd4bf;">疼痛是身體的保護機制</strong>，就像家裡的火災警報器——它在告訴你「有地方出了問題」。止痛藥的作用，是把這個警報器的聲音調小，讓你感覺舒服一些；但火源並沒有因此消失。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    根據國際疼痛研究協會（IASP）的定義，疼痛是「與實際或潛在組織損傷相關的不愉快感覺和情緒體驗」。
+    <sup><a href="https://www.iasp-pain.org/resources/terminology/#pain" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    疼痛可能來自發炎、神經壓迫、肌肉拉傷、骨骼退化、甚至心理因素。每一種疼痛背後，都有它的成因。止痛藥能讓你「感覺不痛」，但無法修復受損的椎間盤、無法消除增生的骨刺、也無法治好造成疼痛的肌腱撕裂。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    更值得注意的是，當你感覺不痛了，反而可能繼續從事傷害身體的動作，讓問題越來越嚴重，卻渾然不知。這就是為什麼醫師常說：<strong style="color: #2dd4bf;">止痛藥是輔助工具，不是治療方法。</strong>
+  </p>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、NSAIDs（非類固醇消炎止痛藥）：最常用，但副作用最多
+  </h2>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">什麼是 NSAIDs？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    NSAIDs（Non-Steroidal Anti-Inflammatory Drugs，非類固醇消炎止痛藥）是全球使用量最大的止痛藥類別，常見藥品包括布洛芬（ibuprofen，如安佳熱、芬必得）、那普洛辛（naproxen，如萘普生）、雙氯芬酸（diclofenac，如服他寧），以及處方用的塞來昔布（celecoxib）等。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    NSAIDs 的作用機制是抑制體內的「環氧合酶（COX-1 和 COX-2）」，從而減少前列腺素（prostaglandins）的合成。前列腺素是引發發炎、疼痛與發燒的重要物質，因此抑制它就能同時達到<strong style="color: #ffffff;">消炎、止痛、退燒</strong>三種效果。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK537240/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">長期使用 NSAIDs 的副作用</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    NSAIDs 雖然有效，但 COX 酶除了參與發炎反應，也扮演著保護胃黏膜、維持腎臟血流的角色。長期或高劑量使用，後果不容忽視：
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">胃腸道副作用（最常見）：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;">胃潰瘍、十二指腸潰瘍</li>
+    <li style="margin-bottom: 0.5rem;">胃腸道出血（嚴重時可致命）</li>
+    <li style="margin-bottom: 0.5rem;">胃痛、噁心、消化不良</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    根據研究，長期使用 NSAIDs 者發生上消化道潰瘍的風險比一般人高出 3 至 5 倍，每年因 NSAIDs 相關胃腸道出血住院的比例相當可觀。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/28430049/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">腎臟副作用：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;">急性腎損傷（尤其在脫水或老年族群）</li>
+    <li style="margin-bottom: 0.5rem;">長期使用可能導致慢性腎病進展</li>
+    <li style="margin-bottom: 0.5rem;">水鈉滯留，造成下肢水腫、血壓上升</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    前列腺素在腎臟中負責維持血流灌注，抑制它可能在腎功能本已不佳的患者（如糖尿病、高血壓、老年人）身上引發嚴重腎損傷。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3168266/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">心血管副作用：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;">增加心肌梗塞與中風風險（尤其是選擇性 COX-2 抑制劑）</li>
+    <li style="margin-bottom: 0.5rem;">血壓上升</li>
+    <li style="margin-bottom: 0.5rem;">心臟衰竭惡化</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    2015 年美國 FDA 發出警告，指出幾乎所有 NSAIDs（阿斯匹靈除外）都會增加心臟病發作和中風的風險，且風險在用藥的第一週就可能出現，長期使用風險更高。
+    <sup><a href="https://www.fda.gov/....../fda-drug-safety......" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在門診中，常見患者因腰痛或膝蓋痛，自行在藥局購買 NSAIDs 連續服用數週甚至數月。等到疼痛沒有明顯改善才來就診，卻同時帶來了新的問題：胃痛、血壓升高、腳踝水腫。這類案例並不少見。NSAIDs 的安全使用建議通常是急性期短期（5至7天），搭配飯後服用或胃藥保護，並在醫師指引下使用——而非當成日常保養品長期服用。
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、普拿疼（乙醯胺酚）：溫和不等於無害
+  </h2>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">普拿疼的作用機制</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    乙醯胺酚（Acetaminophen），台灣最廣為人知的品牌是「普拿疼」，英語系國家則稱為 Paracetamol（撲熱息痛）。它是全球使用量最大的非處方止痛退燒藥，許多人認為它「比較溫和」、「比較安全」，甚至感冒藥、複方感冒糖漿中都含有它。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    乙醯胺酚與 NSAIDs 不同，它的止痛機制至今尚未完全釐清，目前認為它主要作用於中樞神經系統，調節大腦對疼痛信號的感知，同時具有退燒效果；但它<strong style="color: #ffffff;">幾乎沒有明顯的消炎效果</strong>，因此對發炎性疼痛（如關節炎、肌腱炎）的效果相對有限。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/31272580/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">普拿疼的最大威脅：肝臟毒性</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    普拿疼最嚴重的副作用是<strong style="color: #ffffff;">肝臟毒性（hepatotoxicity）</strong>。乙醯胺酚在肝臟代謝時，會產生一種具毒性的中間代謝物 NAPQI，正常劑量下肝臟能夠處理它；但過量使用時，NAPQI 大量堆積會導致急性肝衰竭，情況嚴重者甚至需要肝臟移植或可能死亡。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3243904/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    根據研究，乙醯胺酚是美國急性肝衰竭最常見的單一成因，佔所有急性肝衰竭案例的約 46%。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3243904/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    更危險的是，<strong style="color: #ffffff;">許多患者並非刻意過量</strong>——他們同時服用了多種含乙醯胺酚的感冒藥、止痛藥，加總後劑量超過安全上限（成人每日不超過 4 克，肝病患者或飲酒者應更低）。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">使用普拿疼需特別注意的族群：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;">有肝臟疾病者（肝炎、肝硬化）</li>
+    <li style="margin-bottom: 0.5rem;">長期飲酒者（酒精會加速 NAPQI 產生）</li>
+    <li style="margin-bottom: 0.5rem;">同時服用多種含乙醯胺酚複方藥物者</li>
+    <li style="margin-bottom: 0.5rem;">體重過輕或營養不良者（肝臟解毒能力較低）</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    另外值得一提的是，近年有研究指出乙醯胺酚長期使用（即便在安全劑量範圍內）可能與腎臟損傷風險輕微上升有關，但相較於 NSAIDs，腎臟毒性風險仍相對較低。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/31272580/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 常見陷阱：</strong><br><br>許多市售的感冒藥、複方止痛藥（如白藥水、綜合感冒膠囊）都含有乙醯胺酚。若同時服用普拿疼加上一包感冒藥，乙醯胺酚的實際攝取量可能已經超過安全上限，卻讓人毫無察覺。服藥前務必仔細閱讀成分標示，避免重複服用含同一成分的藥品。
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、肌肉鬆弛劑：放鬆肌肉，還是讓大腦放空？
+  </h2>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">肌肉鬆弛劑的分類與機制</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    肌肉鬆弛劑（muscle relaxants）常被開立用於急性背痛、頸部僵硬、肌肉痙攣等問題。台灣臨床常見的藥品包括：環苯扎林（cyclobenzaprine）、美索巴莫（methocarbamol）、巴氯芬（baclofen）、鉀特（tizanidine）等。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    許多人以為肌肉鬆弛劑是直接「放鬆肌肉」的藥，但事實上，大多數肌肉鬆弛劑的主要作用位點在<strong style="color: #ffffff;">中樞神經系統（大腦和脊髓）</strong>，透過抑制神經信號來降低肌肉的緊張度，而非直接作用在肌肉本身。這也解釋了為什麼服用肌肉鬆弛劑後，很多人會感到強烈的睏意與頭暈。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK519539/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">肌肉鬆弛劑的副作用與風險</h3>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見副作用：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">中樞神經抑制：</strong>嗜睡、頭暈、注意力下降（駕車或操作機械時危險）</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">認知功能影響：</strong>記憶力短暫下降，老年族群尤需注意跌倒風險</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">依賴與戒斷問題：</strong>部分肌肉鬆弛劑（如巴氯芬）長期使用後突然停藥可能引發戒斷症狀，包括幻覺、痙攣</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">口乾、便秘：</strong>抗膽鹼效應（anticholinergic effects）</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    根據系統性回顧研究，肌肉鬆弛劑對急性腰痛的短期效果（2至4天）有一定證據支持，但<strong style="color: #ffffff;">超過兩週的使用幾乎沒有足夠的實證依據</strong>，且中樞神經副作用隨使用時間增加而累積。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/34229118/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在臨床上，肌肉鬆弛劑最大的「誤解」在於：患者以為吃了肌肉就真的被「修好」了，所以不再覺得需要做物理治療或改善姿勢。實際上，肌肉痙攣往往是身體在保護受傷部位（如椎間盤突出壓迫神經）的一種自我防衛反應。用藥物暫時解除這個防衛機制後，若繼續進行有害的動作，可能反而加速組織損傷。因此，肌肉鬆弛劑最好僅用於急性期幫助患者忍過最痛的幾天，並同步進行正確的復健訓練，而非長期依賴。
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、三類止痛藥比較表
+  </h2>
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+</style>
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>藥物類別</th>
+          <th>常見藥名</th>
+          <th>主要機制</th>
+          <th>主要副作用</th>
+          <th style="text-align: center; white-space: nowrap;">建議使用期限</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>NSAIDs</td>
+          <td>布洛芬、那普洛辛、雙氯芬酸、塞來昔布</td>
+          <td>抑制 COX 酶，減少前列腺素合成；消炎、止痛、退燒</td>
+          <td>胃潰瘍、胃出血、腎損傷、心血管風險、水腫</td>
+          <td style="text-align: center;">急性期 5–7 天，遵醫囑</td>
+        </tr>
+        <tr>
+          <td>乙醯胺酚（普拿疼）</td>
+          <td>Paracetamol、Tylenol、普拿疼</td>
+          <td>作用於中樞神經，調節疼痛感知；退燒；無明顯消炎效果</td>
+          <td>過量導致急性肝衰竭；重複用藥易超標</td>
+          <td style="text-align: center;">短期使用，每日≤4g</td>
+        </tr>
+        <tr>
+          <td>肌肉鬆弛劑</td>
+          <td>環苯扎林、美索巴莫、巴氯芬、鉀特</td>
+          <td>抑制中樞神經系統，降低肌肉緊張度</td>
+          <td>嗜睡、頭暈、跌倒風險、依賴性、戒斷症狀</td>
+          <td style="text-align: center;">急性期 2–4 天，不建議超過 2 週</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、一直吃止痛藥，疼痛會好嗎？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這個問題的答案，視疼痛的本質而定。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    對於<strong style="color: #ffffff;">急性疼痛</strong>（如輕微扭傷、感冒頭痛、術後疼痛），止痛藥在急性期確實有助於緩解不適，配合充分休息讓身體自癒，疼痛通常在數天至數週內消退，這是止痛藥發揮輔助作用的最佳情境。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    然而對於<strong style="color: #ffffff;">慢性疼痛</strong>（持續超過3個月），問題就完全不同了。慢性疼痛往往涉及神經系統的「中樞敏感化（central sensitization）」，也就是大腦和脊髓對疼痛信號的處理已經發生持久性改變，對疼痛的感知被「放大」了。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5796274/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+    在這種情況下，單純靠止痛藥只能提供暫時性的症狀緩解，無法改變神經系統的敏感化狀態。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    更值得警惕的是一種稱為「<strong style="color: #ffffff;">藥物過度使用性頭痛（medication-overuse headache, MOH）</strong>」的現象：原本為了治頭痛而服用止痛藥，長期過度使用後反而讓頭痛變得更頻繁、更難治。研究顯示，每月使用止痛藥超過10至15天者，都面臨 MOH 的風險。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/29987482/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    簡而言之：<strong style="color: #2dd4bf;">止痛藥能讓你感覺好一些，但無法修復造成疼痛的根本問題。</strong>長期依賴止痛藥，疼痛不僅不會消失，還可能因為持續忽視根本病因而逐漸惡化，同時累積藥物副作用的傷害。
+  </p>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+📢 七、常見三大迷思解析    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「普拿疼比較溫和，多吃沒關係」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 乙醯胺酚雖然對胃腸道刺激較小，但過量使用是急性肝衰竭的最主要原因之一。成人每日安全上限為 4 克（約 8 顆 500mg 的普拿疼），有肝臟疾病或飲酒習慣者應更低。許多人在不知情下同時服用多種含乙醯胺酚的複方藥物，累積劑量超標卻渾然不知。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3243904/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[7]</a></sup></span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「吃止痛藥不痛了，就是好了，可以停藥了」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不一定！</strong> 不痛≠治癒。止痛藥抑制的是疼痛信號，而非修復組織損傷。慢性疼痛患者在感覺「好多了」後若立即恢復高強度活動，反而容易造成二次傷害。疼痛消退後，仍需透過物理治療、運動復健或處理根本病因，才能確保真正的恢復。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5796274/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[10]</a></sup></span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「肌肉鬆弛劑可以長期吃，讓肌肉一直保持放鬆」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>危險！</strong> 長期服用肌肉鬆弛劑不僅缺乏足夠的實證效益，還會帶來顯著的中樞神經抑制副作用，包括嗜睡、認知功能下降，老年族群跌倒風險明顯增加。部分肌肉鬆弛劑（如巴氯芬）長期使用後突然停藥還可能引發嚴重的戒斷症狀。解決肌肉痙攣的根本之道在於找出造成痙攣的原因——是姿勢問題？神經壓迫？還是過度使用？——並針對性地治療。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34229118/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[9]</a></sup></span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    八、止痛藥只是「關掉警報」——真正的治療是找出根源
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    回到文章最開始的比喻：疼痛是火災警報器，止痛藥是把警報聲音調小的遙控器。你可以暫時安靜，但火源還在。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    現代醫學對疼痛的理解已越來越清楚：疼痛的根源可能是結構性問題（椎間盤突出、關節退化、骨刺）、功能性問題（肌肉失衡、姿勢不良、動作模式錯誤）、或神經性問題（神經壓迫、中樞敏感化）。每一種成因，都需要不同的介入方式。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">找出疼痛根源的常見治療方向包括：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">物理治療與運動復健：</strong>針對造成疼痛的姿勢問題、肌肉失衡進行系統性訓練，是慢性背痛、頸痛最有效的非藥物治療方式之一。
+      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/28430049/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">影像學診斷：</strong>透過 X 光、MRI 或超音波，找出疼痛的結構性成因（如椎間盤突出、旋轉肌群撕裂），才能制定精確的治療計畫。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">介入性治療：</strong>神經阻斷、超音波導引注射（如 PRP 或類固醇）等，針對特定疼痛來源進行精準治療，而非全面性地「關掉」全身的疼痛感。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">認知行為治療（CBT）：</strong>對於慢性疼痛患者，心理層面的介入（改變對疼痛的認知與應對方式）被多項研究證實有效，且可與物理治療相輔相成。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5796274/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">生活型態調整：</strong>體重管理、睡眠品質改善、戒菸——這些看似無關的因素，其實對慢性疼痛的治療有顯著的協同效果。
+    </li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    疼痛醫學界已形成共識：對大多數慢性疼痛患者而言，<strong style="color: #2dd4bf;">多模式整合治療（multimodal pain management）</strong>——結合藥物（短期輔助）、物理治療、心理支持與生活型態改變——遠比單純依賴止痛藥更有效，且副作用更少。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/29987482/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：飯前還是飯後吃 NSAIDs 比較好？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      建議飯後或與食物、牛奶一起服用，可以減少 NSAIDs 對胃黏膜的直接刺激。若有胃潰瘍病史或長期需要使用 NSAIDs，醫師通常會同時開立胃藥（如質子泵抑制劑，PPI）來保護胃黏膜。<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK537240/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：懷孕或哺乳期間可以吃止痛藥嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      懷孕期間的止痛藥使用需非常謹慎。NSAIDs 在懷孕晚期（32週後）特別危險，可能導致胎兒動脈導管早閉。乙醯胺酚雖然相對較安全，但近年有研究指出長期使用可能影響胎兒發育，建議以最低有效劑量、最短期間使用，並務必在醫師指導下進行。哺乳期也需諮詢醫師確認藥物安全性。
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：長期疼痛應該看哪一科？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      視疼痛部位與可能成因而定。肌肉骨骼疼痛（背痛、頸痛、關節痛）可先至骨科、復健科或疼痛科就診；頭痛可看神經內科；若疼痛合併其他症狀（如發燒、體重減輕、夜間疼痛加劇）則建議先至內科或家醫科做基礎評估，排除其他系統性疾病。慢性疼痛患者往往需要跨科別的整合評估。
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：NSAIDs 和普拿疼可以同時吃嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      從藥理機制上，兩者作用路徑不同，在醫師建議下可以合併使用（例如術後疼痛控制）。然而，自行合併使用時需特別注意：確認兩種藥物的劑量都在安全範圍內，且不要再服用其他含乙醯胺酚的複方藥物，以免肝臟負擔過重。任何合併用藥都應在醫師或藥師確認下進行。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/31272580/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：我吃了兩週止痛藥還是很痛，怎麼辦？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      這是一個重要的警訊——應立即就醫，而不是繼續增加劑量或換另一種止痛藥。持續兩週以上的疼痛未緩解，通常意味著需要進一步評估疼痛的根本原因，可能需要影像學檢查（X 光、MRI）或轉介至相關專科。記住：疼痛持續，是身體在告訴你「問題還沒解決」，而不是「藥吃得不夠多」。
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    止痛藥——無論是 NSAIDs、普拿疼還是肌肉鬆弛劑——都是現代醫療的重要工具，在急性期的疼痛管理中扮演不可或缺的角色。然而，它們的本質是<strong style="color: #1e293b;">症狀控制</strong>，而非<strong style="color: #1e293b;">疾病治療</strong>。短期、適當劑量的使用是合理的；長期依賴卻是危險的。
+  </p>
+  <p style="color: #475569; font-size: 1.05rem;">
+    真正讓疼痛「好起來」的方法，是找出疼痛背後的成因，針對性地治療。這需要正確的診斷、適當的復健、以及患者自身對生活型態的積極調整。如果你的疼痛已經持續超過兩週、反覆發作、或止痛藥越吃越沒效，請不要再讓警報器靜音了——<strong style="color: #1e293b;">是時候找出火源，真正把火撲滅。</strong>
+  </p>
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：檢視自己最近一個月的止痛藥使用頻率。如果每週需要吃超過 3 天、或已持續吃超過 2 週，請盡快預約醫師評估，找出疼痛真正的成因，而不只是繼續壓制症狀。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診評估，找出疼痛根源
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Ghlichloo, I., & Gerriets, V. (2023). Nonsteroidal Anti-Inflammatory Drugs (NSAIDs). In: StatPearls. National Library of Medicine. <a href="https://www.ncbi.nlm.nih.gov/books/NBK537240/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">NBK537240</a>
+  </span></li>
+    <li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Enthoven, W.T., Roelofs, P.D., Deyo, R.A., van Tulder, M.W., & Koes, B.W. (2016). Non-steroidal anti-inflammatory drugs for chronic low back pain. Cochrane Database of Systematic Reviews. <a href="https://pubmed.ncbi.nlm.nih.gov/28430049/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 28430049</a>
+  </span></li>
+    <li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Ungprasert, P., Cheungpasitporn, W., Crowson, C.S., & Matteson, E.L. (2015). Individual non-steroidal anti-inflammatory drugs and risk of acute kidney injury: a systematic review and meta-analysis of observational studies. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3168266/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 3168266</a>
+  </span></li>
+    <li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    International Association for the Study of Pain (IASP). (2020). Terminology: Pain. <a href="https://www.iasp-pain.org/resources/terminology/#pain" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">IASP Website</a>
+  </span></li>
+    <li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    U.S. Food and Drug Administration (FDA). (2015). FDA Drug Safety Communication: FDA strengthens warning that non-aspirin nonsteroidal anti-inflammatory drugs (NSAIDs) can cause heart attacks or strokes. <a href="https://www.fda.gov/....../fda-drug-safety......" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">FDA Website</a>
+  </span></li>
+    <li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Jóźwiak-Bebenista, M., & Nowak, J.Z. (2014). Paracetamol: mechanism of action, applications and safety concern. Acta Poloniae Pharmaceutica. <a href="https://pubmed.ncbi.nlm.nih.gov/31272580/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 31272580</a>
+  </span></li>
+    <li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Lee, W.M. (2012). Acetaminophen-related acute liver failure in the United States. Hepatology Research. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3243904/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 3243904</a>
+  </span></li>
+    <li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Witenko, C., Moorman-Li, R., Motycka, C., et al. (2014). Considerations for the Appropriate Use of Skeletal Muscle Relaxants for the Management of Acute Low Back Pain. StatPearls, NCBI Bookshelf. <a href="https://www.ncbi.nlm.nih.gov/books/NBK519539/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">NBK519539</a>
+  </span></li>
+    <li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    van Tulder, M.W., Touray, T., Furlan, A.D., Solway, S., & Bouter, L.M. (2021). Muscle relaxants for non-specific low back pain. Cochrane Database of Systematic Reviews. <a href="https://pubmed.ncbi.nlm.nih.gov/34229118/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 34229118</a>
+  </span></li>
+    <li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Woolf, C.J. (2018). Central sensitization: Implications for the diagnosis and treatment of pain. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5796274/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 5796274</a>
+  </span></li>
+    <li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Diener, H.C., Holle-Lee, D., Nägel, S., et al. (2019). Treatment of migraine attacks and prevention of migraine: Guidelines by the German Migraine and Headache Society and the German Society of Neurology. Clinical and Translational Neuroscience. <a href="https://pubmed.ncbi.nlm.nih.gov/29987482/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 29987482</a>
+  </span></li>
+  </ol>
+</div>`
+},
+
+ {
+  id: 'sleep-position-health-analysis',
+  title: '正睡還是側睡？醫學觀點全解析：對脊椎、肩膀、骨盆與內臟器官的影響',
+  lastModified: '2026-04-24',
+  category: '衛教文章',
+  date: '2026-04-24',
+  summary: '從醫學角度深度分析側睡與正睡（仰睡）的優缺點，涵蓋脊椎、肩膀旋轉肌群、骨盆、呼吸道及胃食道逆流等全面影響。實證研究揭露哪種睡姿更健康，並解析全球睡眠姿勢比例與個人化建議。',
+  coverImage: '/images/news/article/sleep-position-health-analysis.webp',
+  seoTitle: '正睡還是側睡？醫學觀點全解析：對脊椎、肩膀、骨盆與器官的影響',
+  seoDescription: '從醫學角度深度分析側睡與正睡（仰睡）的優缺點，涵蓋脊椎、肩膀旋轉肌群、骨盆、呼吸道及胃食道逆流等全面影響。實證研究揭露哪種睡姿更健康。',
+  keywords: [
+    '側睡',
+    '正睡',
+    '仰睡',
+    '睡眠姿勢',
+    '脊椎健康',
+    '肩膀疼痛',
+    '骨盆歪斜',
+    '睡眠呼吸中止症',
+    '胃食道逆流',
+    '睡眠姿勢建議'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0.75rem; line-height: 1.6; color: #334155;">
+    睡姿不只是個人習慣，更是每天持續6至8小時的全身性力學負荷。研究顯示，全球約有54至69%的人習慣側睡，19至37%的人選擇正睡（仰睡），側睡是人類最普遍的睡眠姿勢。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5677378/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="margin-bottom: 0.75rem; line-height: 1.6; color: #334155;">
+    正睡最大的優勢在於脊椎的自然曲線能得到較完整的支撐，腰椎承受壓力也相對較低；然而，對於有睡眠呼吸中止症或打鼾問題的人，正睡會因重力使舌根後墜而顯著惡化症狀。側睡則在脊椎照護上有些許取捨——頸椎與腰椎的對位需仰賴床墊與枕頭的輔助，但對呼吸道、胃食道逆流及大腦廢物代謝（腦脊液循環）的效益相當明顯。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/23669094/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10643078/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    本文將以實證醫學為基礎，系統性剖析這兩種主要睡姿對人體各部位的具體影響，幫助您做出最適合自己身體狀況的選擇。
+  </p>
+</div>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、全球睡眠姿勢比例：大家都怎麼睡？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    在討論哪種睡姿比較健康之前，先來看看大多數人實際上是怎麼睡覺的。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    根據 2024 年由 SSRS 針對 3,364 位美國成年人所進行的全國性調查，<strong style="color: #ffffff;">約有 69% 的人習慣側睡，19% 正躺（仰睡），12% 趴睡</strong>。
+    <sup><a href="https://ssrs.com/insights/how-the-american-public-sleeps/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    同年，另一項以加速度計客觀記錄 664 名受試者整夜睡姿的研究則顯示，人們在床上平均有 54% 的時間側睡、37% 的時間正躺、約 7% 的時間趴睡。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5677378/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    值得注意的是，<strong style="color: #ffffff;">隨著年齡增長與體重增加，側睡比例明顯上升</strong>，正躺比例相應下降。這可能與年長者或體型較豐腴者更容易在正躺時出現呼吸不適有關。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5677378/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 500px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+  </style>
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>睡眠姿勢</th>
+          <th>自我回報比例（SSRS 2024）</th>
+          <th>客觀記錄比例（加速度計研究）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>側睡</td>
+          <td>約 69%</td>
+          <td>約 54%</td>
+        </tr>
+        <tr>
+          <td>正睡（仰睡）</td>
+          <td>約 19%</td>
+          <td>約 37%</td>
+        </tr>
+        <tr>
+          <td>趴睡</td>
+          <td>約 12%</td>
+          <td>約 7%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="color: #94a3b8; font-size: 0.9rem; margin-top: 0.5rem;">
+    ＊自我回報偏向習慣偏好；客觀記錄涵蓋整夜實際姿勢比例，兩者差異合理存在。
+  </p>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、正睡（仰睡）的醫學優缺點
+  </h2>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">✅ 正睡的好處</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">1. 脊椎自然曲線維持最佳</strong><br>
+    正睡時，整條脊椎——頸椎、胸椎、腰椎——能在重力均勻分布下維持接近站立時的自然曲線。2025 年 PubMed 發表的一篇系統性回顧整理了六項研究，結論指出：「仰躺姿勢有助維持脊椎對位，與較低的下背痛盛行率相關。」
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/40338112/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">2. 肩膀壓力最小</strong><br>
+    正睡時肩關節不需承受體重壓迫，肩峰下間隙（旋轉肌群通過的空間）維持最大，是肩部疾病患者的首選睡姿。研究顯示，仰睡時肩峰下壓力明顯低於側睡。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10847686/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">3. 骨盆對稱性最佳</strong><br>
+    正睡時骨盆兩側受力對稱，不易因長期偏向一側而產生骨盆旋轉或傾斜的問題。若在膝蓋下方墊一個薄枕，更能進一步減輕腰椎壓力，維持腰椎前凸的自然弧度。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">4. 臉部皺紋風險較低</strong><br>
+    正睡時臉部不接觸枕頭，可減少長期睡眠壓力造成的臉部皺紋，這對部分人來說也是選擇仰睡的原因之一。
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">❌ 正睡的缺點與風險</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">1. 睡眠呼吸中止症與打鼾大幅惡化</strong><br>
+    這是正睡最主要的醫學缺點。仰睡時，重力使舌根後墜，壓迫上呼吸道，導致呼吸道截面積縮小甚至完全阻塞。研究顯示，<strong style="color: #ffffff;">超過半數的阻塞性睡眠呼吸中止症（OSA）患者在仰睡時症狀明顯惡化</strong>，仰睡型 OSA 是最常見的臨床表型。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/23669094/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    一篇大型回顧研究更指出，仰睡時的呼吸暫停低通氣指數（AHI）平均為每小時 63.5 次，側睡僅約 37.8 次。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3817704/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">2. 胃食道逆流相對較多</strong><br>
+    正睡雖然不是最差的睡姿（右側睡最差），但比左側睡有更多的夜間食道酸暴露時間。研究顯示，仰睡時胃食道逆流發生頻率顯著高於左側臥。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/10445529/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">3. 孕婦不宜</strong><br>
+    懷孕後期的正睡姿勢可能使子宮壓迫下腔靜脈，影響靜脈血液回流，進而影響胎兒血液供應，婦產科普遍建議孕婦選擇左側睡。
+  </p>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在臨床上，許多下背痛患者表示「仰睡最舒服」，這是有道理的——仰睡確實能讓腰椎處於較中立的位置。然而，若有打鼾或晨起頭痛問題的患者卻堅持仰睡，往往會發現睡眠品質持續低落。這類個案需要在脊椎舒適度和呼吸道健康之間找到平衡，例如使用斜板床（抬高頭部 30 度）就能同時兼顧兩者。
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、側睡的醫學優缺點
+  </h2>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">✅ 側睡的好處</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">1. 呼吸道暢通，改善打鼾與睡眠呼吸中止症</strong><br>
+    側睡是臨床上改善 OSA 的首選姿勢調整策略。文獻顯示，對於體位依賴型 OSA 患者，側睡可將 AHI 從仰睡時的每小時 63.5 次降低至約 37.8 次，改善幅度達 40%。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3817704/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">2. 左側睡大幅減少胃食道逆流</strong><br>
+    左側臥（左側睡）是所有睡姿中對胃食道逆流最友善的姿勢。系統性回顧與統合分析顯示，左側睡的食道酸暴露時間中位數為 0%，遠優於右側睡的 1.2% 及仰睡的 0.6%。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10643078/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    解剖學上，左側睡使胃的位置低於食道下括約肌，物理上就能減少胃酸逆流。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/10445529/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">3. 促進大腦廢物代謝（腦脊液循環）</strong><br>
+    這是近年最令科學界興奮的發現之一。動物實驗顯示，側睡時腦部淋巴系統（glymphatic system）的活性最高，負責清除大腦代謝廢物（包括與阿茲海默症相關的β-澱粉樣蛋白）的效率最佳；趴睡時效率最低，仰睡居中。研究者認為，哺乳動物普遍偏好側睡的生物本能，可能正是為了確保腦部廢物得以有效清除。
+    <sup><a href="https://en.wikipedia.org/wiki/Sleep_position" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">4. 頸椎症狀改善</strong><br>
+    一項以紅外線攝影機記錄實際睡姿的研究發現，側睡與頸椎疼痛、肩胛骨疼痛及手臂疼痛的緩解顯著相關。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6609073/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">5. 懷孕期間的最佳選擇</strong><br>
+    左側睡可避免子宮壓迫下腔靜脈，有助維持胎盤血流，是婦產科的標準建議。
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">❌ 側睡的缺點與風險</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">1. 肩關節壓力增加，旋轉肌群受損風險上升</strong><br>
+    側睡最顯著的骨科缺點在於肩膀。當你側躺時，整個上半身重量直接壓在下方肩關節上，導致肩峰下壓力大幅上升。2024 年發表於 Arthroscopy, Sports Medicine, and Rehabilitation 的研究分析了 58 名旋轉肌群撕裂患者，發現其中高達 <strong style="color: #ffffff;">89.7% 都是習慣側睡的人</strong>。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10847686/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    另一項研究也顯示，肩關節疼痛的左右側分布比例，與人們偏好左右側睡的比例驚人地吻合，強烈暗示側睡壓力與肩部病理之間的因果關係。
+    <sup><a href="https://www.sciencedirect.com/....../pii/S0306987709007701" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">2. 頸椎對位需要精確枕頭支撐</strong><br>
+    側睡時，頭部需要高度恰當的枕頭支撐，使頸椎保持在與胸椎連成直線的中立位。若枕頭過低，頸椎會側彎；若過高，則會向對側偏移。長期不良的頸椎側位，是頸部疼痛與肌肉緊繃的常見原因。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6609073/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">3. 骨盆歪斜與髖關節負荷</strong><br>
+    側睡時，若沒有在兩膝之間夾枕頭，上方的腿容易下沉，帶動骨盆向前旋轉，造成髂腰肌緊縮及腰骶關節的額外扭力。長期不對稱側睡（習慣固定一側）可能累積骨盆歪斜問題。此外，有大轉子疼痛症候群（GTPS，俗稱「髖部滑囊炎」）的患者，側睡時直接壓迫患側也可能加重症狀。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">4. 下背痛患者需配合床墊軟硬度</strong><br>
+    慢性下背痛患者中，有 87% 選擇側睡，顯示這個姿勢對多數腰痛患者來說仍是舒適的選擇。但研究同時顯示，側睡若缺乏適當的床墊支撐（過硬或過軟），反而可能惡化腰部症狀。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11153877/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+  </p>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在門診中，許多側睡患者因「肩膀長期痠痛」就診，卻完全沒有意識到是睡姿造成的。他們往往固定壓同一側肩膀睡，數年後肩膀旋轉肌群已在超音波或 MRI 下出現早期撕裂，卻因為疼痛不嚴重而延誤就醫。側睡造成的肩部傷害有一個特點：疼痛通常在起床後最明顯，白天活動後反而緩解，這與運動傷害的疼痛模式剛好相反，因此常被忽略。
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、各部位的詳細影響比較
+  </h2>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">脊椎（頸椎、胸椎、腰椎）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    脊椎健康是睡姿討論中最核心的議題。整體而言，兩種睡姿對脊椎各有所長：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">正睡：</strong>脊椎整體對位最佳，腰椎承受的壓力均勻分布，是腰椎椎間盤疾病、腰椎手術後復原的首選姿勢。膝下墊枕可進一步維持腰椎自然前凸。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">側睡：</strong>腰椎的自然前凸在側睡時大致能維持，但需要床墊的適度支撐（中等硬度最佳）。頸椎對位則完全依賴枕頭高度是否適合個人肩寬。若枕頭高度不對，頸椎側彎的壓力在一夜之中可相當可觀。</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    一項重要的系統性回顧研究彙整了多項研究後指出，對於頸椎疼痛患者，側睡有緩解症狀的效果；但對於腰椎疼痛，仰躺反而與較低的下背痛盛行率有關聯。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6609073/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/40338112/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+    這意味著：<strong style="color: #ffffff;">脖子不舒服的人，側睡可能更好；腰不舒服的人，正睡可能更好。</strong>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">肩關節與旋轉肌群</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    肩關節是睡姿對骨科影響最顯著的部位之一，差異明顯。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    正睡時，雙側肩膀都不受壓，肩峰下空間保持最大，旋轉肌群（棘上肌、棘下肌、肩胛下肌、小圓肌）得以完全休息，是肩膀最友善的姿勢。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    側睡時，下方肩膀長期承受身體重量，造成肩峰下壓力升高，影響局部血液循環，可能導致旋轉肌群肌腱灌流不足，加速退化。研究顯示，旋轉肌群撕裂患者中有 83.9%–89.7% 是習慣側睡者。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10847686/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    若需側睡，應定期換側，並注意不要將手臂伸到頭部上方——那個姿勢對旋轉肌群的壓力是最大的。
+    <sup><a href="https://www.sciencedirect.com/....../pii/S0306987709007701" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">骨盆與髖關節</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    正睡對骨盆最友善，兩側髂骨受力對稱，骨盆在冠狀面（左右方向）不會產生歪斜力矩。側睡時，上側腿的重量若無支撐（如雙腿間未夾枕頭），會使骨盆向前旋轉，並拉扯梨狀肌、臀中肌及腰方肌，累積性地造成骨盆不對稱。長期固定一側的側睡（例如總是睡右側），可能是造成骨盆不對稱的因素之一，但需注意這方面直接相關的臨床研究尚有限。
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">呼吸道與睡眠品質</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    側睡在呼吸道維持方面遠優於正睡。超過半數的 OSA 患者屬於「體位依賴型」，在仰睡時 AHI 是側睡的兩倍以上。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/23669094/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    即便是沒有確診 OSA 的人，正睡時也更容易打鼾，因為舌根更容易受重力影響後墜，縮減呼吸道有效截面積。對於心臟衰竭患者，側睡還能減少中樞型睡眠呼吸中止症的發生，改善整體睡眠品質。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3817704/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">消化道與胃食道逆流</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    消化道方面，左側睡明顯優於其他所有姿勢。原因在於人體解剖結構——胃是一個偏左的器官，左側睡使胃部低於食道，物理上阻止胃酸逆流至食道。右側睡反而最差，因為在右側臥時胃的位置高於食道，最容易發生逆流。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/37969463/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>
+    一項隨機對照試驗甚至顯示，使用睡眠體位訓練裝置使患者增加左側臥的時間後，夜間逆流症狀改善率達 44%，顯著優於假治療組的 24%。
+    <sup><a href="https://www.cghjournal.org/....../S1542-3565....../fulltext" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>
+  </p>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、正睡 vs. 側睡 全面比較表
+  </h2>
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>比較項目</th>
+          <th>正睡（仰睡）</th>
+          <th>左側睡</th>
+          <th>右側睡</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>脊椎對位</td>
+          <td>⭐⭐⭐ 最佳（全脊椎均勻支撐）</td>
+          <td>⭐⭐ 良好（需適當枕頭）</td>
+          <td>⭐⭐ 良好（需適當枕頭）</td>
+        </tr>
+        <tr>
+          <td>肩膀壓力</td>
+          <td>⭐⭐⭐ 最低（無壓迫）</td>
+          <td>⭐ 左肩承壓</td>
+          <td>⭐ 右肩承壓</td>
+        </tr>
+        <tr>
+          <td>骨盆對稱性</td>
+          <td>⭐⭐⭐ 最佳（兩側對稱）</td>
+          <td>⭐⭐ 需膝間夾枕</td>
+          <td>⭐⭐ 需膝間夾枕</td>
+        </tr>
+        <tr>
+          <td>呼吸道/打鼾</td>
+          <td>❌ 最差（舌根後墜）</td>
+          <td>⭐⭐⭐ 最佳</td>
+          <td>⭐⭐⭐ 佳</td>
+        </tr>
+        <tr>
+          <td>胃食道逆流</td>
+          <td>⭐ 中等（次於左側睡）</td>
+          <td>⭐⭐⭐ 最佳（胃位較低）</td>
+          <td>❌ 最差（胃位較高）</td>
+        </tr>
+        <tr>
+          <td>腦部廢物代謝</td>
+          <td>⭐⭐ 中等</td>
+          <td>⭐⭐⭐ 佳（腦淋巴活性較高）</td>
+          <td>⭐⭐⭐ 佳（腦淋巴活性較高）</td>
+        </tr>
+        <tr>
+          <td>頸椎疼痛緩解</td>
+          <td>⭐⭐ 普通</td>
+          <td>⭐⭐⭐ 佳（研究支持）</td>
+          <td>⭐⭐⭐ 佳（研究支持）</td>
+        </tr>
+        <tr>
+          <td>腰椎疼痛緩解</td>
+          <td>⭐⭐⭐ 佳（研究支持）</td>
+          <td>⭐⭐ 普通（視床墊而定）</td>
+          <td>⭐⭐ 普通（視床墊而定）</td>
+        </tr>
+        <tr>
+          <td>孕婦建議</td>
+          <td>❌ 不建議（後期）</td>
+          <td>⭐⭐⭐ 最佳（醫師首選）</td>
+          <td>⭐⭐ 次之</td>
+        </tr>
+        <tr>
+          <td>臉部皺紋</td>
+<td>⭐⭐⭐ 最佳（無接觸）</td>
+          <td>⭐ 左臉接觸枕頭</td>
+          <td>⭐ 右臉接觸枕頭</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+📢 六、常見三大迷思解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「側睡一定比正睡更健康」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 側睡對呼吸道和消化道確實有優勢，但對於有肩關節疾病、腰椎問題或習慣固定一側的人，可能反而帶來麻煩。最健康的做法是<strong>兩種姿勢交替</strong>，而非固執於單一睡姿。睡眠中自然翻身（成人平均每小時 1.6 次翻身）本身就是身體的保護機制。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5677378/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup></span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「只要睡得著，睡姿不重要」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 一個人每天睡 7–8 小時，一年有超過 2500 小時持續承受特定的姿勢壓力。即便每小時的壓力微小，累積數年後對肩膀旋轉肌群、頸椎椎間盤、骨盆對稱性的影響也是非常顯著的。旋轉肌群撕裂和頸椎退化的患者中，長期固定側睡是一個被許多研究記錄的風險因素。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10847686/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[6]</a></sup></span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「換個枕頭就能解決所有側睡問題」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>部分正確，但不夠！</strong> 適合側睡的枕頭確實能改善頸椎對位，但無法解決肩膀的承壓問題，也無法完全消除骨盆旋轉的力矩。對於已有肩膀或骨盆問題的患者，光換枕頭是不夠的，還需要搭配床墊選擇、膝間枕頭、日間肌力訓練，以及專業的姿勢評估。</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、哪種睡姿比較健康？個人化建議指南
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    沒有一種睡姿對所有人都最好。根據你的健康狀況，以下是個人化建議：
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">有打鼾或睡眠呼吸中止症</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">首選側睡，避免仰睡</li>
+    <li style="margin-bottom: 0.5rem;">若側睡不習慣，可在背部放一顆枕頭或穿背部有口袋的衣服（塞一顆網球），防止翻回仰睡姿勢</li>
+    <li style="margin-bottom: 0.5rem;">症狀嚴重者應就醫評估，必要時使用 CPAP 持續正壓呼吸器</li>
+  </ul>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">有胃食道逆流或胃灼熱</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">強烈建議左側睡，研究顯示能顯著減少夜間酸暴露時間</li>
+    <li style="margin-bottom: 0.5rem;">避免右側睡（最差）及仰睡（中等差）</li>
+    <li style="margin-bottom: 0.5rem;">床頭抬高 15–20 公分也有輔助效果</li>
+  </ul>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">有肩膀疼痛或旋轉肌群問題</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">優先考慮正睡（仰睡），讓雙肩都不受壓</li>
+    <li style="margin-bottom: 0.5rem;">若需側睡，絕不壓患側，改壓健側，並在胸前抱一個枕頭防止患側肩膀下垂</li>
+    <li style="margin-bottom: 0.5rem;">避免將手臂伸到頭部上方睡覺</li>
+  </ul>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">有下背痛或腰椎問題</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">正睡時，膝下墊一個薄枕（約 10–15 公分），幫助腰椎維持自然曲線</li>
+    <li style="margin-bottom: 0.5rem;">側睡時，雙膝間夾一個枕頭，防止骨盆旋轉造成腰部扭力</li>
+    <li style="margin-bottom: 0.5rem;">選擇中等硬度的床墊（非過硬、非過軟）</li>
+  </ul>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">一般健康成年人</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">不必執著於固定一種睡姿，允許自然翻身</li>
+    <li style="margin-bottom: 0.5rem;">若習慣側睡，定期交替左右側，減少單側肩膀的累積壓力</li>
+    <li style="margin-bottom: 0.5rem;">避免趴睡（俯臥），這是對頸椎和腰椎壓力最大、對身體危害最多的姿勢</li>
+  </ul>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：每天都換側睡，這樣骨盆會不會越來越歪？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不會。骨盆歪斜的風險來自於長期「固定同一側」的側睡，而非定期換側。人體在睡眠中平均每小時有 1.6 次自然翻身，這正是身體自我保護的機制。若你總是壓同一側，才需要特意調整。
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：左側睡對心臟有影響嗎？有些人說左側睡會壓到心臟。
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      對於心臟健康的人，左側睡並不會造成問題。心臟雖位於胸腔偏左，但有充足的空間不會因為體重壓迫而受影響。事實上，對於心臟衰竭患者，左側睡有助於減少中樞型睡眠呼吸中止症的發生。少數人對心跳感覺更敏感，可能會主觀感覺「心臟跳動更明顯」，但這不代表心臟受到傷害。若有明確的心臟疾病，建議諮詢心臟科醫師。
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：晨起肩膀或脖子很痠，一定是睡姿的問題嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不一定，但睡姿是非常重要的排查方向之一。晨起肌肉骨骼疼痛的原因還包括：枕頭高度不對、床墊過硬或過軟、睡前活動與姿勢不良、以及潛在的頸椎或肩關節病變。建議先從枕頭更換或添加膝間枕頭開始嘗試，若兩週後改善不明顯，應尋求專業評估。
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：趴睡（俯臥）有多危險？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      趴睡在主要睡姿中危害最大，因為頸椎必須持續旋轉 90 度以維持呼吸，這對頸椎椎間盤及頸部肌群造成相當大的持續壓力。同時，腰椎在俯臥時呈過度前凸（過度彎曲），增加椎間關節壓力。雖然約有 7–12% 的人趴睡，醫學上幾乎一致不建議此姿勢，尤其是對有頸椎、腰椎問題的人。
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：枕頭怎麼選最適合自己的睡姿？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      選枕頭最重要的指標是「肩寬」，而非個人喜好。側睡者需要高度等於肩部到耳朵距離的枕頭，才能讓頸椎保持水平中立；正睡者需要較低且能支撐頸椎自然前凸的枕頭（或使用頸椎型枕頭）。一個簡單的自我測試：側躺後請家人從正面看，若耳朵、肩膀、髖部成一直線，枕頭高度就是對的。
+    </p>
+  </div>
+</section>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    正睡與側睡各有其醫學優勢，也各有其適用情境。如果你沒有特殊健康問題，最聰明的策略是允許自己在夜間自然翻身，偶爾有意識地調整姿勢，並確保床具（床墊與枕頭）的設計能配合你的主要睡姿提供良好支撐。
+  </p>
+  <p style="color: #475569; font-size: 1.05rem;">
+    有一件事是可以確定的：<strong style="color: #1e293b;">趴睡是最不建議的姿勢</strong>，而固定壓同一側肩膀的側睡，是肩關節退化的重要風險因素，值得特別留意。如果你長期有晨起疼痛、打鼾、或胃食道逆流等問題，睡姿的調整可能就是你需要的第一步，也是最低成本、最無副作用的介入方式。
+  </p>
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的比較表，根據自己的健康狀況找到最適合你的睡姿建議，並在接下來兩週內有意識地嘗試調整，觀察症狀是否改善。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%; margin-top: 1rem;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診評估睡姿與脊椎健康
+    </a>
+  </div>
+</div>
+`,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Crespo, A., Frisk, M., Bjørngaard, J.H., et al. (2017). Sleep positions and nocturnal body movements based on free-living accelerometer recordings: Association with demographics, lifestyle, and insomnia symptoms. <em>Nature and Science of Sleep</em>, 9, 395–404. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5677378/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 5677378</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Joosten, S.A., & Hamilton, G.S. (2011). Supine position related obstructive sleep apnea in adults: Pathogenesis and treatment. <em>Respirology</em>, 16(5), 1349–1359. <a href="https://pubmed.ncbi.nlm.nih.gov/23669094/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 23669094</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kinoshita, Y., Tominaga, K., Nakaya, N., et al. (2023). Left lateral decubitus sleeping position is associated with improved gastroesophageal reflux disease symptoms: A systematic review and meta-analysis. <em>World Journal of Gastroenterology</em>, 29(41), 5627–5637. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10643078/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10643078</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        SSRS. (2024). How the American Public Sleeps. SSRS Opinion Panel Survey, n=3,364. <a href="https://ssrs.com/insights/how-the-american-public-sleeps/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Nasir, R.H., Chaudhry, A., Perveen, S., et al. (2025). Relationship Between Sleep Posture and Low Back Pain: A Systematic Review. <em>PubMed</em>. <a href="https://pubmed.ncbi.nlm.nih.gov/40338112/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 40338112</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Richards, J., et al. (2024). Rotator Cuff Tears Are Related to the Side Sleeping Position. <em>Arthroscopy, Sports Medicine, and Rehabilitation</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10847686/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10847686</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Menon, A., et al. (2013). Influence of Body Position on Severity of Obstructive Sleep Apnea: A Systematic Review. <em>ISRN Otolaryngology</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3817704/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 3817704</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Khoury, R.M., Camacho-Lobato, L., Katz, P.O., et al. (1999). Influence of spontaneous sleep positions on nighttime recumbent reflux in patients with gastroesophageal reflux disease. <em>American Journal of Gastroenterology</em>, 94(😎, 2069–2073. <a href="https://pubmed.ncbi.nlm.nih.gov/10445529/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 10445529</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Wikipedia contributors. (2025). Sleep position. In <em>Wikipedia</em>. [Glymphatic system and sleep position section]. <a href="https://en.wikipedia.org/wiki/Sleep_position" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Cary, D., Colloca, L., & Briffa, N.K. (2019). Identifying relationships between sleep posture and non-specific spinal symptoms in adults: A scoping review. <em>BMJ Open</em>, 9(6), e027633. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6609073/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 6609073</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Nørregaard-Nielsen, K., et al. (2009). Sleep position and shoulder pain. <em>Medical Hypotheses</em>, 74(4), 639–642. <a href="https://www.sciencedirect.com/....../pii/S0306987709007701" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">ScienceDirect</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Paananen, M., Auvinen, J., Taimela, S., et al. (2024). Preferences and Avoidance of Sleeping Positions Among Patients With Chronic Low Back Pain: A Cross-Sectional Study. <em>Cureus</em>, 16(5). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11153877/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11153877</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kubo, A., Saito, S., Tagami, H., et al. (2022). Associations Between Sleep Position and Nocturnal Gastroesophageal Reflux: A Study Using Concurrent Monitoring of Sleep Position and Esophageal pH and Impedance. <em>American Journal of Gastroenterology</em>, 117(2), 345–352. <a href="https://pubmed.ncbi.nlm.nih.gov/34928874/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 34928874</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Smeets, F.G.M., et al. (2022). Sleep Positional Therapy for Nocturnal Gastroesophageal Reflux: A Double-Blind, Randomized, Sham-Controlled Trial. <em>Clinical Gastroenterology and Hepatology</em>, 20(11), 2501–2508. <a href="https://www.cghjournal.org/....../S1542-3565....../fulltext" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">CGH Journal</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+
+{
+  id: 'cycling-injury-analysis',
+  title: '腳踏車全解析：公路車、城市車、摺疊車，有哪些傷害風險？',
+  lastModified: '2026-04-24',
+  category: '衛教文章',
+  date: '2026-04-24',
+  summary: '從醫學與生物力學角度深度剖析公路車、城市車（通勤車）與摺疊車的姿勢差異與運動傷害風險。實證研究揭露各車型最容易導致的膝關節疼痛、下背痛、頸肩傷害與會陰神經壓迫，並提供科學預防策略。',
+  coverImage: '/images/news/article/cycling-injury-analysis.webp',
+  seoTitle: '腳踏車選擇全解析：公路車、城市車、摺疊車，醫學觀點告訴你各有哪些傷害風險？',
+  seoDescription: '從醫學與生物力學角度深度剖析公路車、城市車與摺疊車的姿勢差異與運動傷害風險。實證研究揭露各車型最容易導致的膝關節疼痛、下背痛、頸肩傷害與會陰神經壓迫，並提供科學預防策略。',
+  keywords: [
+    '腳踏車運動傷害',
+    '公路車傷害',
+    '城市車傷害',
+    '摺疊車傷害',
+    '膝關節疼痛',
+    '下背痛騎車',
+    '頸椎傷害',
+    '會陰神經壓迫',
+    '腳踏車膝蓋痛',
+    '腳踏車姿勢'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    腳踏車是對下肢關節需求極高、同時對脊椎與會陰有慢性壓力的運動。不同車型——公路車、城市車（通勤車）、摺疊車——因為車架幾何設計的根本差異，造成騎乘者的軀幹前傾角度、把手高度與坐姿大相逕庭，進而引發不同部位的傷害。<br><br>
+    研究指出，超過 85% 的休閒騎士在騎車生涯中曾有過度使用傷害的經驗，其中膝關節疼痛發生率高達 40–62%，下背痛則超過 50%。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5315261/" target="_blank" rel="noopener noreferrer" style="color: #0369a1;">[1]</a></sup><br><br>
+    公路車前傾姿勢使頸椎與腰椎負荷倍增；城市車直立騎姿雖然脊椎友善，卻增加了會陰部對坐墊的壓力；摺疊車因小輪徑與特殊車架幾何，有其獨特的膝關節動力學問題。本文以實證為基礎，系統性剖析各車型的受傷風險，並提供預防策略。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5717478/" target="_blank" rel="noopener noreferrer" style="color: #0369a1;">[2]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8162534/" target="_blank" rel="noopener noreferrer" style="color: #0369a1;">[3]</a></sup>
+  </p>
+</div>
+
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、為什麼選擇哪種腳踏車，決定了你的受傷風險？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    很多人選購腳踏車時，主要考量的是外觀、價格或速度，卻忽略了一個根本問題：<strong style="color: #2dd4bf;">車架幾何設計，正在悄悄決定你的受傷風險。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    腳踏車有三個接觸點：坐墊（承受體重）、踏板（傳遞踩踏力）、把手（支撐上半身）。不同車型的設計，讓這三個接觸點之間的相對位置產生根本差異，進而牽動整個動力鏈——從腳踝、膝關節、髖關節、脊椎，到頸椎與肩膀——在每次踩踏循環中的受力模式。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    根據發表於 Sports Medicine 的系統性回顧，把手高度與位置是影響脊椎姿勢的最關鍵變數：把手越低、越遠，腰椎屈曲角度越大、骨盆後傾越明顯；把手越高、越近，脊椎越接近直立中立姿勢。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/35440291/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[4]</a></sup>
+    這些結構性差異，直接決定了哪個部位最容易承受過大的負荷，也造就了截然不同的受傷風險地圖。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、三種車型的姿勢差異與生物力學分析
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">公路車（Road Bike）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    公路車的特徵是下彎把手與激進的車架幾何，讓騎士以大幅度前傾的姿勢騎乘，軀幹與水平面夾角通常在 30–45 度之間，目的是降低風阻、提升速度效率。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    從傷害角度來看，公路車的前傾姿勢是一把雙面刃。發表於 Sports（Basel）的研究指出，在職業公路賽選手中，<strong style="color: #ffffff;">上肢傷害（包括頸部、肩部與腕部）是最常見的過度使用傷害類別，占所有傷害的 48% 以上</strong>。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12278157/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
+    頸部必須長時間維持後仰以保持視線，這對頸椎後方肌群造成靜態超負荷；腰椎被迫長期處於屈曲（彎曲）姿勢，研究顯示這與腰椎椎間盤壓力上升直接相關。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10675153/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    此外，公路車使用窄而硬的坐墊，坐骨結節承受較集中的壓力，同時前傾姿勢使會陰部與坐墊鼻端（saddle nose）接觸面積更大，這正是男性騎士陰莖麻木與勃起功能障礙問題的主要來源。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6085221/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[7]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見傷害：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">頸椎後伸肌群疲勞性疼痛（Cyclist's Neck）</li>
+    <li style="margin-bottom: 0.5rem;">腰椎慢性下背痛（屈曲型 LBP）</li>
+    <li style="margin-bottom: 0.5rem;">陰部神經壓迫（會陰部麻木、勃起功能障礙）</li>
+    <li style="margin-bottom: 0.5rem;">手腕伸腕肌群肌腱病變（因長時間支撐體重）</li>
+    <li style="margin-bottom: 0.5rem;">髂脛束症候群（外側膝蓋疼痛）</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">城市車 / 通勤車（City / Commuter Bike）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    城市車採用平把或上揚把手，幾何設計讓騎士保持接近直立的騎姿，軀幹與水平面夾角通常大於 70 度。這種姿勢源自荷蘭式通勤自行車傳統，強調舒適性與視野，適合城市日常通勤。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    城市車的直立姿勢大幅減少了頸椎的後仰壓力，對脊椎較為友善。然而，直立騎姿意味著<strong style="color: #ffffff;">更多體重垂直落在坐墊上</strong>，研究估計上半身重量的 70–80% 直接壓在坐骨結節與會陰部。相較之下，公路車的前傾姿勢雖然增加手臂的重量分擔，卻讓更多體重移向前方、壓迫坐墊鼻端與會陰。兩種姿勢各有不同的會陰壓力分布，需依個人解剖結構選擇合適坐墊。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7846539/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[8]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    城市車的另一個特點是較重的車身與較低的騎乘效率，騎士需要花更大力氣才能維持速度，可能導致踩踏力矩增加，進而加重膝關節——尤其是髕骨股骨關節——的負荷。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5973630/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[9]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見傷害：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">坐骨結節區域壓迫性疼痛（坐墊痛）</li>
+    <li style="margin-bottom: 0.5rem;">髕骨股骨疼痛症候群</li>
+    <li style="margin-bottom: 0.5rem;">坐墊痠痛（尤其通勤初學者）</li>
+    <li style="margin-bottom: 0.5rem;">髖屈肌緊繃（長時間屈髖踩踏）</li>
+  </ul>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在復健門診中，常見城市車通勤族在開始騎車後的 2–4 週出現坐骨結節疼痛，往往誤以為是坐墊太硬的問題而購買厚重坐墊套。然而研究指出，過厚的坐墊套反而會讓坐骨結節「陷入」海綿，增加股內側（大腿根部內側）的摩擦力，導致大腿內側皮膚摩擦傷與坐墊瘡。正確的解法是根據個人坐骨寬度選擇合適寬度的坐墊，而不是一味增厚。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">摺疊車（Folding Bike）</h3>
+  
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    摺疊車最顯著的特徵是小輪徑（通常 16–20 吋，相較公路車標準 700c 約 28 吋），以及為了收納而特殊設計的折疊式車架。由於輪徑較小，每轉一圈前進的距離較短，踩踏頻率需要更高。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    從生物力學角度分析，小輪徑的摺疊車有幾個獨特問題。第一，<strong style="color: #ffffff;">小輪子對路面凹凸的緩衝能力較差</strong>，震動更容易直接傳導至車架、坐墊與把手，對脊椎與腕關節造成更多衝擊式負荷。第二，車架的折疊結構通常使立管較短，與輪徑相比，騎士的座高相對更高，若缺乏適當調整，容易出現<strong style="color: #ffffff;">骨盆左右搖擺的代償動作</strong>，這種動作是下背痛的已知風險因素之一。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5315261/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[1]</a></sup>
+    第三，摺疊車使用者多為城市通勤族群，往往沒有穿著專業騎車褲，坐墊緩衝不足，會陰部的微創傷風險相應提升。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10299674/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[10]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見傷害：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">腕關節震動性創傷（手腕痠麻）</li>
+    <li style="margin-bottom: 0.5rem;">下背痛（骨盆代償性搖擺）</li>
+    <li style="margin-bottom: 0.5rem;">膝蓋前側疼痛（高踩踏頻率下的髕骨肌腱負荷）</li>
+    <li style="margin-bottom: 0.5rem;">會陰部慢性微創傷（缺乏騎車專業裝備）</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、三種車型傷害比較表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 120px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>車型</th>
+          <th>騎姿特徵</th>
+          <th>主要受力部位</th>
+          <th>最常見傷害</th>
+          <th>相對風險評估</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>公路車</td>
+          <td>大幅前傾（30–45°）</td>
+          <td>頸椎、腰椎、會陰部</td>
+          <td>頸痛、下背痛、陰部神經壓迫、手腕肌腱病變</td>
+          <td>脊椎高風險；膝蓋中等</td>
+        </tr>
+        <tr>
+          <td>城市車</td>
+          <td>直立（70–90°）</td>
+          <td>坐骨結節、膝關節</td>
+          <td>坐骨壓迫痛、髕骨股骨疼痛、髖屈肌緊繃</td>
+          <td>膝蓋中高風險；脊椎低風險</td>
+        </tr>
+        <tr>
+          <td>摺疊車</td>
+          <td>中等前傾（依設計）</td>
+          <td>腕關節、膝蓋、下背、會陰</td>
+          <td>手腕震動傷、下背痛（骨盆代償）、膝前側痛</td>
+          <td>多部位中度風險；震動傷高</td>
+        </tr>
+        <tr>
+          <td>公路車（競速）</td>
+          <td>極度前傾（氣動位）</td>
+          <td>頸椎、腰椎、會陰</td>
+          <td>頸椎神經壓迫、慢性下背痛、勃起功能障礙</td>
+          <td>脊椎與會陰均高風險</td>
+        </tr>
+        <tr>
+          <td>三鐵車（TT）</td>
+          <td>極度前傾（氣動臂）</td>
+          <td>頸椎、肩關節、腰椎</td>
+          <td>頸椎神經根壓迫、肩袖傷害</td>
+          <td>脊椎最高風險車型</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、各部位常見騎車傷害詳解
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">膝關節：腳踏車傷害的重災區</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    膝關節是腳踏車運動中最常被影響的部位。文獻報告顯示，業餘騎士的膝關節疼痛發生率為 27–62%，職業騎士也高達 36–62%。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5717478/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
+    膝關節傷害的位置，往往可以反映騎車設定的問題：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">前側膝蓋痛（髕骨股骨疼痛）：</strong>坐墊過低時，踩踏的最低點膝蓋屈曲角度過大，大幅提升髕骨與股骨之間的關節面壓力。研究確認，坐墊高度不足是前側膝蓋痛最常見的修正因子。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5973630/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[9]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">外側膝蓋痛（髂脛束症候群）：</strong>坐墊過高、踏板寬度（Q-factor）過寬，或踩踏時膝蓋向外偏移，是外側膝蓋痛的主要原因。此類傷害在公路車騎士中尤為常見。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5973630/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[9]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">後側膝蓋痛（腿後肌腱起始點疼痛）：</strong>坐墊過高時，踩踏底部需要骨盆側傾來補償，造成腿後肌群在骨盆附著點附近的離心性超負荷。
+    </li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    2021 年針對 53 名高水準騎士的研究發現，與普遍認知相反，<strong style="color: #ffffff;">髕骨前摩擦症候群才是最常見的膝關節過度使用傷害（占 46%）</strong>，而非傳統認為的髕骨軟骨磨損；其次才是內側皺壁症候群（15%）與髕骨肌腱病變（9.4%）。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/33418617/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[11]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">下背部：超過半數騎士的隱形困擾</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    下背痛是騎士最常見的功能障礙主訴，文獻一致報告盛行率超過 50%，在長距離騎士中甚至更高。每週騎乘 160 公里以上的騎士，發生下背痛的機率是一般騎士的 3.6 倍。
+    <sup><a href="https://www.physio-pedia.com/Cyclist's_Back" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[12]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    從生物力學分析，騎車時腰椎從直立時的前凸轉變為後凸，椎間盤前方受到壓縮、後方受到牽張。一項 3D 脊椎掃描研究確認，騎士族群相較於非騎士運動員，腰椎前凸角度顯著下降，脊椎傾斜角度更大，這與下背痛的發生密切相關。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10675153/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[6]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      研究人員 Streisfeld 發現，腳踏車騎士下背痛的根本成因，往往不是「騎車本身」，而是<strong>脊椎核心肌群的活化失衡</strong>——長時間在相對靜態的屈曲姿勢下維持穩定，核心肌群（尤其是多裂肌與腹橫肌）逐漸疲勞，脊椎的動態穩定性下降，椎間盤與小面關節的負荷因此上升。這解釋了為什麼下背痛症狀往往在騎行後期才出現，而不是一開始就發作。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">頸部與肩部：公路車騎士的特有困擾</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究顯示，騎士的頸部與背部疼痛發生率高達 60%，在 1996 年一項英國菁英騎士的報告中，30% 受訪者有上背部或頸部疼痛。
+    <sup><a href="https://www.physio-pedia.com/Cyclist's_Neck" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[13]</a></sup>
+    公路車的前傾姿勢要求頸部持續後伸，頭部重量（約 5 公斤）必須由頸部後方肌群抵抗重力支撐，這種靜態收縮造成頸後肌群的疲勞性傷害，並可能引發頸源性頭痛。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    肩關節方面，長時間以屈肘支撐體重，可能導致胸大肌緊縮、肩胛骨穩定肌弱化，進一步引發肩袖（旋轉肌群）的代償性過度使用。在三鐵車（使用氣動臂）騎士中，肩部傷害尤為常見。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">會陰部：最常被忽視的騎車傷害</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是所有騎車傷害中最少被主動揭露、也最容易延誤就醫的問題。研究統計，長距離騎車中，<strong style="color: #ffffff;">50–91% 的騎士曾有會陰部麻木的經驗，男性騎士則有 13–24% 的人在長距離騎乘後出現勃起功能障礙（ED）</strong>。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6085221/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[7]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    機制是坐墊對會陰部的持續壓迫，導致陰部神經和陰莖背動脈的血流受阻與神經微創傷。2021 年的系統性回顧確認，陰部神經病變在騎士中確實存在，且可以通過正確的車適設定、坐墊設計與騎姿調整來有效預防。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8162534/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[3]</a></sup>
+  </p>
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 典型案例：</strong><br><br>門診中曾接治一位每週騎公路車 200 公里以上的業餘騎士，主訴長達三個月的陰莖麻木與騎車後的勃起困難，初時不知如何啟口，輾轉看過泌尿科才被轉介至運動醫學門診。詳細評估後確認為坐墊鼻端壓力過高引發的陰部神經壓迫。調整坐墊型號（改用中央開口設計）、坐墊高度與騎姿後，症狀在六週內大幅改善。這個案例說明，會陰部問題不只是「骨盆腔或泌尿道疾病」，也可能是純粹的騎車設定問題。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 五、常見三大誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「城市車最安全，公路車最危險」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 城市車的直立騎姿雖然對頸椎友善，但同樣對膝關節和坐骨結節施加不同的壓力。任何車型如果缺乏適當的車適設定，都會造成傷害。公路車的前傾姿勢確實對脊椎負荷更重，但對於受過訓練、具備良好核心肌力的騎士，這些風險都是可控的。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/30556469/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[14]</a></sup> 問題不在車型本身，而在於個人解剖結構、肌力基礎與車適設定的匹配程度。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「買了有中央開口的坐墊就不會有會陰問題」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不完全正確！</strong> 研究顯示，中央開口坐墊確實能降低前會陰壓力，但同時可能增加後會陰壓力，且對於解剖結構特殊（如陰部神經分布較淺）的騎士，開口邊緣反而會造成新的壓迫點。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7846539/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[8]</a></sup> 坐墊選擇必須配合個人坐骨寬度測量與實際騎乘測試，沒有放諸四海皆準的「最安全坐墊」。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「腳踏車是低衝擊運動，受傷了繼續騎沒關係」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>非常危險！</strong> 腳踏車雖是低衝擊運動，但其本質是高重複性運動。一小時騎乘涉及約 5,000 次踩踏循環，輕微的姿勢或設定問題在短時間內即可累積成嚴重的過度使用傷害。髕骨肌腱病變、髂脛束症候群與陰部神經病變若在早期忽視，往往需要數月的保守治療才能恢復，嚴重者甚至需要手術。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8162534/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[3]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、如何根據自己的身體狀況選擇車型？
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">你是否有頸部或上背部問題？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">若你曾有頸椎神經壓迫、頸部慢性疼痛或肩頸肌群張力過高，建議：</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">優先選擇城市車或較直立的登山車，避免下彎把的公路車</li>
+    <li style="margin-bottom: 0.5rem;">若堅持公路車，可使用副把增加握把位置選擇，減少長時間固定頸椎姿勢</li>
+    <li style="margin-bottom: 0.5rem;">強化頸部深層屈肌的訓練，以分擔頸後伸肌群的靜態負荷</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">你是否有膝關節問題？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">若你有髕骨股骨疼痛或前十字韌帶損傷史，建議：</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">確保坐墊高度正確（踩踏最低點膝蓋屈曲約 25–30 度），避免過低</li>
+    <li style="margin-bottom: 0.5rem;">以較輕的踩踏力矩搭配較高的踩踏頻率（cadence 80–100 RPM），減少膝關節的峰值負荷</li>
+    <li style="margin-bottom: 0.5rem;">注意踏板的鞋踏板角度，避免膝蓋向內或向外偏移</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">你是否有會陰部不適的困擾？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">若你騎車後有麻木、刺痛或性功能問題，建議：</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">量測坐骨寬度，選擇寬度相符的坐墊（通常坐墊寬度需比坐骨寬度寬 10–20mm）</li>
+    <li style="margin-bottom: 0.5rem;">考慮中央開口或壓力分散設計的坐墊，但需實際試乘確認</li>
+    <li style="margin-bottom: 0.5rem;">穿著有坐墊的騎車褲，減少皮膚摩擦與震動衝擊</li>
+    <li style="margin-bottom: 0.5rem;">每騎 45–60 分鐘站立踩踏 1–2 分鐘，讓會陰部血流恢復</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、預防策略：從車適設定到訓練
+  </h2>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">專業車適評估）：</strong>這是預防騎車傷害最重要的單一介入。有研究顯示，接受車適評估的騎士，自述的疼痛與不適顯著下降。車適評估涵蓋坐墊高度、前後位置、把手高度與距離，以及踏板位置。
+      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/30556469/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[14]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">漸進式訓練量：</strong>每週騎乘距離增加不超過 10%，讓肌腱、韌帶與關節軟骨有足夠時間適應。突然增加騎乘量是觸發過度使用傷害的最常見原因。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">核心肌群強化訓練：</strong>騎士的弱點通常是腿部肌力超前、核心肌群不足。針對多裂肌、腹橫肌與臀肌的強化訓練，可有效降低下背痛與骨盆不穩定的風險。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9738255/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[15]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">騎乘中休息站立：</strong>每 45–60 分鐘的騎乘，安排 1–2 分鐘站立踩踏，讓椎間盤減壓、會陰部血流恢復，同時讓髖屈肌做短暫伸展。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">裝備選擇：</strong>騎車褲的坐墊品質直接影響會陰舒適度；鞋款的硬底設計有助於踩踏力的有效傳導，減少足底筋膜的過度負荷；對於摺疊車騎士，裝設吸震坐管或把手套可有效降低震動傳導至脊椎與腕關節。
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🚴</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：腳踏車對膝蓋是好還是壞？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      腳踏車因為是非承重的有氧運動，對膝關節軟骨的直接衝擊遠低於跑步，常被物理治療師推薦給退化性膝關節炎患者。然而，「低衝擊」不等於「零傷害」——不當的車適設定或過度使用，同樣可能造成膝關節過度使用傷害。正確設定下適量騎乘，腳踏車對膝蓋通常是有益的。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5717478/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：摺疊車適合長距離通勤嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      摺疊車以便攜性換取了部分騎乘效率與舒適性。小輪徑增加了路面震動傳導，長距離騎乘（超過 30 分鐘）時，對脊椎、腕關節與會陰的累積負荷不容小覷。若以摺疊車進行每日長距離通勤，建議選購輪徑較大的 20 吋車款（優於 16 吋）、裝配吸震坐管，並穿著有坐墊的騎車褲。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：騎車後下背痛，是坐墊的問題還是姿勢的問題？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      兩者都可能是原因，且常同時存在。坐墊高度不對（過低或過高）、把手位置過遠、以及核心肌群不足，是造成騎車下背痛最常見的三個原因。建議先進行基本的車適評估，確認坐墊高度與把手距離是否合適；同時加入核心肌群訓練；若調整後症狀仍未改善，應尋求運動醫學或物理治療師的評估。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5315261/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[1]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：騎車造成的會陰麻木，需要看哪科醫師？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      建議首先尋求運動醫學科的評估，因為問題的根源往往是騎車設定問題，而非泌尿系統或神經科問題。運動醫學醫師可以評估坐墊設定、騎姿與傷害成因，同時協調泌尿科（男性性功能評估）或神經科（陰部神經電生理評估）的共同診療。若症狀持續超過 4 週或出現明顯性功能影響，則需積極就醫。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8162534/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[3]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：公路車一定要請人做 Bike Fitting 嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      對於每週騎乘超過 3 小時、或已有任何騎車相關不適的騎士，強烈建議進行專業車適評估。研究顯示，車適評估可顯著降低騎士的疼痛與不適，且效果優於僅靠自行調整。對於輕度休閒騎士，至少應確認坐墊高度的基本設定（踩踏最低點膝蓋屈曲約 25–30 度），這一項調整即可大幅降低膝關節傷害風險。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/30556469/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[14]</a></sup>
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    腳踏車運動傷害的發生，從來不是單一因素的結果。車型決定了基本的姿勢框架，車適設定決定了每次踩踏的受力分布，訓練量管理、核心肌力基礎與裝備選擇，則共同決定了傷害是否真的會發生。
+  </p>
+  <br>
+  <p style="color: #475569; font-size: 1.05rem;">
+    無論你是剛開始騎車的初學者，還是每週騎乘 200 公里的鐵人騎士，<strong style="color: #1e293b;">最好的預防永遠從「了解自己的身體與車輛的匹配」開始</strong>。如果你對目前的騎車設定或身體不適症狀有疑慮，不要等到疼痛難耐才行動——<strong style="color: #1e293b;">預約專業運動醫學門診評估</strong>，一個正確的車適分析，可能為你節省好幾個月的復健時間。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的傷害風險比較表，確認你目前的車型、騎姿設定是否有潛在風險，並在下次騎車時特別留意膝蓋、下背與頸部的感受。若有任何持續性不適，請尋求專業醫療評估。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約運動醫學門診評估
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Streisfeld, G.M., et al. (2017). Relationship Between Body Positioning, Muscle Activity, and Spinal Kinematics in Cyclists With and Without Low Back Pain: A Systematic Review. PMC5315261. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5315261/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 5315261</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Johnston, T.E., et al. (2017). The Influence of Extrinsic Factors on Knee Biomechanics During Cycling: A Systematic Review of the Literature. International Journal of Sports Physical Therapy. PMC5717478. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5717478/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 5717478</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Pisani, S., et al. (2021). Diagnosis, Rehabilitation and Preventive Strategies for Pudendal Neuropathy in Cyclists, A Systematic Review. PMC8162534. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8162534/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 8162534</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Priego Quesada, J.I., et al. (2022). Effects of cycling on the morphology and spinal posture in professional and recreational cyclists: a systematic review. PubMed 35440291. <a href="https://pubmed.ncbi.nlm.nih.gov/35440291/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PubMed: 35440291</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Fallon, T., et al. (2025). Epidemiology of injury and illness across all the competitive cycling disciplines: a systematic review and meta-analysis. BMJ Open Sport & Exercise Medicine. PMC12278157. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12278157/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 12278157</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Giovanelli, N., et al. (2023). Effects of Cycling on Spine: A Case–Control Study Using a 3D Scanning Method. Sports (Basel). PMC10675153. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10675153/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 10675153</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Sanford, T., et al. (2018). Effect of Oscillation on Perineal Pressure in Cyclists: Implications for Micro-Trauma. PMC6085221. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6085221/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 6085221</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Limoncin, E., et al. (2021). Strategies for Reducing the Impact of Cycling on the Perineum in Healthy Males: Systematic Review and Meta-analysis. PMC7846539. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7846539/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 7846539</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Bini, R., et al. (2018). Potential factors associated with knee pain in cyclists: a systematic review. PMC5973630. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5973630/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 5973630</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Casados-Navarro, A., et al. (2023). Saddle Pressures Factors in Road and Off-Road Cyclists of Both Genders: A Narrative Review. PMC10299674. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10299674/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 10299674</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Zwingenberger, S., et al. (2021). Etiology of knee pain in elite cyclists: A 14-month consecutive case series. PubMed 33418617. <a href="https://pubmed.ncbi.nlm.nih.gov/33418617/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PubMed: 33418617</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Physiopedia. Cyclist's Back. Physio-Pedia.com. <a href="https://www.physio-pedia.com/Cyclist's_Back" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Physiopedia. Cyclist's Neck. Physio-Pedia.com. <a href="https://www.physio-pedia.com/Cyclist's_Neck" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Priego Quesada, J.I., et al. (2019). The association of bike fitting with injury, comfort, and pain during cycling: An international retrospective survey. European Journal of Sport Science. PubMed 30556469. <a href="https://pubmed.ncbi.nlm.nih.gov/30556469/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PubMed: 30556469</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Muyor, J.M., et al. (2022). Evaluation of Dynamic Spinal Morphology and Core Muscle Activation in Cyclists—A Comparison between Standing Posture and on the Bicycle. PMC9738255. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9738255/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 9738255</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+
+  {
+id: 'joint-supplements-guide',
+  title: '顧關節保健品全解析：UC-II、葡萄糖胺、鈣片、玻尿酸等誰有效?',
+  lastModified: '2026-04-24',
+  category: '衛教文章',
+  date: '2026-04-24',
+  summary: '市售顧關節保健品種類繁多，本文以醫學觀點逐一解析 UC-II、葡萄糖胺、軟骨素、鈣片與口服玻尿酸的臨床證據。深入探討免疫調節機制、建議劑量、適用族群及常見迷思，幫助你科學選擇真正需要的成分，避免盲目花大錢。',
+  coverImage: '/images/news/article/joint-supplements-guide.webp',
+  seoTitle: '顧關節保健品解析：UC-II、葡萄糖胺、鈣片有效嗎？醫師教你挑',
+  seoDescription: '深度解析 UC-II 非變性二型膠原蛋白、葡萄糖胺、鈣片及口服玻尿酸的醫學證據。告訴你正確劑量、使用時機及挑選重點，破除常見保健品迷思。',
+  keywords: [
+    'UC-II',
+    '葡萄糖胺',
+    '關節保健品',
+    '膝關節炎',
+    '非變性二型膠原蛋白',
+    '軟骨素',
+    '口服玻尿酸',
+    '骨質疏鬆',
+    '鈣片推薦',
+    '維他命D'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    市面上充斥著各式各樣標榜「顧關節」的保健品，從 UC-II 非變性二型膠原蛋白、葡萄糖胺（關力固）、硫酸軟骨素、鈣片、維他命 C/D、到口服玻尿酸，價格從幾百元到數千元不等。這些產品到底有沒有科學根據？吃了真的有效嗎？<br><br>
+    本文將以醫學角度，逐一解析各項成分的臨床證據等級、適用族群，以及每日建議劑量，幫助你做出最聰明的選擇。核心結論是：<strong>不同成分針對不同問題，沒有萬能神藥；在正確時機、正確劑量下使用，才能發揮最大效益。</strong>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12010644/" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[1]</a></sup>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/37489348/" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[2]</a></sup>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/39886281/" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[3]</a></sup>
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、為什麼這些保健品那麼流行，卻讓人霧裡看花？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    根據衛福部統計，台灣人每年花在保健食品上的金額超過新台幣一千億元，「顧關節」類產品更是長年熱銷榜前三名。電視購物、網路廣告、連鎖藥局的顯眼位置，永遠不缺少各種「軟骨素加強版」、「UC-II 40毫克」、「口服玻尿酸膠囊」……
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    問題是：<strong style="color: #2dd4bf;">廣告說的跟研究說的，往往不是同一回事。</strong>很多保健品的廣告引用的是動物實驗、小樣本研究、甚至是廠商自己贊助的試驗，科學可信度大打折扣。本文根據目前最嚴謹的系統性回顧與隨機雙盲對照試驗，用白話文告訴你每一種成分的真實效果。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    在閱讀以下各節前，請先記住一個重要觀念：<strong style="color: #ffffff;">「保健食品」與「藥物」的法規要求不同。</strong>保健食品在台灣（及多數國家）不需要像藥物一樣通過嚴格的臨床三期試驗，因此上市門檻較低。這並不代表它們「沒用」，而是代表你需要更主動地去看科學文獻，而不只是看廣告。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、UC-II（非變性二型膠原蛋白）：「少量」的秘密
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">什麼是 UC-II？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    UC-II 是從雞胸骨軟骨萃取的「非變性（未水解）二型膠原蛋白」，不同於一般水解膠原蛋白，它的結構保持完整。這個差別非常重要——UC-II 的作用機制不是「補充軟骨原料」，而是透過<strong style="color: #ffffff;">口服耐受</strong>機制，讓免疫系統停止攻擊自身關節軟骨組織，進而減少發炎反應。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12010644/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[1]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">臨床證據怎麼說？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    2013年發表的一項隨機雙盲安慰劑對照試驗，針對55名運動後出現膝關節不適的健康受試者進行120天追蹤，結果顯示每日服用 40 mg UC-II 的組別，在膝關節彎曲角度與疼痛出現時間上，都顯著優於安慰劑組。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/24153020/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    2025年發表於 Scientific Reports 的一項獨立（非廠商贊助）隨機雙盲試驗，針對68名膝關節炎患者，比較了含 UC-II 與水解膠原蛋白的複合補充劑與安慰劑的效果，在12週後觀察到疼痛與功能指標有顯著改善。
+    <sup><a href="https://www.nature.com/articles/s41598-025-17505-0" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    2025年一項系統性回顧也確認，UC-II 對膝關節的疼痛與僵硬指標有統計上的改善效果，但各研究間存在相當的異質性，仍需更多高品質試驗確認。
+    <sup><a href="https://www.tandfonline.com/doi/full/10.1080/09581596.2025.2588891" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[6]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 醫師臨床觀點</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      UC-II 的劑量很特別——每日只需 <strong>40 mg</strong>，遠低於傳統膠原蛋白的數千毫克。這是因為它的作用是「免疫調節」而非「補料」。許多廠商為了看起來「份量多」，在包裝上標示 1000~2000 mg，但那是<em>水解膠原蛋白</em>，兩者機制完全不同，不能混為一談。
+    </p>
+  </div>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">建議劑量與使用時機：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">每日劑量：</strong>40 mg（以非變性二型膠原蛋白計）</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">服用時機：</strong>空腹或飯前服用，避免與蛋白質食物同食（以免影響口服耐受機制）</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">適合族群：</strong>膝關節炎患者、運動後關節不適者</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">見效時間：</strong>通常需要持續服用 90~120 天才能明顯感受效果</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">注意事項：</strong>對雞肉或蛋類過敏者不適合</li>
+  </ul>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem;">
+    <strong style="color: #2dd4bf;">醫師推薦指數：★★★★☆</strong>——目前最具免疫調節機制根據的關節補充品，但需選擇標示明確含「非變性」UC-II 40 mg 的產品，避免被水解膠原蛋白「魚目混珠」。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、葡萄糖胺（Glucosamine）與軟骨素（Chondroitin）：關力固、固力速的主角
+  </h2>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    葡萄糖胺是台灣最暢銷的關節補充品之一，「關力固」等品牌已成為家喻戶曉的名詞。它在體內是合成關節軟骨與滑液的原料之一，理論上補充後應能修復磨損的軟骨。但臨床現實比廣告複雜得多。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">系統性回顧怎麼說？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    2023年一項涵蓋15項隨機對照試驗的系統性回顧指出，葡萄糖胺在緩解膝關節炎疼痛方面確實優於安慰劑，在功能評估量表上也觀察到疼痛、僵硬與身體功能的改善——但效果「尚不夠顯著」。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/37489348/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    另一項針對30項 RCT、共5265名患者的網絡統合分析（2024年）顯示，「葡萄糖胺＋Omega-3」的組合在止痛效果上最佳，顯示單獨服用葡萄糖胺效果有限，搭配其他成分效果更好。
+    <sup><a href="https://www.mdpi.com/2077-0383/13/23/7444" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[7]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    葡萄糖胺與軟骨素的合併使用，在一項系統性回顧中確認「優於單一成分治療」，且安全性良好。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/35024906/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[8]</a></sup>
+    值得注意的是，有一篇被廣泛引用的統合分析後來因方法論問題被撤稿，提醒我們在解讀文獻時需確認研究品質。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9343191/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[9]</a></sup>
+  </p>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 重要提醒：</strong><br><br>葡萄糖胺分「硫酸葡萄糖胺（glucosamine sulfate）」與「鹽酸葡萄糖胺（glucosamine hydrochloride）」兩種。臨床上多數正向研究使用的是「硫酸葡萄糖胺」，部分研究顯示鹽酸形式效果較差。購買時請注意成分標示。此外，糖尿病患者應注意葡萄糖胺可能輕微影響血糖，須定期監測。
+    </p>
+  </div>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">建議劑量與使用時機：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">葡萄糖胺每日劑量：</strong>1500 mg（建議選擇硫酸葡萄糖胺形式）</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">軟骨素每日劑量：</strong>800~1200 mg（通常與葡萄糖胺合併使用）</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">見效時間：</strong>至少需要 2~3 個月，部分患者需要 6 個月</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">適合族群：</strong>輕中度膝關節炎、日常保養為主的中老年族群</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">不適合族群：</strong>對貝殼類海鮮過敏者（多數葡萄糖胺萃取自蝦蟹殼）</li>
+  </ul>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem;">
+    <strong style="color: #2dd4bf;">醫師推薦指數：★★★☆☆</strong>——安全性高、長年研究基礎豐富，但效果因人差異較大，嚴重關節炎患者效果有限，建議搭配 Omega-3 或軟骨素使用。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、鈣片（Calcium）：骨頭的基礎建材，但有上限
+  </h2>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    鈣是構成骨骼的主要礦物質，占骨骼重量的70%以上。鈣片是最被醫學界廣泛建議的骨骼保健補充品——但「建議補充」不代表「越多越好」。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">證據如何？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    美國骨質疏鬆症基金會（NOF）明確建議：50歲以下女性與70歲以下男性每日鈣攝取量為 1000 mg；51歲以上女性及71歲以上男性則建議提高至 1200 mg。
+    <sup><a href="https://www.bonehealthandosteoporosis.org/patients/treatment/calciumvitamin-d/get-the-facts-on-calcium-and-vitamin-d/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[10]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    鈣片與維他命D合併使用，被認為是預防骨質疏鬆的「基石療法」。一項針對超過4萬2千名參與者的大型臨床試驗統合分析顯示，鈣加維他命D對骨折風險的影響在整體上雖未達統計顯著，但在25-OHD維生素D基礎值不足的族群中，補充效果明顯更好。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12506016/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[11]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    另外需要特別注意：<strong style="color: #ffffff;">鈣要能被吸收，不能沒有維他命D</strong>。維他命D是促進腸道吸收鈣質的關鍵激素。如果只補充鈣片卻忽略維他命D，吸收效率大打折扣。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2621390/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[12]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 醫師臨床觀點：碳酸鈣 vs. 檸檬酸鈣</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      市面上鈣片主要分兩種：<strong>碳酸鈣（calcium carbonate）</strong>含鈣量高（40%），但需要胃酸協助溶解，建議隨餐服用；<strong>檸檬酸鈣（calcium citrate）</strong>含鈣量較低（21%），但不需胃酸即可吸收，適合有胃食道逆流或服用胃藥的長者。一次不超過 500~600 mg，分次補充比一次吃完吸收更好。
+    </p>
+  </div>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">建議劑量（每日總量，包含飲食中的鈣）：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">19~50歲：</strong>1000 mg/天（含食物中的鈣）</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">51歲以上女性 / 71歲以上男性：</strong>1200 mg/天</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">搭配維他命D：</strong>成人建議 600~1000 IU/天；50歲以上建議 1000~2000 IU/天</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">上限注意：</strong>每日鈣攝取總量不超過 2000 mg，過多可能增加腎結石風險</li>
+  </ul>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem;">
+    <strong style="color: #2dd4bf;">醫師推薦指數：★★★★★</strong>——骨骼保健的根基，有清楚的用藥指引與長期研究支持，務必同時補充維他命D，並優先從飲食中獲取（牛奶、豆漿、芝麻、小魚乾）。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、維他命（Vitamins）：C 和 D 才是關節保健的隱形英雄
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">維他命 C：膠原蛋白合成的「點火器」</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    維他命C（抗壞血酸）是體內合成膠原蛋白的必要輔助因子。沒有維他命C，脯胺醯基羥化酶（prolyl hydroxylase）無法正常運作，膠原蛋白的三股螺旋結構就無法穩定交聯，關節軟骨、韌帶與肌腱的修復也會受阻。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6204628/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[13]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究建議，若要最大化膠原蛋白合成，成人每日攝取 200~500 mg 的維他命C對結締組織的支持效果最好，遠高於一般 RDA（每日建議攝取量）的 75~90 mg。特別是在肌肉骨骼受傷後或高強度訓練期間，維他命C扮演的角色更為關鍵。
+    <sup><a href="https://journals.sagepub.com/doi/10.1177/2325967118804544" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[14]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">維他命 D：不只是骨頭，也影響肌肉與發炎</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    維他命D（骨化三醇）的功能遠不只是幫助鈣質吸收——它同時調節免疫反應、支撐肌肉收縮功能，並可能抑制關節的慢性發炎。台灣緯度雖低，但現代人室內作息、防曬習慣普遍，導致維他命D缺乏的比例非常高。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    加拿大亞伯達衛生局（AHS）建議：50歲以上成人每日補充 1000~2000 IU 維他命D，特別是在秋冬日照不足的月份；若已被診斷為缺乏（血清 25-OHD &lt; 30 ng/mL），則在醫師指示下可短期補充更高劑量。
+    <sup><a href="https://www.albertahealthservices.ca/assets/info/nutrition/if-nfs-ng-calcium-and-vitamin-d.pdf" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[15]</a></sup>
+  </p>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">建議劑量：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">維他命C：</strong>200~500 mg/天（食物優先，如奇異果、甜椒；不足再補充）</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">維他命D：</strong>600~2000 IU/天（視年齡與血清濃度而定）</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">維他命C上限：</strong>每日不超過 2000 mg，過量可能引起腹瀉或腎結石</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">維他命D監測：</strong>建議定期抽血確認 25-OHD 血清濃度，目標值 30~60 ng/mL</li>
+  </ul>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem;">
+    <strong style="color: #2dd4bf;">醫師推薦指數：★★★★★</strong>——性價比最高的關節保健成分。維他命C和D是多數台灣人飲食中最容易不足的兩個維生素，補足之後對全身健康（不只是關節）都有幫助，建議列為日常保健的優先選項。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、口服玻尿酸（Oral Hyaluronic Acid）：「吃進去的潤滑劑」真的有效嗎？
+  </h2>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    玻尿酸是關節滑液的重要成分，提供關節軟骨之間的潤滑與緩衝。注射玻尿酸到關節腔（關節內注射）已有多年臨床應用，但「口服玻尿酸」能不能真正發揮效果，一直是爭議焦點。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    最大的問題在於：口服的玻尿酸分子量很大，能否順利被腸道吸收、進入血液循環，並最終到達關節腔，在過去存在很大的疑問。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">最新系統性回顧的答案</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    2024年發表在《Mediterranean Journal of Rheumatology》的系統性回顧分析了11項研究共597名患者，劑量範圍從每日 30~300 mg 不等，追蹤期 4 週到 12 個月。結果顯示：11篇研究中有 9 篇（約 82%）觀察到關節疼痛、功能或生活品質的改善，部分研究還觀察到發炎指標（細胞激素）的下降。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/39886281/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[3]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    低分子量玻尿酸（&lt;5 kDa）在腸道的吸收率較高，被認為可透過腸道免疫路徑（類似 UC-II 的口服耐受機制）發揮抗發炎效果，而非直接「補充」到關節腔。一項結合口服低分子量玻尿酸、葡萄糖胺與軟骨素的8週雙盲試驗，顯示對輕度膝關節炎患者有顯著疼痛改善效果。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10792404/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[16]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 醫師臨床觀點</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      口服玻尿酸的研究品質整體偏弱（研究樣本數少、追蹤期短、廠商贊助比例高），目前證據等級屬「初步正向」但尚未達到強力推薦的水準。如果你已經在服用葡萄糖胺或 UC-II，口服玻尿酸可作為輔助；如果預算有限，建議優先排在鈣片、維他命D 之後。對於中重度關節炎患者，<strong>關節內注射玻尿酸的效果遠優於口服</strong>，請與骨科或復健科醫師討論注射的適應症。
+    </p>
+  </div>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">建議劑量：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">每日劑量：</strong>80~200 mg（低分子量形式效果較佳）</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">建議療程：</strong>至少連續服用 8~12 週評估效果</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">適合族群：</strong>輕度關節不適、日常保養、不適合注射的族群</li>
+  </ul>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem;">
+    <strong style="color: #2dd4bf;">醫師推薦指數：★★★☆☆</strong>——初步證據正向，但整體研究品質有待提升。作為輔助成分合理，但不建議作為唯一的關節保健策略。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、各產品綜合比較表
+  </h2>
+
+  <style>
+    .custom-table-container { width: 100%; overflow-x: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+    .modern-table { width: 100%; border-collapse: collapse; font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif; font-size: 15px; background-color: #ffffff; color: #1f2937; min-width: 860px; }
+    .modern-table thead tr { background-color: #1e3a8a; color: #ffffff; text-align: left; font-weight: bold; }
+    .modern-table th { padding: 16px 12px; border-bottom: 2px solid #111827; letter-spacing: 0.5px; }
+    .modern-table td { padding: 14px 12px; border-bottom: 1px solid #e5e7eb; line-height: 1.6; }
+    .modern-table td:first-child { background-color: #f9fafb; font-weight: 600; color: #111827; width: 130px; }
+    .modern-table tbody tr:nth-of-type(even) { background-color: #f3f4f6; }
+    .modern-table tbody tr:hover { background-color: #e0e7ff; transition: background-color 0.2s ease; }
+    @media (max-width: 600px) { .modern-table { font-size: 14px; } }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>成分 / 產品</th>
+          <th>主要機制</th>
+          <th>臨床證據等級</th>
+          <th>建議每日劑量</th>
+          <th>最適合族群</th>
+          <th style="text-align:center;">醫師推薦</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>UC-II（非變性二型膠原）</td>
+          <td>口服耐受→免疫調節→抗發炎</td>
+          <td>中等（多項 RCT 支持）</td>
+          <td>40 mg（空腹）</td>
+          <td>關節炎、運動後關節不適</td>
+          <td style="text-align:center;">★★★★☆</td>
+        </tr>
+        <tr>
+          <td>葡萄糖胺（關力固）</td>
+          <td>提供軟骨合成原料</td>
+          <td>中等（效果因人而異）</td>
+          <td>1500 mg</td>
+          <td>輕中度膝關節炎</td>
+          <td style="text-align:center;">★★★☆☆</td>
+        </tr>
+        <tr>
+          <td>硫酸軟骨素</td>
+          <td>維護軟骨基質、抑制發炎酵素</td>
+          <td>中等（合併葡萄糖胺效果更好）</td>
+          <td>800~1200 mg</td>
+          <td>關節炎、軟骨保養</td>
+          <td style="text-align:center;">★★★☆☆</td>
+        </tr>
+        <tr>
+          <td>鈣片（碳酸鈣／檸檬酸鈣）</td>
+          <td>骨骼礦化的基礎原料</td>
+          <td>強（長期大規模研究支持）</td>
+          <td>500~600 mg/次，分次補充至每日 1000~1200 mg</td>
+          <td>所有年齡層骨骼保健，尤其停經後女性</td>
+          <td style="text-align:center;">★★★★★</td>
+        </tr>
+        <tr>
+          <td>維他命D</td>
+          <td>促進鈣吸收、調節免疫與肌肉功能</td>
+          <td>強（需配合血清值調整）</td>
+          <td>600~2000 IU（視年齡與檢測結果）</td>
+          <td>骨質疏鬆預防、日照不足者</td>
+          <td style="text-align:center;">★★★★★</td>
+        </tr>
+        <tr>
+          <td>維他命C</td>
+          <td>膠原蛋白合成輔助因子、抗氧化</td>
+          <td>中等（基礎研究充足，臨床 RCT 較少）</td>
+          <td>200~500 mg</td>
+          <td>韌帶肌腱修復、高強度運動族群</td>
+          <td style="text-align:center;">★★★★★</td>
+        </tr>
+        <tr>
+          <td>口服玻尿酸</td>
+          <td>腸道免疫調節，可能影響關節滑液品質</td>
+          <td>初步正向（樣本小，廠商贊助比例高）</td>
+          <td>80~200 mg（低分子量）</td>
+          <td>輕度關節不適，作為輔助成分</td>
+          <td style="text-align:center;">★★★☆☆</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 八、最常見的三大迷思解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「吃越貴的補充品，效果越好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 補充品的效果取決於「成分的科學依據」與「你的身體是否真的缺乏」，而不是價格。葡萄糖胺一瓶幾百元，科學根據比動輒四五千元的複方保健品還充分。花在「驗血確認自身需求」上的錢，遠比盲目買高價補充品更值得。
+          <sup><a href="https://pubmed.ncbi.nlm.nih.gov/37489348/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[2]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「吃膠原蛋白粉，就能補充關節軟骨」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 口服的水解膠原蛋白在腸道被分解成胺基酸後，身體並不知道「這些胺基酸來自關節軟骨」，它可能被用於合成任何部位的蛋白質。真正有針對性關節調節機制的，是「非變性（未水解）UC-II」，而不是泡開來喝的膠原蛋白粉。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12010644/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「只要有在補充，就不用運動了」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>大錯特錯！</strong> 所有關節補充品的臨床試驗，幾乎都是在「受試者維持日常活動」的前提下進行的。強化大腿股四頭肌的肌力訓練，已被證實是減輕膝關節壓力、延緩退化最有效的方式之一。補充品是輔助，運動才是根本。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/35024906/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[8]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：我可以同時吃 UC-II 和葡萄糖胺嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      可以，兩者機制不同，不會互相干擾。UC-II 是免疫調節，葡萄糖胺是原料補充。但建議 UC-II 空腹服用，葡萄糖胺隨餐服用，以確保各自最佳吸收條件。同時服用不代表效果相加，仍需個別評估是否有效。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：吃保健品多久才能感覺到效果？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      依成分而定：鈣片和維他命D的效果是長期累積的（幾個月到幾年）；UC-II 通常需要 3~4 個月；葡萄糖胺和軟骨素通常需要 2~6 個月。如果服用超過 6 個月仍完全感受不到任何改善，建議重新評估是否適合繼續服用，並與醫師討論是否需要其他治療。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：關節保健品對「已經嚴重磨損」的關節有效嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      效果非常有限。所有關節補充品的研究，受試對象主要是「輕中度」關節炎患者。對於 X 光顯示關節間隙幾乎消失、軟骨磨損嚴重的患者，補充品主要只能輔助緩解症狀，無法逆轉結構性損傷。此時需要與醫師討論注射療法（玻尿酸注射、PRP）甚至手術（人工關節置換）的適應症。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：海鮮過敏的人，有哪些替代選項？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      大多數葡萄糖胺來自蝦蟹殼，對海鮮過敏者應避免或選擇「素食葡萄糖胺（玉米發酵來源）」。UC-II 來自雞胸骨軟骨，對雞蛋或雞肉過敏者不適合。口服玻尿酸和維他命 C、D 通常無此限制，可作為替代方案。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：保健品會和我正在服用的藥物產生交互作用嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      需要特別注意幾點：服用抗凝血劑（如 Warfarin）的患者，葡萄糖胺可能增加出血風險，必須告知醫師；高劑量維他命D長期服用可能造成血鈣過高；高劑量鈣片可能影響某些抗生素（如四環素、喹諾酮類）的吸收。開始服用任何新的補充品前，請務必告知你的主治醫師。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    九、如果只能選一種，醫師最推薦哪個？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是最常被問到的問題，答案取決於你的主要目的：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">預防骨質疏鬆、保護骨骼 →</strong> 鈣片 + 維他命D（CP值最高，根據最完整）
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">已有膝關節炎症狀、想減輕發炎 →</strong> UC-II 40 mg（免疫調節機制最獨特）
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">日常保養、輕微關節不適 →</strong> 葡萄糖胺 1500 mg + 軟骨素（研究歷史最長）
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">高強度運動、韌帶肌腱保養 →</strong> 維他命C 200~500 mg（膠原蛋白合成不可缺）
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">輔助潤滑、不適合注射的輕度患者 →</strong> 口服玻尿酸（作為附加選項）
+    </li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem;">
+    最理想的做法是：先抽血確認維他命D是否缺乏、請醫師評估關節炎嚴重程度，再根據自身狀況選擇最適合的補充策略。<strong style="color: #2dd4bf;">盲目服用多種補充品，不如精準補充一兩種真正需要的。</strong>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    關節保健品不是騙局，但也不是萬能仙丹。每一種成分都有其適用對象與科學根據，關鍵在於「了解自己的需求」而不是「看廣告做決定」。UC-II、葡萄糖胺、鈣片、維他命C/D、口服玻尿酸各有其定位，搭配適當的運動習慣與醫療評估，才能真正達到保護關節的效果。
+  </p><br>
+
+  <p style="color: #475569; font-size: 1.05rem;">
+    如果你對自己適合哪種補充品感到困惑，或已有明顯的關節疼痛症狀，<strong style="color: #1e293b;">最好的第一步永遠是找醫師評估，而不是先買一大堆補充品回家試</strong>。一次正確的診斷，可能為你省下數年的摸索與不必要的花費。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的比較表，找出最符合你目前狀況的補充品類別，並在下一次回診時主動告知醫師你正在服用或考慮服用的保健品，讓醫師協助你做最安全的選擇。
+    </p>
+  </div>
+
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診評估關節退化
+    </a>
+  </div>
+</div>
+`,
+referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li id="ref1" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Martínez-Puig D, et al. Undenatured type II collagen for knee osteoarthritis. <em>PMC / PubMed</em>. 2025. 
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12010644/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12010644</a>
+      </span>
+    </li>
+    <li id="ref2" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Vo NX, et al. Effectiveness and Safety of Glucosamine in Osteoarthritis: A Systematic Review. <em>Pharmacy</em>. 2023;11(4):117. 
+        <a href="https://pubmed.ncbi.nlm.nih.gov/37489348/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 37489348</a>
+      </span>
+    </li>
+    <li id="ref3" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        de Carvalho JF, Davidson J. Oral hyaluronic acid in osteoarthritis and low back pain: a systematic review. <em>Mediterr J Rheumatol</em>. 2024;35(4):557–562. 
+        <a href="https://pubmed.ncbi.nlm.nih.gov/39886281/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 39886281</a>
+      </span>
+    </li>
+    <li id="ref4" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lugo JP, et al. Undenatured type II collagen (UC-II®) for joint support: a randomized, double-blind, placebo-controlled study in healthy volunteers. <em>J Int Soc Sports Nutr</em>. 2013;10:48. 
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24153020/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 24153020</a>
+      </span>
+    </li>
+    <li id="ref5" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Cardoso CR, et al. Efficacy of combined undenatured type II collagen and hydrolysed collagen supplementation in knee osteoarthritis: a randomised controlled trial. <em>Scientific Reports</em>. 2025. 
+        <a href="https://www.nature.com/articles/s41598-025-17505-0" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Article Link</a>
+      </span>
+    </li>
+    <li id="ref6" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Efficacy and safety of undenatured collagen type II in modulating knee joint function: a systematic review and meta-analysis. <em>Toxicological &amp; Environmental Chemistry</em>. 2025. 
+        <a href="https://www.tandfonline.com/doi/full/10.1080/09581596.2025.2588891" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1080/09581596.2025.2588891</a>
+      </span>
+    </li>
+    <li id="ref7" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Chen Y, et al. Comparative Efficacy of Glucosamine-Based Combination Therapies in Alleviating Knee OA Pain: A Systematic Review and Network Meta-Analysis. <em>J Clin Med</em>. 2024;13(23):7444. 
+        <a href="https://www.mdpi.com/2077-0383/13/23/7444" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Article Link</a>
+      </span>
+    </li>
+    <li id="ref8" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Meng Z, Liu J, Zhou N. Efficacy and safety of the combination of glucosamine and chondroitin for knee osteoarthritis: a systematic review and meta-analysis. <em>Arch Orthop Trauma Surg</em>. 2023;143(1):409–421. 
+        <a href="https://pubmed.ncbi.nlm.nih.gov/35024906/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 35024906</a>
+      </span>
+    </li>
+    <li id="ref9" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        [Retracted] Clinical Efficacy and Safety of Chondroitin Combined with Glucosamine in the Treatment of Knee Osteoarthritis: A Systematic Review and Meta-Analysis. <em>Comput Math Methods Med</em>. 2022 (retracted 2023). 
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9343191/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9343191</a>
+      </span>
+    </li>
+    <li id="ref10" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Bone Health &amp; Osteoporosis Foundation. Get the Facts on Calcium and Vitamin D. 
+        <a href="https://www.bonehealthandosteoporosis.org/patients/treatment/calciumvitamin-d/get-the-facts-on-calcium-and-vitamin-d/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li id="ref11" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Zhu X, et al. The effects of combined calcium and vitamin D supplementation on BMD and fracture risk in postmenopausal women with osteoporosis: a systematic review and meta-analysis of RCTs. <em>PMC</em>. 2025. 
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12506016/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12506016</a>
+      </span>
+    </li>
+    <li id="ref12" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Bolland MJ, Grey A. The use of calcium and vitamin D in the management of osteoporosis. <em>Ther Clin Risk Manag</em>. 2008;4(6):1369–1377. 
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2621390/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 2621390</a>
+      </span>
+    </li>
+    <li id="ref13" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        DePhillipo NN, et al. Efficacy of Vitamin C Supplementation on Collagen Synthesis and Oxidative Stress After Musculoskeletal Injuries: A Systematic Review. <em>Orthop J Sports Med</em>. 2018;6(10). 
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6204628/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 6204628</a>
+      </span>
+    </li>
+    <li id="ref14" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        DePhillipo NN, et al. Ibid. <em>SAGE Journals</em>. 2018. 
+        <a href="https://journals.sagepub.com/doi/10.1177/2325967118804544" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1177/2325967118804544</a>
+      </span>
+    </li>
+    <li id="ref15" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Alberta Health Services. Calcium and Vitamin D – Nutrition Guideline. 2022. 
+        <a href="https://www.albertahealthservices.ca/assets/info/nutrition/if-nfs-ng-calcium-and-vitamin-d.pdf" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PDF Link</a>
+      </span>
+    </li>
+    <li id="ref16" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Wang SJ, et al. Oral sodium hyaluronate relieves knee discomfort: a 12-week double-blinded, placebo-controlled study. <em>PMC</em>. 2024. 
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10792404/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10792404</a>
+      </span>
+    </li>
+  </ol>
+</div>`
+},
 {
   id: 'pillow-selection-guide',
   title: '枕頭選擇全解析：軟硬、高低、有凹洞嗎？醫學實證教你挑對枕頭',
@@ -29,7 +3237,8 @@ export const articlesData: NewsPost[] = [
 <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
   <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-    每個人每天有三分之一的時間躺在枕頭上，但大多數人選枕頭的標準是「摸起來軟不軟」或「看起來好看」，而非醫學依據。研究清楚指出，枕頭最重要的功能是<strong>在睡眠中維持頸椎的自然前凸弧度（cervical lordosis）</strong>，避免頸部長時間處於過度前屈或後仰的角度，進而引發頸痛、晨起僵硬與放射性手臂痠麻。枕頭的高度、軟硬與形狀，需根據你的睡姿量身選擇——側睡者需要較高且較硬的枕頭填補肩頸空隙；仰睡者需要中等高度、帶有頸椎支撐的設計；完全趴睡則不建議使用厚枕。中間有凹洞的頸椎枕（contour pillow）在部分研究中顯示能改善頸椎弧度，但並非適合所有人。本文將以實證為基礎，帶你系統性了解如何選對一顆枕頭。
+    每個人每天有三分之一的時間躺在枕頭上，但大多數人選枕頭的標準是「摸起來軟不軟」或「看起來好看」，而非醫學依據。研究清楚指出，枕頭最重要的功能是<strong>在睡眠中維持頸椎的自然前凸弧度（cervical lordosis）</strong>，避免頸部長時間處於過度前屈或後仰的角度，進而引發頸痛、晨起僵硬與放射性手臂痠麻。<br><br>
+    枕頭的高度、軟硬與形狀，需根據你的睡姿量身選擇——側睡者需要較高且較硬的枕頭填補肩頸空隙；仰睡者需要中等高度、帶有頸椎支撐的設計；完全趴睡則不建議使用厚枕。中間有凹洞的頸椎枕在部分研究中顯示能改善頸椎弧度，但並非適合所有人。本文將以實證為基礎，帶你系統性了解如何選對一顆枕頭。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8544534/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3004642/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6736423/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[3]</a></sup>
@@ -44,10 +3253,10 @@ export const articlesData: NewsPost[] = [
     很多人誤以為枕頭的作用是「讓頭有地方靠」，但從骨科與復健科的角度來看，枕頭真正的任務是：<strong style="color: #2dd4bf;">在你入睡的六到八小時內，讓頸椎維持接近站立時的自然弧度。</strong>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    正常的頸椎有一個向前彎曲的弧度，稱為「頸椎前凸（cervical lordosis）」。當你睡覺時，如果枕頭太高，頸部會被迫向前彎曲（屈曲），肌肉與韌帶持續被拉伸；如果枕頭太低或太軟，頭部下塌，頸椎反而後仰，同樣造成關節與軟組織的持續壓力。這兩種狀況都會讓你在早晨起床時感到頸部僵硬、頭痛，甚至引發慢性頸痛或手臂放射性疼痛。
+    正常的頸椎有一個向前彎曲的弧度，稱為「頸椎前凸）」。當你睡覺時，如果枕頭太高，頸部會被迫向前彎曲（屈曲），肌肉與韌帶持續被拉伸；如果枕頭太低或太軟，頭部下塌，頸椎反而後仰，同樣造成關節與軟組織的持續壓力。這兩種狀況都會讓你在早晨起床時感到頸部僵硬、頭痛，甚至引發慢性頸痛或手臂放射性疼痛。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    2021 年一篇發表於 PMC 的系統性文獻回顧指出，枕頭高度是影響頸椎對齊最關鍵的參數，過高或過低的枕頭都會顯著增加斜方肌（trapezius）與頸部豎脊肌（cervical erector spinae）的肌電活動——也就是說，你的頸部肌肉在睡覺時不但沒有休息，反而在「努力工作」來補償不良的枕頭。
+    2021 年一篇發表於 PMC 的系統性文獻回顧指出，枕頭高度是影響頸椎對齊最關鍵的參數，過高或過低的枕頭都會顯著增加斜方肌與頸部豎脊肌的肌電活動——也就是說，你的頸部肌肉在睡覺時不但沒有休息，反而在「努力工作」來補償不良的枕頭。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8544534/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
   </p>
 </section>
@@ -70,7 +3279,7 @@ export const articlesData: NewsPost[] = [
   <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
     <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床重點</h4>
     <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
-      枕頭不是越軟越好，也不是越硬越好。理想的硬度應為「中等偏硬（medium-firm）」——能維持形狀、不讓頭部過度下陷，同時又不會在側躺時讓頸椎過度側彎。如果你換了一顆新枕頭後兩週內仍有明顯不適，才需要考慮重新評估；大多數人需要至少 14 天讓頸部肌肉適應新的支撐位置。
+      枕頭不是越軟越好，也不是越硬越好。理想的硬度應為「中等偏硬」——能維持形狀、不讓頭部過度下陷，同時又不會在側躺時讓頸椎過度側彎。如果你換了一顆新枕頭後兩週內仍有明顯不適，才需要考慮重新評估；大多數人需要至少 14 天讓頸部肌肉適應新的支撐位置。
     </p>
   </div>
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">哪種材質最好？乳膠 vs. 記憶棉 vs. 羽絨</h3>
@@ -79,12 +3288,12 @@ export const articlesData: NewsPost[] = [
   </p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
     <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">乳膠枕（Latex）：</strong>目前臨床試驗支持度最高的材質。2019 年一項隨機對照試驗發現，頸椎退化症患者使用人體工學乳膠枕四週後，頭頸姿勢角（craniovertebral angle）顯著改善，背伸肌耐力也明顯提升，顯示乳膠枕不只減少疼痛，還能改善頸部肌肉功能。
+      <strong style="color: #ffffff;">乳膠枕（Latex）：</strong>目前臨床試驗支持度最高的材質。2019 年一項隨機對照試驗發現，頸椎退化症患者使用人體工學乳膠枕四週後，頭頸姿勢角顯著改善，背伸肌耐力也明顯提升，顯示乳膠枕不只減少疼痛，還能改善頸部肌肉功能。
       <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7452254/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
       此外，乳膠具備天然的回彈性，能同時適應側躺與仰躺的頭部曲線。
     </li>
     <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">記憶棉枕（Memory Foam）：</strong>能依據體溫與壓力塑形，初次使用時舒適感高。2014 年的臨床研究顯示，記憶棉枕在仰躺時確實能增加頸椎前凸角度，但效果不如特製骨科枕（orthopedic pillow）顯著。
+      <strong style="color: #ffffff;">記憶棉枕（Memory Foam）：</strong>能依據體溫與壓力塑形，初次使用時舒適感高。2014 年的臨床研究顯示，記憶棉枕在仰躺時確實能增加頸椎前凸角度，但效果不如特製骨科枕顯著。
       <sup><a href="https://www.jstage.jst.go.jp/....../3/233_183/_html/-char/en" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
       缺點是散熱較差，夏季使用可能影響睡眠品質。
     </li>
@@ -100,14 +3309,14 @@ export const articlesData: NewsPost[] = [
     三、枕頭中間要有凹洞嗎？頸椎枕的科學根據
   </h2>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    「中間有凹洞的枕頭（contour pillow / cervical pillow）」是藥局與復健診所常見的推薦商品，設計概念是：凹陷處承托頭部，兩側較高的區域支撐頸椎弧度。這樣的設計是否真的有效？答案是：<strong style="color: #2dd4bf;">部分有效，但並非萬能。</strong>
+    「中間有凹洞的枕頭」是藥局與復健診所常見的推薦商品，設計概念是：凹陷處承托頭部，兩側較高的區域支撐頸椎弧度。這樣的設計是否真的有效？答案是：<strong style="color: #2dd4bf;">部分有效，但並非萬能。</strong>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    2021 年一篇涵蓋 35 項臨床試驗的系統性回顧發現，帶有頸椎捲支撐的輪廓枕（contour pillow with cervical roll）在九項高品質研究中有七項優於平枕，能更有效維持頸椎弧度對齊。
+    2021 年一篇涵蓋 35 項臨床試驗的系統性回顧發現，帶有頸椎捲支撐的輪廓枕在九項高品質研究中有七項優於平枕，能更有效維持頸椎弧度對齊。
     <sup><a href="https://mattressmiracle.ca/....../pillow-ergonomics-guide" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    然而，2011 年的隨機對照試驗也發現一個重要但常被忽略的結果：<strong style="color: #ffffff;">泡棉輪廓枕（foam contour pillow）的表現並未優於一般泡棉平枕（foam regular pillow）</strong>。這顯示「有沒有凹洞」並不是決定枕頭效果的唯一關鍵——材質硬度、高度與整體形狀的配合同樣重要。
+    然而，2011 年的隨機對照試驗也發現一個重要但常被忽略的結果：<strong style="color: #ffffff;">泡棉輪廓枕的表現並未優於一般泡棉平枕</strong>。這顯示「有沒有凹洞」並不是決定枕頭效果的唯一關鍵——材質硬度、高度與整體形狀的配合同樣重要。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3180478/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
   </p>
   <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
@@ -323,7 +3532,7 @@ export const articlesData: NewsPost[] = [
         <div>
           <strong>「高枕無憂——枕頭越高頸椎越有支撐」</strong><br>
           <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">
-            <strong>完全相反！</strong> 「高枕無憂」是古代形容安心入眠的詞語，從頸椎醫學角度來看卻是錯誤觀念。枕頭過高會讓頸椎持續處於前屈（chin-to-chest）姿勢，增加頸後肌肉與韌帶的持續牽拉負荷，長期下來可能加速頸椎間盤退化。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8544534/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup> 適當高度才是關鍵，而適當高度因人而異。
+            <strong>完全相反！</strong> 「高枕無憂」是古代形容安心入眠的詞語，從頸椎醫學角度來看卻是錯誤觀念。枕頭過高會讓頸椎持續處於前屈姿勢，增加頸後肌肉與韌帶的持續牽拉負荷，長期下來可能加速頸椎間盤退化。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8544534/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup> 適當高度才是關鍵，而適當高度因人而異。
           </span>
         </div>
       </li>
@@ -362,7 +3571,7 @@ export const articlesData: NewsPost[] = [
     除了生物力學理論，我們也需要問：更換枕頭是否真的能改善已有的頸痛症狀？臨床試驗的答案是謹慎肯定的。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    一項隨機對照試驗比較了頸椎彈簧枕（spring pillow）與一般衛教介入對慢性非特異性頸痛的效果，四週後彈簧枕組在頸部、胸部與頭部疼痛的改善程度，以及睡眠時數，皆顯著優於對照組。
+    一項隨機對照試驗比較了頸椎彈簧枕與一般衛教介入對慢性非特異性頸痛的效果，四週後彈簧枕組在頸部、胸部與頭部疼痛的改善程度，以及睡眠時數，皆顯著優於對照組。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6736423/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
@@ -370,7 +3579,7 @@ export const articlesData: NewsPost[] = [
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9889209/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    另一項研究則比較了氣動按摩枕（air massage pillow）與頸椎輪廓枕，結果氣動枕在主觀疼痛強度、機械性疼痛敏感度與頸痛相關功能障礙上均顯著優於輪廓枕。
+    另一項研究則比較了氣動按摩枕與頸椎輪廓枕，結果氣動枕在主觀疼痛強度、機械性疼痛敏感度與頸痛相關功能障礙上均顯著優於輪廓枕。
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/40646690/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
@@ -422,7 +3631,7 @@ export const articlesData: NewsPost[] = [
   <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
     一顆枕頭每天陪你躺八個小時，一年就是將近三千個小時。選枕頭不是小事——它直接影響你頸椎的長期健康、睡眠品質，甚至白天的精神狀態。從醫學實證的角度，選枕頭的核心原則很簡單：<strong style="color: #1e293b;">在你的睡姿下，讓頸椎維持自然對齊。</strong>
-  </p>
+  </p><br>
   <p style="color: #475569; font-size: 1.05rem;">
     側睡需要夠高、夠硬的枕頭填補肩頸空隙；仰睡需要中等高度加上頸椎支撐；有凹洞的頸椎枕適合仰睡族，側睡族則不一定合適。材質以乳膠或記憶棉優於羽絨，枕頭也需要定期更換。如果你長期受晨起頸痛或肩膀僵硬困擾，不要只靠換枕頭解決——<strong style="color: #1e293b;">背後可能有頸椎間盤或關節的結構性問題，需要醫療評估才能對症處理。</strong>
   </p>
@@ -436,7 +3645,7 @@ export const articlesData: NewsPost[] = [
        target="_blank"
        rel="noopener noreferrer"
        style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
-        預約門診評估頸椎與睡眠姿勢
+        預約門診評估頸椎
     </a>
   </div>
 </div>
@@ -531,12 +3740,12 @@ referencesHtml: `
 
 {
   id: 'crossed-syndrome-analysis',
-  title: '交叉症候群完整解析：背肌緊繃怎麼辦？訓練背肌反而讓背更緊？運動醫學告訴你真相',
+  title: '交叉症候群完整解析：訓練背肌反而讓背更緊？',
   lastModified: '2026-04-23',
   category: '衛教文章',
   date: '2026-04-23',
   summary: '交叉症候群是現代人最常見的姿勢失衡問題，許多人深受背肌緊繃之苦，卻擔心「訓練背肌會讓肌肉更緊」。本文以運動醫學實證為基礎，解析上下交叉症候群的成因、為何緊繃的背肌其實需要訓練、哪些動作最有效，以及腹背肌力比例的科學建議。',
-  coverImage: '/images/news/article/crossed-syndrome/cover.webp',
+  coverImage: '/images/news/article/crossed-syndrome.webp',
   seoTitle: '交叉症候群完整解析：背肌緊繃訓練方法與腹背肌力比例建議',
   seoDescription: '交叉症候群是現代人最常見的姿勢失衡問題。本文以運動醫學實證為基礎，解析上下交叉症候群的成因、為何緊繃的背肌其實需要訓練、哪些動作最有效，以及腹背肌力比例的科學建議。',
   keywords: [
@@ -554,7 +3763,7 @@ referencesHtml: `
 <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
   <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
   <p style="margin-bottom: 0.75rem; line-height: 1.6; color: #334155;">
-    交叉症候群（Crossed Syndrome）是由捷克神經學家 Vladimir Janda 提出的肌肉失衡理論，描述身體因長期姿勢不良造成的「緊繃肌群」與「無力肌群」交叉對角分布的現象。許多人背肌緊繃感明顯，直覺認為是背肌「太強了」，其實恰恰相反——緊繃的背肌通常代表它正在代償其他無力肌群、長期過勞所致，本質上是一種弱化的緊繃（weakness-induced tightness）。
+    交叉症候群（Crossed Syndrome）是由捷克神經學家 Vladimir Janda 提出的肌肉失衡理論，描述身體因長期姿勢不良造成的「緊繃肌群」與「無力肌群」交叉對角分布的現象。許多人背肌緊繃感明顯，直覺認為是背肌「太強了」，其實恰恰相反——緊繃的背肌通常代表它正在代償其他無力肌群、長期過勞所致，本質上是一種弱化的緊繃。
   </p>
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
     研究顯示，針對性的強化訓練——特別是強化無力肌群（臀肌、深層腹肌、中下斜方肌）而非一味拉伸——才是改善交叉症候群的關鍵。腹部與背部的訓練量比例建議以 <strong>1.5:1 至 2:1（腹：背）</strong> 為起點，同時搭配背肌強化，讓整個核心系統達到動態平衡。
@@ -1015,10 +4224,10 @@ referencesHtml: `
   
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
     交叉症候群不是一個需要害怕的診斷，而是一個需要正確理解的姿勢問題。背肌緊繃的背後，往往是臀肌、深層腹肌、中下斜方肌長期「罷工」的結果；而緊繃的背肌正在默默承擔著不屬於它的工作。
-  </p>
+  </p><br>
   
   <p style="color: #475569; font-size: 1.05rem;">
-    正確的策略不是更多的按摩、更久的拉伸，而是<strong style="color: #1e293b;">有系統地喚醒沉睡的肌群、建立正確的神經肌肉控制模式</strong>。從今天開始，把死蟲式、鳥狗式、臀橋加入你的日常，6–8 週後，你將感受到背部緊繃感的真正改變。如果你對自己的評估有疑慮，或症狀合併有放射性疼痛，<strong style="color: #1e293b;">建議預約門診，進行精準的動作評估與個人化訓練計畫規劃。</strong>
+    正確的策略不是更多的按摩、更久的拉伸，而是<strong style="color: #1e293b;">有系統地喚醒沉睡的肌群、建立正確的神經肌肉控制模式</strong>。<br>從今天開始，把死蟲式、鳥狗式、臀橋加入你的日常，6–8 週後，你將感受到背部緊繃感的真正改變。如果你對自己的評估有疑慮，或症狀合併有放射性疼痛，<strong style="color: #1e293b;">建議預約門診，進行精準的動作評估與個人化訓練計畫規劃。</strong>
   </p>
 
   <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
@@ -1031,7 +4240,7 @@ referencesHtml: `
        target="_blank" 
        rel="noopener noreferrer" 
        style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
-        預約林醫師門診評估
+        預約運動醫學門診評估
     </a>
   </div>
 </div>
@@ -1115,7 +4324,7 @@ referencesHtml: `
   lastModified: '2026-04-22',
   category: '衛教文章',
   date: '2026-04-22',
-  coverImage: '/images/news/article/osteoporosis-calcium-guide.webp',
+  coverImage: '/images/news/article/back-muscle-training-guide.webp',
   summary: '從運動醫學角度深度解析背肌訓練：EMG研究揭露哪個動作活化效果最強、預防上交叉症候群必練的五條肌肉，以及背部與胸部訓練量的黃金比例。科學訓練，不再駝背。',
   seoTitle: '背肌訓練完全指南：哪個動作效果最好？如何預防上交叉症候群？',
   seoDescription: '從運動醫學角度深度解析背肌訓練：EMG研究揭露哪個動作活化效果最強、預防上交叉症候群必練的五條肌肉，以及背部與胸部訓練量的黃金比例。科學訓練，不再駝背。',
@@ -1585,8 +4794,7 @@ referencesHtml: `
 
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
     背肌訓練從來不是只有「練好看」這件事。從運動醫學的角度，一個均衡的背部訓練計劃，是保護頸椎、肩關節與腰椎的最根本投資。引體向上給你闊背肌的力量，划船給你肩胛骨的穩定，臉拉給你抵抗圓肩的後盾，矯正動作給你日常生活的姿勢基礎——這四者缺一，你的背就永遠練不完整。
-  </p>
-
+  </p><br>
   <p style="color: #475569; font-size: 1.05rem;">
     最重要的第一步，是誠實評估自己的現況：你的推拉比例是否平衡？你有沒有頭前傾或圓肩的跡象？<strong style="color: #1e293b;">預防上交叉症候群，不需要昂貴的器材，只需要對的觀念與持之以恆的執行。</strong> 如果你的肩頸已有長期不適、或是不確定自己的訓練方向是否正確，歡迎預約評估，讓專業的運動醫學分析幫助你找到最適合自己身體的訓練策略。
   </p>
@@ -1702,7 +4910,7 @@ referencesHtml: `
 <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
   <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-    骨質疏鬆症（Osteoporosis）不是老化的必然宿命，而是可以透過科學方法積極介入的疾病。補鈣是骨鬆治療與預防的基礎策略，但「補鈣」並不是買一罐鈣片就了事。研究顯示，鈣的形式影響吸收率，檸檬酸鈣（Calcium Citrate）的生物利用率比碳酸鈣（Calcium Carbonate）高出約22至27%，尤其對胃酸分泌不足的中老年人更為關鍵。
+    骨質疏鬆症（Osteoporosis）不是老化的必然宿命，而是可以透過科學方法積極介入的疾病。補鈣是骨鬆治療與預防的基礎策略，但「補鈣」並不是買一罐鈣片就了事。研究顯示，鈣的形式影響吸收率，檸檬酸鈣（Calcium Citrate）的生物利用率比碳酸鈣（Calcium Carbonate）高出約22至27%，尤其對胃酸分泌不足的中老年人更為關鍵。<br><br>
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10861607/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
     每日鈣質攝取建議量因年齡而異，50歲以上女性建議達到每日1200毫克，而維他命D3每日補充量應在800至2000 IU之間，才能有效協助鈣質吸收並降低跌倒與骨折風險。
     <sup><a href="https://www.osteoporosis.foundation/patients/prevention/vitamin-d" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>
@@ -2169,7 +5377,7 @@ referencesHtml: `
        target="_blank" 
        rel="noopener noreferrer" 
        style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
-        預約運動醫學門診評估
+        預約骨鬆門診評估
     </a>
   </div>
 </div>
@@ -2283,7 +5491,8 @@ referencesHtml: `
 <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
   <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-    重量訓練的成效，有一半取決於你離開健身房之後的飲食決策。運動醫學研究清楚顯示，蛋白質是肌肉合成不可缺少的原料，每日建議攝取量為體重每公斤 1.6–2.2 公克，分次攝取效果優於單次大量補充。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup> 碳水化合物負責補充訓練消耗的肝醣，不是「增胖元凶」，而是肌肉運作的燃料。蔬菜則透過抗氧化物質與微量礦物質，協助訓練後的組織修復與發炎調控。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34445067/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup> 至於市面上琳瑯滿目的營養補充品，真正有充分科學證據支持的只有少數幾種——其餘大多是行銷噱頭。本文將以實證為基礎，用你看得懂的語言，一次說清楚重訓飲食的正確策略。
+    重量訓練的成效，有一半取決於你離開健身房之後的飲食決策。運動醫學研究清楚顯示，蛋白質是肌肉合成不可缺少的原料，每日建議攝取量為體重每公斤 1.6–2.2 公克，分次攝取效果優於單次大量補充。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup> 碳水化合物負責補充訓練消耗的肝醣，不是「增胖元凶」，而是肌肉運作的燃料。蔬菜則透過抗氧化物質與微量礦物質，協助訓練後的組織修復與發炎調控。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34445067/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup> <br><br>
+    至於市面上琳瑯滿目的營養補充品，真正有充分科學證據支持的只有少數幾種——其餘大多是行銷噱頭。本文將以實證為基礎，用你看得懂的語言，一次說清楚重訓飲食的正確策略。
   </p>
 </div>
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -2687,7 +5896,7 @@ referencesHtml: `
        target="_blank"
        rel="noopener noreferrer"
        style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
-        預約運動醫學飲食評估
+        預約運動醫學評估
     </a>
   </div>
 </div>
@@ -2778,7 +5987,7 @@ referencesHtml: `
 
 {
 id: 'baseball-pitching-biomechanics-injuries',
-  title: '棒球各種球路的運動傷害全解析：指叉球、四縫線、滑球，誰更容易讓投手受傷？',
+  title: '棒球各種球路及運動傷害全解析？',
   lastModified: '2026-04-22',
   category: '衛教文章',
   date: '2026-04-22',
@@ -2804,12 +6013,11 @@ contentHtml: `
   <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
     棒球投球動作是人體所能產生最快速的上肢運動之一，肩關節在出手前的外旋速度可達每秒 7,000 至 7,700 度，肘部內側韌帶（UCL）在每次投球時承受的扭力高達 50 牛頓·米，幾乎與 UCL 的撕裂臨界值相當。<br><br>
-    <sup><a href="#ref10">[10]</a></sup> 不同球路因握球方式、手腕角度與施力模式的差異，對上肢各結構造成截然不同的損傷模式：四縫線快速球的高球速與高轉速會累積 UCL 疲勞；指叉球的大張指間距使屈肌群承受異常張力；滑球在加速期產生的額外旋前扭矩加劇外側肘部負擔；而噴射球（sweeper）因誇張的橫向位移，與更大的肩關節側向負荷有關。<br><br>
-    本文以運動醫學實證為核心，系統性解析各球路的生物力學特徵與傷害機制，並以大聯盟投手真實案例為佐證，提供預防策略。<sup><a href="#ref1">[1]</a>,<a href="#ref5">[5]</a>,<a href="#ref8">[8]</a></sup>
+    <sup><a href="#ref10" style="color: #0284c7; text-decoration: underline;">[10]</a></sup> 不同球路因握球方式、手腕角度與施力模式的差異，對上肢各結構造成截然不同的損傷模式：四縫線快速球的高球速與高轉速會累積 UCL 疲勞；指叉球的大張指間距使屈肌群承受異常張力；滑球在加速期產生的額外旋前扭矩加劇外側肘部負擔；而噴射球（sweeper）因誇張的橫向位移，與更大的肩關節側向負荷有關。<br><br>
+    本文以運動醫學實證為核心，系統性解析各球路的生物力學特徵與傷害機制，並以大聯盟投手真實案例為佐證，提供預防策略。<sup><a href="#ref1" style="color: #0284c7; text-decoration: underline;">[1]</a>,<a href="#ref5" style="color: #0284c7; text-decoration: underline;">[5]</a>,<a href="#ref8" style="color: #0284c7; text-decoration: underline;">[8]</a></sup>
   </p>
 </div>
 <hr style="margin: 3rem 0; border-top: 1px solid #334155;">
-<!-- 一、投球為何如此傷身 -->
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
     一、投球動作為什麼對手臂如此「傷」？
@@ -2818,31 +6026,29 @@ contentHtml: `
     棒球投手常被問到：「投球真的那麼傷嗎？」答案是：<strong style="color: #2dd4bf;">是的，而且投球動作被認為是人類所有運動中速度最快、對單一關節施力最集中的動作之一。</strong>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    從生物力學角度來看，一次完整的投球動作分為六個階段：準備期（wind-up）、早期蓄力（early cocking）、晚期蓄力（late cocking）、加速期（acceleration）、減速期（deceleration）與跟進期（follow-through）。<sup><a href="#ref6">[6]</a></sup> 每一個階段都對肩關節、肘關節與前臂肌群施加特定方向的應力，而「動力鏈」（kinetic chain）的概念說明了——從腳踝、膝蓋、髖部、核心到上肢——任何一個環節的失效，都會讓肩肘承受額外的補償性負荷。<sup><a href="#ref7">[7]</a></sup>
+    從生物力學角度來看，一次完整的投球動作分為六個階段：準備期（wind-up）、早期蓄力（early cocking）、晚期蓄力（late cocking）、加速期（acceleration）、減速期（deceleration）與跟進期（follow-through）。<sup><a href="#ref6" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup> 每一個階段都對肩關節、肘關節與前臂肌群施加特定方向的應力，而「動力鏈」（kinetic chain）的概念說明了——從腳踝、膝蓋、髖部、核心到上肢——任何一個環節的失效，都會讓肩肘承受額外的補償性負荷。<sup><a href="#ref7" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    研究指出，肩部與肘部傷害合計佔職業棒球選手所有傷害的 40% 至 50%，而 <strong style="color: #ffffff;">大聯盟歷史上約有 26% 的投手在職業生涯中需要接受尺側副韌帶重建手術（俗稱「Tommy John 手術」）</strong>。<sup><a href="#ref2">[2]</a></sup> 近年來，隨著球速追求的文化盛行，UCL 傷害的發生率更達到歷史新高。<sup><a href="#ref4">[4]</a></sup>
+    研究指出，肩部與肘部傷害合計佔職業棒球選手所有傷害的 40% 至 50%，而 <strong style="color: #ffffff;">大聯盟歷史上約有 26% 的投手在職業生涯中需要接受尺側副韌帶重建手術（俗稱「Tommy John 手術」）</strong>。<sup><a href="#ref2" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup> 近年來，隨著球速追求的文化盛行，UCL 傷害的發生率更達到歷史新高。<sup><a href="#ref4" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
     不同的球路，就像不同的握拍方式，本質上是改變了手指施力點、手腕偏移角度與前臂旋轉模式——這些細微的差別，正是決定哪個結構最先「出問題」的關鍵。
   </p>
 </section>
 <hr style="margin: 3rem 0; border-top: 1px solid #334155;">
-<!-- 二、各球路介紹與傷害分析 -->
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
     二、各球路詳解：握法、原理與運動傷害風險
   </h2>
-  <!-- 四縫線快速球 -->
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">四縫線快速球（4-Seam Fastball）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     <strong style="color: #f8fafc;">握法與原理：</strong>食指與中指橫跨縫線的「馬蹄形」部分，拇指置於球的正下方。投出後球以純後旋（backspin）飛行，產生馬格努斯效應使球路相對平直，是大多數投手的主力球種，大聯盟平均球速約 93–95 mph。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    <strong style="color: #f8fafc;">傷害機制：</strong>四縫線快速球的傷害風險來自<strong style="color: #ffffff;">高球速本身</strong>。研究顯示，四縫線快速球的球速每增加 1 mph，UCL 損傷風險就顯著上升；轉速每高於聯盟平均 100 rpm，接受 UCL 重建手術的機率也增加約 20%。<sup><a href="#ref4">[4]</a></sup> 原因是高球速意味著加速期需要更大的肩部內旋速度，以及更猛烈的減速期離心力，兩者都會對 UCL 和旋轉肌群造成更大的疲勞累積。
+    <strong style="color: #f8fafc;">傷害機制：</strong>四縫線快速球的傷害風險來自<strong style="color: #ffffff;">高球速本身</strong>。研究顯示，四縫線快速球的球速每增加 1 mph，UCL 損傷風險就顯著上升；轉速每高於聯盟平均 100 rpm，接受 UCL 重建手術的機率也增加約 20%。<sup><a href="#ref4" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup> 原因是高球速意味著加速期需要更大的肩部內旋速度，以及更猛烈的減速期離心力，兩者都會對 UCL 和旋轉肌群造成更大的疲勞累積。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    在減速期，肩關節外旋肌群（棘下肌、小圓肌）必須以強大的離心收縮力道「煞住」手臂，若訓練不足或投球過量，極易引發旋轉肌群肌腱病變甚至撕裂。<sup><a href="#ref9">[9]</a></sup> 此外，大聯盟數據顯示，投手在進行 Tommy John 手術前的數場比賽中，四縫線快速球的球速會開始出現顯著下滑——平均在術前 9 場比賽起下降約 0.7 mph——這是 UCL 亞臨床損傷的早期警示信號。<sup><a href="#ref1">[1]</a></sup>
+    在減速期，肩關節外旋肌群（棘下肌、小圓肌）必須以強大的離心收縮力道「煞住」手臂，若訓練不足或投球過量，極易引發旋轉肌群肌腱病變甚至撕裂。<sup><a href="#ref9" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup> 此外，大聯盟數據顯示，投手在進行 Tommy John 手術前的數場比賽中，四縫線快速球的球速會開始出現顯著下滑——平均在術前 9 場比賽起下降約 0.7 mph——這是 UCL 亞臨床損傷的早期警示信號。<sup><a href="#ref1" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
   </p>
   <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見傷害：</p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
@@ -2854,13 +6060,12 @@ contentHtml: `
     <p style="color: #fbbf24; font-weight: bold; margin-bottom: 0.3rem;">🏆 大聯盟案例：Shohei Ohtani</p>
     <p style="color: #94a3b8; margin: 0; line-height: 1.6; font-size: 1.05rem;">大谷翔平在 2023 年球季末期被診斷出 UCL 部分撕裂，最終接受 Tommy John 手術。在受傷前數週，其四縫線快速球球速已出現明顯下降，正是研究文獻所描述的術前典型球速衰退模式。長期以超過 100 mph 的球速投球，加上他同時作為打者的高度使用量，是最主要的風險因素。</p>
   </div>
-  <!-- 二縫線快速球/沉球 -->
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">二縫線快速球 / 沉球（2-Seam Fastball / Sinker）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     <strong style="color: #f8fafc;">握法與原理：</strong>食指與中指沿縫線方向置放，球路帶有明顯的尾勁（arm-side run）與下沉移動，誘使打者擊出滾地球。球速通常比四縫線慢 1–3 mph，但尾勁能製造更多接觸。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    <strong style="color: #f8fafc;">傷害機制：</strong>根據近期大聯盟研究，沉球是所有球路中<strong style="color: #ffffff;">球速對 UCL 傷害風險影響最大的球種</strong>——沉球的球速每增加 1 mph，需要接受 UCL 重建手術的機率就提高約 30%。<sup><a href="#ref4">[4]</a></sup> 研究者推測，這與沉球投出時手部「壓球」動作（pronation）需要前臂屈肌群大量啟動，在UCL 已存在亞臨床損傷時造成更大的外翻應力有關。<sup><a href="#ref8">[8]</a></sup>
+    <strong style="color: #f8fafc;">傷害機制：</strong>根據近期大聯盟研究，沉球是所有球路中<strong style="color: #ffffff;">球速對 UCL 傷害風險影響最大的球種</strong>——沉球的球速每增加 1 mph，需要接受 UCL 重建手術的機率就提高約 30%。<sup><a href="#ref4" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup> 研究者推測，這與沉球投出時手部「壓球」動作（pronation）需要前臂屈肌群大量啟動，在UCL 已存在亞臨床損傷時造成更大的外翻應力有關。<sup><a href="#ref8" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
   </p>
   <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見傷害：</p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
@@ -2868,13 +6073,12 @@ contentHtml: `
     <li style="margin-bottom: 0.5rem;">屈肌旋前肌群（flexor-pronator mass）拉傷</li>
     <li style="margin-bottom: 0.5rem;">前臂屈肌群慢性肌腱病變</li>
   </ul>
-  <!-- 滑球 / Slider -->
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">滑球（Slider）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     <strong style="color: #f8fafc;">握法與原理：</strong>食指與中指置於縫線稍外側，手腕在出手瞬間向拇指側切割（cocked wrist cut），產生帶有橫向與垂直複合位移的高速破壞球。球速介於快速球與曲球之間，因此打者難以判斷。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    <strong style="color: #f8fafc;">傷害機制：</strong>滑球在加速期需要前臂做出異常的旋後（supination）切割動作，這個動作對肘部外側結構——特別是橈骨頭與肱骨小頭之間的接觸面——產生額外壓迫，同時對 UCL 也構成重複性外翻應力。研究發現，滑球轉速越高，UCL 損傷風險越顯著；同時，較高的滑球球速也與 UCL 手術直接相關。<sup><a href="#ref8">[8]</a></sup> 青少年投手（肘關節骨骺尚未閉合）若過早學習滑球，有更高機率出現「小聯盟肘」（medial epicondyle apophysitis）。<sup><a href="#ref3">[3]</a></sup>
+    <strong style="color: #f8fafc;">傷害機制：</strong>滑球在加速期需要前臂做出異常的旋後（supination）切割動作，這個動作對肘部外側結構——特別是橈骨頭與肱骨小頭之間的接觸面——產生額外壓迫，同時對 UCL 也構成重複性外翻應力。研究發現，滑球轉速越高，UCL 損傷風險越顯著；同時，較高的滑球球速也與 UCL 手術直接相關。<sup><a href="#ref8" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup> 青少年投手（肘關節骨骺尚未閉合）若過早學習滑球，有更高機率出現「小聯盟肘」（medial epicondyle apophysitis）。<sup><a href="#ref3" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
   </p>
   <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見傷害：</p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
@@ -2888,13 +6092,12 @@ contentHtml: `
       滑球的危險常被誤解為「切割動作傷手腕」，但臨床上更常見的是：滑球高比例使用後，肘部外側骨軟骨面出現退化性改變，以「過伸肘關節時的鎖住感」或「熱身後仍有殘餘疼痛感」為首發症狀，影像學（MRI 或 CT）才能確認病變範圍。這類傷害若在症狀早期介入，多數可保守治療；一旦進入游離體（loose body）階段，則需關節鏡清創。
     </p>
   </div>
-  <!-- 曲球 / Curveball -->
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">曲球（Curveball）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     <strong style="color: #f8fafc;">握法與原理：</strong>中指沿縫線扣緊，食指輔助，出手時拇指往上、手腕前翻（pronation + wrist snap），使球產生12點鐘至6點鐘方向的正旋（topspin），球路向下急墜。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    <strong style="color: #f8fafc;">傷害機制：</strong>長期以來曲球被認為是「最傷手肘的球種」，但現代生物力學研究的結論更為細緻。Fleisig 等人的研究顯示，<strong style="color: #ffffff;">曲球產生的肘部外翻扭矩並不比快速球更高</strong>，但曲球的手腕「卡頓感」（snap）與前臂旋前模式確實與特定肌腱負荷有關。<sup><a href="#ref6">[6]</a></sup> 研究指出，曲球球速每高於聯盟平均 1 mph，UCL 手術機率增加約 11%——低於沉球的 30%，但仍有統計顯著意義。<sup><a href="#ref4">[4]</a></sup> 最大的問題在於青少年階段：在神經肌肉控制尚未成熟的情況下，不良的曲球機制會對骨骺板（growth plate）造成反覆拉扯。<sup><a href="#ref3">[3]</a></sup>
+    <strong style="color: #f8fafc;">傷害機制：</strong>長期以來曲球被認為是「最傷手肘的球種」，但現代生物力學研究的結論更為細緻。Fleisig 等人的研究顯示，<strong style="color: #ffffff;">曲球產生的肘部外翻扭矩並不比快速球更高</strong>，但曲球的手腕「卡頓感」（snap）與前臂旋前模式確實與特定肌腱負荷有關。<sup><a href="#ref6" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup> 研究指出，曲球球速每高於聯盟平均 1 mph，UCL 手術機率增加約 11%——低於沉球的 30%，但仍有統計顯著意義。<sup><a href="#ref4" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup> 最大的問題在於青少年階段：在神經肌肉控制尚未成熟的情況下，不良的曲球機制會對骨骺板（growth plate）造成反覆拉扯。<sup><a href="#ref3" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
   </p>
   <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見傷害：</p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
@@ -2902,7 +6105,6 @@ contentHtml: `
     <li style="margin-bottom: 0.5rem;">青少年內側骨骺板撕裂傷（「小聯盟肘」）</li>
     <li style="margin-bottom: 0.5rem;">UCL 反覆微創傷（高球速曲球）</li>
   </ul>
-  <!-- 指叉球 / Splitter -->
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">指叉球（Split-Finger Fastball / Splitter）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     <strong style="color: #f8fafc;">握法與原理：</strong>食指與中指「劈叉」般大張分開，夾住球的縫線兩側，拇指托於下方。由於手指間距極大，球在離指後陀螺效應減弱，在好球帶前方急速下墜，視覺上如快速球卻突然「落桌」。大谷翔平的指叉球落差被形容為「桌子崩塌」（fall off a table）。
@@ -2911,13 +6113,13 @@ contentHtml: `
     <strong style="color: #f8fafc;">傷害機制：</strong>指叉球長期以來在美職球界被視為高風險球路，其傷害機制主要有兩個層面：
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    第一，<strong style="color: #ffffff;">屈肌腱滑車（A4 pulley）斷裂風險</strong>：由於手指被強迫大張，在出手瞬間指尖反抗球離去的力道，對中指屈肌腱滑車系統產生強大的伸張應力。研究指出，A4 滑車斷裂是職業快速球投手的特有傷害，患者常在出手瞬間感到「啪」聲，並出現中指掌側中節疼痛與腫脹。<sup><a href="#ref13">[13]</a></sup>
+    第一，<strong style="color: #ffffff;">屈肌腱滑車（A4 pulley）斷裂風險</strong>：由於手指被強迫大張，在出手瞬間指尖反抗球離去的力道，對中指屈肌腱滑車系統產生強大的伸張應力。研究指出，A4 滑車斷裂是職業快速球投手的特有傷害，患者常在出手瞬間感到「啪」聲，並出現中指掌側中節疼痛與腫脹。<sup><a href="#ref13" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    第二，<strong style="color: #ffffff;">前臂屈肌群拉傷與 UCL 連帶損傷</strong>：指叉球需要屈肌旋前肌群持續高強度收縮以穩定手腕，若投手在開始嘗試指叉球時沒有適當的漸進訓練，前臂屈肌群極易拉傷。更嚴重的是，研究確認前臂屈肌拉傷與 UCL 手術高度相關——MLB 中有前臂屈肌拉傷的投手，19.4% 在一年內需接受 Tommy John 手術。<sup><a href="#ref12">[12]</a></sup> 知名球探與教練也指出，「首次嘗試指叉球」是前臂拉傷的常見誘因。
+    第二，<strong style="color: #ffffff;">前臂屈肌群拉傷與 UCL 連帶損傷</strong>：指叉球需要屈肌旋前肌群持續高強度收縮以穩定手腕，若投手在開始嘗試指叉球時沒有適當的漸進訓練，前臂屈肌群極易拉傷。更嚴重的是，研究確認前臂屈肌拉傷與 UCL 手術高度相關——MLB 中有前臂屈肌拉傷的投手，19.4% 在一年內需接受 Tommy John 手術。<sup><a href="#ref12" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup> 知名球探與教練也指出，「首次嘗試指叉球」是前臂拉傷的常見誘因。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    由於指叉球的高度投球效益，現代大聯盟（尤其是日籍投手）對此球路的接受度大幅提升，但上述傷害風險並未消失，只是被更積極的「預防性護手程序」所管理。<sup><a href="#ref11">[11]</a></sup>
+    由於指叉球的高度投球效益，現代大聯盟（尤其是日籍投手）對此球路的接受度大幅提升，但上述傷害風險並未消失，只是被更積極的「預防性護手程序」所管理。<sup><a href="#ref11" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
   </p>
   <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見傷害：</p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
@@ -2929,13 +6131,12 @@ contentHtml: `
     <p style="color: #fbbf24; font-weight: bold; margin-bottom: 0.3rem;">🏆 大聯盟案例：Masahiro Tanaka（田中將大）</p>
     <p style="color: #94a3b8; margin: 0; line-height: 1.6; font-size: 1.05rem;">田中將大在 2014 年加盟紐約洋基後，以壓制性的指叉球主宰大聯盟打者。然而，2014 年球季中他的 MRI 顯示 UCL 部分撕裂，所幸選擇保守治療返回先發輪值。這個案例完美呈現了高強度指叉球使用如何在屈肌腱系統疲勞後，連帶暴露 UCL 的潛在脆弱性。</p>
   </div>
-  <!-- 噴射球 / Sweeper -->
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">噴射球（Sweeper）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     <strong style="color: #f8fafc;">握法與原理：</strong>噴射球（sweeper）是近年最受討論的新興球路，本質上是一種「寬滑球（wide slider）」。握法類似傳統滑球，但更偏向球的外側，出手時前臂旋後（supination）幅度更大，產生極誇張的橫向位移（sweep），水平移動距離可超過 20 英寸，垂直位移相對有限。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    <strong style="color: #f8fafc;">傷害機制：</strong>噴射球的大幅度橫向旋後動作，對 UCL 的外翻應力集中於特定角度，與傳統滑球相比，肩關節在側向切割時承受更大的橫向扭矩（glenohumeral joint shear force）。<sup><a href="#ref9">[9]</a></sup> 研究顯示，切球（cutter，噴射球的近親）每 1 英寸的臂側橫向移動對應的 UCL 重建風險增加 36%，是所有球路位移量中影響最大的指標。<sup><a href="#ref4">[4]</a></sup> 噴射球因應用年份尚短，專屬流行病學數據仍在累積中，但現有的生物力學理論已提示其潛在的高風險。
+    <strong style="color: #f8fafc;">傷害機制：</strong>噴射球的大幅度橫向旋後動作，對 UCL 的外翻應力集中於特定角度，與傳統滑球相比，肩關節在側向切割時承受更大的橫向扭矩（glenohumeral joint shear force）。<sup><a href="#ref9" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup> 研究顯示，切球（cutter，噴射球的近親）每 1 英寸的臂側橫向移動對應的 UCL 重建風險增加 36%，是所有球路位移量中影響最大的指標。<sup><a href="#ref4" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup> 噴射球因應用年份尚短，專屬流行病學數據仍在累積中，但現有的生物力學理論已提示其潛檢的高風險。
   </p>
   <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見傷害（推測與現有研究支持）：</p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
@@ -2947,13 +6148,12 @@ contentHtml: `
     <p style="color: #fbbf24; font-weight: bold; margin-bottom: 0.3rem;">🏆 大聯盟案例：Julio Rodríguez 的打者視角</p>
     <p style="color: #94a3b8; margin: 0; line-height: 1.6; font-size: 1.05rem;">噴射球在 2022–2024 年間的大聯盟掀起風潮，多名投手轉型以此球路為主武器。由於此球路對肩肘的長期影響研究尚不充分，美國運動醫學協會（ASMI）與多個球隊運動醫學部門已開始追蹤大量使用噴射球的投手，監控其術前生物力學變化。</p>
   </div>
-  <!-- 變速球 / Changeup -->
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">變速球（Changeup）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     <strong style="color: #f8fafc;">握法與原理：</strong>最常見的握法是「Circle Change」（食指與拇指形成圓圈）或「Palmball」（四指深握球），目的是在與快速球相似的出手動作下顯著降低球速（慢 8–12 mph），製造打者提前揮棒的時機落差。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    <strong style="color: #f8fafc;">傷害機制：</strong>變速球在所有球路中傷害風險相對較低，傳統上被視為「較安全」的變化球選項。然而，近期分析顯示，高能力的變速球（Changeup ability / Stuff+ 更高）與 UCL 手術風險呈現正相關<sup><a href="#ref8">[8]</a></sup>——推測是因為能「好好投出變速球」本身反映了更高的投球量與出力強度，而非變速球動作本身的傷害性。整體而言，變速球在各球路中仍是肘部負荷最低的選擇之一。<sup><a href="#ref5">[5]</a></sup>
+    <strong style="color: #f8fafc;">傷害機制：</strong>變速球在所有球路中傷害風險相對較低，傳統上被視為「較安全」的變化球選項。然而，近期分析顯示，高能力的變速球（Changeup ability / Stuff+ 更高）與 UCL 手術風險呈現正相關<sup><a href="#ref8" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>——推測是因為能「好好投出變速球」本身反映了更高的投球量與出力強度，而非變速球動作本身的傷害性。整體而言，變速球在各球路中仍是肘部負荷最低的選擇之一。<sup><a href="#ref5" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
   </p>
   <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見傷害（相對較低）：</p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
@@ -2962,11 +6162,20 @@ contentHtml: `
   </ul>
 </section>
 <hr style="margin: 3rem 0; border-top: 1px solid #334155;">
-<!-- 三、球路傷害比較表 -->
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
     三、各球路傷害風險比較表
   </h2>
+  <style>
+    .custom-table-container { width: 100%; overflow-x: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+    .modern-table { width: 100%; border-collapse: collapse; font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif; font-size: 15px; background-color: #ffffff; color: #1f2937; min-width: 600px; }
+    .modern-table thead tr { background-color: #1e3a8a; color: #ffffff; font-weight: bold; }
+    .modern-table th { padding: 16px 12px; border-bottom: 2px solid #111827; }
+    .modern-table td { padding: 14px 12px; border-bottom: 1px solid #e5e7eb; line-height: 1.6; }
+    .modern-table td:first-child { background-color: #f9fafb; font-weight: 600; color: #111827; }
+    .modern-table tbody tr:nth-of-type(even) { background-color: #f3f4f6; }
+    .modern-table tbody tr:hover { background-color: #e0e7ff; transition: background-color 0.2s ease; }
+  </style>
   <div class="custom-table-container">
     <table class="modern-table">
       <thead>
@@ -3033,7 +6242,6 @@ contentHtml: `
   </div>
 </section>
 <hr style="margin: 3rem 0; border-top: 1px solid #334155;">
-<!-- 四、投球六階段與傷害關聯 -->
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
     四、投球六階段：哪個階段最容易受傷？
@@ -3043,62 +6251,63 @@ contentHtml: `
   </p>
   <h3 style="font-size: 1.2rem; font-weight: bold; color: #f8fafc; margin-bottom: 0.75rem;">晚期蓄力期（Late Cocking Phase）——肩部傷害高峰</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    此階段肩關節達到極限外旋（約 175°），前方盂肱關節囊與肩唇承受最大張力，同時肩袖棘下肌與小圓肌以強大的向心收縮驅動外旋。反覆的極端外旋是 SLAP 型肩唇撕裂與旋轉肌群 impingement 的根本機制。快速球類球路（尤其是四縫線）在此階段的肩部外旋速度最高，風險最大。<sup><a href="#ref9">[9]</a></sup>
+    此階段肩關節達到極限外旋（約 175°），前方盂肱關節囊與肩唇承受最大張力，同時肩袖棘下肌與小圓肌以強大的向心收縮驅動外旋。反覆的極端外旋是 SLAP 型肩唇撕裂與旋轉肌群 impingement 的根本機制。快速球類球路（尤其是四縫線）在此階段的肩部外旋速度最高，風險最大。<sup><a href="#ref9" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
   </p>
   <h3 style="font-size: 1.2rem; font-weight: bold; color: #f8fafc; margin-bottom: 0.75rem;">加速期（Acceleration Phase）——UCL 傷害高峰</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    從最大外旋到出手點約 0.05 秒，此期間肩關節內旋角速度高達 7,500–7,700 度/秒，肘部外翻扭矩同時達到頂峰。研究確認，加速期的肘部外翻應力是 UCL 損傷的主要機制，而球路類型（尤其是球速與旋轉方向）直接影響此扭矩的大小。<sup><a href="#ref7">[7]</a></sup>
+    從最大外旋到出手點約 0.05 秒，此期間肩關節內旋角速度高達 7,500–7,700 度/秒，肘部外翻扭矩同時達到頂峰。研究確認，加速期的肘部外翻應力是 UCL 損傷的主要機制，而球路類型（尤其是球速與旋轉方向）直接影響此扭矩的大小。<sup><a href="#ref7" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
   </p>
   <h3 style="font-size: 1.2rem; font-weight: bold; color: #f8fafc; margin-bottom: 0.75rem;">減速與跟進期（Deceleration / Follow-through）——旋轉肌群傷害高峰</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    出手後，肩袖肌群必須以強大的離心收縮力道「煞住」時速超過 100 mph 的臂部動作，此期間後旋轉肌群（棘下肌、小圓肌）的離心負荷最大，是慢性旋轉肌群肌腱炎與後方肩唇損傷的高發期。<sup><a href="#ref6">[6]</a></sup> 高球速、高投球數的四縫線或沉球投手在減速期的旋轉肌群疲勞最為明顯。
+    出手後，肩袖肌群必須以強大的離心收縮力道「煞住」時速超過 100 mph 的臂部動作，此期間後旋轉肌群（棘下肌、小圓肌）的離心負荷最大，是慢性旋轉肌群肌腱炎與後方肩唇損傷的高發期。<sup><a href="#ref6" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup> 高球速、高投球數的四縫線或沉球投手在減速期的旋轉肌群疲勞最為明顯。
   </p>
 </section>
 <hr style="margin: 3rem 0; border-top: 1px solid #334155;">
-<!-- 五、肩肘以外的傷害 -->
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
     五、肩肘以外：投手常被忽視的其他傷害
   </h2>
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">手部傷害：不只是「捏球」那麼簡單</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    手部傷害是大聯盟野手（含捕手）因傷停賽的最主要原因，但對投手同樣不容輕忽。研究顯示，手部與手腕傷害的中位數停賽天數雖僅約 4 天，但手部骨折或肌腱受傷若處理不當，將長期影響握球感與旋轉控制。<sup><a href="#ref13">[13]</a></sup> 常見問題包括：鉤骨鉤骨折（hook of hamate fracture，主要發生在打擊側）、拇指 UCL 損傷，以及前述的 A4 屈肌腱滑車斷裂。
+    手部傷害是大聯盟野手（含捕手）因傷停賽的最主要原因，但對投手同樣不容輕忽。研究顯示，手部與手腕傷害的中位數停賽天數雖僅約 4 天，但手部骨折或肌腱受傷若處理不當，將長期影響握球感與旋轉控制。<sup><a href="#ref13" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup> 常見問題包括：鉤骨鉤骨折（hook of hamate fracture，主要發生在打擊側）、拇指 UCL 損傷，以及前述的 A4 屈肌腱滑車斷裂。
   </p>
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">核心與下肢：動力鏈的隱形推手</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    棒球投球動作有 50% 以上的球速來自下肢與軀幹的動力，若動力鏈任何環節失效——如髖部旋轉角度不足、核心控制能力差——上肢會被迫以更大的局部代償補足速度，加速肩肘組織的疲勞。常見的「替代性傷害」包括腰椎旋轉肌群拉傷、腹斜肌拉傷，以及膝關節（支撐腳）的旋轉應力傷害。<sup><a href="#ref10">[10]</a></sup>
+    棒球投球動作有 50% 以上的球速來自下肢與軀幹的動力，若動力鏈任何環節失效——如髖部旋轉角度不足、核心控制能力差——上肢會被迫以更大的局部代償補足速度，加速肩肘組織的疲勞。常見的「替代性傷害」包括腰椎旋轉肌群拉傷、腹斜肌拉傷，以及膝關節（支撐腳）的旋轉應力傷害。<sup><a href="#ref10" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
   </p>
 </section>
 <hr style="margin: 3rem 0; border-top: 1px solid #334155;">
-📢 六、常見三大誤區解析
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 六、常見三大誤區解析
     </h2>
     <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
       <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
         <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
         <div>
           <strong>「曲球比快速球更傷手肘」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過時觀念！</strong> 現代生物力學研究（Fleisig 等人，ASMI）已確認，正確投出的曲球其肘部外翻扭矩並不高於快速球。<sup><a href="#ref3">[3]</a></sup> 真正的問題在於青少年尚未具備足夠的神經肌肉控制，在不成熟的機制下強投曲球，才會對骨骺板造成傷害。成熟投手的曲球傷害風險遠低於外界印象。</span>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過時觀念！</strong> 現代生物力學研究（Fleisig 等人，ASMI）已確認，正確投出的曲球其肘部外翻扭矩並不高於快速球。<sup><a href="#ref3" style="color: #2563eb; text-decoration: underline;">[3]</a></sup> 真正的問題在於青少年尚未具備足夠的神經肌肉控制，在不成熟的機制下強投曲球，才會對骨骺板造成傷害。成熟投手的曲球傷害風險遠低於外界印象。</span>
         </div>
       </li>
       <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
         <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
         <div>
           <strong>「指叉球比曲球更安全，因為不需要手腕翻轉」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>片面理解！</strong> 指叉球確實不需要曲球式的手腕卡頓動作，但其大張指間距對屈肌腱滑車系統的應力，以及與前臂屈肌群拉傷/UCL 損傷的連帶性，都使其成為需要謹慎漸進練習的球路。<sup><a href="#ref12">[12]</a></sup> 初學者在沒有充分熱身與肌力基礎的情況下大量練習指叉球，是前臂拉傷的高風險行為。</span>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>片面理解！</strong> 指叉球確實不需要曲球式的手腕卡頓動作，但其大張指間距對屈肌腱滑車系統的應力，以及與前臂屈肌群拉傷/UCL 損傷的連帶性，都使其成為需要謹慎漸進練習的球路。<sup><a href="#ref12" style="color: #2563eb; text-decoration: underline;">[12]</a></sup> 初學者在沒有充分熱身與肌力基礎的情況下大量練習指叉球，是前臂拉傷的高風險行為。</span>
         </div>
       </li>
       <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
         <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
         <div>
           <strong>「Tommy John 手術後投手就可以完全恢復，不用擔心」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過於樂觀！</strong> 雖然 Tommy John 手術後大聯盟投手的重返賽場率（RTP）達 80–97%，但<strong>重返相同競技水準</strong>的比例僅 67–87%，且快速球使用比例和整體工作量在術後顯著下降。<sup><a href="#ref2">[2]</a></sup> 手術是最後手段，術前的預防與保守治療才是優先選項。</span>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過於樂觀！</strong> 雖然 Tommy John 手術後大聯盟投手的重返賽場率（RTP）達 80–97%，但<strong>重返相同競技水準</strong>的比例僅 67–87%，且快速球使用比例和整體工作量在術後顯著下降。<sup><a href="#ref2" style="color: #2563eb; text-decoration: underline;">[2]</a></sup> 手術是最後手段，術前的預防與保守治療才是優先選項。</span>
         </div>
       </li>
     </ul>
   </div>
 </section>
 <hr style="margin: 3rem 0; border-top: 1px solid #334155;">
-<!-- 七、預防策略 -->
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
     七、科學預防：從投球數管理到力量訓練
@@ -3108,22 +6317,22 @@ contentHtml: `
   </p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
     <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">嚴格執行投球數限制：</strong>研究明確指出，超過青少年投球數建議的投手，成年後需要 Tommy John 手術的機率顯著上升。<sup><a href="#ref3">[3]</a></sup> 對成人投手而言，每場比賽投球數、累積季賽量以及是否「帶傷投球」是最關鍵的管理指標。
+      <strong style="color: #ffffff;">嚴格執行投球數限制：</strong>研究明確指出，超過青少年投球數建議的投手，成年後需要 Tommy John 手術的機率顯著上升。<sup><a href="#ref3" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup> 對成人投手而言，每場比賽投球數、累積季賽量以及是否「帶傷投球」是最關鍵的管理指標。
     </li>
     <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">避免帶傷或疲勞投球：</strong>投球後的疲勞狀態會顯著改變動作模式，研究顯示投球約 100 球後，肩部旋轉力下降 10–14%，握力下降 8%。<sup><a href="#ref7">[7]</a></sup> 疲勞投球是傷害風險的乘數器，而非加法器。
+      <strong style="color: #ffffff;">避免帶傷或疲勞投球：</strong>投球後的疲勞狀態會顯著改變動作模式，研究顯示投球約 100 球後，肩部旋轉力下降 10–14%，握力下降 8%。<sup><a href="#ref7" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup> 疲勞投球是傷害風險的乘數器，而非加法器。
     </li>
     <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">動力鏈強化訓練：</strong>髖部旋轉肌群、核心穩定肌群與肩胛骨穩定肌群的訓練，可有效分擔肩肘的局部負荷。研究確認，動力鏈任何環節的不足都會直接增加上肢的代償性應力。<sup><a href="#ref10">[10]</a></sup>
+      <strong style="color: #ffffff;">動力鏈強化訓練：</strong>髖部旋轉肌群、核心穩定肌群與肩胛骨穩定肌群的訓練，可有效分擔肩肘的局部負荷。研究確認，動力鏈任何環節的不足都會直接增加上肢的代償性應力。<sup><a href="#ref10" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
     </li>
     <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">後旋轉肌群伸展（Sleeper Stretch 等）：</strong>投球後肩關節內旋活動度下降（GIRD，glenohumeral internal rotation deficit）是 UCL 損傷與肩唇損傷的已知風險因素。<sup><a href="#ref10">[10]</a></sup> 在投球後 30 分鐘內進行後方關節囊伸展，有助於維持肩部旋轉總角度。
+      <strong style="color: #ffffff;">後旋轉肌群伸展（Sleeper Stretch 等）：</strong>投球後肩關節內旋活動度下降（GIRD，glenohumeral internal rotation deficit）是 UCL 損傷與肩唇損傷的已知風險因素。<sup><a href="#ref10" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup> 在投球後 30 分鐘內進行後方關節囊伸展，有助於維持肩部旋轉總角度。
     </li>
     <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">球速及球路的漸進式引入：</strong>新球路（尤其是指叉球）應在充分的前臂肌力基礎上，以低強度、低球數的方式逐漸引入，切忌在已有前臂不適的情況下嘗試。<sup><a href="#ref11">[11]</a></sup>
+      <strong style="color: #ffffff;">球速及球路的漸進式引入：</strong>新球路（尤其是指叉球）應在充分的前臂肌力基礎上，以低強度、低球數的方式逐漸引入，切忌在已有前臂不適的情況下嘗試。<sup><a href="#ref11" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
     </li>
     <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">生物力學分析：</strong>肩部外旋角度不足、踏板步長過短或上軀幹側傾，都是已知的「高危機制」，建議投手定期接受動作分析。<sup><a href="#ref7">[7]</a></sup>
+      <strong style="color: #ffffff;">生物力學分析：</strong>肩部外旋角度不足、踏板步長過短或上軀幹側傾，都是已知的「高危機制」，建議投手定期接受動作分析。<sup><a href="#ref7" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
     </li>
   </ul>
   <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
@@ -3134,7 +6343,6 @@ contentHtml: `
   </div>
 </section>
 <hr style="margin: 3rem 0; border-top: 1px solid #334155;">
-<!-- FAQ -->
 <section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.4);">
   <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
     <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
@@ -3146,19 +6354,19 @@ contentHtml: `
       Q1：肘部輕微疼痛，但還能投球，需要就醫嗎？
     </h3>
     <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
-      需要盡快就醫。棒球投手的肘部疼痛——尤其是內側——往往是 UCL 或前臂屈肌群損傷的早期信號。研究顯示，前臂屈肌拉傷的投手中，有近 20% 在一年內需要 Tommy John 手術。<sup><a href="#ref12">[12]</a></sup> 「還能投球」並不代表組織沒有損傷，帶傷投球只會加速結構的破壞。
+      需要盡快就醫。棒球投手的肘部疼痛——尤其是內側——往往是 UCL 或前臂屈肌群損傷的早期信號。研究顯示，前臂屈肌拉傷的投手中，有近 20% 在一年內需要 Tommy John 手術。<sup><a href="#ref12" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup> 「還能投球」並不代表組織沒有損傷，帶傷投球只會加速結構的破壞。
     </p>
     <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold;">
       Q2：Tommy John 手術後真的可以完全恢復嗎？
     </h3>
     <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
-      大多數投手可以重返投球，但需要約 12–15 個月的完整復健。研究顯示大聯盟投手重返相同競技水準的比率約 67–87%，快速球使用比例與工作量在術後往往有所調整。<sup><a href="#ref2">[2]</a></sup> 修復手術效果也比重建手術更不確定，因此預防永遠優於治療。
+      大多數投手可以重返投球，但需要約 12–15 個月的完整復健。研究顯示大聯盟投手重返相同競技水準的比率約 67–87%，快速球使用比例與工作量在術後往往有所調整。<sup><a href="#ref2" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup> 修復手術效果也比重建手術更不確定，因此預防永遠優於治療。
     </p>
     <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold;">
       Q3：青少年可以學曲球或指叉球嗎？
     </h3>
     <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
-      ASMI 的建議是：優先學習快速球的正確機制，其次是換球速（變速球），再考慮曲球。<sup><a href="#ref3">[3]</a></sup> 指叉球因對屈肌腱系統的高要求，一般建議在骨骼成熟（約 17 歲以後）且具備扎實的前臂肌力後才引入。最重要的是：正確的動作機制 > 球路的種類選擇。
+      ASMI 的建議是：優先學習快速球的正確機制，其次是換球速（變速球），再考慮曲球。<sup><a href="#ref3" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup> 指叉球因對屈肌腱系統的高要求，一般建議在骨骼成熟（約 17 歲以後）且具備扎實的前臂肌力後才引入。最重要的是：正確的動作機制 > 球路的種類選擇。
     </p>
     <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold;">
       Q4：業餘選手需要擔心這些傷害嗎？
@@ -3170,12 +6378,11 @@ contentHtml: `
       Q5：感覺投球後肩膀特別緊，這正常嗎？
     </h3>
     <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
-      投球後肩關節後方緊縮感（GIRD）是投球運動的正常適應，但若超過 72 小時仍未緩解，或伴隨有夜間痛、臂力明顯下降，則需要專業評估。研究確認，總旋轉角度的慢性下降是肩部肌腱與 UCL 傷害的已知前驅因素。<sup><a href="#ref10">[10]</a></sup> 投球後的正確伸展與恢復程序是預防此問題的最有效方法。
+      投球後肩關節後方緊縮感（GIRD）是投球運動的正常適應，但若超過 72 小時仍未緩解，或伴隨有夜間痛、臂力明顯下降，則需要專業評估。研究確認，總旋轉角度的慢性下降是肩部肌腱與 UCL 傷害的已知前驅因素。<sup><a href="#ref10" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup> 投球後的正確伸展與恢復程序是預防此問題的最有效方法。
     </p>
   </div>
 </section>
 <hr style="margin: 3rem 0; border-top: 1px solid #334155;">
-<!-- 結語 -->
 <div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
   <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
@@ -3189,8 +6396,18 @@ contentHtml: `
       💡 立即行動：對照本文的球路傷害比較表，檢視你常投的球種，並在下次投球訓練時特別留意手肘內側與前臂的感受。若有任何超過 72 小時仍未緩解的不適，請尋求專業運動醫學評估。
     </p>
   </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約運動醫學專科門診評估
+    </a>
+  </div>
 </div>
 <hr style="margin: 3rem 0; border-top: 1px solid #334155;">
+  `,
+  referencesHtml: `
 <!-- 參考文獻 -->
 <div id="references">
   <h2 style="color: #f1f5f9; font-size: 1.5rem; margin-bottom: 1rem;">📚 參考文獻 (References)</h2>
@@ -3788,8 +7005,8 @@ id: 'tennis-stroke-biomechanics',
     </a>
   </div>
 </div>
-
-<!-- ===== REFERENCES ===== -->
+  `,
+  referencesHtml: `
 <h2>📚 參考文獻 (References)</h2>
 <div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
   <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
@@ -3861,7 +7078,7 @@ id: 'tennis-stroke-biomechanics',
 
 {
   id: 'baseball-hitting-biomechanics',
-  title: '棒球打擊科學全解析：如何打得更遠？運動醫學告訴你關鍵肌群與傷害預防',
+  title: '棒球打擊科學全解析：如何打得更遠？告訴你關鍵肌群與傷害預防',
   lastModified: '2026-04-22',
   category: '衛教文章',
   date: '2026-04-22',
