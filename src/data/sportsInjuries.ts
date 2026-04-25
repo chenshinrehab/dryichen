@@ -92,7 +92,12 @@ export const sportsInjuriesData = [
         description: '深度剖析台灣兒童性早熟的醫學定義與在地成因。從骨齡超前、環境荷爾蒙干擾到飲食誤區，提供全方位的預防對策，幫助家長守護孩子的長高黃金期。',
         image: '/images/news/article/precocious-puberty.webp',
       },
-
+            {
+        slug: 'statin-induced-myalgia-analysis',
+        title: '吃降血脂藥全身痠痛？解析哪種血脂藥容易引發肌肉痛？',
+        description: '深度剖析常見血脂藥（史他汀類藥物）引發肌肉痠痛的原因。實證醫學揭露親脂性與親水性血脂藥在肌肉副作用上的差異，並由林醫師提供臨床換藥與復健的科學改善策略。',
+        image: '/images/news/article/statin-induced-myalgia1.webp',
+      },
     ]
   },
 
@@ -151,6 +156,12 @@ export const sportsInjuriesData = [
     description: '棒球運動醫學角度解析，並分析常見運動傷害。',
     image: '/images/sportinjury/3.webp',
     injuries: [
+                  {
+        slug: 'baseball-necklace-analysis',
+        title: '棒球員戴磁力項鍊與金項鍊，真的能提升表現嗎？',
+        description: '深度剖析大聯盟與職棒球員配戴磁力、鈦金屬與純金項鍊的背後科學。醫學實證揭露磁力項鍊是否能改變血液循環，並從生物力學角度解析金項鍊的重量是否會拖累揮棒表現，為您解碼球場飾品的真相。',
+        image: '/images/news/article/necklace-analysis.webp',
+      },
             {
         slug: 'mlb-tommy-john-surgery-analysis',
         title: '解密 MLB 球員 Tommy John 手術後的真實回歸率與表現變化',
@@ -245,6 +256,27 @@ export const sportsInjuriesData = [
         title: '捕捉皮克敏的終點是復健科？當心成為「痛痛皮友」！',
         description: '玩皮克敏 Bloom 也要注意健康！解析常見的烏龜頸、媽媽手、網球肘、足底筋膜炎等手遊與走路症候群，由復健科醫師提供專業建議，讓你無痛種花。',
         image: '/images/news/article/pikmin.webp',
+
+      },
+                     {
+        slug: 'lumbar-disc-injection-analysis',
+        title: '椎間盤突出免開刀？揭開「椎間盤內注射」的真!!',
+        description: '深度剖析腰椎椎間盤突出接受PRP、羊膜、BMAC等椎間盤內注射的實際療效。實證研究揭露注射無法產生「撐開」神經壓迫的物理效果，傳統腰椎牽引與徒手治療仍是核心，而針對周邊韌帶與小面關節的輔助注射可能更具臨床價值。',
+        image: '/images/news/article/lumbar-injection.webp',
+
+      },
+            {
+        slug: 'cervical-disc-herniation-surgery-analysis',
+        title: '頸椎椎間盤突出要開刀嗎？人工椎間盤置換全解析',
+        description: '頸椎椎間盤突出常造成肩頸疼痛、手麻與無力。多數患者可透過復健獲得改善，但若出現神經進行性受損，則需考慮手術。本文以醫學觀點深入解析人工椎間盤置換術（CDA）與傳統融合手術（ACDF）的優缺點、術後後遺症及台灣自費價格，並探討保守治療與手術的選擇時機。',
+        image: '/images/news/article/cervical-surgery.webp',
+
+      },
+               {
+        slug: 'lumbar-disc-herniation-surgery',
+        title: '腰椎椎間盤突出要開刀??  手術抉擇全解析',
+        description: '腰椎椎間盤突出是造成坐骨神經痛與下背痛的主因之一。本文深入剖析傳統手術與脊椎微創手術（內視鏡/顯微鏡）的優缺點、術後沾黏等後遺症，以及台灣健保與自費價格大公開。實證醫學指出，若復健後症狀改善，人體具備吸收突出的自癒能力；但出現馬尾症候群等紅旗徵兆時，則應盡速評估手術。',
+        image: '/images/news/article/lumbar-disc-herniation-surgery.webp',
 
       },
 
