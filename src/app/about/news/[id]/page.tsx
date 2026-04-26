@@ -426,32 +426,10 @@ const activeCategoryStyle = categoryStyles[post.category] || 'bg-slate-500/10 te
                       <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
                   </div>
 
-                  {/* ✨ 更新：將參考文獻移至內文區塊內，移除內層邊框與背景，使其像一般內文一樣滿版對齊 */}
-                  {post.referencesHtml && (
-                    <div className="mt-8 pt-8 border-t border-slate-700/50">
-                      <div className="flex items-center mb-4">
-                        <i className="fa-solid fa-book-bookmark text-cyan-400 text-lg mr-2"></i>
-                        <h3 className="text-slate-300 text-lg font-bold">參考文獻</h3>
-                      </div>
-                      
-                      <div 
-                        className="references-content w-full text-slate-400 text-sm md:text-base leading-relaxed break-all"
-                        dangerouslySetInnerHTML={{ __html: post.referencesHtml }} 
-                      />
-                      
-                      <div className="mt-6 flex items-center gap-2">
-                        <span className="inline-block w-1.5 h-1.5 rounded-full bg-cyan-500/50 animate-pulse"></span>
-                        <p className="text-[10px] text-slate-500 uppercase tracking-tighter font-medium leading-tight">
-                          Evidence-Based Medicine Research & Clinical Guidelines
-                        </p>
-                      </div>
-                    </div>
-                  )}
-
               </div>
 
               <footer className="mt-0">
-              <div className="mt-0 mb-10 px-4 md:px-10">
+                <div className="mt-0 mb-10 px-4 md:px-10">
                     <div className="bg-slate-800/40 backdrop-blur border border-slate-700 rounded-2xl p-6 md:p-8 shadow-lg relative overflow-hidden">
                       <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
                       
@@ -459,18 +437,18 @@ const activeCategoryStyle = categoryStyles[post.category] || 'bg-slate-500/10 te
                         <div className="flex-grow text-center md:text-left">
                           <div className="mb-2">
                           <h3 className="text-xl font-bold text-white flex flex-col md:flex-row items-center gap-2">
-  本文由 
-  <Link 
-    href="/about/doctors"
-    className="text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer underline underline-offset-4 decoration-cyan-900/50 hover:decoration-cyan-400"
-  >
-    林羿辰醫師
-  </Link> 
-  撰寫與醫學審閱
-  <span className="hidden md:inline-block text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full border border-cyan-500/30 font-normal uppercase tracking-wider">
-    Verified Expert
-  </span>
-</h3>
+                            本文由 
+                            <Link 
+                              href="/about/doctors"
+                              className="text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer underline underline-offset-4 decoration-cyan-900/50 hover:decoration-cyan-400"
+                            >
+                              林羿辰醫師
+                            </Link> 
+                            撰寫與醫學審閱
+                            <span className="hidden md:inline-block text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full border border-cyan-500/30 font-normal uppercase tracking-wider">
+                              Verified Expert
+                            </span>
+                          </h3>
                             <p className="text-sm text-slate-400 mt-1 font-medium">宸新復健科診所院長 / 復健科專科醫師</p>
                           </div>
                           
@@ -508,31 +486,53 @@ const activeCategoryStyle = categoryStyles[post.category] || 'bg-slate-500/10 te
                         </div>
                       </div>
                     </div>
+                </div>
+
+                <div className="bg-slate-900/80 p-8 md:p-12 border-t border-slate-700 text-center relative overflow-hidden">
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent blur-sm"></div>
+                    
+                  <h2 className="text-white font-bold text-2xl mb-3 relative z-10">覺得這篇文章有幫助嗎？</h2>
+                  <p className="text-slate-400 mb-8 text-lg relative z-10">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
+                    
+                  <div className="relative z-10">
+                      <ShareButtons url={currentUrl} title={post.title} />
                   </div>
 
-
-
-                  <div className="bg-slate-900/80 p-8 md:p-12 border-t border-slate-700 text-center relative overflow-hidden">
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent blur-sm"></div>
-                      
-                    <h2 className="text-white font-bold text-2xl mb-3 relative z-10">覺得這篇文章有幫助嗎？</h2>
-                    <p className="text-slate-400 mb-8 text-lg relative z-10">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
-                      
-                    <div className="relative z-10">
-                        <ShareButtons url={currentUrl} title={post.title} />
-                    </div>
-
-                    <div className="mt-12 pt-8 border-t border-slate-700/50 relative z-10">
-                        <Link 
-                          href="/about/news" 
-                          className="inline-flex items-center justify-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 group"
-                        >
-                              看更多衛教文章 
-                              <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
-                        </Link>
-                    </div>
+                  <div className="mt-12 pt-8 border-t border-slate-700/50 relative z-10">
+                      <Link 
+                        href="/about/news" 
+                        className="inline-flex items-center justify-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 group"
+                      >
+                            看更多衛教文章 
+                            <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+                      </Link>
                   </div>
+                </div>
               </footer>
+
+              {/* ✨ 更新：將參考文獻移回文章最底部 (footer 之後)，移除框中框，並延續上方的背景色與滿版 padding */}
+              {post.referencesHtml && (
+                <section className="bg-slate-900/80 px-4 md:px-12 pb-12 text-left">
+                  <div className="border-t border-slate-700/50 pt-8">
+                    <div className="flex items-center mb-4 pb-3">
+                      <i className="fa-solid fa-book-bookmark text-cyan-400 text-lg mr-2"></i>
+                      <span className="text-slate-300 text-sm font-bold">參考文獻</span>
+                    </div>
+                    
+                    <div 
+                      className="references-content w-full text-slate-400 text-sm md:text-base leading-relaxed break-all"
+                      dangerouslySetInnerHTML={{ __html: post.referencesHtml }} 
+                    />
+                    
+                    <div className="mt-5 pt-3 border-t border-slate-700/30 flex items-center gap-2">
+                      <span className="inline-block w-1.5 h-1.5 rounded-full bg-cyan-500/50 animate-pulse"></span>
+                      <p className="text-[9px] text-slate-500 uppercase tracking-tighter font-medium leading-tight">
+                        Evidence-Based Medicine Research & Clinical Guidelines
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              )}
 
             </article>
           </div>

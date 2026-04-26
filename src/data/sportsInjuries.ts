@@ -35,6 +35,13 @@ export const sportsInjuriesData = [
         image: '/images/news/article/scoliosis-treatment.webp',
       },
                   {
+        slug: 'sunscreen-outdoor-sports-guide',
+        title: '大太陽下如何保護自己？運動醫學教你正確防曬、認識防曬油原理與挑選指南',
+        description: '從運動醫學觀點深度解析戶外大太陽下的防曬策略。實證研究揭露長期曝曬的疾病風險，包含皮膚癌、熱中暑、白內障，並詳細說明防曬油的物理與化學原理、SPF與PA的正確解讀、如何使用與挑選適合運動員的防曬產品。',
+        image: '/images/news/article/sunscreen-outdoor-sports-guide.webp',
+      },
+
+                  {
         slug: 'pain-medication-analysis',
         title: '疼痛就吃止痛藥？解析止痛藥與肌肉鬆弛劑的真相與風險',
         description: '深度剖析非類固醇消炎止痛藥（NSAIDs）、肌肉鬆弛劑、乙醯胺酚（普拿疼）的藥理機制與長期使用風險。實證研究揭露止痛藥只是「關掉警報」而非治療根源，並說明何時需要尋找疼痛的真正成因。',
@@ -79,6 +86,12 @@ export const sportsInjuriesData = [
         title: '顧關節保健品全解析：UC-II、葡萄糖胺、鈣片、玻尿酸等誰有效?',
         description: '市售顧關節保健品種類繁多，本文以醫學觀點逐一解析 UC-II、葡萄糖胺、軟骨素、鈣片與口服玻尿酸的臨床證據。深入探討免疫調節機制、建議劑量、適用族群及常見迷思，幫助你科學選擇真正需要的成分，避免盲目花大錢。',
         image: '/images/news/article/joint-supplements-guide.webp',
+      },
+                              {
+        slug: 'iv-drips-truth-unveiled',
+        title: '揭開點滴治療的面紗：美白、減脂、保肝點滴到底加了什麼？實證有效嗎？',
+        description: '深度剖析坊間常見的美白點滴、減脂點滴與保肝點滴真實成分。從實證醫學角度揭露谷胱甘肽、左旋肉鹼與甘草酸的實際療效與潛在風險，破除單靠打針就能變白、變瘦的醫療行銷迷思。',
+        image: '/images/news/article/iv-drips-cover.webp',
       },
       {
         slug: 'sugar-height-growth-analysis',
