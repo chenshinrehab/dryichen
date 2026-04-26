@@ -52,7 +52,70 @@ export const articlesData: NewsPost[] = [
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5504913/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
   </p>
 </section>
-<hr>
+
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">大聯盟左右打者實戰成績比較</h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    除了探討受傷風險的差異，左右打者在棒球場上的實際火力產出，也一直是數據派球迷與球隊制服組關注的焦點。大聯盟（MLB）環境中有超過 70% 的投手是右撇子，這使得左打者在多數打席中都能享有<strong style="color: #2dd4bf;">「排隊優勢 / 異側對決優勢」</strong>——面對異側投手時，打者能更清楚地看見球的進壘軌跡與放球點。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    以 MLB 正式全面禁止極端防守佈陣的 2023 賽季數據為例，防守規則的改變大幅解放了左打者過去常被沒收的強勁擊球，讓左打者的整體成績微幅優於右打者。此外，左打擊區距離一壘大約少了一步的距離，這項物理天性也讓他們在擊出內野滾地球時，有更高的機率跑成內野安打。
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">打擊率與上壘率：</strong>受惠於視角優勢與距離一壘較近，左打者的平均打擊率（約 .253）通常高出右打者（約 .246），而上壘率也因為較容易選到保送而拉開差距。</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">三振與保送率：</strong>右打者在面對大聯盟滿坑滿谷的右投手時，容易被向外側掉落的滑球引誘揮空，導致整體三振率略高（突破 23%）；反之，左打者的保送率在整體數據中佔據微幅優勢。</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">全壘打能力：</strong>在絕對力量與長打展現上，右打者由於基數龐大且盛產純力量型重砲，全壘打率（HR%）與左打者幾乎持平甚至微幅領先，顯示右打者在極致爆發力表現上毫不遜色。</li>
+  </ul>
+</section>
+
+  <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 1rem;">
+    * 註：以下數據以 MLB 2023 賽季（禁止極端佈陣元年）之聯盟平均進階數據為基準參考。
+  </p>
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>數據指標</th>
+          <th>右打者 (RHB)</th>
+          <th>左打者 (LHB)</th>
+          <th>數據意涵與實戰原因</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>總體打擊率 (AVG)</td>
+          <td>.246</td>
+          <td>.253</td>
+          <td>左打者距離一壘較近，且禁佈陣後擊球落點穿越機率提升</td>
+        </tr>
+        <tr>
+          <td>上壘率 (OBP)</td>
+          <td>.316</td>
+          <td>.328</td>
+          <td>左打者享有較多異側對決優勢（多數投手為右投），選球視角較佳</td>
+        </tr>
+        <tr>
+          <td>三振率 (K%)</td>
+          <td>23.2%</td>
+          <td>21.8%</td>
+          <td>右打者面對同側右投的向外側變化球（如滑球）時較易揮空</td>
+        </tr>
+        <tr>
+          <td>保送率 (BB%)</td>
+          <td>8.3%</td>
+          <td>8.9%</td>
+          <td>左打者的視角優勢帶來更好的好球帶紀律與更高的保送機會</td>
+        </tr>
+        <tr>
+          <td>全壘打率 (HR%)</td>
+          <td>3.2%</td>
+          <td>3.1%</td>
+          <td>右打者陣容中純力量型重砲比例極高，絕對長打產出能力優異</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+  <hr>
 <!-- 二 -->
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">二、左打與右打的生物力學根本差異</h2>
@@ -626,6 +689,129 @@ export const articlesData: NewsPost[] = [
     投球動作共分為六個階段：準備期→引體期→跨步期→蓄力期→加速期→減速/跟進期。其中蓄力期與減速期的關節應力最高，也是最容易造成傷害的時期。
     <sup><a href="https://orthoinfo.aaos.org/en/diseases--conditions/shoulder-injuries-in-the-throwing-athlete/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[6]</a></sup>
   </p>
+</section>
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    左右投手的差異：大聯盟實際數據與投球型態比較
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    在探討投手的傷害風險時，我們不能忽略「左投」與「右投）」在棒球生態與數據表現上的差異。左撇子在一般人口中僅佔約 10%，但在美國職棒大聯盟（MLB）中，左投的比例卻長年維持在高達 <strong style="color: #2dd4bf;">27%</strong> 左右。這種「物以稀為貴」的現象，造就了兩者在投球策略與受傷模式上的細微不同。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    根據大聯盟歷年的宏觀數據統計，左右投手的整體壓制力非常接近，但背後的機制卻截然不同：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">防禦率（ERA）與南瓜優勢：</strong>歷史數據顯示，左投的平均防禦率約為 4.14，微幅優於右投的 4.18。這通常被歸功於所謂的「左投優勢」，由於打者從小面對右投的經驗遠多於左投，左投獨特的出手角度與球路軌跡，更容易造成視覺誤差。</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">球速與轉速的硬體對決：</strong>在純粹的球威上，右投通常佔據上風。大聯盟右投的四縫線直球平均球速約在 93.5–94.0 mph 之間，而左投約落在 92.0–92.5 mph，右投平均快了約 1.5 mph。此外，右投在直球與滑球的轉速上也普遍高出左投約 40–80 rpm。</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">三振能力（K/9）：</strong>儘管球速與轉速略遜一籌，左投與右投的三振率（每九局三振數）幾乎完全相同。這是因為左投更常利用進壘點的隱蔽性、以及優異的變速球與滑球來製造打者揮空。</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    從受傷風險來看，右投為了追求極致的球速與高轉速，手肘 UCL 承受的瞬間外翻力矩極大，往往是 Tommy John 手術的高發群；而左投雖然球速稍降，但過往在牛棚中常被頻繁作為「左投專門對付左打（LOOGY）」的調度，這種過度頻繁的牛棚熱身與登板，同樣使肩部旋轉肌群與關節囊面臨嚴峻的耗損考驗。
+  </p>
+</section>
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    大聯盟左右投手各項數據與手臂負擔比較表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 800px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      text-align: left;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    /* 第一欄特殊樣式 */
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>比較項目</th>
+          <th>右投手 (RHP)</th>
+          <th>左投手 (LHP)</th>
+          <th>大聯盟數據意涵</th>
+          <th>對於手臂負擔與受傷的影響</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>平均防禦率 (ERA)</td>
+          <td>約 4.18</td>
+          <td>約 4.14</td>
+          <td>左投防禦率微幅較低，享有「左投優勢」帶來的天然隱蔽性。</td>
+          <td>由於壓制力相當，兩者在賽場上的投球局數與基礎耗損程度並無顯著差異。</td>
+        </tr>
+        <tr>
+          <td>四縫線直球平均球速</td>
+          <td>93.5 – 94.0 mph</td>
+          <td>92.0 – 92.5 mph</td>
+          <td>右投平均快 1.5 mph，主要依賴球速壓制打者。</td>
+          <td>追求極致球速會產生極大的「外翻力矩」，右投尺側副韌帶 (UCL) 撕裂風險極高。</td>
+        </tr>
+        <tr>
+          <td>直球與滑球轉速</td>
+          <td>較高 (+40~80 rpm)</td>
+          <td>較低</td>
+          <td>右投整體轉速較高，左投則在變速球的運用與尾勁上佔優。</td>
+          <td>高轉速伴隨前臂屈肌的強力收縮，右投前臂拉傷與肌腱炎的風險相應增加。</td>
+        </tr>
+        <tr>
+          <td>聯盟投手佔比</td>
+          <td>約 73%</td>
+          <td>約 27%</td>
+          <td>左撇子佔一般人口僅 10%，在職棒中卻達 27%，顯示左投極具戰略價值。</td>
+          <td>因左投具備戰略稀缺性，常遭頻繁調度熱身（特別是牛棚），易導致肩部旋轉肌群過勞。</td>
+        </tr>
+        <tr>
+          <td>同側打者對戰打擊率</td>
+          <td>右打對右投約 .244</td>
+          <td>左打對左投約 .234</td>
+          <td>左投對付同側（左）打者的壓制力更為強大。</td>
+          <td>為維持對同側打者的優勢，左投會大量使用滑球，此球種對手肘與肩膀的壓力尤為顯著。</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </section>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">

@@ -113,35 +113,33 @@ export default function NewsListPage() {
                     </Link>
                 </div>
 
-<div className="border-b border-slate-700 pb-6 flex flex-row items-center justify-between gap-4 md:flex-row md:items-end">
-    <div>
-        <h1 className="text-2xl md:text-5xl font-bold font-sans text-white tracking-wide mb-0 md:mb-2">
-            最新衛教文章
-        </h1>
-        {/* 手機版隱藏，桌面版(md)顯示 */}
+        <div className="pb-2 flex flex-row items-center justify-between gap-4 md:flex-row md:items-end">
+        <div>
+            <h1 className="text-2xl md:text-5xl font-bold font-sans text-white tracking-wide mb-0 md:mb-2">
+                最新衛教文章
+            </h1>
         <p className="hidden md:block text-slate-400">
             專業醫師團隊撰寫的復健醫學新知
         </p>
     </div>
 
-    <Link 
-        href="/about/news/notices" 
-        className="group relative inline-flex items-center justify-center px-3 py-2 md:px-6 md:py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-pink-600 rounded-xl hover:bg-pink-500 hover:scale-105 shadow-[0_0_20px_rgba(219,39,119,0.4)] hover:shadow-[0_0_30px_rgba(219,39,119,0.6)] shrink-0"
-    >
-        {/* 圖示在手機版縮小間距 */}
-        <span className="mr-1.5 md:mr-3 text-base md:text-lg">
-            <i className="fa-solid fa-calendar-check"></i>
-        </span>
-        
-        <div className="flex flex-col items-start leading-tight">
-            <span className="text-sm md:text-base">門診公告</span>
-        </div>
+<Link 
+    href="/about/news/notices" 
+    className="group relative inline-flex items-center justify-center px-5 py-2.5 md:px-6 md:py-3 overflow-hidden font-medium text-white transition-all duration-300 bg-pink-600 rounded-xl hover:bg-pink-500 hover:scale-105 shadow-[0_0_20px_rgba(219,39,119,0.4)] shrink-0"
+>
+    <span className="mr-2 md:mr-3 text-lg">
+        <i className="fa-solid fa-calendar-check"></i>
+    </span>
+    
+    <div className="flex flex-col items-start leading-tight">
+        {/* tracking-wider 讓字跟字之間不那麼擠 */}
+        <span className="text-base tracking-wider">門診公告</span>
+    </div>
 
-        {/* 箭頭在手機版稍微縮小間距 */}
-        <i className="fa-solid fa-arrow-right ml-2 md:ml-4 group-hover:translate-x-1 transition-transform text-xs md:text-base"></i>
-        
-        <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent z-10" />
-    </Link>
+    <i className="fa-solid fa-arrow-right ml-3 md:ml-4 group-hover:translate-x-1 transition-transform text-sm md:text-base"></i>
+    
+    <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent z-10" />
+</Link>
 </div>
             </div>
 
