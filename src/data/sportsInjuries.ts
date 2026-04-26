@@ -230,6 +230,13 @@ export const sportsInjuriesData = [
     description: '其他各種運動或是日常生活姿勢錯誤導致的傷害解析。',
     image: '/images/sportinjury/6.webp',
     injuries: [
+                  {
+        slug: 'badminton-tennis-elbow',
+        title: '打羽球為什麼會得網球肘？完整解析：動作、原因與改善策略',
+        description: '從運動醫學角度深度分析羽球運動為何容易引發網球肘（外側上髁炎）。透過生物力學研究揭示反手拍、殺球等關鍵動作的傷害機制，並提供業餘球友實用的技術矯正與預防策略。',
+        image: '/images/news/article/badminton-tennis-elbow.webp',
+
+      },
             {
         slug: 'marathon-gait-injury-analysis',
         title: '馬拉松跑姿全解析：腳掌落地方式、步頻步幅，誰更容易受傷？',

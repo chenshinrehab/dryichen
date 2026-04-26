@@ -1,6 +1,562 @@
 import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
+{
+  id: 'badminton-tennis-elbow',
+  title: '打羽球為什麼會得網球肘？完整解析：動作、原因與改善策略',
+  lastModified: '2026-04-26',
+  category: '衛教文章',
+  date: '2026-04-26',
+  summary: '從運動醫學角度深度分析羽球運動為何容易引發網球肘（外側上髁炎）。透過生物力學研究揭示反手拍、殺球等關鍵動作的傷害機制，並提供業餘球友實用的技術矯正與預防策略。',
+  coverImage: '/images/news/article/badminton-tennis-elbow.webp',
+  seoTitle: '打羽球為什麼會得網球肘？運動醫學完整解析：動作、原因與改善策略',
+  seoDescription: '從運動醫學角度深度分析羽球運動為何容易引發網球肘（外側上髁炎）。透過生物力學研究揭示反手拍、殺球等關鍵動作的傷害機制，並提供業餘球友實用的技術矯正與預防策略。',
+  keywords: [
+    '羽球網球肘',
+    '羽球運動傷害',
+    '外側上髁炎',
+    '羽球反手拍',
+    '羽球殺球動作',
+    '伸腕肌群',
+    '橈側伸腕短肌',
+    '羽球傷害預防',
+    '肘部疼痛'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    羽球是台灣最普及的運動之一，但「打羽球打出網球肘」的困擾卻困擾著大量業餘球友。網球肘的醫學名稱是<strong>外側上髁炎</strong>，其核心傷害發生在肘部外側的<strong>橈側伸腕短肌（ECRB）</strong>肌腱附著點。研究證實，羽球與網球、壁球同列為最容易引發此傷害的球拍運動，
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK431092/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
+    原因在於羽球動作大量涉及「手腕伸展」、「前臂旋前旋後」以及「緊握球拍」等動作——而這三個動作組合，正是讓ECRB反覆承受離心過載的核心機制。<br><br>
+    更關鍵的是，業餘球友因技術尚未成熟，往往用「甩腕發力」取代「核心傳遞動力」，使前臂肌群獨自承擔本應由全身動力鏈分擔的衝擊力。本文將逐一解析哪些羽球動作是傷害主因、為何發力方式錯誤特別危險，以及如何從技術與訓練層面有效預防。
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、網球肘是什麼？為什麼羽球球友也會得？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    「網球肘」這個名字容易讓人誤以為只有打網球才會得，但事實是：<strong style="color: #2dd4bf;">不到10%的網球肘患者是網球選手。</strong>
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK431092/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    任何需要反覆「手腕伸展」加上「用力握持」的動作，都可能引發相同的傷害——而羽球，恰恰是這些動作組合最密集的運動之一。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    外側上髁炎的真正傷害位置，在肘部外側突起（外側上髁）往下約1至2公分處，也就是<strong style="color: #ffffff;">橈側伸腕短肌（Extensor Carpi Radialis Brevis，ECRB）肌腱的附著點</strong>。這條肌腱負責將手腕往上（背側）拉，是擊球動作的核心肌肉之一。當它反覆承受超出本身承受極限的拉力，微小撕裂開始累積，膠原纖維排列紊亂，最終發展成慢性肌腱病變——這就是網球肘的本質。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2465303/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    羽球與網球、壁球在傷害機制上高度重疊，研究明確指出羽球是引發外側上髁炎的高風險球拍運動之一。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10234213/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    更重要的是，<strong style="color: #ffffff;">業餘羽球選手的發病率普遍高於精英選手</strong>，原因正是技術動作的錯誤。
+    <sup><a href="https://emedicine.medscape.com/article/96969-overview" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、打羽球哪些動作最容易傷到肘部？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    羽球是全世界速度最快的球拍運動，殺球時的羽球速度可超過每小時300英里。要產生這樣的速度，必須靠腿部、軀幹、肩膀、手肘到手腕的「動力鏈」依序傳遞能量。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7205924/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+    當這條鏈有任何一環「斷掉」——最常見的就是腳步不到位、軀幹沒有旋轉——所有的力量就會落到手肘和手腕這兩個「最末端、最脆弱」的環節上。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">❶ 反手拍高遠球與殺球：最高風險動作</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    羽球反手拍動作是業餘球友最容易出現問題的技術。從生物力學研究來看，反手拍需要前臂先進行「旋後（supination）」準備，擊球瞬間再快速旋前（pronation）並伴隨大量手腕伸展，整個過程中ECRB與肱橈肌（Brachioradialis）承受極高的肌電活動。
+    <sup><a href="https://www.semanticscholar.org/paper/Muscle-Activities-of-the-Brachioradialis-and-Carpi-Lee-Lim/7b629071b8a8c59e5b5a7a7d36786780d2246493" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究直接指出：<strong style="color: #ffffff;">反手高遠球（backhand clear）與反手殺球（backhand smash）與網球肘的發生率高度相關，明顯高於反手推球等其他動作。</strong>
+    <sup><a href="https://www.semanticscholar.org/paper/Muscle-Activities-of-the-Brachioradialis-and-Carpi-Lee-Lim/7b629071b8a8c59e5b5a7a7d36786780d2246493" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    這是因為反手拍要在較困難的準備姿勢下，依然產生足夠的力量，球友往往會不自覺地以「手腕甩擊」代替完整的身體轉動，導致前臂伸肌群獨自過度負載。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">❷ 正拍殺球（Forehand Smash）：前臂旋前鏈過載</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    正拍殺球是羽球最具攻擊性的技術，也是肘部承受瞬間衝擊力最高的動作。三維生物力學研究顯示，在殺球接觸羽球的瞬間（約3毫秒），前臂旋前（pronation）與肩部旋轉共同貢獻了球速的53%。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7205924/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+    最新的有限元素分析研究進一步顯示，殺球接觸瞬間，<strong style="color: #ffffff;">伸指總肌（EDC）承受最高應力，旋前圓肌（pronator teres）其次</strong>，而橈側伸腕短肌（ECRB）雖然應力相對較低，但卻在整個揮拍過程中持續處於離心收縮狀態，累積傷害風險極高。
+    <sup><a href="https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2026.1780880/full" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    特別值得注意的是，隨著殺球距離增加（球友位置越靠近底線），前臂伸腕肌群（ECR）的肌電活動顯著上升，代表距離越遠、動作越不穩定時，前臂肌群需要代償的工作量越大。
+    <sup><a href="https://www.researchgate.net/publication/261148177_Motion_analysis_of_arm_movement_during_badminton_smash" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">❸ 「球來得太快，腳步沒到位」的補球動作</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    許多業餘球友的傷害並非來自完整的技術動作，而是在腳步不到位時的「救球」。當球友腳步沒有移動到正確位置，就必須用伸直的手臂、彎曲的肘部「勉強夠到」來球，此時的擊球衝擊力完全由前臂肌群和肘關節承受，而非由下肢與軀幹分擔。研究指出，這種「肘部前導（leading elbow）」的錯誤模式，是外側上髁炎最重要的技術性危險因子之一。
+    <sup><a href="https://emedicine.medscape.com/article/96969-overview" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在復健臨床上，有一個非常常見的現象：羽球球友的網球肘往往以「不打球時不太痛，但一打球就明顯不舒服」為主訴，因此被低估了嚴重性。許多球友以為「打完熱身一下就好了」繼續硬打，殊不知每一次打球都在加速肌腱退化進程。等到疼痛出現在日常生活中——提水壺、轉門把也會痛——往往已是慢性病變，治療時間從6-8週拉長至數個月。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、為何「發力方式錯誤」是傷害的根本原因？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    理解網球肘在羽球中的發生機制，關鍵在於理解一個概念：<strong style="color: #2dd4bf;">正確的羽球動作，前臂和手腕只是「傳遞力量的通道」，不是「製造力量的來源」。</strong>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">正確動力鏈 vs. 錯誤補償模式</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    正確的羽球殺球動力鏈如下：腳步到位 → 腿部蹬地 → 髖部與軀幹旋轉 → 肩膀加速 → 前臂旋前 → 手腕扣擊。研究顯示，單單軀幹旋轉（X-factor）就能顯著提升殺球速度，代表身體各部位的協調參與，才是產生力量的核心。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9598458/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    當業餘球友忽略下盤移動或軀幹旋轉，「以臂代身」時，前臂的伸腕肌群（尤其是ECRB）就必須：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;">同時「製造力量」AND「吸收衝擊回彈」——兩個功能同時要求一條肌腱完成</li>
+    <li style="margin-bottom: 0.5rem;">在長時間比賽中反覆如此，微創傷不斷累積卻得不到充分恢復</li>
+    <li style="margin-bottom: 0.5rem;">業餘球友每球的動作效率低於精英球員，代表同樣的訓練量帶來更高的組織負荷</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這正解釋了為何文獻一再指出：<strong style="color: #ffffff;">技術動作不成熟的業餘選手，發生外側上髁炎的比例遠高於技術成熟的精英球員。</strong>
+    <sup><a href="https://emedicine.medscape.com/article/96969-overview" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    精英球員能夠以「向心收縮（concentric）」模式啟動伸肌群，而業餘球友往往以「離心收縮（eccentric）」代償，後者對肌腱的傷害負荷遠遠更高。
+    <sup><a href="https://www.physio-pedia.com/Biomechanics_of_Lateral_Epicondylitis" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">握拍太緊：被忽略的危險習慣</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    許多球友在緊張或用力擊球時，下意識地「死握」球拍。握拍過緊會顯著增加前臂伸肌群的基礎張力，相當於讓已經在工作的ECRB在更高的預緊狀態下繼續承受衝擊。研究發現，握拍尺寸過小（手把太細）同樣會迫使球友過度用力握持，增加肘部傷害風險。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2465303/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    正確的握拍力道應如同「握住一隻小鳥——不能讓牠飛走，但也不要把牠捏死」：擊球前放鬆，擊球瞬間才短暫收緊。
+  </p>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 典型案例：</strong><br><br>一位打了五年羽球的40多歲業餘球友，每週打球三次，從未受傷。某次開始練習反手殺球後，兩個月內出現右肘外側持續疼痛，甚至倒水時都會痛。經評估確認為外側上髁炎，動作分析發現他打反手拍時完全沒有利用身體旋轉，純粹以手腕「甩」球，且每次擊球時肘部都是半屈曲的前導狀態。矯正動作模式、配合離心肌力訓練後，症狀在八週內顯著緩解。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、羽球動作傷害風險比較
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 800px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 160px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>羽球動作</th>
+          <th>主要受力肌群</th>
+          <th>最常見傷害</th>
+          <th>業餘選手相對風險</th>
+          <th>主要錯誤模式</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>反手高遠球</td>
+          <td>ECRB、肱橈肌</td>
+          <td>外側上髁炎（網球肘）</td>
+          <td>高</td>
+          <td>以手腕取代身體旋轉</td>
+        </tr>
+        <tr>
+          <td>反手殺球</td>
+          <td>ECRB、旋前圓肌</td>
+          <td>外側上髁炎、前臂肌腱病變</td>
+          <td>高</td>
+          <td>肘部前導、甩腕發力</td>
+        </tr>
+        <tr>
+          <td>正拍殺球</td>
+          <td>EDC、旋前圓肌、ECRB</td>
+          <td>肌腱過載、伸腕肌群病變</td>
+          <td>中至高</td>
+          <td>腳步不到位、遠距補球</td>
+        </tr>
+        <tr>
+          <td>網前推撲球</td>
+          <td>屈腕肌群、ECU</td>
+          <td>內側上髁炎（高爾夫肘）</td>
+          <td>中</td>
+          <td>手腕過度屈曲、握拍太緊</td>
+        </tr>
+        <tr>
+          <td>發球（後場長球）</td>
+          <td>旋前圓肌、肩袖</td>
+          <td>肩袖肌腱病變、肘關節過伸</td>
+          <td>中</td>
+          <td>肘部鎖死、手腕主導發力</td>
+        </tr>
+        <tr>
+          <td>救低球（單手後仰）</td>
+          <td>ECRB、橈側韌帶</td>
+          <td>外側韌帶扭傷、ECRB急性撕裂</td>
+          <td>中至高</td>
+          <td>腳步不到位、伸直手臂夠球</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、如何從根本改善？技術矯正的核心原則
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">原則一：讓身體帶動手臂，而非手臂帶動身體</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    無論是正拍還是反手，擊球前必須先完成腳步移動，確保球落在身體正前方（正拍）或身體側面（反手），而非在手臂極限伸展的位置。軀幹旋轉應在擊球之前啟動，讓大肌群先發力，前臂與手腕只是最後的「加速傳遞」環節，不需要獨自撐起整個力道。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9598458/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">原則二：反手拍避免「鎖肘甩腕」</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    最常見的反手拍錯誤是：肘部鎖死、手腕大幅旋轉來製造力量。正確的反手動作應保留肘部適度彎曲，利用前臂的「旋前旋後」配合肩部旋轉傳遞力量，而非單純以手腕拉甩。研究建議在背手高球動作中，強調肩胛骨穩定肌群的啟動，讓肩部充分旋轉，減少前臂代償。
+    <sup><a href="https://www.bestqool.com/blogs/learn/badminton-elbow-pain-solutions" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">原則三：調整握拍方式與握力</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    羽球握拍過細或過粗，都會影響前臂肌群的基礎張力。建議以從手掌橫紋到無名指指尖的距離作為握把粗細的基準值，並定期更換握布，保持握拍的有效摩擦力，以免需要更用力握持。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2465303/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    擊球前保持「放鬆握持」，僅在接觸羽球瞬間短暫收緊，是減少前臂過度負載的實用技巧。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">原則四：選擇適合的球拍特性</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    球拍的磅數（穿線張力）越高，擊球時傳遞到手臂的震動力越大。業餘球友若有肘部不適，可考慮降低磅數（24磅以下），並選擇拍框較大、甜蜜點較寬的球拍，減少偏中擊球時的衝擊震動傳遞至肘部。
+    <sup><a href="https://www.bestqool.com/blogs/learn/badminton-elbow-pain-solutions" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      許多球友矯正動作時會感覺「力道反而變弱」，這是正常的適應期——因為以前的「大力」有很大一部分是肌腱在不適當角度下的爆發性代償，而非有效能量傳遞。正確動力鏈建立後，力道反而會更穩定且更省力。建議在矯正技術期間，暫時降低訓練強度，以影像記錄動作並請有經驗的教練協助，通常需要4至6週才能建立新的動作模式。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、網球肘的治療選項：從保守到積極
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    若已出現外側上髁炎，治療策略依嚴重程度分為幾個層次：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">第一線：相對休息 + 物理治療：</strong>並非完全停止活動，而是避免高強度刺激，配合物理治療師進行離心肌力訓練（eccentric strengthening）。離心訓練已被多項系統性回顧證實能促進肌腱膠原纖維重塑，是最有實證基礎的保守療法。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2465303/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+      標準保守療法的成功率可達90%。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">肘部束帶（護肘）：</strong>穿戴於前臂近端的加壓護帶，可改變ECRB的力學支點，短期內有效減輕活動時的肘部疼痛，適合作為繼續打球時的輔助保護。研究顯示前臂加壓護墊型效果優於單純卡扣型。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2465303/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">類固醇注射：</strong>短期（6週內）效果顯著，但長期復發率偏高，不建議反覆施打。通常在急性疼痛期作為緩解工具，搭配後續的復健訓練。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2465303/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">PRP（富血小板血漿）注射：</strong>適合對保守治療反應不佳的慢性病例，部分研究顯示中長期療效優於類固醇注射，但整體研究結果仍有分歧。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10234213/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">手術治療：</strong>保守治療6至12個月仍無效時才考慮，通常進行外側鬆解術，成功率高，但術後復健期需數個月。
+      <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK431092/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、預防訓練：強化才是根本解法
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    最好的治療是預防。對於所有羽球球友，以下訓練項目有明確的實證支持：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">離心式伸腕訓練（Eccentric Wrist Extension）：</strong>前臂放在桌面上，手握輕啞鈴（0.5至1公斤），用健側手輔助舉起，再單獨緩慢放下（3至5秒）。每組15下，每天3組，是最有實證效果的肌腱保護訓練。
+      <sup><a href="https://www.bestqool.com/blogs/learn/badminton-elbow-pain-solutions" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">肩胛穩定訓練：</strong>划船動作（Cable Row）、肩部外旋阻力帶訓練，強化肩胛骨周圍肌群，讓肩部在揮拍時能穩定承接軀幹傳來的力量，減少前臂代償。
+      <sup><a href="https://www.bestqool.com/blogs/learn/badminton-elbow-pain-solutions" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">核心與髖部旋轉訓練：</strong>棒式（Plank）、Pallof Press、旋轉木馬等訓練，讓軀幹旋轉力量更充分，降低上肢在動力鏈中的代償比例。研究確認，軀幹旋轉是殺球力量的重要來源。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9598458/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">漸進式訓練量管理：</strong>每週打球頻率或強度增加不超過10%，給肌腱足夠的適應時間。過快增加訓練量是肌腱傷害最常見的外因性危險因子。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">充分熱身：</strong>打球前進行5至10分鐘的輕度有氧加上前臂、肩部的動態伸展，讓肌腱在組織溫度升高後再接受高強度負荷，可有效降低受傷風險。
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 八、羽球球友常見三大錯誤觀念
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「打羽球這麼輕鬆的運動，不可能傷到肘」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong>羽球雖然沒有網球的高衝擊力，但反手高球與殺球對前臂伸肌群的反覆離心負荷，在一場2小時的雙打賽事中，總計可達數百至上千次。外側上髁炎的本質是「累積性微創傷」，而非「單次大衝擊傷害」，少量多次的刺激往往更容易導致肌腱病變。<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK431092/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「戴個護肘就可以繼續打，打完再說」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>短視近利！</strong>護肘只是臨時的「止痛工具」，不能取代根本治療。在疼痛期間繼續高強度訓練，會加速肌腱膠原纖維的不規則重塑，使組織完整性進一步下降。外側上髁炎若在急性期不當處理，平均治療時程從6至8週倍增至3至6個月，少數嚴重者需手術。<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK431092/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「打球磅數越高，力量越大，這樣比較好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>對業餘球友是陷阱！</strong>高磅數在擊球點正確時能提供良好的控制，但對於技術尚未成熟的業餘球友，每次偏心擊球傳遞到手臂的震動力都更大。業餘球友有時間肌腱不適，降低磅數（24磅以下）配合技術訓練，往往是兼顧安全與進步的最佳策略。<sup><a href="https://www.bestqool.com/blogs/learn/badminton-elbow-pain-solutions" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[11]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏸</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：打羽球得的網球肘，跟打電腦造成的一樣嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      傷害本質相同，都是ECRB肌腱的退化性病變，但造成的機制略有不同。打電腦主要是低強度長時間的靜態負荷（滑鼠長期使用），羽球則是高強度短時間的動態衝擊負荷，後者更容易造成急性到慢性的進展性傷害。兩者的治療策略也有部分差異，需要根據傷害性質個別評估。<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK431092/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：已經有網球肘，還能繼續打羽球嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      視嚴重程度而定。輕度病例（疼痛僅在高強度擊球後出現，日常活動不受影響）在充分熱身、配戴護肘、避免高風險動作（反手殺球）的前提下，可維持低強度練球。中度至重度病例（日常活動出現疼痛，或握力明顯下降）建議先暫停打球，接受系統性物理治療後再逐步回場。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：只要矯正動作，網球肘會自然好嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      矯正動作是「預防復發」的關鍵，但對於已經發生的肌腱病變，單靠動作矯正是不夠的。肌腱的退化性改變需要主動的離心肌力訓練來刺激膠原纖維重塑，配合適當的休息和組織恢復時間。動作矯正 + 離心訓練 + 負荷管理，三者缺一才是完整的復健策略。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2465303/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：肘部疼痛多久應該就醫？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      若肘部外側疼痛超過72小時未緩解，或出現「伸直手臂提物時明顯加劇」、「握力減弱」等症狀，建議儘快就醫評估。早期介入能以更短的治療時間（6至8週）恢復，拖延至慢性期往往需要3至6個月甚至更長。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    打羽球得網球肘，從來不是「運氣不好」或「年紀大了」的問題，而是技術動作、訓練量與身體條件之間的失衡。核心動力鏈的斷裂，加上前臂肌群的過度代償，在每一次揮拍中悄悄累積傷害——直到有一天，提水壺也會讓肘部刺痛，才意識到問題嚴重性。
+  </p>
+
+  <p style="color: #475569; font-size: 1.05rem;">
+    好消息是：這類傷害有明確的發生機制，也有對應的解決策略。<strong style="color: #1e293b;">無論是矯正反手動作、調整握拍方式、還是加入離心訓練，每一個改變都能有效降低傷害風險。</strong>如果你的肘部已經開始出現不適，不要等到「痛到打不下去」再行動——<strong style="color: #1e293b;">預約林醫師的門診評估，林醫師本身也是羽球愛好者，深刻理解球友在場上的動作與傷害模式，</strong>能給你最貼近實際運動情境的評估與建議。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的動作風險分析，檢視自己打球時是否有「以臂代身」、「甩腕發力」或「死握球拍」的習慣。若有任何持續性肘部不適，請儘早尋求專業評估，避免急性傷害演變為慢性病變。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約打羽球的林醫師評估
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Buchanan, B.K., & Varacallo, M.A. (2023). Lateral Epicondylitis (Tennis Elbow). StatPearls, NCBI Bookshelf. <a href="https://www.ncbi.nlm.nih.gov/books/NBK431092/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Bookshelf: NBK431092</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Eygendaal, D., Rahussen, F.T.G., & Diercks, R.L. (2007). Lateral epicondylitis in tennis: update on aetiology, biomechanics and treatment. British Journal of Sports Medicine, 41(11), 816–819. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2465303/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 2465303</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Liao, C.D., et al. (2023). Global Research Trends and Hotspots in Lateral Epicondylitis During the Past 30 Years: A Bibliometric and Visualization Study. PMC10234213. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10234213/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10234213</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Meunier, M. (2020). Lateral Epicondylitis/Extensor Tendon Injury. Clinics in Sports Medicine. Medscape Reference Overview. <a href="https://emedicine.medscape.com/article/96969-overview" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Medscape: 96969</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Reeves, J., et al. (2020). Badminton Injuries in Elite Athletes: A Review of Epidemiology and Biomechanics. PMC7205924. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7205924/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7205924</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lee, H., & Lim, B. (2017). Muscle Activities of the Brachioradialis and Extensor Carpi Radialis Longus According to the Type of Backhand Stroke in Badminton. Semantic Scholar. <a href="https://www.semanticscholar.org/paper/Muscle-Activities-of-the-Brachioradialis-and-Carpi-Lee-Lim/7b629071b8a8c59e5b5a7a7d36786780d2246493" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Semantic Scholar</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Chen, Z., et al. (2026). Explicit dynamics analysis of forearm tendon stresses during the forehand smash. Frontiers in Bioengineering and Biotechnology. <a href="https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2026.1780880/full" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3389/fbioe.2026.1780880</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kim, T.H., et al. (2010). Motion analysis of arm movement during badminton smash. ResearchGate. <a href="https://www.researchgate.net/publication/261148177_Motion_analysis_of_arm_movement_during_badminton_smash" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">ResearchGate</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Chan, Z.R., et al. (2022). Biomechanical Analysis on Skilled Badminton Players during Take-Off Phase in Forehand Overhead Strokes: A Pilot Study. PMC9598458. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9598458/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9598458</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Ma, K.L., & Wang, H.Q. (2020). Management of Lateral Epicondylitis: A Narrative Literature Review. Pain Research and Management. Physio-Pedia Review. <a href="https://www.physio-pedia.com/Biomechanics_of_Lateral_Epicondylitis" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Physio-Pedia</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        BestQool Sports Medicine Editorial. (2025). Badminton Elbow Pain: Effective Remedies & Solutions. <a href="https://www.bestqool.com/blogs/learn/badminton-elbow-pain-solutions" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kamayoga, I.D.G.A., et al. (2023). The potential of Mulligan mobilization with movement and blood flow restriction training for lateral epicondylitis. Physical Therapy Journal of Indonesia, 4(1):76–79. <a href="https://www.ptji.org/index.php/ptji/article/download/80/57" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.51559/ptji.v4i1.80</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        AtQuestQuip Editorial. (2025). Wrist and Hand Injuries in Badminton: Racket Impact and Repetitive Strain. <a href="https://questquip.com/wrist-and-hand-injuries-in-badminton/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Shiri, R., & Viikari-Juntura, E. (2011). Lateral and medial epicondylitis: role of occupational factors. Best Practice & Research Clinical Rheumatology, 25(1):43–57. <a href="https://www.physio-pedia.com/Biomechanics_of_Lateral_Epicondylitis" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Via Physio-Pedia</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
 
 {
   id: 'statin-induced-myalgia-analysis',
