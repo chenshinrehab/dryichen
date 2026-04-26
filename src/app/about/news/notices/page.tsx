@@ -178,27 +178,33 @@ export default function NoticesPage() {
                     </Link>
                 </div>
 
-                <div className="border-b border-slate-700 pb-6 flex flex-col md:flex-row md:items-end justify-between gap-6">
-                    <div>
-                        <h1 className="text-3xl md:text-5xl font-bold font-sans text-white tracking-wide mb-2">
-                            門診異動公告
-                        </h1>
-                        <p className="text-pink-400">新竹宸新復健科：休診、代診與重要行政通知</p>
-                    </div>
+<div className="border-b border-slate-700 pb-6 flex flex-row items-center justify-between gap-4 md:flex-row md:items-end">
+    <div>
+        <h1 className="text-2xl md:text-5xl font-bold font-sans text-white tracking-wide mb-0 md:mb-2">
+            門診異動公告
+        </h1>
+        {/* 手機版隱藏，桌面版(md)顯示 */}
+        <p className="hidden md:block text-pink-400">
+            新竹宸新復健科：休診、代診與重要行政通知
+        </p>
+    </div>
 
-                    {/* 超醒目青色切換按鈕 */}
-                    <Link 
-                        href="/about/news" 
-                        className="group relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-cyan-600 rounded-xl hover:bg-cyan-500 hover:scale-105 shadow-[0_0_20px_rgba(8,145,178,0.4)] hover:shadow-[0_0_30px_rgba(8,145,178,0.6)]"
-                    >
-                        <span className="mr-3 text-lg"><i className="fa-solid fa-book-medical"></i></span>
-                        <div className="flex flex-col items-start leading-tight">
-                            <span className="text-base">切換至衛教文章</span>
-                        </div>
-                        <i className="fa-solid fa-arrow-right ml-4 group-hover:translate-x-1 transition-transform"></i>
-                        <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent z-10" />
-                    </Link>
-                </div>
+    {/* 超醒目青色切換按鈕 - 手機版變窄並與標題同行 */}
+    <Link 
+        href="/about/news" 
+        className="group relative inline-flex items-center justify-center px-3 py-2 md:px-6 md:py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-cyan-600 rounded-xl hover:bg-cyan-500 hover:scale-105 shadow-[0_0_20px_rgba(8,145,178,0.4)] hover:shadow-[0_0_30px_rgba(8,145,178,0.6)] shrink-0"
+    >
+        <span className="mr-1.5 md:mr-3 text-base md:text-lg">
+            <i className="fa-solid fa-book-medical"></i>
+        </span>
+        <div className="flex flex-col items-start leading-tight">
+            {/* 手機版縮短文字以節省空間 */}
+            <span className="text-sm md:text-base">衛教文章</span>
+        </div>
+        <i className="fa-solid fa-arrow-right ml-2 md:ml-4 group-hover:translate-x-1 transition-transform text-xs md:text-base"></i>
+        <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent z-10" />
+    </Link>
+</div>
             </div>
 
             <div className="space-y-8 animate-on-scroll delay-100">

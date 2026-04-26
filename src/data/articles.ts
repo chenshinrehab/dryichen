@@ -1,7 +1,1230 @@
 import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
+
+
 {
+  id: 'baseball-batting-injuries-left-vs-right',
+  title: '左打 vs. 右打：棒球打擊傷害的生物力學差異與常見風險解析',
+  lastModified: '2026-04-26',
+  category: '衛教文章',
+  date: '2026-04-26',
+  summary: '從運動醫學與生物力學角度，深度剖析棒球左打與右打者因旋轉方向差異所導致的鏡像傷害。解析鉤骨骨折、腹斜肌拉傷及腰椎傷害的發生機制，並為不同側打者提供科學化的風險管理與預防建議。',
+  coverImage: '/images/news/article/baseball-batting-injuries-left-vs-right.webp',
+  seoTitle: '左打右打受傷部位大不同？棒球打擊傷害完整解析：動作、原因與預防策略',
+  seoDescription: '深度分析棒球打擊的動力鏈傷害機制。研究顯示左打與右打者的傷害部位呈鏡像分布：如右打者易出現左手鉤骨骨折與左側斜肌拉傷。本文提供專業醫學觀點與實證研究，助球友遠離職業級傷害。',
+  keywords: [
+    '棒球運動傷害',
+    '左打右打差異',
+    '鉤骨骨折',
+    '腹斜肌拉傷',
+    '腰椎椎間盤突出',
+    '動力鏈',
+    '生物力學',
+    '棒球醫學',
+    '核心穩定',
+    'TFCC損傷'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    棒球是一項對全身動力鏈要求極高的運動，打擊動作中快速且爆發性的軀幹旋轉，讓左打者與右打者因身體旋轉方向不同，而承受截然不同部位的傷害風險。從運動醫學角度來看，兩種打法並非「誰更危險」，而是各自有其高風險傷害地圖。右打者的左手（下手）與右打者的腰部右側斜肌，是最容易累積傷害的部位；左打者則相對映於右手（下手）與左側軀幹。<br><br>
+    研究指出，鉤骨（Hamate bone）骨折幾乎百分之百發生在持棒的非慣用手（下手），而斜肌拉傷則恆常發生在慣用手的對側。本文將以實證研究為基礎，深入分析左右打者的生物力學差異、各別傷害風險，並提供科學性的預防建議。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3745239/" target="_blank" rel="noopener noreferrer" style="color: #0369a1;">[1]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8075560/" target="_blank" rel="noopener noreferrer" style="color: #0369a1;">[2]</a></sup>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/36867724/" target="_blank" rel="noopener noreferrer" style="color: #0369a1;">[3]</a></sup>
+  </p>
+</div>
+<hr>
+<!-- 一 -->
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">一、棒球打擊動作：一個爆炸性的全身運動</h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    棒球打擊乍看只是揮動球棒，但從運動科學的角度看，這是人體所能做出的最複雜、最高速的爆發性動作之一。<strong style="color: #2dd4bf;">老虎·威廉斯（Ted Williams）曾說，打擊棒球是運動中最困難的事情之一</strong>——這不只是技術層面的挑戰，更是對身體每個關節與肌肉的極端考驗。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    1995 年，Welch 等學者首度以三維動作捕捉技術量化棒球打擊的生物力學，發現打者在揮棒時，前腳踩地所產生的地面反作用力高達<strong style="color: #ffffff;">體重的 123%</strong>，這股力量帶動髖關節以最高 <strong style="color: #ffffff;">714 度/秒</strong> 的速度旋轉，緊接著肩部以 <strong style="color: #ffffff;">937 度/秒</strong>旋轉，最終將能量傳遞到球棒末端。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/8580946/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這個動力鏈從地面力量、腿部、髖部、軀幹核心、肩部、手肘、手腕一路傳遞，任何一個環節的力量不足或動作時序錯誤，都可能讓某個部位承受過度的代償性負荷——<strong style="color: #2dd4bf;">而左打者與右打者，因為旋轉方向的根本差異，這個代償部位是不同的。</strong>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5504913/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
+  </p>
+</section>
+<hr>
+<!-- 二 -->
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">二、左打與右打的生物力學根本差異</h2>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">打擊姿勢的鏡像關係</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    右打者站在打擊區左側（面向投手的右方），揮棒時軀幹從右往左旋轉；左打者則站在打擊區右側，軀幹從左往右旋轉。這個鏡像關係決定了兩件關鍵的事：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">哪隻手是「下手」（底部手）：</strong>右打者以左手握在球棒底部（靠近球棒末端），左打者則以右手握在球棒底部。下手承受的衝擊力遠大於上手，是鉤骨骨折的關鍵風險部位。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">軀幹旋轉的方向決定哪側斜肌承受最大負荷：</strong>右打者在揮棒時，驅動旋轉的主力是左側內斜肌；左打者則是右側內斜肌。斜肌拉傷幾乎恆常發生在慣用手的對側——也就是驅動旋轉的那一側。
+    <sup><a href="https://recoverypt.com/mlb-and-those-pesky-obliques/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[6]</a></sup></li>
+  </ul>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">戰術上的左打優勢</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    在進入傷害分析前，先了解為什麼左打者在職業棒球中比例偏高（MLB 中左打約佔 40% 的打席數，遠高於一般人群約 10% 的左手比例）：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">距離一壘較近：</strong>左打者完成揮棒後，身體的動量自然朝向一壘方向，且站位本身就比右打者更接近一壘約 1.5 公尺（約 5 英尺）。
+    <sup><a href="https://appliedvisionbaseball.com/batting-left-handed....../" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[7]</a></sup></li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">對陣優勢：</strong>MLB 中約 70% 的投手是右投，左打者因此大多數時間都面對右投，具有更好的視角追球，歷史數據顯示左打者對右投的打擊率比對左投高約 20 個百分點。
+    <sup><a href="https://tht.fangraphs.com/the-advantage-of-batting....../" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[8]</a></sup></li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">生物力學優勢：</strong>2017 年發表於《新英格蘭醫學期刊》的研究發現，「右投左打」的組合（慣用右手但選擇左打）在職業生涯的打擊成就上優於純粹左投左打，研究者推測這是因為右手（慣用手）握在下手位置，提供了更長的力臂來產生打擊力量。
+    <sup><a href="https://www.sciencedaily.com/....../2017/10/171031084857.htm" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[9]</a></sup></li>
+  </ul>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床觀點 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在棒球傷害的評估中，不能只問「你是左打還是右打」，還必須問「你是左投還是右投」——因為慣用手（投擲手）與打擊手之間的關係，直接決定了哪隻手是下手、哪側核心承受最大旋轉負荷。一位「右投左打」的球員與一位「左投左打」的球員，雖然同樣是左打，但傷害模式卻截然不同。
+    </p>
+  </div>
+</section>
+<hr>
+<!-- 三 -->
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">三、最常見傷害 ①：鉤骨骨折——下手的致命弱點</h2>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">什麼是鉤骨鉤突骨折？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    鉤骨是腕部 8 塊小骨頭之一，位於小指側，擁有一個鉤狀突起。當棒球選手握住球棒時，球棒末端的旋鈕正好頂在這個鉤突上。數千次揮棒所累積的反覆壓縮，或者一次猛烈的揮空、界外球衝擊，都可能造成這個鉤突骨折。
+    <sup><a href="https://www.mlb.com/....../hamate-bone-injuries-in......" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[10]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    在一般人群中，鉤骨骨折僅佔所有腕骨骨折的 2–4%；但在職業棒球選手中，它是<strong style="color: #ffffff;">手部最常見的手術適應症</strong>，佔所有手部腕部手術的三分之一。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9839919/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[11]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">左打 vs. 右打：都是「下手」受傷</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是鉤骨骨折最關鍵的特點：<strong style="color: #ffffff;">不論左打還是右打，骨折幾乎 100% 發生在下手（非慣用手）。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究調查了 42 名接受鉤骨鉤突切除手術的精英棒球選手，其中 32 名右打、10 名左打，所有球員受傷的都是持棒的下手。右打者傷的是左手，左打者傷的是右手——沒有例外。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8972935/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[12]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    對大多數球員而言，「下手」就是非慣用手；因此：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">右打者（通常右投）→ 左手鉤骨骨折風險</strong></li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">左打者（通常左投）→ 右手鉤骨骨折風險</strong></li>
+    <li style="margin-bottom: 0.5rem;">「右投左打」（下手是慣用的右手） → 學界觀察這類組合的慣用手鉤骨骨折案例，提示了更複雜的風險模式</li>
+  </ul>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">傷害機制：為什麼現代打法讓情況更糟？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    根據矯形外科醫師 Thomas DiLiberti 的說明，現代打者為了追求更大的揮棒速度，傾向將手握得越來越靠近球棒末端，甚至讓小指幾乎不在棒上，這讓球棒旋鈕與鉤骨之間的衝擊更為集中且暴力。
+    <sup><a href="https://www.npr.org/....../an-orthopedic-surgeon......" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[13]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究顯示，當打者在擊球區域之外「止揮」時，鉤骨所承受的壓力發展速率是所有揮棒條件中最高的——<strong style="color: #ffffff;">突然在不當位置減速，比正常擊球對鉤骨更危險。</strong>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8671670/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[14]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">症狀與後果：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">小指側腕部深處的模糊疼痛（難以精確定位）</li>
+    <li style="margin-bottom: 0.5rem;">握力下降，影響揮棒力道（據醫師估計影響 5–10%，在職業選手層面足以改變職業生涯）</li>
+    <li style="margin-bottom: 0.5rem;">非手術治療（石膏固定）的骨不癒合率高達 50–90%，多數需要手術切除鉤突</li>
+    <li style="margin-bottom: 0.5rem;">術後回場時間約 6–9 週，但部分球員反映術後握力與打擊力道有永久性下降</li>
+  </ul>
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 典型職業案例：</strong><br><br>
+      Mike Trout（右投右打 → 左手下手）於 2021 年因左手鉤骨骨折手術後返場僅一場即再度停賽，整季告終。Giancarlo Stanton、José Ramírez、Mookie Betts 也都曾經歷同樣手術。值得注意的是，Ken Griffey Jr. 在 1996 年 6 月接受同樣手術，缺席約一個月後以第四名完成 AL MVP 票選，顯示術後恢復因人而異。
+    </p>
+  </div>
+</section>
+<hr>
+<!-- 四 -->
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">四、最常見傷害 ②：腹斜肌拉傷——核心旋轉的代價</h2>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">棒球選手的「天敵傷害」</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    在職業棒球界，腹斜肌拉傷被視為最令人沮喪的傷害之一——平均必須停賽至少 15 天，嚴重者可達數個月。它不是明顯的骨折或韌帶斷裂，而是核心肌群的撕裂，影響所有需要核心穩定的日常動作，包括呼吸、咳嗽、轉身。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究指出，腹斜肌拉傷幾乎恆常<strong style="color: #ffffff;">發生在慣用手的對側</strong>，原因是揮棒時，正是對側的內斜肌負責驅動軀幹向慣用手方向旋轉。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8075560/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">因此：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">右打者：</strong>揮棒時軀幹向左旋轉 → <strong style="color: #ffffff;">左側內斜肌承受最大離心負荷</strong> → 右打者的左側斜肌拉傷風險最高</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">左打者：</strong>揮棒時軀幹向右旋轉 → <strong style="color: #ffffff;">右側內斜肌承受最大離心負荷</strong> → 左打者的右側斜肌拉傷風險最高</li>
+  </ul>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">為什麼現代棒球讓斜肌傷害更多？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    現代棒球強調「飛球革命」，球員普遍追求更大的仰角擊球，這需要在更大的軀幹旋轉角速度下配合「從下往上掃」的揮棒軌跡。同時，重量訓練使球員下肢與臀部力量大增，這些強大的下肢旋轉力量如果沒有同等強健的核心肌群傳遞，就可能在斜肌處形成「斷點」，引發撕裂。
+    <sup><a href="https://recoverypt.com/mlb-and-those-pesky-obliques/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    腹斜肌拉傷一旦進入慢性期或發生撕脫傷害，連呼吸都會觸發疼痛，恢復期往往拉長至 2–3 個月。更麻煩的是，許多球員在感覺「差不多好了」時就急於復出，結果在同一部位反覆受傷，最終成為職業生涯的慢性問題。
+  </p>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床觀點 #2</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      臨床上常見一個有趣現象：轉換打擊側的球員（例如右投左打的開關打者）在換邊打擊時，斜肌傷害也可能出現在不同側。這是因為核心肌群對特定旋轉方向的適應性訓練不足。若球員近期曾有斜肌受傷史，醫師有時會建議轉換至受傷斜肌不是主力的那一側打擊，讓受傷側有更多恢復空間。
+    </p>
+  </div>
+</section>
+<hr>
+<!-- 五 -->
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">五、最常見傷害 ③：腰椎傷害——被低估的打擊傷害</h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    雖然腰椎傷害在大眾印象中較常與投手連結，但打擊動作同樣對腰椎造成極大壓力。研究指出，背部與核心傷害佔所有造成停賽的 MLB 傷害的約 <strong style="color: #ffffff;">12%</strong>，腰椎椎間盤突出是最常見的腰椎傷害類型，佔所有腰椎傷害的 44%。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/36867724/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[3]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    打擊動作中，軀幹的高速旋轉加上腰椎的屈曲，對椎間盤產生極大的複合剪切力。類似高速旋轉運動（如高爾夫球揮桿）的腰椎壓縮負荷估計超過體重的 <strong style="color: #ffffff;">6 倍</strong>。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5504913/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
+    日本學者針對大學棒球打者的研究進一步發現，有腰椎椎間盤退化的打者，其揮棒的動力鏈時序顯著不同：骨盆旋轉延遲而上軀幹過早旋轉，導致脊椎在不適當位置承受更大的扭矩。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10122975/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[15]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">左打 vs. 右打的腰椎差異</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    由於旋轉方向相反，兩種打法的腰椎所承受的非對稱應力也左右相反。長期累積下來，右打者可能呈現右側腰椎結構退化較早，左打者則相反。然而，目前文獻尚缺乏足夠的大型研究直接比較左右打者的腰椎退化差異，多數研究集中在投手族群。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    可以確定的是，<strong style="color: #ffffff;">核心穩定性不足是兩種打法腰椎傷害的共同最大危險因子</strong>——無論你是左打還是右打，若骨盆旋轉時序不正確，腰椎都會成為代償性受力點。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見腰椎傷害類型：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">椎間盤突出（Lumbar Disc Herniation）——最常見，佔腰椎手術的最高比例</li>
+    <li style="margin-bottom: 0.5rem;">峽部裂（Spondylolysis）——好發於青少年棒球選手</li>
+    <li style="margin-bottom: 0.5rem;">腰椎退化性關節疾病（Degenerative Disc Disease）——長期累積性損傷</li>
+    <li style="margin-bottom: 0.5rem;">骶髂關節疼痛（Sacroiliac Joint Pain）</li>
+  </ul>
+</section>
+<hr>
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、左右打者傷害風險比較表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 800px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      text-align: left;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    /* 第一欄特殊樣式 */
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>傷害類型</th>
+          <th>右打者受傷部位</th>
+          <th>左打者受傷部位</th>
+          <th>發生原因</th>
+          <th>平均缺賽天數</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>鉤骨鉤突骨折</td>
+          <td>左手（下手）</td>
+          <td>右手（下手）</td>
+          <td>球棒旋鈕反覆壓迫非慣用手鉤骨</td>
+          <td>42–63 天（術後）</td>
+        </tr>
+        <tr>
+          <td>腹斜肌拉傷</td>
+          <td>左側斜肌</td>
+          <td>右側斜肌</td>
+          <td>揮棒旋轉的對側斜肌離心收縮</td>
+          <td>15–45 天</td>
+        </tr>
+        <tr>
+          <td>腰椎椎間盤突出</td>
+          <td>腰椎（非對稱右側較易）</td>
+          <td>腰椎（非對稱左側較易）</td>
+          <td>高速旋轉複合腰椎屈曲的剪切力</td>
+          <td>28–180 天（嚴重者手術）</td>
+        </tr>
+        <tr>
+          <td>手腕尺側傷害（TFCC）</td>
+          <td>左手（下手）尺側</td>
+          <td>右手（下手）尺側</td>
+          <td>下手在揮棒末期的尺偏動作</td>
+          <td>14–60 天</td>
+        </tr>
+        <tr>
+          <td>肩袖（旋轉肌群）傷害</td>
+          <td>右肩（慣用肩）</td>
+          <td>左肩（慣用肩）</td>
+          <td>揮棒加速期的旋轉肌群離心負荷</td>
+          <td>21–90 天</td>
+        </tr>
+        <tr>
+          <td>前臂屈肌拉傷</td>
+          <td>右前臂（上手慣用側）</td>
+          <td>左前臂（上手慣用側）</td>
+          <td>擊球瞬間的衝擊吸收與握力維持</td>
+          <td>10–30 天</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<hr>
+<!-- 七 -->
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">七、其他常見棒球打擊傷害</h2>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">TFCC 損傷（三角纖維軟骨複合體）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    TFCC 是腕部小指側的關鍵穩定結構，負責吸收前臂旋轉時的衝擊。研究發現，揮棒時下手手腕在跟進階段會產生急劇的尺偏動作，這個動作對 TFCC 的張力極高。
+    <sup><a href="https://mss-ijmsr.com/non-dominant-leading-wrist....../" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[16]</a></sup>
+    症狀通常是小指側腕部的深層疼痛，前臂旋轉時加劇，容易被誤診為肌肉拉傷而延誤治療。
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">肩袖（旋轉肌群）傷害</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    雖然肩袖傷害在投手中更為普遍，打者的慣用側肩膀在揮棒加速階段同樣承受顯著的旋轉肌群離心負荷。大學棒球選手的傷害流行病學研究顯示，旋轉肌腱傷害是最常見的具體傷害診斷（98 例，位居第一），其次才是尺側副韌帶傷害（63 例）與腿後肌拉傷（60 例）。
+    <sup><a href="https://www.researchgate.net/....../Annual-oblique......" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[17]</a></sup>
+  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">下肢傷害：腿後肌與膝關節</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    揮棒時前腳的急促踩踏（相當於體重 123% 的衝擊力），以及上壘後的爆發性加速跑，使腿後肌成為高風險傷害部位，是 MLB 位置球員（非投手）中第三常見的傷害。右打者的右後腿（後腳）在揮棒撐地時承受較大負荷；上壘的爆發奔跑則主要影響對稱性的雙側腿後肌。
+  </p>
+</section>
+<hr>
+<!-- 八：數據比較 -->
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">八、左打者比右打者更容易受傷嗎？精確數據分析</h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是最常被問到的問題，答案是：<strong style="color: #2dd4bf;">整體傷害率並無顯著差異，但傷害部位因打擊側不同而鏡像分布。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    目前文獻尚缺乏大規模直接比較左右打者整體傷害率的研究，但以下幾點數據有助於理解風險分布：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">鉤骨骨折：</strong>在一項 42 例手術研究中，右打 32 例（76%）、左打 10 例（24%），右打比例較高，但考量到職業棒球中右打本就佔多數，此比例並不代表右打者的個別風險更高。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8972935/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[12]</a></sup></li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">斜肌傷害：</strong>職業棒球中，斜肌拉傷每賽季平均造成數十名球員缺賽，兩側均有發生，且發生率與球員的打擊手大致成比例。MLB 的 HITS 數據庫分析顯示，斜肌拉傷的整體缺賽天數遠低於肋骨應力骨折（平均缺賽 20–30 天 vs. 超過 60 天）。
+    <sup><a href="https://www.researchgate.net/....../Annual-oblique......" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[17]</a></sup></li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">腰椎傷害：</strong>206 例腰椎傷害中，60 例（29%）為整季終結傷害，27 例（13%）需要手術。投手的腰椎傷害率顯著高於位置球員，但目前文獻未區分左右打者之間的腰椎傷害差異。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/36867724/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[3]</a></sup></li>
+  </ul>
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床觀點 #3</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在評估打者傷害風險時，打擊側只是其中一個變數。更關鍵的因素包括：打擊技術成熟度（特別是骨盆旋轉的時序）、核心肌群的旋轉肌力、揮棒軌跡、訓練量管理，以及球棒握持位置（越靠末端，鉤骨風險越高）。單純因為「某一打擊側更容易受傷」而建議改換打擊側，缺乏充足的科學依據，也可能引入新的風險。
+    </p>
+  </div>
+</section>
+<hr>
+<!-- 九：誤區 -->
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 九、常見四大誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「左打者距離一壘更近，所以跑壘比右打更快」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">
+            <strong>過度簡化！</strong> 左打者的站位確實距離一壘近約 1.5 公尺，揮棒後動量也自然朝一壘方向；但右打者在完成揮棒後，身體已面朝一壘，啟動加速時間更短。數據分析顯示，左打者平均比右打者早約 0.1 秒到達一壘，但這個優勢部分被左打者更容易打出往一壘/二壘方向的滾地球（投手最短的傳球距離）所抵消。
+            <sup><a href="https://towardsdatascience.com/safe-the-effect-of....../" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[18]</a></sup>
+          </span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「鉤骨骨折只要休息就會好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">
+            <strong>危險的誤解！</strong> 非手術治療（石膏固定）的鉤骨骨不癒合率高達 50–90%，遠高於其他腕骨骨折。原因是鉤突血液供應本就不佳，加上手指屈肌腱的持續摩擦阻礙癒合。多數骨科醫師建議手術切除（不是復位固定）以確保快速回場。
+            <sup><a href="https://www.nynjcmd.com/major-league-baseball-player....../" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[19]</a></sup>
+          </span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「斜肌拉傷就是腹部拉傷，休息幾天就好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">
+            <strong>嚴重低估！</strong> 腹斜肌是所有棒球動作（不只打擊，連跑壘、守備都需要）的核心結構。在急性期忽視、提前復出，不僅延長復原時間（從 2–4 週拉長至 2–3 個月），更可能導致同一部位反覆撕裂，形成慢性核心不穩定，影響職業生涯的中長期表現。
+          </span>
+        </div>
+      </li>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
+        <div>
+          <strong>「改成開關打者就能避免傷害」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">
+            <strong>雙刃劍！</strong> 開關打者確實在某些傷害後可以利用另一側繼續比賽，但同時也讓兩側的核心、腕部都必須承受訓練負荷，如果適應性訓練不足，反而可能出現雙側傷害。成年後才開始練習另一側打擊的球員，技術不成熟帶來的受力不均，風險更需審慎評估。
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<hr>
+<!-- 十：預防策略 -->
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">十、預防策略：從訓練到裝備</h2>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">針對鉤骨骨折的預防</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">調整握棒位置：</strong>避免手握太靠近末端（旋鈕處），適當上握可顯著減少旋鈕對鉤骨的壓縮應力</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">打擊手套的緩衝設計：</strong>選擇在小魚際位置有額外緩衝墊的打擊手套</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">止揮技術訓練：</strong>學習正確的止揮技術，避免在不當位置急停揮棒，這是壓力最高的動作</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">早期症狀警覺：</strong>若小指側腕部出現深層悶痛、握力下降，應立即影像學檢查（X 光可能無法顯示，需 CT 或 MRI 確診）</li>
+  </ul>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">針對斜肌拉傷的預防</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">核心旋轉肌力不對稱檢測：</strong>定期評估左右側核心旋轉力量，不對稱超過 15% 是傷害的預測因子</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">髖部靈活度訓練：</strong>髖部旋轉受限是斜肌代償性過載的最常見誘因，應定期進行髖部旋轉活動度訓練</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">漸進式訓練量控制：</strong>賽季前突然增加揮棒量（超過 10%/週）是斜肌拉傷的高風險因素</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">動力鏈時序訓練：</strong>確保骨盆旋轉先於上軀幹，避免上軀幹「搶先旋轉」所引發的斜肌代償</li>
+  </ul>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">針對腰椎傷害的預防</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">腰椎穩定訓練：</strong>研究顯示核心穩定訓練能有效降低棒球選手的腰椎傷害風險
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10122975/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[15]</a></sup></li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">動作分析與技術矯正：</strong>透過影像分析識別「上軀幹過早旋轉」等高風險動作模式，並在教練協助下矯正</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">定期篩查：</strong>對有下背痛史的球員，建議定期影像學追蹤，早期識別椎間盤退化</li>
+  </ul>
+</section>
+<hr>
+<!-- FAQ -->
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q1：業餘球員有必要擔心鉤骨骨折嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      需要保持警覺，但不必過度恐慌。鉤骨骨折在職業球員中高發，部分原因是他們的訓練量遠高於業餘球員。然而，手術紀錄中確實包含高中生和大學生球員。若你打擊時感到小指側腕部深層悶痛，且握力有所下降，不應等閒視之，建議就醫評估。
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q2：腰痛打完就不痛了，是正常的嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      「打完就不痛」並不代表沒有問題，可能是打擊時肌肉興奮掩蓋了疼痛訊號，或是椎間盤問題只在特定動作下才引發症狀。若腰痛反覆出現、超過 2 週未緩解，或伴隨下肢麻木、無力，應盡快就醫。棒球運動的腰椎累積損傷是慢性的，早期介入遠比晚期手術更有效率。
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q3：右投改成左打能否提升表現同時降低傷害？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      這是許多家長和教練的問題。從戰術表現角度，「右投左打」確實在統計上有成績優勢。
+      <sup><a href="https://www.sciencedaily.com/....../2017/10/171031084857.htm" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[9]</a></sup>
+      從傷害角度，主要是鉤骨骨折的部位會從左手換到右手（慣用手）。沒有充分的文獻支持改換打擊側可以整體降低傷害率，更重要的是提供充足的技術訓練和肌力基礎，無論選擇哪一側。
+    </p>
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q4：打棒球後手腕疼痛，多久應該就醫？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      若手腕疼痛超過 72 小時未緩解，或是出現明顯腫脹、旋轉前臂有異響、握力明顯下降等症狀，應儘早就醫。鉤骨骨折在普通 X 光下常不易顯示，需要 CT 或特定角度 X 光才能確診，不要因為「X 光正常」就輕忽，必要時進一步影像學檢查是關鍵。
+    </p>
+  </div>
+</section>
+<hr>
+<!-- 結語 -->
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    棒球打擊傷害的核心邏輯清晰：下手鉤骨因為持棒方式承受最高壓縮應力，斜肌因為旋轉方向承受最高離心負荷，腰椎因為高速複合旋轉承受累積性損傷——而這三類傷害的部位，都會隨著打擊側的不同而呈鏡像分布。
+  </p>
+  <p style="color: #475569; font-size: 1.05rem;">
+    左打還是右打，沒有「更安全」之分，只有「了解自己的高風險部位、針對性訓練與預防」的差別。<br><br>
+    無論你是業餘週末打者還是認真備賽的球員，<strong style="color: #1e293b;">最好的預防永遠從理解自己的身體和動作模式開始</strong>。若你對現有的不適或自己的揮棒力學有疑慮，尋求運動醫學專科的評估，一次正確的動作分析，可能為你節省好幾個月的復健時間。
+  </p>
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的傷害風險比較表，確認你的打擊側與高風險部位，並在下一次練習時特別留意下手腕部和核心側邊的感受。若有任何持續性不適，請尋求專業醫療評估。
+    </p>
+  </div>
+    <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important;">
+        預約運動醫學門診評估
+    </a>
+  </div>
+</div>
+<hr>
+<!-- 參考文獻 -->
+<div>
+  <h2>📚 參考文獻 (References)</h2>
+  <div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+    <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Bachoura, A., Wroblewski, A., Jacoby, S.M., Osterman, A.L., & Culp, R.W. (2013). Hook of hamate fractures in competitive baseball players. Hand, 8(3), 302–307. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3745239/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 3745239</a></span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Higashihara, A., et al. (2021). Abdominal oblique muscle injury at its junction with the thoracolumbar fascia in a high school baseball player presenting with unilateral low back pain. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8075560/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 8075560</a></span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">van Dijk, C.N., et al. (2023). Epidemiology of Lumbar Spine Conditions in Professional Baseball Players. Clinical Spine Surgery. <a href="https://pubmed.ncbi.nlm.nih.gov/36867724/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PubMed: 36867724</a></span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Welch, C.M., et al. (1995). Hitting a baseball: A biomechanical description. Journal of Orthopaedic & Sports Physical Therapy, 22(5), 193–201. <a href="https://pubmed.ncbi.nlm.nih.gov/8580946/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PubMed: 8580946</a></span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Laudner, K., et al. (2017). Assessment and rehabilitation of chronic low back pain in baseball: part II. PMC5504913. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5504913/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 5504913</a></span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Recovery PT. (2017). MLB and Those Pesky Obliques. <a href="https://recoverypt.com/mlb-and-those-pesky-obliques/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a></span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Applied Vision Baseball. (2024). Batting Left Handed VS Right-Handed Hitting Approaches. <a href="https://appliedvisionbaseball.com/batting-left-handed....../" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a></span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Tango, T. (2007). The advantage of batting left-handed. The Hardball Times / FanGraphs. <a href="https://tht.fangraphs.com/the-advantage-of-batting....../" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a></span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Mann, D.L., Loffing, F., & Allen, P.M. (2017). The Success of Sinister Right-Handers in Baseball. New England Journal of Medicine, 377(17), 1688. <a href="https://www.sciencedaily.com/....../2017/10/171031084857.htm" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">ScienceDaily Report</a></span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">MLB.com. (2024). Hamate bone injuries in baseball, explained. <a href="https://www.mlb.com/....../hamate-bone-injuries-in......" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a></span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Chalmers, P.N., et al. (2022). Common Hand Injuries in the Baseball Player. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9839919/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 9839919</a></span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Garon, M.T., et al. (2022). Excision of Hook of Hamate Fractures in Elite Baseball Players: Surgical Technique and Return to Play. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8972935/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 8972935</a></span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">DiLiberti, T. (interviewed by NPR). (2026). An orthopedic surgeon explains the hand injury that has many MLB players on the bench. NPR. <a href="https://www.npr.org/....../an-orthopedic-surgeon......" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a></span>
+      </li>
+<li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Shin, K., et al. (2022). Swing Type and Batting Grip Affect Peak Pressures on the Hook of Hamate in Collegiate Baseball Players. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8671670/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 8671670</a></span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Kaneoka, K., et al. (2023). Analysis of trunk rotation during baseball batting with lumbar disc degeneration. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10122975/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 10122975</a></span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Indian Journal of Musculoskeletal Radiology. (2023). Non-dominant leading wrist injuries in Indian professional cricketers. <a href="https://mss-ijmsr.com/non-dominant-leading-wrist....../" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a></span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Cushman, D.M., et al. (2022). Examining the Prevalence of Sports-Related Injuries in Collegiate Baseball Players (PAC-12 data). ResearchGate. <a href="https://www.researchgate.net/....../Annual-oblique......" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">ResearchGate</a></span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Park, M.J. (2025, via Towards Data Science). Safe! The Effect of Batting Hand on Making it to First Base. <a href="https://towardsdatascience.com/safe-the-effect-of....../" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a></span>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Center for Musculoskeletal Disorders. (2021). Major League Baseball Player Francisco Cervelli Joins Long List of Players to Fracture Hamate Bone. <a href="https://www.nynjcmd.com/major-league-baseball-player....../" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a></span>
+      </li>
+    </ol>
+  </div>
+</div>
+
+  `
+},
+
+{
+    id: 'baseball-pitcher-handedness-medical-analysis',
+    title: '棒球左投右投全解析：運動醫學觀點的優缺點與傷害風險',
+    lastModified: '2026-04-26',
+    category: '衛教文章',
+    date: '2026-04-26',
+    summary: '從運動醫學與生物力學角度，深度剖析棒球左投與右投在生理結構上的顯著差異。本文探討左右投不同的肩肘傷害風險，包含 UCL 損傷與 GIRD 問題，並提供戰術優勢分析與專業的傷害預防監測策略。',
+    coverImage: '/images/news/article/baseball-pitcher-handedness.webp',
+    seoTitle: '棒球左投 vs 右投：運動醫學解析傷害風險、生物力學與戰術優勢',
+    seoDescription: '專業醫師分析棒球投手的生物力學差異：左投與右投在肩外旋角度、GIRD、以及肘部外翻力矩上的不同表現。詳解 Tommy John 手術、SLAP 損傷等常見傷害的成因與預防策略。',
+    keywords: [
+      '棒球運動傷害',
+      '左投優勢',
+      '右投手生物力學',
+      '尺側副韌帶損傷',
+      'Tommy John 手術',
+      '肩關節內旋受限',
+      'GIRD',
+      'SLAP 淚裂',
+      '運動醫學',
+      '復健科'
+    ],
+    contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    棒球投手的投球動作是人類已知最快速的上肢動作之一，肩關節在極短時間內以超過 7,000 度/秒的角速度旋轉，對肩肘關節造成極大負荷。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5435152/" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[1]</a></sup>
+    左投（左手投球）與右投在生物力學特徵上存在顯著差異：右投手的投球側肩關節外旋角度（118.5°）明顯大於左投手（112.7°），且右投手的肱骨後傾角側差也更為突出；而左投手則表現出更大的投球側屈曲缺損。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/35833921/" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[2]</a></sup><br><br>
+    這些結構性差異使左右投面臨不同的傷害風險。目前全大聯盟（MLB）約有 26% 的投手曾接受尺側副韌帶重建手術（俗稱「Tommy John 手術」），
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8209837/" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[3]</a></sup>
+    而肩部傷害更影響高達 57% 的棒球投手。
+    <sup><a href="https://memorialhermann.org/services/conditions/sports-injuries/shoulder-injuries-in-baseball" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[4]</a></sup>
+    從戰術角度而言，左投手佔大聯盟投球局數的約 28%，卻因稀缺性與同側打擊優勢而被球隊視為珍貴資源。本文將從運動醫學角度，系統性分析左右投的生物力學、傷害風險與預防策略。
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、投球動作：為什麼投手是高風險族群？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    投球，是一個看似自然、卻對人體關節極度嚴苛的動作。從接球、引體、跨步、加速，到球出手、減速收臂，整個動作鏈在不到半秒內完成，卻要求肩肘關節承受遠超日常生活的負荷。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    研究指出，投球引起的相關肩肘疼痛，在投手中的盛行率高達 <strong style="color: #2dd4bf;">46%–57%</strong>。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5435152/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[1]</a></sup>
+    在「加速期」，肩關節以超過 7,000 度/秒的速度快速內旋；球出手後的「減速期」，旋轉肌群必須在瞬間吸收巨大的拉張力，以防手臂飛出去。這種反覆性的衝擊，正是投手傷害的根源。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    從生物力學角度，投球的關鍵應力發生在兩個節點：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">肘部「外翻力矩」）：</strong>球出手前，前臂瞬間向外打開，內側的尺側副韌帶（UCL）必須抵抗這股把肘關節撐開的力量。這是 Tommy John 手術的主因。
+      <sup><a href="https://www.sciencedirect.com/science/article/pii/S2095254612000427" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">肩部「拉張力」：</strong>球出手後減速階段，肩關節承受相當於體重 1–1.5 倍的拉張力，旋轉肌群、關節囊與盂唇共同抵抗這股將手臂往外甩的力量。
+      <sup><a href="https://www.sciencedirect.com/science/article/pii/S2095254612000427" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
+    </li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    投球動作共分為六個階段：準備期→引體期→跨步期→蓄力期→加速期→減速/跟進期。其中蓄力期與減速期的關節應力最高，也是最容易造成傷害的時期。
+    <sup><a href="https://orthoinfo.aaos.org/en/diseases--conditions/shoulder-injuries-in-the-throwing-athlete/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[6]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、左投 vs. 右投：身體結構的關鍵差異
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    左右投的差異，絕不只是「換一隻手投球」這麼簡單。長年的投球訓練會讓骨骼結構本身產生適應性改變，形成左右投手特有的生理特徵。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">右投手的生物力學特徵</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    2022 年發表於 American Journal of Sports Medicine 的大型研究，針對 96 名左投與 96 名右投的職業球員進行配對比較。結果發現：
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/35833921/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;">投球側肩關節外旋角度更大（平均 118.5° vs. 左投 112.7°），統計上達顯著差異</li>
+    <li style="margin-bottom: 0.5rem;">投球側肩關節內旋受限（GIRD）更明顯（平均 13.9° vs. 左投 4.8°）</li>
+    <li style="margin-bottom: 0.5rem;">肱骨後傾角的雙側差異更大（-23.1° vs. 左投 -2.2°）</li>
+    <li style="margin-bottom: 0.5rem;">跨步落地時肩關節外展角度較大（115° vs. 左投 73°）</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    右投手的 GIRD（肩膀內旋受限）問題特別值得關注。後肩囊的緊縮會在每次投球時造成肱骨頭在關節窩內產生異常位移，增加後上盂唇損傷的風險。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">左投手的生物力學特徵</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    同一研究發現，左投手表現出截然不同的特徵：
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/35833921/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;">投球側的肩關節屈曲受限顯著大於右投手（7.5° vs. 0°）</li>
+    <li style="margin-bottom: 0.5rem;">肱骨後傾角的雙側差異遠小於右投手，顯示骨骼適應程度較低</li>
+    <li style="margin-bottom: 0.5rem;">跨步落地時肘關節屈曲角度更大（94° vs. 右投 79°），這可能造成更大的肘部外翻力矩</li>
+    <li style="margin-bottom: 0.5rem;">大學生左投手研究進一步發現，左投存在更高的<strong style="color: #ffffff;">肘部外翻力矩</strong>，是尺側副韌帶的重要風險因子
+      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/27256719/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[7]</a></sup>
+    </li>
+  </ul>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床觀察</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      值得注意的是，另一項以 96 對職業投手為樣本的大規模研究（Fleisig et al.）卻發現，左右投在 31 個動作力學變項中，只有 4 個達到統計顯著差異，且差異幅度較小，認為投球技術指導可以不區分慣用手。
+      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/29562832/" target="_blank" rel="noopener noreferrer" style="color: #0e7490;">[8]</a></sup>
+      這提醒我們：左右投的差異，可能受到樣本年齡層、訓練程度影響，臨床上不應過度類推。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、左投更容易受傷嗎？從傷害研究看真相
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">肘部 UCL 傷害：左投可能更脆弱</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    尺側副韌帶（UCL）損傷是投手最具職業威脅性的傷害，需要接受 Tommy John 手術重建，平均需要 12–20 個月才能重返賽場。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7905078/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[9]</a></sup>
+    目前估計，MLB 中高達 <strong style="color: #ffffff;">26% 的投手</strong>在職業生涯中曾接受 UCL 重建手術，而 2023 年賽季中，有過 Tommy John 手術史的投手比例更高達 35.3%。
+    <sup><a href="https://en.wikipedia.org/wiki/Tommy_John" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[10]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    從生物力學來看，左投手在大學生族群中被發現有較高的肘部外翻力矩，而這種力矩正是 UCL 的主要應力來源。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/27256719/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[7]</a></sup>
+    更有意思的是，有一類罕見的肱骨骨折（稱為「投手骨折」）在大聯盟歷史上僅有四例，<strong style="color: #ffffff;">四名都是左投手</strong>，研究者認為這與左投手肘部較高的力矩模式有關。
+    <sup><a href="https://www.nbcnews.com/id/wbna37987089" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[11]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">肩部傷害：右投手的 GIRD 問題更嚴重</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    在肩部傷害方面，右投手的肩關節內旋受限（GIRD）問題更為突出。GIRD 是指投球側與非投球側肩膀的內旋角度差異過大，通常定義為超過 18–20°。有研究指出，GIRD 是導致盂唇損傷（特別是 SLAP 淚裂）的重要風險因子。
+    <sup><a href="https://orthoinfo.aaos.org/en/diseases--conditions/shoulder-injuries-in-the-throwing-athlete/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    而左投手雖然 GIRD 程度較輕，卻有較明顯的<strong style="color: #ffffff;">屈曲缺損</strong>，這可能影響投球動作的流暢性，造成代償性的施力模式，間接增加傷害風險。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/35833921/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
+  </p>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 典型案例：</strong><br><br>台灣旅美球員古博文（Josh Rojas 等知名案例）與許多左投手一樣，在職業生涯中面臨 UCL 相關的肘部問題。韓裔大聯盟投手郭泓志（Hong-Chih Kuo）更以一人四次 Tommy John 手術而聞名，雖然他的問題屬於極端個案，但充分說明了重複性手肘傷害對投手職業生涯的毀滅性影響。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">高中生左投手的前瞻性研究</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    2025 年發表於 Orthopaedic Journal of Sports Medicine 的最新前瞻性研究，追蹤高中左投手的肩肘傷害風險，特別關注「過度肩關節外旋」這個危險因子。研究指出，左投手的投球生物力學特徵本身具有獨特性，現有的傷害風險評估工具（大多以右投手為研究對象建立）可能不能直接套用於左投手。
+    <sup><a href="https://journals.sagepub.com/doi/10.1177/23259671251340300" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[12]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、最常見的棒球投手傷害：逐項解析
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">① 尺側副韌帶（UCL）損傷——Tommy John 手術的源頭</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    UCL 是肘關節內側的主要韌帶，也是投球動作中抵抗外翻力矩的第一道防線。投手每次投球，肘部外翻力矩峰值可達 <strong style="color: #ffffff;">64 牛頓·米（N·m）</strong>，而 UCL 本身的最大承受強度約為 35 N·m——這意味著投球時，肌肉系統必須負責分擔剩餘的力量。一旦肌肉疲乏，韌帶便承受超限壓力。
+    <sup><a href="https://www.sciencedirect.com/science/article/pii/S2095254612000427" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見症狀：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <li>投球時內側肘部疼痛，尤其在加速期</li>
+    <li>球速突然下降、控球變差</li>
+    <li>肘部緊繃感或不穩定感</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    Tommy John 手術成功率高達 85–95%，但術後重返大聯盟平均需要 <strong style="color: #ffffff;">20.5 個月</strong>，而完全重返相同競技水準的比例約為 67–87%。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7905078/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[9]</a></sup>
+    值得注意的是，在研究追蹤的 272 名接受 UCL 重建的 MLB 投手中，術後 1 年內不論哪個手術時機，有高達 <strong style="color: #ffffff;">22%</strong> 的投手無法在下一個賽季返場。
+    <sup><a href="https://www.sciencedirect.com/science/article/pii/S2666639125002147" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[13]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">② 旋轉肌群傷害——肩部的隱形殺手</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    旋轉肌群由棘上肌、棘下肌、肩胛下肌和小圓肌四條肌肉組成，負責穩定肱骨頭在肩臼內的位置。研究指出，<strong style="color: #ffffff;">57% 的棒球投手</strong>在一個賽季中會發生某種程度的肩部傷害。
+    <sup><a href="https://memorialhermann.org/services/conditions/sports-injuries/shoulder-injuries-in-baseball" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    投球的減速期是旋轉肌群最脆弱的時刻：後側旋轉肌群（棘下肌、小圓肌）必須在極短時間內產生離心收縮，以對抗手臂慣性，防止肩關節前脫位或肱骨頭碰撞。若後肩囊緊繃（即 GIRD），肱骨頭會在內旋時往後上方偏移，使後上盂唇與旋轉肌群在肩臼後緣互相夾擠，引發「內撞擊症候群」。
+    <sup><a href="https://orthoinfo.aaos.org/en/diseases--conditions/shoulder-injuries-in-the-throwing-athlete/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[6]</a></sup>
+  </p>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見傷害種類（由輕至重）：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">旋轉肌群肌腱炎</li>
+    <li style="margin-bottom: 0.5rem;">旋轉肌群部分厚度撕裂，尤以關節面側最常見</li>
+    <li style="margin-bottom: 0.5rem;">旋轉肌群全層撕裂</li>
+    <li style="margin-bottom: 0.5rem;">肩關節夾擠症候群</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">③ 盂唇損傷（SLAP 淚裂）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    SLAP（Superior Labrum Anterior to Posterior）淚裂是指肩關節上方盂唇的撕裂傷，特別發生在二頭肌長頭肌腱的附著處。研究顯示，職業棒球球員的關節鏡檢查中，高達 <strong style="color: #ffffff;">78%</strong> 有某種程度的盂唇異常。
+    <sup><a href="https://www.sciencedirect.com/science/article/pii/S2095254612000427" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    肩關節水平外展不足被研究確認為 SLAP 損傷的獨立風險因子，此問題在右投手中更為常見，與 GIRD 的發生機制密切相關。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5435152/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[1]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">④ 肘部屈肌-旋前肌群肌腱病變</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    除了 UCL 之外，肘部內側另一個常見的傷害是「屈腕-旋前肌群肌腱病變」，俗稱「高爾夫球肘」的投手版本。屈腕肌群和旋前圓肌附著於肱骨內上髁，在投球的加速期承受強烈的離心收縮。若長期過度使用，會造成內上髁的肌腱退化性損傷。症狀為內側肘部疼痛，容易與 UCL 傷害混淆，需要超音波或 MRI 加以鑑別診斷。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3392154/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[14]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、左右投傷害比較總表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 800px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>比較項目</th>
+          <th>右投手（RHP）</th>
+          <th>左投手（LHP）</th>
+          <th>傷害臨床重點</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>肩關節外旋角度</td>
+          <td>較大（平均 118.5°）</td>
+          <td>較小（平均 112.7°）</td>
+          <td>右投的極端外旋增加肘外翻力矩</td>
+        </tr>
+        <tr>
+          <td>肩關節內旋受限（GIRD）</td>
+          <td>顯著（平均 13.9°）</td>
+          <td>輕微（平均 4.8°）</td>
+          <td>右投更易有後肩囊緊縮、SLAP 損傷</td>
+        </tr>
+        <tr>
+          <td>肩關節屈曲缺損</td>
+          <td>無明顯差異</td>
+          <td>更顯著（平均 7.5°）</td>
+          <td>左投代償性施力模式風險</td>
+        </tr>
+        <tr>
+          <td>肘部外翻力矩</td>
+          <td>一般</td>
+          <td>較高（大學生研究）</td>
+          <td>左投 UCL 承受更大應力</td>
+        </tr>
+        <tr>
+          <td>最常見肩部傷害</td>
+          <td>SLAP 淚裂、內撞擊症候群、旋轉肌群撕裂</td>
+          <td>旋轉肌群肌腱炎、屈曲相關傷害</td>
+          <td>需個別化評估</td>
+        </tr>
+        <tr>
+          <td>最常見肘部傷害</td>
+          <td>UCL 損傷、屈肌肌腱病變</td>
+          <td>UCL 損傷（力矩較高）、特定骨折型態</td>
+          <td>左投骨折型態史上全為左投</td>
+        </tr>
+        <tr>
+          <td>戰術優勢</td>
+          <td>對右打有同側優勢；右打者熟悉度高</td>
+          <td>對左打有同側優勢；右打者不熟悉；稀缺性高</td>
+          <td>左投球隊薪資溢價有依據</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、左投的戰術優勢與醫學意涵
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    雖然左投在某些生物力學指標上可能承受更高的肘部應力，但球隊之所以願意投入大量資源培養左投，有其充分的戰術理由。了解這些戰術優勢，也有助於我們從運動醫學角度理解「為何左投承受如此大的競技壓力」。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">稀缺性造成的競技優勢</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    在一般人群中，大約只有 10% 的人是左撇子，而 MLB 中卻有約 <strong style="color: #ffffff;">28% 的投球局數來自左投手</strong>，比例遠高於人口比例。這是因為左投手在職業棒球中能夠晉升大聯盟的機率，是右投手的約 <strong style="color: #ffffff;">三倍</strong>，主要驅動因素正是戰術需求。
+    <sup><a href="https://blogs.fangraphs.com/the-southpaw-advantage/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[15]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">同側打者優勢</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    棒球中有個基本規律：打者對上投球手不同邊的投手時表現較佳（如右打對左投），對上同邊的投手（如左打對左投）則相對困難。左投手對左打者的同側壓制優勢，OPS（上壘加長打率）差距可高達 <strong style="color: #ffffff;">32 點</strong>，明顯高於右投壓制右打者的 15 點差距。
+    <sup><a href="https://www.tdabaseball.com/post/testing-baseball-lore-do-lefty-pitchers-have-an-advantage" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[16]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    此外，由於大多數打者習慣面對右投手，對左投的球路視角與動作節奏相對陌生，這種「視覺陌生性」本身就是額外的優勢。左投的變化球（滑球、曲球）對右打者而言，起點往往在身後，再橫過好球帶，極難辨識。
+    <sup><a href="https://sportsanalytics.studentorg.berkeley.edu/articles/handedness-comparison.html" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[17]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 運動醫學的觀點</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      正因為左投手具有上述戰術稀缺性，球隊對他們的使用需求往往更高，例如被要求頻繁在局中出現、面對特定打者的「一人投」（LOOGY 角色），或在季末拼命衝局數。這種使用方式本身就會增加累積性傷害的風險。運動醫學介入的重要性在於，協助球隊在「最大化左投戰術價值」與「保護投手長期健康」之間取得平衡。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">一壘牽制優勢</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    左投手的身體朝向使他在投球預備姿勢中，可以直接看見一壘跑壘員，進行牽制球時不需要大幅度轉身。這使得左投手在面對一壘有人的情況下，擁有天然的戰術優勢，減少對手盜壘的成功率。
+    <sup><a href="https://sportsanalytics.studentorg.berkeley.edu/articles/handedness-comparison.html" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[17]</a></sup>
+    從醫學角度來看，過多的牽制球動作也會在肩肘關節造成額外的不規則應力，這是容易被忽視的傷害風險來源。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem;">
+      📢 七、常見三大迷思解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「左投天生比右投更容易受傷」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong>雖然部分研究指出左投手在肘部外翻力矩上有較高的數值，以及某種特定骨折模式全為左投，但大規模職業投手研究並未發現整體傷害率有顯著差異。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/29562832/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[8]</a></sup> 傷害的發生是多因素的，投球量管理、技術成熟度與個人體能基礎，影響遠大於慣用手本身。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「Tommy John 手術可以讓投手『升級』，術後球速更快」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>常見誤解！</strong>這個迷思源自於部分投手術後表現比術前更好。但研究指出，這通常是因為他們在受傷前的最後一個賽季表現已有下滑，術後是「恢復到原本水準」而非真正提升。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7905078/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[9]</a></sup> 事實上，術後的 WAR（贏球貢獻值）與 RAR 等進階指標顯示，整體表現與術前相比略有下降。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「只要控制投球局數，就不會受傷」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不完整！</strong>投球量管理確實是重要的預防策略，但研究顯示，比投球「量」更重要的，是投球的「強度」與「技術正確性」。錯誤的動作模式（如「開肩過早」、「前臂旋後位投球」、「肘部沉降」）才是關節應力異常的真正根源。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5435152/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[1]</a></sup> 投球量減少但動作錯誤，傷害風險依然存在。</span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    八、預防策略：從訓練到監測
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">旋轉肌群強化——左右投都需要</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究指出，旋轉肌群外旋肌力下降（特別是棘下肌）與投球相關肩肘傷害顯著相關。賽前外旋肌力不足被確認是需要手術的投球傷害預測因子。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8753246/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[18]</a></sup>
+    建議定期進行旋轉肌群的離心訓練，特別是下斜方肌、前鋸肌的強化，以維持肩胛骨的動態穩定。
+  </p>
+
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">投球量管理：</strong>特別是青少年（18 歲以下），應嚴格遵守每場比賽的最高投球數與連投天數限制，避免年幼時的累積性傷害埋下日後的定時炸彈
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5435152/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[1]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">後肩囊伸展：</strong>針對 GIRD（內旋受限）問題，特別是右投手，可每天進行後肩囊牽拉，維持肩關節的正常活動度
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">動作分析與技術矯正：</strong>研究顯示，「開肩過早」與「前臂旋後位」投球，與更高的肘外翻力矩顯著相關
+      <sup><a href="https://www.sciencedirect.com/science/article/pii/S2095254612000427" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
+      ，建議定期進行動作影像分析
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">預警訊號監測：</strong>研究發現，在 Tommy John 手術前 15 場比賽中，投手的四縫線快速球球速與轉速均有顯著下降趨勢
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8209837/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[3]</a></sup>
+      ，這些數據可作為臨床早期介入的參考指標
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">全身動力鏈訓練：</strong>核心肌群、下肢爆發力與軀幹旋轉的整合訓練，可有效降低肩肘關節的應力集中；研究指出，下肢動作控制（特別是跨步側髖關節的外展/內收）直接影響肘部外翻力矩
+      <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1058274625008511" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[19]</a></sup>
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">⚾</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold;">
+      Q1：我的孩子是左撇子，應該培養成左投手嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      戰術上，左投手在職業棒球中確實較受重用，晉升大聯盟的機率約是同水準右投手的三倍。但醫學上，沒有理由認為左投手「更危險」——重要的是從小做好投球量管理、避免年輕時過度累積投球，並確保動作技術的正確性。如果您的孩子自然慣用左手，讓他以舒適的方式投球，搭配正確的訓練，是最重要的事。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold;">
+      Q2：Tommy John 手術到底多常見？左投右投哪個比較常做？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      相當常見——2023 年賽季，MLB 中有 35.3% 的現役投手曾接受此手術。左右投的 UCL 重建手術比例在現有大規模研究中並未顯示顯著差異，主要影響因素是投球量、球速與技術問題，而非慣用手本身。手術成功率高達 85–95%，但重返大聯盟平均需要 20.5 個月，且仍有約 13–33% 的投手無法回到受傷前的競技水準。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold;">
+      Q3：肩膀痛一定是旋轉肌群問題嗎？投球後肩痛應該怎麼辦？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      不一定。投手的肩膀疼痛可能來自旋轉肌群問題、盂唇損傷（SLAP）、內撞擊症候群或肱二頭肌肌腱問題，臨床症狀往往高度重疊，難以單憑疼痛位置判斷。建議：若投球後肩痛超過 48–72 小時未緩解，或伴隨球速明顯下降、肩膀無力感，應立即停止投球並就醫。早期診斷（超音波或 MRI）可避免小傷演變成需要手術的大傷。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold;">
+      Q4：業餘棒球愛好者也需要擔心這些傷害嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      需要，但風險結構不同。職業投手的傷害通常是高強度高累積量下的過度使用；業餘愛好者的傷害更多來自技術不成熟（動作代償）加上突然增加投球量，例如開季前準備不足就全力投球。此外，年齡越大，旋轉肌群的退化性損傷比例越高。最基本的預防：每次投球前充分熱身、不在疲勞狀態下勉強投球，以及感到不適時立即停止。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold;">
+      Q5：有哪些動作上的「紅燈」訊號，代表可能快受傷了？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      研究顯示，在 Tommy John 手術前 15 場比賽，投手的快速球球速與轉速均呈現顯著下降趨勢，曲球使用比例反而增加——這些是身體試圖減輕肘部負荷的代償行為。除了球速下降之外，投球後 24 小時內肘部或肩部仍有明顯不適、控球突然變差，以及出現「開肩過早」或「肘部沉降」等技術退步，都是應立即請教運動醫學醫師評估的警訊。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; line-height: 1.7;">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    左投或右投，本質上都是在高度要求的運動模式下，讓肩肘關節反覆承受接近生理極限的力量。左右投的差異，體現在骨骼結構、關節活動度、以及特定的傷害傾向上——右投手需特別注意 GIRD 與 SLAP 損傷；左投手則對肘部外翻力矩的監控更為重要。
+  </p><br>
+  <p style="color: #475569; font-size: 1.05rem;">
+    從戰術角度，左投手因稀缺性與同側打者優勢而備受珍視；從醫學角度，這種珍視往往轉化為更高的使用壓力，更需要科學化的傷害預防計畫做後盾。<strong style="color: #1e293b;">無論慣用哪隻手，最重要的預防永遠是：了解自己身體的限制、尊重疼痛的警訊，並在出現持續性不適時，盡早尋求專業的運動醫學評估。</strong>
+  </p>
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：若您是現役投手或棒球愛好者，不妨對照本文的預警訊號表，留意自己近期的球速變化與投球後的恢復狀況。若有任何持續性的肩肘不適，請尋求專業運動醫學評估。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important;">
+        預約運動醫學門診評估
+    </a>
+  </div>
+</div>
+
+<!-- ========== referencesHtml ========== -->
+
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Seroyer, S.T., Nho, S.J., Bach, B.R., Bush-Joseph, C.A., Nicholson, G.P., & Romeo, A.A. (2010). The Kinetic Chain in Overhand Pitching: Its Potential Role for Performance Enhancement and Injury Prevention. PMC.
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5435152/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 5435152</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Harris, J., Maier, J., Freeston, J., Soloff, L., Himmerick, D., Pipkin, A., Genin, J.A., Schickendantz, M.S., & Frangiamore, S.J. (2022). Differences in Glenohumeral Range of Motion and Humeral Torsion Between Right-Handed and Left-Handed Professional Baseball Pitchers. American Journal of Sports Medicine, 50(9), 2481–2487.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/35833921/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">DOI: 10.1177/03635465221092115</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Nasser, J., Ahmed, A., Yousuf, Z., Yousuf, M., & Musahl, V. (2021). Preventing Tommy John Surgery: The Identification of Trends in Pitch Selection, Velocity, and Spin Rate Before UCL Reconstruction in MLB Pitchers. PMC.
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8209837/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 8209837</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Memorial Hermann. (2024). Shoulder Injuries in Baseball.
+        <a href="https://memorialhermann.org/services/conditions/sports-injuries/shoulder-injuries-in-baseball" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hurd, W.J., & Kaufman, K.R. (2012). Baseball pitching kinematics, joint loads, and injury prevention. Journal of Sport and Health Science, 1(2), 74–82.
+        <a href="https://www.sciencedirect.com/science/article/pii/S2095254612000427" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">DOI: 10.1016/j.jshs.2012.06.002</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        American Academy of Orthopaedic Surgeons. (2023). Shoulder Injuries in the Throwing Athlete. OrthoInfo.
+        <a href="https://orthoinfo.aaos.org/en/diseases--conditions/shoulder-injuries-in-the-throwing-athlete/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Mlynarek, R.A., Patel, A., Jacobson, J., & Bhattacharya, R. (2016). Biomechanical differences between left- and right-handed baseball pitchers. Sports Biomechanics, 16(4), 496–508.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27256719/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">DOI: 10.1080/14763141.2016.1200287</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Fleisig, G.S., Chu, Y., & Andrews, J.R. (2018). Kinematic and kinetic differences between left-and right-handed professional baseball pitchers. Sports Biomechanics, 18(3), 377–388.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29562832/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">DOI: 10.1080/14763141.2018.1452712</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Makhni, E.C., et al. (2021). Return-to-Play and Competitive Outcomes After Ulnar Collateral Ligament Reconstruction Among Baseball Players: A Systematic Review. PMC.
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7905078/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 7905078</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Wikipedia. Tommy John (Baseball Player). Accessed April 2026.
+        <a href="https://en.wikipedia.org/wiki/Tommy_John" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Werner, S.L., et al. (2010). Biomechanical differences in left- and right-handed pitchers raise injury risk questions. NBC News / Reuters Health.
+        <a href="https://www.nbcnews.com/id/wbna37987089" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Shitara, H., Tajika, T., Ichinose, T., Sasaki, T., Hamano, N., Kamiyama, M., et al. (2025). The Association between Excessive Glenohumeral External Rotation and Risk for Shoulder and Elbow Injury in Left-Handed High School Baseball Pitchers: A Prospective Cohort Study. Orthopaedic Journal of Sports Medicine.
+        <a href="https://journals.sagepub.com/doi/10.1177/23259671251340300" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">DOI: 10.1177/23259671251340300</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Corbishley, J.E., et al. (2025). Timing of surgery in professional baseball — an analysis of MLB pitchers who underwent UCL reconstruction. ScienceDirect.
+        <a href="https://www.sciencedirect.com/science/article/pii/S2666639125002147" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PII: S2666639125002147</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hurd, W.J., Kaufman, K.R., & Murthy, N.S. (2012). Glenohumeral Rotational Motion and Strength and Baseball Pitching Biomechanics. PMC.
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3392154/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 3392154</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Chamberlain, J. (2020). The Southpaw Advantage. FanGraphs Baseball.
+        <a href="https://blogs.fangraphs.com/the-southpaw-advantage/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        TDA Baseball. (2023). Testing Baseball Lore: Do Lefty Pitchers Have An Advantage?
+        <a href="https://www.tdabaseball.com/post/testing-baseball-lore-do-lefty-pitchers-have-an-advantage" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Sports Analytics Group at Berkeley. (2024). Handedness Comparison in Baseball.
+        <a href="https://sportsanalytics.studentorg.berkeley.edu/articles/handedness-comparison.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Bullock, G.S., et al. (2022). Differences in Shoulder Internal Rotation Strength Between Baseball Players With Ulnar Collateral Ligament Reconstruction and Healthy Controls. PMC.
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8753246/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 8753246</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Yoshida, K., et al. (2024). Biomechanical risk factors for medial elbow valgus stress in baseball pitchers: the role of Forearm Whip Angle. Journal of Shoulder and Elbow Surgery, 33(12), 2743–2754.
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S1058274625008511" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">DOI: S1058274625008511</a>
+      </span>
+    </li>
+
+  </ol>
+</div>
+`
+  },
+
+  {
   id: 'badminton-tennis-elbow',
   title: '打羽球為什麼會得網球肘？完整解析：動作、原因與改善策略',
   lastModified: '2026-04-26',
@@ -45,7 +1268,7 @@ export const articlesData: NewsPost[] = [
     任何需要反覆「手腕伸展」加上「用力握持」的動作，都可能引發相同的傷害——而羽球，恰恰是這些動作組合最密集的運動之一。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    外側上髁炎的真正傷害位置，在肘部外側突起（外側上髁）往下約1至2公分處，也就是<strong style="color: #ffffff;">橈側伸腕短肌（Extensor Carpi Radialis Brevis，ECRB）肌腱的附著點</strong>。這條肌腱負責將手腕往上（背側）拉，是擊球動作的核心肌肉之一。當它反覆承受超出本身承受極限的拉力，微小撕裂開始累積，膠原纖維排列紊亂，最終發展成慢性肌腱病變——這就是網球肘的本質。
+    外側上髁炎的真正傷害位置，在肘部外側突起（外側上髁）往下約1至2公分處，也就是<strong style="color: #ffffff;">橈側伸腕短肌（ECRB）肌腱的附著點</strong>。這條肌腱負責將手腕往上（背側）拉，是擊球動作的核心肌肉之一。當它反覆承受超出本身承受極限的拉力，微小撕裂開始累積，膠原纖維排列紊亂，最終發展成慢性肌腱病變——這就是網球肘的本質。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2465303/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
@@ -70,18 +1293,18 @@ export const articlesData: NewsPost[] = [
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">❶ 反手拍高遠球與殺球：最高風險動作</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    羽球反手拍動作是業餘球友最容易出現問題的技術。從生物力學研究來看，反手拍需要前臂先進行「旋後（supination）」準備，擊球瞬間再快速旋前（pronation）並伴隨大量手腕伸展，整個過程中ECRB與肱橈肌（Brachioradialis）承受極高的肌電活動。
+    羽球反手拍動作是業餘球友最容易出現問題的技術。從生物力學研究來看，反手拍需要前臂先進行「旋後」準備，擊球瞬間再快速旋前並伴隨大量手腕伸展，整個過程中ECRB與肱橈肌（Brachioradialis）承受極高的肌電活動。
     <sup><a href="https://www.semanticscholar.org/paper/Muscle-Activities-of-the-Brachioradialis-and-Carpi-Lee-Lim/7b629071b8a8c59e5b5a7a7d36786780d2246493" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    研究直接指出：<strong style="color: #ffffff;">反手高遠球（backhand clear）與反手殺球（backhand smash）與網球肘的發生率高度相關，明顯高於反手推球等其他動作。</strong>
+    研究直接指出：<strong style="color: #ffffff;">反手高遠球與反手殺球與網球肘的發生率高度相關，明顯高於反手推球等其他動作。</strong>
     <sup><a href="https://www.semanticscholar.org/paper/Muscle-Activities-of-the-Brachioradialis-and-Carpi-Lee-Lim/7b629071b8a8c59e5b5a7a7d36786780d2246493" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
     這是因為反手拍要在較困難的準備姿勢下，依然產生足夠的力量，球友往往會不自覺地以「手腕甩擊」代替完整的身體轉動，導致前臂伸肌群獨自過度負載。
   </p>
 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">❷ 正拍殺球（Forehand Smash）：前臂旋前鏈過載</h3>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">❷ 正拍殺球：前臂旋前鏈過載</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    正拍殺球是羽球最具攻擊性的技術，也是肘部承受瞬間衝擊力最高的動作。三維生物力學研究顯示，在殺球接觸羽球的瞬間（約3毫秒），前臂旋前（pronation）與肩部旋轉共同貢獻了球速的53%。
+    正拍殺球是羽球最具攻擊性的技術，也是肘部承受瞬間衝擊力最高的動作。三維生物力學研究顯示，在殺球接觸羽球的瞬間（約3毫秒），前臂旋前與肩部旋轉共同貢獻了球速的53%。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7205924/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
     最新的有限元素分析研究進一步顯示，殺球接觸瞬間，<strong style="color: #ffffff;">伸指總肌（EDC）承受最高應力，旋前圓肌（pronator teres）其次</strong>，而橈側伸腕短肌（ECRB）雖然應力相對較低，但卻在整個揮拍過程中持續處於離心收縮狀態，累積傷害風險極高。
     <sup><a href="https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2026.1780880/full" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
@@ -93,7 +1316,7 @@ export const articlesData: NewsPost[] = [
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">❸ 「球來得太快，腳步沒到位」的補球動作</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    許多業餘球友的傷害並非來自完整的技術動作，而是在腳步不到位時的「救球」。當球友腳步沒有移動到正確位置，就必須用伸直的手臂、彎曲的肘部「勉強夠到」來球，此時的擊球衝擊力完全由前臂肌群和肘關節承受，而非由下肢與軀幹分擔。研究指出，這種「肘部前導（leading elbow）」的錯誤模式，是外側上髁炎最重要的技術性危險因子之一。
+    許多業餘球友的傷害並非來自完整的技術動作，而是在腳步不到位時的「救球」。當球友腳步沒有移動到正確位置，就必須用伸直的手臂、彎曲的肘部「勉強夠到」來球，此時的擊球衝擊力完全由前臂肌群和肘關節承受，而非由下肢與軀幹分擔。研究指出，這種「肘部前導」的錯誤模式，是外側上髁炎最重要的技術性危險因子之一。
     <sup><a href="https://emedicine.medscape.com/article/96969-overview" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
   </p>
 
@@ -124,14 +1347,14 @@ export const articlesData: NewsPost[] = [
     當業餘球友忽略下盤移動或軀幹旋轉，「以臂代身」時，前臂的伸腕肌群（尤其是ECRB）就必須：
   </p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    <li style="margin-bottom: 0.5rem;">同時「製造力量」AND「吸收衝擊回彈」——兩個功能同時要求一條肌腱完成</li>
+    <li style="margin-bottom: 0.5rem;">同時「製造力量」與「吸收衝擊回彈」——兩個功能同時要求一條肌腱完成</li>
     <li style="margin-bottom: 0.5rem;">在長時間比賽中反覆如此，微創傷不斷累積卻得不到充分恢復</li>
     <li style="margin-bottom: 0.5rem;">業餘球友每球的動作效率低於精英球員，代表同樣的訓練量帶來更高的組織負荷</li>
   </ul>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
     這正解釋了為何文獻一再指出：<strong style="color: #ffffff;">技術動作不成熟的業餘選手，發生外側上髁炎的比例遠高於技術成熟的精英球員。</strong>
     <sup><a href="https://emedicine.medscape.com/article/96969-overview" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
-    精英球員能夠以「向心收縮（concentric）」模式啟動伸肌群，而業餘球友往往以「離心收縮（eccentric）」代償，後者對肌腱的傷害負荷遠遠更高。
+    精英球員能夠以「向心收縮」模式啟動伸肌群，而業餘球友往往以「離心收縮」代償，後者對肌腱的傷害負荷遠遠更高。
     <sup><a href="https://www.physio-pedia.com/Biomechanics_of_Lateral_Epicondylitis" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
   </p>
 
@@ -458,10 +1681,10 @@ export const articlesData: NewsPost[] = [
 
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
     打羽球得網球肘，從來不是「運氣不好」或「年紀大了」的問題，而是技術動作、訓練量與身體條件之間的失衡。核心動力鏈的斷裂，加上前臂肌群的過度代償，在每一次揮拍中悄悄累積傷害——直到有一天，提水壺也會讓肘部刺痛，才意識到問題嚴重性。
-  </p>
+  </p><br>
 
   <p style="color: #475569; font-size: 1.05rem;">
-    好消息是：這類傷害有明確的發生機制，也有對應的解決策略。<strong style="color: #1e293b;">無論是矯正反手動作、調整握拍方式、還是加入離心訓練，每一個改變都能有效降低傷害風險。</strong>如果你的肘部已經開始出現不適，不要等到「痛到打不下去」再行動——<strong style="color: #1e293b;">預約林醫師的門診評估，林醫師本身也是羽球愛好者，深刻理解球友在場上的動作與傷害模式，</strong>能給你最貼近實際運動情境的評估與建議。
+    好消息是：這類傷害有明確的發生機制，也有對應的解決策略。<strong style="color: #1e293b;">無論是矯正反手動作、調整握拍方式、還是加入離心訓練，每一個改變都能有效降低傷害風險。</strong>如果你的肘部已經開始出現不適，不要等到「痛到打不下去」再行動——<strong style="color: #1e293b;">預約林醫師的門診評估，林醫師本身也是運動愛好者，深刻理解球友在場上的動作與傷害模式，</strong>能給你最貼近實際運動情境的評估與建議。
   </p>
 
   <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
@@ -474,7 +1697,7 @@ export const articlesData: NewsPost[] = [
        target="_blank"
        rel="noopener noreferrer"
        style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
-        預約打羽球的林醫師評估
+        預約運動傷害專科醫師評估
     </a>
   </div>
 </div>
@@ -3533,7 +4756,7 @@ export const articlesData: NewsPost[] = [
   
   <p style="color: #475569; font-size: 1.05rem;">
     無論你是剛踏上投手丘的基層三級棒球員，還是熱愛棒球的業餘社會人好手，<strong style="color: #1e293b;">最好的預防永遠從「了解自己的身體與優化投球機制」開始</strong>。如果你對自己的投球動作發力順序、目前的球速瓶頸，或是現有的手肘與肩膀不適有任何疑慮，千萬不要吃止痛藥硬撐，更不要等到韌帶斷裂才行動<strong style="color: #1e293b;"> <br><br>
-    請前往新竹的辰星復健科診所，由具備復健專科醫師背景，並同時擁有 ACE-CPT 國際個人教練認證的陳醫師親自為您進行評估。</strong>一次結合醫學影像與運動生物力學的正確分析，可能為你拯救寶貴的運動生涯。
+    新竹的宸新復健科診所，由具備復健專科醫師背景，並同時擁有 ACE-CPT 國際個人教練認證的醫師親自為您進行評估。</strong>一次結合超音波影像與運動生物力學的正確分析，可能為你拯救寶貴的運動生涯。
   </p>
 
   <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">

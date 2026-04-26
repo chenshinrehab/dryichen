@@ -156,6 +156,18 @@ export const sportsInjuriesData = [
     description: '棒球運動醫學角度解析，並分析常見運動傷害。',
     image: '/images/sportinjury/3.webp',
     injuries: [
+                        {
+        slug: 'baseball-pitcher-handedness-medical-analysis',
+        title: '棒球左投右投全解析：運動醫學觀點的優缺點與傷害風險',
+        description: '深度剖析棒球左投與右投在生理結構上的顯著差異。本文探討左右投不同的肩肘傷害風險，包含 UCL 損傷與 GIRD 問題，並提供戰術優勢分析與專業的傷害預防監測策略。',
+        image: '/images/news/article/baseball-pitcher-handedness.webp',
+      },
+                              {
+        slug: 'baseball-batting-injuries-left-vs-right',
+        title: '左打 vs. 右打：棒球打擊傷害的生物力學差異與常見風險解析',
+        description: '深度剖析棒球左打與右打者因旋轉方向差異所導致的鏡像傷害。解析鉤骨骨折、腹斜肌拉傷及腰椎傷害的發生機制，並為不同側打者提供科學化的風險管理與預防建議。',
+        image: '/images/news/article/baseball-batting-injuries-left-vs-right.webp',
+      },
                   {
         slug: 'baseball-necklace-analysis',
         title: '棒球員戴磁力項鍊與金項鍊，真的能提升表現嗎？',

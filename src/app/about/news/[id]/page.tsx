@@ -309,10 +309,11 @@ const activeCategoryStyle = categoryStyles[post.category] || 'bg-slate-500/10 te
         /* 4. ✨ 徹底清除參考文獻中的粉紅橫線與箭頭 (包含 [2] 等 sup a) */
         .article-content sup a,
         .article-content ol a,
-        .article-content a[style*="text-underline-offset"] {
+        .article-content a[style*="text-underline-offset"],
+        .references-content a {
             border-bottom: none !important; /* 移除橫線 */
             display: inline !important;    /* 防止 flex 產生的對齊問題 */
-            color: #ec4899 !important;      /* 回歸藍色 */
+            color: #ec4899 !important;      /* 回歸藍色/粉紅視需求 */
             background: transparent !important;
             padding: 0 !important;
             margin: 0 !important;
@@ -321,7 +322,8 @@ const activeCategoryStyle = categoryStyles[post.category] || 'bg-slate-500/10 te
         /* 5. 確保參考文獻連結後絕對不會出現 ↗ 符號 */
         .article-content sup a::after,
         .article-content ol a::after,
-        .article-content a[style*="text-underline-offset"]::after {
+        .article-content a[style*="text-underline-offset"]::after,
+        .references-content a::after {
             content: "" !important;
             display: none !important;
         }
@@ -423,10 +425,33 @@ const activeCategoryStyle = categoryStyles[post.category] || 'bg-slate-500/10 te
                   <div className="article-content text-slate-300 leading-relaxed text-lg pb-6">
                       <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
                   </div>
+
+                  {/* ✨ 更新：將參考文獻移至內文區塊內，移除內層邊框與背景，使其像一般內文一樣滿版對齊 */}
+                  {post.referencesHtml && (
+                    <div className="mt-8 pt-8 border-t border-slate-700/50">
+                      <div className="flex items-center mb-4">
+                        <i className="fa-solid fa-book-bookmark text-cyan-400 text-lg mr-2"></i>
+                        <h3 className="text-slate-300 text-lg font-bold">參考文獻</h3>
+                      </div>
+                      
+                      <div 
+                        className="references-content w-full text-slate-400 text-sm md:text-base leading-relaxed break-all"
+                        dangerouslySetInnerHTML={{ __html: post.referencesHtml }} 
+                      />
+                      
+                      <div className="mt-6 flex items-center gap-2">
+                        <span className="inline-block w-1.5 h-1.5 rounded-full bg-cyan-500/50 animate-pulse"></span>
+                        <p className="text-[10px] text-slate-500 uppercase tracking-tighter font-medium leading-tight">
+                          Evidence-Based Medicine Research & Clinical Guidelines
+                        </p>
+                      </div>
+                    </div>
+                  )}
+
               </div>
 
               <footer className="mt-0">
-              <div className="mt-8 mb-10">
+              <div className="mt-0 mb-10 px-4 md:px-10">
                     <div className="bg-slate-800/40 backdrop-blur border border-slate-700 rounded-2xl p-6 md:p-8 shadow-lg relative overflow-hidden">
                       <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
                       
@@ -508,30 +533,6 @@ const activeCategoryStyle = categoryStyles[post.category] || 'bg-slate-500/10 te
                     </div>
                   </div>
               </footer>
-
-{/* 參考文獻區塊 (References) */}
-                {post.referencesHtml && (
-                  <section className="px-6 md:px-10 pb-12">
-                    <div className="bg-slate-900/50 border border-slate-700/50 rounded-2xl p-6 md:p-8">
-                      <div className="flex items-center mb-6 border-b border-slate-700 pb-4">
-                        <i className="fa-solid fa-book-bookmark text-cyan-400 text-xl mr-3"></i>
-                      </div>
-                      
-                      {/* 這裡直接渲染您在資料庫中寫好的 HTML */}
-                      <div 
-                        className="references-content text-slate-400 text-sm md:text-base leading-relaxed"
-                        dangerouslySetInnerHTML={{ __html: post.referencesHtml }} 
-                      />
-                      
-                      <div className="mt-6 pt-4 border-t border-slate-700/30 flex items-center gap-2">
-                        <span className="inline-block w-2 h-2 rounded-full bg-cyan-500/50 animate-pulse"></span>
-                        <p className="text-[10px] text-slate-500 uppercase tracking-widest font-medium">
-                          Evidence-Based Medicine Research & Clinical Guidelines
-                        </p>
-                      </div>
-                    </div>
-                  </section>
-                )}
 
             </article>
           </div>
