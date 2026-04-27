@@ -3,8 +3,432 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
 {
+  id: 'tissue-healing-time-analysis',
+  title: '身體受傷多久會好？肌肉、肌腱、韌帶、骨頭修復全解析',
+  lastModified: '2026-04-28',
+  category: '衛教文章',
+  date: '2026-04-28',
+  summary: '受傷後「要休息多久？」是復健科門診最常見的問題。身體各種組織的修復速度，取決於其血液循環能力與細胞代謝率。肌肉擁有豐富血流，通常數週內可修復；而肌腱與韌帶血流較差，常需要數月時間重建；關節軟骨更因缺乏血管，自我修復能力極低。本文將從醫學角度，帶您一次看懂五大類組織的修復時程，並破除「完全靜養」的傳統迷思。',
+  coverImage: '/images/news/article/tissue-healing-analysis.webp',
+  seoTitle: '身體受傷到底要休息多久？肌肉、肌腱、韌帶、軟骨、骨頭修復時間全解析',
+  seoDescription: '受傷後到底要休息多久？復健科醫師為您深度剖析肌肉、肌腱、韌帶、軟骨與骨折的修復時程。破解「完全靜養」迷思，了解血液循環如何影響組織修復，並提供正確的復健觀念與治療策略。',
+  keywords: [
+    '組織修復時間',
+    '肌肉拉傷',
+    '肌腱發炎',
+    '韌帶扭傷',
+    '骨折癒合',
+    '軟骨磨損',
+    '復健時間',
+    '運動傷害'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    在門診中，最常聽到患者問：「林醫師，我這個傷到底多久才會好？」其實，身體不同組織的修復時間差異極大，關鍵在於該組織的<strong>「血液循環能力」</strong>與<strong>「細胞代謝率」</strong>。研究指出，擁有豐富微血管的骨骼肌（肌肉），只要適當處置，通常能在 2 到 4 週內初步修復完畢。
+    <sup><a href="https://doi.org/10.2165/00007256-200535100-00004" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup><br><br>
+    然而，負責連接骨頭的韌帶，因為血管分布稀少，癒合時間往往長達數個月。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3603702/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    更極端的是關節軟骨，它內部完全沒有血管神經，一旦受損，幾乎無法自行再生正常結構。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3445147/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    本文將以實證醫學為基礎，用白話的方式為大家解析：肌肉、肌腱、韌帶、軟骨與骨頭，各自需要多長的修復時間，以及如何透過現代復健觀念加速這個過程。
+  </p>
+</div>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、決定修復速度的關鍵：血液循環
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    要了解身體的修復機制，我們可以把身體想像成一個大型工地，而「血液」就是運送建材（氧氣、營養素、修復細胞）的卡車。<strong>卡車容易到達的地方，房子（組織）就蓋得快；卡車到不了的地方，重建就遙遙無期。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    所有的組織修復都會經歷三個階段：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">發炎期（數天）：</strong>清除受損壞死的細胞，此時會出現紅、腫、熱、痛。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">增生期（數週）：</strong>身體開始分泌膠原蛋白，像搭鷹架一樣把斷裂的地方初步連接起來。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">重塑期（數月至數年）：</strong>新生的組織會慢慢改變排列方式，變得更強韌，以承受日常生活的受力。</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、五大組織修復時間大公開
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 肌肉（Muscle）：「供血充足的模範生」</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    肌肉組織充滿了微血管，血液供應非常豐富，因此修復速度在所有骨骼肌肉系統中最快。常見的「拉傷」就是肌肉纖維的撕裂。
+    <sup><a href="https://doi.org/10.2165/00007256-200535100-00004" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">輕度拉傷（第一度）：</strong>纖維微小撕裂，通常 <strong>1 到 2 週</strong> 即可恢復。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">中度拉傷（第二度）：</strong>部分纖維斷裂，伴隨明顯瘀血與力量下降，約需 <strong>3 到 6 週</strong>。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">重度撕裂（第三度）：</strong>肌肉完全斷裂，多需手術縫合，復原需 <strong>3 到 6 個月</strong>。</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 骨頭（Bone）：「堅固但復原穩定的承重牆」</h3>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    骨頭看起來硬邦邦的，但其實骨髓內部與骨膜充滿了血管。當骨折發生時，骨頭的癒合不僅僅是「黏起來」，還需要經歷鈣化與骨小樑重建的過程。
+    <sup><a href="https://doi.org/10.2106/00004623-199506000-00020" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">臨床癒合（骨頭接上，不痛了）：</strong>通常需要 <strong>6 到 12 週</strong>（長骨如大腿骨通常比短骨如手腕骨慢）。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">結構重塑（完全恢復原本強度）：</strong>細胞慢慢替換、排列整齊，這過程長達 <strong>1 到 2 年</strong>。</li>
+  </ul>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      很多患者在骨折打完石膏拆除後（約 6-8 週），看到 X 光上骨頭「黏起來」了就馬上跑去劇烈運動。這其實很危險，因為初期的骨痂（軟骨痂）還很脆弱，此時必須透過循序漸進的重量訓練，給骨頭「壓力」，骨頭才會長得緻密。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">3. 肌腱（Tendon）：「有韌性但血流差的橡皮筋」</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    肌腱是連接「肌肉」與「骨頭」的組織，例如阿基里斯腱。相較於肌肉，它的血管少得可憐，新陳代謝慢，因此受傷後非常容易演變成慢性的「肌腱病變（Tendinopathy）」。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2505250/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">急性肌腱炎：</strong>若馬上停止惡化並適當處置，約 <strong>2 到 4 週</strong> 可緩解。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">慢性肌腱病變（如網球肘、足底筋膜炎）：</strong>組織已經產生退化，這時需要 <strong>3 到 6 個月</strong> 甚至更久的時間來慢慢逆轉退化過程。</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">4. 韌帶（Ligament）：「缺乏血管的穩定繩索」</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    韌帶負責連接「骨頭」與「骨頭」，維持關節穩定（例如十字韌帶、腳踝外側韌帶）。它的血流比肌腱更差，許多在關節腔內的韌帶（如前十字韌帶 ACL）一旦完全斷裂，甚至連自己癒合的能力都沒有。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3603702/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">輕度扭傷：</strong>韌帶稍微拉長，約需 <strong>2 到 4 週</strong>。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">中度撕裂：</strong>部分纖維斷裂，需要 <strong>6 到 12 週</strong> 來癒合，且癒合後常會變得鬆弛。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">重度斷裂：</strong>常需要手術重建，術後復健重回運動場至少需要 <strong>6 到 12 個月</strong>。</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">5. 軟骨（Cartilage）：「一去不復返的避震器」</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    關節表面那層光滑的透明軟骨，內部<strong style="color: #2dd4bf;">完全沒有血管與神經</strong>。它只能靠關節液的擴散來獲得養分。這意味著一旦軟骨磨損、破洞，身體幾乎無法長出和原來一樣好的透明軟骨（通常只能長出強度較差的纖維軟骨），這也是退化性關節炎不可逆的原因。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3445147/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、身體各組織修復時間比較表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>組織種類</th>
+          <th>血液循環狀況</th>
+          <th>輕度損傷修復期</th>
+          <th>重度/手術修復期</th>
+          <th style="text-align: center; white-space: nowrap;">常見臨床傷害</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>骨骼肌 (肌肉)</td>
+          <td>豐富 (非常好)</td>
+          <td>1 ~ 2 週</td>
+          <td>3 ~ 6 個月</td>
+          <td style="text-align: center;">大腿肉拉傷、小腿抽筋拉傷</td>
+        </tr>
+        <tr>
+          <td>骨頭</td>
+          <td>良好</td>
+          <td>6 ~ 8 週 (臨床癒合)</td>
+          <td>1 ~ 2 年 (完全重塑)</td>
+          <td style="text-align: center;">鎖骨骨折、手腕橈骨骨折</td>
+        </tr>
+        <tr>
+          <td>肌腱</td>
+          <td>差 (特別在附著點)</td>
+          <td>2 ~ 4 週</td>
+          <td>3 ~ 6 個月以上</td>
+          <td style="text-align: center;">網球肘、阿基里斯腱炎</td>
+        </tr>
+        <tr>
+          <td>韌帶</td>
+          <td>極差</td>
+          <td>2 ~ 4 週</td>
+          <td>6 ~ 12 個月</td>
+          <td style="text-align: center;">腳踝翻船扭傷、前十字韌帶斷裂</td>
+        </tr>
+        <tr>
+          <td>關節軟骨</td>
+          <td>無 (擴散作用)</td>
+          <td>無法自行修復</td>
+          <td>需依賴增生療法或手術</td>
+          <td style="text-align: center;">退化性膝關節炎、半月板破裂</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 四、常見三大復健誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「受傷就是要完全休息、完全不動才會好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 現代運動醫學早已從傳統的「PRICE（保護、休息、冰敷、壓迫、抬高）」演進為「POLICE（保護、<strong>適當負重 Optimal Loading</strong>...）」。
+          <sup><a href="https://doi.org/10.1136/bjsports-2011-090297" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[6]</a></sup>
+          絕對的靜養會導致肌肉萎縮、肌腱變脆、關節沾黏。只有透過適當的力學刺激（Mechanotherapy），細胞才會知道要朝哪個方向生長排列。
+          <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2662433/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[7]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「不痛了就是全好了，可以馬上回去比賽」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>危險迷思！</strong> 疼痛感的消失，通常只是代表「發炎期」結束了。但組織內部的「重塑期」才剛開始。以腳踝韌帶扭傷為例，2 週後可能走路不痛了，但韌帶的拉力強度可能只有原來的 50%。此時如果沒有做好肌力訓練與本體感覺訓練就急著下場，二次受傷的機率極高。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「慢性發炎吃消炎藥就會好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>觀念過時！</strong> 對於超過 3 個月的肌腱問題（如阿基里斯腱病變），醫學上認為裡面早已「沒有發炎細胞」，而是「組織退化（Tendinosis）」。
+          <sup><a href="https://doi.org/10.1136/bjsm.2008.051193" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[8]</a></sup>
+          一直吃消炎藥不僅沒效，甚至可能阻礙膠原蛋白合成。此時應該採取震波治療、增生療法注射，配合離心肌力訓練，才能重啟修復機制。</span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、如何有效加速組織修復？
+  </h2>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">精準的診斷與影像介入：</strong>不要瞎猜是肌肉還是韌帶受傷。透過復健科的高解析度超音波，可以直接看到是哪一條韌帶斷裂，撕裂了幾公分。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">給予組織生長的「燃料」：</strong>對於血流不佳的肌腱與韌帶，可透過體外震波（破壞微血管促進新生）或是超音波導引增生療法（如高濃度葡萄糖、PRP血小板生長因子注射），將修復資源直接打到受損點上。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">漸進式負荷運動（Progressive Overload）：</strong>在物理治療師指導下，從等長收縮（肌肉出力但不改變長度）開始，逐漸進展到向心與離心訓練，引導膠原纖維正確排列。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">營養與睡眠：</strong>修復需要大量的蛋白質、維生素C與充足的深度睡眠。睡眠不足會導致皮質醇升高，嚴重抑制組織癒合。
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：為什麼同一種扭傷，別人兩週就好，我兩個月還會痛？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      修復速度除了組織本身的特性，還受到年齡、代謝（如糖尿病會嚴重拖延癒合）、是否及時就醫、以及是否有做到「漸進式負重訓練」的影響。許多人只做電療熱敷，回家卻繼續翹腳、姿勢不良，傷處每天都被反覆拉扯，當然好不了。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：打完類固醇馬上就不痛了，是不是代表傷好了？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      絕對不是！類固醇是強效的抗發炎藥，它能迅速關閉發炎反應以減輕疼痛，但<strong>「消炎不等於修復」</strong>。如果在打完針不痛後立刻去劇烈運動，因為組織本身的強度還未恢復，反而容易造成肌腱或韌帶的完全斷裂。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：既然軟骨無法再生，那吃葡萄糖胺或打玻尿酸有用嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      玻尿酸主要是提供關節腔內的「潤滑」與「避震」效果，能減輕疼痛並延緩磨損；而口服葡萄糖胺在醫學研究上對修復軟骨的效果並不顯著。要保護軟骨，最有效的方法其實是增強大腿肌肉的力量（把引擎變強），讓肌肉去分擔關節的壓力（減少避震器的耗損）。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    我們常說「傷筋動骨一百天」，這句老話其實相當符合現代組織學的觀點。了解不同組織的修復時間表，能讓我們在復健路上不再焦慮。肌肉拉傷別擔心，給予適當活動很快就好；韌帶肌腱若受損，要有耐心配合治療；關節軟骨更要提早保養。
+  </p> <br>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    受傷後的每一個階段，都有對應的治療策略。若是您的疼痛已經超過該組織應有的合理修復時間，表示它可能已經卡在錯誤的修復循環中。<strong style="color: #1e293b;">您可以預約林醫師的門診評估</strong>，我們透過高階超音波影像精準定位受損組織，結合增生療法與個人化運動處方，協助您突破復健瓶頸，早日無痛回歸生活與運動場。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：疼痛如果超過兩週沒有明顯改善，請勿再依賴單純的休息與止痛藥。找尋專業醫師找出病根才是關鍵。
+    </p>
+
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約專業超音波評估
+    </a>
+</div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Järvinen, T. A., Järvinen, T. L., Kääriäinen, M., Kalimo, H., & Järvinen, M. (2005). Muscle injuries: biology and treatment. The American journal of sports medicine. <a href="https://doi.org/10.2165/00007256-200535100-00004" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.2165/00007256-200535100-00004</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Hauser, R. A., Dolan, E. E., Phillips, H. J., Newlin, A., Moore, R. E., & Woldin, B. A. (2013). Ligament injury and healing: a review of current clinical diagnostics and therapeutics. The open rehabilitation journal. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3603702/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 3603702</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Sophia Fox, A. J., Bedi, A., & Rodeo, S. A. (2009). The basic science of articular cartilage: structure, composition, and function. Sports health. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3445147/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 3445147</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Einhorn, T. A. (1995). Enhancement of fracture-healing. The Journal of bone and joint surgery. American volume. <a href="https://doi.org/10.2106/00004623-199506000-00020" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.2106/00004623-199506000-00020</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Sharma, P., & Maffulli, N. (2005). Tendon injury and tendinopathy: healing and repair. The Journal of bone and joint surgery. American volume. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2505250/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 2505250</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Bleakley, C. M., Glasgow, P., & MacAuley, D. C. (2012). PRICE needs updating, should we call the POLICE?. British journal of sports medicine. <a href="https://doi.org/10.1136/bjsports-2011-090297" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1136/bjsports-2011-090297</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Khan, K. M., & Scott, A. (2009). Mechanotherapy: how physical therapists' prescription of exercise promotes tissue repair. British journal of sports medicine. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2662433/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 2662433</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Cook, J. L., & Purdam, C. R. (2009). Is tendon pathology a continuum? A pathology model to explain the clinical presentation of load-induced tendinopathy. British journal of sports medicine. <a href="https://doi.org/10.1136/bjsm.2008.051193" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1136/bjsm.2008.051193</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Kjaer, M. (2004). Role of extracellular matrix in adaptation of tendon and skeletal muscle to mechanical loading. Physiological reviews. <a href="https://doi.org/10.1111/j.1600-0838.2004.00398.x" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1111/j.1600-0838.2004.00398.x</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Buckwalter, J. A., & Mankin, H. J. (1998). Articular cartilage: degeneration and osteoarthritis, repair, regeneration, and transplantation. Instructional course lectures. <a href="https://doi.org/10.5435/00124635-199801000-00006" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.5435/00124635-199801000-00006</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Magnusson, S. P., Langberg, H., & Kjaer, M. (2010). The pathogenesis of tendinopathy: balancing the response to loading. Nature reviews. Rheumatology. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2841441/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 2841441</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Hildebrand, K. A., Frank, C. B., & Hart, D. A. (1999). Neuropeptides and ligament healing. Sports medicine. <a href="https://doi.org/10.2165/00007256-199927060-00001" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.2165/00007256-199927060-00001</a>
+  </span>
+</li>  </ol>
+</div>
+`
+},
+
+
+{
   id: 'iv-drips-truth-unveiled',
-  title: '揭開醫美點滴的面紗：美白、減脂、保肝點滴到底加了什麼？實證有效嗎？',
+  title: '揭開點滴的面紗：美白、減脂、保肝點滴成分？實證有效嗎？',
   lastModified: '2026-04-27',
   category: '衛教文章',
   date: '2026-04-27',

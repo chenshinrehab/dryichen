@@ -40,6 +40,12 @@ export const sportsInjuriesData = [
         description: '從運動醫學觀點深度解析戶外大太陽下的防曬策略。實證研究揭露長期曝曬的疾病風險，包含皮膚癌、熱中暑、白內障，並詳細說明防曬油的物理與化學原理、SPF與PA的正確解讀、如何使用與挑選適合運動員的防曬產品。',
         image: '/images/news/article/sunscreen-outdoor-sports-guide.webp',
       },
+                        {
+        slug: 'tissue-healing-time-analysis',
+        title: '身體受傷多久會好？肌肉、肌腱、韌帶、骨頭修復全解析',
+        description: '受傷後「要休息多久？」是復健科門診最常見的問題。身體各種組織的修復速度，取決於其血液循環能力與細胞代謝率。肌肉擁有豐富血流，通常數週內可修復；而肌腱與韌帶血流較差，常需要數月時間重建；關節軟骨更因缺乏血管，自我修復能力極低。本文將從醫學角度，帶您一次看懂五大類組織的修復時程，並破除「完全靜養」的傳統迷思。',
+        image: '/images/news/article/tissue-healing-analysis.webp',
+      },
 
                   {
         slug: 'pain-medication-analysis',
@@ -89,7 +95,7 @@ export const sportsInjuriesData = [
       },
                               {
         slug: 'iv-drips-truth-unveiled',
-        title: '揭開點滴治療的面紗：美白、減脂、保肝點滴到底加了什麼？實證有效嗎？',
+        title: '揭開點滴的面紗：美白、減脂、保肝點滴成分？實證有效嗎？',
         description: '深度剖析坊間常見的美白點滴、減脂點滴與保肝點滴真實成分。從實證醫學角度揭露谷胱甘肽、左旋肉鹼與甘草酸的實際療效與潛在風險，破除單靠打針就能變白、變瘦的醫療行銷迷思。',
         image: '/images/news/article/iv-drips-cover.webp',
       },
