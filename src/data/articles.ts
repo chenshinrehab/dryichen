@@ -2,6 +2,1615 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
 
+
+
+
+
+{
+id: 'regenerative-injections-comparison-prp-plt-amniotic-bmc',
+  title: 'PRP、PLT、羊膜、BMC 哪種好？再生注射療法2026完全指南',
+  lastModified: '2026-04-29',
+  category: '衛教文章',
+  date: '2026-04-29',
+  summary: '深度對比復健科四大再生療法：PRP、PLT、羊膜注射與 BMC 骨髓濃縮液。解析為何年長者的 PRP 效果可能打折扣，以及如何根據自身細胞活性、病況嚴重程度與預算，選出最有效的修復方案。',
+  coverImage: '/images/news/article/regenerative-injections-comparison.webp',
+  seoTitle: 'PRP/PLT/羊膜/BMC再生注射完全解析 | 復健科醫師深度對比',
+  seoDescription: '深度比較 PRP、PLT、羊膜注射與 BMC 四大再生療法。解析生長因子濃度、細胞活性差異，並針對年長者與慢性病患提供精準建議，幫助您選擇最適合的組織修復方案。',
+  keywords: [
+    'PRP',
+    'PLT',
+    '羊膜注射',
+    'BMC',
+    '骨髓濃縮液',
+    '再生醫學',
+    '退化性關節炎',
+    '生長因子',
+    '幹細胞注射',
+    '組織修復',
+    '復健科',
+    '富血小板血漿'
+  ],
+  contentHtml: `
+
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    PRP（高濃度血小板血漿）、PLT（凍晶）、羊膜注射與BMC（骨髓濃縮液）是目前復健科與骨科最常見的四大再生注射療法。它們的共同目標是利用生長因子與幹細胞，促進受損組織的自我修復，但原理、來源、適用族群與費用各有不同。  <br> <br>
+    值得注意的是：<strong>PLT雖然釋出的生長因子濃度更高，但因製程中血小板已被破壞，少了細胞本身參與修復的活性</strong>，適合特定病況而非萬能首選；<strong>羊膜注射則因來自健康捐贈者，不受患者自身細胞品質影響，特別適合年長、有慢性病或自身細胞功能較差的患者。</strong>本文以實證為基礎，系統性說明四種療法的機制、優缺點、臨床選擇與費用，並引用最新文獻，幫助病人與家屬做出知情的醫療決策。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10245083/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/37351894/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12113016/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[3]</a></sup>
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、什麼是再生注射？為什麼這四種最常被討論？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    傳統的打針選擇，不外乎是類固醇或玻尿酸——前者消炎效果快但長期使用會加速組織退化，後者主要是潤滑關節但並不能真正修復損傷。近年來，「再生醫學」的概念改變了這個局面：<strong style="color: #2dd4bf;">利用人體自身或捐贈者的生物材料，提供生長因子、幹細胞或細胞外基質，誘導身體啟動更深層的修復機制。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    目前在臨床上最成熟、討論最多的四種再生注射分別是：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">PRP（Platelet-Rich Plasma，高濃度血小板血漿）</strong>——抽取自己的血液，濃縮血小板後注射</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">PLT（Platelet Lysate，血小板凍晶）</strong>——在PRP基礎上額外破壞血小板膜，讓生長因子直接釋放出來</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">羊膜注射（Amniotic Membrane/Fluid Allograft）</strong>——用健康產婦捐贈的胎盤羊膜組織製成的異體生物製劑</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">BMC（Bone Marrow Concentrate，骨髓濃縮液）</strong>——抽取自身髂骨的骨髓，濃縮後萃取幹細胞與生長因子注射</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這四種療法各有其適用情境，並非「越貴越好」或「越新越有效」。了解它們的原理，才能在醫師建議下做出最適合自己的選擇。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、PRP（高濃度血小板血漿）：最普遍的再生注射入門
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">原理是什麼？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    血液中的血小板是我們身體受傷時最先抵達現場的「急救兵」——它們不只負責止血，更重要的是攜帶大量<strong style="color: #ffffff;">生長因子</strong>，這些小分子蛋白質會向周圍細胞發出訊號，啟動組織修復的連鎖反應。PRP的原理很直覺：抽一管血，放入離心機高速旋轉，把血小板濃縮到正常濃度的3到5倍，再注射到受傷部位，讓高濃度的生長因子在局部發揮更強的修復效果。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    整個流程在診間大約30至60分鐘可完成，風險極低，因為是自體（來自自己身體）材料，幾乎不存在排斥或感染風險。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">效果如何？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    PRP在<strong style="color: #ffffff;">輕中度膝關節炎、肌腱病變、韌帶扭傷</strong>等方面有相當多的臨床研究支持，整體而言對疼痛與功能的改善優於安慰劑注射，中期效果也優於單純的類固醇注射。然而，PRP的研究結果有一個長期困擾臨床醫師的問題：<strong style="color: #ffffff;">個體差異很大</strong>——同樣的注射，有人改善顯著，有人幾乎沒反應。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    近年研究揭示了這背後的原因：<strong style="color: #2dd4bf;">PRP的效果與患者年齡、性別、BMI（身體質量指數）及自身血小板功能息息相關。</strong>2023年發表於《American Journal of Physical Medicine & Rehabilitation》的研究指出，年輕患者、較低BMI、男性患者的PRP治療效果明顯較好，年長女性患者反應則相對較差。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10245083/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這意味著：如果您本身血小板功能因年齡或慢性病而下降，抽出的「原料」品質就已打了折扣，注射後的效果自然也會受限。
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床觀點</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      PRP是目前台灣健保外自費注射中最普及的再生療法，也是多數病人的第一選擇。對於年輕、健康的運動傷害患者，PRP往往是非常合適的起點。但對於年過60、有糖尿病或自體免疫疾病的患者，需要更謹慎評估是否用自己的血液當原料，或考慮其他替代選項。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">適合誰？</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">輕中度膝關節炎</li>
+    <li style="margin-bottom: 0.5rem;">肌腱病變（如網球肘、足底筋膜炎、阿基里斯腱炎）</li>
+    <li style="margin-bottom: 0.5rem;">韌帶扭傷、關節鬆弛</li>
+    <li style="margin-bottom: 0.5rem;">年齡相對年輕（建議60歲以下效果較佳）、無嚴重慢性病者</li>
+  </ul>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;"><strong style="color: #ffffff;">參考費用：</strong>台灣約新台幣 15,000–20,000 元／次</p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、PLT（血小板溶解液）：濃度更高，但活性有代價
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">PRP的「進階版」？先搞懂差異</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    PLT（Platelet Lysate，血小板凍晶）是PRP製程的延伸。製作方式是先濃縮血小板（和PRP相同），接著再通過<strong style="color: #ffffff;">反覆冷凍解凍</strong>的物理方法，把血小板的外膜破壞（溶解），讓儲存在血小板顆粒內的生長因子全部釋放出來，形成一個「濃縮生長因子液」。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5796161/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    因為生長因子已全部釋出，不需要等待血小板在注射部位才慢慢啟動，所以在試管實驗中，PLT的<strong style="color: #ffffff;">生長因子濃度</strong>確實顯著高於一般PRP。2023年的臨床研究也證實，PLT的生長因子濃度（PDGF、TGF-β等）明顯高於同量PRP。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/37351894/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">高濃度的代價：細胞活性的喪失</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    然而，這裡有一個重要的醫學現實被許多介紹所忽略：<strong style="color: #2dd4bf;">PLT製程中，血小板已經被徹底破壞（溶解），這意味著注射的是「生長因子液」，而非有活性的血小板細胞本身。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    PRP的治療機制其實不只是「釋放生長因子」這麼單純——完整的血小板到達受傷部位後，會持續感知局部環境（如凝血因子、發炎訊號），動態調控生長因子的釋放節律，這種<strong style="color: #ffffff;">持續性的、對環境有反應的訊號分泌</strong>，是活細胞特有的能力。一旦血小板被溶解，這個動態調控能力就消失了。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    2022年發表的研究對多種血小板製品進行了體外比較，發現雖然PLT的生長因子濃度最高，<strong style="color: #ffffff;">但在促進肌腱細胞再生的能力上，活性PRP與PLT之間並未顯示出清晰的優劣差異，部分指標甚至PRP表現更好</strong>——研究者推測正是因為血小板的動態釋放特性發揮了關鍵作用。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5796161/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 用一個比喻來理解：</strong><br><br>
+      PRP就像派出去的「活士兵」——他們抵達戰場後，會依據現場狀況靈活應對，持續作戰。PLT則像一箱子「預先打開的彈藥庫」——火力一次全部投入，但彈藥用完後就沒有補充，也沒有士兵能夠機動作戰。濃度更高，不一定等於更好的修復結果，關鍵在於病況與適應症的匹配。因次林醫師個人比較偏好PRP，目前經驗也是PRP效果優於PLT。
+    </p>
+  </div>
+
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">適合誰？</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">急性發炎期，需要較強抗發炎效果</li>
+    <li style="margin-bottom: 0.5rem;">計畫進行多次注射療程、希望統一批次備用</li>
+    <li style="margin-bottom: 0.5rem;">對PRP注射後發炎反應不耐受的患者</li>
+  </ul>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;"><strong style="color: #ffffff;">參考費用：</strong>台灣約新台幣 30,000–50,000 元／次（因製程較複雜，通常略貴於標準PRP）</p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、羊膜注射：不依賴自身細胞品質的異體再生療法
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">什麼是羊膜？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    羊膜是胎盤的最內層薄膜，在嬰兒出生後通常被丟棄。然而，羊膜組織富含多種<strong style="color: #ffffff;">生長因子、細胞激素（cytokines）、玻尿酸（hyaluronic acid）、膠原蛋白</strong>以及具有分化潛力的間質幹細胞。更重要的是，羊膜具有獨特的「免疫豁免」特性——其細胞表面缺乏引發排斥反應的HLA抗原——所以可以安全地注射到他人體內，幾乎不引起免疫排斥。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6746876/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    目前臨床上使用的羊膜製品，是從接受剖腹產的健康媽媽捐贈的胎盤組織加工而成，經過嚴格的病原體篩查、滅菌與FDA（美國食品藥物管理局）或衛福部監管，是合法的異體生物製劑，不含胎兒組織。
+    <sup><a href="https://www.aokc.net/aokc-stemcell-therapy/whats-the-process-like.html" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">為什麼羊膜特別適合自身細胞品質較差的病人？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是羊膜注射最核心的臨床價值所在。PRP和PLT都是「自體療法」——用的是患者自己的血液，意味著：<strong style="color: #2dd4bf;">如果患者本身的細胞因年齡、慢性病、長期服藥或免疫問題而功能下降，那麼用這些細胞製成的PRP或PLT，效果也會大打折扣。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究已充分證實：年長患者（尤其是65歲以上）的血小板α顆粒數量顯著減少，儲存的生長因子含量也隨年齡下降。2023年一項針對不同年齡層女性PRP組成的研究發現，<strong style="color: #ffffff;">45歲以上女性的PRP中，多種關鍵生長因子含量並未顯著高於對照組</strong>，進一步表明年齡與老化對PRP有效成分的影響不容忽視。
+    <sup><a href="https://www.nature.com/articles/s41598-023-45747-3" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    羊膜注射完全繞過了這個問題——<strong style="color: #ffffff;">它使用的是年輕健康捐贈者的組織，裡面的生長因子濃度、幹細胞活性都維持在高水準，不受接受注射者本身細胞品質影響。</strong>2019年一項比較PRP與羊膜的研究也指出，PRP的一大限制正在於：「患者年齡導致自體細胞品質欠佳」這個問題，而羊膜異體製品能有效克服這個局限。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6746876/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床觀點</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在門診中，最常遇到的羊膜注射候選人，是65歲以上的退化性關節炎患者、有多年糖尿病導致周邊組織修復能力下降的病人，以及曾多次接受PRP但效果不如預期的患者。對這類族群，換用不依賴自身細胞的羊膜製品，往往能帶來更穩定的改善效果。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">適合誰？</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">年長患者（65歲以上）自身血小板功能下降者</li>
+    <li style="margin-bottom: 0.5rem;">有糖尿病、自體免疫疾病、長期服用抗凝血藥等影響血小板功能的病人</li>
+    <li style="margin-bottom: 0.5rem;">曾接受PRP效果有限，希望嘗試異體來源製品者</li>
+    <li style="margin-bottom: 0.5rem;">膝、肩、踝等關節退化性骨關節炎</li>
+    <li style="margin-bottom: 0.5rem;">慢性肌腱病變、旋轉肌群部分撕裂</li>
+  </ul>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;"><strong style="color: #ffffff;">參考費用：</strong>台灣約新台幣 30,000–50,000 元／次（因使用異體製品有商業成本，通常高於PRP）</p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、BMC（骨髓濃縮液）：幹細胞注射的臨床實踐
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">原理與製程</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    BMC（Bone Marrow Concentrate，骨髓濃縮液）是目前再生注射中被認為「最接近幹細胞療法」的選項。做法是：在局部麻醉下，用特殊穿刺針從患者自身的<strong style="color: #ffffff;">髂骨（骨盆後上緣）</strong>抽取骨髓液，放入離心機濃縮，萃取出富含<strong style="color: #ffffff;">間質幹細胞（MSCs）、造血幹細胞前驅物、多種生長因子</strong>的濃縮液，再注射到受損關節或組織。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9492580/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    骨髓中的間質幹細胞（MSC）具有分化成軟骨、肌腱、韌帶甚至骨組織的潛力，理論上提供的不只是「生長訊號」，而是真正的「修復原料」。這使得BMC在理論層面是四種療法中再生潛力最高的，但同時也是對技術要求最高、過程最不舒適的選項。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">臨床實證</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    2025年發表的系統性回顧分析指出，BMC在膝關節炎治療中提供了短到中期的疼痛改善與功能提升，部分研究顯示其效果優於玻尿酸與PRP。特別值得注意的是，<strong style="color: #ffffff;">BMC注射液中幹細胞（CFU-F）濃度越高，患者的治療反應越好——說明療效確實與幹細胞含量直接相關。</strong>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9492580/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    一項針對嚴重膝關節炎（KL分級III至IV）患者的4年追蹤研究顯示，BMC注射後IKDC（國際膝關節評估委員會）分數從平均56分顯著提升至73分，且效果維持至第2年以後仍持續改善——這是PRP在重度關節炎難以企及的長期效果。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10834500/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 注意事項：</strong><br><br>BMC的骨髓抽取過程需要穿刺至骨骼內，雖然在局部麻醉下進行，但過程中仍有程度不一的不適感，且需要更長的術後休息（數日）。此外，與PRP相同，BMC同樣是自體療法，年長患者骨髓中的幹細胞數量與活性也會隨年齡下降，選擇前應由醫師評估。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">適合誰？</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">中重度關節炎（KL II–IV），希望延遲或避免人工關節置換者</li>
+    <li style="margin-bottom: 0.5rem;">軟骨缺損、半月板部分撕裂</li>
+    <li style="margin-bottom: 0.5rem;">韌帶或肌腱的中度至重度損傷</li>
+    <li style="margin-bottom: 0.5rem;">接受過PRP效果不佳、希望更進階再生療法者</li>
+    <li style="margin-bottom: 0.5rem;">建議年齡在70歲以下、骨髓功能尚未嚴重退化者</li>
+  </ul>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;"><strong style="color: #ffffff;">參考費用：</strong>台灣約新台幣 30,000–80,000 元以上／次（因技術難度最高、設備要求高，費用通常最貴）</p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、四大療法一眼看懂比較表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 110px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table { font-size: 14px; }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>療法</th>
+          <th>來源</th>
+          <th>核心成分</th>
+          <th>主要優點</th>
+          <th>主要限制</th>
+          <th>最適族群</th>
+          <th style="text-align:center;">費用參考（台幣）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PRP</td>
+          <td>自體血液</td>
+          <td>活血小板＋生長因子</td>
+          <td>安全、普及、流程成熟</td>
+          <td>效果受患者自身細胞品質影響，年長者較差</td>
+          <td>年輕、輕中度傷害、運動員</td>
+          <td style="text-align:center;">15,000–20,000</td>
+        </tr>
+        <tr>
+          <td>PLT</td>
+          <td>自體血液（進一步加工）</td>
+          <td>釋放的生長因子液（無活性血小板）</td>
+          <td>生長因子濃度高、發炎反應低、可冷凍儲存</td>
+          <td>血小板細胞活性消失，缺乏動態訊號調控</td>
+          <td>神經注射、急性發炎期、多次療程</td>
+          <td style="text-align:center;">30,000–50,000</td>
+        </tr>
+        <tr>
+          <td>羊膜</td>
+          <td>捐贈者（異體）</td>
+          <td>生長因子、細胞激素、玻尿酸、幹細胞</td>
+          <td>不依賴患者細胞品質，適合高齡或慢性病患</td>
+          <td>費用較高，需接受異體製品</td>
+          <td>65歲以上、慢性病、PRP效果不佳者</td>
+          <td style="text-align:center;">30,000–50,000</td>
+        </tr>
+        <tr>
+          <td>BMC</td>
+          <td>自體骨髓</td>
+          <td>間質幹細胞＋多種生長因子</td>
+          <td>再生潛力最高，對重度損傷效果較持久</td>
+          <td>抽骨髓過程不舒適，費用最高，幹細胞數也受年齡影響</td>
+          <td>中重度關節炎、軟骨損傷、70歲以下</td>
+          <td style="text-align:center;">30,000–80,000+</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 七、常見三大迷思解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「PLT濃度比PRP高，所以PLT一定比PRP好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不完全正確！</strong> PLT的生長因子濃度確實較高，但血小板在體內的修復機制不只是「釋放生長因子」，活血小板能持續感知組織環境並動態調節訊號。PLT因為血小板已被破壞，喪失了這個動態調控能力。體外研究也顯示，PLT在促進肌腱細胞活性方面並未全面超越PRP。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5796161/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[4]</a></sup> 療法的選擇應根據病況與患者個人條件，而非單純比較濃度數字。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「PRP是自己的血液，所以對任何人都有效」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度樂觀！</strong> 自體療法的核心前提是「自身細胞品質良好」。研究清楚顯示，年長患者的血小板α顆粒數量減少、生長因子含量下降，PRP的修復效力會隨之降低。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7949169/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[11]</a></sup> 糖尿病、長期使用抗凝血藥或免疫抑制劑的患者，其血小板功能也可能受損。這類病人更適合考慮羊膜等異體製品。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「BMC是最強的，所以應該直接跳過PRP選BMC」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不一定！</strong> BMC的再生潛力確實在四者中最高，但它也是流程最繁瑣（需要穿刺骨髓）、費用最高、恢復期最長的選項。對於輕中度損傷的年輕患者，PRP往往已能達到很好的效果，不需要直接選擇BMC。臨床上建議按「階梯式」選擇：先試PRP，若效果不理想再考慮更進階的療法。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12113016/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[3]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    八、如何與醫師討論，找到最適合自己的選擇？
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">就診前，先準備好這些資訊</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">年齡與慢性病史：</strong>是否有糖尿病、自體免疫疾病、血液疾病、或正在服用抗凝血藥物？這直接影響PRP和BMC的原料品質。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">傷害/症狀的嚴重程度：</strong>輕度肌腱發炎？中度膝關節炎？還是重度軟骨缺損？嚴重程度決定了療法的選擇層次。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">過去治療史：</strong>曾接受過PRP注射嗎？效果如何？這是醫師判斷是否需要升階至羊膜或BMC的重要依據。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">預算與療程接受度：</strong>是否能接受多次注射？是否接受骨髓穿刺的不適感？費用上限大約在哪？</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">簡單的選擇框架</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;">年輕、健康、輕中度運動傷害 → <strong style="color: #ffffff;">PRP 為優先</strong></li>
+    <li style="margin-bottom: 0.75rem;">需要多次療程、急性發炎期 → <strong style="color: #ffffff;">PLT 值得考慮</strong></li>
+    <li style="margin-bottom: 0.75rem;">年長（65歲以上）、慢性病、PRP反應不佳 → <strong style="color: #ffffff;">羊膜注射為優先</strong></li>
+    <li style="margin-bottom: 0.75rem;">中重度關節炎、軟骨損傷、希望避免手術 → <strong style="color: #ffffff;">BMC 值得評估</strong></li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q1：這些注射健保有給付嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      目前PRP、PLT、羊膜、BMC在台灣均屬自費項目，健保不給付。費用因醫療院所設備、技術與製品廠牌不同而有相當差異，建議就診前先詳細詢問報價，並確認是否包含超音波導引注射等附加費用。部分個人及公司意外險可能有給付，建議可先像保險專員詢問。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q2：注射後多久可以感受到效果？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      各療法時程略有不同。PRP注射後通常需要4至8週才開始感受到明顯改善，期間可能有數天的局部酸脹感（這是正常的組織反應）。羊膜注射的抗發炎效果較快，有患者在數天內就感覺疼痛改善。BMC則因含有幹細胞需要時間分化，效果通常在2至3個月後才逐漸顯現，但持續時間較長。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q3：需要打幾次才夠？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      視病況而定。輕度肌腱病變或關節炎，有時1至2次PRP即可達到不錯的效果。中重度關節炎通常建議3次一療程（4週一次）。BMC則多為單次高劑量注射。醫師會依據追蹤回診的恢復狀況決定是否需要再次注射。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q4：羊膜來自捐贈者，會不會有感染風險？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      合法上市的羊膜製品必須通過嚴格的捐贈者篩查（包括HIV、肝炎等病原體檢測）、滅菌處理，以及衛福部或FDA的審查才能上市。目前文獻中羊膜注射的不良反應發生率極低，感染風險非常小。但選擇時仍應確認該產品是否為合法批准的醫療器材或生物製劑。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q5：打完再生注射後，還需要做復健嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      <strong>非常需要！</strong> 再生注射的目的是「提供修復的材料與訊號」，但組織真正重建仍需要適當的力學刺激——也就是物理治療與漸進式運動訓練。單純打了注射卻不做復健，就像播了種卻不澆水。結合物理治療的整合性治療計畫，才能讓再生注射發揮最大效果。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    PRP、PLT、羊膜與BMC，代表著再生醫學從「基礎」到「進階」的不同層次。它們不是相互競爭的對手，而是針對不同病患、不同病況提供的精準工具。<strong style="color: #1e293b;">最適合的療法，不是最貴的，也不是最新的，而是最符合您自身細胞條件、病況嚴重程度與治療目標的那一種。</strong>
+  </p> <br>
+
+  <p style="color: #475569; font-size: 1.05rem;">
+    特別提醒：如果您是年長族群，或本身有慢性疾病、自體細胞功能欠佳，不要輕易以為「PRP是自己的血液就一定好」，羊膜等異體製品反而可能提供更穩定的修復效果。反之，年輕運動員未必需要直接使用最昂貴的BMC，標準PRP配合正確的復健計畫往往已足夠。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的比較表，思考自己屬於哪種族群，並在門診時向醫師主動詢問——「我的細胞品質適合自體療法嗎？」「我這個狀況的嚴重程度，PRP夠用嗎？」一個深思熟慮的問題，可能讓您的治療更精準、更有效。
+    </p>
+  </div>
+
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約增生注射諮詢門診
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Troyer, J.L., et al. (2023). Aging Affects the Efficacy of Platelet-Rich Plasma Treatment for Osteoarthritis. American Journal of Physical Medicine & Rehabilitation / PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10245083/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10245083</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hosseini, S., et al. (2023). Comparative evaluation of autologous platelet-rich plasma and platelet lysate in patients with knee osteoarthritis. Growth Factors, 41(3), 165–177. <a href="https://pubmed.ncbi.nlm.nih.gov/37351894/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 37351894</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Park, D., et al. (2025). Bone Marrow Aspirate Concentrate (BMAC) for Knee Osteoarthritis: A Narrative Review of Clinical Efficacy and Future Directions. Medicina, 61(5), 853. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12113016/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12113016</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Streichenberger, N., et al. (2018). Comparative Analysis of Different Platelet Lysates and Platelet Rich Preparations to Stimulate Tendon Cell Biology: An In Vitro Study. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5796161/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 5796161</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Ospina Medical (2022). What is the Difference Between PRP and PL? <a href="https://ospinamedical.com/orthopedic-blog/what-is-the-difference-between-prp-and-pl" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Millan, A., et al. (2019). Amniotic Allograft Implantation for Midface Aging Correction: A Retrospective Comparative Study with Platelet-Rich Plasma. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6746876/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 6746876</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Athletic Orthopedics & Knee Center (2024). Stem Cell Therapy & PRP Injections — How the Procedures Work. <a href="https://www.aokc.net/aokc-stemcell-therapy/whats-the-process-like.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Wang, X., et al. (2023). Correlation of bioactive components of platelet rich plasma derived from human female adult peripheral blood and umbilical cord blood with age. Scientific Reports. <a href="https://www.nature.com/articles/s41598-023-45747-3" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Nature Scientific Reports</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Centeno, C.J., et al. (2022). Percutaneous autologous bone marrow concentrate for knee osteoarthritis: patient-reported outcomes and progenitor cell content. International Orthopaedics. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9492580/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9492580</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Pabinger, C., Lothaller, H., & Kobinia, G.S. (2024). Intra-articular injection of bone marrow aspirate concentrate (mesenchymal stem cells) in KL grade III and IV knee osteoarthritis: 4 year results of 37 knees. Scientific Reports. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10834500/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10834500</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Eming, S.A., et al. (2021). Investigating the effect of age on platelet ultrastructure using transmission electron microscopy. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7949169/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7949169</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Samara, R., et al. (2021). Human platelet lysate – A potent (and overlooked) orthobiologic. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8339333/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8339333</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Chung, K., et al. (2024). Bone Marrow Aspirate Concentrate Injections for the Treatment of Knee Osteoarthritis: A Systematic Review of Randomized Controlled Trials. Orthopaedic Journal of Sports Medicine. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11618931/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11618931</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Custo, S., et al. (2022). A comparative profile of total protein and six angiogenically-active growth factors in three platelet products. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9284722/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9284722</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kadam, N.S., et al. (2023). Not All Platelets Are Created Equal: A Review on Platelet Aging and Functional Quality in Regenerative Medicine. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12346282/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12346282</a>
+      </span>
+    </li>
+  </ol>
+</div>
+
+`
+},
+
+{
+  id: 'steroid-types-sports-medicine',
+  title: '止痛的類固醇 vs. 增肌的類固醇：運動醫學完全解析，差別究竟在哪裡？',
+  lastModified: '2026-04-29',
+  category: '衛教文章',
+  date: '2026-04-29',
+  summary: '許多人聽到「類固醇」就心生恐懼，但其實類固醇有兩大截然不同的種類：用於消炎止痛的「皮質類固醇」與用於增肌的「合成代謝類固醇」。本文以運動醫學觀點，用你看得懂的語言，深度解析兩者的機制、用途、風險，並澄清常見迷思。',
+  coverImage: '/images/news/article/steroid-types-sports-medicine.webp',
+  seoTitle: '止痛的類固醇 vs. 增肌的類固醇：運動醫學完全解析',
+  seoDescription: '皮質類固醇與合成代謝類固醇有何不同？運動醫學觀點深度解析消炎止痛用與增肌用類固醇的機制、風險與臨床應用，澄清常見迷思。',
+  keywords: [
+    '類固醇',
+    '皮質類固醇',
+    '合成代謝類固醇',
+    '止痛針',
+    '類固醇注射',
+    '增肌藥物',
+    '運動禁藥',
+    '運動醫學',
+    '消炎藥',
+    '睪固酮'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0.75rem; line-height: 1.6; color: #334155;">
+    「類固醇」這個詞讓很多人又怕又恨，但在醫學上，「類固醇」其實是一個非常廣泛的化學結構分類，涵蓋完全不同用途、完全不同機制的兩大家族。<strong>皮質類固醇（Corticosteroids）</strong>模擬人體腎上腺皮質分泌的可體松，主要功能是消炎、抑制免疫反應，是骨科與運動醫學中常見的止痛工具。<strong>合成代謝雄性類固醇（Anabolic-Androgenic Steroids，AAS）</strong>則是人工合成的睪固酮衍生物，作用在於促進肌肉蛋白質合成、增加肌肉量與力量，是運動禁藥的主角。<br>
+  </p>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    兩者雖然名稱都有「類固醇」，但化學結構、作用受體、治療目標與副作用截然不同。
+    <sup><a href="https://www.health.ny.gov/publications/1210/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
+    本文以運動醫學的觀點，用一般民眾看得懂的語言，幫你徹底弄清楚這兩種「類固醇」的差異，並解析臨床上應該如何正確看待它們。
+    <sup><a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2022.1059473/full" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10407144/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[3]</a></sup>
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、「類固醇」究竟是什麼？為什麼大家都怕它？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    先從最根本的問題說起：<strong style="color: #2dd4bf;">「類固醇」並不是一種藥，而是一大群擁有相似化學骨架的化合物的統稱。</strong>就像「碳水化合物」包含了白飯、糖果和蔬菜，「類固醇」這個詞底下住著形形色色、用途迥異的化合物。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    你的身體每天都在製造天然的類固醇，包括：可體松（cortisol，壓力荷爾蒙）、雌激素、睪固酮、維生素D的活化型態，以及膽固醇。沒錯，這些全都屬於廣義的「類固醇」家族。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    民眾之所以對類固醇又愛又怕，是因為媒體和日常對話把兩種完全不同的東西混在一起討論：一種是醫師用來消炎止痛的「皮質類固醇」，另一種是健身房禁藥文化中的「合成代謝類固醇」。這兩者的差別，就好比「酒精燈」和「威士忌」——雖然都含酒精，但沒有人會把它們搞混使用。
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 一個簡單的分辨原則</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      <strong>止痛用的類固醇（皮質類固醇）</strong>：模擬你的腎上腺所分泌的荷爾蒙，主要任務是「滅火」——消炎、止痛、抑制過度的免疫反應。<br>
+      <strong>增肌用的類固醇（合成代謝類固醇）</strong>：模擬睪固酮，主要任務是「建設」——促進肌肉蛋白質合成、增加肌肉量與力量。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、止痛用的類固醇：皮質類固醇（Corticosteroids）
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">它從哪裡來？怎麼運作？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    皮質類固醇是人工合成版本的「可體松（cortisol）」，一種由腎上腺皮質自然分泌的荷爾蒙。你的身體在壓力狀態下（包含受傷、感染、手術）會大量分泌可體松，目的是抑制過度的發炎反應、讓你在緊急情況下能繼續運作。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    醫師使用的皮質類固醇（如triamcinolone、betamethasone、dexamethasone）就是模擬這個天然機制，在特定部位強力抑制發炎。其作用機制相當精密：皮質類固醇穿過細胞膜，與細胞內的糖皮質激素受體結合，形成的複合物進入細胞核，直接影響基因表現——關閉促炎基因、開啟抗炎基因。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10407144/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    具體來說，皮質類固醇能抑制前列腺素（prostaglandins）、白三烯素（leukotrienes）等發炎介質的生成，同時穩定細胞膜，減少局部腫脹與疼痛。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3445176/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">在運動醫學中，什麼時候會用皮質類固醇？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    皮質類固醇在運動醫學中是一項重要工具，常見適應症包括：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">關節發炎</strong>：如膝關節退化性關節炎急性發作、肩關節滑囊炎</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">肌腱炎與肌腱病變</strong>：如網球肘（外側上髁炎）、高爾夫球肘、跟腱旁炎</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">腕隧道症候群</strong>：正中神經受壓迫引起的手腕麻痛</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">板機指（狹窄性腱鞘炎）</strong>：手指屈肌腱在腱鞘中卡住</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">足底筋膜炎</strong>：腳跟疼痛的常見原因之一</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    皮質類固醇可以口服（如prednisolone）、靜脈注射，或<strong style="color: #ffffff;">局部注射到關節腔、肌腱旁或軟組織中</strong>。局部注射的好處是藥物直達患處，全身副作用相對較少。
+    <sup><a href="https://orthoinfo.aaos.org/en/treatment/cortisone-shot-steroid-injection/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">皮質類固醇的風險與副作用</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    使用皮質類固醇並非沒有代價，尤其是在運動醫學場域中，需要特別留意以下風險：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">肌腱弱化與斷裂風險：</strong>動物實驗與臨床案例均顯示，直接注射進肌腱的皮質類固醇會降低肌腱的生物力學強度，增加肌腱斷裂風險。這也是為什麼有經驗的醫師會特別注意注射的精確位置——注射應在肌腱「旁邊」，而不是「裡面」。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1120980/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">短期效果、長期復發：</strong>皮質類固醇能快速消炎止痛，但對於大多數肌腱病變（如網球肘），研究顯示其短期效果雖然優於物理治療，但6個月後的復發率卻顯著較高。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3445176/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">局部皮膚萎縮與色素脫失：</strong>注射點附近的皮膚可能出現凹陷、變白，尤其是皮膚較薄的區域。
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">血糖上升：</strong>糖尿病患者使用皮質類固醇後，血糖可能在注射後數天內明顯升高，需要特別監控。
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">下視丘—垂體—腎上腺軸抑制：</strong>長期全身性使用皮質類固醇會抑制身體自然分泌可體松的能力，突然停藥可能導致腎上腺危象。局部注射的影響相對輕微，但頻繁使用仍需謹慎。
+      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/23015899/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    </li>
+  </ul>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 臨床重點提醒：</strong><br><br>
+      皮質類固醇局部注射通常建議同一部位每年不超過3至4次，注射間隔至少6週。過於頻繁的注射不只無法改善問題，反而可能加速組織退化。如果你曾被建議在同一個位置打超過4次的「消炎針」，應主動詢問醫師是否有其他替代治療方案。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、增肌用的類固醇：合成代謝雄性類固醇（Anabolic-Androgenic Steroids，AAS）
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">它從哪裡來？怎麼運作？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    合成代謝雄性類固醇（AAS）是人工合成的睪固酮衍生物。睪固酮（testosterone）是男性荷爾蒙的代表，除了促進男性第二性徵發育之外，也有促進肌肉蛋白質合成、增加骨密度、提升紅血球生成的作用。AAS正是透過放大這些「合成代謝」效應，讓肌肉長得更快、更大、更強。
+    <sup><a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2022.1059473/full" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    AAS進入體內後，與細胞內的雄性素受體結合，進而影響與肌肉生長相關的基因表現：促進蛋白質合成、抑制肌肉分解代謝、加速運動後恢復。有研究讓61名健康男性在「不運動」的前提下，注射高劑量睪固酮20週，結果平均增加了7.9公斤的瘦體重，並減少約1公斤體脂肪——即使完全沒有訓練。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8683244/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+    這說明了AAS的強大效力，也解釋了為什麼它成為運動禁藥的核心。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    常見的AAS包括：睪固酮（天然與各種酯化形式）、Nandrolone）、（Stanozolol）、Methandienone，俗稱 Dianabol）等。這些藥物可以口服或注射，各有不同的「發揮期」與「代謝期」，也是運動禁藥檢測的主要目標。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7832337/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">AAS在醫學上有合法用途嗎？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    答案是有的，但適應症非常狹窄：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">男性性腺功能低下症</strong>：睪固酮分泌不足，需要補充療法</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">愛滋病或癌症引起的肌肉消耗症候群</strong></li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">再生不良性貧血</strong>：部分合成代謝類固醇能刺激紅血球生成</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">青春期發育遲緩</strong>（在嚴格醫療監督下）</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    在這些合法的醫療用途中，劑量是「生理替代量」或「低治療量」。而非法使用者為了增肌，往往使用的是正常生理量的10至100倍，這才是造成嚴重副作用的主要原因。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8087567/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">濫用AAS對身體的衝擊</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    合成代謝類固醇的副作用幾乎影響全身每一個系統，且許多傷害是不可逆的：
+  </p>
+
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">心血管系統：</strong>這是最危險的面向。長期超生理劑量使用AAS會導致心臟肥大（特別是左心室）、血脂異常（好膽固醇HDL大幅下降、壞膽固醇LDL上升）、動脈硬化加速，最終可能引發心臟病發作或猝死。研究指出，AAS濫用者的心血管死亡率是一般人的兩倍以上。
+      <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12652398/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">男性生殖系統：</strong>外來的合成代謝類固醇會「欺騙」大腦，讓大腦以為睪固酮已經足夠，進而關閉天然睪固酮的分泌，導致睪丸萎縮、精子數量減少，甚至不育。停藥後恢復過程可能長達數月至數年，部分人永久損傷。
+      <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7832337/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">女性使用者：</strong>月經周期紊亂或停止、陰蒂肥大、聲音變粗、體毛增加等男性化特徵，部分為不可逆。
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">肝臟毒性：</strong>口服型AAS對肝臟的傷害尤為顯著，可能導致肝功能異常、肝腫瘤（罕見但有記錄）。
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">精神心理影響：</strong>使用AAS與情緒劇烈波動、攻擊性行為增加（俗稱「roid rage」）、停藥後抑鬱症有關。長期使用後停藥，可能因內源性睪固酮長期受抑制而陷入嚴重憂鬱。
+      <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11329390/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">青少年骨骼影響：</strong>青春期使用AAS會加速骨骺板提早閉合，反而造成身高矮化，這是對青少年最嚴重也最難逆轉的傷害之一。
+      <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11329390/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+    </li>
+  </ul>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在運動醫學門診中，偶有年輕運動員因「想要訓練效果更好」而詢問AAS的使用。必須強調：AAS所帶來的肌肉增加，在停止使用後幾個月內往往逐漸消退，但心臟的損傷、荷爾蒙系統的紊亂卻可能是永久性的。換句話說，你用了健康換來的肌肉，停藥後還會還給你，但健康不見得能要回來。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、兩種類固醇的核心差異比較表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 750px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 160px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>比較項目</th>
+          <th>皮質類固醇（消炎止痛用）</th>
+          <th>合成代謝類固醇（增肌用）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>模擬對象</td>
+          <td>腎上腺皮質分泌的可體松</td>
+          <td>睪丸分泌的睪固酮</td>
+        </tr>
+        <tr>
+          <td>主要作用受體</td>
+          <td>糖皮質激素受體（GR）</td>
+          <td>雄性素受體（AR）</td>
+        </tr>
+        <tr>
+          <td>主要功能</td>
+          <td>消炎、止痛、抑制免疫</td>
+          <td>促進肌肉合成、增加力量</td>
+        </tr>
+        <tr>
+          <td>常見藥物</td>
+          <td>曲安奈德、倍他米松、地塞米松、可體松</td>
+          <td>睪固酮、那菠龍、斯他諾佐醇、Dianabol</td>
+        </tr>
+        <tr>
+          <td>合法醫療用途</td>
+          <td>廣泛（關節炎、肌腱炎、過敏等）</td>
+          <td>狹窄（性腺功能低下、肌肉消耗病）</td>
+        </tr>
+        <tr>
+          <td>運動禁藥狀態</td>
+          <td>口服/全身使用受限；局部注射須申報</td>
+          <td>幾乎全面禁止使用</td>
+        </tr>
+        <tr>
+          <td>主要副作用</td>
+          <td>肌腱弱化、血糖上升、骨質疏鬆（長期）</td>
+          <td>心臟病、荷爾蒙紊亂、肝損傷、精神障礙</td>
+        </tr>
+        <tr>
+          <td>使用方式</td>
+          <td>口服、靜脈注射、局部注射</td>
+          <td>口服、肌肉注射</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、運動員使用類固醇的規範：世界反禁藥機構怎麼說？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    世界反禁藥機構（WADA）的禁藥清單對兩種類固醇的規範截然不同：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">合成代謝類固醇（AAS）</strong>是幾乎全面禁止的，無論是比賽期間還是訓練期間，無論是口服還是注射，都在禁用之列。即使是合法的睪固酮替代療法患者，也必須向相關機構申請治療用藥豁免（TUE）才能參賽。
+      <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8087567/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">皮質類固醇</strong>的規範相對複雜：<strong>局部注射（如關節注射、肌腱旁注射）</strong>在比賽期間是允許的，但須事先申報；<strong>全身性使用（口服、靜脈注射）</strong>在比賽期間則受到限制。這意味著運動員在賽前接受關節注射治療，在規範上是可行的，但必須遵守申報程序。
+    </li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這也是為什麼我們常聽到職業球員在賽季中接受「止痛針」治療，卻不算違規——只要是皮質類固醇的局部注射，且符合申報規定，就在允許範圍內。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 六、最常見的五大迷思解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「打了類固醇就會變成大力士」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>完全錯誤！</strong>皮質類固醇（消炎針）不但不會讓你肌肉增長，長期使用反而會導致肌肉萎縮與骨質疏鬆。只有合成代謝類固醇才有增肌效果，且其使用在競技運動中幾乎全面禁止。<sup><a href="https://www.health.ny.gov/publications/1210/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「打一針消炎針，傷口就好了」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong>皮質類固醇能快速消除疼痛與發炎，但它不能修復已損傷的組織。以網球肘為例，注射後的止痛效果讓患者感覺好轉，若沒有同步進行復健強化，根本原因仍然存在，幾個月後很可能捲土重來。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3445176/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[4]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「類固醇絕對不能打，一打就完蛋」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>矯枉過正！</strong>皮質類固醇的局部注射是臨床上成熟且有效的治療工具，在適當的適應症、正確的劑量與頻率下使用，益處通常遠大於風險。恐懼不治療，反而可能讓急性發炎拖成慢性傷害。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
+        <div>
+          <strong>「健身房買的補充品不會含違禁類固醇」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>非常危險！</strong>市面上部分標榜「天然」的運動補充品被發現摻有未申報的合成代謝類固醇成分。這不僅是健康風險，對競技運動員來說更可能在禁藥檢測中被判定違規，即使當事人完全不知情。<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8683244/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[8]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">5</span>
+        <div>
+          <strong>「用完AAS，停藥後身體就會回到正常」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>只對了一半！</strong>停藥後荷爾蒙系統確實會逐漸恢復，但時間可能長達1至3年，且心臟結構的改變、某些心臟纖維化的損傷是不可逆的。有研究追蹤前AAS使用者發現，即使停藥多年，其心臟功能指標仍顯著劣於從未使用者。<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12652398/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[11]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、運動醫學中的替代選項：除了類固醇，還有什麼？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    對於不想使用皮質類固醇的患者，或是皮質類固醇效果有限的情況，運動醫學提供了幾種有實證支持的替代療法：
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">高濃度血小板血漿注射（PRP）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    PRP是從患者自身血液中萃取、濃縮血小板後再注射回傷處。血小板富含多種生長因子，能促進組織修復。對於肌腱病變（如網球肘、跟腱病變），多項研究顯示PRP在中長期效果上優於皮質類固醇注射，儘管短期止痛效果不如後者立竿見影。PRP的另一大優勢是使用自體血液，組織相容性佳，感染風險極低，且不在禁藥範圍之列。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12898080/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">玻尿酸注射（Hyaluronic Acid）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    玻尿酸是關節滑液的天然成分，主要用於退化性關節炎的治療，能改善關節潤滑、減少摩擦，並有一定的抗炎效果。效果持續時間較皮質類固醇長，且對軟骨的負面影響較少。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12898080/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">物理治療與離心性訓練</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    對於大多數肌腱病變，有充分證據顯示「針對性的離心性肌力訓練（eccentric exercise）」是長期治療效果最好的方法之一——它能從根本上重建肌腱的膠原纖維結構與承載能力。這是任何注射治療都無法單獨做到的事。因此，最理想的治療策略往往是：以注射緩解急性疼痛，同時啟動系統性的物理治療，兩者並行。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：醫師說要幫我打「類固醇」，我應該擔心嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      首先要確認是哪一種類固醇。在骨科與運動醫學的門診中，醫師說的「類固醇」幾乎都是「皮質類固醇」，用於局部消炎止痛，與坊間擔心的「禁藥」是完全不同的東西。你可以直接問醫師：「這是哪一種類固醇？主要功能是消炎還是增肌？」這個問題完全合理，好的醫師都樂意解答。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：消炎針打幾次才算安全？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      目前臨床共識是同一部位每年不超過3至4次，且每次間隔至少6週。若已注射2至3次仍無顯著改善，應考慮更換治療策略（如PRP或強化物理治療），而不是繼續打下去。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1120980/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：有辦法「安全地」使用合成代謝類固醇嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      對於有真正醫療需求的患者（如男性性腺功能低下症），在專業醫師監督下以生理替代劑量使用睪固酮，風險是可控的。但如果是為了「增肌」而使用超生理劑量的AAS，目前沒有任何「安全使用」方式——風險與劑量、使用時間呈正相關，且許多傷害在症狀出現前就已默默累積。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：打了皮質類固醇之後，多久可以回去運動？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      這取決於注射部位與運動強度。一般關節注射後建議休息24至48小時再恢復輕度活動；若是肌腱旁注射，通常建議1至2週內避免高強度負荷，讓局部炎症充分消退後再循序漸進恢復訓練。具體時間表應由你的主治醫師根據情況個別判斷。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10407144/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：市面上有哪些「天然」方法可以幫助增肌，且不需要使用AAS？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      充足的蛋白質攝取（建議每公斤體重每天1.6至2.2克）、系統性的阻力訓練、高品質的睡眠（睡眠中生長激素大量分泌）是有最強實證支持的天然增肌三角。此外，肌酸（creatine）是目前研究最充分的合法補充品，有助於短期爆發力與肌肉力量。這些方法雖然效果不如AAS立竿見影，但健康、持久、且不涉及違法風險。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    「類固醇」這個詞承載了太多誤解。止痛用的皮質類固醇，是骨科與運動醫學中不可或缺的工具，在正確使用下是安全且有效的；增肌用的合成代謝類固醇，則是一把雙面刃，短期的肌肉增益背後藏著心臟、荷爾蒙、肝臟的長遠代價。
+  </p><br>
+
+  <p style="color: #475569; font-size: 1.05rem;">
+    無論你是正在考慮接受局部注射治療的運動傷害患者，還是對健身增肌有疑問的運動愛好者，<strong style="color: #1e293b;">最重要的一步永遠是：找到能和你說清楚講明白的專業醫師。</strong>如果你對自己的傷勢、治療選項或類固醇的使用有任何疑問，歡迎預約門診進行評估——一次完整的評估，往往能幫你省去摸索的時間，也讓你做出對身體真正好的決定。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的比較表，釐清你現在使用或考慮使用的是哪一種「類固醇」。若有任何不確定，請在下一次門診時直接詢問你的醫師。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約專科醫師門診評估
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        New York State Department of Health. (2023). Anabolic Steroids and Sports: Winning at any Cost. <a href="https://www.health.ny.gov/publications/1210/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">https://www.health.ny.gov/publications/1210/</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Smit, D.L., et al. (2022). Anabolic–androgenic steroids: How do they work and what are the risks? Frontiers in Endocrinology, 13, 1059473. <a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2022.1059473/full" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3389/fendo.2022.1059473</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Sherman, S.L., et al. (2023). One to Two Days of Rest Is Recommended Before Returning to Sport After Intra-Articular Corticosteroid Injection in the High-Level Athlete. PMC10407144. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10407144/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10407144</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Nichols, A.W. (2012). Soft Tissue Injections in the Athlete. PMC3445176. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3445176/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 3445176</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        American Academy of Orthopaedic Surgeons (AAOS). (2024). Cortisone Shot (Steroid Injection) – OrthoInfo. <a href="https://orthoinfo.aaos.org/en/treatment/cortisone-shot-steroid-injection/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">OrthoInfo Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Coombes, B.K., Bisset, L., & Vicenzino, B. (2010). Corticosteroid injections in tendon lesions. British Medical Journal, 331, 1160–1161. PMC1120980. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1120980/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 1120980</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Nichols, A.W. (2005). Soft tissue injections in the athlete. PubMed. <a href="https://pubmed.ncbi.nlm.nih.gov/23015899/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 23015899</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Pope, H.G., et al. (2021). Anabolic-Androgenic Steroid Misuse: Mechanisms, Patterns of Misuse, User Typology, and Adverse Effects. PMC8683244. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8683244/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8683244</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Albano, G.D., et al. (2021). Adverse Effects of Anabolic-Androgenic Steroids: A Literature Review. PMC7832337. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7832337/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7832337</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Rahnema, C.D., et al. (2021). How the love of muscle can break a heart: Impact of anabolic androgenic steroids on skeletal muscle hypertrophy, metabolic and cardiovascular health. PMC8087567. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8087567/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8087567</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Androulakis-Korakakis, P., et al. (2025). Impact of Anabolic–Androgenic Steroid Abuse on the Cardiovascular System: Molecular Mechanisms and Clinical Implications. PMC12652398. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12652398/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12652398</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Franke, A.G., et al. (2024). Long-term effects of doping with anabolic steroids during adolescence on physical and mental health. PMC11329390. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11329390/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11329390</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lana, J.F., et al. (2025). Pharmacological Agents for Soft Tissue and Articular Injections: From Mechanisms to Clinical Applications. PMC12898080. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12898080/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12898080</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        American Academy of Orthopaedic Surgeons (AAOS). (2023). The Risks of Using Performance-Enhancing Drugs in Sports – OrthoInfo. <a href="https://orthoinfo.aaos.org/en/staying-healthy/the-risks-of-using-performance-enhancing-drugs-in-sports/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">OrthoInfo Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Mayo Clinic Staff. (2024). Performance-enhancing drugs: Know the risks. Mayo Clinic. <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/performance-enhancing-drugs/art-20046134" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Mayo Clinic Web Link</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+{
+  "id": "vertical-jump-biomechanics",
+  "title": "跳得更高！影響垂直起跳高度的關鍵肌肉與科學訓練法",
+  "lastModified": "2026-04-29",
+  "category": "衛教文章",
+  "date": "2026-04-29",
+  "summary": "從運動醫學與生物力學角度分析，垂直起跳高度取決於下肢關節的協同發力與「牽張縮短週期」效率。研究指出，膝關節伸肌（股四頭肌）與髖關節伸肌（臀大肌）在起跳過程中貢獻了最大的做功。然而，若要突破瓶頸、有效增加起跳高度，針對「臀大肌」與後側動力鏈進行大重量阻力與增強式訓練，投資報酬率最高。本文將深入剖析起跳的科學原理，並提供實證有效的訓練與預防跳躍膝策略。",
+  "coverImage": "/images/news/article/vertical-jump-biomechanics.webp",
+  "seoTitle": "增加垂直起跳高度怎麼練？運動醫學解析關鍵肌肉與訓練法",
+  "seoDescription": "想要跳得更高？復健科醫師帶你從生物力學解析垂直起跳高度的關鍵因素。了解股四頭肌與臀大肌的貢獻度差異，破解彈跳力訓練迷思，並提供預防跳躍膝的科學策略。",
+  "keywords": [
+    "垂直起跳",
+    "彈跳力訓練",
+    "臀大肌",
+    "股四頭肌",
+    "增強式訓練",
+    "跳躍膝",
+    "運動醫學",
+    "牽張縮短週期",
+    "生物力學"
+  ],
+  "contentHtml": `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    垂直起跳是籃球、排球等運動中最核心的競技能力之一。從生物力學角度來看，起跳高度取決於下肢三關節（髖、膝、踝）的爆發力輸出與「牽張縮短週期」的轉換效率。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12593465/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
+    研究顯示，在起跳瞬間的推蹬期，負責伸直膝蓋的「股四頭肌」與伸展髖關節的「臀大肌」貢獻了絕大部分的機械做功。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8706245/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup><br><br>
+    然而，現代人普遍存在「股四頭肌優勢」與「臀肌失憶症」，因此，若要最有效率地增加起跳高度，針對人體最大肌肉——臀大肌——進行深蹲、硬舉等阻力訓練，能解鎖極大的彈跳潛能。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7432749/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[3]</a></sup>
+    本文將以實證醫學為基礎，帶你破解彈跳力訓練的迷思，找出讓你「飛得更高」的關鍵密碼。
+  </p>
+</div>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、什麼決定了你的垂直起跳高度？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多球友以為「只要用力跳就會高」，但垂直起跳其實是一個極度精密的神經肌肉協調過程。在運動生物力學中，決定你能飛多高的核心因素有以下幾點：
+  </p>
+  
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">地面反作用力（Ground Reaction Force, GRF）：</strong>牛頓第三運動定律告訴我們，你給地板多少力量，地板就回饋你多少力量。你必須在極短的時間內將巨大的力量踩向地面。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">發力率（Rate of Force Development, RFD）：</strong>這比絕對力量更重要！起跳的推蹬時間通常不到 0.3 秒，如果你力氣很大（深蹲很重），但無法在 0.3 秒內把力量釋放出來，依然跳不高。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12131147/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">牽張縮短週期（Stretch-Shortening Cycle, SSC）：</strong>這是人體的「彈簧機制」。起跳前我們會先下蹲（肌肉離心拉長，儲存彈性位能），接著瞬間向上跳（肌肉向心收縮）。SSC 效率越高，利用肌腱彈性回彈的力量就越大。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6231348/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    </li>
+  </ul>
+
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、哪個肌肉對起跳高度「影響最大」？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    要完成一次完美的起跳，下肢的「三關節伸展」（Triple Extension）——髖關節、膝關節、踝關節同時伸直——缺一不可。但如果要論誰出的力氣最多，我們可以從關節做功來分析：
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 膝關節伸肌：股四頭肌（Quadriceps）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    股四頭肌位於大腿前側，負責把彎曲的膝蓋用力伸直。多數的生物力學研究證實，在雙腳垂直起跳中，<strong style="color: #ffffff;">膝關節的做功佔比往往是最高的，大約落在 40%–50% 之間。</strong>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/35135826/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+    可以說，股四頭肌是起跳時提供基礎推進力的「主引擎」。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 髖關節伸肌：臀大肌與大腿後側肌群（Glutes & Hamstrings）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    臀大肌是人體體積最大、力量最強的肌肉。在起跳的過程中，它負責把下蹲時彎折的髖部用力往前推平（髖伸展）。髖關節的做功佔比大約在 <strong style="color: #ffffff;">30%–40%</strong> 左右。雖然佔比略低於膝關節，但它卻是決定你是否能產生「爆發性推蹬」的關鍵。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8706245/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">3. 踝關節蹠屈肌：小腿三頭肌（Calves）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    小腿肌肉（腓腸肌與比目魚肌）加上阿基里斯腱，在起跳中的做功貢獻約為 <strong style="color: #ffffff;">15%–20%</strong>。它們的作用與其說是「發電機」，不如說是「傳動軸」。大腿與臀部產生的巨大力量，必須透過僵硬而有彈性的小腿與跟腱，毫無損耗地傳遞到地板上。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6349784/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在診間我們常看到，許多長期打籃球卻「跳不高」的年輕患者，其實擁有非常粗壯的大腿前側（股四頭肌），但在進行跳躍動作時，臀部幾乎沒有參與發力，這就是所謂的「股四頭肌優勢（Quad-dominant）」。這不僅限制了跳躍高度，也是造成髕骨肌腱炎（跳躍膝）的元兇。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、想跳得更高，到底要練「哪一條肌肉」最有用？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是一個核心問題：貢獻最大（股四頭肌）不代表訓練它「投資報酬率最高」。<br>
+    運動醫學與肌力體能專家的共識是：<strong style="color: #2dd4bf;">要大幅增加垂直起跳高度，訓練「臀大肌（後側動力鏈）」是最有用的。</strong>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">為什麼是臀大肌？</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">未開發的巨大潛能：</strong>現代人久坐的習慣導致「臀肌失憶症」，多數人在起跳時根本沒有把臀部的力量發揮出來。喚醒並強化臀大肌，等於為你的起跳多裝上一顆全新的渦輪引擎。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7432749/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">力量傳遞的樞紐：</strong>強壯的臀大肌與核心肌群，能確保起跳時軀幹的穩定，讓力量完美傳導，不會在脊椎彎曲的過程中流失。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12875222/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">轉移效應最佳：</strong>根據 2024 年的統合分析，針對臀部與大腿後側進行大重量阻力訓練（如深蹲、硬舉），配合增強式訓練，能產生最顯著的垂直起跳高度提升。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12131147/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、各肌肉起跳貢獻與訓練效益比較表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>肌肉群</th>
+          <th>負責關節動作</th>
+          <th>起跳總做功貢獻度</th>
+          <th>優先訓練效益(增加高度)</th>
+          <th style="text-align: center; white-space: nowrap;">建議訓練動作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>臀大肌 (Glutes)</td>
+          <td>髖關節伸展</td>
+          <td>約 30% - 40%</td>
+          <td>極高 (開發潛力最大)</td>
+          <td style="text-align: center;">深蹲、硬舉、臀推、壺鈴擺盪</td>
+        </tr>
+        <tr>
+          <td>股四頭肌 (Quadriceps)</td>
+          <td>膝關節伸展</td>
+          <td>約 40% - 50%</td>
+          <td>高 (提供基礎推進力)</td>
+          <td style="text-align: center;">前蹲舉、保加利亞分腿蹲</td>
+        </tr>
+        <tr>
+          <td>小腿三頭肌 (Calves)</td>
+          <td>踝關節蹠屈</td>
+          <td>約 15% - 20%</td>
+          <td>中等 (作為力量傳遞樞紐)</td>
+          <td style="text-align: center;">連續踝跳、增強式跳躍、提踵</td>
+        </tr>
+        <tr>
+          <td>核心肌群 (Core)</td>
+          <td>軀幹穩定</td>
+          <td>間接傳導力矩</td>
+          <td>高 (減少力量流失)</td>
+          <td style="text-align: center;">死蟲式、負重農夫走路、棒式</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、其他影響起跳的關鍵因素
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 手臂擺動</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    不要忘記上半身！研究顯示，正確且有力的手臂擺動，可以讓你的垂直起跳高度增加 10% 到 15%。手臂向上的擺動不僅能將身體重心上提，還能增加下蹲時對地面的「額外下壓力」，進一步活化牽張縮短週期。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5260592/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 核心穩定度與跟腱剛性</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    核心如果軟弱無力，大腿發出的力量就會在脊椎彎曲時被吸收掉，無法完全傳達給上半身。同時，小腿阿基里斯腱的「剛性」也至關重要；剛性越好的跟腱，越能像一條拉緊的粗橡皮筋，在瞬間爆發出驚人的彈力。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6349784/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 六、常見三大誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「只要每天狂跳，總有一天會跳得很高」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 彈跳力需要強大的最大肌力作為基礎。如果你深蹲連自己的體重都蹲不起來，每天狂跳只會讓你的膝蓋髕骨肌腱發炎（跳躍膝），而不會讓你飛得更高。阻力訓練與增強式訓練必須交替進行。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12131147/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[4]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「想跳高，練小腿（墊腳尖）最重要」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 小腿三頭肌的確很重要，但它在起跳中的做功僅佔 15-20%。小腿的作用是「傳遞力量」而非「創造絕大多數力量」。真正決定高度的主引擎是臀部與大腿前側。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/35135826/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[5]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「重量訓練會讓我變遲鈍、跳不高」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>迷思！</strong> 奧運舉重選手的垂直起跳高度往往不輸給籃球員。只要在重量訓練後，安排適當的「力量轉換」訓練，如增強式跳躍，大重量反而能顯著提高你的發力率。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12593465/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、預防策略：避免跳躍膝與跟腱炎
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">在追求高度的同時，必須兼顧組織的耐受度：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">落地機制的訓練：</strong>跳得高也要懂得安全降落。落地時必須有意識地「屈髖、屈膝」，利用臀部與大腿肌肉作為避震器，切忌直腿落地，否則極易造成前十字韌帶斷裂或半月板損傷。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">肌腱負荷管理：</strong>髕骨肌腱炎（跳躍膝）是因「微小創傷累積速度 > 組織修復速度」所引起。增加跳躍訓練量時，每週增幅不應超過 10%。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8221808/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">注重後側動力鏈平衡：</strong>如果你深蹲很強但硬舉很弱，強烈建議加強大腿後側肌群（Hamstrings）的離心訓練（如北歐式肌力訓練），以預防股四頭肌過強帶來的膝關節不穩定。
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：為什麼我深蹲可以蹲很重，但還是跳不高？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      深蹲重代表你有很好的「最大絕對肌力」，但起跳看重的是「發力率（RFD）」。起跳只有短短的 0.2~0.3 秒，你必須訓練神經系統在這個短時間內召喚出深蹲的力量。建議在訓練菜單中加入負重跳躍或增強式訓練來轉換力量。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：腳踝扭傷過會影響彈跳力嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      會。反覆的腳踝扭傷會導致腳踝外側韌帶鬆弛與本體感覺下降，進而影響起跳時力量傳遞的穩定性。這也是為什麼復健科強烈建議扭傷後必須進行本體感覺與肌力重建訓練。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：什麼是增強式訓練（Plyometrics）？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      增強式訓練是一種利用肌肉「先被拉長再瞬間收縮」的反射機制來產生爆發力的訓練法，例如：深跳（Depth Jump）、連續跨步跳等。它是提升牽張縮短週期（SSC）效率的最強武器。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12593465/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：經常打籃球跳躍，膝蓋下方會痛是正常的嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不正常。膝蓋正下方的疼痛極度可能是髕骨肌腱炎（跳躍膝）的警訊。這表示你的肌腱承受了超過其修復能力的負荷，或者你的起跳落地機制過度依賴大腿前側。應及早就醫進行超音波檢查並調整訓練。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8221808/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：我該如何評估自己需不需要練臀大肌？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      一個簡單的測試是：在起跳與落地時，你的膝蓋是否會嚴重內夾？落地時聲音是否很大且膝蓋前推？如果是，通常代表你的臀大肌無力穩定骨盆與股骨，導致身體產生代償。加強臀部訓練絕對會有所幫助。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    想要在球場上飛得更高，不僅需要汗水，更需要科學的支撐。了解下肢三關節的生物力學，喚醒沉睡的臀大肌，並結合阻力與增強式訓練，才是打破彈跳力天花板的關鍵。
+  </p><br>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    身為一位復健科醫師，同時也是擁有 ACE-CPT 國際私人教練證照的籃球愛好者，我非常清楚在球場上想要「挑戰極限」的渴望。
+    <strong style="color: #1e293b;">最好的訓練，永遠建立在健康的身體之上。</strong>
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：如果你覺得自己總是跳不高、落地時膝蓋隱隱作痛，或是深受跳躍膝所苦，不要讓代償模式限制了你的滯空時間。預約林醫師的門診，結合醫學超音波診斷與 ACE-CPT 體適能專業，為你找出起跳的瓶頸。
+    </p>
+
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約運動醫學評估
+    </a>
+</div>
+</div>
+  `,
+  "referencesHtml": `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Kons, R.L., et al. (2025). The effects of plyometric training on athletic' jump performance: a systematic review and meta-analysis. Frontiers in Sports and Active Living. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12593465/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12593465</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Liu, Y., et al. (2021). Biomechanical Characteristics of Vertical Jumping of Preschool Children in China Based on Motion Capture and Simulation Modeling. Healthcare. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8706245/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8706245</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Boren, K., et al. (2020). Effects of a Gluteal Muscles Specific Exercise Program on the Vertical Jump. International Journal of Environmental Research and Public Health. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7432749/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7432749</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Perez, M., et al. (2024). Effects of Physical Training Programs on Healthy Athletes' Vertical Jump Height: A Systematic Review With Meta-Analysis. Journal of Sports Science & Medicine. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12131147/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12131147</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Kotsifaki, A., et al. (2022). Single leg vertical jump performance identifies knee function deficits at return to sport after ACL reconstruction in male athletes. British Journal of Sports Medicine. <a href="https://pubmed.ncbi.nlm.nih.gov/35135826/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMID: 35135826</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Guo, Z., et al. (2026). The relationship between physical fitness and drop vertical jump biomechanics in male college basketball players. PeerJ. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12875222/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12875222</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Peng, H.T., et al. (2018). Biomechanical Comparisons of One-Legged and Two-Legged Running Vertical Jumps. Journal of Human Kinetics. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6231348/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 6231348</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Lees, A., et al. (2017). Understanding how an arm swing enhances performance in the vertical jump. Journal of Biomechanics. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5260592/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 5260592</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Zhang, Y., et al. (2021). Risk Factors for Patellar Tendinopathy in Sports: A Systematic Review. Orthopaedic Journal of Sports Medicine. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8221808/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8221808</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Wu, X., et al. (2019). Ankle stiffness and jump performance. Journal of Sports Sciences. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6349784/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 6349784</a>
+  </span>
+</li>  </ol>
+</div>
+`
+},
+
+
 {
   id: 'tissue-healing-time-analysis',
   title: '身體受傷多久會好？肌肉、肌腱、韌帶、骨頭修復全解析',
@@ -15240,7 +16849,8 @@ id: 'tennis-stroke-biomechanics',
   contentHtml: `<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
   <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-    NSAID（非類固醇消炎藥）是全球使用最廣泛的藥物之一，包含阿斯匹靈、布洛芬（ibuprofen）、萘普生（naproxen）等常見藥品。然而，約有 0.5–5% 的一般民眾對NSAID存在過敏或不耐受反應，在氣喘患者中比例更高達 10–20%。<sup><a href="https://doi.org/10.1111/all.13527" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup> NSAID過敏並非單一機轉，主要分為「藥理性交叉反應（非免疫性）」與「免疫性過敏反應」兩大類，兩者致病機制截然不同，對應的臨床處理策略也大相逕庭。<sup><a href="https://doi.org/10.1016/j.jaci.2018.09.004" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup> 遺傳因素確實在部分反應類型中扮演一定角色，但並非絕對決定因素。對某一種NSAID過敏，不代表所有止痛藥都不能使用——關鍵在於釐清過敏類型，找到安全的替代方案。<sup><a href="https://doi.org/10.1111/cea.13448" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[3]</a></sup>
+    NSAID（非類固醇消炎藥）是全球使用最廣泛的藥物之一，包含阿斯匹靈、布洛芬（ibuprofen）、萘普生（naproxen）等常見藥品。然而，約有 0.5–5% 的一般民眾對NSAID存在過敏或不耐受反應，在氣喘患者中比例更高達 10–20%。<sup><a href="https://doi.org/10.1111/all.13527" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup> <br><br>
+    NSAID過敏並非單一機轉，主要分為「藥理性交叉反應（非免疫性）」與「免疫性過敏反應」兩大類，兩者致病機制截然不同，對應的臨床處理策略也大相逕庭。<sup><a href="https://doi.org/10.1016/j.jaci.2018.09.004" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup> 遺傳因素確實在部分反應類型中扮演一定角色，但並非絕對決定因素。對某一種NSAID過敏，不代表所有止痛藥都不能使用——關鍵在於釐清過敏類型，找到安全的替代方案。<sup><a href="https://doi.org/10.1111/cea.13448" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[3]</a></sup>
   </p>
 </div>
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">

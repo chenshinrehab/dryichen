@@ -46,6 +46,12 @@ export const sportsInjuriesData = [
         description: '受傷後「要休息多久？」是復健科門診最常見的問題。身體各種組織的修復速度，取決於其血液循環能力與細胞代謝率。肌肉擁有豐富血流，通常數週內可修復；而肌腱與韌帶血流較差，常需要數月時間重建；關節軟骨更因缺乏血管，自我修復能力極低。本文將從醫學角度，帶您一次看懂五大類組織的修復時程，並破除「完全靜養」的傳統迷思。',
         image: '/images/news/article/tissue-healing-analysis.webp',
       },
+                              {
+        slug: 'regenerative-injections-comparison-prp-plt-amniotic-bmc',
+        title: 'PRP、PLT、羊膜、BMC 哪種好？再生注射療法2026完全指南',
+        description: '深度對比復健科四大再生療法：PRP、PLT、羊膜注射與 BMC 骨髓濃縮液。解析為何年長者的 PRP 效果可能打折扣，以及如何根據自身細胞活性、病況嚴重程度與預算，選出最有效的修復方案。',
+        image: '/images/news/article/regenerative-injections-comparison.webp',
+      },
 
                   {
         slug: 'pain-medication-analysis',
@@ -116,6 +122,12 @@ export const sportsInjuriesData = [
         title: '吃降血脂藥全身痠痛？解析哪種血脂藥容易引發肌肉痛？',
         description: '深度剖析常見血脂藥（史他汀類藥物）引發肌肉痠痛的原因。實證醫學揭露親脂性與親水性血脂藥在肌肉副作用上的差異，並由林醫師提供臨床換藥與復健的科學改善策略。',
         image: '/images/news/article/statin-induced-myalgia1.webp',
+      },
+                  {
+        slug: 'steroid-types-sports-medicine',
+        title: '止痛的類固醇 vs. 增肌的類固醇：運動醫學完全解析，差別究竟在哪裡？',
+        description: '許多人聽到「類固醇」就心生恐懼，但其實類固醇有兩大截然不同的種類：用於消炎止痛的「皮質類固醇」與用於增肌的「合成代謝類固醇」。本文以運動醫學觀點，用你看得懂的語言，深度解析兩者的機制、用途、風險，並澄清常見迷思。',
+        image: '/images/news/article/steroid-types-sports-medicine.webp',
       },
     ]
   },
@@ -294,6 +306,13 @@ export const sportsInjuriesData = [
         title: '捕捉皮克敏的終點是復健科？當心成為「痛痛皮友」！',
         description: '玩皮克敏 Bloom 也要注意健康！解析常見的烏龜頸、媽媽手、網球肘、足底筋膜炎等手遊與走路症候群，由復健科醫師提供專業建議，讓你無痛種花。',
         image: '/images/news/article/pikmin.webp',
+
+      },
+                          {
+        slug: 'vertical-jump-biomechanics',
+        title: '跳得更高！影響垂直起跳高度的關鍵肌肉與科學訓練法',
+        description: '從運動醫學與生物力學角度分析，垂直起跳高度取決於下肢關節的協同發力與「牽張縮短週期」效率。研究指出，膝關節伸肌（股四頭肌）與髖關節伸肌（臀大肌）在起跳過程中貢獻了最大的做功。然而，若要突破瓶頸、有效增加起跳高度，針對「臀大肌」與後側動力鏈進行大重量阻力與增強式訓練，投資報酬率最高。本文將深入剖析起跳的科學原理，並提供實證有效的訓練與預防跳躍膝策略。',
+        image: '/images/news/article/vertical-jump-biomechanics.webp',
 
       },
                      {
