@@ -35,7 +35,7 @@ id: 'regenerative-injections-comparison-prp-plt-amniotic-bmc',
 <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
   <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-    PRP（高濃度血小板血漿）、PLT（凍晶）、羊膜注射與BMC（骨髓濃縮液）是目前復健科與骨科最常見的四大再生注射療法。它們的共同目標是利用生長因子與幹細胞，促進受損組織的自我修復，但原理、來源、適用族群與費用各有不同。  <br> <br>
+    PRP（高濃度血小板血漿）、PLT（凍晶）、羊膜注射與BMC（骨髓濃縮液）是目前復健科與骨科最常見的四大再生注射療法，宸新皆有PRP、PLT、羊膜與BMC治療且堅持超音波導引注射。它們的共同目標是利用生長因子與幹細胞，促進受損組織的自我修復，但原理、來源、適用族群與費用各有不同。  <br> <br>
     值得注意的是：<strong>PLT雖然釋出的生長因子濃度更高，但因製程中血小板已被破壞，少了細胞本身參與修復的活性</strong>，適合特定病況而非萬能首選；<strong>羊膜注射則因來自健康捐贈者，不受患者自身細胞品質影響，特別適合年長、有慢性病或自身細胞功能較差的患者。</strong>本文以實證為基礎，系統性說明四種療法的機制、優缺點、臨床選擇與費用，並引用最新文獻，幫助病人與家屬做出知情的醫療決策。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10245083/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/37351894/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>
@@ -479,7 +479,7 @@ id: 'regenerative-injections-comparison-prp-plt-amniotic-bmc',
   <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
 
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
-    PRP、PLT、羊膜與BMC，代表著再生醫學從「基礎」到「進階」的不同層次。它們不是相互競爭的對手，而是針對不同病患、不同病況提供的精準工具。<strong style="color: #1e293b;">最適合的療法，不是最貴的，也不是最新的，而是最符合您自身細胞條件、病況嚴重程度與治療目標的那一種。</strong>
+    宸新皆有PRP、PLT、羊膜與BMC治療且堅持超音波導引注射，而這些治療代表著再生醫學從「基礎」到「進階」的不同層次。它們不是相互競爭的對手，而是針對不同病患、不同病況提供的精準工具。<strong style="color: #1e293b;">最適合的療法，不是最貴的，也不是最新的，而是最符合您自身細胞條件、病況嚴重程度與治療目標的那一種。</strong>
   </p> <br>
 
   <p style="color: #475569; font-size: 1.05rem;">
