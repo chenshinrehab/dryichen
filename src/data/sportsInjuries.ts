@@ -113,7 +113,7 @@ export const sportsInjuriesData = [
         slug: 'prolotherapy-dextrose-prp',
         title: '增生療法全解析：高濃度葡萄糖 vs. PRP，哪個更適合你？',
         description: '用白話的方式解釋增生療法的原理，並深入比較高濃度葡萄糖（Dextrose Prolotherapy）與富血小板血漿（PRP）的機制、效果與適應症。實證研究帶你了解這兩種再生療法的差異，幫助你做出更明智的治療選擇。',
-        image: '/images/news/article/prolotherapy-dextrose-prp.webp',
+        image: '/images/news/article/prolotherapy-dextrose-prp1.webp',
       },
 
                                     {
@@ -156,6 +156,12 @@ export const sportsInjuriesData = [
         title: '大太陽下如何保護自己？運動醫學教你正確防曬、認識防曬油原理與挑選指南',
         description: '從運動醫學觀點深度解析戶外大太陽下的防曬策略。實證研究揭露長期曝曬的疾病風險，包含皮膚癌、熱中暑、白內障，並詳細說明防曬油的物理與化學原理、SPF與PA的正確解讀、如何使用與挑選適合運動員的防曬產品。',
         image: '/images/news/article/sunscreen-outdoor-sports-guide.webp',
+      },      
+                  {
+        slug: 'vertical-vibration-health-benefits',
+        title: '垂直律動椅真的有效嗎？醫學解析：腸胃、心肺、骨骼好處',
+        description: '全身垂直律動（WBVV）源自太空醫學，被證實能提升骨密度、改善微血管循環並促進腸胃蠕動。本文從復健與醫學觀點，深度剖析垂直律動對三大系統的益處，並揭露為何「水平或不規則震動」反而會產生剪力，對脊椎與關節造成不可逆的傷害。同時詳列適應症與絕對禁忌症。',
+        image: '/images/news/article/wbvv-cover.webp',
       },
 
 
@@ -186,6 +192,12 @@ export const sportsInjuriesData = [
         title: '顧關節保健品全解析：UC-II、葡萄糖胺、鈣片、玻尿酸等誰有效?',
         description: '市售顧關節保健品種類繁多，本文以醫學觀點逐一解析 UC-II、葡萄糖胺、軟骨素、鈣片與口服玻尿酸的臨床證據。深入探討免疫調節機制、建議劑量、適用族群及常見迷思，幫助你科學選擇真正需要的成分，避免盲目花大錢。',
         image: '/images/news/article/joint-supplements-guide.webp',
+      },
+                                    {
+        slug: 'meat-nutrition-analysis',
+        title: '吃對肉才能長肌肉！白肉與紅肉的醫學大解析：牛、豬、雞、魚怎麼挑？',
+        description: '紅肉與白肉到底差在哪？牛肉、豬肉、雞肉、魚肉的營養成分有何不同？本文從復健與運動醫學觀點，針對兒童、健身族群、高齡者提供最科學的吃肉指南，教你遠離肌少症。',
+        image: '/images/news/article/meat-nutrition-analysis.webp',
       },
                               {
         slug: 'iv-drips-truth-unveiled',

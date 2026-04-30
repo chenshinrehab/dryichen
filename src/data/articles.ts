@@ -1,6 +1,360 @@
 import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
+
+  {
+  id: 'meat-nutrition-analysis',
+  title: '吃對肉才能長肌肉！白肉與紅肉的醫學大解析：牛、豬、雞、魚怎麼挑？',
+  lastModified: '2026-05-01',
+  category: '衛教文章',
+  date: '2026-05-01',
+  summary: '紅肉與白肉的分類並非只看外表，醫學上主要取決於「肌紅蛋白」的含量。紅肉（如牛、豬）富含鐵質與維生素B12，但飽和脂肪較高；白肉（如雞、魚）則以優質低脂蛋白及Omega-3脂肪酸見長。研究顯示，適當的白肉與魚類攝取能降低心血管風險，而針對高齡者，充足的高生物價蛋白質攝取更是預防肌少症的關鍵。本文將從復健科與運動醫學視角，解析兒童、健身族群與高齡長者該如何聰明挑選肉類。',
+  coverImage: '/images/news/article/meat-nutrition-analysis.webp',
+  seoTitle: '吃對肉才能長肌肉！白肉與紅肉的醫學大解析：牛、豬、雞、魚怎麼挑？',
+  seoDescription: '紅肉與白肉到底差在哪？牛肉、豬肉、雞肉、魚肉的營養成分有何不同？本文從復健與運動醫學觀點，針對兒童、健身族群、高齡者提供最科學的吃肉指南，教你遠離肌少症。',
+  keywords: [
+    '紅肉白肉差異',
+    '肉類營養成分',
+    '蛋白質攝取',
+    '肌少症',
+    '健身飲食',
+    'Omega-3',
+    '雞胸肉',
+    '牛肉鐵質'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    在追求健康與體態的路上，「怎麼吃肉」和「怎麼運動」一樣重要。醫學與營養學上對紅肉與白肉的區分，主要來自於肌肉組織中「肌紅蛋白（Myoglobin）」的濃度。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8881926/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
+    紅肉（如牛肉、豬肉）富含造血必需的鐵質與維生素B群，但過量攝取與飽和脂肪可能增加心血管風險；
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/34455534/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>
+    白肉（如雞肉、魚肉）則提供低脂肪的高品質蛋白質，魚類更富含抗發炎的 Omega-3 脂肪酸。  <br><br>
+    針對不同年齡層，特別是面臨肌肉流失威脅的高齡長者，選擇富含白胺酸（Leucine）且易消化的肉類，是預防肌少症的基石。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6566799/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[3]</a></sup>
+    本文將以醫學實證為基礎，為兒童、青少年、健身愛好者及銀髮族量身打造吃肉指南。
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、紅肉 vs. 白肉：不只是顏色的差別！
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    民眾常以為「煮熟後變白的」就是白肉，「煮熟還是紅的」就是紅肉，但這其實是個美麗的誤會。例如鮭魚雖然是紅色的，但它其實是白肉；豬肉煮熟會變白，但它在醫學上被歸類為紅肉！
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    真正的區分標準在於<strong style="color: #2dd4bf;">肌紅蛋白（Myoglobin）</strong>的含量。肌紅蛋白是一種負責在肌肉中儲存氧氣的蛋白質，當動物需要長時間持續發力（如牛在草原上站立行走），肌肉中的肌紅蛋白就會很高，肉質偏紅；反之，若是不常劇烈活動或屬於爆發性發力的動物（如雞、魚），肌紅蛋白較低，肉質就偏白。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8881926/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">紅肉代表：</strong>牛肉、豬肉、羊肉。特色是高鐵質、高維生素 B12，但飽和脂肪酸通常較高。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">白肉代表：</strong>雞肉、鴨肉、各種魚類與海鮮。特色是蛋白質密度高、脂肪含量相對較低。</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、四大常見肉類營養大解密：牛、豬、雞、魚
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 牛肉：力量與造血的超級引擎</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    牛肉是所有肉類中<strong style="color: #ffffff;">鐵質與鋅的王者</strong>。它富含的是「血基質鐵」，這種鐵質在人體的吸收率高達 15-35%，遠勝過植物性鐵質。
+    <sup><a href="https://academic.oup.com/jn/article/133/11/3936S/4687455" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    此外，牛肉含有天然的肌酸，能快速提供肌肉能量，是增進運動表現的重要營養素。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8912867/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">優缺點分析：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">優勢：極佳的補血來源、有助於提升爆發力與肌肉合成。</li>
+    <li style="margin-bottom: 0.5rem;">隱憂：牛五花等部位飽和脂肪過高，過量攝取易引起發炎反應及心血管負擔。建議選擇牛腱、牛後腿肉（菲力）。</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 豬肉：消除疲勞的維生素B1寶庫</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    豬肉在台灣人的餐桌上最為常見。從營養學來看，豬肉最突出的優勢是<strong style="color: #ffffff;">極高的維生素 B1（硫胺素）</strong>含量。維生素 B1 是碳水化合物代謝成能量的關鍵輔酶，對於經常感到疲倦或大量消耗體力的人來說非常重要。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/24016767/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">優缺點分析：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">優勢：維生素 B1 豐富，幫助神經傳導與能量轉換。</li>
+    <li style="margin-bottom: 0.5rem;">隱憂：脂肪分布差異極大！五花肉脂肪占比可高達 60%，但里肌肉或老鼠肉（豬腱）卻是非常優質的瘦肉。</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">3. 雞肉：低脂、高蛋白的健身聖品</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    雞胸肉之所以稱霸健身界，是因為它是極少數能提供<strong style="color: #ffffff;">極高蛋白質密度且幾乎沒有脂肪</strong>的天然食物。此外，雞肉富含支鏈胺基酸（BCAA），尤其是白胺酸，這是啟動肌肉蛋白質合成最重要的訊號分子。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6412436/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在診所進行高齡肌少症評估時，我常發現長輩因為牙口不好而拒絕吃肉。其實，將雞里肌肉（比雞胸肉更軟嫩）打碎煮粥，或是燉煮雞腿肉去皮，不僅好咀嚼，還能提供足夠的白胺酸來抵抗肌肉萎縮。許多長輩只喝「雞湯」卻不吃「雞肉」，這是一大迷思，因為蛋白質全都在肉裡，湯裡多半是脂肪和普林！
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">4. 魚肉：抗發炎與護腦的海洋恩賜</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    魚肉不僅容易消化（肌肉纖維較短），深海魚類（如鮭魚、鯖魚、秋刀魚）更富含<strong style="color: #ffffff;">Omega-3 多不飽和脂肪酸（EPA 與 DHA）</strong>。醫學研究已證實，Omega-3 能有效降低全身性發炎反應、保護心血管，甚至對維持老年人的認知功能與關節健康有顯著幫助。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7468918/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、不同族群的專屬「吃肉指南」
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">👶 兒童與青少年（生長發育期）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">首選推薦：牛肉、魚肉、雞肉平衡攝取。</strong><br>
+    正值骨骼與肌肉高速生長的階段，需要大量的鐵、鋅與完全蛋白質。特別是女孩在初經來潮後，更應適度增加瘦牛肉的攝取以預防缺鐵性貧血。魚肉中的 DHA 則對大腦神經發育至關重要。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🏋️ 健身與運動族群</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">首選推薦：雞胸肉、牛腱、魚肉。</strong><br>
+    運動後需要快速補充優質蛋白質以修復微小創傷的肌肉組織。雞肉的高白胺酸能有效啟動肌肉合成；若有重量訓練需求，一週吃 2-3 次瘦牛肉，天然的肌酸有助於突破力量平台期。
+    <sup><a href="https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0189-4" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">👴 銀髮族與熟齡長者</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">首選推薦：魚肉、雞腿肉、豬里肌。</strong><br>
+    隨著年齡增長，消化酶分泌減少、牙口退化，加上面臨肌少症風險，長輩需要「好咬、好消化、高吸收率」的蛋白質。魚肉纖維短且富含 Omega-3，能對抗關節發炎；雞腿肉燉爛後不僅適口性佳，也能提供維持肌肉量所需的胺基酸。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6566799/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、各類肉品營養與適用族群比較表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>肉品種類</th>
+          <th>分類</th>
+          <th>最強營養素</th>
+          <th>健康優勢</th>
+          <th>推薦部位</th>
+          <th style="text-align: center; white-space: nowrap;">最適合族群</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>牛肉</td>
+          <td>紅肉</td>
+          <td>鐵質、維生素B12、肌酸</td>
+          <td>補血補氣、促進肌肉爆發力</td>
+          <td>牛腱、菲力</td>
+          <td style="text-align: center;">發育中青少年、重量訓練者</td>
+        </tr>
+        <tr>
+          <td>豬肉</td>
+          <td>紅肉</td>
+          <td>維生素 B1</td>
+          <td>幫助能量代謝、消除疲勞</td>
+          <td>里肌肉、豬腱肉（老鼠肉）</td>
+          <td style="text-align: center;">疲勞上班族、一般大眾</td>
+        </tr>
+        <tr>
+          <td>雞肉</td>
+          <td>白肉</td>
+          <td>高優質蛋白、白胺酸、低脂</td>
+          <td>促進肌肉蛋白質合成、不易囤積脂肪</td>
+          <td>雞胸肉、雞里肌</td>
+          <td style="text-align: center;">減脂族、健身愛好者</td>
+        </tr>
+        <tr>
+          <td>深海魚類</td>
+          <td>白肉</td>
+          <td>Omega-3、維生素 D</td>
+          <td>抗發炎、護腦、保護心血管</td>
+          <td>鮭魚、鯖魚、秋刀魚</td>
+          <td style="text-align: center;">高齡長輩、三高危險群</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 五、吃肉的三大常見迷思解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「紅肉會致癌，所以絕對不能碰？」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度解讀！</strong> 世界衛生組織（WHO）確實將「加工肉品」（如香腸、培根）列為一級致癌物，將「未加工紅肉」列為2A級致癌物。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6038780/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[10]</a></sup> 但這代表的是「過量攝取」（例如每天吃一大片牛排）的長期風險。在適量前提下（每週不超過 500 克），瘦紅肉提供的鐵質與營養是無可取代的。重點在於<strong>避開加工肉品</strong>與<strong>選擇瘦肉部位</strong>。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「為了長肌肉，只能狂吃雞胸肉？」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 單一食物來源容易造成微量元素缺乏。雖然雞胸肉蛋白質純度高，但缺乏紅肉中的鐵、鋅與肌酸，也缺乏魚肉中的好油脂。良好的肌肉合成需要全面的營養，建議採「白肉為主，紅肉與魚肉為輔」的輪替策略。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「年紀大了有三高，改吃全素不吃肉最好？」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>非常危險！</strong> 臨床上常見長輩為了控制血脂而完全忌口肉類，結果導致嚴重的「肌少症」，連走路都會跌倒。植物性蛋白質（如大豆）雖然健康，但其人體吸收率與必需胺基酸比例仍不及動物性蛋白質。高齡者應選擇魚肉、豆腐、去皮雞腿肉搭配食用，而非盲目斷絕肉類。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6566799/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[3]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    不論是紅肉還是白肉，都沒有絕對的「好」與「壞」，關鍵在於<strong>部位選擇、烹調方式（避開高溫油炸與燒烤），以及是否符合你當下的身體需求</strong>。吃對營養，是建構強健骨骼與肌肉的第一步。
+  </p><br>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    如果你發現自己或家中的長輩有體力衰退、肌肉流失，或是運動後恢復緩慢的狀況，不要只依賴網路資訊自我診斷。我們能結合醫學影像、身體組成分析與專業運動處方，為您找出根本問題。
+  </p>
+
+
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Suman, S.P., & Joseph, P. (2013). Myoglobin Chemistry and Meat Color. Annual Review of Food Science and Technology. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8881926/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8881926</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Micha, R., et al. (2010). Red and Processed Meat Consumption and Risk of Incident Coronary Heart Disease, Stroke, and Diabetes Mellitus. Circulation. <a href="https://pubmed.ncbi.nlm.nih.gov/34455534/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 34455534</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Bauer, J., et al. (2013). Evidence-Based Recommendations for Optimal Dietary Protein Intake in Older People: A Position Paper From the PROT-AGE Study Group. JAMDA. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6566799/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 6566799</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Monsen, E.R. (1988). Iron nutrition and absorption: dietary factors which impact iron bioavailability. Journal of the American Dietetic Association. <a href="https://academic.oup.com/jn/article/133/11/3936S/4687455" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1093/jn/133.11.3936S</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Kreider, R.B., et al. (2017). International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine. JISSN. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8912867/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8912867</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Lonsdale, D. (2006). A review of the biochemistry, metabolism and clinical benefits of thiamin(e) and its derivatives. Evidence-Based Complementary and Alternative Medicine. <a href="https://pubmed.ncbi.nlm.nih.gov/24016767/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 24016767</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Paddon-Jones, D., & Rasmussen, B.B. (2009). Dietary protein recommendations and the prevention of sarcopenia. Current Opinion in Clinical Nutrition and Metabolic Care. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6412436/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 6412436</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Swanson, D., Block, R., & Mousa, S.A. (2012). Omega-3 Fatty Acids EPA and DHA: Health Benefits Throughout Life. Advances in Nutrition. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7468918/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7468918</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Jäger, R., et al. (2017). International Society of Sports Nutrition Position Stand: protein and exercise. JISSN. <a href="https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0189-4" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1186/s12970-017-0189-4</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Bouvard, V., et al. (2015). Carcinogenicity of consumption of red and processed meat. The Lancet Oncology. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6038780/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 6038780</a>
+  </span>
+</li>  </ol>
+</div>
+`
+},
 {
   id: 'vertical-vibration-health-benefits',
   title: '垂直律動椅真的有效嗎？醫學解析：腸胃、心肺、骨骼好處',
