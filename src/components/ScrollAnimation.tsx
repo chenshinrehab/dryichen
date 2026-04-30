@@ -29,16 +29,26 @@ export default function ScrollAnimation() {
         });
       },
       { 
-        threshold: 0.01, // 稍微增加閾值避免極端邊緣觸發
-        rootMargin: '0px 0px -5% 0px' // 調整邊距，確保稍微進入視區才動，提升感知效能
+        threshold: 0.001, // 極小閾值，只要露出一像素就觸發
+        // 改為正值 10%：代表元素還沒進入視窗、距離底部還有 10% 距離時就提早開始動畫
+        // 這樣可以解決「首屏元件不顯示」的問題
+        rootMargin: '0px 0px 10% 0px' 
       }
     );
 
-    // 延遲偵測時間微調：確保 React 組件掛載完成
+    // 縮短延遲偵測時間，讓首屏元件更快反應
     const timer = setTimeout(() => {
       const elements = document.querySelectorAll('.animate-on-scroll');
-      elements.forEach((el) => observer.observe(el));
-    }, 150);
+      elements.forEach((el) => {
+        // 額外檢查：如果元件已經在視窗內，直接顯示 (解決 Next.js 路由跳轉後的載入問題)
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          el.classList.add('is-visible');
+        } else {
+          observer.observe(el);
+        }
+      });
+    }, 50); // 從 150ms 縮短至 50ms
 
     return () => {
       clearTimeout(timer);
@@ -53,17 +63,10 @@ export default function ScrollAnimation() {
           ============================================================ */
       .animate-on-scroll {
         opacity: 0;
-        /* 使用 3D 加速，強制瀏覽器開啟獨立分層 (Layer) */
-        transform: translate3d(0, 15px, 0); 
-        
-        /* 🔧 優化：僅針對 transform 與 opacity 進行動畫，這是「合成動畫」，不占主執行緒 */
+        transform: translate3d(0, 20px, 0); 
         transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        
-        /* 🔧 優化：移除全域 will-change，避免記憶體負擔。
-           瀏覽器在看到 translate3d 時會自動優化。 */
-        
-        backface-visibility: hidden; /* 防止動畫結束時文字閃爍 */
-        pointer-events: none; /* 防止未進場前擋住點擊 */
+        backface-visibility: hidden;
+        pointer-events: none;
       }
 
       /* ============================================================
@@ -93,10 +96,9 @@ export default function ScrollAnimation() {
       }
 
       /* ============================================================
-          ✨ 5. 手機版效能禁區 (修正 LCP 評分)
+          ✨ 5. 手機版與效能優化
           ============================================================ */
       @media (max-width: 767px) {
-        /* 如果使用者開啟「減少動態效果」，我們直接取消動畫 */
         @media (prefers-reduced-motion: reduce) {
           .animate-on-scroll {
             opacity: 1;
@@ -105,7 +107,11 @@ export default function ScrollAnimation() {
           }
         }
 
-        /* 🔧 極致優化：關閉手機版複雜濾鏡，節省 GPU 功耗 */
+        /* 修正 LCP，縮短手機版位移距離 */
+        .animate-on-scroll {
+          transform: translate3d(0, 10px, 0);
+        }
+
         .backdrop-blur, 
         .backdrop-blur-md, 
         .backdrop-blur-lg {
