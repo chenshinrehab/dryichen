@@ -4,6 +4,128 @@ import { newsList, getNewsById } from '@/data/news'
 
 export const sportsInjuriesData = [
 
+
+
+   {
+    category: 'problem',
+    title: '診間病患常見疑問',
+    description: '統整病患在診間常見疑問，一次幫大家解惑',
+    image: '/images/sportinjury/9.webp',
+    injuries: [
+                              {
+        slug: 'tissue-healing-time-analysis',
+        title: '身體受傷多久會好？肌肉、肌腱、韌帶、骨頭修復全解析',
+        description: '受傷後「要休息多久？」是復健科門診最常見的問題。身體各種組織的修復速度，取決於其血液循環能力與細胞代謝率。肌肉擁有豐富血流，通常數週內可修復；而肌腱與韌帶血流較差，常需要數月時間重建；關節軟骨更因缺乏血管，自我修復能力極低。本文將從醫學角度，帶您一次看懂五大類組織的修復時程，並破除「完全靜養」的傳統迷思。',
+        image: '/images/news/article/tissue-healing-analysis.webp',
+      },
+            {
+        slug: 'orthopedics-vs-rehabilitation',
+        title: '骨科 vs 復健科：完整比較指南｜哪個才是你的最佳選擇？',
+        description: '骨科偏向外科手術，以X光評估硬組織；復健科以超音波評估軟組織，強調非手術的精準注射與功能重建。本文比較兩科強項、診所差異，教導民眾根據症狀正確選擇，少走冤枉路。',
+        image:  '/images/news/article/orthopedics-vs-rehabilitation.webp',
+      },
+                  {
+        slug: 'pain-medication-analysis',
+        title: '疼痛就吃止痛藥？解析止痛藥與肌肉鬆弛劑的真相與風險',
+        description: '深度剖析非類固醇消炎止痛藥（NSAIDs）、肌肉鬆弛劑、乙醯胺酚（普拿疼）的藥理機制與長期使用風險。實證研究揭露止痛藥只是「關掉警報」而非治療根源，並說明何時需要尋找疼痛的真正成因。',
+        image: '/images/news/article/pain-medication-analysis.webp',
+      },
+            {
+        slug: 'nsaid-hypersensitivity',
+        title: 'NSAID（非類固醇消炎藥）過敏全解析：為什麼有人吃止痛藥會過敏？',
+        description: '深度剖析NSAID過敏的發生比例、致病機轉、遺傳因素與交叉反應問題。實證研究揭露哪些NSAID最容易引發過敏，並提供過敏後的疼痛處理替代策略。',
+        image: '/images/news/article/drug.webp',
+      },
+                     {
+        slug: 'lumbar-disc-injection-analysis',
+        title: '椎間盤突出免開刀？揭開「椎間盤內注射」的真!!',
+        description: '深度剖析腰椎椎間盤突出接受PRP、羊膜、BMAC等椎間盤內注射的實際療效。實證研究揭露注射無法產生「撐開」神經壓迫的物理效果，傳統腰椎牽引與徒手治療仍是核心，而針對周邊韌帶與小面關節的輔助注射可能更具臨床價值。',
+        image: '/images/news/article/lumbar-injection.webp',
+
+      },
+            {
+        slug: 'cervical-disc-herniation-surgery-analysis',
+        title: '頸椎椎間盤突出要開刀嗎？人工椎間盤置換全解析',
+        description: '頸椎椎間盤突出常造成肩頸疼痛、手麻與無力。多數患者可透過復健獲得改善，但若出現神經進行性受損，則需考慮手術。本文以醫學觀點深入解析人工椎間盤置換術（CDA）與傳統融合手術（ACDF）的優缺點、術後後遺症及台灣自費價格，並探討保守治療與手術的選擇時機。',
+        image: '/images/news/article/cervical-surgery.webp',
+
+      },
+               {
+        slug: 'lumbar-disc-herniation-surgery',
+        title: '腰椎椎間盤突出要開刀??  手術抉擇全解析',
+        description: '腰椎椎間盤突出是造成坐骨神經痛與下背痛的主因之一。本文深入剖析傳統手術與脊椎微創手術（內視鏡/顯微鏡）的優缺點、術後沾黏等後遺症，以及台灣健保與自費價格大公開。實證醫學指出，若復健後症狀改善，人體具備吸收突出的自癒能力；但出現馬尾症候群等紅旗徵兆時，則應盡速評估手術。',
+        image: '/images/news/article/lumbar-disc-herniation-surgery.webp',
+
+      },
+            {
+        slug: 'scoliosis-causes-treatment',
+        title: '脊椎側彎完整指南：成因、角度變化與治療選項全解析',
+        description: '脊椎側彎不只是外觀問題！深入解析特發性、先天性與退化性側彎的成因，Cobb角度是否能變回來，以及從觀察到手術的完整治療比較。',
+        image: '/images/news/article/scoliosis-treatment.webp',
+      },
+
+      {
+        slug: 'frozen-shoulder-and-diabetes',
+        title: '五十肩與糖尿病的深度關聯：為什麼糖尿病患者更容易罹患五十肩？',
+        description: '糖尿病患者五十肩風險高出5倍！深入解析AGEs糖化機制、血糖控制與五十肩的關係，以及完整治療選項比較。',
+        image: '/images/news/article/frozen-shoulder-diabetes.webp',
+      },
+                  {
+        slug: 'precocious-puberty-taiwan-depth-analysis',
+        title: '台灣兒童性早熟全解析：定義、成因與家長的避雷指南',
+        description: '深度剖析台灣兒童性早熟的醫學定義與在地成因。從骨齡超前、環境荷爾蒙干擾到飲食誤區，提供全方位的預防對策，幫助家長守護孩子的長高黃金期。',
+        image: '/images/news/article/precocious-puberty.webp',
+      },
+            {
+        slug: 'statin-induced-myalgia-analysis',
+        title: '吃降血脂藥全身痠痛？解析哪種血脂藥容易引發肌肉痛？',
+        description: '深度剖析常見血脂藥（史他汀類藥物）引發肌肉痠痛的原因。實證醫學揭露親脂性與親水性血脂藥在肌肉副作用上的差異，並由林醫師提供臨床換藥與復健的科學改善策略。',
+        image: '/images/news/article/statin-induced-myalgia1.webp',
+      },
+                  {
+        slug: 'steroid-types-sports-medicine',
+        title: '止痛的類固醇 vs. 增肌的類固醇：運動醫學完全解析，差別究竟在哪裡？',
+        description: '許多人聽到「類固醇」就心生恐懼，但其實類固醇有兩大截然不同的種類：用於消炎止痛的「皮質類固醇」與用於增肌的「合成代謝類固醇」。本文以運動醫學觀點，用你看得懂的語言，深度解析兩者的機制、用途、風險，並澄清常見迷思。',
+        image: '/images/news/article/steroid-types-sports-medicine.webp',
+      },
+    ]
+  },
+
+     {
+    category: 'medical-updates',
+    title: '最新醫療資訊',
+    description: '林醫師持續更新精進醫療知識及技術，分享新的治療方式',
+    image: '/images/sportinjury/10.webp',
+    injuries: [
+                        {
+        slug: 'ge-logiq-totus-ultrasound',
+        title: '診所正式引進 GE LOGIQ Totus——全球高階的肌肉骨骼超音波機',
+        description: '診所正式引進旗艦等級 GE LOGIQ Totus 肌肉骨骼超音波。擁有超高解析度影像與多項智慧輔助功能，讓超音波導引注射更精準、更安全。',
+        image:  '/images/news/article/gelotus/2.webp',
+      },
+                              {
+        slug: 'regenerative-injections-comparison-prp-plt-amniotic-bmc',
+        title: 'PRP、PLT、羊膜、BMC 哪種好？再生注射療法2026完全指南',
+        description: '深度對比復健科四大再生療法：PRP、PLT、羊膜注射與 BMC 骨髓濃縮液。解析為何年長者的 PRP 效果可能打折扣，以及如何根據自身細胞活性、病況嚴重程度與預算，選出最有效的修復方案。',
+        image: '/images/news/article/regenerative-injections-comparison.webp',
+      },
+                                          {
+        slug: 'prolotherapy-dextrose-prp',
+        title: '增生療法全解析：高濃度葡萄糖 vs. PRP，哪個更適合你？',
+        description: '用白話的方式解釋增生療法的原理，並深入比較高濃度葡萄糖（Dextrose Prolotherapy）與富血小板血漿（PRP）的機制、效果與適應症。實證研究帶你了解這兩種再生療法的差異，幫助你做出更明智的治療選擇。',
+        image: '/images/news/article/prolotherapy-dextrose-prp.webp',
+      },
+
+                                    {
+        slug: 'ligament-ha-vs-prp',
+        title: '韌帶玻尿酸全解析!與PRP怎麼選？',
+        description: '韌帶玻尿酸與PRP是修復關節與軟組織的兩大利器，但作用機制大不相同。實證研究揭露，PRP透過生長因子促進組織再生，適合慢性病變；玻尿酸則能提供潤滑、抑制沾黏，對急性扭傷有奇效。本文將系統性剖析兩者的優缺點，幫助您找出最適合的治療方案。',
+        image: '/images/news/article/ligament-ha-vs-prp.webp',
+      },
+    ]
+  },
+
+
      {
     category: 'daycare',
     title: '日常生活醫學知識',
@@ -28,49 +150,15 @@ export const sportsInjuriesData = [
         description: '診間每天都會看到很多落枕、閃到腰的病患。對人類來說，像貓咪那樣躺一小時，起來一定會脖子痛腰痛。但為什麼貓咪就不會呢？這其實跟牠們獨特的身體構造有關！',
         image: '/images/news/article/cat.webp',
       },
-            {
-        slug: 'scoliosis-causes-treatment',
-        title: '脊椎側彎完整指南：成因、角度變化與治療選項全解析',
-        description: '脊椎側彎不只是外觀問題！深入解析特發性、先天性與退化性側彎的成因，Cobb角度是否能變回來，以及從觀察到手術的完整治療比較。',
-        image: '/images/news/article/scoliosis-treatment.webp',
-      },
+
                   {
         slug: 'sunscreen-outdoor-sports-guide',
         title: '大太陽下如何保護自己？運動醫學教你正確防曬、認識防曬油原理與挑選指南',
         description: '從運動醫學觀點深度解析戶外大太陽下的防曬策略。實證研究揭露長期曝曬的疾病風險，包含皮膚癌、熱中暑、白內障，並詳細說明防曬油的物理與化學原理、SPF與PA的正確解讀、如何使用與挑選適合運動員的防曬產品。',
         image: '/images/news/article/sunscreen-outdoor-sports-guide.webp',
       },
-                        {
-        slug: 'tissue-healing-time-analysis',
-        title: '身體受傷多久會好？肌肉、肌腱、韌帶、骨頭修復全解析',
-        description: '受傷後「要休息多久？」是復健科門診最常見的問題。身體各種組織的修復速度，取決於其血液循環能力與細胞代謝率。肌肉擁有豐富血流，通常數週內可修復；而肌腱與韌帶血流較差，常需要數月時間重建；關節軟骨更因缺乏血管，自我修復能力極低。本文將從醫學角度，帶您一次看懂五大類組織的修復時程，並破除「完全靜養」的傳統迷思。',
-        image: '/images/news/article/tissue-healing-analysis.webp',
-      },
-                              {
-        slug: 'regenerative-injections-comparison-prp-plt-amniotic-bmc',
-        title: 'PRP、PLT、羊膜、BMC 哪種好？再生注射療法2026完全指南',
-        description: '深度對比復健科四大再生療法：PRP、PLT、羊膜注射與 BMC 骨髓濃縮液。解析為何年長者的 PRP 效果可能打折扣，以及如何根據自身細胞活性、病況嚴重程度與預算，選出最有效的修復方案。',
-        image: '/images/news/article/regenerative-injections-comparison.webp',
-      },
 
-                  {
-        slug: 'pain-medication-analysis',
-        title: '疼痛就吃止痛藥？解析止痛藥與肌肉鬆弛劑的真相與風險',
-        description: '深度剖析非類固醇消炎止痛藥（NSAIDs）、肌肉鬆弛劑、乙醯胺酚（普拿疼）的藥理機制與長期使用風險。實證研究揭露止痛藥只是「關掉警報」而非治療根源，並說明何時需要尋找疼痛的真正成因。',
-        image: '/images/news/article/pain-medication-analysis.webp',
-      },
-            {
-        slug: 'nsaid-hypersensitivity',
-        title: 'NSAID（非類固醇消炎藥）過敏全解析：為什麼有人吃止痛藥會過敏？',
-        description: '深度剖析NSAID過敏的發生比例、致病機轉、遺傳因素與交叉反應問題。實證研究揭露哪些NSAID最容易引發過敏，並提供過敏後的疼痛處理替代策略。',
-        image: '/images/news/article/drug.webp',
-      },
-      {
-        slug: 'frozen-shoulder-and-diabetes',
-        title: '五十肩與糖尿病的深度關聯：為什麼糖尿病患者更容易罹患五十肩？',
-        description: '糖尿病患者五十肩風險高出5倍！深入解析AGEs糖化機制、血糖控制與五十肩的關係，以及完整治療選項比較。',
-        image: '/images/news/article/frozen-shoulder-diabetes.webp',
-      },
+
 
     ]
   },
@@ -111,24 +199,7 @@ export const sportsInjuriesData = [
         description: '深度剖析精製糖如何透過胰島素拮抗、瘦素分泌與性早熟機制，干擾孩童生長激素分泌並導致生長板提早閉合。實證研究揭露手搖飲與甜點對最終身高的致命影響，並提供科學飲食策略。',
         image: '/images/news/article/sugar-height-growth-analysis.webp',
       },
-            {
-        slug: 'precocious-puberty-taiwan-depth-analysis',
-        title: '台灣兒童性早熟全解析：定義、成因與家長的避雷指南',
-        description: '深度剖析台灣兒童性早熟的醫學定義與在地成因。從骨齡超前、環境荷爾蒙干擾到飲食誤區，提供全方位的預防對策，幫助家長守護孩子的長高黃金期。',
-        image: '/images/news/article/precocious-puberty.webp',
-      },
-            {
-        slug: 'statin-induced-myalgia-analysis',
-        title: '吃降血脂藥全身痠痛？解析哪種血脂藥容易引發肌肉痛？',
-        description: '深度剖析常見血脂藥（史他汀類藥物）引發肌肉痠痛的原因。實證醫學揭露親脂性與親水性血脂藥在肌肉副作用上的差異，並由林醫師提供臨床換藥與復健的科學改善策略。',
-        image: '/images/news/article/statin-induced-myalgia1.webp',
-      },
-                  {
-        slug: 'steroid-types-sports-medicine',
-        title: '止痛的類固醇 vs. 增肌的類固醇：運動醫學完全解析，差別究竟在哪裡？',
-        description: '許多人聽到「類固醇」就心生恐懼，但其實類固醇有兩大截然不同的種類：用於消炎止痛的「皮質類固醇」與用於增肌的「合成代謝類固醇」。本文以運動醫學觀點，用你看得懂的語言，深度解析兩者的機制、用途、風險，並澄清常見迷思。',
-        image: '/images/news/article/steroid-types-sports-medicine.webp',
-      },
+
     ]
   },
 
@@ -315,27 +386,7 @@ export const sportsInjuriesData = [
         image: '/images/news/article/vertical-jump-biomechanics.webp',
 
       },
-                     {
-        slug: 'lumbar-disc-injection-analysis',
-        title: '椎間盤突出免開刀？揭開「椎間盤內注射」的真!!',
-        description: '深度剖析腰椎椎間盤突出接受PRP、羊膜、BMAC等椎間盤內注射的實際療效。實證研究揭露注射無法產生「撐開」神經壓迫的物理效果，傳統腰椎牽引與徒手治療仍是核心，而針對周邊韌帶與小面關節的輔助注射可能更具臨床價值。',
-        image: '/images/news/article/lumbar-injection.webp',
 
-      },
-            {
-        slug: 'cervical-disc-herniation-surgery-analysis',
-        title: '頸椎椎間盤突出要開刀嗎？人工椎間盤置換全解析',
-        description: '頸椎椎間盤突出常造成肩頸疼痛、手麻與無力。多數患者可透過復健獲得改善，但若出現神經進行性受損，則需考慮手術。本文以醫學觀點深入解析人工椎間盤置換術（CDA）與傳統融合手術（ACDF）的優缺點、術後後遺症及台灣自費價格，並探討保守治療與手術的選擇時機。',
-        image: '/images/news/article/cervical-surgery.webp',
-
-      },
-               {
-        slug: 'lumbar-disc-herniation-surgery',
-        title: '腰椎椎間盤突出要開刀??  手術抉擇全解析',
-        description: '腰椎椎間盤突出是造成坐骨神經痛與下背痛的主因之一。本文深入剖析傳統手術與脊椎微創手術（內視鏡/顯微鏡）的優缺點、術後沾黏等後遺症，以及台灣健保與自費價格大公開。實證醫學指出，若復健後症狀改善，人體具備吸收突出的自癒能力；但出現馬尾症候群等紅旗徵兆時，則應盡速評估手術。',
-        image: '/images/news/article/lumbar-disc-herniation-surgery.webp',
-
-      },
 
     ]
   },
@@ -358,12 +409,7 @@ export const sportsInjuriesData = [
         description: '深度解析醫學系與電機系的生存現狀：從矽谷千萬年薪工程師到醫院住院醫師的工時壓力，探討天賦牆、財富跑道及中年失業風險，為猶豫中的學子提供最真實的職場建議。',
         image:  '/images/news/article/doctorvsengineer1.webp',
       },
-                  {
-        slug: 'ge-logiq-totus-ultrasound',
-        title: '診所正式引進 GE LOGIQ Totus——全球高階的肌肉骨骼超音波機',
-        description: '診所正式引進旗艦等級 GE LOGIQ Totus 肌肉骨骼超音波。擁有超高解析度影像與多項智慧輔助功能，讓超音波導引注射更精準、更安全。',
-        image:  '/images/news/article/gelotus/2.webp',
-      },
+
                         {
         slug: 'pikmin-bloom-elderly-rehab',
         title: '當皮克敏走進阿媽的生活：五千步的約定，與找回笑容的魔法 ✨',
@@ -376,12 +422,7 @@ export const sportsInjuriesData = [
         description: '從菲力到翼板，每塊牛排都藏著一堂解剖課。復健科醫師帶你用肌肉地圖讀懂牛排菜單。',
         image:  '/images/news/article/steak-muscle-anatomy.webp',
       },
-      {
-        slug: 'orthopedics-vs-rehabilitation',
-        title: '骨科 vs 復健科：完整比較指南｜哪個才是你的最佳選擇？',
-        description: '骨科偏向外科手術，以X光評估硬組織；復健科以超音波評估軟組織，強調非手術的精準注射與功能重建。本文比較兩科強項、診所差異，教導民眾根據症狀正確選擇，少走冤枉路。',
-        image:  '/images/news/article/orthopedics-vs-rehabilitation.webp',
-      },
+
 
     ]
   },
