@@ -105,7 +105,7 @@ export default function NewsListPage() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
             {/* Header 區塊 */}
-            <div className="mb-10 animate-on-scroll">
+            <div className="mb-10 animate-in fade-in duration-700">
                 <div className="text-left mb-4">
                     <Link href="/about" className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors group text-sm font-medium">
                         <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 
