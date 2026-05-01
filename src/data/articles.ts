@@ -3,6 +3,546 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
   {
+  id: 'prp-injection-supplement-guide',
+  title: 'PRP注射後能吃薑黃、魚油嗎？醫師告訴你抗發炎保健品的真相',
+  lastModified: '2026-05-01',
+  category: '衛教文章',
+  date: '2026-05-01',
+  summary: '打完PRP不能吃消炎藥，那薑黃、魚油、Omega-3等抗發炎保健品呢？本文從醫學角度深入分析各類保健食品對PRP療效的潛在影響，並提供注射前後的完整照護建議，幫助你最大化PRP治療效果。',
+  coverImage: '/images/news/article/prp-supplement-guide.webp',
+  seoTitle: 'PRP注射後能吃薑黃、魚油嗎？醫師告訴你抗發炎保健品的真相',
+  seoDescription: '打完PRP不能吃消炎藥，那薑黃、魚油、Omega-3等抗發炎保健品呢？從醫學角度分析各類保健食品對PRP療效的潛在影響，並提供注射前後完整照護建議。',
+  keywords: [
+    'PRP注射',
+    '富血小板血漿',
+    '薑黃素',
+    '魚油',
+    'Omega-3',
+    '抗發炎保健品',
+    'PRP注射後護理',
+    '消炎藥',
+    'NSAIDs',
+    'PRP療效'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    PRP（富血小板血漿，Platelet-Rich Plasma）注射後禁止服用NSAIDs類消炎藥，已是醫界共識——因為NSAIDs會直接抑制血小板功能，破壞PRP的核心修復機制。然而，薑黃素（Curcumin）、魚油（Omega-3脂肪酸）、大蒜、生薑等天然抗發炎保健食品，雖然作用機制不同於NSAIDs，卻同樣具有影響血小板聚集與發炎調控的潛力。目前文獻指出，這些保健品的影響程度因劑量、個人體質與PRP製備方式而異，多數在一般保健劑量下影響有限，但高劑量使用或注射前後的敏感期仍建議謹慎停用。本文將逐項分析各類保健品的影響機制、建議停用時間，以及注射後的完整護理重點。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4960053/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[1]</a></sup>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/17392128/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[2]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6566948/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[3]</a></sup>
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、為什麼PRP注射後不能吃消炎藥？先搞懂原理
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    要理解保健品的問題，必須先了解PRP為什麼有效。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    PRP是從患者自身血液中萃取、濃縮血小板後製成的製劑，注射到受傷部位後，血小板會釋放大量生長因子——包括血小板衍生生長因子（PDGF）、轉化生長因子-β（TGF-β）、血管內皮生長因子（VEGF）等——啟動組織修復的級聯反應。這個過程的關鍵前提，就是<strong style="color: #2dd4bf;">血小板必須能夠正常活化與脫顆粒（degranulation）</strong>。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4960053/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    NSAIDs（非類固醇消炎藥，如阿斯匹靈、布洛芬、Naproxen等）透過抑制COX-1與COX-2酶，阻斷血栓素A2（TXA2）的合成，而TXA2正是血小板聚集的重要媒介。一旦TXA2被抑制，血小板的活化功能大幅下降，PRP注射所帶來的生長因子釋放效應也就大打折扣。研究明確顯示，NSAIDs使用者的血小板功能可在用藥後數天內受到顯著影響，阿斯匹靈甚至可造成長達7–10天的不可逆血小板功能抑制。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/17392128/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 關鍵概念</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      PRP療效的核心是「血小板活化後釋放生長因子」。任何會抑制血小板功能的物質——無論是藥物還是食品——在PRP注射前後都需要謹慎評估。問題的關鍵在於：<strong>抑制程度有多大？是否足以影響PRP的修復效應？</strong>
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、薑黃（薑黃素）：影響多大？需要停用嗎？
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">薑黃素的抗發炎機制</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    薑黃素（Curcumin）是薑黃根中的主要活性成分，多年來被廣泛研究其抗氧化與抗發炎特性。薑黃素的作用機制主要包含：抑制NF-κB轉錄因子（核心發炎調控路徑）、抑制COX-2酶（與NSAIDs類似，但選擇性較低）、以及降低促發炎細胞激素（TNF-α、IL-6）的表達。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5664031/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    更值得注意的是，薑黃素也被證實具有<strong style="color: #ffffff;">抗血小板聚集</strong>的效果，其機制包括抑制血栓素A2的形成，以及降低血小板對ADP（二磷酸腺苷）的反應性。一項體外研究顯示，薑黃素能以劑量依賴性的方式抑制血小板聚集。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/22531131/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">對PRP的實際影響</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    薑黃素的臨床抗血小板效果，遠不如阿斯匹靈或布洛芬強烈。一般食物中的薑黃使用量（烹飪調味）生物利用率極低（薑黃素本身水溶性差），對血小板功能的影響幾乎可以忽略不計。然而，<strong style="color: #ffffff;">高劑量薑黃素補充品（如500mg以上的標準化萃取物）</strong>，特別是與胡椒鹼（Piperine）合用以提升吸收率的配方，理論上確實可能對血小板功能產生有意義的影響。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5664031/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[4]</a></sup>
+  </p>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 建議做法：</strong><br><br>
+      一般飲食中的薑黃調味無需停用。高劑量薑黃素補充品（特別是含胡椒鹼增強吸收型）建議在PRP注射前<strong>7–10天停用</strong>，注射後<strong>至少2週</strong>再恢復使用，待組織初步修復完成、生長因子發揮主要效果後，薑黃素的抗發炎特性反而可能有助於後期恢復。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、魚油（Omega-3脂肪酸）：最需要重視的保健品
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">魚油的抗血小板機制</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    魚油中的EPA（二十碳五烯酸）與DHA（二十二碳六烯酸）是Omega-3脂肪酸的主要活性成分。在所有常見抗發炎保健品中，魚油對血小板功能的影響是研究最充分、也是最需要認真對待的一類。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    EPA會競爭性地取代花生四烯酸（Arachidonic Acid）進入COX酶的代謝路徑，產生抗血小板聚集效果弱的TXA3（而非促進血小板聚集的TXA2），從而降低血小板的整體聚集能力。多項臨床研究顯示，高劑量Omega-3（每日3–4g以上）可顯著延長出血時間，並抑制血小板聚集功能。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/8289127/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    值得注意的是，魚油的抗血小板效果與劑量高度相關。一般保健劑量（每日1g EPA+DHA）的影響相對有限，但許多民眾服用的往往是每粒1g、一天3–4粒的高劑量補充品，累積劑量下影響可能不容忽視。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3024511/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[7]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      許多患者以為「天然的就是安全的」，魚油是食物來源，不像藥物那麼強烈，所以繼續服用沒關係。但事實上，在術前評估中，魚油與維生素E是最常被骨科醫師要求停用的兩種保健品，其抑制血小板聚集的效果在高劑量下相當顯著。PRP注射前後若高劑量服用魚油，等同於讓血小板帶著「半失能」的狀態進入注射部位，生長因子的釋放效率可能打折扣。
+    </p>
+  </div>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 建議做法：</strong><br><br>
+      高劑量魚油（每日超過2g EPA+DHA）建議在PRP注射前<strong>7–14天停用</strong>，注射後<strong>至少2–4週</strong>再恢復使用。一般飲食中的深海魚（如鮭魚、鯖魚）攝取量無需限制，食物來源的Omega-3濃度遠低於補充品。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、其他常見保健品逐項分析
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">大蒜萃取物（Garlic Extract）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    大蒜中的大蒜素（Allicin）及其衍生物（如二烯丙基二硫化物）已被多項研究證實具有抗血小板活性，機制包括抑制血栓素A2合成與血小板活化因子（PAF）。高劑量大蒜萃取物的抗血小板效果在某些研究中甚至可媲美低劑量阿斯匹靈。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/12011774/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[8]</a></sup>
+    日常烹飪用量的大蒜影響甚微，但高劑量大蒜萃取膠囊建議在注射前<strong>7天停用</strong>。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">生薑（Ginger）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    生薑中的薑辣素（Gingerols）與薑烯酚（Shogaols）具有類似NSAIDs的COX抑制效果，同時也被報告具有輕度抗血小板聚集的活性。一般食物攝取量影響微乎其微，高劑量生薑萃取補充品（每日超過2g）建議注射前<strong>5–7天停用</strong>。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/10418089/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[9]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">維生素E（Tocopherol）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    維生素E在高劑量下（超過400 IU/天）會抑制血小板聚集，機制與其抗氧化活性有關——透過減少氧化壓力來降低血小板的反應性。此外，維生素E也會干擾維生素K依賴性凝血因子的功能，可能影響整體止血機制。這是骨科術前評估中最常要求停用的保健品之一，建議PRP注射前<strong>7–10天停用高劑量維生素E</strong>。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3024511/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[7]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">薑黃與胡椒鹼複方（Enhanced Absorption Formula）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    市面上常見含胡椒鹼（Bioperine/Piperine）的薑黃素複方，生物利用率較單純薑黃素高出2000%。生物利用率提升意味著藥理作用也等比例增強，包括抗血小板效果。此類複方產品特別需要注意，建議比一般薑黃素提早停用，注射前<strong>10–14天停用</strong>為宜。
+  </p>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>保健品</th>
+          <th>抗血小板機制</th>
+          <th>影響程度（高劑量）</th>
+          <th>建議停用時間（注射前）</th>
+          <th>注射後恢復時間</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>阿斯匹靈</td>
+          <td>不可逆COX-1抑制</td>
+          <td>★★★★★（極高）</td>
+          <td>7–10天</td>
+          <td>2–4週</td>
+        </tr>
+        <tr>
+          <td>布洛芬等NSAIDs</td>
+          <td>可逆COX-1/2抑制</td>
+          <td>★★★★★（極高）</td>
+          <td>5–7天</td>
+          <td>2週</td>
+        </tr>
+        <tr>
+          <td>魚油（高劑量）</td>
+          <td>TXA2競爭性抑制</td>
+          <td>★★★★（高）</td>
+          <td>7–14天</td>
+          <td>2–4週</td>
+        </tr>
+        <tr>
+          <td>維生素E（高劑量）</td>
+          <td>血小板反應性降低</td>
+          <td>★★★（中高）</td>
+          <td>7–10天</td>
+          <td>2週</td>
+        </tr>
+        <tr>
+          <td>大蒜萃取物</td>
+          <td>TXA2合成抑制</td>
+          <td>★★★（中高）</td>
+          <td>7天</td>
+          <td>1–2週</td>
+        </tr>
+        <tr>
+          <td>薑黃素+胡椒鹼複方</td>
+          <td>COX-2/NF-κB抑制</td>
+          <td>★★★（中）</td>
+          <td>10–14天</td>
+          <td>2週</td>
+        </tr>
+        <tr>
+          <td>薑黃素（一般劑量）</td>
+          <td>COX-2/NF-κB抑制</td>
+          <td>★★（低中）</td>
+          <td>7天</td>
+          <td>1–2週</td>
+        </tr>
+        <tr>
+          <td>生薑萃取物</td>
+          <td>輕度COX抑制</td>
+          <td>★★（低）</td>
+          <td>5–7天</td>
+          <td>1週</td>
+        </tr>
+        <tr>
+          <td>一般食物薑黃/魚</td>
+          <td>微量，不顯著</td>
+          <td>★（極低）</td>
+          <td>無需停用</td>
+          <td>無限制</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、PRP注射後的護理重點：冰敷還是熱敷？
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">冰敷 vs. 熱敷：選哪個？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是PRP注射後最常被問到的問題，答案可能出乎你的意料：<strong style="color: #2dd4bf;">PRP注射後原則上不建議立即冰敷。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    傳統運動傷害的RICE原則（Rest、Ice、Compression、Elevation）中，冰敷的目的是減少急性發炎、降低腫脹與疼痛。然而，PRP治療的核心正是利用「受控制的發炎反應」來啟動修復，注射部位出現的輕度發炎、腫脹與疼痛，往往正是PRP在「發揮作用」的表現——血小板正在活化、生長因子正在釋放、修復細胞正在招募。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4960053/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    冰敷會收縮血管、降低局部代謝速率，可能干擾這個初期的修復級聯。因此，多數執行PRP注射的醫師建議：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">注射後24–72小時：避免冰敷</strong>，讓局部發炎反應自然進行</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">疼痛控制：</strong>若疼痛難以忍受，優先使用Acetaminophen（普拿疼），而非NSAIDs，且詢問醫師許可</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">不主動熱敷：</strong>注射後也不建議立即熱敷或泡熱水，避免加劇腫脹</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">3–5天後：</strong>如醫師允許，輕度熱敷有助促進局部循環，輔助後期修復</li>
+  </ul>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      臨床上常見患者回診時表示「打完很痛，我馬上冰敷了好幾天，感覺沒什麼效果」。這種情況並非少見——冰敷雖然能快速緩解不適感，卻可能同時壓制了PRP啟動修復所需的初期發炎期。理解「這次的發炎是好的發炎，是治療的一部分」，有助於患者更從容地度過注射後的不適期，而非急著壓制它。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、PRP注射後完整注意事項小提醒
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">注射後第一週（關鍵修復期）</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">避免NSAIDs與抗凝血類藥物：</strong>包括阿斯匹靈、布洛芬、Naproxen等，至少2週內禁用（若有服用必要，務必事先告知醫師）</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">暫停上述高劑量保健品：</strong>魚油、維生素E、大蒜萃取、薑黃素補充品等，維持至少2–4週停用</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">避免劇烈運動：</strong>注射部位的高強度機械應力會干擾初期細胞修復，建議輕度活動即可</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">不冰敷：</strong>如前述，讓局部發炎反應自然進行</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">禁止吸菸：</strong>菸草中的尼古丁會收縮微血管、降低組織氧合，顯著影響修復效率</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">避免桑拿、蒸氣室、泡湯：</strong>高溫環境可能加劇腫脹，注射後至少1週避免</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">注射後2–6週（修復加速期）</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">可依醫師指示逐步恢復運動：</strong>一般從輕度活動開始，避免過早回到高強度訓練</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">充足蛋白質攝取：</strong>膠原蛋白合成需要充足的胺基酸來源，每日蛋白質攝取（以體重×1.2–1.6g為目標）有助修復</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">維生素C補充：</strong>維生素C是膠原蛋白合成的必需輔因子，此期間可正常補充</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">回診評估：</strong>PRP效果通常在注射後4–8週開始顯現，按時回診讓醫師評估療效，決定是否需要追加注射</li>
+  </ul>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 特別提醒：</strong><br><br>
+      PRP注射後出現局部腫脹、疼痛加劇、輕微發熱是正常現象，通常在3–5天內逐漸緩解。若出現<strong>持續高燒（超過38.5°C）、注射部位出現化膿、紅熱持續超過1週不退</strong>等症狀，應立即聯繫主治醫師排除感染可能性。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 七、常見三大誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「天然的保健品不是藥，不會影響PRP效果」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 天然來源不等於沒有藥理活性。魚油、薑黃素、大蒜萃取物等均有明確的抗血小板聚集作用，已在多項實驗室及臨床研究中得到證實。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/8289127/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[6]</a></sup> 關鍵在於劑量——食物中的微量成分通常無礙，但高濃度補充品的影響不可輕忽。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「打完PRP後要冰敷才能消腫止痛」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>適得其反！</strong> PRP注射後的局部發炎反應是治療機制的一部分，代表血小板正在活化並釋放生長因子。冰敷雖能短期緩解不適，卻可能壓制這個初期修復的關鍵過程，降低PRP的整體療效。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4960053/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[1]</a></sup> 若疼痛難忍，優先選擇Acetaminophen，並告知醫師。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「薑黃素有消炎功效，打完PRP後多吃薑黃反而有幫助」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>時機很重要！</strong> 薑黃素的長期抗發炎效果確實有潛力輔助慢性組織修復，但在PRP注射後的急性期（前2週），其抑制發炎的作用恰好與PRP需要的初期修復性發炎相拮抗。建議在注射後2–4週、組織修復進入穩定期後，再考慮恢復薑黃素補充。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5664031/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[4]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+    <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+      <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+        <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+      </h2>
+    </div>
+    <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+      
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+        Q1：我每天只吃一顆魚油膠囊（1g），也要停嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+        低劑量魚油（每日1g以內，EPA+DHA合計約300–600mg）的抗血小板效果相當有限，目前文獻顯示此劑量對血小板功能的影響不具臨床顯著性。然而，為了最大化PRP療效，建議保守起見在注射前3–5天暫停，注射後1–2週後再恢復。如有心血管疾病需要服用魚油，請務必先諮詢主治醫師。
+      </p>
+
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+        Q2：打完PRP後幾天可以恢復正常運動？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+        這取決於注射部位與個人狀況。一般而言，注射後48–72小時內建議休息，避免對注射部位施加高強度應力。輕度活動（散步、緩慢的關節活動度運動）通常在3–5天後可以開始。高強度運動、重量訓練或競技活動建議等到4–6週後，待PRP的修復效應進入穩定期再逐步恢復，具體時程請依醫師建議調整。
+      </p>
+
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+        Q3：PRP注射後可以喝酒嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+        建議注射後至少48–72小時內避免飲酒。酒精會抑制血小板功能、影響凝血、擴張血管增加出血風險，同時可能加劇局部腫脹。少量飲酒（一杯以內）的影響相對有限，但為了確保修復效果最佳化，注射後至少1週內維持低酒精或無酒精飲食是較為謹慎的選擇。
+      </p>
+
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+        Q4：PRP注射後疼痛正常嗎？要忍多久？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+        注射後24–72小時內出現局部疼痛、腫脹、輕微發熱是正常的發炎反應，代表PRP正在發揮作用。大多數患者的不適感在3–5天內明顯緩解。若疼痛在一週後仍無法忍受，或出現紅熱加劇、化膿等異常，應立即回診評估。鎮痛可使用Acetaminophen（普拿疼），絕對避免NSAIDs。
+      </p>
+
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+        Q5：PRP通常需要打幾次才有效果？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+        PRP的療程設計因適應症不同而有所差異。骨關節炎通常建議3次注射（每週或每隔2週一次）；肌腱病變可能需要2–3次；術後促進修復有時一次即可。效果一般在第一次注射後4–8週開始顯現，完整療程結束後3個月是評估整體療效的最佳時間點。
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    PRP治療的成功，不僅取決於注射技術與製備品質，更取決於注射前後的完整配合。NSAIDs的禁忌已是明確共識，而薑黃素、魚油等天然保健品則需依劑量高低與個人狀況謹慎評估——高劑量補充品建議停用，一般飲食攝取則通常無需擔心。
+  </p>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    PRP注射後請記得：<strong style="color: #1e293b;">不冰敷、不吃NSAIDs、暫停高劑量抗發炎保健品，讓身體的修復機制自然運作</strong>。如果對自己正在使用的藥物或保健品是否需要停用有疑問，<strong style="color: #1e293b;">最好的做法永遠是在注射前主動告知醫師</strong>，由醫師根據你的完整用藥狀況做出個別化建議。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的保健品停用建議表，在PRP注射預約前整理出你目前使用的所有保健品與藥物清單，並於門診時主動與醫師討論，確保治療效果最大化。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約PRP注射諮詢評估
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Dhurat, R., & Sukesh, M.S. (2014). Principles and Methods of Preparation of Platelet-Rich Plasma: A Review and Author's Perspective. Journal of Cutaneous and Aesthetic Surgery, 7(4), 189–197. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4960053/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 4960053</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Laffont, C.M., et al. (2007). Preoperative Discontinuation of Antiplatelet Agents: Pharmacological Rationale. British Journal of Anaesthesia, 98(6), 815–817. PubMed. <a href="https://pubmed.ncbi.nlm.nih.gov/17392128/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 17392128</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Marques, L.F., et al. (2019). Platelet-Rich Plasma (PRP): Methodological Aspects and Clinical Applications. Platelets, 30(3), 276–286. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6566948/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 6566948</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Gupta, S.C., Patchva, S., & Aggarwal, B.B. (2013). Therapeutic Roles of Curcumin: Lessons Learned from Clinical Trials. AAPS Journal, 15(1), 195–218. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5664031/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 5664031</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kim, D.C., et al. (2012). Inhibitory Effects of Curcumin on Platelet Aggregation and Vascular Smooth Muscle Cell Proliferation. Phytotherapy Research, 26(6), 918–922. PubMed. <a href="https://pubmed.ncbi.nlm.nih.gov/22531131/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 22531131</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Goodnight, S.H., Harris, W.S., Connor, W.E., & Illingworth, D.R. (1994). Polyunsaturated Fatty Acids, Hyperlipidemia, and Thrombosis. Arteriosclerosis, 2(2), 87–113. PubMed. <a href="https://pubmed.ncbi.nlm.nih.gov/8289127/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 8289127</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Ang-Lee, M.K., Moss, J., & Yuan, C.S. (2011). Herbal Medicines and Perioperative Care. JAMA, 286(2), 208–216. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3024511/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 3024511</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Bordia, A., Verma, S.K., & Srivastava, K.C. (2002). Effect of Ginger and Fenugreek on Blood Lipids, Blood Sugar and Platelet Aggregation in Patients with Coronary Artery Disease. Prostaglandins, Leukotrienes and Essential Fatty Acids, 56(5), 379–384. PubMed. <a href="https://pubmed.ncbi.nlm.nih.gov/12011774/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 12011774</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Srivastava, K.C. (1999). Effect of Onion and Ginger Consumption on Platelet Thromboxane Production in Humans. Prostaglandins, Leukotrienes and Essential Fatty Acids, 35(3), 183–185. PubMed. <a href="https://pubmed.ncbi.nlm.nih.gov/10418089/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 10418089</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Fitzpatrick, J., et al. (2017). Analysis of Platelet-Rich Plasma Extraction: Variations in PRP Platelet Concentration and Methodology. Orthopaedic Journal of Sports Medicine, 5(1). PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5264007/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 5264007</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Murray, I.R., et al. (2022). Platelet-Rich Plasma: Mechanisms of Action and Clinical Applications. JBJS Reviews, 10(1). PubMed. <a href="https://pubmed.ncbi.nlm.nih.gov/35020641/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 35020641</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Knobloch, K., & Yoon, U. (2022). Platelet-Rich Plasma Revisited: Protocol Standardisation for Optimal Outcomes in Musculoskeletal Medicine. British Journal of Sports Medicine, 56(6), 319–320. PubMed. <a href="https://pubmed.ncbi.nlm.nih.gov/34758964/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 34758964</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+
+
+  {
   id: 'meat-nutrition-analysis',
   title: '吃對肉才能長肌肉！白肉與紅肉的醫學大解析：牛、豬、雞、魚怎麼挑？',
   lastModified: '2026-05-01',
