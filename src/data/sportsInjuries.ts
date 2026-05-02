@@ -25,6 +25,12 @@ export const sportsInjuriesData = [
         image:  '/images/news/article/orthopedics-vs-rehabilitation.webp',
       },
                   {
+        slug: 'ultrasound-vs-xray-guide',
+        title: '照X光還是超音波？復健科醫師教你秒懂差異與選擇時機？',
+        description: '受傷後到底該照X光還是超音波？本文用最生活化的「蓋房子」比喻，帶你秒懂為什麼X光看不到韌帶，而超音波卻能將軟組織看個仔細。結合實證醫學，解析這兩種門診最常見檢查的優缺點，以及在扭傷、發炎或懷疑骨折時的最佳選擇策略。',
+        image:  '/images/news/article/us-vs-xray-guide.webp',
+      },
+                  {
         slug: 'pain-medication-analysis',
         title: '疼痛就吃止痛藥？解析止痛藥與肌肉鬆弛劑的真相與風險',
         description: '深度剖析非類固醇消炎止痛藥（NSAIDs）、肌肉鬆弛劑、乙醯胺酚（普拿疼）的藥理機制與長期使用風險。實證研究揭露止痛藥只是「關掉警報」而非治療根源，並說明何時需要尋找疼痛的真正成因。',

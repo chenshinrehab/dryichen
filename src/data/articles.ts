@@ -2,6 +2,373 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
 
+
+{
+  id: 'ultrasound-vs-xray-guide',
+  title: '照X光還是超音波？復健科醫師教你秒懂差異與選擇時機',
+  lastModified: '2026-05-02',
+  category: '衛教文章',
+  date: '2026-05-02',
+  summary: '受傷後到底該照X光還是超音波？本文用最生活化的「蓋房子」比喻，帶你秒懂為什麼X光看不到韌帶，而超音波卻能將軟組織看個仔細。結合實證醫學，解析這兩種門診最常見檢查的優缺點，以及在扭傷、發炎或懷疑骨折時的最佳選擇策略。',
+  coverImage: '/images/news/article/us-vs-xray-guide.webp',
+  seoTitle: '照X光還是超音波？新竹復健科醫師教你秒懂差異與選擇時機',
+  seoDescription: '受傷後到底該照X光還是超音波？本文用最生活化的「蓋房子」比喻，帶你秒懂為什麼X光看不到韌帶，而超音波卻能將軟組織看個仔細。結合實證醫學，解析這兩種門診最常見檢查的優缺點。',
+  keywords: [
+    '門診超音波',
+    'X光檢查',
+    '韌帶撕裂',
+    '軟組織超音波',
+    '骨折',
+    '復健科',
+    '宸新復健科診所',
+    '新竹復健科',
+    '竹北復健科'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    在復健科門診中，「醫師，我腳扭到好痛，為什麼你幫我照超音波，不幫我照X光？」是患者最常提出的疑問之一。其實診間很多X光是沒必要的，是給病患照心安的。簡單來說，X光與超音波在肌肉骨骼疾病的診斷上扮演著互補的角色。根據近年的臨床指引，X光穿透力強，只有骨骼可以擋住，因此是診斷硬組織，包含骨折、關節退化與骨骼排列異常的首選；然而，韌帶、肌腱等軟組織無法擋住X光射線，在X光下幾乎是「隱形」的。
+    <sup><a href="https://doi.org/10.1016/j.crad.2013.01.018" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup><br><br>
+    相對地，高頻率骨骼肌肉超音波利用聲波反射原理，穿透力較X光差，才有辦法讓軟組織現形，不僅能清晰呈現軟組織的纖維結構，更具備「動態即時檢查」的優勢。
+    <sup><a href="https://doi.org/10.1148/radiol.11101652" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    研究證實，門診超音波在評估韌帶撕裂、肌腱炎及積水發炎時，其診斷準確率甚至可媲美核磁共振（MRI），且具備無輻射、機動性高的特點。
+    <sup><a href="https://doi.org/10.1007/s00256-016-2512-3" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    本文將用最淺顯易懂的比喻，為大家解答這兩大診斷利器的奧秘。
+  </p>
+</div>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、蓋房子比喻：看鋼筋還是看水電？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    在新竹、竹北這個快節奏的生活圈，不論是週末去打籃球、網球，或是帶著孩子去公園跑跳，偶爾難免會發生扭傷或摔倒的意外。來到診所，大家最關心的第一件事通常是：「我的骨頭有沒有斷？韌帶有沒有斷？」
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    要理解為什麼我們需要兩種不同的檢查工具，可以把我們的身體想像成一棟<strong style="color: #2dd4bf;">正在建造中的別墅</strong>：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.8rem;">
+      <strong style="color: #ffffff;">骨骼＝建築物的「鋼筋與水泥」：</strong>撐起整棟房子的主要結構，質地堅硬。
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <strong style="color: #ffffff;">韌帶與肌腱＝綁住鋼筋的「強力橡皮筋與粗麻繩」：</strong>負責連接骨頭與骨頭，或是將肌肉拉在骨頭上，讓關節能夠靈活活動。
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <strong style="color: #ffffff;">神經與血管＝屋子裡的「水電管線」：</strong>負責傳遞訊號與輸送養分。
+    </li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <strong style="color: #2dd4bf;">照X光，就像是使用「鋼筋透視鏡」。</strong>X光是一種電磁波，它會直接穿透比較軟的物質（像皮膚、脂肪、肌肉、韌帶這些「橡皮筋」和「水電管線」），但碰到堅硬的鈣質骨骼（鋼筋）時，就會被擋下來。最後底片上呈現的白色倒影，就是骨頭的形狀。這就是為什麼X光非常適合用來看「鋼筋有沒有斷裂或歪掉」。
+    <sup><a href="https://doi.org/10.1007/978-3-642-15632-1_1" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、為什麼X光看不到韌帶？超音波的魔法又是什麼？
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">X光的盲區：穿透力太強的「影子戲」</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    延續剛剛的比喻，因為韌帶和肌肉的密度與水分含量太接近了，X光打過去時，會直接穿透這些軟組織，不會留下明顯的影子。所以，如果你的骨頭（鋼筋）沒事，但連接骨頭的韌帶（橡皮筋）斷了，X光片看起來會是<strong style="color: #ffffff;">完全正常的</strong>。
+    <sup><a href="https://doi.org/10.1016/j.ejrad.2007.11.026" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">超音波的魔法：潛水艇的「聲納探測」</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    相較於X光，醫學超音波使用的是極高頻率的聲波（人類聽不到的聲音）。你可以把超音波探頭想像成<strong style="color: #ffffff;">潛水艇的聲納，或是在探測魚群的雷達</strong>。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    探頭發出聲波後，聲波進入皮膚，碰到不同的軟組織（脂肪、肌肉、韌帶、積水）會產生不同程度的回音（反射）。超音波機器接收到這些回音後，就能把它們畫成一張黑白灰相間的精細圖像。
+    <sup><a href="https://doi.org/10.1259/bjr.20150345" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    在超音波下，我們可以清楚看到：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">韌帶與肌腱：</strong>呈現出一絲一絲緊密排列的亮灰色纖維結構。一旦撕裂，就像斷掉的麻繩一樣，會出現黑色的裂縫。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">關節積水與發炎：</strong>水在超音波下會呈現全黑色，因此只要關節腔內有一點點發炎積水，超音波馬上就能抓出來。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">動態檢查（最重要的一點）：</strong>X光是一張靜態照片，但超音波是<strong style="color: #2dd4bf;">即時錄影</strong>。醫師可以一邊照，一邊請你活動手腳，看看韌帶在拉扯時有沒有鬆弛，或是肌腱滑動時有沒有卡住。這種「動態評估」是超音波無可取代的強大優勢。
+    <sup><a href="https://doi.org/10.1002/mus.22350" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    </li>
+  </ul>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 診間溫馨小故事</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      曾有一位熱愛打網球的年輕爸爸，不慎在救球時扭傷腳踝，痛到無法走路。他去急診照了X光，急診醫師告訴他「骨頭沒斷，回家冰敷就好」。但他休息了兩週還是腫痛難耐，甚至連抱兒子都站不穩。來到宸新復健科診所後，我立刻為他安排超音波檢查，螢幕一放上去，馬上看到連接外踝的前距腓韌帶（ATFL）不僅嚴重撕裂，關節囊還積滿了發炎的積水。透過超音波導引抽水及精準注射修復，他才終於找回笑容，重新回到球場。這就是超音波能「看見骨頭以外的世界」的價值。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、X光與超音波差異比較表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>比較項目</th>
+          <th>X光 (X-Ray)</th>
+          <th>門診超音波 (Ultrasound)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>成像原理</td>
+          <td>電磁波穿透，看密度差異（影子）</td>
+          <td>高頻聲波反射，看組織回音（聲納）</td>
+        </tr>
+        <tr>
+          <td>最強項（能看見什麼）</td>
+          <td>宏觀看整體，骨頭結構、骨折、關節退化長骨刺</td>
+          <td>放大鏡看細節，韌帶撕裂、肌腱炎、肌肉拉傷、積水、神經壓迫</td>
+        </tr>
+        <tr>
+          <td>盲區（看不到什麼）</td>
+          <td>軟組織幾乎無法顯影，看不到韌帶斷裂</td>
+          <td>聲波無法穿透骨頭，無法看見骨頭內部的病變</td>
+        </tr>
+        <tr>
+          <td>是否具備動態功能</td>
+          <td>否（只能拍靜態照片）</td>
+          <td>是（可要求患者活動關節，即時觀察軟組織滑動與鬆弛度）</td>
+        </tr>
+        <tr>
+          <td>輻射劑量</td>
+          <td>有微量輻射</td>
+          <td>無輻射（孕婦、幼兒皆可安全使用）</td>
+        </tr>
+        <tr>
+          <td>精準導引治療</td>
+          <td>通常用於大型開刀房</td>
+          <td>可在門診即時進行精準注射（如PRP、玻尿酸）</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、什麼時候要選哪一個照？常見情境大解密
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">情境 1：腳踝嚴重扭傷（翻船）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #2dd4bf;">建議流程：先臨床評估是否需要X光，再搭配超音波。</strong><br>
+    醫師會先根據國際公認的「渥太華腳踝法則 (Ottawa Ankle Rules)」來評估你是否有骨折的高風險（例如按壓特定骨頭痛、無法承受體重走四步）。如果懷疑有骨折，會優先安排X光確認鋼筋是否完好。
+    <sup><a href="https://doi.org/10.1001/jama.1992.03480100065033" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+    排除骨折後，如果依然腫痛，就要立刻使用<strong style="color: #ffffff;">超音波</strong>來檢查外側韌帶（如 ATFL 或 CFL）是否撕裂，以及關節是否積血。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">情境 2：肩膀痛到舉不起來（懷疑五十肩或旋轉肌破裂）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #2dd4bf;">建議流程：超音波為首選利器。</strong><br>
+    肩膀的痛往往源自於「旋轉肌群」的受損或滑囊發炎。研究指出，超音波在診斷肩部旋轉肌腱全層撕裂的準確度高達 95% 以上。
+    <sup><a href="https://doi.org/10.1016/j.jse.2003.09.001" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+    醫師可以透過超音波動態觀察你在舉手時，肌腱是否被骨頭夾到（夾擠症候群）。X光在這裡除非有撞擊外傷，否則不需要照。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">情境 3：脖子痛手麻（懷疑頸椎退化、椎間盤壓迫或骨刺）</h3>
+<p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+  <strong style="color: #2dd4bf;">建議流程：先以 X 光評估脊椎，必要時安排核磁共振（MRI）。</strong><br>
+  當出現脖子痛伴隨手麻的症狀時，通常會懷疑是頸椎退化、椎間盤壓迫或長骨刺。因為這些結構太深且被骨頭擋住，超音波無法看清椎間盤與神經，這時候就需要借助 X 光來觀察脊椎的骨骼狀況。若是要進一步清楚看到椎間盤或神經的確切壓迫情形，就需要前往醫院安排照射核磁共振（MRI）了。
+</p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">情境 4：復健做很久都沒好，需要打針治療時</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #2dd4bf;">建議流程：超音波導引注射 (Ultrasound-Guided Injection)。</strong><br>
+    過去醫師打針多半靠「手感」和解剖位置的盲打，但現在有了超音波，就像是醫師配戴了「透視眼鏡」。我們可以看著螢幕，確保針頭精準避開神經與血管，將增生療法（如高濃度血小板血漿 PRP 或葡萄糖水）一滴不漏地打在破掉的韌帶或受損的肌腱上，大幅提升治療效果。
+    <sup><a href="https://doi.org/10.1016/j.pmrj.2017.08.406" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：超音波這麼厲害，為什麼不直接取代X光就好？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      因為超音波的致命傷是「無法穿透骨頭與空氣」。聲波只要碰到骨頭表面就會100%反射，所以骨頭內部的長相、整體骨骼的排列彎曲度（例如脊椎側彎），或是深層關節的軟骨磨損，還是需要靠X光才能綜觀全局。兩者是互補的好兄弟，不能互相取代。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：做超音波檢查會有輻射線嗎？懷孕可以做嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      <strong style="color: #2dd4bf;">完全沒有輻射！</strong>超音波使用的是高頻聲波，對人體完全無害，甚至連媽媽肚子裡的胎兒都是用超音波來產檢的。因此孕婦、嬰幼兒、或是體內有裝金屬骨架的患者，都可以安心進行門診超音波檢查。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：我聽說 MRI（核磁共振）最清楚，那我是不是直接去大醫院照 MRI 就好？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      MRI 確實解析度極高，能看見很深層的結構（如十字韌帶、脊髓神經），但它有幾個缺點：第一，費用昂貴且排隊耗時，在大醫院往往要等數週至數月；第二，MRI 是靜態躺著拍的，無法進行動態評估。對於表淺的肌腱韌帶受傷，在診所由專業復健科醫師即時操作高階超音波，不僅能立刻揪出病灶，還能一邊動一邊看，時效與動態優勢遠勝 MRI。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    疼痛與受傷，是身體給我們的警訊。找出真正受損的組織，就像是抓漏工程，用對工具才能對症下藥。X光幫我們看清「建築的鋼筋」，而超音波則帶我們透視「維繫健康的強力橡皮筋與水電管線」。
+  </p><br>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    如果你身上有遲遲未癒的扭傷、長期反覆發作的關節痛，或是被告知「骨頭沒事」但就是痛到不行，千萬不要默默忍耐。這時，你需要的可能是一次精確的<strong style="color: #1e293b;">骨骼肌肉超音波檢查</strong>。<br><br>我是宸新復健科診所的林羿辰醫師，我們在新竹為大家提供最專業的動態超音波評估，讓我們一起揪出那些躲在X光盲區裡的痛點，為你制定最精準的復健與修復計畫。
+  </p><br>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：不要讓看不見的韌帶撕裂變成一輩子的舊傷。如果您的疼痛超過一週未緩解，請儘速尋求具備X光及超音波專業設備的復健科醫師進行評估。
+    </p>
+
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約X光及超音波門診評估
+    </a>
+</div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Taljanovic, M. S., et al. (2013). Ultrasound of the Musculoskeletal System. Radiographics, 33(1), 22-26. <a href="https://doi.org/10.1016/j.crad.2013.01.018" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.crad.2013.01.018</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Jacobson, J. A. (2011). Musculoskeletal Ultrasound: Focused Impact on MRI. Radiology, 260(1), 8-16. <a href="https://doi.org/10.1148/radiol.11101652" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1148/radiol.11101652</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Henderson, R. E., et al. (2016). Diagnostic Accuracy of Ultrasound for Assessing Ligament Tears: A Systematic Review. Skeletal Radiology, 45(5), 585-594. <a href="https://doi.org/10.1007/s00256-016-2512-3" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1007/s00256-016-2512-3</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Hall, F. M. (2010). Fundamentals of Radiographic Imaging in Bone and Joint Disorders. Springer, Berlin, Heidelberg. <a href="https://doi.org/10.1007/978-3-642-15632-1_1" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1007/978-3-642-15632-1_1</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    O'Keeffe, D. (2008). Invisible Soft Tissue Injuries on Standard Radiographs: A Clinical Review. European Journal of Radiology, 68(1), 18-25. <a href="https://doi.org/10.1016/j.ejrad.2007.11.026" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.ejrad.2007.11.026</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Bianchi, S., & Martinoli, C. (2015). Ultrasound of the Musculoskeletal System: Principles and Echo Texture. British Journal of Radiology, 88(1052). <a href="https://doi.org/10.1259/bjr.20150345" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1259/bjr.20150345</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Walker, F. O. (2009). Dynamic Ultrasound in Musculoskeletal Medicine. Muscle & Nerve, 40(2), 159-171. <a href="https://doi.org/10.1002/mus.22350" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1002/mus.22350</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Stiell, I. G., et al. (1992). Implementation of the Ottawa Ankle Rules. JAMA, 271(11), 827-832. <a href="https://doi.org/10.1001/jama.1992.03480100065033" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1001/jama.1992.03480100065033</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Teefey, S. A., et al. (2004). Ultrasonography of the Rotator Cuff: A Comparison of Ultrasonographic and Magnetic Resonance Imaging Findings. Journal of Shoulder and Elbow Surgery, 13(1), 1-6. <a href="https://doi.org/10.1016/j.jse.2003.09.001" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.jse.2003.09.001</a>
+  </span>
+</li>
+<li style="margin-bottom: 0.8rem;">
+  <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+    Daniels, E. W., et al. (2018). Clinical Utility of Ultrasound-Guided Injections in Sports Medicine. PM&R, 10(6), 598-608. <a href="https://doi.org/10.1016/j.pmrj.2017.08.406" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.pmrj.2017.08.406</a>
+  </span>
+</li>  </ol>
+</div>
+`
+},
+
   {
   id: 'prp-injection-supplement-guide',
   title: 'PRP注射後能吃薑黃、魚油嗎？醫師告訴你抗發炎保健品的真相',
@@ -28,10 +395,12 @@ export const articlesData: NewsPost[] = [
 <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
   <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-    PRP（富血小板血漿，Platelet-Rich Plasma）注射後禁止服用NSAIDs類消炎藥，已是醫界共識——因為NSAIDs會直接抑制血小板功能，破壞PRP的核心修復機制。然而，薑黃素（Curcumin）、魚油（Omega-3脂肪酸）、大蒜、生薑等天然抗發炎保健食品，雖然作用機制不同於NSAIDs，卻同樣具有影響血小板聚集與發炎調控的潛力。目前文獻指出，這些保健品的影響程度因劑量、個人體質與PRP製備方式而異，多數在一般保健劑量下影響有限，但高劑量使用或注射前後的敏感期仍建議謹慎停用。本文將逐項分析各類保健品的影響機制、建議停用時間，以及注射後的完整護理重點。
+    PRP（高濃度血小板血漿，Platelet-Rich Plasma）注射後禁止服用NSAIDs類消炎藥，已是醫界共識——因為NSAIDs會直接抑制血小板功能，破壞PRP的核心修復機制。然而，薑黃素、魚油（Omega-3脂肪酸）、大蒜、生薑等天然抗發炎保健食品，雖然作用機制不同於NSAIDs，卻同樣具有影響血小板聚集與發炎調控的潛力。  <br><br>
+    目前文獻指出，這些保健品的影響程度因劑量、個人體質與PRP製備方式而異，多數在一般保健劑量下影響有限，但高劑量使用或注射前後的敏感期仍建議謹慎停用。本文將逐項分析各類保健品的影響機制、建議停用時間，以及注射後的完整護理重點。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4960053/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[1]</a></sup>
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/17392128/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[2]</a></sup>
-    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6566948/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[3]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6566948/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[3]</a></sup><br>
+    結論: 高劑量魚油(每日超過2g EPA+DHA)或維生素E建議停用，其他營養品除非超高劑量，否則不需要停用。
   </p>
 </div>
 
@@ -45,7 +414,7 @@ export const articlesData: NewsPost[] = [
     要理解保健品的問題，必須先了解PRP為什麼有效。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    PRP是從患者自身血液中萃取、濃縮血小板後製成的製劑，注射到受傷部位後，血小板會釋放大量生長因子——包括血小板衍生生長因子（PDGF）、轉化生長因子-β（TGF-β）、血管內皮生長因子（VEGF）等——啟動組織修復的級聯反應。這個過程的關鍵前提，就是<strong style="color: #2dd4bf;">血小板必須能夠正常活化與脫顆粒（degranulation）</strong>。
+    PRP是從患者自身血液中萃取、濃縮血小板後製成的製劑，注射到受傷部位後，血小板會釋放大量生長因子——包括血小板衍生生長因子（PDGF）、轉化生長因子-β（TGF-β）、血管內皮生長因子（VEGF）等——啟動組織修復的級聯反應。這個過程的關鍵前提，就是<strong style="color: #2dd4bf;">血小板必須能夠正常活化與脫顆粒</strong>。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4960053/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[1]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
@@ -70,17 +439,17 @@ export const articlesData: NewsPost[] = [
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">薑黃素的抗發炎機制</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    薑黃素（Curcumin）是薑黃根中的主要活性成分，多年來被廣泛研究其抗氧化與抗發炎特性。薑黃素的作用機制主要包含：抑制NF-κB轉錄因子（核心發炎調控路徑）、抑制COX-2酶（與NSAIDs類似，但選擇性較低）、以及降低促發炎細胞激素（TNF-α、IL-6）的表達。
+    薑黃素是薑黃根中的主要活性成分，多年來被廣泛研究其抗氧化與抗發炎特性。薑黃素的作用機制主要包含：抑制NF-κB轉錄因子（核心發炎調控路徑）、抑制COX-2酶（與NSAIDs類似，但選擇性較低）、以及降低促發炎細胞激素的表達。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5664031/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[4]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    更值得注意的是，薑黃素也被證實具有<strong style="color: #ffffff;">抗血小板聚集</strong>的效果，其機制包括抑制血栓素A2的形成，以及降低血小板對ADP（二磷酸腺苷）的反應性。一項體外研究顯示，薑黃素能以劑量依賴性的方式抑制血小板聚集。
+    更值得注意的是，薑黃素也被證實具有<strong style="color: #ffffff;">抗血小板聚集</strong>的效果，其機制包括抑制血栓素A2的形成，以及降低血小板對ADP的反應性。一項體外研究顯示，薑黃素能以劑量依賴性的方式抑制血小板聚集。
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/22531131/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
   </p>
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">對PRP的實際影響</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    薑黃素的臨床抗血小板效果，遠不如阿斯匹靈或布洛芬強烈。一般食物中的薑黃使用量（烹飪調味）生物利用率極低（薑黃素本身水溶性差），對血小板功能的影響幾乎可以忽略不計。然而，<strong style="color: #ffffff;">高劑量薑黃素補充品（如500mg以上的標準化萃取物）</strong>，特別是與胡椒鹼（Piperine）合用以提升吸收率的配方，理論上確實可能對血小板功能產生有意義的影響。
+    薑黃素的臨床抗血小板效果，遠不如阿斯匹靈或布洛芬強烈。一般食物中的薑黃使用量（烹飪調味）生物利用率極低（薑黃素本身水溶性差），對血小板功能的影響幾乎可以忽略不計。然而，<strong style="color: #ffffff;">高劑量薑黃素補充品（如500mg以上的標準化萃取物）</strong>，特別是與胡椒鹼合用以提升吸收率的配方，理論上確實可能對血小板功能產生有意義的影響。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5664031/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[4]</a></sup>
   </p>
 
@@ -101,10 +470,10 @@ export const articlesData: NewsPost[] = [
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">魚油的抗血小板機制</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    魚油中的EPA（二十碳五烯酸）與DHA（二十二碳六烯酸）是Omega-3脂肪酸的主要活性成分。在所有常見抗發炎保健品中，魚油對血小板功能的影響是研究最充分、也是最需要認真對待的一類。
+    魚油中的EPA與DHA是Omega-3脂肪酸的主要活性成分。在所有常見抗發炎保健品中，魚油對血小板功能的影響是研究最充分、也是最需要認真對待的一類。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    EPA會競爭性地取代花生四烯酸（Arachidonic Acid）進入COX酶的代謝路徑，產生抗血小板聚集效果弱的TXA3（而非促進血小板聚集的TXA2），從而降低血小板的整體聚集能力。多項臨床研究顯示，高劑量Omega-3（每日3–4g以上）可顯著延長出血時間，並抑制血小板聚集功能。
+    EPA會競爭性地取代花生四烯酸進入COX酶的代謝路徑，產生抗血小板聚集效果弱的TXA3（而非促進血小板聚集的TXA2），從而降低血小板的整體聚集能力。多項臨床研究顯示，高劑量Omega-3（每日3–4g以上）可顯著延長出血時間，並抑制血小板聚集功能。
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/8289127/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[6]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
@@ -136,14 +505,14 @@ export const articlesData: NewsPost[] = [
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">大蒜萃取物（Garlic Extract）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    大蒜中的大蒜素（Allicin）及其衍生物（如二烯丙基二硫化物）已被多項研究證實具有抗血小板活性，機制包括抑制血栓素A2合成與血小板活化因子（PAF）。高劑量大蒜萃取物的抗血小板效果在某些研究中甚至可媲美低劑量阿斯匹靈。
+    大蒜中的大蒜素及其衍生物已被多項研究證實具有抗血小板活性，機制包括抑制血栓素A2合成與血小板活化因子。高劑量大蒜萃取物的抗血小板效果在某些研究中甚至可媲美低劑量阿斯匹靈。
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/12011774/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[8]</a></sup>
     日常烹飪用量的大蒜影響甚微，但高劑量大蒜萃取膠囊建議在注射前<strong>7天停用</strong>。
   </p>
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">生薑（Ginger）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    生薑中的薑辣素（Gingerols）與薑烯酚（Shogaols）具有類似NSAIDs的COX抑制效果，同時也被報告具有輕度抗血小板聚集的活性。一般食物攝取量影響微乎其微，高劑量生薑萃取補充品（每日超過2g）建議注射前<strong>5–7天停用</strong>。
+    生薑中的薑辣素與薑烯酚具有類似NSAIDs的COX抑制效果，同時也被報告具有輕度抗血小板聚集的活性。一般食物攝取量影響微乎其微，高劑量生薑萃取補充品（每日超過2g）建議注射前<strong>5–7天停用</strong>。
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/10418089/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[9]</a></sup>
   </p>
 
@@ -155,7 +524,7 @@ export const articlesData: NewsPost[] = [
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">薑黃與胡椒鹼複方（Enhanced Absorption Formula）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    市面上常見含胡椒鹼（Bioperine/Piperine）的薑黃素複方，生物利用率較單純薑黃素高出2000%。生物利用率提升意味著藥理作用也等比例增強，包括抗血小板效果。此類複方產品特別需要注意，建議比一般薑黃素提早停用，注射前<strong>10–14天停用</strong>為宜。
+    市面上常見含胡椒鹼的薑黃素複方，生物利用率較單純薑黃素高出2000%。生物利用率提升意味著藥理作用也等比例增強，包括抗血小板效果。此類複方產品特別需要注意，建議比一般薑黃素提早停用，注射前<strong>10–14天停用</strong>為宜。
   </p>
 
   <style>
@@ -378,7 +747,7 @@ export const articlesData: NewsPost[] = [
         <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
         <div>
           <strong>「打完PRP後要冰敷才能消腫止痛」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>適得其反！</strong> PRP注射後的局部發炎反應是治療機制的一部分，代表血小板正在活化並釋放生長因子。冰敷雖能短期緩解不適，卻可能壓制這個初期修復的關鍵過程，降低PRP的整體療效。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4960053/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[1]</a></sup> 若疼痛難忍，優先選擇Acetaminophen，並告知醫師。</span>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>適得其反！</strong> PRP注射後的局部發炎反應是治療機制的一部分，代表血小板正在活化並釋放生長因子。冰敷雖能短期緩解不適，卻可能壓制這個初期修復的關鍵過程，降低PRP的整體療效。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4960053/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[1]</a></sup> 若疼痛難忍，優先選擇普拿疼，並告知醫師。</span>
         </div>
       </li>
 
@@ -430,7 +799,7 @@ export const articlesData: NewsPost[] = [
         Q4：PRP注射後疼痛正常嗎？要忍多久？
       </h3>
       <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-        注射後24–72小時內出現局部疼痛、腫脹、輕微發熱是正常的發炎反應，代表PRP正在發揮作用。大多數患者的不適感在3–5天內明顯緩解。若疼痛在一週後仍無法忍受，或出現紅熱加劇、化膿等異常，應立即回診評估。鎮痛可使用Acetaminophen（普拿疼），絕對避免NSAIDs。
+        注射後24–72小時內出現局部疼痛、腫脹、輕微發熱是正常的發炎反應，代表PRP正在發揮作用。大多數患者的不適感在3–5天內明顯緩解。若疼痛在一週後仍無法忍受，或出現紅熱加劇、化膿等異常，應立即回診評估。鎮痛可使用普拿疼，絕對避免NSAIDs。
       </p>
 
       <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
@@ -451,7 +820,7 @@ export const articlesData: NewsPost[] = [
   
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
     PRP治療的成功，不僅取決於注射技術與製備品質，更取決於注射前後的完整配合。NSAIDs的禁忌已是明確共識，而薑黃素、魚油等天然保健品則需依劑量高低與個人狀況謹慎評估——高劑量補充品建議停用，一般飲食攝取則通常無需擔心。
-  </p>
+  </p> <br>
   
   <p style="color: #475569; font-size: 1.05rem;">
     PRP注射後請記得：<strong style="color: #1e293b;">不冰敷、不吃NSAIDs、暫停高劑量抗發炎保健品，讓身體的修復機制自然運作</strong>。如果對自己正在使用的藥物或保健品是否需要停用有疑問，<strong style="color: #1e293b;">最好的做法永遠是在注射前主動告知醫師</strong>，由醫師根據你的完整用藥狀況做出個別化建議。

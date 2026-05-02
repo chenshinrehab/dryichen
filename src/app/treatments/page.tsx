@@ -5,7 +5,7 @@ import JsonLd from '@/components/JsonLd'
 import { treatmentsList } from '@/data/treatments'
 import ScrollAnimation from '@/components/ScrollAnimation'
 
-// ✨ 引入所需的 React Icons，確保顯示穩定且載入極速
+// 引入所需的 React Icons
 import { 
   FaNotesMedical, 
   FaFileMedical, 
@@ -15,16 +15,11 @@ import {
   FaInfoCircle 
 } from "react-icons/fa";
 
-// 定義標準網域與路徑
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
 const PAGE_PATH = '/treatments'
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
-// ==========================================
-// 1. Meta 設定 (優化 Title 並補上 Geo 標籤)
-// ==========================================
 export const metadata: Metadata = {
-  // 修正：移除後綴診所名稱，讓 layout.tsx 的模板附加，避免出現兩次「新竹宸新復健科」
   title: '專業復健治療項目 - 新竹 PRP/增生注射/震波/徒手治療 | 新竹宸新復健科',
   description: '新竹復健科推薦。林羿辰醫師團隊提供高解析超音波導引注射(PRP/葡萄糖增生療法)，精準治療疼痛。另設有高能量體外震波、專業徒手治療與運動治療，為新竹骨科患者提供全方位復健方案。',
   keywords: [
@@ -42,16 +37,12 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: '新竹宸新復健科診所',
   },
-  // ✨ 補上缺失的在地化 Geo 標記
   other: {
     'geo.region': 'TW-HCH',
     'geo.placename': '新竹市',
   }
 }
 
-// ==========================================
-// 2. Schema 結構化資料 (完整保留)
-// ==========================================
 const treatmentsSchema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -104,7 +95,7 @@ export default function TreatmentsPage() {
         <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 relative z-10">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            {/* 標題區塊動畫 */}
+            {/* 標題區塊 */}
             <div className="flex items-center justify-center gap-4 mb-10 animate-on-scroll">
               <span className="flex items-center justify-center w-12 h-12 bg-cyan-500/20 text-cyan-400 rounded-lg border border-cyan-500/30">
                 <FaNotesMedical size={20} />
@@ -124,22 +115,25 @@ export default function TreatmentsPage() {
                 <Link
                   key={treatment.slug}
                   href={`/treatments/${treatment.slug}`}
-                  className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
+                  // 優化點：卡片改為純深色背景，不再透明，確保文字清晰
+                  className="group relative bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(34,211,238,0.15)] transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
                 >
-                  {/* 左側：圖片區塊 */}
-                  <div className="w-full md:w-2/5 relative h-48 md:h-full overflow-hidden">
+                  {/* 左側：圖片區塊 - 結構大改 */}
+                  {/* 優化點：移除 relative，改用 flex 物理隔離。移除所有 bg-gradient 覆蓋層。圖片現在完全顯露。 */}
+                  <div className="w-full md:w-2/5 h-56 md:h-full overflow-hidden flex-shrink-0">
                     <img 
                       src={treatment.image} 
                       alt={`${treatment.title} - 新竹推薦`}
-                      className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                      // 優化點：圖片 100% 亮度，不加任何遮罩，確保絕對清晰
+                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/90 to-transparent"></div>
                   </div>
 
                   {/* 右側：文字內容區塊 */}
-                  <div className="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center relative">
-                    {/* 背景裝飾圖示 */}
-                    <FaFileMedical className="absolute right-4 bottom-4 text-8xl text-slate-800/50 -rotate-12 group-hover:text-cyan-900/30 transition-colors duration-500 pointer-events-none" />
+                  {/* 優化點：bg-slate-800 確保文字區塊有純色背景，不受圖片影響 */}
+                  <div className="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center relative bg-slate-800">
+                    {/* 背景裝飾圖示 - 調淡，避免干擾文字 */}
+                    <FaFileMedical className="absolute right-4 bottom-4 text-8xl text-slate-700/30 -rotate-12 pointer-events-none" />
                     
                     <div className="relative z-10 h-full flex flex-col justify-center">
                         <h2 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors flex items-center">
@@ -147,15 +141,15 @@ export default function TreatmentsPage() {
                             <FaArrowRight className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-2 transition-all ml-3 text-lg text-cyan-500" />
                         </h2>
                         
-                        <p className="text-slate-300 text-lg mb-4 line-clamp-2">
+                        <p className="text-slate-300/90 text-lg mb-4 line-clamp-2 md:line-clamp-3">
                             {treatment.description}
                         </p>
                         
                         {treatment.applicableConditions && treatment.applicableConditions.length > 0 && (
-                            <div className="mt-auto">
+                            <div className="mt-autopt-2">
                                 <div className="flex flex-wrap gap-2">
                                     {treatment.applicableConditions.slice(0, 4).map((condition, idx) => (
-                                        <span key={idx} className="text-sm bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded border border-cyan-500/20 flex items-center">
+                                        <span key={idx} className="text-sm bg-slate-700 text-cyan-400 px-2 py-1 rounded border border-slate-600 flex items-center">
                                             <FaCheck className="mr-1 text-[10px]" />{condition}
                                         </span>
                                     ))}
@@ -172,7 +166,7 @@ export default function TreatmentsPage() {
             </div>
 
             {/* 專業理念區塊 */}
-            <div className="bg-slate-800/80 rounded-2xl p-8 border border-slate-700 relative overflow-hidden animate-on-scroll delay-200">
+            <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 relative overflow-hidden animate-on-scroll delay-200">
                 <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>
                 
                 <div className="relative z-10 flex flex-col md:flex-row gap-8 items-start">
