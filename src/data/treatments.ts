@@ -3580,10 +3580,754 @@ qaList: [
     }
   ]
 },
+{  
+  slug: 'ligament-tendon-hyaluronic-acid',
+  title: '新竹韌帶玻尿酸注射推薦 / 超音波導引軟組織與肌腱修復',
+  lastModified: '2026-05-02',
+  subtitle: '搭建組織鷹架，引導韌帶與肌腱真正修復',
+  description: '反覆扭傷、網球肘或阿基里斯腱發炎遲遲不好？宸新復健科運用「韌帶與肌腱專用玻尿酸」，透過高解析超音波精準導引注射。高分子量、非交聯玻尿酸能提供組織修復鷹架、抑制發炎並預防沾黏，取代傳統類固醇，安全有效地促進軟組織癒合。',
+  image: '/images/treatments/n.webp',
+  features: ['組織鷹架修復', '非類固醇', '精準導引'],
+  seoTitle: '新竹竹北韌帶玻尿酸注射推薦｜宸新復健科診所：台大醫師超音波導引修復網球肘、踝關節扭傷與阿基里斯腱炎',
+  seoDescription: '新竹竹北韌帶與肌腱玻尿酸注射首選宸新復健科。由台大醫師透過高解析超音波導引，精準治療網球肘、踝關節扭傷、阿基里斯腱炎及旋轉肌群病變。專用玻尿酸提供組織鷹架、無類固醇副作用，加速軟組織修復，助您重返健康生活。',
+  keywords: ['韌帶玻尿酸', '肌腱玻尿酸', '新竹復健科', '竹北復健科', '網球肘治療', '腳踝扭傷', '阿基里斯腱炎', '旋轉肌破裂', '超音波導引注射', '非類固醇治療'],
+  youtubeVideoId: '', // 若有相關影片可填入
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    玻尿酸（Hyaluronic Acid，HA）是人體結締組織中天然存在的多醣分子，在韌帶與肌腱的細胞外基質中扮演關鍵角色。近年來，專為軟組織損傷設計的高分子量、非交聯玻尿酸已被應用於復健科臨床，作為加速韌帶與肌腱修復的注射治療選項。<br><br>
+    此類產品不同於傳統的關節腔玻尿酸，其核心機制在於提供類似組織鷹架的環境、抑制發炎反應、促進膠原纖維規律排列，並有效預防疤痕沾黏的形成。系統性回顧與統合分析指出，玻尿酸注射在踝關節扭傷、外側上髁炎（網球肘）、阿基里斯腱病變及旋轉肌群病變等軟組織傷害中，均顯示出顯著的短期至中期止痛效果與功能改善。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9808833/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10752064/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4033484/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup><br><br>
+    <strong>收費標準：</strong>第一針：<strong>15000元</strong>。第二針以後：<strong>12000元</strong>。
+  </p>
+    
+</div>
 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、什麼是「韌帶與肌腱專用玻尿酸」？它和一般關節玻尿酸有何不同？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多患者第一次聽到「韌帶玻尿酸」時，往往會想到膝蓋注射玻尿酸的經驗，然後問：「這不是一樣的東西嗎？」其實差異相當大。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    傳統的關節腔玻尿酸主要功能是補充關節液的潤滑成分，讓骨頭之間的摩擦減少。它的設計目標是「腔室」，也就是有關節液的空間。但韌帶和肌腱並沒有關節腔，它們是緻密的膠原纖維束，一旦受傷，是纖維本身撕裂與發炎，需要的不是潤滑，而是<strong style="color: #2dd4bf;">修復與架構重建。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    專用於韌帶與肌腱的玻尿酸，具備以下三個核心特徵：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">高分子量：</strong>分子量通常在 500 kDa 至 2,200 kDa 之間。研究顯示，高分子量玻尿酸具有更強的抗發炎效果，能透過抑制基質金屬蛋白酶的表達，減少膠原纖維的分解。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5238506/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup></li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">非交聯配方：</strong>非交聯的玻尿酸分子較柔軟、流動性佳，能夠滲透進入受損的韌帶與肌腱纖維之間的微小空隙，而交聯型玻尿酸（如美容填充劑）黏稠度高，較難進入緻密的軟組織結構。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8625461/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup></li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">生物相容性高：</strong>玻尿酸本身就是人體細胞外基質的天然成分，注射後不會引發免疫排斥，安全性在多項隨機對照試驗中獲得驗證。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9808833/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup></li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、修復原理是什麼？玻尿酸如何幫助韌帶和肌腱癒合？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    韌帶與肌腱受傷後的癒合，分為三個生理階段：急性發炎期（受傷後 0–72 小時）、增殖修復期（數天至數週）、組織重塑期（數週至數月）。玻尿酸在每個階段都能發揮不同作用。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 提供組織鷹架環境</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    玻尿酸最獨特的功能，是為受損的膠原纖維提供一個類似「鷹架」的微環境。就像蓋房子需要鷹架才能讓工人安全作業，修復中的肌腱細胞需要一個充足水分、結構有序的細胞外基質，才能正確排列新生的膠原纖維。玻尿酸能保留周圍組織高達自身重量千倍的水分，為纖維母細胞的增殖與遷移提供理想的生長環境。
+    <sup><a href="https://www.ha-topshelf.com/hyaluronic-acid/hyaluronic-acid-and-musculoskeletal-recovery-key-research-highlights/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 抑制發炎、緩解急性疼痛</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    韌帶急性損傷後，發炎反應雖然是必要的啟動機制，但過度或持續的發炎反應會阻礙癒合、甚至加重組織損傷。玻尿酸透過與細胞表面的 CD44 受體結合，抑制促發炎細胞激素的下游信號，進而降低 MMP-1 和 MMP-3 的表達——這兩種酵素正是在慢性肌腱病變中分解膠原纖維的主要破壞者。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5238506/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    高分子量玻尿酸在與 CD44 受體結合後，會啟動 CD44 的群聚效應，帶來抗發炎與抗纖維化的保護效果——這是低分子量玻尿酸所不具備的特性。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12329881/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">3. 促進第一型膠原蛋白合成</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    健康的韌帶與肌腱主要由具有高強度的第一型膠原蛋白構成；受傷後若修復品質不佳，則容易形成以第三型膠原蛋白為主的疤痕組織，強度大打折扣。體外研究顯示，玻尿酸能顯著促進肌腱細胞的存活率、增殖能力，並增加第一型膠原蛋白的表達，同時降低導致細胞凋亡的訊號。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4596363/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+    這意味著：玻尿酸不只是止痛，更在分子層面上促進更高品質的組織修復。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">4. 預防疤痕與組織沾黏</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    肌腱或韌帶修復後，最常見的後遺症之一就是與周圍組織的沾黏，導致關節活動受限、持續疼痛。動物實驗（阿基里斯腱全切斷模型）顯示，手術部位注射玻尿酸的實驗組，其沾黏分數在巨觀與組織學評估上均顯著低於對照組。玻尿酸能抑制促纖維化標記物的基因與蛋白表達，從源頭阻斷疤痕組織的過度形成。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8002636/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      許多患者在使用類固醇注射後短期疼痛大幅改善，卻在數週或數月後再度復發，甚至症狀更重。這是因為類固醇雖能迅速抑制發炎，卻同時抑制了組織修復所需的細胞活性，反覆使用更有增加肌腱斷裂風險的疑慮。玻尿酸的治療邏輯截然不同——它不是「壓制」身體的反應，而是「引導」組織往正確的方向修復。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、復健科的臨床應用：哪些傷害適合使用？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    2023 年發表於 Sports Health 的系統性回顧與統合分析，整合了 19 項隨機對照試驗（共 1,629 位患者），涵蓋以下多種軟組織傷害的玻尿酸注射療效：旋轉肌群病變、外側上髁炎（網球肘）、踝關節扭傷、阿基里斯腱病變、髕骨肌腱病變與扳機指。結論指出，玻尿酸注射在短期（6 週內）和中期（6–12 週）均顯示止痛效果，且不增加嚴重不良事件的風險。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9808833/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">踝關節韌帶扭傷</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    踝關節外側韌帶扭傷是所有運動傷害中最常見的類型，傳統治療以 RICE（休息、冰敷、加壓、抬高）為主，但急性期後的組織修復品質往往難以保障。玻尿酸的關節周圍注射在此情境下，能直接進入受傷的韌帶纖維周圍，提供修復所需的微環境。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    一項針對急性踝關節扭傷（受傷 48 小時內）的臨床試驗顯示，玻尿酸注射組在短期與長期隨訪中，疼痛控制和恢復運動的時間均優於安慰劑組，且不良事件發生率低。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/17620777/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+    另一系統性回顧針對 119 位踝關節扭傷患者的分析，平均追蹤 11.4 個月，結果顯示玻尿酸注射在疼痛緩解與功能恢復方面均有支持性證據。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10752064/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">外側上髁炎（網球肘）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    網球肘（外側上髁炎）是伸腕肌腱附著點的慢性退化性病變，傳統類固醇注射雖短期有效，但長期追蹤顯示復發率高，且反覆注射有加速肌腱退化的風險。玻尿酸在此適應症上，近年已有多項高品質隨機對照試驗支持。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    2022 年一項前瞻性隨機對照試驗，比較玻尿酸與類固醇注射治療慢性外側上髁炎的效果並搭配 MRI 評估，結果顯示玻尿酸組在中長期追蹤中的疼痛控制和組織修復指標，有不遜於類固醇組的趨勢，且組織毒性更低。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9550185/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+    2025 年另一項針對 52 個手肘的前瞻性世代研究指出，分兩次注射玻尿酸後，靜態疼痛評分從初始的 4.5 分顯著降至 12 個月時的 2.3 分，且全程無嚴重不良事件。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12517549/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">阿基里斯腱病變</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    阿基里斯腱病變在跑者、籃球員等高衝擊運動族群中極為常見，表現為腳跟後方的疼痛、晨起僵硬與活動後腫脹。玻尿酸的腱周注射能直接進入腱旁組織，改善腱鞘的潤滑與滑動功能。一項以跑者為對象的飛行員研究顯示，連續腱周玻尿酸注射後，超音波彈性量測顯示肌腱結構改善，受試者的功能指標與生化標記（VEGF 等）也有顯著正向變化。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8037202/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">旋轉肌群病變</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    肩部旋轉肌群（特別是棘上肌）的肌腱病變，是造成中老年人肩痛最常見的原因之一。多項研究比較玻尿酸與生理食鹽水注射的結果，在疼痛與功能評分上均顯示玻尿酸的顯著改善效果。統合分析更指出，在 8 項旋轉肌群疾病的隨機對照試驗中，玻尿酸注射對疼痛控制的加總效果達到統計顯著性。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9808833/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 750px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 160px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table { font-size: 14px; }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>適應症</th>
+          <th>注射位置</th>
+          <th>主要效益</th>
+          <th>文獻支持程度</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>踝關節外側韌帶扭傷</td>
+          <td>關節周圍注射</td>
+          <td>快速止痛、加速回歸運動</td>
+          <td>中等（2 項 RCT）</td>
+        </tr>
+        <tr>
+          <td>外側上髁炎（網球肘）</td>
+          <td>外側上髁腱附近</td>
+          <td>中長期疼痛控制、功能改善</td>
+          <td>中等（2–3 項 RCT）</td>
+        </tr>
+        <tr>
+          <td>阿基里斯腱病變</td>
+          <td>腱周注射</td>
+          <td>結構改善、疼痛緩解</td>
+          <td>初步（1 項 RCT）</td>
+        </tr>
+        <tr>
+          <td>旋轉肌群病變</td>
+          <td>肩峰下或肌腱周圍</td>
+          <td>疼痛與功能顯著改善</td>
+          <td>強（8 項 RCT 統合分析）</td>
+        </tr>
+        <tr>
+          <td>髕骨肌腱病變（跳躍膝）</td>
+          <td>腱周注射</td>
+          <td>疼痛緩解</td>
+          <td>初步</td>
+        </tr>
+        <tr>
+          <td>扳機指（屈肌腱腱鞘炎）</td>
+          <td>腱鞘內注射</td>
+          <td>活動度改善</td>
+          <td>中等（2 項 RCT）</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、韌帶玻尿酸與類固醇、PRP 的比較
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    面對韌帶或肌腱傷害，患者常問：「我應該打類固醇還是玻尿酸？PRP 不是更好嗎？」這三種注射治療各有其適用時機與優缺點。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">與類固醇的比較</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    類固醇注射的最大優點是速效——通常注射後 1–2 週內疼痛大幅緩解，短期滿意度高。然而，多項長期研究指出，類固醇注射 12 週後的效果往往不如保守治療，且反覆注射會造成肌腱的組織毒性，增加斷裂風險。玻尿酸的止痛效果起效較慢（約 2–4 週），但中長期追蹤的功能指標與類固醇相當甚至更佳，且無組織毒性的疑慮。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9550185/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">與 PRP（高濃度血小板血漿）的比較</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    PRP 是從患者自身血液中分離、濃縮生長因子後再注射回傷處，理論上再生潛力強大。然而，PRP 的成分因人而異（個體差異大），製備流程不統一，目前的研究結果相當分歧。2025 年一項四組比較的隨機對照試驗（PRP vs 類固醇 vs 玻尿酸 vs 安慰劑）顯示，四組在長期追蹤中的效果差異未達統計顯著性，但各組的臨床改善均顯著優於基線。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11766060/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>
+    玻尿酸的優勢在於其組成穩定、安全性有完整的文獻記錄，且費用相對 PRP 較低。
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在復健科診間，玻尿酸注射通常不是「單獨」使用的治療，而是作為物理治療計畫的一環。注射後的第 2–6 週，正是組織修復最活躍的時期，搭配超音波導引確認注射位置，並配合適度的離心訓練（eccentric training）或體外震波治療，才能讓玻尿酸的修復效果發揮到最大。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、注射過程與注意事項：病患常見問題解答
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">注射前需要做什麼準備？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    通常注射前需要由復健科醫師進行完整評估，包括病史詢問、理學檢查，必要時安排超音波或 MRI 確認損傷位置與程度。注射當天不需要空腹，但建議穿著寬鬆衣物便於暴露注射部位。若您正在服用抗凝血藥物，請事先告知醫師。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">注射過程舒適嗎？有什麼感覺？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    在超音波導引下精準定位後，以細針進行注射，過程約 5–10 分鐘。注射當下可能感覺局部酸脹或輕微刺痛，屬正常現象。注射後可能有 24–48 小時的局部不適感（稱為「注射後反應」），通常自行緩解，冰敷可協助減輕不適。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">需要注射幾次？效果能持續多久？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    依傷害的性質與嚴重程度而定，急性傷害通常 1–2 次注射即可，慢性肌腱病變則可能需要 2–3 次、間隔約 1 個月的療程。臨床試驗顯示，玻尿酸的效果可持續 6–12 個月，搭配復健訓練則可進一步延長療效。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12517549/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 六、常見三大迷思破解
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「玻尿酸就是打在臉上的美容針，打在韌帶？怪怪的。」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>大誤解！</strong> 玻尿酸本來就是人體的天然成分，廣泛存在於關節液、皮膚、眼球等組織中。美容注射使用的是高度交聯、質地堅硬的填充型玻尿酸；而用於韌帶修復的是高分子量、非交聯的生理型玻尿酸，其作用機制完全不同，是真正的組織修復製劑，而非填充物。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8625461/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[5]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「韌帶受傷就要完全休息，打什麼針都沒用。」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>部分正確，但不完整！</strong> 急性期適當休息確實重要，但「完全制動」已被現代運動醫學更新為「保護性漸進活動」的概念。玻尿酸注射能在急性期快速改善疼痛、降低發炎，讓患者更早能進行復健訓練，縮短整體恢復時程，而不是取代休息的必要性。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/17620777/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[10]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「打完玻尿酸就好了，不需要做復健。」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>非常危險的觀念！</strong> 玻尿酸提供的是最適合修復的環境，但新生的膠原纖維需要透過適當的力學刺激（漸進式訓練）才能正確排列、恢復強度。若注射後立即恢復高強度活動，或完全不做任何訓練，修復出來的組織品質都不會理想，復發機率也大幅提高。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4033484/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[3]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    韌帶與肌腱傷害的修復，從來不只是「等它自己好」那麼簡單。高分子量、非交聯玻尿酸作為一種生物學上合理、臨床上有據可查的修復工具，正在改變復健科對於軟組織傷害的治療思路——從「壓制症狀」走向「引導修復」。
+  </p><br>
+
+  <p style="color: #475569; font-size: 1.05rem;">
+    無論你是運動後踝關節反覆扭傷的跑者、長期受網球肘困擾的上班族，還是因為肩膀旋轉肌群問題而無法舉重的健身愛好者，<strong style="color: #1e293b;">及早尋求復健科專業評估，才是縮短療程、降低復發的最關鍵一步。</strong>
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：如果您有韌帶、肌腱的慢性疼痛或急性損傷，不要讓「等等看」演變為長達數月的慢性問題。預約復健科門診，讓醫師以超音波評估受傷程度，討論適合您的個人化治療計畫。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約復健科門診評估
+    </a>
+  </div>
+</div>
+`,
+  referencesHtml: `
+
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Khan, M., Shanmugaraj, A., Prada, C., Patel, A., Babins, E., & Bhandari, M. (2023). The Role of Hyaluronic Acid for Soft Tissue Indications: A Systematic Review and Meta-Analysis. Sports Health, 15(1), 63–72. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9808833/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9808833</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lim, E.C.W., et al. (2024). The Efficacy of Hyaluronic Acid Injections in Soft Tissue Foot and Ankle Pathology: A Systematic Review. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10752064/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10752064</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Testa, V., Capasso, G., Benazzo, F., & Maffulli, N. (2014). The Use of Hyaluronic Acid after Tendon Surgery and in Tendinopathies. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4033484/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 4033484</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lin, T.W., Lin, L.P., Huang, H.Y., Chiang, P.I., & Lee, W.C. (2017). High-molecular-weight hyaluronic acid attenuated matrix metalloproteinase-1 and -3 expression via CD44 in tendinopathy. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5238506/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 5238506</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Abate, M., et al. (2021). The Impact of Hyaluronic Acid on Tendon Physiology and Its Clinical Application in Tendinopathies. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8625461/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8625461</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        HA Topshelf Editorial. (2025). Hyaluronic Acid and Musculoskeletal Recovery: Key Research Highlights. <a href="https://www.ha-topshelf.com/hyaluronic-acid/hyaluronic-acid-and-musculoskeletal-recovery-key-research-highlights/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hu, Q., et al. (2025). CD44 signaling in skin wound healing and regeneration. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12329881/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12329881</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Zhu, J., et al. (2015). Hyaluronic acid increases tendon derived cell viability and collagen type I expression in vitro: Comparative study of four different HA preparations by molecular weight. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4596363/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 4596363</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Chen, J.J., et al. (2021). Hyaluronic Acid Treatment Improves Healing of the Tenorrhaphy Site by Suppressing Adhesions through Extracellular Matrix Remodeling in a Rat Model. PMC. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8002636/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8002636</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Petrella, R.J., Cogliano, A., & Decaria, J. (2007). Periarticular Hyaluronic Acid in Acute Ankle Sprain. PubMed. <a href="https://pubmed.ncbi.nlm.nih.gov/17620777/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 17620777</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Yalcin, A., & Kayaalp, M.E. (2022). Comparison of Hyaluronate & Steroid Injection in the Treatment of Chronic Lateral Epicondylitis and Evaluation of Treatment Efficacy With MRI: A Single-Blind, Prospective, Randomized Controlled Clinical Study. Cureus. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9550185/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9550185</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Gracitelli, M.E.C., et al. (2025). Treatment of Lateral Epicondylitis of the Elbow with Hyaluronic Acid Injections. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12517549/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12517549</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Gervasi, M., et al. (2021). Treatment of Achilles Tendinopathy in Recreational Runners with Peritendinous Hyaluronic Acid Injections: A Viscoelastometric, Functional, and Biochemical Pilot Study. Journal of Clinical Medicine, 10(7), 1397. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8037202/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8037202</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Dejnek, M., Królikowska, A., Kowal, M., & Reichert, P. (2025). Comparative Efficacy of Platelet-Rich Plasma, Corticosteroid, Hyaluronic Acid, and Placebo (Saline) Injections in Patients with Lateral Elbow Tendinopathy: A Randomized Controlled Trial. Journal of Clinical Medicine, 14(2), 472. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11766060/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11766060</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Costa-Almeida, R., et al. (2022). Functional biomaterials for tendon/ligament repair and regeneration. Regenerative Biomaterials, Oxford Academic. <a href="https://academic.oup.com/rb/article/doi/10.1093/rb/rbac062/6692432" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1093/rb/rbac062</a>
+      </span>
+    </li>
+  </ol>
+</div>
+
+  `,
+  whyChooseUs: [
+    '全程<strong>高解析超音波導引</strong>精準定位，確保修復成分直達受損韌帶與肌腱介面，避免誤傷血管神經。',
+    '選用<strong>高分子量、非交聯玻尿酸</strong>，提供組織修復環境',
+    '完整評估，專屬<strong>漸進式復健訓練</strong>，從源頭解決生物力學失衡，有效降低復發率。'
+  ],
+  treatmentFocus: [
+     '精準運動醫學：腳踝及膝蓋韌帶撕裂傷，不開刀治療。',
+    '退化性關節炎：膝關節、髖關節等。',
+    '慢性肌腱韌帶損傷：網球肘、旋轉肌撕裂。'
+  ],
+  images: [],
+  applicableConditions: ['踝關節外側韌帶扭傷', '外側上髁炎 (網球肘)', '阿基里斯腱病變', '旋轉肌群病變', '髕骨肌腱病變 (跳躍膝)', '扳機指 (屈肌腱腱鞘炎)'],
+  qaList: [
+{
+      question: 'Q1：韌帶玻尿酸注射需要健保給付嗎？',
+      answer: '目前韌帶與肌腱專用玻尿酸在台灣多屬自費項目，費用視產品種類與注射次數而異。軟組織修復用途尚未納入常規給付範圍。建議就診前先向診所確認費用細節，部分個人保險有給付，建議可先向保險公司詢問。'
+    },
+    {
+      question: 'Q2：玻尿酸注射有沒有適合或不適合的族群？',
+      answer: '對玻尿酸過敏者（極罕見）、注射部位有急性感染者，以及完全斷裂需要手術修復的嚴重傷害，均不適合玻尿酸注射。糖尿病患者需事先告知醫師，因為血糖控制不佳可能影響癒合效果。孕婦應暫緩非必要注射。'
+    },
+    {
+      question: 'Q3：超音波導引注射和「憑感覺」注射有差別嗎？',
+      answer: '差別非常大。超音波導引注射（ultrasound-guided injection）能即時看到針頭的位置，確保藥物確實注射到受傷的組織，避免誤注射到神經或血管。對於韌帶與肌腱這類緻密結構，精準的注射位置是決定療效的關鍵因素之一。'
+    },
+    {
+      question: 'Q4：注射後多久可以恢復運動訓練？',
+      answer: '一般建議注射後 24–48 小時避免高強度活動，讓局部反應消退。之後可依復健醫師的計畫，從低衝擊的活動（如游泳、騎固定自行車）逐步恢復。完全回歸競技運動的時間，取決於傷害性質與組織修復進度，通常為數週至數月。'
+    },
+    {
+      question: 'Q5：韌帶舊傷反覆發作，玻尿酸能根治嗎？',
+      answer: '玻尿酸能顯著改善疼痛與功能，但若底層的生物力學問題（如核心肌力不足、關節穩定性差、動作模式錯誤）未一同處理，舊傷仍可能反覆。玻尿酸最好的定位是「修復的催化劑」，搭配完整的復健計畫，才能真正解決根源問題。'
+    }
+  ]
+},
+
+{
+  slug: 'bmac-injection',
+  title: '新竹BMAC骨髓抽吸濃縮液推薦 / 超音波導引關節再生注射',
+  lastModified: '2026-05-02',
+  tags: ['bmac', 'regenerative-medicine'],
+  subtitle: '啟動自體修復力，退化性關節炎與軟骨損傷的進階解方',
+  description: '新竹BMAC骨髓抽吸濃縮液注射推薦。針對中重度退化性關節炎、軟骨缺損與頑固性肌腱炎，透過抽取自體骨髓濃縮純化，富含間質幹細胞與生長因子，精準修復受損組織，延緩開刀需求。',
+  image: '/images/treatments/bmac.webp',
+  features: ['自體細胞', '軟骨修復', '超音波導引精準注射'],
+  seoTitle: '新竹BMAC骨髓抽吸濃縮液注射｜宸新復健科診所：再生醫學進階治療，自體幹細胞修復退化性關節炎、軟骨缺損，免開刀新選擇',
+  seoDescription: '新竹再生醫學進階治療推薦。宸新復健科提供「BMAC骨髓抽吸濃縮液注射」，抽取自體骨髓純化出間質幹細胞與高濃度生長因子。針對PRP效果不佳的中重度關節炎、軟骨損傷患者，提供強效的修復與抗發炎治療。',
+  keywords: ['新竹BMAC注射', '骨髓抽吸濃縮液', '退化性關節炎', '軟骨修復', '間質幹細胞', 'PRP比較', '新竹復健科', '再生醫學'],
+  youtubeVideoId: '', 
+  contentHtml: `
+    <!-- ═══════════════════════════════════════════════════════════
+         結論先行：文章摘要總結（約 150 字）
+    ══════════════════════════════════════════════════════════════ -->
+    <div style="background-color: #f0fdf4; border: 2px solid #22c55e; border-radius: 1rem; padding: 1.5rem; margin-bottom: 2rem;">
+      <h2 style="color: #15803d; margin-top: 0; font-weight: bold; font-size: 1.1rem;">📋 文章重點摘要</h2>
+      <p style="color: #166534; margin-bottom: 0; line-height: 1.8;">
+        退化性關節炎與軟骨損傷以往常面臨「只能吃止痛藥等開刀」的困境。<strong>骨髓抽吸濃縮液（Bone Marrow Aspirate Concentrate, 簡稱 BMAC）</strong>是近年再生醫學的重大突破，它透過抽取患者骨盆的骨髓，純化出富含<strong>間質幹細胞（MSCs）與高濃度生長因子</strong>的精華液。系統性文獻回顧證實，BMAC 能顯著減輕中重度膝關節炎的疼痛並改善功能<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26861545/" target="_blank" rel="noopener noreferrer">[1]</a></sup>。與傳統 PRP 相比，BMAC 含有具備分化能力的活體幹細胞，在促進軟骨組織修復與調節關節內免疫發炎反應上表現更優異<sup><a href="https://pubmed.ncbi.nlm.nih.gov/25198235/" target="_blank" rel="noopener noreferrer">[2]</a></sup>，多項研究也顯示其效果與安全性經得起長期追蹤考驗<sup><a href="https://pubmed.ncbi.nlm.nih.gov/30106841/" target="_blank" rel="noopener noreferrer">[3]</a></sup>。結合超音波導引精準注射，BMAC 為不想提早置換人工關節的患者，提供了一個強而有力的非手術新選擇。
+      </p>
+    </div>
+    <!-- ══════════════════════════════════════════════════════════ -->
+
+    <p>您是否長期受<strong>退化性關節炎</strong>折磨，打過玻尿酸甚至 PRP，但效果卻越來越短暫？當軟骨磨損來到中重度（第二至第三期），一般的保守治療往往遇到瓶頸，但您可能還沒準備好接受人工關節置換手術。這時候，<strong>BMAC 骨髓抽吸濃縮液</strong>或許是您突破僵局的「特種部隊」。</p>
+    <br>
+    <p>BMAC 的全名是 Bone Marrow Aspirate Concentrate。它的原理是在局部麻醉下，從患者微創抽取少量的骨髓，透過特殊的離心技術，將紅血球與不需要的血漿剔除，保留最珍貴的<strong>間質幹細胞（Mesenchymal Stem Cells, MSCs）、造血幹細胞、高濃度血小板與生長因子</strong>。這等於是將人體最強大的「修復工程團隊」直接空投到受損的關節或組織中，重啟修復機制<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28095074/" target="_blank" rel="noopener noreferrer">[4]</a></sup>。</p>
+
+    <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+            📢 為什麼選擇 BMAC 骨髓抽吸濃縮液？
+        </h2>
+        
+        <p style="font-size: 1.1rem; color: #78350f;">在眾多注射療法中，BMAC 之所以被視為「進階版」的再生治療，在於它擁有無可取代的優勢：</p>
+        
+        <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+                <div><strong>自體「活」細胞，具分化潛力：</strong> 與 PRP 不同，骨髓中含有真正的「間質幹細胞」。這些細胞就像是體內的建築師，當偵測到軟骨或肌腱受損時，能引導環境進行組織重建與修復，這在治療較大面積的軟骨缺損時尤為重要<sup><a href="https://pubmed.ncbi.nlm.nih.gov/24322980/" target="_blank" rel="noopener noreferrer">[5]</a></sup>。</div>
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+                <div><strong>強效免疫調節，改變關節微環境：</strong> 骨髓濃縮液中含有大量的抗發炎細胞激素（如 IL-1Ra）。研究證實，BMAC 不只是修復，它還能改變關節內慢性發炎的「惡劣環境」，達到長期止痛與保護軟骨的效果<sup><a href="https://pubmed.ncbi.nlm.nih.gov/30650961/" target="_blank" rel="noopener noreferrer">[6]</a></sup>。</div>
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+                <div><strong>單次療程，一次到位：</strong> 不同於需要多次抽血注射的 PRP，BMAC 療程通常只需「單次」執行（抽取與注射在同一天完成），對於繁忙的現代人或害怕反覆打針的長輩來說，是一大福音。</div>
+            </li>
+        </ul>
+              <p><img src="/images/treatments/bmac/a.webp" alt="BMAC骨髓抽吸與製備過程示意圖：透過局部麻醉抽取骨髓，離心後精準注射至關節腔內。" style="width: min(100%, 500px); height: auto; display: block; margin: 0 auto;"></p>
+    </div>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h2>🔬 怎麼做？BMAC 治療與製備流程</h2>
+    <p>許多人一聽到「抽骨髓」就會聯想到戲劇中痛苦的骨髓捐贈，其實這是極大的誤解。門診進行的 BMAC 抽取是<strong>微創且安全</strong>的。</p>
+    <br>
+    <ol>
+        <li><strong>局部麻醉：</strong> 醫師會在您的骨盆後側（髂骨脊，這也是全身骨髓幹細胞最豐富的地方）進行深層且完善的局部麻醉。</li>
+        <li><strong>骨髓抽取：</strong> 使用特製的細微穿刺針，抽取約 30–60 mL 的骨髓血。過程約 10-15 分鐘，大多只有輕微的痠脹感。</li>
+        <li><strong>高階離心純化：</strong> 將抽出的骨髓放入專用儀器離心約 15 分鐘，去除紅血球，濃縮出含有 MSCs 與生長因子的核心精華（約 3–6 mL）。</li>
+        <li><strong>超音波導引注射：</strong> 醫師利用高階超音波，精確地將 BMAC 注入受損的關節腔或肌腱撕裂處。文獻指出，影像導引能確保幹細胞送達正確位置，極大化治療成效<sup><a href="https://pubmed.ncbi.nlm.nih.gov/25403682/" target="_blank" rel="noopener noreferrer">[7]</a></sup>。</li>
+    </ol>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h2>⚖️ 終極大解密：PRP、羊膜、BMAC 到底差在哪？</h2>
+    <p>門診最常被問到的問題就是：「我該打 PRP、羊膜（羊水）還是 BMAC？」我們用一張表讓您秒懂：</p>
+
+    <div style="overflow-x: auto; padding-bottom: 10px;">
+        <table style="width: 100%; min-width: 600px; border-collapse: collapse; margin-top: 1rem;">
+            <thead>
+                <tr style="background-color: #0369a1; color: white;">
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">比較項目</th>
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">PRP (高濃度血小板血漿)</th>
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">羊膜/羊水基質</th>
+                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">BMAC (骨髓濃縮液) 🔥</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; background-color: #f8fafc;">來源</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">自體血液 (抽血)</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">異體 (捐贈胎盤/羊水)</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">自體骨髓 (骨盆抽取)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; background-color: #f8fafc;">主要修復成分</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">血小板釋放之生長因子</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">生長因子、玻尿酸 (無活細胞)</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>間質幹細胞 (MSCs)</strong>、生長因子</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; background-color: #f8fafc;">特色</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">最成熟普遍，CP值高</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">強效抗發炎，提供生化支架，免抽血</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>含活體幹細胞，再生潛力最強</strong></td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; background-color: #f8fafc;">最佳適用對象</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">初期退化、輕度肌腱發炎</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">急性發炎劇痛、年紀太大抽血品質不佳者</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>中重度退化、軟骨缺損、PRP無效者</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="text-align: center; font-size: 0.8rem; color: #6b7280; margin-top: 5px; display: block; md:hidden;">
+            (可左右滑動查看表格 👉)
+        </div>
+    </div>
+    <p style="margin-top: 1rem; font-size: 0.95rem; color: #475569;">* 註：羊膜/羊水產品雖然富含珍貴的生長因子與膠原蛋白支架，但經過嚴格的消毒與冷凍乾燥處理後，裡面已<strong>沒有存活的細胞</strong><sup><a href="https://pubmed.ncbi.nlm.nih.gov/29738363/" target="_blank" rel="noopener noreferrer">[8]</a></sup>。若要追求真正的「自體細胞再生」，BMAC 仍是目前的黃金標準。</p>
+
+    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+        <h3 style="margin-top: 0; color: #0e7490;">💡 醫師的小叮嚀：哪些人最適合 BMAC？</h3>
+        <p style="margin-bottom: 0; color: #334155;">若您符合以下狀況，BMAC 將是您極佳的選擇：<br>
+        1. <strong>中重度退化性關節炎（Grade 2-3）：</strong> 關節軟骨明顯磨損，但還未到關節完全變形黏死的第四期。<br>
+        2. <strong>打過 2 次以上 PRP 但進步有限者：</strong> 您的組織需要比血小板更強的幹細胞介入。<br>
+        3. <strong>骨關節壞死初期（如股骨頭缺血性壞死）：</strong> 骨髓幹細胞是醫學上早期介入的標準療法之一<sup><a href="https://pubmed.ncbi.nlm.nih.gov/12208912/" target="_blank" rel="noopener noreferrer">[9]</a></sup>。<br>
+        4. <strong>嚴重的肌腱/韌帶撕裂傷：</strong> 希望加速癒合並減少疤痕組織產生。
+        </p>
+    </div>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <!-- ═══════════════════════════════════════════════════════════
+         常見誤區解析（3 大反向查證）
+    ══════════════════════════════════════════════════════════════ -->
+    <h2>⚠️ 3 大常見 BMAC 迷思解析</h2>
+
+    <div style="background-color: #fef2f2; border: 2px solid #fca5a5; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+      <h3 style="color: #b91c1c; margin-top: 0;">❌ 迷思一：「抽骨髓超級痛，還有癱瘓風險！」</h3>
+      <p style="color: #7f1d1d;"><strong>實證破解：</strong> 這是把「抽骨髓液」跟「抽脊髓液(龍骨水)」搞混了！神經位在脊椎裡，而 BMAC 抽取的位置是骨盆的「髂骨」，裡面完全沒有中樞神經。在完善的局部麻醉下，過程安全且疼痛感低。2015 年的安全回顧性研究追蹤了大量案例，證實 BMAC 抽取的嚴重併發症機率極低，是安全性極高的門診處置<sup><a href="https://pubmed.ncbi.nlm.nih.gov/25553199/" target="_blank" rel="noopener noreferrer">[10]</a></sup>。</p>
+    </div>
+
+    <div style="background-color: #fef2f2; border: 2px solid #fca5a5; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+      <h3 style="color: #b91c1c; margin-top: 0;">❌ 迷思二：「骨髓濃縮液(BMAC)跟血小板(PRP)是一樣的東西，只是變貴。」</h3>
+      <p style="color: #7f1d1d;"><strong>實證破解：</strong> 完全不同。PRP 取自血液，主要成分是血小板與生長因子，主要負責「招募」體內的修復細胞；而 BMAC 取自骨髓，本身就帶有「間質幹細胞（MSCs）」與造血幹細胞，是直接投放修復主力。臨床試驗顯示，在追蹤軟骨修復的質量與長期臨床評分上，BMAC 的潛力優於傳統 PRP。</p>
+    </div>
+
+    <div style="background-color: #fef2f2; border: 2px solid #fca5a5; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+      <h3 style="color: #b91c1c; margin-top: 0;">❌ 迷思三：「打了 BMAC，軟骨就會長得跟年輕時一模一樣，再也不用開刀。」</h3>
+      <p style="color: #7f1d1d;"><strong>實證破解：</strong> 再生醫學不是魔法。BMAC 能有效降低發炎、修復部分缺損、減輕疼痛並大幅延緩人工關節置換的時間。但如果是到了最末期（Grade 4），關節嚴重變形且骨頭與骨頭完全硬碰硬（Bone on bone），再生治療的效果就會大打折扣，此時手術置換才是首選。</p>
+    </div>
+    <!-- ══════════════════════════════════════════════════════════ -->
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+        <h2 style="color: #047857; margin-top: 0;">👨‍⚕️ 啟動身體的自癒奇蹟，從精準治療開始</h2>
+        <p style="color: #334155; margin-bottom: 1.5rem;">面對頑固的關節疼痛與軟骨磨損，您值得擁有更好的生活品質。宸新復健科診所具備完善的高階超音波設備與合格的細胞處理技術，由專業醫師為您量身打造最適合的再生醫療計畫。</p>
+
+        <p style="font-weight: bold; color: #059669;">
+  <a href="/booking" style="color: inherit; text-decoration: underline;">預約門診評估，讓我們一起找回靈活關節！</a>
+</p>
+    </div>
+
+`,
+  referencesHtml: `
+    <h2>📚 參考文獻</h2>
+ <div style="background-color: #f8fafc; padding: 1rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.9rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.5; word-break: break-all;">
+<ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+        <li id="ref1" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Chahla J, et al. <em>Bone Marrow Aspirate Concentrate for the Treatment of Knee Osteoarthritis: A Systematic Review.</em> Am J Sports Med. 2016;44(11):3073-3082.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26861545/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 26861545</a>
+        （實證：系統性回顧多項研究，證實 BMAC 對膝關節退化有顯著的臨床功能改善與疼痛緩解效果）
+    </span>
+</li>
+<li id="ref2" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Centeno CJ, et al. <em>Efficacy of autologous bone marrow concentrate for knee osteoarthritis with and without adipose graft.</em> Biomed Res Int. 2014;2014:370621.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25198235/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 25198235</a>
+        （實證：骨髓濃縮液富含 MSCs，應用於膝關節退化可顯著減少疼痛並促進組織再生微環境）
+    </span>
+</li>
+<li id="ref3" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Mautner K, et al. <em>Outcomes after ultrasound-guided injection of bone marrow aspirate concentrate for osteoarthritis.</em> Clin J Sport Med. 2019;29(6):435-442.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30106841/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 30106841</a>
+        （實證：超音波導引注射 BMAC 治療退化性關節炎，患者在長期追蹤中表現出極佳的安全性與功能進步）
+    </span>
+</li>
+<li id="ref4" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Shapiro SA, et al. <em>A Prospective, Single-Blind, Placebo-Controlled Trial of Bone Marrow Aspirate Concentrate for Knee Osteoarthritis.</em> Am J Sports Med. 2017;45(1):82-90.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28095074/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 28095074</a>
+        （實證：前瞻性隨機對照試驗，比較 BMAC 與食鹽水注射，證實 BMAC 具備強效止痛與修復細胞募集能力）
+    </span>
+</li>
+<li id="ref5" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Gobbi A, et al. <em>One-step surgery with multipotent stem cells for the treatment of large full-thickness chondral defects of the knee.</em> Am J Sports Med. 2014;42(3):648-657.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24322980/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 24322980</a>
+        （實證：針對大面積軟骨缺損，BMAC 幹細胞介入治療能產生類似透明軟骨的修復組織，效果優於單純微骨折手術）
+    </span>
+</li>
+<li id="ref6" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Piuzzi NS, et al. <em>Bone Marrow Aspirate Concentrate (BMAC) for the Treatment of Knee Osteoarthritis.</em> JBJS Rev. 2018;6(1):e4.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30650961/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 30650961</a>
+        （實證：BMAC 中的細胞因子（如 IL-1Ra）能有效中和關節內的破壞性發炎因子，改變慢性發炎微環境）
+    </span>
+</li>
+<li id="ref7" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Aly AR, et al. <em>Ultrasound-guided shoulder/joint injections are more accurate... a systematic review and meta-analysis.</em> Br J Sports Med. 2015;49(16):1042-1049.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25403682/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 25403682</a>
+        （實證：高階影像超音波導引確保昂貴的再生製劑（如 BMAC）100% 注射至受損病灶，療效全面優於盲打）
+    </span>
+</li>
+<li id="ref8" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Saltzman BM, et al. <em>Amniotic fluid-derived biologics in orthopaedics: A comprehensive review.</em> J Am Acad Orthop Surg. 2018;26(10):361-366.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29738363/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 29738363</a>
+        （實證：市售羊膜/羊水基質經過嚴格滅菌後，雖然含有生長因子與支架成分，但已不包含活體幹細胞，與 BMAC 的活細胞機轉不同）
+    </span>
+</li>
+<li id="ref9" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hernigou P, et al. <em>Treatment of osteonecrosis with autologous bone marrow grafting.</em> Clin Orthop Relat Res. 2002;(405):14-23.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/12208912/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 12208912</a>
+        （實證：長期的骨科經典研究，證明骨髓幹細胞注射於股骨頭缺血性壞死具有延緩塌陷與促進新骨生成的強大效果）
+    </span>
+</li>
+<li id="ref10" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Oliver KS, et al. <em>Safety of autologous bone marrow aspirate concentrate: A retrospective review.</em> Int J Clin Rheumtol. 2015;10(2):83-93.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25553199/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 25553199</a>
+        （實證：大型回顧研究證實，門診進行之骨髓抽取與 BMAC 注射，重大併發症發生率極微，為高度安全的療程）
+    </span>
+</li>
+    </ol>
+     </div>    <!-- ══════════════════════════════════════════════════════════ -->
+  `,
+  whyChooseUs: [
+    '全程使用<strong>醫學中心等級超音波</strong>導引，確保幹細胞精準送達病灶。',
+    '微創骨髓抽取技術，<strong>局部麻醉且過程快速</strong>，大幅降低疼痛感。',
+    '客製化再生醫療方案，清楚分析 PRP、羊膜與 BMAC，不盲目推銷。'
+  ],
+  treatmentFocus: [
+    '<a href="/diseases/knee/osteoarthritis" class="text-cyan-400 hover:underline">中重度退化性關節炎</a>🔍️',
+    '軟骨缺損與半月板撕裂。',
+    '經過多次 PRP 治療仍未見明顯改善者。'
+  ],
+  images: [],
+  applicableConditions: ['退化性關節炎', '軟骨缺損', '半月板撕裂', '股骨頭缺血性壞死', '頑固型肌腱炎'],
+  qaList: [
+    {
+      question: '抽骨髓會不會傷到神經或脊椎？',
+      answer: '絕對不會。BMAC 抽取的位置是在骨盆後側的「髂骨（腸骨）」，也就是腰帶下方兩側硬硬的骨頭處，與中樞神經所在的脊椎完全不同部位，因此沒有傷害神經或導致癱瘓的風險。'
+    },
+    {
+      question: 'BMAC 治療需要做幾次？',
+      answer: '與 PRP 通常需要 3 次以上的療程不同，BMAC 由於含有高濃度的間質幹細胞與生長因子，通常只需要進行「單次」治療，即能發揮長期的修復與抗發炎效果。'
+    },
+    {
+      question: '做完 BMAC 注射後需要休息很久嗎？',
+      answer: '抽取部位與注射部位前幾天可能會有輕微的痠脹感。一般建議注射後 3-5 天內避免劇烈運動，日常行走活動不受影響。待一週後即可開始搭配物理治療與循序漸進的肌力訓練，幫助組織長得更好。'
+    }
+  ]
+},
 
 // --- 8. 超音波導引神經解套注射 (Nerve Hydrodissection) ---
-{
+{  
   slug: 'nerve-hydrodissection',
   title: '新竹神經解套術推薦 / 超音波導引腕隧道與手麻治療',
   lastModified: '2026-04-09',
