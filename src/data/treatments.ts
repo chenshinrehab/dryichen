@@ -4077,226 +4077,527 @@ qaList: [
   keywords: ['新竹BMAC注射', '骨髓抽吸濃縮液', '退化性關節炎', '軟骨修復', '間質幹細胞', 'PRP比較', '新竹復健科', '再生醫學'],
   youtubeVideoId: '', 
   contentHtml: `
-    <!-- ═══════════════════════════════════════════════════════════
-         結論先行：文章摘要總結（約 150 字）
-    ══════════════════════════════════════════════════════════════ -->
-    <div style="background-color: #f0fdf4; border: 2px solid #22c55e; border-radius: 1rem; padding: 1.5rem; margin-bottom: 2rem;">
-      <h2 style="color: #15803d; margin-top: 0; font-weight: bold; font-size: 1.1rem;">📋 文章重點摘要</h2>
-      <p style="color: #166534; margin-bottom: 0; line-height: 1.8;">
-        退化性關節炎與軟骨損傷以往常面臨「只能吃止痛藥等開刀」的困境。<strong>骨髓抽吸濃縮液（Bone Marrow Aspirate Concentrate, 簡稱 BMAC）</strong>是近年再生醫學的重大突破，它透過抽取患者骨盆的骨髓，純化出富含<strong>間質幹細胞（MSCs）與高濃度生長因子</strong>的精華液。系統性文獻回顧證實，BMAC 能顯著減輕中重度膝關節炎的疼痛並改善功能<sup><a href="https://pubmed.ncbi.nlm.nih.gov/26861545/" target="_blank" rel="noopener noreferrer">[1]</a></sup>。與傳統 PRP 相比，BMAC 含有具備分化能力的活體幹細胞，在促進軟骨組織修復與調節關節內免疫發炎反應上表現更優異<sup><a href="https://pubmed.ncbi.nlm.nih.gov/25198235/" target="_blank" rel="noopener noreferrer">[2]</a></sup>，多項研究也顯示其效果與安全性經得起長期追蹤考驗<sup><a href="https://pubmed.ncbi.nlm.nih.gov/30106841/" target="_blank" rel="noopener noreferrer">[3]</a></sup>。結合超音波導引精準注射，BMAC 為不想提早置換人工關節的患者，提供了一個強而有力的非手術新選擇。
-      </p>
-    </div>
-    <!-- ══════════════════════════════════════════════════════════ -->
-
-    <p>您是否長期受<strong>退化性關節炎</strong>折磨，打過玻尿酸甚至 PRP，但效果卻越來越短暫？當軟骨磨損來到中重度（第二至第三期），一般的保守治療往往遇到瓶頸，但您可能還沒準備好接受人工關節置換手術。這時候，<strong>BMAC 骨髓抽吸濃縮液</strong>或許是您突破僵局的「特種部隊」。</p>
-    <br>
-    <p>BMAC 的全名是 Bone Marrow Aspirate Concentrate。它的原理是在局部麻醉下，從患者微創抽取少量的骨髓，透過特殊的離心技術，將紅血球與不需要的血漿剔除，保留最珍貴的<strong>間質幹細胞（Mesenchymal Stem Cells, MSCs）、造血幹細胞、高濃度血小板與生長因子</strong>。這等於是將人體最強大的「修復工程團隊」直接空投到受損的關節或組織中，重啟修復機制<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28095074/" target="_blank" rel="noopener noreferrer">[4]</a></sup>。</p>
-
-    <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-        <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
-            📢 為什麼選擇 BMAC 骨髓抽吸濃縮液？
-        </h2>
-        
-        <p style="font-size: 1.1rem; color: #78350f;">在眾多注射療法中，BMAC 之所以被視為「進階版」的再生治療，在於它擁有無可取代的優勢：</p>
-        
-        <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
-            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
-                <div><strong>自體「活」細胞，具分化潛力：</strong> 與 PRP 不同，骨髓中含有真正的「間質幹細胞」。這些細胞就像是體內的建築師，當偵測到軟骨或肌腱受損時，能引導環境進行組織重建與修復，這在治療較大面積的軟骨缺損時尤為重要<sup><a href="https://pubmed.ncbi.nlm.nih.gov/24322980/" target="_blank" rel="noopener noreferrer">[5]</a></sup>。</div>
-            </li>
-            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
-                <div><strong>強效免疫調節，改變關節微環境：</strong> 骨髓濃縮液中含有大量的抗發炎細胞激素（如 IL-1Ra）。研究證實，BMAC 不只是修復，它還能改變關節內慢性發炎的「惡劣環境」，達到長期止痛與保護軟骨的效果<sup><a href="https://pubmed.ncbi.nlm.nih.gov/30650961/" target="_blank" rel="noopener noreferrer">[6]</a></sup>。</div>
-            </li>
-            <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-                <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
-                <div><strong>單次療程，一次到位：</strong> 不同於需要多次抽血注射的 PRP，BMAC 療程通常只需「單次」執行（抽取與注射在同一天完成），對於繁忙的現代人或害怕反覆打針的長輩來說，是一大福音。</div>
-            </li>
-        </ul>
-              <p><img src="/images/treatments/bmac/a.webp" alt="BMAC骨髓抽吸與製備過程示意圖：透過局部麻醉抽取骨髓，離心後精準注射至關節腔內。" style="width: min(100%, 500px); height: auto; display: block; margin: 0 auto;"></p>
-    </div>
-
-    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-
-    <h2>🔬 怎麼做？BMAC 治療與製備流程</h2>
-    <p>許多人一聽到「抽骨髓」就會聯想到戲劇中痛苦的骨髓捐贈，其實這是極大的誤解。門診進行的 BMAC 抽取是<strong>微創且安全</strong>的。</p>
-    <br>
-    <ol>
-        <li><strong>局部麻醉：</strong> 醫師會在您的骨盆後側（髂骨脊，這也是全身骨髓幹細胞最豐富的地方）進行深層且完善的局部麻醉。</li>
-        <li><strong>骨髓抽取：</strong> 使用特製的細微穿刺針，抽取約 30–60 mL 的骨髓血。過程約 10-15 分鐘，大多只有輕微的痠脹感。</li>
-        <li><strong>高階離心純化：</strong> 將抽出的骨髓放入專用儀器離心約 15 分鐘，去除紅血球，濃縮出含有 MSCs 與生長因子的核心精華（約 3–6 mL）。</li>
-        <li><strong>超音波導引注射：</strong> 醫師利用高階超音波，精確地將 BMAC 注入受損的關節腔或肌腱撕裂處。文獻指出，影像導引能確保幹細胞送達正確位置，極大化治療成效<sup><a href="https://pubmed.ncbi.nlm.nih.gov/25403682/" target="_blank" rel="noopener noreferrer">[7]</a></sup>。</li>
-    </ol>
-
-    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-
-    <h2>⚖️ 終極大解密：PRP、羊膜、BMAC 到底差在哪？</h2>
-    <p>門診最常被問到的問題就是：「我該打 PRP、羊膜（羊水）還是 BMAC？」我們用一張表讓您秒懂：</p>
-
-    <div style="overflow-x: auto; padding-bottom: 10px;">
-        <table style="width: 100%; min-width: 600px; border-collapse: collapse; margin-top: 1rem;">
-            <thead>
-                <tr style="background-color: #0369a1; color: white;">
-                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">比較項目</th>
-                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">PRP (高濃度血小板血漿)</th>
-                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">羊膜/羊水基質</th>
-                    <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left; white-space: nowrap;">BMAC (骨髓濃縮液) 🔥</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; background-color: #f8fafc;">來源</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">自體血液 (抽血)</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">異體 (捐贈胎盤/羊水)</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">自體骨髓 (骨盆抽取)</td>
-                </tr>
-                <tr>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; background-color: #f8fafc;">主要修復成分</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">血小板釋放之生長因子</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">生長因子、玻尿酸 (無活細胞)</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>間質幹細胞 (MSCs)</strong>、生長因子</td>
-                </tr>
-                <tr>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; background-color: #f8fafc;">特色</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">最成熟普遍，CP值高</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">強效抗發炎，提供生化支架，免抽血</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>含活體幹細胞，再生潛力最強</strong></td>
-                </tr>
-                <tr>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: bold; background-color: #f8fafc;">最佳適用對象</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">初期退化、輕度肌腱發炎</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">急性發炎劇痛、年紀太大抽血品質不佳者</td>
-                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>中重度退化、軟骨缺損、PRP無效者</strong></td>
-                </tr>
-            </tbody>
-        </table>
-        <div style="text-align: center; font-size: 0.8rem; color: #6b7280; margin-top: 5px; display: block; md:hidden;">
-            (可左右滑動查看表格 👉)
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    骨髓抽吸濃縮液（Bone Marrow Aspirate Concentrate，BMAC）是近年再生醫學領域中備受矚目的自體注射療法。BMAC 取自患者自身骨盆的骨髓，經過離心濃縮後，萃取出富含間質幹細胞（ MSCs）、生長因子與抗發炎細胞激素的濃縮液，再注射回受傷或退化的關節、肌腱部位，達到促進組織修復、減少發炎、緩解疼痛的效果。  <br><br>
+    相較於 PRP（高濃度血小板血漿）或羊膜製品，BMAC 具有更廣泛的再生能力，因為間質幹細胞能夠分化為軟骨、骨骼、肌腱等多種組織細胞。目前，BMAC 對膝關節退化性關節炎、肌腱病變（如旋轉肌群撕裂）等適應症均有臨床研究支持，整體安全性良好，副作用發生率低。然而，各研究在製備方法、注射劑量和療效評估上仍存在異質性，長期效果的比較研究仍在進行中。本文將用淺顯易懂的語言，為民眾全面介紹 BMAC 注射療法的原理、製備流程、適應症、以及與 PRP、羊膜等療法的比較。
+    <sup><a href="#ref1" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
+    <sup><a href="#ref2" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>
+    <sup><a href="#ref3" style="color: #0284c7; text-decoration: underline;">[3]</a></sup>
+  </p>
+</div>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、什麼是 BMAC？用大白話解釋骨髓抽吸濃縮液
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    想像你的骨髓就像一座「幹細胞工廠」，裡面住著各種具有再生能力的細胞。BMAC 療法，簡單來說，就是從你自己的骨髓中「提煉」出這些珍貴的修復細胞，然後直接注射到需要修復的部位。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    骨髓中含有兩大類關鍵成分：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #2dd4bf;">間質幹細胞（Mesenchymal Stem Cells, MSCs）：</strong>具有分化成軟骨細胞、骨細胞、肌腱細胞的潛力，是修復受損組織的「主力軍」。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #2dd4bf;">生長因子與細胞激素：</strong>包含 TGF-β（轉化生長因子）、PDGF（血小板衍生生長因子）、IL-1RA（介白素-1受體拮抗劑）等，能促進細胞再生、抑制發炎反應。</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    由於 BMAC 完全來自患者自身，沒有排斥風險，也無需使用外來藥物或人工材料，因此被稱為「自體生物製劑」。
+    <sup><a href="#ref4" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    值得注意的是，骨髓中間質幹細胞的比例其實非常低，約佔骨髓有核細胞的 0.001–0.02%。正因如此，才需要進行「濃縮」這個步驟——透過離心技術，將這些珍貴的修復細胞從大量的骨髓液中集中提取出來，讓療效最大化。
+    <sup><a href="#ref5" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、BMAC 的作用原理：身體自我修復的科學
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    BMAC 注射後，在受傷部位主要透過三大機制發揮效果：
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 促進軟骨與組織再生</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    注入的間質幹細胞會受到周圍組織環境的訊號引導，分化為該部位所需的細胞類型。在軟骨受損的關節中，間質幹細胞可以分化為軟骨細胞，協助修復磨損的關節面；在肌腱受傷部位，則可促進膠原纖維的重新排列與修復。
+    <sup><a href="#ref6" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 調節發炎反應</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    BMAC 中含有大量的 IL-1RA，這是人體天然的抗發炎物質。IL-1RA 能夠阻斷引發關節破壞的促發炎訊號，從根本上減緩關節退化的速度，而不只是暫時壓制疼痛。研究發現，BMAC 中的 IL-1RA 含量顯著高於一般骨髓原液，這也是它抗發炎效果的重要來源。
+    <sup><a href="#ref7" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">3. 促進血管新生與軟骨下骨重塑</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    BMAC 中的生長因子（如 VEGF、FGF）可以促進患部新血管的生成，改善局部血液循環，為受損組織提供更豐富的養分。同時，BMAC 也能調節關節軟骨下方的骨骼重塑，有助於從深層結構穩定關節。
+    <sup><a href="#ref1" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      BMAC 與類固醇注射最根本的差異，在於作用機制截然不同。類固醇是「壓制」發炎，效果快但持久性有限，長期使用甚至可能造成軟骨進一步損壞。BMAC 則是試圖「修復」組織本身，在疼痛緩解的同時，也在為組織重建提供條件。這就像是救火和修房子的差別——兩者都有必要，但長期效果完全不同。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、BMAC 的製備流程：從骨髓到注射，一步步說明
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    整個 BMAC 製備過程，通常在門診或手術室中完成，約需 60–90 分鐘。以下是完整步驟：
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">步驟一：骨髓抽取</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    在局部麻醉下，醫師使用特殊的骨髓穿刺針，從患者骨盆的「髂嵴（iliac crest）」穿入，抽取約 60–120 mL 的骨髓液。髂嵴是最理想的採集部位，因為這裡的幹細胞濃度最高，且位置就在皮膚下方，操作相對安全便利。整個抽取過程約需 10–20 分鐘，患者在局部麻醉下通常只感到輕微壓迫感，而非明顯疼痛。
+    <sup><a href="#ref7" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">步驟二：離心濃縮</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    抽取的骨髓液隨即放入專用的離心濃縮機進行高速離心。離心的過程利用比重差異，將不同成分分層，醫師從中提取出富含間質幹細胞、血小板與生長因子的「黃金層」——這就是 BMAC 濃縮液，體積通常為原始骨髓液的 1/10 至 1/6 左右（約 6–20 mL）。
+    <sup><a href="#ref5" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">步驟三：影像導引注射</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    製備完成的 BMAC 濃縮液，在超音波導引下，精準注射至目標部位，包含關節腔內（如膝關節、髖關節）、肌腱附著處（如旋轉肌群）或椎間盤等。影像導引可確保注射位置的精確性，是療效的重要保障。
+    <sup><a href="#ref8" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+ 
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 重要提醒：</strong><br><br>BMAC 的製備品質受多種因素影響，包括患者年齡（幹細胞數量隨年齡降低）、採集技術、離心設備的種類與參數等。年齡越大、骨髓功能越差的患者，所能採集到的 MSCs 數量相對較少，這也會影響最終的療效。建議在有豐富 BMAC 製備經驗的醫療機構接受治療，以確保品質的一致性。
+      <sup><a href="#ref9" style="color: #9a3412; text-decoration: underline;">[9]</a></sup>
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、BMAC 適應症：哪些問題可以考慮這個療法？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    目前有臨床研究支持的主要適應症包括以下幾類：
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 退化性關節炎（骨關節炎）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是目前 BMAC 研究最多的適應症。對於膝關節、髖關節退化性關節炎患者，BMAC 注射可以緩解疼痛、改善功能，部分研究甚至顯示有延緩關節置換時程的潛力。一項包含 48 篇研究、共 9,338 個膝關節的系統性回顧與網絡統合分析顯示，BMAC 在疼痛緩解與功能改善方面均優於安慰劑注射。
+    <sup><a href="#ref10" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 旋轉肌群（旋轉袖）撕裂與修補</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    BMAC 作為肩關節旋轉肌群修補手術的輔助療法，已有多項研究顯示能提高術後肌腱癒合率。其中一項研究發現，接受 BMAC 輔助修補的患者，術後 6 個月的肌腱癒合率達 100%，而未接受 BMAC 的對照組僅為 67%，且 BMAC 注射後長達 10 年追蹤均未見再次撕裂。
+    <sup><a href="#ref11" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">3. 其他肌腱病變</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    包含阿基里斯腱病變（跟腱炎）、網球肘（外側上髁炎）、髕骨肌腱病變等慢性肌腱傷害，在保守治療效果不佳時，BMAC 提供了另一個治療選項。系統性文獻回顧顯示，BMAC 在肌腱病變的整體療效令人鼓舞，且安全性良好。
+    <sup><a href="#ref11" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">4. 骨軟骨缺損與距骨骨軟骨損傷</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    對於因運動傷害造成的局部軟骨缺損，BMAC 作為微骨折手術的輔助注射，能提供更豐富的修復細胞，促進缺損部位的軟骨再生。
+    <sup><a href="#ref8" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">5. 椎間盤退化性疾病</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    對於下背痛且確認為單節段椎間盤源性疼痛的患者，BMAC 椎間盤內注射的研究正在進行中，初步結果顯示有緩解疼痛的效果，但目前尚屬實驗性質，需更多大型隨機對照試驗確認。
+    <sup><a href="#ref12" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、哪些人適合 BMAC？哪些人不適合？
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">✅ 適合考慮 BMAC 的族群</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;">退化性關節炎（中度為主，Kellgren-Lawrence 分級 II–III 級），保守治療（物理治療、藥物、一般注射）效果不佳者</li>
+    <li style="margin-bottom: 0.75rem;">慢性肌腱病變（如旋轉肌群、阿基里斯腱、髕骨腱）對傳統治療反應不佳者</li>
+    <li style="margin-bottom: 0.75rem;">希望延緩關節置換手術、且對非手術治療有強烈意願的患者</li>
+    <li style="margin-bottom: 0.75rem;">運動員或體力需求高的工作者，需要盡可能保留關節功能</li>
+    <li style="margin-bottom: 0.75rem;">對類固醇注射有顧慮（如糖尿病患者或希望避免長期類固醇副作用者）</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">❌ 不適合或需謹慎評估的族群</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">活動性癌症患者：</strong>幹細胞治療可能促進腫瘤生長，是明確禁忌症</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">嚴重關節炎（末期）：</strong>關節嚴重破壞、骨對骨磨損者，修復基礎不足，效果有限，建議直接考慮關節置換</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">血液疾病或骨髓功能異常者：</strong>骨髓品質不佳，所能採集的幹細胞數量和活性都會降低</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">感染或免疫功能嚴重低下者</strong></li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">正在使用抗凝血藥物者：</strong>需先與醫師評估停藥可行性</li>
+  </ul>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      年齡確實是影響 BMAC 療效的重要因素。研究顯示，骨髓中的間質幹細胞數量和活性會隨著年齡增長而下降，60 歲以上患者的 BMAC 細胞品質通常不如 40–50 歲患者。然而，這並不代表年長者就不適合，而是需要醫師在治療前進行更仔細的個人化評估，並與患者充分溝通預期效果。
+      <sup><a href="#ref9" style="color: #0891b2; text-decoration: underline;">[9]</a></sup>
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、BMAC vs. PRP vs. 羊膜製品：三種再生療法大比較
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    市面上再生醫學注射療法種類繁多，讓人眼花撩亂。以下將最常見的三種療法做一個清楚的比較：
+  </p>
+ 
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 700px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 130px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+  </style>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>比較項目</th>
+          <th>BMAC（骨髓抽吸濃縮液）</th>
+          <th>PRP（富血小板血漿）</th>
+          <th>羊膜製品</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>來源</td>
+          <td>自身骨盆骨髓（自體）</td>
+          <td>自身靜脈血液（自體）</td>
+          <td>捐贈者羊膜（異體）</td>
+        </tr>
+        <tr>
+          <td>主要成分</td>
+          <td>間質幹細胞 + 生長因子 + 抗發炎細胞激素</td>
+          <td>高濃度血小板 + 生長因子（PDGF、TGF-β）</td>
+          <td>生長因子 + 胞外基質蛋白（不含活體幹細胞）</td>
+        </tr>
+        <tr>
+          <td>再生能力</td>
+          <td>最廣（可分化為多種組織細胞）</td>
+          <td>中等（促進生長因子，無分化能力）</td>
+          <td>中等（抗發炎 + 提供細胞外支架）</td>
+        </tr>
+        <tr>
+          <td>採集侵入性</td>
+          <td>較高（骨髓穿刺，需局部麻醉）</td>
+          <td>低（抽靜脈血即可）</td>
+          <td>無（現成商品，無需自體採集）</td>
+        </tr>
+        <tr>
+          <td>費用</td>
+          <td>最高（製備設備+技術）</td>
+          <td>中等</td>
+          <td>中至高（商品化產品）</td>
+        </tr>
+        <tr>
+          <td>臨床研究量</td>
+          <td>中等，且持續增加</td>
+          <td>最多，最成熟</td>
+          <td>相對較少，部分宣稱效果缺乏嚴謹支持</td>
+        </tr>
+        <tr>
+          <td>幹細胞含量</td>
+          <td>有（活體間質幹細胞）</td>
+          <td>無</td>
+          <td>無（商業化羊膜製品已無活體幹細胞）</td>
+        </tr>
+        <tr>
+          <td>排斥風險</td>
+          <td>極低（自體）</td>
+          <td>無（自體）</td>
+          <td>理論上存在（異體），但發生率低</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 1.5rem;">
+    重要的是，目前一篇 2024 年的網絡統合分析（納入 9,338 個膝關節）顯示，在疼痛改善效果的排名上，PRP 的總體排名最高（SUCRA 91.54 分），其次為 BMAC（76.46 分），再其次為玻尿酸（53.12 分），而類固醇注射與安慰劑表現最差（分別為 15.18 與 13.70 分）。
+    <sup><a href="#ref10" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+    這並不代表 BMAC 不如 PRP，而是因為 BMAC 的研究數量相對較少（僅佔納入研究的 2.5%），且兩者在功能改善方面差異並不顯著。
+  </p>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    至於羊膜製品，目前已有研究確認，市售的羊膜液態產品中幾乎不含活體間質幹細胞（MSCs 無法在冷凍乾燥過程中存活）。因此，羊膜產品的效果主要來自生長因子與基質蛋白，而非幹細胞本身——這與部分市場宣傳的「幹細胞療法」說法有所出入，消費者應加以辨別。
+    <sup><a href="#ref13" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、BMAC 的實際效果與安全性如何？
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">療效：短中期效果良好，長期數據持續累積</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    2024 年發表於 Orthopaedic Journal of Sports Medicine 的系統性回顧分析了所有已發表的 BMAC 膝關節注射隨機對照試驗，結論為：BMAC 注射在膝關節退化性關節炎的疼痛緩解與功能改善方面確實有效，但與其他關節內注射療法（如 PRP、玻尿酸）相比，差異未達到最小臨床顯著差異（MCID）的閾值。換句話說，BMAC 有效，但目前尚未有充分證據顯示它顯著優於最佳的 PRP 製劑。
+    <sup><a href="#ref3" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    在肌腱病變方面，BMAC 的表現更為突出。特別是作為旋轉肌群修補手術的輔助，能顯著降低術後肌腱再撕裂率，且功能評分（如 ASES 和 UCLA 評分）均有明顯改善。
+    <sup><a href="#ref14" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">安全性：整體良好，副作用多為輕微且暫時</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    BMAC 的安全性在目前的文獻中均有詳細記錄。由於是自體組織，不會引起免疫排斥反應。常見的副作用包含：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">採集部位疼痛或瘀青：</strong>骨髓穿刺後局部酸痛，通常 1–3 天內消退</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">注射後短暫腫脹或不適：</strong>數天內自行緩解</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">感染（極罕見）：</strong>標準無菌操作下發生率極低</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    一篇整合多項前驅及臨床研究的系統性回顧結論指出：BMAC 的安全性由所有納入研究所確認，不良事件的整體發生率低。
+    <sup><a href="#ref15" style="color: #2dd4bf; text-decoration: underline;">[15]</a></sup>
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 八、常見三大迷思解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「BMAC 就是幹細胞治療，一針可以讓關節長出新軟骨」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度期待！</strong> BMAC 的確含有間質幹細胞，但細胞數量相對有限，且在退化嚴重的關節環境中，幹細胞的存活和分化效率會大打折扣。目前的研究支持 BMAC 能緩解疼痛、改善功能，但「讓關節完全再生」的效果在嚴重退化的案例中並不切實際。<sup><a href="#ref1" style="color: #2563eb; text-decoration: underline;">[1]</a></sup></span>
         </div>
-    </div>
-    <p style="margin-top: 1rem; font-size: 0.95rem; color: #475569;">* 註：羊膜/羊水產品雖然富含珍貴的生長因子與膠原蛋白支架，但經過嚴格的消毒與冷凍乾燥處理後，裡面已<strong>沒有存活的細胞</strong><sup><a href="https://pubmed.ncbi.nlm.nih.gov/29738363/" target="_blank" rel="noopener noreferrer">[8]</a></sup>。若要追求真正的「自體細胞再生」，BMAC 仍是目前的黃金標準。</p>
-
-    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-        <h3 style="margin-top: 0; color: #0e7490;">💡 醫師的小叮嚀：哪些人最適合 BMAC？</h3>
-        <p style="margin-bottom: 0; color: #334155;">若您符合以下狀況，BMAC 將是您極佳的選擇：<br>
-        1. <strong>中重度退化性關節炎（Grade 2-3）：</strong> 關節軟骨明顯磨損，但還未到關節完全變形黏死的第四期。<br>
-        2. <strong>打過 2 次以上 PRP 但進步有限者：</strong> 您的組織需要比血小板更強的幹細胞介入。<br>
-        3. <strong>骨關節壞死初期（如股骨頭缺血性壞死）：</strong> 骨髓幹細胞是醫學上早期介入的標準療法之一<sup><a href="https://pubmed.ncbi.nlm.nih.gov/12208912/" target="_blank" rel="noopener noreferrer">[9]</a></sup>。<br>
-        4. <strong>嚴重的肌腱/韌帶撕裂傷：</strong> 希望加速癒合並減少疤痕組織產生。
-        </p>
-    </div>
-
-    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-
-    <!-- ═══════════════════════════════════════════════════════════
-         常見誤區解析（3 大反向查證）
-    ══════════════════════════════════════════════════════════════ -->
-    <h2>⚠️ 3 大常見 BMAC 迷思解析</h2>
-
-    <div style="background-color: #fef2f2; border: 2px solid #fca5a5; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
-      <h3 style="color: #b91c1c; margin-top: 0;">❌ 迷思一：「抽骨髓超級痛，還有癱瘓風險！」</h3>
-      <p style="color: #7f1d1d;"><strong>實證破解：</strong> 這是把「抽骨髓液」跟「抽脊髓液(龍骨水)」搞混了！神經位在脊椎裡，而 BMAC 抽取的位置是骨盆的「髂骨」，裡面完全沒有中樞神經。在完善的局部麻醉下，過程安全且疼痛感低。2015 年的安全回顧性研究追蹤了大量案例，證實 BMAC 抽取的嚴重併發症機率極低，是安全性極高的門診處置<sup><a href="https://pubmed.ncbi.nlm.nih.gov/25553199/" target="_blank" rel="noopener noreferrer">[10]</a></sup>。</p>
-    </div>
-
-    <div style="background-color: #fef2f2; border: 2px solid #fca5a5; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
-      <h3 style="color: #b91c1c; margin-top: 0;">❌ 迷思二：「骨髓濃縮液(BMAC)跟血小板(PRP)是一樣的東西，只是變貴。」</h3>
-      <p style="color: #7f1d1d;"><strong>實證破解：</strong> 完全不同。PRP 取自血液，主要成分是血小板與生長因子，主要負責「招募」體內的修復細胞；而 BMAC 取自骨髓，本身就帶有「間質幹細胞（MSCs）」與造血幹細胞，是直接投放修復主力。臨床試驗顯示，在追蹤軟骨修復的質量與長期臨床評分上，BMAC 的潛力優於傳統 PRP。</p>
-    </div>
-
-    <div style="background-color: #fef2f2; border: 2px solid #fca5a5; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
-      <h3 style="color: #b91c1c; margin-top: 0;">❌ 迷思三：「打了 BMAC，軟骨就會長得跟年輕時一模一樣，再也不用開刀。」</h3>
-      <p style="color: #7f1d1d;"><strong>實證破解：</strong> 再生醫學不是魔法。BMAC 能有效降低發炎、修復部分缺損、減輕疼痛並大幅延緩人工關節置換的時間。但如果是到了最末期（Grade 4），關節嚴重變形且骨頭與骨頭完全硬碰硬（Bone on bone），再生治療的效果就會大打折扣，此時手術置換才是首選。</p>
-    </div>
-    <!-- ══════════════════════════════════════════════════════════ -->
-
-    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-
-    <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
-        <h2 style="color: #047857; margin-top: 0;">👨‍⚕️ 啟動身體的自癒奇蹟，從精準治療開始</h2>
-        <p style="color: #334155; margin-bottom: 1.5rem;">面對頑固的關節疼痛與軟骨磨損，您值得擁有更好的生活品質。宸新復健科診所具備完善的高階超音波設備與合格的細胞處理技術，由專業醫師為您量身打造最適合的再生醫療計畫。</p>
-
-        <p style="font-weight: bold; color: #059669;">
-  <a href="/booking" style="color: inherit; text-decoration: underline;">預約門診評估，讓我們一起找回靈活關節！</a>
-</p>
-    </div>
-
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「羊膜注射含有豐富幹細胞，和 BMAC 一樣好，卻不需要骨髓穿刺」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>需要辨別！</strong> 商業化羊膜液態產品在冷凍乾燥加工過程中，活體細胞已不復存在，研究已確認這類產品中幾乎無法培養出間質幹細胞。羊膜製品的效果主要來自生長因子與胞外基質成分，而非幹細胞。兩者的作用機制本質上不同，不能直接類比。<sup><a href="#ref13" style="color: #2563eb; text-decoration: underline;">[13]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「做了 BMAC 就不需要其他治療了」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤觀念！</strong> BMAC 是整體治療計畫的一部分，而非單一解決方案。注射後仍需搭配適當的復健計畫、體重管理、肌力訓練等配套措施，才能讓療效最大化並維持更久。把 BMAC 單獨視為「萬靈丹」，而忽略生活型態的調整，往往會讓效果大打折扣。<sup><a href="#ref2" style="color: #2563eb; text-decoration: underline;">[2]</a></sup></span>
+        </div>
+      </li>
+ 
+    </ul>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    九、治療後的注意事項與恢復期
+  </h2>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">注射後 24–48 小時：</strong>注射部位可能有輕微脹痛感，建議冰敷、適度休息，避免激烈活動
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">注射後 1–2 週：</strong>避免高衝擊運動（跑步、跳躍），可進行輕度的行走與伸展
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">注射後 1–3 個月：</strong>療效通常在這段期間逐漸出現，部分患者會先感到短暫的症狀起伏，之後趨於穩定改善
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">避免消炎藥（NSAIDs）：</strong>注射後至少 2 週內避免使用非類固醇消炎藥，因為適度的發炎反應有助於幹細胞啟動修復機制
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">搭配復健計畫：</strong>在醫師或物理治療師指導下，進行漸進式的肌力訓練與關節活動度訓練，可顯著強化療效
+    </li>
+  </ul>
+</section>
+ 
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+ 
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    BMAC 骨髓抽吸濃縮液注射療法，代表了再生醫學的重要進展。它不只是暫時壓制疼痛，而是試圖用身體自身的修復力量，從根本上改善受損組織的狀態。對於中度退化性關節炎、慢性肌腱病變等保守治療效果有限的患者，BMAC 提供了一個在手術之前值得認真考慮的選項。
+  </p>
+ 
+  <p style="color: #475569; font-size: 1.05rem;">
+    當然，BMAC 也不是萬能的。療效因人而異，受患者年齡、病灶嚴重度、製備品質與術後配合度等因素影響。最重要的，是在充分了解自身狀況後，與專業醫師共同討論，制定最適合自己的個人化治療計畫。
+  </p>
+ 
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 如果你正在面對關節退化或慢性肌腱傷害，不確定 BMAC 是否適合自己，歡迎預約專業門診評估，讓醫師根據你的影像檢查與臨床狀況，給予最適切的建議。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診評估 BMAC 是否適合您
+    </a>
+  </div>
+</div>
 `,
   referencesHtml: `
-    <h2>📚 參考文獻</h2>
- <div style="background-color: #f8fafc; padding: 1rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.9rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.5; word-break: break-all;">
-<ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
-        <li id="ref1" style="margin-bottom: 0.6rem;">
-    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Chahla J, et al. <em>Bone Marrow Aspirate Concentrate for the Treatment of Knee Osteoarthritis: A Systematic Review.</em> Am J Sports Med. 2016;44(11):3073-3082.
-        <a href="https://pubmed.ncbi.nlm.nih.gov/26861545/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 26861545</a>
-        （實證：系統性回顧多項研究，證實 BMAC 對膝關節退化有顯著的臨床功能改善與疼痛緩解效果）
-    </span>
-</li>
-<li id="ref2" style="margin-bottom: 0.6rem;">
-    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Centeno CJ, et al. <em>Efficacy of autologous bone marrow concentrate for knee osteoarthritis with and without adipose graft.</em> Biomed Res Int. 2014;2014:370621.
-        <a href="https://pubmed.ncbi.nlm.nih.gov/25198235/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 25198235</a>
-        （實證：骨髓濃縮液富含 MSCs，應用於膝關節退化可顯著減少疼痛並促進組織再生微環境）
-    </span>
-</li>
-<li id="ref3" style="margin-bottom: 0.6rem;">
-    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Mautner K, et al. <em>Outcomes after ultrasound-guided injection of bone marrow aspirate concentrate for osteoarthritis.</em> Clin J Sport Med. 2019;29(6):435-442.
-        <a href="https://pubmed.ncbi.nlm.nih.gov/30106841/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 30106841</a>
-        （實證：超音波導引注射 BMAC 治療退化性關節炎，患者在長期追蹤中表現出極佳的安全性與功能進步）
-    </span>
-</li>
-<li id="ref4" style="margin-bottom: 0.6rem;">
-    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Shapiro SA, et al. <em>A Prospective, Single-Blind, Placebo-Controlled Trial of Bone Marrow Aspirate Concentrate for Knee Osteoarthritis.</em> Am J Sports Med. 2017;45(1):82-90.
-        <a href="https://pubmed.ncbi.nlm.nih.gov/28095074/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 28095074</a>
-        （實證：前瞻性隨機對照試驗，比較 BMAC 與食鹽水注射，證實 BMAC 具備強效止痛與修復細胞募集能力）
-    </span>
-</li>
-<li id="ref5" style="margin-bottom: 0.6rem;">
-    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Gobbi A, et al. <em>One-step surgery with multipotent stem cells for the treatment of large full-thickness chondral defects of the knee.</em> Am J Sports Med. 2014;42(3):648-657.
-        <a href="https://pubmed.ncbi.nlm.nih.gov/24322980/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 24322980</a>
-        （實證：針對大面積軟骨缺損，BMAC 幹細胞介入治療能產生類似透明軟骨的修復組織，效果優於單純微骨折手術）
-    </span>
-</li>
-<li id="ref6" style="margin-bottom: 0.6rem;">
-    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Piuzzi NS, et al. <em>Bone Marrow Aspirate Concentrate (BMAC) for the Treatment of Knee Osteoarthritis.</em> JBJS Rev. 2018;6(1):e4.
-        <a href="https://pubmed.ncbi.nlm.nih.gov/30650961/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 30650961</a>
-        （實證：BMAC 中的細胞因子（如 IL-1Ra）能有效中和關節內的破壞性發炎因子，改變慢性發炎微環境）
-    </span>
-</li>
-<li id="ref7" style="margin-bottom: 0.6rem;">
-    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Aly AR, et al. <em>Ultrasound-guided shoulder/joint injections are more accurate... a systematic review and meta-analysis.</em> Br J Sports Med. 2015;49(16):1042-1049.
-        <a href="https://pubmed.ncbi.nlm.nih.gov/25403682/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 25403682</a>
-        （實證：高階影像超音波導引確保昂貴的再生製劑（如 BMAC）100% 注射至受損病灶，療效全面優於盲打）
-    </span>
-</li>
-<li id="ref8" style="margin-bottom: 0.6rem;">
-    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Saltzman BM, et al. <em>Amniotic fluid-derived biologics in orthopaedics: A comprehensive review.</em> J Am Acad Orthop Surg. 2018;26(10):361-366.
-        <a href="https://pubmed.ncbi.nlm.nih.gov/29738363/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 29738363</a>
-        （實證：市售羊膜/羊水基質經過嚴格滅菌後，雖然含有生長因子與支架成分，但已不包含活體幹細胞，與 BMAC 的活細胞機轉不同）
-    </span>
-</li>
-<li id="ref9" style="margin-bottom: 0.6rem;">
-    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Hernigou P, et al. <em>Treatment of osteonecrosis with autologous bone marrow grafting.</em> Clin Orthop Relat Res. 2002;(405):14-23.
-        <a href="https://pubmed.ncbi.nlm.nih.gov/12208912/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 12208912</a>
-        （實證：長期的骨科經典研究，證明骨髓幹細胞注射於股骨頭缺血性壞死具有延緩塌陷與促進新骨生成的強大效果）
-    </span>
-</li>
-<li id="ref10" style="margin-bottom: 0.6rem;">
-    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Oliver KS, et al. <em>Safety of autologous bone marrow aspirate concentrate: A retrospective review.</em> Int J Clin Rheumtol. 2015;10(2):83-93.
-        <a href="https://pubmed.ncbi.nlm.nih.gov/25553199/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 25553199</a>
-        （實證：大型回顧研究證實，門診進行之骨髓抽取與 BMAC 注射，重大併發症發生率極微，為高度安全的療程）
-    </span>
-</li>
-    </ol>
-     </div>    <!-- ══════════════════════════════════════════════════════════ -->
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li id="ref1" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Rasovic, P., et al. (2025). Bone Marrow Aspirate Concentrate (BMAC) for Knee Osteoarthritis: A Narrative Review of Clinical Efficacy and Future Directions. <em>Medicina</em>, 61(5), 853. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12113016/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 12113016</a>
+      </span>
+    </li>
+    <li id="ref2" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Chalmers, P.N., et al. (2022). Bone Marrow Aspirate Concentrate Harvesting and Processing Technique. <em>Arthroscopy Techniques</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5443590/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 5443590</a>
+      </span>
+    </li>
+    <li id="ref3" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Han, J.H., et al. (2024). Bone Marrow Aspirate Concentrate Injections for the Treatment of Knee Osteoarthritis: A Systematic Review of Randomized Controlled Trials. <em>Orthopaedic Journal of Sports Medicine</em>, 12. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11618931/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 11618931</a>
+      </span>
+    </li>
+    <li id="ref4" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Silicon Valley Orthopaedics. (2024). Bone Marrow Aspirate Concentrate (BMAC). <a href="https://siliconvalleyortho.com/biologics/bone-marrow-aspirate-concentrate-bmac/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li id="ref5" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Chahla, J., et al. (2017). Quantitation of progenitor cell populations and growth factors after bone marrow aspirate concentration. <em>Journal of Orthopaedic Research</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6454687/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 6454687</a>
+      </span>
+    </li>
+    <li id="ref6" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Gianakos, A.L., et al. (2017). Enhanced Bone Marrow Aspirate Concentrate (BMAC) Preparation Strategy in the Management of Chondromalacia Patella: A Case Report. <em>PMC</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11137323/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 11137323</a>
+      </span>
+    </li>
+    <li id="ref7" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Cassano, J.M., & Fortier, L.A. (2018). Bone marrow aspirate concentrate: review of the literature and current applications in orthopedics. <em>PM&amp;R</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5443590/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 5443590</a>
+      </span>
+    </li>
+    <li id="ref8" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Duke University. (2014). Bone Marrow Aspirate Concentrate Supplementation to Microfracture in the Treatment of Osteochondral Lesions of the Talus (BMAC). <em>ClinicalTrials.gov</em>. <a href="https://clinicaltrials.gov/study/NCT02011295" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">NCT02011295</a>
+      </span>
+    </li>
+    <li id="ref9" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Bornes, T.D., et al. (2022). Impact of the Process Variables on the Yield of Mesenchymal Stromal Cells from Bone Marrow Aspirate Concentrate. <em>Bioengineering</em>, 9(2), 57. <a href="https://www.mdpi.com/2306-5354/9/2/57" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">DOI: 10.3390/bioengineering9020057</a>
+      </span>
+    </li>
+    <li id="ref10" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Cotter, E.J., et al. (2024). Platelet-Rich Plasma, Bone Marrow Aspirate Concentrate, and Hyaluronic Acid Injections Outperform Corticosteroids in Pain and Function Scores at a Minimum of 6 Months as Intra-Articular Injections for Knee Osteoarthritis: A Systematic Review and Network Meta-analysis. <em>PubMed</em>. <a href="https://pubmed.ncbi.nlm.nih.gov/38331363/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 38331363</a>
+      </span>
+    </li>
+    <li id="ref11" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Imam, M.A., et al. (2017). A systematic review of the concept and clinical applications of bone marrow aspirate concentrate in tendon pathology. <em>SICOT-J</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5632955/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 5632955</a>
+      </span>
+    </li>
+    <li id="ref12" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Bone and Joint Clinic of Baton Rouge. (2019). A Prospective Study of Clinical Outcomes Following a Single Intradiscal Injection of BMAC for Single Level Discogenic Low Back Pain. <em>ClinicalTrials.gov</em>. <a href="https://clinicaltrials.gov/study/NCT03912454" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">NCT03912454</a>
+      </span>
+    </li>
+    <li id="ref13" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        NTX Musculoskeletal Institute. (2024). Regenerative Orthopedics: Making Informed Decisions. <a href="https://www.ntxmsk.com/blog/regenerative-orthopedics-making-informed-decisions-43765.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li id="ref14" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Spicer, S.J., et al. (2024). A Comparison of Functional Outcomes in Rotator Cuff Repairs Using Adjunctive Bone Marrow Aspirate Concentrate vs. Bone Marrow Aspirate Concentrate With Platelet-Rich Plasma: A Systematic Review and Meta-Analysis. <em>Cureus</em>, 16(8), e67594. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11416799/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 11416799</a>
+      </span>
+    </li>
+    <li id="ref15" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Filardo, G., et al. (2021). Bone marrow concentrate injections for the treatment of osteoarthritis: evidence from preclinical findings to the clinical application. <em>Knee Surgery, Sports Traumatology, Arthroscopy</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7843474/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 7843474</a>
+      </span>
+    </li>
+  </ol>
+</div>
   `,
   whyChooseUs: [
     '全程使用<strong>醫學中心等級超音波</strong>導引，確保幹細胞精準送達病灶。',
@@ -4311,18 +4612,26 @@ qaList: [
   images: [],
   applicableConditions: ['退化性關節炎', '軟骨缺損', '半月板撕裂', '股骨頭缺血性壞死', '頑固型肌腱炎'],
   qaList: [
-    {
-      question: '抽骨髓會不會傷到神經或脊椎？',
-      answer: '絕對不會。BMAC 抽取的位置是在骨盆後側的「髂骨（腸骨）」，也就是腰帶下方兩側硬硬的骨頭處，與中樞神經所在的脊椎完全不同部位，因此沒有傷害神經或導致癱瘓的風險。'
-    },
-    {
-      question: 'BMAC 治療需要做幾次？',
-      answer: '與 PRP 通常需要 3 次以上的療程不同，BMAC 由於含有高濃度的間質幹細胞與生長因子，通常只需要進行「單次」治療，即能發揮長期的修復與抗發炎效果。'
-    },
-    {
-      question: '做完 BMAC 注射後需要休息很久嗎？',
-      answer: '抽取部位與注射部位前幾天可能會有輕微的痠脹感。一般建議注射後 3-5 天內避免劇烈運動，日常行走活動不受影響。待一週後即可開始搭配物理治療與循序漸進的肌力訓練，幫助組織長得更好。'
-    }
+  {
+    question: 'Q1：BMAC 跟 PRP 可以同時使用嗎？',
+    answer: '可以。部分研究顯示，BMAC 與 PRP 合併使用（BMAC+PRP）在旋轉肌群修補等手術後的功能恢復上有良好效果。PRP 中豐富的血小板生長因子，可以為 BMAC 中的幹細胞提供更好的生長環境。不過，目前研究尚未顯示合併使用比單獨 BMAC 有顯著優勢，因此仍需個別評估。<sup><a href="#ref14" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>'
+  },
+  {
+    question: 'Q2：BMAC 注射幾次才有效？',
+    answer: '目前多數臨床研究採用單次注射的方案。關節炎的治療通常一年可重複 1–2 次，肌腱病變則視癒合情況而定。尚無充分證據支持多次注射比單次注射效果更好，但對於症狀持續者，醫師可能根據臨床評估建議追加注射。<sup><a href="#ref1" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>'
+  },
+  {
+    question: 'Q3：BMAC 療法需要多少費用？有健保給付嗎？',
+    answer: '目前在台灣，BMAC 屬於自費再生療法，費用依機構與適應症不同而有差異。由於整個流程需要專業設備（離心濃縮機）、醫師技術與操作時間，費用通常高於 PRP 注射。目前尚無健保給付，建議患者事先向醫師或機構充分了解費用明細。'
+  },
+  {
+    question: 'Q4：做完 BMAC 後多久可以感受到效果？',
+    answer: 'BMAC 的作用機制較 PRP 更為深層，因此起效時間通常比類固醇注射慢。多數患者在注射後 4–8 週開始感受到疼痛改善，功能恢復通常在 3–6 個月最為明顯。請患者保持耐心，並在醫師指引下進行配套復健。'
+  },
+  {
+    question: 'Q5：關節炎末期（骨對骨）還適合打 BMAC 嗎？',
+    answer: '對於嚴重末期關節炎（Kellgren-Lawrence 分級 IV 級、骨對骨磨損），目前的研究顯示 BMAC 的效果有限，這個階段通常建議直接評估關節置換手術。BMAC 最適合用於中度退化（II–III 級）、尚有部分軟骨結構保留的患者。<sup><a href="#ref1" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>'
+  }
   ]
 },
 
