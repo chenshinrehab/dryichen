@@ -4065,10 +4065,10 @@ qaList: [
 
 {
   slug: 'bmac-injection',
-  title: '新竹BMAC骨髓抽吸濃縮液推薦 / 超音波導引關節再生注射',
+  title: 'BMAC骨髓抽吸濃縮液 / 超音波導引關節再生注射/新竹推薦',
   lastModified: '2026-05-02',
   tags: ['bmac', 'regenerative-medicine'],
-  subtitle: '啟動自體修復力，退化性關節炎與軟骨損傷的進階解方',
+  subtitle: '退化性關節炎與軟骨損傷的進階解方',
   description: '新竹BMAC骨髓抽吸濃縮液注射推薦。針對中重度退化性關節炎、軟骨缺損與頑固性肌腱炎，透過抽取自體骨髓濃縮純化，富含間質幹細胞與生長因子，精準修復受損組織，延緩開刀需求。',
   image: '/images/treatments/bmac.webp',
   features: ['自體細胞', '軟骨修復', '超音波導引精準注射'],
@@ -4325,7 +4325,7 @@ qaList: [
         <tr>
           <th>比較項目</th>
           <th>BMAC（骨髓抽吸濃縮液）</th>
-          <th>PRP（富血小板血漿）</th>
+          <th>PRP（高濃度血小板血漿）</th>
           <th>羊膜製品</th>
         </tr>
       </thead>
@@ -4403,11 +4403,11 @@ qaList: [
  
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">療效：短中期效果良好，長期數據持續累積</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    2024 年發表於 Orthopaedic Journal of Sports Medicine 的系統性回顧分析了所有已發表的 BMAC 膝關節注射隨機對照試驗，結論為：BMAC 注射在膝關節退化性關節炎的疼痛緩解與功能改善方面確實有效，但與其他關節內注射療法（如 PRP、玻尿酸）相比，差異未達到最小臨床顯著差異（MCID）的閾值。換句話說，BMAC 有效，但目前尚未有充分證據顯示它顯著優於最佳的 PRP 製劑。
+    2024 年發表於 Orthopaedic Journal of Sports Medicine 的系統性回顧分析了所有已發表的 BMAC 膝關節注射隨機對照試驗，結論為：BMAC 注射在膝關節退化性關節炎的疼痛緩解與功能改善方面確實有效，但與其他關節內注射療法（如 PRP、玻尿酸）相比，差異未達到最小臨床顯著差異的閾值。換句話說，BMAC 有效，但目前尚未有充分證據顯示它顯著優於最佳的 PRP 製劑。
     <sup><a href="#ref3" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    在肌腱病變方面，BMAC 的表現更為突出。特別是作為旋轉肌群修補手術的輔助，能顯著降低術後肌腱再撕裂率，且功能評分（如 ASES 和 UCLA 評分）均有明顯改善。
+    在肌腱病變方面，BMAC 的表現更為突出。特別是作為旋轉肌群修補手術的輔助，能顯著降低術後肌腱再撕裂率，且功能評分均有明顯改善。
     <sup><a href="#ref14" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>
   </p>
  
@@ -4496,7 +4496,7 @@ qaList: [
  
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
     BMAC 骨髓抽吸濃縮液注射療法，代表了再生醫學的重要進展。它不只是暫時壓制疼痛，而是試圖用身體自身的修復力量，從根本上改善受損組織的狀態。對於中度退化性關節炎、慢性肌腱病變等保守治療效果有限的患者，BMAC 提供了一個在手術之前值得認真考慮的選項。
-  </p>
+  </p><br>
  
   <p style="color: #475569; font-size: 1.05rem;">
     當然，BMAC 也不是萬能的。療效因人而異，受患者年齡、病灶嚴重度、製備品質與術後配合度等因素影響。最重要的，是在充分了解自身狀況後，與專業醫師共同討論，制定最適合自己的個人化治療計畫。
@@ -4512,7 +4512,7 @@ qaList: [
        target="_blank"
        rel="noopener noreferrer"
        style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
-        預約門診評估 BMAC 是否適合您
+        預約專科醫師超音波評估
     </a>
   </div>
 </div>
@@ -4600,12 +4600,12 @@ qaList: [
 </div>
   `,
   whyChooseUs: [
-    '全程使用<strong>醫學中心等級超音波</strong>導引，確保幹細胞精準送達病灶。',
-    '微創骨髓抽取技術，<strong>局部麻醉且過程快速</strong>，大幅降低疼痛感。',
-    '客製化再生醫療方案，清楚分析 PRP、羊膜與 BMAC，不盲目推銷。'
+    '全程使用<strong>醫學中心等級超音波</strong>導引，確保細胞精準送達病灶。',
+    '微創骨髓抽取技術，<strong>局部麻醉且過程快速</strong>。',
+    '客製化再生醫療方案，不盲目推銷。'
   ],
   treatmentFocus: [
-    '<a href="/diseases/knee/osteoarthritis" class="text-cyan-400 hover:underline">中重度退化性關節炎</a>🔍️',
+    '中重度退化性關節炎',
     '軟骨缺損與半月板撕裂。',
     '經過多次 PRP 治療仍未見明顯改善者。'
   ],
@@ -4614,11 +4614,11 @@ qaList: [
   qaList: [
   {
     question: 'Q1：BMAC 跟 PRP 可以同時使用嗎？',
-    answer: '可以。部分研究顯示，BMAC 與 PRP 合併使用（BMAC+PRP）在旋轉肌群修補等手術後的功能恢復上有良好效果。PRP 中豐富的血小板生長因子，可以為 BMAC 中的幹細胞提供更好的生長環境。不過，目前研究尚未顯示合併使用比單獨 BMAC 有顯著優勢，因此仍需個別評估。<sup><a href="#ref14" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>'
+    answer: '可以。部分研究顯示，BMAC 與 PRP 合併使用（BMAC+PRP）在旋轉肌群修補等手術後的功能恢復上有良好效果。PRP 中豐富的血小板生長因子，可以為 BMAC 中的幹細胞提供更好的生長環境。不過，目前研究尚未顯示合併使用比單獨 BMAC 有顯著優勢，因此仍需個別評估。'
   },
   {
     question: 'Q2：BMAC 注射幾次才有效？',
-    answer: '目前多數臨床研究採用單次注射的方案。關節炎的治療通常一年可重複 1–2 次，肌腱病變則視癒合情況而定。尚無充分證據支持多次注射比單次注射效果更好，但對於症狀持續者，醫師可能根據臨床評估建議追加注射。<sup><a href="#ref1" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>'
+    answer: '目前多數臨床研究採用單次注射的方案。關節炎的治療通常一年可重複 1–2 次，肌腱病變則視癒合情況而定。尚無充分證據支持多次注射比單次注射效果更好，但對於症狀持續者，醫師可能根據臨床評估建議追加注射。'
   },
   {
     question: 'Q3：BMAC 療法需要多少費用？有健保給付嗎？',
@@ -4630,7 +4630,7 @@ qaList: [
   },
   {
     question: 'Q5：關節炎末期（骨對骨）還適合打 BMAC 嗎？',
-    answer: '對於嚴重末期關節炎（Kellgren-Lawrence 分級 IV 級、骨對骨磨損），目前的研究顯示 BMAC 的效果有限，這個階段通常建議直接評估關節置換手術。BMAC 最適合用於中度退化（II–III 級）、尚有部分軟骨結構保留的患者。<sup><a href="#ref1" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>'
+    answer: '對於嚴重末期關節炎（Kellgren-Lawrence 分級 IV 級、骨對骨磨損），目前的研究顯示 BMAC 的效果有限，這個階段通常建議直接評估關節置換手術。BMAC 最適合用於中度退化（II–III 級）、尚有部分軟骨結構保留的患者。'
   }
   ]
 },
