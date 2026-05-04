@@ -121,7 +121,12 @@ export const sportsInjuriesData = [
         description: '用白話的方式解釋增生療法的原理，並深入比較高濃度葡萄糖（Dextrose Prolotherapy）與富血小板血漿（PRP）的機制、效果與適應症。實證研究帶你了解這兩種再生療法的差異，幫助你做出更明智的治療選擇。',
         image: '/images/news/article/prolotherapy-dextrose-prp1.webp',
       },
-
+                                          {
+        slug: 'prolotherapy-injection-interval',
+        title: '增生療法注射間隔全解析：為什麼葡萄糖隔兩週、PRP要四週',
+        description: '從運動醫學角度深度解析增生療法中高濃度葡萄糖建議兩週施打一次、PRP建議四週施打一次的科學根據，說明注射間隔太短或太長的影響，以及為何完成3到5次完整療程才能達到最佳療效。',
+        image: '/images/news/article/prolotherapy-interval.webp',
+      },
                                     {
         slug: 'ligament-ha-vs-prp',
         title: '韌帶玻尿酸全解析!與PRP怎麼選？',

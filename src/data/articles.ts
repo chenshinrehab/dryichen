@@ -4,6 +4,555 @@ export const articlesData: NewsPost[] = [
 
 
 {
+  id: 'prolotherapy-injection-interval',
+  title: '增生療法注射間隔全解析：為什麼葡萄糖隔兩週、PRP要四週',
+  lastModified: '2026-05-04',
+  category: '衛教文章',
+  date: '2026-05-04',
+  summary: '從運動醫學角度深度解析增生療法中高濃度葡萄糖建議兩週施打一次、PRP建議四週施打一次的科學根據，說明注射間隔太短或太長的影響，以及為何完成3到5次完整療程才能達到最佳療效。',
+  coverImage: '/images/news/article/prolotherapy-interval.webp',
+  seoTitle: '增生療法注射間隔全解析：為什麼葡萄糖打兩週、PRP要等四週？',
+  seoDescription: '從運動醫學角度深度解析增生療法中高濃度葡萄糖建議兩週施打一次、PRP建議四週施打一次的科學根據，說明注射間隔太短或太長的影響，以及為何完成3到5次完整療程才能達到最佳療效。',
+  keywords: [
+    '增生療法',
+    'PRP',
+    '高濃度葡萄糖',
+    '注射間隔',
+    '再生注射',
+    '肌腱修復',
+    '運動醫學',
+    '增生注射療程',
+    '葡萄糖注射'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    增生療法（Prolotherapy）是一種透過注射特定溶液來刺激人體自然修復機制的再生注射治療。高濃度葡萄糖（Dextrose）與高濃度血小板血漿（PRP）是目前最常使用的兩種注射物，兩者雖然都在幫助組織癒合，但作用機制不同，因此建議的注射間隔也有所差異。<br><br>研究顯示，高濃度葡萄糖的炎症反應約在72小時內消退，細胞增生在注射後數週內達到高峰，因此建議間隔約兩週再施打下一次，讓每次修復效果能接力累積而非互相干擾。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1876382022000920" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
+    PRP則因為釋放的生長因子需要更長時間誘導纖維母細胞增生與膠原蛋白重塑，增殖期可延續1到4週以上，因此建議間隔四週讓當次修復效果充分發揮。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9917492/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup><br><br>
+    完成3到5次完整療程的重要性，在於組織修復的三個階段——炎症期、增殖期、重塑期——需要多次刺激才能讓膠原纖維規律排列，達到長期穩定的修復效果。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4938120/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[3]</a></sup>
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、增生療法到底在做什麼？先認識「人體修復的三個階段」
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    要理解為什麼注射間隔這麼重要，必須先了解一件事：你的身體在組織受損後，有一套固定的修復程序，就像蓋房子一樣有先後順序，每個階段都需要足夠的時間。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    無論是肌腱、韌帶還是關節軟骨，組織受傷後的修復過程可以分為三個主要階段：
+  </p>
+
+  <div style="background-color: #1e293b; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+    <h3 style="color: #38bdf8; font-size: 1.2rem; font-weight: bold; margin-top: 0; margin-bottom: 0.75rem;">第一階段：炎症期（Inflammation Phase）</h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.05rem; margin-bottom: 0;">
+      傷後的前幾天（約1到3天），身體派出免疫細胞清理「戰場」，同時釋放細胞激素和趨化因子，召喚修復部隊抵達現場。這個階段你可能感覺注射部位有酸痛、腫脹感，這是<strong style="color: #ffffff;">正常且必要的過程</strong>，代表修復機制已啟動。
+    </p>
+  </div>
+
+  <div style="background-color: #1e293b; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+    <h3 style="color: #34d399; font-size: 1.2rem; font-weight: bold; margin-top: 0; margin-bottom: 0.75rem;">第二階段：增殖期（Proliferative Phase）</h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.05rem; margin-bottom: 0;">
+      約在注射後1到4週進行，纖維母細胞（Fibroblast）大量增生，開始合成膠原蛋白來填補受損區域。這個階段就像裝潢工人進場施工——需要時間，且不能隨便打斷。
+      <sup><a href="https://medicine.osu.edu/-/media/files/medicine/departments/sports-medicine/prpshoulder2020.pdf" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[4]</a></sup>
+    </p>
+  </div>
+
+  <div style="background-color: #1e293b; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+    <h3 style="color: #f59e0b; font-size: 1.2rem; font-weight: bold; margin-top: 0; margin-bottom: 0.75rem;">第三階段：重塑期（Remodeling Phase）</h3>
+    <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.05rem; margin-bottom: 0;">
+      從注射後約第一個月開始，可持續長達6到12個月。新生的膠原纖維從雜亂排列逐漸轉為規律、有方向性的排列，組織結構愈來愈接近正常狀態，強度也逐步提升。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9917492/" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[2]</a></sup>
+    </p>
+  </div>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    增生療法的核心精神，就是透過注射物<strong style="color: #ffffff;">在對的時間點再次啟動這套修復程序</strong>，讓每一次注射的效果能夠疊加，達到一加一大於二的修復成效。這也是注射間隔設計的根本原因。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4938120/" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[3]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、高濃度葡萄糖：為什麼建議間隔兩週？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    高濃度葡萄糖（通常是15%到25%的高滲透壓葡萄糖溶液）注射到組織後，會引發一連串局部反應，刺激生長因子釋放，啟動修復所需的炎症前期反應。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">葡萄糖注射的作用時間軸</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    根據體外細胞實驗研究，葡萄糖注射後誘發的炎症反應在<strong style="color: #ffffff;">約72小時內會自行消退</strong>。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1876382022000920" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[1]</a></sup>
+    這段「短暫但必要的炎症期」正是觸發後續修復反應的關鍵——炎症消退後，身體進入增殖期，開始合成膠原蛋白並修復受損的組織結構。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    動物實驗也觀察到，葡萄糖注射後1、2、4、8週都能見到血管增生與膠原纖維束增厚的現象，代表修復反應確實持續在進行中。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1876382022000920" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[1]</a></sup>
+    根據這個時間軸，在炎症期結束、增殖期進入初期（約注射後7到14天）再次施打，可以在身體剛完成第一波清理工作、修復部隊正在運作的狀態下，給予第二次刺激，讓修復效果「接力疊加」。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">臨床研究如何設計注射間隔？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    在針對慢性肌腱病變的增生療法研究中，多數高品質的葡萄糖注射研究採用<strong style="color: #ffffff;">每兩到三週注射一次</strong>的設計。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1876382022000920" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[1]</a></sup>
+    例如在針對足底筋膜炎的隨機對照試驗中，患者在超音波導引下每兩週接受一次葡萄糖注射，結果顯示疼痛及功能均有顯著改善。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4938120/" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[3]</a></sup>
+    美國家庭醫師學會（AAFP）的文獻回顧也指出，增生療法的注射間隔通常在兩到六週之間，依療程設計與治療部位而定。
+    <sup><a href="https://www.aafp.org/pubs/afp/issues/2011/1201/p1208.html" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[5]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      葡萄糖注射後，許多患者在第2到3天會感覺「比打針之前還痛」，這是正常的炎症反應，而非治療失敗的訊號。臨床上最需要提醒的是：這段時間<strong>不要自行服用消炎止痛藥（NSAIDs）</strong>，因為這類藥物會壓制炎症反應，等於把修復部隊趕走，反而讓葡萄糖注射的效果大打折扣。如果疼痛難耐，可以使用普拿疼（乙醯胺酚）代替。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、PRP高濃度血小板血漿：為什麼需要間隔四週？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    PRP是從患者自身血液中抽取、離心濃縮後的血小板製劑，濃縮了大量的生長因子，包括血小板衍生生長因子（PDGF）、轉化生長因子-β（TGF-β）、血管內皮生長因子（VEGF）和類胰島素生長因子（IGF-1）等，這些生長因子對組織修復和膠原蛋白合成都有直接的促進作用。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9917492/" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[2]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">PRP的生長因子釋放需要更長的作用窗口</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    PRP注射後，血小板活化並開始釋放生長因子，這個釋放過程持續約1到3天，接著引發更大規模的細胞修復反應。研究顯示，<strong style="color: #ffffff;">PRP對肌腱細胞的修復作用在注射後第三到四週尤其明顯</strong>，正是纖維母細胞增生高峰期。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9917492/" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    根據俄亥俄州立大學運動醫學中心的PRP術後照護指引，注射後第1到4週屬於增殖期，PDGF正在招募纖維母細胞合成膠原蛋白；第1到3個月則進入重塑期，膠原纖維逐漸組織化、強度增加。
+    <sup><a href="https://medicine.osu.edu/-/media/files/medicine/departments/sports-medicine/prpshoulder2020.pdf" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[4]</a></sup>
+    因此，等到增殖期接近尾聲、約注射後四週時，再給予第二次PRP刺激，是在生長因子作用充分發揮、組織已有初步修復基礎的情況下再疊加效果，而非打斷進行中的修復工程。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    德國工作小組針對PRP治療的立場聲明也指出，對於慢性肌腱病變，多次注射（2到4次）效果優於單次注射，但目前尚無統一的注射間隔指引，需根據個別情況調整。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7471237/" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[6]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      許多患者打完第一次PRP後，覺得一個月「等很久」，中途因為症狀有改善就自行停止療程。但這恰好是最可惜的時間點——第一次PRP效果剛剛建立基礎，後續的注射是在這個基礎上疊加，缺乏後續刺激就像只蓋了地基的房子，無法達到完整的結構強度。臨床數據顯示，多數患者在第二次或第三次注射後才開始看到明顯、持久的改善。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9235417/" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[7]</a></sup>
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、注射間隔太短或太長，會發生什麼事？
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">⚠️ 間隔太短的問題：打斷修復工程</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    如果在炎症期尚未充分消退、增殖期剛要開始就再次注射，就像在水泥還沒乾的地板上繼續施工——新的炎症反應會與正在進行中的修復反應互相干擾，不但不能加速修復，反而可能造成局部組織的過度負擔。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    對葡萄糖增生療法而言，若間隔少於一週，上一次注射引發的炎症可能尚未完全消退，患者仍處於局部疼痛或腫脹的狀態，此時再次注射會讓組織承受雙重炎症負擔，不僅不舒服，也可能使修復訊號混亂。
+    <sup><a href="https://asra.com/news-publications/asra-updates/blog-landing/legacy-b-blog-posts/2021/10/15/prolotherapy-review-with-background-history-mechanism-of-action-and-current-evidence" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[8]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    對PRP而言，過短的間隔意味著上一次注射釋放的生長因子還沒發揮完全作用就被新一輪注射覆蓋，相當於修復材料還在施工中就又澆了一層，容易造成生長因子濃度過高導致的拮抗效應（生長因子過多反而可能抑制某些修復訊號），降低治療效率。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4436449/" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[9]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">⚠️ 間隔太長的問題：修復訊號消散</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    另一個極端是間隔太長——例如三個月才回來打第二針。這時候上一次注射引發的修復反應早已結束，組織已回到靜止狀態，下一次注射等於從頭開始，無法在前一次修復的基礎上繼續疊加效果。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    更重要的是，慢性肌腱病變或退化性關節炎的患者，其組織本身的修復能力已經不足，若修復反應沒有持續被「喚醒」，組織很容易回到退化性的病理狀態。系統性回顧研究也指出，增生療法的療效建立在多次注射的累積效果上，而非單次大量注射。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7861898/" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[10]</a></sup>
+  </p>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 700px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 180px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>情境</th>
+          <th>高濃度葡萄糖</th>
+          <th>PRP</th>
+          <th>可能影響</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>間隔太短（＜1週）</td>
+          <td>炎症未消退即再次刺激</td>
+          <td>生長因子疊加過量</td>
+          <td>組織過度負擔、修復訊號混亂</td>
+        </tr>
+        <tr>
+          <td>建議間隔（葡萄糖約2週）</td>
+          <td>炎症消退、增殖期初期</td>
+          <td>—</td>
+          <td>修復效果最佳疊加</td>
+        </tr>
+        <tr>
+          <td>建議間隔（PRP約4週）</td>
+          <td>—</td>
+          <td>增殖期充分發揮後</td>
+          <td>生長因子效益最大化</td>
+        </tr>
+        <tr>
+          <td>間隔太長（＞3個月）</td>
+          <td>修復反應已結束</td>
+          <td>修復反應已結束</td>
+          <td>效果難以累積、如同從頭開始</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、為什麼要把3到5次療程做完？單次注射不夠嗎？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是很多患者的疑問：「打一次有效果了，為什麼還要繼續打？」答案藏在組織修復的生物學裡。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">慢性肌腱病變的本質：退化，不只是發炎</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    慢性肌腱病變（Tendinopathy）的組織特徵包括膠原纖維排列紊亂、膠原蛋白從第一型（強韌）大量轉化為第三型（脆弱）、局部血管異常增生、肌腱細胞退化等，這些變化不是一次注射就能逆轉的結構性問題。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10401606/" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[11]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    每一次增生注射，就像給退化的組織按下「重啟鍵」，誘導一波修復反應。但這波修復反應是局部且有限的——一次注射大約能影響的膠原重塑量有限。若要讓整個受損區域的膠原纖維從無序排列恢復到有規律的力學走向，需要多次有效刺激的累積。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11350620/" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[12]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">研究數據怎麼說？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    根據針對膝關節增生療法的文獻回顧，患者平均需要4到6次注射才能達到最佳療效；部分患者在第一次注射後確實有改善，但<strong style="color: #ffffff;">多數患者要在第二次或第三次注射後才能看到持久、顯著的效果</strong>。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9235417/" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[7]</a></sup>
+    如果在第三次注射前仍未看到任何改善，才建議考慮其他治療方式。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    而PRP在跳躍膝（髕骨肌腱病變）的系統性回顧研究也顯示，PRP能顯著促進細胞重塑效果並縮短修復時間，但要達到有臨床意義的組織結構改善，同樣需要完整的多次療程。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10771364/" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[13]</a></sup>
+    值得一提的是，美國疼痛復健醫學學會（AAPMR）的文獻也指出，對於慢性病灶，多次注射療程的設計已是臨床共識，而非可選可不選的配件。
+    <sup><a href="https://now.aapmr.org/therapeutic-injection-of-dextrose-prolotherapy-perineural-injection-therapy-and-hydrodissection/" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[14]</a></sup>
+  </p>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 典型案例：</strong><br><br>曾有一位肩袖肌腱炎的患者，在接受第二次PRP注射後症狀明顯改善，認為「已經好了」而停止療程。三個月後症狀復發，再次回診時，超音波檢查顯示肌腱的結構改善程度有限，因為原本計畫中後續的注射作用（膠原蛋白重塑強化）從未完成。最終需要重新從頭規劃整個療程。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">療程完整性的另一個原因：戴維斯定律</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    在運動醫學領域有一條重要原則叫做「戴維斯定律（Davis' Law）」：<strong style="color: #ffffff;">軟組織的修復方向，會根據它所承受的應力方向而定</strong>。增生療法誘導的膠原蛋白新生，需要配合適當的物理治療和漸進式負重才能形成有功能的排列。
+    <sup><a href="https://medicine.osu.edu/-/media/files/medicine/departments/sports-medicine/medical-professionals/rehabilitation-protocols/gluteal-tendon-prp2021.pdf" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[4]</a></sup>
+    完整療程的設計，正是在多次注射搭配物理治療的框架下，確保新生組織得以朝對的方向生長，而非只是填充了一堆雜亂的膠原纖維。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 六、常見三大迷思解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「打了之後沒有痛感，代表沒效？」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 每個人的炎症反應強度不同，有些人打完葡萄糖幾乎沒有明顯酸痛，這不代表沒有效果。組織修復在細胞層面仍在進行，不以疼痛感強弱來判斷療效。相反地，若打完非常痛，也不必過度擔心——這只是個體炎症敏感度的差異。
+          <sup><a href="https://asra.com/news-publications/asra-updates/blog-landing/legacy-b-blog-posts/2021/10/15/prolotherapy-review-with-background-history-mechanism-of-action-and-current-evidence" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[8]</a></sup>
+          </span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「症狀改善了就可以停止療程？」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>要小心！</strong> 疼痛減輕是修復過程中的一個訊號，但不等於組織結構已完全恢復。肌腱的膠原纖維重塑需要數個月，早期停止療程可能讓修復停在「功能性改善」卻缺乏「結構性修復」的階段，遇到再次活動或受力就容易復發。
+          <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9235417/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[7]</a></sup>
+          </span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「打得越頻繁，好得越快？」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>非常錯誤！</strong> 增生療法的核心邏輯是「給身體時間完成每一個修復階段，然後在正確時機再次刺激」。過頻的注射不只無法加速修復，還可能干擾正在進行中的修復過程，甚至讓生長因子濃度過高導致拮抗效應。更重要的是，過度注射也可能增加局部組織的機械性刺激傷害。
+          <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4436449/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[9]</a></sup>
+          </span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、增生療法注射期間，日常生活要注意什麼？
+  </h2>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">避免消炎止痛藥（NSAIDs）：</strong>包括布洛芬（Ibuprofen）、那普洛先（Naproxen）等藥物會抑制炎症反應，在注射後至少72小時內應避免使用，否則會破壞增生療法的修復機制。若真的需要止痛，可使用普拿疼。
+      <sup><a href="https://asra.com/news-publications/asra-newsletter/newsletter-item/asra-news/2022/07/29/prolotherapy-background-history-mechanism-of-action-and-current-evidence" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[8]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">適當休息，避免過度使用：</strong>注射後建議休息2到3天，讓組織進入修復模式。不需要完全臥床，適當日常活動有助於循環，但應避免高強度運動或讓注射部位承受過大的力量。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9235417/" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">[7]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">配合物理治療：</strong>增生療法誘導的膠原蛋白新生，需要在適當的機械應力下才能形成有功能的排列。配合物理治療師的漸進式訓練計畫，是讓療效最大化的關鍵。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">保持注射部位清潔：</strong>注射後傷口小，通常只需普通護理，但應避免泡澡或游泳至少24到48小時，防止感染。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">按時回診，不要自行調整間隔：</strong>醫師設計的注射間隔有其生物學依據，若無特殊理由，請按照既定計畫回診，不要因為「感覺好了」就拖延，也不要因為「急著好」就要求縮短間隔。
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：高濃度葡萄糖和PRP可以同一次一起打嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      這需要根據患者的病況、病灶位置和醫師的判斷。有些情況下醫師會在同一次療程中搭配使用，例如在關節內打PRP、關節外韌帶附著點打葡萄糖，各自針對不同的病灶。但若擔心效果互相干擾，也可分開施打。最重要的是與你的醫師充分討論，找到適合你病情的個人化方案。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：打完增生療法後多久可以運動？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      一般建議注射後2到3天休息，之後可以逐步恢復低強度活動。葡萄糖增生療法的恢復通常比PRP快；PRP因為生長因子作用時間較長，通常建議在第一到四週以輕度活動為主，第四週後再逐步增加強度。具體的運動恢復時間表應由你的物理治療師和醫師共同制定。
+      <sup><a href="https://orthorepair.com/blog/prp-injection-recovery-timeline-week-by-week-guide-to-getting-back-to-activity/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[15]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：增生療法對哪些疾病效果最好？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      目前證據等級較高的適應症包括：膝關節骨關節炎、慢性肌腱病變（網球肘、跳躍膝、阿基里斯腱病變、足底筋膜炎）、韌帶鬆弛相關的關節不穩、退化性脊椎疾病等。急性傷害（如急性扭傷）通常不在增生療法的第一線適應症，因為急性期自身修復能力充足，若過早介入反而可能干擾自然癒合。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7861898/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：打增生療法需要搭配吃什麼補充品嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      目前沒有強烈的科學證據支持特定補充品能顯著增強增生療法效果，但均衡飲食、充足蛋白質攝取（膠原蛋白合成所需）、維生素C（促進膠原蛋白生成）和充足睡眠，都是有助於組織修復的基本要素。某些患者在醫師建議下會補充膠原蛋白前驅物，但應事先與醫師討論，避免與治療產生干擾。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：增生療法做完幾次後效果可以維持多久？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      研究顯示，完整療程後的效果可持續6個月至1年以上，部分患者達到更長期的緩解。但這也取決於病況嚴重程度、患者是否配合物理治療、日常活動強度調整，以及是否同時處理造成問題的根本原因（例如肌力不足、姿勢問題）。若不改變誘發傷害的習慣，即使完成療程，傷害也可能再次發生。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7861898/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    增生療法不是「打了就好」的快速解法，而是一套尊重人體修復生物學的精準治療策略。高濃度葡萄糖建議兩週施打一次、PRP建議四週施打一次，背後都有紮實的組織修復生理學依據——每一針都是在組織修復的適當時間窗口內，給予下一波刺激，讓效果可以接力疊加而非互相干擾。
+  </p><br>
+
+  <p style="color: #475569; font-size: 1.05rem;">
+    完整做完3到5次療程，是因為慢性組織退化的逆轉需要時間與多次累積；症狀改善了就停針，就像蓋了地基就放棄蓋房子一樣，得不到真正穩固的結構修復。<strong style="color: #1e293b;">遵守注射間隔、完成療程、搭配物理治療</strong>，是讓增生療法發揮最大效益的三個關鍵。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：若你正在接受增生療法，對照本文的說明，確認自己的注射間隔與療程計畫是否符合預期，並在下次回診時和醫師進一步討論你目前的修復進度。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約新竹專業增生療法門診
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Bertolucci, G., & Lisi, E. (2022). Dextrose prolotherapy for chronic tendinopathy: A scoping review. ScienceDirect. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1876382022000920" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PII: S1876382022000920</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Tsoukas, M.A., et al. (2023). Molecular and Biologic Effects of Platelet-Rich Plasma (PRP) in Ligament and Tendon Healing and Regeneration: A Systematic Review. PMC9917492. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9917492/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9917492</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hauser, R.A., et al. (2016). A Systematic Review of Dextrose Prolotherapy for Chronic Musculoskeletal Pain. Clinical Medicine Insights: Arthritis and Musculoskeletal Disorders. PMC4938120. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4938120/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 4938120</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Ohio State University Wexner Medical Center. (2020). Shoulder Ultrasound Guided PRP Injection – Post-Procedure Care Protocol. <a href="https://medicine.osu.edu/-/media/files/medicine/departments/sports-medicine/prpshoulder2020.pdf" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">OSU Sports Medicine Protocol</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Rabago, D., et al. (2011). Prolotherapy for Chronic Musculoskeletal Pain. American Family Physician, 84(11), 1208–1210. <a href="https://www.aafp.org/pubs/afp/issues/2011/1201/p1208.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">AAFP Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Braun, H.J., et al. (2020). Platelet-rich plasma (PRP) as therapy for cartilage, tendon and muscle damage – German working group position statement. PMC7471237. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7471237/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7471237</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hauser, R.A., & Sprague, I.S. (2022). A Comprehensive Update of Prolotherapy in the Management of Osteoarthritis of the Knee. PMC9235417. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9235417/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9235417</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        ASRA Pain Medicine. (2021). Prolotherapy: Review with Background History, Mechanism of Action, and Current Evidence. <a href="https://asra.com/news-publications/asra-updates/blog-landing/legacy-b-blog-posts/2021/10/15/prolotherapy-review-with-background-history-mechanism-of-action-and-current-evidence" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">ASRA Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Boswell, S.G., et al. (2015). New and Emerging Strategies in Platelet-Rich Plasma Application in Musculoskeletal Regenerative Procedures: General Overview on Still Open Questions and Outlook. PMC4436449. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4436449/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 4436449</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Xue, D., et al. (2021). Prolotherapy for the patients with chronic musculoskeletal pain: systematic review and meta-analysis. PMC7861898. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7861898/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7861898</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Deng, W., et al. (2023). Platelet-rich plasma in the pathologic processes of tendinopathy: a review of basic science studies. PMC10401606. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10401606/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10401606</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Tsikopoulos, K., et al. (2024). Mechanisms, Efficacy, and Clinical Applications of Platelet-Rich Plasma in Tendinopathy: A Comprehensive Review. PMC11350620. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11350620/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11350620</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Ferragina, F., et al. (2024). Platelet-rich plasma for jumper's knee: a comprehensive review of efficacy, protocols, and future directions. PMC10771364. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10771364/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10771364</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Rabago, D., et al. (2025). Therapeutic Injection of Dextrose: Prolotherapy, Perineural Injection Therapy and Hydrodissection. PM&R KnowledgeNow, AAPMR. <a href="https://now.aapmr.org/therapeutic-injection-of-dextrose-prolotherapy-perineural-injection-therapy-and-hydrodissection/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">AAPMR Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Regenerative Institute of Newport Beach. (2026). PRP Injection Recovery Timeline: Week‑By‑Week Guide To Getting Back To Activity. <a href="https://orthorepair.com/blog/prp-injection-recovery-timeline-week-by-week-guide-to-getting-back-to-activity/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+
+
+{
   id: 'ultrasound-vs-xray-guide',
   title: '照X光還是超音波？復健科醫師教你秒懂差異與選擇時機',
   lastModified: '2026-05-02',
