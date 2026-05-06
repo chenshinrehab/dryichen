@@ -30,6 +30,14 @@ export const sportsInjuriesData = [
         description: '受傷後到底該照X光還是超音波？本文用最生活化的「蓋房子」比喻，帶你秒懂為什麼X光看不到韌帶，而超音波卻能將軟組織看個仔細。結合實證醫學，解析這兩種門診最常見檢查的優缺點，以及在扭傷、發炎或懷疑骨折時的最佳選擇策略。',
         image:  '/images/news/article/us-vs-xray-guide.webp',
       },
+
+                  {
+        slug: 'joint-crepitus-causes-and-treatments',
+        title: '關節喀喀響是壞掉了嗎？運動醫學解析三大成因與就醫時機',
+        description: '關節發出喀喀聲卻不痛？本文從運動醫學角度深度解析關節聲音（crepitus）的三大科學成因、各部位無痛性喀喀聲的差異，並整理出必須就醫的「紅旗警示」與日常保養策略。',
+        image: '/images/news/article/joint-crepitus.webp',
+      },
+
                   {
         slug: 'pain-medication-analysis',
         title: '疼痛就吃止痛藥？解析止痛藥與肌肉鬆弛劑的真相與風險',
@@ -133,6 +141,13 @@ export const sportsInjuriesData = [
         description: '韌帶玻尿酸與PRP是修復關節與軟組織的兩大利器，但作用機制大不相同。實證研究揭露，PRP透過生長因子促進組織再生，適合慢性病變；玻尿酸則能提供潤滑、抑制沾黏，對急性扭傷有奇效。本文將系統性剖析兩者的優缺點，幫助您找出最適合的治療方案。',
         image: '/images/news/article/ligament-ha-vs-prp.webp',
       },
+                                    {
+        slug: 'eswt-energy-and-pain-level',
+        title: '震波治療能量開多大才有效？越痛越好嗎？從醫學看最佳疼痛指數',
+        description: '體外震波治療能量要開多大才有效？是不是越痛越好？本文從運動醫學角度深度解析震波能量分級與治療機制，說明為何治療時疼痛指數需維持在VAS 4至6分，並破解震波治療後吃消炎藥與施打麻醉的常見迷思。',
+        image: '/images/news/article/eswt-energy-level.webp',
+      },
+
     ]
   },
 
