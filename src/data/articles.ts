@@ -3,56 +3,51 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
 {
-  "id": "bench-press-injury-analysis",
-  "title": "重訓胸推受傷全解析：肩膀痛、胸大肌撕裂，你是在練壯還是在練傷？",
-  "lastModified": "2026-05-08",
-  "category": "衛教文章",
-  "date": "2026-05-08",
-  "summary": "胸推是健身房最受歡迎卻也最高風險的動作。本文從運動醫學視角出發，解析「肘關節過度外展」、「槓鈴路徑錯誤」與「肩胛不穩」如何導致旋轉肌撕裂與胸大肌受傷。結合 10 篇以上學術文獻，揭露四大胸推地雷動作，並提供科學化的預防與復健策略。",
-  "coverImage": "/images/news/article/bench-press-injury-analysis.webp",
-  "seoTitle": "重訓胸推肩膀痛？專業醫師解析旋轉肌、胸大肌受傷原因與預防策略",
-  "seoDescription": "胸推受傷常見於肩膀與胸部。本文深度剖析肘外展角度、握距與肩胛骨穩定性對肩關節壓力的影響。實證研究教你如何避開地雷動作，預防旋轉肌撕裂與遠端鎖骨骨吸收（重量訓練者肩）。",
-  "keywords": [
-    "胸推受傷",
-    "肩膀痛",
-    "旋轉肌撕裂",
-    "胸大肌撕裂",
-    "重量訓練者肩",
-    "AC joint 疼痛",
-    "運動醫學",
-    "復健科"
+  id: 'bench-press-shoulder-injury',
+  title: '重訓傷害全解析：胸推、肩推的地雷動作，你中了幾個？',
+  lastModified: '2026-05-08',
+  category: '衛教文章',
+  date: '2026-05-08',
+  summary: '從運動醫學角度深入剖析重訓胸推與肩推最容易受傷的原因。手太開、槓鈴降太低、肩膀前推——這些常見的技術錯誤，正在悄悄傷害你的旋轉肌、胸大肌腱、肩鎖關節，甚至關節唇。實證研究告訴你哪個動作最危險，以及如何正確訓練。',
+  coverImage: '/images/news/article/bench-press-injury-analysis.webp',
+  seoTitle: '重訓傷害全解析：胸推、肩推的地雷動作，你中了幾個？',
+  seoDescription: '從運動醫學角度深入剖析重訓胸推與肩推最容易受傷的原因。手太開、槓鈴降太低、肩膀前推——這些常見的技術錯誤，正在悄悄傷害你的旋轉肌、胸大肌腱、肩鎖關節，甚至關節唇。實證研究告訴你哪個動作最危險，以及如何正確訓練。',
+  keywords: [
+    '重訓傷害',
+    '胸推受傷',
+    '肩推受傷',
+    '旋轉肌撕裂',
+    '胸大肌腱斷裂',
+    '肩鎖關節',
+    '肩夾擠症候群',
+    '槓鈴臥推',
+    '肩膀推舉',
+    'SLAP損傷'
   ],
-  "contentHtml": `
+  contentHtml: `
 <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
   <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-    胸推（Bench Press）是訓練上肢推力鏈的核心動作，但若技術不當，極易造成肩部與胸部的嚴重傷害。研究指出，胸推受傷最常發生在肩關節（特別是旋轉肌群與胸鎖關節）以及胸大肌肌腱。
-    <sup><a href="https://doi.org/10.1177/03635465010290011501" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
-    受傷主因通常歸咎於「力學環境不佳」，例如肘關節過度外展導致肩峰下空間變窄，或是肩胛骨缺乏後收穩定，使前側關節囊承受過大張力。
-    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3077363/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup><br><br>
-    此外，過寬的握距與不穩定的槓鈴路徑會顯著增加肩關節扭矩，進而誘發慢性炎症或急性撕裂。
-    <sup><a href="https://journals.lww.com/nsca-jscr/Fulltext/2007/08000/The_Biomechanical_Analysis_of_the_Bench_Press.52.aspx" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
-    本文將拆解這些危險因子，助您建立安全的訓練模式。
+    重量訓練中的胸推（臥推）與肩推（肩膀推舉）是鍛鍊上半身最常見的動作，卻也是最容易造成肩膀與胸部傷害的訓練項目。研究顯示，重訓參與者中有高達 36% 曾因胸推動作發生肩部疼痛，其中 56% 為旋轉肌肌腱炎、20% 為二頭肌腱炎。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11224528/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup><br><br>
+     傷害發生的核心原因，往往不是「重量太重」，而是<strong>錯誤的動作模式</strong>：握距過寬、槓鈴下降位置太低、肩膀外展角度過大、肩胛骨未收緊，以及肩推時手肘打開角度錯誤——這些技術細節，正在悄悄累積傷害。本文將以運動醫學的實證觀點，系統性解析胸推與肩推各種常見錯誤動作與其對應的受傷風險，並提供具體的預防策略。
+     <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK549875/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/15712983/" target="_blank" rel="noopener noreferrer" style="color: #9a3412; text-decoration: underline;">[3]</a></sup>
   </p>
 </div>
-
-
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    一、為什麼胸推容易傷到肩膀？解析「夾擠」機制
+    一、為什麼重訓推舉動作這麼容易傷肩膀？
   </h2>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    在復健科門診，胸推導致的「肩膀前側痛」是最常見的主訴。這類傷害的核心在於<strong style="color: #2dd4bf;">肩峰下夾擠</strong>。
+    肩膀是全身活動度最大的關節，但也因此是穩定性相對最差的關節之一。肩關節的骨頭結構就像一顆高爾夫球放在淺盤子上，主要靠著旋轉肌群（四條深層肌肉：棘上肌、棘下肌、小圓肌、肩胛下肌）、關節唇與韌帶來維持穩定。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    當你在胸推時將手臂完全水平外展（與身體呈 90 度），肱骨頭會向上偏移，擠壓到通過肩峰下空間的「棘上肌肌腱」與「滑液囊」。根據 2007 年的生物力學研究，當肘部與身體夾角越大，肩關節承受的剪力與內旋壓力越顯著，這會直接導致旋轉肌群的慢性微創傷。
-    <sup><a href="https://journals.lww.com/nsca-jscr/Fulltext/2007/08000/The_Biomechanical_Analysis_of_the_Bench_Press.52.aspx" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    當你進行胸推或肩推時，肩關節需要在承受大重量的同時維持精確的動作模式。一旦動作稍有偏差——手開太寬、槓鈴放太後面、手肘角度不對——受力就會從大肌群（胸大肌、三角肌）偏移到較脆弱的旋轉肌群、肩鎖關節（AC joint）或關節唇。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    此外，長期重負荷推行，若缺乏適當的肩胛後收，肩關節會處於一個不穩定的平台。2010 年發表於《Journal of Strength and Conditioning Research》的研究顯示，肩胛骨的穩定度直接決定了胸推時肩關節的健康，不穩定的基座會讓「肱二頭肌長頭肌腱」被迫承擔過多壓力。
-    <sup><a href="https://doi.org/10.1519/JSC.0b013e3181e38260" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    2024年發表在《Frontiers in Physiology》的生物力學研究指出，握距寬度、肩膀外展角度與肩胛骨位置，是影響肩關節受力模式最關鍵的三個技術變數。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11224528/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup> 換句話說，相同的重量，不同的姿勢，傷害風險可能差距懸殊。
   </p>
 </section>
 
@@ -60,44 +55,175 @@ export const articlesData: NewsPost[] = [
 
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    二、四大地雷動作：你是否也在這樣推？
+    二、胸推（臥推）：五個最危險的錯誤動作
   </h2>
 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 手肘外展過大）</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    這是最經典的受傷姿勢：手肘與軀幹呈 90 度「T 字型」。
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    從運動醫學的角度看，這會使肱骨處於極端的內旋位置，增加肩峰下夾擠風險。研究證實，將手肘角度微縮至 45-75 度之間，能有效增加肩峰下空間，並減少對肩關節唇的壓力。
-    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3077363/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
-  </p>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">錯誤一：握距太寬（手太開）</h3>
 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 握距過寬</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    許多人為了縮短行程而使用極寬握距。然而，當握距超過肩寬的 1.5 倍時，肩關節的扭矩會增加 1.5 倍以上。
+    這是胸推中最常見的錯誤之一。很多人直覺認為「手開越寬，胸肌練越多」，但這個觀念在醫學上是有代價的。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    2021 年的一項系統性回顧指出，寬握距雖然能稍微增加胸肌活化，但會顯著提升胸大肌肌腱撕裂與 （肩鎖關節）退化的機率。
-    <sup><a href="https://doi.org/10.3390/ijerph18168252" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+    當握距超過肩寬的 1.5 倍（雙側肩峰寬，BAW）時，肩鎖關節（鎖骨末端與肩胛骨相接的關節）所承受的壓縮力會顯著上升。研究顯示，握距達到 2 個肩峰寬度時，肩鎖關節壓縮力明顯高於較窄握距，長期累積下來容易造成「鎖骨末端骨溶解」—— 一種因反覆微創傷導致鎖骨末端骨質被身體吸收的慢性傷害，在重訓愛好者中並不罕見。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11224528/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
   </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">容易傷到哪裡：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">肩鎖關節——慢性磨損與鎖骨末端骨溶解</li>
+    <li style="margin-bottom: 0.5rem;">旋轉肌群——承受過多剪切力，加速肌腱病變</li>
+    <li style="margin-bottom: 0.5rem;">胸大肌腱——在最大延伸位置承受離心負荷</li>
+  </ul>
 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">3. 肩胛骨「離席」</h3>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">錯誤二：槓鈴下降位置太低（放太後面，觸碰到鎖骨附近）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    在推起槓鈴的過程中，若肩膀跟著往前「送」，肩胛骨就會離開臥推凳。這會導致肩關節前側的前關節囊承受巨大壓力。長期下來會造成「重量訓練者肩」，其本質是遠端鎖骨的骨吸收與炎症。
-    <sup><a href="https://doi.org/10.1177/03635465030310062601" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    許多人做臥推時，槓鈴會下降到接近脖子或上胸的位置（有人稱為「頸推」或「上胸觸碰」），認為這樣能拉伸胸肌更多。但從生物力學角度，這個動作會讓手臂在「最後 30 度肱骨伸展合併外旋」的位置下，承受最大的偏心負荷。
   </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究明確指出，胸大肌撕裂最常發生在「臥推下降的最低點，手臂處於最後 30 度肱骨伸展位置、同時伴隨外旋」的時刻。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK549875/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    槓鈴下降越低、觸碰位置越靠上胸，胸大肌的胸肋頭短纖維拉伸幅度越大，對肌腱附著點的拉扯力越強。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">容易傷到哪裡：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">胸大肌腱——從肌腱端撕裂（肱骨附著點斷裂），嚴重者需手術</li>
+    <li style="margin-bottom: 0.5rem;">肌肉－肌腱交接處——急性撕裂，常聽到「啪」的聲音</li>
+    <li style="margin-bottom: 0.5rem;">肩關節前囊與關節唇——前側受到過度牽張</li>
+  </ul>
 
-  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨切見解 #1</h4>
-    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
-      臨床上觀察到，很多胸推受傷的患者並不是因為「推不動」，而是因為下放過程太快且不穩。肌腱傷害往往發生在「離心階段」（槓鈴下放時），當你失去肌肉控制讓槓鈴「彈」離胸口，胸大肌肌腱會瞬間承受數倍的張力，這正是胸肌斷裂的最常見路徑。
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 典型案例：</strong><br><br>
+      胸大肌撕裂主要發生在 20–40 歲的活躍男性，通常是在做臥推時突然感到「撕裂感」或聽到「啪」的一聲，伴隨腋下與上臂立即腫脹和瘀青。這類傷害在健身房中雖然少見，但一旦發生，完整的肌腱斷裂通常需要手術修補，恢復期長達 4–6 個月。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/15712983/" target="_blank" rel="noopener noreferrer" style="color: #9a3412; text-decoration: underline;">[3]</a></sup>
     </p>
   </div>
 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">4. 自殺式握法</h3>
-
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">錯誤三：肩膀外展角度太大（手肘打開接近 90 度）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    不將拇指環繞槓鈴的握法。除了槓鈴滑落的致命風險外，這種握法會使腕關節過度背屈（Hyperextension），將壓力轉移至橈神經與手腕韌帶，長期引發手腕慢性疼痛。
+    在做臥推時，如果手肘從身側完全打開、形成「T」字形，讓肩膀外展角度達到 70–90 度，肩關節內部的旋轉肌（尤其是棘上肌）就會被夾在肱骨頭與肩峰之間，產生所謂的「肩夾擠」。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究建議，臥推時的最佳肩膀外展角度應維持在 45–60 度之間，也就是手肘介於完全打開與完全靠近身體之間。這個角度能讓受力沿著肩胛骨平面傳遞，大幅降低肩關節內壓力。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11224528/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">容易傷到哪裡：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">棘上肌肌腱——反覆夾擠造成肌腱炎，進一步惡化為部分或完整撕裂</li>
+    <li style="margin-bottom: 0.5rem;">肩峰下滑囊——發炎腫脹，產生肩膀深部疼痛</li>
+    <li style="margin-bottom: 0.5rem;">二頭肌長頭肌腱——在肩關節內受到夾壓</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">錯誤四：肩胛骨未收緊（沒有夾背）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    很多人臥推時肩胛骨貼著椅背、完全放鬆，沒有刻意向中間收攏。這看似小細節，卻對肩關節的保護至關重要。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究發現，收緊肩胛骨能顯著降低肩盂肱骨關節的後方剪切力，同時減少旋轉肌群的代償性活化。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11224528/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    換句話說，夾背能讓更多力量由大肌群（胸大肌）吸收，而非由脆弱的旋轉肌來「撐」。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">容易傷到哪裡：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">肩關節後側結構——反覆後方剪切造成後囊鬆弛</li>
+    <li style="margin-bottom: 0.5rem;">旋轉肌群整體——因過度代償導致慢性肌腱病變</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">錯誤五：重量太重、做到力竭</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    當肌肉疲勞時，動作模式會自動崩潰——肩胛骨開始翼狀突起、手肘外張、槓鈴路徑偏移。2024 年發表於 PubMed 的综述研究強調，相較於速度基礎訓練或留力訓練法，做到完全力竭的訓練方式，在肌肉疲勞狀態下對肩關節造成的傷害風險最高。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/39808810/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">容易傷到哪裡：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">旋轉肌群——在疲勞狀態下代償性過度使用</li>
+    <li style="margin-bottom: 0.5rem;">胸大肌腱——力竭最後幾下最容易在離心階段撕裂</li>
+  </ul>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在門診中，胸推後肩膀持續不適的患者，有相當一部分其實是「慢性肩鎖關節發炎」或「鎖骨末端骨溶解」，而非旋轉肌撕裂。這類傷害的典型症狀是「做交叉手臂動作（如自我擁抱）時，肩膀前上方有深部疼痛」。很多人因誤以為是旋轉肌問題而延誤診斷，其實只要超音波或 X 光就能輕易辨別。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、肩推（肩膀推舉）：三個最危險的錯誤動作
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">錯誤一：手肘完全打開到兩側（形成「T」字形）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是肩推中最容易造成肩夾擠的錯誤。當你的手肘完全打開到與肩膀同高、與身體垂直時，肩關節內部空間會大幅縮小。旋轉肌的肌腱（尤其是棘上肌）與肩峰下滑囊，就夾在肱骨頭與肩峰之間，承受強大的擠壓力。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    骨科醫師的建議是：肩推時，手肘應維持在約 45 度的「斜前方」位置（即肩胛平面），而非完全向兩側展開。這個角度讓肩關節能在最自然的位置發力，同時保有足夠的肩峰下間隙。
+    <sup><a href="https://larsonsportsortho.com/fix-your-overhead-press/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">容易傷到哪裡：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">棘上肌肌腱——肩峰下夾擠，從肌腱炎到部分撕裂</li>
+    <li style="margin-bottom: 0.5rem;">肩峰下滑囊——急性發炎，產生劇烈疼痛</li>
+    <li style="margin-bottom: 0.5rem;">關節唇——長期壓迫導致 SLAP 損傷</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">錯誤二：槓鈴推到頭後方（後頸推）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    「後頸推」是把槓鈴從後腦下降，據說能更強烈刺激三角肌中後束。但這個動作讓頸椎承受壓力，更嚴重的是，它迫使肩膀在「最大外展合併外旋」的不穩定位置下承受重量，是已知最容易造成旋轉肌撕裂和關節唇損傷的動作之一。
+    <sup><a href="https://www.joionline.net/library/the-top-5-worst-shoulder-exercises-to-avoid-lateral-raises-and-more/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">容易傷到哪裡：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">旋轉肌群整體（尤其棘下肌、小圓肌）——在關節最不穩定位置承受最大負荷</li>
+    <li style="margin-bottom: 0.5rem;">SLAP 關節唇損傷——二頭肌長頭肌腱附著點被拉扯</li>
+    <li style="margin-bottom: 0.5rem;">肩關節前囊——過度牽張導致慢性前方不穩定</li>
+    <li style="margin-bottom: 0.5rem;">頸椎——第 4–7 頸椎受到壓縮</li>
+  </ul>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      SLAP 損傷（Superior Labrum Anterior to Posterior tear，關節唇前後撕裂）在重訓愛好者中越來越常見，尤其是長期做後頸推或寬握肩推的族群。這類傷害的症狀很隱晦，常以「深部悶痛、做過頭動作有彈響」為主，許多人誤以為只是「肌肉痠」，直到 MRI 才確診。研究指出，SLAP 損傷的發生與「二頭肌長頭肌腱的反覆離心張力」密切相關，而錯誤的肩推動作正是觸發這個機制的主因之一。<sup><a href="https://www.jospt.org/doi/10.2519/jospt.2009.2850" target="_blank" rel="noopener noreferrer" style="color: #0e7490; text-decoration: underline;">[7]</a></sup>
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">錯誤三：旋轉肌力量不足、卻用大重量練三角肌</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是肩推最常被忽略的危險因素。三角肌是大肌群，進步快、力量強；旋轉肌是穩定肌群，進步慢、力量小。當兩者的力量差距越來越大，旋轉肌在每次推舉動作中需要「超載補償」，才能把肱骨頭穩定在關節窩中——這就是慢性旋轉肌肌腱病變的溫床。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    《美國運動醫學期刊》（AJSM）發表的研究指出，<strong style="color: #ffffff;">外旋肌力不足是旋轉肌傷害與肩夾擠的主要風險因子</strong>，這在只做推舉動作、忽略旋轉肌訓練的健身者中特別常見。
+    <sup><a href="https://www.genghisfitness.com/cuban-press/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">容易傷到哪裡：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">棘上肌——最常受傷的旋轉肌，從肌腱炎到全層撕裂</li>
+    <li style="margin-bottom: 0.5rem;">棘下肌、小圓肌——外旋力量不足後的代償性過載</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、旋轉肌群傷害：你真的了解它嗎？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    旋轉肌群由四條肌肉組成，像袖口一樣環繞包覆肱骨頭，是肩關節最重要的穩定裝置。在重訓中，旋轉肌傷害幾乎是所有肩部問題的終點站。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究顯示，在自述因胸推而肩部疼痛的重訓者中，高達 56% 被診斷為旋轉肌肌腱炎，20% 為二頭肌腱炎。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11224528/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    旋轉肌傷害通常經歷三個階段：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">肌腱病變期：</strong>肌腱纖維開始退化，出現微小破裂。症狀：肩膀在特定角度隱隱作痛，休息後緩解，運動後加劇。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">部分撕裂期：</strong>肌腱部分纖維斷裂。症狀：夜間疼痛、舉手到特定角度劇烈疼痛，力量明顯下降。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">全層撕裂期：</strong>肌腱完全斷裂。症狀：手臂無力抬起，嚴重者需要手術修補。</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    關鍵問題是：旋轉肌傷害往往在「第一、二期」就被當成一般痠痛忽略，等到進入全層撕裂，治療難度與恢復時間都大幅提升。如果你的肩膀在胸推或肩推後有「特定角度的刺痛」或「無法維持姿勢的無力感」，這就是身體在發出警訊。
   </p>
 </section>
 
@@ -105,7 +231,7 @@ export const articlesData: NewsPost[] = [
 
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    三、胸推常見傷害部位比較表
+    五、傷害比較總表：動作錯誤 vs. 受傷位置
   </h2>
 
   <style>
@@ -114,29 +240,50 @@ export const articlesData: NewsPost[] = [
       overflow-x: auto;
       margin: 20px 0;
       border-radius: 8px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     }
     .modern-table {
       width: 100%;
       border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
       font-size: 15px;
       background-color: #ffffff;
       color: #1f2937;
-      min-width: 800px;
+      min-width: 850px;
     }
     .modern-table thead tr {
       background-color: #1e3a8a;
       color: #ffffff;
       text-align: left;
+      font-weight: bold;
     }
-    .modern-table th, .modern-table td {
+    .modern-table th {
       padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
       border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
     }
     .modern-table td:first-child {
       background-color: #f9fafb;
       font-weight: 600;
-      width: 150px;
+      color: #111827;
+      width: 180px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
     }
   </style>
 
@@ -144,36 +291,62 @@ export const articlesData: NewsPost[] = [
     <table class="modern-table">
       <thead>
         <tr>
-          <th>受傷部位</th>
-          <th>典型症狀</th>
-          <th>主要成因</th>
-          <th>復健重點</th>
+          <th>錯誤動作</th>
+          <th>適用動作</th>
+          <th>主要受力結構</th>
+          <th>最常見傷害</th>
+          <th>傷害風險</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>旋轉肌群（棘上肌）</td>
-          <td>手舉高時肩峰深處疼痛、半夜痛</td>
-          <td>肘外展 90 度、槓鈴路徑偏向頸部</td>
-          <td>強化外旋肌群、調整手肘角度</td>
+          <td>握距過寬（>1.5 BAW）</td>
+          <td>胸推</td>
+          <td>肩鎖關節、旋轉肌</td>
+          <td>鎖骨末端骨溶解、肩鎖關節炎</td>
+          <td>中高</td>
         </tr>
         <tr>
-          <td>胸大肌肌腱</td>
-          <td>胸部外側、腋下前緣劇痛、瘀青</td>
-          <td>行程過長（觸胸）、離心失控</td>
-          <td>早期保護、漸進式伸展、PRP 注射</td>
+          <td>槓鈴降太低（觸碰上胸/頸部）</td>
+          <td>胸推</td>
+          <td>胸大肌腱、關節前囊</td>
+          <td>胸大肌腱撕裂（最嚴重）</td>
+          <td>高</td>
         </tr>
         <tr>
-          <td>肩鎖關節 (AC Joint)</td>
-          <td>肩膀頂端壓痛、水平內收時疼痛</td>
-          <td>握距過寬、長期大重量負荷</td>
-          <td>縮小握距、限制下放深度</td>
+          <td>肩外展角度>70度（T字形手肘）</td>
+          <td>胸推、肩推</td>
+          <td>棘上肌、肩峰下滑囊</td>
+          <td>肩夾擠症候群、旋轉肌肌腱炎</td>
+          <td>高</td>
         </tr>
         <tr>
-          <td>肱二頭肌長頭肌腱</td>
-          <td>肩關節前側痛，與旋轉肌痛點相近</td>
-          <td>肩胛骨不穩、肱骨頭前移</td>
-          <td>肩胛穩定訓練、肱骨頭向後復位</td>
+          <td>肩胛骨未收緊（未夾背）</td>
+          <td>胸推</td>
+          <td>旋轉肌群、肩關節後側</td>
+          <td>旋轉肌代償性過載、後囊鬆弛</td>
+          <td>中</td>
+        </tr>
+        <tr>
+          <td>做到完全力竭</td>
+          <td>胸推、肩推</td>
+          <td>旋轉肌群、胸大肌腱</td>
+          <td>疲勞性動作崩潰導致急性撕裂</td>
+          <td>高</td>
+        </tr>
+        <tr>
+          <td>後頸推（槓推到頭後方）</td>
+          <td>肩推</td>
+          <td>旋轉肌群、關節唇、頸椎</td>
+          <td>SLAP 損傷、旋轉肌撕裂</td>
+          <td>非常高</td>
+        </tr>
+        <tr>
+          <td>旋轉肌力量不足仍大重量訓練</td>
+          <td>肩推</td>
+          <td>棘上肌、棘下肌</td>
+          <td>旋轉肌肌腱病變至撕裂</td>
+          <td>高（長期）</td>
         </tr>
       </tbody>
     </table>
@@ -183,105 +356,240 @@ export const articlesData: NewsPost[] = [
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    四、運動醫學觀點：如何科學預防？
-  </h2>
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 六、常見三大迷思破解
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 調整槓鈴路徑</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    槓鈴路徑不應是直上直下。2016 年的一項運動力學研究指出，效率最高且最安全的胸推路徑應略呈「J 曲線」：下放至乳頭位置，推起時略微向臉部方向弧線運動。
-    <sup><a href="https://doi.org/10.1519/JSC.0000000000001109" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-underline-offset: 3px;">[7]</a></sup>
-    這能減少槓鈴對肩關節的直接壓力。
-  </p>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「槓鈴降越低，胸肌拉越深，效果越好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>危險！</strong> 增加拉伸幅度確實能增加肌肉張力，但在最低點，胸大肌腱承受的偏心負荷已接近極限。研究明確指出，胸大肌撕裂最常發生在臥推下降的最低點、肱骨伸展合併外旋時。<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK549875/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[2]</a></sup> 胸推讓槓鈴輕觸胸口即可，不需要刻意壓低或壓到鎖骨位置。</span>
+        </div>
+      </li>
 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 遵循「胸推公式」：握距與肘角</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    根據 2018 年《Sports Medicine》的建議，理想握距應為雙肩峰間距的 1.5 倍以內。此範圍能兼顧胸肌訓練效益並將肩部傷害風險降至最低。
-    <sup><a href="https://doi.org/10.1007/s40279-018-0911-3" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-underline-offset: 3px;">[8]</a></sup>
-  </p>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「肩推傷肩膀，所以應該避免做」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 正確的肩推不會傷肩膀——它甚至是維持肩關節健康的重要訓練之一。研究指出，問題在於<strong>錯誤的動作模式</strong>：手肘打開太側、後頸推、缺乏旋轉肌訓練。正確的肩推（手肘斜前 45 度、前推而非側推）不只安全，更能強化整個肩膀功能。<sup><a href="https://larsonsportsortho.com/fix-your-overhead-press/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[5]</a></sup></span>
+        </div>
+      </li>
 
-  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
-    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
-      如果你的肩膀已經有不適感，請將「槓鈴」換成「啞鈴」。啞鈴允許中立握姿，這能讓肩關節處於外旋位，比起槓鈴的固定內旋位，能大幅減輕肩峰下的壓力。
-    </p>
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「只要不是很痛，繼續練就好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>非常危險！</strong> 旋轉肌肌腱病變早期可能只有「特定角度的隱隱刺痛」，但若持續忽視繼續施加負荷，膠原纖維的退化性改變會加速惡化，從部分撕裂演變為完整撕裂。研究顯示，旋轉肌部分撕裂若能早期介入（物理治療、動作矯正），超過八成可以避免手術；但若延誤治療進入全層撕裂，手術機率大幅增加，且恢復期可長達 6–12 個月。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11224528/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
   </div>
 </section>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <section style="margin-bottom: 3.5rem;">
-  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0;">
-    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem;">
-      📢 常見三大誤區解析
-    </h2>
-    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
-      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
-        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
-        <div>
-          <strong>「胸推一定要槓鈴觸胸才是完整行程」</strong><br>
-          <span style="display: block; margin-top: 0.5rem;"><strong>錯誤！</strong> 對於肩關節活動度受限或曾受傷的人，強制觸胸會導致肱骨過度後伸，造成關節囊拉傷。研究指出，將行程止於胸前數公分，對肌肉生長的影響極小，卻能顯著降低受傷機率。<sup><a href="https://doi.org/10.1177/03635465030310062601" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[6]</a></sup></span>
-        </div>
-      </li>
-      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
-        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
-        <div>
-          <strong>「痛的時候只要戴上護肩或吃止痛藥就能繼續」</strong><br>
-          <span style="display: block; margin-top: 0.5rem;"><strong>極其危險！</strong> 肩膀疼痛是身體的警報系統。長期依賴 NSAIDs 止痛會掩蓋肌腱發炎的警訊，導致原本可以康復的「退化」演變成無法挽回的「斷裂」。<sup><a href="https://doi.org/10.1097/JSA.0b013e318182470a" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[9]</a></sup></span>
-        </div>
-      </li>
-    </ul>
-  </div>
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、正確動作指南：怎麼做才安全？
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">胸推安全做法</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">握距設定在 1–1.5 倍肩寬（BAW）：</strong>避免超寬握，這是降低肩鎖關節壓力的最直接方法<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11224528/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[1]</a></sup></li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">手肘角度維持 45–60 度：</strong>不要讓手肘完全打開形成 T 字，保持自然斜角</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">夾背（肩胛骨收緊）：</strong>下背微拱、肩胛骨向中間收攏，讓更多力量由胸大肌承受</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">槓鈴輕觸胸口（中胸位置）：</strong>避免降到上胸或頸部，也不要讓槓鈴反彈</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">保留 1–3 下的餘力：</strong>避免在疲勞動作崩潰狀態下的最後幾下，是最容易受傷的時刻<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39808810/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[4]</a></sup></li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">肩推安全做法</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">前推而非側推：</strong>槓鈴或啞鈴在身體前方推舉，手肘在斜前方約 45 度，不要完全打開到兩側<sup><a href="https://larsonsportsortho.com/fix-your-overhead-press/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup></li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">避免後頸推：</strong>這個動作的受傷風險遠高於其肌肉刺激效益，建議直接從訓練菜單中移除</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">加入旋轉肌訓練：</strong>每週至少 2 次專項旋轉肌外旋訓練（如彈力帶外旋、Cuban Press），讓旋轉肌有能力穩定大重量動作<sup><a href="https://www.genghisfitness.com/cuban-press/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[8]</a></sup></li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">推至完全鎖定時肩膀主動上提：</strong>這個動作能讓肩峰遠離肱骨頭，有效預防頂端夾擠</li>
+  </ul>
 </section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    八、預防策略：從訓練到恢復
+  </h2>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">推拉比例平衡：</strong>胸推與肩推屬於「推」的動作，每週推的總訓練量應與「拉」的動作（如划船、引體向上）保持 1:1 甚至 1:1.5 的比例，才能維持肩膀前後肌群的平衡，降低旋轉肌代償風險
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">漸進式超負荷：</strong>每週重量增加不超過 5%，給予肌腱與韌帶足夠的適應時間。肌肉的適應速度遠快於結締組織，過快增重是慢性傷害的溫床
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">動作影片自我檢視：</strong>用手機錄下自己的側面與正面動作，對照本文的技術要點，識別並修正問題。肉眼感覺「姿勢正確」與實際生物力學標準往往有落差
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">充分熱身：</strong>每次訓練前用輕重量（約 40–50% 工作重量）先執行 2–3 組動作模式練習，活化旋轉肌群，讓肩關節進入「備戰狀態」
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">有痛不推：</strong>若胸推或肩推時出現肩部疼痛，應立即停止，而非忍痛撐過。急性期的錯誤施壓，可能將 6 週的傷害延長成 6 個月的慢性問題
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
-  <div style="background-color: #1e293b; padding: 1rem 1.5rem;">
-    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; font-weight: bold;">🏆 FAQ 常見問題</h2>
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏋️</span> FAQ 常見問題
+    </h2>
   </div>
-  <div style="padding: 2rem;">
-    <h3 style="color: #f8fafc; margin-top: 0; font-size: 1.2rem; font-weight: bold;">Q1：胸推時肩膀卡卡的有聲音，但不會痛，要看醫生嗎？</h3>
-    <p style="color: #94a3b8; line-height: 1.8;">
-      聲音通常是軟組織摩擦或氣泡產生的。如果不痛，通常可以觀察，但這往往是「肩胛骨活動度不良」的前兆。建議尋求物理治療評估肩胛骨的動態穩定性。<sup><a href="https://doi.org/10.1519/JSC.0b013e3181e38260" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[4]</a></sup>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：肩推比胸推更危險嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      兩者的危險程度取決於執行技術，而非動作本身。胸推更容易傷到胸大肌腱（在最大下降位置）和肩鎖關節（握距太寬），而肩推更容易造成旋轉肌夾擠與 SLAP 關節唇損傷（手肘打開太側、後頸推）。技術正確的情況下，兩種動作都是安全且有效的訓練。
     </p>
-    <h3 style="color: #f8fafc; margin-top: 1.5rem; font-size: 1.2rem; font-weight: bold;">Q2：胸推受傷後，多久可以回歸訓練？</h3>
-    <p style="color: #94a3b8; line-height: 1.8;">
-      這取決於受傷分級。輕微肌腱炎約需 2-4 週，若是部分撕裂則可能需要 3 個月以上的復健配合 PRP 注射。關鍵指標是「等長收縮不痛」與「關節活動度恢復」，而非時間。
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：練胸推後肩膀前側痛，是什麼問題？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      肩膀前側（正前方）疼痛在臥推後最常見的原因包括：二頭肌長頭肌腱炎（在二頭肌溝位置壓痛）、肩峰下夾擠（棘上肌肌腱），以及 SLAP 關節唇損傷（深部悶痛合併彈響）。這三種情況的治療方式不同，建議及早就醫進行超音波或 MRI 鑑別診斷，不要自行猜測。
     </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：聽到「啪」一聲之後，肩膀或胸口有腫脹，該怎麼處理？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      如果在臥推時聽到清脆的「啪」聲，並伴隨肩膀或胸口立即腫脹、瘀青，強烈懷疑胸大肌腱撕裂，應立即停止訓練、冰敷患部，並在 24–48 小時內就醫。研究顯示，完整胸大肌腱撕裂若能在急性期（受傷後 3 個月內）進行手術修補，恢復成效顯著優於延誤治療者。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34415856/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：受傷後還可以繼續重訓嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      取決於傷害類型與嚴重程度。輕度肌腱炎或肩鎖關節發炎，在正確的動作指導下可以進行低強度、替代性的訓練（如改用啞鈴、調整握距）。但旋轉肌部分或全層撕裂、SLAP 損傷，則需要先經過醫師評估與物理治療，才能安全回歸。繼續強行訓練只會加速傷害惡化。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：改用啞鈴做臥推，是否更安全？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      一般而言，啞鈴臥推讓雙手有更大的自由度，可以在最低點讓手掌相對旋轉（中立握法），減少對肩關節的扭矩。對於有肩鎖關節問題或旋轉肌初期受傷的人，改用啞鈴是不錯的過渡選項。但中立握啞鈴臥推並非「零風險」，下降幅度過大同樣可能傷到胸大肌，動作紀律一樣重要。
+    </p>
+
   </div>
 </section>
 
-<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; line-height: 1.7;">
-  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold;">結語與行動建議</h2>
-  <p style="color: #475569; margin-top: 16px;">
-    胸推受傷通常是「技術錯誤」與「過度負荷」交織的結果。透過減少肘部外展角度、穩定肩胛骨、以及選擇合適的握距，你可以大幅降低受傷風險。<br>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    胸推與肩推的傷害，從來都不是偶然——它們是錯誤動作在每次反覆中累積的結果。握距寬窄、手肘角度、肩胛骨位置、重量管理，這些看似微小的技術細節，決定了受力是否落在正確的結構上，還是慢慢侵蝕脆弱的旋轉肌、肌腱與關節唇。
   </p><br>
-  <p style="color: #475569;">
-    身為復健科醫師，我深信<strong style="color: #1e293b;">「訓練是為了變得更好，而不是變得更痛」</strong>。如果你在訓練中遇到持續性的肩部不適，請尋求專業的超音波診斷。
-  </p><br>
+
+  <p style="color: #475569; font-size: 1.05rem;">
+    重訓是維持健康的絕佳工具，但「有練不代表有練對」。如果你有肩膀不適、動作中的異響、或是某個角度的疼痛久久不消，不要再等了——<strong style="color: #1e293b;">預約林醫師的門診評估，林醫師結合運動醫學與重訓實務經驗，能精準找出你的動作問題點與傷害根源，</strong>讓你以最安全的方式回到訓練場。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的傷害風險表，檢視你目前的胸推與肩推動作，特別留意握距、手肘角度與槓鈴觸碰位置。若有任何持續性疼痛或力量下降，請儘早尋求專業評估。
+    </p>
+  </div>
   <div style="text-align: center; width: 100%;">
-    <a href="/booking" 
-       target="_blank" 
-       rel="noopener noreferrer" 
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
        style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
-        預約健身教練醫師評估
+        預約運動醫學評估
     </a>
+  </div>
 </div>
-</div>
-`,
-  "referencesHtml": `
+  `,
+  referencesHtml: `
 <h2>📚 參考文獻 (References)</h2>
-<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6;">
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
   <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
-    <li style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Kerr, Z. Y., et al. (2001). Epidemiology of weightlifting-related injuries. American Journal of Sports Medicine. DOI: 10.1177/03635465010290011501</span></li>
-    <li style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Haupt, H. A. (2001). Upper extremity injuries associated with strength training. PMC: 3077363.</span></li>
-    <li style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Green, C. M., & Comfort, P. (2007). The Biomechanical Analysis of the Bench Press. JSCR.</span></li>
-    <li style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Kolber, M. J., et al. (2010). Shoulder Joint Laxity and Range of Motion in Recreational Weightlifters. DOI: 10.1519/JSC.0b013e3181e38260</span></li>
-    <li style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Larsen, S., et al. (2021). Effects of Grip Width on Bench Press Performance and Risk of Injury. IJERPH. DOI: 10.3390/ijerph18168252</span></li>
-    <li style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Feeley, B. T., et al. (2003). Distal Clavicle Osteolysis in the Weightlifter. AJSM. DOI: 10.1177/03635465030310062601</span></li>
-    <li style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Król, H., & Gołaś, A. (2017). Effect of Barbell Weight on the Structure of the Bench Press Exercise. DOI: 10.1519/JSC.0000000000001109</span></li>
-    <li style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Bengtsson, V., et al. (2018). Narrative review of injuries in powerlifting. Sports Medicine. DOI: 10.1007/s40279-018-0911-3</span></li>
-    <li style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Bhatia, S., et al. (2014). Pectoralis Major Ruptures in the Weightlifter. DOI: 10.1097/JSA.0b013e318182470a</span></li>
-    <li style="margin-bottom: 0.8rem;"><span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">Stastny, P., et al. (2017). Shoulder muscle activity during bench press variations. PMC5491244.</span></li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Noteboom, L., Belli, I., Hoozemans, M.J.M., Seth, A., Veeger, H.E.J., & Van Der Helm, F.C.T. (2024). Effects of bench press technique variations on musculoskeletal shoulder loads and potential injury risk. <em>Frontiers in Physiology</em>, 15, 1393235. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11224528/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11224528</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Durant, E., & De Cicco, F. (2023). Pectoralis Major Tear. In <em>StatPearls</em>. National Center for Biotechnology Information. <a href="https://www.ncbi.nlm.nih.gov/books/NBK549875/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">NCBI Bookshelf: NBK549875</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Provencher, M.T., Handfield, K., Boniquit, N.T., Reiff, S.N., Sekiya, J.K., & Romeo, A.A. (2010). Injuries of the pectoralis major muscle: diagnosis and management. <em>The American Journal of Sports Medicine</em>, 38(8), 1693–1705. <a href="https://pubmed.ncbi.nlm.nih.gov/15712983/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 15712983</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Timmons, M.K., et al. (2025). The Contribution of Muscular Fatigue and Shoulder Biomechanics to Shoulder Injury Incidence During the Bench Press Exercise: A Narrative Review. <em>PubMed</em>. <a href="https://pubmed.ncbi.nlm.nih.gov/39808810/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 39808810</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Larson Sports & Orthopaedics. (2020). Fix Your Overhead Press and Stop Shoulder Pain. <a href="https://larsonsportsortho.com/fix-your-overhead-press/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Jacksonville Orthopaedic Institute. (2024). The Top 5 Worst Shoulder Exercises to Avoid. <a href="https://www.joionline.net/library/the-top-5-worst-shoulder-exercises-to-avoid-lateral-raises-and-more/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Maffet, M.W., Gartsman, G.M., & Moseley, B. (2009). SLAP Lesions: An Update on Recognition and Treatment. <em>Journal of Orthopaedic & Sports Physical Therapy</em>. <a href="https://www.jospt.org/doi/10.2519/jospt.2009.2850" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.2519/jospt.2009.2850</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Genghis Fitness. (2026). Cuban Press: Rotator Cuff External Rotation Research and Shoulder Impingement Prevention. <a href="https://www.genghisfitness.com/cuban-press/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        ElMaraghy, A.W., & Devereaux, M.W. (2012). A systematic review and comprehensive classification of pectoralis major tears. <em>Journal of Shoulder and Elbow Surgery</em>, 21(3), 412–422. <a href="https://pubmed.ncbi.nlm.nih.gov/34415856/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 34415856</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Green, C.M., & Comfort, P. (2007). The Affect of Grip Width on Bench Press Performance and Risk of Injury. <em>Strength and Conditioning Journal</em>, 29(5), 10–14. <a href="https://basratprod.blob.core.windows.net/docs/carly_green_bench_press_journal_2007.pdf" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PDF Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Qylafi, K., & Alkhalfan, Y. (2022). Pectoralis Major Rupture: A Case Report. <em>Cureus</em>, 14(9), e29512. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9588403/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9588403</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Koulouris, G., et al. (2023). Pectoralis major rupture in body builders: a case series including anabolic steroid use. <em>PMC</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10071695/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10071695</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Shin, M.H., et al. (2022). Biceps Tenodesis Versus Superior Labral Anterior and Posterior (SLAP) Lesion Repair for the Treatment of SLAP Lesion in Overhead Athletes: A Systematic Review and Meta-analysis. <em>The American Journal of Sports Medicine</em>. <a href="https://journals.sagepub.com/doi/10.1177/03635465211039822" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1177/03635465211039822</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Johns Hopkins Medicine. (2023). AC Joint Problems. <a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/ac-joint-problems" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
   </ol>
 </div>
 `

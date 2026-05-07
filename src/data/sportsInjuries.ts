@@ -373,6 +373,13 @@ export const sportsInjuriesData = [
         description: '深度剖析槓鈴臥推、上斜啞鈴推舉、纜繩夾胸等胸肌訓練動作的科學依據，解析最佳訓練組數、組間休息時間與漸進超負荷策略。實證研究揭露每週幾次訓練最有效、2–3分鐘休息為何優於短休息，以及為什麼漸進增重才是練出大胸肌的核心關鍵。',
         image: '/images/news/article/chest-training-guide.webp',
       },
+
+                  {
+        slug: 'bench-press-shoulder-injury',
+        title: '重訓傷害全解析：胸推、肩推的地雷動作，你中了幾個？',
+        description: '從運動醫學角度深入剖析重訓胸推與肩推最容易受傷的原因。手太開、槓鈴降太低、肩膀前推——這些常見的技術錯誤，正在悄悄傷害你的旋轉肌、胸大肌腱、肩鎖關節，甚至關節唇。實證研究告訴你哪個動作最危險，以及如何正確訓練。',
+        image: '/images/news/article/bench-press-injury-analysis.webp',
+      },
             {
         slug: 'crossed-syndrome-analysis',
         title: '交叉症候群完整解析：訓練背肌反而讓背更緊？',
