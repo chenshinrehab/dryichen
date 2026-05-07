@@ -992,7 +992,7 @@ export const diseaseCategories: DiseaseCategory[] = [
               </ul>
           </div>
       <p><img src="/images/diseases/spine-hip/upper/b.webp" alt="上交叉症候群成因"></p>
-       <p><img src="/images/diseases/spine-hip/upper/1.webp" alt="上交叉症候群成因" style="width: 40%; height: auto;></p>
+       <p><img src="/images/diseases/spine-hip/upper/1.webp" alt="上交叉症候群成因" style="width: 80%; height: auto;></p>
 
 
           <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">

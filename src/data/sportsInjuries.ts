@@ -219,6 +219,13 @@ export const sportsInjuriesData = [
         description: '市售顧關節保健品種類繁多，本文以醫學觀點逐一解析 UC-II、葡萄糖胺、軟骨素、鈣片與口服玻尿酸的臨床證據。深入探討免疫調節機制、建議劑量、適用族群及常見迷思，幫助你科學選擇真正需要的成分，避免盲目花大錢。',
         image: '/images/news/article/joint-supplements-guide.webp',
       },
+                        {
+        slug: 'joint-supplement-truth',
+        title: '診所施打軟骨素、維他命？揭開真相：實證效果到底如何？',
+        description: '許多診所積極推薦患者自費注射軟骨素、維他命。但從運動醫學實證角度來看，這些補充品對關節退化與疼痛的效果究竟有多少？本文整理最新研究，並揭示部分產品為何「有效」的可能真相。',
+        image: '/images/news/article/joint-supplement-truth.webp',
+      },
+
                                     {
         slug: 'meat-nutrition-analysis',
         title: '吃對肉才能長肌肉！白肉與紅肉的醫學大解析：牛、豬、雞、魚怎麼挑？',

@@ -511,12 +511,12 @@ const activeCategoryStyle = categoryStyles[post.category] || 'bg-slate-500/10 te
               </footer>
 
               {/* ✨ 更新：將參考文獻移回文章最底部 (footer 之後)，移除框中框，並延續上方的背景色與滿版 padding */}
-              {post.referencesHtml && (
-                <section className="bg-slate-900/80 px-4 md:px-12 pb-12 text-left">
-                  <div className="border-t border-slate-700/50 pt-8">
+{post.referencesHtml && (
+                <section className="bg-slate-900/80 px-0 md:px-12 pb-12 text-left">
+                  {/* 將 px-2 md:px-0 加在這裡，讓手機版只留極小邊距，桌機版不受影響 */}
+                  <div className="border-t border-slate-700/50 pt-8 px-2 md:px-0">
                     <div className="flex items-center mb-4 pb-3">
                       <i className="fa-solid fa-book-bookmark text-cyan-400 text-lg mr-2"></i>
-                      <span className="text-slate-300 text-sm font-bold">參考文獻</span>
                     </div>
                     
                     <div 
