@@ -281,6 +281,12 @@ export const sportsInjuriesData = [
     description: '籃球運動常見的急停、跳躍所導致的傷害解析。',
     image: '/images/sportinjury/2.webp',
     injuries: [
+                  {
+        slug: 'basketball-position-injuries',
+        title: '籃球傷害地圖：從 1 號位到 5 號位，你的位置決定了受傷風險？',
+        description: '從運動醫學與生物力學角度，深入分析籃球場上五個位置的傷害風險。為何得分後衛受傷率最高？中鋒最怕腰椎與足部應力性骨折？本文結合 NBA 實證研究與真實案例，解析各位置常見的 ACL 撕裂、跳躍膝與踝扭傷機制，並提供針對性的預防策略。',
+        image: '/images/news/article/basketball-injury-analysis.webp',
+      },
             {
         slug: 'nba-injury-analysis',
         title: 'NBA球員十字韌帶、半月板、跟腱撕裂後的數據真相',
@@ -373,6 +379,13 @@ export const sportsInjuriesData = [
         description: '深度剖析槓鈴臥推、上斜啞鈴推舉、纜繩夾胸等胸肌訓練動作的科學依據，解析最佳訓練組數、組間休息時間與漸進超負荷策略。實證研究揭露每週幾次訓練最有效、2–3分鐘休息為何優於短休息，以及為什麼漸進增重才是練出大胸肌的核心關鍵。',
         image: '/images/news/article/chest-training-guide.webp',
       },
+      {
+        slug: 'strength-breakthrough-bench-press-deadlift',
+        title: '科學突破最大重量：胸推與硬舉的進階訓練與專項策略',
+        description: '想突破胸推與硬舉的 1RM 瓶頸？本文結合運動醫學與肌力科學，解析漸進超負荷、週期化訓練及弱點輔助動作。從神經肌肉適應到核心預壓技術，教你如何安全、有系統地提升絕對肌力，並避開常見的訓練誤區。',
+        image: '/images/news/article/bench-press-deadlift-strength.webp',
+      },
+
 
                   {
         slug: 'bench-press-shoulder-injury',
@@ -380,6 +393,8 @@ export const sportsInjuriesData = [
         description: '從運動醫學角度深入剖析重訓胸推與肩推最容易受傷的原因。手太開、槓鈴降太低、肩膀前推——這些常見的技術錯誤，正在悄悄傷害你的旋轉肌、胸大肌腱、肩鎖關節，甚至關節唇。實證研究告訴你哪個動作最危險，以及如何正確訓練。',
         image: '/images/news/article/bench-press-injury-analysis.webp',
       },
+
+
             {
         slug: 'crossed-syndrome-analysis',
         title: '交叉症候群完整解析：訓練背肌反而讓背更緊？',
