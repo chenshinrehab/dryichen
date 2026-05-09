@@ -170,6 +170,12 @@ export const sportsInjuriesData = [
         description: '從醫學角度深度分析側睡與正睡（仰睡）的優缺點，涵蓋脊椎、肩膀旋轉肌群、骨盆、呼吸道及胃食道逆流等全面影響。實證研究揭露哪種睡姿更健康，並解析全球睡眠姿勢比例與個人化建議。',
         image: '/images/news/article/sleep-position-health-analysis.webp',
       },
+                {
+        slug: 'hula-hoop-horse-riding-weight-loss',
+        title: '家居家搖呼拉圈或騎馬機，真的能有效瘦身嗎？運動醫學完整解析',
+        description: '從運動醫學角度深度解析居家呼拉圈與騎馬機的減脂效果。實證研究揭露兩者的熱量消耗、核心肌群活化與體組成改變，並說明適用族群、禁忌症與正確使用方式。',
+        image: '/images/news/article/hula-hoop-horse-riding-weight-loss.webp',
+      },
           {
         slug: 'why-cats-dont-get-stiff-neck',
         title: '家裡兩隻貓咪每天不是躺著就是躺著，為什麼不會落枕呢？',
@@ -385,7 +391,12 @@ export const sportsInjuriesData = [
         description: '想突破胸推與硬舉的 1RM 瓶頸？本文結合運動醫學與肌力科學，解析漸進超負荷、週期化訓練及弱點輔助動作。從神經肌肉適應到核心預壓技術，教你如何安全、有系統地提升絕對肌力，並避開常見的訓練誤區。',
         image: '/images/news/article/bench-press-deadlift-strength.webp',
       },
-
+                  {
+        slug: 'deadlift-injury-analysis',
+        title: '硬舉傷害全解析：下面的地雷動作，你中了幾個？',
+        description: '深入剖析硬舉（Deadlift）最容易導致下背部、腰薦椎及膕繩肌受傷的原因。貓背、髖部過高、槓鈴遠離身體——這些常見的技術失誤如何引發椎間盤突出或肌腱撕裂？本文提供實證研究建議，助你建立安全的後鏈訓練基礎。',
+        image: '/images/news/article/deadlift-injury-analysis.webp',
+      },
 
                   {
         slug: 'bench-press-shoulder-injury',
@@ -483,6 +494,13 @@ export const sportsInjuriesData = [
         description: '面對肌少症與長年的腰膝疼痛，復健不只是單調的儀器治療。看陳新復健科醫師如何利用《Pikmin Bloom》遊戲，陪伴阿媽從沙發走向公園，找回生活的掌控感與色彩。',
         image:  '/images/news/article/pikmin-grandma.webp',
       },
+                        {
+        slug: 'weightloss-sleep-apnea-mounjaro',
+        title: '那一夜，她終於能好好睡一覺：減重與呼吸中止症的意外驚喜 🌙',
+        description: '肥胖不只是數字問題，更關乎全家人的生活品質。看林醫師如何透過專業減重評估，幫助病患改善三高與睡眠呼吸中止症，找回健康，也讓辛苦的太太重獲安穩睡眠。',
+        image:  '/images/news/article/weightloss-sleep.webpp',
+      },
+
             {
         slug: 'steak-muscle-anatomy',
         title: '復健科醫師帶老婆吃牛排：菲力對應腰大肌，牛排部位人體肌肉完整解析',
