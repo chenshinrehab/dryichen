@@ -176,6 +176,12 @@ export const sportsInjuriesData = [
         description: '從運動醫學角度深度解析居家呼拉圈與騎馬機的減脂效果。實證研究揭露兩者的熱量消耗、核心肌群活化與體組成改變，並說明適用族群、禁忌症與正確使用方式。',
         image: '/images/news/article/hula-hoop-horse-riding-weight-loss.webp',
       },
+                      {
+        slug: 'children-kyphosis-guide',
+        title: '小朋友為什麼會駝背？運動醫學完整解析：成因、治療與矯正運動',
+        description: '深度解析兒童及青少年駝背（胸椎後凸）的成因，包含姿勢性駝背、許爾曼氏病與先天因素。提供實證支持的保守治療策略，以及家長可帶孩子練習的核心強化、伸展與矯正運動。',
+        image: '/images/news/article/children-kyphosis-guide.webp',
+      },
           {
         slug: 'why-cats-dont-get-stiff-neck',
         title: '家裡兩隻貓咪每天不是躺著就是躺著，為什麼不會落枕呢？',
