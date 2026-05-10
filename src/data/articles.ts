@@ -3,6 +3,637 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
 {
+  id: 'children-kyphosis-guide',
+  title: '小朋友為什麼會駝背？運動醫學完整解析：成因、治療與矯正運動',
+  lastModified: '2026-05-10',
+  category: '衛教文章',
+  date: '2026-05-10',
+  summary: '從運動醫學角度深度解析兒童及青少年駝背（胸椎後凸）的成因，包含姿勢性駝背、許爾曼氏病與先天因素。提供實證支持的保守治療策略，以及家長可帶孩子練習的核心強化、伸展與矯正運動。',
+  coverImage: '/images/news/article/children-kyphosis-guide.webp',
+  seoTitle: '小朋友為什麼會駝背？運動醫學完整解析：成因、治療與矯正運動',
+  seoDescription: '從運動醫學角度深度解析兒童及青少年駝背（胸椎後凸）的成因，包含姿勢性駝背、許爾曼氏病與先天因素。提供實證支持的保守治療策略，以及家長可帶孩子練習的核心強化、伸展與矯正運動。',
+  keywords: [
+    '小朋友駝背',
+    '兒童駝背',
+    '青少年駝背',
+    '胸椎後凸',
+    '許爾曼氏病',
+    '姿勢矯正',
+    '脊椎側彎',
+    '背肌訓練',
+    '矯正運動',
+    '運動醫學'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    駝背（胸椎過度後凸）是兒童與青少年最常見的脊椎姿勢問題之一，超過五分之一的青少年受到影響。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11312307/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
+    成因可分為姿勢性（與不良坐姿、3C使用、書包過重等生活習慣相關）、結構性（許爾曼氏病）及先天性三大類。若未在生長期及時介入，可能導致背痛、肺功能下降、心理自信受損，甚至成年後的永久性脊椎變形。<br><br>
+    研究顯示，針對青少年的運動治療計畫——包含核心肌群強化、胸背伸展肌訓練與胸大肌／膕繩肌伸展——能有效改善後凸角度，治療的黃金期就在骨骼發育完成之前。本文將以實證為基礎，帶家長與孩子了解駝背的真正原因，以及可以在家進行的矯正策略。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11312307/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12141983/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9778671/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[3]</a></sup>
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、什麼是駝背？什麼程度才算「異常」？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    人體的脊椎本來就有自然的弧度，從側面看，胸椎（上背）有一個正常的向後彎曲，叫做「後凸角」。<strong style="color: #2dd4bf;">正常的胸椎後凸角度在 20° 到 40° 之間</strong>，這個弧度是幫助我們直立、吸收衝擊的重要設計。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11312307/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    當這個角度超過 40°至 45°，就稱為「過度後凸」，也就是我們俗稱的駝背。從外觀看，孩子的上背明顯圓弧前彎、肩膀往前內收、下巴向前突出，嚴重的甚至會讓人從側面看到明顯的「弓背」輪廓。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9778671/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    研究指出，高達 <strong style="color: #ffffff;">30% 的學齡兒童</strong>有某種程度的脊椎姿勢問題；若將標準放寬到「姿勢不良」，比例更可高達 58%。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9778671/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    換句話說，駝背不是「個別案例」，而是現代兒童面臨的普遍公共衛生問題。
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 醫師臨床提醒</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      許多家長只注意孩子脊椎有沒有側彎，卻容易忽略前後方向的駝背問題。臨床上常見家長反映「孩子叫他挺胸就可以挺起來」，這其實是姿勢性駝背與結構性駝背的重要鑑別點——前者可以靠意志力暫時矯正，後者即使刻意挺胸仍難以改善。兩者的治療策略截然不同，建議及早讓專業醫師評估。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、小朋友駝背的三大成因
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">① 姿勢性駝背——最常見，也最可逆</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    姿勢性駝背是兒童與青少年駝背中最常見的類型，核心原因是<strong style="color: #ffffff;">長時間維持不良姿勢，加上背部與核心肌群力量不足</strong>。在現代生活中，以下幾個因素是主要推手：
+  </p>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.05rem;">📱 3C 裝置使用過度</p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    長時間低頭看手機、平板或電腦，是近年來青少年姿勢快速惡化的主要原因。研究指出，使用電子裝置時，頸部、肩膀與背部肌肉容易疲勞，進而引起胸腰椎後凸及腰椎前凸的改變。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11312307/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    疫情期間線上課程的普及，更加速了這個趨勢。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9776914/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.05rem;">🎒 書包太重</p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    背著過重的書包，孩子的身體會本能地向前傾來維持重心，久而久之就形成慣性的前傾姿勢、加大胸椎後凸弧度。研究建議，書包重量不應超過孩子體重的 10%。針對 155 名 7-9 歲學童的追蹤研究發現，書包重量的差異在一個學年後，已顯著影響孩子的姿勢參數，尤其是胸椎後凸角度。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5359953/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+    另一項研究也確認，使用過重書包的學生，駝背盛行率顯著較高。
+    <sup><a href="https://www.amhsr.org/articles/prevalence-kyphosis-in-school-going-children-with-heavy-backpack-usage-10920.html" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.05rem;">🪑 長時間久坐、缺乏運動</p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    7 至 10 歲是脊椎姿勢發展的「第一個關鍵期」。孩子一旦開始上學，坐姿時間大幅增加，若背部伸展肌群與核心肌群未同步強化，脊椎就容易在反覆的重力壓迫下逐漸向前塌陷。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4564613/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    姿勢性駝背的好消息是：<strong style="color: #2dd4bf;">由於脊椎骨本身結構未受損，透過正確的運動介入，是有機會完全矯正的。</strong>
+    <sup><a href="https://kidshealth.org/en/parents/postural-kyphosis.html" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">② 許爾曼氏病——結構性駝背</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    許爾曼氏病是青少年最常見的<strong style="color: #ffffff;">結構性駝背原因</strong>，好發年齡為 12 至 17 歲，男性略多於女性。它的特徵是胸椎至少連續三節椎體發生「前方楔形變」，導致脊椎無法自主伸直，後凸角度通常超過 45°。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/21099641/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    與姿勢性駝背不同，許爾曼氏病造成的駝背<strong style="color: #ffffff;">叫孩子挺胸也無法完全挺直</strong>，彎腰時上背的弧度更加明顯，且可能伴隨背部疼痛。其確切成因尚未完全釐清，目前認為是多因子交互作用的結果，包含遺傳基因、生長板的機械性壓力異常，以及青春期快速生長時的骨骼適應不良。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/24898440/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多孩子因為家長誤認為只是「姿勢不好」而延誤就醫，等到診斷確立時，脊椎角度已超過最佳治療窗口。<strong style="color: #ffffff;">早期診斷、骨骼發育完成前介入，是治療效果最好的時機。</strong>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/9692939/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">③ 先天性駝背</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    先天性駝背較為少見，由胚胎時期脊椎發育異常所造成，如椎體分節不全或形成不全。這類駝背通常在嬰幼兒期就可被發現，需要由小兒骨科醫師評估是否需要手術矯正，並不在本文一般性衛教的討論範疇內。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、駝背有哪些危害？為什麼要及早處理？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    很多家長認為駝背只是「外觀問題」，等孩子長大自然就會好。但從運動醫學的角度來看，持續惡化的駝背對孩子的影響遠不止於此：
+  </p>
+
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">背部與頸部疼痛：</strong>胸椎過度後凸會使腰椎代償性增加前凸，長期下來造成腰背肌肉疲勞與慢性疼痛，頸部前移也因此加重。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">肺功能下降：</strong>胸廓活動度因駝背受限，影響呼吸深度，長期可能造成肺活量與有氧耐力降低。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7876943/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">平衡與運動能力下降：</strong>研究指出，脊椎排列異常與步態減慢、重心不穩及跌倒風險增加顯著相關。
+      <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12622994/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">心理健康影響：</strong>外觀改變可能影響青少年的自我形象，增加社交焦慮，降低生活品質。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11312307/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">成年後惡化：</strong>青少年時期未矯正的結構性駝背，在成年後往往持續進展，導致慢性失能。
+      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/9692939/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、如何診斷？什麼情況要看醫生？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    家長可以做一個簡單的初步評估：請孩子慢慢彎腰向前，觀察上背的弧度是否仍然存在或更加明顯；再請孩子盡力挺胸，若弧度<strong style="color: #ffffff;">能夠消失</strong>，較可能是姿勢性駝背；若<strong style="color: #ffffff;">無論如何努力都難以挺直</strong>，則需進一步就醫評估是否為結構性問題。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    專業評估方面，醫師會透過視診、觸診與站立姿勢 X 光檢查，使用 <strong style="color: #ffffff;">Cobb 角測量法</strong>量化後凸角度，作為分類嚴重度與選擇治療方式的依據。
+  </p>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.05rem;">出現以下狀況時，請及早帶孩子就診：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">上背明顯彎曲，從側面看輪廓異常</li>
+    <li style="margin-bottom: 0.5rem;">叫孩子挺胸但無法改善弧度</li>
+    <li style="margin-bottom: 0.5rem;">孩子反映背部、頸部疼痛</li>
+    <li style="margin-bottom: 0.5rem;">兩側肩膀高低不等或肩胛骨突出不對稱</li>
+    <li style="margin-bottom: 0.5rem;">正在青春期快速生長階段，且姿勢持續惡化</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、如何治療？依嚴重程度選擇策略
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🟢 輕度（後凸角 &lt; 50°）：運動治療為主</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    對於姿勢性駝背或輕度後凸，<strong style="color: #ffffff;">運動治療（物理治療）是第一線、也是最重要的介入手段</strong>。研究顯示，針對青少年的運動計畫若每週執行 3 次、每次 40-50 分鐘，經過 12 週後，後凸角平均可改善 8-10°，且同時改善背部疼痛與生活品質。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11312307/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    約翰霍普金斯大學的建議也指出，以核心強化與背部伸肌訓練為主的每日居家運動計畫，是處理輕度駝背的有效方式。
+    <sup><a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/kyphosis" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🟡 中度（後凸角 45°–75°，骨骼仍在生長中）：背架＋運動</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    對於許爾曼氏病或後凸角超過 45° 且仍在生長中的孩子，背架（Milwaukee brace 或其他矯正背架）是重要的輔助工具。背架必須在<strong style="color: #ffffff;">骨骼成熟（約 14 歲）之前使用才最有效</strong>，通常需每天穿戴 23 小時，持續 12 至 24 個月。
+    <sup><a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/kyphosis" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/19788753/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[15]</a></sup>
+    研究顯示，背架平均可在穿戴時矯正約 16-17°，而物理治療搭配背架的效果優於單獨使用背架。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/19788753/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[15]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    值得提醒家長的是，背架並非萬能，且過度使用（不符合適應症的開立）在文獻中被記錄為高達 42.5% 的比率，可能造成孩子不必要的社交與心理困擾。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5073434/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[16]</a></sup>
+    <strong style="color: #ffffff;">背架的使用應由骨科或復健科醫師依據 Cobb 角、生長潛力等客觀標準決定，而非單純因為「看起來駝背」就開立。</strong>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🔴 重度（後凸角 &gt; 75°）：手術評估</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    後凸角超過 75°、合併明顯神經壓迫症狀、或保守治療 6-12 個月無效的嚴重個案，才考慮手術介入。手術通常採脊椎融合術，以矯正角度並穩定脊椎，此類決策需由小兒脊椎外科醫師詳細評估後決定。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/24898440/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、有哪些矯正運動？這樣做最有效
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    所有經過研究驗證的運動計畫都具備三個核心要素：<strong style="color: #2dd4bf;">（1）強化背部伸展肌群與核心肌群、（2）伸展緊繃的胸大肌與膕繩肌、（3）訓練正確的姿勢感知</strong>。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9778671/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    以下是實證有效、適合親子在家練習的動作：
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🔷 A. 伸展類（放鬆緊繃肌肉）</h3>
+<img src="/images/news/article/kyphosis/a.webp" alt="放鬆緊繃肌肉" style="width: 100%; height: auto;">
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.05rem;">1. 胸大肌門框伸展</p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    站在門框邊，雙手扶框高度與肩同高，身體慢慢向前傾，感覺胸口與前肩的伸展感，維持 20-30 秒，重複 3 次。這個動作針對駝背時過度縮短的胸大肌，是研究中最常被納入的核心伸展動作。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11312307/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.05rem;">2. 膕繩肌伸展（大腿後側）</p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    坐在地板上，雙腳伸直，慢慢向前彎腰試著碰觸腳趾，感覺大腿後側緊繃，維持 20 秒，重複 3 次。膕繩肌過緊會使骨盆後傾，加重腰椎與胸椎的前彎弧度，放鬆膕繩肌是矯正整體脊椎排列的關鍵步驟。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9778671/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.05rem;">3. 貓駝伸展（Cat-Camel Stretch）</p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    四足跪地，先將背部拱起如貓（吐氣），再慢慢讓背下凹如駱駝（吸氣），交替緩慢進行 10 次。這個動作能活動整段脊椎，增加胸椎的活動度，在多項青少年駝背研究中被列為核心動作。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11312307/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🔶 B. 強化類（訓練背部與核心肌群）</h3>
+<img src="/images/news/article/kyphosis/b.webp" alt="強化類（訓練背部與核心肌群" style="width: 100%; height: auto;">
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.05rem;">4. 超人式（Superman Exercise）</p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    趴在地板上，雙臂向前延伸，同時將雙手與雙腳離地抬高，維持 5-10 秒後放下。每組 10-12 次，共 2 組。這個動作直接強化胸腰椎的背部伸展肌群（竪脊肌），是研究中被廣泛採用的核心背肌訓練動作。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9776914/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.05rem;">5. 橋式（Bridging Exercise）</p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    仰躺屈膝，雙腳踩地，臀部往上抬到大腿與軀幹成一直線，維持 2-5 秒，緩慢放下。每組 10-20 次，共 3 組。橋式能同時訓練臀部、下背與核心肌群，有助於矯正因久坐造成的骨盆後傾與腰椎平板化。
+  </p>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.05rem;">6. 縮下巴運動（Chin-Tuck Exercise）</p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    站姿或坐姿，輕輕將下巴向後收（做「雙下巴」的動作），維持 5 秒後放鬆，重複 10-15 次。這個動作能矯正駝背常見的「頭頸前移」問題，強化深層頸屈肌，在多項矯正運動計畫中被納入為基礎動作。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11312307/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.05rem;">7. 鳥狗式（Bird-Dog Exercise）</p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    四足跪地，同時伸出右手與左腳，維持軀幹水平不晃動，保持 2-5 秒後換邊。每側各 8-15 次，共 3 組。鳥狗式能訓練多裂肌（multifidus）與腹橫肌等深層核心穩定肌群，是預防與矯正脊椎姿勢問題的高效動作。
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 執行建議</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      研究建議每週至少進行 3 次、每次 40-50 分鐘的矯正運動，持續 12 週以上才能看到顯著的角度改善。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11312307/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
+      家長可以將以上動作組合成「早上 10 分鐘＋晚上 10 分鐘」的居家計畫，搭配提醒孩子維持正確坐姿，效果最佳。動作初期建議由物理治療師指導確認姿勢正確，避免代償錯誤。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、各類型駝背治療策略比較表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 800px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table { font-size: 14px; }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>類型</th>
+          <th>好發年齡</th>
+          <th>挺胸能否改善</th>
+          <th>主要治療</th>
+          <th>預後</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>姿勢性駝背</td>
+          <td>7–18 歲</td>
+          <td>能（柔性）</td>
+          <td>運動治療、姿勢教育</td>
+          <td>良好，可完全矯正</td>
+        </tr>
+        <tr>
+          <td>許爾曼氏病（輕度）</td>
+          <td>12–17 歲</td>
+          <td>否（僵硬）</td>
+          <td>運動治療 ± 背架</td>
+          <td>良好（骨骼未成熟時介入）</td>
+        </tr>
+        <tr>
+          <td>許爾曼氏病（中重度）</td>
+          <td>12–17 歲</td>
+          <td>否</td>
+          <td>背架＋物理治療（角度 &gt;75° 考慮手術）</td>
+          <td>中等，需長期追蹤</td>
+        </tr>
+        <tr>
+          <td>先天性駝背</td>
+          <td>嬰幼兒期</td>
+          <td>否</td>
+          <td>小兒骨科評估，必要時手術</td>
+          <td>依嚴重度而定</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 八、常見三大誤解
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「多叫孩子挺胸就好了」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不夠！</strong> 語言提示能短暫改變姿勢，但無法解決根本原因——背部肌肉無力、胸肌緊繃。研究顯示，單純的姿勢教育若沒有搭配肌力訓練，效果遠不如結合運動的完整計畫。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11312307/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup> 改善姿勢需要「讓肌肉有能力支撐正確姿勢」，而不只是「叫孩子記得要挺」。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「長大就會自然好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>這個說法只對部分姿勢性駝背成立，且需要積極介入才能實現。</strong> 對於許爾曼氏病，研究記錄骨骼成熟後如果未矯正，後凸角度會持續增加，成年後平均可惡化至 78°。<sup><a href="https://emedicine.medscape.com/article/311959-overview" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[17]</a></sup> 等待而不介入，往往錯失最佳的治療黃金期。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「背架穿了就能矯正，不用做運動」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 背架能防止駝背惡化，但無法主動「矯正」肌肉的失衡狀態。所有治療指引都強調，背架應與物理治療同時進行，才能最大化效果。研究也指出，物理治療可強化背架矯正後的肌肉適應，使矯正效果更持久。<sup><a href="https://www.physio-pedia.com/Scheuermann's_Kyphosis" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[18]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    九、日常生活中如何預防駝背？
+  </h2>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">控制書包重量：</strong>書包重量應控制在體重的 10% 以內，盡量使用雙肩背、調整肩帶讓書包貼近背部。
+      <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4564613/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">限制連續螢幕時間：</strong>每 30-40 分鐘起身活動 5 分鐘，調整螢幕高度讓視線與螢幕上緣平齊，減少頭頸前移。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12641052/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[19]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">增加戶外運動：</strong>游泳、體操、球類運動等有助全身肌群均衡發展；游泳尤其是對脊椎友好的有氧運動，能同時強化背肌與核心。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">睡眠姿勢：</strong>建議選擇硬度適中的床墊，避免長期趴睡，仰睡或側睡有助於維持脊椎的自然弧度。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">攝取足夠鈣質與維生素 D：</strong>強健的骨骼是維持脊椎健康的基礎，確保孩子均衡飲食，每天曬 15-20 分鐘的陽光幫助維生素 D 合成。
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：孩子幾歲開始適合做這些矯正運動？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      一般而言，7 歲以上的孩子已能理解動作指令並進行基礎的強化訓練。研究中大多數的矯正運動計畫以 9-17 歲為主要對象。動作強度與難度應隨年齡與能力調整，建議由物理治療師先評估後再制訂個人化計畫，避免代償動作反而造成其他問題。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：運動多久才能看到效果？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      研究顯示，每週 3 次、持續 12 週的結構化運動計畫，可使後凸角平均改善 8-10°，並同時改善背部疼痛與平衡能力。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11312307/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup> 姿勢的主觀改善往往在 4-6 週就能感受到，但要達到結構性的角度矯正，需要 3 個月以上的持續執行。重要的是：停止運動後，效果可能逐漸消退，因此養成長期運動習慣才是根本解決之道。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：駝背和脊椎側彎是同一件事嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不是。駝背是脊椎在「前後方向（矢狀面）」過度向後彎曲的問題；脊椎側彎則是在「左右方向（冠狀面）」出現不正常的側向彎曲。兩者可以同時並存，但評估與治療方向不同。如果孩子從後面看兩側肩膀或腰部不對稱，需同時評估是否合併側彎。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：打球或做重訓會讓駝背更嚴重嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      正確執行的運動不會讓駝背更嚴重，反而有幫助。需要注意的是，某些以胸部肌群為主的訓練（如大量臥推）若搭配背部肌群訓練不足，可能加重前胸緊繃、後背無力的失衡狀態。建議駝背的孩子在開始任何重訓計畫前，先由醫師或物理治療師評估姿勢，確保訓練計畫是「前後均衡」的。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：線上視訊物理治療（遠距復健）對駝背有效嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      根據 2024 年的臨床試驗，針對 9-12 歲駝背兒童的研究發現，遠距復健與面對面的物理治療，在改善脊椎姿勢、背肌力量與疼痛的效果上無顯著差異。<sup><a href="https://clinicaltrials.gov/study/NCT06730269" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[20]</a></sup> 對於居住距離醫療院所較遠的家庭，遠距物理治療是可行且有效的選項。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    小朋友駝背不是「懶」，也不是「不努力挺胸」，而是肌肉失衡、生活習慣與生長過程交互作用的結果。從運動醫學的角度，駝背是可以預防、也可以改善的——但前提是及早發現、正確評估、積極介入。
+  </p><br>
+
+  <p style="color: #475569; font-size: 1.05rem;">
+    <strong style="color: #1e293b;">孩子的骨骼發育完成之前，是矯正的黃金時期。</strong>每一次運動治療的努力，都是在幫孩子的脊椎健康打下未來數十年的基礎。如果你正在觀察孩子是否有駝背問題，不要再等待——<strong style="color: #1e293b;">預約門診評估，一次完整的姿勢分析，可能改變孩子脊椎的一生。</strong>
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的三大成因與運動清單，觀察孩子的日常姿勢習慣與書包重量，並帶孩子試著做本文介紹的矯正動作。若有任何疑問或持續性疼痛，請盡早尋求專業醫療評估。
+    </p>
+  </div>
+
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診姿勢評估
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Feng, Q., et al. (2024). The Effectiveness of Exercise Programs in Adolescents with Thoracic Kyphosis: A Narrative Review. Healthcare, 12(15), 1503. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11312307/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11312307</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Fernández, R., et al. (2025). Effect of Therapeutic Exercise on the Management of Hyperkyphosis in Adolescence and Young Adulthood: A Systematic Review. Physiotherapy Research International. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12141983/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12141983</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Yildiz, T.I., & Tüzün, E.H. (2022). The Effect of a Comprehensive Corrective Exercise Program on Kyphosis Angle and Balance in Kyphotic Adolescents. Journal of Sports Science and Medicine. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9778671/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9778671</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Park, Y.J., et al. (2022). Effects of Combined Exercise Program on Spinal Curvature and Balance Ability in Adolescents with Kyphosis. Children, 9(12), 1999. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9776914/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9776914</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Pawlowska, P., et al. (2017). The weight of pupils' schoolbags in early school age and its influence on body posture. BMC Musculoskeletal Disorders. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5359953/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 5359953</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hanfy, H.M., et al. (2020). Prevalence Kyphosis in School Going Children with Heavy Backpack Usage. Annals of Medical and Health Sciences Research. <a href="https://www.amhsr.org/articles/prevalence-kyphosis-in-school-going-children-with-heavy-backpack-usage-10920.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Walicka-Cupryś, K., et al. (2015). Influence of the Weight of a School Backpack on Spinal Curvature in the Sagittal Plane of Seven-Year-Old Children. BioMed Research International. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4564613/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 4564613</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Nemours KidsHealth. (2023). Postural Kyphosis. <a href="https://kidshealth.org/en/parents/postural-kyphosis.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lowe, T.G. (2010). Scheuermann's thoracic kyphosis in the adolescent patient. Current Opinion in Paediatrics. <a href="https://pubmed.ncbi.nlm.nih.gov/21099641/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 21099641</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Palazzo, C., et al. (2014). Scheuermann's disease: current diagnosis and treatment approach. Joint Bone Spine, 81(3), 195–199. <a href="https://pubmed.ncbi.nlm.nih.gov/24898440/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 24898440</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Murray, P.M., Weinstein, S.L., & Spratt, K.F. (1993). Scheuermann's kyphosis in adolescents and adults: diagnosis and management. Journal of Bone and Joint Surgery. <a href="https://pubmed.ncbi.nlm.nih.gov/9692939/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 9692939</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Dyer, B.J., & Bampouras, T.M. (2021). Altered cervical posture kinematics imposed by heavy school backpack loading: A literature synopsis (2009–2019). PMC. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7876943/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7876943</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Scarpato, E., et al. (2025). The impact of exercise on spinal posture in adolescents: a systematic review. PMC. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12622994/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12622994</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Johns Hopkins Medicine. (2023). Kyphosis. <a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/kyphosis" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Weiss, H.R., & Werkmann, M. (2009). Brace treatment for patients with Scheuermann's disease: a review of the literature and first experiences with a new brace design. Scoliosis, 4, 22. <a href="https://pubmed.ncbi.nlm.nih.gov/19788753/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 19788753</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Grivas, T.B., et al. (2016). Bracing for Adolescent Idiopathic Scoliosis and Scheuermann Kyphosis: the issue of overtreatment in Greece. Scoliosis and Spinal Disorders, 11(Suppl 2), 28. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5073434/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 5073434</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Scheuermann Disease: Background, Etiology and Pathophysiology. Medscape, updated April 2026. <a href="https://emedicine.medscape.com/article/311959-overview" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Physiopedia. Scheuermann's Kyphosis. <a href="https://www.physio-pedia.com/Scheuermann's_Kyphosis" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Alcantara-Bumbiedro, S., et al. (2025). Effects on Prolonged Screen Time on Postural Health and Visual Health in Children and Adolescents: A Scoping Review. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12641052/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12641052</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        ClinicalTrials.gov (2024). Face-to-Face Vs. Telerehabilitation for Thoracic Hyperkyphosis in Children: a Clinical Trial. NCT06730269. <a href="https://clinicaltrials.gov/study/NCT06730269" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">NCT06730269</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+
+{
 id: 'daily-activities-knee-injury',
   title: '上下樓、深蹲、做家事傷膝蓋？哪些動作風險最高！',
   lastModified: '2026-05-10',
