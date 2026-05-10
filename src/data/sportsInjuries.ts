@@ -457,6 +457,14 @@ export const sportsInjuriesData = [
         image: '/images/news/article/pikmin.webp',
 
       },
+      {
+        slug: 'daily-activities-knee-injury',
+        title: '上下樓、深蹲、做家事傷膝蓋？哪些動作風險最高！',
+        description: '膝蓋退化不只是運動員的專利！本文從運動醫學實證出發，解析日常動作如上下樓梯、深蹲、蹲跪做家事的膝關節受力數據。研究顯示，下樓梯壓力高達體重 3.46 倍，而長期蹲跪做家事更會增加 7 倍退化風險。教你如何透過正確姿勢與體重管理，延長膝蓋使用壽命。',
+        image: '/images/news/article/knee-injury-daily-activities.webp',
+
+      },
+
                           {
         slug: 'vertical-jump-biomechanics',
         title: '跳得更高！影響垂直起跳高度的關鍵肌肉與科學訓練法',
