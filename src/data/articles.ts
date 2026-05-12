@@ -1,7 +1,655 @@
 import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
+{
+  id: 'ice-heat-therapy-guide',
+  title: '冰敷還是熱敷？運動醫學告訴你正確答案：腳扭傷、閃腰、落枕完整攻略',
+  lastModified: '2026-05-12',
+  category: '衛教文章',
+  date: '2026-05-12',
+  summary: '腳扭傷要冰敷還是熱敷？閃到腰呢？運動完後又該怎麼辦？本文以運動醫學觀點，整合最新實證研究，詳細說明冰敷與熱敷的適應症、正確溫度、持續時間與頻率，讓你在家就能做出正確處置。',
+  coverImage: '/images/news/article/ice-heat-therapy.webp',
+  seoTitle: '冰敷還是熱敷？運動醫學完整攻略：腳扭傷、閃腰、落枕、運動後怎麼做',
+  seoDescription: '腳扭傷要冰敷還是熱敷？閃到腰呢？本文以運動醫學觀點整合最新實證研究，詳細說明冰敷與熱敷的正確時機、溫度、持續時間與頻率，讓你在家做出正確處置。',
+  keywords: [
+    '冰敷熱敷',
+    '運動傷害處理',
+    '腳踝扭傷',
+    '閃到腰',
+    '落枕處理',
+    'RICE原則',
+    'PEACE LOVE協議',
+    '延遲性肌肉痠痛',
+    '冷熱療法',
+    '急性傷害處理'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    「冰敷還是熱敷？」是日常生活中最常被問到的運動醫學問題之一，也是最常被搞錯的。簡單說：<strong>急性傷害（受傷後 48–72 小時內）以冰敷為主，目的是控制腫脹與疼痛；慢性疼痛或傷後恢復期則以熱敷為主，目的是放鬆肌肉、促進循環</strong>。<br><br>但正確的做法遠比「急性冰、慢性熱」這八個字複雜得多。冰敷太久會抑制組織修復，熱敷太早會加劇腫脹，兩者都有嚴格的溫度、時間與頻率要求。本文整合多篇運動醫學實證研究，從腳踝扭傷、閃腰、落枕到運動後恢復，逐一拆解最科學的處置方式，協助你在家做出正確判斷。
+    <sup><a href="https://bjsm.bmj.com/content/54/2/72" target="_blank" rel="noopener noreferrer" style="color: #0369a1; text-decoration: underline;">[1]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12034083/" target="_blank" rel="noopener noreferrer" style="color: #0369a1; text-decoration: underline;">[2]</a></sup>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/11510876/" target="_blank" rel="noopener noreferrer" style="color: #0369a1; text-decoration: underline;">[3]</a></sup>
+  </p>
+</div>
 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、冰敷與熱敷的生理原理：為什麼它們的效果截然不同？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    要回答「該冰還是熱」，首先得了解兩者的作用機制。<strong style="color: #2dd4bf;">冰敷（冷療，Cryotherapy）</strong>的核心原理是「血管收縮」——低溫讓局部血管縮窄，減少血流量，進而降低腫脹、抑制發炎反應，同時透過降低神經傳導速度來達到止痛效果。
+    <sup><a href="https://www.physio-pedia.com/Cryotherapy" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <strong style="color: #2dd4bf;">熱敷（熱療，Thermotherapy）</strong>則相反——熱能使血管擴張，增加局部血流量與組織代謝，為受損組織帶來更多氧氣與養分，同時使肌肉筋膜更有彈性、降低僵硬感。研究確認，熱療能有效增加關節活動度、降低肌肉痙攣，是慢性肌肉骨骼疼痛管理的重要工具。
+    <sup><a href="https://www.mdpi.com/2813-0413/3/3/19" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    關鍵在於：<strong style="color: #ffffff;">急性傷害的早期，身體正在進行必要的發炎反應來啟動修復機制。</strong> 這個過程需要適量的發炎，不能完全被抑制。2020 年在《英國運動醫學期刊》發表的 PEACE & LOVE 新協議指出，過度抑制發炎反應可能干擾正常的組織再生；但這並不代表急性期完全不需要冰敷——冰敷在控制疼痛與過度腫脹方面仍有其價值，尤其在受傷後最初的數小時內。
+    <sup><a href="https://bjsm.bmj.com/content/54/2/72" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 從 RICE 到 PEACE & LOVE：觀念的演進</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      1978 年由 Dr. Gabe Mirkin 提出的 RICE 原則（Rest 休息、Ice 冰敷、Compression 加壓、Elevation 抬高）長期主導急性傷害處置。隨後演進為 PRICE（加入 Protection 保護）、POLICE（以 Optimal Loading 最佳負荷取代純休息）。2020 年最新的 PEACE & LOVE 協議更進一步，強調避免過度使用消炎藥，並以「教育、負荷、樂觀、血管新生、運動」取代單純的被動休息。
+      <sup><a href="https://www.physicaltherapyinnovations.com/2024/04/01/to-ice-or-not-to-ice-acute-injury-management/" target="_blank" rel="noopener noreferrer" style="color: #0e7490; text-decoration: underline;">[6]</a></sup>
+      然而，PEACE & LOVE 並非完全否定冰敷——在疼痛控制方面，現有文獻建議在受傷後最初 6 小時內，冰敷仍可安全使用。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、冰敷怎麼敷才對？溫度、時間、頻率完整指南
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">何時該冰敷？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    冰敷最適合用在以下情況：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">急性扭傷、挫傷：</strong>受傷後 72 小時內，出現局部腫脹、發熱、疼痛。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">運動後急性發炎：</strong>高強度訓練後關節腫脹感明顯。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">肌腱炎急性發作：</strong>如膝蓋、跟腱出現紅、腫、熱、痛的急性期反應。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">術後腫脹控制：</strong>手術後早期消腫（應遵照醫囑）。</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">冰敷的正確做法</h3>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 600px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>參數</th>
+          <th>建議做法</th>
+          <th>注意事項</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>溫度</td>
+          <td>冰袋皮膚接觸溫度約 10–15°C（隔毛巾）；冰水浸泡約 10–15°C</td>
+          <td>切勿直接讓冰塊接觸皮膚，低於 7°C 有凍傷風險</td>
+        </tr>
+        <tr>
+          <td>每次持續時間</td>
+          <td>10–20 分鐘為主（間歇式 10 分鐘效果更佳）</td>
+          <td>超過 20 分鐘無法增加效果，反而可能引發血管反彈性擴張</td>
+        </tr>
+        <tr>
+          <td>頻率</td>
+          <td>受傷後最初 24 小時：每 1–2 小時一次；之後：每 3–4 小時一次</td>
+          <td>兩次冰敷間隔至少 45 分鐘讓皮膚回溫</td>
+        </tr>
+        <tr>
+          <td>總使用時間</td>
+          <td>急性期（受傷後 48–72 小時）</td>
+          <td>72 小時後腫脹仍不退，應就醫評估，而非繼續冰敷</td>
+        </tr>
+        <tr>
+          <td>介質選擇</td>
+          <td>冰袋（用濕毛巾隔開）、冰水混合袋、冷凍豌豆袋</td>
+          <td>研究顯示冰袋降溫效果優於凝膠冷敷包與冷凍蔬菜</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-top: 1rem; margin-bottom: 1.5rem;">
+    於 PubMed 的系統性回顧，以融冰水透過濕毛巾間隔、每次 10 分鐘、反覆多次的方式是效果最佳的冰敷方式。研究指出目標是讓患部組織溫度降低 10–15°C，以達到充分的止痛與代謝抑制效果。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/11510876/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    另一項比較不同冷敷介質的研究則確認，冰袋與冰水混合物在降低皮膚溫度方面顯著優於凝膠冷敷包或冷凍蔬菜。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/16003673/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 冰敷常見錯誤：</strong><br><br>
+      許多人將冰袋直接貼在皮膚上、一敷就超過 30 分鐘，或把「敷越久越好」視為理所當然。事實上，冰敷超過約 15–20 分鐘後，身體的保護機制會引發反彈性血管擴張，反而可能加重局部充血。此外，冰敷後肌肉的反射活動與運動功能在 30 分鐘內會受到短暫抑制，冰敷後應避免立即進行運動，以免二次受傷。
+      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/11510876/" target="_blank" rel="noopener noreferrer" style="color: #c2410c; text-decoration: underline;">[3]</a></sup>
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、熱敷怎麼敷才對？溫度、時間、頻率完整指南
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">何時該熱敷？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    熱敷最適合用在以下情況：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">慢性肌肉痠痛、僵硬：</strong>如長期頸部僵硬、下背痛、肌肉緊繃（無急性腫脹）。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">傷後恢復期（48–72 小時後）：</strong>急性腫脹消退後，進入恢復期可改用熱敷促進循環。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">運動前熱身：</strong>活動前 15–20 分鐘熱敷有助提升組織彈性、增加關節活動度。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">延遲性肌肉痠痛（DOMS）：</strong>運動後 24–72 小時出現的深層肌肉痠痛，熱敷可有效緩解不適。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">關節炎、慢性關節僵硬：</strong>非急性發作期可用熱敷改善活動度。</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">熱敷的正確做法</h3>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>參數</th>
+          <th>建議做法</th>
+          <th>注意事項</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>溫度</td>
+          <td>40–45°C（感覺溫熱舒適，非燙）；泡澡 38–42°C</td>
+          <td>超過 45°C 有燙傷風險，老人與糖尿病患者感覺較遲鈍，應特別小心</td>
+        </tr>
+        <tr>
+          <td>每次持續時間</td>
+          <td>15–20 分鐘</td>
+          <td>超過 30 分鐘效益遞減，且皮膚長時間受熱有低溫燙傷風險</td>
+        </tr>
+        <tr>
+          <td>頻率</td>
+          <td>每天 2–3 次，視症狀調整</td>
+          <td>急性期（有腫脹）禁用；有開放傷口、感染徵兆禁用</td>
+        </tr>
+        <tr>
+          <td>介質選擇</td>
+          <td>濕熱毛巾、熱水袋、暖暖包（隔布）、泡澡</td>
+          <td>濕熱效果優於乾熱，滲透更深；乾式電熱毯應設定低溫並避免睡著時使用</td>
+        </tr>
+        <tr>
+          <td>使用時機</td>
+          <td>受傷 48–72 小時後（腫脹消退）；慢性期任何時間</td>
+          <td>急性扭傷第一天絕對不能熱敷，會顯著加重腫脹</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-top: 1rem; margin-bottom: 1.5rem;">
+    2024 年發表的研究確認，表淺性熱療透過升高組織溫度，能有效提升局部代謝、促進組織修復，並緩解疼痛。研究亦指出，濕熱的組織穿透力優於乾熱，對肌肉與關節的效果更佳。
+    <sup><a href="https://www.mdpi.com/2813-0413/3/3/19" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1：「低溫燙傷」不知不覺中發生</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      臨床上常見患者在睡著後將暖暖包直接貼皮膚，或將熱水袋長時間放置而未更換，引發「低溫燙傷」——這種燙傷往往一開始無感，但幾小時後出現水泡，造成真皮層損傷。建議所有熱敷介質都應隔一層薄布，並在 20 分鐘後移除或重新評估。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、常見情境逐一解析：你的狀況該冰還是熱？
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">情境一：打球腳踝扭傷（急性外側韌帶扭傷）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    腳踝扭傷是運動中最常見的急性傷害，好發於籃球、排球、登山、跑步等活動。扭傷當下通常伴隨外踝疼痛、腫脹、瘀青，有時連走路都困難。
+  </p>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">正確處置流程：</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">受傷後立即（0–30 分鐘）：</strong>停止活動，坐下或躺下，將腳抬高（高於心臟），以彈性繃帶或運動貼布適度加壓包紮。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">受傷後 0–72 小時：冰敷。</strong> 每次 15–20 分鐘，每 2–3 小時一次，冰袋需隔毛巾。持續至腫脹明顯改善。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">受傷後 72 小時至 2 週：改為熱敷（若腫脹已明顯消退）。</strong> 每次 15–20 分鐘，每日 2–3 次，配合溫和活動度復健。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">何時要就醫：</strong>若腳踝完全無法承重、外踝骨有明顯壓痛點、腫脹 72 小時未改善，應進行 X 光排除骨折。</li>
+  </ul>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    2023 年發表的隨機對照試驗針對急性踝關節扭傷患者比較 PRICE 與 POLICE 兩種處置方案，確認急性期冰敷加壓抬高仍是減輕腫脹疼痛的有效基礎處置。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10560804/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">情境二：閃到腰（急性下背痛）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    「閃腰」通常是因為突然的動作（如彎腰搬重物、打噴嚏）造成腰部肌肉急性拉傷或椎間關節暫時性錯位，表現為劇烈的局部疼痛，甚至無法直身。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">正確處置流程：</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">受傷後立即至 24–48 小時：冰敷或熱敷皆可（以舒適為主）。</strong> 純肌肉拉傷、局部有熱感者優先冰敷；純肌肉痙攣但無明顯腫脹者，部分患者對熱敷更有反應。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">受傷後 48 小時後：以熱敷為主。</strong> 熱敷腰部每次 15–20 分鐘，可配合輕度伸展。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">活動：</strong>現有證據不支持臥床休息超過 2 天，適度活動（短距離走路）比長時間臥床更有利於恢復。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">警示症狀（應立即就醫）：</strong>大小便功能異常、下肢麻木或無力、疼痛向腿部放射（疑似椎間盤壓迫或馬尾症候群）。</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    值得注意的是，閃腰的冰與熱選擇比踝扭傷更有彈性，因為閃腰的主要病理是肌肉痙攣而非明顯的外傷性腫脹。有些患者在急性期對熱敷（放鬆肌肉痙攣）反應更好，臨床上應以患者主觀感受為輔助判斷依據。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">情境三：落枕（急性頸部肌肉痙攣）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    落枕通常是睡姿不良或著涼導致頸部肌肉急性痙攣，早上醒來突然發現頸部一側劇烈疼痛、無法轉頭。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">正確處置流程：</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">發生後立即：熱敷優先。</strong> 落枕的主因是肌肉痙攣（不是急性外傷性腫脹），以溫熱毛巾或熱水袋敷頸部 15–20 分鐘，可有效放鬆緊繃的斜角肌、提肩胛肌。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">若頸部有明顯外傷撞擊（如車禍後）：改為冰敷，</strong>並避免頸部活動，立即就醫排除骨折或脊髓傷害。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">熱敷後：</strong>輕柔的頸部活動度訓練（緩慢點頭、轉頭），避免大力扭轉。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">若 2–3 天未改善：</strong>就醫評估，可能需要徒手治療或藥物協助。</li>
+  </ul>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2：落枕為何熱敷比冰敷好？</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      臨床上，許多患者因為聽到「急性傷害用冰」就對落枕也拿冰袋來敷，結果不但未改善，有時反而讓肌肉更痙攣。這是因為落枕的疼痛根源主要是神經肌肉反射性痙攣，而非外傷性水腫；冷刺激可能短暫增加肌肉張力，不利放鬆。相較之下，熱敷透過促進血液循環、降低肌梭的敏感性來有效解除痙攣。這也是為什麼很多人熱敷後「立刻感覺好一點」的原因。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">情境四：運動後的肌肉痠痛（DOMS）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    延遲性肌肉痠痛（Delayed Onset Muscle Soreness，DOMS）通常在高強度訓練後 24–72 小時出現，以深層肌肉的「酸、緊、鈍痛感」為主，而非外傷性腫脹。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">正確處置流程：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">運動後即時（30 分鐘內）：可短暫冰敷或冷水浸泡</strong>（水溫 11–15°C，浸泡 11–15 分鐘），有助控制微創傷引起的輕度發炎、降低肌肉疲勞感。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">痠痛感出現後（24–48 小時）：改為熱敷。</strong> 每次 15–20 分鐘，加速局部循環、排除代謝廢物，改善深層肌肉僵硬。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">不建議做的事：</strong>劇烈運動後立即進行長時間冰浴（超過 15 分鐘），可能抑制肌肉蛋白質合成，影響訓練適應效果。</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    一項系統性回顧研究指出，運動後使用冰敷的最佳時間不應超過 10 分鐘（以純止痛為目的）；冷水浸泡則建議在 11–15°C 水溫中進行 11–15 分鐘，對急性恢復效果較佳。
+    <sup><a href="https://www.sciencedirect.com/science/article/pii/S2059775421000729" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、冰敷後多久可以改成熱敷？判斷時機完整說明
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是患者最常問的問題。答案不是一個固定天數，而是<strong style="color: #2dd4bf;">「看腫脹是否消退」</strong>，而非「過了幾天」。
+  </p>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 1rem; font-size: 1.1rem;">轉換為熱敷的判斷標準（三個條件都需符合）：</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">腫脹明顯改善：</strong>與受傷初期相比，局部腫脹已消退或維持穩定，不再繼續惡化。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">局部不再發熱：</strong>用手觸摸患部，與對側相比已無明顯溫度差異（不再「燙燙的」）。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">一般在受傷後 48–72 小時後：</strong>多數急性軟組織傷害在 72 小時後腫脹高峰已過，可考慮轉換為熱敷。但若仍有明顯腫脹，應繼續冰敷直至腫退。</li>
+  </ul>
+
+  <div style="background-color: #fffbeb; border: 1px solid #fbbf24; border-radius: 0.75rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h4 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.1rem; border-bottom: 1px solid #fcd34d; padding-bottom: 0.5rem;">⚡ 快速判斷表：我現在該冰還是熱？</h4>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      <li style="margin-bottom: 0.8rem; display: flex; align-items: start;">
+        <span style="background: #ef4444; color: white; padding: 2px 8px; border-radius: 4px; margin-right: 10px; flex-shrink: 0; font-size: 0.9rem;">冰敷</span>
+        <span>受傷後 72 小時內 ＋ 局部有腫脹 ＋ 患部感覺熱熱的 → <strong>冰敷</strong></span>
+      </li>
+      <li style="margin-bottom: 0.8rem; display: flex; align-items: start;">
+        <span style="background: #f97316; color: white; padding: 2px 8px; border-radius: 4px; margin-right: 10px; flex-shrink: 0; font-size: 0.9rem;">熱敷</span>
+        <span>受傷超過 72 小時 ＋ 腫脹已消 ＋ 仍有僵硬痠痛 → <strong>熱敷</strong></span>
+      </li>
+      <li style="margin-bottom: 0.8rem; display: flex; align-items: start;">
+        <span style="background: #f97316; color: white; padding: 2px 8px; border-radius: 4px; margin-right: 10px; flex-shrink: 0; font-size: 0.9rem;">熱敷</span>
+        <span>落枕（無外傷史）＋ 肌肉痙攣為主 → <strong>熱敷</strong></span>
+      </li>
+      <li style="margin-bottom: 0.8rem; display: flex; align-items: start;">
+        <span style="background: #ef4444; color: white; padding: 2px 8px; border-radius: 4px; margin-right: 10px; flex-shrink: 0; font-size: 0.9rem;">冰敷</span>
+        <span>運動完立即（30 分鐘內）＋ 關節有腫脹感 → <strong>冰敷</strong></span>
+      </li>
+      <li style="margin-bottom: 0.8rem; display: flex; align-items: start;">
+        <span style="background: #f97316; color: white; padding: 2px 8px; border-radius: 4px; margin-right: 10px; flex-shrink: 0; font-size: 0.9rem;">熱敷</span>
+        <span>DOMS 痠痛（運動後 24–72 小時）＋ 無腫脹 → <strong>熱敷</strong></span>
+      </li>
+      <li style="margin-bottom: 0; display: flex; align-items: start;">
+        <span style="background: #6366f1; color: white; padding: 2px 8px; border-radius: 4px; margin-right: 10px; flex-shrink: 0; font-size: 0.9rem;">就醫</span>
+        <span>腫脹持續超過 72 小時不退、疼痛無法負重、感覺麻木 → <strong>就醫評估</strong></span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、各情境冷熱療法比較總表
+  </h2>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>情境</th>
+          <th>急性期（0–48h）</th>
+          <th>恢復期（48h 後）</th>
+          <th>特別注意</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>腳踝扭傷</td>
+          <td>🧊 冰敷，每次15–20分鐘，每2–3小時一次</td>
+          <td>🔥 熱敷，配合活動度復健</td>
+          <td>腫未退不可改熱敷；負重困難需就醫排除骨折</td>
+        </tr>
+        <tr>
+          <td>閃到腰</td>
+          <td>🧊/🔥 視腫脹決定；肌肉痙攣型可熱敷</td>
+          <td>🔥 熱敷為主，配合輕度活動</td>
+          <td>出現下肢麻木無力立即就醫</td>
+        </tr>
+        <tr>
+          <td>落枕</td>
+          <td>🔥 熱敷優先（無外傷史）</td>
+          <td>🔥 持續熱敷＋輕柔活動</td>
+          <td>有外傷史（如車禍後）改冰敷並就醫</td>
+        </tr>
+        <tr>
+          <td>運動後即時</td>
+          <td>🧊 冰敷或冷水浸泡（30分鐘內，10–15分鐘）</td>
+          <td>🔥 24h後熱敷緩解DOMS</td>
+          <td>冰浴不超過15分鐘，避免影響訓練適應</td>
+        </tr>
+        <tr>
+          <td>慢性頸肩腰背痛</td>
+          <td>—</td>
+          <td>🔥 熱敷為主</td>
+          <td>急性發作有腫脹時短暫改冰敷</td>
+        </tr>
+        <tr>
+          <td>肌腱炎急性發作</td>
+          <td>🧊 冰敷控制疼痛</td>
+          <td>🔥 配合物理治療</td>
+          <td>持續發作應就醫，勿自行反覆冰熱</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 七、常見三大迷思破解
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「急性傷害一定要冰敷，冰越久越好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 冰敷超過約 20 分鐘後，身體會觸發反彈性血管擴張，可能反而加重局部充血。同時，過度抑制發炎反應也可能干擾正常的組織修復機制。目前最新指引（PEACE & LOVE）建議急性期冰敷以短時間、間歇式為主，並非越久越好。<sup><a href="https://bjsm.bmj.com/content/54/2/72" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「落枕、閃腰這種急性傷害，一律冰敷」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 急性傷害≠一定要冰敷。落枕的主要病理是肌肉痙攣而非外傷性腫脹；閃腰若以肌肉痙攣為主、無明顯腫脹，熱敷往往能更有效放鬆緊繃的肌肉。選擇冷熱療法應依傷害的主要病理機制判斷，而非單純以「急性或慢性」二分。
+          <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12034083/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[2]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「熱敷就是貼藥布，加個暖暖包更好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>危險！</strong> 藥布（如撒隆巴斯）的冰涼感或熱感是化學刺激，並非真正的熱療效果。在貼著藥布的同時再加上熱水袋或暖暖包，可能因藥物的皮膚刺激性與熱能疊加，造成嚴重的接觸性皮膚炎或低溫燙傷。正確的熱療應使用適當的加熱介質（熱水袋、熱毛巾），並確保溫度在 40–45°C 範圍內，且有布料隔離皮膚。
+          <sup><a href="https://www.mdpi.com/2813-0413/3/3/19" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[5]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">❄️🔥</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：冰敷一定要用冰塊嗎？保冷劑可以嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      保冷劑可以使用，但研究顯示其降溫效果不如傳統冰袋或冰水混合袋。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/16003673/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup> 若家中無冰塊，保冷劑、冷凍蔬菜袋（如豌豆袋）也是可接受的替代方案，重要的是務必隔一層薄布保護皮膚，避免凍傷。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：冰敷和熱敷可以交替使用（冷熱交替療法）嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      冷熱交替療法在部分復健情境有其應用，通常是在恢復期（非急性腫脹期）交替使用冷水與熱水浸泡，以促進循環、降低慢性腫脹。但對於急性傷害的前 72 小時，不建議冷熱交替，應以冰敷為主，避免熱敷刺激再次引發腫脹。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：扭傷後還是很痛，可以繼續冰敷超過 72 小時嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      若腫脹仍明顯，可繼續冰敷，但更重要的是：72 小時後腫脹仍未改善，代表傷害可能比預期嚴重，應就醫進行影像學評估，排除骨折或韌帶完全斷裂的可能，而非單純在家繼續冰敷。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：運動前熱敷好，還是運動後冰敷好？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      兩個都對，目的不同。運動前 15–20 分鐘熱敷（或輕度有氧熱身）能提升肌肉彈性、增加關節活動度、降低受傷風險。運動後若有關節腫脹感，冰敷 10–15 分鐘有助控制微創傷引起的輕度發炎；若無腫脹、只是一般痠痛，溫熱浴或 24 小時後的熱敷對恢復更有幫助。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12034083/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：懷孕、糖尿病、心血管疾病患者使用冷熱療有禁忌嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      有。糖尿病患者因末梢神經病變導致感覺遲鈍，無法準確感知溫度，使用冰敷或熱敷時有更高的凍傷或燙傷風險，建議縮短時間並由他人協助監控。心血管疾病患者大範圍冷水浸泡可能引發迷走神經反射。懷孕婦女避免對腹部直接冷熱敷。以上族群建議使用冷熱療前先諮詢醫師。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    冰敷與熱敷的正確選擇，不是一個非此即彼的問題，而是一套需要根據傷害類型、腫脹程度與恢復階段動態調整的策略。記住最核心的原則：<strong style="color: #1e293b;">有腫脹就冰，腫退僵硬就熱</strong>；落枕、肌肉痙攣例外，以熱為主。
+  </p><br>
+
+  <p style="color: #475569; font-size: 1.05rem;">
+    然而，冷熱療法終究只是「輔助」工具，不是萬能解方。如果你的疼痛持續 72 小時以上未改善、出現肢體麻木或無力、腫脹持續惡化，這些都是身體在告訴你需要專業評估——<strong style="color: #1e293b;">請預約門診，讓專業的運動醫學評估找出正確的問題所在，</strong>避免因錯誤處置讓小傷變大傷。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的情境判斷表，確認你目前的狀況適合冰敷還是熱敷，並嚴格遵守溫度與時間限制。若有任何持續性疼痛或腫脹，請尋求專業醫療評估。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約專科醫學評估
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Dubois, B., & Esculier, J.F. (2020). Soft-tissue injuries simply need PEACE and LOVE. British Journal of Sports Medicine, 54(2), 72–73. <a href="https://bjsm.bmj.com/content/54/2/72" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1136/bjsports-2019-101253</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Benca, E., et al. (2025). Thermal Modalities Including Hot Baths and Cold Plunges Play a Unique Role in Injury Prevention and Recovery. PMC12034083. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12034083/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12034083</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        MacAuley, D.C. (2001). Ice therapy: how good is the evidence? International Journal of Sports Medicine, 22(5), 379–384. PubMed. <a href="https://pubmed.ncbi.nlm.nih.gov/11510876/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 11510876</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Physio-pedia. (2024). Cryotherapy. <a href="https://www.physio-pedia.com/Cryotherapy" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Zanoli, G., et al. (2024). Current Indications and Future Direction in Heat Therapy for Musculoskeletal Pain: A Narrative Review. Muscles, 3(3), 212–223. <a href="https://www.mdpi.com/2813-0413/3/3/19" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3390/muscles3030019</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Physical Therapy Innovations. (2024). To Ice or Not To Ice: Acute Injury Management. <a href="https://www.physicaltherapyinnovations.com/2024/04/01/to-ice-or-not-to-ice-acute-injury-management/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Bleakley, C.M., et al. (2005). Comparison of skin surface temperature during the application of various cryotherapy modalities. Archives of Physical Medicine and Rehabilitation, 86(7), 1472–1474. PubMed. <a href="https://pubmed.ncbi.nlm.nih.gov/16003673/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 16003673</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Erdurmuş, Ö.Y., et al. (2023). Comparison of the effects of PRICE and POLICE treatment protocols on ankle function in patients with ankle sprain. Ulusal Travma ve Acil Cerrahi Dergisi, 29(8), 920–928. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10560804/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10560804</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Higgins, T.R., et al. (2021). Cryotherapy duration is critical in short-term recovery of athletes: a systematic review. Journal of Science and Medicine in Sport. ScienceDirect. <a href="https://www.sciencedirect.com/science/article/pii/S2059775421000729" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.jsams.2021.01.006</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Racinais, S., et al. (2024). Cryotherapy for treating soft tissue injuries in sport medicine. British Journal of Sports Medicine. <a href="https://www.fisiologiadelejercicio.com/wp-content/uploads/2024/09/Cryotherapy-for-treating-soft-tissue-injuries-in-sport.pdf" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1136/bjsports-2024-108304</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Bleakley, C.M., McDonough, S.M., & MacAuley, D.C. (2006). Cryotherapy for acute ankle sprains: a randomised controlled study of two different icing protocols. British Journal of Sports Medicine, 40(8), 700–705. <a href="https://bjsm.bmj.com/content/40/8/700" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1136/bjsm.2006.025932</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Malanga, G.A., Yan, N., & Stark, J. (2015). Mechanisms and efficacy of heat and cold therapies for musculoskeletal injury. Postgraduate Medicine, 127(1), 57–65. <a href="https://www.tandfonline.com/doi/abs/10.1080/00325481.2015.992719" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1080/00325481.2015.992719</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Wang, Y., et al. (2021). Heat and cold therapy reduce pain in patients with delayed onset muscle soreness: A systematic review and meta-analysis. Journal of Clinical Nursing. <a href="https://onlinelibrary.wiley.com/doi/10.1111/jocn.15993" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1111/jocn.15993</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lubrano, M., et al. (2023). An International Multidisciplinary Delphi-Based Consensus on Heat Therapy in Musculoskeletal Pain. Frontiers in Medicine. <a href="https://www.frontiersin.org/journals/medicine" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Frontiers in Medicine</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kwiecien, S.Y. (2023). Is it the End of the Ice Age? International Journal of Sports Physical Therapy, 18(3), 547–550. <a href="https://ijspt.scholasticahq.com/article/93213" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.26603/001c.93213</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Nadler, S.F., Weingand, K., & Kruse, R.J. (2004). The physiologic basis and clinical applications of cryotherapy and thermotherapy for the pain practitioner. Pain Physician, 7(3), 395–399. <a href="https://pubmed.ncbi.nlm.nih.gov/16858479/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 16858479</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
 {
   id: 'children-kyphosis-guide',
   title: '小朋友為什麼會駝背？運動醫學完整解析：成因、治療與矯正運動',

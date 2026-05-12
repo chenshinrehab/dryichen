@@ -37,6 +37,12 @@ export const sportsInjuriesData = [
         description: '關節發出喀喀聲卻不痛？本文從運動醫學角度深度解析關節聲音（crepitus）的三大科學成因、各部位無痛性喀喀聲的差異，並整理出必須就醫的「紅旗警示」與日常保養策略。',
         image: '/images/news/article/joint-crepitus.webp',
       },
+                        {
+        slug: 'ice-heat-therapy-guide',
+        title: '冰敷還是熱敷？運動醫學告訴你正確答案：腳扭傷、閃腰、落枕完整攻略',
+        description: '腳扭傷要冰敷還是熱敷？閃到腰呢？運動完後又該怎麼辦？本文以運動醫學觀點，整合最新實證研究，詳細說明冰敷與熱敷的適應症、正確溫度、持續時間與頻率，讓你在家就能做出正確處置。',
+        image: '/images/news/article/ice-heat-therapy.webp',
+      },
 
                   {
         slug: 'pain-medication-analysis',
