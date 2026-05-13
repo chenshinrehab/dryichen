@@ -250,6 +250,18 @@ export const sportsInjuriesData = [
         description: '紅肉與白肉到底差在哪？牛肉、豬肉、雞肉、魚肉的營養成分有何不同？本文從復健與運動醫學觀點，針對兒童、健身族群、高齡者提供最科學的吃肉指南，教你遠離肌少症。',
         image: '/images/news/article/meat-nutrition-analysis.webp',
       },
+                                          {
+        slug: 'egg-nutrition-sports-medicine-myth',
+        title: '一天能吃幾顆蛋？全蛋 vs 蛋白，會造成膽固醇過高嗎？',
+        description: '雞蛋曾被視為膽固醇殺手，但最新運動醫學研究顯示，全蛋對肌肉合成的效果竟優於純蛋白。本文深入剖析亞洲族群吃蛋的保護效果、不同健康狀態的攝取建議，並破解生蛋較營養與膽固醇過高的常見迷思，教你如何吃出最高效益。',
+        image: '/images/news/article/egg-nutrition-analysis.webp',
+      },
+                                                {
+        slug: 'microwave-nutrients-myths-analysis',
+        title: '微波爐會破壞營養嗎？醫學實證破解迷思',
+        description: '「微波爐破壞食物營養」是流傳已久的迷思。本文從運動醫學與食品科學角度解析：決定營養保留的關鍵在於加熱溫度、時間與用水量。研究顯示，微波加熱在維生素C保留率上往往優於水煮，且適度蛋白質變性更有助於消化。帶您破解輻射與致癌迷思，掌握正確微波原則。',
+        image: '/images/news/article/microwave-nutrients-science.webp',
+      },
                               {
         slug: 'iv-drips-truth-unveiled',
         title: '揭開點滴的面紗：美白、減脂、保肝點滴成分？實證有效嗎？',

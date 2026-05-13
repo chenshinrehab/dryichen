@@ -1,6 +1,1054 @@
 import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
+
+
+
+{
+id: 'microwave-nutrients-myths-analysis',
+  title: '微波爐會破壞營養嗎？醫學實證破解迷思',
+  lastModified: '2026-05-13',
+  category: '衛教文章',
+  date: '2026-05-13',
+  summary: '「微波爐破壞食物營養」是流傳已久的迷思。本文從運動醫學與食品科學角度解析：決定營養保留的關鍵在於加熱溫度、時間與用水量。研究顯示，微波加熱在維生素C保留率上往往優於水煮，且適度蛋白質變性更有助於消化。帶您破解輻射與致癌迷思，掌握正確微波原則。',
+  coverImage: '/images/news/article/microwave-nutrients-science.webp',
+  seoTitle: '微波爐會破壞營養嗎？破解蛋白質變性與維生素流失的醫學迷思',
+  seoDescription: '深入解析微波加熱對維生素、蛋白質及礦物質的影響。科學研究證實微波加熱因時間短、用水少，能更有效保留水溶性維生素。本文同步澄清微波輻射與致癌迷思，提供專業的營養保留加熱建議。',
+  keywords: [
+    '微波爐營養',
+    '微波加熱原理',
+    '蛋白質變性',
+    '維生素C流失',
+    '微波輻射迷思',
+    '食品科學',
+    '微波容器安全',
+    '水煮vs微波',
+    '脂溶性維生素',
+    '營養保留'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    「微波爐會破壞食物營養」是廣泛流傳的說法，但科學研究給出的答案遠比流言複雜。影響食物營養的關鍵因素是<strong>加熱溫度、加熱時間、以及用水量</strong>，而非加熱方式本身。研究顯示，微波加熱因加熱時間短且用水少，在維生素C等水溶性維生素的保留率上，往往<strong>優於水煮</strong>，與傳統加熱相比並無顯著差異。
+    <sup><a href="#ref1" style="color: #0284c7;">[1]</a></sup><br><br>
+    蛋白質方面，微波與傳統火加熱同樣會造成蛋白質結構變性，但這是所有熱處理共有的現象，且適度變性有助於消化吸收，對人體無害。
+    <sup><a href="#ref2" style="color: #0284c7;">[2]</a></sup>
+    礦物質不受熱力影響，在各種烹調方式下皆穩定保留。
+    <sup><a href="#ref3" style="color: #0284c7;">[3]</a></sup>
+    本文將以醫學實證為基礎，系統解析微波加熱與傳統加熱對食物各類營養成分的真實影響，並澄清常見的錯誤認知。
+  </p>
+</div>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、微波爐到底是怎麼加熱食物的？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    要了解微波加熱對營養的影響，首先需要知道微波爐的加熱原理，它和傳統火加熱有什麼根本上的不同。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <strong style="color: #2dd4bf;">傳統火加熱</strong>是由外而內傳遞熱能：熱源（火焰、電熱圈）加熱鍋具，鍋具再加熱食物表面，然後熱能慢慢向食物中心傳導。這個過程較慢，食物外層往往先達到高溫，而中心溫度較低。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <strong style="color: #2dd4bf;">微波加熱</strong>則完全不同。微波爐發射的是2.45 GHz的電磁波，這個頻率對食物中的極性分子—特別是水分子—有直接作用。當微波照射食物時，水分子會以每秒數十億次的速率快速旋轉排列，這種振動摩擦產生的動能就轉化為熱能，讓食物從內部「自己發熱」。
+    <sup><a href="#ref4" style="color: #2dd4bf;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    正因為這個加熱原理的差異，微波加熱通常比傳統加熱更快、所需溫度更均勻，且不需要大量用水，這些特性直接影響了食物中各類營養素的保留情況。
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 重要觀念</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      影響食物營養流失的三大關鍵因素是：<strong>溫度高低、加熱時間長短、與水的接觸程度</strong>。不管是微波加熱還是傳統加熱，只要能控制這三個變數，營養流失的差異其實相當有限。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、維生素：微波加熱反而表現更好？
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">水溶性維生素（維生素C、B群）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    水溶性維生素（如維生素C、葉酸、維生素B群）是最容易在烹調中流失的營養素，因為它們不僅怕熱，也容易溶入烹調用水中流失。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    大量研究一致顯示，<strong style="color: #ffffff;">在維生素C的保留率方面，微波加熱的表現通常優於水煮。</strong>一項針對青花菜、菠菜和萵苣的對照研究發現，水煮導致維生素C流失高達40-54%，而微波加熱的流失量僅為21-28%，蒸煮效果最佳（8-14%流失）。
+    <sup><a href="#ref5" style="color: #2dd4bf;">[5]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    另一項發表於PMC的研究評估了十種蔬菜在不同烹調方式下的維生素保留情況，結果發現微波加熱下，菠菜、胡蘿蔔、地瓜和青花菜的維生素C保留率均超過90%，而水煮則呈現最低的保留率。
+    <sup><a href="#ref6" style="color: #2dd4bf;">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    發表於《食品組成與分析期刊》的評論也指出，微波烹調、蒸煮或快炒等方式，對水溶性維生素的保留率整體較高，菠菜和四季豆以微波烹調時的維生素C平均保留率可達79%，而水煮僅有66%。
+    <sup><a href="#ref7" style="color: #2dd4bf;">[7]</a></sup>
+  </p>
+ 
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>🔬 為什麼微波加熱能更好地保留維生素C？</strong><br><br>
+      原因在於兩點：<strong>一是加熱時間短</strong>，減少了維生素C因長時間高溫而氧化分解的機會；<strong>二是不需要大量用水</strong>，避免了水溶性維生素大量溶入烹調水中的損失。水煮時，大量的維生素C其實是「流進了湯裡」，如果喝湯就能補回來，但多數人只吃蔬菜不喝湯。
+    </p>
+  </div>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">脂溶性維生素（維生素A、D、E、K）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    脂溶性維生素（A、D、E、K）對熱較為穩定，但在不同烹調方式下的表現會因食物種類而有差異。研究顯示，某些蔬菜中的維生素K在微波加熱下損失較多，而在菠菜和牛皮菜中則損失較少。整體而言，脂溶性維生素的保留情況取決於食物種類與烹調條件，而非單純由加熱方式決定。
+    <sup><a href="#ref6" style="color: #2dd4bf;">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    值得注意的是，部分烹調後的蔬菜，其脂溶性維生素（如β-胡蘿蔔素）含量甚至<strong style="color: #ffffff;">高於生鮮狀態</strong>，因為加熱破壞了細胞壁，反而使胡蘿蔔素更容易被人體吸收利用。
+    <sup><a href="#ref8" style="color: #2dd4bf;">[8]</a></sup>
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、「微波破壞蛋白質結構」——這是真的嗎？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是最常被提起的疑慮之一。讓我們從醫學和食品科學的角度，來正確理解「蛋白質變性」。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">什麼是蛋白質變性？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    蛋白質是由胺基酸鏈折疊成特定三維結構的大分子。當蛋白質受熱時，維持其三維結構的氫鍵和二硫鍵會斷裂，蛋白質的立體結構「展開」，這個過程稱為「變性」。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">關鍵認知：蛋白質變性不等於營養流失。</strong>事實上，當我們把生雞蛋煮熟、把生牛肉烤熟時，蛋白質早已發生了變性，而這樣的熟食蛋白質往往比生食更容易被消化道分解吸收——酵素更容易接觸到蛋白質鏈上的各個部位。
+    <sup><a href="#ref9" style="color: #2dd4bf;">[9]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">微波與傳統加熱對蛋白質的差異</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    根據發表於《食品化學》的研究，微波與傳統加熱同樣會造成蛋白質變性，但微波加熱因速度快，在<strong style="color: #ffffff;">相同溫度下對蛋白質的變性程度往往較低</strong>。一項針對肉類蛋白質的研究顯示，相較於傳統加熱方式，微波及電熱等新式加熱方法，在高速加熱下所造成的蛋白質變性程度反而較低。
+    <sup><a href="#ref10" style="color: #2dd4bf;">[10]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    不過，若微波時間過長、功率過高，則可能導致蛋白質過度聚合，形成較難消化的大分子網絡。一項關於麵筋蛋白的研究指出，以1000瓦微波加熱5分鐘後，蛋白質可消化性確實有所下降，但必需胺基酸的比例並無改變。
+    <sup><a href="#ref11" style="color: #2dd4bf;">[11]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    澳洲聯邦科學與工業研究組織的評估也指出，目前研究未發現微波爐對食物中蛋白質、脂肪及碳水化合物的巨量營養素有任何非熱效應上的特殊影響，與傳統加熱相比，蛋白質變性速率的些微差異，純粹是由加熱時間與溫度的不同所造成。
+    <sup><a href="#ref12" style="color: #2dd4bf;">[12]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床重點整理</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      從消化吸收的角度來看，<strong>適度加熱（不論微波或火烤）反而能提升蛋白質的消化吸收率</strong>。真正需要注意的是避免過度加熱——不管用什麼方式，把食物加熱到焦黑或反覆長時間加熱，才是影響蛋白質品質與整體營養的真正問題。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、礦物質與脂肪：加熱影響最小的營養素
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">礦物質：幾乎不受加熱影響</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    鈣、鐵、鋅、鎂、鉀等礦物質屬於無機物，本質上不會被熱能分解或破壞。無論微波加熱或傳統加熱，礦物質的含量在各種烹調條件下幾乎保持穩定。
+    <sup><a href="#ref13" style="color: #2dd4bf;">[13]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    唯一可能造成礦物質「損失」的情況，是食物在大量水中長時間水煮，部分礦物質會溶入湯汁中。因此從礦物質保留的角度來看，減少用水量（包括使用微波加熱）反而更有優勢。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">脂肪：微波可能有輕微保護作用</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    脂肪在高溫下容易氧化，產生對健康不利的過氧化產物。由於微波加熱速度快、所需時間短，食物暴露於高溫的時間相對較短，對脂肪氧化的影響也相對較小。早期發表的研究總結指出，微波對脂肪的營養影響同樣是微乎其微的。
+    <sup><a href="#ref14" style="color: #2dd4bf;">[14]</a></sup>
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、微波加熱 vs. 傳統火加熱：綜合比較
+  </h2>
+ 
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 700px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 130px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+  </style>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>營養素種類</th>
+          <th>微波加熱</th>
+          <th>傳統水煮</th>
+          <th>傳統蒸煮</th>
+          <th>說明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>維生素C</td>
+          <td>流失約21–28%</td>
+          <td>流失約40–54%</td>
+          <td>流失約8–14%（最佳）</td>
+          <td>水煮因溶入水中損失最多</td>
+        </tr>
+        <tr>
+          <td>B群維生素</td>
+          <td>保留率佳</td>
+          <td>流失較多（溶入水）</td>
+          <td>保留率佳</td>
+          <td>水溶性，少用水即可保留</td>
+        </tr>
+        <tr>
+          <td>脂溶性維生素 (A/D/E/K)</td>
+          <td>依食物種類而異</td>
+          <td>相對穩定</td>
+          <td>相對穩定</td>
+          <td>不溶於水，受熱影響小</td>
+        </tr>
+        <tr>
+          <td>蛋白質</td>
+          <td>適度變性，助消化</td>
+          <td>適度變性，助消化</td>
+          <td>適度變性，助消化</td>
+          <td>變性不等於營養流失</td>
+        </tr>
+        <tr>
+          <td>礦物質</td>
+          <td>幾乎不流失</td>
+          <td>微量溶入水中</td>
+          <td>幾乎不流失</td>
+          <td>礦物質本質上不被熱破壞</td>
+        </tr>
+        <tr>
+          <td>抗氧化植化素</td>
+          <td>部分流失，依用水量</td>
+          <td>流失較多（溶入水）</td>
+          <td>保留較佳</td>
+          <td>用水量是主要影響因素</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="color: #94a3b8; font-size: 0.9rem; margin-top: 0.5rem;">資料來源整理自多篇學術研究<sup><a href="#ref5" style="color: #2dd4bf;">[5]</a><a href="#ref6" style="color: #2dd4bf;">[6]</a><a href="#ref7" style="color: #2dd4bf;">[7]</a></sup></p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、微波加熱有沒有潛在的特殊風險？
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">關於「非熱效應」的爭議</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    部分研究探討微波是否除了加熱效果之外，還具有「非熱效應」——也就是說，電磁波本身是否會對食物分子產生獨立於熱能之外的改變。發表於《美國化學資訊與建模期刊》的研究顯示，微波確實能影響蛋白質構型改變的動力學，使β-乳球蛋白的構型變化速度加快。
+    <sup><a href="#ref15" style="color: #2dd4bf;">[15]</a></sup>
+    然而，目前科學界的主流共識仍認為，微波對食物中宏量營養素（蛋白質、脂肪、碳水化合物）的影響，<strong style="color: #ffffff;">主要是由熱效應決定的</strong>，非熱效應對日常飲食安全的實際影響尚未有充分且一致的人體研究證據。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">容器選擇的重要性</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    從食品安全角度，微波加熱真正值得注意的，是<strong style="color: #ffffff;">容器的選擇</strong>，而非食物本身的營養問題。使用不適合微波的塑膠容器時，高溫可能造成塑化劑（如BPA）溶出，污染食物。建議使用標示「微波爐適用」的容器，或改用玻璃、陶瓷器皿。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">加熱不均勻的問題</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    微波加熱有時會出現「熱點」與「冷點」不均勻的現象。從食品安全角度，這可能導致食物某些部位溫度不足以殺滅病原菌，因此加熱後建議靜置一分鐘讓溫度均勻擴散，或中途攪拌翻動食物。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 七、常見三大迷思解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「微波加熱會讓食物產生輻射，對人體有害」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong>微波是非游離輻射，與X光或核輻射的游離輻射性質完全不同。微波不會讓食物「帶有輻射性」，更不會破壞DNA。微波爐的電磁波只是用來振動水分子產生熱能，一旦停止運作，電磁場立即消失，食物中不會殘留任何輻射。<sup><a href="#ref4" style="color: #2563eb;">[4]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「微波加熱會破壞蛋白質，讓食物失去營養價值」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度誇大！</strong>蛋白質變性是所有烹調方式共有的現象，傳統火加熱同樣會造成蛋白質變性。適度的熱變性反而<strong>有助於蛋白質消化吸收</strong>，因為展開的蛋白質鏈更容易被消化酶分解。研究顯示，在相同溫度下，微波加熱造成的蛋白質變性程度甚至低於傳統長時間加熱。<sup><a href="#ref10" style="color: #2563eb;">[10]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「傳統鍋煮的食物一定比微波食物更營養」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不一定！</strong>決定食物營養保留率的關鍵是溫度、時間和用水量，而非烹調工具本身。長時間水煮蔬菜所流失的水溶性維生素，遠多於同等食材的微波加熱。2009年一項涵蓋多項研究的系統性回顧結論指出：「微波烹調與傳統烹調方式之間，在食物的整體營養價值上並無顯著差異。」<sup><a href="#ref1" style="color: #2563eb;">[1]</a></sup></span>
+        </div>
+      </li>
+ 
+    </ul>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    八、如何用微波加熱才能最大程度保留營養？
+  </h2>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">少加水或不加水：</strong>微波蔬菜時只需極少量的水（約2–3湯匙），甚至可以完全不加水，利用食物本身水分即可。加水越多，水溶性維生素流失越多。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">避免過度加熱：</strong>以適當功率和最短所需時間為原則，加熱至剛好熟透即可。過度加熱（不論用何種方式）才是導致營養大量流失的主因。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">使用微波適用容器：</strong>選用標示「微波爐安全」的玻璃或陶瓷容器，避免使用可能釋出有害物質的一般塑膠容器。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">加熱後靜置片刻：</strong>讓食物靜置約1分鐘，使熱能均勻分布，不僅能提升食品安全，也能讓口感更均勻。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">中途翻動或攪拌：</strong>對於較大塊的食物，加熱中途翻動有助於均勻受熱，避免局部過度加熱。
+    </li>
+  </ul>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：微波加熱牛奶會破壞鈣質嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不會。鈣是礦物質，不被熱能分解。微波加熱牛奶的鈣含量與傳統加熱完全相同。唯一需要注意的是不要過度加熱，以免牛奶沸騰溢出，以及避免直接加熱密閉容器中的牛奶以免爆沸。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：微波加熱雞蛋，蛋白質還有營養嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      有。微波加熱雞蛋時，蛋白質同樣發生熱變性（就像水煮蛋、煎蛋一樣），但胺基酸含量不變，蛋白質的消化吸收率甚至略有提升。注意微波整顆帶殼雞蛋可能因蒸氣壓力爆裂，應避免。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：微波加熱隔夜剩菜，還有營養嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      整體而言仍保有大部分營養。礦物質和蛋白質幾乎不受影響；水溶性維生素（如維生素C）在冰箱存放期間已有一定流失，再次加熱時也可能繼續流失，但幅度有限。對多數健康成人而言，合理食用隔夜再加熱的食物仍是安全且有營養的選擇。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：微波加熱母乳或配方奶，安全嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      針對母乳，多數專業建議不使用微波爐加熱，原因並非營養被破壞，而是微波加熱容易造成「熱點」分布不均，局部過燙可能燙傷嬰兒口腔；此外高溫可能影響母乳中的部分免疫活性成分（如IgA抗體）。建議以溫水浴方式隔水加熱。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：每天吃微波食品，長期有健康疑慮嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      從加熱方式本身來看，目前沒有科學證據顯示長期食用微波加熱的食物有害健康。更值得關注的是食物的種類與品質本身，以及超加工食品中過多的鹽分、糖分和添加物，這些問題與微波加熱方式無關。
+    </p>
+ 
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    綜合目前的科學研究，微波加熱與傳統火加熱在食物整體營養價值的影響上並無顯著差異。影響食物中維生素、蛋白質與礦物質保留的關鍵，始終是<strong style="color: #1e293b;">加熱溫度、加熱時間與用水量</strong>，而非加熱工具本身。
+  </p> <br>
+  <p style="color: #475569; font-size: 1.05rem;">
+    事實上，微波加熱因為速度快、用水少，在水溶性維生素（尤其是維生素C）的保留率上，往往優於傳統水煮。蛋白質方面，適度的熱變性是所有烹調方式共有的正常現象，有助於消化吸收，而非「破壞」營養。
+  </p>
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 給民眾的實用建議：選擇微波加熱時，保持少加水、適度加熱、使用安全容器三個原則，您的微波食物與傳統烹調食物一樣健康營養。
+    </p>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2 id="references">📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+ 
+    <li id="ref1" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Cross, G.A., & Fung, D.Y.C. (1982). The effect of microwaves on nutrient value of foods. CRC Critical Reviews in Food Science and Nutrition, 16(4), 355–381. <a href="https://pubmed.ncbi.nlm.nih.gov/7047080/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 7047080</a>
+      </span>
+    </li>
+ 
+    <li id="ref2" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        PMC. (2023). Microwave treatment on structure and digestibility characteristics of Spirulina platensis protein. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10484979/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10484979</a>
+      </span>
+    </li>
+ 
+    <li id="ref3" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Vallejo, F., Tomás-Barberán, F.A., & García-Viguera, C. (2003). Phenolic compound contents in edible parts of broccoli inflorescences after domestic cooking. Journal of the Science of Food and Agriculture, 83(14), 1511–1516. <a href="https://pubs.acs.org/doi/10.1021/jf071680t" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1021/jf071680t</a>
+      </span>
+    </li>
+ 
+    <li id="ref4" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Popular Science. (2025). Is microwave cooking nuking all the nutrients? <a href="https://www.popsci.com/health/do-microwaves-destroy-nutrients/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+ 
+    <li id="ref5" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Yang, Y., et al. (2014). Effects of different cooking methods on the vitamin C content of selected vegetables. Nutrition &amp; Food Science, 44(6). <a href="https://www.emerald.com/insight/content/doi/10.1108/NFS-11-2012-0123/full/html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Emerald Insight</a>
+      </span>
+    </li>
+ 
+    <li id="ref6" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kim, H.J., et al. (2018). Effect of different cooking methods on the content of vitamins and true retention in selected vegetables. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6049644/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 6049644</a>
+      </span>
+    </li>
+ 
+    <li id="ref7" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Have A Plant / Fruits &amp; Veggies. (2025). Does microwaving fruits &amp; vegetables kill all the nutrients? <a href="https://fruitsandveggies.org/blog/about-the-buzz-microwaving-fruits-vegetables-kills-all-their-essential-nutrientss/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+ 
+    <li id="ref8" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Yuan, G.F., et al. (2009). Effects of different cooking methods on health-promoting compounds of broccoli. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2722699/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 2722699</a>
+      </span>
+    </li>
+ 
+    <li id="ref9" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Deng, X., et al. (2022). Insight into the incredible effects of microwave heating: Driving changes in the structure, properties and functions of macromolecular nutrients in novel food. Frontiers in Nutrition, 9, 941527. <a href="https://doi.org/10.3389/fnut.2022.941527" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3389/fnut.2022.941527</a>
+      </span>
+    </li>
+ 
+    <li id="ref10" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        PMC. (2023). Dynamic alterations in protein, sensory, chemical, and oxidative properties occurring in meat during thermal and non-thermal processing techniques. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9876618/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9876618</a>
+      </span>
+    </li>
+ 
+    <li id="ref11" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Xiao, Y., et al. (2020). Effects of microwave heating on the protein structure, digestion properties and Maillard products of gluten. Food Chemistry. <a href="https://pubmed.ncbi.nlm.nih.gov/32431340/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 32431340</a>
+      </span>
+    </li>
+ 
+    <li id="ref12" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        CSIRO. Microwave oven safety – nutritional and safety overview. <a href="https://www.csiro.au/en/research/health-medical/nutrition/microwave-oven-safety" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+ 
+    <li id="ref13" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Vallejo, F., Tomas-Barberan, F.A., & Garcia-Viguera, C. (2007). Effects of microwave cooking conditions on bioactive compounds present in broccoli inflorescences. Journal of Agricultural and Food Chemistry, 55(24). <a href="https://pubmed.ncbi.nlm.nih.gov/17979232/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 17979232</a>
+      </span>
+    </li>
+ 
+    <li id="ref14" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Cross, G.A., & Fung, D.Y.C. (1982). The effect of microwaves on nutrient value of foods (CRC Critical Reviews). Tandfonline. <a href="https://www.tandfonline.com/doi/abs/10.1080/10408398209527340" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1080/10408398209527340</a>
+      </span>
+    </li>
+ 
+    <li id="ref15" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Buchanan, B.K., et al. (2024). The Effect of Microwaves on Protein Structure: Molecular Dynamics Approach. Journal of Chemical Information and Modeling. <a href="https://pubs.acs.org/doi/10.1021/acs.jcim.3c01937" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">ACS: acs.jcim.3c01937</a>
+      </span>
+    </li>
+ 
+  </ol>
+</div>
+`
+},
+
+ 
+{
+id: 'egg-nutrition-sports-medicine-myth',
+  title: '一天能吃幾顆蛋？全蛋 vs 蛋白，會造成膽固醇過高嗎？',
+  lastModified: '2026-05-13',
+  category: '衛教文章',
+  date: '2026-05-13',
+  summary: '雞蛋曾被視為膽固醇殺手，但最新運動醫學研究顯示，全蛋對肌肉合成的效果竟優於純蛋白。本文深入剖析亞洲族群吃蛋的保護效果、不同健康狀態的攝取建議，並破解生蛋較營養與膽固醇過高的常見迷思，教你如何吃出最高效益。',
+  coverImage: '/images/news/article/egg-nutrition-analysis.webp',
+  seoTitle: '一天吃幾顆蛋？全蛋 vs 蛋白增肌效果全解析 | 運動醫學專欄',
+  seoDescription: '打破雞蛋膽固醇迷思！運動醫學研究證實，全蛋能更有效促進肌肉蛋白質合成。本文整合 BMJ 與 ISSN 實證，針對健康成人、糖尿病及運動員提供每日攝取量建議與常見 FAQ。',
+  keywords: [
+    '雞蛋營養',
+    '膽固醇迷思',
+    '全蛋 vs 蛋白',
+    '肌肉蛋白質合成',
+    '運動營養',
+    '增肌飲食',
+    '膳食膽固醇',
+    '必需胺基酸',
+    '運動醫學',
+    '雞蛋過敏'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    雞蛋是自然界中最接近「完美蛋白質」的食物之一，富含所有必需胺基酸、維生素 D、膽鹼與葉黃素。過去數十年來，「蛋會升膽固醇、傷害心臟」的觀念根深蒂固，但近年來大規模統合分析的結果正在顛覆這個迷思。現有證據顯示，健康成人每天食用最多一顆蛋，並不會增加心血管疾病風險；部分研究甚至發現適量吃蛋對亞洲族群有保護效果。<br><br>
+    從運動醫學的角度，完整的全蛋（蛋黃＋蛋白）能更有效刺激運動後的肌肉蛋白質合成，比單吃蛋白效果更佳。然而，糖尿病患者、心血管疾病高風險族群應更謹慎，建議每週控制在三至四顆全蛋以內，並以蛋白補足蛋白質需求。本文以運動醫學觀點，帶您全面了解雞蛋的正確吃法。
+  </p>
+</div>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、雞蛋到底有多營養？運動醫學怎麼看？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多健身族把蛋白當作主食、丟掉蛋黃；也有長輩每天只敢吃半顆蛋，深怕膽固醇爆表。這兩種做法，其實都值得重新檢視。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    一顆完整的雞蛋（約 50 公克）含有約 6–7 公克的高品質蛋白質，並囊括了人體無法自行合成的九種必需胺基酸。在蛋白質品質評分系統中，雞蛋的得分高達 1.45，與乳清蛋白並列頂尖，被譽為蛋白質界的「黃金標準」。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8232167/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    從運動醫學的角度，我們關心的不只是「蛋白質含量」，更在意的是吃進去的蛋白質能否真正被肌肉利用。研究顯示，烹調方式也至關重要——<strong style="color: #2dd4bf;">煮熟的蛋比生蛋的蛋白質消化吸收率高出近 40%</strong>，這也是為什麼運動醫學不建議生飲雞蛋的原因。
+    <sup><a href="https://www.gssiweb.org/research/article/the-impact-of-protein-quantity--quality-distribution--and-food-matrix-on-muscleprotein-synthesis" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、一天最多可以吃幾顆蛋？科學怎麼說？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是最多人想知道的問題，但答案並不是一個固定數字，而是取決於你的健康狀況。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">對一般健康成人</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    涵蓋逾 170 萬人的大型統合分析發現，每天吃一顆蛋的人，其心血管疾病風險與不吃蛋的人相比，並無顯著差異。在亞洲族群中，甚至觀察到輕微的保護效果。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7190072/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    另一項劑量反應統合分析（納入近 200 萬人）則顯示，每週攝取六顆蛋以內，反而與心血管疾病風險下降有關；超過一天一顆後，心臟衰竭的風險才開始略微上升。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8137614/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    北歐營養建議綜合 38 篇系統性回顧的結論是：<strong style="color: #ffffff;">每天最多一顆蛋，對心血管疾病風險影響不大；但超過一顆的長期影響，現有資料仍不足。</strong>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10870976/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    美國 2025 年膳食指南諮詢委員會在最新報告中，也<strong style="color: #ffffff;">不再對膳食膽固醇設定每日上限</strong>，承認雞蛋是健康飲食型態的一部分。
+    <sup><a href="https://downloads.regulations.gov/HHS-OASH-2024-0017-8938/attachment_1.pdf" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">哪些人要特別注意？</h3>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">需要更謹慎的族群：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">第二型糖尿病患者：</strong>多項研究顯示，糖尿病患者大量食用雞蛋，心血管疾病風險可能略微增加，建議每週全蛋攝取控制在 3–4 顆以內，可用蛋白補充蛋白質需求。
+    <sup><a href="https://www.nature.com/articles/s41387-018-0033-1" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup></li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">已有高血脂或心血管疾病的人：</strong>建議以「增加蛋白、減少蛋黃」的方式調整，例如 1 顆全蛋搭配 2–3 顆蛋白，既能攝取優質蛋白，又能降低膽固醇攝入。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">「超反應者」體質：</strong>約 15–25% 的人對膳食膽固醇特別敏感，吃蛋後血中 LDL 膽固醇明顯上升；若家族有高膽固醇病史，建議定期抽血追蹤。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2904713/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup></li>
+  </ul>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床觀點</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在門診中，常見民眾聽到「膽固醇過高」就完全戒蛋，卻大量攝取加工肉品、含糖飲料。事實上，<strong>飽和脂肪與反式脂肪對血脂的影響遠大於膳食膽固醇本身</strong>。飲食的整體品質才是關鍵，而非單一食物的取捨。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、蛋黃 vs. 蛋白：分開吃有意義嗎？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    「只吃蛋白、丟掉蛋黃」的飲食策略，在健身圈非常流行。但從運動醫學的角度，這樣做是否真的比較好？答案可能讓很多人出乎意料。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">蛋白的優點</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">每顆蛋白僅約 17 大卡，含約 3.6 公克蛋白質，幾乎零脂肪、零膽固醇</li>
+    <li style="margin-bottom: 0.5rem;">適合熱量控制期、或需要提高蛋白質攝入但不想增加脂肪攝取的運動員</li>
+    <li style="margin-bottom: 0.5rem;">富含硒與核黃素</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">蛋黃：被低估的寶藏</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    事實上，<strong style="color: #ffffff;">蛋的大部分微量營養素都藏在蛋黃裡</strong>。蛋黃含有維生素 A、D、E、K（脂溶性維生素）、B12、葉酸、鐵、鋅，以及兩個常被忽視的關鍵營養素：
+    <sup><a href="https://www.utphysicians.com/the-great-egg-debate-egg-whites-versus-whole-eggs/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">膽鹼：</strong>一顆蛋黃即可提供每日建議量的 100% 以上。膽鹼對神經傳導、大腦功能、肌肉收縮協調都至關重要，對運動員尤其珍貴。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">維生素 D：</strong>是極少數天然含維生素 D 的食物之一，對骨骼健康、肌肉功能與免疫系統都有重要作用，運動員缺乏維生素 D 與肌肉無力及受傷風險上升高度相關。</li>
+  </ul>
+ 
+  <div style="background-color: #fffbeb; border: 1px solid #fcd34d; padding: 1.5rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #92400e; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">🔬 運動科學重要發現</h4>
+    <p style="margin-bottom: 0; color: #78350f; line-height: 1.6; font-size: 1.05rem;">
+      2017 年發表於《美國臨床營養期刊》的研究，讓受試者在阻力訓練後分別食用含 18 公克蛋白質的全蛋或等量蛋白質的蛋白，結果發現：<strong>全蛋組的肌肉蛋白質合成速率顯著高於蛋白組</strong>，即使兩組的蛋白質攝入量完全相同。研究者認為，蛋黃中的脂肪、膽鹼與其他生物活性物質，能協同促進肌肉合成訊號通路的活化。
+      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/28978542/" target="_blank" rel="noopener noreferrer" style="color: #92400e; text-decoration: underline;">[10]</a></sup>
+    </p>
+  </div>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">那單吃蛋黃建議嗎？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    單吃蛋黃沒有特別的實證支持。蛋黃的蛋白質含量相對有限（每顆約 2.7 公克），且熱量與脂肪偏高（每顆約 55 大卡、4.5 公克脂肪）。如果單吃大量蛋黃來補充蛋白質，反而會攝入過多飽和脂肪，得不償失。
+    <sup><a href="https://www.signos.com/food-comparison/egg-yolk-vs-egg-white" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+ 
+  <p style="color: #2dd4bf; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem; font-weight: bold;">
+    ✅ 運動醫學的建議：吃完整的全蛋，才能同時獲得蛋白質與蛋黃中的微量營養素協同效益。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、吃太多蛋，真的會膽固醇過高嗎？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是最核心的疑慮，也是過去半世紀飲食建議反覆翻轉的根源。讓我們用科學的角度解析。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">身體的膽固醇是怎麼調節的？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    人體每天自行合成約 800–1000 毫克的膽固醇（主要由肝臟負責），而我們每天從飲食攝入的膽固醇通常在 300–500 毫克之間。人體有一套「回饋調節機制」：當你從飲食攝入較多膽固醇時，肝臟的自行合成量就會降低，以維持平衡。這也是為什麼大多數人吃蛋並不會讓血中膽固醇大幅上升的原因。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2904713/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    然而，確實存在個體差異。一項針對膽固醇與蛋攝取量系統性回顧的研究指出，較高的蛋攝入量確實可能使血清總膽固醇濃度上升，以及 LDL/HDL 比值上升，但個體間的反應差異非常大。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7400894/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    值得注意的是，2022 年《Circulation》期刊的統合分析發現，每日多攝取一顆蛋，與全因死亡率上升 7%、癌症死亡率上升 13% 有統計相關，但與心血管死亡率無顯著關聯；且在每日低於 0.5 顆時，幾乎看不到風險上升。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9195585/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>
+    研究者也提醒這些相關性需謹慎解讀，因研究間存在中等程度的異質性。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">總結：蛋與膽固醇的關係</h3>
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 750px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+  </style>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>族群</th>
+          <th>建議每日全蛋數</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>健康成人（無慢性病）</td>
+          <td>最多 1 顆全蛋，可另加蛋白</td>
+          <td>長期每日 1 顆，心血管風險無顯著增加</td>
+        </tr>
+        <tr>
+          <td>運動員、高強度訓練者</td>
+          <td>2–3 顆全蛋（搭配整體飲食評估）</td>
+          <td>蛋白質需求高，全蛋有助肌肉合成，應整體評估熱量</td>
+        </tr>
+        <tr>
+          <td>第二型糖尿病患者</td>
+          <td>每週 3–4 顆全蛋，其餘以蛋白取代</td>
+          <td>糖尿病患者大量食蛋，部分研究顯示心血管風險略升</td>
+        </tr>
+        <tr>
+          <td>高血脂 / 心血管疾病高風險</td>
+          <td>每週 2–3 顆全蛋，搭配蛋白</td>
+          <td>建議定期追蹤血脂，依個人反應調整</td>
+        </tr>
+        <tr>
+          <td>膽固醇超反應者體質</td>
+          <td>全蛋每週不超過 2–3 顆，需個別評估</td>
+          <td>食用後追蹤血脂變化，必要時諮詢醫師</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、運動員怎麼吃蛋最有效率？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    對於有規律運動習慣的人，雞蛋的策略性攝取能幫助優化肌肉修復與成長。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">運動後黃金時機</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    根據國際運動營養學會的立場聲明，運動後應儘快攝取含有完整必需胺基酸的高品質蛋白質，建議量約為每公斤體重 0.25 公克的快速吸收蛋白質。對一個 70 公斤的成年人而言，這約等於 17–18 公克蛋白質，剛好是 3 顆完整雞蛋的蛋白質量。
+    <sup><a href="https://link.springer.com/content/pdf/10.1186/s12970-017-0177-8.pdf" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    更重要的是，2017 年的突破性研究證實，運動後食用全蛋（蛋黃＋蛋白）的受試者，其肌纖維蛋白質合成速率顯著高於僅攝取等量蛋白質的蛋白組，這項差異不能單純用蛋白質含量或白胺酸來解釋，而是蛋黃的「食物基質效應」在發揮作用。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/28978542/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">運動員的實用策略</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">增肌期（大量期）：</strong>每天 2–3 顆全蛋，搭配 2–4 顆蛋白，兼顧蛋白質量與微量營養素
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">減脂期（熱量控制期）：</strong>1 顆全蛋搭配 3–4 顆蛋白，維持高蛋白攝取同時控制熱量
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">一定要煮熟：</strong>熟蛋的蛋白質消化吸收率顯著高於生蛋，且避免沙門氏菌感染風險
+      <sup><a href="https://www.gssiweb.org/research/article/the-impact-of-protein-quantity--quality-distribution--and-food-matrix-on-muscleprotein-synthesis" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">分散在一天多餐：</strong>每餐蛋白質攝取 20–40 公克，分 4–5 餐攝取，比一次吃大量更能刺激整日的肌肉蛋白質合成
+    </li>
+  </ul>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床觀點</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在運動醫學門診中，許多認真訓練的學員一天吃 5–6 顆全蛋，卻同時搭配大量炸雞、牛排、精緻澱粉。這種情況下，「蛋吃太多」絕對不是最主要的問題——整體飲食結構失衡才是。雞蛋本身是優質食物，但它無法彌補飲食整體品質的不足。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 六、常見三大迷思破解
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「蛋吃多了一定膽固醇過高」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 血中膽固醇由肝臟自行合成量（佔大部分）與飲食攝入量共同決定。大多數人的肝臟有回饋調節能力，吃蛋多時會降低自行合成量。<strong>真正讓血脂惡化的是飽和脂肪、反式脂肪、精緻糖的過量攝取</strong>，而不是雞蛋本身。<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2904713/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[8]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「只吃蛋白比吃全蛋更健康、更能長肌肉」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 運動後食用全蛋，其促進肌肉蛋白質合成的效果顯著優於等量蛋白質的蛋白，蛋黃中的膽鹼、維生素 D 與脂質都參與了這個協同效應。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28978542/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[10]</a></sup> 除非有特殊醫療需求（如嚴重高血脂），否則一律丟掉蛋黃是白白浪費了珍貴的微量營養素。</span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「生蛋比熟蛋營養」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>相反！</strong> 研究顯示，生蛋的蛋白質消化吸收率僅約 51%，而熟蛋高達 91%，相差將近 40 個百分點。<sup><a href="https://www.gssiweb.org/research/article/the-impact-of-protein-quantity--quality-distribution--and-food-matrix-on-muscleprotein-synthesis" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[2]</a></sup> 此外，生蛋白中的「抗生物素蛋白」會干擾生物素（維生素 B7）的吸收，長期大量生食蛋白可能導致生物素缺乏。煮熟的雞蛋才是效益最高的選擇。</span>
+        </div>
+      </li>
+ 
+    </ul>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🥚</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q1：健身的人一天吃 5–6 顆蛋沒關係嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      若是全蛋，現有文獻對每日超過一顆的長期安全性資料尚不充分；建議以 2–3 顆全蛋為主，其餘蛋白質需求以蛋白或其他優質蛋白質（如魚肉、豆腐、雞胸肉）補足。若無高血脂或糖尿病等特殊狀況，偶爾吃多不必過度緊張，但長期習慣性大量食用全蛋，建議定期監測血脂。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q2：膽固醇過高的人可以吃蛋嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      可以，但需要調整方式。建議以「1 顆全蛋＋多顆蛋白」的組合取代全蛋，每週全蛋攝取控制在 2–3 顆以內，並同步減少飽和脂肪的其他來源（如奶油、肥肉）。更重要的是，需要定期追蹤血脂數值，並根據個人反應由醫師調整建議。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q3：水煮蛋、炒蛋、荷包蛋，哪種最健康？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      從運動醫學角度，水煮蛋（含溫泉蛋）是最理想的選擇，無需額外添加油脂，熱量最低且蛋白質消化吸收率高。炒蛋與荷包蛋若使用大量奶油或豬油料理，會額外增加飽和脂肪攝取；若以少量橄欖油烹調，差異則不大。盡量避免反覆高溫油炸的蛋料理。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q4：減肥的人可以每天吃蛋嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      不但可以，而且建議！雞蛋的飽足感效果出色，高蛋白質含量有助於在熱量赤字期維持肌肉量（防止減脂過程中也減掉肌肉）。建議減脂期以「1 顆全蛋＋3–4 顆蛋白」的組合，既能攝取全蛋的微量營養素，又能控制整體熱量與脂肪攝入。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q5：雞蛋過敏怎麼辦？蛋白過敏 vs. 蛋黃過敏？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      雞蛋過敏的主要過敏原大多存在於蛋白中（如卵白蛋白、卵轉鐵蛋白），純蛋黃過敏相對少見。若確診蛋過敏，應諮詢過敏科醫師確認耐受程度，部分患者對高溫充分烹調後的蛋有較好的耐受性。蛋白質替代來源可考慮雞胸肉、魚肉、豆漿、豆腐或大豆蛋白製品。
+    </p>
+ 
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+ 
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    雞蛋是大自然賦予我們的超級食物，幾十年來被過度妖魔化。現有最佳科學證據顯示：<strong style="color: #1e293b;">對健康成人而言，每天一顆全蛋並不會增加心血管疾病風險，而完整的全蛋（含蛋黃）在支持肌肉健康方面，更優於單吃蛋白。</strong>
+  </p><br>
+ 
+  <p style="color: #475569; font-size: 1.05rem;">
+    當然，蛋的攝取量應依個人的健康狀況、運動程度與整體飲食結構靈活調整。有高血脂、糖尿病或心血管疾病風險的朋友，建議與醫師共同討論適合自己的策略，而不是一刀切地戒蛋或放縱大吃。
+  </p>
+ 
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的建議表，根據自己的健康狀況調整每日雞蛋攝取方式。若您有高血脂、糖尿病或其他慢性疾病，建議尋求專業醫療評估，制定個人化的飲食策略。
+    </p>
+  </div>
+ 
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診評估
+    </a>
+  </div>
+</div>
+ 
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Mathai, J.K., Liu, Y., & Stein, H.H. (2017). Values for digestible indispensable amino acid scores (DIAAS) for some dairy and plant proteins may better describe protein quality than values calculated using the concept for protein digestibility-corrected amino acid scores (PDCAAS). PMC8232167. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8232167/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8232167</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Gatorade Sports Science Institute. (2022). The Impact of Protein Quantity, Quality, Distribution, and Food Matrix on Muscle Protein Synthesis. <a href="https://www.gssiweb.org/research/article/the-impact-of-protein-quantity--quality-distribution--and-food-matrix-on-muscleprotein-synthesis" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Drouin-Chartier, J.P., et al. (2020). Egg consumption and risk of cardiovascular disease: three large prospective US cohort studies, systematic review, and updated meta-analysis. BMJ. PMC7190072. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7190072/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7190072</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Godos, J., et al. (2021). Egg consumption and cardiovascular risk: a dose-response meta-analysis of prospective cohort studies. European Journal of Nutrition. PMC8137614. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8137614/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8137614</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Virtanen, J.K., & Larsson, S.C. (2024). Eggs – a scoping review for Nordic Nutrition Recommendations 2023. Food & Nutrition Research. PMC10870976. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10870976/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10870976</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        American Egg Board Egg Nutrition Center. (2024). Public comments on 2025 Dietary Guidelines Advisory Committee Report. Docket No. HHS-OASH-2024-0017. <a href="https://downloads.regulations.gov/HHS-OASH-2024-0017-8938/attachment_1.pdf" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PDF Link</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Shin, J.Y., et al. (2018). Longitudinal association between egg consumption and the risk of cardiovascular disease: interaction with type 2 diabetes mellitus. Nutrition & Diabetes, 8(1), 20. <a href="https://www.nature.com/articles/s41387-018-0033-1" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1038/s41387-018-0033-1</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Katz, D.L., et al. (2005). Daily egg consumption in hyperlipidemic adults – Effects on endothelial function and cardiovascular risk. PMC2904713. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2904713/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 2904713</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        UT Physicians Health. (2026). Health Benefits of Egg Whites vs. Whole Eggs. University of Texas Health. <a href="https://www.utphysicians.com/the-great-egg-debate-egg-whites-versus-whole-eggs/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Van Vliet, S., Shy, E.L., Sawan, S.A., et al. (2017). Consumption of whole eggs promotes greater stimulation of postexercise muscle protein synthesis than consumption of isonitrogenous amounts of egg whites in young men. American Journal of Clinical Nutrition, 106(6), 1401–1412. <a href="https://pubmed.ncbi.nlm.nih.gov/28978542/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 28978542</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Signos Health. (2024). Egg Yolk vs. Egg White: Which Is Better? <a href="https://www.signos.com/food-comparison/egg-yolk-vs-egg-white" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Soliman, G.A. (2020). Association between Egg Consumption and Cholesterol Concentration: A Systematic Review and Meta-Analysis of Randomized Controlled Trials. PMC7400894. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7400894/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7400894</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Zhao, B., et al. (2022). Egg and Dietary Cholesterol Intake and Risk of All-Cause, Cardiovascular, and Cancer Mortality: A Systematic Review and Dose-Response Meta-Analysis. PMC9195585. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9195585/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9195585</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Jäger, R., Kerksick, C.M., Campbell, B.I., et al. (2017). International Society of Sports Nutrition Position Stand: protein and exercise. Journal of the International Society of Sports Nutrition, 14, 20. <a href="https://link.springer.com/content/pdf/10.1186/s12970-017-0177-8.pdf" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1186/s12970-017-0177-8</a>
+      </span>
+    </li>
+`
+},
+
 {
   id: 'ice-heat-therapy-guide',
   title: '冰敷還是熱敷？運動醫學告訴你正確答案：腳扭傷、閃腰、落枕完整攻略',
