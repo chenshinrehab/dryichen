@@ -38,6 +38,18 @@ export const sportsInjuriesData = [
         image: '/images/news/article/joint-crepitus.webp',
       },
                         {
+        slug: 'bone-spur-education',
+        title: '照完X光聽到「長骨刺」！醫師告訴你骨刺的真相？',
+        description: '許多人照完X光聽到「長骨刺」就非常緊張，以為馬上要壓到神經。本文以醫學觀點深入解析骨刺的成因、與椎間盤突出及脊椎滑脫的根本差異，並說明哪些情況才真正需要積極處理，幫助民眾正確認識脊椎退化問題。',
+        image: '/images/news/article/bone-spur-education.webp',
+      },
+                              {
+        slug: 'knee-pain-misdiagnosis-osteoarthritis',
+        title: '照完X光只得到「退化」兩個字？膝蓋痛的成因全解析',
+        description: '許多膝蓋痛患者常被貼上「退化」標籤並推銷高額注射。醫學實證顯示，X光退化與實際疼痛相關性薄弱。本文深入剖析半月板損傷、髕骨股骨疼痛症候群、鵝足滑囊炎等真正病因，教你如何看懂X光限制、破解常見三大迷思，並在診間提出關鍵五問以自保。',
+        image: '/images/news/article/knee-pain-osteoarthritis-myth.webp',
+      },
+                        {
         slug: 'ice-heat-therapy-guide',
         title: '冰敷還是熱敷？運動醫學告訴你正確答案：腳扭傷、閃腰、落枕完整攻略',
         description: '腳扭傷要冰敷還是熱敷？閃到腰呢？運動完後又該怎麼辦？本文以運動醫學觀點，整合最新實證研究，詳細說明冰敷與熱敷的適應症、正確溫度、持續時間與頻率，讓你在家就能做出正確處置。',
@@ -273,6 +285,12 @@ export const sportsInjuriesData = [
         title: '【家長必看】喝手搖飲、睡前吃水果會長不高？',
         description: '深度剖析精製糖如何透過胰島素拮抗、瘦素分泌與性早熟機制，干擾孩童生長激素分泌並導致生長板提早閉合。實證研究揭露手搖飲與甜點對最終身高的致命影響，並提供科學飲食策略。',
         image: '/images/news/article/sugar-height-growth-analysis.webp',
+      },
+            {
+        slug: 'science-of-chinese-herbal-height-growth',
+        title: '轉骨湯真的能長高？中藥成分、藥理學證據與臨床迷思全解析',
+        description: '從現代藥理學與運動醫學角度，深入剖析台灣傳統轉骨湯。逐一拆解杜仲、淫羊藿、骨碎補等核心藥材的細胞與動物實驗證據，並揭開過早服用導致性早熟、生長板提早閉合的風險。結合中西醫觀點，提供家長最理性的青春期發育指引。',
+        image: '/images/news/article/science-of-chinese-herbal-height-growth.webp',
       },
 
     ]
