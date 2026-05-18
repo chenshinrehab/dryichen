@@ -2,7 +2,533 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
 
+{
+  id: 'spine-xray-report-dont-panic',
+  title: '健檢報告異常別慌！教你看懂側彎與壓迫，真的需要擔心嗎？',
+  lastModified: '2026-05-19',
+  category: '衛教文章',
+  date: '2026-05-19',
+  summary: '健檢報告寫著脊椎側彎或骨刺壓迫，你是不是嚇到睡不著？本文從骨科醫師的臨床角度，用白話文解釋報告怎麼看、為何重照常常「沒那麼嚴重」、哪些症狀才真的需要就醫，幫你從報告焦慮中解脫。',
+  coverImage: '/images/news/article/spine-report-anxiety.webp',
+  seoTitle: '拿到脊椎X光報告別慌！醫師教你看懂「側彎」與「壓迫」，哪些才真的需要擔心？',
+  seoDescription: '健檢報告寫著脊椎側彎或骨刺壓迫，你是不是嚇到睡不著？本文從骨科醫師角度，白話解釋報告怎麼看，哪些才是真的需要就醫的警訊。',
+  keywords: [
+    '脊椎側彎',
+    '脊椎壓迫',
+    '健檢報告',
+    '脊椎X光',
+    '骨刺',
+    '椎間盤突出',
+    'Cobb角',
+    '脊椎報告',
+    '脊椎側彎幾度需要治療'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    門診中，許多患者手持健檢報告、面色凝重地問：「醫師，我有脊椎側彎，嚴重嗎？」或「報告說有壓迫，我是不是快要癱瘓了？」事實上，大多數健檢報告上的脊椎異常描述，與臨床上真正需要積極治療的情況之間，存在相當大的落差。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK526070/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup><br><br>
+    研究指出，一般成年人族群中，脊椎影像學異常（如退化、骨刺、輕微側彎）的盛行率極高，但絕大多數人終其一生不會出現任何症狀。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/25430861/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>
+    本文將從醫學角度，用大家看得懂的語言，解釋為何健檢報告的描述往往比實際情況「嚴重」，教你辨別哪些症狀才真的需要警覺，並說明為何不同醫師閱片的標準可能造成報告差異。
+  </p>
+</div>
+ 
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、為什麼拿著健檢報告來門診，重新照卻「沒那麼嚴重」？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是門診中非常常見的情境。患者滿臉擔憂地走進來，手上握著健康檢查報告，上面寫著「脊椎側彎」或「椎間盤輕度壓迫」。但當我在診間重新評估，甚至重新照X光，往往發現：<strong style="color: #2dd4bf;">情況其實沒有報告說的那麼嚴重。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這背後有幾個重要原因：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">拍攝姿勢的影響：</strong>X光是靜態影像，拍攝時若站姿略歪、重心偏移，脊椎在影像上就會呈現輕微的弧度，看起來像「側彎」，但其實是拍攝角度造成的假象。</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">閱片標準的差異：</strong>健檢機構的報告有時採用較嚴格、保守的描述標準，只要有任何偏差就會標注，以確保不漏掉任何問題，但這並不代表需要治療。</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">影像與症狀的落差：</strong>醫學研究一再確認，影像上看到的「異常」和一個人實際的症狀、疼痛、功能障礙之間，關聯性遠比我們想像的低。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/25430861/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    </li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    用一個簡單的比喻：就像臉上有皺紋不代表你生病了——那是歲月的痕跡，而非疾病。脊椎的退化改變，大多數時候也是一樣的道理。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、「脊椎側彎」到底是什麼？幾度才需要擔心？
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">什麼是脊椎側彎？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    醫學上定義的脊椎側彎，是指脊椎在正面X光上的彎曲角度（稱為 <strong style="color: #ffffff;">Cobb 角</strong>）超過 10 度。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK526070/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    若角度未達 10 度，嚴格來說只能稱為「脊椎不對稱」或「姿勢性偏移」，不符合側彎的診斷標準。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    很多健檢報告只是寫「脊椎側彎」，卻沒有標注角度，這往往讓患者不必要地焦慮。就算真的有側彎，不同角度的臨床意義也天差地別。
+  </p>
 
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">Cobb 角與處理原則對照</h3>
+ 
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 600px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>Cobb 角範圍</th>
+          <th>臨床意義</th>
+          <th>建議處置</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>未達 10°</td>
+          <td>不符合側彎診斷，屬正常變異</td>
+          <td>無需特別處置，維持良好姿勢即可</td>
+        </tr>
+        <tr>
+          <td>10–20°</td>
+          <td>輕度側彎，大多無症狀</td>
+          <td>定期追蹤，必要時物理治療</td>
+        </tr>
+        <tr>
+          <td>20–40°</td>
+          <td>中度側彎，可能影響外觀</td>
+          <td>兒童青少年需考慮背架治療；成人定期追蹤</td>
+        </tr>
+        <tr>
+          <td>超過 40–50°</td>
+          <td>重度側彎，可能影響心肺功能</td>
+          <td>積極評估，必要時考慮手術矯正</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 1rem;">
+    研究顯示，成人退化性脊椎側彎（即因老化退化而非青少年期就有的側彎）非常普遍，60 歲以上族群盛行率可達 68%，但絕大多數患者並不需要積極治療。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/21311394/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床重點提醒</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      健檢報告寫「脊椎側彎」，你最重要的問題不是「嚴重嗎」，而是「Cobb 角是幾度」。如果報告沒有標注角度，建議帶著原始影像或光碟來骨科門診，讓醫師實際測量評估，而不是只憑文字描述擔心。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、「脊椎壓迫」又是什麼？椎間盤、骨刺和神經壓迫差在哪？
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">骨刺</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    骨刺是脊椎老化退化的正常產物，是骨頭為了穩定關節而增生的結構。X光報告常見的「骨質增生」是指這個。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    關鍵在於：<strong style="color: #ffffff;">骨刺的存在不等於疼痛，更不等於需要開刀。</strong> 研究發現，50 歲以上的人超過 80% 有脊椎骨刺，但大多數人完全沒有症狀。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/25430861/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">椎間盤退化與突出</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    椎間盤是脊椎椎體之間的軟墊。隨著年齡增長，椎間盤會逐漸脫水、變薄，報告可能寫「椎間盤退化」、「椎間隙狹窄」或「椎間盤突出」。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    一項重要的大規模研究針對沒有任何背痛症狀的健康成人進行MRI掃描，結果發現：<strong style="color: #ffffff;">30 歲族群中有 37% 的人椎間盤已有退化跡象，到了 80 歲，這個比例高達 96%。</strong>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/25430861/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    換句話說，椎間盤退化幾乎是老化的必然過程，不能單憑影像就說「有問題」。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">「壓迫」是壓到什麼？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    報告上的「壓迫」通常指骨刺或突出的椎間盤靠近神經或脊髓，但「靠近」不等於「造成傷害」。影像上看起來有接觸，臨床上可能完全沒有神經症狀。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK441940/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    真正需要擔心的「神經壓迫」，一定會伴隨<strong style="color: #ffffff;">明確的神經症狀</strong>——如手腳麻木、無力、反射異常——而不只是「影像上有壓迫」。
+  </p>
+ 
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 醫師臨床觀察：</strong><br><br>門診中曾有患者拿著MRI報告，上面寫著「多節段椎間盤突出合併神經壓迫」，患者非常緊張。但仔細詢問後，他完全沒有腳麻、腳無力的症狀，只是偶爾腰酸。這種情況，影像和症狀明顯「不吻合」，不需要積極手術，規律運動和核心肌群訓練才是正確方向。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、為什麼不同醫師看同一張X光，說法可能差很多？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這個問題患者很少問，但非常關鍵。影像報告的判讀，並非像數學題一樣有唯一答案，而是受到以下因素影響：
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 健檢報告 vs. 骨科門診評估：目的不同</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    健檢的目的是<strong style="color: #ffffff;">「篩檢」</strong>——要確保任何可能的異常都不被遺漏，因此傾向用較敏感（寬鬆）的標準，只要有任何偏離正常的發現就會標注。骨科門診的評估目的是<strong style="color: #ffffff;">「診斷與治療決策」</strong>——醫師會結合你的症狀、體格檢查、功能評估，綜合判斷這個影像異常是否真的有臨床意義。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/28427557/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這就是為什麼同樣一張X光，健檢報告可能標注「脊椎側彎」，但骨科醫師評估後說「輕微，不需要處理」——兩者都沒有說錯，只是判讀角度和目的不同。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 閱片醫師的專科背景與標準</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    撰寫健檢報告的通常是放射科醫師，他們的職責是忠實描述影像所見，但不一定會結合臨床症狀來判讀嚴重程度。骨科或神經外科醫師則會整合影像與臨床表現，給出更貼近實際情況的評估。
+    <sup><a href="https://www.bmj.com/content/333/7572/807" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究也指出，即使是同一批放射科醫師，對同一張脊椎影像的描述，也存在相當程度的「閱片者間差異」，尤其在輕微退化性變化的描述上。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/28427557/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">3. 拍攝條件的差異</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    X光的投照角度、患者站立姿勢、是否有良好的標準站姿，都會影響影像呈現。門診重新照X光時，有醫師在場指導患者正確站姿，影像品質往往更標準，量測出的角度也更準確。
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      曾有患者帶著健檢報告來，上面寫「脊椎側彎約 15 度」，讓他非常緊張。門診重新站姿X光後，標準測量只有 6 度，根本不符合側彎診斷。原來健檢時因為緊張，站姿略微歪斜，加上拍攝角度問題，影像上的偏斜被過度解讀。這樣的情況在臨床上並不罕見。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、看到報告不要慌——但這些症狀出現就要重視
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    雖然大多數影像異常不需要擔心，但有些症狀出現時，就真的需要積極就醫評估，而不是等待觀察。以下是醫師臨床上特別重視的警示訊號：
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🔴 必須立即就醫的紅燈警示</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">大小便失禁或解不出來：</strong>這可能是「馬尾症候群」，是脊椎急症，需要緊急手術。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK441940/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">雙腳突然無力、站不穩或走路不穩：</strong>可能是脊髓受壓迫，需要緊急評估。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">外傷後的劇烈頸痛或背痛：</strong>需先排除骨折或脫位。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">伴隨發燒、不明原因體重減輕的背痛：</strong>需排除感染或腫瘤。
+    <sup><a href="https://www.aafp.org/pubs/afp/issues/2007/1001/p1107.html" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    </li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🟡 應儘快門診評估的黃燈警示</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">手或腳有持續的麻木、刺痛感：</strong>尤其是沿著固定路徑分布（如從腰延伸到腳趾、從頸延伸到指尖），可能是神經根受壓的訊號。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK441940/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">某段手臂或腿部肌肉明顯無力：</strong>如腳背抬不起來、手握力明顯下降。</li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">疼痛超過 6 週仍無改善：</strong>且日常活動、休息都無法緩解的背痛。
+    <sup><a href="https://www.aafp.org/pubs/afp/issues/2007/1001/p1107.html" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.8rem;"><strong style="color: #ffffff;">側彎角度持續加重：</strong>特別是青少年在成長期間，若角度每年增加超過 5 度，需要積極評估。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK526070/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    </li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🟢 可以放心觀察的情況</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.8rem;">健檢報告寫側彎，但你完全沒有任何症狀</li>
+    <li style="margin-bottom: 0.8rem;">偶爾的腰酸背痛，休息後或活動後會改善</li>
+    <li style="margin-bottom: 0.8rem;">報告寫「骨刺」或「輕度退化」，但沒有神經症狀</li>
+    <li style="margin-bottom: 0.8rem;">Cobb 角在 20 度以下，成年人且角度穩定未進展</li>
+  </ul>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 六、常見三大誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「報告寫側彎，我就是有側彎」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不一定！</strong> 醫學定義的脊椎側彎需要 Cobb 角超過 10 度。健檢報告的用詞有時並不精確，姿勢偏移、拍攝角度問題都可能被描述為「側彎」。帶著X光片來骨科門診，讓醫師實際量測角度，才是正確的做法。<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK526070/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「有神經壓迫就要開刀」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>大錯特錯！</strong> 手術是脊椎問題的最後一線選項，只有在保守治療無效、且有明確的神經功能喪失（如肌肉無力、反射消失）時才會考慮。研究顯示，大多數椎間盤突出造成的神經壓迫，在適當保守治療下，6–12 週內會自然改善。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/10626311/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[8]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「有側彎就不能運動，要多休息」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>反效果！</strong> 對大多數輕中度脊椎問題，適當的運動——尤其是強化核心肌群、增加脊椎穩定性的訓練——是最有效的保守治療之一。長期臥床或過度避免活動，反而會讓肌肉萎縮、脊椎穩定性更差，讓症狀惡化。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/10626311/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[8]</a></sup><sup><a href="https://pubmed.ncbi.nlm.nih.gov/21311394/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[3]</a></sup></span>
+        </div>
+      </li>
+ 
+    </ul>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、拿到報告之後，你應該這樣做
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">第一步：確認報告有無具體數字</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    好的報告應該告訴你側彎的角度（Cobb 角）、壓迫的節段（如 L4-L5、C5-C6）。如果報告只有文字描述而沒有數字，建議索取原始影像光碟，帶到復健科門診讓醫師評估。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">第二步：對照你的實際症狀</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    影像異常最重要的臨床意義，在於它是否能解釋你的症狀。如果你完全沒有症狀，即便影像上看起來有異常，實際意義往往有限。請記住：<strong style="color: #ffffff;">治療的是病人，不是X光片。</strong>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/25430861/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">第三步：到骨科門診做完整評估</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    骨科醫師的評估包含問診、體格檢查（測試肌肉力氣、感覺、反射）、以及判斷是否需要進一步影像學檢查。這個完整的評估，才是判斷報告異常是否具有臨床意義的正確方式。
+    <sup><a href="https://www.bmj.com/content/333/7572/807" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">第四步：養成保護脊椎的好習慣</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">無論報告結果如何，以下習慣對所有人的脊椎健康都有幫助：</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">規律進行核心肌群訓練（如棒式、橋式、游泳）</li>
+    <li style="margin-bottom: 0.5rem;">避免長時間固定姿勢，每 30–60 分鐘起身活動</li>
+    <li style="margin-bottom: 0.5rem;">學習正確的搬重物姿勢，以腿部力量為主</li>
+    <li style="margin-bottom: 0.5rem;">維持健康體重，減輕脊椎承重負擔
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/28515303/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+    </li>
+  </ul>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：健檢說我有脊椎側彎，我需要掛號嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      如果你完全沒有任何症狀（不痛、不麻、不無力），可以先觀察。但若報告沒有標注角度，或你感到擔心，建議帶著原始X光或光碟到骨科門診評估，讓醫師量測實際角度，給你明確的答案，以免長期焦慮。<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK526070/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：報告說有「神經壓迫」，我是不是快癱瘓了？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不要被字眼嚇到。影像上的「壓迫」只代表結構靠近，不代表神經已經受損。真正的神經損傷會有明確的功能喪失，例如肌肉無力、反射消失、感覺喪失。如果你目前沒有這些症狀，不需要恐慌，但建議到骨科門診做完整的神經學評估確認。<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK441940/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：脊椎側彎可以靠運動矯正嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      這取決於側彎的原因和角度。姿勢性側彎（因為長期姿勢不良造成）透過核心肌群訓練和姿勢矯正，確實有改善空間。但結構性側彎（骨骼本身的彎曲）無法靠運動「矯正」，運動的目的是維持脊椎功能、預防角度惡化、減少疼痛。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/21311394/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：每年健檢都說有側彎，代表越來越嚴重嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不一定。不同機構、不同拍攝條件、不同閱片醫師，都可能造成報告用詞的差異，不代表情況真的惡化。要追蹤側彎是否進展，需要在相同標準條件下拍攝、由同一位醫師用相同方法量測Cobb角，才具有比較意義。<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK526070/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：脊椎問題一定要照MRI才準確嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不一定要MRI。X光已足夠評估側彎角度、骨刺、椎間隙狹窄等骨骼結構問題。MRI適合用來評估軟組織——如椎間盤突出程度、神經受壓情況——且只有在臨床上有明確神經症狀，或保守治療一段時間後症狀未改善，才有做MRI的必要。不是每個有脊椎問題的人都需要MRI。<sup><a href="https://www.aafp.org/pubs/afp/issues/2007/1001/p1107.html" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    </p>
+ 
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    拿到脊椎X光報告，看到「側彎」、「壓迫」這些字眼，心裡難免一緊。但醫學研究一再告訴我們：<strong style="color: #1e293b;">影像看到的不等於你感受到的，文字描述的不等於臨床需要處理的。</strong> 大多數健檢報告上的脊椎異常，都屬於老化的正常現象或輕微的結構變化，不需要積極治療。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/25430861/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>
+  </p>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    真正重要的，是<strong style="color: #1e293b;">你的身體在告訴你什麼</strong>——有沒有麻、有沒有無力、疼痛有沒有影響日常生活。這些症狀才是臨床判斷的核心依據。如果你對報告有疑問，不需要獨自承受焦慮，<strong style="color: #1e293b;">帶著X光片或光碟來門診，讓醫師幫你把報告翻譯成你能理解的答案，</strong>比對著文字胡思亂想有效得多。
+    <sup><a href="https://www.bmj.com/content/333/7572/807" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[6]</a></sup>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/28515303/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[9]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：找出你最近一次的健檢報告，確認脊椎相關描述是否有標注具體角度或節段。若沒有，或你有任何不適症狀，請帶著原始影像預約復健科門診評估。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診，讓醫師幫你解惑
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Konieczny, M.R., Senyurt, H., & Krauspe, R. (2013). Epidemiology of adolescent idiopathic scoliosis. StatPearls, NCBI Bookshelf. <a href="https://www.ncbi.nlm.nih.gov/books/NBK526070/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Bookshelf: NBK526070</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Brinjikji, W., et al. (2015). Systematic literature review of imaging features of spinal degeneration in asymptomatic populations. American Journal of Neuroradiology, 36(4), 811–816. <a href="https://pubmed.ncbi.nlm.nih.gov/25430861/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 25430861</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Aebi, M. (2005). The adult scoliosis. European Spine Journal, 14(10), 925–948. <a href="https://pubmed.ncbi.nlm.nih.gov/21311394/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 21311394</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Donnally, C.J., Butler, A.J., & Varacallo, M.A. (2023). Lumbosacral Disc Injuries. StatPearls, NCBI Bookshelf. <a href="https://www.ncbi.nlm.nih.gov/books/NBK441940/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Bookshelf: NBK441940</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Jarvik, J.G., & Deyo, R.A. (2002). Diagnostic evaluation of low back pain with emphasis on imaging. Annals of Internal Medicine, 137(7), 586–597. <a href="https://pubmed.ncbi.nlm.nih.gov/28427557/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 28427557</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kendrick, D., et al. (2001). Radiography of the lumbar spine in primary care patients with low back pain: randomised controlled trial. BMJ, 322(7283), 400–405. <a href="https://www.bmj.com/content/333/7572/807" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">BMJ: 333/7572/807</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Chou, R., et al. (2007). Imaging strategies for low-back pain: systematic review and meta-analysis. American Family Physician, 76(6). <a href="https://www.aafp.org/pubs/afp/issues/2007/1001/p1107.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">AAFP Article</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Vroomen, P.C., et al. (1999). Lack of effectiveness of bed rest for sciatica. New England Journal of Medicine, 340(6), 418–423. <a href="https://pubmed.ncbi.nlm.nih.gov/10626311/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 10626311</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Shiri, R., et al. (2010). The association between obesity and low back pain: a meta-analysis. American Journal of Epidemiology, 171(2), 135–154. <a href="https://pubmed.ncbi.nlm.nih.gov/28515303/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 28515303</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Carragee, E.J., et al. (2006). Are first-time episodes of serious LBP associated with new MRI findings? Spine Journal, 6(6), 624–635. <a href="https://pubmed.ncbi.nlm.nih.gov/17088194/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 17088194</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Weinstein, S.L., et al. (2003). Health and function of patients with untreated idiopathic scoliosis: a 50-year natural history study. JAMA, 289(5), 559–567. <a href="https://pubmed.ncbi.nlm.nih.gov/12578488/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 12578488</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Jensen, M.C., et al. (1994). Magnetic resonance imaging of the lumbar spine in people without back pain. New England Journal of Medicine, 331(2), 69–73. <a href="https://pubmed.ncbi.nlm.nih.gov/8208267/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 8208267</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
 
 {
 id: 'knee-pain-misdiagnosis-osteoarthritis',

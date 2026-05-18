@@ -71,7 +71,9 @@ export default function Navigation() {
         subItems: [
             { name: '猛健樂 (Mounjaro)', path: '/weight-bone/mounjaro' },
             { name: '兒童骨齡評估', path: '/weight-bone/bone-age' },
-                       { name: '日常生活醫學知識', path: '/weight-bone/sports-injuries/daycare' },
+              { name: '診間病患常見疑問', path: '/weight-bone/sports-injuries/problem' },
+                { name: '最新醫療資訊', path: '/weight-bone/sports-injuries/medical-updates' },
+              { name: '日常生活醫學知識', path: '/weight-bone/sports-injuries/daycare' },
             { name: '營養補充知識', path: '/weight-bone/sports-injuries/nutrition' },
             { name: '網球運動傷害', path: '/weight-bone/sports-injuries/tennis' },
             { name: '籃球運動傷害', path: '/weight-bone/sports-injuries/basketball' },

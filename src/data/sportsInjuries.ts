@@ -96,6 +96,13 @@ export const sportsInjuriesData = [
         image: '/images/news/article/scoliosis-treatment.webp',
       },
 
+                  {
+        slug: 'spine-xray-report-dont-panic',
+        title: '健檢報告異常別慌！教你看懂側彎與壓迫，真的需要擔心嗎？',
+        description: '健檢報告寫著脊椎側彎或骨刺壓迫，你是不是嚇到睡不著？本文從骨科醫師的臨床角度，用白話文解釋報告怎麼看、為何重照常常「沒那麼嚴重」、哪些症狀才真的需要就醫，幫你從報告焦慮中解脫。',
+        image: '/images/news/article/spine-report-anxiety.webp',
+      },
+
       {
         slug: 'frozen-shoulder-and-diabetes',
         title: '五十肩與糖尿病的深度關聯：為什麼糖尿病患者更容易罹患五十肩？',
@@ -129,6 +136,12 @@ export const sportsInjuriesData = [
     description: '林醫師持續更新精進醫療知識及技術，分享新的治療方式',
     image: '/images/sportinjury/10.webp',
     injuries: [
+                              {
+        slug: 'mounjaro-vs-wegovy-vs-rybelsus',
+        title: '猛健樂 vs 週纖達 vs 瑞倍適：三大腸泌素藥物完整比較指南',
+        description: '深度比較猛健樂（Mounjaro/Tirzepatide）、週纖達（Wegovy/Semaglutide）與瑞倍適（Rybelsus）的減重效果、副作用、使用方式與費用，結合SURMOUNT-5最新臨床實證，協助患者選擇最適合自己的減重方案。',
+        image:  '/images/news/article/mounjaro-vs-wegovy-vs-rybelsus.webp',
+      },
                         {
         slug: 'ge-logiq-totus-ultrasound',
         title: '診所正式引進 GE LOGIQ Totus——全球高階的肌肉骨骼超音波機',
@@ -187,6 +200,12 @@ export const sportsInjuriesData = [
         title: '正睡還是側睡？解析對脊椎、肩膀、骨盆與內臟器官的影響',
         description: '從醫學角度深度分析側睡與正睡（仰睡）的優缺點，涵蓋脊椎、肩膀旋轉肌群、骨盆、呼吸道及胃食道逆流等全面影響。實證研究揭露哪種睡姿更健康，並解析全球睡眠姿勢比例與個人化建議。',
         image: '/images/news/article/sleep-position-health-analysis.webp',
+      },
+                        {
+        slug: 'diurnal-height-change',
+        title: '📏 不用喝轉骨湯！每天早上起床，你都會自動「長高 1 公分」！',
+        description: '為什麼下午量身高總是矮了一截？別緊張，這不是你變矮了！身為復健科醫師，今天要揭開脊椎「椎間盤」的吸水秘密，教你如何利用生理特性在體檢時量出最高身高。',
+        image: '/images/news/article/202602/height.webp',
       },
                 {
         slug: 'hula-hoop-horse-riding-weight-loss',
@@ -528,14 +547,27 @@ export const sportsInjuriesData = [
                         {
         slug: 'efficient-clinical-visit-guide',
         title: '醫病也醫心：一份讓彼此都輕鬆的「看診攻略」🩺✨',
-        description: '門診總是等很久？陳新復健科醫師整理「看診攻略」，教你如何透過精準溝通、準備外院報告與釐清行政問題，提升醫療效率。醫病也醫心，讓我們一起找回高品質的醫療對話。',
+        description: '門診總是等很久？宸新復健科醫師整理「看診攻略」，教你如何透過精準溝通、準備外院報告與釐清行政問題，提升醫療效率。醫病也醫心，讓我們一起找回高品質的醫療對話。',
         image:  '/images/news/article/hospital.webp',
       },
+         {
+        slug: 'dr-lin-appointment-guide',
+        title: '🕒 林羿辰醫師看診攻略：掛號小撇步',
+        description: '想要順利看診不撲空、減少等待時間嗎？林羿辰醫師診間專業攻略：掌握網路預約與現場加掛技巧，還有避開人潮的黃金時段建議，讓您就醫更輕鬆。',
+        image:  '/images/news/article/0311.webp',
+      },
+
                   {
         slug: 'doctorvsengineer',
         title: '從新竹實中到診所院長：跨越 20 年的科技與醫療圈觀察，🧬醫生 vs. 工程師💻',
         description: '深度解析醫學系與電機系的生存現狀：從矽谷千萬年薪工程師到醫院住院醫師的工時壓力，探討天賦牆、財富跑道及中年失業風險，為猶豫中的學子提供最真實的職場建議。',
         image:  '/images/news/article/doctorvsengineer1.webp',
+      },
+                              {
+        slug: 'choosing-the-right-treatment',
+        title: '今天，我大概讓五位病人「失望」了… 淺談精準把關的重要性',
+        description: '年關將至，許多病患抱著最後一絲希望走進診間，甚至要求昂貴的 PRP 治療只想「快點好」。但醫療的本質不是選貴的就好，而是基於專業判斷的精準把關。',
+        image:  '/images/news/article/newyear.webp',
       },
 
                         {
