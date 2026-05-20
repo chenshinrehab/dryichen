@@ -2,6 +2,553 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
 
+
+  {
+id: 'pmos-obesity-mounjaro',
+  title: '正名後的多內分泌代謝卵巢症候群：肥胖與猛健樂的角色',
+  lastModified: '2026-05-20',
+  category: '衛教文章',
+  date: '2026-05-20',
+  summary: '2026年5月，醫學界宣布將沿用逾九十年的多囊性卵巢症候群（PCOS）正式更名為多內分泌代謝卵巢症候群（PMOS）。本文從運動醫學與內分泌角度，深入剖析肥胖、胰島素阻抗與賀爾蒙失調如何形成難解的惡性循環，並探討雙腸泌素新藥猛健樂（Mounjaro）如何精準打破此循環，帶來兼具體重管理與內分泌改善的全新曙光。',
+  coverImage: '/images/news/article/pmos-obesity-mounjaro.webp',
+  seoTitle: '多囊性卵巢症候群更名PMOS！肥胖、胰島素阻抗與猛健樂減重機轉全解析',
+  seoDescription: '2026年醫學界將PCOS更名為「多內分泌代謝卵巢症候群（PMOS）」。深入探討肥胖與胰島素阻抗的惡性循環，以及雙腸泌素藥物猛健樂（Mounjaro®，tirzepatide）如何打破減重瓶頸、調節賀爾蒙失調與改善月經不規則。',
+  keywords: [
+    '多內分泌代謝卵巢症候群',
+    'PMOS',
+    '多囊性卵巢症候群',
+    'PCOS改名',
+    '猛健樂',
+    'Mounjaro',
+    'tirzepatide',
+    '胰島素阻抗',
+    '高雄性激素血症',
+    '減重門診'
+  ],
+  contentHtml: `
+
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    2026年5月，國際醫學界宣布將沿用逾九十年的「多囊性卵巢症候群（PCOS）」正式更名為「多內分泌代謝卵巢症候群（PMOS）」，這不只是換個名字，而是重新認識這個影響全球逾1.7億名女性的複雜疾病。
+    <sup><a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00717-8/fulltext" target="_blank" rel="noopener noreferrer" style="color: #0369a1; text-decoration: underline;">[1]</a></sup>
+    研究已確認，肥胖與PMOS之間形成一個「惡性循環」：肥胖加劇胰島素阻抗，胰島素阻抗刺激卵巢分泌過多雄性激素，而高雄性激素又使體重更難控制。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/31733195/" target="_blank" rel="noopener noreferrer" style="color: #0369a1; text-decoration: underline;">[2]</a></sup> <br><br>
+    近年來，雙腸泌素藥物猛健樂（Mounjaro®，tirzepatide）同時作用於GLP-1與GIP兩條路徑，能有效促進減重、改善胰島素敏感性，進而打破這個惡性循環，改善賀爾蒙失調與月經不規則等症狀。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11949528/" target="_blank" rel="noopener noreferrer" style="color: #0369a1; text-decoration: underline;">[3]</a></sup>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/39178623/" target="_blank" rel="noopener noreferrer" style="color: #0369a1; text-decoration: underline;">[4]</a></sup>
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、改名背後的故事：為什麼「多囊性」這個名字有問題？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    如果你曾被診斷為「多囊性卵巢症候群」，你可能一直以為自己的卵巢上長滿了囊腫。但其實，<strong style="color: #2dd4bf;">這個名字從一開始就是個誤解。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    1935年，兩位芝加哥外科醫師在手術中觀察患者的卵巢，發現表面看起來「凹凸不平、像有很多小顆粒」，便以「多囊性」來命名這個疾病。但後來研究發現，這些「顆粒」其實是未成熟的卵泡，並非真正的病理性囊腫，而且許多PMOS患者的卵巢根本沒有多餘濾泡，診斷上也不需要有「多囊」才算符合標準。
+    <sup><a href="https://www.endocrine.org/news-and-advocacy/news-room/2026/pcos-name-change" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    更大的問題是，「多囊性卵巢症候群」讓人誤以為這只是一個婦科問題，忽略了它其實是一個影響全身代謝與內分泌的複雜疾病。許多患者因此長期只在婦科就診，月經問題之外的體重增加、血糖異常、心血管風險、皮膚問題、情緒困擾，通通被忽視了。
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">🔬 歷史性的更名：PCOS → PMOS</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      2026年5月12日，在布拉格舉行的歐洲內分泌學年會上，國際共識小組，正式宣布將「多囊性卵巢症候群」更名為「多內分泌代謝卵巢症候群」。這個過程歷時超過十年，收集了來自全球逾22,000名患者與專業醫療人員的意見，並由包含內分泌學會在內的56個國際組織共同背書。
+      <sup><a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00717-8/fulltext" target="_blank" rel="noopener noreferrer" style="color: #0e7490; text-decoration: underline;">[1]</a></sup>
+      未來三年，PCOS與PMOS兩個名稱將並用，讓醫療系統逐步轉換。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">新名字告訴我們什麼？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    「多內分泌代謝卵巢症候群」這個新名字，每個字都有深意：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">多內分泌（Polyendocrine）：</strong>強調這是一個影響多個內分泌系統的疾病，包含胰臟、腎上腺、下視丘-腦下垂體軸，而不只是卵巢。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">代謝（Metabolic）：</strong>點出胰島素阻抗、肥胖、血脂異常等代謝問題是疾病核心，而非附帶問題。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">卵巢（Ovarian）：</strong>卵巢仍是重要的影響部位，月經不規則與排卵障礙依然是主要症狀之一。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">症候群（Syndrome）：</strong>保留了「症候群」，因為這個疾病本質上是多種症狀的組合，沒有單一病因。</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    簡單來說，PMOS不只是卵巢的問題，而是全身代謝與賀爾蒙共同失調的疾病。
+    <sup><a href="https://www.sciencealert.com/pcos-is-officially-renamed-after-decades-of-misinformation" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、肥胖與PMOS的惡性循環：誰先誰後？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    很多PMOS患者都有這樣的疑問：「是因為我胖才得PMOS，還是因為PMOS讓我變胖？」答案是——<strong style="color: #2dd4bf;">兩者都對，而且互相強化。</strong>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">胰島素阻抗：這個惡性循環的核心樞紐</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    要了解肥胖與PMOS的關係，必須先認識「胰島素阻抗」。正常情況下，我們吃東西後血糖上升，胰臟會分泌胰島素幫助細胞吸收血糖。但當細胞對胰島素的反應變差，胰臟就必須分泌更多胰島素才能達到同樣的效果——這就是胰島素阻抗。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究發現，高達70-80%的PMOS患者存在胰島素阻抗，而體重過重會顯著加重這個問題。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4334071/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    高濃度的胰島素會刺激卵巢和腎上腺分泌過多的雄性激素（如睪固酮），而過多的雄性激素又會：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;">干擾正常排卵，導致月經不規則或閉經</li>
+    <li style="margin-bottom: 0.5rem;">造成多毛症（臉部、腹部、四肢毛髮增多）</li>
+    <li style="margin-bottom: 0.5rem;">引發痤瘡（青春痘）和雄性禿</li>
+    <li style="margin-bottom: 0.5rem;">改變脂肪分佈，使脂肪更容易堆積在腹部</li>
+    <li style="margin-bottom: 0.5rem;">進一步惡化胰島素阻抗，形成惡性循環</li>
+  </ul>
+
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h4 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.15rem;">⚠️ PMOS惡性循環示意</h4>
+    <p style="color: #92400e; line-height: 1.8; margin-bottom: 0; font-size: 1.05rem;">
+      <strong>肥胖（特別是腹部脂肪增加）</strong>
+      <br>→ 脂肪組織發炎、分泌促發炎細胞激素
+      <br>→ 胰島素阻抗加劇，胰臟代償性分泌更多胰島素（高胰島素血症）
+      <br>→ 高胰島素刺激卵巢與腎上腺製造過多雄性激素
+      <br>→ 雄性激素干擾排卵、改變脂肪代謝
+      <br>→ <strong>體重更難控制、代謝更差，惡性循環持續</strong>
+      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/31733195/" target="_blank" rel="noopener noreferrer" style="color: #b45309; text-decoration: underline;">[2]</a></sup>
+      <sup><a href="https://www.nature.com/articles/s41598-025-26718-2" target="_blank" rel="noopener noreferrer" style="color: #b45309; text-decoration: underline;">[8]</a></sup>
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">脂肪組織與雄性激素的雙向交互作用</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    近年研究更進一步揭露，脂肪組織（特別是腹部的內臟脂肪）與雄性激素之間存在「雙向正回饋」機制：一方面，異常的脂肪組織會加劇卵巢雄性激素的過度分泌；另一方面，過高的雄性激素又會改變脂肪的分佈模式，讓更多脂肪堆積在腹部，進一步引發慢性低度發炎（體內TNF-α、IL-6等促發炎因子升高）並降低保護性的脂聯素水平。
+    <sup><a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2025.1731179/full" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這正是為什麼PMOS患者往往「怎麼減都減不下來」——不是意志力不足，而是生理機制在對抗減重努力。同時，這也解釋了為什麼即使是輕度的體重減少（5-10%），都能對PMOS症狀帶來顯著改善。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12520869/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">PMOS對長期健康的影響</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    如果不加以治療，這個惡性循環對健康的威脅遠不止月經不順：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">第二型糖尿病：</strong>PMOS患者發展為第二型糖尿病的風險是一般人的3-5倍</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">心血管疾病：</strong>高血壓、血脂異常、動脈硬化風險顯著提高</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">不孕症：</strong>排卵障礙導致受孕困難，是女性不孕最常見的原因之一</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">心理健康：</strong>焦慮、憂鬱及身體形象問題的發生率較一般人高</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">子宮內膜癌：</strong>長期無排卵導致子宮內膜持續受到雌激素刺激，增加癌變風險</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、猛健樂（Mounjaro®）如何打破惡性循環？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    既然PMOS的核心問題是胰島素阻抗與肥胖的惡性循環，那麼如果有一個藥物能同時解決這兩個問題，是否就能打破這個循環？
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    答案是肯定的，而這正是猛健樂（Mounjaro®）的核心優勢所在。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">什麼是猛健樂？它怎麼運作？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    猛健樂是一種每週注射一次的處方藥物，是全球第一個同時作用於兩種腸泌素受體的「雙重促效劑」：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">GLP-1受體（類升糖素胜肽-1）：</strong>促進胰島素分泌、抑制食慾、延緩胃排空、降低血糖</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">GIP受體（葡萄糖依賴性促胰島素多肽）：</strong>協同改善胰島素敏感性、調節脂肪代謝、增強飽足感訊號</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這種雙重作用機制，使猛健樂的減重效果比單純的GLP-1藥物更為顯著——根據SURMOUNT-1臨床試驗，使用高劑量猛健樂（15 mg/週）治療72週後，平均可減去約20-22%的體重。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12297736/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    猛健樂已於2025年通過台灣衛福部核准，適應症包含糖尿病血糖控制與體重控制，屬處方藥，須由醫師評估開立。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">猛健樂對PMOS的多重改善效果</h3>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 700px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 160px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>改善面向</th>
+          <th>作用機轉</th>
+          <th>臨床觀察效果</th>
+          <th style="white-space: nowrap;">參考文獻</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>體重減輕</td>
+          <td>雙重抑制食慾、延緩胃排空、促進能量消耗</td>
+          <td>72週平均減重20-22%，效果顯著優於單純GLP-1藥物</td>
+          <td style="text-align: center;"><sup>[11]</sup></td>
+        </tr>
+        <tr>
+          <td>胰島素阻抗改善</td>
+          <td>GLP-1+GIP雙重增強胰島素敏感性</td>
+          <td>HOMA-IR指數顯著下降，血糖控制改善</td>
+          <td style="text-align: center;"><sup>[4]</sup></td>
+        </tr>
+        <tr>
+          <td>雄性激素降低</td>
+          <td>胰島素下降→卵巢雄性激素刺激減少</td>
+          <td>睪固酮水平降低約33%，多毛症與痤瘡改善</td>
+          <td style="text-align: center;"><sup>[4]</sup></td>
+        </tr>
+        <tr>
+          <td>月經規律恢復</td>
+          <td>賀爾蒙環境改善、排卵障礙緩解</td>
+          <td>月經規律性改善，自然受孕率提高</td>
+          <td style="text-align: center;"><sup>[3]</sup><sup>[11]</sup></td>
+        </tr>
+        <tr>
+          <td>發炎指標下降</td>
+          <td>減重後脂肪組織功能改善，慢性低度發炎緩解</td>
+          <td>CRP等發炎指標降低，代謝環境改善</td>
+          <td style="text-align: center;"><sup>[11]</sup></td>
+        </tr>
+        <tr>
+          <td>心血管風險降低</td>
+          <td>血脂改善、血壓下降、體重減輕</td>
+          <td>三酸甘油脂顯著降低，腰圍減少</td>
+          <td style="text-align: center;"><sup>[4]</sup></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-top: 2rem; margin-bottom: 1rem;">為什麼「雙重作用」對PMOS特別重要？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    對PMOS患者來說，單純的飲食控制與運動往往成效有限，部分原因正是因為生理機制本身在對抗減重。相較於傳統的GLP-1藥物，猛健樂的雙重腸泌素機轉在PMOS患者身上可能具有更大的優勢：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">GIP受體的額外貢獻：</strong>GIP受體不只在胰臟發揮作用，也直接影響脂肪組織的代謝與能量消耗，這對以腹部肥胖為主的PMOS患者特別有利。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">更強的減重效果打破惡性循環：</strong>即使只減少5-10%的體重，就能改善月經規律性；而猛健樂能達到的20%以上減重，在改善PMOS症狀方面潛力更大。
+      <sup><a href="https://trytrimi.com/blog/tirzepatide-pcos-evidence" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">同時改善多個症狀：</strong>研究顯示，GLP-1類藥物能同時改善月經週期、降低睪固酮、改善胰島素阻抗及提高血糖穩定性，這種多面向的改善效果正是PMOS這個複雜疾病所需要的。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11949528/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    </li>
+  </ul>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 真實案例：藥物如何改變生命</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      美國科羅拉多大學安舒茲醫學院正在進行一項以semaglutide治療PMOS的臨床試驗。一名已被症狀困擾14年的患者加入試驗後，不只成功減去逾45公斤，更首次出現規律月經。她表示：「所有一切都調節好了——胰島素穩定了，睪固酮恢復正常，月經也規律了。」
+      <sup><a href="https://news.cuanschutz.edu/news-stories/how-semaglutide-helped-one-woman-reverse-pmos-formerly-pcos-symptoms-after-14-years" target="_blank" rel="noopener noreferrer" style="color: #0e7490; text-decoration: underline;">[13]</a></sup>
+      雖然這是semaglutide的案例，但tirzepatide（猛健樂）的減重效果已被臨床證實更為顯著，在PMOS管理上的潛力值得持續關注。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">使用猛健樂的注意事項</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    雖然猛健樂在治療PMOS相關肥胖與代謝問題上展現出令人振奮的潛力，但仍有幾點重要提醒：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">必須由醫師評估：</strong>猛健樂是處方藥，使用前需接受完整的醫療評估，包括排除禁忌症（如甲狀腺髓質癌病史、懷孕）。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">常見副作用：</strong>初期可能出現噁心、腹脹、腹瀉等腸胃道反應，通常隨時間改善，應從低劑量開始逐漸調整。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">PMOS尚非核准適應症：</strong>目前台灣核准的適應症為糖尿病血糖控制與肥胖體重控制，針對PMOS的治療仍在研究中，但許多醫師已在有肥胖合併症的PMOS患者中考慮使用。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">配合生活型態調整：</strong>藥物治療應搭配均衡飲食、規律運動，以達到最佳且持久的效果。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">定期追蹤監測：</strong>使用過程中需定期回診，監測體重、血糖、賀爾蒙指標的變化。</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 四、常見迷思破解
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「PMOS（多囊）患者的卵巢一定長了很多囊腫」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 「多囊性」原本的描述是卵巢表面的未成熟卵泡，並非真正的病理囊腫。事實上，依據目前的Rotterdam診斷標準，PMOS的診斷不一定需要有「多囊卵巢型態（PCOM）」，月經不規則合併高雄性激素血症即可診斷。更名後的PMOS正是要糾正這個長達九十年的誤解。<sup><a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00717-8/fulltext" target="_blank" rel="noopener noreferrer" style="color: #b45309; text-decoration: underline;">[1]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「PMOS是胖子才會得的病，瘦的人不會有」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>部分錯誤！</strong> 雖然肥胖會加重PMOS症狀，但體重正常甚至偏瘦的女性同樣可能罹患PMOS。研究顯示，約20-30%的PMOS患者BMI在正常範圍內，但仍可能存在胰島素阻抗與賀爾蒙失調。不過，肥胖確實是PMOS惡化的重要推手，體重管理在治療上的重要性不容忽視。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12520869/" target="_blank" rel="noopener noreferrer" style="color: #b45309; text-decoration: underline;">[10]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「PMOS只影響生育，只要不想生小孩就不需要治療」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>非常危險的想法！</strong> PMOS是一個終身性的代謝疾病，長期不治療會顯著提升第二型糖尿病、心血管疾病、高血壓的風險。子宮內膜因長期無排卵而持續受到雌激素刺激，癌變風險也會升高。更名為PMOS的核心精神，正是要讓醫師和患者都重視它的代謝層面，而不只是生育問題。<sup><a href="https://www.endocrine.org/news-and-advocacy/news-room/2026/pcos-name-change" target="_blank" rel="noopener noreferrer" style="color: #b45309; text-decoration: underline;">[5]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 0.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
+        <div>
+          <strong>「吃減重藥就能解決PMOS，不需要改變生活習慣」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 猛健樂等藥物能有效幫助PMOS患者打破肥胖與賀爾蒙失調的惡性循環，但這些藥物需要搭配均衡飲食與適度運動，才能達到最佳效果並維持長期成果。研究顯示，單獨藥物介入若沒有生活型態改變的配合，在停藥後體重往往容易回升，PMOS症狀也可能復發。</span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、PMOS的完整治療策略：不只是減重
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    PMOS是複雜的多系統疾病，治療應依據患者的主要訴求和症狀進行個人化規劃。以下是目前醫學建議的整合性治療策略：
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">生活型態介入（所有患者的基礎）</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">飲食調整：</strong>以地中海飲食或低升糖指數飲食為優先，減少精緻碳水化合物與加工食品，增加蔬菜、高纖食物與優質蛋白質</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">規律運動：</strong>有氧運動結合阻力訓練，每週至少150分鐘中等強度運動，有助改善胰島素敏感性</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">睡眠品質：</strong>睡眠不足會加重胰島素阻抗，應維持充足且規律的睡眠</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">壓力管理：</strong>慢性壓力會升高皮質醇，進一步影響血糖與賀爾蒙平衡</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">藥物治療（依症狀選擇）</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">Metformin（二甲雙胍）：</strong>長期使用的第一線藥物，改善胰島素阻抗、降低雄性激素，已有數十年PMOS專屬研究數據</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">口服避孕藥：</strong>調節月經週期、降低雄性激素、改善多毛症與痤瘡，但不改善代謝問題</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">猛健樂（tirzepatide）或GLP-1藥物：</strong>對於合併肥胖的PMOS患者，是能同時解決體重、胰島素阻抗與賀爾蒙失調的新選項，且在改善PMOS症狀方面展現出越來越多的研究支持
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11949528/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">促排卵藥物：</strong>對有生育需求的患者，在體重改善後可考慮使用</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、FAQ 常見問題
+  </h2>
+  <section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 1.5rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+    <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+      <h3 style="color: #22d3ee; margin: 0; font-size: 1.15rem; display: flex; align-items: center; font-weight: bold;">
+        <span style="margin-right: 8px;">🏥</span> 常見問題解答
+      </h3>
+    </div>
+    <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+      
+      <h4 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.1rem; font-weight: bold;">
+        Q1：我之前診斷是PCOS，現在要改叫PMOS嗎？
+      </h4>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        是的，PCOS已正式更名為PMOS。未來三年，兩個名稱將並用，之後才會完全轉換。你的診斷本身不變，只是名稱更新，更準確地反映了這個疾病的本質。
+      </p>
+
+      <h4 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.1rem; font-weight: bold;">
+        Q2：我體重正常，也需要治療PMOS嗎？
+      </h4>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        需要。體重正常的PMOS患者同樣可能有胰島素阻抗、雄性激素過高和排卵障礙，這些問題如果不處理，長期仍有代謝與心血管風險。治療方向可能著重於賀爾蒙調節而非體重管理，請與醫師詳細討論最適合的方案。
+      </p>
+
+      <h4 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.1rem; font-weight: bold;">
+        Q3：猛健樂適合所有PMOS患者嗎？
+      </h4>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        猛健樂目前在台灣核准的適應症是第二型糖尿病血糖控制與肥胖體重控制，針對PMOS本身尚非核准適應症。對於合併肥胖（BMI≥27且有代謝共病）的PMOS患者，醫師可能考慮使用。禁忌症包含懷孕、甲狀腺髓質癌病史等，必須由醫師個別評估。
+      </p>
+
+      <h4 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.1rem; font-weight: bold;">
+        Q4：使用猛健樂後PMOS症狀改善了，可以停藥嗎？
+      </h4>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        停藥後體重有一定機率回升，賀爾蒙問題也可能隨之復發。研究觀察到，在建立良好的生活習慣基礎後停藥，體重回升的幅度較小。停藥與否及時機，應與醫師共同討論，並在停藥後持續追蹤體重與賀爾蒙指標。
+      </p>
+
+      <h4 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.1rem; font-weight: bold;">
+        Q5：我有PMOS，但目前想懷孕，可以用猛健樂嗎？
+      </h4>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        懷孕期間禁止使用猛健樂。若有懷孕計畫，應在計畫懷孕前至少2個月停藥，並在醫師指導下轉換為其他對懷孕安全的治療方案（如metformin）。先透過藥物改善代謝環境後再準備懷孕，可能有助於提高自然受孕率。
+      </p>
+
+    </div>
+  </section>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    從PCOS到PMOS，這個改名不只是醫學術語的更新，更是一次對千萬名女性的還原正義——告訴她們，這個疾病的複雜性遠超過「卵巢長了囊腫」，她們的體重問題、血糖異常、情緒困擾，都不是個人意志力的失敗，而是需要被認真對待的醫學問題。
+  </p><br>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    肥胖與PMOS的惡性循環是真實存在的生理機制，而猛健樂這類雙重腸泌素藥物，為打破這個循環提供了前所未有的有力工具。<strong style="color: #1e293b;">但任何藥物治療都需要在醫師的評估與監督下進行，並搭配生活型態的改善，才能真正達到持久且全面的效果。</strong>
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 如果你或身邊的人有月經不規則、體重難以控制、多毛症或不孕困擾，請不要輕忽這些訊號。及早評估、及早介入，才能避免代謝問題在沉默中累積。
+    </p>
+  </div>
+
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診評估猛健樂治療多((PMOS)
+    </a>
+  </div>
+</div>
+
+
+  `,
+  referencesHtml: `
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Teede, H.J., et al. (2026). Polyendocrine metabolic ovarian syndrome, the new name for polycystic ovary syndrome: a multistep global consensus process. The Lancet. <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00717-8/fulltext" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/S0140-6736(26)00717-8</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Li, R., et al. (2019). Polycystic ovarian syndrome: Correlation between hyperandrogenism, insulin resistance and obesity. Clinica Chimica Acta, 502, 214–221. <a href="https://pubmed.ncbi.nlm.nih.gov/31733195/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 31733195</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Mauvais-Jarvis, F., et al. (2025). Endocrine and metabolic effects of GLP-1 receptor agonists on women with PCOS, a narrative review. Endocrine Connections, 14(5). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11949528/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11949528</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Morais, B.A., et al. (2024). The efficacy and safety of GLP-1 agonists in PCOS women living with obesity in promoting weight loss and hormonal regulation: A meta-analysis of randomized controlled trials. Journal of Diabetes and Complications, 38(10), 108834. <a href="https://pubmed.ncbi.nlm.nih.gov/39178623/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 39178623</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Endocrine Society. (2026). Polyendocrine Metabolic Ovarian Syndrome: New name to improve diagnosis and care of condition affecting 170 million women worldwide. <a href="https://www.endocrine.org/news-and-advocacy/news-room/2026/pcos-name-change" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        ScienceAlert. (2026). PCOS Is Officially Renamed, After Decades of Misinformation. <a href="https://www.sciencealert.com/pcos-is-officially-renamed-after-decades-of-misinformation" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Rosenfield, R.L., & Ehrmann, D.A. (2016). Polycystic Ovary Syndrome, Insulin Resistance, and Obesity: Navigating the Pathophysiologic Labyrinth. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4334071/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 4334071</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Gruber, M., et al. (2025). Insulin resistance in polycystic ovary syndrome phenotypes and the vicious cycle model in its etiology. Scientific Reports. <a href="https://www.nature.com/articles/s41598-025-26718-2" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Nature: s41598-025-26718-2</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Zhou, X., et al. (2025). Adipose-androgen crosstalk in polycystic ovary syndrome: mechanisms and therapeutic implications. Frontiers in Endocrinology. <a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2025.1731179/full" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3389/fendo.2025.1731179</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Calcaterra, V., et al. (2025). Insulin resistance, metabolic syndrome and polycystic ovaries: an intriguing conundrum. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12520869/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12520869</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Zhang, Q., et al. (2025). Effects of combined metformin and semaglutide therapy on body weight, metabolic parameters, and reproductive outcomes in overweight/obese women with PCOS. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12297736/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12297736</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Trimi Health. (2026). GLP-1 for PCOS: Complete Tirzepatide Evidence Guide. <a href="https://trytrimi.com/blog/tirzepatide-pcos-evidence" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        University of Colorado Anschutz. (2026). How Semaglutide Helped One Woman Reverse PMOS Symptoms After 14 Years. <a href="https://news.cuanschutz.edu/news-stories/how-semaglutide-helped-one-woman-reverse-pmos-formerly-pcos-symptoms-after-14-years" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+  </ol>
+</div>
+
+`
+},
+
 {
   id: 'spine-xray-report-dont-panic',
   title: '健檢報告異常別慌！教你看懂側彎與壓迫，真的需要擔心嗎？',
@@ -28941,7 +29488,7 @@ id: 'tennis-stroke-biomechanics',
 
 {
   id: 'home-core-stretching-guide',
-  title: '居家核心訓練與伸展全指南：棒式、橋式、嬰兒式、眼鏡蛇式，哪些腰部病患適合做？',
+  title: '居家核心訓練全指南：棒式、橋式等，哪些腰痛病患適合做？',
   lastModified: '2026-04-20',
   category: '衛教文章',
   date: '2026-04-20',
@@ -28968,8 +29515,8 @@ id: 'tennis-stroke-biomechanics',
     腰部疼痛是全球最常見的肌肉骨骼問題之一，研究顯示終生盛行率高達 85%。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9340836/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
     居家核心訓練與伸展運動是目前實證支持的非手術介入方式，能有效強化深層穩定肌群、緩解慢性腰痛、改善功能性動作。
-    棒式（Plank）透過等長收縮強化腹橫肌、多裂肌等深層核心肌群，對腰椎的壓迫力遠低於仰臥起坐等動態動作；
-    橋式（Glute Bridge）則以臀大肌為主要目標，透過強化臀部與腰椎穩定肌群，幫助改善因臀肌失能引起的腰痛。
+    棒式透過等長收縮強化腹橫肌、多裂肌等深層核心肌群，對腰椎的壓迫力遠低於仰臥起坐等動態動作；
+    橋式則以臀大肌為主要目標，透過強化臀部與腰椎穩定肌群，幫助改善因臀肌失能引起的腰痛。<br><br>
     嬰兒式、眼鏡蛇式等伸展動作可有效放鬆緊繃的腰部組織、延展脊椎。
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/34326296/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>
     然而，不同的腰部疾病——包含椎間盤突出、脊椎狹窄、脊椎滑脫——對運動有不同的適應症與禁忌，本文將以民眾易懂的語言，逐一解析每個動作的正確做法與適用族群。
@@ -29001,13 +29548,14 @@ id: 'tennis-stroke-biomechanics',
 <section style="margin-bottom: 3.5rem;">
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
     二、核心訓練動作詳解
+     
   </h2>
- 
+ <img src="/images/diseases/spine-hip/HIVD/h.webp" alt="核心炫練運動" style="width: 100%; height: auto;">
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🔹 棒式（Plank）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     棒式是最常見的核心訓練動作之一，做法是以前臂和腳尖為支撐點，身體保持一直線，就像一根棍子懸在空中。
   </p>
- 
+
   <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">訓練哪些肌肉？</p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">腹橫肌（深層核心）</strong>：最重要的脊椎穩定肌，棒式的主要鍛鍊目標</li>
@@ -29105,7 +29653,7 @@ id: 'tennis-stroke-biomechanics',
   <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
     三、伸展動作詳解
   </h2>
- 
+ <img src="/images/diseases/spine-hip/HIVD/g.webp" alt="核心炫練運動" style="width: 100%; height: auto;">
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🧘 嬰兒式（Child's Pose）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     嬰兒式是瑜伽中最具代表性的放鬆姿勢，做法是跪趴在地上，臀部向後坐向腳跟，雙臂向前伸展，頭輕輕放在地面。這個姿勢讓脊椎自然延伸，非常適合在訓練後或感覺腰部緊繃時做放鬆。
@@ -29520,7 +30068,7 @@ id: 'tennis-stroke-biomechanics',
  
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
     居家核心訓練與伸展不是萬靈丹，但對多數腰部疾患來說是最容易入門、最具實證支持的自我管理工具。棒式穩定深層核心、橋式喚醒臀肌、嬰兒式放鬆腰背、眼鏡蛇式對抗前屈——每個動作都有其適應症與禁忌，選對了才能真正有效。
-  </p>
+  </p><br>
  
   <p style="color: #475569; font-size: 1.05rem;">
     如果你有腰部疾病、正在受腰痛困擾，或是不確定自己適合做哪些動作，<strong style="color: #1e293b;">最重要的第一步是確認診斷，再依據診斷選擇運動</strong>。本文提供的資訊是參考指引，個人化的評估仍是最安全的起點——<strong style="color: #1e293b;">預約門診評估，讓醫師協助你找到最適合你的居家訓練計畫</strong>。
@@ -29537,7 +30085,7 @@ id: 'tennis-stroke-biomechanics',
        target="_blank"
        rel="noopener noreferrer"
        style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
-        預約門診個人化評估
+        預約門診個人化運動評估
     </a>
   </div>
 </div>

@@ -12,6 +12,12 @@ export const sportsInjuriesData = [
     description: '統整病患在診間常見疑問，一次幫大家解惑',
     image: '/images/sportinjury/9.webp',
     injuries: [
+                                    {
+        slug: 'home-core-stretching-guide',
+        title: '居家核心訓練全指南：棒式、橋式等，哪些腰痛病患適合做？',
+        description: '深入解析居家常見核心運動（棒式、橋式、鳥狗式）與伸展動作（嬰兒式、眼鏡蛇式、貓牛式）的訓練肌群、建議時長與組數，並說明各類腰部疾患（椎間盤突出、脊椎狹窄、脊椎滑脫）的適應與禁忌，以實證為依據，提供安全有效的居家復健建議。',
+        image: '/images/news/article/coreexercise1.webp',
+      },
                               {
         slug: 'tissue-healing-time-analysis',
         title: '身體受傷多久會好？肌肉、肌腱、韌帶、骨頭修復全解析',
@@ -580,7 +586,7 @@ export const sportsInjuriesData = [
         slug: 'weightloss-sleep-apnea-mounjaro',
         title: '那一夜，她終於能好好睡一覺：減重與呼吸中止症的意外驚喜 🌙',
         description: '肥胖不只是數字問題，更關乎全家人的生活品質。看林醫師如何透過專業減重評估，幫助病患改善三高與睡眠呼吸中止症，找回健康，也讓辛苦的太太重獲安穩睡眠。',
-        image:  '/images/news/article/weightloss-sleep.webpp',
+        image:  '/images/news/article/weightloss-sleep.webp',
       },
 
             {
