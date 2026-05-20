@@ -228,12 +228,8 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
               </footer>
 
               {article.referencesHtml && (
-                <section className="px-6 md:px-10 pb-12">
+                <section className="bg-slate-900/80 px-0 md:px-12 pb-12 text-left">
                   <div className="bg-slate-900/50 border border-slate-700/50 rounded-2xl p-6 md:p-8">
-                    <div className="flex items-center mb-6 border-b border-slate-700 pb-4">
-                      <i className="fa-solid fa-book-bookmark text-cyan-400 text-xl mr-3"></i>
-                      <span className="text-white font-bold">參考文獻</span>
-                    </div>
                     <div className="references-content text-slate-400 text-sm md:text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: article.referencesHtml }} />
                   </div>
                 </section>

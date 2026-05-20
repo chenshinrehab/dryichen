@@ -5,6 +5,9 @@ import JsonLd from '@/components/JsonLd'
 import { newsList } from '@/data/news'
 import ScrollAnimation from '@/components/ScrollAnimation'
 
+// 【關鍵修復 1】強制動態渲染，確保每次網址的 ?page 變更都會抓取最新資料
+export const dynamic = 'force-dynamic';
+
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
 const PAGE_PATH = '/about/news'
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
@@ -48,8 +51,25 @@ export const metadata: Metadata = {
   }
 }
 
-export default function NewsListPage() {
+type Props = {
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export default function NewsListPage({ searchParams }: Props) {
   const currentUrl = CANONICAL_URL
+
+  // 分頁邏輯設定 (安全讀取參數，避免 Next.js 14 解析錯誤)
+  const ITEMS_PER_PAGE = 10;
+  const pageParam = searchParams?.page;
+  const parsedPage = typeof pageParam === 'string' ? parseInt(pageParam, 10) : 1;
+  const totalPages = Math.ceil(articlesList.length / ITEMS_PER_PAGE) || 1;
+  
+  // 確保當前頁數在有效範圍內
+  const currentPage = Math.max(1, Math.min(parsedPage, totalPages));
+  
+  // 裁切當前頁面的文章
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const currentArticles = articlesList.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
   const jsonLdBreadcrumb = {
     '@context': 'https://schema.org',
@@ -81,7 +101,7 @@ export default function NewsListPage() {
         name: '新竹宸新復健科',
         url: SITE_URL
     },
-    blogPost: articlesList.map((item) => ({
+    blogPost: currentArticles.map((item) => ({
         '@type': 'BlogPosting',
         headline: item.title,
         description: item.summary,
@@ -96,7 +116,9 @@ export default function NewsListPage() {
     <>
       <JsonLd data={jsonLdBreadcrumb} />
       <JsonLd data={jsonLdBlog} />
-      <ScrollAnimation />
+      
+      {/* 【關鍵修復 2】綁定 currentPage 作為 key，讓切換頁面時動畫能夠重新初始化 */}
+      <ScrollAnimation key={`anim-${currentPage}`} />
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12">
@@ -137,9 +159,9 @@ export default function NewsListPage() {
                 </div>
             </div>
 
-            {/* 文章列表：將動畫分配到每個 Link 卡片上 */}
-            <div className="space-y-8">
-              {articlesList.map((item, index) => {
+            {/* 文章列表：綁定 currentPage 作為 key，確保 React 乾淨地重新掛載 DOM */}
+            <div className="space-y-8" key={`page-${currentPage}`}>
+              {currentArticles.map((item, index) => {
                 const catStyle = categoryStyles[item.category] || 'bg-slate-500/10 text-slate-400 border-slate-500/30';
                 const hoverStyle = hoverBorderStyles[item.category] || 'hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)]';
                 
@@ -186,6 +208,66 @@ export default function NewsListPage() {
                 );
               })}
             </div>
+
+            {/* 分頁按鈕區塊 */}
+            {totalPages > 1 && (
+              <div className="mt-12 flex justify-center items-center space-x-2 animate-on-scroll">
+                {/* 上一頁按鈕 */}
+                {currentPage > 1 ? (
+                  <Link 
+                    href={`${PAGE_PATH}?page=${currentPage - 1}`} 
+                    className="px-4 py-2 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-cyan-400 transition-colors border border-slate-700 text-sm font-medium"
+                  >
+                    <i className="fa-solid fa-chevron-left mr-1"></i> 上一頁
+                  </Link>
+                ) : (
+                  <button 
+                    disabled 
+                    className="px-4 py-2 rounded-lg bg-slate-800/30 text-slate-600 cursor-not-allowed border border-slate-800/50 text-sm font-medium"
+                  >
+                    <i className="fa-solid fa-chevron-left mr-1"></i> 上一頁
+                  </button>
+                )}
+
+                {/* 頁碼按鈕 */}
+                <div className="flex items-center space-x-1 mx-2">
+                  {Array.from({ length: totalPages }).map((_, idx) => {
+                    const pageNum = idx + 1;
+                    const isActive = currentPage === pageNum;
+                    return (
+                      <Link
+                        key={pageNum}
+                        href={`${PAGE_PATH}?page=${pageNum}`}
+                        className={`w-10 h-10 flex items-center justify-center rounded-lg transition-colors border text-sm font-medium ${
+                          isActive
+                            ? 'bg-cyan-500/20 text-cyan-400 border-cyan-500/50 shadow-[0_0_10px_rgba(34,211,238,0.2)]'
+                            : 'bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-cyan-400 border-slate-700'
+                        }`}
+                      >
+                        {pageNum}
+                      </Link>
+                    );
+                  })}
+                </div>
+
+                {/* 下一頁按鈕 */}
+                {currentPage < totalPages ? (
+                  <Link 
+                    href={`${PAGE_PATH}?page=${currentPage + 1}`} 
+                    className="px-4 py-2 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-cyan-400 transition-colors border border-slate-700 text-sm font-medium"
+                  >
+                    下一頁 <i className="fa-solid fa-chevron-right ml-1"></i>
+                  </Link>
+                ) : (
+                  <button 
+                    disabled 
+                    className="px-4 py-2 rounded-lg bg-slate-800/30 text-slate-600 cursor-not-allowed border border-slate-800/50 text-sm font-medium"
+                  >
+                    下一頁 <i className="fa-solid fa-chevron-right ml-1"></i>
+                  </button>
+                )}
+              </div>
+            )}
 
             {/* 底部導引區塊 */}
             <div className="mb-12 max-w-3xl mx-auto mt-16 animate-on-scroll delay-200 text-center text-slate-400 text-sm">
