@@ -61,6 +61,12 @@ export const sportsInjuriesData = [
         description: '腳扭傷要冰敷還是熱敷？閃到腰呢？運動完後又該怎麼辦？本文以運動醫學觀點，整合最新實證研究，詳細說明冰敷與熱敷的適應症、正確溫度、持續時間與頻率，讓你在家就能做出正確處置。',
         image: '/images/news/article/ice-heat-therapy.webp',
       },
+                        {
+        slug: 'joint-effusion-explained',
+        title: '關節積水全解析：膝蓋腫起來裡面的水哪裡來？一定要抽嗎？',
+        description: '膝蓋積水、關節腫脹讓人又痛又怕。本文以淺顯易懂的語言，解釋關節積液的來源、成分與功能，並依據最新實證醫學，說明什麼情況下需要抽水、什麼情況下不抽反而更好，以及放著不管對關節會有哪些長期影響。',
+        image: '/images/news/article/joint-effusion-explained.webp',
+      },
 
                   {
         slug: 'pain-medication-analysis',
@@ -183,6 +189,18 @@ export const sportsInjuriesData = [
         title: '震波治療能量開多大才有效？越痛越好嗎？從醫學看最佳疼痛指數',
         description: '體外震波治療能量要開多大才有效？是不是越痛越好？本文從運動醫學角度深度解析震波能量分級與治療機制，說明為何治療時疼痛指數需維持在VAS 4至6分，並破解震波治療後吃消炎藥與施打麻醉的常見迷思。',
         image: '/images/news/article/eswt-energy-level.webp',
+      },
+                                          {
+        slug: 'pmos-obesity-mounjaro',
+        title: '正名後的多內分泌代謝卵巢症候群：肥胖與猛健樂的角色',
+        description: '2026年5月，醫學界宣布將沿用逾九十年的多囊性卵巢症候群（PCOS）正式更名為多內分泌代謝卵巢症候群（PMOS）。本文從運動醫學與內分泌角度，深入剖析肥胖、胰島素阻抗與賀爾蒙失調如何形成難解的惡性循環，並探討雙腸泌素新藥猛健樂（Mounjaro）如何精準打破此循環，帶來兼具體重管理與內分泌改善的全新曙光。',
+        image: '/images/news/article/pmos-obesity-mounjaro.webp',
+      },
+                                                {
+        slug: 'osteoporosis-medications-guide',
+        title: '骨質疏鬆藥物全攻略：口服、注射怎麼選？治療選項全攻略',
+        description: '骨質疏鬆不只是「老人病」——台灣每三位65歲以上女性就有一位曾發生骨折。本文以民眾能理解的語言，完整介紹雙磷酸鹽、保骼麗、骨穩、益穩挺等口服與注射藥物，並根據最新臨床指引，幫你釐清哪些人適合哪種治療。',
+        image: '/images/news/article/osteoporosis-medications-guide.webp',
       },
 
     ]
@@ -317,7 +335,12 @@ export const sportsInjuriesData = [
         description: '從現代藥理學與運動醫學角度，深入剖析台灣傳統轉骨湯。逐一拆解杜仲、淫羊藿、骨碎補等核心藥材的細胞與動物實驗證據，並揭開過早服用導致性早熟、生長板提早閉合的風險。結合中西醫觀點，提供家長最理性的青春期發育指引。',
         image: '/images/news/article/science-of-chinese-herbal-height-growth.webp',
       },
-
+            {
+        slug: 'growth-hormone-idiopathic-short-stature',
+        title: '生長激素真能讓孩子長高？身高不足的療效、副作用與費用解析',
+        description: '沒有生長激素缺乏的孩子，打了到底有沒有用？本文從運動與兒童醫學實證出發，深入解析「特發性矮小（ISS）」施打生長激素的真實效果。數據顯示最終成人身高平均可增益 3.5 至 7.5 公分，但個體差異極大。同步揭露台灣自費市場每公分高達 20 萬至 60 萬元的沉重成本，以及顱內壓升高、股骨頭滑脫等潛在副作用風險。',
+        image: '/images/news/article/growth-hormone-treatment-analysis.webp',
+      },
     ]
   },
 

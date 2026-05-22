@@ -4,21 +4,21 @@ export const articlesData: NewsPost[] = [
 
 {
   id: 'osteoporosis-medications-guide',
-  title: '骨質疏鬆藥物全攻略：口服、注射怎麼選？讓你看懂治療選項',
+  title: '骨質疏鬆藥物全攻略：口服、注射怎麼選？治療選項全攻略',
   lastModified: '2026-05-21',
   category: '衛教文章',
   date: '2026-05-21',
-  summary: '骨質疏鬆不只是「老人病」——台灣每三位65歲以上女性就有一位曾發生骨折。本文以民眾能理解的語言，完整介紹雙磷酸鹽、Denosumab、副甲狀腺素類似物、硬化素抑制劑等口服與注射藥物，並根據最新臨床指引，幫你釐清哪些人適合哪種治療。',
-  coverImage: '/images/news/article/tennis-injury-analysis.webp',
+  summary: '骨質疏鬆不只是「老人病」——台灣每三位65歲以上女性就有一位曾發生骨折。本文以民眾能理解的語言，完整介紹雙磷酸鹽、保骼麗、骨穩、益穩挺等口服與注射藥物，並根據最新臨床指引，幫你釐清哪些人適合哪種治療。',
+  coverImage: '/images/news/article/osteoporosis-medications-guide.webp',
   seoTitle: '骨質疏鬆藥物全攻略：口服注射比較，哪種藥最適合你？',
-  seoDescription: '完整介紹骨質疏鬆口服藥（阿侖磷酸鈉、利塞磷酸鈉）與注射藥（唑來磷酸、Denosumab、特立帕肽、Romosozumab）的效果比較、副作用與適用族群，附實證文獻引用。',
+  seoDescription: '完整介紹骨質疏鬆口服藥（福善美、悅維錠）與注射藥（骨力強、保骼麗、骨穩、益穩挺）的效果比較、副作用與適用族群，附實證文獻引用。',
   keywords: [
     '骨質疏鬆',
     '骨質疏鬆藥物',
     '雙磷酸鹽',
-    'Denosumab',
-    '特立帕肽',
-    'Romosozumab',
+    '保骼麗',
+    '骨穩',
+    '益穩挺',
     '骨折預防',
     '停經後骨質疏鬆',
     '骨密度'
@@ -64,6 +64,7 @@ export const articlesData: NewsPost[] = [
     <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
       FRAX是世界衛生組織（WHO）開發的骨折風險計算工具，綜合年齡、性別、體重、吸菸史、飲酒量、骨密度等因素，計算未來10年發生骨折的機率。醫師通常以此作為是否啟動藥物治療的重要依據。
     </p>
+          <a href="https://i-pinglee.tw/FRAX.html" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">FRAX自我測試網頁</a>
   </div>
 </section>
  
@@ -84,9 +85,9 @@ export const articlesData: NewsPost[] = [
     常見的口服雙磷酸鹽包含：
   </p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">阿侖磷酸鈉（Alendronate，商品名Fosamax）：</strong> 每週服用一次。研究顯示可降低脊椎骨折風險約47%、髖部骨折約51%。</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">利塞磷酸鈉（Risedronate，商品名Actonel）：</strong> 每週或每月服用一次，效果與阿侖磷酸鈉相近，對胃部刺激稍小。</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">伊班磷酸鈉（Ibandronate）：</strong> 每月服用一次，對脊椎骨折效果佳，對髖部骨折的直接證據較少。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">福善美（Alendronate，商品名Fosamax）：</strong> 每週服用一次。研究顯示可降低脊椎骨折風險約47%、髖部骨折約51%。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">悅維錠（Risedronate，商品名Actonel）：</strong> 每週或每月服用一次，效果與福善美相近，對胃部刺激稍小。</li>
+
   </ul>
  
   <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">⚠️ 服用注意事項（非常重要！）</p>
@@ -101,9 +102,9 @@ export const articlesData: NewsPost[] = [
     <sup><a href="https://emedicine.medscape.com/article/330598-guidelines" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
   </p>
  
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">2. 雷洛昔芬（Raloxifene，商品名Evista）——適合乳癌風險較高者</h3>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">2. 鈣穩（Raloxifene，商品名Evista）——適合乳癌風險較高者</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    雷洛昔芬屬於「選擇性雌激素受體調節劑（SERM）」，顧名思義，它的作用方式是「模仿」雌激素在骨骼上的保護功能，同時<strong style="color: #ffffff;">不刺激乳腺和子宮</strong>，因此對停經後女性（特別是有乳癌家族史者）有額外的吸引力。
+    鈣穩屬於「選擇性雌激素受體調節劑（SERM）」，顧名思義，它的作用方式是「模仿」雌激素在骨骼上的保護功能，同時<strong style="color: #ffffff;">不刺激乳腺和子宮</strong>，因此對停經後女性（特別是有乳癌家族史者）有額外的吸引力。
     <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK558530/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
@@ -124,12 +125,12 @@ export const articlesData: NewsPost[] = [
     三、注射藥物：效果強、依從性高，適合高風險族群
   </h2>
  
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 唑來磷酸（Zoledronate，商品名Aclasta）——每年一次靜脈注射</h3>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 骨力強（Zoledronate，商品名Aclasta）——每年一次靜脈注射</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     同樣屬於雙磷酸鹽家族，但採靜脈注射方式。每年只需到醫院點滴注射一次（約15–30分鐘），完全不需要顧慮「空腹吃藥」的繁瑣細節，也不會有食道刺激的問題。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    臨床試驗（HORIZON試驗）顯示，唑來磷酸可降低脊椎骨折風險約70%、髖部骨折約41%，是目前<strong style="color: #ffffff;">靜脈雙磷酸鹽中骨折預防效果最強的藥物</strong>。
+    臨床試驗顯示，骨力強可降低脊椎骨折風險約70%、髖部骨折約41%，是目前<strong style="color: #ffffff;">靜脈雙磷酸鹽中骨折預防效果最強的藥物</strong>。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11103071/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
@@ -143,29 +144,29 @@ export const articlesData: NewsPost[] = [
     <li style="margin-bottom: 0.5rem;">口服雙磷酸鹽胃腸道副作用嚴重者</li>
   </ul>
  
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. Denosumab（商品名Prolia）——每半年一次皮下注射</h3>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 保骼麗（商品名Prolia）——每半年一次皮下注射</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    Denosumab是一種<strong style="color: #2dd4bf;">人類單株抗體</strong>，作用機制與雙磷酸鹽完全不同——它會阻斷一個名為RANKL的訊號，讓破骨細胞「無法被啟動」，從而抑制骨質分解。每半年由護理師或醫師在腹部、大腿或上臂皮下注射一次。
+    保骼麗是一種<strong style="color: #2dd4bf;">人類單株抗體</strong>，作用機制與雙磷酸鹽完全不同——它會阻斷一個名為RANKL的訊號，讓破骨細胞「無法被啟動」，從而抑制骨質分解。每半年由護理師或醫師在腹部、大腿或上臂皮下注射一次。
     <sup><a href="https://www.aafp.org/pubs/afp/issues/2023/0700/practice-guidelines-osteoporosis-treatment.html" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    大型臨床試驗（FREEDOM試驗）顯示，Denosumab可降低脊椎骨折風險68%、髖部骨折風險40%。更重要的是，它<strong style="color: #ffffff;">不經由腎臟代謝</strong>，因此腎功能不全的患者也可以安全使用，這是相較雙磷酸鹽的一大優勢。
+    大型臨床試驗顯示，保骼麗可降低脊椎骨折風險68%、髖部骨折風險40%。更重要的是，它<strong style="color: #ffffff;">不經由腎臟代謝</strong>，因此腎功能不全的患者也可以安全使用，這是相較雙磷酸鹽的一大優勢。
     <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12890978/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
   </p>
  
   <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
     <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
       <strong>⚠️ 重要警示：不能隨意停藥！</strong><br><br>
-      Denosumab與雙磷酸鹽最大的不同在於：<strong>停藥後骨質會快速反彈流失</strong>，甚至在短時間內出現多發性脊椎骨折（rebound fractures）。因此，一旦開始使用Denosumab，停藥前必須與醫師討論，通常需要改用其他藥物（如注射唑來磷酸）來維持保護效果，絕不可自行中斷。
+      保骼麗與雙磷酸鹽最大的不同在於：<strong>停藥後骨質會快速反彈流失</strong>，甚至在短時間內出現反彈性多發性骨折。因此，一旦開始使用保骼麗，停藥前必須與醫師討論，通常需要改用其他藥物（如注射骨力強）來維持保護效果，絕不可自行中斷。
     </p>
   </div>
  
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">3. 特立帕肽（Teriparatide，商品名Forteo）——每日自行注射，促進骨生成</h3>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">3. 骨穩（Teriparatide，商品名Forteo）——每日自行注射，促進骨生成</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    前面介紹的藥物都是「抑制骨頭被分解」，而特立帕肽完全不同——它是一種<strong style="color: #2dd4bf;">副甲狀腺素類似物</strong>，每天注射一次後，能直接<strong style="color: #ffffff;">刺激造骨細胞製造新骨頭</strong>，屬於促骨生成藥物。
+    前面介紹的藥物都是「抑制骨頭被分解」，而骨穩完全不同——它是一種<strong style="color: #2dd4bf;">副甲狀腺素類似物</strong>，每天注射一次後，能直接<strong style="color: #ffffff;">刺激造骨細胞製造新骨頭</strong>，屬於促骨生成藥物。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    臨床研究顯示，特立帕肽對<strong style="color: #ffffff;">已發生多次骨折的嚴重骨質疏鬆患者</strong>效果特別顯著，可降低脊椎骨折風險達65%。
+    臨床研究顯示，骨穩對<strong style="color: #ffffff;">已發生多次骨折的嚴重骨質疏鬆患者</strong>效果特別顯著，可降低脊椎骨折風險達65%。
     <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10286508/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
     需要每天在大腿或腹部自行皮下注射，治療期限通常為<strong style="color: #ffffff;">24個月</strong>（超過此時限安全性資料有限）。
   </p>
@@ -182,12 +183,12 @@ export const articlesData: NewsPost[] = [
     <li style="margin-bottom: 0.5rem;">高血鈣症患者</li>
   </ul>
  
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">4. Romosozumab（商品名Evenity）——每月注射，雙重作用的新型藥物</h3>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">4. 益穩挺（Romosozumab，商品名Evenity）——每月注射，雙重作用的新型藥物</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    Romosozumab是近年最新的骨質疏鬆藥物，機制相當獨特——它能<strong style="color: #2dd4bf;">同時促進骨生成並抑制骨吸收</strong>，被稱為「雙重作用」藥物。它的作用原理是抑制一種叫做「硬化素（sclerostin）」的蛋白質，硬化素正常情況下會抑制造骨細胞的活性，阻斷它後，造骨細胞就能大量製造新骨。
+    益穩挺是近年最新的骨質疏鬆藥物，機制相當獨特——它能<strong style="color: #2dd4bf;">同時促進骨生成並抑制骨吸收</strong>，被稱為「雙重作用」藥物。它的作用原理是抑制一種叫做「硬化素」的蛋白質，硬化素正常情況下會抑制造骨細胞的活性，阻斷它後，造骨細胞就能大量製造新骨。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    大型ARCH試驗與FRAME試驗顯示，Romosozumab在12個月的治療期間，骨密度的增加幅度明顯優於其他藥物，脊椎骨折風險降低達48%–73%。
+    大型試驗顯示，益穩挺在12個月的治療期間，骨密度的增加幅度明顯優於其他藥物，脊椎骨折風險降低達48%–73%。
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/31626995/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
     每月在腹部皮下注射兩次（通常由醫療人員執行），治療期限<strong style="color: #ffffff;">以12個月為主</strong>，之後通常需接續其他抗骨吸收藥物來維持效果。
   </p>
@@ -195,7 +196,7 @@ export const articlesData: NewsPost[] = [
   <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
     <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
       <strong>⚠️ 心血管風險注意事項：</strong><br><br>
-      ARCH試驗中，使用Romosozumab的族群相較阿侖磷酸鈉，有略高的心肌梗塞與腦中風發生率（差異雖小，但有統計意義）。因此，有<strong>心臟病發作或中風病史</strong>的患者不建議使用Romosozumab。使用前必須與醫師充分評估心血管風險。
+      使用益穩挺的族群相較雙磷酸鹽類，有略高的心肌梗塞與腦中風發生率（差異雖小，但有統計意義）。因此，有<strong>心臟病發作或中風病史</strong>的患者不建議使用益穩挺。使用前必須與醫師充分評估心血管風險。
     </p>
   </div>
 </section>
@@ -277,7 +278,7 @@ export const articlesData: NewsPost[] = [
       </thead>
       <tbody>
         <tr>
-          <td>阿侖磷酸鈉<br>（Alendronate）</td>
+          <td>福善美<br>（Alendronate）</td>
           <td>口服</td>
           <td>每週1次</td>
           <td>抑制骨吸收</td>
@@ -288,7 +289,7 @@ export const articlesData: NewsPost[] = [
           <td>一般骨質疏鬆初治族群</td>
         </tr>
         <tr>
-          <td>利塞磷酸鈉<br>（Risedronate）</td>
+          <td>悅維錠<br>（Risedronate）</td>
           <td>口服</td>
           <td>每週或每月1次</td>
           <td>抑制骨吸收</td>
@@ -299,7 +300,7 @@ export const articlesData: NewsPost[] = [
           <td>對阿侖磷酸鈉腸胃耐受差者</td>
         </tr>
         <tr>
-          <td>雷洛昔芬<br>（Raloxifene）</td>
+          <td>鈣穩<br>（Raloxifene）</td>
           <td>口服</td>
           <td>每日1次</td>
           <td>模擬雌激素作用</td>
@@ -310,7 +311,7 @@ export const articlesData: NewsPost[] = [
           <td>停經後女性、有乳癌風險者</td>
         </tr>
         <tr>
-          <td>唑來磷酸<br>（Zoledronate）</td>
+          <td>骨力強<br>（Zoledronate）</td>
           <td>靜脈注射</td>
           <td>每年1次</td>
           <td>抑制骨吸收</td>
@@ -321,7 +322,7 @@ export const articlesData: NewsPost[] = [
           <td>無法口服用藥、髖部骨折術後</td>
         </tr>
         <tr>
-          <td>Denosumab<br>（Prolia）</td>
+          <td>保骼麗<br>（Prolia）</td>
           <td>皮下注射</td>
           <td>每半年1次</td>
           <td>抑制RANKL訊號</td>
@@ -332,7 +333,7 @@ export const articlesData: NewsPost[] = [
           <td>腎功能不全、高骨折風險者</td>
         </tr>
         <tr>
-          <td>特立帕肽<br>（Teriparatide）</td>
+          <td>骨穩<br>（Teriparatide）</td>
           <td>皮下注射</td>
           <td>每日1次</td>
           <td>促進骨生成</td>
@@ -343,7 +344,7 @@ export const articlesData: NewsPost[] = [
           <td>極高骨折風險、類固醇性骨鬆</td>
         </tr>
         <tr>
-          <td>Romosozumab<br>（Evenity）</td>
+          <td>益穩挺<br>（Evenity）</td>
           <td>皮下注射</td>
           <td>每月2次</td>
           <td>促骨生成＋抑制骨吸收</td>
@@ -368,38 +369,38 @@ export const articlesData: NewsPost[] = [
  
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">一般停經後骨質疏鬆女性（無特殊合併症）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    依據美國內科醫師協會（ACP）2024年最新臨床指引，<strong style="color: #ffffff;">口服雙磷酸鹽（阿侖磷酸鈉或利塞磷酸鈉）是首選治療</strong>，因為它們療效充分、安全性高、費用相對低廉。
+    依據美國內科醫師協會（ACP）2024年最新臨床指引，<strong style="color: #ffffff;">口服雙磷酸鹽（福善美或悅維錠）是首選治療</strong>，因為它們療效充分、安全性高、費用相對低廉。
     <sup><a href="https://www.acpjournals.org/doi/10.7326/M22-1034" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
-    若偏好減少服藥次數，每年一次的靜脈注射唑來磷酸也是優先選項。
+    若偏好減少服藥次數，每年一次的靜脈注射骨力強也是優先選項。
   </p>
  
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 1.5rem;">腎功能不全患者（腎絲球過濾率 &lt;35）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    雙磷酸鹽類與唑來磷酸均不適合腎功能嚴重不全者。<strong style="color: #ffffff;">Denosumab是最安全的首選</strong>——它不依賴腎臟代謝，透過免疫系統清除，即使腎功能很差的患者也能使用。但需特別注意腎功能不全者更容易發生低血鈣，需補充足夠的鈣與維生素D。
+    雙磷酸鹽類與骨力強均不適合腎功能嚴重不全者。<strong style="color: #ffffff;">保骼麗是最安全的首選</strong>——它不依賴腎臟代謝，透過免疫系統清除，即使腎功能很差的患者也能使用。但需特別注意腎功能不全者更容易發生低血鈣，需補充足夠的鈣與維生素D。
     <sup><a href="https://www.aafp.org/pubs/afp/issues/2023/0700/practice-guidelines-osteoporosis-treatment.html" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
   </p>
  
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 1.5rem;">骨折風險極高、已多次骨折者</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    對於骨密度T值 ≤ -3.0，或已發生多處脆性骨折的患者，「先用促骨生成藥（特立帕肽或Romosozumab）、再接續抗骨吸收藥」的<strong style="color: #ffffff;">序列治療策略</strong>，被多項研究證實效果優於直接使用抗骨吸收藥。
+    對於骨密度T值 ≤ -3.0，或已發生多處脆性骨折的患者，「先用促骨生成藥（骨穩或益穩挺）、再接續抗骨吸收藥」的<strong style="color: #ffffff;">序列治療策略</strong>，被多項研究證實效果優於直接使用抗骨吸收藥。
     <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10286508/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
     先建好骨頭，再用藥物維持，是目前高骨折風險族群的治療趨勢。
   </p>
  
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 1.5rem;">有乳癌風險的停經後女性</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    雷洛昔芬（Raloxifene）在降低骨折風險的同時，也被證實可降低雌激素受體陽性乳癌的發生率，適合此族群的骨質疏鬆治療，但需注意靜脈血栓史者禁用。
+    鈣穩在降低骨折風險的同時，也被證實可降低雌激素受體陽性乳癌的發生率，適合此族群的骨質疏鬆治療，但需注意靜脈血栓史者禁用。
   </p>
  
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 1.5rem;">男性骨質疏鬆</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    男性骨質疏鬆往往被忽略，但同樣嚴重。<strong style="color: #ffffff;">阿侖磷酸鈉、利塞磷酸鈉、唑來磷酸以及Denosumab</strong>均已有大型臨床試驗在男性族群中證實療效，是目前男性骨鬆的主要治療選項。
+    男性骨質疏鬆往往被忽略，但同樣嚴重。<strong style="color: #ffffff;">雙磷酸鹽類以及保骼麗</strong>均已有大型臨床試驗在男性族群中證實療效，是目前男性骨鬆的主要治療選項。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11103071/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
   </p>
  
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 1.5rem;">服用類固醇超過3個月者</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    類固醇（如prednisone）是導致繼發性骨質疏鬆最常見的藥物。對於每日服用≥5mg且療程超過3個月的患者，指引建議主動評估骨折風險並啟動預防治療。阿侖磷酸鈉、利塞磷酸鈉及特立帕肽均有明確的類固醇性骨鬆適應症。
+    類固醇是導致繼發性骨質疏鬆最常見的藥物。對於每日服用≥5mg且療程超過3個月的患者，指引建議主動評估骨折風險並啟動預防治療。雙磷酸鹽類及骨穩均有明確的類固醇性骨鬆適應症。
     <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10286508/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
   </p>
 </section>
@@ -441,7 +442,7 @@ export const articlesData: NewsPost[] = [
         <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
         <div>
           <strong>「打了骨鬆針就不用再追蹤了」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>大錯特錯！</strong> 特別是Denosumab，停藥後骨質會快速反彈，甚至誘發多發性脊椎骨折。注射治療需要定期回診監測骨密度、血液鈣磷值，並在停藥前與醫師充分討論後續銜接治療計畫。治療骨鬆是長期的事，沒有「打一針永遠沒事」這回事。<sup><a href="https://emedicine.medscape.com/article/330598-guidelines" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[5]</a></sup></span>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>大錯特錯！</strong> 特別是保骼麗，停藥後骨質會快速反彈，甚至誘發多發性脊椎骨折。注射治療需要定期回診監測骨密度、血液鈣磷值，並在停藥前與醫師充分討論後續銜接治療計畫。治療骨鬆是長期的事，沒有「打一針永遠沒事」這回事。<sup><a href="https://emedicine.medscape.com/article/330598-guidelines" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[5]</a></sup></span>
         </div>
       </li>
  
@@ -493,21 +494,21 @@ export const articlesData: NewsPost[] = [
         Q1：口服藥和注射藥，效果有差嗎？
       </h3>
       <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-        整體而言，在依從性良好的前提下，口服雙磷酸鹽與注射唑來磷酸的骨折預防效果相當。注射劑型最大的優勢是「不用擔心吃藥方式錯誤」——臨床統計發現，約有40%–60%的患者在一年內停止口服骨鬆藥物，而依從性差是治療失敗的最主要原因。若你容易忘記吃藥或對口服方式感到麻煩，注射劑型可能更適合你。<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12890978/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+        整體而言，在依從性良好的前提下，口服雙磷酸鹽與注射骨力強的骨折預防效果相當。注射劑型最大的優勢是「不用擔心吃藥方式錯誤」——臨床統計發現，約有40%–60%的患者在一年內停止口服骨鬆藥物，而依從性差是治療失敗的最主要原因。若你容易忘記吃藥或對口服方式感到麻煩，注射劑型可能更適合你。<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12890978/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
       </p>
  
       <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
         Q2：骨質疏鬆藥物需要吃多久？
       </h3>
       <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-        這取決於使用的藥物種類。口服雙磷酸鹽通常建議使用5年後評估是否「藥物假期」；靜脈注射唑來磷酸則是3年後評估。Denosumab原則上需持續使用，停藥需有銜接計畫。特立帕肽與Romosozumab各自有2年及1年的治療期限，結束後需轉換其他藥物。沒有一種骨鬆藥物適合無限期使用，定期（每1–2年）與醫師重新評估至關重要。<sup><a href="https://emedicine.medscape.com/article/330598-guidelines" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+        這取決於使用的藥物種類。口服雙磷酸鹽通常建議使用5年後評估是否「藥物假期」；靜脈注射骨力強則是3年後評估。保骼麗原則上需持續使用，停藥需有銜接計畫。骨穩與益穩挺各自有2年及1年的治療期限，結束後需轉換其他藥物。沒有一種骨鬆藥物適合無限期使用，定期（每1–2年）與醫師重新評估至關重要。<sup><a href="https://emedicine.medscape.com/article/330598-guidelines" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
       </p>
  
       <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
         Q3：骨密度恢復正常後，可以停藥嗎？
       </h3>
       <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-        骨密度回到正常範圍是個好消息，但不代表可以立即停藥。這需要由醫師綜合評估骨折風險分數（FRAX）、年齡、有無持續危險因子等因素後決定。貿然停藥，特別是Denosumab，可能引發反彈性骨質流失，得不償失。
+        骨密度回到正常範圍是個好消息，但不代表可以立即停藥。這需要由醫師綜合評估骨折風險分數（FRAX）、年齡、有無持續危險因子等因素後決定。貿然停藥，特別是保骼麗，可能引發反彈性骨質流失，得不償失。
       </p>
  
       <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
@@ -521,7 +522,7 @@ export const articlesData: NewsPost[] = [
         Q5：骨質疏鬆藥物會與其他藥物交互作用嗎？
       </h3>
       <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-        口服雙磷酸鹽與鈣片、制酸劑（如鋁鎂片）需間隔至少2小時服用，否則會影響吸收。Denosumab因為影響免疫調節，與免疫抑制劑合用時需特別注意感染風險。服用多種藥物的高齡患者，在開始任何骨鬆治療前，請務必讓醫師或藥師做藥物整合評估。
+        口服雙磷酸鹽與鈣片、制酸劑（如鋁鎂片）需間隔至少2小時服用，否則會影響吸收。保骼麗因為影響免疫調節，與免疫抑制劑合用時需特別注意感染風險。服用多種藥物的高齡患者，在開始任何骨鬆治療前，請務必讓醫師或藥師做藥物整合評估。
       </p>
  
     </div>
@@ -535,7 +536,7 @@ export const articlesData: NewsPost[] = [
   
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
     骨質疏鬆的藥物選擇，從來都不只是「哪個最強」這麼簡單。口服藥方便但需要嚴格服藥方式；注射藥效果持久但需定期回診；促骨生成藥物可快速建立骨本但療程有限。<strong style="color: #1e293b;">最適合你的藥物，是在充分了解你的腎功能、骨折風險、生活型態與治療意願後，由醫師共同決定的。</strong>
-  </p>
+  </p> <br>
   
   <p style="color: #475569; font-size: 1.05rem;">
     如果你或家人有骨質疏鬆的問題，不要等到骨折了才行動。<strong style="color: #1e293b;">預防骨折，從現在開始都不嫌晚——</strong>定期骨密度檢查、補充鈣質與維生素D、規律運動，再搭配適當的藥物治療，可以讓你的骨骼「老而彌堅」。
