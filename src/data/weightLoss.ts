@@ -44,7 +44,7 @@ const fullWeightLossData: WeightLossProgram[] = [
   {
     slug: 'mounjaro',
     title: '新竹猛健樂 (Mounjaro) 減重門診：專業醫師規劃瘦瘦筆療程',
-    lastModified: '2026-04-07',
+    lastModified: '2026-05-24',
     subtitle: '新一代雙重腸泌素受體促效劑',
     description: '新一代雙重腸泌素(GIP/GLP-1)受體促效劑，提供更卓越的體重控制效果。',
     image: '/images/weight-loss/a.webp',
@@ -60,7 +60,7 @@ const fullWeightLossData: WeightLossProgram[] = [
         <img src="/images/news/article/mounjaro/1.webp" alt="猛健樂全攻略懶人包1" class="responsive-img-enlarge">
         <img src="/images/news/article/mounjaro/2.webp" alt="猛健樂全攻略懶人包2" class="responsive-img-enlarge">
         <img src="/images/news/article/mounjaro/3.webp" alt="猛健樂全攻略懶人包3" class="responsive-img-enlarge">
-        <img src="/images/news/article/mounjaro/4.webp" alt="猛健樂全攻略懶人包4" class="responsive-img-enlarge">
+        <img src="/images/news/article/mounjaro/7.webp" alt="猛健樂全攻略懶人包4" class="responsive-img-enlarge">
         <img src="/images/news/article/mounjaro/5.webp" alt="猛健樂全攻略懶人包5" class="responsive-img-enlarge">
         <img src="/images/news/article/mounjaro/6.webp" alt="猛健樂全攻略懶人包6" class="responsive-img-enlarge">
 
@@ -68,38 +68,32 @@ const fullWeightLossData: WeightLossProgram[] = [
 <div style="background-color: #f0fdf4; border-left: 5px solid #16a34a; border-radius: 0.5rem; padding: 2rem; margin: 0 0 2.5rem 0;">
   <h2 style="color: #15803d; margin-top: 0; font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">📋 文章核心摘要</h2>
   <p style="margin: 0; line-height: 1.8; color: #1a2e1a; font-size: 1.15rem;">
-    猛健樂（Tirzepatide，商品名 Mounjaro）是全球首款同時活化 GIP 與 GLP-1 雙重腸泌素受體的減重藥物，其臨床效果已由多項大型第三期隨機對照試驗（RCT）所證實。2022 年發表於《新英格蘭醫學期刊》的 SURMOUNT-1 試驗（n=2,539）顯示，使用 72 週後體重最高可下降 <strong>20.9%</strong><sup><a href="https://pubmed.ncbi.nlm.nih.gov/35658024/" target="_blank" rel="noopener noreferrer">[1]</a></sup>；2024 年 SURMOUNT-4 延伸試驗更記錄持續用藥者 88 週總減重幅度達 <strong>25.3%</strong><sup><a href="https://pubmed.ncbi.nlm.nih.gov/38078870/" target="_blank" rel="noopener noreferrer">[2]</a></sup>。<br><br>
-    在血糖控制方面，SURPASS 系列試驗顯示 HbA1c 最大可降低 <strong>2.3~2.49%</strong><sup><a href="https://pubmed.ncbi.nlm.nih.gov/34170647/" target="_blank" rel="noopener noreferrer">[3]</a></sup><sup><a href="https://www.nature.com/articles/s41591-023-02344-1" target="_blank" rel="noopener noreferrer">[4]</a></sup>；SYNERGY-NASH 第二期試驗則證實對代謝相關脂肪性肝炎的緩解率高達 <strong>62%（15 mg 組）</strong><sup><a href="https://pubmed.ncbi.nlm.nih.gov/38856224/" target="_blank" rel="noopener noreferrer">[5]</a></sup>。本藥已獲美國 FDA、歐洲 EMA 及台灣 TFDA 核准，並有心血管安全性試驗 SURPASS-CVOT 佐證其不劣於 dulaglutide 的心血管安全性<sup><a href="https://www.tctmd.com/news/surpass-cvot-published-large-trial-confirms-cvd-efficacy-tirzepatide" target="_blank" rel="noopener noreferrer">[6]</a></sup>。本文為您完整解析療效數據、適用族群與正確使用方式。
+    猛健樂（Tirzepatide，商品名 Mounjaro）是全球首款同時活化 GIP 與 GLP-1 雙重腸泌素受體的減重藥物，其臨床效果已由多項大型第三期隨機對照試驗所證實。2022 年發表於《新英格蘭醫學期刊》的 SURMOUNT-1 試驗顯示，使用 72 週後體重最高可下降 <strong>20.9%</strong><sup><a href="https://pubmed.ncbi.nlm.nih.gov/35658024/" target="_blank" rel="noopener noreferrer">[1]</a></sup>；2024 年 SURMOUNT-4 延伸試驗更記錄持續用藥者 88 週總減重幅度達 <strong>25.3%</strong><sup><a href="https://pubmed.ncbi.nlm.nih.gov/38078870/" target="_blank" rel="noopener noreferrer">[2]</a></sup>。<br><br>
+    在血糖控制方面，SURPASS 系列試驗顯示 HbA1c 最大可降低 <strong>2.3~2.49%</strong><sup><a href="https://pubmed.ncbi.nlm.nih.gov/34170647/" target="_blank" rel="noopener noreferrer">[3]</a></sup><sup><a href="https://www.nature.com/articles/s41591-023-02344-1" target="_blank" rel="noopener noreferrer">[4]</a></sup>；SYNERGY-NASH則證實對代謝相關脂肪性肝炎的緩解率高達 <strong>62%（15 mg 組）</strong><sup><a href="https://pubmed.ncbi.nlm.nih.gov/38856224/" target="_blank" rel="noopener noreferrer">[5]</a></sup>。本藥已獲美國 FDA、歐洲 EMA 及台灣 TFDA 核准，並有心血管安全性試驗佐證其心血管安全性<sup><a href="https://www.tctmd.com/news/surpass-cvot-published-large-trial-confirms-cvd-efficacy-tirzepatide" target="_blank" rel="noopener noreferrer">[6]</a></sup>。本文為您完整解析療效數據、適用族群與正確使用方式。
   </p>
 </div>
 
 <p><strong>位於新竹的宸新復健科</strong>，專為<strong>新竹科學園區</strong>與在地民眾提供完整的<strong>猛健樂 (Mounjaro)</strong> 減重療程。這是目前最新的雙重腸泌素受體促效劑，能同時活化 GIP 與 GLP-1 兩種受體。</p>
 <br>
-<p>隨著醫學科技的進步，減重已不再單純依靠意志力。繼第一代 GLP-1 藥物（俗稱瘦瘦針）之後，全球醫學界迎來了更具突破性的「雙重腸泌素」——Tirzepatide（商品名：Mounjaro 猛健樂）。</p><br><p>它不僅延續了抑制食慾的效果，更加入了 GIP 機制來提升代謝與燃脂效率。本院特別整理了本月專屬優惠與完整的衛教資訊，幫助您安全、有效地找回健康的體態。</p>
+<p>隨著醫學科技的進步，減重已不再單純依靠意志力。繼第一代 GLP-1 藥物（俗稱瘦瘦針）之後，全球醫學界迎來了更具突破性的「雙重腸泌素」。</p><br><p>它不僅延續了抑制食慾的效果，更加入了 GIP 機制來提升代謝與燃脂效率。本院特別整理了本月專屬優惠與完整的衛教資訊，幫助您安全、有效地找回健康的體態。</p>
 <br>
 <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
     <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
         📢 猛健樂 (Mounjaro) 本月前 100 名限定優惠
     </h2>
     
-    <p style="font-size: 1.1rem; color: #78350f;">宸新復健科<strong>猛健樂</strong>價格。猛健樂依據劑量濃度不同，分為四種規格，醫師將依據您的減重進程調整劑量：</p>
+    <p style="font-size: 1.1rem; color: #78350f;">宸新復健科<strong>猛健樂</strong>價格。猛健樂依據劑量濃度不同，分為兩種規格，醫師將依據您的減重進程調整劑量：</p>
     <br>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.75rem; margin-bottom: 1.5rem;">
-    <div style="background: white; padding: 0.75rem; border-radius: 0.5rem; border: 1px solid #e5e7eb; text-align: center;">
-        <strong style="font-size: 1.1rem; color: #0891b2;">2.5 mg</strong>
-        <p style="margin: 0.25rem 0 0; color: #dc2626; font-weight: bold; font-size: 1.25rem;">$10,500</p>
-    </div>
+
     <div style="background: white; padding: 0.75rem; border-radius: 0.5rem; border: 1px solid #e5e7eb; text-align: center;">
         <strong style="font-size: 1.1rem; color: #0891b2;">5 mg</strong>
-        <p style="margin: 0.25rem 0 0; color: #dc2626; font-weight: bold; font-size: 1.25rem;">$11,500</p>
+        <p style="margin: 0.25rem 0 0; color: #dc2626; font-weight: bold; font-size: 1.25rem;">$12,000</p>
     </div>
-    <div style="background: white; padding: 0.75rem; border-radius: 0.5rem; border: 1px solid #e5e7eb; text-align: center;">
-        <strong style="font-size: 1.1rem; color: #0891b2;">7.5 mg</strong>
-        <p style="margin: 0.25rem 0 0; color: #dc2626; font-weight: bold; font-size: 1.25rem;">$13,000</p>
-    </div>
+
     <div style="background: white; padding: 0.75rem; border-radius: 0.5rem; border: 1px solid #e5e7eb; text-align: center;">
         <strong style="font-size: 1.1rem; color: #0891b2;">10 mg</strong>
-        <p style="margin: 0.25rem 0 0; color: #dc2626; font-weight: bold; font-size: 1.25rem;">$15,000</p>
+        <p style="margin: 0.25rem 0 0; color: #dc2626; font-weight: bold; font-size: 1.25rem;">$16,000</p>
     </div>
 </div>
 
@@ -124,7 +118,7 @@ const fullWeightLossData: WeightLossProgram[] = [
 </ul>
 </div>
 
-<p><img src="/images/weight-loss/mounjaro/a.webp" alt="猛健樂本月優惠與注意事項"></p>
+<p><img src="/images/weight-loss/mounjaro/e.webp" alt="猛健樂本月優惠與注意事項"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
@@ -139,21 +133,21 @@ const fullWeightLossData: WeightLossProgram[] = [
     <li><strong>增加大腦飽足感：</strong> 直接作用於中樞神經，降低食慾。</li>
     <li><strong>減少脂肪堆積：</strong> GIP 能直接作用於脂肪細胞，改善能量代謝。</li>
 </ul>
-<p>在亞太族群（含臺灣人種族相近的華人族群）的 SURPASS-AP-Combo 試驗中，tirzepatide 同樣展現出強效的雙重機制優勢，各劑量組的 HbA1c 降幅均顯著優於胰島素 glargine<sup><a href="https://www.nature.com/articles/s41591-023-02344-1" target="_blank" rel="noopener noreferrer">[4]</a></sup>。</p>
+<p>在亞太族群（含臺灣人種族相近的華人族群）的 SURPASS-AP-Combo 試驗中，猛健樂同樣展現出強效的雙重機制優勢，各劑量組的 HbA1c 降幅均顯著優於胰島素 <sup><a href="https://www.nature.com/articles/s41591-023-02344-1" target="_blank" rel="noopener noreferrer">[4]</a></sup>。</p>
 
 <h3>2. 改善糖化血色素 (HbA1c)</h3>
-<p>對於血糖控制不佳的族群，猛健樂效果顯著。2021 年發表於《新英格蘭醫學期刊》的 SURPASS-2 試驗顯示，猛健樂使 HbA1c 分別降低 <strong>2.01%（5 mg）、2.24%（10 mg）及 2.30%（15 mg）</strong>，優於 semaglutide 的 1.86%<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34170647/" target="_blank" rel="noopener noreferrer">[3]</a></sup>。亞太族群的 SURPASS-AP-Combo 試驗更記錄到 15 mg 組 HbA1c 降幅達 <strong>2.49%</strong><sup><a href="https://www.nature.com/articles/s41591-023-02344-1" target="_blank" rel="noopener noreferrer">[4]</a></sup>。這不僅能穩定血糖，更能輔助治療第二型糖尿病，甚至改善糖尿病前期的血糖異常。</p>
+<p>對於血糖控制不佳的族群，猛健樂效果顯著。2021 年發表於《新英格蘭醫學期刊》的 SURPASS-2 試驗顯示，猛健樂使 HbA1c 分別降低 <strong>2.01%（5 mg）、2.24%（10 mg）及 2.30%（15 mg）</strong>，優於 週纖達  的 1.86%<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34170647/" target="_blank" rel="noopener noreferrer">[3]</a></sup>。亞太族群的 SURPASS-AP-Combo 試驗更記錄到 15 mg 組 HbA1c 降幅達 <strong>2.49%</strong><sup><a href="https://www.nature.com/articles/s41591-023-02344-1" target="_blank" rel="noopener noreferrer">[4]</a></sup>。這不僅能穩定血糖，更能輔助治療第二型糖尿病，甚至改善糖尿病前期的血糖異常。</p>
 
 <h3>3. 體重下降幅度驚人 (可達 20.9%~25.3%)</h3>
-<p>這是猛健樂最受矚目的數據。2022 年發表的 SURMOUNT-1 大型第三期 RCT（n=2,539，追蹤 72 週）顯示，使用 <strong>5 mg、10 mg、15 mg</strong> 的受試者平均體重分別下降 <strong>15.0%、19.5%、20.9%</strong>，遠超過安慰劑組的 3.1%<sup><a href="https://pubmed.ncbi.nlm.nih.gov/35658024/" target="_blank" rel="noopener noreferrer">[1]</a></sup>。2024 年 SURMOUNT-4 延伸研究更顯示，持續使用猛健樂至 88 週的受試者，總體重減少幅度達 <strong>25.3%</strong>，而停藥改為安慰劑組僅 9.9%<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38078870/" target="_blank" rel="noopener noreferrer">[2]</a></sup>。這意味著一個 100 公斤的人，有可能在持續療程中減去約 20~25 公斤，其效果已逼近外科縮胃手術，但卻是非侵入性的治療。此外，2024 年 SURMOUNT-1 三年延伸數據更顯示，15 mg 組在 176 週（三年）的平均體重維持下降達 <strong>22.9%</strong>，並同時將糖尿病進展風險降低達 <strong>93%</strong><sup><a href="https://investor.lilly.com/news-releases/news-release-details/treatment-tirzepatide-adults-pre-diabetes-and-obesity-or" target="_blank" rel="noopener noreferrer">[7]</a></sup>。</p>
+<p>這是猛健樂最受矚目的數據。2022 年發表的 SURMOUNT-1 大型研究顯示，使用 <strong>5 mg、10 mg、15 mg</strong> 的受試者平均體重分別下降 <strong>15.0%、19.5%、20.9%</strong>，遠超過安慰劑組的 3.1%<sup><a href="https://pubmed.ncbi.nlm.nih.gov/35658024/" target="_blank" rel="noopener noreferrer">[1]</a></sup>。2024 年 SURMOUNT-4 延伸研究更顯示，持續使用猛健樂至 88 週的受試者，總體重減少幅度達 <strong>25.3%</strong>，而停藥改為安慰劑組僅 9.9%<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38078870/" target="_blank" rel="noopener noreferrer">[2]</a></sup>。這意味著一個 100 公斤的人，有可能在持續療程中減去約 20~25 公斤，其效果已逼近外科縮胃手術，但卻是非侵入性的治療。此外，2024 年 SURMOUNT-1 三年延伸數據更顯示，15 mg 組在 176 週（三年）的平均體重維持下降達 <strong>22.9%</strong>，並同時將糖尿病進展風險降低達 <strong>93%</strong><sup><a href="https://investor.lilly.com/news-releases/news-release-details/treatment-tirzepatide-adults-pre-diabetes-and-obesity-or" target="_blank" rel="noopener noreferrer">[7]</a></sup>。</p>
 
 <h3>4. 有助降低心血管疾病風險</h3>
-<p>減重不只是為了外觀，更是為了健康。SURMOUNT-1 試驗的心血管子分析顯示，猛健樂治療 72 週後，收縮壓下降 <strong>7.4~10.6 mmHg</strong>（安慰劑校正後），三酸甘油脂與腰圍均顯著改善<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11420724/" target="_blank" rel="noopener noreferrer">[8]</a></sup>。2025 年的 SURMOUNT-5 事後分析更顯示，猛健樂預估 10 年心血管疾病風險降低約 <strong>24%</strong>，優於 semaglutide 的 14%<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12824524/" target="_blank" rel="noopener noreferrer">[9]</a></sup>。大型心血管結果試驗 SURPASS-CVOT（4 年追蹤）亦確認 tirzepatide 心血管安全性不劣於 dulaglutide<sup><a href="https://www.tctmd.com/news/surpass-cvot-published-large-trial-confirms-cvd-efficacy-tirzepatide" target="_blank" rel="noopener noreferrer">[6]</a></sup>。猛健樂能全方位改善代謝症候群指標：</p>
+<p>減重不只是為了外觀，更是為了健康。SURMOUNT-1 試驗的心血管子分析顯示，猛健樂治療 72 週後，收縮壓下降 <strong>7.4~10.6 mmHg</strong>（安慰劑校正後），三酸甘油脂與腰圍均顯著改善<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11420724/" target="_blank" rel="noopener noreferrer">[8]</a></sup>。2025 年的 SURMOUNT-5 事後分析更顯示，猛健樂預估 10 年心血管疾病風險降低約 <strong>24%</strong><sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12824524/" target="_blank" rel="noopener noreferrer">[9]</a></sup>。大型心血管結果試驗亦確認其心血管安全性<sup><a href="https://www.tctmd.com/news/surpass-cvot-published-large-trial-confirms-cvd-efficacy-tirzepatide" target="_blank" rel="noopener noreferrer">[6]</a></sup>。猛健樂能全方位改善代謝症候群指標：</p>
 <ul>
     <li>降低血壓（收縮壓平均下降 4~10 mmHg）</li>
     <li>降低總膽固醇與三酸甘油脂</li>
     <li>縮小腰圍（SURMOUNT-1 中腰圍縮小 14.6~19.9 公分）</li>
-    <li><strong>改善脂肪肝：</strong> 2024 年發表於《新英格蘭醫學期刊》的 SYNERGY-NASH 第二期試驗（n=196，追蹤 52 週）顯示，猛健樂 15 mg 組達到脂肪肝緩解且肝纖維化未惡化的比例為 <strong>62%</strong>，遠高於安慰劑組的 10%<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38856224/" target="_blank" rel="noopener noreferrer">[5]</a></sup>。</li>
+    <li><strong>改善脂肪肝：</strong> 2024 年發表於《新英格蘭醫學期刊》的 SYNERGY-NASH 試驗顯示，猛健樂 15 mg 組達到脂肪肝緩解且肝纖維化未惡化的比例為 <strong>62%</strong>，遠高於安慰劑組的 10%<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38856224/" target="_blank" rel="noopener noreferrer">[5]</a></sup>。</li>
 </ul>
 
 <h3>5. 多國權威認證核准</h3>
@@ -196,7 +190,7 @@ const fullWeightLossData: WeightLossProgram[] = [
 <p>雖然猛健樂效果強大，但經由專業醫師評估仍然是必須的。在宸新復健科，我們建議以下四類族群可以考慮諮詢此療程：</p>
 
 <h3>✅ 1. 糖尿病前期與第二型糖尿病患者</h3>
-<p>如果您已經出現血糖偏高、胰島素阻抗的現象，猛健樂能同時幫助控糖與減重，阻斷疾病惡化。SURMOUNT-1 三年延伸數據顯示，tirzepatide 可將糖尿病前期患者進展為第二型糖尿病的風險降低達 <strong>94%</strong>（風險比 0.06）<sup><a href="https://investor.lilly.com/news-releases/news-release-details/treatment-tirzepatide-adults-pre-diabetes-and-obesity-or" target="_blank" rel="noopener noreferrer">[7]</a></sup>。</p>
+<p>如果您已經出現血糖偏高、胰島素阻抗的現象，猛健樂能同時幫助控糖與減重，阻斷疾病惡化。SURMOUNT-1 三年延伸數據顯示，猛健樂可將糖尿病前期患者進展為第二型糖尿病的風險降低達 <strong>94%</strong>（風險比 0.06）<sup><a href="https://investor.lilly.com/news-releases/news-release-details/treatment-tirzepatide-adults-pre-diabetes-and-obesity-or" target="_blank" rel="noopener noreferrer">[7]</a></sup>。</p>
 
 <h3>✅ 2. 「三高」族群</h3>
 <p>同時深受<strong>高血壓</strong>、<strong>高血糖</strong>、<strong>高血脂</strong>困擾的朋友。透過減重與藥物的代謝調節作用，SURMOUNT-1 心血管子分析顯示腰圍縮小 <strong>14.6~19.9 公分</strong>、收縮壓下降 <strong>7.4~10.6 mmHg</strong>，能顯著改善三高指數<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11420724/" target="_blank" rel="noopener noreferrer">[8]</a></sup>，減少長期服用慢性病藥物的負擔。</p>
@@ -304,7 +298,15 @@ const fullWeightLossData: WeightLossProgram[] = [
 <div style="background-color: #f0f9ff; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
     <h3 style="color: #0369a1; margin-top: 0;">👨‍⚕️ 想了解您是否適合猛健樂療程？</h3>
     <p style="color: #334155; margin-bottom: 1.5rem;">歡迎來到新竹宸新復健科，由醫師親自為您評估。我們提供一對一的諮詢，結合 InBody 檢測，甲狀腺超音波檢查或抽血為您量身打造最安全、有效的減重計畫。</p>
-    <p style="font-weight: bold; color: #0891b2;">如有任何疑問，都可以在門診時直接跟醫師聊聊喔！</p>
+    <p style="font-weight: bold; color: #0891b2;">如有任何疑問，都可以在門診時直接跟醫師聊聊喔！</p><br>
+      <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診評估
+    </a>
+  </div>
 </div>
 
 `,
