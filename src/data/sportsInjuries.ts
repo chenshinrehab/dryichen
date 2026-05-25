@@ -24,6 +24,18 @@ export const sportsInjuriesData = [
         description: '受傷後「要休息多久？」是復健科門診最常見的問題。身體各種組織的修復速度，取決於其血液循環能力與細胞代謝率。肌肉擁有豐富血流，通常數週內可修復；而肌腱與韌帶血流較差，常需要數月時間重建；關節軟骨更因缺乏血管，自我修復能力極低。本文將從醫學角度，帶您一次看懂五大類組織的修復時程，並破除「完全靜養」的傳統迷思。',
         image: '/images/news/article/tissue-healing-analysis.webp',
       },
+                                    {
+        slug: 'pediatric-lower-extremity-development',
+        title: '掌握兒童腿型發育：從O型腿、X型腿到扁平足，何時需要就醫？',
+        description: '從兒童骨科醫學角度深入剖析孩子從出生到學齡期的腿型與足弓演變軌跡。絕大多數的O型腿、X型腿與腳底貼地都屬於正常的生理性發育現象，不需穿矯正鞋。實證研究告訴你各年齡段的正常時程，並教你精準分辨真正需要醫療介入的發展警訊。',
+        image: '/images/news/article/pediatric-legs-flat-feet.webp',
+      },
+                                          {
+        slug: 'hallux-valgus-guide',
+        title: '拇指外翻完全解析：成因、症狀、治療一次搞懂',
+        description: '深度解析拇指外翻（拇趾外翻）的成因、分級與症狀。實證研究揭露矯正器能否真正讓角度回正、何時才需要考慮手術，以及日常生活如何減緩疼痛與惡化。',
+        image: '/images/news/article/hallux-valgus-guide.webp',
+      },
             {
         slug: 'orthopedics-vs-rehabilitation',
         title: '骨科 vs 復健科：完整比較指南｜哪個才是你的最佳選擇？',

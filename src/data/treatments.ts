@@ -65,8 +65,8 @@ const fullTreatmentsData: Treatment[] = [
 <div style="background-color: #f8fafc; border-left: 5px solid #0284c7; padding: 1.75rem 2rem; margin-bottom: 2rem; border-radius: 0.75rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
   <h3 style="margin-top: 0; margin-bottom: 1rem; color: #0369a1; font-size: 1.4rem; font-weight: bold; line-height: 1.3; display: flex; align-items: center;">📋 本文重點摘要</h3>
   <p style="margin-bottom: 0; line-height: 1.8; color: #334155; font-size: 1.15rem;">
-    PRP（高濃度血小板血漿）增生療法是目前有最多高品質隨機對照試驗支持的骨科非手術再生治療之一。根據 2025 年整合 40 項研究的系統性回顧<sup><a href="https://doi.org/10.3390/jcm14113983" style="color: #0369a1; text-decoration: none;">[1]</a></sup>，PRP 注射在輕至中度退化性膝關節炎（I–III 級）上，疼痛改善及功能恢復均優於玻尿酸與類固醇。<br><br>2024 年 Mayo Clinic 的統合分析納入 1,993 名患者，PRP 相較玻尿酸，治療成功率的勝算比高達 2.1  <sup><a href="https://pubmed.ncbi.nlm.nih.gov/38420745/" style="color: #0369a1; text-decoration: none;">[2]</a></sup>。對於旋轉肌腱病變，2024 年雙盲 RCT 顯示 PRP 在 12 個月追蹤期的疼痛與功能恢復均顯著優於類固醇<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39098382/" style="color: #0369a1; text-decoration: none;">[3]</a></sup>。<br><br>
-    高濃度葡萄糖水（增生療法）則於 837 名患者的系統性回顧中被認定安全且具 B 級實證支持<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34046305/" style="color: #0369a1; text-decoration: none;">[4]</a></sup>。療效的核心關鍵在於：<strong>精準診斷 + 超音波導引確保注射到位 + 標準化離心濃度（建議 4–5 倍濃度）</strong>。任一環節缺失均可能導致治療失敗。
+    PRP（高濃度血小板血漿）增生療法是目前有最多高品質試驗支持的骨科非手術再生治療之一。根據 2025 年整合 40 項研究的系統性回顧<sup><a href="https://doi.org/10.3390/jcm14113983" style="color: #0369a1; text-decoration: none;">[1]</a></sup>，PRP 注射在輕至中度退化性膝關節炎（I–III 級）上，疼痛改善及功能恢復均優於玻尿酸與類固醇。<br><br>2024 年 ，納入 1,993 名患者的研究顯示，PRP 相較玻尿酸，治療成功率較高  <sup><a href="https://pubmed.ncbi.nlm.nih.gov/38420745/" style="color: #0369a1; text-decoration: none;">[2]</a></sup>。對於旋轉肌腱病變，顯示 PRP 在 12 個月追蹤期的疼痛與功能恢復均顯著優於類固醇<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39098382/" style="color: #0369a1; text-decoration: none;">[3]</a></sup>。<br><br>
+    高濃度葡萄糖水（增生療法）則於研究中被認定安全且具中等強度的科學證據<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34046305/" style="color: #0369a1; text-decoration: none;">[4]</a></sup>。療效的核心關鍵在於：<strong>精準診斷 + 超音波導引確保注射到位 + 標準化離心濃度（建議 4–5 倍濃度）</strong>。任一環節缺失均可能導致治療失敗。
   </p>
 </div>
     <p>疼痛總是如影隨形，讓你無法享受生活？傳統的消炎藥或類固醇雖然能暫時止痛，卻無法修復受損的組織。<strong>位於新竹的宸新復健科</strong>，專為<strong>新竹科學園區</strong>與在地民眾提供<strong>高濃度血小板血漿 (PRP) 增生療法</strong>及<strong>高濃度葡萄糖水</strong>，這是一種啟動人體自我修復機制的先進治療。</p><br>
@@ -99,9 +99,9 @@ const fullTreatmentsData: Treatment[] = [
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
     <h2>🎯 誰適合打 PRP？適應症列表（附文獻實證）</h2>
     <ul>
-      <li><strong>退化性關節炎（膝蓋、髖部、肩膀）：</strong> 最有實證支持的適應症。2024 年 Mayo Clinic 統合分析（1,993 名患者）顯示，PRP 較玻尿酸治療成功率高出 2.19 倍<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38420745/" style="color: #0369a1;">[2]</a></sup>；18 項 RCT 的統合分析（1,995 名患者）亦顯示 PRP 治療效果在 3 個月及 6 個月均超越最小臨床重要差異<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39751394/" style="color: #0369a1;">[6]</a></sup>。</li>
-      <li><strong>旋轉肌腱病變與旋轉肌袖部分撕裂：</strong> 2024 年雙盲 RCT（100 名患者）顯示，PRP 單次注射在 12 個月後疼痛及功能改善均顯著優於類固醇，且治療失敗率更低<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39098382/" style="color: #0369a1;">[3]</a></sup>；2021 年的雙盲 RCT 亦顯示 PRP 在 3 個月時的 VAS 及 ASES 分數優於類固醇<sup><a href="https://pubmed.ncbi.nlm.nih.gov/33127554/" style="color: #0369a1;">[9]</a></sup>。</li>
-      <li><strong>網球肘（外側肱骨上髁炎）：</strong> 2024 年的系統性回顧與統合分析（730 名患者，11 項 RCT）顯示，PRP 在 6 個月以上的長期疼痛改善及功能顯著優於類固醇<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38357713/" style="color: #0369a1;">[10]</a></sup>；另有系統性回顧（2,420 名患者，33 項研究）確認各型 PRP 均有效<sup><a href="https://pubmed.ncbi.nlm.nih.gov/35337955/" style="color: #0369a1;">[11]</a></sup>。</li>
+      <li><strong>退化性關節炎（膝蓋、髖部、肩膀）：</strong> 最有實證支持的適應症。2024 年 Mayo Clinic 統合分析顯示，PRP 較玻尿酸治療成功率高出 2.19 倍<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38420745/" style="color: #0369a1;">[2]</a></sup>；另一篇研究也顯示 PRP 治療效果在 3 個月及 6 個月均超越最小臨床重要差異<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39751394/" style="color: #0369a1;">[6]</a></sup>。</li>
+      <li><strong>旋轉肌腱病變與旋轉肌袖部分撕裂：</strong> 2024 年雙盲研究顯示，PRP 單次注射在 12 個月後疼痛及功能改善均顯著優於類固醇，且治療失敗率更低<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39098382/" style="color: #0369a1;">[3]</a></sup>；2021 年的雙盲 RCT 亦顯示 PRP 在 3 個月時的疼痛分數優於類固醇<sup><a href="https://pubmed.ncbi.nlm.nih.gov/33127554/" style="color: #0369a1;">[9]</a></sup>。</li>
+      <li><strong>網球肘（外側肱骨上髁炎）：</strong> 2024 年的系統性回顧與統合分析顯示，PRP 在 6 個月以上的長期疼痛改善及功能顯著優於類固醇<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38357713/" style="color: #0369a1;">[10]</a></sup>；另有系統性回顧確認 PRP 效果<sup><a href="https://pubmed.ncbi.nlm.nih.gov/35337955/" style="color: #0369a1;">[11]</a></sup>。</li>
       <li><strong>足底筋膜炎：</strong> 系統性回顧顯示 PRP 在長期功能改善上顯著優於類固醇<sup><a href="https://pubmed.ncbi.nlm.nih.gov/31821010/" style="color: #0369a1;">[12]</a></sup>。美國退伍軍人署 2024 年系統性回顧亦支持其在足底筋膜炎的應用<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK611427/" style="color: #0369a1;">[13]</a></sup>。</li>
     </ul>
     <p><img src="/images/treatments/prp/c.webp" alt="PRP高濃度血小板治療適應症列表" width="602" height="806" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
@@ -122,7 +122,7 @@ const fullTreatmentsData: Treatment[] = [
     <h2>⚖️ 治療比較：PRP vs. 葡萄糖水 vs. 類固醇</h2>
     <h3>1. PRP vs. 高濃度葡萄糖水</h3>
     <p><img src="/images/treatments/prp/e.webp" alt="PRP高濃度血小板與高濃度葡萄糖比較表顯示：PRP 修復力較強且維持時間長，葡萄糖水則需較多次數。" width="602" height="328" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
-    <p>這兩者皆屬於<strong>增生療法 (Prolotherapy)</strong>，核心邏輯都是藉由誘發輕微發炎來啟動修復機制。<strong>高濃度葡萄糖水</strong>是透過滲透壓產生「人為發炎」來喚醒免疫系統。系統性回顧（837 名患者，11 項 RCT）顯示葡萄糖水在膝關節炎疼痛與功能改善上具 B 級實證，且無重大副作用<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34046305/" style="color: #0369a1;">[4]</a></sup>；2024 年統合分析亦確認其能顯著降低疼痛及關節僵硬<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38915358/" style="color: #0369a1;">[15]</a></sup>。而 <strong>PRP (自體血小板)</strong> 則是直接注入生長因子，跳過喚醒階段直接提供修復原料。整體而言，PRP 的修復效率較高、所需次數較少，適合預算充足或希望加速復原的患者；兩者比較時，PRP 在 6 個月的僵硬評估上優於葡萄糖水<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34046305/" style="color: #0369a1;">[4]</a></sup>。</p>
+    <p>這兩者皆屬於<strong>增生療法 (Prolotherapy)</strong>，核心邏輯都是藉由誘發輕微發炎來啟動修復機制。<strong>高濃度葡萄糖水</strong>是透過滲透壓產生「人為發炎」來喚醒免疫系統。研究顯示葡萄糖水在膝關節炎疼痛與功能改善上具 B 級實((中等強度的科學證據)，且無重大副作用<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34046305/" style="color: #0369a1;">[4]</a></sup>；2024 年統合分析亦確認其能顯著降低疼痛及關節僵硬<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38915358/" style="color: #0369a1;">[15]</a></sup>。而 <strong>PRP (自體血小板)</strong> 則是直接注入生長因子，跳過喚醒階段直接提供修復原料。整體而言，PRP 的修復效率較高、所需次數較少，適合預算充足或希望加速復原的患者；兩者比較時，PRP 在 6 個月的僵硬評估上優於葡萄糖水<sup><a href="https://pubmed.ncbi.nlm.nih.gov/34046305/" style="color: #0369a1;">[4]</a></sup>。</p>
     <h3>2. 增生療法 vs. 類固醇 (消炎針)</h3>
     <p><img src="/images/treatments/prp/f.webp" alt="增生注射與類固醇治療差異比較顯示：增生療法為修復性質無副作用，類固醇為止痛性質長期使用恐有副作用。" width="602" height="328" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:1rem;"></p>
     <p>這是兩種截然不同的治療思維：<strong>類固醇</strong>主要用於「抑制發炎」，能快速緩解急性疼痛，但多次注射可能導致組織脆化；<strong>增生療法</strong>則是「促進發炎」，目標是強化結構。以網球肘為例，類固醇短期（1 個月）疼痛改善較快，但 3 個月後 PRP 開始反超，6 個月時 PRP 疼痛與功能評分均顯著更優<sup><a href="https://pubmed.ncbi.nlm.nih.gov/37247780/" style="color: #0369a1;">[16]</a></sup>。簡單來說，類固醇像<strong>關掉警報</strong>，適合處理急性火災（劇痛）；增生療法則像<strong>施工隊</strong>，適合重建老舊受損的房子（慢性勞損、退化）。</p>
@@ -131,15 +131,15 @@ const fullTreatmentsData: Treatment[] = [
     <div style="display: grid; gap: 1.5rem; margin-bottom: 2rem;">
       <div style="background: #fff7ed; border: 1.5px solid #fed7aa; border-radius: 0.875rem; padding: 1.5rem;">
         <h3 style="color: #c2410c; margin-top: 0; font-size: 1.1rem;">❌ 迷思一：「PRP 濃度越高，效果越好」</h3>
-        <p style="color: #7c2d12; line-height: 1.75; margin: 0;"><strong>事實：</strong> 這是最常見的誤解。2025 年的系統性回顧與統合分析（18 項 RCT，1,995 名患者）設定 100 萬/µL（約 4–5 倍濃度）為分水嶺，發現超過此閾值後療效並未線性增加<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39751394/" style="color: #c2410c;">[6]</a></sup>。過度濃縮的 PRP 血小板密度過高，反而可能因過強的局部發炎反應造成更多疼痛，甚至抑制細胞增殖。2021 年針對 150 名退化性膝關節炎患者的 RCT 發現，10 億血小板劑量的精準控制（非越多越好）才是達到長期軟骨保護效果的關鍵<sup><a href="https://www.nature.com/articles/s41598-021-83025-2" style="color: #c2410c;">[17]</a></sup>。</p>
+        <p style="color: #7c2d12; line-height: 1.75; margin: 0;"><strong>事實：</strong> 這是最常見的誤解。2025 年的系統性回顧設定 100 萬/µL（約 4–5 倍濃度）為分水嶺，發現超過此閾值後療效並未線性增加<sup><a href="https://pubmed.ncbi.nlm.nih.gov/39751394/" style="color: #c2410c;">[6]</a></sup>。過度濃縮的 PRP 血小板密度過高，反而可能因過強的局部發炎反應造成更多疼痛，甚至抑制細胞增殖。另外一篇2021年研究發現，10 億血小板劑量的精準控制（非越多越好）才是達到長期軟骨保護效果的關鍵<sup><a href="https://www.nature.com/articles/s41598-021-83025-2" style="color: #c2410c;">[17]</a></sup>。</p>
       </div>
       <div style="background: #fef2f2; border: 1.5px solid #fecaca; border-radius: 0.875rem; padding: 1.5rem;">
         <h3 style="color: #b91c1c; margin-top: 0; font-size: 1.1rem;">❌ 迷思二：「打完 PRP 馬上見效，沒效就是騙人的」</h3>
-        <p style="color: #7f1d1d; line-height: 1.75; margin: 0;"><strong>事實：</strong> PRP 的生長因子釋放遵循時間動力學，PDGF-AB 在 8 小時內達峰，VEGF 需要 14 天，軟組織重塑則可能持續 3–6 個月<sup><a href="https://doi.org/10.1186/s12891-025-09339-8" style="color: #b91c1c;">[5]</a></sup>。多項 RCT 一致顯示：PRP 組在 6 週至 3 個月才開始明顯超越對照組，在第 6–12 個月時達到最佳療效差距<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38357713/" style="color: #b91c1c;">[10]</a></sup><sup><a href="https://pubmed.ncbi.nlm.nih.gov/39098382/" style="color: #b91c1c;">[3]</a></sup>。如果以「打完一週沒感覺」就認定無效，正好是錯過修復最活躍的時期。建議至少追蹤至 3 個月再評估療效。</p>
+        <p style="color: #7f1d1d; line-height: 1.75; margin: 0;"><strong>事實：</strong> PRP 的生長因子釋放遵循時間動力學，PDGF-AB 在 8 小時內達峰，VEGF 需要 14 天，軟組織重塑則可能持續 3–6 個月<sup><a href="https://doi.org/10.1186/s12891-025-09339-8" style="color: #b91c1c;">[5]</a></sup>。多項高品質研究一致顯示：PRP 組在 6 週至 3 個月才開始明顯超越對照組，在第 6–12 個月時達到最佳療效差距<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38357713/" style="color: #b91c1c;">[10]</a></sup><sup><a href="https://pubmed.ncbi.nlm.nih.gov/39098382/" style="color: #b91c1c;">[3]</a></sup>。如果以「打完一週沒感覺」就認定無效，正好是錯過修復最活躍的時期。建議至少追蹤至 3 個月再評估療效。</p>
       </div>
       <div style="background: #f0fdf4; border: 1.5px solid #bbf7d0; border-radius: 0.875rem; padding: 1.5rem;">
         <h3 style="color: #15803d; margin-top: 0; font-size: 1.1rem;">❌ 迷思三：「只要是自己的血，PRP 就一定安全有效」</h3>
-        <p style="color: #14532d; line-height: 1.75; margin: 0;"><strong>事實：</strong> 自體血液確實幾乎無過敏風險，安全性高。然而「安全」不等於「有效」。療效取決於三大關鍵變數：① 離心技術與血小板濃度標準化、② 注射位置精準度（超音波導引 vs. 徒手盲打）、③ 術後是否避免 NSAIDs 影響修復發炎期。研究指出不同製備方法導致 PDGF、TGF-β、VEGF 等生長因子濃度可相差 10 倍以上，直接影響臨床結果<sup><a href="https://journals.sagepub.com/doi/10.1177/26348535241277625" style="color: #15803d;">[18]</a></sup>。因此，選擇具有標準化流程的醫療機構，與接受治療本身同等重要。</p>
+        <p style="color: #14532d; line-height: 1.75; margin: 0;"><strong>事實：</strong> 自體血液確實幾乎無過敏風險，安全性高。然而「安全」不等於「有效」。療效取決於三大關鍵變數：① 離心技術與血小板濃度標準化、② 注射位置精準度（超音波導引 vs. 徒手盲打）、③ 術後是否避免 NSAIDs 影響修復發炎期。研究指出不同製備方法導致生長因子濃度可相差 10 倍以上，直接影響臨床結果<sup><a href="https://journals.sagepub.com/doi/10.1177/26348535241277625" style="color: #15803d;">[18]</a></sup>。因此，選擇具有標準化流程的醫療機構，與接受治療本身同等重要。</p>
       </div>
     </div>
     <h2>🩹 PRP 療法後注意事項</h2>
@@ -186,7 +186,16 @@ const fullTreatmentsData: Treatment[] = [
     <div style="background-color: #f0f9ff; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
       <h2 style="color: #0369a1; margin-top: 0;">👨‍⚕️ 還在忍受慢性疼痛嗎？</h2>
       <p style="color: #334155; margin-bottom: 1.5rem;">疼痛不該是常態。歡迎來到<strong>新竹竹科</strong>宸新復健科，找回無痛的自在生活！</p>
-      <p style="font-weight: bold; color: #059669;"><a href="/booking" style="color: inherit; text-decoration: underline;">現在就預約諮詢，告別疼痛！</a></p>
+    <p style="font-weight: bold; color: #0891b2;">如有任何疑問，都可以在門診時直接跟醫師聊聊喔！</p><br>
+      <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診PRP評估
+    </a>
+  </div>
+
     </div>
 
 `,
@@ -320,7 +329,7 @@ const fullTreatmentsData: Treatment[] = [
     <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
       <h3 style="margin-top: 0; color: #0369a1;">📝 文章摘要與核心觀點</h3>
       <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-        體外震波治療（ESWT）是目前針對慢性疼痛、肌腱炎與鈣化問題，具備高度實證醫學支持的非侵入性療法。本文結合多項近十年的權威醫學期刊數據，證實<strong>聚焦式與發散式雙機複合震波</strong>能有效改善足底筋膜炎、網球肘與鈣化性肌腱炎。<br><br>研究顯示，足底筋膜炎患者的治療改善率高達安慰劑的 2.58 倍 <sup><a href="https://doi.org/10.1097/MD.0000000000006621" target="_blank">[1]</a></sup>；2022 年發表於《Arthroscopy》的大型網絡薈萃分析（納入 40 篇 RCT）更進一步確認，震波治療是網球肘進階療法中<strong>恢復握力表現最佳</strong>的選項<sup><a href="https://doi.org/10.1016/j.arthro.2022.01.025" target="_blank">[2]</a></sup>。針對肩部慢性鈣化，高達 71% 的患者在治療後可觀察到鈣化點完全或部分吸收 <sup><a href="https://doi.org/10.1136/ard.62.3.248" target="_blank">[3]</a></sup>。與類固醇注射相比，震波在 3 個月與 6 個月長期追蹤時有更優異的疼痛控制與功能恢復 <sup><a href="https://doi.org/10.1111/os.14212" target="_blank">[4]</a></sup>。<br><br>在治療機轉上，震波透過上調 VEGF、eNOS 等血管新生因子及促進膠原蛋白重塑，達到組織深層修復的效果 <sup><a href="https://doi.org/10.3389/fimmu.2023.1193835" target="_blank">[5]</a></sup>。我們建議搭配高階超音波精準定位，並破除「越痛越有效」的迷思，以 5~7 分痛感的適當能量進行 3~6 次完整療程，即可安全、高效地啟動組織修復，從根本解決頑固疼痛 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/23552334/" target="_blank">[6]</a></sup><sup><a href="https://doi.org/10.1016/j.jse.2024.07.056" target="_blank">[7]</a></sup>。
+        體外震波治療（ESWT）是目前針對慢性疼痛、肌腱炎與鈣化問題，具備高度實證醫學支持的非侵入性療法。本文結合多項近十年的權威醫學期刊數據，證實<strong>聚焦式與發散式雙機複合震波</strong>能有效改善足底筋膜炎、網球肘與鈣化性肌腱炎。<br><br>研究顯示，足底筋膜炎患者的治療改善率高達安慰劑的 2.58 倍 <sup><a href="https://doi.org/10.1097/MD.0000000000006621" target="_blank">[1]</a></sup>；2022 年發表的大型高品質研究更進一步確認，震波治療是網球肘進階療法中<strong>恢復握力表現最佳</strong>的選項<sup><a href="https://doi.org/10.1016/j.arthro.2022.01.025" target="_blank">[2]</a></sup>。針對肩部慢性鈣化，高達 71% 的患者在治療後可觀察到鈣化點完全或部分吸收 <sup><a href="https://doi.org/10.1136/ard.62.3.248" target="_blank">[3]</a></sup>。與類固醇注射相比，震波在 3 個月與 6 個月長期追蹤時有更優異的疼痛控制與功能恢復 <sup><a href="https://doi.org/10.1111/os.14212" target="_blank">[4]</a></sup>。<br><br>在治療機轉上，震波透過上調 VEGF、eNOS 等血管新生因子及促進膠原蛋白重塑，達到組織深層修復的效果 <sup><a href="https://doi.org/10.3389/fimmu.2023.1193835" target="_blank">[5]</a></sup>。我們建議搭配高階超音波精準定位，並破除「越痛越有效」的迷思，以 5~7 分痛感的適當能量進行 3~6 次完整療程，即可安全、高效地啟動組織修復，從根本解決頑固疼痛 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/23552334/" target="_blank">[6]</a></sup><sup><a href="https://doi.org/10.1016/j.jse.2024.07.056" target="_blank">[7]</a></sup>。
       </p>
     </div>
 
@@ -411,10 +420,10 @@ const fullTreatmentsData: Treatment[] = [
 
 <h3>常見適應症與文獻治療根據：</h3>
 <ul>
-  <li><strong>足部問題（足底筋膜炎、阿基里斯腱炎、跟骨骨刺）：</strong> 根據 2017 年《Medicine》期刊發表的薈萃分析（涵蓋 9 項隨機對照試驗，共 935 名患者），震波治療對於慢性足底筋膜炎的疼痛改善率是安慰劑組的 2.58 倍 <sup><a href="https://doi.org/10.1097/MD.0000000000006621" target="_blank">[1]</a></sup>。2013 年文獻亦指出中高能量震波能有效減少患者早晨下床第一步的劇烈疼痛 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/23552334/" target="_blank">[6]</a></sup>。2017 年前瞻性雙年追蹤隨機對照試驗更證實，發散式震波對慢性足底筋膜炎的療效可持續長達兩年 <sup><a href="https://doi.org/10.1002/jor.23403" target="_blank">[8]</a></sup>。</li>
-  <li><strong>肘部問題（網球肘、高爾夫球肘）：</strong> 2022 年刊登於《Arthroscopy》的大型網絡薈萃分析（納入 40 篇 RCT）確認，在所有療法中（包含類固醇、PRP、肉毒桿菌注射），震波是<strong>恢復握力最有效的單一療法</strong><sup><a href="https://doi.org/10.1016/j.arthro.2022.01.025" target="_blank">[2]</a></sup>。針對網球肘，2020 年的系統性回顧與薈萃分析（涵蓋 13 篇文獻、1035 位患者）亦證實，震波治療能顯著降低視覺疼痛評分 (VAS) 並恢復病患的握力，且安全性極高 <sup><a href="https://doi.org/10.1155/2020/2064781" target="_blank">[9]</a></sup>。2024 年的最新薈萃分析進一步指出，與類固醇注射相比，震波在 3 個月與 6 個月追蹤時有更優異的長期療效 <sup><a href="https://doi.org/10.1111/os.14212" target="_blank">[4]</a></sup>。</li>
-  <li><strong>肩部問題（鈣化性肌腱炎、五十肩、旋轉肌病變）：</strong> 臨床研究表明，震波能有效擊碎深層鈣化。2003 年的單盲試驗顯示，高達 71% 的患者在治療後出現鈣化點的完全吸收 (31%) 或部分吸收 (40%) <sup><a href="https://doi.org/10.1136/ard.62.3.248" target="_blank">[3]</a></sup>；2024 年發表的最新文獻進一步分析了影響肩部鈣化沉積物吸收的因素，證實震波做為免開刀選項的高可靠性 <sup><a href="https://doi.org/10.1016/j.jse.2024.07.056" target="_blank">[7]</a></sup>。2024 年《Frontiers in Medicine》系統性回顧亦確認，震波對旋轉肌腱炎的止痛效果在 3 個月與 6 個月追蹤時均顯著優於安慰劑 <sup><a href="https://doi.org/10.3389/fmed.2024.1394268" target="_blank">[10]</a></sup>。</li>
-  <li><strong>膝部與髖部問題（髕骨肌腱炎、大轉子疼痛症候群）：</strong> 2023 年《Frontiers in Immunology》系統性回顧確認，震波對足底筋膜炎在短期與長期疼痛及功能結果均顯著優於傳統保守治療 <sup><a href="https://doi.org/10.3389/fimmu.2023.1193835" target="_blank">[5]</a></sup>。針對大轉子疼痛症候群，2024 年哈佛醫學院附屬醫院發表的薈萃分析（納入 8 篇 RCT、754 名患者）確認，3 次聚焦式震波能在 2~4 個月內提供顯著的短期止痛效果，長期療效優於類固醇注射 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/39297780/" target="_blank">[11]</a></sup>。</li>
+  <li><strong>足部問題（足底筋膜炎、阿基里斯腱炎、跟骨骨刺）：</strong> 根據 2017 年《Medicine》期刊發表的薈萃分析，震波治療對於慢性足底筋膜炎的疼痛改善率是安慰劑組的 2.58 倍 <sup><a href="https://doi.org/10.1097/MD.0000000000006621" target="_blank">[1]</a></sup>。2013 年文獻亦指出中高能量震波能有效減少患者早晨下床第一步的劇烈疼痛 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/23552334/" target="_blank">[6]</a></sup>。2017 年前瞻性雙年追蹤隨機對照試驗更證實，發散式震波對慢性足底筋膜炎的療效可持續長達兩年 <sup><a href="https://doi.org/10.1002/jor.23403" target="_blank">[8]</a></sup>。</li><br>
+  <li><strong>肘部問題（網球肘、高爾夫球肘）：</strong> 2022 年刊登於《Arthroscopy》的大型研究確認，在所有療法中（包含類固醇、PRP、肉毒桿菌注射），震波是<strong>恢復握力最有效的單一療法</strong><sup><a href="https://doi.org/10.1016/j.arthro.2022.01.025" target="_blank">[2]</a></sup>。針對網球肘，2020 年的系統性回顧亦證實，震波治療能顯著降低視覺疼痛評分 (VAS) 並恢復病患的握力，且安全性極高 <sup><a href="https://doi.org/10.1155/2020/2064781" target="_blank">[9]</a></sup>。2024 年的最新薈萃分析進一步指出，與類固醇注射相比，震波在 3 個月與 6 個月追蹤時有更優異的長期療效 <sup><a href="https://doi.org/10.1111/os.14212" target="_blank">[4]</a></sup>。</li><br>
+  <li><strong>肩部問題（鈣化性肌腱炎、五十肩、旋轉肌病變）：</strong> 臨床研究表明，震波能有效擊碎深層鈣化。2003 年的單盲試驗顯示，高達 71% 的患者在治療後出現鈣化點的完全吸收 (31%) 或部分吸收 (40%) <sup><a href="https://doi.org/10.1136/ard.62.3.248" target="_blank">[3]</a></sup>；2024 年發表的最新文獻進一步分析了影響肩部鈣化沉積物吸收的因素，證實震波做為免開刀選項的高可靠性 <sup><a href="https://doi.org/10.1016/j.jse.2024.07.056" target="_blank">[7]</a></sup>。2024 年《Frontiers in Medicine》系統性回顧亦確認，震波對旋轉肌腱炎的止痛效果在 3 個月與 6 個月追蹤時均顯著優於安慰劑 <sup><a href="https://doi.org/10.3389/fmed.2024.1394268" target="_blank">[10]</a></sup>。</li><br>
+  <li><strong>膝部與髖部問題（髕骨肌腱炎、大轉子疼痛症候群）：</strong> 2023 年《Frontiers in Immunology》系統性回顧確認，震波對足底筋膜炎在短期與長期疼痛及功能結果均顯著優於傳統保守治療 <sup><a href="https://doi.org/10.3389/fimmu.2023.1193835" target="_blank">[5]</a></sup>。針對大轉子疼痛症候群，2024 年哈佛醫學院附屬醫院發表的分析確認，3 次聚焦式震波能在 2~4 個月內提供顯著的短期止痛效果，長期療效優於類固醇注射 <sup><a href="https://pubmed.ncbi.nlm.nih.gov/39297780/" target="_blank">[11]</a></sup>。</li>
 </ul>
 
 <p><img src="/images/treatments/shockwave/b.webp" alt="ESWT體外震波適應症範圍：涵蓋足底筋膜炎、網球肘、鈣化性肌腱炎與肩頸慢性痛。"></p>
@@ -450,11 +459,11 @@ const fullTreatmentsData: Treatment[] = [
 <h2>🛑 破解迷思：震波治療的 3 大常見誤區解析</h2>
 <ol style="line-height: 1.8;">
   <li><strong>誤區一：震波越痛越有效？必須忍耐到極限？</strong><br>
-  <strong>👉 醫學實證解析：</strong>這是一個嚴重的迷思。震波能量太弱確實無效，但能量太強會導致周邊健康組織過度發炎與微血管破裂。文獻與臨床指引皆建議，將疼痛控制在視覺類比量表 (VAS) 的 <strong>5~7 分中度痠痛感</strong> 最適合。在此範圍內，既能產生足夠的空穴效應 (Cavitation effect) 來破壞鈣化與沾黏，又能避免組織遭受不必要的二次傷害。</li>
+  <strong>👉 醫學實證解析：</strong>這是一個嚴重的迷思。震波能量太弱確實無效，但能量太強會導致周邊健康組織過度發炎與微血管破裂。文獻與臨床指引皆建議，將疼痛控制在視覺類比量表 (VAS) 的 <strong>5~7 分中度痠痛感</strong> 最適合。在此範圍內，既能產生足夠的空穴效應 (Cavitation effect) 來破壞鈣化與沾黏，又能避免組織遭受不必要的二次傷害。</li><br>
   <li><strong>誤區二：只要打一次震波，我的痛就會徹底消失？</strong><br>
-  <strong>👉 醫學實證解析：</strong>許多患者期望「一針見效」，但震波的原理是「破壞後重建」，誘發身體啟動血管新生與組織自我修復機制。細胞的增生與膠原蛋白的重塑需要時間。臨床實證指出，通常需要 <strong>3~6 次完整療程</strong>，且最佳的組織修復效果往往在療程結束後的 4 到 12 週內才會逐漸顯現。</li>
+  <strong>👉 醫學實證解析：</strong>許多患者期望「一針見效」，但震波的原理是「破壞後重建」，誘發身體啟動血管新生與組織自我修復機制。細胞的增生與膠原蛋白的重塑需要時間。臨床實證指出，通常需要 <strong>3~6 次完整療程</strong>，且最佳的組織修復效果往往在療程結束後的 4 到 12 週內才會逐漸顯現。</li><br>
   <li><strong>誤區三：震波可以取代所有骨科手術，再大的鈣化都能打掉？</strong><br>
-  <strong>👉 醫學實證解析：</strong>雖然震波治療成功挽救了許多患者免於開刀，但它並非萬靈丹。根據 2024 年的研究 <sup><a href="https://doi.org/10.1016/j.jse.2024.07.056" target="_blank">[7]</a></sup>，鈣化點的吸收率與鈣化的質地（如 Gärtner 分類中的柔軟度）、大小及病程時間有關。對於處於急性發炎期、液化中的極大鈣化，或是合併嚴重肌腱全層撕裂的患者，有時仍需由醫師評估是否採用超音波導引抽吸 (Barbotage) 或微創手術介入。</li>
+  <strong>👉 醫學實證解析：</strong>雖然震波治療成功挽救了許多患者免於開刀，但它並非萬靈丹。根據 2024 年的研究 <sup><a href="https://doi.org/10.1016/j.jse.2024.07.056" target="_blank">[7]</a></sup>，鈣化點的吸收率與鈣化的質地（如 Gärtner 分類中的柔軟度）、大小及病程時間有關。對於處於急性發炎期、液化中的極大鈣化，或是合併嚴重肌腱全層撕裂的患者，有時仍需由醫師評估是否採用超音波導引抽吸 (Barbotage) 或微創手術介入。</li><br>
 </ol>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -551,6 +560,21 @@ const fullTreatmentsData: Treatment[] = [
     </div>
   </div>
 </section>
+
+<div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+  <h2 style="color: #047857; margin-top: 0;">👨‍⚕️ 別讓疼痛限制了您的生活！</h2>
+  <p style="color: #334155; margin-bottom: 1.5rem;">無論是想重回球場的運動員，還是深受肩膀痛困擾的長輩，<strong>位於新竹竹科</strong>的宸新復健科都能為您提供最專業的協助。透過超音波導引與複合式震波治療，讓我們一起擊退疼痛，找回活動自如的快樂！</p>
+
+    <p style="font-weight: bold; color: #0891b2;">如有任何疑問，都可以在門診時直接跟醫師聊聊喔！</p><br>
+      <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診體外震波評估
+    </a>
+
+</div>
 
 `,
   referencesHtml: `
@@ -709,15 +733,9 @@ const fullTreatmentsData: Treatment[] = [
   </li>    </ol>
 </div>
 
-<div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
-  <h2 style="color: #047857; margin-top: 0;">👨‍⚕️ 別讓疼痛限制了您的生活！</h2>
-  <p style="color: #334155; margin-bottom: 1.5rem;">無論是想重回球場的運動員，還是深受肩膀痛困擾的長輩，<strong>位於新竹竹科</strong>的宸新復健科都能為您提供最專業的協助。透過超音波導引與複合式震波治療，讓我們一起擊退疼痛，找回活動自如的快樂！</p>
 
-  <p style="font-weight: bold; color: #059669;">
-  <a href="/booking" style="color: inherit; text-decoration: underline;">歡迎預約諮詢，體驗精準醫療的魅力！</a>
-</p>
 
-</div>
+
   `,
   whyChooseUs: [
     '擁有<strong>聚焦式(深層)</strong>與<strong>發散式(淺層)</strong>雙探頭，複合式治療',

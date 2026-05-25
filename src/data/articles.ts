@@ -3,6 +3,1156 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
 {
+  id: 'hallux-valgus-guide',
+  title: '拇指外翻完全解析：成因、症狀、治療一次搞懂',
+  lastModified: '2026-05-25',
+  category: '衛教文章',
+  date: '2026-05-25',
+  summary: '深度解析拇指外翻（拇趾外翻）的成因、分級與症狀。實證研究揭露矯正器能否真正讓角度回正、何時才需要考慮手術，以及日常生活如何減緩疼痛與惡化。',
+  coverImage: '/images/news/article/hallux-valgus-guide.webp',
+  seoTitle: '拇指外翻完全解析：成因、症狀、保守治療與手術時機一次搞懂',
+  seoDescription: '深度解析拇指外翻（拇趾外翻）的成因、分級與症狀。實證研究揭露矯正器能否真正讓角度回正、何時才需要考慮手術，以及日常生活如何減緩疼痛與惡化。',
+  keywords: [
+    '拇指外翻',
+    '拇趾外翻',
+    '拇趾滑液囊炎',
+    '拇趾外翻角度',
+    '拇指外翻手術',
+    '拇指外翻矯正器',
+    '拇趾外翻保守治療',
+    '前足變形',
+    '第一蹠趾關節'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    拇指外翻是最常見的前足變形之一，全球成人盛行率約 23–35%，女性發生率顯著高於男性。其成因屬多因子模式，遺傳體質、生物力學異常與長期穿著不合適鞋子共同造成。症狀從無症狀到嚴重疼痛不等，影響行走功能與生活品質。<br><br>
+    研究明確指出：保守治療（矯正器、物理治療、運動訓練）的主要目標是緩解疼痛、延緩惡化，而非「讓角度回正」——矯正器無法逆轉已形成的骨骼變形。手術是目前唯一能真正矯正角度的方式，適應症需綜合評估疼痛程度、功能障礙與影像學結果。本文將以實證為基礎，幫助民眾全面了解拇指外翻，做出最適合自身狀況的治療決策。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11270640/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup><sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK553092/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+</div>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、什麼是拇指外翻？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    拇指外翻，醫學名稱為 Hallux Valgus，俗稱「拇趾滑液囊炎」或「大腳骨」，是指大拇趾在第一蹠趾關節處向外側偏移，而第一蹠骨則同時向內側偏移，兩者形成「剪刀式」的角度偏差，並在腳的內側形成明顯的骨性突起。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    正常的拇趾外翻角應小於 15 度；20 度以上即視為異常，而 40 度以上則屬重度變形。
+    <sup><a href="https://www.physio-pedia.com/Hallux_Valgus" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    這個關節的偏移並非單純「拇趾歪了」這麼簡單——它是整個前足生物力學失衡的結果，會連帶影響足底壓力分布、步態模式，甚至增加老年人跌倒的風險。
+  </p>
+  <img src="/images/news/article/hallux-valgus1.webp" alt="拇指外翻角度示意圖" style="width: 100%; height: auto;">
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、為什麼會得拇指外翻？多種因素共同造成
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    拇指外翻的成因不是單一的，醫學界目前認為這是一種「多因子疾病」——遺傳、結構、生物力學與外在環境因素交互作用的結果。
+    <sup><a href="https://www.mdpi.com/2411-5142/11/1/117" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🧬 遺傳因素</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    拇指外翻有顯著的家族遺傳傾向。研究發現，先天性或青少年期發生的拇指外翻，往往與遺傳性關節結構異常密切相關。若父母有拇指外翻，子女的發生風險也較一般人高。
+    <sup><a href="https://medlineplus.gov/download/genetics/condition/bunion.pdf" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+    這種遺傳體質可能表現為第一蹠骨關節面的角度異常、韌帶鬆弛，或足弓結構的先天性偏差。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">⚙️ 生物力學與結構因素</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    最常見的生物力學風險因子包括：第一蹠骨過度活動、異常的足部內旋（過度旋前）、以及拇外展肌功能不足。這些因素會破壞第一蹠趾關節的穩定性，讓大拇趾逐漸向外「漂移」。
+    <sup><a href="https://www.mdpi.com/2411-5142/11/1/117" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    扁平足、跟腱過緊、類風濕性關節炎等疾病也可能加速發展。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">👠 鞋子與生活習慣</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    雖然鞋子並非拇指外翻的唯一「原因」，但長期穿著窄頭、高跟鞋確實是重要的惡化因子。2025 年日本大規模研究發現早期（20–39 歲）穿著高跟與窄頭鞋，與日後拇指外翻的發生顯著相關。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S094926582500260X" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    這解釋了為何女性的發生率（31.6%）遠高於男性（13.3%）。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">👩 性別與年齡</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    女性發生率顯著高於男性，部分文獻報告女男比例高達 15:1。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK553092/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    盛行率也隨年齡增加而上升——日本研究顯示，女性 20 多歲時盛行率約 20%，80 歲以上則高達 48%。足部韌帶會隨年齡鬆弛，加速關節偏移。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S094926582500260X" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、拇指外翻有哪些症狀？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    拇指外翻的症狀因嚴重程度不同而有很大差異。有些人角度偏了卻幾乎不痛，有些人只是輕度偏移卻痛到難以行走。以下是常見的症狀表現：
+  </p>
+ 
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">腳掌內側骨性突起：</strong>大拇趾基部出現明顯的「硬包」，外觀可見紅腫，與鞋子摩擦時疼痛明顯。
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">大拇趾疼痛：</strong>第一蹠趾關節在活動或負重時產生痠痛、灼熱感，尤其在長時間站立或走路後加劇。
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">大拇趾活動角度受限：</strong>關節因長期位置異常而逐漸僵硬，上抬角度減少，影響正常步態的推進期。
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">第二趾擠壓與變形：</strong>大拇趾向外推擠，導致第二趾被迫上翻（錘狀趾），甚至兩趾重疊，造成趾間壓力與摩擦。
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">前足蹠骨痛：</strong>由於大拇趾推進力不足，足底壓力轉移至第二、三蹠骨頭，導致前足球部疼痛與繭胝形成。
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">平衡感下降：</strong>研究顯示，中重度拇指外翻患者的步行速度與單腳站立時間均受到影響，增加老年人跌倒風險。
+      <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5975621/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">穿鞋困難：</strong>骨性突起使一般鞋型無法舒適穿著，影響日常生活與社交。
+    </li>
+  </ul>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      許多民眾誤以為「只要不痛就不用管」——但拇指外翻是進行性變形，也就是說，一旦形成，角度往往只會愈來愈大，不會自然回正。若等到疼痛嚴重才就醫，關節軟骨可能已出現磨損，手術難度與術後恢復時間也會增加。建議只要發現角度有偏移，就應尋求評估，愈早介入效果愈好。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、嚴重度分級：何時才需要考慮手術？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    拇指外翻的治療策略，關鍵在於「嚴重程度」與「症狀影響」的綜合評估，而非只看角度數字。
+  </p>
+ 
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 700px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 120px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>嚴重程度</th>
+          <th>拇趾外翻角（HVA）</th>
+          <th>建議治療方向</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>輕度</td>
+          <td>15°–20°</td>
+          <td>保守治療（矯正器、運動、鞋子調整）</td>
+        </tr>
+        <tr>
+          <td>中度</td>
+          <td>20°–40°</td>
+          <td>保守治療優先；症狀嚴重者評估手術</td>
+        </tr>
+        <tr>
+          <td>重度</td>
+          <td>&gt; 40°</td>
+          <td>手術矯正通常為主要治療選擇</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">手術的核心適應症包括：</strong>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">持續性疼痛影響日常活動，且保守治療 3–6 個月以上無效</li>
+    <li style="margin-bottom: 0.5rem;">關節半脫位或完全脫位</li>
+    <li style="margin-bottom: 0.5rem;">第二趾受到擠壓，出現錘狀趾或交叉趾等繼發性變形</li>
+    <li style="margin-bottom: 0.5rem;">前足蹠骨痛嚴重、繭胝反覆形成，影響功能</li>
+    <li style="margin-bottom: 0.5rem;">患者有強烈的美觀需求，且充分了解手術風險與術後恢復要求</li>
+  </ul>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    與不治療相比，手術在術後 12 個月時的疼痛改善具有臨床意義；但與保守治療相比，手術的整體優勢仍屬「低確定性證據」。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11270640/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    這意味著：<strong style="color: #ffffff;">手術並非萬能，醫師與患者需共同評估利弊，不應在沒有充分保守治療的情況下直接走向手術。</strong>
+  </p>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    值得注意的是，手術適應症的決定並不應單純以角度決定。20 度的患者若疼痛劇烈、保守治療無效，手術是合理的選擇；反之，40 度的患者若幾乎無症狀且功能良好，手術也不見得迫切。<strong style="color: #ffffff;">「症狀的嚴重程度」與「保守治療的反應」，才是手術時機最重要的判斷依據。</strong>
+    <sup><a href="https://www.swissmedical.net/en/orthopedics/foot-ankle-surgery/hallux-valgus" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、不開刀的保守治療有哪些？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    保守治療的目標是：<strong style="color: #ffffff;">（1）緩解疼痛，（2）改善功能，（3）延緩變形進展</strong>。重要前提是：保守治療無法讓已形成的骨骼角度回正，這一點需要民眾有正確認知。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">👟 鞋具調整（首要且最有效的保守措施）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    改穿前掌寬敞、跟部低矮的鞋款，是所有保守治療的基礎。鞋頭需能容納大拇趾的自然寬度，不對骨性突起產生壓迫。避免尖頭鞋、高跟鞋，對症狀的緩解往往有立竿見影的效果。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🦶 矯正器與分趾墊</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    矯正器（夜間矯正夾板）與趾間分離墊是最常見的保守器材。研究顯示，使用動態矯正器或靜態矯正器 1 個月，可使拇趾外翻角減少 2–3 度，且主要在穿戴期間有效；一旦停用，角度往往會回復原狀。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S0958259218302049" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+    更重要的是，<strong style="color: #ffffff;">矯正器的主要貢獻在於緩解疼痛與主觀舒適感的改善，而非真正的骨骼角度矯正。</strong>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/28364350/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    動態矯正夾板雖能顯著改善走路與休息時的疼痛，但在拇趾外翻角的影像學測量上，與未治療組相比並無統計學差異；研究結論明確指出，沒有任何患者因矯正器的效果而決定取消手術。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1268773118302467" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🏋️ 足部運動訓練</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    強化拇外展肌、改善足趾的主動抓地力，是物理治療中的核心介入。「運動結合趾間分離墊」與「夜間矯正夾板」是最有可能改善拇趾外翻角與蹠骨間角的保守治療組合。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8038851/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    有效的足部運動包含：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">拇趾外展抗阻運動：</strong>用手或彈力帶輔助，練習大拇趾向內側主動靠攏（外展），每次 10–15 下</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">足趾抓毛巾：</strong>用腳趾抓取地面上的毛巾，強化足底內在肌群</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">短足運動：</strong>在不彎曲腳趾的情況下收縮足弓，訓練足部內在肌群</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">提踵訓練：</strong>單腳提踵可加強腓腸肌與比目魚肌，改善踝關節穩定性</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">💊 藥物與其他治療</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    急性疼痛期可使用非類固醇類消炎止痛藥（NSAIDs）緩解局部炎症。若骨性突起紅腫明顯（滑液囊炎急性發作），局部類固醇注射可快速消腫，但不建議反覆使用。客製化足墊能有效改善足底壓力分布，減輕蹠骨頭的負擔。
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在門診中，許多患者花了數年時間戴矯正器，卻發現「照X光還是一樣歪」而感到失望。正確的認知是：矯正器就像眼鏡一樣——戴著有效，但不能治本，也不會讓骨骼永久重塑。矯正器最大的臨床價值在於「穿戴期間緩解疼痛」，以及在輕度、柔軟型拇指外翻的早期，稍微延緩進展。把矯正器當成「治好的工具」是不切實際的期待。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、矯正器到底能讓角度回來嗎？實證告訴你答案
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是門診中被問最多的問題之一。民眾常常看到廣告說「使用矯正器可矯正拇趾外翻」，因此對矯正器抱有很高期待。讓我們看看研究怎麼說：
+  </p>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    2022 年發表於《Arthritis Care &amp; Research》的大型研究結論是：有部分研究報告夜間矯正夾板、足部運動與多模態物理治療可達到「臨床顯著的角度減少」，但整體而言，<strong style="color: #ffffff;">保守治療對拇趾外翻角的改善證據等級仍屬「低確定性」；疼痛改善的可能性高於角度矯正。</strong>
+    <sup><a href="https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24603" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>
+  </p>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    另一篇文獻更直接指出：<strong style="color: #ffffff;">「在拇指外翻症候群中，保守措施只能緩解症狀。鞋墊、矯正器與趾間夾板無法改善前足變形。」</strong>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/28364350/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    同樣地，現有物理治療文獻也明確說明，拇指外翻是不可逆的足部變形，<strong style="color: #ffffff;">現有實證顯示，在沒有手術介入的情況下，變形會持續進展。</strong>
+    <sup><a href="https://www.efdeportes.com/efd210/hallux-valgus-physical-therapy-treatment.htm" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>
+  </p>
+ 
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 重要觀念：</strong><br><br>矯正器能讓角度「暫時看起來比較好」，但這是來自外力對軟組織的撐壓，不是骨骼的真正重塑。一旦移除矯正器，角度基本上會回復。若拇指外翻已屬中重度（ &gt; 30–40 度），或骨骼已固定化，矯正器幾乎不具有角度矯正效果。這不代表矯正器沒有用——它對疼痛管理與生活品質的改善仍有實際幫助，但需要有正確的期待。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、手術治療：有哪些選擇？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    手術是目前唯一能真正矯正拇趾外翻角的治療方式。醫學文獻記錄的手術術式超過 130 種，主要依據變形嚴重程度選擇適合的骨切術與軟組織修復方式。
+    <sup><a href="https://www.physio-pedia.com/Hallux_Valgus" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">傳統開刀</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    傳統開刀是長期以來的金標準術式，常見包含 Chevron 截骨術（適合輕中度）、Scarf 截骨術（適合中重度）或近端截骨術（適合重度變形）。手術在直視下進行截骨、矯正角度後以螺釘固定，矯正效果可靠。缺點是切口較大、術後腫脹恢復期較長（約 6–8 週不負重）。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">微創手術</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    近年微創手術技術大幅進步，透過數個小切口，以微型骨磨搭配術中 X 光引導進行截骨與螺釘固定，傷口小、術後腫脹較輕。2025 年依據英國更新的回顧指出，微創技術（特別是 MICA 術式）在適當適應症下，矯正效果與傳統開刀相當，且術後恢復具有優勢。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12699283/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[15]</a></sup>
+    但微創手術對術者的技術要求較高，需選擇有豐富經驗的足踝外科醫師執行。
+  </p>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    術後復健通常包含：術後早期穿戴特殊術後鞋、逐步進行關節活動度訓練，以及肌力恢復運動，整體恢復至正常活動約需 3–6 個月。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 八、日常生活怎麼做？減緩疼痛與避免惡化的實用建議
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>換掉窄頭、高跟鞋</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">選擇前掌空間充裕的鞋款，鞋跟高度建議不超過 3 公分。鞋頭需能容納大拇趾自然伸展，不施加側向壓力。這是所有保守措施中效果最確定、最容易執行的一步。運動鞋或特製寬楦健康鞋是理想選擇。</span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>搭配客製化足墊</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">足墊可重新分配足底壓力，減輕第一蹠骨頭與第二、三蹠骨的負擔，對蹠骨痛（前腳掌痛）有顯著幫助。建議由物理治療師或足科醫師評估後訂製，以確保足弓支撐與壓力分布符合個人足型。</span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>夜間矯正器——正確使用、正確期待</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">夜間矯正器可在休息時保持大拇趾位於相對正確的位置，有助於緩解關節囊的張力與晨間僵硬感。適合輕度到中度的柔軟型拇指外翻。請記住：矯正器的目的是「緩解疼痛與減緩惡化」，而非讓角度永久回正。<sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1268773118302467" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[11]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
+        <div>
+          <strong>每天做足部強化運動</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">強化拇外展肌與足底內在肌群是對抗拇指外翻進展最有力的保守手段。建議每天執行拇趾外展抗阻練習、短足運動、足趾抓毛巾等，每次 10–15 下，每日 2–3 次。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8038851/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[12]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">5</span>
+        <div>
+          <strong>控制體重</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">體重增加會直接加大第一蹠趾關節的負荷，加速變形進展。維持健康體重是保護足部關節最根本的生活措施之一，也能降低其他足部病變的風險。</span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">6</span>
+        <div>
+          <strong>避免長時間赤腳踩硬地</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">赤腳行走在磁磚、大理石等硬地面上，會增加足底壓力。居家建議穿著有支撐性的室內拖鞋（避免拖鞋過於平坦無支撐），或使用足墊作為緩衝。</span>
+        </div>
+      </li>
+ 
+    </ul>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：拇指外翻會自己好嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不會。拇指外翻是骨骼與關節的結構性變形，一旦形成就不會自然回正，多數情況下會隨年齡增長而持續進展。早期輕度變形可透過保守治療延緩惡化、控制症狀，但角度本身無法靠自然痊癒來回復。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：只靠矯正器夠嗎？需要多久才有效？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      對輕度、症狀輕微的患者，矯正器配合鞋具調整與運動訓練，確實能有效管理症狀並延緩惡化，「只靠矯正器」在這個族群是合理的短期策略。但對中重度變形，或骨骼已固化者，矯正器的角度矯正效果十分有限。使用矯正器的效果通常在 2–4 週內可感受到疼痛改善；影像學上的角度變化即使有，也僅約 1–3 度，且停用後多半回復。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：手術危險嗎？術後多久可以正常行走？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      現代拇指外翻手術在技術成熟的足踝外科醫師操作下整體安全性高，並發症風險低。術後通常需穿著術後特殊鞋 4–6 週（部分術式允許術後立即以特殊鞋承重），完全恢復正常行走與運動約需 3–6 個月。微創手術傷口更小、腫脹恢復更快，但仍需充分的術後復健配合。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：手術後拇指外翻會復發嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      術後復發是可能發生的，尤其是持續穿著不合適鞋款、韌帶鬆弛體質，或術式矯正不足（術後角度仍 &gt; 20 度）的患者風險較高。術後配合醫囑持續穿著適當鞋具、維持足部肌力訓練，是降低復發率的關鍵。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：青少年或年輕人的拇指外翻處理方式一樣嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不完全相同。青少年骨骼尚未完全發育成熟，手術通常建議等到骨骺板閉合後（約 14–16 歲後）再評估，以避免術後生長影響矯正結果。青少年期的主要介入以保守治療為主，包含鞋具教育、足部運動與矯正器，並密切追蹤角度變化。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q6：拇指外翻沒有症狀，也需要治療嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      無症狀的輕度拇指外翻不需要積極治療，但需要定期追蹤。建議採取預防性措施，如穿著前掌寬敞的鞋款、維持足部肌力訓練，以延緩變形進展。若角度持續增大或出現疼痛，應及早就醫評估。
+    </p>
+ 
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    拇指外翻不是單純的「腳長歪了」，它是遺傳體質、生物力學與生活習慣共同形塑的複雜問題。理解它的本質，才能做出最適合自己的選擇：保守治療是控制症狀的有效工具，但無法讓角度回正；手術是矯正角度的唯一方式，但需要審慎評估適應症與術後恢復的承受度。
+  </p><br>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    最重要的第一步，是<strong style="color: #1e293b;">了解自己目前屬於哪個嚴重程度</strong>，並根據症狀、功能影響與個人需求，與專業醫師共同制定個人化的治療計畫。不論是保守治療還是手術，早期介入、持續追蹤，永遠勝過等到嚴重才行動。
+  </p>
+ 
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：若您注意到大拇趾有向外偏移的跡象，或足部持續疼痛影響日常生活，建議盡早安排門診評估，拍攝 X 光片確認角度，及早介入。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診評估
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Dias, C.G., Godoy-Santos, A.L., Ferrari, J., Ferretti, M., &amp; Lenza, M. (2024). Surgical interventions for treating hallux valgus and bunions. Cochrane Database of Systematic Reviews, 7(7):CD013726. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11270640/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11270640</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Ferrero, G., &amp; Vopat, M. (2024). Hallux Valgus. StatPearls, NCBI Bookshelf. <a href="https://www.ncbi.nlm.nih.gov/books/NBK553092/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Bookshelf: NBK553092</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Physiopedia. (2024). Hallux Valgus. <a href="https://www.physio-pedia.com/Hallux_Valgus" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Rodríguez-Sanz, D., et al. (2025). Factors Related to the Etiology of Hallux Abducto Valgus: A Systematic Review. Journal of Functional Morphology and Kinesiology, 11(1):117. <a href="https://www.mdpi.com/2411-5142/11/1/117" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3390/jfmk11010117</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        MedlinePlus Genetics. (2023). Bunion (Hallux Valgus). National Library of Medicine. <a href="https://medlineplus.gov/download/genetics/condition/bunion.pdf" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PDF Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Akiyama, K., et al. (2025). Epidemiology and risk factors of hallux valgus in Japanese population: HAPPI study. The Foot, 63:102148. <a href="https://www.sciencedirect.com/science/article/abs/pii/S094926582500260X" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.foot.2025.102148</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Iijima, H., Suzuki, Y., Aoyama, T., &amp; Takahashi, M. (2018). Does hallux valgus impair physical function? PLOS ONE / PMC. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5975621/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 5975621</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Swiss Medical. (2024). Hallux valgus: Which treatment at which stage? <a href="https://www.swissmedical.net/en/orthopedics/foot-ankle-surgery/hallux-valgus" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Torkki, M., et al. (2019). A comparison of the hallux valgus angle, range of motion, and patient satisfaction after use of dynamic and static orthoses. The Foot. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0958259218302049" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.foot.2019.02.003</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Wülker, N., &amp; Mittag, F. (2017). Conservative treatment of hallux valgus: What can be achieved with splints and insoles? PubMed. <a href="https://pubmed.ncbi.nlm.nih.gov/28364350/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 28364350</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Reischl, N., et al. (2019). Short term results of dynamic splinting for hallux valgus — A prospective randomized study. The Foot. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1268773118302467" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.foot.2018.09.003</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Tang, S., et al. (2021). Adjusted Indirect and Mixed Comparisons of Conservative Treatments for Hallux Valgus: A Systematic Review and Network Meta-Analysis. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8038851/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8038851</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hurn, S.E., et al. (2022). Effectiveness of Nonsurgical Interventions for Hallux Valgus: A Systematic Review and Meta-Analysis. Arthritis Care &amp; Research. <a href="https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24603" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1002/acr.24603</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Glasoe, W.M., et al. (2015). Hallux valgus: Physical therapy treatment. EFDeportes. <a href="https://www.efdeportes.com/efd210/hallux-valgus-physical-therapy-treatment.htm" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Imran, B., Jones, S., &amp; Middleton, R.G. (2025). Hallux Valgus Management: An Update Based on NICE Guidelines. Cureus. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12699283/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12699283</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+
+{
+id: 'pediatric-lower-extremity-development',
+  title: '掌握兒童腿型發育：從O型腿、X型腿到扁平足，何時需要就醫？',
+  lastModified: '2026-05-25',
+  category: '衛教文章',
+  date: '2026-05-25',
+  summary: '從兒童骨科醫學角度深入剖析孩子從出生到學齡期的腿型與足弓演變軌跡。絕大多數的O型腿、X型腿與腳底貼地都屬於正常的生理性發育現象，不需穿矯正鞋。實證研究告訴你各年齡段的正常時程，並教你精準分辨真正需要醫療介入的發展警訊。',
+  coverImage: '/images/news/article/pediatric-legs-flat-feet.webp',
+  seoTitle: '兒童O型腿、X型腿、扁平足全解析：何時會自然好？就醫警訊有哪些？',
+  seoDescription: '許多家長擔心的幼兒O型腿、X型腿與扁平足，多為正常的生理發育現象。本文對照實證文獻，完整解析兒童足弓與腿型的生長時程。教你透過兩腿對稱性、年齡限制及疼痛症狀，精準辨識布朗特氏病與僵硬型扁平足等真正需要就醫的骨科警訊。',
+  keywords: [
+    '兒童O型腿',
+    '兒童X型腿',
+    '兒童扁平足',
+    '生理性膝內翻',
+    '膝外翻角度',
+    '彈性扁平足',
+    '布朗特氏病',
+    '僵硬型扁平足',
+    '兒童骨科評估',
+    '足弓發育時程'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    兒童腿型的發育並非一開始就是直的，而是經歷「O型腿→直腿→X型腿→趨近成人直腿」這樣有規律的演變過程。絕大多數讓家長擔心的O型腿、X型腿與扁平足，都屬於正常生理發育現象，不需要特殊治療，更不需要穿矯正鞋或使用支架。<br><br>研究顯示，兒童的足弓通常在6至10歲之間逐漸形成，而腿型也多在7至8歲前自然矯正。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK559244/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    <sup><a href="https://publications.aap.org/pediatricsinreview/article/46/7/409/202405/Understanding-Pediatric-Flat-Feet" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3289162/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    本文將帶您了解每個年齡階段正常的腿型與足弓發展，以及哪些警訊才真的需要帶孩子來給醫生看。
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、門診最常見的場景：家長的擔心，往往是多慮了
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    「醫生，我的孩子腿怎麼這麼彎？」「我家小孩走路內八、腳底全貼地，是不是扁平足？」這是門診幾乎每天都會碰到的對話。帶著擔憂表情的爸爸媽媽，往往已在網路上搜尋了大量資料，或是聽了長輩的意見，深怕孩子的腿「有問題」。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    好消息是：<strong style="color: #2dd4bf;">大多數的情況下，孩子的腿型完全正常，只是還沒到「應該變直」的年紀。</strong>兒童的骨骼與韌帶發育有其固定的時程，就像長牙有先後順序一樣，腿型的演變也有一套規律的劇本。了解這個劇本，是家長最重要的功課。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    當然，也有少數情況是真正需要醫療介入的。本文的目的，就是幫助您分辨這兩者的差異。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、兒童腿型發展時程：從O型到X型，再到直腿
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    兒童的腿型發展遵循一個可預測的模式，醫學上稱為「生理性角度變化」。了解各階段正常範圍，才不會因為「看起來怪」就過度擔心。
+  </p>
+<img src="/images/news/article/leg.webp" alt="兒童腿型示意圖" style="width: 100%; height: auto;">
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">0～18個月：O型腿（膝內翻）期</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    幾乎所有嬰兒出生時都是O型腿，兩膝向外彎曲、小腿像弓形一樣。這是因為胎兒在媽媽子宮裡空間有限，肢體需要彎曲折疊才能容納，出生時自然保留這個姿勢。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究顯示，O型腿（膝內翻）在6至12個月時達到最大程度。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3289162/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    當寶寶開始站立與學步，通常在18至24個月左右，雙腿會逐漸拉直，脛股角（膝關節的角度）接近0度——也就是所謂的「直腿」。這個過程是自然發生的，不需要任何介入。
+    <sup><a href="https://posna.org/blogs/resident-review/december-2017/pediatric-lower-extremity-disorders" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2～6歲：X型腿（膝外翻）期</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    在雙腿拉直之後，大約從2歲起，孩子的膝蓋會開始往內靠攏，形成「X型腿」（膝外翻）。這個時期最讓家長緊張，因為看起來特別明顯。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    根據研究，X型腿通常在3至4歲時達到最大程度，此時膝外翻角度平均可達8至12度，兩腳踝之間的距離（雙膝靠攏時）可能相當寬。
+    <sup><a href="https://posna.org/physician-education/study-guide/genu-valgum" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+    之後，角度會逐漸縮小，大多數孩子在<strong style="color: #ffffff;">7至8歲時</strong>，腿型就會接近成人的正常排列：輕微的外翻（約5至7度），而這就是終身維持的正常狀態。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK559244/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 一個很重要的觀念</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      成人雙腿其實並非「完全筆直」，而是有約5至7度的外翻角度（膝蓋略微朝內）。女性因為骨盆較寬，外翻角度通常比男性稍大一些。這是正常的生理構造，不是異常。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">兒童腿型發展一覽表</h3>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 600px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 130px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>年齡</th>
+          <th>腿型狀態</th>
+          <th>正常現象說明</th>
+          <th>家長需要做什麼？</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>出生～18個月</td>
+          <td>O型腿（膝內翻）</td>
+          <td>雙膝向外彎，源自胎兒姿勢，屬正常</td>
+          <td>觀察即可，不需處理</td>
+        </tr>
+        <tr>
+          <td>18～24個月</td>
+          <td>漸趨直腿</td>
+          <td>開始學步後，腿型自然拉直</td>
+          <td>觀察即可</td>
+        </tr>
+        <tr>
+          <td>2～6歲</td>
+          <td>X型腿（膝外翻）</td>
+          <td>3～4歲達到最大程度，屬正常發育</td>
+          <td>觀察，避免過度擔心</td>
+        </tr>
+        <tr>
+          <td>6～11歲</td>
+          <td>趨近成人腿型</td>
+          <td>逐漸穩定在輕微外翻（約5～7度）</td>
+          <td>如仍明顯X型腿則就醫評估</td>
+        </tr>
+        <tr>
+          <td>11歲以後</td>
+          <td>成人腿型定型</td>
+          <td>骨骼發育接近成熟，角度趨於穩定</td>
+          <td>若有疼痛或不對稱，就醫</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、扁平足：幾乎所有嬰幼兒都有，長大就好了
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    扁平足是另一個讓家長焦慮的常見問題。孩子站起來腳底板幾乎全部貼地，看不到明顯的足弓，不少阿公阿嬤就會說：「這孩子是扁平足，要去看醫生！」
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    事實上，幾乎所有嬰兒出生時都是扁平足，這是完全正常的。
+    <sup><a href="https://publications.aap.org/pediatricsinreview/article/46/7/409/202405/Understanding-Pediatric-Flat-Feet" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    嬰幼兒的韌帶比成人更鬆弛，加上腳底有較厚的脂肪墊填充，讓足弓「藏起來」，看起來就像完全平的。這兩個因素都會隨著年齡增長而改變。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">足弓是如何慢慢長出來的？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    隨著孩子開始學步、跑跳，體重負荷刺激足部骨骼、肌肉與韌帶發育。腳底的脂肪墊逐漸被吸收變薄，韌帶也慢慢變得緊實，足弓便自然浮現。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究指出，足弓大約在2至6歲之間逐漸形成，到6歲時約有75%的孩子已能看見明顯的足弓，10歲時這個比例更提高到約90%。
+    <sup><a href="https://www.michiganfootdoctors.com/pediatric-flatfoot-children-treatment/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    美國小兒科學會的資料也顯示，約莫在6歲左右，大部分孩子的扁平足就會自然消失。
+    <sup><a href="https://www.healthychildren.org/English/health-issues/conditions/orthopedic/Pages/Flat-Feet-Fallen-Arches.aspx" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    一直到成年仍有扁平足的比例，約只有10%至20%。
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 彈性扁平足 vs. 僵硬扁平足</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      大多數孩子的扁平足屬於「彈性扁平足」——踮腳尖時足弓就會浮現，只有踩地負重時才看起來平。這類型幾乎不需要治療。相對罕見的「僵硬扁平足」是踮腳尖時足弓仍完全消失，通常合併疼痛，需要進一步評估是否有骨骼結構異常（如跗骨聯合）。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">矯正鞋墊有用嗎？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    很多家長會替孩子買「足弓支撐鞋墊」或「矯正鞋」，希望能「幫助」足弓發展。但目前的科學證據並不支持這樣的做法。英國NHS的建議明確指出，鞋墊或特殊運動並不能幫助兒童的足弓更快發展，足弓在正常生長過程中會自然形成。
+    <sup><a href="https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/children-and-young-peoples-muscles-bones-and-joints/flat-feet-in-children-and-young-people/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+    研究也一致顯示，矯正鞋墊不會加速足弓的形成，有時反而可能限制足部肌肉的自然鍛鍊。
+    <sup><a href="https://www.michiganfootdoctors.com/pediatric-flatfoot-children-treatment/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    對無症狀的彈性扁平足幼童，最好的「治療」是：<strong style="color: #ffffff;">讓孩子多跑多跳，在安全的環境下適度赤腳行走。</strong>自然的肌肉活動與負重刺激，才是促進足部發育最有效的方式。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、什麼情況下才需要帶孩子來看醫生？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    雖然大多數情況都是正常發育，但以下這些「警訊」出現時，建議不要再等待，應該帶孩子給骨科或小兒骨科醫師評估：
+  </p>
+
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h3 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.3rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem;">
+      ⚠️ O型腿的就醫警訊
+    </h3>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 0.85rem;">!</span>
+        <span style="line-height: 1.6;"><strong>3歲後O型腿仍未改善</strong>，或反而越來越彎曲<sup><a href="https://kidshealth.org/en/parents/bow-legs.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[9]</a></sup></span>
+      </li>
+      <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 0.85rem;">!</span>
+        <span style="line-height: 1.6;"><strong>兩腿不對稱</strong>——條腿明顯比另一條更彎，或彎曲程度差異很大<sup><a href="https://kidshealth.org/en/parents/bow-legs.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[9]</a></sup></span>
+      </li>
+      <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 0.85rem;">!</span>
+        <span style="line-height: 1.6;"><strong>走路時出現「側跨步」</strong>——每踏一步膝蓋都有明顯向外甩的動作，這是布朗特氏病的警示</span>
+      </li>
+      <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 0.85rem;">!</span>
+        <span style="line-height: 1.6;"><strong>身材明顯矮小</strong>或合併其他骨骼異常（可能為骨骼發育不良或遺傳性疾病）</span>
+      </li>
+      <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 0.85rem;">!</span>
+        <span style="line-height: 1.6;"><strong>腿部疼痛、跛行或行走困難</strong></span>
+      </li>
+    </ul>
+  </div>
+
+  <div style="background-color: #fff1f2; border: 2px solid #fca5a5; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h3 style="color: #be123c; margin-top: 0; font-weight: bold; font-size: 1.3rem; border-bottom: 2px solid #fca5a5; padding-bottom: 0.5rem;">
+      ⚠️ X型腿的就醫警訊
+    </h3>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #9f1239;">
+      <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+        <span style="background: #e11d48; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 0.85rem;">!</span>
+        <span style="line-height: 1.6;"><strong>2歲前就出現明顯X型腿</strong>（正常應先經過O型腿期）<sup><a href="https://www.henryford.com/blog/2025/07/knock-knees-in-kids" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[10]</a></sup></span>
+      </li>
+      <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+        <span style="background: #e11d48; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 0.85rem;">!</span>
+        <span style="line-height: 1.6;"><strong>8歲後X型腿仍未改善</strong>，雙腳靠攏時踝距超過約8公分<sup><a href="https://www.henryford.com/blog/2025/07/knock-knees-in-kids" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[10]</a></sup></span>
+      </li>
+      <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+        <span style="background: #e11d48; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 0.85rem;">!</span>
+        <span style="line-height: 1.6;"><strong>兩腿不對稱</strong>——一邊明顯比另一邊更往內靠<sup><a href="https://www.relainstitute.com/articles/bow-legs-and-knock-knees-in-children-causes-symptoms-and-treatment/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[11]</a></sup></span>
+      </li>
+      <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+        <span style="background: #e11d48; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 0.85rem;">!</span>
+        <span style="line-height: 1.6;"><strong>膝蓋、踝部或腳持續疼痛</strong></span>
+      </li>
+      <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+        <span style="background: #e11d48; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 0.85rem;">!</span>
+        <span style="line-height: 1.6;"><strong>合併身材矮小、易骨折</strong>，或曾有佝僂病（骨骼礦化不足）病史</span>
+      </li>
+    </ul>
+  </div>
+
+  <div style="background-color: #f0fdf4; border: 2px solid #86efac; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h3 style="color: #15803d; margin-top: 0; font-weight: bold; font-size: 1.3rem; border-bottom: 2px solid #86efac; padding-bottom: 0.5rem;">
+      ⚠️ 扁平足的就醫警訊
+    </h3>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #166534;">
+      <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+        <span style="background: #16a34a; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 0.85rem;">!</span>
+        <span style="line-height: 1.6;"><strong>踮腳尖時足弓仍完全不出現</strong>（僵硬型扁平足）<sup><a href="https://www.childrenscolorado.org/conditions-and-advice/conditions-and-symptoms/conditions/flatfoot/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[12]</a></sup></span>
+      </li>
+      <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+        <span style="background: #16a34a; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 0.85rem;">!</span>
+        <span style="line-height: 1.6;"><strong>腳底、腳踝、膝蓋持續疼痛</strong>，影響日常活動或運動</span>
+      </li>
+      <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+        <span style="background: #16a34a; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 0.85rem;">!</span>
+        <span style="line-height: 1.6;"><strong>兩腳明顯不對稱</strong>——一腳有足弓，另一腳完全平</span>
+      </li>
+      <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+        <span style="background: #16a34a; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 0.85rem;">!</span>
+        <span style="line-height: 1.6;"><strong>8至10歲後扁平足仍有症狀</strong>（無症狀的成人扁平足通常不需治療）<sup><a href="https://www.michiganfootdoctors.com/pediatric-flatfoot-children-treatment/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[6]</a></sup></span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、病理性腿型變形：什麼情況才算「真的有問題」？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    少數情況下，腿型問題確實是由疾病引起，而非正常發育現象。以下是幾個需要特別注意的病理原因：
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">布朗特氏病（Blount's Disease）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是一種脛骨（小腿骨）內側生長板的病變，導致小腿持續向外彎曲，形成嚴重O型腿。與生理性O型腿不同，布朗特氏病通常在3歲後仍無改善，且可能單側較嚴重，走路時有明顯側跨步現象。
+    <sup><a href="https://www.chla.org/blog/experts/peds-practice-tips/genu-varum-bowlegs-children-what-physicians-need-know" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>
+    過重是已知的危險因子，需要骨科醫師以X光評估生長板情形，部分患者需要手術矯正。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">佝僂病（Rickets）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    因維生素D、鈣或磷代謝異常，導致骨骼礦化不足、質地偏軟，容易發生腿型彎曲。這類孩子通常合併其他表現，如牙齒發育遲緩、生長遲滯、骨骼X光出現特徵性改變。可以透過抽血及X光診斷，治療以補充缺乏的礦物質為主。
+    <sup><a href="https://boneandspine.com/patient-guides/knee-leg/leg-deformity/bow-legs-and-knock-knees/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">跗骨聯合（Tarsal Coalition）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    腳踝附近兩塊骨頭之間出現不正常的連結（骨性或軟骨性），導致足部活動受限，常表現為僵硬型扁平足，合併踝部或後足疼痛。多在青少年時期出現症狀，需以影像學（X光、CT或MRI）確診，嚴重時需手術處理。
+    <sup><a href="https://www.healthychildren.org/English/health-issues/conditions/orthopedic/Pages/Flat-Feet-Fallen-Arches.aspx" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 六、常見三大迷思解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「穿矯正鞋墊可以幫孩子把足弓撐起來」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 目前的科學研究一致顯示，鞋墊或矯正鞋並不能促進足弓的形成，對於無症狀的彈性扁平足幼童，不建議使用。<sup><a href="https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/children-and-young-peoples-muscles-bones-and-joints/flat-feet-in-children-and-young-people/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[8]</a></sup> 不必要的矯正器材不僅浪費金錢，有時甚至會限制足部肌肉自然鍛鍊的機會。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「孩子X型腿是因為坐姿不良或運動太少造成的」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 生理性X型腿主要由骨骼發育時程決定，與日常坐姿關係不大。在正常發育軌跡下，腿型的改變是由生長板的角度變化主導的，並非習慣造成。過度糾正孩子的坐姿、強迫孩子「站直」，在醫學上並無依據，也可能造成孩子的心理壓力。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「長大會自己好，所以完全不用理會」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>需要謹慎判斷！</strong> 大多數情況確實會自然改善，但這不代表所有情況都可以放著不管。若出現前述的就醫警訊——如年齡超過預期、兩側不對稱、出現疼痛或步態異常——就應該積極就醫評估。「等等看」是有條件的，而不是無限期的。<sup><a href="https://pediatricorthopedics.com/knock-knees-and-bowlegs-whats-normal-and-when-to-worry/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[15]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：幾歲以前發現O型腿不需要擔心？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      大原則是3歲前的O型腿幾乎都是正常的。3歲後若O型腿仍未改善或持續加重，才需要就醫評估。更重要的提示是：如果兩條腿的彎曲程度明顯不同，或走路姿勢異常，不論幾歲都應儘早就醫，不用等到3歲。<sup><a href="https://kidshealth.org/en/parents/bow-legs.html" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：孩子扁平足長大後會有運動問題嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      無症狀的彈性扁平足，即使持續到成年，對一般活動與運動通常不造成影響。許多優秀運動員都有扁平足。問題不在於足弓的高低，而在於是否出現疼痛、疲勞或功能受限。若成年後出現相關不適，此時再評估是否需要鞋墊或其他治療即可。<sup><a href="https://orthoinfo.aaos.org/en/diseases--conditions/flexible-flatfoot-in-children" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[16]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：需要照X光嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      大多數2歲以下的嬰幼兒不需要照X光，醫師透過理學檢查就能判斷。以下情況醫師可能會建議X光：孩子超過2歲且腿型仍明顯異常、兩腿不對稱、走路姿勢異常、或合併其他症狀（如疼痛、跛行）。X光的目的是排除生長板病變或骨骼疾病，而非所有腿型問題都需要。<sup><a href="https://www.relainstitute.com/articles/bow-legs-and-knock-knees-in-children-causes-symptoms-and-treatment/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：孩子走路內八，是腿型問題嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      走路內八（腳尖朝內）常與腿型問題一起被討論，但其實它通常是來自三個不同部位的旋轉問題：腳掌、脛骨（小腿骨）或股骨（大腿骨）。大多數的內八步態在8歲前也會自然改善，不需要特殊治療。若內八嚴重影響走路、容易跌倒，或8歲後仍明顯，才建議就醫評估。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：幾歲以後就算「來不及」自然矯正了？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      一般而言，骨骼在青春期後逐漸成熟，自然矯正的空間縮小。生長導引手術（在生長板旁邊置入小板子，引導骨骼往正確方向生長）適合在骨骼尚未成熟前執行，通常是青少年早期。等到骨骼完全成熟，若仍有嚴重畸形，則需要截骨矯形手術，複雜度更高。因此，若有疑慮，盡早就醫評估才能掌握最佳治療時機。<sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1751722224000179" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[17]</a></sup>
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    看完這篇文章，希望您心裡能踏實一些。孩子的腿型與足弓發展，本來就是一段漫長的旅程，不是每個階段都要「看起來直」才算正常。O型腿是新生兒的標配，X型腿是學齡前的必經過程，扁平足是嬰幼兒的生理現象——這些都是大自然設計好的發育劇本。
+  </p><br>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    家長最重要的功課，是掌握各年齡段的正常時程，以及認識那些真正需要就醫的警訊。若您對孩子的腿型有任何疑問，<strong style="color: #1e293b;">最好的做法永遠是帶孩子給有經驗的醫師看診，而不是自行購買矯正器材或依賴網路資訊。</strong>
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的各年齡發育表格，確認孩子的腿型是否在正常範圍內。若有任何警訊，或您仍感到不安心，歡迎帶孩子來門診讓醫師親自評估，一個正確的臨床檢查，能給您最準確的答案。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診評估
+    </a>
+  </div>
+</div>
+
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kalish, L.A., & Bhimji, S.S. (2023). Genu Valgum. StatPearls, NCBI Bookshelf. <a href="https://www.ncbi.nlm.nih.gov/books/NBK559244/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Bookshelf: NBK559244</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Halanski, M.A., & Noonan, K.J. (2025). Understanding Pediatric Flat Feet. Pediatrics in Review, 46(7), 409–411. American Academy of Pediatrics. <a href="https://publications.aap.org/pediatricsinreview/article/46/7/409/202405/Understanding-Pediatric-Flat-Feet" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1542/pir.2024-006456</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Arazi, M., Öğün, T.C., & Memik, R. (2001). Angular Deformities of the Lower Limb in Children. PMC3289162. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3289162/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 3289162</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Pediatric Orthopaedic Society of North America (POSNA). (2017). Pediatric Lower Extremity Disorders – Resident Review. <a href="https://posna.org/blogs/resident-review/december-2017/pediatric-lower-extremity-disorders" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Pediatric Orthopaedic Society of North America (POSNA). Genu Valgum – Physician Education Study Guide. <a href="https://posna.org/physician-education/study-guide/genu-valgum" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Michigan Foot Doctors. (2026). Pediatric Flatfoot: Children's Arch Development Guide. <a href="https://www.michiganfootdoctors.com/pediatric-flatfoot-children-treatment/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        American Academy of Pediatrics (AAP). HealthyChildren.org. Flat Feet &amp; Fallen Arches: When Is Treatment Needed? <a href="https://www.healthychildren.org/English/health-issues/conditions/orthopedic/Pages/Flat-Feet-Fallen-Arches.aspx" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        NHS Inform Scotland. (2025). Flat feet in children and young people. <a href="https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/children-and-young-peoples-muscles-bones-and-joints/flat-feet-in-children-and-young-people/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Nemours KidsHealth. Bow Legs (Genu Varum). <a href="https://kidshealth.org/en/parents/bow-legs.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Haladik, A.V. (2025). What To Know About Knock Knees In Kids. Henry Ford Health. <a href="https://www.henryford.com/blog/2025/07/knock-knees-in-kids" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Rela Institute. (2026). Bow Legs and Knock Knees in Children: Causes, Symptoms, and Treatment. <a href="https://www.relainstitute.com/articles/bow-legs-and-knock-knees-in-children-causes-symptoms-and-treatment/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Children's Hospital Colorado. Flatfoot in Children. <a href="https://www.childrenscolorado.org/conditions-and-advice/conditions-and-symptoms/conditions/flatfoot/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Children's Hospital Los Angeles. (2023). Genu Varum – Bowlegs in Children: What Physicians Need to Know. Peds Practice Tips. <a href="https://www.chla.org/blog/experts/peds-practice-tips/genu-varum-bowlegs-children-what-physicians-need-know" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Bone and Spine. (2026). Bow Legs and Knock Knees – Patient Guide. <a href="https://boneandspine.com/patient-guides/knee-leg/leg-deformity/bow-legs-and-knock-knees/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Pediatric Orthopedic Center. (2025). Knock Knees &amp; Bowlegs in Children: What's Normal and When to Worry. <a href="https://pediatricorthopedics.com/knock-knees-and-bowlegs-whats-normal-and-when-to-worry/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        American Academy of Orthopaedic Surgeons (AAOS). OrthoInfo. Flexible Flatfoot in Children. <a href="https://orthoinfo.aaos.org/en/diseases--conditions/flexible-flatfoot-in-children" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Gkiouras, K., et al. (2024). Genu valgum in children. ScienceDirect / Journal of Paediatrics and Child Health. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1751722224000179" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.paed.2024.01.001</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`,
+
+},
+
+{
   id: 'osteoporosis-medications-guide',
   title: '骨質疏鬆藥物全攻略：口服、注射怎麼選？治療選項全攻略',
   lastModified: '2026-05-21',

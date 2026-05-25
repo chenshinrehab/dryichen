@@ -60,7 +60,7 @@ const fullWeightLossData: WeightLossProgram[] = [
         <img src="/images/news/article/mounjaro/1.webp" alt="猛健樂全攻略懶人包1" class="responsive-img-enlarge">
         <img src="/images/news/article/mounjaro/2.webp" alt="猛健樂全攻略懶人包2" class="responsive-img-enlarge">
         <img src="/images/news/article/mounjaro/3.webp" alt="猛健樂全攻略懶人包3" class="responsive-img-enlarge">
-        <img src="/images/news/article/mounjaro/7.webp" alt="猛健樂全攻略懶人包4" class="responsive-img-enlarge">
+        <img src="/images/news/article/mounjaro/9.webp" alt="猛健樂全攻略懶人包4" class="responsive-img-enlarge">
         <img src="/images/news/article/mounjaro/5.webp" alt="猛健樂全攻略懶人包5" class="responsive-img-enlarge">
         <img src="/images/news/article/mounjaro/6.webp" alt="猛健樂全攻略懶人包6" class="responsive-img-enlarge">
 
@@ -93,7 +93,7 @@ const fullWeightLossData: WeightLossProgram[] = [
 
     <div style="background: white; padding: 0.75rem; border-radius: 0.5rem; border: 1px solid #e5e7eb; text-align: center;">
         <strong style="font-size: 1.1rem; color: #0891b2;">10 mg</strong>
-        <p style="margin: 0.25rem 0 0; color: #dc2626; font-weight: bold; font-size: 1.25rem;">$16,000</p>
+        <p style="margin: 0.25rem 0 0; color: #dc2626; font-weight: bold; font-size: 1.25rem;">$15,500</p>
     </div>
 </div>
 
@@ -118,7 +118,7 @@ const fullWeightLossData: WeightLossProgram[] = [
 </ul>
 </div>
 
-<p><img src="/images/weight-loss/mounjaro/e.webp" alt="猛健樂本月優惠與注意事項"></p>
+<p><img src="/images/weight-loss/mounjaro/h.webp" alt="猛健樂本月優惠與注意事項"></p>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
