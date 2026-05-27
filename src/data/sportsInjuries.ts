@@ -139,6 +139,12 @@ export const sportsInjuriesData = [
         description: '深度剖析台灣兒童性早熟的醫學定義與在地成因。從骨齡超前、環境荷爾蒙干擾到飲食誤區，提供全方位的預防對策，幫助家長守護孩子的長高黃金期。',
         image: '/images/news/article/precocious-puberty.webp',
       },
+                        {
+        slug: 'children-height-guide',
+        title: '兒童身高攻略全解析：遺傳、睡眠、飲食、運動，哪個最關鍵？',
+        description: '深度解析影響兒童身高的各大因素——遺傳佔幾成？睡眠如何決定生長激素分泌？跳繩真的有效嗎？轉骨湯、益生菌、蛋白補充品又有哪些實證？本文以最新科學研究為基礎，帶你看懂長高攻略。',
+        image: '/images/news/article/children-height-guide.webp',
+      },
             {
         slug: 'statin-induced-myalgia-analysis',
         title: '吃降血脂藥全身痠痛？解析哪種血脂藥容易引發肌肉痛？',
@@ -237,6 +243,7 @@ export const sportsInjuriesData = [
         description: '從醫學角度深度分析側睡與正睡（仰睡）的優缺點，涵蓋脊椎、肩膀旋轉肌群、骨盆、呼吸道及胃食道逆流等全面影響。實證研究揭露哪種睡姿更健康，並解析全球睡眠姿勢比例與個人化建議。',
         image: '/images/news/article/sleep-position-health-analysis.webp',
       },
+
                         {
         slug: 'diurnal-height-change',
         title: '📏 不用喝轉骨湯！每天早上起床，你都會自動「長高 1 公分」！',
@@ -254,6 +261,12 @@ export const sportsInjuriesData = [
         title: '小朋友為什麼會駝背？運動醫學完整解析：成因、治療與矯正運動',
         description: '深度解析兒童及青少年駝背（胸椎後凸）的成因，包含姿勢性駝背、許爾曼氏病與先天因素。提供實證支持的保守治療策略，以及家長可帶孩子練習的核心強化、伸展與矯正運動。',
         image: '/images/news/article/children-kyphosis-guide.webp',
+      },
+                      {
+        slug: 'sleep-duration-guide',
+        title: '睡眠時間全解析：為何年紀大睡不久？幾點睡最好？',
+        description: '從新生兒到銀髮族，依據國際實證研究詳解各年齡層每天應睡幾小時。科學說明為何年紀越大越早醒、睡眠越少，以及最佳入睡時間的研究證據，幫助你打造符合自身生理時鐘的高品質睡眠。',
+        image: '/images/news/article/sleep-duration-guide.webp',
       },
           {
         slug: 'why-cats-dont-get-stiff-neck',

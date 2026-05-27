@@ -2,12 +2,649 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
 
+
+
+{
+id: 'caffeine-safety-and-myths',
+  title: '咖啡因全攻略：每天喝多少才安全？紅黃綠燈與常見迷思一次看懂',
+  lastModified: '2026-05-27',
+  category: '衛教文章',
+  date: '2026-05-27',
+  summary: '從運動醫學與臨床研究角度深入剖析咖啡因對人體的影響。每天喝多少咖啡或茶才算過量？台灣最新的現調飲料紅黃綠燈號該如何判斷？本文帶你釐清空腹喝咖啡、孕婦飲用限制以及茶葉咖啡因等常見誤區，並解析適量攝取對專注力、運動表現的實證好處。',
+  coverImage: '/images/news/article/caffeine-safety-guide.webp',
+  seoTitle: '咖啡因安全劑量全解析：紅黃綠燈號與常見三大迷思 - 衛教知識',
+  seoDescription: '你每天攝取的咖啡因超標了嗎？本文由醫學研究出發，拆解健康成人、孕婦與孩童的每日咖啡因安全上限。教你利用台灣食藥署紅黃綠燈號快速計算，並破解「喝茶比喝咖啡安全」、「淺焙與深焙濃度」等常見三大健康誤區。',
+  keywords: [
+    '咖啡因上限',
+    '咖啡因過量',
+    '紅黃綠燈號',
+    '手搖飲咖啡因',
+    '冷萃咖啡',
+    '咖啡因戒斷',
+    '孕婦咖啡因',
+    '運動表現咖啡因',
+    '腺苷接受器',
+    '健康衛教'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    咖啡因是全球使用最廣泛的精神活性物質，存在於咖啡、茶葉、手搖飲、可樂與能量飲料中。根據美國食品藥物管理局（FDA）與歐洲食品安全局（EFSA）的建議，健康成人每日攝取咖啡因上限為 400 毫克，孕婦則應控制在 200 毫克以下。適量攝取咖啡因可提升認知表現與運動效能、降低第二型糖尿病與心血管疾病風險，並可能對神經退化性疾病有保護作用；但過量攝取則會引發失眠、焦慮、心悸與鈣質流失等不良效應。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6212940/" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[1]</a></sup>
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12794424/" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[2]</a></sup>
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8000732/" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[3]</a></sup>
+    台灣衛福部食藥署已於 2023 年起要求所有含咖啡因現調飲料強制標示含量，民眾可依紅黃綠燈號判斷每日飲用上限。本文將用清楚易懂的方式，帶你了解每天喝多少才安全、哪些飲品含量最高，以及哪些人應該特別小心。
+  </p>
+</div>
+ 
+<hr>
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2>一、咖啡因是什麼？它怎麼讓你「清醒」？</h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    你有沒有想過，為什麼喝一杯咖啡或一杯茶，就能讓睡意消散、思緒變清晰？
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    原因在於咖啡因的化學結構跟大腦裡讓你想睡覺的物質——腺苷（adenosine）——長得非常像。腺苷在你清醒的時間裡持續累積，一旦附著在大腦的腺苷接受器上，就會讓你昏昏欲睡。而咖啡因進入體內後，會搶先佔據這些接受器，但不會發出「想睡」的訊號，於是大腦誤以為你還精力充沛，睡意自然被「騙走」了。
+    <sup><a href="https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2017.00080/pdf" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    咖啡因廣泛存在於咖啡豆、茶葉、可可、瓜拿納等六十多種植物中，也可人工合成加入能量飲料與部分止痛藥。一般飲用後約 45 分鐘達到血液高峰濃度，半衰期約 3 至 5 小時，代表你下午三點喝的咖啡，到晚上八點仍有一半的咖啡因在體內運作。
+    <sup><a href="https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2017.00080/pdf" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[4]</a></sup>
+  </p>
+</section>
+ 
+<hr>
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2>二、每天喝多少才安全？官方建議一次看懂</h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    對於大多數健康成人而言，每日咖啡因攝取量建議不超過 <strong style="color: #2dd4bf;">400 毫克</strong>。這是美國 FDA 與歐盟 EFSA 共同確認的安全上限，大約相當於 3 至 4 杯一般沖泡咖啡的量。
+    <sup><a href="https://www.eufic.org/en/whats-in-food/article/efsa-opinion-on-the-safety-of-caffeine" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
+  </p>
+ 
+  <div style="background-color: #1e293b; border-radius: 1rem; padding: 1.5rem; margin: 1.5rem 0;">
+    <h3 style="color: #2dd4bf; margin-top: 0;">📊 不同族群的每日安全建議量</h3>
+    <ul style="list-style: none; padding: 0; margin: 0; color: #cbd5e1;">
+      <li style="margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #334155;">
+        <strong style="color: #fff;">一般健康成人：</strong>每日不超過 400 毫克（約 3–4 杯咖啡）
+      </li>
+      <li style="margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #334155;">
+        <strong style="color: #fff;">孕婦與哺乳中女性：</strong>每日不超過 200 毫克（約 1–2 杯咖啡）
+        <sup><a href="https://www.eufic.org/en/whats-in-food/article/efsa-opinion-on-the-safety-of-caffeine" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
+      </li>
+      <li style="margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #334155;">
+        <strong style="color: #fff;">兒童與青少年（3–18 歲）：</strong>每日每公斤體重不超過 3 毫克（例如體重 40 公斤的國中生，上限約 120 毫克）
+        <sup><a href="https://www.eufic.org/en/whats-in-food/article/efsa-opinion-on-the-safety-of-caffeine" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
+      </li>
+      <li>
+        <strong style="color: #fff;">心血管疾病、心律不整、長期失眠、腸胃疾病患者：</strong>建議減量或完全避免
+        <sup><a href="https://www.mohw.gov.tw/cp-3204-21749-1.html" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[6]</a></sup>
+      </li>
+    </ul>
+  </div>
+ 
+  <h3>台灣食藥署的紅黃綠燈標示制度</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    從 2023 年元旦起，台灣衛福部食藥署規定，所有連鎖超商、手搖飲店等販售的現調含咖啡因飲料，都必須標示每杯咖啡因含量，並以紅、黃、綠三色燈號標示：
+    <sup><a href="https://www.mohw.gov.tw/cp-5269-69828-1.html" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[7]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ef4444;">🔴 紅燈：</strong>每杯咖啡因 ≥ 201 毫克，健康成人<strong style="color: #fff;">每日最多一杯</strong></li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #eab308;">🟡 黃燈：</strong>每杯咖啡因 101–200 毫克，健康成人<strong style="color: #fff;">每日最多兩杯</strong></li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #22c55e;">🟢 綠燈：</strong>每杯咖啡因 ≤ 100 毫克，健康成人<strong style="color: #fff;">每日最多三杯</strong></li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem;">
+    這個制度讓消費者可以在購買時快速判斷每杯飲品的咖啡因等級，是很實用的參考工具。不過要注意，這個上限是「每種飲品」的單獨建議，如果你一天喝了兩杯黃燈加一杯綠燈，總量可能已經超過 400 毫克了。
+  </p>
+</section>
+ 
+<hr>
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2>三、咖啡因對身體的好處</h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    適量的咖啡因，對大多數人來說不只是「不會怎樣」，更有一系列經過研究支持的健康益處。
+  </p>
+ 
+  <h3>① 提升專注力、反應速度與記憶力</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    咖啡因透過阻斷腺苷接受器，間接提升多巴胺與正腎上腺素的活性，使大腦維持清醒與專注狀態。系統性回顧研究指出，低至中等劑量的咖啡因能顯著改善注意力、反應速度與短期記憶的表現。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8000732/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[3]</a></sup>
+  </p>
+ 
+  <h3>② 提升運動表現與體能耐受力</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    國際運動營養學會（ISSN）的立場聲明指出，每公斤體重攝取 3–6 毫克的咖啡因（即體重 60 公斤的人約需 180–360 毫克），能持續性改善耐力型運動表現，並在爆發力、肌力、衝刺等面向也有中等程度的提升效果，且建議在運動前約 60 分鐘攝取效果最佳。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7777221/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[8]</a></sup>
+  </p>
+ 
+  <h3>③ 降低第二型糖尿病風險</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    多項大型前瞻性世代研究的統合分析顯示，規律飲用咖啡者罹患第二型糖尿病的風險比不喝者降低約 29%，且這個效果在咖啡因與去咖啡因咖啡中均可觀察到，意味著咖啡中的多酚類物質也扮演了重要角色。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12794424/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
+  </p>
+ 
+  <h3>④ 保護肝臟與降低某些癌症風險</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    北歐營養建議委員會的系統性回顧指出，適量飲用咖啡與肝癌、子宮內膜癌風險降低有顯著關聯，同時也與較低的全因死亡率相關，且目前尚未發現長期適量攝取對健康有害的強力證據。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10989231/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[9]</a></sup>
+  </p>
+ 
+  <h3>⑤ 可能降低神經退化性疾病風險</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    一篇系統性回顧研究發現，每日攝取超過 200 毫克咖啡因，與阿茲海默症及認知退化風險降低有一致性關聯。另有研究顯示，咖啡攝取與帕金森氏症較晚發病年齡相關。不過研究者也指出，這些發現多來自觀察性研究，尚需更多隨機對照試驗加以確認。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12009456/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[10]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 醫師觀點</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      美國醫學學會（AMA）的醫師指出：「咖啡和茶是飲食中真正的亮點——我們喜歡它們，它們也對我們好。兩者都與降低心血管疾病風險、第二型糖尿病風險及改善壽命等多種健康效益有所關聯。」但前提是「適量」，並在適當的時間飲用。
+    </p>
+  </div>
+</section>
+ 
+<hr>
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2>四、咖啡因對身體的壞處</h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    事情有兩面：超過安全劑量，或者在錯誤的時間點喝，咖啡因就不再是你的朋友了。
+  </p>
+ 
+  <h3>① 干擾睡眠品質</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    EFSA 的研究指出，即使是單次 100 毫克的咖啡因（相當於一杯綠燈飲品），若在睡前攝取，也可能延長入睡時間並縮短總睡眠時數。這個效應在不常喝咖啡因的人身上更為明顯。一般建議，下午 2 點後盡量避免攝取咖啡因，以免影響夜間睡眠品質。
+    <sup><a href="https://www.eufic.org/en/whats-in-food/article/efsa-opinion-on-the-safety-of-caffeine" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
+  </p>
+ 
+  <h3>② 引發焦慮、心悸與躁動</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    咖啡因刺激兒茶酚胺（catecholamines）釋放，過量攝取時會出現神經過敏、煩躁不安、焦慮感增加、心跳加速等症狀。研究也指出，本身有焦慮症的人對咖啡因的反應更為敏感，症狀可能更為顯著。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12269801/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[11]</a></sup>
+  </p>
+ 
+  <h3>③ 造成鈣質流失、骨質疏鬆風險</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    高劑量咖啡因會干擾身體對鈣質的吸收與代謝，長期過量攝取可能增加骨質流失風險，對已有骨質疏鬆傾向的人尤其需要注意。台灣衛福部食藥署也特別提醒，骨質已有疏鬆情形者若仍想享用咖啡，應記得多補充鈣質。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12269801/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[11]</a></sup>
+  </p>
+ 
+  <h3>④ 孕期攝取過量影響胎兒健康</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    孕婦攝取過量咖啡因（超過每日 200 毫克）已被研究關聯到較高的流產、早產及低出生體重風險。咖啡因可穿透胎盤，胎兒代謝咖啡因的能力遠比成人慢，因此孕婦需特別謹慎，此標準也被美國婦產科醫學會（ACOG）所採用。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10989231/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[9]</a></sup>
+  </p>
+ 
+  <h3>⑤ 產生依賴性與戒斷症狀</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    長期規律攝取咖啡因會產生耐受性（需要更多量才能達到同樣效果）。若突然停止，可能出現頭痛、疲憊、易怒、集中力下降、焦慮等戒斷症狀，通常持續 2 至 9 天。建議若要減量，應採漸進式遞減，而非突然停止。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12269801/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[11]</a></sup>
+  </p>
+ 
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 注意：</strong>當一天攝取的咖啡因超過 500 毫克時，容易出現煩躁不安、焦慮、易怒、心悸、噁心及頻尿等輕度中毒現象；若一天攝取超過 10,000 毫克（10 公克），可能引起全身抽搐、昏迷、嚴重心律不整等危及生命的症狀。純咖啡因粉末需特別注意，一茶匙純粉可能等同於 100 杯咖啡的咖啡因量。
+    </p>
+  </div>
+</section>
+ 
+<hr>
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2>五、各種飲品咖啡因含量比較</h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    很多人喝了一整天的飲料，卻不清楚自己攝取了多少咖啡因。以下整理了常見飲品的咖啡因參考含量，讓你一目了然。
+  </p>
+ 
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+
+
+  <h3>☕ 咖啡類飲品</h3>
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>飲品名稱</th>
+          <th>份量</th>
+          <th>咖啡因含量（參考值）</th>
+          <th>台灣燈號</th>
+          <th>每日建議上限</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>濃縮咖啡（Espresso，單份）</td>
+          <td>約 30 ml</td>
+          <td>60–75 mg</td>
+          <td>🟢 綠燈</td>
+          <td>最多 3 杯</td>
+        </tr>
+        <tr>
+          <td>美式咖啡（Americano，中杯）</td>
+          <td>約 360 ml</td>
+          <td>130–225 mg</td>
+          <td>🟡 黃燈</td>
+          <td>最多 2 杯</td>
+        </tr>
+        <tr>
+          <td>拿鐵（Latte，中杯）</td>
+          <td>約 360 ml</td>
+          <td>75–170 mg</td>
+          <td>🟢–🟡</td>
+          <td>視含量而定</td>
+        </tr>
+        <tr>
+          <td>卡布奇諾（Cappuccino，中杯）</td>
+          <td>約 300 ml</td>
+          <td>63–150 mg</td>
+          <td>🟢–🟡</td>
+          <td>視含量而定</td>
+        </tr>
+        <tr>
+          <td>冷萃咖啡（Cold Brew，中杯）</td>
+          <td>約 300 ml</td>
+          <td>150–295 mg</td>
+          <td>🟡–🔴</td>
+          <td>最多 1–2 杯</td>
+        </tr>
+        <tr>
+          <td>超商大杯熱咖啡</td>
+          <td>約 480–600 ml</td>
+          <td>315–490 mg</td>
+          <td>🔴 紅燈</td>
+          <td>最多 1 杯</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="color: #94a3b8; font-size: 0.9rem; margin-top: 0.5rem;">※ 各品牌與沖泡方式不同，數字為參考範圍。建議購買前確認門市標示。
+  <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11314177/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[12]</a></sup>
+  <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11124071/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[13]</a></sup>
+  </p>
+ 
+  <h3>🧋 市售茶飲與手搖杯</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    手搖飲是許多台灣人每天的日常，但很多人不知道，一杯珍珠奶茶的咖啡因含量可能跟一杯美式咖啡差不多。自 2023 年起，台灣規定手搖飲也需標示咖啡因，購買前記得看一下。
+    <sup><a href="https://www.mohw.gov.tw/cp-5269-69828-1.html" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[7]</a></sup>
+  </p>
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>飲品名稱</th>
+          <th>份量</th>
+          <th>咖啡因含量（參考值）</th>
+          <th>台灣燈號</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>珍珠奶茶（紅茶底）</td>
+          <td>700 ml</td>
+          <td>100–160 mg</td>
+          <td>🟡 黃燈</td>
+          <td>紅茶底咖啡因較高</td>
+        </tr>
+        <tr>
+          <td>綠茶手搖杯</td>
+          <td>700 ml</td>
+          <td>50–100 mg</td>
+          <td>🟢 綠燈</td>
+          <td>因沖泡方式差異大</td>
+        </tr>
+        <tr>
+          <td>烏龍茶手搖杯</td>
+          <td>700 ml</td>
+          <td>30–90 mg</td>
+          <td>🟢 綠燈</td>
+          <td>重焙火者咖啡因較低</td>
+        </tr>
+        <tr>
+          <td>紅茶手搖杯</td>
+          <td>700 ml</td>
+          <td>80–150 mg</td>
+          <td>🟢–🟡</td>
+          <td>全發酵茶，咖啡因偏高</td>
+        </tr>
+        <tr>
+          <td>抹茶拿鐵</td>
+          <td>360 ml</td>
+          <td>40–90 mg</td>
+          <td>🟢 綠燈</td>
+          <td>抹茶含 L-茶胺酸，清醒感較平穩</td>
+        </tr>
+        <tr>
+          <td>花草茶（洋甘菊、薄荷等）</td>
+          <td>任意</td>
+          <td>0 mg</td>
+          <td>無咖啡因</td>
+          <td>純花草茶不含咖啡因</td>
+        </tr>
+        <tr>
+          <td>能量飲料（250 ml 罐）</td>
+          <td>250 ml</td>
+          <td>80–120 mg</td>
+          <td>🟢–🟡</td>
+          <td>注意與高糖、牛磺酸合併效應</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="color: #94a3b8; font-size: 0.9rem; margin-top: 0.5rem;">※ 手搖飲咖啡因因茶葉品質、沖泡時間與溫度差異顯著，上述為一般範圍估計。
+  <sup><a href="https://pearllemonboba.com/how-much-caffeine-in-bubble-tea/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[14]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 你可能不知道的事</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      許多人以為「喝茶一定比喝咖啡安全」，這其實是個迷思。一杯高品質嫩芽綠茶的咖啡因，可能高過一杯義式濃縮咖啡。決定茶葉咖啡因含量的關鍵因素包括：沖泡溫度（高溫釋放更多）、茶葉部位（嫩芽最高）、焙火程度（重焙者較低）以及是否為冷泡（冷泡茶的咖啡因約為熱泡的 30–50%）。
+    </p>
+  </div>
+</section>
+ 
+<hr>
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2>六、美式 vs. 拿鐵 vs. 冷萃：哪個咖啡因最高？</h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    很多人以為喝起來「味道最濃」的就是咖啡因最高的，但事實並非如此。
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #fff;">美式咖啡（Americano）：</strong>以濃縮咖啡加熱水製成，每份平均咖啡因約 143 毫克，且含有豐富多酚類物質。研究顯示，美式咖啡的總多酚含量是各類咖啡中最高的，咖啡因與多酚比值也最為理想。
+      <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11124071/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[13]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #fff;">拿鐵（Latte）：</strong>由 1–2 份濃縮咖啡加大量蒸奶組成，咖啡因主要來自濃縮咖啡的份數，一般中杯（single shot）約 75–100 毫克，雙份約 150–170 毫克。牛奶不含咖啡因，只是稀釋了口感。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #fff;">冷萃咖啡（Cold Brew）：</strong>因為浸泡時間長（8–24 小時）、且使用的咖啡粉比例較高（約一般熱沖的 1.5 倍），冷萃的咖啡因濃度往往超乎預期，一瓶 300 ml 的成品可達 150–295 毫克，屬於需要特別注意的高咖啡因飲品。
+      <sup><a href="https://www.cspi.org/article/how-much-caffeine-coffee-tea-soda-and-other-foods" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[15]</a></sup>
+    </li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem;">
+    一個常被忽略的事實是：<strong style="color: #fff;">淺焙咖啡的咖啡因通常比深焙稍高</strong>——因為烘焙過程會分解部分咖啡因，深烘焙雖然喝起來口感更苦、更「重」，但咖啡因反而略低一些。
+  </p>
+</section>
+ 
+<hr>
+ 
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 七、常見三大誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「喝茶比喝咖啡安全，不用擔心咖啡因」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不完全正確！</strong>高品質嫩芽綠茶或重泡紅茶的咖啡因含量，可能與一杯咖啡相當。且台灣的大杯手搖飲（700 ml）使用的茶葉量遠超一般沖泡，咖啡因累積量不容小覷。每天喝三杯手搖飲，咖啡因總量可能輕鬆超過 400 毫克。<sup><a href="https://www.teapark.com.tw/zh-TW/blogs/lifetea/tea_know02" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[16]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「我喝很多咖啡都沒事，代表我可以無限攝取」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>危險思維！</strong>個人對咖啡因的耐受程度確實存在差異（與 CYP1A2 基因有關），但「沒有明顯症狀」不代表沒有傷害。研究顯示，長期高量攝取咖啡因仍會造成睡眠品質下降（即使你不覺得睡不著）、骨密度降低，以及在特定族群中增加心血管負擔。<sup><a href="https://www.sciencedirect.com/science/article/pii/S0278691517301709" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[1]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「孕婦完全不能喝咖啡或茶」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度限制，反而增加心理壓力！</strong>目前主流醫學建議孕婦每日咖啡因攝取不超過 200 毫克，而非零攝取。一杯小杯的咖啡（約 75–100 毫克）或一兩杯淡茶，在此範圍內並不會對胎兒造成已知傷害。但孕婦代謝咖啡因的速度比一般人慢，需要更加謹慎計算每日總量，包含茶、可樂、巧克力等隱形來源。<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10989231/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[9]</a></sup></span>
+        </div>
+      </li>
+ 
+    </ul>
+  </div>
+</section>
+ 
+<hr>
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2>八、這些族群需要特別注意</h2>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem;">
+    <li style="margin-bottom: 1rem;"><strong style="color: #fff;">孕婦與備孕者：</strong>每日上限 200 毫克，建議選擇低咖啡因或不含咖啡因的飲品</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #fff;">兒童與青少年：</strong>每公斤體重每日不超過 3 毫克，能量飲料尤其需要避免</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #fff;">心臟病、高血壓、心律不整患者：</strong>咖啡因會短暫升高血壓並可能誘發心悸，建議諮詢醫師個別評估</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #fff;">骨質疏鬆高風險族群（尤其停經女性）：</strong>高量咖啡因加速鈣質流失，若仍想飲用，應確保鈣質攝取充足</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #fff;">焦慮症、恐慌症患者：</strong>咖啡因會加劇焦慮症狀，建議大幅減量或停止攝取</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #fff;">正在服用某些藥物者：</strong>咖啡因與甲狀腺素、含麻黃鹼的感冒藥、鎮定安眠藥等可能產生交互作用，服藥前應諮詢醫師或藥師<sup><a href="https://www.top1health.com/Article/89686" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[17]</a></sup></li>
+  </ul>
+</section>
+ 
+<hr>
+ 
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">☕</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q1：空腹喝咖啡會傷胃嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      咖啡因會刺激胃酸分泌，對空腹狀態下的人可能引起胃部不適，包括胃痛、噁心或灼熱感。若你有胃食道逆流或腸胃敏感的問題，建議搭配食物飲用，或改選低酸咖啡、冷萃咖啡（酸性較低）。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q2：喝無糖飲料但含咖啡因，還需要擔心嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      無糖飲料解決了糖分問題，但咖啡因的生理效應依然存在。減少糖分攝取固然是好事，但仍需計算當日咖啡因總量，避免超過 400 毫克的安全上限。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q3：幾點之前喝咖啡比較不會影響睡眠？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      咖啡因的半衰期約為 3–5 小時，個體差異從 2 至 10 小時不等。一般建議在下午 2 點之前停止攝取咖啡因。若你對咖啡因敏感，或計畫晚上 10–11 點入睡，中午之後就應避免。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q4：抹茶的咖啡因跟咖啡相比如何？有什麼不同的感覺？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      抹茶的咖啡因含量雖低於一般咖啡（一杯抹茶拿鐵約 40–90 毫克），但抹茶中含有 L-茶胺酸（L-theanine），這種胺基酸能修飾咖啡因的作用，使清醒感更為平穩持久，較少出現咖啡帶來的「心跳加速」或「焦慮感」。這也是許多人覺得喝抹茶「比較舒服」的原因。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q5：我每天都喝咖啡，想戒掉要怎麼做？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      建議採漸進式減量，每週減少 10–25% 的攝取量，而不是突然停止。可以用以下方式替代：將部分咖啡換成低咖啡因咖啡或花草茶、把手沖換成半份咖啡豆、減少飲用次數等。戒斷症狀（頭痛、疲憊）通常在 2–9 天內緩解。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12269801/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[11]</a></sup>
+    </p>
+ 
+  </div>
+</section>
+ 
+<hr>
+ 
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+ 
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    咖啡因既不是洪水猛獸，也不是完全無害的飲料。它的健康效益與風險，高度取決於你喝了多少、什麼時候喝、以及你的個人體質與健康狀況。
+  </p>
+ 
+  <p style="color: #475569; font-size: 1.05rem;">
+    記住幾個簡單原則：<strong style="color: #1e293b;">健康成人每日不超過 400 毫克、下午 2 點後盡量停喝、孕婦減半至 200 毫克</strong>。購買手搖飲或咖啡時，多看一眼紅黃綠燈號，並把一天所有含咖啡因的食物飲料加在一起計算，包括你喝的可樂、吃的巧克力、甚至服的止痛藥。
+  </p>
+ 
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 今天就試試：打開你手邊的飲料，找到咖啡因標示，計算一下你今天喝了多少毫克。這個小動作，可能讓你對自己的日常習慣有全新的認識。
+    </p>
+  </div>
+</div>
+ 
+<!-- ===== referencesHtml ===== -->
+ 
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Wikoff, D., et al. (2017). Systematic review of the potential adverse effects of caffeine consumption in healthy adults, pregnant women, adolescents, and children. <em>Food and Chemical Toxicology</em>, 109, 585–648. <a href="https://www.sciencedirect.com/science/article/pii/S0278691517301709" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.fct.2017.04.002</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Ruggiero, M., et al. (2025). Habitual Coffee Consumption and Systemic Health Outcomes: A Comprehensive Review. PMC12794424. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12794424/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12794424</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Souza, D.B., et al. (2021). Caffeine and Cognitive Functions in Sports: A Systematic Review and Meta-Analysis. PMC8000732. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8000732/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8000732</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Temple, J.L., et al. (2017). The Safety of Ingested Caffeine: A Comprehensive Review. <em>Frontiers in Psychiatry</em>, 8, 80. <a href="https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2017.00080/full" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3389/fpsyt.2017.00080</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        European Food Safety Authority (EFSA). (2015). EFSA opinion on the safety of caffeine. European Food Information Council (EUFIC). <a href="https://www.eufic.org/en/whats-in-food/article/efsa-opinion-on-the-safety-of-caffeine" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        衛生福利部食品藥物管理署（2013）。選購認清咖啡因含量，保障你我健康。衛福部官方公告。 <a href="https://www.mohw.gov.tw/cp-3204-21749-1.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        衛生福利部（2022）。公告修正現場調製飲料標示規定，擴大應標示總咖啡因含量之產品範圍，自 112 年 1 月 1 日生效。 <a href="https://www.mohw.gov.tw/cp-5269-69828-1.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Guest, N.S., et al. (2021). International society of sports nutrition position stand: caffeine and exercise performance. PMC7777221. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7777221/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7777221</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Blomhoff, R., et al. (2023). Beverages – a scoping review for Nordic Nutrition Recommendations 2023. PMC10989231. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10989231/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10989231</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Al-Kuraishy, H.M., et al. (2025). Association Between Caffeine Intake and Alzheimer's Disease Progression: A Systematic Review. PMC12009456. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12009456/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12009456</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Abiodun, O., et al. (2024). Caffeine Consumption Patterns, Health Impacts, and Media Influence: A Narrative Review. PMC12269801. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12269801/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12269801</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Krupa, K., et al. (2024). Evaluation of the Caffeine Content in Servings of Popular Coffees in Terms of Its Safe Intake. PMC11314177. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11314177/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11314177</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Brodowska, A., et al. (2024). Polyphenols vs. Caffeine in Coffee from Franchise Coffee Shops: Which Serving of Coffee Provides the Optimal Amount. PMC11124071. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11124071/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11124071</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Pearl Lemon Boba. (2023). Bubble Tea Caffeine Content – What You Should Know. <a href="https://pearllemonboba.com/how-much-caffeine-in-bubble-tea/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Center for Science in the Public Interest (CSPI). (2025). How much caffeine is in coffee, tea, soda, and other foods? <a href="https://www.cspi.org/article/how-much-caffeine-coffee-tea-soda-and-other-foods" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        TeaPark 沁意茶苑（2025）。各類飲品咖啡因比較──每天喝的咖啡因有多少？ <a href="https://www.teapark.com.tw/zh-TW/blogs/lifetea/tea_know02" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        華人健康網・李宜軒醫師（2022）。咖啡因紅黃綠燈分得清？一張表看懂！醫：4種隱藏咖啡因食品別輕忽。 <a href="https://www.top1health.com/Article/89686" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+
+
 {
   id: 'children-squatting-difficulty',
   title: '小朋友蹲不下去？學校健檢發現蹲踞困難，家長必讀完整解析',
-  lastModified: '2026-05-25',
+  lastModified: '2026-05-26',
   category: '衛教文章',
-  date: '2026-05-25',
+  date: '2026-05-26',
   summary: '學校健康檢查發現孩子蹲踞困難，家長先別緊張！本文完整解析蹲踞困難的常見原因——從跟腱過緊、扁平足、髖關節發育問題到股骨過度前傾，並說明何時需要就醫、如何配合治療，幫助家長正確認識、不過度焦慮。',
   coverImage: '/images/news/article/squatting-difficulty.webp',
   seoTitle: '小朋友蹲不下去？學校健檢蹲踞困難完整解析｜家長必讀',
@@ -28,7 +665,7 @@ export const articlesData: NewsPost[] = [
   <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
     每年學校健康檢查，不少家長接到通知，說孩子「蹲踞困難」，需要到診所進一步評估。「蹲踞」這個動作，需要腳踝、膝蓋、髖關節三個部位同時配合，任何一個環節受限，小朋友就會蹲不下去或蹲姿明顯異常。最常見的原因是<strong>跟腱（阿基里斯腱）過緊</strong>造成腳踝背屈受限，其次是<strong>扁平足</strong>合併跟腱攣縮、<strong>髖關節發育問題</strong>，以及少見的<strong>股骨過度前傾</strong>。研究指出，台灣每1,000名新生兒中約有1-2位有髖關節發育不良問題。
-    <sup>[1]</sup>
+    <sup>[1]</sup><br><br>
     大多數兒童的蹲踞困難是可以改善的，關鍵在於及早評估、找出原因，並搭配適合的伸展運動或治療。本文以淺白易懂的方式，幫助家長理解為什麼小孩會蹲踞困難，以及下一步該怎麼做。
   </p>
 </div>
@@ -40,7 +677,7 @@ export const articlesData: NewsPost[] = [
     一、什麼是「蹲踞動作」？為什麼學校要檢查這個？
   </h2>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    蹲踞（squatting）是一個看似簡單卻需要全身協調的動作：雙腳踩地、膝蓋彎曲、臀部向下蹲低，同時腳跟要穩穩貼在地面上。要完成這個動作，需要<strong style="color: #2dd4bf;">腳踝、膝蓋、髖關節</strong>三個關節協調合作，其中腳踝的「背屈（dorsiflexion）」——也就是腳尖上翹的動作——是最關鍵的環節。
+    蹲踞是一個看似簡單卻需要全身協調的動作：雙腳踩地、膝蓋彎曲、臀部向下蹲低，同時腳跟要穩穩貼在地面上。要完成這個動作，需要<strong style="color: #2dd4bf;">腳踝、膝蓋、髖關節</strong>三個關節協調合作，其中腳踝的「背屈」——也就是腳尖上翹的動作——是最關鍵的環節。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
     學校健康檢查之所以要測試蹲踞動作，是因為這個動作能反映兒童整體下肢骨骼肌肉發育的狀況。當孩子蹲不下去、蹲的時候腳跟離地、或是蹲姿明顯左右不對稱，就可能代表某個部位需要進一步評估。
@@ -76,7 +713,7 @@ export const articlesData: NewsPost[] = [
  
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">原因二：扁平足合併跟腱攣縮</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    扁平足（flat foot）是指站立時足底內側縱弓消失、腳跟外翻的現象。值得家長了解的是，2歲以下的嬰幼兒幾乎全是扁平足，3歲後才開始發育足弓，大多數孩子到7-10歲才會發育至成人的足弓高度，因此學齡前的扁平足多半屬於正常發育過程。
+    扁平足是指站立時足底內側縱弓消失、腳跟外翻的現象。值得家長了解的是，2歲以下的嬰幼兒幾乎全是扁平足，3歲後才開始發育足弓，大多數孩子到7-10歲才會發育至成人的足弓高度，因此學齡前的扁平足多半屬於正常發育過程。
     <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3464168/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
@@ -98,7 +735,7 @@ export const articlesData: NewsPost[] = [
     </p>
   </div>
  
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">原因三：髖關節發育問題（DDH）</h3>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">原因三：髖關節發育問題</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     「發展性髖關節發育不良（Developmental Dysplasia of the Hip，DDH）」是嬰幼兒最常見的髖部疾病，指的是髖臼（骨盆上的凹槽）發育不足，導致股骨頭（大腿骨頂端的圓球）覆蓋不佳、關節不穩定。台灣每1,000名新生兒中約有1.5位有此問題。
     <sup><a href="https://cmuch.cmu.edu.tw/NewsInfo/NewsArticle?no=622" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
@@ -116,7 +753,7 @@ export const articlesData: NewsPost[] = [
     <li style="margin-bottom: 0.5rem;">合併先天性斜頸或足踝變形</li>
   </ul>
  
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">原因四：股骨過度前傾（Increased Femoral Anteversion）</h3>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">原因四：股骨過度前傾</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     股骨前傾角度是指大腿骨（股骨）頸部相對於骨幹的扭轉程度。新生兒天生股骨前傾角度較大（約45度），隨著成長會逐漸減少到成人約15度左右。部分孩子的前傾角度減少得比較慢或不足，就稱為「股骨過度前傾」。
     <sup><a href="https://www.hch.gov.tw/?aid=626&pid=29&page_name=detail&iid=1145" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
@@ -319,13 +956,13 @@ export const articlesData: NewsPost[] = [
     輔助方式包含足弓鞋墊、適合的運動鞋，以及肌力訓練（強化小腿後側肌群與足底內在肌群）。嚴重的僵硬性扁平足或合併其他骨骼結構問題時，才需考慮手術。
   </p>
  
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">髖關節發育不良（DDH）：越早治療效果越好</h3>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">髖關節發育不良：越早治療效果越好</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
     DDH的治療原則是：<strong style="color: #ffffff;">越早發現、越早治療，效果越好，方式也越簡單。</strong>
     <sup><a href="https://mammy.hpa.gov.tw/Home/NewsKBContent?id=1994&type=01" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
   </p>
   <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">6個月以內：</strong>使用「帕式吊帶（Pavlik harness）」，讓髖關節維持在正確的屈曲外展位置，促進髖臼自然發育，通常需使用2-6個月</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">6個月以內：</strong>使用「帕式吊帶」，讓髖關節維持在正確的屈曲外展位置，促進髖臼自然發育，通常需使用2-6個月</li>
     <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">6個月至1.5歲：</strong>若吊帶效果不佳，考慮髖關節外展支架或在麻醉下徒手復位加石膏固定</li>
     <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">1.5歲以上或開始走路後才發現：</strong>通常需要手術復位，難度與恢復時間均增加</li>
   </ul>
@@ -426,7 +1063,7 @@ export const articlesData: NewsPost[] = [
       Q2：要掛哪一科？
     </h3>
     <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      蹲踞困難的問題可以掛「小兒骨科」或「骨科」，如果診所有復健科也可以先評估。如果同時有走路內八、步態異常等問題，小兒骨科是最直接的選擇。如果孩子有整體動作發展遲緩的疑慮，也可以考慮「小兒復健科」。
+      蹲踞困難的問題可以掛「小兒骨科」，如果診所有復健科也可以先評估。如果同時有走路內八、步態異常等問題，小兒骨科是最直接的選擇。如果孩子有整體動作發展遲緩的疑慮，也可以考慮「小兒復健科」。
     </p>
  
     <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
@@ -447,7 +1084,7 @@ export const articlesData: NewsPost[] = [
       Q5：新生兒健檢已經做過髖關節篩檢，還需要再擔心DDH嗎？
     </h3>
     <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      新生兒篩檢很重要，但無法完全涵蓋所有案例。研究顯示，部分DDH屬於「沉默型」——出生時難以察覺，症狀直到學齡甚至青少年期才出現。因此，如果學校篩檢或家長自行觀察到孩子有步態不對稱、長短腳、或蹲踞困難，還是應該就醫評估，不能僅依賴新生兒篩檢結果判斷。<sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S0268003324002584" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+      新生兒篩檢很重要，但無法完全涵蓋所有案例。研究顯示，部分髖關節發育不全屬於「沉默型」——出生時難以察覺，症狀直到學齡甚至青少年期才出現。因此，如果學校篩檢或家長自行觀察到孩子有步態不對稱、長短腳、或蹲踞困難，還是應該就醫評估，不能僅依賴新生兒篩檢結果判斷。<sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S0268003324002584" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
     </p>
  
   </div>
@@ -460,7 +1097,7 @@ export const articlesData: NewsPost[] = [
   
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
     學校健檢說孩子有蹲踞困難，家長最重要的第一步，是<strong style="color: #1e293b;">保持冷靜、安排評估</strong>，而不是立刻自行判斷嚴重程度。蹲踞困難的背後原因多樣，從輕微的跟腱過緊到髖關節發育問題都有可能，需要專業的臨床評估才能確認。
-  </p>
+  </p><br>
   
   <p style="color: #475569; font-size: 1.05rem;">
     大多數孩子的蹲踞困難是可以改善的，關鍵在於：<strong style="color: #1e293b;">找到正確原因、配合適合的治療方式、家長積極參與日常訓練與習慣培養。</strong>如果孩子被學校通知有蹲踞困難，歡迎帶孩子來診所，讓我們一起評估找出原因，給您和孩子一個安心、清楚的方向。
@@ -567,10 +1204,10 @@ export const articlesData: NewsPost[] = [
 
 {
   id: 'sleep-duration-guide',
-  title: '睡眠時間全解析：不同年齡需要睡多久？為何老了睡不久？幾點睡最好？',
-  lastModified: '2026-05-24',
+  title: '睡眠時間全解析：為何年紀大睡不久？幾點睡最好？',
+  lastModified: '2026-05-26',
   category: '衛教文章',
-  date: '2026-05-24',
+  date: '2026-05-26',
   summary: '從新生兒到銀髮族，依據國際實證研究詳解各年齡層每天應睡幾小時。科學說明為何年紀越大越早醒、睡眠越少，以及最佳入睡時間的研究證據，幫助你打造符合自身生理時鐘的高品質睡眠。',
   coverImage: '/images/news/article/sleep-duration-guide.webp',
   seoTitle: '睡眠時間全解析：不同年齡需要睡多久？為何老了睡不久？幾點睡最好？',
@@ -612,7 +1249,7 @@ export const articlesData: NewsPost[] = [
     一、不同年齡需要睡多久？
   </h2>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    美國國家睡眠基金會（National Sleep Foundation）召集了來自睡眠醫學、兒科、神經科、老年醫學等多個專科的 18 位專家，對全球大量科學文獻進行系統性回顧，提出了目前最被廣泛引用的各年齡層睡眠建議時數。
+    美國國家睡眠基金會召集了來自睡眠醫學、兒科、神經科、老年醫學等多個專科的 18 位專家，對全球大量科學文獻進行系統性回顧，提出了目前最被廣泛引用的各年齡層睡眠建議時數。
     <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S2352721815001606" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
     以下是這份建議的完整整理：
   </p>
@@ -694,9 +1331,9 @@ export const articlesData: NewsPost[] = [
     這是許多長輩共同的困擾，也是家屬常常感到疑惑的問題。科學上，老年睡眠變化有幾個明確的機制：
   </p>
 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🕰️ 原因一：生理時鐘提前（Phase Advance）</h3>
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🕰️ 原因一：生理時鐘提前</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    人體的睡眠-清醒節律由大腦下視丘的「視交叉上核（SCN）」這個生理時鐘中心所調控。隨著年齡增長，這個時鐘的功能逐漸退化，並且發生「相位提前」——意即整個睡眠週期整體往前移動。
+    人體的睡眠-清醒節律由大腦下視丘的「視交叉上核」這個生理時鐘中心所調控。隨著年齡增長，這個時鐘的功能逐漸退化，並且發生「相位提前」——意即整個睡眠週期整體往前移動。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7723148/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
@@ -710,16 +1347,16 @@ export const articlesData: NewsPost[] = [
     <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S053155650500197X" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    哈佛大學附屬布里根婦女醫院的研究顯示，給予老年人較高劑量的褪黑激素補充，可顯著增加夜間總睡眠時間。這進一步驗證了褪黑激素分泌不足，確實是老年睡眠品質下降的重要因素之一。
+    哈佛大學的研究顯示，給予老年人較高劑量的褪黑激素補充，可顯著增加夜間總睡眠時間。這進一步驗證了褪黑激素分泌不足，確實是老年睡眠品質下降的重要因素之一。
     <sup><a href="https://news.harvard.edu/gazette/story/2022/05/higher-dose-of-melatonin-improved-sleep-in-older-adults" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
   </p>
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">😴 原因三：深度睡眠（慢波睡眠）大幅減少</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    睡眠可以分為「淺眠」、「深眠（慢波睡眠，slow-wave sleep）」與「快速動眼期（REM）」三大類型，其中深眠是最具修復功效的階段，負責身體組織修復、記憶鞏固與免疫強化。
+    睡眠可以分為「淺眠」、「深眠（慢波睡眠）」與「快速動眼期」三大類型，其中深眠是最具修復功效的階段，負責身體組織修復、記憶鞏固與免疫強化。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    研究顯示，人在 20 歲之後，深眠的比例就開始逐漸下降，每 10 年約減少一定幅度的慢波睡眠。老年人在睡眠架構上，較多時間停留在較淺的 N1、N2 期，而深眠與 REM 期都明顯縮短，這正是他們容易在夜間醒來的主要原因。
+    研究顯示，人在 20 歲之後，深眠的比例就開始逐漸下降，每 10 年約減少一定幅度的慢波睡眠。老年人在睡眠架構上，較多時間停留在淺眠期，而深眠與快速動眼期都明顯縮短，這正是他們容易在夜間醒來的主要原因。
     <sup><a href="https://link.springer.com/article/10.1186/s41606-018-0021-3" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
     一項統計也指出，從人生第四個十年（30 多歲）開始，每隔 10 年大約會損失 30 分鐘的睡眠鞏固時間。
     <sup><a href="https://www.jci.org/articles/view/90328" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
@@ -734,7 +1371,7 @@ export const articlesData: NewsPost[] = [
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🧠 原因四：生理時鐘振幅減弱</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    年輕人的生理時鐘訊號強烈而規律，白天精神飽滿、夜晚睡意濃厚，形成清晰的「清醒-睡眠」對比。老年人的生理時鐘振幅（amplitude）卻逐漸減弱，訊號變得模糊——於是白天容易打瞌睡、夜間又睡不深沉，形成一種「白天睡一點、晚上也只睡一點」的分散式睡眠型態。
+    年輕人的生理時鐘訊號強烈而規律，白天精神飽滿、夜晚睡意濃厚，形成清晰的「清醒-睡眠」對比。老年人的生理時鐘振幅卻逐漸減弱，訊號變得模糊——於是白天容易打瞌睡、夜間又睡不深沉，形成一種「白天睡一點、晚上也只睡一點」的分散式睡眠型態。
     <sup><a href="https://www.aging-us.com/article/100366/text" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
   </p>
 
@@ -892,7 +1529,7 @@ export const articlesData: NewsPost[] = [
     <sup><a href="https://www.bhf.org.uk/informationsupport/heart-matters-magazine/news/behind-the-headlines/sleep-time-and-heart-disease" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    這個時間窗口的生理基礎在於：人體的核心體溫在深夜前後降至最低點，血壓也在睡眠中出現自然的「夜間下降（nocturnal dip）」，這些生理事件都與晝夜節律緊密配合。若入睡時間過晚，這段「血壓休息期」就會被壓縮，長期下來對心血管健康有不利影響。
+    這個時間窗口的生理基礎在於：人體的核心體溫在深夜前後降至最低點，血壓也在睡眠中出現自然的「夜間下降」，這些生理事件都與晝夜節律緊密配合。若入睡時間過晚，這段「血壓休息期」就會被壓縮，長期下來對心血管健康有不利影響。
     <sup><a href="https://www.bhf.org.uk/informationsupport/heart-matters-magazine/news/behind-the-headlines/sleep-time-and-heart-disease" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
   </p>
 
@@ -915,7 +1552,7 @@ export const articlesData: NewsPost[] = [
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🦉 「夜貓子」可以改嗎？</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    晝夜節律的偏好（俗稱「時型，chronotype」）有一定的遺傳基礎，因此並非所有人都適合晚上 10 點入睡。然而，大多數人的時型其實比自己以為的更有彈性——規律的早起、增加早晨光照曝露、避免睡前藍光，都被研究證實能有效將生理時鐘往前調整。
+    晝夜節律的偏好（俗稱「時型」）有一定的遺傳基礎，因此並非所有人都適合晚上 10 點入睡。然而，大多數人的時型其實比自己以為的更有彈性——規律的早起、增加早晨光照曝露、避免睡前藍光，都被研究證實能有效將生理時鐘往前調整。
     <sup><a href="https://www.jci.org/articles/view/90328" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
   </p>
 </section>
@@ -971,7 +1608,7 @@ export const articlesData: NewsPost[] = [
         <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
         <div>
           <strong>「週末補眠就能彌補平日的睡眠債」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>部分正確，但不完整。</strong> 研究顯示，在工作日睡眠不足的情況下，週末多睡 1–2 小時確實對某些健康指標有補償效果。<sup><a href="https://www.thensf.org/sleep-schedules-sleep-timing-guideline/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[13]</a></sup> 然而，大幅改變週末作息時間（如晚上 3 點才睡、中午才起床）會造成「社會性時差（social jetlag）」，反而使生理時鐘紊亂。補眠有其限度，規律作息才是根本解方。</span>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>部分正確，但不完整。</strong> 研究顯示，在工作日睡眠不足的情況下，週末多睡 1–2 小時確實對某些健康指標有補償效果。<sup><a href="https://www.thensf.org/sleep-schedules-sleep-timing-guideline/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[13]</a></sup> 然而，大幅改變週末作息時間（如晚上 3 點才睡、中午才起床）會造成「社會性時差」，反而使生理時鐘紊亂。補眠有其限度，規律作息才是根本解方。</span>
         </div>
       </li>
 
@@ -979,7 +1616,7 @@ export const articlesData: NewsPost[] = [
         <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
         <div>
           <strong>「只要睡夠時數，幾點睡都無所謂」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 睡眠的時機（timing）與時數（duration）都重要。人體的荷爾蒙分泌、免疫修復、器官排毒，都依賴特定的晝夜節律時間點進行。凌晨 2 點才睡、早上 10 點起床睡滿 8 小時，與晚上 11 點入睡、早上 7 點起床的 8 小時睡眠，在生理效益上是有差異的。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/33054339/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[3]</a></sup></span>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 睡眠的時機與時數都重要。人體的荷爾蒙分泌、免疫修復、器官排毒，都依賴特定的晝夜節律時間點進行。凌晨 2 點才睡、早上 10 點起床睡滿 8 小時，與晚上 11 點入睡、早上 7 點起床的 8 小時睡眠，在生理效益上是有差異的。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/33054339/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[3]</a></sup></span>
         </div>
       </li>
 
@@ -1015,7 +1652,7 @@ export const articlesData: NewsPost[] = [
       Q3：我睡滿 8 小時但早上還是很累，是怎麼回事？
     </h3>
     <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      睡眠時數足夠但品質不佳，常見原因包括：睡眠呼吸中止症（鼾聲大、早上頭痛是常見徵兆）、睡眠期間頻繁微覺醒（自己不自知但深眠被中斷）、臥室環境問題（太亮、太吵、過熱）、或睡前飲酒（酒精雖能加速入睡，但會破壞深眠與 REM 期）。若持續出現此情況，建議進行睡眠多項生理檢查（polysomnography）以釐清原因。
+      睡眠時數足夠但品質不佳，常見原因包括：睡眠呼吸中止症（鼾聲大、早上頭痛是常見徵兆）、睡眠期間頻繁微覺醒（自己不自知但深眠被中斷）、臥室環境問題（太亮、太吵、過熱）、或睡前飲酒（酒精雖能加速入睡，但會破壞深眠與快速動眼期）。若持續出現此情況，建議進行睡眠多項生理檢查以釐清原因。
     </p>
 
     <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
@@ -1029,7 +1666,7 @@ export const articlesData: NewsPost[] = [
       Q5：失眠該怎麼辦？安眠藥安全嗎？
     </h3>
     <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      失眠的一線治療是「失眠認知行為療法（CBT-I）」，其長期療效已被多項研究證實優於藥物治療，且無藥物副作用或依賴性的問題。安眠藥（特別是苯二氮平類藥物）在短期急性失眠有其適應症，但長期使用有認知功能影響、跌倒風險上升等疑慮，在老年族群中尤需謹慎。若失眠問題持續超過 3 週，建議尋求專業醫療評估，而非長期自行服用藥物。
+      失眠的一線治療是「失眠認知行為療法」，其長期療效已被多項研究證實優於藥物治療，且無藥物副作用或依賴性的問題。安眠藥（特別是苯二氮平類藥物）在短期急性失眠有其適應症，但長期使用有認知功能影響、跌倒風險上升等疑慮，在老年族群中尤需謹慎。若失眠問題持續超過 3 週，建議尋求專業醫療評估，而非長期自行服用藥物。
     </p>
 
   </div>
@@ -1052,14 +1689,6 @@ export const articlesData: NewsPost[] = [
     <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
       💡 立即行動：對照本文的年齡睡眠建議表，評估自己或家人目前的睡眠狀況。若有長期睡眠困擾，請尋求專業醫療評估，不要讓睡眠債默默累積。
     </p>
-  </div>
-  <div style="text-align: center; width: 100%;">
-    <a href="/booking" 
-       target="_blank" 
-       rel="noopener noreferrer" 
-       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
-        預約門診評估
-    </a>
   </div>
 </div>
   `,
@@ -1306,7 +1935,7 @@ export const articlesData: NewsPost[] = [
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">哪些食物會妨礙長高？</h3>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">含糖飲料（手搖杯、汽水）：</strong>磷酸會干擾鈣吸收，高糖份也會干擾 GH 分泌</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">含糖飲料（手搖杯、汽水）：</strong>磷酸會干擾鈣吸收，高糖份也會干擾生長激素分泌</li>
     <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">高度加工食品：</strong>高鹽影響鈣代謝，高油脂干擾內分泌</li>
     <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">過早過量的動物蛋白：</strong>可能加速性早熟，導致生長板提前閉合</li>
   </ul>
@@ -1334,7 +1963,7 @@ export const articlesData: NewsPost[] = [
 
   <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">對長高有幫助的運動類型：</p>
   <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">跳繩、跳躍訓練（Plyometrics）：</strong>對生長板產生適度衝擊刺激，促進骨骼重塑</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">跳繩、跳躍訓練：</strong>對生長板產生適度衝擊刺激，促進骨骼重塑</li>
     <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">籃球、排球：</strong>含大量跳躍動作，加上全身協調訓練</li>
     <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">游泳：</strong>全身性有氧運動，有助於整體發育，但衝擊性相對較低</li>
     <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">單槓懸吊：</strong>有助於脊椎椎間盤空間伸展（效果相對有限，但安全無害）</li>
@@ -1426,7 +2055,7 @@ export const articlesData: NewsPost[] = [
         </tr>
         <tr>
           <td>睡眠</td>
-          <td>後天因素中最關鍵，影響 GH 分泌量</td>
+          <td>後天因素中最關鍵，影響生長激素分泌量</td>
           <td>全成長期，尤其是青春期前</td>
           <td>高，可透過習慣改善</td>
           <td>「睡夠時數就好，幾點睡不重要」</td>
@@ -1473,11 +2102,11 @@ export const articlesData: NewsPost[] = [
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">轉骨湯（中草藥補品）</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    轉骨湯是台灣文化中非常常見的民俗療法。從科學角度來看，目前對中草藥複方促進兒童身高的高品質隨機對照試驗（RCT）極為有限，現有臨床支持薄弱。
+    轉骨湯是台灣文化中非常常見的民俗療法。從科學角度來看，目前對中草藥複方促進兒童身高的高品質隨機對照試驗極為有限，現有臨床支持薄弱。
     <sup><a href="https://clinicaltrials.gov/study/NCT05747560" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    韓國食藥署（KFDA）批准的草藥提取物 HT042（主成分為黃耆提取物）有一定的臨床研究基礎，顯示在未骨骼成熟的兒童中補充 23 週可提升 IGF-1 水平並增加身高生長速率。
+    韓國食藥署批准的草藥提取物 HT042（主成分為黃耆提取物）有一定的臨床研究基礎，顯示在未骨骼成熟的兒童中補充 23 週可提升 IGF-1 水平並增加身高生長速率。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10706747/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
     但這是標準化萃取物，與市售各式轉骨湯成分大相逕庭，不可類比。
   </p>
@@ -1487,10 +2116,10 @@ export const articlesData: NewsPost[] = [
 
   <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">益生菌</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    益生菌促進身高的研究近年逐漸增多，核心理論是「腸-骨軸」（gut-bone axis）——腸道微生物群可透過影響營養吸收、免疫調節和內分泌訊號，間接影響骨骼發育。
+    益生菌促進身高的研究近年逐漸增多，核心理論是「腸-骨軸」——腸道微生物群可透過影響營養吸收、免疫調節和內分泌訊號，間接影響骨骼發育。
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    涵蓋 79 個 RCT 的大型統合分析顯示，在低中收入國家（存在營養不良的背景下），益生菌對兒童身高有<strong style="color: #ffffff;">小幅但統計顯著的影響</strong>（SMD: 0.16，中等確定性證據）；但在高收入國家的研究則未發現類似效果。
+    大型統合分析顯示，在低中收入國家（存在營養不良的背景下），益生菌對兒童身高有<strong style="color: #ffffff;">小幅但統計顯著的影響</strong>；但在高收入國家的研究則未發現類似效果。
     <sup><a href="https://pdfs.semanticscholar.org/e21a/a03573a7a2afeac4fd759fbe694af3f343c3.pdf" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
   </p>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
@@ -1536,7 +2165,7 @@ export const articlesData: NewsPost[] = [
         <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
         <div>
           <strong>「喝轉骨湯、補益生菌，花錢不手軟，孩子就能長高」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>效益存疑！</strong> 市售轉骨湯幾乎沒有嚴格 RCT 支持；益生菌的效果也主要見於有營養不良或腸道問題的兒童族群。<sup><a href="https://pdfs.semanticscholar.org/e21a/a03573a7a2afeac4fd759fbe694af3f343c3.pdf" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[9]</a></sup> 把同樣的時間和精力花在「確保孩子每晚 9 點半上床、每天跳 10 分鐘繩」，效益遠大於購買高價補品。</span>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>效益存疑！</strong> 市售轉骨湯幾乎沒有高品質研究支持；益生菌的效果也主要見於有營養不良或腸道問題的兒童族群。<sup><a href="https://pdfs.semanticscholar.org/e21a/a03573a7a2afeac4fd759fbe694af3f343c3.pdf" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[9]</a></sup> 把同樣的時間和精力花在「確保孩子每晚 9 點半上床、每天跳 10 分鐘繩」，效益遠大於購買高價補品。</span>
         </div>
       </li>
 
@@ -1544,7 +2173,7 @@ export const articlesData: NewsPost[] = [
         <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
         <div>
           <strong>「孩子比同班同學矮，一定有問題，要趕快打生長激素」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>需先評估！</strong> 班上同學身高的參考意義有限——每個孩子的發育時間點不同，晚熟（Constitutional Delay）的孩子初期看起來矮，最終身高可能完全正常。真正需要擔心的指標是：生長速率每年低於 5 公分（學齡兒童）、持續低於第 3 百分位、骨齡與實際年齡差異過大，這些情況才需要積極就醫評估。</span>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>需先評估！</strong> 班上同學身高的參考意義有限——每個孩子的發育時間點不同，晚熟的孩子初期看起來矮，最終身高可能完全正常。真正需要擔心的指標是：生長速率每年低於 5 公分（學齡兒童）、持續低於第 3 百分位、骨齡與實際年齡差異過大，這些情況才需要積極就醫評估。</span>
         </div>
       </li>
 
@@ -1572,7 +2201,7 @@ export const articlesData: NewsPost[] = [
   <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
     <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
     <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
-      在門診中遇到的「矮小」兒童，相當大比例其實是「晚熟型」（Constitutional Delay of Growth and Puberty, CDGP）——爸媽或祖父母也是青春期偏晚才抽高的類型。這類孩子不需要治療，只需要追蹤。但也有一部分是真正的生長激素缺乏症或其他內分泌疾病，需要及時介入。正確分類需要骨齡 X 光、生長激素激發試驗，而非單憑身高數字判斷。
+      在門診中遇到的「矮小」兒童，相當大比例其實是「晚熟型」——爸媽或祖父母也是青春期偏晚才抽高的類型。這類孩子不需要治療，只需要追蹤。但也有一部分是真正的生長激素缺乏症或其他內分泌疾病，需要及時介入。正確分類需要骨齡 X 光、生長激素激發試驗，而非單憑身高數字判斷。
     </p>
   </div>
 </section>
@@ -1612,7 +2241,7 @@ export const articlesData: NewsPost[] = [
       Q4：心理壓力真的會影響身高嗎？
     </h3>
     <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      確實如此。慢性心理壓力會提升皮質醇（Cortisol）分泌，而高皮質醇會抑制 GH 分泌、加速蛋白質分解，長期下來對生長有實質影響。英國的醫學文獻記載，在高壓管教環境下成長的孩子，平均身高比一般孩子矮約 2.2 公分。良好的親子關係和適度的課業壓力，也是長高攻略的一環。
+      確實如此。慢性心理壓力會提升皮質醇分泌，而高皮質醇會抑制生長激素分泌、加速蛋白質分解，長期下來對生長有實質影響。英國的醫學文獻記載，在高壓管教環境下成長的孩子，平均身高比一般孩子矮約 2.2 公分。良好的親子關係和適度的課業壓力，也是長高攻略的一環。
     </p>
 
     <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
@@ -1644,16 +2273,16 @@ export const articlesData: NewsPost[] = [
 
   <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
     <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
-      💡 立即行動：下載兒童生長曲線圖，記錄孩子目前的身高與體重百分位，並檢視睡眠時間是否達標。若生長速率每年不足 5 公分，請儘早尋求兒科或小兒內分泌科的專業評估。
+      💡 立即行動：擔心小孩長不高，想了解小孩發育狀況，趕快預約宸新骨齡評估門診。
     </p>
   </div>
 
   <div style="text-align: center; width: 100%;">
-    <a href="/booking" 
+    <a href="/weight-bone/bone-age" 
        target="_blank" 
        rel="noopener noreferrer" 
        style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
-        預約兒童身高評估門診
+        預約兒童骨齡評估門診
     </a>
   </div>
 </div>
@@ -2325,595 +2954,6 @@ export const articlesData: NewsPost[] = [
 `
 },
 
-
-
-{
-  id: 'hallux-valgus-guide',
-  title: '拇指外翻完全解析：成因、症狀、治療一次搞懂',
-  lastModified: '2026-05-25',
-  category: '衛教文章',
-  date: '2026-05-25',
-  summary: '深度解析拇指外翻（拇趾外翻）的成因、分級與症狀。實證研究揭露矯正器能否真正讓角度回正、何時才需要考慮手術，以及日常生活如何減緩疼痛與惡化。',
-  coverImage: '/images/news/article/hallux-valgus-guide.webp',
-  seoTitle: '拇指外翻完全解析：成因、症狀、保守治療與手術時機一次搞懂',
-  seoDescription: '深度解析拇指外翻（拇趾外翻）的成因、分級與症狀。實證研究揭露矯正器能否真正讓角度回正、何時才需要考慮手術，以及日常生活如何減緩疼痛與惡化。',
-  keywords: [
-    '拇指外翻',
-    '拇趾外翻',
-    '拇趾滑液囊炎',
-    '拇趾外翻角度',
-    '拇指外翻手術',
-    '拇指外翻矯正器',
-    '拇趾外翻保守治療',
-    '前足變形',
-    '第一蹠趾關節'
-  ],
-  contentHtml: `
-<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
-  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
-  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-    拇指外翻是最常見的前足變形之一，全球成人盛行率約 23–35%，女性發生率顯著高於男性。其成因屬多因子模式，遺傳體質、生物力學異常與長期穿著不合適鞋子共同造成。症狀從無症狀到嚴重疼痛不等，影響行走功能與生活品質。<br><br>
-    研究明確指出：保守治療（矯正器、物理治療、運動訓練）的主要目標是緩解疼痛、延緩惡化，而非「讓角度回正」——矯正器無法逆轉已形成的骨骼變形。手術是目前唯一能真正矯正角度的方式，適應症需綜合評估疼痛程度、功能障礙與影像學結果。本文將以實證為基礎，幫助民眾全面了解拇指外翻，做出最適合自身狀況的治療決策。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11270640/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup><sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK553092/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
-  </p>
-</div>
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    一、什麼是拇指外翻？
-  </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    拇指外翻，醫學名稱為 Hallux Valgus，俗稱「拇趾滑液囊炎」或「大腳骨」，是指大拇趾在第一蹠趾關節處向外側偏移，而第一蹠骨則同時向內側偏移，兩者形成「剪刀式」的角度偏差，並在腳的內側形成明顯的骨性突起。
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    正常的拇趾外翻角應小於 15 度；20 度以上即視為異常，而 40 度以上則屬重度變形。
-    <sup><a href="https://www.physio-pedia.com/Hallux_Valgus" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
-    這個關節的偏移並非單純「拇趾歪了」這麼簡單——它是整個前足生物力學失衡的結果，會連帶影響足底壓力分布、步態模式，甚至增加老年人跌倒的風險。
-  </p>
-  <img src="/images/news/article/hallux-valgus1.webp" alt="拇指外翻角度示意圖" style="width: 100%; height: auto;">
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    二、為什麼會得拇指外翻？多種因素共同造成
-  </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    拇指外翻的成因不是單一的，醫學界目前認為這是一種「多因子疾病」——遺傳、結構、生物力學與外在環境因素交互作用的結果。
-    <sup><a href="https://www.mdpi.com/2411-5142/11/1/117" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
-  </p>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🧬 遺傳因素</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    拇指外翻有顯著的家族遺傳傾向。研究發現，先天性或青少年期發生的拇指外翻，往往與遺傳性關節結構異常密切相關。若父母有拇指外翻，子女的發生風險也較一般人高。
-    <sup><a href="https://medlineplus.gov/download/genetics/condition/bunion.pdf" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
-    這種遺傳體質可能表現為第一蹠骨關節面的角度異常、韌帶鬆弛，或足弓結構的先天性偏差。
-  </p>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">⚙️ 生物力學與結構因素</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    最常見的生物力學風險因子包括：第一蹠骨過度活動、異常的足部內旋（過度旋前）、以及拇外展肌功能不足。這些因素會破壞第一蹠趾關節的穩定性，讓大拇趾逐漸向外「漂移」。
-    <sup><a href="https://www.mdpi.com/2411-5142/11/1/117" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
-    扁平足、跟腱過緊、類風濕性關節炎等疾病也可能加速發展。
-  </p>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">👠 鞋子與生活習慣</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    雖然鞋子並非拇指外翻的唯一「原因」，但長期穿著窄頭、高跟鞋確實是重要的惡化因子。2025 年日本大規模研究發現早期（20–39 歲）穿著高跟與窄頭鞋，與日後拇指外翻的發生顯著相關。
-    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S094926582500260X" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
-    這解釋了為何女性的發生率（31.6%）遠高於男性（13.3%）。
-  </p>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">👩 性別與年齡</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    女性發生率顯著高於男性，部分文獻報告女男比例高達 15:1。
-    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK553092/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
-    盛行率也隨年齡增加而上升——日本研究顯示，女性 20 多歲時盛行率約 20%，80 歲以上則高達 48%。足部韌帶會隨年齡鬆弛，加速關節偏移。
-    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S094926582500260X" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
-  </p>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    三、拇指外翻有哪些症狀？
-  </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    拇指外翻的症狀因嚴重程度不同而有很大差異。有些人角度偏了卻幾乎不痛，有些人只是輕度偏移卻痛到難以行走。以下是常見的症狀表現：
-  </p>
- 
-  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    <li style="margin-bottom: 0.75rem;">
-      <strong style="color: #ffffff;">腳掌內側骨性突起：</strong>大拇趾基部出現明顯的「硬包」，外觀可見紅腫，與鞋子摩擦時疼痛明顯。
-    </li>
-    <li style="margin-bottom: 0.75rem;">
-      <strong style="color: #ffffff;">大拇趾疼痛：</strong>第一蹠趾關節在活動或負重時產生痠痛、灼熱感，尤其在長時間站立或走路後加劇。
-    </li>
-    <li style="margin-bottom: 0.75rem;">
-      <strong style="color: #ffffff;">大拇趾活動角度受限：</strong>關節因長期位置異常而逐漸僵硬，上抬角度減少，影響正常步態的推進期。
-    </li>
-    <li style="margin-bottom: 0.75rem;">
-      <strong style="color: #ffffff;">第二趾擠壓與變形：</strong>大拇趾向外推擠，導致第二趾被迫上翻（錘狀趾），甚至兩趾重疊，造成趾間壓力與摩擦。
-    </li>
-    <li style="margin-bottom: 0.75rem;">
-      <strong style="color: #ffffff;">前足蹠骨痛：</strong>由於大拇趾推進力不足，足底壓力轉移至第二、三蹠骨頭，導致前足球部疼痛與繭胝形成。
-    </li>
-    <li style="margin-bottom: 0.75rem;">
-      <strong style="color: #ffffff;">平衡感下降：</strong>研究顯示，中重度拇指外翻患者的步行速度與單腳站立時間均受到影響，增加老年人跌倒風險。
-      <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5975621/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
-    </li>
-    <li style="margin-bottom: 0.75rem;">
-      <strong style="color: #ffffff;">穿鞋困難：</strong>骨性突起使一般鞋型無法舒適穿著，影響日常生活與社交。
-    </li>
-  </ul>
- 
-  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
-    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
-      許多民眾誤以為「只要不痛就不用管」——但拇指外翻是進行性變形，也就是說，一旦形成，角度往往只會愈來愈大，不會自然回正。若等到疼痛嚴重才就醫，關節軟骨可能已出現磨損，手術難度與術後恢復時間也會增加。建議只要發現角度有偏移，就應尋求評估，愈早介入效果愈好。
-    </p>
-  </div>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    四、嚴重度分級：何時才需要考慮手術？
-  </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    拇指外翻的治療策略，關鍵在於「嚴重程度」與「症狀影響」的綜合評估，而非只看角度數字。
-  </p>
- 
-  <style>
-    .custom-table-container {
-      width: 100%;
-      overflow-x: auto;
-      margin: 20px 0;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    }
-    .modern-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
-      font-size: 15px;
-      background-color: #ffffff;
-      color: #1f2937;
-      min-width: 700px;
-    }
-    .modern-table thead tr {
-      background-color: #1e3a8a;
-      color: #ffffff;
-      text-align: left;
-      font-weight: bold;
-    }
-    .modern-table th {
-      padding: 16px 12px;
-      border-bottom: 2px solid #111827;
-      letter-spacing: 0.5px;
-    }
-    .modern-table td {
-      padding: 14px 12px;
-      border-bottom: 1px solid #e5e7eb;
-      line-height: 1.6;
-    }
-    .modern-table td:first-child {
-      background-color: #f9fafb;
-      font-weight: 600;
-      color: #111827;
-      width: 120px;
-    }
-    .modern-table tbody tr:nth-of-type(even) {
-      background-color: #f3f4f6;
-    }
-    .modern-table tbody tr:hover {
-      background-color: #e0e7ff;
-      transition: background-color 0.2s ease;
-    }
-    @media (max-width: 600px) {
-      .modern-table {
-        font-size: 14px;
-      }
-    }
-  </style>
- 
-  <div class="custom-table-container">
-    <table class="modern-table">
-      <thead>
-        <tr>
-          <th>嚴重程度</th>
-          <th>拇趾外翻角（HVA）</th>
-          <th>建議治療方向</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>輕度</td>
-          <td>15°–20°</td>
-          <td>保守治療（矯正器、運動、鞋子調整）</td>
-        </tr>
-        <tr>
-          <td>中度</td>
-          <td>20°–40°</td>
-          <td>保守治療優先；症狀嚴重者評估手術</td>
-        </tr>
-        <tr>
-          <td>重度</td>
-          <td>&gt; 40°</td>
-          <td>手術矯正通常為主要治療選擇</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
- 
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 1rem;">
-    <strong style="color: #ffffff;">手術的核心適應症包括：</strong>
-  </p>
-  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    <li style="margin-bottom: 0.5rem;">持續性疼痛影響日常活動，且保守治療 3–6 個月以上無效</li>
-    <li style="margin-bottom: 0.5rem;">關節半脫位或完全脫位</li>
-    <li style="margin-bottom: 0.5rem;">第二趾受到擠壓，出現錘狀趾或交叉趾等繼發性變形</li>
-    <li style="margin-bottom: 0.5rem;">前足蹠骨痛嚴重、繭胝反覆形成，影響功能</li>
-    <li style="margin-bottom: 0.5rem;">患者有強烈的美觀需求，且充分了解手術風險與術後恢復要求</li>
-  </ul>
- 
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    與不治療相比，手術在術後 12 個月時的疼痛改善具有臨床意義；但與保守治療相比，手術的整體優勢仍屬「低確定性證據」。
-    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11270640/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
-    這意味著：<strong style="color: #ffffff;">手術並非萬能，醫師與患者需共同評估利弊，不應在沒有充分保守治療的情況下直接走向手術。</strong>
-  </p>
- 
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    值得注意的是，手術適應症的決定並不應單純以角度決定。20 度的患者若疼痛劇烈、保守治療無效，手術是合理的選擇；反之，40 度的患者若幾乎無症狀且功能良好，手術也不見得迫切。<strong style="color: #ffffff;">「症狀的嚴重程度」與「保守治療的反應」，才是手術時機最重要的判斷依據。</strong>
-    <sup><a href="https://www.swissmedical.net/en/orthopedics/foot-ankle-surgery/hallux-valgus" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
-  </p>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    五、不開刀的保守治療有哪些？
-  </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    保守治療的目標是：<strong style="color: #ffffff;">（1）緩解疼痛，（2）改善功能，（3）延緩變形進展</strong>。重要前提是：保守治療無法讓已形成的骨骼角度回正，這一點需要民眾有正確認知。
-  </p>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">👟 鞋具調整（首要且最有效的保守措施）</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    改穿前掌寬敞、跟部低矮的鞋款，是所有保守治療的基礎。鞋頭需能容納大拇趾的自然寬度，不對骨性突起產生壓迫。避免尖頭鞋、高跟鞋，對症狀的緩解往往有立竿見影的效果。
-  </p>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🦶 矯正器與分趾墊</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    矯正器（夜間矯正夾板）與趾間分離墊是最常見的保守器材。研究顯示，使用動態矯正器或靜態矯正器 1 個月，可使拇趾外翻角減少 2–3 度，且主要在穿戴期間有效；一旦停用，角度往往會回復原狀。
-    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S0958259218302049" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
-    更重要的是，<strong style="color: #ffffff;">矯正器的主要貢獻在於緩解疼痛與主觀舒適感的改善，而非真正的骨骼角度矯正。</strong>
-    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/28364350/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    動態矯正夾板雖能顯著改善走路與休息時的疼痛，但在拇趾外翻角的影像學測量上，與未治療組相比並無統計學差異；研究結論明確指出，沒有任何患者因矯正器的效果而決定取消手術。
-    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1268773118302467" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
-  </p>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🏋️ 足部運動訓練</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    強化拇外展肌、改善足趾的主動抓地力，是物理治療中的核心介入。「運動結合趾間分離墊」與「夜間矯正夾板」是最有可能改善拇趾外翻角與蹠骨間角的保守治療組合。
-    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8038851/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    有效的足部運動包含：
-  </p>
-  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">拇趾外展抗阻運動：</strong>用手或彈力帶輔助，練習大拇趾向內側主動靠攏（外展），每次 10–15 下</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">足趾抓毛巾：</strong>用腳趾抓取地面上的毛巾，強化足底內在肌群</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">短足運動：</strong>在不彎曲腳趾的情況下收縮足弓，訓練足部內在肌群</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">提踵訓練：</strong>單腳提踵可加強腓腸肌與比目魚肌，改善踝關節穩定性</li>
-  </ul>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">💊 藥物與其他治療</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    急性疼痛期可使用非類固醇類消炎止痛藥（NSAIDs）緩解局部炎症。若骨性突起紅腫明顯（滑液囊炎急性發作），局部類固醇注射可快速消腫，但不建議反覆使用。客製化足墊能有效改善足底壓力分布，減輕蹠骨頭的負擔。
-  </p>
- 
-  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
-    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
-      在門診中，許多患者花了數年時間戴矯正器，卻發現「照X光還是一樣歪」而感到失望。正確的認知是：矯正器就像眼鏡一樣——戴著有效，但不能治本，也不會讓骨骼永久重塑。矯正器最大的臨床價值在於「穿戴期間緩解疼痛」，以及在輕度、柔軟型拇指外翻的早期，稍微延緩進展。把矯正器當成「治好的工具」是不切實際的期待。
-    </p>
-  </div>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    六、矯正器到底能讓角度回來嗎？實證告訴你答案
-  </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    這是門診中被問最多的問題之一。民眾常常看到廣告說「使用矯正器可矯正拇趾外翻」，因此對矯正器抱有很高期待。讓我們看看研究怎麼說：
-  </p>
- 
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    2022 年發表於《Arthritis Care &amp; Research》的大型研究結論是：有部分研究報告夜間矯正夾板、足部運動與多模態物理治療可達到「臨床顯著的角度減少」，但整體而言，<strong style="color: #ffffff;">保守治療對拇趾外翻角的改善證據等級仍屬「低確定性」；疼痛改善的可能性高於角度矯正。</strong>
-    <sup><a href="https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24603" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>
-  </p>
- 
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    另一篇文獻更直接指出：<strong style="color: #ffffff;">「在拇指外翻症候群中，保守措施只能緩解症狀。鞋墊、矯正器與趾間夾板無法改善前足變形。」</strong>
-    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/28364350/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
-  </p>
- 
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    同樣地，現有物理治療文獻也明確說明，拇指外翻是不可逆的足部變形，<strong style="color: #ffffff;">現有實證顯示，在沒有手術介入的情況下，變形會持續進展。</strong>
-    <sup><a href="https://www.efdeportes.com/efd210/hallux-valgus-physical-therapy-treatment.htm" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>
-  </p>
- 
-  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
-    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
-      <strong>⚠️ 重要觀念：</strong><br><br>矯正器能讓角度「暫時看起來比較好」，但這是來自外力對軟組織的撐壓，不是骨骼的真正重塑。一旦移除矯正器，角度基本上會回復。若拇指外翻已屬中重度（ &gt; 30–40 度），或骨骼已固定化，矯正器幾乎不具有角度矯正效果。這不代表矯正器沒有用——它對疼痛管理與生活品質的改善仍有實際幫助，但需要有正確的期待。
-    </p>
-  </div>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    七、手術治療：有哪些選擇？
-  </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    手術是目前唯一能真正矯正拇趾外翻角的治療方式。醫學文獻記錄的手術術式超過 130 種，主要依據變形嚴重程度選擇適合的骨切術與軟組織修復方式。
-    <sup><a href="https://www.physio-pedia.com/Hallux_Valgus" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
-  </p>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">傳統開刀</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    傳統開刀是長期以來的金標準術式，常見包含 Chevron 截骨術（適合輕中度）、Scarf 截骨術（適合中重度）或近端截骨術（適合重度變形）。手術在直視下進行截骨、矯正角度後以螺釘固定，矯正效果可靠。缺點是切口較大、術後腫脹恢復期較長（約 6–8 週不負重）。
-  </p>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">微創手術</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    近年微創手術技術大幅進步，透過數個小切口，以微型骨磨搭配術中 X 光引導進行截骨與螺釘固定，傷口小、術後腫脹較輕。2025 年依據英國更新的回顧指出，微創技術（特別是 MICA 術式）在適當適應症下，矯正效果與傳統開刀相當，且術後恢復具有優勢。
-    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12699283/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[15]</a></sup>
-    但微創手術對術者的技術要求較高，需選擇有豐富經驗的足踝外科醫師執行。
-  </p>
- 
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    術後復健通常包含：術後早期穿戴特殊術後鞋、逐步進行關節活動度訓練，以及肌力恢復運動，整體恢復至正常活動約需 3–6 個月。
-  </p>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
-      📢 八、日常生活怎麼做？減緩疼痛與避免惡化的實用建議
-    </h2>
-    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
-      
-      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
-        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
-        <div>
-          <strong>換掉窄頭、高跟鞋</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">選擇前掌空間充裕的鞋款，鞋跟高度建議不超過 3 公分。鞋頭需能容納大拇趾自然伸展，不施加側向壓力。這是所有保守措施中效果最確定、最容易執行的一步。運動鞋或特製寬楦健康鞋是理想選擇。</span>
-        </div>
-      </li>
- 
-      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
-        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
-        <div>
-          <strong>搭配客製化足墊</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">足墊可重新分配足底壓力，減輕第一蹠骨頭與第二、三蹠骨的負擔，對蹠骨痛（前腳掌痛）有顯著幫助。建議由物理治療師或足科醫師評估後訂製，以確保足弓支撐與壓力分布符合個人足型。</span>
-        </div>
-      </li>
- 
-      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
-        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
-        <div>
-          <strong>夜間矯正器——正確使用、正確期待</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">夜間矯正器可在休息時保持大拇趾位於相對正確的位置，有助於緩解關節囊的張力與晨間僵硬感。適合輕度到中度的柔軟型拇指外翻。請記住：矯正器的目的是「緩解疼痛與減緩惡化」，而非讓角度永久回正。<sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1268773118302467" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[11]</a></sup></span>
-        </div>
-      </li>
- 
-      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
-        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
-        <div>
-          <strong>每天做足部強化運動</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">強化拇外展肌與足底內在肌群是對抗拇指外翻進展最有力的保守手段。建議每天執行拇趾外展抗阻練習、短足運動、足趾抓毛巾等，每次 10–15 下，每日 2–3 次。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8038851/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[12]</a></sup></span>
-        </div>
-      </li>
- 
-      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
-        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">5</span>
-        <div>
-          <strong>控制體重</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">體重增加會直接加大第一蹠趾關節的負荷，加速變形進展。維持健康體重是保護足部關節最根本的生活措施之一，也能降低其他足部病變的風險。</span>
-        </div>
-      </li>
- 
-      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
-        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">6</span>
-        <div>
-          <strong>避免長時間赤腳踩硬地</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">赤腳行走在磁磚、大理石等硬地面上，會增加足底壓力。居家建議穿著有支撐性的室內拖鞋（避免拖鞋過於平坦無支撐），或使用足墊作為緩衝。</span>
-        </div>
-      </li>
- 
-    </ul>
-  </div>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
-  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
-    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
-      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
-    </h2>
-  </div>
-  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
-    
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q1：拇指外翻會自己好嗎？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      不會。拇指外翻是骨骼與關節的結構性變形，一旦形成就不會自然回正，多數情況下會隨年齡增長而持續進展。早期輕度變形可透過保守治療延緩惡化、控制症狀，但角度本身無法靠自然痊癒來回復。
-    </p>
- 
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q2：只靠矯正器夠嗎？需要多久才有效？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      對輕度、症狀輕微的患者，矯正器配合鞋具調整與運動訓練，確實能有效管理症狀並延緩惡化，「只靠矯正器」在這個族群是合理的短期策略。但對中重度變形，或骨骼已固化者，矯正器的角度矯正效果十分有限。使用矯正器的效果通常在 2–4 週內可感受到疼痛改善；影像學上的角度變化即使有，也僅約 1–3 度，且停用後多半回復。
-    </p>
- 
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q3：手術危險嗎？術後多久可以正常行走？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      現代拇指外翻手術在技術成熟的足踝外科醫師操作下整體安全性高，並發症風險低。術後通常需穿著術後特殊鞋 4–6 週（部分術式允許術後立即以特殊鞋承重），完全恢復正常行走與運動約需 3–6 個月。微創手術傷口更小、腫脹恢復更快，但仍需充分的術後復健配合。
-    </p>
- 
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q4：手術後拇指外翻會復發嗎？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      術後復發是可能發生的，尤其是持續穿著不合適鞋款、韌帶鬆弛體質，或術式矯正不足（術後角度仍 &gt; 20 度）的患者風險較高。術後配合醫囑持續穿著適當鞋具、維持足部肌力訓練，是降低復發率的關鍵。
-    </p>
- 
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q5：青少年或年輕人的拇指外翻處理方式一樣嗎？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      不完全相同。青少年骨骼尚未完全發育成熟，手術通常建議等到骨骺板閉合後（約 14–16 歲後）再評估，以避免術後生長影響矯正結果。青少年期的主要介入以保守治療為主，包含鞋具教育、足部運動與矯正器，並密切追蹤角度變化。
-    </p>
- 
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q6：拇指外翻沒有症狀，也需要治療嗎？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      無症狀的輕度拇指外翻不需要積極治療，但需要定期追蹤。建議採取預防性措施，如穿著前掌寬敞的鞋款、維持足部肌力訓練，以延緩變形進展。若角度持續增大或出現疼痛，應及早就醫評估。
-    </p>
- 
-  </div>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
-  
-  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
-    拇指外翻不是單純的「腳長歪了」，它是遺傳體質、生物力學與生活習慣共同形塑的複雜問題。理解它的本質，才能做出最適合自己的選擇：保守治療是控制症狀的有效工具，但無法讓角度回正；手術是矯正角度的唯一方式，但需要審慎評估適應症與術後恢復的承受度。
-  </p><br>
-  
-  <p style="color: #475569; font-size: 1.05rem;">
-    最重要的第一步，是<strong style="color: #1e293b;">了解自己目前屬於哪個嚴重程度</strong>，並根據症狀、功能影響與個人需求，與專業醫師共同制定個人化的治療計畫。不論是保守治療還是手術，早期介入、持續追蹤，永遠勝過等到嚴重才行動。
-  </p>
- 
-  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
-      💡 立即行動：若您注意到大拇趾有向外偏移的跡象，或足部持續疼痛影響日常生活，建議盡早安排門診評估，拍攝 X 光片確認角度，及早介入。
-    </p>
-  </div>
-  <div style="text-align: center; width: 100%;">
-    <a href="/booking" 
-       target="_blank" 
-       rel="noopener noreferrer" 
-       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
-        預約門診評估
-    </a>
-  </div>
-</div>
-  `,
-  referencesHtml: `
-<h2>📚 參考文獻 (References)</h2>
-<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
-  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Dias, C.G., Godoy-Santos, A.L., Ferrari, J., Ferretti, M., &amp; Lenza, M. (2024). Surgical interventions for treating hallux valgus and bunions. Cochrane Database of Systematic Reviews, 7(7):CD013726. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11270640/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11270640</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Ferrero, G., &amp; Vopat, M. (2024). Hallux Valgus. StatPearls, NCBI Bookshelf. <a href="https://www.ncbi.nlm.nih.gov/books/NBK553092/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Bookshelf: NBK553092</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Physiopedia. (2024). Hallux Valgus. <a href="https://www.physio-pedia.com/Hallux_Valgus" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Rodríguez-Sanz, D., et al. (2025). Factors Related to the Etiology of Hallux Abducto Valgus: A Systematic Review. Journal of Functional Morphology and Kinesiology, 11(1):117. <a href="https://www.mdpi.com/2411-5142/11/1/117" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3390/jfmk11010117</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        MedlinePlus Genetics. (2023). Bunion (Hallux Valgus). National Library of Medicine. <a href="https://medlineplus.gov/download/genetics/condition/bunion.pdf" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PDF Link</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Akiyama, K., et al. (2025). Epidemiology and risk factors of hallux valgus in Japanese population: HAPPI study. The Foot, 63:102148. <a href="https://www.sciencedirect.com/science/article/abs/pii/S094926582500260X" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.foot.2025.102148</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Iijima, H., Suzuki, Y., Aoyama, T., &amp; Takahashi, M. (2018). Does hallux valgus impair physical function? PLOS ONE / PMC. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5975621/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 5975621</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Swiss Medical. (2024). Hallux valgus: Which treatment at which stage? <a href="https://www.swissmedical.net/en/orthopedics/foot-ankle-surgery/hallux-valgus" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Torkki, M., et al. (2019). A comparison of the hallux valgus angle, range of motion, and patient satisfaction after use of dynamic and static orthoses. The Foot. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0958259218302049" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.foot.2019.02.003</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Wülker, N., &amp; Mittag, F. (2017). Conservative treatment of hallux valgus: What can be achieved with splints and insoles? PubMed. <a href="https://pubmed.ncbi.nlm.nih.gov/28364350/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 28364350</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Reischl, N., et al. (2019). Short term results of dynamic splinting for hallux valgus — A prospective randomized study. The Foot. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1268773118302467" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.foot.2018.09.003</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Tang, S., et al. (2021). Adjusted Indirect and Mixed Comparisons of Conservative Treatments for Hallux Valgus: A Systematic Review and Network Meta-Analysis. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8038851/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8038851</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Hurn, S.E., et al. (2022). Effectiveness of Nonsurgical Interventions for Hallux Valgus: A Systematic Review and Meta-Analysis. Arthritis Care &amp; Research. <a href="https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24603" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1002/acr.24603</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Glasoe, W.M., et al. (2015). Hallux valgus: Physical therapy treatment. EFDeportes. <a href="https://www.efdeportes.com/efd210/hallux-valgus-physical-therapy-treatment.htm" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Imran, B., Jones, S., &amp; Middleton, R.G. (2025). Hallux Valgus Management: An Update Based on NICE Guidelines. Cureus. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12699283/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12699283</a>
-      </span>
-    </li>
-  </ol>
-</div>
-`
-},
 
 {
 id: 'pediatric-lower-extremity-development',
