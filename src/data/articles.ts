@@ -2,11 +2,602 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
 
+{
+id: 'beverage-sugar-coffee-health',
+  title: '手搖飲與咖啡含糖量大解密：喝半糖就安全？當心慢性病',
+  lastModified: '2026-05-27',
+  category: '衛教文章',
+  date: '2026-05-27',
+  summary: '從運動醫學與公共衛生角度深入剖析台灣人最愛的手搖飲與咖啡。一杯全糖珍奶的糖分如何瞬間讓你整天額度超標？台大最新實證研究揭開無糖飲品的糖分真相、不同種類咖啡的健康益處，並提供漸進式減糖的實用行動建議。',
+  coverImage: '/images/news/article/beverage-sugar-coffee-health.webp',
+  seoTitle: '手搖飲與咖啡含糖量大解密：喝半糖就安全？當心慢性病與代糖陷阱',
+  seoDescription: '從公衛與醫學實證深入剖析手搖飲與咖啡對身體的影響。台大研究驚爆無糖手搖飲也有過半含糖？帶你搞懂 WHO 游離糖標準、黑咖啡的保護效益以及如何看穿手搖杯甜度標示的真相。',
+  keywords: [
+    '手搖飲含糖量',
+    '咖啡健康好處',
+    '游離糖上限',
+    'WHO減糖指南',
+    '台大公衛研究',
+    '黑咖啡提神',
+    '半糖珍奶熱量',
+    '代糖胰島素阻抗',
+    '第二型糖尿病',
+    '漸進式減糖'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    手搖飲料與咖啡已是台灣人的日常，但你知道一杯全糖珍珠奶茶的含糖量，可能一口氣超過世界衛生組織（WHO）建議一整天的上限嗎？WHO 建議每日游離糖攝取量應低於總熱量的 10%（約 50 克），並進一步建議最好控制在 5% 以下（約 25 克），以獲得額外的健康益處。
+    <sup><a href="https://who.int/news/item/04-03-2015-who-calls-on-countries-to-reduce-sugars-intake-among-adults-and-children" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup><br><br>
+    台大公衛學院 2024 年研究更發現，市售手搖飲有高達 85.6% 的實際含糖量超過其標示，連「無糖」飲品也有 55.6% 驗出糖分。
+    <sup><a href="https://health.ettoday.net/news/3154312" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    本文將用白話文告訴你：每天可以喝多少、糖對身體的好處與壞處、不同咖啡怎麼選，以及市售手搖杯的含糖量真相，幫你在享受飲品的同時，也能做出更聰明的選擇。
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、每天到底能攝取多少糖？WHO 建議這樣說
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    要搞懂糖攝取量，首先要了解「游離糖」這個概念。游離糖指的是廠商、廚師或消費者額外添加到食物和飲料中的糖，也包含蜂蜜、糖漿、果汁和濃縮果汁中天然存在的糖。<strong style="color: #2dd4bf;">換句話說，你加到飲料裡的砂糖、果糖、黑糖，都算在裡面。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    WHO 明確建議：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">強烈建議：</strong>游離糖攝取量應低於每日總熱量的 10%。以每日攝取 2000 大卡的成年人計算，這大約等於 50 克（約 10 顆方糖）。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">進一步建議：</strong>若能控制在 5% 以下（約 25 克、6 顆方糖），可獲得額外的健康益處，特別是在減少蛀牙方面。</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK285538/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    對兒童來說，建議上限更低：1 到 3 歲大約 30 克，4 到 6 歲約 35 克，7 到 10 歲約 42 克。
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 換算成你每天能喝幾杯</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      以一杯 700 毫升的「全糖」手搖飲為例，光是額外加入的糖就約 50 克，已達到 WHO 建議每日上限。也就是說，若你今天喝了一杯全糖手搖飲，這一天的「游離糖額度」就已經用完了，不論其他食物有沒有額外加糖，都該停下來了。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、糖對身體有哪些好處？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    說到糖，很多人第一反應是「壞東西」，但其實在適量範圍內，糖對身體是有其功能的：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">提供快速能量：</strong>葡萄糖是大腦和肌肉最直接的能量來源。運動前或血糖偏低時，適量的糖分可迅速補充能量、改善專注力。</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">心情調節：</strong>糖分能刺激大腦分泌多巴胺，帶來短暫的愉悅感。這也是為什麼壓力大的時候，一杯甜飲讓人感覺放鬆。</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">維持運動表現：</strong>對於高強度運動員，適量醣類補充有助於維持耐力與延緩疲勞。</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    不過，這些好處在「天然食物中的醣類」（如全穀類、水果）更能充分體現，而手搖杯中的精製糖，往往只提供熱量而缺乏其他營養素，屬於所謂的「空熱量」。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、糖吃太多，身體會怎樣？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    過量的游離糖攝取，特別是來自含糖飲料，已被多項大型研究和統合分析證實與多種慢性病風險升高相關：
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🩺 增加第二型糖尿病風險</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    一項涵蓋 34 個前瞻性世代研究的統合分析指出，每多喝一份含糖飲料，罹患第二型糖尿病的風險就上升 27%。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8402166/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    另一項統合分析也顯示，高含糖飲料攝取與糖尿病較高的發生率與死亡率顯著相關，而喝咖啡或茶則與較低的糖尿病風險有關。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11196440/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">❤️ 增加心血管疾病風險</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    同一份統合分析發現，每多一份含糖飲料，心血管疾病風險上升 9%；多份研究也發現含糖飲料攝取與高血壓、冠心病、中風風險呈正相關，且呈線性劑量反應關係。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10050372/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🦷 增加蛀牙風險</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    WHO 明確指出，游離糖的攝取是蛀牙（齲齒）最主要的風險因子。蛀牙是全球最普遍的非傳染性疾病，影響全球約 25 億人。研究顯示，當游離糖攝取低於總熱量的 10% 時，蛀牙發生率明顯較低；若進一步降至 5% 以下，效益更加顯著。
+    <sup><a href="https://www.who.int/news-room/fact-sheets/detail/sugars-and-dental-caries" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">⚖️ 造成肥胖與代謝症候群</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    含糖飲料是液態熱量，飽足感低但熱量密度高，容易在不知不覺中攝取過多熱量。台大公衛學院的研究也發現，年輕族群、體位過輕或肥胖者普遍有較高的手搖飲糖攝取量，且過量含糖飲料與低密度脂蛋白（壞膽固醇）升高及高血壓風險相關。
+    <sup><a href="https://health.ettoday.net/news/3154312" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 特別提醒：</strong><br><br>研究也指出，人工甜味劑（如代糖）雖然不是糖，卻可能影響腸道菌叢、引發胰島素阻抗與發炎反應。台大研究發現市售手搖飲樣本中有 13.7% 含有人工甜味劑，以蔗糖素與醋磺內酯鉀最常見，尤其果茶類與含配料飲品更容易驗出。<sup><a href="https://health.ettoday.net/news/3154312" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup> 因此「選代糖就沒問題」的想法需要再三斟酌。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、市售手搖杯的含糖量真相
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    很多人點「半糖」以為就安全了，但現實可能讓你吃一驚。以下是根據食藥署食品營養成分資料庫與台大醫院資料整理的含糖量對照：
+  </p>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 700px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 160px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table { font-size: 14px; }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>飲品（700ml）</th>
+          <th>甜度</th>
+          <th>額外加糖量</th>
+          <th>相當於幾顆方糖</th>
+          <th>是否超過 WHO 每日上限（50g）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>紅茶 / 綠茶</td>
+          <td>全糖</td>
+          <td>約 50 克</td>
+          <td>10 顆</td>
+          <td>⚠️ 剛好達到上限</td>
+        </tr>
+        <tr>
+          <td>紅茶 / 綠茶</td>
+          <td>半糖</td>
+          <td>約 25 克</td>
+          <td>5 顆</td>
+          <td>✅ 剛好在 WHO 較嚴格建議值（25g）</td>
+        </tr>
+        <tr>
+          <td>紅茶 / 綠茶</td>
+          <td>微糖</td>
+          <td>約 15 克</td>
+          <td>3 顆</td>
+          <td>✅ 安全範圍內</td>
+        </tr>
+        <tr>
+          <td>珍珠奶茶（含奶精）</td>
+          <td>全糖</td>
+          <td>約 62 克（含配料更高）</td>
+          <td>12 顆以上</td>
+          <td>🚨 嚴重超標</td>
+        </tr>
+        <tr>
+          <td>珍珠奶茶（含奶精）</td>
+          <td>半糖</td>
+          <td>約 30 克（配料另計）</td>
+          <td>6 顆</td>
+          <td>⚠️ 加上配料容易超標</td>
+        </tr>
+        <tr>
+          <td>黑糖珍奶</td>
+          <td>全糖</td>
+          <td>超過 70 克（黑糖漿另計）</td>
+          <td>14 顆以上</td>
+          <td>🚨 大幅超標</td>
+        </tr>
+        <tr>
+          <td>鮮奶茶</td>
+          <td>半糖</td>
+          <td>約 25 克</td>
+          <td>5 顆</td>
+          <td>✅ 較安全，且無奶精</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.0rem; margin-top: 1rem; font-style: italic;">
+    ※ 資料來源：食藥署食品營養成分資料庫、台大醫院衛教資料、黃唯祺營養師說明。全糖 50g / 少糖 35g / 半糖 25g / 微糖 15g（僅計算額外加糖，不含配料本身的碳水化合物）。
+    <sup><a href="https://health.ettoday.net/news/1475664" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 「半糖」不等於「健康」</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      很多人選擇「半糖」以為減輕了罪惡感，但要注意：手搖杯的甜度標示只代表「額外加入的糖」，不包含珍珠、布丁等配料本身的糖分與熱量。一杯半糖的大杯珍奶，整體算下來仍可能攝取超過 600 大卡，幾乎等於一個便當的熱量。若因選了減糖飲料而以為可以多喝幾杯，反而是適得其反。
+      <sup><a href="https://health.udn.com/health/story/6037/5228735" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、不同種類咖啡比較：哪種最健康？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    咖啡和手搖飲最大的不同在於：<strong style="color: #2dd4bf;">黑咖啡本身幾乎不含糖，對身體的影響來自咖啡因與其他生物活性成分。</strong> 大量研究顯示，適量飲用咖啡（每天 3 到 5 杯）與多種慢性病風險降低有關。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    一份涵蓋超過 100 篇大型流行病學研究和統合分析的綜合回顧指出，適量咖啡攝取與全因死亡率降低、心血管疾病、第二型糖尿病及多種癌症風險下降有關，整體來說咖啡的益處多於害處。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12348139/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+    其中，每天約喝 3.5 杯咖啡時全因死亡率最低，與不喝咖啡者相比降低約 15%。
+    <sup><a href="https://www.news-medical.net/news/20250819/Review-finds-coffee-linked-to-longer-life-and-lower-disease-risk.aspx" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>咖啡種類</th>
+          <th>含糖量（不加糖）</th>
+          <th>熱量</th>
+          <th>主要特點</th>
+          <th>推薦族群</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>黑咖啡（美式）</td>
+          <td>幾乎 0 克</td>
+          <td>約 10–20 大卡</td>
+          <td>咖啡因最高，無多餘熱量</td>
+          <td>健身族、控制體重者</td>
+        </tr>
+        <tr>
+          <td>義式濃縮（Espresso）</td>
+          <td>幾乎 0 克</td>
+          <td>約 5–10 大卡</td>
+          <td>量少但濃，咖啡因集中</td>
+          <td>咖啡重度愛好者</td>
+        </tr>
+        <tr>
+          <td>拿鐵（Latte）</td>
+          <td>天然乳糖約 12–15 克</td>
+          <td>約 180–220 大卡（全脂）</td>
+          <td>牛奶提供蛋白質與鈣質</td>
+          <td>空腹喝咖啡者、需補充蛋白質者</td>
+        </tr>
+        <tr>
+          <td>卡布奇諾</td>
+          <td>天然乳糖約 10 克</td>
+          <td>約 120–160 大卡</td>
+          <td>牛奶比例少於拿鐵，奶泡多</td>
+          <td>喜歡口感豐富者</td>
+        </tr>
+        <tr>
+          <td>摩卡</td>
+          <td>加巧克力醬後約 20–30 克</td>
+          <td>約 280–350 大卡</td>
+          <td>含巧克力糖漿，糖分顯著</td>
+          <td>偶爾享受甜味者，不宜天天喝</td>
+        </tr>
+        <tr>
+          <td>焦糖瑪奇朵</td>
+          <td>含糖漿約 20–35 克</td>
+          <td>約 250–300 大卡</td>
+          <td>含大量糖漿，等同含糖飲料</td>
+          <td>非減糖期間偶爾享受</td>
+        </tr>
+        <tr>
+          <td>加糖的便利商店咖啡</td>
+          <td>視加糖量而定</td>
+          <td>視加糖量而定</td>
+          <td>加了糖就等同含糖飲料</td>
+          <td>建議選擇無糖版本</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 1.5rem;">
+    值得注意的是，咖啡本身的健康益處，在加了糖和奶精後會被削弱。研究指出，向咖啡中添加糖和奶精可能會抵消咖啡原有的正向健康效果。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12348139/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+    因此，建議盡量選擇不加糖的黑咖啡或拿鐵（用牛奶取代奶精），才能兼顧提神與健康。
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 咖啡因每日安全上限</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      建議每日咖啡因攝取不超過 300 毫克。以 7-11 中杯美式咖啡的咖啡因含量最高值約 203 毫克計算，每天最多喝 1 到 2 杯中杯咖啡較為安全。孕婦應將每日咖啡因攝取控制在 200 毫克以下，以降低流產等不良妊娠結果的風險。
+      <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12794424/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 六、常見三大迷思解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「我點無糖，所以很健康」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不一定！</strong> 台大公衛學院 2024 年研究顯示，市售「無糖」手搖飲中有 55.6% 仍驗出糖分，且含糖量已接近 WHO 每日建議上限。
+          <sup><a href="https://health.ettoday.net/news/3154312" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[2]</a></sup>
+          此外，部分無糖飲品使用代糖，同樣可能影響腸道菌叢。真正的「無糖」需要額外確認，建議選擇茶飲類無糖品項，或在家自製。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「咖啡加糖，頂多比較甜，應該還好吧？」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>需要謹慎！</strong> 黑咖啡本身對健康有益，但加了糖就讓它從健康飲品變成含糖飲料。研究指出，加糖和奶精可能會抵消咖啡原有的健康效益。
+          <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12348139/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[10]</a></sup>
+          若每天喝 2 杯加了糖的咖啡，等於每天多攝取 20 到 50 克的額外糖，已超過 WHO 的建議。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「我只喝果汁，應該比手搖飲健康」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不見得！</strong> 研究顯示，果汁攝取同樣與第二型糖尿病風險升高有關，且人工甜味劑飲料也無法被視為含糖飲料的更健康替代品。
+          <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10050372/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[6]</a></sup>
+          果汁缺乏水果中的膳食纖維，糖分吸收速度快，血糖上升更迅速。想攝取水果的好處，建議直接吃完整的水果。</span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、實用建議：這樣喝，比較安心
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">如果你每天都要喝手搖飲</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;">選擇微糖或無糖茶飲，避免全糖、少糖</li>
+    <li style="margin-bottom: 0.75rem;">避免加珍珠、布丁等高熱量配料；若要加，選愛玉、仙草、寒天等低卡選項</li>
+    <li style="margin-bottom: 0.75rem;">以鮮奶取代奶精，減少加工油脂攝取，同時補充蛋白質與鈣質</li>
+    <li style="margin-bottom: 0.75rem;">不要空腹喝含糖飲料，餐後喝血糖上升幅度較平緩</li>
+    <li style="margin-bottom: 0.75rem;">每週挑幾天改喝無糖茶或白開水，讓身體有機會降低對甜味的依賴</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">如果你每天都要喝咖啡</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;">盡量選擇黑咖啡（美式）或拿鐵（不加糖），保留咖啡的健康益處</li>
+    <li style="margin-bottom: 0.75rem;">若習慣加糖，嘗試逐步減量，從一匙減至半匙，再慢慢戒除</li>
+    <li style="margin-bottom: 0.75rem;">每日咖啡因攝取控制在 300 毫克以下（約 1 到 2 杯中杯咖啡）</li>
+    <li style="margin-bottom: 0.75rem;">空腹胃敏感者選擇拿鐵而非黑咖啡，牛奶可緩衝胃酸刺激</li>
+    <li style="margin-bottom: 0.75rem;">孕婦每日咖啡因應控制在 200 毫克以下</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">如何漸進式減糖？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    若要從全糖一下子改成無糖很難，建議採用漸進式方法，依序從全糖 → 少糖 → 半糖 → 微糖 → 無糖，每 1 到 2 週調降一個等級，讓味蕾慢慢適應，比較容易長期維持。
+    <sup><a href="https://www.thenewslens.com/article/103997" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+    <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+      <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+        <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+      </h2>
+    </div>
+    <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+        Q1：一天只喝一杯手搖飲應該沒問題吧？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+        要看是哪種飲品和甜度。若是一杯全糖的珍珠奶茶，光是額外加入的糖就超過 WHO 每日建議上限，加上配料的熱量，整體熱量逼近 650 大卡以上，對健康確實是很大的負擔。若是一杯微糖的無糖烏龍茶，則相對安全得多。所謂「一天一杯」只能是參考，關鍵在於選什麼種類、什麼甜度。
+      </p>
+
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+        Q2：喝黑咖啡真的對身體有好處嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+        是的，大量研究一致指出，適量飲用不加糖的咖啡（每天 3 到 5 杯）與降低心血管疾病、第二型糖尿病、肝癌、巴金森氏症等風險有關。不過，加了糖和奶精後，好處可能被抵消。此外，咖啡因對睡眠和焦慮症有影響，下午兩點後盡量避免攝取，以免影響睡眠品質。
+      </p>
+
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+        Q3：我已經選無糖，為什麼還是感覺有甜味？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+        根據台大公衛學院 2024 年研究，市售「無糖」飲品有 55.6% 實際上仍驗出糖分，且有 13.7% 含有人工甜味劑（如蔗糖素）。甜味可能來自：配料（珍珠、椰果）本身含有碳水化合物，或茶底本身帶有天然甜味，或業者使用了代糖但未在標示上清楚說明。建議選擇純茶類無糖品項，並留意配料的選擇。
+      </p>
+
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+        Q4：糖尿病患者可以喝手搖飲或咖啡嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+        糖尿病患者應避免含糖手搖飲，即便是「微糖」也需謹慎，最好以無糖純茶取代。咖啡方面，不加糖的黑咖啡對糖尿病患者不僅不禁忌，研究甚至顯示可能有助於降低心血管死亡風險，但仍應諮詢醫師或營養師，依個人狀況調整。
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    手搖飲和咖啡早已是台灣日常生活的一部分，我們不是要叫大家完全戒掉，而是希望你在每一次點飲料的時候，能夠做出更知情的選擇。WHO 建議每日游離糖不超過 50 克（最理想在 25 克以下），而一杯全糖珍珠奶茶可能讓你一口氣「清空」整天的糖分額度。
+  </p><br>
+
+  <p style="color: #475569; font-size: 1.05rem;">
+    無糖或微糖的茶飲、不加糖的黑咖啡，是日常飲品中相對友善的選擇。若喜歡咖啡，適量的無糖黑咖啡或拿鐵不僅不傷身，大量研究甚至顯示有保護心血管、降低糖尿病風險的益處。<strong style="color: #1e293b;">關鍵永遠是「知道自己喝了什麼」，而不是靠直覺假設某種飲品是安全的。</strong>
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：下次點飲料時，試著選微糖或無糖；喝咖啡時試著少加一匙糖；並留意配料的熱量。小小的改變，長期下來對健康有顯著的幫助。
+    </p>
+  </div>
+
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診減重評估
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        World Health Organization. (2015). WHO calls on countries to reduce sugars intake among adults and children. WHO News Release. <a href="https://who.int/news/item/04-03-2015-who-calls-on-countries-to-reduce-sugars-intake-among-adults-and-children" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        羅宇軒 等（國立台灣大學公共衛生學院）。（2025）。台灣市售手搖飲含糖量與甜味劑調查研究。ETtoday 健康雲報導。 <a href="https://health.ettoday.net/news/3154312" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        World Health Organization. (2015). Guideline: Sugars Intake for Adults and Children. NCBI Bookshelf Executive Summary. <a href="https://www.ncbi.nlm.nih.gov/books/NBK285538/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Bookshelf: NBK285538</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Meng, Y., Li, S., Khan, J., et al. (2021). Sugar- and Artificially Sweetened Beverages Consumption Linked to Type 2 Diabetes, Cardiovascular Diseases, and All-Cause Mortality: A Systematic Review and Dose-Response Meta-Analysis of Prospective Cohort Studies. Nutrients, 13(8), 2636. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8402166/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8402166</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Dehghan, P., et al. (2024). Effects of sugary drinks, coffee, tea and fruit juice on incidence rate, mortality and cardiovascular complications of type 2 diabetes patients: a systematic review and meta-analysis. Journal of Diabetes & Metabolic Disorders. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11196440/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11196440</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Narain, A., et al. (2023). Consumption of sugar sweetened beverages, artificially sweetened beverages and fruit juices and risk of type 2 diabetes, hypertension, cardiovascular disease, and mortality: A meta-analysis. Frontiers in Nutrition. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10050372/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10050372</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        World Health Organization. (2023). Sugars and dental caries. WHO Fact Sheet. <a href="https://www.who.int/news-room/fact-sheets/detail/sugars-and-dental-caries" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        黃唯祺 營養師。（2019）。手搖杯甜度與含糖量說明。依據食藥署食品營養成分資料庫。ETtoday 健康雲報導。 <a href="https://health.ettoday.net/news/1475664" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        陳詩婷 營養師（康寧醫院）。（2021）。飲料選半糖或微糖？少算一事熱量照爆表。元氣網報導。 <a href="https://health.udn.com/health/story/6037/5228735" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hajnal, J.V., & Guenther, P.M. (2025). Coffee's Impact on Health and Well-Being. Nutrients. PMC12348139. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12348139/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12348139</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        News Medical. (2025). Review finds coffee linked to longer life and lower disease risk. News Medical Life Sciences. <a href="https://www.news-medical.net/news/20250819/Review-finds-coffee-linked-to-longer-life-and-lower-disease-risk.aspx" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Piekarz, J., et al. (2025). Habitual Coffee Consumption and Systemic Health Outcomes: A Comprehensive Review. PMC12794424. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12794424/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12794424</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        The News Lens 關鍵評論網。（2019）。手搖杯喝半糖減輕罪惡感？糖量照樣爆表。 <a href="https://www.thenewslens.com/article/103997" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Moynihan, P.J., & Kelly, S.A. (2014). Sugars and Dental Caries: Evidence for Setting a Recommended Threshold for Intake. The Journal of Nutrition, 144(2). ScienceDirect. <a href="https://www.sciencedirect.com/science/article/pii/S2161831323001485" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        照護線上。（2021）。喝茶好，還是鮮奶茶？手搖飲熱量、成分比一比。 <a href="https://www.careonline.com.tw/2021/03/milk-tea.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
 
 
 {
 id: 'caffeine-safety-and-myths',
-  title: '咖啡因全攻略：每天喝多少才安全？紅黃綠燈與常見迷思一次看懂',
+  title: '咖啡因全攻略：每天喝多少才安全？燈號與常見迷思一次看懂',
   lastModified: '2026-05-27',
   category: '衛教文章',
   date: '2026-05-27',
@@ -33,7 +624,7 @@ id: 'caffeine-safety-and-myths',
     咖啡因是全球使用最廣泛的精神活性物質，存在於咖啡、茶葉、手搖飲、可樂與能量飲料中。根據美國食品藥物管理局（FDA）與歐洲食品安全局（EFSA）的建議，健康成人每日攝取咖啡因上限為 400 毫克，孕婦則應控制在 200 毫克以下。適量攝取咖啡因可提升認知表現與運動效能、降低第二型糖尿病與心血管疾病風險，並可能對神經退化性疾病有保護作用；但過量攝取則會引發失眠、焦慮、心悸與鈣質流失等不良效應。
     <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6212940/" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[1]</a></sup>
     <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12794424/" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[2]</a></sup>
-    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8000732/" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[3]</a></sup>
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8000732/" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[3]</a></sup><br><br>
     台灣衛福部食藥署已於 2023 年起要求所有含咖啡因現調飲料強制標示含量，民眾可依紅黃綠燈號判斷每日飲用上限。本文將用清楚易懂的方式，帶你了解每天喝多少才安全、哪些飲品含量最高，以及哪些人應該特別小心。
   </p>
 </div>
@@ -116,7 +707,7 @@ id: 'caffeine-safety-and-myths',
  
   <h3>② 提升運動表現與體能耐受力</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    國際運動營養學會（ISSN）的立場聲明指出，每公斤體重攝取 3–6 毫克的咖啡因（即體重 60 公斤的人約需 180–360 毫克），能持續性改善耐力型運動表現，並在爆發力、肌力、衝刺等面向也有中等程度的提升效果，且建議在運動前約 60 分鐘攝取效果最佳。
+    國際運動營養學會指出，每公斤體重攝取 3–6 毫克的咖啡因（即體重 60 公斤的人約需 180–360 毫克），能持續性改善耐力型運動表現，並在爆發力、肌力、衝刺等面向也有中等程度的提升效果，且建議在運動前約 60 分鐘攝取效果最佳。
     <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7777221/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[8]</a></sup>
   </p>
  
@@ -141,7 +732,7 @@ id: 'caffeine-safety-and-myths',
   <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
     <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 醫師觀點</h4>
     <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
-      美國醫學學會（AMA）的醫師指出：「咖啡和茶是飲食中真正的亮點——我們喜歡它們，它們也對我們好。兩者都與降低心血管疾病風險、第二型糖尿病風險及改善壽命等多種健康效益有所關聯。」但前提是「適量」，並在適當的時間飲用。
+      美國醫學學會的醫師指出：「咖啡和茶是飲食中真正的亮點——我們喜歡它們，它們也對我們好。兩者都與降低心血管疾病風險、第二型糖尿病風險及改善壽命等多種健康效益有所關聯。」但前提是「適量」，並在適當的時間飲用。
     </p>
   </div>
 </section>
@@ -162,7 +753,7 @@ id: 'caffeine-safety-and-myths',
  
   <h3>② 引發焦慮、心悸與躁動</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    咖啡因刺激兒茶酚胺（catecholamines）釋放，過量攝取時會出現神經過敏、煩躁不安、焦慮感增加、心跳加速等症狀。研究也指出，本身有焦慮症的人對咖啡因的反應更為敏感，症狀可能更為顯著。
+    咖啡因刺激兒茶酚胺釋放，過量攝取時會出現神經過敏、煩躁不安、焦慮感增加、心跳加速等症狀。研究也指出，本身有焦慮症的人對咖啡因的反應更為敏感，症狀可能更為顯著。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12269801/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[11]</a></sup>
   </p>
  
@@ -174,7 +765,7 @@ id: 'caffeine-safety-and-myths',
  
   <h3>④ 孕期攝取過量影響胎兒健康</h3>
   <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    孕婦攝取過量咖啡因（超過每日 200 毫克）已被研究關聯到較高的流產、早產及低出生體重風險。咖啡因可穿透胎盤，胎兒代謝咖啡因的能力遠比成人慢，因此孕婦需特別謹慎，此標準也被美國婦產科醫學會（ACOG）所採用。
+    孕婦攝取過量咖啡因（超過每日 200 毫克）已被研究關聯到較高的流產、早產及低出生體重風險。咖啡因可穿透胎盤，胎兒代謝咖啡因的能力遠比成人慢，因此孕婦需特別謹慎，此標準也被美國婦產科醫學會所採用。
     <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10989231/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[9]</a></sup>
   </p>
  
@@ -444,7 +1035,7 @@ id: 'caffeine-safety-and-myths',
         <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
         <div>
           <strong>「我喝很多咖啡都沒事，代表我可以無限攝取」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>危險思維！</strong>個人對咖啡因的耐受程度確實存在差異（與 CYP1A2 基因有關），但「沒有明顯症狀」不代表沒有傷害。研究顯示，長期高量攝取咖啡因仍會造成睡眠品質下降（即使你不覺得睡不著）、骨密度降低，以及在特定族群中增加心血管負擔。<sup><a href="https://www.sciencedirect.com/science/article/pii/S0278691517301709" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[1]</a></sup></span>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>危險思維！</strong>個人對咖啡因的耐受程度確實存在差異，但「沒有明顯症狀」不代表沒有傷害。研究顯示，長期高量攝取咖啡因仍會造成睡眠品質下降（即使你不覺得睡不著）、骨密度降低，以及在特定族群中增加心血管負擔。<sup><a href="https://www.sciencedirect.com/science/article/pii/S0278691517301709" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[1]</a></sup></span>
         </div>
       </li>
  
@@ -509,7 +1100,7 @@ id: 'caffeine-safety-and-myths',
       Q4：抹茶的咖啡因跟咖啡相比如何？有什麼不同的感覺？
     </h3>
     <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
-      抹茶的咖啡因含量雖低於一般咖啡（一杯抹茶拿鐵約 40–90 毫克），但抹茶中含有 L-茶胺酸（L-theanine），這種胺基酸能修飾咖啡因的作用，使清醒感更為平穩持久，較少出現咖啡帶來的「心跳加速」或「焦慮感」。這也是許多人覺得喝抹茶「比較舒服」的原因。
+      抹茶的咖啡因含量雖低於一般咖啡（一杯抹茶拿鐵約 40–90 毫克），但抹茶中含有 L-茶胺酸，這種胺基酸能修飾咖啡因的作用，使清醒感更為平穩持久，較少出現咖啡帶來的「心跳加速」或「焦慮感」。這也是許多人覺得喝抹茶「比較舒服」的原因。
     </p>
  
     <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
@@ -530,7 +1121,7 @@ id: 'caffeine-safety-and-myths',
  
   <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
     咖啡因既不是洪水猛獸，也不是完全無害的飲料。它的健康效益與風險，高度取決於你喝了多少、什麼時候喝、以及你的個人體質與健康狀況。
-  </p>
+  </p><br>
  
   <p style="color: #475569; font-size: 1.05rem;">
     記住幾個簡單原則：<strong style="color: #1e293b;">健康成人每日不超過 400 毫克、下午 2 點後盡量停喝、孕婦減半至 200 毫克</strong>。購買手搖飲或咖啡時，多看一眼紅黃綠燈號，並把一天所有含咖啡因的食物飲料加在一起計算，包括你喝的可樂、吃的巧克力、甚至服的止痛藥。
@@ -543,7 +1134,8 @@ id: 'caffeine-safety-and-myths',
   </div>
 </div>
  
-<!-- ===== referencesHtml ===== -->
+  `,
+  referencesHtml: `
  
 <h2>📚 參考文獻 (References)</h2>
 <div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">

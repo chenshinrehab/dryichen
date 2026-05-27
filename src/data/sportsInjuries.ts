@@ -36,6 +36,12 @@ export const sportsInjuriesData = [
         description: '深度解析拇指外翻（拇趾外翻）的成因、分級與症狀。實證研究揭露矯正器能否真正讓角度回正、何時才需要考慮手術，以及日常生活如何減緩疼痛與惡化。',
         image: '/images/news/article/hallux-valgus-guide.webp',
       },
+                  {
+        slug: 'children-squatting-difficulty',
+        title: '小朋友蹲不下去？學校健檢發現蹲踞困難，家長必讀完整解析',
+        description: '學校健康檢查發現孩子蹲踞困難，家長先別緊張！本文完整解析蹲踞困難的常見原因——從跟腱過緊、扁平足、髖關節發育問題到股骨過度前傾，並說明何時需要就醫、如何配合治療，幫助家長正確認識、不過度焦慮。',
+        image:  '/images/news/article/squatting-difficulty.webp',
+      },
             {
         slug: 'orthopedics-vs-rehabilitation',
         title: '骨科 vs 復健科：完整比較指南｜哪個才是你的最佳選擇？',
@@ -335,6 +341,18 @@ export const sportsInjuriesData = [
         title: '一天能吃幾顆蛋？全蛋 vs 蛋白，會造成膽固醇過高嗎？',
         description: '雞蛋曾被視為膽固醇殺手，但最新運動醫學研究顯示，全蛋對肌肉合成的效果竟優於純蛋白。本文深入剖析亞洲族群吃蛋的保護效果、不同健康狀態的攝取建議，並破解生蛋較營養與膽固醇過高的常見迷思，教你如何吃出最高效益。',
         image: '/images/news/article/egg-nutrition-analysis.webp',
+      },
+                                                      {
+        slug: 'beverage-sugar-coffee-health',
+        title: '手搖飲與咖啡含糖量大解密：喝半糖就安全？當心慢性病',
+        description: '從運動醫學與公共衛生角度深入剖析台灣人最愛的手搖飲與咖啡。一杯全糖珍奶的糖分如何瞬間讓你整天額度超標？台大最新實證研究揭開無糖飲品的糖分真相、不同種類咖啡的健康益處，並提供漸進式減糖的實用行動建議。',
+        image: '/images/news/article/beverage-sugar-coffee-health.webp',
+      },
+                                                {
+        slug: 'caffeine-safety-and-myths',
+        title: '咖啡因全攻略：每天喝多少才安全？燈號與常見迷思一次看懂',
+        description: '從運動醫學與臨床研究角度深入剖析咖啡因對人體的影響。每天喝多少咖啡或茶才算過量？台灣最新的現調飲料紅黃綠燈號該如何判斷？本文帶你釐清空腹喝咖啡、孕婦飲用限制以及茶葉咖啡因等常見誤區，並解析適量攝取對專注力、運動表現的實證好處。',
+        image: '/images/news/article/caffeine-safety-guide.webp',
       },
                                                 {
         slug: 'microwave-nutrients-myths-analysis',
