@@ -2,6 +2,626 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
 
+
+{
+  id: 'cooking-oil-comparison',
+  title: '食用油全解析：動物油 vs 植物油，哪一種油最健康？',
+  lastModified: '2026-05-29',
+  category: '衛教文章',
+  date: '2026-05-29',
+  summary: '深度剖析動物油與植物油的優缺點，完整比較各類植物油的脂肪酸組成。實證研究揭露飽和脂肪酸、單元不飽和脂肪酸、多元不飽和脂肪酸對心血管健康的影響，並提供科學選油策略。',
+  coverImage: '/images/news/article/cooking-oil-comparison.webp',
+  seoTitle: '食用油全解析：動物油 vs 植物油，哪一種油最健康？脂肪酸完整比較',
+  seoDescription: '深度剖析動物油與植物油的優缺點，完整比較各類植物油的脂肪酸組成。實證研究揭露飽和脂肪酸、單元不飽和脂肪酸、多元不飽和脂肪酸對心血管健康的影響，並提供科學選油策略。',
+  keywords: [
+    '食用油比較',
+    '動物油',
+    '植物油',
+    '飽和脂肪酸',
+    '不飽和脂肪酸',
+    'Omega-3',
+    'Omega-6',
+    '橄欖油',
+    '心血管健康',
+    '反式脂肪'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    食用油是我們每天飲食中不可缺少的成分，但不同種類的油脂，對身體的影響卻大相逕庭。動物油（如豬油、奶油）富含飽和脂肪酸，長期大量攝取與心血管疾病風險相關；而植物油則依其脂肪酸組成，分為富含單元不飽和脂肪酸（如橄欖油）、多元不飽和脂肪酸（如亞麻仁油、魚油）與飽和脂肪酸（如椰子油、棕櫚油）三大類。<br><br>
+    研究指出，以富含單元不飽和脂肪酸的油脂（特別是橄欖油）取代飽和脂肪酸，可降低低密度脂蛋白膽固醇（LDL），減少心血管疾病風險。<sup><a href="https://doi.org/10.1056/NEJMoa1200303" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup> 然而，過度加熱、精製過程與反式脂肪的生成，同樣是選油時不可忽視的關鍵。本文將以民眾易懂的語言，系統性解析各類食用油的特性與科學建議。
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、油脂是什麼？為什麼身體需要它？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多人一聽到「油脂」就開始擔心，但其實油脂是人體不可或缺的營養素。<strong style="color: #2dd4bf;">油脂的核心成分是脂肪酸，而脂肪酸的種類，決定了這瓶油對你身體的好壞。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    油脂在人體中扮演多重角色：提供能量（每公克脂肪提供約 9 大卡）、協助脂溶性維生素（A、D、E、K）的吸收、構成細胞膜的重要成分、合成荷爾蒙與膽汁，以及保護內臟器官。<sup><a href="https://doi.org/10.3390/nu11010006" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    根據化學結構，食用油的脂肪酸可分為三大類：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">飽和脂肪酸：</strong>碳鏈中無雙鍵，在常溫下多為固體，如豬油、奶油、椰子油中的脂肪酸。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">單元不飽和脂肪酸：</strong>含一個雙鍵，如橄欖油、苦茶油中的油酸（Oleic acid）。</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">多元不飽和脂肪酸：</strong>含兩個以上雙鍵，包含 Omega-3（魚油、亞麻仁油）與 Omega-6（葵花油、大豆油）脂肪酸。</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    此外還有一種需要特別警惕的類型：<strong style="color: #f87171;">反式脂肪酸</strong>——這是植物油經「氫化」加工後產生的人工脂肪，是目前公認對心血管危害最大的油脂類型。<sup><a href="https://doi.org/10.1056/NEJMra054035" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、動物油 vs 植物油：根本差異在哪裡？
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">動物油的特性與健康影響</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    動物油主要來源包括豬油、牛油、奶油與雞油。這類油脂的共同特色是<strong style="color: #ffffff;">飽和脂肪酸含量高</strong>，在室溫下多呈固態或半固態，且具有特殊的香氣，讓食物更香濃美味。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    從健康角度，動物油的飽和脂肪酸（特別是棕櫚酸與硬脂酸）會使血液中的低密度脂蛋白膽固醇（LDL-C，俗稱「壞膽固醇」）上升。大量的流行病學研究及 Meta 分析指出，以飽和脂肪酸取代碳水化合物，並不會降低心血管疾病風險；而以不飽和脂肪酸取代飽和脂肪酸，則確實對心血管健康有益。<sup><a href="https://doi.org/10.1136/bmj.i3978" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    不過，動物油也有其優點：<strong style="color: #ffffff;">較高的發煙點（豬油約 188°C）</strong>代表高溫烹調時較不容易產生有害的氧化產物，且不含反式脂肪。此外，奶油中含有少量共軛亞麻油酸（CLA）與維生素 A、D，有一定的營養價值。<sup><a href="https://doi.org/10.3390/nu10121885" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">動物油小結：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">✅ 耐高溫、不易氧化、無反式脂肪</li>
+    <li style="margin-bottom: 0.5rem;">✅ 含脂溶性維生素（奶油）</li>
+    <li style="margin-bottom: 0.5rem;">❌ 飽和脂肪酸高，大量攝取升高 LDL-C</li>
+    <li style="margin-bottom: 0.5rem;">❌ 含膽固醇（植物油不含膽固醇）</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">植物油的特性與健康影響</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    植物油來源廣泛，從果實（橄欖、酪梨）、種子（葵花、亞麻、芝麻）到堅果（花生、核桃），提供了非常多元的脂肪酸組成。整體而言，植物油<strong style="color: #ffffff;">不飽和脂肪酸含量較高</strong>，不含膽固醇，且多數含有維生素 E 等抗氧化成分。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    值得注意的是，並非所有植物油都等同健康。椰子油與棕櫚油的飽和脂肪酸含量分別高達 87% 與 50%，遠超一般動物油，這是消費者常見的認知誤區。<sup><a href="https://doi.org/10.1161/CIR.0000000000000510" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 重要觀念</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      「植物油」≠「健康」。椰子油的飽和脂肪酸含量高達 87%，比豬油（約 40%）或奶油（約 63%）還高。美國心臟學會（AHA）明確指出，椰子油會升高 LDL，不建議作為日常主要用油。<sup><a href="https://doi.org/10.1161/CIR.0000000000000510" target="_blank" rel="noopener noreferrer" style="color: #0e7490; text-decoration: underline;">[6]</a></sup>
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、脂肪酸完整解析：對身體的好壞
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">飽和脂肪酸——適量，勿過量</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    飽和脂肪酸結構穩定，不易氧化，因此耐高溫烹調。然而，過量攝取（特別是月桂酸、棕櫚酸）與 LDL 升高密切相關，增加動脈粥樣硬化（血管壁堆積脂肪斑塊）的風險。世界衛生組織（WHO）建議飽和脂肪酸的攝取量應低於每日總熱量的 10%。<sup><a href="https://www.who.int/publications/i/item/9789240008373" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    近年也有部分研究重新評估飽和脂肪酸的角色，認為不同種類的飽和脂肪酸（如短鏈vs長鏈）對健康的影響不盡相同，整體飲食型態比單一油脂種類更為重要。<sup><a href="https://doi.org/10.1136/bmj.i3978" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">單元不飽和脂肪酸——心血管的好朋友</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    以 Omega-9 油酸（Oleic acid）為代表的單元不飽和脂肪酸，是地中海飲食的核心成分。研究顯示，以單元不飽和脂肪酸取代飽和脂肪酸，可降低 LDL，同時維持甚至提升高密度脂蛋白膽固醇（HDL，俗稱「好膽固醇」）的濃度。<sup><a href="https://doi.org/10.1056/NEJMoa1200303" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    2013 年發表於《新英格蘭醫學雜誌》的研究追蹤了 7,447 名高心血管風險受試者，結果顯示每日補充特級初榨橄欖油（富含單元不飽和脂肪酸）的地中海飲食組，心血管事件（心肌梗塞、中風）發生率比低脂飲食組降低了約 <strong style="color: #ffffff;">30%</strong>。<sup><a href="https://doi.org/10.1056/NEJMoa1200303" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    單元不飽和脂肪酸的另一優點是<strong style="color: #ffffff;">適中的氧化穩定性</strong>——比多元不飽和脂肪酸穩定，適合中溫炒炸（特級初榨橄欖油發煙點約 190–210°C）。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">多元不飽和脂肪酸——必需脂肪酸，但需平衡</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    PUFA 包含人體無法自行合成的<strong style="color: #ffffff;">必需脂肪酸</strong>，必須從飲食中攝取：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">Omega-3 脂肪酸（α-次亞麻油酸 ALA、EPA、DHA）：</strong>具有抗發炎效果，降低三酸甘油脂，對大腦與心血管保護有充分研究支持。主要來源：深海魚油、亞麻仁油、奇亞籽油、核桃油。<sup><a href="https://doi.org/10.1093/eurheartj/ehab315" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">Omega-6 脂肪酸（亞麻油酸 LA）：</strong>適量有益，但現代飲食中攝取量往往過高。Omega-6 的過量攝取（相對於 Omega-3）可能促進發炎反應。理想的 Omega-6：Omega-3 比例約為 4:1 以下，但現代西式飲食常高達 15:1 甚至 20:1。<sup><a href="https://doi.org/10.3390/biomedicines9080896" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+    </li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    多元不飽和脂肪酸的主要缺點是<strong style="color: #ffffff;">氧化穩定性較差</strong>——雙鍵越多越容易在高溫下氧化，產生有害的醛類與自由基。因此富含多元不飽和脂肪酸的油（如葵花油、大豆油）不適合高溫油炸。<sup><a href="https://doi.org/10.1021/acs.jafc.8b02503" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">反式脂肪酸——避免攝取</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    反式脂肪酸分為兩類：天然存在於牛羊肉與乳製品中的少量反式脂肪（如共軛亞麻油酸，對健康無明顯危害），以及人工氫化植物油產生的工業反式脂肪（危害最大）。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    大量研究確認，工業反式脂肪會<strong style="color: #ffffff;">同時升高 LDL-C 與降低 HDL-C</strong>，是所有油脂中對心血管危害最大的類型。WHO 已於 2023 年前推動全球消除工業反式脂肪。<sup><a href="https://doi.org/10.1056/NEJMra054035" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    在台灣，根據衛福部規定，若產品的反式脂肪酸含量低於 0.3 公克/100 公克，可標示為「0」，因此即使標籤顯示反式脂肪為 0，仍需留意食品成分表中是否有「氫化植物油」或「部分氫化油」字樣。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、各類食用油脂肪酸組成比較表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 140px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    下表整理了市面上常見食用油的脂肪酸組成比例（近似值）、發煙點與適用烹調方式，供民眾選擇參考。
+  </p>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>油脂種類</th>
+          <th>飽和脂肪酸 </th>
+          <th>單元不飽和脂肪酸 </th>
+          <th>多元不飽和脂肪酸 </th>
+          <th>發煙點 (°C)</th>
+          <th>適用烹調方式</th>
+          <th style="text-align: center;">整體健康評估</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>特級初榨橄欖油</td>
+          <td>14%</td>
+          <td>73%（Omega-9）</td>
+          <td>11%（Omega-6多）</td>
+          <td>190–210°C</td>
+          <td>涼拌、中溫炒</td>
+          <td style="text-align: center;">⭐⭐⭐⭐⭐ 最佳</td>
+        </tr>
+        <tr>
+          <td>苦茶油</td>
+          <td>10%</td>
+          <td>79%（Omega-9）</td>
+          <td>10%</td>
+          <td>220–252°C</td>
+          <td>涼拌、炒、煎</td>
+          <td style="text-align: center;">⭐⭐⭐⭐⭐ 最佳</td>
+        </tr>
+        <tr>
+          <td>酪梨油</td>
+          <td>12%</td>
+          <td>71%（Omega-9）</td>
+          <td>14%</td>
+          <td>270°C</td>
+          <td>涼拌、炒、煎炸</td>
+          <td style="text-align: center;">⭐⭐⭐⭐⭐ 最佳</td>
+        </tr>
+        <tr>
+          <td>芥花油（菜籽油）</td>
+          <td>7%</td>
+          <td>62%</td>
+          <td>31%（Omega-3較多）</td>
+          <td>200–230°C</td>
+          <td>炒、煎</td>
+          <td style="text-align: center;">⭐⭐⭐⭐ 良好</td>
+        </tr>
+        <tr>
+          <td>花生油</td>
+          <td>17%</td>
+          <td>46%</td>
+          <td>33%（Omega-6多）</td>
+          <td>225°C</td>
+          <td>炒、煎、炸</td>
+          <td style="text-align: center;">⭐⭐⭐ 中等</td>
+        </tr>
+        <tr>
+          <td>葵花油</td>
+          <td>12%</td>
+          <td>17%</td>
+          <td>69%（Omega-6多）</td>
+          <td>225°C</td>
+          <td>炒（勿高溫反覆使用）</td>
+          <td style="text-align: center;">⭐⭐⭐ 中等</td>
+        </tr>
+        <tr>
+          <td>大豆油</td>
+          <td>15%</td>
+          <td>24%</td>
+          <td>61%（Omega-6多）</td>
+          <td>230°C</td>
+          <td>炒（勿反覆高溫）</td>
+          <td style="text-align: center;">⭐⭐⭐ 中等</td>
+        </tr>
+        <tr>
+          <td>亞麻仁油</td>
+          <td>9%</td>
+          <td>18%</td>
+          <td>73%（Omega-3最高）</td>
+          <td>107°C（極低）</td>
+          <td>僅限涼拌，不可加熱</td>
+          <td style="text-align: center;">⭐⭐⭐⭐ 良好（限涼拌）</td>
+        </tr>
+        <tr>
+          <td>椰子油</td>
+          <td>87%</td>
+          <td>6%</td>
+          <td>2%</td>
+          <td>177°C</td>
+          <td>低溫烘焙</td>
+          <td style="text-align: center;">⭐⭐ 謹慎使用</td>
+        </tr>
+        <tr>
+          <td>豬油（動物）</td>
+          <td>39%</td>
+          <td>45%</td>
+          <td>11%</td>
+          <td>188°C</td>
+          <td>高溫炒炸（少量）</td>
+          <td style="text-align: center;">⭐⭐ 謹慎使用</td>
+        </tr>
+        <tr>
+          <td>奶油（動物）</td>
+          <td>63%</td>
+          <td>25%</td>
+          <td>4%</td>
+          <td>150°C</td>
+          <td>低溫烹調、烘焙</td>
+          <td style="text-align: center;">⭐⭐ 謹慎使用</td>
+        </tr>
+        <tr>
+          <td>棕櫚油</td>
+          <td>50%</td>
+          <td>37%</td>
+          <td>10%</td>
+          <td>235°C</td>
+          <td>炒炸（廣泛用於加工食品）</td>
+          <td style="text-align: center;">⭐⭐ 謹慎使用</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="color: #94a3b8; font-size: 0.95rem; margin-top: 0.75rem; font-style: italic;">※ 脂肪酸比例為近似值，因品牌與加工方式略有差異。資料來源：USDA FoodData Central 及相關文獻。</p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、哪種植物油最好？科學實證推薦
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">第一名：橄欖油（特別是特級初榨橄欖油）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    在現有科學證據中，<strong style="color: #2dd4bf;">特級初榨橄欖油（Extra Virgin Olive Oil, EVOO）</strong>是研究最充分、對健康效益最廣泛確認的食用油。除了高達 73% 的 多元不飽和脂肪酸，特級初榨橄欖油還含有豐富的多酚類抗氧化物（如 Oleocanthal），具有類似布洛芬的抗發炎效果。<sup><a href="https://doi.org/10.1056/NEJMoa1200303" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    PREDIMED 研究是目前支持橄欖油健康效益最強力的隨機對照試驗，研究對象為高心血管風險的西班牙成人，結果顯示地中海飲食搭配特級初榨橄欖油，可顯著降低心血管事件。<sup><a href="https://doi.org/10.1056/NEJMoa1200303" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <strong style="color: #ffffff;">選購建議：</strong>選擇標有「Extra Virgin（特級初榨）」字樣，注意產地與採收日期，避免選購透明瓶裝或長期存放的橄欖油（多酚類會隨時間氧化流失）。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">台灣之光：苦茶油</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    苦茶油（山茶花油，Camellia Oil）的多元不飽和脂肪酸含量高達 79%，甚至高於橄欖油，且發煙點達 220–252°C，非常適合台灣的中高溫炒菜習慣。同時含有豐富的多酚類抗氧化物與脂溶性維生素 E。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    雖然苦茶油的大規模臨床研究尚不及橄欖油豐富，但其脂肪酸組成高度相似，且在台灣飲食習慣下的實用性更高。<sup><a href="https://doi.org/10.3390/foods10102327" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">Omega-3 補充：亞麻仁油與魚油</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    現代飲食普遍 Omega-3 攝取不足，建議適量補充 Omega-3 豐富的油脂：亞麻仁油（植物性 Omega-3，ALA）、或直接攝取深海魚（EPA、DHA）。EPA 和 DHA 有更直接的生理活性，研究顯示可降低三酸甘油脂、減少發炎、降低心源性猝死風險。<sup><a href="https://doi.org/10.1093/eurheartj/ehab315" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <strong style="color: #ffffff;">注意：</strong>亞麻仁油發煙點極低（約 107°C），只能用於涼拌或加入冷飲中，絕對不可加熱烹調，否則 Omega-3 不僅失效，還會產生有害氧化物。
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 實用選油原則</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      沒有一種油是萬能的。建議家中常備 2–3 種油脂交替使用：<br>
+      ① <strong>日常炒菜</strong>：苦茶油或芥花油<br>
+      ② <strong>涼拌沙拉</strong>：特級初榨橄欖油或亞麻仁油<br>
+      ③ <strong>高溫油炸（偶爾）</strong>：酪梨油或精製橄欖油（發煙點較高）<br>
+      ④ <strong>烘焙</strong>：少量奶油或椰子油（享受風味，控制用量）
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、烹調方式對油脂健康的影響——發煙點與氧化
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    選對油只是第一步，<strong style="color: #2dd4bf;">烹調方式同樣決定了食用油是否真的有益健康。</strong>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">什麼是發煙點？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    發煙點是油脂開始冒煙、分解的溫度。一旦超過發煙點，油脂中的脂肪酸開始氧化，產生有害的醛類、酮類與自由基，這些物質不僅有異味，更與氧化壓力、發炎反應和癌症風險有關。<sup><a href="https://doi.org/10.1021/acs.jafc.8b02503" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    一般家庭炒菜溫度約 160–180°C，油炸約 180–200°C。重要的是，<strong style="color: #ffffff;">發煙點並非唯一指標</strong>——油脂的氧化穩定性（與飽和程度正相關）也很重要。例如，葵花油發煙點雖高（225°C），但其大量的多元不飽和脂肪酸在高溫下仍快速氧化。<sup><a href="https://doi.org/10.1021/acs.jafc.8b02503" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">反覆高溫使用的危害</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    路邊攤或餐廳常見「回鍋油」——同一鍋油反覆高溫使用數小時甚至數天。研究發現，反覆高溫加熱的植物油中，有害的極性化合物與醛類濃度顯著上升，長期攝取與心血管疾病和癌症風險相關。建議每次使用後，深色油渣應撈除，避免反覆加熱超過 3 次。<sup><a href="https://doi.org/10.1021/acs.jafc.8b02503" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 七、常見四大迷思破解
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「椰子油是超級食物，多吃有益健康」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>迷思！</strong> 椰子油因含中鏈脂肪酸而被廣泛宣傳，但其飽和脂肪酸高達 87%，美國心臟學會明確指出椰子油會升高 LDL，不建議以椰子油取代橄欖油或其他不飽和脂肪酸油脂。<sup><a href="https://doi.org/10.1161/CIR.0000000000000510" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[6]</a></sup> 偶爾少量使用於烘焙風味是可接受的，但不應作為日常主要用油。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「吃油會讓人變胖，減重就應該完全不吃油」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 脂肪是必需營養素。完全不攝取油脂會導致脂溶性維生素（A、D、E、K）缺乏，以及必需脂肪酸缺乏症。肥胖的根本原因是總熱量攝取過多，而非油脂本身。<sup><a href="https://doi.org/10.3390/nu11010006" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[2]</a></sup> 重點在於選擇健康的油脂類型並控制整體攝取量。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「標示『0反式脂肪』就代表完全沒有反式脂肪」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不完全正確！</strong> 台灣法規允許每 100 公克含量低於 0.3 公克的反式脂肪標示為「0」。因此，選購加工食品時應檢查成分表，若含有「氫化植物油」或「部分氫化油」，仍然含有工業反式脂肪，應盡量避免。<sup><a href="https://doi.org/10.1056/NEJMra054035" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[3]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
+        <div>
+          <strong>「Omega-6 多多益善，吃越多越健康」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> Omega-6 是必需脂肪酸，但現代飲食已普遍過量。當 Omega-6：Omega-3 的比例過高（超過 10:1），可能促進系統性慢性發炎，與心血管疾病、代謝症候群相關。<sup><a href="https://doi.org/10.3390/biomedicines9080896" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[9]</a></sup> 重點不是增加 Omega-6，而是相對增加 Omega-3 的攝取，維持健康比例。</span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    八、特殊族群的選油建議
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">心血管疾病高風險者或已確診患者</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;">以特級初榨橄欖油或苦茶油為主要用油</li>
+    <li style="margin-bottom: 0.75rem;">嚴格限制動物油、椰子油、棕櫚油等高飽和脂肪酸油脂</li>
+    <li style="margin-bottom: 0.75rem;">增加深海魚的攝取頻率（每週至少 2 次），補充 EPA/DHA</li>
+    <li style="margin-bottom: 0.75rem;">徹底迴避含氫化植物油的加工食品（餅乾、酥皮、人造奶油）</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">素食者</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;">以橄欖油、苦茶油、芥花油為主</li>
+    <li style="margin-bottom: 0.75rem;">額外補充亞麻仁油或奇亞籽油（植物性 Omega-3）</li>
+    <li style="margin-bottom: 0.75rem;">考慮微藻油補充劑（直接提供 DHA，無需轉換）</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">幼兒與孕婦</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    DHA 對嬰幼兒腦部發育至關重要。孕婦與哺乳媽媽建議每週至少攝取 2–3 次低汞深海魚（如鮭魚、秋刀魚），或諮詢醫師後補充 DHA 補充劑。烹調用油以橄欖油或苦茶油為首選，避免反式脂肪。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🍳</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：橄欖油可以拿來高溫油炸嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      特級初榨橄欖油發煙點約 190–210°C，家庭炒菜是沒有問題的。但若要長時間高溫油炸（200°C 以上），建議改用酪梨油（發煙點 270°C）或精製橄欖油（發煙點較高）。另一個選擇是偶爾以豬油或牛油進行高溫炸製，其飽和脂肪酸結構穩定，氧化產物較少，但需注意心血管影響。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：每天攝取多少油脂才適當？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      WHO 建議成人每日脂肪攝取量應佔總熱量的 20–35%，其中飽和脂肪酸應低於 10%，反式脂肪應低於 1%。以 2000 大卡飲食為例，每日用油約 44–78 公克（約 3–5 湯匙），但需計入食物本身含有的油脂（肉類、堅果、乳製品等）。<sup><a href="https://www.who.int/publications/i/item/9789240008373" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：標榜「冷壓初榨」的油一定比較好嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      「冷壓初榨」意味著油脂在低溫下直接從原料壓榨，未經過溶劑萃取或高溫精製，因此保留了更多的天然多酚類抗氧化物和維生素。以橄欖油為例，特級初榨橄欖油的多酚含量遠高於精製橄欖油。然而，未精製的油因含有雜質，通常發煙點較低，且保存期限較短，需避光冷藏保存，以防止氧化。<sup><a href="https://doi.org/10.3390/foods10102327" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：「調合油」到底好不好？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      調合油是將多種植物油混合，理論上可以調整脂肪酸比例。然而，市售調合油的成分比例未必透明，消費者難以評估其實際脂肪酸組成。相較之下，直接選購單一純正的高品質食用油（如橄欖油、苦茶油）更能掌握其健康特性。建議自行在家中交替使用不同油脂，比購買調合油更為理想。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：油脂氧化後有什麼跡象？如何保存食用油？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      油脂氧化後會產生油耗味（類似蠟筆或油漆的異味）、顏色變深或混濁。保存食用油應注意：避免陽光直射（使用深色玻璃瓶）、存放於陰涼乾燥處（25°C 以下）、開瓶後盡量在 3 個月內使用完畢、蓋緊瓶蓋以避免氧化。亞麻仁油等富含 Omega-3 的油脂更應冷藏保存。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    食用油的選擇，看似廚房裡的小事，卻影響著我們每日的細胞健康、發炎程度與心血管狀態。沒有一種油是完美的，重要的是理解不同油脂的特性，根據烹調方式選擇合適的油，並在整體飲食中維持健康的脂肪酸比例。
+  </p><br>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    最核心的建議是：<strong style="color: #1e293b;">以特級初榨橄欖油或苦茶油為日常主要用油，搭配足夠的 Omega-3 攝取（深海魚），限制飽和脂肪酸的攝取，並徹底避免工業反式脂肪。</strong> 這樣的飲食策略，有充分的科學實證支持心血管健康的長期效益。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：打開你的廚房，查看手邊食用油的成分標示，確認是否含有「氫化植物油」。若有飲食相關的健康疑慮，建議諮詢醫師或營養師進行個人化的飲食評估。
+    </p>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Estruch, R., Ros, E., Salas-Salvadó, J., et al. (2013). Primary prevention of cardiovascular disease with a Mediterranean diet. New England Journal of Medicine, 368(14), 1279–1290. <a href="https://doi.org/10.1056/NEJMoa1200303" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1056/NEJMoa1200303</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Calder, P.C., Boobis, A., Braun, D., et al. (2019). Dietary fats and cardiovascular disease: A Presidential Advisory from the American Heart Association. Nutrients, 11(1), 6. <a href="https://doi.org/10.3390/nu11010006" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3390/nu11010006</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Mozaffarian, D., Katan, M.B., Ascherio, A., Stampfer, M.J., & Willett, W.C. (2006). Trans fatty acids and cardiovascular disease. New England Journal of Medicine, 354(15), 1601–1613. <a href="https://doi.org/10.1056/NEJMra054035" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1056/NEJMra054035</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Siri-Tarino, P.W., Sun, Q., Hu, F.B., & Krauss, R.M. (2016). Saturated fats versus polyunsaturated fats versus carbohydrates for cardiovascular disease prevention and treatment. BMJ, 353, i3978. <a href="https://doi.org/10.1136/bmj.i3978" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1136/bmj.i3978</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lordan, R., Tsoupras, A., Mitra, B., & Zabetakis, I. (2018). Dairy fats and cardiovascular disease: Do we really need to be concerned? Nutrients, 10(12), 1885. <a href="https://doi.org/10.3390/nu10121885" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3390/nu10121885</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Sacks, F.M., Lichtenstein, A.H., Wu, J.H.Y., et al. (2017). Dietary fats and cardiovascular disease: A presidential advisory from the American Heart Association. Circulation, 136(3), e1–e23. <a href="https://doi.org/10.1161/CIR.0000000000000510" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1161/CIR.0000000000000510</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        World Health Organization. (2020). Healthy diet. WHO Guidelines: Saturated fatty acid and trans-fatty acid intake for adults and children. <a href="https://www.who.int/publications/i/item/9789240008373" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">WHO Publication</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Visseren, F.L.J., Mach, F., Smulders, Y.M., et al. (2021). 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice. European Heart Journal, 42(34), 3227–3337. <a href="https://doi.org/10.1093/eurheartj/ehab315" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1093/eurheartj/ehab315</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Djuricic, I., & Calder, P.C. (2021). Beneficial outcomes of omega-6 and omega-3 polyunsaturated fatty acids on human health: An update for 2021. Biomedicines, 9(8), 896. <a href="https://doi.org/10.3390/biomedicines9080896" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3390/biomedicines9080896</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Grootveld, M., Percival, B.C., Leenders, J., & Wilson, P.B. (2018). Potential adverse public health effects afforded by the ingestion of dietary lipid oxidation product toxins: Significance of fried food sources. Journal of Agricultural and Food Chemistry, 66(29), 7525–7540. <a href="https://doi.org/10.1021/acs.jafc.8b02503" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1021/acs.jafc.8b02503</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Liao, C.Y., & Roan, S.F. (2021). Camellia oil: Composition, biological activities, and potential applications. Foods, 10(10), 2327. <a href="https://doi.org/10.3390/foods10102327" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3390/foods10102327</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+
+
 {
 id: 'chicken-hormone-myth-analysis',
   title: '破解雞肉與雞皮謠言：藥物殘留與各部位營養大解析',
