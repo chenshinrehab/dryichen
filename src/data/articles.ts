@@ -3,6 +3,451 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
 {
+id: 'chicken-hormone-myth-analysis',
+  title: '破解雞肉與雞皮謠言：藥物殘留與各部位營養大解析',
+  lastModified: '2026-05-28',
+  category: '衛教文章',
+  date: '2026-05-28',
+  summary: '「雞皮和雞脖子打了生長激素」是真的嗎？本文從食品科學與運動營養角度，深入剖析現代肉雞快速生長的真相。為您釐清法規禁止生長激素的實務原因，並提供雞胸、雞腿、雞皮及雞脖子等部位的完整脂肪與熱量數據，帶您避開用藥殘留誤區，吃得安心又健康。',
+  coverImage: '/images/news/article/chicken-hormone-myth-analysis.webp',
+  seoTitle: '雞肉有打生長激素？雞皮、雞脖子能吃嗎？運動醫學與營養成分全解析',
+  seoDescription: '流傳已久的「雞脖子與雞皮打生長激素」純屬謠言！現代肉雞生長關鍵在於育種與精準飼料。本文轉載專業衛教資訊，解析雞肉各部位熱量、脂肪比例（如油酸成分），並針對增肌減脂、心血管疾病族群給予最務實的食安與烹調建議。',
+  keywords: [
+    '雞肉生長激素',
+    '雞皮熱量',
+    '雞脖子淋巴',
+    '抗生素殘留',
+    '白肉雞迷思',
+    '去皮雞胸肉',
+    '不飽和脂肪酸',
+    '食品安全',
+    '增肌減脂飲食',
+    '性早熟環境荷爾蒙'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    「雞皮和雞脖子打了生長激素，吃了對身體不好」——這是在台灣流傳已久的說法，但實際上，<strong>現代肉雞的快速生長完全來自育種改良與精準飼料，而非生長激素</strong>。無論是美國、歐盟還是台灣，法規均明確禁止在家禽飼養中使用生長激素，且就算想打，以肉雞的飼養天數和激素作用時間來看，根本起不了作用。<br><br>
+    雞皮確實脂肪含量高，雞脖子的皮下淋巴組織較多，對特定族群（如正在控制體重、心血管疾病患者）有斟酌食用的必要，但對一般健康的人而言，把雞皮和雞脖子說成「毒藥」並非科學結論。本文依據實證研究，逐一釐清各部位的營養成分差異，並提供務實的飲食建議。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S0924224415300819" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    <sup><a href="https://extension.msstate.edu/publications/chickens-do-not-receive-growth-hormones-so-why-all-the-confusion" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+     <sup><a href="https://www.thepoultrysite.com/articles/chicken-producers-dont-use-growth-hormones-here-are-the-reasons-why" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+</div>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、雞肉有打生長激素嗎？破解最常見的謠言
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多人看到現代肉雞只要短短五到六週就能長到上市體重，直覺反應就是「一定打了什麼」。這種懷疑的心情完全可以理解，但事實上，<strong style="color: #2dd4bf;">現代商業肉雞根本不需要、也不會使用生長激素。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    肉雞長得快，背後有三個科學原因：第一是<strong style="color: #ffffff;">長達數十年的品種選拔</strong>，育種業者持續挑選生長效率最好的雞來繁殖，現代白肉雞的遺傳潛力比1960年代的肉雞快了將近三倍。第二是<strong style="color: #ffffff;">精準的飼料配方</strong>，依據每個生長階段的需求量身調配蛋白質、能量與微量元素。第三是<strong style="color: #ffffff;">現代化的封閉飼養環境</strong>，減少了疾病與環境壓力對生長的干擾。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S0924224415300819" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    從法規面來說，美國食品藥物管理局（FDA）、歐盟，以及台灣主管機關均明確規定，<strong style="color: #ffffff;">禁止在家禽飼養中使用生長激素或類固醇</strong>。
+    <sup><a href="https://extension.msstate.edu/publications/chickens-do-not-receive-growth-hormones-so-why-all-the-confusion" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    就算撇開法規不談，實際上也幾乎做不到：若要讓生長激素對雞隻發揮效果，每天至少需要注射數次，而一棟雞舍往往有兩萬隻以上，這在人力與成本上完全不可行。更關鍵的是，肉雞在達到性成熟之前就已出欄，激素根本沒有生理作用的時間視窗。
+    <sup><a href="https://www.thepoultrysite.com/articles/chicken-producers-dont-use-growth-hormones-here-are-the-reasons-why" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 那為什麼以前會有人說打在雞翅尖或雞脖子？</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      這個說法的起源，很可能是把「疫苗注射」與「生長激素注射」混為一談。小雞剛入欄時確實會接種禽流感等疫苗，注射部位有時是頸部皮下，被人看見後以訛傳訛，演變成「雞脖子打了生長激素」的謠言。疫苗與生長激素是完全不同的東西，且疫苗的殘留量極微，不構成食安問題。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、那抗生素呢？這才是更值得關心的問題
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    雖然生長激素是謠言，但「雞隻完全不用藥」也不完全正確。雞和人一樣會生病，在飼養初期，業者確實可能在飼料或飲水中加入抗生素作為預防性投藥，以避免群體感染造成大規模損失。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    不過，各國對此有嚴格的<strong style="color: #ffffff;">停藥期</strong>規定——雞隻在出欄前必須停止用藥，讓藥物充分代謝，才符合上市標準。台灣農業部及屠宰衛生檢查制度也針對抗生素殘留進行定期監控。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11188884/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    抗生素殘留若真的存在，最容易累積在<strong style="color: #ffffff;">肝臟等臟器及淋巴組織</strong>，而非一般肌肉。因此，如果你對藥物殘留有疑慮，比起刻意避開雞皮和雞脖子，更實際的做法是：<strong style="color: #ffffff;">購買具有屠宰衛生檢查合格標誌的商業化雞肉，並減少食用內臟</strong>（尤其是雞肝）。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7588929/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+ 
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 實用建議：</strong>挑選有屠宰衛生合格標誌的品牌雞肉，是降低藥物殘留風險最直接有效的方法。相比之下，「不吃雞皮或雞脖子」對於食安保障的幫助，遠遠小於選對購買來源。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、雞肉各部位的營養成分大解析
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    撇開謠言不談，雞肉的不同部位在脂肪、蛋白質和熱量上確實差異顯著，了解這些數字，才能根據自己的健康需求做出適合的選擇。
+  </p>
+ 
+  <style>
+    .custom-table-container { width: 100%; overflow-x: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+    .modern-table { width: 100%; border-collapse: collapse; font-family: "PingFang TC","Heiti TC","Microsoft JhengHei",sans-serif; font-size: 15px; background-color: #ffffff; color: #1f2937; min-width: 600px; }
+    .modern-table thead tr { background-color: #1e3a8a; color: #ffffff; text-align: left; font-weight: bold; }
+    .modern-table th { padding: 16px 12px; border-bottom: 2px solid #111827; letter-spacing: 0.5px; }
+    .modern-table td { padding: 14px 12px; border-bottom: 1px solid #e5e7eb; line-height: 1.6; }
+    .modern-table td:first-child { background-color: #f9fafb; font-weight: 600; color: #111827; }
+    .modern-table tbody tr:nth-of-type(even) { background-color: #f3f4f6; }
+    .modern-table tbody tr:hover { background-color: #e0e7ff; transition: background-color 0.2s ease; }
+  </style>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>部位</th>
+          <th>每100克熱量</th>
+          <th>蛋白質</th>
+          <th>脂肪</th>
+          <th>特點</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>雞柳（里肌）</td>
+          <td>約106大卡</td>
+          <td>約24g</td>
+          <td>約0.6g</td>
+          <td>全雞最低脂，減脂首選</td>
+        </tr>
+        <tr>
+          <td>雞胸肉（去皮）</td>
+          <td>約165大卡</td>
+          <td>約23g</td>
+          <td>約2–3g</td>
+          <td>高蛋白低脂，運動族群最愛</td>
+        </tr>
+        <tr>
+          <td>雞腿肉（去皮）</td>
+          <td>約175大卡</td>
+          <td>約18g</td>
+          <td>約10g</td>
+          <td>鐵質較高，口感較嫩</td>
+        </tr>
+        <tr>
+          <td>雞脖子（去皮）</td>
+          <td>約130大卡</td>
+          <td>約17g</td>
+          <td>約8–9g</td>
+          <td>膠原蛋白豐富，連皮則脂肪倍增</td>
+        </tr>
+        <tr>
+          <td>雞翅</td>
+          <td>約200大卡</td>
+          <td>約18g</td>
+          <td>約14g</td>
+          <td>維生素A含量高，但脂肪也高</td>
+        </tr>
+        <tr>
+          <td>雞皮（單獨）</td>
+          <td>約400–450大卡</td>
+          <td>約11g</td>
+          <td>約43g</td>
+          <td>高脂肪，但以不飽和脂肪為主</td>
+        </tr>
+        <tr>
+          <td>雞屁股</td>
+          <td>約400大卡以上</td>
+          <td>約9g</td>
+          <td>約46g</td>
+          <td>全雞最高脂部位</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="color: #94a3b8; font-size: 0.9rem; margin-top: 0.5rem;">資料來源：美國農業部（USDA）營養資料庫及相關研究文獻<sup>[6,7]</sup></p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">雞胸肉：高蛋白低脂的代表</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    去皮雞胸肉每100克含有約23克蛋白質，脂肪僅2–3克，是目前公認蛋白質密度最高、脂肪最低的禽肉部位之一，適合需要控制熱量與體脂的族群。其中的支鏈胺基酸（BCAA）含量高，有助於肌肉合成與修復。
+    <sup><a href="https://lipidworld.biomedcentral.com/articles/10.1186/1476-511X-13-42" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">雞腿肉：口感好，但脂肪略高</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    雞腿因為活動量大，肌纖維含有較多肌紅素，所以呈現深色，也因此含有比雞胸更多的鐵質和鋅。脂肪約10克/100克，去皮後熱量合理，是希望攝取更豐富微量元素的好選擇。
+    <sup><a href="https://nutrition168.com/2021/11/25/%E9%9B%9E%E8%82%89%E3%80%8C%E9%80%99%E8%A3%A1%E3%80%8D%E7%86%B1%E9%87%8F%E6%9C%80%E9%AB%98%EF%BC%9F%E9%9B%9E%E8%83%B8%E3%80%81%E9%9B%9E%E7%BF%85%E3%80%81%E9%9B%9E%E8%85%BF%E6%AF%94%E4%B8%80%E6%AF%94/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">雞皮：壞名聲有點冤枉，但真的很油</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    雞皮的脂肪含量確實很高——每100克約含43克脂肪——這點毫無疑問。但值得一提的是，雞皮脂肪的組成並沒有想像中那麼「壞」。研究指出，雞皮脂肪中約有<strong style="color: #ffffff;">50%是單元不飽和脂肪酸（主要是油酸，類似橄欖油中的成分），另有約20%是多元不飽和脂肪酸</strong>，飽和脂肪約佔30%。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9179164/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+    哈佛醫學院的相關評述也指出，過去對飽和脂肪的負面評價在最新研究中已有所修正，而不飽和脂肪對血脂與心血管健康有益。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    話雖如此，雞皮帶來的<strong style="color: #ffffff;">熱量密度非常高</strong>，少少一塊就能大幅增加整餐的熱量。需要控制體重、有高血脂或心血管疾病的人，確實應該斟酌。對一般健康成人，偶爾吃一點雞皮並不構成健康危害，只要注意整體飲食的脂肪攝取量即可。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">雞脖子：淋巴多，但真正要注意的是這件事</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    雞脖子本身的肌肉去皮後，蛋白質約17克/100克，脂肪約8–9克，營養上並沒有特別問題。真正值得注意的是，<strong style="color: #ffffff;">雞脖子皮下有較多的淋巴組織</strong>——淋巴是免疫系統的一部分，也是藥物或有害物質在體內可能累積的地方。按照台灣屠宰規範，屠體上的淋巴結應予清除，但民眾烹調時若連皮一起食用，確實可能接觸到少量殘留的淋巴組織。
+    <sup><a href="https://health.udn.com/health/story/6037/4253087" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    如果你對此有疑慮，最簡單的處理方式就是<strong style="color: #ffffff;">去掉雞脖子的皮再食用</strong>，而非完全不吃雞脖子。去皮後的雞脖子肉是很好的膠原蛋白來源，對關節與皮膚健康有所助益。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、雞皮加熱後的脂肪會怎樣？烹調方式才是關鍵
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    同樣是吃雞皮，烤雞和炸雞的健康差距可以非常大。油炸過的雞皮會再吸附大量的烹調油，使脂肪含量倍增，同時高溫油炸也可能產生氧化脂質等不良物質。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    相較之下，<strong style="color: #ffffff;">烘烤、水煮或清蒸</strong>的帶皮雞肉，熱量相對可控，也不會因為過度加熱而破壞不飽和脂肪酸的結構。因此，與其糾結要不要吃雞皮，不如先問：「這塊雞是怎麼煮的？」
+    <sup><a href="https://ncpic.org.au/blog/nutrition/how-bad-is-chicken-skin-for-your-health.html" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 帶皮烤vs去皮水煮，到底差多少？</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      以100克雞胸肉為例：去皮水煮約165大卡、脂肪3克；帶皮油炸可達268大卡、脂肪17克，差了將近一倍的脂肪量。這說明「怎麼煮」對健康的影響，往往遠大於「帶不帶皮」。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 五、常見三大誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「雞皮和雞脖子打了生長激素，吃了會影響荷爾蒙」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 台灣、美國、歐盟均立法禁止在家禽飼養中使用生長激素，且技術上也根本做不到大規模注射。現代肉雞快速生長的原因是育種與飼料改良，而非激素。<sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S0924224415300819" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup> 至於兒童性早熟，研究指向的是塑化劑、高油飲食等環境因素，而非雞肉。</span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「雞皮是純粹的壞脂肪，吃了一定對心臟不好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 雞皮確實脂肪含量高，但其中超過65%是不飽和脂肪酸（單元不飽和＋多元不飽和），主要成分為油酸，與橄欖油類似。<sup><a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/chicken-skin" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[13]</a></sup> 飲食中的脂肪品質與總量都重要，完全迴避雞皮並無必要，但高油烹調的雞皮確實應該節制。</span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「雞脖子有毒，整個不要吃」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>誇大其詞！</strong> 雞脖子皮下有淋巴組織，是相對合理的食安考量，但並非完全不能吃。去皮食用可以大幅降低疑慮，而且雞脖子肉含有豐富的膠原蛋白。真正需要優先注意的是購買有衛生合格標誌的雞肉，以及避免過量食用雞肝等內臟，而非整體排除雞脖子。<sup><a href="https://health.udn.com/health/story/6037/4253087" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[11]</a></sup></span>
+        </div>
+      </li>
+ 
+    </ul>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、根據健康狀況，怎麼選最適合你的部位？
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">想控制體重、減脂的人</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">首選去皮雞胸肉或雞柳，熱量最低、蛋白質最高</li>
+    <li style="margin-bottom: 0.5rem;">避開帶皮的部位，尤其是油炸料理</li>
+    <li style="margin-bottom: 0.5rem;">雞屁股和雞皮熱量是雞胸的4–5倍，盡量少吃</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">有心血管疾病、高血脂的人</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">以去皮雞肉為主，烹調方式選擇水煮、清蒸或烘烤</li>
+    <li style="margin-bottom: 0.5rem;">雞皮可以少量食用，但避免大量或高溫油炸的方式</li>
+    <li style="margin-bottom: 0.5rem;">整體飲食中的脂肪總量管理比單一食材更重要</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">一般健康成人、正在增肌的人</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">雞肉各部位都可以食用，注意均衡攝取即可</li>
+    <li style="margin-bottom: 0.5rem;">雞腿的鐵和鋅含量比雞胸高，有助於免疫與造血</li>
+    <li style="margin-bottom: 0.5rem;">雞皮、雞翅偶爾吃無妨，但若熱量攝取已足夠就不必刻意多吃</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">對食安有疑慮的人</h3>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">優先選擇商業化、具有屠宰衛生檢查合格標誌的雞肉</li>
+    <li style="margin-bottom: 0.5rem;">雞脖子去皮食用，雞肝等內臟適量即可</li>
+    <li style="margin-bottom: 0.5rem;">確保肉品完全煮熟，避免生食</li>
+  </ul>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+    <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+      <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+        <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+      </h2>
+    </div>
+    <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+      
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q1：雞翅尖也是打生長激素的部位嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        不是。這個說法和雞脖子謠言同樣源自誤解。雞翅尖是常見的疫苗注射部位之一，但疫苗與生長激素完全不同。疫苗殘留量極微，完全煮熟後不構成食安問題。就食安角度而言，雞翅尖沒有特別需要迴避的理由，只是脂肪含量較高，節制食用即可。
+      </p>
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q2：孩子吃太多雞肉會性早熟嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        目前科學上沒有足夠證據支持「吃雞肉導致性早熟」的說法。兒童性早熟是多因素問題，研究指向的主因包括體重過重（脂肪組織會分泌雌激素）、環境荷爾蒙（如塑化劑）、以及遺傳因素，與雞肉本身的直接關聯至今尚未被確立。<sup><a href="https://views.learneating.com/food-tech/chicken-rumor/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>
+      </p>
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q3：溫體雞比冷凍雞更安全嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        不一定。雞肉的安全性取決於飼養管理、屠宰衛生與冷鏈管控，而非「溫體vs冷凍」的形式。具有屠宰衛生合格標誌的冷藏或冷凍雞肉，食安保障往往高於來源不明的溫體雞。購買時應優先確認屠宰衛生標誌，而非形式。
+      </p>
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q4：雞皮煮熟後脂肪含量會減少嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        烤或燉煮的過程中，雞皮的部分脂肪確實會融入湯汁或滴落，使實際吃進去的脂肪量低於生重數據。但若是油炸，雞皮反而會再吸附烹調油，脂肪量大幅增加。因此烹調方式對最終攝入的脂肪量影響很大。
+      </p>
+ 
+    </div>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    吃雞肉的方式，影響健康的因素從來都不只是「要不要去皮」或「敢不敢吃脖子」。真正重要的是：選擇有來源保障的雞肉、注意烹調方式、根據自己的健康狀況調整攝取量，以及在整體飲食中維持均衡。
+  </p><br>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    雞皮和雞脖子並不是毒藥，但也不是可以無節制享用的食物。<strong style="color: #1e293b;">脂肪含量高不等於有害，食安疑慮也有務實的解法</strong>——去皮、選好貨、煮熟，這三個原則比任何謠言都更有用。如果你對自己的飲食有特定的健康考量（如心血管疾病、糖尿病、體重控制），建議尋求營養師或醫師的個別化建議。
+  </p>
+ 
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 簡單記住：買有屠宰衛生標誌的雞肉 → 雞脖子去皮吃 → 避免油炸烹調 → 均衡攝取各部位。這樣就能安心享受雞肉，不必被謠言困擾。
+    </p>
+  </div>
+</div>
+ 
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Esquivel-Hernandez, Y., et al. (2016). Making things clear: Science-based reasons that chickens are not fed growth hormones. <em>Trends in Food Science & Technology</em>. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0924224415300819" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">DOI: 10.1016/j.tifs.2015.11.007</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Tabler, T., Wells, J., & Zhai, W. (2023). Chickens Do Not Receive Growth Hormones: So Why All the Confusion? Mississippi State University Extension Service / The Poultry Site. <a href="https://www.thepoultrysite.com/articles/chickens-do-not-receive-growth-hormones-so-why-all-the-confusion" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        The Poultry Site. (2023). Chicken Producers Don't Use Growth Hormones – Here are the Reasons Why. <a href="https://www.thepoultrysite.com/articles/chicken-producers-dont-use-growth-hormones-here-are-the-reasons-why" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Cahyaningrum, S., et al. (2024). Rapid testing of antibiotic residues to increase food safety awareness of animal origin. <em>PMC</em>. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11188884/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 11188884</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hugas, M., & Tsigarida, E. (2020). Detection of Bacterial Pathogens and Antibiotic Residues in Chicken Meat: A Review. <em>PMC</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7588929/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 7588929</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        USDA FoodData Central. Chicken breast, drumstick, and various cuts nutritional data. U.S. Department of Agriculture. <a href="https://fdc.nal.usda.gov/index.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">fdc.nal.usda.gov</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Givens, D.I., et al. (2012). Fatty acid composition of cooked chicken meat and chicken meat products as influenced by price range at retail. <em>Food Chemistry</em>. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0308814612016032" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">DOI: 10.1016/j.foodchem.2012.09.021</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kartikasari, L.R., et al. (2014). The role of total fats, saturated/unsaturated fatty acids and cholesterol content in chicken meat as cardiovascular risk factors. <em>Lipids in Health and Disease</em>, 13, 42. <a href="https://lipidworld.biomedcentral.com/articles/10.1186/1476-511X-13-42" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">DOI: 10.1186/1476-511X-13-42</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        林世航營養師. (2021). 雞肉「這裡」熱量最高？雞胸、雞翅、雞腿比一比. 營養師168. <a href="https://nutrition168.com/2021/11/25/%E9%9B%9E%E8%82%89%E3%80%8C%E9%80%99%E8%A3%A1%E3%80%8D%E7%86%B1%E9%87%8F%E6%9C%80%E9%AB%98%EF%BC%9F%E9%9B%9E%E8%83%B8%E3%80%81%E9%9B%9E%E7%BF%85%E3%80%81%E9%9B%9E%E8%85%BF%E6%AF%94%E4%B8%80%E6%AF%94/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Farmani, J., & Rostammiry, S. (2022). Rheological and functional characterization of gelatin and fat extracted from chicken skin. <em>PMC</em>. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9179164/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 9179164</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        陳億乘（中興大學動物科學系）. (2020). 吃雞肉必須小心的五大部位？解析雞肉傳言5大問. 元氣網. <a href="https://health.udn.com/health/story/6037/4253087" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        NCPIC Nutrition Blog. (2025). How Bad is Chicken Skin for Your Health? <a href="https://ncpic.org.au/blog/nutrition/how-bad-is-chicken-skin-for-your-health.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        ScienceDirect Topics. (2023). Chicken Skin – Overview (chemical composition, fatty acid profile). <a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/chicken-skin" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        好食課. (2024). 營養師解析：白肉雞有打生長激素？會性早熟？5大迷思破解！ <a href="https://views.learneating.com/food-tech/chicken-rumor/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+
+
+{
 id: 'beverage-sugar-coffee-health',
   title: '手搖飲與咖啡含糖量大解密：喝半糖就安全？當心慢性病',
   lastModified: '2026-05-27',

@@ -360,6 +360,12 @@ export const sportsInjuriesData = [
         description: '「微波爐破壞食物營養」是流傳已久的迷思。本文從運動醫學與食品科學角度解析：決定營養保留的關鍵在於加熱溫度、時間與用水量。研究顯示，微波加熱在維生素C保留率上往往優於水煮，且適度蛋白質變性更有助於消化。帶您破解輻射與致癌迷思，掌握正確微波原則。',
         image: '/images/news/article/microwave-nutrients-science.webp',
       },
+                                                      {
+        slug: 'chicken-hormone-myth-analysis',
+        title: '破解雞肉與雞皮謠言：藥物殘留與各部位營養大解析',
+        description: '「雞皮和雞脖子打了生長激素」是真的嗎？本文從食品科學與運動營養角度，深入剖析現代肉雞快速生長的真相。為您釐清法規禁止生長激素的實務原因，並提供雞胸、雞腿、雞皮及雞脖子等部位的完整脂肪與熱量數據，帶您避開用藥殘留誤區，吃得安心又健康。',
+        image: '/images/news/article/chicken-hormone-myth-analysis.webp',
+      },
                               {
         slug: 'iv-drips-truth-unveiled',
         title: '揭開點滴的面紗：美白、減脂、保肝點滴成分？實證有效嗎？',
