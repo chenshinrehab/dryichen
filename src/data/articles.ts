@@ -4,6 +4,621 @@ export const articlesData: NewsPost[] = [
 
 
 {
+id: 'sports-injury-longevity-analysis',
+  title: '球類運動傷害與長壽效益全解析：哪種運動投報率最高？',
+  lastModified: '2026-05-30',
+  category: '衛教文章',
+  date: '2026-05-30',
+  summary: '從運動醫學與大數據實證角度，深度解析籃球、足球、網球、羽毛球等常見運動的傷害率。哥本哈根與英國大型研究追蹤發現，具備社交互動的球拍類運動（如網球、羽毛球）不僅急性傷害率低，更能顯著延長壽命達 6 至 9.7 年。教你如何依年齡聰明選擇「高健康回報、低受傷風險」的黃金運動。',
+  coverImage: '/images/news/article/sports-injury-longevity-analysis.webp',
+  seoTitle: '球類運動傷害與長壽效益全解析：網球、羽毛球延長壽命投報率最高？',
+  seoDescription: '從運動醫學實證出發，深度對比籃球、足球、網球、羽毛球等運動的傷害風險（每千次運動曝露 AEs）。權威研究指出，結合社交與有氧的球拍運動（網球、羽毛球）能降低死亡率並延長壽命高達 9.7 年。專業物理治療與運動醫學團隊帶你認識地雷風險與分齡運動建議。',
+  keywords: [
+    '運動傷害',
+    '球類運動受傷',
+    '長壽運動',
+    '網球長壽',
+    '羽毛球受傷',
+    '籃球扭傷',
+    '前十字韌帶撕裂',
+    '哥本哈根心臟研究',
+    '運動醫學',
+    '社交運動效益'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    從足球場上的激烈對決、籃球場上的跳躍衝撞，到羽毛球館的精準對抗——每種球類運動都有其獨特的傷害風險。研究顯示，足球與橄欖球的傷害率最高，在大學運動員中每千次運動曝露可達 5–18 件傷害，而游泳、桌球、羽毛球則屬於傷害率最低的運動。<br><br>
+    更令人振奮的是，哥本哈根心臟研究追蹤 8,500 名成人長達 25 年，發現網球選手的平均壽命比靜態生活者多出 9.7 年，羽毛球多出 6.2 年，足球多出 4.7 年。本文將以實證為基礎，帶你全面認識各球類運動的傷害風險與健康效益，幫助你聰明選擇最適合自己的運動。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/30355621/" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[1]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4217285/" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[2]</a></sup>
+    <sup><a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6448a2.htm" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[3]</a></sup>
+  </p>
+</div>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、為什麼不同的球類運動傷害風險差這麼多？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多人選擇運動時，只想著「好不好玩」或「能不能瘦身」，卻很少思考一個關鍵問題：<strong style="color: #2dd4bf;">這項運動有多容易讓我受傷？</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    球類運動的傷害風險，主要受三大因素影響：第一是<strong style="color: #ffffff;">身體接觸程度</strong>——橄欖球、足球、籃球這類有肢體碰撞的運動，本質上就比羽毛球、桌球、游泳危險；第二是<strong style="color: #ffffff;">動作型態</strong>——需要急停、跳躍、急轉的運動（如籃球、足球），膝踝扭傷風險遠高於只需前後移動的運動；第三是<strong style="color: #ffffff;">重複性負荷</strong>——球拍運動雖然沒有激烈衝撞，但過肩發球與快速揮拍產生的累積性傷害，也可能讓選手長期困擾。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    醫學研究中最常用的衡量指標是「每千次運動曝露的傷害件數」——也就是每次參加練習或比賽算一次曝露，用這個數字來公平比較不同運動的危險程度。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、各球類運動傷害比例全覽
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🏈 橄欖球（美式足球）：傷害率最高的王者</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    橄欖球是所有球類運動中傷害率最高的。大學研究數據顯示，在高中運動員中，美式橄欖球的比賽傷害率高達<strong style="color: #ffffff;">每千次曝露 12.09 件</strong>，練習時也達 2.54 件——幾乎是其他球類的兩倍以上。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2267335/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[4]</a></sup>
+    若以每萬小時參與時數計算，橄欖球的傷害率（5.08 件/萬小時）幾乎是籃球與足球（各約 2.69 件/萬小時）的兩倍。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3418954/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">最常見傷害：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">腦震盪與頭部外傷（橄欖球腦震盪率是所有球類最高）</li>
+    <li style="margin-bottom: 0.5rem;">膝韌帶撕裂（前十字韌帶，ACL）</li>
+    <li style="margin-bottom: 0.5rem;">肩關節脫臼與鎖骨骨折</li>
+    <li style="margin-bottom: 0.5rem;">頸椎傷害</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">⚽ 足球：傷害最多的全球第一大運動</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    足球是全球參與人數最多的運動，同時也是各國運動傷害統計中總件數最多的項目之一。以大學女生研究為例，足球傷害率達<strong style="color: #ffffff;">每千次曝露 6.66 件</strong>，明顯高於籃球（2.86 件）與排球（3.68 件）。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4217285/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
+    在大學運動員中，女子足球的比賽傷害率更高達每千次曝露 17.2 件，是所有女性球類運動中最高的。
+    <sup><a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6448a2.htm" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[3]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">最常見傷害：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">踝關節扭傷（最常見的急性傷害）</li>
+    <li style="margin-bottom: 0.5rem;">前十字韌帶（ACL）撕裂，女性風險尤高</li>
+    <li style="margin-bottom: 0.5rem;">腦震盪（尤其是頭球動作）</li>
+    <li style="margin-bottom: 0.5rem;">大腿後肌拉傷（hamstring strain）</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🏀 籃球：急停跳躍的膝踝殺手</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    籃球是台灣與全球最熱門的業餘球類之一，但它的急停、轉向、起跳落地等動作，對膝踝關節造成極大的衝擊。在整體受傷人數統計上，籃球因參與人數眾多而佔比最高（約 36.3%）。
+    <sup><a href="https://www.truveta.com/blog/research/sports-injury-comparisons-2023/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[6]</a></sup>
+    在高中運動員研究中，女生籃球的嚴重傷害率（0.34 件/千次曝露）高於男生籃球（0.24 件），前十字韌帶撕裂是主要原因。
+    <sup><a href="https://www.ovid.com/journals/ajsm/pdf/10.1177/0363546509333015~epidemiology-of-severe-injuries-among-united-states-high" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[7]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">最常見傷害：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">踝關節扭傷（落地時最常見）</li>
+    <li style="margin-bottom: 0.5rem;">膝前十字韌帶（ACL）傷害</li>
+    <li style="margin-bottom: 0.5rem;">手指扭傷與骨折（搶球時）</li>
+    <li style="margin-bottom: 0.5rem;">髕骨肌腱炎（跳躍膝）</li>
+  </ul>
+ 
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 特別注意：</strong>籃球的下肢傷害率在所有球類中名列前茅。研究發現，下肢傷害比例在籃球員中最高，且女性球員因為生物力學差異（髖部較寬、膝外翻角度較大），ACL撕裂風險是男性的 2–10 倍。如果你是女性籃球愛好者，加強臀部與大腿肌力訓練是預防最重要的關鍵。
+    </p>
+  </div>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🏐 排球：肩膝夾擊的運動</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    排球的傷害率介於中等，研究數據約為每千次曝露 3.68 件，低於足球但高於游泳。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4217285/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
+    攔網跳躍時的落地動作是膝踝傷害的主因，而過頭扣球動作則對肩旋轉肌群（旋轉肌袖）造成持續負荷。一項針對大學運動的調查顯示，排球因參與時間較長，<strong style="color: #ffffff;">過度使用傷害的比例高達 60% 以上</strong>，而非急性衝撞傷害。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">最常見傷害：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">踝關節扭傷（落地、網前衝撞）</li>
+    <li style="margin-bottom: 0.5rem;">髕骨肌腱炎（跳躍膝）</li>
+    <li style="margin-bottom: 0.5rem;">肩旋轉肌群肌腱病變</li>
+    <li style="margin-bottom: 0.5rem;">手指關節傷害</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🎾 網球：上肢過度使用的代名詞</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    網球的整體傷害率在球類運動中屬於中低等級，每千次曝露約 2.3 件，遠低於足球與籃球。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1440244012001703" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[8]</a></sup>
+    然而，網球的傷害有其獨特性——<strong style="color: #ffffff;">約 50% 的網球選手在生涯中曾有肘部外側疼痛</strong>（網球肘），且這種傷害往往是長期累積而非單次衝擊造成的，容易被忽略直到演變成慢性病變。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">最常見傷害：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">網球肘（外側上髁炎）</li>
+    <li style="margin-bottom: 0.5rem;">手腕 ECU 肌腱病變</li>
+    <li style="margin-bottom: 0.5rem;">肩旋轉肌群傷害（發球動作）</li>
+    <li style="margin-bottom: 0.5rem;">踝關節扭傷（快速橫向移位）</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🏸 羽毛球：傷害率低但需注意眼睛安全</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    羽毛球的整體傷害率名列所有球類前幾低，在大學體育系學生研究中，羽毛球的傷害率僅 0.58%，是所有調查球類中的最低之一。
+    <sup><a href="https://www.cambridgepublish.com/css/article/download/83/85/298" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[9]</a></sup>
+    全球統計中，羽毛球傷害約佔所有運動傷害的 1–5%，排名第六（低於足球、籃球、排球、跑步、騎車之後）。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S0765159720300307" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[10]</a></sup>
+    羽毛球的傷害以過度使用傷害（74%）遠多於急性傷害（26%），主要集中在下肢，佔所有羽毛球傷害的 58%。特別值得注意的是，羽毛球是所有球類中<strong style="color: #ffffff;">眼睛傷害比例最高的運動</strong>，球速可達 300 km/h 以上，若被羽球或球拍直接打中眼睛，後果嚴重。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">最常見傷害：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">踝關節扭傷（橫向急停）</li>
+    <li style="margin-bottom: 0.5rem;">肩部肌腱病變（過頭殺球）</li>
+    <li style="margin-bottom: 0.5rem;">眼睛外傷（低頻率但高嚴重性）</li>
+    <li style="margin-bottom: 0.5rem;">下背痛（扭轉動作）</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🏓 桌球：最安全的球類運動之一</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    桌球與羽毛球並列傷害率最低的球類，研究顯示傷害率同樣僅 0.58%，是一項老少咸宜的低風險運動。
+    <sup><a href="https://www.cambridgepublish.com/css/article/download/83/85/298" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[9]</a></sup>
+    文獻回顧指出，桌球整體被認為是低傷害風險的運動，但在高水準競技選手中，隨著訓練強度與強度增加，傷害發生率也會提升。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9147389/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[11]</a></sup>
+    最常見的傷害是肌肉與肌腱傷害，肩關節佔比最高，這與所有球拍運動的規律相符。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">最常見傷害：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">肩部肌腱病變</li>
+    <li style="margin-bottom: 0.5rem;">手腕肌腱炎</li>
+    <li style="margin-bottom: 0.5rem;">下背痛（前傾姿勢長期維持）</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🏊 游泳：對關節最友善的有氧運動</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    游泳雖非傳統球類，但在球類與各類運動的安全性比較研究中經常被納入。大學運動員數據顯示，游泳/跳水的整體傷害率僅<strong style="color: #ffffff;">每千次曝露 1.8 件</strong>，是所有運動中最低的。
+    <sup><a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6448a2.htm" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[3]</a></sup>
+    高中運動員研究同樣顯示，游泳是男女生受傷人數最少的運動之一。水的浮力大幅減少關節所承受的衝擊力，使游泳成為關節退化、肥胖、年長者最理想的有氧運動選擇。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、各球類運動傷害比較表
+  </h2>
+ 
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 750px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 100px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table { font-size: 13px; }
+    }
+  </style>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>運動</th>
+          <th>傷害率（相對等級）</th>
+          <th>最常見傷害部位</th>
+          <th>主要傷害類型</th>
+          <th style="text-align: center;">建議族群</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>橄欖球</td>
+          <td>⭐⭐⭐⭐⭐ 極高</td>
+          <td>頭部、膝、肩</td>
+          <td>腦震盪、ACL撕裂、骨折</td>
+          <td style="text-align: center;">年輕體壯者，需充分護具</td>
+        </tr>
+        <tr>
+          <td>足球</td>
+          <td>⭐⭐⭐⭐ 高</td>
+          <td>踝、膝、頭部</td>
+          <td>扭傷、ACL撕裂、腦震盪</td>
+          <td style="text-align: center;">青少年至中年，需護具</td>
+        </tr>
+        <tr>
+          <td>籃球</td>
+          <td>⭐⭐⭐⭐ 高</td>
+          <td>踝、膝、手指</td>
+          <td>扭傷、ACL傷害、指骨骨折</td>
+          <td style="text-align: center;">青少年至成年，下肢肌力要夠</td>
+        </tr>
+        <tr>
+          <td>排球</td>
+          <td>⭐⭐⭐ 中</td>
+          <td>踝、膝、肩</td>
+          <td>扭傷、肌腱炎、過度使用傷害</td>
+          <td style="text-align: center;">各年齡層，室內較安全</td>
+        </tr>
+        <tr>
+          <td>網球</td>
+          <td>⭐⭐ 中低</td>
+          <td>肘、手腕、肩</td>
+          <td>網球肘、ECU肌腱病變</td>
+          <td style="text-align: center;">各年齡層，上肢需訓練</td>
+        </tr>
+        <tr>
+          <td>羽毛球</td>
+          <td>⭐ 低</td>
+          <td>踝、肩、眼睛</td>
+          <td>扭傷、肌腱炎、眼外傷</td>
+          <td style="text-align: center;">各年齡層，戴護目鏡更佳</td>
+        </tr>
+        <tr>
+          <td>桌球</td>
+          <td>⭐ 低</td>
+          <td>肩、手腕、下背</td>
+          <td>肌腱炎、下背痛</td>
+          <td style="text-align: center;">老少皆宜，最安全之一</td>
+        </tr>
+        <tr>
+          <td>游泳</td>
+          <td>⭐ 極低</td>
+          <td>肩（游泳肩）</td>
+          <td>肩旋轉肌群過度使用</td>
+          <td style="text-align: center;">最適合關節退化者</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="color: #64748b; font-size: 0.9rem; margin-top: 0.5rem;">※ 傷害率等級綜合多篇研究數據及臨床文獻進行相對比較，實際風險依個人技術、訓練量及防護措施而異。</p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、哪種運動對身體最好？科學告訴你壽命差距有多大
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    光比較傷害風險還不夠——真正聰明的選擇，是找到一項「傷害低、健康效益高」的運動。讓我們來看看目前最有力的壽命研究告訴了我們什麼。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">哥本哈根心臟研究：25年、8,500人的壽命大解密</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是目前最權威的運動與壽命關係研究之一。丹麥哥本哈根心臟研究追蹤超過 8,500 名成人長達 25 年，比較了八種運動型態的壽命增益。結果令人驚訝：
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/30355621/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[1]</a></sup>
+  </p>
+ 
+  <div style="background-color: #1e293b; border-radius: 0.75rem; padding: 1.5rem; margin: 1.5rem 0;">
+    <h4 style="color: #22d3ee; margin-top: 0; font-size: 1.1rem;">🏆 各運動相比靜態生活者的平均壽命增益：</h4>
+    <ul style="color: #cbd5e1; list-style-type: none; padding-left: 0; font-size: 1.05rem; line-height: 2;">
+      <li>🥇 <strong style="color: #fbbf24;">網球</strong>：延長壽命 <strong style="color: #fbbf24;">9.7 年</strong></li>
+      <li>🥈 <strong style="color: #94a3b8;">羽毛球</strong>：延長壽命 <strong style="color: #94a3b8;">6.2 年</strong></li>
+      <li>🥉 <strong style="color: #cd7c2f;">足球</strong>：延長壽命 <strong>4.7 年</strong></li>
+      <li>　　騎自行車：延長壽命 3.7 年</li>
+      <li>　　游泳：延長壽命 3.4 年</li>
+      <li>　　慢跑：延長壽命 3.2 年</li>
+      <li>　　體操/健身操：延長壽命 3.1 年</li>
+      <li>　　健身房訓練：延長壽命 1.5 年</li>
+    </ul>
+  </div>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    最令研究者驚訝的發現是：<strong style="color: #ffffff;">「有社交互動」的運動比「獨自進行」的運動，壽命增益高出許多。</strong> 網球、羽毛球、足球都需要找對手或隊友，而游泳、慢跑、健身房訓練往往是獨自進行的。研究人員認為，社交連結可能是延長壽命的關鍵隱藏因素。
+    <sup><a href="https://www.yourwellnessnerd.com/blogs/blog/which-sports-help-you-live-the-longest" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[12]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">英國大型研究：超過 80,000 人的印證</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    英國一項分析超過 80,000 名英格蘭與蘇格蘭成人、追蹤平均 9 年的大型研究同樣支持這個結論：游泳、騎車、有氧運動，以及球拍類運動，都與死亡率的顯著降低有關。
+    <sup><a href="https://www.cbc.ca/lite/story/1.3873185" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[13]</a></sup>
+    丹麥與英國的研究均顯示，網球與羽毛球選手的全因死亡率比參與游泳、騎車或慢跑的人低約 20%。
+    <sup><a href="https://observatoireprevention.org/en/2026/05/19/the-best-sports-for-longevity/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[14]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 為什麼球拍運動的壽命效益特別高？</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      研究者分析，球拍類運動（網球、羽毛球）同時結合了多項健康優勢：有氧耐力訓練、爆發力訓練、平衡感與協調性訓練、手眼協調的腦部刺激，以及面對面的社交互動。這些因素的綜合效果，是跑步機或啞鈴訓練難以複製的。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、不同年齡層應如何選擇球類運動？
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">青少年（10–18歲）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    青少年骨骼尚未完全成熟，生長板（骨骺板）是最脆弱的部位。高衝擊的橄欖球、籃球參與比例雖高，但傷害風險也最高。建議青少年若要參與橄欖球或足球，應確保有充分的技術訓練與護具配備。羽毛球、桌球、游泳對成長中的骨骼友善，且能有效建立心肺基礎，是這個階段的優質選擇。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">青壯年（18–45歲）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這個年齡層的身體最能承受高強度運動，但也是運動傷害急性期最常出現的族群——往往因為過於自信而忽略熱身與過度訓練。足球、籃球、網球都是適合的選擇，但應配合肌力訓練和充分暖身。若有膝踝傷害史，建議以游泳或羽毛球取代高衝擊的籃球與足球。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">中高齡（45歲以上）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    關節退化、肌力減退、平衡感下降，這個年齡層的傷害往往比年輕人更難復原。游泳是關節最友善的選擇，而網球與羽毛球（哥本哈根研究顯示壽命效益最高的兩項運動）也適合中高齡者，但應以不追求速度與大力扣殺的方式享受運動樂趣，並注重預防性的肌力訓練。桌球則是老年族群最容易持續參與的球類運動之一。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 六、常見三大迷思解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「參與人數最多的運動就是最安全的運動」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 籃球因為參與人口廣大，總受傷人數排名第一，但這是因為打球的人太多，而非這項運動本身特別危險。若以「每千次運動曝露的傷害件數」這個公平指標來比較，籃球的傷害率其實遠低於橄欖球，而游泳、桌球、羽毛球的傷害率才是真正最低的。<sup><a href="https://www.truveta.com/blog/research/sports-injury-comparisons-2023/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[6]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「游泳是最健康的運動，壽命效益最好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不完全正確！</strong> 游泳確實是傷害率最低、對關節最友善的運動，也能有效降低死亡風險。但在壽命增益的研究中，游泳（平均延長 3.4 年）遠不及網球（9.7 年）與羽毛球（6.2 年）。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/30355621/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[1]</a></sup> 這並不代表游泳不好——而是說明，結合社交互動的球類運動可能有著「運動+社交」的雙重健康加成。</span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「只要運動就好，選哪種都一樣」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過於樂觀！</strong> 任何運動都比靜態生活好，這點毋庸置疑。但研究確實顯示不同運動的健康效益有顯著差異：同樣花費相近時間，打網球（+9.7年）與只做健身房訓練（+1.5年）的壽命增益相差六倍以上。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/30355621/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[1]</a></sup> 聰明選擇運動種類，可以讓你用同樣的時間獲得更大的健康回報。</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、如何降低球類運動的傷害風險？
+  </h2>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">充分熱身（至少 10–15 分鐘）：</strong>包含動態伸展與低強度有氧活動，讓肌肉和關節提前「進入狀態」，不要直接上場就全力投入
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">循序漸進的訓練量：</strong>每週訓練強度或時間的增加不超過 10%，讓肌腱和骨骼有足夠時間適應
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">針對性肌力訓練：</strong>足球、籃球者加強臀肌與大腿訓練以保護膝踝；網球、羽毛球者加強肩部旋轉肌群訓練以保護上肢
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">適當護具與場地：</strong>籃球、足球穿高筒護踝鞋；羽毛球場上考慮配戴護目鏡；在合適的場地（非硬地）進行籃球活動
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">身體不適立即停止：</strong>關節不適、肌肉緊繃或輕微疼痛是身體的早期警訊，強撐繼續往往使急性傷害轉為慢性病變，治療期從數週延長至數月
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">定期運動醫學評估：</strong>若有長期下肢疼痛、關節僵硬或反覆受傷，尋求運動醫學專科評估，及早發現問題
+    </li>
+  </ul>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+    <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+      <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+        <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+      </h2>
+    </div>
+    <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+      
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q1：打籃球比打羽毛球更容易受傷嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+        從研究數據來看，是的。籃球因為急停跳躍、身體接觸、搶球碰撞等動作，傷害率明顯高於羽毛球。羽毛球在多項研究中傷害率排名最低（與桌球並列），而籃球的下肢傷害率是所有球類中最高的之一。不過，只要打球前充分熱身並掌握正確落地技術，兩者的傷害風險都可以大幅降低。<sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1440244012001703" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[8]</a></sup>
+      </p>
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q2：打網球對身體究竟好不好？傷害多嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+        網球是最值得推薦的運動之一——它的整體傷害率在球類中屬於中低等級，但壽命效益卻是所有研究過的運動中最高的（+9.7年）。主要風險集中在上肢，特別是「網球肘」（外側上髁炎），約有50%的長期球員曾有此困擾。只要注意握拍姿勢、控制訓練量、加強前臂肌力，這些傷害大多可以預防。<sup><a href="https://sportsmedicineweekly.com/blog/serve-up-a-longer-life-tennis-longevity/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[15]</a></sup>
+      </p>
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q3：如果我的膝蓋不好，應該打哪種球類運動？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+        膝關節有問題者應優先選擇低衝擊的運動。游泳（水中無重力負荷）是最理想的選擇，其次是桌球（站立為主、移動不劇烈）。羽毛球的橫向急停對膝踝的衝擊中等，應量力而為。籃球與足球的急停跳躍對已有退化性關節炎的膝蓋負擔最重，建議先諮詢骨科或運動醫學醫師評估後再決定。
+      </p>
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q4：女性在選擇球類運動時，有哪些特別需要注意的風險？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+        研究一致指出，女性在籃球、足球、排球中，前十字韌帶（ACL）撕裂的風險是男性的 2–10 倍，主要原因是骨盆較寬所導致的膝外翻角度及生理激素影響。女性參與高衝擊球類時，特別建議加強臀肌訓練（臀橋、深蹲、側步）並練習正確的跳躍落地技術，可大幅降低ACL傷害風險。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4217285/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
+      </p>
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q5：打球後出現哪些症狀應該立即就醫？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+        以下症狀應立即停止活動並就醫：關節明顯腫脹或變形、急性劇烈疼痛無法承重、「啪」一聲後的關節不穩感（可能是韌帶撕裂或骨折）、頭部受撞後的頭暈噁心或短暫失去意識（腦震盪），以及眼睛受傷後的視力模糊或飛蚊症突然增多。持續超過 72 小時的疼痛且未見改善，也建議尋求運動醫學評估。
+      </p>
+    </div>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    選擇什麼球類運動，不只是「喜不喜歡」的問題，更是關乎你長期健康與身體維持的重大決定。從傷害比例來看，<strong style="color: #1e293b;">橄欖球、足球、籃球風險最高；游泳、桌球、羽毛球最安全。</strong>但從壽命效益來看，<strong style="color: #1e293b;">需要與人互動的球拍類運動——特別是網球與羽毛球——對於心血管健康與壽命的增益遠超過大多數其他運動。</strong>
+  </p> <br>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    最理想的策略是：選一項你真正享受、能持續進行的球類運動，配合正確的技術、充分的暖身與針對性的肌力訓練，把受傷風險降到最低，同時把健康效益發揮到最大。如果你對自己適合哪種運動有疑問，或已有運動傷害困擾，請諮詢運動醫學專科醫師，讓你的運動人生更安全、更長久。
+  </p>
+ 
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的傷害風險比較表，思考你目前的運動習慣是否適合你的年齡與身體狀況。如有任何持續性的關節不適或舊傷困擾，請尋求專業運動醫學評估。
+    </p>
+  </div>
+ 
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約運動醫學門診評估
+    </a>
+  </div>
+</div>
+ 
+  `,
+  referencesHtml: `
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <h2 style="color: #1e293b; margin-top: 0;">📚 參考文獻 (References)</h2>
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Schnohr, P., O'Keefe, J.H., Lavie, C.J., et al. (2018). Various Leisure-Time Physical Activities Associated with Widely Divergent Life Expectancies: The Copenhagen City Heart Study. <em>Mayo Clinic Proceedings</em>, 93(12), 1775–1785. <a href="https://pubmed.ncbi.nlm.nih.gov/30355621/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PubMed: 30355621</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Dompier, T.P., Kerr, Z.Y., Marshall, S.W., et al. (2014). Epidemiology of Basketball, Soccer, and Volleyball Injuries in Middle-School Female Athletes. <em>Journal of Athletic Training</em>, 49(6), 839–845. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4217285/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 4217285</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Centers for Disease Control and Prevention (CDC). (2014). College Sports–Related Injuries — United States, 2009–10 Through 2013–14 Academic Years. <em>MMWR Morbidity and Mortality Weekly Report</em>, 63(48). <a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6448a2.htm" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">MMWR: mm6448a2</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Comstock, R.D., Collins, C.L., & McIlvain, N.M. (2008). An Epidemiologic Comparison of High School Sports Injuries Sustained in Practice and Competition. <em>Journal of Athletic Training</em>, 43(2), 197–204. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2267335/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 2267335</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Rechel, J.A., Yard, E.E., & Comstock, R.D. (2008). Risk of Injury in Basketball, Football, and Soccer Players, Ages 15 Years and Older, 2003–2007. <em>AJSM</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3418954/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 3418954</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Truveta Research. (2023). Huddle up: Injury comparisons across sports. <a href="https://www.truveta.com/blog/research/sports-injury-comparisons-2023/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Darrow, C.J., Collins, C.L., Yard, E.E., & Comstock, R.D. (2009). Epidemiology of Severe Injuries Among United States High School Athletes: 2005–2007. <em>American Journal of Sports Medicine</em>, 37(9), 1798–1805. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2267335/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 2267335</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Jayanthi, N., & Sallay, P. (2012). Injury risk is different in team and individual youth sport. <em>Journal of Science and Medicine in Sport</em>, 15(4), 291–296. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1440244012001703" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">ScienceDirect: S1440244012001703</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Wei, X., et al. (2023). Survey and Analysis of Sports Injuries Among Physical Education Students. <em>Cambridge Publish</em>. <a href="https://www.cambridgepublish.com/css/article/download/83/85/298" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kroner, K., et al. (2020). Injuries in Badminton: A Review. <em>Science & Sports</em>, 35(4), e73–e82. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0765159720300307" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">ScienceDirect: S0765159720300307</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Zagatto, A.M., et al. (2022). Epidemiology and Risk Factors of Table-Tennis-Related Injuries: Findings from a Scoping Review of the Literature. <em>International Journal of Environmental Research and Public Health</em>. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9147389/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 9147389</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Your Wellness Nerd. (2026). Which Sports Help You Live the Longest? <a href="https://www.yourwellnessnerd.com/blogs/blog/which-sports-help-you-live-the-longest" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Stamatakis, E., et al. (2016). Association between leisure time physical activity and mortality: a population-based study. <em>British Journal of Sports Medicine</em>. <a href="https://www.cbc.ca/lite/story/1.3873185" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Reported by CBC News, 2016</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Observatoire Prévention, Montreal Heart Institute. (2026). The best sports for longevity. <a href="https://observatoireprevention.org/en/2026/05/19/the-best-sports-for-longevity/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Cole, B.J. (2026). Serve Up a Longer Life: How Tennis Is Linked to Longevity. <em>Sports Medicine Weekly</em>. <a href="https://sportsmedicineweekly.com/blog/serve-up-a-longer-life-tennis-longevity/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Emery, C.A., et al. (2021). Sport participation and injury rates in high school students: A Canadian survey of 2029 adolescents. <em>Journal of Science and Medicine in Sport</em>, 24(9), 938–944. <a href="https://www.sciencedirect.com/science/article/pii/S0022437521000852" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">ScienceDirect: S0022437521000852</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+
+
+{
   id: 'cooking-oil-comparison',
   title: '食用油全解析：動物油 vs 植物油，哪一種油最健康？',
   lastModified: '2026-05-29',
