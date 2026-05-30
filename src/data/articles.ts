@@ -4,6 +4,609 @@ export const articlesData: NewsPost[] = [
 
 
 {
+id: 'gender-differences-in-sports-injuries',
+  title: '男女運動傷害大不同！從解剖結構分析運動風險',
+  lastModified: '2026-05-30',
+  category: '衛教文章',
+  date: '2026-05-30',
+  summary: '從運動醫學與生物力學角度，深入剖析男女骨骼結構、Q角、關節韌帶鬆弛度及荷爾蒙對運動傷害的顯著影響。實證研究指出女性在垂直落地與急停轉向時，前十字韌帶（ACL）撕裂風險高出2至8倍，跑者膝盛行率更高出12倍；而男女肩關節的受傷模式亦截然不同。本文全面解析三大常見誤解，並提供客製化的核心預防訓練策略。',
+  coverImage: '/images/news/article/gender-differences-sports-injuries.webp',
+  seoTitle: '男女運動傷害全解析：Q角、韌帶鬆弛度如何影響膝蓋與肩關節風險？',
+  seoDescription: '實證醫學拆解男女運動傷害背後的解剖力學機制。女性因寬骨盆、大Q角與雌激素影響，前十字韌帶(ACL)撕裂與跑者膝(PFPS)風險顯著偏高；男性則以創傷性脫位與肌肉拉傷為主。復健科醫師帶你從結構差異找出最精準的神經肌肉控制與預防訓練策略。',
+  keywords: [
+    '運動傷害性別差異',
+    '前十字韌帶撕裂',
+    'ACL受傷原因',
+    '髕股疼痛症候群',
+    '跑者膝女性',
+    'Q角股四頭肌角',
+    '韌帶鬆弛度',
+    '骨骼疲勞性骨折',
+    '運動中相對能量不足',
+    '多方向肩關節不穩定',
+    '旋轉肌群過度使用',
+    '神經肌肉訓練'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    男女之間的骨骼與軟組織結構存在顯著差異——包括女性較寬的骨盆、更大的Q角（股四頭肌角）、更高的關節韌帶鬆弛度，以及荷爾蒙對關節穩定性的影響。這些解剖特徵並非缺陷，而是演化設計的結果；<br><br>然而在運動情境下，若缺乏充分的肌力訓練與動作控制，這些差異確實會使女性在特定傷害上面臨更高風險——包括前十字韌帶（ACL）撕裂、髕股疼痛症候群（PFPS）、骨骼疲勞性骨折，以及肩關節多方向不穩定。本文以實證研究為基礎，用平易近人的語言解析這些差異背後的生物力學機制，並說明預防策略，幫助所有運動愛好者更了解自己的身體。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11542867/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6138566/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2681213/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[3]</a></sup>
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、從骨盆開始說起：最根本的結構差異
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    要理解男女運動傷害的差異，必須先從人體的「地基」——骨盆——開始認識。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    女性骨盆在演化上為了適應生育功能，整體較男性更寬、更淺，骨盆腔開口也更大。這個設計非常聰明——讓嬰兒能夠順利通過產道——但它同時也改變了整條下肢的力學傳遞路線。<strong style="color: #2dd4bf;">當骨盆寬度增加，股骨（大腿骨）從髖關節出發，就需要更「斜」地向膝蓋匯聚</strong>，這個角度在醫學上稱為「Q角」（Quadriceps Angle，股四頭肌角）。
+    <sup><a href="https://www.fortunejournals.com/articles/a-critical-analysis-of-the-factors-contributing-to-anterior-cruciate-ligament-injuries-in-female-athletes.html" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <img src="/images/news/article/q-angle.webp" alt="「Q角」（Quadriceps Angle，股四頭肌角）" style="width: 100%; height: auto;">
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    研究測量顯示，女性的Q角平均比男性大約大 4–6 度，而女性也普遍表現出更大的前骨盆傾斜與更多的股骨前傾。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2681213/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    這些數字看似微小，卻在每次跑步、跳躍、急停轉向時，不斷地將膝蓋推向「膝外翻」（俗稱「X型腿」）的方向，累積成運動傷害的溫床。
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 用生活語言理解 Q 角</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      想像一條從骨盆中心拉到膝蓋，再從膝蓋拉到小腿正前方的線。這兩條線之間的夾角就是Q角。角度越大，意味著大腿肌肉（股四頭肌）向外拉扯膝蓋骨的力道越強，膝關節在運動時也就越容易「往內倒」，造成磨損與撕裂傷。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、韌帶比男性「鬆」？荷爾蒙的關鍵角色
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    除了骨骼結構，女性的關節韌帶普遍比男性更具彈性，這種特性稱為「關節韌帶鬆弛度」。關節「鬆」不一定是壞事——瑜伽、舞蹈、體操選手往往從中獲益——但在需要高速衝擊吸收的球類或田徑運動中，過度的韌帶鬆弛會讓關節在受到外力時更難維持穩定。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這背後的主要推手之一是<strong style="color: #ffffff;">雌激素</strong>。雌激素會影響膠原蛋白的代謝，促使韌帶組織更具延展性；而女性在月經週期的不同階段，雌激素濃度會大幅波動。研究指出，雌激素偏高的時期（排卵期前後），韌帶鬆弛度相對增加，同時神經肌肉控制能力也會略微下降——這兩者的組合正是ACL撕裂最容易發生的時機。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12800832/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    另一個值得關注的荷爾蒙是<strong style="color: #ffffff;">鬆弛素</strong>。研究顯示，較高的鬆弛素濃度與肩關節不穩定性顯著相關，這解釋了為何女性運動員更容易出現「多方向肩關節不穩定」而非單純的創傷性脫位。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12800832/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 重要提醒：</strong>韌帶鬆弛度本身不等於「弱」。許多高水準女性運動員正是憑藉優秀的肌力訓練與神經肌肉控制，彌補了韌帶鬆弛度較高的先天條件，達到比男性更低的受傷率。解剖差異提供的是「風險情境」，而不是命運。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、前十字韌帶（ACL）撕裂：女性風險是男性的 2–8 倍
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    前十字韌帶是膝關節內部最重要的穩定結構之一，負責防止脛骨（小腿骨）相對股骨向前滑移，也協助控制旋轉。ACL撕裂是籃球、足球、排球、滑雪等運動中最嚴重的傷害之一，往往需要手術重建，且復健期長達 9–12 個月。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    在相同的運動暴露時間下，女性的ACL受傷率比男性高出 <strong style="color: #ffffff;">2 至 8 倍</strong>，這是目前文獻中記錄最清楚的性別運動傷害差異之一。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11542867/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+    造成這個差距的解剖與生物力學原因，可以分為以下幾個層面：
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">① 更大的膝外翻角度</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    女性在跑步落地、急停或跳躍著地時，膝蓋往往更傾向於「向內塌陷」（動態膝外翻）。研究發現，在ACL受傷的臨界瞬間（接觸地面後30–50毫秒），受傷者的膝關節額狀面角度比未受傷者平均大了 <strong style="color: #ffffff;">10度</strong>，而女性表現這種塌陷機制的頻率顯著高於男性。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9072613/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">② 較小的ACL截面積與較陡的脛骨坡度</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    女性的ACL本身在截面積上通常比男性更細，加上脛骨平台坡度也較陡，使得膝關節在受到前向衝擊時，ACL承受的相對應力更高。
+    <sup><a href="https://orthopedicreviews.openmedicalpublishing.org/article/126041-biophysics-of-acl-injuries" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    脛骨坡度越陡，胫骨就越容易在受力時相對股骨向前滑動，直接衝擊ACL的承載。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">③ 較少的膝蓋彎曲角度</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    女性在跳躍落地時，普遍表現出比男性更「直」的膝蓋——也就是較少的膝蓋彎曲。膝蓋彎曲是緩衝衝擊最重要的機制之一；落地時膝蓋越直，衝擊力就越直接傳遞到韌帶，而不是被大腿肌肉吸收分散。
+    <sup><a href="https://www.physio-pedia.com/Gender_Differences_in_Sports_Medicine" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">女性 ACL 傷害高風險族群：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">籃球、排球、羽球、足球等含有急停轉向動作的運動</li>
+    <li style="margin-bottom: 0.5rem;">滑雪（尤其是高山滑雪）</li>
+    <li style="margin-bottom: 0.5rem;">髖外展肌群（臀中肌）訓練不足者</li>
+    <li style="margin-bottom: 0.5rem;">青春期後（13–25歲）的女性運動員</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、髕股疼痛症候群（跑者膝）：女性盛行率是男性的 12 倍
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    髕股疼痛症候群（PFPS），俗稱「跑者膝」，是運動醫學中最常見的膝關節問題之一，症狀表現為膝蓋骨後方或周圍的慢性疼痛，在爬樓梯、久坐後起身、長時間跑步時特別明顯。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    數字相當驚人：女性的PFPS盛行率約為 <strong style="color: #ffffff;">12.7%</strong>，而男性僅為 <strong style="color: #ffffff;">1.1%</strong>——相差約12倍。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1466853X25001026" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+    在所有因跑步受傷就診的案例中，PFPS佔了約16.5%，是最主要的跑步相關傷害。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    解剖層面的解釋並不複雜：<strong style="color: #2dd4bf;">女性較寬的骨盆造成較大的Q角，使得膝蓋骨（髕骨）受到更強的外側拉力，在活動時無法順暢地沿著股骨溝滑動，反覆摩擦產生軟骨磨損與發炎。</strong> 此外，女性普遍在臀部外展肌群與膝外翻控制上較弱，使得動態姿勢下髕股關節承受的壓力進一步上升。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1466853X25001026" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    值得注意的是，女性在跑步時的整體PFPS風險比男性高出約 <strong style="color: #ffffff;">50%</strong>，而伴隨跑步的其他常見問題——包括足底筋膜炎、髂脛束症候群——在女性中也有更高的發生率。
+    <sup><a href="https://www.physio-pedia.com/Gender_Differences_in_Sports_Medicine" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床觀察</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      許多女性跑者以為膝蓋痛是「練太多」造成，而自行減少訓練量。然而若不解決根本的動作控制問題——特別是落地姿勢與臀部外展肌力——光靠休息往往只能暫時緩解，下次恢復訓練後症狀仍會復發。及早尋求物理治療評估，進行針對性的動作分析，才能真正斷開惡性循環。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、骨骼疲勞性骨折：女性的「能量不足」危機
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    疲勞性骨折是一種因骨骼反覆承受超過自我修復速度的微創傷，逐漸累積而成的傷害，從初期的「骨骼應力反應」到完整骨折線的出現，嚴重程度不等。女性運動員的BSI發生率顯著高於男性——在高中越野跑選手中，女生的傷害率（每千次運動暴露10.62次）約是男生（5.42次）的兩倍。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6138566/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    骨質密度是最關鍵的因素之一。女性在青春期後骨質累積速度即落後男性，而且更容易受到「運動中相對能量不足（RED-S）」的影響。RED-S過去也稱為「女性運動員三聯症」，指的是：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">能量攝取不足</strong>（熱量赤字，刻意或無意）</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">月經功能異常</strong>（月經稀少或停經）</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">骨質密度下降</strong>（提高疲勞性骨折風險）</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    除能量因素外，女性的解剖特徵——如較細的小腿圍、較高的脛骨負荷率——也是獨立的BSI風險因子。較高的股骨內收角度，同樣源自骨盆較寬、臀肌相對較弱，也會增加骨骼受力不均的問題。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6138566/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 典型警訊：</strong>女性長跑選手若出現月經中斷、持續性的小腿或腳部悶痛，應高度懷疑疲勞性骨折，需立即停止衝擊性運動並就醫進行MRI評估，切勿以為「忍過去就好」。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、肩關節傷害：男女受傷模式截然不同
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    在肩關節傷害上，男女之間的差異比下肢更加微妙。整體而言，<strong style="color: #ffffff;">男性的肩傷更多是創傷性的</strong>（如碰撞導致的脫位或骨折），而<strong style="color: #ffffff;">女性則更容易出現過度使用性傷害與韌帶鬆弛型的不穩定</strong>。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1058187223000473" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">女性的肩關節解剖特點</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究發現，女性的肩胛盂（肩關節的「窩」）比男性更小、關節面的傾斜角度也更高——這種形態本身就更傾向於不穩定。同時，女性的關節活動範圍在所有平面都大於男性，其中以外旋和外展的差異最為顯著。
+    <sup><a href="https://www.aaos.org/AAOSNow/2019/Apr/Clinical/clinical02/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    雌激素對肩關節的影響也不容忽視：它會降低膠原蛋白合成效率，使關節囊與旋轉肌群的肌腱韌性下降，進一步助長了多方向肩關節不穩定的發展。
+    <sup><a href="https://www.mdpi.com/2077-0383/15/5/1886" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">旋轉肌群傷害</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    旋轉肌群傷害在女性運動員中主要表現為<strong style="color: #ffffff;">過度使用性傷害</strong>，而非單次創傷；排球殺球、游泳自由式、網球發球等反覆過頂動作，讓旋轉肌群的肌腱承受持續的微創傷積累。女性被確認是旋轉肌群過度使用傷害的獨立風險因子之一。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1058187223000473" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">女性常見肩部傷害：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">多方向肩關節不穩定</li>
+    <li style="margin-bottom: 0.5rem;">旋轉肌群過度使用性肌腱病變</li>
+    <li style="margin-bottom: 0.5rem;">肩袖夾擠症候群</li>
+    <li style="margin-bottom: 0.5rem;">關節盂唇軟骨傷害</li>
+  </ul>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">男性常見肩部傷害（相比之下）：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">創傷性肩關節脫位（伴隨更多骨骼缺損）</li>
+    <li style="margin-bottom: 0.5rem;">關節盂唇前緣撕裂</li>
+    <li style="margin-bottom: 0.5rem;">SLAP 撕裂傷（肩膀頂部盂唇損傷）發生率高於女性</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、男女解剖差異與運動傷害風險比較表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 160px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table { font-size: 14px; }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>解剖差異</th>
+          <th>女性特徵</th>
+          <th>男性特徵</th>
+          <th>主要傷害影響</th>
+          <th>高風險族群</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>骨盆寬度</td>
+          <td>較寬、較淺</td>
+          <td>較窄、較深</td>
+          <td>Q角增大→膝外翻→ACL、PFPS風險升高</td>
+          <td>球類運動、跑步女性</td>
+        </tr>
+        <tr>
+          <td>Q角（股四頭肌角）</td>
+          <td>平均 17–20°</td>
+          <td>平均 12–14°</td>
+          <td>髕骨外側拉力增加→髕股關節磨損</td>
+          <td>女性跑者、球類運動員</td>
+        </tr>
+        <tr>
+          <td>韌帶鬆弛度</td>
+          <td>較高（激素影響）</td>
+          <td>較低</td>
+          <td>關節不穩定→ACL、肩關節多方向不穩定</td>
+          <td>青春期後女性、排卵期</td>
+        </tr>
+        <tr>
+          <td>ACL 截面積</td>
+          <td>較小</td>
+          <td>較大</td>
+          <td>韌帶耐衝擊力較低</td>
+          <td>籃球、足球女性</td>
+        </tr>
+        <tr>
+          <td>脛骨坡度</td>
+          <td>較陡</td>
+          <td>較緩</td>
+          <td>脛骨前移增加→ACL受力加大</td>
+          <td>跳躍、急停動作運動員</td>
+        </tr>
+        <tr>
+          <td>骨質密度</td>
+          <td>較低（尤其運動量大時）</td>
+          <td>較高</td>
+          <td>疲勞性骨折風險升高</td>
+          <td>長跑、體操、舞蹈女性</td>
+        </tr>
+        <tr>
+          <td>肩胛盂形態</td>
+          <td>較小、傾斜角更大</td>
+          <td>較大、較穩定</td>
+          <td>肩關節多方向不穩定、旋轉肌群過度使用</td>
+          <td>游泳、排球、網球女性</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 八、常見三大誤解澄清
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「女性骨骼比男性脆弱，所以天生就容易受傷」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 解剖差異提供的是「特定傷害的風險情境」，而非「全面的脆弱性」。事實上，在許多需要韌帶彈性的運動（如體操、舞蹈、柔道）中，女性的天然關節柔軟度反而是優勢。而且，大量研究已證實，針對性的神經肌肉訓練能夠顯著彌補解剖差異帶來的風險。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11542867/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「男性不需要擔心這些差異，男性比較不容易受傷」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 男性有自己的高風險傷害模式——男性的創傷性肩關節脫位、骨骼缺損性傷害，以及因肌肉量更大帶來的肌肉拉傷、骨折風險，都不亞於女性的韌帶傷害。男性運動員同樣需要針對自身的生物力學特徵制定訓練計畫，而非假設「大隻就是保護」。<sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1058187223000473" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[10]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「X型腿（膝外翻）只是美觀問題，不影響運動」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>非常危險！</strong> 靜態站立時的輕度膝外翻可能確實無症狀，但在跳躍落地、急停的動態狀況下，膝外翻角度往往會大幅加大。這正是ACL撕裂最常見的受傷瞬間。如果發現自己或孩子在跳躍落地時有「膝蓋向內倒」的傾向，應儘早評估，進行臀部訓練與動作矯正。<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9072613/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[6]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    九、預防策略：針對性訓練才是關鍵
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    好消息是：解剖差異雖然無法改變，但<strong style="color: #2dd4bf;">神經肌肉控制能力是完全可以訓練的。</strong> 多項研究已驗證，針對性的預防訓練計畫（如FIFA 11+）能夠將女性ACL受傷率降低30–50%。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11542867/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">針對女性運動員的核心訓練重點</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">臀部外展與外旋肌群強化：</strong>蛤蠣式訓練、側走阻力帶——改善動態膝外翻的根本來源
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">單腿落地動作訓練：</strong>學習落地時膝蓋與腳趾同向、保持適度彎曲，而非鎖死伸直
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">北歐腿彎舉：</strong>強化後側鏈肌群，對ACL有直接保護效果
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">肩部外旋肌群強化：</strong>針對過頂運動項目，加強棘下肌、小圓肌的離心訓練
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">充足的能量攝取：</strong>女性運動員特別需要注意避免能量赤字，定期檢查月經週期是否規律，若出現月經異常應立即就醫評估
+    </li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">針對男性運動員的訓練提醒</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">肩關節穩定性訓練：</strong>男性因碰撞運動風險高，需強化關節盂唇保護訓練，避免因反覆脫位造成骨骼缺損
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">接觸性運動的落地技術：</strong>男性ACL傷害雖少，但在接觸性運動中同樣需要訓練正確落地姿勢
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">柔韌度與恢復訓練：</strong>男性肌肉量多、韌帶較緊，拉伸與恢復訓練的重要性往往被低估
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：我是女性，是不是不適合打籃球或踢足球？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      完全不是。了解解剖差異的目的，是讓你做更好的事前準備，而不是阻止你運動。女性同樣可以安全地參與所有競技運動，關鍵在於針對性的神經肌肉訓練、正確的動作技術，以及合理的訓練量管理。許多頂尖女性運動員從青少年時期就開始進行ACL預防訓練，其受傷率並不比男性更高。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：男性骨盆窄、Q角小，是不是代表男性膝蓋更健康？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      在ACL撕裂與髕股疼痛的特定風險上，男性確實相對較低。但男性有自己的風險——包括更多的接觸性傷害、肌肉量大導致的代謝壓力，以及在重訓中更容易因錯誤姿勢造成腰椎或肩關節傷害。沒有一種解剖結構是「完美的」，各有優缺。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：我的膝蓋落地時會往內倒，要怎麼改善？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      這通常反映出臀部外展肌群（特別是臀中肌）力量不足或神經肌肉控制較弱。建議先尋求物理治療師評估，確認問題根源（是臀力不足、落地技術問題、還是核心穩定性問題），再進行針對性訓練。一般情況下，8–12週的結構性訓練計畫就能有顯著改善。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：月經週期真的會影響運動傷害風險嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      有一定的科學依據，特別是在ACL和肩關節方面。雌激素在排卵期前後達到高峰，會暫時增加韌帶鬆弛度；部分研究顯示，女性ACL受傷率在特定月經週期階段較高，但整體證據仍有爭議。目前最實際的建議是：了解自己的身體狀況，在感覺特別「關節鬆」的時期，更加注意動作控制與暖身的充分性。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：ACL撕裂一定要手術嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不一定，這取決於受傷程度、患者年齡、運動需求與生活型態。部分輕度ACL損傷或非運動員族群可以考慮保守治療（物理治療與肌力重建）；但對於有明確不穩定症狀、或需要回到高強度運動的年輕患者，手術重建往往是更長遠的選擇。最終決策需要由骨科醫師與患者共同評估。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    男女之間的解剖差異是真實存在的，而且在運動醫學中有充分的研究記錄。了解這些差異——寬骨盆帶來的Q角變化、韌帶鬆弛度的差異、荷爾蒙對關節穩定性的影響——並不是要「勸退」任何人運動，而是幫助每一位運動愛好者更聰明地訓練、更有效地預防傷害。
+  </p> <br>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    無論你是剛開始運動的新手，還是多年來的活躍運動者，<strong style="color: #1e293b;">最有效的傷害預防，永遠從「了解自己的身體結構與動作習慣」開始。</strong> 如果你對自己的落地姿勢、膝蓋對位、或肩關節穩定性有任何疑慮，及早尋求專業評估，能為你省下日後數個月的復健時間。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的比較表，思考自己的性別與運動項目，是否有需要特別加強的肌群或需要調整的動作習慣？若有持續性的關節疼痛或不適，請盡早就醫評估。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約專業醫師評估
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Myer GD, et al. (2024). A Critical Analysis of the Factors Contributing to Anterior Cruciate Ligament Injuries in Female Athletes. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11542867/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11542867</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lin KM, & Dragoo JL. (2018). Sex Differences in Common Sports Injuries. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6138566/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 6138566</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Nguyen AD, & Shultz SJ. (2009). Sex Differences and Representative Values for 6 Lower Extremity Alignment Measures. Journal of Athletic Training. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2681213/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 2681213</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Patel S, & Thomas M. (2024). A Critical Analysis of the Factors Contributing to Anterior Cruciate Ligament Injuries in Female Athletes. Fortune Journals. <a href="https://www.fortunejournals.com/articles/a-critical-analysis-of-the-factors-contributing-to-anterior-cruciate-ligament-injuries-in-female-athletes.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Skelly ER, et al. (2025). Hormonal Variation in Premenopausal Female Athletes Is Associated With Risk Factors for Shoulder Instability: A Systematic Review. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12800832/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12800832</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Quatman CE, et al. (2022). Examining the effects of femoral anteversion and passive hip rotation on ACL injury and knee biomechanics: a systematic review and meta-analysis. PMC. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9072613/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9072613</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Huston LJ, &amp; Wojtys EM. (2025). Biophysics of ACL Injuries. Orthopedic Reviews. <a href="https://orthopedicreviews.openmedicalpublishing.org/article/126041-biophysics-of-acl-injuries" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Physiopedia. (2023). Gender Differences in Sports Medicine. <a href="https://www.physio-pedia.com/Gender_Differences_in_Sports_Medicine" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Karpagam MK, et al. (2025). Exploring the association of selected lower limb biomechanical variables on exacerbating pain, disability, and postural balance in female athletes with patellofemoral pain syndrome. Journal of Bodywork and Movement Therapies. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1466853X25001026" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.jbmt.2025.01.024</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hibberd EE, &amp; Shanley E. (2023). Shoulder Injuries and Instability in the Female Athlete. Clinics in Sports Medicine. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1058187223000473" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PII: S1058187223000473</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        AAOS Now. (2019). Do Sex-based Differences in Shoulder Instability Exist? American Academy of Orthopaedic Surgeons. <a href="https://www.aaos.org/AAOSNow/2019/Apr/Clinical/clinical02/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Crocco BE, et al. (2026). Gender Disparities in Shoulder Pain and Shoulder Surgery: A Current Concepts Review. Journal of Clinical Medicine. <a href="https://www.mdpi.com/2077-0383/15/5/1886" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3390/jcm15051886</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hinckel BB, et al. (2024). Gender differences in foot and ankle sporting injuries: A systematic literature review. Foot and Ankle Surgery. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0958259224000555" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PII: S0958259224000555</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Sutton KM. (2019). Sex-related Differences in Sports Medicine: Bone Health and Stress Fractures. AAOS Now. <a href="https://www.aaos.org/aaosnow/2019/sep/clinical/clinical01/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Savonia University of Applied Sciences. (2023). How sex and gender differences influence in ACL rupture probabilities: anatomic, biomechanics, hormonal and social factors. <a href="https://www.savonia.fi/en/articles/how-sex-and-gender-differences-influence-in-acl-rupture-probabilities-anatomic-biomechanics-hormonal-and-social-factors/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Sciavicco G, et al. (2023). Sex differences in linear bone measurements occur following puberty but do not influence femoral or tibial torsion. Scientific Reports. <a href="https://www.nature.com/articles/s41598-023-38783-6" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Nature: s41598-023-38783-6</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+
+{
 id: 'sports-injury-longevity-analysis',
   title: '球類運動傷害與長壽效益全解析：哪種運動投報率最高？',
   lastModified: '2026-05-30',
