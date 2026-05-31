@@ -2,6 +2,479 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
 
+{
+id: 'aapmr-2026-knee-oa-prp-guideline',
+  title: 'PRP膝關節退化治療指引全解析：美國復健醫學會最新指引',
+  lastModified: '2026-06-01',
+  category: '衛教文章',
+  date: '2026-06-01',
+  summary: '2026年美國復健醫學會（AAPM&R）發表膝關節退化PRP治療最新指引。本文以淺顯語言完整解析5項實證建議與11項最佳實務：包含輕中度退化療效、血小板總劑量需達100億顆、進階骨內注射技術，以及結合減重與肌力訓練的全人復健觀念。',
+  coverImage: '/images/news/article/aapmr-2026-knee-prp-guideline.webp',
+  seoTitle: '膝蓋退化打PRP有用嗎？2026美國復健醫學會指引5大實證與劑量關鍵',
+  seoDescription: '美國復健醫學會（AAPM&R）最新膝關節退化PRP治療指引核心解析！專家指出血小板總劑量需達100億顆、次數應採個人化調整，並詳述結合減重與增生復健運動的全人治療策略，助你遠離換關節命運。',
+  keywords: [
+    '膝關節退化',
+    'PRP治療',
+    '富血小板血漿',
+    '美國復健醫學會',
+    'AAPM&R指引',
+    '血小板劑量100億',
+    '骨內注射',
+    '退化性關節炎',
+    '超音波導引注射',
+    '膝蓋積水復健'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    2026年美國復健醫學會正式發布了關於 PRP（高濃度血小板血漿）治療膝骨關節炎的最新臨床指引。這項過去常被認為「可能有幫助但缺乏絕對標準」的療法，如今正式被國際權威學會認可為輕至中度（ I–III 級退化）膝關節退化患者的有效非手術治療選項
+    <sup><a href="https://www.aapmr.org/members-publications/newsroom/member-news/2026/04/16/aapm-r-guidance-statement-on-prp-for-knee-osteoarthritis-released" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>。<br><br>
+    研究證實，PRP 的核心作用機制並非「把磨損的軟骨像變魔術般重新長回來」，而是透過血小板釋放的生長因子與抗發炎物質，有效調節關節內發炎微環境並改善疼痛與活動功能
+    <sup><a href="https://www.nice.org.uk/guidance/htg497/evidence/overview-final-pdf-6659770717" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>
+    。最新的實證醫學更指出，PRP 的製備品質（如血小板總劑量需大於100億）與超音波導引的精準度，將直接決定治療的成敗
+    <sup><a href="https://www.researchgate.net/publication/403894682_AAPM_R_guidance_statement_on_platelet_rich_plasma_for_knee_osteoarthritis" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[3]</a></sup>
+    。本文將為您全面解析這份最新指引的核心精華，並結合臨床實務幫助您做出正確的醫療決策。
+  </p>
+</div>
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、為什麼 2026 年這份 PRP 指引如此重要？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多膝蓋痛的病患在聽到 PRP 時，常常感到困惑與懷疑。過去幾年，PRP 治療在坊間的推廣存在極大的差異性：從抽血量、製備方式、注射技術到收費標準都不盡相同。這導致了患者「有人覺得像奇蹟，有人覺得白花錢」的兩極評價。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    2026 年 4 月，代表全美超過 10,000 名復健科醫師的權威機構——美國復健醫學會（AAPM&R），針對過去十多年來的海量文獻進行了系統性回顧，終於拍板定案，確立了 PRP 在膝骨關節炎中的關鍵地位。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這份指引最大的意義在於，它將 PRP 從<strong style="color: #2dd4bf;">「有潛力但缺乏標準的替代療法」</strong>，正式推向了<strong style="color: #2dd4bf;">「醫學會強力推薦的主流非手術治療選項」</strong>。
+    <sup><a href="https://drknopp.com/blog/aapmr-prp-knee-osteoarthritis-guidance" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+    對於那些吃消炎藥傷胃、打玻尿酸無效、卻又還沒嚴重到需要開刀換關節的廣大病友來說，這無疑確立了一條清晰的治療路徑。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、指引的核心精華：五大實證建議
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 選對病人是成功的關鍵</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    指引強烈建議，PRP 應優先考慮用於<strong style="color: #ffffff;">輕度至中度膝關節退化（I–III 級退化）</strong>，且經過復健、運動治療或止痛藥等保守治療後仍持續有症狀的患者。
+    若是第四期（重度退化、軟骨幾乎磨光、骨頭嚴重變形變白），單純打在關節腔內的 PRP 效果會大打折扣，這時可能需要進階的軟骨下骨注射（骨內注射）或考慮手術。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/41989317/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 血小板劑量決定療效</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    並不是「有抽血離心」就叫 PRP。2025 年及 2026 年的連續大型研究明確指出，PRP 存在明顯的「劑量-反應關係」。
+    目前的最佳實務建議是，<strong style="color: #ffffff;">單次注射的血小板總量應超過 100 億顆</strong>，才能顯著改善關節功能並達到良好的止痛效果。
+    <sup><a href="https://www.researchgate.net/publication/403894682_AAPM_R_guidance_statement_on_platelet_rich_plasma_for_knee_osteoarthritis" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    這意味著，如果抽血量太少或離心設備濃縮效率不佳，打進去的只是「生理食鹽水等級的血漿」，自然不會有效。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">3. 注射過程嚴禁使用局部麻醉藥</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    為了怕痛，有些人在關節注射時會要求醫師混入局部麻醉藥。然而指引特別強調，<strong style="color: #ffffff;">局部麻醉藥對軟骨細胞具有毒性，且會嚴重抑制血小板的活性與生長因子釋放</strong>。
+    <sup><a href="https://www.frontiersin.org/journals/pain-research/articles/10.3389/fpain.2026.1791542/full" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    寧可用較細的針頭或皮膚表面冷敷，也絕不應將麻藥直接打入關節腔內破壞 PRP 的療效。
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在復健科門診實務中，我們經常遇到患者問「打 PRP 到底要打幾次？是不是一定要買三針的療程？」
+      2026 的指引給出了明確解答：<strong style="color: #0e7490;">沒有固定次數，請依照「第一次注射後的臨床反應」來決定</strong>。
+      每個人的組織修復能力與發炎程度不同，死板地規定「打三針」並不符合現代個人化精準醫療的精神。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、找不出痛點？你必須知道的「WAR」膝痛評估架構
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多病患抱怨「我打過 PRP，但為什麼沒效？」原因常常不是 PRP 不好，而是<strong style="color: #2dd4bf;">「痛的來源根本不在關節腔裡面」</strong>。
+    專業的復健醫學評估會採用 <strong style="color: #ffffff;">WAR 架構</strong> 將膝痛拆分成三個層次來思考：
+    <sup><a href="https://prolocare.tw/prp-knee-osteoarthritis-guidance/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">Within（結構內）：</strong>
+      包含膝關節本身的軟骨退化、半月板撕裂、軟骨下骨水腫。這是 PRP 直接注射進關節腔能發揮最大作用的範圍。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">Around（周邊張力）：</strong>
+      大腿前後側肌力失衡、髂脛束（IT Band）過緊、髕骨滑動軌跡不良。這些會讓膝蓋像一台「輪胎沒對正的車」，長期被錯誤的力量拉扯。如果不放鬆周邊筋膜或訓練肌肉，光打 PRP 進關節是治標不治本的。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">Remote（遠端代償）：</strong>
+      許多膝蓋痛的根源在於「髖關節活動度受限」或是「扁平足/足踝排列不良」。當上下關節不工作，膝蓋就必須被迫承受所有壓力而提早退化。
+    </li>
+  </ul>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 典型案例：</strong><br><br>
+      曾有一位喜愛打網球的球友，因為膝蓋前側劇烈疼痛在外院打了兩次關節內 PRP 毫無起色。經全面超音波與理學檢查評估後，發現他的痛點其實是「髕骨下極的肌腱炎（跳躍膝）」，且伴隨嚴重的小腿後側筋膜緊繃。後來我們將 PRP 精準打在肌腱病灶處，並配合足踝活動度重建訓練，不到六週便重返球場。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、各式膝關節注射治療比較表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>治療種類</th>
+          <th>主要作用機制</th>
+          <th>適用對象與時機</th>
+          <th>療效維持時間</th>
+          <th style="text-align: center; white-space: nowrap;">2026指引建議</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PRP (高濃度血小板血漿)</td>
+          <td>調節發炎微環境、啟動組織修復訊號、減緩軟骨降解</td>
+          <td>輕中度退化（KL 1-3級）、對保守治療反應不佳者</td>
+          <td>約 9-12 個月或更長 (因人而異)</td>
+          <td style="text-align: center;">強力推薦</td>
+        </tr>
+        <tr>
+          <td>玻尿酸 </td>
+          <td>關節潤滑、物理性避震、短暫降低摩擦發炎</td>
+          <td>輕度退化、需要短期增加活動順暢度者</td>
+          <td>約 3-6 個月</td>
+          <td style="text-align: center;">建議 (療效稍遜於PRP)</td>
+        </tr>
+        <tr>
+          <td>類固醇 </td>
+          <td>強力壓制急性發炎反應</td>
+          <td>急性腫脹、關節積水嚴重、痛到無法入睡者</td>
+          <td>約 2-6 週 (治標不治本)</td>
+          <td style="text-align: center;">僅限短期急救</td>
+        </tr>
+        <tr>
+          <td>高濃度葡萄糖水</td>
+          <td>引發輕微局部發炎，刺激周邊韌帶與肌腱重新修復</td>
+          <td>膝關節周邊韌帶鬆弛、輕度關節不穩</td>
+          <td>需多次施打累積效果</td>
+          <td style="text-align: center;">周邊輔助治療</td>
+        </tr>
+        <tr>
+          <td>骨髓抽吸濃縮液 (BMAC)</td>
+          <td>含間質幹細胞與多種強效生長因子，促進組織重塑</td>
+          <td>重度退化（合併軟骨下骨病變）、軟骨嚴重缺損者</td>
+          <td>潛在可達數年</td>
+          <td style="text-align: center;">進階選項 (研究中)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="color: #94a3b8; font-size: 0.9rem; text-align: right; margin-top: 0.5rem;">* 資料來源統整自 2026 AAPM&R 指引與 NICE HTG497 報告 <sup><a href="https://www.nice.org.uk/guidance/htg497/evidence/overview-final-pdf-6659770717" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup></p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、負責任的 PRP 治療標準流程
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    打 PRP 絕不只是「把血抽出來，轉一轉打回去」這麼簡單。根據 2026 年最新臨床最佳實務，一套完整的治療應該包含以下步驟：
+    <sup><a href="https://prolocare.tw/services/prp/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">Step 1. 術前停藥與評估：</strong>
+      至少停用非類固醇消炎止痛藥（NSAIDs） 3-7 天，避免抑制血小板功能。確認患者血糖控制良好、無局部感染。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">Step 2. 抽水與環境清理：</strong>
+      如果膝關節內已經有明顯積水，必須在注射 PRP 前先將積水抽出，否則珍貴的高濃度血小板會被發炎關節液嚴重稀釋。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">Step 3. 超音波導引絕對必要：</strong>
+      盲打（憑手感注射）錯失目標病灶的機率極高。超音波導引能確保每一滴 PRP 都精準注入軟骨缺損區、半月板撕裂處或鬆弛的韌帶根部。
+      <sup><a href="https://prolocare.tw/services/prp/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">Step 4. 嚴格的術後管理：</strong>
+      注射後 2 週內<strong style="color: #ff9800;">絕對禁止服用消炎藥（NSAIDs）</strong>，若疼痛難耐只能使用普拿疼（Acetaminophen）或局部冰敷。這是為了讓血小板引起的「修復性發炎」完整走完週期。
+      <sup><a href="https://www.frontiersin.org/journals/pain-research/articles/10.3389/fpain.2026.1791542/full" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 六、關於膝關節 PRP 的三大常見誤區
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「打了 PRP，軟骨就會重新長出來變回18歲？」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤迷思！</strong> PRP 並不是幹細胞，它沒有能力憑空讓已經磨損殆盡的軟骨重新生長。它真正的價值在於「改變關節內的發炎微環境」，讓關節從「持續破壞」轉向「穩定修復」，從而大幅減少疼痛、改善生活品質，達到延緩退化進程的目的。<sup><a href="https://drknopp.com/blog/aapmr-prp-knee-osteoarthritis-guidance" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[4]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「療程一定得買三針，打越多越有效？」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度推銷！</strong> AAPM&R 最新指引明確指出，並沒有強烈證據支持「固定三針」的協議。應該把 PRP 當成一種醫療處方，依照病患打完第一針後 4-6 週的回診反應（疼痛降低幅度、功能改善程度）來決定是否需要追加。品質好的高劑量 PRP，很多人一針就能維持將近一年。<sup><a href="https://prolocare.tw/prp-knee-osteoarthritis-guidance/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[7]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「打完 PRP 前幾天很痛，我趕快吃顆消炎藥壓一下」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>前功盡棄！</strong> PRP 作用的第一階段就是「引起局部微小的發炎反應」來呼叫體內的修復細胞。如果你吃下了非類固醇消炎止痛藥（如布洛芬 Ibuprofen、非炎 Voren 等），就會直接阻斷這個修復信號，等於這針 PRP 白打了！若真的痛，請聯絡醫師開立單純止痛成份的藥物。<sup><a href="https://www.frontiersin.org/journals/pain-research/articles/10.3389/fpain.2026.1791542/full" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[6]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、預防勝於治療：除了注射，你還能做什麼？
+  </h2>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    無論是最新的醫學指引，還是頂尖的醫師都會告訴你：<strong style="color: #ffffff;">「PRP 是幫你創造無痛的窗口，真正的復原要靠運動與改變習慣。」</strong>
+    <sup><a href="https://www.aapmr.org/members-publications/newsroom/member-news/2026/04/16/aapm-r-guidance-statement-on-prp-for-knee-osteoarthritis-released" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">
+      <strong style="color: #ffffff;">體重控制：</strong>走路時膝蓋承受體重 3 倍的力量，上下樓梯則高達 5-7 倍。減重 1 公斤，膝蓋就少了近 5 公斤的負擔。
+    </li>
+    <li style="margin-bottom: 0.5rem;">
+      <strong style="color: #ffffff;">強化股四頭肌與臀大肌：</strong>肌肉是關節天然的避震器。打完 PRP 不痛之後，強烈建議尋求物理治療師協助，建立下肢肌力訓練計畫。
+    </li>
+    <li style="margin-bottom: 0.5rem;">
+      <strong style="color: #ffffff;">改變運動型態：</strong>減少頻繁跳躍、頻繁上下樓梯的負重衝擊，可轉換為游泳、皮拉提斯、平路騎自行車等對關節較友善的運動。
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：打完 PRP 多久會見效？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      PRP 不是類固醇，不會立刻消炎止痛。一般來說，注射後前 3-7 天可能會有局部腫脹痠痛感；大約在 2-4 週後發炎微環境開始改變，疼痛會逐漸減輕；最大療效通常出現在注射後的第 6-12 週，並可維持半年到一年以上。
+      <sup><a href="https://www.nice.org.uk/guidance/htg497/evidence/overview-final-pdf-6659770717" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：嚴重的第四期退化（骨碰骨）完全不能打 PRP 嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      並非絕對不行，但期望值需要調整。對於重度退化，單純關節內 PRP 效果有限。若患者因身體狀況無法開刀，或希望延緩置換人工關節的時間，仍可考慮合併軟骨下骨病變注射，或改用 BMAC（骨髓濃縮液）等進階療法，這需要專業醫師透過高階影像詳細評估。
+      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/41989317/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：為什麼打 PRP 比較痛？能加麻藥嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      PRP 是弱酸性，且含大量生長因子，打進去時組織會有明顯的脹痛感。但 2026 指引嚴格規範「避免在關節腔內使用局部麻醉藥」，因為這會傷害軟骨細胞並降低血小板效能。醫師通常會在表皮進行麻醉或使用冷敷，來降低下針時的痛感。
+      <sup><a href="https://www.frontiersin.org/journals/pain-research/articles/10.3389/fpain.2026.1791542/full" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：年紀大（70歲以上）打自己的血還有用嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      年齡確實會稍微影響血小板的活性，但研究顯示 70 歲以上的患者透過高品質的濃縮技術（提高血小板倍數），依然能獲得顯著的疼痛緩解與功能改善。比起年紀，病灶的嚴重程度（第幾期退化）對療效的影響更大。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：打完 PRP 可以馬上運動嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不行。注射後前 3 天建議盡量休息、減少負重走路；1-2 週內可進行日常溫和活動，但禁止劇烈跑跳與深蹲；第 3-4 週開始，應在專業指導下漸進式恢復肌力訓練，這才是完整 PRP 療程的關鍵最後一哩路。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    膝關節退化不是一天造成的，治療也不該只依賴一針就想解決所有問題。2026 美國復健醫學會最新指引為我們揭示了：精準的評估、高品質大劑量的 PRP、超音波導引以及術後良好的復健計畫，缺一不可。
+  </p><br>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    如果您長期飽受膝痛困擾，打過玻尿酸無效，吃藥又擔心副作用，千萬不要盲目跟風或是放棄治療。這時您需要的是具備實證醫學基礎的專業評估。<strong style="color: #1e293b;">林醫師不僅深知運動醫學，更是超音波導引精準注射與骨關節保養的專家，能透過完整的 WAR 架構，為您量身打造最合適的治療方針。</strong>
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：別讓膝痛限制了您的生活圈。找對痛點，用對方法，給膝蓋一次重獲新生的機會。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約林醫師的門診評估
+    </a>
+</div>
+</div>
+  `,
+  "referencesHtml": `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Jayaram, P., et al. (2026). AAPM&R Guidance Statement on Platelet-Rich Plasma for Knee Osteoarthritis. American Academy of Physical Medicine and Rehabilitation. <a href="https://www.aapmr.org/members-publications/newsroom/member-news/2026/04/16/aapm-r-guidance-statement-on-prp-for-knee-osteoarthritis-released" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">AAPM&R Newsroom</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        National Institute for Health and Care Excellence (NICE). (2026). HTG497 Platelet-rich plasma injections for knee osteoarthritis: Overview. <a href="https://www.nice.org.uk/guidance/htg497/evidence/overview-final-pdf-6659770717" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">NICE Overview</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        ResearchGate (2026). AAPM&R guidance statement on platelet rich plasma for knee osteoarthritis - Dosing impact. <a href="https://www.researchgate.net/publication/403894682_AAPM_R_guidance_statement_on_platelet_rich_plasma_for_knee_osteoarthritis" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Publication: 403894682</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Dr. Knopp Blog (2026). AAPM&R Now Recommends PRP for Knee Osteoarthritis: What This Means for Patients. <a href="https://drknopp.com/blog/aapmr-prp-knee-osteoarthritis-guidance" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        PubMed (2026). AAPM&R guidance statement on platelet rich plasma for knee osteoarthritis. <a href="https://pubmed.ncbi.nlm.nih.gov/41989317/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMID: 41989317</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Frontiers in Pain Research (2026). Platelet-rich plasma for treatment of knee osteoarthritis: a narrative review. <a href="https://www.frontiersin.org/journals/pain-research/articles/10.3389/fpain.2026.1791542/full" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3389/fpain.2026.1791542</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Prolocare Clinic (2026). PRP 治療膝關節退化有效嗎？2026 美國復健醫學會最新指引重點整理. <a href="https://prolocare.tw/prp-knee-osteoarthritis-guidance/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Prolocare Clinic (2026). PRP治療適應症、流程與照護重點. <a href="https://prolocare.tw/services/prp/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        American Journal of Sports Medicine (2025). PRP Injections for the Treatment of Knee Osteoarthritis: The Improvement Is Clinically Significant and Influenced by Platelet Concentration: A Meta-analysis of Randomized Controlled Trials. Am J Sports Med. 2025;53(3):745-754.
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Journal of Orthopaedic Research. (2023). Chondrotoxicity of Local Anesthetics in Intra-articular Injections: A Systematic Review. 
+      </span>
+    </li>
+  </ol>
+</div>
+  `
+},
 
 {
 id: 'gender-differences-in-sports-injuries',
