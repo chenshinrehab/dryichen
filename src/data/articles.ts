@@ -3,8 +3,544 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
 {
+  id: 'blue-light-protection-analysis',
+  title: '藍光保護貼、藍光眼鏡、濾藍光螢幕：真的能保護眼睛嗎？',
+  lastModified: '2026-06-01',
+  category: '衛教文章',
+  date: '2026-06-01',
+  summary: '深度剖析藍光保護貼、藍光眼鏡、濾藍光螢幕等產品的護眼效果。實證研究揭露這些產品對眼睛疲勞、睡眠品質與視網膜保護的真實功效，並提供科學預防數位眼疲勞的策略。',
+  coverImage: '/images/news/article/blue-light-protection-analysis.webp',
+  seoTitle: '藍光保護貼、藍光眼鏡、濾藍光螢幕真的有效嗎？科學證據全解析',
+  seoDescription: '深度剖析藍光保護貼、藍光眼鏡、濾藍光螢幕等產品的護眼效果。實證研究揭露這些產品對眼睛疲勞、睡眠品質與視網膜保護的真實功效，並提供科學預防數位眼疲勞的策略。',
+  keywords: [
+    '藍光眼鏡',
+    '藍光保護貼',
+    '濾藍光螢幕',
+    '數位眼疲勞',
+    '電腦視覺症候群',
+    '藍光危害',
+    '護眼',
+    '睡眠品質',
+    '褪黑激素',
+    '視網膜保護'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    藍光產品市場年年成長，但科學證據卻指向令人意外的結論：大多數「濾藍光」產品對眼睛疲勞的改善效果微乎其微。2023年發表於外國期刊的大規模系統性研究，分析了17項隨機對照試驗，結論是藍光濾鏡眼鏡可能無法有效減少短期電腦作業的眼睛疲勞，也無法改善睡眠品質或保護視網膜。
+    <sup><a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013244.pub2/full" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[1]</a></sup><br><br>
+    同時，研究也發現，藍光對眼睛的傷害主要與「高強度光源」及「夜間曝露影響生理時鐘」有關，而非一般日間的螢幕使用。
+    <sup><a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC5473809" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[2]</a></sup>
+    本文將以實證為基礎，帶你看清藍光產品背後的科學現況，並提供真正有效的護眼建議。
+  </p>
+</div>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、什麼是藍光？它真的傷眼嗎？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    藍光（Blue Light）是可見光中波長介於 380～500 奈米（nm）的高能量光線，廣泛存在於陽光、LED 燈具、手機、電腦螢幕及平板裝置中。由於它屬於高能可見光，能夠穿透角膜與水晶體直達視網膜，因此引發了醫學界與消費者的廣泛關注。
+    <sup><a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC5473809" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    但在討論「藍光傷害」之前，有一個關鍵前提必須先釐清：<strong style="color: #2dd4bf;">來自太陽的藍光強度，遠遠高於手機或電腦螢幕所釋放的藍光。</strong>研究指出，在晴天戶外活動一小時所接受的藍光量，可能相當於盯著電腦螢幕數十小時。因此，藍光本身並非絕對有害，問題在於「曝露的時間點與強度」——尤其是在夜間使用螢幕，可能對生理時鐘造成干擾。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11252550/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[3]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">藍光對身體的潛在危害</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    目前科學研究指出，藍光對人體的主要潛在危害集中在以下幾個面向：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">干擾生理時鐘與褪黑激素分泌：</strong>視網膜中含有對藍光最敏感的「內在光敏視網膜神經節細胞」，其感光色素黑視蛋白的敏感波長約在 480 nm。夜間藍光曝露會抑制大腦松果體分泌褪黑激素，延遲入睡時間並降低睡眠品質。
+      <sup><a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC5473809" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">視網膜光毒性（理論層面）：</strong>動物實驗顯示高強度藍光照射可誘導視網膜感光細胞凋亡，產生氧化壓力損傷。然而，現有研究尚未充分證明一般日常螢幕使用強度的藍光，會對人類視網膜造成實質性損害。
+      <sup><a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC5473809" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">數位眼疲勞：</strong>長時間使用螢幕確實會造成眼睛疲勞、乾澀、頭痛等症狀，但這主要源於長時間近距離用眼、眨眼次數減少、螢幕眩光與姿勢問題，而非單純的藍光本身。
+      <sup><a href="https://www.aoa.org/healthy-eyes/eye-and-vision-conditions/computer-vision-syndrome" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[4]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">其他潛在影響：</strong>部分研究顯示長期夜間藍光曝露可能與乳癌風險、憂鬱症狀及認知功能下降有一定關聯，但這些研究多為觀察性研究，仍需進一步驗證。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11252550/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[3]</a></sup>
+    </li>
+  </ul>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、數位眼疲勞：到底是誰的問題？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多人使用藍光產品的主要動機，是為了緩解長時間使用螢幕後的眼睛疲勞——也就是醫學上所稱的「電腦視覺症候群」或「數位眼疲勞」。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這個問題有多普遍？研究數字令人吃驚：全球約有 50～66% 的數位裝置使用者出現數位眼疲勞症狀，2024年一項針對 103 項研究、逾 66,000 名受試者的大型統合分析顯示，整體盛行率達 66%。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10156438" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
+    COVID-19 疫情期間，遠距工作普及後，盛行率更一度飆升至 80～94%。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    眼睛疲勞的症狀包括：視力模糊、眼睛乾澀刺痛、頭痛、肩頸痠痛、對光敏感等。然而，研究指出這些症狀的主要原因並非藍光，而是：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">眨眼次數顯著減少：</strong>正常情況下每分鐘約眨眼 15～20 次，使用螢幕時可能降至 5～7 次，導致淚液蒸發加速、乾眼症狀</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">持續調節疲勞：</strong>眼睛的睫狀肌需反覆對焦，長時間收縮引發疲勞</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">螢幕眩光與對比問題：</strong>環境光源反射至螢幕造成額外負擔</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">觀看距離與角度不當：</strong>螢幕距離過近或高度不適合</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">未矯正的屈光不正：</strong>近視、遠視、散光若未正確矯正，螢幕使用會大幅加重症狀</li>
+  </ul>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床重要觀點</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      數位眼疲勞最常見的根本原因其實是「長時間近距離用眼」與「眨眼不足」，而非藍光本身。許多患者花了數千元購買藍光眼鏡或保護貼後，症狀依然沒有改善——因為他們忽略了更根本的問題：使用習慣、螢幕設置與潛在的屈光不正。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、藍光眼鏡：科學怎麼說？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    藍光眼鏡是目前最常見的藍光防護產品之一，在眼鏡行、網路購物平台均廣泛販售。這類眼鏡透過在鏡片基材中嵌入吸收材料或在表面鍍上反射膜，通常可過濾波長 400～450 nm 範圍內約 20～30% 的藍光。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">黃金標準研究：Cochrane 系統性回顧</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    目前最具說服力的研究，是 2023 年由墨爾本大學、倫敦城市大學及莫納什大學學者聯合發表的《Cochrane 系統性回顧》。研究者分析了 17 項隨機對照試驗，針對藍光濾鏡眼鏡的效果做出以下結論：
+    <sup><a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013244.pub2/full" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[1]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">眼睛疲勞：</strong>藍光濾鏡眼鏡「可能無法」有效減少電腦作業相關的短期眼睛疲勞症狀（低確定性證據）</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">睡眠品質：</strong>現有研究無法確定藍光濾鏡眼鏡是否改善睡眠品質（低至極低確定性證據）</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">視網膜保護：</strong>納入研究均未評估視網膜保護效果，因此無從判斷</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">最佳矯正視力與對比敏感度：</strong>兩者均未見顯著差異</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">副作用：</strong>偶有憂鬱症狀加重、頭痛或情緒低落的回報（可能與長時間配戴眼鏡本身相關，而非濾藍光功能）</li>
+  </ul>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    美國眼科學會（AAO）亦於 2024 年明確表示，目前沒有科學證據支持在使用電腦時配戴特殊眼鏡的必要性，並建議採用其他有實證基礎的方法來緩解眼睛疲勞。
+    <sup><a href="https://www.aao.org/eye-health/tips-prevention/are-computer-glasses-worth-it" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[6]</a></sup>
+  </p>
+ 
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 值得注意：</strong>有部分使用者表示配戴藍光眼鏡後主觀感受確實改善，但這很可能是「安慰劑效應」——因為配戴了眼鏡而更有意識地休息眼睛，而非濾藍光本身的功效。在沒有排除安慰劑效應的臨床試驗中，任何主觀感受的改善都需要謹慎解讀。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、藍光保護貼：貼上去有用嗎？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    藍光保護貼是一種黏貼於裝置螢幕表面的透明薄膜，主要目的是過濾螢幕發出的藍光，同時提供防刮保護。這類產品通常標榜可過濾 400～450 nm 波段的藍光。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    2020 年發表於《Middle East African Journal of Ophthalmology》的研究直接量測了藍光保護貼的實際過濾效果：在 100% 亮度設定下，貼上保護貼後，450 nm 波段的藍光強度降低約 <strong style="color: #ffffff;">30%</strong>。然而，研究同時發現，直接調低螢幕亮度至 50% 所達到的藍光降低效果（約 57%），顯著優於保護貼。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/33488015/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[7]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    換句話說：<strong style="color: #2dd4bf;">免費調低螢幕亮度，比花錢買保護貼更有效地減少藍光曝露。</strong>此外，開啟裝置內建的「夜間模式」或「護眼模式」，搭配降低亮度，效果同樣優於單純黏貼保護貼。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">保護貼的其他問題</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">色偏問題：</strong>部分藍光保護貼會使畫面偏黃，影響視覺體驗與色彩辨識</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">觸控靈敏度：</strong>在手機、平板上可能輕微影響觸控反應</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">品質差異大：</strong>市面上藍光保護貼品質良莠不齊，部分產品實際過濾效果極為有限</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">缺乏臨床實證：</strong>目前尚無高品質隨機對照試驗證明藍光保護貼能有效改善眼睛疲勞或其他健康指標</li>
+  </ul>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、濾藍光螢幕與內建護眼模式：效果如何？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    部分顯示器或螢幕標榜具備「低藍光」硬體技術，是將濾藍光功能直接整合進螢幕面板或背光系統中，不同於單純的保護貼。此外，目前主流作業系統與行動裝置幾乎均內建「夜間模式」或「護眼模式」，可動態調整螢幕色溫，減少藍光輸出。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    研究顯示，這類軟體型夜間模式能有效降低螢幕發出的短波藍光，對夜間使用時的生理時鐘干擾有一定的緩解作用。然而，關鍵問題在於：<strong style="color: #ffffff;">硬體低藍光螢幕的臨床護眼實證，目前仍相當有限，</strong>且其過濾效果因品牌與規格差異而有所不同。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11252550/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[3]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 實用建議</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      相較於購買昂貴的低藍光螢幕或保護貼，直接啟用裝置內建的「夜間模式」（iOS 的 Night Shift、Android 的夜間模式、Windows 的夜間光源、macOS 的 Night Shift）是最經濟實惠的選擇，且在睡前 2 小時使用效果最為顯著。真正的重點在於：傍晚後降低螢幕亮度與色溫，才是保護睡眠品質的關鍵行動。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、各類藍光防護產品效果比較
+  </h2>
+ 
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 800px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>產品類型</th>
+          <th>藍光過濾程度</th>
+          <th>減緩眼疲勞實證</th>
+          <th>改善睡眠實證</th>
+          <th>視網膜保護實證</th>
+          <th style="text-align: center;">建議使用時機</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>藍光眼鏡</td>
+          <td>過濾 20～30% 藍光</td>
+          <td>❌ 缺乏充分實證</td>
+          <td>❌ 結果不一致</td>
+          <td>❌ 未充分研究</td>
+          <td style="text-align: center;">夜間使用有限助益</td>
+        </tr>
+        <tr>
+          <td>藍光保護貼</td>
+          <td>降低約 30% 藍光</td>
+          <td>❌ 無高品質實證</td>
+          <td>❌ 無充分實證</td>
+          <td>❌ 未研究</td>
+          <td style="text-align: center;">效果不如調低亮度</td>
+        </tr>
+        <tr>
+          <td>低藍光螢幕</td>
+          <td>因規格而異</td>
+          <td>⚠️ 有限證據</td>
+          <td>⚠️ 有限證據</td>
+          <td>❌ 未充分研究</td>
+          <td style="text-align: center;">可考慮，但非必要</td>
+        </tr>
+        <tr>
+          <td>內建夜間模式</td>
+          <td>動態調整色溫</td>
+          <td>⚠️ 部分研究支持</td>
+          <td>✅ 夜間使用有效</td>
+          <td>❌ 未研究</td>
+          <td style="text-align: center;">傍晚後強烈建議開啟</td>
+        </tr>
+        <tr>
+          <td>調低螢幕亮度</td>
+          <td>降低約 57% 藍光</td>
+          <td>✅ 有效</td>
+          <td>✅ 配合夜間模式效果佳</td>
+          <td>間接保護</td>
+          <td style="text-align: center;">最推薦、免費有效</td>
+        </tr>
+        <tr>
+          <td>20-20-20 休息法</td>
+          <td>不過濾藍光</td>
+          <td>✅ 廣泛建議</td>
+          <td>不直接相關</td>
+          <td>間接有助</td>
+          <td style="text-align: center;">強烈建議日常執行</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 七、常見三大誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「眼睛疲勞是因為藍光造成的，所以要買藍光眼鏡」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong>數位眼疲勞的主因是長時間近距離用眼、眨眼減少和肌肉持續調節，而非藍光本身。美國眼科學會明確指出，現有科學證據不支持藍光是眼睛疲勞主因的說法。<sup><a href="https://www.aoa.org/healthy-eyes/eye-and-vision-conditions/computer-vision-syndrome" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[4]</a></sup> 正確的對策是調整使用習慣、確保照明充足、定期休息，以及矯正屈光不正。</span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「貼了藍光保護貼，晚上滑手機就不影響睡眠了」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong>影響睡眠的關鍵不只是藍光的波長，還包括光線的整體強度與使用行為。研究顯示，睡前使用電子閱讀器本身——不論有無濾藍光——就會造成生理時鐘延遲與認知表現下降。<sup><a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC5473809" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[2]</a></sup> 真正有效的做法是「睡前 1～2 小時停止使用螢幕」，而非貼上保護貼繼續滑手機。</span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「藍光一定會傷害視網膜，長期使用螢幕必然導致黃斑部病變」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>誇大其詞！</strong>雖然高強度藍光在實驗室條件下確實可對動物視網膜產生光毒性傷害，但目前缺乏充分的人體研究證明，一般日常螢幕使用強度會直接導致黃斑部病變或視網膜病變。<sup><a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013244.pub2/full" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup> 這並不代表完全無風險，但用「必然傷眼」來行銷藍光產品是不符合現有科學證據的說法。</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    八、真正有效的護眼策略：科學實證建議
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    與其把錢花在功效存疑的藍光產品上，不如落實以下有更充分實證基礎的護眼方法：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">20-20-20 休息法：</strong>每使用螢幕 20 分鐘，花 20 秒望向 20 英尺（約 6 公尺）外的物體，讓睫狀肌得到休息。美國眼科學會及多數眼科機構均推薦此方法緩解調節疲勞。
+      <sup><a href="https://www.aoa.org/healthy-eyes/eye-and-vision-conditions/computer-vision-syndrome" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[4]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">調低螢幕亮度與色溫：</strong>螢幕亮度應與環境光源相當，避免在黑暗中使用高亮度螢幕。傍晚後開啟夜間模式（暖色調），是減少藍光最實惠的方法，降低亮度至 50% 可使藍光曝露降低近 57%。
+      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/33488015/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[7]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">有意識地增加眨眼：</strong>用眼過度時提醒自己多眨眼，或使用人工淚液（人工淚水）來維持淚膜完整性，緩解乾眼症狀。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">調整螢幕位置與環境照明：</strong>螢幕應置於視線略低於水平的位置，距眼睛約 50～70 公分；避免螢幕正對窗戶或強光來源，以減少眩光。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">矯正屈光不正：</strong>定期進行眼科檢查，確保近視、遠視、散光均獲得正確矯正。未矯正的屈光問題是加重數位眼疲勞最常見卻最易忽略的原因。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">睡前停用螢幕：</strong>睡前至少 1 小時避免使用發光螢幕，是目前證據最充分的保護睡眠品質行為。
+      <sup><a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC5473809" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
+    </li>
+  </ul>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🔍</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：我戴了藍光眼鏡後感覺眼睛真的比較舒服，這是假的嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      你的感受是真實的，但原因可能不是藍光過濾的功效。配戴眼鏡這個行為本身，可能讓你更有意識地休息眼睛、調整用眼習慣；加上安慰劑效應，都可能帶來主觀上的舒緩感。此外，若你平時屈光問題未矯正，配戴任何度數眼鏡本身就可能帶來改善。<sup><a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013244.pub2/full" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[1]</a></sup>
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：小孩使用平板需要貼藍光保護貼嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      對兒童而言，更重要的護眼建議是「限制螢幕使用時間」和「保持足夠的戶外活動」——大量研究顯示，充足的自然光照射是預防近視最有效的方法。相較之下，目前沒有充分證據支持為兒童加貼藍光保護貼有特別的防護效果。世界衛生組織建議，2 歲以下幼兒應完全避免螢幕使用；2～5 歲每天不超過 1 小時；6 歲以上則應有明確的使用限制。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：已經有黃斑部病變的人，需要使用藍光防護產品嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      對於已有黃斑部病變（AMD）的患者，避免強光曝露是合理的預防措施，但目前藍光濾鏡眼鏡對於黃斑部病變的預防或延緩效果，尚未被高品質臨床研究充分驗證。戴遮陽帽、配戴有 UV 與強光防護的太陽眼鏡，在戶外減少強光直射，可能比室內使用藍光眼鏡更有實際意義。建議直接諮詢眼科醫師，針對個人狀況制定護眼策略。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：護眼模式把螢幕調成黃色，這樣對眼睛好嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      暖色調（偏黃色）的螢幕設定，在夜間使用時確實有助於減少對褪黑激素分泌的干擾，對維持睡眠品質有一定幫助。日間使用時，色溫設定對眼睛疲勞的影響相對有限，許多人在習慣後不覺得困擾。如果你覺得黃色調影響工作（例如設計師需要精確色彩判斷），日間可暫時關閉夜間模式，傍晚後再開啟即可。<sup><a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC5473809" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：我的眼睛乾澀酸痛，用什麼方法最有效？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      先排除基礎問題：是否有未矯正的近視或散光？是否有乾眼症？若症狀持續超過 2 週，建議就醫檢查。在自我照護方面，優先落實「20-20-20 法則」、有意識增加眨眼頻率、使用無防腐劑人工淚液（不含防腐劑較安全，可長期使用），以及確保使用環境照明充足。這些行動的效果，遠優於任何藍光防護產品。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    藍光防護產品的龐大市場，很大程度上建立在消費者對「藍光傷眼」的恐懼，以及行銷話術對科學現況的扭曲詮釋上。目前最高品質的臨床研究顯示，藍光眼鏡與保護貼對眼睛疲勞、睡眠品質的改善效果，並未達到廠商所宣稱的程度。
+  </p> <br>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    這並不代表藍光完全無害——夜間藍光曝露對生理時鐘的干擾有相對充分的實證支持。但解決之道是改變使用習慣：<strong style="color: #1e293b;">睡前停止使用螢幕、降低螢幕亮度、開啟內建夜間模式，</strong>這些免費的行為改變，其實比任何付費藍光產品更有效。
+  </p>
+ 
+  <p style="color: #475569; font-size: 1.05rem;">
+    若你有持續的眼睛疲勞、乾澀、視力模糊或頭痛，這可能是屈光不正未矯正、乾眼症或其他眼部問題的訊號，<strong style="color: #1e293b;">應該就醫評估，而非單靠藍光產品自行解決。</strong>
+  </p>
+ 
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：今晚就開啟手機的「夜間模式」並調低亮度。從這個免費且有實證的步驟開始，才是真正護眼的第一步。
+    </p>
+  </div>
+
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Singh, S., Bhavna, A., et al. (2023). Blue‐light filtering spectacle lenses for visual performance, sleep, and macular health in adults. Cochrane Database of Systematic Reviews. <a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013244.pub2/full" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Cochrane Library: CD013244</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Tosini, G., Ferguson, I., & Tsubota, K. (2016). Effects of blue light on the circadian system and eye physiology. Molecular Vision, 22, 61–72. PMC5473809. <a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC5473809" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 5473809</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Haghani, M., Mortazavi, S.M.J., et al. (2024). Blue Light and Digital Screens Revisited: A New Look at Blue Light from the Vision Quality, Circadian Rhythm and Cognitive Functions Perspective. PMC11252550. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11252550/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11252550</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        American Optometric Association. (2024). Computer Vision Syndrome (Digital Eye Strain). <a href="https://www.aoa.org/healthy-eyes/eye-and-vision-conditions/computer-vision-syndrome" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">AOA Web</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Almudhaiyan, T.M., Aldebasi, T., et al. (2023). The Prevalence and Knowledge of Digital Eye Strain Among the Undergraduates in Riyadh, Saudi Arabia. Cureus, 15(4), e37081. PMC10156438. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10156438" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10156438</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        American Academy of Ophthalmology. (2024). Are Computer Glasses Worth It? Position Statement. <a href="https://www.aao.org/eye-health/tips-prevention/are-computer-glasses-worth-it" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">AAO Web</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Smith, A.K., Conger, J.R., Hedayati, B., et al. (2020). The Effect of a Screen Protector on Blue Light Intensity Emitted from Different Hand-held Devices. Middle East African Journal of Ophthalmology, 27(3), 177–181. <a href="https://pubmed.ncbi.nlm.nih.gov/33488015/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 33488015</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Chang, A.M., Aeschbach, D., Duffy, J.F., & Czeisler, C.A. (2015). Evening use of light-emitting eReaders negatively affects sleep, circadian timing, and next-morning alertness. Proceedings of the National Academy of Sciences, 112(4), 1232–1237. <a href="https://doi.org/10.1073/pnas.1418490112" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1073/pnas.1418490112</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Sheppard, A.L., & Wolffsohn, J.S. (2018). Digital eye strain: prevalence, measurement and amelioration. BMJ Open Ophthalmology, 3(1), e000146. <a href="https://doi.org/10.1136/bmjophth-2018-000146" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1136/bmjophth-2018-000146</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Vagge, A., Ferro Desideri, L., Nucci, P., et al. (2021). Blue Light Filtering Ophthalmic Lenses: To Prescribe, or Not to Prescribe? Ophthalmologica, 244(6), 456–466. <a href="https://doi.org/10.1159/000515676" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1159/000515676</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Atan, D., Turner, L., & Yip, J. (2024). Blue light filtering spectacle lenses show inconclusive outcomes: Cochrane Review commentary. Ophthalmology Times. <a href="https://www.ophthalmologytimes.com/view/cochrane-review-blue-light-filtering-glasses-show-inconclusive-outcomes" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Yıldırım, E., Akca, H., & Güngör, K. (2024). Long-Term Use of Blue Light-Filtering Glasses and Symptom Improvement in Digital Eye Strain: A Questionnaire-Based Study. PMC12661913. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12661913/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12661913</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Pucker, A.D., Kraychuk, M.O., et al. (2022). Myth-busting the 20/20/20 rule. Modern Optometry. <a href="https://modernod.com/topics/myopia/myth-busting-the-202020-rule/38651/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        World Health Organization. (2019). Guidelines on Physical Activity, Sedentary Behaviour and Sleep for Children under 5 Years of Age. Geneva: WHO. <a href="https://www.who.int/publications/i/item/9789241550536" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">WHO Publication</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+
+{
 id: 'aapmr-2026-knee-oa-prp-guideline',
-  title: 'PRP膝關節退化治療指引全解析：美國復健醫學會最新指引',
+  title: '2026年PRP膝關節退化治療指引全解析：美國復健醫學會最新指引',
   lastModified: '2026-06-01',
   category: '衛教文章',
   date: '2026-06-01',

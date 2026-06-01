@@ -184,6 +184,12 @@ export const sportsInjuriesData = [
         description: '診所正式引進旗艦等級 GE LOGIQ Totus 肌肉骨骼超音波。擁有超高解析度影像與多項智慧輔助功能，讓超音波導引注射更精準、更安全。',
         image:  '/images/news/article/gelotus/2.webp',
       },
+                                    {
+        slug: 'aapmr-2026-knee-oa-prp-guideline',
+        title: '2026年PRP膝關節退化治療指引全解析：美國復健醫學會最新指引',
+        description: '2026年美國復健醫學會（AAPM&R）發表膝關節退化PRP治療最新指引。本文以淺顯語言完整解析5項實證建議與11項最佳實務：包含輕中度退化療效、血小板總劑量需達100億顆、進階骨內注射技術，以及結合減重與肌力訓練的全人復健觀念。',
+        image: '/images/news/article/aapmr-2026-knee-prp-guideline.webp',
+      },
                               {
         slug: 'regenerative-injections-comparison-prp-plt-amniotic-bmc',
         title: 'PRP、PLT、羊膜、BMC 哪種好？再生注射療法2026完全指南',
@@ -293,6 +299,12 @@ export const sportsInjuriesData = [
         description: '全身垂直律動（WBVV）源自太空醫學，被證實能提升骨密度、改善微血管循環並促進腸胃蠕動。本文從復健與醫學觀點，深度剖析垂直律動對三大系統的益處，並揭露為何「水平或不規則震動」反而會產生剪力，對脊椎與關節造成不可逆的傷害。同時詳列適應症與絕對禁忌症。',
         image: '/images/news/article/wbvv-cover.webp',
       },
+                        {
+        slug: 'blue-light-protection-analysis',
+        title: '藍光保護貼、藍光眼鏡、濾藍光螢幕：真的能保護眼睛嗎？',
+        description: '深度剖析藍光保護貼、藍光眼鏡、濾藍光螢幕等產品的護眼效果。實證研究揭露這些產品對眼睛疲勞、睡眠品質與視網膜保護的真實功效，並提供科學預防數位眼疲勞的策略。',
+        image: '/images/news/article/blue-light-protection-analysis.webp',
+      },
 
 
 
@@ -341,6 +353,12 @@ export const sportsInjuriesData = [
         title: '一天能吃幾顆蛋？全蛋 vs 蛋白，會造成膽固醇過高嗎？',
         description: '雞蛋曾被視為膽固醇殺手，但最新運動醫學研究顯示，全蛋對肌肉合成的效果竟優於純蛋白。本文深入剖析亞洲族群吃蛋的保護效果、不同健康狀態的攝取建議，並破解生蛋較營養與膽固醇過高的常見迷思，教你如何吃出最高效益。',
         image: '/images/news/article/egg-nutrition-analysis.webp',
+      },
+                                                {
+        slug: 'cooking-oil-comparison',
+        title: '食用油全解析：動物油 vs 植物油，哪一種油最健康？',
+        description: '深度剖析動物油與植物油的優缺點，完整比較各類植物油的脂肪酸組成。實證研究揭露飽和脂肪酸、單元不飽和脂肪酸、多元不飽和脂肪酸對心血管健康的影響，並提供科學選油策略。',
+        image: '/images/news/article/cooking-oil-comparison.webp',
       },
                                                       {
         slug: 'beverage-sugar-coffee-health',
@@ -587,6 +605,20 @@ export const sportsInjuriesData = [
         title: '腳踏車全解析：公路車、城市車、摺疊車，有哪些傷害風險？',
         description: '從醫學與生物力學角度深度剖析公路車、城市車（通勤車）與摺疊車的姿勢差異與運動傷害風險。實證研究揭露各車型最容易導致的膝關節疼痛、下背痛、頸肩傷害與會陰神經壓迫，並提供科學預防策略。',
         image: '/images/news/article/cycling-injury-analysis.webp',
+
+      },
+                        {
+        slug: 'sports-injury-longevity-analysis',
+        title: '球類運動傷害與長壽效益全解析：哪種運動投報率最高？',
+        description: '從運動醫學與大數據實證角度，深度解析籃球、足球、網球、羽毛球等常見運動的傷害率。哥本哈根與英國大型研究追蹤發現，具備社交互動的球拍類運動（如網球、羽毛球）不僅急性傷害率低，更能顯著延長壽命達 6 至 9.7 年。教你如何依年齡聰明選擇「高健康回報、低受傷風險」的黃金運動。',
+        image: '/images/news/article/sports-injury-longevity-analysis.webp',
+
+      },
+            {
+        slug: 'gender-differences-in-sports-injuries',
+        title: '男女運動傷害大不同！從解剖結構分析運動風險',
+        description: '從運動醫學與生物力學角度，深入剖析男女骨骼結構、Q角、關節韌帶鬆弛度及荷爾蒙對運動傷害的顯著影響。實證研究指出女性在垂直落地與急停轉向時，前十字韌帶（ACL）撕裂風險高出2至8倍，跑者膝盛行率更高出12倍；而男女肩關節的受傷模式亦截然不同。本文全面解析三大常見誤解，並提供客製化的核心預防訓練策略。',
+        image: '/images/news/article/gender-differences-sports-injuries.webp',
 
       },
       {
