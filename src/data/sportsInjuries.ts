@@ -305,6 +305,12 @@ export const sportsInjuriesData = [
         description: '深度剖析藍光保護貼、藍光眼鏡、濾藍光螢幕等產品的護眼效果。實證研究揭露這些產品對眼睛疲勞、睡眠品質與視網膜保護的真實功效，並提供科學預防數位眼疲勞的策略。',
         image: '/images/news/article/blue-light-protection-analysis.webp',
       },
+                              {
+        slug: 'childhood-myopia-prevention-control',
+        title: '近視全解析：戶外活動、散瞳劑，哪種控制近視方法最有效？',
+        description: '從實證運動與眼科醫學角度，深入剖析全球與台灣的近視公衛危機。打破「室內看遠」與「眼球按摩」的傳統迷思，透過最新統合分析與隨機對照試驗，完整評比戶外自然光照、低濃度阿托品散瞳劑、角膜塑型片（OK鏡）的真實保護效果與科學機制。',
+        image: '/images/news/article/myopia-prevention-analysis.webp',
+      },
 
 
 

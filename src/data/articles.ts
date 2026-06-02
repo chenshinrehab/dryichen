@@ -3,6 +3,559 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
 {
+  id: 'childhood-myopia-prevention-control',
+  title: '近視全解析：戶外活動、散瞳劑，哪種控制近視方法最有效？',
+  lastModified: '2026-06-02',
+  category: '衛教文章',
+  date: '2026-06-02',
+  summary: '從實證運動與眼科醫學角度，深入剖析全球與台灣的近視公衛危機。打破「室內看遠」與「眼球按摩」的傳統迷思，透過最新統合分析與隨機對照試驗，完整評比戶外自然光照、低濃度阿托品散瞳劑、角膜塑型片（OK鏡）的真實保護效果與科學機制。',
+  coverImage: '/images/news/article/myopia-prevention-analysis.webp',
+  seoTitle: '實證醫學全解析：戶外活動、散瞳劑與OK鏡，哪種近視控制方法最有效？',
+  seoDescription: '從實證眼科醫學角度剖析台灣兒童近視危機。結合最新臨床研究，評比戶外光照、低濃度阿托品、角膜塑型片（OK鏡）與眼球按摩的實證強度，助您掌握科學控度關鍵。',
+  keywords: [
+    '近視預防',
+    '近視控制',
+    '戶外活動120',
+    '阿托品眼藥水',
+    '低濃度散瞳劑',
+    '角膜塑型片',
+    'OK鏡',
+    '眼保健操',
+    '眼軸增長',
+    '多巴胺護眼'
+  ],
+    contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    「去看遠一點，眼睛才不會壞！」這句話你小時候一定聽過。事實上，爸媽說的並非無的放矢——大量科學研究證實，<strong>戶外活動時間</strong>是目前最有力的近視預防因子之一，關鍵不在於「看遠」，而在於戶外的自然光照。<br><br>
+    然而，近視已成為全球公衛危機，台灣更是世界近視盛行率最高的地區之一，小學生近視率高達三成以上。面對這場「近視大流行」，哪些方法真的有效？按摩穴位有用嗎？散瞳劑安全嗎？角膜塑型片又是什麼？本文將以實證醫學為基礎，用清楚易懂的語言，系統性地為你解答所有關於近視預防的疑問。
+    <sup><a href="#ref1" style="color: #0284c7;">[1]</a></sup><sup><a href="#ref2" style="color: #0284c7;">[2]</a></sup><sup><a href="#ref3" style="color: #0284c7;">[3]</a></sup>
+  </p>
+</div>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、近視是什麼？為什麼台灣孩子特別容易近視？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    近視是一種眼軸（眼球從前到後的長度）過長、導致光線落在視網膜前方而非正確焦點的屈光狀態。簡單來說，就是看遠方模糊、看近物清楚。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    台灣、韓國、中國、新加坡等東亞地區的近視盛行率在全球名列前茅。根據研究統計，<strong style="color: #2dd4bf;">全球近視盛行率已從 2000 年的約 22.9% 攀升至 2020 年的 34%，預估 2050 年將達 50%，影響近 50 億人口</strong>。
+    <sup><a href="#ref1" style="color: #2dd4bf;">[1]</a></sup>
+    更令人擔憂的是，台灣小學二年級學童的近視盛行率已達 36.4%，且近視發生時間有越來越早的趨勢。
+    <sup><a href="#ref4" style="color: #2dd4bf;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    近視不只是戴副眼鏡這麼簡單。<strong style="color: #ffffff;">高度近視（-6.00 屈光度以上）</strong>與視網膜剝離、青光眼、黃斑部病變等嚴重眼疾的風險顯著相關，是造成不可逆失明的重要原因。因此，從兒童時期就積極預防、延緩近視惡化，是保護一生視力的關鍵。
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 什麼原因造成近視？</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      近視的成因是遺傳與環境交互作用的結果。研究顯示，父母其中一方近視，子女近視風險增加約 1.66 倍；若父母雙方都近視，風險更高達 2.82 倍。
+      <sup><a href="#ref4" style="color: #0e7490;">[4]</a></sup>
+      但遺傳只是基礎，環境因素才是近幾十年來近視「大爆發」的主因——大量近距離用眼、戶外活動時間不足，是最主要的可改變危險因子。
+      <sup><a href="#ref5" style="color: #0e7490;">[5]</a></sup>
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、「看遠比較不會近視」——爸媽說的到底對不對？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這個問題的答案是：<strong style="color: #2dd4bf;">對了一半，但理由不太一樣。</strong>爸媽叫你去看遠，背後的核心概念是「去戶外、不要一直盯著書本或螢幕」，而這方向是正確的。但關鍵不是「眺望遠方」這個動作本身，而是戶外環境中的<strong style="color: #ffffff;">明亮自然光</strong>。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">戶外光線才是真正的護眼關鍵</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    科學研究發現，戶外光線的強度（通常超過 10,000 勒克斯，是室內光線的 10–100 倍）能刺激視網膜分泌多巴胺。多巴胺具有抑制眼軸拉長的作用，而眼軸拉長正是近視加深的結構性原因。
+    <sup><a href="#ref6" style="color: #2dd4bf;">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    超過七項系統性回顧研究彙整了逾 63,920 名兒童的資料，一致發現：<strong style="color: #ffffff;">戶外時間越多的孩子，近視的發生率與盛行率越低</strong>。
+    <sup><a href="#ref2" style="color: #2dd4bf;">[2]</a></sup>
+    更進一步的劑量分析顯示，每增加一小時的每日戶外時間，近視發生率可降低約 2%。
+    <sup><a href="#ref7" style="color: #2dd4bf;">[7]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    台灣政府也因此推行「天天戶外 120 分鐘」的校園政策，相關族群研究顯示，這項干預確實與近視盛行率的穩定甚至下降有所關聯。
+    <sup><a href="#ref1" style="color: #2dd4bf;">[1]</a></sup>
+    研究模型甚至估計，若能全面推行每天 2 小時戶外活動，到 2050 年中國兒童近視盛行率有望從預估的 71.9% 降至 14.4%。
+    <sup><a href="#ref8" style="color: #2dd4bf;">[8]</a></sup>
+  </p>
+ 
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 重要提醒：</strong>「在室內看遠」的效果遠不如「在戶外活動」。在光線昏暗的房間內望向窗外或注視遠處牆壁，並不能提供足以刺激多巴胺分泌的光照強度。真正的保護作用來自於走出戶外、沐浴在自然光中。
+    </p>
+  </div>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">戶外活動對「已近視」的孩子有效嗎？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這裡需要釐清一個重要的細節：<strong style="color: #ffffff;">增加戶外時間主要對「預防近視發生」效果顯著，但對「已近視者」延緩度數加深的效果，目前研究結果較為分歧。</strong>
+    <sup><a href="#ref9" style="color: #2dd4bf;">[9]</a></sup>
+    有研究指出，戶外活動似乎對非近視的學童保護作用更大，對已發生近視的孩子，戶外時間的增加未必能有效阻止度數持續進展。
+    <sup><a href="#ref10" style="color: #2dd4bf;">[10]</a></sup>
+    因此，預防「從無到有」比預防「從有到深」效果更明確——這也提醒我們，<strong>近視預防要越早開始越好。</strong>
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、哪些方法真的有效？近視控制方法完整評比
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">✅ 方法一：戶外活動（證據等級：強）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    如前所述，每天至少 <strong style="color: #ffffff;">80 至 120 分鐘</strong>的戶外時間，是目前實證等級最強、最安全、成本最低的近視預防策略。不需要特定活動，步行、玩耍、騎車均可——重要的是暴露在充足自然光下。
+    <sup><a href="#ref2" style="color: #2dd4bf;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    一項納入 219,802 名台灣非近視學童的大型追蹤研究發現，充足的戶外時間不僅單獨對近視有保護效果，更能減緩因大量近距離閱讀帶來的近視風險——兩者之間存在交互作用，增加戶外活動能「抵消」部分近距離用眼的危害。
+    <sup><a href="#ref3" style="color: #2dd4bf;">[3]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">✅ 方法二：低濃度散瞳劑（阿托品眼藥水）（證據等級：強）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    「散瞳劑」這個名字讓很多家長擔心，但其實用於控制近視的散瞳劑濃度（0.01%–0.05%）遠低於驗光時使用的高濃度散瞳劑（0.5%–1%），副作用相對輕微。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    2024 年的系統性回顧研究彙整了針對 644 名 4–12 歲「準近視」兒童的研究，發現低濃度阿托品（0.01%–0.05%）組別的近視發生風險顯著低於安慰劑組，且急速近視進展（每年惡化超過 0.5 度）也下降了約 50%。
+    <sup><a href="#ref11" style="color: #2dd4bf;">[11]</a></sup>
+    另一項 2026 年最新的統合分析（涵蓋 2017–2024 年的 9 項隨機對照試驗）也確認，0.01% 阿托品每年可減緩屈光度惡化約 +0.14D，同時使眼軸延長速度減少約 0.05 mm/年。
+    <sup><a href="#ref12" style="color: #2dd4bf;">[12]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    值得注意的是，<strong style="color: #ffffff;">濃度越高效果越強，但副作用（畏光、近距離視力模糊）也越明顯</strong>。目前亞洲兒童常用 0.025%–0.05% 濃度，須由眼科醫師評估後開立，不建議自行購買使用。
+    <sup><a href="#ref13" style="color: #2dd4bf;">[13]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">✅ 方法三：角膜塑型鏡片（OK 鏡）（證據等級：中至強）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    角膜塑型鏡片（簡稱 OK 鏡）是一種夜間配戴的硬式隱形眼鏡，透過改變角膜弧度來暫時矯正視力，並藉由周邊離焦效果抑制眼軸延長。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    一項 2024 年的研究彙整了三項前瞻性臨床試驗（125 名使用 OK 鏡、118 名對照組）的兩年追蹤數據，發現 OK 鏡組眼軸延長量（0.41 mm）顯著少於戴一般眼鏡組（0.65 mm），差距達 0.24 mm。
+    <sup><a href="#ref14" style="color: #2dd4bf;">[14]</a></sup>
+    更長期的 11 年追蹤研究顯示，累計眼軸延長量減少可達 0.69 mm，效果隨配戴時間增加而累積。
+    <sup><a href="#ref15" style="color: #2dd4bf;">[15]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    需注意的是，OK 鏡屬於醫療器材，需定期回診追蹤，也有感染風險（尤其是角膜炎），<strong style="color: #ffffff;">必須在眼科醫師的指導下配戴，並嚴格遵守清潔衛生規範。</strong>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">⚠️ 方法四：眼球按摩、穴位按壓（證據等級：弱）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    在華人社會中，眼球按摩操（尤其是中國大陸推行的「眼保健操」）有著幾十年的普及歷史，也是許多台灣家長直覺會嘗試的方法。然而，現有科學文獻給出的結論並不樂觀。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    一項 2024 年發表於 Eye 期刊的系統性回顧與統合分析，彙整了 11 項研究（921 名受試者），結果顯示眼球按摩運動對於預防近視或延緩近視進展的效果，<strong style="color: #ffffff;">統計上並無明顯優於未做按摩的對照組</strong>。
+    <sup><a href="#ref16" style="color: #2dd4bf;">[16]</a></sup>
+    研究者也指出，現有試驗品質偏低，許多研究存在偏誤風險。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    至於針灸、穴位按壓等傳統醫學方式，雖然在傳統理論中有調節氣血、放鬆眼肌的概念，但目前的科學證據品質尚不足以確認其能有效控制近視度數或眼軸長度的變化。
+    <sup><a href="#ref17" style="color: #2dd4bf;">[17]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <strong style="color: #ffffff;">結論：</strong>眼球按摩不會有害，可以作為放鬆眼睛疲勞的輔助方式，但不應期待它能取代戶外活動、散瞳劑或 OK 鏡等具有強力實證的干預手段。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">✅ 方法五：減少近距離用眼與螢幕時間（證據等級：中）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究顯示，每次近距離閱讀超過 30 分鐘、閱讀距離小於 30 公分，都是近視的危險因子。
+    <sup><a href="#ref5" style="color: #2dd4bf;">[5]</a></sup>
+    螢幕時間的影響較複雜——目前研究結果並不一致，部分學者認為螢幕本身的危害不亞於其他近距離用眼活動，更重要的機制可能是使用螢幕時排擠了戶外活動的時間。
+    <sup><a href="#ref1" style="color: #2dd4bf;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    實際建議：每近距離用眼 30 分鐘，休息 5–10 分鐘並望向遠方；閱讀距離保持 30 公分以上；使用螢幕時保持適當距離，並搭配充足的室內採光。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、近視控制方法比較總表
+  </h2>
+ 
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 750px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 160px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table { font-size: 14px; }
+    }
+  </style>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>方法</th>
+          <th>預防近視發生</th>
+          <th>延緩度數加深</th>
+          <th>證據強度</th>
+          <th>注意事項</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>每日戶外活動 ≥ 80–120 分鐘</td>
+          <td>效果顯著</td>
+          <td>效果有限（爭議中）</td>
+          <td>強</td>
+          <td>免費、安全，應作為第一線措施</td>
+        </tr>
+        <tr>
+          <td>低濃度阿托品散瞳劑（0.01%–0.05%）</td>
+          <td>有效（降低 38%）</td>
+          <td>有效</td>
+          <td>強</td>
+          <td>需醫師處方，高濃度副作用較多</td>
+        </tr>
+        <tr>
+          <td>角膜塑型鏡片（OK 鏡）</td>
+          <td>不適用（已有近視才使用）</td>
+          <td>有效（眼軸減少約 0.24 mm/2年）</td>
+          <td>中至強</td>
+          <td>需嚴格衛生規範，感染風險存在</td>
+        </tr>
+        <tr>
+          <td>減少近距離用眼、螢幕時間</td>
+          <td>有一定效果</td>
+          <td>間接幫助</td>
+          <td>中</td>
+          <td>需搭配其他措施，單獨效果有限</td>
+        </tr>
+        <tr>
+          <td>眼球按摩操、穴位按壓</td>
+          <td>無明顯效果</td>
+          <td>無明顯效果</td>
+          <td>弱</td>
+          <td>可輔助舒緩疲勞，但不能取代正規治療</td>
+        </tr>
+        <tr>
+          <td>周邊離焦眼鏡（多焦點鏡片）</td>
+          <td>尚待研究</td>
+          <td>部分有效</td>
+          <td>中</td>
+          <td>較傳統眼鏡效果好，需眼科評估配戴</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 五、常見三大迷思破解
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「在室內看遠就可以保護眼睛」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不正確！</strong> 保護效果來自戶外的強烈自然光（超過 10,000 勒克斯），室內光線（通常只有 200–500 勒克斯）遠不足以刺激視網膜分泌足量的多巴胺。在室內望向窗外的遠山，對近視預防幫助有限。<sup><a href="#ref6" style="color: #2563eb;">[6]</a></sup> 必須「走出去」才算數。</span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「散瞳劑很傷眼，長期點不好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度恐懼！</strong> 用於驗光的高濃度散瞳劑（0.5%–1%）確實會造成明顯畏光和視力模糊，但用於控制近視的低濃度製劑（0.01%–0.05%）副作用輕微得多。多項隨機對照試驗確認其安全性，且光敏感反應的發生率與安慰劑組相比無顯著差異。<sup><a href="#ref12" style="color: #2563eb;">[12]</a></sup> 在醫師評估下使用是安全的。</span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「孩子近視了，只要每天做眼保健操就可以控制」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不足夠！</strong> 中國大陸推行了數十年的眼保健操，在最新的系統性回顧中並未找到其能有效預防近視或控制度數加深的強力證據。<sup><a href="#ref16" style="color: #2563eb;">[16]</a></sup> 眼球按摩可作為舒緩疲勞的輔助，但不能取代已有確切實證的措施（戶外活動、散瞳劑、OK 鏡）。請勿讓孩子以為做了按摩操就可以放心繼續長時間盯螢幕。</span>
+        </div>
+      </li>
+ 
+    </ul>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、什麼時候該帶孩子去看眼科？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多家長等到孩子「看不清黑板」才帶去驗光，但這往往已是近視發生一段時間後了。以下情況建議盡早就診：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">父母雙方或一方有近視：</strong>孩子屬於高風險族群，建議從幼稚園起定期追蹤視力</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">孩子習慣瞇眼看東西、靠近螢幕或書本：</strong>可能已有視力問題</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">抱怨眼睛痠、頭痛、看遠不清楚：</strong>需要正式驗光評估</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">已確診近視，每年度數增加超過 75–100 度：</strong>屬快速進展，應與醫師討論積極控制策略</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    一般建議，<strong style="color: #ffffff;">6 歲以上學齡兒童每半年進行一次眼科追蹤</strong>（包含睫狀肌麻痺後的精確驗光）。近視度數越高、進展越快，追蹤頻率應越密集。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">👁️</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：近視可以逆轉嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      目前的近視控制措施（包含散瞳劑和 OK 鏡）的目的是「減緩進展」，而非「治癒」。成年後眼球發育趨於穩定，度數自然進展會放慢；若希望不再依賴眼鏡，雷射手術（如 LASIK）是另一個成年後的選項，但屬矯正非預防。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：看電視或手機是近視的主因嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      不完全是。研究指出，東亞地區近視率的快速上升在智慧型手機普及之前就已發生，因此螢幕本身不是唯一罪魁禍首。更核心的問題是「近距離用眼時間增加」加上「戶外時間減少」，兩者疊加才造成近視大流行。管控螢幕時間有其意義，但更重要的是確保每天有充足的戶外活動。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：散瞳劑要點多久才有效果？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      效果通常需要持續使用才能維持。研究中多以 1–2 年為觀察期，部分研究顯示停藥後可能有「反彈效應」（度數短暫加速惡化），因此通常建議在近視進展最快速的學齡期持續使用，直到醫師評估可以停藥。停藥的時機和方式需與眼科醫師討論。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：陰天或多雲的時候出去也有效嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      有一定效果。陰天戶外光線仍然遠高於室內（通常 1,000–10,000 勒克斯），雖不如晴天理想，但仍優於待在室內。重要的是，研究顯示保護效果並不僅僅來自視覺上的「看遠」，而是光照強度本身，所以即使天色不佳，外出活動仍比待在室內來得好。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：都市孩子是不是比鄉下孩子更容易近視？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      整體而言是的。都市兒童平均戶外活動時間較少、學業壓力較高、近距離用眼活動更多。台北市的研究確實發現，都市地區學童的近視盛行率高於郊區，這反映的是生活型態差異，而非地理本身的直接影響。這也提醒我們，即使是都市孩子，只要能創造充足的戶外時間，依然能降低近視風險。
+    </p>
+ 
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+ 
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    爸媽叫你去看遠，出發點是對的，背後的科學道理也是真實的——只不過重點不在於「眺望遠方」這個動作，而在於「走出去、曬太陽」。近視的預防，從來不是一招就能解決的事，需要多管齊下：每天累積足夠的戶外活動時間、適時減少近距離用眼、必要時在醫師指導下使用散瞳劑或 OK 鏡。
+  </p><br>
+ 
+  <p style="color: #475569; font-size: 1.05rem;">
+    眼球按摩和穴位按壓不是壞事，但別把它當成萬靈丹。最重要的是，<strong style="color: #1e293b;">不要等孩子「看不清楚了」才採取行動</strong>——定期追蹤視力，早期發現、早期介入，才是保護孩子一生視力最有效的策略。
+  </p>
+ 
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 今天就開始：讓孩子每天至少在戶外活動 80 分鐘、減少連續近距離用眼超過 30 分鐘，並預約眼科進行完整的視力評估。
+    </p>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+ 
+    <li id="ref1" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        IMI 2025 Digest – Myopia Institute (2026). International Myopia Institute White Paper 2025. Time outdoors remains the most reliable protective factor; Taiwan outdoor activity policies associated with prevalence stabilization.
+        <a href="https://myopiainstitute.org/imi-whitepaper/imi-2025-digest/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+ 
+    <li id="ref2" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Dhakal, R., Shah, R., Huntjens, B., Verkicharla, P.K., & Lawrenson, J.G. (2022). Time spent outdoors as an intervention for myopia prevention and control in children: an overview of systematic reviews. <em>Ophthalmic and Physiological Optics</em>, 42(3), 545–558.
+        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9305934/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9305934</a>
+      </span>
+    </li>
+ 
+    <li id="ref3" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Tianjin Child and Adolescent Research of Eye (TICARE) Study Group (2025). Combined and interaction effects of outdoor and reading time on myopia onset: evidence from over 210,000 schoolchildren in China. <em>BMJ Open</em>.
+        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12512000/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12512000</a>
+      </span>
+    </li>
+ 
+    <li id="ref4" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Chang, H.C., et al. (2016). Prevalence and risk factors for myopia in second-grade primary school children in Taipei: A population-based study. <em>Journal of the Formosan Medical Association</em>, 115(7), 507–517.
+        <a href="https://www.sciencedirect.com/science/article/pii/S1726490116300788" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.jfma.2015.12.008</a>
+      </span>
+    </li>
+ 
+    <li id="ref5" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lanca, C., & Saw, S.M. (2023). Risk Factors for Myopia: A Review. <em>Journal of Clinical Medicine</em>, 12(19), 6178.
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10532298/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10532298</a>
+      </span>
+    </li>
+ 
+    <li id="ref6" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        French, A.N., Ashby, R.S., Morgan, I.G., & Rose, K.A. (2013). Time outdoors and the prevention of myopia. <em>Experimental Eye Research</em>, 114, 58–68.
+        <a href="https://researchportalplus.anu.edu.au/en/publications/time-outdoors-and-the-prevention-of-myopia/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.exer.2013.02.018</a>
+      </span>
+    </li>
+ 
+    <li id="ref7" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Al-Joufi, H., et al. (2023). Correlation between Screen Time, Outdoor Activity, and Myopia Progression in Urban School-aged Children: A Concise Review. <em>Journal of Neonatal Surgery</em>, 14(10s), 1061–1070. [Each additional hour of daily outdoor time associated with 2% reduction in myopia incidence, RR: 0.98]
+        <a href="https://www.jneonatalsurg.com/index.php/jns/article/download/8410/7406/26987" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+ 
+    <li id="ref8" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Zhao, J., et al. (2025). Prevalence and temporal trends in myopia and high myopia children in China: a systematic review and meta-analysis with projections from 2020 to 2050. <em>The Lancet Regional Health – Western Pacific</em>.
+        <a href="https://www.thelancet.com/journals/lanwpc/article/PIIS2666-6065(25)00021-5/fulltext" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.lanwpc.2025.101310</a>
+      </span>
+    </li>
+ 
+    <li id="ref9" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Li, D., Min, S., & Li, X. (2024). Is Spending More Time Outdoors Able to Prevent and Control Myopia in Children and Adolescents? A Meta-Analysis. <em>Ophthalmic Research</em>, 67(1), 393–404. [Outdoor time prevents onset but does not clearly slow progression in already-myopic eyes]
+        <a href="https://karger.com/ore/article/67/1/393/906983/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1159/000539229</a>
+      </span>
+    </li>
+ 
+    <li id="ref10" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        He, X., et al. (2022). Time Outdoors in Reducing Myopia [cluster-randomized intervention trial]. <em>Ophthalmology</em>.
+        <a href="https://www.aaojournal.org/article/S0161-6420(22)00483-3/fulltext" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.ophtha.2022.06.017</a>
+      </span>
+    </li>
+ 
+    <li id="ref11" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Liao, X., et al. (2024). Efficacy and Safety of Low-Dose Atropine on Myopia Prevention in Premyopic Children: Systematic Review and Meta-Analysis. <em>Journal of Clinical Medicine</em>, 13(5), 1506.
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10932201/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10932201</a>
+      </span>
+    </li>
+ 
+    <li id="ref12" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Magurno, L., Lang, M., Zapata, M., & Gallo, J.E. (2026). Low-dose atropine for myopia progression in children: a 2017–2024 systematic review and meta-analysis of randomized placebo-controlled trials. <em>Frontiers in Medicine</em>.
+        <a href="https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2026.1715033/full" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3389/fmed.2026.1715033</a>
+      </span>
+    </li>
+ 
+    <li id="ref13" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Wang, Z., et al. (2024). Effectiveness of various atropine concentrations in myopia control for Asian children: a network meta-analysis. <em>Frontiers in Pharmacology</em>.
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11683068/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11683068</a>
+      </span>
+    </li>
+ 
+    <li id="ref14" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Santodomingo-Rubido, J., Cheung, S.W., &amp; Villa-Collar, C.; ROMIO/MCOS/TO-SEE Groups (2024). A new look at the myopia control efficacy of orthokeratology. <em>Contact Lens and Anterior Eye</em>, 102251.
+        <a href="https://www.contactlensjournal.com/article/S1367-0484(24)00143-7/fulltext" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.clae.2024.102251</a>
+      </span>
+    </li>
+ 
+    <li id="ref15" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Santodomingo-Rubido, J., et al. (2025). Eleven years of orthokeratology contact lens wear for slowing myopia progression in children. <em>Optometry and Vision Science</em>.
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12101883/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12101883</a>
+      </span>
+    </li>
+ 
+    <li id="ref16" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Cui, D., et al. (2024). Eye exercises for myopia prevention and control: a comprehensive systematic review and meta-analysis of controlled trials. <em>Eye (London)</em>, 38(3), 473–480.
+        <a href="https://pubmed.ncbi.nlm.nih.gov/37740051/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 37740051</a>
+      </span>
+    </li>
+ 
+    <li id="ref17" style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Yu, Z., Wang, X., Zhao, X., Li, D., & Duan, J. (2020). The effectiveness and safety of acupuncture for patients with myopia: A protocol for a systematic review and meta-analysis. <em>Medicine</em>, 99(23), e20410.
+        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7306361/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7306361</a>
+      </span>
+    </li>
+ 
+  </ol>
+</div>
+ 
+   ` 
+},
+
+{
   id: 'blue-light-protection-analysis',
   title: '藍光保護貼、藍光眼鏡、濾藍光螢幕：真的能保護眼睛嗎？',
   lastModified: '2026-06-01',
@@ -4548,8 +5101,8 @@ id: 'caffeine-safety-and-myths',
 <div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
   <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
   <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-    每年學校健康檢查，不少家長接到通知，說孩子「蹲踞困難」，需要到診所進一步評估。「蹲踞」這個動作，需要腳踝、膝蓋、髖關節三個部位同時配合，任何一個環節受限，小朋友就會蹲不下去或蹲姿明顯異常。最常見的原因是<strong>跟腱（阿基里斯腱）過緊</strong>造成腳踝背屈受限，其次是<strong>扁平足</strong>合併跟腱攣縮、<strong>髖關節發育問題</strong>，以及少見的<strong>股骨過度前傾</strong>。研究指出，台灣每1,000名新生兒中約有1-2位有髖關節發育不良問題。
-    <sup>[1]</sup><br><br>
+    每年學校健康檢查，不少家長接到通知，說孩子「蹲踞困難」，需要到診所進一步評估。「蹲踞」這個動作，需要腳踝、膝蓋、髖關節三個部位同時配合，任何一個環節受限，小朋友就會蹲不下去或蹲姿明顯異常。最常見的原因是<strong>跟腱（阿基里斯腱）過緊</strong>造成腳踝背屈受限，其次是<strong>扁平足</strong>合併跟腱攣縮、<strong>髖關節發育問題</strong>，以及少見的<strong>股骨過度前傾</strong>，青蛙肢也是原因之一，但現今醫療習慣改變、少用臀部肌肉注射，發生青蛙肢的比例已大幅下降。研究指出，台灣每1,000名新生兒中約有1-2位有髖關節發育不良問題。
+    <sup><a href="https://cmuch.cmu.edu.tw/NewsInfo/NewsArticle?no=622" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup><br><br>
     大多數兒童的蹲踞困難是可以改善的，關鍵在於及早評估、找出原因，並搭配適合的伸展運動或治療。本文以淺白易懂的方式，幫助家長理解為什麼小孩會蹲踞困難，以及下一步該怎麼做。
   </p>
 </div>
@@ -4651,6 +5204,21 @@ id: 'caffeine-safety-and-myths',
     <li style="margin-bottom: 0.5rem;">喜歡W型跪坐（雙膝向外、雙腳向後展開坐著）</li>
     <li style="margin-bottom: 0.5rem;">跑步時容易絆倒</li>
     <li style="margin-bottom: 0.5rem;">蹲踞時膝蓋向內夾</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">原因五：青蛙肢（臀大肌攣縮症）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    「青蛙肢」在醫學上稱為臀大肌攣縮症，主要是因為臀部肌肉或筋膜發生纖維化，導致肌肉失去原有的彈性與伸展度。這種情況多數與過去臀部重覆接受肌肉注射（俗稱打針）有關，過去醫療較不發達時，許多孩童因為生病頻繁在臀部接受肌肉注射（打針），導致臀部組織纖維化。現代因為醫療習慣改變、少用肌肉注射，新一代發生青蛙肢的比例已大幅下降。。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    由於臀部肌群無法正常拉長，患者在雙腿併攏時，髖關節無法順利彎曲，因此會出現無法併攏下蹲的現象。若勉強蹲下，雙腿必須無意識地向外張開，呈現類似青蛙跳躍的姿勢，因而得名。這是一種典型的結構性限制，通常需要透過物理治療或手術放鬆攣縮的組織來改善。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">常見表現：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">雙腿併攏時無法下蹲，腳跟會不由自主離地</li>
+    <li style="margin-bottom: 0.5rem;">下蹲時雙膝必須往外張開（呈青蛙肢勢）</li>
+    <li style="margin-bottom: 0.5rem;">坐姿時無法自然蹺二郎腿（無法將一側腳踝放到另一側膝蓋上）</li>
+    <li style="margin-bottom: 0.5rem;">走路或跑步時，髖關節活動顯得較為僵硬</li>
   </ul>
 </section>
  
@@ -4755,11 +5323,11 @@ id: 'caffeine-safety-and-myths',
           <td>多數隨年齡改善</td>
         </tr>
         <tr>
-          <td>神經肌肉問題（如腦性麻痺）</td>
-          <td>全身性肌肉張力異常</td>
-          <td>嬰幼兒起</td>
-          <td>全身性動作發展遲緩</td>
-          <td>需長期復健</td>
+          <td>青蛙肢</td>
+          <td>臀大肌攣縮症</td>
+          <td>現代少見</td>
+          <td>不能蹺腳，蹲下腿往外開</td>
+          <td>物理治療或手術放鬆</td>
         </tr>
       </tbody>
     </table>
