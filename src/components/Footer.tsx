@@ -61,14 +61,12 @@ export default function Footer() {
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 px-2 max-w-6xl mx-auto">
                 
-                {/* 1. 關於我們 */}
-                <Link href="/about" className="animate-on-scroll delay-100 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
-                  <Image 
+               {/* 1. 關於我們 */}
+                <Link href="/about" className="animate-on-scroll delay-100 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block">
+                  <img
                     src="/images/icons/a.webp" 
                     alt="關於我們 - 宸新復健科" 
-                    fill
-                    sizes="(max-width: 768px) 50vw, 25vw"
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-3">
                       <span className="text-white font-bold text-sm md:text-base group-hover:text-cyan-400 transition-colors relative z-10">關於我們</span>
@@ -76,13 +74,11 @@ export default function Footer() {
                 </Link>
 
                 {/* 2. 治療方式 */}
-                <Link href="/treatments" className="animate-on-scroll delay-200 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
-                  <Image 
+                <Link href="/treatments" className="animate-on-scroll delay-200 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block">
+                  <img
                     src="/images/icons/b.webp" 
                     alt="治療方式 - PRP與震波" 
-                    fill
-                    sizes="(max-width: 768px) 50vw, 25vw"
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-3">
                         <span className="text-white font-bold text-sm md:text-base group-hover:text-cyan-400 transition-colors relative z-10">治療方式</span>
@@ -90,13 +86,11 @@ export default function Footer() {
                 </Link>
 
                 {/* 3. 減重與骨齡 */}
-                <Link href="/weight-bone" className="animate-on-scroll delay-300 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
-                  <Image 
+                <Link href="/weight-bone" className="animate-on-scroll delay-300 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block">
+                  <img
                     src="/images/icons/e.webp" 
                     alt="特色門診" 
-                    fill
-                    sizes="(max-width: 768px) 50vw, 25vw"
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-3">
                         <span className="text-white font-bold text-sm md:text-base group-hover:text-cyan-400 transition-colors relative z-10">特色門診</span>
@@ -104,13 +98,11 @@ export default function Footer() {
                 </Link>
 
                 {/* 4. 疾病衛教 */}
-                <Link href="/diseases" className="animate-on-scroll delay-400 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
-                  <Image 
+                <Link href="/diseases" className="animate-on-scroll delay-400 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block">
+                  <img
                     src="/images/icons/d.webp" 
                     alt="疾病衛教文章" 
-                    fill
-                    sizes="(max-width: 768px) 50vw, 25vw"
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-3">
                         <span className="text-white font-bold text-sm md:text-base group-hover:text-cyan-400 transition-colors relative z-10">疾病衛教</span>

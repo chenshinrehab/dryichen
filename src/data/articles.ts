@@ -3,6 +3,538 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
 {
+id: 'pain-medication-combination-safety',
+  title: '止痛藥解析：止痛藥、肌肉鬆弛劑、胃藥，為什麼醫師一起開？',
+  lastModified: '2026-06-03',
+  category: '衛教文章',
+  date: '2026-06-03',
+  summary: '從臨床醫學與實證研究出發，深入剖析急性骨骼肌肉疼痛時，為何醫師會同時處方止痛藥（NSAIDs）、肌肉鬆弛劑與胃藥。一次看懂藥物協同作用原理、正確使用安全觀念，並全面破解「傷腎、肌肉變軟、普拿疼多吃沒關係」等三大常見用藥迷思。',
+  coverImage: '/images/news/article/pain-medication-combination.webp',
+  seoTitle: '三藥並用全解析：止痛藥、肌肉鬆弛劑、胃藥，為什麼醫師總是一起開？',
+  seoDescription: '從臨床醫學與實證研究出發，深入剖析急性骨骼肌肉疼痛時，為何醫師會同時處方止痛藥（NSAIDs）、肌肉鬆弛劑與胃藥。一次看懂藥物協同作用原理、正確使用安全觀念，並全面破解「傷腎、肌肉變軟、普拿疼多吃沒關係」等三大常見用藥迷思。',
+  keywords: [
+    '止痛藥',
+    '肌肉鬆弛劑',
+    '質子幫浦抑制劑',
+    '胃藥',
+    '非類固醇消炎藥',
+    'NSAIDs',
+    '急性腰背痛',
+    '普拿疼過量',
+    '肌肉痙攣',
+    '用藥安全'
+  ],
+    contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    疼痛是許多民眾就醫的首要原因，醫師在處方止痛藥時，常會同時搭配肌肉鬆弛劑。原因在於疼痛往往不是單一機轉：發炎造成疼痛，肌肉的反射性痙攣（保護性收縮）也會加劇疼痛。止痛藥主要針對發炎與疼痛訊號，肌肉鬆弛劑則抑制過度活化的肌肉，兩者從不同層面協同緩解症狀。<br><br>
+    研究顯示，NSAID（非類固醇消炎藥）合併肌肉鬆弛劑的組合療法，對急性腰背痛的短期疼痛緩解與功能改善，優於單一藥物治療。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12733800/" target="_blank" rel="noopener noreferrer">[1]</a></sup>
+    然而，NSAID 抑制了胃黏膜的保護性前列腺素，因此若需持續或長期使用，臨床指引強烈建議合併使用胃藥以預防消化道潰瘍與出血。
+    <sup><a href="https://journals.lww.com/ajg/fulltext/2009/03000/guidelines_for_prevention_of_nsaid_related_ulcer.35.aspx" target="_blank" rel="noopener noreferrer">[2]</a></sup>
+    本文以民眾易懂的語言，從醫學角度系統說明止痛藥、肌肉鬆弛劑與胃藥的作用原理、種類及安全使用觀念。
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、為什麼疼痛要同時用止痛藥和肌肉鬆弛劑？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    想像一下，你閃到了腰——腰部的椎間盤或韌帶受到刺激，產生發炎反應，這是疼痛的第一個來源。但你的身體並不會就此罷手，它會啟動一個「保護機制」：讓受傷部位周圍的肌肉用力收縮，試圖固定患部不讓它亂動。這個肌肉的反射性痙攣，反而成為疼痛的第二個來源，甚至讓疼痛越來越嚴重，形成一個「痛→肌肉緊繃→更痛」的惡性循環。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <strong style="color: #2dd4bf;">止痛藥主要負責第一條路——打斷疼痛訊號與發炎反應；肌肉鬆弛劑則負責第二條路——鬆開緊繃的肌肉。</strong>
+    兩者分頭進行，才能更全面地緩解症狀。這正是為什麼醫師在面對頸部痠痛、腰背疼痛、肌肉拉傷等問題時，往往選擇兩藥並用。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    2025 年一項針對急性腰背痛的研究指出，同時使用 NSAID（非類固醇消炎藥）與肌肉鬆弛劑，其疼痛緩解效果顯著優於單獨使用 NSAID。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12733800/" target="_blank" rel="noopener noreferrer">[1]</a></sup>
+    另有 2025 年的研究亦確認，NSAID 搭配肌肉鬆弛劑的組合對急性骨骼肌肉疼痛具安全且有效的緩解作用。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12733800/" target="_blank" rel="noopener noreferrer">[1]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、止痛藥有哪些？各有什麼作用？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    「止痛藥」不是一個單一藥物，而是一大類藥物的統稱，作用機轉各有不同。以下為最常見的幾大類：
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 非類固醇消炎藥（NSAIDs）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是臨床上最常開立的止痛藥之一，包含大家耳熟能詳的<strong style="color: #ffffff;">布洛芬（Ibuprofen）、Diclofenac、Naproxen</strong>等。其作用是抑制體內的環氧酶（COX），進而減少前列腺素的合成。前列腺素是造成發炎、腫脹與疼痛的關鍵物質，因此 NSAIDs 能同時達到<strong style="color: #ffffff;">消炎、止痛、退燒</strong>三大效果。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK547742/" target="_blank" rel="noopener noreferrer">[3]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    需注意的是，NSAIDs 也因為抑制了保護胃黏膜的前列腺素（COX-1 路徑），因此長期或大量使用可能傷胃，甚至引起消化道潰瘍與出血。這正是醫師常同時開胃藥的原因（後段會詳述）。
+    <sup><a href="https://www.gastrojournal.org/article/S0016-5085(17)36666-0/fulltext" target="_blank" rel="noopener noreferrer">[4]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 COX-2 選擇性抑制劑（較新型 NSAID）</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      為了降低傳統 NSAID 的胃腸副作用，藥廠開發了選擇性只抑制 COX-2 的藥物，代表藥物為<strong>西樂葆（Celecoxib）</strong>。COX-2 主要在發炎時被誘導，而 COX-1 則負責保護胃黏膜。選擇性 COX-2 抑制劑止痛效果相近，但對胃黏膜的傷害較小。然而，COX-2 抑制劑可能增加心血管風險，因此有心臟病史的民眾需特別謹慎。
+      <sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK547742/" target="_blank" rel="noopener noreferrer">[3]</a></sup>
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 普拿疼（Acetaminophen）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    普拿疼是另一大類常見止痛藥，其作用機轉與 NSAIDs 不同。目前研究認為，普拿疼主要透過中樞神經系統發揮止痛與退燒效果，可能部分透過抑制中樞的 COX 酵素（尤其是 COX-3）來降低大腦的疼痛感知與體溫調控。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8287062/" target="_blank" rel="noopener noreferrer">[5]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">關鍵差異：</strong>普拿疼幾乎不影響胃黏膜保護機制，因此對胃的刺激性比 NSAIDs 小得多，也不具明顯抗發炎效果。然而，若過量服用（成人每日超過 4 公克），可能造成<strong style="color: #ffffff;">肝臟損傷</strong>，飲酒者更需特別注意。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">3. 弱效鴉片類藥物（如舒痛停 Tramadol）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    對於 NSAIDs 效果不足的中度疼痛，醫師有時會開立弱效鴉片類藥物，如<strong style="color: #ffffff;">舒痛停（Tramadol）</strong>。此類藥物作用於腦中的鴉片受體（opioid receptor），同時也抑制神經傳導物質血清素與正腎上腺素的再回收，進而降低疼痛感。副作用包含噁心、頭暈、便秘，且有一定的依賴性風險，因此通常在其他止痛藥效果不佳時才使用。
+  </p>
+
+  <style>
+    .custom-table-container { width: 100%; overflow-x: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+    .modern-table { width: 100%; border-collapse: collapse; font-family: "PingFang TC","Heiti TC","Microsoft JhengHei",sans-serif; font-size: 15px; background-color: #ffffff; color: #1f2937; min-width: 700px; }
+    .modern-table thead tr { background-color: #1e3a8a; color: #ffffff; text-align: left; font-weight: bold; }
+    .modern-table th { padding: 16px 12px; border-bottom: 2px solid #111827; letter-spacing: 0.5px; }
+    .modern-table td { padding: 14px 12px; border-bottom: 1px solid #e5e7eb; line-height: 1.6; }
+    .modern-table td:first-child { background-color: #f9fafb; font-weight: 600; color: #111827; width: 130px; }
+    .modern-table tbody tr:nth-of-type(even) { background-color: #f3f4f6; }
+    .modern-table tbody tr:hover { background-color: #e0e7ff; transition: background-color 0.2s ease; }
+    @media (max-width: 600px) { .modern-table { font-size: 14px; } }
+  </style>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin: 2rem 0 1rem;">止痛藥種類快速比較表</h3>
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>藥物種類</th>
+          <th>代表藥物</th>
+          <th>主要作用</th>
+          <th>消炎效果</th>
+          <th>主要副作用</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>NSAIDs（傳統型）</td>
+          <td>Ibuprofen、Diclofenac、Naproxen</td>
+          <td>抑制 COX-1/2，減少前列腺素</td>
+          <td>✅ 強</td>
+          <td>胃腸刺激、潰瘍風險</td>
+        </tr>
+        <tr>
+          <td>COX-2 選擇性抑制劑</td>
+          <td>Celecoxib（西樂葆）</td>
+          <td>選擇性抑制 COX-2</td>
+          <td>✅ 強</td>
+          <td>心血管風險較高</td>
+        </tr>
+        <tr>
+          <td>乙醯胺酚</td>
+          <td>Paracetamol（普拿疼）</td>
+          <td>中樞鎮痛、退燒</td>
+          <td>❌ 弱</td>
+          <td>過量傷肝</td>
+        </tr>
+        <tr>
+          <td>弱效鴉片類</td>
+          <td>Tramadol（曲馬多）</td>
+          <td>作用於中樞鴉片受體</td>
+          <td>❌ 無</td>
+          <td>噁心、頭暈、成癮風險</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、肌肉鬆弛劑有哪些種類？各有什麼作用？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    「肌肉鬆弛劑」其實不是讓肌肉「完全放鬆」的藥，它是透過抑制神經系統對肌肉的過度指令，來緩解不正常的肌肉痙攣與僵硬。臨床上主要分為<strong style="color: #2dd4bf;">兩大類</strong>：
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">類型一：抗痙攣型——骨骼肌肉疾患的常用選擇</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這類藥物主要用於急性肌肉痙攣，例如腰背痛、頸椎病變等。它們作用在大腦與脊髓的中樞神經系統，透過降低神經對肌肉的過度刺激，來打破「疼痛→痙攣→更痛」的惡性循環。常見藥物包含：
+    <sup><a href="https://www.aafp.org/pubs/afp/issues/2008/0801/p365.html" target="_blank" rel="noopener noreferrer">[6]</a></sup>
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">服樂適（Cyclobenzaprine）：</strong>結構類似三環抗憂鬱藥，主要作用在腦幹，抑制運動神經元的過度活化。是台灣臨床上使用非常普遍的抗痙攣藥物，通常建議短期使用（2至4週）。主要副作用為嗜睡、口乾、頭暈。
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">鬆得樂（Tizanidine）：</strong>作用為 α₂ 腎上腺素受體致效劑，在脊髓層面抑制興奮性神經元的活動，降低肌肉張力。兼具抗痙攣與抗痙直性雙重效果，副作用同樣包含嗜睡、低血壓、口乾。
+      <sup><a href="https://www.sciencedirect.com/science/article/pii/S0885392404002155" target="_blank" rel="noopener noreferrer">[7]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">舒肉筋新/舒可樂（Chlorzoxazone）：</strong>在台灣常見的肌肉鬆弛劑，作用於中樞神經，減少多突觸反射，降低肌肉痙攣。
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">煩寧/樂平（Diazepam）：</strong>透過增強 GABA（抑制性神經傳導物質）的作用，達到肌肉放鬆與鎮靜效果。因有依賴性與鎮靜風險，一般不作為肌肉鬆弛的首選，通常只在其他藥物無效或需要同時處理焦慮症狀時使用。
+    </li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">類型二：抗痙直型——神經疾患的選擇</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這類藥物主要用於因神經系統疾病（如中風後遺症、腦性麻痺、多發性硬化症）引起的肌肉痙直（即肌肉持續性過度僵硬），而<strong style="color: #ffffff;">不適用於一般骨骼肌肉疼痛</strong>。
+    <sup><a href="https://www.aafp.org/pubs/afp/issues/2008/0801/p365.html" target="_blank" rel="noopener noreferrer">[6]</a></sup>
+    代表藥物包含：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">倍鬆（Baclofen）：</strong>作用於脊髓的 GABA-B 受體，抑制單突觸與多突觸反射，是治療痙直狀態最常用的藥物之一。
+      <sup><a href="https://www.sciencedirect.com/science/article/pii/S0885392404002155" target="_blank" rel="noopener noreferrer">[7]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong style="color: #ffffff;">丹曲林（Dantrolene）：</strong>直接作用在肌肉細胞的肌漿網，抑制鈣離子釋放，減少肌肉收縮力。是唯一真正在「周邊」（肌肉本身）發揮作用的肌肉鬆弛劑，也因此有傷肝的潛在風險。
+    </li>
+  </ul>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床重點</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      一般因為腰痛、頸痛、肌肉拉傷就診所開立的肌肉鬆弛劑，屬於<strong>抗痙攣型</strong>。抗痙直型主要用於神經科領域，若你因為腰背痛而拿到這類藥物，建議與醫師確認用藥目的。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、止痛藥和肌肉鬆弛劑可以一起吃嗎？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是許多民眾心中最直接的疑問。<strong style="color: #2dd4bf;">簡短的回答是：在醫師指示下，通常可以合併使用，而且針對急性肌肉骨骼疼痛，聯合使用的效果往往優於單一用藥。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    由於 NSAIDs 針對發炎，肌肉鬆弛劑針對痙攣，兩者作用機轉互補、不重疊，因此合併使用在藥理上是合理的。大型隨機對照試驗的結果支持，在急性腰背痛的情境下，NSAID 合併肌肉鬆弛劑組合，短期止痛效果顯著優於 NSAID 單獨使用。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12733800/" target="_blank" rel="noopener noreferrer">[1]</a></sup>
+  </p>
+
+  <div style="background-color: #fffbeb; border: 1px solid #fbbf24; border-radius: 0.5rem; padding: 1.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #92400e; font-weight: bold;">⚠️ 合併使用需注意的事項</h4>
+    <ul style="color: #92400e; padding-left: 1.5rem; line-height: 1.8; margin-bottom: 0;">
+      <li style="margin-bottom: 0.5rem;"><strong>嗜睡加乘：</strong>肌肉鬆弛劑（尤其是服樂適、煩寧）有中樞神經抑制效果，服用期間不應開車或操作機械。</li>
+      <li style="margin-bottom: 0.5rem;"><strong>避免與酒精並用：</strong>肌肉鬆弛劑合併酒精可能加重中樞抑制效果，出現過度鎮靜或呼吸抑制的風險。</li>
+      <li style="margin-bottom: 0.5rem;"><strong>短期使用原則：</strong>肌肉鬆弛劑建議短期使用（通常 2 至 4 週），長期使用效果可能下降，且有依賴性疑慮（尤其煩寧）。<sup><a href="https://www.mypcnow.org/fast-fact/skeletal-muscle-relaxants/" target="_blank" rel="noopener noreferrer">[8]</a></sup></li>
+      <li style="margin-bottom: 0.5rem;"><strong>老年人需特別謹慎：</strong>多種肌肉鬆弛劑（如服樂適、煩寧）在老年人身上可能增加跌倒、認知混亂的風險，應盡量避免或由醫師謹慎評估。</li>
+    </ul>
+  </div>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    值得注意的是，也有部分研究顯示，某些特定組合（如 ibuprofen + cyclobenzaprine）的效果並不優於單獨使用 NSAID，因此是否需要合併肌肉鬆弛劑，最好由醫師根據你的症狀與身體狀況個別判斷。
+    <sup><a href="https://www.singlecare.com/blog/muscle-relaxer-with-ibuprofen/" target="_blank" rel="noopener noreferrer">[9]</a></sup>
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、我沒有胃痛，為什麼醫師還要開胃藥？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這個問題可能是最多民眾感到疑惑的地方。答案其實是——<strong style="color: #2dd4bf;">「預防」，而不是「治療」，醫師開胃要給你應該要好好感謝你的醫生。</strong>更重要的是，研究顯示，高達 60% 會因 NSAIDs 發生消化性潰瘍的病人，<strong style="color: #2dd4bf;">事先並無任何胃部症狀！</strong>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1783737/" target="_blank" rel="noopener noreferrer">[10]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">NSAIDs 為什麼會傷胃？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    胃黏膜必須保護自己不被胃酸腐蝕，這有賴於一層由前列腺素所維持的防護屏障——包含分泌黏液、碳酸氫根離子，以及維持胃黏膜血流。NSAIDs 在抑制 COX-1 時，同時減少了這些保護性前列腺素的合成，等於是「撤掉了胃的防護盾」。一旦防護下降，胃酸就可能侵蝕胃壁，導致潰瘍、出血。
+    <sup><a href="https://journals.physiology.org/doi/full/10.1152/physrev.00004.2008" target="_blank" rel="noopener noreferrer">[11]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    根據研究估計，長期使用 NSAIDs 者，發生潰瘍相關併發症的風險約增加 4 倍。
+    <sup><a href="https://www.gastrojournal.org/article/S0016-5085(17)36666-0/fulltext" target="_blank" rel="noopener noreferrer">[4]</a></sup>
+    而且正如前面提到的，約有六成的潰瘍患者事先並沒有胃部不適的症狀——這正是為什麼醫師會「預防性」地開立胃藥，而不是等你叫胃痛才處理。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">醫師開的「胃藥」是什麼？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    最常被用來搭配 NSAIDs 使用的保護性胃藥，是<strong style="color: #ffffff;">質子幫浦抑制劑</strong>。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    作用是直接抑制胃壁細胞上的「質子幫浦」，阻斷胃酸分泌的最後一步，從而大幅降低胃酸濃度，讓受損的胃黏膜有機會修復，並防止潰瘍發生。
+    <sup><a href="https://www.cghjournal.org/article/S1542-3565(09)00230-4/fulltext" target="_blank" rel="noopener noreferrer">[12]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    美國腸胃病學會（ACG）的臨床指引明確建議，高風險族群（包含 65 歲以上、有潰瘍病史、同時使用阿斯匹靈或類固醇者）在使用 NSAIDs 時，應同時使用胃藥進行胃腸道保護。
+    <sup><a href="https://journals.lww.com/ajg/fulltext/2009/03000/guidelines_for_prevention_of_nsaid_related_ulcer.35.aspx" target="_blank" rel="noopener noreferrer">[2]</a></sup>
+    研究顯示，每日一次標準劑量的胃藥，可使消化道出血風險降低高達 90%。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1783737/" target="_blank" rel="noopener noreferrer">[10]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      許多民眾認為「沒有胃痛就不需要胃藥」，這個觀念其實非常危險。就像沒有胸痛不代表沒有心臟病一樣，NSAID 引起的胃潰瘍往往在沒有明顯症狀的情況下悄悄進展，直到發生出血或穿孔才被發現。因此，醫師根據你的用藥狀況與風險因素預防性開立胃藥，是完全合理且有充分醫學依據的，一起開胃藥給你的醫師才是真的為你身體著想的醫生喔。
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin: 2rem 0 1rem;">哪些人更需要搭配胃藥？</h3>
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>高風險因素</th>
+          <th>說明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>年齡 ≥ 65 歲</td>
+          <td>胃黏膜再生能力下降，潰瘍風險增加</td>
+        </tr>
+        <tr>
+          <td>有潰瘍或消化道出血病史</td>
+          <td>舊傷部位再次受損風險高</td>
+        </tr>
+        <tr>
+          <td>同時使用阿斯匹靈或抗凝血藥</td>
+          <td>出血風險加乘</td>
+        </tr>
+        <tr>
+          <td>同時使用類固醇</td>
+          <td>進一步抑制黏膜修復</td>
+        </tr>
+        <tr>
+          <td>需要長期使用 NSAIDs</td>
+          <td>累積性損傷風險增加</td>
+        </tr>
+        <tr>
+          <td>幽門螺旋桿菌感染</td>
+          <td>協同傷胃效果</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 六、常見三大用藥迷思解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 0.9rem; font-weight: bold;">1</span>
+        <div>
+          <strong>「止痛藥吃多了會傷腎，還是不要吃比較好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度擔心！</strong>短期、適量的 NSAIDs 對腎功能正常的人影響極小。確實，NSAIDs 透過影響腎臟的前列腺素，在腎功能異常或脫水狀態下，可能引起腎功能下降。<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK547742/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[3]</a></sup> 但若因此拒絕使用而讓急性疼痛持續，反而可能讓肌肉痙攣惡化、影響休息與復原。請遵醫囑、足量飲水，並告知醫師你的腎功能狀況，讓醫師個別評估。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 0.9rem; font-weight: bold;">2</span>
+        <div>
+          <strong>「肌肉鬆弛劑會讓肌肉變軟，我就這樣吃下去，可以一直輕鬆」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤認知！</strong>肌肉鬆弛劑是用來打斷疼痛引起的「異常」肌肉痙攣，而不是讓正常肌肉萎縮或長期變軟。它是輔助你在急性期減輕不適、讓身體進行物理治療或休息的工具。長期持續服用不僅效果遞減，<sup><a href="https://www.mypcnow.org/fast-fact/skeletal-muscle-relaxants/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[8]</a></sup> 且有依賴性風險。根本解決之道仍是找出疼痛原因，配合復健、姿勢調整等治療。</span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 0.9rem; font-weight: bold;">3</span>
+        <div>
+          <strong>「普拿疼比較溫和，可以多吃幾顆沒關係」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>非常危險！</strong>乙醯胺酚（普拿疼）確實對胃的刺激比 NSAIDs 小，但它的安全劑量上限非常明確：成人每日不超過 4 公克（一般建議健康成人每日上限 3 公克），超量時會造成嚴重肝毒性，甚至急性肝衰竭。<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8287062/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[5]</a></sup> 習慣飲酒者的安全劑量更低，更需謹慎。「溫和」不等於「多吃沒事」。</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">💊</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：止痛藥和肌肉鬆弛劑要同時吃，還是分開吃？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      通常可以同時服用，因為兩者作用機轉不同。部分醫師會建議隨餐服用（尤其 NSAIDs 需餐後吞服以減少胃刺激），肌肉鬆弛劑因為有嗜睡副作用，有時會建議睡前服用。最重要的是遵照醫師或藥師的指示。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：胃藥要吃多久？止痛藥停了就可以停胃藥嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      原則上，胃藥的使用期間應與 NSAIDs 的使用期間一致。當 NSAIDs 停藥後，胃黏膜保護性前列腺素可逐漸恢復，胃藥通常可隨之停用。但若有其他胃部疾病（如胃食道逆流、幽門螺旋桿菌感染等），則需另行處理。請與醫師確認。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：開了三種藥（止痛藥、肌肉鬆弛劑、胃藥），是醫師在「亂開藥」嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      恰恰相反，這三種藥各有明確的臨床依據：止痛藥處理發炎與疼痛、肌肉鬆弛劑緩解痙攣、胃藥保護胃黏膜免受 NSAIDs 傷害。這是符合國際臨床指引的標準治療組合，不是「多開藥」，而是「針對不同問題各自處理」的精準用藥。<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12733800/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[1]</a></sup>
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：服用肌肉鬆弛劑後很想睡，是正常的嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      是的，這是最常見的副作用之一，因為大多數抗痙攣型肌肉鬆弛劑都具有中樞神經抑制效果。服藥期間務必避免開車、操作危險機械。若嗜睡程度嚴重影響日常功能，可回診告知醫師調整劑量或更換藥物。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：痛了就自行買 NSAIDs 吃，需要擔心嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      短期（3至5天）、低劑量、餐後服用的 NSAIDs 對大多數健康成年人相對安全。但若有慢性腎臟病、心血管疾病、消化道潰瘍病史，或需要長期使用，強烈建議就醫評估，由醫師決定最適合的藥物與保護措施。切勿因疼痛反覆而自行增加劑量或頻率。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    止痛藥、肌肉鬆弛劑與胃藥的三藥組合，看似複雜，其實背後有清晰的醫學邏輯：疼痛是多層面的問題，需要多層面的解方。NSAIDs 止痛消炎、肌肉鬆弛劑解除痙攣、胃藥保護胃黏膜——三者環環相扣，缺一可能讓治療效果大打折扣，甚至留下潛在的副作用風險。
+  </p><br>
+
+  <p style="color: #475569; font-size: 1.05rem;">
+    最重要的是，<strong style="color: #1e293b;">「藥物只是工具，找到疼痛的根本原因才是關鍵」。</strong>如果你持續需要服用止痛藥來維持日常生活，代表你的身體正在發出警訊，建議積極就醫評估，配合物理治療、姿勢改善或其他介入，才能真正從疼痛中走出來。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：若你正在服用醫師開立的止痛藥組合，請按時服用、餐後吞服 NSAIDs，並注意有無異常症狀（如解黑便、嚴重腹痛）。若有疑問，不要自行停藥，請回診告知醫師討論最適合你的用藥計畫。
+    </p>
+  </div>
+
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診評估
+    </a>
+  </div>
+</div>
+
+  `,
+  referencesHtml: `
+
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Rodrigues L.M.R., et al. (2025). Efficacy and safety of a fixed-dose combination of diclofenac and thiocolchicoside in acute low back pain: A randomized controlled trial. <em>PMC</em>. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12733800/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12733800</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lanza, F.L., Chan, F.K.L., & Quigley, E.M.M. (2009). Guidelines for Prevention of NSAID-Related Ulcer Complications. <em>American Journal of Gastroenterology, 104</em>(3), 728–738. <a href="https://journals.lww.com/ajg/fulltext/2009/03000/guidelines_for_prevention_of_nsaid_related_ulcer.35.aspx" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">ACG Guidelines</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Bindu, S., Mazumder, S., & Bandyopadhyay, U. (2023). Non-steroidal anti-inflammatory drugs (NSAIDs) and organ damage: A current perspective. <em>StatPearls, NCBI Bookshelf</em>. <a href="https://www.ncbi.nlm.nih.gov/books/NBK547742/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">NBK547742</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Sostres, C., Gargallo, C.J., & Lanas, A. (2017). Mechanisms of Damage to the Gastrointestinal Tract From Nonsteroidal Anti-Inflammatory Drugs. <em>Gastroenterology, 154</em>(3), 500–514. <a href="https://www.gastrojournal.org/article/S0016-5085(17)36666-0/fulltext" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1053/j.gastro.2017.09.047</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Esh, C.J., Chrismas, B.C.R., Mauger, A.R., & Taylor, L. (2021). Pharmacological hypotheses: Is acetaminophen selective in its cyclooxygenase inhibition? <em>Pharmacology Research &amp; Perspectives, 9</em>(4), e835. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8287062/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8287062</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        See, S., & Ginzburg, R. (2008). Choosing a Skeletal Muscle Relaxant. <em>American Family Physician, 78</em>(3), 365–370. <a href="https://www.aafp.org/pubs/afp/issues/2008/0801/p365.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">AAFP Web Link</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Chou, R., Peterson, K., & Helfand, M. (2004). Comparative efficacy and safety of skeletal muscle relaxants for spasticity and musculoskeletal conditions: a systematic review. <em>Journal of Pain and Symptom Management, 28</em>(2), 140–175. <a href="https://www.sciencedirect.com/science/article/pii/S0885392404002155" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.jpainsymman.2004.05.002</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Palliative Care Network of Wisconsin. (2025). Skeletal Muscle Relaxants — Fast Facts and Concepts. <a href="https://www.mypcnow.org/fast-fact/skeletal-muscle-relaxants/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Sison, G. (2024). Can you take a muscle relaxer with ibuprofen? <em>SingleCare</em>. <a href="https://www.singlecare.com/blog/muscle-relaxer-with-ibuprofen/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Targownik, L.E., & Lix, L.M. (2007). Gastroprotective strategies among NSAID users: Guidelines for appropriate use in chronic illness. <em>Journal of Multidisciplinary Healthcare</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1783737/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 1783737</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Wallace, J.L. (2008). Prostaglandins, NSAIDs, and Gastric Mucosal Protection: Why Doesn't the Stomach Digest Itself? <em>Physiological Reviews, 88</em>(4), 1547–1565. <a href="https://journals.physiology.org/doi/full/10.1152/physrev.00004.2008" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1152/physrev.00004.2008</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Bhatt, D.L., Scheiman, J., Abraham, N.S., et al. (2008). ACCF/ACG/AHA 2008 Expert Consensus Document on Reducing the Gastrointestinal Risks of Antiplatelet Therapy and NSAID Use. <em>Circulation, 118</em>, 1894–1909. <a href="https://www.cghjournal.org/article/S1542-3565(09)00230-4/fulltext" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">CGH Journal</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Fitriantoro, S., & Soedaly, B. (2025). Comparison of NSAID monotherapy vs. NSAID combined with muscle relaxant for low back pain. <em>Magna Neurologica, 3</em>(1), 28–35. <a href="https://journal.uns.ac.id/index.php/magna-neurologica/article/download/1145/1118" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Surgical Critical Care. (2017). Muscle Relaxants in Multimodal Pain Management. <em>Surgical Critical Care Guidelines</em>. <a href="https://www.surgicalcriticalcare.net/Guidelines/Muscle%20Relaxants%202017.pdf" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PDF Guidelines</a>
+      </span>
+    </li>
+
+  </ol>
+</div>
+ 
+   ` 
+},
+
+{
   id: 'childhood-myopia-prevention-control',
   title: '近視全解析：戶外活動、散瞳劑，哪種控制近視方法最有效？',
   lastModified: '2026-06-02',
