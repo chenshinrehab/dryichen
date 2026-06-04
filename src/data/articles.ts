@@ -1,6 +1,1285 @@
 import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
+{
+id: 'prp-vs-hyaluronic-acid-injection',
+  title: '自費針劑這麼多種，PRP、玻尿酸、葡萄糖，該如何挑選？如何挑選適合的醫生跟診所',
+  lastModified: '2026-06-04',
+  category: '衛教文章',
+  date: '2026-06-04',
+  summary: '面對PRP、玻尿酸、羊膜增生療法等多元自費針劑，民眾往往感到困惑。本文從運動醫學實證出發，深入剖析各類增生療法的機制、合理費用區間與健保給付現況。並教你如何透過「超音波導引注射」與「客製化血小板濃度」兩大關鍵指標，看懂專業診所的品質差異，選對最適合自己的精準再生醫療療程。',
+  coverImage: '/images/news/article/prp-hyaluronic-acid-injection-guide.webp',
+  seoTitle: 'PRP、玻尿酸、羊膜注射怎麼選？費用、功效與超音波導引增生療法全解析 | 宸新復健科診所',
+  seoDescription: '自費PRP、玻尿酸、羊膜增生療法費用與功效完整比較！由復健科專科角度說明膝關節退化與軟組織損傷的注射選擇。解析PRP健保為何不給付、單次合理價格，以及如何利用超音波導引注射提升精準度。內附選擇診所的五大問題清單。',
+  keywords: [
+    'PRP增生療法',
+    '高濃度血小板血漿',
+    '玻尿酸注射',
+    '羊膜增生療法',
+    '超音波導引注射',
+    '自費針劑費用',
+    '膝關節退化治療',
+    '肌腱修復',
+    '低白血球PRP',
+    '宸新復健科'
+  ],
+    contentHtml: `
+<div style="background-color:#f8fafc;border-left:4px solid #0284c7;padding:1.5rem;margin-bottom:2rem;border-radius:0.5rem;">
+  <h2 style="margin-top:0;color:#0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom:0;line-height:1.6;color:#334155;">
+    自費注射治療在現代復健科與骨科門診日益普及，面對PRP（高濃度血小板血漿）、玻尿酸、高濃度葡萄糖和羊膜增生療法等多元選項，民眾往往感到困惑。本文從醫學實證出發，說明各類針劑的作用機制、臨床適應症與差異，並解釋為何PRP目前無法納入健保給付、費用的合理區間，以及如何透過「超音波導引注射」與「適當血小板濃度」兩大指標評估診所品質。<br><br>
+    研究顯示，PRP注射在膝關節退化性疾病的疼痛與功能改善上，中長期效果優於傳統玻尿酸注射，但效果受到製備方式、濃度、施打部位精準度等多項因素影響。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12596915/" target="_blank" rel="noopener noreferrer">[1]</a></sup>
+    選對診所與醫師，往往比選擇哪種針劑更為關鍵。
+    <sup><a href="https://www.sciencedirect.com/science/article/pii/S2666061X21000377" target="_blank" rel="noopener noreferrer">[2]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12027823/" target="_blank" rel="noopener noreferrer">[3]</a></sup>
+  </p>
+</div>
+ 
+<hr style="margin:3rem 0;border-top:1px solid #e2e8f0;">
+ 
+<!-- 一、什麼是PRP -->
+<section style="margin-bottom:3.5rem;">
+  <h2 style="font-size:1.75rem;font-weight:bold;color:#ffffff;margin-bottom:1.5rem;">
+    一、PRP是什麼？為什麼越來越多人選擇自費注射？
+  </h2>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1.5rem;">
+    許多患者在門診聽到「自費針劑」時，第一個反應往往是：<strong style="color:#2dd4bf;">「這跟健保給的注射有什麼不同？值得花這個錢嗎？」</strong>
+  </p>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1.5rem;">
+    PRP（Platelet-Rich Plasma，高濃度血小板血漿）是一種從患者自身血液萃取的再生醫療製劑。簡單說，醫師先從手臂抽取約10至60毫升的血液，放入離心機分層後，取出血小板濃度高於正常血液4至8倍的部分，再注射回疼痛或受傷的組織部位。
+  </p>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1.5rem;">
+    血小板本身含有多種<strong style="color:#ffffff;">生長因子</strong>，這些物質能夠啟動組織修復的自然機制——促進膠原蛋白合成、軟骨細胞增殖，並抑制慢性發炎。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12596915/" target="_blank" rel="noopener noreferrer">[1]</a></sup>
+  </p>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1.5rem;">
+    PRP的廣受歡迎，部分原因來自職業運動員的推廣——老虎伍茲、柯比布萊恩、Stephen Curry都曾接受PRP治療。但在媒體光環之外，更重要的是：近年來有愈來愈多嚴謹的文獻研究支持其在特定適應症上的臨床效益。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12596915/" target="_blank" rel="noopener noreferrer">[1]</a></sup>
+  </p>
+ 
+  <div style="background-color:#f0f9ff;padding:1.5rem;border-left:4px solid #0891b2;border-radius:0.5rem;margin:1.5rem 0;">
+    <h4 style="margin-top:0;color:#0e7490;font-weight:bold;font-size:1.15rem;margin-bottom:0.5rem;">💡 常見適應症</h4>
+    <p style="margin-bottom:0;color:#334155;line-height:1.6;font-size:1.05rem;">
+      目前PRP臨床上最常用於：膝關節退化（骨關節炎）、網球肘（外側上髁炎）、高爾夫球肘、旋轉肌腱病變、跟腱病變、足底筋膜炎、慢性韌帶損傷，以及椎間盤退化等各類肌肉骨骼疼痛問題。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin:3rem 0;border-top:1px solid #e2e8f0;">
+ 
+<!-- 二、PRP費用 -->
+<section style="margin-bottom:3.5rem;">
+  <h2 style="font-size:1.75rem;font-weight:bold;color:#ffffff;margin-bottom:1.5rem;">
+    二、PRP注射費用：一針多少錢？影響價格的因素是什麼？
+  </h2>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1.5rem;">
+    PRP目前在台灣屬於全自費治療，單次注射費用大約落在 <strong style="color:#ffffff;">NT$15,000 至 NT$20,000</strong> 之間，視診所地點、設備、醫師資歷與使用的PRP製備系統而定。以宸新復健科為例，單次PRP注射費用為15,000元。
+    <sup><a href="https://www.wegetcare.tw/post/prp-injection-treatment" target="_blank" rel="noopener noreferrer">[4]</a></sup>
+  </p>
+ 
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1rem;">影響PRP費用的主要因素包括：</p>
+  <ul style="color:#cbd5e1;list-style-type:disc;padding-left:1.5rem;line-height:1.7;font-size:1.1rem;margin-bottom:2rem;">
+    <li style="margin-bottom:0.75rem;">
+      <strong style="color:#ffffff;">使用的離心套組品牌：</strong>國際大廠的單次耗材成本較高，可提供更穩定的血小板濃度與白血球控制，終端價格相對較貴。
+    </li>
+    <li style="margin-bottom:0.75rem;">
+      <strong style="color:#ffffff;">是否搭配超音波導引：</strong>超音波導引設備的購置與維護成本高，提供此服務的診所通常定價較高，但精準度與安全性也大幅提升。
+      <sup><a href="https://www.sciencedirect.com/science/article/pii/S2666061X21000377" target="_blank" rel="noopener noreferrer">[2]</a></sup>
+    </li>
+    <li style="margin-bottom:0.75rem;">
+      <strong style="color:#ffffff;">注射部位與複雜度：</strong>關節內注射（如膝關節）與淺層肌腱注射的技術難度不同，複雜部位（如髖關節、椎間盤）費用較高。
+    </li>
+    <li style="margin-bottom:0.75rem;">
+      <strong style="color:#ffffff;">療程次數：</strong>研究顯示，多次注射的累積效果明顯優於單次注射，整體療程通常建議1至3次，每次間隔4週左右。
+      <sup><a href="https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1678037/full" target="_blank" rel="noopener noreferrer">[5]</a></sup>
+    </li>
+  </ul>
+ 
+  <div style="background-color:#fff7ed;border:1px solid #fed7aa;padding:16px;border-radius:8px;margin-bottom:24px;">
+    <p style="color:#9a3412;font-size:1rem;line-height:1.6;margin:0;">
+      <strong>⚠️ 注意：「便宜的PRP」不一定划算</strong><br><br>
+      部分診所以較低價格（NT$8,000以下）吸引患者，但背後可能使用自製的非標準化分離方式，血小板濃度無法確保，或未搭配超音波確認注射位置。研究指出，血小板劑量不足（低於每次35億顆）可能導致療效顯著下降。
+      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12027823/" target="_blank" rel="noopener noreferrer">[3]</a></sup>
+      選擇PRP，應以「品質保證」為優先，而非單純比較價格。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin:3rem 0;border-top:1px solid #e2e8f0;">
+
+
+
+<section style="margin-bottom:3.5rem;">
+  <h2 style="font-size:1.75rem;font-weight:bold;color:#ffffff;margin-bottom:1.5rem;">
+    三、PRP跟類固醇有什麼不同？類固醇打完就不痛了，PRP卻更痛?
+  </h2>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1.5rem;">
+    當關節炎急性發作、痛到無法行走時，許多患者會到診所施打「消炎針」（即局部類固醇注射）。這與 PRP 的再生療法正好處於醫學光譜的兩端：一個是快速抑制發炎，另一個則是主動促進修復。
+  </p>
+
+  <h3 style="font-size:1.4rem;font-weight:bold;color:#ffffff;margin-bottom:1rem;">局部類固醇注射</h3>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1rem;">
+    類固醇是強效的抗發炎藥物。在關節腔內注射類固醇，能以極快的速度<strong style="color:#ffffff;">切斷急性發炎反應</strong>，通常在注射後 24 至 72 小時內就能顯著減輕疼痛。
+  </p>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1.5rem;">
+    然而，類固醇的作用在於「壓制發炎」，其止痛效果一般只能維持 1 至 2 個月。醫學研究更指出，長期或頻繁注射類固醇會抑制軟骨細胞的蛋白質合成，反而引發骨質流失、加速關節軟骨的退化。因此，臨床上通常限制同一個關節一年內不得注射超過 3 至 4 次。
+  </p>
+
+  <h3 style="font-size:1.4rem;font-weight:bold;color:#ffffff;margin-bottom:1rem;">PRP 與類固醇的核心差異</h3>
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>比較項目</th>
+          <th>類固醇注射</th>
+          <th>PRP（高濃度血小板血漿）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>主要作用</td>
+          <td>強效消炎、快速止痛（壓制症狀）</td>
+          <td>刺激組織再生、長期修復功能</td>
+        </tr>
+        <tr>
+          <td>發效速度</td>
+          <td>極快（約1–3天內見效）</td>
+          <td>較慢（約2–4週隨組織修復而漸進改善）</td>
+        </tr>
+        <tr>
+          <td>效果持續時間</td>
+          <td>短期（約4–8週，隨藥效代謝而消失）</td>
+          <td>中長期（約6–12個月以上）</td>
+        </tr>
+        <tr>
+          <td>對軟骨與組織影響</td>
+          <td>具潛在毒性，頻繁注射會加速軟骨退化</td>
+          <td>保護軟骨細胞，促進膠原蛋白再生</td>
+        </tr>
+
+        <tr>
+          <td>主要副作用風險</td>
+          <td>皮膚萎縮、色素沉澱、血糖短暫升高、反覆施打加速退化</td>
+          <td>極低（自體材料，僅注射當下或數日內短暫酸脹）</td>
+        </tr>
+        <tr>
+          <td>適合族群</td>
+          <td>急性發炎積水、劇烈疼痛需立即緩解、預算有限者</td>
+          <td>慢性退化性關節炎、尋求長期功能改善、不想破壞關節軟骨者</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-top:1.5rem;margin-bottom:1rem;">
+    根據多項臨床研究的長期追蹤顯示，雖然類固醇在注射後的前 2 到 4 週止痛效果略優於 PRP，但在<strong style="color:#ffffff;">第 12 週、半年、至一年後</strong>的追蹤評估中，PRP不論在疼痛減輕或關節功能改善上，皆顯著優於類固醇。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7735334/" target="_blank" rel="noopener noreferrer">[10]</a></sup>
+  </p>
+
+  <div style="background-color:#f0f9ff;padding:1.5rem;border-left:4px solid #0891b2;border-radius:0.5rem;margin:1.5rem 0;">
+    <h4 style="margin-top:0;color:#0e7490;font-weight:bold;font-size:1.15rem;margin-bottom:0.5rem;">💡 臨床觀點</h4>
+    <p style="margin-bottom:0;color:#334155;line-height:1.6;font-size:1.05rem;">
+      許多人將類固醇視為「毒藥」，其實這並不客觀。當關節嚴重急性發炎、嚴重積水，甚至讓人痛到無法睡眠時，適度給予低劑量的局部類固醇注射，能像「滅火器」一樣迅速控制災情，避免關節持續遭到發炎酵素破壞。正確的做法是：在急性期使用類固醇滅火，待急性期過後、發炎緩解時，再考慮透過 PRP 進行長期的組織修復。千萬不可將類固醇當成常規的保健止痛藥反覆施打。
+    </p>
+  </div>
+</section>
+
+<hr style="margin:3rem 0;border-top:1px solid #e2e8f0;">
+
+
+<!-- 四、PRP vs 玻尿酸 -->
+<section style="margin-bottom:3.5rem;">
+  <h2 style="font-size:1.75rem;font-weight:bold;color:#ffffff;margin-bottom:1.5rem;">
+    四、PRP跟玻尿酸差別在哪裡？我該選哪一種？
+  </h2>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1.5rem;">
+    這是門診最常被問到的問題之一。兩者都是關節腔內注射，但作用機制和效果截然不同。
+  </p>
+ 
+  <h3 style="font-size:1.4rem;font-weight:bold;color:#ffffff;margin-bottom:1rem;">玻尿酸（Hyaluronic Acid, HA）注射</h3>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1rem;">
+    玻尿酸是關節液的天然成分，具有潤滑和緩衝功能。注射玻尿酸的目的是<strong style="color:#ffffff;">補充關節液的黏彈性</strong>——當退化關節的玻尿酸分子量降低、濃度不足時，補充外源性玻尿酸可以暫時恢復潤滑效果。
+  </p>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1.5rem;">
+    玻尿酸的效果通常在注射後2至4週開始出現，持續效果約3至6個月。它的優點是：安全性高、副作用少、健保部分給付。缺點是：屬於「症狀緩解」而非「組織修復」，對關節軟骨本身的退化沒有根本性的改變作用。
+  </p>
+ 
+  <h3 style="font-size:1.4rem;font-weight:bold;color:#ffffff;margin-bottom:1rem;">PRP注射</h3>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1rem;">
+    PRP的核心差異在於：它不只是潤滑，更是<strong style="color:#ffffff;">主動啟動組織修復的生物製劑</strong>。PRP內含的大量生長因子能夠促進軟骨細胞增殖、抑制發炎細胞因子，並刺激膠原蛋白再生。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12596915/" target="_blank" rel="noopener noreferrer">[1]</a></sup>
+  </p>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1.5rem;">
+    2024年的系統性回顧研究比較了PRP與玻尿酸的療效，結論指出PRP在注射後6個月與12個月的疼痛減輕與功能改善上，均優於玻尿酸注射，且這種優勢在中期（6至24個月）更為顯著。
+    <sup><a href="https://orthopedicreviews.openmedicalpublishing.org/article/94236-a-comparison-of-intra-articular-hyaluronic-acid-and-platelet-rich-plasma-for-knee-osteoarthritis-a-systematic-review" target="_blank" rel="noopener noreferrer">[7]</a></sup>
+  </p>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>比較項目</th>
+          <th>玻尿酸（HA）</th>
+          <th>PRP（高濃度血小板血漿）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>作用機制</td>
+          <td>潤滑關節液、暫時緩衝</td>
+          <td>生長因子啟動組織修復</td>
+        </tr>
+        <tr>
+          <td>來源</td>
+          <td>外源性（非自體）</td>
+          <td>自體血液萃取</td>
+        </tr>
+        <tr>
+          <td>效果持續</td>
+          <td>約3–6個月</td>
+          <td>約6–12個月以上</td>
+        </tr>
+        <tr>
+          <td>對軟骨退化</td>
+          <td>潤滑緩解，無修復作用</td>
+          <td>有助於抑制退化、促進軟骨修復</td>
+        </tr>
+        <tr>
+          <td>健保給付</td>
+          <td>部分給付（符合條件）</td>
+          <td>全自費</td>
+        </tr>
+        <tr>
+          <td>費用（單次）</td>
+          <td>自費約1,600–8,000元</td>
+          <td>約15,000–20,000元</td>
+        </tr>
+        <tr>
+          <td>副作用</td>
+          <td>極低（偶有短暫腫脹）</td>
+          <td>極低（自體材料，偶有注射後輕微酸脹）</td>
+        </tr>
+        <tr>
+          <td>適合族群</td>
+          <td>輕度退化、初次嘗試注射</td>
+          <td>中度退化、玻尿酸效果不佳、尋求較長效改善者</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-top:1.5rem;margin-bottom:1rem;">
+    此外，有研究進一步顯示，PRP與玻尿酸<strong style="color:#ffffff;">合併注射</strong>的效果在疼痛分數與功能分數上，優於任一單獨注射，提示兩者可能有協同作用。
+    <sup><a href="https://www.sciencedirect.com/science/article/pii/S2773157X25000062" target="_blank" rel="noopener noreferrer">[8]</a></sup>
+    但這種組合療法的成本也更高，適合與醫師詳細討論評估。
+  </p>
+</section>
+ 
+<hr style="margin:3rem 0;border-top:1px solid #e2e8f0;">
+ 
+<!-- 五、PRP vs 羊膜增生療法 -->
+<section style="margin-bottom:3.5rem;">
+  <h2 style="font-size:1.75rem;font-weight:bold;color:#ffffff;margin-bottom:1.5rem;">
+    五、PRP跟羊膜增生療法哪個好？
+  </h2>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1.5rem;">
+    近年來，「羊膜增生療法」在台灣也逐漸受到關注，部分診所以此作為比PRP更高階的再生醫療選項行銷。讓我們用醫學角度來客觀分析。
+  </p>
+ 
+  <h3 style="font-size:1.4rem;font-weight:bold;color:#ffffff;margin-bottom:1rem;">羊膜增生療法是什麼？</h3>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1rem;">
+    羊膜是胎盤最內層的薄膜，從捐贈者的剖腹產胎盤取得，經過脫水、微粉化處理後製成可注射的粉末形式。羊膜組織富含：天然玻尿酸、蛋白多醣、抗發炎因子，以及可吸引間葉幹細胞的分子訊號。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11611701/" target="_blank" rel="noopener noreferrer">[9]</a></sup>
+  </p>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1.5rem;">
+    理論上，羊膜注射能夠同時提供潤滑、抗發炎與再生訊號，功能層面較玻尿酸更廣。部分回顧型研究也顯示，羊膜注射在運動員軟組織損傷的恢復時間上有正面效果。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11611701/" target="_blank" rel="noopener noreferrer">[9]</a></sup>
+  </p>
+ 
+  <h3 style="font-size:1.4rem;font-weight:bold;color:#ffffff;margin-bottom:1rem;">PRP與羊膜療法的核心差異</h3>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>比較項目</th>
+          <th>PRP（自體血小板血漿）</th>
+          <th>羊膜增生療法（AMI）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>來源</td>
+          <td>自體（同一人血液）</td>
+          <td>異體（捐贈者胎盤）</td>
+        </tr>
+        <tr>
+          <td>主要成分</td>
+          <td>生長因子、血小板</td>
+          <td>天然HA、蛋白多醣、抗發炎因子</td>
+        </tr>
+        <tr>
+          <td>臨床研究數量</td>
+          <td>豐富（數百項RCT）</td>
+          <td>有限（多為觀察性或回顧性研究）</td>
+        </tr>
+        <tr>
+          <td>感染/排斥風險</td>
+          <td>幾乎無（自體）</td>
+          <td>極低（需嚴格滅菌處理，理論上存在異體反應風險）</td>
+        </tr>
+        <tr>
+          <td>費用</td>
+          <td>約15,000–20,000元</td>
+          <td>約20,000–40,000元（因廠牌而異）</td>
+        </tr>
+        <tr>
+          <td>證據等級</td>
+          <td>中至高（多項Level I RCT）</td>
+          <td>低至中（多為Level III–IV研究）</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-top:1.5rem;margin-bottom:1rem;">
+    <strong style="color:#ffffff;">醫師的建議：</strong>目前就臨床實證的豐富度與強度而言，PRP仍遠優於羊膜療法。羊膜療法缺乏足夠的大型隨機對照試驗，無法確定其在各適應症上的標準化療效。
+  </p>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1.5rem;">
+    羊膜療法適合考慮的情況：PRP多次治療效果不佳、患者因某些血液疾病無法製備有效PRP，或特定肌腱損傷需要更強的抗發炎加上潤滑效果時。但這些情況需要個案討論，而非將羊膜療法當作「高階升級版PRP」進行常規推廣。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11611701/" target="_blank" rel="noopener noreferrer">[9]</a></sup>
+  </p>
+ 
+  <div style="background-color:#f0f9ff;padding:1.5rem;border-left:4px solid #0891b2;border-radius:0.5rem;margin:1.5rem 0;">
+    <h4 style="margin-top:0;color:#0e7490;font-weight:bold;font-size:1.15rem;margin-bottom:0.5rem;">💡 臨床觀點</h4>
+    <p style="margin-bottom:0;color:#334155;line-height:1.6;font-size:1.05rem;">
+      在門診中，有些患者會因為診所說「羊膜是幹細胞療法」而感到心動。需要釐清的是：市面上用於注射的羊膜製劑，在滅菌與脫水處理後，其中的活體細胞幾乎不存在。它的作用主要來自細胞外基質成分與生物活性分子，而非「活體幹細胞」。誇大宣傳應審慎看待。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin:3rem 0;border-top:1px solid #e2e8f0;">
+ 
+<!-- 六、如何評估診所 -->
+<section style="margin-bottom:3.5rem;">
+  <h2 style="font-size:1.75rem;font-weight:bold;color:#ffffff;margin-bottom:1.5rem;">
+    六、如何評估PRP診所怎麼挑？兩大關鍵指標
+  </h2>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1.5rem;">
+    面對市場上各式各樣的PRP診所，民眾最難判斷的問題是：<strong style="color:#2dd4bf;">「我怎麼知道這家診所打的PRP有效？醫師夠專業嗎？」</strong>
+  </p>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1.5rem;">
+    以下兩項指標是最實用的評估標準：
+  </p>
+ 
+  <h3 style="font-size:1.4rem;font-weight:bold;color:#ffffff;margin-bottom:1rem;">關鍵指標一：超音波導引注射（Ultrasound-Guided Injection）</h3>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1rem;">
+    注射PRP的精準度，直接決定治療效果。傳統的「盲打」（依靠解剖位置觸診）方式存在相當高的誤差率——研究顯示，未使用影像導引的膝關節注射，有約 <strong style="color:#ffffff;">20% 的機率</strong> 無法準確打入目標位置。
+    <sup><a href="https://www.sciencedirect.com/science/article/pii/S2666061X21000377" target="_blank" rel="noopener noreferrer">[2]</a></sup>
+  </p>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1rem;">
+  高品質研究結論明確指出：
+    <strong style="color:#ffffff;">超音波導引注射在所有解剖入路的精準度均優於盲打，且超音波引導的關節內注射可以提供顯著更好的疼痛緩解與功能改善。</strong>
+    <sup><a href="https://www.sciencedirect.com/science/article/pii/S2666061X21000377" target="_blank" rel="noopener noreferrer">[2]</a></sup>
+  </p>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1.5rem;">
+    超音波導引的優勢不只是精準，它還能讓醫師在注射前確認患部組織狀況（如肌腱撕裂程度、積液量），並即時確認藥液確實進入目標位置，大幅降低誤注射的風險。
+  </p>
+ 
+  <div style="background-color:#fff7ed;border:1px solid #fed7aa;padding:16px;border-radius:8px;margin-bottom:24px;">
+    <p style="color:#9a3412;font-size:1rem;line-height:1.6;margin:0;">
+      <strong>⚠️ 就診建議：</strong>在預約PRP前，可以直接詢問診所：「請問注射時是否使用超音波即時導引？」若診所回答「不需要，醫師手感很準」或「超音波只是輔助評估不做引導」，建議謹慎評估，因為這與目前的醫學標準有落差。
+    </p>
+  </div>
+ 
+  <h3 style="font-size:1.4rem;font-weight:bold;color:#ffffff;margin-bottom:1rem;">關鍵指標二：PRP濃度適中、製備有標準化流程</h3>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1rem;">
+    一個常見的誤解是「PRP血小板濃度越高越好」。事實上，研究顯示PRP的療效並非線性關係——過高的血小板濃度（或過多的白血球）反而可能增加注射後的發炎反應。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12027823/" target="_blank" rel="noopener noreferrer">[3]</a></sup>
+  </p>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1rem;">
+    目前的研究建議，對於關節內注射（如膝關節骨關節炎），應優先選擇<strong style="color:#ffffff;">低白血球型PRP</strong>——因為高白血球濃度會釋放過多促發炎細胞因子，對關節軟骨可能有潛在傷害。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12027823/" target="_blank" rel="noopener noreferrer">[3]</a></sup>
+  </p>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1.5rem;">
+    而對於肌腱注射（如網球肘、足底筋膜炎），部分研究則顯示<strong style="color:#ffffff;">高白血球型PRP</strong>效果更佳，因為白血球可以促進肌腱的炎症修復反應。
+    <sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S1058274621008156" target="_blank" rel="noopener noreferrer">[10]</a></sup>
+  </p>
+  <p style="color:#cbd5e1;line-height:1.7;font-size:1.1rem;margin-bottom:1.5rem;">
+    這意味著：<strong style="color:#ffffff;">好的診所會根據你的施打部位選擇不同的PRP製備方式，而非所有人一概使用同樣的套組。</strong>就診時可詢問：「請問你們使用的PRP離心套組是哪個廠牌？針對關節注射和肌腱注射，製備方式有差異嗎？」這個問題能幫助你快速判斷診所是否真正懂PRP。
+  </p>
+ 
+  <div style="background-color:#f0f9ff;padding:1.5rem;border-left:4px solid #0891b2;border-radius:0.5rem;margin:1.5rem 0;">
+    <h4 style="margin-top:0;color:#0e7490;font-weight:bold;font-size:1.15rem;margin-bottom:0.5rem;">💡 選擇診所的五個問題清單</h4>
+    <ol style="margin-bottom:0;color:#334155;line-height:1.8;font-size:1.05rem;padding-left:1.5rem;">
+      <li>注射時是否使用即時超音波導引？</li>
+      <li>使用的是哪個廠牌的PRP離心套組？</li>
+      <li>針對我的部位（關節/肌腱）會選擇什麼型別的PRP？</li>
+      <li>醫師是否有復健科或骨科專科執照？</li>
+      <li>注射前是否有詳細評估（影像、理學檢查），並說明預期效果與次數？</li>
+    </ol>
+  </div>
+</section>
+ 
+<hr style="margin:3rem 0;border-top:1px solid #e2e8f0;">
+ 
+<!-- 七、三大誤區 -->
+<section style="margin-bottom:3.5rem;">
+  <div style="background-color:#fffbeb;border:2px solid #fbbf24;border-radius:1rem;padding:1.5rem;margin:2rem 0;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1);">
+    <h2 style="color:#b45309;margin-top:0;font-weight:bold;font-size:1.4rem;border-bottom:2px solid #fcd34d;padding-bottom:0.5rem;display:flex;align-items:center;">
+      📢 七、民眾最常見的三大誤區
+    </h2>
+    <ul style="list-style:none;padding:0;margin-top:1rem;color:#92400e;">
+ 
+      <li style="margin-bottom:1.5rem;display:flex;align-items:start;">
+        <span style="background:#f59e0b;color:white;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:10px;flex-shrink:0;">1</span>
+        <div>
+          <strong>「PRP就是增生療法（葡萄糖增生注射）嗎？」</strong><br>
+          <span style="display:block;margin-top:0.5rem;line-height:1.6;"><strong>不完全正確！</strong> 增生療法傳統上指的是注射高濃度葡萄糖（通常15–25%）來刺激局部發炎、誘導組織修復——這是另一種機制。PRP是增生療法的一種進階型態，也有診所將兩者合併使用，但嚴格來說兩者是不同的治療。分辨清楚，才能在門診時與醫師準確溝通。</span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom:1.5rem;display:flex;align-items:start;">
+        <span style="background:#f59e0b;color:white;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:10px;flex-shrink:0;">2</span>
+        <div>
+          <strong>「打了PRP就不用做復健了，效果會自己出現」</strong><br>
+          <span style="display:block;margin-top:0.5rem;line-height:1.6;"><strong>錯誤！</strong> PRP啟動的是生物修復機制，但這個機制需要適當的機械性刺激（物理治療、運動訓練）才能充分發揮。研究顯示，PRP注射後搭配結構化的物理治療，效果顯著優於單純注射。
+          <sup><a href="https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1678037/full" target="_blank" rel="noopener noreferrer">[5]</a></sup>
+          注射後若完全靜養，生長因子的作用可能無法充分轉化為組織強度提升。</span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom:1.5rem;display:flex;align-items:start;">
+        <span style="background:#f59e0b;color:white;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:10px;flex-shrink:0;">3</span>
+        <div>
+          <strong>「PRP越貴代表越好，打越多次越有效」</strong><br>
+          <span style="display:block;margin-top:0.5rem;line-height:1.6;"><strong>過度簡化！</strong> 費用高低反映的是設備成本與品牌，不等同於療效。而注射次數也有其上限——研究顯示3至5次的療程通常能達到最大效益，反覆無休止地注射並非更好的策略，且過於頻繁注射可能造成組織反應疲勞。
+          <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11077828/" target="_blank" rel="noopener noreferrer">[11]</a></sup>
+          治療前，應請醫師說明清楚：「我的狀況預計需要幾次？依據是什麼？」</span>
+        </div>
+      </li>
+ 
+    </ul>
+  </div>
+</section>
+ 
+<hr style="margin:3rem 0;border-top:1px solid #e2e8f0;">
+ 
+<!-- FAQ -->
+<section style="background-color:#0f172a;border:1px solid #1e293b;border-radius:1.5rem;overflow:hidden;margin:3rem 0;box-shadow:0 10px 15px -3px rgba(0,0,0,0.4);">
+  <div style="background-color:#1e293b;padding:1rem 1.5rem;border-bottom:1px solid #334155;">
+    <h2 style="color:#22d3ee;margin:0;font-size:1.25rem;display:flex;align-items:center;font-weight:bold;">
+      <span style="margin-right:8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding:2rem 1.25rem 1.2rem 1.25rem;">
+ 
+    <h3 style="color:#f8fafc;margin-top:0;margin-bottom:0.75rem;font-size:1.2rem;font-weight:bold;">
+      Q1：PRP注射前需要停止服用消炎藥嗎？
+    </h3>
+    <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:2rem;">
+      是的，通常建議在注射前5至7天停止使用NSAIDs（非類固醇消炎藥，如布洛芬、那普洛先等）。原因是NSAIDs會抑制血小板功能，可能影響PRP的生長因子釋放與療效。Aspirin（阿斯匹靈）的停藥時間可能更長，建議提前告知醫師您使用的所有藥物。
+    </p>
+ 
+    <h3 style="color:#f8fafc;margin-top:0;margin-bottom:0.75rem;font-size:1.2rem;font-weight:bold;">
+      Q2：注射後多久才會有效果？會先變更痛嗎？
+    </h3>
+    <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:2rem;">
+      注射後的48至72小時內，由於PRP啟動的局部發炎反應，部分患者會感到注射部位輕微酸脹感加重——這是正常的生理反應，不必過度擔心。通常在2至4週後開始感受到疼痛改善，6至12週是效果最明顯的時間點。完整療程結束後的6個月，是評估長期療效的重要時間節點。
+      <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12596915/" target="_blank" rel="noopener noreferrer">[1]</a></sup>
+    </p>
+ 
+    <h3 style="color:#f8fafc;margin-top:0;margin-bottom:0.75rem;font-size:1.2rem;font-weight:bold;">
+      Q3：哪些人不適合接受PRP治療？
+    </h3>
+    <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:2rem;">
+      以下情況需特別謹慎或暫緩PRP治療，建議先與醫師詳細討論：血小板數量不足或功能異常（血液疾病）、正在服用抗凝血劑、活躍性感染或患部有急性感染、惡性腫瘤患者、類風濕性關節炎急性發作期、孕婦，以及肌腱嚴重撕裂（全層斷裂）需要手術修復者。
+    </p>
+ 
+    <h3 style="color:#f8fafc;margin-top:0;margin-bottom:0.75rem;font-size:1.2rem;font-weight:bold;">
+      Q4：玻尿酸和PRP可以同時打嗎？
+    </h3>
+    <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:2rem;">
+      可以，且研究顯示兩者合併使用可能產生協同效果，在疼痛與功能改善的結果上優於單一注射。
+      <sup><a href="https://www.sciencedirect.com/science/article/pii/S2773157X25000062" target="_blank" rel="noopener noreferrer">[8]</a></sup>
+      但合併注射費用較高，是否有必要因人而異，需由醫師根據退化程度、年齡與個人需求綜合評估。
+    </p>
+ 
+    <h3 style="color:#f8fafc;margin-top:0;margin-bottom:0.75rem;font-size:1.2rem;font-weight:bold;">
+      Q5：打了PRP之後還是很痛，代表治療失敗了嗎？
+    </h3>
+    <p style="color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:2rem;">
+      不一定。PRP效果出現的時間差異較大，部分患者在第二次注射後才開始有明顯改善。此外，「疼痛改善」只是結果指標之一，影像學上的組織修復（如超音波評估肌腱完整性）可能先於疼痛減輕出現。若第三次注射後仍無效果，建議重新評估診斷是否正確，以及是否需要調整治療方式。
+    </p>
+ 
+  </div>
+</section>
+ 
+<hr style="margin:3rem 0;border-top:1px solid #e2e8f0;">
+ 
+<!-- 結語 -->
+<div style="background-color:#f8fafc;color:#334155;padding:32px;border-radius:12px;border-left:6px solid #64748b;margin-bottom:32px;font-family:sans-serif;line-height:1.7;box-shadow:0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color:#1e293b;margin-top:0;font-size:1.5rem;font-weight:bold;border-bottom:1px solid #e2e8f0;padding-bottom:12px;">結語與行動建議</h2>
+ 
+  <p style="color:#475569;margin-top:16px;font-size:1.05rem;">
+    自費針劑的選擇，從來不只是「哪種比較貴就比較好」或「廣告打得最響就選它」。PRP是目前臨床證據最豐富的再生注射療法，但其效果受到製備品質、施打精準度、治療次數，以及注射後是否搭配復健等多重因素影響。玻尿酸在輕度退化的患者中仍是有效且低成本的起始選擇；羊膜療法則尚需更多高品質研究支持。
+  </p><br>
+ 
+  <p style="color:#475569;font-size:1.05rem;">
+    無論你最終選擇哪種針劑，<strong style="color:#1e293b;">最重要的是找到一位懂得用超音波確認注射位置、能根據你的具體狀況調整PRP製備方式，並能誠實告訴你預期效果與療程計畫的醫師。</strong>一次好的醫療評估，勝過盲目的高價治療。
+  </p>
+ 
+  <div style="background-color:#f1f5f9;padding:16px;border-radius:8px;margin:20px 0;text-align:center;">
+    <p style="margin-bottom:0;color:#1e293b;font-weight:bold;font-size:1.05rem;">
+      💡 立即行動：對照本文的比較表，整理你目前的症狀與已嘗試過的治療，在下次就診時主動詢問醫師：「我的狀況適合PRP嗎？注射時會用超音波導引嗎？」帶著問題來就診，才能真正獲得個人化的治療建議。
+    </p>
+  </div>
+  <div style="text-align:center;width:100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display:inline-block !important;background-color:#375987 !important;color:#f8fafc !important;font-weight:bold !important;padding:12px 24px !important;border-radius:9999px !important;text-decoration:none !important;font-size:1.05rem !important;font-family:system-ui,sans-serif !important;">
+      預約宸新復健科門診評估
+    </a>
+  </div>
+</div>
+ 
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color:#f8fafc;padding:1.5rem;border-radius:0.75rem;margin-top:1.5rem;font-size:0.95rem;color:#475569;border:1px solid #e2e8f0;line-height:1.6;word-break:break-all;">
+  <ol style="padding-left:0;margin:0;list-style-type:decimal;list-style-position:inside;color:#2563eb;font-weight:bold;">
+ 
+    <li style="margin-bottom:0.8rem;">
+      <span style="color:#475569;font-weight:normal;margin-left:0.5rem;">
+        Chang, K.V., et al. (2025). Efficacy of Platelet-Rich Plasma Injections in Knee Osteoarthritis: A Systematic Review and Meta-Analysis. PMC12596915.
+        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12596915/" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;text-underline-offset:3px;">PMC: 12596915</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom:0.8rem;">
+      <span style="color:#475569;font-weight:normal;margin-left:0.5rem;">
+        Berkoff, D.J., et al. (2021). Ultrasound-Guided Knee Injections Are More Accurate Than Blind Injections: A Systematic Review of Randomized Controlled Trials. Arthroscopy, Sports Medicine, and Rehabilitation, 3(4), e1177.
+        <a href="https://www.sciencedirect.com/science/article/pii/S2666061X21000377" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;text-underline-offset:3px;">ScienceDirect: S2666061X21000377</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom:0.8rem;">
+      <span style="color:#475569;font-weight:normal;margin-left:0.5rem;">
+        Everts, P.A., et al. (2025). Re-Evaluating Platelet-Rich Plasma Dosing Strategies in Sports Medicine: The Role of the "10 Billion Platelet Dose" in Optimizing Therapeutic Outcomes. PMC12027823.
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12027823/" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;text-underline-offset:3px;">PMC: 12027823</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom:0.8rem;">
+      <span style="color:#475569;font-weight:normal;margin-left:0.5rem;">
+        We Get Care有醫靠. (2025). PRP增生療法是什麼？有什麼治療功效？健保給付嗎？費用、優缺點一次了解。
+        <a href="https://www.wegetcare.tw/post/prp-injection-treatment" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;text-underline-offset:3px;">Web Link</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom:0.8rem;">
+      <span style="color:#475569;font-weight:normal;margin-left:0.5rem;">
+        Li, M., et al. (2025). Platelet-rich plasma improves pain and function in knee osteoarthritis: a retrospective study. Frontiers in Physiology.
+        <a href="https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1678037/full" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;text-underline-offset:3px;">DOI: 10.3389/fphys.2025.1678037</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom:0.8rem;">
+      <span style="color:#475569;font-weight:normal;margin-left:0.5rem;">
+        InsKeeper保險管家. (2025). PRP增生療法理賠全攻略.
+        <a href="https://blog.inskeeper.com.tw/ins-guide/prp-therapy-claims-guide/" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;text-underline-offset:3px;">Web Link</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom:0.8rem;">
+      <span style="color:#475569;font-weight:normal;margin-left:0.5rem;">
+        Ivander, G., & Anggono, Y. (2024). A comparison of intra-articular hyaluronic acid and platelet-rich plasma for knee osteoarthritis: a systematic review. Orthopedic Reviews, 16.
+        <a href="https://orthopedicreviews.openmedicalpublishing.org/article/94236-a-comparison-of-intra-articular-hyaluronic-acid-and-platelet-rich-plasma-for-knee-osteoarthritis-a-systematic-review" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;text-underline-offset:3px;">DOI: 10.52965/001c.94236</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom:0.8rem;">
+      <span style="color:#475569;font-weight:normal;margin-left:0.5rem;">
+        Qiao, W., et al. (2025). Efficiency of intraarticular injection of PRP and hyaluronic acid combination in osteoarthritis knee: A systematic review and meta-analysis. ScienceDirect.
+        <a href="https://www.sciencedirect.com/science/article/pii/S2773157X25000062" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;text-underline-offset:3px;">PII: S2773157X25000062</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom:0.8rem;">
+      <span style="color:#475569;font-weight:normal;margin-left:0.5rem;">
+        Willett, N.J., et al. (2024). Injection of Amniotic Membrane and Umbilical Cord Particulate for Muscle and Ligament Tears in Collegiate Football Athletes: A Single-Center, Retrospective Study. PMC11611701.
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11611701/" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;text-underline-offset:3px;">PMC: 11611701</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom:0.8rem;">
+      <span style="color:#475569;font-weight:normal;margin-left:0.5rem;">
+        Yıldız, F., et al. (2021). The effect of leucocyte concentration of platelet-rich plasma on outcomes in patients with lateral epicondylitis: a systematic review and meta-analysis. ScienceDirect.
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S1058274621008156" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;text-underline-offset:3px;">PII: S1058274621008156</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom:0.8rem;">
+      <span style="color:#475569;font-weight:normal;margin-left:0.5rem;">
+        Zhao, W., et al. (2025). Comparison of clinical efficacy of sequential and single intra-articular injection of platelet-rich plasma in treatment of early/mid-stage knee osteoarthritis. Frontiers in Medicine. PMC12738803.
+        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11077828/" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;text-underline-offset:3px;">PMC: 11077828</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom:0.8rem;">
+      <span style="color:#475569;font-weight:normal;margin-left:0.5rem;">
+        Filardo, G., et al. (2022). Leukocyte-Rich versus Leukocyte-Poor Platelet-Rich Plasma for the Treatment of Knee Osteoarthritis. American Journal of Sports Medicine, 50(3), 609–617.
+        <a href="https://www.ovid.com/journals/ajsm/pdf/10.1177/03635465211064303" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;text-underline-offset:3px;">DOI: 10.1177/03635465211064303</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom:0.8rem;">
+      <span style="color:#475569;font-weight:normal;margin-left:0.5rem;">
+        Boffa, A., et al. (2024). Influence of Platelet Concentration on the Clinical Outcome of Platelet-Rich Plasma Injections in Knee Osteoarthritis. American Journal of Sports Medicine.
+        <a href="https://journals.sagepub.com/doi/10.1177/03635465241283463" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;text-underline-offset:3px;">DOI: 10.1177/03635465241283463</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom:0.8rem;">
+      <span style="color:#475569;font-weight:normal;margin-left:0.5rem;">
+        Frontiers Medicine. (2025). Efficacy of ultrasound-guided intra-articular injection in the treatment of knee osteoarthritis: a network meta-analysis.
+        <a href="https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1700950/full" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;text-underline-offset:3px;">DOI: 10.3389/fmed.2025.1700950</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom:0.8rem;">
+      <span style="color:#475569;font-weight:normal;margin-left:0.5rem;">
+        澄清醫院中港分院. PRP增生治療法介紹：費用、健保給付說明.
+        <a href="https://ck.ccgh.com.tw/doctor_listDetail63.htm" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;text-underline-offset:3px;">Web Link</a>
+      </span>
+    </li>
+ 
+  </ol>
+</div>
+ 
+   ` 
+},
+
+
+{
+id: 'prp-injection-pain-duration-efficacy',
+  title: '打完 PRP 反而更痛？復健科醫師揭密：四大核心問題與術後疼痛',
+  lastModified: '2026-06-04',
+  category: '衛教文章',
+  date: '2026-06-04',
+  summary: '為什麼打完高濃度血小板血漿（PRP）後反而比之前更痛？復健科醫師從運動醫學與生理機制出發，系統性解析注射後的「無菌性發炎反應」，並針對門診最常見的四大疑問：PRP多久打一次？一定要打滿三針嗎？多久見效？效果能維持幾年？提供完整的實證醫學解答與行動建議。',
+  coverImage: '/images/news/article/prp-injection-pain-duration-efficacy.webp',
+  seoTitle: '打完PRP反而更痛？多久打一次？效果維持多久？復健科醫師完整解答',
+  seoDescription: '許多人在接受 PRP 注射後會出現局部疼痛加劇的現象。本文系統性解析血小板活化引發的無菌性發炎機制，並解答 PRP 療程頻率、施打針數、起效時間與效果維持年限等四大核心迷思，助您正確認識再生醫療。',
+  keywords: [
+    'PRP注射',
+    '富血小板血漿',
+    'PRP多久打一次',
+    'PRP效果維持',
+    '無菌性發炎',
+    '退化性關節炎',
+    '肌腱病變',
+    '增生療法',
+    '生長因子',
+    '復健科門診'
+  ],
+    contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0.75rem; line-height: 1.6; color: #334155;">
+    PRP（高濃度血小板血漿，Platelet-Rich Plasma）是目前再生醫療領域中廣泛應用的非手術治療方式，藉由抽取患者自身血液、濃縮血小板後回注至受傷部位，透過釋放大量生長因子來促進組織修復與再生。
+    <sup><a href="https://www.mdpi.com/1422-0067/26/21/10804" target="_blank" rel="noopener noreferrer">[1]</a></sup>
+  </p>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    然而，許多患者在注射後的頭幾天卻感覺「比打針前還要痛」，因而產生擔憂與疑慮。本文將從復健科醫師的醫學視角，系統性解釋這個現象背後的生理機制，並回答最常見的四大問題：PRP多久打一次？一定要打滿三針嗎？效果多久會出現？效果可以維持幾年？研究顯示，注射後 48 至 72 小時內的疼痛加劇，是血小板活化所引發的正常無菌性發炎反應，是修復過程的一部分，而非治療失敗的訊號。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9918262/" target="_blank" rel="noopener noreferrer">[2]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10072988/" target="_blank" rel="noopener noreferrer">[3]</a></sup>
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、什麼是PRP？為什麼它能修復組織？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    PRP 的全名是「高濃度血小板血漿」（Platelet-Rich Plasma）。製備流程非常直接：從患者手臂抽取少量血液，放入離心機旋轉分層後，取出血小板濃度遠高於正常值（約 4–10 倍）的上清液，再以超音波導引注射至目標部位。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    整個過程的核心在於<strong style="color: #ffffff;">血小板的 α-顆粒</strong>。當血小板被活化後，這些微小的儲存囊泡會釋放出一批強力的生長因子，包括：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">PDGF（血小板衍生生長因子）</strong>——招募修復細胞、促進增殖</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">TGF-β（轉化生長因子 β）</strong>——調節發炎、促進膠原蛋白合成</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">VEGF（血管內皮生長因子）</strong>——促進新生血管形成，改善局部血流</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">IGF（類胰島素生長因子）</strong>——刺激軟骨細胞與肌腱細胞增殖</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這些生長因子協同作用，透過細胞增殖、分化、遷移與細胞外基質合成四個核心途徑，驅動損傷組織的修復。
+    <sup><a href="https://www.mdpi.com/1422-0067/26/21/10804" target="_blank" rel="noopener noreferrer">[1]</a></sup>
+    這也是為什麼 PRP 特別適合用於<strong style="color: #ffffff;">肌腱病變、韌帶損傷、退化性關節炎</strong>等血液循環相對不足的組織——這些部位的天然修復能力本就受限，透過 PRP 可以人為地在局部創造一個富含生長因子的修復環境。
+    <sup><a href="https://orthopedicreviews.openmedicalpublishing.org/article/147173-platelet-rich-plasma-therapy-in-treating-tendon-injuries-of-the-hand-a-narrative-review" target="_blank" rel="noopener noreferrer">[4]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床重點</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      肌腱的血液供應量僅有肌肉的 30%，這意味著受傷的肌腱所能動員的天然修復資源極為有限。PRP 正是透過人工方式在局部「補充」濃縮的生長因子，彌補肌腱自我修復能力的不足。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、為什麼打完PRP反而更痛？——無菌性發炎反應完整解析
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是搜尋量最高的問題，也是最讓患者困惑的現象：明明去打了「修復」的針，結果回家後反而更不舒服，甚至痛到難以入睡。這究竟是哪裡出了問題？
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <strong style="color: #2dd4bf;">簡短答案：這幾乎都是正常的，而且是修復開始的訊號。</strong>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">背後的生理機制</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    PRP 注射後的疼痛加劇，醫學上稱為「注射後反應」或「無菌性發炎反應」。無菌性的意思是：這個發炎<strong style="color: #ffffff;">沒有細菌感染</strong>，而是由血小板活化後釋放的大量生長因子與細胞激素所引發的<strong style="color: #ffffff;">可控性發炎反應</strong>。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    造成術後疼痛加劇的原因主要有以下幾個層面：
+  </p>
+
+  <ol style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">針頭穿刺的機械性刺激：</strong>任何注射都不可避免地對組織造成輕微的穿刺傷，可能刺激到局部的神經末梢。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">血小板活化引發的急性發炎：</strong>血小板在注射部位大量活化，釋放生長因子的同時，也會召集免疫細胞（巨噬細胞、嗜中性球）進入注射區域，局部血流增加，產生「發紅、腫脹、發熱、疼痛」的典型急性發炎四徵象。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">組織腫脹對周遭神經的壓迫：</strong>因局部滲液增加，注射部位的腫脹可能拉伸或壓迫到原本就敏感的組織，加劇疼痛感受。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">局部化學環境的改變：</strong>生長因子釋放後，局部的 pH 值與滲透壓短暫改變，也可能激活痛覺受器。
+    </li>
+  </ol>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這種「治療性發炎」通常在注射後 <strong style="color: #ffffff;">24 至 72 小時內達到高峰</strong>，之後逐漸消退。大多數患者在一週內疼痛會明顯改善，輕微不適可能持續數週，這都屬於正常修復過程的一部分。
+    <sup><a href="https://ubiehealth.com/doctors-note/prp-injection-side-effects-pain-worse-next-step-4244q2" target="_blank" rel="noopener noreferrer">[5]</a></sup>
+  </p>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 約 1 成患者會出現較明顯的反應：</strong><br><br>
+      根據臨床觀察，約 10% 的患者在注射後數小時內出現明顯的「免疫過度激活」反應，疼痛可能在最初 24–48 小時內非常劇烈。這種情況下，建議使用<strong>普拿疼（Acetaminophen ）</strong>來緩解疼痛，<strong>切勿自行使用非類固醇消炎藥（NSAIDs，如布洛芬）</strong>，因為 NSAIDs 會抑制發炎反應，可能削弱 PRP 的治療效果。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">什麼情況才需要警覺？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    以下症狀<strong style="color: #ffffff;">不屬於正常反應</strong>，出現時應儘速回診評估：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;">注射部位出現明顯<strong style="color: #ffffff;">發燒（超過 38°C）</strong></li>
+    <li style="margin-bottom: 0.5rem;">注射部位有<strong style="color: #ffffff;">滲液、流膿或傷口裂開</strong></li>
+    <li style="margin-bottom: 0.5rem;">疼痛在 <strong style="color: #ffffff;">72 小時後仍持續加劇</strong>而非改善</li>
+    <li style="margin-bottom: 0.5rem;">出現全身性發冷、寒顫等感染徵象</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、PRP多久打一次？療程頻率怎麼安排？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這個問題的答案，因適應症而異。目前臨床上並沒有一套放諸四海皆準的標準療程，但根據現有文獻，以下是各主要適應症的常見安排方式：
+  </p>
+
+  <style>
+    .custom-table-container { width: 100%; overflow-x: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+    .modern-table { width: 100%; border-collapse: collapse; font-family: "PingFang TC","Microsoft JhengHei",sans-serif; font-size: 15px; background-color: #ffffff; color: #1f2937; min-width: 700px; }
+    .modern-table thead tr { background-color: #1e3a8a; color: #ffffff; text-align: left; font-weight: bold; }
+    .modern-table th { padding: 16px 12px; border-bottom: 2px solid #111827; letter-spacing: 0.5px; }
+    .modern-table td { padding: 14px 12px; border-bottom: 1px solid #e5e7eb; line-height: 1.6; }
+    .modern-table td:first-child { background-color: #f9fafb; font-weight: 600; color: #111827; width: 180px; }
+    .modern-table tbody tr:nth-of-type(even) { background-color: #f3f4f6; }
+    .modern-table tbody tr:hover { background-color: #e0e7ff; transition: background-color 0.2s ease; }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>適應症</th>
+          <th>建議注射次數</th>
+          <th>注射間隔</th>
+          <th>文獻依據</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>膝關節退化性關節炎（輕至中度）</td>
+          <td>3 針為常見方案；部分研究建議 4–5 針</td>
+          <td>每次間隔 1–4 週</td>
+          <td>Acar et al., 2024<sup>[6]</sup></td>
+        </tr>
+        <tr>
+          <td>外側上髁炎（網球肘）</td>
+          <td>1–3 針</td>
+          <td>每次間隔 4 週</td>
+          <td>PMC11810146<sup>[7]</sup></td>
+        </tr>
+        <tr>
+          <td>阿基里斯肌腱病變</td>
+          <td>1–3 針</td>
+          <td>每次間隔 2–4 週</td>
+          <td>Vithran et al., 2023<sup>[2]</sup></td>
+        </tr>
+        <tr>
+          <td>旋轉肌群肌腱病變</td>
+          <td>1–3 針</td>
+          <td>每次間隔 2–4 週</td>
+          <td>PMC11128950<sup>[8]</sup></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem; margin-top: 1.5rem;">
+    間隔設計的原理是讓前一次注射引發的修復反應有足夠時間完成，同時確保下一次注射能在前次生長因子效益消退前「接力」補充。間隔過短（少於一週）可能造成局部過度刺激；間隔過長（超過兩個月）則可能讓修復進程中斷。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11992392/" target="_blank" rel="noopener noreferrer">[9]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床重點</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      療程間隔並非固定公式，應根據每次注射後的反應與症狀改善程度個別調整。若在兩次注射之間疼痛已大幅緩解、功能明顯恢復，醫師可能評估是否需要繼續後續療程。反之，若反應不如預期，也可能調整配方（如調整白血球含量、血小板濃度）或合併其他治療。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、PRP一定要打滿三針嗎？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    「打滿三針」這個說法在門診中非常普遍，但從實證醫學的角度來看，<strong style="color: #ffffff;">三針並非黃金標準，而是一個基於多數研究的常見協議，適合大多數患者，但不是唯一選擇。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    2024 年發表的一項針對膝關節退化性關節炎的研究直接比較了 1 針、3 針和 5 針的療效。結果顯示，<strong style="color: #ffffff;">3 針與 5 針的效果並無顯著差異</strong>，但都優於單針。因此研究建議，對於退化分級一到三級的膝關節退化患者，以 3 針為建議療程。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11077828/" target="_blank" rel="noopener noreferrer">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    然而，對於肌腱病變（如網球肘），部分研究則顯示<strong style="color: #ffffff;">單針即可在 6–12 個月內帶來顯著的疼痛緩解與功能改善</strong>，不一定需要完整的三針療程。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11810146/" target="_blank" rel="noopener noreferrer">[7]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    決定是否需要繼續注射的關鍵評估因素包括：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;">前次注射後的<strong style="color: #ffffff;">疼痛改善幅度</strong>（建議以 VAS 疼痛指數量化）</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">功能恢復程度</strong>（能否回到日常活動或運動）</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">影像學變化</strong>（超音波可評估肌腱纖維的修復狀況）</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">關節炎嚴重程度</strong>（較重度退化通常需要更多次注射）</li>
+  </ul>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 重要提醒：</strong><br><br>
+      如果第一針注射後疼痛毫無改善甚至顯著惡化（超過一週仍持續加劇），<strong>不應盲目繼續施打第二、三針</strong>，而應回診讓醫師重新評估診斷是否正確、注射位置是否精準、PRP 配方是否適合您的體質，以及是否需要調整治療計畫。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、PRP打完多久會有效果？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是第二個讓患者最感困惑的問題。PRP 的起效時間<strong style="color: #ffffff;">明顯慢於類固醇注射</strong>，這也是兩者之間最根本的差異：類固醇以「抑制發炎」的方式快速止痛，效果通常在數天內出現；而 PRP 是透過「促進修復」的方式，讓受損組織逐步重建，因此需要更長的時間才能感受到明顯的效果。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    根據多項臨床研究，PRP 注射後的效果時間線大致如下：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">注射後第 1–3 天：</strong>無菌性發炎反應高峰期，疼痛可能比注射前更劇烈，這是正常現象</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">注射後第 1–4 週：</strong>大多數患者開始感覺疼痛緩解，功能逐漸改善；部分退化程度較重的患者可能需要更長時間</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">注射後第 6 週至 3 個月：</strong>效果最明顯的時期，研究顯示 VAS 疼痛指數可下降 2–3 分（10 分制），功能指數也有顯著改善
+      <sup><a href="https://www.mdpi.com/2077-0383/14/11/3983" target="_blank" rel="noopener noreferrer">[10]</a></sup>
+    </li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">注射後 6 個月至 1 年：</strong>大多數研究的主要追蹤時間點，整體功能指數維持顯著改善
+      <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7919502/" target="_blank" rel="noopener noreferrer">[11]</a></sup>
+    </li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    一項 2024 年的膝關節退化性關節炎研究指出，患者在 2–3 週後即可感覺疼痛開始緩解、活動耐受度提升。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12738803/" target="_blank" rel="noopener noreferrer">[12]</a></sup>
+    但也需要提醒：起效速度因人而異，與個人的整體健康狀況、血小板品質、注射部位的退化程度，以及是否配合復健訓練均有關聯。
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床重點：PRP ≠ 快速止痛劑</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      許多患者在注射後兩週仍感覺沒什麼改變而開始質疑療效。在門診中，我們通常會告知患者：PRP 的修復機制需要時間，就像骨折癒合一樣，不是今天固定、明天就長好的。若過早放棄並切換到類固醇，反而可能中斷已啟動的修復過程。耐心等待並配合適當的物理治療，是讓 PRP 發揮最大效益的關鍵。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、PRP效果可以維持幾年？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這也是許多患者在決定是否接受 PRP 治療前最關心的問題之一。老實說，這個問題的答案目前仍有一定程度的不確定性，原因在於不同適應症、不同嚴重程度、不同 PRP 配方之間的效果差異相當大。以下是根據現有最佳證據的整理：
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">膝關節退化性關節炎</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    目前最可靠的數據顯示，PRP 注射對膝關節退化的效果可持續<strong style="color: #ffffff;">約 6 至 12 個月</strong>。一項系統性回顧指出，PRP 注射後的疼痛緩解與功能改善效果在注射後 6 個月時最為顯著；到一年後仍有部分患者維持改善，但幅度開始逐漸下降。
+    <sup><a href="https://asra.com/news-publications/asra-newsletter/newsletter-item/asra-news/2018/07/24/platelet-rich-plasma-injections-for-knee-osteoarthritis-how-long-do-the-benefits-last-" target="_blank" rel="noopener noreferrer">[13]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    值得注意的是，PRP 配方對維持時間有顯著影響。一項研究發現，<strong style="color: #ffffff;">達到 100 億個血小板</strong>的高濃度配方能在中度膝關節退化患者中帶來長達 1 年的保護效果，顯著優於玻尿酸注射（玻尿酸的效果在 3 個月後開始下滑）。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7889864/" target="_blank" rel="noopener noreferrer">[14]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">肌腱病變（如網球肘、阿基里斯肌腱）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    肌腱病變的 PRP 效果維持時間通常比關節炎更長，部分研究追蹤到 <strong style="color: #ffffff;">12 至 18 個月仍有效果</strong>。這可能是因為肌腱接受 PRP 後的膠原蛋白重塑是一種「結構性改變」，理論上比關節液的化學改善更為持久。但若患者持續進行高強度的重複性動作而未調整訓練方式，效果消退的速度也會加快。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10072988/" target="_blank" rel="noopener noreferrer">[3]</a></sup>
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">影響效果維持時間的關鍵因素</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">退化嚴重程度：</strong>越早期的退化，效果越持久；重度退化（KL 四級）的效果較差，維持時間也較短</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">是否配合復健：</strong>PRP 注射後進行有計畫的肌力強化訓練，能顯著延長效果維持時間</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">生活方式調整：</strong>體重管理（過重會加速膝關節磨損）、運動方式調整（避免反覆衝擊）是延長療效的重要配套</li>
+    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">PRP 配方品質：</strong>血小板濃度、白血球含量的差異，直接影響生長因子的釋放量與組成，進而影響效果</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 七、常見三大迷思破解
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「打完更痛代表PRP沒有效，要趕快換類固醇」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">
+            <strong>錯誤！</strong>注射後 72 小時內的疼痛加劇，是血小板活化、免疫細胞募集的正常生理現象，本質上是治療過程的一部分。貿然使用 NSAIDs 消炎藥或切換為類固醇，反而可能干擾 PRP 啟動的修復機制。
+            <sup><a href="https://ubiehealth.com/doctors-note/prp-injection-side-effects-pain-worse-next-step-4244q2" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[5]</a></sup>
+          </span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「打了PRP就不需要做復健，等它自己好就好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">
+            <strong>過度樂觀！</strong>PRP 提供的是修復所需的原料（生長因子），但組織的結構性重建——尤其是肌腱的膠原蛋白排列——需要配合漸進式的負重訓練才能達到最佳效果。只打針不復健，就像施肥卻不澆水，修復的進展將大打折扣。
+            <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11992392/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[9]</a></sup>
+          </span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「PRP一定要打三針才算完整，少打一針效果就不好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;">
+            <strong>過度簡化！</strong>「三針」是針對多數患者的常見起始方案，但實際所需的注射次數應根據個人的疾病類型、嚴重程度與注射反應個別調整。部分肌腱病變患者在一針後已顯著改善；部分嚴重退化的患者則可能需要 4–5 針才能達到穩定效果。
+            <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11077828/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[6]</a></sup>
+          </span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    八、術後照護：打完PRP後該怎麼做？
+  </h2>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">注射後 48–72 小時：</strong>避免激烈運動或高強度負重，讓局部的無菌性發炎反應自然消退
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">止痛藥選擇：</strong>如需緩解疼痛，選擇乙醯胺酚（普拿疼）；<strong style="color: #ffffff;">避免 NSAIDs</strong>，因為消炎藥會抑制 PRP 所需的修復性發炎
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">局部冰敷：</strong>可短暫使用冰敷（每次 15–20 分鐘）緩解腫脹感，但不必過度冰敷以免抑制局部血流
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">一週後：</strong>依醫師指示開始循序漸進的復健訓練，從低強度的範圍運動到漸進式肌力訓練
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">飲食與生活：</strong>維持均衡飲食、充足睡眠，避免抽菸（尼古丁會影響血小板功能與血管生成）
+    </li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.4);">
+    <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+      <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+        <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+      </h2>
+    </div>
+    <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q1：打完PRP後可以洗澡嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        可以，但建議在注射後 24 小時內避免讓注射部位浸泡於水中（如泡澡、游泳），以降低感染風險。一般淋浴通常在注射後數小時即可，但需確認傷口已完全閉合。
+      </p>
+
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q2：PRP和玻尿酸、類固醇有什麼差別？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        三者機制截然不同：<br>
+        ・<strong style="color: #94a3b8;">類固醇</strong>：強效抑制發炎，止痛快但長期頻繁使用可能加速軟骨退化<br>
+        ・<strong style="color: #94a3b8;">玻尿酸</strong>：補充關節液、減少摩擦，止痛效果中等，維持約 3–6 個月<br>
+        ・<strong style="color: #94a3b8;">PRP</strong>：主動促進組織修復，起效較慢但有修復潛力，中長期效果可能優於類固醇
+        <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7889864/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[14]</a></sup>
+      </p>
+
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q3：每個人打PRP的效果都一樣嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        不一樣。個體差異相當大，主要受以下因素影響：年齡（年輕患者血小板活性通常較高）、疾病嚴重程度、自身血液品質、PRP 製備方式，以及是否配合復健。整體而言，<strong style="color: #94a3b8;">輕至中度退化的患者反應明顯優於重度退化者</strong>。
+        <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11451774/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[15]</a></sup>
+      </p>
+
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q4：PRP安全嗎？會有副作用嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        由於 PRP 使用患者自身的血液製備，免疫排斥風險極低，整體安全性良好。最常見的副作用就是前述的注射後疼痛加劇（無菌性發炎反應）。極少數情況下可能出現感染（與任何注射治療相同的風險）。在有超音波導引的情況下精準施打，可進一步降低副作用風險。
+        <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10072988/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[3]</a></sup>
+      </p>
+
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q5：哪些人不適合打PRP？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        以下情況應告知醫師，評估是否適合：血小板數量過低（低於 80,000/μL）、正在使用抗凝血劑者、活動性感染、血液相關疾病（如血友病），以及注射部位有皮膚病灶者。懷孕婦女也應謹慎評估。
+      </p>
+
+    </div>
+  </section>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    打完 PRP 後反而更痛，是許多患者共同的經歷，也是門診中最常被問到的術後問題。從醫學角度來看，這個現象大多是正常的無菌性發炎反應，代表治療正在作用，而非失敗的訊號。關鍵在於：理解這個過程、做好術後照護，並給予身體足夠的時間完成修復。
+  </p><br>
+
+  <p style="color: #475569; font-size: 1.05rem;">
+    PRP 並非萬能，也不是每個患者都適合、每個疾病都有效。但對於適合的適應症——尤其是輕至中度的退化性關節炎與慢性肌腱病變——PRP 是目前再生醫療領域中證據等級相對較高、安全性良好的非手術選項。選擇在有充足臨床經驗、使用超音波導引的醫師手中接受治療，是讓 PRP 發揮最大效益的重要前提。
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：若您正在考慮 PRP 治療，或對注射後的反應有疑問，歡迎預約宸新復健科門診，讓醫師根據您的影像與功能評估，提供個人化的治療建議。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約宸新復健科門診評估
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Komsa-Penkova, R., et al. (2025). Platelet-Rich Plasma (PRP): Molecular Mechanisms, Actions and Clinical Applications in Human Body. International Journal of Molecular Sciences, 26(21), 10804. <a href="https://www.mdpi.com/1422-0067/26/21/10804" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3390/ijms262110804</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Vithran, D.T.A., Xie, W., Opoku, M., Essien, A.E., He, M., & Li, Y. (2023). The Efficacy of Platelet-Rich Plasma Injection Therapy in the Treatment of Patients with Achilles Tendinopathy: A Systematic Review and Meta-Analysis. Journal of Clinical Medicine, 12(3), 995. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9918262/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9918262</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Mariani, E., et al. (2023). Ultrasound-guided injection of platelet-rich plasma for tendinopathies: a systematic review and meta-analysis. European Radiology, 33, 3634–3647. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10072988/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10072988</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Sahoo, N., & Shukla, T. (2025). Platelet-Rich Plasma Therapy in Treating Tendon Injuries of the Hand: A Narrative Review. Orthopedic Reviews. <a href="https://orthopedicreviews.openmedicalpublishing.org/article/147173-platelet-rich-plasma-therapy-in-treating-tendon-injuries-of-the-hand-a-narrative-review" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Ubie Health / Desert Spine and Sports. (2025). Why is my pain worse after PRP injection? Understanding the post-injection flare and aseptic inflammatory reaction. <a href="https://ubiehealth.com/doctors-note/prp-injection-side-effects-pain-worse-next-step-4244q2" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Acar, B., et al. (2024). The varying clinical effectiveness of single, three and five intraarticular injections of platelet-rich plasma in knee osteoarthritis. Journal of Orthopaedic Surgery and Research, 19, 274. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11077828/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11077828</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Al-Muzaini, A., et al. (2025). Efficacy of Platelet-Rich Plasma Injection in the Management of Lateral Epicondylitis: A Retrospective Assessment. Cureus. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11810146/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11810146</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Yildiz, F., & Altay, M. (2024). Platelet-rich plasma in the management of rotator cuff tendinopathy. Joint Diseases and Related Surgery, 35(2), 533–543. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11128950/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11128950</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Tajima, R., et al. (2025). Optimal frequency of platelet-rich plasma injections for managing osteoarthritis: A longitudinal study. Journal of Orthopaedic Science. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11992392/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11992392</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Montserrat, F., et al. (2025). Platelet-Rich Plasma for Knee Osteoarthritis: A Comprehensive Narrative Review of the Mechanisms, Preparation Protocols, and Clinical Evidence. Journal of Clinical Medicine, 14(11), 3983. <a href="https://www.mdpi.com/2077-0383/14/11/3983" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3390/jcm14113983</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Anand, G., et al. (2021). Platelet-rich plasma as an effective biological therapy in early-stage knee osteoarthritis: One year follow up. Journal of Arthroscopy and Joint Surgery, 8(1), 10–17. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7919502/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7919502</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Qi, K., et al. (2024). Comparison of clinical efficacy of sequential and single intra-articular injection of platelet-rich plasma in treatment of early/mid-stage knee osteoarthritis. Frontiers in Surgery. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12738803/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12738803</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Souzdalnitski, D. (2018). Platelet-Rich Plasma Injections for Knee Osteoarthritis: How Long Do the Benefits Last? ASRA Newsletter. <a href="https://asra.com/news-publications/asra-newsletter/newsletter-item/asra-news/2018/07/24/platelet-rich-plasma-injections-for-knee-osteoarthritis-how-long-do-the-benefits-last-" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Mehta, S., et al. (2021). Platelet-rich plasma (PRP) in osteoarthritis (OA) knee: Correct dose critical for long term clinical efficacy. Scientific Reports, 11, 3971. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7889864/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7889864</a>
+      </span>
+    </li>
+
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Silvestre, A., et al. (2023). Retrospective Analysis of Responders and Impaired Patients with Knee Osteoarthritis Treated with Two Consecutive Injections of Very Pure PRP. Bioengineering, 10(8), 922. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10451974/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10451974</a>
+      </span>
+    </li>
+
+  </ol>
+</div>
+
+ 
+   ` 
+},
 
 {
 id: 'pain-medication-combination-safety',
@@ -534,1094 +1813,7 @@ id: 'pain-medication-combination-safety',
    ` 
 },
 
-{
-  id: 'childhood-myopia-prevention-control',
-  title: '近視全解析：戶外活動、散瞳劑，哪種控制近視方法最有效？',
-  lastModified: '2026-06-02',
-  category: '衛教文章',
-  date: '2026-06-02',
-  summary: '從實證運動與眼科醫學角度，深入剖析全球與台灣的近視公衛危機。打破「室內看遠」與「眼球按摩」的傳統迷思，透過最新統合分析與隨機對照試驗，完整評比戶外自然光照、低濃度阿托品散瞳劑、角膜塑型片（OK鏡）的真實保護效果與科學機制。',
-  coverImage: '/images/news/article/myopia-prevention-analysis.webp',
-  seoTitle: '實證醫學全解析：戶外活動、散瞳劑與OK鏡，哪種近視控制方法最有效？',
-  seoDescription: '從實證眼科醫學角度剖析台灣兒童近視危機。結合最新臨床研究，評比戶外光照、低濃度阿托品、角膜塑型片（OK鏡）與眼球按摩的實證強度，助您掌握科學控度關鍵。',
-  keywords: [
-    '近視預防',
-    '近視控制',
-    '戶外活動120',
-    '阿托品眼藥水',
-    '低濃度散瞳劑',
-    '角膜塑型片',
-    'OK鏡',
-    '眼保健操',
-    '眼軸增長',
-    '多巴胺護眼'
-  ],
-    contentHtml: `
-<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
-  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
-  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-    「去看遠一點，眼睛才不會壞！」這句話你小時候一定聽過。事實上，爸媽說的並非無的放矢——大量科學研究證實，<strong>戶外活動時間</strong>是目前最有力的近視預防因子之一，關鍵不在於「看遠」，而在於戶外的自然光照。<br><br>
-    然而，近視已成為全球公衛危機，台灣更是世界近視盛行率最高的地區之一，小學生近視率高達三成以上。面對這場「近視大流行」，哪些方法真的有效？按摩穴位有用嗎？散瞳劑安全嗎？角膜塑型片又是什麼？本文將以實證醫學為基礎，用清楚易懂的語言，系統性地為你解答所有關於近視預防的疑問。
-    <sup><a href="#ref1" style="color: #0284c7;">[1]</a></sup><sup><a href="#ref2" style="color: #0284c7;">[2]</a></sup><sup><a href="#ref3" style="color: #0284c7;">[3]</a></sup>
-  </p>
-</div>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    一、近視是什麼？為什麼台灣孩子特別容易近視？
-  </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    近視是一種眼軸（眼球從前到後的長度）過長、導致光線落在視網膜前方而非正確焦點的屈光狀態。簡單來說，就是看遠方模糊、看近物清楚。
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    台灣、韓國、中國、新加坡等東亞地區的近視盛行率在全球名列前茅。根據研究統計，<strong style="color: #2dd4bf;">全球近視盛行率已從 2000 年的約 22.9% 攀升至 2020 年的 34%，預估 2050 年將達 50%，影響近 50 億人口</strong>。
-    <sup><a href="#ref1" style="color: #2dd4bf;">[1]</a></sup>
-    更令人擔憂的是，台灣小學二年級學童的近視盛行率已達 36.4%，且近視發生時間有越來越早的趨勢。
-    <sup><a href="#ref4" style="color: #2dd4bf;">[4]</a></sup>
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    近視不只是戴副眼鏡這麼簡單。<strong style="color: #ffffff;">高度近視（-6.00 屈光度以上）</strong>與視網膜剝離、青光眼、黃斑部病變等嚴重眼疾的風險顯著相關，是造成不可逆失明的重要原因。因此，從兒童時期就積極預防、延緩近視惡化，是保護一生視力的關鍵。
-  </p>
- 
-  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 什麼原因造成近視？</h4>
-    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
-      近視的成因是遺傳與環境交互作用的結果。研究顯示，父母其中一方近視，子女近視風險增加約 1.66 倍；若父母雙方都近視，風險更高達 2.82 倍。
-      <sup><a href="#ref4" style="color: #0e7490;">[4]</a></sup>
-      但遺傳只是基礎，環境因素才是近幾十年來近視「大爆發」的主因——大量近距離用眼、戶外活動時間不足，是最主要的可改變危險因子。
-      <sup><a href="#ref5" style="color: #0e7490;">[5]</a></sup>
-    </p>
-  </div>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    二、「看遠比較不會近視」——爸媽說的到底對不對？
-  </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    這個問題的答案是：<strong style="color: #2dd4bf;">對了一半，但理由不太一樣。</strong>爸媽叫你去看遠，背後的核心概念是「去戶外、不要一直盯著書本或螢幕」，而這方向是正確的。但關鍵不是「眺望遠方」這個動作本身，而是戶外環境中的<strong style="color: #ffffff;">明亮自然光</strong>。
-  </p>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">戶外光線才是真正的護眼關鍵</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    科學研究發現，戶外光線的強度（通常超過 10,000 勒克斯，是室內光線的 10–100 倍）能刺激視網膜分泌多巴胺。多巴胺具有抑制眼軸拉長的作用，而眼軸拉長正是近視加深的結構性原因。
-    <sup><a href="#ref6" style="color: #2dd4bf;">[6]</a></sup>
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    超過七項系統性回顧研究彙整了逾 63,920 名兒童的資料，一致發現：<strong style="color: #ffffff;">戶外時間越多的孩子，近視的發生率與盛行率越低</strong>。
-    <sup><a href="#ref2" style="color: #2dd4bf;">[2]</a></sup>
-    更進一步的劑量分析顯示，每增加一小時的每日戶外時間，近視發生率可降低約 2%。
-    <sup><a href="#ref7" style="color: #2dd4bf;">[7]</a></sup>
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    台灣政府也因此推行「天天戶外 120 分鐘」的校園政策，相關族群研究顯示，這項干預確實與近視盛行率的穩定甚至下降有所關聯。
-    <sup><a href="#ref1" style="color: #2dd4bf;">[1]</a></sup>
-    研究模型甚至估計，若能全面推行每天 2 小時戶外活動，到 2050 年中國兒童近視盛行率有望從預估的 71.9% 降至 14.4%。
-    <sup><a href="#ref8" style="color: #2dd4bf;">[8]</a></sup>
-  </p>
- 
-  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
-    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
-      <strong>⚠️ 重要提醒：</strong>「在室內看遠」的效果遠不如「在戶外活動」。在光線昏暗的房間內望向窗外或注視遠處牆壁，並不能提供足以刺激多巴胺分泌的光照強度。真正的保護作用來自於走出戶外、沐浴在自然光中。
-    </p>
-  </div>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">戶外活動對「已近視」的孩子有效嗎？</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    這裡需要釐清一個重要的細節：<strong style="color: #ffffff;">增加戶外時間主要對「預防近視發生」效果顯著，但對「已近視者」延緩度數加深的效果，目前研究結果較為分歧。</strong>
-    <sup><a href="#ref9" style="color: #2dd4bf;">[9]</a></sup>
-    有研究指出，戶外活動似乎對非近視的學童保護作用更大，對已發生近視的孩子，戶外時間的增加未必能有效阻止度數持續進展。
-    <sup><a href="#ref10" style="color: #2dd4bf;">[10]</a></sup>
-    因此，預防「從無到有」比預防「從有到深」效果更明確——這也提醒我們，<strong>近視預防要越早開始越好。</strong>
-  </p>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    三、哪些方法真的有效？近視控制方法完整評比
-  </h2>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">✅ 方法一：戶外活動（證據等級：強）</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    如前所述，每天至少 <strong style="color: #ffffff;">80 至 120 分鐘</strong>的戶外時間，是目前實證等級最強、最安全、成本最低的近視預防策略。不需要特定活動，步行、玩耍、騎車均可——重要的是暴露在充足自然光下。
-    <sup><a href="#ref2" style="color: #2dd4bf;">[2]</a></sup>
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    一項納入 219,802 名台灣非近視學童的大型追蹤研究發現，充足的戶外時間不僅單獨對近視有保護效果，更能減緩因大量近距離閱讀帶來的近視風險——兩者之間存在交互作用，增加戶外活動能「抵消」部分近距離用眼的危害。
-    <sup><a href="#ref3" style="color: #2dd4bf;">[3]</a></sup>
-  </p>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">✅ 方法二：低濃度散瞳劑（阿托品眼藥水）（證據等級：強）</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    「散瞳劑」這個名字讓很多家長擔心，但其實用於控制近視的散瞳劑濃度（0.01%–0.05%）遠低於驗光時使用的高濃度散瞳劑（0.5%–1%），副作用相對輕微。
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    2024 年的系統性回顧研究彙整了針對 644 名 4–12 歲「準近視」兒童的研究，發現低濃度阿托品（0.01%–0.05%）組別的近視發生風險顯著低於安慰劑組，且急速近視進展（每年惡化超過 0.5 度）也下降了約 50%。
-    <sup><a href="#ref11" style="color: #2dd4bf;">[11]</a></sup>
-    另一項 2026 年最新的統合分析（涵蓋 2017–2024 年的 9 項隨機對照試驗）也確認，0.01% 阿托品每年可減緩屈光度惡化約 +0.14D，同時使眼軸延長速度減少約 0.05 mm/年。
-    <sup><a href="#ref12" style="color: #2dd4bf;">[12]</a></sup>
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    值得注意的是，<strong style="color: #ffffff;">濃度越高效果越強，但副作用（畏光、近距離視力模糊）也越明顯</strong>。目前亞洲兒童常用 0.025%–0.05% 濃度，須由眼科醫師評估後開立，不建議自行購買使用。
-    <sup><a href="#ref13" style="color: #2dd4bf;">[13]</a></sup>
-  </p>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">✅ 方法三：角膜塑型鏡片（OK 鏡）（證據等級：中至強）</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    角膜塑型鏡片（簡稱 OK 鏡）是一種夜間配戴的硬式隱形眼鏡，透過改變角膜弧度來暫時矯正視力，並藉由周邊離焦效果抑制眼軸延長。
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    一項 2024 年的研究彙整了三項前瞻性臨床試驗（125 名使用 OK 鏡、118 名對照組）的兩年追蹤數據，發現 OK 鏡組眼軸延長量（0.41 mm）顯著少於戴一般眼鏡組（0.65 mm），差距達 0.24 mm。
-    <sup><a href="#ref14" style="color: #2dd4bf;">[14]</a></sup>
-    更長期的 11 年追蹤研究顯示，累計眼軸延長量減少可達 0.69 mm，效果隨配戴時間增加而累積。
-    <sup><a href="#ref15" style="color: #2dd4bf;">[15]</a></sup>
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    需注意的是，OK 鏡屬於醫療器材，需定期回診追蹤，也有感染風險（尤其是角膜炎），<strong style="color: #ffffff;">必須在眼科醫師的指導下配戴，並嚴格遵守清潔衛生規範。</strong>
-  </p>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">⚠️ 方法四：眼球按摩、穴位按壓（證據等級：弱）</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    在華人社會中，眼球按摩操（尤其是中國大陸推行的「眼保健操」）有著幾十年的普及歷史，也是許多台灣家長直覺會嘗試的方法。然而，現有科學文獻給出的結論並不樂觀。
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    一項 2024 年發表於 Eye 期刊的系統性回顧與統合分析，彙整了 11 項研究（921 名受試者），結果顯示眼球按摩運動對於預防近視或延緩近視進展的效果，<strong style="color: #ffffff;">統計上並無明顯優於未做按摩的對照組</strong>。
-    <sup><a href="#ref16" style="color: #2dd4bf;">[16]</a></sup>
-    研究者也指出，現有試驗品質偏低，許多研究存在偏誤風險。
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    至於針灸、穴位按壓等傳統醫學方式，雖然在傳統理論中有調節氣血、放鬆眼肌的概念，但目前的科學證據品質尚不足以確認其能有效控制近視度數或眼軸長度的變化。
-    <sup><a href="#ref17" style="color: #2dd4bf;">[17]</a></sup>
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    <strong style="color: #ffffff;">結論：</strong>眼球按摩不會有害，可以作為放鬆眼睛疲勞的輔助方式，但不應期待它能取代戶外活動、散瞳劑或 OK 鏡等具有強力實證的干預手段。
-  </p>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">✅ 方法五：減少近距離用眼與螢幕時間（證據等級：中）</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    研究顯示，每次近距離閱讀超過 30 分鐘、閱讀距離小於 30 公分，都是近視的危險因子。
-    <sup><a href="#ref5" style="color: #2dd4bf;">[5]</a></sup>
-    螢幕時間的影響較複雜——目前研究結果並不一致，部分學者認為螢幕本身的危害不亞於其他近距離用眼活動，更重要的機制可能是使用螢幕時排擠了戶外活動的時間。
-    <sup><a href="#ref1" style="color: #2dd4bf;">[1]</a></sup>
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    實際建議：每近距離用眼 30 分鐘，休息 5–10 分鐘並望向遠方；閱讀距離保持 30 公分以上；使用螢幕時保持適當距離，並搭配充足的室內採光。
-  </p>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    四、近視控制方法比較總表
-  </h2>
- 
-  <style>
-    .custom-table-container {
-      width: 100%;
-      overflow-x: auto;
-      margin: 20px 0;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    }
-    .modern-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
-      font-size: 15px;
-      background-color: #ffffff;
-      color: #1f2937;
-      min-width: 750px;
-    }
-    .modern-table thead tr {
-      background-color: #1e3a8a;
-      color: #ffffff;
-      text-align: left;
-      font-weight: bold;
-    }
-    .modern-table th {
-      padding: 16px 12px;
-      border-bottom: 2px solid #111827;
-      letter-spacing: 0.5px;
-    }
-    .modern-table td {
-      padding: 14px 12px;
-      border-bottom: 1px solid #e5e7eb;
-      line-height: 1.6;
-    }
-    .modern-table td:first-child {
-      background-color: #f9fafb;
-      font-weight: 600;
-      color: #111827;
-      width: 160px;
-    }
-    .modern-table tbody tr:nth-of-type(even) {
-      background-color: #f3f4f6;
-    }
-    .modern-table tbody tr:hover {
-      background-color: #e0e7ff;
-      transition: background-color 0.2s ease;
-    }
-    @media (max-width: 600px) {
-      .modern-table { font-size: 14px; }
-    }
-  </style>
- 
-  <div class="custom-table-container">
-    <table class="modern-table">
-      <thead>
-        <tr>
-          <th>方法</th>
-          <th>預防近視發生</th>
-          <th>延緩度數加深</th>
-          <th>證據強度</th>
-          <th>注意事項</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>每日戶外活動 ≥ 80–120 分鐘</td>
-          <td>效果顯著</td>
-          <td>效果有限（爭議中）</td>
-          <td>強</td>
-          <td>免費、安全，應作為第一線措施</td>
-        </tr>
-        <tr>
-          <td>低濃度阿托品散瞳劑（0.01%–0.05%）</td>
-          <td>有效（降低 38%）</td>
-          <td>有效</td>
-          <td>強</td>
-          <td>需醫師處方，高濃度副作用較多</td>
-        </tr>
-        <tr>
-          <td>角膜塑型鏡片（OK 鏡）</td>
-          <td>不適用（已有近視才使用）</td>
-          <td>有效（眼軸減少約 0.24 mm/2年）</td>
-          <td>中至強</td>
-          <td>需嚴格衛生規範，感染風險存在</td>
-        </tr>
-        <tr>
-          <td>減少近距離用眼、螢幕時間</td>
-          <td>有一定效果</td>
-          <td>間接幫助</td>
-          <td>中</td>
-          <td>需搭配其他措施，單獨效果有限</td>
-        </tr>
-        <tr>
-          <td>眼球按摩操、穴位按壓</td>
-          <td>無明顯效果</td>
-          <td>無明顯效果</td>
-          <td>弱</td>
-          <td>可輔助舒緩疲勞，但不能取代正規治療</td>
-        </tr>
-        <tr>
-          <td>周邊離焦眼鏡（多焦點鏡片）</td>
-          <td>尚待研究</td>
-          <td>部分有效</td>
-          <td>中</td>
-          <td>較傳統眼鏡效果好，需眼科評估配戴</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
-      📢 五、常見三大迷思破解
-    </h2>
-    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
- 
-      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
-        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
-        <div>
-          <strong>「在室內看遠就可以保護眼睛」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不正確！</strong> 保護效果來自戶外的強烈自然光（超過 10,000 勒克斯），室內光線（通常只有 200–500 勒克斯）遠不足以刺激視網膜分泌足量的多巴胺。在室內望向窗外的遠山，對近視預防幫助有限。<sup><a href="#ref6" style="color: #2563eb;">[6]</a></sup> 必須「走出去」才算數。</span>
-        </div>
-      </li>
- 
-      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
-        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
-        <div>
-          <strong>「散瞳劑很傷眼，長期點不好」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度恐懼！</strong> 用於驗光的高濃度散瞳劑（0.5%–1%）確實會造成明顯畏光和視力模糊，但用於控制近視的低濃度製劑（0.01%–0.05%）副作用輕微得多。多項隨機對照試驗確認其安全性，且光敏感反應的發生率與安慰劑組相比無顯著差異。<sup><a href="#ref12" style="color: #2563eb;">[12]</a></sup> 在醫師評估下使用是安全的。</span>
-        </div>
-      </li>
- 
-      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
-        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
-        <div>
-          <strong>「孩子近視了，只要每天做眼保健操就可以控制」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不足夠！</strong> 中國大陸推行了數十年的眼保健操，在最新的系統性回顧中並未找到其能有效預防近視或控制度數加深的強力證據。<sup><a href="#ref16" style="color: #2563eb;">[16]</a></sup> 眼球按摩可作為舒緩疲勞的輔助，但不能取代已有確切實證的措施（戶外活動、散瞳劑、OK 鏡）。請勿讓孩子以為做了按摩操就可以放心繼續長時間盯螢幕。</span>
-        </div>
-      </li>
- 
-    </ul>
-  </div>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    六、什麼時候該帶孩子去看眼科？
-  </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    許多家長等到孩子「看不清黑板」才帶去驗光，但這往往已是近視發生一段時間後了。以下情況建議盡早就診：
-  </p>
-  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">父母雙方或一方有近視：</strong>孩子屬於高風險族群，建議從幼稚園起定期追蹤視力</li>
-    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">孩子習慣瞇眼看東西、靠近螢幕或書本：</strong>可能已有視力問題</li>
-    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">抱怨眼睛痠、頭痛、看遠不清楚：</strong>需要正式驗光評估</li>
-    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">已確診近視，每年度數增加超過 75–100 度：</strong>屬快速進展，應與醫師討論積極控制策略</li>
-  </ul>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    一般建議，<strong style="color: #ffffff;">6 歲以上學齡兒童每半年進行一次眼科追蹤</strong>（包含睫狀肌麻痺後的精確驗光）。近視度數越高、進展越快，追蹤頻率應越密集。
-  </p>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
-  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
-    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
-      <span style="margin-right: 8px;">👁️</span> FAQ 常見問題
-    </h2>
-  </div>
-  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
- 
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q1：近視可以逆轉嗎？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      目前的近視控制措施（包含散瞳劑和 OK 鏡）的目的是「減緩進展」，而非「治癒」。成年後眼球發育趨於穩定，度數自然進展會放慢；若希望不再依賴眼鏡，雷射手術（如 LASIK）是另一個成年後的選項，但屬矯正非預防。
-    </p>
- 
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q2：看電視或手機是近視的主因嗎？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      不完全是。研究指出，東亞地區近視率的快速上升在智慧型手機普及之前就已發生，因此螢幕本身不是唯一罪魁禍首。更核心的問題是「近距離用眼時間增加」加上「戶外時間減少」，兩者疊加才造成近視大流行。管控螢幕時間有其意義，但更重要的是確保每天有充足的戶外活動。
-    </p>
- 
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q3：散瞳劑要點多久才有效果？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      效果通常需要持續使用才能維持。研究中多以 1–2 年為觀察期，部分研究顯示停藥後可能有「反彈效應」（度數短暫加速惡化），因此通常建議在近視進展最快速的學齡期持續使用，直到醫師評估可以停藥。停藥的時機和方式需與眼科醫師討論。
-    </p>
- 
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q4：陰天或多雲的時候出去也有效嗎？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      有一定效果。陰天戶外光線仍然遠高於室內（通常 1,000–10,000 勒克斯），雖不如晴天理想，但仍優於待在室內。重要的是，研究顯示保護效果並不僅僅來自視覺上的「看遠」，而是光照強度本身，所以即使天色不佳，外出活動仍比待在室內來得好。
-    </p>
- 
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q5：都市孩子是不是比鄉下孩子更容易近視？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      整體而言是的。都市兒童平均戶外活動時間較少、學業壓力較高、近距離用眼活動更多。台北市的研究確實發現，都市地區學童的近視盛行率高於郊區，這反映的是生活型態差異，而非地理本身的直接影響。這也提醒我們，即使是都市孩子，只要能創造充足的戶外時間，依然能降低近視風險。
-    </p>
- 
-  </div>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
- 
-  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
-    爸媽叫你去看遠，出發點是對的，背後的科學道理也是真實的——只不過重點不在於「眺望遠方」這個動作，而在於「走出去、曬太陽」。近視的預防，從來不是一招就能解決的事，需要多管齊下：每天累積足夠的戶外活動時間、適時減少近距離用眼、必要時在醫師指導下使用散瞳劑或 OK 鏡。
-  </p><br>
- 
-  <p style="color: #475569; font-size: 1.05rem;">
-    眼球按摩和穴位按壓不是壞事，但別把它當成萬靈丹。最重要的是，<strong style="color: #1e293b;">不要等孩子「看不清楚了」才採取行動</strong>——定期追蹤視力，早期發現、早期介入，才是保護孩子一生視力最有效的策略。
-  </p>
- 
-  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
-      💡 今天就開始：讓孩子每天至少在戶外活動 80 分鐘、減少連續近距離用眼超過 30 分鐘，並預約眼科進行完整的視力評估。
-    </p>
-  </div>
-</div>
-  `,
-  referencesHtml: `
-<h2>📚 參考文獻 (References)</h2>
-<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
-  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
- 
-    <li id="ref1" style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        IMI 2025 Digest – Myopia Institute (2026). International Myopia Institute White Paper 2025. Time outdoors remains the most reliable protective factor; Taiwan outdoor activity policies associated with prevalence stabilization.
-        <a href="https://myopiainstitute.org/imi-whitepaper/imi-2025-digest/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
-      </span>
-    </li>
- 
-    <li id="ref2" style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Dhakal, R., Shah, R., Huntjens, B., Verkicharla, P.K., & Lawrenson, J.G. (2022). Time spent outdoors as an intervention for myopia prevention and control in children: an overview of systematic reviews. <em>Ophthalmic and Physiological Optics</em>, 42(3), 545–558.
-        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9305934/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9305934</a>
-      </span>
-    </li>
- 
-    <li id="ref3" style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Tianjin Child and Adolescent Research of Eye (TICARE) Study Group (2025). Combined and interaction effects of outdoor and reading time on myopia onset: evidence from over 210,000 schoolchildren in China. <em>BMJ Open</em>.
-        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12512000/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12512000</a>
-      </span>
-    </li>
- 
-    <li id="ref4" style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Chang, H.C., et al. (2016). Prevalence and risk factors for myopia in second-grade primary school children in Taipei: A population-based study. <em>Journal of the Formosan Medical Association</em>, 115(7), 507–517.
-        <a href="https://www.sciencedirect.com/science/article/pii/S1726490116300788" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.jfma.2015.12.008</a>
-      </span>
-    </li>
- 
-    <li id="ref5" style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Lanca, C., & Saw, S.M. (2023). Risk Factors for Myopia: A Review. <em>Journal of Clinical Medicine</em>, 12(19), 6178.
-        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10532298/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10532298</a>
-      </span>
-    </li>
- 
-    <li id="ref6" style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        French, A.N., Ashby, R.S., Morgan, I.G., & Rose, K.A. (2013). Time outdoors and the prevention of myopia. <em>Experimental Eye Research</em>, 114, 58–68.
-        <a href="https://researchportalplus.anu.edu.au/en/publications/time-outdoors-and-the-prevention-of-myopia/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.exer.2013.02.018</a>
-      </span>
-    </li>
- 
-    <li id="ref7" style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Al-Joufi, H., et al. (2023). Correlation between Screen Time, Outdoor Activity, and Myopia Progression in Urban School-aged Children: A Concise Review. <em>Journal of Neonatal Surgery</em>, 14(10s), 1061–1070. [Each additional hour of daily outdoor time associated with 2% reduction in myopia incidence, RR: 0.98]
-        <a href="https://www.jneonatalsurg.com/index.php/jns/article/download/8410/7406/26987" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
-      </span>
-    </li>
- 
-    <li id="ref8" style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Zhao, J., et al. (2025). Prevalence and temporal trends in myopia and high myopia children in China: a systematic review and meta-analysis with projections from 2020 to 2050. <em>The Lancet Regional Health – Western Pacific</em>.
-        <a href="https://www.thelancet.com/journals/lanwpc/article/PIIS2666-6065(25)00021-5/fulltext" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.lanwpc.2025.101310</a>
-      </span>
-    </li>
- 
-    <li id="ref9" style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Li, D., Min, S., & Li, X. (2024). Is Spending More Time Outdoors Able to Prevent and Control Myopia in Children and Adolescents? A Meta-Analysis. <em>Ophthalmic Research</em>, 67(1), 393–404. [Outdoor time prevents onset but does not clearly slow progression in already-myopic eyes]
-        <a href="https://karger.com/ore/article/67/1/393/906983/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1159/000539229</a>
-      </span>
-    </li>
- 
-    <li id="ref10" style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        He, X., et al. (2022). Time Outdoors in Reducing Myopia [cluster-randomized intervention trial]. <em>Ophthalmology</em>.
-        <a href="https://www.aaojournal.org/article/S0161-6420(22)00483-3/fulltext" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.ophtha.2022.06.017</a>
-      </span>
-    </li>
- 
-    <li id="ref11" style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Liao, X., et al. (2024). Efficacy and Safety of Low-Dose Atropine on Myopia Prevention in Premyopic Children: Systematic Review and Meta-Analysis. <em>Journal of Clinical Medicine</em>, 13(5), 1506.
-        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10932201/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10932201</a>
-      </span>
-    </li>
- 
-    <li id="ref12" style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Magurno, L., Lang, M., Zapata, M., & Gallo, J.E. (2026). Low-dose atropine for myopia progression in children: a 2017–2024 systematic review and meta-analysis of randomized placebo-controlled trials. <em>Frontiers in Medicine</em>.
-        <a href="https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2026.1715033/full" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3389/fmed.2026.1715033</a>
-      </span>
-    </li>
- 
-    <li id="ref13" style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Wang, Z., et al. (2024). Effectiveness of various atropine concentrations in myopia control for Asian children: a network meta-analysis. <em>Frontiers in Pharmacology</em>.
-        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11683068/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11683068</a>
-      </span>
-    </li>
- 
-    <li id="ref14" style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Santodomingo-Rubido, J., Cheung, S.W., &amp; Villa-Collar, C.; ROMIO/MCOS/TO-SEE Groups (2024). A new look at the myopia control efficacy of orthokeratology. <em>Contact Lens and Anterior Eye</em>, 102251.
-        <a href="https://www.contactlensjournal.com/article/S1367-0484(24)00143-7/fulltext" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.clae.2024.102251</a>
-      </span>
-    </li>
- 
-    <li id="ref15" style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Santodomingo-Rubido, J., et al. (2025). Eleven years of orthokeratology contact lens wear for slowing myopia progression in children. <em>Optometry and Vision Science</em>.
-        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12101883/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12101883</a>
-      </span>
-    </li>
- 
-    <li id="ref16" style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Cui, D., et al. (2024). Eye exercises for myopia prevention and control: a comprehensive systematic review and meta-analysis of controlled trials. <em>Eye (London)</em>, 38(3), 473–480.
-        <a href="https://pubmed.ncbi.nlm.nih.gov/37740051/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 37740051</a>
-      </span>
-    </li>
- 
-    <li id="ref17" style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Yu, Z., Wang, X., Zhao, X., Li, D., & Duan, J. (2020). The effectiveness and safety of acupuncture for patients with myopia: A protocol for a systematic review and meta-analysis. <em>Medicine</em>, 99(23), e20410.
-        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7306361/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7306361</a>
-      </span>
-    </li>
- 
-  </ol>
-</div>
- 
-   ` 
-},
 
-{
-  id: 'blue-light-protection-analysis',
-  title: '藍光保護貼、藍光眼鏡、濾藍光螢幕：真的能保護眼睛嗎？',
-  lastModified: '2026-06-01',
-  category: '衛教文章',
-  date: '2026-06-01',
-  summary: '深度剖析藍光保護貼、藍光眼鏡、濾藍光螢幕等產品的護眼效果。實證研究揭露這些產品對眼睛疲勞、睡眠品質與視網膜保護的真實功效，並提供科學預防數位眼疲勞的策略。',
-  coverImage: '/images/news/article/blue-light-protection-analysis.webp',
-  seoTitle: '藍光保護貼、藍光眼鏡、濾藍光螢幕真的有效嗎？科學證據全解析',
-  seoDescription: '深度剖析藍光保護貼、藍光眼鏡、濾藍光螢幕等產品的護眼效果。實證研究揭露這些產品對眼睛疲勞、睡眠品質與視網膜保護的真實功效，並提供科學預防數位眼疲勞的策略。',
-  keywords: [
-    '藍光眼鏡',
-    '藍光保護貼',
-    '濾藍光螢幕',
-    '數位眼疲勞',
-    '電腦視覺症候群',
-    '藍光危害',
-    '護眼',
-    '睡眠品質',
-    '褪黑激素',
-    '視網膜保護'
-  ],
-  contentHtml: `
-<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
-  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
-  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
-    藍光產品市場年年成長，但科學證據卻指向令人意外的結論：大多數「濾藍光」產品對眼睛疲勞的改善效果微乎其微。2023年發表於外國期刊的大規模系統性研究，分析了17項隨機對照試驗，結論是藍光濾鏡眼鏡可能無法有效減少短期電腦作業的眼睛疲勞，也無法改善睡眠品質或保護視網膜。
-    <sup><a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013244.pub2/full" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[1]</a></sup><br><br>
-    同時，研究也發現，藍光對眼睛的傷害主要與「高強度光源」及「夜間曝露影響生理時鐘」有關，而非一般日間的螢幕使用。
-    <sup><a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC5473809" target="_blank" rel="noopener noreferrer" style="color: #0284c7;">[2]</a></sup>
-    本文將以實證為基礎，帶你看清藍光產品背後的科學現況，並提供真正有效的護眼建議。
-  </p>
-</div>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    一、什麼是藍光？它真的傷眼嗎？
-  </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    藍光（Blue Light）是可見光中波長介於 380～500 奈米（nm）的高能量光線，廣泛存在於陽光、LED 燈具、手機、電腦螢幕及平板裝置中。由於它屬於高能可見光，能夠穿透角膜與水晶體直達視網膜，因此引發了醫學界與消費者的廣泛關注。
-    <sup><a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC5473809" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    但在討論「藍光傷害」之前，有一個關鍵前提必須先釐清：<strong style="color: #2dd4bf;">來自太陽的藍光強度，遠遠高於手機或電腦螢幕所釋放的藍光。</strong>研究指出，在晴天戶外活動一小時所接受的藍光量，可能相當於盯著電腦螢幕數十小時。因此，藍光本身並非絕對有害，問題在於「曝露的時間點與強度」——尤其是在夜間使用螢幕，可能對生理時鐘造成干擾。
-    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11252550/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[3]</a></sup>
-  </p>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">藍光對身體的潛在危害</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    目前科學研究指出，藍光對人體的主要潛在危害集中在以下幾個面向：
-  </p>
-  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">干擾生理時鐘與褪黑激素分泌：</strong>視網膜中含有對藍光最敏感的「內在光敏視網膜神經節細胞」，其感光色素黑視蛋白的敏感波長約在 480 nm。夜間藍光曝露會抑制大腦松果體分泌褪黑激素，延遲入睡時間並降低睡眠品質。
-      <sup><a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC5473809" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">視網膜光毒性（理論層面）：</strong>動物實驗顯示高強度藍光照射可誘導視網膜感光細胞凋亡，產生氧化壓力損傷。然而，現有研究尚未充分證明一般日常螢幕使用強度的藍光，會對人類視網膜造成實質性損害。
-      <sup><a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC5473809" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">數位眼疲勞：</strong>長時間使用螢幕確實會造成眼睛疲勞、乾澀、頭痛等症狀，但這主要源於長時間近距離用眼、眨眼次數減少、螢幕眩光與姿勢問題，而非單純的藍光本身。
-      <sup><a href="https://www.aoa.org/healthy-eyes/eye-and-vision-conditions/computer-vision-syndrome" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[4]</a></sup>
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">其他潛在影響：</strong>部分研究顯示長期夜間藍光曝露可能與乳癌風險、憂鬱症狀及認知功能下降有一定關聯，但這些研究多為觀察性研究，仍需進一步驗證。
-      <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11252550/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[3]</a></sup>
-    </li>
-  </ul>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    二、數位眼疲勞：到底是誰的問題？
-  </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    許多人使用藍光產品的主要動機，是為了緩解長時間使用螢幕後的眼睛疲勞——也就是醫學上所稱的「電腦視覺症候群」或「數位眼疲勞」。
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    這個問題有多普遍？研究數字令人吃驚：全球約有 50～66% 的數位裝置使用者出現數位眼疲勞症狀，2024年一項針對 103 項研究、逾 66,000 名受試者的大型統合分析顯示，整體盛行率達 66%。
-    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10156438" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[5]</a></sup>
-    COVID-19 疫情期間，遠距工作普及後，盛行率更一度飆升至 80～94%。
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    眼睛疲勞的症狀包括：視力模糊、眼睛乾澀刺痛、頭痛、肩頸痠痛、對光敏感等。然而，研究指出這些症狀的主要原因並非藍光，而是：
-  </p>
-  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">眨眼次數顯著減少：</strong>正常情況下每分鐘約眨眼 15～20 次，使用螢幕時可能降至 5～7 次，導致淚液蒸發加速、乾眼症狀</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">持續調節疲勞：</strong>眼睛的睫狀肌需反覆對焦，長時間收縮引發疲勞</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">螢幕眩光與對比問題：</strong>環境光源反射至螢幕造成額外負擔</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">觀看距離與角度不當：</strong>螢幕距離過近或高度不適合</li>
-    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">未矯正的屈光不正：</strong>近視、遠視、散光若未正確矯正，螢幕使用會大幅加重症狀</li>
-  </ul>
- 
-  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床重要觀點</h4>
-    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
-      數位眼疲勞最常見的根本原因其實是「長時間近距離用眼」與「眨眼不足」，而非藍光本身。許多患者花了數千元購買藍光眼鏡或保護貼後，症狀依然沒有改善——因為他們忽略了更根本的問題：使用習慣、螢幕設置與潛在的屈光不正。
-    </p>
-  </div>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    三、藍光眼鏡：科學怎麼說？
-  </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    藍光眼鏡是目前最常見的藍光防護產品之一，在眼鏡行、網路購物平台均廣泛販售。這類眼鏡透過在鏡片基材中嵌入吸收材料或在表面鍍上反射膜，通常可過濾波長 400～450 nm 範圍內約 20～30% 的藍光。
-  </p>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">黃金標準研究：Cochrane 系統性回顧</h3>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
-    目前最具說服力的研究，是 2023 年由墨爾本大學、倫敦城市大學及莫納什大學學者聯合發表的《Cochrane 系統性回顧》。研究者分析了 17 項隨機對照試驗，針對藍光濾鏡眼鏡的效果做出以下結論：
-    <sup><a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013244.pub2/full" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[1]</a></sup>
-  </p>
-  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">眼睛疲勞：</strong>藍光濾鏡眼鏡「可能無法」有效減少電腦作業相關的短期眼睛疲勞症狀（低確定性證據）</li>
-    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">睡眠品質：</strong>現有研究無法確定藍光濾鏡眼鏡是否改善睡眠品質（低至極低確定性證據）</li>
-    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">視網膜保護：</strong>納入研究均未評估視網膜保護效果，因此無從判斷</li>
-    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">最佳矯正視力與對比敏感度：</strong>兩者均未見顯著差異</li>
-    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">副作用：</strong>偶有憂鬱症狀加重、頭痛或情緒低落的回報（可能與長時間配戴眼鏡本身相關，而非濾藍光功能）</li>
-  </ul>
- 
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    美國眼科學會（AAO）亦於 2024 年明確表示，目前沒有科學證據支持在使用電腦時配戴特殊眼鏡的必要性，並建議採用其他有實證基礎的方法來緩解眼睛疲勞。
-    <sup><a href="https://www.aao.org/eye-health/tips-prevention/are-computer-glasses-worth-it" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[6]</a></sup>
-  </p>
- 
-  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
-    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
-      <strong>⚠️ 值得注意：</strong>有部分使用者表示配戴藍光眼鏡後主觀感受確實改善，但這很可能是「安慰劑效應」——因為配戴了眼鏡而更有意識地休息眼睛，而非濾藍光本身的功效。在沒有排除安慰劑效應的臨床試驗中，任何主觀感受的改善都需要謹慎解讀。
-    </p>
-  </div>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    四、藍光保護貼：貼上去有用嗎？
-  </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    藍光保護貼是一種黏貼於裝置螢幕表面的透明薄膜，主要目的是過濾螢幕發出的藍光，同時提供防刮保護。這類產品通常標榜可過濾 400～450 nm 波段的藍光。
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    2020 年發表於《Middle East African Journal of Ophthalmology》的研究直接量測了藍光保護貼的實際過濾效果：在 100% 亮度設定下，貼上保護貼後，450 nm 波段的藍光強度降低約 <strong style="color: #ffffff;">30%</strong>。然而，研究同時發現，直接調低螢幕亮度至 50% 所達到的藍光降低效果（約 57%），顯著優於保護貼。
-    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/33488015/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[7]</a></sup>
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    換句話說：<strong style="color: #2dd4bf;">免費調低螢幕亮度，比花錢買保護貼更有效地減少藍光曝露。</strong>此外，開啟裝置內建的「夜間模式」或「護眼模式」，搭配降低亮度，效果同樣優於單純黏貼保護貼。
-  </p>
- 
-  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">保護貼的其他問題</h3>
-  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">色偏問題：</strong>部分藍光保護貼會使畫面偏黃，影響視覺體驗與色彩辨識</li>
-    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">觸控靈敏度：</strong>在手機、平板上可能輕微影響觸控反應</li>
-    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">品質差異大：</strong>市面上藍光保護貼品質良莠不齊，部分產品實際過濾效果極為有限</li>
-    <li style="margin-bottom: 0.75rem;"><strong style="color: #ffffff;">缺乏臨床實證：</strong>目前尚無高品質隨機對照試驗證明藍光保護貼能有效改善眼睛疲勞或其他健康指標</li>
-  </ul>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    五、濾藍光螢幕與內建護眼模式：效果如何？
-  </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    部分顯示器或螢幕標榜具備「低藍光」硬體技術，是將濾藍光功能直接整合進螢幕面板或背光系統中，不同於單純的保護貼。此外，目前主流作業系統與行動裝置幾乎均內建「夜間模式」或「護眼模式」，可動態調整螢幕色溫，減少藍光輸出。
-  </p>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    研究顯示，這類軟體型夜間模式能有效降低螢幕發出的短波藍光，對夜間使用時的生理時鐘干擾有一定的緩解作用。然而，關鍵問題在於：<strong style="color: #ffffff;">硬體低藍光螢幕的臨床護眼實證，目前仍相當有限，</strong>且其過濾效果因品牌與規格差異而有所不同。
-    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11252550/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[3]</a></sup>
-  </p>
- 
-  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 實用建議</h4>
-    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
-      相較於購買昂貴的低藍光螢幕或保護貼，直接啟用裝置內建的「夜間模式」（iOS 的 Night Shift、Android 的夜間模式、Windows 的夜間光源、macOS 的 Night Shift）是最經濟實惠的選擇，且在睡前 2 小時使用效果最為顯著。真正的重點在於：傍晚後降低螢幕亮度與色溫，才是保護睡眠品質的關鍵行動。
-    </p>
-  </div>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    六、各類藍光防護產品效果比較
-  </h2>
- 
-  <style>
-    .custom-table-container {
-      width: 100%;
-      overflow-x: auto;
-      margin: 20px 0;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    }
-    .modern-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
-      font-size: 15px;
-      background-color: #ffffff;
-      color: #1f2937;
-      min-width: 800px;
-    }
-    .modern-table thead tr {
-      background-color: #1e3a8a;
-      color: #ffffff;
-      text-align: left;
-      font-weight: bold;
-    }
-    .modern-table th {
-      padding: 16px 12px;
-      border-bottom: 2px solid #111827;
-      letter-spacing: 0.5px;
-    }
-    .modern-table td {
-      padding: 14px 12px;
-      border-bottom: 1px solid #e5e7eb;
-      line-height: 1.6;
-    }
-    .modern-table td:first-child {
-      background-color: #f9fafb;
-      font-weight: 600;
-      color: #111827;
-      width: 150px;
-    }
-    .modern-table tbody tr:nth-of-type(even) {
-      background-color: #f3f4f6;
-    }
-    .modern-table tbody tr:hover {
-      background-color: #e0e7ff;
-      transition: background-color 0.2s ease;
-    }
-    @media (max-width: 600px) {
-      .modern-table {
-        font-size: 14px;
-      }
-    }
-  </style>
- 
-  <div class="custom-table-container">
-    <table class="modern-table">
-      <thead>
-        <tr>
-          <th>產品類型</th>
-          <th>藍光過濾程度</th>
-          <th>減緩眼疲勞實證</th>
-          <th>改善睡眠實證</th>
-          <th>視網膜保護實證</th>
-          <th style="text-align: center;">建議使用時機</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>藍光眼鏡</td>
-          <td>過濾 20～30% 藍光</td>
-          <td>❌ 缺乏充分實證</td>
-          <td>❌ 結果不一致</td>
-          <td>❌ 未充分研究</td>
-          <td style="text-align: center;">夜間使用有限助益</td>
-        </tr>
-        <tr>
-          <td>藍光保護貼</td>
-          <td>降低約 30% 藍光</td>
-          <td>❌ 無高品質實證</td>
-          <td>❌ 無充分實證</td>
-          <td>❌ 未研究</td>
-          <td style="text-align: center;">效果不如調低亮度</td>
-        </tr>
-        <tr>
-          <td>低藍光螢幕</td>
-          <td>因規格而異</td>
-          <td>⚠️ 有限證據</td>
-          <td>⚠️ 有限證據</td>
-          <td>❌ 未充分研究</td>
-          <td style="text-align: center;">可考慮，但非必要</td>
-        </tr>
-        <tr>
-          <td>內建夜間模式</td>
-          <td>動態調整色溫</td>
-          <td>⚠️ 部分研究支持</td>
-          <td>✅ 夜間使用有效</td>
-          <td>❌ 未研究</td>
-          <td style="text-align: center;">傍晚後強烈建議開啟</td>
-        </tr>
-        <tr>
-          <td>調低螢幕亮度</td>
-          <td>降低約 57% 藍光</td>
-          <td>✅ 有效</td>
-          <td>✅ 配合夜間模式效果佳</td>
-          <td>間接保護</td>
-          <td style="text-align: center;">最推薦、免費有效</td>
-        </tr>
-        <tr>
-          <td>20-20-20 休息法</td>
-          <td>不過濾藍光</td>
-          <td>✅ 廣泛建議</td>
-          <td>不直接相關</td>
-          <td>間接有助</td>
-          <td style="text-align: center;">強烈建議日常執行</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
-      📢 七、常見三大誤區解析
-    </h2>
-    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
-      
-      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
-        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
-        <div>
-          <strong>「眼睛疲勞是因為藍光造成的，所以要買藍光眼鏡」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong>數位眼疲勞的主因是長時間近距離用眼、眨眼減少和肌肉持續調節，而非藍光本身。美國眼科學會明確指出，現有科學證據不支持藍光是眼睛疲勞主因的說法。<sup><a href="https://www.aoa.org/healthy-eyes/eye-and-vision-conditions/computer-vision-syndrome" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[4]</a></sup> 正確的對策是調整使用習慣、確保照明充足、定期休息，以及矯正屈光不正。</span>
-        </div>
-      </li>
- 
-      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
-        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
-        <div>
-          <strong>「貼了藍光保護貼，晚上滑手機就不影響睡眠了」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong>影響睡眠的關鍵不只是藍光的波長，還包括光線的整體強度與使用行為。研究顯示，睡前使用電子閱讀器本身——不論有無濾藍光——就會造成生理時鐘延遲與認知表現下降。<sup><a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC5473809" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[2]</a></sup> 真正有效的做法是「睡前 1～2 小時停止使用螢幕」，而非貼上保護貼繼續滑手機。</span>
-        </div>
-      </li>
- 
-      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
-        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
-        <div>
-          <strong>「藍光一定會傷害視網膜，長期使用螢幕必然導致黃斑部病變」</strong><br>
-          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>誇大其詞！</strong>雖然高強度藍光在實驗室條件下確實可對動物視網膜產生光毒性傷害，但目前缺乏充分的人體研究證明，一般日常螢幕使用強度會直接導致黃斑部病變或視網膜病變。<sup><a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013244.pub2/full" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup> 這並不代表完全無風險，但用「必然傷眼」來行銷藍光產品是不符合現有科學證據的說法。</span>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="margin-bottom: 3.5rem;">
-  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
-    八、真正有效的護眼策略：科學實證建議
-  </h2>
-  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-    與其把錢花在功效存疑的藍光產品上，不如落實以下有更充分實證基礎的護眼方法：
-  </p>
-  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">20-20-20 休息法：</strong>每使用螢幕 20 分鐘，花 20 秒望向 20 英尺（約 6 公尺）外的物體，讓睫狀肌得到休息。美國眼科學會及多數眼科機構均推薦此方法緩解調節疲勞。
-      <sup><a href="https://www.aoa.org/healthy-eyes/eye-and-vision-conditions/computer-vision-syndrome" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[4]</a></sup>
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">調低螢幕亮度與色溫：</strong>螢幕亮度應與環境光源相當，避免在黑暗中使用高亮度螢幕。傍晚後開啟夜間模式（暖色調），是減少藍光最實惠的方法，降低亮度至 50% 可使藍光曝露降低近 57%。
-      <sup><a href="https://pubmed.ncbi.nlm.nih.gov/33488015/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[7]</a></sup>
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">有意識地增加眨眼：</strong>用眼過度時提醒自己多眨眼，或使用人工淚液（人工淚水）來維持淚膜完整性，緩解乾眼症狀。
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">調整螢幕位置與環境照明：</strong>螢幕應置於視線略低於水平的位置，距眼睛約 50～70 公分；避免螢幕正對窗戶或強光來源，以減少眩光。
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">矯正屈光不正：</strong>定期進行眼科檢查，確保近視、遠視、散光均獲得正確矯正。未矯正的屈光問題是加重數位眼疲勞最常見卻最易忽略的原因。
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: #ffffff;">睡前停用螢幕：</strong>睡前至少 1 小時避免使用發光螢幕，是目前證據最充分的保護睡眠品質行為。
-      <sup><a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC5473809" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
-    </li>
-  </ul>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
-  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
-    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
-      <span style="margin-right: 8px;">🔍</span> FAQ 常見問題
-    </h2>
-  </div>
-  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
-    
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q1：我戴了藍光眼鏡後感覺眼睛真的比較舒服，這是假的嗎？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      你的感受是真實的，但原因可能不是藍光過濾的功效。配戴眼鏡這個行為本身，可能讓你更有意識地休息眼睛、調整用眼習慣；加上安慰劑效應，都可能帶來主觀上的舒緩感。此外，若你平時屈光問題未矯正，配戴任何度數眼鏡本身就可能帶來改善。<sup><a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013244.pub2/full" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[1]</a></sup>
-    </p>
- 
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q2：小孩使用平板需要貼藍光保護貼嗎？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      對兒童而言，更重要的護眼建議是「限制螢幕使用時間」和「保持足夠的戶外活動」——大量研究顯示，充足的自然光照射是預防近視最有效的方法。相較之下，目前沒有充分證據支持為兒童加貼藍光保護貼有特別的防護效果。世界衛生組織建議，2 歲以下幼兒應完全避免螢幕使用；2～5 歲每天不超過 1 小時；6 歲以上則應有明確的使用限制。
-    </p>
- 
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q3：已經有黃斑部病變的人，需要使用藍光防護產品嗎？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      對於已有黃斑部病變（AMD）的患者，避免強光曝露是合理的預防措施，但目前藍光濾鏡眼鏡對於黃斑部病變的預防或延緩效果，尚未被高品質臨床研究充分驗證。戴遮陽帽、配戴有 UV 與強光防護的太陽眼鏡，在戶外減少強光直射，可能比室內使用藍光眼鏡更有實際意義。建議直接諮詢眼科醫師，針對個人狀況制定護眼策略。
-    </p>
- 
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q4：護眼模式把螢幕調成黃色，這樣對眼睛好嗎？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      暖色調（偏黃色）的螢幕設定，在夜間使用時確實有助於減少對褪黑激素分泌的干擾，對維持睡眠品質有一定幫助。日間使用時，色溫設定對眼睛疲勞的影響相對有限，許多人在習慣後不覺得困擾。如果你覺得黃色調影響工作（例如設計師需要精確色彩判斷），日間可暫時關閉夜間模式，傍晚後再開啟即可。<sup><a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC5473809" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
-    </p>
- 
-    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
-      Q5：我的眼睛乾澀酸痛，用什麼方法最有效？
-    </h3>
-    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
-      先排除基礎問題：是否有未矯正的近視或散光？是否有乾眼症？若症狀持續超過 2 週，建議就醫檢查。在自我照護方面，優先落實「20-20-20 法則」、有意識增加眨眼頻率、使用無防腐劑人工淚液（不含防腐劑較安全，可長期使用），以及確保使用環境照明充足。這些行動的效果，遠優於任何藍光防護產品。
-    </p>
-  </div>
-</section>
- 
-<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
- 
-<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
-  
-  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
-    藍光防護產品的龐大市場，很大程度上建立在消費者對「藍光傷眼」的恐懼，以及行銷話術對科學現況的扭曲詮釋上。目前最高品質的臨床研究顯示，藍光眼鏡與保護貼對眼睛疲勞、睡眠品質的改善效果，並未達到廠商所宣稱的程度。
-  </p> <br>
-  
-  <p style="color: #475569; font-size: 1.05rem;">
-    這並不代表藍光完全無害——夜間藍光曝露對生理時鐘的干擾有相對充分的實證支持。但解決之道是改變使用習慣：<strong style="color: #1e293b;">睡前停止使用螢幕、降低螢幕亮度、開啟內建夜間模式，</strong>這些免費的行為改變，其實比任何付費藍光產品更有效。
-  </p>
- 
-  <p style="color: #475569; font-size: 1.05rem;">
-    若你有持續的眼睛疲勞、乾澀、視力模糊或頭痛，這可能是屈光不正未矯正、乾眼症或其他眼部問題的訊號，<strong style="color: #1e293b;">應該就醫評估，而非單靠藍光產品自行解決。</strong>
-  </p>
- 
-  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
-      💡 立即行動：今晚就開啟手機的「夜間模式」並調低亮度。從這個免費且有實證的步驟開始，才是真正護眼的第一步。
-    </p>
-  </div>
-
-</div>
-  `,
-  referencesHtml: `
-<h2>📚 參考文獻 (References)</h2>
-<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
-  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Singh, S., Bhavna, A., et al. (2023). Blue‐light filtering spectacle lenses for visual performance, sleep, and macular health in adults. Cochrane Database of Systematic Reviews. <a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013244.pub2/full" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Cochrane Library: CD013244</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Tosini, G., Ferguson, I., & Tsubota, K. (2016). Effects of blue light on the circadian system and eye physiology. Molecular Vision, 22, 61–72. PMC5473809. <a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC5473809" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 5473809</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Haghani, M., Mortazavi, S.M.J., et al. (2024). Blue Light and Digital Screens Revisited: A New Look at Blue Light from the Vision Quality, Circadian Rhythm and Cognitive Functions Perspective. PMC11252550. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11252550/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11252550</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        American Optometric Association. (2024). Computer Vision Syndrome (Digital Eye Strain). <a href="https://www.aoa.org/healthy-eyes/eye-and-vision-conditions/computer-vision-syndrome" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">AOA Web</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Almudhaiyan, T.M., Aldebasi, T., et al. (2023). The Prevalence and Knowledge of Digital Eye Strain Among the Undergraduates in Riyadh, Saudi Arabia. Cureus, 15(4), e37081. PMC10156438. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10156438" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10156438</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        American Academy of Ophthalmology. (2024). Are Computer Glasses Worth It? Position Statement. <a href="https://www.aao.org/eye-health/tips-prevention/are-computer-glasses-worth-it" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">AAO Web</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Smith, A.K., Conger, J.R., Hedayati, B., et al. (2020). The Effect of a Screen Protector on Blue Light Intensity Emitted from Different Hand-held Devices. Middle East African Journal of Ophthalmology, 27(3), 177–181. <a href="https://pubmed.ncbi.nlm.nih.gov/33488015/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 33488015</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Chang, A.M., Aeschbach, D., Duffy, J.F., & Czeisler, C.A. (2015). Evening use of light-emitting eReaders negatively affects sleep, circadian timing, and next-morning alertness. Proceedings of the National Academy of Sciences, 112(4), 1232–1237. <a href="https://doi.org/10.1073/pnas.1418490112" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1073/pnas.1418490112</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Sheppard, A.L., & Wolffsohn, J.S. (2018). Digital eye strain: prevalence, measurement and amelioration. BMJ Open Ophthalmology, 3(1), e000146. <a href="https://doi.org/10.1136/bmjophth-2018-000146" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1136/bmjophth-2018-000146</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Vagge, A., Ferro Desideri, L., Nucci, P., et al. (2021). Blue Light Filtering Ophthalmic Lenses: To Prescribe, or Not to Prescribe? Ophthalmologica, 244(6), 456–466. <a href="https://doi.org/10.1159/000515676" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1159/000515676</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Atan, D., Turner, L., & Yip, J. (2024). Blue light filtering spectacle lenses show inconclusive outcomes: Cochrane Review commentary. Ophthalmology Times. <a href="https://www.ophthalmologytimes.com/view/cochrane-review-blue-light-filtering-glasses-show-inconclusive-outcomes" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Yıldırım, E., Akca, H., & Güngör, K. (2024). Long-Term Use of Blue Light-Filtering Glasses and Symptom Improvement in Digital Eye Strain: A Questionnaire-Based Study. PMC12661913. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12661913/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12661913</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        Pucker, A.D., Kraychuk, M.O., et al. (2022). Myth-busting the 20/20/20 rule. Modern Optometry. <a href="https://modernod.com/topics/myopia/myth-busting-the-202020-rule/38651/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
-      </span>
-    </li>
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
-        World Health Organization. (2019). Guidelines on Physical Activity, Sedentary Behaviour and Sleep for Children under 5 Years of Age. Geneva: WHO. <a href="https://www.who.int/publications/i/item/9789241550536" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">WHO Publication</a>
-      </span>
-    </li>
-  </ol>
-</div>
-`
-},
 
 {
 id: 'aapmr-2026-knee-oa-prp-guideline',

@@ -92,6 +92,12 @@ export const sportsInjuriesData = [
         description: '深度剖析非類固醇消炎止痛藥（NSAIDs）、肌肉鬆弛劑、乙醯胺酚（普拿疼）的藥理機制與長期使用風險。實證研究揭露止痛藥只是「關掉警報」而非治療根源，並說明何時需要尋找疼痛的真正成因。',
         image: '/images/news/article/pain-medication-analysis.webp',
       },
+                        {
+        slug: 'pain-medication-combination-safety',
+        title: '止痛藥解析：止痛藥、肌肉鬆弛劑、胃藥，為什麼醫師一起開？',
+        description: '從臨床醫學與實證研究出發，深入剖析急性骨骼肌肉疼痛時，為何醫師會同時處方止痛藥（NSAIDs）、肌肉鬆弛劑與胃藥。一次看懂藥物協同作用原理、正確使用安全觀念，並全面破解「傷腎、肌肉變軟、普拿疼多吃沒關係」等三大常見用藥迷思。',
+        image: '/images/news/article/pain-medication-combination.webp',
+      },
             {
         slug: 'nsaid-hypersensitivity',
         title: 'NSAID（非類固醇消炎藥）過敏全解析：為什麼有人吃止痛藥會過敏？',
@@ -214,6 +220,18 @@ export const sportsInjuriesData = [
         description: '韌帶玻尿酸與PRP是修復關節與軟組織的兩大利器，但作用機制大不相同。實證研究揭露，PRP透過生長因子促進組織再生，適合慢性病變；玻尿酸則能提供潤滑、抑制沾黏，對急性扭傷有奇效。本文將系統性剖析兩者的優缺點，幫助您找出最適合的治療方案。',
         image: '/images/news/article/ligament-ha-vs-prp.webp',
       },
+                                          {
+        slug: 'prp-injection-pain-duration-efficacy',
+        title: '打完 PRP 反而更痛？復健科醫師揭密：四大核心問題與術後疼痛',
+        description: '為什麼打完高濃度血小板血漿（PRP）後反而比之前更痛？復健科醫師從運動醫學與生理機制出發，系統性解析注射後的「無菌性發炎反應」，並針對門診最常見的四大疑問：PRP多久打一次？一定要打滿三針嗎？多久見效？效果能維持幾年？提供完整的實證醫學解答與行動建議。',
+        image: '/images/news/article/prp-injection-pain-duration-efficacy.webp',
+      },
+                                                {
+        slug: 'prp-vs-hyaluronic-acid-injection',
+        title: '自費針劑這麼多種，PRP、玻尿酸、葡萄糖，該如何挑選？如何挑選適合的醫生跟診所',
+        description: '面對PRP、玻尿酸、羊膜增生療法等多元自費針劑，民眾往往感到困惑。本文從運動醫學實證出發，深入剖析各類增生療法的機制、合理費用區間與健保給付現況。並教你如何透過「超音波導引注射」與「客製化血小板濃度」兩大關鍵指標，看懂專業診所的品質差異，選對最適合自己的精準再生醫療療程。',
+        image: '/images/news/article/prp-hyaluronic-acid-injection-guide.webp',
+      },
                                     {
         slug: 'eswt-energy-and-pain-level',
         title: '震波治療能量開多大才有效？越痛越好嗎？從醫學看最佳疼痛指數',
@@ -298,18 +316,6 @@ export const sportsInjuriesData = [
         title: '垂直律動椅真的有效嗎？醫學解析：腸胃、心肺、骨骼好處',
         description: '全身垂直律動（WBVV）源自太空醫學，被證實能提升骨密度、改善微血管循環並促進腸胃蠕動。本文從復健與醫學觀點，深度剖析垂直律動對三大系統的益處，並揭露為何「水平或不規則震動」反而會產生剪力，對脊椎與關節造成不可逆的傷害。同時詳列適應症與絕對禁忌症。',
         image: '/images/news/article/wbvv-cover.webp',
-      },
-                        {
-        slug: 'blue-light-protection-analysis',
-        title: '藍光保護貼、藍光眼鏡、濾藍光螢幕：真的能保護眼睛嗎？',
-        description: '深度剖析藍光保護貼、藍光眼鏡、濾藍光螢幕等產品的護眼效果。實證研究揭露這些產品對眼睛疲勞、睡眠品質與視網膜保護的真實功效，並提供科學預防數位眼疲勞的策略。',
-        image: '/images/news/article/blue-light-protection-analysis.webp',
-      },
-                              {
-        slug: 'childhood-myopia-prevention-control',
-        title: '近視全解析：戶外活動、散瞳劑，哪種控制近視方法最有效？',
-        description: '從實證運動與眼科醫學角度，深入剖析全球與台灣的近視公衛危機。打破「室內看遠」與「眼球按摩」的傳統迷思，透過最新統合分析與隨機對照試驗，完整評比戶外自然光照、低濃度阿托品散瞳劑、角膜塑型片（OK鏡）的真實保護效果與科學機制。',
-        image: '/images/news/article/myopia-prevention-analysis.webp',
       },
 
 
