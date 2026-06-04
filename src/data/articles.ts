@@ -20,7 +20,7 @@ id: 'prp-vs-hyaluronic-acid-injection',
     '自費針劑費用',
     '膝關節退化治療',
     '肌腱修復',
-    '低白血球PRP',
+    '低白血球PRP ',
     '宸新復健科'
   ],
     contentHtml: `
