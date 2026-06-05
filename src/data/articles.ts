@@ -1,6 +1,1140 @@
 import { NewsPost } from './news'; // 從總控制器引入型別定義
 
 export const articlesData: NewsPost[] = [
+
+{
+id: 'accessory-and-sesamoid-bones',
+  title: '天生多塊骨頭？常見「副骨」與「種子骨」疼痛部位、診斷與根治策略',
+  lastModified: '2026-06-05',
+  category: '衛教文章',
+  date: '2026-06-05',
+  summary: '人體骨骼發育過程中，部分人會額外長出「副骨」或「種子骨」。雖然多數終生無症狀，但反覆壓迫或過度使用常引發足弓內側、踝後、前腳掌或肩膀疼痛。本文從運動醫學與影像學角度，系統解析副舟狀骨、副三角骨、肩峰副骨等好發部位與核心治療策略。',
+  coverImage: '/images/news/article/accessory-bones-pain-analysis.webp',
+  seoTitle: '天生多塊骨頭？常見副骨與種子骨疼痛好發部位、診斷與治療全解析',
+  seoDescription: '深入剖析副舟狀骨、副三角骨、肩峰副骨與種子骨引發疼痛的原因。這些多出來的骨頭常被誤診為骨折，本文將告訴你如何透過 MRI 與超音波精準診斷，並提供免開刀的保守治療與手術切除建議。',
+  keywords: [
+    '副骨',
+    '種子骨',
+    '副舟狀骨',
+    '副三角骨',
+    '肩峰副骨',
+    '種子骨炎',
+    '後踝夾擠症候群',
+    '足弓內側痛',
+    '骨髓水腫',
+    '復健科醫師'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    人體骨骼的發育過程中，部分人會在正常骨骼之外額外長出一塊或多塊「副骨」（accessory ossicle）或「種子骨」（sesamoid bone）。這些多餘的骨頭大多數終生無症狀，卻可能在特定情況下——如反覆壓迫、外傷、過度使用——引發顯著的局部疼痛，甚至被誤診為骨折或其他疾病。<br><br>
+    研究指出，副舟狀骨盛行率約為 4–21%，是最常見且最容易引起症狀的副骨之一，另一個常見在膝蓋的是腓骨旁骨，盛行率約11-36%。
+    <sup><a href="https://www.physio-pedia.com/Accessory_Navicular_Bone" target="_blank" rel="noopener noreferrer">[1]</a></sup>
+    副三角骨盛行率約為 14%，常見於需要反覆踝關節蹠屈的芭蕾舞者與足球員。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12043738/" target="_blank" rel="noopener noreferrer">[2]</a></sup>
+    而肩部的肩峰副骨盛行率 1–15%，可能引發肩夾擠症候群。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3109771/" target="_blank" rel="noopener noreferrer">[3]</a></sup>
+    本文將以淺顯易懂的語言，系統介紹人體常見的副骨種類、好發症狀、診斷方式與治療策略，幫助民眾正確認識這些「多出來的骨頭」。
+  </p>
+</div>
+ 
+<hr>
+ 
+<!-- 一 -->
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、什麼是「副骨」？為什麼有人會多長骨頭？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    很多人第一次聽到「副骨」這個詞，可能會覺得疑惑：人體不是應該有固定數目的骨頭嗎？怎麼會多出一塊？
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    答案要從骨骼的發育過程說起。在嬰兒成長至成人的過程中，骨骼並非一次性長好，而是由多個「骨化中心」分別發育，再逐步融合。若某個骨化中心未能如期與主骨融合，就會獨立存在，形成一塊額外的副骨。另一類常見的副骨是「種子骨」，嵌在肌腱內，協助肌腱繞過關節時的力學作用，最典型的例子就是膝蓋的髕骨。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    根據文獻回顧，全身至少有 24 種以上的副骨被描述，集中分布於足踝、手腕、肩膀等活動頻繁的部位。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5786346/" target="_blank" rel="noopener noreferrer">[4]</a></sup>
+    這些副骨的共同特徵是：<strong style="color: #ffffff;">大多數人終生沒有症狀，只在照 X 光時偶然發現；但少數人會在特定情況下出現局部疼痛、腫脹或活動受限。</strong>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床重點提醒</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      副骨的外形有時與骨折碎片極為相似，常在急診室被誤診為骨折。正確區辨的關鍵在於：副骨通常邊緣光滑、皮質完整，且在雙側（左右腳/手）往往對稱出現；而骨折碎片邊緣不規則、有明顯創傷病史。若有疑問，建議進行雙側 X 光比對或 MRI 檢查。
+    </p>
+  </div>
+</section>
+ 
+<hr>
+ 
+<!-- 二 -->
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、最常見的副骨與好發疼痛部位
+  </h2>
+ 
+  <!-- 副舟狀骨 -->
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">（一）副舟狀骨——足弓內側疼痛</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    副舟狀骨是臨床上最常見的足部副骨，位於足弓內側的舟狀骨旁邊。它也被稱為「脛外骨」。根據盛行率研究，一般族群發生率約 4–21%，而亞洲族群可能高達 45%。
+    <sup><a href="https://www.physio-pedia.com/Accessory_Navicular_Bone" target="_blank" rel="noopener noreferrer">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    醫學上將副舟狀骨分為三型：I型是包在後脛骨肌腱內的小種子骨；<strong style="color: #ffffff;">II型最常見</strong>，以軟骨連接橋與舟狀骨相連，後脛骨肌腱附著於此，是最容易引起症狀的類型；III型則幾乎與主骨完全融合，通常不引起症狀。
+    <sup><a href="https://appliedradiology.com/articles/accessory-ossicles-and-sesamoid-bones-spectrum-of-pathology-and-imaging-evaluation" target="_blank" rel="noopener noreferrer">[5]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">為什麼會痛？</strong>後脛骨肌腱反覆收縮，對軟骨連接橋產生剪切力，久而久之導致局部慢性發炎、骨髓水腫，甚至缺血性壞死。扁平足的人因足弓塌陷、肌腱張力更大，發生症狀的風險尤其高。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10681632/" target="_blank" rel="noopener noreferrer">[6]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">典型症狀：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;">足弓內側明顯骨突，按壓疼痛</li>
+    <li style="margin-bottom: 0.5rem;">長時間站立、行走或運動後疼痛加劇</li>
+    <li style="margin-bottom: 0.5rem;">青少年生長發育期最容易首次出現症狀</li>
+    <li style="margin-bottom: 0.5rem;">穿窄頭鞋或高跟鞋時症狀惡化</li>
+  </ul>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">治療方式：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">保守治療（首選）：</strong>更換合適鞋具、足弓支撐鞋墊、減少高衝擊活動、冰敷消炎、物理治療強化後脛骨肌</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">局部注射：</strong>類固醇注射可短期緩解急性發炎，但不建議長期反覆使用</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">石膏固定：</strong>急性疼痛期可短暫使用，讓局部發炎消退</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">手術治療：</strong>保守治療 3–6 個月無效時，考慮副骨切除術，將後脛骨肌腱重新附著於主骨</li>
+  </ul>
+ 
+  <!-- 副三角骨 -->
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">（二）副三角骨——踝關節後方疼痛</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    副三角骨位於距骨後外側，是距骨後突的一個未融合骨化中心。統合分析顯示，其整體盛行率約 14%，兩性之間無顯著差異。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12043738/" target="_blank" rel="noopener noreferrer">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">為什麼會痛？</strong>當踝關節極度向下蹠屈時，副三角骨被夾擠在脛骨後緣與跟骨之間，造成「後踝夾擠症候群」，引發疼痛。這類問題在芭蕾舞者、足球守門員、體操選手等需要踮腳尖動作的族群中特別常見。
+    <sup><a href="https://epos.myesr.org/poster/esr/ecr2019/C-1554/findings%20and%20procedure%20details" target="_blank" rel="noopener noreferrer">[7]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">典型症狀：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;">踝關節正後方深處的悶痛或脹痛</li>
+    <li style="margin-bottom: 0.5rem;">踮腳尖動作時疼痛明顯加劇</li>
+    <li style="margin-bottom: 0.5rem;">可能伴隨拇長屈肌腱鞘炎，導致大拇趾活動時有彈響</li>
+    <li style="margin-bottom: 0.5rem;">運動後踝後腫脹</li>
+  </ul>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">治療方式：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">保守治療：</strong>避免極度蹠屈動作、休息、消炎藥物、物理治療</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">超音波導引注射：</strong>類固醇注射於副三角骨周圍，可有效緩解症狀</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">手術治療：</strong>關節鏡或開放式切除副三角骨，術後恢復期約 6–8 週，對職業運動員效果良好</li>
+  </ul>
+ 
+  <!-- 豆骨/種子骨 -->
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">（三）種子骨——前腳掌疼痛</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    種子骨是嵌在肌腱中的小骨頭，因外形像芝麻而得名。足部的種子骨主要位於大拇趾蹠趾關節下方，每人正常有兩顆（內側與外側）。手部每人正常有 5 顆種子骨。此外，手腕的「豆骨」是腕骨中最小的一塊，技術上也屬於種子骨，嵌在尺側屈腕肌的肌腱中。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">種子骨炎</strong>是最常見的種子骨疾病，指種子骨及周圍軟組織的慢性發炎。好發於長跑、芭蕾舞、高跟鞋長期使用者，以及前腳掌長期承受高壓的族群。一項 2024 年系統性回顧研究顯示，保守治療成功率高，疼痛評分在 66% 的案例中獲得顯著改善。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12300395/" target="_blank" rel="noopener noreferrer">[8]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">典型症狀：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;">大拇趾根部腳掌面（蹠骨頭下方）持續疼痛</li>
+    <li style="margin-bottom: 0.5rem;">踮腳尖、蹬腳、跑步時疼痛加劇</li>
+    <li style="margin-bottom: 0.5rem;">嚴重者可能發生缺血性壞死（如芭蕾舞者的案例報告）</li>
+  </ul>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">治療方式：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">保守治療：</strong>鞋墊免荷、足部休息、冰敷、消炎藥，必要時短期石膏固定</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">注射治療：</strong>類固醇注射或骨髓濃縮物注射，部分文獻支持後者有助於組織修復</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">手術治療：</strong>保守治療無效時，可考慮種子骨切除術；但切除後需注意大拇趾對位的維持</li>
+  </ul>
+ 
+<h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">（四）腓骨旁骨——膝關節後外側疼痛</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    腓骨旁骨（Fabella，拉丁語意為「小豆子」）是位於膝關節後方的一顆不典型種子骨，通常埋在腓腸肌外側頭的肌腱中。有趣的是，醫學研究發現，過去一個世紀以來，由於人類體型與營養改變，全球的盛行率從 1918 年的約 11% 提升到了現在的 36% 左右，且亞洲族群的檢出率普遍高於西方。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7231454/" target="_blank" rel="noopener noreferrer">[3]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    大部分都是無症狀的偶然發現，但在臨床上，它可能因為與股骨外側髁反覆摩擦，導致<strong style="color: #ffffff;">腓骨旁骨症候群</strong>。此外，當患者進行全膝關節置換術後，若未注意這顆小骨頭的存在，也可能成為術後持續膝後外側疼痛的隱形兇手。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8905386/" target="_blank" rel="noopener noreferrer">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">為什麼會痛？</strong>受到腓腸肌收縮的機械性拉扯，或與相鄰骨骼過度摩擦時，會引發局部骨關節炎、滑囊炎或肌腱炎。此外，由於其解剖位置鄰近總腓神經，當 肥大或發炎腫脹時，容易造成神經壓迫，進而引起小腿外側的麻痛感。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9357493/" target="_blank" rel="noopener noreferrer">[9]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">典型症狀：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;">膝關節後外側深處疼痛，壓迫該處時痛感明顯</li>
+    <li style="margin-bottom: 0.5rem;">膝關節完全伸直或極度屈曲時，疼痛會加劇</li>
+    <li style="margin-bottom: 0.5rem;">活動膝關節時，有時會伴隨摩擦感或喀拉彈響聲</li>
+    <li style="margin-bottom: 0.5rem;">若壓迫到總腓神經，可能伴隨小腿外側麻木或腳背下垂、無力</li>
+  </ul>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">治療方式：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">保守治療（首選）：</strong>口服非類固醇消炎藥（NSAIDs）、物理治療（如超音波、深層組織放鬆腓腸肌）、暫時調整運動強度減少膝部衝擊</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">局部注射：</strong>在超音波導引下，針對腓骨旁骨周圍進行類固醇或高濃度葡萄糖（增生療法）注射，以消炎並穩定周邊肌腱</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">手術治療：</strong>若保守治療超過 3–6 個月無效，且嚴重影響日常生活或有神經壓迫症狀，可考慮進行手術切除</li>
+  </ul>
+
+  <!-- 肩峰副骨 -->
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">（五）肩峰副骨——肩膀疼痛與夾擠</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    肩峰正常情況下由 3 個骨化中心在 22–25 歲前完全融合。肩峰副骨是其中某個骨化中心未能融合的結果，盛行率為 1–15%，且約有三分之一至六成的案例為雙側性。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3109771/" target="_blank" rel="noopener noreferrer">[3]</a></sup>
+    最常見類型是「中肩峰型」，約佔所有肩峰副骨的 94%。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">為什麼會痛？</strong>未融合的肩峰碎片在三角肌收縮時向下移動，壓迫肩峰下滑囊與旋轉肌群肌腱，產生夾擠症候群；長期壓迫可進展為旋轉肌群部分或完全撕裂。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6343250/" target="_blank" rel="noopener noreferrer">[9]</a></sup>
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">典型症狀：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;">肩膀上方疼痛，尤其是手臂上舉時</li>
+    <li style="margin-bottom: 0.5rem;">夜間側睡時疼痛明顯（壓迫患側）</li>
+    <li style="margin-bottom: 0.5rem;">肩峰部位按壓有壓痛</li>
+    <li style="margin-bottom: 0.5rem;">可能伴隨旋轉肌群無力、肌肉萎縮</li>
+  </ul>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">治療方式：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">保守治療：</strong>物理治療加強旋轉肌群肌力、肩峰下滑囊注射類固醇消炎</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">手術治療：</strong>碎片切除術、肩峰整形術或內固定術。文獻顯示三種術式術後患者自我報告結果均有改善，但目前尚無共識哪一術式最優。</li>
+  </ul>
+ 
+  <!-- 腕骨副骨 -->
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">（六）腕部副骨——手腕背側或內側疼痛</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    手腕部位的副骨種類繁多，常見的包括：位於第二、三掌骨基底背側的「莖狀副骨」，以及鉤骨鉤部未融合的「鉤骨鉤副骨」。
+    <sup><a href="https://appliedradiology.com/articles/accessory-ossicles-and-sesamoid-bones-spectrum-of-pathology-and-imaging-evaluation" target="_blank" rel="noopener noreferrer">[5]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    莖狀副骨引發的「腕部隆突症」表現為腕背側骨性隆起伴疼痛，可因局部退化性關節炎、滑囊炎或伸肌腱摩擦而症狀化。鉤骨鉤副骨因與正常鉤骨骨折難以區辨，常造成診斷困難；單側發生時，誤診為骨折的比率相當高。
+  </p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">治療方式：</p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">症狀輕微：</strong>避免誘發動作、消炎藥、護具保護</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">手術切除：</strong>對持續性疼痛者，手術切除通常效果良好，多數文獻報告「手術切除通常具根治效果」。
+      <sup><a href="https://epos.myesr.org/poster/esr/ecr2018/C-2151/findings%20and%20procedure%20details" target="_blank" rel="noopener noreferrer">[10]</a></sup>
+    </li>
+  </ul>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在臨床實務中，腕部副骨常因初次 X 光被誤判為「陳舊性骨折」而讓病人承受不必要的焦慮。若發現腕部小骨塊，建議同時照對側 X 光比對：若雙側對稱出現、邊緣光滑，幾乎可確定是副骨而非骨折。對疑難病例，MRI 可進一步區分有無局部骨髓水腫（代表活動性發炎），協助判斷是否需要治療介入。
+    </p>
+  </div>
+</section>
+ 
+<hr>
+ 
+<!-- 三 比較表 -->
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、常見副骨比較總表
+  </h2>
+ 
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 160px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table { font-size: 14px; }
+    }
+  </style>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>副骨名稱</th>
+          <th>位置</th>
+          <th>盛行率</th>
+          <th>最常見症狀</th>
+          <th>高風險族群</th>
+          <th>治療首選</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>副舟狀骨</td>
+          <td>足弓內側</td>
+          <td>4–21%（亞洲可達45%）</td>
+          <td>足弓內側骨突疼痛</td>
+          <td>青少年、扁平足者</td>
+          <td>足弓支撐、鞋墊；必要時手術切除</td>
+        </tr>
+        <tr>
+          <td>副三角骨</td>
+          <td>踝關節後方</td>
+          <td>約14%</td>
+          <td>後踝夾擠症候群</td>
+          <td>芭蕾舞者、足球員</td>
+          <td>休息、注射；必要時關節鏡切除</td>
+        </tr>
+        <tr>
+          <td>前腳掌種子骨</td>
+          <td>大拇趾蹠趾關節下</td>
+          <td>雙側各2顆（正常）</td>
+          <td>種子骨炎、缺血性壞死</td>
+          <td>長跑者、芭蕾舞者</td>
+          <td>免荷鞋墊；嚴重時切除</td>
+        </tr>
+        <tr>
+          <td>腓骨旁骨</td>
+          <td>膝關節後外側）</td>
+          <td>全球約 36%（亞洲族群較高）</td>
+          <td>膝後外側深處疼痛、伸直時加劇</td>
+          <td>需頻繁伸直/彎曲膝蓋者</td>
+          <td>物理治療、腓腸肌放鬆、局部消炎注射</td>
+        </tr>
+        <tr>
+          <td>肩峰副骨</td>
+          <td>肩峰頂部</td>
+          <td>1–15%</td>
+          <td>肩夾擠、旋轉肌群損傷</td>
+          <td>游泳、投擲運動員</td>
+          <td>復健治療；手術切除或固定</td>
+        </tr>
+        <tr>
+          <td>莖狀副骨（腕部）</td>
+          <td>腕背第2/3掌骨基底</td>
+          <td>少見</td>
+          <td>腕背隆突疼痛（腕隆突症）</td>
+          <td>重複腕部動作工作者</td>
+          <td>護具；症狀持續則手術切除</td>
+        </tr>
+        <tr>
+          <td>豆骨（手腕）</td>
+          <td>手腕小指側</td>
+          <td>正常骨頭（種子骨）</td>
+          <td>豆骨-三角骨關節炎、骨折</td>
+          <td>撐地跌倒、球拍運動員</td>
+          <td>護具、消炎；嚴重時切除豆骨</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+ 
+<hr>
+ 
+<!-- 四 診斷方式 -->
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、如何診斷？影像學的角色
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    副骨引起的疼痛，診斷不能單靠 X 光——因為副骨本身的存在不代表它是疼痛的來源，必須結合臨床症狀、理學檢查與影像學綜合判斷。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5786346/" target="_blank" rel="noopener noreferrer">[4]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-bottom: 0.75rem;">X 光（基礎篩查）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    可以發現副骨的存在，並評估其形態、位置、邊緣是否光滑。雙側 X 光比對有助於區分副骨與骨折。副骨通常邊緣圓滑，而骨折碎片邊緣不規則且與骨折端吻合。
+  </p>
+ 
+  <h3 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-bottom: 0.75rem;">MRI（磁振造影）——黃金標準</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    MRI 是評估副骨是否「活動性發炎」的最佳工具。若副骨或周圍軟組織出現骨髓水腫、關節積液、肌腱損傷等訊號，代表該副骨正在引起症狀，需要積極介入。
+    <sup><a href="https://epos.myesr.org/poster/esr/ecr2019/C-1554/findings%20and%20procedure%20details" target="_blank" rel="noopener noreferrer">[7]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-bottom: 0.75rem;">超音波（動態評估）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    超音波可以動態觀察肌腱在副骨旁的活動情形，也可作為注射治療的即時導引工具，提高注射精確性、減少副作用。
+  </p>
+ 
+  <h3 style="font-size: 1.2rem; font-weight: bold; color: #ffffff; margin-bottom: 0.75rem;">骨骼掃描（Bone Scan）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    在疑難病例中，骨骼掃描可顯示代謝活躍（熱點），確認副骨是否為疼痛來源，但因輻射較高，不作為第一線使用。
+  </p>
+</section>
+ 
+<hr>
+ 
+<!-- 五 常見誤區 -->
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 五、常見三大誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「有副骨就一定要開刀切掉」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong>絕大多數副骨終生不引起症狀，只需定期追蹤、無需治療。手術是在保守治療（通常 3–6 個月）完全無效、嚴重影響生活品質時才考慮的最後手段。<sup><a href="https://www.hss.edu/health-library/conditions-and-treatments/list/accessory-navicular" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[11]</a></sup> 過度積極的手術介入，可能帶來不必要的併發症與恢復期。</span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「X 光有副骨，所以我腳痛一定是它造成的」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不一定！</strong>副骨的存在和疼痛之間並非因果關係。疼痛的真正來源需要仔細的理學檢查與影像學評估才能確認。若未確認副骨確實引發症狀便直接切除，術後疼痛可能仍然存在，卻少了一塊骨頭，得不償失。<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5786346/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[4]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-Content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「副骨痛只要忍一忍就會好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>危險！</strong>若症狀化的副骨持續受到機械性刺激而未加以保護，局部慢性發炎可能進展為缺血性壞死、鄰近肌腱退化，甚至造成永久性的足部或肩部功能障礙。及早就醫評估、採取適當的保護措施，可以大幅縮短治療時程。<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12300395/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[8]</a></sup></span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+ 
+<hr>
+ 
+<!-- 六 FAQ -->
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+    <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+      <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+        <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+      </h2>
+    </div>
+    <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q1：我的小孩被發現有副舟狀骨，需要馬上開刀嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        不需要。副舟狀骨症狀最常在青少年生長發育高峰期（約 10–15 歲）首次出現，但通常在骨骼發育成熟後症狀會自然緩解。建議優先採取保守治療——更換合適的鞋具、使用足弓鞋墊、減少高衝擊運動——觀察 3–6 個月。手術只在保守治療完全失敗後才考慮。
+      </p>
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q2：豆骨受傷後怎麼辦？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        豆骨骨折多發生於撐地跌倒，X 光有時難以顯現，需透過 CT 或 MRI 確認。初期保守治療為石膏固定 4–6 週。若發展為慢性豆骨-三角骨關節炎且保守治療無效，切除豆骨通常可有效解除症狀，且術後手功能維持良好。
+      </p>
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q3：副骨引起的疼痛會不會自己好？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        部分輕微症狀在休息、改變活動模式後確實可以自行緩解。但若疼痛持續超過 4–6 週，或影響日常行走、工作，應主動就醫評估，以免局部發炎進展為更難治療的慢性病變（如缺血性壞死或肌腱退化）。
+      </p>
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q4：副骨切除後，功能會受影響嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        取決於副骨的位置與手術方式。副舟狀骨切除若同時妥善重建後脛骨肌腱附著，術後功能通常良好。肩峰副骨切除後若合併旋轉肌群修復，肩部功能同樣可大幅改善。豆骨切除後，手腕功能維持通常不受明顯影響。整體而言，在正確適應症下執行的副骨切除術，預後普遍良好。
+      </p>
+ 
+    </div>
+  </div>
+</section>
+ 
+<hr>
+ 
+<!-- 結語 -->
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+ 
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    人體偶爾多長一塊骨頭，並不等於「生病」，更不等於「必須手術」。重要的是了解這塊骨頭是否真的在引起症狀，並在正確的時機採取適當的措施。從副舟狀骨的扁平足相關疼痛、副三角骨的後踝夾擠、種子骨炎、肩峰副骨引起的夾擠症候群，到各種腕部副骨——每一種都有其特定的診斷要點與治療路徑。
+  </p><br>
+ 
+  <p style="color: #475569; font-size: 1.05rem;">
+    <strong style="color: #1e293b;">最好的第一步永遠是正確的診斷。</strong>如果你或家人有不明原因的足弓內側骨突疼痛、踝後疼痛、肩膀夾擠感，或手腕背側隆突，建議及早尋求骨科或復健科醫師評估，透過理學檢查與影像學，找出真正的疼痛原因，量身規劃最適合的治療計畫。
+  </p>
+ 
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的常見副骨比較表，檢視自己是否有相符的症狀與高風險因子。若疼痛已持續超過 4 週，請盡早預約專業醫師評估，勿拖延至症狀惡化。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+      預約專科醫師門診評估
+    </a>
+  </div>
+</div>
+ 
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Physio-Pedia. (2024). Accessory Navicular Bone. Physiopedia. <a href="https://www.physio-pedia.com/Accessory_Navicular_Bone" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Preinl, M., Osiowski, A., Stolarz, K., Osiowski, M., &amp; Taterra, D. (2025). Prevalence and clinical aspects of os trigonum: a meta-analysis. Anatomical Science International, 100(3), 287–297. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12043738/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12043738</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Sambandam, S.N., et al. (2011). Systematic review of the surgical treatment for symptomatic os acromiale. International Orthopaedics, 35(12), 1773–1780. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3109771/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 3109771</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Coskun, N., et al. (2018). Accessory Ossicles of the Foot and Ankle: Disorders and a Review of the Literature. Cureus. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5786346/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 5786346</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Mellado, J.M., &amp; Bencardino, J.T. (2015). Accessory ossicles and sesamoid bones: Spectrum of pathology and imaging evaluation. Applied Radiology. <a href="https://appliedradiology.com/articles/accessory-ossicles-and-sesamoid-bones-spectrum-of-pathology-and-imaging-evaluation" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Gonzalez, B., et al. (2023). Symptomatic Patient With Two Separate Accessory Navicular Bones. Cureus. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10681632/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 10681632</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Stratulat, I., Mustapic, M., &amp; Abdul-Hussaen, K. (2019). Sesamoid and accessory bones in foot and ankle involved in chronic pain syndromes. ECR 2019 / C-1554. <a href="https://epos.myesr.org/poster/esr/ecr2019/C-1554/findings%20and%20procedure%20details" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Cuesta-Vargas, A., et al. (2025). Conservative Treatment of Sesamoiditis: A Systematic Literature Review with Individual-Level Pooled Data Analysis. Journal of Clinical Medicine. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12300395/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12300395</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Churchill, R.S., et al. (2019). Clinical results and complications following surgical management of symptomatic os acromiale: a systematic review. Journal of Shoulder and Elbow Surgery. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6343250/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 6343250</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Pérez Pérez, A.N., et al. (2018). The wizard of os: accessory ossicles from the spine and upper extremities. ECR 2018 / C-2151. <a href="https://epos.myesr.org/poster/esr/ecr2018/C-2151/findings%20and%20procedure%20details" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hospital for Special Surgery (HSS). (2025). Accessory Navicular: Congenital Foot Deformity &amp; Treatments. <a href="https://www.hss.edu/health-library/conditions-and-treatments/list/accessory-navicular" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Requejo, S.M., Kulig, K., &amp; Thordarson, D.B. (2000). Management of foot pain associated with accessory bones of the foot: two clinical case reports. Journal of Orthopaedic and Sports Physical Therapy, 30(10), 580–591. <a href="https://pubmed.ncbi.nlm.nih.gov/11041195/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 11041195</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Mellado, J.M., Ramos, A., Salvadó, E., Camins, A., Danús, M., &amp; Saurí, A. (2003). Accessory ossicles and sesamoid bones of the ankle and foot: imaging findings, clinical significance and differential diagnosis. European Radiology, 13(Suppl 4), L164–L177. <a href="https://pubmed.ncbi.nlm.nih.gov/15018183/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 15018183</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Liu, L., Wang, T., &amp; Qi, H. (2024). Foot pain in children and adolescents: a problem-based approach in musculoskeletal ultrasonography. Ultrasonography, 43(3), 193–208. <a href="https://pubmed.ncbi.nlm.nih.gov/38644779/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 38644779</a>
+      </span>
+    </li>
+ 
+  </ol>
+</div>
+`
+},
+
+{
+  id: 'prp-pre-post-care',
+  title: 'PRP注射前後的注意事項，飲食還有可以運動嗎？',
+  lastModified: '2026-06-05',
+  category: '衛教文章',
+  date: '2026-06-05',
+  summary: '完整解說PRP注射前後的注意事項，包含術前止痛藥與感冒的處理原則、術後冰敷vs熱敷的醫學依據、運動恢復時程、重訓返回準則，以及維他命C、膠原蛋白等術後飲食補充建議，幫助患者以正確觀念最大化PRP治療效果。',
+  coverImage: '/images/news/article/prp-pre-post-care.webp',
+  seoTitle: 'PRP注射前後的注意事項，飲食還有可以運動嗎？',
+  seoDescription: '完整解說PRP注射前後的注意事項，包含術前止痛藥與感冒的處理原則、術後冰敷vs熱敷的醫學依據、運動恢復時程、重訓返回準則，以及維他命C、膠原蛋白等術後飲食補充建議。',
+  keywords: [
+    'PRP注射',
+    'PRP術後照護',
+    'PRP飲食',
+    'PRP運動',
+    'PRP冰敷熱敷',
+    '高濃度血小板血漿',
+    'PRP止痛藥',
+    'PRP術前準備',
+    'PRP膠原蛋白',
+    '再生醫療'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    PRP（高濃度血小板血漿，Platelet-Rich Plasma）是一種利用自體血液濃縮血小板、萃取生長因子的再生醫療技術，廣泛應用於肌腱病變、關節退化與運動傷害的治療。然而，PRP能否發揮最大療效，很大程度上取決於術前的正確準備與術後的配合。研究顯示，NSAIDs（非類固醇消炎止痛藥）會直接抑制血小板聚集功能，在注射前應停用至少3至7天；感冒或發燒期間施打PRP，免疫系統處於高度活化狀態，可能增加不良反應風險，建議痊癒後再接受治療。<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11568791/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[1]</a></sup> <br><br>
+    術後的冰敷問題，目前醫界存在分歧，但主流觀點認為PRP本身是透過啟動「受控性發炎」來促進修復，冰敷可能抑制這個關鍵窗口；至於運動恢復，一般建議注射後至少休息48小時至1週，再根據部位與傷害性質逐步增加強度，重訓通常需等待4至12週。術後補充維他命C、優質蛋白質與充足水分，有助於支撐膠原蛋白合成與組織修復。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11350620/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[2]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11267806/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf;">[3]</a></sup>
+  </p>
+</div>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、什麼是PRP？為什麼術前術後的配合如此重要？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    PRP（Platelet-Rich Plasma，高濃度血小板血漿）是將患者自體血液抽出後，經過離心技術濃縮血小板，再注射回受傷部位的再生醫療方法。它的核心原理是：<strong style="color: #2dd4bf;">血小板活化後會釋放大量生長因子</strong>，這些生長因子能刺激細胞增殖、促進膠原蛋白合成、調節發炎反應，進而加速組織修復。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9917492/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    正是因為PRP的療效高度依賴血小板的品質與活性，任何影響血小板功能的藥物、疾病或行為，都可能削弱PRP的治療效果。因此，許多患者在門診中最常問到的問題——止痛藥能不能吃、感冒能不能打、打完要不要冰敷、何時可以運動——其實都和同一個核心邏輯有關：<strong style="color: #ffffff;">如何保護PRP注射後所啟動的修復機制，讓生長因子在正確的時間、正確的環境下發揮作用。</strong>
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、術前準備：打PRP前你需要知道的事
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">打PRP前可以吃止痛藥嗎？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是臨床上最常被問到的術前問題。答案取決於你服用的是哪一類止痛藥。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">NSAIDs（非類固醇消炎止痛藥）——包括布洛芬（ibuprofen）、naproxen、aspirin、meloxicam、diclofenac等——在注射前必須停用。</strong>這類藥物的主要作用機制是抑制環氧化酶（COX-1），而COX-1正是血小板聚集過程中不可或缺的酶。換句話說，NSAIDs會直接破壞血小板功能，讓PRP中最關鍵的「武器」失去戰鬥力。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11568791/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    根據2024年發表於PMC的系統性文獻回顧，不同NSAIDs對血小板的抑制時間長短不同：
+  </p>
+ 
+  <style>
+    .custom-table-container { width: 100%; overflow-x: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+    .modern-table { width: 100%; border-collapse: collapse; font-family: "PingFang TC","Heiti TC","Microsoft JhengHei",sans-serif; font-size: 15px; background-color: #ffffff; color: #1f2937; min-width: 600px; }
+    .modern-table thead tr { background-color: #1e3a8a; color: #ffffff; text-align: left; font-weight: bold; }
+    .modern-table th { padding: 16px 12px; border-bottom: 2px solid #111827; letter-spacing: 0.5px; }
+    .modern-table td { padding: 14px 12px; border-bottom: 1px solid #e5e7eb; line-height: 1.6; }
+    .modern-table td:first-child { background-color: #f9fafb; font-weight: 600; color: #111827; }
+    .modern-table tbody tr:nth-of-type(even) { background-color: #f3f4f6; }
+    .modern-table tbody tr:hover { background-color: #e0e7ff; transition: background-color 0.2s ease; }
+  </style>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>藥物名稱</th>
+          <th>常見商品名</th>
+          <th>建議停藥時間</th>
+          <th>說明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>布洛芬（Ibuprofen）</td>
+          <td>Advil、Motrin</td>
+          <td>至少24–48小時</td>
+          <td>短效型，抑制時間相對短</td>
+        </tr>
+        <tr>
+          <td>萘普生（Naproxen）</td>
+          <td>Aleve</td>
+          <td>至少72小時</td>
+          <td>長效型，抑制持續可達48小時</td>
+        </tr>
+        <tr>
+          <td>阿司匹林（Aspirin）</td>
+          <td>各種制劑</td>
+          <td>7–10天（需諮詢醫師）</td>
+          <td>不可逆性抑制，需等新血小板生成</td>
+        </tr>
+        <tr>
+          <td>雙氯芬酸（Diclofenac）</td>
+          <td>Voltaren</td>
+          <td>至少24–48小時</td>
+          <td>與布洛芬相近</td>
+        </tr>
+        <tr>
+          <td>乙醯氨酚（Acetaminophen）</td>
+          <td>Tylenol（普拿疼）</td>
+          <td>一般無需停用</td>
+          <td>不顯著抑制COX-1，術前止痛的首選替代</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-top: 1rem; margin-bottom: 1.5rem;">
+    值得特別提醒的是：長期服用低劑量阿司匹林（如心血管預防用藥）的患者，<strong style="color: #ffffff;">不應自行停藥</strong>，必須先諮詢開立處方的心臟科或內科醫師，確認停藥安全後再行調整。
+    <sup><a href="https://juventix.com/stop-nsaids-before-prp-a-crucial-step-in-regenerative-medicine/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床重點提醒</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      如果你在注射前幾天有疼痛需要緩解，可以改用普拿疼作為替代。雖然部分研究指出普拿疼在高劑量下可能微幅影響血小板的生長因子釋放，但相較於NSAIDs，其影響遠小，且在臨床上被大多數PRP施術醫師接受為術前止痛選項。此外，薑黃素（Curcumin）、魚油、大劑量維他命E等補充品也具有一定的抗凝血特性，術前1週建議同樣暫停服用。
+    </p>
+  </div>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">感冒可以打PRP嗎？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">明確建議：不可以。</strong> 感冒、發燒或任何急性感染期間都不適合接受PRP注射，主要原因有以下幾點：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">免疫系統高度活化：</strong>感冒期間，免疫系統正全力對抗病毒，此時注射PRP相當於在免疫系統「忙碌」的狀態下再添加刺激，可能導致異常的炎症反應或局部過度反應，增加術後不適的風險。
+      <sup><a href="https://secretmedspa.com/injectables/prp-injections/prp-injections-pre-and-post-care-instructions/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">血小板品質可能受影響：</strong>急性感染期間，發燒與全身性炎症反應會影響血小板的功能狀態，降低PRP的生長因子濃度與活性，進而影響治療效果。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">感染擴散風險：</strong>雖然PRP注射的感染率極低（約每1萬次注射中僅1例），但在免疫力下降的感冒期間，任何侵入性操作都應儘量避免，以防止潛在的感染風險上升。
+      <sup><a href="https://banffsportmed.ca/wp-content/uploads/2018/01/PRP-Injection-handout.pdf" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    </li>
+  </ul>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    根據2025年由國際血小板注射研究組發表的正式共識，急性感染是PRP注射的暫時性禁忌症。建議等到感冒完全康復、體溫正常至少3至5天後，再重新安排注射時間。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12104799/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+ 
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 特別注意：</strong> 若患者有發燒、注射部位周圍有皮膚紅疹或感染跡象，或近期剛接受類固醇注射（2週內），也應告知醫師並重新評估注射時機。抗凝血藥物的使用者，同樣須在術前諮詢。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、術後修復：打完PRP之後怎麼照顧自己？
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">打完PRP要冰敷還是熱敷？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是患者術後最常見的疑問，也是目前臨床上存在<strong style="color: #ffffff;">真實爭議</strong>的議題。要理解正確做法，必須先理解PRP的修復機制：
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    PRP注射後，血小板活化並釋放生長因子，啟動的第一步就是<strong style="color: #2dd4bf;">「受控性發炎反應」</strong>。這個短暫的炎症期並非壞事——它是組織修復的必要「引擎」，會招募修復細胞、促進新生血管生成，最終引導膠原蛋白的重塑。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7343697/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+ 
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">主流建議：避免冰敷，可考慮溫熱敷</p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    冰敷的核心作用是「收縮血管、抑制發炎」，而這正好與PRP治療機制相悖。冰敷若在注射後立即使用，可能：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;">抑制血小板活化與生長因子的局部釋放</li>
+    <li style="margin-bottom: 0.5rem;">減少注射部位的血流量，阻礙修復細胞的招募</li>
+    <li style="margin-bottom: 0.5rem;">削弱PRP啟動的修復炎症窗口</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    因此，多數再生醫學專家建議在術後48至72小時內<strong style="color: #ffffff;">避免冰敷</strong>，改以溫熱敷（如熱水袋或暖敷墊）輔助促進局部循環。部分臨床指引建議，溫熱敷可在注射後第一週持續使用，有助於減輕疼痛並支持血小板信號傳導。
+    <sup><a href="https://www.jeffreypengmd.com/post/post-platelet-rich-plasma-prp-injection-information" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      需要說明的是，部分骨科與運動醫學機構（包含知名臨床試驗）仍允許短暫、輕度冰敷（每次5至10分鐘）作為術後疼痛管理手段，認為輕度冰敷的鎮痛效果不至於完全抵消PRP療效。這種觀點並非沒有道理，但主流的再生醫學觀點仍傾向避免冰敷，特別是在術後前48小時的關鍵修復窗口內。若疼痛難以忍受，優先考慮口服普拿疼，而非冰敷。
+    </p>
+  </div>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">PRP注射後幾天可以運動？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    PRP術後的運動恢復必須遵循生物修復的三個階段，而不能只依據「感覺好了」就貿然恢復。許多患者在術後第一週感覺疼痛減輕，誤以為可以立刻恢復正常活動，卻不知道此時組織正在最脆弱的修復初期。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    根據多項運動醫學研究，PRP術後運動恢復的建議時程如下：
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/27085364/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+ 
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>時間點</th>
+          <th>允許的活動</th>
+          <th>應避免的活動</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>術後第1–3天</td>
+          <td>完全休息、日常生活動作、輕度散步</td>
+          <td>任何運動、搬重物、久站</td>
+        </tr>
+        <tr>
+          <td>術後第4–7天</td>
+          <td>輕度伸展、溫和關節活動度練習</td>
+          <td>衝擊性運動、重量訓練</td>
+        </tr>
+        <tr>
+          <td>術後第2週</td>
+          <td>輕量有氧（步行、固定式自行車）、輕度肌力訓練</td>
+          <td>高衝擊運動、深蹲大重量</td>
+        </tr>
+        <tr>
+          <td>術後第3–6週</td>
+          <td>逐步增加阻力訓練、本體感覺訓練</td>
+          <td>競技運動、跑跳動作（需醫師確認）</td>
+        </tr>
+        <tr>
+          <td>術後6–12週以上</td>
+          <td>依醫師評估，逐步回到原有運動強度</td>
+          <td>若尚未取得醫師clearance，避免全強度競技</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-top: 1rem; margin-bottom: 1rem;">
+    需要強調的是，<strong style="color: #ffffff;">完全不動並非最佳策略</strong>。有越來越多的研究（目前主要來自動物實驗與專家共識）指出，PRP術後適度的「控制性機械刺激」能幫助新生膠原纖維沿著正確的功能方向排列，提升最終的組織品質。因此，在休息期結束後，應在物理治療師的引導下進行漸進式復健，而非長期臥床。
+    <sup><a href="https://formationmed.com/can-you-exercise-after-prp/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">打完PRP可以重訓嗎？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    重量訓練對注射部位的負荷遠高於一般有氧運動，因此需要更保守的恢復時程。以下是不同注射部位的重訓恢復參考：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">關節注射（膝、肩、髖）：</strong>至少4至6週後才考慮重訓，且應從低重量、高次數的關節穩定訓練開始，避免全蹲或高強度推舉。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">肌腱注射（阿基里斯腱、髕骨韌帶、肩袖、網球肘）：</strong>研究建議在第5至6週後才引入離心收縮訓練，且疼痛感應控制在視覺類比量表3分以下再逐步推進。高需求肌腱傷害（阿基里斯腱、旋轉肌群）可能需要3至6個月才能回到全強度重訓。
+      <sup><a href="https://formationmed.com/can-you-exercise-after-prp/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">肌肉注射（腿後腱、小腿肌）：</strong>恢復速度相對較快，輕量訓練通常可在4至8週後嘗試。
+      <sup><a href="https://ubiehealth.com/doctors-note/prp-injection-recovery-est-time-return-exercise-4244q3" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>
+    </li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    一個臨床試驗發現，PRP合併漸進式復健計畫的患者，平均恢復運動的時間比單純復健組縮短約4天（21.1天 vs. 25天），顯示PRP在加速運動恢復上具有一定潛力——但這個前提是配合正確的術後照護，而非提早承受高強度負荷。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/27085364/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      許多健身愛好者在術後4至5週感覺「完全不痛了」，就直接回到大重量訓練，卻在幾週後發現症狀復發。這背後的原因是：疼痛消失≠組織完全修復。肌腱的膠原蛋白重塑過程通常需要12週甚至更長時間，在這段期間，肌腱雖然外觀改善，但力學強度仍低於正常值。提早施加高負荷，等於在「蓋好了結構但還沒固化的水泥」上直接施壓，是復發的主要原因之一。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、PRP術後飲食要補充什麼？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    PRP注射啟動了組織修復的生物程序，而飲食則是為這個程序提供「原料與燃料」。雖然目前針對PRP術後飲食的大型隨機對照試驗仍然有限，但以下幾類營養素在組織修復與膠原蛋白合成的研究中具有相對穩固的科學基礎：
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 維他命C（抗壞血酸）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    維他命C是膠原蛋白合成中不可缺少的輔因子，它能促進脯胺酸羥基化，這是膠原蛋白三螺旋結構形成的關鍵步驟。同時，維他命C作為強效抗氧化劑，能清除組織修復過程中產生的自由基，降低氧化應激損傷。
+    <sup><a href="https://www.orthopedicsri.com/blog-items/nutritional-supplementation-prior-to-surgery-and-prp-to-optimize-healing-and-outcomes/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    2024年發表於PMC的一項隨機對照試驗評估了PRP合併維他命C注射與單純PRP注射對部分厚度旋轉肌群撕裂的療效，雖然兩組在功能評分上的統計差異未達顯著水準，但維他命C組在疼痛減輕與功能改善趨勢上略優，研究者認為維他命C的膠原蛋白合成輔助效果在長期追蹤中可能更為明顯。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11267806/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    建議飲食來源：奇異果、草莓、芭樂、柑橘類水果、青椒；補充劑量通常建議每日500至1000毫克。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 優質蛋白質</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    膠原蛋白的主要成分是甘胺酸、脯胺酸與羥脯胺酸，這些胺基酸的前驅物全來自飲食蛋白質。PRP術後的組織修復需要充足的胺基酸供應，建議每公斤體重每日攝取至少1.2至1.5公克蛋白質。優質蛋白質來源包括：雞胸肉、魚肉（富含Omega-3）、蛋、希臘優格、豆腐及各類豆莢。膠原蛋白補充劑（水解膠原蛋白肽）也是可考慮的選項，搭配維他命C一起服用可提升吸收利用率。
+    <sup><a href="https://iowmed.com/post/prp-injection-recovery" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[15]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">3. Omega-3脂肪酸</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    Omega-3（特別是EPA和DHA）具有調節發炎反應的作用，可促進消退素的生成，幫助PRP術後的炎症進入消退期，避免慢性炎症的持續。富含Omega-3的食物包括：鮭魚、鯖魚、沙丁魚、亞麻仁籽、奇亞籽。值得注意的是：高劑量魚油在術前可能具有輕度抗凝血效果，因此術前1週應暫停魚油補充劑，術後則可逐步恢復。
+    <sup><a href="https://www.orthopedicsri.com/blog-items/nutritional-supplementation-prior-to-surgery-and-prp-to-optimize-healing-and-outcomes/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">4. 充足水分</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    術前24至48小時充分補水，有助於血液黏稠度下降，讓抽血與離心過程更順暢，PRP品質也更穩定。術後持續補充水分（每日至少2000毫升）有助於維持組織液循環、支持修復細胞的代謝需求。避免酒精（至少術後48小時，建議延長至1週），酒精會影響免疫功能並干擾組織修復。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">5. 其他輔助營養素</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">維他命D：</strong>調節免疫反應、促進骨骼與肌肉健康，若有維他命D不足（常見於台灣室內工作者），建議術前先補足。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">鋅（Zinc）：</strong>參與超過300種與修復相關的酶反應，缺鋅會延遲傷口癒合。食物來源：牡蠣、南瓜籽、紅肉。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">鎂（Magnesium）：</strong>支持蛋白質合成與肌肉功能，有助於術後肌肉功能的恢復。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">避免精緻糖與高度加工食品：</strong>過量的精緻糖分會促進糖化終末產物的生成，已知會干擾膠原蛋白的結構完整性。</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <sup><a href="https://www.orthopedicsri.com/blog-items/nutritional-supplementation-prior-to-surgery-and-prp-to-optimize-healing-and-outcomes/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>
+    <sup><a href="https://iowmed.com/post/prp-injection-recovery" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[15]</a></sup>
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 五、常見三大誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「打完PRP感覺不痛了，就可以馬上恢復正常運動」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 疼痛緩解和組織修復完成是兩件完全不同的事。PRP術後早期的疼痛往往在1至2週內就會明顯改善，但此時肌腱或軟骨的修復仍在進行中，膠原蛋白重塑期可長達12週。提早恢復高強度運動，是PRP治療後復發最常見的原因。<sup><a href="https://formationmed.com/can-you-exercise-after-prp/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[12]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「打完PRP術後疼痛，可以吃普通止痛藥（如布洛芬）緩解」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>應避免！</strong> 術後的炎症反應正是PRP療效的「引擎」，NSAIDs會抑制這個過程。若術後疼痛難以忍受，應改用乙醯氨酚（普拿疼），且遵照醫師指示。術後NSAIDs的建議停用期通常至少為2至6週，部分指引建議長達12週，以確保不干擾修復窗口。<sup><a href="https://www.ortho.wustl.edu/content/Patient-Care/8492/Services/Physical-Medicine-and-Rehabilitation-Musculoskeletal/Overview/Platelet-Rich-Plasma-PRP-Treatment.aspx" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[16]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「PRP注射後只要多吃膠原蛋白就夠了，其他飲食不重要」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 膠原蛋白補充固然有幫助，但必須搭配維他命C才能有效吸收利用，還需要足夠的蛋白質總量（胺基酸前驅物）、抗氧化營養素，以及避免促炎食物。單靠一種補充劑無法替代均衡飲食對修復的整體支撐。<sup><a href="https://iowmed.com/post/prp-injection-recovery" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[15]</a></sup></span>
+        </div>
+      </li>
+ 
+    </ul>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：PRP注射後，局部出現腫脹疼痛是正常的嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      是的，這通常是正常的。注射後24至72小時內出現局部腫脹、疼痛加劇，正是PRP啟動的「受控性炎症反應」的表現，代表血小板正在活化並釋放生長因子。這個急性炎症期通常在3至7天內消退。若疼痛在72小時後仍持續加重，或出現發燒、發紅範圍擴大、滲液等症狀，則應儘快回診評估是否有感染可能。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：打PRP之前需要禁食嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      一般情況下，PRP注射不需要禁食。建議在注射當天正常飲食並充分補水（至少2000毫升），這有助於血液容積足夠、靜脈容易定位，抽血過程也更順暢。空腹或脫水狀態反而可能影響血液品質，進而影響PRP的濃縮效果。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：PRP注射後多久可以看到效果？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      這是最常見的問題之一。PRP的療效通常不是立即出現的。疼痛的初步改善可能在注射後2至4週出現，但組織修復的完整過程（特別是膠原蛋白重塑）需要8至12週甚至更長時間。關節注射通常在6至8週後開始有明顯功能改善；肌腱注射的完整療程可能長達3至6個月。這也是為什麼術後的配合照護如此重要——PRP的療效不是一針見效，而是一個需要時間與正確照護共同堆疊的過程。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：吸煙或飲酒會影響PRP效果嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      會，且影響相當顯著。吸煙會造成血管收縮、降低組織氧合量，並直接抑制成纖維細胞的活性——這是膠原蛋白合成的關鍵細胞。酒精則會干擾免疫功能並加劇系統性炎症反應。建議術前1週及術後至少1至2週完全避免吸煙與飲酒，以獲得最佳療效。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：一次PRP注射夠嗎，還是需要多次？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      依傷害嚴重度與治療目標而定。急性或輕度傷害，單次注射可能已足夠；慢性或退化性病變（如退化性關節炎、慢性肌腱病變），通常需要2至3次注射，間隔約6至10週，以達到最佳的組織修復效果。術後的生活型態配合（禁用NSAIDs、正確飲食、漸進式復健）是決定每次注射能否發揮最大效益的關鍵因素。
+    </p>
+ 
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+ 
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    PRP注射是一項需要患者主動配合的再生醫療技術。從術前的藥物調整、健康狀況評估，到術後的休息、飲食補充與漸進式復健，每一個環節都在影響最終的治療成效。
+  </p><br>
+ 
+  <p style="color: #475569; font-size: 1.05rem;">
+    最重要的原則是：<strong style="color: #1e293b;">把PRP視為啟動修復的「起點」，而非萬能的「終點」。</strong> 注射提供了生長因子的濃縮供應，但真正的修復仍依賴您自身的身體條件、正確的術後照護，以及配合物理治療師設計的漸進式復健計畫。若您有任何術前或術後的疑問——無論是關於目前服用的藥物、術後的不適症狀，或是何時可以恢復特定運動——都應主動與您的主治醫師溝通，而非單憑網路資訊自行判斷。
+  </p>
+ 
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的術前術後檢核清單，確認您在注射前已停用相關藥物、身體狀況良好，並備妥術後的飲食與復健計畫。若有任何疑問，請在注射前主動與醫師討論。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約PRP注射門診評估
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Nguyen, C.C., et al. (2024). A Review of Platelet-Rich Plasma Use in Patients Taking Non-steroidal Anti-inflammatory Drugs for Guideline Development. PMC. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11568791/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11568791</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Said, M., et al. (2024). Mechanisms, Efficacy, and Clinical Applications of Platelet-Rich Plasma in Tendinopathy: A Comprehensive Review. PMC. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11350620/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11350620</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Abdelhady, A., et al. (2024). Comparative efficacy of platelet-rich plasma (PRP) injection versus PRP combined with vitamin C injection for partial-thickness rotator cuff tears: a randomized controlled trial. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11267806/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 11267806</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Papalia, G.F., et al. (2023). Molecular and Biologic Effects of Platelet-Rich Plasma (PRP) in Ligament and Tendon Healing and Regeneration: A Systematic Review. PMC. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9917492/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 9917492</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Juventix Regenerative Medical. (2024). Stop NSAIDs Before PRP: A Crucial Step in Regenerative Medicine. <a href="https://juventix.com/stop-nsaids-before-prp-a-crucial-step-in-regenerative-medicine/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        It's a Secret Med Spa. (2024). PRP Injections Pre And Post Care Instructions. <a href="https://secretmedspa.com/injectables/prp-injections/prp-injections-pre-and-post-care-instructions/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Banff Sport Medicine Foundation. (2018). Post Platelet Rich Plasma (PRP) Injection Information. <a href="https://banffsportmed.ca/wp-content/uploads/2018/01/PRP-Injection-handout.pdf" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PDF Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Eymard, F., et al. (2025). Indications and contraindications to platelet-rich plasma injections in musculoskeletal diseases in case of infectious, oncological and haematological comorbidities: A 2025 formal consensus from the GRIIP. PMC. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12104799/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12104799</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Yoshida, R., et al. (2020). Platelet-rich plasma (PRP) accelerates murine patellar tendon healing through enhancement of angiogenesis and collagen synthesis. PMC. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7343697/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 7343697</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Peng, J. (2021). Post Platelet Rich Plasma (PRP) Injection Information. Dr. Jeffrey Peng MD. <a href="https://www.jeffreypengmd.com/post/post-platelet-rich-plasma-prp-injection-information" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hamid, M.S., et al. (2016). Does platelet-rich plasma decrease time to return to sports in acute muscle tear? A randomized controlled trial. PubMed. <a href="https://pubmed.ncbi.nlm.nih.gov/27085364/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 27085364</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Formation Med. (2026). Can You Exercise After PRP Injection? <a href="https://formationmed.com/can-you-exercise-after-prp/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Ubie Health. (2026). PRP Recovery Timeline: When Can You Return to Exercise? <a href="https://ubiehealth.com/doctors-note/prp-injection-recovery-est-time-return-exercise-4244q3" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Ortho Rhode Island. (2025). Nutritional Supplementation Prior to Surgery and PRP to Optimize Healing and Outcomes. <a href="https://www.orthopedicsri.com/blog-items/nutritional-supplementation-prior-to-surgery-and-prp-to-optimize-healing-and-outcomes/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Institute of Wellness. (2025). PRP Injection Recovery: What to Expect Week by Week. <a href="https://iowmed.com/post/prp-injection-recovery" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Washington University Orthopedics. (2023). Platelet-Rich Plasma (PRP) Treatment. <a href="https://www.ortho.wustl.edu/content/Patient-Care/8492/Services/Physical-Medicine-and-Rehabilitation-Musculoskeletal/Overview/Platelet-Rich-Plasma-PRP-Treatment.aspx" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">Web Link</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+
 {
 id: 'prp-vs-hyaluronic-acid-injection',
   title: '自費針劑這麼多種，PRP、玻尿酸、葡萄糖，該如何挑選？如何挑選適合的醫生跟診所',

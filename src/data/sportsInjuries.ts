@@ -226,6 +226,12 @@ export const sportsInjuriesData = [
         description: '為什麼打完高濃度血小板血漿（PRP）後反而比之前更痛？復健科醫師從運動醫學與生理機制出發，系統性解析注射後的「無菌性發炎反應」，並針對門診最常見的四大疑問：PRP多久打一次？一定要打滿三針嗎？多久見效？效果能維持幾年？提供完整的實證醫學解答與行動建議。',
         image: '/images/news/article/prp-injection-pain-duration-efficacy.webp',
       },
+                                                      {
+        slug: 'prp-pre-post-care',
+        title: 'PRP注射前後的注意事項，飲食還有可以運動嗎？',
+        description: '完整解說PRP注射前後的注意事項，包含術前止痛藥與感冒的處理原則、術後冰敷vs熱敷的醫學依據、運動恢復時程、重訓返回準則，以及維他命C、膠原蛋白等術後飲食補充建議，幫助患者以正確觀念最大化PRP治療效果。',
+        image: '/images/news/article/prp-pre-post-care.webp',
+      },
                                                 {
         slug: 'prp-vs-hyaluronic-acid-injection',
         title: '自費針劑這麼多種，PRP、玻尿酸、葡萄糖，該如何挑選？如何挑選適合的醫生跟診所',
