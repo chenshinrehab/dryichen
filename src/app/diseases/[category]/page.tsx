@@ -133,6 +133,7 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
             <div className="mb-10 animate-on-scroll">
               <Link
                 href="/diseases"
+                prefetch={false} // ✨ 新增：防止爬蟲和滑鼠經過時預載，節省 ISR 流量
                 className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-2 transition-colors group text-sm font-medium"
               >
                 <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i>
@@ -155,6 +156,7 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                   <Link
                     key={disease.slug}
                     href={`/diseases/${category.slug}/${disease.slug}`}
+                    prefetch={false} // ✨ 新增：防止卡片大量預載，精準省下個別疾病頁面的 ISR Reads
                     className="group bg-slate-800/40 backdrop-blur border border-slate-700/80 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_20px_rgba(34,211,238,0.15)] transition-all duration-300 flex flex-col h-full"
                   >
                     {/* 1. 圖片區塊 (優化 Alt) */}
@@ -229,6 +231,7 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
               <p className="text-slate-500 mb-6">想了解其他部位的不適症狀嗎？</p>
               <Link
                 href="/diseases"
+                prefetch={false} // ✨ 新增：防止底部返回連結觸發多餘的預載
                 className="inline-flex items-center px-8 py-3 bg-slate-800 text-slate-300 rounded-full border border-slate-700 hover:bg-cyan-900/20 hover:text-cyan-400 hover:border-cyan-500/50 transition-all duration-300 shadow-lg"
               >
                 <i className="fa-solid fa-table-cells-large mr-3"></i>

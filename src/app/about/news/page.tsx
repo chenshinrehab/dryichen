@@ -128,7 +128,7 @@ export default function NewsListPage({ searchParams }: Props) {
             {/* Header 區塊 */}
             <div className="mb-10 animate-on-scroll">
                 <div className="text-left mb-4">
-                    <Link href="/about" className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors group text-sm font-medium">
+                    <Link href="/about" prefetch={false} className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors group text-sm font-medium">
                         <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 
                         返回關於我們
                     </Link>
@@ -146,6 +146,7 @@ export default function NewsListPage({ searchParams }: Props) {
 
                     <Link 
                         href="/about/news/notices" 
+                        prefetch={false}
                         className="group relative inline-flex items-center justify-center px-5 py-2.5 md:px-6 md:py-3 overflow-hidden font-medium text-white transition-all duration-300 bg-pink-600 rounded-xl hover:bg-pink-500 hover:scale-105 shadow-[0_0_20px_rgba(219,39,119,0.4)] shrink-0"
                     >
                         <span className="mr-2 md:mr-3 text-lg">
@@ -174,6 +175,7 @@ export default function NewsListPage({ searchParams }: Props) {
                   <Link 
                     key={item.id} 
                     href={`/about/news/${item.id}`} 
+                    prefetch={false}
                     className={`block group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden transition-all duration-300 ${hoverStyle} animate-on-scroll ${index === 0 ? '' : 'delay-100'}`}
                   >
                     <div className="flex flex-col md:flex-row h-full">
@@ -220,6 +222,7 @@ export default function NewsListPage({ searchParams }: Props) {
                   {currentPage > 1 ? (
                     <Link 
                       href={`${PAGE_PATH}?page=${currentPage - 1}`} 
+                      prefetch={false}
                       className="px-4 py-2 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-cyan-400 transition-colors border border-slate-700 text-sm font-medium"
                     >
                       <i className="fa-solid fa-chevron-left mr-1"></i> 上一頁
@@ -242,6 +245,7 @@ export default function NewsListPage({ searchParams }: Props) {
                         <Link
                           key={pageNum}
                           href={`${PAGE_PATH}?page=${pageNum}`}
+                          prefetch={false}
                           className={`w-10 h-10 flex items-center justify-center rounded-lg transition-colors border text-sm font-medium ${
                             isActive
                               ? 'bg-cyan-500/20 text-cyan-400 border-cyan-500/50 shadow-[0_0_10px_rgba(34,211,238,0.2)]'
@@ -258,6 +262,7 @@ export default function NewsListPage({ searchParams }: Props) {
                   {currentPage < totalPages ? (
                     <Link 
                       href={`${PAGE_PATH}?page=${currentPage + 1}`} 
+                      prefetch={false}
                       className="px-4 py-2 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-cyan-400 transition-colors border border-slate-700 text-sm font-medium"
                     >
                       下一頁 <i className="fa-solid fa-chevron-right ml-1"></i>
@@ -279,6 +284,7 @@ export default function NewsListPage({ searchParams }: Props) {
                     {currentPage > 1 ? (
                       <Link 
                         href={`${PAGE_PATH}?page=${currentPage - 1}`} 
+                        prefetch={false}
                         className="flex-1 px-4 py-2.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-cyan-400 transition-colors border border-slate-700 text-sm font-medium text-center"
                       >
                         <i className="fa-solid fa-chevron-left mr-1"></i> 上一頁
@@ -295,6 +301,7 @@ export default function NewsListPage({ searchParams }: Props) {
                     {currentPage < totalPages ? (
                       <Link 
                         href={`${PAGE_PATH}?page=${currentPage + 1}`} 
+                        prefetch={false}
                         className="flex-1 px-4 py-2.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-cyan-400 transition-colors border border-slate-700 text-sm font-medium text-center"
                       >
                         下一頁 <i className="fa-solid fa-chevron-right ml-1"></i>
@@ -318,6 +325,7 @@ export default function NewsListPage({ searchParams }: Props) {
                         <Link
                           key={pageNum}
                           href={`${PAGE_PATH}?page=${pageNum}`}
+                          prefetch={false}
                           className={`w-8 h-8 flex items-center justify-center rounded-lg transition-colors border text-xs font-medium ${
                             isActive
                               ? 'bg-cyan-500/20 text-cyan-400 border-cyan-500/50 shadow-[0_0_10px_rgba(34,211,238,0.2)]'

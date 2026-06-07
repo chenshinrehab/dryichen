@@ -23,7 +23,7 @@ const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 // 1. Meta 設定 (優化 Title 並加入 Geo 標籤)
 // ==========================================
 export const metadata: Metadata = {
-  // 修正：移除後綴診所名，避免與 layout.tsx 疊加
+  // 修正：移除後綴診所名，避免與 layout.tsx 模板疊加
   title: '關於我們 - 新竹復健科推薦 | 台大醫師林羿辰 | 竹科/關埔/光復路骨科診所 | 新竹宸新復健科,',
   description: '新竹東區/竹科復健科首選。宸新復健科由台大林羿辰醫師主持，位於關埔重劃區(近Costco、光復路)。提供骨科痛症、運動傷害、兒童早療等全方位治療。附設專屬停車位，就醫方便。',
   keywords: [
@@ -157,6 +157,7 @@ export default function AboutPage() {
               <Link 
                 key={item.id} 
                 href={item.href}
+                prefetch={false} // ✨ 精準新增：阻斷四張主要入口卡片的自動預載，守護專案 ISR 讀取額度
                 className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
               >
                 {/* 圖片區塊 */}
