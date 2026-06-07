@@ -123,6 +123,7 @@ export default function DiseasesPage() {
               <Link
                 key={category.slug}
                 href={`/diseases/${category.slug}`}
+                prefetch={false}
                 className="group relative bg-slate-800/40 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
               >
                 {/* 1. 圖片區塊 (優化 Alt 描述) */}
@@ -209,8 +210,8 @@ export default function DiseasesPage() {
                              />
                              <span className="text-slate-400 text-sm">本文內容由 林羿辰 醫師 專業審閱</span>
                           </div>
-                          <Link href="/about/doctors" className="text-cyan-400 hover:text-cyan-300 text-sm font-medium flex items-center gap-2 group">
-                              認識我們的醫療團隊 <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
+                          <Link href="/about/doctors" prefetch={false} className="text-cyan-400 hover:text-cyan-300 text-sm font-medium flex items-center gap-2 group">
+                             認識我們的醫療團隊 <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
                           </Link>
                       </div>
                   </div>

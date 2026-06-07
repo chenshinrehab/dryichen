@@ -129,7 +129,7 @@ const weightBoneSchema = {
 }
 
 export default function WeightLossPage() {
-  // 將原本的三個項目拆分：前兩個為一組，第三個為一組
+  // 将原本的三個項目拆分：前兩個為一組，第三個為一組
   const firstTwoPrograms = weightLossPrograms.slice(0, 2);
   const remainingPrograms = weightLossPrograms.slice(2);
 
@@ -175,7 +175,7 @@ export default function WeightLossPage() {
 
   {/* 這裡電腦版放入四顆按鈕，方格內容自適應 */}
   <div className="bg-slate-800/30 backdrop-blur border border-slate-700/50 rounded-2xl p-6 md:p-8">
-    {/* 渲染按鈕組件 */}
+    {/* 這裡渲染按鈕組件 */}
     <WeightLossTools />
   </div>
 </div>
@@ -186,6 +186,7 @@ export default function WeightLossPage() {
                 <Link
                   key={program.slug}
                   href={`/weight-bone/${program.slug}`}
+                  prefetch={false}
                   className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] hover:-translate-y-1 transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
                 >
                   {/* 圖片區塊 */}
@@ -245,6 +246,7 @@ export default function WeightLossPage() {
                   <Link
                     key={categoryItem.category}
                     href={`/weight-bone/sports-injuries/${categoryItem.category}`}
+                    prefetch={false}
                     className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 transition-all duration-300 flex flex-col cursor-pointer"
                   >
                     <div className="h-40 w-full relative overflow-hidden bg-slate-700">
@@ -275,6 +277,7 @@ export default function WeightLossPage() {
                 <Link
                   key={program.slug}
                   href={`/weight-bone/${program.slug}`}
+                  prefetch={false}
                   className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] hover:-translate-y-1 transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
                 >
                   {/* 圖片區塊 */}
@@ -341,7 +344,7 @@ export default function WeightLossPage() {
                                 體重控制不僅僅是為了外觀，更是為了健康。市面上的減重藥物（如<span className="text-cyan-400">瘦瘦針、猛健樂</span>）必須在專業醫師的評估下使用。
                             </p>
                             <p>
-                                同樣地，兒童的生長發育只有一次。透過<span className="text-cyan-400">骨齡檢測</span>，我們能客觀判斷孩子的生長潛力，把握黃金成長期。
+                                同時地，兒童的生長發育只有一次。透過<span className="text-cyan-400">骨齡檢測</span>，我們能客觀判斷孩子的生長潛力，把握黃金成長期。
                             </p>
                         </div>
                         

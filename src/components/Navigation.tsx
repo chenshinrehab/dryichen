@@ -104,7 +104,7 @@ export default function Navigation() {
         
         {/* Logo 區塊 */}
         <div className="relative flex items-center justify-between py-2 md:py-3 border-b border-slate-800/50 min-h-[52px] md:min-h-[60px]">
-          <Link href="/" className="flex items-center gap-2.5 group cursor-pointer md:absolute md:left-1/2 md:-translate-x-1/2 z-10" aria-label="宸新復健科首頁">
+          <Link href="/" prefetch={false} className="flex items-center gap-2.5 group cursor-pointer md:absolute md:left-1/2 md:-translate-x-1/2 z-10" aria-label="宸新復健科首頁">
               <div className="relative w-10 h-10 md:w-14 md:h-14">
                   <Image 
                     src="/images/main/logo.webp" 
@@ -126,13 +126,14 @@ export default function Navigation() {
           <div className="flex items-center gap-2 ml-auto z-20">
               <Link 
                 href="/booking"
+                prefetch={false}
                 className="sm:hidden flex items-center gap-1 px-3 py-1.5 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full font-bold shadow-md text-sm active:scale-95 transition-transform"
               >
                  <FaCalendarCheck size={14} /> 預約
               </Link>
 
               <div className="hidden sm:flex items-center gap-3">
-                <Link href="/" title="回到首頁" 
+                <Link href="/" prefetch={false} title="回到首頁" 
                   className="w-10 h-10 rounded-full bg-slate-800 text-cyan-400 border border-cyan-400 flex items-center justify-center text-lg hover:bg-slate-700 transition-colors shadow-md">
                   <FaHome size={18} />
                 </Link>
@@ -162,6 +163,7 @@ export default function Navigation() {
                    <div className="relative">
                        <Link 
                          href={item.path} 
+                         prefetch={false}
                          className={`
                            px-1.5 py-1.5 text-sm 
                            md:px-4 md:py-2 md:text-base 
@@ -193,6 +195,7 @@ export default function Navigation() {
                                 <Link 
                                     key={sub.path} 
                                     href={sub.path}
+                                    prefetch={false}
                                     className="block px-4 py-3 text-sm text-slate-300 hover:bg-slate-800 hover:text-cyan-400 text-left border-b border-slate-800 last:border-0"
                                 >
                                     <FaCaretRight size={10} className="inline-block mr-2 text-slate-600" />
@@ -209,6 +212,7 @@ export default function Navigation() {
               <li className="hidden sm:block shrink-0">
                   <Link 
                     href="/booking" 
+                    prefetch={false}
                     className={`
                       px-3.5 py-1.5 md:px-4 md:py-2 rounded-full text-base font-medium transition-all ml-1 block flex items-center gap-1.5
                       ${isActive('/booking') 

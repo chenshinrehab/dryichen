@@ -115,6 +115,7 @@ export default function TreatmentsPage() {
                 <Link
                   key={treatment.slug}
                   href={`/treatments/${treatment.slug}`}
+                  prefetch={false}
                   // 優化點：卡片改為純深色背景，不再透明，確保文字清晰
                   className="group relative bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(34,211,238,0.15)] transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
                 >

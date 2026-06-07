@@ -365,19 +365,19 @@ export default function Home() {
                     <FaBell className="mr-2 animate-swing" />最新消息
                 </div>
                 <div className="flex-grow min-w-0 overflow-hidden relative h-6 mask-linear-fade">
-                    <div className="animate-marquee absolute top-0 left-0 flex gap-12 items-center h-full">
-                        {displayNews.map((news, index) => (
-                            <Link key={`${news.id}-${index}`} href={`/about/news/${news.id}`} className="text-slate-200 hover:text-cyan-400 transition-colors flex items-center whitespace-nowrap text-sm md:text-base font-medium">
-                                <span className="text-yellow-400 font-bold mr-2 text-xs border border-yellow-400/30 px-1 rounded">NEW</span>
-                                <span className="text-slate-400 mr-2 text-sm">[{news.date}]</span>
-                                {news.title}
-                            </Link>
-                        ))}
-                    </div>
+      <div className="animate-marquee absolute top-0 left-0 flex gap-12 items-center h-full">
+    {displayNews.map((news, index) => (
+        <Link key={`${news.id}-${index}`} href={`/about/news/${news.id}`} prefetch={false} className="text-slate-200 hover:text-cyan-400 transition-colors flex items-center whitespace-nowrap text-sm md:text-base font-medium">
+            <span className="text-yellow-400 font-bold mr-2 text-xs border border-yellow-400/30 px-1 rounded">NEW</span>
+            <span className="text-slate-400 mr-2 text-sm">[{news.date}]</span>
+            {news.title}
+        </Link>
+    ))}
+</div>
                 </div>
-                <Link href="/about/news" className="text-sm text-slate-400 hover:text-white shrink-0 hidden md:flex items-center group z-10 bg-slate-800/50 px-2 rounded">
-                    查看更多 <FaChevronRight className="text-[10px] ml-1 group-hover:translate-x-1 transition-transform" />
-                </Link>
+<Link href="/about/news" prefetch={false} className="text-sm text-slate-400 hover:text-white shrink-0 hidden md:flex items-center group z-10 bg-slate-800/50 px-2 rounded">
+    查看更多 <FaChevronRight className="text-[10px] ml-1 group-hover:translate-x-1 transition-transform" />
+</Link>
             </div>
           </section>
 
@@ -387,32 +387,35 @@ export default function Home() {
                 <div className="bg-slate-800/60 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden shadow-2xl relative group">
                     <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
                     <div className="flex flex-col md:flex-row">
-                      <div className="md:w-1/2 relative">
-                      <div className="h-full w-full min-h-[320px] md:min-h-[550px] relative overflow-hidden group">
-  <Link href="/about/doctors" className="block h-full w-full cursor-pointer">
-    <Image 
-      src="/images/main/a.webp"
-      alt="新竹復健科推薦-林羿辰醫師-台大雙專科院長" 
-      fill
-      priority
-      loading="eager"
-      fetchPriority="high"
-      className="object-cover object-center md:object-bottom group-hover:scale-105 transition-all duration-700"
-      sizes="(max-width: 768px) 100vw, 50vw"
-    />
-  </Link>
-</div>
-                      </div>
 
-                      <div className="md:w-1/2 p-8 md:p-8 flex flex-col justify-center relative z-10">
-                      <h1 className="text-5xl md:text-6xl font-bold font-sans text-white mb-2 tracking-wide">
-  <Link 
-    href="/about/doctors" 
-    className="hover:text-cyan-300 transition-all duration-300 cursor-pointer group"
-  >
-    林羿辰 <span className="text-cyan-400 group-hover:text-cyan-300">醫師</span>
-  </Link>
-</h1>
+<div className="md:w-1/2 relative">
+  <div className="h-full w-full min-h-[320px] md:min-h-[550px] relative overflow-hidden group">
+    <Link href="/about/doctors" prefetch={false} className="block h-full w-full cursor-pointer">
+      <Image 
+        src="/images/main/a.webp"
+        alt="新竹復健科推薦-林羿辰醫師-台大雙專科院長" 
+        fill
+        priority
+        loading="eager"
+        fetchPriority="high"
+        className="object-cover object-center md:object-bottom group-hover:scale-105 transition-all duration-700"
+        sizes="(max-width: 768px) 100vw, 50vw"
+      />
+    </Link>
+  </div>
+</div>
+
+<div className="md:w-1/2 p-8 md:p-8 flex flex-col justify-center relative z-10">
+  <h1 className="text-5xl md:text-6xl font-bold font-sans text-white mb-2 tracking-wide">
+    <Link 
+      href="/about/doctors" 
+      prefetch={false}
+      className="hover:text-cyan-300 transition-all duration-300 cursor-pointer group"
+    >
+      林羿辰 <span className="text-cyan-400 group-hover:text-cyan-300">醫師</span>
+    </Link>
+  </h1>
+
                           <p className="text-2xl text-slate-300 mb-6 font-medium">運動教練醫師 | 骨科復健專家</p>
                           <h2 className="text-2xl md:text-3xl text-cyan-400 font-medium mb-8 border-l-4 border-cyan-500 pl-4 flex flex-wrap items-center gap-2">
                             新竹增生療法專家 <span className="text-xl md:text-2xl text-slate-400 font-normal">| 兒童早療評估</span>
@@ -440,9 +443,9 @@ export default function Home() {
                             </div>
                           </div>
                           <div className="mt-8 pt-6 border-t border-slate-700/50">
-                             <Link href="/about/doctors" className="inline-flex items-center text-cyan-400 font-bold hover:text-white transition-colors group/link text-lg">
-                                了解完整醫師資歷 <FaArrowRight className="ml-2 group-hover/link:translate-x-1 transition-transform" />
-                             </Link>
+<Link href="/about/doctors" prefetch={false} className="inline-flex items-center text-cyan-400 font-bold hover:text-white transition-colors group/link text-lg">
+         了解完整醫師資歷 <FaArrowRight className="ml-2 group-hover/link:translate-x-1 transition-transform" />
+       </Link>
                           </div>
                       </div>
                     </div>
@@ -480,31 +483,33 @@ export default function Home() {
                         </div>
                       </div>
 
-                       <div className="lg:w-8/12 flex flex-col justify-between h-auto py-1">
-                           <div className="flex flex-col gap-5">
-                              <h3 className="text-4xl font-bold text-white flex flex-wrap items-center justify-between gap-4">
-                                  新竹市宸新復健科
-                                  <Link href="/about/clinic" className="text-base text-cyan-500 font-normal hover:underline decoration-cyan-500/50 underline-offset-4 flex items-center whitespace-nowrap">
-                                      查看設備介紹 <FaArrowRight className="text-xs ml-1" />
-                                  </Link>
-                              </h3>
-                              <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 border-b border-slate-700 pb-6">
-                                 <div className="flex items-center gap-2">
-                                    <div className="flex text-yellow-400 text-sm gap-0.5">
-                                      <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
-                                    </div>
-                                    <span className="text-slate-300 font-bold">4.7</span>
-                                    <span className="text-slate-500 text-sm">(700+ 評論)</span>
-                                 </div>
-                                 <div className="hidden sm:block w-px h-6 bg-slate-600"></div>
-                                 <div className="flex flex-wrap gap-3">
-                                 <Link 
-  href="/about/clinic/parking" 
-  className="text-sm bg-cyan-900/40 border border-cyan-500/30 text-cyan-100 px-3 py-1.5 rounded-md flex items-center hover:bg-cyan-900/60 transition-colors cursor-pointer"
->
-  <FaParking className="mr-2 text-yellow-400" />
-  專屬停車位
-</Link>
+<div className="lg:w-8/12 flex flex-col justify-between h-auto py-1">
+   <div className="flex flex-col gap-5">
+      <h3 className="text-4xl font-bold text-white flex flex-wrap items-center justify-between gap-4">
+          新竹市宸新復健科
+          <Link href="/about/clinic" prefetch={false} className="text-base text-cyan-500 font-normal hover:underline decoration-cyan-500/50 underline-offset-4 flex items-center whitespace-nowrap">
+              查看設備介紹 <FaArrowRight className="text-xs ml-1" />
+          </Link>
+      </h3>
+      <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 border-b border-slate-700 pb-6">
+         <div className="flex items-center gap-2">
+            <div className="flex text-yellow-400 text-sm gap-0.5">
+              <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
+            </div>
+            <span className="text-slate-300 font-bold">4.7</span>
+            <span className="text-slate-500 text-sm">(700+ 評論)</span>
+         </div>
+         <div className="hidden sm:block w-px h-6 bg-slate-600"></div>
+         <div className="flex flex-wrap gap-3">
+         <Link 
+            href="/about/clinic/parking" 
+            prefetch={false}
+            className="text-sm bg-cyan-900/40 border border-cyan-500/30 text-cyan-100 px-3 py-1.5 rounded-md flex items-center hover:bg-cyan-900/60 transition-colors cursor-pointer"
+          >
+            <FaParking className="mr-2 text-yellow-400" />
+            專屬停車位
+          </Link>
+
                                     <span className="text-sm bg-cyan-900/40 border border-cyan-500/30 text-cyan-100 px-3 py-1.5 rounded-md flex items-center">
                                          <FaWheelchair className="mr-2 text-blue-400" />無障礙空間(電梯)
                                     </span>

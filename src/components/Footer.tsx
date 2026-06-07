@@ -62,7 +62,7 @@ export default function Footer() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 px-2 max-w-6xl mx-auto">
                 
                {/* 1. 關於我們 */}
-                <Link href="/about" className="animate-on-scroll delay-100 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block">
+                <Link href="/about" prefetch={false} className="animate-on-scroll delay-100 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block">
                   <img
                     src="/images/icons/a.webp" 
                     alt="關於我們 - 宸新復健科" 
@@ -74,7 +74,7 @@ export default function Footer() {
                 </Link>
 
                 {/* 2. 治療方式 */}
-                <Link href="/treatments" className="animate-on-scroll delay-200 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block">
+                <Link href="/treatments" prefetch={false} className="animate-on-scroll delay-200 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block">
                   <img
                     src="/images/icons/b.webp" 
                     alt="治療方式 - PRP與震波" 
@@ -86,7 +86,7 @@ export default function Footer() {
                 </Link>
 
                 {/* 3. 減重與骨齡 */}
-                <Link href="/weight-bone" className="animate-on-scroll delay-300 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block">
+                <Link href="/weight-bone" prefetch={false} className="animate-on-scroll delay-300 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block">
                   <img
                     src="/images/icons/e.webp" 
                     alt="特色門診" 
@@ -98,7 +98,7 @@ export default function Footer() {
                 </Link>
 
                 {/* 4. 疾病衛教 */}
-                <Link href="/diseases" className="animate-on-scroll delay-400 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block">
+                <Link href="/diseases" prefetch={false} className="animate-on-scroll delay-400 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block">
                   <img
                     src="/images/icons/d.webp" 
                     alt="疾病衛教文章" 
@@ -145,7 +145,7 @@ export default function Footer() {
                 </a>
                 
                 {/* 獨立的預約按鈕 */}
-                <Link href="/booking" className="px-4 py-1.5 rounded-full text-sm font-medium text-white bg-gradient-to-r from-pink-500 to-rose-500 hover:shadow-[0_0_10px_rgba(236,72,153,0.5)] transition-all flex items-center gap-1.5 ml-1">
+                <Link href="/booking" prefetch={false} className="px-4 py-1.5 rounded-full text-sm font-medium text-white bg-gradient-to-r from-pink-500 to-rose-500 hover:shadow-[0_0_10px_rgba(236,72,153,0.5)] transition-all flex items-center gap-1.5 ml-1">
                     <FaCalendarCheck /> 馬上預約
                 </Link>
             </div>
