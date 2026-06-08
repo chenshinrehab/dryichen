@@ -5470,13 +5470,13 @@ qaList: [
 <p style="margin: 0; color: #1e3a5f; line-height: 1.8;">
 靜脈注射非類固醇消炎藥（IV NSAIDs，代表藥物：Ketorolac）是急性劇痛的重要臨床工具。
 多項隨機對照試驗證實，靜脈給藥因生物利用率達 100%，起效速度顯著優於口服途徑（約 30 分鐘見效）。<br><br>
-2017 年發表於《急診醫學年鑑》的三劑量比較試驗（n＝240）顯示，靜脈 Ketorolac 10 mg 的止痛效果與 30 mg 相當，
+2017 年發表於《急診醫學年鑑》的研究顯示，靜脈止痛針10 mg 的止痛效果與 30 mg 相當，
 且副作用未見增加<sup><a href="https://pubmed.ncbi.nlm.nih.gov/27993418/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[1]</a></sup>，
-說明「劑量天花板效應」的存在。針對急性下背痛，2020 年 Cochrane 系統性回顧（32 項 RCT，n＝5,356）確認 NSAIDs 相較安慰劑能有效短期降低疼痛與失能<sup><a href="https://pubmed.ncbi.nlm.nih.gov/32297973/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[2]</a></sup>。<br><br>
-針對急性痛風，美國風濕病學院（ACR）2020 年指引強烈推薦 NSAIDs 作為一線療法<sup><a href="https://pubmed.ncbi.nlm.nih.gov/32391934/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[3]</a></sup>，
-臨床試驗顯示 NSAIDs 可使 73% 痛風患者疼痛下降 ≥50%（安慰劑組僅 27%）<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6366613/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[4]</a></sup>。
-針對急診偏頭痛，2025/2026 年更新的美國頭痛學會指引確認靜脈 Ketorolac 為「可能有效」藥物（Level C）<sup><a href="https://headachejournal.onlinelibrary.wiley.com/doi/10.1111/head.70016" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[5]</a></sup>。<br><br>
-然而，腎功能不全、胃潰瘍、NSAIDs 過敏史等為絕對禁忌，研究顯示 NSAIDs 使急性腎損傷（AKI）風險提高約 1.73 倍<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28764659/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[6]</a></sup>，
+說明「劑量天花板效應」的存在。針對急性下背痛，大型研究確認 NSAIDs 相較安慰劑能有效短期降低疼痛與失能<sup><a href="https://pubmed.ncbi.nlm.nih.gov/32297973/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[2]</a></sup>。<br><br>
+針對急性痛風，美國風濕病學院最新指引強烈推薦 NSAIDs 作為一線療法<sup><a href="https://pubmed.ncbi.nlm.nih.gov/32391934/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[3]</a></sup>，
+臨床試驗顯示 NSAIDs 可使 73% 痛風患者疼痛下降一半<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6366613/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[4]</a></sup>。
+針對急診偏頭痛，最新的美國頭痛學會指引確認靜脈 NSAIDs 為「可能有效」藥物<sup><a href="https://headachejournal.onlinelibrary.wiley.com/doi/10.1111/head.70016" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[5]</a></sup>。<br><br>
+然而，腎功能不全、胃潰瘍、NSAIDs 過敏史等為絕對禁忌，研究顯示 NSAIDs 使急性腎損傷風險提高約 1.73 倍<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28764659/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[6]</a></sup>，
 老年族群風險更高達 2.51 倍<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28764659/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[6]</a></sup>。
 靜脈止痛針屬急性期橋接工具，長期依賴無益，應配合復健根治疼痛根源。
 </p>
@@ -5505,7 +5505,7 @@ qaList: [
     </li>
     <li style="margin-bottom: 0; display: flex; align-items: start;">
       <span style="background: #ef4444; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">!</span>
-      <div><strong>腎功能不全：</strong> 洗腎患者或慢性腎臟病患，需由醫師嚴格調整劑量或改用其他藥物。研究顯示 NSAIDs 使急性腎損傷（AKI）風險提升約 <strong>1.73 倍</strong>（95% CI: 1.44–2.07），老年族群更高達 <strong>2.51 倍</strong><sup><a href="https://pubmed.ncbi.nlm.nih.gov/28764659/" target="_blank" rel="noopener noreferrer" style="color: #991b1b;">[6]</a></sup>。</div>
+      <div><strong>腎功能不全：</strong> 洗腎患者或慢性腎臟病患，需由醫師嚴格調整劑量或改用其他藥物。研究顯示 NSAIDs 使急性腎損傷風險提升約 <strong>1.73 倍</strong>，老年族群更高達 <strong>2.51 倍</strong><sup><a href="https://pubmed.ncbi.nlm.nih.gov/28764659/" target="_blank" rel="noopener noreferrer" style="color: #991b1b;">[6]</a></sup>。</div>
     </li>
   </ul>
 </div>
@@ -5513,10 +5513,10 @@ qaList: [
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
 <h2>💊 靜脈止痛針的成分與原理</h2>
-<p>很多人會問：「這是不是就是打類固醇？」其實不一定。復健科與急診常用的「消炎止痛針」，主要成分通常是 <strong>NSAIDs (非類固醇消炎藥)</strong>，有時會視情況搭配肌肉鬆弛劑或維生素 B 群。根據 Cochrane 系統性回顧（2021 年），靜脈 Ketorolac 在術後急性疼痛中可為大多數患者提供顯著止痛效果<sup><a href="https://pubmed.ncbi.nlm.nih.gov/33998669/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[7]</a></sup>。</p>
+<p>很多人會問：「這是不是就是打類固醇？」其實不一定。復健科與急診常用的「消炎止痛針」，主要成分通常是 <strong>NSAIDs (非類固醇消炎藥)</strong>，有時會視情況搭配肌肉鬆弛劑或維生素 B 群。根據大型研究，靜脈 Ketorolac 在術後急性疼痛中可為大多數患者提供顯著止痛效果<sup><a href="https://pubmed.ncbi.nlm.nih.gov/33998669/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[7]</a></sup>。</p>
 <ol>
   <li style="margin-bottom: 0.75rem;"><strong>阻斷發炎源頭：</strong> 透過抑制體內的環氧化酶（COX-1/COX-2），阻斷前列腺素的合成，直接從源頭「關掉」發炎反應。NSAIDs 對 COX 酵素的抑制作用已在多項基礎與臨床研究中得到確認<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8127532/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[8]</a></sup>。</li>
-  <li><strong>生物利用率 100%：</strong> 口服藥物需經過胃酸破壞、腸道吸收、肝臟代謝，最後只剩部分藥效進入血液。靜脈注射則是 100% 進入血液循環，因此效果既強且快。2017 年隨機對照試驗顯示，靜脈 Ketorolac 在施打後 <strong>30 分鐘</strong>內即可達到臨床顯著的疼痛緩解<sup><a href="https://pubmed.ncbi.nlm.nih.gov/27993418/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[1]</a></sup>。</li>
+  <li><strong>生物利用率 100%：</strong> 口服藥物需經過胃酸破壞、腸道吸收、肝臟代謝，最後只剩部分藥效進入血液。靜脈注射則是 100% 進入血液循環，因此效果既強且快。靜脈 Ketorolac 在施打後 <strong>30 分鐘</strong>內即可達到臨床顯著的疼痛緩解<sup><a href="https://pubmed.ncbi.nlm.nih.gov/27993418/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[1]</a></sup>。</li>
 </ol>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -5528,9 +5528,9 @@ qaList: [
 <ul>
   <li style="margin-bottom: 0.75rem;">
     <strong>急性下背痛（閃到腰）：</strong> 肌肉強烈痙攣導致無法起身或移動。
-    2020 年系統性回顧確認 NSAIDs 相較安慰劑，可顯著短期改善急性下背痛之疼痛與失能
+    大型研究確認 NSAIDs 相較安慰劑，可顯著短期改善急性下背痛之疼痛與失能
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/32297973/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[2]</a></sup>。
-    美國內科醫師學院（ACP）2017 年臨床指引亦將 NSAIDs 列為急性下背痛的藥物治療首選之一
+    美國內科醫師學院臨床指引亦將 NSAIDs 列為急性下背痛的藥物治療首選之一
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/28192789/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[9]</a></sup>。
   </li>
   <li style="margin-bottom: 0.75rem;">
@@ -5539,7 +5539,7 @@ qaList: [
   </li>
   <li style="margin-bottom: 0.75rem;">
     <strong>急性痛風發作：</strong> 關節紅腫熱痛到無法走路，口服藥壓不下來時。
-    美國風濕病學院（ACR）2020 年指引強烈推薦以 NSAIDs 為急性痛風一線治療
+    美國風濕病學院指引強烈推薦以 NSAIDs 為急性痛風一線治療
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/32391934/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[3]</a></sup>。
     臨床研究顯示 NSAIDs 可使 73% 痛風患者疼痛降低 ≥50%，遠高於安慰劑的 27%
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6366613/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[4]</a></sup>。
@@ -5548,7 +5548,7 @@ qaList: [
   </li>
   <li style="margin-bottom: 0.75rem;">
     <strong>頑固性偏頭痛：</strong> 劇烈頭痛伴隨噁心、嘔吐，無法口服藥物時。
-    2025/2026 年美國頭痛學會更新指引確認，靜脈 Ketorolac 為急診偏頭痛「可能有效」藥物
+    美國頭痛學會更新指引確認，靜脈 Ketorolac 為急診偏頭痛「可能有效」藥物
     <sup><a href="https://headachejournal.onlinelibrary.wiley.com/doi/10.1111/head.70016" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[5]</a></sup>。
     一篇非鴉片靜脈藥物比較文獻回顧亦指出，靜脈 Ketorolac（30–60 mg）比鼻噴用 Sumatriptan 更有效控制急性偏頭痛疼痛
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10016134/" target="_blank" rel="noopener noreferrer" style="color: #2563eb;">[12]</a></sup>。
@@ -5613,8 +5613,8 @@ qaList: [
   <h3 style="color: #713f12; margin-top: 0;">❌ 誤區一：「打越多針、劑量越高，止痛效果越好」</h3>
   <p style="color: #422006;"><strong>事實：NSAIDs 存在「天花板效應」，超過特定劑量並不能提升止痛效果，但副作用風險卻會倍增。</strong></p>
   <p style="color: #422006;">
-    2017 年發表於《急診醫學年鑑》的隨機雙盲試驗（n＝240）比較靜脈 Ketorolac 10 mg、15 mg 與 30 mg 三組，結果三組在施打後 30 分鐘的疼痛數值無統計學差異，不良事件發生率亦無顯著不同<sup><a href="https://pubmed.ncbi.nlm.nih.gov/27993418/" target="_blank" rel="noopener noreferrer" style="color: #92400e;">[1]</a></sup>。
-    2023 年系統性回顧（5 項 RCT，n＝627）進一步確認，低劑量（15–20 mg）與高劑量（≥30 mg）NSAID 在急診疼痛評分上的差距僅 0.05 mm，屬中度確定性證據<sup><a href="https://www.annemergmed.com/article/S0196-0644(23)00298-6/abstract" target="_blank" rel="noopener noreferrer" style="color: #92400e;">[13]</a></sup>。
+    2017 年發表於《急診醫學年鑑》的隨機雙盲試驗比較靜脈 Ketorolac 10 mg、15 mg 與 30 mg 三組，結果三組在施打後 30 分鐘的疼痛數值無統計學差異，不良事件發生率亦無顯著不同<sup><a href="https://pubmed.ncbi.nlm.nih.gov/27993418/" target="_blank" rel="noopener noreferrer" style="color: #92400e;">[1]</a></sup>。
+    2023 年系統性回顧進一步確認，低劑量（15–20 mg）與高劑量（≥30 mg）NSAID 在急診疼痛評分上的差距僅 0.05 mm，屬中度確定性證據<sup><a href="https://www.annemergmed.com/article/S0196-0644(23)00298-6/abstract" target="_blank" rel="noopener noreferrer" style="color: #92400e;">[13]</a></sup>。
     因此，宸新醫師依據最新實證，採最小有效劑量原則，避免不必要的副作用。
   </p>
 </div>
@@ -5623,7 +5623,7 @@ qaList: [
   <h3 style="color: #7f1d1d; margin-top: 0;">❌ 誤區二：「腎臟功能正常，打止痛針絕對安全」</h3>
   <p style="color: #450a0a;"><strong>事實：即使腎功能正常，NSAIDs 仍有造成急性腎損傷的風險，尤其在脫水、合併使用利尿劑或腎素-血管緊張素抑制劑時。</strong></p>
   <p style="color: #450a0a;">
-    系統性回顧與統合分析（10 項族群研究）顯示，一般族群使用 NSAIDs 後急性腎損傷風險比為 OR 1.73<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28764659/" target="_blank" rel="noopener noreferrer" style="color: #991b1b;">[6]</a></sup>。
+    系統性回顧顯示，一般族群使用 NSAIDs 後急性腎損傷風險比為 OR 1.73<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28764659/" target="_blank" rel="noopener noreferrer" style="color: #991b1b;">[6]</a></sup>。
     五項傳統 NSAIDs 統合分析進一步指出，個別 NSAIDs（包括 Ibuprofen、Naproxen、Diclofenac）的急性腎損傷相對風險介於 1.58 至 2.11 之間<sup><a href="https://pubmed.ncbi.nlm.nih.gov/25862494/" target="_blank" rel="noopener noreferrer" style="color: #991b1b;">[14]</a></sup>。
     2025 年文獻回顧亦強調，NSAIDs 透過抑制前列腺素導致腎臟血管收縮、腎小管缺血，是急性腎損傷主要機制之一<sup><a href="https://www.scientificarchives.com/article/nsaid-associated-renal-injury-mechanisms-risks-and-safer-strategies" target="_blank" rel="noopener noreferrer" style="color: #991b1b;">[15]</a></sup>。
     因此，每次施打前醫師都需評估是否有脫水、合併用藥、腎病史等風險因子。
@@ -5635,7 +5635,7 @@ qaList: [
   <p style="color: #052e16;"><strong>事實：復健科門診常用的靜脈止痛針主成分是 NSAIDs（如 Ketorolac），<em>不含</em>皮質類固醇，不會引起類固醇相關的體重增加、骨質疏鬆或血糖升高等副作用。</strong></p>
   <p style="color: #052e16;">
     NSAIDs 與皮質類固醇的作用機制截然不同：前者抑制 COX 酵素以阻斷前列腺素合成；後者則作用於細胞核受體，廣泛抑制免疫基因表現。
-    6 項 RCT（n＝817）的統合分析比較急性痛風中 NSAIDs 與皮質類固醇的止痛效果，兩者療效無顯著差異，但皮質類固醇在特定不良反應上有更好的安全性<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28765243/" target="_blank" rel="noopener noreferrer" style="color: #166534;">[11]</a></sup>。
+    多項大型統合分析比較急性痛風中 NSAIDs 與皮質類固醇的止痛效果，兩者療效無顯著差異，但皮質類固醇在特定不良反應上有更好的安全性<sup><a href="https://pubmed.ncbi.nlm.nih.gov/28765243/" target="_blank" rel="noopener noreferrer" style="color: #166534;">[11]</a></sup>。
     確實需要類固醇時（如多關節痛風、NSAIDs 禁忌症），醫師會明確告知您藥物種類與預期副作用，請放心與醫師溝通。
   </p>
 </div>

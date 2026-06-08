@@ -113,7 +113,7 @@ export default function ClinicPage() {
           
           {/* ✨ 6. 返回按鈕區塊動畫 */}
           <div className="animate-on-scroll">
-            <Link href="/about" className="inline-flex items-center text-cyan-400 mb-2 hover:text-cyan-300 transition-colors group">
+            <Link href="/about" prefetch={false} className="inline-flex items-center text-cyan-400 mb-2 hover:text-cyan-300 transition-colors group">
                 <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回關於我們
             </Link>
           </div>
@@ -123,7 +123,7 @@ export default function ClinicPage() {
               <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-wider">專業醫療設備與環境</h1>
               <div className="h-1 w-20 bg-cyan-500 mx-auto rounded-full mb-4"></div>
               <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-                工欲善其事，必先利其器。我們引進醫學中心等級的檢查與治療設備，並打造寬敞舒適的復健空間，致力於提供最精準的診斷與最有效的治療。
+                工欲善其事，必先利其器。我們引引進醫學中心等級的檢查與治療設備，並打造寬敞舒適的復健空間，致力於提供最精準的診斷與最有效的治療。
               </p>
           </div>
 
@@ -133,6 +133,7 @@ export default function ClinicPage() {
               <Link 
                 key={item.id} 
                 href={`/about/clinic/${item.id}`} 
+                prefetch={false} // ✨ 新增：阻斷下方動態渲染設備卡片的背景自動預載，精準調降 ISR Reads 次數
                 className="group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col"
               >
                   {/* 圖片區塊 (優化 Alt 描述) */}

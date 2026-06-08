@@ -264,7 +264,7 @@ const jsonLdData = {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
               
             <nav className="mb-4 pt-4 flex items-center justify-between">
-                <Link href="/about/news" className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors group text-sm font-medium">
+                <Link href="/about/cases" prefetch={false} className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors group text-sm font-medium">
                     <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 
                     返回所有案例
                 </Link>
@@ -278,8 +278,6 @@ const jsonLdData = {
                   {/* Header */}
                   <header className="mb-8 border-b border-slate-700/50 pb-6">
                       <div className="flex-grow">
-
-
 
                           <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold font-sans text-white mb-4 lg:mb-6 leading-tight lg:leading-snug">
                               {post.title}
@@ -296,6 +294,7 @@ const jsonLdData = {
       撰文者：
       <Link 
         href="/about/doctors" 
+        prefetch={false}
         className="text-slate-300 hover:text-cyan-400 underline underline-offset-4 decoration-slate-600 transition-colors"
       >
         林羿辰醫師
@@ -355,6 +354,7 @@ const jsonLdData = {
   本文由 
   <Link 
     href="/about/doctors"
+    prefetch={false}
     className="text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer underline underline-offset-4 decoration-cyan-900/50 hover:decoration-cyan-400"
   >
     林羿辰醫師
@@ -374,6 +374,7 @@ const jsonLdData = {
                           <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-5 border-t border-slate-700/50">
                             <Link 
                               href="/about/doctors" 
+                              prefetch={false}
                               className="text-cyan-400 hover:text-cyan-300 text-sm font-bold flex items-center group transition-colors cursor-pointer"
                             >
                               <i className="fa-solid fa-id-card-clip mr-2 text-lg"></i>
@@ -421,13 +422,13 @@ const jsonLdData = {
 
             {/* 查看更多連結 */}
             <div className="mt-8 text-center">
-                <Link href="/about/news" className="text-slate-500 hover:text-cyan-400 text-sm font-medium transition-colors">
+                <Link href="/about/cases" prefetch={false} className="text-slate-500 hover:text-cyan-400 text-sm font-medium transition-colors">
                     查看更多項目 <i className="fa-solid fa-arrow-right ml-2"></i>
                 </Link>
             </div>
 
           </div>
-       </main>
+        </main>
       </div>
     </>
   )

@@ -1,3 +1,4 @@
+
 // src/app/diseases/[category]/[slug]/page.tsx
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
@@ -12,7 +13,10 @@ import { casesData } from '@/data/cases'
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
 
 interface PageProps {
-  params: {
+  params: Promise<{
+    category: string
+    slug: string
+  }> | {
     category: string
     slug: string
   }
@@ -24,8 +28,12 @@ export async function generateStaticParams() {
 }
 
 // 2. SEO Metadata
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const disease = getDiseaseBySlug(params.category, params.slug)
+export async function generateMetadata({ params }: any): Promise<Metadata> {
+  // 解決 Server Component 的 params 非同步讀取問題
+  const resolvedParams = await params;
+  const { category, slug } = resolvedParams;
+
+  const disease = getDiseaseBySlug(category, slug)
   
   // 1. 處理找不到疾病的情況
   if (!disease) {
@@ -36,7 +44,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   // ★★★ 定義標準網址 (Canonical URL) ★★★
-  const canonicalUrl = `${SITE_URL}/diseases/${params.category}/${params.slug}`
+  const canonicalUrl = `${SITE_URL}/diseases/${category}/${slug}`
 
   // 2. 處理動態圖片來源
   // 💡 加入 (disease as any) 繞過 TypeScript 介面未定義 images 的報錯
@@ -112,8 +120,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 // 3. 頁面主體
-export default function DiseaseDetailPage({ params }: PageProps) {
-  const disease = getDiseaseBySlug(params.category, params.slug)
+export default async function DiseaseDetailPage({ params }: PageProps) {
+  // ✨ 關鍵修正：在 Server Component 中必須 await 解析 params，徹底修復發布或編譯錯誤
+  const resolvedParams = await params;
+  const { category, slug } = resolvedParams;
+
+  const disease = getDiseaseBySlug(category, slug)
   
   if (!disease) {
     notFound()
@@ -130,7 +142,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
     : null;
 
   // 頁面內部使用的網址，確保與 Canonical 一致
-  const currentPageUrl = `${SITE_URL}/diseases/${params.category}/${params.slug}`
+  const currentPageUrl = `${SITE_URL}/diseases/${category}/${slug}`
   
   // QR Code API
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&bgcolor=ffffff&data=${encodeURIComponent(currentPageUrl)}`
@@ -156,7 +168,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
     ],
   }
 
-// ==========================================
+  // ==========================================
   // SEO Schema 2: 醫療網頁 (E-E-A-T 增強版)
   // ==========================================
   const jsonLdMedicalWebPage = {
@@ -164,7 +176,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
     '@type': 'MedicalWebPage',
     '@id': `${currentPageUrl}#webpage`,
     url: currentPageUrl,
-    // 強化標題，結合專業品牌詞
+    // 強化標題，結合專業 brand 詞
     name: `${disease.title} - 專業疾病衛教與復健治療 | 宸新復健科診所`,
     description: disease.seoDescription || disease.description,
     
@@ -439,16 +451,15 @@ export default function DiseaseDetailPage({ params }: PageProps) {
       `}} />
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
-       <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 fade-in relative z-10">
+        <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 fade-in relative z-10">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            <Link href={`/diseases/${params.category}`} className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group">
+            <Link href={`/diseases/${category}`} prefetch={false} className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group">
               <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i>
               返回分類列表
             </Link>
 
             <div className="bg-slate-800/80 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden shadow-2xl">
-
               <div className="p-4 md:p-10">
 
                 <div className="mb-10 border-l-4 border-cyan-500 pl-4 bg-gradient-to-r from-slate-900/80 to-transparent py-6 rounded-r-xl flex flex-col md:flex-row md:items-center gap-6">
@@ -460,39 +471,35 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                   </div>
                   <div>
                     <h1 className="text-3xl md:text-5xl font-bold font-sans text-white mb-3 tracking-wide leading-tight">{disease.title}</h1>
-
                     <div className="flex flex-col md:flex-row md:items-end justify-between gap-2">
-
-    
-    <div className="text-slate-400 text-xs md:text-sm font-normal flex flex-wrap items-center gap-x-3 gap-y-1">
-      <span className="flex items-center">
-        撰文者：
-        <Link 
-          href="/about/doctors" 
-          className="text-slate-300 hover:text-cyan-400 underline underline-offset-4 decoration-slate-600 transition-colors cursor-pointer"
-        >
-          林羿辰醫師
-        </Link>
-      </span>
-      <span className="hidden md:inline text-slate-600">|</span>
-      <span className="flex items-center">
-        最後更新日期：
-        {/* 修改這裡：將 data 改成 program */}
-        {disease.lastModified ? (
-          <time dateTime={disease.lastModified} itemProp="dateModified">
-            {disease.lastModified}
-          </time>
-        ) : (
-          "2026-02-22"
-        )}
-      </span>
-    </div>
-  </div>
+                      <div className="text-slate-400 text-xs md:text-sm font-normal flex flex-wrap items-center gap-x-3 gap-y-1">
+                        <span className="flex items-center">
+                          撰文者：
+                          <Link 
+                            href="/about/doctors" 
+                            prefetch={false}
+                            className="text-slate-300 hover:text-cyan-400 underline underline-offset-4 decoration-slate-600 transition-colors cursor-pointer"
+                          >
+                            林羿辰醫師
+                          </Link>
+                        </span>
+                        <span className="hidden md:inline text-slate-600">|</span>
+                        <span className="flex items-center">
+                          最後更新日期：
+                          {disease.lastModified ? (
+                            <time dateTime={disease.lastModified} itemProp="dateModified">
+                              {disease.lastModified}
+                            </time>
+                          ) : (
+                            "2026-02-22"
+                          )}
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-12">
-                  {/* 症狀：修正為 div 標籤以優化 SEO 結構 */}
                   <div className="bg-slate-900/40 p-6 rounded-xl border border-slate-700/80 h-full hover:border-pink-500/30 hover:bg-slate-900/60 transition-all duration-300">
                     <div className="text-xl font-bold text-pink-400 mb-4 border-b border-slate-700 pb-2 flex items-center">
                       <i className="fa-solid fa-triangle-exclamation mr-3"></i>
@@ -508,7 +515,6 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                     </ul>
                   </div>
 
-                  {/* 治療建議：修正為 div 標籤以優化 SEO 結構 */}
                   <div className="bg-slate-900/40 p-6 rounded-xl border border-slate-700/80 h-full hover:border-cyan-500/30 hover:bg-slate-900/60 transition-all duration-300">
                     <div className="text-xl font-bold text-cyan-400 mb-4 border-b border-slate-700 pb-2 flex items-center">
                       <i className="fa-solid fa-user-doctor mr-3"></i>
@@ -528,7 +534,6 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                   </div>
                 </div>
 
-                {/* 文章內容：使用自動優化後的 optimizedContent */}
                 <div className="article-content text-slate-300 leading-relaxed text-lg pb-6">
                   {optimizedContent ? (
                     <div dangerouslySetInnerHTML={{ __html: optimizedContent }} />
@@ -542,7 +547,6 @@ export default function DiseaseDetailPage({ params }: PageProps) {
               {matchedCases.length > 0 && (
                 <section className="pt-4 pb-4 border border-slate-800 bg-slate-900/50 rounded-3xl overflow-hidden mx-2 md:mx-4 mb-8">
                   <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                    
                     <div className="flex items-center mb-5">
                       <i className="fa-solid fa-file-medical text-cyan-400 text-xl mr-3"></i>
                       <h2 className="text-2xl font-bold text-white">
@@ -555,6 +559,7 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                         <Link 
                           key={item.id} 
                           href={`/about/cases/${item.id}`} 
+                          prefetch={false}
                           className="group block flex-shrink-0 w-[66vw] sm:w-64 md:w-auto md:flex-shrink-1 min-w-0 snap-center bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.15)] transition-all duration-300"
                         >
                           <div className="h-32 md:h-40 overflow-hidden relative">
@@ -564,7 +569,6 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                               className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                             />
                           </div>
-
                           <div className="p-3">
                             <h3 className="text-base font-bold text-slate-100 mb-1 line-clamp-2 leading-tight">
                               {item.title}
@@ -579,86 +583,81 @@ export default function DiseaseDetailPage({ params }: PageProps) {
                         </Link>
                       ))}
                     </div>
-
                   </div>
                 </section>
               )}
 
-  {/* 修正 4：醫師資歷方塊 (將 animate-on-scroll 移除或改為即時顯示確保穩定性) */}
-                
-  <div className="mt-8 mb-10">
-                    <div className="bg-slate-800/40 backdrop-blur border border-slate-700 rounded-2xl p-6 md:p-8 shadow-lg relative overflow-hidden">
-                      <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+              <div className="mt-8 mb-10">
+                <div className="bg-slate-800/40 backdrop-blur border border-slate-700 rounded-2xl p-6 md:p-8 shadow-lg relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+                  <div className="flex flex-col md:flex-row items-center md:items-start gap-6 relative z-10">
+                    <div className="flex-grow text-center md:text-left">
+                      <div className="mb-2">
+                        <h3 className="text-xl font-bold text-white flex flex-col md:flex-row items-center gap-2">
+                          本文由 
+                          <Link 
+                            href="/about/doctors"
+                            prefetch={false}
+                            className="text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer underline underline-offset-4 decoration-cyan-900/50 hover:decoration-cyan-400"
+                          >
+                            林羿辰醫師
+                          </Link> 
+                          撰寫與醫學審閱
+                          <span className="hidden md:inline-block text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full border border-cyan-500/30 font-normal uppercase tracking-wider">
+                            Verified Expert
+                          </span>
+                        </h3>
+                        <p className="text-sm text-slate-400 mt-1 font-medium">宸新復健科診所院長 / 復健科專科醫師</p>
+                      </div>
                       
-                      <div className="flex flex-col md:flex-row items-center md:items-start gap-6 relative z-10">
-                        <div className="flex-grow text-center md:text-left">
-                          <div className="mb-2">
-                          <h3 className="text-xl font-bold text-white flex flex-col md:flex-row items-center gap-2">
-  本文由 
-  <Link 
-    href="/about/doctors"
-    className="text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer underline underline-offset-4 decoration-cyan-900/50 hover:decoration-cyan-400"
-  >
-    林羿辰醫師
-  </Link> 
-  撰寫與醫學審閱
-  <span className="hidden md:inline-block text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full border border-cyan-500/30 font-normal uppercase tracking-wider">
-    Verified Expert
-  </span>
-</h3>
-                            <p className="text-sm text-slate-400 mt-1 font-medium">宸新復健科診所院長 / 復健科專科醫師</p>
-                          </div>
-                          
-                          <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-6">
-                            現任宸新復健科診所院長。畢業於國立台灣大學醫學系，擁有復健科、骨質疏鬆雙專科醫師資歷，專精於精準超音波導引注射治療、增生療法與各類運動傷害。林醫師具備豐富臨床經驗，致力於將醫學實證應用於病患康復。
-                          </p>
+                      <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-6">
+                        現任宸新復健科診所院長。畢業於國立台灣大學醫學系，擁有復健科、骨質疏鬆雙專科醫師資歷，專精於精準超音波導引注射治療、增生療法與各類運動傷害。林醫師具備豐富臨床經驗，致力於將醫學實證應用於病患康復。
+                      </p>
 
-                          <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-5 border-t border-slate-700/50">
-                            <Link 
-                              href="/about/doctors" 
-                              className="text-cyan-400 hover:text-cyan-300 text-sm font-bold flex items-center group transition-colors cursor-pointer"
-                            >
-                              <i className="fa-solid fa-id-card-clip mr-2 text-lg"></i>
-                              <span className="border-b border-cyan-500/30 group-hover:border-cyan-300">👉 查看更多醫師資歷、證照認證與學術論文</span>
-                              <i className="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
-                            </Link>
-                            
-                            <div className="flex flex-col items-end gap-1 text-[10px] md:text-xs text-slate-500">
-                              <div className="flex items-center gap-3">
-                                <span className="flex items-center"><i className="fa-solid fa-check-double mr-1 text-cyan-500/70"></i> 專家審閱完成</span>
-                                <span className="flex items-center"><i className="fa-solid fa-database mr-1 text-cyan-500/70"></i> 來源：醫學實證與專科臨床</span>
-                              </div>
-                              <div className="text-gray-500">
-                              最後更新日期：
-                                {disease.lastModified ? (
-                                  <time dateTime={disease.lastModified} itemProp="dateModified">
-                                    {disease.lastModified}
-                                  </time>
-                                ) : (
-                                  "2026-02-22"
-                                )}
-                              </div>
-                            </div>
+                      <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-5 border-t border-slate-700/50">
+                        <Link 
+                          href="/about/doctors" 
+                          prefetch={false}
+                          className="text-cyan-400 hover:text-cyan-300 text-sm font-bold flex items-center group transition-colors cursor-pointer"
+                        >
+                          <i className="fa-solid fa-id-card-clip mr-2 text-lg"></i>
+                          <span className="border-b border-cyan-500/30 group-hover:border-cyan-300">👉 查看更多醫師資歷、證照認證與學術論文</span>
+                          <i className="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </Link>
+                        
+                        <div className="flex flex-col items-end gap-1 text-[10px] md:text-xs text-slate-500">
+                          <div className="flex items-center gap-3">
+                            <span className="flex items-center"><i className="fa-solid fa-check-double mr-1 text-cyan-500/70"></i> 專家審閱完成</span>
+                            <span className="flex items-center"><i className="fa-solid fa-database mr-1 text-cyan-500/70"></i> 來源：醫學實證與專科臨床</span>
+                          </div>
+                          <div className="text-gray-500">
+                            最後更新日期：
+                            {disease.lastModified ? (
+                              <time dateTime={disease.lastModified} itemProp="dateModified">
+                                {disease.lastModified}
+                              </time>
+                            ) : (
+                              "2026-02-22"
+                            )}
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                
+                </div>
+              </div>
 
               <div className="bg-slate-900/80 p-8 md:p-12 border-t border-slate-700 text-center relative overflow-hidden">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent blur-sm"></div>
-                
                 <h3 className="text-white font-bold text-2xl mb-3 relative z-10">覺得這篇文章有幫助嗎？</h3>
                 <p className="text-slate-400 mb-8 text-lg relative z-10">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
-
                 <div className="relative z-10">
-                    <ShareButtons url={currentPageUrl} title={disease.title} />
+                  <ShareButtons url={currentPageUrl} title={disease.title} />
                 </div>
-
                 <div className="mt-12 pt-8 border-t border-slate-700/50 relative z-10">
                   <Link
                     href="/diseases"
+                    prefetch={false}
                     className="inline-flex items-center justify-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 group"
                   >
                     看更多疾病衛教
@@ -674,3 +673,4 @@ export default function DiseaseDetailPage({ params }: PageProps) {
     </>
   )
 }
+

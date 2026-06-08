@@ -42,6 +42,12 @@ export const sportsInjuriesData = [
         description: '學校健康檢查發現孩子蹲踞困難，家長先別緊張！本文完整解析蹲踞困難的常見原因——從跟腱過緊、扁平足、髖關節發育問題到股骨過度前傾，並說明何時需要就醫、如何配合治療，幫助家長正確認識、不過度焦慮。',
         image:  '/images/news/article/squatting-difficulty.webp',
       },
+                  {
+        slug: 'accessory-and-sesamoid-bones',
+        title: '天生多塊骨頭？常見「副骨」與「種子骨」疼痛部位、診斷與根治策略',
+        description: '人體骨骼發育過程中，部分人會額外長出「副骨」或「種子骨」。雖然多數終生無症狀，但反覆壓迫或過度使用常引發足弓內側、踝後、前腳掌或肩膀疼痛。本文從運動醫學與影像學角度，系統解析副舟狀骨、副三角骨、肩峰副骨等好發部位與核心治療策略。',
+        image:  '/images/news/article/accessory-bones-pain-analysis.webp',
+      },
             {
         slug: 'orthopedics-vs-rehabilitation',
         title: '骨科 vs 復健科：完整比較指南｜哪個才是你的最佳選擇？',
@@ -637,6 +643,13 @@ export const sportsInjuriesData = [
         title: '男女運動傷害大不同！從解剖結構分析運動風險',
         description: '從運動醫學與生物力學角度，深入剖析男女骨骼結構、Q角、關節韌帶鬆弛度及荷爾蒙對運動傷害的顯著影響。實證研究指出女性在垂直落地與急停轉向時，前十字韌帶（ACL）撕裂風險高出2至8倍，跑者膝盛行率更高出12倍；而男女肩關節的受傷模式亦截然不同。本文全面解析三大常見誤解，並提供客製化的核心預防訓練策略。',
         image: '/images/news/article/gender-differences-sports-injuries.webp',
+
+      },
+                  {
+        slug: 'type-1-diabetes-elite-athletes',
+        title: '場上的雙重對決：第一型糖尿病運動員的血糖管理與奇蹟',
+        description: '從運動醫學與自體免疫角度，剖析第一型糖尿病（Type 1 Diabetes）運動員面臨的血糖挑戰。低血糖如何讓表現下滑 20%？高強度無氧運動與競賽壓力又如何引發高血糖？看網球球星茲維列夫（Alexander Zverev）奪得 2026 年法網冠軍與 MLB 火球男 Mason Miller 如何靠醫療科技克服疾病，打破不可能的運動醫學限界。',
+        image: '/images/news/article/t1d-athletes-glucose-management.webp',
 
       },
       {

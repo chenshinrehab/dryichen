@@ -104,6 +104,7 @@ export default function CaseStudyListPage() {
                 <div className="text-left mb-4">
                     <Link 
                       href="/about" 
+                      prefetch={false} // ✨ 新增：阻斷返回連結的背景預載
                       className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors group text-sm font-medium"
                     >
                         <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 
@@ -127,6 +128,7 @@ export default function CaseStudyListPage() {
                 <Link 
                   key={item.id} 
                   href={`/about/cases/${item.id}`} 
+                  prefetch={false} // ✨ 新增：阻斷卡片列表大量觸發內頁的背景自動預載，精準調降專案的 ISR Reads
                   className="block group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all duration-300"
                 >
                   <div className="flex flex-col md:flex-row h-full">
@@ -188,7 +190,7 @@ export default function CaseStudyListPage() {
               <details className="group border-l-4 border-cyan-500 pl-4">
                   <summary className="list-none [&::-webkit-details-marker]:hidden text-lg text-slate-400 leading-relaxed outline-none cursor-pointer select-none text-left flex items-start">
                       <div className="flex-1">
-                        為什麼參考<strong className="text-cyan-400 font-normal">實際案例</strong>對您的治療很重要？
+                        起為什麼參考<strong className="text-cyan-400 font-normal">實際案例</strong>對您的治療很重要？
                         <span className="group-open:hidden inline-block ml-2 text-sm text-cyan-500 hover:text-cyan-400 font-semibold align-middle">
                             了解詳情 <i className="fa-solid fa-chevron-down text-xs"></i>
                         </span>

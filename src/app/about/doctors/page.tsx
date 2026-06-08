@@ -124,6 +124,7 @@ export default function DoctorsPage() {
     },
   
     // 2. 發佈者區塊 (Publisher)：標註為正式醫療機構
+    // ✨ 修正：使用更精準的醫學診所類型（MedicalClinic）並補強聯繫資訊
     'publisher': {
       '@type': 'MedicalClinic',
       'name': '宸新復健科診所',
@@ -243,7 +244,7 @@ export default function DoctorsPage() {
           
           {/* ✨ 3. 返回按鈕動畫 */}
           <div className="animate-on-scroll">
-            <Link href="/about" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group">
+            <Link href="/about" prefetch={false} className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors group">
                 <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回關於我們
             </Link>
           </div>
@@ -343,6 +344,7 @@ export default function DoctorsPage() {
                           <div className="mt-8 pt-5 border-t border-slate-700/50 flex flex-wrap gap-4 animate-on-scroll delay-500">
                               <Link 
                                 href="/treatments" 
+                                prefetch={false}
                                 className="px-8 py-3 bg-cyan-600 hover:bg-cyan-500 text-white rounded-full transition-all duration-300 font-bold flex items-center gap-2 group shadow-lg shadow-cyan-500/20 cursor-pointer"
                               >
                                   <i className="fa-solid fa-stethoscope text-xl group-hover:scale-110 transition-transform"></i>
@@ -367,7 +369,7 @@ export default function DoctorsPage() {
                   {/* 改為 flex-col 並增加垂直間距 space-y-4，讓內容分為上下兩行 */}
                   <div className="flex flex-col space-y-4 text-slate-300 leading-relaxed text-lg">
                       <p>
-                          從醫以來已<strong className="text-cyan-400 font-normal">經手超過 10 萬案例</strong>，超音波導引注射韓包含PRP<strong className="text-cyan-400 font-normal">一年超過五千案例</strong>，具備極為豐富的臨床診斷及精準注射經驗。
+                          從醫以來已<strong className="text-cyan-400 font-normal">經手超過 10 萬案例</strong>，超音波導引注射包含PRP<strong className="text-cyan-400 font-normal">一年超過五千案例</strong>，具備極為豐富的臨床診斷及精準注射經驗。
                       </p>
                       <p>
                           同時也是許多<strong className="text-cyan-400 font-normal">新竹地區職業與業餘球員指名的專屬醫師</strong>，熟稔各項運動，擅長且對各種運動傷害的預防與治療擁有豐富的臨床成功實績。

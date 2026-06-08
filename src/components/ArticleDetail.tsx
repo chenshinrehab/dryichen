@@ -59,7 +59,7 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <div className="pt-4">
-              <Link href={backLink.href} className="inline-flex items-center text-cyan-400 mb-4 hover:text-cyan-300 transition-colors group text-sm">
+              <Link href={backLink.href} prefetch={false} className="inline-flex items-center text-cyan-400 mb-4 hover:text-cyan-300 transition-colors group text-sm">
                 <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 
                 {backLink.label}
               </Link>
@@ -100,6 +100,7 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                             撰文者：
                             <Link 
                               href="/about/doctors" 
+                              prefetch={false}
                               className="text-slate-300 hover:text-cyan-400 underline underline-offset-4 decoration-slate-600 transition-colors cursor-pointer"
                             >
                               林羿辰醫師
@@ -214,6 +215,7 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                             本文由 
                             <Link 
                               href="/about/doctors"
+                              prefetch={false}
                               className="text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer underline underline-offset-4 decoration-cyan-900/50 hover:decoration-cyan-400"
                             >
                               林羿辰醫師
@@ -233,6 +235,7 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                           <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-5 border-t border-slate-700/50">
                             <Link 
                               href="/about/doctors" 
+                              prefetch={false}
                               className="text-cyan-400 hover:text-cyan-300 text-sm font-bold flex items-center group transition-colors cursor-pointer"
                             >
                               <i className="fa-solid fa-id-card-clip mr-2 text-lg"></i>
@@ -245,7 +248,7 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                                 <span className="flex items-center"><i className="fa-solid fa-check-double mr-1 text-cyan-500/70"></i> 專家審閱完成</span>
                                 <span className="flex items-center"><i className="fa-solid fa-database mr-1 text-cyan-500/70"></i> 來源：醫學實證與專科臨床</span>
                               </div>
-                              <div className="text-slate-500">
+                              <div className="text-gray-500">
                                 最後更新日期：
                                 <time dateTime={data.lastModified || today} itemProp="dateModified">
                                   {data.lastModified || today}
@@ -270,7 +273,7 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                   <ShareButtons url={currentUrl} title={data.title} />
                 </div>
                 <div className="pt-8 border-t border-slate-700/50 w-full flex justify-center">
-                  <Link href={backLink.href} className="inline-flex items-center justify-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 group">
+                  <Link href={backLink.href} prefetch={false} className="inline-flex items-center justify-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 group">
                     查看更多項目
                     <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
                   </Link>

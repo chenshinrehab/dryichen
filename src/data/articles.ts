@@ -3,6 +3,588 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
 {
+id: 'type-1-diabetes-elite-athletes',
+  title: '場上的雙重對決：第一型糖尿病運動員的血糖管理與奇蹟',
+  lastModified: '2026-06-08',
+  category: '衛教文章',
+  date: '2026-06-08',
+  summary: '從運動醫學與自體免疫角度，剖析第一型糖尿病（Type 1 Diabetes）運動員面臨的血糖挑戰。低血糖如何讓表現下滑 20%？高強度無氧運動與競賽壓力又如何引發高血糖？看網球球星茲維列夫（Alexander Zverev）奪得 2026 年法網冠軍與 MLB 火球男 Mason Miller 如何靠醫療科技克服疾病，打破不可能的運動醫學限界。',
+  coverImage: '/images/news/article/t1d-athletes-glucose-management.webp',
+  seoTitle: '第一型糖尿病也能拿大滿貫！頂尖運動員的運動醫學與血糖管理全解析',
+  seoDescription: '深入解析第一型糖尿病（Type 1 Diabetes）競技運動員的雙重挑戰。實證研究揭示低血糖、延遲性低血糖對運動表現的衝擊，並透過 2026 法網冠軍茲維列夫與 MLB 終結者 Mason Miller 的真實故事，展示連續血糖監測（CGM）等運動科學與自體免疫醫學的最新應用。',
+  keywords: [
+    '第一型糖尿病',
+    'T1D 運動',
+    '血糖管理',
+    '茲維列夫法網冠軍',
+    '茲維列夫法',
+    'Alexander Zverev',
+    'Mason Miller 糖尿病',
+    '連續血糖監測',
+    'CGM 運動員',
+    '低血糖風險',
+    '自體免疫疾病',
+    '運動醫學'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    第一型糖尿病（Type 1 Diabetes，T1D）是一種自體免疫疾病，患者的胰臟完全失去分泌胰島素的能力，終身依賴外部胰島素注射維生。對於競技運動員而言，這意味著在賽場上同時進行「兩場比賽」：一場是眼前的競技對決，另一場則是分秒不停的血糖管理戰。<br><br>
+    研究顯示，低血糖發作可使運動技能表現下降約 20%，高血糖則影響認知反應與肌肉效能。儘管如此，茲維列夫（Alexander Zverev）以第一型糖尿病之身奪得 2026 年法網冠軍、Mason Miller 以破 103 mph 的快速球活躍於 MLB，以及多位 NBA 球員的奮鬥故事，都清楚說明：在正確的醫療支持與科技輔助下，第一型糖尿病不是終點，而是另一種形式的超能力。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/20811595/" target="_blank" rel="noopener noreferrer">[1]</a></sup>
+    <sup><a href="https://www.jsams.org/article/S1440-2440(23)00485-1/fulltext" target="_blank" rel="noopener noreferrer">[2]</a></sup>
+    <sup><a href="https://www.gssiweb.org/sports-science-exchange/article/continuous-glucose-monitoring-and-the-athlete-with-type-1-diabetes" target="_blank" rel="noopener noreferrer">[3]</a></sup>
+  </p>
+</div>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<!-- 一、什麼是第一型糖尿病？ -->
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、什麼是第一型糖尿病？用最白話的方式說清楚
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    在介紹運動員的挑戰之前，我們先來了解：第一型糖尿病到底是什麼病？
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    第一型糖尿病約佔國內糖尿病人口的 1% 以下，約佔所有糖尿病患者的 5%，發生於青少年時期。想像你的胰臟是一座「胰島素工廠」，專門負責製造胰島素這個荷爾蒙，讓身體的細胞能夠吸收血液中的葡萄糖（血糖）作為能量來源。在第一型糖尿病中，<strong style="color: #2dd4bf;">自己的免疫系統「認錯人」，把工廠裡的 β 細胞當成敵人摧毀</strong>，導致胰島素分泌完全停止。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    從醫學角度來看，<strong style="color: #ffffff;">第一型糖尿病是一種自體免疫疾病</strong>：患者體內的免疫細胞在遺傳易感性與環境觸發因素共同作用下，開始攻擊並破壞胰臟蘭氏小島的 β 細胞，最終造成胰島素分泌完全喪失。<sup><a href="https://dom-pubs.onlinelibrary.wiley.com/doi/full/10.1111/dom.16460" target="_blank" rel="noopener noreferrer">[4]</a></sup> 臨床症狀通常在超過 90% 的 β 細胞被摧毀後才出現，包括極度口渴、頻尿、體重驟降、疲勞無力。
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 第一型 vs. 第二型糖尿病：有什麼不同？</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      許多人常把兩者混淆。<strong>第一型</strong>是自體免疫問題，與生活習慣無關，好發於青少年與年輕成人，患者必須終身注射胰島素。<strong>第二型</strong>則多與肥胖、生活型態有關，胰臟仍能分泌胰島素，但細胞對胰島素產生抵抗性。Mason Miller 被確診時曾感嘆：「我很活躍、飲食也還好，怎麼可能得糖尿病？」——正因為糖尿病的發生與生活習慣幾乎無關。<sup><a href="https://www.breakthrought1d.org/news-and-updates/qa-mason-miller/" target="_blank" rel="noopener noreferrer">[5]</a></sup>
+    </p>
+  </div>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    由於胰島素完全缺乏，第一型糖尿病患者必須終身倚賴<strong style="color: #ffffff;">外部注射胰島素</strong>（或胰島素幫浦），並同時監測血糖，才能維持生命。這對一般人已是挑戰，對競技運動員而言，難度更是幾何級數地提升。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<!-- 二、運動如何讓血糖管理變得更難？ -->
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、運動如何讓血糖管理變得更難？醫學觀點解析
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    對於沒有糖尿病的運動員，身體在運動時會自動調節：肌肉收縮時需要大量葡萄糖，胰臟就自動減少胰島素分泌，避免血糖過低；運動結束後，再補足胰島素。這一切在毫秒間自動完成，運動員完全不需要思考。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    但對第一型糖尿病運動員而言，這個自動系統完全失靈。<strong style="color: #2dd4bf;">每一次訓練、每一場比賽，都必須手動模擬這個精密的生理過程。</strong>
+    <sup><a href="https://www.gssiweb.org/sports-science-exchange/article/sse-90-diabetes-exercise-and-competitive-sports" target="_blank" rel="noopener noreferrer">[6]</a></sup>
+    他們面臨的挑戰分為兩個方向：
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">低血糖：最危險的敵人</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    有氧運動（如跑步、騎腳踏車）會大量消耗血糖，若胰島素劑量未即時調整或進食不足，血糖可能迅速崩落至危險水平（低於 70 mg/dL）。低血糖的症狀包括手抖、冒冷汗、頭暈、意識混亂，嚴重時甚至昏迷。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    研究指出，<strong style="color: #ffffff;">若胰島素劑量未適時調整，T1D 運動員在運動中發生低血糖的風險高達 30–40%。</strong>
+    <sup><a href="https://www.gssiweb.org/sports-science-exchange/article/continuous-glucose-monitoring-and-the-athlete-with-type-1-diabetes" target="_blank" rel="noopener noreferrer">[3]</a></sup>
+    一項針對青少年運動員的研究發現，<strong style="color: #ffffff;">低血糖發作期間的運動技能表現平均下降約 20%</strong>，包括閱讀速度、色彩辨識與反應能力都顯著退步。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/20811595/" target="_blank" rel="noopener noreferrer">[1]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">高血糖：無聲的表現殺手</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    矛盾的是，高強度的無氧運動（如短跑衝刺、重量訓練）反而可能使血糖升高——因為壓力荷爾蒙（腎上腺素、皮質醇）會刺激肝臟釋出葡萄糖。<strong style="color: #ffffff;">比賽日的精神壓力更是讓血糖飆升的另一個不可控因素</strong>：研究顯示，有競賽壓力的運動中，9 成以上的第一型糖尿病運動員比訓練日血糖更高。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10012106/" target="_blank" rel="noopener noreferrer">[7]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    高血糖雖然短期內對有氧能力的影響相對有限，但長期高血糖會損傷微血管、神經與腎臟，影響運動員的長期健康基礎。
+    <sup><a href="https://www.jsams.org/article/S1440-2440(23)00485-1/fulltext" target="_blank" rel="noopener noreferrer">[2]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">運動後的延遲低血糖：睡夢中的隱患</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    更複雜的是，激烈運動的影響不會在比賽結束時就消失——肌肉在恢復期會繼續吸收血糖補充肝醣，這個過程可能持續超過 24 小時。<strong style="color: #ffffff;">第一型糖尿病運動員在激烈運動後的夜間發生低血糖的比例高達 66%。</strong>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/20811595/" target="_blank" rel="noopener noreferrer">[1]</a></sup>
+    這使睡眠品質大打折扣，長期累積下來對恢復能力與訓練適應皆有負面影響。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<!-- 三、第一型糖尿病運動員在表現上的具體劣勢 -->
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、與一般運動員相比，T1D 運動員在哪些方面更為艱辛？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這不是能力的問題，而是「額外負擔」的問題。茲維列夫說得最清楚：<em style="color: #2dd4bf;">「在場上永遠同時進行兩場比賽：一場是大家看到的那場，另一場只有我感受得到。」</em>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">1. 認知與反應速度的波動</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    大腦的燃料幾乎完全依賴葡萄糖。血糖一旦偏低，認知功能會率先受到衝擊：決策速度變慢、注意力分散、反應時間延遲。在籃球的快攻判斷、網球的落點預判、棒球的打者時機選擇中，這些毫秒級的差異往往決定勝負。
+    <sup><a href="https://cehsp.d.umn.edu/sites/cehsp.d.umn.edu/files/nutritionforathletesexercisingandcompetingwithtype1diabetes.pdf" target="_blank" rel="noopener noreferrer">[8]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">2. 能量補給策略的複雜性</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    一般運動員賽前補給很簡單：吃義大利麵、喝運動飲料、確保肝醣充足。第一型糖尿病運動員必須同時計算碳水化合物的攝取量、當前胰島素作用時間、預期運動強度與時長，再決定是否需要減少基礎胰島素劑量。一些耐力型第一型糖尿病運動員在五天自行車賽期間，會將基礎胰島素劑量削減超過 50%，同時每小時補充超過 60 公克碳水化合物。
+    <sup><a href="https://www.gssiweb.org/sports-science-exchange/article/continuous-glucose-monitoring-and-the-athlete-with-type-1-diabetes" target="_blank" rel="noopener noreferrer">[3]</a></sup>
+    這種精算工作在比賽前夕、賽中休息、賽後恢復都必須持續進行。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">3. 恢復速度與訓練適應</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    血糖不穩定會影響蛋白質合成與肌肉修復。長期高血糖更可能損傷微血管，降低組織的氧氣輸送效率，進而拖慢訓練後的肌肉恢復。這也是為何 Mason Miller 被確診前，雖然努力訓練，球速卻持續下滑——確診並正確治療後，體重回升、球速才逐漸恢復並超越以往。
+    <sup><a href="https://www.dexcom.com/en-us/all-access/user-stories/mason-miller-diabetes" target="_blank" rel="noopener noreferrer">[9]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">4. 心理壓力與恐懼低血糖</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    「害怕低血糖」是第一型糖尿病患者最常回報的心理負擔，也是最主要的運動障礙。<strong style="color: #ffffff;">約三分之一的第一型糖尿病患者因害怕低血糖而避免規律運動。</strong>
+    <sup><a href="https://www.jsams.org/article/S1440-2440(23)00485-1/fulltext" target="_blank" rel="noopener noreferrer">[2]</a></sup>
+    對競技運動員而言，這種恐懼不僅存在於比賽當下，更在每次訓練前後如影隨形。Gary Forbes（前 NBA 球員）曾描述自己在生涯中經歷多次低血糖緊急事件，包括一次昏迷送醫——但他從未因此缺席一場練習或比賽。
+    <sup><a href="https://diatribe.org/diabetes-management/nba-and-diabetes-gary-forbes-taking-his-shot" target="_blank" rel="noopener noreferrer">[10]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">5. 設備管理與賽場規則的摩擦</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    連續血糖監測儀（CGM）和胰島素幫浦必須穿戴在身上，在接觸性運動中有脫落或損壞的風險。更荒謬的是，茲維列夫在 2023 年法網曾被大會官員告知，在場上注射胰島素「看起來很奇怪」，被要求到廁所注射。三年後的 2026 年，他帶著這段委屈在同一片紅土上奪冠。
+    <sup><a href="https://www.yardbarker.com/tennis/articles/blood_sugar_issues_didnt_stop_alexander_zverev_from_winning_first_grand_slam_at_2026_french_open/s1_13132_43928552" target="_blank" rel="noopener noreferrer">[11]</a></sup>
+  </p>
+ 
+  <!-- 比較表 -->
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 700px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 160px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+  </style>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2rem;">T1D 運動員 vs. 一般運動員挑戰比較表</h3>
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>挑戰面向</th>
+          <th>一般運動員</th>
+          <th>T1D 運動員的額外負擔</th>
+          <th>影響程度</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>能量補給</td>
+          <td>根據運動量補充碳水即可</td>
+          <td>需同步計算胰島素劑量、碳水比例、注射時機</td>
+          <td>極高</td>
+        </tr>
+        <tr>
+          <td>認知與反應速度</td>
+          <td>血糖穩定，不影響大腦功能</td>
+          <td>低血糖時認知功能下降，技能表現約下降 20%</td>
+          <td>高</td>
+        </tr>
+        <tr>
+          <td>賽前準備</td>
+          <td>訓練、睡眠、飲食三要素</td>
+          <td>需額外監測夜間血糖、調整晨間胰島素</td>
+          <td>中高</td>
+        </tr>
+        <tr>
+          <td>恢復速度</td>
+          <td>標準運動恢復流程</td>
+          <td>血糖不穩影響蛋白質合成與肌肉修復</td>
+          <td>中</td>
+        </tr>
+        <tr>
+          <td>心理壓力</td>
+          <td>賽事本身的壓力</td>
+          <td>賽事壓力＋血糖管理恐懼同時存在</td>
+          <td>高</td>
+        </tr>
+        <tr>
+          <td>設備負擔</td>
+          <td>無需額外醫療設備</td>
+          <td>需穿戴 CGM 與胰島素幫浦，賽中需注射胰島素</td>
+          <td>中</td>
+        </tr>
+        <tr>
+          <td>長期健康風險</td>
+          <td>以運動傷害為主</td>
+          <td>血糖控制不佳可能導致眼、腎、神經長期損傷</td>
+          <td>高（長期）</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<!-- 四、奮鬥故事 -->
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、不向疾病低頭：各領域第一型糖尿病頂尖運動員的奮鬥故事
+  </h2>
+ 
+  <!-- Zverev -->
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">🎾 網球｜茲維列夫（Alexander Zverev）——在紅土上同時打兩場比賽</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    2026 年 6 月 7 日，德國球星亞歷山大·茲維列夫（Sascha Zverev）在法網男單決賽中以五盤擊敗義大利的科博利（Flavio Cobolli），奪得生涯第一個大滿貫冠軍，<strong style="color: #2dd4bf;">成為史上第一位以第一型糖尿病之身奪得大滿貫單打冠軍的男性球員。</strong>
+    <sup><a href="https://www.thebiglead.com/at-long-last-alexander-zverev-wins-2026-french-open/" target="_blank" rel="noopener noreferrer">[12]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    茲維列夫從 4 歲就被確診為第一型糖尿病。<sup><a href="https://sports.yahoo.com/articles/alexander-zverev-wins-french-open-174526849.html" target="_blank" rel="noopener noreferrer">[13]</a></sup> 在這場五盤大戰的第四盤開始前，他當著全球觀眾的面，在場邊注射了胰島素——這個舉動三年前曾被大會官員要求「到廁所進行」。今天，他用冠軍獎盃回應了所有的質疑。
+    <sup><a href="https://gulfnews.com/sport/tennis/how-zverev-battled-two-opponent-on-way-to-french-open-title-1.500567107" target="_blank" rel="noopener noreferrer">[11]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    他曾向路透社坦言：「如果我無法妥善管理我的糖尿病，我就無法達到我對自己的要求。大部分時間靠的是賽前準備。當意外發生時，我學會了保持冷靜，相信我已建立的系統。」他與醫療設備公司 Medtronic 合作，致力提升第一型糖尿病的公眾意識。2022 年，他與家人共同創立「茲維列夫基金會」，專門援助世界各地患有第一型糖尿病的兒童，提供包括開發中國家在內的胰島素供應。
+    <sup><a href="https://www.nationalheraldindia.com/sports/french-open-how-zverev-battled-type-1-diabetes-to-end-his-slam-jinx" target="_blank" rel="noopener noreferrer">[14]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    網球傳奇比利·珍·金（Billie Jean King）在他奪冠後第一時間致賀：<em>「恭喜茲維列夫奪得他的第一個大滿貫。他也是第一位以第一型糖尿病奪得大滿貫冠軍的男性。這對所有與這個疾病共同生活的人，是多麼偉大的勝利。」</em>
+    <sup><a href="https://www.thebiglead.com/at-long-last-alexander-zverev-wins-2026-french-open/" target="_blank" rel="noopener noreferrer">[12]</a></sup>
+  </p>
+ 
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 「早期被告知不可能」：</strong>茲維列夫在被診斷時，曾有人告訴他，帶著第一型糖尿病在最高水準競技是「不可能的」。他的父母和哥哥毅然拒絕接受這個說法，支持他繼續打球。二十五年後，他站在羅蘭加洛斯的頒獎台上。
+      <sup><a href="https://www.mensjournal.com/news/alexander-zverev-diabetes-wins-french-open-2026-medical-condition" target="_blank" rel="noopener noreferrer">[13]</a></sup>
+    </p>
+  </div>
+ 
+  <!-- Mason Miller -->
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2.5rem;">⚾ 棒球｜Mason Miller（MLB 聖地牙哥教士）——從三級聯盟掙扎到 103 mph 快速球</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    Mason Miller 今日是 MLB 最炙手可熱的終結者之一，以破百英里的快速球（平均球速 100.9 mph，全聯盟最高）聞名，外號「死神（The Reaper）」。但八年前，他是一個在三級大學聯賽（Division III）苦苦掙扎、ERA 超過 7.00 的投手。
+    <sup><a href="https://www.si.com/mlb/padres/onsi/san-diego-padres-news/padres-mason-miller-is-turning-diabetes-diagnosis-into-inspiration-both-on-and-off-the-field" target="_blank" rel="noopener noreferrer">[15]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    那段時間的 Miller，體重驟降 25 磅（約 11 公斤）、球速從 90 mph 一路下滑、整天疲憊不堪，卻始終找不到原因。轉機出現在一次實習前的例行藥物篩檢：檢驗結果顯示血糖嚴重異常，他被緊急送往匹茲堡兒童醫院，確診為第一型糖尿病，時年 20 歲。<sup><a href="https://www.breakthrought1d.org/news-and-updates/qa-mason-miller/" target="_blank" rel="noopener noreferrer">[5]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    確診後的兩週內，Miller 就再次上場投球。「我把它當成一天一天去學習，這是我唯一能做的方式。」他在身上貼著連續血糖監測儀（CGM），透過手機即時追蹤血糖，用胰島素筆在飯前與就寢前注射，並每十天更換監測器。正確治療後，他的體重回升、球速暴增至 100+ mph，最終在全明星賽投出 103.6 mph——大聯盟全明星賽史上最快紀錄。
+    <sup><a href="https://www.sportskeeda.com/baseball/news-did-mason-miller-type-1-diabetes-exploring-story-behind-a-s-young-talent-set-record-fastest-pitch-mlb-all-star-game" target="_blank" rel="noopener noreferrer">[16]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    他說：「我希望成為孩子們的榜樣，讓他們知道第一型糖尿病不會阻止你去做想做的事。當我確診時，我只是一個 Division III 的投手，現在我在大聯盟投球。」他也積極與其他 MLB 的第一型糖尿病選手交流，包括隊友 Scott Alexander 與舊金山巨人投手 Jordan Hicks。
+    <sup><a href="https://www.nbcsportsbayarea.com/mlb/athletics/mason-miller-diabetes-diagnosis-closer/1757154/" target="_blank" rel="noopener noreferrer">[17]</a></sup>
+  </p>
+ 
+  <!-- NBA -->
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem; margin-top: 2.5rem;">🏀 籃球｜Chris Dudley & Adam Morrison（NBA）——開創先河的籃球鬥士</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">Chris Dudley</strong> 是 NBA 史上第一位以第一型糖尿病身份上場打球的球員，1987 年加入克里夫蘭騎士後，在聯盟效力長達 16 年。在胰島素幫浦尚未普及、連續血糖監測更是遙不可及的年代，他必須完全靠手動血糖測試和飲食調整來管理病情。
+    <sup><a href="https://www.chrisdudley.org/news/chris-dudley" target="_blank" rel="noopener noreferrer">[18]</a></sup>
+    退役後，他創立「Chris Dudley 基金會」，專為第一型糖尿病少年提供籃球訓練營——每年有 75 名 10 至 17 歲的糖尿病孩子在其中學習如何在運動中管理自身疾病。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">Adam Morrison</strong> 則是另一個令人印象深刻的故事。他 13 歲確診，不僅沒有放棄籃球，更在大學時代成為全美最頂尖的得分手之一（NCAA Division I 得分王），以第三順位被選入 NBA，最終隨洛杉磯湖人奪得 2009、2010 年連續兩屆 NBA 冠軍戒指。他的名言是：「我的醫生從第一天就告訴我，只要照顧好自己，我想做什麼就能做什麼——這份正向的支持讓我知道一切都會好的。」
+    <sup><a href="https://diabetesresearch.org/nbas-star-adam-morrison/" target="_blank" rel="noopener noreferrer">[19]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 科技如何改變第一型糖尿病運動員的命運？</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      Chris Dudley 的年代必須靠針刺手指、手動測量血糖；今日的 Mason Miller 和茲維列夫則擁有連續血糖監測儀（CGM）——每五分鐘自動更新一次數值，並在血糖異常時發出警報。研究指出，目標是讓血糖維持在 70–180 mg/dL 的「安全範圍」內超過 70% 的時間，且低於 70 mg/dL 的時間不超過 3%。
+      <sup><a href="https://www.gssiweb.org/sports-science-exchange/article/continuous-glucose-monitoring-and-the-athlete-with-type-1-diabetes" target="_blank" rel="noopener noreferrer">[3]</a></sup>
+      科技讓這個目標從幾乎不可能，變成可以實現的日常功課。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<!-- 五、常見誤區 -->
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem;">
+      📢 五、關於第一型糖尿病運動員的三大常見誤區
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 14px; line-height: 24px; text-align: center;">1</span>
+        <div>
+          <strong>「第一型糖尿病患者不能從事激烈運動」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤！</strong> 患者在正確的醫療支持與自我管理下，完全可以參與高強度競技運動。多項研究已確認，規律運動對第一型糖尿病患者的血糖控制與心血管健康有正面幫助。<sup><a href="https://www.gssiweb.org/sports-science-exchange/article/sse-90-diabetes-exercise-and-competitive-sports" target="_blank" rel="noopener noreferrer">[6]</a></sup> 問題不在「能不能運動」，而在「如何安全地運動」。</span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 14px; line-height: 24px; text-align: center;">2</span>
+        <div>
+          <strong>「第一型糖尿病是因為吃太多糖造成的」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>完全錯誤！</strong> 第一型糖尿病是自體免疫疾病，與飲食習慣無關。免疫系統因遺傳易感性與環境因素而「出錯」，攻擊自身的 β 細胞。Mason Miller 自己也說：「我吃得還好、很活躍，為什麼會發生在我身上？」——這正是許多患者的共同困惑。<sup><a href="https://www.breakthrought1d.org/news-and-updates/qa-mason-miller/" target="_blank" rel="noopener noreferrer">[5]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 14px; line-height: 24px; text-align: center;">3</span>
+        <div>
+          <strong>「血糖稍微不穩沒關係，撐過去就好」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>非常危險！</strong> 低血糖不處理，可能在幾分鐘內從頭暈演變為昏迷；高血糖長期積累則可能導致眼底病變、腎臟損傷、周邊神經病變。第一型糖尿病運動員的血糖管理不只是表現問題，更是性命攸關的課題。<sup><a href="https://cehsp.d.umn.edu/sites/cehsp.d.umn.edu/files/nutritionforathletesexercisingandcompetingwithtype1diabetes.pdf" target="_blank" rel="noopener noreferrer">[8]</a></sup></span>
+        </div>
+      </li>
+ 
+    </ul>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<!-- FAQ -->
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+    <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+      <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+        <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+      </h2>
+    </div>
+    <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q1：第一型糖尿病運動員在比賽中應該把血糖維持在多少？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        目前的建議是運動前血糖維持在 126–180 mg/dL（高於一般人的正常值），作為運動中血糖下降的緩衝。整體而言，目標是讓血糖超過 70% 的時間維持在 70–180 mg/dL 的「安全範圍」，且血糖低於 70 mg/dL 的時間不超過全天的 3%。每位運動員因運動強度、胰島素敏感性不同，最佳目標值需個別與醫療團隊討論。<sup><a href="https://www.gssiweb.org/sports-science-exchange/article/continuous-glucose-monitoring-and-the-athlete-with-type-1-diabetes" target="_blank" rel="noopener noreferrer">[3]</a></sup>
+      </p>
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q2：CGM（連續血糖監測儀）真的有用嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        非常有用。CGM 每幾分鐘自動提供即時血糖數值，並在血糖趨勢異常時提前警報，讓運動員能在低血糖症狀出現前就採取行動。這正是 Mason Miller 能夠在投球時一邊透過手機監控血糖的關鍵工具。與傳統手指採血相比，CGM 大幅降低嚴重低血糖的發生風險。<sup><a href="https://www.dexcom.com/en-us/all-access/user-stories/mason-miller-diabetes" target="_blank" rel="noopener noreferrer">[9]</a></sup>
+      </p>
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q3：有第一型糖尿病的孩子，還能讓他打運動嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        不只可以，還強烈建議！規律運動有助於改善胰島素敏感性、降低心血管風險、維持健康體重，同時提升孩子的自信心與身心發展。關鍵是與兒科內分泌科醫師合作，制定個別化的運動前後血糖管理計劃，讓孩子能安全快樂地享受運動。Chris Dudley 的基金會每年都為這樣的孩子舉辦籃球訓練營，正是最好的例證。<sup><a href="https://www.chrisdudley.org/news/chris-dudley" target="_blank" rel="noopener noreferrer">[18]</a></sup>
+      </p>
+ 
+      <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+        Q4：第一型糖尿病確診後，還能繼續維持原本的運動水準嗎？
+      </h3>
+      <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+        完全有可能，甚至可能比確診前表現更好——Mason Miller 就是最好的例子。確診後，透過正確的胰島素治療，他的體重回升、恢復了良好的代謝狀態，球速甚至超越確診前的水準。確診初期可能需要數週到數月的調適期，但長期來看，良好的血糖管理實際上有助於維持甚至提升運動表現。<sup><a href="https://www.thesportingtribune.com/2025/08/02/padres-pitcher-mason-miller-lives-with-type-1-diabetes" target="_blank" rel="noopener noreferrer">[20]</a></sup>
+      </p>
+ 
+    </div>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<!-- 結語 -->
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0;">
+  <div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 0; font-family: sans-serif; line-height: 1.7;">
+    <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語：血糖數字管控的是健康，限制不了夢想</h2>
+ 
+    <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+      第一型糖尿病，對競技運動員而言是一個無法移除的「額外對手」。它讓每一次訓練更複雜、每一場比賽更緊張、每一個夜晚的睡眠更充滿變數。研究白紙黑字地告訴我們，低血糖會讓運動技能表現下降 20%，比賽壓力會讓血糖管理更加難以預測。
+    </p><br>
+ 
+    <p style="color: #475569; font-size: 1.05rem;">
+      但茲維列夫在羅蘭加洛斯的紅土上舉起冠軍獎盃、Mason Miller 在全明星賽投出 103.6 mph 的歷史紀錄、Chris Dudley 在 NBA 打了十六年球——他們告訴我們的，是另一個同樣真實的故事：<strong style="color: #1e293b;">有了正確的醫療支持、精良的科技工具，以及那份拒絕被定義的意志，第一型糖尿病不是終點，而是另一種形式的起點。</strong>
+    </p><br>
+ 
+    <p style="color: #475569; font-size: 1.05rem;">
+      如果你或你的孩子、朋友正在面對第一型糖尿病的診斷，請記住：你並不孤單，而且運動是你的盟友，不是你的敵人。因為每一位第一型糖尿病運動員，都值得擁有一個屬於自己的舞台。
+    </p>
+ 
+    <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+      <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+        💡 如果您或家人確診第一型糖尿病，正在考慮如何安全地回歸運動，歡迎尋求專業醫師評估，讓醫療與運動科學共同支持您的健康目標。
+      </p>
+    </div>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+  `,
+  referencesHtml: `
+<div>
+  <h2>📚 參考文獻 (References)</h2>
+  <div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+    <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Kelly, D., Hamilton, J.K., & Riddell, M.C. (2010). Blood glucose levels and performance in a sports camp for adolescents with type 1 diabetes mellitus: a field study. International Journal of Pediatrics. <a href="https://pubmed.ncbi.nlm.nih.gov/20811595/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PubMed: 20811595</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Moser, B., et al. (2023). The effects of acute hyperglycaemia on sports and exercise performance in type 1 diabetes: A systematic review and meta-analysis. Journal of Science and Medicine in Sport, 27(1). <a href="https://www.jsams.org/article/S1440-2440(23)00485-1/fulltext" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">JSAMS Link</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Riddell, M.C., et al. (2024). Continuous Glucose Monitoring and the Athlete with Type 1 Diabetes. Gatorade Sports Science Institute, Sports Science Exchange. <a href="https://www.gssiweb.org/sports-science-exchange/article/continuous-glucose-monitoring-and-the-athlete-with-type-1-diabetes" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">GSSI Web Link</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Mauvais-Jarvis, F., et al. (2025). Type 1 Diabetes: A Guide to Autoimmune Mechanisms for Clinicians. Diabetes, Obesity and Metabolism, Wiley Online Library. <a href="https://dom-pubs.onlinelibrary.wiley.com/doi/full/10.1111/dom.16460" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">DOI: 10.1111/dom.16460</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Breakthrough T1D. (2025). Q&A with San Diego Padres Pitcher Mason Miller. <a href="https://www.breakthrought1d.org/news-and-updates/qa-mason-miller/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Riddell, M.C., & Perkins, B.A. (2006). Diabetes, Exercise and Competitive Sports. Gatorade Sports Science Institute, Sports Science Exchange, SSE-90. <a href="https://www.gssiweb.org/sports-science-exchange/article/sse-90-diabetes-exercise-and-competitive-sports" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">GSSI Web Link</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          McCarthy, M.M., et al. (2023). Observational Study of Glycemic Impact of Anticipatory and Early-Race Athletic Competition Stress in Type 1 Diabetes. PMC10012106. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10012106/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMC: 10012106</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          University of Minnesota Duluth. Nutrition for Athletes Exercising and Competing with Type 1 Diabetes. CEHSP Publication. <a href="https://cehsp.d.umn.edu/sites/cehsp.d.umn.edu/files/nutritionforathletesexercisingandcompetingwithtype1diabetes.pdf" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PDF Link</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Dexcom. (2025). Mason Miller's Diabetes Journey from Diagnosis to MLB Closer. Dexcom User Stories. <a href="https://www.dexcom.com/en-us/all-access/user-stories/mason-miller-diabetes" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          DiaTribe. (2023). NBA and Diabetes: Gary Forbes on Taking His Shot. DiaTribe Learn. <a href="https://diatribe.org/diabetes-management/nba-and-diabetes-gary-forbes-taking-his-shot" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Yardbarker. (2026). Blood sugar issues didn't stop Alexander Zverev from winning first Grand Slam at 2026 French Open. <a href="https://www.yardbarker.com/tennis/articles/blood_sugar_issues_didnt_stop_alexander_zverev_from_winning_first_grand_slam_at_2026_french_open/s1_13132_43928552" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          The Big Lead. (2026). At long last, Alexander Zverev wins 2026 French Open. <a href="https://www.thebiglead.com/at-long-last-alexander-zverev-wins-2026-french-open/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Men's Journal. (2026). Alexander Zverev Wins French Open 2026: How He Overcame Diabetes Diagnosis. <a href="https://www.mensjournal.com/news/alexander-zverev-diabetes-wins-french-open-2026-medical-condition" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          National Herald India. (2026). French Open: How Zverev battled Type 1 diabetes to end his slam jinx. <a href="https://www.nationalheraldindia.com/sports/french-open-how-zverev-battled-type-1-diabetes-to-end-his-slam-jinx" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Sports Illustrated / SI.com. (2026). Padres' Mason Miller is Turning Diabetes Diagnosis Into Inspiration, Both On and Off the Field. <a href="https://www.si.com/mlb/padres/onsi/san-diego-padres-news/padres-mason-miller-is-turning-diabetes-diagnosis-into-inspiration-both-on-and-off-the-field" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Sportskeeda. (2024). Did Mason Miller have Type 1 Diabetes? Exploring the story behind A's young talent who set the record for fastest pitch in MLB All-Star game. <a href="https://www.sportskeeda.com/baseball/news-did-mason-miller-type-1-diabetes-exploring-story-behind-a-s-young-talent-set-record-fastest-pitch-mlb-all-star-game" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          NBC Sports Bay Area. (2024). How Mason Miller's Type 1 diabetes diagnosis led to Athletics success. <a href="https://www.nbcsportsbayarea.com/mlb/athletics/mason-miller-diabetes-diagnosis-closer/1757154/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Chris Dudley Foundation. (2024). Chris Dudley: The First NBA Player with T1D. <a href="https://www.chrisdudley.org/news/chris-dudley" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          Diabetes Research Institute Foundation. (2022). Standing Behind "The Stache": NBA's Adam Morrison. <a href="https://diabetesresearch.org/nbas-star-adam-morrison/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+        </span>
+      </li>
+ 
+      <li style="margin-bottom: 0.8rem;">
+        <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+          The Sporting Tribune. (2025). Padres pitcher Mason Miller lives with Type 1 diabetes. <a href="https://www.thesportingtribune.com/2025/08/02/padres-pitcher-mason-miller-lives-with-type-1-diabetes" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+        </span>
+      </li>
+ 
+    </ol>
+  </div>
+</div>
+`
+},
+
+
+
+{
 id: 'accessory-and-sesamoid-bones',
   title: '天生多塊骨頭？常見「副骨」與「種子骨」疼痛部位、診斷與根治策略',
   lastModified: '2026-06-05',
