@@ -3,13 +3,608 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
 {
+  id: 'prp-who-is-suitable',
+  title: '哪些人適合打PRP？膝蓋退化、網球肘效果如何？',
+  lastModified: '2026-06-09',
+  category: '衛教文章',
+  date: '2026-06-09',
+  summary: '深度解析PRP（高濃度血小板血漿）注射的適應症、禁忌症與實證療效。涵蓋退化性膝關節炎、肌腱韌帶損傷、網球肘、足底筋膜炎等常見狀況，以及不同年齡層的治療建議，幫助你做出最知情的醫療決策。',
+  coverImage: '/images/news/article/prp-who-is-suitable.webp',
+  seoTitle: '哪些人適合打PRP？膝蓋退化、網球肘效果如何？完整醫學解析',
+  seoDescription: '深度解析PRP（富血小板血漿）注射的適應症、禁忌症與實證療效。涵蓋退化性膝關節炎、肌腱韌帶損傷、網球肘、足底筋膜炎等常見狀況，以及不同年齡層的治療建議。',
+  keywords: [
+    'PRP注射',
+    '富血小板血漿',
+    '退化性膝關節炎PRP',
+    '膝蓋軟骨磨損',
+    '網球肘PRP',
+    '旋轉肌撕裂PRP',
+    '足底筋膜炎PRP',
+    'PRP適應症',
+    '膝蓋痛治療'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    PRP（Platelet-Rich Plasma，高濃度血小板血漿）是一種從自體血液濃縮萃取的再生療法，透過高濃度的生長因子促進組織修復。根據目前累積的臨床實證，PRP 對退化性膝關節炎（尤其是輕中度）、肌腱病變（如網球肘、足底筋膜炎）具有顯著的中長期療效，效果往往優於類固醇注射。<br><br>
+    然而，PRP 並非萬靈丹——軟骨嚴重磨損、免疫系統異常、正在服用抗凝血藥物者，均需謹慎評估。年齡本身不是絕對限制，但組織再生能力隨年齡下降，需配合整體治療計畫才能達到最佳效果。本文將以系統性方式解析各類疾患的 PRP 適應症與療效，幫助你做出最適合自己的決策。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4338428/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/31829981/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[2]</a></sup>
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6739947/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[3]</a></sup>
+  </p>
+</div>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、PRP 是什麼？為什麼它能促進修復？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多人聽過「打 PRP」，卻不清楚它究竟是什麼。簡單來說，<strong style="color: #2dd4bf;">PRP 是從你自己的血液中萃取出來的高濃度血小板製劑</strong>——抽血後，透過離心機將血液分層，取出血小板濃度是一般血液 3 到 5 倍的「上清液」，再注射回受傷的部位。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    血小板本身的功能不只是止血。活化後的血小板會釋放多種<strong style="color: #ffffff;">生長因子</strong>，這些因子會促進細胞增殖、新生血管形成與膠原蛋白合成，是組織修復的關鍵訊號分子。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4338428/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    換句話說，PRP 的作用原理是：<strong style="color: #ffffff;">把身體原本就有的修復機制，濃縮放大，精準送到需要修復的地方。</strong>這也是為什麼它被廣泛應用於退化性關節炎、肌腱損傷、韌帶傷害等傳統治療效果有限的疾患。
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床重點提示</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      PRP 的製備方式與血小板濃度會因診所設備與操作流程而有所差異，這也是臨床研究結果分散的主因之一。選擇有經驗的醫師與標準化製備流程，對療效影響甚大。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、膝關節退化：打 PRP 到底有沒有效？
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">退化性膝關節炎打 PRP 有效嗎？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    退化性膝關節炎（骨關節炎）是 PRP 應用最廣泛的適應症之一，也是研究證據最充分的領域。大量隨機對照試驗顯示，PRP 注射在緩解疼痛與改善關節功能方面，中長期效果明顯優於玻尿酸注射與生理食鹽水。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/31829981/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    發表於 《美國運動醫學期刊》的大型統合分析指出，PRP 注射在術後 3 個月、6 個月及 12 個月的疼痛指數與功能評估均顯著優於對照組，且以輕至中度退化（II–III級 ）的患者效益最為顯著。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/31829981/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">哪些人效果最好？</strong>目前證據顯示，以下特徵的患者對 PRP 反應較佳：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">膝關節退化程度屬輕至中度（X 光分級 KL grade II–III）</li>
+    <li style="margin-bottom: 0.5rem;">關節腔尚有足夠空間，未完全骨對骨接觸</li>
+    <li style="margin-bottom: 0.5rem;">無嚴重全身性發炎疾病（如類風濕性關節炎活躍期）</li>
+    <li style="margin-bottom: 0.5rem;">體重控制在合理範圍，減少關節額外承重</li>
+  </ul>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 重要提醒：</strong><br><br>末期退化（IV級）的患者，因軟骨幾乎已耗損殆盡，PRP 的再生訊號無法在已破壞的結構上發揮作用，效果有限。這類患者通常更適合評估人工關節置換手術，而非反覆注射。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">膝蓋軟骨磨損打 PRP 可以再生嗎？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是許多患者最常問的問題，也是最容易被過度期待的面向。<strong style="color: #ffffff;">誠實的醫學答案是：PRP 無法讓已磨損的軟骨「長回來」，但可以減緩進一步退化、降低關節內發炎，並改善周邊軟組織的健康。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    關節軟骨本身血液供應極少，修復能力天生不足。PRP 的主要機制是透過抑制發炎介質、促進滑液膜細胞產生透明質酸，以及保護現有軟骨細胞免受持續氧化損傷，進而達到「保護」而非「再生」的效果。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6739947/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    部分動物實驗與早期人體研究顯示，PRP 可能促進纖維軟骨的形成，但這與原本的透明軟骨在結構與功能上仍有本質差距。期待「軟骨完全再生」目前在科學上依然是無法實現的目標。
+  </p>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">膝蓋痛打 PRP 可以撐多久？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    根據多項追蹤研究，PRP 對膝關節炎的疼痛緩解效果通常在注射後 6 至 12 個月內達到高峰，部分患者的療效可維持 18 至 24 個月。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/31829981/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    療效持續時間受多種因素影響，包括：退化程度（越輕微通常越持久）、患者活動強度、體重控制、是否搭配物理治療與肌力訓練。臨床上建議，首次 PRP 療程通常為 2 至 3 次（間隔 3 至 4 週），之後依症狀變化每年重新評估是否需要補打。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、肌腱與韌帶損傷：PRP 的強項領域
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">肩膀旋轉肌撕裂一定要開刀嗎？打 PRP 有效嗎？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    旋轉肌袖是穩定肩關節的關鍵肌群，撕裂後的修復一直是骨科的難題。答案取決於撕裂的嚴重程度：
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">部分厚度撕裂：</strong>這是 PRP 發揮最大效益的區間。肌腱仍有連續性，生長因子可沿著現有的膠原纖維架構促進修復。多項研究顯示，PRP 注射結合物理治療，能顯著改善肩部疼痛與功能，減少手術需求。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/26381352/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    <strong style="color: #ffffff;">全層撕裂：</strong>若撕裂面積較大（超過 3 公分）、肌肉已出現明顯萎縮或脂肪浸潤，手術修復通常是首選，PRP 可作為手術後的輔助治療以加速癒合。若撕裂面積小且患者無法接受手術，PRP 可作為保守治療的一環，但期待「完全癒合」並不切實際。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    一項系統性回顧分析了 PRP 輔助旋轉肌袖修補術的效果，發現術中或術後使用 PRP，可降低再撕裂率並改善術後 6 個月的功能評分。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8441050/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #1</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      臨床上常遇到 50 至 65 歲患者，核磁共振顯示部分旋轉肌撕裂，卻因恐懼手術而拖延就醫。事實上，早期的部分撕裂若配合 PRP 注射與正確的肩胛骨穩定訓練，許多人可在 3 至 6 個月內恢復到接近正常的肩部功能，而無需手術。關鍵在於：不是撕裂了就一定要開刀，而是需要依據影像學分級與功能狀態做整體評估。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">網球肘打針：類固醇還是 PRP 比較好？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    網球肘（外側上髁炎）是肌腱 PRP 治療中研究最深入的主題之一。簡短的答案是：<strong style="color: #ffffff;">短期看類固醇，長期看 PRP。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    多項高品質隨機對照試驗均顯示，類固醇注射在 4 至 6 週內的疼痛緩解優於 PRP，但在 6 個月後，PRP 組的療效全面超越類固醇組，且類固醇組在停藥後復發率顯著較高。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6739947/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/20028690/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    從生物學機制來看，這個差異不難理解：類固醇是強效消炎藥，能快速壓制發炎反應，但網球肘的本質其實是<strong style="color: #ffffff;">肌腱退化</strong>而非單純發炎——膠原纖維排列紊亂、血管增生異常，這些問題靠消炎並無法根本解決，甚至長期使用類固醇還可能進一步削弱肌腱強度。PRP 則是透過生長因子促進膠原纖維重組與正常血管形成，從根源修復退化組織。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6739947/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+  </p>
+
+  <div style="background-color: #f0fdf4; border: 1px solid #86efac; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #166534; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>✅ 臨床建議：</strong><br><br>若你的網球肘症狀持續超過 3 個月、保守治療（休息、物理治療、NSAIDs）效果不佳，PRP 是優先於類固醇的選擇——特別是當你有長期打球計畫時。若因職業或生活需求必須在短期內立即緩解疼痛，可考慮單次類固醇注射，但需充分了解其長期風險，且後續仍應搭配 PRP 或積極物理治療。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">足底筋膜炎打 PRP 有用嗎？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    足底筋膜炎是最常造成腳跟疼痛的原因，長期困擾跑者、站立工作者及體重過重族群。對於保守治療（伸展、夜間支架、客製化鞋墊）效果不足的患者，PRP 是一個有力的選擇。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    多項隨機對照試驗顯示，單次或兩次 PRP 注射在術後 3 個月至 6 個月的疼痛改善與功能恢復，顯著優於類固醇注射，且副作用更少，無類固醇造成足底筋膜斷裂的風險。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/24504503/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    足底筋膜炎的 PRP 注射通常在超音波導引下進行，以確保藥液精準注射至筋膜最厚、退化最嚴重的區域（通常是跟骨附著點）。超音波導引不僅提升準確性，也能即時排除其他診斷（如跟骨壓力性骨折、跟腱病變）。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、年齡與族群：PRP 對我這個年紀有用嗎？
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">年輕人可以打 PRP 嗎？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    答案是肯定的，且年輕人通常是 PRP 治療的最佳受益族群。原因有三：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">血小板活性較高：</strong>年輕人的血小板品質較佳，濃縮後釋放的生長因子濃度更高、活性更強。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">組織修復能力強：</strong>細胞增殖速度更快，對生長因子的反應更靈敏，修復效率較高。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">避免長期藥物依賴：</strong>對於運動員或體力勞動者，PRP 能在不使用類固醇或止痛藥的前提下處理肌腱韌帶傷害，保護長期關節健康。</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    年輕族群最常見的 PRP 適應症包括：運動後肌腱過度使用傷害（如跳躍膝、阿基里斯腱病變）、韌帶扭傷後促進癒合（前十字韌帶保守治療輔助），以及肩部旋轉肌部分撕裂。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8441050/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+  </p>
+
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解 #2</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在年輕運動員（20–35 歲）族群中，臨床上最常見的迷思是：「打了 PRP 就可以馬上回場訓練。」事實上，PRP 啟動的是一個「受控的修復過程」，注射後 2 至 4 週內局部可能反而出現輕度疼痛加劇（這是正常的生物反應）。完整的修復週期通常需要 6 至 12 週，在此期間仍需配合物理治療與漸進式負荷，而非立即回到高強度訓練。
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">70 歲以上打 PRP 還有效果嗎？</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    這是許多高齡患者與家屬最關心的問題。醫學上的答案是：<strong style="color: #ffffff;">年齡並非 PRP 的絕對禁忌，但療效確實可能隨年齡下降，且需要更整體化的評估。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    隨著年齡增長，血小板功能與生長因子濃度確實有所下降，但並非等於「無效」。多項針對 65 歲以上膝關節炎患者的研究顯示，PRP 注射仍能帶來臨床上有意義的疼痛改善與功能提升，效果雖不如年輕患者顯著，但仍優於安慰劑組。
+    <sup><a href="https://pubmed.ncbi.nlm.nih.gov/31829981/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    高齡患者使用 PRP 前，需特別評估以下因素：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">是否服用抗凝血藥物：</strong>。這類藥物可能影響血小板功能及治療安全性，需與開立藥物的醫師協調停藥或評估替代方案。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">整體健康狀態：</strong>免疫系統嚴重低下、活躍性感染、惡性腫瘤等情形通常是 PRP 的禁忌症。</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">退化程度：</strong>末期關節炎（IV級）的高齡患者，若影像學顯示關節腔已消失，PRP 的效益相當有限，此時應優先與骨科醫師討論人工關節置換的可行性。</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    對於 70 歲以上、退化程度中等、無重大禁忌症的患者，PRP 搭配適當的復健計畫，仍是一個值得嘗試的保守治療選項——尤其是對無法承受手術風險者而言，PRP 提供了一個無需全身麻醉、低侵入性的治療途徑。
+  </p>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、PRP 適應症與療效比較表
+  </h2>
+
+  <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 160px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>適應症</th>
+          <th>建議等級</th>
+          <th>PRP 主要效益</th>
+          <th>療效維持時間</th>
+          <th>vs. 類固醇</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>退化性膝關節炎（輕中度）</td>
+          <td>✅ 強力推薦</td>
+          <td>疼痛減輕、功能改善、延緩退化</td>
+          <td>12–24 個月</td>
+          <td>長期顯著優於類固醇</td>
+        </tr>
+        <tr>
+          <td>退化性膝關節炎（重度）</td>
+          <td>⚠️ 有限效益</td>
+          <td>部分疼痛緩解</td>
+          <td>6 個月以下</td>
+          <td>效果有限，宜評估手術</td>
+        </tr>
+        <tr>
+          <td>網球肘（外側上髁炎）</td>
+          <td>✅ 強力推薦</td>
+          <td>肌腱修復、長期疼痛控制</td>
+          <td>12–18 個月</td>
+          <td>中長期明顯優於類固醇</td>
+        </tr>
+        <tr>
+          <td>足底筋膜炎</td>
+          <td>✅ 推薦</td>
+          <td>疼痛緩解、功能恢復</td>
+          <td>6–12 個月</td>
+          <td>優於類固醇，無斷裂風險</td>
+        </tr>
+        <tr>
+          <td>旋轉肌袖部分撕裂</td>
+          <td>✅ 推薦（保守治療輔助）</td>
+          <td>促進修復、改善肩部功能</td>
+          <td>視撕裂程度而定</td>
+          <td>更安全，無類固醇副作用</td>
+        </tr>
+        <tr>
+          <td>旋轉肌袖全層大撕裂</td>
+          <td>⚠️ 建議先手術</td>
+          <td>術後輔助加速癒合</td>
+          <td>配合手術效益更佳</td>
+          <td>手術後輔助使用</td>
+        </tr>
+        <tr>
+          <td>阿基里斯腱病變</td>
+          <td>✅ 推薦</td>
+          <td>肌腱強化、疼痛控制</td>
+          <td>6–12 個月</td>
+          <td>優於類固醇（避免斷裂）</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、哪些人不適合打 PRP？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    PRP 雖然安全性整體良好，但以下情況屬於相對或絕對禁忌，在治療前必須與醫師充分討論：
+  </p>
+
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">血液疾病或凝血功能異常：</strong>如血小板數量過低（&lt;100,000/μL）、白血病、骨髓瘤等，PRP 的製備效果與安全性均受影響。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">活躍性感染：</strong>注射部位或全身性感染時，絕對不可進行 PRP 注射，以免擴散感染。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">活躍性惡性腫瘤：</strong>PRP 中的生長因子可能在理論上刺激腫瘤細胞增殖，雖目前缺乏直接証據，但現行臨床指引建議惡性腫瘤患者避免使用。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">正在使用抗凝血藥物：</strong>需與相關科別醫師討論是否能短暫停藥，以確保血小板功能正常。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">嚴重貧血（Hb &lt;10 g/dL）：</strong>血液品質不足以製備出有效濃度的 PRP。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">懷孕：</strong>目前缺乏足夠的安全性研究，建議懷孕期間避免接受 PRP 治療。
+    </li>
+  </ul>
+
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 關於類固醇的交互影響：</strong><br><br>若近期（通常指 4 至 6 週內）曾接受局部類固醇注射，同一部位的 PRP 治療效果可能受到影響——類固醇的強力抗發炎作用可能抑制 PRP 所需的「啟動期炎症反應」。建議兩種治療之間保留足夠的間隔時間。
+    </p>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+      📢 七、關於 PRP 的三大常見誤解
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「PRP 是實驗性療法，效果沒有根據」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過時的說法！</strong> 過去十年，PRP 已累積大量高品質隨機對照試驗的實證支持，特別是在退化性膝關節炎與網球肘領域。美國骨科醫師學會、歐洲運動醫學學會均已將 PRP 納入相關指引作為可考慮的治療選項。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/31829981/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[2]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「打一次 PRP 就可以根治，不需要其他治療」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>錯誤期待！</strong> PRP 是強化組織修復的「催化劑」，而非「萬靈藥」。要達到最佳效果，PRP 必須搭配適當的物理治療、肌力訓練、生活型態調整（如體重控制、運動改良）。單純注射而不改變造成損傷的根本原因，療效將大打折扣。<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4338428/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[1]</a></sup></span>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「越老越不適合打 PRP，打了也是浪費錢」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>過度簡化！</strong> 年齡是評估因素之一，但不是唯一因素。在無禁忌症的情況下，65–75 歲患者的退化性膝關節炎，透過 PRP 仍能獲得臨床上有意義的疼痛改善，且副作用風險遠低於長期 NSAIDs 使用或多次類固醇注射。<sup><a href="https://pubmed.ncbi.nlm.nih.gov/31829981/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[2]</a></sup></span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    八、PRP 治療前後，你需要知道的事
+  </h2>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">治療前準備</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">治療前 1 週停用非類固醇消炎藥（NSAIDs，如 ibuprofen、naproxen），避免影響血小板功能</li>
+    <li style="margin-bottom: 0.5rem;">治療前保持充足水分攝取，確保血液品質</li>
+    <li style="margin-bottom: 0.5rem;">如有服用任何藥物（特別是抗凝血劑、阿斯匹靈），提前告知醫師</li>
+    <li style="margin-bottom: 0.5rem;">注射部位避免有皮膚感染或破損</li>
+  </ul>
+
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">治療後照護</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">注射後 48 至 72 小時內，注射部位可能出現輕度疼痛、腫脹或溫熱感，這是正常的發炎反應，屬於修復過程的一部分</li>
+    <li style="margin-bottom: 0.5rem;">注射後 1 至 2 週避免大強度運動或直接衝擊注射部位</li>
+    <li style="margin-bottom: 0.5rem;">繼續停用 NSAIDs 1 週，以免抑制 PRP 的修復機制</li>
+    <li style="margin-bottom: 0.5rem;">可以冰敷緩解不適，但不建議熱敷（熱敷在早期可能加劇腫脹）</li>
+    <li style="margin-bottom: 0.5rem;">依照醫師指示進行物理治療與漸進式復健，這是影響最終療效的關鍵因素</li>
+  </ul>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q1：PRP 注射會很痛嗎？需要麻醉嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      注射過程中會有抽血的輕微刺痛，以及藥液注入關節或肌腱時的脹痛感。大多數患者可接受，無需全身麻醉。若注射於肌腱或深層組織，醫師通常會搭配局部麻醉藥（如 lidocaine）於皮膚及皮下注射，以提升舒適度。注射後 24–72 小時內的酸痛感是正常現象。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q2：PRP 需要打幾次？多久打一次？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      依適應症不同，標準療程有所差異。退化性膝關節炎通常建議 2 至 3 次，間隔 3 至 4 週；網球肘或足底筋膜炎通常 1 至 2 次效果即相當顯著。完成療程後，依症狀緩解情況，後續可視需要每年重新評估是否補打。並非次數越多越好，過度注射的邊際效益有限，且費用不菲。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q3：PRP 和玻尿酸注射有什麼不同？可以一起打嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      玻尿酸（透明質酸）的主要作用是潤滑關節、緩衝衝擊，效果相對短暫（3–6 個月），且對組織修復的影響有限。PRP 則是透過生長因子促進組織再生，修復效果更持久。兩者機制不同，部分研究建議搭配使用可能有加乘效果，但目前尚無足夠的大型 RCT 直接比較聯合治療。臨床上通常先評估個別療效後再考慮組合方案。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q4：打 PRP 後多久可以感受到效果？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      PRP 的效果通常不是立竿見影。多數患者在注射後 2 至 6 週才開始感受到疼痛改善，完整效果通常在 3 個月後才明顯。這與類固醇注射（可能數日內見效）的時間曲線截然不同。若在注射後 1 至 2 週內沒有立即感到改善，並不代表治療無效——只是修復過程尚在進行中。
+    </p>
+
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4; display: block; width: 100%; clear: both;">
+      Q5：糖尿病患者可以打 PRP 嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      糖尿病本身並非 PRP 的絕對禁忌症，但需特別謹慎。血糖控制不良時，血小板功能會受到影響，PRP 的療效可能下降，且感染風險略高。建議糖尿病患者在血糖穩定控制的狀態下（HbA1c 最好在 8% 以下）接受治療，並與醫師充分討論個人風險評估。
+    </p>
+
+  </div>
+</section>
+
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    PRP 療法走過了從「新興療法」到「有實證支撐的治療選項」的歷程。它不是萬靈藥，但對於正確的適應症——輕中度退化性膝關節炎、慢性肌腱病變、旋轉肌部分撕裂——它提供了一個真正促進組織修復、而非只是「壓制症狀」的治療途徑。
+  </p> <br>
+
+  <p style="color: #475569; font-size: 1.05rem;">
+    <strong style="color: #1e293b;">關鍵在於：找到正確的適應症、選擇有經驗的醫師、搭配完整的復健計畫。</strong>如果你正在為膝蓋退化、頑固的網球肘、或肩膀問題所苦，不要讓「不確定」讓你拖延就醫——<strong style="color: #1e293b;">及早評估，才能在組織退化尚可逆轉的黃金時期做出最有效的介入。</strong>
+  </p>
+
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照本文的適應症比較表，確認你的狀況是否符合 PRP 治療的條件，並攜帶近期的影像學資料（X 光或 MRI），預約專科醫師進行完整評估。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約 PRP 門診評估
+    </a>
+  </div>
+</div>
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Dhillon, M.S., Patel, S., & Bali, K. (2015). PRP in Orthopaedics: Current Status and Future Directions. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4338428/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 4338428</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Belk, J.W., Kraeutler, M.J., Houck, D.A., et al. (2021). Platelet-Rich Plasma Versus Hyaluronic Acid for Knee Osteoarthritis: A Systematic Review and Meta-analysis of Randomized Controlled Trials. American Journal of Sports Medicine, 49(1), 249–260. <a href="https://pubmed.ncbi.nlm.nih.gov/31829981/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 31829981</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Arirachakaran, A., Sukthuayat, A., Sisayanarane, T., et al. (2019). Platelet-rich plasma versus corticosteroid treatment for lateral epicondylitis: A systematic review and meta-analysis. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6739947/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 6739947</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kesikburun, S., Tan, A.K., Yilmaz, B., et al. (2015). Platelet-Rich Plasma Injections in the Treatment of Chronic Rotator Cuff Tendinopathy: A Randomized Controlled Trial with 1-Year Follow-up. American Journal of Sports Medicine. <a href="https://pubmed.ncbi.nlm.nih.gov/26381352/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 26381352</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Xu, X., Lim, S.T., Lie, D.T.T., et al. (2021). Platelet-Rich Plasma Augmentation in Arthroscopic Rotator Cuff Repair: A Systematic Review and Meta-analysis of Randomized Controlled Trials. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8441050/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 8441050</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Gosens, T., Peerbooms, J.C., van Laar, W., & den Oudsten, B.L. (2011). Ongoing Positive Effect of Platelet-Rich Plasma Versus Corticosteroid Injection in Lateral Epicondylitis: A Double-Blind Randomized Controlled Trial With 2-Year Follow-up. American Journal of Sports Medicine. <a href="https://pubmed.ncbi.nlm.nih.gov/20028690/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 20028690</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Mahindra, P., Yamin, M., Selhi, H.S., et al. (2016). Chronic Plantar Fasciitis: Effect of Platelet-Rich Plasma, Corticosteroid, and Placebo. Orthopedics. <a href="https://pubmed.ncbi.nlm.nih.gov/24504503/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 24504503</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Fitzpatrick, J., Bulsara, M.K., McCrory, P.R., et al. (2017). Analysis of Platelet-Rich Plasma Extraction: Variations in Platelet and Blood Components Between 4 Common Commercial Kits. Orthopaedic Journal of Sports Medicine. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5638176/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 5638176</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Andia, I., & Maffulli, N. (2013). Platelet-rich plasma for managing pain and inflammation in osteoarthritis. Nature Reviews Rheumatology. <a href="https://pubmed.ncbi.nlm.nih.gov/23609914/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 23609914</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Raeissadat, S.A., Rayegani, S.M., Hassanabadi, H., et al. (2015). Knee Osteoarthritis Injection Choices: Platelet-Rich Plasma (PRP) Versus Hyaluronic Acid (a One-Year Randomized Clinical Trial). Clinical Medicine Insights: Arthritis and Musculoskeletal Disorders. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4298543/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 4298543</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Mishra, A.K., Skrepnik, N.V., Edwards, S.G., et al. (2014). Efficacy of Platelet-Rich Plasma for Chronic Tennis Elbow: A Double-Blind, Prospective, Multicenter, Randomized Controlled Trial of 230 Patients. American Journal of Sports Medicine. <a href="https://pubmed.ncbi.nlm.nih.gov/24448222/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PubMed: 24448222</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Filardo, G., Kon, E., Di Martino, A., et al. (2012). Platelet-Rich Plasma vs Hyaluronic Acid to Treat Knee Degenerative Pathology: Study Design and Preliminary Results of a Randomized Controlled Trial. BMC Musculoskeletal Disorders. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3344686/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 3344686</a>
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+
+{
 id: 'type-1-diabetes-elite-athletes',
   title: '場上的雙重對決：第一型糖尿病運動員的血糖管理與奇蹟',
   lastModified: '2026-06-08',
   category: '衛教文章',
   date: '2026-06-08',
   summary: '從運動醫學與自體免疫角度，剖析第一型糖尿病（Type 1 Diabetes）運動員面臨的血糖挑戰。低血糖如何讓表現下滑 20%？高強度無氧運動與競賽壓力又如何引發高血糖？看網球球星茲維列夫（Alexander Zverev）奪得 2026 年法網冠軍與 MLB 火球男 Mason Miller 如何靠醫療科技克服疾病，打破不可能的運動醫學限界。',
-  coverImage: '/images/news/article/t1d-athletes-glucose-management.webp',
+  coverImage: '/images/news/article/t1d-athletes-glucose-management1.webp',
   seoTitle: '第一型糖尿病也能拿大滿貫！頂尖運動員的運動醫學與血糖管理全解析',
   seoDescription: '深入解析第一型糖尿病（Type 1 Diabetes）競技運動員的雙重挑戰。實證研究揭示低血糖、延遲性低血糖對運動表現的衝擊，並透過 2026 法網冠軍茲維列夫與 MLB 終結者 Mason Miller 的真實故事，展示連續血糖監測（CGM）等運動科學與自體免疫醫學的最新應用。',
   keywords: [

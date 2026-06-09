@@ -238,6 +238,12 @@ export const sportsInjuriesData = [
         description: '完整解說PRP注射前後的注意事項，包含術前止痛藥與感冒的處理原則、術後冰敷vs熱敷的醫學依據、運動恢復時程、重訓返回準則，以及維他命C、膠原蛋白等術後飲食補充建議，幫助患者以正確觀念最大化PRP治療效果。',
         image: '/images/news/article/prp-pre-post-care.webp',
       },
+                                                            {
+        slug: 'prp-who-is-suitable',
+        title: '哪些人適合打PRP？膝蓋退化、網球肘效果如何？',
+        description: '深度解析PRP（高濃度血小板血漿）注射的適應症、禁忌症與實證療效。涵蓋退化性膝關節炎、肌腱韌帶損傷、網球肘、足底筋膜炎等常見狀況，以及不同年齡層的治療建議，幫助你做出最知情的醫療決策。',
+        image: '/images/news/article/prp-who-is-suitable.webp',
+      },
                                                 {
         slug: 'prp-vs-hyaluronic-acid-injection',
         title: '自費針劑這麼多種，PRP、玻尿酸、葡萄糖，該如何挑選？如何挑選適合的醫生跟診所',
@@ -649,7 +655,7 @@ export const sportsInjuriesData = [
         slug: 'type-1-diabetes-elite-athletes',
         title: '場上的雙重對決：第一型糖尿病運動員的血糖管理與奇蹟',
         description: '從運動醫學與自體免疫角度，剖析第一型糖尿病（Type 1 Diabetes）運動員面臨的血糖挑戰。低血糖如何讓表現下滑 20%？高強度無氧運動與競賽壓力又如何引發高血糖？看網球球星茲維列夫（Alexander Zverev）奪得 2026 年法網冠軍與 MLB 火球男 Mason Miller 如何靠醫療科技克服疾病，打破不可能的運動醫學限界。',
-        image: '/images/news/article/t1d-athletes-glucose-management.webp',
+        image: '/images/news/article/t1d-athletes-glucose-management1.webp',
 
       },
       {
