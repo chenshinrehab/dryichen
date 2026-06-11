@@ -233,6 +233,12 @@ export const sportsInjuriesData = [
         description: '韌帶玻尿酸與PRP是修復關節與軟組織的兩大利器，但作用機制大不相同。實證研究揭露，PRP透過生長因子促進組織再生，適合慢性病變；玻尿酸則能提供潤滑、抑制沾黏，對急性扭傷有奇效。本文將系統性剖析兩者的優缺點，幫助您找出最適合的治療方案。',
         image: '/images/news/article/ligament-ha-vs-prp.webp',
       },
+                                                {
+        slug: 'prp-why-fail',
+        title: 'PRP打了沒效果？不是運氣問題，這六大關鍵因素才是原因',
+        description: '許多人打了PRP卻效果不佳，總以為是運氣不好或治療本身無效。事實上，從血小板的品質、年齡、性別、注射準確度、到注射後的復健配合，每一個環節都直接影響最終結果。本文以醫學文獻為基礎，用你看得懂的語言，解析PRP療效不穩定背後真正的科學原因。',
+        image: '/images/news/article/prp-why-fail.webp',
+      },
                                           {
         slug: 'prp-injection-pain-duration-efficacy',
         title: '打完 PRP 反而更痛？復健科醫師揭密：四大核心問題與術後疼痛',

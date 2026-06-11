@@ -3,6 +3,616 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
 {
+  id: 'prp-why-fail',
+  title: 'PRP打了沒效果？不是運氣問題，這六大關鍵因素才是原因',
+  lastModified: '2026-06-11',
+  category: '衛教文章',
+  date: '2026-06-11',
+  summary: '許多人打了PRP卻效果不佳，總以為是運氣不好或治療本身無效。事實上，從血小板的品質、年齡、性別、注射準確度、到注射後的復健配合，每一個環節都直接影響最終結果。本文以醫學文獻為基礎，用你看得懂的語言，解析PRP療效不穩定背後真正的科學原因。',
+  coverImage: '/images/news/article/prp-why-fail.webp',
+  seoTitle: 'PRP打了沒效果？六大關鍵原因全解析｜醫學衛教文章',
+  seoDescription: '許多人打了PRP卻效果不佳，總以為是運氣不好。事實上，血小板品質、年齡、藥物干擾、注射技術、復健配合，每個環節都決定結果。本文用你看得懂的語言，解析PRP療效不穩定的真正科學原因。',
+  keywords: [
+    'PRP失敗原因',
+    'PRP效果不好',
+    'PRP血小板血漿',
+    '高濃度血小板',
+    'PRP注射',
+    '再生醫學',
+    'PRP治療膝蓋',
+    '血小板老化',
+    'NSAIDs與PRP',
+    'PRP復健',
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 1rem; line-height: 1.7; color: #334155;">
+    PRP（高濃度血小板血漿）是目前骨科再生醫學中最受關注的療法之一，但臨床上確實存在相當比例的患者反應不佳，讓許多人懷疑這是「運氣」或「個人體質」的問題。事實上，科學文獻告訴我們，PRP的療效可以在很大程度上被預測與優化——只要我們理解影響它的關鍵變數。
+  </p>
+  <p style="margin-bottom: 0; line-height: 1.7; color: #334155;">
+    本文從六個層面切入：<strong>①血小板本身的生物年齡與功能品質</strong>、<strong>②年齡與性別對PRP成分的影響</strong>、<strong>③藥物與生活習慣的干擾</strong>、<strong>④疾病嚴重度與解剖結構限制</strong>、<strong>⑤注射技術與劑量窗口的精準性</strong>、<strong>⑥注射後的復健配合</strong>，以實證為基礎說明為何PRP在某些人身上有效，在另一些人身上卻無法達到預期。理解這些因素，不只是醫師的責任，更是每一位考慮接受PRP治療的患者應該知道的事。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12346282/" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[1]</a></sup>
+    <sup><a href="https://doi.org/10.1177/23094990211021922" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[2]</a></sup>
+    <sup><a href="https://doi.org/10.1177/0363546520909397" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline;">[3]</a></sup>
+  </p>
+</div>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、PRP是什麼？為什麼「自己的血」會有效果差異？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    PRP的中文是「高濃度血小板血漿」，做法是從你自己的手臂抽出一小管血，經過高速離心機旋轉分層，取出其中富含血小板的那一層，再注射回受傷或退化的部位。這些血小板裡儲存著大量「生長因子」，像是一包催化劑，能夠啟動組織修復、促進細胞增生、調節局部發炎反應。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    聽起來很簡單，對吧？問題就出在「自己的血」這四個字。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    PRP不像工廠生產的標準藥物，每瓶成分一致、品質可控。它完全取決於你這個人——你的血液品質、你的年齡、你的代謝狀態、你的生活習慣，甚至你的用藥清單，都直接影響最終製備出來的PRP「品質」。兩個人坐在診間接受同樣的操作流程，注射進去的PRP，其實可能是截然不同的東西。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12346282/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這就是為什麼PRP的臨床研究結果如此「雜亂」——有人效果顯著，有人毫無改善——不是療法本身有問題，而是我們沒有把「不同的病人帶來不同品質的原料」這件事考慮進去。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、關鍵一：你的血小板「老了」嗎？
+  </h2>
+ 
+  <div style="background-color: #1e293b; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+    <p style="color: #94a3b8; font-size: 1.5rem; font-style: italic; margin: 0;">💡 這是目前醫學界最新、也是最容易被忽略的PRP失效原因之一</p>
+  </div>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    血小板的壽命很短，在血液循環裡大約只有7到10天。但血小板本身也會「老化」——這裡說的老化，不只是指單一顆血小板的壽命問題，而是指人體隨著年齡增長、或在某些慢性病狀態下，所生產出來的血小板整體品質下降、功能衰退的現象，科學上稱為「血小板衰老」。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    衰老的血小板有幾個特徵：它們α顆粒（儲存生長因子的小倉庫）裡的生長因子含量減少；接受到刺激後的反應能力下降；反而更傾向於製造促發炎的物質，在受傷部位「幫倒忙」。一篇2025年發表於PMC的綜合性回顧研究指出，衰老血小板的粒線體功能障礙與氧化壓力增加，是導致PRP臨床療效不穩定的核心機制之一。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12346282/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    更令人關注的是，就算你數血小板數量完全正常，並不代表品質沒問題。傳統的血液檢查只計算數量，卻無法評估每一顆血小板「到底還有多少戰鬥力」。這就像軍隊點兵——報告說有一萬名士兵，但其中有多少老弱殘兵？戰力完全不同。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <strong style="color: #ffffff;">哪些人的血小板更容易提早老化？</strong>長期慢性發炎（如類風濕性關節炎、代謝症候群）、氧化壓力高（長期吸菸、高糖飲食、睡眠不足）、以及年齡本身，都是血小板功能品質下降的加速因子。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12346282/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床觀點</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      在臨床上，我們有時候看到的情況是：同樣是退化性膝關節炎的患者，65歲的患者注射PRP後改善幅度遠不如同等嚴重度的45歲患者。這背後有部分原因就是血小板的生物年齡差距，而非只是關節退化程度的差異。血小板功能的量化評估，是未來再生醫學個人化治療的重要方向。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、關鍵二：年齡與性別，影響比你想的更深
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多患者會問：「我今年60歲，PRP還適合我嗎？」這個問題的答案不是簡單的「適合」或「不適合」，而是需要理解年齡對PRP療效的多重影響機制。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">年齡的雙重影響</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    一方面，年齡較大的患者，其血液中的生長因子濃度確實有下降的趨勢。2019年一項針對20至49歲健康志願者的研究發現，PRP中的生長因子與年齡之間存在相關性，年輕族群的生長因子釋放能力整體優於年長者。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6359998/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    另一方面，年齡較大的患者所要治療的組織（如軟骨、肌腱），本身的細胞數量也在減少、對生長因子的反應能力也在衰退。2023年發表於《美國物理醫學與復健雜誌》的研究更進一步指出，年輕人的PRP注射到老年關節細胞中，依然能誘發軟骨再生反應；但老年人的PRP注射到老年關節細胞中，幾乎無法觀察到軟骨健康的改善。
+    <sup><a href="https://journals.lww.com/ajpmr/fulltext/2023/07000/aging_affects_the_efficacy_of_platelet_rich_plasma.5.aspx" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>
+    這是「原料端」與「目標端」同時老化的雙重打擊。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">性別因素：常被忽略的變數</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    性別對PRP成分的影響，是近年才開始受到重視的研究方向。2022年發表於《臨床醫學雜誌》的研究指出，停經後女性（即50歲以上）的PRP白血球成分，與同齡男性以及年輕女性相比，有顯著的差異——年齡在PRP品質的影響上，比性別本身更為決定性，而停經後的荷爾蒙變化更會進一步強化這種差距。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8953315/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    此外，男性與女性的PRP在生化組成上本就存在差異。美國一項研究顯示，男性與女性PRP中的生長因子濃度有統計學上的顯著差別，這意味著對男性有效的PRP劑量，對女性可能需要調整。
+    <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8953315/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a></sup>
+    然而目前大多數診所仍採用「一種標準流程做遍所有人」的方式，這本身就是部分患者效果不理想的系統性原因。
+  </p>
+ 
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 1.25rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 臨床意涵：</strong>年齡與性別並不代表「不能做PRP」，而是代表需要更精準的製備策略與劑量調整。採用能夠製備更高濃度、更高品質PRP的技術，並在治療前充分評估患者的代謝狀態，是彌補這一先天差距的關鍵。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、關鍵三：你沒停藥，是最常見的「醫源性失敗」
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    走進診間前，很多人手裡還拿著一包消炎止痛藥。這不奇怪——大多數接受PRP的患者本來就是因為疼痛才來求診，消炎藥（NSAIDs）是他們的日常必需品。然而，就是這包藥，可能正在從根本上破壞PRP的治療效果。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    PRP的作用原理，是讓血小板在受傷部位「爆破」，釋放出裡面的生長因子。這個過程需要一個叫做「血栓素」的物質作為信號，而血栓素的製造，依賴一種叫做COX-1的酵素。NSAIDs最主要的藥理機制，就是阻斷COX酵素——這直接切斷了血小板的「引爆機制」。
+    <sup><a href="https://doi.org/10.1177/2325967120912841" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這裡最關鍵的是<strong style="color: #ffffff;">阿斯匹靈</strong>。阿斯匹靈對COX-1的抑制是「不可逆的」——它永久性地破壞這個酵素。由於血小板沒有細胞核，無法自己重新製造酵素，所以一旦被阿斯匹靈影響，這顆血小板就在功能上廢掉了，必須等到整批舊血小板自然代謝掉（約7至10天），長出一批新血小板，功能才會恢復。
+    <sup><a href="https://doi.org/10.1177/2325967120912841" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+  </p>
+ 
+  <style>
+    .drug-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    .drug-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 600px;
+    }
+    .drug-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .drug-table th {
+      padding: 14px 12px;
+      border-bottom: 2px solid #111827;
+    }
+    .drug-table td {
+      padding: 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .drug-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+    }
+    .drug-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .drug-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+  </style>
+ 
+  <div class="drug-table-container">
+    <table class="drug-table">
+      <thead>
+        <tr>
+          <th>藥物類型</th>
+          <th>常見藥名</th>
+          <th>對血小板的影響</th>
+          <th>建議停藥時間</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>阿斯匹靈</td>
+          <td>Aspirin、Bokey、伯基</td>
+          <td>不可逆抑制COX-1，整批血小板功能廢除</td>
+          <td><strong>7–10天</strong></td>
+        </tr>
+        <tr>
+          <td>一般NSAIDs</td>
+          <td>布洛芬、EVE止痛藥</td>
+          <td>可逆抑制COX，停藥後24–48小時恢復</td>
+          <td><strong>3–5天</strong></td>
+        </tr>
+        <tr>
+          <td>選擇性COX-2抑制劑</td>
+          <td>Celebrex（希樂葆）</td>
+          <td>對血小板影響較小，但仍建議停用</td>
+          <td><strong>2–3天（需醫師評估）</strong></td>
+        </tr>
+        <tr>
+          <td>SSRIs（抗憂鬱劑）</td>
+          <td>Prozac、Sertraline</td>
+          <td>影響血小板血清素，可能降低聚集功能</td>
+          <td><strong>治療前與醫師討論</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-top: 1rem;">
+    一項納入15個研究的系統性回顧指出，其中8個研究確認抗血小板藥物或NSAIDs會顯著減少PRP中生長因子的釋放量，或降低其促進細胞分裂的能力。
+    <sup><a href="https://doi.org/10.1177/2325967120912841" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>
+    換句話說，很多患者在不知情的情況下，在注射前後繼續服藥，等同於主動中和了PRP的效果。這是完全可以避免、卻極度常見的失敗原因。
+  </p>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-top: 1rem;">
+    ⚠️ 重要提醒：停藥必須在醫師指導下進行，尤其是因為心血管疾病服用阿斯匹靈的患者，切勿自行停藥。這需要與您的主治醫師和注射醫師共同討論，找到安全的停藥窗口。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、關鍵四：治療的「濃度窗口」——太少無效，太多也會有反效果
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    「打PRP，血小板濃度越高越好嗎？」這個問題的答案，出乎很多人意料——<strong style="color: #ffffff;">不是的。</strong>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    PRP有一個「治療濃度窗口」的概念。打個比方：施肥能讓農作物長得更好，但施肥過量反而會燒根、破壞土壤。血小板也是一樣。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    濃度不足（低於全血的2倍濃度以下）：生長因子總量不夠，無法達到「啟動修復」所需的最低刺激閾值，治療形同沒有打。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    濃度過高（超過8至10倍全血濃度以上）：過量的生長因子與細胞因子可能造成細胞表面的受體「飽和」或「下調」，導致細胞停止反應；過高的血小板密度還可能因為競爭效應導致細胞凋亡率上升。目前部分體外研究支持這種「過猶不及」的生物學現象。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12842059/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    更重要的是，不同組織有不同的最適濃度需求。肌腱和韌帶的纖維母細胞，對高濃度生長因子的耐受性，與關節軟骨細胞不同。在治療肌腱病變（如網球肘、阿基里斯腱炎）時，「富含白血球的PRP（LR-PRP）」可能效果更好——因為白血球能提供額外的免疫調節信號；但在關節腔內治療時，白血球引起的短暫發炎有時反而對軟骨不友善。
+    <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12842059/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床觀點</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      「一種PRP打遍所有部位」是目前許多診所的實際操作，但這本身就是療效不穩定的系統性原因之一。理想的再生醫學應根據治療部位（肌腱 vs. 關節）、疾病嚴重程度，以及患者個人血液特性，動態調整PRP的濃度、白血球含量，甚至是注射後的活化方式（如是否加鈣離子）。這種「客製化」的概念，是區分醫療品質層次的真正關鍵。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、關鍵五：打進對的地方了嗎？注射技術決定成敗
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    「PRP有沒有打到正確的位置？」這個問題，比大多數患者意識到的還要重要。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    骨科疼痛的解剖結構往往比表面看起來複雜許多。以膝蓋痛為例，疼痛可能來自：關節腔內的滑膜發炎、軟骨下骨的骨髓水腫、內側副韌帶的慢性損傷、鵝掌肌腱炎，或是髕骨肌腱病變——這些結構彼此相鄰，但需要精準到達才能有效治療。如果PRP只是「大概打進關節附近」，很可能整管珍貴的生長因子打進了脂肪層或完全正常的組織，根本沒碰到真正的病灶。
+    <sup><a href="https://doi.org/10.1016/j.jcot.2018.09.017" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    現代再生醫學的標準已確立：<strong style="color: #ffffff;">超音波即時影像導引注射</strong>是提升精準度的核心工具。透過超音波，醫師可以即時觀察針尖的位置，確認注射物流向，也能在施打前更精確地辨識病灶的實際位置和範圍。相較之下，「盲打」（不用影像導引的徒手注射）在解剖位置精準度上的失誤率，遠高於超音波導引。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    此外，近年的研究也開始強調「注射範圍」的重要性。對於退化性關節炎，單純的關節腔注射只觸及了冰山一角；結合軟骨下骨內注射，能直接作用於最容易引發疼痛與退化的骨髓水腫區域，提供更全面的治療效果。
+    <sup><a href="https://doi.org/10.1016/j.jcot.2018.09.017" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a></sup>
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    七、關鍵六：注射完就回家躺著？復健的角色比你想的更關鍵
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    PRP注射是啟動修復的扳機，但修復本身是一個持續數週到數月的生物過程。很多患者以為「打完就好了」，回家後要麼完全不動（怕影響療效），要麼馬上繼續劇烈運動（以為效果已經發揮），這兩種極端都是打PRP失敗的常見原因。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">注射後的三個修復階段</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    組織修復有三個連續的生物階段，正確的活動策略在每個階段都不同：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">發炎期（注射後1–5天）：</strong>PRP注射本身會誘發一個「修復性發炎」反應，這是正常的生物程序，不是治療失敗的跡象。這段時間，過度活動可能讓注射物過快擴散或流失，建議相對休息，避免高強度衝擊性負荷。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">增殖期（注射後1–4週）：</strong>纖維母細胞開始增生、新的膠原蛋白開始沉積。此時需要「適度的低強度活動」——完全不動反而會讓新生組織沉積方向混亂（就像沒有整齊鋪設的地磚），反而影響組織品質。
+    </li>
+    <li style="margin-bottom: 1rem;">
+      <strong style="color: #ffffff;">重塑期（注射後4週–數個月）：</strong>這是決定最終功能成果的關鍵階段。肌腱和韌帶的膠原纖維需要適當的機械性張力來引導整齊排列。沒有進行結構化復健的患者，組織癒合後往往強度不足，更容易再次受傷，PRP的修復成果也事倍功半。
+      <sup><a href="https://onlinelibrary.wiley.com/doi/10.1002/pmrj.70087" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+    </li>
+  </ul>
+ 
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    一篇2026年針對慢性肌腱病變PRP注射後復健建議的國際共識聲明指出，注射後的復健方案應是「漸進式離心負荷訓練」，時機的掌握與強度的控制，與PRP本身的品質一樣重要，是決定最終療效的共同因子。
+    <sup><a href="https://onlinelibrary.wiley.com/doi/10.1002/pmrj.70087" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+  </p>
+ 
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 1.25rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 真實臨床情境：</strong>我們在臨床上遇過不少患者，注射PRP後因疼痛稍微緩解就立刻恢復跑步、球類運動，甚至繼續從事重勞力工作——結果兩週後疼痛完全反彈，認為PRP「完全沒效」。事實上，這不是PRP沒效，而是在修復最脆弱的增殖期給了組織過大的機械應力，把剛開始形成的新生組織再次破壞。
+    </p>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    八、還有哪些因素會影響PRP療效？
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">疾病本身的嚴重程度</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    PRP的作用機制，是「刺激尚存的細胞進行修復」。這代表，當病灶的結構破壞已達到相當嚴重的程度——比如退化性關節炎的X光分級已達KL-4（關節間隙完全消失、骨頭直接磨骨頭）、或肌腱已發生全層斷裂且斷端回縮——PRP就沒有足夠的「工人」和「施工空間」可以工作，注射再多次效果都相當有限。
+    <sup><a href="https://doi.org/10.1177/23094990211021922" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這也是為什麼「及早介入」在再生醫學中如此重要——在組織還有足夠修復能力的時候進行PRP，成功率遠高於等到末期才求診。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">慢性發炎環境的干擾</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    肥胖（BMI大於30）患者的體內，脂肪組織持續分泌大量促發炎物質，讓整個體內的代謝環境長期處於「低度慢性發炎」狀態。這種全身性的發炎背景，就像在起風的狀況下點燃一根火柴——PRP帶來的修復信號，很容易被體內的發炎噪音淹沒，難以發揮應有的效果。研究指出，BMI是預測PRP治療膝關節炎失敗的獨立風險因子。
+    <sup><a href="https://doi.org/10.3390/jcm13092590" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">誤診：治療了錯誤的病灶</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    有時PRP「無效」，原因根本不是PRP本身的問題，而是整個診斷方向就錯了。例如主訴膝蓋痛，但根源其實是腰椎神經根壓迫的「轉移痛」；或者髖部疼痛，其實是薦髂關節的問題。這種情況下，在膝蓋打再多次PRP都是徒勞。詳細的病史詢問、完整的理學檢查，加上必要時的MRI或神經傳導檢查，是確保「治對病、打對位置」的前提。
+  </p>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem;">
+      📢 九、四大常見迷思破解
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+      
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-weight: bold;">1</span>
+        <div>
+          <strong>「PRP都是自己的血，一定安全又有效」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>部分正確。</strong> 使用自體血液確實讓感染與排斥風險極低，「安全性」確實很高。但「安全」不等於「有效」——血小板品質差、濃度不足、注射位置錯誤，都讓你打進去的是一管低效液體。安全與療效是兩個不同的評估維度。</span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-weight: bold;">2</span>
+        <div>
+          <strong>「只打一次不夠，多打幾次一定會有效」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不完全正確。</strong> 系列注射（通常3至4次）確實是標準療程，能累積更強的修復信號。但如果前兩次已無任何反應，盲目繼續追加，反而是在浪費時間與金錢。無反應時，應先排查是否有前述的干擾因素，或考慮升級為含間質幹細胞的治療（如BMAC骨髓濃縮液）。
+          <sup><a href="https://academic.oup.com/painmedicine/article/26/7/407/8071874" target="_blank" rel="noopener noreferrer" style="color: #b45309; text-decoration: underline;">[12]</a></sup>
+          </span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-weight: bold;">3</span>
+        <div>
+          <strong>「注射後痛得更厲害，代表PRP沒效」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>這是正常現象，不代表無效。</strong> PRP注射後的短暫疼痛加劇（通常持續數天至一週），被稱為「修復性發炎反應」，是生長因子啟動組織修復、招募修復細胞的正常過程，不應使用消炎藥壓制它。過早給予NSAIDs來止痛，反而會中斷這個修復程序，真正導致治療失敗。</span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-weight: bold;">4</span>
+        <div>
+          <strong>「我試過PRP無效，所以再生醫學對我沒用」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>這個結論下得太快。</strong> 如果PRP無效，在得出「再生醫學無效」的結論之前，應先系統性地回顧失敗原因：是否在服用NSAIDs？是否使用超音波導引？是否有充分復健配合？是否血小板品質不佳？很多時候，找到問題根源並調整策略後，患者在後續治療中仍能獲得良好效果。
+          <sup><a href="https://doi.org/10.1177/03635465211014500" target="_blank" rel="noopener noreferrer" style="color: #b45309; text-decoration: underline;">[13]</a></sup>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    十、如何最大化PRP治療的成功率？
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">治療前你可以做的事</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">詳細告知所有用藥：</strong>包括每天在吃的保養品、健康食品、中藥，讓醫師評估是否有干擾血小板功能的成分，並規劃停藥時間</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">盡可能戒菸：</strong>至少在注射前後各停菸一至兩週；吸菸對血小板的傷害在這段時間的影響最為關鍵</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">優化血糖控制：</strong>糖尿病患者請確保HbA1c在接受治療前盡量控制在合理範圍，與您的新陳代謝科醫師討論</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">詢問超音波導引：</strong>確認注射醫師會使用即時超音波影像導引，而非「靠感覺」的徒手注射</li>
+  </ul>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">治療後你需要配合的事</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">前三至七天相對休息：</strong>避免高衝擊性活動，但不要完全臥床不動——輕度步行是允許的</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">不要為了止痛吃NSAIDs：</strong>如果真的需要止痛，先和注射醫師討論替代方案（如乙醯氨酚/普拿疼對血小板影響較小）</li>
+    <li style="margin-bottom: 1rem;"><strong style="color: #ffffff;">按照指示進行結構化復健：</strong>治療完整流程包括注射與復健兩個部分，缺一不可
+    <sup><a href="https://onlinelibrary.wiley.com/doi/10.1002/pmrj.70087" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>
+    </li>
+  </ul>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; display: flex; align-items: center; font-weight: bold;">
+      <span style="margin-right: 8px;">🏆</span> FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+    
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q1：PRP的整體成功率大概有多少？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      根據大型統合分析，對於輕中度退化性膝關節炎（KL Grade 1–3），PRP相較於玻尿酸注射在疼痛與功能改善上有顯著優勢，整體有效率約70–80%。
+      <sup><a href="https://doi.org/10.1177/0363546520909397" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+      但這個數字受前述諸多因素影響，事先妥善排除干擾因素的患者，成功率可以更高；存在多重高風險因素的患者則可能更低。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q2：打PRP前要驗血嗎？驗哪些項目？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      理想上，治療前的基本血液檢查應包含：全血球計數（確認血小板數量正常）、血糖與HbA1c（評估糖尿病控制狀況）、肝腎功能（確保製備安全性）。部分先進的醫療機構也開始導入「血小板功能分析」，以評估血小板的活化能力，而不只是看數量。目前雖尚未成為標準流程，但這代表再生醫學朝向「精準化」的方向發展。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q3：PRP打完幾天才能看到效果？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      組織修復是生物過程，不是即時的。多數患者在第二或第三次注射後（即4至8週後）開始感受到明顯改善；少數患者可能需要完成全療程（3次、間隔4至6週）後才有感。注射後一至兩週內感覺疼痛略有加劇是正常現象，不代表失敗，通常會自行緩解。若在完成標準療程後6個月內仍毫無改善，才需要認真回顧上述各項失敗因素。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q4：有沒有哪些人完全不適合打PRP？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      確實有幾種情況屬於PRP的相對或絕對禁忌：血小板數量嚴重低下（低於10萬/μL）或血小板無力症（功能性異常）、注射部位有活動性感染、正在接受化學治療或免疫抑制治療、有嚴重的凝血功能障礙。對於這些患者，PRP不只是效果不佳，更存在安全疑慮，必須在治療前充分評估。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q5：PRP和玻尿酸注射有什麼不同？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem; text-align: justify;">
+      玻尿酸是一種外部補充的關節潤滑劑，作用機制是物理性的「補充滑液、減少摩擦」，效果較快出現但相對短暫（數月）。PRP則是試圖從根本上調節發炎、刺激組織修復，屬於主動性的「生物治療」，效果出現較慢但持續時間較長。大型比較研究顯示，PRP在中長期（6–12個月以上）的疼痛改善上顯著優於玻尿酸。
+      <sup><a href="https://doi.org/10.1177/0363546520909397" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>
+    </p>
+ 
+  </div>
+</section>
+ 
+<hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+ 
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語：PRP不是賭注，它是可以被優化的醫療決策</h2>
+  
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    讀完這篇文章，你或許已經發現：PRP的成敗，從來不是單純的「打了就等結果」。從你的血小板品質、年齡、用藥史、代謝狀態，到注射技術的精準度、PRP濃度的客製化，再到注射後的復健配合——每一個環節都在影響最終的療效。
+  </p><br>
+  
+  <p style="color: #475569; font-size: 1.05rem;">
+    這也意味著，PRP是一種需要<strong style="color: #1e293b;">醫病共同準備</strong>的治療。醫師的責任是提供精確的診斷、精準的製備與注射技術、以及合理的期望值設定；而患者的責任是如實告知所有用藥、配合停藥指示、並認真執行注射後的復健計畫。
+  </p><br>
+ 
+  <p style="color: #475569; font-size: 1.05rem;">
+    如果你過去曾打過PRP效果不理想，不要放棄——但也不要在找出原因之前盲目重複相同的錯誤。<strong style="color: #1e293b;">找一位能夠在注射前系統性評估你的失敗風險因子、並提供個人化策略的醫師</strong>，才是讓這次治療真正值回票價的關鍵。
+  </p>
+ 
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：在預約PRP治療前，先對照本文的六大關鍵因素，評估自己有哪些可以改善的地方，並在就診時主動詢問醫師關於注射技術與後續復健的具體規劃。
+    </p>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約完整PRP治療評估
+    </a>
+  </div>
+</div>
+`,
+ 
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Brugna, M., et al. (2025). Not All Platelets Are Created Equal: A Review on Platelet Aging and Functional Quality in Regenerative Medicine. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12346282/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12346282</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Alessio-Mazzola, M., et al. (2021). Clinical outcome and risk factor predictive for failure of autologous PRP injections for low-to-moderate knee osteoarthritis. Journal of Orthopaedic Surgery, 29(2), 23094990211021922. <a href="https://doi.org/10.1177/23094990211021922" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1177/23094990211021922</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Belk, J.W., et al. (2021). Platelet-Rich Plasma Versus Hyaluronic Acid for Knee Osteoarthritis: A Systematic Review and Meta-analysis of Randomized Controlled Trials. The American Journal of Sports Medicine, 49(1), 249–260. <a href="https://doi.org/10.1177/0363546520909397" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1177/0363546520909397</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Kushida, S., et al. (2019). Growth factor levels in leukocyte-poor platelet-rich plasma and correlations with donor age, gender, and platelets in the Japanese population. Sports Medicine—Open. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6359998/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 6359998</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Chowdhary, K., et al. (2023). Aging Affects the Efficacy of Platelet-Rich Plasma Treatment for Osteoarthritis. American Journal of Physical Medicine & Rehabilitation, 102(7), 597–604. <a href="https://journals.lww.com/ajpmr/fulltext/2023/07000/aging_affects_the_efficacy_of_platelet_rich_plasma.5.aspx" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1097/PHM.0000000000002161</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Trevissón, B., et al. (2022). Influence of Sexual Dimorphism, Aging, and Differential Cell Capture Efficiency of Blood Separation Systems on the Quality of Platelet-Rich Plasma. Journal of Clinical Medicine, 11(6), 1683. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8953315/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3390/jcm11061683</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Frey, C., et al. (2020). Effects of Antiplatelet and Nonsteroidal Anti-inflammatory Medications on Platelet-Rich Plasma: A Systematic Review. Orthopaedic Journal of Sports Medicine, 8(4), 2325967120912841. <a href="https://doi.org/10.1177/2325967120912841" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1177/2325967120912841</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Zhu, Y., et al. (2024). Platelet-Rich Plasma: From the Research to the Clinical Arena—A Journey Toward Precision Regenerative Medicine. PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12842059/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMC: 12842059</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Delgado, D., et al. (2019). Current concepts in intraosseous Platelet-Rich Plasma injections for knee osteoarthritis. Journal of Clinical Orthopaedics and Trauma, 10(1), 36–41. <a href="https://doi.org/10.1016/j.jcot.2018.09.017" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.jcot.2018.09.017</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Gremeaux, V., et al. (2026). Rehabilitation and return to activity after platelet-rich plasma injections in chronic tendinopathies: Consensus from international experts. PM&R. <a href="https://onlinelibrary.wiley.com/doi/10.1002/pmrj.70087" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1002/pmrj.70087</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Annaniemi, J.A., et al. (2024). The Efficacy of Platelet-Rich Plasma Injection Therapy in Obese Versus Non-Obese Patients with Knee Osteoarthritis: A Comparative Study. Journal of Clinical Medicine, 13(9), 2590. <a href="https://doi.org/10.3390/jcm13092590" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3390/jcm13092590</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Nadeau-Vallée, M., et al. (2025). Platelet-rich plasma injections as a second-line treatment in patients with tendinopathy-related chronic pain and failure of conservative treatment: a systematic review and meta-analysis. Pain Medicine, 26(7), 407–419. <a href="https://academic.oup.com/painmedicine/article/26/7/407/8071874" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1093/pm/pnaf022</a>
+      </span>
+    </li>
+ 
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Bolia, I.K., et al. (2022). Clinical Efficacy of Bone Marrow Aspirate Concentrate Versus Stromal Vascular Fraction Injection in Patients With Knee Osteoarthritis: A Systematic Review and Meta-analysis. The American Journal of Sports Medicine, 50(5), 1451–1461. <a href="https://doi.org/10.1177/03635465211014500" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1177/03635465211014500</a>
+      </span>
+    </li>
+ 
+  </ol>
+</div>
+`,
+},
+
+{
 id: 'bone-age-height-evaluation',
   title: '孩子發育黃金期：幾歲該照骨齡？附台灣各年級身高警戒值對照表',
   lastModified: '2026-06-10',
