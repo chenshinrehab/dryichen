@@ -59,7 +59,8 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <div className="pt-4">
-              <Link href={backLink.href} prefetch={false} className="inline-flex items-center text-cyan-400 mb-4 hover:text-cyan-300 transition-colors group text-sm">
+              {/* ✨ 修改處：移除 prefetch={false} 啟動高速背景快取 */}
+              <Link href={backLink.href} className="inline-flex items-center text-cyan-400 mb-4 hover:text-cyan-300 transition-colors group text-sm">
                 <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 
                 {backLink.label}
               </Link>
@@ -98,9 +99,9 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                         <div className="text-slate-400 text-xs md:text-sm font-normal flex flex-wrap items-center gap-x-3 gap-y-1">
                           <span className="flex items-center">
                             撰文者：
+                            {/* ✨ 修改處：移除 prefetch={false} 啟動高速背景快取 */}
                             <Link 
                               href="/about/doctors" 
-                              prefetch={false}
                               className="text-slate-300 hover:text-cyan-400 underline underline-offset-4 decoration-slate-600 transition-colors cursor-pointer"
                             >
                               林羿辰醫師
@@ -213,9 +214,9 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                           <div className="mb-2">
                           <h3 className="text-xl font-bold text-white flex flex-col md:flex-row items-center gap-2">
                             本文由 
+                            {/* ✨ 修改處：移除 prefetch={false} 啟動高速背景快取 */}
                             <Link 
                               href="/about/doctors"
-                              prefetch={false}
                               className="text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer underline underline-offset-4 decoration-cyan-900/50 hover:decoration-cyan-400"
                             >
                               林羿辰醫師
@@ -229,13 +230,13 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                           </div>
                           
                           <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-6">
-                            現任宸新復健科診所院長。畢業於國立台灣大學醫學系，擁有復健科、骨質疏鬆雙專科醫師資歷，專精於精準超音波導引注射治療、增生療法與各類運動傷害。林醫師具備豐富臨床經驗，致力於將醫學實證應用於病患康復。
+                            現任宸新復健科診所院長。畢業於國立台灣大學醫學系，擁有復健科、骨質疏鬆雙專科醫師資歷，專精於精準超音波導引注射治療、增生療法與各類運動傷害。林醫師具備豐富臨床經驗，致力於將醫學實證应用於病患康復。
                           </p>
 
                           <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-5 border-t border-slate-700/50">
+                            {/* ✨ 修改處：移除 prefetch={false} 啟動高速背景快取 */}
                             <Link 
                               href="/about/doctors" 
-                              prefetch={false}
                               className="text-cyan-400 hover:text-cyan-300 text-sm font-bold flex items-center group transition-colors cursor-pointer"
                             >
                               <i className="fa-solid fa-id-card-clip mr-2 text-lg"></i>
@@ -273,19 +274,20 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                   <ShareButtons url={currentUrl} title={data.title} />
                 </div>
                 <div className="pt-8 border-t border-slate-700/50 w-full flex justify-center">
-                  <Link href={backLink.href} prefetch={false} className="inline-flex items-center justify-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 group">
+                  {/* ✨ 修改處：移除 prefetch={false} 啟動高速背景快取 */}
+                  <Link href={backLink.href} className="inline-flex items-center justify-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 group">
                     查看更多項目
                     <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
                   </Link>
                 </div>
               </div>
 
-                {/* 參考文獻 (渲染傳入的 HTML) */}
-                {data.referencesHtml && (
-                  <div className="mt-8 mb-10">
-                    <div dangerouslySetInnerHTML={{ __html: data.referencesHtml }} />
-                  </div>
-                )}
+              {/* 參考文獻 (渲染傳入的 HTML) */}
+              {data.referencesHtml && (
+                <div className="mt-8 mb-10">
+                  <div dangerouslySetInnerHTML={{ __html: data.referencesHtml }} />
+                </div>
+              )}
 
             </div>
           </div>

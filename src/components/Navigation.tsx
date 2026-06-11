@@ -1,5 +1,6 @@
-'use client'
+'use client';
 
+import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image' 
 import { usePathname } from 'next/navigation'
@@ -71,9 +72,9 @@ export default function Navigation() {
         subItems: [
             { name: '猛健樂 (Mounjaro)', path: '/weight-bone/mounjaro' },
             { name: '兒童骨齡評估', path: '/weight-bone/bone-age' },
-              { name: '診間病患常見疑問', path: '/weight-bone/sports-injuries/problem' },
-                { name: '最新醫療資訊', path: '/weight-bone/sports-injuries/medical-updates' },
-              { name: '日常生活醫學知識', path: '/weight-bone/sports-injuries/daycare' },
+            { name: '診間病患常見疑問', path: '/weight-bone/sports-injuries/problem' },
+            { name: '最新醫療資訊', path: '/weight-bone/sports-injuries/medical-updates' },
+            { name: '日常生活醫學知識', path: '/weight-bone/sports-injuries/daycare' },
             { name: '營養補充知識', path: '/weight-bone/sports-injuries/nutrition' },
             { name: '網球運動傷害', path: '/weight-bone/sports-injuries/tennis' },
             { name: '籃球運動傷害', path: '/weight-bone/sports-injuries/basketball' },
@@ -104,7 +105,8 @@ export default function Navigation() {
         
         {/* Logo 區塊 */}
         <div className="relative flex items-center justify-between py-2 md:py-3 border-b border-slate-800/50 min-h-[52px] md:min-h-[60px]">
-          <Link href="/" prefetch={false} className="flex items-center gap-2.5 group cursor-pointer md:absolute md:left-1/2 md:-translate-x-1/2 z-10" aria-label="宸新復健科首頁">
+          {/* ✨ 修改處：移除 prefetch={false} 釋放首頁高速預載快取 */}
+          <Link href="/" className="flex items-center gap-2.5 group cursor-pointer md:absolute md:left-1/2 md:-translate-x-1/2 z-10" aria-label="宸新復健科首頁">
               <div className="relative w-10 h-10 md:w-14 md:h-14">
                   <Image 
                     src="/images/main/logo.webp" 
@@ -124,16 +126,17 @@ export default function Navigation() {
 
           {/* 右側區塊 - 圖示已改為 React Icons */}
           <div className="flex items-center gap-2 ml-auto z-20">
+              {/* ✨ 修改處：移除 prefetch={false} 釋放行動版預約頁面背景快取 */}
               <Link 
                 href="/booking"
-                prefetch={false}
                 className="sm:hidden flex items-center gap-1 px-3 py-1.5 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full font-bold shadow-md text-sm active:scale-95 transition-transform"
               >
                  <FaCalendarCheck size={14} /> 預約
               </Link>
 
               <div className="hidden sm:flex items-center gap-3">
-                <Link href="/" prefetch={false} title="回到首頁" 
+                {/* ✨ 修改處：移除 prefetch={false} */}
+                <Link href="/" title="回到首頁" 
                   className="w-10 h-10 rounded-full bg-slate-800 text-cyan-400 border border-cyan-400 flex items-center justify-center text-lg hover:bg-slate-700 transition-colors shadow-md">
                   <FaHome size={18} />
                 </Link>
@@ -161,9 +164,9 @@ export default function Navigation() {
                 <li key={item.path} className="relative group shrink-0 flex-1 sm:flex-none">
                    
                    <div className="relative">
+                       {/* ✨ 修改處：移除四大主選單的 prefetch={false} 屬性 */}
                        <Link 
                          href={item.path} 
-                         prefetch={false}
                          className={`
                            px-1.5 py-1.5 text-sm 
                            md:px-4 md:py-2 md:text-base 
@@ -178,7 +181,7 @@ export default function Navigation() {
                          {item.subItems && (
                             <span className="hidden md:block ml-1.5">
                                 <FaChevronDown size={10} className="transition-transform duration-300 group-hover:rotate-180" />
-                            </span>
+                      </span>
                          )}
                        </Link>
                    </div>
@@ -192,10 +195,10 @@ export default function Navigation() {
                      ">
                         <div className="py-1">
                             {item.subItems.map((sub) => (
+                                /* ✨ 修改處：移除下拉選單所有疾病、療程子項目的 prefetch={false} 屬性，全面回復秒開體感 */
                                 <Link 
                                     key={sub.path} 
                                     href={sub.path}
-                                    prefetch={false}
                                     className="block px-4 py-3 text-sm text-slate-300 hover:bg-slate-800 hover:text-cyan-400 text-left border-b border-slate-800 last:border-0"
                                 >
                                     <FaCaretRight size={10} className="inline-block mr-2 text-slate-600" />
@@ -210,9 +213,9 @@ export default function Navigation() {
               
               {/* 電腦版預約按鈕 */}
               <li className="hidden sm:block shrink-0">
+                  {/* ✨ 修改處：移除電腦版預約連結的 prefetch={false} */}
                   <Link 
                     href="/booking" 
-                    prefetch={false}
                     className={`
                       px-3.5 py-1.5 md:px-4 md:py-2 rounded-full text-base font-medium transition-all ml-1 block flex items-center gap-1.5
                       ${isActive('/booking') 

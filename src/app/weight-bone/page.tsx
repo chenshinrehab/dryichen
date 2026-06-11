@@ -1,5 +1,3 @@
-
-
 // src/app/weight-bone/page.tsx
 import React from 'react'
 import Link from 'next/link'
@@ -189,7 +187,7 @@ export default function WeightLossPage() {
                 <Link
                   key={program.slug}
                   href={`/weight-bone/${program.slug}`}
-                  prefetch={false}
+                  // ✨ 修改處：移除 prefetch={false} 屬性，回復背景快取高速秒開
                   className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] hover:-translate-y-1 transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
                 >
                   {/* 圖片區塊 */}
@@ -249,7 +247,7 @@ export default function WeightLossPage() {
                   <Link
                     key={categoryItem.category}
                     href={`/weight-bone/sports-injuries/${categoryItem.category}`}
-                    prefetch={false} // ✨ 精準補齊：阻斷運動傷害分類卡片的背景預載
+                    // ✨ 修改處：移除 prefetch={false} 屬性，回復背景快取高速秒開
                     className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 transition-all duration-300 flex flex-col cursor-pointer"
                   >
                     <div className="h-40 w-full relative overflow-hidden bg-slate-700">
@@ -280,7 +278,7 @@ export default function WeightLossPage() {
                 <Link
                   key={program.slug}
                   href={`/weight-bone/${program.slug}`}
-                  prefetch={false} // ✨ 精準補齊：阻斷剩餘兒童發育/骨齡卡片的背景預載
+                  // ✨ 修改處：移除 prefetch={false} 屬性，回復背景快取高速秒開
                   className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] hover:-translate-y-1 transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
                 >
                   {/* 圖片區塊 */}
@@ -390,4 +388,3 @@ export default function WeightLossPage() {
     </>
   )
 }
-

@@ -1,3 +1,4 @@
+// src/app/about/news/page.tsx
 import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
@@ -128,7 +129,8 @@ export default function NewsListPage({ searchParams }: Props) {
             {/* Header 區塊 */}
             <div className="mb-10 animate-on-scroll">
                 <div className="text-left mb-4">
-                    <Link href="/about" prefetch={false} className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors group text-sm font-medium">
+                    {/* ✨ 修改處：移除 prefetch={false}，釋放對返回 /about 純靜態網頁的高速預載快取 */}
+                    <Link href="/about" className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors group text-sm font-medium">
                         <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 
                         返回關於我們
                     </Link>
@@ -144,6 +146,7 @@ export default function NewsListPage({ searchParams }: Props) {
                         </p>
                     </div>
 
+                    {/* 🛡️ 流量防禦點：公告為動態專區，此按鈕精準維持 prefetch={false} 避免無效運算消耗額度 */}
                     <Link 
                         href="/about/news/notices" 
                         prefetch={false}
@@ -172,10 +175,11 @@ export default function NewsListPage({ searchParams }: Props) {
                 const moreBtnColorClass = isEssay ? 'text-amber-500' : 'text-cyan-500';
 
                 return (
+                  /* ✨ 修改處：移除 prefetch={false} 屬性！因文章詳細頁面（[slug]/page.tsx）為純靜態 SSG 網頁，*/
+                  /* 解凍預載只會消耗極為寬裕的硬碟 Data Transfer 流量，動態 ISR Reads 會安全待在 0，同時喚回秒開體驗 */
                   <Link 
                     key={item.id} 
                     href={`/about/news/${item.id}`} 
-                    prefetch={false}
                     className={`block group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden transition-all duration-300 ${hoverStyle} animate-on-scroll ${index === 0 ? '' : 'delay-100'}`}
                   >
                     <div className="flex flex-col md:flex-row h-full">
@@ -191,7 +195,7 @@ export default function NewsListPage({ searchParams }: Props) {
                           <span className={`px-2 py-1 rounded border font-medium ${catStyle}`}>
                             {item.category}
                           </span>
-                          <span className="text-slate-500 flex items-center">
+                          <span className="text-slate-400 flex items-center">
                             <i className="fa-regular fa-calendar mr-2"></i>{item.date}
                           </span>
                         </div>
@@ -220,6 +224,7 @@ export default function NewsListPage({ searchParams }: Props) {
                 <div className="hidden md:flex justify-center items-center space-x-2">
                   {/* 上一頁按鈕 */}
                   {currentPage > 1 ? (
+                    /* 🛡️ 流量防禦點：分頁按鈕連動 dynamic='force-dynamic'，在此處維持 prefetch={false} 守護動態額度 */
                     <Link 
                       href={`${PAGE_PATH}?page=${currentPage - 1}`} 
                       prefetch={false}
@@ -242,6 +247,7 @@ export default function NewsListPage({ searchParams }: Props) {
                       const pageNum = idx + 1;
                       const isActive = currentPage === pageNum;
                       return (
+                        /* 🛡️ 流量防禦點：維持 prefetch={false} 避免滑鼠晃過觸發無效動態運算 */
                         <Link
                           key={pageNum}
                           href={`${PAGE_PATH}?page=${pageNum}`}
@@ -260,6 +266,7 @@ export default function NewsListPage({ searchParams }: Props) {
 
                   {/* 下一頁按鈕 */}
                   {currentPage < totalPages ? (
+                    /* 🛡️ 流量防禦點：維持 prefetch={false} */
                     <Link 
                       href={`${PAGE_PATH}?page=${currentPage + 1}`} 
                       prefetch={false}
@@ -279,9 +286,10 @@ export default function NewsListPage({ searchParams }: Props) {
 
                 {/* --- 手機版分頁 (小於 md 顯示) --- */}
                 <div className="flex md:hidden flex-col items-center space-y-4 w-full">
-                  {/* 第一行：上一頁 / 下一頁 (平均寬度) */}
+                  {/* 第一行：上一頁 / 下一頁 */}
                   <div className="flex justify-between w-full max-w-[320px] gap-4">
                     {currentPage > 1 ? (
+                      /* 🛡️ 流量防禦點：維持 prefetch={false} */
                       <Link 
                         href={`${PAGE_PATH}?page=${currentPage - 1}`} 
                         prefetch={false}
@@ -299,6 +307,7 @@ export default function NewsListPage({ searchParams }: Props) {
                     )}
 
                     {currentPage < totalPages ? (
+                      /* 🛡️ 流量防禦點：維持 prefetch={false} */
                       <Link 
                         href={`${PAGE_PATH}?page=${currentPage + 1}`} 
                         prefetch={false}
@@ -316,12 +325,13 @@ export default function NewsListPage({ searchParams }: Props) {
                     )}
                   </div>
 
-                  {/* 第二行：小頁碼按鈕 (自動換行不撐破版面) */}
+                  {/* 第二行：小頁碼按鈕 */}
                   <div className="flex flex-wrap justify-center gap-2 max-w-full px-2">
                     {Array.from({ length: totalPages }).map((_, idx) => {
                       const pageNum = idx + 1;
                       const isActive = currentPage === pageNum;
                       return (
+                        /* 🛡️ 流量防禦點：維持 prefetch={false} */
                         <Link
                           key={pageNum}
                           href={`${PAGE_PATH}?page=${pageNum}`}

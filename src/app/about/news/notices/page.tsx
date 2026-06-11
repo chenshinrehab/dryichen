@@ -1,3 +1,4 @@
+// src/app/about/news/notices/page.tsx
 import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
@@ -172,46 +173,47 @@ export default function NoticesPage() {
             
             <div className="mb-10 animate-on-scroll">
                 <div className="text-left mb-4">
-                    <Link href="/about/news" prefetch={false} className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors group text-sm font-medium">
+                    {/* ✨ 修改處：移除 prefetch={false}，解凍對純靜態 /about/news 網頁的背景智慧預載快取 */}
+                    <Link href="/about/news" className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors group text-sm font-medium">
                         <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 
                         返回衛教文章
                     </Link>
                 </div>
 
-<div className="pb-2 flex flex-row items-center justify-between gap-4 md:flex-row md:items-end">
-        <div>
-            <h1 className="text-2xl md:text-5xl font-bold font-sans text-white tracking-wide mb-0 md:mb-2">
-                門診異動公告
-            </h1>
-        <p className="hidden md:block text-pink-400">
-            新竹宸新復健科：休診、代診與重要行政通知
-        </p>
-    </div>
+                <div className="pb-2 flex flex-row items-center justify-between gap-4 md:flex-row md:items-end">
+                    <div>
+                        <h1 className="text-2xl md:text-5xl font-bold font-sans text-white tracking-wide mb-0 md:mb-2">
+                            門診異動公告
+                        </h1>
+                        <p className="hidden md:block text-pink-400">
+                            新竹宸新復健科：休診、代診與重要行政通知
+                        </p>
+                    </div>
 
-<Link 
-    href="/about/news" 
-    prefetch={false}
-    className="group relative inline-flex items-center justify-center px-5 py-2.5 md:px-6 md:py-3 overflow-hidden font-medium text-white transition-all duration-300 bg-cyan-600 rounded-xl hover:bg-cyan-500 hover:scale-105 shadow-[0_0_20px_rgba(8,145,178,0.4)] shrink-0"
->
-    <span className="mr-2 md:mr-3 text-lg">
-        <i className="fa-solid fa-book-medical"></i>
-    </span>
-    <div className="flex flex-col items-start leading-tight">
-        {/* 使用 tracking-wider 增加呼吸感 */}
-        <span className="text-base tracking-wider">衛教文章</span>
-    </div>
-    <i className="fa-solid fa-arrow-right ml-3 md:ml-4 group-hover:translate-x-1 transition-transform text-sm md:text-base"></i>
-    <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent z-10" />
-</Link>
-</div>
+                    {/* 🛡️ 流量防禦點：/about/news 為強制動態專區（force-dynamic），此處維持 prefetch={false} 進行精準防守 */}
+                    <Link 
+                        href="/about/news" 
+                        prefetch={false}
+                        className="group relative inline-flex items-center justify-center px-5 py-2.5 md:px-6 md:py-3 overflow-hidden font-medium text-white transition-all duration-300 bg-cyan-600 rounded-xl hover:bg-cyan-500 hover:scale-105 shadow-[0_0_20px_rgba(8,145,178,0.4)] shrink-0"
+                    >
+                        <span className="mr-2 md:mr-3 text-lg">
+                            <i className="fa-solid fa-book-medical"></i>
+                        </span>
+                        <div className="flex flex-col items-start leading-tight">
+                            <span className="text-base tracking-wider">衛教文章</span>
+                        </div>
+                        <i className="fa-solid fa-arrow-right ml-3 md:ml-4 group-hover:translate-x-1 transition-transform text-sm md:text-base"></i>
+                        <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent z-10" />
+                    </Link>
+                </div>
             </div>
 
             <div className="space-y-8 animate-on-scroll delay-100">
               {noticesList.map((item) => (
-                <Link key={item.id} href={`/about/news/${item.id}`} prefetch={false} className="block group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-pink-500 hover:shadow-[0_0_15px_rgba(236,72,153,0.2)] transition-all duration-300">
+                /* ✨ 修改處：移除 prefetch={false} 屬性！因公告詳細內頁為純靜態 SSG 檔案，重啟背景自動預載只消耗硬碟 Data Transfer */
+                <Link key={item.id} href={`/about/news/${item.id}`} className="block group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-pink-500 hover:shadow-[0_0_15px_rgba(236,72,153,0.2)] transition-all duration-300">
                   <div className="flex flex-col md:flex-row h-full">
                     <div className="md:w-1/3 h-56 md:h-auto relative overflow-hidden">
-                      {/* 優化 Alt：加入診所名稱與公告類型關鍵字 */}
                       <img 
                         src={item.coverImage} 
                         alt={`新竹宸新復健科門診異動公告：${item.title}`} 
@@ -221,9 +223,8 @@ export default function NoticesPage() {
                     <div className="md:w-2/3 p-6 md:p-8 flex flex-col justify-center">
                         <div className="flex items-center gap-3 mb-3 text-sm">
                             <span className="px-2 py-1 rounded border bg-pink-500/10 text-pink-400 border-pink-500/30">{item.category}</span>
-                            <span className="text-slate-500 flex items-center"><i className="fa-regular fa-calendar mr-2"></i>{item.date}</span>
+                            <span className="text-slate-400 flex items-center"><i className="fa-regular fa-calendar mr-2"></i>{item.date}</span>
                         </div>
-                        {/* H2 正確應用於列表標題 */}
                         <h2 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors leading-relaxed">
                             {item.title}
                         </h2>

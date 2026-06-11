@@ -113,7 +113,8 @@ export default function ClinicPage() {
           
           {/* ✨ 6. 返回按鈕區塊動畫 */}
           <div className="animate-on-scroll">
-            <Link href="/about" prefetch={false} className="inline-flex items-center text-cyan-400 mb-2 hover:text-cyan-300 transition-colors group">
+            {/* ✨ 修改處：移除 prefetch={false} 屬性，回復背景智慧靜態預載 */}
+            <Link href="/about" className="inline-flex items-center text-cyan-400 mb-2 hover:text-cyan-300 transition-colors group">
                 <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回關於我們
             </Link>
           </div>
@@ -130,10 +131,10 @@ export default function ClinicPage() {
           {/* ✨ 8. 卡片網格區塊 */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-on-scroll delay-100">
             {allItems.map((item) => (
+              /* ✨ 修改處：移除 prefetch={false} 屬性，解凍背景快取，換回極速流暢的秒開體感 */
               <Link 
                 key={item.id} 
                 href={`/about/clinic/${item.id}`} 
-                prefetch={false} // ✨ 新增：阻斷下方動態渲染設備卡片的背景自動預載，精準調降 ISR Reads 次數
                 className="group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col"
               >
                   {/* 圖片區塊 (優化 Alt 描述) */}

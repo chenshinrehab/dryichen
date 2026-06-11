@@ -157,7 +157,7 @@ export default function AboutPage() {
               <Link 
                 key={item.id} 
                 href={item.href}
-                prefetch={false} // ✨ 精準新增：阻斷四張主要入口卡片的自動預載，守護專案 ISR 讀取額度
+                // ✨ 依照建議修改：移除 prefetch={false}，釋放全靜態背景自動預載快取，換回極速流暢體感
                 className="group relative bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
               >
                 {/* 圖片區塊 */}

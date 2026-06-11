@@ -89,9 +89,9 @@ export default function SportsCategoryPage({ params }: { params: { category: str
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* 返回上一頁 */}
+          {/* ✨ 修改處：移除 prefetch={false}，釋放全靜態背景自動預載快取，換回極速流暢體感 */}
           <Link 
             href="/weight-bone" 
-            prefetch={false} // ✨ 新增：阻斷返回特色門診首頁連結的背景預載
             className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-8 transition-colors"
           >
             <FaArrowLeft className="mr-2" /> 返回特色門診首頁
@@ -108,10 +108,10 @@ export default function SportsCategoryPage({ params }: { params: { category: str
           {/* 具體傷害項目列表 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {categoryData.injuries.map((injury) => (
+              /* ✨ 修改處：移除 prefetch={false} 屬性，解凍背景快取高速秒開 */
               <Link
                 key={injury.slug}
                 href={`/weight-bone/sports-injuries/${categoryData.category}/${injury.slug}`}
-                prefetch={false} // ✨ 新增：阻斷下方動態渲染傷害卡片的背景自動預載，徹底守護 ISR Reads 流量
                 className="group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] hover:-translate-y-1 transition-all duration-300 flex flex-col"
               >
                 <div className="h-48 w-full relative overflow-hidden bg-slate-700">

@@ -115,23 +115,19 @@ export default function TreatmentsPage() {
                 <Link
                   key={treatment.slug}
                   href={`/treatments/${treatment.slug}`}
-                  prefetch={false}
-                  // 優化點：卡片改為純深色背景，不再透明，確保文字清晰
+                  // ✨ 修改處：拔除 prefetch={false}，釋放全靜態背景自動預載快取，換回極速流暢體感
                   className="group relative bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(34,211,238,0.15)] transition-all duration-300 flex flex-col md:flex-row h-auto md:h-64 cursor-pointer"
                 >
                   {/* 左側：圖片區塊 - 結構大改 */}
-                  {/* 優化點：移除 relative，改用 flex 物理隔離。移除所有 bg-gradient 覆蓋層。圖片現在完全顯露。 */}
                   <div className="w-full md:w-2/5 h-56 md:h-full overflow-hidden flex-shrink-0">
                     <img 
                       src={treatment.image} 
                       alt={`${treatment.title} - 新竹推薦`}
-                      // 優化點：圖片 100% 亮度，不加任何遮罩，確保絕對清晰
                       className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                     />
                   </div>
 
                   {/* 右側：文字內容區塊 */}
-                  {/* 優化點：bg-slate-800 確保文字區塊有純色背景，不受圖片影響 */}
                   <div className="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center relative bg-slate-800">
                     {/* 背景裝飾圖示 - 調淡，避免干擾文字 */}
                     <FaFileMedical className="absolute right-4 bottom-4 text-8xl text-slate-700/30 -rotate-12 pointer-events-none" />

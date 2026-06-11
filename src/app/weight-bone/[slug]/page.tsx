@@ -131,7 +131,7 @@ const jsonLdService = {
   'author': {
     '@type': ['Person', 'Physician'],
     'name': '林羿辰 醫師',
-    'jobTitle': '宸新復健科診所 院長',
+    'jobTitle': '院長',
     'url': `${SITE_URL}/about/doctors`,
     'image': `${SITE_URL}/images/main/a.webp`,
     'alumniOf': { 
@@ -211,8 +211,6 @@ const jsonLdService = {
   },
 
   // 6. 核心實體：修正為 ['Service', 'MedicalProcedure']
-  // ✨ 修正重點：使用 Service (支援 serviceType 與 provider) 
-  // 加上 MedicalProcedure (支援 howPerformed 與 bodyLocation)
   'mainEntity': {
     '@type': ['Service', 'MedicalProcedure'],
     'name': `${program.title}門診服務`,
@@ -383,7 +381,8 @@ const jsonLdService = {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
             {/* 返回按鈕 */}
-            <Link href="/weight-bone" prefetch={false} className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group">
+            {/* ✨ 修改處：移除 prefetch={false} 屬性，回復背景快取高速秒開 */}
+            <Link href="/weight-bone" className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group">
               <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 
               返回列表
             </Link>
@@ -415,9 +414,9 @@ const jsonLdService = {
     <div className="text-slate-400 text-xs md:text-sm font-normal flex flex-wrap items-center gap-x-3 gap-y-1">
       <span className="flex items-center">
         撰文者：
+        {/* ✨ 修改處：移除 prefetch={false} 屬性，回復背景快取高速秒開 */}
         <Link 
           href="/about/doctors" 
-          prefetch={false}
           className="text-slate-300 hover:text-cyan-400 underline underline-offset-4 decoration-slate-600 transition-colors cursor-pointer"
         >
           林羿辰醫師
@@ -426,7 +425,6 @@ const jsonLdService = {
       <span className="hidden md:inline text-slate-600">|</span>
       <span className="flex items-center">
         最後更新日期：
-        {/* 修改這裡：將 data 改成 program */}
         {program.lastModified ? (
           <time dateTime={program.lastModified} itemProp="dateModified">
             {program.lastModified}
@@ -445,9 +443,9 @@ const jsonLdService = {
                 {/* 小工具按鈕區 */}
                 <div className="mb-4 md:mb-8">
                   {['mounjaro', 'Wegovy'].includes(slug) && (
+                    /* ✨ 修改處：移除 prefetch={false} 屬性，回復背景快取高速秒開 */
                     <Link 
                       href="/weight-bone/BMI" 
-                      prefetch={false}
                       className="group relative inline-flex items-center gap-3 px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full text-white font-bold shadow-lg hover:-translate-y-1 transition-all duration-300 w-full md:w-auto justify-center"
                     >
                       <FaCalculator className="text-xl md:text-2xl" />
@@ -458,19 +456,23 @@ const jsonLdService = {
 
                   {['bone-age'].includes(slug) && (
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 w-full pb-2">
-                      <Link href="/about/news/child-height-growth-guide" prefetch={false} className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-blue-600 to-teal-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300">
+                      {/* ✨ 修改處：移除 prefetch={false} 屬性，回復背景快取高速秒開 */}
+                      <Link href="/about/news/child-height-growth-guide" className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-blue-600 to-teal-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300">
                         <FaChartLine className="text-xl md:text-2xl shrink-0" />
                         <span className="text-[15px] md:text-lg whitespace-nowrap">長高攻略</span>
                       </Link>
-                      <Link href="/weight-bone/nutrition" prefetch={false} className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300">
+                      {/* ✨ 修改處：移除 prefetch={false} 屬性，回復背景快取高速秒開 */}
+                      <Link href="/weight-bone/nutrition" className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300">
                         <FaUtensils className="text-xl md:text-2xl shrink-0" />
                         <span className="text-[15px] md:text-lg whitespace-nowrap">營養指南</span>
                       </Link>
-                      <Link href="/weight-bone/child" prefetch={false} className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-blue-600 to-teal-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300">
+                      {/* ✨ 修改處：移除 prefetch={false} 屬性，回復背景快取高速秒開 */}
+                      <Link href="/weight-bone/child" className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-blue-600 to-teal-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300">
                         <FaChartLine className="text-xl md:text-2xl shrink-0" />
                         <span className="text-[15px] md:text-lg whitespace-nowrap">成長分析</span>
                       </Link>
-                      <Link href="/weight-bone/calculator" prefetch={false} className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300">
+                      {/* ✨ 修改處：移除 prefetch={false} 屬性，回復背景快取高速秒開 */}
+                      <Link href="/weight-bone/calculator" className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300">
                         <FaBone className="text-xl md:text-2xl shrink-0" />
                         <span className="text-[15px] md:text-lg whitespace-nowrap">骨齡預測</span>
                       </Link>
@@ -579,10 +581,10 @@ const jsonLdService = {
                   
                   <div className="flex overflow-x-auto pb-4 gap-4 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0 scrollbar-hide">
                     {matchedCases.map((item) => (
+                      /* ✨ 修改處：移除 prefetch={false} 屬性，回復背景快取高速秒開 */
                       <Link 
                         key={item.id} 
                         href={`/about/cases/${item.id}`} 
-                        prefetch={false}
                         className="group block flex-shrink-0 w-[75vw] sm:w-64 md:w-auto snap-center bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.1)] transition-all duration-300"
                       >
                         <div className="aspect-video overflow-hidden relative">
@@ -611,9 +613,9 @@ const jsonLdService = {
                       <div className="mb-2">
                         <h3 className="text-xl font-bold text-white flex flex-col md:flex-row items-center gap-2">
                           本文由 
+                          {/* ✨ 修改處：移除 prefetch={false} 屬性，回復背景快取高速秒開 */}
                           <Link 
                             href="/about/doctors"
-                            prefetch={false}
                             className="text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer underline underline-offset-4 decoration-cyan-900/50 hover:decoration-cyan-400"
                           >
                             林羿辰醫師
@@ -631,9 +633,9 @@ const jsonLdService = {
                       </p>
 
                       <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-5 border-t border-slate-700/50">
+                        {/* ✨ 修改處：移除 prefetch={false} 屬性，回復背景快取高速秒開 */}
                         <Link 
                           href="/about/doctors" 
-                          prefetch={false}
                           className="text-cyan-400 hover:text-cyan-300 text-sm font-bold flex items-center group transition-colors cursor-pointer"
                         >
                           <i className="fa-solid fa-id-card-clip mr-2 text-lg"></i>
@@ -675,9 +677,9 @@ const jsonLdService = {
                 </div>
 
                 <div className="mt-12 pt-8 border-t border-slate-700/50 relative z-10">
+                  {/* ✨ 修改處：移除 prefetch={false} 屬性，回復背景快取高速秒開 */}
                   <Link
                     href="/weight-bone"
-                    prefetch={false}
                     className="inline-flex items-center justify-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 group"
                   >
                     看更多相關資訊
