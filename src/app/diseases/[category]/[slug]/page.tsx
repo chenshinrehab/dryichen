@@ -1,4 +1,3 @@
-
 // src/app/diseases/[category]/[slug]/page.tsx
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
@@ -451,10 +450,11 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
       `}} />
 
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
-        <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 fade-in relative z-10">
+       <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 fade-in relative z-10">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            <Link href={`/diseases/${category}`} prefetch={false} className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group">
+            {/* ✨ 移除 prefetch={false} 換回極速秒開 */}
+            <Link href={`/diseases/${category}`} className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group">
               <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i>
               返回分類列表
             </Link>
@@ -471,13 +471,13 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
                   </div>
                   <div>
                     <h1 className="text-3xl md:text-5xl font-bold font-sans text-white mb-3 tracking-wide leading-tight">{disease.title}</h1>
+
                     <div className="flex flex-col md:flex-row md:items-end justify-between gap-2">
                       <div className="text-slate-400 text-xs md:text-sm font-normal flex flex-wrap items-center gap-x-3 gap-y-1">
                         <span className="flex items-center">
                           撰文者：
                           <Link 
                             href="/about/doctors" 
-                            prefetch={false}
                             className="text-slate-300 hover:text-cyan-400 underline underline-offset-4 decoration-slate-600 transition-colors cursor-pointer"
                           >
                             林羿辰醫師
@@ -547,6 +547,7 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
               {matchedCases.length > 0 && (
                 <section className="pt-4 pb-4 border border-slate-800 bg-slate-900/50 rounded-3xl overflow-hidden mx-2 md:mx-4 mb-8">
                   <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
                     <div className="flex items-center mb-5">
                       <i className="fa-solid fa-file-medical text-cyan-400 text-xl mr-3"></i>
                       <h2 className="text-2xl font-bold text-white">
@@ -559,7 +560,6 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
                         <Link 
                           key={item.id} 
                           href={`/about/cases/${item.id}`} 
-                          prefetch={false}
                           className="group block flex-shrink-0 w-[66vw] sm:w-64 md:w-auto md:flex-shrink-1 min-w-0 snap-center bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.15)] transition-all duration-300"
                         >
                           <div className="h-32 md:h-40 overflow-hidden relative">
@@ -569,6 +569,7 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
                               className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                             />
                           </div>
+
                           <div className="p-3">
                             <h3 className="text-base font-bold text-slate-100 mb-1 line-clamp-2 leading-tight">
                               {item.title}
@@ -583,6 +584,7 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
                         </Link>
                       ))}
                     </div>
+
                   </div>
                 </section>
               )}
@@ -590,6 +592,7 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
               <div className="mt-8 mb-10">
                 <div className="bg-slate-800/40 backdrop-blur border border-slate-700 rounded-2xl p-6 md:p-8 shadow-lg relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+                  
                   <div className="flex flex-col md:flex-row items-center md:items-start gap-6 relative z-10">
                     <div className="flex-grow text-center md:text-left">
                       <div className="mb-2">
@@ -597,7 +600,6 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
                           本文由 
                           <Link 
                             href="/about/doctors"
-                            prefetch={false}
                             className="text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer underline underline-offset-4 decoration-cyan-900/50 hover:decoration-cyan-400"
                           >
                             林羿辰醫師
@@ -611,13 +613,12 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
                       </div>
                       
                       <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-6">
-                        現任宸新復健科診所院長。畢業於國立台灣大學醫學系，擁有復健科、骨質疏鬆雙專科醫師資歷，專精於精準超音波導引注射治療、增生療法與各類運動傷害。林醫師具備豐富臨床經驗，致力於將醫學實證應用於病患康復。
+                        現任宸新復健科診所院長。畢業於國立台灣大學醫學系，擁有復健科、骨質疏鬆雙專科醫師資歷，專精於精準超音波導引注射治療、增生療法與各類運動傷害。林醫師具備豐富臨床經驗，致力於將醫學實證應用於病健康復。
                       </p>
 
                       <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-5 border-t border-slate-700/50">
                         <Link 
                           href="/about/doctors" 
-                          prefetch={false}
                           className="text-cyan-400 hover:text-cyan-300 text-sm font-bold flex items-center group transition-colors cursor-pointer"
                         >
                           <i className="fa-solid fa-id-card-clip mr-2 text-lg"></i>
@@ -651,13 +652,14 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent blur-sm"></div>
                 <h3 className="text-white font-bold text-2xl mb-3 relative z-10">覺得這篇文章有幫助嗎？</h3>
                 <p className="text-slate-400 mb-8 text-lg relative z-10">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
+
                 <div className="relative z-10">
                   <ShareButtons url={currentPageUrl} title={disease.title} />
                 </div>
+
                 <div className="mt-12 pt-8 border-t border-slate-700/50 relative z-10">
                   <Link
                     href="/diseases"
-                    prefetch={false}
                     className="inline-flex items-center justify-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 group"
                   >
                     看更多疾病衛教
@@ -673,4 +675,3 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
     </>
   )
 }
-
