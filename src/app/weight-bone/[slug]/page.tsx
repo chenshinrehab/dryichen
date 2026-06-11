@@ -383,7 +383,7 @@ const jsonLdService = {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
             {/* 返回按鈕 */}
-            <Link href="/weight-bone" className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group">
+            <Link href="/weight-bone" prefetch={false} className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group">
               <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 
               返回列表
             </Link>
@@ -417,6 +417,7 @@ const jsonLdService = {
         撰文者：
         <Link 
           href="/about/doctors" 
+          prefetch={false}
           className="text-slate-300 hover:text-cyan-400 underline underline-offset-4 decoration-slate-600 transition-colors cursor-pointer"
         >
           林羿辰醫師
@@ -446,6 +447,7 @@ const jsonLdService = {
                   {['mounjaro', 'Wegovy'].includes(slug) && (
                     <Link 
                       href="/weight-bone/BMI" 
+                      prefetch={false}
                       className="group relative inline-flex items-center gap-3 px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full text-white font-bold shadow-lg hover:-translate-y-1 transition-all duration-300 w-full md:w-auto justify-center"
                     >
                       <FaCalculator className="text-xl md:text-2xl" />
@@ -456,19 +458,19 @@ const jsonLdService = {
 
                   {['bone-age'].includes(slug) && (
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 w-full pb-2">
-                      <Link href="/about/news/child-height-growth-guide" className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-blue-600 to-teal-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300">
+                      <Link href="/about/news/child-height-growth-guide" prefetch={false} className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-blue-600 to-teal-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300">
                         <FaChartLine className="text-xl md:text-2xl shrink-0" />
                         <span className="text-[15px] md:text-lg whitespace-nowrap">長高攻略</span>
                       </Link>
-                      <Link href="/weight-bone/nutrition" className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300">
+                      <Link href="/weight-bone/nutrition" prefetch={false} className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300">
                         <FaUtensils className="text-xl md:text-2xl shrink-0" />
                         <span className="text-[15px] md:text-lg whitespace-nowrap">營養指南</span>
                       </Link>
-                      <Link href="/weight-bone/child" className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-blue-600 to-teal-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300">
+                      <Link href="/weight-bone/child" prefetch={false} className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-blue-600 to-teal-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300">
                         <FaChartLine className="text-xl md:text-2xl shrink-0" />
                         <span className="text-[15px] md:text-lg whitespace-nowrap">成長分析</span>
                       </Link>
-                      <Link href="/weight-bone/calculator" className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300">
+                      <Link href="/weight-bone/calculator" prefetch={false} className="group relative flex flex-row items-center justify-center gap-1.5 md:gap-3 px-2 md:px-4 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl md:rounded-2xl text-white font-bold shadow-md hover:-translate-y-1 transition-all duration-300">
                         <FaBone className="text-xl md:text-2xl shrink-0" />
                         <span className="text-[15px] md:text-lg whitespace-nowrap">骨齡預測</span>
                       </Link>
@@ -568,98 +570,98 @@ const jsonLdService = {
                 )}
               </div>
 
-              {/* 相關案例區塊 */}
               {matchedCases.length > 0 && (
-                  <section className="pt-4 pb-4 border-t border-slate-800 bg-slate-900/50 overflow-hidden px-4 md:px-10">
-                    <div className="flex items-center mb-5 mt-6">
-                      <i className="fa-solid fa-file-medical text-cyan-400 text-xl mr-3"></i>
-                      <h3 className="text-2xl font-bold text-white m-0">相關治療案例</h3>
-                    </div>
-                    
-                    <div className="flex overflow-x-auto pb-4 gap-4 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0 scrollbar-hide">
-                      {matchedCases.map((item) => (
-                        <Link 
-                          key={item.id} 
-                          href={`/about/cases/${item.id}`} 
-                          className="group block flex-shrink-0 w-[75vw] sm:w-64 md:w-auto snap-center bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.1)] transition-all duration-300"
-                        >
-                          <div className="aspect-video overflow-hidden relative">
-                             <img src={item.coverImage} alt={item.title} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
-                          </div>
-                          <div className="p-4">
-                             <h4 className="text-lg font-bold text-slate-100 mb-2 line-clamp-2 leading-tight group-hover:text-cyan-400 transition-colors">{item.title}</h4>
-                             <p className="text-slate-400 text-sm line-clamp-2 mb-4 leading-relaxed">{item.summary}</p>
-                             <div className="text-cyan-500 text-sm font-bold flex items-center">
-                               閱讀案例詳情 <i className="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                             </div>
-                          </div>
-                        </Link>
-                      ))}
-                    </div>
-                  </section>
-                )}
+                <section className="pt-4 pb-4 border-t border-slate-800 bg-slate-900/50 overflow-hidden px-4 md:px-10">
+                  <div className="flex items-center mb-5 mt-6">
+                    <i className="fa-solid fa-file-medical text-cyan-400 text-xl mr-3"></i>
+                    <h3 className="text-2xl font-bold text-white m-0">相關治療案例</h3>
+                  </div>
+                  
+                  <div className="flex overflow-x-auto pb-4 gap-4 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0 scrollbar-hide">
+                    {matchedCases.map((item) => (
+                      <Link 
+                        key={item.id} 
+                        href={`/about/cases/${item.id}`} 
+                        prefetch={false}
+                        className="group block flex-shrink-0 w-[75vw] sm:w-64 md:w-auto snap-center bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.1)] transition-all duration-300"
+                      >
+                        <div className="aspect-video overflow-hidden relative">
+                           <img src={item.coverImage} alt={item.title} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                        </div>
+                        <div className="p-4">
+                           <h4 className="text-lg font-bold text-slate-100 mb-2 line-clamp-2 leading-tight group-hover:text-cyan-400 transition-colors">{item.title}</h4>
+                           <p className="text-slate-400 text-sm line-clamp-2 mb-4 leading-relaxed">{item.summary}</p>
+                           <div className="text-cyan-500 text-sm font-bold flex items-center">
+                             閱讀案例詳情 <i className="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                           </div>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </section>
+              )}
 
-                {/* 修正 4：醫師資歷方塊 (將 animate-on-scroll 移除或改為即時顯示確保穩定性) */}
-                
-                  <div className="mt-8 mb-10">
-                    <div className="bg-slate-800/40 backdrop-blur border border-slate-700 rounded-2xl p-6 md:p-8 shadow-lg relative overflow-hidden">
-                      <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+              {/* 修正 4：醫師資歷方塊 (將 animate-on-scroll 移除或改為即時顯示確保穩定性) */}
+              <div className="mt-8 mb-10">
+                <div className="bg-slate-800/40 backdrop-blur border border-slate-700 rounded-2xl p-6 md:p-8 shadow-lg relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+                  
+                  <div className="flex flex-col md:flex-row items-center md:items-start gap-6 relative z-10">
+                    <div className="flex-grow text-center md:text-left">
+                      <div className="mb-2">
+                        <h3 className="text-xl font-bold text-white flex flex-col md:flex-row items-center gap-2">
+                          本文由 
+                          <Link 
+                            href="/about/doctors"
+                            prefetch={false}
+                            className="text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer underline underline-offset-4 decoration-cyan-900/50 hover:decoration-cyan-400"
+                          >
+                            林羿辰醫師
+                          </Link> 
+                          撰寫與醫學審閱
+                          <span className="hidden md:inline-block text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full border border-cyan-500/30 font-normal uppercase tracking-wider">
+                            Verified Expert
+                          </span>
+                        </h3>
+                        <p className="text-sm text-slate-400 mt-1 font-medium">宸新復健科診所院長 / 復健科專科醫師</p>
+                      </div>
                       
-                      <div className="flex flex-col md:flex-row items-center md:items-start gap-6 relative z-10">
-                        <div className="flex-grow text-center md:text-left">
-                          <div className="mb-2">
-                          <h3 className="text-xl font-bold text-white flex flex-col md:flex-row items-center gap-2">
-  本文由 
-  <Link 
-    href="/about/doctors"
-    className="text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer underline underline-offset-4 decoration-cyan-900/50 hover:decoration-cyan-400"
-  >
-    林羿辰醫師
-  </Link> 
-  撰寫與醫學審閱
-  <span className="hidden md:inline-block text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full border border-cyan-500/30 font-normal uppercase tracking-wider">
-    Verified Expert
-  </span>
-</h3>
-                            <p className="text-sm text-slate-400 mt-1 font-medium">宸新復健科診所院長 / 復健科專科醫師</p>
-                          </div>
-                          
-                          <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-6">
-                            現任宸新復健科診所院長。畢業於國立台灣大學醫學系，擁有復健科、骨質疏鬆雙專科醫師資歷，專精於精準超音波導引注射治療、增生療法與各類運動傷害。林醫師具備豐富臨床經驗，致力於將醫學實證應用於病患康復。
-                          </p>
+                      <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-6">
+                        現任宸新復健科診所院長。畢業於國立台灣大學醫學系，擁有復健科、骨質疏鬆雙專科醫師資歷，專精於精準超音波導引注射治療、增生療法與各類運動傷害。林醫師具備豐富臨床經驗，致力於將醫學實證應用於病患康復。
+                      </p>
 
-                          <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-5 border-t border-slate-700/50">
-                            <Link 
-                              href="/about/doctors" 
-                              className="text-cyan-400 hover:text-cyan-300 text-sm font-bold flex items-center group transition-colors cursor-pointer"
-                            >
-                              <i className="fa-solid fa-id-card-clip mr-2 text-lg"></i>
-                              <span className="border-b border-cyan-500/30 group-hover:border-cyan-300">👉 查看更多醫師資歷、證照認證與學術論文</span>
-                              <i className="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
-                            </Link>
-                            
-                            <div className="flex flex-col items-end gap-1 text-[10px] md:text-xs text-slate-500">
-                              <div className="flex items-center gap-3">
-                                <span className="flex items-center"><i className="fa-solid fa-check-double mr-1 text-cyan-500/70"></i> 專家審閱完成</span>
-                                <span className="flex items-center"><i className="fa-solid fa-database mr-1 text-cyan-500/70"></i> 來源：醫學實證與專科臨床</span>
-                              </div>
-                              <div className="text-gray-500">
-                                最後更新日期：
-                                {program.lastModified ? (
-                                  <time dateTime={program.lastModified} itemProp="dateModified">
-                                    {program.lastModified}
-                                  </time>
-                                ) : (
-                                  "2026-02-22"
-                                )}
-                              </div>
-                            </div>
+                      <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-5 border-t border-slate-700/50">
+                        <Link 
+                          href="/about/doctors" 
+                          prefetch={false}
+                          className="text-cyan-400 hover:text-cyan-300 text-sm font-bold flex items-center group transition-colors cursor-pointer"
+                        >
+                          <i className="fa-solid fa-id-card-clip mr-2 text-lg"></i>
+                          <span className="border-b border-cyan-500/30 group-hover:border-cyan-300">👉 查看更多醫師資歷、證照認證與學術論文</span>
+                          <i className="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </Link>
+                        
+                        <div className="flex flex-col items-end gap-1 text-[10px] md:text-xs text-slate-500">
+                          <div className="flex items-center gap-3">
+                            <span className="flex items-center"><i className="fa-solid fa-check-double mr-1 text-cyan-500/70"></i> 專家審閱完成</span>
+                            <span className="flex items-center"><i className="fa-solid fa-database mr-1 text-cyan-500/70"></i> 來源：醫學實證與專科臨床</span>
+                          </div>
+                          <div className="text-gray-500">
+                            最後更新日期：
+                            {program.lastModified ? (
+                              <time dateTime={program.lastModified} itemProp="dateModified">
+                                {program.lastModified}
+                              </time>
+                            ) : (
+                              "2026-02-22"
+                            )}
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                
+                </div>
+              </div>
 
               {/* 底部分享區塊 */}
               <div className="bg-slate-900/80 p-8 md:p-12 border-t border-slate-700 text-center relative overflow-hidden">
@@ -675,6 +677,7 @@ const jsonLdService = {
                 <div className="mt-12 pt-8 border-t border-slate-700/50 relative z-10">
                   <Link
                     href="/weight-bone"
+                    prefetch={false}
                     className="inline-flex items-center justify-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 group"
                   >
                     看更多相關資訊
@@ -683,32 +686,29 @@ const jsonLdService = {
                 </div>
               </div>
 
-{/* 參考文獻區塊 (References) */}
-                {program.referencesHtml && (
-                  <section className="px-6 md:px-10 pb-12">
-                    <div className="bg-slate-900/50 border border-slate-700/50 rounded-2xl p-6 md:p-8">
-                      <div className="flex items-center mb-6 border-b border-slate-700 pb-4">
-                        <i className="fa-solid fa-book-bookmark text-cyan-400 text-xl mr-3"></i>
-
-                      </div>
-                      
-                      {/* 這裡直接渲染您在資料庫中寫好的 HTML */}
-                      <div 
-                        className="references-content text-slate-400 text-sm md:text-base leading-relaxed"
-                        dangerouslySetInnerHTML={{ __html: program.referencesHtml }} 
-                      />
-                      
-                      <div className="mt-6 pt-4 border-t border-slate-700/30 flex items-center gap-2">
-                        <span className="inline-block w-2 h-2 rounded-full bg-cyan-500/50 animate-pulse"></span>
-                        <p className="text-[10px] text-slate-500 uppercase tracking-widest font-medium">
-                          Evidence-Based Medicine Research & Clinical Guidelines
-                        </p>
-                      </div>
+              {/* 參考文獻區塊 (References) */}
+              {program.referencesHtml && (
+                <section className="px-6 md:px-10 pb-12">
+                  <div className="bg-slate-900/50 border border-slate-700/50 rounded-2xl p-6 md:p-8">
+                    <div className="flex items-center mb-6 border-b border-slate-700 pb-4">
+                      <i className="fa-solid fa-book-bookmark text-cyan-400 text-xl mr-3"></i>
                     </div>
-                  </section>
-                )}
-
-          
+                    
+                    {/* 這裡直接渲染您在資料庫中寫好的 HTML */}
+                    <div 
+                      className="references-content text-slate-400 text-sm md:text-base leading-relaxed"
+                      dangerouslySetInnerHTML={{ __html: program.referencesHtml }} 
+                    />
+                    
+                    <div className="mt-6 pt-4 border-t border-slate-700/30 flex items-center gap-2">
+                      <span className="inline-block w-2 h-2 rounded-full bg-cyan-500/50 animate-pulse"></span>
+                      <p className="text-[10px] text-slate-500 uppercase tracking-widest font-medium">
+                        Evidence-Based Medicine Research & Clinical Guidelines
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              )}
 
             </div>
           </div>

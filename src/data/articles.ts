@@ -3,6 +3,592 @@ import { NewsPost } from './news'; // 從總控制器引入型別定義
 export const articlesData: NewsPost[] = [
 
 {
+id: 'bone-age-height-evaluation',
+  title: '孩子發育黃金期：幾歲該照骨齡？附台灣各年級身高警戒值對照表',
+  lastModified: '2026-06-10',
+  category: '衛教文章',
+  date: '2026-06-10',
+  summary: '從兒童內分泌與運動醫學角度深入剖析骨齡（骨骼年齡）的評估時機。一年長不到 4 公分、懷疑性早熟、或身高低於 PR3？本文提供台灣男女生各年級身高警戒值，帶您看懂骨齡超前與落後的臨床意義，把握生長板閉合前的黃金追趕期。',
+  coverImage: '/images/news/article/bone-age-height-evaluation.webp',
+  seoTitle: '幾歲該照骨齡？台灣兒童各年級身高 PR3 警戒值與性早熟評估全攻略',
+  seoDescription: '專業兒科與生長醫學觀點：透視孩子骨骼生理時鐘！詳解性早熟（女孩8歲、男孩9歲前出現第二性徵）與生長遲緩對成年身高的影響。內含陳偉德與張美惠教授團隊之台灣國中小、高中男女生 PR3 身高警戒表。',
+  keywords: [
+    '骨齡評估',
+    '兒童長高',
+    '性早熟症狀',
+    '生長遲緩',
+    '身高生長曲線',
+    '生長板閉合',
+    'PR3身高',
+    '台灣兒童身高標準',
+    '體質性生長遲緩',
+    '兒童內分泌'
+  ],
+  contentHtml: `
+<div style="background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 1.5rem; margin-bottom: 2rem; border-radius: 0.5rem;">
+  <h2 style="margin-top: 0; color: #0369a1;">📝 總結摘要與核心觀點</h2>
+  <p style="margin-bottom: 0; line-height: 1.6; color: #334155;">
+    骨齡（骨骼年齡）是評估孩子生長潛力與發育時機最重要的工具之一。透過一張左手的 X 光片，醫師能判斷孩子骨骼的成熟程度，進而預測最終成年身高、評估性早熟嚴重度，以及決定是否需要介入治療。<br><br>
+    骨齡檢查特別適合以下情況：懷疑性早熟（女孩 8 歲前、男孩 9 歲前出現第二性徵）、一年長高不足 4 公分、或身高低於同齡同性別的第 3 百分位（PR3）。本文將以淺顯易懂的方式，說明骨齡的原理、適合照骨齡的年紀與時機，並提供台灣男女生各年級的身高警戒值對照表，幫助家長及早發現孩子的生長問題。
+    <sup><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/kjm2.12268" target="_blank">[1]</a></sup>
+    <sup><a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2020.00256/full" target="_blank">[2]</a></sup>
+    <sup><a href="https://www.careonline.com.tw/2026/01/precocious-puberty-260112.html" target="_blank">[3]</a></sup>
+  </p>
+</div>
+ 
+<hr>
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    一、什麼是骨齡？為什麼重要？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <strong style="color: #2dd4bf;">骨齡（Bone Age，又稱骨骼年齡）</strong>，是指孩子骨骼發育的成熟程度，用「歲」來表示。它和「實際年齡」不同——實際年齡是孩子出生後過了幾年，而骨齡則是反映孩子的骨骼在發育程度上相當於幾歲的孩子。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    骨骼從孩子出生起就一直在成長，這個過程在關節附近的「生長板（骨骺板）」中最為明顯。生長板是一層軟骨組織，細胞在這裡分裂增殖，推動骨骼不斷延長，讓孩子愈長愈高。等到青春期結束，生長板「閉合」（骨化），骨骼就停止生長，身高也基本定型。
+    <sup><a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2022.967711/full" target="_blank">[4]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    骨齡的評估方式，是拍攝<strong style="color: #ffffff;">左手腕的 X 光片</strong>，非慣用手（大都左手），能最大程度反射出人體最自然、未受太多後天物理外力干擾的發育進度。再由醫師專業判讀，判讀手腕各塊骨頭的骨化程度。這個方法無痛、快速，放射線劑量極低（與拍一張胸部 X 光相當），是目前臨床最廣泛使用的評估工具。
+    <sup><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/kjm2.12268" target="_blank">[1]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 一個比喻讓你秒懂</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      骨齡就像「骨骼的生理時鐘」。一個 10 歲的孩子，骨齡可能是 8 歲（骨骼發育偏慢，還有很多生長空間），也可能是 12 歲（骨骼已相當成熟，長高的時間所剩不多）。骨齡超前不一定代表長得高，反而往往意味著提前「燒完」了生長空間，最終身高可能反而偏矮。
+    </p>
+  </div>
+</section>
+ 
+<hr>
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    二、幾歲適合照骨齡？
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    從醫學角度而言，骨齡評估在<strong style="color: #2dd4bf;">2 歲至 18 歲</strong>之間都可以進行，但臨床上最有意義的評估時間點如下：
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">學齡前（3～6 歲）：懷疑性早熟或發育異常</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這個年紀照骨齡，主要目的是排除性早熟或先天性疾病。例如一個 4 歲女童出現乳房發育，照骨齡可以幫助醫師判斷骨骼是否已提前成熟，進一步評估需不需要治療。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">國小階段（7～12 歲）：黃金評估期</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    這是骨齡評估最有臨床價值的時機。此時孩子尚未進入青春期的快速生長期，骨齡與實際年齡的差距能提供豐富訊息：若骨齡落後 2 歲以上，可能代表生長遲緩；若骨齡超前 2 歲以上，則可能是性早熟的警訊。此外，這個時期使用骨齡搭配身高預測公式（如 Bayley-Pinneau 法），能相當準確地推算出孩子的成年身高。
+    <sup><a href="https://radiogyan.com/articles/pediatric-bone-age-calculator/" target="_blank">[5]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">國中階段（12～15 歲）：評估青春期進展與剩餘生長空間</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    國中生已進入或正在接近青春期，骨齡能幫助評估生長板還有多少開放時間。對於仍明顯偏矮的孩子，醫師可透過骨齡判斷是否還有機會介入（例如生長激素治療必須在生長板完全閉合前才有效）。
+    <sup><a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2022.967711/full" target="_blank">[4]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床重點提醒</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      骨齡「本身」不是診斷，而是評估工具。它必須配合身高、體重、生長速度、父母身高、青春期發育狀況等資料，由專業醫師綜合判讀，才能得出有意義的結論。家長請勿單憑骨齡數字自行判斷，應交由醫師解讀。
+    </p>
+  </div>
+</section>
+ 
+<hr>
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    三、哪些狀況需要照骨齡？
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">狀況一：懷疑性早熟</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    醫學上的<strong style="color: #ffffff;">性早熟</strong>定義是：
+  </p>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">女孩：8 歲前</strong>出現乳房發育（乳暈下方有硬塊），或 10 歲前初次月經來潮</li>
+    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffffff;">男孩：9 歲前</strong>出現睪丸變大（長軸超過 2.5 公分）、陰毛生長、或聲音開始變低沉</li>
+  </ul>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    性早熟孩子的骨骼會在大量性荷爾蒙的刺激下急速成熟，造成骨齡大幅超前。短期內身高可能快速增加，讓家長誤以為長得很好；但由於生長板提早閉合，生長時間縮短，最終成年身高反而可能比同齡孩子更矮。
+    <sup><a href="https://www.careonline.com.tw/2026/01/precocious-puberty-260112.html" target="_blank">[3]</a></sup>
+    照骨齡能清楚看出骨骼是否超前，進而評估是否需要使用促性腺激素釋放激素類似劑（柳培林，俗稱「性早熟針劑」）來延緩骨齡進展、保留更多生長時間。
+    <sup><a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2020.00256/full" target="_blank">[2]</a></sup>
+  </p>
+ 
+  <div style="background-color: #fff7ed; border: 1px solid #fed7aa; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+    <p style="color: #9a3412; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <strong>⚠️ 家長最常忽略的事：</strong><br><br>
+      很多家長以為「男生要變聲、女生要來月經才算青春期」，但其實這些已是青春期<strong>後期</strong>的表現。等到這時才來就醫，往往生長板已幾乎閉合，介入治療的效果大打折扣。關鍵是要在更早期的第二性徵（如乳房硬塊、睪丸變大）出現時就警覺。
+    </p>
+  </div>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">狀況二：生長速度過慢（一年長不到 4 公分）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    正常孩子在青春期前，每年應穩定長高約 <strong style="color: #ffffff;">5～6 公分</strong>；青春期啟動後，女孩每年可長 6～12 公分，男孩可長 7～14 公分。
+    <sup><a href="https://kids.heho.com.tw/growth-curves" target="_blank">[6]</a></sup>
+    根據教育部規定，學校每年健康檢查若發現孩子一年長高不足 4 公分，就會開立「生長遲緩轉介單」，建議家長帶去醫院評估。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    生長速度過慢的原因很多，包含生長激素缺乏症、甲狀腺功能低下、慢性疾病，或是體質性生長遲緩（本身就是晚發育的體質）。骨齡可以幫助區分：若骨齡也相對落後，多半是體質性的晚熟，預後良好；若骨齡正常但生長速度過慢，則需進一步做內分泌相關檢查。
+    <sup><a href="https://radiogyan.com/articles/pediatric-bone-age-calculator/" target="_blank">[5]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">狀況三：身高低於同齡的第 3 百分位（P<<3）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    國際醫學上對「矮小症」的定義是<strong style="color: #ffffff;">身高低於同年齡同性別的第 3 百分位（即 100 個同齡孩子中排名倒數 3 名以內）</strong>。身高落在 PR3 以下，代表有潛在生長問題的可能性較高，需要照骨齡進一步評估。
+    <sup><a href="https://happygrowup.com.tw/chart-elementary-school-height-weight-table/" target="_blank">[7]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    當然，PR3 以下並不等於一定有問題——父母本身也偏矮（遺傳因素），或是體質性生長遲緩的孩子，都可能自然落在這個區間而最終無礙。但正因為如此，透過骨齡來評估「是否還有追趕空間」以及「是否存在可治療的病因」，就顯得格外重要。
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">其他需要考慮照骨齡的情形</h3>
+  <ul style="color: #cbd5e1; list-style-type: disc; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;">身高突然異常快速增加（懷疑性早熟）</li>
+    <li style="margin-bottom: 0.5rem;">正在接受生長激素治療，需定期追蹤骨齡進展</li>
+    <li style="margin-bottom: 0.5rem;">孩子身高 PR97 以上，合併肥胖或提早出現第二性徵</li>
+    <li style="margin-bottom: 0.5rem;">懷疑有甲狀腺功能異常、腎上腺疾病或其他內分泌問題</li>
+    <li style="margin-bottom: 0.5rem;">早產兒，且 2 歲後仍未追上正常生長曲線</li>
+  </ul>
+</section>
+ 
+<hr>
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    四、各年級身高警戒值對照表（台灣數據）
+  </h2>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    以下表格依據<strong style="color: #ffffff;">台灣兒科醫師陳偉德教授與張美惠教授研究團隊</strong>於 2010 年發表、整合 WHO 標準與台灣本土數據所建立的生長曲線
+    <sup><a href="https://www.researchgate.net/publication/43341900_New_Growth_Charts_for_Taiwanese_Children_and_Adolescents_Based_on_World_Health_Organization_Standards_and_Health-related_Physical_Fitness" target="_blank">[8]</a></sup>，整理出各年級<strong style="color: #2dd4bf;">第 3 百分位（PR3）</strong>的身高標準。這是目前台灣兒科醫師臨床普遍採用的數據。
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <strong style="color: #ffffff;">如何使用這張表：</strong>找到孩子的年級和性別，若孩子身高<strong style="color: #ff7b72;">低於表中數值</strong>，代表落在全台灣同年齡同性別孩子的最後 3% 以內，建議並考慮安排骨齡評估。
+  </p>
+ 
+    <style>
+    .custom-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
+      font-size: 15px;
+      background-color: #ffffff;
+      color: #1f2937;
+      min-width: 850px;
+    }
+    .modern-table thead tr {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    .modern-table th {
+      padding: 16px 12px;
+      border-bottom: 2px solid #111827;
+      letter-spacing: 0.5px;
+    }
+    .modern-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.6;
+    }
+    .modern-table td:first-child {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+      width: 150px;
+    }
+    .modern-table tbody tr:nth-of-type(even) {
+      background-color: #f3f4f6;
+    }
+    .modern-table tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background-color 0.2s ease;
+    }
+    @media (max-width: 600px) {
+      .modern-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div class="custom-table-container">
+    <table class="modern-table">
+      <thead>
+        <tr>
+          <th>年級</th>
+          <th>大約年齡</th>
+          <th>男生 PR3 身高（低於此值需注意）</th>
+          <th>女生 PR3 身高（低於此值需注意）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>幼兒園大班</td>
+          <td>5 歲</td>
+          <td>101.2 公分</td>
+          <td>100.7 公分</td>
+        </tr>
+        <tr>
+          <td>小學一年級</td>
+          <td>6 歲</td>
+          <td>106.5 公分</td>
+          <td>106.1 公分</td>
+        </tr>
+        <tr>
+          <td>小學二年級</td>
+          <td>7 歲</td>
+          <td>111.8 公分</td>
+          <td>111.3 公分</td>
+        </tr>
+        <tr>
+          <td>小學三年級</td>
+          <td>8 歲</td>
+          <td>117.0 公分</td>
+          <td>116.5 公分</td>
+        </tr>
+        <tr>
+          <td>小學四年級</td>
+          <td>9 歲</td>
+          <td>121.8 公分</td>
+          <td>121.5 公分</td>
+        </tr>
+        <tr>
+          <td>小學五年級</td>
+          <td>10 歲</td>
+          <td>126.0 公分</td>
+          <td>127.2 公分</td>
+        </tr>
+        <tr>
+          <td>小學六年級</td>
+          <td>11 歲</td>
+          <td>130.5 公分</td>
+          <td>132.5 公分</td>
+        </tr>
+        <tr>
+          <td>國中一年級</td>
+          <td>12 歲</td>
+          <td>135.6 公分</td>
+          <td>138.0 公分</td>
+        </tr>
+        <tr>
+          <td>國中二年級</td>
+          <td>13 歲</td>
+          <td>141.9 公分</td>
+          <td>143.5 公分</td>
+        </tr>
+        <tr>
+          <td>國中三年級</td>
+          <td>14 歲</td>
+          <td>149.3 公分</td>
+          <td>146.3 公分</td>
+        </tr>
+        <tr>
+          <td>高中一年級</td>
+          <td>15 歲</td>
+          <td>155.5 公分</td>
+          <td>147.8 公分</td>
+        </tr>
+        <tr>
+          <td>高中二年級</td>
+          <td>16 歲</td>
+          <td>159.3 公分</td>
+          <td>148.3 公分</td>
+        </tr>
+        <tr>
+          <td>高中三年級</td>
+          <td>17 歲</td>
+          <td>160.9 公分</td>
+          <td>148.5 公分</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <p style="color: #94a3b8; font-size: 0.9rem; margin-top: 0.75rem; line-height: 1.5;">
+    ※ 資料來源：陳偉德、張美惠等（2010）研究成果，由衛生福利部國民健康署採用之台灣 7-18 歲生長曲線標準。女生小五以上因青春期提前，PR3 身高會先升後緩，屬正常現象。
+    <sup><a href="https://www.researchgate.net/publication/43341900_New_Growth_Charts_for_Taiwanese_Children_and_Adolescents_Based_on_World_Health_Organization_Standards_and_Health-related_Physical_Fitness" target="_blank">[8]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 讀懂女生數據的關鍵</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      細心的家長可能會發現，女生到了高中後 PR3 身高幾乎不再增加（約停在 147-148 公分）。這是因為女生青春期結束較早——多數女生在月經來潮後 1～2 年內，生長板就逐漸閉合；而男生的生長板通常要到 17～18 歲才完全閉合，因此 PR3 身高持續提升到較晚。
+    </p>
+  </div>
+</section>
+ 
+<hr>
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    五、骨齡與實際年齡不一樣，代表什麼？
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">骨齡「超前」（骨齡 &gt; 實際年齡）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">
+    骨齡明顯超前（超過實際年齡 2 歲以上），最常見的原因是<strong style="color: #ffffff;">性早熟</strong>或<strong style="color: #ffffff;">肥胖</strong>。性早熟的孩子因為提早受到性荷爾蒙刺激，骨骼快速成熟，雖然短期身高顯著，卻因生長板提早關閉而縮短了生長時間，最終身高可能受損。未經治療的性早熟，成年身高的損失可能達 5 公分以上。
+    <sup><a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2020.00256/full" target="_blank">[2]</a></sup>
+  </p>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    在台灣，台大醫院報告顯示，接受骨齡評估確診性早熟的女孩中，骨齡超前實際年齡平均約 1.5～2 年，對預測成年身高的影響相當顯著。
+    <sup><a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2020.00256/full" target="_blank">[2]</a></sup>
+  </p>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">骨齡「落後」（骨齡 &lt; 實際年齡）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    骨齡落後常見於<strong style="color: #ffffff;">體質性生長遲緩（又稱「晚熟型」）</strong>的孩子——這類孩子只是發育時間表比較慢，等到青春期啟動後，依然能充分生長，最終成年身高通常接近正常。骨齡落後也可能是生長激素缺乏症、甲狀腺功能低下的表現，需要進一步抽血檢查來區分。
+    <sup><a href="https://radiogyan.com/articles/pediatric-bone-age-calculator/" target="_blank">[5]</a></sup>
+  </p>
+ 
+  <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490; font-weight: bold; font-size: 1.15rem; margin-bottom: 0.5rem;">💡 臨床獨特見解</h4>
+    <p style="margin-bottom: 0; color: #334155; line-height: 1.6; font-size: 1.05rem;">
+      骨齡落後 2 歲的孩子，有時反而是個「好消息」——這意味著他的生長板比同齡孩子保留了更多的生長潛力，等於有一張「時間存款」。只要排除了病理性原因，晚熟型的孩子往往能「後發先至」，最終長得不矮，甚至在同儕都停止生長後仍能繼續抽高。這種情況在父母雙方或其中一方也屬於晚熟體質時特別常見。
+    </p>
+  </div>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">骨齡「符合」實際年齡（骨齡 ≈ 實際年齡）</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    骨齡與實際年齡相符，代表孩子的骨骼發育按時程進行，屬正常狀況。若此時身高仍偏矮，需考慮父母遺傳潛力（家族性矮小）、過去慢性疾病等因素，並搭配成年身高預測公式，決定是否需要進一步介入。
+  </p>
+</section>
+ 
+<hr>
+ 
+<section style="margin-bottom: 3.5rem;">
+  <h2 style="font-size: 1.75rem; font-weight: bold; color: #ffffff; margin-bottom: 1.5rem;">
+    六、骨齡檢查的流程與注意事項
+  </h2>
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">檢查流程</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1rem;">整個過程非常快速，約 5 分鐘即可完成：</p>
+  <ul style="color: #cbd5e1; list-style-type: decimal; padding-left: 1.5rem; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;">孩子將<strong style="color: #ffffff;">左手掌心向下</strong>平放在 X 光片台上</li>
+    <li style="margin-bottom: 0.5rem;">快速拍攝手掌至手腕的 X 光（約 1 秒）</li>
+    <li style="margin-bottom: 0.5rem;">醫師對照圖譜或即使用電腦輔助系統，判讀各塊骨頭的發育程度</li>
+    <li style="margin-bottom: 0.5rem;">結合孩子的身高曲線、生長速度、發育狀況，給出綜合評估<sup><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/kjm2.12268" target="_blank">[1]</a></sup></li>
+
+ 
+  <h3 style="font-size: 1.4rem; font-weight: bold; color: #ffffff; margin-bottom: 1rem;">放射線安全性</h3>
+  <p style="color: #cbd5e1; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+    許多家長擔心 X 光對孩子有害。事實上，一張手腕 X 光的輻射劑量極小，遠低於一天的自然背景輻射量（太陽光、地面等自然環境輻射），國際放射防護委員會也認可此類低劑量影像對兒童的安全性。若醫師建議每 6 個月追蹤一次骨齡，也無需過度擔心輻射累積問題。
+    <sup><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/kjm2.12268" target="_blank">[1]</a></sup>
+  </p>
+ 
+</section>
+ 
+<hr>
+ 
+<section style="margin-bottom: 3.5rem;">
+  <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+    <h2 style="color: #b45309; margin-top: 0; font-weight: bold; font-size: 1.4rem; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem;">
+      📢 七、常見三大誤區解析
+    </h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+        <div>
+          <strong>「孩子現在長得快，一定沒問題，不用照骨齡」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>危險！</strong> 性早熟的孩子短期內確實長得快，但這正是需要立刻就醫的警訊！長得快＋第二性徵提早出現＝必須照骨齡。骨齡如果大幅超前，代表生長板消耗速度過快，等到抽高停了，孩子的最終身高可能比預期矮許多。
+          <sup><a href="https://www.careonline.com.tw/2026/01/precocious-puberty-260112.html" target="_blank">[3]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+        <div>
+          <strong>「爸媽都不高，孩子矮是遺傳，照骨齡也沒用」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>不完全正確！</strong> 遺傳確實是決定身高的最大因素，但並非唯一因素。部分孩子矮是因為生長激素缺乏、甲狀腺功能異常等可治療的疾病，這些完全與遺傳無關。透過骨齡搭配抽血檢查，才能真正區分「遺傳性矮小」與「可治療的疾病性矮小」。錯過介入時機，才是真正的遺憾。
+          <sup><a href="https://radiogyan.com/articles/pediatric-bone-age-calculator/" target="_blank">[5]</a></sup></span>
+        </div>
+      </li>
+ 
+      <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+        <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+        <div>
+          <strong>「高中再來照骨齡，還來得及」</strong><br>
+          <span style="display: block; margin-top: 0.5rem; line-height: 1.6;"><strong>通常太晚了！</strong> 大多數女生在初經來潮後 1～2 年、大多數男生在 17～18 歲前，生長板就已完全閉合。等到高一、高二才介入，往往已錯過生長激素治療或其他內分泌治療的有效視窗。對於身高有疑慮的孩子，最佳評估時機是<strong>小學階段</strong>，愈早愈好。
+          <sup><a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2022.967711/full" target="_blank">[4]</a></sup></span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+ 
+<hr>
+ 
+<section style="background-color: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; overflow: hidden; margin: 3rem 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.4);">
+  <div style="background-color: #1e293b; padding: 1rem 1.5rem; border-bottom: 1px solid #334155;">
+    <h2 style="color: #22d3ee; margin: 0; font-size: 1.25rem; font-weight: bold;">
+      🏆 FAQ 常見問題
+    </h2>
+  </div>
+  <div style="padding: 2rem 1.25rem 1.2rem 1.25rem;">
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q1：孩子才 5、6 歲，需要照骨齡嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      一般健康、無特殊狀況的孩子，5～6 歲通常不需要主動照骨齡。但如果這個年齡就出現第二性徵（如女童胸部發育、男童陰毛生長），則強烈建議就醫並安排骨齡評估。這個年紀的性早熟，若骨齡大幅超前，治療效益最好，應積極介入。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q2：骨齡評估結果，準確度高嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      由有經驗的醫師判讀，骨齡評估的準確度通常在 ±1 歲以內，對臨床決策已足夠。近年台灣也開始引入電腦輔助骨齡判讀系統，可進一步提升客觀性與一致性。
+      <sup><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/kjm2.12268" target="_blank">[1]</a></sup>
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q3：照了骨齡，就可以知道孩子最終身高嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      骨齡結合目前身高，可以用 Bayley-Pinneau 法等公式預測成年身高，通常有一定的參考價值。但需強調，這只是「預測值」，不是確定值——孩子的最終身高還受到營養、睡眠、運動、健康狀況等多種因素影響。預測值的誤差範圍約 ±5 公分。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q4：孩子身高在 PR3 到 PR15 之間，要去照骨齡嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      PR3 到 PR15 屬於「低但正常範圍」，是否需要照骨齡，取決於幾個因素：生長速度是否正常（每年至少 4 公分以上）、父母身高如何（家族遺傳性的話問題較小）、是否有其他症狀（疲倦、食慾差、睡眠異常等）。建議帶孩子讓兒科醫師或兒童內分泌科醫師評估，由醫師判斷是否需要照骨齡。
+    </p>
+ 
+    <h3 style="color: #f8fafc; margin-top: 0; margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: bold; line-height: 1.4;">
+      Q5：骨齡超前，一定要打生長激素或性早熟針嗎？
+    </h3>
+    <p style="color: #94a3b8; line-height: 1.8; font-size: 1.05rem; margin-bottom: 2rem;">
+      不一定。骨齡超前是一個參考指標，並非自動觸發治療的條件。例如，輕微性早熟若骨齡超前幅度小、生長速度正常，可以定期追蹤而不用立刻治療。治療決策必須由醫師綜合評估骨齡進展速度、預估成年身高、孩子的年齡與青春期階段後，才能做出。
+      <sup><a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2020.00256/full" target="_blank">[2]</a></sup>
+    </p>
+ 
+  </div>
+</section>
+ 
+<hr>
+ 
+<div style="background-color: #f8fafc; color: #334155; padding: 32px; border-radius: 12px; border-left: 6px solid #64748b; margin-bottom: 32px; font-family: sans-serif; line-height: 1.7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <h2 style="color: #1e293b; margin-top: 0; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">結語與行動建議</h2>
+ 
+  <p style="color: #475569; margin-top: 16px; font-size: 1.05rem;">
+    骨齡是一把打開孩子生長潛力的鑰匙，但它需要在對的時機使用，才能發揮最大效果。若孩子出現以下任一情況，請不要猶豫，及早就醫：
+  </p>
+  <ul style="color: #475569; font-size: 1.05rem; padding-left: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;">女孩 8 歲前、男孩 9 歲前出現第二性徵</li>
+    <li style="margin-bottom: 0.5rem;">一年長高不足 4 公分</li>
+    <li style="margin-bottom: 0.5rem;">身高低於表中同年級 PR3 數值</li>
+    <li style="margin-bottom: 0.5rem;">身高百分位在短時間內明顯下滑（一年內下降超過兩條百分位線）</li>
+  </ul>
+ 
+  <p style="color: #475569; font-size: 1.05rem;">
+    生長的黃金時期一旦錯過，無法重來。<strong style="color: #1e293b;">及早評估，不是過度擔心，而是對孩子健康最好的投資。</strong>對照本文的 PR3 身高表，確認孩子目前的狀況，若有疑慮，歡迎預約照骨齡做進一步評估。
+  </p>
+ 
+  <div style="background-color: #f1f5f9; padding: 16px; border-radius: 8px; margin: 20px 0; text-align: center;">
+    <p style="margin-bottom: 0; color: #1e293b; font-weight: bold; font-size: 1.05rem;">
+      💡 立即行動：對照上方各年級 PR3 身高表，確認孩子的身高排名，並觀察近一年是否有長高至少 4 公分。若有任何疑慮，可以來宸新照骨齡。
+    </p>
+  </div>
+ 
+  <div style="text-align: center; width: 100%;">
+    <a href="/weight-bone/bone-age"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+      預約宸新照骨齡服務
+    </a>
+  </div>
+</div>
+ 
+  `,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+  <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Wang, C.C., et al. (2020). Automatic assessment of bone age in Taiwanese children: A comparison of the Greulich and Pyle method and the Tanner and Whitehouse 3 method. The Kaohsiung Journal of Medical Sciences. <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/kjm2.12268" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">DOI: 10.1002/kjm2.12268</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Lee, H.S., et al. (2020). Pathological and Incidental Findings in 403 Taiwanese Girls With Central Precocious Puberty at Initial Diagnosis. Frontiers in Endocrinology. <a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2020.00256/full" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">DOI: 10.3389/fendo.2020.00256</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        林函怡醫師（2026）。性早熟恐影響成人身高，觀察、預防與治療解析。照護線上。<a href="https://www.careonline.com.tw/2026/01/precocious-puberty-260112.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Thodberg, H.H., et al. (2022). Factors affecting prepubertal and pubertal bone age progression. Frontiers in Endocrinology. <a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2022.967711/full" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">DOI: 10.3389/fendo.2022.967711</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Radiogyan. (2024). Pediatric Bone Age Calculator: Common conditions including constitutional growth delay, precocious puberty, growth hormone deficiency. <a href="https://radiogyan.com/articles/pediatric-bone-age-calculator/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Heho 親子（2022）。兒童生長曲線好幫手：0 到 12 歲正常生長速度與警戒值。<a href="https://kids.heho.com.tw/growth-curves" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        張凱翔醫師（2026）。國小身高體重對照表：兒科醫師教你查孩子的身高排名。凱翔成長醫師。<a href="https://happygrowup.com.tw/chart-elementary-school-height-weight-table/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Chen, W.D., Chang, M.H., et al. (2010). New Growth Charts for Taiwanese Children and Adolescents Based on World Health Organization Standards and Health-related Physical Fitness. ResearchGate / Asia Pacific Journal of Clinical Nutrition. <a href="https://www.researchgate.net/publication/43341900_New_Growth_Charts_for_Taiwanese_Children_and_Adolescents_Based_on_World_Health_Organization_Standards_and_Health-related_Physical_Fitness" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">ResearchGate Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        衛生福利部國民健康署（2010/2018）。台灣國小學童身高百分位值（HPA 研究報告）。<a href="https://www.hpa.gov.tw/File/Attach/9955/File_9380.pdf" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PDF Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        馬偕兒童醫院（2023）。衛教單張：女童性早熟——定義、原因與治療。<a href="https://www.mmh.org.tw/child/know_health_view.php?docid=145" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        黃世綱醫師（2026）。台灣兒童身高體重對照表，最新兒童身高體重標準。<a href="https://www.drgrowup.tw/2024/03/child-height-weight.html" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Hello 醫師（2023）。性早熟定義？小朋友性早熟原因、症狀、治療一次看。<a href="https://helloyishi.com.tw/parenting/adolescents/adolescent-milestones-and-development/precocious-puberty-and-environmental-hormone/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Web Link</a>
+      </span>
+    </li>
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Ng, S.M., et al. (2017). Cranial MRI scans and central precocious puberty: clinical guidelines. In reference to bone age assessment by Greulich-Pyle Atlas in Taiwan CPP cohort. Frontiers in Endocrinology, review of Taiwanese CPP girls study.
+      </span>
+    </li>
+  </ol>
+</div>
+`
+},
+
+{
   id: 'prp-who-is-suitable',
   title: '哪些人適合打PRP？膝蓋退化、網球肘效果如何？',
   lastModified: '2026-06-09',

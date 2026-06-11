@@ -1,3 +1,4 @@
+// src/app/weight-bone/sports-injuries/[category]/[slug]/page.tsx
 import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
@@ -109,7 +110,7 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
       
       <style dangerouslySetInnerHTML={{__html: `
         .article-content strong { color: #22d3ee !important; font-weight: 700; }
-        .article-content a:not(sup a):not([style*="text-underline-offset"]) {
+        .article-content a {
             color: #ec4899 !important;
             font-weight: 600;
             text-decoration: none;
@@ -119,8 +120,8 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
             align-items: center;
             gap: 2px;
         }
-        .article-content a:not(sup a):not([style*="text-underline-offset"])::after { content: "↗"; font-size: 0.85em; margin-bottom: 2px; }
-        .article-content a:not(sup a):not([style*="text-underline-offset"]):hover {
+        .article-content a::after { content: "↗"; font-size: 0.85em; margin-bottom: 2px; }
+        .article-content a:hover {
             color: #db2777 !important;
             border-bottom-style: solid;
             background-color: rgba(236, 72, 153, 0.15);
@@ -147,6 +148,7 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
             
             <Link 
               href={`/weight-bone/sports-injuries/${categoryData.category}`} 
+              prefetch={false} // ✨ 新增：阻斷返回項目列表連結的背景預載
               className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group"
             >
               <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 
@@ -171,7 +173,7 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
                           {article.category}
                         </span>
                         <span className="text-slate-400 text-sm">
-                          撰文者：<Link href="/about/doctors" className="text-slate-300 hover:text-cyan-400 underline">林羿辰醫師</Link>
+                          撰文者：<Link href="/about/doctors" prefetch={false} className="text-slate-300 hover:text-cyan-400 underline">林羿辰醫師</Link>
                         </span>
                       </div>
                       <span className="text-slate-300 text-sm flex items-center bg-slate-700/50 px-3 py-1 rounded-full border border-slate-600">
@@ -192,7 +194,7 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
                     <div className="flex flex-col md:flex-row items-center md:items-start gap-6 relative z-10">
                       <div className="flex-grow text-center md:text-left">
                         <h3 className="text-xl font-bold text-white flex flex-col md:flex-row items-center gap-2">
-                          本文由 <Link href="/about/doctors" className="text-cyan-400 hover:text-cyan-300 underline">林羿辰醫師</Link> 撰寫與醫學審閱
+                          本文由 <Link href="/about/doctors" prefetch={false} className="text-cyan-400 hover:text-cyan-300 underline">林羿辰醫師</Link> 撰寫與醫學審閱
                           <span className="text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full border border-cyan-500/30">Verified Expert</span>
                         </h3>
                         <p className="text-sm text-slate-400 mt-1 font-medium">宸新復健科診所院長 / 復健科、骨鬆雙專科醫師</p>
@@ -200,7 +202,7 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
                           現任宸新復健科診所院長。畢業於國立台灣大學醫學系，專精於精準超音波導引注射治療、增生療法與各類運動傷害。
                         </p>
                         <div className="pt-5 border-t border-slate-700/50">
-                          <Link href="/about/doctors" className="text-cyan-400 hover:text-cyan-300 text-sm font-bold flex items-center justify-center md:justify-start group">
+                          <Link href="/about/doctors" prefetch={false} className="text-cyan-400 hover:text-cyan-300 text-sm font-bold flex items-center justify-center md:justify-start group">
                             <i className="fa-solid fa-id-card-clip mr-2 text-lg"></i>
                             👉 查看更多醫師資歷、證照認證
                             <i className="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
@@ -218,6 +220,7 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
                   <div className="mt-12">
                     <Link 
                       href="/about/news" 
+                      prefetch={false} // ✨ 新增：阻斷底部全局跳轉按鈕的預載
                       className="inline-flex items-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 transition-all group"
                     >
                       看更多衛教文章 

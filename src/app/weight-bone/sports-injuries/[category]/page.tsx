@@ -91,6 +91,7 @@ export default function SportsCategoryPage({ params }: { params: { category: str
           {/* 返回上一頁 */}
           <Link 
             href="/weight-bone" 
+            prefetch={false} // ✨ 新增：阻斷返回特色門診首頁連結的背景預載
             className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-8 transition-colors"
           >
             <FaArrowLeft className="mr-2" /> 返回特色門診首頁
@@ -110,19 +111,20 @@ export default function SportsCategoryPage({ params }: { params: { category: str
               <Link
                 key={injury.slug}
                 href={`/weight-bone/sports-injuries/${categoryData.category}/${injury.slug}`}
+                prefetch={false} // ✨ 新增：阻斷下方動態渲染傷害卡片的背景自動預載，徹底守護 ISR Reads 流量
                 className="group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] hover:-translate-y-1 transition-all duration-300 flex flex-col"
               >
                 <div className="h-48 w-full relative overflow-hidden bg-slate-700">
-  <div className="h-48 w-full relative overflow-hidden bg-slate-700">
-  {/* 關鍵修改：使用 h-1/2 或 h-2/5，並將 inset-0 改為自訂位置 */}
-  <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-slate-900/80 to-transparent z-10"></div>
-  
-  <img 
-    src={injury.image} 
-    alt={injury.title} 
-    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-100"
-  />
-</div>
+                  <div className="h-48 w-full relative overflow-hidden bg-slate-700">
+                  {/* 關鍵修改：使用 h-1/2 或 h-2/5，並將 inset-0 改為自訂位置 */}
+                  <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-slate-900/80 to-transparent z-10"></div>
+                  
+                  <img 
+                    src={injury.image} 
+                    alt={injury.title} 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-100"
+                  />
+                </div>
 
                   
                 </div>
