@@ -117,6 +117,12 @@ export const sportsInjuriesData = [
         description: '深度剖析NSAID過敏的發生比例、致病機轉、遺傳因素與交叉反應問題。實證研究揭露哪些NSAID最容易引發過敏，並提供過敏後的疼痛處理替代策略。',
         image: '/images/news/article/drug.webp',
       },
+                  {
+        slug: 'common-medication-myths-debunked',
+        title: '讀懂手中的藥！破解台灣民眾最常見的七大用藥迷思',
+        description: '「抗生素等於消炎藥？診所止痛藥都有類固醇？」本文從醫學實證出發，用白話文逐一剖析台灣民眾最常見的七大用藥誤解。深入探討抗生素、NSAIDs消炎止痛藥、類固醇與肌肉鬆弛劑的機制差異、潛在副作用與危險藥物交互作用，幫助你吃對藥、更安心。',
+        image: '/images/news/article/medication-myths-debunked.webp',
+      },
                      {
         slug: 'lumbar-disc-injection-analysis',
         title: '椎間盤突出免開刀？揭開「椎間盤內注射」的真!!',
@@ -150,6 +156,12 @@ export const sportsInjuriesData = [
         title: '健檢報告異常別慌！教你看懂側彎與壓迫，真的需要擔心嗎？',
         description: '健檢報告寫著脊椎側彎或骨刺壓迫，你是不是嚇到睡不著？本文從骨科醫師的臨床角度，用白話文解釋報告怎麼看、為何重照常常「沒那麼嚴重」、哪些症狀才真的需要就醫，幫你從報告焦慮中解脫。',
         image: '/images/news/article/spine-report-anxiety.webp',
+      },
+                        {
+        slug: 'posture-problems-explained',
+        title: '富貴包、骨盆前傾、烏龜頸：你也有這些體態嗎？',
+        description: '從醫學角度深入解析民眾最常見的體態困擾：富貴包（頸胸交界隆起）、骨盆前傾、烏龜頸與上交叉症候群。釐清成因、破除迷思，並提供有實證依據的矯正與治療策略。',
+        image: '/images/news/article/posture-problems-explained.webp',
       },
 
       {
