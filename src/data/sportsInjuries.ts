@@ -233,6 +233,12 @@ export const sportsInjuriesData = [
         description: '用白話的方式解釋增生療法的原理，並深入比較高濃度葡萄糖（Dextrose Prolotherapy）與富血小板血漿（PRP）的機制、效果與適應症。實證研究帶你了解這兩種再生療法的差異，幫助你做出更明智的治療選擇。',
         image: '/images/news/article/prolotherapy-dextrose-prp1.webp',
       },
+                                                {
+        slug: 'prp-sports-medicine-athletes',
+        title: 'PRP治療在運動醫學的應用：職業球星重返球場的秘密武器',
+        description: '深入解析PRP（富血小板血漿）治療的作用機制，回顧Tiger Woods、Rafael Nadal、Kobe Bryant等知名球員的使用案例，並以系統性回顧與隨機對照試驗說明PRP在肌腱病變、韌帶損傷等運動醫學領域已累積充足的臨床實證。',
+        image: '/images/news/article/prp-sports-medicine-athletes.webp',
+      },
                                           {
         slug: 'prolotherapy-injection-interval',
         title: '增生療法注射間隔全解析：為什麼葡萄糖隔兩週、PRP要四週',
