@@ -25,6 +25,12 @@ export const sportsInjuriesData = [
         image: '/images/news/article/tissue-healing-analysis.webp',
       },
                                     {
+        slug: 'cold-vs-heat-therapy-guide',
+        title: '冷敷與熱敷全攻略：發炎、痠痛、運動或注射後該怎麼敷？',
+        description: '冷敷與熱敷最常被誤用。本篇由運動醫學與復健科臨床角度出發，深入剖析急性傷害、慢性疼痛及遲發性肌肉痠痛（DOMS）的溫度干預原則。更針對體外震波（ESWT）與 PRP 注射術後的黃金修復期，提供不可不知的冷熱敷禁忌與居家實作指南。',
+        image: '/images/news/article/cold-vs-heat-therapy-guide.webp',
+      },
+                                    {
         slug: 'pediatric-lower-extremity-development',
         title: '掌握兒童腿型發育：從O型腿、X型腿到扁平足，何時需要就醫？',
         description: '從兒童骨科醫學角度深入剖析孩子從出生到學齡期的腿型與足弓演變軌跡。絕大多數的O型腿、X型腿與腳底貼地都屬於正常的生理性發育現象，不需穿矯正鞋。實證研究告訴你各年齡段的正常時程，並教你精準分辨真正需要醫療介入的發展警訊。',
@@ -236,7 +242,7 @@ export const sportsInjuriesData = [
                                                 {
         slug: 'prp-sports-medicine-athletes',
         title: 'PRP治療在運動醫學的應用：職業球星重返球場的秘密武器',
-        description: '深入解析PRP（富血小板血漿）治療的作用機制，回顧Tiger Woods、Rafael Nadal、Kobe Bryant等知名球員的使用案例，並以系統性回顧與隨機對照試驗說明PRP在肌腱病變、韌帶損傷等運動醫學領域已累積充足的臨床實證。',
+        description: '深入解析PRP（高濃度血小板）治療的作用機制，回顧Tiger Woods、Rafael Nadal、Kobe Bryant等知名球員的使用案例，並以系統性回顧與隨機對照試驗說明PRP在肌腱病變、韌帶損傷等運動醫學領域已累積充足的臨床實證。',
         image: '/images/news/article/prp-sports-medicine-athletes.webp',
       },
                                           {
@@ -688,6 +694,13 @@ export const sportsInjuriesData = [
         title: '場上的雙重對決：第一型糖尿病運動員的血糖管理與奇蹟',
         description: '從運動醫學與自體免疫角度，剖析第一型糖尿病（Type 1 Diabetes）運動員面臨的血糖挑戰。低血糖如何讓表現下滑 20%？高強度無氧運動與競賽壓力又如何引發高血糖？看網球球星茲維列夫（Alexander Zverev）奪得 2026 年法網冠軍與 MLB 火球男 Mason Miller 如何靠醫療科技克服疾病，打破不可能的運動醫學限界。',
         image: '/images/news/article/t1d-athletes-glucose-management1.webp',
+
+      },
+                        {
+        slug: 'adolescent-apophysitis-growth-plate-injury',
+        title: '青少年運動員隱形殺手：骨突炎（少棒肘、跳躍膝）治療全解析',
+        description: '青少年運動後關節持續疼痛？這可能不是單純的生長痛，而是生長板發育尚未成熟所引發的骨突炎。，深入剖析少棒肘、奧斯古-謝拉特病（跳躍膝）與謝佛爾氏病（跟骨骨突炎）的成因、典型症狀，並探討低能量聚焦式體外震波（ESWT）在臨床實證上的安全與有效性，幫助孩子安全重返運動場。',
+        image: '/images/news/article/adolescent-apophysitis-shockwave.webp',
 
       },
       {
