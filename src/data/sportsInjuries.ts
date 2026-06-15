@@ -48,6 +48,13 @@ export const sportsInjuriesData = [
         description: '學校健康檢查發現孩子蹲踞困難，家長先別緊張！本文完整解析蹲踞困難的常見原因——從跟腱過緊、扁平足、髖關節發育問題到股骨過度前傾，並說明何時需要就醫、如何配合治療，幫助家長正確認識、不過度焦慮。',
         image:  '/images/news/article/squatting-difficulty.webp',
       },
+
+                              {
+        slug: 'knee-pain-anatomical-location',
+        title: '膝蓋的疼痛地圖全解析：前後、內外側痛，各代表什麼疾病？',
+        description: '膝蓋痛位置是精準診斷的第一步。本文從運動醫學與解剖學視角，拆解前側（跑步膝、跳躍膝）、內側（鵝掌滑囊炎、內側半月板）、外側（ 髂脛束症候群）及後側（貝克氏囊腫）的疼痛原因，並提供理學檢查自測與關鍵紅旗症狀。',
+        image:  '/images/news/article/knee-pain-location-map.webp',
+      },
                         {
         slug: 'foot-pain-map',
         title: '腳掌的疼痛地圖全解析：前後、內外側痛，各代表什麼疾病？',

@@ -109,8 +109,17 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLdData} />
       
       <style dangerouslySetInnerHTML={{__html: `
-        .article-content strong { color: #22d3ee !important; font-weight: 700; }
-        .article-content a {
+        .article-content strong {
+            color: #22d3ee !important;
+            font-weight: 700;
+        }
+
+        /* -----------------------------------------------------------
+            ✨ 關鍵修正區塊：處理連結與排除參考文獻
+            ----------------------------------------------------------- */
+            
+        /* 1. 先定義基礎樣式，但使用 :not 排除掉 sup(上標) 與帶有特定偏移 style 的連結 */
+        .article-content a:not(sup a):not([style*="text-underline-offset"]) {
             color: #ec4899 !important;
             font-weight: 600;
             text-decoration: none;
@@ -120,28 +129,88 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
             align-items: center;
             gap: 2px;
         }
-        .article-content a::after { content: "↗"; font-size: 0.85em; margin-bottom: 2px; }
-        .article-content a:hover {
+
+        /* 2. 只給「非參考文獻」的連結加上 ↗ 符號 */
+        .article-content a:not(sup a):not([style*="text-underline-offset"])::after {
+            content: "↗";
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        /* 3. Hover 效果也只針對一般連結 */
+        .article-content a:not(sup a):not([style*="text-underline-offset"]):hover {
             color: #db2777 !important;
             border-bottom-style: solid;
             background-color: rgba(236, 72, 153, 0.15);
-            padding: 0 4px; margin: 0 -4px; border-radius: 4px;
+            padding: 0 4px;
+            margin: 0 -4px;
+            border-radius: 4px;
         }
+
+        /* 4. ✨ 徹底清除參考文獻中的粉紅橫線與箭頭 (包含 [2] 等 sup a) */
+        .article-content sup a,
+        .article-content ol a,
+        .article-content a[style*="text-underline-offset"],
+        .references-content a {
+            border-bottom: none !important; /* 移除橫線 */
+            display: inline !important;    /* 防止 flex 產生的對齊問題 */
+            color: #ec4899 !important;      /* 回歸藍色/粉紅視需求 */
+            background: transparent !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        /* 5. 確保參考文獻連結後絕對不會出現 ↗ 符號 */
+        .article-content sup a::after,
+        .article-content ol a::after,
+        .article-content a[style*="text-underline-offset"]::after,
+        .references-content a::after {
+            content: "" !important;
+            display: none !important;
+        }
+
+        /* ----------------------------------------------------------- */
+
         .article-content img {
-            max-width: 100%; height: auto; border-radius: 0.75rem;
-            margin: 2rem auto; display: block;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.75rem;
+            margin: 2rem auto;
+            display: block;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15);
             border: 1px solid #475569;
         }
-        @media (min-width: 768px) { .article-content img { max-width: 85%; } }
-        .article-content h2 {
-            font-size: 1.5rem; font-weight: 700; color: white;
-            margin-top: 2.5rem; margin-bottom: 1.5rem;
-            border-left: 4px solid #06b6d4; padding-left: 1rem;
+        @media (min-width: 768px) {
+            .article-content img {
+                max-width: 85%;
+            }
         }
-        .article-content h3 { font-size: 1.25rem; font-weight: 600; color: #67e8f9; margin-top: 2rem; }
+        .article-content h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #06b6d4;
+            padding-left: 1rem;
+        }
+        .article-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #67e8f9;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .article-content ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
       `}} />
-
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 fade-in relative z-10">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
