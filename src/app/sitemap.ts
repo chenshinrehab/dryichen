@@ -29,7 +29,7 @@ function safeDate(dateStr?: string, fallbackStr?: string): Date {
 export default function sitemap(): MetadataRoute.Sitemap {
   const buildTime = new Date()
 
-  // 1. 固定靜態頁面
+  // 1. 固定靜態頁面 (已包含 weight-bone 的核心分類導覽頁)
   const staticRoutes = [
     '',
     '/about',
@@ -52,7 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === '' ? 1 : 0.8,
   }))
 
-  // 2. 動態文章頁面 (News)
+  // 2. 動態文章頁面 (News) -> 這才是所有衛教文章真正要被 Google 索引的「正宮網址」
   const newsRoutes = newsList.map((post) => ({
     url: `${SITE_URL}/about/news/${post.id}`,
     // 優先使用 lastModified，若無則使用發布日期 date
@@ -97,13 +97,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   )
 
-  // 6. 減重與骨齡
-  const weightRoutes = weightLossPrograms.map((p) => ({
-    url: `${SITE_URL}/weight-bone/${p.slug}`,
-    lastModified: safeDate(p.lastModified),
-    changeFrequency: 'monthly' as const,
-    priority: 0.9,
-  }))
+  // 6. 減重與骨齡項目
+  // ✨ 修正優化：過濾掉在 weightLoss 資料庫中用於運動傷害重複整理的非標準網址文章，
+  // 僅將獨立的、不與 about/news 重複的減重骨齡主軸頁面放入地圖中，完美解決 Orphan page 吹哨問題
+  const weightRoutes = weightLossPrograms
+    .filter((p) => !['pain-medication-combination-safety', 'sports-injuries'].includes(p.slug)) // 排除會跟最新消息重複的文章路由
+    .map((p) => ({
+      url: `${SITE_URL}/weight-bone/${p.slug}`,
+      lastModified: safeDate(p.lastModified),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    }))
 
   // 7. 診所設備 (Facilities)
   const facilityRoutes = facilitiesData.map((f) => ({
