@@ -649,6 +649,12 @@ export const sportsInjuriesData = [
     description: '其他各種運動或是日常生活姿勢錯誤導致的傷害解析。',
     image: '/images/sportinjury/6.webp',
     injuries: [
+                              {
+        slug: 'hip-buttock-pain-location-mapping',
+        title: '髖臀部疼痛地圖：痛在外側、後側還是鼠蹊？各代表什麼疾病？',
+        description: '髖臀部疼痛是門診最常見卻也最易誤診的主訴。本文從運動醫學與臨床實證角度，系統性解析前側（FAI、盂唇撕裂）、外側（大轉子疼痛症候群）、後側（深臀部症候群、薦髂關節）與內側的常見成因，教你如何透過簡單動作自我居家初步鑑別。',
+        image:  '/images/news/article/hip-buttock-pain-location-mapping.webp',
+      },
                         {
         slug: 'shoulder-pain-mapping',
         title: '肩膀痛點全解析！從五個方位看懂肩膀「疼痛地圖」與自我鑑別',
@@ -672,6 +678,12 @@ export const sportsInjuriesData = [
         title: '膝蓋的疼痛地圖全解析：前後、內外側痛，各代表什麼疾病？',
         description: '膝蓋痛位置是精準診斷的第一步。本文從運動醫學與解剖學視角，拆解前側（跑步膝、跳躍膝）、內側（鵝掌滑囊炎、內側半月板）、外側（ 髂脛束症候群）及後側（貝克氏囊腫）的疼痛原因，並提供理學檢查自測與關鍵紅旗症狀。',
         image:  '/images/news/article/knee-pain-location-map.webp',
+      },
+                                          {
+        slug: 'ankle-pain-map',
+        title: '腳踝疼痛地圖全解析：前後側、內外側痛，各代表什麼疾病？',
+        description: '用民眾看得懂的語言，從醫學角度解析腳踝四個方位的疼痛意義。前側可能是撞擊症候群，後側可能是阿基里斯肌腱病變，內側可能是跗管症候群，外側最常見是韌帶損傷——本文系統整理各部位常見疾病與簡單鑑別方式。',
+        image:  '/images/news/article/ankle-pain-map.webp',
       },
                         {
         slug: 'foot-pain-map',
