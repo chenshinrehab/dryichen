@@ -24,8 +24,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const canonicalUrl = `${SITE_URL}/about/news/${params.id}`
    
   return {
-    // 修正：確保標題不重複堆疊診所名稱
-    title: post.seoTitle ? post.seoTitle : `${post.title} | 新竹宸新復健科`,
+    // 修正：主標題加上後綴區隔，確保不與內文 H1 完全一模一樣而觸發重複（Duplicate）警告
+    title: post.seoTitle ? post.seoTitle : `${post.title} | 宸新復健科`,
     authors: [{ name: '林羿辰醫師', url: SITE_URL }],
     publisher: '宸新復健科診所-林羿辰醫師',
     description: post.seoDescription || post.summary,
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
 
     openGraph: {
-      title: post.seoTitle || post.title,
+      title: post.title, // OG 標題保持乾淨的文章標題，與 Title 建立層級區隔
       description: post.seoDescription || post.summary,
       url: canonicalUrl,
       type: 'article',
@@ -90,14 +90,16 @@ export default function NewsDetailPage({ params }: PageProps) {
   // 2. Schema (根據類別切換結構，針對指定主題深度強化)
   const jsonLdData = {
     '@context': 'https://schema.org',
-    // ✨ 修正 1：使用雙重宣告，確保 MedicalWebPage 也能合法攜帶醫療專業屬性
-    '@type': isAnnouncement ? 'NewsArticle' : ['MedicalWebPage', 'MedicalEntity'],
+    // ✨ 修正 1：移除容易報錯的陣列宣告，改用標準單一宣告
+    '@type': isAnnouncement ? 'NewsArticle' : 'MedicalWebPage',
     '@id': `${currentUrl}#webpage`,
     'url': currentUrl,
-    [isAnnouncement ? 'headline' : 'name']: post.title,
-    'alternativeHeadline': post.seoTitle,
+    'name': post.title,
+    'headline': post.title,
+    'alternativeHeadline': post.seoTitle || undefined,
     'image': [post.coverImage || `${SITE_URL}/images/main/a.webp`],
     'description': post.summary,
+    'inLanguage': 'zh-TW',
     
     // ✨ 修正 2：如果外層是 NewsArticle，則支援 articleSection；如果是 WebPage，則維持保留
     'articleSection': post.category,
@@ -109,11 +111,7 @@ export default function NewsDetailPage({ params }: PageProps) {
 
     // 1. 醫療專業性標記 (EEAT 強化)
     ...(isMedicalContent ? {
-      // 透過雙重宣告 @type，這裡的 medicalSpecialty 現在是合法的
-      'medicalSpecialty': [
-        { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation', 'alternateName': '復健科' },
-        { '@type': 'MedicalSpecialty', 'name': 'Sports Medicine', 'alternateName': '運動醫學' }
-      ],
+      'medicalSpecialty': 'PhysicalMedicineAndRehabilitation', // 使用官方標準列舉字串
       'audience': {
         '@type': 'MedicalAudience',
         'audienceType': 'Patients',
@@ -124,9 +122,9 @@ export default function NewsDetailPage({ params }: PageProps) {
       }
     } : {}),
 
-    // 2. 作者區塊：✨ 修正 3：使用雙重宣告 ['Person', 'Physician']，徹底解決 jobTitle/alumniOf/worksFor 報慢
+    // 2. 作者區塊：✨ 修正 3：改回標準單一 Person 類型格式，worksFor 與 alumniOf 100% 合法不報錯
     'author': { 
-      '@type': ['Person', 'Physician'], 
+      '@type': 'Person', 
       'name': '林羿辰 醫師',
       'jobTitle': '院長',
       'url': `${SITE_URL}/about/doctors`,
@@ -210,16 +208,13 @@ export default function NewsDetailPage({ params }: PageProps) {
       ]
     },
 
-    // 4. 審閱資訊：✨ 修正 4：同樣將 reviewedBy 改為雙重宣告 ['Person', 'Physician']
+    // 4. 審閱資訊：✨ 修正 4：同樣將 reviewedBy 改為標準單一 Person 類型
     ...(isAnnouncement ? {} : {
       'lastReviewed': post.date,
       'reviewedBy': {
-        '@type': ['Person', 'Physician'],
+        '@type': 'Person',
         'name': '林羿辰 醫師',
         'url': `${SITE_URL}/about/doctors`,
-        'medicalSpecialty': [
-          { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation' }
-        ],
         'sameAs': [
           'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
           'https://www.pmr.org.tw/associator/associator-all.asp?w/',
