@@ -662,6 +662,12 @@ export const sportsInjuriesData = [
         image:  '/images/news/article/elbow-pain-map.webp',
       },
                                     {
+        slug: 'wrist-pain-anatomy-map',
+        title: '手腕的疼痛地圖：四個常見痛點的醫學實證與鑑別診斷',
+        description: '手腕痛貼藥布就好？從運動醫學與解剖位置出發，深入剖析手腕前、後、橈、尺側四大區域的最常見疾病。全面解析腕隧道症候群、狄奎凡氏肌腱炎（媽媽手）、舟狀骨骨折與三角纖維軟骨複合體（TFCC）損傷的典型症狀、實證物理檢查法與影像策略。',
+        image:  '/images/news/article/wrist-pain-anatomy-map.webp',
+      },
+                                    {
         slug: 'knee-pain-anatomical-location',
         title: '膝蓋的疼痛地圖全解析：前後、內外側痛，各代表什麼疾病？',
         description: '膝蓋痛位置是精準診斷的第一步。本文從運動醫學與解剖學視角，拆解前側（跑步膝、跳躍膝）、內側（鵝掌滑囊炎、內側半月板）、外側（ 髂脛束症候群）及後側（貝克氏囊腫）的疼痛原因，並提供理學檢查自測與關鍵紅旗症狀。',
