@@ -49,19 +49,6 @@ export const sportsInjuriesData = [
         image:  '/images/news/article/squatting-difficulty.webp',
       },
 
-                              {
-        slug: 'knee-pain-anatomical-location',
-        title: '膝蓋的疼痛地圖全解析：前後、內外側痛，各代表什麼疾病？',
-        description: '膝蓋痛位置是精準診斷的第一步。本文從運動醫學與解剖學視角，拆解前側（跑步膝、跳躍膝）、內側（鵝掌滑囊炎、內側半月板）、外側（ 髂脛束症候群）及後側（貝克氏囊腫）的疼痛原因，並提供理學檢查自測與關鍵紅旗症狀。',
-        image:  '/images/news/article/knee-pain-location-map.webp',
-      },
-                        {
-        slug: 'foot-pain-map',
-        title: '腳掌的疼痛地圖全解析：前後、內外側痛，各代表什麼疾病？',
-        description: '用民眾看得懂的語言，以醫學觀點解析腳掌的疼痛地圖——前足痛、後跟痛、內側痛、外側痛，各部位常見疾病有哪些？如何簡單鑑別診斷？一文掌握足部疼痛的關鍵知識。',
-        image:  '/images/news/article/foot-pain-map.webp',
-      },
-
 
                   {
         slug: 'accessory-and-sesamoid-bones',
@@ -662,6 +649,31 @@ export const sportsInjuriesData = [
     description: '其他各種運動或是日常生活姿勢錯誤導致的傷害解析。',
     image: '/images/sportinjury/6.webp',
     injuries: [
+                        {
+        slug: 'shoulder-pain-mapping',
+        title: '肩膀痛點全解析！從五個方位看懂肩膀「疼痛地圖」與自我鑑別',
+        description: '肩膀痛好幾個月好不了？本文從運動醫學與解剖學視角，深入解析前側、外側、後側、內側及全周瀰漫性肩痛的根本原因。教您利用簡單三步驟在家進行自我評估，辨識夾擠症候群、旋轉肌撕裂、五十肩與頸椎壓迫的神經轉移痛，並破除三大常見診斷誤區。',
+        image:  '/images/news/article/shoulder-pain-mapping-guide.webp',
+      },
+                              {
+        slug: 'elbow-pain-map',
+        title: '手肘疼痛地圖全解析：前後、內外側痛，各代表什麼病？',
+        description: '以部位為核心，系統解析手肘前側、後側、內側、外側疼痛的常見原因與疾病。從二頭肌肌腱炎、鷹嘴突滑囊炎、高爾夫球肘、網球肘到尺神經壓迫，用民眾聽得懂的語言，搭配實證醫學，教你如何初步鑑別診斷手肘痛。',
+        image:  '/images/news/article/elbow-pain-map.webp',
+      },
+                                    {
+        slug: 'knee-pain-anatomical-location',
+        title: '膝蓋的疼痛地圖全解析：前後、內外側痛，各代表什麼疾病？',
+        description: '膝蓋痛位置是精準診斷的第一步。本文從運動醫學與解剖學視角，拆解前側（跑步膝、跳躍膝）、內側（鵝掌滑囊炎、內側半月板）、外側（ 髂脛束症候群）及後側（貝克氏囊腫）的疼痛原因，並提供理學檢查自測與關鍵紅旗症狀。',
+        image:  '/images/news/article/knee-pain-location-map.webp',
+      },
+                        {
+        slug: 'foot-pain-map',
+        title: '腳掌的疼痛地圖全解析：前後、內外側痛，各代表什麼疾病？',
+        description: '用民眾看得懂的語言，以醫學觀點解析腳掌的疼痛地圖——前足痛、後跟痛、內側痛、外側痛，各部位常見疾病有哪些？如何簡單鑑別診斷？一文掌握足部疼痛的關鍵知識。',
+        image:  '/images/news/article/foot-pain-map.webp',
+      },
+
                   {
         slug: 'badminton-tennis-elbow',
         title: '打羽球為什麼會得網球肘？完整解析：動作、原因與改善策略',
