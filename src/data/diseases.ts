@@ -4587,7 +4587,6 @@ export const diseaseCategories: DiseaseCategory[] = [
             </div>
         
             <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
-            <p><img src="/images/diseases/elbow/golf/d.webp" alt="高爾夫球肘居家進行手腕屈肌伸展伸展運動"></p>
             <h3 style="color: #f8fafc !important;">🧘‍♂️ 醫師教你做：復健運動四部曲</h3>
             <p style="color: #e2e8f0 !important;">疼痛緩解後，必須透過運動強化肌腱，否則下次提重物又會復發。請早晚各做一輪：</p>
         

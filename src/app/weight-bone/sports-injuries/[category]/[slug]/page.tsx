@@ -80,33 +80,187 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
   };
   const activeCategoryStyle = categoryStyles[article.category] || 'bg-slate-500/10 text-slate-400 border-slate-500/30';
 
-  // Schema 資料
+  // 判斷類別以套用進階醫療標記
+  const isAnnouncement = article.category === '門診公告' || article.category === '診所活動';
+  const isMedicalContent = ['衛教文章', '醫學新知', '診間隨筆'].includes(article.category);
+
+  // 2. Schema 資料 (同步主頁面的深度醫療 EEAT 強化與雙重宣告)
   const jsonLdData = {
     '@context': 'https://schema.org',
-    '@type': ['MedicalWebPage', 'MedicalEntity'],
+    '@type': isAnnouncement ? 'NewsArticle' : ['MedicalWebPage', 'MedicalEntity'],
     '@id': `${currentUrl}#webpage`, // 本頁的實體 ID
     'url': currentUrl,
     'mainEntityOfPage': {
       '@type': 'WebPage',
       '@id': canonicalUrl // 指向原始內容網頁，強化 Canonical 關係
     },
-    'name': article.title,
+    [isAnnouncement ? 'headline' : 'name']: article.title,
+    'alternativeHeadline': article.seoTitle,
     'image': [article.coverImage || `${SITE_URL}/images/main/a.webp`],
     'description': article.summary,
     'articleSection': article.category,
-    'dateModified': article.lastModified || article.date,
+    'keywords': article.keywords,
+    'datePublished': '2026-01-25',
+    'dateModified': article.lastModified || article.date || '2026-02-25',
+
+    // 醫療專業性標記
+    ...(isMedicalContent ? {
+      'medicalSpecialty': [
+        { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation', 'alternateName': '復健科' },
+        { '@type': 'MedicalSpecialty', 'name': 'Sports Medicine', 'alternateName': '運動醫學' }
+      ],
+      'audience': {
+        '@type': 'MedicalAudience',
+        'audienceType': 'Patients',
+        'geographicArea': {
+          '@type': 'AdministrativeArea',
+          'name': 'Hsinchu City'
+        }
+      }
+    } : {}),
+
+    // 作者區塊 (Person 與 Physician 雙重宣告)
     'author': { 
       '@type': ['Person', 'Physician'], 
       'name': '林羿辰 醫師',
       'jobTitle': '院長',
       'url': `${SITE_URL}/about/doctors`,
-      'worksFor': { '@type': 'MedicalClinic', 'name': '宸新復健科診所', 'url': SITE_URL }
-    }
+      'image': `${SITE_URL}/images/main/a.webp`,
+      'alumniOf': {
+        '@type': 'EducationalOrganization',
+        'name': '國立台灣大學醫學系'
+      },
+      'worksFor': { 
+        '@type': 'MedicalClinic', 
+        'name': '宸新復健科診所', 
+        'url': SITE_URL 
+      },
+      'sameAs': [
+        'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
+        'https://www.pmr.org.tw/associator/associator-all.asp?w/',
+        'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a='
+      ],
+      'hasCredential': [
+        {
+          '@type': 'EducationalOccupationalCredential',
+          'name': '醫事人員執業資格',
+          'credentialCategory': '醫師證書',
+          'url': 'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
+          'recognizedBy': { '@type': 'Organization', 'name': '中華民國衛生福利部' }
+        },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          'name': '復健科專科醫師資格',
+          'credentialCategory': '復健科專科醫師證書',
+          'url': 'https://www.pmr.org.tw/associator/associator-all.asp?w/',
+          'recognizedBy': { '@type': 'Organization', 'name': '台灣復健醫學會' }
+        },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          'name': '骨質疏鬆症學會專科醫師資格',
+          'credentialCategory': '骨質疏鬆症學會專科醫師證書',
+          'url': 'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a=',
+          'recognizedBy': { '@type': 'Organization', 'name': '中華民國骨質疏鬆症學會' }
+        }
+      ],
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': '光復路一段371號B1',
+        'addressLocality': '新竹市',
+        'addressRegion': '東區',
+        'postalCode': '300',
+        'addressCountry': 'TW'
+      }
+    },
+
+    // 發佈者區塊
+    'publisher': {
+      '@type': 'MedicalClinic',
+      'name': '宸新復健科診所',
+      'url': SITE_URL,
+      'telephone': '+886-3-5647999',
+      'logo': {
+        '@type': 'ImageObject',
+        'url': `${SITE_URL}/logo.webp`
+      },
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': '光復路一段371號B1',
+        'addressLocality': '新竹市',
+        'addressRegion': '東區',
+        'postalCode': '300',
+        'addressCountry': 'TW'
+      },
+      'geo': {
+        '@type': 'GeoCoordinates',
+        'latitude': '24.7833314',
+        'longitude': '121.0170937'
+      },
+      'areaServed': [
+        { "@type": "City", "name": "新竹市" },
+        { "@type": "City", "name": "竹北市" },
+        { "@type": "Place", "name": "新竹科學園區" },
+        { "@type": "AdministrativeArea", "name": "新竹縣" }
+      ]
+    },
+
+    // 審閱資訊
+    ...(isAnnouncement ? {} : {
+      'lastReviewed': article.lastModified || article.date,
+      'reviewedBy': {
+        '@type': ['Person', 'Physician'],
+        'name': '林羿辰 醫師',
+        'url': `${SITE_URL}/about/doctors`,
+        'medicalSpecialty': [
+          { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation' }
+        ],
+        'sameAs': [
+          'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
+          'https://www.pmr.org.tw/associator/associator-all.asp?w/',
+          'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a='
+        ],
+        'hasCredential': [
+          {
+            '@type': 'EducationalOccupationalCredential',
+            'name': '醫事人員執業資格',
+            'credentialCategory': '醫師證書',
+            'url': 'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
+            'recognizedBy': { '@type': 'Organization', 'name': '中華民國衛生福利部' }
+          },
+          {
+            '@type': 'EducationalOccupationalCredential',
+            'name': '復健科專科醫師資格',
+            'credentialCategory': '復健科專科醫師證書',
+            'url': 'https://www.pmr.org.tw/associator/associator-all.asp?w/',
+            'recognizedBy': { '@type': 'Organization', 'name': '台灣復健醫學會' }
+          },
+          {
+            '@type': 'EducationalOccupationalCredential',
+            'name': '骨質疏鬆症學會專科醫師資格',
+            'credentialCategory': '骨質疏鬆症學會專科醫師證書',
+            'url': 'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a=',
+            'recognizedBy': { '@type': 'Organization', 'name': '中華民國骨質疏鬆症學會' }
+          }
+        ]
+      }
+    })
+  };
+
+  // 麵包屑導航 Schema 建立
+  const jsonLdBreadcrumb = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: '運動傷害大類', item: `${SITE_URL}/weight-bone/sports-injuries/${categoryData.category}` },
+      { '@type': 'ListItem', position: 3, name: article.title, item: currentUrl },
+    ],
   };
 
   return (
     <>
       <JsonLd data={jsonLdData} />
+      <JsonLd data={jsonLdBreadcrumb} />
       
       <style dangerouslySetInnerHTML={{__html: `
         .article-content strong {
@@ -215,7 +369,6 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
         <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 fade-in relative z-10">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            {/* ✨ 修改處：移除 prefetch={false} 釋放背景預載快取 */}
             <Link 
               href={`/weight-bone/sports-injuries/${categoryData.category}`} 
               className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group"
@@ -228,12 +381,16 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
               <div className="p-4 md:p-10">
                 
                 <header className="mb-10 border-l-4 border-cyan-500 pl-4 bg-gradient-to-r from-slate-900/80 to-transparent py-6 rounded-r-xl flex flex-col md:flex-row md:items-center gap-6">
+                  {/* QR Code 裝飾元件同步主頁面提示語 */}
                   <div className="hidden md:block bg-white p-2 rounded-lg shrink-0 group relative shadow-lg ring-2 ring-slate-700">
-                    <img className="w-24 h-24 object-contain" src={qrCodeApiUrl} alt="QR Code" />
+                    <img className="w-24 h-24 object-contain" src={qrCodeApiUrl} alt={`掃描閱讀 ${article.title}`} />
+                    <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-max bg-slate-900 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-slate-600">
+                      掃描帶走文章
+                    </div>
                   </div>
 
                   <div className="flex-grow w-full">
-                    <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
+                    <h1 className="text-3xl md:text-5xl font-bold font-sans text-white mb-4 tracking-wide leading-tight md:leading-[1.2]">
                       {article.title}
                     </h1>
                     <div className="flex flex-wrap items-center justify-between gap-3 w-full">
@@ -241,13 +398,18 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
                         <span className={`px-3 py-1 rounded-full text-sm font-bold border ${activeCategoryStyle}`}>
                           {article.category}
                         </span>
-                        <span className="text-slate-400 text-sm">
-                          {/* ✨ 修改處：移除 prefetch={false} 釋放背景預載快取 */}
-                          撰文者：<Link href="/about/doctors" className="text-slate-300 hover:text-cyan-400 underline">林羿辰醫師</Link>
+                        <span className="text-slate-400 text-sm flex items-center">
+                          撰文者：
+                          <Link 
+                            href="/about/doctors" 
+                            className="text-slate-300 hover:text-cyan-400 underline underline-offset-4 decoration-slate-600 transition-colors"
+                          >
+                            林羿辰醫師
+                          </Link>
                         </span>
                       </div>
                       <span className="text-slate-300 text-sm flex items-center bg-slate-700/50 px-3 py-1 rounded-full border border-slate-600">
-                        <i className="fa-regular fa-calendar mr-2"></i>最後更新：{article.lastModified || article.date}
+                        <i className="fa-regular fa-calendar mr-2"></i>最後更新日期：{article.lastModified || article.date}
                       </span>
                     </div>
                   </div>
@@ -259,41 +421,75 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
               </div>
 
               <footer className="mt-0">
-                <div className="px-4 md:px-10 mb-10">
+                {/* 醫師名片大區塊 */}
+                <div className="mt-0 mb-10 px-4 md:px-10">
                   <div className="bg-slate-800/40 backdrop-blur border border-slate-700 rounded-2xl p-6 md:p-8 shadow-lg relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+
                     <div className="flex flex-col md:flex-row items-center md:items-start gap-6 relative z-10">
                       <div className="flex-grow text-center md:text-left">
-                        <h3 className="text-xl font-bold text-white flex flex-col md:flex-row items-center gap-2">
-                          {/* ✨ 修改處：移除 prefetch={false} */}
-                          本文由 <Link href="/about/doctors" className="text-cyan-400 hover:text-cyan-300 underline">林羿辰醫師</Link> 撰寫與醫學審閱
-                          <span className="text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full border border-cyan-500/30">Verified Expert</span>
-                        </h3>
-                        <p className="text-sm text-slate-400 mt-1 font-medium">宸新復健科診所院長 / 復健科、骨鬆雙專科醫師</p>
-                        <p className="text-slate-300 text-sm md:text-base leading-relaxed mt-4 mb-6">
-                          現任宸新復健科診所院長。畢業於國立台灣大學醫學系，專精於精準超音波導引注射治療、增生療法與各類運動傷害。
+                        <div className="mb-2">
+                          <h3 className="text-xl font-bold text-white flex flex-col md:flex-row items-center gap-2">
+                            本文由 
+                            <Link 
+                              href="/about/doctors" 
+                              className="text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer underline underline-offset-4 decoration-cyan-900/50 hover:decoration-cyan-400"
+                            >
+                              林羿辰醫師
+                            </Link> 
+                            撰寫與醫學審閱
+                            <span className="hidden md:inline-block text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full border border-cyan-500/30 font-normal uppercase tracking-wider">
+                              Verified Expert
+                            </span>
+                          </h3>
+                          <p className="text-sm text-slate-400 mt-1 font-medium">宸新復健科診所院長 / 復健科、骨鬆雙專科醫師</p>
+                        </div>
+                        <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-6">
+                          現任宸新復健科診所院長。畢業於國立台灣大學醫學系，擁有復健科、骨質疏鬆雙專科醫師資歷，專精於精準超音波導引注射治療、增生療法與各類運動傷害。林醫師具備豐富臨床經驗，致力於將醫學實證應用於病健復原。
                         </p>
-                        <div className="pt-5 border-t border-slate-700/50">
-                          {/* ✨ 修改處：移除 prefetch={false} */}
-                          <Link href="/about/doctors" className="text-cyan-400 hover:text-cyan-300 text-sm font-bold flex items-center justify-center md:justify-start group">
+                        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-5 border-t border-slate-700/50">
+                          <Link 
+                            href="/about/doctors" 
+                            className="text-cyan-400 hover:text-cyan-300 text-sm font-bold flex items-center group transition-colors cursor-pointer"
+                          >
                             <i className="fa-solid fa-id-card-clip mr-2 text-lg"></i>
-                            👉 查看更多醫師資歷、證照認證
+                            <span className="border-b border-cyan-500/30 group-hover:border-cyan-300">👉 查看更多醫師資歷、證照認證與學術論文</span>
                             <i className="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
                           </Link>
+
+                          <div className="flex flex-col items-end gap-1 text-[10px] md:text-xs text-slate-500">
+                            <div className="flex items-center gap-3">
+                              <span className="flex items-center"><i className="fa-solid fa-check-double mr-1 text-cyan-500/70"></i> 專家審閱完成</span>
+                              <span className="flex items-center"><i className="fa-solid fa-database mr-1 text-cyan-500/70"></i> 來源：醫學實證與專科臨床</span>
+                            </div>
+                            <div>
+                              最後更新日期：
+                              <time dateTime={article.lastModified || article.date} itemProp="dateModified">
+                                {article.lastModified || article.date}
+                              </time>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-slate-900/80 p-8 md:p-12 border-t border-slate-700 text-center">
-                  <h2 className="text-white font-bold text-2xl mb-3">覺得這篇文章有幫助嗎？</h2>
-                  <p className="text-slate-400 mb-8 text-lg">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
-                  <ShareButtons url={currentUrl} title={article.title} />
-                  <div className="mt-12">
-                    {/* ✨ 修改處：移除 prefetch={false} */}
+                {/* 分享與跳轉按鈕 */}
+                <div className="bg-slate-900/80 p-8 md:p-12 border-t border-slate-700 text-center relative overflow-hidden">
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent blur-sm"></div>
+
+                  <h2 className="text-white font-bold text-2xl mb-3 relative z-10">覺得這篇文章有幫助嗎？</h2>
+                  <p className="text-slate-400 mb-8 text-lg relative z-10">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
+                  
+                  <div className="relative z-10">
+                    <ShareButtons url={currentUrl} title={article.title} />
+                  </div>
+                  
+                  <div className="mt-12 pt-8 border-t border-slate-700/50 relative z-10">
                     <Link 
                       href="/about/news" 
-                      className="inline-flex items-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 transition-all group"
+                      className="inline-flex items-center justify-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 group"
                     >
                       看更多衛教文章 
                       <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
@@ -302,10 +498,23 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
                 </div>
               </footer>
 
+              {/* 參考文獻結構化排版 */}
               {article.referencesHtml && (
                 <section className="bg-slate-900/80 px-0 md:px-12 pb-12 text-left">
-                  <div className="bg-slate-900/50 border border-slate-700/50 rounded-2xl p-6 md:p-8">
-                    <div className="references-content text-slate-400 text-sm md:text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: article.referencesHtml }} />
+                  <div className="border-t border-slate-700/50 pt-8 px-2 md:px-0">
+                    <div className="flex items-center mb-4 pb-3">
+                      <i className="fa-solid fa-book-bookmark text-cyan-400 text-lg mr-2"></i>
+                    </div>
+                    <div 
+                      className="references-content w-full text-slate-400 text-sm md:text-base leading-relaxed break-all" 
+                      dangerouslySetInnerHTML={{ __html: article.referencesHtml }} 
+                    />
+                    <div className="mt-5 pt-3 border-t border-slate-700/30 flex items-center gap-2">
+                      <span className="inline-block w-1.5 h-1.5 rounded-full bg-cyan-500/50 animate-pulse"></span>
+                      <p className="text-[9px] text-slate-500 uppercase tracking-tighter font-medium leading-tight">
+                        Evidence-Based Medicine Research & Clinical Guidelines
+                      </p>
+                    </div>
                   </div>
                 </section>
               )}
