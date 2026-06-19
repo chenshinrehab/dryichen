@@ -7,8 +7,8 @@ import JsonLd from '@/components/JsonLd'
 import { newsList, getNewsById } from '@/data/news'
 import ShareButtons from '@/components/ShareButtons'
 
-// 定義常數，方便未來修改
-const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
+// 定義常數，強制清除尾部斜線防止網址拼貼錯誤
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim().replace(/\/$/, '')
 
 interface PageProps { params: { id: string } }
 
@@ -24,8 +24,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const canonicalUrl = `${SITE_URL}/about/news/${params.id}`
 
   return {
-    // 修正：確保標題不重複堆疊診所名稱
-    title: post.seoTitle ? post.seoTitle : `${post.title} | 新竹宸新復健科`,
+    // 修正：確保主標題加上後綴區隔，不與內文 H1 完全 100% 重複，避免 Duplicate 吹哨
+    title: post.seoTitle ? post.seoTitle : `${post.title} | 宸新復健科`,
     authors: [{ name: '林羿辰醫師', url: SITE_URL }],
     publisher: '宸新復健科診所-林羿辰醫師',
     description: post.seoDescription || post.summary,
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
 
     openGraph: {
-      title: post.seoTitle || post.title,
+      title: post.title, // OG 標題保持乾淨的文章標題，與網頁標題做層級區隔
       description: post.seoDescription || post.summary,
       url: canonicalUrl,
       type: 'article',
@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     other: {
       'geo.position': '24.783331;121.017094',
-      'geo.region': 'TW-Hsinchu', // 新竹區域標記
+      'geo.region': 'TW-Hsinchu', 
       'geo.placename': 'Zhubei',
     },
   }
@@ -74,45 +74,52 @@ export default function NewsDetailPage({ params }: PageProps) {
   // 定義重點強化的醫療專業內容類別
   const isMedicalContent = ['衛教文章', '醫學新知', '診間隨筆'].includes(post.category);
 
-  // ✨ 新增：定義不同類別對應的 Tailwind 顏色 class
+  // 定義不同類別對應的 Tailwind 顏色 class
   const categoryStyles: Record<string, string> = {
     '門診公告': 'bg-pink-500/10 text-pink-400 border-pink-500/30',
     '診所活動': 'bg-pink-500/10 text-pink-400 border-pink-500/30',
-    '診間隨筆': 'bg-amber-500/10 text-amber-400 border-amber-500/30', // ✨ 設定為橘/琥珀色
+    '診間隨筆': 'bg-amber-500/10 text-amber-400 border-amber-500/30', 
     '衛教文章': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30',
     '醫學新知': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30',
   };
 
-  // ✨ 設定預設顏色（如果分類不在名單內）
+  // 設定預設顏色（如果分類不在名單內）
   const activeCategoryStyle = categoryStyles[post.category] || 'bg-slate-500/10 text-slate-400 border-slate-500/30';
 
-  // 2. Schema (根據類別切換結構，針對指定主題深度強化)
+  // 2. Schema 結構優化：全面修正陣列多重宣告錯誤，採主流搜尋引擎 100% 綠燈相容格式
   const jsonLdData = {
     '@context': 'https://schema.org',
-    // ✨ 修正 1：使用雙重宣告，確保 MedicalWebPage 也能合法攜帶醫療專業屬性
-    '@type': isAnnouncement ? 'NewsArticle' : ['MedicalWebPage', 'MedicalEntity'],
+    '@type': isAnnouncement ? 'NewsArticle' : 'MedicalWebPage',
     '@id': `${currentUrl}#webpage`,
+    'mainEntityOfPage': {
+      '@type': 'WebPage',
+      '@id': currentUrl
+    },
     'url': currentUrl,
-    [isAnnouncement ? 'headline' : 'name']: post.title,
-    'alternativeHeadline': post.seoTitle,
-    'image': [post.coverImage || `${SITE_URL}/images/main/a.webp`],
+    'name': post.title,
+    'headline': post.title,
+    'alternativeHeadline': post.seoTitle || undefined,
+    'image': {
+      '@type': 'ImageObject',
+      'url': post.coverImage || `${SITE_URL}/images/main/a.webp`
+    },
     'description': post.summary,
+    'inLanguage': 'zh-TW',
 
-    // ✨ 修正 2：如果外層是 NewsArticle，則支援 articleSection；如果是 WebPage，則維持保留
-    'articleSection': post.category,
+    // 只有 Article 類型才輸出屬性 articleSection
+    ...(isAnnouncement ? { 'articleSection': post.category } : {}),
     'keywords': post.keywords,
 
-    // 時效性：保留原始日期
+    // 時效性
     'datePublished': '2026-01-25',
     'dateModified': post.date || '2026-02-25',
 
     // 1. 醫療專業性標記 (EEAT 強化)
     ...(isMedicalContent ? {
-      // 透過雙重宣告 @type，這裡的 medicalSpecialty 現在是合法的
-      'medicalSpecialty': [
-        { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation', 'alternateName': '復健科' },
-        { '@type': 'MedicalSpecialty', 'name': 'Sports Medicine', 'alternateName': '運動醫學' }
-      ],
+      'medicalSpecialty': {
+        '@type': 'MedicalSpecialty',
+        'name': 'Physical Medicine and Rehabilitation'
+      },
       'audience': {
         '@type': 'MedicalAudience',
         'audienceType': 'Patients',
@@ -123,14 +130,13 @@ export default function NewsDetailPage({ params }: PageProps) {
       }
     } : {}),
 
-    // 2. 作者區塊：✨ 修正 3：使用雙重宣告 ['Person', 'Physician']，徹底解決 jobTitle/alumniOf/worksFor 報慢
+    // 2. 作者區塊：修正為標準 Person 物件，worksFor 與 alumniOf 在此完全合法
     'author': {
-      '@type': ['Person', 'Physician'],
+      '@type': 'Person',
       'name': '林羿辰 醫師',
       'jobTitle': '院長',
       'url': `${SITE_URL}/about/doctors`,
       'image': `${SITE_URL}/images/main/a.webp`,
-      // 學歷與隸屬機構 (現在在 Person 類型下完全合法)
       'alumniOf': {
         '@type': 'EducationalOrganization',
         'name': '國立台灣大學醫學系'
@@ -209,16 +215,13 @@ export default function NewsDetailPage({ params }: PageProps) {
       ]
     },
 
-    // 4. 審閱資訊：✨ 修正 4：同樣將 reviewedBy 改為雙重宣告 ['Person', 'Physician']
+    // 4. 審閱資訊：修正為標準單一 Person 宣告
     ...(isAnnouncement ? {} : {
       'lastReviewed': post.date,
       'reviewedBy': {
-        '@type': ['Person', 'Physician'],
+        '@type': 'Person',
         'name': '林羿辰 醫師',
         'url': `${SITE_URL}/about/doctors`,
-        'medicalSpecialty': [
-          { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation' }
-        ],
         'sameAs': [
           'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
           'https://www.pmr.org.tw/associator/associator-all.asp?w/',
@@ -254,10 +257,10 @@ export default function NewsDetailPage({ params }: PageProps) {
   const jsonLdBreadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
-      { '@type': 'ListItem', position: 2, name: '最新內容', item: `${SITE_URL}/about/news` },
-      { '@type': 'ListItem', position: 3, name: post.title, item: currentUrl },
+    'itemListElement': [
+      { '@type': 'ListItem', 'position': 1, 'name': '首頁', 'item': `${SITE_URL}/` },
+      { '@type': 'ListItem', 'position': 2, 'name': '最新內容', 'item': `${SITE_URL}/about/news` },
+      { '@type': 'ListItem', 'position': 3, 'name': post.title, 'item': currentUrl },
     ],
   }
 
@@ -273,11 +276,6 @@ export default function NewsDetailPage({ params }: PageProps) {
             font-weight: 700;
         }
 
-        /* -----------------------------------------------------------
-            ✨ 關鍵修正區塊：處理連結與排除參考文獻
-            ----------------------------------------------------------- */
-            
-        /* 1. 先定義基礎樣式，但使用 :not 排除掉 sup(上標) 與帶有特定偏移 style 的連結 */
         .article-content a:not(sup a):not([style*="text-underline-offset"]) {
             color: #ec4899 !important;
             font-weight: 600;
@@ -289,7 +287,6 @@ export default function NewsDetailPage({ params }: PageProps) {
             gap: 2px;
         }
 
-        /* 2. 只給「非參考文獻」的連結加上 ↗ 符號 */
         .article-content a:not(sup a):not([style*="text-underline-offset"])::after {
             content: "↗";
             font-size: 0.85em;
@@ -297,7 +294,6 @@ export default function NewsDetailPage({ params }: PageProps) {
             margin-bottom: 2px;
         }
 
-        /* 3. Hover 效果也只針對一般連結 */
         .article-content a:not(sup a):not([style*="text-underline-offset"]):hover {
             color: #db2777 !important;
             border-bottom-style: solid;
@@ -307,20 +303,18 @@ export default function NewsDetailPage({ params }: PageProps) {
             border-radius: 4px;
         }
 
-        /* 4. ✨ 徹底清除參考文獻中的粉紅橫線與箭頭 (包含 [2] 等 sup a) */
         .article-content sup a,
         .article-content ol a,
         .article-content a[style*="text-underline-offset"],
         .references-content a {
-            border-bottom: none !important; /* 移除橫線 */
-            display: inline !important;    /* 防止 flex 產生的對齊問題 */
-            color: #ec4899 !important;      /* 回歸藍色/粉紅視需求 */
+            border-bottom: none !important; 
+            display: inline !important;    
+            color: #ec4899 !important;      
             background: transparent !important;
             padding: 0 !important;
             margin: 0 !important;
         }
 
-        /* 5. 確保參考文獻連結後絕對不會出現 ↗ 符號 */
         .article-content sup a::after,
         .article-content ol a::after,
         .article-content a[style*="text-underline-offset"]::after,
@@ -328,8 +322,6 @@ export default function NewsDetailPage({ params }: PageProps) {
             content: "" !important;
             display: none !important;
         }
-
-        /* ----------------------------------------------------------- */
 
         .article-content img {
             max-width: 100%;
@@ -375,7 +367,6 @@ export default function NewsDetailPage({ params }: PageProps) {
         <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 fade-in relative z-10">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            {/* ✨ 修改處：移除 prefetch={false} 釋放靜態返回按鈕預載 */}
             <Link href="/about/news" className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group">
               <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 返回列表
             </Link>
@@ -407,7 +398,6 @@ export default function NewsDetailPage({ params }: PageProps) {
 
                         <span className="text-slate-400 text-sm flex items-center">
                           撰文者：
-                          {/* ✨ 修改處：移除 prefetch={false} 釋放純靜態醫師團隊頁面預載 */}
                           <Link
                             href="/about/doctors"
                             className="text-slate-300 hover:text-cyan-400 underline underline-offset-4 decoration-slate-600 transition-colors"
@@ -441,7 +431,6 @@ export default function NewsDetailPage({ params }: PageProps) {
                         <div className="mb-2">
                           <h3 className="text-xl font-bold text-white flex flex-col md:flex-row items-center gap-2">
                             本文由
-                            {/* ✨ 修改處：移除 prefetch={false} */}
                             <Link
                               href="/about/doctors"
                               className="text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer underline underline-offset-4 decoration-cyan-900/50 hover:decoration-cyan-400"
@@ -461,7 +450,6 @@ export default function NewsDetailPage({ params }: PageProps) {
                         </p>
 
                         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-5 border-t border-slate-700/50">
-                          {/* ✨ 修改處：移除 prefetch={false} */}
                           <Link
                             href="/about/doctors"
                             className="text-cyan-400 hover:text-cyan-300 text-sm font-bold flex items-center group transition-colors cursor-pointer"
@@ -504,7 +492,6 @@ export default function NewsDetailPage({ params }: PageProps) {
                   </div>
 
                   <div className="mt-12 pt-8 border-t border-slate-700/50 relative z-10">
-                    {/* ✨ 修改處：移除 prefetch={false} 釋放跳轉大分類列表預載機制 */}
                     <Link
                       href="/about/news"
                       className="inline-flex items-center justify-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 group"
@@ -516,7 +503,6 @@ export default function NewsDetailPage({ params }: PageProps) {
                 </div>
               </footer>
 
-              {/* ✨ 參考文獻完美落腳在 article 內部最尾端，標籤結構精準對齊不破版 */}
               {post.referencesHtml && (
                 <section className="bg-slate-900/80 px-0 md:px-12 pb-12 text-left">
                   <div className="border-t border-slate-700/50 pt-8 px-2 md:px-0">

@@ -8,8 +8,8 @@ import { getNewsById } from '@/data/news'
 import JsonLd from '@/components/JsonLd'
 import ShareButtons from '@/components/ShareButtons'
 
-// 定義常數
-const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
+// 定義常數，清除可能存在的尾部斜線防止 Canonical 拼錯
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim().replace(/\/$/, '')
 
 interface PageProps { params: { category: string; slug: string } }
 
@@ -84,10 +84,10 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
   const isAnnouncement = article.category === '門診公告' || article.category === '診所活動';
   const isMedicalContent = ['衛教文章', '醫學新知', '診間隨筆'].includes(article.category);
 
-  // 2. Schema 資料 (同步主頁面的深度醫療 EEAT 強化與雙重宣告)
+  // 2. Schema 資料 (同步主頁面的標準規格，移除容易噴錯的陣列多重宣告)
   const jsonLdData = {
     '@context': 'https://schema.org',
-    '@type': isAnnouncement ? 'NewsArticle' : ['MedicalWebPage', 'MedicalEntity'],
+    '@type': isAnnouncement ? 'NewsArticle' : 'MedicalWebPage',
     '@id': `${currentUrl}#webpage`, // 本頁的實體 ID
     'url': currentUrl,
     'mainEntityOfPage': {
@@ -96,19 +96,23 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
     },
     [isAnnouncement ? 'headline' : 'name']: article.title,
     'alternativeHeadline': article.seoTitle,
-    'image': [article.coverImage || `${SITE_URL}/images/main/a.webp`],
+    'image': {
+      '@type': 'ImageObject',
+      'url': article.coverImage || `${SITE_URL}/images/main/a.webp`
+    },
     'description': article.summary,
-    'articleSection': article.category,
+    ...(isAnnouncement ? { 'articleSection': article.category } : {}),
     'keywords': article.keywords,
+    'inLanguage': 'zh-TW',
     'datePublished': '2026-01-25',
     'dateModified': article.lastModified || article.date || '2026-02-25',
 
     // 醫療專業性標記
     ...(isMedicalContent ? {
-      'medicalSpecialty': [
-        { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation', 'alternateName': '復健科' },
-        { '@type': 'MedicalSpecialty', 'name': 'Sports Medicine', 'alternateName': '運動醫學' }
-      ],
+      'medicalSpecialty': {
+        '@type': 'MedicalSpecialty',
+        'name': 'Physical Medicine and Rehabilitation'
+      },
       'audience': {
         '@type': 'MedicalAudience',
         'audienceType': 'Patients',
@@ -119,9 +123,9 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
       }
     } : {}),
 
-    // 作者區塊 (Person 與 Physician 雙重宣告)
+    // 作者區塊 (修正為主流爬蟲 100% 綠燈的標準 Person 格式)
     'author': { 
-      '@type': ['Person', 'Physician'], 
+      '@type': 'Person', 
       'name': '林羿辰 醫師',
       'jobTitle': '院長',
       'url': `${SITE_URL}/about/doctors`,
@@ -208,12 +212,9 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
     ...(isAnnouncement ? {} : {
       'lastReviewed': article.lastModified || article.date,
       'reviewedBy': {
-        '@type': ['Person', 'Physician'],
+        '@type': 'Person',
         'name': '林羿辰 醫師',
         'url': `${SITE_URL}/about/doctors`,
-        'medicalSpecialty': [
-          { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation' }
-        ],
         'sameAs': [
           'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
           'https://www.pmr.org.tw/associator/associator-all.asp?w/',
@@ -250,10 +251,10 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
   const jsonLdBreadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
-      { '@type': 'ListItem', position: 2, name: '運動傷害大類', item: `${SITE_URL}/weight-bone/sports-injuries/${categoryData.category}` },
-      { '@type': 'ListItem', position: 3, name: article.title, item: currentUrl },
+    'itemListElement': [
+      { '@type': 'ListItem', 'position': 1, 'name': '首頁', 'item': `${SITE_URL}/` },
+      { '@type': 'ListItem', 'position': 2, 'name': '運動傷害大類', 'item': `${SITE_URL}/weight-bone/sports-injuries/${categoryData.category}` },
+      { '@type': 'ListItem', 'position': 3, 'name': article.title, 'item': currentUrl },
     ],
   };
 

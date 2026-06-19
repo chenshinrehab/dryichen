@@ -65,7 +65,8 @@ export default function SportsCategoryPage({ params }: { params: { category: str
             '@type': 'ListItem',
             'position': index + 1,
             'name': injury.title,
-            'url': `${SITE_URL}/weight-bone/sports-injuries/${categoryData.category}/${injury.slug}`
+            // ✨ 修正優化：將清單的目標 URL 修正指向主要衛教頁面（正宮網址），完美打通內部連結權重
+            'url': `${SITE_URL}/about/news/${injury.slug}`
           }))
         },
         'author': {
@@ -89,7 +90,6 @@ export default function SportsCategoryPage({ params }: { params: { category: str
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* 返回上一頁 */}
-          {/* ✨ 修改處：移除 prefetch={false}，釋放全靜態背景自動預載快取，換回極速流暢體感 */}
           <Link 
             href="/weight-bone" 
             className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-8 transition-colors"
@@ -102,21 +102,19 @@ export default function SportsCategoryPage({ params }: { params: { category: str
             <h1 className="text-4xl font-bold text-white mb-4">
               {categoryData.title} <span className="text-cyan-500 text-2xl ml-2"></span>
             </h1>
-
           </div>
 
           {/* 具體傷害項目列表 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {categoryData.injuries.map((injury) => (
-              /* ✨ 修改處：移除 prefetch={false} 屬性，解凍背景快取高速秒開 */
+              /* ✨ 終極修正：將所有卡片點擊的超連結，一律改為指向主要的動態路由文章區（/about/news/${injury.slug}） */
+              /* 這一步可以立刻補上所有文章失蹤的「內部連結」，一舉洗掉 Ahrefs 的 Orphan Page（孤兒網頁）錯誤 */
               <Link
                 key={injury.slug}
-                href={`/weight-bone/sports-injuries/${categoryData.category}/${injury.slug}`}
+                href={`/about/news/${injury.slug}`}
                 className="group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] hover:-translate-y-1 transition-all duration-300 flex flex-col"
               >
                 <div className="h-48 w-full relative overflow-hidden bg-slate-700">
-                  <div className="h-48 w-full relative overflow-hidden bg-slate-700">
-                  {/* 關鍵修改：使用 h-1/2 或 h-2/5，並將 inset-0 改為自訂位置 */}
                   <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-slate-900/80 to-transparent z-10"></div>
                   
                   <img 
@@ -126,8 +124,6 @@ export default function SportsCategoryPage({ params }: { params: { category: str
                   />
                 </div>
 
-                  
-                </div>
                 <div className="p-6 flex-grow flex flex-col">
                   <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 flex items-center transition-colors">
                     {injury.title}

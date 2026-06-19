@@ -9,7 +9,8 @@ import ScrollAnimation from '@/components/ScrollAnimation'
 // 強制動態渲染，確保每次網址的 ?page 變更都會抓取最新資料
 export const dynamic = 'force-dynamic';
 
-const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
+// ✨ 優化：強制清除尾部斜線，防止任何因環境變數多打斜線造成的網址拼接瑕疵
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim().replace(/\/$/, '')
 const PAGE_PATH = '/about/news'
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
 
@@ -75,42 +76,46 @@ export default function NewsListPage({ searchParams }: Props) {
   const jsonLdBreadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
-      { '@type': 'ListItem', position: 2, name: '關於我們', item: `${SITE_URL}/about` },
-      { '@type': 'ListItem', position: 3, name: '最新衛教文章', item: currentUrl },
+    'itemListElement': [
+      { '@type': 'ListItem', 'position': 1, 'name': '首頁', 'item': `${SITE_URL}/` },
+      { '@type': 'ListItem', 'position': 2, 'name': '關於我們', 'item': `${SITE_URL}/about` },
+      { '@type': 'ListItem', 'position': 3, 'name': '最新衛教文章', 'item': currentUrl },
     ],
   }
     
+  // ✨ Schema 結構優化：更換為標準 CollectionPage 搭配 ItemList 結構，移除陣列多重宣告地雷
   const jsonLdBlog = {
     '@context': 'https://schema.org',
-    '@type': 'Blog',
-    '@id': `${currentUrl}#blog`,
-    name: '宸新復健科復健衛教專區',
-    description: '專業醫師撰寫的復健醫學與疼痛管理衛教文章',
-    url: currentUrl,
-    publisher: {
+    '@type': 'CollectionPage',
+    '@id': `${currentUrl}#collection`,
+    'name': '宸新復健科復健衛教專區',
+    'description': '專業醫師撰寫的復健醫學與疼痛管理衛教文章',
+    'url': currentUrl,
+    'publisher': {
         '@type': 'MedicalClinic',
-        name: '新竹宸新復健科診所',
-        logo: {
+        'name': '新竹宸新復健科診所',
+        'logo': {
             '@type': 'ImageObject',
-            url: `${SITE_URL}/logo.webp`
+            'url': `${SITE_URL}/logo.webp`
         }
     },
-    author: {
-        '@type': 'MedicalOrganization',
-        name: '新竹宸新復健科',
-        url: SITE_URL
-    },
-    blogPost: currentArticles.map((item) => ({
-        '@type': 'BlogPosting',
-        headline: item.title,
-        description: item.summary,
-        url: `${SITE_URL}/about/news/${item.id}`,
-        datePublished: item.date,
-        image: item.coverImage,
-        author: { '@type': 'Person', name: '林羿辰醫師' }
-    }))
+    'mainEntity': {
+      '@type': 'ItemList',
+      'numberOfItems': currentArticles.length,
+      'itemListElement': currentArticles.map((item, index) => ({
+        '@type': 'ListItem',
+        'position': index + 1,
+        'item': {
+          '@type': 'BlogPosting',
+          'headline': item.title,
+          'description': item.summary,
+          'url': `${SITE_URL}/about/news/${item.id}`,
+          'datePublished': item.date || '2026-01-25',
+          'image': item.coverImage || `${SITE_URL}/images/main/a.webp`,
+          'author': { '@type': 'Person', 'name': '林羿辰醫師' }
+        }
+      }))
+    }
   }
 
   return (
@@ -129,7 +134,6 @@ export default function NewsListPage({ searchParams }: Props) {
             {/* Header 區塊 */}
             <div className="mb-10 animate-on-scroll">
                 <div className="text-left mb-4">
-                    {/* ✨ 修改處：移除 prefetch={false}，釋放對返回 /about 純靜態網頁的高速預載快取 */}
                     <Link href="/about" className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors group text-sm font-medium">
                         <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 
                         返回關於我們
@@ -146,7 +150,6 @@ export default function NewsListPage({ searchParams }: Props) {
                         </p>
                     </div>
 
-                    {/* 🛡️ 流量防禦點：公告為動態專區，此按鈕精準維持 prefetch={false} 避免無效運算消耗額度 */}
                     <Link 
                         href="/about/news/notices" 
                         prefetch={false}
@@ -175,8 +178,6 @@ export default function NewsListPage({ searchParams }: Props) {
                 const moreBtnColorClass = isEssay ? 'text-amber-500' : 'text-cyan-500';
 
                 return (
-                  /* ✨ 修改處：移除 prefetch={false} 屬性！因文章詳細頁面（[slug]/page.tsx）為純靜態 SSG 網頁，*/
-                  /* 解凍預載只會消耗極為寬裕的硬碟 Data Transfer 流量，動態 ISR Reads 會安全待在 0，同時喚回秒開體驗 */
                   <Link 
                     key={item.id} 
                     href={`/about/news/${item.id}`} 
@@ -224,7 +225,6 @@ export default function NewsListPage({ searchParams }: Props) {
                 <div className="hidden md:flex justify-center items-center space-x-2">
                   {/* 上一頁按鈕 */}
                   {currentPage > 1 ? (
-                    /* 🛡️ 流量防禦點：分頁按鈕連動 dynamic='force-dynamic'，在此處維持 prefetch={false} 守護動態額度 */
                     <Link 
                       href={`${PAGE_PATH}?page=${currentPage - 1}`} 
                       prefetch={false}
@@ -247,7 +247,6 @@ export default function NewsListPage({ searchParams }: Props) {
                       const pageNum = idx + 1;
                       const isActive = currentPage === pageNum;
                       return (
-                        /* 🛡️ 流量防禦點：維持 prefetch={false} 避免滑鼠晃過觸發無效動態運算 */
                         <Link
                           key={pageNum}
                           href={`${PAGE_PATH}?page=${pageNum}`}
@@ -266,7 +265,6 @@ export default function NewsListPage({ searchParams }: Props) {
 
                   {/* 下一頁按鈕 */}
                   {currentPage < totalPages ? (
-                    /* 🛡️ 流量防禦點：維持 prefetch={false} */
                     <Link 
                       href={`${PAGE_PATH}?page=${currentPage + 1}`} 
                       prefetch={false}
@@ -286,10 +284,8 @@ export default function NewsListPage({ searchParams }: Props) {
 
                 {/* --- 手機版分頁 (小於 md 顯示) --- */}
                 <div className="flex md:hidden flex-col items-center space-y-4 w-full">
-                  {/* 第一行：上一頁 / 下一頁 */}
                   <div className="flex justify-between w-full max-w-[320px] gap-4">
                     {currentPage > 1 ? (
-                      /* 🛡️ 流量防禦點：維持 prefetch={false} */
                       <Link 
                         href={`${PAGE_PATH}?page=${currentPage - 1}`} 
                         prefetch={false}
@@ -307,7 +303,6 @@ export default function NewsListPage({ searchParams }: Props) {
                     )}
 
                     {currentPage < totalPages ? (
-                      /* 🛡️ 流量防禦點：維持 prefetch={false} */
                       <Link 
                         href={`${PAGE_PATH}?page=${currentPage + 1}`} 
                         prefetch={false}
@@ -325,13 +320,11 @@ export default function NewsListPage({ searchParams }: Props) {
                     )}
                   </div>
 
-                  {/* 第二行：小頁碼按鈕 */}
                   <div className="flex flex-wrap justify-center gap-2 max-w-full px-2">
                     {Array.from({ length: totalPages }).map((_, idx) => {
                       const pageNum = idx + 1;
                       const isActive = currentPage === pageNum;
                       return (
-                        /* 🛡️ 流量防禦點：維持 prefetch={false} */
                         <Link
                           key={pageNum}
                           href={`${PAGE_PATH}?page=${pageNum}`}
