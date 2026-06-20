@@ -1,7 +1,6 @@
 // src/app/about/news/[id]/page.tsx
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import Image from 'next/image'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { newsList, getNewsById } from '@/data/news'
@@ -16,7 +15,7 @@ export async function generateStaticParams() {
   return newsList.map((post) => ({ id: post.id }))
 }
 
-// 1. 動態 Meta (強化重點：加入精確座標與主題性 SEO)
+// 1. 動態 Meta
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const post = getNewsById(params.id)
   if (!post) return { title: '文章不存在' }
@@ -24,7 +23,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const canonicalUrl = `${SITE_URL}/about/news/${params.id}`
 
   return {
-    // 修正：確保主標題加上後綴區隔，不與內文 H1 完全 100% 重複，避免 Duplicate 吹哨
     title: post.seoTitle ? post.seoTitle : `${post.title} | 宸新復健科`,
     authors: [{ name: '林羿辰醫師', url: SITE_URL }],
     publisher: '宸新復健科診所-林羿辰醫師',
@@ -36,7 +34,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
 
     openGraph: {
-      title: post.title, // OG 標題保持乾淨的文章標題，與網頁標題做層級區隔
+      title: post.title,
       description: post.seoDescription || post.summary,
       url: canonicalUrl,
       type: 'article',
@@ -70,9 +68,9 @@ export default function NewsDetailPage({ params }: PageProps) {
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(currentUrl)}`
 
   // 分類判斷
-  const isAnnouncement = post.category === '門診公告' || post.category === '診所活動';
-  // 定義重點強化的醫療專業內容類別
-  const isMedicalContent = ['衛教文章', '醫學新知', '診間隨筆'].includes(post.category);
+  const postCategory = post.category || ''
+  const isAnnouncement = postCategory === '門診公告' || postCategory === '診所活動'
+  const isMedicalContent = ['衛教文章', '醫學新知', '診間隨筆'].includes(postCategory)
 
   // 定義不同類別對應的 Tailwind 顏色 class
   const categoryStyles: Record<string, string> = {
@@ -83,10 +81,12 @@ export default function NewsDetailPage({ params }: PageProps) {
     '醫學新知': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30',
   };
 
-  // 設定預設顏色（如果分類不在名單內）
-  const activeCategoryStyle = categoryStyles[post.category] || 'bg-slate-500/10 text-slate-400 border-slate-500/30';
+  // 安全防禦讀取設定預設顏色
+  const activeCategoryStyle = (postCategory && categoryStyles[postCategory]) 
+    ? categoryStyles[postCategory] 
+    : 'bg-slate-500/10 text-slate-400 border-slate-500/30';
 
-  // 2. Schema 結構優化：全面修正陣列多重宣告錯誤，採主流搜尋引擎 100% 綠燈相容格式
+  // 2. Schema 結構優化
   const jsonLdData = {
     '@context': 'https://schema.org',
     '@type': isAnnouncement ? 'NewsArticle' : 'MedicalWebPage',
@@ -106,15 +106,12 @@ export default function NewsDetailPage({ params }: PageProps) {
     'description': post.summary,
     'inLanguage': 'zh-TW',
 
-    // 只有 Article 類型才輸出屬性 articleSection
-    ...(isAnnouncement ? { 'articleSection': post.category } : {}),
+    ...(isAnnouncement ? { 'articleSection': postCategory } : {}),
     'keywords': post.keywords,
 
-    // 時效性
     'datePublished': '2026-01-25',
     'dateModified': post.date || '2026-02-25',
 
-    // 1. 醫療專業性標記 (EEAT 強化)
     ...(isMedicalContent ? {
       'medicalSpecialty': {
         '@type': 'MedicalSpecialty',
@@ -130,7 +127,6 @@ export default function NewsDetailPage({ params }: PageProps) {
       }
     } : {}),
 
-    // 2. 作者區塊：修正為標準 Person 物件，worksFor 與 alumniOf 在此完全合法
     'author': {
       '@type': 'Person',
       'name': '林羿辰 醫師',
@@ -184,7 +180,6 @@ export default function NewsDetailPage({ params }: PageProps) {
       }
     },
 
-    // 3. 發佈者
     'publisher': {
       '@type': 'MedicalClinic',
       'name': '宸新復健科診所',
@@ -215,7 +210,6 @@ export default function NewsDetailPage({ params }: PageProps) {
       ]
     },
 
-    // 4. 審閱資訊：修正為標準單一 Person 宣告
     ...(isAnnouncement ? {} : {
       'lastReviewed': post.date,
       'reviewedBy': {
@@ -275,7 +269,6 @@ export default function NewsDetailPage({ params }: PageProps) {
             color: #22d3ee !important;
             font-weight: 700;
         }
-
         .article-content a:not(sup a):not([style*="text-underline-offset"]) {
             color: #ec4899 !important;
             font-weight: 600;
@@ -286,14 +279,12 @@ export default function NewsDetailPage({ params }: PageProps) {
             align-items: center;
             gap: 2px;
         }
-
         .article-content a:not(sup a):not([style*="text-underline-offset"])::after {
             content: "↗";
             font-size: 0.85em;
             font-weight: bold;
             margin-bottom: 2px;
         }
-
         .article-content a:not(sup a):not([style*="text-underline-offset"]):hover {
             color: #db2777 !important;
             border-bottom-style: solid;
@@ -302,7 +293,6 @@ export default function NewsDetailPage({ params }: PageProps) {
             margin: 0 -4px;
             border-radius: 4px;
         }
-
         .article-content sup a,
         .article-content ol a,
         .article-content a[style*="text-underline-offset"],
@@ -314,7 +304,6 @@ export default function NewsDetailPage({ params }: PageProps) {
             padding: 0 !important;
             margin: 0 !important;
         }
-
         .article-content sup a::after,
         .article-content ol a::after,
         .article-content a[style*="text-underline-offset"]::after,
@@ -322,7 +311,6 @@ export default function NewsDetailPage({ params }: PageProps) {
             content: "" !important;
             display: none !important;
         }
-
         .article-content img {
             max-width: 100%;
             height: auto;
@@ -376,8 +364,9 @@ export default function NewsDetailPage({ params }: PageProps) {
               <div className="p-4 md:p-10">
                 <header className="mb-10 border-l-4 border-cyan-500 pl-4 bg-gradient-to-r from-slate-900/80 to-transparent py-6 rounded-r-xl flex flex-col md:flex-row md:items-center gap-6">
 
-                  {/* 加入的 QR Code 區塊 */}
+                  {/* QR Code 區塊 */}
                   <div className="hidden md:block bg-white p-2 rounded-lg shrink-0 group relative shadow-lg ring-2 ring-slate-700">
+                    {/* 這裡補上 width 與 height 防止 Image 渲染抖動，或維持標準 img 標籤 */}
                     <img className="w-24 h-24 object-contain" src={qrCodeApiUrl} alt={`掃描閱讀 ${post.title}`} />
                     <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-max bg-slate-900 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-slate-600">
                       掃描帶走文章
@@ -390,7 +379,6 @@ export default function NewsDetailPage({ params }: PageProps) {
                     </h1>
 
                     <div className="flex flex-wrap items-center justify-between gap-3 w-full">
-
                       <div className="flex flex-wrap items-center gap-3">
                         <span className={`px-3 py-1 rounded-full text-sm font-bold border ${activeCategoryStyle}`}>
                           {post.category}
@@ -410,7 +398,6 @@ export default function NewsDetailPage({ params }: PageProps) {
                       <span className="text-slate-300 text-sm flex items-center bg-slate-700/50 px-3 py-1 rounded-full border border-slate-600">
                         <i className="fa-regular fa-calendar mr-2"></i>最後更新日期：{post.date}
                       </span>
-
                     </div>
                   </div>
                 </header>
@@ -418,7 +405,6 @@ export default function NewsDetailPage({ params }: PageProps) {
                 <div className="article-content text-slate-300 leading-relaxed text-lg pb-6">
                   <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
                 </div>
-
               </div>
 
               <footer className="mt-0">
