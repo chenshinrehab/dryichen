@@ -6,8 +6,8 @@ import JsonLd from '@/components/JsonLd'
 import { newsList, getNewsById } from '@/data/news'
 import ShareButtons from '@/components/ShareButtons'
 
-// 定義常數，強制清除尾部斜線防止網址拼貼錯誤
-const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim().replace(/\/$/, '')
+// 定義常數，方便未來修改
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
 
 interface PageProps { params: { id: string } }
 
@@ -15,7 +15,7 @@ export async function generateStaticParams() {
   return newsList.map((post) => ({ id: post.id }))
 }
 
-// 1. 動態 Meta
+// 1. 動態 Meta (強化重點：加入精確座標與主題性 SEO)
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const post = getNewsById(params.id)
   if (!post) return { title: '文章不存在' }
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const canonicalUrl = `${SITE_URL}/about/news/${params.id}`
 
   return {
-    title: post.seoTitle ? post.seoTitle : `${post.title} | 宸新復健科`,
+    title: post.seoTitle ? post.seoTitle : `${post.title} | 新竹宸新復健科`,
     authors: [{ name: '林羿辰醫師', url: SITE_URL }],
     publisher: '宸新復健科診所-林羿辰醫師',
     description: post.seoDescription || post.summary,
@@ -34,14 +34,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
 
     openGraph: {
-      title: post.title,
+      title: post.seoTitle || post.title,
       description: post.seoDescription || post.summary,
       url: canonicalUrl,
       type: 'article',
       siteName: '新竹宸新復健科診所',
       locale: 'zh_TW',
-      authors: ['林羿辰醫師'],
-      tags: ['復健科', '增生療法', 'PRP', '新竹復健科'],
       images: [
         {
           url: post.coverImage,
@@ -53,7 +51,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     other: {
       'geo.position': '24.783331;121.017094',
-      'geo.region': 'TW-Hsinchu', 
+      'geo.region': 'TW-Hsinchu',
       'geo.placename': 'Zhubei',
     },
   }
@@ -68,7 +66,7 @@ export default function NewsDetailPage({ params }: PageProps) {
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(currentUrl)}`
 
   // 分類判斷
-  const postCategory = post?.category || ''
+  const postCategory = post.category || ''
   const isAnnouncement = postCategory === '門診公告' || postCategory === '診所活動'
   const isMedicalContent = ['衛教文章', '醫學新知', '診間隨筆'].includes(postCategory)
 
@@ -76,72 +74,147 @@ export default function NewsDetailPage({ params }: PageProps) {
   const categoryStyles: Record<string, string> = {
     '門診公告': 'bg-pink-500/10 text-pink-400 border-pink-500/30',
     '診所活動': 'bg-pink-500/10 text-pink-400 border-pink-500/30',
-    '診間隨筆': 'bg-amber-500/10 text-amber-400 border-amber-500/30', 
+    '診間隨筆': 'bg-amber-500/10 text-amber-400 border-amber-500/30',
     '衛教文章': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30',
     '醫學新知': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30',
   };
 
-  // 安全防禦讀取設定預設顏色
-  const activeCategoryStyle = (postCategory && categoryStyles[postCategory]) 
-    ? categoryStyles[postCategory] 
-    : 'bg-slate-500/10 text-slate-400 border-slate-500/30';
+  // 設定預設顏色（如果分類不在名單內）
+  const activeCategoryStyle = categoryStyles[postCategory] || 'bg-slate-500/10 text-slate-400 border-slate-500/30';
 
-  // 2. Schema 結構優化 (徹底移除非安全性的 undefined 傳值雷區)
-  const jsonLdData = {
+  // 2. Schema (核心安全性優化：徹底移除 undefined 屬性對抗 Webview 崩潰)
+  const jsonLdData: Record<string, any> = {
     '@context': 'https://schema.org',
-    '@type': isAnnouncement ? 'NewsArticle' : 'MedicalWebPage',
+    '@type': isAnnouncement ? 'NewsArticle' : ['MedicalWebPage', 'MedicalEntity'],
     '@id': `${currentUrl}#webpage`,
-    'mainEntityOfPage': {
-      '@type': 'WebPage',
-      '@id': currentUrl
-    },
     'url': currentUrl,
-    'name': post?.title || '',
-    'headline': post?.title || '',
-    ...(post?.seoTitle ? { 'alternativeHeadline': post.seoTitle } : {}),
-    'image': {
-      '@type': 'ImageObject',
-      'url': post?.coverImage || `${SITE_URL}/images/main/a.webp`
-    },
-    'description': post?.summary || '',
-    'inLanguage': 'zh-TW',
-
-    ...(isAnnouncement ? { 'articleSection': postCategory } : {}),
-    'keywords': post?.keywords || [],
-
+    'image': [post.coverImage || `${SITE_URL}/images/main/a.webp`],
+    'description': post.summary,
+    'keywords': post.keywords,
     'datePublished': '2026-01-25',
-    'dateModified': post?.date || '2026-02-25',
+    'dateModified': post.date || '2026-02-25',
+    'articleSection': postCategory,
+  };
 
-    ...(isMedicalContent ? {
-      'medicalSpecialty': {
-        '@type': 'MedicalSpecialty',
-        'name': 'Physical Medicine and Rehabilitation'
-      },
-      'audience': {
-        '@type': 'MedicalAudience',
-        'audienceType': 'Patients',
-        'geographicArea': {
-          '@type': 'AdministrativeArea',
-          'name': 'Hsinchu City'
-        }
+  // 根據分類安全指派關鍵欄位，防止動態計算屬性在舊版手機瀏覽器中報錯
+  if (isAnnouncement) {
+    jsonLdData['headline'] = post.title;
+  } else {
+    jsonLdData['name'] = post.title;
+  }
+
+  // ✨ 核心修正：只有在真實存在 seoTitle 時才宣告，絕不傳入 undefined 避免序列化死機
+  if (post.seoTitle) {
+    jsonLdData['alternativeHeadline'] = post.seoTitle;
+  }
+
+  if (isMedicalContent) {
+    jsonLdData['medicalSpecialty'] = [
+      { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation', 'alternateName': '復健科' },
+      { '@type': 'MedicalSpecialty', 'name': 'Sports Medicine', 'alternateName': '運動醫學' }
+    ];
+    jsonLdData['audience'] = {
+      '@type': 'MedicalAudience',
+      'audienceType': 'Patients',
+      'geographicArea': {
+        '@type': 'AdministrativeArea',
+        'name': 'Hsinchu City'
       }
-    } : {}),
+    };
+  }
 
-    'author': {
-      '@type': 'Person',
+  jsonLdData['author'] = {
+    '@type': ['Person', 'Physician'],
+    'name': '林羿辰 醫師',
+    'jobTitle': '院長',
+    'url': `${SITE_URL}/about/doctors`,
+    'image': `${SITE_URL}/images/main/a.webp`,
+    'alumniOf': {
+      '@type': 'EducationalOrganization',
+      'name': '國立台灣大學醫學系'
+    },
+    'worksFor': {
+      '@type': 'MedicalClinic',
+      'name': '宸新復健科診所',
+      'url': SITE_URL
+    },
+    'sameAs': [
+      'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
+      'https://www.pmr.org.tw/associator/associator-all.asp?w/',
+      'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a='
+    ],
+    'hasCredential': [
+      {
+        '@type': 'EducationalOccupationalCredential',
+        'name': '醫事人員執業資格',
+        'credentialCategory': '醫師證書',
+        'url': 'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
+        'recognizedBy': { '@type': 'Organization', 'name': '中華民國衛生福利部' }
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        'name': '復健科專科醫師資格',
+        'credentialCategory': '復健科專科醫師證書',
+        'url': 'https://www.pmr.org.tw/associator/associator-all.asp?w/',
+        'recognizedBy': { '@type': 'Organization', 'name': '台灣復健醫學會' }
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        'name': '骨質疏鬆症學會專科醫師資格',
+        'credentialCategory': '骨質疏鬆症學會專科醫師證書',
+        'url': 'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a=',
+        'recognizedBy': { '@type': 'Organization', 'name': '中華民國骨質疏鬆症學會' }
+      }
+    ],
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': '光復路一段371號B1',
+      'addressLocality': '新竹市',
+      'addressRegion': '東區',
+      'postalCode': '300',
+      'addressCountry': 'TW'
+    }
+  };
+
+  jsonLdData['publisher'] = {
+    '@type': 'MedicalClinic',
+    'name': '宸新復健科診所',
+    'url': SITE_URL,
+    'telephone': '+886-3-5647999',
+    'logo': {
+      '@type': 'ImageObject',
+      'url': `${SITE_URL}/logo.webp`
+    },
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': '光復路一段371號B1',
+      'addressLocality': '新竹市',
+      'addressRegion': '東區',
+      'postalCode': '300',
+      'addressCountry': 'TW'
+    },
+    'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': '24.7833314',
+      'longitude': '121.0170937'
+    },
+    'areaServed': [
+      { "@type": "City", "name": "新竹市" },
+      { "@type": "City", "name": "竹北市" },
+      { "@type": "Place", "name": "新竹科學園區" },
+      { "@type": "AdministrativeArea", "name": "新竹縣" }
+    ]
+  };
+
+  if (!isAnnouncement) {
+    jsonLdData['lastReviewed'] = post.date;
+    jsonLdData['reviewedBy'] = {
+      '@type': ['Person', 'Physician'],
       'name': '林羿辰 醫師',
-      'jobTitle': '院長',
       'url': `${SITE_URL}/about/doctors`,
-      'image': `${SITE_URL}/images/main/a.webp`,
-      'alumniOf': {
-        '@type': 'EducationalOrganization',
-        'name': '國立台灣大學醫學系'
-      },
-      'worksFor': {
-        '@type': 'MedicalClinic',
-        'name': '宸新復健科診所',
-        'url': SITE_URL
-      },
+      'medicalSpecialty': [
+        { '@type': 'MedicalSpecialty', 'name': 'Physical Medicine and Rehabilitation' }
+      ],
       'sameAs': [
         'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
         'https://www.pmr.org.tw/associator/associator-all.asp?w/',
@@ -169,84 +242,9 @@ export default function NewsDetailPage({ params }: PageProps) {
           'url': 'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a=',
           'recognizedBy': { '@type': 'Organization', 'name': '中華民國骨質疏鬆症學會' }
         }
-      ],
-      'address': {
-        '@type': 'PostalAddress',
-        'streetAddress': '光復路一段371號B1',
-        'addressLocality': '新竹市',
-        'addressRegion': '東區',
-        'postalCode': '300',
-        'addressCountry': 'TW'
-      }
-    },
-
-    'publisher': {
-      '@type': 'MedicalClinic',
-      'name': '宸新復健科診所',
-      'url': SITE_URL,
-      'telephone': '+886-3-5647999',
-      'logo': {
-        '@type': 'ImageObject',
-        'url': `${SITE_URL}/logo.webp`
-      },
-      'address': {
-        '@type': 'PostalAddress',
-        'streetAddress': '光復路一段371號B1',
-        'addressLocality': '新竹市',
-        'addressRegion': '東區',
-        'postalCode': '300',
-        'addressCountry': 'TW'
-      },
-      'geo': {
-        '@type': 'GeoCoordinates',
-        'latitude': '24.7833314',
-        'longitude': '121.0170937'
-      },
-      'areaServed': [
-        { "@type": "City", "name": "新竹市" },
-        { "@type": "City", "name": "竹北市" },
-        { "@type": "Place", "name": "新竹科學園區" },
-        { "@type": "AdministrativeArea", "name": "新竹縣" }
       ]
-    },
-
-    ...(isAnnouncement ? {} : {
-      'lastReviewed': post?.date || '2026-01-01',
-      'reviewedBy': {
-        '@type': 'Person',
-        'name': '林羿辰 醫師',
-        'url': `${SITE_URL}/about/doctors`,
-        'sameAs': [
-          'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
-          'https://www.pmr.org.tw/associator/associator-all.asp?w/',
-          'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a='
-        ],
-        'hasCredential': [
-          {
-            '@type': 'EducationalOccupationalCredential',
-            'name': '醫事人員執業資格',
-            'credentialCategory': '醫師證書',
-            'url': 'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
-            'recognizedBy': { '@type': 'Organization', 'name': '中華民國衛生福利部' }
-          },
-          {
-            '@type': 'EducationalOccupationalCredential',
-            'name': '復健科專科醫師資格',
-            'credentialCategory': '復健科專科醫師證書',
-            'url': 'https://www.pmr.org.tw/associator/associator-all.asp?w/',
-            'recognizedBy': { '@type': 'Organization', 'name': '台灣復健醫學會' }
-          },
-          {
-            '@type': 'EducationalOccupationalCredential',
-            'name': '骨質疏鬆症學會專科醫師資格',
-            'credentialCategory': '骨質疏鬆症學會專科醫師證書',
-            'url': 'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a=',
-            'recognizedBy': { '@type': 'Organization', 'name': '中華民國骨質疏鬆症學會' }
-          }
-        ]
-      }
-    })
-  };
+    };
+  }
 
   const jsonLdBreadcrumb = {
     '@context': 'https://schema.org',
@@ -254,7 +252,7 @@ export default function NewsDetailPage({ params }: PageProps) {
     'itemListElement': [
       { '@type': 'ListItem', 'position': 1, 'name': '首頁', 'item': `${SITE_URL}/` },
       { '@type': 'ListItem', 'position': 2, 'name': '最新內容', 'item': `${SITE_URL}/about/news` },
-      { '@type': 'ListItem', 'position': 3, 'name': post?.title || '', 'item': currentUrl },
+      { '@type': 'ListItem', 'position': 3, 'name': post.title, 'item': currentUrl },
     ],
   }
 
@@ -364,9 +362,9 @@ export default function NewsDetailPage({ params }: PageProps) {
               <div className="p-4 md:p-10">
                 <header className="mb-10 border-l-4 border-cyan-500 pl-4 bg-gradient-to-r from-slate-900/80 to-transparent py-6 rounded-r-xl flex flex-col md:flex-row md:items-center gap-6">
 
-                  {/* QR Code 區塊 */}
+                  {/* 加入的 QR Code 區塊 */}
                   <div className="hidden md:block bg-white p-2 rounded-lg shrink-0 group relative shadow-lg ring-2 ring-slate-700">
-                    <img className="w-24 h-24 object-contain" src={qrCodeApiUrl} alt={`掃描閱讀 ${post?.title || ''}`} />
+                    <img className="w-24 h-24 object-contain" src={qrCodeApiUrl} alt={`掃描閱讀 ${post.title}`} />
                     <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-max bg-slate-900 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-slate-600">
                       掃描帶走文章
                     </div>
@@ -374,13 +372,13 @@ export default function NewsDetailPage({ params }: PageProps) {
 
                   <div className="flex-grow w-full">
                     <h1 className="text-3xl md:text-5xl font-bold font-sans text-white mb-4 tracking-wide leading-tight md:leading-[1.2]">
-                      {post?.title || ''}
+                      {post.title}
                     </h1>
 
                     <div className="flex flex-wrap items-center justify-between gap-3 w-full">
                       <div className="flex flex-wrap items-center gap-3">
                         <span className={`px-3 py-1 rounded-full text-sm font-bold border ${activeCategoryStyle}`}>
-                          {post?.category || ''}
+                          {post.category}
                         </span>
 
                         <span className="text-slate-400 text-sm flex items-center">
@@ -395,14 +393,14 @@ export default function NewsDetailPage({ params }: PageProps) {
                       </div>
 
                       <span className="text-slate-300 text-sm flex items-center bg-slate-700/50 px-3 py-1 rounded-full border border-slate-600">
-                        <i className="fa-regular fa-calendar mr-2"></i>最後更新日期：{post?.date || ''}
+                        <i className="fa-regular fa-calendar mr-2"></i>最後更新日期：{post.date}
                       </span>
                     </div>
                   </div>
                 </header>
 
                 <div className="article-content text-slate-300 leading-relaxed text-lg pb-6">
-                  <div dangerouslySetInnerHTML={{ __html: post?.contentHtml || '' }} />
+                  <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
                 </div>
               </div>
 
@@ -451,7 +449,7 @@ export default function NewsDetailPage({ params }: PageProps) {
                             </div>
                             <div className="text-gray-500">
                               最後更新日期：
-                              {post?.date ? (
+                              {post.date ? (
                                 <time dateTime={post.date} itemProp="dateModified">
                                   {post.date}
                                 </time>
@@ -473,7 +471,7 @@ export default function NewsDetailPage({ params }: PageProps) {
                   <p className="text-slate-400 mb-8 text-lg relative z-10">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
 
                   <div className="relative z-10">
-                    <ShareButtons url={currentUrl} title={post?.title || ''} />
+                    <ShareButtons url={currentUrl} title={post.title} />
                   </div>
 
                   <div className="mt-12 pt-8 border-t border-slate-700/50 relative z-10">
@@ -488,7 +486,7 @@ export default function NewsDetailPage({ params }: PageProps) {
                 </div>
               </footer>
 
-              {post?.referencesHtml && (
+              {post.referencesHtml && (
                 <section className="bg-slate-900/80 px-0 md:px-12 pb-12 text-left">
                   <div className="border-t border-slate-700/50 pt-8 px-2 md:px-0">
                     <div className="flex items-center mb-4 pb-3">
