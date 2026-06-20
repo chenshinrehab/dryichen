@@ -655,6 +655,12 @@ export const sportsInjuriesData = [
     description: '其他各種運動或是日常生活姿勢錯誤導致的傷害解析。',
     image: '/images/sportinjury/6.webp',
     injuries: [
+                                    {
+        slug: 'cervical-shoulder-pain-causes',
+        title: '肩頸痠痛全解析：從肌肉問題到脊椎疾患，疼痛地圖讓你懂？',
+        description: '全球盛行率高達 70% 的肩頸痠痛背後隱藏數十種病因。本文從運動醫學與解剖學視角，系統性拆解斜方肌、提肩胛肌、菱形肌的肌筋膜疼痛特徵，並深入辨別頸椎小面關節炎、椎間盤突出與胸廓出口症候群等結構性疾患，助你精準鑑別疼痛。',
+        image:  '/images/news/article/cervical-shoulder-pain-analysis.webp',
+      },
 
                                     {
         slug: 'low-back-pain-map',
