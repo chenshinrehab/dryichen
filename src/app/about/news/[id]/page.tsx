@@ -68,7 +68,7 @@ export default function NewsDetailPage({ params }: PageProps) {
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(currentUrl)}`
 
   // 分類判斷
-  const postCategory = post.category || ''
+  const postCategory = post?.category || ''
   const isAnnouncement = postCategory === '門診公告' || postCategory === '診所活動'
   const isMedicalContent = ['衛教文章', '醫學新知', '診間隨筆'].includes(postCategory)
 
@@ -86,7 +86,7 @@ export default function NewsDetailPage({ params }: PageProps) {
     ? categoryStyles[postCategory] 
     : 'bg-slate-500/10 text-slate-400 border-slate-500/30';
 
-  // 2. Schema 結構優化
+  // 2. Schema 結構優化 (徹底移除非安全性的 undefined 傳值雷區)
   const jsonLdData = {
     '@context': 'https://schema.org',
     '@type': isAnnouncement ? 'NewsArticle' : 'MedicalWebPage',
@@ -96,21 +96,21 @@ export default function NewsDetailPage({ params }: PageProps) {
       '@id': currentUrl
     },
     'url': currentUrl,
-    'name': post.title,
-    'headline': post.title,
-    'alternativeHeadline': post.seoTitle || undefined,
+    'name': post?.title || '',
+    'headline': post?.title || '',
+    ...(post?.seoTitle ? { 'alternativeHeadline': post.seoTitle } : {}),
     'image': {
       '@type': 'ImageObject',
-      'url': post.coverImage || `${SITE_URL}/images/main/a.webp`
+      'url': post?.coverImage || `${SITE_URL}/images/main/a.webp`
     },
-    'description': post.summary,
+    'description': post?.summary || '',
     'inLanguage': 'zh-TW',
 
     ...(isAnnouncement ? { 'articleSection': postCategory } : {}),
-    'keywords': post.keywords,
+    'keywords': post?.keywords || [],
 
     'datePublished': '2026-01-25',
-    'dateModified': post.date || '2026-02-25',
+    'dateModified': post?.date || '2026-02-25',
 
     ...(isMedicalContent ? {
       'medicalSpecialty': {
@@ -211,7 +211,7 @@ export default function NewsDetailPage({ params }: PageProps) {
     },
 
     ...(isAnnouncement ? {} : {
-      'lastReviewed': post.date,
+      'lastReviewed': post?.date || '2026-01-01',
       'reviewedBy': {
         '@type': 'Person',
         'name': '林羿辰 醫師',
@@ -254,7 +254,7 @@ export default function NewsDetailPage({ params }: PageProps) {
     'itemListElement': [
       { '@type': 'ListItem', 'position': 1, 'name': '首頁', 'item': `${SITE_URL}/` },
       { '@type': 'ListItem', 'position': 2, 'name': '最新內容', 'item': `${SITE_URL}/about/news` },
-      { '@type': 'ListItem', 'position': 3, 'name': post.title, 'item': currentUrl },
+      { '@type': 'ListItem', 'position': 3, 'name': post?.title || '', 'item': currentUrl },
     ],
   }
 
@@ -366,8 +366,7 @@ export default function NewsDetailPage({ params }: PageProps) {
 
                   {/* QR Code 區塊 */}
                   <div className="hidden md:block bg-white p-2 rounded-lg shrink-0 group relative shadow-lg ring-2 ring-slate-700">
-                    {/* 這裡補上 width 與 height 防止 Image 渲染抖動，或維持標準 img 標籤 */}
-                    <img className="w-24 h-24 object-contain" src={qrCodeApiUrl} alt={`掃描閱讀 ${post.title}`} />
+                    <img className="w-24 h-24 object-contain" src={qrCodeApiUrl} alt={`掃描閱讀 ${post?.title || ''}`} />
                     <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-max bg-slate-900 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-slate-600">
                       掃描帶走文章
                     </div>
@@ -375,13 +374,13 @@ export default function NewsDetailPage({ params }: PageProps) {
 
                   <div className="flex-grow w-full">
                     <h1 className="text-3xl md:text-5xl font-bold font-sans text-white mb-4 tracking-wide leading-tight md:leading-[1.2]">
-                      {post.title}
+                      {post?.title || ''}
                     </h1>
 
                     <div className="flex flex-wrap items-center justify-between gap-3 w-full">
                       <div className="flex flex-wrap items-center gap-3">
                         <span className={`px-3 py-1 rounded-full text-sm font-bold border ${activeCategoryStyle}`}>
-                          {post.category}
+                          {post?.category || ''}
                         </span>
 
                         <span className="text-slate-400 text-sm flex items-center">
@@ -396,14 +395,14 @@ export default function NewsDetailPage({ params }: PageProps) {
                       </div>
 
                       <span className="text-slate-300 text-sm flex items-center bg-slate-700/50 px-3 py-1 rounded-full border border-slate-600">
-                        <i className="fa-regular fa-calendar mr-2"></i>最後更新日期：{post.date}
+                        <i className="fa-regular fa-calendar mr-2"></i>最後更新日期：{post?.date || ''}
                       </span>
                     </div>
                   </div>
                 </header>
 
                 <div className="article-content text-slate-300 leading-relaxed text-lg pb-6">
-                  <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+                  <div dangerouslySetInnerHTML={{ __html: post?.contentHtml || '' }} />
                 </div>
               </div>
 
@@ -452,7 +451,7 @@ export default function NewsDetailPage({ params }: PageProps) {
                             </div>
                             <div className="text-gray-500">
                               最後更新日期：
-                              {post.date ? (
+                              {post?.date ? (
                                 <time dateTime={post.date} itemProp="dateModified">
                                   {post.date}
                                 </time>
@@ -474,7 +473,7 @@ export default function NewsDetailPage({ params }: PageProps) {
                   <p className="text-slate-400 mb-8 text-lg relative z-10">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
 
                   <div className="relative z-10">
-                    <ShareButtons url={currentUrl} title={post.title} />
+                    <ShareButtons url={currentUrl} title={post?.title || ''} />
                   </div>
 
                   <div className="mt-12 pt-8 border-t border-slate-700/50 relative z-10">
@@ -489,7 +488,7 @@ export default function NewsDetailPage({ params }: PageProps) {
                 </div>
               </footer>
 
-              {post.referencesHtml && (
+              {post?.referencesHtml && (
                 <section className="bg-slate-900/80 px-0 md:px-12 pb-12 text-left">
                   <div className="border-t border-slate-700/50 pt-8 px-2 md:px-0">
                     <div className="flex items-center mb-4 pb-3">
