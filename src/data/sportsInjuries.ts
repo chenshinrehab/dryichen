@@ -753,6 +753,13 @@ export const sportsInjuriesData = [
         image: '/images/news/article/gender-differences-sports-injuries.webp',
 
       },
+                        {
+        slug: 'thumb-basal-joint-arthritis',
+        title: '拇指根部劇痛拿不住東西？「拇指基底關節炎」全解析',
+        description: '從運動醫學與解剖生物力學角度，深入剖析中高齡族群與手部重度使用者常見的拇指基底關節炎。探討其發病機制、臨床 Eaton 分級系統，並系統性比較第一線保守治療、超音波導引注射（類固醇、玻尿酸、PRP）到手術選項，協助患者全面掌握延緩退化的實用照護指南。',
+        image: '/images/news/article/thumb-basal-joint-arthritis.webp',
+
+      },
                   {
         slug: 'type-1-diabetes-elite-athletes',
         title: '場上的雙重對決：第一型糖尿病運動員的血糖管理與奇蹟',
