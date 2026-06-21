@@ -152,6 +152,14 @@ export const sportsInjuriesData = [
         image: '/images/news/article/lumbar-disc-herniation-surgery.webp',
 
       },
+
+                     {
+        slug: 'ganglion-cyst-recurrence-analysis',
+        title: '腱鞘囊腫反覆復發怎麼辦？從成因到治療選項深度解析',
+        description: '手腕長了圓圓軟軟的腫塊？從運動醫學與手外科角度深度剖析手腕腱鞘囊腫（Ganglion Cyst）反覆復發的根本原因。針頭抽液為何只是「清空水桶」？開放性手術與微創腕關節鏡手術誰的復發率低？完整比較五大治療選項，助你重拾手腕健康。',
+        image: '/images/news/article/ganglion-cyst-recurrence-analysis.webp',
+
+      },
             {
         slug: 'scoliosis-causes-treatment',
         title: '脊椎側彎完整指南：成因、角度變化與治療選項全解析',
@@ -202,6 +210,13 @@ export const sportsInjuriesData = [
         description: '許多人聽到「類固醇」就心生恐懼，但其實類固醇有兩大截然不同的種類：用於消炎止痛的「皮質類固醇」與用於增肌的「合成代謝類固醇」。本文以運動醫學觀點，用你看得懂的語言，深度解析兩者的機制、用途、風險，並澄清常見迷思。',
         image: '/images/news/article/steroid-types-sports-medicine.webp',
       },
+                        {
+        slug: 'orthopedic-rehab-medication-safety',
+        title: '復健骨科常見五大類藥物長期使用會傷身嗎：止痛消炎藥、肌肉鬆弛劑，貼布等',
+        description: '從實證醫學出發，深入剖析骨科與復健科最常開立的五大類藥物：肌肉鬆弛劑、乙醯胺酚、NSAIDs 消炎藥、外用藥膏與含藥貼布。本文將解密其作用機制、隱藏的長期副作用（如肝腎毒性、骨折癒合延遲）與安全使用期限，並釐清三大常見用藥誤區。',
+        image: '/images/news/article/orthopedic-rehab-medication-safety.webp',
+      },
+    
     ]
   },
 

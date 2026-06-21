@@ -6167,7 +6167,236 @@ export const diseaseCategories: DiseaseCategory[] = [
         images: [
           { src: '/images/diseases/hand/section/e.webp', alt: '手腕隔間症候群' }
         ]
-      }
+      },
+{
+  id: 'cmc-joint-arthritis',
+  slug: 'cmc-joint-arthritis',
+  lastModified: '2026-06-21',
+  tags: [],
+  title: '掌指關節炎（拇指基底關節炎）',
+  description: '轉鑰匙、開罐頭、捏東西都會痛？大拇指根部反覆疼痛無力，可能是「掌指關節炎（CMC Joint Arthritis）」！為您解析病因、與媽媽手的差異，以及超音波導引注射、增生療法與徒手治療的精準修復方案。',
+  contentHtml: `
+    <p style="color: #e2e8f0 !important;">您是否有這樣的困擾：轉鑰匙開門、用力擰開瓶蓋、或是捏取小物件時，大拇指根部會傳來一陣刺痛？隨著時間過去，甚至連提重物或使用剪刀都讓您卻步？這種疼痛與一般的「媽媽手」截然不同，很可能是手部最常見的關節退化疾病之——<strong>「拇指腕掌關節炎」（CMC Joint Arthritis）</strong>，又稱為拇指基底關節炎。</p>
+    <br>
+    <p style="color: #e2e8f0 !important;">拇指的腕掌關節是一個馬鞍形關節，連接腕骨（大多角骨）與第一掌骨，讓大拇指擁有獨一無二的多方向活動能力——對掌、彎曲、伸展與旋轉。正是這種高度靈活性，讓它成為日常抓握與精細動作的核心。然而，正因使用頻繁、承受壓力巨大，它也是整隻手最容易磨損退化的關節之一。當關節軟骨逐漸耗損、韌帶鬆弛，骨頭之間失去緩衝，摩擦、發炎與骨刺便接踵而至，疼痛也隨之而來<sup>[1]</sup>。</p>
+
+    <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+      <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+        🔍 誰最容易中招？高風險族群與成因解析
+      </h2>
+
+      <p style="font-size: 1.1rem; color: #78350f !important;">研究顯示，拇指腕掌關節炎在30歲以上的成人中，發生率高達15%，在停經後女性中更可攀升至33%，且女性與男性的罹病比例約為6比1<sup>[2,3]</sup>。以下是常見的高風險族群：</p>
+
+      <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+        <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+          <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+          <div style="color: #92400e !important;">
+            <strong style="color: #dc2626 !important;">停經後女性：</strong>
+            雌激素下降會影響韌帶穩定性，使關節更容易鬆弛與磨損，是最主要的危險因子<sup>[2]</sup>。
+          </div>
+        </li>
+        <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+          <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+          <div style="color: #92400e !important;">
+            <strong style="color: #dc2626 !important;">手部反覆出力的職業：</strong>
+            美髮師、廚師、農夫、家庭主婦、手工藝者、長時間單手滑手機者，每天重複捏握動作，加速軟骨耗損。
+          </div>
+        </li>
+        <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+          <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+          <div style="color: #92400e !important;">
+            <strong style="color: #dc2626 !important;">曾有手部外傷或韌帶損傷史：</strong>
+            舊傷會破壞關節的穩定架構，使軟骨更快退化。
+          </div>
+        </li>
+        <li style="margin-bottom: 0; display: flex; align-items: start;">
+          <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
+          <div style="color: #92400e !important;">
+            <strong style="color: #dc2626 !important;">年齡增長與遺傳因素：</strong>
+            75歲以上女性的罹病率可達49%，且家族中有手部關節炎病史者風險更高<sup>[4]</sup>。
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+      <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
+        🔍 拇指根部痛，是關節炎還是媽媽手？精準釐清差異
+      </h2>
+
+      <p style="font-size: 1.1rem; color: #78350f !important;">拇指基部的疼痛常讓患者和媽媽手（De Quervain's Tenosynovitis）混淆，但兩者的病理、痛點與誘發動作截然不同。在宸新復健科，我們透過高解析超音波與精確的理學檢查，快速區分病灶所在。</p>
+
+      <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
+        <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+          <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
+          <div style="color: #92400e !important;">
+            <strong style="color: #dc2626 !important;">疼痛位置大不同：</strong>
+            <br><strong>👉 媽媽手：</strong> 疼痛集中在橈骨莖突（手腕橈側的骨性凸起處），是肌腱發炎。
+            <br><strong>👉 腕掌關節炎：</strong> 痛點深在拇指根部「關節」本身，即大拇指與手腕交接的鞍形關節內。
+          </div>
+        </li>
+        <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
+          <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span>
+          <div style="color: #92400e !important;">
+            <strong style="color: #dc2626 !important;">誘發動作大不同：</strong>
+            <br><strong>👉 媽媽手：</strong> 拇指「上翹」和手腕橈偏時誘發（Finkelstein's Test 陽性），抱嬰兒、扭毛巾時加重。
+            <br><strong>👉 腕掌關節炎：</strong> 拇指「捏、握、轉」時誘發，如開瓶蓋、轉鑰匙、用指尖捏硬幣；旋磨測試（Grind Test）通常呈陽性<sup>[5]</sup>。
+          </div>
+        </li>
+        <li style="margin-bottom: 0; display: flex; align-items: start;">
+          <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span>
+          <div style="color: #92400e !important;">
+            <strong style="color: #0891b2 !important;">特殊病程特徵：</strong>
+            <br>腕掌關節炎嚴重時，大拇指基部可能出現明顯腫脹、外觀變形（拇指基部向外突出）、捏握力大幅下降，甚至出現靜止痛與夜間痛。媽媽手則通常不伴隨關節變形。
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <p><img src="/images/diseases/hand/cmc/b.webp" alt="拇指腕掌關節炎與媽媽手比較" style="width: 100%; height: auto;"></p>
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <h3 style="color: #f8fafc !important;">🛡️ 宸新全方位治療：精準抗炎，重建關節功能</h3>
+    <p style="color: #e2e8f0 !important;">腕掌關節炎若長期輕忽，軟骨持續磨耗，可能導致關節變形甚至脫臼（半脫位），嚴重影響日常生活。治療目標是<strong>「有效控制疼痛與發炎」</strong>並<strong>「維持或改善關節功能」</strong>。以下治療方式均有文獻實證支持：</p>
+
+    <p><img src="/images/diseases/hand/cmc/c.webp" alt="拇指腕掌關節炎超音波診斷" style="width: 40%; height: auto;"></p>
+
+    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+      <h4 style="margin-top: 0; color: #0e7490 !important;">1. 精準關節內注射：<a href="/about/clinic/ultrasound" class="text-cyan-400 hover:underline">超音波導引注射</a></h4>
+      <p style="margin-bottom: 0; color: #334155 !important;">
+        超音波導引可大幅提升針頭進入關節腔的準確率，確保藥物直達病灶。
+        <ul style="color: #334155 !important; margin-top: 0.5rem;">
+          <li><strong>類固醇注射（Corticosteroid Injection）：</strong> 可快速降低關節內發炎反應，緩解疼痛。研究顯示可在短中期（1至6個月）提供有效止痛效果，適合急性發作期患者<sup>[6,7]</sup>。</li>
+          <li><strong>玻尿酸注射（Hyaluronic Acid / 關節潤滑液）：</strong> 多項隨機對照試驗顯示，玻尿酸注射在緩解疼痛方面效果與類固醇相當，但效期更長（部分研究觀察超過6個月），且對關節功能的改善優於類固醇；兩者在長期追蹤上並無顯著差異<sup>[6,8]</sup>。</li>
+          <li><strong><a href="/treatments/prp" class="text-cyan-400 hover:underline">增生療法 / PRP 注射（Platelet-Rich Plasma）：</a></strong> 自體血小板注射可促進關節組織修復與軟骨保護。Mayo Clinic 研究顯示，PRP注射在68.8%的患者中達到中等或優良的症狀改善，且療效平均持續15.6個月，整體滿意度高；相較於類固醇，PRP在患者整體滿意度與功能改善上有更佳表現<sup>[9,10]</sup>。</li>
+        </ul>
+      </p>
+    </div>
+
+    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+      <h4 style="margin-top: 0; color: #0e7490 !important;">2. 促進組織再生：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療（ESWT）</a></h4>
+      <p style="margin-bottom: 0; color: #334155 !important;">
+        體外震波利用高能量聲波作用於關節周圍組織，促進局部血液循環、刺激組織修復與膠原蛋白再生，並具有神經調控止痛效果。2024年一項前瞻性臨床試驗（SWEX-TO）將拇指腕掌關節炎患者隨機分為震波治療組與運動治療組，結果顯示兩組均在6個月內顯著改善疼痛（VAS）與功能（DASH），震波組在部分指標上改善幅度更大<sup>[11]</sup>。對不適合注射或希望強化組織修復的患者，震波治療是有力的選擇。
+      </p>
+    </div>
+
+    <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+      <h4 style="margin-top: 0; color: #0e7490 !important;">3. 動態穩定與關節保護：<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手治療與護具固定</a></h4>
+      <p style="margin-bottom: 0; color: #334155 !important;">
+        美國手部治療師學會（ASHT）2023年共識指引建議，非手術治療應包含護具固定、動態穩定訓練計畫與關節保護教育<sup>[12]</sup>。
+        <ul style="color: #334155 !important; margin-top: 0.5rem;">
+          <li><strong>護具（Orthosis）：</strong> 系統性回顧與統合分析確認，護具固定能有效在中期（3至12個月）減輕拇指腕掌關節炎的疼痛<sup>[13]</sup>。建議在需要出力的活動時配戴，急性發作期可全天配戴。</li>
+          <li><strong>徒手治療與運動訓練：</strong> 14項隨機對照試驗的統合分析顯示，以運動為基礎的介入，在短期內能顯著改善疼痛強度（平均差 −21.91 mm VAS）與手腕功能失能程度，效果優於不治療<sup>[14]</sup>。重點在於針對大拇指周圍肌群（如對掌肌、第一背側骨間肌）進行動態穩定訓練，以補強韌帶不足的關節穩定性。</li>
+        </ul>
+      </p>
+    </div>
+
+    <p><img src="/images/diseases/hand/cmc/d.webp" alt="拇指腕掌關節炎居家復健運動" style="width: 100%; height: auto;"></p>
+    <h3 style="color: #f8fafc !important;">🧘‍♂️ 居家復健與保養：強化關節，延緩退化</h3>
+    <p style="color: #e2e8f0 !important;">在疼痛緩解後，針對性的伸展與肌力訓練能穩定關節、預防退化加速：</p>
+
+    <div style="margin-bottom: 2rem;">
+      <h4 style="color: #22d3ee !important;">1. 拇指對掌活動度訓練</h4>
+      <p style="color: #e2e8f0 !important;">
+        維持腕掌關節的活動範圍，預防攣縮。
+        <br>1. 手放鬆，將大拇指指尖分別碰觸食指、中指、無名指、小指的指尖，做出「OK」的形狀。
+        <br>2. 每次碰觸後停留3秒，確認動作輕柔不引發疼痛。
+        <br>3. 每組做5至10次，一天進行3組。疼痛緩解後可逐漸增加次數。
+      </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+      <h4 style="color: #22d3ee !important;">2. 拇指外展肌力訓練（橡皮筋或彈力帶）</h4>
+      <p style="color: #e2e8f0 !important;">
+        <strong>強化關節主動穩定能力的關鍵！</strong>訓練拇指外展肌，能幫助分散關節面的壓力，減少磨耗。
+        <br>1. 將一條橡皮筋套在大拇指與食指上。
+        <br>2. 大拇指向外展開（遠離食指方向），對抗橡皮筋的阻力，緩慢維持5秒。
+        <br>3. 緩慢放回起始位置。重複10次為一組，做3組。
+        <br>動作過程中確保拇指根部關節不引發疼痛，若有不適立即停止。
+      </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+      <h4 style="color: #22d3ee !important;">3. 大魚際肌與第一背側骨間肌強化訓練</h4>
+      <p style="color: #e2e8f0 !important;">
+        研究指出針對第一背側骨間肌（FDI）與對掌肌的訓練，能動態穩定腕掌關節、減少半脫位<sup>[15]</sup>。
+        <br>1. 手放在桌面上，掌心朝下。
+        <br>2. 用食指側面（第一骨間肌）輕輕抵住一個固定物體（如書本側面）並施力「推」，維持5秒。
+        <br>3. 或以拇指指腹對抗食指指尖，做捏夾動作，維持5秒。
+        <br>4. 每組10次，做3組，力量以無痛為原則。
+      </p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+      <h4 style="color: #22d3ee !important;">4. 關節保護技巧與日常人體工學調整</h4>
+      <p style="color: #e2e8f0 !important;">
+        改變出力方式是延緩退化最根本的保養。
+        <br>1. 開瓶蓋時，改用手掌根部（大魚際區域）對準瓶蓋旋轉，避免單靠拇指捏轉。
+        <br>2. 拿杯子時，以整個手掌抱住杯身，避免用拇指與食指捏住杯耳。
+        <br>3. 使用加粗握把的筆或廚具工具，減少拇指需要使力的角度。
+        <br>4. 長時間使用手機者，善用食指滑動，減少拇指單獨承擔滑動與打字的動作。
+      </p>
+    </div>
+
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+
+    <div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin: 2rem 0; border: 1px solid #cbd5e1;">
+      <h3 style="color: #1e293b !important; margin-top: 0; font-size: 1rem;">📚 參考文獻</h3>
+      <ol style="color: #475569 !important; font-size: 0.85rem; line-height: 1.8; padding-left: 1.25rem; margin-bottom: 0;">
+        <li>Ladd AL, et al. Pathomechanics of the thumb carpometacarpal joint. <em>J Hand Surg Am.</em> 2013;38(11):2192–2204.</li>
+        <li>Pellegrini VD Jr. Osteoarthritis of the thumb trapeziometacarpal joint: a study of the pathophysiology of articular cartilage degeneration. <em>J Hand Surg Am.</em> 1991;16(6):967–974.</li>
+        <li>Hasley IB, et al. Platelet-Rich Plasma Injection for Thumb Carpometacarpal Joint Osteoarthritis. <em>Arch Rehabil Res Clin Transl.</em> 2023;5(1):100257.</li>
+        <li>van Heest A, Kallemeier P. Thumb carpal metacarpal arthritis. <em>J Am Acad Orthop Surg.</em> 2008;16(3):140–151.</li>
+        <li>Eaton RG, Glickel SZ. Trapeziometacarpal osteoarthritis: staging as a rationale for treatment. <em>Hand Clin.</em> 1987;3(4):455–471.</li>
+        <li>Heyworth BE, et al. Hylan versus corticosteroid versus placebo for treatment of basal joint arthritis: a prospective, randomized, double-blinded clinical trial. <em>J Hand Surg Am.</em> 2008;33(1):40–48.</li>
+        <li>Kapoutsis DV, et al. Efficacy of Intra-Articular Corticosteroid Injection for Nonsurgical Management of Trapeziometacarpal Osteoarthritis: A Systematic Review and Meta-Analysis. <em>J Hand Surg Am.</em> 2024.</li>
+        <li>Monfort J, et al. Comparative efficacy of intra-articular hyaluronic acid and corticoid injections in osteoarthritis of the first carpometacarpal joint. <em>Rev Rhum Engl Ed.</em> 2015;82(3):184–189.</li>
+        <li>Hasley IB, et al. Platelet-Rich Plasma Injection for Thumb Carpometacarpal Joint Osteoarthritis. <em>Arch Rehabil Res Clin Transl.</em> 2023;5(1):100257.</li>
+        <li>Malahias MA, et al. Platelet-Rich Plasma versus Corticosteroid Intra-Articular Injections for the Treatment of Trapeziometacarpal Arthritis: A Prospective Randomized Controlled Clinical Trial. <em>Cartilage.</em> 2021;12(1):51–61.</li>
+        <li>Covelli I, et al. Extracorporeal Shock Wave Therapy (ESWT) vs. Exercise in Thumb Osteoarthritis (SWEX-TO): Prospective Clinical Trial at 6 Months. <em>Life.</em> 2024;14(11):1453.</li>
+        <li>American Society of Hand Therapists. Assessment and treatment of nonsurgical thumb carpometacarpal joint osteoarthritis: A modified Delphi-based consensus paper. <em>J Hand Ther.</em> 2023.</li>
+        <li>Berger M, et al. Comparative Effectiveness of Orthoses for Thumb Osteoarthritis: A Systematic Review and Network Meta-analysis. <em>Arch Phys Med Rehabil.</em> 2020;101(12):2195–2204.</li>
+        <li>Batistaki C, et al. Exercise-Based Interventions Are Effective in the Management of Patients with Thumb Carpometacarpal Osteoarthritis: A Systematic Review and Meta-Analysis. <em>J Clin Med.</em> 2024.</li>
+        <li>Cantero-Tellez R, et al. Necessity of Including Thumb Carpometacarpal Joint Mobilization in Osteoarthritis Treatment: A Randomized Clinical Trial. <em>J Hand Ther.</em> 2018;31(4):385–390.</li>
+      </ol>
+    </div>
+
+    <div style="background-color: #ecfdf5; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+      <h3 style="color: #047857 !important; margin-top: 0;">👨‍⚕️ 別讓大拇指的疼痛，限制了您的每一個日常！</h3>
+      <p style="color: #334155 !important; margin-bottom: 1.5rem;">轉鑰匙、開罐子、縫紉、用筷子——生活中的每一個細節都需要大拇指的參與。拇指腕掌關節炎若置之不理，關節退化只會持續加劇，最終可能走向手術。宸新復健科擁有高解析超音波設備，能精確評估關節磨損程度與周圍結構，搭配增生注射（PRP/玻尿酸）、體外震波與動態穩定運動訓練，為您量身設計保守修復計畫。趁早介入，不僅能有效控制疼痛，更能延緩退化、維護功能。</p>
+      <a href="/booking" style="color: inherit; text-decoration: underline;">大拇指根部反覆疼痛、握力下降？立即預約超音波精準評估！</a>
+    </div>
+  `,
+  symptoms: [
+    '大拇指根部（腕掌關節）深處疼痛',
+    '捏取、旋轉、握持動作時疼痛加劇（如轉鑰匙、開瓶蓋）',
+    '拇指捏握力明顯下降，拿物品容易掉落',
+    '關節活動時可能有摩擦感（骨摩擦音）或僵硬感'
+  ],
+  treatments: [
+    '護具固定與關節保護衛教',
+    '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引增生注射（PRP）</a>🔍️',
+    '<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手運動治療與動態穩定訓練</a>🔍️',
+    '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療（促進關節組織修復）</a>🔍️'
+  ],
+  seoKeywords: [
+    '拇指基底關節炎',
+    '腕掌關節炎',
+    'CMC joint arthritis',
+    '大拇指根部痛',
+    '拇指無力',
+    '轉鑰匙大拇指痛',
+    '超音波導引注射',
+    '增生療法',
+    'PRP拇指',
+    '拇指退化'
+  ],
+  seoDescription: '大拇指根部疼痛、捏握無力？可能是拇指腕掌關節炎（CMC Joint Arthritis）！宸新復健科透過高解析超音波精準診斷，提供PRP增生注射、玻尿酸注射、體外震波與動態穩定訓練，延緩退化、恢復手部功能。',
+  images: [
+    { src: '/images/diseases/hand/cmc/e.webp', alt: '拇指腕掌關節炎（CMC Joint Arthritis）' }
+  ]
+}
+
     ]
   },
 
