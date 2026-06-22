@@ -9,6 +9,13 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 // ✨ 核心修正 1：強制關閉動態路由參數，徹底阻斷未知參數或爬蟲穿透至後端資料庫
 export const dynamicParams = false;
 
+// ✨ 修正補強：生成所有合法的分類靜態路徑，確保靜態導覽頁與防禦機制正常運作
+export async function generateStaticParams() {
+  return sportsInjuriesData.map((c) => ({
+    category: c.category,
+  }))
+}
+
 // 1. 動態生成 Metadata，強化 SEO/GEO
 export async function generateMetadata({ params }: { params: { category: string } }): Promise<Metadata> {
   const categoryData = sportsInjuriesData.find(c => c.category === params.category)
@@ -16,7 +23,7 @@ export async function generateMetadata({ params }: { params: { category: string 
 
   const SITE_URL = 'https://www.dryichen.com.tw' // 建議替換為你的環境變數
   const title = `${categoryData.title}復健與預防 - 專業運動醫學診斷 | 新竹宸新復健科`
-  const description = `新竹宸新復健科針對${categoryData.title}提供專業傷害分析。包含${categoryData.injuries.slice(0, 3).map(i => i.title).join('、')}的治療方案，由運動醫學專家林羿辰醫師指導。`
+  const description = `新竹宸新復健科針對${categoryData.title}提供專業傷害 analyses。包含${categoryData.injuries.slice(0, 3).map(i => i.title).join('、')}的治療方案，由運動醫學專家林羿辰醫師指導。`
 
   return {
     title,
@@ -68,8 +75,8 @@ export default function SportsCategoryPage({ params }: { params: { category: str
             '@type': 'ListItem',
             'position': index + 1,
             'name': injury.title,
-            // ✨ 修正優化：將清單的目標 URL 修正指向主要衛教頁面（正宮網址），完美打通內部連結權重
-            'url': `${SITE_URL}/about/news/${injury.slug}`
+            // ✨ 修正：將 Schema 指向的目標 URL 同步修復為連至特色門診專屬子分頁網址
+            'url': `${SITE_URL}/weight-bone/sports-injuries/${params.category}/${injury.slug}`
           }))
         },
         'author': {
@@ -110,12 +117,10 @@ export default function SportsCategoryPage({ params }: { params: { category: str
           {/* 具體傷害項目列表 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {categoryData.injuries.map((injury) => (
-              /* ✨ 核心修正 2：為具體項目的 Link 補上 prefetch={false}，防止背景自動預載點穿後端與 Cloudflare 快取 */
-              /* ✨ 終極修正：將所有卡片點擊的超連結，一律改為指向主要的動態路由文章區（/about/news/${injury.slug}） */
-              /* 這一步可以立刻補上所有文章失蹤的「內部連結」，一舉洗掉 Ahrefs 的 Orphan Page（孤兒網頁）錯誤 */
+              /* ✨ 修正：將 href 的超連結導向，正確調整改為進去它下面的專屬子分頁路由（/weight-bone/sports-injuries/${params.category}/${injury.slug}） */
               <Link
                 key={injury.slug}
-                href={`/about/news/${injury.slug}`}
+                href={`/weight-bone/sports-injuries/${params.category}/${injury.slug}`}
                 prefetch={false}
                 className="group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] hover:-translate-y-1 transition-all duration-300 flex flex-col"
               >

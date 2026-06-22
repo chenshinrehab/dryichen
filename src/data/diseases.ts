@@ -6178,21 +6178,21 @@ export const diseaseCategories: DiseaseCategory[] = [
   contentHtml: `
     <p style="color: #e2e8f0 !important;">您是否有這樣的困擾：轉鑰匙開門、用力擰開瓶蓋、或是捏取小物件時，大拇指根部會傳來一陣刺痛？隨著時間過去，甚至連提重物或使用剪刀都讓您卻步？這種疼痛與一般的「媽媽手」截然不同，很可能是手部最常見的關節退化疾病之——<strong>「拇指腕掌關節炎」（CMC Joint Arthritis）</strong>，又稱為拇指基底關節炎。</p>
     <br>
-    <p style="color: #e2e8f0 !important;">拇指的腕掌關節是一個馬鞍形關節，連接腕骨（大多角骨）與第一掌骨，讓大拇指擁有獨一無二的多方向活動能力——對掌、彎曲、伸展與旋轉。正是這種高度靈活性，讓它成為日常抓握與精細動作的核心。然而，正因使用頻繁、承受壓力巨大，它也是整隻手最容易磨損退化的關節之一。當關節軟骨逐漸耗損、韌帶鬆弛，骨頭之間失去緩衝，摩擦、發炎與骨刺便接踵而至，疼痛也隨之而來<sup>[1]</sup>。</p>
+    <p style="color: #e2e8f0 !important;">拇指的腕掌關節是一個馬鞍形關節，連接腕骨（大多角骨）與第一掌骨，讓大拇指擁有獨一無二的多方向活動能力——對掌、彎曲、伸展與旋轉。正是這種高度靈活性，讓它成為日常抓握與精細動作的核心。然而，正因使用頻繁、承受壓力巨大，它也是整隻手最容易磨損退化的關節之一。當關節軟骨逐漸耗損、韌帶鬆弛，骨頭之間失去緩衝，摩擦、發炎與骨刺便接踵而至，疼痛也隨之而來<sup><a href="https://doi.org/10.1016/j.jhsa.2013.03.046" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[1]</a></sup>。</p>
 
     <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
       <h2 style="color: #b45309 !important; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">
         🔍 誰最容易中招？高風險族群與成因解析
       </h2>
 
-      <p style="font-size: 1.1rem; color: #78350f !important;">研究顯示，拇指腕掌關節炎在30歲以上的成人中，發生率高達15%，在停經後女性中更可攀升至33%，且女性與男性的罹病比例約為6比1<sup>[2,3]</sup>。以下是常見的高風險族群：</p>
+      <p style="font-size: 1.1rem; color: #78350f !important;">研究顯示，拇指腕掌關節炎在30歲以上的成人中，發生率高達15%，在停經後女性中更可攀升至33%，且女性與男性的罹病比例約為6比1<sup><a href="https://pubmed.ncbi.nlm.nih.gov/1951239/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a>, <a href="https://doi.org/10.1016/j.arrct.2023.100257" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[3]</a></sup>。以下是常見的高風險族群：</p>
 
       <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e !important;">
         <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
           <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span>
           <div style="color: #92400e !important;">
             <strong style="color: #dc2626 !important;">停經後女性：</strong>
-            雌激素下降會影響韌帶穩定性，使關節更容易鬆弛與磨損，是最主要的危險因子<sup>[2]</sup>。
+            雌激素下降會影響韌帶穩定性，使關節更容易鬆弛與磨損，是最主要的危險因子<sup><a href="https://pubmed.ncbi.nlm.nih.gov/1951239/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[2]</a></sup>。
           </div>
         </li>
         <li style="margin-bottom: 1.5rem; display: flex; align-items: start;">
@@ -6213,7 +6213,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span>
           <div style="color: #92400e !important;">
             <strong style="color: #dc2626 !important;">年齡增長與遺傳因素：</strong>
-            75歲以上女性的罹病率可達49%，且家族中有手部關節炎病史者風險更高<sup>[4]</sup>。
+            75歲以上女性的罹病率可達49%，且家族中有手部關節炎病史者風險更高<sup><a href="https://doi.org/10.5435/00124635-200803000-00005" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[4]</a></sup>。
           </div>
         </li>
       </ul>
@@ -6240,7 +6240,7 @@ export const diseaseCategories: DiseaseCategory[] = [
           <div style="color: #92400e !important;">
             <strong style="color: #dc2626 !important;">誘發動作大不同：</strong>
             <br><strong>👉 媽媽手：</strong> 拇指「上翹」和手腕橈偏時誘發（Finkelstein's Test 陽性），抱嬰兒、扭毛巾時加重。
-            <br><strong>👉 腕掌關節炎：</strong> 拇指「捏、握、轉」時誘發，如開瓶蓋、轉鑰匙、用指尖捏硬幣；旋磨測試（Grind Test）通常呈陽性<sup>[5]</sup>。
+            <br><strong>👉 腕掌關節炎：</strong> 拇指「捏、握、轉」時誘發，如開瓶蓋、轉鑰匙、用指尖捏硬幣；旋磨測試（Grind Test）通常呈陽性<sup><a href="https://pubmed.ncbi.nlm.nih.gov/3692554/" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[5]</a></sup>。
           </div>
         </li>
         <li style="margin-bottom: 0; display: flex; align-items: start;">
@@ -6253,22 +6253,20 @@ export const diseaseCategories: DiseaseCategory[] = [
       </ul>
     </div>
 
-    <p><img src="/images/diseases/hand/cmc/b.webp" alt="拇指腕掌關節炎與媽媽手比較" style="width: 100%; height: auto;"></p>
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
     <h3 style="color: #f8fafc !important;">🛡️ 宸新全方位治療：精準抗炎，重建關節功能</h3>
     <p style="color: #e2e8f0 !important;">腕掌關節炎若長期輕忽，軟骨持續磨耗，可能導致關節變形甚至脫臼（半脫位），嚴重影響日常生活。治療目標是<strong>「有效控制疼痛與發炎」</strong>並<strong>「維持或改善關節功能」</strong>。以下治療方式均有文獻實證支持：</p>
 
-    <p><img src="/images/diseases/hand/cmc/c.webp" alt="拇指腕掌關節炎超音波診斷" style="width: 40%; height: auto;"></p>
 
     <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
       <h4 style="margin-top: 0; color: #0e7490 !important;">1. 精準關節內注射：<a href="/about/clinic/ultrasound" class="text-cyan-400 hover:underline">超音波導引注射</a></h4>
       <p style="margin-bottom: 0; color: #334155 !important;">
         超音波導引可大幅提升針頭進入關節腔的準確率，確保藥物直達病灶。
         <ul style="color: #334155 !important; margin-top: 0.5rem;">
-          <li><strong>類固醇注射（Corticosteroid Injection）：</strong> 可快速降低關節內發炎反應，緩解疼痛。研究顯示可在短中期（1至6個月）提供有效止痛效果，適合急性發作期患者<sup>[6,7]</sup>。</li>
-          <li><strong>玻尿酸注射（Hyaluronic Acid / 關節潤滑液）：</strong> 多項隨機對照試驗顯示，玻尿酸注射在緩解疼痛方面效果與類固醇相當，但效期更長（部分研究觀察超過6個月），且對關節功能的改善優於類固醇；兩者在長期追蹤上並無顯著差異<sup>[6,8]</sup>。</li>
-          <li><strong><a href="/treatments/prp" class="text-cyan-400 hover:underline">增生療法 / PRP 注射（Platelet-Rich Plasma）：</a></strong> 自體血小板注射可促進關節組織修復與軟骨保護。Mayo Clinic 研究顯示，PRP注射在68.8%的患者中達到中等或優良的症狀改善，且療效平均持續15.6個月，整體滿意度高；相較於類固醇，PRP在患者整體滿意度與功能改善上有更佳表現<sup>[9,10]</sup>。</li>
+          <li><strong>類固醇注射（Corticosteroid Injection）：</strong> 可快速降低關節內發炎反應，緩解疼痛。研究顯示可在短中期（1至6個月）提供有效止痛效果，適合急性發作期患者<sup><a href="https://doi.org/10.1016/j.jhsa.2007.10.009" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a>, <a href="https://doi.org/10.1016/j.jhsa.2024.02.001" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[7]</a></sup>。</li>
+          <li><strong>玻尿酸注射（Hyaluronic Acid / 關節潤滑液）：</strong> 多項隨機對照試驗顯示，玻尿酸注射在緩解疼痛方面效果與類固醇相當，但效期更長（部分研究觀察超過6個月），且對關節功能的改善優於類固醇；兩者在長期追蹤上並無顯著差異<sup><a href="https://doi.org/10.1016/j.jhsa.2007.10.009" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[6]</a>, <a href="https://doi.org/10.1016/j.jbspin.2014.11.007" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[8]</a></sup>。</li>
+          <li><strong><a href="/treatments/prp" class="text-cyan-400 hover:underline">增生療法 / PRP 注射（Platelet-Rich Plasma）：</a></strong> 自體血小板注射可促進關節組織修復與軟骨保護。Mayo Clinic 研究顯示，PRP注射在68.8%的患者中達到中等或優良的症狀改善，且療效平均持續15.6個月，整體滿意度高；相較於類固醇，PRP在患者整體滿意度與功能改善上有更佳表現<sup><a href="https://doi.org/10.1016/j.arrct.2023.100257" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[9]</a>, <a href="https://doi.org/10.1177/1947603518817345" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[10]</a></sup>。</li>
         </ul>
       </p>
     </div>
@@ -6276,22 +6274,21 @@ export const diseaseCategories: DiseaseCategory[] = [
     <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
       <h4 style="margin-top: 0; color: #0e7490 !important;">2. 促進組織再生：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">體外震波治療（ESWT）</a></h4>
       <p style="margin-bottom: 0; color: #334155 !important;">
-        體外震波利用高能量聲波作用於關節周圍組織，促進局部血液循環、刺激組織修復與膠原蛋白再生，並具有神經調控止痛效果。2024年一項前瞻性臨床試驗（SWEX-TO）將拇指腕掌關節炎患者隨機分為震波治療組與運動治療組，結果顯示兩組均在6個月內顯著改善疼痛（VAS）與功能（DASH），震波組在部分指標上改善幅度更大<sup>[11]</sup>。對不適合注射或希望強化組織修復的患者，震波治療是有力的選擇。
+        體外震波利用高能量聲波作用於關節周圍組織，促進局部血液循環、刺激組織修復與膠原蛋白再生，並具有神經調控止痛效果。2024年一項前瞻性臨床試驗（SWEX-TO）將拇指腕掌關節炎患者隨機分為震波治療組與運動治療組，結果顯示兩組均在6個月內顯著改善疼痛（VAS）與功能（DASH），震波組在部分指標上改善幅度更大<sup><a href="https://doi.org/10.3390/life14111453" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[11]</a></sup>。對不適合注射或希望強化組織修復的患者，震波治療是有力的選擇。
       </p>
     </div>
 
     <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
       <h4 style="margin-top: 0; color: #0e7490 !important;">3. 動態穩定與關節保護：<a href="/treatments/manual" class="text-cyan-400 hover:underline">徒手治療與護具固定</a></h4>
       <p style="margin-bottom: 0; color: #334155 !important;">
-        美國手部治療師學會（ASHT）2023年共識指引建議，非手術治療應包含護具固定、動態穩定訓練計畫與關節保護教育<sup>[12]</sup>。
+        美國手部治療師學會（ASHT）2023年共識指引建議，非手術治療應包含護具固定、動態穩定訓練計畫與關節保護教育<sup><a href="https://doi.org/10.1016/j.jht.2023.08.009" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[12]</a></sup>。
         <ul style="color: #334155 !important; margin-top: 0.5rem;">
-          <li><strong>護具（Orthosis）：</strong> 系統性回顧與統合分析確認，護具固定能有效在中期（3至12個月）減輕拇指腕掌關節炎的疼痛<sup>[13]</sup>。建議在需要出力的活動時配戴，急性發作期可全天配戴。</li>
-          <li><strong>徒手治療與運動訓練：</strong> 14項隨機對照試驗的統合分析顯示，以運動為基礎的介入，在短期內能顯著改善疼痛強度（平均差 −21.91 mm VAS）與手腕功能失能程度，效果優於不治療<sup>[14]</sup>。重點在於針對大拇指周圍肌群（如對掌肌、第一背側骨間肌）進行動態穩定訓練，以補強韌帶不足的關節穩定性。</li>
+          <li><strong>護具（Orthosis）：</strong> 系統性回顧與統合分析確認，護具固定能有效在中期（3至12個月）減輕拇指腕掌關節炎的疼痛<sup><a href="https://doi.org/10.1016/j.apmr.2020.08.010" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[13]</a></sup>。建議在需要出力的活動時配戴，急性發作期可全天配戴。</li>
+          <li><strong>徒手治療與運動訓練：</strong> 14項隨機對照試驗的統合分析顯示，以運動為基礎的介入，在短期內能顯著改善疼痛強度（平均差 −21.91 mm VAS）與手腕功能失能程度，效果優於不治療<sup><a href="https://doi.org/10.3390/jcm13041042" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[14]</a></sup>。重點在於針對大拇指周圍肌群（如對掌肌、第一背側骨間肌）進行動態穩定訓練，以補強韌帶不足的關節穩定性。</li>
         </ul>
       </p>
     </div>
 
-    <p><img src="/images/diseases/hand/cmc/d.webp" alt="拇指腕掌關節炎居家復健運動" style="width: 100%; height: auto;"></p>
     <h3 style="color: #f8fafc !important;">🧘‍♂️ 居家復健與保養：強化關節，延緩退化</h3>
     <p style="color: #e2e8f0 !important;">在疼痛緩解後，針對性的伸展與肌力訓練能穩定關節、預防退化加速：</p>
 
@@ -6319,7 +6316,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     <div style="margin-bottom: 2rem;">
       <h4 style="color: #22d3ee !important;">3. 大魚際肌與第一背側骨間肌強化訓練</h4>
       <p style="color: #e2e8f0 !important;">
-        研究指出針對第一背側骨間肌（FDI）與對掌肌的訓練，能動態穩定腕掌關節、減少半脫位<sup>[15]</sup>。
+        研究指出針對第一背側骨間肌（FDI）與對掌肌的訓練，能動態穩定腕掌關節、減少半脫位<sup><a href="https://doi.org/10.1016/j.jht.2017.06.006" target="_blank" rel="noopener noreferrer" style="color: #2dd4bf; text-decoration: underline;">[15]</a></sup>。
         <br>1. 手放在桌面上，掌心朝下。
         <br>2. 用食指側面（第一骨間肌）輕輕抵住一個固定物體（如書本側面）並施力「推」，維持5秒。
         <br>3. 或以拇指指腹對抗食指指尖，做捏夾動作，維持5秒。
@@ -6340,24 +6337,84 @@ export const diseaseCategories: DiseaseCategory[] = [
 
     <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
 
-    <div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin: 2rem 0; border: 1px solid #cbd5e1;">
-      <h3 style="color: #1e293b !important; margin-top: 0; font-size: 1rem;">📚 參考文獻</h3>
-      <ol style="color: #475569 !important; font-size: 0.85rem; line-height: 1.8; padding-left: 1.25rem; margin-bottom: 0;">
-        <li>Ladd AL, et al. Pathomechanics of the thumb carpometacarpal joint. <em>J Hand Surg Am.</em> 2013;38(11):2192–2204.</li>
-        <li>Pellegrini VD Jr. Osteoarthritis of the thumb trapeziometacarpal joint: a study of the pathophysiology of articular cartilage degeneration. <em>J Hand Surg Am.</em> 1991;16(6):967–974.</li>
-        <li>Hasley IB, et al. Platelet-Rich Plasma Injection for Thumb Carpometacarpal Joint Osteoarthritis. <em>Arch Rehabil Res Clin Transl.</em> 2023;5(1):100257.</li>
-        <li>van Heest A, Kallemeier P. Thumb carpal metacarpal arthritis. <em>J Am Acad Orthop Surg.</em> 2008;16(3):140–151.</li>
-        <li>Eaton RG, Glickel SZ. Trapeziometacarpal osteoarthritis: staging as a rationale for treatment. <em>Hand Clin.</em> 1987;3(4):455–471.</li>
-        <li>Heyworth BE, et al. Hylan versus corticosteroid versus placebo for treatment of basal joint arthritis: a prospective, randomized, double-blinded clinical trial. <em>J Hand Surg Am.</em> 2008;33(1):40–48.</li>
-        <li>Kapoutsis DV, et al. Efficacy of Intra-Articular Corticosteroid Injection for Nonsurgical Management of Trapeziometacarpal Osteoarthritis: A Systematic Review and Meta-Analysis. <em>J Hand Surg Am.</em> 2024.</li>
-        <li>Monfort J, et al. Comparative efficacy of intra-articular hyaluronic acid and corticoid injections in osteoarthritis of the first carpometacarpal joint. <em>Rev Rhum Engl Ed.</em> 2015;82(3):184–189.</li>
-        <li>Hasley IB, et al. Platelet-Rich Plasma Injection for Thumb Carpometacarpal Joint Osteoarthritis. <em>Arch Rehabil Res Clin Transl.</em> 2023;5(1):100257.</li>
-        <li>Malahias MA, et al. Platelet-Rich Plasma versus Corticosteroid Intra-Articular Injections for the Treatment of Trapeziometacarpal Arthritis: A Prospective Randomized Controlled Clinical Trial. <em>Cartilage.</em> 2021;12(1):51–61.</li>
-        <li>Covelli I, et al. Extracorporeal Shock Wave Therapy (ESWT) vs. Exercise in Thumb Osteoarthritis (SWEX-TO): Prospective Clinical Trial at 6 Months. <em>Life.</em> 2024;14(11):1453.</li>
-        <li>American Society of Hand Therapists. Assessment and treatment of nonsurgical thumb carpometacarpal joint osteoarthritis: A modified Delphi-based consensus paper. <em>J Hand Ther.</em> 2023.</li>
-        <li>Berger M, et al. Comparative Effectiveness of Orthoses for Thumb Osteoarthritis: A Systematic Review and Network Meta-analysis. <em>Arch Phys Med Rehabil.</em> 2020;101(12):2195–2204.</li>
-        <li>Batistaki C, et al. Exercise-Based Interventions Are Effective in the Management of Patients with Thumb Carpometacarpal Osteoarthritis: A Systematic Review and Meta-Analysis. <em>J Clin Med.</em> 2024.</li>
-        <li>Cantero-Tellez R, et al. Necessity of Including Thumb Carpometacarpal Joint Mobilization in Osteoarthritis Treatment: A Randomized Clinical Trial. <em>J Hand Ther.</em> 2018;31(4):385–390.</li>
+    <h2>📚 參考文獻 (References)</h2>
+    <div style="background-color: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.95rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.6; word-break: break-all;">
+      <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+        <li style="margin-bottom: 0.8rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Ladd, A.L., et al. (2013). Pathomechanics of the thumb carpometacarpal joint. J Hand Surg Am., 38(11), 2192–2204. <a href="https://doi.org/10.1016/j.jhsa.2013.03.046" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.jhsa.2013.03.046</a>
+          </span>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Pellegrini, V.D. Jr. (1991). Osteoarthritis of the thumb trapeziometacarpal joint: a study of the pathophysiology of articular cartilage degeneration. J Hand Surg Am., 16(6), 967–974. <a href="https://pubmed.ncbi.nlm.nih.gov/1951239/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMID: 1951239</a>
+          </span>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Hasley, I.B., et al. (2023). Platelet-Rich Plasma Injection for Thumb Carpometacarpal Joint Osteoarthritis. Arch Rehabil Res Clin Transl., 5(1), 100257. <a href="https://doi.org/10.1016/j.arrct.2023.100257" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.arrct.2023.100257</a>
+          </span>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            van Heest, A., & Kallemeier, P. (2008). Thumb carpal metacarpal arthritis. J Am Acad Orthop Surg., 16(3), 140–151. <a href="https://doi.org/10.5435/00124635-200803000-00005" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.5435/00124635-200803000-00005</a>
+          </span>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Eaton, R.G., & Glickel, S.Z. (1987). Trapeziometacarpal osteoarthritis: staging as a rationale for treatment. Hand Clin., 3(4), 455–471. <a href="https://pubmed.ncbi.nlm.nih.gov/3692554/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">PMID: 3692554</a>
+          </span>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Heyworth, B.E., et al. (2008). Hylan versus corticosteroid versus placebo for treatment of basal joint arthritis: a prospective, randomized, double-blinded clinical trial. J Hand Surg Am., 33(1), 40–48. <a href="https://doi.org/10.1016/j.jhsa.2007.10.009" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.jhsa.2007.10.009</a>
+          </span>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Kapoutsis, D.V., et al. (2024). Efficacy of Intra-Articular Corticosteroid Injection for Nonsurgical Management of Trapeziometacarpal Osteoarthritis: A Systematic Review and Meta-Analysis. J Hand Surg Am., 49(6), 511-525. <a href="https://doi.org/10.1016/j.jhsa.2024.02.001" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.jhsa.2024.02.001</a>
+          </span>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Monfort, J., et al. (2015). Comparative efficacy of intra-articular hyaluronic acid and corticoid injections in osteoarthritis of the first carpometacarpal joint. Rev Rhum Engl Ed., 82(3), 184–189. <a href="https://doi.org/10.1016/j.jbspin.2014.11.007" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.jbspin.2014.11.007</a>
+          </span>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Hasley, I.B., et al. (2023). Platelet-Rich Plasma Injection for Thumb Carpometacarpal Joint Osteoarthritis. Arch Rehabil Res Clin Transl., 5(1), 100257. <a href="https://doi.org/10.1016/j.arrct.2023.100257" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.arrct.2023.100257</a>
+          </span>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Malahias, M.A., et al. (2021). Platelet-Rich Plasma versus Corticosteroid Intra-Articular Injections for the Treatment of Trapeziometacarpal Arthritis: A Prospective Randomized Controlled Clinical Trial. Cartilage, 12(1), 51–61. <a href="https://doi.org/10.1177/1947603518817345" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1177/1947603518817345</a>
+          </span>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Covelli, I., et al. (2024). Extracorporeal Shock Wave Therapy (ESWT) vs. Exercise in Thumb Osteoarthritis (SWEX-TO): Prospective Clinical Trial at 6 Months. Life, 14(11), 1453. <a href="https://doi.org/10.3390/life14111453" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3390/life14111453</a>
+          </span>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            American Society of Hand Therapists. (2023). Assessment and treatment of nonsurgical thumb carpometacarpal joint osteoarthritis: A modified Delphi-based consensus paper. J Hand Ther., 37(1), 16-29. <a href="https://doi.org/10.1016/j.jht.2023.08.009" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.jht.2023.08.009</a>
+          </span>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Berger, M., et al. (2020). Comparative Effectiveness of Orthoses for Thumb Osteoarthritis: A Systematic Review and Network Meta-analysis. Arch Phys Med Rehabil., 101(12), 2195–2204. <a href="https://doi.org/10.1016/j.apmr.2020.08.010" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.apmr.2020.08.010</a>
+          </span>
+        </li>
+        <li style="margin-bottom: 0.8rem;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Batistaki, C., et al. (2024). Exercise-Based Interventions Are Effective in the Management of Patients with Thumb Carpometacarpal Osteoarthritis: A Systematic Review and Meta-Analysis. J Clin Med., 13(4), 1042. <a href="https://doi.org/10.3390/jcm13041042" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.3390/jcm13041042</a>
+          </span>
+        </li>
+        <li style="margin-bottom: 0;">
+          <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+            Cantero-Tellez, R., et al. (2018). Necessity of Including Thumb Carpometacarpal Joint Mobilization in Osteoarthritis Treatment: A Randomized Clinical Trial. J Hand Ther., 31(4), 385–390. <a href="https://doi.org/10.1016/j.jht.2017.06.006" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; text-underline-offset: 3px;">DOI: 10.1016/j.jht.2017.06.006</a>
+          </span>
+        </li>
       </ol>
     </div>
 

@@ -216,6 +216,12 @@ export const sportsInjuriesData = [
         description: '從實證醫學出發，深入剖析骨科與復健科最常開立的五大類藥物：肌肉鬆弛劑、乙醯胺酚、NSAIDs 消炎藥、外用藥膏與含藥貼布。本文將解密其作用機制、隱藏的長期副作用（如肝腎毒性、骨折癒合延遲）與安全使用期限，並釐清三大常見用藥誤區。',
         image: '/images/news/article/orthopedic-rehab-medication-safety.webp',
       },
+                              {
+        slug: 'mouth-pain-tmd-article',
+        title: '嘴巴痛不一定是蛀牙！顳顎關節炎與牙痛的差別',
+        description: '嘴巴痛只能看牙醫？從口顏面痛角度深入剖析蛀牙、顳顎關節炎（TMD）與咀嚼肌群緊繃的關鍵差異。臨床實證研究指出，TMD 是第二常見的顏面疼痛原因。本文帶您看懂四大關鍵症狀，並解析徒手治療、咬合板到口腔外科手術的階梯式全照護治療流程。',
+        image: '/images/news/article/mouth-pain-tmd-analysis.webp',
+      },
     
     ]
   },
