@@ -7,7 +7,7 @@ import { sportsInjuriesData } from '@/data/sportsInjuries'
 import { getNewsById } from '@/data/news'
 import JsonLd from '@/components/JsonLd'
 import ShareButtons from '@/components/ShareButtons'
-
+export const dynamicParams = false;
 // 定義常數，清除可能存在的尾部斜線防止 Canonical 拼錯
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim().replace(/\/$/, '')
 

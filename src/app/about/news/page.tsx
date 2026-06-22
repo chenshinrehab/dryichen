@@ -178,9 +178,11 @@ export default function NewsListPage({ searchParams }: Props) {
                 const moreBtnColorClass = isEssay ? 'text-amber-500' : 'text-cyan-500';
 
                 return (
+                  /* ✨ 核心修正：為每篇文章卡片的 Link 組件強制補上 prefetch={false}，徹底防堵單頁 10 篇同時自動預載引發的連鎖穿透 */
                   <Link 
                     key={item.id} 
                     href={`/about/news/${item.id}`} 
+                    prefetch={false}
                     className={`block group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden transition-all duration-300 ${hoverStyle} animate-on-scroll ${index === 0 ? '' : 'delay-100'}`}
                   >
                     <div className="flex flex-col md:flex-row h-full">

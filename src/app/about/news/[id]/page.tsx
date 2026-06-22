@@ -6,6 +6,9 @@ import JsonLd from '@/components/JsonLd'
 import { newsList, getNewsById } from '@/data/news'
 import ShareButtons from '@/components/ShareButtons'
 
+// ✨ 核心修正：強制關閉動態路由參數，徹底阻斷爬蟲與帶參數網址穿透到資料庫
+export const dynamicParams = false;
+
 // 定義常數，方便未來修改
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
 
