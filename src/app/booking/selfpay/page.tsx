@@ -28,7 +28,6 @@ export default function SelfPayBookingPage() {
   const [activeTab, setActiveTab] = useState<'booking' | 'query'>('booking');
   const [lineUserId, setLineUserId] = useState<string>('');
   
-  // 🚀 狀態：用來儲存並顯示 LINE 綁定成功後的使用者暱稱與大頭貼
   const [lineDisplayName, setLineDisplayName] = useState<string>('');
   const [linePictureUrl, setLinePictureUrl] = useState<string>('');
   
@@ -50,55 +49,52 @@ export default function SelfPayBookingPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitLoading, setIsSubmitLoading] = useState(false);
 
-  // 🚀 終極 A 方案：包含斷點續傳 (還原輸入資料) 與 LINE 驗證碼交換邏輯
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const code = params.get('code'); // LINE 授權後回傳的驗證碼
+    const code = params.get('code'); 
 
-    // 1. 先還原表單資料：避免去 LINE 繞一圈回來，選好的日期和名字被洗掉
+    // 1. 還原表單資料
     const tempDate = sessionStorage.getItem('temp_selectedDate');
     if (tempDate) {
       setSelectedDate(tempDate);
       setSelectedTime(sessionStorage.getItem('temp_selectedTime') || '');
       const tempForm = sessionStorage.getItem('temp_formData');
       if (tempForm) setFormData(JSON.parse(tempForm));
+      setActiveTab('booking'); 
       
-      setActiveTab('booking'); // 強制留在預約填寫分頁
-      
-      // 還原後立刻清空暫存
       sessionStorage.removeItem('temp_selectedDate');
       sessionStorage.removeItem('temp_selectedTime');
       sessionStorage.removeItem('temp_formData');
     }
 
-    // 2. 判斷登入狀態
+    // 2. 處理驗證碼
     if (code) {
-      // 情況 A：網址有 code，代表病患剛從 LINE 點完授權回來
-      const redirectUri = window.location.origin + window.location.pathname;
+      const redirectUri = "https://dryichen.com.tw/booking/selfpay";
       
-      // 呼叫我們的後端 API，用 code 去把病患的大頭貼和 ID 換回來
       fetch(`/api/auth/line?code=${code}&redirectUri=${encodeURIComponent(redirectUri)}`)
         .then(res => res.json())
         .then(data => {
           if (data.success) {
-            // 寫入瀏覽器永久記憶體 (LocalStorage)
             localStorage.setItem('saved_line_user_id', data.lineUserId);
             if (data.displayName) localStorage.setItem('saved_line_display_name', data.displayName);
             if (data.pictureUrl) localStorage.setItem('saved_line_picture_url', data.pictureUrl);
             
-            // 同步點亮前端畫面
             setLineUserId(data.lineUserId);
             if (data.displayName) setLineDisplayName(data.displayName);
             if (data.pictureUrl) setLinePictureUrl(data.pictureUrl);
             
-            // 把網址列的醜陋 code 洗掉，恢復乾淨網址
             window.history.replaceState({}, '', window.location.pathname);
+            alert(`🎉 LINE 帳號 [${data.displayName || '連線成員'}] 關聯成功！請繼續完成下方問卷。`);
           } else {
-            alert('LINE 綁定通訊失敗，請重試。');
+            // 🚀 核心改動：如果失敗，直接噴出後端抓到的 LINE 官方底層原因，一秒抓到內鬼
+            alert(`❌ LINE 綁定通訊失敗！\n【錯誤診斷】：${data.line_error || data.error || '後端通訊異常'}\n\n請檢查後端 Channel Secret 是否填寫正確。`);
+            window.history.replaceState({}, '', window.location.pathname);
           }
+        })
+        .catch(err => {
+          alert('網路連線中斷，無法與內部驗證 API 取得聯絡。');
         });
     } else {
-      // 情況 B：平時直接開啟網頁，主動讀取 LocalStorage 自動登入
       const savedId = localStorage.getItem('saved_line_user_id');
       const savedName = localStorage.getItem('saved_line_display_name');
       const savedPic = localStorage.getItem('saved_line_picture_url');
@@ -110,7 +106,6 @@ export default function SelfPayBookingPage() {
       }
     }
 
-    // 系統通訊數據流
     Promise.all([
       fetch(`/api/doctor-settings`).then(res => res.json()),
       fetch(`/api/reserve?action=getAllAppointments`).then(res => res.json())
@@ -125,13 +120,12 @@ export default function SelfPayBookingPage() {
     if (lineUserId && activeTab === 'query') runQuery('line', lineUserId);
   }, [lineUserId, activeTab]);
 
-  // 🚀 關鍵：跳轉前先「備份病患輸入到一半的進度」
   const handleLineAuthRedirect = () => {
     sessionStorage.setItem('temp_selectedDate', selectedDate);
     sessionStorage.setItem('temp_selectedTime', selectedTime);
     sessionStorage.setItem('temp_formData', JSON.stringify(formData));
 
-    const redirectUri = window.location.origin + window.location.pathname;
+    const redirectUri = "https://dryichen.com.tw/booking/selfpay";
     window.location.href = `https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=${LINE_CLIENT_ID}&redirect_uri=${encodeURIComponent(redirectUri)}&state=selfPayVerify&scope=profile`;
   };
 
@@ -285,7 +279,7 @@ export default function SelfPayBookingPage() {
       <JsonLd data={{
         '@context': 'https://schema.org', '@type': 'MedicalWebPage',
         'name': '特約自費診預約掛號系統 | 林羿辰醫師',
-        'provider': { '@type': ['Person', 'Physician'], 'name': '林羿辰 醫師', 'jobTitle': '宸新復健科診所 院長' }
+        'provider': { '@type': ['Person', 'Physician'], 'name': '林羿辰 醫師', 'jobTitle': '院長' }
       }} />
       <ScrollAnimation />
 
@@ -374,7 +368,6 @@ export default function SelfPayBookingPage() {
                         填寫就診基本問卷
                       </h2>
 
-                      {/* 🚀 動態綁定 UI 區域 */}
                       <div className="bg-slate-50 border border-slate-200 p-4 sm:p-5 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
                         <div className="flex items-center gap-2.5 sm:gap-3 w-full sm:w-auto">
                           <FaLine className="text-[#06C755] text-3xl sm:text-4xl shrink-0" />
