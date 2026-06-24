@@ -100,8 +100,8 @@ export default function SportsCategoryPage({ params }: { params: { category: str
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* 返回上一頁 */}
-          <Link 
-            href="/weight-bone" 
+          <Link
+            href="/weight-bone"
             className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-8 transition-colors"
           >
             <FaArrowLeft className="mr-2" /> 返回特色門診首頁
@@ -127,9 +127,9 @@ export default function SportsCategoryPage({ params }: { params: { category: str
                 <div className="h-48 w-full relative overflow-hidden bg-slate-700">
                   <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-slate-900/80 to-transparent z-10"></div>
                   
-                  <img 
-                    src={injury.image} 
-                    alt={injury.title} 
+                  <img
+                    src={injury.image}
+                    alt={injury.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-100"
                   />
                 </div>

@@ -1,5 +1,5 @@
 // src/app/weight-bone/sports-injuries/[category]/[slug]/page.tsx
-import React from 'react'
+import React, { cache } from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
@@ -7,20 +7,33 @@ import { sportsInjuriesData } from '@/data/sportsInjuries'
 import { getNewsById } from '@/data/news'
 import JsonLd from '@/components/JsonLd'
 import ShareButtons from '@/components/ShareButtons'
+
+// 節省 Vercel 流量關鍵：不允許動態非預期路由，直接阻斷未定義的無效請求
 export const dynamicParams = false;
+
 // 定義常數，清除可能存在的尾部斜線防止 Canonical 拼錯
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim().replace(/\/$/, '')
 
-interface PageProps { params: { category: string; slug: string } }
+// 使用 React cache 快取資料查詢，確保 Metadata 與 Page 同時呼叫時只執行一次，節省記憶體開銷
+const cachedGetNewsById = cache((slug: string) => {
+  return getNewsById(slug)
+})
 
-// 1. 動態 Meta 強化
+interface PageProps {
+  params: Promise<{ category: string; slug: string }>
+}
+
+/* ==========================================================================
+   1. 動態 Meta 強化 (精確宣告分身 Canonical 關係)
+   ========================================================================== */
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const article = getNewsById(params.slug)
+  const { slug } = await params
+  const article = cachedGetNewsById(slug)
   if (!article) return { title: '文章不存在' }
 
-  // 這裡是「正宮」原始頁面的網址
-  const canonicalUrl = `${SITE_URL}/about/news/${params.slug}`
-  
+  // 核心 SEO：「正宮」原始頁面的網址
+  const canonicalUrl = `${SITE_URL}/about/news/${slug}`
+
   return {
     title: article.seoTitle ? article.seoTitle : `${article.title} | 新竹宸新復健科`,
     authors: [{ name: '林羿辰醫師', url: SITE_URL }],
@@ -28,7 +41,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: article.seoDescription || article.summary,
     keywords: article.keywords,
     alternates: {
-      canonical: canonicalUrl, // 告訴 Google 重複內容請索引這一條
+      canonical: canonicalUrl, // 成功宣告：告訴 Google 重複內容請索引正宮這一條網址
     },
     openGraph: {
       title: article.seoTitle || article.title,
@@ -54,45 +67,49 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 }
 
-export default function SportsInjuryDetailPage({ params }: PageProps) {
-  const categoryData = sportsInjuriesData.find(c => c.category === params.category)
-  const article = getNewsById(params.slug)
+/* ==========================================================================
+   2. 主頁面組件
+   ========================================================================== */
+export default async function SportsInjuryDetailPage({ params }: PageProps) {
+  const { category, slug } = await params
+  const categoryData = sportsInjuriesData.find(c => c.category === category)
+  const article = cachedGetNewsById(slug)
 
   if (!categoryData || !article) {
     notFound()
   }
 
-  // 目前頁面的網址
-  const currentUrl = `${SITE_URL}/weight-bone/sports-injuries/${params.category}/${params.slug}`
-  // 原始文章網址 (用於 Schema 宣告來源)
-  const canonicalUrl = `${SITE_URL}/about/news/${params.slug}`
-  
-  // QR Code 建議使用目前頁面網址，方便現場掃描
+  // 本頁網址與正宮網址
+  const currentUrl = `${SITE_URL}/weight-bone/sports-injuries/${category}/${slug}`
+  const canonicalUrl = `${SITE_URL}/about/news/${slug}`
+
+  // QR Code 現場掃描：加入效能優化控管
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(currentUrl)}`
-  
-  // 分類與樣式邏輯
+
+  // 分類與樣式對應表
   const categoryStyles: Record<string, string> = {
     '門診公告': 'bg-pink-500/10 text-pink-400 border-pink-500/30',
     '診所活動': 'bg-pink-500/10 text-pink-400 border-pink-500/30',
     '診間隨筆': 'bg-amber-500/10 text-amber-400 border-amber-500/30',
     '衛教文章': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30',
     '醫學新知': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30',
-  };
-  const activeCategoryStyle = categoryStyles[article.category] || 'bg-slate-500/10 text-slate-400 border-slate-500/30';
+  }
+  const activeCategoryStyle = categoryStyles[article.category] || 'bg-slate-500/10 text-slate-400 border-slate-500/30'
 
-  // 判斷類別以套用進階醫療標記
-  const isAnnouncement = article.category === '門診公告' || article.category === '診所活動';
-  const isMedicalContent = ['衛教文章', '醫學新知', '診間隨筆'].includes(article.category);
+  const isAnnouncement = article.category === '門診公告' || article.category === '診所活動'
+  const isMedicalContent = ['衛教文章', '醫學新知', '診間隨筆'].includes(article.category)
 
-  // 2. Schema 資料 (同步主頁面的標準規格，移除容易噴錯的陣列多重宣告)
+  /* ==========================================================================
+     3. Schema 結構化資料建置 (雙重鎖定分身權重)
+     ========================================================================== */
   const jsonLdData = {
     '@context': 'https://schema.org',
     '@type': isAnnouncement ? 'NewsArticle' : 'MedicalWebPage',
-    '@id': `${currentUrl}#webpage`, // 本頁的實體 ID
+    '@id': `${currentUrl}#webpage`,
     'url': currentUrl,
     'mainEntityOfPage': {
       '@type': 'WebPage',
-      '@id': canonicalUrl // 指向原始內容網頁，強化 Canonical 關係
+      '@id': canonicalUrl // 結構化資料宣告：精確對準原始網址
     },
     [isAnnouncement ? 'headline' : 'name']: article.title,
     'alternativeHeadline': article.seoTitle,
@@ -107,7 +124,7 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
     'datePublished': '2026-01-25',
     'dateModified': article.lastModified || article.date || '2026-02-25',
 
-    // 醫療專業性標記
+    // 醫療 E-E-A-T 專業標記
     ...(isMedicalContent ? {
       'medicalSpecialty': {
         '@type': 'MedicalSpecialty',
@@ -123,9 +140,9 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
       }
     } : {}),
 
-    // 作者區塊 (修正為主流爬蟲 100% 綠燈的標準 Person 格式)
-    'author': { 
-      '@type': 'Person', 
+    // 權威作者資訊
+    'author': {
+      '@type': 'Person',
       'name': '林羿辰 醫師',
       'jobTitle': '院長',
       'url': `${SITE_URL}/about/doctors`,
@@ -134,10 +151,10 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
         '@type': 'EducationalOrganization',
         'name': '國立台灣大學醫學系'
       },
-      'worksFor': { 
-        '@type': 'MedicalClinic', 
-        'name': '宸新復健科診所', 
-        'url': SITE_URL 
+      'worksFor': {
+        '@type': 'MedicalClinic',
+        'name': '宸新復健科診所',
+        'url': SITE_URL
       },
       'sameAs': [
         'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
@@ -177,7 +194,7 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
       }
     },
 
-    // 發佈者區塊
+    // 診所機構資訊
     'publisher': {
       '@type': 'MedicalClinic',
       'name': '宸新復健科診所',
@@ -208,7 +225,7 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
       ]
     },
 
-    // 審閱資訊
+    // 醫學內容審閱
     ...(isAnnouncement ? {} : {
       'lastReviewed': article.lastModified || article.date,
       'reviewedBy': {
@@ -245,7 +262,7 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
         ]
       }
     })
-  };
+  }
 
   // 麵包屑導航 Schema 建立
   const jsonLdBreadcrumb = {
@@ -256,7 +273,7 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
       { '@type': 'ListItem', 'position': 2, 'name': '運動傷害大類', 'item': `${SITE_URL}/weight-bone/sports-injuries/${categoryData.category}` },
       { '@type': 'ListItem', 'position': 3, 'name': article.title, 'item': currentUrl },
     ],
-  };
+  }
 
   return (
     <>
@@ -268,12 +285,7 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
             color: #22d3ee !important;
             font-weight: 700;
         }
-
-        /* -----------------------------------------------------------
-            ✨ 關鍵修正區塊：處理連結與排除參考文獻
-            ----------------------------------------------------------- */
-            
-        /* 1. 先定義基礎樣式，但使用 :not 排除掉 sup(上標) 與帶有特定偏移 style 的連結 */
+           
         .article-content a:not(sup a):not([style*="text-underline-offset"]) {
             color: #ec4899 !important;
             font-weight: 600;
@@ -285,15 +297,13 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
             gap: 2px;
         }
 
-        /* 2. 只給「非參考文獻」的連結加上 ↗ 符號 */
-        .article-content a:not(sup a):not([style*="text-underline-offset"])::after {
+        .article-content a:not(sup a):not([style*="text-underline-offset"]):with-icon::after {
             content: "↗";
             font-size: 0.85em;
             font-weight: bold;
             margin-bottom: 2px;
         }
 
-        /* 3. Hover 效果也只針對一般連結 */
         .article-content a:not(sup a):not([style*="text-underline-offset"]):hover {
             color: #db2777 !important;
             border-bottom-style: solid;
@@ -303,20 +313,18 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
             border-radius: 4px;
         }
 
-        /* 4. ✨ 徹底清除參考文獻中的粉紅橫線與箭頭 (包含 [2] 等 sup a) */
         .article-content sup a,
         .article-content ol a,
         .article-content a[style*="text-underline-offset"],
         .references-content a {
-            border-bottom: none !important; /* 移除橫線 */
-            display: inline !important;    /* 防止 flex 產生的對齊問題 */
-            color: #ec4899 !important;      /* 回歸藍色/粉紅視需求 */
+            border-bottom: none !important;
+            display: inline !important;
+            color: #ec4899 !important;
             background: transparent !important;
             padding: 0 !important;
             margin: 0 !important;
         }
 
-        /* 5. 確保參考文獻連結後絕對不會出現 ↗ 符號 */
         .article-content sup a::after,
         .article-content ol a::after,
         .article-content a[style*="text-underline-offset"]::after,
@@ -324,8 +332,6 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
             content: "" !important;
             display: none !important;
         }
-
-        /* ----------------------------------------------------------- */
 
         .article-content img {
             max-width: 100%;
@@ -366,15 +372,16 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
             margin-bottom: 0.5rem;
         }
       `}} />
+
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 fade-in relative z-10">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <Link 
-              href={`/weight-bone/sports-injuries/${categoryData.category}`} 
+            <Link
+              href={`/weight-bone/sports-injuries/${categoryData.category}`}
               className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group"
             >
-              <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i> 
+              <i className="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i>
               返回 {categoryData.title} 列表
             </Link>
 
@@ -382,9 +389,15 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
               <div className="p-4 md:p-10">
                 
                 <header className="mb-10 border-l-4 border-cyan-500 pl-4 bg-gradient-to-r from-slate-900/80 to-transparent py-6 rounded-r-xl flex flex-col md:flex-row md:items-center gap-6">
-                  {/* QR Code 裝飾元件同步主頁面提示語 */}
+                  {/* QR Code 增加延遲載入，節省首網載入流量與頻寬 */}
                   <div className="hidden md:block bg-white p-2 rounded-lg shrink-0 group relative shadow-lg ring-2 ring-slate-700">
-                    <img className="w-24 h-24 object-contain" src={qrCodeApiUrl} alt={`掃描閱讀 ${article.title}`} />
+                    <img 
+                      className="w-24 h-24 object-contain" 
+                      src={qrCodeApiUrl} 
+                      alt={`掃描閱讀 ${article.title}`}
+                      loading="lazy"
+                      decoding="async"
+                    />
                     <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-max bg-slate-900 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-slate-600">
                       掃描帶走文章
                     </div>
@@ -401,8 +414,8 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
                         </span>
                         <span className="text-slate-400 text-sm flex items-center">
                           撰文者：
-                          <Link 
-                            href="/about/doctors" 
+                          <Link
+                            href="/about/doctors"
                             className="text-slate-300 hover:text-cyan-400 underline underline-offset-4 decoration-slate-600 transition-colors"
                           >
                             林羿辰醫師
@@ -431,13 +444,13 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
                       <div className="flex-grow text-center md:text-left">
                         <div className="mb-2">
                           <h3 className="text-xl font-bold text-white flex flex-col md:flex-row items-center gap-2">
-                            本文由 
-                            <Link 
-                              href="/about/doctors" 
+                            本文由
+                            <Link
+                              href="/about/doctors"
                               className="text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer underline underline-offset-4 decoration-cyan-900/50 hover:decoration-cyan-400"
                             >
                               林羿辰醫師
-                            </Link> 
+                            </Link>
                             撰寫與醫學審閱
                             <span className="hidden md:inline-block text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full border border-cyan-500/30 font-normal uppercase tracking-wider">
                               Verified Expert
@@ -449,8 +462,8 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
                           現任宸新復健科診所院長。畢業於國立台灣大學醫學系，擁有復健科、骨質疏鬆雙專科醫師資歷，專精於精準超音波導引注射治療、增生療法與各類運動傷害。林醫師具備豐富臨床經驗，致力於將醫學實證應用於病健復原。
                         </p>
                         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-5 border-t border-slate-700/50">
-                          <Link 
-                            href="/about/doctors" 
+                          <Link
+                            href="/about/doctors"
                             className="text-cyan-400 hover:text-cyan-300 text-sm font-bold flex items-center group transition-colors cursor-pointer"
                           >
                             <i className="fa-solid fa-id-card-clip mr-2 text-lg"></i>
@@ -488,11 +501,11 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
                   </div>
                   
                   <div className="mt-12 pt-8 border-t border-slate-700/50 relative z-10">
-                    <Link 
-                      href="/about/news" 
+                    <Link
+                      href="/about/news"
                       className="inline-flex items-center justify-center px-8 py-3.5 text-lg font-bold text-cyan-400 border border-cyan-500/30 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 group"
                     >
-                      看更多衛教文章 
+                      看更多衛教文章
                       <i className="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
                     </Link>
                   </div>
@@ -506,9 +519,9 @@ export default function SportsInjuryDetailPage({ params }: PageProps) {
                     <div className="flex items-center mb-4 pb-3">
                       <i className="fa-solid fa-book-bookmark text-cyan-400 text-lg mr-2"></i>
                     </div>
-                    <div 
-                      className="references-content w-full text-slate-400 text-sm md:text-base leading-relaxed break-all" 
-                      dangerouslySetInnerHTML={{ __html: article.referencesHtml }} 
+                    <div
+                      className="references-content w-full text-slate-400 text-sm md:text-base leading-relaxed break-all"
+                      dangerouslySetInnerHTML={{ __html: article.referencesHtml }}
                     />
                     <div className="mt-5 pt-3 border-t border-slate-700/30 flex items-center gap-2">
                       <span className="inline-block w-1.5 h-1.5 rounded-full bg-cyan-500/50 animate-pulse"></span>

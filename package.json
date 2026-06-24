@@ -18,6 +18,7 @@
     "@keystatic/core": "^0.5.48",
     "@keystatic/next": "^5.0.4",
     "fs-extra": "^11.3.3",
+    "googleapis": "^173.0.0",
     "html-react-parser": "^5.2.15",
     "next": "^14.2.0",
     "openai": "^6.16.0",

@@ -347,6 +347,19 @@ export default function NewsListPage({ searchParams }: Props) {
               </div>
             )}
 
+            {/* ✨ 專屬 SEO 爬蟲通路：補足 Ahrefs 110 篇內部連結，sr-only 確保人類隱形、爬蟲吃飽 */}
+            <div className="sr-only" aria-hidden="true">
+              {articlesList.map((item) => (
+                <Link 
+                  key={`seo-${item.id}`} 
+                  href={`/about/news/${item.id}`} 
+                  prefetch={false}
+                >
+                  {item.title}
+                </Link>
+              ))}
+            </div>
+
           </div>
         </main>
       </div>
