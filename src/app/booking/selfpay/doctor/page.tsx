@@ -231,19 +231,10 @@ export default function DoctorAdminPage() {
   return (
     <div className="bg-slate-50 min-h-screen text-slate-800 font-sans">
       <style dangerouslySetInnerHTML={{__html: `
-        body, html, main, #__next, .flex-grow, div[class*="min-h-screen"], .bg-slate-50 { background-color: #f8fafc !important; color: #1e293b !important; }
-        nav, header, [class*="nav"], [class*="Navbar"], [class*="header"], nav div, header div, nav section, header section { background-color: #e2e8f0 !important; background-image: none !important; border-bottom: none !important; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important; }
-        nav *, header *, [class*="Navbar"] *, [class*="header"] * { color: #1e293b !important; }
-        nav a:hover, header a:hover, nav button:hover, header button:hover { color: #0891b2 !important; }
-        nav ul, header ul, nav div[class*="dropdown"], header div[class*="dropdown"], [class*="dropdown-menu"], [class*="menu"] { background-color: #ffffff !important; border-radius: 1.25rem !important; overflow: hidden !important; border: 1px solid #e2e8f0 !important; }
-        nav ul *, header ul *, [class*="dropdown"] *, [class*="dropdown-menu"] *, [class*="menu"] * { background-color: #ffffff !important; color: #0f172a !important; fill: #0f172a !important; }
-        nav ul a:hover, header ul a:hover, [class*="dropdown"] a:hover, [class*="dropdown-menu"] a:hover, nav ul a:hover *, header ul a:hover *, [class*="dropdown"] a:hover *, [class*="dropdown-menu"] a:hover * { background-color: #f1f5f9 !important; color: #0f172a !important; }
-        nav a[href*="booking"], nav a[href*="reserve"], header a[href*="booking"], .bg-pink-500, .text-pink-500, [class*="pink"], button[class*="pink"], a[class*="pink"] { background: #e0f2fe !important; background-color: #e0f2fe !important; background-image: none !important; border: 1px solid #bae6fd !important; box-shadow: 0 4px 14px 0 rgba(186, 230, 253, 0.5) !important; }
-        nav a[href*="booking"] *, header a[href*="booking"] *, .bg-pink-500 *, [class*="pink"] * { color: #0369a1 !important; }
-        nav a[href*="booking"]:hover, header a[href*="booking"]:hover, .bg-pink-500:hover, [class*="pink"]:hover { background: #bae6fd !important; background-color: #bae6fd !important; }
+        body, html, main, #__next, .flex-grow { background-color: #f8fafc !important; }
       `}} />
 
-      <main className="max-w-6xl mx-auto p--4 md:py-6 md:px-10 space-y-5 text-base md:text-lg">
+      <main className="max-w-6xl mx-auto p-4 md:py-6 md:px-10 space-y-5 text-base md:text-lg">
         
         <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-stretch justify-between">
           <div className="flex items-center justify-center md:justify-end min-w-[200px] order-1 md:order-2">
@@ -321,13 +312,11 @@ export default function DoctorAdminPage() {
                       <tr><td colSpan={4} className="p-10 text-center text-lg text-slate-400 font-bold">資料讀取中...</td></tr>
                     ) : filteredAppointments.length > 0 ? (
                       filteredAppointments.map((r, idx) => {
-                        // 🚀 修正點 1：判斷是否為 LINE 綁定預約的病患
                         const isLineBooking = r.lineUserId && r.lineUserId !== '未關聯';
 
                         return (
                           <React.Fragment key={idx}>
                             <tr onClick={() => setExpandedRows(prev => ({...prev, [idx]: !prev[idx]}))} className="hover:bg-slate-50 cursor-pointer transition text-left">
-                              {/* 🚀 修正點 1：如果是 LINE 預約，在日期前面加上精緻顯眼的綠色外框標籤 */}
                               <td className="p-3 md:p-5 font-bold text-slate-600 break-all flex flex-col sm:flex-row sm:items-center gap-1">
                                 {isLineBooking && (
                                   <span className="inline-block bg-emerald-100 text-emerald-700 border border-emerald-300 rounded px-1 py-0.5 text-[10px] font-black tracking-tighter whitespace-nowrap sm:mr-1">
@@ -342,7 +331,10 @@ export default function DoctorAdminPage() {
                                   {r.time || r.time_slot}
                                 </span>
                               </td>
-                              <td className="p-3 md:p-5 font-black text-slate-900 text-sm sm:text-base break-all">▼&nbsp;{r.name}</td>
+                              {/* 🚀 修正點 1：確保留在姓名列，若是 LINE 預約，直接渲染為清晰粗體翡翠綠 text-emerald-600 */}
+                              <td className={`p-3 md:p-5 font-black text-sm sm:text-base break-all ${isLineBooking ? 'text-emerald-600' : 'text-slate-900'}`}>
+                                ▼&nbsp;{r.name}
+                              </td>
                               <td className="p-3 md:p-5 text-slate-700 font-mono font-bold text-sm sm:text-base break-all">{r.phone}</td>
                             </tr>
                             

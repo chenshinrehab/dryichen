@@ -5,7 +5,6 @@ import { Metadata } from 'next';
 import JsonLd from '@/components/JsonLd';
 import ScrollAnimation from '@/components/ScrollAnimation';
 
-// 引入本掛號系統專用的 React Icons
 import { 
   FaCalendarCheck, 
   FaUser, 
@@ -53,7 +52,6 @@ export default function SelfPayBookingPage() {
     const params = new URLSearchParams(window.location.search);
     const code = params.get('code'); 
 
-    // 1. 還原表單資料
     const tempDate = sessionStorage.getItem('temp_selectedDate');
     if (tempDate) {
       setSelectedDate(tempDate);
@@ -67,7 +65,6 @@ export default function SelfPayBookingPage() {
       sessionStorage.removeItem('temp_formData');
     }
 
-    // 2. 處理驗證碼
     if (code) {
       const redirectUri = "https://dryichen.com.tw/booking/selfpay";
       
@@ -105,15 +102,12 @@ export default function SelfPayBookingPage() {
       }
     }
 
-    // 🚀 核心優化 1：一開網頁全力「優先抓取開放預約排班表」，徹底阻斷卡頓
     fetch(`/api/doctor-settings`)
       .then(res => res.json())
       .then(settingsRes => {
         if (settingsRes && settingsRes.success) {
           setCachedSchedule(settingsRes.settings || {});
         }
-        
-        // 🚀 核心優化 2：排班表點亮、畫面出來後，瀏覽器再「非同步惰性加載」未來預約名單做背景扣除
         const todayISO = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().split('T')[0];
         return fetch(`/api/reserve?action=getAllAppointments&startDate=${todayISO}`);
       })
@@ -126,7 +120,13 @@ export default function SelfPayBookingPage() {
       .catch(err => console.error("非同步數據流載入異常", err));
   }, []);
 
-  // 🚀 核心優化 3：LINE 預約紀錄「不在網頁初始化時抓取」，改為切換到查詢頁面或狀態建立時才精準觸發
+  // 🚀 當已選日期或排診、預約列表改變時，即時更新 displaySlots（包含截止時間計算）
+  useEffect(() => {
+    if (selectedDate) {
+      setDisplaySlots(getAvailableSlots(selectedDate));
+    }
+  }, [selectedDate, cachedSchedule, allAppointments]);
+
   useEffect(() => {
     if (lineUserId && activeTab === 'query') {
       runQuery('line', lineUserId);
@@ -150,9 +150,38 @@ export default function SelfPayBookingPage() {
     return totalSlots.filter(slot => !bookedSlots.includes(slot));
   };
 
+  // 🚀 修正點 2：檢查特定時段是否已進入「看診前 1 小時截止」階段
+  const isSlotExpired = (slotText: string) => {
+    const now = new Date();
+    const offset = now.getTimezoneOffset() * 60000;
+    const todayStr = new Date(now.getTime() - offset).toISOString().split('T')[0];
+    
+    // 如果選的不是今天，就沒有過期問題
+    if (selectedDate !== todayStr) return false;
+
+    // 將 "11:00 AM" 或 "02:30 PM" 解析為 24 小時制的時與分
+    const timePart = slotText.split(' ')[0]; // "11:00"
+    const ampm = slotText.split(' ')[1];     // "AM"
+    let [hours, minutes] = timePart.split(':').map(Number);
+    
+    if (ampm === 'PM' && hours !== 12) hours += 12;
+    if (ampm === 'AM' && hours === 12) hours = 0;
+
+    // 建立該預約時段當天的 Date 物件
+    const slotTargetTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), hours, minutes, 0);
+    
+    // 計算毫秒差：預約時段 - 當前時間
+    const timeDifferenceInMs = slotTargetTime.getTime() - now.getTime();
+    const oneHourInMs = 60 * 60 * 1000;
+
+    // 如果距離看診時間小於 1 小時（60 分鐘），一律回傳 true 封鎖預約
+    return timeDifferenceInMs < oneHourInMs;
+  };
+
   const handleDateClick = (dateStr: string) => {
     setSelectedDate(dateStr);
     setSelectedTime('');
+    // 點擊日期時自動根據當前時間過濾過期診次
     setDisplaySlots(getAvailableSlots(dateStr));
   };
 
@@ -174,6 +203,13 @@ export default function SelfPayBookingPage() {
     if (!selectedDate || !selectedTime) {
       alert('請選擇預約日期與時間時段！'); return;
     }
+    
+    // 再次在前端防呆，避免病患開啟網頁太久導致點到過期時段
+    if (isSlotExpired(selectedTime)) {
+      alert('⚠️ 抱歉，該自費時段已進入看診前 1 小時，已截止掛號！請選擇其他時段。');
+      return;
+    }
+
     setIsSubmitLoading(true);
 
     const reservationData = {
@@ -309,7 +345,7 @@ export default function SelfPayBookingPage() {
         nav a[href*="booking"]:hover, header a[href*="booking"]:hover, .bg-pink-500:hover, [class*="pink"]:hover { background: #bae6fd !important; background-color: #bae6fd !important; }
       `}} />
 
-      <div className="flex-grow pt--4 pb-16 px-3 sm:px-4 bg-slate-50 min-h-screen text-slate-800 relative z-10 block">
+      <div className="flex-grow pt-4 pb-16 px-3 sm:px-4 bg-slate-50 min-h-screen text-slate-800 relative z-10 block">
         <div className="max-w-6xl mx-auto space-y-5">
           
           <div className="flex justify-center p-1.5 bg-white rounded-2xl border border-slate-200 max-w-lg mx-auto shadow-sm">
@@ -364,11 +400,26 @@ export default function SelfPayBookingPage() {
                       </h2>
                       {displaySlots.length > 0 ? (
                         <div className="grid grid-cols-3 gap-2 sm:gap-4">
-                          {displaySlots.map(slot => (
-                            <button key={slot} type="button" onClick={() => setSelectedTime(slot)} className={`border font-black rounded-xl transition-all select-none py-2.5 text-sm sm:py-4 sm:text-base ${selectedTime === slot ? 'bg-gradient-to-r from-cyan-600 to-blue-600 border-cyan-500 text-white shadow-md font-black scale-[1.02]' : 'border-slate-200 bg-white text-slate-700 hover:border-cyan-500 hover:bg-slate-50'}`}>
-                              {slot}
-                            </button>
-                          ))}
+                          {displaySlots.map(slot => {
+                            // 🚀 修正點 2：動態判定該時段是否已進入看診前 1 小時截止階段
+                            const isExpired = isSlotExpired(slot);
+
+                            return (
+                              <button 
+                                key={slot} 
+                                type="button" 
+                                disabled={isExpired}
+                                onClick={() => setSelectedTime(slot)} 
+                                className={`border font-black rounded-xl transition-all select-none py-2.5 text-sm sm:py-4 sm:text-base 
+                                  ${isExpired ? 'border-slate-100 bg-slate-100/50 text-slate-300 opacity-40 cursor-not-allowed line-through' :
+                                    selectedTime === slot ? 'bg-gradient-to-r from-cyan-600 to-blue-600 border-cyan-500 text-white shadow-md font-black scale-[1.02]' : 
+                                    'border-slate-200 bg-white text-slate-700 hover:border-cyan-500 hover:bg-slate-50'
+                                  }`}
+                              >
+                                {slot}
+                              </button>
+                            );
+                          })}
                         </div>
                       ) : (
                         <div className="text-center text-rose-500 font-black py-4 sm:py-5 bg-rose-50 border border-rose-100 rounded-xl text-xs sm:text-sm md:text-base">⚠️ 抱歉，本日期之特約時段已全數預約額滿。</div>
