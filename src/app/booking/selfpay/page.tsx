@@ -18,7 +18,8 @@ import {
   FaLine,
   FaCheckCircle,
   FaChevronLeft,
-  FaChevronRight
+  FaChevronRight,
+  FaLock
 } from "react-icons/fa";
 
 const LINE_CLIENT_ID = "2010496335";
@@ -120,10 +121,12 @@ export default function SelfPayBookingPage() {
       .catch(err => console.error("非同步數據流載入異常", err));
   }, []);
 
-  // 🚀 當已選日期或排診、預約列表改變時，即時更新 displaySlots（包含截止時間計算）
+  // 當選定日期、排班或預約變動時，即時更新 displaySlots（並全面剔除 1 小時內過期診次，使其直接消失不見）
   useEffect(() => {
     if (selectedDate) {
-      setDisplaySlots(getAvailableSlots(selectedDate));
+      const available = getAvailableSlots(selectedDate);
+      const activeFiltered = available.filter(slot => !isSlotExpired(slot));
+      setDisplaySlots(activeFiltered);
     }
   }, [selectedDate, cachedSchedule, allAppointments]);
 
@@ -150,39 +153,30 @@ export default function SelfPayBookingPage() {
     return totalSlots.filter(slot => !bookedSlots.includes(slot));
   };
 
-  // 🚀 修正點 2：檢查特定時段是否已進入「看診前 1 小時截止」階段
   const isSlotExpired = (slotText: string) => {
     const now = new Date();
     const offset = now.getTimezoneOffset() * 60000;
     const todayStr = new Date(now.getTime() - offset).toISOString().split('T')[0];
     
-    // 如果選的不是今天，就沒有過期問題
     if (selectedDate !== todayStr) return false;
 
-    // 將 "11:00 AM" 或 "02:30 PM" 解析為 24 小時制的時與分
-    const timePart = slotText.split(' ')[0]; // "11:00"
-    const ampm = slotText.split(' ')[1];     // "AM"
+    const timePart = slotText.split(' ')[0]; 
+    const ampm = slotText.split(' ')[1];     
     let [hours, minutes] = timePart.split(':').map(Number);
     
     if (ampm === 'PM' && hours !== 12) hours += 12;
     if (ampm === 'AM' && hours === 12) hours = 0;
 
-    // 建立該預約時段當天的 Date 物件
     const slotTargetTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), hours, minutes, 0);
-    
-    // 計算毫秒差：預約時段 - 當前時間
     const timeDifferenceInMs = slotTargetTime.getTime() - now.getTime();
     const oneHourInMs = 60 * 60 * 1000;
 
-    // 如果距離看診時間小於 1 小時（60 分鐘），一律回傳 true 封鎖預約
     return timeDifferenceInMs < oneHourInMs;
   };
 
   const handleDateClick = (dateStr: string) => {
     setSelectedDate(dateStr);
     setSelectedTime('');
-    // 點擊日期時自動根據當前時間過濾過期診次
-    setDisplaySlots(getAvailableSlots(dateStr));
   };
 
   const resetFormState = () => {
@@ -197,17 +191,17 @@ export default function SelfPayBookingPage() {
 
   const handleBookingSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!lineUserId) {
+      alert('⚠️ 系統安全管制：請先點擊上方按鈕連結您的 LINE 帳號！'); return;
+    }
     if (!formData.name || !formData.phone || formData.phone.length < 9) {
       alert('請正確填寫姓名與手機號碼！'); return;
     }
     if (!selectedDate || !selectedTime) {
       alert('請選擇預約日期與時間時段！'); return;
     }
-    
-    // 再次在前端防呆，避免病患開啟網頁太久導致點到過期時段
     if (isSlotExpired(selectedTime)) {
-      alert('⚠️ 抱歉，該自費時段已進入看診前 1 小時，已截止掛號！請選擇其他時段。');
-      return;
+      alert('⚠️ 抱歉，該自費時段已截止掛號！'); return;
     }
 
     setIsSubmitLoading(true);
@@ -217,7 +211,7 @@ export default function SelfPayBookingPage() {
       name: formData.name, phone: formData.phone,
       email: formData.email, part: formData.part,
       reason: formData.reason, treatment: formData.treatment,
-      lineUserId: lineUserId || '未關聯', service: '自費門診特約' 
+      lineUserId: lineUserId, service: '自費門診特約' 
     };
 
     try {
@@ -365,6 +359,7 @@ export default function SelfPayBookingPage() {
                 <div className="text-left bg-white border border-slate-200 p-4 sm:p-5 rounded-2xl space-y-2.5 text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed shadow-sm">
                   <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 選擇高亮可點擊之日期，即可查看預約空缺。</p>
                   <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 客滿或無排診之日期將反灰無法點選。</p>
+                  <p className="flex items-start gap-1.5"><span className="text-emerald-600 font-bold">✦</span> 已連線成員享有自費特約保障，系統將於看診前一天中午 12:00 自動透過 LINE 發送特約就診提醒通知。</p>
                 </div>
               </div>
             </div>
@@ -379,11 +374,19 @@ export default function SelfPayBookingPage() {
                       <span className="w-5 h-5 sm:w-6 h-6 rounded-full bg-cyan-100 text-cyan-600 border border-cyan-200 flex items-center justify-center text-[11px] sm:text-xs font-black">1</span>
                       選擇預約掛號日期
                     </h2>
+                    
                     <div className="flex items-center justify-between mb-4 sm:mb-6 px-1">
-                      <button type="button" onClick={() => setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1, 1))} className="p-1.5 text-slate-500 hover:text-cyan-600 transition"><FaChevronLeft size={16} /></button>
-                      <div className="font-black tracking-wider sm:tracking-widest text-lg sm:text-xl text-slate-900">{currentMonth.getFullYear()} 年 {currentMonth.getMonth() + 1} 月</div>
-                      <button type="button" onClick={() => setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 1))} className="p-1.5 text-slate-500 hover:text-cyan-600 transition"><FaChevronRight size={16} /></button>
+                      <button type="button" onClick={() => setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1, 1))} className="p-1.5 text-slate-500 hover:text-cyan-600 transition">
+                        <FaChevronLeft size={16} />
+                      </button>
+                      <div className="font-black tracking-wider sm:tracking-widest text-lg sm:text-xl text-slate-900">
+                        {currentMonth.getFullYear()} 年 {currentMonth.getMonth() + 1} 月
+                      </div>
+                      <button type="button" onClick={() => setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 1))} className="p-1.5 text-slate-500 hover:text-cyan-600 transition">
+                        <FaChevronRight size={16} />
+                      </button>
                     </div>
+
                     <div className="grid grid-cols-7 gap-y-2 sm:gap-y-3 text-center">
                       {['日', '一', '二', '三', '四', '五', '六'].map(d => (
                         <div key={d} className="text-xs sm:text-sm font-black text-slate-400 pb-2">{d}</div>
@@ -400,26 +403,19 @@ export default function SelfPayBookingPage() {
                       </h2>
                       {displaySlots.length > 0 ? (
                         <div className="grid grid-cols-3 gap-2 sm:gap-4">
-                          {displaySlots.map(slot => {
-                            // 🚀 修正點 2：動態判定該時段是否已進入看診前 1 小時截止階段
-                            const isExpired = isSlotExpired(slot);
-
-                            return (
-                              <button 
-                                key={slot} 
-                                type="button" 
-                                disabled={isExpired}
-                                onClick={() => setSelectedTime(slot)} 
-                                className={`border font-black rounded-xl transition-all select-none py-2.5 text-sm sm:py-4 sm:text-base 
-                                  ${isExpired ? 'border-slate-100 bg-slate-100/50 text-slate-300 opacity-40 cursor-not-allowed line-through' :
-                                    selectedTime === slot ? 'bg-gradient-to-r from-cyan-600 to-blue-600 border-cyan-500 text-white shadow-md font-black scale-[1.02]' : 
-                                    'border-slate-200 bg-white text-slate-700 hover:border-cyan-500 hover:bg-slate-50'
-                                  }`}
-                              >
-                                {slot}
-                              </button>
-                            );
-                          })}
+                          {displaySlots.map(slot => (
+                            <button 
+                              key={slot} 
+                              type="button" 
+                              onClick={() => setSelectedTime(slot)} 
+                              className={`border font-black rounded-xl transition-all select-none py-2.5 text-sm sm:py-4 sm:text-base 
+                                ${selectedTime === slot ? 'bg-gradient-to-r from-cyan-600 to-blue-600 border-cyan-500 text-white shadow-md font-black scale-[1.02]' : 
+                                  'border-slate-200 bg-white text-slate-700 hover:border-cyan-500 hover:bg-slate-50'
+                                }`}
+                            >
+                              {slot}
+                            </button>
+                          ))}
                         </div>
                       ) : (
                         <div className="text-center text-rose-500 font-black py-4 sm:py-5 bg-rose-50 border border-rose-100 rounded-xl text-xs sm:text-sm md:text-base">⚠️ 抱歉，本日期之特約時段已全數預約額滿。</div>
@@ -428,7 +424,7 @@ export default function SelfPayBookingPage() {
                   )}
 
                   {selectedDate && selectedTime && (
-                    <form onSubmit={handleBookingSubmit} className="space-y-5 sm:space-y-6 pt-5 sm:pt-6 border-t border-slate-200 border-dashed animate-fadeIn">
+                    <div className="space-y-5 sm:space-y-6 pt-5 sm:pt-6 border-t border-slate-200 border-dashed animate-fadeIn">
                       <h2 className="text-base sm:text-lg font-black text-slate-800 flex items-center gap-2">
                         <span className="w-5 h-5 sm:w-6 h-6 rounded-full bg-cyan-100 text-cyan-600 border border-cyan-200 flex items-center justify-center text-[11px] sm:text-xs font-black">3</span>
                         填寫就診基本問卷
@@ -464,59 +460,67 @@ export default function SelfPayBookingPage() {
                         </div>
                       </div>
 
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                          <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">病患真實姓名 <span className="text-rose-500">*</span></label>
-                          <div className="relative">
-                            <FaUser className="absolute left-4 top-4 sm:top-4.5 text-slate-400 text-xs sm:text-sm" />
-                            <input type="text" required value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} placeholder="繁體中文真實大名" className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
+                      {lineUserId ? (
+                        <form onSubmit={handleBookingSubmit} className="space-y-5 sm:space-y-6 animate-fadeIn">
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">病患真實姓名 <span className="text-rose-500">*</span></label>
+                              <div className="relative">
+                                <FaUser className="absolute left-4 top-4 sm:top-4.5 text-slate-400 text-xs sm:text-sm" />
+                                <input type="text" required value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} placeholder="繁體中文真實大名" className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
+                              </div>
+                            </div>
+                            <div>
+                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">手機號碼 (將完整保留開頭0) <span className="text-rose-500">*</span></label>
+                              <div className="relative">
+                                <FaPhoneAlt className="absolute left-4 top-4 sm:top-4.5 text-slate-400 text-xs sm:text-sm" />
+                                <input type="tel" required value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} placeholder="例如：0912345678" className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <div>
-                          <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">手機號碼 (將完整保留開頭0) <span className="text-rose-500">*</span></label>
-                          <div className="relative">
-                            <FaPhoneAlt className="absolute left-4 top-4 sm:top-4.5 text-slate-400 text-xs sm:text-sm" />
-                            <input type="tel" required value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} placeholder="例如：0912345678" className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
-                          </div>
-                        </div>
-                      </div>
 
-                      <div>
-                        <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">電子郵件 (選填)</label>
-                        <div className="relative">
-                          <FaEnvelope className="absolute left-4 top-4 sm:top-4.5 text-slate-400 text-xs sm:text-sm" />
-                          <input type="email" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} placeholder="yourname@gmail.com" className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
-                        </div>
-                      </div>
+                          <div>
+                            <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">電子郵件 (選填)</label>
+                            <div className="relative">
+                              <FaEnvelope className="absolute left-4 top-4 sm:top-4.5 text-slate-400 text-xs sm:text-sm" />
+                              <input type="email" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} placeholder="yourname@gmail.com" className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
+                            </div>
+                          </div>
 
-                      <div className="space-y-4">
-                        <div>
-                          <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">本次看診不適部位？</label>
-                          <div className="relative">
-                            <FaMapMarkerAlt className="absolute left-4 top-4 sm:top-4.5 text-slate-400 text-xs sm:text-sm" />
-                            <input type="text" value={formData.part} onChange={e => setFormData({...formData, part: e.target.value})} placeholder="例如：right knee (右側膝蓋)、腰椎..." className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
+                          <div className="space-y-4">
+                            <div>
+                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">本次看診不適部位？</label>
+                              <div className="relative">
+                                <FaMapMarkerAlt className="absolute left-4 top-4 sm:top-4.5 text-slate-400 text-xs sm:text-sm" />
+                                <input type="text" value={formData.part} onChange={e => setFormData({...formData, part: e.target.value})} placeholder="例如：right knee (右側膝蓋)、腰椎..." className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
+                              </div>
+                            </div>
+                            <div>
+                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">不適發生原因？ (可詳細敘述)</label>
+                              <div className="relative">
+                                <FaFileAlt className="absolute left-4 top-4 sm:top-5 text-slate-400 text-xs sm:text-sm" />
+                                <textarea rows={3} value={formData.reason} onChange={e => setFormData({...formData, reason: e.target.value})} placeholder="請描述疼痛情況、不適過程或受傷經過..." className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 resize-none placeholder-slate-400 leading-relaxed text-justify" />
+                              </div>
+                            </div>
+                            <div>
+                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">先前曾接受過哪些治療或放射檢查嗎？</label>
+                              <div className="relative">
+                                <FaHistory className="absolute left-4 top-4 sm:top-4.5 text-slate-400 text-xs sm:text-sm" />
+                                <input type="text" value={formData.treatment} onChange={e => setFormData({...formData, treatment: e.target.value})} placeholder="例如：照過X光、曾做過復健、藥物治療、皆無..." className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <div>
-                          <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">不適發生原因？ (可詳細敘述)</label>
-                          <div className="relative">
-                            <FaFileAlt className="absolute left-4 top-4 sm:top-5 text-slate-400 text-xs sm:text-sm" />
-                            <textarea rows={3} value={formData.reason} onChange={e => setFormData({...formData, reason: e.target.value})} placeholder="請描述疼痛情況、不適過程或受傷經過..." className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 resize-none placeholder-slate-400 leading-relaxed text-justify" />
-                          </div>
-                        </div>
-                        <div>
-                          <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">先前曾接受過哪些治療或放射檢查嗎？</label>
-                          <div className="relative">
-                            <FaHistory className="absolute left-4 top-4 sm:top-4.5 text-slate-400 text-xs sm:text-sm" />
-                            <input type="text" value={formData.treatment} onChange={e => setFormData({...formData, treatment: e.target.value})} placeholder="例如：照過X光、曾做過復健、藥物治療、皆無..." className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
-                          </div>
-                        </div>
-                      </div>
 
-                      <button type="submit" disabled={isSubmitLoading} className="w-full py-4 sm:py-5 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 font-black text-base md:text-lg tracking-widest shadow-lg transition-all disabled:bg-slate-300 text-white">
-                        {isSubmitLoading ? "雲端資料庫確認鎖定中..." : "確認送出特約自費掛號"}
-                      </button>
-                    </form>
+                          <button type="submit" disabled={isSubmitLoading} className="w-full py-4 sm:py-5 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 font-black text-base md:text-lg tracking-widest shadow-lg transition-all disabled:bg-slate-300 text-white">
+                            {isSubmitLoading ? "雲端資料庫確認鎖定中..." : "確認送出特約自費掛號"}
+                          </button>
+                        </form>
+                      ) : (
+                        <div className="text-center p-6 sm:p-8 bg-amber-50 border border-amber-200 rounded-xl font-bold text-amber-800 text-xs sm:text-sm leading-relaxed animate-fadeIn">
+                          🔒 安全管控提示：為了提供高隱私的特約服務，請先於上方完成【一鍵安全綁定】連結您的 LINE 帳號，系統方能立即為您開啟自費就診問卷填寫。
+                        </div>
+                      )}
+                    </div>
                   )}
                 </div>
               )}

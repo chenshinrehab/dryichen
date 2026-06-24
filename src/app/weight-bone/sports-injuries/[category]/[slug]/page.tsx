@@ -8,8 +8,8 @@ import { getNewsById } from '@/data/news'
 import JsonLd from '@/components/JsonLd'
 import ShareButtons from '@/components/ShareButtons'
 
-// ✨ 核心修正 1：改為 true。搭配 prefetch={false} 即可在不爆炸流量的前提下，徹底根治全站文章子網頁 404 的問題
-export const dynamicParams = true;
+// 節省 Vercel 流量關鍵：不允許動態非預期路由，直接阻斷未定義的無效請求
+export const dynamicParams = false;
 
 // 定義常數，清除可能存在的尾部斜線防止 Canonical 拼錯
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim().replace(/\/$/, '')
@@ -18,11 +18,6 @@ const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.
 const cachedGetNewsById = cache((slug: string) => {
   return getNewsById(slug)
 })
-
-// 保持空路徑即可，交由動態防禦機制（dynamicParams = true）在有人訪問時即時生成並快取，不再卡死打包階段
-export async function generateStaticParams() {
-  return []
-}
 
 interface PageProps {
   params: Promise<{ category: string; slug: string }>
@@ -77,10 +72,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
    ========================================================================== */
 export default async function SportsInjuryDetailPage({ params }: PageProps) {
   const { category, slug } = await params
-  
-  // 💡 安全解碼機制：防止中文路由被 URL 編碼導致 find 失敗拋出 404
-  const decodedCategory = decodeURIComponent(category)
-  const categoryData = sportsInjuriesData.find(c => c.category === decodedCategory || c.category === category)
+  const categoryData = sportsInjuriesData.find(c => c.category === category)
   const article = cachedGetNewsById(slug)
 
   if (!categoryData || !article) {
@@ -287,13 +279,14 @@ export default async function SportsInjuryDetailPage({ params }: PageProps) {
     <>
       <JsonLd data={jsonLdData} />
       <JsonLd data={jsonLdBreadcrumb} />
-      
-      <style dangerouslySetInnerHTML={{__html: `
+
+      <style dangerouslySetInnerHTML={{
+        __html: `
         .article-content strong {
             color: #22d3ee !important;
             font-weight: 700;
         }
-            
+           
         .article-content a:not(sup a):not([style*="text-underline-offset"]) {
             color: #ec4899 !important;
             font-weight: 600;
@@ -384,7 +377,7 @@ export default async function SportsInjuryDetailPage({ params }: PageProps) {
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-300">
         <main className="flex-grow pt-0 -mt-10 md:-mt-12 pb-12 fade-in relative z-10">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            
+
             <Link
               href={`/weight-bone/sports-injuries/${categoryData.category}`}
               className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors group"
@@ -395,17 +388,16 @@ export default async function SportsInjuryDetailPage({ params }: PageProps) {
 
             <article className="bg-slate-800/80 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden shadow-2xl">
               <div className="p-4 md:p-10">
-                
+
                 <header className="mb-10 border-l-4 border-cyan-500 pl-4 bg-gradient-to-r from-slate-900/80 to-transparent py-6 rounded-r-xl flex flex-col md:flex-row md:items-center gap-6">
-                  {/* QR Code 增加延遲載入、非同步解碼與低優先級優化，防止阻塞，全面節省流量與頻寬開銷 */}
+                  {/* QR Code 增加延遲載入，節省首網載入流量與頻寬 */}
                   <div className="hidden md:block bg-white p-2 rounded-lg shrink-0 group relative shadow-lg ring-2 ring-slate-700">
-                    <img 
-                      className="w-24 h-24 object-contain" 
-                      src={qrCodeApiUrl} 
+                    <img
+                      className="w-24 h-24 object-contain"
+                      src={qrCodeApiUrl}
                       alt={`掃描閱讀 ${article.title}`}
                       loading="lazy"
                       decoding="async"
-                      fetchPriority="low"
                     />
                     <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-max bg-slate-900 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-slate-600">
                       掃描帶走文章
@@ -504,11 +496,11 @@ export default async function SportsInjuryDetailPage({ params }: PageProps) {
 
                   <h2 className="text-white font-bold text-2xl mb-3 relative z-10">覺得這篇文章有幫助嗎？</h2>
                   <p className="text-slate-400 mb-8 text-lg relative z-10">歡迎分享給親朋好友，讓更多人獲得正確的復健知識。</p>
-                  
+
                   <div className="relative z-10">
                     <ShareButtons url={currentUrl} title={article.title} />
                   </div>
-                  
+
                   <div className="mt-12 pt-8 border-t border-slate-700/50 relative z-10">
                     <Link
                       href="/about/news"

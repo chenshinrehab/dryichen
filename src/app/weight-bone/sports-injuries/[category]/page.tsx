@@ -6,30 +6,22 @@ import { notFound } from 'next/navigation'
 import { sportsInjuriesData } from '@/data/sportsInjuries'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 
-// ✨ 核心修正：將 false 改為 true。允許 Next.js 動態處理 URL 編碼的合法路徑，徹底根治集體 404 誤殺問題
-export const dynamicParams = true;
+// ✨ 核心修正 1：強制關閉動態路由參數，徹底阻斷未知參數或爬蟲穿透至後端資料庫
+export const dynamicParams = false;
 
-// 生成常用靜態路徑，讓 Vercel 預先編譯絕大多數分類網頁
+// ✨ 修正補強：生成所有合法的分類靜態路徑，確保靜態導覽頁與防禦機制正常運作
 export async function generateStaticParams() {
   return sportsInjuriesData.map((c) => ({
     category: c.category,
   }))
 }
 
-interface PageProps {
-  params: Promise<{ category: string }>
-}
-
 // 1. 動態生成 Metadata，強化 SEO/GEO
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { category } = await params
-  
-  // 💡 安全解碼機制：防止中文路徑因 URL 編碼（%E...）導致 find 找不到資料
-  const decodedCategory = decodeURIComponent(category)
-  const categoryData = sportsInjuriesData.find(c => c.category === decodedCategory || c.category === category)
+export async function generateMetadata({ params }: { params: { category: string } }): Promise<Metadata> {
+  const categoryData = sportsInjuriesData.find(c => c.category === params.category)
   if (!categoryData) return {}
 
-  const SITE_URL = 'https://www.dryichen.com.tw'
+  const SITE_URL = 'https://www.dryichen.com.tw' // 建議替換為你的環境變數
   const title = `${categoryData.title}復健與預防 - 專業運動醫學診斷 | 新竹宸新復健科`
   const description = `新竹宸新復健科針對${categoryData.title}提供專業傷害 analyses。包含${categoryData.injuries.slice(0, 3).map(i => i.title).join('、')}的治療方案，由運動醫學專家林羿辰醫師指導。`
 
@@ -37,7 +29,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description,
     alternates: {
-      canonical: `${SITE_URL}/weight-bone/sports-injuries/${category}`,
+      canonical: `${SITE_URL}/weight-bone/sports-injuries/${params.category}`,
     },
     openGraph: {
       title,
@@ -51,12 +43,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 }
 
-export default async function SportsCategoryPage({ params }: PageProps) {
-  const { category } = await params
-  
-  // 💡 安全解碼機制：確保頁面渲染時中文分類比對正常
-  const decodedCategory = decodeURIComponent(category)
-  const categoryData = sportsInjuriesData.find(c => c.category === decodedCategory || c.category === category)
+export default function SportsCategoryPage({ params }: { params: { category: string } }) {
+  const categoryData = sportsInjuriesData.find(c => c.category === params.category)
   const SITE_URL = 'https://www.dryichen.com.tw'
 
   if (!categoryData) {
@@ -72,12 +60,12 @@ export default async function SportsCategoryPage({ params }: PageProps) {
         'itemListElement': [
           { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
           { '@type': 'ListItem', position: 2, name: '減重與骨齡門診', item: `${SITE_URL}/weight-bone` },
-          { '@type': 'ListItem', position: 3, name: categoryData.title, item: `${SITE_URL}/weight-bone/sports-injuries/${category}` }
+          { '@type': 'ListItem', position: 3, name: categoryData.title, item: `${SITE_URL}/weight-bone/sports-injuries/${params.category}` }
         ]
       },
       {
         '@type': 'CollectionPage',
-        '@id': `${SITE_URL}/weight-bone/sports-injuries/${category}#webpage`,
+        '@id': `${SITE_URL}/weight-bone/sports-injuries/${params.category}#webpage`,
         'name': `${categoryData.title}常見運動傷害導覽`,
         'description': `針對${categoryData.title}常見的臨床傷害如${categoryData.injuries.map(i => i.title).join('、')}，提供專業復健科醫師的診斷與治療建議。`,
         'mainEntity': {
@@ -87,7 +75,8 @@ export default async function SportsCategoryPage({ params }: PageProps) {
             '@type': 'ListItem',
             'position': index + 1,
             'name': injury.title,
-            'url': `${SITE_URL}/weight-bone/sports-injuries/${category}/${injury.slug}`
+            // ✨ 修正：將 Schema 指向的目標 URL 同步修復為連至特色門診專屬子分頁網址
+            'url': `${SITE_URL}/weight-bone/sports-injuries/${params.category}/${injury.slug}`
           }))
         },
         'author': {
@@ -128,9 +117,10 @@ export default async function SportsCategoryPage({ params }: PageProps) {
           {/* 具體傷害項目列表 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {categoryData.injuries.map((injury) => (
+              /* ✨ 修正：將 href 的超連結導向，正確調整改為進去它下面的專屬子分頁路由（/weight-bone/sports-injuries/${params.category}/${injury.slug}） */
               <Link
                 key={injury.slug}
-                href={`/weight-bone/sports-injuries/${category}/${injury.slug}`}
+                href={`/weight-bone/sports-injuries/${params.category}/${injury.slug}`}
                 prefetch={false}
                 className="group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] hover:-translate-y-1 transition-all duration-300 flex flex-col"
               >
@@ -141,7 +131,6 @@ export default async function SportsCategoryPage({ params }: PageProps) {
                     src={injury.image}
                     alt={injury.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-100"
-                    loading="lazy"
                   />
                 </div>
 
