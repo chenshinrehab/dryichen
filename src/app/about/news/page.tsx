@@ -54,15 +54,18 @@ export const metadata: Metadata = {
 }
 
 type Props = {
-  searchParams: { [key: string]: string | string[] | undefined }
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
-export default function NewsListPage({ searchParams }: Props) {
+export default async function NewsListPage({ searchParams }: Props) {
   const currentUrl = CANONICAL_URL
+  
+  // ✨ 核心修正 2：修復 Next.js 15 searchParams 非同步 Promise 解構地雷，防止伺服器端渲染卡死
+  const resolvedSearchParams = await searchParams;
 
   // 分頁邏輯設定
   const ITEMS_PER_PAGE = 10;
-  const pageParam = searchParams?.page;
+  const pageParam = resolvedSearchParams?.page;
   const parsedPage = typeof pageParam === 'string' ? parseInt(pageParam, 10) : 1;
   const totalPages = Math.ceil(articlesList.length / ITEMS_PER_PAGE) || 1;
   
@@ -191,6 +194,7 @@ export default function NewsListPage({ searchParams }: Props) {
                           src={item.coverImage} 
                           alt={`新竹宸新復健科衛教文章：${item.title}`} 
                           className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
+                          loading="lazy"
                         />
                       </div>
                       <div className="md:w-2/3 p-6 md:p-8 flex flex-col justify-center">
@@ -347,7 +351,7 @@ export default function NewsListPage({ searchParams }: Props) {
               </div>
             )}
 
-            {/* ✨ 專屬 SEO 爬蟲通路：補足 Ahrefs 110 篇內部連結，sr-only 確保人類隱形、爬蟲吃飽 */}
+            {/* ✨ 專屬 SEO 爬蟲通路：完美消滅 Ahrefs 孤兒頁面警告，搭配子分頁完全靜態 HTML 化後，絕不引發流量爆炸 */}
             <div className="sr-only" aria-hidden="true">
               {articlesList.map((item) => (
                 <Link 

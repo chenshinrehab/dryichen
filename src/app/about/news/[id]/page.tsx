@@ -10,20 +10,25 @@ import ShareButtons from '@/components/ShareButtons'
 export const dynamicParams = false;
 
 // 定義常數，方便未來修改
-const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim().replace(/\/$/, '')
 
-interface PageProps { params: { id: string } }
+interface PageProps { 
+  params: Promise<{ id: string }> 
+}
 
 export async function generateStaticParams() {
   return newsList.map((post) => ({ id: post.id }))
 }
 
-// 1. 動態 Meta (強化重點：加入精確座標與主題性 SEO)
+/* ==========================================================================
+   1. 動態 Meta (強化重點：加入精確座標與主題性 SEO)
+   ========================================================================== */
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const post = getNewsById(params.id)
+  const { id } = await params
+  const post = getNewsById(id)
   if (!post) return { title: '文章不存在' }
 
-  const canonicalUrl = `${SITE_URL}/about/news/${params.id}`
+  const canonicalUrl = `${SITE_URL}/about/news/${id}`
 
   return {
     title: post.seoTitle ? post.seoTitle : `${post.title} | 新竹宸新復健科`,
@@ -60,11 +65,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 }
 
-export default function NewsDetailPage({ params }: PageProps) {
-  const post = getNewsById(params.id)
+/* ==========================================================================
+   2. 主頁面組件
+   ========================================================================== */
+export default async function NewsDetailPage({ params }: PageProps) {
+  const { id } = await params
+  const post = getNewsById(id)
   if (!post) notFound()
 
-  const currentUrl = `${SITE_URL}/about/news/${params.id}`
+  const currentUrl = `${SITE_URL}/about/news/${id}`
   // 自動生成該頁面專屬的 QR Code 網址
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(currentUrl)}`
 
@@ -85,7 +94,7 @@ export default function NewsDetailPage({ params }: PageProps) {
   // 設定預設顏色（如果分類不在名單內）
   const activeCategoryStyle = categoryStyles[postCategory] || 'bg-slate-500/10 text-slate-400 border-slate-500/30';
 
-  // 2. Schema (核心安全性優化：徹底移除 undefined 屬性對抗 Webview 崩潰)
+  // 3. Schema (核心安全性優化：徹底移除 undefined 屬性對抗 Webview 崩潰)
   const jsonLdData: Record<string, any> = {
     '@context': 'https://schema.org',
     '@type': isAnnouncement ? 'NewsArticle' : ['MedicalWebPage', 'MedicalEntity'],
@@ -365,9 +374,16 @@ export default function NewsDetailPage({ params }: PageProps) {
               <div className="p-4 md:p-10">
                 <header className="mb-10 border-l-4 border-cyan-500 pl-4 bg-gradient-to-r from-slate-900/80 to-transparent py-6 rounded-r-xl flex flex-col md:flex-row md:items-center gap-6">
 
-                  {/* 加入的 QR Code 區塊 */}
+                  {/* QR Code 增加延遲載入、非同步解碼與低優先級優化，防止阻塞，全面節省流量與頻寬開銷 */}
                   <div className="hidden md:block bg-white p-2 rounded-lg shrink-0 group relative shadow-lg ring-2 ring-slate-700">
-                    <img className="w-24 h-24 object-contain" src={qrCodeApiUrl} alt={`掃描閱讀 ${post.title}`} />
+                    <img 
+                      className="w-24 h-24 object-contain" 
+                      src={qrCodeApiUrl} 
+                      alt={`掃描閱讀 ${post.title}`}
+                      loading="lazy"
+                      decoding="async"
+                      fetchPriority="low"
+                    />
                     <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-max bg-slate-900 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-slate-600">
                       掃描帶走文章
                     </div>

@@ -16,9 +16,14 @@ export async function generateStaticParams() {
   }))
 }
 
-// 1. 動態生成 Metadata，強化 SEO/GEO
-export async function generateMetadata({ params }: { params: { category: string } }): Promise<Metadata> {
-  const categoryData = sportsInjuriesData.find(c => c.category === params.category)
+interface PageProps {
+  params: Promise<{ category: string }>
+}
+
+// 1. 動態生成 Metadata，強化 SEO/GEO（修復 Next.js 15 params 非同步問題）
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { category } = await params
+  const categoryData = sportsInjuriesData.find(c => c.category === category)
   if (!categoryData) return {}
 
   const SITE_URL = 'https://www.dryichen.com.tw' // 建議替換為你的環境變數
@@ -29,7 +34,7 @@ export async function generateMetadata({ params }: { params: { category: string 
     title,
     description,
     alternates: {
-      canonical: `${SITE_URL}/weight-bone/sports-injuries/${params.category}`,
+      canonical: `${SITE_URL}/weight-bone/sports-injuries/${category}`,
     },
     openGraph: {
       title,
@@ -43,8 +48,9 @@ export async function generateMetadata({ params }: { params: { category: string 
   }
 }
 
-export default function SportsCategoryPage({ params }: { params: { category: string } }) {
-  const categoryData = sportsInjuriesData.find(c => c.category === params.category)
+export default async function SportsCategoryPage({ params }: PageProps) {
+  const { category } = await params
+  const categoryData = sportsInjuriesData.find(c => c.category === category)
   const SITE_URL = 'https://www.dryichen.com.tw'
 
   if (!categoryData) {
@@ -60,12 +66,12 @@ export default function SportsCategoryPage({ params }: { params: { category: str
         'itemListElement': [
           { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
           { '@type': 'ListItem', position: 2, name: '減重與骨齡門診', item: `${SITE_URL}/weight-bone` },
-          { '@type': 'ListItem', position: 3, name: categoryData.title, item: `${SITE_URL}/weight-bone/sports-injuries/${params.category}` }
+          { '@type': 'ListItem', position: 3, name: categoryData.title, item: `${SITE_URL}/weight-bone/sports-injuries/${category}` }
         ]
       },
       {
         '@type': 'CollectionPage',
-        '@id': `${SITE_URL}/weight-bone/sports-injuries/${params.category}#webpage`,
+        '@id': `${SITE_URL}/weight-bone/sports-injuries/${category}#webpage`,
         'name': `${categoryData.title}常見運動傷害導覽`,
         'description': `針對${categoryData.title}常見的臨床傷害如${categoryData.injuries.map(i => i.title).join('、')}，提供專業復健科醫師的診斷與治療建議。`,
         'mainEntity': {
@@ -76,7 +82,7 @@ export default function SportsCategoryPage({ params }: { params: { category: str
             'position': index + 1,
             'name': injury.title,
             // ✨ 修正：將 Schema 指向的目標 URL 同步修復為連至特色門診專屬子分頁網址
-            'url': `${SITE_URL}/weight-bone/sports-injuries/${params.category}/${injury.slug}`
+            'url': `${SITE_URL}/weight-bone/sports-injuries/${category}/${injury.slug}`
           }))
         },
         'author': {
@@ -117,11 +123,11 @@ export default function SportsCategoryPage({ params }: { params: { category: str
           {/* 具體傷害項目列表 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {categoryData.injuries.map((injury) => (
-              /* ✨ 修正：將 href 的超連結導向，正確調整改為進去它下面的專屬子分頁路由（/weight-bone/sports-injuries/${params.category}/${injury.slug}） */
+              /* ✨ 修正：將 href 的超連結導向，正確調整改為進去它下面的專屬子分頁路由（/weight-bone/sports-injuries/${category}/${injury.slug}） */
               <Link
                 key={injury.slug}
-                href={`/weight-bone/sports-injuries/${params.category}/${injury.slug}`}
-                prefetch={false}
+                href={`/weight-bone/sports-injuries/${category}/${injury.slug}`}
+                prefetch={false} // 精確防止爬蟲與使用者進入時大量非預期預先載入，全面捍衛頻寬流量
                 className="group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] hover:-translate-y-1 transition-all duration-300 flex flex-col"
               >
                 <div className="h-48 w-full relative overflow-hidden bg-slate-700">
@@ -131,6 +137,7 @@ export default function SportsCategoryPage({ params }: { params: { category: str
                     src={injury.image}
                     alt={injury.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-100"
+                    loading="lazy" // 補上圖片延遲載入優化，減少首網流量負荷
                   />
                 </div>
 
