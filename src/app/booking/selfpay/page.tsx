@@ -52,12 +52,23 @@ export default function SelfPayBookingPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitLoading, setIsSubmitLoading] = useState(false);
 
+  // 🚀 導入 A 方案：利用 LocalStorage 自動記憶與識別 LINE 使用者狀態
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const lineIdParam = params.get('lineUserId');
+    
     if (lineIdParam) {
+      // 第一次授權成功回來：將 ID 刻進瀏覽器記憶體
+      localStorage.setItem('saved_line_user_id', lineIdParam);
       setLineUserId(lineIdParam);
       setActiveTab('query');
+    } else {
+      // 第二次直接開啟網頁：主動撈取歷史記憶，達成自動登入與展示
+      const savedId = localStorage.getItem('saved_line_user_id');
+      if (savedId) {
+        setLineUserId(savedId);
+        setActiveTab('query');
+      }
     }
 
     Promise.all([
@@ -80,7 +91,9 @@ export default function SelfPayBookingPage() {
   }, [lineUserId]);
 
   const handleLineAuthRedirect = () => {
-    const redirectUri = encodeURIComponent(window.location.origin + window.location.pathname);
+    // 🚀 強制指定回呼網址，不讓 window.location.origin 動態亂抓，徹底根除 400 錯誤！
+    const redirectUri = encodeURIComponent("https://dryichen.com.tw/booking/selfpay");
+    
     window.location.href = `https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=${LINE_CLIENT_ID}&redirect_uri=${redirectUri}&state=selfPayVerify&scope=profile`;
   };
 
@@ -126,6 +139,7 @@ export default function SelfPayBookingPage() {
       lineUserId: lineUserId || '未關聯', service: '自費門診特約' 
     };
 
+    type: 'POST'
     try {
       const response = await fetch('/api/reserve', {
         method: 'POST',
@@ -182,7 +196,6 @@ export default function SelfPayBookingPage() {
     }
   };
 
-  // 🚀 修正點 2：優化手機版日曆排版，取消手機端的大圓點容器防擠壓重疊
   const renderCalendar = () => {
     const today = new Date();
     const offset = today.getTimezoneOffset() * 60000;
@@ -239,74 +252,74 @@ export default function SelfPayBookingPage() {
       }} />
       <ScrollAnimation />
 
- {/* 🚀 終極對策：同時鎖定所有子 div 的背景為淺灰，並強制文字為深色，確保背景不變黑、字體完美浮現 */}
-<style dangerouslySetInnerHTML={{__html: `
-  /* 1. 網頁大底維持溫潤的淺灰白 */
-  body, html, main, #__next, .flex-grow, div[class*="min-h-screen"], .bg-slate-50 {
-    background-color: #f8fafc !important;
-    color: #1e293b !important;
-  }
-  
-  /* 2. 導覽條本體與內部所有 div 容器：強制鎖定質感淺灰，全面封鎖黑色背景 */
-  nav, header, [class*="nav"], [class*="Navbar"], [class*="header"],
-  nav div, header div, nav section, header section {
-    background-color: #e2e8f0 !important; 
-    background-image: none !important;
-    border-bottom: none !important;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important;
-  }
+      {/* 🚀 終極對策：同時鎖定所有子 div 的背景為淺灰，並強制文字為深色，確保背景不變黑、字體完美浮現 */}
+      <style dangerouslySetInnerHTML={{__html: `
+        /* 1. 網頁大底維持溫潤的淺灰白 */
+        body, html, main, #__next, .flex-grow, div[class*="min-h-screen"], .bg-slate-50 {
+          background-color: #f8fafc !important;
+          color: #1e293b !important;
+        }
+        
+        /* 2. 導覽條本體與內部所有 div 容器：強制鎖定質感淺灰，全面封鎖黑色背景 */
+        nav, header, [class*="nav"], [class*="Navbar"], [class*="header"],
+        nav div, header div, nav section, header section {
+          background-color: #e2e8f0 !important; 
+          background-image: none !important;
+          border-bottom: none !important;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important;
+        }
 
-  {/* 3. 解決字體隱形：強制導覽列內的所有文字、標題、Span、按鈕、圖標通通顯示為清晰深灰色 */}
-  nav *, header *, [class*="Navbar"] *, [class*="header"] * {
-    color: #1e293b !important; 
-  }
-  
-  /* 導覽列第一層選單滑鼠滑過去時變成精緻科技藍 */
-  nav a:hover, header a:hover, nav button:hover, header button:hover {
-    color: #0891b2 !important;
-  }
+        {/* 3. 解決字體隱形：強制導覽列內的所有文字、標題、Span、按鈕、圖標通通顯示為清晰深灰色 */}
+        nav *, header *, [class*="Navbar"] *, [class*="header"] * {
+          color: #1e293b !important; 
+        }
+        
+        /* 導覽列第一層選單滑鼠滑過去時變成精緻科技藍 */
+        nav a:hover, header a:hover, nav button:hover, header button:hover {
+          color: #0891b2 !important;
+        }
 
-  /* 4. 下拉選單：獨立隔離！強制維持乾淨的白色底、黑色字 */
-nav ul, header ul, nav div[class*="dropdown"], header div[class*="dropdown"], [class*="dropdown-menu"], [class*="menu"] {
-  background-color: #ffffff !important;
-  border-radius: 1.25rem !important; /* 🚀 注入精緻大圓角 (約 rounded-2xl) */
-  overflow: hidden !important;        /* 🚀 核心關鍵：強制修邊，防止內部方角刺破外框 */
-  border: 1px solid #e2e8f0 !important; /* 加上微細邊框，讓白色選單更有立體質感 */
-}
-  nav ul *, header ul *, [class*="dropdown"] *, [class*="dropdown-menu"] *, [class*="menu"] * {
-    background-color: #ffffff !important;
-    color: #0f172a !important;
-    fill: #0f172a !important;
-  }
-  
-  /* 下拉選單滑過時的灰色特效底色 */
-  nav ul a:hover, header ul a:hover, [class*="dropdown"] a:hover, [class*="dropdown-menu"] a:hover,
-  nav ul a:hover *, header ul a:hover *, [class*="dropdown"] a:hover *, [class*="dropdown-menu"] a:hover * {
-    background-color: #f1f5f9 !important;
-    color: #0f172a !important;
-  }
+        /* 4. 下拉選單：獨立隔離！強制維持乾淨的白色底、黑色字 */
+        nav ul, header ul, nav div[class*="dropdown"], header div[class*="dropdown"], [class*="dropdown-menu"], [class*="menu"] {
+          background-color: #ffffff !important;
+          border-radius: 1.25rem !important; /* 🚀 注入精緻大圓角 (約 rounded-2xl) */
+          overflow: hidden !important;        /* 🚀 核心關鍵：強制修邊，防止內部方角刺破外框 */
+          border: 1px solid #e2e8f0 !important; /* 加上微細邊框，讓白色選單更有立體質感 */
+        }
+        nav ul *, header ul *, [class*="dropdown"] *, [class*="dropdown-menu"] *, [class*="menu"] * {
+          background-color: #ffffff !important;
+          color: #0f172a !important;
+          fill: #0f172a !important;
+        }
+        
+        /* 下拉選單滑過時的灰色特效底色 */
+        nav ul a:hover, header ul a:hover, [class*="dropdown"] a:hover, [class*="dropdown-menu"] a:hover,
+        nav ul a:hover *, header ul a:hover *, [class*="dropdown"] a:hover *, [class*="dropdown-menu"] a:hover * {
+          background-color: #f1f5f9 !important;
+          color: #0f172a !important;
+        }
 
-  /* 5. 消滅桃紅色預約按鈕，改為醫學質感藍 */
-  nav a[href*="booking"], nav a[href*="reserve"], header a[href*="booking"], 
-  .bg-pink-500, .text-pink-500, [class*="pink"], button[class*="pink"], a[class*="pink"] {
-    background: #e0f2fe !important;
-    background-color: #e0f2fe !important;
-    background-image: none !important;
-    border: 1px solid #bae6fd !important;
-    box-shadow: 0 4px 14px 0 rgba(186, 230, 253, 0.5) !important;
-  }
-  nav a[href*="booking"] *, header a[href*="booking"] *, .bg-pink-500 *, [class*="pink"] * {
-    color: #0369a1 !important; /* 按鈕內的字體改成深藍色 */
-  }
-  
-  /* 預約按鈕滑過去時的加深特效 */
-  nav a[href*="booking"]:hover, header a[href*="booking"]:hover, .bg-pink-500:hover, [class*="pink"]:hover {
-    background: #bae6fd !important;
-    background-color: #bae6fd !important;
-  }
-`}} />
+        /* 5. 消滅桃紅色預約按鈕，改為醫學質感藍 */
+        nav a[href*="booking"], nav a[href*="reserve"], header a[href*="booking"], 
+        .bg-pink-500, .text-pink-500, [class*="pink"], button[class*="pink"], a[class*="pink"] {
+          background: #e0f2fe !important;
+          background-color: #e0f2fe !important;
+          background-image: none !important;
+          border: 1px solid #bae6fd !important;
+          box-shadow: 0 4px 14px 0 rgba(186, 230, 253, 0.5) !important;
+        }
+        nav a[href*="booking"] *, header a[href*="booking"] *, .bg-pink-500 *, [class*="pink"] * {
+          color: #0369a1 !important; /* 按鈕內的字體改成深藍色 */
+        }
+        
+        /* 預約按鈕滑過去時的加深特效 */
+        nav a[href*="booking"]:hover, header a[href*="booking"]:hover, .bg-pink-500:hover, [class*="pink"]:hover {
+          background: #bae6fd !important;
+          background-color: #bae6fd !important;
+        }
+      `}} />
       {/* 全域包裹層 */}
-      <div className="flex-grow pt--4 pb-16 px-3 sm:px-4 bg-slate-50 min-h-screen text-slate-800 relative z-10 block">
+      <div className="flex-grow pt-4 pb-16 px-3 sm:px-4 bg-slate-50 min-h-screen text-slate-800 relative z-10 block">
         <div className="max-w-6xl mx-auto space-y-5">
           
           {/* 頁籤切換 */}
