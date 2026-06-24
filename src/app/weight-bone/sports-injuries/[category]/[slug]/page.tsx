@@ -4,12 +4,12 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { sportsInjuriesData } from '@/data/sportsInjuries'
-import { getNewsById } from '@/data/news' // 💡 提示：如果此檔案有匯出 newsData 陣列，請補在後方如：, newsData
+import { getNewsById } from '@/data/news'
 import JsonLd from '@/components/JsonLd'
 import ShareButtons from '@/components/ShareButtons'
 
-// 節省 Vercel 流量關鍵：不允許動態非預期路由，直接阻斷未定義的無效請求
-export const dynamicParams = false;
+// ✨ 核心修正 1：改為 true。搭配 prefetch={false} 即可在不爆炸流量的前提下，徹底根治全站文章子網頁 404 的問題
+export const dynamicParams = true;
 
 // 定義常數，清除可能存在的尾部斜線防止 Canonical 拼錯
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim().replace(/\/$/, '')
@@ -19,33 +19,9 @@ const cachedGetNewsById = cache((slug: string) => {
   return getNewsById(slug)
 })
 
-// 修正後的靜態參數生成：
-// 因為你的文章資料放在 news 系統中，我們需要遍歷所有的分類與文章對應。
-// 如果你在 @/data/news 中有所有文章的陣列（例如叫 newsData），可以直接拿來 map。
-// 這裡用最安全的對應邏輯，去配對所有分類下的文章：
+// 保持空路徑即可，交由動態防禦機制（dynamicParams = true）在有人訪問時即時生成並快取，不再卡死打包階段
 export async function generateStaticParams() {
-  const paths: Array<{ category: string; slug: string }> = []
-
-  // 1. 遍歷你定義的所有運動傷害分類
-  sportsInjuriesData.forEach((cat) => {
-    // 2. 由於文章在 news 資料庫，我們預期裡面會有對應此分類的文章
-    // 如果你有完整的 news 陣列（例如 newsData），請改用 newsData.filter(item => item.category === cat.category)
-    // 這裡先為你預留安全對應：
-    // 假設你在這裡能取得所有文章列表，將其對應的 slug 與分類塞入 paths
-    
-    /* 範例實作（請根據你的 @/data/news 實際匯出的陣列名稱調整）：
-    newsData.forEach((article) => {
-      if (article.category === cat.category) {
-        paths.push({
-          category: cat.category,
-          slug: article.slug
-        })
-      }
-    })
-    */
-  })
-
-  return paths
+  return []
 }
 
 interface PageProps {
@@ -70,7 +46,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: article.seoDescription || article.summary,
     keywords: article.keywords,
     alternates: {
-      canonical: canonicalUrl, // 成功宣告：告訴 Google 重重複內容請索引正宮這一條網址
+      canonical: canonicalUrl, // 成功宣告：告訴 Google 重複內容請索引正宮這一條網址
     },
     openGraph: {
       title: article.seoTitle || article.title,
@@ -101,7 +77,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
    ========================================================================== */
 export default async function SportsInjuryDetailPage({ params }: PageProps) {
   const { category, slug } = await params
-  const categoryData = sportsInjuriesData.find(c => c.category === category)
+  
+  // 💡 安全解碼機制：防止中文路由被 URL 編碼導致 find 失敗拋出 404
+  const decodedCategory = decodeURIComponent(category)
+  const categoryData = sportsInjuriesData.find(c => c.category === decodedCategory || c.category === category)
   const article = cachedGetNewsById(slug)
 
   if (!categoryData || !article) {
@@ -314,7 +293,7 @@ export default async function SportsInjuryDetailPage({ params }: PageProps) {
             color: #22d3ee !important;
             font-weight: 700;
         }
-           
+            
         .article-content a:not(sup a):not([style*="text-underline-offset"]) {
             color: #ec4899 !important;
             font-weight: 600;
