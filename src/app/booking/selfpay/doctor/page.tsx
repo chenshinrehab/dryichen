@@ -163,7 +163,6 @@ export default function DoctorAdminPage() {
     ? activeSlots.length 
     : getOpenSlotsCountForDate(dashboardDate);
 
-// 🚀 終極優化：縮小按鈕本體，並改用內縮偽元素渲染方框，保證雙端絕對不重疊、方框精緻縮小
   const renderCalendarWidget = (type: 'list' | 'settings') => {
     const year = currentMonth.getFullYear();
     const month = currentMonth.getMonth();
@@ -185,15 +184,11 @@ export default function DoctorAdminPage() {
       const hasPatients = appointments.some(a => a.date === dateStr);
       const hasConfiguredSlots = getOpenSlotsCountForDate(dateStr) > 0;
 
-      // 💡 關鍵修正：平時完全不加任何實體方框，僅透過特定 className 在內部渲染「內縮一圈」的小標記框
       let boxCustomClass = '';
-      
       if (!isSelected && !isPast) {
         if (type === 'settings' && hasConfiguredSlots) {
-          // 有開放排班：加入客製化小綠框類名
           boxCustomClass = 'after:absolute after:inset-1 after:border-2 after:border-emerald-500 after:bg-emerald-50/20 after:rounded-lg';
         } else if (type === 'list' && hasPatients) {
-          // 有病患預約：加入客製化小藍框類名
           boxCustomClass = 'after:absolute after:inset-1 after:border-2 after:border-cyan-600 after:bg-cyan-50/20 after:rounded-lg';
         }
       }
@@ -215,11 +210,10 @@ export default function DoctorAdminPage() {
             sm:h-10 sm:w-10 sm:text-sm sm:rounded-lg
             ${isSelected ? 'bg-teal-600 text-white shadow scale-105 !border-none after:hidden' : 
               isPast ? 'text-slate-300 opacity-20 cursor-not-allowed bg-transparent !border-none after:hidden' : 
-              `text-slate-700 hover:bg-slate-100 ${boxCustomClass}`
+              `text-slate-700 hover:bg-slate-200 ${boxCustomClass}`
             }
           `}
         >
-          {/* 確保數字文字層級在方框之上，不被背景遮擋 */}
           <span className="relative z-10">{i}</span>
         </button>
       );
@@ -227,92 +221,31 @@ export default function DoctorAdminPage() {
     return days;
   };
 
-  // 輔助函式：手機版過濾隱藏年份，將 YYYY-MM-DD 改為 MM-DD
   const formatMobileDate = (dateStr: string) => {
     if (!dateStr) return '';
     const parts = dateStr.split('-');
-    if (parts.length === 3) {
-      return `${parts[1]}-${parts[2]}`;
-    }
+    if (parts.length === 3) return `${parts[1]}-${parts[2]}`;
     return dateStr;
   };
 
   return (
     <div className="bg-slate-50 min-h-screen text-slate-800 font-sans">
-      
-{/* 🚀 終極對策：同時鎖定所有子 div 的背景為淺灰，並強制文字為深色，確保背景不變黑、字體完美浮現 */}
-<style dangerouslySetInnerHTML={{__html: `
-  /* 1. 網頁大底維持溫潤的淺灰白 */
-  body, html, main, #__next, .flex-grow, div[class*="min-h-screen"], .bg-slate-50 {
-    background-color: #f8fafc !important;
-    color: #1e293b !important;
-  }
-  
-  /* 2. 導覽條本體與內部所有 div 容器：強制鎖定質感淺灰，全面封鎖黑色背景 */
-  nav, header, [class*="nav"], [class*="Navbar"], [class*="header"],
-  nav div, header div, nav section, header section {
-    background-color: #e2e8f0 !important; 
-    background-image: none !important;
-    border-bottom: none !important;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important;
-  }
+      <style dangerouslySetInnerHTML={{__html: `
+        body, html, main, #__next, .flex-grow, div[class*="min-h-screen"], .bg-slate-50 { background-color: #f8fafc !important; color: #1e293b !important; }
+        nav, header, [class*="nav"], [class*="Navbar"], [class*="header"], nav div, header div, nav section, header section { background-color: #e2e8f0 !important; background-image: none !important; border-bottom: none !important; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important; }
+        nav *, header *, [class*="Navbar"] *, [class*="header"] * { color: #1e293b !important; }
+        nav a:hover, header a:hover, nav button:hover, header button:hover { color: #0891b2 !important; }
+        nav ul, header ul, nav div[class*="dropdown"], header div[class*="dropdown"], [class*="dropdown-menu"], [class*="menu"] { background-color: #ffffff !important; border-radius: 1.25rem !important; overflow: hidden !important; border: 1px solid #e2e8f0 !important; }
+        nav ul *, header ul *, [class*="dropdown"] *, [class*="dropdown-menu"] *, [class*="menu"] * { background-color: #ffffff !important; color: #0f172a !important; fill: #0f172a !important; }
+        nav ul a:hover, header ul a:hover, [class*="dropdown"] a:hover, [class*="dropdown-menu"] a:hover, nav ul a:hover *, header ul a:hover *, [class*="dropdown"] a:hover *, [class*="dropdown-menu"] a:hover * { background-color: #f1f5f9 !important; color: #0f172a !important; }
+        nav a[href*="booking"], nav a[href*="reserve"], header a[href*="booking"], .bg-pink-500, .text-pink-500, [class*="pink"], button[class*="pink"], a[class*="pink"] { background: #e0f2fe !important; background-color: #e0f2fe !important; background-image: none !important; border: 1px solid #bae6fd !important; box-shadow: 0 4px 14px 0 rgba(186, 230, 253, 0.5) !important; }
+        nav a[href*="booking"] *, header a[href*="booking"] *, .bg-pink-500 *, [class*="pink"] * { color: #0369a1 !important; }
+        nav a[href*="booking"]:hover, header a[href*="booking"]:hover, .bg-pink-500:hover, [class*="pink"]:hover { background: #bae6fd !important; background-color: #bae6fd !important; }
+      `}} />
 
-  {/* 3. 解決字體隱形：強制導覽列內的所有文字、標題、Span、按鈕、圖標通通顯示為清晰深灰色 */}
-  nav *, header *, [class*="Navbar"] *, [class*="header"] * {
-    color: #1e293b !important; 
-  }
-  
-  /* 導覽列第一層選單滑鼠滑過去時變成精緻科技藍 */
-  nav a:hover, header a:hover, nav button:hover, header button:hover {
-    color: #0891b2 !important;
-  }
-
-  /* 4. 下拉選單：獨立隔離！強制維持乾淨的白色底、黑色字 */
-nav ul, header ul, nav div[class*="dropdown"], header div[class*="dropdown"], [class*="dropdown-menu"], [class*="menu"] {
-  background-color: #ffffff !important;
-  border-radius: 1.25rem !important; /* 🚀 注入精緻大圓角 (約 rounded-2xl) */
-  overflow: hidden !important;        /* 🚀 核心關鍵：強制修邊，防止內部方角刺破外框 */
-  border: 1px solid #e2e8f0 !important; /* 加上微細邊框，讓白色選單更有立體質感 */
-}
-  nav ul *, header ul *, [class*="dropdown"] *, [class*="dropdown-menu"] *, [class*="menu"] * {
-    background-color: #ffffff !important;
-    color: #0f172a !important;
-    fill: #0f172a !important;
-  }
-  
-  /* 下拉選單滑過時的灰色特效底色 */
-  nav ul a:hover, header ul a:hover, [class*="dropdown"] a:hover, [class*="dropdown-menu"] a:hover,
-  nav ul a:hover *, header ul a:hover *, [class*="dropdown"] a:hover *, [class*="dropdown-menu"] a:hover * {
-    background-color: #f1f5f9 !important;
-    color: #0f172a !important;
-  }
-
-  /* 5. 消滅桃紅色預約按鈕，改為醫學質感藍 */
-  nav a[href*="booking"], nav a[href*="reserve"], header a[href*="booking"], 
-  .bg-pink-500, .text-pink-500, [class*="pink"], button[class*="pink"], a[class*="pink"] {
-    background: #e0f2fe !important;
-    background-color: #e0f2fe !important;
-    background-image: none !important;
-    border: 1px solid #bae6fd !important;
-    box-shadow: 0 4px 14px 0 rgba(186, 230, 253, 0.5) !important;
-  }
-  nav a[href*="booking"] *, header a[href*="booking"] *, .bg-pink-500 *, [class*="pink"] * {
-    color: #0369a1 !important; /* 按鈕內的字體改成深藍色 */
-  }
-  
-  /* 預約按鈕滑過去時的加深特效 */
-  nav a[href*="booking"]:hover, header a[href*="booking"]:hover, .bg-pink-500:hover, [class*="pink"]:hover {
-    background: #bae6fd !important;
-    background-color: #bae6fd !important;
-  }
-`}} />
-
-      <main className="max-w-6xl mx-auto p-4 md:py-6 md:px-10 space-y-5 text-base md:text-lg">
+      <main className="max-w-6xl mx-auto p--4 md:py-6 md:px-10 space-y-5 text-base md:text-lg">
         
-        {/* 🚀 修正點 2：手機版切換按鈕放到最上面，就診與開放人數在同一行並移除小圖示 */}
         <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-stretch justify-between">
-          
-          {/* 手機版優先排在最上方的切換大按鈕 */}
           <div className="flex items-center justify-center md:justify-end min-w-[200px] order-1 md:order-2">
             <button
               type="button"
@@ -323,52 +256,41 @@ nav ul, header ul, nav div[class*="dropdown"], header div[class*="dropdown"], [c
             </button>
           </div>
 
-          {/* 數據統計卡片：手機版排在按鈕下方且並列在同一行 */}
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-6 flex-grow order-2 md:order-1">
-            {/* 本日就診人數卡片（手機版移除小圖示） */}
+          <div className="grid grid-cols-2 gap-3 md:gap-6 flex-grow order-2 md:order-1">
             <div className="bg-white border border-slate-200 p-3 md:p-6 rounded-2xl flex justify-between items-center shadow-sm">
               <div>
                 <p className="text-[11px] md:text-sm font-bold text-slate-500 mb-1">({dashboardDate}) 本日就診</p>
                 <h4 className="text-xl md:text-3xl font-black text-slate-900">{dashboardPatientCount} 人次</h4>
               </div>
-              <span className="hidden md:inline-block p-4 bg-teal-50 text-teal-600 border border-teal-100 rounded-xl text-2xl">🎯</span>
             </div>
-
-            {/* 總開放時段數卡片（手機版移除小圖示） */}
             <div className="bg-white border border-slate-200 p-3 md:p-6 rounded-2xl flex justify-between items-center shadow-sm">
               <div>
                 <p className="text-[11px] md:text-sm font-bold text-slate-500 mb-1">({dashboardDate}) 開放時段</p>
                 <h4 className="text-xl md:text-3xl font-black text-slate-900">{dashboardOpenSlotsCount} 個</h4>
               </div>
-              <span className="hidden md:inline-block p-4 bg-blue-50 text-blue-600 border border-blue-100 rounded-xl text-2xl">🗓️</span>
             </div>
           </div>
-
         </div>
 
         {activeTab === 'list' && (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-start">
             
-            {/* 預約名單左側日曆篩選面板 */}
             <div className="bg-white rounded-3xl border border-slate-200 p-6 shadow-xl space-y-4">
               <div className="border-b border-slate-100 pb-3">
                 <h3 className="text-base font-black text-slate-900">1. 選擇查閱報表日期</h3>
                 <p className="text-xs text-slate-400 mt-1">過去無預約日期已反灰；<span className="text-cyan-600 font-bold">藍色方框</span>代表有病患特約登記</p>
               </div>
-
               <div className="border border-slate-100 rounded-2xl p-4 bg-slate-50/60">
                 <div className="flex items-center justify-between mb-4">
                   <button type="button" onClick={() => setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1, 1))} className="text-slate-500 hover:text-teal-600 font-bold p-1">◀</button>
                   <span className="font-black text-sm text-slate-800">{currentMonth.getFullYear()}年 {currentMonth.getMonth() + 1}月</span>
                   <button type="button" onClick={() => setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 1))} className="text-slate-500 hover:text-teal-600 font-bold p-1">▶</button>
                 </div>
-                
                 <div className="grid grid-cols-7 gap-y-2 text-center text-xs">
                   {['日','一','二','三','四','五','六'].map(d => <div key={d} className="font-bold text-slate-400 pb-1">{d}</div>)}
                   {renderCalendarWidget('list')}
                 </div>
               </div>
-
               <div className="flex items-center justify-between pt-2">
                 <span className="text-xs font-bold text-slate-500">查閱日期：</span>
                 <div className="flex items-center gap-2">
@@ -378,73 +300,79 @@ nav ul, header ul, nav div[class*="dropdown"], header div[class*="dropdown"], [c
               </div>
             </div>
 
-            {/* 🚀 修正點 3：右側報表列表，完全移除手機版橫向滾動，改為極密合擠壓與文字強制自動換行 */}
             <div className="md:col-span-2 bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-xl">
               <div className="p-4 md:p-6 bg-slate-50 border-b border-slate-200">
                 <h2 className="text-base md:text-xl font-bold text-slate-900 mb-1">即時自費特約報表</h2>
                 <p className="text-xs text-slate-500">點選以下病患欄位列，可自主摺疊展開完整病歷狀況問卷</p>
               </div>
 
-              {/* 移除 overflow-x-auto，強制限制在螢幕寬度之內 */}
               <div className="w-full">
                 <table className="w-full table-fixed">
                   <thead className="bg-slate-100 text-slate-700 text-xs md:text-sm font-black border-b border-slate-200">
                     <tr>
-                      <th className="p-3 md:p-5 text-left w-[20%] sm:w-[25%]">日期</th>
-                      <th className="p-3 md:p-5 text-left w-[28%] sm:w-[25%]">時間</th>
+                      <th className="p-3 md:p-5 text-left w-[24%] sm:w-[25%]">日期</th>
+                      <th className="p-3 md:p-5 text-left w-[26%] sm:w-[25%]">時間</th>
                       <th className="p-3 md:p-5 text-left w-[22%] sm:w-[25%]">姓名</th>
-                      <th className="p-3 md:p-5 text-left w-[30%] sm:w-[25%]">手機</th>
+                      <th className="p-3 md:p-5 text-left w-[28%] sm:w-[25%]">手機</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-200 text-xs md:text-sm text-slate-700">
                     {isListLoading ? (
                       <tr><td colSpan={4} className="p-10 text-center text-lg text-slate-400 font-bold">資料讀取中...</td></tr>
                     ) : filteredAppointments.length > 0 ? (
-                      filteredAppointments.map((r, idx) => (
-                        <React.Fragment key={idx}>
-                          {/* 緊湊內距且文字強制 break-all 換行 */}
-                          <tr onClick={() => setExpandedRows(prev => ({...prev, [idx]: !prev[idx]}))} className="hover:bg-slate-50 cursor-pointer transition text-left">
-                            {/* 🚀 修正點 3：手機版隱藏年份，僅呈現月-日 */}
-                            <td className="p-3 md:p-5 font-bold text-slate-600 break-all">
-                              <span className="inline sm:hidden">{formatMobileDate(r.date)}</span>
-                              <span className="hidden sm:inline">{r.date}</span>
-                            </td>
-                            <td className="p-3 md:p-5 break-all">
-                              <span className="bg-teal-50 text-teal-600 border border-teal-200 px-1.5 py-0.5 sm:px-3 sm:py-1 rounded-lg font-black text-[11px] sm:text-sm inline-block">
-                                {r.time || r.time_slot}
-                              </span>
-                            </td>
-                            <td className="p-3 md:p-5 font-black text-slate-900 text-sm sm:text-base break-all">▼&nbsp;{r.name}</td>
-                            <td className="p-3 md:p-5 text-slate-700 font-mono font-bold text-sm sm:text-base break-all">{r.phone}</td>
-                          </tr>
-                          
-                          {/* 🚀 修正點 3：展開明細資料也全面禁止左右滑動，寬度 w-full 超過一律就地自動斷行 */}
-                          {expandedRows[idx] && (
-                            <tr className="bg-slate-50/50">
-                              <td colSpan={4} className="p-2 sm:p-6">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-white p-4 rounded-2xl border border-slate-200 text-xs sm:text-sm w-full shadow-sm">
-                                  <div className="w-full">
-                                    <span className="font-black text-slate-400 block mb-1 text-xs">電子郵件：</span>
-                                    <span className="text-slate-700 block bg-slate-50 p-2.5 rounded-lg border border-slate-200 font-bold break-all whitespace-pre-wrap">{r.email || '無'}</span>
-                                  </div>
-                                  <div className="w-full">
-                                    <span className="font-black text-slate-400 block mb-1 text-xs">看診不適部位：</span>
-                                    <span className="text-teal-600 font-black block bg-teal-50 p-2.5 rounded-lg border border-teal-200 break-all whitespace-pre-wrap">{r.part || '無'}</span>
-                                  </div>
-                                  <div className="md:col-span-2 w-full">
-                                    <span className="font-black text-slate-400 block mb-1 text-xs">發生主訴原因：</span>
-                                    <div className="text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-200 font-medium leading-relaxed break-all whitespace-pre-wrap text-justify">{r.reason || '無'}</div>
-                                  </div>
-                                  <div className="md:col-span-2 w-full">
-                                    <span className="font-black text-slate-400 block mb-1 text-xs">過去病史與放射治療史：</span>
-                                    <div className="text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-200 font-medium block leading-relaxed break-all whitespace-pre-wrap text-justify">{r.treatment || '無'}</div>
-                                  </div>
-                                </div>
+                      filteredAppointments.map((r, idx) => {
+                        // 🚀 修正點 1：判斷是否為 LINE 綁定預約的病患
+                        const isLineBooking = r.lineUserId && r.lineUserId !== '未關聯';
+
+                        return (
+                          <React.Fragment key={idx}>
+                            <tr onClick={() => setExpandedRows(prev => ({...prev, [idx]: !prev[idx]}))} className="hover:bg-slate-50 cursor-pointer transition text-left">
+                              {/* 🚀 修正點 1：如果是 LINE 預約，在日期前面加上精緻顯眼的綠色外框標籤 */}
+                              <td className="p-3 md:p-5 font-bold text-slate-600 break-all flex flex-col sm:flex-row sm:items-center gap-1">
+                                {isLineBooking && (
+                                  <span className="inline-block bg-emerald-100 text-emerald-700 border border-emerald-300 rounded px-1 py-0.5 text-[10px] font-black tracking-tighter whitespace-nowrap sm:mr-1">
+                                    LINE
+                                  </span>
+                                )}
+                                <span className="inline sm:hidden">{formatMobileDate(r.date)}</span>
+                                <span className="hidden sm:inline">{r.date}</span>
                               </td>
+                              <td className="p-3 md:p-5 break-all">
+                                <span className="bg-teal-50 text-teal-600 border border-teal-200 px-1.5 py-0.5 sm:px-3 sm:py-1 rounded-lg font-black text-[11px] sm:text-sm inline-block">
+                                  {r.time || r.time_slot}
+                                </span>
+                              </td>
+                              <td className="p-3 md:p-5 font-black text-slate-900 text-sm sm:text-base break-all">▼&nbsp;{r.name}</td>
+                              <td className="p-3 md:p-5 text-slate-700 font-mono font-bold text-sm sm:text-base break-all">{r.phone}</td>
                             </tr>
-                          )}
-                        </React.Fragment>
-                      ))
+                            
+                            {expandedRows[idx] && (
+                              <tr className="bg-slate-50/50">
+                                <td colSpan={4} className="p-2 sm:p-6">
+                                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-white p-4 rounded-2xl border border-slate-200 text-xs sm:text-sm w-full shadow-sm">
+                                    <div className="w-full">
+                                      <span className="font-black text-slate-400 block mb-1 text-xs">電子郵件：</span>
+                                      <span className="text-slate-700 block bg-slate-50 p-2.5 rounded-lg border border-slate-200 font-bold break-all whitespace-pre-wrap">{r.email || '無'}</span>
+                                    </div>
+                                    <div className="w-full">
+                                      <span className="font-black text-slate-400 block mb-1 text-xs">看診不適部位：</span>
+                                      <span className="text-teal-600 font-black block bg-teal-50 p-2.5 rounded-lg border border-slate-200 break-all whitespace-pre-wrap">{r.part || '無'}</span>
+                                    </div>
+                                    <div className="md:col-span-2 w-full">
+                                      <span className="font-black text-slate-400 block mb-1 text-xs">發生主訴原因：</span>
+                                      <div className="text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-200 font-medium leading-relaxed break-all whitespace-pre-wrap text-justify">{r.reason || '無'}</div>
+                                    </div>
+                                    <div className="md:col-span-2 w-full">
+                                      <span className="font-black text-slate-400 block mb-1 text-xs">過去病史與放射治療史：</span>
+                                      <div className="text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-200 font-medium block leading-relaxed break-all whitespace-pre-wrap text-justify">{r.treatment || '無'}</div>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                            )}
+                          </React.Fragment>
+                        );
+                      })
                     ) : (
                       <tr><td colSpan={4} className="p-12 text-center text-slate-400 text-base font-bold bg-white">當前選定日期查無特約登記明細。</td></tr>
                     )}
@@ -452,7 +380,6 @@ nav ul, header ul, nav div[class*="dropdown"], header div[class*="dropdown"], [c
                 </table>
               </div>
             </div>
-
           </div>
         )}
 
@@ -460,34 +387,27 @@ nav ul, header ul, nav div[class*="dropdown"], header div[class*="dropdown"], [c
           <div className="bg-white rounded-3xl border border-slate-200 p-8 md:p-10 space-y-8 shadow-xl">
             <h2 className="text-xl font-black text-slate-900 border-b border-slate-200 pb-4">調整自費排班門診診期</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-              
-              {/* 時段設定日曆面板 */}
               <div>
-                <label className="block text-slate-600 font-black text-sm mb-4">1. 選定維護日期 (支援防呆過去反灰與排診綠框標記)</label>
-                
+                <label className="block text-slate-600 font-black text-sm mb-4">1. 選定維護日期</label>
                 <div className="border border-slate-200 rounded-2xl p-4 bg-slate-50 shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <button type="button" onClick={() => setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1, 1))} className="text-slate-500 hover:text-teal-600 font-bold p-1">◀</button>
                     <span className="font-black text-sm text-slate-800">{currentMonth.getFullYear()}年 {currentMonth.getMonth() + 1}月</span>
                     <button type="button" onClick={() => setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 1))} className="text-slate-500 hover:text-teal-600 font-bold p-1">▶</button>
                   </div>
-                  
                   <div className="grid grid-cols-7 gap-y-2 text-center text-xs">
                     {['日','一','二','三','四','五','六'].map(d => <div key={d} className="font-bold text-slate-400 pb-1">{d}</div>)}
                     {renderCalendarWidget('settings')}
                   </div>
                 </div>
-
                 <div className="mt-4 p-3 bg-white border border-slate-200 rounded-xl flex items-center justify-between">
                   <span className="text-xs font-bold text-slate-500">目前選定維護：</span>
                   <span className="text-sm font-black text-teal-600 bg-teal-50 px-3 py-1 rounded-lg border border-teal-200">{selectedDate || "請選擇"}</span>
                 </div>
               </div>
 
-              {/* 右側時段勾選面板 */}
               <div className="md:col-span-2 space-y-6">
-                <label className="block text-slate-500 font-black text-sm">2. 勾選當日特約診次時段 (打勾表示對外開放)</label>
-                
+                <label className="block text-slate-500 font-black text-sm">2. 勾選當日特約診次時段</label>
                 {['morning', 'afternoon', 'evening'].map((group) => {
                   const groupKey = group as 'morning' | 'afternoon' | 'evening';
                   const groupTexts = slotsData[groupKey].map(item => item.t);
@@ -499,18 +419,11 @@ nav ul, header ul, nav div[class*="dropdown"], header div[class*="dropdown"], [c
                         <h3 className="text-sm font-black text-slate-600 uppercase tracking-widest">
                           {group === 'morning' ? '☀️ 上午診 (09:00 AM - 11:30 AM)' : group === 'afternoon' ? '⛅ 下午診 (02:00 PM - 04:30 PM)' : '🌙 晚上診 (06:00 PM - 08:30 PM)'}
                         </h3>
-                        
                         <label className="flex items-center gap-2 cursor-pointer text-xs font-black text-teal-600 hover:text-teal-700 bg-white border border-slate-200 px-3 py-1 rounded-lg shadow-sm transition-all select-none">
-                          <input 
-                            type="checkbox" 
-                            checked={isAllGroupSelected && groupTexts.length > 0}
-                            onChange={(e) => handleGroupSelectAll(groupKey, e.target.checked)}
-                            className="rounded border-slate-300 text-teal-600 focus:ring-teal-500 w-4 h-4 cursor-pointer"
-                          />
+                          <input type="checkbox" checked={isAllGroupSelected && groupTexts.length > 0} onChange={(e) => handleGroupSelectAll(groupKey, e.target.checked)} className="rounded border-slate-300 text-teal-600 focus:ring-teal-500 w-4 h-4 cursor-pointer" />
                           <span>一鍵全選</span>
                         </label>
                       </div>
-
                       <div className="grid grid-cols-3 gap-3">
                         {slotsData[groupKey].map(item => {
                           const isChecked = activeSlots.includes(item.t);
@@ -526,9 +439,7 @@ nav ul, header ul, nav div[class*="dropdown"], header div[class*="dropdown"], [c
                   );
                 })}
               </div>
-
             </div>
-
             <div className="pt-6 border-t border-slate-200 mt-8">
               <button onClick={saveDoctorSettings} disabled={isSaveLoading} className="w-full bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 text-white font-black py-5 rounded-2xl shadow-lg transition-all disabled:from-slate-300 disabled:to-slate-300 text-lg tracking-widest">
                 {isSaveLoading ? "同步排班數據中..." : "儲存同步此日期開放時段"}
@@ -536,7 +447,6 @@ nav ul, header ul, nav div[class*="dropdown"], header div[class*="dropdown"], [c
             </div>
           </div>
         )}
-
       </main>
     </div>
   );

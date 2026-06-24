@@ -86,7 +86,6 @@ export default function SelfPayBookingPage() {
             window.history.replaceState({}, '', window.location.pathname);
             alert(`🎉 LINE 帳號 [${data.displayName || '連線成員'}] 關聯成功！請繼續完成下方問卷。`);
           } else {
-            // 🚀 核心改動：如果失敗，直接噴出後端抓到的 LINE 官方底層原因，一秒抓到內鬼
             alert(`❌ LINE 綁定通訊失敗！\n【錯誤診斷】：${data.line_error || data.error || '後端通訊異常'}\n\n請檢查後端 Channel Secret 是否填寫正確。`);
             window.history.replaceState({}, '', window.location.pathname);
           }
@@ -106,18 +105,32 @@ export default function SelfPayBookingPage() {
       }
     }
 
-    Promise.all([
-      fetch(`/api/doctor-settings`).then(res => res.json()),
-      fetch(`/api/reserve?action=getAllAppointments`).then(res => res.json())
-    ])
-    .then(([settingsRes, aptRes]) => {
-      if (settingsRes && settingsRes.success) setCachedSchedule(settingsRes.settings || {});
-      if (aptRes && aptRes.success) setAllAppointments(aptRes.list || []);
-    }).catch(err => console.error("系統通訊異常", err));
+    // 🚀 核心優化 1：一開網頁全力「優先抓取開放預約排班表」，徹底阻斷卡頓
+    fetch(`/api/doctor-settings`)
+      .then(res => res.json())
+      .then(settingsRes => {
+        if (settingsRes && settingsRes.success) {
+          setCachedSchedule(settingsRes.settings || {});
+        }
+        
+        // 🚀 核心優化 2：排班表點亮、畫面出來後，瀏覽器再「非同步惰性加載」未來預約名單做背景扣除
+        const todayISO = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().split('T')[0];
+        return fetch(`/api/reserve?action=getAllAppointments&startDate=${todayISO}`);
+      })
+      .then(res => res ? res.json() : null)
+      .then(aptRes => {
+        if (aptRes && aptRes.success) {
+          setAllAppointments(aptRes.list || []);
+        }
+      })
+      .catch(err => console.error("非同步數據流載入異常", err));
   }, []);
 
+  // 🚀 核心優化 3：LINE 預約紀錄「不在網頁初始化時抓取」，改為切換到查詢頁面或狀態建立時才精準觸發
   useEffect(() => {
-    if (lineUserId && activeTab === 'query') runQuery('line', lineUserId);
+    if (lineUserId && activeTab === 'query') {
+      runQuery('line', lineUserId);
+    }
   }, [lineUserId, activeTab]);
 
   const handleLineAuthRedirect = () => {
@@ -247,7 +260,7 @@ export default function SelfPayBookingPage() {
       const dateStr = new Date(dateObj.getTime() - dateObj.getTimezoneOffset() * 60000).toISOString().split('T')[0];
       
       const isPast = dateStr < todayStr;
-      const availableSlots = getAvailableSlots(dateStr);
+      const availableSlots = cachedSchedule[dateStr] || [];
       const hasSlots = availableSlots.length > 0;
       const isDisabled = isPast || !hasSlots;
       const isSelected = selectedDate === dateStr;
@@ -296,7 +309,7 @@ export default function SelfPayBookingPage() {
         nav a[href*="booking"]:hover, header a[href*="booking"]:hover, .bg-pink-500:hover, [class*="pink"]:hover { background: #bae6fd !important; background-color: #bae6fd !important; }
       `}} />
 
-      <div className="flex-grow pt-4 pb-16 px-3 sm:px-4 bg-slate-50 min-h-screen text-slate-800 relative z-10 block">
+      <div className="flex-grow pt--4 pb-16 px-3 sm:px-4 bg-slate-50 min-h-screen text-slate-800 relative z-10 block">
         <div className="max-w-6xl mx-auto space-y-5">
           
           <div className="flex justify-center p-1.5 bg-white rounded-2xl border border-slate-200 max-w-lg mx-auto shadow-sm">
@@ -336,7 +349,9 @@ export default function SelfPayBookingPage() {
                       <button type="button" onClick={() => setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 1))} className="p-1.5 text-slate-500 hover:text-cyan-600 transition"><FaChevronRight size={16} /></button>
                     </div>
                     <div className="grid grid-cols-7 gap-y-2 sm:gap-y-3 text-center">
-                      {['日', '一', '二', '三', '四', '五', '六'].map(d => (<div key={d} className="text-xs sm:text-sm font-black text-slate-400 pb-2">{d}</div>))}
+                      {['日', '一', '二', '三', '四', '五', '六'].map(d => (
+                        <div key={d} className="text-xs sm:text-sm font-black text-slate-400 pb-2">{d}</div>
+                      ))}
                       {renderCalendar()}
                     </div>
                   </div>
