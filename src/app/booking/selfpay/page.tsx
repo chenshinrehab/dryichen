@@ -28,6 +28,10 @@ export default function SelfPayBookingPage() {
   const [activeTab, setActiveTab] = useState<'booking' | 'query'>('booking');
   const [lineUserId, setLineUserId] = useState<string>('');
   
+  // 🚀 狀態：用來儲存並顯示 LINE 綁定成功後的使用者暱稱與大頭貼
+  const [lineDisplayName, setLineDisplayName] = useState<string>('');
+  const [linePictureUrl, setLinePictureUrl] = useState<string>('');
+  
   const [cachedSchedule, setCachedSchedule] = useState<Record<string, string[]>>({});
   const [allAppointments, setAllAppointments] = useState<any[]>([]); 
   
@@ -37,14 +41,8 @@ export default function SelfPayBookingPage() {
   
   const [currentMonth, setCurrentMonth] = useState(new Date());
 
-  // 💡 完全保留原本的所有就診問卷欄位，絕不精簡省略
   const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    part: '',
-    reason: '',
-    treatment: ''
+    name: '', phone: '', email: '', part: '', reason: '', treatment: ''
   });
 
   const [queryPhone, setQueryPhone] = useState('');
@@ -52,49 +50,89 @@ export default function SelfPayBookingPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitLoading, setIsSubmitLoading] = useState(false);
 
-  // 🚀 導入 A 方案：利用 LocalStorage 自動記憶與識別 LINE 使用者狀態
+  // 🚀 終極 A 方案：包含斷點續傳 (還原輸入資料) 與 LINE 驗證碼交換邏輯
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const lineIdParam = params.get('lineUserId');
-    
-    if (lineIdParam) {
-      // 第一次授權成功回來：將 ID 刻進瀏覽器記憶體
-      localStorage.setItem('saved_line_user_id', lineIdParam);
-      setLineUserId(lineIdParam);
-      setActiveTab('query');
+    const code = params.get('code'); // LINE 授權後回傳的驗證碼
+
+    // 1. 先還原表單資料：避免去 LINE 繞一圈回來，選好的日期和名字被洗掉
+    const tempDate = sessionStorage.getItem('temp_selectedDate');
+    if (tempDate) {
+      setSelectedDate(tempDate);
+      setSelectedTime(sessionStorage.getItem('temp_selectedTime') || '');
+      const tempForm = sessionStorage.getItem('temp_formData');
+      if (tempForm) setFormData(JSON.parse(tempForm));
+      
+      setActiveTab('booking'); // 強制留在預約填寫分頁
+      
+      // 還原後立刻清空暫存
+      sessionStorage.removeItem('temp_selectedDate');
+      sessionStorage.removeItem('temp_selectedTime');
+      sessionStorage.removeItem('temp_formData');
+    }
+
+    // 2. 判斷登入狀態
+    if (code) {
+      // 情況 A：網址有 code，代表病患剛從 LINE 點完授權回來
+      const redirectUri = window.location.origin + window.location.pathname;
+      
+      // 呼叫我們的後端 API，用 code 去把病患的大頭貼和 ID 換回來
+      fetch(`/api/auth/line?code=${code}&redirectUri=${encodeURIComponent(redirectUri)}`)
+        .then(res => res.json())
+        .then(data => {
+          if (data.success) {
+            // 寫入瀏覽器永久記憶體 (LocalStorage)
+            localStorage.setItem('saved_line_user_id', data.lineUserId);
+            if (data.displayName) localStorage.setItem('saved_line_display_name', data.displayName);
+            if (data.pictureUrl) localStorage.setItem('saved_line_picture_url', data.pictureUrl);
+            
+            // 同步點亮前端畫面
+            setLineUserId(data.lineUserId);
+            if (data.displayName) setLineDisplayName(data.displayName);
+            if (data.pictureUrl) setLinePictureUrl(data.pictureUrl);
+            
+            // 把網址列的醜陋 code 洗掉，恢復乾淨網址
+            window.history.replaceState({}, '', window.location.pathname);
+          } else {
+            alert('LINE 綁定通訊失敗，請重試。');
+          }
+        });
     } else {
-      // 第二次直接開啟網頁：主動撈取歷史記憶，達成自動登入與展示
+      // 情況 B：平時直接開啟網頁，主動讀取 LocalStorage 自動登入
       const savedId = localStorage.getItem('saved_line_user_id');
+      const savedName = localStorage.getItem('saved_line_display_name');
+      const savedPic = localStorage.getItem('saved_line_picture_url');
+      
       if (savedId) {
         setLineUserId(savedId);
-        setActiveTab('query');
+        if (savedName) setLineDisplayName(savedName);
+        if (savedPic) setLinePictureUrl(savedPic);
       }
     }
 
+    // 系統通訊數據流
     Promise.all([
       fetch(`/api/doctor-settings`).then(res => res.json()),
       fetch(`/api/reserve?action=getAllAppointments`).then(res => res.json())
     ])
     .then(([settingsRes, aptRes]) => {
-      if (settingsRes && settingsRes.success) {
-        setCachedSchedule(settingsRes.settings || {});
-      }
-      if (aptRes && aptRes.success) {
-        setAllAppointments(aptRes.list || []);
-      }
-    })
-    .catch(err => console.error("系統通訊異常", err));
+      if (settingsRes && settingsRes.success) setCachedSchedule(settingsRes.settings || {});
+      if (aptRes && aptRes.success) setAllAppointments(aptRes.list || []);
+    }).catch(err => console.error("系統通訊異常", err));
   }, []);
 
   useEffect(() => {
-    if (lineUserId) runQuery('line', lineUserId);
-  }, [lineUserId]);
+    if (lineUserId && activeTab === 'query') runQuery('line', lineUserId);
+  }, [lineUserId, activeTab]);
 
+  // 🚀 關鍵：跳轉前先「備份病患輸入到一半的進度」
   const handleLineAuthRedirect = () => {
-    // 🚀 強制指定回呼網址，不讓 window.location.origin 動態亂抓，徹底根除 400 錯誤！
-    const redirectUri = encodeURIComponent("https://dryichen.com.tw/booking/selfpay");
-    
-    window.location.href = `https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=${LINE_CLIENT_ID}&redirect_uri=${redirectUri}&state=selfPayVerify&scope=profile`;
+    sessionStorage.setItem('temp_selectedDate', selectedDate);
+    sessionStorage.setItem('temp_selectedTime', selectedTime);
+    sessionStorage.setItem('temp_formData', JSON.stringify(formData));
+
+    const redirectUri = window.location.origin + window.location.pathname;
+    window.location.href = `https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=${LINE_CLIENT_ID}&redirect_uri=${encodeURIComponent(redirectUri)}&state=selfPayVerify&scope=profile`;
   };
 
   const getAvailableSlots = (dateStr: string) => {
@@ -139,7 +177,6 @@ export default function SelfPayBookingPage() {
       lineUserId: lineUserId || '未關聯', service: '自費門診特約' 
     };
 
-    type: 'POST'
     try {
       const response = await fetch('/api/reserve', {
         method: 'POST',
@@ -252,97 +289,29 @@ export default function SelfPayBookingPage() {
       }} />
       <ScrollAnimation />
 
-      {/* 🚀 終極對策：同時鎖定所有子 div 的背景為淺灰，並強制文字為深色，確保背景不變黑、字體完美浮現 */}
       <style dangerouslySetInnerHTML={{__html: `
-        /* 1. 網頁大底維持溫潤的淺灰白 */
-        body, html, main, #__next, .flex-grow, div[class*="min-h-screen"], .bg-slate-50 {
-          background-color: #f8fafc !important;
-          color: #1e293b !important;
-        }
-        
-        /* 2. 導覽條本體與內部所有 div 容器：強制鎖定質感淺灰，全面封鎖黑色背景 */
-        nav, header, [class*="nav"], [class*="Navbar"], [class*="header"],
-        nav div, header div, nav section, header section {
-          background-color: #e2e8f0 !important; 
-          background-image: none !important;
-          border-bottom: none !important;
-          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important;
-        }
-
-        {/* 3. 解決字體隱形：強制導覽列內的所有文字、標題、Span、按鈕、圖標通通顯示為清晰深灰色 */}
-        nav *, header *, [class*="Navbar"] *, [class*="header"] * {
-          color: #1e293b !important; 
-        }
-        
-        /* 導覽列第一層選單滑鼠滑過去時變成精緻科技藍 */
-        nav a:hover, header a:hover, nav button:hover, header button:hover {
-          color: #0891b2 !important;
-        }
-
-        /* 4. 下拉選單：獨立隔離！強制維持乾淨的白色底、黑色字 */
-        nav ul, header ul, nav div[class*="dropdown"], header div[class*="dropdown"], [class*="dropdown-menu"], [class*="menu"] {
-          background-color: #ffffff !important;
-          border-radius: 1.25rem !important; /* 🚀 注入精緻大圓角 (約 rounded-2xl) */
-          overflow: hidden !important;        /* 🚀 核心關鍵：強制修邊，防止內部方角刺破外框 */
-          border: 1px solid #e2e8f0 !important; /* 加上微細邊框，讓白色選單更有立體質感 */
-        }
-        nav ul *, header ul *, [class*="dropdown"] *, [class*="dropdown-menu"] *, [class*="menu"] * {
-          background-color: #ffffff !important;
-          color: #0f172a !important;
-          fill: #0f172a !important;
-        }
-        
-        /* 下拉選單滑過時的灰色特效底色 */
-        nav ul a:hover, header ul a:hover, [class*="dropdown"] a:hover, [class*="dropdown-menu"] a:hover,
-        nav ul a:hover *, header ul a:hover *, [class*="dropdown"] a:hover *, [class*="dropdown-menu"] a:hover * {
-          background-color: #f1f5f9 !important;
-          color: #0f172a !important;
-        }
-
-        /* 5. 消滅桃紅色預約按鈕，改為醫學質感藍 */
-        nav a[href*="booking"], nav a[href*="reserve"], header a[href*="booking"], 
-        .bg-pink-500, .text-pink-500, [class*="pink"], button[class*="pink"], a[class*="pink"] {
-          background: #e0f2fe !important;
-          background-color: #e0f2fe !important;
-          background-image: none !important;
-          border: 1px solid #bae6fd !important;
-          box-shadow: 0 4px 14px 0 rgba(186, 230, 253, 0.5) !important;
-        }
-        nav a[href*="booking"] *, header a[href*="booking"] *, .bg-pink-500 *, [class*="pink"] * {
-          color: #0369a1 !important; /* 按鈕內的字體改成深藍色 */
-        }
-        
-        /* 預約按鈕滑過去時的加深特效 */
-        nav a[href*="booking"]:hover, header a[href*="booking"]:hover, .bg-pink-500:hover, [class*="pink"]:hover {
-          background: #bae6fd !important;
-          background-color: #bae6fd !important;
-        }
+        body, html, main, #__next, .flex-grow, div[class*="min-h-screen"], .bg-slate-50 { background-color: #f8fafc !important; color: #1e293b !important; }
+        nav, header, [class*="nav"], [class*="Navbar"], [class*="header"], nav div, header div, nav section, header section { background-color: #e2e8f0 !important; background-image: none !important; border-bottom: none !important; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important; }
+        nav *, header *, [class*="Navbar"] *, [class*="header"] * { color: #1e293b !important; }
+        nav a:hover, header a:hover, nav button:hover, header button:hover { color: #0891b2 !important; }
+        nav ul, header ul, nav div[class*="dropdown"], header div[class*="dropdown"], [class*="dropdown-menu"], [class*="menu"] { background-color: #ffffff !important; border-radius: 1.25rem !important; overflow: hidden !important; border: 1px solid #e2e8f0 !important; }
+        nav ul *, header ul *, [class*="dropdown"] *, [class*="dropdown-menu"] *, [class*="menu"] * { background-color: #ffffff !important; color: #0f172a !important; fill: #0f172a !important; }
+        nav ul a:hover, header ul a:hover, [class*="dropdown"] a:hover, [class*="dropdown-menu"] a:hover, nav ul a:hover *, header ul a:hover *, [class*="dropdown"] a:hover *, [class*="dropdown-menu"] a:hover * { background-color: #f1f5f9 !important; color: #0f172a !important; }
+        nav a[href*="booking"], nav a[href*="reserve"], header a[href*="booking"], .bg-pink-500, .text-pink-500, [class*="pink"], button[class*="pink"], a[class*="pink"] { background: #e0f2fe !important; background-color: #e0f2fe !important; background-image: none !important; border: 1px solid #bae6fd !important; box-shadow: 0 4px 14px 0 rgba(186, 230, 253, 0.5) !important; }
+        nav a[href*="booking"] *, header a[href*="booking"] *, .bg-pink-500 *, [class*="pink"] * { color: #0369a1 !important; }
+        nav a[href*="booking"]:hover, header a[href*="booking"]:hover, .bg-pink-500:hover, [class*="pink"]:hover { background: #bae6fd !important; background-color: #bae6fd !important; }
       `}} />
-      {/* 全域包裹層 */}
+
       <div className="flex-grow pt-4 pb-16 px-3 sm:px-4 bg-slate-50 min-h-screen text-slate-800 relative z-10 block">
         <div className="max-w-6xl mx-auto space-y-5">
           
-          {/* 頁籤切換 */}
           <div className="flex justify-center p-1.5 bg-white rounded-2xl border border-slate-200 max-w-lg mx-auto shadow-sm">
-            <button 
-              type="button"
-              onClick={() => setActiveTab('booking')}
-              className={`flex-1 py-3.5 sm:py-4 text-center text-sm sm:text-base font-black rounded-xl transition-all duration-200 ${activeTab === 'booking' ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-slate-700'}`}
-            >
-              特約掛號預約
-            </button>
-            <button 
-              type="button"
-              onClick={() => setActiveTab('query')}
-              className={`flex-1 py-3.5 sm:py-4 text-center text-sm sm:text-base font-black rounded-xl transition-all duration-200 ${activeTab === 'query' ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-slate-700'}`}
-            >
-              查詢 / 取消預約
-            </button>
+            <button type="button" onClick={() => setActiveTab('booking')} className={`flex-1 py-3.5 sm:py-4 text-center text-sm sm:text-base font-black rounded-xl transition-all duration-200 ${activeTab === 'booking' ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-slate-700'}`}>特約掛號預約</button>
+            <button type="button" onClick={() => setActiveTab('query')} className={`flex-1 py-3.5 sm:py-4 text-center text-sm sm:text-base font-black rounded-xl transition-all duration-200 ${activeTab === 'query' ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-slate-700'}`}>查詢 / 取消預約</button>
           </div>
 
           <div className="bg-white border border-slate-200 rounded-[1.5rem] sm:rounded-[2.5rem] overflow-hidden shadow-xl flex flex-col md:flex-row">
             
-            {/* 左側資訊欄 */}
             <div className="md:w-2/5 bg-slate-100/60 p-6 sm:p-10 flex flex-col items-center border-b md:border-b-0 md:border-r border-slate-200">
               <div className="w-full max-w-[180px] sm:max-w-[240px] rounded-2xl border-4 border-white shadow-xl overflow-hidden mb-5 sm:mb-8 bg-white">
                 <img src="https://duk.tw/US4zLW.jpg" alt="林羿辰醫師" className="w-full object-contain aspect-[1366/2084]" />
@@ -357,7 +326,6 @@ export default function SelfPayBookingPage() {
               </div>
             </div>
 
-            {/* 右側操作面板 */}
             <div className="md:w-3/5 p-5 sm:p-8 md:p-14 text-sm sm:text-base md:text-lg">
               
               {activeTab === 'booking' && (
@@ -368,23 +336,13 @@ export default function SelfPayBookingPage() {
                       <span className="w-5 h-5 sm:w-6 h-6 rounded-full bg-cyan-100 text-cyan-600 border border-cyan-200 flex items-center justify-center text-[11px] sm:text-xs font-black">1</span>
                       選擇預約掛號日期
                     </h2>
-                    
                     <div className="flex items-center justify-between mb-4 sm:mb-6 px-1">
-                      <button type="button" onClick={() => setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1, 1))} className="p-1.5 text-slate-500 hover:text-cyan-600 transition">
-                        <FaChevronLeft size={16} />
-                      </button>
-                      <div className="font-black tracking-wider sm:tracking-widest text-lg sm:text-xl text-slate-900">
-                        {currentMonth.getFullYear()} 年 {currentMonth.getMonth() + 1} 月
-                      </div>
-                      <button type="button" onClick={() => setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 1))} className="p-1.5 text-slate-500 hover:text-cyan-600 transition">
-                        <FaChevronRight size={16} />
-                      </button>
+                      <button type="button" onClick={() => setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1, 1))} className="p-1.5 text-slate-500 hover:text-cyan-600 transition"><FaChevronLeft size={16} /></button>
+                      <div className="font-black tracking-wider sm:tracking-widest text-lg sm:text-xl text-slate-900">{currentMonth.getFullYear()} 年 {currentMonth.getMonth() + 1} 月</div>
+                      <button type="button" onClick={() => setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 1))} className="p-1.5 text-slate-500 hover:text-cyan-600 transition"><FaChevronRight size={16} /></button>
                     </div>
-
                     <div className="grid grid-cols-7 gap-y-2 sm:gap-y-3 text-center">
-                      {['日', '一', '二', '三', '四', '五', '六'].map(d => (
-                        <div key={d} className="text-xs sm:text-sm font-black text-slate-400 pb-2">{d}</div>
-                      ))}
+                      {['日', '一', '二', '三', '四', '五', '六'].map(d => (<div key={d} className="text-xs sm:text-sm font-black text-slate-400 pb-2">{d}</div>))}
                       {renderCalendar()}
                     </div>
                   </div>
@@ -396,26 +354,15 @@ export default function SelfPayBookingPage() {
                         可選取的特約時間
                       </h2>
                       {displaySlots.length > 0 ? (
-                        /* 🚀 修正點 3：微調手機版特約時間按鈕的內襯與字型，防止擠滿格子 */
                         <div className="grid grid-cols-3 gap-2 sm:gap-4">
                           {displaySlots.map(slot => (
-                            <button
-                              key={slot}
-                              type="button"
-                              onClick={() => setSelectedTime(slot)}
-                              className={`border font-black rounded-xl transition-all select-none
-                                py-2.5 text-sm
-                                sm:py-4 sm:text-base
-                                ${selectedTime === slot ? 'bg-gradient-to-r from-cyan-600 to-blue-600 border-cyan-500 text-white shadow-md font-black scale-[1.02]' : 'border-slate-200 bg-white text-slate-700 hover:border-cyan-500 hover:bg-slate-50'}`}
-                            >
+                            <button key={slot} type="button" onClick={() => setSelectedTime(slot)} className={`border font-black rounded-xl transition-all select-none py-2.5 text-sm sm:py-4 sm:text-base ${selectedTime === slot ? 'bg-gradient-to-r from-cyan-600 to-blue-600 border-cyan-500 text-white shadow-md font-black scale-[1.02]' : 'border-slate-200 bg-white text-slate-700 hover:border-cyan-500 hover:bg-slate-50'}`}>
                               {slot}
                             </button>
                           ))}
                         </div>
                       ) : (
-                        <div className="text-center text-rose-500 font-black py-4 sm:py-5 bg-rose-50 border border-rose-100 rounded-xl text-xs sm:text-sm md:text-base">
-                          ⚠️ 抱歉，本日期之特約時段已全數預約額滿。
-                        </div>
+                        <div className="text-center text-rose-500 font-black py-4 sm:py-5 bg-rose-50 border border-rose-100 rounded-xl text-xs sm:text-sm md:text-base">⚠️ 抱歉，本日期之特約時段已全數預約額滿。</div>
                       )}
                     </div>
                   )}
@@ -427,24 +374,37 @@ export default function SelfPayBookingPage() {
                         填寫就診基本問卷
                       </h2>
 
+                      {/* 🚀 動態綁定 UI 區域 */}
                       <div className="bg-slate-50 border border-slate-200 p-4 sm:p-5 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
-                        <div className="flex items-center gap-2.5 sm:gap-3">
+                        <div className="flex items-center gap-2.5 sm:gap-3 w-full sm:w-auto">
                           <FaLine className="text-[#06C755] text-3xl sm:text-4xl shrink-0" />
-                          <div className="text-center sm:text-left">
+                          <div className="text-left">
                             <h4 className="font-black text-sm sm:text-base text-slate-800">連結 LINE 帳號管理看診</h4>
                             <p className="text-xs sm:text-sm text-slate-500 mt-0.5">綁定後一鍵調取紀錄、自主取消，免輸入電話</p>
                           </div>
                         </div>
-                        {lineUserId ? (
-                          <span className="bg-emerald-50 text-emerald-600 border border-emerald-200 text-xs sm:text-sm font-black px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg flex items-center gap-1.5"><FaCheckCircle/>已成功連結</span>
-                        ) : (
-                          <button type="button" onClick={handleLineAuthRedirect} className="bg-[#06C755] hover:bg-[#05b04b] text-white text-xs sm:text-sm font-black py-2 sm:py-2.5 px-4 sm:px-5 rounded-lg transition-colors whitespace-nowrap shadow-sm">
-                            一鍵綁定登入
-                          </button>
-                        )}
+                        
+                        <div className="w-full sm:w-auto flex justify-center sm:justify-end">
+                          {lineUserId ? (
+                            <div className="flex items-center gap-2 bg-white border border-emerald-200 shadow-sm px-4 py-2 rounded-full select-none">
+                              {linePictureUrl ? (
+                                <img src={linePictureUrl} alt={lineDisplayName} className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-slate-100 object-cover" />
+                              ) : (
+                                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs font-bold">👤</div>
+                              )}
+                              <span className="text-xs sm:text-sm font-black text-emerald-600 whitespace-nowrap">
+                                {lineDisplayName || "已連線成員"}
+                              </span>
+                              <FaCheckCircle className="text-emerald-500 shrink-0 ml-1" />
+                            </div>
+                          ) : (
+                            <button type="button" onClick={handleLineAuthRedirect} className="bg-[#06C755] hover:bg-[#05b04b] text-white text-xs sm:text-sm font-black py-2 sm:py-2.5 px-4 sm:px-5 rounded-xl transition-colors whitespace-nowrap shadow-sm w-full sm:w-auto">
+                              一鍵安全綁定
+                            </button>
+                          )}
+                        </div>
                       </div>
 
-                      {/* 🚀 修正點 4：全數優化手機版回答格內的灰色提示字與輸入框排版 */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                           <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">病患真實姓名 <span className="text-rose-500">*</span></label>
@@ -509,8 +469,9 @@ export default function SelfPayBookingPage() {
                   <div className="p-4 sm:p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-4">
                     {lineUserId ? (
                       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                        <span className="text-sm sm:text-base font-bold text-slate-700">
-                          已關聯您的 LINE 身分帳號
+                        <span className="text-sm sm:text-base font-bold text-slate-700 flex items-center gap-2">
+                          {linePictureUrl && <img src={linePictureUrl} alt="" className="w-6 h-6 rounded-full inline" />}
+                          已關聯成員 [ {lineDisplayName || 'LINE用戶'} ] 的特約帳號
                         </span>
                         <button onClick={() => runQuery('line', lineUserId)} className="px-4 py-2.5 sm:px-5 sm:py-3 bg-blue-600 hover:bg-blue-500 text-white text-sm sm:text-base font-bold rounded-lg transition shadow">
                           同步 LINE 預約項目
@@ -521,9 +482,7 @@ export default function SelfPayBookingPage() {
                         <label className="block text-sm sm:text-base font-black text-slate-600 mb-2.5">請輸入掛號填寫的手機號碼進行檢索：</label>
                         <div className="flex gap-2 sm:gap-3">
                           <input type="tel" value={queryPhone} onChange={e => setQueryPhone(e.target.value)} placeholder="例如：0912345678" className="flex-1 p-3 sm:p-4 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 text-sm sm:text-base text-slate-800 font-bold placeholder-slate-400" />
-                          <button onClick={() => runQuery('phone', queryPhone)} className="bg-slate-800 hover:bg-slate-700 text-white font-black px-4 sm:px-6 rounded-xl text-sm sm:text-base transition flex items-center gap-1.5 whitespace-nowrap">
-                            <FaSearch/> 搜尋
-                          </button>
+                          <button onClick={() => runQuery('phone', queryPhone)} className="bg-slate-800 hover:bg-slate-700 text-white font-black px-4 sm:px-6 rounded-xl text-sm sm:text-base transition flex items-center gap-1.5 whitespace-nowrap"><FaSearch/> 搜尋</button>
                         </div>
                       </div>
                     )}
@@ -544,16 +503,12 @@ export default function SelfPayBookingPage() {
                                 <span className="text-amber-600 font-black text-base sm:text-xl">{item.time || item.time_slot}</span>
                               </div>
                             </div>
-                            <button onClick={() => handleCancelBooking(item.id, `${item.date} ${item.time || item.time_slot}`)} className="bg-rose-50 hover:bg-rose-100 text-rose-600 text-xs sm:text-base font-bold px-3 py-2 sm:px-4 sm:py-3 rounded-lg border border-rose-200 transition flex items-center gap-1 shrink-0">
-                              <FaTrashAlt size={12} className="sm:size-[14px]"/> 取消釋出
-                            </button>
+                            <button onClick={() => handleCancelBooking(item.id, `${item.date} ${item.time || item.time_slot}`)} className="bg-rose-50 hover:bg-rose-100 text-rose-600 text-xs sm:text-base font-bold px-3 py-2 sm:px-4 sm:py-3 rounded-lg border border-rose-200 transition flex items-center gap-1 shrink-0"><FaTrashAlt size={12} className="sm:size-[14px]"/> 取消釋出</button>
                           </div>
                         ))}
                       </div>
                     ) : (
-                      <div className="text-center text-slate-400 py-10 sm:py-12 border border-dashed border-slate-300 rounded-xl text-sm sm:text-base font-bold bg-slate-50">
-                        此範圍內無未來的特約掛號紀錄。
-                      </div>
+                      <div className="text-center text-slate-400 py-10 sm:py-12 border border-dashed border-slate-300 rounded-xl text-sm sm:text-base font-bold bg-slate-50">此範圍內無未來的特約掛號紀錄。</div>
                     )}
                   </div>
                 </div>
