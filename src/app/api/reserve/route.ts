@@ -6,13 +6,12 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { date, timeSlot, name, phone, lineUserId, service } = body;
 
-    // 初始化認證
-    const auth = new google.auth.JWT(
-      process.env.GOOGLE_CLIENT_EMAIL,
-      undefined,
-      process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'), // 修正換行字元
-      ['https://www.googleapis.com/auth/spreadsheets']
-    );
+    // ✅ 已修正：將原本獨立的 4 個引數，改為符合最新規定的單一物件參數傳入
+    const auth = new google.auth.JWT({
+      email: process.env.GOOGLE_CLIENT_EMAIL,
+      key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'), // 修正換行字元
+      scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+    });
 
     const sheets = google.sheets({ version: 'v4', auth });
 
