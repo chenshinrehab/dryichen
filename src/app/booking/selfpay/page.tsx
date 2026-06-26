@@ -109,7 +109,6 @@ export default function SelfPayBookingPage() {
       .catch(err => console.error("非同步數據流載入異常", err));
   }, []);
 
-  // 當選定日期、排班或預約變動時，即時更新 displaySlots（並全面剔除 1 小時內過期診次，使其直接消失不見）
   useEffect(() => {
     if (selectedDate) {
       const available = getAvailableSlots(selectedDate);
@@ -127,6 +126,23 @@ export default function SelfPayBookingPage() {
   const handleLineAuthRedirect = () => {
     const redirectUri = "https://dryichen.com.tw/booking/selfpay";
     window.location.href = `https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=${LINE_CLIENT_ID}&redirect_uri=${encodeURIComponent(redirectUri)}&state=selfPayVerify&scope=profile`;
+  };
+
+  // 🚀 新增：解除綁定邏輯
+  const handleUnbindLine = () => {
+    if (!confirm('確定要解除綁定此 LINE 帳號嗎？\n解除後將鎖定預約日曆，需重新綁定才能預約。')) return;
+    
+    // 清除快取與狀態
+    localStorage.removeItem('saved_line_user_id');
+    localStorage.removeItem('saved_line_display_name');
+    localStorage.removeItem('saved_line_picture_url');
+    setLineUserId('');
+    setLineDisplayName('');
+    setLinePictureUrl('');
+    
+    alert('已成功解除 LINE 帳號綁定。');
+    // 重新整理網頁確保所有表單與狀態回歸最原始乾淨狀態
+    window.location.reload();
   };
 
   const getAvailableSlots = (dateStr: string) => {
@@ -326,7 +342,6 @@ export default function SelfPayBookingPage() {
       <div className="flex-grow pt-4 pb-16 px-3 sm:px-4 bg-slate-50 min-h-screen text-slate-800 relative z-10 block">
         <div className="max-w-6xl mx-auto space-y-5">
           
-          {/* 頁籤切換 */}
           <div className="flex justify-center p-1.5 bg-white rounded-2xl border border-slate-200 max-w-lg mx-auto shadow-sm">
             <button type="button" onClick={() => setActiveTab('booking')} className={`flex-1 py-3.5 sm:py-4 text-center text-sm sm:text-base font-black rounded-xl transition-all duration-200 ${activeTab === 'booking' ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-slate-700'}`}>特約掛號預約</button>
             <button type="button" onClick={() => setActiveTab('query')} className={`flex-1 py-3.5 sm:py-4 text-center text-sm sm:text-base font-black rounded-xl transition-all duration-200 ${activeTab === 'query' ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-slate-700'}`}>查詢 / 取消預約</button>
@@ -334,7 +349,6 @@ export default function SelfPayBookingPage() {
 
           <div className="bg-white border border-slate-200 rounded-[1.5rem] sm:rounded-[2.5rem] overflow-hidden shadow-xl flex flex-col md:flex-row">
             
-            {/* 左側資訊欄 */}
             <div className="md:w-2/5 bg-slate-100/60 p-6 sm:p-10 flex flex-col items-center border-b md:border-b-0 md:border-r border-slate-200">
               <div className="w-full max-w-[180px] sm:max-w-[240px] rounded-2xl border-4 border-white shadow-xl overflow-hidden mb-5 sm:mb-8 bg-white">
                 <img src="https://duk.tw/US4zLW.jpg" alt="林羿辰醫師" className="w-full object-contain aspect-[1366/2084]" />
@@ -352,13 +366,11 @@ export default function SelfPayBookingPage() {
               </div>
             </div>
 
-            {/* 右側操作面板 */}
             <div className="md:w-3/5 p-5 sm:p-8 md:p-14 text-sm sm:text-base md:text-lg">
               
               {activeTab === 'booking' && (
                 <div className="space-y-6 sm:space-y-8">
                   
-                  {/* 🚀 修正點：將 LINE 綁定區塊移至右側面板的最頂端（右邊的框框裡面） */}
                   <div className="bg-slate-50 border border-slate-200 p-4 sm:p-5 rounded-2xl shadow-sm animate-fadeIn">
                     <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
                       <div className="flex items-center gap-2.5 sm:gap-3 w-full sm:w-auto">
@@ -369,19 +381,29 @@ export default function SelfPayBookingPage() {
                         </div>
                       </div>
                       
-                      <div className="w-full sm:w-auto flex justify-center sm:justify-end">
+                      <div className="w-full sm:w-auto flex flex-col sm:flex-row justify-center sm:justify-end items-center gap-2">
                         {lineUserId ? (
-                          <div className="flex items-center gap-2 bg-white border border-emerald-200 shadow-sm px-4 py-2 rounded-full select-none">
-                            {linePictureUrl ? (
-                              <img src={linePictureUrl} alt={lineDisplayName} className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-slate-100 object-cover" />
-                            ) : (
-                              <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs font-bold">👤</div>
-                            )}
-                            <span className="text-xs sm:text-sm font-black text-emerald-600 whitespace-nowrap">
-                              {lineDisplayName || "已連線成員"}
-                            </span>
-                            <FaCheckCircle className="text-emerald-500 shrink-0 ml-1" />
-                          </div>
+                          <>
+                            <div className="flex items-center gap-2 bg-white border border-emerald-200 shadow-sm px-4 py-2 rounded-full select-none w-full sm:w-auto justify-center">
+                              {linePictureUrl ? (
+                                <img src={linePictureUrl} alt={lineDisplayName} className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-slate-100 object-cover" />
+                              ) : (
+                                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs font-bold">👤</div>
+                              )}
+                              <span className="text-xs sm:text-sm font-black text-emerald-600 whitespace-nowrap">
+                                {lineDisplayName || "已連線成員"}
+                              </span>
+                              <FaCheckCircle className="text-emerald-500 shrink-0 ml-1" />
+                            </div>
+                            {/* 🚀 新增：解除綁定按鈕 */}
+                            <button 
+                              type="button" 
+                              onClick={handleUnbindLine} 
+                              className="text-xs font-bold text-rose-500 hover:text-rose-600 underline px-2 py-1 mt-1 sm:mt-0 whitespace-nowrap"
+                            >
+                              解除綁定
+                            </button>
+                          </>
                         ) : (
                           <button type="button" onClick={handleLineAuthRedirect} className="bg-[#06C755] hover:bg-[#05b04b] text-white text-xs sm:text-sm font-black py-2.5 px-5 rounded-xl transition-colors whitespace-nowrap shadow-sm w-full sm:w-auto">
                             一鍵安全綁定登入
@@ -394,7 +416,6 @@ export default function SelfPayBookingPage() {
                   {lineUserId ? (
                     <div className="space-y-6 sm:space-y-8 animate-fadeIn">
                       
-                      {/* 步驟 1：日曆 */}
                       <div className="bg-slate-50 border border-slate-200 p-4 sm:p-6 rounded-2xl">
                         <h2 className="text-base sm:text-lg font-black text-slate-800 mb-4 sm:mb-5 flex items-center gap-2">
                           <span className="w-5 h-5 sm:w-6 h-6 rounded-full bg-cyan-100 text-cyan-600 border border-cyan-200 flex items-center justify-center text-[11px] sm:text-xs font-black">1</span>
@@ -421,7 +442,6 @@ export default function SelfPayBookingPage() {
                         </div>
                       </div>
 
-                      {/* 步驟 2：時段 */}
                       {selectedDate && (
                         <div className="space-y-4 animate-fadeIn">
                           <h2 className="text-base sm:text-lg font-black text-slate-800 flex items-center gap-2">
@@ -450,7 +470,6 @@ export default function SelfPayBookingPage() {
                         </div>
                       )}
 
-                      {/* 步驟 3：問卷表單 */}
                       {selectedDate && selectedTime && (
                         <form onSubmit={handleBookingSubmit} className="space-y-5 sm:space-y-6 pt-5 sm:pt-6 border-t border-slate-200 border-dashed animate-fadeIn">
                           <h2 className="text-base sm:text-lg font-black text-slate-800 flex items-center gap-2">
@@ -515,7 +534,6 @@ export default function SelfPayBookingPage() {
 
                     </div>
                   ) : (
-                    /* 未綁定時的安全隔離鎖定畫面 */
                     <div className="flex flex-col items-center justify-center text-center p-8 sm:p-16 border border-dashed border-slate-300 rounded-3xl bg-slate-50/60 min-h-[350px] animate-fadeIn">
                       <div className="p-4 bg-amber-50 text-amber-600 border border-amber-100 rounded-2xl mb-4 text-2xl sm:text-3xl">
                         <FaLock />
@@ -537,10 +555,15 @@ export default function SelfPayBookingPage() {
                   <div className="p-4 sm:p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-4">
                     {lineUserId ? (
                       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                        <span className="text-sm sm:text-base font-bold text-slate-700 flex items-center gap-2">
-                          {linePictureUrl && <img src={linePictureUrl} alt="" className="w-6 h-6 rounded-full inline" />}
-                          已關聯成員 [ {lineDisplayName || 'LINE用戶'} ] 的特約帳號
-                        </span>
+                        <div className="flex items-center gap-2">
+                          <span className="text-sm sm:text-base font-bold text-slate-700 flex items-center gap-2">
+                            {linePictureUrl && <img src={linePictureUrl} alt="" className="w-6 h-6 rounded-full inline" />}
+                            已關聯成員 [ {lineDisplayName || 'LINE用戶'} ] 
+                          </span>
+                          <button type="button" onClick={handleUnbindLine} className="text-xs text-rose-500 hover:text-rose-600 underline font-bold px-2 whitespace-nowrap">
+                            解除綁定
+                          </button>
+                        </div>
                         <button onClick={() => runQuery('line', lineUserId)} className="px-4 py-2.5 sm:px-5 sm:py-3 bg-blue-600 hover:bg-blue-500 text-white text-sm sm:text-base font-bold rounded-lg transition shadow">
                           同步 LINE 預約項目
                         </button>
