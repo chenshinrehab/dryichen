@@ -35,8 +35,9 @@ export async function POST(request: Request) {
     const cleanPhone = phone.toString().trim();
 
     // ----------------------------------------------------------------
-    // 🚀 新增規則 1：檢查該手機號碼未來「已預約」的總時段上限
+    // 🚀 規則 1：檢查該手機號碼未來「已預約」的總時段上限
     // ----------------------------------------------------------------
+    // 取得台灣時間當天的 YYYY-MM-DD
     const todayISO = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().split('T')[0];
     const { rows: userFutureApts } = await sql`
       SELECT date, time_slot FROM appointments 
@@ -48,20 +49,27 @@ export async function POST(request: Request) {
     }
 
     // ----------------------------------------------------------------
-    // 🚀 新增規則 2：防密集預約，新預約與現有所有預約日期需間隔滿三天 (72 小時)
+    // 🚀 規則 2：防密集預約，新預約與現有所有預約日期需間隔滿三天 (72 小時)
     // ----------------------------------------------------------------
-    const newTargetDateTime = new Date(`${date} ${timeSlot.split(' ')[0]}`);
+    // 💡 安全優化：改用 ISO 8601 格式 'YYYY-MM-DDTHH:mm:00+08:00' 避免雲端環境解析為 Invalid Date
+    const cleanTime = timeSlot.split(' ')[0]; // 取出 "09:30"
+    const newTargetDateTime = new Date(`${date}T${cleanTime}:00+08:00`);
 
     for (const apt of userFutureApts) {
-      const existingDateTime = new Date(`${apt.date} ${apt.time_slot.split(' ')[0]}`);
-      const timeDiffInMs = Math.abs(newTargetDateTime.getTime() - existingDateTime.getTime());
-      const hoursDiff = timeDiffInMs / (1000 * 60 * 60);
+      const existingCleanTime = apt.time_slot.split(' ')[0];
+      const existingDateTime = new Date(`${apt.date}T${existingCleanTime}:00+08:00`);
+      
+      // 確保兩者都是有效時間才進行比對
+      if (!isNaN(newTargetDateTime.getTime()) && !isNaN(existingDateTime.getTime())) {
+        const timeDiffInMs = Math.abs(newTargetDateTime.getTime() - existingDateTime.getTime());
+        const hoursDiff = timeDiffInMs / (1000 * 60 * 60);
 
-      if (hoursDiff < 72) {
-        return NextResponse.json({ 
-          success: false, 
-          error: '請勿短時間內重複預約，有問題請致電診所詢問' 
-        });
+        if (hoursDiff < 72) {
+          return NextResponse.json({ 
+            success: false, 
+            error: '請勿短時間內重複預約，有問題請致電診所詢問' 
+          });
+        }
       }
     }
 
