@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { Metadata } from 'next';
 import JsonLd from '@/components/JsonLd';
 import ScrollAnimation from '@/components/ScrollAnimation';
+import Link from 'next/link';
+import Image from 'next/image';
 
 import { 
   FaCalendarCheck, 
@@ -350,9 +352,22 @@ export default function SelfPayBookingPage() {
           <div className="bg-white border border-slate-200 rounded-[1.5rem] sm:rounded-[2.5rem] overflow-hidden shadow-xl flex flex-col md:flex-row">
             
             <div className="md:w-2/5 bg-slate-100/60 p-6 sm:p-10 flex flex-col items-center border-b md:border-b-0 md:border-r border-slate-200">
-              <div className="w-full max-w-[180px] sm:max-w-[240px] rounded-2xl border-4 border-white shadow-xl overflow-hidden mb-5 sm:mb-8 bg-white">
-                <img src="https://duk.tw/US4zLW.jpg" alt="林羿辰醫師" className="w-full object-contain aspect-[1366/2084]" />
-              </div>
+
+<div className="w-full max-w-[220px] sm:max-w-[300px] rounded-2xl border-4 border-white shadow-xl overflow-hidden mb-5 sm:mb-8 bg-white aspect-[4/5] relative">
+  <Link href="/about/doctors" className="block h-full w-full cursor-pointer">
+    <Image 
+      src="/images/main/a.webp"
+      alt="新竹復健科推薦-林羿辰醫師-台大雙專科院長" 
+      fill
+      priority
+      loading="eager"
+      fetchPriority="high"
+      // 這裡維持 object-top，確保照片從最頂端開始往下倒滿，不會有任何多餘的留白
+      className="object-cover object-top group-hover:scale-105 transition-all duration-700"
+      sizes="(max-width: 768px) 100vw, 50vw"
+    />
+  </Link>
+</div>
               <div className="text-center w-full">
                 <h1 className="text-2xl sm:text-3xl font-black text-slate-900 mb-2">林羿辰 醫師</h1>
                 <p className="text-cyan-600 text-xs sm:text-sm font-black tracking-widest mb-4 sm:mb-6">自費門診特約預約</p>
