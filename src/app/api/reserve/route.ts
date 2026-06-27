@@ -10,7 +10,6 @@ function generateShortId(): string {
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    // 💡 確實接收前端傳過來的參數
     const { action, id, date, timeSlot, name, phone, email, part, reason, treatment, lineUserId, lineDisplayName } = body;
 
     // 💡 分流處理 1：病患端/醫師端「自主取消預約」
@@ -28,42 +27,56 @@ export async function POST(request: Request) {
     }
 
     // 💡 分流處理 2：標準「填寫送出預約掛號問卷」
-    if (!date || !timeSlot || !phone) {
-      return NextResponse.json({ success: false, error: '缺少預約必要參數 (日期、時段或手機號碼)' }, { status: 400 });
+    if (!date || !timeSlot) {
+      return NextResponse.json({ success: false, error: '缺少預約必要參數 (日期或時段)' }, { status: 400 });
     }
 
-    const cleanPhone = phone.toString().trim();
+    const cleanPhone = phone ? phone.toString().trim() : '';
+    const cleanLineId = lineUserId ? lineUserId.toString().trim() : '未關聯';
+
+    // 💡 建立新預約的時間物件 (標準 ISO 8601 格式 包含台灣時區)
+    const cleanTime = timeSlot.split(' ')[0]; // 取出 "09:30"
+    const newTargetDateTime = new Date(`${date}T${cleanTime}:00+08:00`);
+    if (isNaN(newTargetDateTime.getTime())) {
+      return NextResponse.json({ success: false, error: '預約時間格式錯誤' }, { status: 400 });
+    }
 
     // ----------------------------------------------------------------
-    // 🚀 規則 1：檢查該手機號碼未來「已預約」的總時段上限
+    // 🚀 規則 1：【手機+LINE雙聯防】檢查未來「已預約」的總時段上限 (最高3次)
     // ----------------------------------------------------------------
-    // 取得台灣時間當天的 YYYY-MM-DD
     const todayISO = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().split('T')[0];
-    const { rows: userFutureApts } = await sql`
-      SELECT date, time_slot FROM appointments 
-      WHERE phone = ${cleanPhone} AND date >= ${todayISO};
+    
+    // 同時用「手機號碼」與「LINE ID」去抓未來預約（有綁定的 LINE 絕不放過）
+    const { rows: futureApts } = await sql`
+      SELECT id FROM appointments 
+      WHERE (phone = ${cleanPhone} AND phone <> '')
+         OR (line_user_id = ${cleanLineId} AND line_user_id <> '未關聯' AND line_user_id <> '');
     `;
 
-    if (userFutureApts && userFutureApts.length >= 3) {
+    // 因為當天 >= todayISO 包含今天，如果未來已滿 3 次，直接擋下
+    if (futureApts && futureApts.length >= 3) {
       return NextResponse.json({ success: false, error: '只開放預約三個時段' });
     }
 
     // ----------------------------------------------------------------
-    // 🚀 規則 2：防密集預約，新預約與現有所有預約日期需間隔滿三天 (72 小時)
+    // 🚀 規則 2：【手機+LINE雙聯防】防密集預約 (需間隔 72 小時)
     // ----------------------------------------------------------------
-    // 💡 安全優化：改用 ISO 8601 格式 'YYYY-MM-DDTHH:mm:00+08:00' 避免雲端環境解析為 Invalid Date
-    const cleanTime = timeSlot.split(' ')[0]; // 取出 "09:30"
-    const newTargetDateTime = new Date(`${date}T${cleanTime}:00+08:00`);
+    // 同時抓出該手機或該 LINE 帳號的所有預約項目進行全量時間軸交叉比對
+    const { rows: allUserApts } = await sql`
+      SELECT date, time_slot FROM appointments 
+      WHERE (phone = ${cleanPhone} AND phone <> '')
+         OR (line_user_id = ${cleanLineId} AND line_user_id <> '未關聯' AND line_user_id <> '');
+    `;
 
-    for (const apt of userFutureApts) {
+    for (const apt of allUserApts) {
       const existingCleanTime = apt.time_slot.split(' ')[0];
       const existingDateTime = new Date(`${apt.date}T${existingCleanTime}:00+08:00`);
       
-      // 確保兩者都是有效時間才進行比對
-      if (!isNaN(newTargetDateTime.getTime()) && !isNaN(existingDateTime.getTime())) {
+      if (!isNaN(existingDateTime.getTime())) {
         const timeDiffInMs = Math.abs(newTargetDateTime.getTime() - existingDateTime.getTime());
         const hoursDiff = timeDiffInMs / (1000 * 60 * 60);
 
+        // 只要新預約與該用戶任何一筆舊預約間隔小於 72 小時，立刻精準攔截
         if (hoursDiff < 72) {
           return NextResponse.json({ 
             success: false, 
@@ -74,7 +87,7 @@ export async function POST(request: Request) {
     }
 
     // ----------------------------------------------------------------
-    // 🚀 原有機制：精準比對 time_slot 欄位，避免同一個特定時段被重複強刷
+    // 🚀 原有機制：精準防重刷
     // ----------------------------------------------------------------
     const { rows: existingApt } = await sql`
       SELECT id FROM appointments 
@@ -86,10 +99,9 @@ export async function POST(request: Request) {
     }
 
     const bookingId = generateShortId();
-    const finalLineUserId = lineUserId ? lineUserId.toString().trim() : '未關聯';
     const finalDisplayName = lineDisplayName ? lineDisplayName.toString().trim() : '';
 
-    // 🚀 寫入資料庫：回歸獨立欄位結構，其餘完全不變
+    // 🚀 安全寫入資料庫
     await sql`
       INSERT INTO appointments (id, date, time_slot, name, phone, email, part, reason, treatment, line_user_id, line_display_name)
       VALUES (
@@ -102,7 +114,7 @@ export async function POST(request: Request) {
         ${part || '未填寫'}, 
         ${reason || '未填寫'}, 
         ${treatment || '未填寫'}, 
-        ${finalLineUserId},
+        ${cleanLineId},
         ${finalDisplayName}
       );
     `;
@@ -114,7 +126,7 @@ export async function POST(request: Request) {
   }
 }
 
-// 🚀 二、GET: 處理「醫師端拉取整張名冊」與「病患端輸入手機/LINE自主查詢」
+// 🚀 二、GET 區塊維持原樣（不變）
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
@@ -122,7 +134,6 @@ export async function GET(request: Request) {
     const type = searchParams.get('type');
     const value = searchParams.get('value');
 
-    // 1. 醫師端後台：撈取所有資料庫中的特約報表
     if (action === 'getAllAppointments') {
       const { rows } = await sql`
         SELECT * FROM appointments 
@@ -131,7 +142,6 @@ export async function GET(request: Request) {
       return NextResponse.json({ success: true, list: rows || [] });
     }
 
-    // 2. 病患端前台：依據條件進行精準自主檢索
     if (type === 'phone' && value) {
       const { rows } = await sql`
         SELECT * FROM appointments 
@@ -149,7 +159,6 @@ export async function GET(request: Request) {
       return NextResponse.json({ success: true, list: rows || [] });
     }
 
-    // 若無帶入任何符合的規格參數，預設直接安全回傳空陣列
     return NextResponse.json({ success: true, list: [] });
   } catch (error: any) {
     console.error('Vercel Postgres 讀取預約明細失敗:', error.message);
