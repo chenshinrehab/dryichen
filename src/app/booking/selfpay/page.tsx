@@ -70,8 +70,9 @@ export default function SelfPayBookingPage() {
             if (data.pictureUrl) setLinePictureUrl(data.pictureUrl);
             
             window.history.replaceState({}, '', window.location.pathname);
-            alert(`🎉 LINE 帳號 [${data.displayName || '連線成員'}] 關聯成功！已為您解鎖特約掛號日曆。`);
+            // 🚀 已修正處：刪除了成功綁定時的 alert 視窗，直接順暢執行網頁無感解鎖
           } else {
+            // 🚀 失敗時依然保留錯誤提醒，確保系統透明與診斷
             alert(`❌ LINE 綁定通訊失敗！\n【錯誤診斷】：${data.line_error || data.error || '後端通訊異常'}\n\n請檢查後端 Channel Secret 是否填寫正確。`);
             window.history.replaceState({}, '', window.location.pathname);
           }
@@ -128,11 +129,9 @@ export default function SelfPayBookingPage() {
     window.location.href = `https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=${LINE_CLIENT_ID}&redirect_uri=${encodeURIComponent(redirectUri)}&state=selfPayVerify&scope=profile`;
   };
 
-  // 🚀 新增：解除綁定邏輯
   const handleUnbindLine = () => {
     if (!confirm('確定要解除綁定此 LINE 帳號嗎？\n解除後將鎖定預約日曆，需重新綁定才能預約。')) return;
     
-    // 清除快取與狀態
     localStorage.removeItem('saved_line_user_id');
     localStorage.removeItem('saved_line_display_name');
     localStorage.removeItem('saved_line_picture_url');
@@ -141,7 +140,6 @@ export default function SelfPayBookingPage() {
     setLinePictureUrl('');
     
     alert('已成功解除 LINE 帳號綁定。');
-    // 重新整理網頁確保所有表單與狀態回歸最原始乾淨狀態
     window.location.reload();
   };
 
@@ -211,7 +209,9 @@ export default function SelfPayBookingPage() {
       name: formData.name, phone: formData.phone,
       email: formData.email, part: formData.part,
       reason: formData.reason, treatment: formData.treatment,
-      lineUserId: lineUserId, service: '自費門診特約' 
+      lineUserId: lineUserId, 
+      lineDisplayName: lineDisplayName || localStorage.getItem('saved_line_display_name') || 'LINE連線成員',
+      service: '自費門診特約' 
     };
 
     try {
@@ -395,7 +395,6 @@ export default function SelfPayBookingPage() {
                               </span>
                               <FaCheckCircle className="text-emerald-500 shrink-0 ml-1" />
                             </div>
-                            {/* 🚀 新增：解除綁定按鈕 */}
                             <button 
                               type="button" 
                               onClick={handleUnbindLine} 

@@ -134,7 +134,6 @@ export default function DoctorAdminPage() {
       });
       const res = await response.json();
       if (res.success || response.ok) {
-        alert('🏥 自費特約排班表儲存更新成功！');
         fetchConfiguredDates();
       } else {
         alert('同步未成功：' + (res.error || '後端異常'));
@@ -269,7 +268,7 @@ export default function DoctorAdminPage() {
             <div className="bg-white rounded-3xl border border-slate-200 p-6 shadow-xl space-y-4">
               <div className="border-b border-slate-100 pb-3">
                 <h3 className="text-base font-black text-slate-900">1. 選擇查閱報表日期</h3>
-                <p className="text-xs text-slate-400 mt-1">過去無預約日期已反灰；<span className="text-cyan-600 font-bold">藍色方框</span>代表有病患特約登記</p>
+                <p className="text-xs text-slate-400 mt-1">過去無預約日期已反灰；<span className="text-cyan-600 font-bold">藍色方框</span>代表有病快特約登記</p>
               </div>
               <div className="border border-slate-100 rounded-2xl p-4 bg-slate-50/60">
                 <div className="flex items-center justify-between mb-4">
@@ -312,7 +311,8 @@ export default function DoctorAdminPage() {
                       <tr><td colSpan={4} className="p-10 text-center text-lg text-slate-400 font-bold">資料讀取中...</td></tr>
                     ) : filteredAppointments.length > 0 ? (
                       filteredAppointments.map((r, idx) => {
-                        const isLineBooking = r.lineUserId && r.lineUserId !== '未關聯';
+                        const rawLineId = r.line_user_id || r.lineUserId;
+                        const isLineBooking = rawLineId && rawLineId !== '未關聯' && rawLineId !== '';
 
                         return (
                           <React.Fragment key={idx}>
@@ -331,7 +331,6 @@ export default function DoctorAdminPage() {
                                   {r.time || r.time_slot}
                                 </span>
                               </td>
-                              {/* 🚀 修正點 1：確保留在姓名列，若是 LINE 預約，直接渲染為清晰粗體翡翠綠 text-emerald-600 */}
                               <td className={`p-3 md:p-5 font-black text-sm sm:text-base break-all ${isLineBooking ? 'text-emerald-600' : 'text-slate-900'}`}>
                                 ▼&nbsp;{r.name}
                               </td>
@@ -342,6 +341,32 @@ export default function DoctorAdminPage() {
                               <tr className="bg-slate-50/50">
                                 <td colSpan={4} className="p-2 sm:p-6">
                                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-white p-4 rounded-2xl border border-slate-200 text-xs sm:text-sm w-full shadow-sm">
+                                    
+                                    {/* 🚀 終極對接獨立新欄位：直接讀取由全新 API 所儲存的 line_display_name，並兼容歷史過渡時期的串接與純亂碼格式 */}
+                                    <div className="md:col-span-2 w-full">
+                                      <span className="font-black text-slate-400 block mb-1 text-xs">病患 LINE 實名暱稱：</span>
+                                      <span className="text-emerald-700 block bg-emerald-50/50 p-2.5 rounded-lg border border-emerald-200 font-bold break-all">
+                                        {(() => {
+                                          // 1. 正統做法：優先讀取資料庫全新的獨立暱稱欄位
+                                          if (r.line_display_name || r.lineDisplayName) {
+                                            return `👤 暱稱：${r.line_display_name || r.lineDisplayName}`;
+                                          }
+                                          
+                                          // 2. 歷史相容做法（相容上個版本或尚未更新資料表的底線格式資料 "ID_暱稱"）
+                                          const rawLineStr = r.line_user_id || r.lineUserId || '';
+                                          if (rawLineStr.includes('_')) {
+                                            const parts = rawLineStr.split('_');
+                                            return `👤 暱稱：${parts[1]}`;
+                                          }
+
+                                          // 3. 純代碼降級顯示，保證舊資料不跳空
+                                          if (isLineBooking) {
+                                            return `👤 暱稱：${rawLineStr}`;
+                                          }
+                                          return '未綁定/無紀錄';
+                                        })()}
+                                      </span>
+                                    </div>
                                     <div className="w-full">
                                       <span className="font-black text-slate-400 block mb-1 text-xs">電子郵件：</span>
                                       <span className="text-slate-700 block bg-slate-50 p-2.5 rounded-lg border border-slate-200 font-bold break-all whitespace-pre-wrap">{r.email || '無'}</span>

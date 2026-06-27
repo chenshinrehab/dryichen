@@ -222,6 +222,12 @@ export const sportsInjuriesData = [
         description: '嘴巴痛只能看牙醫？從口顏面痛角度深入剖析蛀牙、顳顎關節炎（TMD）與咀嚼肌群緊繃的關鍵差異。臨床實證研究指出，TMD 是第二常見的顏面疼痛原因。本文帶您看懂四大關鍵症狀，並解析徒手治療、咬合板到口腔外科手術的階梯式全照護治療流程。',
         image: '/images/news/article/mouth-pain-tmd-analysis.webp',
       },
+                                    {
+        slug: 'child-development-early-intervention',
+        title: '兒童發展全解析：動作、語言發展里程碑，何時該上早療？',
+        description: '深度解析兒童大動作、細動作與語言發展的正常里程碑，並說明各年齡層的發展警訊（red flags）。實證研究顯示早期發現、及早療育能顯著改善發展遲緩兒童的長期預後，本文以淺顯易懂的語言搭配圖表，幫助家長掌握黃金治療期。',
+        image: '/images/news/article/child-development-early-intervention.webp',
+      },
     
     ]
   },
@@ -304,7 +310,13 @@ export const sportsInjuriesData = [
         description: '深度解析PRP（高濃度血小板血漿）注射的適應症、禁忌症與實證療效。涵蓋退化性膝關節炎、肌腱韌帶損傷、網球肘、足底筋膜炎等常見狀況，以及不同年齡層的治療建議，幫助你做出最知情的醫療決策。',
         image: '/images/news/article/prp-who-is-suitable.webp',
       },
-      
+                                                                  {
+        slug: 'prp-prolotherapy-injection-frequency',
+        title: 'PRP與增生注射可以一直打嗎？打太多會傷身體嗎？破解迷思',
+        description: '深度解析PRP（高濃度血小板血漿）與增生注射（Prolotherapy）的作用機轉與安全性，實證研究告訴你這類自體修復療法是否有次數限制，並與類固醇注射對照，破解「打針傷身體」的常見迷思。',
+        image: '/images/news/article/prp-prolotherapy-frequency.webp',
+      },
+
                                                 {
         slug: 'prp-vs-hyaluronic-acid-injection',
         title: '自費針劑這麼多種，PRP、玻尿酸、葡萄糖，該如何挑選？如何挑選適合的醫生跟診所',

@@ -10,7 +10,8 @@ function generateShortId(): string {
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { action, id, date, timeSlot, name, phone, email, part, reason, treatment, lineUserId } = body;
+    // 💡 確實接收前端傳過來的 lineDisplayName
+    const { action, id, date, timeSlot, name, phone, email, part, reason, treatment, lineUserId, lineDisplayName } = body;
 
     // 💡 分流處理 1：病患端/醫師端「自主取消預約」
     if (action === "cancelAppointment") {
@@ -27,11 +28,31 @@ export async function POST(request: Request) {
     }
 
     // 💡 分流處理 2：標準「填寫送出預約掛號問卷」
+    if (!date || !timeSlot) {
+      return NextResponse.json({ success: false, error: '缺少預約日期或時段' }, { status: 400 });
+    }
+
+    // 🚀 核心防爆機制優化：在正式 INSERT 寫入之前，先去資料庫檢查該日期與時段是否剛剛已被他人搶先預約
+    const { rows: existingApt } = await sql`
+      SELECT id FROM appointments 
+      WHERE date = ${date} AND (time_slot = ${timeSlot} OR time = ${timeSlot});
+    `;
+
+    if (existingApt && existingApt.length > 0) {
+      // 如果已被預約，立刻安全攔截並回傳錯誤，防範 Race Condition (多人同時送出) 造成的重複掛號
+      return NextResponse.json({ success: false, error: '該時段剛剛已被其他病患優先預約，請重新選取其他空缺時段！' });
+    }
+
     const bookingId = generateShortId();
     const cleanPhone = phone ? phone.toString().trim() : '';
 
+    // 🚀 正統乾淨作法：各自回歸獨立欄位，保持原有變數處理與最純淨結構
+    const finalLineUserId = lineUserId ? lineUserId.toString().trim() : '未關聯';
+    const finalDisplayName = lineDisplayName ? lineDisplayName.toString().trim() : '';
+
+    // 🚀 寫入資料庫：將 line_display_name 獨立塞入新欄位，其餘不變
     await sql`
-      INSERT INTO appointments (id, date, time_slot, name, phone, email, part, reason, treatment, line_user_id)
+      INSERT INTO appointments (id, date, time_slot, name, phone, email, part, reason, treatment, line_user_id, line_display_name)
       VALUES (
         ${bookingId}, 
         ${date}, 
@@ -42,7 +63,8 @@ export async function POST(request: Request) {
         ${part || '未填寫'}, 
         ${reason || '未填寫'}, 
         ${treatment || '未填寫'}, 
-        ${lineUserId || '未關聯'}
+        ${finalLineUserId},
+        ${finalDisplayName}
       );
     `;
 
@@ -79,9 +101,11 @@ export async function GET(request: Request) {
       `;
       return NextResponse.json({ success: true, list: rows || [] });
     } else if (type === 'line' && value) {
+      // 💡 保持最乾淨的精準比對，回歸原本比對原 Uxx 代碼的邏輯
+      const targetValue = value.trim();
       const { rows } = await sql`
         SELECT * FROM appointments 
-        WHERE line_user_id = ${value.trim()} 
+        WHERE line_user_id = ${targetValue}
         ORDER BY date ASC;
       `;
       return NextResponse.json({ success: true, list: rows || [] });

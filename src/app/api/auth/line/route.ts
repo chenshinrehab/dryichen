@@ -1,12 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-// 🚀 核心修正 1：強制命令 Vercel 絕對不要快取這支 API，徹底解決部署後程式碼沒更新的靈異現象
+// 🚀 強制命令 Vercel 絕對不要快取這支 API，徹底解決部署後程式碼沒更新的現象
 export const dynamic = 'force-dynamic';
 
 const LINE_CLIENT_ID = "2010496335";
 
-// ⚠️ 林醫師，請務必把下面這長串替換成您 LINE 後台 Basic settings 裡面的 Channel secret 密鑰！
-const LINE_CLIENT_SECRET = "3f5bf378485325b52664c9d2c72d4344"; 
+// 🚀 安全控管防禦優化：優先讀取 Vercel 後台環境變數，萬一沒設定才吃您的保底密鑰。
+// 這樣未來更換金鑰時，直接在 Vercel Dashboard 調整即可，代碼不寫死更安全！
+const LINE_CLIENT_SECRET = process.env.LINE_CHANNEL_SECRET || "3f5bf378485325b52664c9d2c72d4344"; 
 
 export async function GET(request: NextRequest) {
   try {
@@ -18,7 +19,7 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ success: false, error: '缺少必要參數 code 或 redirectUri' });
     }
 
-    // 🚀 核心修正 2：改用最具相容性的標準物件打包，確保 LINE 伺服器能完美解析
+    // 🚀 改用最具相容性的標準物件打包，確保 LINE 伺服器能完美解析
     const bodyData = new URLSearchParams({
       grant_type: 'authorization_code',
       code: code,
@@ -37,7 +38,7 @@ export async function GET(request: NextRequest) {
     
     const tokenData = await tokenRes.json();
     
-    // 💡 除錯防呆：如果 LINE 報錯，直接把 LINE 的原始錯誤訊息傳回前端，這樣我們就能一眼看出是 Secret 錯了還是網址錯了
+    // 💡 除錯防呆：如果 LINE 報錯，直接把 LINE 的原始錯誤訊息傳回前端
     if (!tokenRes.ok || !tokenData.access_token) {
       console.error("LINE Token 交換失敗原因:", tokenData);
       return NextResponse.json({ 
