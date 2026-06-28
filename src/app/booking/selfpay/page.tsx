@@ -126,7 +126,6 @@ export default function SelfPayBookingPage() {
 
   const handleLineAuthRedirect = () => {
     const redirectUri = "https://dryichen.com.tw/booking/selfpay";
-    // 🚀 關鍵核心優化：結尾追加 &bot_prompt=normal 參數，強迫 LINE 登入授權頁面自動跳出「加入官方 LINE 帳號」的好友提醒詢問
     window.location.href = `https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=${LINE_CLIENT_ID}&redirect_uri=${encodeURIComponent(redirectUri)}&state=selfPayVerify&scope=profile&bot_prompt=normal`;
   };
 
@@ -272,9 +271,9 @@ export default function SelfPayBookingPage() {
   };
 
   const renderCalendar = () => {
-    const today = new Date();
-    const offset = today.getTimezoneOffset() * 60000;
-    const todayStr = (new Date(today.getTime() - offset)).toISOString().split('T')[0];
+    const windowToday = new Date();
+    const offset = windowToday.getTimezoneOffset() * 60000;
+    const todayStr = (new Date(windowToday.getTime() - offset)).toISOString().split('T')[0];
 
     const year = currentMonth.getFullYear();
     const month = currentMonth.getMonth();
@@ -383,50 +382,33 @@ export default function SelfPayBookingPage() {
               {activeTab === 'booking' && (
                 <div className="space-y-6 sm:space-y-8">
                   
-                  <div className="bg-slate-50 border border-slate-200 p-4 sm:p-5 rounded-2xl shadow-sm animate-fadeIn">
-                    <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
-                      <div className="flex items-center gap-2.5 sm:gap-3 w-full sm:w-auto">
-                        <FaLine className="text-[#06C755] text-3xl sm:text-4xl shrink-0" />
-                        <div className="text-left">
-                          <h4 className="font-black text-sm sm:text-base text-slate-800">LINE 帳號特約實名關聯</h4>
-                          <p className="text-xs sm:text-sm text-slate-500 mt-0.5">關聯後解鎖預約日曆，並享有看診前日中午提醒通知</p>
-                        </div>
-                      </div>
-                      
-                      <div className="w-full sm:w-auto flex flex-col sm:flex-row justify-center sm:justify-end items-center gap-2">
-                        {lineUserId ? (
-                          <>
-                            <div className="flex items-center gap-2 bg-white border border-emerald-200 shadow-sm px-4 py-2 rounded-full select-none w-full sm:w-auto justify-center">
-                              {linePictureUrl ? (
-                                <img src={linePictureUrl} alt={lineDisplayName} className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-slate-100 object-cover" />
-                              ) : (
-                                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs font-bold">👤</div>
-                              )}
-                              <span className="text-xs sm:text-sm font-black text-emerald-600 whitespace-nowrap">
-                                {lineDisplayName || "已連線成員"}
-                              </span>
-                              <FaCheckCircle className="text-emerald-500 shrink-0 ml-1" />
-                            </div>
-                            <button 
-                              type="button" 
-                              onClick={handleUnbindLine} 
-                              className="text-xs font-bold text-rose-500 hover:text-rose-600 underline px-2 py-1 mt-1 sm:mt-0 whitespace-nowrap"
-                            >
-                              解除綁定
-                            </button>
-                          </>
-                        ) : (
-                          <button type="button" onClick={handleLineAuthRedirect} className="bg-[#06C755] hover:bg-[#05b04b] text-white text-xs sm:text-sm font-black py-2.5 px-5 rounded-xl transition-colors whitespace-nowrap shadow-sm w-full sm:w-auto">
-                            一鍵安全綁定登入
-                          </button>
-                        )}
-                      </div>
-                    </div>
-                  </div>
+                  {/* 🚀 已優化處：移除原本置頂的 `LINE 帳號特約實名關聯` 圖卡，避免功能重複與視覺雜亂 */}
                   
                   {lineUserId ? (
                     <div className="space-y-6 sm:space-y-8 animate-fadeIn">
                       
+                      {/* 🚀 已優化處：當成功連線綁定後，原圖卡的解除綁定按鈕在此無縫保留，方便病患管理 */}
+                      <div className="flex items-center justify-between bg-emerald-50 border border-emerald-200 p-4 rounded-xl shadow-sm mb-4">
+                        <div className="flex items-center gap-2">
+                          {linePictureUrl ? (
+                            <img src={linePictureUrl} alt={lineDisplayName} className="w-8 h-8 rounded-full border border-slate-100 object-cover" />
+                          ) : (
+                            <div className="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs font-bold">👤</div>
+                          )}
+                          <span className="text-sm font-black text-emerald-700">
+                            已授權關聯：{lineDisplayName || "已連線成員"}
+                          </span>
+                          <FaCheckCircle className="text-emerald-500 shrink-0" />
+                        </div>
+                        <button 
+                          type="button" 
+                          onClick={handleUnbindLine} 
+                          className="text-xs font-bold text-rose-500 hover:text-rose-600 underline whitespace-nowrap"
+                        >
+                          解除連結
+                        </button>
+                      </div>
+
                       <div className="bg-slate-50 border border-slate-200 p-4 sm:p-6 rounded-2xl">
                         <h2 className="text-base sm:text-lg font-black text-slate-800 mb-4 sm:mb-5 flex items-center gap-2">
                           <span className="w-5 h-5 sm:w-6 h-6 rounded-full bg-cyan-100 text-cyan-600 border border-cyan-200 flex items-center justify-center text-[11px] sm:text-xs font-black">1</span>
@@ -554,23 +536,26 @@ export default function SelfPayBookingPage() {
                         本診所自費門診採實名預約制。請先加入官方LINE好友並點選<span className="text-[#06C755] font-black">【一鍵安全綁定登入】</span>完成驗證，系統將即時為您解鎖看診日曆與預約時段。
                       </p>
 
-                      {/* 🚀 新增處：貼心提供病患一個直覺引導加入好友的獨立綠色輔助按鈕 */}
                       <div className="w-full max-w-xs space-y-3">
+                        {/* 🚀 已優化處：步驟 1 顏色加深改為厚實高飽和深綠底白字（bg-emerald-600 text-white），解決淺色看不清問題 */}
                         <a 
                           href="https://line.me/R/ti/p/@584yxibc" 
                           target="_blank" 
                           rel="noopener noreferrer" 
-                          className="flex items-center justify-center gap-2 bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border border-emerald-200 text-xs sm:text-sm font-bold py-3 px-5 rounded-xl transition shadow-sm w-full"
+                          className="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-black py-3.5 px-5 rounded-xl transition shadow-md w-full"
                         >
-                          <FaLine className="text-[#06C755] text-lg sm:text-xl" />
-                          步驟 1 ：先點我加入官方 LINE 好友
+                          <FaLine className="text-white text-lg sm:text-xl shrink-0 filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)]" />
+                          <span>步驟 1 ：先點我加入官方 LINE 好友</span>
                         </a>
+                        
+                        {/* 🚀 已優化處：步驟 2 調校成標準 LINE 正統經典深綠（bg-[#06C755]），並附加 Icon 陰影，確保白色 Icon 100% 顯眼不吃字 */}
                         <button 
                           type="button" 
                           onClick={handleLineAuthRedirect} 
-                          className="bg-[#06C755] hover:bg-[#05b04b] text-white text-xs sm:text-sm font-black py-3 px-5 rounded-xl transition shadow-sm w-full"
+                          className="flex items-center justify-center gap-2 bg-[#06C755] hover:bg-[#05a647] text-white text-xs sm:text-sm font-black py-3.5 px-5 rounded-xl transition shadow-md w-full"
                         >
-                          步驟 2 ：一鍵安全綁定登入
+                          <FaLine className="text-white text-lg sm:text-xl shrink-0 filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]" />
+                          <span>步驟 2 ：一鍵安全綁定登入</span>
                         </button>
                       </div>
                     </div>

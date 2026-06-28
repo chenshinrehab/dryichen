@@ -51,6 +51,12 @@ export const sportsInjuriesData = [
 
 
                   {
+        slug: 'medical-radiation-dose-analysis',
+        title: 'X光輻射劑量全解:到底有多少輻射？跟坐飛機比誰更多？',
+        description: '深度剖析四肢X光、胸部X光、脊椎X光、牙科X光與CT電腦斷層的實際輻射劑量。實證研究換算出這些檢查相當於自然背景輻射多少天，並比較長程飛機飛行的輻射量，幫助民眾以科學數據理性看待醫療輻射，減少不必要的檢查恐懼。',
+        image:  '/images/news/article/medical-radiation-dose-analysis.webp',
+      },
+                  {
         slug: 'accessory-and-sesamoid-bones',
         title: '天生多塊骨頭？常見「副骨」與「種子骨」疼痛部位、診斷與根治策略',
         description: '人體骨骼發育過程中，部分人會額外長出「副骨」或「種子骨」。雖然多數終生無症狀，但反覆壓迫或過度使用常引發足弓內側、踝後、前腳掌或肩膀疼痛。本文從運動醫學與影像學角度，系統解析副舟狀骨、副三角骨、肩峰副骨等好發部位與核心治療策略。',
