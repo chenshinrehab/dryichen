@@ -72,9 +72,7 @@ export default function SelfPayBookingPage() {
             if (data.pictureUrl) setLinePictureUrl(data.pictureUrl);
             
             window.history.replaceState({}, '', window.location.pathname);
-            // 🚀 已修正處：刪除了成功綁定時的 alert 視窗，直接順暢執行網頁無感解鎖
           } else {
-            // 🚀 失敗時依然保留錯誤提醒，確保系統透明與診斷
             alert(`❌ LINE 綁定通訊失敗！\n【錯誤診斷】：${data.line_error || data.error || '後端通訊異常'}\n\n請檢查後端 Channel Secret 是否填寫正確。`);
             window.history.replaceState({}, '', window.location.pathname);
           }
@@ -128,7 +126,8 @@ export default function SelfPayBookingPage() {
 
   const handleLineAuthRedirect = () => {
     const redirectUri = "https://dryichen.com.tw/booking/selfpay";
-    window.location.href = `https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=${LINE_CLIENT_ID}&redirect_uri=${encodeURIComponent(redirectUri)}&state=selfPayVerify&scope=profile`;
+    // 🚀 關鍵核心優化：結尾追加 &bot_prompt=normal 參數，強迫 LINE 登入授權頁面自動跳出「加入官方 LINE 帳號」的好友提醒詢問
+    window.location.href = `https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=${LINE_CLIENT_ID}&redirect_uri=${encodeURIComponent(redirectUri)}&state=selfPayVerify&scope=profile&bot_prompt=normal`;
   };
 
   const handleUnbindLine = () => {
@@ -352,22 +351,20 @@ export default function SelfPayBookingPage() {
           <div className="bg-white border border-slate-200 rounded-[1.5rem] sm:rounded-[2.5rem] overflow-hidden shadow-xl flex flex-col md:flex-row">
             
             <div className="md:w-2/5 bg-slate-100/60 p-6 sm:p-10 flex flex-col items-center border-b md:border-b-0 md:border-r border-slate-200">
-
-<div className="w-full max-w-[220px] sm:max-w-[300px] rounded-2xl border-4 border-white shadow-xl overflow-hidden mb-5 sm:mb-8 bg-white aspect-[4/5] relative">
-  <Link href="/about/doctors" className="block h-full w-full cursor-pointer">
-    <Image 
-      src="/images/main/a.webp"
-      alt="新竹復健科推薦-林羿辰醫師-台大雙專科院長" 
-      fill
-      priority
-      loading="eager"
-      fetchPriority="high"
-      // 這裡維持 object-top，確保照片從最頂端開始往下倒滿，不會有任何多餘的留白
-      className="object-cover object-top group-hover:scale-105 transition-all duration-700"
-      sizes="(max-width: 768px) 100vw, 50vw"
-    />
-  </Link>
-</div>
+              <div className="w-full max-w-[220px] sm:max-w-[300px] rounded-2xl border-4 border-white shadow-xl overflow-hidden mb-5 sm:mb-8 bg-white aspect-[4/5] relative">
+                <Link href="/about/doctors" className="block h-full w-full cursor-pointer">
+                  <Image 
+                    src="/images/main/a.webp"
+                    alt="新竹復健科推薦-林羿辰醫師-台大雙專科院長" 
+                    fill
+                    priority
+                    loading="eager"
+                    fetchPriority="high"
+                    className="object-cover object-top group-hover:scale-105 transition-all duration-700"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </Link>
+              </div>
               <div className="text-center w-full">
                 <h1 className="text-2xl sm:text-3xl font-black text-slate-900 mb-2">林羿辰 醫師</h1>
                 <p className="text-cyan-600 text-xs sm:text-sm font-black tracking-widest mb-4 sm:mb-6">自費門診特約預約</p>
@@ -548,14 +545,34 @@ export default function SelfPayBookingPage() {
 
                     </div>
                   ) : (
-                    <div className="flex flex-col items-center justify-center text-center p-8 sm:p-16 border border-dashed border-slate-300 rounded-3xl bg-slate-50/60 min-h-[350px] animate-fadeIn">
+                    <div className="flex flex-col items-center justify-center text-center p-8 sm:p-12 border border-dashed border-slate-300 rounded-3xl bg-slate-50/60 min-h-[350px] animate-fadeIn">
                       <div className="p-4 bg-amber-50 text-amber-600 border border-amber-100 rounded-2xl mb-4 text-2xl sm:text-3xl">
                         <FaLock />
                       </div>
                       <h3 className="font-black text-slate-800 text-base sm:text-lg mb-2">特約掛號系統安全鎖定</h3>
-                      <p className="text-xs sm:text-sm text-slate-500 max-w-xs leading-relaxed">
-                        本診所自費門診採實名預約制。請先點選上方框框內的<span className="text-[#06C755] font-black">【一鍵安全綁定登入】</span>完成驗證，系統將即時為您解鎖看診日曆與預約時段。
+                      <p className="text-xs sm:text-sm text-slate-500 max-w-xs leading-relaxed mb-6">
+                        本診所自費門診採實名預約制。請先加入官方LINE好友並點選<span className="text-[#06C755] font-black">【一鍵安全綁定登入】</span>完成驗證，系統將即時為您解鎖看診日曆與預約時段。
                       </p>
+
+                      {/* 🚀 新增處：貼心提供病患一個直覺引導加入好友的獨立綠色輔助按鈕 */}
+                      <div className="w-full max-w-xs space-y-3">
+                        <a 
+                          href="https://line.me/R/ti/p/@584yxibc" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="flex items-center justify-center gap-2 bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border border-emerald-200 text-xs sm:text-sm font-bold py-3 px-5 rounded-xl transition shadow-sm w-full"
+                        >
+                          <FaLine className="text-[#06C755] text-lg sm:text-xl" />
+                          步驟 1 ：先點我加入官方 LINE 好友
+                        </a>
+                        <button 
+                          type="button" 
+                          onClick={handleLineAuthRedirect} 
+                          className="bg-[#06C755] hover:bg-[#05b04b] text-white text-xs sm:text-sm font-black py-3 px-5 rounded-xl transition shadow-sm w-full"
+                        >
+                          步驟 2 ：一鍵安全綁定登入
+                        </button>
+                      </div>
                     </div>
                   )}
 
