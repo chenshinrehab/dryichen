@@ -8,8 +8,14 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-/* 1. 顯式定義標題樣式，解決 H1UserAgentFontSizeInSection 警告 */
+/* 1. 顯式定義基礎樣式 */
 @layer base {
+  html, body {
+    /* ✨ 新增：阻止 iOS 瀏覽器整頁被拖曳反彈的橡皮筋效果與下拉重新整理 */
+    overscroll-behavior: none;
+  }
+
+  /* 解決 H1UserAgentFontSizeInSection 警告 */
   h1 {
     @apply text-4xl font-bold mb-4; /* 這裡可以使用你喜歡的 Tailwind class */
     font-size: 2.25rem; /* 顯式指定字體大小 */
