@@ -52,6 +52,39 @@ export default function SelfPayBookingPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitLoading, setIsSubmitLoading] = useState(false);
 
+  // 1. 本機記憶載入：初始化時檢查是否有上次預約成功留下的姓名與電話
+  useEffect(() => {
+    const savedName = localStorage.getItem('saved_booking_name');
+    const savedPhone = localStorage.getItem('saved_booking_phone');
+    if (savedName || savedPhone) {
+      setFormData(prev => ({
+        ...prev,
+        name: savedName || prev.name,
+        phone: savedPhone || prev.phone
+      }));
+    }
+  }, []);
+
+  // 1. 雲端記憶載入：當成功取得 lineUserId 時，若本機沒有記憶，則向後端調閱歷史資料帶入
+  useEffect(() => {
+    if (lineUserId) {
+      fetch(`/api/reserve?action=query&type=line&value=${lineUserId}`)
+        .then(res => res.json())
+        .then(data => {
+          if (data.list && data.list.length > 0) {
+            const sorted = data.list.sort((a: any, b: any) => b.date.localeCompare(a.date));
+            const latest = sorted[0];
+            setFormData(prev => ({
+              ...prev,
+              name: prev.name || latest.name || '',
+              phone: prev.phone || latest.phone || ''
+            }));
+          }
+        })
+        .catch(err => console.error("無法載入歷史預約資料", err));
+    }
+  }, [lineUserId]);
+
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const code = params.get('code'); 
@@ -223,8 +256,20 @@ export default function SelfPayBookingPage() {
       const res = await response.json();
       if (res.success) {
         alert("🎉 門診特約預約成功！已同步登錄資料庫。");
-        resetFormState();
-        window.location.reload();
+        
+        // 1. 預約成功後儲存姓名電話，供下次預約時自動填寫
+        localStorage.setItem('saved_booking_name', formData.name);
+        localStorage.setItem('saved_booking_phone', formData.phone);
+        
+        // 2. 清除本次預約的部位、原因等選項，但保留姓名電話
+        setFormData(prev => ({ ...prev, part: '', reason: '', treatment: '' }));
+        setSelectedDate('');
+        setSelectedTime('');
+        setDisplaySlots([]);
+        
+        // 2. 切換至查詢頁籤，並捲動至頂部，取代原本的 reload 避免跑版
+        setActiveTab('query');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         alert("預約未成功：" + (res.error || "伺服器連線異常"));
       }
@@ -241,7 +286,14 @@ export default function SelfPayBookingPage() {
     try {
       const response = await fetch(`/api/reserve?action=query&type=${type}&value=${value}`);
       const resData = await response.json();
-      setQueryResults(resData.list || []);
+      
+      // 3. 過濾掉已過期的預約紀錄（日期小於今日則自動移除）
+      const now = new Date();
+      const offset = now.getTimezoneOffset() * 60000;
+      const todayStr = new Date(now.getTime() - offset).toISOString().split('T')[0];
+      
+      const filteredResults = (resData.list || []).filter((item: any) => item.date >= todayStr);
+      setQueryResults(filteredResults);
     } catch (err) {
       console.error(err);
     } finally {

@@ -694,6 +694,12 @@ export const sportsInjuriesData = [
     description: '其他各種運動或是日常生活姿勢錯誤導致的傷害解析。',
     image: '/images/sportinjury/6.webp',
     injuries: [
+                                          {
+        slug: 'soccer-world-cup-injury-analysis',
+        title: '世足賽開打！從醫學角度看足球常見運動傷害？哪些球員得過',
+        description: '2026世界盃足球賽正在北美熱烈進行，從Neymar的十字韌帶傷勢到Mbappé的大腿後肌拉傷，球星接連傳出傷退消息。本文以實證醫學角度，深度解析足球運動中最常見的五大傷害——膝關節十字韌帶斷裂、大腿後肌拉傷、腳踝外側韌帶扭傷、鼠蹊部內收肌拉傷與頭部撞擊腦傷風險，並以知名球星案例說明致傷機轉與預防之道。',
+        image:  '/images/news/article/soccer-injury-analysis.webp',
+      },
                                     {
         slug: 'cervical-shoulder-pain-causes',
         title: '肩頸痠痛全解析：從肌肉問題到脊椎疾患，疼痛地圖讓你懂？',
