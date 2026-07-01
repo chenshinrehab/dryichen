@@ -394,10 +394,10 @@ export default function SelfPayBookingPage() {
       <div className="flex-grow pt-4 pb-16 px-3 sm:px-4 bg-slate-50 min-h-screen text-slate-800 relative z-10 block">
         <div className="max-w-6xl mx-auto space-y-5">
           
-          <div className="flex justify-center p-1.5 bg-white rounded-2xl border border-slate-200 max-w-lg mx-auto shadow-sm">
-            <button type="button" onClick={() => setActiveTab('booking')} className={`flex-1 py-3.5 sm:py-4 text-center text-sm sm:text-base font-black rounded-xl transition-all duration-200 ${activeTab === 'booking' ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-slate-700'}`}>特約掛號預約</button>
-            <button type="button" onClick={() => setActiveTab('query')} className={`flex-1 py-3.5 sm:py-4 text-center text-sm sm:text-base font-black rounded-xl transition-all duration-200 ${activeTab === 'query' ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-slate-700'}`}>查詢 / 取消預約</button>
-          </div>
+<div className="flex justify-center p-1.5 bg-white rounded-2xl border border-slate-200 max-w-lg mx-auto shadow-sm">
+  <button type="button" onClick={() => setActiveTab('booking')} className={`flex-1 py-3.5 sm:py-4 text-center text-base sm:text-lg font-black rounded-xl transition-all duration-200 ${activeTab === 'booking' ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-slate-700'}`}>特約掛號預約</button>
+  <button type="button" onClick={() => setActiveTab('query')} className={`flex-1 py-3.5 sm:py-4 text-center text-base sm:text-lg font-black rounded-xl transition-all duration-200 ${activeTab === 'query' ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-slate-700'}`}>查詢 / 取消預約</button>
+</div>
 
           <div className="bg-white border border-slate-200 rounded-[1.5rem] sm:rounded-[2.5rem] overflow-hidden shadow-xl flex flex-col md:flex-row">
             
@@ -417,15 +417,15 @@ export default function SelfPayBookingPage() {
                 </Link>
               </div>
               <div className="text-center w-full">
-                <h1 className="text-2xl sm:text-3xl font-black text-slate-900 mb-2">林羿辰 醫師</h1>
-                <p className="text-cyan-600 text-xs sm:text-sm font-black tracking-widest mb-4 sm:mb-6">自費門診特約預約</p>
+             <h1 className="text-3xl sm:text-4xl font-black text-slate-900 mb-2">林羿辰 醫師</h1>
+<p className="text-cyan-600 text-base sm:text-lg font-black tracking-widest mb-4 sm:mb-6">特約門診預約資訊</p>
 
-                <div className="text-left bg-white border border-slate-200 p-4 sm:p-5 rounded-2xl space-y-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed shadow-sm">
-                  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 請先於右側完成 LINE 帳號驗證以開啟掛號功能。</p>
-                  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 選擇高亮可點擊之日期，即可查看預約空缺。</p>
-                  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 客滿或無排診之日期將反灰無法點選。</p>
-                  <p className="flex items-start gap-1.5"><span className="text-emerald-600 font-bold">✦</span> 特約通知將於看診前一天中午 12:00 自動透過 LINE 發送。</p>
-                </div>
+<div className="text-left bg-white border border-slate-200 p-4 sm:p-5 rounded-2xl space-y-2.5 text-sm sm:text-base text-slate-600 leading-relaxed shadow-sm">
+  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 採全預約制，免除久候且更完整的評估治療</p>
+  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 請務必提前十分鐘報到，每次25分鐘。</p>
+  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 健保身份：單次 1000 元</p>
+  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 非健保身份：單次 1500 元</p>
+</div>
               </div>
             </div>
 
@@ -434,7 +434,6 @@ export default function SelfPayBookingPage() {
               {activeTab === 'booking' && (
                 <div className="space-y-6 sm:space-y-8">
                   
-                  {/* 🚀 已優化處：移除原本置頂的 `LINE 帳號特約實名關聯` 圖卡，避免功能重複與視覺雜亂 */}
                   
                   {lineUserId ? (
                     <div className="space-y-6 sm:space-y-8 animate-fadeIn">
@@ -448,7 +447,7 @@ export default function SelfPayBookingPage() {
                             <div className="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs font-bold">👤</div>
                           )}
                           <span className="text-sm font-black text-emerald-700">
-                            已授權關聯：{lineDisplayName || "已連線成員"}
+                            已登入帳號：{lineDisplayName || "已連線成員"}
                           </span>
                           <FaCheckCircle className="text-emerald-500 shrink-0" />
                         </div>
@@ -457,7 +456,7 @@ export default function SelfPayBookingPage() {
                           onClick={handleUnbindLine} 
                           className="text-xs font-bold text-rose-500 hover:text-rose-600 underline whitespace-nowrap"
                         >
-                          解除連結
+                          解除綁定
                         </button>
                       </div>
 
@@ -491,7 +490,7 @@ export default function SelfPayBookingPage() {
                         <div className="space-y-4 animate-fadeIn">
                           <h2 className="text-base sm:text-lg font-black text-slate-800 flex items-center gap-2">
                             <span className="w-5 h-5 sm:w-6 h-6 rounded-full bg-cyan-100 text-cyan-600 border border-cyan-200 flex items-center justify-center text-[11px] sm:text-xs font-black">2</span>
-                            可選取的特約時間
+                            開放可預約時段
                           </h2>
                           {displaySlots.length > 0 ? (
                             <div className="grid grid-cols-3 gap-2 sm:gap-4">
@@ -519,19 +518,19 @@ export default function SelfPayBookingPage() {
                         <form onSubmit={handleBookingSubmit} className="space-y-5 sm:space-y-6 pt-5 sm:pt-6 border-t border-slate-200 border-dashed animate-fadeIn">
                           <h2 className="text-base sm:text-lg font-black text-slate-800 flex items-center gap-2">
                             <span className="w-5 h-5 sm:w-6 h-6 rounded-full bg-cyan-100 text-cyan-600 border border-cyan-200 flex items-center justify-center text-[11px] sm:text-xs font-black">3</span>
-                            填寫就診基本問卷
+                            就診基本問卷
                           </h2>
 
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">病患真實姓名 <span className="text-rose-500">*</span></label>
+                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">您的姓名 <span className="text-rose-500">*</span></label>
                               <div className="relative">
                                 <FaUser className="absolute left-4 top-4 sm:top-4.5 text-slate-400 text-xs sm:text-sm" />
                                 <input type="text" required value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} placeholder="繁體中文真實大名" className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
                               </div>
                             </div>
                             <div>
-                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">手機號碼 (將完整保留開頭0) <span className="text-rose-500">*</span></label>
+                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">手機號碼 <span className="text-rose-500">*</span></label>
                               <div className="relative">
                                 <FaPhoneAlt className="absolute left-4 top-4 sm:top-4.5 text-slate-400 text-xs sm:text-sm" />
                                 <input type="tel" required value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} placeholder="例如：0912345678" className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
@@ -552,7 +551,7 @@ export default function SelfPayBookingPage() {
                               <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">本次看診不適部位？</label>
                               <div className="relative">
                                 <FaMapMarkerAlt className="absolute left-4 top-4 sm:top-4.5 text-slate-400 text-xs sm:text-sm" />
-                                <input type="text" value={formData.part} onChange={e => setFormData({...formData, part: e.target.value})} placeholder="例如：right knee (右側膝蓋)、腰椎..." className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
+                                <input type="text" value={formData.part} onChange={e => setFormData({...formData, part: e.target.value})} placeholder="例如：右側膝蓋半月板、腰椎滑脫..." className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
                               </div>
                             </div>
                             <div>
@@ -563,7 +562,7 @@ export default function SelfPayBookingPage() {
                               </div>
                             </div>
                             <div>
-                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">先前曾接受過哪些治療或放射檢查嗎？</label>
+                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">先前曾接受過哪些治療或檢查嗎？</label>
                               <div className="relative">
                                 <FaHistory className="absolute left-4 top-4 sm:top-4.5 text-slate-400 text-xs sm:text-sm" />
                                 <input type="text" value={formData.treatment} onChange={e => setFormData({...formData, treatment: e.target.value})} placeholder="例如：照過X光、曾做過復健、藥物治療、皆無..." className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
@@ -572,7 +571,7 @@ export default function SelfPayBookingPage() {
                           </div>
 
                           <button type="submit" disabled={isSubmitLoading} className="w-full py-4 sm:py-5 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 font-black text-base md:text-lg tracking-widest shadow-lg transition-all disabled:bg-slate-300 text-white">
-                            {isSubmitLoading ? "雲端資料庫確認鎖定中..." : "確認送出特約自費掛號"}
+                            {isSubmitLoading ? "努力預約中..." : "確認送出特約門診掛號資訊"}
                           </button>
                         </form>
                       )}
@@ -580,36 +579,36 @@ export default function SelfPayBookingPage() {
                     </div>
                   ) : (
                     <div className="flex flex-col items-center justify-center text-center p-8 sm:p-12 border border-dashed border-slate-300 rounded-3xl bg-slate-50/60 min-h-[350px] animate-fadeIn">
-                      <div className="p-4 bg-amber-50 text-amber-600 border border-amber-100 rounded-2xl mb-4 text-2xl sm:text-3xl">
-                        <FaLock />
-                      </div>
-                      <h3 className="font-black text-slate-800 text-base sm:text-lg mb-2">特約掛號系統安全鎖定</h3>
-                      <p className="text-xs sm:text-sm text-slate-500 max-w-xs leading-relaxed mb-6">
-                        本診所自費門診採實名預約制。請先加入官方LINE好友並點選<span className="text-[#06C755] font-black">【一鍵安全綁定登入】</span>完成驗證，系統將即時為您解鎖看診日曆與預約時段。
-                      </p>
+                      <h3 className="font-black text-slate-800 text-base sm:text-lg mb-2">特約門診預約</h3>
+<div className="text-sm sm:text-base text-slate-500 max-w-md leading-loose space-y-2 mb-6">
+  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 請先於下方登錄LINE帳號開始掛號。</p>
+  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 選擇可點擊之日期，查看開放時段。</p>
+  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 客滿或無排診之日期將反灰無法點選。</p>
+  <p className="flex items-start gap-1.5"><span className="text-emerald-600 font-bold">✦</span> 加入官方帳號將於看診前一天提醒</p>
+</div>
 
-                      <div className="w-full max-w-xs space-y-3">
-                        {/* 🚀 已優化處：步驟 1 顏色加深改為厚實高飽和深綠底白字（bg-emerald-600 text-white），解決淺色看不清問題 */}
-                        <a 
-                          href="https://line.me/R/ti/p/@584yxibc" 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-black py-3.5 px-5 rounded-xl transition shadow-md w-full"
-                        >
-                          <FaLine className="text-white text-lg sm:text-xl shrink-0 filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)]" />
-                          <span>步驟 1 ：先點我加入官方 LINE 好友</span>
-                        </a>
-                        
-                        {/* 🚀 已優化處：步驟 2 調校成標準 LINE 正統經典深綠（bg-[#06C755]），並附加 Icon 陰影，確保白色 Icon 100% 顯眼不吃字 */}
-                        <button 
-                          type="button" 
-                          onClick={handleLineAuthRedirect} 
-                          className="flex items-center justify-center gap-2 bg-[#06C755] hover:bg-[#05a647] text-white text-xs sm:text-sm font-black py-3.5 px-5 rounded-xl transition shadow-md w-full"
-                        >
-                          <FaLine className="text-white text-lg sm:text-xl shrink-0 filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]" />
-                          <span>步驟 2 ：一鍵安全綁定登入</span>
-                        </button>
-                      </div>
+<div className="w-full max-w-md space-y-3">
+  {/* 🚀 已優化處：步驟 1 顏色加深改為厚實高飽和深綠底白字（bg-emerald-600 text-white），解決淺色看不清問題 */}
+  <a 
+    href="https://line.me/R/ti/p/@584yxibc" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm sm:text-base font-black py-3.5 px-5 rounded-xl transition shadow-md w-full"
+  >
+    <FaLine className="text-white text-lg sm:text-xl shrink-0 filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)]" />
+    <span>步驟 1 ：加入官方 LINE 好友</span>
+  </a>
+  
+  {/* 🚀 已優化處：步驟 2 調校成標準 LINE 正統經典深綠（bg-[#06C755]），並附加 Icon 陰影，確保白色 Icon 100% 顯眼不吃字 */}
+  <button 
+    type="button" 
+    onClick={handleLineAuthRedirect} 
+    className="flex items-center justify-center gap-2 bg-[#06C755] hover:bg-[#05a647] text-white text-sm sm:text-base font-black py-3.5 px-5 rounded-xl transition shadow-md w-full"
+  >
+    <FaLine className="text-white text-lg sm:text-xl shrink-0 filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]" />
+    <span>步驟 2 ：Line帳號綁定</span>
+  </button>
+</div>
                     </div>
                   )}
 
@@ -618,7 +617,7 @@ export default function SelfPayBookingPage() {
 
               {activeTab === 'query' && (
                 <div className="space-y-5 sm:space-y-6">
-                  <h3 className="text-lg sm:text-xl font-black text-slate-900">掛號明細自主查詢</h3>
+                  <h3 className="text-lg sm:text-xl font-black text-slate-900">掛號記錄查詢</h3>
                   
                   <div className="p-4 sm:p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-4">
                     {lineUserId ? (
@@ -626,7 +625,7 @@ export default function SelfPayBookingPage() {
                         <div className="flex items-center gap-2">
                           <span className="text-sm sm:text-base font-bold text-slate-700 flex items-center gap-2">
                             {linePictureUrl && <img src={linePictureUrl} alt="" className="w-6 h-6 rounded-full inline" />}
-                            已關聯成員 [ {lineDisplayName || 'LINE用戶'} ] 
+                            已綁定Line帳號 [ {lineDisplayName || 'LINE用戶'} ] 
                           </span>
                           <button type="button" onClick={handleUnbindLine} className="text-xs text-rose-500 hover:text-rose-600 underline font-bold px-2 whitespace-nowrap">
                             解除綁定
@@ -638,7 +637,7 @@ export default function SelfPayBookingPage() {
                       </div>
                     ) : (
                       <div>
-                        <label className="block text-sm sm:text-base font-black text-slate-600 mb-2.5">請輸入掛號填寫的手機號碼進行檢索：</label>
+                        <label className="block text-sm sm:text-base font-black text-slate-600 mb-2.5">請輸入掛號填寫的手機號碼進行查詢：</label>
                         <div className="flex gap-2 sm:gap-3">
                           <input type="tel" value={queryPhone} onChange={e => setQueryPhone(e.target.value)} placeholder="例如：0912345678" className="flex-1 p-3 sm:p-4 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 text-sm sm:text-base text-slate-800 font-bold placeholder-slate-400" />
                           <button onClick={() => runQuery('phone', queryPhone)} className="bg-slate-800 hover:bg-slate-700 text-white font-black px-4 sm:px-6 rounded-xl text-sm sm:text-base transition flex items-center gap-1.5 whitespace-nowrap"><FaSearch/> 搜尋</button>
@@ -650,7 +649,7 @@ export default function SelfPayBookingPage() {
                   <div className="space-y-3 sm:space-y-4">
                     <h4 className="text-xs sm:text-sm font-black text-slate-400 uppercase tracking-widest">您的特約預約列表</h4>
                     {isLoading ? (
-                      <div className="text-center text-slate-500 py-6 font-bold text-sm">正在連線調取雲端帳簿...</div>
+                      <div className="text-center text-slate-500 py-6 font-bold text-sm">正在連線努力查詢預約資訊查詢...</div>
                     ) : queryResults.length > 0 ? (
                       <div className="space-y-3">
                         {queryResults.map((item) => (
@@ -667,7 +666,7 @@ export default function SelfPayBookingPage() {
                         ))}
                       </div>
                     ) : (
-                      <div className="text-center text-slate-400 py-10 sm:py-12 border border-dashed border-slate-300 rounded-xl text-sm sm:text-base font-bold bg-slate-50">此範圍內無未來的特約掛號紀錄。</div>
+                      <div className="text-center text-slate-400 py-10 sm:py-12 border border-dashed border-slate-300 rounded-xl text-sm sm:text-base font-bold bg-slate-50">目前無未來的特約掛號紀錄。</div>
                     )}
                   </div>
                 </div>
