@@ -437,6 +437,7 @@ export default function Home() {
                                 <li className="flex items-start"><span className="text-cyan-500 mr-2">▹</span>國立台灣大學醫學系</li>
                                 <li className="flex items-start"><span className="text-cyan-500 mr-2">▹</span>雙專科醫師 (復健專科 + 骨鬆專科)</li>
                                 <li className="flex items-start"><span className="text-cyan-500 mr-2">▹</span>ACE-CPT 美國運動學會國際私人教練認證</li>
+                                <li className="flex items-start"><span className="text-cyan-500 mr-2">▹</span>中華民國網球協會教練認證</li>
                              </ul>
                           </div>
                           <div>

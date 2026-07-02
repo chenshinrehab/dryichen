@@ -335,6 +335,13 @@ export const sportsInjuriesData = [
         description: '體外震波治療能量要開多大才有效？是不是越痛越好？本文從運動醫學角度深度解析震波能量分級與治療機制，說明為何治療時疼痛指數需維持在VAS 4至6分，並破解震波治療後吃消炎藥與施打麻醉的常見迷思。',
         image: '/images/news/article/eswt-energy-level.webp',
       },
+
+                                                      {
+        slug: 'eswt-painkiller-anti-inflammatory-guide',
+        title: '打完體外震波可以吃止痛消炎藥嗎？原則一次說清楚',
+        description: '體外震波打完到底能不能吃止痛消炎藥？許多人以為「震波只是治療部位不一樣，用藥規則應該也不一樣」，但實證醫學告訴我們，無論是足底筋膜炎的修復型震波，還是打碎鈣化的破壞型震波，背後啟動的都是同一套發炎-修復機制，因此「避免吃消炎藥」這條原則幾乎是共通的。本文以醫學文獻為基礎，拆解震波治療的作用機轉、止痛藥的選擇邏輯，以及不同治療目的下的用藥差異。',
+        image: '/images/news/article/eswt-nsaid-guide.webp',
+      },
                                           {
         slug: 'pmos-obesity-mounjaro',
         title: '正名後的多內分泌代謝卵巢症候群：肥胖與猛健樂的角色',
@@ -419,6 +426,12 @@ export const sportsInjuriesData = [
         title: '垂直律動椅真的有效嗎？醫學解析：腸胃、心肺、骨骼好處',
         description: '全身垂直律動（WBVV）源自太空醫學，被證實能提升骨密度、改善微血管循環並促進腸胃蠕動。本文從復健與醫學觀點，深度剖析垂直律動對三大系統的益處，並揭露為何「水平或不規則震動」反而會產生剪力，對脊椎與關節造成不可逆的傷害。同時詳列適應症與絕對禁忌症。',
         image: '/images/news/article/wbvv-cover.webp',
+      },
+                        {
+        slug: 'early-screen-time-analysis',
+        title: '兒童早期接觸3C產品全解析：專注力、手眼協調，優缺點一次看懂',
+        description: '深度剖析學齡前幼兒早期接觸手機、平板等3C產品的優點與風險。實證研究揭露螢幕時間如何影響專注力發展、語言能力與精細動作，同時說明互動式應用程式可能帶來的手眼協調訓練效果，並提供國際機構建議的科學使用策略。',
+        image: '/images/news/article/early-screen-time-analysis.webp',
       },
 
 
@@ -522,6 +535,12 @@ export const sportsInjuriesData = [
         title: '生長激素真能讓孩子長高？身高不足的療效、副作用與費用解析',
         description: '沒有生長激素缺乏的孩子，打了到底有沒有用？本文從運動與兒童醫學實證出發，深入解析「特發性矮小（ISS）」施打生長激素的真實效果。數據顯示最終成人身高平均可增益 3.5 至 7.5 公分，但個體差異極大。同步揭露台灣自費市場每公分高達 20 萬至 60 萬元的沉重成本，以及顱內壓升高、股骨頭滑脫等潛在副作用風險。',
         image: '/images/news/article/growth-hormone-treatment-analysis.webp',
+      },
+                  {
+        slug: 'hydration-weight-loss-guide',
+        title: '減重要喝多少水？飲料、咖啡、湯算嗎？純水比例要多少？',
+        description: '減重期間水分攝取學問大！飯前喝水真的能幫助瘦身嗎？咖啡、茶、牛奶、湯品算不算補水？純水應佔每日水分的多少比例？本文以科學實證解答減重族最常見的水分迷思，並提供實用的每日補水策略。',
+        image: '/images/news/article/hydration-weight-loss.webp',
       },
     ]
   },

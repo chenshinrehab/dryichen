@@ -216,7 +216,7 @@ export default function DoctorsPage() {
         'name': '為什麼運動傷害要找林醫師？',
         'acceptedAnswer': {
           '@type': 'Answer',
-          'text': '林醫師本身熱愛運動，擅長網球與健身，擁有健身教練執照及校隊經歷，亦成立了一支業餘籃球隊。對於各種運動傷害有深刻的親身經歷，加上門診中有大量滑雪、攀岩及各類賽事受傷的運動族群，因此能以專業且感同身受的角度提供最適合的治療。'
+          'text': '林醫師本身熱愛運動，擅長網球與健身，擁有健身教練執照、網球教練執照及校隊經歷，亦成立了一支業餘籃球隊。對於各種運動傷害有深刻的親身經歷，加上門診中有大量滑雪、攀岩及各類賽事受傷的運動族群，因此能以專業且感同身受的角度提供最適合的治療。'
         }
       },
       {
@@ -295,7 +295,7 @@ export default function DoctorsPage() {
                                 林羿辰醫師畢業於<strong className="text-cyan-400 font-normal">國立台灣大學醫學系</strong>，曾任職於<strong className="text-cyan-400 font-normal">馬偕紀念醫院</strong>。
                              </p>
                              <p>
-                                具備<strong className="text-cyan-400 font-normal">復健專科</strong>與<strong className="text-cyan-400 font-normal">骨質疏鬆專科</strong>雙重專科，並持有<strong className="text-cyan-400 font-normal">美國運動學會 (ACE-CPT)</strong> 國際私人教練證照。
+                                具備<strong className="text-cyan-400 font-normal">復健專科</strong>與<strong className="text-cyan-400 font-normal">骨質疏鬆專科</strong>雙重專科，並持有<strong className="text-cyan-400 font-normal">美國運動學會 (ACE-CPT)</strong> 國際私人教練證照及<strong className="text-cyan-400 font-normal">中華民國網球協會教練</strong> 證照。
                              </p>
                              <p>
                                 專長於<strong>超音波導引注射</strong>、<strong>增生療法</strong>、各類<strong>運動傷害</strong>及<strong>兒童生長發育</strong>評估。
@@ -325,6 +325,7 @@ export default function DoctorsPage() {
                                       <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>台大醫學系畢業</li>
                                       <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>復健科專科醫師</li>
                                       <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>ACE-CPT 美國私人教練</li>
+                                      <li className="flex items-start"><span className="text-cyan-500 mr-2 mt-1 text-xs">●</span>中華民國網球協會教練</li>
                                     </ul>
                                 </div>
 
@@ -434,7 +435,7 @@ export default function DoctorsPage() {
                   <div className="bg-slate-800/40 border border-slate-700 rounded-xl p-6">
                       <h3 className="text-xl font-bold text-cyan-300 mb-3">為什麼運動傷害要找林醫師？</h3>
                       <p className="text-slate-300 leading-relaxed">
-                          林醫師本身熱愛運動，擅長網球與健身，擁有健身教練執照及校隊經歷，亦成立了一支業餘籃球隊。對於各種運動傷害有深刻的親身經歷，加上門診中有大量滑雪、攀岩及各類賽事受傷的運動族群，因此能以專業且感同身受的角度提供最適合的治療。
+                          林醫師本身熱愛運動，擅長網球與健身，擁有健身及網球教練執照及校隊經歷，亦成立了一支業餘籃球隊。對於各種運動傷害有深刻的親身經歷，加上門診中有大量滑雪、攀岩及各類賽事受傷的運動族群，因此能以專業且感同身受的角度提供最適合的治療。
                       </p>
                   </div>
                   {/* Q3 */}
