@@ -97,17 +97,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   )
 
-  // 6. 減重與骨齡項目
-  // ✨ 修正優化：過濾掉在 weightLoss 資料庫中用於運動傷害重複整理的非標準網址文章，
-  // 僅將獨立的、不與 about/news 重複的減重骨齡主軸頁面放入地圖中，完美解決 Orphan page 吹哨問題
+// 6. 減重與骨齡項目 (✨ 採用方法 A 強化過濾)
   const weightRoutes = weightLossPrograms
-    .filter((p) => !['pain-medication-combination-safety', 'sports-injuries'].includes(p.slug)) // 排除會跟最新消息重複的文章路由
     .map((p) => ({
       url: `${SITE_URL}/weight-bone/${p.slug}`,
       lastModified: safeDate(p.lastModified),
       changeFrequency: 'monthly' as const,
       priority: 0.9,
     }))
+    // ✨ 核心修正：精確過濾掉 /weight-bone/sports-injuries/ 後面的所有子資料網址，以及其他重複的文章分類路徑
+    .filter((route) => {
+      const is分身網址 = 
+        route.url.includes('/weight-bone/sports-injuries/') || 
+        route.url.includes('/nutrition/') || 
+        route.url.includes('/diary/') || 
+        route.url.includes('/problem/') || 
+        route.url.includes('/medical-updates/');
+      return !is分身網址;
+    })
 
   // 7. 診所設備 (Facilities)
   const facilityRoutes = facilitiesData.map((f) => ({
