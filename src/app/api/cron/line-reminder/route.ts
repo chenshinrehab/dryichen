@@ -47,7 +47,7 @@ export async function GET(request: Request) {
         to: apt.line_user_id, 
         messages: [{
           type: "text",
-          text: `🏥 【宸新復健科診所】看診提醒\n\n${apt.name} 您好，提醒您明天 (${apt.date}) ${apt.time_slot} 有預約自費門診特約。\n\n如需變更或查詢，請至預約系統操作，謝謝您！`
+          text: `🏥 【宸新復健科診所】看診提醒\n\n${apt.name} 您好，提醒您明天 (${apt.date}) ${apt.time_slot} 有預約林羿辰醫師特約門診。\n\n如需變更或查詢，請至預約系統操作，謝謝您！`
         }]
       };
 

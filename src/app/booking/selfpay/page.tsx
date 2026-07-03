@@ -391,7 +391,7 @@ export default function SelfPayBookingPage() {
         nav a[href*="booking"]:hover, header a[href*="booking"]:hover, .bg-pink-500:hover, [class*="pink"]:hover { background: #bae6fd !important; background-color: #bae6fd !important; }
       `}} />
 
-      <div className="flex-grow pt-4 pb-16 px-3 sm:px-4 bg-slate-50 min-h-screen text-slate-800 relative z-10 block">
+      <div className="flex-grow pt--4 pb-16 px-3 sm:px-4 bg-slate-50 min-h-screen text-slate-800 relative z-10 block">
         <div className="max-w-6xl mx-auto space-y-5">
           
 <div className="flex justify-center p-1.5 bg-white rounded-2xl border border-slate-200 max-w-lg mx-auto shadow-sm">
@@ -401,7 +401,8 @@ export default function SelfPayBookingPage() {
 
           <div className="bg-white border border-slate-200 rounded-[1.5rem] sm:rounded-[2.5rem] overflow-hidden shadow-xl flex flex-col md:flex-row">
             
-            <div className="md:w-2/5 bg-slate-100/60 p-6 sm:p-10 flex flex-col items-center border-b md:border-b-0 md:border-r border-slate-200">
+            {/* 左側醫師資訊欄：在查詢預約頁面且為手機版時，整欄隱藏 (hidden md:flex) */}
+            <div className={`md:w-2/5 bg-slate-100/60 p-6 sm:p-10 flex flex-col items-center border-b md:border-b-0 md:border-r border-slate-200 ${activeTab === 'query' ? 'hidden md:flex' : 'flex'}`}>
               <div className="w-full max-w-[220px] sm:max-w-[300px] rounded-2xl border-4 border-white shadow-xl overflow-hidden mb-5 sm:mb-8 bg-white aspect-[4/5] relative">
                 <Link href="/about/doctors" className="block h-full w-full cursor-pointer">
                   <Image 
@@ -417,23 +418,23 @@ export default function SelfPayBookingPage() {
                 </Link>
               </div>
               <div className="text-center w-full">
-             <h1 className="text-3xl sm:text-4xl font-black text-slate-900 mb-2">林羿辰 醫師</h1>
-<p className="text-cyan-600 text-base sm:text-lg font-black tracking-widest mb-4 sm:mb-6">特約門診預約資訊</p>
+                <h1 className="text-3xl sm:text-4xl font-black text-slate-900 mb-2">林羿辰 醫師</h1>
+                <p className="text-cyan-600 text-base sm:text-lg font-black tracking-widest mb-4 sm:mb-6">特約門診預約資訊</p>
 
-<div className="text-left bg-white border border-slate-200 p-4 sm:p-5 rounded-2xl space-y-2.5 text-sm sm:text-base text-slate-600 leading-relaxed shadow-sm">
-  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 採全預約制，免除久候且更完整的評估治療</p>
-  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 請務必提前十分鐘報到，每次25分鐘。</p>
-  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 健保身份：單次 1000 元</p>
-  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 非健保身份：單次 1500 元</p>
-</div>
+                <div className="text-left bg-white border border-slate-200 p-4 sm:p-5 rounded-2xl space-y-2.5 text-sm sm:text-base text-slate-600 leading-relaxed shadow-sm">
+                  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 採全預約制，免除久候且更完整的評估治療</p>
+                  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 請務必提前十分鐘報到，每次25分鐘。</p>
+                  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 健保身份：單次 1000 元</p>
+                  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 非健保身份：單次 1500 元</p>
+                </div>
               </div>
             </div>
 
-            <div className="md:w-3/5 p-5 sm:p-8 md:p-14 text-sm sm:text-base md:text-lg">
+            {/* 右側主要內容欄：當左側隱藏時，手機版自動撐滿滿版 (w-full md:w-3/5) */}
+            <div className={`p-5 sm:p-8 md:p-14 text-sm sm:text-base md:text-lg ${activeTab === 'query' ? 'w-full md:w-3/5' : 'md:w-3/5'}`}>
               
               {activeTab === 'booking' && (
                 <div className="space-y-6 sm:space-y-8">
-                  
                   
                   {lineUserId ? (
                     <div className="space-y-6 sm:space-y-8 animate-fadeIn">
@@ -580,35 +581,35 @@ export default function SelfPayBookingPage() {
                   ) : (
                     <div className="flex flex-col items-center justify-center text-center p-8 sm:p-12 border border-dashed border-slate-300 rounded-3xl bg-slate-50/60 min-h-[350px] animate-fadeIn">
                       <h3 className="font-black text-slate-800 text-base sm:text-lg mb-2">特約門診預約</h3>
-<div className="text-sm sm:text-base text-slate-500 max-w-md leading-loose space-y-2 mb-6">
-  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 請先於下方登錄LINE帳號開始掛號。</p>
-  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 選擇可點擊之日期，查看開放時段。</p>
-  <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 客滿或無排診之日期將反灰無法點選。</p>
-  <p className="flex items-start gap-1.5"><span className="text-emerald-600 font-bold">✦</span> 加入官方帳號將於看診前一天提醒</p>
-</div>
+                      <div className="text-sm sm:text-base text-slate-500 max-w-md leading-loose space-y-2 mb-6">
+                        <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 請先於下方登錄LINE帳號開始掛號。</p>
+                        <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 選擇可點擊之日期，查看開放時段。</p>
+                        <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 客滿或無排診之日期將反灰無法點選。</p>
+                        <p className="flex items-start gap-1.5"><span className="text-emerald-600 font-bold">✦</span> 加入官方帳號將於看診前一天提醒</p>
+                      </div>
 
-<div className="w-full max-w-md space-y-3">
-  {/* 🚀 已優化處：步驟 1 顏色加深改為厚實高飽和深綠底白字（bg-emerald-600 text-white），解決淺色看不清問題 */}
-  <a 
-    href="https://line.me/R/ti/p/@584yxibc" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    className="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm sm:text-base font-black py-3.5 px-5 rounded-xl transition shadow-md w-full"
-  >
-    <FaLine className="text-white text-lg sm:text-xl shrink-0 filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)]" />
-    <span>步驟 1 ：加入官方 LINE 好友</span>
-  </a>
-  
-  {/* 🚀 已優化處：步驟 2 調校成標準 LINE 正統經典深綠（bg-[#06C755]），並附加 Icon 陰影，確保白色 Icon 100% 顯眼不吃字 */}
-  <button 
-    type="button" 
-    onClick={handleLineAuthRedirect} 
-    className="flex items-center justify-center gap-2 bg-[#06C755] hover:bg-[#05a647] text-white text-sm sm:text-base font-black py-3.5 px-5 rounded-xl transition shadow-md w-full"
-  >
-    <FaLine className="text-white text-lg sm:text-xl shrink-0 filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]" />
-    <span>步驟 2 ：Line帳號綁定</span>
-  </button>
-</div>
+                      <div className="w-full max-w-md space-y-3">
+                        {/* 🚀 已優化處：步驟 1 顏色加深改為厚實高飽和深綠底白字（bg-emerald-600 text-white），解決淺色看不清問題 */}
+                        <a 
+                          href="https://line.me/R/ti/p/@584yxibc" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm sm:text-base font-black py-3.5 px-5 rounded-xl transition shadow-md w-full"
+                        >
+                          <FaLine className="text-white text-lg sm:text-xl shrink-0 filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)]" />
+                          <span>步驟 1 ：加入官方 LINE 好友</span>
+                        </a>
+                        
+                        {/* 🚀 已優化處：步驟 2 開放成標準 LINE 正統經典深綠（bg-[#06C755]），並附加 Icon 陰影，確保白色 Icon 100% 顯眼不吃字 */}
+                        <button 
+                          type="button" 
+                          onClick={handleLineAuthRedirect} 
+                          className="flex items-center justify-center gap-2 bg-[#06C755] hover:bg-[#05a647] text-white text-sm sm:text-base font-black py-3.5 px-5 rounded-xl transition shadow-md w-full"
+                        >
+                          <FaLine className="text-white text-lg sm:text-xl shrink-0 filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]" />
+                          <span>步驟 2 ：Line帳號綁定</span>
+                        </button>
+                      </div>
                     </div>
                   )}
 

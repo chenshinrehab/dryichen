@@ -7,7 +7,7 @@ import ScrollAnimation from '@/components/ScrollAnimation'
 // ✨ 引入所需的 React Icons，確保掛號流程圖示穩定且極速載入
 import { 
   FaCalendarCheck, 
-  FaGlobe, 
+  FaGlobe, FaGem, 
   FaMousePointer, 
   FaLine, 
   FaApple, 
@@ -310,7 +310,7 @@ export default function BookingPage() {
             </div>
             
             <p className="text-slate-400 text-lg w-full max-w-2xl">
-                為了節省您寶貴的等待時間，建議多加利用<strong className="text-cyan-400 font-normal">網路掛號</strong>、手機 App 或 Line 官方帳號進行預約。
+                為了節省您寶貴的等待時間，建議多加利用<strong className="text-cyan-400 font-normal">網路掛號</strong>、App 或 Line 帳號進行預約。
             </p>
 
             <div className="mt-0">
@@ -319,38 +319,79 @@ export default function BookingPage() {
           </div>
 
           {/* 網路掛號區塊 (提升為 H2 以優化層級) */}
-          <div className="mb-10 w-full transform transition-all animate-on-scroll delay-100">
-             <div className="bg-gradient-to-br from-slate-800 to-slate-900 border border-cyan-500/50 rounded-2xl p-6 md:p-8 relative overflow-hidden shadow-[0_0_30px_rgba(34,211,238,0.15)] group hover:-translate-y-1 transition-all duration-300">
-                
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-70"></div>
-                
-                <div className="flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
-                   <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
-                      <div className="w-20 h-20 bg-cyan-500/10 rounded-full flex items-center justify-center shrink-0 border border-cyan-500/20 shadow-[0_0_15px_rgba(34,211,238,0.2)]">
-                         <FaGlobe size={32} className="text-cyan-400" />
-                      </div>
-                      <div>
-                         <h2 className="text-2xl font-bold text-white mb-2 flex items-center justify-center md:justify-start gap-3">
-                           網路掛號系統
-                         </h2>
-                         <p className="text-slate-400 text-lg">
-                           免安裝 App，直接點擊即可進行預約。
-                         </p>
-                      </div>
-                   </div>
+<div className="mb-10 w-full transform transition-all animate-on-scroll delay-100">
+   <div className="bg-gradient-to-br from-slate-800 to-slate-900 border border-cyan-500/30 rounded-2xl p-6 md:p-8 relative overflow-hidden shadow-[0_0_30px_rgba(34,211,238,0.1)] group hover:-translate-y-1 transition-all duration-300">
+      
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-70"></div>
+      
+      <div className="flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+         <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+            {/* 更換為日曆預約圖示 */}
+            <div className="w-20 h-20 bg-cyan-500/10 rounded-full flex items-center justify-center shrink-0 border border-cyan-500/20 shadow-[0_0_15px_rgba(34,211,238,0.2)]">
+               <FaCalendarCheck size={32} className="text-cyan-400" />
+            </div>
+            <div>
+               <h2 className="text-2xl font-bold text-white mb-2 flex items-center justify-center md:justify-start gap-3">
+                  網路掛號系統
+               </h2>
+               <p className="text-slate-400 text-lg leading-relaxed">
+                  健保門診，掛號費 <span className="text-cyan-400 font-semibold">250</span> 元，直接點擊即可進行預約。
+               </p>
+            </div>
+         </div>
 
-                   <a 
-                     href={webBookingUrl}
-                     target="_blank" 
-                     rel="noopener noreferrer"
-                     className="whitespace-nowrap px-8 py-4 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white text-lg rounded-full font-bold shadow-lg hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all flex items-center gap-2 group-hover:scale-105"
-                   >
-                     <FaMousePointer className="animate-pulse" /> 
-                     立即前往預約
-                   </a>
-                </div>
-             </div>
-          </div>
+         <a 
+            href={webBookingUrl}
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="whitespace-nowrap px-8 py-4 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white text-lg rounded-full font-bold shadow-lg hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all flex items-center gap-2 group-hover:scale-105"
+         >
+            <FaMousePointer className="animate-pulse" /> 
+            立即前往預約
+         </a>
+      </div>
+   </div>
+</div>
+
+{/* 2. 林羿辰醫師特別門診（升級為尊榮金/琥珀色風格） */}
+<div className="mb-10 w-full transform transition-all animate-on-scroll delay-200">
+   <div className="bg-gradient-to-br from-slate-900 via-slate-900 to-amber-950/40 border border-amber-500/40 rounded-2xl p-6 md:p-8 relative overflow-hidden shadow-[0_0_30px_rgba(245,158,11,0.15)] group hover:-translate-y-1 transition-all duration-300">
+      
+      {/* 頂部發光條改為琥珀金 */}
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-70"></div>
+      
+      <div className="flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+         <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+            {/* 更換為寶石/尊榮圖示，配金色外圈 */}
+            <div className="w-20 h-20 bg-amber-500/10 rounded-full flex items-center justify-center shrink-0 border border-amber-500/30 shadow-[0_0_15px_rgba(245,158,11,0.2)]">
+               <FaGem size={32} className="text-amber-400 animate-pulse" />
+            </div>
+            <div>
+               <h2 className="text-2xl font-bold text-amber-100 mb-2 flex items-center justify-center md:justify-start gap-3">
+                  林羿辰醫師 特別門診
+                  <span className="text-xs bg-amber-500/20 text-amber-400 px-2 py-1 rounded-md border border-amber-500/30 font-medium">特約制</span>
+               </h2>
+               <p className="text-slate-300 text-lg leading-relaxed">
+                  特色：<span className="text-amber-400 font-semibold">不須等候</span>（須提前預約），享有完整 <span className="text-amber-400 font-semibold">25 分鐘</span> 專屬門診時間。
+
+               </p>
+                              <p className="text-slate-400 text-lg leading-relaxed">
+                  掛號費 <span className="text-cyan-400 font-semibold">1000</span> 元。
+               </p>
+            </div>
+         </div>
+
+         {/* 按鈕同步改為金色/琥珀色漸層 */}
+<a 
+  href="/booking/selfpay" 
+  className="whitespace-nowrap px-8 py-4 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-white text-lg rounded-full font-bold shadow-lg hover:shadow-[0_0_20px_rgba(245,158,11,0.4)] transition-all flex items-center gap-2 group-hover:scale-105"
+>
+  <FaMousePointer className="animate-pulse" /> 
+  預約特約門診
+</a>
+      </div>
+   </div>
+</div>
 
 
           {/* APP 與 Line 列表 Grid */}

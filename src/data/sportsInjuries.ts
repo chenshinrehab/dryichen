@@ -433,6 +433,12 @@ export const sportsInjuriesData = [
         description: '深度剖析學齡前幼兒早期接觸手機、平板等3C產品的優點與風險。實證研究揭露螢幕時間如何影響專注力發展、語言能力與精細動作，同時說明互動式應用程式可能帶來的手眼協調訓練效果，並提供國際機構建議的科學使用策略。',
         image: '/images/news/article/early-screen-time-analysis.webp',
       },
+                              {
+        slug: 'rehab-ortho-topical-patches-guide',
+        title: '診所貼布、藥膏全解析：成分、用法、懷孕與過敏者能用嗎？',
+        description: '深度解析復健科、骨科常用的痠痛貼布與藥膏成分——非類固醇消炎止痛藥（NSAID）貼布、辣椒素、薄荷醇、樟腦、水楊酸甲酯與利多卡因。實證研究說明使用注意事項、皮膚過敏與光敏反應風險，以及懷孕期間能否使用、哪些部位應避免，提供民眾安全使用的完整指南。',
+        image: '/images/news/article/topical-patches-guide.webp',
+      },
 
 
 
