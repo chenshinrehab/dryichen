@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Metadata } from 'next';
+// import { Metadata } from 'next'; // 在 'use client' 中通常不直接 export metadata，但保留您的 import
 import JsonLd from '@/components/JsonLd';
 import ScrollAnimation from '@/components/ScrollAnimation';
 import Link from 'next/link';
@@ -26,6 +26,275 @@ import {
 } from "react-icons/fa";
 
 const LINE_CLIENT_ID = "2010496335";
+const SITE_URL = "https://dryichen.com.tw"; // 確保常數存在
+
+// --- Schema 資料更新 (強化 SEO/GEO：專攻新竹、預約制、自費復健) ---
+
+const videoSchema = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "宸新復健科診所環境與服務介紹 - 林羿辰院長｜新竹預約制自費復健推薦",
+  "description": "由台大復健專科林羿辰醫師創立，提供新竹民眾專業的 PRP增生療法、震波治療、兒童早療及專屬預約制自費復健門診服務。",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/asqbvbEukOM/maxresdefault.jpg"
+  ],
+  "uploadDate": "2026-01-25T08:00:00+08:00",
+  "duration": "PT1M30S", 
+  "contentUrl": "https://www.youtube.com/watch?v=asqbvbEukOM",
+  "embedUrl": "https://www.youtube.com/embed/asqbvbEukOM",
+  "keywords": "新竹復健科, 預約制門診, 自費復健, PRP注射, 震波治療, 林羿辰醫師",
+  "publisher": {
+    "@type": "Organization",
+    "name": "宸新復健科診所",
+    "logo": {
+      "@type": "ImageObject",
+      "url": `${SITE_URL}/images/logo.webp`,
+      "width": 600,
+      "height": 60
+    }
+  }
+};
+
+const medicalClinicSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'MedicalWebPage',
+  '@id': `${SITE_URL}/booking/selfpay#webpage`,
+  'url': `${SITE_URL}/booking/selfpay`,
+  'name': '新竹自費復健科推薦-預約制特約門診掛號｜林羿辰醫師｜宸新復健科診所',
+  'description': '新竹宸新復健科診所提供專屬預約制自費門診，由台大復健科專科林羿辰院長親自看診。提供高解析超音波導引PRP注射、震波治療、一對一運動治療等自費復健服務，免除久候，享受完整詳細的醫療評估。',
+  'datePublished': '2026-01-25T08:00:00+08:00',
+  'dateModified': '2026-04-23T16:00:00+08:00',
+  'publisher': {
+    '@type': 'Organization',
+    'name': '宸新復健科診所',
+    'logo': {
+      '@type': 'ImageObject',
+      'url': `${SITE_URL}/images/logo.webp`
+    }
+  },
+  'mainEntity': {
+    '@type': 'MedicalClinic',
+    '@id': `${SITE_URL}/#clinic`,
+    'name': '宸新復健科診所',
+    'alternateName': '林羿辰醫師自費復健診所',
+    'description': '新竹專屬預約制復健科，由林羿辰院長親自看診，提供PRP注射、震波治療、一對一運動治療等專業自費復健服務。',
+    'image': `${SITE_URL}/images/main/b.webp`,
+    'logo': `${SITE_URL}/images/logo.webp`,
+    'url': SITE_URL,
+    'telephone': '+886-3-564-7999',
+    'priceRange': '$$$', // 突顯自費與高品質門診定位
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': '光復路一段371號B1',
+      'addressLocality': '新竹市',
+      'addressRegion': '東區',
+      'postalCode': '300',
+      'addressCountry': 'TW',
+    },
+    'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': '24.7833314', 
+      'longitude': '121.0170937'
+    },
+    'sameAs': [
+      "https://www.facebook.com/DrYiChen", 
+      "https://www.instagram.com/dryichen/",
+      "https://www.threads.net/@dryichen",
+      "https://youtube.com/@dryichen"
+    ],
+    'openingHoursSpecification': [
+      { '@type': 'OpeningHoursSpecification', 'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], 'opens': '09:00', 'closes': '21:30' },
+      { '@type': 'OpeningHoursSpecification', 'dayOfWeek': 'Saturday', 'opens': '09:00', 'closes': '12:00' }
+    ],
+    'medicalSpecialty': [
+      'https://schema.org/Physiotherapy',  
+      'https://schema.org/Pediatric'
+    ],
+    'knowsAbout': [
+      'Orthopaedic', 
+      'Sports Medicine', 
+      'Pain Management',
+      'Physical Medicine and Rehabilitation',
+      'Prolotherapy', // 增生療法
+      'Regenerative Medicine' // 再生醫學(自費核心)
+    ],
+    // 💡 新增 MakesOffer：精確鎖定「預約制」與「自費門診」的服務架構
+    'makesOffer': [
+      {
+        '@type': 'Offer',
+        'name': '特約自費門診 (健保身分)',
+        'description': '專屬預約制復健科門診，每次25分鐘完整評估，包含詳細高解析度超音波檢查與精準治療規劃，免除現場排隊久候。',
+        'price': '1000',
+        'priceCurrency': 'TWD',
+        'availability': 'https://schema.org/InStock'
+      },
+      {
+        '@type': 'Offer',
+        'name': '特約自費門診 (非健保身分)',
+        'description': '針對無台灣健保身分之外籍或自費病患提供之專屬預約制門診，含完整醫療評估與諮詢。',
+        'price': '1500',
+        'priceCurrency': 'TWD',
+        'availability': 'https://schema.org/InStock'
+      }
+    ],
+    'employee': {
+      '@type': ['Person', 'Physician'], 
+      'name': '林羿辰',
+      'jobTitle': '院長',
+      'image': `${SITE_URL}/images/main/a.webp`,
+      'gender': 'http://schema.org/Male',
+      'url': `${SITE_URL}/about/doctors`,
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': '光復路一段371號B1',
+        'addressLocality': '新竹市',
+        'addressRegion': '東區',
+        'postalCode': '300',
+        'addressCountry': 'TW',
+      },
+      'alumniOf': { 
+        '@type': 'EducationalOrganization', 
+        'name': '國立台灣大學醫學系' 
+      },
+      'medicalSpecialty': [
+        'https://schema.org/Physiotherapy',  
+        'https://schema.org/Pediatric'
+      ],
+      'knowsAbout': [
+        'Physical Medicine and Rehabilitation',
+        'Sports Medicine',
+        'Prolotherapy',
+        'PRP Injection'
+      ],
+      'sameAs': [
+        'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
+        'https://www.pmr.org.tw/associator/associator-all.asp?w/',
+        'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a='
+      ],
+      'hasCredential': [
+        {
+          '@type': 'EducationalOccupationalCredential',
+          'name': '醫事人員執業資格',
+          'credentialCategory': '醫師證書',
+          'url': 'https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=2bJQOvvE5EX3U6eK7eSvhw%253D%253D',
+          'recognizedBy': {
+            '@type': 'Organization',
+            'name': '中華民國衛生福利部'
+          }
+        },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          'name': '復健科專科醫師資格',
+          'credentialCategory': '復健科專科醫師證書',
+          'url': 'https://www.pmr.org.tw/associator/associator-all.asp?w/',
+          'recognizedBy': {
+            '@type': 'Organization',
+            'name': '台灣復健醫學會'
+          }
+        },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          'name': '骨質疏鬆症學會專科醫師資格',
+          'credentialCategory': '骨質疏鬆症學會專科醫師證書',
+          'url': 'https://www.toa1997.org.tw/orthopedist/?n=%E6%9E%97%E7%BE%BF%E8%BE%B0&h=&c=&a=',
+          'recognizedBy': {
+            '@type': 'Organization',
+            'name': '中華民國骨質疏鬆症學會'
+          }
+        }
+      ]
+    },
+    'hasMap': 'https://www.google.com/maps?cid=YOUR_CID_HERE', 
+    'areaServed': [
+      { '@type': 'City', 'name': '新竹市' },
+      { '@type': 'Place', 'name': '新竹科學園區' },
+      {
+        '@type': 'Place',
+        'name': '關埔重劃區',
+        'geo': {
+            '@type': 'GeoCircle',
+            'geoMidpoint': {
+                '@type': 'GeoCoordinates',
+                'latitude': '24.7833314',
+                'longitude': '121.0170937'
+            },
+            'geoRadius': '5000'
+        }
+      },
+      { '@type': 'City', 'name': '竹北市' },
+      { '@type': 'AdministrativeArea', 'name': '新竹縣' }
+    ],
+    'aggregateRating': {
+      '@type': 'AggregateRating',
+      'ratingValue': '4.6',
+      'reviewCount': '706',
+      'bestRating': '5',
+      'worstRating': '1'
+    },
+    'potentialAction': {
+      '@type': 'ReserveAction',
+      'target': {
+        '@type': 'EntryPoint',
+        'urlTemplate': 'https://reg.forcestar.com.tw/appointment/7/reserve',
+        'inLanguage': 'zh-TW',
+        'actionPlatform': [
+          'http://schema.org/DesktopWebPlatform',
+          'http://schema.org/MobileWebPlatform',
+          'http://schema.org/IOSPlatform',
+          'http://schema.org/AndroidPlatform'
+        ]
+      },
+      'result': {
+        '@type': 'Reservation',
+        'name': '特約自費門診網路掛號'
+      }
+    }
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+  {
+    "@type": "Question",
+    "name": "新竹宸新復健科診所的「特約自費門診」與一般健保門診有何不同？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "本診所的特約自費門診採「全預約制」，由林羿辰院長親自進行每次 25 分鐘的完整評估與看診。免除一般健保門診的長時間排隊候診，並提供更深度的超音波檢查、PRP增生療法、震波治療及個人化運動治療建議，專為需要高隱私與精緻醫療服務的新竹民眾設計。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "如何預約林羿辰醫師的自費復健門診？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "您可以透過本網頁的線上預約掛號系統，完成 LINE 帳號綁定後，即可直接查看並選擇開放的專屬時段進行預約。因特約自費門診時段有限，建議提早預約。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "請問宸新復健科診所好停車嗎？有無障礙設施嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "有的，宸新復健科診所備有專屬平面停車位供看診民眾使用，解決您在新竹市區找車位的困擾。此外，診所全區設有完善的無障礙空間，無論是行動不便的長輩或使用輪椅的患者，都能輕鬆進出就診。"
+    }
+  }, {
+    "@type": "Question",
+    "name": "林羿辰醫師的治療有什麼特色？什麼是「運動教練醫師」？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "林羿辰院長同時擁有復健專科與骨鬆專科雙執照，並考取美國 ACE-CPT 私人教練證照。治療特色是「醫學結合訓練」，除了使用高解析超音波導引進行 PRP 增生療法或震波治療外，更會指導正確發力模式，從根源預防運動傷害復發。"
+    }
+  }, {
+    "@type": "Question",
+    "name": "看診需要預約嗎？可以現場掛號嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "為了節省您的寶貴時間並享有高品質看診，強烈建議使用網路預約掛號我們的自費門診。一般門診雖接受現場掛號，但預約民眾享有優先看診權益。您可以透過官網預約按鈕或官方 LINE 完成掛號。"
+    }
+  }]
+};
 
 export default function SelfPayBookingPage() {
   const [activeTab, setActiveTab] = useState<'booking' | 'query'>('booking');
@@ -371,11 +640,8 @@ export default function SelfPayBookingPage() {
 
   return (
     <>
-      <JsonLd data={{
-        '@context': 'https://schema.org', '@type': 'MedicalWebPage',
-        'name': '特約自費診預約掛號系統 | 林羿辰醫師',
-        'provider': { '@type': ['Person', 'Physician'], 'name': '林羿辰 醫師', 'jobTitle': '院長' }
-      }} />
+      {/* 注入強化版 Schema 至頁面，供搜尋引擎建立預約制、自費、新竹地點及 FAQ 的複合摘要 */}
+      <JsonLd data={[medicalClinicSchema, faqSchema, videoSchema]} />
       <ScrollAnimation />
 
       <style dangerouslySetInnerHTML={{__html: `
