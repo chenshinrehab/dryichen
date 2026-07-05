@@ -439,6 +439,18 @@ export const sportsInjuriesData = [
         description: '深度解析復健科、骨科常用的痠痛貼布與藥膏成分——非類固醇消炎止痛藥（NSAID）貼布、辣椒素、薄荷醇、樟腦、水楊酸甲酯與利多卡因。實證研究說明使用注意事項、皮膚過敏與光敏反應風險，以及懷孕期間能否使用、哪些部位應避免，提供民眾安全使用的完整指南。',
         image: '/images/news/article/topical-patches-guide.webp',
       },
+                                    {
+        slug: 'pregnancy-breastfeeding-pain-treatment',
+        title: '懷孕、哺乳期間腰痠背痛怎麼辦？治療用藥全解析',
+        description: '懷孕與哺乳期間，腰痛、肩頸痛、腕隧道症候群非常常見，但許多媽媽因為擔心藥物影響胎兒或寶寶而隱忍不治療。本文整理實證醫學文獻，說明哪些止痛藥、貼布藥膏在孕期與哺乳期相對安全，復健治療與類固醇、增生注射等介入性治療的適用時機與注意事項，幫助媽媽們安心就醫。',
+        image: '/images/news/article/pregnancy-pain-treatment.webp',
+      },
+                                          {
+        slug: 'rehab-ortho-medication-guide',
+        title: '疼痛藥物用藥指南：其他藥物、中藥、食物、菸酒要注意什麼？',
+        description: '完整解析復健科與骨科常開的消炎止痛藥、肌肉鬆弛劑與其他藥物的交互作用，包含中西藥合用間隔、飲食禁忌、抽菸喝酒對骨骼與肌腱癒合的影響，以及忘記吃藥怎麼辦，讓每位患者都能安全、有效地完成療程。',
+        image: '/images/news/article/rehab-medication.webp',
+      },
 
 
 
@@ -864,6 +876,13 @@ export const sportsInjuriesData = [
         title: '跳得更高！影響垂直起跳高度的關鍵肌肉與科學訓練法',
         description: '從運動醫學與生物力學角度分析，垂直起跳高度取決於下肢關節的協同發力與「牽張縮短週期」效率。研究指出，膝關節伸肌（股四頭肌）與髖關節伸肌（臀大肌）在起跳過程中貢獻了最大的做功。然而，若要突破瓶頸、有效增加起跳高度，針對「臀大肌」與後側動力鏈進行大重量阻力與增強式訓練，投資報酬率最高。本文將深入剖析起跳的科學原理，並提供實證有效的訓練與預防跳躍膝策略。',
         image: '/images/news/article/vertical-jump-biomechanics.webp',
+
+      },
+                                {
+        slug: 'sex-and-athletic-performance',
+        title: '性行為影響運動表現？從奧運保險套談起，頻率建議與身心益處',
+        description: '從奧運選手村大量發放保險套談起，深入探討性行為對運動表現的影響。實證研究揭露賽前性行為並不會削弱體能，並提供科學建議的適當頻率，同時說明規律性行為對心血管、免疫系統、睡眠及心理健康的多重益處。',
+        image: '/images/news/article/sex-and-athletic-performance.webp',
 
       },
 
