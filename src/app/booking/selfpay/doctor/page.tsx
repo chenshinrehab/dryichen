@@ -145,6 +145,39 @@ export default function DoctorAdminPage() {
     }
   };
 
+  // 🚀 新增：取消單一病患預約，並精準對接後端 POST 分流機制
+  const handleCancelAppointment = async (appointment: any, idx: number) => {
+    const inputPass = prompt(`⚠️ 確定要取消【${appointment.name}】的這筆預約嗎？\n請輸入授權金鑰密碼以確認：`);
+    if (inputPass === null) return; // 使用者按取消
+    
+    if (inputPass !== '7999') {
+      alert("❌ 安全金鑰錯誤，無法取消預約！");
+      return;
+    }
+
+    try {
+      const response = await fetch('/api/reserve', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+          action: 'cancelAppointment',
+          id: appointment.id
+        })
+      });
+      const res = await response.json();
+      if (res.success || response.ok) {
+        alert('🎉 已成功取消該病患之預約，該時段已重新釋出。');
+        // 關閉目前展開的欄位並重新讀取最新名單
+        setExpandedRows(prev => ({ ...prev, [idx]: false }));
+        fetchAppointments();
+      } else {
+        alert('取消失敗：' + (res.error || '後端異常'));
+      }
+    } catch (err) {
+      alert('網路或連線失敗，請稍後再試。');
+    }
+  };
+
   const now = new Date();
   const offset = now.getTimezoneOffset() * 60000;
   const todayStr = (new Date(now.getTime() - offset)).toISOString().split('T')[0];
@@ -383,6 +416,18 @@ export default function DoctorAdminPage() {
                                       <span className="font-black text-slate-400 block mb-1 text-xs">過去病史與放射治療史：</span>
                                       <div className="text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-200 font-medium block leading-relaxed break-all whitespace-pre-wrap text-justify">{r.treatment || '無'}</div>
                                     </div>
+
+                                    {/* 📌 新增：病患資料最底部的取消預約按鈕區塊 */}
+                                    <div className="md:col-span-2 border-t border-slate-100 pt-4 mt-2 flex justify-end">
+                                      <button
+                                        type="button"
+                                        onClick={() => handleCancelAppointment(r, idx)}
+                                        className="px-5 py-2.5 text-sm font-bold text-white bg-rose-500 hover:bg-rose-600 active:bg-rose-700 rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 flex items-center gap-1.5"
+                                      >
+                                        ❌ 取消此筆特約預約
+                                      </button>
+                                    </div>
+
                                   </div>
                                 </td>
                               </tr>
