@@ -62,6 +62,13 @@ export const sportsInjuriesData = [
         description: '人體骨骼發育過程中，部分人會額外長出「副骨」或「種子骨」。雖然多數終生無症狀，但反覆壓迫或過度使用常引發足弓內側、踝後、前腳掌或肩膀疼痛。本文從運動醫學與影像學角度，系統解析副舟狀骨、副三角骨、肩峰副骨等好發部位與核心治療策略。',
         image:  '/images/news/article/accessory-bones-pain-analysis.webp',
       },
+                  {
+        slug: 'lumbar-disc-traction-alternatives',
+        title: '椎間盤突出可以自己拉腰嗎？吊單槓、倒立機 vs. 診所牽引',
+        description: '腰椎椎間盤突出合併坐骨神經痛，除了到診所做牽引治療，很多人會想到公園吊單槓或買一台倒立機在家做「減壓」。這兩種方式真的能取代診所牽引嗎？效果差多少？本文根據隨機對照試驗與系統性回顧文獻，說明吊單槓可能造成的肩膀傷害，以及倒立機在血壓、眼壓上的潛在危險，幫助你做出安全的選擇。',
+        image:  '/images/news/article/lumbardisc/cover.webp',
+      },
+
                         {
         slug: 'bone-age-height-evaluation',
         title: '孩子發育黃金期：幾歲該照骨齡？附台灣各年級身高警戒值對照表',

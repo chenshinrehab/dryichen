@@ -657,12 +657,12 @@ export default function SelfPayBookingPage() {
         nav a[href*="booking"]:hover, header a[href*="booking"]:hover, .bg-pink-500:hover, [class*="pink"]:hover { background: #bae6fd !important; background-color: #bae6fd !important; }
       `}} />
 
-      <div className="flex-grow pt--4 pb-16 px-3 sm:px-4 bg-slate-50 min-h-screen text-slate-800 relative z-10 block">
+<div id="booking-top" className="flex-grow pt--4 pb-16 px-3 sm:px-4 bg-slate-50 min-h-screen text-slate-800 relative z-10 block">
         <div className="max-w-6xl mx-auto space-y-5">
           
 <div className="flex justify-center p-1.5 bg-white rounded-2xl border border-slate-200 max-w-lg mx-auto shadow-sm">
-  <button type="button" onClick={() => setActiveTab('booking')} className={`flex-1 py-3.5 sm:py-4 text-center text-base sm:text-lg font-black rounded-xl transition-all duration-200 ${activeTab === 'booking' ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-slate-700'}`}>特約掛號預約</button>
-  <button type="button" onClick={() => setActiveTab('query')} className={`flex-1 py-3.5 sm:py-4 text-center text-base sm:text-lg font-black rounded-xl transition-all duration-200 ${activeTab === 'query' ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-slate-700'}`}>查詢 / 取消預約</button>
+  <button type="button" onClick={() => { setActiveTab('booking'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className={`flex-1 py-3.5 sm:py-4 text-center text-base sm:text-lg font-black rounded-xl transition-all duration-200 ${activeTab === 'booking' ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-slate-700'}`}>特約掛號預約</button>
+  <button type="button" onClick={() => { setActiveTab('query'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className={`flex-1 py-3.5 sm:py-4 text-center text-base sm:text-lg font-black rounded-xl transition-all duration-200 ${activeTab === 'query' ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-slate-700'}`}>查詢 / 取消預約</button>
 </div>
 
           <div className="bg-white border border-slate-200 rounded-[1.5rem] sm:rounded-[2.5rem] overflow-hidden shadow-xl flex flex-col md:flex-row">
@@ -782,7 +782,11 @@ export default function SelfPayBookingPage() {
                       )}
 
                       {selectedDate && selectedTime && (
-                        <form onSubmit={handleBookingSubmit} className="space-y-5 sm:space-y-6 pt-5 sm:pt-6 border-t border-slate-200 border-dashed animate-fadeIn">
+                        <form onSubmit={(e) => { 
+                          handleBookingSubmit(e); 
+                          // 使用 setTimeout 確保在 React 狀態更新與重新渲染後，才執行置頂動作
+                          setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100); 
+                        }} className="space-y-5 sm:space-y-6 pt-5 sm:pt-6 border-t border-slate-200 border-dashed animate-fadeIn">
                           <h2 className="text-base sm:text-lg font-black text-slate-800 flex items-center gap-2">
                             <span className="w-5 h-5 sm:w-6 h-6 rounded-full bg-cyan-100 text-cyan-600 border border-cyan-200 flex items-center justify-center text-[11px] sm:text-xs font-black">3</span>
                             就診基本問卷
@@ -851,30 +855,23 @@ export default function SelfPayBookingPage() {
                         <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 請先於下方登錄LINE帳號開始掛號。</p>
                         <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 選擇可點擊之日期，查看開放時段。</p>
                         <p className="flex items-start gap-1.5"><span className="text-cyan-600 font-bold">✦</span> 客滿或無排診之日期將反灰無法點選。</p>
-                        <p className="flex items-start gap-1.5"><span className="text-emerald-600 font-bold">✦</span> 加入官方帳號將於看診前一天提醒</p>
+  
                       </div>
 
                       <div className="w-full max-w-md space-y-3">
-                        {/* 🚀 已優化處：步驟 1 顏色加深改為厚實高飽和深綠底白字（bg-emerald-600 text-white），解決淺色看不清問題 */}
-                        <a 
-                          href="https://line.me/R/ti/p/@584yxibc" 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm sm:text-base font-black py-3.5 px-5 rounded-xl transition shadow-md w-full"
-                        >
-                          <FaLine className="text-white text-lg sm:text-xl shrink-0 filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)]" />
-                          <span>步驟 1 ：加入官方 LINE 好友</span>
-                        </a>
-                        
-                        {/* 🚀 已優化處：步驟 2 開放成標準 LINE 正統經典深綠（bg-[#06C755]），並附加 Icon 陰影，確保白色 Icon 100% 顯眼不吃字 */}
+
+                          {/* 🚀 已優化處：步驟 2 開放成標準 LINE 正統經典深綠（bg-[#06C755]），並附加 Icon 陰影，確保白色 Icon 100% 顯眼不吃字 */}
                         <button 
                           type="button" 
                           onClick={handleLineAuthRedirect} 
                           className="flex items-center justify-center gap-2 bg-[#06C755] hover:bg-[#05a647] text-white text-sm sm:text-base font-black py-3.5 px-5 rounded-xl transition shadow-md w-full"
                         >
                           <FaLine className="text-white text-lg sm:text-xl shrink-0 filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]" />
-                          <span>步驟 2 ：Line帳號綁定</span>
+                          <span>Line帳號綁定開始預約</span>
                         </button>
+
+  
+
                       </div>
                     </div>
                   )}
@@ -898,9 +895,15 @@ export default function SelfPayBookingPage() {
                             解除綁定
                           </button>
                         </div>
-                        <button onClick={() => runQuery('line', lineUserId)} className="px-4 py-2.5 sm:px-5 sm:py-3 bg-blue-600 hover:bg-blue-500 text-white text-sm sm:text-base font-bold rounded-lg transition shadow">
-                          同步 LINE 預約項目
-                        </button>
+<a 
+  href="https://line.me/R/ti/p/@584yxibc" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 bg-emerald-600 hover:bg-emerald-700 text-white text-sm sm:text-base font-bold rounded-lg transition shadow"
+>
+  <FaLine className="text-white text-lg sm:text-xl shrink-0 filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)]" />
+  <span>加入官方 LINE 看診提醒通知</span>
+</a>
                       </div>
                     ) : (
                       <div>
