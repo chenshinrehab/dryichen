@@ -11,6 +11,9 @@ export default function DoctorAdminPage() {
   const [filterDate, setFilterDate] = useState<string>('');
   const [selectedDate, setSelectedDate] = useState<string>('');
   
+  // 🌟 新增：月份選擇狀態
+  const [selectedMonth, setSelectedMonth] = useState<string>('');
+  
   const [activeSlots, setActiveSlots] = useState<string[]>([]);
   const [allSchedules, setAllSchedules] = useState<Record<string, string[]>>({});
   const [isListLoading, setIsListLoading] = useState(false);
@@ -44,17 +47,42 @@ export default function DoctorAdminPage() {
     }
   }, [selectedDate, isAuthenticated]);
 
+  // 🌟 新增：當 appointments, filterDate 或 selectedMonth 改變時，自動重新計算過濾清單
+  useEffect(() => {
+    applyFilters(appointments);
+  }, [appointments, filterDate, selectedMonth]);
+
+  // 🌟 新增：統一的過濾邏輯（包含特定日期、特定月份、以及預設近30天）
+  const applyFilters = (allAppointments: any[]) => {
+    if (filterDate) {
+      // 1. 如果有選取左側日曆的特定一天
+      setFilteredAppointments(allAppointments.filter((a: any) => a.date === filterDate));
+    } else if (selectedMonth) {
+      // 2. 如果有選取特定月份 (格式為 "YYYY-MM")
+      setFilteredAppointments(allAppointments.filter((a: any) => a.date && a.date.startsWith(selectedMonth)));
+    } else {
+      // 3. 如果都沒有選取，預設跳出近 30 天的預約資訊（從今天算起 30 天內）
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const thirtyDaysLater = new Date(today.getTime() + 30 * 24 * 60 * 60 * 1000);
+      
+      const fallbackList = allAppointments.filter((a: any) => {
+        if (!a.date) return false;
+        const appDate = new Date(a.date);
+        return appDate >= today && appDate <= thirtyDaysLater;
+      });
+      setFilteredAppointments(fallbackList);
+    }
+  };
+
   const fetchAppointments = async () => {
     setIsListLoading(true);
     try {
       const res = await fetch(`/api/reserve?action=getAllAppointments`);
       const data = await res.json();
-      setAppointments(data.list || []);
-      if (filterDate) {
-        setFilteredAppointments((data.list || []).filter((a: any) => a.date === filterDate));
-      } else {
-        setFilteredAppointments(data.list || []);
-      }
+      const list = data.list || [];
+      setAppointments(list);
+      applyFilters(list);
     } catch (err) {
       console.error(err);
     } finally {
@@ -91,10 +119,9 @@ export default function DoctorAdminPage() {
 
   const handleFilterDateChangeDirect = (dateStr: string) => {
     setFilterDate(dateStr);
-    if (dateStr === '') {
-      setFilteredAppointments(appointments);
-    } else {
-      setFilteredAppointments(appointments.filter(item => item.date === dateStr));
+    // 點選左側特定日期時，清除月份選取，以單日查閱為主
+    if (dateStr !== '') {
+      setSelectedMonth('');
     }
   };
 
@@ -145,10 +172,9 @@ export default function DoctorAdminPage() {
     }
   };
 
-  // 🚀 新增：取消單一病患預約，並精準對接後端 POST 分流機制
   const handleCancelAppointment = async (appointment: any, idx: number) => {
     const inputPass = prompt(`⚠️ 確定要取消【${appointment.name}】的這筆預約嗎？\n請輸入授權金鑰密碼以確認：`);
-    if (inputPass === null) return; // 使用者按取消
+    if (inputPass === null) return; 
     
     if (inputPass !== '7999') {
       alert("❌ 安全金鑰錯誤，無法取消預約！");
@@ -167,7 +193,6 @@ export default function DoctorAdminPage() {
       const res = await response.json();
       if (res.success || response.ok) {
         alert('🎉 已成功取消該病患之預約，該時段已重新釋出。');
-        // 關閉目前展開的欄位並重新讀取最新名單
         setExpandedRows(prev => ({ ...prev, [idx]: false }));
         fetchAppointments();
       } else {
@@ -301,7 +326,7 @@ export default function DoctorAdminPage() {
             <div className="bg-white rounded-3xl border border-slate-200 p-6 shadow-xl space-y-4">
               <div className="border-b border-slate-100 pb-3">
                 <h3 className="text-base font-black text-slate-900">1. 選擇查閱報表日期</h3>
-                <p className="text-xs text-slate-400 mt-1">過去無預約日期已反灰；<span className="text-cyan-600 font-bold">藍色方框</span>代表有病快特約登記</p>
+                <p className="text-xs text-slate-400 mt-1">過去無預約日期已反灰；<span className="text-cyan-600 font-bold">藍色方框</span>代表有病患特約登記</p>
               </div>
               <div className="border border-slate-100 rounded-2xl p-4 bg-slate-50/60">
                 <div className="flex items-center justify-between mb-4">
@@ -324,9 +349,35 @@ export default function DoctorAdminPage() {
             </div>
 
             <div className="md:col-span-2 bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-xl">
-              <div className="p-4 md:p-6 bg-slate-50 border-b border-slate-200">
-                <h2 className="text-base md:text-xl font-bold text-slate-900 mb-1">即時自費特約報表</h2>
-                <p className="text-xs text-slate-500">點選以下病患欄位列，可自主摺疊展開完整病歷狀況問卷</p>
+              <div className="p-4 md:p-6 bg-slate-50 border-b border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                  <h2 className="text-base md:text-xl font-bold text-slate-900 mb-1">即時自費特約報表</h2>
+                  <p className="text-xs text-slate-500">
+                    {filterDate ? `已選擇單日：${filterDate}` : selectedMonth ? `目前顯示：${selectedMonth} 月分預約` : '預設顯示：近 30 天預約名單'}
+                  </p>
+                </div>
+                {/* 🌟 新增：選取月份的 UI 控制項 */}
+                <div className="flex items-center gap-2">
+                  <label className="text-xs font-black text-slate-600 whitespace-nowrap">選擇月份：</label>
+                  <input 
+                    type="month" 
+                    value={selectedMonth}
+                    onChange={(e) => {
+                      setSelectedMonth(e.target.value);
+                      setFilterDate(''); // 切換月份時，清除單日篩選
+                    }}
+                    className="text-xs font-bold p-2 bg-white border border-slate-300 rounded-xl shadow-sm focus:outline-none focus:border-teal-500"
+                  />
+                  {selectedMonth && (
+                    <button 
+                      type="button" 
+                      onClick={() => setSelectedMonth('')} 
+                      className="text-xs text-rose-500 hover:underline font-bold whitespace-nowrap"
+                    >
+                      清除
+                    </button>
+                  )}
+                </div>
               </div>
 
               <div className="w-full">
@@ -375,24 +426,18 @@ export default function DoctorAdminPage() {
                                 <td colSpan={4} className="p-2 sm:p-6">
                                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-white p-4 rounded-2xl border border-slate-200 text-xs sm:text-sm w-full shadow-sm">
                                     
-                                    {/* 🚀 終極對接獨立新欄位：直接讀取由全新 API 所儲存的 line_display_name，並兼容歷史過渡時期的串接與純亂碼格式 */}
                                     <div className="md:col-span-2 w-full">
                                       <span className="font-black text-slate-400 block mb-1 text-xs">病患 LINE 實名暱稱：</span>
                                       <span className="text-emerald-700 block bg-emerald-50/50 p-2.5 rounded-lg border border-emerald-200 font-bold break-all">
                                         {(() => {
-                                          // 1. 正統做法：優先讀取資料庫全新的獨立暱稱欄位
                                           if (r.line_display_name || r.lineDisplayName) {
                                             return `👤 暱稱：${r.line_display_name || r.lineDisplayName}`;
                                           }
-                                          
-                                          // 2. 歷史相容做法（相容上個版本或尚未更新資料表的底線格式資料 "ID_暱稱"）
                                           const rawLineStr = r.line_user_id || r.lineUserId || '';
                                           if (rawLineStr.includes('_')) {
                                             const parts = rawLineStr.split('_');
                                             return `👤 暱稱：${parts[1]}`;
                                           }
-
-                                          // 3. 純代碼降級顯示，保證舊資料不跳空
                                           if (isLineBooking) {
                                             return `👤 暱稱：${rawLineStr}`;
                                           }
@@ -417,7 +462,6 @@ export default function DoctorAdminPage() {
                                       <div className="text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-200 font-medium block leading-relaxed break-all whitespace-pre-wrap text-justify">{r.treatment || '無'}</div>
                                     </div>
 
-                                    {/* 📌 新增：病患資料最底部的取消預約按鈕區塊 */}
                                     <div className="md:col-span-2 border-t border-slate-100 pt-4 mt-2 flex justify-end">
                                       <button
                                         type="button"
@@ -436,7 +480,7 @@ export default function DoctorAdminPage() {
                         );
                       })
                     ) : (
-                      <tr><td colSpan={4} className="p-12 text-center text-slate-400 text-base font-bold bg-white">當前選定日期查無特約登記明細。</td></tr>
+                      <tr><td colSpan={4} className="p-12 text-center text-slate-400 text-base font-bold bg-white">當前選定條件查無特約登記明細。</td></tr>
                     )}
                   </tbody>
                 </table>
