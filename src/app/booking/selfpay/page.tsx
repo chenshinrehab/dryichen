@@ -524,7 +524,7 @@ export default function SelfPayBookingPage() {
       });
       const res = await response.json();
       if (res.success) {
-        alert("🎉 門診特約預約成功！已同步登錄資料庫。");
+        alert("🎉 特約門診預約成功！");
         
         // 1. 預約成功後儲存姓名電話，供下次預約時自動填寫
         localStorage.setItem('saved_booking_name', formData.name);
@@ -880,12 +880,12 @@ export default function SelfPayBookingPage() {
               )}
 
               {activeTab === 'query' && (
-                <div className="space-y-5 sm:space-y-6">
+<div className="space-y-5 sm:space-y-6">
                   <h3 className="text-lg sm:text-xl font-black text-slate-900">掛號記錄查詢</h3>
                   
                   <div className="p-4 sm:p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-4">
                     {lineUserId ? (
-                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                      <div className="flex flex-col gap-4">
                         <div className="flex items-center gap-2">
                           <span className="text-sm sm:text-base font-bold text-slate-700 flex items-center gap-2">
                             {linePictureUrl && <img src={linePictureUrl} alt="" className="w-6 h-6 rounded-full inline" />}
@@ -895,15 +895,17 @@ export default function SelfPayBookingPage() {
                             解除綁定
                           </button>
                         </div>
-<a 
-  href="https://line.me/R/ti/p/@584yxibc" 
-  target="_blank" 
-  rel="noopener noreferrer" 
-  className="inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 bg-emerald-600 hover:bg-emerald-700 text-white text-sm sm:text-base font-bold rounded-lg transition shadow"
->
-  <FaLine className="text-white text-lg sm:text-xl shrink-0 filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)]" />
-  <span>加入官方 LINE 看診提醒通知</span>
-</a>
+                        <div>
+                          <a 
+                            href="https://line.me/R/ti/p/@584yxibc" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 bg-emerald-600 hover:bg-emerald-700 text-white text-sm sm:text-base font-bold rounded-lg transition shadow"
+                          >
+                            <FaLine className="text-white text-lg sm:text-xl shrink-0 filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)]" />
+                            <span>加入官方 LINE 看診提醒通知</span>
+                          </a>
+                        </div>
                       </div>
                     ) : (
                       <div>
