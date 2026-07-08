@@ -1,7 +1,7 @@
 {
   "name": "宸新復健科診所管理系統",
   "short_name": "預約排班",
-  "start_url": "/",
+  "start_url": "/booking/selfpay/doctor",
   "display": "standalone",
   "background_color": "#f8fafc",
   "theme_color": "#0d9488",
