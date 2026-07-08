@@ -204,7 +204,7 @@ const medicalClinicSchema = {
         }
       ]
     },
-    'hasMap': 'https://www.google.com/maps?cid=YOUR_CID_HERE', 
+    'hasMap': 'https://maps.google.com/',
     'areaServed': [
       { '@type': 'City', 'name': '新竹市' },
       { '@type': 'Place', 'name': '新竹科學園區' },
@@ -445,12 +445,9 @@ export default function SelfPayBookingPage() {
     window.location.reload();
   };
 
+  // 修改：改為回傳所有排定的時段，不再剔除已被預約的時段
   const getAvailableSlots = (dateStr: string) => {
-    const totalSlots = cachedSchedule[dateStr] || [];
-    const bookedSlots = allAppointments
-      .filter(a => a.date === dateStr)
-      .map(a => a.time_slot || a.time);
-    return totalSlots.filter(slot => !bookedSlots.includes(slot));
+    return cachedSchedule[dateStr] || [];
   };
 
   const isSlotExpired = (slotText: string) => {
@@ -761,19 +758,25 @@ export default function SelfPayBookingPage() {
                           </h2>
                           {displaySlots.length > 0 ? (
                             <div className="grid grid-cols-3 gap-2 sm:gap-4">
-                              {displaySlots.map(slot => (
-                                <button 
-                                  key={slot} 
-                                  type="button" 
-                                  onClick={() => setSelectedTime(slot)} 
-                                  className={`border font-black rounded-xl transition-all select-none py-2.5 text-sm sm:py-4 sm:text-base 
-                                    ${selectedTime === slot ? 'bg-gradient-to-r from-cyan-600 to-blue-600 border-cyan-500 text-white shadow-md font-black scale-[1.02]' : 
-                                      'border-slate-200 bg-white text-slate-700 hover:border-cyan-500 hover:bg-slate-50'
-                                    }`}
-                                >
-                                  {slot}
-                                </button>
-                              ))}
+                              {/* 修改：在渲染時段時，判斷是否已被預約，並呈現為反灰不可選取 */}
+                              {displaySlots.map(slot => {
+                                const isBooked = allAppointments.some(a => a.date === selectedDate && (a.time_slot === slot || a.time === slot));
+                                return (
+                                  <button 
+                                    key={slot} 
+                                    type="button" 
+                                    disabled={isBooked}
+                                    onClick={() => setSelectedTime(slot)} 
+                                    className={`border font-black rounded-xl transition-all select-none py-2.5 text-sm sm:py-4 sm:text-base 
+                                      ${isBooked ? 'bg-slate-100 border-slate-200 text-slate-400 cursor-not-allowed opacity-60' :
+                                        selectedTime === slot ? 'bg-gradient-to-r from-cyan-600 to-blue-600 border-cyan-500 text-white shadow-md font-black scale-[1.02]' : 
+                                        'border-slate-200 bg-white text-slate-700 hover:border-cyan-500 hover:bg-slate-50'
+                                      }`}
+                                  >
+                                    {slot} {isBooked && <span className="text-xs font-normal opacity-80">(已預約)</span>}
+                                  </button>
+                                );
+                              })}
                             </div>
                           ) : (
                             <div className="text-center text-rose-500 font-black py-4 sm:py-5 bg-rose-50 border border-rose-100 rounded-xl text-xs sm:text-sm md:text-base">⚠️ 抱歉，本日期之特約時段已全數預約額滿。</div>

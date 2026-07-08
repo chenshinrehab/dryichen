@@ -14,7 +14,7 @@ const inter = Inter({
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim();
 
 export const viewport: Viewport = {
-  themeColor: '#0f172a',
+  themeColor: '#0d9488', // 🌟 已修改：將全站主題顏色調整為要求的 #0d9488
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
@@ -25,6 +25,7 @@ export const viewport: Viewport = {
 // ==========================================
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  manifest: '/manifest.json', // 🌟 新增：由 Next.js 自動生成 <link rel="manifest" href="/manifest.json" />
   title: {
     // 當子頁面沒有設定 title 時顯示的預設標題
     default: '新竹宸新復健科診所 - 骨科/復健/兒童早療推薦 | 林羿辰醫師',
