@@ -48,7 +48,12 @@ export const sportsInjuriesData = [
         description: '學校健康檢查發現孩子蹲踞困難，家長先別緊張！本文完整解析蹲踞困難的常見原因——從跟腱過緊、扁平足、髖關節發育問題到股骨過度前傾，並說明何時需要就醫、如何配合治療，幫助家長正確認識、不過度焦慮。',
         image:  '/images/news/article/squatting-difficulty.webp',
       },
-
+                  {
+        slug: 'rehab-electrotherapy-guide',
+        title: '復健科電療解析：吸盤跟貼片差在哪？家用電療能取代診所嗎？',
+        description: '復健科的電療儀器其實分成好幾種，從常見的低頻貼片式電療（TENS、EMS），到診所常用的大吸盤中頻干擾波（IFC），原理與適用情境都不同。實證研究指出，吸盤電極的「吸附」本身並沒有比貼片電極多出額外的治療效果，差異主要在於方便性與適用部位。而市售家用電療機雖然外觀與貼片相似，但在輸出功率、波形種類與可調參數上，與診所治療用設備仍有明顯落差，因此無法完全取代專業復健治療。',
+        image:  '/images/news/article/rehab-electrotherapy-guide.webp',
+      },
 
                   {
         slug: 'medical-radiation-dose-analysis',
@@ -66,7 +71,13 @@ export const sportsInjuriesData = [
         slug: 'lumbar-disc-traction-alternatives',
         title: '椎間盤突出可以自己拉腰嗎？吊單槓、倒立機 vs. 診所牽引',
         description: '腰椎椎間盤突出合併坐骨神經痛，除了到診所做牽引治療，很多人會想到公園吊單槓或買一台倒立機在家做「減壓」。這兩種方式真的能取代診所牽引嗎？效果差多少？本文根據隨機對照試驗與系統性回顧文獻，說明吊單槓可能造成的肩膀傷害，以及倒立機在血壓、眼壓上的潛在危險，幫助你做出安全的選擇。',
-        image:  '/images/news/article/lumbardisc/cover.webp',
+        image:  '/images/news/article/lumbardisc.webp',
+      },
+                      {
+        slug: 'spinal-traction-guide',
+        title: '拉腰、拉脖子全解析：要拉多久？牽引治療=全解析',
+        description: '脊椎牽引（俗稱拉腰、拉脖子）是復健科治療下背痛、頸椎神經壓迫最常見的儀器之一，但多數民眾對「該拉多久」、「重量怎麼加」、「沒效能不能一直加重」始終一知半解。本文以實證研究與臨床常規為基礎，完整說明頸椎與腰椎牽引的療程長度、重量計算方式、頻率建議，以及多久該回診追蹤X光，幫助你安全有效地接受牽引治療。',
+        image:  '/images/news/article/spinal-traction-guide.webp',
       },
 
                         {
