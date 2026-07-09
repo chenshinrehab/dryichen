@@ -8,6 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
       disallow: [
+        '/booking/selfpay/doctor', // 🌟 新增：禁止搜尋引擎索引自費醫師後台系統
         '/api/',       // 1. 隱藏後端 API 路徑，增加安全性
         '/_next/',     // 2. 避免機器人去爬取 Next.js 的系統檔案（節省爬取配額）
         '/private/',   // 3. 既有的私密路徑
