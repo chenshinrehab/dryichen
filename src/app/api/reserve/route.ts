@@ -48,13 +48,20 @@ export async function POST(request: Request) {
     
     // 同時用「手機號碼」與「LINE ID」去抓未來預約（有綁定的 LINE 絕不放過）
     const { rows: futureApts } = await sql`
-      SELECT id FROM appointments 
+      SELECT date, time_slot FROM appointments 
       WHERE (phone = ${cleanPhone} AND phone <> '')
          OR (line_user_id = ${cleanLineId} AND line_user_id <> '未關聯' AND line_user_id <> '');
     `;
 
     // 因為當天 >= todayISO 包含今天，如果未來已滿 3 次，直接擋下
-    if (futureApts && futureApts.length >= 3) {
+    const now = new Date();
+    const futureAptCount = futureApts.filter((apt) => {
+      const existingCleanTime = apt.time_slot.split(' ')[0];
+      const existingDateTime = new Date(`${apt.date}T${existingCleanTime}:00+08:00`);
+      return !isNaN(existingDateTime.getTime()) && existingDateTime >= now;
+    }).length;
+
+    if (futureAptCount >= 3) {
       return NextResponse.json({ success: false, error: '只開放預約三個時段' });
     }
 

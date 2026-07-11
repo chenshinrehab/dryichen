@@ -310,6 +310,9 @@ export default function SelfPayBookingPage() {
   const [selectedTime, setSelectedTime] = useState<string>('');
   const [displaySlots, setDisplaySlots] = useState<string[]>([]);
   const [successfulBooking, setSuccessfulBooking] = useState<{ date: string; time: string } | null>(null);
+  const [injuryCause, setInjuryCause] = useState('');
+  const [imagingStatus, setImagingStatus] = useState('');
+  const [treatmentHistory, setTreatmentHistory] = useState<string[]>([]);
   
   const [currentMonth, setCurrentMonth] = useState(new Date());
 
@@ -532,12 +535,10 @@ export default function SelfPayBookingPage() {
     window.open(`https://calendar.google.com/calendar/render?${params.toString()}`, '_blank', 'noopener,noreferrer');
   };
 
-  const openOutlookCalendar = () => {
-    if (!successfulBooking) return;
-    const { start, end } = getCalendarTimes(successfulBooking.date, successfulBooking.time);
-    const toIso = (value: string) => `${value.slice(0, 4)}-${value.slice(4, 6)}-${value.slice(6, 8)}T${value.slice(9, 11)}:${value.slice(11, 13)}:00`;
-    const params = new URLSearchParams({ subject: '特約門診預約', startdt: toIso(start), enddt: toIso(end), location: '新竹市東區光復路二段71號1樓', body: '特約門診預約，請提早抵達診所。' });
-    window.open(`https://outlook.office.com/calendar/0/deeplink/compose?${params.toString()}`, '_blank', 'noopener,noreferrer');
+  const goToBookingQuery = () => {
+    setSuccessfulBooking(null);
+    setActiveTab('query');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleDateClick = (dateStr: string) => {
@@ -550,6 +551,9 @@ export default function SelfPayBookingPage() {
     setSelectedDate('');
     setSelectedTime('');
     setDisplaySlots([]);
+    setInjuryCause('');
+    setImagingStatus('');
+    setTreatmentHistory([]);
     setQueryPhone('');
     setQueryResults([]);
     window.history.replaceState({}, document.title, window.location.pathname);
@@ -576,7 +580,12 @@ export default function SelfPayBookingPage() {
       date: selectedDate, timeSlot: selectedTime,
       name: formData.name, phone: formData.phone,
       email: formData.email, part: formData.part,
-      reason: formData.reason, treatment: formData.treatment,
+      reason: [injuryCause && `受傷原因：${injuryCause}`, formData.reason].filter(Boolean).join('\n'),
+      treatment: [
+        imagingStatus && `影像檢查：${imagingStatus}`,
+        treatmentHistory.length > 0 && `其他治療：${treatmentHistory.join('、')}`,
+        formData.treatment
+      ].filter(Boolean).join('\n'),
       lineUserId: lineUserId, 
       lineDisplayName: lineDisplayName || localStorage.getItem('saved_line_display_name') || 'LINE連線成員',
       service: '自費門診特約' 
@@ -599,6 +608,9 @@ export default function SelfPayBookingPage() {
         
         // 2. 清除本次預約的部位、原因等選項，但保留姓名電話
         setFormData(prev => ({ ...prev, part: '', reason: '', treatment: '' }));
+        setInjuryCause('');
+        setImagingStatus('');
+        setTreatmentHistory([]);
         setSelectedDate('');
         setSelectedTime('');
         setDisplaySlots([]);
@@ -720,7 +732,7 @@ export default function SelfPayBookingPage() {
         nav, header, [class*="nav"], [class*="Navbar"], [class*="header"], nav div, header div, nav section, header section { background-color: #e2e8f0 !important; background-image: none !important; border-bottom: none !important; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important; }
         nav *, header *, [class*="Navbar"] *, [class*="header"] * { color: #1e293b !important; }
         nav a:hover, header a:hover, nav button:hover, header button:hover { color: #0891b2 !important; }
-        nav ul, header ul, nav div[class*="dropdown"], header div[class*="dropdown"], [class*="dropdown-menu"], [class*="menu"] { background-color: #ffffff !important; border-radius: 1.25rem !important; overflow: hidden !important; border: 1px solid #e2e8f0 !important; }
+        nav ul, header ul, nav div[class*="dropdown"], header div[class*="dropdown"], [class*="dropdown-menu"], [class*="menu"] { background-color: #ffffff !important; border-radius: 1.25rem !important; border: 1px solid #e2e8f0 !important; }
         nav ul *, header ul *, [class*="dropdown"] *, [class*="dropdown-menu"] *, [class*="menu"] * { background-color: #ffffff !important; color: #0f172a !important; fill: #0f172a !important; }
         nav ul a:hover, header ul a:hover, [class*="dropdown"] a:hover, [class*="dropdown-menu"] a:hover, nav ul a:hover *, header ul a:hover *, [class*="dropdown"] a:hover *, [class*="dropdown-menu"] a:hover * { background-color: #f1f5f9 !important; color: #0f172a !important; }
         nav a[href*="booking"], nav a[href*="reserve"], header a[href*="booking"], .bg-pink-500, .text-pink-500, [class*="pink"], button[class*="pink"], a[class*="pink"] { background: #e0f2fe !important; background-color: #e0f2fe !important; background-image: none !important; border: 1px solid #bae6fd !important; box-shadow: 0 4px 14px 0 rgba(186, 230, 253, 0.5) !important; }
@@ -728,7 +740,7 @@ export default function SelfPayBookingPage() {
         nav a[href*="booking"]:hover, header a[href*="booking"]:hover, .bg-pink-500:hover, [class*="pink"]:hover { background: #bae6fd !important; background-color: #bae6fd !important; }
       `}} />
 
-<div id="booking-top" className="flex-grow pt--4 pb-16 px-3 sm:px-4 bg-slate-50 min-h-screen text-slate-800 relative z-10 block">
+<div id="booking-top" className={`flex-grow ${activeTab === 'booking' ? 'pb-0' : 'pb-16 min-h-screen'} px-3 sm:px-4 bg-slate-50 text-slate-800 relative z-10 block`}>
         <div className="max-w-6xl mx-auto space-y-5">
           
 <div className="flex justify-center p-1.5 bg-white rounded-2xl border border-slate-200 max-w-lg mx-auto shadow-sm">
@@ -923,24 +935,80 @@ export default function SelfPayBookingPage() {
 
                           <div className="space-y-4">
                             <div>
-                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">本次看診不適部位？</label>
+                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-2">哪裡痛？</label>
+                              <div className="flex flex-wrap gap-2 mb-3">
+                                {['肩膀', '膝蓋', '腳踝', '腰', '頸部', '手肘', '其他'].map(option => (
+                                  <button
+                                    key={option}
+                                    type="button"
+                                    aria-pressed={formData.part === option}
+                                    onClick={() => setFormData({ ...formData, part: option === '其他' ? '' : option })}
+                                    className={`rounded-full border px-3 py-2 text-xs sm:text-sm font-black transition ${formData.part === option ? 'border-cyan-600 bg-cyan-600 text-white' : 'border-slate-200 bg-white text-slate-600 hover:border-cyan-400 hover:text-cyan-700'}`}
+                                  >
+                                    ○ {option}
+                                  </button>
+                                ))}
+                              </div>
                               <div className="relative">
                                 <FaMapMarkerAlt className="absolute left-4 top-4 sm:top-4.5 text-slate-400 text-xs sm:text-sm" />
-                                <input type="text" value={formData.part} onChange={e => setFormData({...formData, part: e.target.value})} placeholder="例如：右側膝蓋半月板、腰椎滑脫..." className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
+                                <input type="text" value={formData.part} onChange={e => setFormData({...formData, part: e.target.value})} placeholder="可補充更詳細的部位，例如：右側膝蓋半月板..." className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
                               </div>
                             </div>
                             <div>
-                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">不適發生原因？ (可詳細敘述)</label>
+                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-2">受傷原因</label>
+                              <div className="flex flex-wrap gap-2 mb-3">
+                                {['運動', '跌倒', '工作', '慢性疼痛', '不知道', '其他'].map(option => (
+                                  <button
+                                    key={option}
+                                    type="button"
+                                    aria-pressed={injuryCause === option}
+                                    onClick={() => setInjuryCause(option)}
+                                    className={`rounded-full border px-3 py-2 text-xs sm:text-sm font-black transition ${injuryCause === option ? 'border-cyan-600 bg-cyan-600 text-white' : 'border-slate-200 bg-white text-slate-600 hover:border-cyan-400 hover:text-cyan-700'}`}
+                                  >
+                                    ○ {option}
+                                  </button>
+                                ))}
+                              </div>
                               <div className="relative">
                                 <FaFileAlt className="absolute left-4 top-4 sm:top-5 text-slate-400 text-xs sm:text-sm" />
                                 <textarea rows={3} value={formData.reason} onChange={e => setFormData({...formData, reason: e.target.value})} placeholder="請描述疼痛情況、不適過程或受傷經過..." className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 resize-none placeholder-slate-400 leading-relaxed text-justify" />
                               </div>
                             </div>
                             <div>
-                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">先前曾接受過哪些治療或檢查嗎？</label>
+                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-2">是否已有 MRI／X 光？</label>
+                              <div className="flex flex-wrap gap-2 mb-4">
+                                {['有', '沒有', 'MRI', 'X光', '其他'].map(option => (
+                                  <button
+                                    key={option}
+                                    type="button"
+                                    aria-pressed={imagingStatus === option}
+                                    onClick={() => setImagingStatus(option)}
+                                    className={`rounded-full border px-3 py-2 text-xs sm:text-sm font-black transition ${imagingStatus === option ? 'border-cyan-600 bg-cyan-600 text-white' : 'border-slate-200 bg-white text-slate-600 hover:border-cyan-400 hover:text-cyan-700'}`}
+                                  >
+                                    ○ {option}
+                                  </button>
+                                ))}
+                              </div>
+                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-2">是否做過其他治療？</label>
+                              <div className="flex flex-wrap gap-2 mb-3">
+                                {['健保復健', '增生注射', '徒手運動治療', 'PRP', '震波', '其他'].map(option => {
+                                  const isSelected = treatmentHistory.includes(option);
+                                  return (
+                                    <button
+                                      key={option}
+                                      type="button"
+                                      aria-pressed={isSelected}
+                                      onClick={() => setTreatmentHistory(current => isSelected ? current.filter(item => item !== option) : [...current, option])}
+                                      className={`rounded-full border px-3 py-2 text-xs sm:text-sm font-black transition ${isSelected ? 'border-cyan-600 bg-cyan-600 text-white' : 'border-slate-200 bg-white text-slate-600 hover:border-cyan-400 hover:text-cyan-700'}`}
+                                    >
+                                      {isSelected ? '●' : '○'} {option}
+                                    </button>
+                                  );
+                                })}
+                              </div>
                               <div className="relative">
                                 <FaHistory className="absolute left-4 top-4 sm:top-4.5 text-slate-400 text-xs sm:text-sm" />
-                                <input type="text" value={formData.treatment} onChange={e => setFormData({...formData, treatment: e.target.value})} placeholder="例如：照過X光、曾做過復健、藥物治療、皆無..." className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
+                                <input type="text" value={formData.treatment} onChange={e => setFormData({...formData, treatment: e.target.value})} placeholder="可補充其他檢查或治療..." className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
                               </div>
                             </div>
                           </div>
@@ -1053,10 +1121,71 @@ export default function SelfPayBookingPage() {
         </div>
       </div>
 
+      {activeTab === 'booking' && (
+        <div className="px-3 sm:px-4 pb-16">
+        <section className="max-w-6xl mx-auto mt-5 space-y-5">
+          <div className="bg-white border border-slate-200 rounded-3xl p-5 sm:p-8 shadow-sm">
+            <h2 className="text-xl sm:text-2xl font-black text-slate-900 mb-5">看診流程</h2>
+            <ol className="flex flex-wrap items-center gap-2 text-sm sm:text-base font-bold text-slate-700">
+              {[
+                '① 選日期及填資料',
+                '② 預約完成',
+                '③ 提前 10 分鐘至櫃檯報到並繳費',
+                '④ 超音波及動作評估',
+                '⑤ 醫師診療'
+                
+              ].map((step, index) => (
+                <li key={step} className="flex items-center gap-2">
+                  <span className="rounded-lg bg-slate-50 px-3 py-2">{step}</span>
+                  {index < 5 && <span className="text-cyan-600 leading-none">→</span>}
+                </li>
+              ))}
+            </ol>
+          </div>
+
+          <div className="bg-amber-50 border border-amber-200 rounded-3xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <h2 className="text-lg font-black text-slate-900">停車資訊</h2>
+              <p className="mt-1 text-sm font-bold text-slate-600">觀看專屬停車場位置與進場方式。</p>
+            </div>
+            <a
+              href="https://youtube.com/shorts/hFh6xaYpP1k?si=o8uG-BiGaqu-gOXn"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-xl bg-amber-500 px-5 py-3 font-black text-white shadow-sm transition hover:bg-amber-600 whitespace-nowrap"
+            >
+              🚗 專屬停車場
+            </a>
+          </div>
+
+          <div className="bg-white border border-slate-200 rounded-3xl p-5 sm:p-8 shadow-sm">
+            <h2 className="text-xl sm:text-2xl font-black text-slate-900 mb-4">常見問題</h2>
+            <div className="divide-y divide-slate-200">
+              {[
+                ['需要帶健保卡嗎？', '健保身分需要攜帶健保卡。'],
+                ['可以刷卡嗎？', '目前不提供刷卡服務。'],
+                ['可以停車嗎？', '可以，請點選上方「專屬停車場」觀看停車影片。'],
+                ['第一次要多久？', '首次看診時間依超音波、動作評估及醫師診療需求而定，請預留充足時間。'],
+                ['遲到怎麼辦？', '因後續仍有已預約病患，遲到可能使您的看診時間被壓縮，建議提前 10 分鐘抵達。']
+              ].map(([question, answer]) => (
+                <details key={question} className="group py-3">
+                  <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-black text-slate-800">
+                    {question}
+                    <span className="text-cyan-600 transition group-open:rotate-45">＋</span>
+                  </summary>
+                  <p className="pt-3 pr-6 text-sm leading-relaxed font-medium text-slate-600">{answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+        </div>
+      )}
+
       {successfulBooking && (
-        <div className="fixed inset-0 z-[100] overflow-y-auto bg-slate-950/55 backdrop-blur-sm px-3 py-6 sm:p-8">
+        <div onClick={goToBookingQuery} className="fixed inset-0 z-[100] overflow-y-auto bg-slate-950/55 backdrop-blur-sm px-3 py-6 sm:p-8">
           <div className="min-h-full flex items-center justify-center">
-            <section className="w-full max-w-lg overflow-hidden rounded-3xl bg-white shadow-2xl animate-fadeIn">
+            <section onClick={event => event.stopPropagation()} className="w-full max-w-lg overflow-hidden rounded-3xl bg-white shadow-2xl animate-fadeIn">
               <div className="bg-gradient-to-r from-emerald-500 to-cyan-600 px-6 py-8 text-center text-white sm:px-10">
                 <FaCheckCircle className="mx-auto mb-3 text-5xl" />
                 <h2 className="text-2xl sm:text-3xl font-black">已預約成功</h2>
@@ -1090,8 +1219,6 @@ export default function SelfPayBookingPage() {
                   <div className="grid grid-cols-2 gap-3">
                     <button type="button" onClick={openGoogleCalendar} className="rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm font-black text-slate-700 transition hover:border-cyan-400 hover:text-cyan-700">Google Calendar</button>
                     <button type="button" onClick={downloadCalendarFile} className="rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm font-black text-slate-700 transition hover:border-cyan-400 hover:text-cyan-700">Apple Calendar</button>
-                    <button type="button" onClick={openOutlookCalendar} className="rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm font-black text-slate-700 transition hover:border-cyan-400 hover:text-cyan-700">Outlook</button>
-                    <button type="button" onClick={downloadCalendarFile} className="rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm font-black text-slate-700 transition hover:border-cyan-400 hover:text-cyan-700">下載 ICS</button>
                   </div>
                 </div>
 
@@ -1107,10 +1234,10 @@ export default function SelfPayBookingPage() {
 
                 <button
                   type="button"
-                  onClick={() => { setSuccessfulBooking(null); setActiveTab('query'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                  className="w-full py-2 text-sm font-black text-slate-500 transition hover:text-cyan-700"
+                  onClick={goToBookingQuery}
+                  className="w-full rounded-xl border-2 border-cyan-600 bg-white py-3.5 text-sm font-black text-cyan-700 shadow-sm transition hover:bg-cyan-50"
                 >
-                  查看我的預約
+                  返回預約查詢
                 </button>
               </div>
             </section>

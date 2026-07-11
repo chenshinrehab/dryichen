@@ -247,6 +247,12 @@ export const sportsInjuriesData = [
         image: '/images/news/article/mouth-pain-tmd-analysis.webp',
       },
                                     {
+        slug: 'frozen-shoulder-analysis',
+        title: '五十肩全解析：成因是什麼？會自己好嗎？該如何治療？',
+        description: '深度剖析五十肩（沾黏性肩關節囊炎）的真正成因、與年齡的關係、常見症狀，以及最多人誤解的問題——「放著不管會不會自己解凍？」實證研究顯示，五十肩的自然病程並不如傳說中那樣穩定痊癒，及早了解與介入才是關鍵。',
+        image: '/images/news/article/frozen-shoulder-analysis.webp',
+      },
+                                    {
         slug: 'child-development-early-intervention',
         title: '兒童發展全解析：動作、語言發展里程碑，何時該上早療？',
         description: '深度解析兒童大動作、細動作與語言發展的正常里程碑，並說明各年齡層的發展警訊（red flags）。實證研究顯示早期發現、及早療育能顯著改善發展遲緩兒童的長期預後，本文以淺顯易懂的語言搭配圖表，幫助家長掌握黃金治療期。',
