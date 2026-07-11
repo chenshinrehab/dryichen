@@ -309,6 +309,7 @@ export default function SelfPayBookingPage() {
   const [selectedDate, setSelectedDate] = useState<string>('');
   const [selectedTime, setSelectedTime] = useState<string>('');
   const [displaySlots, setDisplaySlots] = useState<string[]>([]);
+  const [successfulBooking, setSuccessfulBooking] = useState<{ date: string; time: string } | null>(null);
   
   const [currentMonth, setCurrentMonth] = useState(new Date());
 
@@ -450,12 +451,12 @@ export default function SelfPayBookingPage() {
     return cachedSchedule[dateStr] || [];
   };
 
-  const isSlotExpired = (slotText: string) => {
+  const isSlotExpiredForDate = (dateStr: string, slotText: string) => {
     const now = new Date();
     const offset = now.getTimezoneOffset() * 60000;
     const todayStr = new Date(now.getTime() - offset).toISOString().split('T')[0];
     
-    if (selectedDate !== todayStr) return false;
+    if (dateStr !== todayStr) return false;
 
     const timePart = slotText.split(' ')[0]; 
     const ampm = slotText.split(' ')[1];     
@@ -469,6 +470,74 @@ export default function SelfPayBookingPage() {
     const oneHourInMs = 60 * 60 * 1000;
 
     return timeDifferenceInMs < oneHourInMs;
+  };
+
+  const isSlotExpired = (slotText: string) => isSlotExpiredForDate(selectedDate, slotText);
+
+  const isSlotBooked = (dateStr: string, slot: string) =>
+    allAppointments.some(a => a.date === dateStr && (a.time_slot === slot || a.time === slot));
+
+  const getRemainingSlots = (dateStr: string) =>
+    getAvailableSlots(dateStr).filter(slot => !isSlotExpiredForDate(dateStr, slot) && !isSlotBooked(dateStr, slot));
+
+  const getNextAvailableAppointment = () => {
+    const today = new Date();
+    const offset = today.getTimezoneOffset() * 60000;
+    const todayStr = new Date(today.getTime() - offset).toISOString().split('T')[0];
+
+    return Object.keys(cachedSchedule)
+      .filter(date => date >= todayStr)
+      .sort()
+      .map(date => ({ date, slot: getRemainingSlots(date)[0] }))
+      .find(appointment => appointment.slot);
+  };
+
+  const formatDate = (dateStr: string, withWeekday = false) => {
+    const date = new Date(`${dateStr}T00:00:00`);
+    const base = `${date.getMonth() + 1}/${date.getDate()}`;
+    return withWeekday ? `${base}（${['日', '一', '二', '三', '四', '五', '六'][date.getDay()]}）` : base;
+  };
+
+  const getCalendarTimes = (dateStr: string, slot: string) => {
+    const [timePart, ampm] = slot.split(' ');
+    let [hours, minutes] = timePart.split(':').map(Number);
+    if (ampm === 'PM' && hours !== 12) hours += 12;
+    if (ampm === 'AM' && hours === 12) hours = 0;
+    const start = new Date(`${dateStr}T00:00:00`);
+    start.setHours(hours, minutes, 0, 0);
+    const end = new Date(start.getTime() + 30 * 60 * 1000);
+    const asCalendarTime = (value: Date) => `${value.getFullYear()}${String(value.getMonth() + 1).padStart(2, '0')}${String(value.getDate()).padStart(2, '0')}T${String(value.getHours()).padStart(2, '0')}${String(value.getMinutes()).padStart(2, '0')}00`;
+    return { start: asCalendarTime(start), end: asCalendarTime(end) };
+  };
+
+  const downloadCalendarFile = () => {
+    if (!successfulBooking) return;
+    const { start, end } = getCalendarTimes(successfulBooking.date, successfulBooking.time);
+    const ics = `BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Dr Yi Chen//Booking//ZH\r\nBEGIN:VEVENT\r\nUID:${Date.now()}@dryichen.com.tw\r\nDTSTAMP:${start}\r\nDTSTART:${start}\r\nDTEND:${end}\r\nSUMMARY:特約門診預約\r\nLOCATION:新竹市東區光復路二段71號1樓\r\nDESCRIPTION:特約門診預約，請提早抵達診所。\r\nEND:VEVENT\r\nEND:VCALENDAR`;
+    const url = URL.createObjectURL(new Blob([ics], { type: 'text/calendar;charset=utf-8' }));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = '特約門診預約.ics';
+    link.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const openGoogleCalendar = () => {
+    if (!successfulBooking) return;
+    const { start, end } = getCalendarTimes(successfulBooking.date, successfulBooking.time);
+    const params = new URLSearchParams({
+      action: 'TEMPLATE', text: '特約門診預約', dates: `${start}/${end}`,
+      details: '特約門診預約，請提早抵達診所。', location: '新竹市東區光復路二段71號1樓'
+    });
+    window.open(`https://calendar.google.com/calendar/render?${params.toString()}`, '_blank', 'noopener,noreferrer');
+  };
+
+  const openOutlookCalendar = () => {
+    if (!successfulBooking) return;
+    const { start, end } = getCalendarTimes(successfulBooking.date, successfulBooking.time);
+    const toIso = (value: string) => `${value.slice(0, 4)}-${value.slice(4, 6)}-${value.slice(6, 8)}T${value.slice(9, 11)}:${value.slice(11, 13)}:00`;
+    const params = new URLSearchParams({ subject: '特約門診預約', startdt: toIso(start), enddt: toIso(end), location: '新竹市東區光復路二段71號1樓', body: '特約門診預約，請提早抵達診所。' });
+    window.open(`https://outlook.office.com/calendar/0/deeplink/compose?${params.toString()}`, '_blank', 'noopener,noreferrer');
   };
 
   const handleDateClick = (dateStr: string) => {
@@ -521,7 +590,8 @@ export default function SelfPayBookingPage() {
       });
       const res = await response.json();
       if (res.success) {
-        alert("🎉 特約門診預約成功！");
+        setSuccessfulBooking({ date: selectedDate, time: selectedTime });
+        setAllAppointments(prev => [...prev, { date: selectedDate, time_slot: selectedTime }]);
         
         // 1. 預約成功後儲存姓名電話，供下次預約時自動填寫
         localStorage.setItem('saved_booking_name', formData.name);
@@ -533,8 +603,7 @@ export default function SelfPayBookingPage() {
         setSelectedTime('');
         setDisplaySlots([]);
         
-        // 2. 切換至查詢頁籤，並捲動至頂部，取代原本的 reload 避免跑版
-        setActiveTab('query');
+        // 成功頁面關閉後才回到預約查詢，讓使用者能先加入提醒與行事曆。
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         alert("預約未成功：" + (res.error || "伺服器連線異常"));
@@ -610,7 +679,9 @@ export default function SelfPayBookingPage() {
       const isPast = dateStr < todayStr;
       const availableSlots = cachedSchedule[dateStr] || [];
       const hasSlots = availableSlots.length > 0;
-      const isDisabled = isPast || !hasSlots;
+      const remainingCount = getRemainingSlots(dateStr).length;
+      const isFull = !isPast && hasSlots && remainingCount === 0;
+      const isDisabled = isPast || !hasSlots || isFull;
       const isSelected = selectedDate === dateStr;
 
       days.push(
@@ -619,21 +690,24 @@ export default function SelfPayBookingPage() {
           type="button"
           disabled={isDisabled}
           onClick={() => handleDateClick(dateStr)}
-          className={`mx-auto flex items-center justify-center font-bold transition-all select-none
-            h-9 w-9 text-sm rounded-lg
-            sm:h-12 sm:w-12 sm:text-base md:text-lg sm:rounded-full
+          className={`mx-auto flex min-h-10 w-11 flex-col items-center justify-center font-bold transition-all select-none
+            text-sm rounded-lg sm:min-h-12 sm:w-12 sm:text-base md:text-lg sm:rounded-full
             ${isSelected ? 'bg-cyan-600 text-white shadow-md scale-105 sm:scale-110' : 
+              isFull ? 'text-rose-500 bg-rose-50 border border-rose-200 cursor-not-allowed' :
               isDisabled ? 'text-slate-300 opacity-20 cursor-not-allowed bg-transparent border-none' : 
               'text-slate-700 hover:bg-slate-200 hover:text-cyan-600 bg-white shadow-sm border border-slate-200'
             }
           `}
         >
-          {i}
+          <span>{i}</span>
+          {isFull && <span className="text-[9px] leading-none font-black">額滿</span>}
         </button>
       );
     }
     return days;
   };
+
+  const nextAvailableAppointment = getNextAvailableAppointment();
 
   return (
     <>
@@ -724,6 +798,27 @@ export default function SelfPayBookingPage() {
                         </button>
                       </div>
 
+                      {nextAvailableAppointment && (
+                        <div className="bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 p-4 sm:p-5 rounded-2xl shadow-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                          <div>
+                            <p className="text-xs font-black tracking-widest text-cyan-700 mb-1">最快可預約</p>
+                            <p className="font-black text-slate-900 text-lg sm:text-xl">
+                              {formatDate(nextAvailableAppointment.date, true)} <span className="text-cyan-700">{nextAvailableAppointment.slot}</span>
+                            </p>
+                          </div>
+                          <button
+                            type="button"
+                            onClick={() => {
+                              handleDateClick(nextAvailableAppointment.date);
+                              setCurrentMonth(new Date(`${nextAvailableAppointment.date}T00:00:00`));
+                            }}
+                            className="bg-cyan-600 hover:bg-cyan-700 text-white font-black px-5 py-3 rounded-xl shadow-sm transition whitespace-nowrap"
+                          >
+                            立即預約
+                          </button>
+                        </div>
+                      )}
+
                       <div className="bg-slate-50 border border-slate-200 p-4 sm:p-6 rounded-2xl">
                         <h2 className="text-base sm:text-lg font-black text-slate-800 mb-4 sm:mb-5 flex items-center gap-2">
                           <span className="w-5 h-5 sm:w-6 h-6 rounded-full bg-cyan-100 text-cyan-600 border border-cyan-200 flex items-center justify-center text-[11px] sm:text-xs font-black">1</span>
@@ -754,13 +849,16 @@ export default function SelfPayBookingPage() {
                         <div className="space-y-4 animate-fadeIn">
                           <h2 className="text-base sm:text-lg font-black text-slate-800 flex items-center gap-2">
                             <span className="w-5 h-5 sm:w-6 h-6 rounded-full bg-cyan-100 text-cyan-600 border border-cyan-200 flex items-center justify-center text-[11px] sm:text-xs font-black">2</span>
-                            開放可預約時段
+                            {formatDate(selectedDate)}{' '}
+                            {getRemainingSlots(selectedDate).length === 1
+                              ? <span className="text-rose-500">🔥 剩最後 1 位</span>
+                              : <span className="text-cyan-700">（剩 {getRemainingSlots(selectedDate).length} 位）</span>}
                           </h2>
                           {displaySlots.length > 0 ? (
                             <div className="grid grid-cols-3 gap-2 sm:gap-4">
                               {/* 修改：在渲染時段時，判斷是否已被預約，並呈現為反灰不可選取 */}
                               {displaySlots.map(slot => {
-                                const isBooked = allAppointments.some(a => a.date === selectedDate && (a.time_slot === slot || a.time === slot));
+                                const isBooked = isSlotBooked(selectedDate, slot);
                                 return (
                                   <button 
                                     key={slot} 
@@ -773,7 +871,10 @@ export default function SelfPayBookingPage() {
                                         'border-slate-200 bg-white text-slate-700 hover:border-cyan-500 hover:bg-slate-50'
                                       }`}
                                   >
-                                    {slot} {isBooked && <span className="text-xs font-normal opacity-80">(已預約)</span>}
+                                    <span className="block">{isBooked ? '●' : '○'} {slot}</span>
+                                    <span className={`text-xs font-bold ${isBooked ? 'opacity-80' : 'text-cyan-600'}`}>
+                                      {isBooked ? '已預約' : '可預約'}
+                                    </span>
                                   </button>
                                 );
                               })}
@@ -951,6 +1052,71 @@ export default function SelfPayBookingPage() {
           </div>
         </div>
       </div>
+
+      {successfulBooking && (
+        <div className="fixed inset-0 z-[100] overflow-y-auto bg-slate-950/55 backdrop-blur-sm px-3 py-6 sm:p-8">
+          <div className="min-h-full flex items-center justify-center">
+            <section className="w-full max-w-lg overflow-hidden rounded-3xl bg-white shadow-2xl animate-fadeIn">
+              <div className="bg-gradient-to-r from-emerald-500 to-cyan-600 px-6 py-8 text-center text-white sm:px-10">
+                <FaCheckCircle className="mx-auto mb-3 text-5xl" />
+                <h2 className="text-2xl sm:text-3xl font-black">已預約成功</h2>
+                <p className="mt-2 text-sm font-bold text-white/90">特約門診預約已為您保留</p>
+              </div>
+
+              <div className="p-5 sm:p-7 space-y-5">
+                <div className="grid grid-cols-2 gap-3 rounded-2xl bg-slate-50 border border-slate-200 p-4 text-center">
+                  <div className="border-r border-slate-200">
+                    <p className="text-xs font-black tracking-wider text-slate-400">日期</p>
+                    <p className="mt-1 font-black text-slate-900">{formatDate(successfulBooking.date, true)}</p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-black tracking-wider text-slate-400">時間</p>
+                    <p className="mt-1 font-black text-cyan-700">{successfulBooking.time}</p>
+                  </div>
+                </div>
+
+                <a
+                  href="https://line.me/R/ti/p/@584yxibc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#06C755] px-4 py-4 font-black text-white shadow-sm transition hover:bg-[#05a647]"
+                >
+                  <FaLine className="text-xl" />
+                  加入 LINE 提醒
+                </a>
+
+                <div>
+                  <p className="mb-2 text-center text-xs font-black tracking-wider text-slate-400">加入行事曆</p>
+                  <div className="grid grid-cols-2 gap-3">
+                    <button type="button" onClick={openGoogleCalendar} className="rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm font-black text-slate-700 transition hover:border-cyan-400 hover:text-cyan-700">Google Calendar</button>
+                    <button type="button" onClick={downloadCalendarFile} className="rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm font-black text-slate-700 transition hover:border-cyan-400 hover:text-cyan-700">Apple Calendar</button>
+                    <button type="button" onClick={openOutlookCalendar} className="rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm font-black text-slate-700 transition hover:border-cyan-400 hover:text-cyan-700">Outlook</button>
+                    <button type="button" onClick={downloadCalendarFile} className="rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm font-black text-slate-700 transition hover:border-cyan-400 hover:text-cyan-700">下載 ICS</button>
+                  </div>
+                </div>
+
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=24.7833314%2C121.0170937"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-slate-800 px-4 py-3.5 font-black text-white transition hover:bg-slate-700"
+                >
+                  <FaMapMarkerAlt />
+                  導航到診所
+                </a>
+
+                <button
+                  type="button"
+                  onClick={() => { setSuccessfulBooking(null); setActiveTab('query'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                  className="w-full py-2 text-sm font-black text-slate-500 transition hover:text-cyan-700"
+                >
+                  查看我的預約
+                </button>
+              </div>
+            </section>
+          </div>
+        </div>
+      )}
     </>
   );
 }
