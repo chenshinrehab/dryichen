@@ -312,6 +312,9 @@ export default function SelfPayBookingPage() {
   const [successfulBooking, setSuccessfulBooking] = useState<{ date: string; time: string } | null>(null);
   const [injuryCause, setInjuryCause] = useState('');
   const [imagingStatus, setImagingStatus] = useState('');
+  const [imagingTypes, setImagingTypes] = useState<string[]>([]);
+  const [otherImaging, setOtherImaging] = useState('');
+  const [discomfortDuration, setDiscomfortDuration] = useState('');
   const [treatmentHistory, setTreatmentHistory] = useState<string[]>([]);
   
   const [currentMonth, setCurrentMonth] = useState(new Date());
@@ -553,6 +556,9 @@ export default function SelfPayBookingPage() {
     setDisplaySlots([]);
     setInjuryCause('');
     setImagingStatus('');
+    setImagingTypes([]);
+    setOtherImaging('');
+    setDiscomfortDuration('');
     setTreatmentHistory([]);
     setQueryPhone('');
     setQueryResults([]);
@@ -576,13 +582,20 @@ export default function SelfPayBookingPage() {
 
     setIsSubmitLoading(true);
 
+    const imagingDescription = imagingStatus === '有'
+      ? [
+          ...imagingTypes.filter(type => type !== '其他'),
+          imagingTypes.includes('其他') && (otherImaging ? `其他：${otherImaging}` : '其他')
+        ].filter(Boolean).join('、') || '有（未說明檢查類型）'
+      : imagingStatus;
+
     const reservationData = {
       date: selectedDate, timeSlot: selectedTime,
       name: formData.name, phone: formData.phone,
       email: formData.email, part: formData.part,
-      reason: [injuryCause && `受傷原因：${injuryCause}`, formData.reason].filter(Boolean).join('\n'),
+      reason: [discomfortDuration && `不適時間：${discomfortDuration}`, injuryCause && `受傷原因：${injuryCause}`, formData.reason].filter(Boolean).join('\n'),
       treatment: [
-        imagingStatus && `影像檢查：${imagingStatus}`,
+        imagingDescription && `檢查：${imagingDescription}`,
         treatmentHistory.length > 0 && `其他治療：${treatmentHistory.join('、')}`,
         formData.treatment
       ].filter(Boolean).join('\n'),
@@ -610,6 +623,9 @@ export default function SelfPayBookingPage() {
         setFormData(prev => ({ ...prev, part: '', reason: '', treatment: '' }));
         setInjuryCause('');
         setImagingStatus('');
+        setImagingTypes([]);
+        setOtherImaging('');
+        setDiscomfortDuration('');
         setTreatmentHistory([]);
         setSelectedDate('');
         setSelectedTime('');
@@ -935,7 +951,7 @@ export default function SelfPayBookingPage() {
 
                           <div className="space-y-4">
                             <div>
-                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-2">哪裡痛？</label>
+                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-2">哪裡不適？</label>
                               <div className="flex flex-wrap gap-2 mb-3">
                                 {['肩膀', '膝蓋', '腳踝', '腰', '頸部', '手肘', '其他'].map(option => (
                                   <button
@@ -952,6 +968,10 @@ export default function SelfPayBookingPage() {
                               <div className="relative">
                                 <FaMapMarkerAlt className="absolute left-4 top-4 sm:top-4.5 text-slate-400 text-xs sm:text-sm" />
                                 <input type="text" value={formData.part} onChange={e => setFormData({...formData, part: e.target.value})} placeholder="可補充更詳細的部位，例如：右側膝蓋半月板..." className="w-full p-3.5 sm:p-4 pl-10 sm:pl-12 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
+                              </div>
+                              <div className="mt-3">
+                                <label className="block text-xs sm:text-sm font-black text-slate-500 mb-1.5">不適時間</label>
+                                <input type="text" value={discomfortDuration} onChange={e => setDiscomfortDuration(e.target.value)} placeholder="請直接輸入，例如：3 天、2 週、半年" className="w-full p-3.5 sm:p-4 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm sm:text-base font-bold text-slate-800 placeholder-slate-400" />
                               </div>
                             </div>
                             <div>
@@ -975,20 +995,50 @@ export default function SelfPayBookingPage() {
                               </div>
                             </div>
                             <div>
-                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-2">是否已有 MRI／X 光？</label>
-                              <div className="flex flex-wrap gap-2 mb-4">
-                                {['有', '沒有', 'MRI', 'X光', '其他'].map(option => (
+                              <label className="block text-xs sm:text-sm font-black text-slate-500 mb-2">是否有做過任何檢查？</label>
+                              <div className="flex flex-wrap gap-2 mb-3">
+                                {['有', '沒有'].map(option => (
                                   <button
                                     key={option}
                                     type="button"
                                     aria-pressed={imagingStatus === option}
-                                    onClick={() => setImagingStatus(option)}
+                                    onClick={() => {
+                                      setImagingStatus(option);
+                                      if (option === '沒有') {
+                                        setImagingTypes([]);
+                                        setOtherImaging('');
+                                      }
+                                    }}
                                     className={`rounded-full border px-3 py-2 text-xs sm:text-sm font-black transition ${imagingStatus === option ? 'border-cyan-600 bg-cyan-600 text-white' : 'border-slate-200 bg-white text-slate-600 hover:border-cyan-400 hover:text-cyan-700'}`}
                                   >
                                     ○ {option}
                                   </button>
                                 ))}
                               </div>
+                              {imagingStatus === '有' && (
+                                <div className="rounded-xl border border-cyan-100 bg-cyan-50/60 p-3 mb-4 animate-fadeIn">
+                                  <p className="text-xs font-black text-cyan-800 mb-2">請勾選已做過的檢查</p>
+                                  <div className="flex flex-wrap gap-2">
+                                    {['MRI', 'X光', '超音波', '其他'].map(option => {
+                                      const isSelected = imagingTypes.includes(option);
+                                      return (
+                                        <button
+                                          key={option}
+                                          type="button"
+                                          aria-pressed={isSelected}
+                                          onClick={() => setImagingTypes(current => isSelected ? current.filter(item => item !== option) : [...current, option])}
+                                          className={`rounded-full border px-3 py-2 text-xs sm:text-sm font-black transition ${isSelected ? 'border-cyan-600 bg-cyan-600 text-white' : 'border-slate-200 bg-white text-slate-600 hover:border-cyan-400 hover:text-cyan-700'}`}
+                                        >
+                                          {isSelected ? '●' : '○'} {option}
+                                        </button>
+                                      );
+                                    })}
+                                  </div>
+                                  {imagingTypes.includes('其他') && (
+                                    <input type="text" value={otherImaging} onChange={e => setOtherImaging(e.target.value)} placeholder="請輸入其他檢查項目" className="mt-3 w-full p-3 border border-slate-300 bg-white rounded-xl outline-none focus:border-cyan-500 transition text-sm font-bold text-slate-800 placeholder-slate-400" />
+                                  )}
+                                </div>
+                              )}
                               <label className="block text-xs sm:text-sm font-black text-slate-500 mb-2">是否做過其他治療？</label>
                               <div className="flex flex-wrap gap-2 mb-3">
                                 {['健保復健', '增生注射', '徒手運動治療', 'PRP', '震波', '其他'].map(option => {
@@ -1042,7 +1092,27 @@ export default function SelfPayBookingPage() {
                           <span>Line帳號綁定開始預約</span>
                         </button>
 
-  
+                        <div className="mt-5 border-t border-slate-200 pt-5 text-left">
+                          <p className="text-sm font-black text-slate-800 mb-3 flex items-center gap-2">
+                            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-cyan-100 text-cyan-700 text-xs">◎</span>
+                            看診流程
+                          </p>
+                          <ol className="flex flex-wrap items-center gap-x-2 gap-y-2 text-xs sm:text-sm font-bold text-slate-600">
+                            {[
+                              '選日期及填資料',
+                              '預約完成',
+                              '提前 10 分鐘報到繳費',
+                              '超音波及動作評估',
+                              '醫師診療'
+                            ].map((step, index) => (
+                              <li key={step} className="flex items-center gap-2">
+                                <span className="text-cyan-600">{index + 1}</span>
+                                <span>{step}</span>
+                                {index < 4 && <span className="text-slate-300">→</span>}
+                              </li>
+                            ))}
+                          </ol>
+                        </div>
 
                       </div>
                     </div>
@@ -1124,25 +1194,6 @@ export default function SelfPayBookingPage() {
       {activeTab === 'booking' && (
         <div className="px-3 sm:px-4 pb-16">
         <section className="max-w-6xl mx-auto mt-5 space-y-5">
-          <div className="bg-white border border-slate-200 rounded-3xl p-5 sm:p-8 shadow-sm">
-            <h2 className="text-xl sm:text-2xl font-black text-slate-900 mb-5">看診流程</h2>
-            <ol className="flex flex-wrap items-center gap-2 text-sm sm:text-base font-bold text-slate-700">
-              {[
-                '① 選日期及填資料',
-                '② 預約完成',
-                '③ 提前 10 分鐘至櫃檯報到並繳費',
-                '④ 超音波及動作評估',
-                '⑤ 醫師診療'
-                
-              ].map((step, index) => (
-                <li key={step} className="flex items-center gap-2">
-                  <span className="rounded-lg bg-slate-50 px-3 py-2">{step}</span>
-                  {index < 5 && <span className="text-cyan-600 leading-none">→</span>}
-                </li>
-              ))}
-            </ol>
-          </div>
-
           <div className="bg-amber-50 border border-amber-200 rounded-3xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div>
               <h2 className="text-lg font-black text-slate-900">停車資訊</h2>
