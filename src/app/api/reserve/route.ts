@@ -1,6 +1,25 @@
 import { NextResponse } from 'next/server';
 import { sql } from '@vercel/postgres';
 
+type SlotSettings = Record<string, 'open' | 'reserved'>;
+
+const normalizeSlotSettings = (value: unknown): SlotSettings => {
+  const parsed = typeof value === 'string' ? JSON.parse(value) : value;
+  if (Array.isArray(parsed)) {
+    return parsed.reduce<SlotSettings>((slots, time) => {
+      if (typeof time === 'string') slots[time] = 'open';
+      return slots;
+    }, {});
+  }
+  if (parsed && typeof parsed === 'object') {
+    return Object.entries(parsed as Record<string, unknown>).reduce<SlotSettings>((slots, [time, status]) => {
+      if (status === 'open' || status === 'reserved') slots[time] = status;
+      return slots;
+    }, {});
+  }
+  return {};
+};
+
 // 自動為每筆網頁預約產生一組隨機不重複的預約 ID
 function generateShortId(): string {
   return 'BK' + Math.random().toString(36).substring(2, 7).toUpperCase();
@@ -39,6 +58,15 @@ export async function POST(request: Request) {
     const newTargetDateTime = new Date(`${date}T${cleanTime}:00+08:00`);
     if (isNaN(newTargetDateTime.getTime())) {
       return NextResponse.json({ success: false, error: '預約時間格式錯誤' }, { status: 400 });
+    }
+
+    // 僅允許一般開放時段提交；後台保留時段會展示為「已預約」，不可被繞過前端直接預約。
+    const { rows: settingsRows } = await sql`
+      SELECT time_slots FROM doctor_settings WHERE date = ${date} LIMIT 1;
+    `;
+    const slotSettings = normalizeSlotSettings(settingsRows[0]?.time_slots);
+    if (slotSettings[timeSlot] !== 'open') {
+      return NextResponse.json({ success: false, error: '此時段目前已預約或未開放，請重新選擇其他時段。' });
     }
 
     // ----------------------------------------------------------------

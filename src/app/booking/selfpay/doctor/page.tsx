@@ -2,6 +2,26 @@
 
 import React, { useState, useEffect } from 'react';
 
+type SlotStatus = 'open' | 'reserved';
+type SlotSettings = Record<string, SlotStatus>;
+
+const normalizeSlotSettings = (value: unknown): SlotSettings => {
+  const parsed = typeof value === 'string' ? JSON.parse(value) : value;
+  if (Array.isArray(parsed)) {
+    return parsed.reduce<SlotSettings>((slots, time) => {
+      if (typeof time === 'string') slots[time] = 'open';
+      return slots;
+    }, {});
+  }
+  if (parsed && typeof parsed === 'object') {
+    return Object.entries(parsed as Record<string, unknown>).reduce<SlotSettings>((slots, [time, status]) => {
+      if (status === 'open' || status === 'reserved') slots[time] = status;
+      return slots;
+    }, {});
+  }
+  return {};
+};
+
 export default function DoctorAdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(true);
   const [activeTab, setActiveTab] = useState<'list' | 'settings'>('list');
@@ -14,8 +34,8 @@ export default function DoctorAdminPage() {
   // 🌟 新增：月份選擇狀態
   const [selectedMonth, setSelectedMonth] = useState<string>('');
   
-  const [activeSlots, setActiveSlots] = useState<string[]>([]);
-  const [allSchedules, setAllSchedules] = useState<Record<string, string[]>>({});
+  const [activeSlots, setActiveSlots] = useState<SlotSettings>({});
+  const [allSchedules, setAllSchedules] = useState<Record<string, SlotSettings>>({});
   const [isListLoading, setIsListLoading] = useState(false);
   const [isSaveLoading, setIsSaveLoading] = useState(false);
   const [expandedRows, setExpandedRows] = useState<Record<number, boolean>>({});
@@ -95,7 +115,11 @@ export default function DoctorAdminPage() {
       const res = await fetch(`/api/doctor-settings`);
       const data = await res.json();
       if (data && data.success) {
-        setAllSchedules(data.settings || {});
+        const schedules = Object.entries(data.settings || {}).reduce<Record<string, SlotSettings>>((result, [date, slots]) => {
+          result[date] = normalizeSlotSettings(slots);
+          return result;
+        }, {});
+        setAllSchedules(schedules);
       }
     } catch (err) {
       console.error(err);
@@ -108,9 +132,7 @@ export default function DoctorAdminPage() {
       const data = await res.json();
       if (data && data.success) {
         const schedules = data.settings || {};
-        const rawSlots = schedules[dateStr] || [];
-        const parsedSlots = typeof rawSlots === 'string' ? JSON.parse(rawSlots) : rawSlots;
-        setActiveSlots(parsedSlots || []);
+        setActiveSlots(normalizeSlotSettings(schedules[dateStr] || {}));
       }
     } catch (err) {
       console.error("載入特定日期排班失敗:", err);
@@ -126,20 +148,23 @@ export default function DoctorAdminPage() {
   };
 
   const handleSlotToggle = (timeText: string) => {
-    if (activeSlots.includes(timeText)) {
-      setActiveSlots(activeSlots.filter(s => s !== timeText));
-    } else {
-      setActiveSlots([...activeSlots, timeText]);
-    }
+    setActiveSlots(current => {
+      const currentStatus = current[timeText];
+      if (currentStatus === 'open') return { ...current, [timeText]: 'reserved' };
+      if (currentStatus === 'reserved') {
+        const { [timeText]: _, ...remaining } = current;
+        return remaining;
+      }
+      return { ...current, [timeText]: 'open' };
+    });
   };
 
   const handleGroupSelectAll = (groupKey: 'morning' | 'afternoon' | 'evening', isChecked: boolean) => {
     const groupTexts = slotsData[groupKey].map(item => item.t);
     if (isChecked) {
-      const newSlots = Array.from(new Set([...activeSlots, ...groupTexts]));
-      setActiveSlots(newSlots);
+      setActiveSlots(current => groupTexts.reduce<SlotSettings>((slots, time) => ({ ...slots, [time]: 'open' }), current));
     } else {
-      setActiveSlots(activeSlots.filter(s => !groupTexts.includes(s)));
+      setActiveSlots(current => Object.fromEntries(Object.entries(current).filter(([time]) => !groupTexts.includes(time))) as SlotSettings);
     }
   };
 
@@ -213,11 +238,11 @@ export default function DoctorAdminPage() {
   const getOpenSlotsCountForDate = (dateStr: string) => {
     const raw = allSchedules[dateStr];
     if (!raw) return 0;
-    return typeof raw === 'string' ? JSON.parse(raw).length : raw.length;
+    return Object.values(raw).filter(status => status === 'open').length;
   };
 
   const dashboardOpenSlotsCount = activeTab === 'settings' && dashboardDate === selectedDate 
-    ? activeSlots.length 
+    ? Object.values(activeSlots).filter(status => status === 'open').length
     : getOpenSlotsCountForDate(dashboardDate);
 
   const renderCalendarWidget = (type: 'list' | 'settings') => {
@@ -513,11 +538,12 @@ export default function DoctorAdminPage() {
               </div>
 
               <div className="md:col-span-2 space-y-6">
+                <p className="rounded-xl border border-amber-200 bg-amber-50 p-3 text-xs font-bold leading-relaxed text-amber-800">時段依序點選：一般開放 → 保留（病患端顯示「已預約」）→ 不開放。</p>
                 <label className="block text-slate-500 font-black text-sm">2. 勾選當日特約診次時段</label>
                 {['morning', 'afternoon', 'evening'].map((group) => {
                   const groupKey = group as 'morning' | 'afternoon' | 'evening';
                   const groupTexts = slotsData[groupKey].map(item => item.t);
-                  const isAllGroupSelected = groupTexts.every(t => activeSlots.includes(t));
+                  const isAllGroupSelected = groupTexts.every(t => activeSlots[t] === 'open');
 
                   return (
                     <div key={group} className="space-y-3 bg-slate-50 p-5 rounded-2xl border border-slate-200 shadow-sm">
@@ -532,12 +558,14 @@ export default function DoctorAdminPage() {
                       </div>
                       <div className="grid grid-cols-3 gap-3">
                         {slotsData[groupKey].map(item => {
-                          const isChecked = activeSlots.includes(item.t);
+                          const status = activeSlots[item.t];
+                          const isOpen = status === 'open';
+                          const isReserved = status === 'reserved';
                           return (
-                            <label key={item.v} className={`flex items-center justify-center p-3.5 border-2 rounded-xl cursor-pointer text-sm font-black transition-all ${isChecked ? 'bg-teal-50 border-teal-500 text-teal-600 shadow-sm' : 'border-slate-200 bg-white text-slate-400 hover:bg-slate-50 hover:border-slate-400'}`}>
-                              <input type="checkbox" checked={isChecked} onChange={() => handleSlotToggle(item.t)} className="hidden" />
+                            <button key={item.v} type="button" onClick={() => handleSlotToggle(item.t)} className={`flex min-h-[76px] flex-col items-center justify-center p-3.5 border-2 rounded-xl cursor-pointer text-sm font-black transition-all ${isOpen ? 'bg-teal-50 border-teal-500 text-teal-600 shadow-sm' : isReserved ? 'bg-amber-50 border-amber-400 text-amber-700 shadow-sm' : 'border-slate-200 bg-white text-slate-400 hover:bg-slate-50 hover:border-slate-400'}`}>
                               <span>{item.t}</span>
-                            </label>
+                              <span className="mt-1 text-[11px]">{isOpen ? '一般開放' : isReserved ? '保留／已預約' : '不開放'}</span>
+                            </button>
                           );
                         })}
                       </div>

@@ -7,6 +7,26 @@ import ScrollAnimation from '@/components/ScrollAnimation';
 import Link from 'next/link';
 import Image from 'next/image';
 
+type SlotStatus = 'open' | 'reserved';
+type SlotSettings = Record<string, SlotStatus>;
+
+const normalizeSlotSettings = (value: unknown): SlotSettings => {
+  const parsed = typeof value === 'string' ? JSON.parse(value) : value;
+  if (Array.isArray(parsed)) {
+    return parsed.reduce<SlotSettings>((slots, time) => {
+      if (typeof time === 'string') slots[time] = 'open';
+      return slots;
+    }, {});
+  }
+  if (parsed && typeof parsed === 'object') {
+    return Object.entries(parsed as Record<string, unknown>).reduce<SlotSettings>((slots, [time, status]) => {
+      if (status === 'open' || status === 'reserved') slots[time] = status;
+      return slots;
+    }, {});
+  }
+  return {};
+};
+
 import { 
   FaCalendarCheck, 
   FaUser, 
@@ -303,7 +323,7 @@ export default function SelfPayBookingPage() {
   const [lineDisplayName, setLineDisplayName] = useState<string>('');
   const [linePictureUrl, setLinePictureUrl] = useState<string>('');
   
-  const [cachedSchedule, setCachedSchedule] = useState<Record<string, string[]>>({});
+  const [cachedSchedule, setCachedSchedule] = useState<Record<string, SlotSettings>>({});
   const [allAppointments, setAllAppointments] = useState<any[]>([]); 
   
   const [selectedDate, setSelectedDate] = useState<string>('');
@@ -405,7 +425,11 @@ export default function SelfPayBookingPage() {
       .then(res => res.json())
       .then(settingsRes => {
         if (settingsRes && settingsRes.success) {
-          setCachedSchedule(settingsRes.settings || {});
+          const schedules = Object.entries(settingsRes.settings || {}).reduce<Record<string, SlotSettings>>((result, [date, slots]) => {
+            result[date] = normalizeSlotSettings(slots);
+            return result;
+          }, {});
+          setCachedSchedule(schedules);
         }
         const todayISO = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().split('T')[0];
         return fetch(`/api/reserve?action=getAllAppointments&startDate=${todayISO}`);
@@ -454,7 +478,7 @@ export default function SelfPayBookingPage() {
 
   // 修改：改為回傳所有排定的時段，不再剔除已被預約的時段
   const getAvailableSlots = (dateStr: string) => {
-    return cachedSchedule[dateStr] || [];
+    return Object.keys(cachedSchedule[dateStr] || {});
   };
 
   const isSlotExpiredForDate = (dateStr: string, slotText: string) => {
@@ -483,8 +507,11 @@ export default function SelfPayBookingPage() {
   const isSlotBooked = (dateStr: string, slot: string) =>
     allAppointments.some(a => a.date === dateStr && (a.time_slot === slot || a.time === slot));
 
+  const isSlotReserved = (dateStr: string, slot: string) =>
+    cachedSchedule[dateStr]?.[slot] === 'reserved';
+
   const getRemainingSlots = (dateStr: string) =>
-    getAvailableSlots(dateStr).filter(slot => !isSlotExpiredForDate(dateStr, slot) && !isSlotBooked(dateStr, slot));
+    getAvailableSlots(dateStr).filter(slot => cachedSchedule[dateStr]?.[slot] === 'open' && !isSlotExpiredForDate(dateStr, slot) && !isSlotBooked(dateStr, slot));
 
   const getNextAvailableAppointment = () => {
     const today = new Date();
@@ -705,11 +732,11 @@ export default function SelfPayBookingPage() {
       const dateStr = new Date(dateObj.getTime() - dateObj.getTimezoneOffset() * 60000).toISOString().split('T')[0];
       
       const isPast = dateStr < todayStr;
-      const availableSlots = cachedSchedule[dateStr] || [];
-      const hasSlots = availableSlots.length > 0;
+      const availableSlots = cachedSchedule[dateStr] || {};
+      const hasSlots = Object.keys(availableSlots).length > 0;
       const remainingCount = getRemainingSlots(dateStr).length;
       const isFull = !isPast && hasSlots && remainingCount === 0;
-      const isDisabled = isPast || !hasSlots || isFull;
+      const isDisabled = isPast || !hasSlots;
       const isSelected = selectedDate === dateStr;
 
       days.push(
@@ -721,7 +748,7 @@ export default function SelfPayBookingPage() {
           className={`mx-auto flex min-h-10 w-11 flex-col items-center justify-center font-bold transition-all select-none
             text-sm rounded-lg sm:min-h-12 sm:w-12 sm:text-base md:text-lg sm:rounded-full
             ${isSelected ? 'bg-cyan-600 text-white shadow-md scale-105 sm:scale-110' : 
-              isFull ? 'text-rose-500 bg-rose-50 border border-rose-200 cursor-not-allowed' :
+              isFull ? 'text-rose-500 bg-rose-50 border border-rose-200 hover:border-rose-400' :
               isDisabled ? 'text-slate-300 opacity-20 cursor-not-allowed bg-transparent border-none' : 
               'text-slate-700 hover:bg-slate-200 hover:text-cyan-600 bg-white shadow-sm border border-slate-200'
             }
@@ -884,9 +911,9 @@ export default function SelfPayBookingPage() {
                           </h2>
                           {displaySlots.length > 0 ? (
                             <div className="grid grid-cols-3 gap-2 sm:gap-4">
-                              {/* 修改：在渲染時段時，判斷是否已被預約，並呈現為反灰不可選取 */}
+                              {/* 保留時段也會顯示給病患，但不可自行預約。 */}
                               {displaySlots.map(slot => {
-                                const isBooked = isSlotBooked(selectedDate, slot);
+                                const isBooked = isSlotBooked(selectedDate, slot) || isSlotReserved(selectedDate, slot);
                                 return (
                                   <button 
                                     key={slot} 
