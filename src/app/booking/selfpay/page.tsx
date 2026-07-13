@@ -10,6 +10,28 @@ import Image from 'next/image';
 type SlotStatus = 'open' | 'reserved';
 type SlotSettings = Record<string, SlotStatus>;
 
+const getSlotStartMinutes = (slot: string) => {
+  const match = slot.match(/(\d{1,2}):(\d{2})/);
+  if (!match) return Number.MAX_SAFE_INTEGER;
+
+  return Number(match[1]) * 60 + Number(match[2]);
+};
+
+const groupSlotsByTime = (slots: string[]) => {
+  const morning: string[] = [];
+  const afternoon: string[] = [];
+  const evening: string[] = [];
+
+  slots.forEach(slot => {
+    const startMinutes = getSlotStartMinutes(slot);
+    if (startMinutes < 12 * 60) morning.push(slot);
+    else if (startMinutes < 18 * 60) afternoon.push(slot);
+    else evening.push(slot);
+  });
+
+  return [morning, afternoon, evening].filter(group => group.length > 0);
+};
+
 const normalizeSlotSettings = (value: unknown): SlotSettings => {
   const parsed = typeof value === 'string' ? JSON.parse(value) : value;
   if (Array.isArray(parsed)) {
@@ -478,7 +500,9 @@ export default function SelfPayBookingPage() {
 
   // 修改：改為回傳所有排定的時段，不再剔除已被預約的時段
   const getAvailableSlots = (dateStr: string) => {
-    return Object.keys(cachedSchedule[dateStr] || {});
+    return Object.keys(cachedSchedule[dateStr] || {}).sort(
+      (a, b) => getSlotStartMinutes(a) - getSlotStartMinutes(b) || a.localeCompare(b)
+    );
   };
 
   const isSlotExpiredForDate = (dateStr: string, slotText: string) => {
@@ -910,29 +934,33 @@ export default function SelfPayBookingPage() {
                               : <span className="text-cyan-700">（剩 {getRemainingSlots(selectedDate).length} 位）</span>}
                           </h2>
                           {displaySlots.length > 0 ? (
-                            <div className="grid grid-cols-3 gap-2 sm:gap-4">
-                              {/* 保留時段也會顯示給病患，但不可自行預約。 */}
-                              {displaySlots.map(slot => {
-                                const isBooked = isSlotBooked(selectedDate, slot) || isSlotReserved(selectedDate, slot);
-                                return (
-                                  <button 
-                                    key={slot} 
-                                    type="button" 
-                                    disabled={isBooked}
-                                    onClick={() => setSelectedTime(slot)} 
-                                    className={`border font-black rounded-xl transition-all select-none py-2.5 text-sm sm:py-4 sm:text-base 
-                                      ${isBooked ? 'bg-slate-100 border-slate-200 text-slate-400 cursor-not-allowed opacity-60' :
-                                        selectedTime === slot ? 'bg-gradient-to-r from-cyan-600 to-blue-600 border-cyan-500 text-white shadow-md font-black scale-[1.02]' : 
-                                        'border-slate-200 bg-white text-slate-700 hover:border-cyan-500 hover:bg-slate-50'
-                                      }`}
-                                  >
-                                    <span className="block">{isBooked ? '●' : '○'} {slot}</span>
-                                    <span className={`text-xs font-bold ${isBooked ? 'opacity-80' : 'text-cyan-600'}`}>
-                                      {isBooked ? '已預約' : '可預約'}
-                                    </span>
-                                  </button>
-                                );
-                              })}
+                            <div className="space-y-5 sm:space-y-6">
+                              {groupSlotsByTime(displaySlots).map((slotGroup, groupIndex) => (
+                                <div key={groupIndex} className="grid grid-cols-3 gap-2 sm:gap-4">
+                                  {/* 保留時段也會顯示給病患，但不可自行預約。 */}
+                                  {slotGroup.map(slot => {
+                                    const isBooked = isSlotBooked(selectedDate, slot) || isSlotReserved(selectedDate, slot);
+                                    return (
+                                      <button
+                                        key={slot}
+                                        type="button"
+                                        disabled={isBooked}
+                                        onClick={() => setSelectedTime(slot)}
+                                        className={`border font-black rounded-xl transition-all select-none py-2.5 text-sm sm:py-4 sm:text-base
+                                          ${isBooked ? 'bg-slate-100 border-slate-200 text-slate-400 cursor-not-allowed opacity-60' :
+                                            selectedTime === slot ? 'bg-gradient-to-r from-cyan-600 to-blue-600 border-cyan-500 text-white shadow-md font-black scale-[1.02]' :
+                                            'border-slate-200 bg-white text-slate-700 hover:border-cyan-500 hover:bg-slate-50'
+                                          }`}
+                                      >
+                                        <span className="block">{isBooked ? '●' : '○'} {slot}</span>
+                                        <span className={`text-xs font-bold ${isBooked ? 'opacity-80' : 'text-cyan-600'}`}>
+                                          {isBooked ? '已預約' : '可預約'}
+                                        </span>
+                                      </button>
+                                    );
+                                  })}
+                                </div>
+                              ))}
                             </div>
                           ) : (
                             <div className="text-center text-rose-500 font-black py-4 sm:py-5 bg-rose-50 border border-rose-100 rounded-xl text-xs sm:text-sm md:text-base">⚠️ 抱歉，本日期之特約時段已全數預約額滿。</div>
