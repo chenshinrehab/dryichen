@@ -258,7 +258,13 @@ export const sportsInjuriesData = [
         description: '深度解析兒童大動作、細動作與語言發展的正常里程碑，並說明各年齡層的發展警訊（red flags）。實證研究顯示早期發現、及早療育能顯著改善發展遲緩兒童的長期預後，本文以淺顯易懂的語言搭配圖表，幫助家長掌握黃金治療期。',
         image: '/images/news/article/child-development-early-intervention.webp',
       },
-    
+                                        {
+        slug: 'manual-therapy-vs-massage-comparison',
+        title: '物理治療師徒手治療：肌膜放鬆運動治療，跟坊間按摩差在哪？',
+        description: '物理治療師的徒手治療（含肌膜放鬆）與坊間按摩，看似都是「用手處理痠痛」，本質卻大不相同。本文以實證研究為基礎，說明兩者在專業訓練、評估邏輯與治療目標上的差異，解析價格落差的原因，並提供效果比較與選擇建議。',
+        image: '/images/news/article/manualtherapy.webp',
+      },
+
     ]
   },
 

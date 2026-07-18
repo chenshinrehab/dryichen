@@ -20,19 +20,44 @@ import {
 // 定義回傳資料的型別
 interface AIResult {
   recommendedIds: string[];
-  externalSuggestions?: string[];
+  externalSuggestions: string[];
+  urgent?: boolean;
 }
 
 // 定義要存入 Storage 的資料結構
 const STORAGE_KEY = 'ai_symptom_cache';
+
+function parseAIResult(value: unknown): AIResult | null {
+  if (!value || typeof value !== 'object') return null;
+
+  const candidate = value as Record<string, unknown>;
+  if (!Array.isArray(candidate.recommendedIds) || !Array.isArray(candidate.externalSuggestions)) {
+    return null;
+  }
+
+  if (
+    !candidate.recommendedIds.every((id) => typeof id === 'string') ||
+    !candidate.externalSuggestions.every((name) => typeof name === 'string')
+  ) {
+    return null;
+  }
+
+  return {
+    recommendedIds: candidate.recommendedIds,
+    externalSuggestions: candidate.externalSuggestions,
+    urgent: candidate.urgent === true,
+  };
+}
 
 export default function SymptomChecker() {
   const [input, setInput] = useState('');
   const [isExpanded, setIsExpanded] = useState(false);
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<AIResult | null>(null);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
   
   const formRef = useRef<HTMLFormElement>(null);
+  const requestInFlightRef = useRef(false);
 
   // ============================================================
   // 💾 新增功能 1：組件載入時，檢查有沒有「暫存結果」
@@ -42,9 +67,14 @@ export default function SymptomChecker() {
         const cachedData = sessionStorage.getItem(STORAGE_KEY);
         if (cachedData) {
             const parsed = JSON.parse(cachedData);
-            if (parsed.result && (parsed.result.recommendedIds.length > 0 || (parsed.result.externalSuggestions?.length || 0) > 0)) {
+            const cachedResult = parseAIResult(parsed.result);
+            if (
+                typeof parsed.input === 'string' &&
+                cachedResult &&
+                (cachedResult.recommendedIds.length > 0 || cachedResult.externalSuggestions.length > 0)
+            ) {
                 setInput(parsed.input);
-                setResult(parsed.result);
+                setResult(cachedResult);
                 setIsExpanded(true); 
             }
         }
@@ -65,30 +95,50 @@ export default function SymptomChecker() {
   }, [input]);
 
   const handleManualSubmit = async () => {
-    if (!input.trim()) return;
+    if (!input.trim() || requestInFlightRef.current) return;
+    requestInFlightRef.current = true;
     setLoading(true);
     setResult(null);
+    setErrorMessage(null);
     setIsExpanded(true); 
+    sessionStorage.removeItem(STORAGE_KEY);
+
+    const controller = new AbortController();
+    const timeoutId = window.setTimeout(() => controller.abort(), 50_000);
 
     try {
       const res = await fetch('/api/ai-triage', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ symptom: input }),
+        signal: controller.signal,
       });
-      if (!res.ok) throw new Error('API Error');
-      const data = await res.json();
+      const data = await res.json().catch(() => null);
+      if (!res.ok) {
+        throw new Error(data?.error || 'AI 服務目前無法使用');
+      }
+
+      const parsedResult = parseAIResult(data);
+      if (!parsedResult) throw new Error('AI 回傳格式異常，請稍後再試');
       
-      setResult(data);
+      setResult(parsedResult);
 
       sessionStorage.setItem(STORAGE_KEY, JSON.stringify({
           input: input,
-          result: data
+          result: parsedResult
       }));
 
     } catch (error) {
-      setResult({ recommendedIds: [], externalSuggestions: ["伺服器忙線中，請稍後再試"] });
+      const message =
+        error instanceof DOMException && error.name === 'AbortError'
+          ? '分析等待時間過長，請稍後再試'
+          : error instanceof Error
+            ? error.message
+            : 'AI 服務目前無法使用';
+      setErrorMessage(message);
     } finally {
+      window.clearTimeout(timeoutId);
+      requestInFlightRef.current = false;
       setLoading(false);
     }
   };
@@ -96,6 +146,7 @@ export default function SymptomChecker() {
   const handleClear = (e?: React.MouseEvent) => {
     if (e) e.stopPropagation(); 
     setResult(null); 
+    setErrorMessage(null);
     setInput(''); 
     setIsExpanded(false);
     sessionStorage.removeItem(STORAGE_KEY);
@@ -151,6 +202,7 @@ export default function SymptomChecker() {
 
         <textarea
           value={input}
+          maxLength={1000}
           onFocus={() => setIsExpanded(true)}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => {
@@ -191,6 +243,16 @@ export default function SymptomChecker() {
             </button>
         </div>
       </form>
+
+      {errorMessage && (
+        <div
+          role="alert"
+          className="mt-4 flex items-center rounded-xl border border-red-500/40 bg-red-950/40 px-5 py-4 text-red-200"
+        >
+          <FaCircleExclamation className="mr-3 shrink-0 text-red-400" />
+          <span>{errorMessage}</span>
+        </div>
+      )}
 
       {/* 結果顯示區 */}
       {result && (
@@ -245,7 +307,7 @@ export default function SymptomChecker() {
                                   <FaCircleExclamation className="text-amber-500/80 mr-3 text-lg" />
                                   {diseaseName}
                                   <span className="ml-3 text-xs text-slate-500 font-normal bg-slate-700/50 px-2 py-1 rounded">
-                                    {diseaseName.includes('忙線') ? '請稍後' : '本站尚無文章'}
+                                    {result?.urgent ? '請立即就醫' : '本站尚無文章'}
                                   </span>
                                 </h4>
                             </div>
