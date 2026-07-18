@@ -21,6 +21,42 @@ export async function generateStaticParams() {
 }
 
 /* ==========================================================================
+   ✨ 新增：修正內文 HTML 中「站內連結」的 target/rel 屬性
+   目的：避免瀏覽器把 target="_blank" 的站內連結（例如 /booking）
+        誤判為開啟已安裝的 PWA / 桌面應用程式，導致跳出目前分頁。
+   規則：
+     - href="/xxx"（相對路徑）→ 移除 target="_blank" 與 rel="noopener noreferrer"，改為同分頁跳轉
+     - href="https://SITE_URL/xxx"（完整網址但屬於本站）→ 同樣視為站內連結處理
+     - 其餘外部網址（如參考文獻的 https://pubmed... 等）→ 完全不受影響，維持原本新分頁開啟
+   ========================================================================== */
+function fixInternalLinkTargets(html?: string): string {
+  if (!html) return ''
+
+  return html.replace(
+    /<a\s+([^>]*?)href="([^"]+)"([^>]*?)>/gi,
+    (match, before, href, after) => {
+      const isRelative = href.startsWith('/')
+      const isSameSiteAbsolute = SITE_URL && href.startsWith(SITE_URL)
+
+      // 不是站內連結（外部網址），原樣保留
+      if (!isRelative && !isSameSiteAbsolute) {
+        return match
+      }
+
+      // 站內連結：移除 target="_blank" 與 rel="noopener noreferrer"
+      const cleanedAttrs = (before + ' ' + after)
+        .replace(/target\s*=\s*["']_blank["']/gi, '')
+        .replace(/rel\s*=\s*["']noopener noreferrer["']/gi, '')
+        .replace(/\s{2,}/g, ' ')
+        .trim()
+
+      const attrsPart = cleanedAttrs ? ` ${cleanedAttrs}` : ''
+      return `<a href="${href}"${attrsPart}>`
+    }
+  )
+}
+
+/* ==========================================================================
    1. 動態 Meta (強化重點：加入精確座標與主題性 SEO)
    ========================================================================== */
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -72,6 +108,10 @@ export default async function NewsDetailPage({ params }: PageProps) {
   const { id } = await params
   const post = getNewsById(id)
   if (!post) notFound()
+
+  // ✨ 新增：過濾內文與參考文獻 HTML 中的站內連結 target 屬性
+  const fixedContentHtml = fixInternalLinkTargets(post.contentHtml)
+  const fixedReferencesHtml = fixInternalLinkTargets(post.referencesHtml)
 
   const currentUrl = `${SITE_URL}/about/news/${id}`
   // 自動生成該頁面專屬的 QR Code 網址
@@ -419,7 +459,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
                 </header>
 
                 <div className="article-content text-slate-300 leading-relaxed text-lg pb-6">
-                  <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+                  <div dangerouslySetInnerHTML={{ __html: fixedContentHtml }} />
                 </div>
               </div>
 
@@ -514,7 +554,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
 
                     <div
                       className="references-content w-full text-slate-400 text-sm md:text-base leading-relaxed break-all"
-                      dangerouslySetInnerHTML={{ __html: post.referencesHtml }}
+                      dangerouslySetInnerHTML={{ __html: fixedReferencesHtml }}
                     />
 
                     <div className="mt-5 pt-3 border-t border-slate-700/30 flex items-center gap-2">

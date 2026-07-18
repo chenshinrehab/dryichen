@@ -11,10 +11,17 @@ type SlotStatus = 'open' | 'reserved';
 type SlotSettings = Record<string, SlotStatus>;
 
 const getSlotStartMinutes = (slot: string) => {
-  const match = slot.match(/(\d{1,2}):(\d{2})/);
+  const match = slot.match(/(\d{1,2}):(\d{2})\s*(AM|PM)?/i);
   if (!match) return Number.MAX_SAFE_INTEGER;
 
-  return Number(match[1]) * 60 + Number(match[2]);
+  let hours = Number(match[1]);
+  const minutes = Number(match[2]);
+  const period = match[3]?.toUpperCase();
+
+  if (period === 'PM' && hours !== 12) hours += 12;
+  if (period === 'AM' && hours === 12) hours = 0;
+
+  return hours * 60 + minutes;
 };
 
 const groupSlotsByTime = (slots: string[]) => {
