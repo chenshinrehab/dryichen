@@ -920,6 +920,13 @@ export const sportsInjuriesData = [
     description: '日常診間生活心得及趣事分享',
     image: '/images/sportinjury/8.webp',
     injuries: [
+
+                              {
+        slug: 'prp-overuse-reflection',
+        title: '打了這麼多 PRP，真的都需要嗎？診間自費醫療的誠實告白 🩺',
+        description: '最近門診遇到幾個病人，也拒絕了幾個慕名要求打 PRP 的病患。面對恐嚇式的醫療行銷，我想誠實地聊聊：不是每個問題都要用最貴的方法解決，該用什麼治療要看病情，而不是看價格。',
+        image:  '/images/news/article/prp-overuse.webp',
+      },
                         {
         slug: 'efficient-clinical-visit-guide',
         title: '醫病也醫心：一份讓彼此都輕鬆的「看診攻略」🩺✨',
