@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import FooterSearch from '@/components/FooterSearch';
 import ScrollAnimation from '@/components/ScrollAnimation';
 
@@ -19,6 +20,8 @@ import { HiLocationMarker } from "react-icons/hi";
 
 export default function Footer() {
   const [visitCount, setVisitCount] = useState<string>('---,---')
+  const pathname = usePathname()
+  const isSelfPayPage = pathname === '/booking/selfpay' || pathname === '/booking/selfpay/doctor'
 
   // =================================================================
   // 瀏覽人數計算邏輯
@@ -44,7 +47,7 @@ export default function Footer() {
   }, [])
 
   return (
-    <footer className="bg-slate-900 border-t border-slate-800 pt-10 pb-6 mt-auto">
+    <footer className={`border-t pt-10 pb-6 mt-auto ${isSelfPayPage ? 'bg-white border-slate-200' : 'bg-slate-900 border-slate-800'}`}>
       
       {/* 載入滾動動畫組件 */}
       <ScrollAnimation />
@@ -55,7 +58,7 @@ export default function Footer() {
             Part 1: 快速導覽 (圖片區)
            ========================================= */}
         <div className="mb-8">
-            <h3 className="text-2xl font-bold font-sans text-white text-center mb-6 tracking-wide">
+            <h3 className={`text-2xl font-bold font-sans text-center mb-6 tracking-wide ${isSelfPayPage ? 'text-slate-800' : 'text-white'}`}>
                 <span className="text-cyan-400">快速</span>導覽
             </h3>
             
@@ -63,7 +66,7 @@ export default function Footer() {
                 
                {/* 1. 關於我們 */}
                 {/* ✨ 修改處：移除 prefetch={false}，釋放 Next.js 靜態預載，回復點擊秒開體感 */}
-                <Link href="/about" className="animate-on-scroll delay-100 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block">
+                <Link href="/about" className={`animate-on-scroll delay-100 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block ${isSelfPayPage ? 'border-transparent' : 'border-slate-700'}`}>
                   <img
                     src="/images/icons/a.webp" 
                     alt="關於我們 - 宸新復健科" 
@@ -76,7 +79,7 @@ export default function Footer() {
 
                 {/* 2. 治療方式 */}
                 {/* ✨ 修改處：移除 prefetch={false} */}
-                <Link href="/treatments" className="animate-on-scroll delay-200 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block">
+                <Link href="/treatments" className={`animate-on-scroll delay-200 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block ${isSelfPayPage ? 'border-transparent' : 'border-slate-700'}`}>
                   <img
                     src="/images/icons/b.webp" 
                     alt="治療方式 - PRP與震波" 
@@ -89,7 +92,7 @@ export default function Footer() {
 
                 {/* 3. 減重與骨齡 */}
                 {/* ✨ 修改處：移除 prefetch={false} */}
-                <Link href="/weight-bone" className="animate-on-scroll delay-300 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block">
+                <Link href="/weight-bone" className={`animate-on-scroll delay-300 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block ${isSelfPayPage ? 'border-transparent' : 'border-slate-700'}`}>
                   <img
                     src="/images/icons/e.webp" 
                     alt="特色門診" 
@@ -102,7 +105,7 @@ export default function Footer() {
 
                 {/* 4. 疾病衛教 */}
                 {/* ✨ 修改處：移除 prefetch={false} */}
-                <Link href="/diseases" className="animate-on-scroll delay-400 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block">
+                <Link href="/diseases" className={`animate-on-scroll delay-400 group rounded-xl relative h-28 md:h-36 overflow-hidden shadow-lg border hover:border-cyan-500 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all block ${isSelfPayPage ? 'border-transparent' : 'border-slate-700'}`}>
                   <img
                     src="/images/icons/d.webp" 
                     alt="疾病衛教文章" 
@@ -118,8 +121,8 @@ export default function Footer() {
         {/* =========================================
             Part 2: 站內搜尋
            ========================================= */}
-        <div className="max-w-3xl mx-auto mb-6 border-b border-slate-800 pb-6">
-            <FooterSearch />
+        <div className={`max-w-3xl mx-auto mb-6 border-b pb-6 ${isSelfPayPage ? 'border-slate-200' : 'border-slate-800'}`}>
+            <FooterSearch lightMode={isSelfPayPage} />
         </div>
 
         {/* =========================================
@@ -129,7 +132,7 @@ export default function Footer() {
           
           {/* 1. 左側：追蹤我們 + 社群按鈕 + 預約按鈕 */}
           <div className="w-full lg:w-auto">
-            <h3 className="text-lg font-bold text-white mb-3 flex items-center h-[28px]">
+            <h3 className={`text-lg font-bold mb-3 flex items-center h-[28px] ${isSelfPayPage ? 'text-slate-800' : 'text-white'}`}>
                 追蹤我們
             </h3>
             
@@ -141,8 +144,8 @@ export default function Footer() {
                 <a href="https://www.instagram.com/dryichen/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-pink-500/30" title="Instagram">
                   <FaInstagram size={18} />
                 </a>
-                <a href="https://www.threads.net/@dryichen" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white text-black flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-white/30" title="Threads">
-                  <SiThreads size={18} />
+                <a href="https://www.threads.net/@dryichen" target="_blank" rel="noopener noreferrer" className={`w-9 h-9 rounded-full bg-white text-black flex items-center justify-center hover:scale-110 transition-transform shadow-lg ${isSelfPayPage ? 'border border-black shadow-slate-400/30' : 'shadow-white/30'}`} title="Threads">
+                  <SiThreads size={18} className="text-black" />
                 </a>
                 <a href="https://youtube.com/@dryichen" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-[#FF0000] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-red-500/30" title="YouTube">
                   <FaYoutube size={20} />
@@ -158,22 +161,25 @@ export default function Footer() {
 
           {/* 2. 中間：累計瀏覽 */}
           <div className="flex flex-col items-center justify-center w-full lg:w-auto my-4 lg:my-0">
-             <div className="bg-slate-800/80 px-6 py-3 rounded-xl border border-slate-600/50 flex items-center gap-3 shadow-[0_4px_10px_rgba(0,0,0,0.2)]">
+             <div className={`px-6 py-3 rounded-xl border flex items-center gap-3 ${isSelfPayPage
+               ? 'bg-slate-50 border-slate-200 shadow-[0_4px_10px_rgba(0,0,0,0.12)]'
+               : 'bg-slate-800/80 border-slate-600/50 shadow-[0_4px_10px_rgba(0,0,0,0.2)]'
+             }`}>
                 <span className="relative flex h-3 w-3">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                 </span>
                 
-                <span className="text-sm text-slate-300 font-medium">累計瀏覽:</span>
+                <span className={`text-sm font-medium ${isSelfPayPage ? 'text-slate-600' : 'text-slate-300'}`}>累計瀏覽:</span>
                 
-                <span className="font-mono text-cyan-400 font-bold tracking-widest text-xl">
+                <span className={`font-mono font-bold tracking-widest text-xl ${isSelfPayPage ? 'text-cyan-700' : 'text-cyan-400'}`}>
                     {visitCount}
                 </span>
              </div>
           </div>
 
           {/* 3. 右側：診所資訊 */}
-          <div className="text-center lg:text-right text-slate-300 space-y-1.5 w-full lg:w-auto text-sm">
+          <div className={`text-center lg:text-right space-y-1.5 w-full lg:w-auto text-sm ${isSelfPayPage ? 'text-slate-700' : 'text-slate-300'}`}>
           <a 
             href="tel:+886-3-564-7999" 
             className="flex items-center justify-center lg:justify-end gap-2 group cursor-pointer hover:text-cyan-400 transition-colors"
@@ -209,12 +215,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-slate-800 my-4"></div>
+        <div className={`border-t my-4 ${isSelfPayPage ? 'border-slate-200' : 'border-slate-800'}`}></div>
 
         <div className="text-center">
-          <p className="text-slate-500 text-xs leading-relaxed">
+          <p className={`text-xs leading-relaxed ${isSelfPayPage ? 'text-slate-600' : 'text-slate-500'}`}>
             © {new Date().getFullYear()} 宸新復健科診所 林羿辰醫師. All Rights Reserved.<br />
-            <span className="text-slate-600 block mt-1">本網站內容僅供衛教參考，不能取代專業醫師診斷。</span>
+            <span className={`block mt-1 ${isSelfPayPage ? 'text-slate-500' : 'text-slate-600'}`}>本網站內容僅供衛教參考，不能取代專業醫師診斷。</span>
           </p>
         </div>
 

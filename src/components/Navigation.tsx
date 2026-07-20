@@ -30,6 +30,7 @@ type NavItem = {
 
 export default function Navigation() {
   const pathname = usePathname()
+  const isSelfPayPage = pathname === '/booking/selfpay' || pathname === '/booking/selfpay/doctor'
 
   const isActive = (path: string) => {
     if (path === '/') return pathname === '/'
@@ -100,14 +101,17 @@ export default function Navigation() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-700 shadow-lg shadow-cyan-900/20">
+    <header className={`sticky top-0 z-50 backdrop-blur-md border-b shadow-lg ${isSelfPayPage
+      ? 'bg-white/95 border-slate-200 shadow-slate-200/60'
+      : 'bg-slate-900/95 border-slate-700 shadow-cyan-900/20'
+    }`}>
       <div className="container mx-auto px-3">
         
         {/* Logo 區塊 */}
-        <div className="relative flex items-center justify-between py-2 md:py-3 border-b border-slate-800/50 min-h-[52px] md:min-h-[60px]">
+        <div className={`relative flex items-center justify-between py-2 md:py-3 border-b min-h-[52px] md:min-h-[60px] ${isSelfPayPage ? 'border-slate-200/80' : 'border-slate-800/50'}`}>
           {/* ✨ 修改處：移除 prefetch={false} 釋放首頁高速預載快取 */}
           <Link href="/" className="flex items-center gap-2.5 group cursor-pointer md:absolute md:left-1/2 md:-translate-x-1/2 z-10" aria-label="宸新復健科首頁">
-              <div className="relative w-10 h-10 md:w-14 md:h-14">
+              <div className={`relative w-10 h-10 md:w-14 md:h-14 ${isSelfPayPage ? 'rounded-full overflow-hidden' : ''}`}>
                   <Image 
                     src="/images/main/logo.webp" 
                     alt="新竹宸新復健科診所 Logo" 
@@ -117,10 +121,15 @@ export default function Navigation() {
                   />
               </div>
               <div className="text-left">
-                <div className="text-base md:text-2xl font-bold font-sans text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 leading-tight">
-                  運動教練醫師-林羿辰
+                <div className={`text-base md:text-2xl font-bold font-sans leading-tight ${isSelfPayPage
+                  ? 'text-slate-800'
+                  : 'text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400'
+                }`}>
+                  {isSelfPayPage ? (
+                    <><span className="text-cyan-600">運動教練醫師-</span>林羿辰</>
+                  ) : '運動教練醫師-林羿辰'}
                 </div>
-                <p className="text-[10px] md:text-xs text-slate-400 tracking-wider leading-none mt-0.5">宸新復健科診所院長</p>
+                <p className={`text-[10px] md:text-xs tracking-wider leading-none mt-0.5 ${isSelfPayPage ? 'text-slate-600' : 'text-slate-400'}`}>宸新復健科診所院長</p>
               </div>
           </Link>
 
@@ -137,20 +146,30 @@ export default function Navigation() {
               <div className="hidden sm:flex items-center gap-3">
                 {/* ✨ 修改處：移除 prefetch={false} */}
                 <Link href="/" title="回到首頁" 
-                  className="w-10 h-10 rounded-full bg-slate-800 text-cyan-400 border border-cyan-400 flex items-center justify-center text-lg hover:bg-slate-700 transition-colors shadow-md">
-                  <FaHome size={18} />
+                  className={isSelfPayPage
+                    ? 'w-9 h-9 rounded-full bg-cyan-600 text-white border border-cyan-600 flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-cyan-500/30'
+                    : 'w-10 h-10 rounded-full bg-slate-800 text-cyan-400 border border-cyan-400 flex items-center justify-center text-lg hover:bg-slate-700 transition-colors shadow-md'}>
+                  <FaHome size={18} className={isSelfPayPage ? 'text-white' : 'text-cyan-400'} />
                 </Link>
-                <a href="https://www.facebook.com/DrYiChen" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#1877F2] border border-[#1877F2] text-white flex items-center justify-center text-lg hover:scale-110 transition-transform shadow-md">
-                  <FaFacebookF size={18} />
+                <a href="https://www.facebook.com/DrYiChen" target="_blank" rel="noopener noreferrer" className={isSelfPayPage
+                  ? 'w-9 h-9 rounded-full bg-[#1877F2] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-blue-500/30'
+                  : 'w-10 h-10 rounded-full bg-[#1877F2] border border-[#1877F2] text-white flex items-center justify-center text-lg hover:scale-110 transition-transform shadow-md'}>
+                  <FaFacebookF size={18} className="text-white" />
                 </a>
-                <a href="https://www.instagram.com/dryichen/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white flex items-center justify-center text-lg border-none hover:scale-110 transition-transform shadow-md">
-                  <FaInstagram size={18} />
+                <a href="https://www.instagram.com/dryichen/" target="_blank" rel="noopener noreferrer" className={isSelfPayPage
+                  ? 'w-9 h-9 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-pink-500/30'
+                  : 'w-10 h-10 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white flex items-center justify-center text-lg border-none hover:scale-110 transition-transform shadow-md'}>
+                  <FaInstagram size={18} className="text-white" />
                 </a>
-                <a href="https://www.threads.net/@dryichen" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center text-lg border-none hover:scale-110 transition-transform shadow-md">
-                  <SiThreads size={18} />
+                <a href="https://www.threads.net/@dryichen" target="_blank" rel="noopener noreferrer" className={isSelfPayPage
+                  ? 'w-9 h-9 rounded-full bg-white text-black border border-black flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-slate-400/30'
+                  : 'w-10 h-10 rounded-full bg-white text-black flex items-center justify-center text-lg border-none hover:scale-110 transition-transform shadow-md'}>
+                  <SiThreads size={18} className="text-black" />
                 </a>
-                <a href="https://youtube.com/@dryichen" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#FF0000] border border-[#FF0000] text-white flex items-center justify-center text-lg border-none hover:scale-110 transition-transform shadow-md">
-                  <FaYoutube size={18} />
+                <a href="https://youtube.com/@dryichen" target="_blank" rel="noopener noreferrer" className={isSelfPayPage
+                  ? 'w-9 h-9 rounded-full bg-[#FF0000] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-red-500/30'
+                  : 'w-10 h-10 rounded-full bg-[#FF0000] border border-[#FF0000] text-white flex items-center justify-center text-lg border-none hover:scale-110 transition-transform shadow-md'}>
+                  <FaYoutube size={isSelfPayPage ? 20 : 18} className="text-white" />
                 </a>
               </div>
           </div>
@@ -158,7 +177,7 @@ export default function Navigation() {
 
         {/* 導覽選單 */}
         <nav className="w-full py-1.5 md:py-2 text-center relative">
-           <ul className="flex w-full overflow-x-auto xl:overflow-visible justify-start md:justify-center gap-1 p-0.5 bg-slate-800/30 rounded-none md:rounded-full no-scrollbar px-2 md:px-0">
+           <ul className={`flex w-full overflow-x-auto xl:overflow-visible justify-start md:justify-center gap-1 p-0.5 rounded-none md:rounded-full no-scrollbar px-2 md:px-0 ${isSelfPayPage ? 'bg-slate-100/80' : 'bg-slate-800/30'}`}>
               
               {navItems.map((item) => (
                 <li key={item.path} className="relative group shrink-0 flex-1 sm:flex-none">
@@ -171,9 +190,13 @@ export default function Navigation() {
                            px-1.5 py-1.5 text-sm 
                            md:px-4 md:py-2 md:text-base 
                            rounded-full font-medium transition-all block whitespace-nowrap flex items-center justify-center
-                           ${isActive(item.path) 
-                             ? 'text-cyan-400 bg-slate-800 border-b-2 border-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.3)]' 
-                             : 'text-slate-300 hover:text-white hover:bg-slate-700 border-b-2 border-transparent'}
+                           ${isActive(item.path)
+                             ? (isSelfPayPage
+                               ? 'text-cyan-700 bg-cyan-50 border-b-2 border-cyan-500 shadow-[0_0_10px_rgba(34,211,238,0.18)]'
+                               : 'text-cyan-400 bg-slate-800 border-b-2 border-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.3)]')
+                             : (isSelfPayPage
+                               ? 'text-slate-700 hover:text-cyan-700 hover:bg-white border-b-2 border-transparent'
+                               : 'text-slate-300 hover:text-white hover:bg-slate-700 border-b-2 border-transparent')}
                          `}
                        >
                          {item.name}
@@ -187,21 +210,25 @@ export default function Navigation() {
                    </div>
 
                    {item.subItems && (
-                     <div className="
+                     <div className={`
                         hidden md:block
-                        absolute left-1/2 -translate-x-1/2 mt-2 w-48 bg-slate-900 border border-slate-700 rounded-xl shadow-xl overflow-hidden z-50
+                        absolute left-1/2 -translate-x-1/2 mt-2 w-48 border rounded-xl shadow-xl overflow-hidden z-50
                         transition-all duration-300 origin-top
                         opacity-0 invisible scale-95 group-hover:opacity-100 group-hover:visible group-hover:scale-100
-                     ">
+                        ${isSelfPayPage ? 'bg-white border-slate-200' : 'bg-slate-900 border-slate-700'}
+                     `}>
                         <div className="py-1">
                             {item.subItems.map((sub) => (
                                 /* ✨ 修改處：移除下拉選單所有疾病、療程子項目的 prefetch={false} 屬性，全面回復秒開體感 */
                                 <Link 
                                     key={sub.path} 
                                     href={sub.path}
-                                    className="block px-4 py-3 text-sm text-slate-300 hover:bg-slate-800 hover:text-cyan-400 text-left border-b border-slate-800 last:border-0"
+                                    className={`block px-4 py-3 text-sm text-left border-b last:border-0 ${isSelfPayPage
+                                      ? 'text-slate-700 hover:bg-cyan-50 hover:text-cyan-700 border-slate-100'
+                                      : 'text-slate-300 hover:bg-slate-800 hover:text-cyan-400 border-slate-800'
+                                    }`}
                                 >
-                                    <FaCaretRight size={10} className="inline-block mr-2 text-slate-600" />
+                                    <FaCaretRight size={10} className={`inline-block mr-2 ${isSelfPayPage ? 'text-slate-400' : 'text-slate-600'}`} />
                                     {sub.name}
                                 </Link>
                             ))}
