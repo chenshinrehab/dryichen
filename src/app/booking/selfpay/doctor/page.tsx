@@ -265,21 +265,20 @@ export default function DoctorAdminPage() {
       
       const hasPatients = appointments.some(a => a.date === dateStr);
       const hasConfiguredSlots = getOpenSlotsCountForDate(dateStr) > 0;
+      const isDisabled = isPast && (type === 'settings' || !hasPatients);
 
       let boxCustomClass = '';
-      if (!isSelected && !isPast) {
-        if (type === 'settings' && hasConfiguredSlots) {
-          boxCustomClass = 'after:absolute after:inset-1 after:border-2 after:border-emerald-500 after:bg-emerald-50/20 after:rounded-lg';
-        } else if (type === 'list' && hasPatients) {
-          boxCustomClass = 'after:absolute after:inset-1 after:border-2 after:border-cyan-600 after:bg-cyan-50/20 after:rounded-lg';
-        }
+      if (!isSelected && type === 'list' && hasPatients) {
+        boxCustomClass = 'after:absolute after:inset-1 after:border-2 after:border-cyan-600 after:bg-cyan-50/20 after:rounded-lg';
+      } else if (!isSelected && !isPast && type === 'settings' && hasConfiguredSlots) {
+        boxCustomClass = 'after:absolute after:inset-1 after:border-2 after:border-emerald-500 after:bg-emerald-50/20 after:rounded-lg';
       }
 
       days.push(
         <button
           key={i}
           type="button"
-          disabled={isPast}
+          disabled={isDisabled}
           onClick={() => {
             if (type === 'list') {
               handleFilterDateChangeDirect(dateStr);
@@ -291,7 +290,7 @@ export default function DoctorAdminPage() {
             h-9 w-9 text-xs rounded-lg
             sm:h-10 sm:w-10 sm:text-sm sm:rounded-lg
             ${isSelected ? 'bg-teal-600 text-white shadow scale-105 !border-none after:hidden' : 
-              isPast ? 'text-slate-300 opacity-20 cursor-not-allowed bg-transparent !border-none after:hidden' : 
+              isDisabled ? 'text-slate-300 opacity-20 cursor-not-allowed bg-transparent !border-none after:hidden' :
               `text-slate-700 hover:bg-slate-200 ${boxCustomClass}`
             }
           `}
