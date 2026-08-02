@@ -305,6 +305,12 @@ export const sportsInjuriesData = [
         image: '/images/news/article/prolotherapy-dextrose-prp1.webp',
       },
                                                 {
+        slug: 'prp-amniotic-injection-analysis',
+        title: 'PRP可以跟家人共用嗎？羊膜會排斥或感染嗎？',
+        description: '深度解析PRP（高濃度血小板血漿）與羊膜／羊水注射的本質差異。PRP屬於「自體」血液製品，理論上無法直接與家人或雙胞胎共用；羊膜注射則屬於「異體」捐贈組織，經嚴格篩檢後可大幅降低排斥與感染風險，但仍非零風險。本文以實證文獻為基礎，說明兩者的免疫學原理與臨床安全性。',
+        image: '/images/news/article/prp-amniotic-injection-analysis.webp',
+      },
+                                                {
         slug: 'prp-sports-medicine-athletes',
         title: 'PRP治療在運動醫學的應用：職業球星重返球場的秘密武器',
         description: '深入解析PRP（高濃度血小板）治療的作用機制，回顧Tiger Woods、Rafael Nadal、Kobe Bryant等知名球員的使用案例，並以系統性回顧與隨機對照試驗說明PRP在肌腱病變、韌帶損傷等運動醫學領域已累積充足的臨床實證。',
@@ -406,6 +412,13 @@ export const sportsInjuriesData = [
         title: '正睡還是側睡？解析對脊椎、肩膀、骨盆與內臟器官的影響',
         description: '從醫學角度深度分析側睡與正睡（仰睡）的優缺點，涵蓋脊椎、肩膀旋轉肌群、骨盆、呼吸道及胃食道逆流等全面影響。實證研究揭露哪種睡姿更健康，並解析全球睡眠姿勢比例與個人化建議。',
         image: '/images/news/article/sleep-position-health-analysis.webp',
+      },
+
+                            {
+        slug: 'bone-density-test-comparison',
+        title: '骨密度檢測比較：醫院DEXA跟診所X光AI判讀差異',
+        description: '市面上骨密度檢測方式五花八門，從醫院的DEXA雙能量X光、健檢中心常見的足跟定量超音波，到近年興起的胸部X光AI判讀，究竟哪一種最準確、費用又差多少？本文以實證研究逐一分析各種檢測工具的敏感度、特異度與適用情境，並說明為何DEXA至今仍是國際公認的診斷黃金標準。',
+        image: '/images/news/article/bone-density-test-comparison.webp',
       },
                       {
         slug: 'fake-hip-width-analysis',
