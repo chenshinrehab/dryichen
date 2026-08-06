@@ -833,7 +833,7 @@ export const sportsInjuriesData = [
         slug: 'foot-pain-map',
         title: '腳掌的疼痛地圖全解析：前後、內外側痛，各代表什麼疾病？',
         description: '用民眾看得懂的語言，以醫學觀點解析腳掌的疼痛地圖——前足痛、後跟痛、內側痛、外側痛，各部位常見疾病有哪些？如何簡單鑑別診斷？一文掌握足部疼痛的關鍵知識。',
-        image:  '/images/news/article/foot-pain-map.webp',
+        image:  '/images/news/painmap/foot/腳掌的疼痛地圖全解析.webp',
       },
 
                   {
