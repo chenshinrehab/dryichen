@@ -2706,7 +2706,7 @@ qaList: [
 
 {
   slug: 'plt-therapy',
-  title: '凍晶治療PLT全解析：復健科最新再生療法，哪些疾病可以治療？',
+  title: '凍晶治療PLT全解析：復健科最新增生療法，哪些疾病可以治療？',
   lastModified: '2026-05-02',
   tags: ['plt', 'regenerative-medicine', 'injection'],
   subtitle: '定量生長因子，精準修復受損組織',
