@@ -56,13 +56,14 @@ export default function Navigation() {
         path: '/treatments',
         subItems: [
             { name: 'PRP增生療法', path: '/treatments/prp' },
+               { name: '高濃度葡萄糖增生療法', path: '/treatments/dextrose-prolotherapy' },
             { name: '聚焦式震波', path: '/treatments/shockwave' },
             { name: '徒手治療', path: '/treatments/manual' },
             { name: '高能量雷射治療', path: '/treatments/high-intensity-laser' },
             { name: '玻尿酸注射', path: '/treatments/hyaluronic-acid' },
             { name: '肩關節擴張術', path: '/treatments/shoulder-dilation' },
             { name: '超音波導引抽水', path: '/treatments/ultrasound-guided-aspiration' },
-            { name: '超音波導引神經解套', path: '/treatments/nerve-hydrodissection' },
+         
             { name: '類固醇注射', path: '/treatments/steroid-injection' },
             { name: '靜脈消炎止痛針', path: '/treatments/iv-pain-relief' },
         ]

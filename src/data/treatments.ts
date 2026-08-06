@@ -308,10 +308,202 @@ const fullTreatmentsData: Treatment[] = [
   ]
 },
   
-  // -----------------------------------------------------
-  // 2. 聚焦式震波治療
-  // -----------------------------------------------------
- // --- 2. 體外震波 (Shockwave) ---
+{
+  slug: 'dextrose-prolotherapy', title: '高濃度葡萄糖增生療法 新竹/ 超音波導引注射', lastModified: '2026-08-06', tags: ['增生療法', '葡萄糖水'], subtitle: '超音波導引高濃度葡萄糖增生注射',
+  description: '透過注射高濃度葡萄糖水，誘發局部修復反應，強化鬆弛的韌帶與肌腱附著點，改善慢性疼痛與關節不穩定。', image: '/images/treatments/o.webp',
+  features: ['啟動修復', '免開刀', '精準導引'],
+  seoTitle: '新竹高濃度葡萄糖增生療法推薦 |網球肘、肌腱撕裂、韌帶鬆弛| 免開刀治療|新竹宸新復健科診所',
+  seoDescription: '新竹高濃度葡萄糖增生療法首選。位於鄰近新竹科學園區近竹北，醫師親自執行高解析超音波導引注射，邊掃描邊注射，精準將高濃度葡萄糖水送達病灶。免開刀治療網球肘、肌腱肌肉撕裂傷、韌帶鬆弛與軟骨損傷。',
+  keywords: ['新竹增生療法', '新竹葡萄糖水注射', '竹北增生治療', '超音波導引注射', '網球肘治療', '韌帶鬆弛', '肌腱撕裂', '軟骨損傷', '新竹骨科推薦'],
+  contentHtml: `
+    <style>.responsive-img-enlarge { width: 110% !important; max-width: none !important; display: block !important; margin: 1rem auto !important; position: relative !important; left: 50% !important; transform: translateX(-50%) !important; height: auto; } @media (min-width: 768px) { .responsive-img-enlarge { width: 100% !important; left: 0 !important; transform: none !important; } }</style>
+<div style="background-color: #f8fafc; border-left: 5px solid #0284c7; padding: 1.75rem 2rem; margin-bottom: 2rem; border-radius: 0.75rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+  <h3 style="margin-top: 0; margin-bottom: 1rem; color: #0369a1; font-size: 1.4rem; font-weight: bold; line-height: 1.3; display: flex; align-items: center;">📋 本文重點摘要</h3>
+  <p style="margin-bottom: 0; line-height: 1.8; color: #334155; font-size: 1.15rem;">
+    高濃度葡萄糖增生療法（Dextrose Prolotherapy）是歷史最悠久、實證資料最豐富的增生注射之一。針對膝關節炎的研究顯示，葡萄糖增生注射在疼痛與功能評分上顯著優於生理食鹽水與居家運動<sup><a href="https://www.annfammed.org/content/11/3/229" style="color: #0369a1; text-decoration: none;">[1]</a></sup>。針對網球肘（外側肱骨上髁炎），多項試驗也證實葡萄糖注射能有效改善網球肘的疼痛與握力<sup><a href="https://pubmed.ncbi.nlm.nih.gov/23291605/" style="color: #0369a1; text-decoration: none;">[2]</a></sup><sup><a href="https://pubmed.ncbi.nlm.nih.gov/32990454/" style="color: #0369a1; text-decoration: none;">[4]</a></sup>。<br><br>
+    在韌帶鬆弛方面，研究顯示葡萄糖注射對關節鬆弛與疼痛具長期改善效果<sup><a href="https://pubmed.ncbi.nlm.nih.gov/10710805/" style="color: #0369a1; text-decoration: none;">[5]</a></sup>；旋轉肌肌腱病變的系統性回顧也支持其療效<sup><a href="https://pubmed.ncbi.nlm.nih.gov/31642203/" style="color: #0369a1; text-decoration: none;">[7]</a></sup>。療效的核心關鍵在於：<strong>精準診斷 + 超音波導引確保注射到位病灶（韌帶附著點、肌腱交界處）+ 足夠療程次數（通常需 3 次以上）</strong>。任一環節缺失均可能導致治療效果打折。
+  </p>
+</div>
+    <p>肌腱、韌帶反覆拉傷卻始終好不了？做過復健、吃了消炎藥，疼痛卻總是斷斷續續復發？這很可能是組織已經進入「慢性鬆弛」或「修復力停滯」的狀態，單靠休息很難逆轉。<strong>位於新竹的宸新復健科</strong>，專為<strong>新竹科學園區</strong>與在地民眾提供<strong>高濃度葡萄糖水增生療法</strong>，利用溫和的滲透壓刺激，喚醒身體原本的修復機制。</p><br>
+    <p>治療原理是將高濃度葡萄糖水注射到鬆弛、退化或反覆發炎的韌帶、肌腱附著點及關節腔內，藉由局部滲透壓變化誘發「可控制的輕微發炎反應」，進而刺激纖維母細胞增生、膠原蛋白重新排列，讓原本鬆弛脆弱的組織逐漸變得緊實有韌性。搭配<strong>高解析超音波邊掃描邊注射</strong>，讓每一針都打在真正需要修復的位置。</p>
+    <div style="background-color: #fffbeb; border: 2px solid #fbbf24; border-radius: 1rem; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+      <h2 style="color: #b45309; margin-top: 0; font-weight: bold; border-bottom: 2px solid #fcd34d; padding-bottom: 0.5rem; display: flex; align-items: center;">📢 為什麼選擇宸新高濃度葡萄糖增生療法？</h2>
+      <p style="font-size: 1.1rem; color: #78350f;">增生療法看似單純，但「打得準不準」直接決定療效差異。宸新復健科提供<strong>竹北與新竹市區民眾</strong>最高規格的治療標準：</p>
+      <ul style="list-style: none; padding: 0; margin-top: 1rem; color: #92400e;">
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;"><span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">1</span><div><strong>高解析超音波，邊掃描邊注射：</strong> 醫師全程透過高解析度超音波即時顯像，一邊確認韌帶、肌腱撕裂位置，一邊將葡萄糖水精準送達病灶深處，不靠「手感」盲打，也能同步避開神經與血管。</div></li>
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;"><span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">2</span><div><strong>醫師具相關注射認證：</strong> 施打醫師接受過超音波導引增生注射的專業訓練與認證，熟悉肌肉骨骼超音波解剖構造，降低誤打與副作用風險。</div></li>
+        <li style="margin-bottom: 1rem; display: flex; align-items: start;"><span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">3</span><div><strong>複合式治療策略：</strong> 醫師會視情況搭配 <a href="/treatments/prp" style="color: #d97706; text-decoration: underline;">PRP 增生療法</a>、<a href="/treatments/nerve-hydrodissection" style="color: #d97706; text-decoration: underline;">神經解套注射</a>或 <a href="/treatments/shockwave" style="color: #d97706; text-decoration: underline;">聚焦式震波治療</a>，特別針對<strong>長期使用電腦的竹科工程師</strong>或運動愛好者，達到更完整的修復效果。</div></li>
+        <li style="margin-bottom: 0; display: flex; align-items: start;"><span style="background: #f59e0b; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0;">4</span><div><strong>收費標準：</strong>高濃度葡萄糖增生注射：<strong>每針 1200 元</strong>（依施打部位與劑量，實際針數由醫師評估後告知）。</div></li>
+      </ul>
+    </div>
+    <section style="background-color: rgba(6, 182, 212, 0.05); border: 1px solid rgba(6, 182, 212, 0.2); border-radius: 1.5rem; padding: 2.5rem 1.25rem; margin-bottom: 3rem; font-family: sans-serif;">
+      <h2 style="color: #22d3ee; margin-top: 0; margin-bottom: 1.5rem; line-height: 1.4; font-size: 1.5rem; letter-spacing: -0.02em;"><span style="display: inline-block;">👨‍⚕️<a href="/about/doctors" style="color: #22d3ee; text-decoration: none;">林羿辰醫師</a>觀點：葡萄糖水增生療法適合誰？</span></h2>
+      <p style="font-size: 1.2rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 2.5rem; text-align: justify; letter-spacing: -0.01em;">依據我過去 10 年的臨床經驗，葡萄糖增生療法是 CP 值很高的選擇，但它不是「一針見效」的魔法，而是需要療程觀念的治療。身為復健科醫師與運動教練，我常提醒患者：<strong>療效的關鍵在於「找對受傷結構」與「打到正確位置」，而不是單純打進去而已。</strong></p>
+      <div style="display: grid; gap: 1.8rem;">
+        <div style="padding: 0;"><h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">1. 適合慢性、反覆發作的鬆弛型問題</h4><p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;">葡萄糖增生療法特別適合<strong>反覆扭傷後的韌帶鬆弛</strong>、<strong>慢性肌腱附著點發炎</strong>（如網球肘、高爾夫球肘）以及<strong>輕度關節不穩定</strong>。若是急性劇烈撕裂或結構完全斷裂，仍需先由醫師評估是否需要更積極的處置。</p></div>
+        <div style="padding: 0;"><h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">2. 超音波導引：找到真正的痛點</h4><p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;">許多患者的疼痛部位跟真正受傷的組織其實有落差。我們堅持全程搭配<strong>高解析超音波邊掃描邊注射</strong>，確認撕裂或鬆弛的確切位置後才下針，避免「打錯地方、白挨一針」。</p></div>
+        <div style="padding: 0;"><h4 style="color: #f8fafc; margin-bottom: 0.4rem; font-size: 1.35rem; line-height: 1.3; letter-spacing: -0.02em;">3. 療程需要耐心，通常不只打一次</h4><p style="margin: 0; font-size: 1.15rem; line-height: 1.6; color: #e2e8f0; letter-spacing: -0.01em;">葡萄糖增生療法是誘發身體「自己修復」，多數研究採用的療程為每 2 週左右施打一次、共 3 次以上<sup><a href="https://www.annfammed.org/content/11/3/229" style="color: #67e8f9;">[1]</a></sup>。心急打一針就想痊癒，往往容易失望。</p></div>
+      </div>
+    </section>
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    <h2>🔬 什麼是高濃度葡萄糖增生療法？治療原理大解密</h2>
+    <p>增生療法（Prolotherapy）的核心概念，是利用<strong>高濃度葡萄糖水（常見濃度約 10%～25%）</strong>造成局部滲透壓改變，誘發一個「可控制、輕微」的發炎反應。這個人為誘發的發炎訊號，會刺激纖維母細胞增生、活化局部生長因子釋放，進而促進第一型膠原蛋白重新排列與沉積<sup><a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2025.1602727/full" style="color: #0369a1;">[9]</a></sup>。</p><br>
+    <p>簡單來說，身體的修復系統平常處於「待命」狀態，而葡萄糖水就像是輕輕按下「啟動鍵」，喚醒原本停滯的修復程序，讓鬆弛、退化的韌帶與肌腱附著點逐漸變得緊實、有彈性。</p>
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    <h2>🎯 誰適合打高濃度葡萄糖水？適應症列表（附文獻實證）</h2>
+    <ul>
+      <li><strong>網球肘 / 高爾夫球肘（肱骨上髁炎）：</strong> 多項雙盲隨機對照試驗均證實葡萄糖增生注射能有效改善疼痛與功能，葡萄糖組在 4、8、16 週的評分均優於對照<sup><a href="https://pubmed.ncbi.nlm.nih.gov/23291605/" style="color: #0369a1;">[2]</a></sup>；2023 年高低劑量比較的雙盲超音波導引注射研究也支持其臨床效果<sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S0003999322016550" style="color: #0369a1;">[3]</a></sup>；另一項三盲研究亦顯示葡萄糖注射優於生理食鹽水<sup><a href="https://pubmed.ncbi.nlm.nih.gov/32990454/" style="color: #0369a1;">[4]</a></sup>。</li>
+      <li><strong>膝關節退化性關節炎與輕度韌帶鬆弛：</strong> 隨機對照試驗顯示，葡萄糖增生注射在疼痛、僵硬與功能評分上均顯著優於生理食鹽水注射組及居家運動組<sup><a href="https://www.annfammed.org/content/11/3/229" style="color: #0369a1;">[1]</a></sup>；針對合併前十字韌帶（ACL）鬆弛的患者，長期追蹤研究也觀察到疼痛與關節穩定度的改善<sup><a href="https://pubmed.ncbi.nlm.nih.gov/10710805/" style="color: #0369a1;">[5]</a></sup>。</li>
+      <li><strong>旋轉肌肌腱病變與慢性肌腱撕裂：</strong> 增生注射能有效改善旋轉肌肌腱病變的疼痛程度<sup><a href="https://pubmed.ncbi.nlm.nih.gov/31642203/" style="color: #0369a1;">[7]</a></sup>；2025 年最新研究也持續支持葡萄糖增生療法在旋轉肌相關疾患的角色<sup><a href="https://www.ovid.com/journals/ijana/fulltext/10.4103/ija.ija_566_25~exploring-dextrose-prolotherapy-in-rotator-cuff-disorders-a" style="color: #0369a1;">[8]</a></sup>。</li>
+      <li><strong>足底筋膜炎：</strong> 2024 年系統性回顧支持高濃度葡萄糖注射應用於肌肉骨骼疼痛，包括足底筋膜炎<sup><a href="https://www.ncbi.nlm.nih.gov/books/NBK611427/" style="color: #0369a1;">[12]</a></sup>。</li>
+      <li><strong>膝關節軟骨退化：</strong> 統合分析確認高濃度葡萄糖注射能顯著降低膝關節炎疼痛與僵硬程度<sup><a href="https://pubmed.ncbi.nlm.nih.gov/38915358/" style="color: #0369a1;">[13]</a></sup>。</li>
+    </ul>
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    <h2>💉 超音波導引：邊掃描邊注射的意義</h2>
+    <p>增生療法的許多目標構造（如韌帶附著點、肌腱交界處、關節囊深部）非常細小，徒手憑經驗注射容易失準。在宸新復健科，醫師會<strong>一邊透過高解析超音波觀察組織構造與針尖位置，一邊調整角度緩慢注射</strong>，確保葡萄糖水確實送達鬆弛或撕裂的位置，而非注射到周邊脂肪或肌肉組織。這種「邊掃描邊注射」的方式，也能大幅降低誤傷神經血管的風險，過程更安全、更舒適。</p>
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    <h2>🏥 治療流程：三步驟啟動修復</h2>
+    <ol>
+      <li><strong>問診與超音波評估：</strong> 醫師先透過理學檢查與超音波確認受傷的確切構造與嚴重程度。</li>
+      <li><strong>超音波導引注射：</strong> 依部位配置適當濃度與劑量的葡萄糖水，全程超音波導引精準注射。</li>
+      <li><strong>衛教與後續追蹤：</strong> 說明注射後注意事項，並依修復狀況安排下一次療程（通常間隔約 3～4 週）。</li>
+    </ol>
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    <h2>⚖️ 治療比較：高濃度葡萄糖水 vs. PRP vs. 類固醇</h2>
+    <h3>1. 高濃度葡萄糖水 vs. PRP</h3>
+    <p>這兩者皆屬於<strong>增生療法 (Prolotherapy)</strong>，核心邏輯都是藉由誘發輕微發炎來啟動修復機制。<strong>高濃度葡萄糖水</strong>是透過滲透壓產生「人為發炎」來喚醒免疫系統，屬於較經濟實惠的入門選擇，通常需要較多次數的療程才能累積效果。<strong>PRP (自體血小板)</strong> 則是直接注入濃縮的生長因子，跳過喚醒階段直接提供修復原料，單次修復效率較高、所需次數較少，但費用相對較高。對於症狀較輕微、預算考量較高的患者，醫師常會先建議從葡萄糖水增生療法開始嘗試。</p>
+    <h3>2. 增生療法 vs. 類固醇 (消炎針)</h3>
+    <p>這是兩種截然不同的治療思維：<strong>類固醇</strong>主要用於「抑制發炎」，能快速緩解急性疼痛，但多次注射可能導致組織脆化、肌腱斷裂風險增加；<strong>增生療法</strong>則是「促進發炎」，目標是強化結構本身。簡單來說，類固醇像<strong>關掉警報</strong>，適合處理急性劇痛；增生療法則像<strong>施工隊</strong>，適合重建反覆受傷、慢性鬆弛的組織。</p>
+    <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
+    <h2>❌ 3 個常見增生療法迷思，醫師幫你反向查證</h2>
+    <div style="display: grid; gap: 1.5rem; margin-bottom: 2rem;">
+      <div style="background: #fff7ed; border: 1.5px solid #fed7aa; border-radius: 0.875rem; padding: 1.5rem;">
+        <h3 style="color: #c2410c; margin-top: 0; font-size: 1.1rem;">❌ 迷思一：「打一針葡萄糖水就會馬上痊癒」</h3>
+        <p style="color: #7c2d12; line-height: 1.75; margin: 0;"><strong>事實：</strong> 增生療法的原理是「誘發身體自己慢慢修復」，膠原蛋白的重新排列與強化需要時間。多項研究採用的療程設計皆為每 2 週左右施打一次、連續 3 次以上，並在 12～16 週後才觀察到明顯的統計差異<sup><a href="https://pubmed.ncbi.nlm.nih.gov/23291605/" style="color: #c2410c;">[2]</a></sup><sup><a href="https://www.annfammed.org/content/11/3/229" style="color: #c2410c;">[1]</a></sup>。若只打一次就評斷「沒效」，往往是誤解了治療的作用機轉。</p>
+      </div>
+      <div style="background: #fef2f2; border: 1.5px solid #fecaca; border-radius: 0.875rem; padding: 1.5rem;">
+        <h3 style="color: #b91c1c; margin-top: 0; font-size: 1.1rem;">❌ 迷思二：「濃度越高效果越好，越痛越有效」</h3>
+        <p style="color: #7f1d1d; line-height: 1.75; margin: 0;"><strong>事實：</strong> 研究比較低劑量（5%）與高劑量（15%）葡萄糖濃度治療網球肘，發現兩者在多數功能指標上並無顯著差異，顯示濃度並非越高越好，關鍵仍在於是否精準打到病灶<sup><a href="https://www.sciencedirect.com/science/article/abs/pii/S0003999322016550" style="color: #b91c1c;">[3]</a></sup>。過度追求高濃度或劇烈疼痛感，不見得能換來更好的療效，反而可能增加不必要的不適。</p>
+      </div>
+      <div style="background: #f0fdf4; border: 1.5px solid #bbf7d0; border-radius: 0.875rem; padding: 1.5rem;">
+        <h3 style="color: #15803d; margin-top: 0; font-size: 1.1rem;">❌ 迷思三：「所有的痛都可以打葡萄糖水解決」</h3>
+        <p style="color: #14532d; line-height: 1.75; margin: 0;"><strong>事實：</strong> 葡萄糖增生療法對於慢性、反覆發作的韌帶鬆弛、肌腱附著點病變效果較明確；但若是急性完全斷裂、結構性大範圍撕裂，或合併明顯神經壓迫症狀，通常需要先由醫師評估是否需要影像進一步檢查或其他積極處置，而非一律以增生注射處理。準確的診斷永遠是治療成功的第一步。</p>
+      </div>
+    </div>
+    <h2>🩹 增生療法後注意事項</h2>
+    <section>
+      <h3>1. 避免消炎藥物 (NSAIDs)</h3>
+      <p>增生療法是利用啟動發炎反應來促進修復，因此<strong>應避免使用消炎類藥物</strong>（如：阿斯匹靈、布洛芬等），以免阻擋組織癒合。若注射後有明顯酸痛感，建議選用<strong>不含消炎成分的止痛藥</strong>（如：普拿疼 Acetaminophen）。</p>
+      <h3>2. 均衡營養攝取</h3>
+      <p>修復受損組織需要足夠的「建築原料」。建議在療程期間補充：
+        <ul><li><strong>優質蛋白質</strong>：修復的基本構成。</li><li><strong>維他命 B、C</strong>：協助細胞呼吸與能量代謝。</li><li><strong>必須脂肪酸</strong>：促進細胞膜修復與減少不良發炎。</li></ul>
+      </p>
+      <h3>3. 循序漸進的復健運動</h3>
+      <p>適度的物理活動能增加局部循環，加速修復效果。請遵循「<strong>循序漸進</strong>」原則進行肌力與關節訓練：
+        <ul><li><strong>安全性</strong>：若出現尖銳的刺痛或劇烈拉扯感，應立即暫停。</li><li><strong>專業指導</strong>：強烈建議搭配物理治療師制定的運動處方，以達到最佳的功能復原。</li></ul>
+      </p>
+    </section>
+    <div style="background-color: #f0f9ff; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
+      <h2 style="color: #0369a1; margin-top: 0;">👨‍⚕️ 反覆拉傷、韌帶鬆弛困擾你很久了嗎？</h2>
+      <p style="color: #334155; margin-bottom: 1.5rem;">疼痛不該是常態。歡迎來到<strong>新竹竹科</strong>宸新復健科，找回無痛的自在生活！</p>
+    <p style="font-weight: bold; color: #0891b2;">如有任何疑問，都可以在門診時直接跟醫師聊聊喔！</p><br>
+      <div style="text-align: center; width: 100%;">
+    <a href="/booking" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="display: inline-block !important; background-color: #375987 !important; color: #f8fafc !important; font-weight: bold !important; padding: 12px 24px !important; border-radius: 9999px !important; text-decoration: none !important; font-size: 1.05rem !important; font-family: system-ui, sans-serif !important;">
+        預約門診增生療法評估
+    </a>
+  </div>
+
+    </div>
+
+`,
+  referencesHtml: `
+<h2>📚 參考文獻 (References)</h2>
+<div style="background-color: #f8fafc; padding: 1rem; border-radius: 0.75rem; margin-top: 1.5rem; font-size: 0.9rem; color: #475569; border: 1px solid #e2e8f0; line-height: 1.5; word-break: break-all;">
+    <ol style="padding-left: 0; margin: 0; list-style-type: decimal; list-style-position: inside; color: #2563eb; font-weight: bold;">
+<li id="ref1" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Rabago D, Patterson JJ, Mundt M, et al. <em>Dextrose prolotherapy for knee osteoarthritis: a randomized controlled trial.</em> Ann Fam Med. 2013;11(3):229-237. <a href="https://www.annfammed.org/content/11/3/229" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1370/afm.1504</a> (實證: 90 名膝關節炎患者三臂 RCT，顯示葡萄糖增生注射在 WOMAC 疼痛與功能評分上顯著優於生理食鹽水與居家運動組)
+    </span>
+</li>
+<li id="ref2" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Rabago D, et al. <em>Hypertonic dextrose and morrhuate sodium injections (prolotherapy) for lateral epicondylosis (tennis elbow): results of a single-blind, pilot-level, randomized controlled trial.</em> PM R. <a href="https://pubmed.ncbi.nlm.nih.gov/23291605/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 23291605</a> (實證: 三臂先導型 RCT，葡萄糖增生注射組在 4、8、16 週的 PRTEE 疼痛與功能評分均優於等待觀察組)
+    </span>
+</li>
+<li id="ref3" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Ciftci YGD, Tuncay F, Kocak FA, Okcu M. <em>Is Low-Dose Dextrose Prolotherapy as Effective as High-Dose Dextrose Prolotherapy in the Treatment of Lateral Epicondylitis? A Double-Blind, Ultrasound Guided, Randomized Controlled Study.</em> Arch Phys Med Rehabil. 2023;104(2):179-187. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0003999322016550" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">ScienceDirect</a> (實證: 雙盲超音波導引 RCT 比較低劑量 5% 與高劑量 15% 葡萄糖，兩者皆有臨床療效，濃度差異並非決定性因素)
+    </span>
+</li>
+<li id="ref4" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        <em>Dextrose Prolotherapy Versus Normal Saline Injection for the Treatment of Lateral Epicondylopathy: A Randomized Controlled Trial.</em> <a href="https://pubmed.ncbi.nlm.nih.gov/32990454/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 32990454</a> (實證: 60 名網球肘患者三盲 RCT，葡萄糖注射組在 VAS 疼痛與 PRTEE 評分上優於生理食鹽水組)
+    </span>
+</li>
+<li id="ref5" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Reeves KD, Hassanein K. <em>Randomized prospective double-blind placebo-controlled study of dextrose prolotherapy for knee osteoarthritis with or without ACL laxity.</em> Altern Ther Health Med. 2000;6(2):68-80. <a href="https://pubmed.ncbi.nlm.nih.gov/10710805/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 10710805</a> (實證: 雙盲安慰劑對照 RCT，葡萄糖增生注射在膝關節炎疼痛、腫脹與部分影像學指標上有統計顯著改善)
+    </span>
+</li>
+<li id="ref6" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Reeves KD, Hassanein KM. <em>Long-term effects of dextrose prolotherapy for anterior cruciate ligament laxity.</em> Altern Ther Health Med. 2003;9(3):58-62. <span style="color:#475569;">PMID: 12776476</span> (實證: 長期追蹤顯示葡萄糖增生注射對 ACL 鬆弛患者的關節穩定度與疼痛具持續性改善)
+    </span>
+</li>
+<li id="ref7" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Catapano M, et al. <em>Effectiveness of Dextrose Prolotherapy for Rotator Cuff Tendinopathy: A Systematic Review.</em> PM R. 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/31642203/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">PMID: 31642203</a> (實證: 系統性回顧納入 272 名旋轉肌肌腱病變患者，多點式增生注射顯示疼痛顯著改善)
+    </span>
+</li>
+<li id="ref8" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        <em>Exploring dextrose prolotherapy in rotator cuff disorders: A systematic review and meta-analysis.</em> 2025. <a href="https://www.ovid.com/journals/ijana/fulltext/10.4103/ija.ija_566_25~exploring-dextrose-prolotherapy-in-rotator-cuff-disorders-a" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Ovid</a> (實證: 最新統合分析持續支持葡萄糖增生療法應用於旋轉肌肌腱病變、部分撕裂與滑囊炎)
+    </span>
+</li>
+<li id="ref9" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        <em>Hypertonic dextrose prolotherapy in osteoarthritis: mechanisms, efficacy, and future research directions.</em> Front Endocrinol. 2025. <a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2025.1602727/full" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">連結</a> (實證: 綜述說明高濃度葡萄糖透過滲透壓刺激誘發纖維母細胞增生與膠原蛋白沉積之修復機轉)
+    </span>
+</li>
+<li id="ref10" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Bertrand H, et al. <em>Dextrose Prolotherapy Versus Control Injections in Painful Rotator Cuff Tendinopathy.</em> Arch Phys Med Rehabil. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0003999315010916" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">ScienceDirect</a> (實證: 73 名旋轉肌肌腱病變患者 RCT，葡萄糖增生注射組達臨床顯著疼痛改善的比例高於對照注射組)
+    </span>
+</li>
+<li id="ref11" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Teymouri A, Birang N, Fakheri M, et al. <em>Comparison of the efficacy of ultrasound-guided dextrose 25% hypertonic prolotherapy and intra-articular normal saline injection on pain, functional limitation, and range of motion in patients with knee osteoarthritis.</em> BMC Musculoskelet Disord. 2025;26(1):313. <span style="color:#475569;">PMID: 40165187</span> (實證: 超音波導引 25% 高濃度葡萄糖注射於膝關節炎之隨機對照試驗)
+    </span>
+</li>
+<li id="ref12" style="margin-bottom: 0.6rem;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Ewart D, et al. <em>Dextrose Prolotherapy for Musculoskeletal Pain: A Systematic Review.</em> VA Evidence Synthesis Program. 2024. <a href="https://www.ncbi.nlm.nih.gov/books/NBK611427/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">NBK611427</a> (實證: 美國退伍軍人署系統性回顧支持高濃度葡萄糖注射應用於肌肉骨骼疼痛，包括足底筋膜炎)
+    </span>
+</li>
+<li id="ref13" style="margin-bottom: 0;">
+    <span style="color: #475569; font-weight: normal; margin-left: 0.5rem;">
+        Khateri S, et al. <em>The effect of dextrose prolotherapy on patients diagnosed with knee osteoarthritis: A comprehensive systematic review and meta-analysis of interventional studies.</em> Health Sci Rep. 2024;7:e2145. <a href="https://pubmed.ncbi.nlm.nih.gov/38915358/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">doi: 10.1002/hsr2.2145</a> (實證: 統合分析確認高濃度葡萄糖注射能顯著降低膝關節炎疼痛與僵硬)
+    </span>
+</li>
+
+    </ol>
+</div>
+`,
+  whyChooseUs: ['醫師具超音波導引增生注射相關認證', '堅持<strong>高解析度超音波邊掃描邊注射</strong>，確保葡萄糖水精準到達病灶', '依患者狀況規劃完整療程次數與追蹤'],
+  treatmentFocus: ['慢性肌腱附著點發炎久治不癒。', '關節韌帶反覆扭傷、鬆弛不穩定。', '退化性關節炎與慢性肌腱、韌帶撕裂。'], images: [],
+  applicableConditions: ['網球肘/高爾夫球肘', '肌腱肌肉撕裂傷', '韌帶鬆弛不穩定', '退化性關節炎', '足底筋膜炎'],
+  qaList: [
+    { question: '高濃度葡萄糖增生注射需要打幾次？', answer: '文獻常用的療程設計多為每 2 週施打一次、共 3 次以上為一個療程。實際次數會依受傷程度、部位與追蹤時的超音波修復狀況，由醫師調整規劃。' },
+    { question: '打完葡萄糖水會很痛嗎？可以正常活動嗎？', answer: '注射後 1-3 天患部可能會有痠脹感（這是啟動修復發炎反應的正常現象）。一般日常生活與行走不受影響，但建議一週內避免劇烈運動或過度伸展患部。' },
+    { question: '葡萄糖增生療法安全嗎？會有副作用嗎？', answer: '葡萄糖水是人體本身就有的成分，過敏風險極低，是相對安全的治療選擇。極少數情況可能出現注射部位暫時性腫脹或瘀青，通常數日內會自行緩解。' },
+    { question: '葡萄糖增生療法和 PRP 該怎麼選？', answer: '兩者原理類似，皆屬增生療法。葡萄糖水費用較經濟、適合作為初期嘗試或症狀較輕者；PRP 修復效率較高、單次濃度較強，適合症狀較嚴重或希望減少療程次數的患者。實際選擇建議在門診與醫師討論後決定。' }
+  ]
+},
+
+
 {
   slug: 'shockwave',
   title: '新竹體外震波推薦 / 聚焦式複合治療',
@@ -2535,7 +2727,10 @@ qaList: [
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12279671/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[2]</a></sup><br><br>
     多項臨床研究顯示，以血小板為基礎的再生療法對於慢性疼痛的改善，優於傳統類固醇或玻尿酸注射的中長期效果。
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10072988/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[3]</a></sup>
-  </p>
+  </p> <br>
+
+
+   <p><strong>宸新收費標準: 6瓶:38000元。 10瓶:55000元 </strong></p>
 </div>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -3060,7 +3255,7 @@ qaList: [
 
 {
   slug: 'amniotic-injection-therapy',
-  title: '羊膜注射的應用全解析：再生醫療新選擇',
+  title: '羊膜注射的應用全解析：PRP之外的醫療新選擇',
   lastModified: '2026-05-02',
   tags: ['amniotic-injection', 'regenerative-medicine', 'injection', 'tendinopathy'],
   subtitle: '天然生物支架，多重生長因子，精準調控組織修復',
@@ -3081,7 +3276,8 @@ qaList: [
     <sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7349589/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[2]</a></sup><br><br>
     多項臨床研究顯示，羊膜注射用於退化性膝關節炎、肩袖肌腱病變與慢性網球肘，在疼痛緩解與功能改善方面展現出與 PRP 相當或更優的中長期療效，且安全性良好、不良反應輕微。
     <sup><a href="https://pubmed.ncbi.nlm.nih.gov/31637920/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">[3]</a></sup>
-  </p>
+  </p><br>
+  <p><strong>宸新收費標準: 25000元 </strong></p>
 </div>
 
 <hr style="margin: 3rem 0; border-top: 1px solid #e2e8f0;">
@@ -5485,7 +5681,7 @@ qaList: [
 
 <p>生活中有時會遇到突如其來的<strong>劇烈疼痛</strong>，例如閃到腰或落枕影響工作、痛風突然發作讓人寸步難行、偏頭痛痛到想撞牆，或是重感冒引起的全身肌肉痠痛。當口服止痛藥吃了很久還沒感覺，或是痛到無法吞嚥時，<strong>靜脈消炎止痛注射</strong>是醫療上協助患者度過疼痛難關的重要手段。</p>
 <br>
-<p>這類針劑通常含有高強度的<strong>非類固醇消炎藥（NSAIDs）</strong>，直接進入血液循環，跳過腸胃吸收的等待時間，能以最快速度壓制體內的發炎風暴。</p>
+<p>這類針劑通常含有高強度的<strong>非類固醇消炎藥（NSAIDs），及維生素B跟維生素C</strong>，直接進入血液循環，跳過腸胃吸收的等待時間，能以最快速度壓制體內的發炎風暴。</p>
 <br>
 <p>收費標準:靜脈脈注:<strong>350元 </strong>。皮下注射:<strong>200元</strong></p>
 
