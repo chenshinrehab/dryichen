@@ -378,6 +378,14 @@ export const sportsInjuriesData = [
         description: '體外震波打完到底能不能吃止痛消炎藥？許多人以為「震波只是治療部位不一樣，用藥規則應該也不一樣」，但實證醫學告訴我們，無論是足底筋膜炎的修復型震波，還是打碎鈣化的破壞型震波，背後啟動的都是同一套發炎-修復機制，因此「避免吃消炎藥」這條原則幾乎是共通的。本文以醫學文獻為基礎，拆解震波治療的作用機轉、止痛藥的選擇邏輯，以及不同治療目的下的用藥差異。',
         image: '/images/news/article/eswt-nsaid-guide.webp',
       },
+
+      
+                                                      {
+        slug: 'calcific-tendinitis-h1h2-blocker-analysis',
+        title: '鈣化性肌腱炎吃藥有效嗎？比較與震波治療的差異',
+        description: '深度整理鈣化性肌腱炎使用H1、H2阻斷劑（如西咪替丁cimetidine、法莫替丁famotidine）治療的正反方實證研究，從肥大細胞與組織胺受體的作用機轉，到目前證據等級的限制，最後比較與震波治療（ESWT）的差異，幫助您做出更了解狀況的治療選擇。',
+        image: '/images/news/article/calcific-tendinitis-antihistamine.webp',
+      },
                                           {
         slug: 'pmos-obesity-mounjaro',
         title: '正名後的多內分泌代謝卵巢症候群：肥胖與猛健樂的角色',

@@ -9577,7 +9577,7 @@ export const diseaseCategories: DiseaseCategory[] = [
     {
         id: 'metatarsalgia',
         slug: 'metatarsalgia',
-        lastModified: '2026-03-09',
+        lastModified: '2026-08-09',
         tags: [],
         title: '蹠骨痛 (前腳掌痛)',
         description: '走路像踩到石頭？前腳掌痛到不敢著地？這不一定是單純的長繭，可能是「蹠骨痛」！深入解析前足底痛的四大元凶，以及運用震波與增生注射修復的全方位攻略。',
@@ -9676,8 +9676,15 @@ export const diseaseCategories: DiseaseCategory[] = [
               </p>
           </div>
       
+<div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
+    <h4 style="margin-top: 0; color: #0e7490 !important;">3. 消腫修復：<a href="/treatments/high-intensity-laser" class="text-cyan-400 hover:underline">高能量雷射</a></h4>
+    <p style="margin-bottom: 0; color: #334155 !important;">
+        前腳掌因長時間承重與摩擦，易導致蹠骨頭發炎或神經腫脹（如莫頓氏神經瘤）。利用高能量雷射的深層光波穿透力，能快速舒緩前腳掌發炎與神經疼痛，並透過生物刺激作用促進細胞能量（ATP）合成與局部微循環，大幅加速組織修復與復原進度。
+    </p>
+</div>
+
       <div style="background-color: #f0f9ff; padding: 1.5rem; border-left: 4px solid #0891b2; border-radius: 0.5rem; margin: 1.5rem 0;">
-              <h4 style="margin-top: 0; color: #0e7490 !important;">3. 組織喚醒：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波</a></h4>
+              <h4 style="margin-top: 0; color: #0e7490 !important;">4. 組織喚醒：<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波</a></h4>
               <p style="margin-bottom: 0; color: #334155 !important;">
                   足底的血液循環相對較差，修復速度慢。利用聚焦式震波的高能量聲波，能強迫局部微血管新生，改善足底筋膜與肌肉的血流供應。對於應力性骨折的癒合或慢性肌腱炎，震波能大幅縮短復原時間。
               </p>
@@ -9756,8 +9763,8 @@ export const diseaseCategories: DiseaseCategory[] = [
           '赤腳走硬地板時疼痛加劇',
         ],
         treatments: [
-            '物理治療、止痛藥與鞋墊輔具評估',
-            '<a href="/treatments/manual" class="text-cyan-400 hover:underline">下肢力學調整與徒手治療</a>🔍️',
+            '<a href="/treatments/high-intensity-laser" class="text-cyan-400 hover:underline">高能量雷射 (消腫與組織修復)</a>🔍️',
+            '<a href="/treatments/manual" class="text-cyan-400 hover:underline">鞋墊輔具評估與徒手治療</a>🔍️',
             '<a href="/treatments/prp" class="text-cyan-400 hover:underline">超音波導引增生注射 (修復韌帶與神經解套)</a>🔍️',
           '<a href="/treatments/shockwave" class="text-cyan-400 hover:underline">聚焦式體外震波 (促進血液循環與修復)</a>🔍️',
         ],

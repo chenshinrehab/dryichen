@@ -191,6 +191,7 @@ export default function BoneAgeCalculator() {
   const [gender, setGender] = useState<Gender>('boy');
   const [height, setHeight] = useState<string>('');
   const [boneAge, setBoneAge] = useState<string>('');
+  const [boneAgeMonths, setBoneAgeMonths] = useState<string>('');
   const [fatherHeight, setFatherHeight] = useState<string>('');
   const [motherHeight, setMotherHeight] = useState<string>('');
 
@@ -204,7 +205,7 @@ export default function BoneAgeCalculator() {
 
   const calculate = () => {
     const h = parseFloat(height);
-    const ba = parseFloat(boneAge);
+    const ba = parseFloat(boneAge) + (parseFloat(boneAgeMonths) || 0) / 12;
     const fh = parseFloat(fatherHeight);
     const mh = parseFloat(motherHeight);
 
@@ -386,20 +387,35 @@ export default function BoneAgeCalculator() {
                   className="w-full p-4 rounded-xl bg-slate-700 border border-slate-600 focus:bg-slate-600 focus:ring-2 focus:ring-[#22d3ee] focus:border-transparent outline-none transition-all font-bold text-white text-lg"
                 />
               </div>
-              <div className="group">
-                <label htmlFor="bone-age" className="block text-sm font-bold text-slate-300 mb-2 group-focus-within:text-[#22d3ee] transition-colors">
-                    骨齡 (歲)
-                    <span className="text-xs font-normal text-slate-500 ml-1">醫師判讀</span>
-                </label>
-                <input
-                  id="bone-age"
-                  type="number"
-                  step="0.5"
-                  value={boneAge}
-                  onChange={(e) => setBoneAge(e.target.value)}
-                  placeholder="如: 11.5"
-                  className="w-full p-4 rounded-xl bg-slate-700 border border-slate-600 focus:bg-slate-600 focus:ring-2 focus:ring-[#22d3ee] focus:border-transparent outline-none transition-all font-bold text-white text-lg"
-                />
+              <div className="grid grid-cols-2 gap-2">
+                <div className="group min-w-0">
+                  <label htmlFor="bone-age" className="block text-sm font-bold text-slate-300 mb-2 group-focus-within:text-[#22d3ee] transition-colors">
+                      骨齡 (歲)
+                  </label>
+                  <input
+                    id="bone-age"
+                    type="number"
+                    step="1"
+                    value={boneAge}
+                    onChange={(e) => setBoneAge(e.target.value)}
+                    className="w-full p-4 rounded-xl bg-slate-700 border border-slate-600 focus:bg-slate-600 focus:ring-2 focus:ring-[#22d3ee] focus:border-transparent outline-none transition-all font-bold text-white text-lg"
+                  />
+                </div>
+                <div className="group min-w-0">
+                  <label htmlFor="bone-age-months" className="block text-sm font-bold text-slate-300 mb-2 group-focus-within:text-[#22d3ee] transition-colors">
+                      骨齡 (月)
+                  </label>
+                  <input
+                    id="bone-age-months"
+                    type="number"
+                    min="0"
+                    max="11"
+                    step="1"
+                    value={boneAgeMonths}
+                    onChange={(e) => setBoneAgeMonths(e.target.value)}
+                    className="w-full p-4 rounded-xl bg-slate-700 border border-slate-600 focus:bg-slate-600 focus:ring-2 focus:ring-[#22d3ee] focus:border-transparent outline-none transition-all font-bold text-white text-lg"
+                  />
+                </div>
               </div>
             </div>
 
