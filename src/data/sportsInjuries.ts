@@ -378,6 +378,12 @@ export const sportsInjuriesData = [
         description: '體外震波打完到底能不能吃止痛消炎藥？許多人以為「震波只是治療部位不一樣，用藥規則應該也不一樣」，但實證醫學告訴我們，無論是足底筋膜炎的修復型震波，還是打碎鈣化的破壞型震波，背後啟動的都是同一套發炎-修復機制，因此「避免吃消炎藥」這條原則幾乎是共通的。本文以醫學文獻為基礎，拆解震波治療的作用機轉、止痛藥的選擇邏輯，以及不同治療目的下的用藥差異。',
         image: '/images/news/article/eswt-nsaid-guide.webp',
       },
+                                                      {
+        slug: 'rotator-cuff-tear-treatment',
+        title: '旋轉肌撕裂一定要開刀嗎？撕裂大小、年齡到增生注射一次看懂',
+        description: '旋轉肌撕裂不是看到破洞就一定要開刀。許多部分撕裂與小型撕裂可先透過超音波引導注射搭配復健，爭取止痛、改善活動與延後或避免手術。本文也說明部分厚度超過 50%、大型全層撕裂、年齡與肌腱品質如何影響手術選擇。',
+        image: '/images/news/article/rotator-cuff-tear-treatment.webp',
+      },
 
       
                                                       {
@@ -427,6 +433,12 @@ export const sportsInjuriesData = [
         title: '骨密度檢測比較：醫院DEXA跟診所X光AI判讀差異',
         description: '市面上骨密度檢測方式五花八門，從醫院的DEXA雙能量X光、健檢中心常見的足跟定量超音波，到近年興起的胸部X光AI判讀，究竟哪一種最準確、費用又差多少？本文以實證研究逐一分析各種檢測工具的敏感度、特異度與適用情境，並說明為何DEXA至今仍是國際公認的診斷黃金標準。',
         image: '/images/news/article/bone-density-test-comparison.webp',
+      },
+                            {
+        slug: 'overhead-arm-sleep-posture-analysis',
+        title: '你睡覺會手舉過頭嗎?：肩頸緊繃的真相、談神經壓迫與居家改善',
+        description: '許多人睡覺時會不自覺把手舉高過頭，其實這個姿勢背後，往往藏著肩頸周圍肌肉緊繃的訊號。實證研究指出，胸小肌與斜角肌緊繃會壓迫胸廓出口的神經血管束，長期維持這個睡姿可能與手麻、肩頸僵硬甚至夜間睡眠品質下降有關。本文從解剖學角度拆解可能緊繃的肌群、分析長期舉手睡覺的潛在傷害，並提供居家伸展運動與診所徒手治療的具體建議。',
+        image: '/images/news/article/overhead-arm-sleep.webp',
       },
                       {
         slug: 'fake-hip-width-analysis',
