@@ -252,6 +252,13 @@ export const sportsInjuriesData = [
         description: '深度剖析五十肩（沾黏性肩關節囊炎）的真正成因、與年齡的關係、常見症狀，以及最多人誤解的問題——「放著不管會不會自己解凍？」實證研究顯示，五十肩的自然病程並不如傳說中那樣穩定痊癒，及早了解與介入才是關鍵。',
         image: '/images/news/article/frozen-shoulder-analysis.webp',
       },
+
+                                         {
+        slug: 'frozen-shoulder-vs-cervical-spondylosis',
+        title: '肩膀外側痛、整隻手痠麻是五十肩還是頸椎退化？',
+        description: '肩膀側邊痛、甚至痠麻到整隻手，卻被不同醫師分別診斷為「頸椎退化」與「五十肩」？本文以實證醫學文獻，完整說明五十肩（沾黏性肩關節囊炎）的成因、好發族群、病程分期，教你如何從疼痛型態、活動角度、手部麻木分布來分辨五十肩與頸椎神經根病變，並深入介紹五十肩的治療方式，包含肩關節擴張注射與徒手運動治療的實證效果。',
+        image: '/images/news/article/frozen-shoulder-vs-cervical-spondylosis.webp',
+      },
                                     {
         slug: 'child-development-early-intervention',
         title: '兒童發展全解析：動作、語言發展里程碑，何時該上早療？',
@@ -959,6 +966,12 @@ export const sportsInjuriesData = [
     description: '日常診間生活心得及趣事分享',
     image: '/images/sportinjury/8.webp',
     injuries: [
+                              {
+        slug: 'health-insurance-rehabilitation-effectiveness',
+        title: '健保 50 元復健到底有沒有效？復健科醫師告訴你真相🩺',
+        description: '健保復健究竟有沒有效？從看診 10 年、累積近 10 萬人次的臨床觀察來看，真正重要的不是治療便宜或昂貴，而是目前的問題是否適合只靠熱療、電療與牽引。若治療一段時間仍未改善，也許該重新確認診斷與治療策略。',
+        image:  '/images/news/article/health-insurance-rehabilitation.webp',
+      },
 
                               {
         slug: 'prp-overuse-reflection',

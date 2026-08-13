@@ -164,7 +164,12 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                       {disease.images && disease.images.length > 0 ? (
                         <img
                           src={disease.images[0].src}
-                          alt={`新竹復健科：${disease.title}專業治療與復健建議`}
+                          alt={`${disease.title}：${disease.images[0].alt || '症狀與治療圖解'}｜新竹宸新復健科疾病衛教`}
+                          title={disease.title}
+                          width={1200}
+                          height={630}
+                          loading="lazy"
+                          decoding="async"
                           className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                         />
                       ) : (
@@ -172,6 +177,11 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
                           <img
                             src={category.image || '/images/default-medical.webp'}
                             alt={`新竹復健科：${category.title}相關病症衛教`}
+                            title={`${category.title}相關病症衛教`}
+                            width={1200}
+                            height={630}
+                            loading="lazy"
+                            decoding="async"
                             className="w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-500 transform group-hover:scale-105"
                           />
                           <div className="absolute inset-0 flex items-center justify-center">
