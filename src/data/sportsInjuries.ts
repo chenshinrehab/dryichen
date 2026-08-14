@@ -854,7 +854,7 @@ export const sportsInjuriesData = [
         slug: 'ankle-pain-map',
         title: '腳踝疼痛地圖全解析：前後側、內外側痛，各代表什麼疾病？',
         description: '用民眾看得懂的語言，從醫學角度解析腳踝四個方位的疼痛意義。前側可能是撞擊症候群，後側可能是阿基里斯肌腱病變，內側可能是跗管症候群，外側最常見是韌帶損傷——本文系統整理各部位常見疾病與簡單鑑別方式。',
-        image:  '/images/news/article/ankle-pain-map.webp',
+        image:  '/images/news/painmap/ankle/腳踝的疼痛地圖全解析.webp',
       },
                         {
         slug: 'foot-pain-map',
