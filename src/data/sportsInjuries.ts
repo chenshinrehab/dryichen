@@ -842,7 +842,7 @@ export const sportsInjuriesData = [
         slug: 'wrist-pain-anatomy-map',
         title: '手腕的疼痛地圖：四個常見痛點的醫學實證與鑑別診斷',
         description: '手腕痛貼藥布就好？從運動醫學與解剖位置出發，深入剖析手腕前、後、橈、尺側四大區域的最常見疾病。全面解析腕隧道症候群、狄奎凡氏肌腱炎（媽媽手）、舟狀骨骨折與三角纖維軟骨複合體（TFCC）損傷的典型症狀、實證物理檢查法與影像策略。',
-        image:  '/images/news/article/wrist-pain-anatomy-map.webp',
+        image:  '/images/news/painmap/wrist/手腕的疼痛地圖.webp',
       },
                                     {
         slug: 'knee-pain-anatomical-location',

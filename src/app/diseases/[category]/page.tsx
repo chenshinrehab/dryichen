@@ -66,7 +66,7 @@ const FEATURED_CARDS_BY_CATEGORY: Record<string, NavigationCard[]> = {
       title: '手腕的疼痛地圖：四個常見痛點的醫學實證與鑑別診斷',
       description: '從運動醫學與解剖位置出發，深入剖析手腕前、後、橈、尺側四大區域的常見疾病、典型症狀、物理檢查法與影像策略。',
       image: {
-        src: '/images/news/article/wrist-pain-anatomy-map.webp',
+        src: '/images/news/painmap/wrist/手腕的疼痛地圖.webp',
         alt: '手腕疼痛地圖與鑑別診斷',
       },
       darkenImage: true,
