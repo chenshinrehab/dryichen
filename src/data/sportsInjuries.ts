@@ -830,7 +830,7 @@ export const sportsInjuriesData = [
         slug: 'shoulder-pain-mapping',
         title: '肩膀痛點全解析！從五個方位看懂肩膀「疼痛地圖」與自我鑑別',
         description: '肩膀痛好幾個月好不了？本文從運動醫學與解剖學視角，深入解析前側、外側、後側、內側及全周瀰漫性肩痛的根本原因。教您利用簡單三步驟在家進行自我評估，辨識夾擠症候群、旋轉肌撕裂、五十肩與頸椎壓迫的神經轉移痛，並破除三大常見診斷誤區。',
-        image:  '/images/news/article/shoulder-pain-mapping-guide.webp',
+        image:  '/images/news/painmap/shoulder/肩膀的疼痛地圖.webp',
       },
                               {
         slug: 'elbow-pain-map',
