@@ -848,7 +848,7 @@ export const sportsInjuriesData = [
         slug: 'knee-pain-anatomical-location',
         title: '膝蓋的疼痛地圖全解析：前後、內外側痛，各代表什麼疾病？',
         description: '膝蓋痛位置是精準診斷的第一步。本文從運動醫學與解剖學視角，拆解前側（跑步膝、跳躍膝）、內側（鵝掌滑囊炎、內側半月板）、外側（ 髂脛束症候群）及後側（貝克氏囊腫）的疼痛原因，並提供理學檢查自測與關鍵紅旗症狀。',
-        image:  '/images/news/article/knee-pain-location-map.webp',
+        image:  '/images/news/painmap/knee/膝蓋的疼痛地圖.webp',
       },
                                           {
         slug: 'ankle-pain-map',
