@@ -78,7 +78,7 @@ const FEATURED_CARDS_BY_CATEGORY: Record<string, NavigationCard[]> = {
       title: '手肘疼痛地圖全解析：前後、內外側痛，各代表什麼病？',
       description: '以部位為核心，系統解析手肘前側、後側、內側、外側疼痛的常見原因與疾病，協助初步鑑別診斷手肘痛。',
       image: {
-        src: '/images/news/article/elbow-pain-map.webp',
+        src: '/images/news/painmap/elbow/手肘的疼痛地圖.webp',
         alt: '手肘疼痛地圖全解析',
       },
       darkenImage: true,
@@ -122,7 +122,7 @@ const FEATURED_CARDS_BY_CATEGORY: Record<string, NavigationCard[]> = {
       title: '髖臀部疼痛地圖：痛在外側、後側還是鼠蹊？各代表什麼疾病？',
       description: '系統解析髖臀前側、外側、後側與內側的常見疼痛成因，並說明如何透過簡單動作進行居家初步鑑別。',
       image: {
-        src: '/images/news/article/hip-buttock-pain-location-mapping.webp',
+        src: '/images/news/painmap/hip/髖臀部的疼痛地圖.webp',
         alt: '髖臀部疼痛地圖與位置鑑別',
       },
       darkenImage: true,

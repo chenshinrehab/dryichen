@@ -504,6 +504,12 @@ export const sportsInjuriesData = [
         image: '/images/news/article/early-screen-time-analysis.webp',
       },
                               {
+        slug: 'dental-age-bone-age-correlation',
+        title: '骨齡與牙齒發育有關係嗎？從牙齒發展看懂孩子有沒有性早熟或生長遲緩',
+        description: '許多家長只在意身高與骨齡，卻忽略了牙齒發育其實也是觀察孩子生長速度的重要窗口。本文整理多篇實證研究，說明牙齒發育（牙齡）與骨齡之間的相關性、牙齒發育提前或落後是否能提示性早熟或生長遲緩，並提供一份簡明的兒童牙齒發展年齡對照表，讓家長可以自行初步比對。',
+        image: '/images/news/article/dentalage-boneage-analysis.webp',
+      },
+                              {
         slug: 'rehab-ortho-topical-patches-guide',
         title: '診所貼布、藥膏全解析：成分、用法、懷孕與過敏者能用嗎？',
         description: '深度解析復健科、骨科常用的痠痛貼布與藥膏成分——非類固醇消炎止痛藥（NSAID）貼布、辣椒素、薄荷醇、樟腦、水楊酸甲酯與利多卡因。實證研究說明使用注意事項、皮膚過敏與光敏反應風險，以及懷孕期間能否使用、哪些部位應避免，提供民眾安全使用的完整指南。',
@@ -824,7 +830,7 @@ export const sportsInjuriesData = [
         slug: 'hip-buttock-pain-location-mapping',
         title: '髖臀部疼痛地圖：痛在外側、後側還是鼠蹊？各代表什麼疾病？',
         description: '髖臀部疼痛是門診最常見卻也最易誤診的主訴。本文從運動醫學與臨床實證角度，系統性解析前側（FAI、盂唇撕裂）、外側（大轉子疼痛症候群）、後側（深臀部症候群、薦髂關節）與內側的常見成因，教你如何透過簡單動作自我居家初步鑑別。',
-        image:  '/images/news/article/hip-buttock-pain-location-mapping.webp',
+        image:  '/images/news/painmap/hip/髖臀部的疼痛地圖.webp',
       },
                         {
         slug: 'shoulder-pain-mapping',
@@ -836,7 +842,7 @@ export const sportsInjuriesData = [
         slug: 'elbow-pain-map',
         title: '手肘疼痛地圖全解析：前後、內外側痛，各代表什麼病？',
         description: '以部位為核心，系統解析手肘前側、後側、內側、外側疼痛的常見原因與疾病。從二頭肌肌腱炎、鷹嘴突滑囊炎、高爾夫球肘、網球肘到尺神經壓迫，用民眾聽得懂的語言，搭配實證醫學，教你如何初步鑑別診斷手肘痛。',
-        image:  '/images/news/article/elbow-pain-map.webp',
+        image:  '/images/news/painmap/elbow/手肘的疼痛地圖.webp',
       },
                                     {
         slug: 'wrist-pain-anatomy-map',
