@@ -246,6 +246,7 @@ export default function DiseaseCategoryPage({ params }: PageProps) {
               >
                 <i className="fa-solid fa-table-cells-large mr-3"></i>
                 查看所有疾病衛教
+                
               </Link>
             </div>
 
