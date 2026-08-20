@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 import Image from 'next/image' 
 import { usePathname } from 'next/navigation'
 
@@ -110,8 +110,8 @@ export default function Navigation() {
         
         {/* Logo 區塊 */}
         <div className={`relative flex items-center justify-between py-2 md:py-3 border-b min-h-[52px] md:min-h-[60px] ${isSelfPayPage ? 'border-slate-200/80' : 'border-slate-800/50'}`}>
-          {/* ✨ 修改處：移除 prefetch={false} 釋放首頁高速預載快取 */}
-          <Link href="/" className="flex items-center gap-2.5 group cursor-pointer md:absolute md:left-1/2 md:-translate-x-1/2 z-10" aria-label="宸新復健科首頁">
+          {/* 高密度導覽不預載；實際點擊仍使用 Next.js 站內導覽 */}
+          <Link href="/" intentPrefetch={false} className="flex items-center gap-2.5 group cursor-pointer md:absolute md:left-1/2 md:-translate-x-1/2 z-10" aria-label="宸新復健科首頁">
               <div className={`relative w-10 h-10 md:w-14 md:h-14 ${isSelfPayPage ? 'rounded-full overflow-hidden' : ''}`}>
                   <Image 
                     src="/images/main/logo.webp" 
@@ -136,17 +136,16 @@ export default function Navigation() {
 
           {/* 右側區塊 - 圖示已改為 React Icons */}
           <div className="flex items-center gap-2 ml-auto z-20">
-              {/* ✨ 修改處：移除 prefetch={false} 釋放行動版預約頁面背景快取 */}
               <Link 
                 href="/booking"
+                intentPrefetch={false}
                 className="sm:hidden flex items-center gap-1 px-3 py-1.5 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full font-bold shadow-md text-sm active:scale-95 transition-transform"
               >
                  <FaCalendarCheck size={14} /> 預約
               </Link>
 
               <div className="hidden sm:flex items-center gap-3">
-                {/* ✨ 修改處：移除 prefetch={false} */}
-                <Link href="/" title="回到首頁" 
+                <Link href="/" title="回到首頁" intentPrefetch={false}
                   className={isSelfPayPage
                     ? 'w-9 h-9 rounded-full bg-cyan-600 text-white border border-cyan-600 flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-cyan-500/30'
                     : 'w-10 h-10 rounded-full bg-slate-800 text-cyan-400 border border-cyan-400 flex items-center justify-center text-lg hover:bg-slate-700 transition-colors shadow-md'}>
@@ -184,9 +183,9 @@ export default function Navigation() {
                 <li key={item.path} className="relative group shrink-0 flex-1 sm:flex-none">
                    
                    <div className="relative">
-                       {/* ✨ 修改處：移除四大主選單的 prefetch={false} 屬性 */}
                        <Link 
                          href={item.path} 
+                         intentPrefetch={false}
                          className={`
                            px-1.5 py-1.5 text-sm 
                            md:px-4 md:py-2 md:text-base 
@@ -220,10 +219,10 @@ export default function Navigation() {
                      `}>
                         <div className="py-1">
                             {item.subItems.map((sub) => (
-                                /* ✨ 修改處：移除下拉選單所有疾病、療程子項目的 prefetch={false} 屬性，全面回復秒開體感 */
                                 <Link 
                                     key={sub.path} 
                                     href={sub.path}
+                                    intentPrefetch={false}
                                     className={`block px-4 py-3 text-sm text-left border-b last:border-0 ${isSelfPayPage
                                       ? 'text-slate-700 hover:bg-cyan-50 hover:text-cyan-700 border-slate-100'
                                       : 'text-slate-300 hover:bg-slate-800 hover:text-cyan-400 border-slate-800'
@@ -241,9 +240,9 @@ export default function Navigation() {
               
               {/* 電腦版預約按鈕 */}
               <li className="hidden sm:block shrink-0">
-                  {/* ✨ 修改處：移除電腦版預約連結的 prefetch={false} */}
                   <Link 
                     href="/booking" 
+                    intentPrefetch={false}
                     className={`
                       px-3.5 py-1.5 md:px-4 md:py-2 rounded-full text-base font-medium transition-all ml-1 block flex items-center gap-1.5
                       ${isActive('/booking') 

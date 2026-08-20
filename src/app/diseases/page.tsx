@@ -1,6 +1,6 @@
 // src/app/diseases/page.tsx
 import { Metadata } from 'next'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 import JsonLd from '@/components/JsonLd'
 import { diseaseCategories } from '@/data/diseases'
 import SymptomChecker from '@/components/SymptomChecker'

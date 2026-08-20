@@ -1,6 +1,6 @@
 // src/app/about/doctors/page.tsx
 import React from 'react'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import Image from 'next/image'

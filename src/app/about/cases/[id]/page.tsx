@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { notFound } from 'next/navigation'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import ShareButtons from '@/components/ShareButtons'

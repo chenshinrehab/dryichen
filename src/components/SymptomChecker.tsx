@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 import { diseaseCategories } from '@/data/diseases';
 
 // ✨ 引入所需的 React Icons，確保 AI 分析介面圖示穩定顯示

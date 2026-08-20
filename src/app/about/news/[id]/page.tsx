@@ -1,6 +1,6 @@
 // src/app/about/news/[id]/page.tsx
 import { notFound } from 'next/navigation'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { newsList, getNewsById } from '@/data/news'

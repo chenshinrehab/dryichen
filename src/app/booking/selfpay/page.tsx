@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 // import { Metadata } from 'next'; // 在 'use client' 中通常不直接 export metadata，但保留您的 import
 import JsonLd from '@/components/JsonLd';
 import ScrollAnimation from '@/components/ScrollAnimation';
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 import Image from 'next/image';
 
 type SlotStatus = 'open' | 'reserved';

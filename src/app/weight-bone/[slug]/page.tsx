@@ -1,7 +1,7 @@
 // src/app/weight-bone/[slug]/page.tsx
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 import JsonLd from '@/components/JsonLd'
 import { getWeightLossProgramBySlug, getAllWeightLossProgramSlugs } from '@/data/weightLoss'
 import ShareButtons from '@/components/ShareButtons'

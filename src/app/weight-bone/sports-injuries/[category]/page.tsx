@@ -1,6 +1,6 @@
 // src/app/weight-bone/sports-injuries/[category]/page.tsx
 import React from 'react'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { sportsInjuriesData } from '@/data/sportsInjuries'

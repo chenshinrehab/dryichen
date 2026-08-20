@@ -1,6 +1,6 @@
 // src/app/treatments/page.tsx
 import { Metadata } from 'next'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 import JsonLd from '@/components/JsonLd'
 import { treatmentsList } from '@/data/treatments'
 import ScrollAnimation from '@/components/ScrollAnimation'

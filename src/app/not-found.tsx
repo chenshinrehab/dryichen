@@ -1,5 +1,5 @@
 // src/app/not-found.tsx
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 
 export default function NotFound() {
   return (

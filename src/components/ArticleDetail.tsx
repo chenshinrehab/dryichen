@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 import ShareButtons from '@/components/ShareButtons';
 import RelatedCases from '@/components/RelatedCases'; 
 import { CaseStudy } from '@/data/cases';

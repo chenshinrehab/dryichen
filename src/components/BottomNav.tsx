@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 import { usePathname } from 'next/navigation'
 
 export default function BottomNav() {
@@ -61,6 +61,7 @@ export default function BottomNav() {
             <Link
               key={item.href}
               href={item.href}
+              intentPrefetch={false}
               className={`flex flex-col items-center justify-center space-y-1 transition-colors ${
                 active
                   ? 'text-blue-600 bg-blue-50'

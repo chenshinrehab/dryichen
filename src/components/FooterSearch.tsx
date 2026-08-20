@@ -2,7 +2,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 // 1. 導入所有資料來源的輕量列表
 import { treatmentsList } from '@/data/treatments'
 import { diseaseCategoriesList } from '@/data/diseases'
