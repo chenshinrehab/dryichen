@@ -1,6 +1,6 @@
 // src/app/about/news/page.tsx
 import React from 'react'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { newsList } from '@/data/news'
@@ -88,7 +88,7 @@ export default function NewsListContent({ currentPage: requestedPage }: { curren
         'name': '新竹宸新復健科診所',
         'logo': {
             '@type': 'ImageObject',
-            'url': `${SITE_URL}/logo.webp`
+            'url': `${SITE_URL}/images/logo.webp`
         }
     },
     'mainEntity': {

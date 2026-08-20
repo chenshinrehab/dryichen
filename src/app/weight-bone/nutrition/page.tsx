@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: '兒童長高營養指南 - 客製化飲食建議與食譜 | 新竹宸新復健科',
   description: '由林羿辰醫師親自設計。針對 1-18 歲兒童，依據衛福部 DRIs 提供蛋白質、鈣質精準攝取建議，並附上醫師推薦的長高食譜與轉骨營養知識。',
   keywords: ['兒童長高', '骨齡', '轉骨湯', '長高食譜', '兒童營養計算', '新竹復健科', '林羿辰醫師', '性早熟飲食'],
+  alternates: { canonical: 'https://www.dryichen.com.tw/weight-bone/nutrition' },
   openGraph: {
     title: '兒童長高吃什麼？林醫師的客製化營養指南',
     description: '輸入年齡與性別，立即獲得專屬的蛋白質與鈣質攝取目標，還有 8 道美味長高食譜！',

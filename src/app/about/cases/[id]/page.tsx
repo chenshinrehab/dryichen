@@ -2,13 +2,14 @@
 
 import React from 'react'
 import { notFound } from 'next/navigation'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import ShareButtons from '@/components/ShareButtons'
 // 匯入案例資料與組件
 import { casesData, getCaseById } from '@/data/cases'
 import RelatedCases from '@/components/RelatedCases' 
+import { optimizeContentImages } from '@/lib/contentImages'
 
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
 
@@ -152,7 +153,7 @@ const jsonLdData = {
     'url': SITE_URL,
     'logo': {
       '@type': 'ImageObject',
-      'url': `${SITE_URL}/logo.webp`
+      'url': `${SITE_URL}/images/logo.webp`
     },
     'address': {
       '@type': 'PostalAddress',
@@ -321,7 +322,7 @@ const jsonLdData = {
 
                   {/* 內容區 */}
                   <div className="article-content text-slate-300 leading-relaxed text-lg mb-6">
-                      <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+                      <div dangerouslySetInnerHTML={{ __html: optimizeContentImages(post.contentHtml, post.title) || '' }} />
                   </div>
                   
                   {/* 醫療免責聲明 */}

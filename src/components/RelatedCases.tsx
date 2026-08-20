@@ -1,6 +1,6 @@
 // src/components/RelatedCases.tsx
 import React from 'react'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 import { CaseStudy } from '@/data/cases'
 
 interface RelatedCasesProps {

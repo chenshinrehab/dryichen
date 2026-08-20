@@ -8,8 +8,24 @@ const securityHeaders = [
   { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), browsing-topics=()' },
   // ✨ 補上 Cross-Origin-Opener-Policy 解決 Best Practices 警告
   { key: 'Cross-Origin-Opener-Policy', value: 'same-origin' },
-  // ✨ 補上 X-Robots-Tag 滿足 SEO 檢查
-  { key: 'X-Robots-Tag', value: 'index, follow' }
+];
+
+const treatmentAliases = [
+  'prp',
+  'dextrose-prolotherapy',
+  'shockwave',
+  'manual',
+  'high-intensity-laser',
+  'hyaluronic-acid',
+  'shoulder-dilation',
+  'ultrasound-guided-aspiration',
+  'plt-therapy',
+  'amniotic-injection-therapy',
+  'ligament-tendon-hyaluronic-acid',
+  'bmac-injection',
+  'nerve-hydrodissection',
+  'steroid-injection',
+  'iv-pain-relief',
 ];
 
 const nextConfig = {
@@ -52,6 +68,11 @@ const nextConfig = {
   // pagination pages instead of a server-rendered query-string route.
   async redirects() {
     return [
+      ...treatmentAliases.map((slug) => ({
+        source: `/about/clinic/${slug}`,
+        destination: `/treatments/${slug}`,
+        permanent: true,
+      })),
       {
         source: '/about/news',
         has: [{ type: 'query', key: 'page', value: '(?<page>\\d+)' }],
@@ -74,6 +95,10 @@ const nextConfig = {
       {
         source: '/:path*',
         headers: securityHeaders,
+      },
+      {
+        source: '/booking/selfpay/doctor',
+        headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow, noarchive' }],
       },
       {
         source: '/sitemap.xml',

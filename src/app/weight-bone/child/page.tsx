@@ -1,7 +1,7 @@
 // src/app/weight-bone/child/page.tsx
 import GrowthAnalysisMRI from '@/components/tools/GrowthAnalysisMRI';
 import { Metadata } from 'next';
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 
 // 1. 豐富 Metadata：針對「生長曲線」與「發育評估」設定關鍵字
 export const metadata: Metadata = {

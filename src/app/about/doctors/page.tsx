@@ -1,6 +1,6 @@
 // src/app/about/doctors/page.tsx
 import React from 'react'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import Image from 'next/image'
@@ -131,7 +131,7 @@ export default function DoctorsPage() {
       'url': SITE_URL,
       'logo': {
         '@type': 'ImageObject',
-        'url': `${SITE_URL}/logo.webp`
+        'url': `${SITE_URL}/images/logo.webp`
       },
       'address': {
         '@type': 'PostalAddress',

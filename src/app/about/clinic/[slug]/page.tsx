@@ -4,8 +4,9 @@ import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { facilitiesData, getFacilityById } from '@/data/facilities'
-import { getTreatmentBySlug, getAllTreatmentSlugs } from '@/data/treatments'
 import ArticleDetail, { ArticleData } from '@/components/ArticleDetail'
+
+export const dynamicParams = false
 
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
 
@@ -15,9 +16,9 @@ interface PageProps { params: { slug: string } }
 // 1. SSG: 產生所有路徑
 // ==========================================
 export async function generateStaticParams() {
-  const facilities = facilitiesData.map((item) => ({ slug: item.id }));
-  const treatments = getAllTreatmentSlugs(); 
-  return [...facilities, ...treatments];
+  return facilitiesData
+    .filter((item) => !item.isTreatment)
+    .map((item) => ({ slug: item.id }));
 }
 
 // ==========================================
@@ -45,29 +46,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         siteName: '新竹宸新復健科診所',
       },
       // 補上在地化標記
-      other: {
-        'geo.region': 'TW-HCH',
-        'geo.placename': '新竹市',
-      }
-    };
-  }
-
-  // B. 檢查是否為治療
-  const treatment = getTreatmentBySlug(slug);
-  if (treatment) {
-    const canonicalUrl = `${SITE_URL}/treatments/${slug}`;
-    return {
-      title: `${treatment.title} (設備介紹)`, 
-      description: treatment.description,
-      alternates: {
-        canonical: canonicalUrl, // 指向本尊
-      },
-      openGraph: {
-        title: `${treatment.title} | 新竹宸新復健科`,
-        description: treatment.description,
-        url: canonicalUrl,
-        type: 'website',
-      },
       other: {
         'geo.region': 'TW-HCH',
         'geo.placename': '新竹市',
@@ -123,33 +101,6 @@ export default function ClinicHybridPage({ params }: PageProps) {
         />
       </>
     );
-  }
-
-  // ----------------------------------------------------
-  // 情境 B: 治療項目
-  // ----------------------------------------------------
-  const treatment = getTreatmentBySlug(slug);
-  if (treatment) {
-      const articleData: ArticleData = {
-        title: treatment.title,
-        subtitle: treatment.subtitle,
-        description: treatment.description,
-        contentHtml: treatment.contentHtml,
-        images: treatment.images,
-        youtubeVideoId: treatment.youtubeVideoId,
-        whyChooseUs: treatment.whyChooseUs,
-        treatmentFocus: treatment.treatmentFocus,
-        qaList: treatment.qaList,
-      };
-
-      return (
-        <ArticleDetail 
-          data={articleData} 
-          backLink={{ href: '/about/clinic', label: '返回設備列表' }}
-          currentUrl={currentUrl}
-          layoutStyle="standard" 
-        />
-      );
   }
 
   notFound();

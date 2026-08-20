@@ -112,7 +112,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
 
   // 7. 診所設備 (Facilities)
-  const facilityRoutes = facilitiesData.map((f) => ({
+  const facilityRoutes = facilitiesData.filter((f) => !f.isTreatment).map((f) => ({
     url: `${SITE_URL}/about/clinic/${f.id}`,
     // 根據 FacilityMetadata 介面，其實是有 lastModified 欄位的
     lastModified: safeDate(f.lastModified),

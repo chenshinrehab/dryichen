@@ -2,7 +2,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 
 // ✨ 引入所需的 React Icons，解決圖示消失的問題
 import { 

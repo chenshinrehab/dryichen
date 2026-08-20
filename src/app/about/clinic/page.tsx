@@ -1,6 +1,6 @@
 // src/app/about/clinic/page.tsx
 import React from 'react'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 // ✨ 1. 引入動畫組件
@@ -27,6 +27,7 @@ const allItems = facilitiesData.map((item) => {
         title: treatment.title,
         description: treatment.description,
         imageUrl: targetImage,
+        href: `/treatments/${treatment.slug}`,
       };
     }
   }
@@ -35,6 +36,7 @@ const allItems = facilitiesData.map((item) => {
     title: item.title,
     description: item.description,
     imageUrl: item.imageUrl,
+    href: `/about/clinic/${item.id}`,
   };
 });
 
@@ -92,7 +94,7 @@ export default function ClinicPage() {
       itemListElement: allItems.map((item, index) => ({
         '@type': 'ListItem',
         position: index + 1,
-        url: `${CANONICAL_URL}/${item.id}`,
+        url: `${SITE_URL}${item.href}`,
         name: item.title,
         image: item.imageUrl
       }))
@@ -134,7 +136,7 @@ export default function ClinicPage() {
               /* ✨ 修改處：移除 prefetch={false} 屬性，解凍背景快取，換回極速流暢的秒開體感 */
               <Link 
                 key={item.id} 
-                href={`/about/clinic/${item.id}`} 
+                href={item.href}
                 className="group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] transition-all duration-300 flex flex-col"
               >
                   {/* 圖片區塊 (優化 Alt 描述) */}
@@ -142,6 +144,8 @@ export default function ClinicPage() {
                     <img 
                       src={item.imageUrl} 
                       alt={`新竹宸新復健科專業設備介紹：${item.title}`} 
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>

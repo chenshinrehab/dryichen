@@ -1,6 +1,6 @@
 // src/app/about/news/notices/page.tsx
 import React from 'react'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { newsList } from '@/data/news'
@@ -78,7 +78,7 @@ export default function NoticesPage() {
   publisher: {
       '@type': 'MedicalClinic',
       name: '新竹宸新復健科診所',
-      image: `${SITE_URL}/logo.webp`,
+      image: `${SITE_URL}/images/logo.webp`,
       medicalSpecialty: ['Physical Therapy', 'Rehabilitation', 'Pain Management'], // 加入專科類別
       telephone: '+886-3-5647999', // 已填入診所電話
       address: {
@@ -101,7 +101,7 @@ export default function NoticesPage() {
       ],
       logo: {
           '@type': 'ImageObject',
-          url: `${SITE_URL}/logo.webp`
+          url: `${SITE_URL}/images/logo.webp`
       }
   },
   author: {

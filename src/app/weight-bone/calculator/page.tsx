@@ -1,7 +1,7 @@
 // src/app/weight-bone/calculator/page.tsx
 import BoneAgeCalculator from '@/components/tools/BoneAgeCalculator';
 import { Metadata } from 'next';
-import Link from 'next/link';
+import Link from '@/components/IntentLink';
 
 // 1. 設定精準且豐富的 Metadata
 export const metadata: Metadata = {

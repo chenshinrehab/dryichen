@@ -1,12 +1,13 @@
 // src/app/diseases/[category]/[slug]/page.tsx
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 import JsonLd from '@/components/JsonLd'
 import { getDiseaseBySlug, generateAllDiseaseParams } from '@/data/diseases'
 import ShareButtons from '@/components/ShareButtons'
 // ✨ 新增：匯入案例資料
 import { casesData } from '@/data/cases'
+import { optimizeContentImages } from '@/lib/contentImages'
 
 // 定義常數，方便未來修改
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
@@ -136,7 +137,7 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
   // 方案一：從元件層級修正標籤結構 (H3->H2, H4->H3)
   // 這樣全站 50 篇疾病衛教的內容大綱會立刻變得符合 SEO 邏輯
   const optimizedContent = disease.contentHtml
-    ? disease.contentHtml
+    ? optimizeContentImages(disease.contentHtml, disease.title)
         .replace(/<h3/g, '<h2')     // 把所有內容中的 H3 提升為 H2 (主要章節)
         .replace(/<\/h3>/g, '</h2>')
         .replace(/<h4/g, '<h3')     // 把所有內容中的 H4 提升為 H3 (子項目)
@@ -723,7 +724,7 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
 
                     <div
                       className="references-content w-full text-slate-400 text-sm md:text-base leading-relaxed break-all"
-                      dangerouslySetInnerHTML={{ __html: disease.referencesHtml }}
+                      dangerouslySetInnerHTML={{ __html: optimizeContentImages(disease.referencesHtml, `${disease.title} 參考資料`) || '' }}
                     />
 
                     <div className="mt-5 pt-3 border-t border-slate-700/30 flex items-center gap-2">

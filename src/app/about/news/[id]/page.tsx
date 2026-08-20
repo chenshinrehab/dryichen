@@ -1,10 +1,11 @@
 // src/app/about/news/[id]/page.tsx
 import { notFound } from 'next/navigation'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { newsList, getNewsById } from '@/data/news'
 import ShareButtons from '@/components/ShareButtons'
+import { optimizeContentImages } from '@/lib/contentImages'
 
 // ✨ 核心修正：強制關閉動態路由參數，徹底阻斷爬蟲與帶參數網址穿透到資料庫
 export const dynamicParams = false;
@@ -110,8 +111,11 @@ export default async function NewsDetailPage({ params }: PageProps) {
   if (!post) notFound()
 
   // ✨ 新增：過濾內文與參考文獻 HTML 中的站內連結 target 屬性
-  const fixedContentHtml = fixInternalLinkTargets(post.contentHtml)
-  const fixedReferencesHtml = fixInternalLinkTargets(post.referencesHtml)
+  const fixedContentHtml = optimizeContentImages(fixInternalLinkTargets(post.contentHtml), post.title)
+  const fixedReferencesHtml = optimizeContentImages(
+    fixInternalLinkTargets(post.referencesHtml),
+    `${post.title} 參考資料`,
+  )
 
   const currentUrl = `${SITE_URL}/about/news/${id}`
   // 自動生成該頁面專屬的 QR Code 網址
@@ -137,23 +141,20 @@ export default async function NewsDetailPage({ params }: PageProps) {
   // 3. Schema (核心安全性優化：徹底移除 undefined 屬性對抗 Webview 崩潰)
   const jsonLdData: Record<string, any> = {
     '@context': 'https://schema.org',
-    '@type': isAnnouncement ? 'NewsArticle' : ['MedicalWebPage', 'MedicalEntity'],
+    '@type': isAnnouncement ? 'NewsArticle' : ['Article', 'MedicalWebPage'],
     '@id': `${currentUrl}#webpage`,
     'url': currentUrl,
     'image': [post.coverImage || `${SITE_URL}/images/main/a.webp`],
     'description': post.summary,
     'keywords': post.keywords,
-    'datePublished': '2026-01-25',
-    'dateModified': post.date || '2026-02-25',
+    'datePublished': post.date,
+    'dateModified': post.lastModified || post.date,
     'articleSection': postCategory,
   };
 
   // 根據分類安全指派關鍵欄位，防止動態計算屬性在舊版手機瀏覽器中報錯
-  if (isAnnouncement) {
-    jsonLdData['headline'] = post.title;
-  } else {
-    jsonLdData['name'] = post.title;
-  }
+  jsonLdData['headline'] = post.title;
+  jsonLdData['name'] = post.title;
 
   // ✨ 核心修正：只有在真實存在 seoTitle 時才宣告，絕不傳入 undefined 避免序列化死機
   if (post.seoTitle) {
@@ -235,7 +236,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
     'telephone': '+886-3-5647999',
     'logo': {
       '@type': 'ImageObject',
-      'url': `${SITE_URL}/logo.webp`
+      'url': `${SITE_URL}/images/logo.webp`
     },
     'address': {
       '@type': 'PostalAddress',
@@ -259,7 +260,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
   };
 
   if (!isAnnouncement) {
-    jsonLdData['lastReviewed'] = post.date;
+    jsonLdData['lastReviewed'] = post.lastModified || post.date;
     jsonLdData['reviewedBy'] = {
       '@type': ['Person', 'Physician'],
       'name': '林羿辰 醫師',

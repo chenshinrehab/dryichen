@@ -1,6 +1,6 @@
 // src/app/weight-bone/page.tsx
 import React from 'react'
-import Link from 'next/link'
+import Link from '@/components/IntentLink'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { weightLossPrograms } from '@/data/weightLoss'
@@ -71,7 +71,6 @@ const weightBoneSchema = {
       'name': '減重、骨齡與運動傷害綜合門診',
       'description': '專精於體重管理(猛健樂)、兒童骨齡檢查及各類運動傷害(籃球、網球)之診斷與復健。',
       'url': CANONICAL_URL,
-      'lastReviewed': new Date().toISOString().split('T')[0],
       'reviewedBy': {
         '@type': 'Physician',
         'name': '林羿辰 醫師',
