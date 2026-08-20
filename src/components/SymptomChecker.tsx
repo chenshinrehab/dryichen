@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import Link from '@/components/IntentLink';
+import Link from 'next/link';
+import { diseaseCategories } from '@/data/diseases';
 
 // ✨ 引入所需的 React Icons，確保 AI 分析介面圖示穩定顯示
 import { 
@@ -21,13 +22,6 @@ interface AIResult {
   recommendedIds: string[];
   externalSuggestions: string[];
   urgent?: boolean;
-}
-
-export interface SymptomDiseaseIndexItem {
-  id: string
-  slug: string
-  title: string
-  categorySlug: string
 }
 
 // 定義要存入 Storage 的資料結構
@@ -55,7 +49,7 @@ function parseAIResult(value: unknown): AIResult | null {
   };
 }
 
-export default function SymptomChecker({ diseaseIndex }: { diseaseIndex: SymptomDiseaseIndexItem[] }) {
+export default function SymptomChecker() {
   const [input, setInput] = useState('');
   const [isExpanded, setIsExpanded] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -160,9 +154,21 @@ export default function SymptomChecker({ diseaseIndex }: { diseaseIndex: Symptom
 
   const getRecommendedItems = () => {
     if (!result?.recommendedIds) return [];
-    return result.recommendedIds
-      .map((targetId) => diseaseIndex.find((item) => item.id === targetId || item.slug === targetId))
-      .filter((item): item is SymptomDiseaseIndexItem => Boolean(item));
+    const foundItems: any[] = [];
+
+    result.recommendedIds.forEach(targetId => {
+      for (const category of diseaseCategories) {
+        const match = category.diseases?.find(d => d.id === targetId || d.slug === targetId);
+        if (match) {
+          foundItems.push({
+            ...match,
+            categorySlug: category.slug 
+          });
+          break;
+        }
+      }
+    });
+    return foundItems;
   };
 
   const internalCards = getRecommendedItems();

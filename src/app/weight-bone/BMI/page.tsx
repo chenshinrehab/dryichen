@@ -1,7 +1,7 @@
 // src/app/weight-bone/BMI/page.tsx
 import WeightLossCalculator from '@/components/tools/WeightLossCalculator';
 import { Metadata } from 'next';
-import Link from '@/components/IntentLink';
+import Link from 'next/link';
 
 // 1. 強化 Metadata：鎖定高流量關鍵字 (BMI, BMR, 減重)
 export const metadata: Metadata = {

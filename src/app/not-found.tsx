@@ -1,14 +1,5 @@
 // src/app/not-found.tsx
-import Link from '@/components/IntentLink'
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: '頁面不存在 | 新竹宸新復健科',
-  robots: {
-    index: false,
-    follow: false,
-  },
-}
+import Link from 'next/link'
 
 export default function NotFound() {
   return (

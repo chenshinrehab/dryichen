@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 // import { Metadata } from 'next'; // 在 'use client' 中通常不直接 export metadata，但保留您的 import
 import JsonLd from '@/components/JsonLd';
 import ScrollAnimation from '@/components/ScrollAnimation';
-import Link from '@/components/IntentLink';
+import Link from 'next/link';
 import Image from 'next/image';
 
 type SlotStatus = 'open' | 'reserved';
@@ -75,7 +75,7 @@ import {
 } from "react-icons/fa";
 
 const LINE_CLIENT_ID = "2010496335";
-const SITE_URL = "https://www.dryichen.com.tw";
+const SITE_URL = "https://dryichen.com.tw"; // 確保常數存在
 
 // --- Schema 資料更新 (強化 SEO/GEO：專攻新竹、預約制、自費復健) ---
 

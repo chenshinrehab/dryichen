@@ -1,6 +1,6 @@
 // src/app/weight-bone/sports-injuries/[category]/page.tsx
 import React from 'react'
-import Link from '@/components/IntentLink'
+import Link from 'next/link'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { sportsInjuriesData } from '@/data/sportsInjuries'
@@ -75,8 +75,8 @@ export default function SportsCategoryPage({ params }: { params: { category: str
             '@type': 'ListItem',
             'position': index + 1,
             'name': injury.title,
-            // Article content has one canonical URL; legacy sports URLs redirect there.
-            'url': `${SITE_URL}/about/news/${injury.slug}`
+            // ✨ 修正：將 Schema 指向的目標 URL 同步修復為連至特色門診專屬子分頁網址
+            'url': `${SITE_URL}/weight-bone/sports-injuries/${params.category}/${injury.slug}`
           }))
         },
         'author': {
@@ -117,9 +117,10 @@ export default function SportsCategoryPage({ params }: { params: { category: str
           {/* 具體傷害項目列表 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {categoryData.injuries.map((injury) => (
+              /* ✨ 修正：將 href 的超連結導向，正確調整改為進去它下面的專屬子分頁路由（/weight-bone/sports-injuries/${params.category}/${injury.slug}） */
               <Link
                 key={injury.slug}
-                href={`/about/news/${injury.slug}`}
+                href={`/weight-bone/sports-injuries/${params.category}/${injury.slug}`}
                 prefetch={false}
                 className="group bg-slate-800/50 backdrop-blur border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] hover:-translate-y-1 transition-all duration-300 flex flex-col"
               >

@@ -107,7 +107,7 @@ export default function RootLayout({
     name: '新竹宸新復健科診所',
     alternateName: 'Chenxin Rehabilitation Clinic',
     url: SITE_URL,
-    logo: `${SITE_URL}/favicon.svg`,
+    logo: `${SITE_URL}/favicon.ico`,
     image: `${SITE_URL}/images/og-default.jpg`,
     description: '新竹推薦復健科，提供專業 PRP、震波治療與兒童早療評估。',
     address: {

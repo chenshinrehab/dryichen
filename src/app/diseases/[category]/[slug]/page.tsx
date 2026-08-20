@@ -1,13 +1,12 @@
 // src/app/diseases/[category]/[slug]/page.tsx
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
-import Link from '@/components/IntentLink'
+import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { getDiseaseBySlug, generateAllDiseaseParams } from '@/data/diseases'
 import ShareButtons from '@/components/ShareButtons'
 // ✨ 新增：匯入案例資料
 import { casesData } from '@/data/cases'
-import { optimizeContentImages } from '@/lib/contentImages'
 
 // 定義常數，方便未來修改
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
@@ -53,9 +52,6 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
   
   // 嚴謹檢查：確保 images 是一個陣列且有內容
   const firstImage = Array.isArray(imagesArray) && imagesArray.length > 0 ? imagesArray[0] : null;
-  const imageAlt = firstImage && typeof firstImage === 'object' && firstImage.alt
-    ? `${disease.title}：${firstImage.alt}｜新竹宸新復健科疾病衛教`
-    : `${disease.title}症狀、診斷與復健治療｜新竹宸新復健科疾病衛教`;
 
   // 先設定預設的圖片做為保底
   let ogImageUrl: string = `${SITE_URL}/images/og-default.jpg`;
@@ -107,7 +103,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
           url: ogImageUrl,
           width: 1200,
           height: 630,
-          alt: imageAlt,
+          alt: firstImage?.alt || disease.title, // 如果物件有 alt 就優先使用
         },
       ],
     },
@@ -137,7 +133,7 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
   // 方案一：從元件層級修正標籤結構 (H3->H2, H4->H3)
   // 這樣全站 50 篇疾病衛教的內容大綱會立刻變得符合 SEO 邏輯
   const optimizedContent = disease.contentHtml
-    ? optimizeContentImages(disease.contentHtml, disease.title)
+    ? disease.contentHtml
         .replace(/<h3/g, '<h2')     // 把所有內容中的 H3 提升為 H2 (主要章節)
         .replace(/<\/h3>/g, '</h2>')
         .replace(/<h4/g, '<h3')     // 把所有內容中的 H4 提升為 H3 (子項目)
@@ -146,15 +142,6 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
 
   // 頁面內部使用的網址，確保與 Canonical 一致
   const currentPageUrl = `${SITE_URL}/diseases/${category}/${slug}`
-
-  // 搜尋引擎使用的疾病主圖資訊；只加入 Metadata／Schema，不在文章頁顯示圖片
-  const primaryImage = disease.images?.[0]
-  const primaryImageUrl = primaryImage?.src
-    ? (primaryImage.src.startsWith('http') ? primaryImage.src : `${SITE_URL}${primaryImage.src.startsWith('/') ? '' : '/'}${primaryImage.src}`)
-    : `${SITE_URL}/images/og-default.jpg`
-  const primaryImageAlt = primaryImage?.alt
-    ? `${disease.title}：${primaryImage.alt}｜新竹宸新復健科疾病衛教`
-    : `${disease.title}症狀、診斷與復健治療｜新竹宸新復健科疾病衛教`
   
   // QR Code API
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&bgcolor=ffffff&data=${encodeURIComponent(currentPageUrl)}`
@@ -191,20 +178,6 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
     // 強化標題，結合專業 brand 詞
     name: `${disease.title} - 專業疾病衛教與復健治療 | 宸新復健科診所`,
     description: disease.seoDescription || disease.description,
-    primaryImageOfPage: {
-      '@type': 'ImageObject',
-      url: primaryImageUrl,
-      contentUrl: primaryImageUrl,
-      name: primaryImageAlt,
-      caption: primaryImageAlt
-    },
-    image: {
-      '@type': 'ImageObject',
-      url: primaryImageUrl,
-      contentUrl: primaryImageUrl,
-      name: primaryImageAlt,
-      caption: primaryImageAlt
-    },
     
     // 時效性控制：GEO 引擎判斷內容新鮮度的核心
     datePublished: '2026-01-25',
@@ -429,26 +402,6 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
             font-size: 0.85em;
             font-weight: bold;
             margin-bottom: 2px;
-        }
-
-        .article-content sup a,
-        .article-content ol a,
-        .article-content a[style*="text-underline-offset"],
-        .references-content a {
-            border-bottom: none !important;
-            display: inline !important;
-            color: #ec4899 !important;
-            background: transparent !important;
-            padding: 0 !important;
-            margin: 0 !important;
-        }
-
-        .article-content sup a::after,
-        .article-content ol a::after,
-        .article-content a[style*="text-underline-offset"]::after,
-        .references-content a::after {
-            content: "" !important;
-            display: none !important;
         }
 
         .article-content img {
@@ -714,28 +667,6 @@ export default async function DiseaseDetailPage({ params }: PageProps) {
                   </Link>
                 </div>
               </div>
-
-              {disease.referencesHtml && (
-                <section className="bg-slate-900/80 px-0 md:px-12 pb-12 text-left">
-                  <div className="border-t border-slate-700/50 pt-8 px-2 md:px-0">
-                    <div className="flex items-center mb-4 pb-3">
-                      <i className="fa-solid fa-book-bookmark text-cyan-400 text-lg mr-2"></i>
-                    </div>
-
-                    <div
-                      className="references-content w-full text-slate-400 text-sm md:text-base leading-relaxed break-all"
-                      dangerouslySetInnerHTML={{ __html: optimizeContentImages(disease.referencesHtml, `${disease.title} 參考資料`) || '' }}
-                    />
-
-                    <div className="mt-5 pt-3 border-t border-slate-700/30 flex items-center gap-2">
-                      <span className="inline-block w-1.5 h-1.5 rounded-full bg-cyan-500/50 animate-pulse"></span>
-                      <p className="text-[9px] text-slate-500 uppercase tracking-tighter font-medium leading-tight">
-                        Evidence-Based Medicine Research & Clinical Guidelines
-                      </p>
-                    </div>
-                  </div>
-                </section>
-              )}
 
             </div>
           </div>

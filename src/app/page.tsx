@@ -1,6 +1,6 @@
 // src/app/page.tsx
 import { Metadata } from 'next'
-import Link from '@/components/IntentLink'
+import Link from 'next/link'
 import Image from 'next/image'
 import dynamic from 'next/dynamic' 
 import JsonLd from '@/components/JsonLd'

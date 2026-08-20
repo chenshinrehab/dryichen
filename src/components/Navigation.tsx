@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react'
-import Link from '@/components/IntentLink'
+import Link from 'next/link'
 import Image from 'next/image' 
 import { usePathname } from 'next/navigation'
 

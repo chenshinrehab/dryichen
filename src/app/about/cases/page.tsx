@@ -1,6 +1,6 @@
 // src/app/about/cases/page.tsx
 import React from 'react'
-import Link from '@/components/IntentLink'
+import Link from 'next/link'
 import { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { casesData } from '@/data/cases' 
@@ -67,7 +67,7 @@ export default function CaseStudyListPage() {
         name: '新竹宸新復健科診所',
         logo: {
             '@type': 'ImageObject',
-            url: `${SITE_URL}/images/logo.webp`
+            url: `${SITE_URL}/logo.webp`
         }
     },
     author: {

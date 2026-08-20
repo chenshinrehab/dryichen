@@ -60,9 +60,14 @@ export default function TreatmentDetailPage({ params }: PageProps) {
   // 網址設定
   const currentPageUrl = `${SITE_URL}/treatments/${params.slug}`
 
-  // Use only explicitly stored dates. A deployment date is not a content update.
+  // --- 資料獲取與日期處理 ---
+  
+  // 取得今天日期作為最後保險備案
+  const today = new Date().toISOString().split('T')[0];
+  
+  // ✨ 核心修正：嚴格優先抓取 data 裡的日期，完全不使用舊的 '0222' 字串
   const finalPublishedDate = treatment.datePublished || '2026-01-25'; 
-  const finalModifiedDate = treatment.lastModified || finalPublishedDate;
+  const finalModifiedDate = treatment.lastModified || today; 
 
   // A. 抓取「成功案例」 (根據 Tags)
   const matchedCases = getRelatedCases(treatment.tags);
@@ -189,7 +194,7 @@ export default function TreatmentDetailPage({ params }: PageProps) {
       'url': SITE_URL,
       'logo': {
         '@type': 'ImageObject',
-        'url': `${SITE_URL}/images/logo.webp`
+        'url': `${SITE_URL}/logo.webp`
       },
       'address': { 
          '@type': 'PostalAddress',

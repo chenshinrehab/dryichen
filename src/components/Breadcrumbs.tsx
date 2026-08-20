@@ -1,4 +1,4 @@
-import Link from '@/components/IntentLink'
+import Link from 'next/link'
 
 interface BreadcrumbItem {
   label: string

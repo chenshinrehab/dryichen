@@ -1,12 +1,11 @@
 // src/app/weight-bone/[slug]/page.tsx
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
-import Link from '@/components/IntentLink'
+import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { getWeightLossProgramBySlug, getAllWeightLossProgramSlugs } from '@/data/weightLoss'
 import ShareButtons from '@/components/ShareButtons'
 import { casesData } from '@/data/cases'
-import { optimizeContentImages } from '@/lib/contentImages'
 
 // 引入 React Icons (Font Awesome 6 版本)
 import { FaCalculator, FaChartLine, FaBone, FaUtensils } from 'react-icons/fa6'
@@ -187,7 +186,7 @@ const jsonLdService = {
     'url': SITE_URL,
     'logo': {
       '@type': 'ImageObject',
-      'url': `${SITE_URL}/images/logo.webp`
+      'url': `${SITE_URL}/logo.webp`
     },
     'address': { 
        '@type': 'PostalAddress',
@@ -523,7 +522,7 @@ const jsonLdService = {
                 {/* 內容說明區 (主文) */}
                 <div className="article-content text-slate-300 leading-relaxed text-lg mb-10 pb-8 border-b border-slate-700/50">
                   {program.contentHtml ? (
-                    <div dangerouslySetInnerHTML={{ __html: optimizeContentImages(program.contentHtml, program.title) || '' }} />
+                    <div dangerouslySetInnerHTML={{ __html: program.contentHtml }} />
                   ) : (
                     <p>{program.description}</p>
                   )}
@@ -700,7 +699,7 @@ const jsonLdService = {
                     {/* 這裡直接渲染您在資料庫中寫好的 HTML */}
                     <div 
                       className="references-content text-slate-400 text-sm md:text-base leading-relaxed"
-                      dangerouslySetInnerHTML={{ __html: optimizeContentImages(program.referencesHtml, `${program.title} 參考資料`) || '' }}
+                      dangerouslySetInnerHTML={{ __html: program.referencesHtml }} 
                     />
                     
                     <div className="mt-6 pt-4 border-t border-slate-700/30 flex items-center gap-2">

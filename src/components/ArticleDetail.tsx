@@ -1,11 +1,10 @@
 'use client';
 
 import React from 'react';
-import Link from '@/components/IntentLink';
+import Link from 'next/link';
 import ShareButtons from '@/components/ShareButtons';
 import RelatedCases from '@/components/RelatedCases'; 
 import { CaseStudy } from '@/data/cases';
-import { optimizeContentImages } from '@/lib/contentImages';
 
 export interface ArticleData {
   title: string;
@@ -37,7 +36,8 @@ interface ArticleDetailProps {
 export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle, relatedCases }: ArticleDetailProps) {
   const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&bgcolor=ffffff&data=${encodeURIComponent(currentUrl)}`;
 
-  const optimizedContentHtml = optimizeContentImages(data.contentHtml, data.title);
+  // 取得今天的日期作為最終備案 (ISO 格式: YYYY-MM-DD)
+  const today = new Date().toISOString().split('T')[0];
 
   return (
     <>
@@ -108,12 +108,12 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                             </Link>
                           </span>
                           <span className="hidden md:inline text-slate-600">|</span>
-                          {data.lastModified && (
-                            <span className="flex items-center">
-                              最後更新日期：
-                              <time dateTime={data.lastModified} itemProp="dateModified">{data.lastModified}</time>
-                            </span>
-                          )}
+                          <span className="flex items-center">
+                            最後更新日期：
+                            <time dateTime={data.lastModified || today} itemProp="dateModified">
+                              {data.lastModified || today}
+                            </time>
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -148,7 +148,7 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
 
                 {/* 文章內文 */}
                 <div className="article-content text-slate-300 leading-relaxed text-lg mb-4">
-                  {optimizedContentHtml ? <div dangerouslySetInnerHTML={{ __html: optimizedContentHtml }} /> : <p>{data.description}</p>}
+                  {data.contentHtml ? <div dangerouslySetInnerHTML={{ __html: data.contentHtml }} /> : <p>{data.description}</p>}
                 </div>
 
                 {/* 多媒體內容 */}
@@ -168,7 +168,7 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                     {data.images.map((img, idx) => (
                       <div key={idx} className="text-center group">
                         <div className="relative overflow-hidden rounded-xl shadow-xl inline-block w-full md:w-[85%] border border-slate-700 bg-slate-900">
-                          <img src={img.src} alt={img.alt || data.title} loading="lazy" decoding="async" className="w-full h-auto transform group-hover:scale-[1.02] transition-transform duration-700 block" />
+                          <img src={img.src} alt={img.alt || data.title} className="w-full h-auto transform group-hover:scale-[1.02] transition-transform duration-700 block" />
                         </div>
                       </div>
                     ))}
@@ -249,12 +249,12 @@ export default function ArticleDetail({ data, backLink, currentUrl, layoutStyle,
                                 <span className="flex items-center"><i className="fa-solid fa-check-double mr-1 text-cyan-500/70"></i> 專家審閱完成</span>
                                 <span className="flex items-center"><i className="fa-solid fa-database mr-1 text-cyan-500/70"></i> 來源：醫學實證與專科臨床</span>
                               </div>
-                              {data.lastModified && (
-                                <div className="text-gray-500">
-                                  最後更新日期：
-                                  <time dateTime={data.lastModified} itemProp="dateModified">{data.lastModified}</time>
-                                </div>
-                              )}
+                              <div className="text-gray-500">
+                                最後更新日期：
+                                <time dateTime={data.lastModified || today} itemProp="dateModified">
+                                  {data.lastModified || today}
+                                </time>
+                              </div>
                             </div>
                           </div>
                         </div>

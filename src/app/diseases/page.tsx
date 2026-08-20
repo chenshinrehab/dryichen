@@ -1,6 +1,6 @@
 // src/app/diseases/page.tsx
 import { Metadata } from 'next'
-import Link from '@/components/IntentLink'
+import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { diseaseCategories } from '@/data/diseases'
 import SymptomChecker from '@/components/SymptomChecker'
@@ -18,15 +18,6 @@ import {
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw').trim()
 const PAGE_PATH = '/diseases'
 const CANONICAL_URL = `${SITE_URL}${PAGE_PATH}`
-
-const symptomDiseaseIndex = diseaseCategories.flatMap((category) =>
-  category.diseases.map((disease) => ({
-    id: disease.id,
-    slug: disease.slug,
-    title: disease.title,
-    categorySlug: category.slug,
-  })),
-)
 
 // ==========================================
 // 1. Meta 設定 (優化 Title 並加入 Geo 標籤)
@@ -72,6 +63,7 @@ const diseasesSchema = {
       'name': '骨科復健疾病衛教導覽',
       'description': '提供脊椎、關節、肌肉疼痛等相關疾病的詳細症狀說明與治療建議。',
       'url': CANONICAL_URL,
+      'lastReviewed': new Date().toISOString().split('T')[0],
       'reviewedBy': {
         '@type': 'Physician',
         'name': '林羿辰 醫師',
@@ -121,7 +113,7 @@ export default function DiseasesPage() {
 
               {/* AI 輸入框 */}
               <div className="relative z-20">
-              <SymptomChecker diseaseIndex={symptomDiseaseIndex} />
+                  <SymptomChecker />
               </div>
           </div>
 

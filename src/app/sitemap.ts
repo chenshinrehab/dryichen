@@ -8,11 +8,13 @@ import { weightLossPrograms } from '@/data/weightLoss'
 import { facilitiesData } from '@/data/facilities'
 import { diseaseCategories } from '@/data/diseases' // ✨ 修正匯入名稱
 
+// 設定快取 24 小時 (單位：秒)
+export const revalidate = 86400
+
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dryichen.com.tw'
 
-// Return only explicitly stored dates. Using the current time would make every
-// sitemap regeneration appear to contain brand-new content.
-function safeDate(dateStr?: string, fallbackStr?: string): Date | undefined {
+// ✨ 安全解析日期的工具函式，避免產生 Invalid Date 導致 Sitemap 報錯
+function safeDate(dateStr?: string, fallbackStr?: string): Date {
   if (dateStr) {
     const d = new Date(dateStr)
     if (!isNaN(d.getTime())) return d
@@ -21,10 +23,12 @@ function safeDate(dateStr?: string, fallbackStr?: string): Date | undefined {
     const d = new Date(fallbackStr)
     if (!isNaN(d.getTime())) return d
   }
-  return undefined
+  return new Date() // 若資料庫忘記填日期，預設使用專案部署的當下時間
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const buildTime = new Date()
+
   // 1. 固定靜態頁面 (已包含 weight-bone 的核心分類導覽頁)
   const staticRoutes = [
     '',
@@ -43,6 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/booking',
   ].map((route) => ({
     url: `${SITE_URL}${route}`,
+    lastModified: buildTime,
     changeFrequency: 'weekly' as const,
     priority: route === '' ? 1 : 0.8,
   }))
@@ -112,7 +117,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
 
   // 7. 診所設備 (Facilities)
-  const facilityRoutes = facilitiesData.filter((f) => !f.isTreatment).map((f) => ({
+  const facilityRoutes = facilitiesData.map((f) => ({
     url: `${SITE_URL}/about/clinic/${f.id}`,
     // 根據 FacilityMetadata 介面，其實是有 lastModified 欄位的
     lastModified: safeDate(f.lastModified),

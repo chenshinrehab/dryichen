@@ -1,6 +1,6 @@
 // src/app/treatments/page.tsx
 import { Metadata } from 'next'
-import Link from '@/components/IntentLink'
+import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { treatmentsList } from '@/data/treatments'
 import ScrollAnimation from '@/components/ScrollAnimation'
@@ -59,6 +59,7 @@ const treatmentsSchema = {
       'name': '復健治療項目總覽',
       'description': '提供PRP增生療法、體外震波、徒手治療等專業骨科復健服務。',
       'url': CANONICAL_URL,
+      'lastReviewed': new Date().toISOString().split('T')[0],
       'reviewedBy': {
         '@type': 'Physician',
         'name': '林羿辰 醫師',
