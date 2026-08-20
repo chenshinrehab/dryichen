@@ -48,6 +48,19 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
 
+  // Keep previously shared ?page= links working while serving pre-rendered
+  // pagination pages instead of a server-rendered query-string route.
+  async redirects() {
+    return [
+      {
+        source: '/about/news',
+        has: [{ type: 'query', key: 'page', value: '(?<page>\\d+)' }],
+        destination: '/about/news/page/:page',
+        permanent: true,
+      },
+    ];
+  },
+
   // 4. 標頭設定
   async headers() {
     return [

@@ -23,6 +23,16 @@ interface PageProps {
   params: Promise<{ category: string; slug: string }>
 }
 
+// Build every valid article page ahead of time so ordinary visits do not invoke
+// a serverless function. Unknown URLs remain blocked by dynamicParams = false.
+export function generateStaticParams() {
+  return sportsInjuriesData.flatMap((category) =>
+    category.injuries
+      .filter((injury) => Boolean(getNewsById(injury.slug)))
+      .map((injury) => ({ category: category.category, slug: injury.slug })),
+  )
+}
+
 /* ==========================================================================
    1. 動態 Meta 強化 (精確宣告分身 Canonical 關係)
    ========================================================================== */
