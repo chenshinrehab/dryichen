@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!category) {
     return { title: '找不到分類' }
+    
   }
 
   const ogImage = category.image || '/images/default-og.jpg'
