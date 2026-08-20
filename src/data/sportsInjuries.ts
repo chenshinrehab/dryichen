@@ -252,6 +252,13 @@ export const sportsInjuriesData = [
         description: '深度剖析五十肩（沾黏性肩關節囊炎）的真正成因、與年齡的關係、常見症狀，以及最多人誤解的問題——「放著不管會不會自己解凍？」實證研究顯示，五十肩的自然病程並不如傳說中那樣穩定痊癒，及早了解與介入才是關鍵。',
         image: '/images/news/article/frozen-shoulder-analysis.webp',
       },
+
+                                         {
+        slug: 'frozen-shoulder-vs-cervical-spondylosis',
+        title: '肩膀外側痛、整隻手痠麻是五十肩還是頸椎退化？',
+        description: '肩膀側邊痛、甚至痠麻到整隻手，卻被不同醫師分別診斷為「頸椎退化」與「五十肩」？本文以實證醫學文獻，完整說明五十肩（沾黏性肩關節囊炎）的成因、好發族群、病程分期，教你如何從疼痛型態、活動角度、手部麻木分布來分辨五十肩與頸椎神經根病變，並深入介紹五十肩的治療方式，包含肩關節擴張注射與徒手運動治療的實證效果。',
+        image: '/images/news/article/frozen-shoulder-vs-cervical-spondylosis.webp',
+      },
                                     {
         slug: 'child-development-early-intervention',
         title: '兒童發展全解析：動作、語言發展里程碑，何時該上早療？',
@@ -378,6 +385,12 @@ export const sportsInjuriesData = [
         description: '體外震波打完到底能不能吃止痛消炎藥？許多人以為「震波只是治療部位不一樣，用藥規則應該也不一樣」，但實證醫學告訴我們，無論是足底筋膜炎的修復型震波，還是打碎鈣化的破壞型震波，背後啟動的都是同一套發炎-修復機制，因此「避免吃消炎藥」這條原則幾乎是共通的。本文以醫學文獻為基礎，拆解震波治療的作用機轉、止痛藥的選擇邏輯，以及不同治療目的下的用藥差異。',
         image: '/images/news/article/eswt-nsaid-guide.webp',
       },
+                                                      {
+        slug: 'rotator-cuff-tear-treatment',
+        title: '旋轉肌撕裂一定要開刀嗎？撕裂大小、年齡到增生注射一次看懂',
+        description: '旋轉肌撕裂不是看到破洞就一定要開刀。許多部分撕裂與小型撕裂可先透過超音波引導注射搭配復健，爭取止痛、改善活動與延後或避免手術。本文也說明部分厚度超過 50%、大型全層撕裂、年齡與肌腱品質如何影響手術選擇。',
+        image: '/images/news/article/rotator-cuff-tear-treatment.webp',
+      },
 
       
                                                       {
@@ -427,6 +440,12 @@ export const sportsInjuriesData = [
         title: '骨密度檢測比較：醫院DEXA跟診所X光AI判讀差異',
         description: '市面上骨密度檢測方式五花八門，從醫院的DEXA雙能量X光、健檢中心常見的足跟定量超音波，到近年興起的胸部X光AI判讀，究竟哪一種最準確、費用又差多少？本文以實證研究逐一分析各種檢測工具的敏感度、特異度與適用情境，並說明為何DEXA至今仍是國際公認的診斷黃金標準。',
         image: '/images/news/article/bone-density-test-comparison.webp',
+      },
+                            {
+        slug: 'overhead-arm-sleep-posture-analysis',
+        title: '你睡覺會手舉過頭嗎?：肩頸緊繃的真相、談神經壓迫與居家改善',
+        description: '許多人睡覺時會不自覺把手舉高過頭，其實這個姿勢背後，往往藏著肩頸周圍肌肉緊繃的訊號。實證研究指出，胸小肌與斜角肌緊繃會壓迫胸廓出口的神經血管束，長期維持這個睡姿可能與手麻、肩頸僵硬甚至夜間睡眠品質下降有關。本文從解剖學角度拆解可能緊繃的肌群、分析長期舉手睡覺的潛在傷害，並提供居家伸展運動與診所徒手治療的具體建議。',
+        image: '/images/news/article/overhead-arm-sleep.webp',
       },
                       {
         slug: 'fake-hip-width-analysis',
@@ -483,6 +502,12 @@ export const sportsInjuriesData = [
         title: '兒童早期接觸3C產品全解析：專注力、手眼協調，優缺點一次看懂',
         description: '深度剖析學齡前幼兒早期接觸手機、平板等3C產品的優點與風險。實證研究揭露螢幕時間如何影響專注力發展、語言能力與精細動作，同時說明互動式應用程式可能帶來的手眼協調訓練效果，並提供國際機構建議的科學使用策略。',
         image: '/images/news/article/early-screen-time-analysis.webp',
+      },
+                              {
+        slug: 'dental-age-bone-age-correlation',
+        title: '骨齡與牙齒發育有關係嗎？從牙齒發展看懂孩子有沒有性早熟或生長遲緩',
+        description: '許多家長只在意身高與骨齡，卻忽略了牙齒發育其實也是觀察孩子生長速度的重要窗口。本文整理多篇實證研究，說明牙齒發育（牙齡）與骨齡之間的相關性、牙齒發育提前或落後是否能提示性早熟或生長遲緩，並提供一份簡明的兒童牙齒發展年齡對照表，讓家長可以自行初步比對。',
+        image: '/images/news/article/dentalage-boneage-analysis.webp',
       },
                               {
         slug: 'rehab-ortho-topical-patches-guide',
@@ -805,37 +830,37 @@ export const sportsInjuriesData = [
         slug: 'hip-buttock-pain-location-mapping',
         title: '髖臀部疼痛地圖：痛在外側、後側還是鼠蹊？各代表什麼疾病？',
         description: '髖臀部疼痛是門診最常見卻也最易誤診的主訴。本文從運動醫學與臨床實證角度，系統性解析前側（FAI、盂唇撕裂）、外側（大轉子疼痛症候群）、後側（深臀部症候群、薦髂關節）與內側的常見成因，教你如何透過簡單動作自我居家初步鑑別。',
-        image:  '/images/news/article/hip-buttock-pain-location-mapping.webp',
+        image:  '/images/news/painmap/hip/髖臀部的疼痛地圖.webp',
       },
                         {
         slug: 'shoulder-pain-mapping',
         title: '肩膀痛點全解析！從五個方位看懂肩膀「疼痛地圖」與自我鑑別',
         description: '肩膀痛好幾個月好不了？本文從運動醫學與解剖學視角，深入解析前側、外側、後側、內側及全周瀰漫性肩痛的根本原因。教您利用簡單三步驟在家進行自我評估，辨識夾擠症候群、旋轉肌撕裂、五十肩與頸椎壓迫的神經轉移痛，並破除三大常見診斷誤區。',
-        image:  '/images/news/article/shoulder-pain-mapping-guide.webp',
+        image:  '/images/news/painmap/shoulder/肩膀的疼痛地圖.webp',
       },
                               {
         slug: 'elbow-pain-map',
         title: '手肘疼痛地圖全解析：前後、內外側痛，各代表什麼病？',
         description: '以部位為核心，系統解析手肘前側、後側、內側、外側疼痛的常見原因與疾病。從二頭肌肌腱炎、鷹嘴突滑囊炎、高爾夫球肘、網球肘到尺神經壓迫，用民眾聽得懂的語言，搭配實證醫學，教你如何初步鑑別診斷手肘痛。',
-        image:  '/images/news/article/elbow-pain-map.webp',
+        image:  '/images/news/painmap/elbow/手肘的疼痛地圖.webp',
       },
                                     {
         slug: 'wrist-pain-anatomy-map',
         title: '手腕的疼痛地圖：四個常見痛點的醫學實證與鑑別診斷',
         description: '手腕痛貼藥布就好？從運動醫學與解剖位置出發，深入剖析手腕前、後、橈、尺側四大區域的最常見疾病。全面解析腕隧道症候群、狄奎凡氏肌腱炎（媽媽手）、舟狀骨骨折與三角纖維軟骨複合體（TFCC）損傷的典型症狀、實證物理檢查法與影像策略。',
-        image:  '/images/news/article/wrist-pain-anatomy-map.webp',
+        image:  '/images/news/painmap/wrist/手腕的疼痛地圖.webp',
       },
                                     {
         slug: 'knee-pain-anatomical-location',
         title: '膝蓋的疼痛地圖全解析：前後、內外側痛，各代表什麼疾病？',
         description: '膝蓋痛位置是精準診斷的第一步。本文從運動醫學與解剖學視角，拆解前側（跑步膝、跳躍膝）、內側（鵝掌滑囊炎、內側半月板）、外側（ 髂脛束症候群）及後側（貝克氏囊腫）的疼痛原因，並提供理學檢查自測與關鍵紅旗症狀。',
-        image:  '/images/news/article/knee-pain-location-map.webp',
+        image:  '/images/news/painmap/knee/膝蓋的疼痛地圖.webp',
       },
                                           {
         slug: 'ankle-pain-map',
         title: '腳踝疼痛地圖全解析：前後側、內外側痛，各代表什麼疾病？',
         description: '用民眾看得懂的語言，從醫學角度解析腳踝四個方位的疼痛意義。前側可能是撞擊症候群，後側可能是阿基里斯肌腱病變，內側可能是跗管症候群，外側最常見是韌帶損傷——本文系統整理各部位常見疾病與簡單鑑別方式。',
-        image:  '/images/news/article/ankle-pain-map.webp',
+        image:  '/images/news/painmap/ankle/腳踝的疼痛地圖全解析.webp',
       },
                         {
         slug: 'foot-pain-map',
@@ -947,6 +972,12 @@ export const sportsInjuriesData = [
     description: '日常診間生活心得及趣事分享',
     image: '/images/sportinjury/8.webp',
     injuries: [
+                              {
+        slug: 'health-insurance-rehabilitation-effectiveness',
+        title: '健保 50 元復健到底有沒有效？復健科醫師告訴你真相🩺',
+        description: '健保復健究竟有沒有效？從看診 10 年、累積近 10 萬人次的臨床觀察來看，真正重要的不是治療便宜或昂貴，而是目前的問題是否適合只靠熱療、電療與牽引。若治療一段時間仍未改善，也許該重新確認診斷與治療策略。',
+        image:  '/images/news/article/health-insurance-rehabilitation.webp',
+      },
 
                               {
         slug: 'prp-overuse-reflection',
