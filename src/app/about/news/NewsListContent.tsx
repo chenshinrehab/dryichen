@@ -340,19 +340,6 @@ export default function NewsListContent({ currentPage: requestedPage }: { curren
               </div>
             )}
 
-            {/* ✨ 專屬 SEO 爬蟲通路：完美消滅 Ahrefs 孤兒頁面警告，搭配子分頁完全靜態 HTML 化後，絕不引發流量爆炸 */}
-            <div className="sr-only" aria-hidden="true">
-              {articlesList.map((item) => (
-                <Link 
-                  key={`seo-${item.id}`} 
-                  href={`/about/news/${item.id}`} 
-                  prefetch={false}
-                >
-                  {item.title}
-                </Link>
-              ))}
-            </div>
-
           </div>
         </main>
       </div>

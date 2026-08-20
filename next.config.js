@@ -58,6 +58,13 @@ const nextConfig = {
         destination: '/about/news/page/:page',
         permanent: true,
       },
+      {
+        // These legacy detail URLs duplicated the canonical news articles.
+        // Redirect at the routing layer so no duplicate page is rendered.
+        source: '/weight-bone/sports-injuries/:category/:slug',
+        destination: '/about/news/:slug',
+        permanent: true,
+      },
     ];
   },
 
