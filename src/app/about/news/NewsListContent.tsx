@@ -223,6 +223,7 @@ export default function NewsListContent({ currentPage: requestedPage }: { curren
                     <Link 
                       href={pageHref(currentPage - 1)} 
                       prefetch={false}
+                      intentPrefetch={false}
                       className="px-4 py-2 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-cyan-400 transition-colors border border-slate-700 text-sm font-medium"
                     >
                       <i className="fa-solid fa-chevron-left mr-1"></i> 上一頁
@@ -246,6 +247,7 @@ export default function NewsListContent({ currentPage: requestedPage }: { curren
                           key={pageNum}
                           href={pageHref(pageNum)}
                           prefetch={false}
+                          intentPrefetch={false}
                           className={`w-10 h-10 flex items-center justify-center rounded-lg transition-colors border text-sm font-medium ${
                             isActive
                               ? 'bg-cyan-500/20 text-cyan-400 border-cyan-500/50 shadow-[0_0_10px_rgba(34,211,238,0.2)]'
@@ -263,6 +265,7 @@ export default function NewsListContent({ currentPage: requestedPage }: { curren
                     <Link 
                       href={pageHref(currentPage + 1)} 
                       prefetch={false}
+                      intentPrefetch={false}
                       className="px-4 py-2 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-cyan-400 transition-colors border border-slate-700 text-sm font-medium"
                     >
                       下一頁 <i className="fa-solid fa-chevron-right ml-1"></i>
@@ -284,6 +287,7 @@ export default function NewsListContent({ currentPage: requestedPage }: { curren
                       <Link 
                         href={pageHref(currentPage - 1)} 
                         prefetch={false}
+                        intentPrefetch={false}
                         className="flex-1 px-4 py-2.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-cyan-400 transition-colors border border-slate-700 text-sm font-medium text-center"
                       >
                         <i className="fa-solid fa-chevron-left mr-1"></i> 上一頁
@@ -301,6 +305,7 @@ export default function NewsListContent({ currentPage: requestedPage }: { curren
                       <Link 
                         href={pageHref(currentPage + 1)} 
                         prefetch={false}
+                        intentPrefetch={false}
                         className="flex-1 px-4 py-2.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-cyan-400 transition-colors border border-slate-700 text-sm font-medium text-center"
                       >
                         下一頁 <i className="fa-solid fa-chevron-right ml-1"></i>
@@ -324,6 +329,7 @@ export default function NewsListContent({ currentPage: requestedPage }: { curren
                           key={pageNum}
                           href={pageHref(pageNum)}
                           prefetch={false}
+                          intentPrefetch={false}
                           className={`w-8 h-8 flex items-center justify-center rounded-lg transition-colors border text-xs font-medium ${
                             isActive
                               ? 'bg-cyan-500/20 text-cyan-400 border-cyan-500/50 shadow-[0_0_10px_rgba(34,211,238,0.2)]'

@@ -2,10 +2,14 @@
 
 import NextLink, { type LinkProps } from 'next/link'
 import { useRouter } from 'next/navigation'
-import type { AnchorHTMLAttributes } from 'react'
+import { useEffect, useRef, type AnchorHTMLAttributes } from 'react'
 
 type IntentLinkProps = LinkProps &
-  Omit<AnchorHTMLAttributes<HTMLAnchorElement>, keyof LinkProps | 'href'>
+  Omit<AnchorHTMLAttributes<HTMLAnchorElement>, keyof LinkProps | 'href'> & {
+    intentPrefetch?: boolean
+  }
+
+const PREFETCH_DELAY_MS = 350
 
 /**
  * Avoid Next.js viewport prefetch fan-out while preserving fast navigation.
@@ -13,16 +17,46 @@ type IntentLinkProps = LinkProps &
  */
 export default function IntentLink({
   href,
+  intentPrefetch = true,
   onMouseEnter,
+  onMouseLeave,
   onFocus,
+  onBlur,
   onTouchStart,
   ...props
 }: IntentLinkProps) {
   const router = useRouter()
+  const prefetchTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const hasPrefetchedRef = useRef(false)
 
-  const prefetchOnIntent = () => {
-    if (typeof href === 'string') router.prefetch(href)
+  const cancelScheduledPrefetch = () => {
+    if (prefetchTimerRef.current !== null) {
+      clearTimeout(prefetchTimerRef.current)
+      prefetchTimerRef.current = null
+    }
   }
+
+  const prefetchNow = () => {
+    cancelScheduledPrefetch()
+    if (!intentPrefetch || hasPrefetchedRef.current || typeof href !== 'string') return
+
+    hasPrefetchedRef.current = true
+    router.prefetch(href)
+  }
+
+  const schedulePrefetch = () => {
+    if (!intentPrefetch || hasPrefetchedRef.current || prefetchTimerRef.current !== null) return
+
+    prefetchTimerRef.current = setTimeout(() => {
+      prefetchTimerRef.current = null
+      prefetchNow()
+    }, PREFETCH_DELAY_MS)
+  }
+
+  useEffect(() => {
+    hasPrefetchedRef.current = false
+    return cancelScheduledPrefetch
+  }, [href, intentPrefetch])
 
   return (
     <NextLink
@@ -30,15 +64,23 @@ export default function IntentLink({
       href={href}
       prefetch={false}
       onMouseEnter={(event) => {
-        prefetchOnIntent()
+        schedulePrefetch()
         onMouseEnter?.(event)
       }}
+      onMouseLeave={(event) => {
+        cancelScheduledPrefetch()
+        onMouseLeave?.(event)
+      }}
       onFocus={(event) => {
-        prefetchOnIntent()
+        schedulePrefetch()
         onFocus?.(event)
       }}
+      onBlur={(event) => {
+        cancelScheduledPrefetch()
+        onBlur?.(event)
+      }}
       onTouchStart={(event) => {
-        prefetchOnIntent()
+        prefetchNow()
         onTouchStart?.(event)
       }}
     />
